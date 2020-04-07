@@ -1,5 +1,5 @@
 - name: Документация по .NET
-  href: index.md
+  href: index.yml
 - name: Начало работы с .NET
   href: get-started.md
 - name: Обзор .NET
@@ -38,8 +38,140 @@
       href: framework-libraries.md
     - name: Общие сведения о библиотеке классов
       href: class-library-overview.md
-    - name: Базовые типы
-      href: base-types/
+    - name: Работа с базовыми типами
+      items:
+        - name: Система общих типов CTS
+          href: base-types/common-type-system.md
+        - name: Преобразование типов в .NET
+          href: base-types/type-conversion.md
+        - name: Таблицы преобразования типов
+          href: base-types/conversion-tables.md
+        - name: 'Форматирование чисел, дат и других типов'
+          items:
+            - name: Обзор
+              href: base-types/formatting-types.md
+            - name: Строки стандартных числовых форматов
+              href: base-types/standard-numeric-format-strings.md
+            - name: Строки настраиваемых числовых форматов
+              href: base-types/custom-numeric-format-strings.md
+            - name: Строки стандартных форматов даты и времени
+              href: base-types/standard-date-and-time-format-strings.md
+            - name: Строки настраиваемых форматов даты и времени
+              href: base-types/custom-date-and-time-format-strings.md
+            - name: Строки стандартного формата TimeSpan
+              href: base-types/standard-timespan-format-strings.md
+            - name: Строки пользовательского формата TimeSpan
+              href: base-types/custom-timespan-format-strings.md
+            - name: Строки форматов перечисления
+              href: base-types/enumeration-format-strings.md
+            - name: Составное форматирование
+              href: base-types/composite-formatting.md
+            - name: Практические руководства
+              items:
+                - name: Дополнение числа начальными нулями
+                  href: base-types/how-to-pad-a-number-with-leading-zeros.md
+                - name: Извлечение дня недели из даты
+                  href: base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md
+                - name: Использование поставщиков настраиваемых числовых форматов
+                  href: base-types/how-to-define-and-use-custom-numeric-format-providers.md
+                - name: Значения даты и времени кругового пути
+                  href: base-types/how-to-round-trip-date-and-time-values.md
+                - name: Отображение миллисекунд в значениях даты и времени
+                  href: base-types/how-to-display-milliseconds-in-date-and-time-values.md
+                - name: 'Отображение дат в календарях, отличных от григорианского'
+                  href: base-types/how-to-display-dates-in-non-gregorian-calendars.md
+        - name: Обработка строк
+          items:
+            - name: Рекомендации по использованию строк
+              href: base-types/best-practices-strings.md
+            - name: Базовые операции со строками
+              items:
+                - name: Обзор
+                  href: base-types/basic-string-operations.md
+                  displayName: string operations
+                - name: Создание строк
+                  href: base-types/creating-new.md
+                - name: Обрезка и удаление символов
+                  href: base-types/trimming.md
+                - name: Заполнение строк
+                  href: base-types/padding.md
+                - name: Сравнение строк
+                  href: base-types/comparing.md
+                - name: Изменение регистра
+                  href: base-types/changing-case.md
+                - name: Использование класса StringBuilder
+                  href: base-types/stringbuilder.md
+                - name: Практическое руководство. Выполнение базовых операций со строками
+                  href: base-types/basic-manipulations.md
+            - name: Регулярные выражения в .NET
+              items:
+                - name: Обзор
+                  href: base-types/regular-expressions.md
+                  displayName: regular expressions
+                - name: Справочник по языку
+                  items:
+                    - name: Обзор
+                      href: base-types/regular-expression-language-quick-reference.md
+                    - name: Escape-символы
+                      href: base-types/character-escapes-in-regular-expressions.md
+                    - name: Категории знаков
+                      href: base-types/character-classes-in-regular-expressions.md
+                    - name: Привязки
+                      href: base-types/anchors-in-regular-expressions.md
+                    - name: Конструкции группирования
+                      href: base-types/grouping-constructs-in-regular-expressions.md
+                    - name: Квантификаторы
+                      href: base-types/quantifiers-in-regular-expressions.md
+                    - name: Конструкции обратных ссылок
+                      href: base-types/backreference-constructs-in-regular-expressions.md
+                    - name: Конструкции изменения
+                      href: base-types/alternation-constructs-in-regular-expressions.md
+                    - name: Подстановки
+                      href: base-types/substitutions-in-regular-expressions.md
+                    - name: Параметры регулярных выражений
+                      href: base-types/regular-expression-options.md
+                    - name: Прочие конструкции
+                      href: base-types/miscellaneous-constructs-in-regular-expressions.md
+                - name: Рекомендации по использованию регулярных выражений
+                  href: base-types/best-practices.md
+                - name: Объектная модель регулярных выражений
+                  href: base-types/the-regular-expression-object-model.md
+                - name: Поведение регулярных выражений
+                  items:
+                    - name: Обзор
+                      href: base-types/details-of-regular-expression-behavior.md
+                    - name: Поиск с возвратом
+                      href: base-types/backtracking-in-regular-expressions.md
+                    - name: Компиляция и повторное использование
+                      href: base-types/compilation-and-reuse-in-regular-expressions.md
+                    - name: Потокобезопасность
+                      href: base-types/thread-safety-in-regular-expressions.md
+                - name: Примеры
+                  items:
+                    - name: Поиск HREF
+                      href: base-types/regular-expression-example-scanning-for-hrefs.md
+                    - name: Изменение форматов даты
+                      href: base-types/regular-expression-example-changing-date-formats.md
+                    - name: Извлечение протокола и номера порта из URL-адреса
+                      href: base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
+                    - name: Исключение недопустимых символов из строки
+                      href: base-types/how-to-strip-invalid-characters-from-a-string.md
+                    - name: Проверка строк на соответствие формату электронной почты
+                      href: base-types/how-to-verify-that-strings-are-in-valid-email-format.md
+        - name: Кодировка символов в .NET
+          href: base-types/character-encoding-introduction.md
+        - name: Использование классов кодировки символов
+          href: base-types/character-encoding.md
+        - name: Анализ строк
+          items:
+            - name: Обзор
+              href: base-types/parsing-strings.md
+            - name: Анализ числовых строк
+              href: base-types/parsing-numeric.md
+            - name: Анализ строк даты и времени
+              href: base-types/parsing-datetime.md
+            - name: Анализ других строк
+              href: base-types/parsing-other.md
 - name: Библиотеки классов .NET
   href: class-libraries.md
 - name: Анализаторы
@@ -54,13 +186,82 @@
     - name: Анализатор платформы
       href: analyzers/framework-analyzer.md
 - name: Обработка исключений
-  href: exceptions/
+  items:
+    - name: Обзор
+      href: exceptions/index.md
+      displayName: exceptions
+    - name: Класс и свойства исключений
+      href: exceptions/exception-class-and-properties.md
+    - name: Практические руководства
+      items:
+        - name: Использование блока try-catch для перехвата исключений
+          href: exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md
+        - name: Использование определенных исключений в блоке catch
+          href: exceptions/how-to-use-specific-exceptions-in-a-catch-block.md
+        - name: Явное создание исключений
+          href: exceptions/how-to-explicitly-throw-exceptions.md
+        - name: Создание пользовательских исключений
+          href: exceptions/how-to-create-user-defined-exceptions.md
+        - name: Создание пользовательских исключений с локализованными сообщениями об исключениях
+          href: exceptions/how-to-create-localized-exception-messages.md
+        - name: Использование блоков Finally
+          href: exceptions/how-to-use-finally-blocks.md
+    - name: Использование обработчиков исключений с пользовательской фильтрацией
+      href: exceptions/using-user-filtered-exception-handlers.md
+    - name: Обработка исключений COM-взаимодействия
+      href: exceptions/handling-com-interop-exceptions.md
+    - name: Рекомендации
+      href: exceptions/best-practices-for-exceptions.md
 - name: Сборки в .NET
   href: assembly/
-- name: Сборка мусора
-  href: garbage-collection/
+- name: Управление памятью
+  items:
+    - name: Очистка неуправляемых ресурсов
+      items:
+        - name: Обзор
+          href: garbage-collection/unmanaged.md
+          displayName: 'unmanaged resources, memory management'
+        - name: Реализация метода Dispose
+          href: garbage-collection/implementing-dispose.md
+        - name: 'Использование объектов, реализующих IDisposable'
+          href: garbage-collection/using-objects.md
+    - name: Сборка мусора
+      items:
+        - name: Обзор
+          href: garbage-collection/index.md
+          displayName: garbage collection
+        - name: Основы
+          href: garbage-collection/fundamentals.md
+        - name: Куча больших объектов
+          href: garbage-collection/large-object-heap.md
+        - name: Сборка мусора и производительность
+          href: garbage-collection/performance.md
+        - name: Индуцированные коллекции
+          href: garbage-collection/induced.md
+        - name: Режимы задержки
+          href: garbage-collection/latency.md
+        - name: Оптимизация совместного размещения веб-сайтов
+          href: garbage-collection/optimization-for-shared-web-hosting.md
+        - name: Уведомления о сборке мусора
+          href: garbage-collection/notifications.md
+        - name: Отслеживание ресурсов домена приложения
+          href: garbage-collection/app-domain-resource-monitoring.md
+        - name: Слабые ссылки
+          href: garbage-collection/weak-references.md
 - name: Универсальные типы
-  href: generics.md
+  items:
+    - name: Обзор
+      href: generics/index.md
+    - name: Ведение в универсальные типы
+      href: generics.md
+    - name: Универсальные коллекции в .NET
+      href: generics/collections.md
+    - name: Универсальные делегаты для управления массивами и списками
+      href: generics/delegates-for-manipulating-arrays-and-lists.md
+    - name: Универсальные интерфейсы
+      href: generics/interfaces.md
+    - name: Ковариантность и контрвариантность
+      href: generics/covariance-and-contravariance.md
 - name: Делегаты и лямбда-выражения
   href: delegates-lambdas.md
 - name: LINQ
@@ -81,7 +282,143 @@
         - name: Шаблоны асинхронного программирования
           href: asynchronous-programming-patterns/
     - name: Параллельное программирование
-      href: parallel-programming/
+      items:
+        - name: Обзор
+          href: parallel-programming/index.md
+        - name: Библиотека параллельных задач (TPL)
+          href: parallel-programming/task-parallel-library-tpl.md
+          items:
+            - name: Параллелизм данных
+              href: parallel-programming/data-parallelism-task-parallel-library.md
+              items:
+                - name: Практическое руководство. Написание простого цикла Parallel.For
+                  href: parallel-programming/how-to-write-a-simple-parallel-for-loop.md
+                - name: Практическое руководство. Написание простого цикла Parallel.ForEach
+                  href: parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
+                - name: Практическое руководство. Написание цикла Parallel.For с локальными переменными потока
+                  href: parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md
+                - name: Практическое руководство. Написание цикла Parallel.ForEach c локальными переменными раздела
+                  href: parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md
+                - name: Практическое руководство. Отмена цикла Parallel.For или Parallel.ForEach
+                  href: parallel-programming/how-to-cancel-a-parallel-for-or-foreach-loop.md
+                - name: Практическое руководство. Обработка исключений в параллельных циклах
+                  href: parallel-programming/how-to-handle-exceptions-in-parallel-loops.md
+                - name: Практическое руководство. Повышение скорости выполнения небольших тел циклов
+                  href: parallel-programming/how-to-speed-up-small-loop-bodies.md
+                - name: Практическое руководство. перебор каталогов с файлами с помощью параллельного класса
+                  href: parallel-programming/how-to-iterate-file-directories-with-the-parallel-class.md
+            - name: Асинхронное программирование на основе задач
+              href: parallel-programming/task-based-asynchronous-programming.md
+              items:
+                - name: Создание цепочки задач с помощью задач продолжения
+                  href: parallel-programming/chaining-tasks-by-using-continuation-tasks.md
+                - name: Присоединенные и отсоединенные дочерние задачи
+                  href: parallel-programming/attached-and-detached-child-tasks.md
+                - name: Отмена задач
+                  href: parallel-programming/task-cancellation.md
+                - name: Обработка исключений
+                  href: parallel-programming/exception-handling-task-parallel-library.md
+                - name: Практическое руководство. Использование Parallel.Invoke для выполнения параллельных операций
+                  href: parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md
+                - name: Практическое руководство. Возврат значения из задачи
+                  href: parallel-programming/how-to-return-a-value-from-a-task.md
+                - name: Практическое руководство. Отмена задачи и ее дочерних элементов
+                  href: parallel-programming/how-to-cancel-a-task-and-its-children.md
+                - name: Практическое руководство. Создание предварительно вычисленных задач
+                  href: parallel-programming/how-to-create-pre-computed-tasks.md
+                - name: Практическое руководство. Переход по двоичному дереву с помощью параллельных задач
+                  href: parallel-programming/how-to-traverse-a-binary-tree-with-parallel-tasks.md
+                - name: Практическое руководство. Извлечение вложенной задачи
+                  href: parallel-programming/how-to-unwrap-a-nested-task.md
+                - name: Практическое руководство. Запрет присоединения дочерней задачи к ее родительской задаче
+                  href: parallel-programming/how-to-prevent-a-child-task-from-attaching-to-its-parent.md
+            - name: Поток данных
+              href: parallel-programming/dataflow-task-parallel-library.md
+              items:
+                - name: Практическое руководство. Запись и чтение сообщений в блоке потока данных
+                  href: parallel-programming/how-to-write-messages-to-and-read-messages-from-a-dataflow-block.md
+                - name: Практическое руководство. Реализация шаблона потока данных "производитель-потребитель"
+                  href: parallel-programming/how-to-implement-a-producer-consumer-dataflow-pattern.md
+                - name: Практическое руководство. Выполнение действий при получении данных блоком потоков данных
+                  href: parallel-programming/how-to-perform-action-when-a-dataflow-block-receives-data.md
+                - name: Пошаговое руководство. Создание конвейера потока данных
+                  href: parallel-programming/walkthrough-creating-a-dataflow-pipeline.md
+                - name: Практическое руководство.  Удаление связей с блоками потоков данных
+                  href: parallel-programming/how-to-unlink-dataflow-blocks.md
+                - name: Пошаговое руководство. Использование потока данных в приложении Windows Forms
+                  href: parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md
+                - name: Практическое руководство. Отмена блока потока данных
+                  href: parallel-programming/how-to-cancel-a-dataflow-block.md
+                - name: Пошаговое руководство. Создание пользовательского типа блока потока данных
+                  href: parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md
+                - name: Практическое руководство. Использование JoinBlock для чтения данных из нескольких источников
+                  href: parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md
+                - name: Практическое руководство. Указание степени параллелизма в блоке потока данных
+                  href: parallel-programming/how-to-specify-the-degree-of-parallelism-in-a-dataflow-block.md
+                - name: Практическое руководство. Указание планировщика задач в блоке потока данных
+                  href: parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
+                - name: Пошаговое руководство. Повышение эффективности с помощью BatchBlock и BatchedJoinBlock
+                  href: parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
+            - name: Использование библиотеки параллельных задач с другими асинхронными шаблонами
+              href: parallel-programming/using-tpl-with-other-asynchronous-patterns.md
+              items:
+                - name: Библиотека параллельных задач и традиционное асинхронное программирование .NET Framework
+                  href: parallel-programming/tpl-and-traditional-async-programming.md
+                - name: Практическое руководство. Создание задачи-оболочки для шаблонов EAP
+                  href: parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
+            - name: 'Потенциальные ошибки, связанные с параллелизмом данных и задач'
+              href: parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md
+        - name: Parallel LINQ (PLINQ)
+          items:
+            - name: Введение в PLINQ
+              href: parallel-programming/introduction-to-plinq.md
+            - name: Общее представление об ускорении выполнения в PLINQ
+              href: parallel-programming/understanding-speedup-in-plinq.md
+            - name: Сохранение порядка в PLINQ
+              href: parallel-programming/order-preservation-in-plinq.md
+            - name: Параметры слияние в PLINQ
+              href: parallel-programming/merge-options-in-plinq.md
+            - name: 'Потенциальные ошибки, связанные с PLINQ'
+              href: parallel-programming/potential-pitfalls-with-plinq.md
+            - name: Практическое руководство. Создание и выполнение простого запроса PLINQ
+              href: parallel-programming/how-to-create-and-execute-a-simple-plinq-query.md
+            - name: Практическое руководство. Управление порядком в запросе PLINQ
+              href: parallel-programming/how-to-control-ordering-in-a-plinq-query.md
+            - name: Практическое руководство. Объединение параллельных и последовательных запросов LINQ
+              href: parallel-programming/how-to-combine-parallel-and-sequential-linq-queries.md
+            - name: Практическое руководство. Обработка исключений в запросе PLINQ
+              href: parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md
+            - name: Практическое руководство. Отмена запроса PLINQ
+              href: parallel-programming/how-to-cancel-a-plinq-query.md
+            - name: Практическое руководство. Написание пользовательской агрегатной функции PLINQ
+              href: parallel-programming/how-to-write-a-custom-plinq-aggregate-function.md
+            - name: Практическое руководство. Задание режима выполнения в PLINQ
+              href: parallel-programming/how-to-specify-the-execution-mode-in-plinq.md
+            - name: Практическое руководство. Задание параметров слияния в PLINQ
+              href: parallel-programming/how-to-specify-merge-options-in-plinq.md
+            - name: Практическое руководство. Перебор каталогов с файлами с помощью PLINQ
+              href: parallel-programming/how-to-iterate-file-directories-with-plinq.md
+            - name: Практическое руководство. Измерение производительности запросов PLINQ
+              href: parallel-programming/how-to-measure-plinq-query-performance.md
+            - name: Пример данных PLINQ
+              href: parallel-programming/plinq-data-sample.md
+        - name: Структуры данных для параллельного программирования
+          href: parallel-programming/data-structures-for-parallel-programming.md
+        - name: Средства диагностики параллельного выполнения
+          href: parallel-programming/parallel-diagnostic-tools.md
+        - name: Пользовательские разделители для PLINQ и TPL
+          items:
+            - name: Обзор
+              href: parallel-programming/custom-partitioners-for-plinq-and-tpl.md
+              displayName: custom partitioners
+            - name: Практическое руководство. Реализация динамических секций
+              href: parallel-programming/how-to-implement-dynamic-partitions.md
+            - name: Практическое руководство. Реализация разделителя для статического секционирования
+              href: parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md
+        - name: Лямбда-выражения в PLINQ и TPL
+          href: parallel-programming/lambda-expressions-in-plinq-and-tpl.md
+        - name: Дополнительные сведения
+          href: parallel-programming/for-further-reading-parallel-programming.md
     - name: Потоки
       href: threading/
 - name: 'Типы, связанные с памятью и диапазонами'
@@ -128,29 +465,245 @@
     - name: Исключения
       href: native-interop/exceptions-interoperability.md
 - name: Коллекции и структуры данных
-  href: collections/
+  items:
+    - name: Обзор
+      href: collections/index.md
+      displayName: 'collections, data structures'
+    - name: Выбор класса коллекции
+      href: collections/selecting-a-collection-class.md
+    - name: Часто используемые типы коллекций
+      href: collections/commonly-used-collection-types.md
+    - name: Когда следует использовать универсальные коллекции
+      href: collections/when-to-use-generic-collections.md
+    - name: Сравнение и сортировка в коллекциях
+      href: collections/comparisons-and-sorts-within-collections.md
+    - name: Отсортированные типы коллекций
+      href: collections/sorted-collection-types.md
+    - name: Типы коллекций Hashtable и Dictionary
+      href: collections/hashtable-and-dictionary-collection-types.md
+    - name: Потокобезопасные коллекции
+      href: collections/thread-safe/
 - name: Числовые значения в .NET
   href: numerics.md
 - name: 'Даты, время и часовые пояса'
   href: datetime/
 - name: События
-  href: events/
+  items:
+    - name: Обзор
+      href: events/index.md
+      displayName: events
+    - name: Вызов и обработка событий
+      href: events/how-to-raise-and-consume-events.md
+    - name: Обработка множества событий с помощью их свойств
+      href: events/how-to-handle-multiple-events-using-event-properties.md
+    - name: Прием событий в приложениях веб-форм
+      href: events/how-to-consume-events-in-a-web-forms-application.md
+    - name: Шаблон разработки наблюдателя
+      items:
+        - name: Обзор
+          href: events/observer-design-pattern.md
+          displayName: Observer design pattern
+        - name: Рекомендации
+          href: events/observer-design-pattern-best-practices.md
+        - name: Практическое руководство. Реализация поставщика
+          href: events/how-to-implement-a-provider.md
+        - name: Практическое руководство. Реализация наблюдателя
+          href: events/how-to-implement-an-observer.md
 - name: Процесс управляемого выполнения
   href: managed-execution-process.md
 - name: Метаданные и компоненты с самоописанием
   href: metadata-and-self-describing-components.md
 - name: Создание консольных приложений
   href: building-console-apps.md
-- name: Основные сведения о приложениях
-  href: application-essentials.md
 - name: Файловый и потоковый ввод-вывод
-  href: io/index.md
+  items:
+    - name: Обзор
+      href: io/index.md
+    - name: Форматы путей к файлам в системах Windows
+      href: io/file-path-formats.md
+    - name: Распространенные задачи ввода-вывода
+      href: io/common-i-o-tasks.md
+      items:
+        - name: Практическое руководство. Копирование каталогов
+          href: io/how-to-copy-directories.md
+        - name: Практическое руководство. Перечисление каталогов и файлов
+          href: io/how-to-enumerate-directories-and-files.md
+        - name: Практическое руководство. Считывание данных из нового файла и запись в этот файл
+          href: io/how-to-read-and-write-to-a-newly-created-data-file.md
+        - name: Практическое руководство. Открытие файла журнала и добавление в него данных
+          href: io/how-to-open-and-append-to-a-log-file.md
+        - name: Практическое руководство. Запись текста в файл
+          href: io/how-to-write-text-to-a-file.md
+        - name: Практическое руководство. Чтение текста из файла
+          href: io/how-to-read-text-from-a-file.md
+        - name: Практическое руководство. Считывание символов из строки
+          href: io/how-to-read-characters-from-a-string.md
+        - name: Практическое руководство. Запись символов в строку
+          href: io/how-to-write-characters-to-a-string.md
+        - name: Практическое руководство. Добавление или удаление записей списка управления доступом
+          href: io/how-to-add-or-remove-access-control-list-entries.md
+        - name: Практическое руководство. Сжатие и извлечение файлов
+          href: io/how-to-compress-and-extract-files.md
+        - name: Составление потоков
+          href: io/composing-streams.md
+        - name: Практическое руководство. Преобразование между потоками .NET Framework и потоками среды выполнения Windows
+          href: io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
+    - name: Асинхронный файловый ввод-вывод
+      href: io/asynchronous-file-i-o.md
+    - name: Обработка ошибок ввода-вывода
+      href: io/handling-io-errors.md
+    - name: Изолированное хранилище
+      href: io/isolated-storage.md
+      items:
+        - name: Типы изоляции
+          href: io/types-of-isolation.md
+        - name: Практическое руководство. Получение хранилищ для изолированного хранения
+          href: io/how-to-obtain-stores-for-isolated-storage.md
+        - name: Практическое руководство. Перечисление хранилищ для изолированного хранения
+          href: io/how-to-enumerate-stores-for-isolated-storage.md
+        - name: Практическое руководство. Удаление хранилищ из изолированного хранения
+          href: io/how-to-delete-stores-in-isolated-storage.md
+        - name: Практическое руководство. Предупреждение нехватки места при изолированном хранении
+          href: io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+        - name: Практическое руководство. Создание файлов и каталогов в изолированном хранилище
+          href: io/how-to-create-files-and-directories-in-isolated-storage.md
+        - name: Практическое руководство. Поиск существующих файлов и каталогов в изолированном хранилище
+          href: io/how-to-find-existing-files-and-directories-in-isolated-storage.md
+        - name: Практическое руководство. Считывание из файлов и запись в файлы в изолированном хранилище
+          href: io/how-to-read-and-write-to-files-in-isolated-storage.md
+        - name: Практическое руководство. Удаление файлов и каталогов из изолированного хранилища
+          href: io/how-to-delete-files-and-directories-in-isolated-storage.md
+    - name: Каналы
+      href: io/pipe-operations.md
+      items:
+        - name: Практическое руководство. Использование анонимных каналов для локального взаимодействия между процессами
+          href: io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+        - name: Практическое руководство. Использование именованных каналов для сетевого взаимодействия между процессами
+          href: io/how-to-use-named-pipes-for-network-interprocess-communication.md
+    - name: Конвейеры
+      href: io/pipelines.md
+    - name: Работа с буферами
+      href: io/buffers.md
+    - name: Сопоставленные в памяти файлы
+      href: io/memory-mapped-files.md
 - name: Глобализация и локализация
   href: globalization-localization/
 - name: Атрибуты
-  href: attributes/
+  items:
+    - name: Обзор
+      href: attributes/index.md
+      displayName: attributes
+    - name: Применение атрибутов
+      href: attributes/applying-attributes.md
+    - name: Написание настраиваемых атрибутов
+      href: attributes/writing-custom-attributes.md
+    - name: 'Извлечение информации, сохраненной в атрибуте'
+      href: attributes/retrieving-information-stored-in-attributes.md
 - name: Рекомендации по разработке платформы
-  href: design-guidelines/
+  items:
+    - name: Обзор
+      href: design-guidelines/index.md
+    - name: Правила именования
+      href: design-guidelines/naming-guidelines.md
+      items:
+        - name: Соглашения о написании прописными буквами
+          href: design-guidelines/capitalization-conventions.md
+        - name: Общие соглашения об именовании
+          href: design-guidelines/general-naming-conventions.md
+        - name: Имена сборок и DLL-библиотек
+          href: design-guidelines/names-of-assemblies-and-dlls.md
+        - name: Имена пространств имен
+          href: design-guidelines/names-of-namespaces.md
+        - name: 'Имена классов, структур и интерфейсов'
+          href: design-guidelines/names-of-classes-structs-and-interfaces.md
+        - name: Имена элементов типа
+          href: design-guidelines/names-of-type-members.md
+        - name: Именование параметров
+          href: design-guidelines/naming-parameters.md
+        - name: Именование ресурсов
+          href: design-guidelines/naming-resources.md
+    - name: Правила разработки типов
+      href: design-guidelines/type.md
+      items:
+        - name: Выбор между классом и структурой
+          href: design-guidelines/choosing-between-class-and-struct.md
+        - name: Разработка абстрактных классов
+          href: design-guidelines/abstract-class.md
+        - name: Разработка статических классов
+          href: design-guidelines/static-class.md
+        - name: Разработка интерфейса
+          href: design-guidelines/interface.md
+        - name: Разработка структур
+          href: design-guidelines/struct.md
+        - name: Разработка перечислений
+          href: design-guidelines/enum.md
+        - name: Вложенные типы
+          href: design-guidelines/nested-types.md
+    - name: Правила разработки элементов
+      href: design-guidelines/member.md
+      items:
+        - name: Перегрузка элементов
+          href: design-guidelines/member-overloading.md
+        - name: Разработка свойств
+          href: design-guidelines/property.md
+        - name: Разработка конструкторов
+          href: design-guidelines/constructor.md
+        - name: Разработка событий
+          href: design-guidelines/event.md
+        - name: Разработка полей
+          href: design-guidelines/field.md
+        - name: Методы расширения
+          href: design-guidelines/extension-methods.md
+        - name: Перегрузка операторов
+          href: design-guidelines/operator-overloads.md
+        - name: Разработка параметров
+          href: design-guidelines/parameter-design.md
+    - name: Разработка для расширяемости
+      href: design-guidelines/designing-for-extensibility.md
+      items:
+        - name: Незапечатанные классы
+          href: design-guidelines/unsealed-classes.md
+        - name: Защищенные элементы
+          href: design-guidelines/protected-members.md
+        - name: События и обратные вызовы
+          href: design-guidelines/events-and-callbacks.md
+        - name: Виртуальные члены
+          href: design-guidelines/virtual-members.md
+        - name: Абстракции (абстрактные типы и интерфейсы)
+          href: design-guidelines/abstractions-abstract-types-and-interfaces.md
+        - name: Базовые классы для реализации абстракций
+          href: design-guidelines/base-classes-for-implementing-abstractions.md
+        - name: Запечатывание
+          href: design-guidelines/sealing.md
+    - name: Правила разработки исключений
+      href: design-guidelines/exceptions.md
+      items:
+        - name: Выдача исключений
+          href: design-guidelines/exception-throwing.md
+        - name: Использование стандартных типов исключений
+          href: design-guidelines/using-standard-exception-types.md
+        - name: Исключения и производительность
+          href: design-guidelines/exceptions-and-performance.md
+    - name: Рекомендации по использованию
+      href: design-guidelines/usage-guidelines.md
+      items:
+        - name: Массивы
+          href: design-guidelines/arrays.md
+        - name: Атрибуты
+          href: design-guidelines/attributes.md
+        - name: Коллекции
+          href: design-guidelines/guidelines-for-collections.md
+        - name: Сериализация
+          href: design-guidelines/serialization.md
+        - name: Использование System.Xml
+          href: design-guidelines/system-xml-usage.md
+        - name: Операторы равенства
+          href: design-guidelines/equality-operators.md
+    - name: Стандартные конструктивные шаблоны
+      href: design-guidelines/common-design-patterns.md
+      items:
+        - name: Свойства зависимостей
+          href: design-guidelines/dependency-properties.md
 - name: Microsoft.Data.Sqlite
   href: data/sqlite/
 - name: XML-документы и данные
@@ -158,6 +711,113 @@
 - name: Безопасность
   href: security/
 - name: Сериализация
-  href: serialization/
+  items:
+    - name: Обзор
+      href: serialization/index.md
+    - name: Сериализация JSON
+      items:
+        - name: Обзор
+          href: serialization/system-text-json-overview.md
+          displayName: json serialization
+        - name: Практическое руководство. Сериализация и десериализация JSON
+          href: serialization/system-text-json-how-to.md
+        - name: Практическое руководство. Написание настраиваемых преобразователей
+          href: serialization/system-text-json-converters-how-to.md
+        - name: Как выполнить миграцию из Newtonsoft.Json
+          href: serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+    - name: Двоичная сериализация
+      items:
+        - name: Обзор
+          href: serialization/binary-serialization.md
+          displayName: binary serialization
+        - name: Концепции сериализации
+          href: serialization/serialization-concepts.md
+        - name: Базовая сериализация
+          href: serialization/basic-serialization.md
+        - name: Выборочная сериализация
+          href: serialization/selective-serialization.md
+        - name: Пользовательская сериализация
+          href: serialization/custom-serialization.md
+        - name: Этапы процесса сериализации
+          href: serialization/steps-in-the-serialization-process.md
+        - name: Независимая от версий сериализация
+          href: serialization/version-tolerant-serialization.md
+        - name: Правила сериализации
+          href: serialization/serialization-guidelines.md
+        - name: Практическое руководство. Фрагментация сериализованных данных
+          href: serialization/how-to-chunk-serialized-data.md
+        - name: Практическое руководство. Определение сериализуемости объекта .NET Standard
+          href: serialization/how-to-determine-if-netstandard-object-is-serializable.md
+        - name: Примеры
+          href: serialization/samples-binary.md
+    - name: Сериализация XML и SOAP
+      items:
+        - name: Обзор
+          href: serialization/xml-and-soap-serialization.md
+        - name: Подробные сведения о сериализации XML
+          href: serialization/introducing-xml-serialization.md
+        - name: Примеры
+          href: serialization/examples-of-xml-serialization.md
+        - name: Инструмент определения схемы XML
+          href: serialization/the-xml-schema-definition-tool-and-xml-serialization.md
+        - name: Управление сериализацией XML с использованием атрибутов
+          href: serialization/controlling-xml-serialization-using-attributes.md
+        - name: Атрибуты управления сериализацией XML
+          href: serialization/attributes-that-control-xml-serialization.md
+        - name: Сериализация XML с использованием веб-служб XML
+          href: serialization/xml-serialization-with-xml-web-services.md
+        - name: Атрибуты управления сериализацией с кодировкой SOAP
+          href: serialization/attributes-that-control-encoded-soap-serialization.md
+        - name: Практические руководства
+          items:
+            - name: Сериализация объекта
+              href: serialization/how-to-serialize-an-object.md
+            - name: Десериализация объекта
+              href: serialization/how-to-deserialize-an-object.md
+            - name: Использование инструмента определения схемы XML для создания классов и документов схемы XML
+              href: serialization/xml-schema-def-tool-gen.md
+            - name: Управление сериализацией производных классов
+              href: serialization/how-to-control-serialization-of-derived-classes.md
+            - name: Указание имени альтернативного элемента для потока XML
+              href: serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
+            - name: Квалификация элемента XML и имен атрибутов XML
+              href: serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
+            - name: Сериализация объекта как потока XML с кодировкой SOAP
+              href: serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
+            - name: Переопределение сериализации XML с кодировкой SOAP
+              href: serialization/how-to-override-encoded-soap-xml-serialization.md
+        - name: Элементы сериализации XML
+          items:
+            - name: system.xml.serialization
+              href: serialization/system-xml-serialization-element.md
+            - name: dateTimeSerialization
+              href: serialization/datetimeserialization-element.md
+            - name: schemaImporterExtensions
+              href: serialization/schemaimporterextensions-element.md
+            - name: Элемент add для элемента xmlSchemaImporterExtensions
+              href: serialization/add-element-for-schemaimporterextensions.md
+            - name: xmlSerializer
+              href: serialization/xmlserializer-element.md
+        - name: Инструменты
+          items:
+            - name: Инструмент создания сериализатора XML (Sgen.exe)
+              href: serialization/xml-serializer-generator-tool-sgen-exe.md
+            - name: Инструмент определения схемы XML (Xsd.exe)
+              href: serialization/xml-schema-definition-tool-xsd-exe.md
+        - name: Примеры
+          href: serialization/samples-xml.md
 - name: Разработка для нескольких платформ
-  href: cross-platform/
+  items:
+    - name: Обзор
+      href: cross-platform/index.md
+      displayName: cross platform
+    - name: Переносимая библиотека классов
+      href: cross-platform/cross-platform-development-with-the-portable-class-library.md
+    - name: Использование переносимой библиотеки классов с MVVM
+      href: cross-platform/using-portable-class-library-with-model-view-view-model.md
+    - name: 'Ресурсы приложений для библиотек, предназначенных для нескольких платформ'
+      href: cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+    - name: Поддержка приложений для Microsoft Store и среды выполнения Windows в .NET Framework
+      href: cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+    - name: Передача URI в среду выполнения Windows
+      href: cross-platform/passing-a-uri-to-the-windows-runtime.md
