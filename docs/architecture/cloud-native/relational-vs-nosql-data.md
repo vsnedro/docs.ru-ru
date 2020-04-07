@@ -1,16 +1,16 @@
 ---
-title: Реляционные и ноСЗЛ данные
+title: Реляционные и Данные NoSQL
 description: Узнайте о реляционных данных и данных NoS'L в облачных приложениях
 author: robvet
 ms.date: 01/22/2020
-ms.openlocfilehash: 04693e30ba3848f1e51f1c69a75be5f18ead4cf1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3fb3dcc3a87e278c05f3e15d261245f4d61453d1
+ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79141423"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80805806"
 ---
-# <a name="relational-vs-nosql-data"></a>Реляционные и ноСЗЛ данные
+# <a name="relational-vs-nosql-data"></a>Реляционные и Данные NoSQL
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
@@ -284,5 +284,5 @@ Kubernetes использует *конструкцию Службы,* позв�
 Служба предоставляет рекомендации, которые помогут вам пройти через изменения, необходимые для выполнения миграции, как малых, так и больших.
 
 >[!div class="step-by-step"]
->[Предыдущий](Database-per-microservice.md)
->[Следующий](azure-caching.md)
+>[Назад](database-per-microservice.md)
+>[Вперед](azure-caching.md)

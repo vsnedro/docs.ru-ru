@@ -3,12 +3,12 @@ title: Инфраструктура связи для слоя взаимоде�
 description: Узнайте о том, как технологии сервисной сетки упрощают связь с облачными микрослужбами
 author: robvet
 ms.date: 03/03/2020
-ms.openlocfilehash: 6b177ef33b804ec35f3acb919539a97683e5a487
-ms.sourcegitcommit: 79b0dd8bfc63f33a02137121dd23475887ecefda
+ms.openlocfilehash: 8bb57e990dbf1baf8c246fe4aacfbb2904a251e6
+ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80523523"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80805754"
 ---
 # <a name="service-mesh-communication-infrastructure"></a>Инфраструктура связи для слоя взаимодействия между службами
 
@@ -73,5 +73,5 @@ ms.locfileid: "80523523"
 - [Создание gRPC Услуг с помощью видео .NET](https://channel9.msdn.com/Shows/The-Cloud-Native-Show/Building-Microservices-with-gRPC-and-NET)
 
 >[!div class="step-by-step"]
->[Предыдущий](grpc.md)
->[Следующий](Database-per-microservice.md)
+>[Назад](grpc.md)
+>[Вперед](database-per-microservice.md)

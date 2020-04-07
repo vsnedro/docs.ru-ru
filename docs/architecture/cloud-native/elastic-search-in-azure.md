@@ -2,13 +2,13 @@
 title: Упругий поиск в облачных приложениях
 description: Узнайте о добавлении возможностей Elastic Search в облачные приложения.
 author: robvet
-ms.date: 01/22/2020
-ms.openlocfilehash: 1bce255b6315006b11e0b6ac77040300f67ed984
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 03/02/2020
+ms.openlocfilehash: da6b9402cf266f5a298b05cf837805b2377bc75a
+ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79141293"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80805562"
 ---
 # <a name="elasticsearch-in-a-cloud-native-app"></a>Elasticsearch в облачно-родном приложении
 
@@ -43,8 +43,6 @@ Elasticsearch построен на вершине полнотекстовый 
 - [Шаблон CQRS](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
 
 - [Шаблон поиска событий](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
-
-- [RDBMSvs vs. Базы данных НоСЗЛ: Обзор](https://maxivak.com/rdbms-vs-nosql-databases/)
 
 - [Почему в теореме CAP не толерантна раздел RDBMS и почему она доступна?](https://stackoverflow.com/questions/36404765/why-isnt-rdbms-partition-tolerant-in-cap-theorem-and-why-is-it-available)
 
@@ -83,5 +81,5 @@ Elasticsearch построен на вершине полнотекстовый 
 - [Введение в Апач Лусене](https://www.baeldung.com/lucene)
 
 >[!div class="step-by-step"]
->[Предыдущий](azure-caching.md)
->[Следующий](resiliency.md) <!-- Next Chapter -->
+>[Назад](azure-caching.md)
+>[Вперед](resiliency.md) <!-- Next Chapter -->
