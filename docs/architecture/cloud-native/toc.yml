@@ -44,10 +44,8 @@
         - name: Инфраструктура связи для слоя взаимодействия между службами
           href: service-mesh-communication-infrastructure.md
     - name: Распределенные данные
-      href: null
+      href: database-per-microservice.md
       items:
-        - name: Одна база данных для каждой микрослужбы
-          href: database-per-microservice.md
         - name: Реляционные и Данные NoSQL
           href: relational-vs-nosql-data.md
         - name: 'Кэширование в приложении, ориентированном на облако'
