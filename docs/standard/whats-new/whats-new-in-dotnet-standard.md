@@ -4,18 +4,18 @@ description: В этой статье перечислены новые возм
 ms.custom: updateeachrelease
 ms.date: 04/12/2018
 ms.technology: dotnet-standard
-ms.openlocfilehash: a90df0360211c3b02f4f2d8697890180099c5807
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 28d6a3546e08bbc3a7d4a26f08ba9cc5e16a901b
+ms.sourcegitcommit: 2ff49dcf9ddf107d139b4055534681052febad62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76921059"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80438205"
 ---
-# <a name="whats-new-in-the-net-standard"></a>Новые возможности .NET Standard
+# <a name="whats-new-in-net-standard"></a>Новые возможности .NET Standard
 
 .NET Standard — это формальная спецификация, определяющая ряд версий с набором интерфейсов API, которые должны быть доступны во всех реализациях .NET, соответствующих определенной версии стандарта. Решение .NET Standard ориентировано на разработчиков библиотек. Библиотека, которая предназначена для некоторой версии .NET Standard, может использоваться в любой реализации .NET Framework, .NET Core или Xamarin, совместимой с той же версией стандарта.
 
-Сейчас последней версией является .NET Standard 2.0. Она входит в пакет SDK для .NET Core 2.0, а также в Visual Studio 2017 версии 15.3 при установленной рабочей нагрузке .NET Core.
+.NET Standard входит в пакет SDK для .NET Core 2.0, а также в Visual Studio, если выбирается рабочая нагрузка .NET Core.
 
 ## <a name="supported-net-implementations"></a>Поддерживаемые реализации .NET
 
@@ -29,13 +29,13 @@ ms.locfileid: "76921059"
 - Xamarin.Android 8.0 или более поздней версии
 - Универсальная платформа Windows 10.0.16299 или более поздней версии
 
-## <a name="whats-new-in-the-net-standard-20"></a>Новые возможности .NET Standard 2.0
+## <a name="whats-new-in-net-standard-20"></a>Новые возможности .NET Standard 2.0
 
 .NET Standard 2.0 содержит следующие новые функции и компоненты.
 
 ### <a name="a-vastly-expanded-set-of-apis"></a>Значительно расширенный набор интерфейсов API
 
-Вплоть до версии 1.6 спецификация .NET Standard содержала сравнительно небольшой набор API-интерфейсов. Среди прочего, в их числе не было многих API, которые часто используются на платформах .NET Framework и Xamarin. Это усложняет разработку, так как разработчикам приходится искать подходящие средства для замены знакомых API при разработке приложений и библиотек для нескольких реализаций .NET. В .NET Standard 2.0 это ограничение устранено: в стандарт добавлены более 20 000 интерфейсов API, недоступных в предыдущей версии .NET Standard 1.6. Список интерфейсов API, добавленных в .NET Standard 2.0 см. в [документе сравнения возможностей .NET Standard 2.0 и 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md).
+Вплоть до версии 1.6 спецификация .NET Standard содержала сравнительно небольшой набор API-интерфейсов. Среди прочего, в их числе не было многих API, которые часто используются на платформах .NET Framework и Xamarin. Это усложняет разработку, так как разработчикам приходится искать подходящие средства для замены знакомых API при разработке приложений и библиотек для нескольких реализаций .NET. В .NET Standard 2.0 это ограничение устранено: в стандарт добавлены более 20 000 интерфейсов API, недоступных в предыдущей версии .NET Standard 1.6. Список интерфейсов API, добавленных в .NET Standard 2.0, см. в [документе сравнения возможностей .NET Standard 2.0 и 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md).
 
 Вот лишь некоторые возможности, добавленные в пространство имен <xref:System> .NET Standard 2.0:
 
@@ -59,7 +59,7 @@ ms.locfileid: "76921059"
 
 ### <a name="support-for-visual-basic"></a>Поддержка Visual Basic
 
-Теперь вы можете разрабатывать библиотеки .NET Standard на Visual Basic. Разработчики Visual Basic, использующие Visual Studio 2017 версии 15.3 или более поздней версии с установленной рабочей нагрузкой .NET Core, теперь получают в Visual Studio шаблон библиотеки классов .NET Standard. Разработчики Visual Basic, которые используют другие средства и среды разработки, могут создать проект библиотеки .NET Standard с помощью команды [dotnet new](../../core/tools/dotnet-new.md). Дополнительные сведения см. в разделе [Поддержка средств для библиотек .NET Standard](#tooling-support-for-net-standard-libraries).
+Теперь вы можете разрабатывать библиотеки .NET Standard на Visual Basic. В состав Visual Studio 2019 и Visual Studio 2017 версии 15.3 или более поздней с установленной рабочей нагрузкой .NET Core входит шаблон библиотеки классов .NET Standard. Разработчики Visual Basic, которые используют другие средства и среды разработки, могут создать проект библиотеки .NET Standard с помощью команды [dotnet new](../../core/tools/dotnet-new.md). Дополнительные сведения см. в разделе [Поддержка средств для библиотек .NET Standard](#tooling-support-for-net-standard-libraries).
 
 ### <a name="tooling-support-for-net-standard-libraries"></a>Поддержка средств для библиотек .NET Standard
 
@@ -91,7 +91,7 @@ dotnet new classlib -lang vb
 
 ---
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [.NET Standard](../net-standard.md)
 - [Введение в .NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/)

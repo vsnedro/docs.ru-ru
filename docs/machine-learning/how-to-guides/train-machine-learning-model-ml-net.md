@@ -1,16 +1,16 @@
 ---
 title: Обучение и оценка модели
 description: Из этой статьи вы узнаете, как создавать модели машинного обучения, собирать метрики и измерять производительность с помощью ML.NET. Модель машинного обучения выполняет обнаружение шаблонов в данных обучения для создания прогнозов на основе новых данных.
-ms.date: 08/29/2019
+ms.date: 03/31/2020
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, title-hack-0625
-ms.openlocfilehash: 0e0f43225b9bf243c31b3095817bdcbdb3123012
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 51499f2c0ece615a99740bd9b27f99d4b5ed1d01
+ms.sourcegitcommit: 79b0dd8bfc63f33a02137121dd23475887ecefda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73976759"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80523859"
 ---
 # <a name="train-and-evaluate-a-model"></a>Обучение и оценка модели
 
@@ -82,7 +82,7 @@ HousingData[] housingData = new HousingData[]
 };
 ```
 
-Разделите данные на обучающий и проверочный наборы с помощью метода [`TrainTestSplit`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit*). В результате появится объект [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData), содержащий два члена [`IDataView`](xref:Microsoft.ML.IDataView) — один для обучающего набора данных, другой для проверочного. Распределение данных определяется параметром `testFraction`. В приведенном ниже фрагменте кода для проверочного набора удерживаются 20 процентов исходных данных.
+Разделите данные на обучающий и проверочный наборы с помощью метода [`TrainTestSplit`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A). В результате появится объект [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData), содержащий два члена [`IDataView`](xref:Microsoft.ML.IDataView) — один для обучающего набора данных, другой для проверочного. Распределение данных определяется параметром `testFraction`. В приведенном ниже фрагменте кода для проверочного набора удерживаются 20 процентов исходных данных.
 
 ```csharp
 DataOperationsCatalog.TrainTestData dataSplit = mlContext.Data.TrainTestSplit(data, testFraction: 0.2);
@@ -100,9 +100,9 @@ IDataView testData = dataSplit.TestSet;
 
 Алгоритмы машинного обучения в ML.NET в качестве входных данных ожидают вектор с плавающей запятой известного размера. Если все данные уже переведены в числовой формат и предназначены для одновременной обработки (пиксели изображения), примените к модели данных атрибут [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute).
 
-Если не все данные являются числовыми, а вы хотите к каждому столбцу применить отдельное преобразование данных, используйте метод [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*) после обработки каждого столбца — в результате все отдельные столбцы будут объединены в единый вектор компонентов, который будет выходными данными нового столбца.
+Если не все данные являются числовыми, а вы хотите к каждому столбцу применить отдельное преобразование данных, используйте метод [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A) после обработки каждого столбца — в результате все отдельные столбцы будут объединены в единый вектор компонентов, который будет выходными данными нового столбца.
 
-В следующем фрагменте кода столбцы `Size` и `HistoricalPrices` объединены в один вектор компонентов, который служит выходными данными для нового столбца с именем `Features`. Поскольку нет разницы в масштабах, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) применяется к столбцу `Features` для нормализации данных.
+В следующем фрагменте кода столбцы `Size` и `HistoricalPrices` объединены в один вектор компонентов, который служит выходными данными для нового столбца с именем `Features`. Поскольку нет разницы в масштабах, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A) применяется к столбцу `Features` для нормализации данных.
 
 ```csharp
 // Define Data Prep Estimator
@@ -123,7 +123,7 @@ IDataView transformedTrainingData = dataPrepTransformer.Transform(trainData);
 
 Если имена столбцов не указаны, алгоритмы ML.NET используют имена по умолчанию. Все инструкторы имеют параметр с именем `featureColumnName` для входных данных, алгоритма, а там, где это применимо, еще и параметр с именем `labelColumnName` для ожидаемого значения. По умолчанию используются значения `Features` и `Label` соответственно.
 
-Если во время предварительной обработки используется метод [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*), который создает столбец с именем `Features`, имя столбца компонентов в параметрах алгоритма указывать необязательно, поскольку он уже существует в предварительно обработанных данных `IDataView`. Столбец меток — `CurrentPrice`, но в связи с тем, что атрибут [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) используется в модели данных, ML.NET переименовывает столбец `CurrentPrice` в `Label` и таким образом устраняет необходимость предоставлять параметр `labelColumnName` для средства оценки алгоритма машинного обучения.
+Если во время предварительной обработки используется метод [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A), который создает столбец с именем `Features`, имя столбца компонентов в параметрах алгоритма указывать необязательно, поскольку он уже существует в предварительно обработанных данных `IDataView`. Столбец меток — `CurrentPrice`, но в связи с тем, что атрибут [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) используется в модели данных, ML.NET переименовывает столбец `CurrentPrice` в `Label` и таким образом устраняет необходимость предоставлять параметр `labelColumnName` для средства оценки алгоритма машинного обучения.
 
 Если вы не хотите использовать имена столбцов по умолчанию, передайте имена столбцов компонентов и меток в виде параметров при определении средства оценки алгоритма машинного обучения, как показано в следующем фрагменте кода:
 
@@ -131,9 +131,29 @@ IDataView transformedTrainingData = dataPrepTransformer.Transform(trainData);
 var UserDefinedColumnSdcaEstimator = mlContext.Regression.Trainers.Sdca(labelColumnName: "MyLabelColumnName", featureColumnName: "MyFeatureColumnName");
 ```
 
+## <a name="caching-data"></a>Кэширование данных
+
+По умолчанию при обработке данных их загрузка или потоковая передача осуществляется отложенным образом. Это означает, что во время обучения алгоритмы обучения могут несколько раз загружать данные с диска и выполнять их итерацию. Поэтому чтобы сократить количество загрузок данных с диска, рекомендуется кэшировать помещаемые в память наборы данных. Кэширование выполняется как часть [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) с помощью [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A).
+
+Рекомендуется использовать [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) до алгоритмов обучения в конвейере.
+
+Используя следующий класс [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) для добавления метода [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) перед классом [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer), алгоритм обучения кэширует результаты предыдущих средств оценки для последующего использования.
+
+```csharp
+// 1. Concatenate Size and Historical into a single feature vector output to a new column called Features
+// 2. Normalize Features vector
+// 3. Cache prepared data
+// 4. Use Sdca trainer to train the model
+IEstimator<ITransformer> dataPrepEstimator =
+    mlContext.Transforms.Concatenate("Features", "Size", "HistoricalPrices")
+        .Append(mlContext.Transforms.NormalizeMinMax("Features"))
+        .AppendCacheCheckpoint(mlContext);
+        .Append(mlContext.Regression.Trainers.Sdca());
+```
+
 ## <a name="train-the-machine-learning-model"></a>Обучение модели машинного обучения
 
-Когда данные пройдут предварительную обработку, используйте метод [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase`2.Fit*) для обучения модели машинного обучения с алгоритмом регрессии [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer).
+Когда данные пройдут предварительную обработку, используйте метод [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase%602.Fit%2A) для обучения модели машинного обучения с алгоритмом регрессии [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer).
 
 ```csharp
 // Define StochasticDualCoordinateAscent regression algorithm estimator
@@ -156,7 +176,7 @@ var trainedModelParameters = trainedModel.Model as LinearRegressionModelParamete
 
 ## <a name="evaluate-model-quality"></a>Оценка качества модели
 
-Чтобы выбрать наиболее эффективную модель, необходимо оценить ее производительность на основе проверочных данных. Для измерения различных метрик обученной модели используйте метод [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate*).
+Чтобы выбрать наиболее эффективную модель, необходимо оценить ее производительность на основе проверочных данных. Для измерения различных метрик обученной модели используйте метод [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate%2A).
 
 > [!NOTE]
 > Метод `Evaluate` создает различные метрики в зависимости от того, на каком компьютере выполнялась задача машинного обучения. Чтобы узнать больше, изучите [`Microsoft.ML.Data`документацию по API](xref:Microsoft.ML.Data) и выполните поиск классов, в именах которых есть `Metrics`.

@@ -3,12 +3,12 @@ title: Глоссарий по .NET
 description: Узнайте значение выбранных терминов, используемых в документации по .NET.
 ms.date: 01/22/2019
 ms.technology: dotnet-standard
-ms.openlocfilehash: ed4dceed1a3f39c5c4ce7a278efc37bb38ed0d94
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: d8f16579ea4dcbc9260aac83e16d3fbd30db519c
+ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80344202"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80635584"
 ---
 # <a name="net-glossary"></a>Глоссарий по .NET
 
@@ -155,7 +155,7 @@ Mono обычно используется с JIT-компилятором, но
 
 Общий термин для [.NET Standard](#net-standard) и всех [реализаций .NET](#implementation-of-net) и рабочих нагрузок. Всегда пишется полностью прописными буквами. Написание ".Net" не используется.
 
-См. [руководство по .NET](index.md).
+См. [руководство по .NET](index.yml).
 
 ## <a name="net-core"></a>.NET Core
 
@@ -273,7 +273,7 @@ UWP была первой платформой приложений, подде�
 
 ## <a name="see-also"></a>См. также
 
-- [Руководство по .NET](index.md)
+- [Руководство по .NET](index.yml)
 - [Руководство по .NET Framework](../framework/index.yml)
 - [.NET Core](../core/index.yml)
 - [Обзор ASP.NET](/aspnet/index#pivot=aspnet)

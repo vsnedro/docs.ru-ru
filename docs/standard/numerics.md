@@ -11,16 +11,16 @@ helpviewer_keywords:
 - numerics
 - BigInteger
 ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
-ms.openlocfilehash: e5815058898cac165e7a47d761ee86bb9c4cb940
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3e9c817006930a36ebdce5c5965d78f1721c7056
+ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73091588"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80635145"
 ---
 # <a name="numerics-in-net"></a>Числовые значения в .NET
 
-Платформа .NET предоставляет в пространстве имен <xref:System.Numerics.BigInteger?displayProperty=nameWithType> разные примитивы для целых чисел и чисел с плавающей запятой, а также <xref:System.Numerics.Complex?displayProperty=nameWithType> (целочисленный тип, не имеющий теоретической верхней и нижней границы), <xref:System.Numerics> (тип для представления комплексных чисел) и набор типов с поддержкой SIMD.
+Платформа .NET предоставляет в пространстве имен <xref:System.Numerics> разные примитивы для целых чисел и чисел с плавающей запятой, а также <xref:System.Numerics.BigInteger?displayProperty=nameWithType> (целочисленный тип, не имеющий теоретической верхней и нижней границы), <xref:System.Numerics.Complex?displayProperty=nameWithType> (тип для представления комплексных чисел) и набор типов с поддержкой SIMD.
   
 ## <a name="integer-types"></a>Целочисленные типы
 
@@ -30,7 +30,7 @@ ms.locfileid: "73091588"
 |----------|----------------------|--------------------|-------------------|-------------------|  
 |<xref:System.Byte?displayProperty=nameWithType>|Без знака|1|0|255|  
 |<xref:System.Int16?displayProperty=nameWithType>|Со знаком|2|–32 768|32 767|  
-|<xref:System.Int32?displayProperty=nameWithType>|Со знаком|4|–2 147 483 648|2,147,483,647|  
+|<xref:System.Int32?displayProperty=nameWithType>|Со знаком|4|–2 147 483 648|2 147 483 647|  
 |<xref:System.Int64?displayProperty=nameWithType>|Со знаком|8|–9 223 372 036 854 775 808|9 223 372 036 854 775 807|  
 |<xref:System.SByte?displayProperty=nameWithType>|Со знаком|1|–128|127|  
 |<xref:System.UInt16?displayProperty=nameWithType>|Без знака|2|0|65 535|  
@@ -42,7 +42,7 @@ ms.locfileid: "73091588"
 Вы также можете работать с отдельными битами целочисленного значения с помощью класса <xref:System.BitConverter?displayProperty=nameWithType>.  
 
 > [!NOTE]  
-> Целочисленные типы без знака не совместимы с CLS. Дополнительные сведения см. в разделе [Независимость от языка и независимые от языка компоненты](language-independence-and-language-independent-components.md).
+> Целочисленные типы без знака не совместимы с CLS. Для получения дополнительной информации см. [ статью Независимость от языка и независимые от языка компоненты](language-independence-and-language-independent-components.md).
 
 ## <a name="biginteger"></a>BigInteger
 
@@ -64,7 +64,7 @@ ms.locfileid: "73091588"
 
 Вы также можете работать с отдельными битами значений типа <xref:System.Double> и <xref:System.Single> с помощью класса <xref:System.BitConverter?displayProperty=nameWithType>. Структура <xref:System.Decimal?displayProperty=nameWithType> имеет собственные методы, <xref:System.Decimal.GetBits%2A?displayProperty=nameWithType> и <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29?displayProperty=nameWithType>, для работы с отдельными битами десятичного значения, а также собственный набор методов для выполнения некоторых дополнительных математических операций.
   
-Типы <xref:System.Double> и <xref:System.Single> предназначены для значений, которые по своему характеру являются неточными (например, расстояние между двумя звездами), и для случаев, когда не требуются высокая степень точности и малая погрешность округления. Тип <xref:System.Decimal?displayProperty=nameWithType> следует использовать в случаях, когда требуется большая точность и минимальная погрешность округления.
+Типы <xref:System.Double> и <xref:System.Single> предназначены для значений, которые по своему характеру являются неточными (например, расстояние между двумя звездами), и для случаев, когда не требуются высокая степень точности и малая погрешность округления. Тип <xref:System.Decimal?displayProperty=nameWithType> используется в случаях, когда требуется большая точность и минимальная погрешность округления.
 
 > [!NOTE]
 > Тип <xref:System.Decimal> не устраняет потребность в округлении. Но он сводит к минимуму ошибки, возникающие из-за округления.
@@ -93,7 +93,6 @@ ms.locfileid: "73091588"
   
 Типы с поддержкой SIMD реализованы так, что их можно использовать на оборудовании и (или) с JIT-компиляторами, которые не поддерживают SIMD. Чтобы получить преимущество от использования инструкций SIMD, необходимо запустить 64-разрядное приложение в среде выполнения с компилятором RyuJIT. Он входит в состав .NET Core и .NET Framework 4.6 и более поздних версий. Он добавляет поддержку SIMD при нацеливании на 64-разрядные процессоры.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Основные сведения о приложениях .NET Framework](application-essentials.md)
 - [Строки стандартных числовых форматов](base-types/standard-numeric-format-strings.md)

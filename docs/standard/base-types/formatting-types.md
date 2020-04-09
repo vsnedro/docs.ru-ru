@@ -25,12 +25,12 @@ helpviewer_keywords:
 - custom formatting [.NET Framework]
 - strings [.NET Framework], formatting
 ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
-ms.openlocfilehash: a1f4d9107427140bcfa6b49bc8a850432fb204f7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 124c32a09a32dd90b8b96b39aa80352094030b23
+ms.sourcegitcommit: 79b0dd8bfc63f33a02137121dd23475887ecefda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75348251"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80523947"
 ---
 # <a name="format-types-in-net"></a>Форматирование типов в .NET
 
@@ -53,7 +53,7 @@ ms.locfileid: "75348251"
 
 Основной механизм форматирования — это используемая по умолчанию реализация метода <xref:System.Object.ToString%2A?displayProperty=nameWithType>, описанная ниже в подразделе [Форматирование по умолчанию с помощью метода ToString](#default-formatting-using-the-tostring-method). При этом платформа .NET предоставляет несколько способов изменения и расширения имеющихся по умолчанию возможностей форматирования. В число этих требований входят следующие:
 
-- Переопределение метода <xref:System.Object.ToString%2A?displayProperty=nameWithType> , позволяющее определить настраиваемое строковое представление значения объекта. Дополнительные сведения см. ниже в разделе [Переопределение метода ToString](#override-the-tostring-method).
+- Переопределение метода <xref:System.Object.ToString%2A?displayProperty=nameWithType>, позволяющее определить настраиваемое строковое представление значения объекта. Дополнительные сведения см. ниже в разделе [Переопределение метода ToString](#override-the-tostring-method).
 
 - Определение описателей формата, позволяющих использовать несколько видов строкового представления значения объекта. Например, описатель формата "X" в следующем операторе позволяет преобразовать целое число в шестнадцатеричное строковое представление.
 
@@ -132,16 +132,16 @@ ms.locfileid: "75348251"
 
 В платформе .NET определяется набор описателей стандартного формата для всех числовых типов, типов даты и времени, а также для всех типов перечислений. Например, все эти категории поддерживают описатель стандартного формата "G", который определяет общее строковое представление значения соответствующего типа.
 
-Строки стандартного формата для типов перечислений напрямую определяют строковое представление значения. От строки формата, переданной в метод `ToString` значения перечисления, зависит, будет оно представлено своим строковым именем (описатели формата "G" и "F"), базовым целочисленным значением (описатель формата "D") или шестидесятеричным значением (описатель формата "X"). В следующем примере демонстрируется использование строк стандартного формата для форматирования значения перечисления <xref:System.DayOfWeek> .
+Строки стандартного формата для типов перечислений напрямую определяют строковое представление значения. От строки формата, переданной в метод `ToString` значения перечисления, зависит, будет оно представлено своим строковым именем (спецификатор формата "G" и "F"), базовым целочисленным значением (спецификатор формата "D") или шестнадцатеричным значением (спецификатор формата "X"). В следующем примере демонстрируется использование строк стандартного формата для форматирования значения перечисления <xref:System.DayOfWeek> .
 
 [!code-csharp[Conceptual.Formatting.Overview#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/standard1.cs#4)]
 [!code-vb[Conceptual.Formatting.Overview#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/standard1.vb#4)]
 
 Сведения о строках форматов перечислений см. в разделе [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md).
 
-Строки стандартного формата для числовых типов обычно задают результирующую строку, точный вид которой зависит от значения одного или нескольких свойств. Например, описатель формата "C" форматирует число в виде значения валюты. При вызове метода `ToString` с описателем формата "C" в качестве единственного параметра для определения строкового представления числового значения используются следующие свойства объекта <xref:System.Globalization.NumberFormatInfo> для текущего языка и региональных параметров:
+Строки стандартного формата для числовых типов обычно задают результирующую строку, точный вид которой зависит от значения одного или нескольких свойств. Например, описатель формата "C" форматирует число в виде значения валюты. При вызове метода `ToString` со спецификатором формата "C" в качестве единственного параметра для определения строкового представления числового значения используются следующие свойства объекта <xref:System.Globalization.NumberFormatInfo> для текущего языка и региональных параметров:
 
-- Свойство <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> , определяющее символ валюты для текущего языка и региональных параметров.
+- Свойство <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A>, определяющее символ валюты для текущего языка и региональных параметров.
 
 - Свойство <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> или <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> , возвращающее целое число, от которого зависит следующее:
 
@@ -168,7 +168,7 @@ ms.locfileid: "75348251"
 
 Дополнительные сведения о строках стандартных числовых форматов см. в разделе [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md).
 
-Строки стандартного формата для значений даты и времени — это псевдонимы строк настраиваемого формата, которые хранятся в конкретном свойстве <xref:System.Globalization.DateTimeFormatInfo> . Например, вызов метода `ToString` применительно к значению даты и времени с описателем формата "D" приведет к отображению даты и времени с помощью настраиваемой строки формата, хранящейся в свойстве <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> для текущего языка и региональных параметров. (Дополнительные сведения о строках настраиваемого формата см. [в следующем разделе](#custom-format-strings).) Данная связь показана в следующем примере.
+Строки стандартного формата для значений даты и времени — это псевдонимы строк настраиваемого формата, которые хранятся в конкретном свойстве <xref:System.Globalization.DateTimeFormatInfo> . Например, вызов метода `ToString` применительно к значению даты и времени со спецификатором формата "D" приведет к отображению даты и времени с помощью настраиваемой строки формата, хранящейся в свойстве <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> для текущего языка и региональных параметров. (Дополнительные сведения о строках настраиваемого формата см. [в следующем разделе](#custom-format-strings).) Данная связь показана в следующем примере.
 
 [!code-csharp[Conceptual.Formatting.Overview#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/alias1.cs#5)]
 [!code-vb[Conceptual.Formatting.Overview#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/alias1.vb#5)]
@@ -333,7 +333,7 @@ ms.locfileid: "75348251"
 
 ## <a name="custom-formatting-with-icustomformatter"></a>Настраиваемое форматирование с использованием интерфейса ICustomFormatter
 
-У двух методов составного форматирования — <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> и <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>— также имеется параметр, задающий поставщик форматирования, поддерживающий настраиваемое форматирование. При вызове какого-либо из этих методов форматирования объект <xref:System.Type> , представляющий интерфейс <xref:System.ICustomFormatter> , передается методу <xref:System.IFormatProvider.GetFormat%2A> поставщика форматирования. Метод <xref:System.IFormatProvider.GetFormat%2A> должен вернуть реализацию <xref:System.ICustomFormatter> , поддерживающую настраиваемое форматирование.
+У двух методов составного форматирования — <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> и <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>— также имеется параметр, задающий поставщик форматирования, поддерживающий настраиваемое форматирование. При вызове какого-либо из этих методов форматирования объект <xref:System.Type>, представляющий интерфейс <xref:System.ICustomFormatter>, передается методу <xref:System.IFormatProvider.GetFormat%2A> поставщика форматирования. Метод <xref:System.IFormatProvider.GetFormat%2A> должен вернуть реализацию <xref:System.ICustomFormatter> , поддерживающую настраиваемое форматирование.
 
 Единственный метод интерфейса <xref:System.ICustomFormatter> , который называется <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29>, автоматически вызывается методом составного форматирования по одному разу для каждого элемента форматирования в строке составного формата. У метода <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29> есть три параметра: строка формата, представляющая аргумент `formatString` в элементе форматирования, сам форматируемый объект и объект <xref:System.IFormatProvider> , предоставляющий услуги форматирования. Обычно класс, реализующий интерфейс <xref:System.ICustomFormatter> , также реализует интерфейс <xref:System.IFormatProvider>, поэтому в таком случае последний параметр будет ссылкой на сам класс настраиваемого форматирования. Метод возвращает настраиваемое строковое представление объекта, который нужно было отформатировать. Если методу не удается отформатировать объект, он должен вернуть пустую ссылку (`Nothing` в Visual Basic).
 
@@ -359,7 +359,6 @@ ms.locfileid: "75348251"
 |[Строки настраиваемого формата TimeSpan](../../../docs/standard/base-types/custom-timespan-format-strings.md)|Описание строк настраиваемого формата, позволяющих создавать прикладные строковые представления интервалов времени.|
 |[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|Описание строк стандартного формата, используемых для создания строковых представлений значений перечислений.|
 |[Составное форматирование](../../../docs/standard/base-types/composite-formatting.md)|Описание способа совмещения нескольких форматируемых значений в строке. Строка может быть последовательно отображена в консоли или выведена в поток.|
-|[Выполнение операций форматирования](../../../docs/standard/base-types/performing-formatting-operations.md)|Перечень разделов, содержащих пошаговые инструкции для выполнения конкретных операций форматирования.|
 |[Анализ строк в .NET](../../../docs/standard/base-types/parsing-strings.md)|Описание способов инициализации объектов со значениями, описанными строковыми представлениями этих объектов. Разбор является операцией, обратной форматированию.|
 
 ## <a name="reference"></a>Справочник

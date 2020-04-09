@@ -9,12 +9,12 @@ helpviewer_keywords:
 - regular expressions, behavior
 - .NET Framework regular expressions, behavior
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
-ms.openlocfilehash: 504e315dda4e76f56a88d97149b1515b6743668b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0273d16028315452e35f83086dbc134d6fcb66c6
+ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "77124355"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80635992"
 ---
 # <a name="details-of-regular-expression-behavior"></a>Подробные сведения о поведении регулярных выражений
 
@@ -151,7 +151,6 @@ ms.locfileid: "77124355"
 |[Потокобезопасность](../../../docs/standard/base-types/thread-safety-in-regular-expressions.md)|Сведения о потокобезопасности регулярных выражений и времени синхронизации доступа к объектам регулярных выражений.|
 |[Регулярные выражения в .NET Framework](../../../docs/standard/base-types/regular-expressions.md)|Общие сведения о регулярных выражениях в контексте языка программирования.|
 |[Объектная модель регулярных выражений](../../../docs/standard/base-types/the-regular-expression-object-model.md)|Сведения об использовании классов регулярных выражений и примеры кода.|
-|[Примеры регулярных выражений](../../../docs/standard/base-types/regular-expression-examples.md)|Примеры кодов, иллюстрирующих использование регулярных выражений в обычных приложениях.|
 |[Элементы языка регулярных выражений — краткий справочник](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Сведения о наборе символов, операторов и конструкций, которые можно использовать для определения регулярных выражений.|
 
 ## <a name="reference"></a>Справочник

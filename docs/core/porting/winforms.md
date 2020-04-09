@@ -3,13 +3,13 @@ title: Перенос приложения Windows Forms в .NET Core
 description: Эта статья описывает, как перенести приложение Windows Forms из .NET Framework в .NET Core для Windows.
 author: Thraka
 ms.author: adegeo
-ms.date: 03/01/2019
-ms.openlocfilehash: dbd522851faa0a4fe435199914a034ee230d3455
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 01/24/2020
+ms.openlocfilehash: 80b4bb225d6a6748743d91a4c70e8b09c10cc94b
+ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76116023"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80635513"
 ---
 # <a name="how-to-port-a-windows-forms-desktop-app-to-net-core"></a>Процесс переноса классического приложения Windows Forms в .NET Core
 
@@ -17,16 +17,16 @@ ms.locfileid: "76116023"
 
 В этой статье применяются различные имена для обозначения типов файлов, используемых для переноса. При переносе вашего проекта файлы будут называться иначе, поэтому попытайтесь мысленно сопоставить их с именами из этой таблицы:
 
-| Файл | Описание: |
+| Файл | Описание |
 | ---- | ----------- |
 | **MyApps.sln** | Имя файла решения. |
 | **MyForms.csproj** | Имя проекта Windows Forms в .NET Framework, который нужно перенести. |
 | **MyFormsCore.csproj** | Имя создаваемого проекта .NET Core. |
 | **MyAppCore.exe** | Исполняемый файл приложения Windows Forms в .NET Core. |
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) для выполнения конструкторских задач.
+- [Visual Studio 2019 16.5, предварительная версия 1](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&ch=pre&rel=16) или более поздние версии для выполнения задач по конструированию. Рекомендуется выполнить обновление до последней [предварительной версии Visual Studio](https://visualstudio.microsoft.com/vs/preview/).
 
   Установите следующие рабочие нагрузки Visual Studio:
   - Разработка классических приложений .NET
@@ -34,10 +34,11 @@ ms.locfileid: "76116023"
 
 - Функционирующий проект Windows Forms в решении, сборка и запуск которого выполняется без ошибок.
 - Код проекта написан на C#.
-- [.NET Core](https://dotnet.microsoft.com/download/dotnet-core) 3.0 или боле поздней версии.
 
 > [!NOTE]
-> **Visual Studio 2017** не поддерживает проекты .NET Core 3.0. **Visual Studio 2019** поддерживает проекты .NET Core 3.0, но пока не поддерживает визуальный конструктор для проектов Windows Forms в .NET Core 3.0. Чтобы использовать визуальный конструктор, необходимо, чтобы проект Windows Forms в .NET в решении имел общие файлы форм с проектом .NET Core.
+> Проекты .NET Core 3.0 поддерживаются только в **Visual Studio 2019** или более поздних версиях. Начиная с **Visual Studio 2019 версии 16.5, предварительная версия 1**, также поддерживается конструктор Windows Forms .NET Core.
+>
+> Чтобы включить конструктор, последовательно выберите **Сервис** > **Параметры** > **Среда** > **Функции предварительной версии**, а затем выберите параметр **Use the preview Windows Forms designer for .NET Core apps** (Использовать конструктор Windows Forms предварительной версии для приложений .NET Core).
 
 ### <a name="consider"></a>Consider
 
@@ -58,10 +59,6 @@ ms.locfileid: "76116023"
 01. Обновите пакеты NuGet, используемые в проекте.
 
     Рекомендуется обновить пакеты NuGet до последней версии перед переносом. Если ваше приложение ссылается на пакеты NuGet, обновите их до последней версии. Убедитесь, что сборка приложения выполняется успешно. Если после обновления возникают ошибки пакетов, установите предыдущую версию пакетов, которая не нарушает работу вашего кода.
-
-01. Visual Studio 2019 пока не поддерживает конструктор Forms для .NET Core 3.0.
-
-    Вам необходимо сохранить существующий файл проекта .NET Framework Windows Forms, если вы хотите использовать конструктор форм в Visual Studio.
 
 ## <a name="create-a-new-sdk-project"></a>Создание проекта пакета SDK
 
@@ -188,7 +185,7 @@ dotnet add .\MyFormsAppCore\MyFormsCore.csproj package MetroFramework.Fonts
 
 Используя пример из предыдущего шага, расширим перечень проектов и файлов, с которыми мы работаем.
 
-| Файл | Описание: |
+| Файл | Описание |
 | ---- | ----------- |
 | **MyApps.sln** | Имя файла решения. |
 | **MyControls.csproj** | Имя проекта библиотеки элементов управления Windows Forms, который нужно перенести. |
@@ -297,7 +294,7 @@ dotnet add .\MyFormsAppCore\MyFormsCore.csproj package Microsoft.Windows.Compati
 
 Когда в Visual Studio 2019 будет добавлена поддержка конструктора Windows Forms, можно скопировать и вставить содержимое файла проекта .NET Core в файл проекта .NET Framework. Затем можно удалить стандартные маски файлов, добавленные с помощью элементов `<Source>` и `<EmbeddedResource>`. Исправьте пути ссылок проекта, используемых приложением. Это позволит полноценно преобразовать проект .NET Framework в проект .NET Core.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Ознакомьтесь со [списком критических изменений, касающихся перехода с .NET Framework на .NET Core](../compatibility/fx-core.md).
 - Дополнительные сведения о [пакете обеспечения совместимости Windows][compat-pack].
