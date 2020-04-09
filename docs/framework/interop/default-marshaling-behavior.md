@@ -9,12 +9,12 @@ helpviewer_keywords:
 - interoperation with unmanaged code, marshaling
 - marshaling behavior
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
-ms.openlocfilehash: 18282d14540027e4fae4fe152d3867ad8c223c37
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f7df323dacfbee3361fe75d831f1e87df328b194
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181480"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80989224"
 ---
 # <a name="default-marshaling-behavior"></a>Поведение маршалинга по умолчанию
 Маршалинг взаимодействия работает по правилам, которые определяют поведение данных, связанных с параметрами метода, при их передаче между управляемой и неуправляемой памятью. Эти встроенные правила определяют такие операции маршалинга, как преобразования типов данных, возможность изменения вызываемым объектом переданных ему данных и возврата этих изменений вызывающему объекту, а также обстоятельства, при которых упаковщик обеспечивает оптимизацию производительности.  
@@ -172,7 +172,7 @@ internal class DelegateTest {
   
  Форматированный тип — это сложный тип, который содержит информацию, явным образом определяющую размещение его членов в памяти. Сведения о размещении членов предоставляются с помощью атрибута <xref:System.Runtime.InteropServices.StructLayoutAttribute>. Размещение может принимать одно из указанных ниже значений перечисления <xref:System.Runtime.InteropServices.LayoutKind>.  
   
-- **LayoutKind.Automatic**  
+- **LayoutKind.Auto**  
   
      Указывает, что среда CLR для повышения эффективности может свободно изменять порядок членов типа. Тем не менее, когда тип значения передается в неуправляемый код, размещение членов является предсказуемым. При попытке маршалинга такой структуры автоматически вызывается исключение.  
   
@@ -437,7 +437,7 @@ interface IValueTypes : IDispatch {
 };  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Преобразуемые и непреобразуемые типы](blittable-and-non-blittable-types.md)
 - [Копирование и закрепление](copying-and-pinning.md)

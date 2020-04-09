@@ -1,33 +1,33 @@
 ---
-title: Обработка ошибок — gRPC для разработчиков WCF
-description: Темы, относящиеся к обработке ошибок в gRPC. Включает таблицу наиболее часто используемых кодов состояния.
+title: Обработка ошибок - gRPC для разработчиков WCF
+description: Темы, относящиеся к обработке ошибок в gRPC. Включает таблицу наиболее часто используемых кодов статуса.
 ms.date: 09/02/2019
-ms.openlocfilehash: c380c651f854adc97e8b2ead36d30c3b83662aac
-ms.sourcegitcommit: 771c554c84ba38cbd4ac0578324ec4cfc979cf2e
+ms.openlocfilehash: 64a2355a8bd608c074f9bc420312b23aba0c1fb2
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77542797"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80988951"
 ---
 # <a name="error-handling"></a>Обработка ошибок
 
-Windows Communication Foundation (WCF) использует <xref:System.ServiceModel.FaultException%601> и [фаултконтракт](xref:System.ServiceModel.FaultContractAttribute) для предоставления подробных сведений об ошибках, включая поддержку стандарта SOAP Fault.
+Фонд связи Windows (WCF) использует <xref:System.ServiceModel.FaultException%601> и [FaultContract](xref:System.ServiceModel.FaultContractAttribute) для предоставления подробной информации об ошибках, включая поддержку стандарта неисправности SOAP.
 
-К сожалению, в текущей версии gRPC отсутствует платформа, найденная в WCF, и имеется ограниченная встроенная обработка ошибок на основе простых кодов состояния и метаданных. В следующей таблице приведено краткое руководство по наиболее часто используемым кодам состояния:
+К сожалению, в текущей версии gRPC отсутствует сложность, найденная с WCF, и только имеет ограниченную встроенную обработку ошибок на основе простых кодов статуса и метаданных. Следующая таблица представляет собой краткое руководство по наиболее часто используемым кодов статуса:
 
 | Код состояния | Проблема |
 | ----------- | ------- |
-| `GRPC_STATUS_UNIMPLEMENTED` | Метод не был записан. |
-| `GRPC_STATUS_UNAVAILABLE` | Проблема со всей службой. |
-| `GRPC_STATUS_UNKNOWN` | Недопустимый ответ. |
-| `GRPC_STATUS_INTERNAL` | Проблема с кодированием и декодированием. |
+| `GRPC_STATUS_UNIMPLEMENTED` | Метод не написан. |
+| `GRPC_STATUS_UNAVAILABLE` | Проблема со всем обслуживанием. |
+| `GRPC_STATUS_UNKNOWN` | Недействительный ответ. |
+| `GRPC_STATUS_INTERNAL` | Проблема с кодированием/расшифровкой. |
 | `GRPC_STATUS_UNAUTHENTICATED` | Ошибка проверки подлинности. |
 | `GRPC_STATUS_PERMISSION_DENIED` | Ошибка авторизации. |
-| `GRPC_STATUS_CANCELLED` | Вызов был отменен (обычно вызывающей стороной). |
+| `GRPC_STATUS_CANCELLED` | Звонок был отменен, как правило, абонентом. |
 
-## <a name="raise-errors-in-aspnet-core-grpc"></a>Вызвать ошибки в ASP.NET Core gRPC
+## <a name="raise-errors-in-aspnet-core-grpc"></a>Повышение ошибок в ASP.NET Core gRPC
 
-Служба ASP.NET Core gRPC может отправить ответ об ошибке, вызывая `RpcException`, который может быть перехвачен клиентом, как если бы он находился в том же процессе. `RpcException` должен включать код состояния и описание, а также может содержать метаданные и более длинное сообщение об исключении. Метаданные можно использовать для отправки вспомогательных данных аналогично тому, как `FaultContract` объекты могут содержать дополнительные данные для ошибок WCF.
+Служба ASP.NET Core gRPC может отправить ответ `RpcException`на ошибку, бросив , который может быть пойман клиентом, как если бы он был в том же процессе. Необходимо `RpcException` включить код статуса и описание, и может по желанию включать метаданные и более длинное сообщение исключения. Метаданные могут использоваться для отправки вспомогательных данных, подобно тому, как `FaultContract` объекты могут нести дополнительные данные для ошибок WCF.
 
 ```csharp
 public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request, ServerCallContext context)
@@ -44,9 +44,9 @@ public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request
 }
 ```
 
-## <a name="catch-errors-in-grpc-clients"></a>Перехват ошибок в клиентах gRPC
+## <a name="catch-errors-in-grpc-clients"></a>Поймать ошибки в gRPC клиентов
 
-Так же, как клиенты WCF могут перехватывать ошибки <xref:System.ServiceModel.FaultException%601>, клиент gRPC может перехватить `RpcException`, чтобы обрабатывались ошибки. Поскольку `RpcException` не является универсальным типом, нельзя перехватывать различные типы ошибок в разных блоках. Однако можно использовать C#функции *фильтров исключений* , чтобы объявить отдельные блоки `catch` для различных кодов состояния, как показано в следующем примере:
+Так же, как <xref:System.ServiceModel.FaultException%601> клиенты WCF могут ловить `RpcException` ошибки, клиент gRPC может поймать для обработки ошибок. Поскольку `RpcException` не является общим типом, вы не можете поймать различные типы ошибок в разных блоках. Но можно использовать функцию *фильтров исключений* C's для декларирования отдельных `catch` блоков для различных кодов статусов, как показано в следующем примере:
 
 ```csharp
 try
@@ -65,11 +65,11 @@ catch (RpcException)
 ```
 
 > [!IMPORTANT]
-> При предоставлении дополнительных метаданных об ошибках обязательно задокументируйте соответствующие ключи и значения в документации по API или комментарии в файле `.proto`.
+> При предоставлении дополнительных метаданных об ошибках обязательно задокументируйте соответствующие ключи и значения `.proto` в документации API или в комментариях в файле.
 
-## <a name="grpc-richer-error-model"></a>gRPC Расширенная модель ошибок
+## <a name="grpc-richer-error-model"></a>gRPC богаче модель ошибки
 
-Google разработал более [обширную модель ошибок](https://cloud.google.com/apis/design/errors#error_model) , которая более похожа на [фаултконтракт](xref:System.ServiceModel.FaultContractAttribute)WCF, но эта модель C# пока не поддерживается. В настоящее время он доступен только для Go, Java, Python и C++.
+Google разработала [более богатую модель ошибок,](https://cloud.google.com/apis/design/errors#error_model) которая больше похожа на [WCF в FaultContract](xref:System.ServiceModel.FaultContractAttribute), но эта модель не поддерживается в C » еще. В настоящее время он доступен только для Go, Java, Python и C..
 
 >[!div class="step-by-step"]
 >[Назад](metadata.md)
