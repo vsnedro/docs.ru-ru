@@ -5,35 +5,37 @@ author: cartermp
 ms.date: 01/21/2020
 ms.technology: dotnet-standard
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
-ms.openlocfilehash: af0ce454a986f22dfb00888cab6e34901930c5a9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f1d5854d8bddea21bbb8a0a7fa032c9fbd15f3d5
+ms.sourcegitcommit: 2ff49dcf9ddf107d139b4055534681052febad62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "77124264"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80438176"
 ---
-# <a name="get-started"></a><span data-ttu-id="c2ff3-103">Начало работы</span><span class="sxs-lookup"><span data-stu-id="c2ff3-103">Get started</span></span>
+# <a name="get-started"></a><span data-ttu-id="b24e0-103">Начало работы</span><span class="sxs-lookup"><span data-stu-id="b24e0-103">Get started</span></span>
 
-<span data-ttu-id="c2ff3-104">К работе с .NET можно приступить разными способами.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-104">There are a number of ways to get started with .NET.</span></span> <span data-ttu-id="c2ff3-105">Так как .NET — довольно большая платформа, в этой документации содержится много статей, показывающих начало работы с ней с различных точек зрения.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-105">Because .NET is a massive platform, there are multiple articles in this documentation that can help you get started with .NET, each from a different perspective.</span></span>
+<span data-ttu-id="b24e0-104">К работе с .NET можно приступить разными способами.</span><span class="sxs-lookup"><span data-stu-id="b24e0-104">There are a number of ways to get started with .NET.</span></span> <span data-ttu-id="b24e0-105">Так как .NET — довольно большая платформа, в этой документации содержится много статей, показывающих начало работы с ней с различных точек зрения.</span><span class="sxs-lookup"><span data-stu-id="b24e0-105">Because .NET is a massive platform, there are multiple articles in this documentation that can help you get started with .NET, each from a different perspective.</span></span>
 
-## <a name="get-started-using-net-languages"></a><span data-ttu-id="c2ff3-106">Приступая к работе с языками .NET</span><span class="sxs-lookup"><span data-stu-id="c2ff3-106">Get started using .NET languages</span></span>
+## <a name="get-started-using-net-languages"></a><span data-ttu-id="b24e0-106">Приступая к работе с языками .NET</span><span class="sxs-lookup"><span data-stu-id="b24e0-106">Get started using .NET languages</span></span>
 
-* <span data-ttu-id="c2ff3-107">В статье о [начале работы с C#](../csharp/getting-started/index.md) и [руководстве по языку C#](../csharp/tutorials/index.md) описаны способы начала работы с использованием языка C#.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-107">The [C# getting started](../csharp/getting-started/index.md) articles and [C# tutorials](../csharp/tutorials/index.md) provide ways to get started in a C#-centric way.</span></span>
+<span data-ttu-id="b24e0-107">Ниже приводится список учебных руководств по работе с C#, Visual Basic и F#.</span><span class="sxs-lookup"><span data-stu-id="b24e0-107">For getting-started tutorials in C#, Visual Basic, and F#, see:</span></span>
 
-* <span data-ttu-id="c2ff3-108">В руководствах [по началу работы с F#](../fsharp/get-started/index.md) представлены три основных способа использования языка F#: с помощью Visual Studio, Visual Studio Code или программ командной строки.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-108">The [F# getting started](../fsharp/get-started/index.md) tutorials cover the three primary ways you can use F#: with Visual Studio, Visual Studio Code, or command-line tools.</span></span>
+* [<span data-ttu-id="b24e0-108">Приступая к работе в C#</span><span class="sxs-lookup"><span data-stu-id="b24e0-108">Get started in C#</span></span>](../csharp/getting-started/index.md)
+* [<span data-ttu-id="b24e0-109">Руководства по C#</span><span class="sxs-lookup"><span data-stu-id="b24e0-109">C# tutorials</span></span>](../csharp/tutorials/index.md)
+* [<span data-ttu-id="b24e0-110">Руководства по началу работы с F#</span><span class="sxs-lookup"><span data-stu-id="b24e0-110">F# getting-started tutorials</span></span>](../fsharp/get-started/index.md)
+* [<span data-ttu-id="b24e0-111">Начало работы с Visual Basic</span><span class="sxs-lookup"><span data-stu-id="b24e0-111">Get started in Visual Basic</span></span>](../visual-basic/getting-started/index.md)
 
-* <span data-ttu-id="c2ff3-109">В статьях, посвященных [началу работы с Visual Basic](../visual-basic/getting-started/index.md), приведены инструкции по использованию Visual Basic в Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-109">The [Visual Basic getting started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio.</span></span>
+## <a name="get-started-using-net-core"></a><span data-ttu-id="b24e0-112">Начало работы с .NET Core</span><span class="sxs-lookup"><span data-stu-id="b24e0-112">Get started using .NET Core</span></span>
 
-## <a name="get-started-using-net-core"></a><span data-ttu-id="c2ff3-110">Начало работы с .NET Core</span><span class="sxs-lookup"><span data-stu-id="c2ff3-110">Get started using .NET Core</span></span>
+<span data-ttu-id="b24e0-113">Руководства по работе с .NET Core:</span><span class="sxs-lookup"><span data-stu-id="b24e0-113">For .NET Core-specific guidance, see:</span></span>
 
-* <span data-ttu-id="c2ff3-111">В статье [Начало работы с .NET Core](../core/get-started.md) представлен обзор статей, в которых показано, как приступить к работе с .NET Core на компьютерах с разными операционными системами и при помощи различных средств.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-111">[Get started with .NET Core](../core/get-started.md) provides an overview of articles that show how to get started with .NET Core on different operating systems and using different tools.</span></span>
+* [<span data-ttu-id="b24e0-114">Начало работы с .NET Core</span><span class="sxs-lookup"><span data-stu-id="b24e0-114">Get started with .NET Core</span></span>](../core/get-started.md)
+* [<span data-ttu-id="b24e0-115">Учебники по .NET Core</span><span class="sxs-lookup"><span data-stu-id="b24e0-115">.NET Core tutorials</span></span>](../core/tutorials/index.md)
 
-* <span data-ttu-id="c2ff3-112">На странице [Учебники по .NET Core](../core/tutorials/index.md) подробно описаны способы, позволяющие начать работу с .NET Core в выбранной операционной системе и с использованием выбранных средств.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-112">The [.NET Core tutorials](../core/tutorials/index.md) detail ways you can get started with .NET Core using your operating system and tooling of choice.</span></span>
+## <a name="get-started-using-net-standard"></a><span data-ttu-id="b24e0-116">Начало работы с .NET Standard</span><span class="sxs-lookup"><span data-stu-id="b24e0-116">Get started using .NET Standard</span></span>
 
-## <a name="get-started-using-net-standard"></a><span data-ttu-id="c2ff3-113">Начало работы с .NET Standard</span><span class="sxs-lookup"><span data-stu-id="c2ff3-113">Get started using .NET Standard</span></span>
+<span data-ttu-id="b24e0-117">Вводное руководство см. в разделе [Создание библиотеки .NET Standard в Visual Studio](../core/tutorials/library-with-visual-studio.md).</span><span class="sxs-lookup"><span data-stu-id="b24e0-117">For an introductory tutorial, see [Build a .NET Standard library in Visual Studio](../core/tutorials/library-with-visual-studio.md).</span></span>
 
-* <span data-ttu-id="c2ff3-114">Вводное руководство см. в разделе [Создание библиотеки .NET Standard в Visual Studio](../core/tutorials/library-with-visual-studio.md).</span><span class="sxs-lookup"><span data-stu-id="c2ff3-114">For an introductory tutorial, see [Build a .NET Standard library in Visual Studio](../core/tutorials/library-with-visual-studio.md).</span></span>
+## <a name="get-started-using-net-core-on-docker"></a><span data-ttu-id="b24e0-118">Начало работы с .NET Core в Docker</span><span class="sxs-lookup"><span data-stu-id="b24e0-118">Get started using .NET Core on Docker</span></span>
 
-## <a name="get-started-using-net-core-on-docker"></a><span data-ttu-id="c2ff3-115">Начало работы с .NET Core в Docker</span><span class="sxs-lookup"><span data-stu-id="c2ff3-115">Get started using .NET Core on Docker</span></span>
-
-<span data-ttu-id="c2ff3-116">В разделе [Общие сведения о .NET и Docker](../core/docker/introduction.md) показано, как можно использовать .NET Core в контейнерах Windows Docker.</span><span class="sxs-lookup"><span data-stu-id="c2ff3-116">[Introduction to .NET and Docker](../core/docker/introduction.md) shows how you can use .NET Core on Windows Docker containers.</span></span>
+<span data-ttu-id="b24e0-119">В разделе [Общие сведения о .NET и Docker](../core/docker/introduction.md) показано, как можно использовать .NET Core в контейнерах Windows Docker.</span><span class="sxs-lookup"><span data-stu-id="b24e0-119">[Introduction to .NET and Docker](../core/docker/introduction.md) shows how you can use .NET Core on Windows Docker containers.</span></span>
