@@ -5,12 +5,12 @@ helpviewer_keywords:
 - COM,wrappers creating
 - COM,wrappers Visual Studio
 ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
-ms.openlocfilehash: 623df8aa86d25d9a57d3039bee01b0ee39d402a8
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 035d6439ec90426d7b68e05043ea8b6722f81d28
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73123941"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121600"
 ---
 # <a name="how-to-create-com-wrappers"></a>Практическое руководство. Создание оболочек COM
 
@@ -30,7 +30,7 @@ ms.locfileid: "73123941"
 
 2. В меню **Проект** выберите пункт **Показать все файлы**.
 
-3. В меню **Проект** щелкните команду **Добавить ссылку**.
+3. В меню **проекта** нажмите **«Добавить справку».**
 
 4. В диалоговом окне "Добавление ссылки" перейдите на вкладку **COM**, выберите нужный компонент и нажмите кнопку **ОК**.
 
@@ -39,7 +39,7 @@ ms.locfileid: "73123941"
 Теперь можно написать код для доступа к COM-объекту. Сначала можно объявить объект, например с помощью оператора `Imports` для Visual Basic или оператора `Using` для C#.
 
 > [!NOTE]
-> При программировании компонентов Microsoft Office сначала необходимо установить [основные сборки взаимодействия Microsoft Office](https://go.microsoft.com/fwlink/?LinkId=50479) из Центра загрузки Майкрософт. На шаге 4 выберите последнюю доступную версию библиотеки объектов для нужного продукта Office, например **библиотеку объектов Microsoft Word 11.0**.  
+> Если вы хотите запрограммировать компоненты Microsoft Office, сначала установите [основные интерсомеры Microsoft Office Redistributlies.](https://www.microsoft.com/Download/details.aspx?id=3508)
   
 ### <a name="to-create-a-runtime-callable-wrapper-using-net-framework-tools"></a>Создание вызываемой оболочки времени выполнения с использованием средств платформы .NET Framework  
   
@@ -55,7 +55,7 @@ ms.locfileid: "73123941"
   
      Убедитесь, что в файле AssemblyInfo присутствует полный номер версии сборки, состоящий из четырех частей. Этот номер необходим для управления версиями в реестре Windows. Дополнительные сведения о номерах версий см. в разделе [Управление версиями сборки](../../standard/assembly/versioning.md).  
   
-2. В меню **Проект** выберите пункт **Свойства**.  
+2. В меню **Проект** выберите **Свойства**.  
   
 3. Откройте вкладку **Компиляция**.  
   
