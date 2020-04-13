@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - null-forgiving operator [C#]
 - '! operator [C#]'
-ms.openlocfilehash: 36bfa46cebd2b35c4985dfc23dbe84f8f5dc9201
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 658043f8d5e149064f6da328657b2ccef9b5da94
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78846329"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121445"
 ---
 # <a name="-null-forgiving-operator-c-reference"></a>! — оператор (допускающий значение NULL) (справочник по C#)
 
@@ -19,7 +19,7 @@ ms.locfileid: "78846329"
 
 Оператор, допускающий NULL, ни на что не влияет во время выполнения. Он влияет только на статический анализ потока компилятора путем изменения состояния NULL выражения. Во время выполнения выражение `x!` сравнивается с результатом базового выражения `x`.
 
-Дополнительные сведения о ссылочных типах, допускающих значения NULL, см. в разделе [Ссылочные типы, допускающие значение NULL](../../nullable-references.md).
+Дополнительные сведения о ссылочных типах, допускающих значения NULL, см. в разделе [Ссылочные типы, допускающие значение NULL](../builtin-types/nullable-reference-types.md).
 
 ## <a name="examples"></a>Примеры
 

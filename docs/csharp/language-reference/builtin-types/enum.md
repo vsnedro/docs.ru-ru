@@ -11,12 +11,12 @@ helpviewer_keywords:
 - enumeration type [C#]
 - bit flags [C#]
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
-ms.openlocfilehash: ab5eb1679f846bf0e25d90a4d0e0a71f0bdb0096
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 15f5e9ccb1396277229ba935381812700f63ece8
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78847717"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121161"
 ---
 # <a name="enumeration-types-c-reference"></a>Типы перечислений (справочник по C#)
 
@@ -66,7 +66,7 @@ enum ErrorCode : ushort
 
 ## <a name="conversions"></a>Преобразования
 
-Для любого типа перечисления существуют явные преобразования между типом перечисления и его базовым целочисленным типом. Если вы [привели](../operators/type-testing-and-cast.md#cast-operator-) значение перечисления к его базовому типу, то результатом будет связанное целочисленное значение элемента перечисления.
+Для любого типа перечисления существуют явные преобразования между типом перечисления и его базовым целочисленным типом. Если вы [привели](../operators/type-testing-and-cast.md#cast-expression) значение перечисления к его базовому типу, то результатом будет связанное целочисленное значение элемента перечисления.
 
 [!code-csharp[enum conversions](snippets/EnumType.cs#Conversions)]
 

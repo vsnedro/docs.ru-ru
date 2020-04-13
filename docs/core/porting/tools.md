@@ -3,12 +3,12 @@ title: Инструменты для переноса в .NET Core
 description: Дополнительные сведения о некоторых инструментах, которые можно использовать для переноса в .NET Core
 author: cartermp
 ms.date: 12/07/2018
-ms.openlocfilehash: 98b3a29f2287414b2cd323f1cbf2225905592b26
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 64bad7600d8e17ada83d4bd8bc56762fd1789f43
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78157522"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80989133"
 ---
 # <a name="tools-to-help-with-porting-to-net-core"></a>Инструменты для переноса в .NET Core
 
@@ -16,7 +16,7 @@ ms.locfileid: "78157522"
 
 - [Анализатор переносимости .NET](../../standard/analyzers/portability-analyzer.md) — цепочка инструментов, создающих отчеты о переносимости кода между .NET Framework и .NET Core:
   - как [программа командной строки](https://github.com/Microsoft/dotnet-apiport/releases);
-  - как [расширение Visual Studio](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b).
+  - как [расширение Visual Studio](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer).
 - [Анализатор API .NET](../../standard/analyzers/api-analyzer.md) — анализатор на основе Roslyn выявляет риски совместимости для API на языке C# на разных платформах, а также отслеживает вызовы устаревших API.
 
 Кроме того, можно попытаться перенести более мелкие решения или отдельные проекты в формат файла проекта .NET Core с помощью средства [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017).

@@ -3,12 +3,12 @@ title: Повышенные права доступа для команд dotnet
 description: Рекомендации по использованию команд dotnet, которым требуются повышенные права доступа.
 author: wli3
 ms.date: 06/26/2019
-ms.openlocfilehash: 4aff9badfa8ad9b83adc4496d4ebd6df29252e36
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f99e0b257772e0a73d4945f1129997d1d3308ed2
+ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78156768"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80805791"
 ---
 # <a name="elevated-access-for-dotnet-commands"></a>Повышенные права доступа для команд dotnet
 
@@ -18,6 +18,7 @@ ms.locfileid: "78156768"
 
 - команды `dotnet tool`, например [dotnet tool install](dotnet-tool-install.md);
 - `dotnet run --no-build`
+- `dotnet-core-uninstall`
 
 Выполнять другие команды с повышенными правами не рекомендуется. В частности, мы не рекомендуем выполнять с повышенными правами команды, использующие MSBuild, например [dotnet restore](dotnet-restore.md), [dotnet build](dotnet-build.md) и [dotnet run](dotnet-run.md). Основная проблема связана с управлением разрешениями, когда пользователь переключается между привилегированной учетной записью и учетной записью с ограниченным доступом после выполнения команд dotnet. У пользователя с ограниченным доступом может не оказаться доступа к файлу, созданному привилегированным пользователем. Эту проблему можно разрешить, но лучше стараться ее избегать.
 

@@ -4,19 +4,19 @@ description: Сведения о типах C#, допускающих знач
 ms.date: 11/04/2019
 helpviewer_keywords:
 - nullable value types [C#]
-ms.openlocfilehash: a84b3d60269491846b783e5046a84a1d14e258a1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c13ef6a091ec6aebd4608c5ed8d2c03b067c7312
+ms.sourcegitcommit: 2b3b2d684259463ddfc76ad680e5e09fdc1984d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398277"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80888076"
 ---
 # <a name="nullable-value-types-c-reference"></a>Справочник по C#. Типы значений, допускающие значение NULL
 
 *Тип значений, допускающий значение NULL*, или `T?`, представляет все значения своего базового [типа значения](value-types.md) `T`, а также дополнительное значение [NULL](../keywords/null.md). Например, можно присвоить переменной `bool?` любое из следующих трех значений: `true`, `false` или `null`. Базовый тип значения `T` не может соответствовать типу значения, допускающему значение NULL.
 
 > [!NOTE]
-> В C# 8.0 появилась возможность использования ссылочных типов, допускающих значение NULL. Дополнительные сведения см. в статье [Ссылочные типы, допускающие значение NULL](../../nullable-references.md). Типы значений, допускающие значение NULL, доступны начиная с C# 2.
+> В C# 8.0 появилась возможность использования ссылочных типов, допускающих значение NULL. Дополнительные сведения см. в статье [Ссылочные типы, допускающие значение NULL](nullable-reference-types.md). Типы значений, допускающие значение NULL, доступны начиная с C# 2.
 
 Типы, допускающие значение NULL, представляют собой экземпляры универсальной структуры <xref:System.Nullable%601?displayProperty=nameWithType>. Вы можете ссылаться на тип значения, допускающий значение NULL, с базовым типом `T` в любой из следующих взаимозаменяемых форм: `Nullable<T>` или `T?`.
 
@@ -120,7 +120,7 @@ ms.locfileid: "79398277"
 [!code-csharp-interactive[whether an instance is of a nullable type](snippets/NullableValueTypes.cs#IsInstanceNullable)]
 
 > [!NOTE]
-> Методы, описанные в этом разделе, неприменимы в случае [ссылочных типов, допускающих значения NULL](../../nullable-references.md).
+> Методы, описанные в этом разделе, неприменимы в случае [ссылочных типов, допускающих значения NULL](nullable-reference-types.md).
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
@@ -139,4 +139,4 @@ ms.locfileid: "79398277"
 - <xref:System.Nullable%601?displayProperty=nameWithType>
 - <xref:System.Nullable?displayProperty=nameWithType>
 - <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType>
-- [Ссылочные типы, допускающие значение NULL](../../nullable-references.md)
+- [Ссылочные типы, допускающие значение NULL](nullable-reference-types.md)

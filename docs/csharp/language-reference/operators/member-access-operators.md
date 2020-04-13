@@ -32,12 +32,12 @@ helpviewer_keywords:
 - hat operator [C#]
 - .. operator [C#]
 - range operator [C#]
-ms.openlocfilehash: a132e527deadcffb4826c1965987fc09da470a09
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: 90066b1e9c219f66fc0c76423679e81aa3fa6770
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635301"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81120982"
 ---
 # <a name="member-access-operators-and-expressions-c-reference"></a>Операторы и выражения для доступа к элементам (справочник по C#)
 
@@ -170,7 +170,7 @@ if (handler != null)
 
 Кроме того, с помощью круглых скобок можно настраивать порядок выполнения операций в выражении. Дополнительные сведения см. в разделе [Операторы C#](index.md).
 
-В [выражениях приведения](type-testing-and-cast.md#cast-operator-), которые выполняют явные преобразования типов, также используйте круглые скобки.
+В [выражениях приведения](type-testing-and-cast.md#cast-expression), которые выполняют явные преобразования типов, также используйте круглые скобки.
 
 ## <a name="index-from-end-operator-"></a>Индекс от конца: оператор ^
 

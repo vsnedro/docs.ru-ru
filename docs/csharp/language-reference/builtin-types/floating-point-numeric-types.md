@@ -18,12 +18,12 @@ helpviewer_keywords:
 - floating-point numbers [C#], float keyword
 - double data type [C#]
 - decimal keyword [C#]
-ms.openlocfilehash: 95b7f266654bbbcdcd0f81e3aa11cfc94af9f0e5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a277215d438b5f6b0bbbef72e5e0121b6ce41990
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77215243"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121480"
 ---
 # <a name="floating-point-numeric-types-c-reference"></a>Числовые типы с плавающей запятой (справочник по C#)
 
@@ -107,7 +107,7 @@ Console.WriteLine(m);  // output: 1500000
 
 ## <a name="conversions"></a>Преобразования
 
-Существует только одно неявное преобразование между числовыми типами с плавающей запятой: из `float` в `double`. Однако можно преобразовать любой тип с плавающей запятой в любой другой тип с плавающей запятой с помощью[явного приведения](../operators/type-testing-and-cast.md#cast-operator-). Для получения дополнительной информации см. статью [Встроенные числовые преобразования](numeric-conversions.md).
+Существует только одно неявное преобразование между числовыми типами с плавающей запятой: из `float` в `double`. Однако можно преобразовать любой тип с плавающей запятой в любой другой тип с плавающей запятой с помощью[явного приведения](../operators/type-testing-and-cast.md#cast-expression). Для получения дополнительной информации см. статью [Встроенные числовые преобразования](numeric-conversions.md).
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 

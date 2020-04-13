@@ -9,12 +9,12 @@ helpviewer_keywords:
 - parse strings
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
 ms.custom: mvc
-ms.openlocfilehash: b46429f3b55658e1f2a7d21eed714c1d02236c57
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fb11ff59705188f9425beedfbbbf3c244d21f587
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73973234"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121509"
 ---
 # <a name="how-to-parse-strings-using-stringsplit-c-guide"></a>Практическое руководство. Анализ строк с помощью метода String.Split (руководство по C#)
 
@@ -48,7 +48,7 @@ ms.locfileid: "73973234"
   
 [!code-csharp-interactive[split strings using strings as separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#5)]
 
-Вы можете оценить эти примеры, просмотрев код в нашем [репозитории GitHub](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/strings). Или можете загрузить образцы [в ZIP-файле](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/strings.zip).
+Вы можете оценить эти примеры, просмотрев код в нашем [репозитории GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Или можете загрузить образцы [в ZIP-файле](../../../samples/snippets/csharp/how-to/strings.zip).
 
 ## <a name="see-also"></a>См. также раздел
 
