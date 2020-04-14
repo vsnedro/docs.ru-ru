@@ -1,24 +1,24 @@
 ---
-title: Расширения
+title: Модули
 ms.date: 12/13/2019
-description: Узнайте, как загружать расширения SQLite.
-ms.openlocfilehash: a85b1227be4274dd20156d2475d6d2d68e250f99
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+description: Узнайте, как загрузить расширения S'Lite.
+ms.openlocfilehash: 51c705349c25240fe42e0edda8004a3e3b013ca3
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901300"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81242963"
 ---
-# <a name="extensions"></a>Расширения
+# <a name="extensions"></a>Модули
 
-SQLite поддерживает загрузку расширений во время выполнения. Расширения включают такие возможности, как дополнительные функции SQL, параметры сортировки, виртуальные таблицы и многое другое.
+S'Lite поддерживает наращивание погрузки во время выполнения. Расширения включают в себя такие вещи, как дополнительные функции S'L, коллажа, виртуальные таблицы и многое другое.
 
-.NET Core включает дополнительную логику для поиска собственных библиотек в дополнительных местах, таких как ссылочные пакеты NuGet. Увы, SQLite не может использовать эту логику; Он напрямую вызывает API платформы для загрузки библиотек. Поэтому может потребоваться изменить путь, LD_LIBRARY_PATH или DYLD_LIBRARY_PATH переменные среды перед загрузкой расширений SQLite. В GitHub есть [Пример](https://github.com/dotnet/samples/blob/master/snippets/standard/data/sqlite/ExtensionsSample/Program.cs) , демонстрирующий Поиск двоичных файлов для текущей среды выполнения внутри пакета NuGet, на который указывает ссылка.
+Ядро .NET включает дополнительную логику для размещения родовых библиотек в дополнительных местах, таких как ссылки на пакеты NuGet. К сожалению, S'Lite не может использовать эту логику; он вызывает API платформы сразу для загрузки библиотек. Из-за этого может потребоваться изменить переменные PATH, LD_LIBRARY_PATH или DYLD_LIBRARY_PATH среды перед загрузкой расширений S'Lite. На GitHub есть [пример,](https://github.com/dotnet/docs/blob/master/samples/snippets/standard/data/sqlite/ExtensionsSample/Program.cs) демонстрирующая поиск связных данных для текущего времени выполнения внутри эталонного пакета NuGet.
 
-Чтобы загрузить расширение, вызовите метод <xref:Microsoft.Data.Sqlite.SqliteConnection.LoadExtension%2A>. Microsoft. Data. SQLite обеспечит загрузку расширения даже при закрытии и повторном открытии соединения.
+Чтобы загрузить расширение, <xref:Microsoft.Data.Sqlite.SqliteConnection.LoadExtension%2A> позвоните по методу. Microsoft.Data.Sqlite гарантирует, что расширение остается загруженным, даже если соединение закрыто и вновь открыто.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/ExtensionsSample/Program.cs?name=snippet_LoadExtension)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-* [Расширения, загружаемые во время выполнения](https://www.sqlite.org/loadext.html)
+* [Run-Время Загруженные расширения](https://www.sqlite.org/loadext.html)

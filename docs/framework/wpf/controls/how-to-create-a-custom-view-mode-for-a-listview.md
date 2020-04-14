@@ -7,45 +7,46 @@ dev_langs:
 helpviewer_keywords:
 - ListView controls [WPF], creating custom View mode
 ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
-ms.openlocfilehash: de11250a2e7529fba3b262e42b6714262738fa90
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 3b9ca17bddcecb1895205fca76f0a489ecf25c4f
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61910914"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243223"
 ---
-# <a name="how-to-create-a-custom-view-mode-for-a-listview"></a>Практическое руководство. Создание пользовательского режима представления для ListView
-В этом примере показано, как можно создавать пользовательские <xref:System.Windows.Controls.ListView.View%2A> режим для <xref:System.Windows.Controls.ListView> элемента управления.  
+# <a name="how-to-create-a-custom-view-mode-for-a-listview"></a>Как: Создать пользовательский режим представления для ListView
+
+В этом примере показано, как создать пользовательский <xref:System.Windows.Controls.ListView.View%2A> режим управления. <xref:System.Windows.Controls.ListView>  
   
 ## <a name="example"></a>Пример  
- Необходимо использовать <xref:System.Windows.Controls.ViewBase> класса при создании настраиваемого представления для <xref:System.Windows.Controls.ListView> элемента управления. В следующем примере показан режим представления, который называется `PlainView`, который является производным от <xref:System.Windows.Controls.ViewBase> класса.  
+ При создании <xref:System.Windows.Controls.ViewBase> пользовательского представления для элемента <xref:System.Windows.Controls.ListView> управления необходимо использовать класс. В следующем примере показан `PlainView` режим представления, называемый полученным <xref:System.Windows.Controls.ViewBase> из класса.  
   
  [!code-csharp[ListViewCustomView#PlainView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/PlainView.cs#plainview)]
  [!code-vb[ListViewCustomView#PlainView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic/plainview.vb#plainview)]  
   
- Чтобы применить стиль к пользовательскому представлению, используйте <xref:System.Windows.Style> класса. В следующем примере определяется <xref:System.Windows.Style> для `PlainView` режим просмотра. В предыдущем примере, этот стиль имеет значение для параметра <xref:System.Windows.Controls.ViewBase.DefaultStyleKey%2A> свойство, которое определено для `PlainView`.  
+ Чтобы применить стиль к пользовательскому <xref:System.Windows.Style> представлению, используйте класс. Следующий пример определяет <xref:System.Windows.Style> режим `PlainView` представления. В предыдущем примере этот стиль устанавливается <xref:System.Windows.Controls.ViewBase.DefaultStyleKey%2A> как значение свойства, `PlainView`которое определено для.  
   
  [!code-xaml[ListViewCustomView#PlainViewStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/Themes/Generic.xaml#plainviewstyle)]  
   
- Чтобы определить структуру данных в режиме представления, определите <xref:System.Windows.DataTemplate> объекта. В следующем примере определяется <xref:System.Windows.DataTemplate> , можно использовать для отображения данных в `PlainView` режим просмотра.  
+ Чтобы определить расположение данных в пользовательском режиме представления, определите <xref:System.Windows.DataTemplate> объект. Следующий пример <xref:System.Windows.DataTemplate> определяет, который может быть использован `PlainView` для отображения данных в режиме представления.  
   
  [!code-xaml[ListViewCustomView#PlainViewDataTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/Window1.xaml#plainviewdatatemplate)]  
   
- В следующем примере показано определение <xref:System.Windows.ResourceKey> для `PlainView` режим просмотра, который использует <xref:System.Windows.DataTemplate> , определенный в предыдущем примере.  
+ В следующем примере показано, как определить <xref:System.Windows.ResourceKey> для режима `PlainView` представления, который <xref:System.Windows.DataTemplate> использует, который определен в предыдущем примере.  
   
  [!code-xaml[ListViewCustomView#PlainViewtileView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/Window1.xaml#plainviewtileview)]  
   
- Объект <xref:System.Windows.Controls.ListView> управления можно использовать представления, если задать <xref:System.Windows.Controls.ListView.View%2A> значение ключа ресурса. В следующем примере показано, как указать `PlainView` в качестве режима представления для <xref:System.Windows.Controls.ListView>.  
+ Элемент <xref:System.Windows.Controls.ListView> управления может использовать пользовательское <xref:System.Windows.Controls.ListView.View%2A> представление, если настроить свойство на ключ ресурса. В следующем примере `PlainView` показано, как указать режим представления для <xref:System.Windows.Controls.ListView>.  
   
  [!code-csharp[ListViewCustomView#ListViewtileViewmode](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/Window1.xaml.cs#listviewtileviewmode)]
  [!code-vb[ListViewCustomView#ListViewtileViewmode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic/window1.xaml.vb#listviewtileviewmode)]  
   
- Полный пример см. в разделе [ListView с несколькими представлениями (C#)](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp) или [ListView с помощью нескольких Views(Visual Basic)](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic).  
+ Для полного примера см. [ListView с несколькими представлениями (C)](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp) или [ListView с несколькими представлениями (Visual Basic).](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCustomView/visualbasic)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [Разделы практического руководства](listview-how-to-topics.md)
+- [Инструкции](listview-how-to-topics.md)
 - [Общие сведения об элементе управления ListView](listview-overview.md)
 - [Общие сведения о GridView](gridview-overview.md)

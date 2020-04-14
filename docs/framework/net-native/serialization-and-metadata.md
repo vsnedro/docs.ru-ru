@@ -2,12 +2,12 @@
 title: Сериализация и метаданные
 ms.date: 03/30/2017
 ms.assetid: 619ecf1c-1ca5-4d66-8934-62fe7aad78c6
-ms.openlocfilehash: 1805b6ca06d584237303d1366222419da3e8b9ef
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 7c6fe241fbf92f52abfa0eb66c37bff4d227b4e5
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73128112"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81241923"
 ---
 # <a name="serialization-and-metadata"></a>Сериализация и метаданные
 
@@ -28,7 +28,7 @@ ms.locfileid: "73128112"
 <Namespace Name="App.Models" Serialize="Required PublicAndInternal" />  
 ```  
   
- Информацию о синтаксисе, используемом в примере, см. в разделе [Элемент \<Namespace>](namespace-element-net-native.md).  
+ Для получения информации о синтаксисе, используемом в примере, с [ \<>м.](namespace-element-net-native.md)  
   
 <a name="Microsoft"></a>
 ## <a name="microsoft-serializers"></a>Сериализаторы Microsoft
@@ -37,15 +37,15 @@ ms.locfileid: "73128112"
   
 ### <a name="typeof-used-in-the-constructor"></a>TypeOf используется в конструкторе
 
- Если вызвать конструктор этих классов сериализации и включить C# оператор [typeof](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) в вызов метода, нет необходимости **выполнять дополнительную работу**. Например, в каждом из следующих вызовов конструктора класса сериализации ключевое слово `typeof`используется как часть выражения, переданного в конструктор.  
+ Если вы называете конструктора этих классов сериализации и включаете в вызов метода оператора [типофа,](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) **вам не нужно выполнять дополнительную работу.** Например, в каждом из следующих вызовов конструктора класса сериализации ключевое слово `typeof`используется как часть выражения, переданного в конструктор.  
   
  [!code-csharp[ProjectN#5](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#5)]  
   
- Компилятор .NET Native будет автоматически выполнять этот код.  
+ Компилятор .NET Native будет автоматически обрабатывать этот код.  
   
 ### <a name="typeof-used-outside-the-constructor"></a>TypeOf, использованный за пределами конструктора
 
- Если вызвать конструктор этих классов сериализации и использовать C# оператор [typeof](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) за пределами выражения, переданного в параметр <xref:System.Type> конструктора, как показано в следующем коде, компилятор .NET Native не может разрешить тип:  
+ Если вы называете конструктора этих классов сериализации и используете оператора [типофа](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) Сз вне выражения, поставляемого на параметр конструктора, <xref:System.Type> как в следующем коде, компилятор .NET Native не может решить тип:  
   
  [!code-csharp[ProjectN#6](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#6)]  
   
@@ -55,7 +55,7 @@ ms.locfileid: "73128112"
 <Type Name="DataSet" Browse="Required Public" />  
 ```  
   
- Аналогично, если вы вызываете конструктор, например <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.Type%5B%5D%29?displayProperty=nameWithType> и предоставляете для сериализации массив дополнительных <xref:System.Type> объектов, как показано в следующем коде, компилятор .NET Native не может разрешить эти типы.  
+ Аналогичным образом, если вы вызываете конструктора, <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.Type%5B%5D%29> <xref:System.Type> например, и предоставляете массив дополнительных объектов для сериализации, как в следующем коде, компилятор .NET Native не может решить эти типы.  
   
  [!code-csharp[ProjectN#7](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#7)]  
   
@@ -65,11 +65,11 @@ ms.locfileid: "73128112"
 <Type Name="t" Browse="Required Public" />  
 ```  
   
- Информацию о синтаксисе, используемом в примере, см. в разделе [Элемент \<Type>](type-element-net-native.md).  
+ Для получения информации о синтаксисе, используемом в примере, см [ \<>.](type-element-net-native.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Справочник по конфигурационному файлу директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
-- [Элемент > типа\<](type-element-net-native.md)
-- [Элемент \<Namespace>](namespace-element-net-native.md)
+- [\<Элемент типа>](type-element-net-native.md)
+- [\<Названиепространства> Элемент](namespace-element-net-native.md)

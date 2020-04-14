@@ -11,15 +11,16 @@ helpviewer_keywords:
 - linear gradient brush [WPF]
 - typography [WPF], outline effects
 ms.assetid: 4aa3cf6e-1953-4f26-8230-7c1409e5f28d
-ms.openlocfilehash: d0ce46b9895589fd4635b567136204368a6431ad
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 86bfa396a2aa44eb511c014687501d60e170a396
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79186857"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278929"
 ---
-# <a name="how-to-create-outlined-text"></a>Практическое руководство. Вывод текста по контуру
-В большинстве случаев, когда вы добавляете [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] орнамент в текстовые строки в приложении, вы используете текст с точки зрения коллекции дискретных символов, или глифов. Например, можно создать линейную градиентную <xref:System.Windows.Controls.Control.Foreground%2A> кисть <xref:System.Windows.Controls.TextBox> и применить ее к свойству объекта. При отображении или редактировании текстового окна линейная кисти градиента автоматически наносится на текущий набор символов в текстовой строке.  
+# <a name="how-to-create-outlined-text"></a>Как: Создать изложенный текст
+
+В большинстве случаев, когда вы добавляете орнамент в текстовые строки в приложении, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] вы используете текст с точки зрения коллекции дискретных символов, или глифов. Например, можно создать линейную градиентную <xref:System.Windows.Controls.Control.Foreground%2A> кисть <xref:System.Windows.Controls.TextBox> и применить ее к свойству объекта. При отображении или редактировании текстового окна линейная кисти градиента автоматически наносится на текущий набор символов в текстовой строке.  
   
  ![Текст, отображенный при помощи кисти линейного градиента](./media/how-to-create-outlined-text/text-linear-gradient.jpg)
   
@@ -45,14 +46,14 @@ ms.locfileid: "79186857"
  [!code-csharp[OutlineTextControlViewer#CreateText](~/samples/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs#createtext)]
  [!code-vb[OutlineTextControlViewer#CreateText](~/samples/snippets/visualbasic/VS_Snippets_Wpf/OutlineTextControlViewer/visualbasic/outlinetextcontrol.vb#createtext)]  
   
- Для отображения <xref:System.Windows.Media.Geometry> извлеченных объектов необходимо <xref:System.Windows.Media.DrawingContext> получить доступ к объекту, отображаемому преобразованный текст. В этих примерах кода это делается путем создания пользовательского объекта управления, который происходит от класса, который поддерживает пользовательский рендеринг.  
+ Для отображения <xref:System.Windows.Media.Geometry> извлеченных объектов необходимо <xref:System.Windows.Media.DrawingContext> получить доступ к объекту, отображаемому преобразованный текст. В этих примерах кода этот доступ достигается путем создания пользовательского объекта управления, полученного из класса, поддерживающего пользовательскую визуализацию.  
   
  Для <xref:System.Windows.Media.Geometry> отображения объектов в пользовательском элементе управления предоставьте переопределение для метода. <xref:System.Windows.UIElement.OnRender%2A> Ваш перекрывшийся <xref:System.Windows.Media.DrawingContext.DrawGeometry%2A> метод должен <xref:System.Windows.Media.Geometry> использовать метод для рисования объектов.  
   
  [!code-csharp[OutlineTextControlViewer#OnRender](~/samples/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs#onrender)]
  [!code-vb[OutlineTextControlViewer#OnRender](~/samples/snippets/visualbasic/VS_Snippets_Wpf/OutlineTextControlViewer/visualbasic/outlinetextcontrol.vb#onrender)]  
   
-  Для источника пользовательского объекта пользовательского управления можно найти [OutlineTextControl.cs для C-и](https://github.com/dotnet/samples/blob/master/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs) [OutlineTextControl.vb для Visual Basic.](https://github.com/dotnet/samples/blob/master/snippets/visualbasic/VS_Snippets_Wpf/OutlineTextControlViewer/visualbasic/outlinetextcontrol.vb)
+  Для источника пользовательского объекта пользовательского управления можно найти [OutlineTextControl.cs для C-и](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs) [OutlineTextControl.vb для Visual Basic.](https://github.com/dotnet/docs/blob/master/samples/snippets/visualbasic/VS_Snippets_Wpf/OutlineTextControlViewer/visualbasic/outlinetextcontrol.vb)
   
 ## <a name="see-also"></a>См. также раздел
 

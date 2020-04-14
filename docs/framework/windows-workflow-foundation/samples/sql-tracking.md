@@ -2,50 +2,53 @@
 title: Отслеживание SQL
 ms.date: 03/30/2017
 ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
-ms.openlocfilehash: 88f44e5362684f755695aab154842fad2274134d
-ms.sourcegitcommit: 011314e0c8eb4cf4a11d92078f58176c8c3efd2d
+ms.openlocfilehash: 72bfcaac2903b3e7fa5679422ad4feaa79e93211
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2020
-ms.locfileid: "77094596"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243184"
 ---
-# <a name="sql-tracking"></a>Отслеживание SQL
-В этом примере демонстрируется написание пользовательского участника отслеживания SQL, записывающего записи отслеживания в базу данных SQL. Windows Workflow Foundation (WF) обеспечивает отслеживание рабочих процессов, чтобы получить сведения о выполнении экземпляра рабочего процесса. Среда выполнения отслеживания выдает записи отслеживания рабочего процесса в ходе его выполнения. Дополнительные сведения об отслеживании рабочих процессов см. в разделе [Отслеживание и трассировка рабочих процессов](../workflow-tracking-and-tracing.md).
+# <a name="sql-tracking"></a>Отслеживание СЗЛ
 
-#### <a name="to-use-this-sample"></a>Использование этого образца
+В этом примере показано, как писать пользовательского участника отслеживания S'L, который записывает записи отслеживания в базу данных S'L. Фонд рабочего процесса Windows (WF) обеспечивает отслеживание рабочего процесса, чтобы получить видимость в выполнении экземпляра рабочего процесса. Среда выполнения отслеживания выдает записи отслеживания рабочего процесса в ходе его выполнения. Для получения дополнительной информации о [Workflow Tracking and Tracing](../workflow-tracking-and-tracing.md)отслеживании рабочего процесса см.
+
+## <a name="use-the-sample"></a>Используйте образец
 
 1. Убедитесь, что на компьютере установлен SQL Server 2008, SQL Server 2008 Express или более новая версия. Скрипты, упакованные в состав образца, предполагают использование экземпляра SQL Express на локальном компьютере пользователя. Если вы работаете с другим экземпляром, до запуска образца следует внести изменения в скрипты, относящиеся к базе данных.
 
 2. Создание базы данных отслеживания на SQL Server посредством запуска команды Trackingsetup.cmd в каталоге скриптов (\WF\Basic\Tracking\SqlTracking\CS\Scripts). Создает базу данных с именем TrackingSample.
 
-    > [!NOTE]
-    > Этот скрипт создает базу данных на экземпляре SQL Express по умолчанию. Если установку необходимо произвести на другом экземпляре базы данных, внесите изменения в скрипт Trackingsetup.cmd.
+   > [!NOTE]
+   > Этот скрипт создает базу данных на экземпляре SQL Express по умолчанию. Если установку необходимо произвести на другом экземпляре базы данных, внесите изменения в скрипт Trackingsetup.cmd.
 
-3. Откройте Склтраккингсампле. sln в Visual Studio 2010.
+3. Открыть SqlTrackingSample.sln в визуальной студии 2010.
 
-4. Чтобы построить решение, нажмите CTRL+SHIFT+B.
+4. Нажмите **Ctrl**+**Shift**+**B,** чтобы создать решение.
 
-5. Нажмите клавишу F5 для запуска приложения.
+5. Нажмите клавишу **F5** для запуска приложения.
 
-     Откроется окно браузера со списком каталогов для приложения.
+   Откроется окно браузера со списком каталогов для приложения.
 
 6. Щелкните файл StockPriceService.xamlx в браузере.
 
 7. В браузере отображается страница StockPriceService, содержащая адрес WSDL локальной службы. Скопируйте этот адрес.
 
-     Пример адреса WSDL локальной службы — `http://localhost:65193/StockPriceService.xamlx?wsdl`.
+   Примером адреса локального сервиса WSDL является `http://localhost:65193/StockPriceService.xamlx?wsdl`адрес .
 
-8. С помощью проводника запустите тестовый клиент WCF (клиент WcfTestClient. exe). Этот файл размещается в каталоге Microsoft Visual Studio 10.0\Common7\IDE.
+8. С помощью File Explorer запустите тестовый клиент WCF (WcfTestClient.exe). Он расположен в *Microsoft Visual Studio 10.0'Common7'IDE каталога*.
 
-9. В тестовом клиенте WCF щелкните меню **файл** и выберите **Добавить службу**. Вставьте в текстовое поле адрес локальной службы. Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно.
+9. В тестовом клиенте WCF щелкните меню **файла** и выберите **Услугу**добавления. Вставьте в текстовое поле адрес локальной службы. Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно.
 
-10. В тестовом клиенте WCF дважды щелкните **жетстоккприце**. Откроется `GetStockPrice` операция, которая принимает один параметр, введите значение `Contoso` и нажмите кнопку **вызвать**.
+10. В тестовом клиенте WCF дважды щелкните **GetStockPrice.** Это открывает `GetStockPrice` операцию, которая принимает один `Contoso` параметр, введите значение и нажмите **Invoke**.
 
-11. Выданные записи отслеживания будут записаны в базу данных SQL. Чтобы просмотреть записи отслеживания, откройте базу данных TrackingSample в среде SQL Management Studio и перейдите в раздел просмотра таблиц. Дополнительные сведения о SQL Server Management Studio см. в разделе [введение SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms). SQL Server 2008 Management Studio Express можно скачать [здесь](https://www.microsoft.com/download/details.aspx?id=7593). Применение запроса select для таблиц выводит соответствующие данные записей отслеживания, хранимых в соответствующих таблицах.
+11. Выданные записи отслеживания будут записаны в базу данных SQL. Чтобы просмотреть записи отслеживания, откройте базу данных TrackingSample в среде SQL Management Studio и перейдите в раздел просмотра таблиц. Применение запроса select для таблиц выводит соответствующие данные записей отслеживания, хранимых в соответствующих таблицах.
 
-#### <a name="to-uninstall-the-sample"></a>Удаление образца
+   Для получения более подробной информации о студии управления серверами S'L, [см.](/sql/ssms/sql-server-management-studio-ssms) Скачать студию управления серверами [S'L здесь](https://aka.ms/ssmsfullsetup).
 
-1. Запустите скрипт Trackingcleanup.cmd, расположенный в каталоге образцов (\WF\Basic\Tracking\SqlTracking).
+## <a name="uninstall-the-sample"></a>Удаление образца
+
+1. Выполнить скрипт Trackingcleanup.cmd в каталоге образца *(«WF»Basic»Tracking.SlTracking*).
 
     > [!NOTE]
     > Скрипт Trackingcleanup.cmd пытается удалить базу данных, хранящуюся в SQL Express вашего локального компьютера. При использовании другого экземпляра сервера SQL следует внести изменения в скрипт Trackingcleanup.cmd.
@@ -55,10 +58,10 @@ ms.locfileid: "77094596"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking`
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Примеры мониторинга AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

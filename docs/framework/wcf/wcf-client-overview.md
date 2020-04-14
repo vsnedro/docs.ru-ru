@@ -7,18 +7,19 @@ dev_langs:
 helpviewer_keywords:
 - clients [WCF], architecture
 ms.assetid: f60d9bc5-8ade-4471-8ecf-5a07a936c82d
-ms.openlocfilehash: 7905d540e0f06dd2863cf80381210307e3021918
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c12579062b04cfb46e14d5c3d734a7c155f8d654
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183059"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278890"
 ---
-# <a name="wcf-client-overview"></a>Общие сведения о клиентах WCF
+# <a name="wcf-client-overview"></a>Обзор клиентов WCF
+
 В этом разделе описывается, что делают клиентские приложения, как настроить, создать и использовать клиента Windows Communication Foundation (WCF) и как обеспечить безопасность клиентских приложений.  
   
 ## <a name="using-wcf-client-objects"></a>Использование объектов клиента WCF  
- Клиентское приложение — это управляемое приложение, использующое клиентом WCF для связи с другим приложением. Для создания клиентского приложения для службы WCF требуются следующие шаги:  
+ Клиентское приложение — это управляемое приложение, использующое клиентом WCF для связи с другим приложением. Создание клиентского приложения для службы WCF требует следующих шагов:  
   
 1. Получите контракт службы, привязки и адрес для конечной точки службы.  
   
@@ -28,7 +29,7 @@ ms.locfileid: "79183059"
   
 4. Закройте клиентский объект WCF.  
   
- В последующих разделах рассматриваются эти действия и представляется краткое введение в следующие вопросы.  
+В последующих разделах рассматриваются эти действия и представляется краткое введение в следующие вопросы.  
   
 - обработка ошибок;  
   
@@ -70,7 +71,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
   
  Этот класс можно создать как локальный объект с использованием одного из конструкторов, который настроен и используется для подключения к службе, принадлежащей к типу `ISampleService`.  
   
- Рекомендуется сначала создать клиентский объект WCF, а затем использовать его и закрыть его в одном блоке try/catch. Не следует использовать `using` выписку (в`Using` Visual Basic), поскольку она может маскировать исключения в определенных режимах сбоя. Для получения дополнительной информации смотрите следующие разделы, а также [использовать close и Abort для выпуска ресурсов клиентов WCF.](./samples/use-close-abort-release-wcf-client-resources.md)  
+ Рекомендуется сначала создать клиентский объект WCF, а затем использовать его и закрыть его в одном блоке try/catch. Не используйте `using` оператора`Using` (в Visual Basic), поскольку оно может маскировать исключения в определенных режимах сбоя. Для получения дополнительной информации смотрите следующие разделы, а также [использовать close и Abort для выпуска ресурсов клиентов WCF.](./samples/use-close-abort-release-wcf-client-resources.md)  
   
 ### <a name="contracts-bindings-and-addresses"></a>Контракты, привязки и адреса  
  Прежде чем создать клиентский объект WCF необходимо настроить объект клиента. В частности, он должен иметь *конечную точку* службы для использования. Конечная точка - это комбинация контракта службы, привязки и адреса. (Для получения дополнительной информации [Endpoints: Addresses, Bindings, and Contracts](./feature-details/endpoints-addresses-bindings-and-contracts.md)о конечных точках см. Как правило, эта информация находится в [ \<конечных>](../configure-apps/file-schema/wcf/endpoint-of-client.md) элементе в файле конфигурации клиентского приложения, например, инструментs Svcutil.exe, и загружается автоматически при создании объекта клиента. Оба типа клиентов WCF также имеют перегрузки, которые позволяют программно указать эту информацию.  
@@ -79,7 +80,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
   
  [!code-xml[C_GeneratedCodeFiles#19](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]  
   
- Этот файл конфигурации содержит целевую конечную точку в элементе `<client>`. Для получения дополнительной информации об использовании <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A?displayProperty=nameWithType> нескольких целевых конечных точек см. <xref:System.ServiceModel.ClientBase%601.%23ctor%2A?displayProperty=nameWithType>  
+ Этот файл конфигурации содержит целевую конечную точку в элементе `<client>`. Для получения дополнительной информации об использовании <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A> нескольких целевых конечных точек см. <xref:System.ServiceModel.ClientBase%601.%23ctor%2A>  
   
 ## <a name="calling-operations"></a>Вызов операций  
  Если у вас создан и настроен объект клиента, создайте блок try/catch, вызов операций таким же образом, как если бы объект был локальным, и закройте объект клиента WCF. Когда клиентское приложение вызывает первую операцию, WCF автоматически открывает основной канал, и основной канал закрывается при переработке объекта. (Также можно явно открыть и закрыть канал до или после вызова других операций.)  
@@ -127,7 +128,7 @@ Namespace Microsoft.ServiceModel.Samples
 End Interface  
 ```  
   
- Операции можно вызвать, создав клиентский объект WCF и назвав его методы, как показано на примере следующего кода. Обратите внимание, что открытие, вызов и закрытие объекта клиента WCF происходит в пределах одного блока try/catch. Для получения дополнительной [информации см. Услуги доступа с помощью клиента WCF](./feature-details/accessing-services-using-a-client.md) и [использование close and Abort для выпуска клиентских ресурсов WCF.](./samples/use-close-abort-release-wcf-client-resources.md)  
+ Операции можно вызвать, создав клиентский объект WCF и назвав его методы, как показано на примере следующего кода. Открытие, вызов и закрытие объекта клиента WCF происходит в пределах одного блока try/catch. Для получения дополнительной [информации см. Услуги доступа с помощью клиента WCF](./feature-details/accessing-services-using-a-client.md) и [использование close and Abort для выпуска клиентских ресурсов WCF.](./samples/use-close-abort-release-wcf-client-resources.md)  
   
  [!code-csharp[C_GeneratedCodeFiles#20](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#20)]  
   

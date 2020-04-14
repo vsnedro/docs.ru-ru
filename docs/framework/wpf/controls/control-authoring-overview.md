@@ -8,14 +8,14 @@ helpviewer_keywords:
 - controls [WPF], authoring overview
 - authoring overview for controls [WPF]
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
-ms.openlocfilehash: d5dd2d962c554b860fb6f68110945d56c4ee03ab
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2326520039085beb5f5294e23db67b67f9d7d7da
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79401031"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243275"
 ---
-# <a name="control-authoring-overview"></a>Общие сведения о разработке элементов управления
+# <a name="control-authoring-overview"></a>Обзор авторов управления
 
 Расширяемость модели элементов управления [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] значительно уменьшает необходимость создания новых элементов управления. Однако в некоторых случаях может потребоваться создать пользовательский элемент управления. В этом разделе обсуждаются функции, которые уменьшают необходимость создания пользовательских элементов управления, а также различные модели создания элементов управления в [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. Также здесь демонстрируется создание нового элемента управления.
 
@@ -227,7 +227,7 @@ ms.locfileid: "79401031"
 
 #### <a name="defining-resources-at-the-element-level"></a>Определение ресурсов на уровне элемента
 
-Общие ресурсы на уровне элемента можно определить путем создания пользовательского словаря ресурсов и его объединения со словарем ресурсов элемента управления.  При использовании этого метода можно присвоить файлу ресурсов любое имя и его можно поместить в одну папку с элементами управления. Ресурсы на уровне элемента также могут использовать простые строки как ключи. В следующем примере создается <xref:System.Windows.Media.LinearGradientBrush> файл ресурсов под названием Dictionary1.xaml.
+Вы можете определить общие ресурсы на уровне элемента, создав пользовательский словарь ресурсов и объединив его со словарем ресурсов элемента.  При использовании этого метода можно присвоить файлу ресурсов любое имя и его можно поместить в одну папку с элементами управления. Ресурсы на уровне элемента также могут использовать простые строки как ключи. В следующем примере создается <xref:System.Windows.Media.LinearGradientBrush> файл ресурсов под названием Dictionary1.xaml.
 
 [!code-xaml[SharedResources#1](~/samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/Dictionary1.xaml#1)]
 
@@ -264,7 +264,7 @@ ms.locfileid: "79401031"
 
 Не нужно определять ресурс для каждой темы. Если ресурс не определен для конкретной темы, элемент управления проверяет `Classic.xaml` для ресурса. Если ресурс не определен в файле, соответствующем текущей теме, или в `Classic.xaml`, то элемент управления использует общий ресурс, который находится в файле словаря ресурса с именем `generic.xaml`.  Файл `generic.xaml` расположен в той же папке, что и файлы словаря ресурсов, связанные с темами. Хотя `generic.xaml` не соответствует конкретной теме Windows, он по-прежнему является словарем уровня темы.
 
-Пользовательский контроль [c'](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) или [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown с тепозами и `NumericUpDown` образцом поддержки автоматизации пользовательского или прим.
+Пользовательский контроль [c'](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) или [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown с тепозами и `NumericUpDown` образцом поддержки автоматизации пользовательского или прим.
 
 При покладывании в любой <xref:System.Windows.Controls.ControlTemplate> из файлов словаря ресурсов, специфичных для <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29> конкретной <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>темы, необходимо создать статический конструктор для управления и вызвать метод на , как показано в следующем примере.
 

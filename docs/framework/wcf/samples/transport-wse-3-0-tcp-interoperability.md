@@ -2,12 +2,12 @@
 title: 'Транспорт: TCP-взаимодействие WSE 3.0'
 ms.date: 03/30/2017
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
-ms.openlocfilehash: 55c59fe3a677d3aea8de62ae714e1007cfcbb86a
-ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
+ms.openlocfilehash: f799f3b6968f31472acc7752846bab34351648db
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "81121285"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81278903"
 ---
 # <a name="transport-wse-30-tcp-interoperability"></a>Транспорт: TCP-взаимодействие WSE 3.0
 В примере WSE 3.0 TCP Interoperability Transport демонстрируется, как реализовать дуплексную сессию TCP в качестве пользовательского транспорта Фонда связи Windows (WCF). Также демонстрируется использование расширяемости уровня канала для создания интерфейса по сети с существующими развернутыми системами. Следующие шаги показывают, как построить этот пользовательский транспорт WCF:  
@@ -39,7 +39,7 @@ ms.locfileid: "81121285"
   
  После того как сообщение <xref:System.ServiceModel.Channels.Message> закодировано в байты, оно должно быть передано по сети. Для этого требуется система определения границ сообщения. WSE 3.0 использует версию [DIME](https://docs.microsoft.com/archive/msdn-magazine/2002/december/sending-files-attachments-and-soap-messages-via-dime) в качестве протокола разработки. `WriteData` инкапсулирует логику кадрирования для заключения массива byte[] в набор записей DIME.  
   
- Логика приема сообщений очень похожа. Основная сложность заключается в учете ситуаций, когда операция чтения сокета может вернуть меньше байтов, чем было запрошено. Чтобы принять сообщение, `WseTcpDuplexSessionChannel` считывает байты из сети, декодирует кадрирование DIME, затем использует <xref:System.ServiceModel.Channels.MessageEncoder> для преобразования массива byte[] в сообщение <xref:System.ServiceModel.Channels.Message>.  
+ Логика получения сообщений аналогична. Основная сложность заключается в том, что чтение розетки может вернуть меньше байтов, чем было запрошено. Чтобы принять сообщение, `WseTcpDuplexSessionChannel` считывает байты из сети, декодирует кадрирование DIME, затем использует <xref:System.ServiceModel.Channels.MessageEncoder> для преобразования массива byte[] в сообщение <xref:System.ServiceModel.Channels.Message>.  
   
  Базовый класс `WseTcpDuplexSessionChannel` предполагает, что он получает подключенный сокет. Базовый класс обрабатывает завершение работы сокета. Существуют три места, взаимодействующих с закрытием сокета:  
   
@@ -47,7 +47,7 @@ ms.locfileid: "81121285"
   
 - On[Begin]Close - закрыть сокет корректно (мягкое закрытие).  
   
-- session.CloseOutputSession -- завершить работу исходящего потока данных (закрытие наполовину).  
+- Сессии. CloseOutputSession -- Выключите исходящий поток данных (половина закрытия).  
   
 ## <a name="channel-factory"></a>Фабрика каналов  
  Следующий этап создания транспорта TCP - реализация <xref:System.ServiceModel.Channels.IChannelFactory> для каналов клиентов.  
@@ -170,7 +170,7 @@ Symbols:
         CONTOSO  
 ```  
   
-#### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
+## <a name="set-up-build-and-run-the-sample"></a>Настройка, создание и запуск образца  
   
 1. Для выполнения этого образца необходимо установить [улучшения web Services (WSE) 3.0 для Microsoft .NET](https://www.microsoft.com/download/details.aspx?id=14089) и образец WSE. `TcpSyncStockService`
   
@@ -179,9 +179,9 @@ Symbols:
   
 1. После установки примера `TcpSyncStockService` выполните следующие операции.  
   
-    1. Откройте `TcpSyncStockService` в Visual Studio (Обратите внимание, что пример TcpSyncStockService устанавливается с WSE 3.0. Он не является частью кода данного примера.).  
+    1. Откройте `TcpSyncStockService` в визуальной студии. (Образец TcpSyncStockService устанавливается с WSE 3.0. Это не является частью кода этого образца.)  
   
-    2. Установите проект StockService в качестве проекта для запуска.  
+    2. Застройте проект StockService в качестве стартового проекта.  
   
     3. Откройте файл StockService.cs в проекте StockService и закомментируйте атрибут [Policy] класса `StockService`. Таким образом в примере отключается безопасность. В то время как WCF может работать с безопасными конечными точками WSE 3.0, безопасность отключена, чтобы сохранить этот образец сосредоточенным на пользовательском транспорте TCP.  
   

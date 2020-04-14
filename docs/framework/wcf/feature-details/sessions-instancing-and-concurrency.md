@@ -2,12 +2,12 @@
 title: Сеансы, экземпляры и параллелизм
 ms.date: 03/30/2017
 ms.assetid: 50797a3b-7678-44ed-8138-49ac1602f35b
-ms.openlocfilehash: a7466d819e15f3bfe8def2d9407dcf2c6e0c7346
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 19dedddadad2f27acdeeaceb2c186a731fa79c32
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184448"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243119"
 ---
 # <a name="sessions-instancing-and-concurrency"></a>Сеансы, экземпляры и параллелизм
 Под *сеансом* понимается скоррелированный набор всех сообщений, переданных между двумя конечными точками. *Создание экземпляров* означает управление временем жизни определенных пользователем объектов службы и связанных с ними объектов <xref:System.ServiceModel.InstanceContext> . Термин*параллелизм* означает управление количеством потоков, одновременно выполняющихся в некотором контексте <xref:System.ServiceModel.InstanceContext> .  
@@ -63,7 +63,7 @@ public class CalculatorService : ICalculatorInstance
 ### <a name="well-known-singleton-services"></a>Широко известные одноэлементные службы  
  Иногда бывает полезен один из вариантов объектов службы с одним экземпляром: можно самому создать объект службы, а затем создать основное приложение службы, используя этот объект. Для этого необходимо задать для свойства <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> значение <xref:System.ServiceModel.InstanceContextMode.Single> - в противном случае при открытии основного приложения службы возникает исключение.  
   
- Для создания такой службы используйте конструктор <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=nameWithType> . Он обеспечивает альтернативу реализации пользовательского <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> , если требуется предоставить определенный экземпляр объекта для использования одноэлементной службой. Эту перегрузку можно использовать, когда трудно построить тип реализации службы (например, если он не выполняет безпаралиса).  
+ Для создания такой службы используйте конструктор <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> . Он обеспечивает альтернативу реализации пользовательского <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> , если требуется предоставить определенный экземпляр объекта для использования одноэлементной службой. Эту перегрузку можно использовать, когда трудно построить тип реализации службы (например, если он не выполняет безпаралиса).  
   
  Обратите внимание, что, когда объект предоставляется этому конструктору, некоторые функции, связанные с Фондом связи Windows (WCF), инстанимающие поведение работают по-разному. Например, вызов <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> не выполняет никаких действий, если предоставлен экземпляр одноэлементного объекта. Аналогичным образом пропускаются все другие механизмы освобождения экземпляров. Приложение <xref:System.ServiceModel.ServiceHost> всегда ведет себя таким образом, как если бы для свойства <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> было задано значение <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> для всех операций.  
   
@@ -82,7 +82,7 @@ public class CalculatorService : ICalculatorInstance
 - <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: каждый экземпляр службы одновременно обрабатывает одно сообщение, но принимает вызовы операций с повторным входом. Служба принимает эти вызовы только тогда, когда она вызывает через объект клиента WCF.  
   
 > [!NOTE]
-> Проектирование и разработка кода, который может безопасно использовать несколько потоков, может оказаться непростым делом. Перед использованием значения <xref:System.ServiceModel.ConcurrencyMode.Multiple> или <xref:System.ServiceModel.ConcurrencyMode.Reentrant> убедитесь, что служба должным образом разработана для поддержки этих режимов. Дополнительные сведения см. в разделе <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
+> Проектирование и разработка кода, который может безопасно использовать несколько потоков, может оказаться непростым делом. Перед использованием значения <xref:System.ServiceModel.ConcurrencyMode.Multiple> или <xref:System.ServiceModel.ConcurrencyMode.Reentrant> убедитесь, что служба должным образом разработана для поддержки этих режимов. Для получения дополнительной информации см. <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
   
  Использование параллелизма связано с режимом создания экземпляров. В <xref:System.ServiceModel.InstanceContextMode.PerCall> инстансционе, параллелизм не имеет значения, потому что каждое сообщение обрабатывается новым <xref:System.ServiceModel.InstanceContext> и, следовательно, не более одного потока активен в . <xref:System.ServiceModel.InstanceContext>  
   
@@ -112,6 +112,6 @@ public class CalculatorService : ICalculatorConcurrency
 - [Использование сеансов](../../../../docs/framework/wcf/using-sessions.md)
 - [Практическое руководство. Создание службы, для которой требуются сеансы](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
 - [Практическое руководство. Управление созданием экземпляров служб](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)
-- [Параллелизма](../../../../docs/framework/wcf/samples/concurrency.md)
+- [Параллелизм](../../../../docs/framework/wcf/samples/concurrency.md)
 - [Создание экземпляров](../../../../docs/framework/wcf/samples/instancing.md)
-- [Сессии](../../../../docs/framework/wcf/samples/session.md)
+- [Сеанс](../../../../docs/framework/wcf/samples/session.md)

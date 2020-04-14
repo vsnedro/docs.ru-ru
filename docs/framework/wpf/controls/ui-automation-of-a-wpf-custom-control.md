@@ -10,12 +10,12 @@ helpviewer_keywords:
 - custom controls [WPF], improving accessibility
 - UI Automation [WPF], using with custom controls
 ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
-ms.openlocfilehash: 9c33d0e5da70820041ba2a2881082d9f7d179fc5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 97db94215220ac2a68e0395bd63b7a874a745a48
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79187499"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243249"
 ---
 # <a name="ui-automation-of-a-wpf-custom-control"></a>Модель автоматизации пользовательского интерфейса пользовательского элемента управления WPF
 [!INCLUDE[TLA#tla_uiautomation](../../../../includes/tlasharptla-uiautomation-md.md)] предоставляет единый общий интерфейс, который клиенты автоматизации могут использовать для проверки или использования пользовательских интерфейсов различных платформ и инфраструктур. [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] предоставляет как код для проверки качества (тестирования), так и приложения с поддержкой специальных возможностей, например средства чтения с экрана для проверки элементов пользовательского интерфейса и моделирования пользовательского взаимодействия с ними из другого кода. Сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] на всех платформах см. в разделе, посвященном специальным возможностям.  
@@ -144,7 +144,7 @@ Public Class RangePeer2
 End Class  
 ```  
   
-Например, в реализации см. исходный код [C-](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) или [Visual Basic,](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) который реализует и потребляет пользовательский элемент управления NumericUpDown.  
+Например, в реализации см. исходный код [C-](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) или [Visual Basic,](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) который реализует и потребляет пользовательский элемент управления NumericUpDown.  
   
 ### <a name="raise-events"></a>Создание событий  
  Клиенты автоматизации могут подписаться на события автоматизации. Пользовательские элементы управления должны сообщать <xref:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent%2A> об изменениях в состоянии управления, вызывая метод. Аналогичным образом, при изменении <xref:System.Windows.Automation.Peers.AutomationPeer.RaisePropertyChangedEvent%2A> значения свойства позвоните в метод. В приведенном ниже коде показано, как получить одноранговый объект из кода элемента управления и вызвать метод для создания события. В качестве меры оптимизации код также определяет, имеются ли прослушиватели для этого типа событий. Создание событий только при наличии соответствующих прослушивателей позволяет избежать лишней нагрузки и помогает сохранять должную скорость отклика элемента управления.  
@@ -156,5 +156,5 @@ End Class
 
 - [Общие сведения о модели автоматизации пользовательского интерфейса](../../ui-automation/ui-automation-overview.md)
 - [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](../../ui-automation/server-side-ui-automation-provider-implementation.md)
-- [Пользовательский контроль NumericUpDown на GitHub](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp)  
-- [Пользовательский контроль NumericUpDown (Visual Basic) на GitHub](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic)
+- [Пользовательский контроль NumericUpDown на GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp)  
+- [Пользовательский контроль NumericUpDown (Visual Basic) на GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic)
