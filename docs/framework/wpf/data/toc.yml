@@ -80,8 +80,6 @@
       href: how-to-clear-bindings.md
     - name: 'Поиск элементов, созданных с использованием шаблона DataTemplate'
       href: how-to-find-datatemplate-generated-elements.md
-    - name: Привязка к веб-службе
-      href: how-to-bind-to-a-web-service.md
 - name: "Привязка данных с помощью LINQ to\_XML"
   items:
     - name: Обзор
