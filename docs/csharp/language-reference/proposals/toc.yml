@@ -74,6 +74,8 @@
           href: ../../../../_csharplang/proposals/csharp-8.0/ranges.md
         - name: Использование шаблонов и объявлений using
           href: ../../../../_csharplang/proposals/csharp-8.0/using.md
+        - name: Статические локальные функции
+          href: ../../../../_csharplang/proposals/csharp-8.0/static-local-functions.md
         - name: Присваивание объединения со значением NULL
           href: ../../../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
         - name: Члены экземпляров с доступом только на чтение
