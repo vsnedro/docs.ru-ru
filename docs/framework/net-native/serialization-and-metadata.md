@@ -2,12 +2,12 @@
 title: Сериализация и метаданные
 ms.date: 03/30/2017
 ms.assetid: 619ecf1c-1ca5-4d66-8934-62fe7aad78c6
-ms.openlocfilehash: 7c6fe241fbf92f52abfa0eb66c37bff4d227b4e5
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: cc9adf0e6627ef3190e74fea5d4f0f3afd581811
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241923"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389220"
 ---
 # <a name="serialization-and-metadata"></a>Сериализация и метаданные
 
@@ -15,7 +15,7 @@ ms.locfileid: "81241923"
   
 - Сериализиторы сторонних поставщиков на основе отражения. Они требуют изменений в файле директив среды выполнения и рассматриваются в следующем разделе.  
   
-- Сериализиторы без отражения содержатся в библиотеке классов платформы .NET Framework. Они могут потребовать внесения изменений в файл директив среды выполнения и обсуждаются в разделе [Сериализаторы Майкрософт](#Microsoft).  
+- Неотражающие сериализаторы, найденные в библиотеке класса .NET Framework. Они могут потребовать внесения изменений в файл директив среды выполнения и обсуждаются в разделе [Сериализаторы Майкрософт](#Microsoft).  
   
 <a name="ThirdParty"></a>
 ## <a name="third-party-serializers"></a>Сериализаторы сторонних поставщиков
@@ -59,15 +59,15 @@ ms.locfileid: "81241923"
   
  [!code-csharp[ProjectN#7](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#7)]  
   
- Необходимо добавить следующие записи для каждого типа в файл директив среды выполнения:  
+Добавление записей, таких как следующие для каждого типа, в файл директив времени выполнения:  
   
 ```xml  
 <Type Name="t" Browse="Required Public" />  
 ```  
   
- Для получения информации о синтаксисе, используемом в примере, см [ \<>.](type-element-net-native.md)  
+Для получения информации о синтаксисе, используемом в примере, см [ \<>.](type-element-net-native.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - INotifyPropertyChanged interface [Windows Forms], using with BindingSource
 - BindingSource component [Windows Forms], examples
 ms.assetid: 7fa2cf51-c09f-4375-adf0-e36c5617f099
-ms.openlocfilehash: 7dc640f272226da650a63b1a3434822d21053b48
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 07248ec0b8ac4f2356d9c9915b6a904dfad30cb2
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69968282"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81388978"
 ---
 # <a name="how-to-raise-change-notifications-using-a-bindingsource-and-the-inotifypropertychanged-interface"></a>Практическое руководство. Получение уведомления об изменении данных с использованием компонента BindingSource и интерфейса INotifyPropertyChanged
 Компонент <xref:System.Windows.Forms.BindingSource> автоматически обнаруживает изменения в источнике данных, когда тип, содержащийся в этом источнике, реализует интерфейс <xref:System.ComponentModel.INotifyPropertyChanged> и вызывает события <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> при изменении значения свойства. Это очень удобно, так как элементы управления, привязанные к <xref:System.Windows.Forms.BindingSource>, будут автоматически обновляться при изменении значений источника данных.  
@@ -29,7 +29,7 @@ ms.locfileid: "69968282"
 ## <a name="example"></a>Пример  
  В следующем примере кода показан пример простой реализации интерфейса <xref:System.ComponentModel.INotifyPropertyChanged>. Также показано, как компонент <xref:System.Windows.Forms.BindingSource> автоматически передает изменения источника данных в связанный элемент управления, когда <xref:System.Windows.Forms.BindingSource> привязан к списку типа <xref:System.ComponentModel.INotifyPropertyChanged>.  
   
- При использовании атрибута `CallerMemberName` в вызовах метода `NotifyPropertyChanged` нет необходимости указывать имя свойства в качестве строкового аргумента. Дополнительные сведения см. в разделе [сведения оC#вызывающем объекте ()](../../../csharp/programming-guide/concepts/caller-information.md) или [сведения о вызывающем объекте (Visual Basic)](../../../visual-basic/programming-guide/concepts/caller-information.md).  
+ При использовании атрибута `CallerMemberName` в вызовах метода `NotifyPropertyChanged` нет необходимости указывать имя свойства в качестве строкового аргумента. Для получения дополнительной информации, см. [Caller Information (Visual Basic)](../../../visual-basic/programming-guide/concepts/caller-information.md) [Caller Information (C#)](../../../csharp/language-reference/attributes/caller-information.md)  
   
  [!code-csharp[System.ComponentModel.IPropertyChangeExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.IPropertyChangeExample/CS/Form1.cs#1)]
  [!code-vb[System.ComponentModel.IPropertyChangeExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.IPropertyChangeExample/VB/Form1.vb#1)]  
@@ -43,4 +43,4 @@ ms.locfileid: "69968282"
 
 - <xref:System.ComponentModel.INotifyPropertyChanged>
 - [Компонент BindingSource](bindingsource-component.md)
-- [Практическое руководство. Создание уведомлений об изменениях с помощью метода BindingSource ResetItem компонента](how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)
+- [Практическое руководство. Уведомление об изменении данных с использованием метода ResetItem компонента BindingSource](how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)

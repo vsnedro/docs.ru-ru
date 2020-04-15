@@ -7,19 +7,22 @@ helpviewer_keywords:
 - XML Schema Definition tool, using to generate classes that conform to specific schema
 - XML Schema Definition tool, using to generate XML Schema Document
 ms.assetid: 51f0edc3-993d-4051-b7f2-77753694d3d1
-ms.openlocfilehash: 4c6996e2279693cf96c826741869d72007cf81cf
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: 2bbdced0f984b653a58afba9685683e8c0891271
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249556"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389801"
 ---
 # <a name="how-to-use-the-xml-schema-definition-tool-to-generate-classes-and-xml-schema-documents"></a>Практическое руководство. Использование инструмента определения схемы XML для создания классов и документов схемы XML
-С помощью инструмента определения схемы XML (Xsd.exe) можно создать схему XML, которая описывает класс, или создать класс, определенный схемой XML. В процедурах ниже показана методика выполнения таких операций.  
-  
+С помощью инструмента определения схемы XML (Xsd.exe) можно создать схему XML, которая описывает класс, или создать класс, определенный схемой XML. В процедурах ниже показана методика выполнения таких операций.
+
+Инструмент определения схемы XML (Xsd.exe) обычно можно найти следующим путем:
+_C:\\Файлы\\программы (x86)\\\\Microsoft SDKs Windows (версия)\\bin\\NETFX (версия) Инструменты\\_
+
 ### <a name="to-generate-classes-that-conform-to-a-specific-schema"></a>Создание классов, соответствующих определенной схеме  
   
-1. Откройте командную строку.  
+1. Откройте окно командной строки.  
   
 2. Передайте схему XML как аргумент в инструмент определения схемы XML, который создаст набор классов, точно соответствующих схеме XML, например:  
   
@@ -42,7 +45,7 @@ ms.locfileid: "80249556"
   
 1. Скомпилируйте класс или классы в библиотеку DLL.  
   
-2. Откройте командную строку.  
+2. Откройте окно командной строки.  
   
 3. Передайте библиотеку DLL как аргумент в Xsd.exe, например:  
   
@@ -57,7 +60,7 @@ ms.locfileid: "80249556"
 - <xref:System.Data.DataSet>
 - [Инструмент определения схемы XML и сериализация XML](../../../docs/standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md)
 - [Введение в сериализацию XML](../../../docs/standard/serialization/introducing-xml-serialization.md)
-- [XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md)
+- [Инструмент определения схемы XML (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md)
 - <xref:System.Xml.Serialization.XmlSerializer>
 - [Практическое руководство. Сериализация объекта](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [Практическое руководство. Десериализация объекта](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

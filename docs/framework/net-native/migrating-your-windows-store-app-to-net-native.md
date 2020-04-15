@@ -2,12 +2,12 @@
 title: Миграция приложения для магазина Windows в машинный код .NET
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: 36f9ac4647b349ff379869f3415a5fb9e55228e3
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 987669fc51eeaf7e3bdef3e91a2f1ce23164a055
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241949"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389706"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Перенести приложение Магазина Windows в .NET Native
 
@@ -85,7 +85,7 @@ Native .NET также включает инструменты профилир�
 
 - <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties%2A?displayProperty=nameWithType> и <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents%2A?displayProperty=nameWithType> включают скрытые члены в базовых классах и поэтому могут переопределяться без явного переопределения. Это также справедливо для других методов [RuntimeReflectionExtensions.GetRuntime*](xref:System.Reflection.RuntimeReflectionExtensions) .
 
-- <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType> и <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType> не дают сбой при попытке создать определенные комбинации (например, массив byrefs).
+- <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType>и <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType> не терпят неудачу, когда вы пытаетесь создать `byref` определенные комбинации (например, массив объектов).
 
 - Нельзя использовать отражение для вызова членов, которые содержат параметры указателя.
 
@@ -117,7 +117,7 @@ Native .NET также включает инструменты профилир�
 
 - При переопределении методов <xref:System.ValueType.Equals%2A?displayProperty=nameWithType> и <xref:System.ValueType.GetHashCode%2A?displayProperty=nameWithType> для типа значения не вызывайте реализации базового класса. В приложениях .NET для магазина Windows эти методы основаны на отражении. Во время компиляции .NET Native генерирует реализацию, которая не полагается на отражение времени выполнения. Это означает, что если вы не переопределить эти два метода, они будут работать, как ожидалось, потому что .NET Native генерирует реализацию во время компиляции. Однако, переопределение этих методов с помощью вызова реализации базового класса приводит к возникновению исключения.
 
-- Типы значений больше одного мегабайта не поддерживаются.
+- Типы значений размером более 1 мегабайт не поддерживаются.
 
 - Типы значений не могут иметь беспараметрыный конструктор в .NET Native. (C и Visual Basic запрещают беспараметрыные конструкторы по типам значений. Тем не менее их можно создать в IL.)
 
@@ -225,7 +225,7 @@ Native .NET также включает инструменты профилир�
 - <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType>
 - <xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType>
 
- <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> поддерживается, но создает исключение в некоторых сценариях, например когда используется с вариантами [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) или byref.
+ <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType>поддерживается, но в некоторых сценариях, например, при использовании `byref` [iDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) или вариантов, он выбрасывает исключение.
 
  Утомленные AI для поддержки [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) включают:
 
@@ -324,7 +324,7 @@ Native .NET также включает инструменты профилир�
 
 - Реализация интерфейса <xref:System.Runtime.InteropServices.ICustomQueryInterface?displayProperty=nameWithType> на управляемом типе
 
-- Реализация интерфейса [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) в управляемом типе через атрибут <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType> . Однако, обратите внимание, что нельзя вызывать COM-объекты через `IDispatch`, а управляемый объект не может реализовать `IDispatch`.
+- Реализация интерфейса [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) в управляемом типе через атрибут <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType> . Тем не менее, вы не `IDispatch`можете вызвать объекты `IDispatch`COM через, и управляемый объект не может реализовать.
 
 Использование отражения для вызова метода неуправляемого кода не поддерживается. Это ограничение можно обойти путем заключения вызова метода в другой метод, вместо этого используя вызов оболочки.
 
@@ -332,7 +332,7 @@ Native .NET также включает инструменты профилир�
 
 ### <a name="other-differences-from-net-apis-for-windows-store-apps"></a>Другие отличия от API-интерфейсов приложений .NET для магазина Windows
 
-В этом разделе перечислены оставшиеся AA, которые не поддерживаются в .NET Native. Самый большой набор неподдерживаемых интерфейсов API — это API-интерфейсы Windows Communication Foundation (WCF).
+В этом разделе перечислены оставшиеся AA, которые не поддерживаются в .NET Native. Самый большой набор неподдерживаемых AI – это AI- компаний Фонда коммуникаций Windows (WCF).
 
 **DataAnnotations (System.ComponentModel.DataAnnotations)**
 
@@ -396,7 +396,7 @@ Visual Basic в настоящее время не поддерживается 
 
 **Windows Communication Foundation (WCF) (System.ServiceModel.\*)**
 
-Типы в [пространствах имен System.ServiceModel.'](xref:System.ServiceModel) не поддерживаются в языках .NET Native. В число этих типов входят следующие:
+Типы в [пространствах имен System.ServiceModel.'](xref:System.ServiceModel) не поддерживаются в языках .NET Native. К ним относятся следующие типы:
 
 - <xref:System.ServiceModel.ActionNotSupportedException?displayProperty=nameWithType>
 - <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>
@@ -661,7 +661,7 @@ Visual Basic в настоящее время не поддерживается 
 
 Включение .NET Native в библиотеку модульных тестов для проекта приложений Магазина Windows не поддерживается и приводит к неудаче проекта.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Начало работы](getting-started-with-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

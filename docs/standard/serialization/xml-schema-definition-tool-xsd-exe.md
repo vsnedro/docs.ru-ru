@@ -2,16 +2,19 @@
 title: XML Schema Definition Tool (Xsd.exe)
 ms.date: 03/30/2017
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
-ms.openlocfilehash: cd017eb1866fff2ce8fd7a858b184351ef13e815
-ms.sourcegitcommit: 961ec21c22d2f1d55c9cc8a7edf2ade1d1fd92e3
+ms.openlocfilehash: 6ec99e77db4215184547ea2bbbe0d1ff8ad3c286
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80588351"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389777"
 ---
 # <a name="xml-schema-definition-tool-xsdexe"></a>XML Schema Definition Tool (Xsd.exe)
 
 Инструмент определения схемы XML (Xsd.exe) создает схему XML или классы CLR из файлов XDR, XML и XSD либо из классов в сборке среды выполнения.
+
+Инструмент определения схемы XML (Xsd.exe) обычно можно найти следующим путем:
+_C:\\Файлы\\программы (x86)\\\\Microsoft SDKs Windows (версия)\\bin\\NETFX (версия) Инструменты\\_
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -74,7 +77,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 |------------|-----------------|
 |**/t\[ype\]:**_typename_|Задает имя типа, для которого следует создать схему. Можно указать несколько аргументов типа. Если *имя_типа* не указывает пространство имен, Xsd.exe сопоставляет все типы в сборке с указанным типом. Если *имя_типа* задает пространство имен, сопоставляется только этот тип. Если *имя_типа* заканчивается знаком звездочки (\*), средство сопоставляет все типы, которые начинаются со строки, предшествующей знаку звездочки (\*). Если параметр `/type` не задан, Xsd.exe создает схемы для всех типов в сборке.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 В следующей таблице показаны операции, выполняемые Xsd.exe.
 
