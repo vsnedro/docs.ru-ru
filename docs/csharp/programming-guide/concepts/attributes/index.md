@@ -1,12 +1,12 @@
 ---
 title: Атрибуты (C#)
 ms.date: 04/26/2018
-ms.openlocfilehash: 2a07035ea97bb0ff1a8f4793fe8a30d3a42c34a7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 62424163303417746a67707d9ef34185954db316
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79397644"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389543"
 ---
 # <a name="attributes-c"></a>Атрибуты (C#)
 
@@ -67,15 +67,15 @@ ms.locfileid: "79397644"
 
 Возможные значения `target` перечислены в следующей таблице.
 
-|Целевое значение|Применяется к|
+|Целевое значение|Применение|
 |------------------|----------------|
 |`assembly`|Вся сборка|
 |`module`|Модуль текущей сборки|
 |`field`|Поле в классе или структуре|
-|`event`|Событие|
+|`event`|событие|
 |`method`|Метод либо методы доступа к свойствам `get` и `set`|
 |`param`|Параметры метода или параметры метода доступа `set`|
-|`property`|Свойство|
+|`property`|Свойство.|
 |`return`|Возвращаемое значение метода, индексатора свойства или метода доступа к свойствам `get`|
 |`type`|Структура, класс, интерфейс, перечисление или делегат|
 
@@ -95,14 +95,14 @@ using System.Reflection;
 [!code-csharp[Applying attributes to different code elements](../../../../../samples/snippets/csharp/attributes/AttributesOverview.cs#6)]
 
 > [!NOTE]
-> Вне зависимости от целевых объектов, для которых действует атрибут `ValidatedContract`, необходимо задать целевой объект для `return`, даже если атрибут `ValidatedContract` назначен только возвращаемым значениям. Другими словами, компилятор не будет использовать сведения `AttributeUsage` для разрешения конфликтов между неоднозначными целевыми объектами атрибута. Подробнее см. в разделе [AttributeUsage (C#)](attributeusage.md).
+> Вне зависимости от целевых объектов, для которых действует атрибут `ValidatedContract`, необходимо задать целевой объект для `return`, даже если атрибут `ValidatedContract` назначен только возвращаемым значениям. Другими словами, компилятор не будет использовать сведения `AttributeUsage` для разрешения конфликтов между неоднозначными целевыми объектами атрибута. Подробнее см. в разделе [AttributeUsage (C#)](../../../language-reference/attributes/general.md).
 
 ## <a name="common-uses-for-attributes"></a>Популярные методы применения атрибутов
 
 В следующем списке перечислены несколько распространенных применений для атрибутов.
 
-- Указание для методов в веб-службах атрибута `WebMethod`, который обозначает, что метод должен вызываться по протоколу SOAP. Дополнительные сведения см. в разделе <xref:System.Web.Services.WebMethodAttribute>.
-- Описание способов упаковки параметров методов при взаимодействии с машинным кодом. Дополнительные сведения см. в разделе <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
+- Указание для методов в веб-службах атрибута `WebMethod`, который обозначает, что метод должен вызываться по протоколу SOAP. Для получения дополнительной информации см. <xref:System.Web.Services.WebMethodAttribute>.
+- Описание способов упаковки параметров методов при взаимодействии с машинным кодом. Для получения дополнительной информации см. <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
 - Описание свойств COM для классов, методов и интерфейсов.
 - Вызов неуправляемого кода с помощью класса <xref:System.Runtime.InteropServices.DllImportAttribute>.
 - Указание для сборки таких параметров, как заголовок, версия, описание или товарный знак.
@@ -121,9 +121,9 @@ using System.Reflection;
 - [Обращение к атрибутам с помощью отражения (C#)](accessing-attributes-by-using-reflection.md)  
 - [Практическое руководство. Создание объединения C/C++ с помощью атрибутов (C#)](how-to-create-a-c-cpp-union-by-using-attributes.md)  
 - [Общие атрибуты (C#)](common-attributes.md)  
-- [Сведения о вызывающем объекте (C#)](../caller-information.md)  
+- [Сведения о вызывающем объекте (C#)](../../../language-reference/attributes/caller-information.md)  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../../index.md)
 - [Отражение (C#)](../reflection.md)
