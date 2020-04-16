@@ -2,20 +2,25 @@
 title: Извлечение значений элемента (LINQ to XML) (C#)
 ms.date: 07/20/2015
 ms.assetid: 4228c007-07c9-4cf2-a45b-e7074c109581
-ms.openlocfilehash: 17a7dac464e1ec40db357194000f5745cdf2f3a8
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: c4bb78e937fe0de08242923cdd7cd638abf571c7
+ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249211"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80805833"
 ---
-# <a name="how-to-retrieve-the-value-of-an-element-linq-to-xml-c"></a><span data-ttu-id="9424b-102">Извлечение значений элемента (LINQ to XML) (C#)</span><span class="sxs-lookup"><span data-stu-id="9424b-102">How to retrieve the value of an element (LINQ to XML) (C#)</span></span>
-<span data-ttu-id="9424b-103">В этом разделе показано получение значений элементов.</span><span class="sxs-lookup"><span data-stu-id="9424b-103">This topic shows how to get the value of elements.</span></span> <span data-ttu-id="9424b-104">Это можно сделать двумя основными способами.</span><span class="sxs-lookup"><span data-stu-id="9424b-104">There are two main ways to do this.</span></span> <span data-ttu-id="9424b-105">Первый способ состоит в приведении <xref:System.Xml.Linq.XElement> или <xref:System.Xml.Linq.XAttribute> к желаемому типу.</span><span class="sxs-lookup"><span data-stu-id="9424b-105">One way is to cast an <xref:System.Xml.Linq.XElement> or an <xref:System.Xml.Linq.XAttribute> to the desired type.</span></span> <span data-ttu-id="9424b-106">Оператор явного преобразования, который преобразует содержимое элемента или атрибута в указанный тип и присваивает полученное значение указанной переменной.</span><span class="sxs-lookup"><span data-stu-id="9424b-106">The explicit conversion operator then converts the contents of the element or attribute to the specified type and assigns it to your variable.</span></span> <span data-ttu-id="9424b-107">Иначе можно использовать свойство <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> или <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="9424b-107">Alternatively, you can use the <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property or the <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=nameWithType> property.</span></span>  
+# <a name="how-to-retrieve-the-value-of-an-element-linq-to-xml-c"></a><span data-ttu-id="af638-102">Извлечение значений элемента (LINQ to XML) (C#)</span><span class="sxs-lookup"><span data-stu-id="af638-102">How to retrieve the value of an element (LINQ to XML) (C#)</span></span>
+
+<span data-ttu-id="af638-103">В этой статье показано получение значений элементов.</span><span class="sxs-lookup"><span data-stu-id="af638-103">This article shows how to get the value of elements.</span></span> <span data-ttu-id="af638-104">Получить значение можно двумя основными способами:</span><span class="sxs-lookup"><span data-stu-id="af638-104">There are two main ways to get the value:</span></span>
+
+- <span data-ttu-id="af638-105">Приведение <xref:System.Xml.Linq.XElement> или <xref:System.Xml.Linq.XAttribute> к желаемому типу.</span><span class="sxs-lookup"><span data-stu-id="af638-105">Cast an <xref:System.Xml.Linq.XElement> or an <xref:System.Xml.Linq.XAttribute> to the desired type.</span></span> <span data-ttu-id="af638-106">Оператор явного преобразования, который преобразует содержимое элемента или атрибута в указанный тип и присваивает полученное значение указанной переменной.</span><span class="sxs-lookup"><span data-stu-id="af638-106">The explicit conversion operator then converts the contents of the element or attribute to the specified type and assigns it to your variable.</span></span>
+
+- <span data-ttu-id="af638-107">Использование свойств <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> или <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="af638-107">Use the <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> or <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=nameWithType> properties.</span></span> <span data-ttu-id="af638-108">Можно также задать значение с помощью этих свойств.</span><span class="sxs-lookup"><span data-stu-id="af638-108">You can also set the value using these properties.</span></span>
+
+<span data-ttu-id="af638-109">В C# приведение, как правило, является лучшим подходом.</span><span class="sxs-lookup"><span data-stu-id="af638-109">With C#, casting is generally the better approach.</span></span> <span data-ttu-id="af638-110">В частности, упрощается написание кода, обеспечивающего получение значения элемента или атрибута, который может существовать или не существовать, после приведения элемента (или атрибута) к типу значения, допускающему значение NULL.</span><span class="sxs-lookup"><span data-stu-id="af638-110">If you cast the element or attribute to a nullable value type, the code is simpler to write when retrieving the value of an element (or attribute) that might or might not exist.</span></span> <span data-ttu-id="af638-111">В [последнем примере](#element-might-not-exist-example) в этой статье показано, что приведение проще использовать в случае, когда элемент может не существовать.</span><span class="sxs-lookup"><span data-stu-id="af638-111">The [last example](#element-might-not-exist-example) in this article demonstrates that casting is simpler in the case where the element might not exist.</span></span> <span data-ttu-id="af638-112">Однако нельзя так задать содержимое элемента через приведение, как через свойство <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="af638-112">However, you cannot set the contents of an element through casting, as you can through <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property.</span></span>  
   
- <span data-ttu-id="9424b-108">Однако при использовании C# приведение, как правило, является лучшим подходом.</span><span class="sxs-lookup"><span data-stu-id="9424b-108">With C#, however, casting is generally the better approach.</span></span> <span data-ttu-id="9424b-109">В частности, упрощается написание кода, обеспечивающего получение значения элемента или атрибута, который может существовать или не существовать, после приведения элемента (или атрибута) к типу значения, допускающему значение NULL.</span><span class="sxs-lookup"><span data-stu-id="9424b-109">If you cast the element or attribute to a nullable value type, the code is simpler to write when retrieving the value of an element (or attribute) that might or might not exist.</span></span> <span data-ttu-id="9424b-110">Это демонстрирует последний пример из данного раздела.</span><span class="sxs-lookup"><span data-stu-id="9424b-110">The last example in this topic demonstrates this.</span></span> <span data-ttu-id="9424b-111">Однако нельзя так задать содержимое элемента через приведение, как через свойство <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="9424b-111">However, you cannot set the contents of an element through casting, as you can through <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property.</span></span>  
-  
-## <a name="example"></a><span data-ttu-id="9424b-112">Пример</span><span class="sxs-lookup"><span data-stu-id="9424b-112">Example</span></span>  
- <span data-ttu-id="9424b-113">Для получения значения элемента нужно просто привести объект <xref:System.Xml.Linq.XElement> к желаемому типу.</span><span class="sxs-lookup"><span data-stu-id="9424b-113">To retrieve the value of an element, you just cast the <xref:System.Xml.Linq.XElement> object to your desired type.</span></span> <span data-ttu-id="9424b-114">Всегда можно привести элемент к строке следующим образом:</span><span class="sxs-lookup"><span data-stu-id="9424b-114">You can always cast an element to a string, as follows:</span></span>  
+## <a name="string-cast-example"></a><span data-ttu-id="af638-113">Пример приведения строки</span><span class="sxs-lookup"><span data-stu-id="af638-113">String cast example</span></span>  
+ <span data-ttu-id="af638-114">Для получения значения элемента нужно привести объект <xref:System.Xml.Linq.XElement> к желаемому типу.</span><span class="sxs-lookup"><span data-stu-id="af638-114">To retrieve the value of an element, cast the <xref:System.Xml.Linq.XElement> object to your desired type.</span></span> <span data-ttu-id="af638-115">Вы можете привести элемент к строке следующим образом:</span><span class="sxs-lookup"><span data-stu-id="af638-115">You can cast an element to a string, as follows:</span></span>  
   
 ```csharp  
 XElement e = new XElement("StringElement", "abcde");  
@@ -23,15 +28,15 @@ Console.WriteLine(e);
 Console.WriteLine("Value of e:" + (string)e);  
 ```  
   
- <span data-ttu-id="9424b-115">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="9424b-115">This example produces the following output:</span></span>  
+ <span data-ttu-id="af638-116">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="af638-116">This example produces the following output:</span></span>  
   
 ```output  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  
   
-## <a name="example"></a><span data-ttu-id="9424b-116">Пример</span><span class="sxs-lookup"><span data-stu-id="9424b-116">Example</span></span>  
- <span data-ttu-id="9424b-117">Также можно приводить элементы к типам, отличным от строковых.</span><span class="sxs-lookup"><span data-stu-id="9424b-117">You can also cast elements to types other than string.</span></span> <span data-ttu-id="9424b-118">Например, если имеется элемент, содержащий целое число, его можно привести к типу `int`, как показано в следующем коде:</span><span class="sxs-lookup"><span data-stu-id="9424b-118">For example, if you have an element that contains an integer, you can cast it to `int`, as shown in the following code:</span></span>  
+## <a name="integer-cast-example"></a><span data-ttu-id="af638-117">Пример приведения целого числа</span><span class="sxs-lookup"><span data-stu-id="af638-117">Integer cast example</span></span>  
+ <span data-ttu-id="af638-118">Также можно приводить элементы к типам, отличным от строковых.</span><span class="sxs-lookup"><span data-stu-id="af638-118">You can also cast elements to types other than string.</span></span> <span data-ttu-id="af638-119">Например, если имеется элемент, содержащий целое число, его можно привести к типу `int`, как показано в следующем коде:</span><span class="sxs-lookup"><span data-stu-id="af638-119">For example, if you have an element that contains an integer, you can cast it to `int`, as shown in the following code:</span></span>  
   
 ```csharp  
 XElement e = new XElement("Age", "44");  
@@ -39,19 +44,19 @@ Console.WriteLine(e);
 Console.WriteLine("Value of e:" + (int)e);  
 ```  
   
- <span data-ttu-id="9424b-119">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="9424b-119">This example produces the following output:</span></span>  
+ <span data-ttu-id="af638-120">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="af638-120">This example produces the following output:</span></span>  
   
 ```output  
 <Age>44</Age>  
 Value of e:44  
 ```  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <span data-ttu-id="9424b-120">предусматривает операторы явного приведения для следующих типов данных: `string`, `bool`, `bool?`, `int`, `int?`, `uint`, `uint?`, `long`, `long?`, `ulong`, `ulong?`, `float`, `float?`, `double`, `double?`, `decimal`, `decimal?`, `DateTime`, `DateTime?`, `TimeSpan`, `TimeSpan?`, `GUID` и `GUID?`.</span><span class="sxs-lookup"><span data-stu-id="9424b-120">provides explicit cast operators for the following data types: `string`, `bool`, `bool?`, `int`, `int?`, `uint`, `uint?`, `long`, `long?`, `ulong`, `ulong?`, `float`, `float?`, `double`, `double?`, `decimal`, `decimal?`, `DateTime`, `DateTime?`, `TimeSpan`, `TimeSpan?`, `GUID`, and `GUID?`.</span></span>  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <span data-ttu-id="af638-121">предусматривает операторы явного приведения для следующих типов данных: `string`, `bool`, `bool?`, `int`, `int?`, `uint`, `uint?`, `long`, `long?`, `ulong`, `ulong?`, `float`, `float?`, `double`, `double?`, `decimal`, `decimal?`, `DateTime`, `DateTime?`, `TimeSpan`, `TimeSpan?`, `GUID` и `GUID?`.</span><span class="sxs-lookup"><span data-stu-id="af638-121">provides explicit cast operators for the following data types: `string`, `bool`, `bool?`, `int`, `int?`, `uint`, `uint?`, `long`, `long?`, `ulong`, `ulong?`, `float`, `float?`, `double`, `double?`, `decimal`, `decimal?`, `DateTime`, `DateTime?`, `TimeSpan`, `TimeSpan?`, `GUID`, and `GUID?`.</span></span>  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]<span data-ttu-id="9424b-121">предоставляет аналогичные операторы приведения для объектов <xref:System.Xml.Linq.XAttribute>.</span><span class="sxs-lookup"><span data-stu-id="9424b-121">provides the same cast operators for <xref:System.Xml.Linq.XAttribute> objects.</span></span>  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]<span data-ttu-id="af638-122">предоставляет аналогичные операторы приведения для объектов <xref:System.Xml.Linq.XAttribute>.</span><span class="sxs-lookup"><span data-stu-id="af638-122">provides the same cast operators for <xref:System.Xml.Linq.XAttribute> objects.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="9424b-122">Пример</span><span class="sxs-lookup"><span data-stu-id="9424b-122">Example</span></span>  
- <span data-ttu-id="9424b-123">Свойство <xref:System.Xml.Linq.XElement.Value%2A> может использоваться для получения содержимого элемента.</span><span class="sxs-lookup"><span data-stu-id="9424b-123">You can use the <xref:System.Xml.Linq.XElement.Value%2A> property to retrieve the contents of an element:</span></span>  
+## <a name="value-property-example"></a><span data-ttu-id="af638-123">Пример приведения свойства</span><span class="sxs-lookup"><span data-stu-id="af638-123">Value property example</span></span>  
+ <span data-ttu-id="af638-124">Свойство <xref:System.Xml.Linq.XElement.Value%2A> может использоваться для получения содержимого элемента.</span><span class="sxs-lookup"><span data-stu-id="af638-124">You can use the <xref:System.Xml.Linq.XElement.Value%2A> property to retrieve the contents of an element:</span></span>  
   
 ```csharp  
 XElement e = new XElement("StringElement", "abcde");
@@ -59,15 +64,15 @@ Console.WriteLine(e);
 Console.WriteLine("Value of e:" + e.Value);  
 ```  
   
- <span data-ttu-id="9424b-124">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="9424b-124">This example produces the following output:</span></span>  
+ <span data-ttu-id="af638-125">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="af638-125">This example produces the following output:</span></span>  
   
 ```output  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  
   
-## <a name="example"></a><span data-ttu-id="9424b-125">Пример</span><span class="sxs-lookup"><span data-stu-id="9424b-125">Example</span></span>  
- <span data-ttu-id="9424b-126">Иногда осуществляются попытки получить значение элемента, в отношении которого неизвестно, существует ли он.</span><span class="sxs-lookup"><span data-stu-id="9424b-126">Sometimes you try to retrieve the value of an element even though you are not sure it exists.</span></span> <span data-ttu-id="9424b-127">В этом случае назначение типа значения или ссылочного типа, допускающих значение NULL, для приведенного элемента приводит к тому, что если элемент не существует, то переменной просто присваивается значение `null`.</span><span class="sxs-lookup"><span data-stu-id="9424b-127">In this case, when you assign the casted element to a nullable reference type, or nullable value type, if the element does not exist the assigned variable is just set to `null`.</span></span> <span data-ttu-id="9424b-128">В следующем коде показано, что при отсутствии сведений о том, существует ли элемент, проще использовать приведение типа, чем свойство <xref:System.Xml.Linq.XElement.Value%2A>.</span><span class="sxs-lookup"><span data-stu-id="9424b-128">The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.</span></span>  
+## <a name="element-might-not-exist-example"></a><span data-ttu-id="af638-126">Пример ситуации, когда элемент может не существовать</span><span class="sxs-lookup"><span data-stu-id="af638-126">Element might not exist example</span></span>
+ <span data-ttu-id="af638-127">Иногда осуществляются попытки получить значение элемента, в отношении которого неизвестно, существует ли он.</span><span class="sxs-lookup"><span data-stu-id="af638-127">Sometimes you try to retrieve the value of an element even though you're not sure if it exists.</span></span> <span data-ttu-id="af638-128">В этом случае назначение типа значения или ссылочного типа, допускающих значение NULL, для приведенного элемента приводит к тому, что если элемент не существует, то переменной присваивается значение `null`.</span><span class="sxs-lookup"><span data-stu-id="af638-128">In this case, when you assign the casted element to a nullable reference type or nullable value type, if the element does not exist, the assigned variable is set to `null`.</span></span> <span data-ttu-id="af638-129">В следующем коде показано, что при отсутствии сведений о том, существует ли элемент, проще использовать приведение типа, чем свойство <xref:System.Xml.Linq.XElement.Value%2A>.</span><span class="sxs-lookup"><span data-stu-id="af638-129">The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.</span></span>  
   
 ```csharp  
 XElement root = new XElement("Root",  
@@ -129,7 +134,7 @@ else
 Console.WriteLine("v4:{0}", v4 == null ? "element does not exist" : v4.ToString());  
 ```  
   
- <span data-ttu-id="9424b-129">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="9424b-129">This code produces the following output:</span></span>  
+ <span data-ttu-id="af638-130">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="af638-130">This code produces the following output:</span></span>  
   
 ```output  
 c1:child 1 content  
@@ -143,8 +148,8 @@ v3:element does not exist
 v4:element does not exist  
 ```  
   
- <span data-ttu-id="9424b-130">Как правило, использование приведения для получения содержимого элементов и атрибутов позволяет создавать более простой код.</span><span class="sxs-lookup"><span data-stu-id="9424b-130">In general, you can write simpler code when using casting to retrieve the contents of elements and attributes.</span></span>  
+ <span data-ttu-id="af638-131">Как правило, использование приведения для получения содержимого элементов и атрибутов позволяет создавать более простой код.</span><span class="sxs-lookup"><span data-stu-id="af638-131">In general, you can write simpler code when using casting to retrieve the contents of elements and attributes.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="9424b-131">См. также</span><span class="sxs-lookup"><span data-stu-id="9424b-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af638-132">См. также</span><span class="sxs-lookup"><span data-stu-id="af638-132">See also</span></span>
 
-- [<span data-ttu-id="9424b-132">Оси LINQ to XML (C#)</span><span class="sxs-lookup"><span data-stu-id="9424b-132">LINQ to XML Axes (C#)</span></span>](./linq-to-xml-axes-overview.md)
+- [<span data-ttu-id="af638-133">Оси LINQ to XML (C#)</span><span class="sxs-lookup"><span data-stu-id="af638-133">LINQ to XML Axes (C#)</span></span>](./linq-to-xml-axes-overview.md)
