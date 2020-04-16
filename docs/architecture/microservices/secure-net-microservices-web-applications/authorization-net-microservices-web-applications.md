@@ -3,12 +3,12 @@ title: Об авторизации в веб-приложениях и микр�
 description: Безопасность в микрослужбах .NET и веб-приложениях. Ознакомьтесь с общими сведениями о параметрах авторизации на основе ролей и на основе политик в приложениях ASP.NET Core.
 author: mjrousos
 ms.date: 01/30/2020
-ms.openlocfilehash: f6b69faceac9a9b4819212cc04f89080f3ddad56
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 27936a33ea2bb46cedb9d10ee47a2117e1843e14
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77501769"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80988210"
 ---
 # <a name="about-authorization-in-net-microservices-and-web-applications"></a>Об авторизации в веб-приложениях и микрослужбах .NET
 

@@ -2,12 +2,12 @@
 title: Когда следует развертывать контейнеры Windows в Службе контейнеров Azure (то есть, Kubernetes)
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Когда следует развертывать контейнеры Windows в службе контейнеров Azure (то есть, Kubernetes)
 ms.date: 04/30/2018
-ms.openlocfilehash: 903082deba635dd0dfc22d0186fbc589f8d05b92
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3ff51a70d4e158b831155ab4992ec32f5d98cedb
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69577947"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987768"
 ---
 # <a name="when-to-deploy-windows-containers-to-azure-container-service-that-is-kubernetes"></a>Когда следует развертывать контейнеры Windows в Службе контейнеров Azure (то есть, Kubernetes)
 

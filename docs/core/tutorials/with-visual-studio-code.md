@@ -3,12 +3,12 @@ title: Начало работы с C# и Visual Studio Code
 description: Узнайте, как создать и отладить в Visual Studio Code свое первое приложение .NET Core на языке C#.
 author: kendrahavens
 ms.date: 12/05/2018
-ms.openlocfilehash: 49a1271f2bf74224e189e70bebf0d22c49408e5d
-ms.sourcegitcommit: 267d092663aba36b6b2ea853034470aea493bfae
+ms.openlocfilehash: 6722b97cee5ca3672c9dddece6e61f4d13de05a9
+ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80111066"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80805814"
 ---
 # <a name="get-started-with-c-and-visual-studio-code"></a>Начало работы с C# и Visual Studio Code
 
@@ -34,7 +34,7 @@ ms.locfileid: "80111066"
 
 2. Инициализируйте проект C#.
 
-    - Откройте в Visual Studio Code интегрированный терминал, выбрав **Просмотр** > **Интегрированный терминал** в главном меню.
+    - Откройте в Visual Studio Code терминал, выбрав **Просмотр** > **Терминал** в главном меню.
     - В окне терминала введите `dotnet new console`.
     - Эта команда создает в выбранной папке файл *Program.cs* с уже готовой простой программой Hello World, а также файл проекта C# с именем *HelloWorld.csproj*.
 

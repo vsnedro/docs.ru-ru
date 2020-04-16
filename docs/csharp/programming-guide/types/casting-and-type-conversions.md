@@ -9,12 +9,12 @@ helpviewer_keywords:
 - casting [C#]
 - converting types [C#]
 ms.assetid: 568df58a-d292-4b55-93ba-601578722878
-ms.openlocfilehash: 252d509617ab5dbc53b282bac52e356396d82fab
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ae8f18deff5e96d7e475df8814ad64b38d14d585
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75711900"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121394"
 ---
 # <a name="casting-and-type-conversions-c-programming-guide"></a>Руководство по программированию на C#. Приведение и преобразование типов
 
@@ -29,7 +29,7 @@ i = "Hello"; // error CS0029: Cannot implicitly convert type 'string' to 'int'
   
 - **Неявные преобразования**. Специальный синтаксис не требуется, так как преобразование является строго типизированным и данные не будут потеряны. Примеры включают преобразования из меньших в большие целочисленные типы и преобразования из производных классов в базовые классы.  
   
-- **Явные преобразования (приведения)** . Для явных преобразований требуется [оператор приведения `()`](../../language-reference/operators/type-testing-and-cast.md#cast-operator-). Приведение требуется, если в ходе преобразования данные могут быть утрачены или преобразование может завершиться сбоем по другим причинам. Типичными примерами являются числовое преобразование в тип с меньшей точностью или меньшим диапазоном и преобразование экземпляра базового класса в производный класс.  
+- **Явные преобразования (приведения)** . Для явных преобразований требуется [выражение приведения](../../language-reference/operators/type-testing-and-cast.md#cast-expression). Приведение требуется, если в ходе преобразования данные могут быть утрачены или преобразование может завершиться сбоем по другим причинам. Типичными примерами являются числовое преобразование в тип с меньшей точностью или меньшим диапазоном и преобразование экземпляра базового класса в производный класс.  
   
 - **Пользовательские преобразования**. Такие преобразования выполняются специальными методами, которые можно определить для включения явных и неявных преобразований между пользовательскими типами без связи "базовый класс — производный класс". Дополнительные сведения см. в разделе [Операторы пользовательского преобразования](../../language-reference/operators/user-defined-conversion-operators.md).  
   
@@ -92,7 +92,7 @@ Giraffe g2 = (Giraffe) a;
 
 - [Руководство по программированию на C#](../index.md)
 - [Типы](./index.md)
-- [Оператор приведения ()](../../language-reference/operators/type-testing-and-cast.md#cast-operator-)
+- [Выражение приведения](../../language-reference/operators/type-testing-and-cast.md#cast-expression)
 - [Операторы пользовательского преобразования](../../language-reference/operators/user-defined-conversion-operators.md)
 - [Обобщенное преобразование типов](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
 - [Практическое руководство. Преобразование строки в число](./how-to-convert-a-string-to-a-number.md)

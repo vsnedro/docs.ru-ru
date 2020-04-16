@@ -2,12 +2,12 @@
 title: Обзор пошаговых руководств и технических описаний по началу работы
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Обзор пошаговых руководств и технических описаний по началу работы
 ms.date: 04/28/2018
-ms.openlocfilehash: 190b33c4307b09bab0543d481e66ac9328074a0d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cff418d9b6e931a3082d8a2f8b818e7275139578
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69660886"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987873"
 ---
 # <a name="walkthroughs-and-technical-get-started-overview"></a>Обзор пошаговых руководств и технических описаний по началу работы
 
@@ -62,7 +62,7 @@ ms.locfileid: "69660886"
 
 ![Приложения ASP.NET MVC ASP.NET MVC и веб-форм ASP.NET (имеющиеся и устаревшие технологии)](./media/image5-2.png)
 
-Наличие зависимостей в ASP.NET 4.x или более ранних версиях (для MVC или для веб-форм) означает, что эти приложения не будут работать в .NET Core, если код не будет полностью переписан с использованием ASP.NET Core MVC.
+Наличие зависимостей в ASP.NET 4.x или более ранних версиях (для MVC или для веб-форм) означает, что эти приложения не будут работать в .NET Core, если код не будет полностью переписан с использованием MVC ASP.NET Core.
 
 ### <a name="scenario-2-wcf-service-and-winforms-client-app-3-tier-app"></a>Сценарий 2. Служба WCF и клиентское приложение WinForms (3-уровневое)
 

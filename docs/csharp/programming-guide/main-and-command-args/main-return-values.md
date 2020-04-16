@@ -4,12 +4,12 @@ ms.date: 08/02/2017
 helpviewer_keywords:
 - Main method [C#], return values
 ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
-ms.openlocfilehash: 3d97ab2b3f53179cb184f2ad3944ea29ff5566a2
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 7061b6c1988da9f6dfac115ee555a914531df863
+ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80345127"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80805923"
 ---
 # <a name="main-return-values-c-programming-guide"></a>Значения, возвращаемые методом Main() (Руководство по программированию на C#)
 
@@ -25,7 +25,7 @@ ms.locfileid: "80345127"
 
 ## <a name="example"></a>Пример
 
-В этом примере используются средства командной строки [.NET Core](../../../core/index.yml). Если вы не знакомы со средствами командной строки .NET Core, можете обратиться к [этому руководству по началу работы](../../../core/tutorials/cli-create-console-app.md).
+В этом примере используются программы командной строки [.NET Core](../../../core/index.yml). Если вы не знакомы с программами командной строки .NET Core, можете обратиться к [этой статье по началу работы](../../../core/tutorials/cli-create-console-app.md).
 
 Измените метод `Main` в файле *program.cs* следующим образом:
 
@@ -83,7 +83,7 @@ private static async Task<int> AsyncConsoleWork()
 
 Преимущество нового синтаксиса состоит в том, что компилятор всегда формирует правильный код.
 
-## <a name="compiler-generated-code"></a>Код, созданный компилятором
+## <a name="compiler-generated-code"></a>Код, создаваемый компилятором
 
 Если точка входа приложения возвращает `Task` или `Task<int>`, то компилятор создает новую точку входа, которая вызывает метод точки входа, объявленный в коде приложения. Предположим, что эта точка входа называется `$GeneratedMain`. В этом случае компилятор создает следующий код для этих точек входа:
 

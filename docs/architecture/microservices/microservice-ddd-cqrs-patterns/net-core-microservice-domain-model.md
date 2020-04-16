@@ -2,12 +2,12 @@
 title: Реализация модели предметной области микрослужбы с помощью .NET Core
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Сведения о реализации модели предметной области, ориентированной на DDD.
 ms.date: 10/08/2018
-ms.openlocfilehash: bff9cbda08e519038056268151a1721427f0ac01
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 24f700b371d998cf99cbcf260a5278d797cb39d4
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73972043"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80988431"
 ---
 # <a name="implement-a-microservice-domain-model-with-net-core"></a>Реализация модели предметной области микрослужбы с помощью .NET Core
 
@@ -23,7 +23,7 @@ ms.locfileid: "73972043"
 
 **Рис. 7-10**. Структура модели предметной области для микрослужбы размещения заказов в eShopOnContainers
 
-Кроме того, уровень модели предметной области включает в себя контракты репозиториев (интерфейсы), которые представляют требования к инфраструктуре, предъявляемые моделью предметной области. Иными словами, эти интерфейсы описывают то, какие репозитории и методы должен реализовывать уровень инфраструктуры. Важным требованием является реализация репозиториев вне уровня модели предметной области, а именно в библиотеке уровня инфраструктуры, чтобы уровень модели предметной области не "засорялся" интерфейсами API или классами, связанными с технологиями инфраструктуры, такими как Entity Framework.
+Кроме того, уровень модели предметной области включает в себя контракты репозиториев (интерфейсы), которые представляют требования к инфраструктуре, предъявляемые моделью предметной области. Иными словами, эти интерфейсы описывают то, какие репозитории и методы должен реализовывать уровень инфраструктуры. Важным требованием является реализация репозиториев вне уровня модели предметной области, а именно в библиотеке уровня инфраструктуры, чтобы уровень модели предметной области не "засорялся" интерфейсами API или классами, связанными с технологиями инфраструктуры, такими как Entity Framework.
 
 Обратите также внимание на папку [SeedWork](https://martinfowler.com/bliki/Seedwork.html), содержащую пользовательские базовые классы, которые можно использовать в качестве основы для сущностей предметной области и объектов значений, чтобы избежать избыточного кода в каждом классе объекта предметной области.
 
@@ -139,7 +139,7 @@ myOrder.OrderItems.Add(myNewOrderItem);
 ```csharp
 // RIGHT ACCORDING TO DDD--CODE AT THE APPLICATION LAYER OR COMMAND HANDLERS
 // The code in command handlers or WebAPI controllers, related only to application stuff
-// There is NO code here related to OrderItem object’s business logic
+// There is NO code here related to OrderItem object's business logic
 myOrder.AddOrderItem(productId, productName, pictureUrl, unitPrice, discount, units);
 
 // The code related to OrderItem params validations or domain rules should

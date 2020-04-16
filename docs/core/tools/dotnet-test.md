@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 02/27/2020
-ms.openlocfilehash: a11814f9fdc6326e681a09d7d2654b968014f318
-ms.sourcegitcommit: 2514f4e3655081dcfe1b22470c0c28500f952c42
+ms.openlocfilehash: 359e4522b26e2b59092d55eea3fca575d2afaf1f
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507312"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121042"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -85,7 +85,7 @@ dotnet test [-h|--help]
 
 - **`l|--logger <LoggerUri/FriendlyName>`**
 
-  Указывает средство ведения журнала для результатов тестирования.
+  Указывает средство ведения журнала для результатов тестирования. В отличие от MSBuild, dotnet test не принимает аббревиатуры: вместо `-l "console;v=d"` используйте `-l "console;verbosity=detailed"`.
 
 - **`--no-build`**
 
@@ -121,7 +121,7 @@ dotnet test [-h|--help]
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Задает уровень детализации команды. Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`.
+  Задает уровень детализации команды. Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`. Значение по умолчанию — `minimal`. Для получения дополнительной информации см. <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
 - Аргументы `RunSettings`
 
@@ -145,10 +145,16 @@ dotnet test [-h|--help]
   dotnet test ~/projects/test1/test1.csproj
   ```
 
-- Выполнение тестов в проекте в текущем каталоге и создание файл результатов теста в формате trx:
+- Выполнение тестов в проекте в текущем каталоге и создание файла результатов теста в формате TRX:
 
   ```dotnetcli
   dotnet test --logger trx
+  ```
+
+- Выполнение тестов в проекте в текущем каталоге и вывод журнала с подробными сведениями в консоль:
+
+  ```dotnetcli
+  dotnet test --logger "console;verbosity=detailed"
   ```
 
 ## <a name="filter-option-details"></a>Сведения о параметре "Фильтр"
@@ -192,3 +198,4 @@ dotnet test [-h|--help]
 
 - [Платформы и целевые объекты](../../standard/frameworks.md)
 - [Каталог идентификаторов сред выполнения (RID) в .NET Core](../rid-catalog.md)
+- [Передача аргументов runsettings через командную строку](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)

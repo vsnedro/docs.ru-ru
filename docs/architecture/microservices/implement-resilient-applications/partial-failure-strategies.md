@@ -2,12 +2,12 @@
 title: Стратегии для обработки частичного сбоя
 description: Узнайте о нескольких стратегиях правильной обработки частичных сбоев.
 ms.date: 10/16/2018
-ms.openlocfilehash: e96fe99ab44b924460e01abaad30aa3e2432117a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: abf87df5afed02b4d794a1307a0ed943cafb4db3
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "68674511"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80988808"
 ---
 # <a name="strategies-to-handle-partial-failure"></a>Стратегии обработки частичного сбоя
 

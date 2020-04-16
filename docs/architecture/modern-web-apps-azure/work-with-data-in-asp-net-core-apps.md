@@ -4,12 +4,12 @@ description: Разработка современных веб-приложен
 author: ardalis
 ms.author: wiwagn
 ms.date: 12/04/2019
-ms.openlocfilehash: 5a38ca94b6df676858e7cb058272e450aaf1572e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b706332b28aec669a841f510046aa7b185be1373
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78241043"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987846"
 ---
 # <a name="working-with-data-in-aspnet-core-apps"></a>Работа с данными в приложениях ASP.NET Core
 
@@ -130,7 +130,7 @@ var brandsWithItems = await _context.CatalogBrands
 С помощью ThenInclude можно включить несколько отношений, а также вложенные отношения. EF Core выполнит один запрос для извлечения результирующего набора сущностей. Кроме того, вы можете включить свойства навигации, передав строку с разделением "." в метод расширения `.Include()` следующим образом:
 
 ```csharp
-    .Include(“Items.Products”)
+    .Include("Items.Products")
 ```
 
 Помимо инкапсуляции логики фильтрации, эта спецификация может указывать форму возвращаемых данных, включая свойства, которые следует заполнить. Пример приложения eShopOnWeb содержит несколько спецификаций, которые демонстрируют сведения об инкапсулирующей безотложной загрузке в спецификации. Вы видите, как спецификация используется в рамках запроса:

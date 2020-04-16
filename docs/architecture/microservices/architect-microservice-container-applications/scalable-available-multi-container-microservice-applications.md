@@ -2,12 +2,12 @@
 title: Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности
 description: Описание вариантов управления микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности и возможностей Azure Dev Spaces при разработке жизненного цикла приложений Kubernetes.
 ms.date: 01/30/2020
-ms.openlocfilehash: ea204941a461794fbeeb2482aa11973b79437027
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8a67235109bed806caa7d9caa2bc26fd4fe9daca
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77628505"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80988912"
 ---
 # <a name="orchestrate-microservices-and-multi-container-applications-for-high-scalability-and-availability"></a>Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности
 
@@ -38,7 +38,7 @@ ms.locfileid: "77628505"
 |     |   |
 |:---:|---|
 | **Kubernetes** <br> ![Изображение логотипа Kubernetes.](./media/scalable-available-multi-container-microservice-applications/kubernetes-container-orchestration-system-logo.png) | [*Kubernetes*](https://kubernetes.io/) — это решение с открытым кодом, которое предоставляет широкий ряд возможностей: от организации инфраструктуры кластера и планирования контейнеров до оркестрации. Оно позволяет автоматизировать развертывание, масштабирование и выполнение операций с контейнерами приложений в кластерах узлов. <br><br> *Kubernetes* предоставляет ориентированную на контейнеры инфраструктуру, которая объединяет контейнеры приложений в логические блоки, чтобы упростить управление и обнаружение. <br><br> Решение *Kubernetes* является зрелым в Linux и менее зрелым в Windows. |
-| **Служба Azure Kubernetes (AKS)** <br> ![Изображение логотипа службы Azure Kubernetes.](./media/scalable-available-multi-container-microservice-applications/azure-kubernetes-service-logo.png) | [AKS](https://azure.microsoft.com/services/kubernetes-service/) — это управляемая служба оркестрации контейнеров Kubernetes в Azure, которая упрощает администрирование, развертывание и эксплуатацию кластера Kubernetes. |
+| **Служба Azure Kubernetes (AKS)** <br> ![Изображение логотипа службы Azure Kubernetes.](./media/scalable-available-multi-container-microservice-applications/azure-kubernetes-service-logo.png) | [AKS](https://azure.microsoft.com/services/kubernetes-service/) — это управляемая служба оркестрации контейнеров Kubernetes в Azure, которая упрощает администрирование, развертывание и эксплуатацию кластера Kubernetes. |
 
 ## <a name="using-container-based-orchestrators-in-microsoft-azure"></a>Использование оркестраторов на основе контейнеров в Microsoft Azure
 

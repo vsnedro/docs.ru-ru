@@ -32,12 +32,12 @@ helpviewer_keywords:
 - uint keyword [C#]
 - long keyword [C#]
 - ulong keyword [C#]
-ms.openlocfilehash: 394a809a9a2f45f4aee652d0eca892f62f0f2e54
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4b2506f48c3e72ff838a07087c8c5d9ea63bb46c
+ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77093205"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81121470"
 ---
 # <a name="integral-numeric-types--c-reference"></a>Целочисленные типы (справочник по C#)
 
@@ -51,9 +51,9 @@ C# поддерживает следующие предварительно оп
 |----------|-----------|----------|-------------|
 |`sbyte`|От -128 до 127|8-разрядное целое число со знаком|<xref:System.SByte?displayProperty=nameWithType>|
 |`byte`|От 0 до 255|8-разрядное целое число без знака|<xref:System.Byte?displayProperty=nameWithType>|
-|`short`|От −32 768 до 32 767|16-разрядное целое число со знаком|<xref:System.Int16?displayProperty=nameWithType>|
+|`short`|От -32 768 до 32 767|16-разрядное целое число со знаком|<xref:System.Int16?displayProperty=nameWithType>|
 |`ushort`|От 0 до 65 535|16-разрядное целое число без знака|<xref:System.UInt16?displayProperty=nameWithType>|
-|`int`|От −2 147 483 648 до 2 147 483 647|32-разрядное целое число со знаком|<xref:System.Int32?displayProperty=nameWithType>|
+|`int`|От -2 147 483 648 до 2 147 483 647|32-разрядное целое число со знаком|<xref:System.Int32?displayProperty=nameWithType>|
 |`uint`|От 0 до 4 294 967 295|32-разрядное целое число без знака|<xref:System.UInt32?displayProperty=nameWithType>|
 |`long`|От -9 223 372 036 854 775 808 до 9 223 372 036 854 775 807|64-разрядное целое число со знаком|<xref:System.Int64?displayProperty=nameWithType>|
 |`ulong`|От 0 до 18 446 744 073 709 551 615|64-разрядное целое число без знака|<xref:System.UInt64?displayProperty=nameWithType>|
@@ -118,7 +118,7 @@ var longVariable = (long)42;
 
 ## <a name="conversions"></a>Преобразования
 
-Любой целочисленный тип можно преобразовать в любой другой целочисленный тип. Если целевой тип может хранить все значения исходного типа, преобразование является неявным. В противном случае используйте [оператор приведения `()`](../operators/type-testing-and-cast.md#cast-operator-) для вызова явного преобразования. Для получения дополнительной информации см. статью [Встроенные числовые преобразования](numeric-conversions.md).
+Любой целочисленный тип можно преобразовать в любой другой целочисленный тип. Если целевой тип может хранить все значения исходного типа, преобразование является неявным. В противном случае необходимо использовать [выражение приведения](../operators/type-testing-and-cast.md#cast-expression) для выполнения явного преобразования. Для получения дополнительной информации см. статью [Встроенные числовые преобразования](numeric-conversions.md).
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
@@ -127,7 +127,7 @@ var longVariable = (long)42;
 - [Целочисленные типы](~/_csharplang/spec/types.md#integral-types)
 - [Целочисленные литералы](~/_csharplang/spec/lexical-structure.md#integer-literals)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
 - [Типы значений](value-types.md)

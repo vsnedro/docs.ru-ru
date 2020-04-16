@@ -2,12 +2,12 @@
 title: Реализация фоновых задач в микрослужбах с помощью IHostedService и класса BackgroundService
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Новые варианты использования IHostedService и BackgroundService для реализации фоновых задач в микрослужбах .NET Core.
 ms.date: 01/30/2020
-ms.openlocfilehash: fab67c816e90c69a4d593422b4974cb9b8819807
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fd26d0444312d3525ad95b2273f28a6ceaa27911
+ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77502313"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80988340"
 ---
 # <a name="implement-background-tasks-in-microservices-with-ihostedservice-and-the-backgroundservice-class"></a>Реализация фоновых задач в микрослужбах с помощью IHostedService и класса BackgroundService
 
@@ -45,7 +45,7 @@ ASP.NET Core версий 1.x и 2.x поддерживает `IWebHost` для
 
 Выполнение любого из этих действий можно перенести в фоновую задачу, которая реализует `IHostedService`.
 
-Для добавления одного или нескольких экземпляров `IHostedServices` в `WebHost` или `Host` их следует зарегистрировать посредством метода расширения<xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>  в классе ASP.NET Core `WebHost` (или в классе `Host` в .NET Core 2.1 и более поздних версий). Фактически размещенные службы регистрируются в известном методе `ConfigureServices()` класса `Startup`, как в следующем коде типичного класса ASP.NET WebHost:
+Для добавления одного или нескольких экземпляров `IHostedServices` в `WebHost` или `Host` их следует зарегистрировать посредством метода расширения <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> в классе ASP.NET Core `WebHost` (или в классе `Host` в .NET Core 2.1 и более поздних версий). Фактически размещенные службы регистрируются в известном методе `ConfigureServices()` класса `Startup`, как в следующем коде типичного класса ASP.NET WebHost:
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -178,7 +178,7 @@ public class GracePeriodManagerService : BackgroundService
                                      IEventBus eventBus,
                                      ILogger<GracePeriodManagerService> logger)
     {
-        //Constructor’s parameters validations...
+        // Constructor's parameters validations...
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -228,7 +228,7 @@ WebHost.CreateDefaultBuilder(args)
 
 **Рис. 6-27**. Диаграмма классов и интерфейсов, связанных с IHostedService
 
-Схема классов: IWebHost и IHost могут разместить много служб, наследующих от BackgroundService, который реализует IHostedService.
+Диаграмма классов: IWebHost и IHost могут разместить много служб, наследующих от BackgroundService, который реализует IHostedService.
 
 ### <a name="deployment-considerations-and-takeaways"></a>Основные положения и моменты, связанные с развертыванием
 
@@ -240,15 +240,15 @@ WebHost.CreateDefaultBuilder(args)
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- **Building a scheduled task in ASP.NET Core/Standard 2.0** \ (Создание запланированной задачи в ASP.NET Core или Standard 2.0)
+- **Building a scheduled task in ASP.NET Core/Standard 2.0** (Создание запланированной задачи в ASP.NET Core или Standard 2.0) \
   <https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html>
 
-- **Implementing IHostedService in ASP.NET Core 2.0** \ (Реализация интерфейса IHostedService в ASP.NET Core 2.0)
+- **Implementing IHostedService in ASP.NET Core 2.0** (Реализация интерфейса IHostedService в ASP.NET Core 2.0) \
   <https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice>
 
 - **Пример GenericHost с ASP.NET Core 2.1** \
   <https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample>
 
->[!div class="step-by-step"]
->[Назад](test-aspnet-core-services-web-apps.md)
->[Вперед](implement-api-gateways-with-ocelot.md)
+> [!div class="step-by-step"]
+> [Назад](test-aspnet-core-services-web-apps.md)
+> [Вперед](implement-api-gateways-with-ocelot.md)
