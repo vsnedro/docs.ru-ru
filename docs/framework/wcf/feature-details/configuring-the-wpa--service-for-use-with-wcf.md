@@ -2,12 +2,12 @@
 title: Настройка службы активации процессов Windows для использования с Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
-ms.openlocfilehash: 2da2653f3d2bd3d998b0ebbe87ea33760315f7df
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 86e50b80d84479ca32b3d4d1fe3f205983640c76
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185305"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464172"
 ---
 # <a name="configuring-the-windows-process-activation-service-for-use-with-windows-communication-foundation"></a>Настройка службы активации процессов Windows для использования с Windows Communication Foundation
 В этой теме описаны шаги, необходимые для настройки службы активации процессов Windows (также известной как WAS) в Windows Vista для размещения служб Windows Communication Foundation (WCF), которые не передаются по сетевым протоколам HTTP. Настройка предполагает следующие шаги.  
@@ -59,11 +59,11 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
 ```xml  
 <sites>  
     <site name="Default Web Site" id="1">  
-    <application path="/">  
+      <application path="/">  
         <virtualDirectory path="/" physicalPath="D:\inetpub\wwwroot" />  
-    </application>  
-       <bindings>  
-            //The following two lines are added by the command.  
+      </application>  
+      <bindings>  
+            <!-- The following two lines are added by the command. -->
             <binding protocol="HTTP" bindingInformation="*:80:" />  
             <binding protocol="net.tcp" bindingInformation="808:*" />  
        </bindings>  
@@ -77,7 +77,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
     </siteDefaults>  
     <applicationDefaults
       applicationPool="DefaultAppPool"
-      //The following line is inserted by the command.  
+      <!-- The following line is inserted by the command. -->
       enabledProtocols="http, net.tcp" />  
     <virtualDirectoryDefaults allowSubDirConfig="true" />  
 </sites>  
@@ -96,7 +96,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
   
  Для получения подробных инструкций о создании службы WCF, активированной В АСВ, [см.](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение в службе активации процессов Windows](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md)
 - [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

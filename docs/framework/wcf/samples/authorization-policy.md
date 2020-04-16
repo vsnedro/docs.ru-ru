@@ -2,16 +2,16 @@
 title: Политика авторизации
 ms.date: 03/30/2017
 ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
-ms.openlocfilehash: 9b73eea1f51454dd82ba577c4d4d5fd5a1c0efd4
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: 36ec1029c8fed57957eb463808de442e74abdf9c
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70990193"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463949"
 ---
 # <a name="authorization-policy"></a>Политика авторизации
 
-В этом образце показано, как реализовать пользовательскую политику авторизации утверждений и связанный с ней пользовательский диспетчер авторизации службы. Это бывает удобно, если служба осуществляет проверку прав доступа к операциям службы на основании утверждений и предоставляет вызывающей стороне определенные права, прежде чем проверить права доступа. В этом образце показан процесс добавления утверждений, а также процесс проверки прав доступа с использованием готового набора утверждений. Все сообщения приложений, которыми обмениваются служба и клиент, подписываются и шифруются. По умолчанию при использовании привязки `wsHttpBinding` для входа от имени действующей учетной записи Windows NT используются предоставляемые клиентом имя пользователя и пароль. В этом образце показано, как проверять подлинность клиента с помощью пользовательского объекта <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. Кроме того, в этом образце показана проверка подлинности клиента на стороне службы с использованием сертификата X.509. Этот образец показывает реализацию объектов <xref:System.IdentityModel.Policy.IAuthorizationPolicy> и <xref:System.ServiceModel.ServiceAuthorizationManager>, которые между собой предоставляют заданным пользователям доступ к определенным методам службы. Этот пример основан на [имени пользователя безопасности сообщений](../../../../docs/framework/wcf/samples/message-security-user-name.md), но демонстрирует, как выполнить преобразование утверждения перед <xref:System.ServiceModel.ServiceAuthorizationManager> вызовом.
+В этом образце показано, как реализовать пользовательскую политику авторизации утверждений и связанный с ней пользовательский диспетчер авторизации службы. Это бывает удобно, если служба осуществляет проверку прав доступа к операциям службы на основании утверждений и предоставляет вызывающей стороне определенные права, прежде чем проверить права доступа. В этом образце показан процесс добавления утверждений, а также процесс проверки прав доступа с использованием готового набора утверждений. Все сообщения приложений, которыми обмениваются служба и клиент, подписываются и шифруются. По умолчанию при использовании привязки `wsHttpBinding` для входа от имени действующей учетной записи Windows NT используются предоставляемые клиентом имя пользователя и пароль. В этом образце показано, как проверять подлинность клиента с помощью пользовательского объекта <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. Кроме того, в этом образце показана проверка подлинности клиента на стороне службы с использованием сертификата X.509. Этот образец показывает реализацию объектов <xref:System.IdentityModel.Policy.IAuthorizationPolicy> и <xref:System.ServiceModel.ServiceAuthorizationManager>, которые между собой предоставляют заданным пользователям доступ к определенным методам службы. Этот пример основан на [имени пользователя Безопасности сообщений,](../../../../docs/framework/wcf/samples/message-security-user-name.md)но демонстрирует, <xref:System.ServiceModel.ServiceAuthorizationManager> как выполнить преобразование претензии до вызова.
 
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.
@@ -30,7 +30,7 @@ ms.locfileid: "70990193"
 
 - Реализация политики <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.
 
-Служба предоставляет две конечные точки для взаимодействия со службой, определенной в файле конфигурации App.config. Каждая конечная точка состоит из адреса, привязки и контракта. Одна привязка настраивается с помощью стандартной привязки `wsHttpBinding`, использующей протокол WS-Security и проверку подлинности имени пользователя клиента. Вторая привязка настраивается с помощью стандартной привязки `wsHttpBinding`, использующей протокол WS-Security и проверку подлинности сертификата клиента. > Поведения указывает, что учетные данные пользователя должны использоваться для проверки подлинности служб. [ \<](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) Сертификат сервера должен содержать то же значение для `SubjectName` свойства, `findValue` что и атрибут в [ \<> serviceCertificate](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
+Служба предоставляет две конечные точки для взаимодействия с ней; они определены в файле конфигурации App.config. Каждая конечная точка состоит из адреса, привязки и контракта. Одна привязка настраивается с помощью стандартной привязки `wsHttpBinding`, использующей протокол WS-Security и проверку подлинности имени пользователя клиента. Вторая привязка настраивается с помощью стандартной привязки `wsHttpBinding`, использующей протокол WS-Security и проверку подлинности сертификата клиента. [ \<Поведение>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) указывает, что учетные данные пользователя должны использоваться для проверки подлинности службы. Сертификат сервера должен содержать такое же значение для `SubjectName` свойства, как `findValue` и атрибут в [ \<сервисномСертификате>. ](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)
 
 ```xml
 <system.serviceModel>
@@ -117,7 +117,7 @@ ms.locfileid: "70990193"
 </system.serviceModel>
 ```
 
-Конфигурация каждой из конечных точек клиента состоит из имени конфигурации, абсолютного адреса конечной точки службы, привязки и контракта. Привязка клиента настраивается с использованием соответствующего режима безопасности, как указано в этом случае в [ \<> безопасности](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) и `clientCredentialType` [ \<в > сообщения](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md).
+Конфигурация каждой из конечных точек клиента состоит из имени конфигурации, абсолютного адреса конечной точки службы, привязки и контракта. Привязка клиента настроена с соответствующим режимом безопасности, указанным в данном случае в [ \<>безопасности](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) и `clientCredentialType` как указано в [ \<сообщении>. ](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md)
 
 ```xml
 <system.serviceModel>
@@ -261,17 +261,17 @@ public class MyCustomUserNamePasswordValidator : UserNamePasswordValidator
 }
 ```
 
-После реализации в коде службы проверяющего элемента управления необходимо проинформировать узел службы о проверяющем элементе управления, который следует использовать. Это делается с помощью следующего кода:
+После реализации в коде службы проверяющего элемента управления необходимо проинформировать узел службы о проверяющем элементе управления, который следует использовать. Это делается с использованием следующего кода:
 
 ```csharp
 Servicehost.Credentials.UserNameAuthentication.UserNamePasswordValidationMode = UserNamePasswordValidationMode.Custom;
 serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator = new MyCustomUserNamePasswordValidatorProvider();
 ```
 
-Вы также можете сделать то же самое в конфигурации:
+Или вы можете сделать то же самое в конфигурации:
 
 ```xml
-<behavior ...>
+<behavior>
     <serviceCredentials>
       <!--
       The serviceCredentials behavior allows one to specify a custom validator for username/password combinations.
@@ -282,9 +282,9 @@ serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator =
 </behavior>
 ```
 
-Windows Communication Foundation (WCF) предоставляет обширную модель на основе утверждений для выполнения проверок доступа. Для контроля прав доступа и проверки, удовлетворяют ли связанные с клиентом удостоверения требованиям, необходимым для доступа к методу службы, используется объект <xref:System.ServiceModel.ServiceAuthorizationManager>.
+Windows Communication Foundation (WCF) предоставляет богатую модель, основанную на претензиях, для выполнения проверок доступа. Для контроля прав доступа и проверки, удовлетворяют ли связанные с клиентом удостоверения требованиям, необходимым для доступа к методу службы, используется объект <xref:System.ServiceModel.ServiceAuthorizationManager>.
 
-Для демонстрации в этом примере показана реализация <xref:System.ServiceModel.ServiceAuthorizationManager> , которая <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> реализует метод, чтобы разрешить пользователю доступ к методам на основе утверждений типа `http://example.com/claims/allowedoperation` , значение которых является универсальным кодом ресурса (URI) операции, разрешено вызывать.
+Для демонстрации в этом примере показана <xref:System.ServiceModel.ServiceAuthorizationManager> <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> реализация, которая реализует метод, позволяющий пользователю получить `http://example.com/claims/allowedoperation` доступ к методам на основе утверждений типа, значение которых является действием URI операции, которое разрешено вызывать.
 
 ```csharp
 public class MyServiceAuthorizationManager : ServiceAuthorizationManager
@@ -313,7 +313,7 @@ public class MyServiceAuthorizationManager : ServiceAuthorizationManager
 После реализации пользовательского объекта <xref:System.ServiceModel.ServiceAuthorizationManager> необходимо проинформировать узел службы об объекте<xref:System.ServiceModel.ServiceAuthorizationManager>, который следует использовать. Это можно сделать с помощью следующего фрагмента кода.
 
 ```xml
-<behavior ...>
+<behavior>
     ...
     <serviceAuthorization serviceAuthorizationManagerType="Microsoft.ServiceModel.Samples.MyServiceAuthorizationManager, service">
         ...
@@ -382,7 +382,7 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 После реализации интерфейса <xref:System.IdentityModel.Policy.IAuthorizationPolicy> необходимо проинформировать узел службы о политиках авторизации, которые следует использовать.
 
 ```xml
-<serviceAuthorization ...>
+<serviceAuthorization>
        <authorizationPolicies>
             <add policyType='Microsoft.ServiceModel.Samples.CustomAuthorizationPolicy.MyAuthorizationPolicy, PolicyLibrary' />
        </authorizationPolicies>
@@ -442,7 +442,7 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 
 ### <a name="to-set-up-and-build-the-sample"></a>Настройка и сборка образца
 
-1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).
+1. Чтобы создать решение, следуйте инструкциям по [созданию образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/building-the-samples.md)
 
 2. Чтобы запустить образец на одном или нескольких компьютерах, следуйте приведенным далее инструкциям.
 
@@ -451,60 +451,60 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 
 ### <a name="to-run-the-sample-on-the-same-computer"></a>Запуск образца на одном компьютере
 
-1. Откройте Командная строка разработчика для Visual Studio с правами администратора и запустите *программу Setup. bat* из папки примеров установки. При этом устанавливаются все сертификаты, необходимые для выполнения образца.
+1. Open Developer Command Prompt для Visual Studio с привилегиями администратора и запуск *Setup.bat* из папки установки образца. При этом устанавливаются все сертификаты, необходимые для выполнения образца.
 
     > [!NOTE]
-    > Пакетный файл Setup. bat предназначен для запуска из Командная строка разработчика для Visual Studio. Переменная среды PATH, заданная в Командная строка разработчика для Visual Studio, указывает на каталог, содержащий исполняемые файлы, необходимые для сценария *Setup. bat* .
+    > Пакетный файл Setup.bat предназначен для запуска от команды разработчиков Prompt для Visual Studio. Переменная среда PATH, установленная в команде разработчика Prompt для Visual Studio, указывает на каталог, содержащий исполняемые документы, требуемые скриптом *Setup.bat.*
 
-1. Запустите файл Service. exe из *сервице\бин*.
+1. Запуск Service.exe от *service'bin*.
 
-1. Запустите программу Client. exe из *\client\bin\* . Действия клиента отображаются в консольном приложении клиента.
+1. Запуск Client.exe из *«клиент-бин*». Действия клиента отображаются в консольном приложении клиента.
 
-Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+Если клиент и служба не в состоянии общаться, [см.](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))
 
 ### <a name="to-run-the-sample-across-computers"></a>Запуск образца на нескольких компьютерах
 
 1. Создайте каталог на компьютере службы.
 
-2. Скопируйте файлы служебной программы из *\сервице\бин* в каталог на компьютере службы. Кроме того, скопируйте на компьютер службы файлы Setup.bat, Cleanup.bat, GetComputerName.vbs и ImportClientCert.bat.
+2. Копирование файлов программы обслуживания от *«сервис»бин* к каталогу на компьютере обслуживания. Кроме того, скопируйте на компьютер службы файлы Setup.bat, Cleanup.bat, GetComputerName.vbs и ImportClientCert.bat.
 
 3. Создайте на клиентском компьютере каталог для двоичных файлов клиента.
 
 4. Скопируйте в клиентский каталог на клиентском компьютере файлы программы клиента. Кроме того, скопируйте на клиент файлы Setup.bat, Cleanup.bat и ImportServiceCert.bat.
 
-5. На сервере запустите `setup.bat service` в Командная строка разработчика для Visual Studio, открытой с правами администратора.
+5. На сервере, `setup.bat service` запущенном в Developer Command Prompt для Visual Studio, открыт с привилегиями администратора.
 
-    При запуске `setup.bat` с аргументомсоздаетсясертификатслужбысполнымдоменнымименемкомпьютераиэкспортируетсясертификатслужбывфайлсименемService.cer.`service`
+    Запуск `setup.bat` с `service` аргументом создает сертификат службы с полностью квалифицированным доменным именем компьютера, и экспортирует сертификат службы в файл под названием *Service.cer*.
 
-6. Измените *файл Service. exe. config* , указав новое имя сертификата (в `findValue` атрибуте в [ \<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)), которое совпадает с полным доменным именем компьютера. Кроме того, измените **ComputerName** в \<элементе Service >\</baseAddresses > с localhost на полное имя компьютера службы.
+6. Edit *Service.exe.config,* чтобы отразить новое `findValue` имя сертификата (в атрибуте в [ \<serviceCertificate>), ](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)который является таким же, как полностью квалифицированное доменное имя компьютера. Также измените **имя** \<компьютера в\<сервисе>/baseAddresses> элемент от localhost до полностью квалифицированного имени вашего сервисного компьютера.
 
-7. Скопируйте файл *Service. cer* из каталога службы в каталог клиента на клиентском компьютере.
+7. Копируйте файл *Service.cer* из каталога службы в каталог клиента на клиентском компьютере.
 
-8. На клиенте запустите `setup.bat client` в Командная строка разработчика для Visual Studio, открытой с правами администратора.
+8. На клиенте, `setup.bat client` запустить в разработчика команды Prompt для Visual Studio открыт с администратором привилегий.
 
-    При выполнении `setup.bat` саргументом создается сертификат клиента с именем Test1 и экспортируется сертификат клиента в файл с именем Client `client` . cer.
+    Запуск `setup.bat` с `client` аргументом создает сертификат клиента под названием **test1** и экспортирует сертификат клиента в файл под названием *Client.cer*.
 
-9. В файле *Client. exe. config* на клиентском компьютере измените значение адреса конечной точки, чтобы оно совпадало с новым адресом службы. Для этого замените **localhost** на полное доменное имя сервера.
+9. В файле *Client.exe.config* на клиентском компьютере измените значение адреса конечной точки, чтобы соответствовать новому адресу вашего сервиса. Сделайте это, заменив **localhost** полностью квалифицированным доменным именем сервера.
 
 10. Скопируйте файл Client.cer из клиентского каталога в каталог службы на сервере.
 
-11. На клиенте запустите *импортсервицецерт. bat* в Командная строка разработчика для Visual Studio, открытой с правами администратора.
+11. На клиенте, запустить *ImportServiceCert.bat* в разработчик апогеях для Визуальной студии, открытой с привилегиями администратора.
 
-    Сертификат службы будет импортирован из файла Service. cer в хранилище **CurrentUser-TrustedPeople** .
+    Это импортирует сертификат службы из файла Service.cer в магазин **CurrentUser - TrustedPeople.**
 
-12. На сервере запустите *импортклиентцерт. bat* в Командная строка разработчика для Visual Studio, открытой с правами администратора.
+12. На сервере, запустить *ImportClientCert.bat* в разработчика команды Prompt для Visual Studio открыт с администратором привилегий.
 
-    При этом сертификат клиента будет импортирован из файла Client. cer в хранилище **LocalMachine-TrustedPeople** .
+    Это импортирует сертификат клиента из файла Client.cer в магазин **LocalMachine - TrustedPeople.**
 
 13. На сервере запустите из окна командной строки программу Service.exe.
 
 14. На клиентском компьютере из окна командной строки запустите программу Client.exe.
 
-    Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+    Если клиент и служба не в состоянии общаться, [см.](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))
 
 ### <a name="clean-up-after-the-sample"></a>Очистка после образца
 
-Чтобы очистить после примера, запустите программу *Cleanup. bat* в папке Samples после завершения выполнения примера. Он удалит из хранилища сертификатов сертификаты сервера и клиента.
+Чтобы очистить после образца, запустите *Cleanup.bat* в папке образцов, когда вы закончили запуск образца. Он удалит из хранилища сертификатов сертификаты сервера и клиента.
 
 > [!NOTE]
-> Этот скрипт не удаляет сертификаты службы на клиенте при запуске образца на нескольких компьютерах. Если вы выполнили примеры WCF, использующие сертификаты на нескольких компьютерах, обязательно очистите сертификаты службы, установленные в хранилище CurrentUser-TrustedPeople. Для этого используйте следующую команду: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>`Например: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
+> Этот скрипт не удаляет сертификаты службы на клиенте при запуске образца на нескольких компьютерах. Если вы используете образцы WCF, которые используют сертификаты на всех компьютерах, не забудьте очистить сертификаты обслуживания, которые были установлены в магазине CurrentUser - TrustedPeople. Для этого воспользуйтесь следующей командой: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>`. Например: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.

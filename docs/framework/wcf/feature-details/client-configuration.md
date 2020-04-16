@@ -2,12 +2,12 @@
 title: Конфигурация клиента
 ms.date: 03/30/2017
 ms.assetid: 5da5bd3b-65d9-43b7-91b9-cc9e989b1350
-ms.openlocfilehash: ff82f56639ec451c04624d22fff0bcb03f46d946
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 141b7f7fc04f98f267ce520544fb89451beac7b6
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185363"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463871"
 ---
 # <a name="client-configuration"></a>Конфигурация клиента
 Вы можете использовать конфигурацию клиента Windows Communication Foundation (WCF) для указания адреса, связывания, поведения и контракта, свойств "ABC" конечной точки клиента, которые клиенты используют для подключения к конечным точкам обслуживания. [ \<Элемент>клиента](../../configure-apps/file-schema/wcf/client.md) имеет элемент>[ \<конечным элементом,](../../configure-apps/file-schema/wcf/endpoint-of-client.md) атрибуты которого используются для настройки ABCs конечных точек. Эти атрибуты обсуждаются в разделе [Настройка конечных точек.](#configuring-endpoints)  
@@ -41,7 +41,7 @@ ms.locfileid: "79185363"
               <servicePrincipalName value="host/localhost" />  
             </identity>  
           </endpoint>  
-// Add another endpoint by adding another <endpoint> element.  
+            <!-- Add another endpoint by adding another <endpoint> element. -->
           <endpoint  
             name="endpoint2">  
            //Configure another endpoint here.  
@@ -62,10 +62,10 @@ ms.locfileid: "79185363"
           </security>  
         </binding>  
         <binding name="Another Binding"  
-        //Configure this binding here.  
+          <!-- Configure this binding here. -->  
         </binding>  
           </wsHttpBinding>  
-        </bindings>  
+     </bindings>  
   
 //The behavior section references by the behaviorConfiguration endpoint attribute.  
         <behaviors>  
@@ -93,7 +93,7 @@ ms.locfileid: "79185363"
 ### <a name="configuring-metadata"></a>Настройка метаданных  
  [ \<Элемент метаданных>](../../../../docs/framework/configure-apps/file-schema/wcf/metadata.md) используется для определения параметров, используемых для регистрации расширений импорта метаданных. Для получения дополнительной информации о расширении системы метаданных [см.](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Конечные точки: адреса, привязки и контракты](../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
-- [Настройка поведения клиентов](../../../../docs/framework/wcf/configuring-client-behaviors.md)
+- [Настройка поведений клиентов](../../../../docs/framework/wcf/configuring-client-behaviors.md)

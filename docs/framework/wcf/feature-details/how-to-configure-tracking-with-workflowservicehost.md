@@ -1,15 +1,15 @@
 ---
-title: Как настроить отслеживание с помощью WorkflowServiceHost
+title: Практическое руководство. Как настроить отслеживание с помощью WorkflowServiceHost
 ms.date: 03/30/2017
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
-ms.openlocfilehash: 962dfda9fc5780cc3ac7211464bb3a9be8b7fa90
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3f78b77849d6da7dfff3bdcba90bb4d5200186a7
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185067"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464160"
 ---
-# <a name="how-to-configure-tracking-with-workflowservicehost"></a>Как настроить отслеживание с помощью WorkflowServiceHost
+# <a name="how-to-configure-tracking-with-workflowservicehost"></a>Практическое руководство. Как настроить отслеживание с помощью WorkflowServiceHost
 В этом разделе описывается настройка отслеживания для рабочего процесса платформы [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)], размещенного в <xref:System.ServiceModel.Activities.WorkflowServiceHost>. Она осуществляется с помощью файла Web.config, в котором задается поведение службы.  
   
 ### <a name="configure-tracking-in-configuration"></a>Настройка отслеживания в конфигурации  
@@ -23,7 +23,7 @@ ms.locfileid: "79185067"
            <etwTracking profileName="Sample Tracking Profile" />  
          </behavior>
        </serviceBehaviors>  
-    <behaviors>  
+    </behaviors>  
     ```  
   
     > [!NOTE]
@@ -68,7 +68,7 @@ ms.locfileid: "79185067"
   
      Для получения дополнительной информации о отслеживании в целом, [см.](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) На примере настройки отслеживания программно [см. Настройка отслеживания для рабочего процесса.](../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Упрощенная конфигурация служб WCF](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)
 - [Службы рабочего процесса](../../../../docs/framework/wcf/feature-details/workflow-services.md)

@@ -1,15 +1,15 @@
 ---
-title: Как настроить сохраняемость с помощью WorkflowServiceHost
+title: Практическое руководство. Как настроить сохраняемость с помощью WorkflowServiceHost
 ms.date: 03/30/2017
 ms.assetid: e31cd4df-13a3-4a9a-9be8-5243e0055356
-ms.openlocfilehash: 2974b6bcbb94c5b54d91025aeabe7c2d2e94c7e8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4bfa66a895ae9af9cb87ff110dc82c8a8a922b49
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185058"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463839"
 ---
-# <a name="how-to-configure-persistence-with-workflowservicehost"></a>Как настроить сохраняемость с помощью WorkflowServiceHost
+# <a name="how-to-configure-persistence-with-workflowservicehost"></a>Практическое руководство. Как настроить сохраняемость с помощью WorkflowServiceHost
 В данном разделе описывается способ настройки функции хранилища экземпляров рабочих процессов SQL для включения сохраняемости рабочих процессов, размещенных в <xref:System.ServiceModel.Activities.WorkflowServiceHost>, с помощью файла конфигурации. Перед использованием возможности хранилища экземпляров рабочих процессов SQL необходимо создать базу данных SQL, которая используется для хранения экземпляров рабочих процессов. Для получения дополнительной информации [см.](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)  
   
 ### <a name="to-configure-the-sql-workflow-instance-store-in-configuration"></a>Настройка хранилища экземпляров рабочих процессов SQL в конфигурации  
@@ -26,7 +26,7 @@ ms.locfileid: "79185058"
                  instanceLockedExceptionAction="NoRetry | SimpleRetry | AggressiveRetry"  
                  hostLockRenewalPeriod="00:00:30"
                  runnableInstancesDetectionPeriod="00:00:05">  
-            <sqlWorkflowInstanceStore/>  
+            </sqlWorkflowInstanceStore>  
         </behavior>  
     </serviceBehaviors>  
     ```  
@@ -59,8 +59,8 @@ ms.locfileid: "79185058"
   
      Например, как настроить настойчивость программно [см., как: Включить сохранение для рабочих процессов и служб рабочего процесса.](../../../../docs/framework/windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Службы рабочего процесса](../../../../docs/framework/wcf/feature-details/workflow-services.md)
-- [Сохраняемость рабочих процессов](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)
+- [Сохраняемость рабочего процесса](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)
 - [Сохраняемость Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10))

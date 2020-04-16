@@ -2,12 +2,12 @@
 title: Практическое руководство. Создание конечной точки службы в конфигурации
 ms.date: 06/16/2016
 ms.assetid: f474e25d-2a27-4f31-84c5-395c442b8e70
-ms.openlocfilehash: 9687d9537d6f166a02b79261743050168f677261
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5935f798004de3ec049b9c9f0300675e1660f462
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185003"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464134"
 ---
 # <a name="how-to-create-a-service-endpoint-in-configuration"></a>Практическое руководство. Создание конечной точки службы в конфигурации
 Конечные точки предоставляют клиентам доступ к функциональности, предлагает сервис Windows Communication Foundation (WCF). Можно определить одну или несколько конечных точек для службы, используя сочетание относительных и абсолютных адресов конечных точек. Если же не определять конечные точки службы, среда выполнения автоматически создаст несколько точек по умолчанию. В этом разделе показано, как добавить конечные точки, используя файл конфигурации, который содержит и относительные, и абсолютные адреса.  
@@ -25,10 +25,8 @@ ms.locfileid: "79185003"
   
   <system.serviceModel>  
     <services>  
-    <!-- This section is optional with the default configuration introduced  
-         in .NET Framework 4. -->  
-      <service  
-          name="Microsoft.ServiceModel.Samples.CalculatorService">  
+    <!-- This section is optional with the default configuration introduced in .NET Framework 4. -->  
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService">  
         <host>  
           <baseAddresses>  
             <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  

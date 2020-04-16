@@ -2,12 +2,12 @@
 title: Стандартные конечные точки
 ms.date: 03/30/2017
 ms.assetid: 3fcb4225-addc-44f2-935d-30e4943a8812
-ms.openlocfilehash: 880601664d7602e279c5d022fa37c44914a58772
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 48924e06457cf9f91ce4f900bb38de4d22bfc550
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184404"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463780"
 ---
 # <a name="standard-endpoints"></a>Стандартные конечные точки
 Конечные точки определяются адресом, привязкой и контрактом. Кроме того, для конечной точки можно задать и другие параметры - конфигурацию поведения, заголовки и URI прослушивания.  Эти значения не изменяются для определенных типов конечных точек. Например, конечные точки обмена метаданными всегда используют контракт <xref:System.ServiceModel.Description.IMetadataExchange>. Другим конечным точкам, например <xref:System.ServiceModel.Description.WebHttpEndpoint>, всегда требуется определенное поведение конечной точки. Конечную точку можно сделать более удобной для использования, определив значения по умолчанию для часто используемых свойств. Стандартные конечные точки дают разработчику возможность определить значения свойств по умолчанию, а также создавать конечные точки, где одно или несколько свойств не изменяются.  Это позволяет не указывать данные статического характера. Стандартная конечная точка может использоваться в качестве конечной точки инфраструктуры и приложения.  
@@ -121,6 +121,8 @@ public class CustomEndpointCollectionElement : StandardEndpointCollectionElement
           name="customStandardEndpoint"  
           type="CustomEndpointCollectionElement, Example.dll,  
                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=ffffffffffffffff"/>  
+      </standardEndpointExtensions>
+</extensions>  
 ```  
   
 ## <a name="configuring-a-standard-endpoint"></a>Настройка стандартной конечной точки  

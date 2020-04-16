@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], protocols
 ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
-ms.openlocfilehash: b9faa4b7422419af9283ab52325e878db3d6f19f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 86e0c77b899ad590b9958fea3a050ad0e660bb43
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184507"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463793"
 ---
 # <a name="security-protocols"></a>Протоколы безопасности
 Протоколы WS-Security предоставляют механизмы обеспечения безопасности веб-служб, охватывающие все существующие требования к безопасности обмена сообщениями на предприятии. В этом разделе описаны сведения о Windows Communication <xref:System.ServiceModel.Channels.SecurityBindingElement>Foundation (WCF) (реализованы в ) для следующих протоколов безопасности Web-сервисов.  
@@ -64,7 +64,7 @@ ms.locfileid: "79184507"
   
  WCF использует WS-SecureConversation для обеспечения надежной поддержки сеансов для защиты обмена мультисообщениями между приложениями.  Сведения о реализации см. ниже в подразделе "Безопасные сеансы".  
   
- В дополнение к режимам аутентификации, WCF предоставляет настройки для управления общими механизмами защиты, которые применяются к большинству режимов проверки подлинности на основе сообщений, например: порядок операций шифрования по сравнению с шифрованием, наборы алгоритмов, производные ключевые элементы , и подтверждение подписи.  
+ В дополнение к режимам аутентификации, WCF предоставляет настройки для управления общими механизмами защиты, которые применяются к большинству режимов проверки подлинности на основе сообщений, например: порядок операций шифрования по сравнению с шифрованием, наборы алгоритмов, производство ключей и подтверждение подписи.  
   
  В данном документе используются перечисленные ниже префиксы и пространства имен.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "79184507"
 |------------|---------------|  
 |s|http://www.w3.org/2003/05/soap-envelope|  
 |sp|http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702|  
-|a|http://www.w3.org/2005/08/addressing|  
+|а|http://www.w3.org/2005/08/addressing|  
 |wsse|Подлежит определению - универсальный код ресурса (URI) OASIS WSS 1,0|  
 |wsse11|Подлежит определению - универсальный код ресурса (URI) OASIS WSS 1.1|  
 |wsu|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd|  
@@ -235,7 +235,76 @@ ms.locfileid: "79184507"
  Политика  
   
 ```xml  
-<wsp:Policy wsu:Id="IssuedTokenOverTransport_policy"><wsp:ExactlyOne><wsp:All><sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"><wsp:Policy><sp:TransportToken><wsp:Policy><sp:HttpsToken/></wsp:Policy></sp:TransportToken><sp:AlgorithmSuite><wsp:Policy><sp:Basic256/></wsp:Policy></sp:AlgorithmSuite><sp:Layout><wsp:Policy><sp:Strict/></wsp:Policy></sp:Layout><sp:IncludeTimestamp/></wsp:Policy></sp:TransportBinding><sp:EndorsingSupportingTokens xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"><wsp:Policy><sp:IssuedToken sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/AlwaysToRecipient"><Issuer xmlns="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"><Address xmlns="http://www.w3.org/2005/08/addressing">http://www.w3.org/2005/08/addressing/anonymous</Address><Metadata xmlns="http://www.w3.org/2005/08/addressing"><Metadata xmlns="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><wsx:MetadataSection xmlns=""><wsx:MetadataReference><Address xmlns="http://www.w3.org/2005/08/addressing"> ... </Address><Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity"><Dns> ...  </Dns></Identity></wsx:MetadataReference></wsx:MetadataSection></Metadata></Metadata></Issuer><sp:RequestSecurityTokenTemplate><trust:KeyType xmlns:trust="http://docs.oasis-open.org/ws-sx/ws-trust/200512">http://docs.oasis-open.org/ws-sx/ws-trust/200512/SymmetricKey</trust:KeyType></sp:RequestSecurityTokenTemplate><wsp:Policy><sp:RequireInternalReference/></wsp:Policy></sp:IssuedToken><sp:SignedParts><sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing"/></sp:SignedParts></wsp:Policy></sp:EndorsingSupportingTokens><sp:Wss11 xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"><wsp:Policy><sp:MustSupportRefKeyIdentifier/><sp:MustSupportRefIssuerSerial/><sp:MustSupportRefThumbprint/><sp:MustSupportRefEncryptedKey/></wsp:Policy></sp:Wss11><sp:Trust13 xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"><wsp:Policy><sp:MustSupportIssuedTokens/><sp:RequireClientEntropy/><sp:RequireServerEntropy/></wsp:Policy></sp:Trust13><wsaw:UsingAddressing/></wsp:All></wsp:ExactlyOne></wsp:Policy  
+<wsp:Policy wsu:Id="IssuedTokenOverTransport_policy">
+ <wsp:ExactlyOne>
+  <wsp:All>
+   <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+    <wsp:Policy>
+     <sp:TransportToken>
+      <wsp:Policy>
+       <sp:HttpsToken />
+      </wsp:Policy>
+     </sp:TransportToken>
+     <sp:AlgorithmSuite>
+      <wsp:Policy>
+       <sp:Basic256 />
+      </wsp:Policy>
+     </sp:AlgorithmSuite>
+     <sp:Layout>
+      <wsp:Policy>
+       <sp:Strict/>
+      </wsp:Policy>
+     </sp:Layout>
+     <sp:IncludeTimestamp/>
+    </wsp:Policy>
+   </sp:TransportBinding>
+   <sp:EndorsingSupportingTokens xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+    <wsp:Policy>
+     <sp:IssuedToken sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/AlwaysToRecipient">
+      <Issuer xmlns="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+       <Address xmlns="http://www.w3.org/2005/08/addressing">http://www.w3.org/2005/08/addressing/anonymous</Address>
+       <Metadata xmlns="http://www.w3.org/2005/08/addressing">
+        <Metadata xmlns="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <wsx:MetadataSection xmlns="">
+          <wsx:MetadataReference>
+           <Address xmlns="http://www.w3.org/2005/08/addressing"> ... </Address>
+           <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+            <Dns> ...  </Dns>
+           </Identity>
+          </wsx:MetadataReference>
+         </wsx:MetadataSection>
+        </Metadata>
+       </Metadata>
+      </Issuer>
+      <sp:RequestSecurityTokenTemplate>
+       <trust:KeyType xmlns:trust="http://docs.oasis-open.org/ws-sx/ws-trust/200512">http://docs.oasis-open.org/ws-sx/ws-trust/200512/SymmetricKey</trust:KeyType>
+      </sp:RequestSecurityTokenTemplate>
+      <wsp:Policy>
+       <sp:RequireInternalReference/>
+      </wsp:Policy>
+     </sp:IssuedToken>
+     <sp:SignedParts>
+      <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing"/>
+     </sp:SignedParts>
+    </wsp:Policy>
+   </sp:EndorsingSupportingTokens>
+   <sp:Wss11 xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+    <wsp:Policy>
+     <sp:MustSupportRefKeyIdentifier/><sp:MustSupportRefIssuerSerial/>
+     <sp:MustSupportRefThumbprint/><sp:MustSupportRefEncryptedKey/>
+    </wsp:Policy>
+   </sp:Wss11>
+   <sp:Trust13 xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+    <wsp:Policy>
+     <sp:MustSupportIssuedTokens/>
+     <sp:RequireClientEntropy/>
+     <sp:RequireServerEntropy/>
+    </wsp:Policy>
+   </sp:Trust13>
+   <wsaw:UsingAddressing/>
+  </wsp:All>
+ </wsp:ExactlyOne>
+</wsp:Policy>
 ```  
   
  Структура заголовка безопасности  

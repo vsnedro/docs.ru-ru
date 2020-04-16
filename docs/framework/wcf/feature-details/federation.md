@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation [WCF]
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
-ms.openlocfilehash: 86c679af77f2b7b1960e7489e0e6e61b811e1bad
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9616a5afb88e46bb5d69f1cd253c854cc1684d9f
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185226"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464186"
 ---
 # <a name="federation"></a>Федерация
 В этом разделе приведен краткий обзор концепции федеративной безопасности. В нем также описывается поддержка Windows Communication Foundation (WCF) для развертывания федеративных архитектур безопасности. Для примера приложения, демонстрируя [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)федерацию, см.  
@@ -240,7 +240,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
                        storeLocation="LocalMachine"
                        storeName="My" />  
        </identity>  
-    <endpoint>  
+    </endpoint>  
   </service>  
 </services>  
   
@@ -289,6 +289,6 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 ## <a name="summary"></a>Сводка  
  Федеративная безопасность обеспечивает четкое разделение ответственности и позволяет выстраивать безопасные, масштабируемые архитектуры служб. В качестве платформы для создания и развертывания распределенных приложений WCF предоставляет поддержку для реализации федеративной безопасности.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность](../../../../docs/framework/wcf/feature-details/security.md)

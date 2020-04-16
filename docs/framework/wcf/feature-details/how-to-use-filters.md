@@ -1,15 +1,15 @@
 ---
-title: Как использовать фильтры
+title: 'Как выполнить: Использование фильтров'
 ms.date: 03/30/2017
 ms.assetid: f2c7255f-c376-460e-aa20-14071f1666e5
-ms.openlocfilehash: f99c2af623dacac3ebe46422815a7f42e2a4df2c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 34ea961b0ef5db51efcae0b86f2c06171d6d756c
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184817"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464100"
 ---
-# <a name="how-to-use-filters"></a>Как использовать фильтры
+# <a name="how-to-use-filters"></a>Как выполнить: Использование фильтров
 В этом разделе описаны основные шаги по созданию конфигурации маршрутизации с несколькими фильтрами. В этом примере сообщения направляются в две реализации службы калькулятора: regularCalc и roundingCalc. Обе реализации поддерживают одинаковые операции, однако одна служба, прежде чем вернуть результаты вычислений, округляет их до ближайшего целого числа. Клиентское приложение должно иметь возможность указывать, нужно ли использовать версию службы, выполняющую округление. Если предпочитаемая служба не указана, сообщения равномерно распределяются между двумя службами. Операции, предоставляемые обеими службами:  
   
 - Добавить  
@@ -180,7 +180,7 @@ ms.locfileid: "79184817"
                 <add filterName="XPathFilter" endpointName="roundingCalcEndpoint" priority="2"/>  
               </entries>  
             </table>  
-          <filterTables>  
+          </filterTables>  
     </routing>  
     ```  
   
@@ -325,6 +325,6 @@ ms.locfileid: "79184817"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Службы маршрутизации](../../../../docs/framework/wcf/samples/routing-services.md)

@@ -2,12 +2,12 @@
 title: Протоколы обмена сообщениями
 ms.date: 03/30/2017
 ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104
-ms.openlocfilehash: d35cd496db32e1a2886f7ca06e7a3d0964f9c9b5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 814347c77b54c4450aabf0a4f3966df223360663
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184585"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463834"
 ---
 # <a name="messaging-protocols"></a>Протоколы обмена сообщениями
 
@@ -25,7 +25,7 @@ ms.locfileid: "79184585"
 
 Спецификация/документ:
 
-- [Xml](https://www.w3.org/TR/REC-xml)
+- [XML](https://www.w3.org/TR/REC-xml)
 - [SOAP 1,1](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/)
 - [SOAP 1.2 Core](https://www.w3.org/TR/soap12-part1/)
 - [WS-Addressing 2004/08](https://www.w3.org/Submission/2004/SUBM-ws-addressing-20040810/)
@@ -201,14 +201,14 @@ B3221: При настройке для использования WS-Addressing
 ### <a name="web-services-addressing-faults"></a>Ошибки Web Services Addressing
 R3411: WCF производит следующие неисправности, определенные WS-Addressing 2004/08.
 
-| Код | Причина |
+| Код | Причина: |
 |----------|-----------|
 | `wsa:DestinationUnreachable` | Поступило сообщение со значением `ReplyTo`, отличающимся от адреса ответа, установленного для данного канала; нет конечной точки, ожидающей передачи данных по адресу, указанному в заголовке «To». |
 | `wsa:ActionNotSupported` | Каналы инфраструктуры или диспетчер, связанные с конечной точкой, не распознали действие, указанное в заголовке `Action`. |
 
 R3412: WCF производит следующие неисправности, определяемые WS-Addressing 1.0.
 
-| Код | Причина |
+| Код | Причина: |
 |----------|-----------|
 | `wsa10:InvalidAddressingHeader` | `wsa:To`Дублировать `wsa:ReplyTo` `wsa:From` , `wsa:MessageID`, или . Дублировать `wsa:RelatesTo` с `RelationshipType`тем же . |
 | `wsa10:MessageAddressingHeaderRequired` | Отсутствует обязательный заголовок адресации. |
@@ -566,7 +566,7 @@ mail-address   =     id-left "@" id-right
 WCF использует следующее утверждение политики для обозначения использования MTOM по конечной точке:
 
 ```xml
-<wsoma:OptimizedMimeSerialization ... />
+<wsoma:OptimizedMimeSerialization />
 ```
 
 - R4211: предыдущее утверждение политики содержит субъект политики конечной точки и указывает, что все сообщения, отправляемые на конечную точку и получаемые от нее, должны быть оптимизированы с помощью MTOM.

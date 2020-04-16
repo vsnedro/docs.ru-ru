@@ -2,12 +2,12 @@
 title: Адресация
 ms.date: 03/30/2017
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
-ms.openlocfilehash: 4403ac2bf8e0e5193006f6ec19b24a9bcb00bf35
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 55bb30ba3df80e41986b1337f8732dd8ad3231ff
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183979"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463770"
 ---
 # <a name="addressing"></a>Адресация
 В образце адресации показаны различные аспекты и возможности адресов конечных точек. Образец основан на [запущенном.](../../../../docs/framework/wcf/samples/getting-started-sample.md) В этом образце служба является резидентной. Как служба, так и клиент являются консольными приложениями. Служба определяет несколько конечных точек, используя сочетание их относительных и абсолютных адресов.  
@@ -76,7 +76,6 @@ ms.locfileid: "79183979"
           "net.tcp://localhost:9000/servicemodelsamples/service"  
           binding="netTcpBinding"  
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-</service>  
 ```  
   
  Клиент связывается только с одной конечной точкой службы из четырех, однако в файле конфигурации заданы все четыре. Клиент выбирает конечную точку при создании объекта `CalculatorProxy`. Изменяя имя файла конфигурации с `CalculatorEndpoint1` по `CalculatorEndpoint4`, можно использовать любую конечную точку.  

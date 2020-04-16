@@ -2,12 +2,12 @@
 title: Настройка обнаружения в файле конфигурации
 ms.date: 03/30/2017
 ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
-ms.openlocfilehash: b2e604f6168e4adff36bfb0c22861124743b358d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 934b04b51b9954cf943f57f33250951048e5671b
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185330"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464208"
 ---
 # <a name="configuring-discovery-in-a-configuration-file"></a>Настройка обнаружения в файле конфигурации
 При обнаружении используются четыре основные группы параметров конфигурации. В этом разделе кратко описана каждая из них, а также приведены примеры их настройки. В конце каждого раздела имеется ссылка на более подробную документацию о каждой области.  
@@ -26,6 +26,7 @@ ms.locfileid: "79185330"
           </serviceDiscovery>  
         </behavior>  
       </serviceBehaviors>  
+</behaviors>  
 ```  
   
  Как только вы укажете поведение, ссылайтесь на него из <`service`> элемент, как показано в следующем примере.  
@@ -41,7 +42,8 @@ ms.locfileid: "79185330"
          <!-- Discovery Endpoints -->  
          <endpoint kind="udpDiscoveryEndpoint" />  
         </service>  
-    </service>  
+    </services>  
+</system.serviceModel>  
 ```  
   
  Чтобы обеспечить возможность обнаружения службы, также необходимо добавить конечную точку обнаружения. В рассмотренном выше примере добавляется стандартная конечная точка <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  
@@ -62,6 +64,7 @@ ms.locfileid: "79185330"
    <service name="AnnouncementListener">  
       <endpoint kind="udpAnnouncementEndpoint" />  
    </service>  
+</services>
 ```  
   
  Поведение <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> используется для включения или выключения обнаружения определенной конечной точки.  В следующем примере показана настройка двух конечных точек приложения для службы, одной со включенным обнаружением, другой ― с выключенным. Для каждой конечной точки добавляется поведение <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>.  
@@ -87,7 +90,7 @@ ms.locfileid: "79185330"
         <endpoint kind="udpDiscoveryEndpoint" />  
       </service>  
    </services>  
-    <behaviors>  
+   <behaviors>  
       <serviceBehaviors>  
         <behavior name="helloWorldServiceBehavior">  
           <serviceDiscovery />  
@@ -102,6 +105,7 @@ ms.locfileid: "79185330"
         </behavior>  
      </endpointBehaviors>  
    </behaviors>  
+</system.serviceModel>  
 ```  
   
  Поведение <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> можно также использовать для добавления пользовательских метаданных к метаданным конечной точки, возвращенным службой. В приведенном ниже примере показано, как это сделать.  
@@ -163,7 +167,9 @@ ms.locfileid: "79185330"
           </discoveryClient>  
           <textMessageEncoding messageVersion="Soap11"/>  
           <httpTransport />  
-        </binding>  
+      </binding>
+   </customBinding>
+</bindings>  
 ```  
   
  На эту пользовательскую конфигурацию привязки должна ссылаться клиентская конечная точка.  
@@ -174,7 +180,7 @@ ms.locfileid: "79185330"
                 binding="customBinding"  
                 bindingConfiguration="discoBindingConfiguration"  
                 contract="IHelloWorldService" />  
-    </client>  
+</client>  
 ```  
   
  Для получения дополнительной информации о критериях поиска см. [Поиск и поиск criteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md). Для получения дополнительной информации об обнаружении и связывающих элементах см., [Обзор обнаружения WCF](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
@@ -223,7 +229,8 @@ ms.locfileid: "79185330"
             maxReceivedMessageSize="8192"  
             maxBufferPoolSize="262144"/>  
         </standardEndpoint>  
-      </udpDiscoveryEndpoint>  
+      </udpDiscoveryEndpoint>
+</standardEndpoints>
 ```  
   
  После добавления стандартной конфигурации конечных точек `endpoint` ссылка на конфигурацию в <> элементом для каждой конечной точки, как показано в следующем примере.  

@@ -5,18 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
-ms.openlocfilehash: f30b2c587d7f9b21c1f19fa1c3943621fc2607cd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6796ca0b16e65a07735aec075d63b0cdfe38d080
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184341"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464017"
 ---
 # <a name="transport-security-overview"></a>Общие сведения о безопасности транспорта
 Механизмы транспортной безопасности в Windows Communication Foundation (WCF) зависят от привязки и используемого транспорта. Например, при использовании класса <xref:System.ServiceModel.WSHttpBinding> транспортом является протокол HTTP и в качестве основного механизма защиты транспорта применяется протокол SSL через HTTP, обычно называемый HTTPS. В этой теме рассматриваются основные механизмы транспортной безопасности, используемые в системах WCF, предоставляемых привязками.  
   
 > [!NOTE]
-> Когда SSL-безопасность используется с помощью .NET Framework 3.5, а затем клиент WCF использует как промежуточные сертификаты в своем магазине сертификатов, так и промежуточные сертификаты, полученные во время переговоров SSL, для выполнения проверки цепочки сертификатов службы Сертификат. Платформа .NET Framework 3.0 использует только промежуточные сертификаты, установленные в локальном хранилище сертификатов.  
+> При использовании SSL-безопасности с помощью .NET Framework 3.5, а затем клиент WCF использует как промежуточные сертификаты в своем магазине сертификатов, так и промежуточные сертификаты, полученные во время переговоров sSL, для выполнения проверки цепочки сертификатов в сертификате службы. Платформа .NET Framework 3.0 использует только промежуточные сертификаты, установленные в локальном хранилище сертификатов.  
   
 > [!WARNING]
 > При использовании системы безопасности транспорта свойство <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> не применяется. Чтобы этого не произошло, <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode%2A?displayProperty=nameWithType> <xref:System.ServiceModel.Description.PrincipalPermissionMode.None?displayProperty=nameWithType>установите. <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> - это поведение службы, которое можно задать в описании службы.  
@@ -82,7 +82,7 @@ ms.locfileid: "79184341"
  [!code-csharp[c_ProgrammingSecurity#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#12)]
  [!code-vb[c_ProgrammingSecurity#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#12)]  
   
-#### <a name="client"></a>клиент  
+#### <a name="client"></a>"Клиент";  
  На клиенте следует задать сертификат с помощью метода <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> класса <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>.  
   
 > [!NOTE]
@@ -101,7 +101,7 @@ ms.locfileid: "79184341"
    <clientCredentials>  
      <clientCertificate findValue= "101010101010101010101010101010000000000"
       storeLocation="LocalMachine" storeName="My"
-      X509FindType="FindByThumbPrint"/>  
+      X509FindType="FindByThumbPrint">  
      </clientCertificate>  
    </clientCredentials>  
  </behavior>  
@@ -120,6 +120,6 @@ ms.locfileid: "79184341"
 ## <a name="msmqintegrationbinding-and-netmsmqbinding"></a>MsmqIntegrationBinding и NetMsmqBinding  
  Для полного обсуждения транспортной безопасности с помощью квидинга сообщений (ранее называлось МСМЗ) [см.](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Программирование безопасности WCF](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)

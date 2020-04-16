@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 ms.topic: tutorial
 ms.custom: mvc,vs-dotnet
-ms.openlocfilehash: 65b6fe31e86380162e90820c2cf118a9d1b96b4a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: facb9ebebd9ce1904886a946277185ac2c2e4bc4
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79186586"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463925"
 ---
 # <a name="tutorial-create-your-first-wpf-application-in-visual-studio-2019"></a>Учебник: Создайте свое первое приложение WPF в Visual Studio 2019
 
-В этой статье показано, как разработать настольное приложение Windows Presentation Foundation (WPF), которое включает элементы, общие для большинства приложений WPF: разметка разметки «Расширяемый язык разметки» (XAML), код-за, определения приложений, элементы управления, макет, связывание данных и стили. Для разработки приложения вы будете использовать Visual Studio.
+В этой статье показано, как разработать настольное приложение Windows Presentation Foundation (WPF), которое включает элементы, общие для большинства приложений WPF: разметка разметки «Расширяемый язык разметки прикладной» (XAML), код-закулисное приложение, определения приложений, элементы управления, макет, привязка данных и стили. Для разработки приложения вы будете использовать Visual Studio.
 
 В этом руководстве описано следующее:
 > [!div class="checklist"]
@@ -293,11 +293,11 @@ Layout предоставляет упорядоченный способ раз
 
 1. В *`ExpenseItHome.xaml`*, добавить <xref:System.Windows.Controls.Grid.ColumnDefinitions%2A> еще один <xref:System.Windows.Controls.ColumnDefinition.Width%2A> столбец с фиксированной 230 пикселей:
 
-    [!code-xaml[ExpenseIt#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=52-55)]
+    [!code-xaml[ExpenseIt#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=2#NewColumn)]
 
 2. Добавьте еще <xref:System.Windows.Controls.Grid.RowDefinitions%2A>один ряд в , в общей сложности четыре строки:
 
-    [!code-xaml[ExpenseIt#11b](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=57-62)]
+    [!code-xaml[ExpenseIt#11b](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=2#NewRows)]
 
 3. Переместите элементы управления <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> во второй столбец, установив свойство до 1 в каждом из трех элементов управления (граница, ListBox и кнопка).
 
@@ -471,12 +471,12 @@ Layout предоставляет упорядоченный способ раз
 > [!NOTE]
 > Этот пример демонстрирует особенность WPF и не соответствует всем рекомендациям по таким вещам, как безопасность, локализация и доступность. Для всестороннего охвата wPF и передового опыта разработки приложений .NET см.
 >
-> - [Доступность](../../ui-automation/accessibility-best-practices.md)
+> - [Специальные возможности](../../ui-automation/accessibility-best-practices.md)
 > - [Безопасность](../security-wpf.md)
 > - [Глобализация и локализация WPF](../advanced/wpf-globalization-and-localization-overview.md)
 > - [Производительность WPF](../advanced/optimizing-wpf-application-performance.md)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 В этом пошаге вы узнали ряд методов для создания uI с помощью Windows Презентация фонда (WPF). Теперь вы должны иметь базовое представление о строительных блоках приложения .NET, связанного с данными. Более подробную информацию об архитектуре и моделях программирования WPF см. в следующих разделах:
 
@@ -488,12 +488,12 @@ Layout предоставляет упорядоченный способ раз
 Более подробную информацию о создании приложений см. в следующих разделах:
 
 - [Разработка приложений](../app-development/index.md)
-- [Управление](../controls/index.md)
+- [Элементы управления](../controls/index.md)
 - [Общие сведения о привязке данных](../../../desktop-wpf/data/data-binding-overview.md)
 - [Графика и мультимедиа](../graphics-multimedia/index.md)
 - [Документы в WPF](../advanced/documents-in-wpf.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор панелей](../controls/panels-overview.md)
 - [Обзор шаблонов данных](../data/data-templating-overview.md)

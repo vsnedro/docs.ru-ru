@@ -2,20 +2,20 @@
 title: Протоколы транзакций
 ms.date: 03/30/2017
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.openlocfilehash: 5ae8aa5112f737d3000e221d0a199c3ee36eac46
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8f16f7a6c13ca557ce4160d927ef6f075a79b4c8
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184370"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464043"
 ---
 # <a name="transaction-protocols"></a>Протоколы транзакций
 Фонд связи Windows (WCF) реализует протоколы WS-Atomic Transaction и WS-Координация.  
   
 |Спецификация/документ|Версия|Ссылка|  
 |-----------------------------|-------------|----------|  
-|WS-Coordination|1.0<br /><br /> 1,1|<http://schemas.xmlsoap.org/ws/2004/10/wscoor/><br /><br /> <https://docs.oasis-open.org/ws-tx/wscoor/2006/06>|  
-|WS-AtomicTransaction|1.0<br /><br /> 1,1|<http://schemas.xmlsoap.org/ws/2004/10/wsat/><br /><br /> <https://docs.oasis-open.org/ws-tx/wsat/2006/06>|  
+|WS-Coordination|1.0<br /><br /> 1.1|<http://schemas.xmlsoap.org/ws/2004/10/wscoor/><br /><br /> <https://docs.oasis-open.org/ws-tx/wscoor/2006/06>|  
+|WS-AtomicTransaction|1.0<br /><br /> 1.1|<http://schemas.xmlsoap.org/ws/2004/10/wsat/><br /><br /> <https://docs.oasis-open.org/ws-tx/wsat/2006/06>|  
   
  Согласно этим спецификациям протоколов, требуется взаимодействие на двух уровнях: между приложениями и между диспетчерами транзакций (см. следующий рисунок). В спецификациях подробно описываются форматы сообщений и обмен сообщениями для обоих уровней взаимодействия. При обмене между приложениями применяются определенные средства обеспечения безопасности, надежности и методы кодирования, как и при обычном обмене в пределах сообщения. Однако для успешного взаимодействия между диспетчерами транзакций требуется соглашение по конкретной привязке, поскольку она обычно не настраивается пользователем.  
   
@@ -61,8 +61,8 @@ ms.locfileid: "79184370"
 |------------|-------------|-------------------|  
 |s11||<https://schemas.xmlsoap.org/soap/envelope/>|  
 |wsa|До 1.0<br /><br /> 1.0|`http://www.w3.org/2004/08/addressing`<br /><br /> <https://www.w3.org/2005/08/addressing/>|  
-|wscoor|1.0<br /><br /> 1,1|<http://schemas.xmlsoap.org/ws/2004/10/wscoor/><br /><br /> <https://docs.oasis-open.org/ws-tx/wscoor/2006/06>|  
-|wsat|1.0<br /><br /> 1,1|<http://schemas.xmlsoap.org/ws/2004/10/wsat/><br /><br /> <https://docs.oasis-open.org/ws-tx/wsat/2006/06>|  
+|wscoor|1.0<br /><br /> 1.1|<http://schemas.xmlsoap.org/ws/2004/10/wscoor/><br /><br /> <https://docs.oasis-open.org/ws-tx/wscoor/2006/06>|  
+|wsat|1.0<br /><br /> 1.1|<http://schemas.xmlsoap.org/ws/2004/10/wsat/><br /><br /> <https://docs.oasis-open.org/ws-tx/wsat/2006/06>|  
 |t|До 1.3<br /><br /> 1,3|<http://schemas.xmlsoap.org/ws/2005/02/trust/><br /><br /> <https://docs.oasis-open.org/ws-sx/ws-trust/200512>|  
 |o||<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd>|  
 |xsd||<https://www.w3.org/2001/XMLSchema>|  
@@ -154,8 +154,8 @@ ms.locfileid: "79184370"
     <a:To>https://...</a:To>  
     <wsse:Security>  
       <u:Timestamp>  
-        <wsu:Created>2005-12-15T23:36:09.921Z</u:Created>  
-        <wsu:Expires>2005-12-15T23:41:09.921Z</u:Expires>  
+        <wsu:Created>2005-12-15T23:36:09.921Z</wsu:Created>  
+        <wsu:Expires>2005-12-15T23:41:09.921Z</wsu:Expires>  
       </u:Timestamp>  
     </wsse:Security>  
   </s:Header>  
@@ -180,8 +180,8 @@ ms.locfileid: "79184370"
 <a:To>https://...</a:To>
 <wsse:Security>  
  <u:Timestamp>  
-<wsu:Created>2005-12-15T23:36:09.921Z</u:Created>  
-<wsu:Expires>2005-12-15T23:41:09.921Z</u:Expires>  
+<wsu:Created>2005-12-15T23:36:09.921Z</wsu:Created>  
+<wsu:Expires>2005-12-15T23:41:09.921Z</wsu:Expires>  
 </u:Timestamp>
 </wsse:Security>
 </s:Header>
@@ -622,10 +622,10 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
         <!-- signature over Addressing headers, Timestamp, and Body -->  
       </Signature>  
     </wsse:Security>  
-    <wsse11:EncryptedHeader >  
+    <wsse11:EncryptedHeader>  
      <!-- encrypted wscoor:CoordinationContext header containing CCi -->  
     </wsse11:EncryptedHeader>  
-    <wsse11:EncryptedHeader
+    <wsse11:EncryptedHeader>
       <!-- encrypted wst:IssuedTokens header containing SCTi -->  
       <!-- wst:IssuedTokens header is taken verbatim from message #2 above, omitted for brevity -->  
     </wsse11:EncryptedHeader>  

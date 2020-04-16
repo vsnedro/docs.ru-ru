@@ -2,12 +2,12 @@
 title: Протоколы безопасности версии 1.0
 ms.date: 03/30/2017
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
-ms.openlocfilehash: 2014e1f6f8fefa89ed44bd820c3712617ff51470
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0b86d870350d8728134cd2b42bbeb232183535bc
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184522"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463810"
 ---
 # <a name="security-protocols-version-10"></a>Протоколы безопасности версии 1.0
 Протоколы WS-Security предоставляют механизмы обеспечения безопасности веб-служб, охватывающие все существующие требования к безопасности обмена сообщениями на предприятии. В этом разделе описывается версия 1.0 Windows Communication Foundation <xref:System.ServiceModel.Channels.SecurityBindingElement>(WCF) (реализована в ) для следующих протоколов безопасности Web-сервисов.  
@@ -62,7 +62,7 @@ ms.locfileid: "79184522"
   
  WCF использует WS-SecureConversation для обеспечения надежной поддержки сеансов для защиты обмена мультисообщениями между приложениями.  Сведения о реализации см. ниже в подразделе "Безопасные сеансы".  
   
- В дополнение к режимам аутентификации, WCF предоставляет настройки для управления общими механизмами защиты, которые применяются к большинству режимов проверки подлинности на основе сообщений, например: порядок операций шифрования по сравнению с шифрованием, наборы алгоритмов, производные ключевые элементы , и подтверждение подписи.  
+ В дополнение к режимам аутентификации, WCF предоставляет настройки для управления общими механизмами защиты, которые применяются к большинству режимов проверки подлинности на основе сообщений, например: порядок операций шифрования по сравнению с шифрованием, наборы алгоритмов, производство ключей и подтверждение подписи.  
   
  В данном документе используются перечисленные ниже префиксы и пространства имен.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "79184522"
 |------------|---------------|  
 |s|<http://www.w3.org/2003/05/soap-envelope/>|
 |sp|<http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/>|
-|a|<http://www.w3.org/2005/08/addressing>|  
+|а|<http://www.w3.org/2005/08/addressing>|  
 |wsse|Подлежит определению - универсальный код ресурса (URI) OASIS WSS 1,0|  
 |wsse11|Подлежит определению - универсальный код ресурса (URI) OASIS WSS 1.1|  
 |wsu|Подлежит определению - универсальный код ресурса (URI) OASIS WSS 1.0 Utility|  
@@ -250,7 +250,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   <wsu:Timestamp u:Id="_0">  
   ...  
   </wsu:Timestamp>  
-  <wsse:UsernameToken ... >  
+  <wsse:UsernameToken>  
   ...  
   </wsse:UsernameToken>  
 </wsse:Security>  
@@ -437,7 +437,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   <wsu:Timestamp>  
   ...  
   </wsu:Timestamp>  
-  <saml:Assertion ...>  
+  <saml:Assertion>  
   ...  
   </saml:Assertion>  
   <ds:Signature>  
@@ -1856,7 +1856,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
         <wsp:Policy>  
           <sp:ProtectionToken>  
             <wsp:Policy>  
-              <mssp:SslContextToken sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient' />  
+              <mssp:SslContextToken sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient'>  
                 <wsp:Policy>  
                   <sp:RequireDerivedKeys />
                 </wsp:Policy>  

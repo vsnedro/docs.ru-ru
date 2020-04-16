@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Web services protocols
 - Windows Communication Foundation, Web service protocols
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
-ms.openlocfilehash: a1e67401a09370a46bc7a3e8546c95467bc18b67
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 25efda74d205a36332a801e91ddc508796f7df5d
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184144"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463992"
 ---
 # <a name="web-services-protocols-supported-by-system-provided-interoperability-bindings"></a>Протоколы веб-служб, поддерживаемые предоставляемыми системой привязками
 Фонд связи Windows (WCF) создан для взаимодействия с web-сервисами, поддерживающими набор спецификаций, известных как спецификации Web-сервисов. Для упрощения конфигурации сервиса для наилучшей совместимости, WCF вводит три <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>совместимых системных привязки: <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType>, и <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>. Для совместимости с Организацией по улучшению стандартов структурированной информации (OASIS) WCF включает в <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType>себя одну совместимую систему, предоставленную привязкой: . Для публикации метаданных WCF включает в себя две совместимые системы, предоставленные привязки: [ \<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) и [ \<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md). В этом разделе перечислены спецификации, поддерживаемые предоставляемыми системой привязками с возможностью взаимодействия.  
@@ -76,7 +76,7 @@ ms.locfileid: "79184144"
        <message issuedKeyType="Symmetric"
                 issuedTokenType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1">  
          <issuerMetadata address =
-         'http://localhost/FederationSample/HomeRealmSTS/STS.svc/mex'>  
+         'http://localhost/FederationSample/HomeRealmSTS/STS.svc/mex'/>  
        </message>  
      </security>  
   </binding>  
@@ -108,7 +108,7 @@ ms.locfileid: "79184144"
 |Обмен сообщениями|WS-Addressing 2005/08|[Web Services Addressing 1.0 - Core](https://www.w3.org/TR/ws-addr-core/)<br /><br /> [Web Services Addressing 1.0 - SOAP](https://www.w3.org/TR/ws-addr-soap/)|  
 |Метаданные|WS-MetadataExchange|[WS-MetadataExchange](http://specs.xmlsoap.org/ws/2004/09/mex/WS-MetadataExchange.pdf)<br /><br /> WCF реализует WS-MetadataExchange для получения XML Schema, WSDL и WS-Policy.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Привязки, предоставляемые системой](../../../../docs/framework/wcf/system-provided-bindings.md)
 - [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)

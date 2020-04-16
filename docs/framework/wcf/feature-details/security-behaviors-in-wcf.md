@@ -2,12 +2,12 @@
 title: Поведения безопасности в WCF
 ms.date: 03/30/2017
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
-ms.openlocfilehash: f56bbd66aa61b8db9d6e720fb3a67ddbbf5e267e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9f96abac0f5f32279c5579dd01c3dd7f2dc1786c
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184536"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81464051"
 ---
 # <a name="security-behaviors-in-wcf"></a>Поведения безопасности в WCF
 В Фонде связи Windows (WCF) поведение изменяет поведение времени выполнения на уровне обслуживания или на уровне конечных точек. (Для получения дополнительной информации о поведении в целом [см.](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md) *Поведение безопасности* позволяет контролировать журналы учетных данных, проверки подлинности, авторизации и аудита. Поведения можно использовать путем программирования или через конфигурацию. В этом разделе основное внимание уделяется настройке следующих поведений, связанных с функциями безопасности:  
@@ -82,7 +82,7 @@ ms.locfileid: "79184536"
   
 - Задайте набор допустимых универсальных кодов ресурса (URI), добавив их в данную коллекцию. Для этого вставьте [ \<>добавления](../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowedaudienceuris.md) для каждого URI  
   
- Дополнительные сведения см. в разделе <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>.  
+ Для получения дополнительной информации см. <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>.  
   
  Для получения дополнительной информации об использовании этого элемента конфигурации [см.](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
   
@@ -112,6 +112,7 @@ ms.locfileid: "79184536"
    </clientCredentials>  
   </behavior>  
  </endpointBehaviors>  
+</behaviors>  
 ```  
   
 #### <a name="clientcertificate-element"></a>\<> элемент аттестата>  
@@ -135,6 +136,9 @@ ms.locfileid: "79184536"
       <issuerChannelBehaviors>  
          <add issuerAddress="http://www.contoso.com"  
                behaviorConfiguration="clientBehavior1" />
+      </issuerChannelBehaviors>  
+   </issuedToken>  
+</clientCredentials>
 ```  
   
 #### <a name="servicecertificate-element"></a>\<serviceCertificate> Элемент  
@@ -191,15 +195,15 @@ ms.locfileid: "79184536"
  Используйте [ \<сервисSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) указать журнал, написанный, и какие типы событий для входа. Для получения дополнительной [информации см.](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
   
 ```xml  
-<system.serviceModel>  
-<serviceBehaviors>  
+<behaviors>
+ <serviceBehaviors>  
   <behavior name="NewBehavior">  
     <serviceSecurityAudit auditLogLocation="Application"
              suppressAuditFailure="true"  
              serviceAuthorizationAuditLevel="Success"
              messageAuthenticationAuditLevel="Success" />  
-    </behavior>  
-  </serviceBehaviors>  
+  </behavior>  
+ </serviceBehaviors>  
 </behaviors>  
 ```  
   
@@ -217,7 +221,7 @@ ms.locfileid: "79184536"
 </behaviors>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Аудита](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [Аудит](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
