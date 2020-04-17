@@ -119,7 +119,7 @@
       href: programming-guide/types/index.md
     - name: 'Ссылочные типы, допускающие значение null'
       href: nullable-references.md
-    - name: 'Описание API, допускающих значение null, с помощью атрибутов и ограничений'
+    - name: 'Обновление сигнатур API для ссылочных типов, допускающих значение NULL'
       href: nullable-attributes.md
     - name: Пространства имен
       href: programming-guide/namespaces/index.md
@@ -355,16 +355,10 @@
               href: programming-guide/concepts/attributes/index.md
             - name: Создание настраиваемых атрибутов
               href: programming-guide/concepts/attributes/creating-custom-attributes.md
-            - name: AttributeUsage
-              href: programming-guide/concepts/attributes/attributeusage.md
             - name: Обращение к атрибутам с помощью отражения
               href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
             - name: Практическое руководство. Создание объединения C/C++ с помощью атрибутов
               href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
-            - name: Общие атрибуты
-              href: programming-guide/concepts/attributes/common-attributes.md
-        - name: Сведения о вызывающем объекте
-          href: programming-guide/concepts/caller-information.md
         - name: Коллекции
           href: programming-guide/concepts/collections.md
         - name: Ковариантность и контрвариантность
@@ -1664,6 +1658,19 @@
           href: language-reference/tokens/interpolated.md
         - name: '@ — буквальный идентификатор'
           href: language-reference/tokens/verbatim.md
+    - name: Считываемые компилятором атрибуты
+      items:
+        - name: Глобальные атрибуты
+          displayName: 'AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias'
+        - name: Общее
+          displayName: 'Conditional, Obsolete, AttributeUsage'
+          href: language-reference/attributes/general.md
+        - name: Сведения о вызывающем объекте
+          displayName: 'CallerFilePath, CallerLineNumber, CallerMemberName'
+          href: language-reference/attributes/caller-information.md
+        - name: 'Статический анализ типов, допускающих значения NULL'
+          displayName: 'AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf'
+          href: language-reference/attributes/nullable-analysis.md
     - name: "Директивы препроцессора\_C#"
       items:
         - name: Обзор
