@@ -7,12 +7,12 @@ helpviewer_keywords:
 - deploying [WCF Data Services
 - developing applications [WCF Data Services]
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
-ms.openlocfilehash: 4591175da5078a194bfe69884701e5432a0c38a3
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 5c473f818ea874392011065dc3d07101d2ef3bf5
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389731"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607962"
 ---
 # <a name="develop-and-deploy-wcf-data-services"></a>Разработка и развертывание служб данных WCF
 
@@ -42,7 +42,7 @@ ms.locfileid: "81389731"
 
 1. **Локальный сервер служб IIS**
 
-     При создании службы данных, которая является ASP.NET приложением или веб-сайтом ASP.NET, который работает на Информационных службах Интернета (IIS), мы рекомендуем вам разработать и протестировать службу данных с помощью IIS на локальном компьютере. Запуск службы данных в IIS упрощает трассировку HTTP-запросов во время отладки. Это также позволяет заранее определить необходимые права, которые требуются службам IIS для доступа к файлам, базам данных и другим ресурсам для службы данных. Чтобы запустить службу данных на IIS, убедитесь, что IIS и Windows Communication Foundation (WCF) установлены и настроены правильно и предоставляете доступ к учетным записям IIS в файловой системе и базах данных. Для получения дополнительной информации см. [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
+     При создании службы данных, которая является ASP.NET приложением или веб-сайтом ASP.NET, который работает на Информационных службах Интернета (IIS), мы рекомендуем вам разработать и протестировать службу данных с помощью IIS на локальном компьютере. Запуск службы данных в IIS упрощает трассировку HTTP-запросов во время отладки. Это также позволяет заранее определить необходимые права, требуемые IIS для доступа к файлам, базам данных и другим ресурсам, требуемым службой данных. Чтобы запустить службу данных на IIS, убедитесь, что IIS и Windows Communication Foundation (WCF) установлены и настроены правильно и предоставляете доступ к учетным записям IIS в файловой системе и базах данных. Для получения дополнительной информации см. [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
 
     > [!NOTE]
     > Необходимо запустить Visual Studio с правами администратора, чтобы создать среду для настройки локального сервера IIS.
@@ -51,7 +51,7 @@ ms.locfileid: "81389731"
 
      Visual Studio включает в себя встроенный веб-сервер Visual Studio Development Server, который является веб-сервером по умолчанию для ASP.NET проектов. Этот веб-сервер предназначен для запуска ASP.NET проектов на локальном компьютере во время разработки. [Быстрый запуск WCF Data Services](quickstart-wcf-data-services.md) показывает, как создать службу данных, которая работает в сервере разработки Visual Studio.
 
-     Вы должны знать о следующих ограничениях при использовании сервера разработки визуальных студий для разработки службы данных:
+     Имейте в виду следующие ограничения при использовании Visual Studio Development Server для разработки службы данных:
 
     - Доступ к этому серверу возможен только с локального компьютера.
 
@@ -68,9 +68,9 @@ ms.locfileid: "81389731"
     > [!TIP]
     > Даже если вы можете использовать Visual Studio Development Server для тестирования служб данных во время разработки, следует проверить их снова после развертывания на веб-сервере, который работает IIS.
 
-3. **Среда разработки Microsoft Azure**
+3. **Среда разработки Azure**
 
-     Windows Azure Tools for Visual Studio включает в себя интегрированный набор инструментов для разработки служб Windows Azure в Visual Studio. С помощью этих средств можно разрабатывать службы данных, которые могут развертываться на Microsoft Azure, а также тестировать службу данных на локальном компьютере перед развертыванием. Используйте эти инструменты при использовании Visual Studio для разработки службы данных, которая работает на платформе Windows Azure. Для получения информации об [Azure tools for Visual Studio 2015](../../../azure/sdk/vs2015-install.md)установке инструментов, см. Для получения дополнительной информации о разработке службы данных, которая работает на Windows Azure, см. [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure)
+     Windows Azure Tools for Visual Studio включает в себя интегрированный набор инструментов для разработки сервисов Azure в Visual Studio. С помощью этих инструментов можно создать службу данных, которая может быть развернута в Azure, и протестировать службу данных на локальном компьютере перед развертыванием. Используйте эти инструменты при использовании Visual Studio для разработки службы данных, которая работает на платформе Azure. Для получения информации об [Azure tools for Visual Studio 2015](../../../azure/sdk/vs2015-install.md)установке инструментов, см. Для получения дополнительной информации о разработке службы [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure)данных, которая работает в Azure, см.
 
 ### <a name="development-tips"></a>Советы по разработке
 
@@ -92,7 +92,7 @@ ms.locfileid: "81389731"
 
 - **Веб-сервер, размещенный в службах IIS**
 
-    Когда служба данных разрабатывается как ASP.NET проект, она может быть развернута на веб-сервере IIS с помощью стандартных процессов развертывания ASP.NET.  Visual Studio предоставляет следующие технологии развертывания для ASP.NET, в зависимости от вида ASP.NET проекта, в котором размещается развернутая служба данных.
+    Когда служба данных разрабатывается как ASP.NET проект, она может быть развернута на веб-сервере IIS с помощью стандартных процессов развертывания ASP.NET. Visual Studio предоставляет следующие технологии развертывания для ASP.NET, в зависимости от вида ASP.NET проекта, в котором размещается развернутая служба данных.
 
   - **Технологии развертывания для веб-приложений ASP.NET**
 
@@ -113,9 +113,9 @@ ms.locfileid: "81389731"
     > [!TIP]
     > Прежде чем пытаться выполнить развертывание службы данных в IIS, обязательно протестируйте развертывание на веб-сервере, где работают службы IIS. Для получения дополнительной информации см. [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
 
-- **Microsoft Azure**
+- **Azure**
 
-     Вы можете развернуть службу данных в Windows Azure с помощью инструментов Windows Azure для визуальной студии. Вы можете скачать Windows Azure Tools для визуальной студии из [Центра загрузки Microsoft.](https://go.microsoft.com/fwlink/?LinkID=201848) Для получения дополнительной информации о развертывании службы [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure)данных в Windows Azure см.
+     Вы можете развернуть службу данных в Azure с помощью [инструментов Azure для Visual Studio.](../../../azure/sdk/vs2015-install.md) Для получения дополнительной информации о развертывании службы данных в Azure см. [Развертывание службы OData в Azure.](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure)
 
 ### <a name="deployment-considerations"></a>Требования к развертыванию
 

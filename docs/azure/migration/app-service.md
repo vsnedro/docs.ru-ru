@@ -3,16 +3,16 @@ title: Перенос веб-приложения или службы .NET в С
 description: Узнайте о миграции веб-приложения или сервиса .NET из предварительного приложения в Службу приложений Azure.
 ms.topic: conceptual
 ms.date: 08/11/2018
-ms.openlocfilehash: c9ef679743ce00add422110b11f2bfbdd8343530
-ms.sourcegitcommit: b75a45f0cfe012b71b45dd9bf723adf32369d40c
+ms.openlocfilehash: 57f3b981a1d94c2193160f55f9c8242da694c169
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "81433238"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607879"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Перенос веб-приложения или службы .NET в Службу приложений Azure
 
-[App Service](https://docs.microsoft.com/azure/app-service/app-service-web-overview#why-use-web-apps) — это полностью управляемый сервис вычислительной платформы, оптимизированный для хостинга масштабируемых веб-сайтов и веб-приложений. В этой статье приводится информация о том, как поднять и перенести существующее приложение в службу приложений Azure, изменения для рассмотрения и дополнительные ресурсы для [перехода в облако.](https://azure.microsoft.com/migration/web-applications/) Большинство веб-сайтов ASP.NET (WebForms, MVC) и служб (веб-API, WCF) можно переместить в Службу приложений Azure без каких-либо изменений. Для некоторых могут потребоваться незначительные изменения, в то время как для других может понадобиться рефакторинг.
+[App Service](https://docs.microsoft.com/azure/app-service/overview) — это полностью управляемый сервис вычислительной платформы, оптимизированный для хостинга масштабируемых веб-сайтов и веб-приложений. В этой статье приводится информация о том, как поднять и перенести существующее приложение в службу приложений Azure, изменения для рассмотрения и дополнительные ресурсы для [перехода в облако.](https://azure.microsoft.com/migration/web-applications/) Большинство веб-сайтов ASP.NET (WebForms, MVC) и служб (веб-API, WCF) можно переместить в Службу приложений Azure без каких-либо изменений. Для некоторых могут потребоваться незначительные изменения, в то время как для других может понадобиться рефакторинг.
 
 Готовы начать работу? [Опубликуйте свое приложение ASP.NET + SQL в службе приложений Azure](https://tutorials.visualstudio.com/azure-webapp-migrate/intro).
 
@@ -44,7 +44,7 @@ BasicHttpContextBinding |
 WebHttpBinding |
 WSHttpContextBinding |
 
-### <a name="authentication"></a>Проверка подлинности
+### <a name="authentication"></a>Аутентификация
 
 Служба приложений Azure поддерживает анонимную аутентификацию по умолчанию. При необходимости можно настроить аутентификацию с помощью форм. Аутентификация Windows может использоваться только при интеграции с Azure Active Directory и ADFS. [Подробнее об интеграции локальных каталогов с Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 

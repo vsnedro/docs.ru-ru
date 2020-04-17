@@ -3,12 +3,12 @@ title: Аутентификация с использованием библио
 description: Аутентификация в библиотеках Azure для .NET
 ms.date: 08/22/2018
 ms.custom: azure-sdk-dotnet
-ms.openlocfilehash: e562b60da0a2d34f716e80d3d5d0d0b5e55b0cdb
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.openlocfilehash: f6af813cd1423be8784b769b272756b2c8258392
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "81433148"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607873"
 ---
 # <a name="authenticate-with-the-azure-libraries-for-net"></a>Аутентификация с использованием библиотек Azure для .NET
 
@@ -45,7 +45,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-Строки подключения к службам используются в других службах Azure, таких как [CosmosDB,](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db) [Azure Cache для Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache)и [Service Bus,](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues) и вы можете получить эти строки с помощью портала Azure, CLI или PowerShell. Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде.
+Строки подключения к службам используются в других службах Azure, таких как [CosmosDB,](https://docs.microsoft.com/azure/cosmos-db/) [Azure Cache для Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache)и [Service Bus.](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues) Вы можете получить эти строки с помощью портала Azure, CLI или PowerShell. Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде.
 
 В этом фрагменте кода используются библиотеки управления для создания строки подключения учетной записи хранения:
 

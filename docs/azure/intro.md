@@ -2,12 +2,12 @@
 title: Начало работы с Azure и .NET
 description: Необходимые основные сведения об Azure и .NET.
 ms.date: 03/15/2020
-ms.openlocfilehash: 69c005ff1cfbd7ecddb4666bc23c8bc5cb813519
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.openlocfilehash: 64defed4433647c2a0dcce91493d9ec77d21b541
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "81433208"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607885"
 ---
 # <a name="introduction-to-azure-and-net"></a>Введение в Azure и .NET
 
@@ -47,9 +47,9 @@ ms.locfileid: "81433208"
 * [Виртуальные машины Azure](https://docs.microsoft.com/azure/virtual-machines/). Если Служба приложений Azure не соответствует требованиям к размещению существующего приложения из-за определенных зависимостей, начните с размещения на Виртуальных машинах Azure. Сведения о том, как приступить к работе и разместить приложения ASP.NET и WCF на Виртуальных машинах Azure, см. в [соответствующем разделе](https://tutorials.visualstudio.com/aspnet-vm/intro).
 
 > [!TIP]
-> Полный список служб Azure см. в разделе [Варианты вычислительных служб в Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options). Дополнительные сведения о выборе службы см. в статье [Дерево принятия решений для вычислительных служб Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
+> Для получения дополнительной информации о выборе службы [см.](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)
 
-## <a name="choosing-a-data-storage-service"></a>Выбор службы хранения данных
+## <a name="choose-a-data-storage-service"></a>Выберите службу хранения данных
 
 В Azure представлено несколько служб хранения данных, учитывающих различные требования. Разработчики .NET чаще всего используют следующие службы хранения данных:
 
@@ -62,7 +62,7 @@ ms.locfileid: "81433208"
 > [!TIP]
 > Дополнительные сведения см. в статье [Выбор правильного хранилища данных](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
 
-## <a name="connecting-to-azure-services"></a>Подключение к службам Azure
+## <a name="connect-to-azure-services"></a>Подключение к службам Azure
 
 При использовании Visual Studio можно добавить в проекты поддержку определенных служб Azure. Диалог **Подключенные службы** в Visual Studio предоставляет простой способ добавления необходимых ссылок, кода для подключения и параметров конфигурации в проекты. Изначально поддерживаются некоторые часто используемые службы Azure, среди которых [служба хранилища](/azure/vs-azure-tools-connected-services-storage), аутентификация [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service), [Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service) и [Cognitive Services](/azure/cognitive-services/), например [Компьютерное зрение](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service). Дополнительные службы, в том числе предоставляемые другими компаниями, доступны в виде расширений в [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance).
 

@@ -3,12 +3,12 @@ title: Получите образцы баз данных S'L Server для ADO
 description: Загрузите образцы баз данных S'L Server, используемые в образцах кода в документации ADO.NET, а также инструменты s'L Server и управления
 ms.date: 01/11/2019
 ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
-ms.openlocfilehash: 19d659cbe8f39d27b71dc59c738355f12fce92a0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3449f502834f449f5023bd52457d45ffaf9b0fa1
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79148391"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607988"
 ---
 # <a name="get-the-sample-databases-for-adonet-code-samples"></a>Получить образцы баз данных для образцов кода ADO.NET
 
@@ -37,7 +37,7 @@ ms.locfileid: "79148391"
 
 1. В новом окне, в текстовом окне **имя файла,** укажите имя файла для вашей копии базы данных Northwind.
 
-1. Выберите **Создать**. Access загружает базу данных Northwind и готовит файл.
+1. Нажмите кнопку **создания**. Access загружает базу данных Northwind и готовит файл.
 
 1. Когда этот процесс завершен, база данных открывается с экрана Welcome.
 
@@ -54,7 +54,7 @@ ms.locfileid: "79148391"
 
 [Скачивание SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 
-Вы также можете просматривать и управлять базами данных в интегрированной среде разработки Visual Studio (IDE). В [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)подключитесь к базе данных из **S'L Server Object Explorer**или создайте подключение к базе данных в Server **Explorer.** Откройте эти панели исследователей из меню **View.**
+Вы также можете просматривать и управлять базами данных в интегрированной среде разработки Visual Studio (IDE). В [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)подключитесь к базе данных из **S'L Server Object Explorer**или создайте подключение к базе данных в Server **Explorer.** Откройте эти панели исследователей из меню **View.**
 
 ## <a name="get-sql-server-express"></a><a name="get_sql"></a>Получить сервер экспресс S'L
 
@@ -62,8 +62,8 @@ S'L Server Express — это бесплатное издание сервера
   
 [SQL Server Express Edition](https://www.microsoft.com/sql-server/sql-server-editions-express)
 
-Если вы используете [Visual Studio,](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)S'L Server Express LocalDB включен в бесплатное издание Сообщества Visual Studio, а также профессиональные и более высокие издания.  
+Если вы используете [Visual Studio,](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)S'L Server Express LocalDB включен в бесплатное издание Сообщества Visual Studio, а также профессиональные и более высокие издания.  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Начало работы](getting-started.md)
