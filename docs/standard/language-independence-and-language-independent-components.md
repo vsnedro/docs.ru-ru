@@ -13,12 +13,12 @@ helpviewer_keywords:
 - runtime, language interoperability
 - common language runtime, language interoperability
 ms.assetid: 4f0b77d0-4844-464f-af73-6e06bedeafc6
-ms.openlocfilehash: 689ca9f7278dcf91b12bc62b5255a968388bb9f8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 725884d8ab6d6d9009ad1cdd7bc185889cd5e485
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79398787"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243067"
 ---
 # <a name="language-independence-and-language-independent-components"></a>Независимость от языка и независимые от языка компоненты
 
@@ -527,7 +527,7 @@ CLS-совместимый интерфейс может определять с
 
 ## <a name="the-clscompliantattribute-attribute"></a>Атрибут CLSCompliantAttribute
 
-Атрибут <xref:System.CLSCompliantAttribute> указывает, соответствует ли элемент правилам спецификации CLS. Конструктор <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> имеет один обязательный параметр `isCompliant`, определяющий, является ли элемент программы CLS-совместимым.
+Атрибут <xref:System.CLSCompliantAttribute> указывает, соответствует ли элемент правилам спецификации CLS. Конструктор <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29> имеет один обязательный параметр `isCompliant`, определяющий, является ли элемент программы CLS-совместимым.
 
 Компилятор определяет элементы, которые предположительно соответствуют CLS, однако не соответствуют правилам спецификации CLS, и выдает предупреждение. Он пропускает типы и члены, которые явно объявлены как не соответствующие правилам спецификации CLS.
 

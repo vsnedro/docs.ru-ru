@@ -2,12 +2,12 @@
 title: Команда dotnet nuget add source
 description: Команда dotnet nuget add source добавляет новый источник пакета в файлы конфигурации NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: c1e398699c7482a69b750cde718e6f9178b5c4bd
-ms.sourcegitcommit: 07123a475af89b6da5bb6cc51ea40ab1e8a488f0
+ms.openlocfilehash: 319501e026f1c3102006b0be5357f127b8e366a7
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80148492"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463591"
 ---
 # <a name="dotnet-nuget-add-source"></a>dotnet nuget add source
 
@@ -20,10 +20,11 @@ ms.locfileid: "80148492"
 ## <a name="synopsis"></a>Краткий обзор
 
 ```dotnetcli
-dotnet nuget add source <PACKAGE_SOURCE_PATH> [--name] [--username]
-    [--password] [--store-password-in-clear-text] [--valid-authentication-types]
-    [--configfile]
-dotnet nuget add source [-h|--help]
+dotnet nuget add source <PACKAGE_SOURCE_PATH> [--name <SOURCE_NAME>] [--username <USER>]
+    [--password <PASSWORD>] [--store-password-in-clear-text]
+    [--valid-authentication-types <TYPES>] [--configfile <FILE>]
+
+dotnet nuget add source -h|--help
 ```
 
 ## <a name="description"></a>Описание
@@ -38,15 +39,15 @@ dotnet nuget add source [-h|--help]
 
 ## <a name="options"></a>Параметры
 
-- **`--configfile`**
+- **`--configfile <FILE>`**
 
   Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
-- **`-n|--name`**
+- **`-n|--name <SOURCE_NAME>`**
 
   Имя источника.
 
-- **`-p|--password`**
+- **`-p|--password <PASSWORD>`**
 
   Пароль, используемый при подключении к источнику, прошедшему проверку подлинности.
 
@@ -54,11 +55,11 @@ dotnet nuget add source [-h|--help]
 
   Включает сохранение учетных данных переносимого источника пакетов путем отключения шифрования паролей.
 
-- **`-u|--username`**
+- **`-u|--username <USER>`**
 
   Имя пользователя, используемое при подключении к источнику, прошедшему проверку подлинности.
 
-- **`--valid-authentication-types`**
+- **`--valid-authentication-types <TYPES>`**
 
   Разделенный запятыми список допустимых типов проверки подлинности для этого источника. Задайте значение `basic`, если сервер объявляет NTLM или Negotiate. Ваши учетные данные следует отправлять с помощью базового механизма, например, при использовании PAT с локальным Azure DevOps Server. К другим допустимым значениям относятся `negotiate`, `kerberos`, `ntlm` и `digest`, но они вряд ли будут полезны.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - .NET Framework regular expressions, best practices
 - regular expressions, best practices
 ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
-ms.openlocfilehash: 9b09f5a2505888c6154a58a3512c94c51f89295b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ff04b4950f48f2ba06f60b65cc3a46f1295711f3
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "77124426"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243158"
 ---
 # <a name="best-practices-for-regular-expressions-in-net"></a>Рекомендации по использованию регулярных выражений в .NET
 
@@ -219,7 +219,7 @@ ms.locfileid: "77124426"
 
 Интервал времени ожидания регулярного выражения определяет период времени, в течение которого обработчик регулярных выражений выполняет поиск одного совпадения, после чего время ожидания истекает. По умолчанию интервал времени ожидания равен <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType>, что означает, что регулярное выражение имеет неограниченное время ожидания. Можно переопределить это значение и задать интервал времени ожидания следующим образом:
 
-- предоставив значение времени ожидания при создании экземпляра объекта <xref:System.Text.RegularExpressions.Regex> путем вызова конструктора <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>;
+- предоставив значение времени ожидания при создании экземпляра объекта <xref:System.Text.RegularExpressions.Regex> путем вызова конструктора <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29>;
 
 - путем вызова статического метода поиска совпадения с шаблоном, такого как <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> или <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>, который имеет параметр `matchTimeout`;
 

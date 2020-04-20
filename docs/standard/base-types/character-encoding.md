@@ -11,12 +11,12 @@ helpviewer_keywords:
 - encoding, choosing
 - encoding, fallback strategy
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
-ms.openlocfilehash: 063cac1de6634125d7dabad9d627bceff877e567
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.openlocfilehash: 1a294a577d10b3e621871b168344f2b0610693dd
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79546741"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81242742"
 ---
 # <a name="how-to-use-character-encoding-classes-in-net"></a>Использование классов кодировки символов в .NET
 
@@ -37,7 +37,7 @@ ms.locfileid: "79546741"
 
 - Вызвать конструктор класса кодировки. Таким образом могут быть созданы объекты для кодировок ASCII, UTF-7, UTF-8, UTF-16 и UTF-32. По умолчанию каждый объект использует резервную стратегию замены для обработки строк, которые он не может закодировать, и байтов, которые он не может декодировать, но вы можете указать, чтобы вместо этого создавалось исключение. Дополнительные сведения см. в разделе [Replacement fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) и [Exception fallback](../../../docs/standard/base-types/character-encoding.md#Exception).
 
-- Вызвать конструктор <xref:System.Text.Encoding.%23ctor%28System.Int32%29?displayProperty=nameWithType> и передать ему целое число, представляющее кодировку. Объекты стандартных кодировок используют резервные стратегии замены, а объекты кодовых страниц и двухбайтовых кодировок (DBCS) используют резервную стратегию наилучшего соответствия для обработки строк, которые не удается закодировать, или байтов, которые не удается декодировать. Дополнительные сведения см. в разделе [Best-fit fallback](../../../docs/standard/base-types/character-encoding.md#BestFit).
+- Вызвать конструктор <xref:System.Text.Encoding.%23ctor%28System.Int32%29> и передать ему целое число, представляющее кодировку. Объекты стандартных кодировок используют резервные стратегии замены, а объекты кодовых страниц и двухбайтовых кодировок (DBCS) используют резервную стратегию наилучшего соответствия для обработки строк, которые не удается закодировать, или байтов, которые не удается декодировать. Дополнительные сведения см. в разделе [Best-fit fallback](../../../docs/standard/base-types/character-encoding.md#BestFit).
 
 - Вызовите метод <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>, возвращающий любую стандартную кодировку, кодовую страницу или кодировку DBCS, доступную в .NET. Перегрузки позволяют задать резервный объект как для кодировщика, так и для декодера.
 

@@ -3,12 +3,12 @@ title: Команда dotnet nuget locals
 description: Команда dotnet nuget locals очищает или перечисляет локальные ресурсы NuGet, например кэш HTTP-запросов, временный кэш или папку глобальных пакетов, используемую на уровне компьютера.
 author: karann-msft
 ms.date: 02/14/2020
-ms.openlocfilehash: 3fdd7d946b08b4c18cfaeb65013de259b927a7fa
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5b421b5058528a93c7be58eef2932937cc9cc12d
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77503682"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463530"
 ---
 # <a name="dotnet-nuget-locals"></a>dotnet nuget locals
 
@@ -22,7 +22,8 @@ ms.locfileid: "77503682"
 
 ```dotnetcli
 dotnet nuget locals <CACHE_LOCATION> [(-c|--clear)|(-l|--list)] [--force-english-output]
-dotnet nuget locals [-h|--help]
+
+dotnet nuget locals -h|--help
 ```
 
 ## <a name="description"></a>Описание:

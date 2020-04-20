@@ -14,12 +14,12 @@ helpviewer_keywords:
 - formatting [.NET Framework], time
 - date and time strings
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-ms.openlocfilehash: 5a3ba2838458d6e6833035186dfd69b34c780317
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: 5db29046bfe67c530fe3a613c126c3841e6402e1
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80248138"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81242755"
 ---
 # <a name="standard-date-and-time-format-strings"></a>Строки стандартных форматов даты и времени
 
@@ -440,7 +440,7 @@ ms.locfileid: "80248138"
 
 Параметры элемента панели управления **Язык и региональные стандарты** влияют на выходную строку, получаемую в результате операции форматирования. Эти параметры используются для инициализации объекта <xref:System.Globalization.DateTimeFormatInfo>, связанного с текущими региональными параметрами потока, который предоставляет значения, используемые для управления форматированием. Результирующие строки будут различаться на компьютерах с разными параметрами.
 
-Кроме того, если конструктор <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29?displayProperty=nameWithType> используется для создания нового экземпляра объекта <xref:System.Globalization.CultureInfo> , представляющего язык и региональные параметры, аналогичные текущему языку и региональным параметрам системы, то все настройки, заданные в разделе **Язык и региональные стандарты** панели управления, будут применяться к новому объекту <xref:System.Globalization.CultureInfo> . Можно воспользоваться конструктором <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> для создания объекта <xref:System.Globalization.CultureInfo> , который не отражает настройки системы.
+Кроме того, если конструктор <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> используется для создания нового экземпляра объекта <xref:System.Globalization.CultureInfo> , представляющего язык и региональные параметры, аналогичные текущему языку и региональным параметрам системы, то все настройки, заданные в разделе **Язык и региональные стандарты** панели управления, будут применяться к новому объекту <xref:System.Globalization.CultureInfo> . Можно воспользоваться конструктором <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> для создания объекта <xref:System.Globalization.CultureInfo> , который не отражает настройки системы.
 
 ### <a name="datetimeformatinfo-properties"></a>Свойства DateTimeFormatInfo
 

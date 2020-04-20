@@ -2,12 +2,12 @@
 title: Создание настраиваемых атрибутов (C#)
 ms.date: 07/20/2015
 ms.assetid: 500e1977-c6de-462d-abce-78a0eb1eda22
-ms.openlocfilehash: c0f25adf0d562b659edaa8f36e72332fd0c1ee7e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ec959723c339a13a40fd62388421ceacb736dfca
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69595404"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389561"
 ---
 # <a name="creating-custom-attributes-c"></a>Создание настраиваемых атрибутов (C#)
 Собственные настраиваемые атрибуты можно создать, определив класс атрибута, то есть класс, прямо или косвенно наследующий от <xref:System.Attribute>, который упрощает задание определений атрибутов в метаданных. Предположим, что требуется пометить тип тегом с именем программиста, который его разработал. Вы можете определить класс настраиваемых атрибутов `Author`:  
@@ -71,4 +71,4 @@ class SampleClass
 - [Отражение (C#)](../reflection.md)
 - [Атрибуты (C#)](./index.md)
 - [Обращение к атрибутам с помощью отражения (C#)](./accessing-attributes-by-using-reflection.md)
-- [AttributeUsage (C#)](./attributeusage.md)
+- [AttributeUsage (C#)](../../../language-reference/attributes/general.md)

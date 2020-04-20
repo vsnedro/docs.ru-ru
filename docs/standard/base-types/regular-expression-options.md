@@ -12,12 +12,12 @@ helpviewer_keywords:
 - inline option constructs
 - options parameter
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-ms.openlocfilehash: a53d7517485d2a0b02b6f11928f478a7da3f9503
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bf352d6494a823d4f7b24eb2876d9bffa5877b2b
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73972104"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81242781"
 ---
 # <a name="regular-expression-options"></a>Параметры регулярных выражений
 
@@ -40,7 +40,7 @@ ms.locfileid: "73972104"
 
 Параметры регулярных выражений можно указать одним из трех способов:
 
-- В параметре `options` конструктора класса <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> или статичного метода сопоставления шаблона (`Shared` в Visual Basic), например <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> или <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. Параметр `options` — побитовое сложение (логическое ИЛИ) значений перечисления <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.
+- В параметре `options` конструктора класса <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> или статичного метода сопоставления шаблона (`Shared` в Visual Basic), например <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29> или <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. Параметр `options` — побитовое сложение (логическое ИЛИ) значений перечисления <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.
 
   Когда параметры передаются экземпляру <xref:System.Text.RegularExpressions.Regex> с помощью параметра `options` конструктора класса, они присваиваются свойству <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>. Однако свойство <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> не отражает встроенные параметры в самом шаблоне регулярного выражения.
 

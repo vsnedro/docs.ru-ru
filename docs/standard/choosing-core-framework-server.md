@@ -3,14 +3,14 @@ title: Выбор между .NET Core и .NET Framework для серверны
 description: Рекомендации по использованию реализации .NET для создания серверных приложений на платформе .NET.
 author: cartermp
 ms.date: 06/19/2018
-ms.openlocfilehash: 393d6d89fb299e87edf55cf50991537e8afe9753
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 885a7fb3419eafa5d88ef621cf6ad04a8d48bb59
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80344153"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607497"
 ---
-# <a name="choosing-between-net-core-and-net-framework-for-server-apps"></a>Выбор между .NET Core и .NET Framework для серверных приложений
+# <a name="choose-between-net-core-and-net-framework-for-server-apps"></a>Выбор между .NET Core и .NET Framework для серверных приложений
 
 Серверные приложения на платформе .NET можно разрабатывать в двух поддерживаемых реализациях: .NET Framework и .NET Core. В них используется множество одинаковых компонентов, а код можно использовать как в одной среде, так и в другой. Но между этими двумя средами также существуют и фундаментальные различия. Поэтому ваш выбор зависит от поставленной задачи.  В этой статье содержатся рекомендации по использованию каждой из двух сред выполнения.
 
@@ -103,7 +103,7 @@ ms.locfileid: "80344153"
 ## <a name="see-also"></a>См. также
 
 - [Выбор между ASP.NET и ASP.NET Core](/aspnet/core/choose-aspnet-framework)
-- [ASP.NET Core с целевой платформой .NET Framework](/aspnet/core#aspnet-core-targeting-net-framework)
+- [ASP.NET Core с целевой платформой .NET Framework](/aspnet/core/introduction-to-aspnet-core#aspnet-core-targeting-net-framework)
 - [Целевые платформы](frameworks.md)
 - [Руководство по .NET Core](../core/index.yml)
 - [Перенос кода в .NET Core из .NET Framework](../core/porting/index.md)

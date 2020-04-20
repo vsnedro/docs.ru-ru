@@ -16,12 +16,12 @@ helpviewer_keywords:
 - formatting numbers [.NET Framework]
 - format specifiers, custom numeric format strings
 ms.assetid: 6f74fd32-6c6b-48ed-8241-3c2b86dea5f4
-ms.openlocfilehash: 1eb9c3c189d7bba3a12fdcd0c3d600a66bf819ca
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5961cce4601a89b34708b7090207edfed63b5b08
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75348310"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81242989"
 ---
 # <a name="custom-numeric-format-strings"></a>Строки настраиваемых числовых форматов
 
@@ -265,7 +265,7 @@ ms.locfileid: "75348310"
 
 На строку, полученную в результате форматирования, влияют параметры, задаваемые в разделе **Язык и региональные стандарты** панели управления. Эти параметры используются для инициализации объекта <xref:System.Globalization.NumberFormatInfo> , связанного с текущей культурой потока, а текущая культура потока предоставляет значения, которые используются для управления форматированием. Результирующие строки будут различаться на компьютерах с разными параметрами.
 
-Кроме того, если конструктор <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29?displayProperty=nameWithType> используется для создания экземпляра объекта <xref:System.Globalization.CultureInfo>, который представляет язык и региональные параметры, аналогичные текущему языку и региональным параметрам системы, все настройки, заданные в разделе **Язык и региональные стандарты** панели управления, будут применяться к новому объекту <xref:System.Globalization.CultureInfo>. Можно воспользоваться конструктором <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> для создания объекта <xref:System.Globalization.CultureInfo> , который не отражает настройки системы.
+Кроме того, если конструктор <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> используется для создания экземпляра объекта <xref:System.Globalization.CultureInfo>, который представляет язык и региональные параметры, аналогичные текущему языку и региональным параметрам системы, все настройки, заданные в разделе **Язык и региональные стандарты** панели управления, будут применяться к новому объекту <xref:System.Globalization.CultureInfo>. Можно воспользоваться конструктором <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> для создания объекта <xref:System.Globalization.CultureInfo> , который не отражает настройки системы.
 
 ### <a name="rounding-and-fixed-point-format-strings"></a>Строки формата с фиксированной запятой и округлением
 

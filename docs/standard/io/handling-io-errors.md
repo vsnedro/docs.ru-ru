@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 51eb0e758f1ae8fb41c842ef9b32a9f8928af9ac
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c592039b3b12eedcfceda45c2f54403a8e04b5d5
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73120746"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81242677"
 ---
 # <a name="handling-io-errors-in-net"></a>Обработка ошибок ввода-вывода в .NET
 
@@ -39,7 +39,7 @@ ms.locfileid: "73120746"
 
 Например, при вызове метода в операционной системе Windows код ошибки `ERROR_FILE_NOT_FOUND` (или 0x02) преобразуется в исключение <xref:System.IO.FileNotFoundException>, а код ошибки `ERROR_PATH_NOT_FOUND` (или 0x03) — в <xref:System.IO.DirectoryNotFoundException>.
 
-К сожалению, точные условия возникновения определенных кодов ошибок в операционной системе часто не документируются или документируются в недостаточном объеме. Это означает, что возможны непредвиденные исключения. Например, при работе с каталогом логично ожидать, что передача недопустимого пути в конструктор <xref:System.IO.DirectoryInfo.%23ctor%2A?displayProperty=nameWithType> приведет к созданию исключения <xref:System.IO.DirectoryNotFoundException>. Но в этой ситуации может создаваться и <xref:System.IO.FileNotFoundException>.
+К сожалению, точные условия возникновения определенных кодов ошибок в операционной системе часто не документируются или документируются в недостаточном объеме. Это означает, что возможны непредвиденные исключения. Например, при работе с каталогом логично ожидать, что передача недопустимого пути в конструктор <xref:System.IO.DirectoryInfo.%23ctor%2A> приведет к созданию исключения <xref:System.IO.DirectoryNotFoundException>. Но в этой ситуации может создаваться и <xref:System.IO.FileNotFoundException>.
 
 ## <a name="exception-handling-in-io-operations"></a>Обработка исключений при операциях ввода-вывода
 

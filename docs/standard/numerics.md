@@ -11,12 +11,12 @@ helpviewer_keywords:
 - numerics
 - BigInteger
 ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
-ms.openlocfilehash: 3e9c817006930a36ebdce5c5965d78f1721c7056
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: ec5d4c088d3a954a4670891e3bb115c73e6cfdcf
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635145"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81242768"
 ---
 # <a name="numerics-in-net"></a>Числовые значения в .NET
 
@@ -62,7 +62,7 @@ ms.locfileid: "80635145"
 
 Каждый тип с плавающей запятой поддерживает набор стандартных арифметических операторов. Класс <xref:System.Math?displayProperty=nameWithType> предоставляет методы для широкого набора математических функций. .NET Core 2.0 и более поздних версий содержит класс <xref:System.MathF?displayProperty=nameWithType>, методы которого принимают аргументы с типом <xref:System.Single>.
 
-Вы также можете работать с отдельными битами значений типа <xref:System.Double> и <xref:System.Single> с помощью класса <xref:System.BitConverter?displayProperty=nameWithType>. Структура <xref:System.Decimal?displayProperty=nameWithType> имеет собственные методы, <xref:System.Decimal.GetBits%2A?displayProperty=nameWithType> и <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29?displayProperty=nameWithType>, для работы с отдельными битами десятичного значения, а также собственный набор методов для выполнения некоторых дополнительных математических операций.
+Вы также можете работать с отдельными битами значений типа <xref:System.Double> и <xref:System.Single> с помощью класса <xref:System.BitConverter?displayProperty=nameWithType>. Структура <xref:System.Decimal?displayProperty=nameWithType> имеет собственные методы, <xref:System.Decimal.GetBits%2A?displayProperty=nameWithType> и <xref:System.Decimal.%23ctor%28System.Int32%5B%5D%29>, для работы с отдельными битами десятичного значения, а также собственный набор методов для выполнения некоторых дополнительных математических операций.
   
 Типы <xref:System.Double> и <xref:System.Single> предназначены для значений, которые по своему характеру являются неточными (например, расстояние между двумя звездами), и для случаев, когда не требуются высокая степень точности и малая погрешность округления. Тип <xref:System.Decimal?displayProperty=nameWithType> используется в случаях, когда требуется большая точность и минимальная погрешность округления.
 

@@ -2,12 +2,12 @@
 title: Команда dotnet help
 description: Команда dotnet help выводит более подробную документацию из Интернета для указанной команды.
 ms.date: 02/14/2020
-ms.openlocfilehash: f5d9221ae18653451a3bf97dc82fae396ae4e288
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a59e74a318118b6fd39d1895df02d76daa6fc9e1
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77503726"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463688"
 ---
 # <a name="dotnet-help-reference"></a>Справочник по команде dotnet help
 
@@ -19,7 +19,9 @@ ms.locfileid: "77503726"
 
 ## <a name="synopsis"></a>Краткий обзор
 
-`dotnet help <COMMAND_NAME> [-h|--help]`
+```dotnetcli
+dotnet help <COMMAND_NAME> [-h|--help]
+```
 
 ## <a name="description"></a>Описание:
 
