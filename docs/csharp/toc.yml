@@ -1506,7 +1506,7 @@
           items:
             - name: 'null'
               href: language-reference/keywords/null.md
-            - name: True и False
+            - name: true и false
               href: language-reference/builtin-types/bool.md
             - name: default
               href: language-reference/keywords/default.md
@@ -1529,7 +1529,7 @@
               href: language-reference/keywords/set.md
             - name: when (условие фильтра)
               href: language-reference/keywords/when.md
-            - name: значение
+            - name: value
               href: language-reference/keywords/value.md
             - name: yield
               href: language-reference/keywords/yield.md

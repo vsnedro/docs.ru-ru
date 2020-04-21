@@ -27,14 +27,14 @@ ms.locfileid: "79397542"
 |[abstract](abstract.md)|[as](../operators/type-testing-and-cast.md#as-operator)|[base](base.md)|[bool](../builtin-types/bool.md);|  
 |[break](break.md)|[byte](../builtin-types/integral-numeric-types.md)|[case](switch.md)|[catch](try-catch.md)|  
 |[char](../builtin-types/char.md)|[checked](checked.md)|[class](class.md)|[const](const.md)|  
-|[continue](continue.md)|[decimal](../builtin-types/floating-point-numeric-types.md)|[значение по умолчанию](default.md)|[delegate](../builtin-types/reference-types.md)|  
+|[continue](continue.md)|[decimal](../builtin-types/floating-point-numeric-types.md)|[default](default.md)|[delegate](../builtin-types/reference-types.md)|  
 |[do](do.md)|[double](../builtin-types/floating-point-numeric-types.md)|[else](if-else.md)|[enum](../builtin-types/enum.md)|  
 |[event](event.md)|[explicit](../operators/user-defined-conversion-operators.md)|[extern](extern.md)|[false](../builtin-types/bool.md)|  
 |[finally](try-finally.md)|[fixed](fixed-statement.md)|[float](../builtin-types/floating-point-numeric-types.md)|[for](for.md)|  
 |[foreach](foreach-in.md)|[goto](goto.md)|[if](if-else.md)|[implicit](../operators/user-defined-conversion-operators.md)|  
 |[in](in.md)|[int](../builtin-types/integral-numeric-types.md)|[interface](interface.md)|[internal](internal.md)|
 |[is](is.md)|[lock](lock-statement.md)|[long](../builtin-types/integral-numeric-types.md)|[namespace](namespace.md)|
-|[новую](../operators/new-operator.md)|[null](null.md)|[object](../builtin-types/reference-types.md)|[operator](../operators/operator-overloading.md)|
+|[new](../operators/new-operator.md)|[null](null.md)|[object](../builtin-types/reference-types.md)|[operator](../operators/operator-overloading.md)|
 |[out](out.md)|[override](override.md)|[params](params.md)|[private](private.md)|
 |[protected](protected.md)|[public](public.md)|[readonly](readonly.md)|[ref](ref.md)|
 |[return](return.md)|[sbyte](../builtin-types/integral-numeric-types.md)|[sealed](sealed.md)|[short](../builtin-types/integral-numeric-types.md)||
@@ -55,9 +55,9 @@ ms.locfileid: "79397542"
 |[async](async.md)|[await](../operators/await.md)|[by](by.md)|
 |[descending](descending.md)|[dynamic](../builtin-types/reference-types.md)|[equals](equals.md)|
 |[from](from-clause.md)|[get](get.md)|[global](../operators/namespace-alias-qualifier.md)|
-|[группа](group-clause.md)|[into](into.md)|[join](join-clause.md)|
+|[group](group-clause.md)|[into](into.md)|[join](join-clause.md)|
 |[let](let-clause.md)|[nameof](../operators/nameof.md)|[on](on.md)|
-|[OrderBy](orderby-clause.md)|[partial (тип)](partial-type.md)|[partial (метод)](partial-method.md)|
+|[orderby](orderby-clause.md)|[partial (тип)](partial-type.md)|[partial (метод)](partial-method.md)|
 |[remove](remove.md)|[select](select-clause.md)|[set](set.md)|
 |[unmanaged (ограничение универсального типа)](where-generic-type-constraint.md)|[value](value.md)|[var](var.md)|
 |[when (условие фильтра)](when.md)|[where (ограничение универсального типа)](where-generic-type-constraint.md)|[where (предложение запроса)](where-clause.md)|
@@ -65,4 +65,4 @@ ms.locfileid: "79397542"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [справочник по C#](../index.md)
+- [Справочник по C#](../index.md)
