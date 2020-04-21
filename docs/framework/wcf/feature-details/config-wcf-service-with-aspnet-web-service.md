@@ -5,18 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 48e1cd90-de80-4d6c-846e-631878955762
-ms.openlocfilehash: 22713aba4f86fe493ba3d16ef09c2a71b6d55fe0
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: ddd7e8c95701532010b54e5136a33d37d139f6a4
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389784"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81739233"
 ---
 # <a name="how-to-configure-wcf-service-to-interoperate-with-aspnet-web-service-clients"></a>Практическое руководство. Настройка службы WCF для взаимодействия с клиентами веб-службы ASP.NET
 
 Для настройки конечной точки службы Windows Communication Foundation (WCF) для совместимости с ASP.NET клиентами web-сервисов используйте <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType> тип в качестве обязательного типа для конечных точек службы.  
   
- В привязке можно дополнительно включить поддержку протокола HTTPS и проверку подлинности клиента на транспортном уровне. ASP.NET веб-сервисов не поддерживают кодирование сообщений <xref:System.ServiceModel.BasicHttpBinding.MessageEncoding%2A?displayProperty=nameWithType> MTOM, поэтому свойство следует <xref:System.ServiceModel.WSMessageEncoding.Text?displayProperty=nameWithType>оставить в качестве значения по умолчанию, которое является . Клиенты веб-служб ASP.Net не поддерживают WS-Security, поэтому для <xref:System.ServiceModel.BasicHttpBinding.Security%2A?displayProperty=nameWithType> должно быть задано значение <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>.  
+ В привязке можно дополнительно включить поддержку протокола HTTPS и проверку подлинности клиента на транспортном уровне. ASP.NET веб-сервисов не поддерживают кодирование сообщений <xref:System.ServiceModel.BasicHttpBinding.MessageEncoding%2A?displayProperty=nameWithType> MTOM, поэтому свойство следует <xref:System.ServiceModel.WSMessageEncoding.Text?displayProperty=nameWithType>оставить в качестве значения по умолчанию, которое является . ASP.NET веб-сервис клиентов не поддерживают <xref:System.ServiceModel.BasicHttpBinding.Security%2A?displayProperty=nameWithType> WS-Security, <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>поэтому следует установить.  
   
  Чтобы сделать метаданные для службы WCF доступными для ASP.NET инструментов генерации прокси-серверов Web service (т.е. [web Services Description Language Tool (Wsdl.exe),](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7h3ystb6(v%3dvs.100))Web Services Discovery Tool [(Disco.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cy2a3ybs(v=vs.100))и функции **Add Web Reference** в Visual Studio), следует предоставить конечную точку http/GET метаданных.  
   
@@ -24,7 +24,7 @@ ms.locfileid: "81389784"
   
 1. Создайте новый экземпляр класса <xref:System.ServiceModel.BasicHttpBinding>.  
   
-2. Если требуется, включите безопасность транспортного уровня для привязки этой конечной точки службы, задав для привязки режим безопасности <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. Для получения подробной информации, пожалуйста, смотрите [Транспортная безопасность](../../../../docs/framework/wcf/feature-details/transport-security.md).  
+2. Если требуется, включите безопасность транспортного уровня для привязки этой конечной точки службы, задав для привязки режим безопасности <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. Для получения подробной информации [см.](../../../../docs/framework/wcf/feature-details/transport-security.md)  
   
 3. Добавьте новую конечную точку приложения в узел службы, используя созданный экземпляр привязки. Подробную информацию о том, как добавить конечную точку службы в коде, можно узнать о том, [как: создать конечную точку службы в Коде.](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md)  
   

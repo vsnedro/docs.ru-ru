@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - attached properties [WPF Designer]
 ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
-ms.openlocfilehash: 5086401f4616074d364c1d387b751116120d5969
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: b207db459776c9f8fa7ea247d01071eeb8c995cf
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389003"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81739299"
 ---
 # <a name="attached-properties-overview"></a>Общие сведения о вложенных свойствах зависимостей
 
@@ -20,11 +20,11 @@ ms.locfileid: "81389003"
 
 ## <a name="prerequisites"></a>Необходимые условия<a name="prerequisites"></a>
 
-Предполагается, что вы имеете представление о свойствах зависимостей с точки зрения потребителя существующих свойств зависимостей в классах [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] и ознакомились с разделом [Общие сведения о свойствах зависимостей](dependency-properties-overview.md). Чтобы следовать примерам этой темы, вы также должны понимать XAML и знать, как писать приложения WPF.
+В этой статье предполагается, что вы понимаете свойства зависимости [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] с точки зрения потребителя существующих свойств зависимости по классам, и читаете [обзор свойств зависимости](dependency-properties-overview.md). Чтобы следовать примерам этой статьи, вы также должны понимать XAML и знать, как писать приложения WPF.
 
 ## <a name="why-use-attached-properties"></a>Зачем использовать прилагаемые свойства<a name="attached_properties_usage"></a>
 
-Среди прочего, присоединенные свойства позволяют разным дочерним элементам задавать уникальные значения для свойства, которое фактически определено в родительском элементе. Конкретным примером этого сценария является уведомление дочерними элементами родительского элемента о порядке их представления в [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. Одним из <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> примеров является свойство. Свойство <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> создается как прилагаемое свойство, потому что оно <xref:System.Windows.Controls.DockPanel>предназначено <xref:System.Windows.Controls.DockPanel> для установки на элементы, которые содержатся в , а не на себе. Класс <xref:System.Windows.Controls.DockPanel> определяет статическое <xref:System.Windows.DependencyProperty> поле, названное, <xref:System.Windows.Controls.DockPanel.DockProperty>а затем предоставляет <xref:System.Windows.Controls.DockPanel.GetDock%2A> и методы в <xref:System.Windows.Controls.DockPanel.SetDock%2A> качестве публичных аксессуаров для прилагаемого свойства.
+Одной из целей прилагаемого свойства является возможность указания различных элементов ребенка для определения уникальных значений для свойства, определяемого в родительском элементе. Конкретным примером этого сценария является уведомление дочерними элементами родительского элемента о порядке их представления в [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. Одним из <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> примеров является свойство. Свойство <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> создается как прилагаемое свойство, поскольку оно предназначено для установки на элементы, содержащиеся в <xref:System.Windows.Controls.DockPanel> не самом <xref:System.Windows.Controls.DockPanel> себе. Класс <xref:System.Windows.Controls.DockPanel> определяет статическое <xref:System.Windows.DependencyProperty> поле, названное, <xref:System.Windows.Controls.DockPanel.DockProperty>а затем предоставляет <xref:System.Windows.Controls.DockPanel.GetDock%2A> и методы в <xref:System.Windows.Controls.DockPanel.SetDock%2A> качестве публичных аксессуаров для прилагаемого свойства.
 
 ## <a name="attached-properties-in-xaml"></a>Присоединенные свойства в XAML<a name="attached_properties_xaml"></a>
 
@@ -34,13 +34,13 @@ ms.locfileid: "81389003"
 
 [!code-xaml[PropertiesOvwSupport#APBasicUsage](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#apbasicusage)]
 
-Обратите внимание, что использование чем-то похоже на статическое свойство; вы всегда ссылаетесь на тип, <xref:System.Windows.Controls.DockPanel> который владеет и регистрирует прилагаемое свойство, вместо того, чтобы ссылаться на любой экземпляр, указанный по имени.
+Использование чем-то похоже на статическое свойство; вы всегда ссылаетесь на тип, <xref:System.Windows.Controls.DockPanel> который владеет и регистрирует прилагаемое свойство, вместо того, чтобы ссылаться на любой экземпляр, указанный по имени.
 
-Кроме того, поскольку присоединенное свойство в XAML является атрибутом, который устанавливается в разметке, операция задания является значимой. Нельзя напрямую получить свойство в XAML, хотя существуют некоторые косвенные механизмы для сравнения значений, такие как триггеры в стилях (подробнее см. в разделе [Стилизация и использование шаблонов](../controls/styling-and-templating.md)).
+Кроме того, поскольку присоединенное свойство в XAML является атрибутом, который устанавливается в разметке, операция задания является значимой. Нельзя напрямую получить свойство в XAML, хотя существуют некоторые косвенные механизмы для сравнения значений, такие как триггеры в стилях (подробнее см. в разделе [Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)).
 
 ### <a name="attached-property-implementation-in-wpf"></a>Реализация присоединенного свойства в WPF
 
-В [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], большинство прилагаемых свойств, которые существуют на типах WPF, которые связаны с представлением uI реализованы как свойства зависимости. Прилагаемые свойства являются концепцией XAML, в то время как свойства зависимости являются концепцией WPF. Поскольку прилагаемые WPF свойства являются свойствами зависимостей, они поддерживают концепции свойств зависимостей, такие как метаданные свойств и значения по умолчанию из метаданных свойств.
+В [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], большинство связанных с uI прилагаемые свойства на типах WPF реализуются как свойства зависимости. Прилагаемые свойства являются концепцией XAML, в то время как свойства зависимости являются концепцией WPF. Поскольку прилагаемые WPF свойства являются свойствами зависимостей, они поддерживают концепции свойств зависимостей, такие как метаданные свойств и значения по умолчанию из метаданных свойств.
 
 ## <a name="how-attached-properties-are-used-by-the-owning-type"></a>Как прилагаемые свойства используются типом владения<a name="howused"></a>
 
@@ -91,7 +91,7 @@ ms.locfileid: "81389003"
 
 Если ваш класс определяет прилагаемое свойство строго для использования на других <xref:System.Windows.DependencyObject>типах, то класс не должен вытекать из . Но вы должны извлечь <xref:System.Windows.DependencyObject> из, если вы будете следовать общей модели WPF, имеющих прилагаемое свойство также быть свойством зависимости.
 
-Определите прилагаемое свойство как `public static readonly` свойство <xref:System.Windows.DependencyProperty>зависимости, объявив поле типа. Это поле определяется с помощью <xref:System.Windows.DependencyProperty.RegisterAttached%2A> значения возврата метода. Имя поля должно соответствовать прилагаемому названию свойства, прилагаемому `Property`строкой, чтобы следовать установленному шаблону WPF, назначающим идентифицирующие поля по сравнению с свойствами, которые они представляют. Поставщик прилагаемых свойств должен также предоставлять статическое **Get_PropertyName_** и **Set_PropertyName_** методы в качестве аксессуаров для прилагаемого свойства; невыполнение этого неспособности приведет к тому, что система свойств не сможет использовать прилагаемое свойство.
+Определите прилагаемое свойство как `public static readonly` свойство <xref:System.Windows.DependencyProperty>зависимости, объявив поле типа. Это поле определяется с помощью <xref:System.Windows.DependencyProperty.RegisterAttached%2A> значения возврата метода. Имя поля должно соответствовать прилагаемому названию свойства, прилагаемому `Property`строкой, чтобы следовать установленному шаблону WPF, назначающим идентифицирующие поля по сравнению с свойствами, которые они представляют. Поставщик прилагаемых свойств должен также предоставлять статическое **Get_PropertyName_** и **Set_PropertyName_** методы в качестве аксессуаров для прилагаемого свойства; невыполнение этого результата приводит к тому, что система свойств не сможет использовать прилагаемое свойство.
 
 > [!NOTE]
 > Если вы не опустите прилагаемый доступ к свойству, привязка данных к свойству не будет работать в инструментах проектирования, таких как Visual Studio и Blend for Visual Studio.
