@@ -7,12 +7,12 @@ helpviewer_keywords:
 - tools [.NET Framework]
 - running .NET Framework tools
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
-ms.openlocfilehash: 4503e2cff18f4aa901d20c76cfe4076a7fed3600
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 60a9cb241f289cacc7437174f112114e843aca47
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75715765"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81645566"
 ---
 # <a name="net-framework-tools"></a>Инструменты .NET Framework
 
@@ -27,7 +27,7 @@ ms.locfileid: "75715765"
 > [!NOTE]
 > Некоторые средства относятся либо к 32-разрядным компьютерам, либо к 64-разрядным компьютерам. Обязательно проверьте, подходит ли запускаемая версия программы для локального компьютера.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 - [Al.exe (компоновщик сборок)](al-exe-assembly-linker.md)  
 Создает файл, обладающий манифестом сборки из модулей или файлов ресурсов.
@@ -36,7 +36,7 @@ ms.locfileid: "75715765"
 Преобразует определения типов для элемента управления ActiveX из библиотеки типов COM в элемент управления Windows Forms.
 
 - [Caspol.exe (средство настройки политики управления доступом для кода)](caspol-exe-code-access-security-policy-tool.md)  
-Позволяют просматривать и настраивать политику безопасности на уровне политики компьютера, пользователя и предприятия. В .NET Framework 4 и более поздних версиях это средство не влияет на политику управления доступом для кода, если только для элемента [\<legacyCasPolicy>](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) не задано значение `true`. Дополнительные сведения см. в разделе [Изменения системы безопасности](../security/security-changes.md).
+Позволяют просматривать и настраивать политику безопасности на уровне политики компьютера, пользователя и предприятия. В .NET Framework 4 и более поздних версиях это средство не влияет на политику управления доступом для кода, если только для элемента [\<legacyCasPolicy>](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) не задано значение `true`. Дополнительные сведения см. в разделе [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
 
 - [Cert2spc.exe (средство проверки сертификата издателя программного обеспечения)](cert2spc-exe-software-publisher-certificate-test-tool.md)  
 Создает сертификат издателя программного обеспечения (SPC) из одного или более сертификатов X.509. Этот инструмент предназначен только для тестирования.

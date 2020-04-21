@@ -1,12 +1,12 @@
 ---
 title: Атрибуты (C#)
 ms.date: 04/26/2018
-ms.openlocfilehash: 62424163303417746a67707d9ef34185954db316
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 0379bb76cf18ff836bd14aafb9cb97c30aee8ec7
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389543"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81645490"
 ---
 # <a name="attributes-c"></a>Атрибуты (C#)
 
@@ -81,7 +81,7 @@ ms.locfileid: "81389543"
 
 Следует указать целевое значение `field`, чтобы применить атрибут к резервной переменной, созданной для [автоматически реализуемого свойства](../../../properties.md).
 
-Следующий пример демонстрирует, как применить атрибуты к сборкам и модулям. Дополнительные сведения см. в разделе [Общие атрибуты (C#)](common-attributes.md).
+Следующий пример демонстрирует, как применить атрибуты к сборкам и модулям. Дополнительные сведения см. в разделе [Общие атрибуты (C#)](../../../language-reference/attributes/global.md).
 
 ```csharp
 using System;
@@ -120,7 +120,7 @@ using System.Reflection;
 - [Создание настраиваемых атрибутов (C#)](creating-custom-attributes.md)  
 - [Обращение к атрибутам с помощью отражения (C#)](accessing-attributes-by-using-reflection.md)  
 - [Практическое руководство. Создание объединения C/C++ с помощью атрибутов (C#)](how-to-create-a-c-cpp-union-by-using-attributes.md)  
-- [Общие атрибуты (C#)](common-attributes.md)  
+- [Общие атрибуты (C#)](../../../language-reference/attributes/global.md)  
 - [Сведения о вызывающем объекте (C#)](../../../language-reference/attributes/caller-information.md)  
 
 ## <a name="see-also"></a>См. также
