@@ -4,12 +4,12 @@ description: Описывает различия между реализацие
 author: thraka
 ms.date: 09/21/2019
 ms.author: adegeo
-ms.openlocfilehash: 4386654aad205e3c9f2cbd986d7b812e261e737f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 341e576f17c522fbcbb9c417176e9d4a13ab1b18
+ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "81433136"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82021841"
 ---
 # <a name="differences-in-wpf"></a>Различия в WPF
 
@@ -40,7 +40,7 @@ ms.locfileid: "81433136"
 
 Code Access Security (CAS) не поддерживается .NET Core или WPF для .NET Core. Все функции, связанные с CAS, рассматриваются в соответствии с предположением о полном доверии. WPF для .NET Core удаляет код, связанный с CAS. Публичная поверхность API этих типов по-прежнему существует для обеспечения успеха вызовов в эти типы.
 
-Публично определенные типы, связанные с CAS, были перемещены из собраний WPF и в сборки CoreFX. Сборки WPF имеют набор для переадресов к новому местоположению перемещенных типов.
+Публично определенные типы, связанные с CAS, были перемещены из собраний WPF и в собрания библиотеки Core .NET. Сборки WPF имеют набор для переадресов к новому местоположению перемещенных типов.
 
 | Сборка исходных источников | Целевая сборка | Тип                |
 | --------------- | --------------- | ------------------- |
@@ -54,6 +54,6 @@ Code Access Security (CAS) не поддерживается .NET Core или WP
 > - `PrivateAccessToTypeName`
 > - `AssemblyNameString`
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 - [Узнайте, как портировать приложение .NET Framework WPF в ядро .NET.](convert-project-from-net-framework.md)
