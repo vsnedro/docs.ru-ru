@@ -489,7 +489,7 @@
                     - name: Практическое руководство. Вычисление значений столбцов в текстовом CSV-файле (LINQ)
                       href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
                 - name: LINQ и отражение
-                  href: programming-guide/concepts/linq/linq-and-reflection.md
+                  href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
                 - name: Практическое руководство. Выполнение запроса к метаданным сборки при помощи отражения (LINQ)
                   href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
                 - name: LINQ и каталоги файлов
@@ -1322,7 +1322,7 @@
                   displayName: 'enum, bit flags, bit field'
                 - name: Типы структур
                   href: language-reference/builtin-types/struct.md
-                  displayName: 'struct type, readonly'
+                  displayName: 'struct type, readonly struct, ref struct, readonly ref struct'
                 - name: 'Типы значений, допускающие значение NULL'
                   href: language-reference/builtin-types/nullable-value-types.md
                   displayName: '? token, ? symbol'
@@ -1506,7 +1506,7 @@
           items:
             - name: 'null'
               href: language-reference/keywords/null.md
-            - name: true и false
+            - name: True и False
               href: language-reference/builtin-types/bool.md
             - name: default
               href: language-reference/keywords/default.md
@@ -1529,7 +1529,7 @@
               href: language-reference/keywords/set.md
             - name: when (условие фильтра)
               href: language-reference/keywords/when.md
-            - name: value
+            - name: значение
               href: language-reference/keywords/value.md
             - name: yield
               href: language-reference/keywords/yield.md
