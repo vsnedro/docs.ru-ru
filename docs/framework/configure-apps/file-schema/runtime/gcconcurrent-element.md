@@ -9,12 +9,12 @@ helpviewer_keywords:
 - gcConcurrent element
 - <gcConcurrent> element
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
-ms.openlocfilehash: 5957337aa960a0d5f445249b410dbfaddb7b08e9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 249518ae7477d284d50f9010757db83b7752c657
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79400983"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102922"
 ---
 # <a name="gcconcurrent-element"></a>\<gcConcurrent> элемент
 
@@ -37,7 +37,7 @@ ms.locfileid: "79400983"
 
 ### <a name="attributes"></a>Атрибуты
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`enabled`|Обязательный атрибут.<br /><br />Указывает, выполняет ли среда выполнения сборку мусора параллельно.|
 
@@ -50,7 +50,7 @@ ms.locfileid: "79400983"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-Нет.
+Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -82,7 +82,7 @@ ms.locfileid: "79400983"
 
 Если в файле конфигурации машины есть параметр **gcConcurrentSetting,** он определяет значение по умолчанию для всех приложений .NET Framework. Параметр в файле конфигурации компьютера переопределяет параметр в файле конфигурации приложения.
 
-Для получения дополнительной информации о параллельном [Concurrent garbage collection](../../../../standard/garbage-collection/fundamentals.md#concurrent-garbage-collection)и фоновом [Background workstation garbage collection](../../../../standard/garbage-collection/fundamentals.md#background-workstation-garbage-collection)сборе мусора [Background server garbage collection](../../../../standard/garbage-collection/fundamentals.md#background-server-garbage-collection) см. [Fundamentals of Garbage Collection](../../../../standard/garbage-collection/fundamentals.md)
+Для получения дополнительной информации о параллельном и фоновом сборе [мусора см.](../../../../standard/garbage-collection/background-gc.md)
 
 ## <a name="example"></a>Пример
 
@@ -98,6 +98,6 @@ ms.locfileid: "79400983"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Схема параметров среды выполнения](index.md)
+- [Схема настройки выполнения](index.md)
 - [Схема конфигурации файлов](../index.md)
-- [Основные сведения о сборке мусора](../../../../standard/garbage-collection/fundamentals.md)
+- [Основы сборки мусора](../../../../standard/garbage-collection/fundamentals.md)

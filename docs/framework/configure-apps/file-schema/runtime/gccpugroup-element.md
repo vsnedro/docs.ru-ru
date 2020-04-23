@@ -5,20 +5,20 @@ helpviewer_keywords:
 - GCCpuGroup element
 - <GCCpuGroup> element
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
-ms.openlocfilehash: ae9c96c9d49cf3f6be94da3f77b91423cab12e0b
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: f1cbe5a7109d6e4aae2e92710920a1c6b3a40d00
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74430478"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102896"
 ---
-# <a name="gccpugroup-element"></a>\<Гккпуграуп > элемент
+# <a name="gccpugroup-element"></a>\<GCCpuGroup> Элемент
 
 Определяет, поддерживает ли сборка мусора несколько групп ЦП.
 
-[ **\<configuration>** ](../configuration-element.md)\
-[ **> среды выполнения\<** ](runtime-element.md) &nbsp;&nbsp;\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<гккпуграуп >**
+[**\<конфигурация>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<>выполнения**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<GCCpuGroup>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,7 +29,7 @@ ms.locfileid: "74430478"
 
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы
 
-Следующие разделы описывают атрибуты, дочерние элементы и родительские элементы.
+В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
 
@@ -41,12 +41,12 @@ ms.locfileid: "74430478"
 
 |Значение|Описание|
 |-----------|-----------------|
-|`false`|Сборка мусора не поддерживает несколько групп ЦП. Это значение по умолчанию.|
-|`true`|Сборка мусора поддерживает несколько групп ЦП, если включена сборка мусора сервера.|
+|`false`|Сбор мусора не поддерживает несколько групп процессоров. Это значение по умолчанию.|
+|`true`|Сбор мусора поддерживает несколько групп процессоров, если включен сбор мусора сервера.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-Нет
+Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -55,16 +55,16 @@ ms.locfileid: "74430478"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Если на компьютере установлено несколько групп ЦП и включена сборка мусора сервера (см. элемент [\<gcServer >](gcserver-element.md) ), включение этого элемента расширяет сбор мусора во всех группах ЦП и учитывает все ядра при создании и балансировке куч.
+Когда компьютер имеет несколько групп процессоров и сбор мусора сервера включен (см. [ \<элемент gcServer>),](gcserver-element.md) что позволяет этот элемент расширяет сбор мусора во всех группах процессоров и принимает все ядра во внимание при создании и балансировке кучи.
 
 > [!NOTE]
-> Этот элемент применяется только к потокам сборки мусора. Чтобы среда выполнения распространяла пользовательские потоки во всех группах ЦП, необходимо также включить элемент [\<Thread_UseAllCpuGroups >](thread-useallcpugroups-element.md) .
+> Этот элемент применяется только к потокам сбора мусора. Чтобы включить время выполнения для распределения потоков пользователей по всем группам процессора, необходимо также включить [ \<элемент Thread_UseAllCpuGroups>.](thread-useallcpugroups-element.md)
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как включить сбор мусора для нескольких групп ЦП.
+В следующем примере показано, как включить сбор мусора для нескольких групп процессоров.
 
 ```xml
 <configuration>
@@ -75,9 +75,9 @@ ms.locfileid: "74430478"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Схема параметров среды выполнения](index.md)
-- [Схема файла конфигурации](../index.md)
-- [Отключение параллельной сборки мусора](gcconcurrent-element.md#to-disable-background-garbage-collection)
-- [Сборка мусора рабочей станции и сборка мусора сервера](../../../../standard/garbage-collection/fundamentals.md#workstation-and-server-garbage-collection)
+- [Схема настройки выполнения](index.md)
+- [Схема конфигурации файлов](../index.md)
+- [Отключить параллельный сбор мусора](gcconcurrent-element.md#to-disable-background-garbage-collection)
+- [Сборка мусора рабочей станции и сборка мусора сервера](../../../../standard/garbage-collection/workstation-server-gc.md)

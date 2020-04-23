@@ -2,12 +2,12 @@
 title: Рекомендации по форматированию кода F#
 description: Изучите рекомендации по форматированию кода F.
 ms.date: 11/04/2019
-ms.openlocfilehash: b8be70dd29a04e71614308164e541b99a1724305
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: dd48380a90ee92b2c1edaaabc116fa1cd8010390
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739557"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102493"
 ---
 # <a name="f-code-formatting-guidelines"></a>Рекомендации по форматированию кода F#
 
@@ -178,7 +178,7 @@ let myFunBad (a: decimal) b c:decimal = a + b + c
 let f x = x + 1 // Increment by one.
 ```
 
-## <a name="naming-conventions"></a>Соглашения об именах
+## <a name="naming-conventions"></a>Соглашения об именовании.
 
 ### <a name="use-camelcase-for-class-bound-expression-bound-and-pattern-bound-values-and-functions"></a>Используйте верблюжьики для значений и функций, связанных с классом, связанных с ими и связанных с шаблонами
 
@@ -579,10 +579,10 @@ let pascalsTriangle =
 
 ```fsharp
 // Preferred
-let squares = [ for x in 1..10 -> x*x ]
+let squares = [ for x in 1..10 -> x * x ]
 
 // Not preferred
-let squares' = [ for x in 1..10 do yield x*x ]
+let squares' = [ for x in 1..10 do yield x * x ]
 ```
 
 Более старые версии языка `yield` F's требовали указания в ситуациях, когда данные могут быть получены условно, или могут быть последовательные выражения для оценки. Предпочитаюнее опускать эти `yield` ключевые слова, если вы не должны компилировать со старой версией языка F':
@@ -816,10 +816,10 @@ let function1 a b = a - b * b
 ```fsharp
 // A1 and A2 are local modules.
 module A1 =
-    let function1 a b = a*a + b*b
+    let function1 a b = a * a + b * b
 
 module A2 =
-    let function2 a b = a*a - b*b
+    let function2 a b = a * a - b * b
 ```
 
 ### <a name="formatting-object-expressions-and-interfaces"></a>Форматирование выражений и интерфейсов объектов
@@ -878,7 +878,7 @@ type MyRecord =
 
 ### <a name="formatting-attributes-on-parameters"></a>Формирование атрибутов по параметрам
 
-Атрибуты также могут быть местами по параметрам. В этом случае поместите затем на ту же строку, что и параметр, и перед именем:
+Атрибуты также могут быть размещены на параметрах. В этом случае поместите затем на ту же строку, что и параметр, и перед именем:
 
 ```fsharp
 // Defines a class that takes an optional value as input defaulting to false.
