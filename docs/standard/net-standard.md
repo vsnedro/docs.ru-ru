@@ -5,12 +5,12 @@ ms.date: 02/13/2020
 ms.technology: dotnet-standard
 ms.custom: updateeachrelease
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-ms.openlocfilehash: e6e573056132c25b912ff1eb76b9b055f6e47cfe
-ms.sourcegitcommit: 2ff49dcf9ddf107d139b4055534681052febad62
+ms.openlocfilehash: 34074b420547cff802f1835656540be7b8eb58b4
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80438215"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607484"
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -112,7 +112,7 @@ API, добавляемые в любую из реализаций (напри�
 
 ## <a name="net-standard-libraries-and-visual-studio"></a>Библиотеки .NET Standard и Visual Studio
 
-Чтобы создать библиотеки .NET Standard в Visual Studio, убедитесь, что у вас установлена [Visual Studio 2017 версии 15.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) или более поздней (для Windows) или [Visual Studio для Mac версии 7.1](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) или более поздней (для macOS).
+Чтобы создавать библиотеки .NET Standard в Visual Studio, убедитесь, что у вас установлена [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), или Visual Studio 2017 версии 15.3 или более поздней (для Windows), или [Visual Studio для Mac версии 7.1](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) или более поздней (для macOS).
 
 Если вам нужно использовать только библиотеки .NET Standard 2.0 в своих проектах, это также можно сделать в Visual Studio 2015. Но у вас должен быть установлен клиент NuGet версии 3.6 или более поздней. Можно скачать клиент NuGet для Visual Studio 2015 со страницы [загрузок NuGet](https://www.nuget.org/downloads).
 

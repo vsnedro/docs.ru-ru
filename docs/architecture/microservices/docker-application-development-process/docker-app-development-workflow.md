@@ -2,12 +2,12 @@
 title: Рабочий процесс разработки для приложений Docker
 description: Сведения о рабочем процессе для разработки приложений Docker. Начнем по шагам, рассмотрим подробности оптимизации файлов Dockerfile и закончим на упрощенном рабочем процессе, доступном при использовании Visual Studio.
 ms.date: 01/30/2020
-ms.openlocfilehash: c58ea2436027968143777a19286a1a0a72107717
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2f380c840e186c345f9222aa6b0cf1097a74874e
+ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79401511"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389203"
 ---
 # <a name="development-workflow-for-docker-apps"></a>Рабочий процесс разработки для приложений Docker
 
@@ -286,7 +286,7 @@ RUN dotnet restore
  7  COPY . .
  8  RUN dotnet restore /ignoreprojectextensions:.dcproj
  9  WORKDIR /src/src/Services/Catalog/Catalog.API
-10  RUN dotnet publish Catalog.API.csproj -c Release -0 /app
+10  RUN dotnet publish Catalog.API.csproj -c Release -o /app
 11
 12  FROM base AS final
 13  WORKDIR /app
@@ -479,7 +479,7 @@ docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
 
 #### <a name="using-visual-studio"></a>Использование Visual Studio
 
-Запуск многоконтейнерного приложения с помощью Visual Studio 2019 не может быть проще. Просто нажмите клавишу **Ctrl-F5** для запуска или **F5** для отладки, как обычно, настроив проект **docker-compose** как запускаемый.  Visual Studio обрабатывает все необходимые настройки, чтобы можно было создать точки останова обычным образом и отлаживать наконец ставшие независимыми процессы, запущенные на "удаленных серверах" с уже подключенным отладчиком. Вот так.
+Запуск многоконтейнерного приложения с помощью Visual Studio 2019 не может быть проще. Просто нажмите клавишу **Ctrl-F5** для запуска или **F5** для отладки, как обычно, настроив проект **docker-compose** как запускаемый.  Visual Studio обрабатывает все необходимые настройки, чтобы можно было создать точки останова обычным образом и без особых усилий отлаживать наконец ставшие независимыми процессы, запущенные на "удаленных серверах" с уже подключенным отладчиком.
 
 Как упоминалось ранее, каждый раз при добавлении поддержки решения Docker в проект в решении этот проект настраивается в глобальном (на уровне решения) файле docker-compose.yml, что позволяет запускать или отлаживать все решение сразу. Visual Studio будет запускать по одному контейнеру для каждого проекта с включенной поддержкой решения Docker и выполнять все внутренние шаги автоматически (dotnet publish, docker build и т. д.).
 

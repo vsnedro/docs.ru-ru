@@ -6,12 +6,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: 026421d7b1b2a0e39118ae712780ca7fc8f6e444
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bceb32f4ea22ade6d3b49b3a99d7ec48a7ba168d
+ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76921255"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81607406"
 ---
 # <a name="tutorial-forecast-bike-rental-service-demand-with-time-series-analysis-and-mlnet"></a>Учебник. Прогнозирование спроса для службы проката велосипедов с помощью анализа временных рядов и ML.NET
 
@@ -29,7 +29,7 @@ ms.locfileid: "76921255"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2017 версии 15.6 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) с установленной рабочей нагрузкой "Кроссплатформенная разработка .NET Core".
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или более поздняя версия либо Visual Studio 2017 версии 15.6 или более поздняя версия с установленной рабочей нагрузкой "Кроссплатформенная разработка .NET Core".
 
 ## <a name="time-series-forecasting-sample-overview"></a>Общие сведения о примере прогнозирования по временным рядам
 
@@ -60,7 +60,7 @@ ms.locfileid: "76921255"
 1. Скачайте [файл базы данных *DailyDemand.mdf*](https://github.com/dotnet/machinelearning-samples/raw/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Data/DailyDemand.mdf) и сохраните его в каталоге *Data*.
 
 > [!NOTE]
-> Данные, используемые в этом руководстве, получены из [набора данных UCI по аренде велосипедов](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Хади Фанаит (Hadi Fanaee-T) и Жуан Гама (Joao Gama), 'Event labeling combining ensemble detectors and background knowledge' (Маркировка событий по сочетанию множества датчиков и предварительных знаний), Progress in Artificial Intelligence (2013): стр. 1–15, Springer Berlin Heidelberg, [ссылка на веб-страницу](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).
+> Данные, используемые в этом руководстве, получены из [набора данных UCI по аренде велосипедов](http://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Хади Фанаит (Hadi Fanaee-T) и Жуан Гама (Joao Gama), 'Event labeling combining ensemble detectors and background knowledge' (Маркировка событий по сочетанию множества датчиков и предварительных знаний), Progress in Artificial Intelligence (2013): стр. 1–15, Springer Berlin Heidelberg, [ссылка на веб-страницу](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).
 
 Исходный набор данных содержит несколько столбцов, соответствующих сезонности и погоде. Для сокращения объема, поскольку для алгоритма в этом руководстве нужны значения только из одного числового столбца, мы уплотнили исходный набор данных, сохранив только следующие столбцы:
 

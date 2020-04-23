@@ -9,12 +9,12 @@ helpviewer_keywords:
 - I/O [.NET], Pipelines
 author: rick-anderson
 ms.author: riande
-ms.openlocfilehash: b18b2bf31787fa58e614cd4f057fba9037fe8ad8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8822e731ae805e83d4072c5bd78dff3fcf9a31a1
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "77627556"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81462520"
 ---
 # <a name="systemiopipelines-in-net"></a>System.IO.Pipelines в .NET
 
@@ -172,7 +172,7 @@ var pipe = new Pipe(options);
 * Первый аргумент определяет объем используемой памяти.
 * Второй аргумент определяет, какая часть буфера наблюдалась.
 
-Если пометить данные как потребленные, канал сможет вернуть память в базовый буферный пул. Пометка данных как отмеченных управляет тем, что делает следующий вызов `PipeReader.ReadAsync`. Пометка всех элементов как отмеченных означает, что следующий вызов `PipeReader.ReadAsync` не вернется, пока в канал не будет записано больше данных. Любое другое значение заставит следующий вызов `PipeReader.ReadAsync` вернуться немедленно с отмеченными *и* неотмеченными, но уже потребленными данными.
+Если пометить данные как потребленные, канал сможет вернуть память в базовый буферный пул. Пометка данных как отмеченных управляет тем, что делает следующий вызов `PipeReader.ReadAsync`. Пометка всех элементов как отмеченных означает, что следующий вызов `PipeReader.ReadAsync` не вернется, пока в канал не будет записано больше данных. Любое другое значение заставит следующий вызов `PipeReader.ReadAsync` вернуться немедленно с отмеченными *и* неотмеченными, но не с уже потребленными данными.
 
 ### <a name="read-streaming-data-scenarios"></a>Сценарии чтения потоковых данных
 

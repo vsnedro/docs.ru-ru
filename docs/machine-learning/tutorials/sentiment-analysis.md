@@ -4,12 +4,12 @@ description: В этом руководстве показано, как соз�
 ms.date: 09/30/2019
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 47b9a9fe37cbcacab3797ed7fb1398b0c524d746
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c6e13cfca93c54648b1a0423c5983013d3e2a1a0
+ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78241134"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81243301"
 ---
 # <a name="tutorial-analyze-sentiment-of-website-comments-with-binary-classification-in-mlnet"></a>Учебник. Анализ мнений пользователей в комментариях с веб-сайта с помощью двоичной классификации в ML.NET
 
@@ -32,7 +32,7 @@ ms.locfileid: "78241134"
 
 - [Visual Studio 2017 версии 15.6 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой "Кроссплатформенная разработка .NET Core"
 
-- [Набор данных — предложения с меткой тональности UCI](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP-файл)
+- [Набор данных — предложения с меткой тональности UCI](http://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) (ZIP-файл)
 
 ## <a name="create-a-console-application"></a>Создание консольного приложения
 
@@ -49,7 +49,7 @@ ms.locfileid: "78241134"
 > [!NOTE]
 > Наборы данных в этом руководстве взяты из статьи From Group to Individual Labels using Deep Features ("Переход от групповых меток к индивидуальным при помощи глубинных признаков"), Котциас (Kotzias) и др., KDD 2015, и размещены в репозитории машинного обучения UCI Д. Дуа (D. Dua) и Э. Карра Танискиду (E. Karra Taniskidou) (2017). UCI Machine Learning Repository (Репозиторий машинного обучения UCI) [http://archive.ics.uci.edu/ml ]. Ирвайн, Калифорния: Калифорнийский университет, Школа информационных технологий и компьютерных наук.
 
-1. Скачайте [ZIP-файл набора данных предложений с меткой тональности UCI](https://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) и извлеките его содержимое.
+1. Скачайте [ZIP-файл набора данных предложений с меткой тональности UCI](http://archive.ics.uci.edu/ml/machine-learning-databases/00331/sentiment%20labelled%20sentences.zip) и извлеките его содержимое.
 
 2. Скопируйте файл `yelp_labelled.txt` в созданный каталог *Data*.
 
@@ -141,7 +141,7 @@ ms.locfileid: "78241134"
 
     [!code-csharp[SplitData](~/samples/snippets/machine-learning/SentimentAnalysis/csharp/Program.cs#SplitData "Split the Data")]
 
-    Приведенный выше код использует метод [TrainTestSplit()](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A), чтобы разделить загруженный набор данных на учебный и проверочный наборы данных, и возвращает их в класс [TrainTestData](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData). Укажите процент тестовых данных с помощью параметра `testFraction`. Значение по умолчанию — 10 %, но в этом случае лучше использовать 20 % для оценки большего объема данных.
+    Приведенный выше код использует метод [TrainTestSplit()](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A), чтобы разделить загруженный набор данных на учебный и проверочный наборы данных и возвратить их в класс <xref:Microsoft.ML.DataOperationsCatalog.TrainTestData>. Укажите процент тестовых данных с помощью параметра `testFraction`. Значение по умолчанию — 10 %, но в этом случае лучше использовать 20 % для оценки большего объема данных.
 
 2. Верните `splitDataView` в конце метода `LoadData()`.
 

@@ -2,12 +2,12 @@
 title: Команда dotnet vstest
 description: Команда dotnet vstest выполняет сборку проекта и всех его зависимостей.
 ms.date: 02/27/2020
-ms.openlocfilehash: 88e5b6a8966d78d0746f9ea5ccbccab142a2e0f6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e8fa94cf12ca2fe5fb99c6e3c1dcdb52185798c0
+ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78156937"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81463288"
 ---
 # <a name="dotnet-vstest"></a>dotnet vstest
 
@@ -20,11 +20,15 @@ ms.locfileid: "78156937"
 ## <a name="synopsis"></a>Краткий обзор
 
 ```dotnetcli
-dotnet vstest [<TEST_FILE_NAMES>] [--Settings] [--Tests]
-    [--TestAdapterPath] [--Platform] [--Framework] [--Parallel]
-    [--TestCaseFilter] [--logger] [-lt|--ListTests]
-    [--ParentProcessId] [--Port] [--Diag] [--Blame]
-    [--InIsolation] [[--] <args>...]] [-?|--Help]
+dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Diag <PATH_TO_LOG_FILE>]
+    [--Framework <FRAMEWORK>] [--InIsolation] [-lt|--ListTests <FILE_NAME>]
+    [--logger <LOGGER_URI/FRIENDLY_NAME>] [--Parallel]
+    [--ParentProcessId <PROCESS_ID>] [--Platform] <PLATFORM_TYPE>
+    [--Port <PORT>] [--ResultsDirectory<PATH>] [--Settings <SETTINGS_FILE>]
+    [--TestAdapterPath <PATH>] [--TestCaseFilter <EXPRESSION>]
+    [--Tests <TEST_NAMES>] [[--] <args>...]]
+
+dotnet vstest -?|--Help
 ```
 
 ## <a name="description"></a>Описание
@@ -39,39 +43,27 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings] [--Tests]
 
 ## <a name="options"></a>Параметры
 
-- **`--Settings <Settings File>`**
+- **`--Blame`**
 
-  Параметры, используемые при выполнении тестов.
+  Выполнение тестов в режиме обвинения. Этот параметр полезен при изоляции проблемных тестов, которые приводят к аварийному завершению хоста для тестов. Он создает в текущем каталоге выходной файл *Sequence.xml*, который записывает порядок выполнения тестов перед сбоем.
 
-- **`--Tests <Test Names>`**
+- **`--Diag <PATH_TO_LOG_FILE>`**
 
-  Выполните тесты с именами, которые соответствуют предусмотренным значениям. Для разделения значений используйте запятые.
+  Включает ведение подробных журналов для платформы тестирования. Журналы записываются в указанный файл.
 
-- **`--TestAdapterPath`**
-
-  Используйте пользовательские адаптеры теста из указанного пути (при наличии) в тестовом запуске.
-
-- **`--Platform <Platform type>`**
-
-  Архитектура целевой платформы, используемая для выполнения тестов. Допустимые значения: `x86`, `x64` и `ARM`.
-
-- **`--Framework <Framework Version>`**
+- **`--Framework <FRAMEWORK>`**
 
   Целевая версия платформы .NET Framework, используемая для выполнения тестов. Примеры допустимых значений: `.NETFramework,Version=v4.6` или `.NETCoreApp,Version=v1.0`. Другие поддерживаемые значения: `Framework40`, `Framework45`, `FrameworkCore10` и `FrameworkUap10`.
 
-- **`--Parallel`**
+- **`--InIsolation`**
 
-  Выполняйте тесты в параллельном режиме. По умолчанию для использования все доступные на компьютере ядра. Укажите явное число ядер, задав свойство `MaxCpuCount` в узле `RunConfiguration` в файле *runsettings*.
+  Запуск тестов в изолированном процессе. Это снижает вероятность остановки процесса *vstest.console.exe* при возникновении ошибки в тестах, однако тесты могут выполняться медленнее.
 
-- **`--TestCaseFilter <Expression>`**
+- **`-lt|--ListTests <FILE_NAME>`**
 
-  Запуск тестов, соответствующих заданному выражению. `<Expression>` имеет формат `<property>Operator<value>[|&<Expression>]`, где Operator принимает одно из следующих значений: `=`, `!=` или `~`. Оператор `~` имеет семантику "содержит" и применяется для строковых свойств, таких как `DisplayName`. Скобки `()` используются для группировки частей выражений.
+  Перечисление всех обнаруженных тестов из указанного контейнера тестов.
 
-- **`-?|--Help`**
-
-  Выводит краткую справку по команде.
-
-- **`--logger <Logger Uri/FriendlyName>`**
+- **`--logger <LOGGER_URI/FRIENDLY_NAME>`**
 
   Укажите средство ведения журнала результатов тестирования.
 
@@ -93,29 +85,45 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Settings] [--Tests]
     /logger:trx [;LogFileName=<Defaults to unique file name>]
     ```
 
-- **`-lt|--ListTests <File Name>`**
+- **`--Parallel`**
 
-  Перечисление всех обнаруженных тестов из указанного контейнера тестов.
+  Выполняйте тесты в параллельном режиме. По умолчанию для использования все доступные на компьютере ядра. Укажите явное число ядер, задав свойство `MaxCpuCount` в узле `RunConfiguration` в файле *runsettings*.
 
-- **`--ParentProcessId <ParentProcessId>`**
+- **`--ParentProcessId <PROCESS_ID>`**
 
   Идентификатор родительского процесса, отвечающего за запуск текущего процесса.
 
-- **`--Port <Port>`**
+- **`--Platform <PLATFORM_TYPE>`**
+
+  Архитектура целевой платформы, используемая для выполнения тестов. Допустимые значения: `x86`, `x64` и `ARM`.
+
+- **`--Port <PORT>`**
 
   Указывает порт для подключения сокета и получения сообщений о событиях.
 
-- **`--Diag <Path to log file>`**
+- **`--ResultsDirectory:<PATH>`**
 
-  Включает ведение подробных журналов для платформы тестирования. Журналы записываются в указанный файл.
+  По указанному пути будет создан каталог с результатами теста, если этот путь не существует.
 
-- **`--Blame`**
+- **`--Settings <SETTINGS_FILE>`**
 
-  Выполнение тестов в режиме обвинения. Этот параметр полезен при изоляции проблемных тестов, которые приводят к аварийному завершению хоста для тестов. Он создает в текущем каталоге выходной файл *Sequence.xml*, который записывает порядок выполнения тестов перед сбоем.
+  Параметры, используемые при выполнении тестов.
 
-- **`--InIsolation`**
+- **`--TestAdapterPath <PATH>`**
 
-  Запуск тестов в изолированном процессе. Это снижает вероятность остановки процесса *vstest.console.exe* при возникновении ошибки в тестах, однако тесты могут выполняться медленнее.
+  Используйте пользовательские адаптеры теста из указанного пути (при наличии) в тестовом запуске.
+
+- **`--TestCaseFilter <EXPRESSION>`**
+
+  Запуск тестов, соответствующих заданному выражению. `<EXPRESSION>` имеет формат `<property>Operator<value>[|&<EXPRESSION>]`, где Operator принимает одно из следующих значений: `=`, `!=` или `~`. Оператор `~` имеет семантику "содержит" и применяется для строковых свойств, таких как `DisplayName`. Скобки `()` используются для группировки частей выражений. Дополнительные сведения см. в документе о [фильтре TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).
+
+- **`--Tests <TEST_NAMES>`**
+
+  Выполните тесты с именами, которые соответствуют предусмотренным значениям. Для разделения значений используйте запятые.
+
+- **`-?|--Help`**
+
+  Выводит краткую справку по команде.
 
 - **`@<file>`**
 
@@ -156,3 +164,7 @@ dotnet vstest /Tests:TestMethod1
 ```dotnetcli
 dotnet vstest /Tests:TestMethod1,TestMethod2
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Параметры командной строки для VSTest.Console.exe](/visualstudio/test/vstest-console-options)
