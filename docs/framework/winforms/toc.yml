@@ -130,6 +130,8 @@
           href: additional-security-considerations-in-windows-forms.md
     - name: Развертывание ClickOnce для форм Windows Forms
       href: clickonce-deployment-for-windows-forms.md
+    - name: "Улучшения специальных возможностей в .NET Core\_3.0"
+      href: windows-forms-accessibility-improvements.md
     - name: Практическое руководство. Доступ к коллекциям с ключом в Windows Forms
       href: how-to-access-keyed-collections-in-windows-forms.md
     - name: Усовершенствование приложений Windows Forms
