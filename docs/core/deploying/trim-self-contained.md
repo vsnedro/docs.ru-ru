@@ -56,13 +56,13 @@ Visual Studio создает многократно используемые п
 
 01. В **обозревателе решений** щелкните правой кнопкой мыши проект, который нужно опубликовать. Выберите команду **Опубликовать…** .
 
-    :::image type="content" source="media/trim-self-contained/visual-studio-solution-explorer.png" alt-text="Обозреватель решений с контекстным меню, где выделен пункт "Опубликовать"":::
+    :::image type="content" source="media/trim-self-contained/visual-studio-solution-explorer.png" alt-text="Обозреватель решений с контекстным меню, где выделен пункт Опубликовать":::
 
     Если у вас еще нет профиля публикации, следуйте инструкциям по его созданию и выберите **Папка** в качестве типа целевого объекта.
 
 01. Нажмите кнопку **Изменить**.
 
-    :::image type="content" source="media/trim-self-contained/visual-studio-publish-edit-settings.png" alt-text="Профиль публикации Visual Studio с кнопкой "Изменить"":::
+    :::image type="content" source="media/trim-self-contained/visual-studio-publish-edit-settings.png" alt-text="Профиль публикации Visual Studio с кнопкой Изменить":::
 
 01. В диалоговом окне **Параметры профиля** задайте следующие параметры.
 
