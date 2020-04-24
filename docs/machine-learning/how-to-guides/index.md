@@ -2,12 +2,12 @@
 title: Практические руководства по ML.NET
 description: Узнайте, как выполнять конкретные задачи, которые помогут вам в создании специализированных решений на базе искусственного интеллекта и машинного обучения и интеграции их в свои .NET-приложения.
 ms.date: 03/01/2019
-ms.openlocfilehash: 25c5cb6247c202e3ef51d0ed25b3b213fdca7a56
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: e83db6f1f754357b7e204485ea545feef9ad4a95
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607536"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102454"
 ---
 # <a name="net-machine-learning-how-to-guides"></a>Практические руководства по использованию .NET в машинном обучении
 
@@ -27,15 +27,9 @@ ms.locfileid: "81607536"
 
 * [Обучение регрессионной модели для прогнозирования значения с помощью ML.NET](train-machine-learning-model-ml-net.md)
 
-### <a name="evaluate-the-model-quality"></a>Оценка качества модели
-
-* [Расчет метрик для оценки качества моделей](verify-model-quality-ml-net.md)
-
 ### <a name="model-explainability"></a>Объясняемость модели
 
 * [Определение важности функций моделей с помощью средства Permutation Feature Importance](explain-machine-learning-model-permutation-feature-importance-ml-net.md)
-
-* [Использование обобщенных аддитивных моделей и функций фигур для объясняемости модели](use-gams-for-model-explainability.md)
 
 ## <a name="run"></a>Выполнить
 

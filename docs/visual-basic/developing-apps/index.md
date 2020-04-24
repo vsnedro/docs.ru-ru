@@ -16,7 +16,7 @@ ms.locfileid: "74349250"
 
 В этом разделе приведена основная документация по языку Visual Basic.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Программирование в Visual Basic](../../visual-basic/developing-apps/programming/index.md)  
  Общие сведения о различных вопросах программирования.  

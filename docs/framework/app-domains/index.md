@@ -7,12 +7,12 @@ helpviewer_keywords:
 - application domains, programming
 - programming application domains
 ms.assetid: 96d3b8e3-bef8-4da0-9a81-9841e23a94e9
-ms.openlocfilehash: 2c849d27c70971d17bf4359ee7ae1081ee976a5f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3f66eacaf30f8001cdbf3a486e5ce1c878712e2f
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73119816"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644275"
 ---
 # <a name="programming-with-application-domains-and-assemblies"></a>Программирование с использованием доменов приложений и сборок
 
@@ -20,7 +20,7 @@ ms.locfileid: "73119816"
   
 Тем не менее, если вы создаете приложение для размещения среды CLR, средства или код для создания средств или код для выгрузки программным способом, а также подключаемые компоненты для динамической выгрузки и повторной загрузки, вы будете создавать домены приложений. Даже если вы не создаете хост-приложение среды выполнения, в этом разделе содержатся важные сведения по работе с доменами приложений и загруженными в них сборками.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
 [Руководства по работе с доменами приложений и сборками](application-domains-and-assemblies-how-to-topics.md)  
 Ссылки на все разделы практического руководства базовой документации по программированию с использованием доменов приложений и сборок.  
@@ -28,7 +28,7 @@ ms.locfileid: "73119816"
 [Использование доменов приложений](use.md)  
 Примеры создания, настройки и использования доменов приложений.  
   
-[Программирование с использованием сборок](../../standard/assembly/program.md)  
+[Программирование с использованием сборок](../../standard/assembly/index.md)  
 Описание способов создания, подписи и установки атрибутов сборок.  
   
 ## <a name="related-sections"></a>Связанные разделы  

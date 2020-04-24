@@ -20,7 +20,7 @@ ms.locfileid: "74333949"
 
 Visual Basic можно использовать для обработки дисков, папок и файлов с помощью объекта `My.Computer.FileSystem`, который обеспечивает лучшую производительность и проще в использовании, чем традиционные методы, такие как `FileOpen` и `Write` (хотя они по-прежнему доступны). Эти методы подробно обсуждаются в следующих разделах.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Доступ к файлам с помощью Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)  
  Описание использования объекта `My.Computer.FileSystem` для работы с файлами, дисками и папками.  
@@ -28,10 +28,10 @@ Visual Basic можно использовать для обработки ди�
  [Основы файлового ввода-вывода и файловой системы в .NET Framework (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)  
  Обзор концепций файлового ввода-вывода в .NET Framework, включая потоки, изолированное хранилище, события файла, атрибуты файла и доступ к файлам.  
   
- [Пошаговое руководство. Управление файлами с помощью методов .NET Framework](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
+ [Пошаговое руководство: Управление файлами с помощью методов .NET Framework](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
  Демонстрация использования .NET Framework для управления файлами и папками.  
   
- [Пошаговое руководство. Операции с файлами и каталогами в Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
+ [Пошаговое руководство: Операции с файлами и каталогами в Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
  Демонстрация использования объекта `My.Computer.FileSystem` для управления файлами и папками.  
   
 ## <a name="related-sections"></a>Связанные разделы  

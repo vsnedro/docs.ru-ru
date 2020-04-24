@@ -37,7 +37,7 @@ Install-Package Microsoft.Data.Sqlite
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/HelloWorldSample/Program.cs?name=snippet_HelloWorld)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 * [Строки подключения](connection-strings.md)
 * [Справочник по интерфейсам API](/dotnet/api/?view=msdata-sqlite-3.0)

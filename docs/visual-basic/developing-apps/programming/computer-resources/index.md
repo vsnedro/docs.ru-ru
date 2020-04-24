@@ -28,7 +28,7 @@ ms.locfileid: "74345533"
 - <xref:Microsoft.VisualBasic.Devices.Ports>
 - реестр (<xref:Microsoft.VisualBasic.MyServices.RegistryProxy>).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 [Воспроизведение звуков](../../../../visual-basic/developing-apps/programming/computer-resources/playing-sounds.md)  
 Перечень задач, связанных с объектом `My.Computer.Audio`, например воспроизведение звука в фоновом режиме.

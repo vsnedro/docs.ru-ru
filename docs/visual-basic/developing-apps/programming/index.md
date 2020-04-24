@@ -1,5 +1,5 @@
 ---
-title: программирование
+title: Программирование
 ms.date: 07/20/2015
 helpviewer_keywords:
 - programming [Visual Basic], Visual Basic
@@ -16,7 +16,7 @@ ms.locfileid: "74352109"
 
 В этом разделе рассматриваются задачи программирования, о которых вам может понадобиться дополнительная информация при создании приложения Visual Basic.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>Содержание раздела  
 
  [Доступ к ресурсам компьютера](../../../visual-basic/developing-apps/programming/computer-resources/index.md)  
  Содержит документацию по использованию объекта `My.Computer` для доступа к сведениям о компьютере, на котором выполняется приложение, и для управления компьютером.  
@@ -33,13 +33,13 @@ ms.locfileid: "74352109"
  [Доступ к веб-службам приложения](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)  
  Содержит документацию о том, как с помощью объекта `My.WebServices` обращаться к веб-службам, ссылки на которые есть в приложении.  
   
- [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/index.md)  
+ [Доступ к параметрам приложения](../../../visual-basic/developing-apps/programming/app-settings/index.md)  
  Содержит документацию по доступу к настройкам приложения с помощью объекта `My.Settings`.  
   
  [Операции с дисками, каталогами и файлами](drives-directories-files/index.md)  
  Содержит документацию о том, как получить доступ к файловой системе с помощью объекта `My.Computer.FileSystem`.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Возможности и элементы языка Visual Basic](../../../visual-basic/programming-guide/language-features/index.md)
 - [Основные понятия программирования](../../../visual-basic/programming-guide/concepts/index.md)

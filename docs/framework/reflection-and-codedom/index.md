@@ -15,7 +15,7 @@ ms.locfileid: "73130098"
 # <a name="dynamic-programming-in-the-net-framework"></a>Динамическое программирование в .NET Framework
 Этот раздел документации содержит сведения о динамическом программировании на платформе .NET Framework.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Отражение](reflection.md)  
  Описание использования отражения для работы с объектами во время выполнения.  
   
