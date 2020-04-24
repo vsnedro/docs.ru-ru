@@ -7,42 +7,42 @@ helpviewer_keywords:
 - XAML [WPF]
 - Extensible Application Markup Language [WPF]
 ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
-ms.openlocfilehash: 7b4811290d58b946bd9f115cb15d5eb0fda03b1d
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 00525e8bd085126e15de9c80bdd5fc0106d565d6
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76741877"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646163"
 ---
-# <a name="xaml-in-wpf"></a><span data-ttu-id="82e0c-102">XAML в WPF</span><span class="sxs-lookup"><span data-stu-id="82e0c-102">XAML in WPF</span></span>
+# <a name="xaml-in-wpf"></a><span data-ttu-id="0266d-102">XAML в WPF</span><span class="sxs-lookup"><span data-stu-id="0266d-102">XAML in WPF</span></span>
 
-[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] <span data-ttu-id="82e0c-103">— это язык разметки для декларативного программирования приложений.</span><span class="sxs-lookup"><span data-stu-id="82e0c-103">is a markup language for declarative application programming.</span></span> [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] <span data-ttu-id="82e0c-104">реализует реализацию процессора XAML и обеспечивает поддержку языка XAML.</span><span class="sxs-lookup"><span data-stu-id="82e0c-104">implements a XAML processor implementation and provides XAML language support.</span></span> <span data-ttu-id="82e0c-105">Типы [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] реализуются так, что они могут обеспечить резервное копирование требуемого типа для представления XAML.</span><span class="sxs-lookup"><span data-stu-id="82e0c-105">The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] types are implemented such that they can provide the required type backing for a XAML representation.</span></span> <span data-ttu-id="82e0c-106">Как правило, большинство пользовательских интерфейсов приложения [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] можно создать в разметке XAML.</span><span class="sxs-lookup"><span data-stu-id="82e0c-106">In general, you can create the majority of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application UI in XAML markup.</span></span>  
+[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]<span data-ttu-id="0266d-103">является языком разметки для декларативного программирования приложений.</span><span class="sxs-lookup"><span data-stu-id="0266d-103">is a markup language for declarative application programming.</span></span> [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]<span data-ttu-id="0266d-104">реализует реализацию процессора XAML и обеспечивает поддержку языка XAML.</span><span class="sxs-lookup"><span data-stu-id="0266d-104">implements a XAML processor implementation and provides XAML language support.</span></span> <span data-ttu-id="0266d-105">Типы [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] реализованы таким образом, что они могут обеспечить требуемую поддержку типа для представления XAML.</span><span class="sxs-lookup"><span data-stu-id="0266d-105">The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] types are implemented such that they can provide the required type backing for a XAML representation.</span></span> <span data-ttu-id="0266d-106">Как правило, вы можете создать [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] большинство uI-приложений в разметке XAML.</span><span class="sxs-lookup"><span data-stu-id="0266d-106">In general, you can create the majority of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application UI in XAML markup.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="82e0c-107">в этом разделе</span><span class="sxs-lookup"><span data-stu-id="82e0c-107">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="0266d-107">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="0266d-107">In This Section</span></span>  
 
-[<span data-ttu-id="82e0c-108">Обзор XAML (WPF)</span><span class="sxs-lookup"><span data-stu-id="82e0c-108">XAML Overview (WPF)</span></span>](xaml-overview-wpf.md)  
-[<span data-ttu-id="82e0c-109">Подробное описание синтаксиса XAML</span><span class="sxs-lookup"><span data-stu-id="82e0c-109">XAML Syntax In Detail</span></span>](xaml-syntax-in-detail.md)  
-[<span data-ttu-id="82e0c-110">Код программной части и XAML в WPF</span><span class="sxs-lookup"><span data-stu-id="82e0c-110">Code-Behind and XAML in WPF</span></span>](code-behind-and-xaml-in-wpf.md)  
-[<span data-ttu-id="82e0c-111">Код XAML и пользовательские классы для WPF</span><span class="sxs-lookup"><span data-stu-id="82e0c-111">XAML and Custom Classes for WPF</span></span>](xaml-and-custom-classes-for-wpf.md)  
-[<span data-ttu-id="82e0c-112">Расширения разметки и XAML WPF</span><span class="sxs-lookup"><span data-stu-id="82e0c-112">Markup Extensions and WPF XAML</span></span>](markup-extensions-and-wpf-xaml.md)  
-[<span data-ttu-id="82e0c-113">Пространства имен XAML и сопоставление пространств имен для WPF XAML</span><span class="sxs-lookup"><span data-stu-id="82e0c-113">XAML Namespaces and Namespace Mapping for WPF XAML</span></span>](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
-[<span data-ttu-id="82e0c-114">Области видимости имен XAML в WPF</span><span class="sxs-lookup"><span data-stu-id="82e0c-114">WPF XAML Namescopes</span></span>](wpf-xaml-namescopes.md)  
-[<span data-ttu-id="82e0c-115">Встроенные стили и шаблоны</span><span class="sxs-lookup"><span data-stu-id="82e0c-115">Inline Styles and Templates</span></span>](inline-styles-and-templates.md)  
-[<span data-ttu-id="82e0c-116">Обработка пробелов в XAML</span><span class="sxs-lookup"><span data-stu-id="82e0c-116">White-space Processing in XAML</span></span>](../../../desktop-wpf/xaml-services/white-space-processing.md)  
-[<span data-ttu-id="82e0c-117">TypeConverters и XAML</span><span class="sxs-lookup"><span data-stu-id="82e0c-117">TypeConverters and XAML</span></span>](typeconverters-and-xaml.md)  
-[<span data-ttu-id="82e0c-118">Сущности знаков XML и XAML</span><span class="sxs-lookup"><span data-stu-id="82e0c-118">XML Character Entities and XAML</span></span>](../../../desktop-wpf/xaml-services/xml-character-entities.md)  
-[<span data-ttu-id="82e0c-119">Возможности пространства имен языка XAML (x:)</span><span class="sxs-lookup"><span data-stu-id="82e0c-119">XAML Namespace (x:) Language Features</span></span>](../../../desktop-wpf/xaml-services/namespace-language-features.md)  
-[<span data-ttu-id="82e0c-120">Расширения XAML WPF</span><span class="sxs-lookup"><span data-stu-id="82e0c-120">WPF XAML Extensions</span></span>](wpf-xaml-extensions.md)  
-[<span data-ttu-id="82e0c-121">Возможности языка: совместимость разметки (mc:)</span><span class="sxs-lookup"><span data-stu-id="82e0c-121">Markup Compatibility (mc:) Language Features</span></span>](markup-compatibility-mc-language-features.md)  
+[<span data-ttu-id="0266d-108">Обзор XAML (WPF)</span><span class="sxs-lookup"><span data-stu-id="0266d-108">XAML Overview (WPF)</span></span>](../../../desktop-wpf/fundamentals/xaml.md)  
+[<span data-ttu-id="0266d-109">Подробное описание синтаксиса XAML</span><span class="sxs-lookup"><span data-stu-id="0266d-109">XAML Syntax In Detail</span></span>](xaml-syntax-in-detail.md)  
+[<span data-ttu-id="0266d-110">Код программной части и XAML в WPF</span><span class="sxs-lookup"><span data-stu-id="0266d-110">Code-Behind and XAML in WPF</span></span>](code-behind-and-xaml-in-wpf.md)  
+[<span data-ttu-id="0266d-111">Код XAML и пользовательские классы для WPF</span><span class="sxs-lookup"><span data-stu-id="0266d-111">XAML and Custom Classes for WPF</span></span>](xaml-and-custom-classes-for-wpf.md)  
+[<span data-ttu-id="0266d-112">Расширения разметки и XAML WPF</span><span class="sxs-lookup"><span data-stu-id="0266d-112">Markup Extensions and WPF XAML</span></span>](markup-extensions-and-wpf-xaml.md)  
+[<span data-ttu-id="0266d-113">Пространства имен XAML и сопоставление пространств имен для WPF XAML</span><span class="sxs-lookup"><span data-stu-id="0266d-113">XAML Namespaces and Namespace Mapping for WPF XAML</span></span>](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
+[<span data-ttu-id="0266d-114">Области видимости имен XAML в WPF</span><span class="sxs-lookup"><span data-stu-id="0266d-114">WPF XAML Namescopes</span></span>](wpf-xaml-namescopes.md)  
+[<span data-ttu-id="0266d-115">Встроенные стили и шаблоны</span><span class="sxs-lookup"><span data-stu-id="0266d-115">Inline Styles and Templates</span></span>](inline-styles-and-templates.md)  
+[<span data-ttu-id="0266d-116">Обработка белого пространства в XAML</span><span class="sxs-lookup"><span data-stu-id="0266d-116">White-space Processing in XAML</span></span>](../../../desktop-wpf/xaml-services/white-space-processing.md)  
+[<span data-ttu-id="0266d-117">TypeConverters и XAML</span><span class="sxs-lookup"><span data-stu-id="0266d-117">TypeConverters and XAML</span></span>](typeconverters-and-xaml.md)  
+[<span data-ttu-id="0266d-118">Сущности знаков XML и XAML</span><span class="sxs-lookup"><span data-stu-id="0266d-118">XML Character Entities and XAML</span></span>](../../../desktop-wpf/xaml-services/xml-character-entities.md)  
+[<span data-ttu-id="0266d-119">Пространство имен XAML (x:) Возможности языка</span><span class="sxs-lookup"><span data-stu-id="0266d-119">XAML Namespace (x:) Language Features</span></span>](../../../desktop-wpf/xaml-services/namespace-language-features.md)  
+[<span data-ttu-id="0266d-120">Расширения XAML WPF</span><span class="sxs-lookup"><span data-stu-id="0266d-120">WPF XAML Extensions</span></span>](wpf-xaml-extensions.md)  
+[<span data-ttu-id="0266d-121">Совместимость разметки (mc:) Возможности языка</span><span class="sxs-lookup"><span data-stu-id="0266d-121">Markup Compatibility (mc:) Language Features</span></span>](markup-compatibility-mc-language-features.md)  
   
-## <a name="related-sections"></a><span data-ttu-id="82e0c-122">См. также</span><span class="sxs-lookup"><span data-stu-id="82e0c-122">Related Sections</span></span>  
+## <a name="related-sections"></a><span data-ttu-id="0266d-122">Связанные разделы</span><span class="sxs-lookup"><span data-stu-id="0266d-122">Related Sections</span></span>  
 
-[<span data-ttu-id="82e0c-123">Архитектура WPF</span><span class="sxs-lookup"><span data-stu-id="82e0c-123">WPF Architecture</span></span>](wpf-architecture.md)  
-[<span data-ttu-id="82e0c-124">Базовые элементы</span><span class="sxs-lookup"><span data-stu-id="82e0c-124">Base Elements</span></span>](base-elements.md)  
-[<span data-ttu-id="82e0c-125">Дерево элементов и сериализация</span><span class="sxs-lookup"><span data-stu-id="82e0c-125">Element Tree and Serialization</span></span>](element-tree-and-serialization.md)  
-[<span data-ttu-id="82e0c-126">Свойства</span><span class="sxs-lookup"><span data-stu-id="82e0c-126">Properties</span></span>](properties-wpf.md)  
-[<span data-ttu-id="82e0c-127">События</span><span class="sxs-lookup"><span data-stu-id="82e0c-127">Events</span></span>](events-wpf.md)  
-[<span data-ttu-id="82e0c-128">Ввод</span><span class="sxs-lookup"><span data-stu-id="82e0c-128">Input</span></span>](input-wpf.md)  
-[<span data-ttu-id="82e0c-129">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="82e0c-129">Resources</span></span>](resources-wpf.md)  
-[<span data-ttu-id="82e0c-130">Использование стилей и шаблонов</span><span class="sxs-lookup"><span data-stu-id="82e0c-130">Styling and Templating</span></span>](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
-[<span data-ttu-id="82e0c-131">Потоковая модель</span><span class="sxs-lookup"><span data-stu-id="82e0c-131">Threading Model</span></span>](threading-model.md)
+[<span data-ttu-id="0266d-123">Архитектура WPF</span><span class="sxs-lookup"><span data-stu-id="0266d-123">WPF Architecture</span></span>](wpf-architecture.md)  
+[<span data-ttu-id="0266d-124">Базовые элементы</span><span class="sxs-lookup"><span data-stu-id="0266d-124">Base Elements</span></span>](base-elements.md)  
+[<span data-ttu-id="0266d-125">Дерево элементов и сериализация</span><span class="sxs-lookup"><span data-stu-id="0266d-125">Element Tree and Serialization</span></span>](element-tree-and-serialization.md)  
+[<span data-ttu-id="0266d-126">Свойства</span><span class="sxs-lookup"><span data-stu-id="0266d-126">Properties</span></span>](properties-wpf.md)  
+[<span data-ttu-id="0266d-127">События</span><span class="sxs-lookup"><span data-stu-id="0266d-127">Events</span></span>](events-wpf.md)  
+[<span data-ttu-id="0266d-128">Входные данные</span><span class="sxs-lookup"><span data-stu-id="0266d-128">Input</span></span>](input-wpf.md)  
+[<span data-ttu-id="0266d-129">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="0266d-129">Resources</span></span>](resources-wpf.md)  
+[<span data-ttu-id="0266d-130">Стилизация и использование шаблонов</span><span class="sxs-lookup"><span data-stu-id="0266d-130">Styling and Templating</span></span>](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
+[<span data-ttu-id="0266d-131">Модель потоков</span><span class="sxs-lookup"><span data-stu-id="0266d-131">Threading Model</span></span>](threading-model.md)
