@@ -3,21 +3,21 @@ title: <sessionSecurityTokenCache>
 ms.date: 03/30/2017
 ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507
 author: BrucePerlerMS
-ms.openlocfilehash: e949b16f76f20191b84bbbbb6e8b019d913316f0
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: a0db10ceb75a470dbf799d717b2059355dd104bb
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70251834"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646069"
 ---
-# <a name="sessionsecuritytokencache"></a>\<sessionSecurityTokenCache>
-Регистрирует кэш для токенов сеанса с помощью службы или коллекции обработчиков маркеров безопасности.  
+# <a name="sessionsecuritytokencache"></a>\<sessionsecurityTokenCache>
+Регистрирует кэш для маркеров сеанса с помощью службы или коллекции обработчика маркеров безопасности.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. identityModel**](system-identitymodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<identityConfiguration >** ](identityconfiguration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> кэшей**](caches.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<sessionSecurityTokenCache >**  
+[**\<конфигурация>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityМодель>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<идентичностьНастройка>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<кэши>**](caches.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<sessionsecurityTokenCache>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,19 +39,19 @@ ms.locfileid: "70251834"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|type|Тип, производный от <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> класса.|  
+|type|Тип, который вытекает <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> из класса.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Отсутствуют  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<> кэшей](caches.md)|Регистрирует кэши, используемые службой или коллекцией обработчиков маркеров безопасности.|  
+|[\<кэши>](caches.md)|Регистрирует кэши, используемые службой или коллекцией обработчиков маркеров безопасности.|  
   
 ## <a name="example"></a>Пример  
- В следующем коде XML показана конфигурация пользовательского кэша для хранения маркеров безопасности сеанса (<xref:System.IdentityModel.Tokens.SessionSecurityToken>). Конфигурация берется из `ClaimsAwareWebFarm` примера. Дополнительные сведения об этом образце см. в разделе [Индекс образца кода WIF](../../../security/wif-code-sample-index.md).  
+ Следующие XML показывает конфигурацию пользовательского кэша для<xref:System.IdentityModel.Tokens.SessionSecurityToken>хранения маркеров безопасности сеанса (). Конфигурация взята `ClaimsAwareWebFarm` из образца. Для получения дополнительной информации [WIF Code Sample Index](https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-code-sample-index)об этой выборке см.  
   
 ```xml  
 <caches>  
@@ -62,6 +62,6 @@ ms.locfileid: "70251834"
 </caches>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>

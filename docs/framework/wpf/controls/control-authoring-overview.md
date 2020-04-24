@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controls [WPF], authoring overview
 - authoring overview for controls [WPF]
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
-ms.openlocfilehash: 2326520039085beb5f5294e23db67b67f9d7d7da
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: a6ab5463cc28aa590454ae1304714d3d12ee7c6b
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81243275"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646140"
 ---
 # <a name="control-authoring-overview"></a>Обзор авторов управления
 
@@ -38,7 +38,7 @@ ms.locfileid: "81243275"
 
 - **Триггеры.** A <xref:System.Windows.Trigger> позволяет динамически изменять внешний вид и поведение элемента управления без создания нового элемента управления. Например, предположим, <xref:System.Windows.Controls.ListBox> что у вас есть несколько элементов управления в приложении и хотите, чтобы элементы в каждом из них <xref:System.Windows.Controls.ListBox> были смелыми и красными, когда они выбраны. Ваш первый инстинкт может заключаться в <xref:System.Windows.Controls.ListBox> создании класса, который наследует и переопределить <xref:System.Windows.Controls.Primitives.Selector.OnSelectionChanged%2A> метод, чтобы изменить внешний вид выбранного элемента, но лучший подход заключается в том, чтобы добавить триггер в стиль, <xref:System.Windows.Controls.ListBoxItem> который изменяет внешний вид выбранного элемента. Триггер позволяет изменять значения свойств или выполнять действия в зависимости от значения свойства. An <xref:System.Windows.EventTrigger> позволяет выполнять действия в случае события.
 
-Дополнительные сведения о стилях, шаблонах и триггерах см. в разделе [Использование стилей и шаблонов](styling-and-templating.md).
+Дополнительные сведения о стилях, шаблонах и триггерах см. в разделе [Использование стилей и шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
 В целом, если элемент управления отражает функциональность существующего элемента управления, но должен выглядеть по-другому, сначала следует рассмотреть возможность использования какого-либо из методов, описанных в этом разделе, для изменения внешнего вида существующего элемента.
 

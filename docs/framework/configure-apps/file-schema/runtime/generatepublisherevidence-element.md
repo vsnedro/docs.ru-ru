@@ -5,12 +5,12 @@ helpviewer_keywords:
 - generatePublisherEvidence element
 - <generatePublisherEvidence> element
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
-ms.openlocfilehash: 24a5ea02992a5bce681b5bab4fb7f75505bd225d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c2ba4a7244b7849e28eac38fb34a2cdd0d1f1048
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79154118"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81645358"
 ---
 # <a name="generatepublisherevidence-element"></a>\<Элемент generatePublisherEvidence>
 Уточняется, создает <xref:System.Security.Policy.Publisher> ли время выполнения доказательства безопасности доступа к коду (CAS).  
@@ -31,7 +31,7 @@ ms.locfileid: "79154118"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`enabled`|Обязательный атрибут.<br /><br /> Уточняется, создает <xref:System.Security.Policy.Publisher> ли время выполнения доказательства.|  
   
@@ -52,10 +52,10 @@ ms.locfileid: "79154118"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
   
 > [!NOTE]
-> В рамках .NET 4 и позже этот элемент не влияет на время сборки. Для получения дополнительной информации смотрите раздел "Упрощение политики [безопасности" в разделе "Изменения безопасности".](../../../security/security-changes.md)  
+> В рамках .NET 4 и позже этот элемент не влияет на время сборки. Для получения дополнительной информации смотрите раздел "Упрощение политики [безопасности" в разделе "Изменения безопасности".](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)  
   
  Общее время выполнения языка (CLR) пытается проверить подпись Authenticode <xref:System.Security.Policy.Publisher> во время загрузки, чтобы создать улики для сборки. Однако по умолчанию большинству <xref:System.Security.Policy.Publisher> приложений не нужны доказательства. Стандартная политика CAS не <xref:System.Security.Policy.PublisherMembershipCondition>опирается на . Следует избегать ненужных затрат на запуск, связанных с проверкой подписи издателя, если приложение не <xref:System.Security.Permissions.PublisherIdentityPermission> выполняется на компьютере с пользовательской политикой CAS или не намерено удовлетворять требования в среде частичного доверия. (Требования к разрешению на идентификацию всегда удались в условиях полного доверия.)  
   
@@ -78,5 +78,5 @@ ms.locfileid: "79154118"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Схема параметров среды выполнения](index.md)
+- [Схема настройки выполнения](index.md)
 - [Схема конфигурации файлов](../index.md)

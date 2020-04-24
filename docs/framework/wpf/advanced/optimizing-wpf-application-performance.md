@@ -7,20 +7,20 @@ helpviewer_keywords:
 - applications [WPF], optimizing
 - WPF application [WPF], optimizing
 ms.assetid: ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf
-ms.openlocfilehash: cc6ea051401199a87965565c920068fd55cb05d0
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 54d69e87ef2a9c5318e394422e3bcfcabcc76210
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76743943"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646245"
 ---
 # <a name="optimizing-wpf-application-performance"></a>Улучшение производительности приложений WPF
-Этот раздел предназначен для разработчиков приложений [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], которые ищут способы повышения производительности приложений. Если вы являетесь разработчиком, который не знаком с платформой Microsoft .NET и [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], необходимо сначала ознакомиться с обеими платформами. В этом разделе предполагается работа с базами знаний и написана для программистов, которые уже знакомы, чтобы заставить их работать.  
+Этот раздел предназначен в [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] качестве справочника для разработчиков приложений, которые ищут способы повышения производительности своих приложений. Если вы являетесь разработчиком, который является [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]новичом в Microsoft .NET Framework и, вы должны сначала ознакомиться с обеими платформами. Этот раздел предполагает знание работы обоих и написан для программистов, которые уже знают достаточно, чтобы запустить свои приложения.  
   
 > [!NOTE]
-> Данные о производительности, приведенные в этом разделе, основаны на [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложениях, работающих на ПК 2,8 ГГц с 512 ОЗУ и графической картой ATI Radeon 9700.  
+> Данные о производительности, представленные в этом разделе, основаны на [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложениях, работающих на ПК с 2,8 ГГц с 512 оперативной памятью и видеокартой ATI Radeon 9700.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
  [Планирование производительности приложения](planning-for-application-performance.md)  
   
  [Использование преимуществ оборудования](optimizing-performance-taking-advantage-of-hardware.md)  
@@ -31,11 +31,11 @@ ms.locfileid: "76743943"
   
  [Поведение объекта](optimizing-performance-object-behavior.md)  
   
- [Ресурсы приложения](optimizing-performance-application-resources.md)  
+ [Ресурсы приложений](optimizing-performance-application-resources.md)  
   
  [Текст](optimizing-performance-text.md)  
   
- [Привязка данных](optimizing-performance-data-binding.md)  
+ [Связывание данных](optimizing-performance-data-binding.md)  
   
  [Элементы управления](optimizing-performance-controls.md)  
   
@@ -55,11 +55,11 @@ ms.locfileid: "76743943"
 - [Использование объектов DrawingVisual](../graphics-multimedia/using-drawingvisual-objects.md)
 - [Общие сведения о свойствах зависимости](dependency-properties-overview.md)
 - [Общие сведения об объектах класса Freezable](freezable-objects-overview.md)
-- [Ресурсы XAML](xaml-resources.md)
+- [Ресурсы XAML](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [Документы в WPF](documents-in-wpf.md)
 - [Рисование форматированного текста](drawing-formatted-text.md)
 - [Оформление в WPF](typography-in-wpf.md)
-- [Общие сведения о привязке данных](../../../desktop-wpf/data/data-binding-overview.md)
+- [Обзор связывания данных](../../../desktop-wpf/data/data-binding-overview.md)
 - [Общие сведения о переходах](../app-development/navigation-overview.md)
 - [Советы и рекомендации по анимации](../graphics-multimedia/animation-tips-and-tricks.md)
 - [Пошаговое руководство. Кэширование данных приложения WPF](walkthrough-caching-application-data-in-a-wpf-application.md)

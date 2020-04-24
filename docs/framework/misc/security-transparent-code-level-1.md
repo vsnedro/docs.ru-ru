@@ -9,12 +9,12 @@ helpviewer_keywords:
 - security-transparent code
 - security [.NET Framework], security-transparent code
 ms.assetid: 5fd8f46d-3961-46a7-84af-2eb1f48e75cf
-ms.openlocfilehash: 980c684bced685a61ad82ff5713ccff2b974028f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6f6c6ecd9ecab8c531be971a0e7896994127beb8
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181128"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81645744"
 ---
 # <a name="security-transparent-code-level-1"></a>Прозрачный код безопасности, уровень 1
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -59,7 +59,7 @@ ms.locfileid: "79181128"
 ## <a name="transparency-attributes"></a>Атрибуты прозрачности  
  В таблице ниже описываются три атрибута, используемые для указания прозрачности кода.  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |<xref:System.Security.SecurityTransparentAttribute>|Применяется только на уровне сборки. Помечает все типы и члены внутри сборки как прозрачные с точки зрения безопасности. При этом сборка не может содержать критический с точки зрения безопасности код.|  
 |<xref:System.Security.SecurityCriticalAttribute>|При использовании на уровне сборки без свойства <xref:System.Security.SecurityCriticalAttribute.Scope%2A> помечает весь код внутри сборки как прозрачный с точки зрения безопасности по умолчанию, однако показывает, что сборка может содержать критический с точки зрения безопасности код.<br /><br /> При использовании на уровне класса помечает класс или метод как критический с точки зрения безопасности. Чтобы пометить все члены как критические с точки зрения безопасности, установите для свойства <xref:System.Security.SecurityCriticalAttribute.Scope%2A> значение <xref:System.Security.SecurityCriticalScope.Everything>.<br /><br /> При использовании на уровне члена атрибут применяется только к этому члену.<br /><br /> Класс или метод, помеченный как критический с точки зрения безопасности, может осуществлять повышение привилегий. **Важно:**  В уровне 1 прозрачности, критически важные типы и члены, критически настроенные по безопасности, рассматриваются как безопасные, критически ели, когда они вызваны из-за пределов сборки. Чтобы предотвратить несанкционированное повышение привилегий, нужно защитить критические с точки зрения безопасности типы и члены запросом компоновки с полным доверием.|  
@@ -131,4 +131,4 @@ public class B
 ## <a name="see-also"></a>См. также раздел
 
 - [Прозрачный с точки зрения безопасности код, уровень 2](security-transparent-code-level-2.md)
-- [Изменения безопасности](../security/security-changes.md)
+- [Изменения безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)

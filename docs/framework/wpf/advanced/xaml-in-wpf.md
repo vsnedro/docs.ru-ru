@@ -7,20 +7,20 @@ helpviewer_keywords:
 - XAML [WPF]
 - Extensible Application Markup Language [WPF]
 ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
-ms.openlocfilehash: 7b4811290d58b946bd9f115cb15d5eb0fda03b1d
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 00525e8bd085126e15de9c80bdd5fc0106d565d6
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76741877"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646163"
 ---
 # <a name="xaml-in-wpf"></a>XAML в WPF
 
-[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] — это язык разметки для декларативного программирования приложений. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] реализует реализацию процессора XAML и обеспечивает поддержку языка XAML. Типы [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] реализуются так, что они могут обеспечить резервное копирование требуемого типа для представления XAML. Как правило, большинство пользовательских интерфейсов приложения [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] можно создать в разметке XAML.  
+[!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]является языком разметки для декларативного программирования приложений. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]реализует реализацию процессора XAML и обеспечивает поддержку языка XAML. Типы [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] реализованы таким образом, что они могут обеспечить требуемую поддержку типа для представления XAML. Как правило, вы можете создать [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] большинство uI-приложений в разметке XAML.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
-[Обзор XAML (WPF)](xaml-overview-wpf.md)  
+[Обзор XAML (WPF)](../../../desktop-wpf/fundamentals/xaml.md)  
 [Подробное описание синтаксиса XAML](xaml-syntax-in-detail.md)  
 [Код программной части и XAML в WPF](code-behind-and-xaml-in-wpf.md)  
 [Код XAML и пользовательские классы для WPF](xaml-and-custom-classes-for-wpf.md)  
@@ -28,21 +28,21 @@ ms.locfileid: "76741877"
 [Пространства имен XAML и сопоставление пространств имен для WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
 [Области видимости имен XAML в WPF](wpf-xaml-namescopes.md)  
 [Встроенные стили и шаблоны](inline-styles-and-templates.md)  
-[Обработка пробелов в XAML](../../../desktop-wpf/xaml-services/white-space-processing.md)  
+[Обработка белого пространства в XAML](../../../desktop-wpf/xaml-services/white-space-processing.md)  
 [TypeConverters и XAML](typeconverters-and-xaml.md)  
 [Сущности знаков XML и XAML](../../../desktop-wpf/xaml-services/xml-character-entities.md)  
-[Возможности пространства имен языка XAML (x:)](../../../desktop-wpf/xaml-services/namespace-language-features.md)  
+[Пространство имен XAML (x:) Возможности языка](../../../desktop-wpf/xaml-services/namespace-language-features.md)  
 [Расширения XAML WPF](wpf-xaml-extensions.md)  
-[Возможности языка: совместимость разметки (mc:)](markup-compatibility-mc-language-features.md)  
+[Совместимость разметки (mc:) Возможности языка](markup-compatibility-mc-language-features.md)  
   
-## <a name="related-sections"></a>См. также  
+## <a name="related-sections"></a>Связанные разделы  
 
 [Архитектура WPF](wpf-architecture.md)  
 [Базовые элементы](base-elements.md)  
 [Дерево элементов и сериализация](element-tree-and-serialization.md)  
 [Свойства](properties-wpf.md)  
 [События](events-wpf.md)  
-[Ввод](input-wpf.md)  
+[Входные данные](input-wpf.md)  
 [Ресурсы](resources-wpf.md)  
-[Использование стилей и шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
-[Потоковая модель](threading-model.md)
+[Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
+[Модель потоков](threading-model.md)

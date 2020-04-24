@@ -4,16 +4,16 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - tasks, ETW events
 ms.assetid: 87a9cff5-d86f-4e44-a06e-d12764d0dce2
-ms.openlocfilehash: 93fcd3215bdcbb30960f19e23ae15f32bb9ddd84
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 61429babf7378b9d271ffd60a6228ae4bfe7a5e5
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75716100"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644251"
 ---
 # <a name="etw-events-in-task-parallel-library-and-plinq"></a>События трассировки событий Windows в библиотеке параллельных задач и PLINQ
 
-Библиотека параллельных задач и PLINQ создают события трассировки событий Windows (ETW), которые можно использовать для профилирования и устранения неполадок в приложениях с помощью таких средств, как Windows Performance Analyzer. Однако в большинстве случаев лучшим способом профилирования параллельного кода приложения является использование [визуализатора параллелизма](/visualstudio/profiling/concurrency-visualizer) в Visual Studio.
+Библиотека параллельных задач и PLINQ создают события трассировки событий Windows (ETW), которые можно использовать для профилирования и устранения неполадок в приложениях с помощью таких средств, как Windows Performance Analyzer. Однако в большинстве сценариев лучший способ профилировать параллельный код приложения — использовать в [изобразительный параллелизм](/visualstudio/profiling/concurrency-visualizer) в Visual Studio.
 
 ## <a name="task-parallel-library-etw-events"></a>События трассировки событий Windows в библиотеке параллельных задач (TPL)
 
@@ -27,9 +27,9 @@ EVENT_DESCRIPTOR.Task = 1
 
 EVENT_DESCRIPTOR.Id = 1
 
-#### <a name="user-data"></a>Пользовательские данные
+#### <a name="user-data"></a>Данные пользователя
 
-|**Имя**|**Type**|**Описание**|
+|**имя**;|**Тип**|**Описание**|
 |--------------|--------------|---------------------|
 |OriginatingTaskSchedulerID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор объекта TaskScheduler, который начал цикл.|
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор задачи, которая начала цикл.|
@@ -43,9 +43,9 @@ EVENT_DESCRIPTOR.Id = 1
 
  EVENT_DESCRIPTOR.Id = 2
 
-#### <a name="user-data"></a>Пользовательские данные
+#### <a name="user-data"></a>Данные пользователя
 
-|**Имя**|**Type**|**Описание**|
+|**имя**;|**Тип**|**Описание**|
 |--------------|--------------|---------------------|
 |OriginatingTaskSchedulerID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор объекта TaskScheduler, который начал цикл.|
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор задачи, которая начала цикл.|
@@ -57,15 +57,15 @@ EVENT_DESCRIPTOR.Id = 1
 
  EVENT_DESCRIPTOR.Id = 3
 
-#### <a name="user-data"></a>Пользовательские данные
+#### <a name="user-data"></a>Данные пользователя
 
-|**Имя**|**Type**|**Описание**|
+|**имя**;|**Тип**|**Описание**|
 |--------------|--------------|---------------------|
 |OriginatingTaskSchedulerID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор объекта TaskScheduler, который начал цикл.|
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор задачи, которая начала цикл.|
 |ForkJoinContextID|<xref:System.Int32?displayProperty=nameWithType>|Уникальный идентификатор, используемый для обозначения вложений и пар для событий с семантикой ветвления и соединения.|
 |totalIterations|<xref:System.Int64?displayProperty=nameWithType>|Общее количество итераций|
-|operationType|<xref:System.Int32?displayProperty=nameWithType>|Указывает тип цикла:<br /><br /> 1 = ParallelInvoke<br /><br /> 2 = ParallelFor<br /><br /> 3 = ParallelForEach|
+|"тип_операции"|<xref:System.Int32?displayProperty=nameWithType>|Указывает тип цикла:<br /><br /> 1 = ParallelInvoke<br /><br /> 2 = ParallelFor<br /><br /> 3 = ParallelForEach|
 |ActionCount|<xref:System.Int32?displayProperty=nameWithType>|Количество действий, которые будут выполнены при параллельном вызове.|
 
 ### <a name="parallel-invoke-end"></a>Конец параллельного вызова
@@ -73,9 +73,9 @@ EVENT_DESCRIPTOR.Id = 1
 
  EVENT_DESCRIPTOR.Id = 4
 
-#### <a name="user-data"></a>Пользовательские данные
+#### <a name="user-data"></a>Данные пользователя
 
-|**Имя**|**Type**|**Описание**|
+|**имя**;|**Тип**|**Описание**|
 |--------------|--------------|---------------------|
 |OriginatingTaskSchedulerID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор объекта TaskScheduler, который начал цикл.|
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор задачи, которая начала цикл.|
@@ -91,9 +91,9 @@ EVENT_DESCRIPTOR.Id = 1
 
  EVENT_DESCRIPTOR.Id = 1
 
-#### <a name="user-data"></a>Пользовательские данные
+#### <a name="user-data"></a>Данные пользователя
 
-|**Имя**|**Type**|**Описание**|
+|**имя**;|**Тип**|**Описание**|
 |--------------|--------------|---------------------|
 |OriginatingTaskSchedulerID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор объекта TaskScheduler, который начал цикл.|
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор задачи, которая начала цикл.|
@@ -104,16 +104,16 @@ EVENT_DESCRIPTOR.Id = 1
 
  EVENT_DESCRIPTOR.Id = 2
 
-#### <a name="user-data"></a>Пользовательские данные
+#### <a name="user-data"></a>Данные пользователя
 
-|**Имя**|**Type**|**Описание**|
+|**имя**;|**Тип**|**Описание**|
 |--------------|--------------|---------------------|
 |OriginatingTaskSchedulerID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор объекта TaskScheduler, который начал цикл.|
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор задачи, которая начала цикл.|
 |QueryID|<xref:System.Int32?displayProperty=nameWithType>|Уникальный идентификатор запроса.|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [События трассировки событий Windows в .NET Framework](etw-events.md)
+- [ETW Events in the .NET Framework](etw-events.md)
 - [Библиотека параллельных задач (TPL)](../../standard/parallel-programming/task-parallel-library-tpl.md)
-- [Parallel LINQ (PLINQ)](../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../standard/parallel-programming/introduction-to-plinq.md)

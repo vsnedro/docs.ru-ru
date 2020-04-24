@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - base elements [WPF]
 ms.assetid: 2c997092-72c6-4767-bc84-74267f4eee72
-ms.openlocfilehash: 7d52d951d4fa4df83bbcca6b4cb479e18e532d2a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f6519675ebf3624152e1077e7582f04e38b1dce9
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79141632"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644038"
 ---
 # <a name="base-elements-overview"></a>Общие сведения о базовых элементах
 Высокий процент классов [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] в являются производными от четырех классов, которые обычно называются в документации SDK в качестве базовых классов элементов. Эти <xref:System.Windows.UIElement>классы, <xref:System.Windows.FrameworkElement> <xref:System.Windows.ContentElement>и <xref:System.Windows.FrameworkContentElement>. Класс <xref:System.Windows.DependencyObject> также связан, потому что это общий базовый класс как, <xref:System.Windows.UIElement> так и<xref:System.Windows.ContentElement>  
@@ -47,7 +47,7 @@ ms.locfileid: "79141632"
   
 - Поддержка стилей и раскадровок. Для получения дополнительной <xref:System.Windows.Style> информации, [см.](../graphics-multimedia/storyboards-overview.md)  
   
-- Поддержка привязки данных. Для получения дополнительной информации [см.](../data/data-binding-overview.md)  
+- Поддержка привязки данных. Для получения дополнительной информации [см.](../../../desktop-wpf/data/data-binding-overview.md)  
   
 - Поддержка ссылок на динамические ресурсы. Дополнительные сведения см. в разделе [Ресурсы XAML](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
@@ -67,7 +67,7 @@ ms.locfileid: "79141632"
   
 - Поддержка стилей и раскадровок. Для получения дополнительной <xref:System.Windows.Style> информации, [см.](../graphics-multimedia/animation-overview.md)  
   
-- Поддержка привязки данных. Для получения дополнительной информации [см.](../data/data-binding-overview.md)  
+- Поддержка привязки данных. Для получения дополнительной информации [см.](../../../desktop-wpf/data/data-binding-overview.md)  
   
 - Поддержка ссылок на динамические ресурсы. Дополнительные сведения см. в разделе [Ресурсы XAML](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   

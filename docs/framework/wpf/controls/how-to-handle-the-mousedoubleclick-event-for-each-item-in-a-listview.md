@@ -7,35 +7,35 @@ dev_langs:
 helpviewer_keywords:
 - ListView controls [WPF], MouseDoubleClick event
 ms.assetid: 81b39369-655a-4585-ac58-4640e5bb8fed
-ms.openlocfilehash: 25308ee87fb387787e20c8a8887ae8e4e60742b9
-ms.sourcegitcommit: 944ddc52b7f2632f30c668815f92b378efd38eea
+ms.openlocfilehash: 7bbc7bad36b3b1f2c92065e5f5699e5a86ac6189
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73460231"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646109"
 ---
 # <a name="how-to-handle-the-mousedoubleclick-event-for-each-item-in-a-listview"></a>Практическое руководство. Обработка события MouseDoubleClick для каждого элемента в ListView
-Для обработки события для элемента в <xref:System.Windows.Controls.ListView>необходимо добавить обработчик событий для каждой <xref:System.Windows.Controls.ListViewItem>. Если <xref:System.Windows.Controls.ListView> привязан к источнику данных, то <xref:System.Windows.Controls.ListViewItem>не создается явным образом, но можно Обрабатывайте событие для каждого элемента, добавив <xref:System.Windows.EventSetter> к стилю <xref:System.Windows.Controls.ListViewItem>.  
+Для обработки события для <xref:System.Windows.Controls.ListView>элемента в элементе необходимо <xref:System.Windows.Controls.ListViewItem>добавить обработчик события для каждого из них. Когда <xref:System.Windows.Controls.ListView> a связан с источником данных, вы явно <xref:System.Windows.Controls.ListViewItem>не создаете, но вы можете <xref:System.Windows.EventSetter> обрабатывать событие для <xref:System.Windows.Controls.ListViewItem>каждого элемента, добавляя в стиль .  
   
 ## <a name="example"></a>Пример  
- В следующем примере создается <xref:System.Windows.Controls.ListView> с привязкой к данным и создается <xref:System.Windows.Style> для добавления обработчика событий в каждый <xref:System.Windows.Controls.ListViewItem>.  
+ Следующий пример создает связанную <xref:System.Windows.Controls.ListView> с <xref:System.Windows.Style> данными и создает <xref:System.Windows.Controls.ListViewItem>для добавления обработчика событий к каждому из них.  
   
  [!code-xaml[ListViewHowTos#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewHowTos/CSharp/Window1.xaml#1)]  
 [!code-xaml[ListViewHowTos#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewHowTos/CSharp/Window1.xaml#5)]  
 [!code-xaml[ListViewHowTos#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewHowTos/CSharp/Window1.xaml#2)]  
   
- В следующем примере обрабатывается событие <xref:System.Windows.Controls.Control.MouseDoubleClick>.  
+ Следующий пример обрабатывает <xref:System.Windows.Controls.Control.MouseDoubleClick> событие.  
   
  [!code-csharp[ListViewHowTos#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewHowTos/CSharp/Window1.xaml.cs#6)]
  [!code-vb[ListViewHowTos#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewHowTos/VisualBasic/Window1.xaml.vb#6)]  
   
 > [!NOTE]
-> Несмотря на то, что наиболее распространена привязка <xref:System.Windows.Controls.ListView> к источнику данных, можно использовать стиль, чтобы добавить обработчик событий в каждый <xref:System.Windows.Controls.ListViewItem> в <xref:System.Windows.Controls.ListView>, не привязанном к данным, независимо от того, явно ли создается <xref:System.Windows.Controls.ListViewItem>.  Дополнительные сведения о явном и неявном создании <xref:System.Windows.Controls.ListViewItem>ных элементов управления см. в разделе <xref:System.Windows.Controls.ItemsControl>.  
+> Хотя наиболее часто <xref:System.Windows.Controls.ListView> привязывается к источнику данных, можно использовать <xref:System.Windows.Controls.ListViewItem> стиль для добавления обработчика событий к каждому из них в несвязанном <xref:System.Windows.Controls.ListView> данных независимо от того, создаете ли вы <xref:System.Windows.Controls.ListViewItem>явно.  Для получения дополнительной информации о <xref:System.Windows.Controls.ListViewItem> явно <xref:System.Windows.Controls.ItemsControl>созданных элементах управления см.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Xml.XmlElement>
-- [Общие сведения о привязке данных](../data/data-binding-overview.md)
+- [Обзор связывания данных](../../../desktop-wpf/data/data-binding-overview.md)
 - [Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
-- [Практическое руководство. Привязка к XML-данным с помощью XMLDataProvider и запросов XPath](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
+- [Привязываться к данным XML с помощью XMLDataProvider и XPath-запросов](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
 - [Общие сведения об элементе управления ListView](listview-overview.md)

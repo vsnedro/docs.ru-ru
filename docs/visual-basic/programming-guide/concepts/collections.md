@@ -2,12 +2,12 @@
 title: Коллекции
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
-ms.openlocfilehash: ba16d04e781bcf69356b1f603d92e104816a0860
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 232b9ec7b5975092e73daf0a7384fa816f55f72f
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79401415"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646347"
 ---
 # <a name="collections-visual-basic"></a>Коллекции (Visual Basic)
 
@@ -224,7 +224,7 @@ End Class
 
 Везде, где это возможно, следует использовать универсальные коллекции в пространстве имен <xref:System.Collections.Generic?displayProperty=nameWithType> или пространстве имен <xref:System.Collections.Concurrent> вместо класса `Collection` в Visual Basic.
 
-Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.Collection>.
+Для получения дополнительной информации см. <xref:Microsoft.VisualBasic.Collection>.
 
 <a name="BKMK_KeyValuePairs"></a>
 
@@ -570,12 +570,12 @@ End Function
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Коллекция Инициалов](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
+- [Инициализаторы коллекций](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
 - [Основные понятия программирования (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
 - [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
-- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/introduction-to-plinq.md)
 - [Коллекции и структуры данных](../../../standard/collections/index.md)
 - [Выбор класса коллекции](../../../standard/collections/selecting-a-collection-class.md)
 - [Сравнение и сортировка в коллекциях](../../../standard/collections/comparisons-and-sorts-within-collections.md)
-- [Когда использовать общие коллекции](../../../standard/collections/when-to-use-generic-collections.md)
+- [Когда следует использовать универсальные коллекции](../../../standard/collections/when-to-use-generic-collections.md)

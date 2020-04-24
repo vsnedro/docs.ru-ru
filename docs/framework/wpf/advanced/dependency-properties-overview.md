@@ -14,12 +14,12 @@ helpviewer_keywords:
 - dependency properties [WPF]
 - resources [WPF], references to
 ms.assetid: d119d00c-3afb-48d6-87a0-c4da4f83dee5
-ms.openlocfilehash: 542e0a84e4c5cfc3750c33fe29cb40d3643e91e3
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: c73a61b8c251b12d5b3dac67535632322779a6af
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636028"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644058"
 ---
 # <a name="dependency-properties-overview"></a>Общие сведения о свойствах зависимости
 
@@ -87,7 +87,7 @@ Windows Presentation Foundation (WPF) предоставляет набор сл
 
 - [Ресурсы](#resources)
 
-- [Связывание данных](#data-binding)
+- [привязка данных,](#data-binding)
 
 - [Стили](#styles)
 
@@ -123,7 +123,7 @@ Windows Presentation Foundation (WPF) предоставляет набор сл
 > [!NOTE]
 > Привязки считаются локальными значениями. Это означает, что если задается другое локальное значение, привязка удаляется. Дополнительные сведения см. в разделе [Приоритет значений свойств зависимостей](dependency-property-value-precedence.md).
 
-Для свойств зависимостей (или класса <xref:System.Windows.DependencyObject>) не предусмотрена собственная поддержка <xref:System.ComponentModel.INotifyPropertyChanged> для формирования уведомлений об изменениях в исходном значении свойства <xref:System.Windows.DependencyObject> для операций привязки данных. Дополнительные сведения о создании свойств для использования в привязках данных, которые могут передавать сообщения об изменениях в целевой объект привязки данных, см. в разделе [Общие сведения о привязках данных](../data/data-binding-overview.md).
+Для свойств зависимостей (или класса <xref:System.Windows.DependencyObject>) не предусмотрена собственная поддержка <xref:System.ComponentModel.INotifyPropertyChanged> для формирования уведомлений об изменениях в исходном значении свойства <xref:System.Windows.DependencyObject> для операций привязки данных. Дополнительные сведения о создании свойств для использования в привязках данных, которые могут передавать сообщения об изменениях в целевой объект привязки данных, см. в разделе [Общие сведения о привязках данных](../../../desktop-wpf/data/data-binding-overview.md).
 
 ### <a name="styles"></a>Стили
 Существует два основных направления применения свойств зависимостей — стили и шаблоны. Стили особенно полезны для настройки свойств, определяющих приложение [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. Обычно стили определяются в XAML в качестве ресурсов. Стили взаимодействуют с системой свойств, так как они обычно содержат код для задания значения конкретного свойства, а также "правила срабатывания", которые определяют изменение значения свойства в зависимости от значения другого свойства в режиме реального времени.
@@ -134,7 +134,7 @@ Windows Presentation Foundation (WPF) предоставляет набор сл
 
 [!code-xaml[PropertiesOvwSupport#SimpleStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyle)]
 
-Более подробную информацию см. в разделе [Стилизация и использование шаблонов](../controls/styling-and-templating.md).
+Более подробную информацию см. в разделе [Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
 ### <a name="animations"></a>Анимации
 Свойства зависимостей могут быть анимированы. При выполнении анимации анимированное значение действует с более высоким приоритетом, чем любое другое значение (например, локальное значение), которое имелось бы у свойства.
@@ -196,7 +196,7 @@ Windows Presentation Foundation (WPF) предоставляет набор сл
 
 - Рассматривайте свойства зависимости как общедоступные свойства, доступные или, по крайней мере, доступные любому вызывающему абоненту, который имеет доступ к экземпляру. Дополнительные сведения см. в разделе [Безопасность свойств зависимостей](dependency-property-security.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пользовательские свойства зависимостей](custom-dependency-properties.md)
 - [Свойства зависимости "только для чтения"](read-only-dependency-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Управление
+title: Элементы управления
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,14 +7,14 @@ dev_langs:
 helpviewer_keywords:
 - controls [WPF], about WPF controls
 ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
-ms.openlocfilehash: 2ec8c0a99f4e2431aed0d8c24168b7329de669f8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2aab0fc8adaf17a8e9820a6269a740ef09540cda
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79187534"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646490"
 ---
-# <a name="controls"></a>Управление
+# <a name="controls"></a>Элементы управления
 <a name="introduction"></a>
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]поставляется со многими общими компонентами uI, которые используются <xref:System.Windows.Controls.TextBox>почти <xref:System.Windows.Controls.Menu>в <xref:System.Windows.Controls.ListBox>каждом приложении Windows, таких как, <xref:System.Windows.Controls.Button> <xref:System.Windows.Controls.Label>, и . Исторически эти объекты называются элементами управления. В [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] то время как SDK продолжает использовать термин "контроль", чтобы свободно означать любой класс, представляющий видимый объект <xref:System.Windows.Controls.Control> в приложении, важно отметить, что класс не должен наследовать от класса, чтобы иметь видимое присутствие. Классы, которые <xref:System.Windows.Controls.Control> наследуют <xref:System.Windows.Controls.ControlTemplate>из класса содержат , что позволяет потребителю контроля радикально изменить внешний вид управления без создания нового подкласса.  Эта тема обсуждает, как элементы управления <xref:System.Windows.Controls.Control> (как те, которые наследуют [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]от класса и те, которые этого не делают) обычно используются в .  
 
@@ -54,7 +54,7 @@ ms.locfileid: "79187534"
   
  [!code-xaml[ControlsOverview#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml#5)]  
   
- Вы также можете применить стиль только к определенным элементам управления определенного типа, назначив `Style` ключ к стилю и указав этот ключ в свойстве вашего элемента управления.  Для получения дополнительной информации о стилях, [см Стиль и Templating](styling-and-templating.md).  
+ Вы также можете применить стиль только к определенным элементам управления определенного типа, назначив `Style` ключ к стилю и указав этот ключ в свойстве вашего элемента управления.  Для получения дополнительной информации о стилях, [см Стиль и Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).  
   
 ### <a name="creating-a-controltemplate"></a>Создание шаблона ControlTemplate  
  A <xref:System.Windows.Style> позволяет устанавливать свойства на нескольких элементах управления одновременно, но иногда вы <xref:System.Windows.Controls.Control> можете настроить внешний <xref:System.Windows.Style>вид за то, что вы можете сделать, создав . Классы, которые <xref:System.Windows.Controls.Control> наследуют <xref:System.Windows.Controls.ControlTemplate>от класса имеют , который <xref:System.Windows.Controls.Control>определяет структуру и внешний вид . Свойство <xref:System.Windows.Controls.Control.Template%2A> a <xref:System.Windows.Controls.Control> является общедоступным, поэтому <xref:System.Windows.Controls.Control> <xref:System.Windows.Controls.ControlTemplate> вы можете дать, что отличается от его по умолчанию. Часто можно указать <xref:System.Windows.Controls.ControlTemplate> новое <xref:System.Windows.Controls.Control> для вместо наследования от элемента <xref:System.Windows.Controls.Control>управления, чтобы настроить внешний вид .  
@@ -99,12 +99,12 @@ ms.locfileid: "79187534"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Стилизация и использование шаблонов](styling-and-templating.md)
+- [Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Категории элементов управления](controls-by-category.md)
 - [Библиотека элементов управления](control-library.md)
 - [Общие сведения о шаблонах данных](../data/data-templating-overview.md)
 - [Обзор связывания данных](../../../desktop-wpf/data/data-binding-overview.md)
-- [Вход](../advanced/input-wpf.md)
+- [Входные данные](../advanced/input-wpf.md)
 - [Включение команды](../advanced/how-to-enable-a-command.md)
-- [Пошаговые руководства: создание пользовательской анимированной кнопки](walkthroughs-create-a-custom-animated-button.md)
+- [Пошаговые руководства. Создание пользовательской анимированной кнопки](walkthroughs-create-a-custom-animated-button.md)
 - [Настройка элементов управления](control-customization.md)

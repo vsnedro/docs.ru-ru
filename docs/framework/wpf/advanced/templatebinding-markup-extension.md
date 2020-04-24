@@ -8,12 +8,12 @@ helpviewer_keywords:
 - XAML [WPF], TemplateBinding markup extension
 - TemplateBinding markup extensions [WPF]
 ms.assetid: 1d25bbfc-dbc2-499d-9f12-419d23d4ac6a
-ms.openlocfilehash: 8cebbf717f66b072bc84b2068193ff2fe76ea87b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8c631a5a78db90187f0375181d4d4d1832159b7d
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79187280"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646173"
 ---
 # <a name="templatebinding-markup-extension"></a>Расширение разметки TemplateBinding
 Связывает значение свойства в шаблоне элемента управления со значением другого свойства элемента управления-шаблона.  
@@ -37,7 +37,7 @@ ms.locfileid: "79187280"
 |`propertyName`|<xref:System.Windows.DependencyProperty.Name%2A?displayProperty=nameWithType> для свойства задается в синтаксисе метода задания значения.|  
 |`sourceProperty`|Другое свойство зависимостей для типа, который используется в качестве шаблона, задается с помощью <xref:System.Windows.DependencyProperty.Name%2A?displayProperty=nameWithType>.<br /><br /> — или —<br /><br /> "Краткое" имя свойства, которое определяется типом, отличным от целевого шаблонного типа. Фактически это <xref:System.Windows.PropertyPath>. Смотрите [PropertyPath XAML Syntax](propertypath-xaml-syntax.md).|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  A `TemplateBinding` — это оптимизированная форма [связывания](binding-markup-extension.md) `Binding` для шаблонных сценариев, аналогичная построенной с `{Binding RelativeSource={RelativeSource TemplatedParent}, Mode=OneWay}`помощью . `TemplateBinding` всегда является односторонней привязкой, даже если используемые свойства по умолчанию используют двустороннюю привязку. Оба используемых свойства должны быть свойствами зависимостей. Для достижения двусторонней привязки к шаблону родителя `{Binding RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, Path=MyDependencyProperty}`используйте следующее обязательное заявление вместо этого.
   
  [RelativeSource](relativesource-markupextension.md) — это еще одно расширение разметки, которое иногда используется в сочетании с или вместо `TemplateBinding` этого для выполнения относительной связывания свойств в шаблоне.  
@@ -64,7 +64,7 @@ ms.locfileid: "79187280"
 
 - <xref:System.Windows.Style>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Стилизация и использование шаблонов](../controls/styling-and-templating.md)
+- [Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Обзор XAML (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Расширения разметки и XAML WPF](markup-extensions-and-wpf-xaml.md)
 - [Расширение разметки RelativeSource](relativesource-markupextension.md)

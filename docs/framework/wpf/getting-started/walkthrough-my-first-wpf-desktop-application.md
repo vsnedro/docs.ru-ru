@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 ms.topic: tutorial
 ms.custom: mvc,vs-dotnet
-ms.openlocfilehash: facb9ebebd9ce1904886a946277185ac2c2e4bc4
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 9381873faa8cca1accf95d823f5183a218d28813
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463925"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81646417"
 ---
 # <a name="tutorial-create-your-first-wpf-application-in-visual-studio-2019"></a>Учебник: Создайте свое первое приложение WPF в Visual Studio 2019
 
@@ -358,7 +358,7 @@ Layout предоставляет упорядоченный способ раз
 
 ## <a name="style-controls"></a>Элементы управления стилем
 
-Появление различных элементов часто одинаково для всех элементов одного типа в uI. UI использует [стили,](../controls/styling-and-templating.md) чтобы сделать выступления многоразовыми для нескольких элементов. Повторное использование стилей помогает упростить создание и управление XAML. В этом разделе атрибуты, установленные ранее для каждого элемента, заменяются стилями.
+Появление различных элементов часто одинаково для всех элементов одного типа в uI. UI использует [стили,](../../../desktop-wpf/fundamentals/styles-templates-overview.md) чтобы сделать выступления многоразовыми для нескольких элементов. Повторное использование стилей помогает упростить создание и управление XAML. В этом разделе атрибуты, установленные ранее для каждого элемента, заменяются стилями.
 
 1. Открытое *application.xaml* или *App.xaml*.
 
@@ -481,7 +481,7 @@ Layout предоставляет упорядоченный способ раз
 В этом пошаге вы узнали ряд методов для создания uI с помощью Windows Презентация фонда (WPF). Теперь вы должны иметь базовое представление о строительных блоках приложения .NET, связанного с данными. Более подробную информацию об архитектуре и моделях программирования WPF см. в следующих разделах:
 
 - [Архитектура WPF](../advanced/wpf-architecture.md)
-- [Обзор XAML (WPF)](../advanced/xaml-overview-wpf.md)
+- [Обзор XAML (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Обзор свойств зависимостей](../advanced/dependency-properties-overview.md)
 - [Макет](../advanced/layout.md)
 
@@ -493,7 +493,7 @@ Layout предоставляет упорядоченный способ раз
 - [Графика и мультимедиа](../graphics-multimedia/index.md)
 - [Документы в WPF](../advanced/documents-in-wpf.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор панелей](../controls/panels-overview.md)
 - [Обзор шаблонов данных](../data/data-templating-overview.md)
