@@ -1,5 +1,5 @@
 - name: 'Операции с дисками, каталогами и файлами'
-  href: processing.md
+  href: index.md
   items:
     - name: Доступ к файлам с помощью Visual Basic
       href: file-access.md

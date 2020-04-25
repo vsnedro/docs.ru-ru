@@ -393,7 +393,7 @@
       href: styles-and-templates.md
       items:
         - name: Стилизация и использование шаблонов
-          href: styling-and-templating.md
+          href: ../../../desktop-wpf/fundamentals/styles-templates-overview.md
         - name: Настройка существующего элемента управления с помощью ControlTemplate
           href: ../../../desktop-wpf/themes/how-to-create-apply-template.md
         - name: 'Практическое руководство. Поиск элемента, созданного шаблоном ControlTemplate'
