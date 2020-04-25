@@ -8,73 +8,73 @@ helpviewer_keywords:
 - ComponentResourceKey markup extension [WPF]
 - XAML [WPF], ComponentResourceKey markup extension
 ms.assetid: d6bcdbe6-61b3-40a7-b381-4e02185b5a85
-ms.openlocfilehash: 4cdba2a61be4e9686cd2120fd90a213534c222c8
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: f86b7000b97bbc1287347947a9244c24a7de74c2
+ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81243366"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82141128"
 ---
 # <a name="componentresourcekey-markup-extension"></a>Расширение разметки ComponentResourceKey
-Определяет и ссылается на ключи для ресурсов, загруженных из внешних сборок. Это позволяет поиску ресурсов указать целевой тип в сборке, а не словарь явного ресурса в сборке или в классе.  
+Определяет и ссылается на ключи для ресурсов, загружаемых из внешних сборок. Это позволяет подстановке ресурсов указывать целевой тип в сборке, а не явный словарь ресурсов в сборке или классе.  
   
-## <a name="xaml-attribute-usage-setting-key-compact"></a>Использование атрибутов XAML (установка ключа, компактный)  
+## <a name="xaml-attribute-usage-setting-key-compact"></a>Использование атрибута XAML (ключ Setting, компактный)  
   
 ```xml  
-<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" .../>  
+<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" ... />  
 ```  
   
-## <a name="xaml-attribute-usage-setting-key-verbose"></a>Использование атрибутов XAML (установка ключа, многословная)  
+## <a name="xaml-attribute-usage-setting-key-verbose"></a>Использование атрибута XAML (параметр key, verbose)  
   
 ```xml  
-<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}" .../>  
+<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}" ... />  
 ```  
   
-## <a name="xaml-attribute-usage-requesting-resource-compact"></a>Использование атрибутов XAML (запросный ресурс, компактный)  
+## <a name="xaml-attribute-usage-requesting-resource-compact"></a>Использование атрибута XAML (запрос ресурса, компактный)  
   
 ```xml  
-<object property="{DynamicResource {ComponentResourceKey {x:Type targetTypeName}, targetID}}" .../>  
+<object property="{DynamicResource {ComponentResourceKey {x:Type targetTypeName}, targetID}}" ... />  
 ```  
   
-## <a name="xaml-attribute-usage-requesting-resource-verbose"></a>Использование атрибутов XAML (запросресурс, многословный)  
+## <a name="xaml-attribute-usage-requesting-resource-verbose"></a>Использование атрибута XAML (запрос ресурса, подробный)  
   
 ```xml  
-<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}}" .../>  
+<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}}" ... />  
 ```  
   
 ## <a name="xaml-values"></a>Значения XAML  
   
 |||  
 |-|-|  
-|`targetTypeName`|Имя типа общего языка (CLR), определяемого в сборке ресурсов.|  
-|`targetID`|Ключ для ресурса. Когда ресурсы будут `targetID` рассмотрены, будет аналогична [директиве x:Key](../../../desktop-wpf/xaml-services/xkey-directive.md) ресурса.|  
+|`targetTypeName`|Имя общедоступного типа общеязыковой среды выполнения (CLR), определенного в сборке ресурсов.|  
+|`targetID`|Ключ для ресурса. При поиске ресурсов `targetID` они будут аналогом [директивы x:Key](../../../desktop-wpf/xaml-services/xkey-directive.md) ресурса.|  
   
 ## <a name="remarks"></a>Remarks  
- Как видно из приведенных выше`ComponentResourceKey`обычаев, использование расширения разметки находится в двух местах:  
+ Как показано в описании выше, использование расширения разметки {`ComponentResourceKey`} находится в двух местах:  
   
-- Определение ключа в словаре тематиного ресурса, как это предусмотрено автором элемента управления.  
+- Определение ключа в словаре ресурсов темы, предоставленное автором элемента управления.  
   
-- Доступ к ресурсу темы из сборки, когда вы retemplating управления, но хотите использовать значения свойств, которые приходят из ресурсов, предоставляемых темами элемента управления.  
+- Доступ к ресурсу темы из сборки при пересоздании шаблона элемента управления, но необходимо использовать значения свойств, полученные из ресурсов, предоставляемых темами элемента управления.  
   
- Для ссылок на компонентные ресурсы, которые приходят из `{DynamicResource}` тем, `{StaticResource}`как правило, рекомендуется использовать, а не . Это показано в использовании. `{DynamicResource}`рекомендуется, потому что сама тема может быть изменена пользователем. Если требуется ресурс компонента, который наиболее точно соответствует намерениям автора элемента управления для поддержки темы, следует включить ссылку на ресурс компонента также динамической.  
+ Для ссылок на ресурсы компонентов, которые поступают из тем, обычно рекомендуется использовать `{DynamicResource}` вместо. `{StaticResource}` Это показано в использовании. `{DynamicResource}`рекомендуется, поскольку пользователь может изменить саму тему. Если требуется, чтобы ресурс компонента, наиболее точно соответствующий намерению разработчика элемента управления, поддерживал тему, следует включить также динамическую ссылку на ресурс компонента.  
   
- Идентифицирует <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> тип, существующий в целевой сборке, где фактически определен ресурс. A `ComponentResourceKey` может быть определен и использован независимо <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> от точного знания, где определяется, но в конечном итоге должны решить тип через ссылки сборок.  
+ <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> Определяет тип, существующий в целевой сборке, в которой ресурс фактически определен. `ComponentResourceKey` Можно определить и использовать независимо от того, где <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> определено, но в конечном итоге необходимо разрешить тип с помощью сборок, на которые имеются ссылки.  
   
- Общее использование <xref:System.Windows.ComponentResourceKey> для определения ключей, которые затем подвергаются как члены класса. Для этого использования используется <xref:System.Windows.ComponentResourceKey> конструктор класса, а не расширение разметки. Для получения дополнительной <xref:System.Windows.ComponentResourceKey>информации см. [Control Authoring Overview](../controls/control-authoring-overview.md)  
+ Распространенный способ использования <xref:System.Windows.ComponentResourceKey> — определение ключей, которые затем предоставляются как члены класса. Для такого использования используется конструктор <xref:System.Windows.ComponentResourceKey> класса, а не расширение разметки. Дополнительные сведения см <xref:System.Windows.ComponentResourceKey>. в разделе или «определение и создание ссылок на ключи для ресурсов темы» раздела [Общие сведения о разработке элементов управления](../controls/control-authoring-overview.md)раздела.  
   
- Для создания ключей и ссылок на ресурсы с ключами `ComponentResourceKey` для расширения разметки обычно используется синтаксис атрибутов.  
+ Для установки ключей и ссылок на ресурсы с ключом синтаксис атрибутов обычно используется для расширения `ComponentResourceKey` разметки.  
   
- Показано, что компактный синтаксис зависит от подписи <xref:System.Windows.ComponentResourceKey.%23ctor%2A> конструктора и использования позиционного параметра расширения разметки. Порядок, `targetTypeName` в `targetID` котором и даны важно. Многословный синтаксис опирается <xref:System.Windows.ComponentResourceKey.%23ctor%2A> на безпаративный <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> конструктор, а затем устанавливает и <xref:System.Windows.ComponentResourceKey.ResourceId%2A> таким образом, что аналогично истинному синтаксису атрибута на элементе объекта. В многословном синтаксисе порядок, в котором установлены свойства, не имеет значения. Взаимоотношения и механизмы этих двух альтернатив (компактный и многословный) описаны более подробно в теме [Markup Extensions и WPF XAML](markup-extensions-and-wpf-xaml.md).  
+ Синтаксис Compact, показанный в, зависит <xref:System.Windows.ComponentResourceKey.%23ctor%2A> от сигнатуры конструктора и использования позиционированного параметра для расширения разметки. Порядок, в котором задаются `targetTypeName` и `targetID` , важен. Подробный синтаксис основывается на конструкторе <xref:System.Windows.ComponentResourceKey.%23ctor%2A> без параметров, а затем устанавливает <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> и <xref:System.Windows.ComponentResourceKey.ResourceId%2A> таким образом, что аналогично истинному синтаксису атрибута для объектного элемента. В подробном синтаксисе порядок, в котором задаются свойства, не важен. Отношения и механизмы этих двух вариантов (компактный и подробный) более подробно описаны в разделе [расширения разметки и XAML WPF](markup-extensions-and-wpf-xaml.md).  
   
- Технически значение для `targetID` любого объекта, он не должен быть строкой. Тем не менее, наиболее распространенным `targetID` использованием в WPF является выравнивание значения с формами, которые являются строками, и где такие строки действительны в [XamlName Грамматика](../../../desktop-wpf/xaml-services/xamlname-grammar.md).  
+ Технически значением параметра `targetID` может быть любой объект, а не строковый. Однако наиболее распространенным применением в WPF является согласование `targetID` значения с формами, которые являются строками, и если такие строки допустимы в [грамматике имяxaml](../../../desktop-wpf/xaml-services/xamlname-grammar.md).  
   
- `ComponentResourceKey`может быть использован в синтаксисе элемента объекта. В этом случае для правильной <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> инициализации расширения требуется указание значения как свойств, так и <xref:System.Windows.ComponentResourceKey.ResourceId%2A> свойств.  
+ `ComponentResourceKey`может использоваться в синтаксисе объектного элемента. В этом случае для правильной инициализации расширения требуется указать значения <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> свойств <xref:System.Windows.ComponentResourceKey.ResourceId%2A> и.  
   
- В [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] реализации чтения обработка этого расширения разметки определяется классом. <xref:System.Windows.ComponentResourceKey>  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] В реализации модуля чтения Обработка этого расширения разметки определяется <xref:System.Windows.ComponentResourceKey> классом.  
   
  `ComponentResourceKey` является расширением разметки. Расширения разметки обычно реализуются, если требуется заменить значения атрибутов на нелитеральные значения или имена обработчиков и если требуется больше, чем простая настройка преобразователей типов на работу с определенными типами или свойствами. Все расширения разметки в [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] используют символы "{" и "}" в синтаксисе их атрибутов, который является соглашением, по которому обработчик [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] распознает, что расширение разметки должно обработать атрибут. Дополнительные сведения см. в разделе [Расширения разметки и XAML WPF](markup-extensions-and-wpf-xaml.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.ComponentResourceKey>
 - <xref:System.Windows.Controls.ControlTemplate>

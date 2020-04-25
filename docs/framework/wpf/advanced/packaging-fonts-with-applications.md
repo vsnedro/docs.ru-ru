@@ -10,26 +10,26 @@ helpviewer_keywords:
 - typography [WPF], packaging fonts with applications
 - packaging fonts with applications [WPF]
 ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
-ms.openlocfilehash: cef2ae26ec4fccd25ca193ba7d441969f36b25a8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7bdf3b11557d94ab39c93a21ac53b917e3a1767d
+ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79187093"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82141122"
 ---
 # <a name="packaging-fonts-with-applications"></a>Упаковка шрифтов с приложениями
-В этой теме содержится обзор того, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] как упаковать шрифты с вашим приложением.  
+В этом разделе приводятся общие сведения о том, как [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] упаковывать шрифты в приложение.  
   
 > [!NOTE]
-> Как и с большинством типов программного обеспечения, файлы шрифтов предоставляются по лицензии, а не продаются. Лицензии, регулирующие использование шрифтов, варьируются от поставщика к поставщику, но в целом большинство лицензий, включая лицензии, охватывающие шрифты, которые поставляются Microsoft с приложениями и Windows, не позволяют встраиваться в приложения или иным образом перераспределяться. Ответственность разработчика состоит в том, чтобы гарантировать наличие требуемых лицензионных прав на любой шрифт, встраиваемый в приложение или распространяемый иными путями.  
+> Как и с большинством типов программного обеспечения, файлы шрифтов предоставляются по лицензии, а не продаются. Лицензии, управляющие использованием шрифтов, отличаются от поставщиков поставщиками, но в целом большинство лицензий, включая те, которые охватывают шрифты, поставляемые корпорацией Майкрософт с приложениями и Windows, не позволяют внедрять шрифты в приложения или иным образом распространять их. Ответственность разработчика состоит в том, чтобы гарантировать наличие требуемых лицензионных прав на любой шрифт, встраиваемый в приложение или распространяемый иными путями.  
 
 <a name="introduction_to_packaging_fonts"></a>
 ## <a name="introduction-to-packaging-fonts"></a>Общие сведения об упаковке шрифтов  
- Вы можете легко упаковать шрифты в качестве ресурсов в приложениях [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] для отображения текста пользовательского интерфейса и других типов содержимого на основе текста. Шрифты могут быть отдельными от файлов сборки приложения или включенными в них. Можно также создать библиотеку шрифтов только для ресурсов, на которую может ссылаться приложение.  
+ Можно легко упаковывать шрифты в виде ресурсов в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложениях для показа текста пользовательского интерфейса и других типов содержимого на основе текста. Шрифты могут быть отдельными от файлов сборки приложения или включенными в них. Можно также создать библиотеку шрифтов только для ресурсов, на которую может ссылаться приложение.  
   
- Шрифты OpenType и TrueType® содержат флаг типа, fsType, который указывает на шрифт, встраивающий лицензионные права на шрифт. Однако этот флаг типа относится только к внедренным шрифтам, хранящимся в документе; он не относится к шрифтам, внедренным в приложении. Вы можете получить права на встраивание шрифта <xref:System.Windows.Media.GlyphTypeface> для шрифта, <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> создав объект и ссылаясь на его свойство. Для получения дополнительной информации о флаге fsType обратитесь в раздел "OS/2 и Windows Metrics" [спецификации OpenType.](https://www.microsoft.com/typography/otspec/os2.htm)  
+ Шрифты OpenType и TrueType® содержат флаг типа, Фстипе, который указывает лицензионные права на внедрение шрифта. Однако этот флаг типа относится только к внедренным шрифтам, хранящимся в документе; он не относится к шрифтам, внедренным в приложении. Права на внедрение шрифта для шрифта можно получить, создав <xref:System.Windows.Media.GlyphTypeface> объект и ссылаясь на его <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> свойство. Дополнительные сведения о флаге Фстипе см. в разделе "метрики OS/2 и Windows" [спецификации OpenType](https://www.microsoft.com/typography/otspec/os2.htm) .  
   
- Веб-узел [Microsoft Typography](https://docs.microsoft.com/typography/) содержит контактную информацию, которая может помочь вам найти конкретного поставщика шрифтов или найти поставщика шрифтов для работы на заказ.  
+ На веб-сайте [Microsoft оформления](https://docs.microsoft.com/typography/) имеются контактные данные, которые помогут найти конкретного поставщика шрифтов или найти поставщика шрифтов для пользовательской работы.  
   
 <a name="adding_fonts_as_content_items"></a>
 ## <a name="adding-fonts-as-content-items"></a>Добавление шрифтов как элементов содержимого  
@@ -47,7 +47,7 @@ ms.locfileid: "79187093"
 </Project>  
 ```  
   
- Чтобы приложение могло использовать шрифты во время выполнения, эти шрифты должны быть доступны в каталоге развертывания приложения. Элемент `<CopyToOutputDirectory>` в файле проекта приложения позволяет автоматически копировать шрифты в каталог развертывания приложения во время процесса сборки. В следующем примере файла проекта показано, как скопировать шрифты в каталог развертывания.  
+ Чтобы приложение могло использовать шрифты во время выполнения, эти шрифты должны быть доступны в каталоге развертывания приложения. `<CopyToOutputDirectory>` Элемент в файле проекта приложения позволяет автоматически копировать шрифты в каталог развертывания приложения в процессе сборки. В следующем примере файла проекта показано, как скопировать шрифты в каталог развертывания.  
   
 ```xml  
 <ItemGroup>  
@@ -81,19 +81,19 @@ ms.locfileid: "79187093"
 ```  
   
 > [!NOTE]
-> При добавлении шрифтов в качестве ресурсов в `<Resource>` приложение убедитесь, `<EmbeddedResource>` что вы устанавливаете элемент, а не элемент в файле проекта приложения. Элемент `<EmbeddedResource>` для действия сборки не поддерживается.  
+> При добавлении шрифтов в качестве ресурсов в приложение убедитесь, что вы задаете `<Resource>` элемент, а не `<EmbeddedResource>` элемент в файле проекта приложения. `<EmbeddedResource>` Элемент для действия сборки не поддерживается.  
   
  В следующем примере разметки показано, как ссылаться на ресурсы шрифтов приложения.  
   
  [!code-xaml[FontSnippets#FontPackageSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
   
 ### <a name="referencing-font-resource-items-from-code"></a>Ссылка на элементы ресурсов шрифтов из кода  
- Для того, чтобы ссылаться на элементы ресурса шрифта из кода, необходимо предоставить ссылку на ресурсы из двух частей: базовый единый идентификатор ресурсов (URI); и ссылка на местоположение шрифта. Эти значения используются в качестве <xref:System.Windows.Media.FontFamily.%23ctor%2A> параметров для метода. Следующий пример кода показывает, как ссылаться на ресурсы шрифта приложения в подсобном `resources`запросе проекта.  
+ Чтобы ссылаться на элементы ресурса шрифта из кода, необходимо предоставить ссылку на ресурс шрифта из двух частей: базовый универсальный код ресурса (URI). и ссылку на расположение шрифта. Эти значения используются в качестве параметров для <xref:System.Windows.Media.FontFamily.%23ctor%2A> метода. В следующем примере кода показано, как ссылаться на ресурсы шрифта приложения в подкаталоге проекта с именем `resources`.  
   
  [!code-csharp[FontSnippets#FontPackageSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml.cs#fontpackagesnippet2)]
  [!code-vb[FontSnippets#FontPackageSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontpackagesnippets.xaml.vb#fontpackagesnippet2)]  
   
- Базовый единый идентификатор ресурсов (URI) может включать в себя субдиректорию приложения, в которой находится ресурс шрифта. В этом случае ссылка на местоположение шрифта не должна указывать каталог,`./`но должна будет включать ведущий ", который указывает, что ресурс шрифта находится в том же каталоге, указанном базовым единым идентификатором ресурсов (URI). В следующем примере кода показан другой способ ссылки на элемент ресурса шрифта — он эквивалентен предыдущему примеру кода.  
+ Базовый универсальный код ресурса (URI) может включать подкаталог приложения, в котором находится ресурс Font. В этом случае в ссылке на расположение шрифта не нужно указывать каталог, но необходимо включить в начале "`./`", что означает, что ресурс шрифта находится в том же каталоге, что и базовый универсальный код ресурса (URI). В следующем примере кода показан другой способ ссылки на элемент ресурса шрифта — он эквивалентен предыдущему примеру кода.  
   
  [!code-csharp[FontSnippets#FontPackageSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml.cs#fontpackagesnippet5)]
  [!code-vb[FontSnippets#FontPackageSnippet5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontpackagesnippets.xaml.vb#fontpackagesnippet5)]  
@@ -119,12 +119,12 @@ ms.locfileid: "79187093"
  [!code-vb[FontSnippets#FontPackageSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/pages/homepage.xaml.vb#fontpackagesnippet4)]  
   
 ### <a name="enumerating-fonts-in-an-application"></a>Перечисление шрифтов в приложении  
- Чтобы перечислить шрифты в качестве элементов ресурса <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> <xref:System.Windows.Media.Fonts.GetTypefaces%2A> в приложении, используйте либо метод. В следующем примере показано, как использовать <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> <xref:System.Windows.Media.FontFamily> метод для возвращения коллекции объектов из местоположения шрифта приложения. В данном случае приложение содержит подкаталог с именем resources.  
+ Чтобы перечислить шрифты как элементы ресурсов в приложении, используйте либо <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> <xref:System.Windows.Media.Fonts.GetTypefaces%2A> метод, либо. В следующем примере показано, как использовать <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> метод для возврата коллекции <xref:System.Windows.Media.FontFamily> объектов из расположения шрифта приложения. В данном случае приложение содержит подкаталог с именем resources.  
   
  [!code-csharp[FontSnippets#FontsSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontssnippet3)]
  [!code-vb[FontSnippets#FontsSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontssnippet3)]  
   
- В следующем примере показано, как использовать <xref:System.Windows.Media.Fonts.GetTypefaces%2A> <xref:System.Windows.Media.Typeface> метод для возвращения коллекции объектов из местоположения шрифта приложения. В данном случае приложение содержит подкаталог с именем resources.  
+ В следующем примере показано, как использовать <xref:System.Windows.Media.Fonts.GetTypefaces%2A> метод для возврата коллекции <xref:System.Windows.Media.Typeface> объектов из расположения шрифта приложения. В данном случае приложение содержит подкаталог с именем resources.  
   
  [!code-csharp[FontSnippets#FontsSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontssnippet7)]
  [!code-vb[FontSnippets#FontsSnippet7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontssnippet7)]  
@@ -139,7 +139,7 @@ ms.locfileid: "79187093"
   <OutputType>library</OutputType>  
   ...  
 </PropertyGroup>  
-...  
+...
 <ItemGroup>  
   <Resource Include="Kooten.ttf" />  
   <Resource Include="Pesca.ttf" />  
@@ -152,17 +152,17 @@ ms.locfileid: "79187093"
  [!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
   
 > [!NOTE]
-> Этот SDK содержит набор образцов шрифтов OpenType, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] которые можно использовать с помощью приложений. Эти шрифты определяются в библиотеке ресурсов. Дополнительные сведения см. в разделе [Пакет образцов шрифтов OpenType](sample-opentype-font-pack.md).  
+> Этот пакет SDK содержит набор образцов шрифтов OpenType, которые можно использовать с [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложениями. Эти шрифты определяются в библиотеке ресурсов. Дополнительные сведения см. в разделе [Пакет образцов шрифтов OpenType](sample-opentype-font-pack.md).  
   
 <a name="limitations_on_font_usage"></a>
 ## <a name="limitations-on-font-usage"></a>Ограничения в использовании шрифтов  
- В следующем списке описаны некоторые ограничения на [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] упаковку и использование шрифтов в приложениях:  
+ В следующем списке описаны некоторые ограничения на упаковку и использование шрифтов в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложениях.  
   
-- **Биты разрешений на внедрение шрифтов:** [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения не проверяют и не применяют принудительно никакие биты разрешений на внедрение шрифтов. Для получения дополнительной информации смотрите раздел [Introduction_to_Packing шрифтов.](#introduction_to_packaging_fonts)  
+- **Биты разрешений на внедрение шрифтов:** [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения не проверяют и не применяют принудительно никакие биты разрешений на внедрение шрифтов. Дополнительные сведения см. в разделе [шрифты Introduction_to_Packing](#introduction_to_packaging_fonts) .  
   
-- **Шрифты сайта происхождения:** [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения не позволяют ссылку шрифта на идентификатор единого ресурса http или ftp (URI).  
+- **Шрифты исходного узла:** [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения не допускают ссылку на шрифт на универсальный код ресурса (URI) HTTP или FTP.  
   
-- **Абсолютный URI с помощью пакета: нотация:** [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения не позволяют создавать <xref:System.Windows.Media.FontFamily> объект программно с помощью "пак:" как часть абсолютного единого идентификатора ресурса (URI) ссылки на шрифт. Например, `"pack://application:,,,/resources/#Pericles Light"` является недействительным шрифтом ссылки.  
+- **Абсолютный URI с использованием типа "Pack:".** [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения не позволяют создавать <xref:System.Windows.Media.FontFamily> объект программным способом, используя "Pack:" как часть ссылки на универсальный код ресурса (URI) на шрифт. Например, `"pack://application:,,,/resources/#Pericles Light"` является недопустимой ссылкой на шрифт.  
   
 - **Автоматическое внедрение шрифтов:** во время разработки не поддерживается поиск шрифтов, используемых приложением, и их автоматическое внедрение в ресурсы приложения.  
   
@@ -170,7 +170,7 @@ ms.locfileid: "79187093"
   
 - Если обнаруживается неправильная ссылка, приложение прибегает к использованию доступного шрифта.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Documents.Typography>
 - <xref:System.Windows.Media.FontFamily>
