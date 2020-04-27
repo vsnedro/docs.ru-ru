@@ -1608,6 +1608,11 @@
           href: cordebugexceptionobjectstackframe-structure.md
         - name: Структура CorDebugGuidToTypeMapping
           href: cordebugguidtotypemapping-structure.md
+        - name: Структура DacpGetModuleAddress
+          href: dacpgetmoduleaddress-structure.md
+          items:
+            - name: 'Метод DacpGetModuleAddress::Request'
+              href: dacpgetmoduleaddress-request-method.md
         - name: Структура DacpMethodDescData
           href: dacpmethoddescdata-structure.md
         - name: Структура DacpModuleData
