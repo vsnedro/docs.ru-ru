@@ -24,7 +24,7 @@ ms.assetid: 1b1b5e67-3ff3-40c0-8154-322cfd6ef0ae
 author: ghogen
 ms.openlocfilehash: 8ff1adaa025dc11417c3dcfdaf42ea203828be57
 ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/17/2019
 ms.locfileid: "71053521"
@@ -72,7 +72,7 @@ ms.locfileid: "71053521"
 ## <a name="services-and-the-servicecontroller-component"></a>Службы и компонент ServiceController  
  Компонент <xref:System.ServiceProcess.ServiceController> используется для подключения к установленной службе и изменения ее состояния. С помощью компонента <xref:System.ServiceProcess.ServiceController> вы можете запускать, останавливать, приостанавливать и продолжать работу службы, а также отправлять службе пользовательские команды. Использовать компонент <xref:System.ServiceProcess.ServiceController> при создании приложения-службы не нужно. Фактически, в большинстве случаев компонент <xref:System.ServiceProcess.ServiceController> должен находиться в приложении, отдельном от приложения-службы Windows, которое определяет службу.  
   
- Дополнительные сведения см. в разделе <xref:System.ServiceProcess.ServiceController>.  
+ Для получения дополнительной информации см. <xref:System.ServiceProcess.ServiceController>.  
   
 ## <a name="requirements"></a>Требования  
   
