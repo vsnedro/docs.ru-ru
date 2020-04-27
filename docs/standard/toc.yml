@@ -232,6 +232,10 @@
           displayName: garbage collection
         - name: Основы
           href: garbage-collection/fundamentals.md
+        - name: Сборка мусора рабочей станции и сервера
+          href: garbage-collection/workstation-server-gc.md
+        - name: Фоновая сборка мусора
+          href: garbage-collection/background-gc.md
         - name: Куча больших объектов
           href: garbage-collection/large-object-heap.md
         - name: Сборка мусора и производительность
@@ -748,8 +752,8 @@
           href: serialization/how-to-chunk-serialized-data.md
         - name: Практическое руководство. Определение сериализуемости объекта .NET Standard
           href: serialization/how-to-determine-if-netstandard-object-is-serializable.md
-        - name: Примеры
-          href: serialization/samples-binary.md
+        - name: Пример
+          href: serialization/basic-serialization-technology-sample.md
     - name: Сериализация XML и SOAP
       items:
         - name: Обзор
@@ -804,8 +808,6 @@
               href: serialization/xml-serializer-generator-tool-sgen-exe.md
             - name: Инструмент определения схемы XML (Xsd.exe)
               href: serialization/xml-schema-definition-tool-xsd-exe.md
-        - name: Примеры
-          href: serialization/samples-xml.md
 - name: Разработка для нескольких платформ
   items:
     - name: Обзор

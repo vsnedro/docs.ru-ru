@@ -221,6 +221,8 @@
                   href: migration-guide/retargeting/4.5.1-4.7.1.md
                 - name: "Между 4.5.1 и\_4.7.2"
                   href: migration-guide/retargeting/4.5.1-4.7.2.md
+                - name: "Между 4.5.1 и\_4.8"
+                  href: migration-guide/retargeting/4.5.1-4.8.md
                 - name: "Между 4.5.2 и\_4.6"
                   href: migration-guide/retargeting/4.5.2-4.6.md
                 - name: "Между 4.5.2 и\_4.6.1"
@@ -277,6 +279,44 @@
                   href: migration-guide/retargeting/4.7.1-4.8.md
                 - name: "Между 4.7.2 и\_4.8"
                   href: migration-guide/retargeting/4.7.2-4.8.md
+        - name: 'Устранение рисков, связанных с поведением'
+          items:
+            - name: Обзор
+              href: migration-guide/mitigations.md
+            - name: Пользовательские реализации IMessageFilter.PreFilterMessage
+              href: migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md
+            - name: Десериализация объектов в нескольких доменах приложений
+              href: migration-guide/mitigation-deserialization-of-objects-across-app-domains.md
+            - name: Новый 64-разрядный JIT-компилятор
+              href: migration-guide/mitigation-new-64-bit-jit-compiler.md
+            - name: Проверки двоеточий в путях
+              href: migration-guide/mitigation-path-colon-checks.md
+            - name: Нормализация путей
+              href: migration-guide/mitigation-path-normalization.md
+            - name: Кадры PNG в объектах Icon
+              href: migration-guide/mitigation-png-frames-in-icon-objects.md
+            - name: Поддержка сенсорного управления и пера на основе указателя
+              href: migration-guide/mitigation-pointer-based-touch-and-stylus-support.md
+            - name: Период блокировки пула
+              href: migration-guide/mitigation-pool-blocking-period.md
+            - name: Управление версиями продукта
+              href: migration-guide/mitigation-product-versioning.md
+            - name: Сериализация управляющих символов
+              href: migration-guide/mitigation-serialization-control-characters.md
+            - name: Протоколы TLS
+              href: migration-guide/mitigation-tls-protocols.md
+            - name: Службы WCF и проверка подлинности сертификатов
+              href: migration-guide/mitigation-wcf-services-and-certificate-authentication.md
+            - name: Макет WPF
+              href: migration-guide/mitigation-wpf-layout.md
+            - name: Отрисовка окна WPF
+              href: migration-guide/mitigation-wpf-window-rendering.md
+            - name: Метод X509CertificateClaimSet.FindClaims
+              href: migration-guide/mitigation-x509certificateclaimset-findclaims-method.md
+            - name: Проверка схемы XML
+              href: migration-guide/mitigation-xml-schema-validation.md
+            - name: Разделитель пути ZipArchiveEntry.FullName
+              href: migration-guide/mitigation-ziparchiveentry-fullname-path-separator.md
         - name: Совместимость версий
           href: migration-guide/version-compatibility.md
     - name: Версии платформы .NET Framework

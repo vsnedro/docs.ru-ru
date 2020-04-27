@@ -119,8 +119,8 @@
       href: programming-guide/types/index.md
     - name: 'Ссылочные типы, допускающие значение null'
       href: nullable-references.md
-    - name: 'Обновление сигнатур API для ссылочных типов, допускающих значение NULL'
-      href: nullable-attributes.md
+    - name: 'Выбор стратегии включения ссылочных типов, допускающих значения NULL'
+      href: nullable-migration-strategies.md
     - name: Пространства имен
       href: programming-guide/namespaces/index.md
     - name: Базовые типы
@@ -1200,6 +1200,8 @@
               href: programming-guide/xmldoc/exception.md
             - name: <include>
               href: programming-guide/xmldoc/include.md
+            - name: <inheritdoc>
+              href: programming-guide/xmldoc/inheritdoc.md
             - name: <list>
               href: programming-guide/xmldoc/list.md
             - name: <para>
