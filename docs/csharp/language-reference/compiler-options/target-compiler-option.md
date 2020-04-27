@@ -9,12 +9,12 @@ helpviewer_keywords:
 - assemblies [C#], compiling
 - -target compiler options [C#]
 ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
-ms.openlocfilehash: af7bd917f57c8752a2026fbb98aa8b22adc98db7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ea5481810e629d911c4d5aba62e60c98d0783f34
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74204518"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644359"
 ---
 # <a name="-target-c-compiler-options"></a>-target (параметры компилятора C#)
 Параметр компилятора **-target** можно задать в одной из четырех форм:  
@@ -37,7 +37,7 @@ ms.locfileid: "74204518"
  [/target:winmdobj](./target-winmdobj-compiler-option.md)  
  Создание промежуточного WINMDOBJ-файла.  
   
- Если **-target:module** не указан, **-target** предписывает разместить манифест сборки .NET Framework в выходном файле. Дополнительные сведения см. в разделах [Сборки в .NET](../../../standard/assembly/index.md) и [Общие атрибуты](../../programming-guide/concepts/attributes/common-attributes.md).  
+ Если **-target:module** не указан, **-target** предписывает разместить манифест сборки .NET Framework в выходном файле. Дополнительные сведения см. в разделах [Сборки в .NET](../../../standard/assembly/index.md) и [Общие атрибуты](../attributes/global.md).  
   
  Манифест сборки помещается в первый выходной файл EXE в компиляции или в первый файл DLL, если выходной файл EXE не существует. Например, в следующей командной строке манифест будут помещен в `1.exe`:  
   

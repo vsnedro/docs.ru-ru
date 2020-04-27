@@ -2,12 +2,12 @@
 title: 'Зарезервированные атрибуты C#: статический анализ типов, допускающих значения NULL'
 ms.date: 04/14/2020
 description: Компилятор интерпретирует эти атрибуты для более эффективного статического анализа ссылочных типов, допускающих значения NULL и не допускающих значения NULL.
-ms.openlocfilehash: 0315d78db7517541efe578d8675c0f2fe45f5aea
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 33521133a6a01196e6e1ab9c3cdc191a24f1ecf3
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389814"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102714"
 ---
 # <a name="reserved-attributes-contribute-to-the-compilers-null-state-static-analysis"></a>Зарезервированные атрибуты используются для статического анализа состояния NULL компилятора.
 
@@ -129,7 +129,7 @@ public Customer FindCustomer(string lastName, string firstName)
 
 Вероятно, вы написали такой метод для возвращения значения `null` в случае, если искомое имя не найдено. `null` четко указывает, что запись не найдена. В этом примере вы, вероятно, измените тип возвращаемого значения с `Customer` на `Customer?`. Объявление возвращаемого значения как ссылочного типа, допускающего значение NULL, четко указывает намерение этого API.
 
-По причинам, описанным в разделе [Универсальные определения и допустимость значений NULL](../../nullable-attributes.md#generic-definitions-and-nullability), этот метод не работает с универсальными методами. У вас может быть универсальный метод, который действует по аналогичному шаблону.
+По причинам, описанным в разделе [Универсальные определения и допустимость значений NULL](../../nullable-migration-strategies.md#generic-definitions-and-nullability), этот метод не работает с универсальными методами. У вас может быть универсальный метод, который действует по аналогичному шаблону.
 
 ```csharp
 public T Find<T>(IEnumerable<T> sequence, Func<T, bool> match)

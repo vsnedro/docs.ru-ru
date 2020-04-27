@@ -3,12 +3,12 @@ title: Структура программы в C#. Краткий обзор я
 description: Узнайте, из каких блоков составляется программа на C#
 ms.date: 02/25/2020
 ms.assetid: 984f0314-507f-47a0-af56-9011243f5e65
-ms.openlocfilehash: c09c11a4dd957b29b2adb7aaa8d68a50f30620b6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c0a4dcaed7b53a7da7008d6000b3bec2ffe3ee7b
+ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156835"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82141011"
 ---
 # <a name="program-structure"></a>Структура программы
 
@@ -16,7 +16,7 @@ ms.locfileid: "79156835"
 
 Вы можете создать проект библиотеки с именем *acme*, используя команду `dotnet new`:
 
-```console
+```dotnetcli
 dotnet new classlib -o acme
 ```
 
@@ -26,7 +26,7 @@ dotnet new classlib -o acme
 
 Полное имя этого класса: `Acme.Collections.Stack`. Этот класс содержит несколько членов: поле с именем `top`, два метода с именами `Push` и `Pop`, а также вложенный класс с именем `Entry`. Класс `Entry`, в свою очередь, содержит три члена: поле с именем `next`, поле с именем `data` и конструктор. Команда:
 
-```console
+```dotnetcli
 dotnet build
 ```
 
@@ -48,7 +48,7 @@ dotnet build
 
 После его добавления команда `dotnet build` создает исполняемую сборку с именем `example.exe`, которая при запуске возвращает следующие данные:
 
-```console
+```dotnetcli
 100
 10
 1
