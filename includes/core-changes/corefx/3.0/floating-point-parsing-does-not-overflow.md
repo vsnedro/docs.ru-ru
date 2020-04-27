@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 30580b3fde5b8a99862896bb7d31c6c4024f97e8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 87ada29e70a94c39e7ffb74767b99d49c52444af
+ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74568150"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82021600"
 ---
 ### <a name="floating-point-parsing-operations-no-longer-fail-or-throw-an-overflowexception"></a>Операции синтаксического анализа с плавающей запятой больше не завершаются ошибкой и не вызывают исключение OverflowException
 
@@ -20,7 +20,7 @@ ms.locfileid: "74568150"
 
 #### <a name="version-introduced"></a>Представленная версия
 
-3,0
+3.0
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
@@ -32,7 +32,7 @@ ms.locfileid: "74568150"
 
 #### <a name="category"></a>Категория
 
-CoreFX
+Библиотеки Core .NET
 
 #### <a name="affected-apis"></a>Затронутые API
 

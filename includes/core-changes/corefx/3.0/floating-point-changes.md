@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ce4f09908b1025e8e5a0380c9bf035c6b0db479a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 22dbb1e982f83687a9e0eb288ed72c78c676db77
+ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74568210"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82021579"
 ---
 ### <a name="floating-point-formatting-and-parsing-behavior-changed"></a>Изменено поведение форматирования и анализа при наличии плавающей запятой
 
@@ -18,7 +18,7 @@ ms.locfileid: "74568210"
 
 #### <a name="version-introduced"></a>Представленная версия
 
-3,0
+3.0
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
@@ -26,7 +26,7 @@ ms.locfileid: "74568210"
 
 #### <a name="category"></a>Категория
 
-CoreFX
+Библиотеки Core .NET
 
 #### <a name="affected-apis"></a>Затронутые API
 

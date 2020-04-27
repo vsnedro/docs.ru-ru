@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5612ebce67946e22aaeeba861115ce4f8967e1f5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1580c8c8b7bdad91656f494537230293dbaaf93b
+ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75344461"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82021553"
 ---
 ### <a name="apis-that-report-version-now-report-product-and-not-file-version"></a>Интерфейсы API, сообщающие версию, теперь сообщают версию продукта, а не файла
 
@@ -20,15 +20,15 @@ ms.locfileid: "75344461"
 
 #### <a name="version-introduced"></a>Представленная версия
 
-3,0
+3.0
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
-Нет. Это изменение должно сделать определение версии интуитивно понятным.
+Отсутствует. Это изменение должно сделать определение версии интуитивно понятным.
 
 #### <a name="category"></a>Категория
 
-CoreFX
+Библиотеки Core .NET
 
 #### <a name="affected-apis"></a>Затронутые API
 

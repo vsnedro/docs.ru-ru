@@ -7,12 +7,12 @@ helpviewer_keywords:
 - I/O [.NET], buffers
 author: rick-anderson
 ms.author: riande
-ms.openlocfilehash: f939164cd56b2fb2feeeb171236b0e1171327e19
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d113def0182dc6a5bcea6c18b2d0e4b475946e31
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78160122"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81739621"
 ---
 # <a name="work-with-buffers-in-net"></a>Работа с буферами в .NET
 
@@ -191,5 +191,5 @@ SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data) => bu
 ### <a name="sequencereadert-common-problems"></a>Распространенные проблемы c SequenceReader\<T\>
 
 - `SequenceReader<T>` представляет собой изменяемую структуру, которую всегда нужно передавать с помощью [ссылки](../../csharp/language-reference/keywords/ref.md).
-- `SequenceReader<T>` — это [ссылочная структура](../../csharp/language-reference/keywords/ref.md#ref-struct-types), которую можно использовать только в синхронных методах и нельзя хранить в полях. Дополнительные сведения см. в статье [Написание безопасного и эффективного кода C#](../../csharp/write-safe-efficient-code.md).
+- `SequenceReader<T>` — это [ссылочная структура](../../csharp/language-reference/builtin-types/struct.md#ref-struct), которую можно использовать только в синхронных методах и нельзя хранить в полях. Дополнительные сведения см. в статье [Написание безопасного и эффективного кода C#](../../csharp/write-safe-efficient-code.md).
 - Структура `SequenceReader<T>` оптимизирована для использования в качестве средства чтения с последовательным доступом. `Rewind` предназначается для небольших резервных копий, к которым нельзя обращаться с использованием других API `Read`, `Peek` и `IsNext`.

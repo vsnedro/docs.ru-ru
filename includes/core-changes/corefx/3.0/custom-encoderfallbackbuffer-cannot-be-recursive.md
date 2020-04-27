@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 58d1c8cd3aff52703522391c14348bd81c108587
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 820825f0545aa78729414c388385b339225b1235
+ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74568139"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82021671"
 ---
 ### <a name="custom-encoderfallbackbuffer-instances-cannot-fall-back-recursively"></a>Пользовательские экземпляры EncoderFallbackBuffer не поддерживают рекурсивный откат
 
@@ -28,7 +28,7 @@ ms.locfileid: "74568139"
 
 #### <a name="version-introduced"></a>Представленная версия
 
-3,0
+3.0
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
@@ -38,7 +38,7 @@ ms.locfileid: "74568139"
 
 #### <a name="category"></a>Категория
 
-CoreFX
+Библиотеки Core .NET
 
 #### <a name="affected-apis"></a>Затронутые API
 

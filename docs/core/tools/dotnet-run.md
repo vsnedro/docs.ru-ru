@@ -2,18 +2,18 @@
 title: Команда dotnet run
 description: Команда dotnet run — это удобное средство для запуска приложения из исходного кода.
 ms.date: 02/19/2020
-ms.openlocfilehash: 28ed13a17c127ae1c61548fed8491315db279c20
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 77282fd8615ef01b7867c1bf0f741c834b6ddb30
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463419"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102776"
 ---
 # <a name="dotnet-run"></a>dotnet run
 
 **Эта статья относится к следующему:** ✔️ пакет SDK для .NET Core 2.x и более поздних версий
 
-## <a name="name"></a>Имя
+## <a name="name"></a>name
 
 `dotnet run` — выполняет исходный код без дополнительных явных команд компиляции или запуска.
 
@@ -29,7 +29,7 @@ dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
 dotnet run -h|--help
 ```
 
-## <a name="description"></a>Описание:
+## <a name="description"></a>Описание
 
 `dotnet run` — это удобное средство для запуска приложения из исходного кода одной командой. Это полезно для быстрой последовательной разработки из командной строки. В отношении сборки кода эта команда зависима от команды [`dotnet build`](dotnet-build.md). Любые требования к сборке, например, то, что проект сначала нужно восстановить, применяются и к `dotnet run`.
 
@@ -46,6 +46,8 @@ dotnet myapp.dll
 Дополнительные сведения о драйвере `dotnet` см. в разделе [Средства интерфейса командной строки (CLI) .NET Core](index.md).
 
 Для запуска приложения команда `dotnet run` разрешает зависимости приложения, выходящие за пределы общей среды выполнения, из кэша NuGet. Из-за использования кэшированных зависимостей не рекомендуется применять команду `dotnet run` для запуска приложений в рабочей среде. Вместо этого [создайте развертывание](../deploying/index.md) с помощью команды [`dotnet publish`](dotnet-publish.md) и разверните опубликованные выходные данные.
+
+### <a name="implicit-restore"></a>Неявное восстановление
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
@@ -105,7 +107,7 @@ dotnet myapp.dll
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Задает уровень детализации команды. Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`. Значение по умолчанию — `m`. Доступно начиная с пакета SDK для .NET Core 2.1.
+  Задает уровень детализации команды. Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`. Значение по умолчанию — `m`. Доступно начиная с пакета SDK для .NET Core 2.1.
 
 ## <a name="examples"></a>Примеры
 
