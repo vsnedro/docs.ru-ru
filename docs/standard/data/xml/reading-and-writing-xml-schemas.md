@@ -9,7 +9,7 @@ dev_langs:
 ms.assetid: b5757c4a-ea59-467e-ac62-be2bfe24eb77
 ms.openlocfilehash: 889c5f85a2ea3fc08dadefda5509de0fcfab76ec
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710418"
@@ -45,7 +45,7 @@ API модели SOM можно использовать для чтения и 
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об модели объектов XML-схемы](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
 - [Построение XML-схем](../../../../docs/standard/data/xml/building-xml-schemas.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - GAC (global assembly cache), benefits
 - access control lists [.NET Framework]
 ms.assetid: 8a18e5c2-d41d-49ef-abcb-7c27e2469433
-ms.openlocfilehash: 330555f907a5ee2ef9cfc11b0b5659a392c0dec7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.openlocfilehash: 7834fbc4d74b44c4bc5204ac451e92cac22e1ef5
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119709"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81645423"
 ---
 # <a name="working-with-assemblies-and-the-global-assembly-cache"></a>Работа со сборками и глобальным кэшем сборок
 
@@ -44,7 +44,7 @@ ms.locfileid: "73119709"
   
  Обратите внимание, что существуют сценарии, в которых установка сборки в глобальный кэш сборок явно не требуется. Если одна из составляющих приложение сборок помещается в глобальный кэш сборок, то после этого нельзя будет скопировать или установить приложение с помощью команды XCOPY путем копирования каталога приложения. В этом случае также требуется переместить сборку в глобальный кэш сборок.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 [Практическое руководство. Установка сборки в глобальный кэш сборок](install-assembly-into-gac.md)  
 Описание способов установки сборки в глобальном кэше сборок.  
   
@@ -65,11 +65,11 @@ ms.locfileid: "73119709"
 [Глобальный кэш сборок](gac.md)  
 Содержит общие сведения о глобальном кэше сборок.  
   
-[Практическое руководство. Просмотр содержимого сборок](../../standard/assembly/view-contents.md)  
+[Практическое руководство. Просмотр содержимого сборки](../../standard/assembly/view-contents.md)  
 Описание того, как использовать [программу Ildasm.exe (дизассемблер IL)](../tools/ildasm-exe-il-disassembler.md) для просмотра данных MSIL в сборке.  
   
 [Обнаружение сборок в среде выполнения](../deployment/how-the-runtime-locates-assemblies.md)  
 Описание того, как среда CLR находит и загружает сборки, составляющие приложение.  
   
-[Программирование с использованием сборок](../../standard/assembly/program.md)  
+[Программирование с использованием сборок](../../standard/assembly/index.md)  
 Описывает сборки, "кирпичики", с помощью которых создаются управляемые приложения.

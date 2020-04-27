@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 500335af-f9b5-413b-968a-e6d9a824478c
 ms.openlocfilehash: e03eb08c71ff2d031ac61a702683e3950d94f2be
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78160239"
@@ -28,7 +28,7 @@ ms.locfileid: "78160239"
 
 В следующей таблице перечислены классы, широко используемые при работе с классом <xref:System.Xml.Xsl.XslTransform> и XPath, и их функции.
 
-|Класс или интерфейс|Компонент|
+|Класс или интерфейс|Функция|
 |------------------------|--------------|
 |<xref:System.Xml.XPath.XPathNavigator>|API-интерфейс, который предоставляет модель стиля курсора для навигации по хранилищу, наряду с поддержкой запросов XPath. Не позволяет вносить изменения в базовое хранилище. Для изменения используйте класс <xref:System.Xml.XmlDocument>.|
 |<xref:System.Xml.XPath.IXPathNavigable>|Интерфейс, который предоставляет метод `CreateNavigator` классу <xref:System.Xml.XPath.XPathNavigator> для хранилища.|
@@ -92,7 +92,7 @@ public class Sample
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Xsl.XslTransform>
 - [Реализация классом XslTransform XSLT-процессора](xsltransform-class-implements-the-xslt-processor.md)

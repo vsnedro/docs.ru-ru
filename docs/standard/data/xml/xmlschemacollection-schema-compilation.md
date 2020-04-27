@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 76f28770-7126-428f-9ed5-7b5ae8bad5ee
 ms.openlocfilehash: af6df3729f1bd926e9a47cc5b9d9bf460c8e1225
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78159290"
@@ -34,7 +34,7 @@ ms.locfileid: "78159290"
 ## <a name="validate-xml-documents-using-xmlschemacollection"></a>Проверка XML-документов с помощью XmlSchemaCollection  
  Чтобы проверить экземпляр XML-документа с помощью **XmlSchemaCollection**, создайте объект **XmlSchemaCollection**, добавьте в эту коллекцию схемы и задайте свойство **Schemas** для объекта **XmlValidatingReader**, чтобы назначить созданную коллекцию **XmlSchemaCollection** для объекта **XmlValidatingReader**.  
   
-### <a name="improved-performance"></a>Улучшенная производительность  
+### <a name="improved-performance"></a>Повышенная производительность  
  Если вы проверяете несколько документов по одной схеме, мы рекомендуем использовать объект **XmlSchemaCollection**, поскольку его производительность выше благодаря кэшированию схем в памяти.  
   
  Следующий пример кода создает объект **XmlSchemaCollection**, добавляет схемы в коллекцию и задает свойство **Schemas**.  
@@ -55,7 +55,7 @@ xsc.Add("urn:bookstore-schema", "Books.xsd");
 vr.Schemas.Add(xsc);  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [XDR-проверка с помощью XmlSchemaCollection](../../../../docs/standard/data/xml/xdr-validation-with-xmlschemacollection.md)
 - [Проверка по XML-схеме (XSD) с помощью XmlSchemaCollection](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemacollection.md)

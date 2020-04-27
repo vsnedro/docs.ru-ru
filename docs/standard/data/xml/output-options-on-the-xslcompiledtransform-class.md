@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 91ce8cba-386c-411e-bb38-0891a0393c0a
 ms.openlocfilehash: 504057bd5e10498d39b2bce908742fc20b112c52
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710509"
@@ -21,10 +21,10 @@ ms.locfileid: "75710509"
 |Имя атрибута|Поведение|  
 |--------------------|--------------|  
 |method|Поддерживается.|  
-|Версия|Пропускается. Версия всегда 1.0 для XML и 4.0 для HTML.|  
+|version|Не обрабатывается. Версия всегда 1.0 для XML и 4.0 для HTML.|  
 |encoding|Не учитывается при выводе в объект <xref:System.IO.TextWriter>. Вместо него используется свойство <xref:System.IO.TextWriter.Encoding%2A?displayProperty=nameWithType>.|  
 |omit-xml-declaration|Поддерживается.|  
-|standalone|Поддерживается.|  
+|Автономный|Поддерживается.|  
 |doctype-public|Поддерживается.|  
 |doctype-system|Поддерживается.|  
 |cdata-section-elements|Поддерживается.|  
@@ -43,7 +43,7 @@ ms.locfileid: "75710509"
 #### <a name="string"></a>Строка  
  Используйте этот тип вывода, чтобы указать URI выходного файла.  
   
-#### <a name="stream"></a>Stream  
+#### <a name="stream"></a>Поток  
  Поток - это абстракция последовательности байтов, например файла, устройства ввода-вывода, межпроцессного канала связи или сокета TCP/IP. Класс <xref:System.IO.Stream> и его производные классы обеспечивают универсальное представление различных типов ввода и вывода, изолируя программиста от конкретных особенностей операционной системы и базовых устройств.  
   
  Используйте этот тип вывода для пересылки данных в объекты <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream> или выходной поток (`Response.OutputStream`).  
@@ -55,6 +55,6 @@ ms.locfileid: "75710509"
   
 - При записи пустых тегов между последним символом имени элемента и обратной косой чертой записывается пробел, например `<myElement />`. Это позволяет правильно отобразить сформированные HTML-страницы в старых браузерах.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Преобразования XSLT](../../../../docs/standard/data/xml/xslt-transformations.md)

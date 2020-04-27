@@ -19,7 +19,7 @@ helpviewer_keywords:
 ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
 ms.openlocfilehash: 712040c3482b51c4dafe0ee87fdda8cd848fb7fc
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73123618"
@@ -91,7 +91,7 @@ extern "C" int MessageBox(
 |-----------|-----------------|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping>|Включает или отключает наилучшее сопоставление.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention>|Задает соглашение о вызовах, которое должно использоваться при передаче аргументов методов. Значение по умолчанию — `WinAPI`, что соответствует режиму `__stdcall` для 32-разрядных платформ на базе процессора Intel.|  
-|<xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>|Управляет декорированием имен и способом маршалинга строковых аргументов в функцию. Значение по умолчанию: `CharSet.Ansi`.|  
+|<xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>|Управляет декорированием имен и способом маршалинга строковых аргументов в функцию. Значение по умолчанию — `CharSet.Ansi`.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint>|Указывает точку входа DLL для вызова.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling>|Определяет, должна ли изменяться точка входа в соответствии с кодировкой. Значение по умолчанию зависит от языка программирования.|  
 |<xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>|Определяет, должна ли сигнатура управляемого метода преобразовываться в неуправляемую сигнатуру, которая возвращает значение HRESULT и имеет дополнительный аргумент [out, retval] для возвращаемого значения.<br /><br /> Значение по умолчанию — `true` (сигнатура не должна преобразовываться).|  

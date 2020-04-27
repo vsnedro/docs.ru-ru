@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 55c4b175-3170-4071-9d60-dd5a42f79b54
 ms.openlocfilehash: 55347de81c65b7390584415dd29044f4ca4ba02a
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75709820"
@@ -25,7 +25,7 @@ ms.locfileid: "75709820"
   
  Ниже дано сравнение класса <xref:System.Xml.Schema.XmlSchemaCollection> с классом <xref:System.Xml.Schema.XmlSchemaSet>.  
   
-|XmlSchemaCollection.|XmlSchemaSet|  
+|XmlSchemaCollection|XmlSchemaSet|  
 |-------------------------|------------------|  
 |Поддерживает схемы Microsoft XDR и W3C XML.|Поддерживает только схемы W3C XML.|  
 |Схемы компилируются при вызове метода <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A>.|Схемы не компилируются при вызове метода <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>. В результате повышается производительность при создании библиотеки схем.|  
@@ -249,7 +249,7 @@ foreach (XmlSchema schema in schemaSet.Schemas())
   
  Дополнительные сведения о проверке XML-документов с использованием класса <xref:System.Xml.Schema.XmlSchemaSet> см. в руководстве по [проверке схем XML (XSD) с помощью XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>
 - <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>

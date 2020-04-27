@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: a3f752bb-8945-4e1b-8163-71def6e9f137
 ms.openlocfilehash: d854f474845322ae6df1da5788890a69720a5272
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79181490"
@@ -297,6 +297,6 @@ static double Round(double value, short digits)
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Предоставление COM-компонентов платформе .NET Framework](exposing-com-components.md)

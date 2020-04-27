@@ -9,7 +9,7 @@ dev_langs:
 ms.assetid: 2ed8c28b-b88d-4be7-9c87-92df01f0821f
 ms.openlocfilehash: 68c003467d837fe79d5e275968e47fa5dc3490cc
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710730"
@@ -238,7 +238,7 @@ navigator.SetTypedValue(DateTime.Now);
   
  Ниже перечислены возможные конфликты деклараций `xml:lang`.  
   
-- Если атрибут `xml:lang` существует в контексте объекта <xref:System.Xml.XmlReader>, но отсутствует в контексте объекта <xref:System.Xml.XPath.XPathNavigator>, то к вновь добавленному узлу добавляется атрибут `xml:lang`, значение которого берется из объекта<xref:System.Xml.XmlReader>.  
+- Если атрибут `xml:lang` существует в контексте объекта <xref:System.Xml.XmlReader>, но отсутствует в контексте объекта <xref:System.Xml.XPath.XPathNavigator>, то к вновь добавленному узлу добавляется атрибут `xml:lang`, значение которого берется из объекта <xref:System.Xml.XmlReader>.  
   
 - Если атрибут `xml:lang` существует в контексте обоих объектов, <xref:System.Xml.XmlReader> и <xref:System.Xml.XPath.XPathNavigator>, но его значения там различаются, то к вновь добавленному узлу добавляется атрибут `xml:lang`, значение которого берется из объекта <xref:System.Xml.XmlReader>.  
   
@@ -328,7 +328,7 @@ document.Save("book.xml");
 ## <a name="saving-an-xml-document"></a>Сохранение XML-документа  
  Сохранение изменений, внесенных в объект <xref:System.Xml.XmlDocument> в результате выполнения описанных в данном разделе методов, выполняется с помощью методов класса <xref:System.Xml.XmlDocument>. Дополнительные сведения о сохранении изменений, внесенных в объект <xref:System.Xml.XmlDocument>, см. в руководстве по [созданию и сохранению документов](../../../../docs/standard/data/xml/saving-and-writing-a-document.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

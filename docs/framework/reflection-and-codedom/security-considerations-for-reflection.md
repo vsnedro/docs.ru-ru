@@ -10,12 +10,12 @@ helpviewer_keywords:
 - reflection,partial trust
 - link demands
 ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
-ms.openlocfilehash: 1d5289ce15c213024af576c99fe039f5d6c1a247
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.openlocfilehash: 1bdaf3abd39797274236ace4cb2967d2e7d199b2
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73130069"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644184"
 ---
 # <a name="security-considerations-for-reflection"></a>Соображения о безопасности для отражения
 
@@ -59,7 +59,7 @@ ms.locfileid: "73130069"
 
 Код приложения, который запускается из командной строки, выполняется с полным доверием. Если код не помечен как прозрачный, он может использовать отражение для доступа к членам, критическим с точки зрения безопасности. При выполнении того же кода с частичным доверием (например, в изолированном домене приложения) уровень доверия сборки определяет, может ли она получить доступ к коду, критическому с точки зрения безопасности: если сборка имеет строгое имя и установлена в глобальном кэше сборок, она является доверенной и может вызывать члены, критические с точки зрения безопасности. Если код не является доверенным, он становится прозрачным даже в том случае, если не был помечен как прозрачный, и не может получить доступ к членам, критическим с точки зрения безопасности.
 
-Подробнее о модели безопасности в .NET Framework 4 см. в разделе [Изменения системы безопасности](../security/security-changes.md).
+Подробнее о модели безопасности в .NET Framework 4 см. в разделе [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
 
 ## <a name="reflection-and-transparency"></a>Отражение и прозрачность
 
@@ -67,9 +67,9 @@ ms.locfileid: "73130069"
 
 |Уровень безопасности|IsSecurityCritical|IsSecuritySafeCritical|IsSecurityTransparent|
 |--------------------|------------------------|----------------------------|---------------------------|
-|Критические важное|`true`|`false`|`false`|
+|Critical|`true`|`false`|`false`|
 |Критический в плане безопасности|`true`|`true`|`false`|
-|Прозрачно|`false`|`false`|`true`|
+|Прозрачный|`false`|`false`|`true`|
 
 Использовать эти свойства гораздо проще, чем просматривать заметки о безопасности для сборки и ее типов, проверять текущий уровень доверия и пытаться дублировать правила среды выполнения. Например, один и тот же тип может быть критическим с точки зрения безопасности при запуске из командной строки или прозрачным для системы безопасности при запуске в изолированном домене приложения.
 
@@ -86,7 +86,7 @@ ms.locfileid: "73130069"
   > [!NOTE]
   > По умолчанию политика безопасности отказывает в предоставлении этого разрешения коду, полученному из Интернета. Это разрешение ни в коем случае нельзя предоставлять коду, источником которого является Интернет.
 
-- Чтобы разрешить коду вызывать любой закрытый член, только если набор прав сборки, содержащей вызываемый член, идентичен набору прав сборки, содержащей вызывающий код, или является его подмножеством, коду необходимо предоставить разрешение <xref:System.Security.Permissions.ReflectionPermission> с флагом <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>.
+- Чтобы разрешить коду вызывать любой закрытый член, только если набор прав сборки, содержащей вызываемый член, идентичен набору прав сборки, содержащей вызывающий код, или является его подмножеством: Коду необходимо предоставить разрешение <xref:System.Security.Permissions.ReflectionPermission> с флагом <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>.
 
 Предположим, вы предоставляете домену приложения разрешения на доступ к Интернету плюс разрешение <xref:System.Security.Permissions.ReflectionPermission> с флагом <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>, а затем запускаете веб-приложение с двумя сборками, A и B.
 
@@ -115,7 +115,7 @@ ms.locfileid: "73130069"
 - <xref:System.Security.Permissions.ReflectionPermissionFlag>
 - <xref:System.Security.Permissions.ReflectionPermission>
 - <xref:System.Security.Permissions.SecurityPermission>
-- [Изменения системы безопасности](../security/security-changes.md)
+- [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)
 - [Управление доступом для кода](../misc/code-access-security.md)
 - [Вопросы безопасности в порождении отражения](security-issues-in-reflection-emit.md)
 - [Просмотр сведений о типах](viewing-type-information.md)

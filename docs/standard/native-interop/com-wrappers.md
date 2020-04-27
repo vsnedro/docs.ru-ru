@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: e56c485b-6b67-4345-8e66-fd21835a6092
 ms.openlocfilehash: d647a8cd73fa714e86454687a25501259f894f6d
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73120713"
@@ -37,4 +37,4 @@ ms.locfileid: "73120713"
 - [Вызываемая оболочка времени выполнения](runtime-callable-wrapper.md)
 - [Вызываемая оболочка COM](com-callable-wrapper.md)
 - [Настройка стандартных оболочек в платформе .NET Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100))
-- [Как настроить вызываемые оболочки времени выполнения в .NET Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/56kh4hy7(v=vs.100))
+- [Практическое руководство. Настройка вызываемых оболочек времени выполнения в платформе .NET Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/56kh4hy7(v=vs.100))

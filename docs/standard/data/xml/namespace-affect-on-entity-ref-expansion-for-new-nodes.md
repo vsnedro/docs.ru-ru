@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 64359aee-aab0-4042-9a32-d19789af6ca7
 ms.openlocfilehash: 4772e3f7365069c537c4ec3bc8571f2f710bc9fc
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710626"
@@ -18,6 +18,6 @@ ms.locfileid: "75710626"
 > [!NOTE]
 > После того, как раскрывание произошло в заново созданном узле ссылки сущности, оно никогда повторно не происходит. Поэтому пространства имен, используемые в тексте замены для элемента, привязываются во время задания родительского узла. Тем не менее пространство имен может быть изменено для существующих узлов ссылки сущности, и они могут быть вставлены куда-либо еще, или для узлов ссылки сущности, которые копируются с помощью метода **CloneNode**.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

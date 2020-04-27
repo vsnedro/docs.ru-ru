@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
 ms.openlocfilehash: 66c7ba5989952edb55f21aab960ad7395a92ae0d
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79181366"
@@ -20,7 +20,7 @@ ms.locfileid: "79181366"
   
  В таблице ниже перечислены параметры маршалинга для массивов и описывается их использование.  
   
-|Array|Описание|  
+|Массив|Описание|  
 |-----------|-----------------|  
 |Целые числа по значению.|Передает массив целых чисел в виде параметра In.|  
 |Целые числа по ссылке.|Передает массив целых чисел в виде параметра In/Out.|  
@@ -112,7 +112,7 @@ typedef struct _MYPERSON
  [!code-csharp[Conceptual.Interop.Marshaling#32](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#32)]
  [!code-vb[Conceptual.Interop.Marshaling#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#32)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы данных в вызове неуправляемого кода](marshaling-data-with-platform-invoke.md#platform-invoke-data-types)
 - [Создание прототипов в управляемом коде](creating-prototypes-in-managed-code.md)

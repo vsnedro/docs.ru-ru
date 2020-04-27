@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 7e74918c-bc72-4977-a49b-e1520a6d8f60
 ms.openlocfilehash: 90a66e04bda4fb2ee4216e8aabd631afb2f28dd0
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710717"
@@ -27,6 +27,6 @@ ms.locfileid: "75710717"
   
  По умолчанию метод <xref:System.Xml.XmlDocument.Load%2A> не проверяет допустимость XML с помощью определения типа документа (DTD) или проверки схемы. Он только проверяет правильность формата XML-документа. Чтобы выполнялась проверка, необходимо создать объект <xref:System.Xml.XmlReader> с помощью класса <xref:System.Xml.XmlReaderSettings>. Класс <xref:System.Xml.XmlReader> может применять проверку с помощью DTD или XSD-схемы. Свойство <xref:System.Xml.ValidationType> класса <xref:System.Xml.XmlReaderSettings> определяет, применяет ли экземпляр <xref:System.Xml.XmlReader> принудительную проверку. Дополнительные сведения о проверке данных XML см. в подразделе примечаний на справочной странице <xref:System.Xml.XmlReader>.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

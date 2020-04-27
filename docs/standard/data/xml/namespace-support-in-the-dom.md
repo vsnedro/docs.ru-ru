@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: f0548ead-0fed-41ee-b33e-117ba900d3bc
 ms.openlocfilehash: 7efe03f25fde0681ebd9e3c7c8ea81f6686a8ec1
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710613"
@@ -23,6 +23,6 @@ ms.locfileid: "75710613"
   
 - Если обнаружено двоеточие, имя разбивается на две части в зависимости от позиции первого символа двоеточия. Префикс получает значение строки, расположенной перед двоеточием, а локальным именем становится строка, расположенная после двоеточия. Для методов, не принимающих значение NamespaceURI, оно не разрешается и остается пустой строкой. В противном случае NamespaceURI получает значение строки, переданной методу. Если префикс не определен, метод **Save** и свойства **InnerXml** и **OuterXml** завершаются с ошибкой.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

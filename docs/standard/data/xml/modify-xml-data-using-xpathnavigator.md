@@ -9,7 +9,7 @@ dev_langs:
 ms.assetid: 03a7c5a1-b296-4af4-b209-043c958dc0a5
 ms.openlocfilehash: 906de1ded4961b7c67d48a010555d139df97cded
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710639"
@@ -246,7 +246,7 @@ Console.WriteLine(navigator.OuterXml);
 ## <a name="saving-an-xml-document"></a>Сохранение XML-документа  
  Сохранение изменений, внесенных в объект <xref:System.Xml.XmlDocument> с помощью описанных в данном разделе методов, выполняется с помощью методов класса <xref:System.Xml.XmlDocument>. Дополнительные сведения о сохранении изменений, внесенных в объект <xref:System.Xml.XmlDocument>, см. в руководстве по [созданию и сохранению документов](../../../../docs/standard/data/xml/saving-and-writing-a-document.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

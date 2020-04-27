@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.assetid: 15926806-f0b7-487e-93a6-4e9367ec689f
 ms.openlocfilehash: 358d1ce662d56b8c31124f4b3264ec25a0f94586
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79181320"
@@ -29,7 +29,7 @@ ms.locfileid: "79181320"
   
  Дополнительные примеры см. в разделе [Маршалинг данных при вызове неуправляемого кода](marshaling-data-with-platform-invoke.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Создание прототипов в управляемом коде](creating-prototypes-in-managed-code.md)

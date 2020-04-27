@@ -2,12 +2,12 @@
 title: Практическое руководство. Совместное использование сборки с другими приложениями
 ms.date: 08/19/2019
 ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
-ms.openlocfilehash: b1ef195458dd2de95eeb5e25089339e55d9e3fbb
-ms.sourcegitcommit: 7b1ce327e8c84f115f007be4728d29a89efe11ef
+ms.openlocfilehash: b4c183c3fc0b04121be8bbc2db4027887cbc3132
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70972885"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644294"
 ---
 # <a name="how-to-share-an-assembly-with-other-applications"></a>Практическое руководство. Совместное использование сборки с другими приложениями
 Сборки могут быть закрытыми или общими. По умолчанию большинство простых программ состоят из закрытой сборки, так как она не предназначена для использования другими приложениями.  
@@ -30,4 +30,4 @@ ms.locfileid: "70972885"
 
 - [Руководство по программированию на C#](../../../api/index.md)
 - [Основные понятия программирования (Visual Basic)](../../../api/index.md)
-- [Программирование с использованием сборок](../../standard/assembly/program.md)
+- [Программирование с использованием сборок](../../standard/assembly/index.md)

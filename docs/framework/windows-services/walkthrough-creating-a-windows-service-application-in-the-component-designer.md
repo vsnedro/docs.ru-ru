@@ -11,7 +11,7 @@ ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: ghogen
 ms.openlocfilehash: e5ff40d8413acf64e7a8a129a7b268f58780d591
 ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/17/2019
 ms.locfileid: "71053481"
@@ -162,7 +162,7 @@ ms.locfileid: "71053481"
    Private eventId As Integer = 1
    ```
 
-Задачи можно выполнять с помощью фоновых рабочих потоков, а не выполнять всю работу в основном потоке. Дополнительные сведения см. в разделе <xref:System.ComponentModel.BackgroundWorker?displayProperty=fullName>.
+Задачи можно выполнять с помощью фоновых рабочих потоков, а не выполнять всю работу в основном потоке. Для получения дополнительной информации см. <xref:System.ComponentModel.BackgroundWorker?displayProperty=fullName>.
 
 ### <a name="define-what-occurs-when-the-service-is-stopped"></a>Определение действий при остановке службы
 
@@ -249,7 +249,7 @@ ms.locfileid: "71053481"
     ```
 
     > [!NOTE]
-    > Диспетчер служб использует члены `dwWaitHint` и `dwCheckpoint` [структуры SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status), чтобы определить время, в течение которого нужно ожидать запуска или завершения работы службы Windows. Если методы `OnStart` и `OnStop` выполняются долго, служба может запросить больше времени, повторно вызвав функцию `SetServiceStatus` с увеличенным значением `dwCheckPoint`.
+    > Диспетчер служб использует члены `dwWaitHint` и `dwCheckpoint`[структуры SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status), чтобы определить время, в течение которого нужно ожидать запуска или завершения работы службы Windows. Если методы `OnStart` и `OnStop` выполняются долго, служба может запросить больше времени, повторно вызвав функцию `SetServiceStatus` с увеличенным значением `dwCheckPoint`.
 
 3. В классе `MyNewService` объявите функцию [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) с помощью [вызова неуправляемого кода](../interop/consuming-unmanaged-dll-functions.md):
 
@@ -296,7 +296,7 @@ ms.locfileid: "71053481"
 
 6. Если метод <xref:System.ServiceProcess.ServiceBase.OnStop%2A> выполняется долго, повторите данную процедуру для `OnStop` (необязательно). Реализуйте состояние SERVICE_STOP_PENDING и обеспечьте возврат состояния SERVICE_STOPPED до того, как метод `OnStop` вернет управление.
 
-   Например:
+   Пример:
 
     ```csharp
     // Update the service state to Stop Pending.
@@ -542,7 +542,7 @@ ms.locfileid: "71053481"
 
 - Изучите возможности компонента <xref:System.ServiceProcess.ServiceController>, который позволяет отправлять команды в установленную службу.
 
-- Для создания журнала событий при установке приложения, а не во время его запуска, можно воспользоваться установщиком. В этом случае журнал событий удаляется установщиком при удалении приложения. Дополнительные сведения см. в разделе <xref:System.Diagnostics.EventLogInstaller>.
+- Для создания журнала событий при установке приложения, а не во время его запуска, можно воспользоваться установщиком. В этом случае журнал событий удаляется установщиком при удалении приложения. Для получения дополнительной информации см. <xref:System.Diagnostics.EventLogInstaller>.
 
 ## <a name="see-also"></a>См. также
 

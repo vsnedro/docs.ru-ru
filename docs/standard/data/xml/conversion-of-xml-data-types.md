@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
 ms.openlocfilehash: b0cdab8861ca50b40ce2b422fcc1acf16e2f2273
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75711094"
@@ -64,7 +64,7 @@ Int32 vInt32=-2147483648;
 writer.WriteElementString("TestInt32",XmlConvert.ToString(vInt32));  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Преобразование строк в типы данных .NET Framework](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)
 - [Преобразование типов .NET Framework в строки](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)

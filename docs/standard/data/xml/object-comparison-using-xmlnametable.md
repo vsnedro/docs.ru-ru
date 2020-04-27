@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 8d94e041-d340-4ddf-9a2c-d7319e3f4f86
 ms.openlocfilehash: 63278f1aa1fe47377d2dae322a9d12338bbe45dd
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710535"
@@ -51,6 +51,6 @@ if (((object)node1.Name) == ((object)node2.Name))
   
  Приведенный выше сценарий передачи таблицы имен между двумя документами является типичным для многократной обработки документа некоторого типа, совместимого со схемой XSD или определением DTD, в котором многократно повторяются некоторые строки, например, при обработке заказов на веб-узле электронной торговли. Применение таблицы имен повышает производительность, поскольку одинаковое имя элемента встречается в нескольких документах.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

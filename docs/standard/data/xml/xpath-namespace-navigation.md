@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 06cc7abb-7416-415c-9dd6-67751b8cabd5
 ms.openlocfilehash: f35318b1439b762bf7c87cff217ed1787e8d007c
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78156326"
@@ -13,12 +13,12 @@ ms.locfileid: "78156326"
 # <a name="xpath-namespace-navigation"></a>Навигация по пространствам имен XPath
 Для использования запросов XPath с XML-документами необходимо правильно задавать адреса пространств имен XML и элементов, содержащихся в этих пространствах имен. Использование пространств имен устраняет неоднозначность, возникающую, когда имена используются в нескольких контекстах. Например, имя `ID` может относиться к нескольким идентификаторам, связанным с различными элементами XML-документа. В синтаксисе пространств имен задаются URI, имена и префиксы, по которым различаются элементы XML-документа.  
   
- В примере из этого раздела показано использование префиксов для навигации по XML-документу с помощью <xref:System.Xml.XPath.XPathNavigator>. Дополнительные сведения о пространствах имен и синтаксисе см. в разделе [XML Files: основные сведения о пространствах имен XML](https://docs.microsoft.com/previous-versions/dotnet/articles/bb986013(v=msdn.10)).  
+ В примере из этого раздела показано использование префиксов для навигации по XML-документу с помощью <xref:System.Xml.XPath.XPathNavigator>. Дополнительные сведения о пространствах имен и синтаксисе см. в разделе [Файл XML: общие сведения о пространствах имен XML](https://docs.microsoft.com/previous-versions/dotnet/articles/bb986013(v=msdn.10)).  
   
 ## <a name="namespace-declarations"></a>Объявление пространств имен  
  Объявление пространств имен позволяет различать элементы XML-документа и обращаться к ним при использовании экземпляра <xref:System.Xml.XPath.XPathNavigator>. Префиксы пространств имен представляют сокращенный синтаксис для адресации пространств имен.  
   
- Префиксы определяются в форме `<e:Envelope xmlns:e=http://schemas.xmlsoap.org/soap/envelope/>.` В этом синтаксисе префикс `e` представляет сокращение формального URI пространства имен. Элемент `Body` можно определить как элемент пространства имен `Envelope`, используя синтаксис `e:Body`.  
+ Префиксы определяются в следующей форме. `<e:Envelope xmlns:e=http://schemas.xmlsoap.org/soap/envelope/>.` В этом синтаксисе префикс `e` представляет сокращение формального URI пространства имен. Элемент `Body` можно определить как элемент пространства имен `Envelope`, используя синтаксис `e:Body`.  
   
  Следующий XML-документ в примере навигации из следующего раздела будет упоминаться как `response.xml`.  
   
@@ -62,7 +62,7 @@ using (XmlReader reader = XmlReader.Create("response.xml"))
   
  Точность полного указания имен и пространств имен дает не просто удобство. Небольшой эксперимент с определением документа и кодом из предыдущих примеров может подтвердить, что навигация без полных имен элементов вызывает исключения. Например, если указать определение элемента `<Search xmlns="http://schemas.microsoft.com/v1/Search">` и строку запроса `xpath = "/s:Envelope/s:Body/Search";` без префикса пространства имен в элементе `Search`, то вместо элемента `null` будет возвращено значение `Search`.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Доступ к XML-данным с помощью класса XPathNavigator](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)
 - [Выбор, вычисление и отбор XML-данных с помощью XPathNavigator](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)

@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
 ms.openlocfilehash: 0223cb25b933cc84af49aa86d90259fdf1fd3efc
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73124177"
@@ -32,7 +32,7 @@ ms.locfileid: "73124177"
     #import "..\LoanLib\LoanLib.tlb" raw_interfaces_only  
     ```  
   
-     \- или -  
+     -или-  
   
 - Включите директиву #import для Mscorlib.tlb. Пример:  
   

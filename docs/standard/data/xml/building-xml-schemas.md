@@ -9,7 +9,7 @@ dev_langs:
 ms.assetid: 8a5ea56c-0140-4b51-8997-875ae6a8e0cb
 ms.openlocfilehash: c921331b00fe137d4ad52d62951e8c161768dfae
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75711146"
@@ -86,7 +86,7 @@ ms.locfileid: "75711146"
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об модели объектов XML-схемы](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
 - [Чтение и запись XML-схем](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)

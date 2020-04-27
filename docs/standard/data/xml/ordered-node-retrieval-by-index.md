@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 5412c90f-2703-4aa8-a9c4-1b8a35183c37
 ms.openlocfilehash: 715ce65bd932a45cc22d00a2346d18f3c5526229
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78156391"
@@ -92,6 +92,6 @@ End While
   
  Дополнительные сведения о доступных методах и свойствах класса **XmlNodeList** см. в описании <xref:System.Xml.XmlNodeList>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

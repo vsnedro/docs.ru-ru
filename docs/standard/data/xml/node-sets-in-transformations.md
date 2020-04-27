@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: ad034f0e-ff8b-4a71-9a4c-528c754263c4
 ms.openlocfilehash: 2828b95f6a4050dd05b38e7ab6ef740ee4eb16b4
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710561"
@@ -38,7 +38,7 @@ ms.locfileid: "75710561"
 </xsl:stylesheet>  
 ```  
   
-## <a name="input"></a>Input  
+## <a name="input"></a>Входные данные  
   
 ```xml  
 <bookstore>  
@@ -72,7 +72,7 @@ History of Trenton Vol 3
 ******  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XPath.XPathNodeIterator>
 - [XSLT-преобразования с помощью класса XslTransform](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)

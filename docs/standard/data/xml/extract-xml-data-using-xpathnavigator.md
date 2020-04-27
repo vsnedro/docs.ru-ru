@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 095b0987-ee4b-4595-a160-da1c956ad576
 ms.openlocfilehash: 627da3c8c45d007e677c4f92f4d5cd602d34ae84
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710860"
@@ -160,7 +160,7 @@ book.Close();
   
  В данном примере в качестве входного файла используется указанный выше файл `books.xml`.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

@@ -5,7 +5,7 @@ ms.date: 10/19/2017
 ms.custom: azure-sdk-dotnet
 ms.openlocfilehash: a29709d56f2debe04d49ee4eafdc27acd4ca480f
 ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/19/2020
 ms.locfileid: "81433154"
@@ -18,7 +18,7 @@ ms.locfileid: "81433154"
 
 1. Скачайте и запустите этот [начальный загрузчик для установщика веб-платформы](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=VWDOrVs2015AzurePack;MicrosoftAzure-ServiceFabric-VS2015).
 
-2. Начальный загрузчик установит установщик веб-платформы (при необходимости) и автоматически поместит последние версии **пакета Azure SDK для Visual Studio 2015** и **пакета SDK для Service Fabric и средств для Visual Studio 2015** в список *Устанавливаемые элементы*. Щелкните **Install**(Установить).
+2. Начальный загрузчик установит установщик веб-платформы (при необходимости) и автоматически поместит последние версии **пакета Azure SDK для Visual Studio 2015** и **пакета SDK для Service Fabric и средств для Visual Studio 2015** в список *Устанавливаемые элементы*. Нажмите кнопку **Установить**.
 
     ![Установщик веб-платформы](../media/sdk/vs2015-install/webpi.png)
 
@@ -28,7 +28,7 @@ ms.locfileid: "81433154"
 
 ## <a name="verifying-the-installation"></a>Проверка установки
 
-1. В Visual Studio 2015 щелкните меню **Сервис** и выберите пункт **Расширения и обновления...**.
+1. В Visual Studio 2015 щелкните меню **Сервис** и выберите пункт **Расширения и обновления...** .
 
 2. Отображаемый список будет содержать несколько средств Azure, например **средства службы приложений Microsoft Azure**, **подключенную службу хранилища Microsoft Azure** и **средства Service Fabric**.
 

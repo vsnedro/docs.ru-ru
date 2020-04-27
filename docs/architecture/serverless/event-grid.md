@@ -3,13 +3,13 @@ title: Сетка событий Azure. Бессерверные приложе�
 description: Служба "Сетка событий Azure" — это бессерверное решение, обеспечивающее надежную доставку и маршрутизацию событий в больших масштабах согласно модели с оплатой за событие.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 06/26/2018
-ms.openlocfilehash: 3c577139c12567e762aabd58c9dc29457fa37aa1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 04/06/2020
+ms.openlocfilehash: 408e1b9cd1b1e5316c7c6a17bb1b0c76a38f9e11
+ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72522713"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82135715"
 ---
 # <a name="event-grid"></a>Сетка событий Azure
 
@@ -132,14 +132,12 @@ Azure предусматривает несколько служб сообще�
 - [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps)
 - [Служебная шина Azure](https://docs.microsoft.com/azure/service-bus-messaging)
 - [хранилище таблиц Azure](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
-- [Сравнение Функций Azure версии 1.x и 2.x](https://docs.microsoft.com/azure/azure-functions/functions-versions)
 - [Подключение к локальным источникам данных с помощью локального шлюза данных Azure](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)
 - [Создание первой функции на портале Azure](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
 - [Создание первой функции с помощью Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli)
 - [Создание первой функции с помощью Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
 - [Поддерживаемые языки функций](https://docs.microsoft.com/azure/azure-functions/supported-languages)
 - [Мониторинг Функций Azure](https://docs.microsoft.com/azure/azure-functions/functions-monitoring)
-- [Work with Azure Functions Proxies](https://docs.microsoft.com/azure/azure-functions/functions-proxies) (Работа с Прокси-серверами Функций Azure)
 
 >[!div class="step-by-step"]
 >[Назад](logic-apps.md)

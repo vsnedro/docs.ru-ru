@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: b1f91616-3115-4264-9821-c66589d11d11
 ms.openlocfilehash: 3b9225f1efcca0f4874a98f2b83d1964aacef735
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710964"
@@ -23,7 +23,7 @@ ms.locfileid: "75710964"
  [Удаление XML-данных с помощью XPathNavigator](../../../../docs/standard/data/xml/remove-xml-data-using-xpathnavigator.md)  
  Описывает, как удалять узлы и значения из объекта <xref:System.Xml.XmlDocument> с помощью класса <xref:System.Xml.XPath.XPathNavigator>.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - code modules
 - multifile assemblies
 ms.assetid: 13509e73-db77-4645-8165-aad8dfaedff6
-ms.openlocfilehash: 8ffb0482ebd01a056d9ffd80a74ec0332e1b8dff
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.openlocfilehash: 2a70e45d50763cf99c55cf08600c3c816b4043b7
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119791"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644209"
 ---
 # <a name="multifile-assemblies"></a>Многофайловые сборки
 
@@ -41,5 +41,5 @@ ms.locfileid: "73119791"
 
 ## <a name="see-also"></a>См. также
 
-- [Как построить многофайловую сборку](build-multifile-assembly.md)
-- [Программирование с использованием сборок](../../standard/assembly/program.md)
+- [Практическое руководство. Создание многофайловой сборки](build-multifile-assembly.md)
+- [Программирование с использованием сборок](../../standard/assembly/index.md)

@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 71d03b78-6898-4ce7-b0fc-1282573f31f7
 ms.openlocfilehash: 83b8c09323e73a9b3ba7dea8d272d7d41d03add1
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710093"
@@ -13,7 +13,7 @@ ms.locfileid: "75710093"
 # <a name="types-of-xml-nodes"></a>Типы XML-узлов
 Когда XML-документ считывается в память в виде дерева узлов, типы для узлов выбираются во время их создания. В модели XML DOM существует несколько типов узлов, определяемых консорциумом W3C и приведенных в разделе «1.1.1. Структурная модель DOM». В следующей таблице перечислены типы узлов, объекты, назначаемые каждому типу узла, и дано краткое описание типов.  
   
-|Тип узла модели DOM|Объект служб|Описание|  
+|Тип узла модели DOM|Object|Описание|  
 |-------------------|------------|-----------------|  
 |Document|<xref:System.Xml.XmlDocument>|Контейнер для всех узлов в дереве. Он также называется корнем документа, что не всегда совпадает с корневым элементом.|  
 |DocumentFragment|<xref:System.Xml.XmlDocumentFragment>|Временный контейнер, содержащий один или несколько узлов, не имеющих древовидной структуры.|  
@@ -22,8 +22,8 @@ ms.locfileid: "75710093"
 |Элемент|<xref:System.Xml.XmlElement>|Представляет узел элемента.|  
 |Attr|<xref:System.Xml.XmlAttribute>|Атрибут элемента.|  
 |ProcessingInstruction;|<xref:System.Xml.XmlProcessingInstruction>|Узел инструкций по обработке.|  
-|Комментарий|<xref:System.Xml.XmlComment>|Узел комментария.|  
-|Текст|<xref:System.Xml.XmlText>|Текст, принадлежащий элементу или атрибуту.|  
+|Добавление примечаний|<xref:System.Xml.XmlComment>|Узел комментария.|  
+|Text|<xref:System.Xml.XmlText>|Текст, принадлежащий элементу или атрибуту.|  
 |CDATASection.|<xref:System.Xml.XmlCDataSection>|Представляет CDATA.|  
 |Объект|<xref:System.Xml.XmlEntity>|Представляет декларации `<!ENTITY…>` в XML-документе, полученные из встроенного DTD или из внешних DTD и сущностей параметров.|  
 |Notation|<xref:System.Xml.XmlNotation>|Представляет нотацию, объявленную в DTD.|  
@@ -44,6 +44,6 @@ ms.locfileid: "75710093"
   
  Дополнительные сведения об иерархии объектов для типов узлов с указанием имен эквивалентных объектов см. в статье [Иерархия объектной модели (DOM) XML-документа](../../../../docs/standard/data/xml/xml-document-object-model-dom-hierarchy.md). Дополнительные сведения об объектах, создаваемых в дереве узлов, см. в статье [Сопоставление объектной иерархии с XML-данными](../../../../docs/standard/data/xml/mapping-the-object-hierarchy-to-xml-data.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

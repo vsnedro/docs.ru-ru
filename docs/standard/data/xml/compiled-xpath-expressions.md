@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: e25dd95f-b64c-4d8b-a3a4-379e1aa0ad55
 ms.openlocfilehash: b4675765849299050eb6cddeaaa497bc6cdc620a
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75711107"
@@ -117,7 +117,7 @@ Console.WriteLine(nodes.Current.Value);
   
  Дополнительные сведения о методах перемещения по набору узлов в классе <xref:System.Xml.XPath.XPathNavigator> см. в руководстве по [перемещению по узлам с помощью XPathNavigator](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

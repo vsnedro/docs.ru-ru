@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
 ms.openlocfilehash: d748d9f8bdd0b4d831880548d4aceb1c77a0b0c4
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79180504"
@@ -103,7 +103,7 @@ ms.locfileid: "79180504"
  [!code-csharp[HookUpDelegate#1](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#1)]
  [!code-vb[HookUpDelegate#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Emit.DynamicMethod>

@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: f6ebb1a1-f2ca-49b9-92c9-0150940cf6e6
 ms.openlocfilehash: 30b788c77a2352d0d02ee772ab3f428381facd9f
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78155624"
@@ -45,6 +45,6 @@ ms.locfileid: "78155624"
   
  Если нужно загружать данные в объект **DataSet** из класса **XmlDataDocument**, переходите к документу о [синхронизации объекта DataSet с XML-документом](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование XML в наборах данных](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)

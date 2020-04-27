@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
 ms.openlocfilehash: e54990785cafd6061c6d53c13af6476a4b46e20e
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78160356"
@@ -20,15 +20,15 @@ ms.locfileid: "78160356"
   
  В следующей таблице перечислены типы данных .NET Framework и строковые типы, возвращаемые с помощью сопоставления типа данных XSD. **System.Convert** не поддерживает обработку этих типов .NET Framework.  
   
-|Тип .NET Framework|Возвращаемая строка|  
+|Тип платформы .NET Framework|Возвращаемая строка|  
 |-------------------------|---------------------|  
-|Логическое|"true", "false"|  
+|логический|"true", "false"|  
 |Single.PositiveInfinity|"INF"|  
 |Single.NegativeInfinity|"-INF"|  
 |Double.PositiveInfinity|"INF"|  
 |Double.NegativeInfinity|"-INF"|  
-|Дата и время|Используется формат «гггг-ММ-ддТЧЧ:мм:ссzzzzzz» и его сокращенные версии.|  
-|Timespan|Используется формат PnYnMnTnHnMnS, то есть значение `P2Y10M15DT10H30M20S` соответствует длительности в 2 года, 10 месяцев, 15 дней, 10 часов, 30 минут и 20 секунд.|  
+|DateTime|Используется формат «гггг-ММ-ддТЧЧ:мм:ссzzzzzz» и его сокращенные версии.|  
+|Временной диапазон|Используется формат PnYnMnTnHnMnS, то есть значение `P2Y10M15DT10H30M20S` соответствует длительности в 2 года, 10 месяцев, 15 дней, 10 часов, 30 минут и 20 секунд.|  
   
 > [!NOTE]
 > Если любой из типов .NET Framework, представленных в таблице, преобразуется в строку с использованием метода **ToString**, возвращаемая строка имеет не базовый тип, а тип строки XSD.  
@@ -77,9 +77,9 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
 |Допустимый строковый входной параметр|Выходной тип .NET Framework|  
 |----------------------------------|--------------------------------|  
 |True|Boolean.True|  
-|1|Boolean.True|  
+|"1"|Boolean.True|  
 |"false"|Boolean.False|  
-|0|Boolean.False|  
+|"0"|Boolean.False|  
   
  Например, пусть задан следующий XML-код.  
   
@@ -131,7 +131,7 @@ Double value = Double.PositiveInfinity;
 writer.WriteElementString("Infinity", XmlConvert.ToString(value));  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Преобразование типов XML-данных](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)
 - [Преобразование типов .NET Framework в строки](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)

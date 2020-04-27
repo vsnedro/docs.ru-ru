@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: a42f81b3-0403-4e34-b346-7d2129804e54
 ms.openlocfilehash: 8c81aae89bbe5979dffdc47a369349bd2b3f2df7
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710990"
@@ -20,6 +20,6 @@ ms.locfileid: "75710990"
   
  Хотя класс **XmlDataDocument** является производным от класса **XmlDocument**, класс **XmlDataDocument** не поддерживает создание ссылок на сущности. Это связано с тем, что дочерние узлы **EntityReference** доступны только для чтения. Дочерние узлы узла **EntityReference** могут принадлежать к нескольким областям. В этом случае часть строки, связанная с областью, которая содержит часть узла **EntityReference**, будет доступна только для чтения.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

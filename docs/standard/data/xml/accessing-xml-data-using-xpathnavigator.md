@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: c57b46e6-5c77-408f-bc4e-67a5dcc9cc05
 ms.openlocfilehash: c8466e78458d344a872aac7cdebc155342b13e0f
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75711172"
@@ -29,7 +29,7 @@ ms.locfileid: "75711172"
  [Определяемые пользователем функции и переменные](../../../../docs/standard/data/xml/user-defined-functions-and-variables.md)  
  Описывает реализацию пользовательского класса <xref:System.Xml.Xsl.XsltContext> с интерфейсами <xref:System.Xml.Xsl.IXsltContextFunction> и <xref:System.Xml.Xsl.IXsltContextVariable>, которые поддерживают функции и переменные расширения.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

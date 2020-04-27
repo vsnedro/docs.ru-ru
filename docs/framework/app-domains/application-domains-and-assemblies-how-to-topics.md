@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 2264054e-712e-47e4-8657-1aa1cfec3e3d
 ms.openlocfilehash: bcb2ae00b02571b97dfc23100a1e5a7d3e7d8f12
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73119989"
@@ -39,9 +39,9 @@ ms.locfileid: "73119989"
   
 - [Практическое руководство. Подписание сборки строгим именем](../../standard/assembly/sign-strong-name.md)  
   
-- [Практическое руководство. Создание ссылки на сборку со строгим именем](../../standard/assembly/reference-strong-named.md)  
+- [Практическое руководство. Ссылка на сборку со строгим именем](../../standard/assembly/reference-strong-named.md)  
   
-- [Практическое руководство. Отключение возможности обхода строгих имен](../../standard/assembly/disable-strong-name-bypass-feature.md)  
+- [Практическое руководство. Отключение функции пропуска строгих имен](../../standard/assembly/disable-strong-name-bypass-feature.md)  
   
 - [Практическое руководство. Установка сборки в глобальный кэш сборок](install-assembly-into-gac.md)  
   
@@ -49,7 +49,7 @@ ms.locfileid: "73119989"
   
 - [Практическое руководство. Удаление сборки из глобального кэша сборок](how-to-remove-an-assembly-from-the-gac.md)  
   
-- [Практическое руководство. Просмотр содержимого сборок](../../standard/assembly/view-contents.md)  
+- [Практическое руководство. Просмотр содержимого сборки](../../standard/assembly/view-contents.md)  
   
 ## <a name="see-also"></a>См. также
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa
 ms.openlocfilehash: b7aae1e70ac736d60bed1e79291235db1c220281
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79181417"
@@ -127,7 +127,7 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функции обратного вызова](callback-functions.md)
 - [Вызов функции DLL](calling-a-dll-function.md)

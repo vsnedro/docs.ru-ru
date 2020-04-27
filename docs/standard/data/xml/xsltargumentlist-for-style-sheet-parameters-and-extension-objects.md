@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
 ms.openlocfilehash: 34ffb9923337bbad90b2170a16d610d26c7f6f23
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78160200"
@@ -17,7 +17,7 @@ ms.locfileid: "78160200"
 Класс <xref:System.Xml.Xsl.XsltArgumentList> содержит параметры языка XSLT и объекты расширения XSLT. При передаче в метод <xref:System.Xml.Xsl.XslTransform.Transform%2A> эти параметры и объекты расширения могут вызываться из таблиц стилей.  
   
 > [!NOTE]
-> Классы <xref:System.Xml.Xsl.XslTransform> и <xref:System.Xml.Xsl.XsltArgumentList> являются устаревшими в версии платформы NET Framework 2.0. Преобразования XSLT можно выполнять с помощью класса <xref:System.Xml.Xsl.XslCompiledTransform>. См. дополнительные сведения об [использовании класса XslCompiledTransform](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) и [миграции из класса XslTransform](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
+> Классы <xref:System.Xml.Xsl.XslTransform> и <xref:System.Xml.Xsl.XsltArgumentList> являются устаревшими в версии платформы NET Framework 2.0. Преобразования XSLT можно выполнять с помощью класса <xref:System.Xml.Xsl.XslCompiledTransform>. См. дополнительные сведения об [использовании класса XslCompiledTransform](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) и [миграции из класса XslTransform](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  Класс <xref:System.Xml.Xsl.XsltArgumentList> содержит параметры XSLT и объекты расширения XSLT. При передаче в метод <xref:System.Xml.Xsl.XslTransform.Transform%2A> эти параметры и объекты расширения могут вызываться из таблиц стилей.  
   
@@ -38,9 +38,9 @@ ms.locfileid: "78160200"
   
 |Тип W3C|Эквивалентный класс (тип) .NET Framework|Тип XPath или тип XSLT|  
 |--------------|----------------------------------------------|-----------------------------|  
-|String|System.String|XPath|  
-|Логическое|System.Boolean|XPath|  
-|Number|System.Double|XPath|  
+|Строка|System.String|XPath|  
+|логический|System.Boolean|XPath|  
+|Число|System.Double|XPath|  
 |Фрагмент дерева результатов|System.Xml.XPath.XPathNavigator|XSLT|  
 |Набор узлов|System.Xml.XPath.XPathNodeIterator|XPath|  
   
@@ -169,7 +169,7 @@ public class Sample
 </xsl:stylesheet>  
 ```  
   
-### <a name="output"></a>Выходные данные  
+### <a name="output"></a>Вывод  
   
 ```xml  
 <order>  
@@ -341,7 +341,7 @@ public class Sample
 </xsl:stylesheet>  
 ```  
   
-### <a name="output"></a>Выходные данные  
+### <a name="output"></a>Вывод  
  `<circles xmlns:myObj="urn:myObj">`  
   
  `<circle>`  
@@ -362,6 +362,6 @@ public class Sample
   
  `</circles>`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Реализация классом XslTransform XSLT-процессора](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

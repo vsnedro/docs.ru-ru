@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: d74ce896-717d-4871-8fd9-b070e2f53cb0
 ms.openlocfilehash: 6d66384dea7018bcc3b2dd8fde96f4fa2653f8e8
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710249"
@@ -133,18 +133,18 @@ ms.locfileid: "75710249"
 ## <a name="other-node-type-inference-rules"></a>Другие правила определения типов узлов  
  В следующей таблице описаны правила вывода для инструкций по обработке, комментариев, ссылок на сущности, данных типа CDATA, типа документа и узлов пространства имен.  
   
-|Тип узла|Преобразование|  
+|Тип узла|Перевод|  
 |---------------|-----------------|  
-|Инструкция по обработке|Пропускается.|  
-|Комментарий|Пропускается.|  
+|Инструкция по обработке|Не обрабатывается.|  
+|Добавление примечаний|Не обрабатывается.|  
 |Ссылка на сущность|Класс <xref:System.Xml.Schema.XmlSchemaInference> не обрабатывает ссылки на сущности. Если XML-документ содержит ссылки на сущности, нужно использовать модуль чтения данных, разворачивающий сущности. Например, можно передать в качестве параметра объект <xref:System.Xml.XmlTextReader>, у которого свойство <xref:System.Xml.XmlTextReader.EntityHandling%2A> имеет значение <xref:System.Xml.EntityHandling.ExpandEntities>. Если обнаружены ссылки на сущности и модуль чтения данных не разворачивает сущности, будет вызвано исключение.|  
 |CDATA|Все разделы `<![CDATA[ … ]]` в XML-документе будут выведены как `xs:string`.|  
-|Тип документа|Пропускается.|  
-|Пространства имен|Пропускается.|  
+|Тип документа|Не обрабатывается.|  
+|Пространства имен|Не обрабатывается.|  
   
  См. дополнительные сведения о [выведении схем из XML-документов](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Schema.XmlSchemaInference>
 - [Модель объектов схемы XML (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)

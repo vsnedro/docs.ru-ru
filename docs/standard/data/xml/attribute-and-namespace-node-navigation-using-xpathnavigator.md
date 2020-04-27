@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 23975f88-e0af-4b88-93de-9e20e11880ad
 ms.openlocfilehash: 6809a2a47a9ca25a16a9be75a0a8a8b03f98a21d
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75711159"
@@ -94,7 +94,7 @@ ms.locfileid: "75711159"
 > [!NOTE]
 > Класс <xref:System.Xml.XPath.XPathNavigator> возвращает узлы пространства имен в обратном порядке документа. Поэтому <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> существенно перемещается к последнему узлу пространства имен в текущей области видимости.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

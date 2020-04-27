@@ -9,7 +9,7 @@ dev_langs:
 ms.assetid: 2c61c920-d0f8-4c72-bfcc-6524570f3060
 ms.openlocfilehash: 93686ddf1afff76926e77acdbf5aa58e93d6cb77
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710041"
@@ -86,7 +86,7 @@ ms.locfileid: "75710041"
 
  Примеры, иллюстрирующие работу <xref:System.Xml.Schema.ValidationEventHandler>, см. выше в подразделах «Проверка XML-документа в процессе его загрузки в модель DOM» и «Проверка XML-документа в модели DOM».
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XmlReader>

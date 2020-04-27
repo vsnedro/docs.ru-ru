@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: a0b536b6-cdb3-4a44-86c2-3b2ebc7bd4c9
 ms.openlocfilehash: 5f2a7ef22eb07bb221b6a145db4453996ad8bf8c
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75709859"
@@ -20,7 +20,7 @@ ms.locfileid: "75709859"
   
  Дополнительные сведения о применении преобразования реляционных данных см. в руководстве по [преобразованию XSLT в набор данных](../../../../docs/framework/data/adonet/dataset-datatable-dataview/applying-an-xslt-transform-to-a-dataset.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDataDocument>
 - [Синхронизация DataSet и XmlDataDocument](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)

@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd
 ms.openlocfilehash: 5022b298cb20796edbc54e951d8b06043697d832
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78155598"
@@ -43,7 +43,7 @@ ms.locfileid: "78155598"
 </xsl:stylesheet>  
 ```  
   
-## <a name="output"></a>Выходные данные  
+## <a name="output"></a>Вывод  
  Выходные данные преобразования:  
   
 ```xml  
@@ -51,6 +51,6 @@ ms.locfileid: "78155598"
 <authors><author>Michael Howard</author><author>Michael Kay</author></authors>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Реализация классом XslTransform XSLT-процессора](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

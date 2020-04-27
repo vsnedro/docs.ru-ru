@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: e21b078b-70fb-4905-be26-c097ab2433ff
 ms.openlocfilehash: 88b6342038f99bf06fa2986c43f422e63cffd31e
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73124385"
@@ -23,7 +23,7 @@ ms.locfileid: "73124385"
   
  В таблице ниже представлены варианты маршалинга строк, описано их использование и приведена ссылка на соответствующий пример кода .NET Framework.  
   
-|Строковое|Описание|Пример|  
+|Строка|Описание|Пример|  
 |------------|-----------------|------------|  
 |По значению.|Передает строки в качестве параметров In.|[MsgBox](msgbox-sample.md)|  
 |Как результат.|Возвращает строки из неуправляемого кода.|[Строки](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e765dyyy(v=vs.100))|  

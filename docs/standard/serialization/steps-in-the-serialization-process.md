@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 4bcbc883-2a91-418f-b968-6c86a25e9737
 ms.openlocfilehash: f30dd550437e6bc1030c79865bf2edd2c0efbfa9
 ms.sourcegitcommit: 9a97c76e141333394676bc5d264c6624b6f45bcf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/08/2020
 ms.locfileid: "75741048"
@@ -25,7 +25,7 @@ ms.locfileid: "75741048"
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Двоичная сериализация](binary-serialization.md)
 - [Сериализация XML и SOAP](xml-and-soap-serialization.md)

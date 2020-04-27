@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
 ms.openlocfilehash: 40ab0f746ef82ccd195fc6b873f5c8edb255f868
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75709872"
@@ -32,7 +32,7 @@ ms.locfileid: "75709872"
   
  Класс <xref:System.TimeSpan> не поддерживает такое частичное упорядочение. Он предполагает использование определенного числа дней для 1 года и для 1 месяца: 365 дней и 30 дней соответственно.  
   
- Дополнительные сведения о типе `xs:duration` см. в документе W3C [XML Schema Part 2: Datatypes Recommendation](https://www.w3.org/TR/xmlschema-2/) (Рекомендация W3C по схемам XML. Часть 2. Типы данных).
+ Дополнительные сведения о типе `xs:duration` см. в документе W3C [Схема XML. Часть 2. Рекомендация по типам данных](https://www.w3.org/TR/xmlschema-2/).
   
 ### <a name="xstime-gregorian-date-types-and-systemdatetime"></a>Типы данных xs:time, григорианского календаря и System.DateTime  
  Когда значение `xs:time` сопоставляется с объектом <xref:System.DateTime>, поле <xref:System.DateTime.MinValue> используется для инициализации свойств даты объекта <xref:System.DateTime> (таких как <xref:System.DateTime.Year%2A>, <xref:System.DateTime.Month%2A> и <xref:System.DateTime.Day%2A>) наименьшим из возможных значений <xref:System.DateTime>.  
@@ -45,6 +45,6 @@ ms.locfileid: "75709872"
 ### <a name="xsanyuri-and-systemuri"></a>Типы данных xs:anyURI и System.Uri  
  Когда экземпляр `xs:anyURI`, представляющий относительный идентификатор URI, сопоставляется с объектом <xref:System.Uri>, объект <xref:System.Uri> не имеет базового идентификатора URI.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Поддержка типов в классах System.Xml](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)

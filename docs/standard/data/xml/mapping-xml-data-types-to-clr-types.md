@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
 ms.openlocfilehash: 536c8dcd03d98879e24ae62d2b8a47e36564aaf6
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710665"
@@ -68,14 +68,14 @@ ms.locfileid: "75710665"
 |`xdt:untypedAtomic`|<xref:System.String>|
 |`xdt:anyAtomicType`|<xref:System.Object>|
 |`xs:anySimpleType`|<xref:System.String>|
-|Узел Document|<xref:System.Xml.XPath.XPathNavigator>|
+|Узел документа|<xref:System.Xml.XPath.XPathNavigator>|
 |Узел элемента|<xref:System.Xml.XPath.XPathNavigator>|
-|Узел Attribute|<xref:System.Xml.XPath.XPathNavigator>|
+|Узел атрибута|<xref:System.Xml.XPath.XPathNavigator>|
 |Узел пространства имен|<xref:System.Xml.XPath.XPathNavigator>|
-|Узел Text|<xref:System.Xml.XPath.XPathNavigator>|
+|Текстовый узел|<xref:System.Xml.XPath.XPathNavigator>|
 |Узел комментария|<xref:System.Xml.XPath.XPathNavigator>|
 |Узел инструкции по обработке|<xref:System.Xml.XPath.XPathNavigator>|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Поддержка типов в классах System.Xml](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)

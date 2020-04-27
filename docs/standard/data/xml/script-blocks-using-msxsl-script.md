@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
 ms.openlocfilehash: a63452df16e452a90eff3977ac8726cc0a5ac439
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710197"
@@ -92,7 +92,7 @@ ms.locfileid: "75710197"
 #### <a name="namespaces"></a>Пространства имен  
  По умолчанию включаются следующие пространства имен:  
   
-- System  
+- Система  
   
 - System.Collection  
   
@@ -146,7 +146,7 @@ ms.locfileid: "75710197"
 </circles>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Преобразования XSLT](../../../../docs/standard/data/xml/xslt-transformations.md)
 - [Динамическое создание и компиляция исходного кода](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
 ms.openlocfilehash: c560e2c5858de67442ccbcd18c8f92b142cc178d
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73119893"
 ---
 # <a name="how-to-load-assemblies-into-an-application-domain"></a>Практическое руководство. Загрузка сборок в домен приложения
-Существует несколько способов загрузки сборки в домен приложения. Рекомендуется использовать метод <xref:System.Reflection.Assembly.Load%2A> `static` (`Shared` в Visual Basic) класса <xref:System.Reflection.Assembly?displayProperty=nameWithType>. Другими способами загрузки сборок являются:  
+Существует несколько способов загрузки сборки в домен приложения. Рекомендуется использовать метод <xref:System.Reflection.Assembly.Load%2A>`static` (`Shared` в Visual Basic) класса <xref:System.Reflection.Assembly?displayProperty=nameWithType>. Другими способами загрузки сборок являются:  
   
 - Метод <xref:System.Reflection.Assembly.LoadFrom%2A> класса <xref:System.Reflection.Assembly> загружает сборку, заданную расположением ее файла. При загрузке сборок с помощью этого метода используется другой контекст загрузки.  
   
-- Методы <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> и <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> загружают сборку в контекст, предназначенный только для отражения. Сборки, загруженные в этом контексте, могут быть проверены, но не выполнены, позволяя производить проверку сборок, предназначенных для других платформ. См. раздел [Практическое руководство. Загрузка сборок в контекст, предназначенный только для отражения](../reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
+- Методы <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> и <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> загружают сборку в контекст, предназначенный только для отражения. Сборки, загруженные в этом контексте, могут быть проверены, но не выполнены, позволяя производить проверку сборок, предназначенных для других платформ. См. практическое руководство по [ Загрузка сборок в контекст, предназначенный только для отражения](../reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
   
 > [!NOTE]
 > Контекст только для отражения впервые появился в платформе .NET Framework версии 2.0.  

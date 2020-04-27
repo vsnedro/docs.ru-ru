@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: b18e7ffd-3c04-482d-9934-ba2f6a59b2c9
 ms.openlocfilehash: a65247f1786acea11879abf0405038446068c118
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710769"
@@ -25,7 +25,7 @@ ms.locfileid: "75710769"
  [Правила выведения простых типов](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)  
  Описывает, как класс <xref:System.Xml.Schema.XmlSchemaInference> выводит тип данных для атрибутов и элементов.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов схемы XML (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)
 - [Выведение схем из XML-документов](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)

@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: c0aa8533-3b3b-42e8-9f60-84919793098c
 ms.openlocfilehash: 8b8bb4dff4f73247282060c0b4fd778ae0169b1f
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79181522"
@@ -23,9 +23,9 @@ ms.locfileid: "79181522"
   
  ![Схема, иллюстрирующая процесс обратного вызова неуправляемого кода.](./media/callback-functions/platform-invoke-callback-process.gif)  
   
- Функции обратного вызова — идеальное средство для многократного выполнения некоторой задачи. Другая область их применения — с функциями перечисления API Windows, такими как **EnumFontFamilies**, **EnumPrinters** и **EnumWindows**. Функция **EnumWindows** выполняет перечисление всех существующих на компьютере окон, используя функцию обратного вызова, чтобы выполнить задачу для каждого окна. Инструкции и пример см. в разделе [Практическое руководство. Реализация функций обратного вызова](how-to-implement-callback-functions.md).  
+ Функции обратного вызова — идеальное средство для многократного выполнения некоторой задачи. Другая область их применения — с функциями перечисления API Windows, такими как **EnumFontFamilies**, **EnumPrinters** и **EnumWindows**. Функция **EnumWindows** выполняет перечисление всех существующих на компьютере окон, используя функцию обратного вызова, чтобы выполнить задачу для каждого окна. Инструкции и примеры см. в разделе [Практическое руководство. Реализация функций обратного вызова](how-to-implement-callback-functions.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Реализация функций обратного вызова](how-to-implement-callback-functions.md)
 - [Вызов функции DLL](calling-a-dll-function.md)

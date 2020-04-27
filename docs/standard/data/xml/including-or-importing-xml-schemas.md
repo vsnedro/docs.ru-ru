@@ -9,7 +9,7 @@ dev_langs:
 ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
 ms.openlocfilehash: d9a18876d8a5ba3067aa35c617b1e20fce0411f5
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710782"
@@ -97,7 +97,7 @@ ms.locfileid: "75710782"
   
  Дополнительные сведения об элементах `<xs:import />`, `<xs:include />` и `<xs:redefine />`, а также классах <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> и <xref:System.Xml.Schema.XmlSchemaRedefine> см. в [документации консорциума W3C по схемам XML](https://www.w3.org/XML/Schema) и в справочной документации по классу пространства имен <xref:System.Xml.Schema?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об модели объектов XML-схемы](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
 - [Чтение и запись XML-схем](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)

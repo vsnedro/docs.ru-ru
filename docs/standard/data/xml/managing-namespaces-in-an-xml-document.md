@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 682643fc-b848-4e42-8c0d-50deeaeb5f2a
 ms.openlocfilehash: 7b219788895ab2f89fa285c2e1b7de62639bfcf9
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78160044"
@@ -65,19 +65,19 @@ ms.locfileid: "78160044"
   
  Вот некоторые из задач по управлению и подстановке, которые можно выполнить с помощью класса <xref:System.Xml.XmlNamespaceManager>. Дополнительные сведения и примеры см. в разделах справочника, посвященных каждому методу или свойству.  
   
-|Чтобы|Использование|  
+|Кому|Использовать|  
 |--------|---------|  
 |Добавление пространства имен|Метод <xref:System.Xml.XmlNamespaceManager.AddNamespace%2A>|  
 |Удаление пространства имен|Метод <xref:System.Xml.XmlNamespaceManager.RemoveNamespace%2A>|  
-|Поиск URI для пространства имен по умолчанию|Свойство <xref:System.Xml.XmlNamespaceManager.DefaultNamespace%2A>|  
+|Поиск URI для пространства имен по умолчанию|Свойство<xref:System.Xml.XmlNamespaceManager.DefaultNamespace%2A>|  
 |Поиск URI для префикса пространства имен|Метод <xref:System.Xml.XmlNamespaceManager.LookupNamespace%2A>|  
 |Поиск префикса для URI-кодов пространства имен|Метод <xref:System.Xml.XmlNamespaceManager.LookupPrefix%2A>|  
 |Получение списка пространств имен, которые есть на текущем узле|Метод <xref:System.Xml.XmlNamespaceManager.GetNamespacesInScope%2A>|  
 |Задание области видимости пространства имен|Методы <xref:System.Xml.XmlNamespaceManager.PushScope%2A> и <xref:System.Xml.XmlNamespaceManager.PopScope%2A>|  
 |Проверка того, определен ли префикс в текущей области|Метод <xref:System.Xml.XmlNamespaceManager.HasNamespace%2A>|  
-|Получение таблицы имен используется для поиска префиксов и URI|Свойство <xref:System.Xml.XmlNamespaceManager.NameTable%2A>|  
+|Получение таблицы имен используется для поиска префиксов и URI|Свойство<xref:System.Xml.XmlNamespaceManager.NameTable%2A>|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlNamespaceManager>
 - [XML-документы и данные](../../../../docs/standard/data/xml/index.md)

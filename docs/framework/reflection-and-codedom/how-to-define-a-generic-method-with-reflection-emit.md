@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 93892fa4-90b3-4ec4-b147-4bec9880de2b
 ms.openlocfilehash: d16f6728b01583fe3ffb8d892522f3892444c537
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73130178"
@@ -25,7 +25,7 @@ ms.locfileid: "73130178"
 В третьей процедуре показано, как вызывать универсальный метод.
 
 > [!IMPORTANT]
-> Метод не может являться универсальным только потому, что он принадлежит универсальному типу и использует параметры этого типа. Метод является универсальным только в том случае, если он имеет свой собственный список параметров типа. Универсальный метод может появиться в неуниверсальном типе, как показано в этом примере. Пример использования неуниверсального метода для универсального типа см. в разделе [Практическое руководство. Определение универсального типа с порождаемым отражением](how-to-define-a-generic-type-with-reflection-emit.md).
+> Метод не может являться универсальным только потому, что он принадлежит универсальному типу и использует параметры этого типа. Метод является универсальным только в том случае, если он имеет свой собственный список параметров типа. Универсальный метод может появиться в неуниверсальном типе, как показано в этом примере. Пример использования неуниверсального метода для универсального типа см. в разделе [Практическое руководство. Определение универсального типа с порождаемым отражением](how-to-define-a-generic-type-with-reflection-emit.md)
 
 ### <a name="to-define-a-generic-method"></a>Определение универсального метода
 
@@ -77,7 +77,7 @@ ms.locfileid: "73130178"
 10. Выпустите основную часть метода с помощью <xref:System.Reflection.Emit.ILGenerator>. Дополнительные сведения см. в сопутствующей процедуре для создания тела метода.
 
     > [!IMPORTANT]
-    > При выпуске вызовов методов универсального типа, если аргументы типа для этих типов являются параметрами типа универсального метода, необходимо использовать перегрузки метода `static` <xref:System.Reflection.Emit.TypeBuilder.GetConstructor%28System.Type%2CSystem.Reflection.ConstructorInfo%29>, <xref:System.Reflection.Emit.TypeBuilder.GetMethod%28System.Type%2CSystem.Reflection.MethodInfo%29> и <xref:System.Reflection.Emit.TypeBuilder.GetField%28System.Type%2CSystem.Reflection.FieldInfo%29> класса <xref:System.Reflection.Emit.TypeBuilder> для получения созданных форм этих методов. Это показано в сопутствующей процедуре выпуска основной части метода.
+    > При выпуске вызовов методов универсального типа, если аргументы типа для этих типов являются параметрами типа универсального метода, необходимо использовать перегрузки метода `static`<xref:System.Reflection.Emit.TypeBuilder.GetConstructor%28System.Type%2CSystem.Reflection.ConstructorInfo%29>, <xref:System.Reflection.Emit.TypeBuilder.GetMethod%28System.Type%2CSystem.Reflection.MethodInfo%29> и <xref:System.Reflection.Emit.TypeBuilder.GetField%28System.Type%2CSystem.Reflection.FieldInfo%29> класса <xref:System.Reflection.Emit.TypeBuilder> для получения созданных форм этих методов. Это показано в сопутствующей процедуре выпуска основной части метода.
 
 11. Завершите тип, который содержит метод, и сохраните сборку. В сопутствующей процедуре вызова универсального метода показаны два способа вызова завершенного метода.
 
@@ -117,7 +117,7 @@ ms.locfileid: "73130178"
 
 6. Выпустите код для цикла. Первым действием является маркировка вершины цикла посредством вызова метода <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A> с меткой `loopAgain`. Операторы перехода, которые используют метку, теперь будут переходить на эту точку в коде. Следующим действием является передача объекта `TOutput`, приведенного к `ICollection(Of TInput)`, в стек. Это не является необходимым в данный момент, но должно быть подготовлено для вызова метода `Add`. Затем входной массив передается в стек, после чего в массив передается переменная `index`, содержащая текущий индекс. Код операции <xref:System.Reflection.Emit.OpCodes.Ldelem> принимает индекс и массив из стека и передает индексированный элемент массива в стек. Теперь стек готов для вызова метода <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType>, который принимает коллекцию и новый элемент из стека и добавляет элемент в коллекцию.
 
-    В оставшейся части кода цикла увеличивается индекс и проверяется, завершился ли цикл. Индекс и 32-разрядное целое число 1 передается в стек и суммируется, после чего сумма остается в стеке; сумма сохраняется в `index`. Метод <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A> вызывается для задания этой точки в качестве точки входа цикла. Снова загружается индекс. Входной массив передается в стек, и выпускается <xref:System.Reflection.Emit.OpCodes.Ldlen> для получения его длины. Теперь в стеке находятся индекс и длина, выпускается <xref:System.Reflection.Emit.OpCodes.Clt> для их сравнения. Если индекс меньше длины, <xref:System.Reflection.Emit.OpCodes.Brtrue_S> переходит обратно к началу цикла.
+    В оставшейся части кода цикла увеличивается индекс и проверяется, завершился ли цикл. Индекс и 32-разрядное целое число 1 передаются в стек и суммируются, после чего сумма остается в стеке; сумма сохраняется в `index`. Метод <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A> вызывается для задания этой точки в качестве точки входа цикла. Снова загружается индекс. Входной массив передается в стек, и выпускается <xref:System.Reflection.Emit.OpCodes.Ldlen> для получения его длины. Теперь в стеке находятся индекс и длина, выпускается <xref:System.Reflection.Emit.OpCodes.Clt> для их сравнения. Если индекс меньше длины, <xref:System.Reflection.Emit.OpCodes.Brtrue_S> переходит обратно к началу цикла.
 
     [!code-csharp[GenericMethodHowTo#13](../../../samples/snippets/csharp/VS_Snippets_CLR/GenericMethodHowTo/CS/source.cs#13)]
     [!code-vb[GenericMethodHowTo#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GenericMethodHowTo/VB/source.vb#13)]
