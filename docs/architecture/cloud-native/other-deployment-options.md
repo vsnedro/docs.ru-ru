@@ -1,19 +1,19 @@
 ---
 title: Другие параметры развертывания контейнера
 description: Другие варианты развертывания контейнеров с помощью Azure
-ms.date: 06/30/2019
-ms.openlocfilehash: 1fcb57eedec8c9f5574fffcf409b316332032062
-ms.sourcegitcommit: 56f1d1203d0075a461a10a301459d3aa452f4f47
+ms.date: 04/13/2020
+ms.openlocfilehash: 3cae771b3877215a7fc91afd4f406fdfc9ff2771
+ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "73841165"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82200006"
 ---
 # <a name="other-container-deployment-options"></a>Другие параметры развертывания контейнера
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Помимо развертывания в AKS, можно также развернуть контейнеры в службе приложений Azure для контейнеров и экземпляров контейнеров Azure.
+Помимо службы Azure Kubernetes (AKS) можно также развернуть контейнеры в службе приложений Azure для контейнеров и экземпляров контейнеров Azure.
 
 ## <a name="when-does-it-make-sense-to-deploy-to-app-service-for-containers"></a>Когда имеет смысл выполнить развертывание в службе приложений для контейнеров?
 
@@ -21,28 +21,45 @@ ms.locfileid: "73841165"
 
 ## <a name="how-to-deploy-to-app-service-for-containers"></a>Развертывание в службе приложений для контейнеров
 
-Чтобы выполнить развертывание в [службе приложений Azure для контейнеров](https://azure.microsoft.com/services/app-service/containers/), необходимо настроить реестр контейнеров Azure и учетные данные для доступа к нему. Отправьте контейнер, который планируется разместить в реестре, чтобы получить доступ к службе приложений Azure. После создания можно настроить приложение для непрерывного развертывания, которое будет автоматически развертывать обновления приложения при каждом обновлении соответствующего образа в записи контроля доступа.
+Для развертывания в [службе приложений Azure для контейнеров](https://azure.microsoft.com/services/app-service/containers/)вам потребуется экземпляр реестра контейнеров Azure (запись контроля доступа) и учетные данные для доступа к нему. Отправьте образ контейнера в репозиторий записей контроля доступа, чтобы он мог быть извлечен в службу приложений Azure. После завершения можно настроить приложение для непрерывного развертывания. Это позволит автоматически развертывать обновления при каждом изменении изображения в записи контроля доступа.
 
 ## <a name="when-does-it-make-sense-to-deploy-to-azure-container-instances"></a>Когда имеет смысл выполнить развертывание в службе "экземпляры контейнеров Azure"?
 
-Экземпляры контейнеров Azure лучше использовать для сценариев тестирования. Они обеспечивают быстрый и простой способ развертывания приложения в размещенном в облаке экземпляре контейнера. Используйте их для тестирования или демонстрации приложений, если вам не требуются функции масштабирования и оркестрации, предлагаемые службой Azure Kubernetes.
+Служба ["экземпляры контейнеров Azure" (ACI)](https://azure.microsoft.com/services/container-instances/) позволяет запускать контейнеры DOCKER в управляемой безсерверной облачной среде без необходимости настраивать виртуальные машины или кластеры. Это отличное решение для кратковременных рабочих нагрузок, которые могут выполняться в изолированном контейнере. Рассмотрим ACI для простых служб, сценариев тестирования, автоматизации задач и заданий сборки. ACI развертывает экземпляр контейнера, выполняет задачу, а затем выворачивает ее.
 
 ## <a name="how-to-deploy-an-app-to-azure-container-instances"></a>Развертывание приложения в службе "экземпляры контейнеров Azure"
 
-Для развертывания в [службе "экземпляры контейнеров Azure" (ACI)](https://docs.microsoft.com/azure/container-instances/)необходимо настроить реестр контейнеров Azure и учетные данные для доступа к нему. Кроме того, необходимо предварительно передать образ контейнера в реестр, чтобы получить доступ к ACI. Вы можете работать с ACI, используя Azure CLI или на портале. Реестры контейнеров Azure упрощают развертывание отдельных экземпляров контейнеров в ACI непосредственно из реестра, как показано на рисунке 3-14.
+Для развертывания в [службе "экземпляры контейнеров Azure" (ACI)](https://docs.microsoft.com/azure/container-instances/)вам потребуется реестр контейнеров Azure (запись контроля доступа) и учетные данные для обращения к ней. После отправки образа контейнера в репозиторий он доступен для ACI. Вы можете работать с ACI, используя портал Azure или интерфейс командной строки. Запись контроля доступа обеспечивает тесную интеграцию с ACI. На рис. 3-14 показано, как отправить индивидуальный образ контейнера в запись контроля доступа.
 
 ![Экземпляр запуска реестра контейнеров Azure](./media/acr-runinstance-contextmenu.png)
 
 **Рис. 3-14**. Экземпляр запуска реестра контейнеров Azure
 
-Для создания экземпляра контейнера из реестра необходимо только указать обычные параметры Azure (имя, подписку, группу ресурсов и расположение), объем памяти, выделяемой контейнеру, и порт, который он должен прослушивать. В этом [кратком руководстве показано, как развернуть экземпляр контейнера в ACI с помощью портал Azure](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
+Создание экземпляра в ACI может быть выполнено быстро. Укажите реестр образа, сведения о группе ресурсов Azure, объем выделяемой памяти и порт для прослушивания. В этом [кратком руководстве показано, как развернуть экземпляр контейнера в ACI с помощью портал Azure](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
 
 После завершения развертывания найдите только что развернутый IP-адрес контейнера и взаимодействует с ним через указанный порт.
 
-Служба "экземпляры контейнеров Azure" предлагает самый быстрый и простой способ запуска контейнера в Azure. Нет необходимости настраивать службу приложений или Orchestrator или работать с виртуальными машинами. Тем не менее, из-за простоты ACI следует использовать в первую очередь для целей тестирования. Если приложению требуется автоматическая масштабируемость, несколько контейнеров, настроенных для совместной работы, или какие-либо дополнительные сложные функции, существуют другие более подходящие службы Azure, доступные для размещения приложения.
+Служба "экземпляры контейнеров Azure" предлагает самый быстрый способ выполнения простых рабочих нагрузок контейнера в Azure. Вам не нужно настраивать службу приложений, Orchestrator или виртуальную машину. Для сценариев, в которых требуется полное согласование контейнеров, обнаружение служб, автоматическое масштабирование или координированные обновления, мы рекомендуем использовать службу Kubernetes Azure (AKS).
 
 ## <a name="references"></a>Ссылки
 
+- [Что такое Kubernetes?](https://blog.newrelic.com/engineering/what-is-kubernetes/)
+- [Установка Kubernetes с помощью Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
+- [MiniKube VS DOCKER Desktop](https://medium.com/containers-101/local-kubernetes-for-windows-minikube-vs-docker-desktop-25a1c6d3b766)
+- [Инструменты Visual Studio для Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
+- [Общие сведения о бессерверном холодном запуске](https://azure.microsoft.com/blog/understanding-serverless-cold-start/)
+- [Предварительно подготовленные экземпляры функций Azure](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
+- [Создание функции в Linux из пользовательского образа](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Запуск функций Azure в контейнере DOCKER](https://markheath.net/post/azure-functions-docker)
+- [Создание функции в Linux из пользовательского образа](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Функции Azure с автомасштабированием, управляемым событиями Kubernetes](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda)
+- [Выпуск ранний](https://martinfowler.com/bliki/CanaryRelease.html)
+- [Azure Dev Spaces с VS Code](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore)
+- [Azure Dev Spaces с помощью Visual Studio](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio)
+- [AKS нескольких пулов узлов](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
+- [Автомасштабирование кластера AKS](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
+- [Руководство. масштабирование приложений в AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
+- [Масштабирование и размещение Функций Azure](https://docs.microsoft.com/azure/azure-functions/functions-scale)
 - [Документация по службе "экземпляры контейнеров Azure"](https://docs.microsoft.com/azure/container-instances/)
 - [Развертывание экземпляра контейнера из записи контроля доступа](https://docs.microsoft.com/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)
 
