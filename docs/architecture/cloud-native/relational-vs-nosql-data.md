@@ -3,12 +3,12 @@ title: Реляционные и Данные NoSQL
 description: Сведения о реляционных и NoSQL данных в облачных приложениях
 author: robvet
 ms.date: 01/22/2020
-ms.openlocfilehash: c074be0c973156c1757b97ffc727711d5dd072af
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.openlocfilehash: a2561b0abfc1975badfafeeb4fa2f2c6429814be
+ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82199991"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82507368"
 ---
 # <a name="relational-vs-nosql-data"></a>Реляционные и Данные NoSQL
 
@@ -226,7 +226,7 @@ Azure Cosmos DB предлагает пять четко определенны�
 
 **Рис. 5-16**. описание уровня согласованности Cosmos DB
 
-В статье, посвященной [9-шарикам: Cosmos DB уровнях согласованности](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Cloud Developer ликенесс Джереми, предоставляет отличное объяснение пяти моделей.
+В статье, посвященной [9-шарику: Cosmos DB уровнях согласованности](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Program Manager Джереми ликнесс (предоставляет отличное объяснение пяти моделей.
 
 ### <a name="partitioning"></a>Секционирование
 
