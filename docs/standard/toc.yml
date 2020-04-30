@@ -488,7 +488,11 @@
     - name: Потокобезопасные коллекции
       href: collections/thread-safe/
 - name: Числовые значения в .NET
-  href: numerics.md
+  items:
+    - name: Обзор
+      href: numerics.md
+    - name: Типы с поддержкой SIMD
+      href: simd.md
 - name: 'Даты, время и часовые пояса'
   href: datetime/
 - name: События
