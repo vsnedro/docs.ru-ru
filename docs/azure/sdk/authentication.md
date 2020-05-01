@@ -5,7 +5,7 @@ ms.date: 08/22/2018
 ms.custom: azure-sdk-dotnet
 ms.openlocfilehash: f6af813cd1423be8784b769b272756b2c8258392
 ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/17/2020
 ms.locfileid: "81607873"
@@ -45,7 +45,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-Строки подключения к службам используются в других службах Azure, таких как [CosmosDB,](https://docs.microsoft.com/azure/cosmos-db/) [Azure Cache для Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache)и [Service Bus.](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues) Вы можете получить эти строки с помощью портала Azure, CLI или PowerShell. Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде.
+Строки подключения службы используются в других службах Azure, таких как [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/), [Кэш Azure для Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache) и [Служебная шина Azure](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). Эти строки можно получить, воспользовавшись порталом Azure, CLI или PowerShell. Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде.
 
 В этом фрагменте кода используются библиотеки управления для создания строки подключения учетной записи хранения:
 
@@ -76,7 +76,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 
 После создания субъекта-службы выполнить аутентификацию субъекта-службы для создания и администрирования ресурсов можно двумя способами.
 
-Для обоих вариантов вам нужно будет добавить следующие пакеты NuGet в ваш проект.
+Для обоих вариантов необходимо добавить следующие пакеты NuGet в проект.
 
 ```powershell
 Install-Package Microsoft.Azure.Management.Fluent

@@ -4,21 +4,20 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - .NET Framework, development guide
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
-ms.openlocfilehash: 0500e11d2897cfa7392cc8280a0b69c5e2fc515f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 665c7843fc4a46348619bde46a8d527dfed321e4
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79181620"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81645988"
 ---
 # <a name="net-framework-development-guide"></a>Руководство по разработке для .NET Framework
+
 В этом разделе поясняются способы создания, настройки, отладки, защиты и развертывания приложений .NET Framework. В этом разделе также приводятся сведения о технологических областях, таких как динамическое программирование, взаимодействие, расширяемость, управление памятью и потоки.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Основные сведения о приложениях .NET Framework](../standard/application-essentials.md)  
- Здесь приводится информация об основных задачах разработки приложений, таких как программирование с использованием доменов приложений и сборок, использование атрибутов, форматирование и анализ базовых типов, использование коллекций, обработка событий и исключений, использование файлов и потоков данных и использование универсальных шаблонов.  
+## <a name="in-this-section"></a>В этом разделе
   
- [Данные и модели в .NET Framework](./data/index.md)  
+ [Данные и моделирование](./data/index.md)  
  Здесь приводится информация о способах доступа к данным с использованием ADO.NET, LINQ, служб данных WCF и XML.  
   
  [Разработка клиентских приложений с использованием .NET Framework](develop-client-apps.md)  

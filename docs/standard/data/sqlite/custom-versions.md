@@ -1,44 +1,44 @@
 ---
 title: Пользовательские версии SQLite
 ms.date: 12/13/2019
-description: Узнайте, как использовать пользовательскую версию собственной библиотеки SQLite.
+description: Сведения о том, как использовать настраиваемую версию нативной библиотеки SQLite.
 ms.openlocfilehash: dd27278c1dbe17b12e5067d04d19043bf259b1e8
 ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/24/2020
 ms.locfileid: "76746991"
 ---
 # <a name="custom-sqlite-versions"></a>Пользовательские версии SQLite
 
-Microsoft. Data. SQLite построен на основе Склитепклрав. Пользовательские версии библиотеки SQLite можно использовать с помощью пакета или путем настройки поставщика Склитепклрав.
+Microsoft.Data.Sqlite создана на основе SQLitePCLRaw. Чтобы использовать настраиваемые версии нативной библиотеки SQLite, примените пакет или настройте поставщик SQLitePCLRaw.
 
 ## <a name="bundles"></a>Пакеты
 
-Склитепклрав предоставляет пакеты пакетов, которые упрощают создание правильных зависимостей на разных платформах.
+SQLitePCLRaw предоставляет пакеты, которые упрощают применение правильных зависимостей на разных платформах.
 
-Основной пакет Microsoft. Data. SQLite по умолчанию переносится в Склитепклрав. bundle_e_sqlite3.
+Основной пакет Microsoft.Data.Sqlite применяет по умолчанию SQLitePCLRaw.bundle_e_sqlite3.
 
-Чтобы использовать другой набор, установите `Microsoft.Data.Sqlite.Core` пакет, а также пакет набора, который вы хотите использовать. Пакеты автоматически инициализируются с помощью Microsoft. Data. SQLite.
+Чтобы использовать другой пакет, установите вместо него пакет `Microsoft.Data.Sqlite.Core` и нужный пакет. Пакеты автоматически инициализируются пакетом Microsoft.Data.Sqlite.
 
-| Пакет | Description |
+| Пакет | Описание |
 | --- | --- |
-| Склитепклрав. bundle_e_sqlite3 | Обеспечивает последовательную версию SQLite на всех платформах. Включает расширения дерева FTS4, FTS5, JSON1 и R *. Это значение по умолчанию. |
-| Склитепклрав. bundle_green | То же, что и bundle_e_sqlite3, за исключением iOS, где она использует библиотеку System SQLite. |
-| Склитепклрав. bundle_zetetic | Использует официальные сборки СклЦифер из Зететик (не включена). |
-| Склитепклрав. bundle_winsqlite3 | Использует winsqlite3. dll, библиотеку System SQLite в Windows 10. |
-| Склитепклрав. bundle_e_sqlcipher | Предоставляет неофициальную сборку с открытым исходным кодом СклЦифер. |
+| SQLitePCLRaw.bundle_e_sqlite3 | Предоставляет согласованные версии SQLite для всех платформ. Включает расширения FTS4, FTS5, JSON1 и R*Tree. Это значение по умолчанию. |
+| SQLitePCLRaw.bundle_green | Аналогично bundle_e_sqlite3, за исключением платформы iOS, где используется системная библиотека SQLite. |
+| SQLitePCLRaw.bundle_zetetic | Использует официальные сборки SQLCipher, предоставляемые Zetetic (не входят в пакет). |
+| SQLitePCLRaw.bundle_winsqlite3 | Использует winsqlite3.dll, которая является системной библиотекой SQLite на платформе Windows 10. |
+| SQLitePCLRaw.bundle_e_sqlcipher | Предоставляет неофициальную сборку SQLCipher с открытым кодом. |
 
-Например, чтобы использовать неофициальную сборку с открытым исходным кодом для СклЦифер, используйте следующие команды.
+Например, следующие команды позволяют применять неофициальную сборку SQLCipher с открытым кодом.
 
-### <a name="net-core-clitabnetcore-cli"></a>[Интерфейс командной строки .NET Core](#tab/netcore-cli)
+### <a name="net-core-cli"></a>[Интерфейс командной строки .NET Core](#tab/netcore-cli)
 
 ```dotnetcli
 dotnet add package Microsoft.Data.Sqlite.Core
 dotnet add package SQLitePCLRaw.bundle_e_sqlcipher
 ```
 
-### <a name="visual-studiotabvisual-studio"></a>[Visual Studio](#tab/visual-studio)
+### <a name="visual-studio"></a>[Visual Studio](#tab/visual-studio)
 
 ``` PowerShell
 Install-Package Microsoft.Data.Sqlite.Core
@@ -47,14 +47,14 @@ Install-Package SQLitePCLRaw.bundle_e_sqlcipher
 
 ---
 
-## <a name="sqlitepclraw-providers"></a>Поставщики Склитепклрав
+## <a name="sqlitepclraw-providers"></a>Поставщики SQLitePCLRaw
 
-Вы можете использовать собственную сборку SQLite, используя пакет `SQLitePCLRaw.provider.dynamic_cdecl`. В этом случае вы несете ответственность за развертывание собственной библиотеки с приложением. Обратите внимание, что сведения о развертывании собственных библиотек в приложении значительно зависят от платформы и среды выполнения .NET, которые вы используете.
+Вы можете использовать собственную сборку SQLite, применяя пакет `SQLitePCLRaw.provider.dynamic_cdecl`. В этом случае вы обязаны самостоятельно развернуть нативную библиотеку вместе с приложением. Обратите внимание, что процедура развертывания нативных библиотек вместе с приложением будет существенно различаться на разных платформах .NET и в разных средах выполнения.
 
-Сначала необходимо реализовать Ижетфунктионпоинтер. Реализация является довольно тривиальной в .NET Core.
+Прежде всего нужно реализовать IGetFunctionPointer. Эта реализация создается на .NET Core достаточно просто.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/SystemLibrarySample/Program.cs?name=snippet_NativeLibraryAdapter)]
 
-Затем настройте поставщик Склитепклрав. Убедитесь, что это делается до того, как в приложении будет использоваться Microsoft. Data. SQLite. Кроме того, не используйте пакет пакета Склитепклрав, который может переопределять поставщик.
+После этого настройте поставщик SQLitePCLRaw. Это нужно выполнить до момента применения Microsoft.Data.Sqlite в приложении. Также старайтесь не использовать пакет SQLitePCLRaw, который может переопределить ваш поставщик.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/SystemLibrarySample/Program.cs?name=snippet_SetProvider)]

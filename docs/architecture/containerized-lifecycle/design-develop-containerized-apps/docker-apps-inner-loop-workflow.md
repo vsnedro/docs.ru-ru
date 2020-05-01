@@ -2,12 +2,12 @@
 title: Рабочий процесс внутреннего цикла разработки для приложений Docker
 description: Сведения о рабочем процессе "внутреннего цикла" при разработке приложений Docker.
 ms.date: 02/15/2019
-ms.openlocfilehash: 615cfd08f46609c4e100ea3e72b541fe2c1ae62a
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: bce047bd5ba75f9ef652a294ff6a15656fc5ac34
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80989016"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81738406"
 ---
 # <a name="inner-loop-development-workflow-for-docker-apps"></a>Рабочий процесс внутреннего цикла разработки для приложений Docker
 
@@ -54,7 +54,7 @@ ms.locfileid: "80989016"
 
 Кроме того, вам потребуется редактор кода для разработки приложения с помощью CLI Docker.
 
-Корпорация Майкрософт предлагает Visual Studio Code, простой редактор кода, который поддерживается в macOS, Windows и Linux. Он предоставляет технологию IntelliSense с [поддержкой множества языков](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python и большинства современных языков), возможность [отладки](https://code.visualstudio.com/Docs/editor/debugging), [интеграцию с Git](https://code.visualstudio.com/Docs/editor/versioncontrol) и [поддержку расширений](https://code.visualstudio.com/docs/extensions/overview). Это средство отлично подойдет разработчикам, использующим macOS и Linux. В Windows также можно использовать Visual Studio.
+Корпорация Майкрософт предлагает Visual Studio Code, простой редактор кода, который поддерживается в macOS, Windows и Linux. Он предоставляет технологию IntelliSense с [поддержкой множества языков](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python и большинства современных языков), возможность [отладки](https://code.visualstudio.com/Docs/editor/debugging), [интеграцию с Git](https://code.visualstudio.com/Docs/editor/versioncontrol) и [поддержку расширений](https://code.visualstudio.com/docs/extensions/overview). Это средство отлично подойдет разработчикам, использующим macOS и Linux. В Windows можно также использовать Visual Studio.
 
 > [!TIP]
 > Инструкции по установке Visual Studio Code для Windows, macOS или Linux см. на странице <https://code.visualstudio.com/docs/setup/setup-overview/>.

@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 ms.openlocfilehash: 9bf57e0f74a353fb6512a24214e9479c1d813aab
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78160213"
@@ -29,7 +29,7 @@ ms.locfileid: "78160213"
   
  , где `msxsl` является префиксом, привязанным к пространству имен `urn:schemas-microsoft-com:xslt`.  
   
- Атрибут `language` не является обязательным, но если он указан, его значение должно быть одним из следующих: `C#`, `VB`, `JScript`, `JavaScript`, `VisualBasic`или `CSharp`. Если не указан, значение по умолчанию - JScript. Атрибут `language-name` нечувствителен к регистру, так что значения «JavaScript» и «javascript» не различаются.  
+ Атрибут `language` не является обязательным, но если он указан, его значение должно быть одним из следующих: `C#`, `VB`, `JScript`, `JavaScript`, `VisualBasic` или `CSharp`. Если не указан, значение по умолчанию - JScript. Атрибут `language-name` нечувствителен к регистру, так что значения «JavaScript» и «javascript» не различаются.  
   
  Атрибут `implements-prefix` обязателен. Этот атрибут используется для объявления пространства имен и связывания его с блоком скрипта. Значением этого атрибута является префикс, соответствующий пространству имен. Пространство имен может быть определено где-то в таблице стилей.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "78160213"
   
  Функции можно объявлять внутри элемента `msxsl:script`. В следующей таблице показаны пространства имен, поддерживаемые по умолчанию. Можно использовать классы вне перечисленных пространств имен. Однако эти классы должны указываться полными именами.  
   
-|Пространства имен по умолчанию|Description|  
+|Пространства имен по умолчанию|Описание|  
 |------------------------|-----------------|  
 |Система|Системный класс.|  
 |System.Collection|Классы коллекций.|  
@@ -62,15 +62,15 @@ ms.locfileid: "78160213"
   
  Указанные аргументы и возвращаемые значения, определенные функциями скрипта, должны представлять собой один из типов XPath консорциума W3C или XSLT. В следующей таблице приведены соответствующие типы W3C, эквивалентные классы (или типы) платформы .NET Framework, а также показано, является ли тип W3C типом XPath или типом XSLT.  
   
-|Тип|Эквивалентный класс (или тип) .NET Framework|Тип XPath или тип XSLT|  
+|Type|Эквивалентный класс (или тип) .NET Framework|Тип XPath или тип XSLT|  
 |----------|----------------------------------------------|-----------------------------|  
-|String|System.String|XPath|  
-|Логическое|System.Boolean|XPath|  
-|Number|System.Double|XPath|  
+|Строка|System.String|XPath|  
+|логический|System.Boolean|XPath|  
+|Число|System.Double|XPath|  
 |Фрагмент дерева результатов|System.Xml.XPath.XPathNavigator|XSLT|  
 |Набор узлов|System.Xml.XPath.XPathNodeIterator|XPath|  
   
- Если функция скрипта использует один из числовых типов (Int16, UInt16, Int32, UInt32, Int64, UInt64, Single или Decimal), то он приводится к типу Double, который сопоставлен с числовым типом W3C XPath. Все другие типы принудительно приводятся к типу string с помощью метода `ToString`.  
+ Если функция скрипта использует один из следующих числовых типов: Int16, UInt16, Int32, UInt32, Int64, UInt64, Single или Decimal, — они приводятся к типу Double, который преобразуется в тип number W3C XPath. Все другие типы принудительно приводятся к типу string с помощью метода `ToString`.  
   
  Если функция скрипта использует тип, отличный от перечисленных выше, или функция не компилируется при загрузке таблицы стилей в объект <xref:System.Xml.Xsl.XslTransform>, возникает исключение.  
   
@@ -214,7 +214,7 @@ public class Sample
 </xsl:stylesheet>  
 ```  
   
-## <a name="output"></a>Выходные данные  
+## <a name="output"></a>Вывод  
   
 ```xml  
 <circles xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="urn:my-scripts">  
@@ -229,6 +229,6 @@ public class Sample
 </circles>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Реализация классом XslTransform XSLT-процессора](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

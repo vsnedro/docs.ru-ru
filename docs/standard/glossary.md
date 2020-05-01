@@ -3,12 +3,12 @@ title: Глоссарий по .NET
 description: Узнайте значение выбранных терминов, используемых в документации по .NET.
 ms.date: 01/22/2019
 ms.technology: dotnet-standard
-ms.openlocfilehash: d8f16579ea4dcbc9260aac83e16d3fbd30db519c
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: e7608ee7e68300d691df51aed923db0e8b518165
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635584"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102480"
 ---
 # <a name="net-glossary"></a>Глоссарий по .NET
 
@@ -57,6 +57,9 @@ ms.locfileid: "80635584"
 ## <a name="corefx"></a>CoreFX
 
 Библиотека базовых классов .NET Core (BCL)
+
+> [!TIP]
+> *Fx*  означает *framework*.
 
 Набор библиотек, которые составляют пространства имен System.\* (и в некоторой степени Microsoft.\*). BCL — это универсальная платформа низкого уровня, которая является основой платформ приложений более высокого уровня, например ASP.NET Core. Исходный код BCL .NET Core содержится в [репозитории .NET Core](https://github.com/dotnet/runtime). Но большая часть API-интерфейсов .NET Core также доступна в .NET Framework, поэтому CoreFX можно представить как ветвь BCL .NET Framework.
 

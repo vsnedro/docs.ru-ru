@@ -4,7 +4,7 @@ ms.date: 03/30/2017
 ms.assetid: 9d824e16-08d1-4a36-bc7f-2388c1f75f34
 ms.openlocfilehash: e5dcc9ec7cf6f996c97262b14020552286c530da
 ms.sourcegitcommit: da2dd2772fcf32b44eb18b1cbe8affd17b1753c9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/27/2019
 ms.locfileid: "71353143"
@@ -25,7 +25,7 @@ ms.locfileid: "71353143"
 
 ### <a name="to-build-the-sample-using-visual-studio"></a>Сборка образца с использованием Visual Studio
 
-1. Откройте проводник и перейдите к одному из вложенных каталогов, относящихся к конкретному языку, для примера.
+1. Откройте File Explorer и перейдите к вложенной папке для данного образца, соответствующей выбранному языку.
 
 2. Дважды щелкните значок файла SerializationCS.sln, SerializationJSL.sln или SerializationVB.sln file, в зависимости от выбранного языка программирования, чтобы открыть файл в Visual Studio.
 
@@ -72,11 +72,11 @@ Serialize.exe -sb Test.bin 10000 >somefile.txt
 
 - Сериализация во время выполнения
 
-  - <xref:System.Runtime.Serialization.IFormatter> используется для ссылки на объект <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> или <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>.
+  - <xref:System.Runtime.Serialization.IFormatter> Используется для ссылки на объект <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> или <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>.
 
-  - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> используется для сериализации связанного списка в поток в двоичном формате. Двоичный модуль форматирования использует формат, который понятен только типу <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Однако данные являются краткими.
+  - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> Используется для сериализации связанного списка в поток в двоичном формате. Двоичный модуль форматирования использует формат, который понятен только типу <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Однако данные являются краткими.
 
-  - <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> используется для сериализации связанного списка в поток в формате SOAP. SOAP является стандартным форматом.
+  - <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> Используется для сериализации связанного списка в поток в формате SOAP. SOAP является стандартным форматом.
 
 - Потоковый ввод-вывод
 

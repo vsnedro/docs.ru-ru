@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
 ms.openlocfilehash: a781d543dd32ffb3d0ac0b11c544dbfd8cd5d806
 ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74348557"
 ---
-# <a name="-resource-visual-basic"></a>-Resource (Visual Basic)
+# <a name="-resource-visual-basic"></a>-resource (Visual Basic)
 Внедряет управляемый ресурс в сборку.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,7 +25,7 @@ ms.locfileid: "74348557"
 -resource:filename[,identifier[,public|private]]  
 ```
 
-или  
+or  
 
 ```console
 -res:filename[,identifier[,public|private]]  
@@ -35,20 +35,20 @@ ms.locfileid: "74348557"
   
 |Термин|Определение|  
 |---|---|  
-|`filename`|Обязательно. Имя файла ресурсов, который необходимо внедрить в выходной файл. По умолчанию `filename` является общедоступной в сборке. Заключите имя файла в кавычки (""), если оно содержит пробел.|  
-|`identifier`|Необязательный элемент. Логическое имя для ресурса; имя, используемое для его загрузки. По умолчанию используется имя файла. При необходимости можно указать, является ли ресурс открытым или закрытым в манифесте сборки, как показано ниже: `-res:filename.res, myname.res, public`|  
+|`filename`|Обязательный. Имя файла ресурсов, который вам нужно внедрить в выходной файл. По умолчанию `filename` в сборке является общедоступным. Если имя файла содержит пробел, заключите это имя в кавычки (" ").|  
+|`identifier`|Необязательный элемент. Логическое имя ресурса, которое используется для его загрузки. По умолчанию используется имя файла. При необходимости в манифесте сборки можно указать, является ли ресурс общедоступным или частным, например так: `-res:filename.res, myname.res, public`.|  
   
 ## <a name="remarks"></a>Примечания  
- Используйте `-linkresource`, чтобы связать ресурс со сборкой без помещения файла ресурсов в выходной файл.  
+ Используйте `-linkresource`, чтобы связать ресурс со сборкой без размещения файла ресурсов в выходном файле.  
   
- Если `filename` является файлом ресурсов .NET Framework, который создается, например, программой [Resgen. exe (генератор файлов ресурсов)](../../../framework/tools/resgen-exe-resource-file-generator.md) или в среде разработки, доступ к нему можно получить с помощью членов пространства имен <xref:System.Resources> (Дополнительные сведения см. в разделе <xref:System.Resources.ResourceManager>). Чтобы получить доступ ко всем остальным ресурсам во время выполнения, используйте один из следующих методов: <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>, <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>или <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>.  
+ Если `filename` — файл ресурса .NET Framework, созданный генератором файлов ресурсов ([Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md)) или в среде разработки, то к нему можно обращаться с помощью элементов пространства имен <xref:System.Resources> (дополнительные сведения см. в статье о классе <xref:System.Resources.ResourceManager>). Для доступа ко всем остальным ресурсам во время выполнения используйте следующие методы: <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>, <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> и <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>.  
   
  Краткой формой `-resource` является `-res`.  
   
- Сведения о том, как задать `-resource` в интегрированной среде разработки Visual Studio, см. в разделе [Управление ресурсами приложения (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
+ Дополнительные сведения о настройке `-resource` в интегрированной среде разработки Visual Studio см. в статье [об управлении ресурсами приложения в .NET](/visualstudio/ide/managing-application-resources-dotnet).  
   
 ## <a name="example"></a>Пример  
- Следующий код компилирует `In.vb` и присоединяет `Rf.resource`файла ресурсов.  
+ Следующий код компилирует `In.vb` и присоединяет файл ресурсов `Rf.resource`.  
   
 ```console
 vbc -res:rf.resource in.vb  
@@ -59,5 +59,5 @@ vbc -res:rf.resource in.vb
 - [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)
 - [-linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md)
-- [-Target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
 - [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

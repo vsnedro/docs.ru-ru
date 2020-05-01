@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
 ms.openlocfilehash: f7df323dacfbee3361fe75d831f1e87df328b194
 ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "80989224"
@@ -166,7 +166,7 @@ internal class DelegateTest {
   
 - [Типы значений, используемые в вызове неуправляемого кода](#value-types-used-in-platform-invoke)  
   
-- [Типы значений, используемые во COM-взаимодействии](#value-types-used-in-com-interop)  
+- [Типы значений, используемые в COM-взаимодействии](#value-types-used-in-com-interop)  
   
  Кроме описания форматированных типов, в этом разделе определяются [системные типы значений](#system-value-types), имеющие нестандартное поведение маршалинга.  
   
@@ -346,7 +346,7 @@ interface _Graphics {
 }  
 ```  
   
- Те же самые правила, которые используются для маршалинга значений и ссылок в вызовы неуправляемого кода, применяются и при маршалинге через COM-интерфейсы. Например, когда экземпляр типа значения `Point` передается из .NET Framework в COM, `Point` передается по значению. Если тип значения `Point` передается по ссылке, указатель на `Point` передается в стеке. Упаковщик взаимодействия не поддерживает более высокие уровни косвенного обращения (**Point ** \*\*) в любом направлении.  
+ Те же самые правила, которые используются для маршалинга значений и ссылок в вызовы неуправляемого кода, применяются и при маршалинге через COM-интерфейсы. Например, когда экземпляр типа значения `Point` передается из .NET Framework в COM, `Point` передается по значению. Если тип значения `Point` передается по ссылке, указатель на `Point` передается в стеке. Упаковщик взаимодействия не поддерживает более высокие уровни косвенного обращения (**Point** \*\*) в любом направлении.  
   
 > [!NOTE]
 > Структуры, для которых значение перечисления <xref:System.Runtime.InteropServices.LayoutKind> установлено равным **Explicit**, не могут использоваться в COM-взаимодействии, так как экспортированная библиотека типов не может представлять явное размещение.  
@@ -376,9 +376,9 @@ interface _Graphics {
   
 |Системный тип значения|Тип IDL|  
 |-----------------------|--------------|  
-|<xref:System.DateTime?displayProperty=nameWithType>|**Дата**|  
-|<xref:System.Decimal?displayProperty=nameWithType>|**Десятичных**|  
-|<xref:System.Guid?displayProperty=nameWithType>|**Guid**|  
+|<xref:System.DateTime?displayProperty=nameWithType>|**DATE**|  
+|<xref:System.Decimal?displayProperty=nameWithType>|**DECIMAL**|  
+|<xref:System.Guid?displayProperty=nameWithType>|**GUID**|  
 |<xref:System.Drawing.Color?displayProperty=nameWithType>|**OLE_COLOR**|  
   
  В приведенном ниже коде показано определение неуправляемых типов **DATE**, **GUID**, **DECIMAL** и **OLE_COLOR** в библиотеке типов Stdole2.  

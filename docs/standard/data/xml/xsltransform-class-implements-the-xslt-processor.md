@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 88373fe2-4a6b-44f9-8a62-8a3e348e3a46
 ms.openlocfilehash: 73a432db9a3fcb6587184e27e6dfe9ba49010e92
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75709612"
@@ -80,7 +80,7 @@ public void Load(XPathNavigator, XmlResolver, Evidence);
 
 Сведения об уровнях безопасности и свидетельстве, а также об их влиянии на функцию `document()` см. в статье [Разрешение внешних таблиц стилей XSLT и документов](../../../../docs/standard/data/xml/resolving-external-xslt-style-sheets-and-documents.md).
 
-Таблицу стилей можно предоставить с рядом входных параметров. Таблица стилей может также вызывать функции в объектах расширения. Как параметры, так и объекты расширения предоставляются таблице стилей с помощью объекта <xref:System.Xml.Xsl.XsltArgumentList>. Дополнительные сведения о <xref:System.Xml.Xsl.XsltArgumentList> см. в разделе <xref:System.Xml.Xsl.XsltArgumentList>.
+Таблицу стилей можно предоставить с рядом входных параметров. Таблица стилей может также вызывать функции в объектах расширения. Как параметры, так и объекты расширения предоставляются таблице стилей с помощью объекта <xref:System.Xml.Xsl.XsltArgumentList>. Дополнительные сведения о веб-службе <xref:System.Xml.Xsl.XsltArgumentList> см. в разделе <xref:System.Xml.Xsl.XsltArgumentList>.
 
 ## <a name="recommended-secure-use-of-xsltransform-class"></a>Рекомендованное безопасное использование класса XslTransform
 
@@ -178,7 +178,7 @@ Console.WriteLine("Passing " + tmpDoc.OuterXml + " to print_root.xsl");
 xslt.Transform(tmpDoc, null, Console.Out, null);
 ```
 
-В этом примере в качестве входных данных используются файлы Library. XML и print_root. xsl. в консоль выводится следующее:
+Пример использует в качестве входных данных файлы library.xml и print_root.xsl и выводит на консоль следующее:
 
 ```console
 Passing <book genre="novel" ISBN="1-861001-57-5"><title>Pride And Prejudice</title></book> to print_root.xsl
@@ -235,7 +235,7 @@ print_root.xsl
 
 Свойство <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A?displayProperty=nameWithType> в платформе .NET Framework версии 1.1 является устаревшим. Используйте вместо него новые перегрузки <xref:System.Xml.Xsl.XslTransform.Transform%2A>, принимающие объект <xref:System.Xml.XmlResolver>.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Xsl.XslTransform>
 - [XSLT-преобразования с помощью класса XslTransform](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)

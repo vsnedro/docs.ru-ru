@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 287129c8-035a-4fea-b7b3-4790057ca076
 ms.openlocfilehash: c24ba466a208fe5abdbf565169c41c4ee3f47482
 ms.sourcegitcommit: f8c36054eab877de4d40a705aacafa2552ce70e9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/31/2019
 ms.locfileid: "75559902"
@@ -23,7 +23,7 @@ ms.locfileid: "75559902"
 
 1. Постройте <xref:System.Xml.Serialization.XmlSerializer> с использованием типа сериализуемого объекта.
 
-1. Вызовите метод <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A>, чтобы создать реплику объекта. При десериализации возвращаемый объект необходимо привести к типу исходного объекта, как показано в следующем примере, который десериализует объект из файла (хотя его также можно десериализовать из потока).
+1. Вызовите метод <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A>, чтобы создать реплику объекта. При десериализации следует приводить возвращенный объект к типу исходного, как показано в следующем примере, десериализующем объект из файла (хотя его также можно десериализовать из потока).
 
     ```vb
     ' Construct an instance of the XmlSerializer with the type
@@ -46,7 +46,7 @@ ms.locfileid: "75559902"
     var myObject = (MySerializableClass) mySerializer.Deserialize(myFileStream)
     ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Введение в сериализацию XML](introducing-xml-serialization.md)
 - [Практическое руководство. Сериализация объекта](how-to-serialize-an-object.md)

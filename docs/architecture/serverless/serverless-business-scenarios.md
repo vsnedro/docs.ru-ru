@@ -1,101 +1,122 @@
 ---
 title: Примеры бизнес-сценариев и вариантов использования бессерверных приложений
-description: Ознакомьтесь с бессерверными приложениями на базе практического подхода благодаря доступу к примерам, которые варьируются от обработки изображений до мобильных серверных частей и конвейеров извлечения, преобразования и загрузки (ETL).
+description: Ознакомьтесь с бессерверными технологиями, изучая конкретные примеры для разных сценариев — от обработки изображений до поддержки мобильных устройств и конвейеров ETL (извлечения, преобразования и загрузки).
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 06/26/2018
-ms.openlocfilehash: 5f0d7a4c5cd736d1168ec76c1c0ea19627505f15
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 04/17/2020
+ms.openlocfilehash: 3cb3b73325fccc327ccf17f7298048f2eeb3577a
+ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76787896"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82158454"
 ---
 # <a name="serverless-business-scenarios-and-use-cases"></a>Бессерверные сценарии и варианты использования для бизнеса
 
 Существует множество вариантов использования и сценариев применения бессерверных приложений. В этой главе содержатся примеры, иллюстрирующие различные сценарии. Сценарии содержат ссылки на связанные документы и общедоступные репозитории исходного кода. Примеры в этой главе позволяют приступить к созданию и реализации собственных бессерверных решений.
 
-## <a name="analyze-and-archive-images"></a>Анализ и архивирование изображений
+## <a name="big-data-processing"></a>Обработка больших данных
 
-В этом примере демонстрируются бессерверные события (Сетка событий), рабочие процессы (приложение логики) и код (Функции Azure). Здесь также показано, как интегрироваться с другим ресурсом (в данном случае с Cognitive Services для анализа изображений).
+![Схема сопоставления и редукции](https://docs.microsoft.com/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/media/mapreducearchitecture.png)
 
-Консольное приложение позволяет передавать ссылку на URL-адрес в Интернете. Приложение публикует URL-адрес как сообщение сетки событий. Параллельно бессерверное приложение-функция и приложение логики подписываются на сообщение. Бессерверное приложение-функция сериализует изображение в хранилище BLOB-объектов. Оно также сохраняет информацию в Хранилище таблиц Azure. Метаданные хранят исходный URL-адрес изображения и имя большого двоичного объекта с изображением. Приложение логики взаимодействует с API Пользовательского визуального распознавания для анализа изображения и создания генерируемого компьютером заголовка. Заголовок хранится в таблице метаданных.
+В этом примере бессерверная операция используется для сопоставления и редукции большого набора данных. Он определяет среднюю скорость такси для ежедневных поездок за 2017 год.
 
-![Архитектура решения для анализа и архивирования изображений](./media/image-processing-example.png)
+[Обработка больших данных. Бессерверная операция MapReduce в Azure](https://docs.microsoft.com/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
 
-Отдельное одностраничное приложение (SPA) вызывает бессерверную функцию для получения списка изображений и метаданных. Для каждого изображения вызывается другая функция, которая доставляет данные изображения из архива. Окончательный результат — коллекция с автоматически созданными заголовками.
+## <a name="create-serverless-applications-hands-on-lab"></a>Создание бессерверных приложений (практическое занятие)
 
-![Автоматизированная коллекция изображений](./media/automated-image-gallery.png)
+Узнайте, как с помощью функций выполнять логику сервера и создавать бессерверные архитектуры.
 
-Полный репозиторий и инструкции по созданию приложения логики доступны здесь: [Event-Grid-Glue](https://github.com/JeremyLikness/Event-Grid-Glue) (Приложение Event-Grid-Glue).
+- Выбор лучшей службы Azure для вашего бизнеса
+- Создание Функций Azure
+- Использование триггеров
+- Цепочка функций
+- Длительные рабочие процессы
+- Мониторинг
+- Разработка, тестирование и развертывание
 
-## <a name="cross-platform-mobile-client-using-xamarinforms-and-functions"></a>Кроссплатформенный мобильный клиент, использующий Xamarin.Forms и функции
+[Создание бессерверных приложений](https://docs.microsoft.com/learn/paths/create-serverless-applications/)
 
-Узнайте, как реализовать простую бессерверную функцию Azure на веб-портале Azure или в Visual Studio. Выполните сборку клиента с помощью клиента Xamarin.Forms, работающего в Android, iOS и Windows. После этого приложение будет оптимизировано для использования JSON в качестве формата для передачи данных между сервером и мобильными клиентами с бессерверной частью.
+## <a name="customer-reviews"></a>Отзывы пользователей
 
-Дополнительные сведения см. в статье [Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/) (Реализация простой функции Azure с помощью клиента Xamarin.Forms).
+В этом примере демонстрируются новые инструменты Функций Azure работы для работы с библиотеками классов C# в Visual Studio. Создайте веб-сайт, на котором пользователи оставляют отзывы о продуктах, сохраняя данные в хранилище BLOB-объектов Azure и CosmosDB. Добавьте функцию Azure для автоматизированной модерации отзывов пользователей с помощью Azure Cognitive Services. Примените очередь службы хранилища Azure, чтобы отделить веб-сайт от функции.
 
-## <a name="generate-a-photo-mosaic-with-serverless-image-recognition"></a>Создание фотомозаики с помощью бессерверного распознавания изображений
+[Приложение для сбора отзывов пользователей на основе Cognitive Services](https://docs.microsoft.com/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
 
-В примере используются Функции Azure и служба "Пользовательское визуальное распознавание" Microsoft Cognitive Services для создания фотомозаики на основе входного изображения. Модель обучена для распознавания изображений. После передачи изображения модель распознает его и выполняет поиск с помощью Bing. Исходное изображение повторно составляется на основе результатов поиска.
+## <a name="docker-linux-image-support"></a>Поддержка образа Docker для Linux
 
-![Фото и мозаика колеса обозрения Orlando Eye](./media/orlando-eye-both.png)
+В этом примере показано, как создать `Dockerfile` для сборки и выполнения Функций Azure в контейнере Docker на платформе Linux.
 
-Например, вы можете обучить модель на базе достопримечательностей в Орландо, например, колеса обозрения Orlando Eye. Пользовательское визуальное распознавание распознает изображение колеса обозрения Orlando Eye, и функция создаст фотомозаику на основе результатов поиска изображений в Bing для Orlando Eye.
+[Функции Azure в Linux](https://docs.microsoft.com/samples/azure-samples/functions-linux-custom-image/azure-functions-on-linux-custom-image-tutorial-sample-project/)
 
-Дополнительные сведения см. в статье о [генераторе фотомозаики с использованием Функций Azure](https://github.com/Azure-Samples/functions-dotnet-photo-mosaic).
+## <a name="file-processing-and-validation"></a>Обработка и проверка файлов
 
-## <a name="migrate-an-existing-application-to-the-cloud"></a>Перенос существующего приложения в облако
+В этом примере выполняется синтаксический анализ набора CSV-файлов, которые могли быть получены от пользователей. В примере проверяется готовность всех необходимых файлов для пакета, а затем проверяется структуру каждого из этих файлов. Здесь представлены разные решения на основе Функций Azure, Logic Apps и Устойчивых функций.
 
-Как обсуждалось в предыдущих главах, для размещения приложения в локальной среде обычно используется n-уровневая архитектура. Несмотря на то что перенос ресурсов методом "как есть" с помощью виртуальных машин — это наименее рискованный путь перехода к облаку, многие компании выполняют рефакторинг своих приложений. К счастью, рефакторинг не обязательно должен выполняться по принципу"все или ничего". На самом деле, можно перенести приложение, а затем поэтапно заменить компоненты облачными аналогами.
+[Обработка и проверка файлов с помощью Функций Azure, Logic Apps и Устойчивых функций](https://docs.microsoft.com/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
 
-Приложение использует возможность "Прокси-серверы Функций Azure" для обеспечения рефакторинга конечной точки с устаревшего локального кода на бессерверную конечную точку.
+## <a name="game-data-visualization"></a>Визуализация игровых данных
 
-![Архитектура миграции](./media/migration-architecture.png)
+![Телеметрия игр](https://docs.microsoft.com/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/media/points.png)
 
-Прокси-сервер предоставляет одну конечную точку API, которая обновляется для перенаправления отдельных запросов при их перемещении в бессерверные функции.
+Пример того, как разработчик может реализовать в игре решение для визуализации данных в редакторе. Что интересно, подключаемые модули Unreal Engine 4 и Unity используют именно этот пример в качестве основы для серверной части. Компонент службы не имеет никаких сведений о ядре игры.
 
-Вы можете просмотреть видео, которое разъясняет всю миграцию: [Azure: Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/Events/Connect/2017/E102) (Перенос приложения в облако с помощью бессерверных Функций Azure). Получите доступ к примеру кода по этой ссылке: [перенос собственного приложения](https://github.com/JeremyLikness/bring-own-app-connect-17).
+[Визуализация телеметрии игры в редакторе](https://docs.microsoft.com/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
 
-## <a name="parse-a-csv-file-and-insert-into-a-database"></a>Анализ CSV-файла и вставка в базу данных
+## <a name="graphql"></a>GraphQL
 
-Извлечение, преобразование и загрузка (ETL) — это обычная бизнес-функция, которая интегрирует разные системы. Традиционные подходы часто подразумевают настройку выделенных FTP-серверов, а затем развертывание запланированных заданий для анализа файлов и их преобразования для использования в бизнесе. Бессерверная архитектура упрощает задание, так как триггер может срабатывать при передаче файла. Функции Azure выполняют такие задачи, как ETL, с помощью идеальной композиции небольших фрагментов кода, которые сосредоточены на конкретной проблеме.
+Создание бессерверной функции, которая предоставляет API GraphQL.
 
-![Снимок экрана, показывающий процесс синтаксического анализа CSV-файла.](./media/serverless-business-scenarios/csv-parse-database-import.png)
+[Бессерверные функции для GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
 
-Исходный код и практическое занятие можно найти в [этой статье](https://github.com/JeremyLikness/azure-fn-file-process-hol).
+## <a name="internet-of-things-iot-reliable-edge-relay"></a>Надежный пограничный ретранслятор для Интернета вещей
 
-## <a name="shorten-links-and-track-metrics"></a>Сокращение ссылок и отслеживание метрик
+![Архитектура Интернета вещей](https://docs.microsoft.com/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/media/architecture.png)
 
-Средства сокращения ссылок первоначально помогали кодировать URL-адреса в коротких публикациях в Twitter, чтобы соблюдать ограничение в 140 символов. Теперь они охватывают несколько областей применения. Чаще всего они используются для отслеживания переходов по ссылкам для аналитики. Сценарий сокращения ссылок — это полностью бессерверное приложение, которое управляет ссылками и сообщает метрики.
+В этом примере реализован новый протокол связи, который обеспечивает надежную передачу данных от устройств Интернета вещей к концентратору. Он автоматизирует обнаружение и заполнение пропусков в данных.
 
-Функции Azure используются для одностраничных приложений (SPA), позволяющих вставлять длинные и создавать короткие URL-адреса. URL-адреса помечаются тегами для отслеживания кампаний (тем) и сред передачи (например, социальные сети, в которых публикуются ссылки). Короткий код хранится в Хранилище таблиц Azure в виде ключа с длинным URL-адресом в качестве значения. При щелчке короткой ссылки другая функция ищет длинный URL-адрес, отправляет перенаправление и помещает сведения о событии в очередь. Другая функция Azure обрабатывает очередь и помещает сведения в Azure Cosmos DB.
+[Надежный пограничный ретранслятор для Интернета вещей](https://docs.microsoft.com/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
 
-![Архитектура сокращения ссылок](./media/link-shortener-architecture.png)
+## <a name="microservices-reference-architecture"></a>Эталонная архитектура микрослужб
 
-Затем можно создать панель мониторинга Power BI для анализа собираемых данных. В серверной части Application Insights предоставляет важные метрики. Данные телеметрии включают в себя время перенаправления для обычного пользователя и время получения доступа к Хранилищу таблиц Azure.
+![Эталонная архитектура](https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/media/macro-architecture.png)
 
-![Пример Power BI](./media/power-bi-example.png)
+Эталонная архитектура, в которой описан процесс принятия решений по проектированию, разработке и доставке приложения Rideshare, создаваемого вымышленной компанией Relecloud. Здесь представлены практические инструкции по настройке и развертыванию всех компонентов архитектуры.
 
-Полный репозиторий с примерами сокращения ссылок и инструкциями можно найти здесь: [Azure Functions App for URL Shortening](https://github.com/jeremylikness/serverless-url-shortener) (Приложение Функций Azure для сокращения URL-адресов). Более простую версию можно прочитать здесь: [Azure Storage for Serverless .NET Apps in Minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/) (Краткое руководство по службе хранилища Azure для бессерверных приложений .NET).
+[Эталонная архитектура бессерверных микрослужб](https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
-## <a name="verify-device-connectivity-using-a-ping"></a>Проверка подключения к устройству с помощью проверки связи
+## <a name="migrate-console-apps-to-serverless"></a>Миграция консольных приложений на бессерверные технологии
 
-Пример состоит из Центра Интернета вещей Azure и функции Azure. Новое сообщение в Центре Интернета вещей активирует функцию Azure. Бессерверный код отправляет то же содержимое сообщения обратно на устройство, которое его отправило. Проект содержит весь код и конфигурацию развертывания, необходимые для решения.
+Этот пример представляет собой универсальную функцию (`.csx` файл), которую можно использовать для преобразования любого консольного приложения в веб-службу HTTP, размещенную в Функциях Azure. Все, что нужно сделать, — это изменить файл конфигурации и указать входные параметры для передачи в качестве аргументов в `.exe`.
 
-Дополнительные сведения о проверке связи с помощью Центра Интернета вещей Azure см. в [этой статье](https://github.com/Azure-Samples/iot-hub-node-ping).
+[Запуск консольных приложений в Функциях Azure](https://docs.microsoft.com/samples/azure-samples/functions-dotnet-migrating-console-apps/run-console-apps-on-azure-functions/)
+
+## <a name="serverless-for-mobile"></a>Бессерверные технологии для мобильных приложений
+
+Функции Azure очень легко реализовать и обслуживать, а также они поддерживают доступ по протоколу HTTP. Это отличная основа для реализации API для мобильного приложения. Корпорация Майкрософт предоставляет отличные кроссплатформенные средства для платформ iOS, Android и Windows с Xamarin. Это означает, что Функции Azure и Xamarin отлично работают вместе. В этой статье показано, как реализовать функцию Azure с помощью портала Azure или Visual Studio, а затем создать кросс-платформенный клиент на основе Xamarin.Forms, который будет работать в Android, iOS и Windows.
+
+[Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/) (Реализация простой функции Azure с помощью клиента Xamarin.Forms)
+
+## <a name="serverless-messaging"></a>Обмен сообщениями без использования сервера
+
+В этом примере показано, как использовать шаблон развертывания в Устойчивых функциях для загрузки произвольного числа сообщений в любое количество сеансов или секций. Он поддерживает работу со Служебной шиной, Центрами событий или очередями службы хранилища. Также этот пример позволяет добавить возможность использовать эти сообщения с другой функцией Azure и загружать полученные данные о времени выполнения в другой концентратор событий. Затем данные принимаются в службы аналитики, например в Обозреватель данных Azure.
+
+[Создание и использование сообщений в Функциях Azure с помощью Служебной шины, Центров событий и очередей службы хранилища](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
 
 ## <a name="recommended-resources"></a>Рекомендуемые ресурсы
 
-- [Статья о генераторе фотомозаики с использованием Функций Azure](https://github.com/Azure-Samples/functions-dotnet-photo-mosaic)
-- [Проверка связи с Центром Интернета вещей Azure](https://github.com/Azure-Samples/iot-hub-node-ping)
-- [Краткое руководство по службе хранилища Azure для бессерверных приложений .NET](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/)
-- [Статья о переносе собственного приложения в Azure](https://github.com/JeremyLikness/bring-own-app-connect-17)
-- [Статья об использовании Функций Azure для обработки CSV-файла и импорта данных в SQL Azure](https://github.com/JeremyLikness/azure-fn-file-process-hol)
-- [Пример приложения Event-Grid-Glue](https://github.com/JeremyLikness/Event-Grid-Glue)
+- [Функции Azure в Linux](https://docs.microsoft.com/samples/azure-samples/functions-linux-custom-image/azure-functions-on-linux-custom-image-tutorial-sample-project/)
+- [Обработка больших данных. Бессерверная операция MapReduce в Azure](https://docs.microsoft.com/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
+- [Создание бессерверных приложений.](https://docs.microsoft.com/learn/paths/create-serverless-applications/)
+- [Приложение для сбора отзывов пользователей на основе Cognitive Services](https://docs.microsoft.com/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
+- [Обработка и проверка файлов с помощью Функций Azure, Logic Apps и Устойчивых функций](https://docs.microsoft.com/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
 - [Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/) (Реализация простой функции Azure с помощью клиента Xamarin.Forms)
-- [Azure: Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/Events/Connect/2017/E102) (Перенос приложения в облако с помощью бессерверных Функций Azure)
-- [Azure Functions App for URL Shortening](https://github.com/jeremylikness/serverless-url-shortener) (Приложение Функций Azure для сокращения URL-адресов)
+- [Визуализация телеметрии игры в редакторе](https://docs.microsoft.com/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
+- [Надежный пограничный ретранслятор для Интернета вещей](https://docs.microsoft.com/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
+- [Создание и использование сообщений в Функциях Azure с помощью Служебной шины, Центров событий и очередей службы хранилища](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
+- [Запуск консольных приложений в Функциях Azure](https://docs.microsoft.com/samples/azure-samples/functions-dotnet-migrating-console-apps/run-console-apps-on-azure-functions/)
+- [Бессерверные функции для GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
+- [Эталонная архитектура бессерверных микрослужб](https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
 >[!div class="step-by-step"]
 >[Назад](orchestration-patterns.md)

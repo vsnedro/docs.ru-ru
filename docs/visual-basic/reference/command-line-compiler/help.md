@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: eb984aa5-ac98-4d0b-a0d2-24238d7bc8dc
 ms.openlocfilehash: 6013b92206e00a77a8ca30d38846c87372c3873e
 ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74344271"
@@ -25,17 +25,17 @@ ms.locfileid: "74344271"
 -help  
 ```
 
-или  
+or  
 
 ```console
 -?  
 ```  
   
 ## <a name="remarks"></a>Примечания  
- Если включить этот параметр в компиляцию, выходной файл не создается и компиляция не происходит.  
+ Если этот параметр включен при компиляции, выходной файл не создается и компиляция не выполняется.  
   
 > [!NOTE]
-> Параметр `-help` недоступен в среде разработки Visual Studio; Он доступен только при компиляции из командной строки.  
+> Параметр `-help` недоступен в среде разработки Visual Studio. Он доступен только при компиляции из командной строки.  
   
 ## <a name="example"></a>Пример  
  Следующий код выводит справку из командной строки.  

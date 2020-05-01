@@ -8,13 +8,13 @@ helpviewer_keywords:
 ms.assetid: 140381b8-dc96-4ad5-ae11-792c9ed0be4d
 ms.openlocfilehash: db6b047f521d8ef44d2bd1b70b654a4233ebb1a7
 ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74347909"
 ---
 # <a name="-nostdlib-visual-basic"></a>-nostdlib (Visual Basic)
-Приводит к тому, что компилятор не будет автоматически ссылаться на стандартные библиотеки.  
+Указывает компилятору не ссылаться автоматически на стандартные библиотеки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -22,17 +22,17 @@ ms.locfileid: "74347909"
 -nostdlib  
 ```  
   
-## <a name="remarks"></a>Заметки  
- Параметр `-nostdlib` удаляет автоматическую ссылку на сборку System. dll и запрещает компилятору считывать файл Vbc. rsp. Файл Vbc. rsp, расположенный в том же каталоге, что и файл Vbc. exe, ссылается на часто используемые .NET Framework сборки и импортирует `System` и `Microsoft.VisualBasic` пространства имен.  
+## <a name="remarks"></a>Примечания  
+ Параметр `-nostdlib` удаляет автоматическую ссылку на сборку System.dll и запрещает компилятору считывать файл Vbc.rsp. Файл Vbc.rsp, расположенный в том же каталоге, что и файл Vbc.exe, ссылается на часто используемые сборки .NET Framework и импортирует пространства имен `System` и `Microsoft.VisualBasic`.  
   
 > [!NOTE]
-> Ссылки на сборки mscorlib. dll и Microsoft. VisualBasic. dll всегда существуют.  
+> При этом компилятор всегда ссылается на сборки Mscorlib.dll и Microsoft.VisualBasic.dll.  
   
 > [!NOTE]
-> Параметр `-nostdlib` недоступен в среде разработки Visual Studio; Он доступен только при компиляции из командной строки.  
+> Параметр `-nostdlib` недоступен в среде разработки Visual Studio. Он доступен только при компиляции из командной строки.  
   
 ## <a name="example"></a>Пример  
- Следующий код компилирует `T2.vb` без ссылок на стандартные библиотеки. Необходимо присвоить константе условной компиляции `_MYTYPE` строку "Empty", чтобы удалить объект `My`.  
+ Следующий код компилирует `T2.vb` без создания ссылок на стандартные библиотеки. Необходимо присвоить константе условной компиляции `_MYTYPE` строку Empty, чтобы удалить объект `My`.  
   
 ```console
 vbc -nostdlib -define:_MYTYPE=\"Empty\" T2.vb  

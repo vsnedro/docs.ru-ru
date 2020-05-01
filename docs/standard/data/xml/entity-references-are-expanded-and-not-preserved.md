@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: ffd97806-ab43-4538-8de2-5828bfbbde57
 ms.openlocfilehash: ae3db77d7659b7e1d36a9bccf7143f52c536dbbf
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710938"
@@ -13,7 +13,7 @@ ms.locfileid: "75710938"
 # <a name="entity-references-are-expanded-and-not-preserved"></a>Разворачиваемые и не сохраняемые ссылки на сущности
 Если ссылка на сущность разворачивается и заменяется текстом, который она представляет, узел **XmlEntityReference** не создается. Вместо этого выполняется синтаксический анализ для декларации сущности и на место **XmlEntityReference** копируются узлы, созданные из содержимого этой декларации. Таким образом, в примере `&publisher;` ссылка `&publisher;` не сохраняется, а вместо нее создается узел **XmlText**.  
   
- ![развернутая древовидная структура](../../../../docs/standard/data/xml/media/xmlentityref-expanded-nodes.gif "xmlentityref_expanded_nodes")  
+ ![развернутая структура дерева](../../../../docs/standard/data/xml/media/xmlentityref-expanded-nodes.gif "xmlentityref_expanded_nodes")  
 Древовидная структура для разворачиваемых ссылок на сущности  
   
  Сущности-символы, такие как `B` и `<`, не сохраняются. Вместо этого они всегда разворачиваются и представляются в виде текстовых узлов.  
@@ -38,6 +38,6 @@ ms.locfileid: "75710938"
   
  Если используется модуль чтения, который не умеет разрешать сущности, метод **Load** создает исключение, когда обнаруживает ссылку на сущность.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

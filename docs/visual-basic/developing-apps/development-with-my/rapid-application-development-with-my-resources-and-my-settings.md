@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
 ms.openlocfilehash: ce9a5bf76ba3132f58aa40227a145d8b5bf1591d
 ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74349266"
@@ -20,13 +20,13 @@ ms.locfileid: "74349266"
   
 ## <a name="retrieving-resources"></a>Извлечение ресурсов  
 
- С помощью объекта `My.Resources` можно получить ряд ресурсов, таких как звуковые файлы, значки, изображения и строки. Например, можно получить доступ к файлам ресурсов, относящимся к языку и региональным параметрам приложения. В следующем примере значок формы задается значком с именем `Form1Icon`, хранящимся в файле ресурсов приложения.  
+ С помощью объекта `My.Resources` можно получить ряд ресурсов, включая аудиофайлы, значки, изображения и строки. Например, можно получить доступ к файлам ресурсов, относящимся к языку и региональным параметрам приложения. В следующем примере значку с именем `Form1Icon`, хранимому в файле ресурсов приложения, задается значок формы.  
   
  [!code-vb[VbVbcnMy#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMy/VB/Class1.vb#7)]  
   
- Объект `My.Resources` предоставляет только глобальные ресурсы. Он не предоставляет доступ к файлам ресурсов, связанным с формами. Необходимо получить доступ к ресурсам формы из формы.  
+ Объект `My.Resources` предоставляет только глобальные ресурсы. Он не предоставляет доступ к файлам ресурсов, связанным с формами. Вам нужно получить доступ к ресурсам формы из формы.  
   
- Аналогичным образом объект `My.Settings` предоставляет доступ к параметрам приложения и позволяет динамически сохранять и извлекать параметры свойств и другие сведения для приложения. Дополнительные сведения см. в разделе [My. Resources](../../../visual-basic/language-reference/objects/my-resources-object.md) Object и [My. Settings](../../../visual-basic/language-reference/objects/my-settings-object.md).  
+ Аналогичным образом объект `My.Settings` предоставляет доступ к параметрам приложения, позволяя динамически сохранять и извлекать параметры свойств и другие сведения для приложения. См. сведения о [My.Resources Object](../../../visual-basic/language-reference/objects/my-resources-object.md) и [My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md).  
   
 ## <a name="see-also"></a>См. также
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
 ms.openlocfilehash: 4f47623aa305ae6e98625acc3d199a76e27d2ea5
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78159940"
 ---
-# <a name="add-element-for-schemaimporterextensions"></a>\<добавить элемент > для \<элемент schemaimporterextensions >
+# <a name="add-element-for-schemaimporterextensions"></a>Элемент \<add> для элемента \<schemaImporterExtensions>
 Добавляет типы, используемые <xref:System.Xml.Serialization.XmlSchemaImporter>, для сопоставления типов XSD с типами платформы .NET Framework. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../../docs/framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  
@@ -31,17 +31,17 @@ ms.locfileid: "78159940"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Description|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |**name**|Простое имя, используемое для поиска экземпляра.|  
-|**type**|Обязательный элемент. Задает добавляемый класс расширения схемы. Значение атрибута **type** должно располагаться на одной строке и содержать полное имя типа. Когда сборка помещается в глобальный кэш сборок (GAC), она должна также содержать версию, язык и региональные параметры и маркер открытого ключа подписанной сборки.|  
+|**type**|Обязательный. Задает добавляемый класс расширения схемы. Значение атрибута **type** должно располагаться на одной строке и содержать полное имя типа. Когда сборка помещается в глобальный кэш сборок (GAC), она должна также содержать версию, язык и региональные параметры и маркер открытого ключа подписанной сборки.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Description|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |\<schemaImporterExtensions>|Содержит типы, используемые классом<xref:System.Xml.Serialization.XmlSchemaImporter>.|  
   
@@ -60,7 +60,7 @@ ms.locfileid: "78159940"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Serialization.XmlSchemaImporter>
 - [Элемент \<system.xml.serialization>](../../../docs/standard/serialization/system-xml-serialization-element.md)

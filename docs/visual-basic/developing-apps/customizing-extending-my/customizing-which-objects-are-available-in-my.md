@@ -7,70 +7,70 @@ helpviewer_keywords:
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
 ms.openlocfilehash: 0387aca08e3a31b0a2045369919894d88caf5b76
 ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74330316"
 ---
 # <a name="customizing-which-objects-are-available-in-my-visual-basic"></a>Настройка доступа к объектам через My (Visual Basic)
 
-В этом разделе описывается, как можно контролировать, какие `My` объекты включены, установив константу условной компиляции `_MYTYPE` проекта. Интегрированная среда разработки Visual Studio (IDE) поддерживает `_MYTYPE` константу условной компиляции для проекта в синхронизации с типом проекта.  
+В этой статье показано, как управлять доступностью объектов `My` с помощью константы условной компиляции `_MYTYPE` проекта. Интегрированная среда разработки (IDE) Visual Studio позволяет использовать константу условной компиляции `_MYTYPE` для проекта в соответствии с типом проекта.  
   
 ## <a name="predefined-_mytype-values"></a>Предопределенные значения \_MYTYPE  
 
-Чтобы задать константу условной компиляции `_MYTYPE`, необходимо использовать параметр компилятора `/define`. При указании собственного значения для `_MYTYPE` константе необходимо заключить строковое значение в последовательности обратной косой черты или кавычки (\\"). Например, можно использовать:  
+Чтобы задать константу условной компиляции `_MYTYPE`, используйте параметр компилятора `/define`. При указании собственного значения для константы `_MYTYPE` заключите строковое значение в последовательности, состоящие из обратной косой черты и кавычек (\\"). Например, можно использовать такую последовательность:  
   
 ```console  
 /define:_MYTYPE=\"WindowsForms\"  
 ```  
   
- В этой таблице показано, что в качестве константы условной компиляции `_MYTYPE` задано для нескольких типов проектов.  
+ В этой таблице приводятся значения константы условной компиляции `_MYTYPE` для нескольких типов проектов.  
   
-|Тип проекта|\_значение MYTYPE|  
+|Тип проекта|Значение \_MYTYPE|  
 |------------------|--------------------|  
-|Библиотека классов|Windows|  
-|Консольное приложение|Консол|  
-|Интернет|Интернет|  
-|Библиотека веб-элементов управления|WebControl|  
-|Приложение Windows|WindowsForms|  
-|Приложение Windows, при запуске с настраиваемым `Sub Main`|"Виндовсформсвискустомсубмаин"|  
-|Библиотека элементов управления Windows|Windows|  
-|Службы Windows|Консол|  
-|Empty|Указано|  
+|Библиотека классов|"Windows"|  
+|Консольное приложение|"Console"|  
+|Интернет|"Web"|  
+|Библиотека веб-элементов управления|"WebControl"|  
+|Приложение Windows|"WindowsForms"|  
+|Приложение Windows при запуске с помощью пользовательского объекта `Sub Main`|"WindowsFormsWithCustomSubMain"|  
+|Библиотека элементов управления Windows|"Windows"|  
+|Служба Windows|"Console"|  
+|Empty|"Empty"|  
   
 > [!NOTE]
 > Все сравнения строк условной компиляции учитывают регистр, независимо от того, как задана инструкция `Option Compare`.  
   
-## <a name="dependent-_my-compilation-constants"></a>Зависимые \_константы компиляции  
+## <a name="dependent-_my-compilation-constants"></a>Зависимые константы компиляции \_MY  
 
-Константа условной компиляции `_MYTYPE`, в свою очередь, управляет значениями нескольких других констант компиляции `_MY`:  
+Константа условной компиляции `_MYTYPE` управляет значениями других констант компиляции `_MY`:  
   
-|\_MYTYPE|\_MYAPPLICATIONTYPE|\_МИКОМПУТЕРТИПЕ|\_МИФОРМС|\_МЮСЕРТИПЕ|\_МИВЕБСЕРВИЦЕС|  
+|\_MYTYPE|\_MYAPPLICATIONTYPE|\_MYCOMPUTERTYPE|\_MYFORMS|\_MYUSERTYPE|\_MYWEBSERVICES|  
 |--------------|-------------------------|----------------------|---------------|------------------|---------------------|  
-|Консол|Консол|Windows|Не определено|Windows|TRUE|  
-|Настройки|Не определено|Не определено|Не определено|Не определено|Не определено|  
-|Указано|Не определено|Не определено|Не определено|Не определено|Не определено|  
-|Интернет|Не определено|Интернет|false|Интернет|false|  
-|WebControl|Не определено|Интернет|false|Интернет|TRUE|  
-|"Windows" или ""|Windows|Windows|Не определено|Windows|TRUE|  
-|WindowsForms|WindowsForms|Windows|TRUE|Windows|TRUE|  
-|"Виндовсформсвискустомсубмаин"|Консол|Windows|TRUE|Windows|TRUE|  
+|"Console"|"Console"|"Windows"|Не определено|"Windows"|TRUE|  
+|"Custom"|Не определено|Не определено|Не определено|Не определено|Не определено|  
+|"Empty"|Не определено|Не определено|Не определено|Не определено|Не определено|  
+|"Web"|Не определено|"Web"|FALSE|"Web"|FALSE|  
+|"WebControl"|Не определено|"Web"|FALSE|"Web"|TRUE|  
+|"Windows" или ""|"Windows"|"Windows"|Не определено|"Windows"|TRUE|  
+|"WindowsForms"|"WindowsForms"|"Windows"|TRUE|"Windows"|TRUE|  
+|"WindowsFormsWithCustomSubMain"|"Console"|"Windows"|TRUE|"Windows"|TRUE|  
   
- По умолчанию неопределенные константы условной компиляции разрешаются в `FALSE`. При компиляции проекта можно указать значения для неопределенных констант, чтобы переопределить поведение по умолчанию.  
+ По умолчанию неопределенные константы условной компиляции разрешаются в `FALSE`. Вы можете указать значения для неопределенных констант при компиляции проекта, чтобы переопределить поведение по умолчанию.  
   
 > [!NOTE]
-> Если `_MYTYPE` имеет значение "Custom", проект содержит `My` пространство имен, но не содержит объектов. Однако при установке `_MYTYPE` в значение "Empty" компилятор не будет добавлять `My` пространство имен и его объекты.  
+> Если `_MYTYPE` имеет значение "Custom", это значит, что проект содержит пространство имен `My`, но не содержит объектов. Если же для `_MYTYPE` задать значение "Empty", компилятор не будет добавлять пространство имен `My` и его объекты.  
   
- В этой таблице описаны последствия предопределенных значений констант компиляции `_MY`.  
+ В этой таблице описаны результаты применения предопределенных значений констант компиляции `_MY`.  
   
 |Константа|Значение|  
 |--------------|-------------|  
-|`_MYAPPLICATIONTYPE`|Включает `My.Application`, если константа имеет значение "Console", "Windows" или "WindowsForms":<br /><br /> — Версия "Console" является производной от <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase>. и имеет меньше элементов, чем версия Windows.<br />— Версия "Windows" является производной от <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>. и имеет меньше элементов, чем версия "WindowsForms".<br />— Версия "WindowsForms" `My.Application` является производной от <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>. Если константа `TARGET` определена как "winexe", то класс включает метод `Sub Main`.|  
-|`_MYCOMPUTERTYPE`|Включает `My.Computer`, если константа имеет значение "Web" или "Windows":<br /><br /> — Версия "Web" является производной от <xref:Microsoft.VisualBasic.Devices.ServerComputer>и содержит меньше элементов, чем версия "Windows".<br />— Версия "Windows" `My.Computer` является производной от <xref:Microsoft.VisualBasic.Devices.Computer>.|  
-|`_MYFORMS`|Включает `My.Forms`, если константа `TRUE`.|  
-|`_MYUSERTYPE`|Включает `My.User`, если константа имеет значение "Web" или "Windows":<br /><br /> — Версия "Web" `My.User` связана с удостоверением пользователя текущего HTTP-запроса.<br />— Версия "Windows" `My.User` связана с текущим участником потока.|  
-|`_MYWEBSERVICES`|Включает `My.WebServices`, если константа `TRUE`.|  
-|`_MYTYPE`|Включает `My.Log`, `My.Request`и `My.Response`, если константа имеет значение "Web".|  
+|`_MYAPPLICATIONTYPE`|Включает `My.Application`, если для константы задано значение "Console," "Windows" или "WindowsForms":<br /><br /> – Версия "Console" является производной от <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase> и содержит меньше элементов, чем версия "Windows".<br />– Версия "Windows" является производной от <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> и содержит меньше элементов, чем версия WindowsForms.<br />– Версия "WindowsForms" `My.Application` является производной от <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>. Если константа `TARGET` определена как "winexe", тогда класс будет включать метод `Sub Main`.|  
+|`_MYCOMPUTERTYPE`|Включает `My.Computer`, если для константы задано значение "Web" или "Windows":<br /><br /> – Версия "Web" является производной от <xref:Microsoft.VisualBasic.Devices.ServerComputer> и содержит меньше элементов, чем версия "Windows".<br />– Версия "Windows" объекта `My.Computer` является производной от <xref:Microsoft.VisualBasic.Devices.Computer>.|  
+|`_MYFORMS`|Включает `My.Forms`, если для константы задано значение `TRUE`.|  
+|`_MYUSERTYPE`|Включает `My.User`, если для константы задано значение "Web" или "Windows":<br /><br /> – Версия "Web" объекта `My.User` связана с удостоверением пользователя для текущего HTTP-запроса.<br />– Версия "Windows" объекта `My.User` связана с текущим субъектом потока.|  
+|`_MYWEBSERVICES`|Включает `My.WebServices`, если для константы задано значение `TRUE`.|  
+|`_MYTYPE`|Включает `My.Log`, `My.Request` и `My.Response`, если для константы задано значение "Web".|  
   
 ## <a name="see-also"></a>См. также
 

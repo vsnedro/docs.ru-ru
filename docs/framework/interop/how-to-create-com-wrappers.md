@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
 ms.openlocfilehash: 035d6439ec90426d7b68e05043ea8b6722f81d28
 ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/11/2020
 ms.locfileid: "81121600"
@@ -30,7 +30,7 @@ ms.locfileid: "81121600"
 
 2. В меню **Проект** выберите пункт **Показать все файлы**.
 
-3. В меню **проекта** нажмите **«Добавить справку».**
+3. В меню **Проект** щелкните команду **Добавить ссылку**.
 
 4. В диалоговом окне "Добавление ссылки" перейдите на вкладку **COM**, выберите нужный компонент и нажмите кнопку **ОК**.
 
@@ -39,7 +39,7 @@ ms.locfileid: "81121600"
 Теперь можно написать код для доступа к COM-объекту. Сначала можно объявить объект, например с помощью оператора `Imports` для Visual Basic или оператора `Using` для C#.
 
 > [!NOTE]
-> Если вы хотите запрограммировать компоненты Microsoft Office, сначала установите [основные интерсомеры Microsoft Office Redistributlies.](https://www.microsoft.com/Download/details.aspx?id=3508)
+> При программировании компонентов Microsoft Office сначала необходимо установить [распространяемые основные сборки взаимодействия Microsoft Office](https://www.microsoft.com/Download/details.aspx?id=3508).
   
 ### <a name="to-create-a-runtime-callable-wrapper-using-net-framework-tools"></a>Создание вызываемой оболочки времени выполнения с использованием средств платформы .NET Framework  
   
@@ -55,7 +55,7 @@ ms.locfileid: "81121600"
   
      Убедитесь, что в файле AssemblyInfo присутствует полный номер версии сборки, состоящий из четырех частей. Этот номер необходим для управления версиями в реестре Windows. Дополнительные сведения о номерах версий см. в разделе [Управление версиями сборки](../../standard/assembly/versioning.md).  
   
-2. В меню **Проект** выберите **Свойства**.  
+2. В меню **Проект** выберите пункт **Свойства**.  
   
 3. Откройте вкладку **Компиляция**.  
   

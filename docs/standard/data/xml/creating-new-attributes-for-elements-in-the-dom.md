@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: dd6dc920-b011-418a-b3db-f1580a7d9251
 ms.openlocfilehash: 79a3390933256ed862d35c90db0aab2177cdfc41
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75711016"
@@ -21,7 +21,7 @@ ms.locfileid: "75711016"
 
 - Создайте узел **XmlAttribute** с помощью метода **CreateAttribute**, получите узел элемента и примените метод **SetAttributeNode**, чтобы добавить узел в коллекцию атрибутов этого элемента.
 
-В следующем примере показано, как добавить атрибут к элементу с помощью метода **setAttribute** :
+Следующий пример демонстрирует, как добавить атрибут к элементу с помощью метода **SetAttribute**.
 
 ```vb
 Imports System.IO
@@ -102,7 +102,7 @@ doc.DocumentElement.SetAttributeNode(attr)
 doc.DocumentElement.SetAttributeNode(attr);
 ```
 
-**Вывод**
+**Выходные данные**
 
 ```xml
 <book genre="novel" ISBN="1-861001-57-5" publisher="WorldWide Publishing">
@@ -114,7 +114,7 @@ doc.DocumentElement.SetAttributeNode(attr);
 
 Также можно создать узел **XmlAttribute** и вызвать метод **InsertBefore** или **InsertAfter**, чтобы поместить его в подходящее место коллекции. Если в коллекции атрибутов уже существует атрибут с таким именем, эти методы удаляют существующий узел **XmlAttribute** и добавляют вместо него новый узел **XmlAttribute**. Алгоритм выполнения здесь такой же, как у метода **SetAttribute**. Эти методы принимают в качестве параметра существующий узел, который будет считаться базовой точкой для методов **InsertBefore** и **InsertAfter**. Если не задан базовый узел, рядом с которым нужно вставить новый узел, метод **InsertAfter** по умолчанию вставляет новый узел в начало коллекции, а метод **InsertBefore** — в конец коллекции.
 
-Если вы создали **XmlNamedNodeMap** атрибутов, можно добавить атрибут по имени с помощью метода <xref:System.Xml.XmlNamedNodeMap.SetNamedItem%2A>. Дополнительные сведения см. в статье [Коллекции узлов в NamedNodeMap и NodeList](node-collections-in-namednodemaps-and-nodelists.md).
+Если вы создали для атрибутов коллекцию **XmlNamedNodeMap**, можете добавить именованный атрибут с помощью метода <xref:System.Xml.XmlNamedNodeMap.SetNamedItem%2A>. Дополнительные сведения см. в статье [Коллекции узлов в NamedNodeMap и NodeList](node-collections-in-namednodemaps-and-nodelists.md).
 
 ## <a name="default-attributes"></a>Атрибуты по умолчанию
 
@@ -122,8 +122,8 @@ doc.DocumentElement.SetAttributeNode(attr);
 
 ## <a name="attribute-child-nodes"></a>Дочерние узлы атрибута
 
-Значение узла атрибута становится его дочерними узлами. Существует только два типа допустимых дочерних узлов: узлы **xmltext** и узел **XmlEntityReference** . Они являются дочерними узлами в том смысле, что такие методы, как **FirstChild** и **LastChild**, обрабатывают их как дочерние узлы. Это отличие атрибута, имеющего дочерние узлы, становится важным во время удаления атрибута или его дочерних узлов. Дополнительные сведения см. в статье [Удаление атрибутов из узла элемента в модели DOM](removing-attributes-from-an-element-node-in-the-dom.md).
+Значение узла атрибута становится его дочерними узлами. Существует два допустимых типа дочерних узлов: **XmlText** и **XmlEntityReference**. Они являются дочерними узлами в том смысле, что такие методы, как **FirstChild** и **LastChild**, обрабатывают их как дочерние узлы. Это отличие атрибута, имеющего дочерние узлы, становится важным во время удаления атрибута или его дочерних узлов. Дополнительные сведения см. в статье [Удаление атрибутов из узла элемента в модели DOM](removing-attributes-from-an-element-node-in-the-dom.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](xml-document-object-model-dom.md)

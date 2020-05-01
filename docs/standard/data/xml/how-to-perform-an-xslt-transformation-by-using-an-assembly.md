@@ -1,5 +1,5 @@
 ---
-title: Как выполнить XSLT-преобразование с помощью сборки
+title: Практическое руководство. Выполнение XSLT-преобразования с помощью сборки
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -8,12 +8,12 @@ dev_langs:
 ms.assetid: 76ee440b-d134-4f8f-8262-b917ad6dcbf6
 ms.openlocfilehash: 447cf18c7a9d24addf9d0a4ad523f46a45a5d27a
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78155979"
 ---
-# <a name="how-to-perform-an-xslt-transformation-by-using-an-assembly"></a>Как выполнить XSLT-преобразование с помощью сборки
+# <a name="how-to-perform-an-xslt-transformation-by-using-an-assembly"></a>Практическое руководство. Выполнение XSLT-преобразования с помощью сборки
 XSLT-компилятор (xsltc.exe) компилирует таблицы стилей XSLT и создает сборку. Сборку можно передать непосредственно методу <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType>.  
   
 ### <a name="to-copy-the-xml-and-xslt-files-to-your-local-computer"></a>Копирование XML-файлов и XSLT-файлов на локальный компьютер  
@@ -177,9 +177,9 @@ xslt.Load(typeof(Transform));
 xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"));  
 ```
   
-в примере выше. Дополнительные сведения о методе Assembly. Load см. в разделе <xref:System.Reflection.Assembly.Load%2A>.  
+в примере выше. Дополнительные сведения о методе Assembly.Load см. в статье <xref:System.Reflection.Assembly.Load%2A>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - [Компилятор XSLT (xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)
