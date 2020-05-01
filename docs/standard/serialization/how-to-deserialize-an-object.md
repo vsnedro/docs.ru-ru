@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 287129c8-035a-4fea-b7b3-4790057ca076
 ms.openlocfilehash: c24ba466a208fe5abdbf565169c41c4ee3f47482
 ms.sourcegitcommit: f8c36054eab877de4d40a705aacafa2552ce70e9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/31/2019
 ms.locfileid: "75559902"
 ---
-# <a name="how-to-deserialize-an-object-using-xmlserializer"></a><span data-ttu-id="37757-102">Десериализация объекта с помощью XmlSerializer</span><span class="sxs-lookup"><span data-stu-id="37757-102">How to deserialize an object using XmlSerializer</span></span>
+# <a name="how-to-deserialize-an-object-using-xmlserializer"></a><span data-ttu-id="bf430-102">Десериализация объекта с помощью XmlSerializer</span><span class="sxs-lookup"><span data-stu-id="bf430-102">How to deserialize an object using XmlSerializer</span></span>
 
-<span data-ttu-id="37757-103">При десериализации объекта формат передачи определяет, создается поток или объект файла.</span><span class="sxs-lookup"><span data-stu-id="37757-103">When you deserialize an object, the transport format determines whether you will create a stream or file object.</span></span> <span data-ttu-id="37757-104">Определив формат передачи, можно вызвать методы <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> или <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> в зависимости от необходимости.</span><span class="sxs-lookup"><span data-stu-id="37757-104">After the transport format is determined, you can call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> or <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> methods, as required.</span></span>
+<span data-ttu-id="bf430-103">При десериализации объекта формат передачи определяет, создается поток или объект файла.</span><span class="sxs-lookup"><span data-stu-id="bf430-103">When you deserialize an object, the transport format determines whether you will create a stream or file object.</span></span> <span data-ttu-id="bf430-104">Определив формат передачи, можно вызвать методы <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> или <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> в зависимости от необходимости.</span><span class="sxs-lookup"><span data-stu-id="bf430-104">After the transport format is determined, you can call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> or <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> methods, as required.</span></span>
 
-## <a name="to-deserialize-an-object"></a><span data-ttu-id="37757-105">Десериализация объекта</span><span class="sxs-lookup"><span data-stu-id="37757-105">To deserialize an object</span></span>
+## <a name="to-deserialize-an-object"></a><span data-ttu-id="bf430-105">Десериализация объекта</span><span class="sxs-lookup"><span data-stu-id="bf430-105">To deserialize an object</span></span>
 
-1. <span data-ttu-id="37757-106">Постройте <xref:System.Xml.Serialization.XmlSerializer> с использованием типа сериализуемого объекта.</span><span class="sxs-lookup"><span data-stu-id="37757-106">Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object to deserialize.</span></span>
+1. <span data-ttu-id="bf430-106">Постройте <xref:System.Xml.Serialization.XmlSerializer> с использованием типа сериализуемого объекта.</span><span class="sxs-lookup"><span data-stu-id="bf430-106">Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object to deserialize.</span></span>
 
-1. <span data-ttu-id="37757-107">Вызовите метод <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A>, чтобы создать реплику объекта.</span><span class="sxs-lookup"><span data-stu-id="37757-107">Call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method to produce a replica of the object.</span></span> <span data-ttu-id="37757-108">При десериализации возвращаемый объект необходимо привести к типу исходного объекта, как показано в следующем примере, который десериализует объект из файла (хотя его также можно десериализовать из потока).</span><span class="sxs-lookup"><span data-stu-id="37757-108">When deserializing, you must cast the returned object to the type of the original, as shown in the following example, which deserializes the object from a file (although it could also be deserialized from a stream).</span></span>
+1. <span data-ttu-id="bf430-107">Вызовите метод <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A>, чтобы создать реплику объекта.</span><span class="sxs-lookup"><span data-stu-id="bf430-107">Call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method to produce a replica of the object.</span></span> <span data-ttu-id="bf430-108">При десериализации следует приводить возвращенный объект к типу исходного, как показано в следующем примере, десериализующем объект из файла (хотя его также можно десериализовать из потока).</span><span class="sxs-lookup"><span data-stu-id="bf430-108">When deserializing, you must cast the returned object to the type of the original, as shown in the following example, which deserializes the object from a file (although it could also be deserialized from a stream).</span></span>
 
     ```vb
     ' Construct an instance of the XmlSerializer with the type
@@ -46,7 +46,7 @@ ms.locfileid: "75559902"
     var myObject = (MySerializableClass) mySerializer.Deserialize(myFileStream)
     ```
 
-## <a name="see-also"></a><span data-ttu-id="37757-109">См. также:</span><span class="sxs-lookup"><span data-stu-id="37757-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf430-109">См. также</span><span class="sxs-lookup"><span data-stu-id="bf430-109">See also</span></span>
 
-- [<span data-ttu-id="37757-110">Введение в сериализацию XML</span><span class="sxs-lookup"><span data-stu-id="37757-110">Introducing XML Serialization</span></span>](introducing-xml-serialization.md)
-- [<span data-ttu-id="37757-111">Практическое руководство. Сериализация объекта</span><span class="sxs-lookup"><span data-stu-id="37757-111">How to: Serialize an Object</span></span>](how-to-serialize-an-object.md)
+- [<span data-ttu-id="bf430-110">Введение в сериализацию XML</span><span class="sxs-lookup"><span data-stu-id="bf430-110">Introducing XML Serialization</span></span>](introducing-xml-serialization.md)
+- [<span data-ttu-id="bf430-111">Практическое руководство. Сериализация объекта</span><span class="sxs-lookup"><span data-stu-id="bf430-111">How to: Serialize an Object</span></span>](how-to-serialize-an-object.md)
