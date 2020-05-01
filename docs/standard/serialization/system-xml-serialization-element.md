@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
 ms.openlocfilehash: 02027a238bc9a2f82963ea841584d2bb3c6446c6
 ms.sourcegitcommit: 52e588dc2ee74d484cd07ac60076be25cbf777ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/27/2019
 ms.locfileid: "67410547"
 ---
-# <a name="systemxmlserialization-element"></a>\<System.XML.Serialization > элемент
+# <a name="systemxmlserialization-element"></a>Элемент \<system.xml.serialization>
 
 Элемент верхнего уровня для управления XML-сериализацией. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../../docs/framework/configure-apps/file-schema/index.md).
 
-\<Конфигурация > \
+\<configuration>\
 \<system.xml.serialization>
 
 ## <a name="syntax"></a>Синтаксис
@@ -44,7 +44,7 @@ ms.locfileid: "67410547"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент \<configuration>](../../../docs/framework/configure-apps/file-schema/configuration-element.md)|Корневой элемент в любом файле конфигурации, который используется средой CLR и приложениями .NET Framework.|
 
@@ -73,4 +73,4 @@ ms.locfileid: "67410547"
 - [Схема файла конфигурации](../../../docs/framework/configure-apps/file-schema/index.md)
 - [Элемент \<dateTimeSerialization>](../../../docs/standard/serialization/datetimeserialization-element.md)
 - [Элемент \<schemaImporterExtensions>](../../../docs/standard/serialization/schemaimporterextensions-element.md)
-- [\<Добавить > элемент для \<schemaImporterExtensions >](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)
+- [Элемент \<add> для элемента \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)
