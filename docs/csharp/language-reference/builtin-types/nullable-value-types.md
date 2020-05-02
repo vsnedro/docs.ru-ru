@@ -4,12 +4,12 @@ description: Сведения о типах C#, допускающих знач
 ms.date: 11/04/2019
 helpviewer_keywords:
 - nullable value types [C#]
-ms.openlocfilehash: c13ef6a091ec6aebd4608c5ed8d2c03b067c7312
-ms.sourcegitcommit: 2b3b2d684259463ddfc76ad680e5e09fdc1984d2
+ms.openlocfilehash: fcd49d7d25b0ad23363db8cb61596004b2e87a8d
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80888076"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81739001"
 ---
 # <a name="nullable-value-types-c-reference"></a>Справочник по C#. Типы значений, допускающие значение NULL
 
@@ -24,7 +24,7 @@ ms.locfileid: "80888076"
 
 ## <a name="declaration-and-assignment"></a>Назначение и объявление
 
-Так как тип значения можно неявно преобразовать в соответствующий тип значения, допускающий значение NULL, вы назначаете значение переменной такого типа значения так же, как для базового типа значения. Вы также можете присвоить значение `null`. Пример:
+Так как тип значения можно неявно преобразовать в соответствующий тип значения, допускающий значение NULL, вы назначаете значение переменной такого типа значения так же, как для базового типа значения. Вы можете также присвоить значение `null`. Пример:
 
 [!code-csharp[declare and assign](snippets/NullableValueTypes.cs#Declaration)]
 
@@ -46,19 +46,19 @@ ms.locfileid: "80888076"
 
 [!code-csharp-interactive[use HasValue](snippets/NullableValueTypes.cs#HasValue)]
 
-Вы также можете сравнить переменную типа значения, допускающего значение NULL, с `null` вместо использования свойства `HasValue`, как показано в следующем примере:
+Можно также сравнить переменную типа значения, допускающего значение NULL, с `null` вместо использования свойства `HasValue`, как показано в следующем примере:
 
 [!code-csharp-interactive[use comparison with null](snippets/NullableValueTypes.cs#CompareWithNull)]
 
 ## <a name="conversion-from-a-nullable-value-type-to-an-underlying-type"></a>Преобразование из типа значения, допускающего значение NULL, в базовый тип
 
-Если необходимо присвоить значение типа, допускающего значение NULL, переменной типа значения, не допускающего значения NULL, может потребоваться указать значение, назначаемое вместо `null`. Для этого используйте [оператор объединения со значением NULL`??`](../operators/null-coalescing-operator.md) (можно также применить метод <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> для той же цели):
+Если необходимо присвоить значение типа, допускающего значение NULL, переменной типа значения, не допускающего значения NULL, может потребоваться указать значение, назначаемое вместо `null`. Для этого используйте [оператор объединения со значением NULL `??`](../operators/null-coalescing-operator.md) (можно также применить метод <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> для той же цели):
 
 [!code-csharp-interactive[?? operator](snippets/NullableValueTypes.cs#NullCoalescing)]
 
 Если вы хотите использовать [значение по умолчанию](default-values.md) базового типа значения вместо `null`, воспользуйтесь методом <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType>.
 
-Вы можете явно привести тип значения, допускающий значение NULL, к типу, не допускающему значение NULL, как показано в примере ниже.
+Вы можете также явно привести тип значения, допускающий значение NULL, к типу, не допускающему значение NULL, как показано в примере ниже.
 
 [!code-csharp[explicit cast](snippets/NullableValueTypes.cs#Cast)]
 
@@ -132,7 +132,7 @@ ms.locfileid: "80888076"
 - [Явные преобразования, допускающие значения NULL](~/_csharplang/spec/conversions.md#explicit-nullable-conversions)
 - [Операторы преобразования с нулификацией](~/_csharplang/spec/conversions.md#lifted-conversion-operators)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
 - [What exactly does 'lifted' mean?](https://docs.microsoft.com/archive/blogs/ericlippert/what-exactly-does-lifted-mean) (Что означает термин "расширенные"?)

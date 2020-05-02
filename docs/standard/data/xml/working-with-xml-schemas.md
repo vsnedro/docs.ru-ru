@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: bbbcc70c-bf9a-4f6a-af72-1bab5384a187
 ms.openlocfilehash: 0fd7313e800024ebb7e3563cb4323c5780cbf1c3
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710015"
@@ -13,7 +13,7 @@ ms.locfileid: "75710015"
 # <a name="working-with-xml-schemas"></a>Работа с XML-схемами
 Чтобы определить структуру XML-документа, связи его элементов, типы данных, ограничения на содержимое, используется определение типа документа (DTD) или схема XSD. XML-документ имеет правильный формат, если он соответствует всем синтаксическим требованиям Рекомендации консорциума W3C по языку XML 1.0. Однако документ считается допустимым только в том случае, если он одновременно имеет правильный формат и соответствует ограничениям, заданным определением DTD или схемой. Следовательно, хотя все допустимые XML-документы имеют правильный формат, не все XML-документы правильного формата, являются допустимыми.  
   
- Дополнительные сведения о XML см. в [документации консорциума W3C по XML 1.0](https://www.w3.org/TR/REC-xml/). Дополнительные сведения о схемах XML см. в документации консорциума W3C по схемам XML по использованию [структур](https://www.w3.org/TR/xmlschema-1/) и [типов данных](https://www.w3.org/TR/xmlschema-2/).  
+ Дополнительные сведения о XML см. в [документации консорциума W3C по XML 1.0](https://www.w3.org/TR/REC-xml/). Для получения дополнительных сведений о XML-схеме см. документы [W3C XML Schema Part 1: Structures Recommendation](https://www.w3.org/TR/xmlschema-1/) (XML-схема W3C. Часть 1. Рекомендации по структурам) и [W3C XML Schema Part 2: Datatypes Recommendation](https://www.w3.org/TR/xmlschema-2/) (XML-схема W3C. Часть 1. Рекомендации по типам данных).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Модель объектов схемы XML (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
@@ -28,7 +28,7 @@ ms.locfileid: "75710015"
  [Выведение XML-схемы](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)  
  Обсуждается применение класса <xref:System.Xml.Schema.XmlSchemaInference> для выведения схемы XSD из структуры XML-документа.  
   
-## <a name="reference"></a>Справочные сведения  
+## <a name="reference"></a>Справочник  
  <xref:System.Xml.Schema.XmlSchemaSet> &#124; <xref:System.Xml.Schema.XmlSchemaInference> &#124; <xref:System.Xml.XmlReader>  
   
 ## <a name="related-sections"></a>Связанные разделы  

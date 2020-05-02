@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
 ms.openlocfilehash: 9886e2f20ef7954b01ea1f46a9eabdb9ea2cc12d
 ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/25/2019
 ms.locfileid: "75348433"
@@ -43,7 +43,7 @@ ms.locfileid: "75348433"
 
 Кроме того, существует функция объявления при добавлении нового необязательного поля. Это свойство <xref:System.Runtime.Serialization.OptionalFieldAttribute.VersionAdded%2A> атрибута <xref:System.Runtime.Serialization.OptionalFieldAttribute>.
 
-Эти функции более подробно обсуждаются в следующих разделах.
+Эти функции подробно описаны в следующих разделах.
 
 ### <a name="tolerance-of-extraneous-or-unexpected-data"></a>Допустимость лишних или непредвиденных данных
 
@@ -132,7 +132,7 @@ End Class
 
 #### <a name="using-callbacks"></a>Использование обратных вызовов
 
-Чтобы использовать обратные вызовы, примените соответствующий атрибут к методу, который принимает параметр <xref:System.Runtime.Serialization.StreamingContext>. Для каждого из этих атрибутов можно отметить только один метод для класса. Например:
+Чтобы использовать обратные вызовы, примените соответствующий атрибут к методу, который принимает параметр <xref:System.Runtime.Serialization.StreamingContext>. Для каждого из этих атрибутов можно отметить только один метод для класса. Пример:
 
 ```csharp
 [OnDeserializing]
@@ -151,7 +151,7 @@ End Sub
 
 Эти методы предназначены для управления версиями. Во время десериализации возможна неправильная инициализация необязательного поля, если данные для него отсутствуют. Это можно исправить, создав метод, который назначает правильное значение, а затем применяет к методу атрибут **OnDeserializingAttribute** или **OnDeserializedAttribute**.
 
-В следующем примере показан метод в контексте типа. Если приложение более ранней версии отправляет экземпляр класса `Address` в приложение более поздней версии, данные поля `CountryField` будут отсутствовать. Но после десериализации полю будет присвоено значение по умолчанию «Япония».
+В следующем примере показан метод в контексте типа. Если приложение более ранней версии отправляет экземпляр класса `Address` в приложение более поздней версии, данные поля `CountryField` будут отсутствовать. Но после десериализации полю будет присвоено значение по умолчанию "Japan".
 
 ```csharp
 [Serializable]
@@ -262,7 +262,7 @@ End Class
 
 ## <a name="serializationbinder"></a>SerializationBinder
 
-Некоторым пользователям может понадобиться выбирать классы для сериализации и десериализации, поскольку на сервере и клиенте требуются разные версии класса. Класс <xref:System.Runtime.Serialization.SerializationBinder> является абстрактным классом, который используется для управления фактическими типами, применяемыми при сериализации и десериализации. Чтобы использовать этот класс, создайте класс, производный от <xref:System.Runtime.Serialization.SerializationBinder>, и переопределите методы <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> и <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>. Дополнительные сведения см. [в разделе Управление сериализацией и десериализацией с помощью помощью SerializationBinder](../../framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md).
+Некоторым пользователям может понадобиться выбирать классы для сериализации и десериализации, поскольку на сервере и клиенте требуются разные версии класса. Класс <xref:System.Runtime.Serialization.SerializationBinder> является абстрактным классом, который используется для управления фактическими типами, применяемыми при сериализации и десериализации. Чтобы использовать этот класс, создайте класс, производный от <xref:System.Runtime.Serialization.SerializationBinder>, и переопределите методы <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> и <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>. Дополнительные сведения см. в разделе [Управление сериализацией и десериализацией с помощью SerializationBinder](../../framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md).
 
 ## <a name="best-practices"></a>Рекомендации
 
@@ -280,7 +280,7 @@ End Class
 - Всегда правильно задавайте свойство **VersionAdded** для атрибута **OptionalFieldAttribute**.
 - Избегайте ветвления версий.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.SerializableAttribute>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>

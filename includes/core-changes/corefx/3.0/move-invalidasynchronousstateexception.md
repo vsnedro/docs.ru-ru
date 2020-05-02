@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 19359422f79f8240676b0057c7391f6b06f961ee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d1562cb76f37b6cc2aeb6fe2f7c17c393e169e84
+ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79147553"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82158488"
 ---
 ### <a name="invalidasynchronousstateexception-moved-to-another-assembly"></a>Исключение InvalidAsynchronousStateException перенесено в другую сборку
 
@@ -18,19 +18,19 @@ ms.locfileid: "79147553"
 
 #### <a name="version-introduced"></a>Представленная версия
 
-3,0
+3.0
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
-Это изменение влияет только на приложения, использующие отражение для загрузки <xref:System.ComponentModel.InvalidAsynchronousStateException> путем вызова метода, такого как <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>, или перегрузки <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>, которая предполагает, что тип находится в определенной сборке. В этом случае сборку, указанную в вызове метода, необходимо обновить в соответствии с новым расположением сборки типа.
+Это изменение влияет только на приложения, использующие отражение для загрузки <xref:System.ComponentModel.InvalidAsynchronousStateException> путем вызова метода, такого как <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>, или перегрузки <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>, которая предполагает, что тип находится в определенной сборке. В этом случае обновите сборку, указанную в вызове метода, в соответствии с новым расположением сборки типа.
 
 #### <a name="category"></a>Категория
 
-CoreFX
+Библиотеки Core .NET
 
 #### <a name="affected-apis"></a>Затронутые API
 
-Нет.
+Отсутствует.
 
 <!--
 

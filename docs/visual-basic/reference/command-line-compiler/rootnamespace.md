@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
 ms.openlocfilehash: 4df4e74fc13c922f51f5b74c3c152bdea28b4431
 ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "72005213"
@@ -32,13 +32,13 @@ ms.locfileid: "72005213"
 |`namespace`|Имя пространства имен, в котором должны быть заключены все объявления типов для текущего проекта.|  
   
 ## <a name="remarks"></a>Примечания  
- Если вы используете исполняемый файл Visual Studio (devenv. exe) для компиляции проекта, созданного в интегрированной среде разработки Visual Studio, используйте `-rootnamespace`, чтобы указать значение свойства <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A>. Дополнительные сведения см. в разделе [devenv параметры командной строки](/visualstudio/ide/reference/devenv-command-line-switches) .  
+ Если вы используете исполняемый файл Visual Studio (Devenv.exe) для компиляции проекта, созданного в интегрированной среде разработки Visual Studio, используйте `-rootnamespace`, чтобы указать значение свойства <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A>. Дополнительные сведения см. в разделе [Параметры командной строки для команды Devenv](/visualstudio/ide/reference/devenv-command-line-switches).  
   
  Используйте дизассемблер MSIL среды CLR (`Ildasm.exe`) для просмотра имен пространств имен в выходном файле.  
   
-|Установка параметра-RootNamespace в интегрированной среде разработки Visual Studio|  
+|Задание параметра -rootnamespace в интегрированной среде разработки Visual Studio|  
 |---|  
-|1.  Выберите проект в **Обозревателе решений**. В меню **Проект** выберите пункт **Свойства**. <br />2.  Перейдите на вкладку **Приложение** .<br />3.  Измените значение в поле **корневое пространство имен** .|  
+|1.  Выберите проект в **Обозревателе решений**. В меню **Проект** выберите пункт **Свойства**. <br />2.  Перейдите на вкладку **Приложение** .<br />3.  Измените значение в поле **Корневое пространство имен**.|  
   
 ## <a name="example"></a>Пример  
  Следующий код компилирует `In.vb` и заключает все объявления типов в пространство имен `mynamespace`.  

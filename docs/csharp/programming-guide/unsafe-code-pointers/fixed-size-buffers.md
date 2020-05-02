@@ -1,16 +1,16 @@
 ---
 title: Руководство по программированию на C#. Буферы фиксированного размера
-ms.date: 04/20/2018
+ms.date: 04/23/2020
 helpviewer_keywords:
 - fixed size buffers [C#]
 - unsafe buffers [C#]
 - unsafe code [C#], fixed size buffers
-ms.openlocfilehash: 6770497b23212f1786b4f4a620ed2b650079c44b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5920dd125ded34969d60feb299568b56402056ab
+ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79157030"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82140544"
 ---
 # <a name="fixed-size-buffers-c-programming-guide"></a>Буферы фиксированного размера (Руководство по программированию на C#)
 
@@ -38,15 +38,39 @@ private fixed char name[30];
 
 Еще одним распространенным массивом фиксированного размера является массив [bool](../../language-reference/builtin-types/bool.md). Элементы в массиве `bool` всегда имеют размер в один байт. Массивы `bool` не подходят для создания битовых массивов или буферов.
 
-> [!NOTE]
-> За исключением памяти, созданной с помощью [stackalloc](../../language-reference/operators/stackalloc.md), компилятор C# и среда CLR не выполняют проверку переполнения буфера безопасности. Как и при работе с любым небезопасным кодом, следует проявлять осторожность.
+Буферы фиксированного размера компилируются с помощью класса <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, что указывает среде CLR, что тип содержит неуправляемый массив, который может привести к переполнению. Это похоже на память, созданную с помощью [stackalloc](../../language-reference/operators/stackalloc.md), которая автоматически включает функции обнаружения переполнения буфера в среде CLR. В предыдущем примере показано существование буфера фиксированного размера в `unsafe struct`.
 
-Небезопасные буферы отличаются от обычных массивов указанными ниже особенностями.
+```csharp
+internal unsafe struct Buffer
+{
+    public fixed char fixedBuffer[128];
+}
+```
 
-- Небезопасные буферы можно использовать в небезопасном контексте.
-- Небезопасные буферы — это всегда векторы или одномерные массивы.
-- В объявлении массива всегда должен присутствовать счетчик, такой как `char id[8]`. Использовать `char id[]` нельзя.
-- Небезопасные буферы могут быть только полями экземпляров структур в небезопасном контексте.
+Созданный компилятором код C# для `Buffer` помечен с помощью атрибутов, как показано далее.
+
+```csharp
+internal struct Buffer
+{
+    [StructLayout(LayoutKind.Sequential, Size = 256)]
+    [CompilerGenerated]
+    [UnsafeValueType]
+    public struct <fixedBuffer>e__FixedBuffer
+    {
+        public char FixedElementField;
+    }
+
+    [FixedBuffer(typeof(char), 128)]
+    public <fixedBuffer>e__FixedBuffer fixedBuffer;
+}
+```
+
+Буферы фиксированного размера отличаются от обычных массивов указанными ниже особенностями.
+
+- Могут использоваться только в [небезопасном](../../language-reference/keywords/unsafe.md) контексте.
+- Могут быть только полями экземпляров структур.
+- Всегда являются векторами или одномерными массивами.
+- Объявление должно включать длину, например `fixed char id[8]`. Использовать `fixed char id[]` нельзя.
 
 ## <a name="see-also"></a>См. также
 

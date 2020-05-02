@@ -2,13 +2,13 @@
 title: Учебник по выполнению отладки утечки памяти
 description: Узнайте, как выполнить отладку утечки памяти в .NET Core.
 ms.topic: tutorial
-ms.date: 12/17/2019
-ms.openlocfilehash: 014945394f87edd02c94f7c3b28043bd07470d8b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 04/20/2020
+ms.openlocfilehash: d47992bab9dab64cf7f88ff679eef407dd891b5a
+ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76737728"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82021358"
 ---
 # <a name="tutorial-debug-a-memory-leak-in-net-core"></a>Учебник. Отладка утечки памяти в .NET Core
 
@@ -146,7 +146,7 @@ dotnet-dump analyze core_20190430_185145
 Где `core_20190430_185145` — это имя основного дампа, который нужно проанализировать.
 
 > [!NOTE]
-> Если отображается сообщение о том, что *libdl.so* не удалось найти, возможно, потребуется установить пакет *libc6-dev*. Дополнительные сведения см. в статье [Необходимые компоненты для .NET Core в Linux](../linux-prerequisites.md).
+> Если отображается сообщение о том, что *libdl.so* не удалось найти, возможно, потребуется установить пакет *libc6-dev*. Дополнительные сведения см. в статье [Необходимые компоненты для .NET Core в Linux](../install/dependencies.md?pivots=os-linux).
 
 Отобразится командная строка для ввода команд SOS. Как правило, в первую очередь нужно просмотреть общее состояние управляемой динамической памяти:
 

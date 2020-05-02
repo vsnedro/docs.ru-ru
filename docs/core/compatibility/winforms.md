@@ -2,12 +2,12 @@
 title: Критические изменения в Windows Forms
 description: Список критических изменений в Windows Forms для .NET Core.
 ms.date: 01/08/2020
-ms.openlocfilehash: 25c568a8a0092a9c4874419c64c7dcebea4dce9e
-ms.sourcegitcommit: 2b3b2d684259463ddfc76ad680e5e09fdc1984d2
+ms.openlocfilehash: 75d369c7fb999da81a50fe46716e125c3840eb7a
+ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80888146"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82158441"
 ---
 # <a name="breaking-changes-in-windows-forms"></a>Критические изменения в Windows Forms
 
@@ -17,7 +17,9 @@ ms.locfileid: "80888146"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
-| [Теперь API WinForms выдают исключение ArgumentNullException](#winforms-apis-now-throw-argumentnullexception) | 5.0 |
+| [Удалены элементы управления строкой состояния](#removed-status-bar-controls) | 5.0 |
+| [Теперь методы WinForms вызывают исключение ArgumentException](#winforms-methods-now-throw-argumentexception) | 5.0 |
+| [Теперь методы WinForms вызывают исключение ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5.0 |
 | [Удаленные элементы управления](#removed-controls) | 3.1 |
 | [При отображении подсказки не возникает событие CellFormatting](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
 | [Шрифт Control.DefaultFont изменен на Segoe UI 9 пт](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
@@ -35,6 +37,14 @@ ms.locfileid: "80888146"
 | [Из Windows Forms удалены дублирующиеся API](#duplicated-apis-removed-from-windows-forms) | 3.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [winforms-deprecated-controls](../../../includes/core-changes/windowsforms/5.0/winforms-deprecated-controls.md)]
+
+***
+
+[!INCLUDE [invalid-args-cause-argumentexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentexception.md)]
+
+***
 
 [!INCLUDE [null-args-cause-argumentnullexception](../../../includes/core-changes/windowsforms/5.0/null-args-cause-argumentnullexception.md)]
 

@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
 ms.openlocfilehash: 642a7e5321d0150865f74a66a811914bc9f5d21d
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78160031"
@@ -30,10 +30,10 @@ ms.locfileid: "78160031"
   
  Входные данные представлены в памяти следующим деревом узлов с назначенным свойством типа узлов:  
   
- ![Пример дерева узлов](../../../../docs/standard/data/xml/media/simple-xml.gif "Simple_XML")  
+ ![пример дерева узлов](../../../../docs/standard/data/xml/media/simple-xml.gif "Simple_XML")  
 Представление дерева узлов book и title  
   
- Элемент `book` становится объектом **XmlElement**, следующий элемент `title` также становится объектом **XmlElement**, а элемент content становится объектом **XmlText**. Методы и свойства объекта **XmlElement** отличаются от методов и свойств, доступных для объекта **XmlText**. Поэтому очень важно знать, какой тип узла получает XML, так как тип узла определяет действия, которые можно выполнить.  
+ Элемент `book` становится объектом **XmlElement`title`, следующий элемент**  также становится объектом **XmlElement**, а элемент content становится объектом **XmlText**. Методы и свойства объекта **XmlElement** отличаются от методов и свойств, доступных для объекта **XmlText**. Поэтому очень важно знать, какой тип узла получает XML, так как тип узла определяет действия, которые можно выполнить.  
   
  В следующих примерах выполняется считывание XML-данных и запись другого текста, в зависимости от типа узла. Использование следующего XML-файла **items.xml** для получения входных данных.  
   
@@ -184,14 +184,14 @@ public class Sample
   
  Рассматривая входные данные построчно и используя выход, сформированный кодом, можно использовать следующую таблицу для анализа того, какой узел сформировал конкретные строки результата, и понять, какие XML-данные стали соответствующими типами узлов.  
   
-|Входные данные|Выходные данные|Проверка типа узла|  
+|Входные данные|Вывод|Проверка типа узла|  
 |-----------|------------|--------------------|  
 |\<?xml version="1.0"?>|\<?xml version='1.0'?>|XmlNodeType.XmlDeclaration|  
 |\<!-- Это пример XML-документа -->|\<!-- Это пример XML-документа -->|XmlNodeType.Comment|  
 |\<!DOCTYPE Items [\<!ENTITY number "123">]>|\<!DOCTYPE Items [\<!ENTITY number "123">]>|XmlNodeType.DocumentType|  
 |\<Items>|\<Items>|XmlNodeType.Element|  
 |\<Item>|\<Item>|XmlNodeType.Element|  
-|Проверка с помощью сущности: &number;|Test with an entity: 123|XmlNodeType.Text|  
+|Проверка с помощью сущности: &number;|Проверка с помощью сущности: 123|XmlNodeType.Text|  
 |\</Item>|\</Item>|XmlNodeType.EndElement|  
 |\<Item>|\<Item>|XmNodeType.Element|  
 |test with a child element|test with a child element|XmlNodeType.Text|  
@@ -204,7 +204,7 @@ public class Sample
 |def|def|XmlNodeType.Text|  
 |\</Item>|\</Item>|XmlNodeType.EndElement|  
 |\<Item>|\<Item>|XmlNodeType.Element|  
-|Проверка с помощью сущности char: &\#65;|Test with a char entity: A|XmlNodeType.Text|  
+|Проверка с помощью сущности char: &\#65;|Проверка с помощью сущности char: А|XmlNodeType.Text|  
 |\</Item>|\</Item>|XmlNodeType.EndElement|  
 |\<!-- В этом элементе 14 элементов типа char.-->|\<-- В этом элементе 14 элементов типа char.-->|XmlNodeType.Comment|  
 |\<Item>|\<Item>|XmlNodeType.Element|  
@@ -218,6 +218,6 @@ public class Sample
   
  Чтобы добавить новые узлы в модель DOM, воспользуйтесь руководством [Вставка узлов в XML-документ](../../../../docs/standard/data/xml/inserting-nodes-into-an-xml-document.md). Чтобы удалить узлы из модели DOM, изучите статью [Удаление узлов, содержимого и значений из XML-документа](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md). Чтобы изменить узлы в модели DOM, см. статью [Изменение узлов, содержимого и значений в XML-документе](../../../../docs/standard/data/xml/modifying-nodes-content-and-values-in-an-xml-document.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

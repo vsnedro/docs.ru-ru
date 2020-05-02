@@ -8,7 +8,7 @@ dev_langs:
 ms.assetid: 911d4460-dd91-4958-85b2-2ca3299f9ec6
 ms.openlocfilehash: 6a0cc110c2b8bcd97b9f5c16a344db5a63046353
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75709807"
@@ -251,7 +251,7 @@ static XmlValueGetter DateTimeGetter(DateTime dateTime)
 Если компоновщиком модели содержимого является `xs:sequence`, возвращается только следующий примитив последовательности. Если компоновщиком модели содержимого является `xs:all` или `xs:choice`, возвращаются все допустимые примитивы, которые могут следовать в текущем контекстном элементе.
 
 > [!NOTE]
-> Если метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> вызывается сразу после вызова <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A>метода <xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A>, он возвращает все глобальные элементы.
+> Если метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> вызывается сразу после вызова <xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A> метода <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A>, он возвращает все глобальные элементы.
 
 Например, в следующей схеме XSD и XML-документе после проверки элемента `book` текущим контекстным элементом является элемент `book`. Метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> возвращает массив, который содержит один объект <xref:System.Xml.Schema.XmlSchemaElement>, представляющий элемент `title`. Если контекстом проверки является элемент `title`, метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> возвращает пустой массив. Если метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> вызывается после проверки элемента `title`, но перед проверкой элемента `description`, он возвращает массив, который содержит один объект <xref:System.Xml.Schema.XmlSchemaElement>, представляющий элемент `description`. Если метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> вызывается после проверки элемента `description`, он возвращает массив, который содержит один объект <xref:System.Xml.Schema.XmlSchemaAny>, представляющий символ-шаблон.
 
@@ -345,7 +345,7 @@ validator.ValidateEndElement(null);
 validator.ValidateEndElement(null);
 ```
 
- В примере в качестве входных данных используется следующий XML-код:
+ Этот пример принимает в качестве входных данных следующий XML:
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3c.org/2001/XMLSchema">
@@ -359,7 +359,7 @@ validator.ValidateEndElement(null);
 </xs:schema>
 ```
 
-В примере в качестве входных данных используется следующая схема XSD:
+Этот пример принимает в качестве входных данных следующую схему XSD:
 
 ```xml
 <book>
@@ -438,11 +438,11 @@ static void SchemaValidationEventHandler(object sender, ValidationEventArgs e)
 
 В следующей таблице описан переход между состояниями класса <xref:System.Xml.Schema.XmlSchemaValidator>, а также последовательность и вхождение вызовов методов, возможных в каждом состоянии.
 
-|Состояние|Переход|
+|Область|Переход|
 |-----------|----------------|
 |Validate|<xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A> (<xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> &#124; TopLevel*) <xref:System.Xml.Schema.XmlSchemaValidator.EndValidation%2A>|
 |TopLevel|<xref:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace%2A> &#124; <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> &#124; Element|
-|Элемент|<xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A>* (<xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A> содержимое\*)? <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> &#124;<br /><br /> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A>\* <xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A>&#124;<br /><br /> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A>\* <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A> содержимого\*&#124;|
+|Элемент|<xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A>* (<xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A> Content\*)? <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> &#124;<br /><br /> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A>\* <xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A> &#124;<br /><br /> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A>\* <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A> Content\* <xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A> &#124;|
 |Content|<xref:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace%2A> &#124; <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> &#124; Element|
 
 > [!NOTE]
@@ -476,12 +476,12 @@ static void SchemaValidationEventHandler(object sender, ValidationEventArgs e)
 |<xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A>|Если содержимое контекстного элемента имеет тип Mixed, метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> возвращает последовательность элементов, ожидаемых в следующей позиции.<br /><br /> Если содержимое контекстного элемента имеет тип TextOnly или Empty, метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> возвращает пустой массив.<br /><br /> Если содержимое контекстного элемента имеет тип ElementOnly, метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> возвращает последовательность элементов, ожидаемых в следующей позиции, однако ошибка проверки уже произошла.|<xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> возвращает список атрибутов контекстного элемента, не подвергнутых проверке.|То же, что и выше.|
 |<xref:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace%2A>|Если контекстный пробел является пробелом верхнего уровня, <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> возвращает пустой массив.<br /><br /> В противном случае поведение метода <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> аналогично <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A>.|Если контекстный пробел является пробелом верхнего уровня, <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> возвращает пустой массив.<br /><br /> В противном случае поведение метода <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> аналогично <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A>.|То же, что и выше.|
 |<xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>|Метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> возвращает последовательность элементов, ожидаемых после контекстного элемента (возможных одноуровневых элементов).|<xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> возвращает список атрибутов контекстного элемента, не подвергнутых проверке.<br /><br /> Если у контекстного элемента отсутствует родительский элемент, то метод <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> возвращает пустой список (контекстный элемент является родительским для текущего элемента, в котором вызывается метод <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>).|То же, что и выше.|
-|<xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A>|Аналогично <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|Аналогично <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|То же, что и выше.|
+|<xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A>|Эквивалентно <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|Эквивалентно <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|То же, что и выше.|
 |<xref:System.Xml.Schema.XmlSchemaValidator.EndValidation%2A>|Возвращает пустой массив.|Возвращает пустой массив.|То же, что и выше.|
 
 > [!NOTE]
 > Значения, возвращаемые различными свойствами класса <xref:System.Xml.Schema.XmlSchemaValidator>, не изменяются при вызовах методов, описанных в приведенной выше таблице.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Schema.XmlSchemaValidator>

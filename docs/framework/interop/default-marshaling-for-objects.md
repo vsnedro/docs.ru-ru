@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: c2ef0284-b061-4e12-b6d3-6a502b9cc558
 ms.openlocfilehash: e0de715a3ed33eedf212fc3e0e9930c9cbaa0a38
 ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/30/2019
 ms.locfileid: "73123589"
@@ -242,7 +242,7 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
 |Не поддерживается.|**VT_CY**|
 |Не поддерживается.|**VT_VARIANT**|
 
-Значение варианта COM определяется посредством вызова интерфейса **IConvertible.To** *Type*, в котором **To** *Type* — это подпрограмма преобразования, которая соответствует типу, возвращаемому из **IConvertible.GetTypeCode**. Например, объект, который возвращает **TypeCode.Double** из **IConvertible.GetTypeCode**, маршалируется как вариант COM типа **VT_R8**. Чтобы получить значение варианта (хранится в поле **dblVal** варианта COM), можно выполнить приведение к интерфейсу **IConvertible** и вызвать метод <xref:System.IConvertible.ToDouble%2A>.
+Значение варианта COM определяется путем вызова интерфейса **IConvertible.To** *Type*, где **To** *Type* — функция преобразования, соответствующая типу, возвращенному **IConvertible.GetTypeCode**. Например, объект, который возвращает **TypeCode.Double** из **IConvertible.GetTypeCode**, маршалируется как вариант COM типа **VT_R8**. Чтобы получить значение варианта (хранится в поле **dblVal** варианта COM), можно выполнить приведение к интерфейсу **IConvertible** и вызвать метод <xref:System.IConvertible.ToDouble%2A>.
 
 ## <a name="marshaling-variant-to-object"></a>Маршалинг варианта в объект
 
@@ -310,14 +310,14 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
 
 В следующей таблице описываются общие правила распространения для вариантов и объектов.
 
-|Исходный тип|Целевой тип|Возвращаемые изменения|
+|Исходный тип|Кому|Возвращаемые изменения|
 |----------|--------|-----------------------------|
-|**Вариант**  *v*|**Объект**  *o*|Никогда|
-|**Объект**  *o*|**Вариант**  *v*|Никогда|
-|**Вариант**   ***\****  *pv*|**Ссылочный объект**  *o*|Всегда|
-|**Ссылочный объект**  *o*|**Вариант**   ***\****  *pv*|Всегда|
-|**Вариант**  *v* **(VT_BYREF** *&#124;* **VT_\*)**|**Объект**  *o*|Никогда|
-|**Вариант**  *v* **(VT_BYREF** *&#124;* **VT_)**|**Ссылочный объект**  *o*|Только если тип не был изменен.|
+|**Variant**  *v*|**Object**  *o*|Никогда|
+|**Object**  *o*|**Variant**  *v*|Никогда|
+|**Variant**   ***\****  *pv*|**Ref Object**  *o*|Всегда|
+|**Ref object**  *o*|**Variant**   ***\****  *pv*|Всегда|
+|**Variant**  *v* **(VT_BYREF** *&#124;* **VT_\*)**|**Object**  *o*|Никогда|
+|**Variant**  *v* **(VT_BYREF** *&#124;* **VT_)**|**Ref Object**  *o*|Только если тип не был изменен.|
 
 ## <a name="see-also"></a>См. также
 

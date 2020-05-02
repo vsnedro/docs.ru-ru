@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: d077a3e8-bd81-4bdf-b6a3-323857ea30fb
 ms.openlocfilehash: 7379bac07de9b78369d3742fa3288f6fea6a573f
 ms.sourcegitcommit: 8c99457955fc31785b36b3330c4ab6ce7984a7ba
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/29/2019
 ms.locfileid: "75544984"
@@ -29,7 +29,7 @@ ms.locfileid: "75544984"
   
 В платформе .NET Framework имеются генераторы и компиляторы кода для языков <xref:Microsoft.CSharp.CSharpCodeProvider>, <xref:Microsoft.JScript.JScriptCodeProvider> и <xref:Microsoft.VisualBasic.VBCodeProvider>.  
   
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 - [Использование CodeDOM](using-the-codedom.md)
 
@@ -47,7 +47,7 @@ ms.locfileid: "75544984"
 
   Описание использования CodeDOM для создания класса, содержащего поля, свойства, метод, конструктор и точку входа.  
   
-## <a name="reference"></a>Справочные сведения  
+## <a name="reference"></a>Справочник  
 
 - <xref:System.CodeDom>  
 
@@ -59,4 +59,4 @@ ms.locfileid: "75544984"
   
 ## <a name="related-sections"></a>Связанные разделы  
 
-- [Краткий справочник по CodeDOM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100)) предоставляет разработчикам быстрый способ поиска элементов CodeDOM, представляющих элементы исходного кода.
+- [Краткий справочник по CodeDOM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100)) — здесь разработчики могут быстро найти элементы CodeDOM, представляющие элементы исходного кода.

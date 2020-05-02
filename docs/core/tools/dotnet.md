@@ -2,12 +2,12 @@
 title: Команда dotnet
 description: Узнайте о команде dotnet (универсальном драйвере для CLI .NET Core) и о том, как ее использовать.
 ms.date: 02/13/2020
-ms.openlocfilehash: 8692d419afd528bf49e1dc7dc1a7a5fd698b363b
-ms.sourcegitcommit: 07123a475af89b6da5bb6cc51ea40ab1e8a488f0
+ms.openlocfilehash: 6a08297499d955db44e342dc82fed25b7b9b8171
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80134075"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81739070"
 ---
 # <a name="dotnet-command"></a>Команда dotnet
 
@@ -22,26 +22,27 @@ ms.locfileid: "80134075"
 Чтобы получить сведения о среде и доступных командах, выполните следующие действия:
 
 ```dotnetcli
-dotnet [-h|--help] [--version] [--info]
-    [--list-runtimes] [--list-sdks]
+dotnet [--version] [--info] [--list-runtimes] [--list-sdks]
+
+dotnet -h|--help
 ```
 
 Выполнение команды (требуется установка пакета SDK):
 
 ```dotnetcli
-dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity]
+dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity <LEVEL>]
     [command-options] [arguments]
 ```
 
 Запуск приложения:
 
 ```dotnetcli
-dotnet [--additionalprobingpath] [--additional-deps]
-    [--fx-version]  [--roll-forward]
+dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 
-dotnet exec [--additionalprobingpath] [--additional-deps]
-    [--fx-version]  [--roll-forward]
+dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 ```
 
@@ -57,7 +58,7 @@ dotnet exec [--additionalprobingpath] [--additional-deps]
 
 - Запускает приложения .NET Core.
 
-  Для запуска приложения необходимо указать путь к его файлу `.dll`. Например, команда `dotnet myapp.dll` запускает приложение `myapp`. Дополнительные сведения о параметрах развертывания см. в статье [Развертывание приложений .NET Core](../deploying/index.md).
+  Для запуска приложения необходимо указать путь к его файлу `.dll`.  Чтобы запустить приложение, необходимо найти и выполнить точку входа, которая в случае использования консольных приложений является методом `Main`. Например, команда `dotnet myapp.dll` запускает приложение `myapp`. Дополнительные сведения о параметрах развертывания см. в статье [Развертывание приложений .NET Core](../deploying/index.md).
 
 ## <a name="options"></a>Параметры
 
@@ -77,7 +78,7 @@ dotnet exec [--additionalprobingpath] [--additional-deps]
 
 - **`--list-runtimes`**
 
-  Выводит список установленных сред выполнения .NET Core.
+  Выводит список установленных сред выполнения .NET Core. Версия x86 пакета SDK содержит только среды выполнения x86, а в версии x64 пакета SDK содержатся только среды выполнения x64.
 
 - **`--list-sdks`**
 
@@ -263,7 +264,7 @@ dotnet myapp.dll
 
 - `DOTNET_NOLOGO`
 
-  Указывает, отображаются ли сообщения приветствия и данные телеметрии .NET Core при первом запуске. Установите значение `true` для отключения звука этих сообщений (принимаются значения `true`, `1` или `yes`) или установите значение `false` для разрешения звука (принимаются значения `false`, `0` или `no`). Если не задано, по умолчанию используется `false` и при первом запуске будут отображаться сообщения. Обратите внимание, что этот флаг не влияет на данные телеметрии (см. `DOTNET_CLI_TELEMETRY_OPTOUT`, чтобы отменить отправку телеметрии).
+  Указывает, отображаются ли сообщения приветствия и данные телеметрии .NET Core при первом запуске. Установите значение `true` для отключения звука этих сообщений (принимаются значения `true`, `1` или `yes`) или установите значение `false` для разрешения звука (принимаются значения `false`, `0` или `no`). Если не задано, по умолчанию используется `false` и при первом запуске будут отображаться сообщения. Этот флаг не влияет на данные телеметрии (см. `DOTNET_CLI_TELEMETRY_OPTOUT`, чтобы отменить отправку телеметрии).
 
 - `DOTNET_CLI_TELEMETRY_OPTOUT`
 

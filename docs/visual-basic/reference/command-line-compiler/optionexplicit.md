@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
 ms.openlocfilehash: 37ccd14dae0ebba2535185f2646e312d9bb70390
 ms.sourcegitcommit: 43d10ef65f0f1fd6c3b515e363bde11a3fcd8d6d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2020
 ms.locfileid: "78266733"
 ---
 # <a name="-optionexplicit"></a>-optionexplicit
-Вызывает сообщение об ошибках компилятора, если переменные не объявляются до их использования.  
+Заставляет компилятор сообщать об ошибках, если переменные не объявляются до их использования.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -27,25 +27,25 @@ ms.locfileid: "78266733"
   
 ## <a name="arguments"></a>Аргументы  
  `+` &#124; `-`  
- Необязательный параметр. Указать, `-optionexplicit+` чтобы требовать явного объявления переменных. Опция `-optionexplicit+` по умолчанию и `-optionexplicit`такая же, как . Опция `-optionexplicit-` позволяет неявно декларирование переменных.  
+ Необязательный элемент. Чтобы сделать явное объявление переменных обязательным, укажите `-optionexplicit+`. Параметр `-optionexplicit+` используется по умолчанию и аналогичен параметру `-optionexplicit`. Используйте параметр `-optionexplicit-`, чтобы разрешить неявное объявление переменных.  
   
-## <a name="remarks"></a>Remarks  
- Если файл исходного кода содержит [заявление Option Explicit,](../../../visual-basic/language-reference/statements/option-explicit-statement.md)заявление переопределяет настройки `-optionexplicit` компилятора командной строки.  
+## <a name="remarks"></a>Примечания  
+ Если файл исходного кода содержит [оператор Option Explicit](../../../visual-basic/language-reference/statements/option-explicit-statement.md), этот оператор переопределяет параметр компилятора командной строки `-optionexplicit`.  
   
-### <a name="to-set--optionexplicit-in-the-visual-studio-ide"></a>Установить -опцию в Visual Studio IDE  
+### <a name="to-set--optionexplicit-in-the-visual-studio-ide"></a>Как задать параметр -optionexplicit в интегрированной среде разработки Visual Studio  
   
-1. Выберите проект в **Обозревателе решений**. В меню **Проект** выберите **Свойства**.
+1. Выберите проект в **Обозревателе решений**. В меню **Проект** выберите пункт **Свойства**.
   
 2. Откройте вкладку **Компиляция**.  
   
-3. Измените значение в поле **Option Explicit.**  
+3. Измените значение в поле **Option Explicit**.  
   
 ## <a name="example"></a>Пример  
- Следующий код компилируется при `-optionexplicit-` использовании.  
+ Следующий код компилируется, когда используется параметр `-optionexplicit-`.  
   
  [!code-vb[VbVbalrCompiler#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionExplicitOff.vb#5)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)

@@ -1,5 +1,5 @@
 ---
-title: Таймеры
+title: таймеры
 description: Узнайте, какие таймеры .NET можно использовать в многопоточной среде.
 ms.date: 07/03/2018
 ms.technology: dotnet-standard
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - timers, about timers
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
 author: pkulikov
-ms.openlocfilehash: d7d1fa13b02fe7425fa9b4cb81ba20297a23fe4b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d463eb2a8d598dc5ba9b2fb51a6fc08c563e6fe4
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73128955"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81739487"
 ---
-# <a name="timers"></a>Таймеры
+# <a name="timers"></a>таймеры
 
 .NET предоставляет два таймера, которые можно использовать в многопоточной среде:
 
@@ -35,7 +35,7 @@ ms.locfileid: "73128955"
 
 ## <a name="the-systemthreadingtimer-class"></a>Класс System.Threading.Timer
 
-Класс <xref:System.Threading.Timer?displayProperty=nameWithType> позволяет непрерывно вызывать делегат через определенные интервалы времени. Этот класс также можно использовать для планирования одного вызова к делегату через заданный интервал времени. Делегат выполняется в потоке <xref:System.Threading.ThreadPool>.
+Класс <xref:System.Threading.Timer?displayProperty=nameWithType> позволяет непрерывно вызывать делегат через определенные интервалы времени. Этот класс также можно использовать, чтобы запланировать один вызов делегата через указанный интервал времени. Делегат выполняется в потоке <xref:System.Threading.ThreadPool>.
 
 При создании объекта <xref:System.Threading.Timer?displayProperty=nameWithType> вы указываете делегат <xref:System.Threading.TimerCallback>, который определяет метод обратного вызова, необязательный объект состояния, который передается обратному вызову, временную задержку до первого вызова обратного вызова и интервал времени между вызовами обратного вызова. Чтобы отменить ожидающий таймер, вызовите метод <xref:System.Threading.Timer.Dispose%2A?displayProperty=nameWithType>.
 
@@ -55,7 +55,7 @@ ms.locfileid: "73128955"
 
 Дополнительные сведения и примеры см. в разделе <xref:System.Timers.Timer?displayProperty=nameWithType>.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Timer?displayProperty=nameWithType>
 - <xref:System.Timers.Timer?displayProperty=nameWithType>

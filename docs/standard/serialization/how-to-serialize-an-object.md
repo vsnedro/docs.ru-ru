@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: a1207d05-32b2-4953-8582-959607991227
 ms.openlocfilehash: 3e24d890d47747c51086214530073fc551321079
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78159888"
@@ -50,7 +50,7 @@ ms.locfileid: "78159888"
     myWriter.Close();  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Введение в сериализацию XML](../../../docs/standard/serialization/introducing-xml-serialization.md)
 - [Практическое руководство. Десериализация объекта](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

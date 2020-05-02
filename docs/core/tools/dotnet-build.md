@@ -2,18 +2,18 @@
 title: Команда dotnet build
 description: Команда dotnet build выполняет сборку проекта и всех его зависимостей.
 ms.date: 02/14/2020
-ms.openlocfilehash: 27deca4ab1c12314db5214c73660862a8a57a398
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 1022df059493c7e045f81d4be93dff2fdab77eb1
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463713"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102844"
 ---
 # <a name="dotnet-build"></a>dotnet build
 
 **Эта статья относится к следующему:** ✔️ пакет SDK для .NET Core 2.x и более поздних версий
 
-## <a name="name"></a>Имя
+## <a name="name"></a>name
 
 `dotnet build` — собирает проект и все его зависимости.
 
@@ -29,7 +29,7 @@ dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
 dotnet build -h|--help
 ```
 
-## <a name="description"></a>Описание:
+## <a name="description"></a>Описание
 
 Команда `dotnet build` выполняет сборку проекта и его зависимостей в набор двоичных файлов. Эти двоичные файлы содержат код проекта в виде файлов на промежуточном языке (IL) с расширением *DLL*.  В зависимости от типа и параметров проекта могут быть включены другие файлы, например:
 
@@ -43,9 +43,13 @@ dotnet build -h|--help
 
 Для исполняемых проектов, предназначенных для .NET Core 3.0 и более поздних версий, зависимости библиотек копируются в выходную папку. Это означает, что если нет никакой другой логики для публикации (например, как у веб-проектов), выходные данные сборки можно развертывать.
 
-Для сборки нужен файл *project.assets.json*, содержащий список зависимостей приложения. Он создается при выполнении команды [`dotnet restore`](dotnet-restore.md). В отсутствие файла ресурсов инструментарий не может разрешать доступ к ссылочным сборкам, что приводит к ошибкам. При использовании пакета SDK для .NET Core 1.x необходимо было явным образом выполнять команду `dotnet restore` перед выполнением `dotnet build`. Начиная с версии SDK для .NET Core 2.0 команда `dotnet restore` выполняется автоматически при выполнении `dotnet build`. Чтобы отключить неявное восстановление при выполнении команды сборки, можно передать параметр `--no-restore`.
+### <a name="implicit-restore"></a>Неявное восстановление
+
+Для сборки нужен файл *project.assets.json*, содержащий список зависимостей приложения. Он создается при выполнении команды [`dotnet restore`](dotnet-restore.md). В отсутствие файла ресурсов инструментарий не может разрешать доступ к ссылочным сборкам, что приводит к ошибкам.
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
+
+### <a name="executable-or-library-output"></a>Выходные данные исполняемого файла или библиотеки
 
 То, является ли проект исполняемым, определяется свойством `<OutputType>` в файле проекта. Следующий пример описывает проект, который создает исполняемый код:
 
@@ -119,7 +123,7 @@ dotnet build -h|--help
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Задает уровень детализации MSBuild. Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`. Значение по умолчанию: `minimal`.
+  Задает уровень детализации MSBuild. Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`. Значение по умолчанию — `minimal`.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

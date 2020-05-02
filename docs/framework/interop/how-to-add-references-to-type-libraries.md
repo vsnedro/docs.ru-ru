@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: f5cfa6ba-cc25-4017-82cd-ba7391859113
 ms.openlocfilehash: 1e82a499b77cc6d1d49eaf13e243201bbdc4c5fe
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79181444"
@@ -27,7 +27,7 @@ ms.locfileid: "79181444"
   
 4. Выберите библиотеку типов из списка или найдите файл с расширением .TLB.  
   
-5. Выберите **OK**.  
+5. Нажмите кнопку **ОК**.  
   
 6. В обозревателе решений откройте контекстное меню добавленной ссылки и выберите **Свойства**.  
   
@@ -38,14 +38,14 @@ ms.locfileid: "79181444"
   
 ### <a name="to-add-a-reference-to-a-type-library-for-command-line-compilation"></a>Добавление ссылки на библиотеку типов для компиляции командной строки  
   
-1. Создайте сборку взаимодействия, как описывается в разделе [Практическое руководство. Создание сборок взаимодействия из библиотек типов](how-to-generate-interop-assemblies-from-type-libraries.md).  
+1. Сгенерируйте сборку взаимодействия, как описано в разделе [Практическое руководство. Создание сборок взаимодействия из библиотек типов](how-to-generate-interop-assemblies-from-type-libraries.md).  
   
-2. Используйте [опцию компилятора -link (Параметры компилятора)](../../csharp/language-reference/compiler-options/link-compiler-option.md) или [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) с именем сборки interop для встраиваемого типа информации для типов COM в исполняемые.  
+2. Для внедрения информации о типах COM в исполняемые файлы используйте параметр компилятора [-link (параметры компилятора C#)](../../csharp/language-reference/compiler-options/link-compiler-option.md) или [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) с именем сборки взаимодействия.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Импорт библиотеки типов в виде сборки](importing-a-type-library-as-an-assembly.md)
 - [Предоставление COM-компонентов платформе .NET Framework](exposing-com-components.md)
-- [Пошаговое руководство. Внедрение типов из управляемых сборок в Visual Studio](../../standard/assembly/embed-types-visual-studio.md)
-- [-ссылка (Параметры компилятора)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
-- [-ссылка (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
+- [Пошаговое руководство: Внедрение типов из управляемых сборок в Visual Studio](../../standard/assembly/embed-types-visual-studio.md)
+- [-link (параметры компилятора C#)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)

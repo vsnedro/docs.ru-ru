@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. сборка сборки .NET Framework с одним файлом
+title: Практическое руководство. Создание однофайловой сборки .NET Framework
 ms.date: 08/20/2019
 helpviewer_keywords:
 - assembly manifest, single-file assemblies
@@ -13,14 +13,14 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
-ms.openlocfilehash: af1bfb89b01a316a858cbb45bf19a26a16d90016
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: MT
+ms.openlocfilehash: b7cb06da74a21dab6f60f0d4c3ac1748fcbe4526
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119950"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81644305"
 ---
-# <a name="how-to-build-a-net-framework-single-file-assembly"></a>Пошаговое руководство. сборка сборки .NET Framework с одним файлом
+# <a name="how-to-build-a-net-framework-single-file-assembly"></a>Практическое руководство. Создание однофайловой сборки .NET Framework
 
 Однофайловая сборка, являясь простейшим типом сборки, содержит данные о типе и реализации, а также [манифест сборки](../../standard/assembly/manifest.md). Для создания однофайловой сборки, ориентированной на .NET Framework, можно использовать компиляторы командной строки или Visual Studio. По умолчанию компилятор создает файл сборки с расширением *EXE*.
 
@@ -70,7 +70,7 @@ vbc -out:myAssembly.exe myCode.vb
 
 Чтобы создать библиотечную сборку, в командной строке введите следующую команду:
 
-\<*команда компилятора*>  **/t:library** \<*имя модуля*>
+\<*команда компилятора*>  **-t:library** \<*имя модуля*>
 
 В этой команде *команда компилятора* — команда компилятора для языка, используемого в модуле кода, а *имя модуля* — имя компилируемого в сборку модуля кода. Можно также использовать другие параметры компилятора, такие как **-out:** .
 
@@ -88,5 +88,5 @@ vbc -out:myCodeLibrary.dll -t:library myCode.vb
 
 - [Создание сборок](../../standard/assembly/create.md)
 - [Многофайловые сборки](multifile-assemblies.md)
-- [Как построить многофайловую сборку](build-multifile-assembly.md)
-- [Программирование с использованием сборок](../../standard/assembly/program.md)
+- [Практическое руководство. Создание многофайловой сборки](build-multifile-assembly.md)
+- [Программирование с использованием сборок](../../standard/assembly/index.md)

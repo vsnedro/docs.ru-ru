@@ -1,24 +1,26 @@
 ---
 title: Модификатор static. Справочник по C#
-ms.date: 01/22/2020
+ms.date: 04/22/2020
 f1_keywords:
 - static
 - static_CSharpKeyword
 helpviewer_keywords:
 - static keyword [C#]
 ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
-ms.openlocfilehash: e7671e9db488a7b50f4ed736864d6fa8d95eef1a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 771bcfdac4c4bf27c15da4bc374d804405317a78
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76744661"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102064"
 ---
 # <a name="static-c-reference"></a>static (Справочник по C#)
 
+На этой странице приводятся сведения о ключевом слове модификатора `static`. Ключевое слово `static` также является частью директивы [`using static`](using-static.md).
+
 Модификатор `static` используется для объявления статического члена, принадлежащего собственно типу, а не конкретному объекту. Модификатор `static` можно использовать для объявления классов `static`. В классах, интерфейсах и структурах вы можете добавить модификатор `static` к полям, методам, свойствам, операторам, событиям и конструкторам. Модификатор `static` запрещено использовать с индексаторами или методами завершения. Дополнительные сведения см. в статье [Статические классы и члены статических классов](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
-## <a name="example"></a>Пример
+## <a name="example---static-class"></a>Пример: статический класс
 
 Следующий класс объявляется как `static` и содержит только методы `static`:
 
@@ -47,13 +49,13 @@ Console.WriteLine(MyBaseC.MyStruct.x);
 
 В качестве демонстрации членов `static` рассмотрим класс, представляющий сотрудника компании. Предположим, что этот класс содержит метод для подсчета сотрудников и поле для хранения их числа. И метод, и поле не принадлежат никакому экземпляру сотрудника. Они принадлежат всему классу сотрудников. В связи с этим они должны объявляться как члены `static` класса.
 
-## <a name="example"></a>Пример
+## <a name="example---static-field-and-method"></a>Пример: статическое поле и метод
 
 В этом примере выполняется чтение имени и идентификатора нового сотрудника, увеличение счетчика сотрудников на единицу, а также отображение сведений о новом сотруднике и новом числе сотрудников. Эта программа считывает текущее число сотрудников с клавиатуры.
 
 [!code-csharp[csrefKeywordsModifiers#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#20)]  
 
-## <a name="example"></a>Пример
+## <a name="example---static-initialization"></a>Пример: статическая инициализация
 
 В этом примере показано, как можно инициализировать поле `static`, используя другое поле `static`, которое еще не объявлено. Результаты будут неопределенными до тех пор, пока вы явно не присвоите значение полю `static`.
 
@@ -63,10 +65,11 @@ Console.WriteLine(MyBaseC.MyStruct.x);
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)
 - [Ключевые слова в C#](index.md)
 - [Модификаторы](index.md)
+- [Директива using static](using-static.md)
 - [Статические классы и члены статических классов](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)

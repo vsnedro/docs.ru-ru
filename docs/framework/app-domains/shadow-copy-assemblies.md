@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: de8b8759-fca7-4260-896b-5a4973157672
 ms.openlocfilehash: 9fc8a4aeeeca40f71ed9114a9db40b9a56e5fe6b
 ms.sourcegitcommit: 81ad1f09b93f3b3e6706a7f2e4ddf50ef229ea3d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74204562"
@@ -18,7 +18,7 @@ ms.locfileid: "74204562"
 Теневое копирование позволяет обновлять используемые в домене приложения сборки без выгрузки домена приложения. Это особенно полезно для приложений, которые должны быть доступны постоянно, таких как сайты ASP.NET.
 
 > [!IMPORTANT]
-> Теневое копирование не поддерживается в приложениях Магазина Windows 8. x.
+> Теневое копирование не поддерживается в приложениях Магазина Windows 8.x.
 
 При загрузке сборки среда CLR блокирует ее файл, поэтому его нельзя обновить до тех пор, пока сборка не выгружена. Единственный способ выгрузить сборку из домена приложения — выгрузить сам домен. Таким образом, в обычных условиях сборку нельзя обновить на диске до тех пор, пока не выгружены все домены приложений, использующие ее.
 
@@ -82,7 +82,7 @@ ms.locfileid: "74204562"
 
 Класс <xref:System.AppDomain> имеет несколько методов, например <xref:System.AppDomain.SetShadowCopyFiles%2A> и <xref:System.AppDomain.ClearShadowCopyPath%2A>, которые можно использовать для управления теневым копированием в домене приложения, но в .NET Framework версии 2.0 они были помечены как устаревшие. Рекомендуемый способ настройки теневого копирования для домена приложения — это использование свойств класса <xref:System.AppDomainSetup>.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.CachePath%2A?displayProperty=nameWithType>

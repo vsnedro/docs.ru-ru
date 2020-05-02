@@ -6,12 +6,12 @@ ms.author: adegeo
 ms.date: 12/04/2019
 ms.custom: updateeachrelease
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: 3efc54cea7e10bc21a472a7fa9d4026e305be79a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3a78acee6cf427085e98f14353fc2c0ac65d3d80
+ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79397983"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "81645339"
 ---
 # <a name="how-to-check-that-net-core-is-already-installed"></a>Проверка того, установлена ли платформа .NET Core
 
@@ -166,11 +166,56 @@ Microsoft.NETCore.App 3.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ::: zone-end
 
+## <a name="check-for-install-folders"></a>Проверка папок установки
+
+Возможно, платформа .NET Core установлена, но не добавлена в переменную `PATH` для профиля операционной системы или пользователя. Выполнение команд из предыдущих разделов может не работать. В качестве альтернативы можно проверить существование папок установки .NET Core.
+
+При установке с помощью установщика или сценария .NET Core устанавливается в стандартную папку. В большинстве случаев установщик или сценарий, который вы используете для установки .NET Core, предоставляет возможность установки в другую папку. Если вы решили выполнить установить в другую папку, измените начало пути к папке.
+
+::: zone pivot="os-windows"
+
+- **Исполняемый файл dotnet**\
+_C:\\program files\\dotnet\\dotnet.exe_
+
+- **Пакет SDK для .NET**\
+_C:\\program files\\dotnet\\sdk\\{версия}\\_
+
+- **Среда выполнения .NET**\
+_C:\\program files\\dotnet\\shared\\{тип среды выполнения}\\{версия}\\_
+
+::: zone-end
+
+::: zone pivot="os-linux"
+
+- **Исполняемый файл dotnet**\
+_/home/user/share/dotnet/dotnet_
+
+- **Пакет SDK для .NET**\
+_/home/user/share/dotnet/sdk/{version}/_
+
+- **Среда выполнения .NET**\
+_/home/user/share/dotnet/shared/{тип среды выполнения}/{версия}/_
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+- **Исполняемый файл dotnet**\
+_/usr/local/share/dotnet/dotnet_
+
+- **Пакет SDK для .NET**\
+_/usr/local/share/dotnet/sdk/{версия}/_
+
+- **Среда выполнения .NET**\
+_/usr/local/share/dotnet/shared/{тип среды выполнения}/{версия}/_
+
+::: zone-end
+
 ## <a name="more-information"></a>Дополнительные сведения
 
 Версии пакета SDK и среды выполнения можно просмотреть с помощью команды `dotnet --info`. Вы также получите другие сведения о среде, такие как версия операционной системы и идентификатор среды выполнения (RID).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - [Установка среды выполнения .NET Core](runtime.md).
 - [Установка пакета SDK для .NET Core](sdk.md).

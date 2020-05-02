@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: ad3fa320-4b8f-4e5c-b549-01157591007a
 ms.openlocfilehash: 05cc41cef7da07581d4f0ec8e584858b913d1a80
 ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75710275"
@@ -41,7 +41,7 @@ ms.locfileid: "75710275"
   
 |XmlResolver, свойство|Функция|Примечания|  
 |--------------------------|--------------|-----------|  
-|Класс **XmlDocument** использует тот же класс **XmlResolver**, что и объект **XmlReader**.|В **XmlDocument** используется **XmlResolver**, назначенный ранее для **XmlReader**.<br /><br /> Вы не можете установить свойство **XmlDocument.Resolver** вне зависимости от уровня доверия **XmlDocument**, поскольку оно получает значение **XmlResolver** из **XmlReader**. Вы не можете переопределить параметры для **xmlreaders** **XmlResolver** , установив свойство **XmlResolver** объекта **XmlDocument**.|В качестве **XmlReader** можно использовать **XmlTextReader**, проверяющий <xref:System.Xml.XmlReader> или пользовательский модуль чтения данных. Если используемое средство чтения поддерживает разрешение сущностей, внешние сущности разрешаются. Если переданный модуль чтения не поддерживает ссылки на сущности, ссылки на сущности не разрешаются.|  
+|Класс **XmlDocument** использует тот же класс **XmlResolver**, что и объект **XmlReader**.|В **XmlDocument** используется **XmlResolver**, назначенный ранее для **XmlReader**.<br /><br /> Вы не можете установить свойство **XmlDocument.Resolver** вне зависимости от уровня доверия **XmlDocument**, поскольку оно получает значение **XmlResolver** из **XmlReader**. Нельзя переопределять параметры **XmlResolver** класса **XmlReader**, устанавливая свойство **XmlResolver** для класса **XmlDocument**.|В качестве **XmlReader** можно использовать **XmlTextReader**, проверяющий <xref:System.Xml.XmlReader> или пользовательский модуль чтения данных. Если используемое средство чтения поддерживает разрешение сущностей, внешние сущности разрешаются. Если переданный модуль чтения не поддерживает ссылки на сущности, ссылки на сущности не разрешаются.|  
   
  Если настроить класс XmlResolver так, чтобы он содержал корректные учетные данные, можно получить доступ к внешним ресурсам.  
   
@@ -50,6 +50,6 @@ ms.locfileid: "75710275"
   
  Дополнительные сведения см. в подразделе "Примечания" на справочной странице <xref:System.Xml.XmlResolver>.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Task-based Asynchronous Pattern, .NET Framework support for
 - .NET Framework, asynchronous design patterns
 ms.assetid: fab6bd41-91bd-44ad-86f9-d8319988aa78
-ms.openlocfilehash: 6218aa1a7b813601e9b718abf862e20a7cbcd313
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e09ed853598dcbb13cc8dc3fe963276e4b5e974d
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73124299"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81739648"
 ---
 # <a name="implementing-the-task-based-asynchronous-pattern"></a>Реализация асинхронного шаблона, основанного на задачах
 Можно реализовать асинхронную модель на основе задач (TAP) тремя способами: с помощью компиляторов C# и Visual Basic в Visual Studio, вручную или путем сочетания этих методов. Каждый метод подробно обсуждается в следующих разделах. Модель TAP можно применять для создания асинхронных операций, связанных с операциями ввода-вывода и ограниченных по скорости вычислений. В разделе [Рабочие нагрузки](#workloads) рассматриваются операции каждого типа.
@@ -24,7 +24,7 @@ ms.locfileid: "73124299"
 ## <a name="generating-tap-methods"></a>Создание методов TAP
 
 ### <a name="using-the-compilers"></a>С помощью компиляторов
-Начиная с версии .NET Framework 4.5 любой метод, который помечен ключевым словом `async` (`Async` в Visual Basic), считается асинхронным, и компиляторы C# и Visual Basic применяют к нему преобразования, необходимые для асинхронной реализации метода по модели TAP. Асинхронный метод должен возвращать объект  <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> или <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>. Во втором случае функция должна возвращать `TResult`, а компилятор обеспечивает доступность этого результата через создаваемый объект задачи. Аналогичным образом любые исключения, которые не обрабатываться в теле метода маршалируются в выходную задачу и вызывают окончание результирующей задачи в состоянии <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType>. Исключение возникает, когда <xref:System.OperationCanceledException> (или производный тип) остаются необработанными. В этом случае результирующая задача заканчивается в состоянии <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType>.
+Начиная с версии .NET Framework 4.5 любой метод, который помечен ключевым словом `async` (`Async` в Visual Basic), считается асинхронным, и компиляторы C# и Visual Basic применяют к нему преобразования, необходимые для асинхронной реализации метода по модели TAP. Асинхронный метод должен возвращать объект  <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> или <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>. Во втором случае функция должна возвращать `TResult`, а компилятор обеспечивает доступность этого результата через создаваемый объект задачи. Аналогичным образом любые исключения, которые не обрабатываться в теле метода маршалируются в выходную задачу и вызывают окончание результирующей задачи в состоянии <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType>. Исключение из этого правила возникает, когда <xref:System.OperationCanceledException> (или производный тип) остаются необработанными. В этом случае результирующая задача заканчивается в состоянии <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType>.
 
 ### <a name="generating-tap-methods-manually"></a>Создание методов TAP вручную
 Можно реализовать шаблон TAP для улучшения контроля над реализацией вручную. Компилятор использует общую контактную зону, предоставленную из пространства имен <xref:System.Threading.Tasks?displayProperty=nameWithType>, и вспомогательные типы в пространстве имен <xref:System.Runtime.CompilerServices?displayProperty=nameWithType>. Чтобы реализовать шаблон TAP самостоятельно, необходимо создать объект <xref:System.Threading.Tasks.TaskCompletionSource%601>, выполнить асинхронную операцию и после ее завершения вызвать метод <xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult%2A>, <xref:System.Threading.Tasks.TaskCompletionSource%601.SetException%2A> или <xref:System.Threading.Tasks.TaskCompletionSource%601.SetCanceled%2A>, или версии одного из этих методов `Try`. При реализации метода TAP вручную необходимо выполнить результирующую задачу после завершения представленной асинхронной операции. Пример:
@@ -99,8 +99,8 @@ ms.locfileid: "73124299"
 
 Этот пример также демонстрирует, как один токен отмены может направляться через несколько асинхронных операций. Дополнительные сведения см. в разделе об отмене операции в статье [Использование асинхронного шаблона, основанного на задачах](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) (Асинхронный шаблон, основанный на задачах (TAP))
-- [Использование асинхронной модели на основе задач](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md)
+- [Consuming the Task-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md)
 - [Взаимодействие с другими асинхронными шаблонами и типами](../../../docs/standard/asynchronous-programming-patterns/interop-with-other-asynchronous-patterns-and-types.md)

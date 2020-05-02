@@ -2,12 +2,12 @@
 title: Команда dotnet add reference
 description: Команду dotnet add reference удобно использовать для добавления ссылок между проектами.
 ms.date: 02/14/2020
-ms.openlocfilehash: f2bd67d181784c4858b8971d05053d196df7818e
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: b261e24ed6a9d5bd489d317d2663b1420b5c34ff
+ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463735"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82158324"
 ---
 # <a name="dotnet-add-reference"></a>dotnet add reference
 
@@ -52,7 +52,7 @@ dotnet add reference -h|--help
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Добавляет ссылки на проекты только при ориентации на конкретную [платформу](../../standard/frameworks.md).
+  Добавляет ссылки на проект только при ориентации на конкретную [платформу](../../standard/frameworks.md) в формате TFM.
 
 - **`-h|--help`**
 
@@ -60,7 +60,7 @@ dotnet add reference -h|--help
 
 - **`--interactive`**
 
-  Позволяет остановить команду и дождаться, пока пользователь введет данные или выполнит действие (например, завершит проверку подлинности). Доступно, начиная с пакета SDK для .NET Core 3.0.
+  Позволяет остановить команду и дождаться, пока пользователь введет данные или выполнит действие (как правило, для завершения проверки подлинности). Доступно, начиная с пакета SDK для .NET Core 3.0.
 
 ## <a name="examples"></a>Примеры
 

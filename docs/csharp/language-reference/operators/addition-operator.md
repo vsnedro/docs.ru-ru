@@ -1,6 +1,6 @@
 ---
 title: + и += (операторы). Справочник по C#
-ms.date: 05/24/2019
+ms.date: 04/23/2020
 f1_keywords:
 - +_CSharpKeyword
 - +=_CSharpKeyword
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - event subscription [C#]
 - += operator [C#]
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
-ms.openlocfilehash: cafd07f4b4aefdcc4b43750d61c155fe3d65aa46
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 18364d80b8117fd4074c2c4231eac07c76829bb3
+ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398103"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82135741"
 ---
 # <a name="-and--operators-c-reference"></a>Операторы + и +=. Справочник по C#
 
@@ -28,7 +28,7 @@ ms.locfileid: "79398103"
 
 ## <a name="string-concatenation"></a>Объединение строк
 
-Если один или оба операнда имеют тип [string](../builtin-types/reference-types.md#the-string-type), оператор `+` сцепляет строковые представления этих операндов.
+Если один или оба операнда имеют тип [string](../builtin-types/reference-types.md#the-string-type), оператор `+` сцепляет строковые представления этих операндов (строковое представление `null` является пустой строкой):
 
 [!code-csharp-interactive[string concatenation](snippets/AdditionOperator.cs#AddStrings)]
 
@@ -76,7 +76,7 @@ x = x + y
 
 См. дополнительные сведения об [унарном операторе сложение](~/_csharplang/spec/expressions.md#unary-plus-operator) и [операторе сложения](~/_csharplang/spec/expressions.md#addition-operator) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
 - [Операторы в C#](index.md)

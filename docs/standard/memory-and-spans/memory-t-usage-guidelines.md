@@ -4,12 +4,12 @@ ms.date: 10/01/2018
 helpviewer_keywords:
 - Memory&lt;T&gt; and Span&lt;T&gt; best practices
 - using Memory&lt;T&gt; and Span&lt;T&gt;
-ms.openlocfilehash: 0a614f628faa98be778c627573e4dddc462c9107
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b89969f212da6ac90d0fb0d1bf388626e136b92e
+ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73121960"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82158597"
 ---
 # <a name="memoryt-and-spant-usage-guidelines"></a>Рекомендации по использованию структур Memory\<T> и Span\<T>
 
@@ -23,7 +23,7 @@ ms.locfileid: "73121960"
 
 - **Владение**. Владелец экземпляра буфера отвечает за управление его жизненным циклом, включая удаление буфера, который больше не используется. У буфера может быть только один владелец. Владельцем обычно является компонент, который создал буфер или получил его из фабрики. Право владения можно передавать. **Компонент А** может передать контроль над буфером **компоненту Б**, после чего **компонент А** больше не сможет использовать буфер, а **компонент Б** будет отвечать за удаление буфера, когда необходимость в нем исчезнет.
 
-- **Использование**. Объект-получатель экземпляра буфера может выполнять чтение и запись в буфер. У буфера одновременно может быть только один объект-получатель, если не обеспечен какой-либо внешний механизм синхронизации. Обратите внимание, что объектом-получателя буфера не обязательно является владелец буфера.
+- **Использование**. Объект-получатель экземпляра буфера может выполнять чтение и запись в буфер. У буфера одновременно может быть только один объект-получатель, если не обеспечен какой-либо внешний механизм синхронизации. Активным объектом-получателем буфера необязательно является владелец буфера.
 
 - **Аренда**. Аренда — это срок, в течение которого определенный компонент может быть объектом-получателем буфера.
 
@@ -86,7 +86,7 @@ class Program
 
 - Методы `WriteInt32ToBuffer` и `DisplayBufferToConsole` принимают <xref:System.Memory%601> как общедоступный API-интерфейс. Таким образом, они являются объектами-получателями буфера, выступая в этой роли поочередно.
 
-При этом метод `WriteInt32ToBuffer` позволяет выполнить запись значения в буфер, а метод `DisplayBufferToConsole` — нет. Чтобы отобразить этот факт, последний мог бы принять аргумент типа <xref:System.ReadOnlyMemory%601>. Дополнительную информацию о <xref:System.ReadOnlyMemory%601> см. в разделе [Правило 2. Используйте ReadOnlySpan\<T> или ReadOnlyMemory\<T>, если буфер должен быть доступен только для чтения](#rule-2).
+При этом метод `WriteInt32ToBuffer` позволяет выполнить запись значения в буфер, а метод `DisplayBufferToConsole` — нет. Чтобы отобразить этот факт, последний мог бы принять аргумент типа <xref:System.ReadOnlyMemory%601>. Дополнительные сведения о <xref:System.ReadOnlyMemory%601> см. в разделе [Правило 2. Используйте ReadOnlySpan\<T> или ReadOnlyMemory\<T>, если буфер должен быть доступен только для чтения](#rule-2).
 
 ### <a name="ownerless-memoryt-instances"></a>Экземпляры Memory\<T> без владельца
 
@@ -110,7 +110,7 @@ class Program
 
 - Хотя хранимая в стеке структура <xref:System.Span%601> оптимизирует производительность, что делает <xref:System.Span%601> предпочтительным типом для работы с блоком памяти, структура <xref:System.Span%601> также подвержена ряду важных ограничений. Важно понимать, когда следует использовать <xref:System.Span%601>, а когда — <xref:System.Memory%601>.
 
-Ниже приведены наши рекомендации для успешного использования <xref:System.Memory%601> и связанных типов. Обратите внимание, что рекомендации по использованию <xref:System.Memory%601> и <xref:System.Span%601> также касаются <xref:System.ReadOnlyMemory%601> и <xref:System.ReadOnlySpan%601>, если прямо не заявлено об обратном.
+Ниже приведены наши рекомендации для успешного использования <xref:System.Memory%601> и связанных типов. Рекомендации по использованию <xref:System.Memory%601> и <xref:System.Span%601> также применяются к <xref:System.ReadOnlyMemory%601> и <xref:System.ReadOnlySpan%601>, если прямо не указано обратное.
 
 **Правило 1. Для синхронных API по возможности используйте Span\<T> вместо Memory\<T> в качестве параметра**
 
@@ -336,7 +336,7 @@ public unsafe Task<int> ManagedWrapperAsync(Memory<byte> data)
 private static void MyCompletedCallbackImplementation(IntPtr state, int result)
 {
     GCHandle handle = (GCHandle)state;
-    var actualState = (MyCompletedCallbackState)state;
+    var actualState = (MyCompletedCallbackState)(handle.Target);
     handle.Free();
     actualState.MemoryHandle.Dispose();
 

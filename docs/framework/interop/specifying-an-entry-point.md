@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
 ms.openlocfilehash: c5f8f735dd3e8c359f88044a532c29303237acc8
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/12/2020
 ms.locfileid: "79181315"
@@ -17,7 +17,7 @@ ms.locfileid: "79181315"
 
 Точка входа определяет расположение функции в библиотеке DLL. В управляемом проекте исходное имя или порядковый номер точки входа целевой функции определяет эту функцию в границах взаимодействия. Вы можете сопоставить точку входа с другим именем, чтобы фактически переименовать функцию.  
   
- Ниже приводится список возможных причин переименования функции DLL:  
+ Ниже перечислены возможные причины переименования функции DLL.  
   
 - чтобы избежать использования имен функций API, в которых учитывается регистр символов;  
   
@@ -90,7 +90,7 @@ extern "C" int MsgBox(
     HWND hWnd, String* lpText, String* lpCaption, unsigned int uType);
 ```
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Создание прототипов в управляемом коде](creating-prototypes-in-managed-code.md)

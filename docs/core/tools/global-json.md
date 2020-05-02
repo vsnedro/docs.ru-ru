@@ -1,14 +1,14 @@
 ---
 title: Обзор global.json
 description: Узнайте, как использовать файл global.json, чтобы задать версию пакета SDK для .NET Core при выполнении команд .NET Core CLI.
-ms.date: 01/14/2020
+ms.date: 04/21/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: 70257566e1ff30f5c97212a5e0e3c308c27738b7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5384b59cccb629a5409d26a8df7c81b3999fc95f
+ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77625999"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82021348"
 ---
 # <a name="globaljson-overview"></a>Обзор global.json
 
@@ -115,6 +115,17 @@ ms.locfileid: "77625999"
   "sdk": {
     "version": "3.1.100",
     "rollForward": "disable"
+  }
+}
+```
+
+В следующем примере показано, как использовать последнюю версию набора возможностей и обновления, установленную для конкретных основной и дополнительной версий:
+
+```json
+{
+  "sdk": {
+    "version": "3.1.000",
+    "rollForward": "latestFeature"
   }
 }
 ```

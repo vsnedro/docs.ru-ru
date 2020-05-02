@@ -2,30 +2,31 @@
 title: Команда dotnet remove reference
 description: Команду dotnet remove reference удобно использовать для удаления ссылок между проектами.
 ms.date: 02/14/2020
-ms.openlocfilehash: 92d36bbbde64d806abc8f223c5f08e3f3d79ce9d
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: a45153376d7d6eb764c1d2c6b473d04a273a2de1
+ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463446"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82158337"
 ---
 # <a name="dotnet-remove-reference"></a>dotnet remove reference
 
 **Эта статья относится к следующему:** ✔️ пакет SDK для .NET Core 2.x и более поздних версий
 
-## <a name="name"></a>Имя
+## <a name="name"></a>name
 
-`dotnet remove reference` — удаляет перекрестные ссылки между проектами.
+`dotnet remove reference` — удаляет перекрестные ссылки между проектами (P2P).
 
 ## <a name="synopsis"></a>Краткий обзор
 
 ```dotnetcli
-dotnet remove [<PROJECT>] reference [-f|--framework <FRAMEWORK>] <PROJECT_REFERENCES>
+dotnet remove [<PROJECT>] reference [-f|--framework <FRAMEWORK>]
+     <PROJECT_REFERENCES>
 
 dotnet remove reference -h|--help
 ```
 
-## <a name="description"></a>Описание:
+## <a name="description"></a>Описание
 
 Команду `dotnet remove reference` удобно использовать для удаления ссылок на проекты из проекта.
 
@@ -47,7 +48,7 @@ dotnet remove reference -h|--help
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Удаляет ссылку только при ориентации на конкретную [платформу](../../standard/frameworks.md).
+  Удаляет ссылку только при ориентации на конкретную [платформу](../../standard/frameworks.md) в формате TFM.
 
 ## <a name="examples"></a>Примеры
 

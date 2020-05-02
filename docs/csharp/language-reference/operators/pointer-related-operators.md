@@ -20,12 +20,12 @@ helpviewer_keywords:
 - pointer increment [C#]
 - pointer decrement [C#]
 - pointer comparison [C#]
-ms.openlocfilehash: fd25cd419f8c3bfe905850e6a252f4a8cf65478c
-ms.sourcegitcommit: 2514f4e3655081dcfe1b22470c0c28500f952c42
+ms.openlocfilehash: 7eb6666d10c44c342f69c7cfc763feb1b7b98c9d
+ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507104"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81738603"
 ---
 # <a name="pointer-related-operators-c-reference"></a>Операторы, связанные с указателем (справочник по C#)
 
@@ -103,7 +103,7 @@ x->y
 
 Нельзя использовать `[]` для доступа к элементу указателя с помощью выражения типа `void*`.
 
-Вы также можете использовать оператор `[]` для [доступа к массиву элементов или индексатору](member-access-operators.md#indexer-operator-).
+Можно также использовать оператор `[]` для [доступа к элементу массива или индексатору](member-access-operators.md#indexer-operator-).
 
 ## <a name="pointer-arithmetic-operators"></a>Арифметические операторы указателя
 

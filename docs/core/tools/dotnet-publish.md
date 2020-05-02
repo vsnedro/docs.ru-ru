@@ -2,12 +2,12 @@
 title: Команда dotnet publish
 description: Команда dotnet publish публикует решение или проект .NET Core в каталоге.
 ms.date: 02/24/2020
-ms.openlocfilehash: 0e18220443f3713c86c257fcf401b98ddd716ebc
-ms.sourcegitcommit: 961ec21c22d2f1d55c9cc8a7edf2ade1d1fd92e3
+ms.openlocfilehash: 78ed8098be1b6887fc6a2a647fd169e2bf7f7fd1
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80588271"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82102805"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -20,13 +20,16 @@ ms.locfileid: "80588271"
 ## <a name="synopsis"></a>Краткий обзор
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration]
-    [-f|--framework] [--force] [--interactive] [--manifest]
-    [--no-build] [--no-dependencies] [--no-restore] [--nologo]
-    [-o|--output] [-r|--runtime] [--self-contained]
-    [--no-self-contained] [-v|--verbosity] [--version-suffix]
+dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+    [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
+    [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
+    [-p:PublishReadyToRun=true] [-p:PublishSingleFile=true] [-p:PublishTrimmed=true]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [--self-contained [true|false]]
+    [--no-self-contained] [-v|--verbosity <LEVEL>]
+    [--version-suffix <VERSION_SUFFIX>]
 
-dotnet publish [-h|--help]
+dotnet publish -h|--help
 ```
 
 ## <a name="description"></a>Описание
@@ -39,6 +42,10 @@ dotnet publish [-h|--help]
 - Зависимости приложения, которые копируются из кэша NuGet в выходную папку.
 
 Выходные данные команды `dotnet publish` готовы к развертыванию в размещающей системе (например, на сервере, ПК, Mac, ноутбуке) для выполнения. Это единственный официальный способ подготовить приложение к развертыванию. В зависимости от указанного в проекте типа развертывания размещающая система может как иметь, так и не иметь общую среду выполнения .NET Core. Дополнительные сведения см. в статье [Публикация приложений .NET Core с помощью .NET Core CLI](../deploying/deploy-with-cli.md).
+
+### <a name="implicit-restore"></a>Неявное восстановление
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 ### <a name="msbuild"></a>MSBuild
 
@@ -114,6 +121,12 @@ dotnet publish -p:PublishProfile=Properties\PublishProfiles\FolderProfile.pubxml
   
   Если значение не указано, для исполняемого файла, зависящего от среды выполнения, а также для кроссплатформенных двоичных файлов по умолчанию используется путь *[папка_файла_проекта]./bin/[конфигурация]/[платформа]/publish/* . Для автономного исполняемого файла по умолчанию используется путь *[папка_файла_проекта]/bin/[конфигурация]/[платформа]/[среда выполения]/publish/* .
 
+  Если в веб-проекте выходная папка находится в папке проекта, последовательное выполнение команд `dotnet publish` приводит к созданию вложенных выходных папок. Например, если папкой проекта является *MyProject*, папкой выходных данных публикации — *myproject/publish* и вы дважды запускаете `dotnet publish`, при втором запуске файлы содержимого, такие как *.config* и *.json* помещаются в папку *myproject/publish/publish*. Чтобы избежать вложенности папок публикации, укажите папку публикации, которая не находится непосредственно в папке проекта, или исключите папку публикации из проекта. Чтобы исключить папку публикации с именем *publishoutput*, добавьте следующий элемент в элемент `PropertyGroup` в файле *.csproj*.
+
+  ```xml
+  <DefaultItemExcludes>$(DefaultItemExcludes);publishoutput**</DefaultItemExcludes>
+  ```
+
   - Пакет SDK для .NET Core 3.x и более поздних версий
   
     Если относительный путь указывается при публикации проекта, созданный выходной каталог задается относительно текущего рабочего каталога, а не расположения файла проекта.
@@ -125,6 +138,26 @@ dotnet publish -p:PublishProfile=Properties\PublishProfiles\FolderProfile.pubxml
     Если относительный путь указывается при публикации проекта, созданный выходной каталог задается относительно расположения файла проекта, а не текущего рабочего каталога.
 
     Если относительный путь указывается при публикации решения, выходные данные каждого проекта помещаются в отдельную папку относительно расположения файла проекта. Если при публикации решения указан абсолютный путь, все выходные данные публикации для всех проектов размещаются в указанной папке.
+
+- **`-p:PublishReadyToRun=true`**
+
+  Компилирует сборки приложений в формате ReadyToRun (R2R). R2R является разновидностью компиляции AOT. Дополнительные сведения см. в разделе [Образы ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images). Доступно, начиная с пакета SDK для .NET Core 3.0.
+
+  Рекомендуется указывать этот параметр в профиле публикации, а не в командной строке. Дополнительные сведения см. в разделе [MSBuild](#msbuild).
+
+- **`-p:PublishSingleFile=true`**
+
+  Упаковывает приложение в однофайловый исполняемый файл для конкретной платформы. Исполняемый файл является самоизвлекаемым и содержит все зависимости (включая машинные), необходимые для запуска приложения. При первом запуске приложение извлекается в каталог, который зависит от имени и идентификатора сборки приложения. Впоследствии запуск происходит быстрее. Если версия не изменилась, приложению не нужно извлекать себя заново. Доступно, начиная с пакета SDK для .NET Core 3.0.
+
+  Дополнительные сведения о публикации однофайловых исполняемых файлов см. в [документе о разработке однофайловых пакетных установщиков](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md).
+
+  Рекомендуется указывать этот параметр в профиле публикации, а не в командной строке. Дополнительные сведения см. в разделе [MSBuild](#msbuild).
+
+- **`-p:PublishTrimmed=true`**
+
+  Обрезает неиспользуемые библиотеки, чтобы уменьшить размер развертывания приложения при публикации автономного исполняемого файла. Дополнительные сведения см. в статье [Обрезка автономных развертываний и исполняемых файлов](../deploying/trim-self-contained.md). Доступно, начиная с пакета SDK для .NET Core 3.0.
+
+  Рекомендуется указывать этот параметр в профиле публикации, а не в командной строке. Дополнительные сведения см. в разделе [MSBuild](#msbuild).
 
 - **`--self-contained [true|false]`**
 
@@ -203,3 +236,4 @@ dotnet publish -p:PublishProfile=Properties\PublishProfiles\FolderProfile.pubxml
 - [Справочник по командной строке MSBuild](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Профили публикации Visual Studio (.pubxml) для развертывания приложений ASP.NET Core](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
+- [ILLInk.Tasks](https://aka.ms/dotnet-illink)

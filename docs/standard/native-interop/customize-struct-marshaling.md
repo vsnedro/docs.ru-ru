@@ -7,7 +7,7 @@ dev_langs:
 - cpp
 ms.openlocfilehash: 7f8d1ad93633d6feef9c3c6f5d19aad52105968c
 ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/14/2020
 ms.locfileid: "79401169"
@@ -24,13 +24,13 @@ ms.locfileid: "79401169"
 
 ✔️ РЕКОМЕНДУЕТСЯ использовать `LayoutKind.Explicit` для маршалинга только в тех случаях, когда ваша собственная структура также имеет явный макет, например объединение.
 
-❌AVOID `LayoutKind.Explicit` использует при маршалинге структуры на платформах, не связанных с Windows, если вам нужно таргетировать время выполнения до .NET Core 3.0. Время выполнения .NET Core до 3.0 не поддерживает передачу явных структур по значению народным функциям в системах Intel или AMD 64-битных не-Windows. Но она поддерживает передачу явных структур по ссылке на всех платформах.
+❌ НЕЖЕЛАТЕЛЬНО использовать `LayoutKind.Explicit` для маршалинга структур на платформах не на базе Windows, если требуется ориентироваться на среды выполнения, предшествующие .NET Core 3.0. Среда выполнения .NET Core, предшествующая версии 3.0, не поддерживает передачу явных структур по значению в собственные функции в отличных от Windows 64-разрядных системах на базе процессора Intel или AMD. Но она поддерживает передачу явных структур по ссылке на всех платформах.
 
 ## <a name="customizing-boolean-field-marshaling"></a>Настройка маршалинга логических полей
 
 Машинный код имеет множество различных логических представлений. Только в системе Windows есть три способа представления логических значений. Среде выполнения не известно собственное определение вашей структуры, поэтому она пытается подобрать наиболее подходящий способ маршалинга ваших логических значений. В среде выполнения .NET можно указать, как маршалировать логические поля. В примере ниже показано, как маршалировать значение .NET `bool` в другие типы собственных логических значений.
 
-Boolean значения по умолчанию к marshaling как родной 4-байт Win32 [`BOOL`](/windows/desktop/winprog/windows-data-types#BOOL) значение, как показано в следующем примере:
+По умолчанию логические значения маршалируются как собственное 4-байтное значение Win32 [`BOOL`](/windows/desktop/winprog/windows-data-types#BOOL), как показано в примере ниже:
 
 ```csharp
 public struct WinBool
@@ -317,7 +317,7 @@ struct DefaultString
 
 ## <a name="customizing-decimal-field-marshaling"></a>Настройка маршалинга полей десятичных чисел
 
-Если вы работаете над Windows, вы можете столкнуться [ `CY` `CURRENCY` ](/windows/win32/api/wtypes/ns-wtypes-cy~r1) с некоторыми AA, которые используют родной или структуры. По умолчанию, `decimal` тип .NET приставов к родной [`DECIMAL`](/windows/win32/api/wtypes/ns-wtypes-decimal~r1) структуре. Но можно использовать атрибут <xref:System.Runtime.InteropServices.MarshalAsAttribute> со значением <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType>, чтобы маршалер преобразовывал значение `decimal` в собственное значение `CY`.
+Если вы работаете в системе Windows, то некоторые API могут использовать собственную структуру [`CY` или `CURRENCY`](/windows/win32/api/wtypes/ns-wtypes-cy~r1). По умолчанию тип .NET `decimal` маршалируется в собственную структуру [`DECIMAL`](/windows/win32/api/wtypes/ns-wtypes-decimal~r1). Но можно использовать атрибут <xref:System.Runtime.InteropServices.MarshalAsAttribute> со значением <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType>, чтобы маршалер преобразовывал значение `decimal` в собственное значение `CY`.
 
 ```csharp
 public struct Currency

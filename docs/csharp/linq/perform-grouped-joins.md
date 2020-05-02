@@ -1,14 +1,14 @@
 ---
 title: Выполнение групповых соединений (LINQ в C#)
 description: Узнайте, как выполнять групповые соединения с помощью LINQ в C#.
-ms.date: 12/01/2016
+ms.date: 04/22/2020
 ms.assetid: 9667daf9-a5fd-4b43-a5c4-a9c2b744000e
-ms.openlocfilehash: dfb75b55336d8ca486d5f10b187e955d20cd06fd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 740a861da7dfb9653a874d5baf67eeb2030555b4
+ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "61689142"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82135754"
 ---
 # <a name="perform-grouped-joins"></a>Выполнение групповых соединений
 
@@ -18,6 +18,9 @@ ms.locfileid: "61689142"
 
 > [!NOTE]
 > Каждый элемент первой коллекции отображается в результирующем наборе группового соединения вне зависимости от того, найдены ли соответствующие ему элементы во второй коллекции. В случае, если такие элементы не найдены, последовательность соответствующих элементов будет пуста. Селектор результата имеет доступ к каждому элементу первой коллекции. При этом следует учесть отличие от селектора результата в негрупповом соединении: в этом случае селектор не имеет доступа к элементам из первой коллекции, для которых нет совпадений во второй коллекции.
+
+> [!WARNING]
+> Метод <xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType> не имеет прямого эквивалента в традиционных терминах реляционных баз данных. Однако он реализует расширенный набор внутренних соединений и левых внешних соединений. Обе эти операции можно записать с точки зрения группового соединения. Дополнительные сведения см. в статье [Операции соединения](../programming-guide/concepts/linq/join-operations.md) и в разделе об [операторе GroupJoin](https://docs.microsoft.com/ef/core/querying/complex-query-operators#groupjoin).
 
 В первом примере этой статьи показано, как выполнить групповое соединение. Во втором примере — как использовать групповое соединение для создания XML-элементов.
 
@@ -33,7 +36,7 @@ ms.locfileid: "61689142"
 
 [!code-csharp[CsLINQProgJoining#6](~/samples/snippets/csharp/concepts/linq/how-to-perform-grouped-joins_2.cs)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq.Enumerable.Join%2A>
 - <xref:System.Linq.Enumerable.GroupJoin%2A>

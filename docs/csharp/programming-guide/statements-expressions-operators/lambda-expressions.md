@@ -8,12 +8,12 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: c549b9fcc91401aed846afd39e656b60e16afb74
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6fd2dab09fe97aa4af87d82e2d23664c4347c8b3
+ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75937603"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82101999"
 ---
 # <a name="lambda-expressions-c-programming-guide"></a>Лямбда-выражения (руководство по программированию на C#)
 
@@ -37,7 +37,7 @@ ms.locfileid: "75937603"
 
 [!code-csharp-interactive[lambda is delegate](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Delegate)]
 
-Лямбда выражений также можно преобразовать в типы [дерева выражения](../concepts/expression-trees/index.md), как показано в следующем примере:
+Лямбда-выражения можно также преобразовать в типы [дерева выражения](../concepts/expression-trees/index.md), как показано в следующем примере:
 
 [!code-csharp-interactive[lambda is expression tree](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#ExpressionTree)]
 
@@ -230,7 +230,7 @@ customers.Where(c => c.City == "London");
 - [Руководство по программированию на C#](../index.md)
 - [Встроенный язык запросов LINQ](../concepts/linq/index.md)
 - [Деревья выражений](../concepts/expression-trees/index.md)
-- [Локальные функции в сравнении с лямбда-выражениями](../../local-functions-vs-lambdas.md)
+- [Локальные функции или лямбда-выражения](../classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
 - [Неявно типизированные лямбда-выражения](../../implicitly-typed-lambda-expressions.md)
 - [Примеры C# в Visual Studio 2008 (см. файлы примеров запросов LINQ и программу XQuery)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [Рекурсивные лямбда-выражения](https://docs.microsoft.com/archive/blogs/madst/recursive-lambda-expressions)

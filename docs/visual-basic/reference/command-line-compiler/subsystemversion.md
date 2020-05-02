@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
 ms.openlocfilehash: e8607f8254783b5486b02ccc4c7e4081da506fae
 ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/04/2019
 ms.locfileid: "74802158"
@@ -34,17 +34,17 @@ ms.locfileid: "74802158"
 
 Нули в начале версии `minor` не изменяют версию, нули в конце — изменяют. Например, 6.1 и 6.01 — одна версия, а 6.10 — другая. Рекомендуется указывать дополнительный номер версии двумя цифрами, чтобы избежать путаницы.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 В следующей таблице перечислены распространенные версии подсистем Windows.
 
 |Версия Windows|Версия подсистемы|
 |---------------------|-----------------------|
-|Windows 2000|5,00|
+|Windows 2000|5.00|
 |Windows XP|5.01|
 |Windows Server 2003|5.02|
 |Windows Vista|6.00|
-|Windows 7|6.01|
+|Windows 7|6.01|
 |Windows Server 2008|6.01|
 |Windows 8|6.02|
 
@@ -66,9 +66,9 @@ ms.locfileid: "74802158"
 
 ## <a name="setting-this-option"></a>Задание этого параметра
 
-Чтобы задать параметр компилятора **-subsystemversion** в Visual Studio, необходимо открыть VBPROJ-файл и указать значение для свойства `SubsystemVersion` в XML MSBuild. Этот параметр невозможно задать в интегрированной среде разработки Visual Studio. Дополнительные сведения см. выше в подразделе "Значения по умолчанию" или в разделе [Общие свойства проектов MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
+Чтобы задать параметр компилятора **-subsystemversion** в Visual Studio, нужно открыть файл .vbproj и указать значение для свойства `SubsystemVersion` в XML MSBuild. Этот параметр невозможно задать в интегрированной среде разработки Visual Studio. Дополнительные сведения см. выше в подразделе "Значения по умолчанию" или в разделе [Общие свойства проектов MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
 
