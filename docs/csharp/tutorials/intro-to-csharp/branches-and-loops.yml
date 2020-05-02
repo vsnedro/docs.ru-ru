@@ -11,12 +11,12 @@ metadata:
   interactive: csharp
   nextTutorialHref: list-collection.yml
   nextTutorialTitle: Коллекция списка
-  ms.openlocfilehash: ab709b6b30b5a173e2faf08b577e4d7a3d9a9034
-  ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+  ms.openlocfilehash: b0a967ea2e5212887d617e76b4ecb445cfbb8b55
+  ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/14/2020
-  ms.locfileid: "73969429"
+  ms.lasthandoff: 04/24/2020
+  ms.locfileid: "82135936"
 items:
 - durationInMinutes: 1
   content: >
@@ -173,6 +173,9 @@ items:
     > [!NOTE]
 
     > Этот онлайн-интерфейс для написания кода находится на этапе предварительной версии. При возникновении проблем сообщите о них на странице [репозитория dotnet/try](https://github.com/dotnet/try/issues).
+- title: Создание вложенных циклов
+  durationInMinutes: 10
+  content: "Цикл `while`, `do` или `for` можно вложить в другой цикл, чтобы создать матрицу, использующую сочетание каждого элемента во внешнем цикле с каждым элементом во внутреннем цикле. Давайте сделаем это для получения набора из буквенно-цифровых пар, представляющих строки и столбцы.\n\nОдин цикл `for` может создавать строки:\n\n```csharp\nfor (int row = 1; row < 11; row++)\n{\n  Console.WriteLine($\"The row is {row}\");\n}\n```\n\nДругой цикл может создавать столбцы:\n\n```csharp\nfor (char column = 'a'; column < 'k'; column++)\n{\n  Console.WriteLine($\"The column is {column}\");\n}\n```\n\nМожно вложить один цикл внутрь другого для формирования пар:\n  \n```csharp\nfor (int row = 1; row < 11; row++)\n{\n  for (char column = 'a'; column < 'k'; column++)\n  {\n    Console.WriteLine($\"The cell is ({row}, {column})\");\n  }\n}\n```\n\nКак видите, внешний цикл увеличивается на единицу при каждом полном выполнении внутреннего цикла. Измените порядок вложенности строк и столбцов и просмотрите изменения самостоятельно.\n"
 - title: Объединение ветвей и циклов
   durationInMinutes: 12
   content: >
