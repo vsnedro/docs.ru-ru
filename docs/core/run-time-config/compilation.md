@@ -3,12 +3,12 @@ title: Параметры конфигурации компиляции
 description: Сведения о параметрах времени выполнения, определяющих, как JIT-компилятор работает для приложений .NET Core.
 ms.date: 11/27/2019
 ms.topic: reference
-ms.openlocfilehash: ac51aa13254b2f2b1fdd8d1dd9c52559831a1659
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 4db20ee6d36fe3d3d66f473644b70c02d4e02cb3
+ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80989120"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82506848"
 ---
 # <a name="run-time-configuration-options-for-compilation"></a>Параметры конфигурации времени выполнения для компиляции
 
@@ -126,7 +126,7 @@ ms.locfileid: "80989120"
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TieredCompilationQuickJitForLoops>false</TieredCompilationQuickJitForLoops>
+    <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
   </PropertyGroup>
 
 </Project>

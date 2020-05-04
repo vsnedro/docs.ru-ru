@@ -3,12 +3,12 @@ title: Средство удаления
 description: Обзор средства удаления .NET Core — интерактивного средства, позволяющего управлять очисткой пакетов SDK и сред выполнения .NET Core.
 author: sfoslund
 ms.date: 01/06/2020
-ms.openlocfilehash: 816aef6ab8bc0e51bb8befb14fde60513d4fadfc
-ms.sourcegitcommit: 2514f4e3655081dcfe1b22470c0c28500f952c42
+ms.openlocfilehash: 45cf0841391d02636770e98666e2897d2598fab4
+ms.sourcegitcommit: d7666f6e49c57a769612602ea7857b927294ce47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507325"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "82595719"
 ---
 # <a name="net-core-uninstall-tool"></a>Средство удаления .NET Core
 
@@ -297,7 +297,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 Команда `dotnet-core-uninstall remove` удаляет пакеты SDK и среды выполнения .NET Core, указанные с использованием коллекции параметров. Средство нельзя использовать для удаления пакетов SDK и сред выполнения с версией 5.0 или более поздней.
 
-У средства разрушающее поведение, поэтому **настоятельно** рекомендуется выполнять пробный запуск перед выполнением команды удаления. В ходе пробного запуска будут показаны пакеты SDK и среды .NET Core, подлежащие удалению при использовании команды `remove`. Чтобы узнать, какие пакеты SDK и среды выполнения безопасно удалять, обратитесь к разделу [Нужно ли удалять версию](../versions/remove-runtime-sdk-versions.md#should-i-remove-a-version).
+У средства разрушающее поведение, поэтому **настоятельно** рекомендуется выполнять пробный запуск перед выполнением команды удаления. В ходе пробного запуска будут показаны пакеты SDK и среды .NET Core, подлежащие удалению при использовании команды `remove`. Чтобы узнать, какие пакеты SDK и среды выполнения безопасно удалять, обратитесь к разделу [Нужно ли удалять версию](../install/remove-runtime-sdk-versions.md#should-i-remove-a-version).
 
 > [!CAUTION]
 > Учитывайте следующие факторы.
@@ -510,7 +510,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 ### <a name="step-4---delete-the-nuget-fallback-folder-optional"></a>Шаг 4. Удаление резервной папки NuGet (необязательный)
 
-В некоторых случаях папка `NuGetFallbackFolder` может больше не требоваться, и ее понадобится удалить. Дополнительные сведения об удалении папки NuGetFallbackFolder см. в [этом разделе](../versions/remove-runtime-sdk-versions.md#remove-the-nuget-fallback-folder).
+В некоторых случаях папка `NuGetFallbackFolder` может больше не требоваться, и ее понадобится удалить. Дополнительные сведения об удалении папки NuGetFallbackFolder см. в [этом разделе](../install/remove-runtime-sdk-versions.md#remove-the-nuget-fallback-folder).
 
 ## <a name="uninstall-the-tool"></a>Удаление средства
 
