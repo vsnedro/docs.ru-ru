@@ -3,12 +3,12 @@ title: Обзор пакета SDK для .NET Core
 description: Сведения о пакете SDK для .NET Core, который является набором библиотек и средств, используемых для создания проектов .NET Core.
 ms.date: 07/31/2019
 ms.technology: dotnet-cli
-ms.openlocfilehash: c2723e0e28c889f91f79ea3c0b26aa38f69fb41c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7eb06e4fd94ed2a73af2741e98e21e02728c27e4
+ms.sourcegitcommit: d7666f6e49c57a769612602ea7857b927294ce47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78157470"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "82595745"
 ---
 # <a name="net-core-sdk-overview"></a>Обзор пакета SDK для .NET Core
 
@@ -35,5 +35,5 @@ ms.locfileid: "78157470"
 
 - [Общие сведения о .NET Core CLI](tools/index.md)
 - [Общие сведения об управлении версиями .NET Core](versions/index.md)
-- [Как удалить среду выполнения .NET Core и пакет SDK](versions/remove-runtime-sdk-versions.md)
+- [Как удалить среду выполнения .NET Core и пакет SDK](install/remove-runtime-sdk-versions.md)
 - [Выбор версии .NET Core для использования](versions/selection.md)

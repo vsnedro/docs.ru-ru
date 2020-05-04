@@ -1,13 +1,13 @@
 ---
 title: Новые возможности в C# 8.0. Руководство по языку C#
 description: Обзор новых функций, доступных в C# 8.0.
-ms.date: 09/20/2019
-ms.openlocfilehash: 0013f621268e2a4f1b916b226d83d18c68445ed1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 04/07/2020
+ms.openlocfilehash: c29041972bf7ff608b73ddc9ea3cfcd253905a49
+ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398331"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82200084"
 ---
 # <a name="whats-new-in-c-80"></a>Новые возможности C# 8.0
 
@@ -25,6 +25,7 @@ ms.locfileid: "79398331"
 - [Удаляемые ссылочные структуры](#disposable-ref-structs).
 - [Ссылочные типы, допускающие значение NULL](#nullable-reference-types)
 - [Асинхронные потоки](#asynchronous-streams).
+- [Асинхронные высвобождаемые типы](#asynchronous-disposable)
 - [Индексы и диапазоны](#indices-and-ranges).
 - [Присваивание объединения со значением NULL](#null-coalescing-assignment)
 - [Неуправляемые сконструированные типы](#unmanaged-constructed-types)
@@ -75,7 +76,7 @@ warning CS8656: Call to non-readonly member 'Point.Distance.get' from a 'readonl
 public readonly double Distance => Math.Sqrt(X * X + Y * Y);
 ```
 
-Обратите внимание, что модификатор `readonly` необходим для свойства только для чтения. Компилятор не предполагает, что методы доступа `get` не изменяют состояние; `readonly` необходимо объявить явно. Автоматические реализуемые свойства являются исключением; компилятор будет рассматривать все автоматические реализуемые методы получения как readonly, поэтому не нужно добавлять модификатор `readonly` к свойствам `X` и `Y`.
+Обратите внимание, что модификатор `readonly` необходим для свойства только для чтения. Компилятор не предполагает, что методы доступа `get` не изменяют состояние; `readonly` необходимо объявить явно. Автоматические реализуемые свойства являются исключением; компилятор будет рассматривать все автоматические реализуемые методы получения как `readonly`, поэтому не нужно добавлять модификатор `readonly` к свойствам `X` и `Y`.
 
 Компилятор принудительно применяет правило, в соответствии с которым члены `readonly` не изменяют состояние. Следующий метод не будет компилироваться, если не удалить модификатор `readonly`:
 
@@ -87,7 +88,9 @@ public readonly void Translate(int xOffset, int yOffset)
 }
 ```
 
-Эта функция позволяет указать намерение вашего проекта, чтобы компилятор мог применить его и выполнить оптимизацию на основе намерения. Дополнительные сведения о членах, доступных только для чтения, см. в справочнике по языку на странице [`readonly`](../language-reference/keywords/readonly.md#readonly-member-examples).
+Эта функция позволяет указать намерение вашего проекта, чтобы компилятор мог применить его и выполнить оптимизацию на основе намерения.
+
+Дополнительные сведения см. в разделе о [членах экземпляров `readonly`](../language-reference/builtin-types/struct.md#readonly-instance-members) в статье [Типы структур](../language-reference/builtin-types/struct.md).
 
 ## <a name="default-interface-methods"></a>Методы интерфейса по умолчанию
 
@@ -393,6 +396,10 @@ await foreach (var number in GenerateSequence())
 
 Вы можете попробовать асинхронные потоки самостоятельно в нашем руководстве по [созданию и использованию асинхронных потоков](../tutorials/generate-consume-asynchronous-stream.md). Элементы потока по умолчанию обрабатываются в захваченном контексте. Чтобы отключить захват контекста, используйте метод расширения <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType>. Дополнительные сведения о контекстах синхронизации и захвате текущего контекста см. в [статье](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md), посвященной использованию асинхронной модели на основе задач.
 
+## <a name="asynchronous-disposable"></a>Асинхронные высвобождаемые типы
+
+Начиная с C# 8.0 язык поддерживает асинхронные освобождаемые типы, реализующие интерфейс <xref:System.IAsyncDisposable?displayProperty=nameWithType>. Операнд выражения `using` может реализовывать <xref:System.IDisposable> или <xref:System.IAsyncDisposable>. В случае `IAsyncDisposable` компилятор создает код для `await`, возвращенного <xref:System.Threading.Tasks.Task> из <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType>. Дополнительные сведения см. в описании [инструкции `using`](../language-reference/keywords/using-statement.md).
+
 ## <a name="indices-and-ranges"></a>Индексы и диапазоны
 
 Диапазоны и индексы обеспечивают лаконичный синтаксис для доступа к отдельным элементам или диапазонам в последовательности.
@@ -465,7 +472,7 @@ Range phrase = 1..4;
 var text = words[phrase];
 ```
 
-Индексы и диапазоны поддерживаются не только массивами. Кроме того, можно использовать индексы и диапазоны со [строкой](../language-reference/builtin-types/reference-types.md#the-string-type) (<xref:System.Span%601> или <xref:System.ReadOnlySpan%601>). Дополнительные сведения см. в разделе [Поддержка типа для индексов и диапазонов](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
+Индексы и диапазоны поддерживаются не только массивами. Можно также использовать индексы и диапазоны со [строкой](../language-reference/builtin-types/reference-types.md#the-string-type) (<xref:System.Span%601> или <xref:System.ReadOnlySpan%601>). Дополнительные сведения см. в разделе [Поддержка типа для индексов и диапазонов](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
 
 Вы можете изучить сведения об индексах и диапазонах адресов в руководстве [Индексы и диапазоны](../tutorials/ranges-indexes.md).
 
@@ -520,7 +527,7 @@ Span<Coords<int>> coordinates = stackalloc[]
 
 ```csharp
 Span<int> numbers = stackalloc[] { 1, 2, 3, 4, 5, 6 };
-var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6 ,8 });
+var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6, 8 });
 Console.WriteLine(ind);  // output: 1
 ```
 

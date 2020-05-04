@@ -4,22 +4,22 @@ titleSuffix: ''
 description: Узнайте о технологиях .NET Framework, недоступных в .NET Core
 author: cartermp
 ms.date: 04/30/2019
-ms.openlocfilehash: 7dfec63870950f12ec933ebf09041b3c8ce2cbb5
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: f95205330837551085b8f58dfbdfcd702356c98f
+ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607801"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82506835"
 ---
 # <a name="net-framework-technologies-unavailable-on-net-core"></a>Технологии .NET Framework, недоступные в .NET Core
 
 Некоторые технологии для библиотек .NET Framework недоступны для использования с .NET Core, например домены приложений, удаленное взаимодействие, управление доступом для кода (CAS), прозрачность безопасности и System.EnterpriseServices. Если в библиотеках применяются такие технологии, рассмотрите альтернативные подходы, описанные ниже. Дополнительные сведения о совместимости API см. в статье [Критические изменения .NET Core](../compatibility/breaking-changes.md).
 
-Тот факт, что API или технология сейчас не реализуются, не означает, что они намеренно не поддерживаются. Выполните поиск в репозиториях GitHub по .NET Core, чтобы выяснить, не является ли конкретная проблема, с которой вы столкнулись, преднамеренной. Если вы не нашли такого признака, отправьте запрос на конкретные API и функции в [репозиторий dotnet/runtime](https://github.com/dotnet/runtime/issues). Проблемы при попытке переноса помечены меткой [port-to-core](https://github.com/dotnet/runtime/labels/port-to-core).
+Тот факт, что API или технология сейчас не реализуются, не означает, что они намеренно не поддерживаются. Выполните поиск в репозиториях GitHub по .NET Core, чтобы выяснить, не является ли конкретная проблема, с которой вы столкнулись, преднамеренной. Если вы не нашли такого признака, отправьте запрос на конкретные API и функции в [репозиторий dotnet/runtime](https://github.com/dotnet/runtime/issues).
 
 ## <a name="appdomains"></a>Домены приложений
 
-Домены приложений позволяют изолировать приложения друг от друга. Для этих доменов требуется поддержка среды выполнения и, как правило, они довольно дорого стоят. Создание дополнительных доменов приложений не поддерживается, и в будущем эта возможность не планируется. Для изоляции кода используйте в качестве альтернативы отдельные процессы или контейнеры. Для динамической загрузки сборок используйте класс <xref:System.Runtime.Loader.AssemblyLoadContext>.
+Домены приложений позволяют изолировать приложения друг от друга. Для этих доменов требуется поддержка среды выполнения и, как правило, они дорого стоят. Создание дополнительных доменов приложений не поддерживается, и в будущем эта возможность не планируется. Для изоляции кода используйте в качестве альтернативы отдельные процессы или контейнеры. Для динамической загрузки сборок используйте класс <xref:System.Runtime.Loader.AssemblyLoadContext>.
 
 Чтобы упростить перенос кода из .NET Framework, .NET Core предоставляет некоторые рабочие области API <xref:System.AppDomain>. Некоторые API-интерфейсы работают без изменений (например, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), одни элементы не выполняют никаких действий (например, <xref:System.AppDomain.SetCachePath%2A>), а другие создают исключение <xref:System.PlatformNotSupportedException> (например, <xref:System.AppDomain.CreateDomain%2A>). Проверьте типы, используемые для [`System.AppDomain` источника ссылки](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Private.CoreLib/src/System/AppDomain.cs) в [репозитории GitHub dotnet/runtime](https://github.com/dotnet/runtime). Убедитесь, что выбрана ветвь, соответствующая реализованной версии.
 
@@ -29,9 +29,9 @@ ms.locfileid: "81607801"
 
 Для взаимодействия между процессами вместо удаленного взаимодействия можно применять механизмы межпроцессного взаимодействия (IPC), например класс <xref:System.IO.Pipes> или <xref:System.IO.MemoryMappedFiles.MemoryMappedFile>.
 
-Для взаимодействия между компьютерами в качестве альтернативы можно использовать сетевое решение, желательно протокол на основе обычного текста с низкими издержками, например HTTP. Еще один вариант — [веб-сервер Kestrel](/aspnet/core/fundamentals/servers/kestrel), используемый платформой ASP.NET Core. Кроме того, для сценариев взаимодействия между компьютерами по сети можно использовать пространство имен <xref:System.Net.Sockets>. Другие варианты см. в разделе об обмене сообщениями статьи [.NET Open Source Developer Projects](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging) (Проекты разработки с открытым кодом в .NET).
+Для взаимодействия между компьютерами в качестве альтернативы можно использовать сетевое решение, желательно протокол на основе обычного текста с низкими издержками, например HTTP. Еще один вариант — [веб-сервер Kestrel](/aspnet/core/fundamentals/servers/kestrel), используемый платформой ASP.NET Core. Кроме того, для сценариев взаимодействия между компьютерами по сети можно использовать пространство имен <xref:System.Net.Sockets>. Другие варианты см. в разделе об обмене сообщениями статьи [.NET Open Source Developer Projects ](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging) (Проекты разработки с открытым кодом в .NET).
 
-## <a name="code-access-security-cas"></a>Управление доступом для кода (CAS)
+## <a name="code-access-security-cas"></a>CAS (Code Access Security — безопасность доступа кода)
 
 Песочница ограничивает ресурсы, используемые или выполняемые в управляемых приложениях или библиотеках, на основе среды выполнения или платформы. Она [не поддерживается в .NET Framework](../../framework/misc/code-access-security.md) и, следовательно, в .NET Core. Часто в .NET Framework и среде выполнения пользователи повышают привилегии, чтобы и дальше использовать CAS в качестве ограничения безопасности. Кроме того, механизм CAS усложняет реализацию и понижает производительность приложений, которые не планируется использовать.
 
@@ -47,6 +47,6 @@ ms.locfileid: "81607801"
 
 Платформа .NET Core не поддерживает System.EnterpriseServices (COM+).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о переносе кода в .NET Core из .NET Framework](../porting/index.md)

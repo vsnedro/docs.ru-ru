@@ -11,12 +11,12 @@ helpviewer_keywords:
 - encoding, choosing
 - encoding, fallback strategy
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
-ms.openlocfilehash: 1a294a577d10b3e621871b168344f2b0610693dd
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 8e0cf961f4d6b481c354bdc854806f971458ce21
+ms.sourcegitcommit: e09dbff13f0b21b569a101f3b3c5efa174aec204
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81242742"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82624947"
 ---
 # <a name="how-to-use-character-encoding-classes-in-net"></a>Использование классов кодировки символов в .NET
 
@@ -103,7 +103,7 @@ ms.locfileid: "81242742"
 
 Объект <xref:System.Text.Encoder> для конкретной кодировки доступен в ее свойстве <xref:System.Text.Encoding.GetEncoder%2A?displayProperty=nameWithType> . Объект <xref:System.Text.Decoder> для конкретной кодировки доступен в ее свойстве <xref:System.Text.Encoding.GetDecoder%2A?displayProperty=nameWithType> . Что касается операций декодирования, обратите внимание, что классы, производные от <xref:System.Text.Decoder> , включают метод <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> , но не имеют метода, соответствующего <xref:System.Text.Encoding.GetString%2A?displayProperty=nameWithType>.
 
-В примере ниже показано различие между использованием методов <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> и <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> для декодирования массива байтов Юникода. В этом примере строка, содержащая несколько символов Юникода, кодируется в файл, а затем два метода декодирования используются для декодирования по десять байтов за раз. Так как замещающая пара оказывается в десятом и одиннадцатом байтах, она декодируется в отдельных вызовах метода. Как видно из выходных данных, метод <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType> не может правильно декодировать байты и заменяет их символом U+FFFD (замещающим символом). С другой стороны, метод <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> может успешно декодировать массив байтов для получения исходной строки.
+В примере ниже показано различие между использованием методов <xref:System.Text.Encoding.GetString%2A?displayProperty=nameWithType> и <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> для декодирования массива байтов Юникода. В этом примере строка, содержащая несколько символов Юникода, кодируется в файл, а затем два метода декодирования используются для декодирования по десять байтов за раз. Так как замещающая пара оказывается в десятом и одиннадцатом байтах, она декодируется в отдельных вызовах метода. Как видно из выходных данных, метод <xref:System.Text.Encoding.GetString%2A?displayProperty=nameWithType> не может правильно декодировать байты и заменяет их символом U+FFFD (замещающим символом). С другой стороны, метод <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> может успешно декодировать массив байтов для получения исходной строки.
 
 [!code-csharp[Conceptual.Encoding#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.encoding/cs/stream1.cs#10)]
 [!code-vb[Conceptual.Encoding#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/stream1.vb#10)]
