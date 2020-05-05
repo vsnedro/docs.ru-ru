@@ -10,12 +10,12 @@ api_type:
 ms.assetid: aa6cf962-30ae-4cfd-8895-826deeb46a54
 topic_type:
 - apiref
-ms.openlocfilehash: da3a100bd552eaa3233642b006e0265adbcac1ca
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: a90ddd27834e7614c1827d606a9955b4d6c53127
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132216"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795980"
 ---
 # <a name="cordebugdecodeeventflagswindows-enumeration"></a>Перечисление CorDebugDecodeEventFlagsWindows
 Предоставляет дополнительную информацию о событиях отладки на платформе Windows.  
@@ -28,27 +28,27 @@ typedef enum CorDebugDecodeEventFlagsWindows {
 } CorDebugDecodeEventFlagsWindows;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Член|Описание|  
+|Участник|Описание|  
 |------------|-----------------|  
 |`IS_FIRST_CHANCE`|Указывает, что событие отладки является первичным исключением.|  
   
-## <a name="remarks"></a>Заметки  
- Метод [ICorDebugProcess6::D екодивент](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-decodeevent-method.md) включает параметр `dwFlags`, который предоставляет дополнительные сведения о событии отладки и значение которого зависит от целевой архитектуры. Перечисление `CorDebugDecodeEventFlagsWindows` можно использовать с событиями отладки на платформе Windows.  
+## <a name="remarks"></a>Remarks  
+ Метод [ICorDebugProcess6::D екодивент](icordebugprocess6-decodeevent-method.md) включает `dwFlags` параметр, предоставляющий дополнительные сведения о событии отладки, значение которого зависит от целевой архитектуры. Перечисление `CorDebugDecodeEventFlagsWindows` можно использовать с событиями отладки на платформе Windows.  
   
 > [!NOTE]
 > Это перечисление предназначено для использования только в сценариях отладки .NET Native.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Перечисления отладки](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Перечисления отладки](debugging-enumerations.md)

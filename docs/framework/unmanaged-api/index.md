@@ -7,17 +7,17 @@ helpviewer_keywords:
 - native API reference [.NET Framework]
 - unmanaged API reference [.NET Framework]
 ms.assetid: 9aa000ee-c04c-492c-ae4f-83ecdf4fdbbe
-ms.openlocfilehash: f7dd78b889129998dee31a22f5dd23325613b8ea
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9b8671f2bd278e9e6153476d742f43150a4f6e3e
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73092015"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795616"
 ---
 # <a name="unmanaged-api-reference"></a>Справочник по неуправляемым API
 В данном разделе содержатся сведения о неуправляемых API, которые могут использоваться приложениями, связанными с управляемым кодом, например хост-приложениями среды выполнения, компиляторами, дизассемблерами, средствами запутывания, отладчиками и профилировщиками.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  [Общие типы данных](common-data-types-unmanaged-api-reference.md)  
  Содержит список используемых общих типы данных, в частности в неуправляемых API профилирования и отладки.  
   
@@ -61,4 +61,4 @@ ms.locfileid: "73092015"
  Описывает две вспомогательные функции и интерфейс, используемые модулем экспорта библиотек (Tlbexp.exe) в процессе преобразования сборки в библиотеку типов.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Руководство по разработке](../../../docs/framework/development-guide.md)  
+ [Руководство по разработке](../development-guide.md)  

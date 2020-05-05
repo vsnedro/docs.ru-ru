@@ -1,5 +1,5 @@
 ---
-title: Как квалифицировать XML-элемент и имена атрибутов XML
+title: Практическое руководство. Квалификация элемента XML и имен атрибутов XML
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: 44719f90-7e15-42e8-a9e2-282287e2b5bf
 ms.openlocfilehash: db0795dd83cc96aba49dd435c875e98a9a6c18cb
 ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "78159875"
 ---
-# <a name="how-to-qualify-xml-element-and-xml-attribute-names"></a>Как квалифицировать XML-элемент и имена атрибутов XML
+# <a name="how-to-qualify-xml-element-and-xml-attribute-names"></a>Практическое руководство. Квалификация элемента XML и имен атрибутов XML
 
-Пространства имен XML, содержащиеся в экземплярах класса <xref:System.Xml.Serialization.XmlSerializerNamespaces>, должны соответствовать спецификации консорциум W3C (W3C), именуемой [пространствами имен в XML](https://www.w3.org/TR/REC-xml-names/).
+Пространства имен XML, содержащиеся в экземплярах класса <xref:System.Xml.Serialization.XmlSerializerNamespaces>, должны соответствовать требованиям консорциума World Wide Web Consortium (W3C) под названием [Пространства имен в XML](https://www.w3.org/TR/REC-xml-names/).
 
 Пространства имен XML предоставляют метод квалификации имен элементов XML и атрибутов XML в документах XML. Полное имя состоит из префикса и локального имени, разделяемых двоеточием. Функцией префикса является только указание места заполнения, он сопоставлен URI, определяющим пространство имен. Сочетание процедур универсально управляемого пространства имен URI и локального имени позволяет создать имя, гарантированно универсально уникальное.
 
@@ -162,7 +162,7 @@ public class Price
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Serialization.XmlSerializer>
 - [Инструмент определения схемы XML и сериализация XML](the-xml-schema-definition-tool-and-xml-serialization.md)
