@@ -2,13 +2,13 @@
 title: Разработка ориентированных на облако приложений .NET для Azure
 description: Руководство по созданию ориентированных на облако приложений, использующих контейнеры, микрослужбы и бессерверные функции Azure.
 author: ardalis
-ms.date: 03/07/2019
-ms.openlocfilehash: cf3be07f0d37aacf4f0252ef2f4d922b7be93eee
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.date: 04/23/2020
+ms.openlocfilehash: 24d5c75fc5d2e5623892e8f83daea52553d13765
+ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80989068"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82507394"
 ---
 # <a name="architecting-cloud-native-net-applications-for-azure"></a>Разработка ориентированных на облако приложений .NET для Azure
 
@@ -44,19 +44,25 @@ Mac и macOS являются товарными знаками Apple Inc.
 
 Авторы:
 
-> **Стив Смит (Steve Smith)** , преподаватель и разработчик программного обеспечения, [Ardalis.com](https://ardalis.com)
+> **Роб Веттор (Rob Vettor)**  — главный архитектор облачных систем/IP-архитектор — [thinkingincloudnative.com](http://thinkingincloudnative.com/about/), корпорация Майкрософт
 >
-> **Роб Веттор (Rob Vettor)**  — Майкрософт — главный архитектор облачных систем/IP-архитектор — [thinkingincloudnative.com](http://thinkingincloudnative.com/about/)
+> **Стив Смит (Steve Smith)** , преподаватель и разработчик программного обеспечения, [Ardalis.com](https://ardalis.com)
 
 Участники и рецензенты:
 
 > **Цезарь де ла Торре (Cesar De la Torre)** , старший менеджер программ, команда .NET, корпорация Майкрософт
 >
 > **Ниш Анил (Nish Anil)** , старший менеджер программ, команда .NET, корпорация Майкрософт
+>
+> **Джереми Ликнесс (Jeremy Likness)** , старший менеджер программ, команда .NET, корпорация Майкрософт
+>
+> **Сесил Филлип (Cecil Phillip)** , старший советник по облачной разработке, корпорация Майкрософт
+
+Дополнительные сведения о eShopOnContainers
 
 Редакторы:
 
-> **Майра Вензел (Maira Wenzel)** , старший разработчик содержимого, команда .NET, корпорация Майкрософт
+> **Майра Вензел (Maira Wenzel)** , менеджер программ, команда .NET, корпорация Майкрософт
 
 ## <a name="who-should-use-this-guide"></a>Кому необходимо это руководство
 
