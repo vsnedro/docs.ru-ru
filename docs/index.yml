@@ -11,12 +11,12 @@ metadata:
   author: BillWagner
   ms.author: wiwagn
   ms.date: 04/21/2020
-  ms.openlocfilehash: 7680641385e013711e62a8585149ea204e327c95
-  ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+  ms.openlocfilehash: e1f4da6baefc39281a6dd4a5558d9f961a8f98a5
+  ms.sourcegitcommit: e09dbff13f0b21b569a101f3b3c5efa174aec204
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/29/2020
-  ms.locfileid: "82507498"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82624934"
 highlightedContent:
   items:
   - title: Скачать .NET
@@ -98,7 +98,7 @@ conceptualContent:
     - url: core/sdk.md
       itemType: download
       text: Скачать пакет SDK .NET Core
-    - url: https://dotnet.microsoft.com/download
+    - url: core/tools/index.md
       itemType: overview
       text: Обзор .NET Core CLI
     - url: core/porting/index.md
@@ -225,8 +225,8 @@ additionalContent:
         text: Библиотеки технологий Интернета вещей .NET Core
       - url: https://www.nuget.org/packages/System.Device.Gpio
         text: Пакет NuGet System.Device.Gpio
-  - title: Справочные разделы по API
-    summary: Поиск в справочной документации по API .NET с учетом ваших интересов.
+  - title: Справочники по языку и API
+    summary: Поиск в справочной документации по API и языку .NET.
     items:
     - title: Справочник по API .NET Core
       summary: Справочная документация по API для .NET Core
