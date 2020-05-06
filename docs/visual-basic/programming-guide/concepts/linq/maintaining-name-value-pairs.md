@@ -2,12 +2,12 @@
 title: Обслуживание пар "имя — значение"
 ms.date: 07/20/2015
 ms.assetid: 57ac2072-d9f5-432b-84f0-a889c62fd813
-ms.openlocfilehash: ed9c7f0aae2fe646cd723321f45455f89dd7c370
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: b8c9487330239e7e6365055d5f08a02f2dbb0e37
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74331666"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82796162"
 ---
 # <a name="maintaining-namevalue-pairs-visual-basic"></a>Поддержка пар "имя-значение" (Visual Basic)
 Множеству приложений приходится сохранять данные, которые лучше всего хранить в виде пар «имя-значение». Эти данные могут представлять сведения о конфигурации или глобальные параметры. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] содержит несколько методов, которые облегчают хранение пар «имя-значение». Можно либо оставить информацию в виде атрибутов, либо в виде набора дочерних элементов.  
@@ -17,7 +17,7 @@ ms.locfileid: "74331666"
 ## <a name="setattributevalue-and-setelementvalue"></a>Методы SetAttributeValue и SetElementValue  
  Два метода <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> и <xref:System.Xml.Linq.XElement.SetElementValue%2A> облегчают хранение в виде пар «имя-значение». Эти два метода имеют похожую семантику.  
   
- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> может добавлять, изменять или удалять атрибуты элемента.  
+ С помощью метода <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> можно добавлять, изменять и удалять атрибуты данного элемента.  
   
 - При вызове метода <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> с несуществующим именем атрибута этот метод создаст новый атрибут и добавит его в указанный элемент.  
   
@@ -25,7 +25,7 @@ ms.locfileid: "74331666"
   
 - При вызове метода <xref:System.Xml.Linq.XElement.SetAttributeValue%2A> с существующим именем атрибута и с указанием значения NULL в качестве содержимого атрибут удаляется из своего родителя.  
   
- <xref:System.Xml.Linq.XElement.SetElementValue%2A> может добавлять, изменять или удалять дочерние элементы элемента.  
+ С помощью метода <xref:System.Xml.Linq.XElement.SetElementValue%2A> можно добавлять, изменять и удалять дочерние элементы данного элемента.  
   
 - При вызове метода <xref:System.Xml.Linq.XElement.SetElementValue%2A> с несуществующим именем дочернего элемента этот метод создаст новый элемент и добавит его к указанному элементу.  
   
@@ -100,7 +100,7 @@ Console.WriteLine(root)
   <Bottom>122</Bottom>  
   <Right>300</Right>  
   <DefaultColor>Color.Red</DefaultColor>  
-</Root>  
+</Root>
 ----  
 <Root>  
   <Top>10</Top>  
@@ -108,17 +108,17 @@ Console.WriteLine(root)
   <Bottom>122</Bottom>  
   <Right>300</Right>  
   <DefaultColor>Color.Red</DefaultColor>  
-</Root>  
-----  
+</Root>
+----
 <Root>  
   <Top>10</Top>  
   <Left>20</Left>  
   <Bottom>122</Bottom>  
   <Right>300</Right>  
-</Root>  
+</Root>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>
 - <xref:System.Xml.Linq.XElement.SetElementValue%2A>

@@ -10,12 +10,12 @@ api_type:
 ms.assetid: d680c1c0-16ab-4ccc-9444-39cf8e0e05ee
 topic_type:
 - apiref
-ms.openlocfilehash: 99fc89d1aee6c9f0fbffc193e12ce563e820f268
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: cfbd856c73ab10642a7cf7c16cfb2d70e7fe9756
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76789287"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795733"
 ---
 # <a name="cordebugrecordformat-enumeration"></a>Перечисление CorDebugRecordFormat
 Описывает формат данных в массиве байтов, который содержит информацию о событии отладки собственного исключения.  
@@ -31,26 +31,26 @@ typedef enum CorDebugRecordFormat {
   
 ## <a name="members"></a>Участники  
   
-|Член|Описание|  
+|Участник|Описание|  
 |------------|-----------------|  
 |`FORMAT_WINDOWS_EXCEPTIONRECORD32`|Данные представляют собой 32-разрядную запись Windows-исключения.|  
 |`FORMAT_WINDOWS_EXCEPTIONRECORD64`|Данные представляют собой 64-разрядную запись Windows-исключения.|  
   
-## <a name="remarks"></a>Заметки  
- Член перечисления `CorDebugRecordFormat` передается методу [DecodeEvent](icordebugprocess6-decodeevent-method.md) для указания формата массива байтов в его `pRecord` аргументе.  
+## <a name="remarks"></a>Remarks  
+ Член `CorDebugRecordFormat` перечисления передается в метод [DecodeEvent](icordebugprocess6-decodeevent-method.md) для указания формата массива байтов в его `pRecord` аргументе.  
   
 > [!NOTE]
 > Это перечисление предназначено для использования только в сценариях отладки .NET Native.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления отладки](debugging-enumerations.md)

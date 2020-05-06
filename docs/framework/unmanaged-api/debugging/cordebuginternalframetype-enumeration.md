@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e4412dc2-c338-4cfb-94d8-f682095dd2b1
 topic_type:
 - apiref
-ms.openlocfilehash: 2be827e12db765485ee889d6a4a19a982dad5d54
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 4a65a98ee04c3870dae2f49b3da2a8e72b1ffae4
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76778367"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795837"
 ---
 # <a name="cordebuginternalframetype-enumeration"></a>Перечисление CorDebugInternalFrameType
 Указывает тип кадра стека. Это перечисление используется методом [ICorDebugInternalFrame:: GetFrameType](icordebuginternalframe-getframetype-method.md) .  
@@ -45,9 +45,9 @@ typedef enum CorDebugInternalFrameType {
   
 ## <a name="members"></a>Участники  
   
-|Член|Описание|  
+|Участник|Описание|  
 |------------|-----------------|  
-|`STUBFRAME_NONE`|Значение Null. Метод `ICorDebugInternalFrame::GetFrameType` никогда не возвращает это значение.|  
+|`STUBFRAME_NONE`|Значение NULL. `ICorDebugInternalFrame::GetFrameType` Метод никогда не возвращает это значение.|  
 |`STUBFRAME_M2U`|Фрейм заглушки "управляемый-к-неуправляемый".|  
 |`STUBFRAME_U2M`|Неуправляемый фрейм заглушки.|  
 |`STUBFRAME_APPDOMAIN_TRANSITION`|Переход между доменами приложений.|  
@@ -60,14 +60,14 @@ typedef enum CorDebugInternalFrameType {
 |`STUBFRAME_JIT_COMPILATION`|Среда выполнения — это JIT-компиляция метода.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления отладки](debugging-enumerations.md)

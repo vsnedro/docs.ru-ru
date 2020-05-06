@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 003bb138-7960-4291-ac88-0d87e470ff70
 topic_type:
 - apiref
-ms.openlocfilehash: 9af265144c9e38ffe132c16a318c374b08a920e3
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 19d0dcf8a5633371765861fcc29df4ef8c91ebc4
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76778255"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795720"
 ---
 # <a name="cordebugregister-enumeration"></a>Перечисление CorDebugRegister
 Указывает регистры, связанные с данной архитектурой процессора.  
@@ -114,7 +114,7 @@ typedef enum CorDebugRegister {
   
 ## <a name="members"></a>Участники  
   
-|Член|Описание|  
+|Участник|Описание|  
 |------------|-----------------|  
 |`REGISTER_INSTRUCTION_POINTER`|Регистр указателя инструкции на любом процессоре.|  
 |`REGISTER_STACK_POINTER`|Регистр указателя стека на любом процессоре.|  
@@ -189,7 +189,7 @@ typedef enum CorDebugRegister {
 |`REGISTER_ARM_R12`|Регистр R12 на процессоре ARM.|  
 |`REGISTER_ARM_LR`|Регистр связи (R14) на процессоре ARM.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  На процессоре IA-64 имеются 128 регистров данных общего назначения и 128 регистров данных с плавающей запятой, но используются только значения `REGISTER_IA64_R0` и `REGISTER_IA64_F0`. Другие значения можно определить следующим образом.  
   
 - Добавьте номер регистра к `REGISTER_IA64_R0` для значений от `REGISTER_IA64_R1` до `REGISTER_IA64_R127`, которые соответствуют регистрам данных от #1 до #127 на процессоре IA-64.  
@@ -199,14 +199,14 @@ typedef enum CorDebugRegister {
  Например, если необходимо указать регистр данных #83 на процессоре IA-64, добавьте к `REGISTER_IA64_R0` число 83.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления отладки](debugging-enumerations.md)

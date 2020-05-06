@@ -5,12 +5,12 @@ author: leecow
 ms.author: leecow
 ms.date: 12/04/2019
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: 023b8fdf029dd6b17fe2186296d87dd7507c60b5
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.openlocfilehash: 42765d4402dfa17d4e962b2ecaf7a83e91853c76
+ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79546566"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82140990"
 ---
 # <a name="net-core-dependencies-and-requirements"></a>Зависимости и требования для .NET Core
 
@@ -41,7 +41,7 @@ ms.locfileid: "79546566"
 
 # <a name="net-core-30"></a>[.NET Core 3.0](#tab/netcore30)
 
-*Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+ *Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 3.0 поддерживает следующие версии Windows:
 
@@ -59,7 +59,7 @@ ms.locfileid: "79546566"
 
 # <a name="net-core-22"></a>[.NET Core 2.2](#tab/netcore22)
 
-*Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+ *Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 2.2 поддерживает следующие версии Windows:
 
@@ -95,7 +95,7 @@ ms.locfileid: "79546566"
 
 <!-- markdownlint-disable MD001 -->
 
-### <a name="windows-7--vista--81--server-2008-r2"></a>Windows 7/Vista/8.1/Server 2008 R2
+### <a name="windows-7--vista--81--server-2008-r2--server-2012-r2"></a><a name="additional-deps"></a> Windows 7 / Vista / 8.1 / Server 2008 R2 / Server 2012 R2
 
 При установке пакета SDK для .NET или среды выполнения .NET в следующих версиях Windows требуются дополнительные зависимости:
 
@@ -113,6 +113,10 @@ ms.locfileid: "79546566"
 Приведенные выше требования также применяются, если возникает одна из следующих ошибок:
 
 > Запуск программы невозможен, так как на компьютере отсутствует *api-ms-win-crt-runtime-l1-1-0.dll*. Попробуйте переустановить программу.
+>
+> \- или -
+>
+> Запуск программы невозможен, так как на компьютере отсутствует файл *api-ms-win-cor-timezone-l1-1-0.dll*. Попробуйте переустановить программу.
 >
 > \- или -
 >
@@ -153,7 +157,7 @@ ms.locfileid: "79546566"
 
 # <a name="net-core-30"></a>[.NET Core 3.0](#tab/netcore30)
 
-*Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+ *Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 3.0 воспринимает Linux как отдельную операционную систему. Существует отдельная сборка для Linux (на основе архитектуры микросхемы) с поддержкой дистрибутивов Linux.
 
@@ -181,7 +185,7 @@ ms.locfileid: "79546566"
 
 # <a name="net-core-22"></a>[.NET Core 2.2](#tab/netcore22)
 
-*Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+ *Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 2.2 воспринимает Linux как отдельную операционную систему. Существует отдельная сборка для Linux (на основе архитектуры микросхемы) с поддержкой дистрибутивов Linux.
 
