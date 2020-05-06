@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: 46031f29da6916eeaeea863ebef6924a720d7155
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 4436ece72b0a6a405fc41cba5413093fc42ce750
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793815"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860780"
 ---
 # <a name="dacprejitdata-structure"></a>Структура DacpReJitData
 
@@ -47,25 +47,25 @@ struct MSLAYOUT DacpReJitData
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
-| Член           | Описание                                                                                      |
+| Участник           | Описание                                                                                      |
 | ---------------- | ------------------------------------------------------------------------------------------------ |
 | `rejitID`        | Номер редакции ReJit для метода.                                                          |
 | `flags`          | Флаг, указывающий текущее состояние инструментирования ReJit метода для данной версии. |
 | `NativeCodeAddr` | Базовый адрес реализации режиттед метода.                                         |
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-Эта структура находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Чтобы использовать его, определите структуру, как указано выше. Структура также должна быть определена с помощью `ms_struct` упаковки, если не используются компиляторы Майкрософт.
+Эта структура находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Чтобы использовать его, определите структуру, как указано выше. Структура также должна быть определена с `ms_struct` помощью упаковки, если не используется компиляторы Майкрософт.
 
 ## <a name="requirements"></a>Требования
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Отладка](index.md)
 - [Структуры отладки](debugging-structures.md)

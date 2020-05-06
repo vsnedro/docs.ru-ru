@@ -12,15 +12,15 @@ api_type:
 ms.assetid: 6643c2af-2ee6-4789-aa25-1d8eaf500c94
 topic_type:
 - apiref
-ms.openlocfilehash: 037e216cb93e3aa6fce28966fc724498024abd52
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 0ea4546dcde4afa0a9db2e64ae34415d0973391b
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76789061"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860441"
 ---
 # <a name="iclrdatatarget3getexceptionrecord-method"></a>Метод ICLRDataTarget3::GetExceptionRecord
-Вызывается службами доступа к данным среды CLR для извлечения записи исключения, связанной с целевым процессом. Например, для целевого объекта дампа это будет эквивалентно записи исключения, переданной с помощью аргумента `ExceptionParam`, функции [минидумпвритедумп](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) в отладочной библиотеке справки Windows (DBGHELP).  
+Вызывается службами доступа к данным среды CLR для извлечения записи исключения, связанной с целевым процессом. Например, для целевого объекта дампа это будет эквивалентно записи исключения, передаваемой через `ExceptionParam` аргумент в функцию [Минидумпвритедумп](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) в библиотеке справки по отладке Windows (DBGHELP).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ HRESULT GetExceptionRecord(
   
 ## <a name="parameters"></a>Параметры  
  `bufferSize`  
- [в] Размер входного буфера в байтах. Оно должно быть равно `sizeof(`[MINIDUMP_EXCEPTION](/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception)`)`.  
+ [в] Размер входного буфера в байтах. Оно должно быть равно `sizeof(` [MINIDUMP_EXCEPTION](/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception)`)`.  
   
  `bufferUsed`  
  [из] Указатель на тип `ULONG32`, который получает количество байтов, фактически записанных в буфер.  
@@ -51,21 +51,21 @@ HRESULT GetExceptionRecord(
 |`HRESULT_FROM_WIN32(ERROR_NOT_FOUND)`|Нет записей исключения, связанных с целевым объектом.|  
 |`HRESULT_FROM_WIN32(ERROR_BAD_LENGTH)`|Размер входного буфера не равен `sizeof(MINIDUMP_EXCEPTION)`.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  [MINIDUMP_EXCEPTION](/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception) — это структура, определенная в dbghelp. h и IMAGEHLP. h в Windows SDK.  
   
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
+ **.NET Framework версии:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRDataTarget3](iclrdatatarget3-interface.md)
 - [Метод GetExceptionContextRecord](iclrdatatarget3-getexceptioncontextrecord-method.md)

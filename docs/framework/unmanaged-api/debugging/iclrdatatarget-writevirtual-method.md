@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d627e8b7-a605-40ac-b9bb-da9a3f1b66d9
 topic_type:
 - apiref
-ms.openlocfilehash: bd2f67c2d7230d3873b4dc0df73ac1be778a0828
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6a7a7736837f7e6bbf1ad4982e78a75550abbeab
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179099"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860503"
 ---
 # <a name="iclrdatatargetwritevirtual-method"></a>Метод ICLRDataTarget::WriteVirtual
-Записывает данные из указанного буфера в указанный виртуальный адрес памяти.  
+Записывает данные из указанного буфера в указанный адрес виртуальной памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,25 +39,25 @@ HRESULT WriteVirtual (
   
 ## <a name="parameters"></a>Параметры  
  `address`  
- (в) CLRDATA_ADDRESS, которая хранит виртуальный адрес памяти.  
+ окне CLRDATA_ADDRESS, в которой хранится адрес виртуальной памяти.  
   
  `buffer`  
- (в) Указатель на буфер, в течение которого хранятся данные, которые должны быть записаны.  
+ окне Указатель на буфер, в котором хранятся записываемые данные.  
   
  `bytesRequested`  
- (в) Количество байтов, которые должны быть написаны.  
+ окне Число записываемых байтов.  
   
  `bytesWritten`  
- (ваут) Указатель на фактическое количество байтов, которые были написаны.  
+ заполняет Указатель на фактическое число записанных байтов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** ClrData.idl, ClrData.h  
+ **Заголовок:** Клрдата. idl, Клрдата. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

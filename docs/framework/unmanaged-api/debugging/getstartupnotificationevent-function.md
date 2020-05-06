@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type:
 - apiref
-ms.openlocfilehash: fb158b35165fb229fc78169e2508679b6749752e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 3377dcd5d45ca8e31a57a75bd81366d41837c12c
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73122955"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860710"
 ---
 # <a name="getstartupnotificationevent-function"></a>Функция GetStartupNotificationEvent
 Создает или открывает обработчик событий, который будет информироваться любой средой CLR, загружаемой в указанный целевой процесс.  
@@ -53,13 +53,13 @@ HRESULT GetStartupNotificationEvent
  E_FAIL (или другие коды возврата E_)  
  Не удалось получить дескриптор события уведомления при запуске.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  В операционной системе Windows `debuggeePID` сопоставляется с идентификатором процесса ОС.  
   
  Событие сигнализирует перед любым выполнением управляемого кода средой CLR, которая оповещает событие.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** dbgshim. h  
   
