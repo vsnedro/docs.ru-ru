@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
 topic_type:
 - apiref
-ms.openlocfilehash: cc5093a5ba0afcccaf960e9b8776f93a061cc2f5
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: a725aa2c0f1fdea523bbf7cba880bc805f855782
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76785668"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860734"
 ---
 # <a name="_efn_stacktrace-function"></a>\_ЕФН\_StackTrace, функция
 Предоставляет текстовое представление трассировки управляемого стека и массив записей `CONTEXT`, по одной для каждого перехода между неуправляемым и управляемым кодом.  
@@ -58,22 +58,22 @@ HRESULT CALLBACK _EFN_StackTrace(
  окне Размер структуры контекста.  
   
  `Flags`  
- окне Задайте значение 0 или SOS_STACKTRACE_SHOWADDRESSES (0x01) для отображения регистра EBP и указателя ввода стека (ESP) перед каждой строкой `module!functionname`.  
+ окне Задайте значение 0 или SOS_STACKTRACE_SHOWADDRESSES (0x01) для отображения регистра EBP и указателя ввода стека (ESP) перед каждой `module!functionname` строкой.  
   
-## <a name="remarks"></a>Заметки  
- Структура `_EFN_StackTrace` может быть вызвана из программного интерфейса WinDbg. Параметры используются следующим образом.  
+## <a name="remarks"></a>Примечания  
+ `_EFN_StackTrace` Структуру можно вызвать из программного интерфейса WinDbg. Параметры используются следующим образом.  
   
-- Если `wszTextOut` имеет значение NULL и `puiTextLength` не равно null, функция возвращает длину строки в `puiTextLength`.  
+- Если `wszTextOut` значение равно NULL `puiTextLength` и не равно null, функция возвращает длину строки в `puiTextLength`.  
   
-- Если `wszTextOut` не равно null, функция сохраняет текст в `wszTextOut` вплоть до расположения, указанного в `puiTextLength`. Он возвращает значение, если в буфере достаточно места, или возвращает E_OUTOFMEMORY, если буфер недостаточно длинный.  
+- Если `wszTextOut` параметр не равен null, функция сохраняет текст в `wszTextOut` расположении, указанном параметром `puiTextLength`. Он возвращает значение, если в буфере достаточно места, или возвращает E_OUTOFMEMORY, если буфер недостаточно длинный.  
   
-- Переходная часть функции пропускается, если `pTransitionContexts` и `puiTransitionContextCount` равны NULL. В этом случае функция предоставляет вызывающим объектам текстовые выходные данные только имен функций.  
+- Часть перехода функции игнорируется, если `pTransitionContexts` и `puiTransitionContextCount` равны NULL. В этом случае функция предоставляет вызывающим объектам текстовые выходные данные только имен функций.  
   
-- Если `pTransitionContexts` имеет значение NULL и `puiTransitionContextCount` не равно null, функция возвращает необходимое число контекстных записей в `puiTransitionContextCount`.  
+- Если `pTransitionContexts` параметр имеет значение `puiTransitionContextCount` NULL и не равен null, функция возвращает необходимое число контекстных записей в `puiTransitionContextCount`.  
   
-- Если `pTransitionContexts` не равно null, функция обрабатывает ее как массив структур `puiTransitionContextCount`длины. Размер структуры задается `uiSizeOfContext`и должен быть размером [симплеконтекст](stacktrace-simplecontext-structure.md) или `CONTEXT` для архитектуры.  
+- Если `pTransitionContexts` параметр не равен null, функция обрабатывает ее как массив структур с длиной `puiTransitionContextCount`. Размер структуры определяется параметром `uiSizeOfContext`и должен быть размером [симплеконтекст](stacktrace-simplecontext-structure.md) или `CONTEXT` для архитектуры.  
   
-- `wszTextOut` записывается в следующем формате:  
+- `wszTextOut`записывается в следующем формате:  
   
     ```output  
     "<ModuleName>!<Function Name>[+<offset in hex>]  
@@ -86,19 +86,19 @@ HRESULT CALLBACK _EFN_StackTrace(
   
 - Если в текущем потоке нет управляемого кода, функция возвращает SOS_E_NOMANAGEDCODE.  
   
-- Параметр `Flags` имеет значение 0 или SOS_STACKTRACE_SHOWADDRESSES, чтобы видеть EBP и ESP перед каждой строкой `module!functionname`. По умолчанию это 0.  
+- `Flags` Параметр имеет значение 0 или SOS_STACKTRACE_SHOWADDRESSES, чтобы видеть ebp и ESP в начале каждой `module!functionname` строки. По умолчанию это 0.  
   
     ```cpp  
     #define SOS_STACKTRACE_SHOWADDRESSES   0x00000001  
     ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** SOS_Stacktrace. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Глобальные статические функции отладки](debugging-global-static-functions.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b259821d-4fa7-464d-85cf-304dfffc8089
 topic_type:
 - apiref
-ms.openlocfilehash: 2716adcc8c79c8003202561ea2011c2469a6bc5c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 340d2de09562ea9b767203a7fa839cdc6b729b3b
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179231"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860889"
 ---
 # <a name="createcordbobject-function"></a>Функция CreateCordbObject
-Создает интерфейс отладчика[(ICorDebug),](icordebug-interface.md)который предоставляет функциональность для мгновенного сеанса управляемой отладки в удаленном процессе.  
+Создает интерфейс отладчика ([ICorDebug](icordebug-interface.md)), который предоставляет функциональные возможности для создания экземпляра управляемого сеанса отладки на удаленном процессе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,7 +40,7 @@ HRESULT CordbCreateObject (
  [in] Версия отладчика целевого процесса. Для удаленной отладки этот параметр должен иметь значение CorDebugVersion_2_0.  
   
  `ppCordb`  
- (ваут) Указатель на указатель на объект, который будет отлит на интерфейс [ICorDebug](icordebug-interface.md) и возвращен.  
+ заполняет Указатель на указатель на объект, который будет приведен к интерфейсу [ICorDebug](icordebug-interface.md) и возвращен.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK  
@@ -55,14 +55,14 @@ HRESULT CordbCreateObject (
  E_FAIL (или другие коды возврата E_)  
  Прочие сбои.  
   
-## <a name="remarks"></a>Remarks  
- Возвращается интерфейс [ICorDebug](icordebug-interface.md) `ppCordb` для всех управляемых служб отладки.  
+## <a name="remarks"></a>Примечания  
+ Интерфейс [ICorDebug](icordebug-interface.md) , возвращаемый в `ppCordb` , является интерфейсом отладки верхнего уровня для всех управляемых служб отладки.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** CoreClrRemoteDebuggingInterfaces.h  
+ **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   
- **Библиотека:** mscordbi_macx86.dll  
+ **Библиотека:** mscordbi_macx86. dll  
   
- **Рамочные версии .NET:** 3.5 SP1
+ **.NET Framework версии:** 3,5 SP1

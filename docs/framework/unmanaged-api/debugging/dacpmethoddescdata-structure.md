@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: cc54664ea8ad61005de3f3fae7407946d1c861b2
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: d623fe862eaf5902fd89d0e512dd07f73a03246f
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793847"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860819"
 ---
 # <a name="dacpmethoddescdata-structure"></a>Структура DacpMethodDescData
 
@@ -52,16 +52,16 @@ struct DacpMethodDescData
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
-| Член                       | Описание                                                                                     |
+| Участник                       | Описание                                                                                     |
 | ---------------------------- | ----------------------------------------------------------------------------------------------- |
 | `bHasNativeCode`             | Указывает, доступен ли в среде выполнения машинный код для данного экземпляра метода. |
 | `bIsDynamic`                 | Указывает, создается ли метод динамически с помощью создания упрощенного кода.           |
 | `wSlotNumber`                | Номер слота метода в таблице методов.                                                   |
 | `NativeCodeAddr`             | Начальный собственный адрес метода.                                                            |
 | `data`                       | Указатель на буфер, который используется средой выполнения для внутренних целей.                                             |
-| `MethodDescPtr`              | Указатель на `MethodDesc` в среде выполнения.                                                     |
+| `MethodDescPtr`              | Указатель на объект `MethodDesc` в среде выполнения.                                                     |
 | `nativeCodeInfo`             | Указатель на буфер, используемый средой выполнения для трассировки методов.                            |
 | `moduleInfo`                 | Указатель на буфер, используемый средой выполнения для сведений о модуле.                      |
 | `MDToken`                    | Токен, связанный с данным методом.                                                         |
@@ -73,18 +73,18 @@ struct DacpMethodDescData
 | `rejitDataRequested`         | Rejit сведения для запрошенного собственного адреса.                                             |
 | `cJittedRejitVersions`       | Сколько раз метод был режиттед с помощью инструментирования.                           |
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 Эта структура находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Чтобы использовать его, определите структуру, как указано выше.
 
 ## <a name="requirements"></a>Требования
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Отладка](index.md)
 - [Структуры отладки](debugging-structures.md)
-- [Общие типы данных](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md)
+- [Общие типы данных](../common-data-types-unmanaged-api-reference.md)

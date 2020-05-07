@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e2f05155-9bef-4e11-b703-7f05890665ca
 topic_type:
 - apiref
-ms.openlocfilehash: 2b5c99e40aabdbc654bdc612729b2756e3ef5bb4
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 30806394a8895084068acaec6f7d03c6b67bb14b
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793718"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860563"
 ---
 # <a name="iclrdatatarget-interface"></a>Интерфейс ICLRDataTarget
 Предоставляет методы для взаимодействия с целевым элементом общеязыковой среды выполнения (CLR).  
@@ -40,19 +40,19 @@ ms.locfileid: "76793718"
 |[Метод SetTLSValue](iclrdatatarget-settlsvalue-method.md)|Задает значение в локальном хранилище потока (TLS) указанного потока в целевом процессе.|  
 |[Метод WriteVirtual](iclrdatatarget-writevirtual-method.md)|Записывает данные из указанного буфера в указанный адрес виртуальной памяти.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Клиент API (то есть отладчик) должен реализовать этот интерфейс в соответствии с конкретным целевым элементом. Например, реализация активного процесса будет отличаться от реализации дампа памяти.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRDataTarget2](iclrdatatarget2-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

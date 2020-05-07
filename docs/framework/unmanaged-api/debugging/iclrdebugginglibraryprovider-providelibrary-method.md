@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
 topic_type:
 - apiref
-ms.openlocfilehash: d0c283232ff8eca1af9f3ff4448fb7f4c81d554f
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 7bbb49dc6ee9b1d29dd61ccdcfdacb62740133ed
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76789032"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860268"
 ---
 # <a name="iclrdebugginglibraryproviderprovidelibrary-method"></a>Метод ICLRDebuggingLibraryProvider::ProvideLibrary
 
@@ -45,7 +45,7 @@ HRESULT ProvideLibrary(
 окне Метка даты и времени, хранящаяся в заголовке COFF файлов PE.
 
 `pLibraryProvider` \
-окне Поле `SizeOfImage`, хранящееся в необязательном заголовке файла PE файлов в формате COFF.
+окне `SizeOfImage` Поле, хранящееся в необязательном заголовке файла PE файлов в формате COFF.
 
 `hModule` \
 заполняет Обработчик для запрошенного модуля.
@@ -60,9 +60,9 @@ HRESULT ProvideLibrary(
 
 ## <a name="exceptions"></a>Исключения
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-`ProvideLibrary` позволяет отладчику предоставлять модули, необходимые для отладки конкретных файлов среды CLR, таких как mscordbi. dll и мскордаквкс. dll. Дескрипторы модулей должны оставаться действительными до тех пор, пока вызов метода [ICLRDebugging:: CanUnloadNow](iclrdebugging-canunloadnow-method.md) не указывает на то, что они могут быть освобождены, и на этом этапе вызывающая сторона обязана освободить дескрипторы.
+`ProvideLibrary`позволяет отладчику предоставлять модули, необходимые для отладки конкретных файлов среды CLR, таких как mscordbi. dll и мскордаквкс. dll. Дескрипторы модулей должны оставаться действительными до тех пор, пока вызов метода [ICLRDebugging:: CanUnloadNow](iclrdebugging-canunloadnow-method.md) не указывает на то, что они могут быть освобождены, и на этом этапе вызывающая сторона обязана освободить дескрипторы.
 
 Отладчик может использовать любые доступные средства для размещения или получения модуля отладки.
 
@@ -73,15 +73,15 @@ HRESULT ProvideLibrary(
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
 **Заголовок:** CorDebug.idl, CorDebug.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
+**.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

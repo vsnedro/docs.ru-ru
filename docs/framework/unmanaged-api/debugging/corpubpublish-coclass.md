@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 191015da-f54a-4bac-a28a-1de7ab3c3428
 topic_type:
 - apiref
-ms.openlocfilehash: 24d245bbb0f9ac86e321491e0af3b66b1e011baa
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: e33029e8244fdfa180a79aa4a5b05b07f594d928
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76789220"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860907"
 ---
 # <a name="corpubpublish-coclass"></a>Кокласс CorpubPublish
 Предоставляет интерфейсы для публикации сведений о доменах приложений и процессах.  
@@ -36,7 +36,7 @@ coclass CorpubPublish {
 };  
 ```  
   
-## <a name="interfaces"></a>интерфейсов,  
+## <a name="interfaces"></a>Интерфейсы  
   
 |Интерфейс|Описание|  
 |---------------|-----------------|  
@@ -46,18 +46,18 @@ coclass CorpubPublish {
 |[Интерфейс ICorPublishProcess](icorpublishprocess-interface.md)|Представляет процесс, выполняющийся на компьютере.|  
 |[Интерфейс ICorPublishProcessEnum](icorpublishprocessenum-interface.md)|Предоставляет методы, которые проходят по коллекции процессов, выполняющихся на компьютере.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Типичный сценарий публикации включает в себя разработчика, желающего отлаживать управляемый код, выполняющийся на компьютере в домене приложения. Среда размещения может запускать несколько доменов приложений в рамках одного процесса. Разработчику хотелось бы использовать графический пользовательский интерфейс или другие средства для перечисления всех процессов, запущенных на компьютере, и выбрать конкретный процесс. Список должен включать все домены приложений в процессах, выполняющих управляемый код. Затем разработчик может определить конкретный домен приложения и подключить к этому домену отладчик.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**  [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Отладка](index.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4723bd1c-eddb-4ed2-897a-010024a47e01
 topic_type:
 - apiref
-ms.openlocfilehash: 336ba38bc80fcb2649a12c78691e52c5e4d70bfe
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b913affb4728dc80ba67438384cbeac87265f76d
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179117"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860539"
 ---
 # <a name="iclrdatatargetrequest-method"></a>Метод ICLRDataTarget::Request
-Вызывается службами общего времени выполнения языка (CLR) для запроса операции, как это определено в реализации.  
+Вызывается службами доступа к данным среды CLR для запроса операции, как определено в реализации.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,33 +41,33 @@ HRESULT Request (
   
 ## <a name="parameters"></a>Параметры  
  `reqCode`  
- (в) Определяется пользователями.  
+ окне Определяется пользователем.  
   
  `inBufferSize`  
- (в) Размер буфера ввода, который используется для входящего запроса.  
+ окне Размер входного буфера, используемого для входящего запроса.  
   
  `inBuffer`  
- (в) Буфер, содержащий запрос.  
+ окне Буфер, содержащий запрос.  
   
  `outBufferSize`  
- (в) Размер буфера вывода, который используется для ответа.  
+ окне Размер выходного буфера, используемого для ответа.  
   
  `outBuffer`  
- (ваут) Буфер, содержащий ответ.  
+ заполняет Буфер, содержащий ответ.  
   
-## <a name="remarks"></a>Remarks  
- Метод `Request` облегчает добавление неопределенных пользовательских операций. То есть этот метод обеспечивает расширяемость, не требуя пересмотра определения интерфейса.  
+## <a name="remarks"></a>Примечания  
+ `Request` Метод упрощает добавление неуказанных пользовательских операций. Это значит, что этот метод обеспечивает расширяемость без необходимости пересмотра определения интерфейса.  
   
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** ClrData.idl, ClrData.h  
+ **Заголовок:** Клрдата. idl, Клрдата. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

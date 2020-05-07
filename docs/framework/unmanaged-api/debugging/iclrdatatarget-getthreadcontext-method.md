@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b9d8c3b5-3a2e-4225-95d4-dd052c4532c3
 topic_type:
 - apiref
-ms.openlocfilehash: 3777ad4b12c7d0593c095c470aba81088137a859
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5c0fb023dd355f3a9c1ed846913f86b354592ed5
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179180"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860606"
 ---
 # <a name="iclrdatatargetgetthreadcontext-method"></a>Метод ICLRDataTarget::GetThreadContext
-Получает текущий контекст выполнения для данного потока в процессе целевого. Этот метод вызывается службами общего времени выполнения данных.  
+Возвращает текущий контекст выполнения для данного потока в целевом процессе. Этот метод вызывается службами доступа к данным среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,30 +39,30 @@ HRESULT GetThreadContext (
   
 ## <a name="parameters"></a>Параметры  
  `threadID`  
- (в) Идентификатор операционной системы потока в процессе целевого.  
+ окне Идентификатор операционной системы потока в целевом процессе.  
   
  `contextFlags`  
- (в) Флаги, указывающие, какие части контекста вернуть. Реализация вернет по крайней мере эти части контекста.  
+ окне Флаги, указывающие, какие части контекста должны быть возвращены. Реализация возвратит по крайней мере эти части контекста.  
   
  `contextSize`  
- (в) Размер контекста.  
+ окне Размер контекста.  
   
  `context`  
- (ваут) Указатель на буфер, в котором можно разместить контекст.  
+ заполняет Указатель на буфер, в который будет помещен контекст.  
   
- Данные в `context` буфере должны быть в формате структуры Win32. `CONTEXT` Контекст определяет данные регистра для процессоров, поэтому определение `CONTEXT` структуры Win32 зависит от архитектуры процессора. Обратитесь к файлу заголовка WinNT.h для `CONTEXT` определения структуры Win32.  
+ Данные в `context` буфере должны быть в формате структуры Win32 `CONTEXT` . Контекст задает зависящие от процессора данные регистров, поэтому определение структуры Win32 `CONTEXT` зависит от архитектуры процессора. Описание структуры Win32 `CONTEXT` см. в файле заголовка WinNT. h.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** ClrData.idl, ClrData.h  
+ **Заголовок:** Клрдата. idl, Клрдата. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
 topic_type:
 - apiref
-ms.openlocfilehash: 0332fae46d6a65cfb7cc0b929cc2fd0d97e1790e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e285df37d83ff73fe29fe293380a4053cb5a9eea
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179147"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82860552"
 ---
 # <a name="iclrdatatargetreadvirtual-method"></a>Метод ICLRDataTarget::ReadVirtual
-Считывает данные с указанного виртуального адреса памяти в указанный буфер.  
+Считывает данные из указанного адреса виртуальной памяти в указанный буфер.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,25 +39,25 @@ HRESULT ReadVirtual (
   
 ## <a name="parameters"></a>Параметры  
  `address`  
- (в) CLRDATA_ADDRESS, которая хранит виртуальный адрес памяти.  
+ окне CLRDATA_ADDRESS, в которой хранится адрес виртуальной памяти.  
   
  `buffer`  
- (ваут) Указатель на буфер, который получает данные.  
+ заполняет Указатель на буфер, который получает данные.  
   
  `bytesRequested`  
- (в) Длина буфера.  
+ окне Длина буфера.  
   
  `bytesRead`  
- (ваут) Указатель на количество возвращенных байтов.  
+ заполняет Указатель на число возвращаемых байтов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** ClrData.idl, ClrData.h  
+ **Заголовок:** Клрдата. idl, Клрдата. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 
