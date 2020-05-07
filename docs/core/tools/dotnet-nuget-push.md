@@ -3,18 +3,18 @@ title: Команда dotnet nuget push
 description: Команда dotnet nuget push отправляет пакет на сервер и публикует его.
 author: karann-msft
 ms.date: 02/14/2020
-ms.openlocfilehash: 96f8d008c8306a0782d5149360a24bb4097a1ec4
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 8b0437d7f4ada2b56af50e30717d131668c21f7e
+ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463522"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82728357"
 ---
 # <a name="dotnet-nuget-push"></a>dotnet nuget push
 
 **Эта статья относится к следующему:** ✔️ пакет SDK для .NET Core 2.x и более поздних версий
 
-## <a name="name"></a>Имя
+## <a name="name"></a>name
 
 `dotnet nuget push` — отправляет пакет на сервер и публикует его.
 
@@ -30,9 +30,11 @@ dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output]
 dotnet nuget push -h|--help
 ```
 
-## <a name="description"></a>Описание:
+## <a name="description"></a>Описание
 
 Команда `dotnet nuget push` отправляет пакет на сервер и публикует его. Команда push использует сервер и учетные данные, указанные в системном файле конфигурации NuGet или цепочке файлов конфигурации. См. дополнительные сведения о файлах конфигурации в статье о [настройке поведения NuGet](/nuget/consume-packages/configuring-nuget-behavior). Конфигурацию NuGet по умолчанию можно получить, загрузив файл *%AppData%\NuGet\NuGet.config* (Windows) или *$HOME/.local/share* (Linux и macOS). Затем нужно загрузить все файлы *nuget.config* или *.nuget\nuget.config*, начиная с корневого каталога диска и заканчивая текущим каталогом.
+
+Команда отправляет существующий пакет. При этом пакет не создается. Для создания пакета используйте [`dotnet pack`](dotnet-pack.md).
 
 ## <a name="arguments"></a>Аргументы
 
@@ -110,13 +112,13 @@ dotnet nuget push -h|--help
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
   ```
 
-- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию.
+- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg
   ```
 
-- Отправляет *foo.symbols.nupkg* в источник символов по умолчанию.
+- Отправляет *foo.symbols.nupkg* в источник символов по умолчанию:
 
   ```dotnetcli
   dotnet nuget push foo.symbols.nupkg
@@ -128,7 +130,7 @@ dotnet nuget push -h|--help
   dotnet nuget push foo.nupkg --timeout 360
   ```
 
-- Отправляет все файлы *NUPKG* из текущего каталога в источник push-уведомлений по умолчанию.
+- Отправляет все файлы *NUPKG* из текущего каталога в источник push-уведомлений по умолчанию:
 
   ```dotnetcli
   dotnet nuget push *.nupkg
@@ -138,8 +140,17 @@ dotnet nuget push -h|--help
   > Если эта команда не работает, возможно, это связано с ошибкой, которая существовала в более старых версиях пакета SDK (пакет SDK для .NET Core 2.1 и более ранних версий).
   > Чтобы устранить эту проблему, обновите версию пакета SDK или выполните следующую команду: `dotnet nuget push **/*.nupkg`
 
-- Принудительно отправляет все файлы *.nupkg*, даже если сервер HTTP(S) возвращает код состояния 409 Conflict (конфликт):
+- Принудительно отправляет все файлы *NUPKG*, даже если сервер HTTP(S) возвращает код состояния 409 Conflict (конфликт):
 
   ```dotnetcli
   dotnet nuget push *.nupkg --skip-duplicate
   ```
+
+- Отправляет все файлы *NUPKG* из текущего каталога в каталог локального веб-канала:
+
+  ```dotnetcli
+  dotnet nuget push *.nupkg -s c:\mydir
+  ```
+
+  Эта команда не сохраняет пакеты в иерархическую структуру папок, что рекомендуется для оптимизации производительности. Дополнительные сведения см. в разделе [Локальные веб-каналы](//nuget/hosting-packages/local-feeds).
+  

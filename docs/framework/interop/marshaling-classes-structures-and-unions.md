@@ -18,12 +18,12 @@ helpviewer_keywords:
 - data marshaling, platform invoke
 - marshaling, platform invoke
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
-ms.openlocfilehash: d761d8ed7488e99f29d4844d061867915a624b96
-ms.sourcegitcommit: 42ed59871db1f29a32b3d8e7abeb20e6eceeda7c
-ms.translationtype: MT
+ms.openlocfilehash: 708ed6a232950cb69796f105f6f198749ed53a24
+ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74960015"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82200019"
 ---
 # <a name="marshaling-classes-structures-and-unions"></a>Маршалинг классов, структур и объединений
 
@@ -31,17 +31,18 @@ ms.locfileid: "74960015"
 
 В таблице ниже представлены варианты маршалинга классов, структур и объединений, описывается их применение и приводятся ссылки на соответствующие примеры вызова неуправляемого кода.
 
-|Тип|Описание|Образец|
+|Type|Описание|Пример|
 |----------|-----------------|------------|
-|Класс по значению.|Передает класс с целочисленными членами в качестве параметра In или Out (как и в случае управляемого класса).|[Пример Систиме](#systime-sample)|
+|Класс по значению.|Передает класс с целочисленными членами в качестве параметра In или Out (как и в случае управляемого класса).|[Пример SysTime](#systime-sample)|
 |Структура по значению.|Передает структуры в качестве параметров In.|[Пример структур](#structures-sample)|
 |Структура по ссылке.|Передает структуры в качестве параметров In и Out.|[Пример OSInfo](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|
-|Структура с вложенными структурами (выровненная).|Передает класс, представляющий структуру с вложенными структурами, в неуправляемую функцию. Структура выравнивается в одну большую структуру в управляемом прототипе.|[Пример Финдфиле](#findfile-sample)|
+|Структура с вложенными структурами (выровненная).|Передает класс, представляющий структуру с вложенными структурами, в неуправляемую функцию. Структура выравнивается в одну большую структуру в управляемом прототипе.|[Пример FindFile](#findfile-sample)|
 |Структура с указателем на другую структуру.|Передает структуру, содержащую указатель на другую структуру в качестве члена.|[Пример структур](#structures-sample)|
 |Массив структур с целочисленными значениями по значению.|Передает массив структур, содержащих только целые числа, в виде параметра In или Out. Элементы массива можно изменять.|[Пример массивов](marshaling-different-types-of-arrays.md)|
-|Массив структур с целочисленными значениями и строками по ссылке.|Передает массив структур, содержащих целые числа и строки, в качестве параметра Out. Вызываемая функция выделяет память под массив.|[Пример Аутаррайофструктс](#outarrayofstructs-sample)|
+|Массив структур с целочисленными значениями и строками по ссылке.|Передает массив структур, содержащих целые числа и строки, в качестве параметра Out. Вызываемая функция выделяет память под массив.|[Пример OutArrayOfStructs](#outarrayofstructs-sample)|
 |Объединения с типами значений.|Передает объединения с типами значений (целочисленными и двойной точности).|[Пример объединений](#unions-sample)|
 |Объединения со смешанными типами.|Передает объединения со смешанными типами (целое число и строка).|[Пример объединений](#unions-sample)|
+|Структура с макетом, зависящим от платформы.|Передает тип с определениями собственной упаковки.|[Пример платформы](#platform-sample)|
 |Значения Null в структуре.|Передает пустую ссылку (**Nothing** в Visual Basic) вместо ссылки на тип значения.|[Пример HandleRef](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/hc662t8k(v=vs.85))|
 
 ## <a name="structures-sample"></a>Пример структур
@@ -68,7 +69,7 @@ ms.locfileid: "74960015"
     void TestArrayInStruct(MYARRAYSTRUCT* pStruct);
     ```
 
-[PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) — это пользовательская неуправляемая библиотека, которая содержит реализации перечисленных выше функций и четыре структуры: **MYPERSON**, **MYPERSON2**, **MYPERSON3** и **MYARRAYSTRUCT**. Эти структуры содержат следующие элементы:
+[PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) — это пользовательская неуправляемая библиотека, содержащая реализацию вышеуказанных функций и четырех структур: **MYPERSON**, **MYPERSON2**, **MYPERSON3** и **MYARRAYSTRUCT**. Эти структуры содержат следующие элементы:
 
 ```cpp
 typedef struct _MYPERSON
@@ -222,6 +223,85 @@ union MYUNION2
 [!code-csharp[Conceptual.Interop.Marshaling#29](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/unions.cs#29)]
 [!code-vb[Conceptual.Interop.Marshaling#29](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/unions.vb#29)]
 
+## <a name="platform-sample"></a>Пример платформы
+
+В некоторых сценариях макеты `struct` и `union` могут различаться в зависимости от целевой платформы. Например, рассмотрим тип [`STRRET`](/windows/win32/api/shtypes/ns-shtypes-strret) при определении в сценарии COM:
+
+```c++
+#include <pshpack8.h> /* Defines the packing of the struct */
+typedef struct _STRRET
+    {
+    UINT uType;
+    /* [switch_is][switch_type] */ union
+        {
+        /* [case()][string] */ LPWSTR pOleStr;
+        /* [case()] */ UINT uOffset;
+        /* [case()] */ char cStr[ 260 ];
+        }  DUMMYUNIONNAME;
+    }  STRRET;
+#include <poppack.h>
+```
+
+Приведенный выше `struct` объявляется с заголовками Windows, которые влияют на макет памяти типа. При определении в управляемой среде эти сведения о макете необходимы для правильного взаимодействия с машинным кодом.
+
+Правильное управляемое определение этого типа в 32-разрядном процессе имеет следующий вид:
+
+``` CSharp
+[StructLayout(LayoutKind.Explicit, Size = 264)]
+public struct STRRET_32
+{
+    [FieldOffset(0)]
+    public uint uType;
+
+    [FieldOffset(4)]
+    public IntPtr pOleStr;
+
+    [FieldOffset(4)]
+    public uint uOffset;
+
+    [FieldOffset(4)]
+    public IntPtr cStr;
+}
+```
+
+В 64-разрядном процессе размеры смещений полей *и* различаются. Правильный макет:
+
+``` CSharp
+[StructLayout(LayoutKind.Explicit, Size = 272)]
+public struct STRRET_64
+{
+    [FieldOffset(0)]
+    public uint uType;
+
+    [FieldOffset(8)]
+    public IntPtr pOleStr;
+
+    [FieldOffset(8)]
+    public uint uOffset;
+
+    [FieldOffset(8)]
+    public IntPtr cStr;
+}
+```
+
+Неправильный выбор собственного макета в сценарии взаимодействия может привести к возникновению случайных сбоев или, что еще хуже, к неправильным вычислениям.
+
+По умолчанию сборки .NET могут работать как в 32-разрядной, так и в 64-разрядной версии среды выполнения .NET. Приложение должно ожидать от среды выполнения решения о том, какое из предыдущих определений использовать.
+
+В следующем фрагменте кода показан пример выбора между 32-разрядным и 64-разрядным определением в среде выполнения.
+
+```CSharp
+if (IntPtr.Size == 8)
+{
+    // Use the STRRET_64 definition
+}
+else
+{
+    Debug.Assert(IntPtr.Size == 4);
+    // Use the STRRET_32 definition
+}
+```
+
 ## <a name="systime-sample"></a>Пример SysTime
 
 В этом примере показано, как передать указатель на класс в неуправляемую функцию, ожидающую указатель на структуру.
@@ -259,7 +339,7 @@ typedef struct _SYSTEMTIME {
 [!code-csharp[Conceptual.Interop.Marshaling#25](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/systime.cs#25)]
 [!code-vb[Conceptual.Interop.Marshaling#25](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/systime.vb#25)]
 
-## <a name="outarrayofstructs-sample"></a>Пример OutArrayOfStructs
+## <a name="outarrayofstructs-sample"></a>Пример OutArrayOfStructs 
 
 В этом примере показано, как передать в неуправляемую функцию массив структур, содержащий целочисленные значения и строки, в виде параметров Out.
 
@@ -301,7 +381,7 @@ typedef struct _MYSTRSTRUCT2
 [!code-csharp[Conceptual.Interop.Marshaling#21](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/outarrayofstructs.cs#21)]
 [!code-vb[Conceptual.Interop.Marshaling#21](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/outarrayofstructs.vb#21)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Маршалинг данных при вызове неуправляемого кода](marshaling-data-with-platform-invoke.md)
 - [Mаршалинг строк](marshaling-strings.md)

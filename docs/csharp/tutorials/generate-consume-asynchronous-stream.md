@@ -1,19 +1,19 @@
 ---
 title: Создание и использование асинхронных потоков
-description: Это расширенное руководство иллюстрирует сценарии, в которых создание и использование асинхронных потоков обеспечивает более естественный способ работы с последовательностями данных, которые могут создаваться асинхронно.
+description: В этом расширенном руководстве показано, как создавать и использовать асинхронные потоки. Асинхронные потоки предоставляют более естественный способ работы с последовательностями данных, которые могут создаваться асинхронно.
 ms.date: 02/10/2019
 ms.technology: csharp-async
 ms.custom: mvc
-ms.openlocfilehash: de090eb9cc1e8b511956313ab5169ee4d07a492f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 03254e5208a048469f4753d632de7b0d451cde40
+ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156744"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82200110"
 ---
 # <a name="tutorial-generate-and-consume-async-streams-using-c-80-and-net-core-30"></a>Учебник. Создание и использование асинхронных потоков с использованием C# 8.0 и .NET Core 3.0
 
-C# 8.0 представляет **асинхронные потоки**, которые моделируют источник потоковых данных, когда можно получить элементы в потоке данных или создать их асинхронно. Асинхронные потоки опираются на новые интерфейсы, представленные в .NET Standard 2.1 и реализованные в .NET Core 3.0, чтобы обеспечить естественную модель программирования для асинхронных источников потоковых данных.
+В C# 8.0 представлены **асинхронные потоки**, которые моделируют источник данных потоковой передачи. Потоки данных часто извлекают или создают элементы асинхронно. Асинхронные потоки полагаются на новые интерфейсы, появившиеся в .NET Standard 2.1. Эти интерфейсы поддерживаются в .NET Core 3.0 и более поздних версиях. Они предоставляют естественную модель программирования для асинхронных потоковых источников данных.
 
 В этом руководстве вы узнаете, как:
 
@@ -21,6 +21,7 @@ C# 8.0 представляет **асинхронные потоки**, кот
 >
 > - Создать источник данных, который формирует последовательность элементов данных асинхронно.
 > - Использовать этот источник данных асинхронно.
+> - Поддержка отмены и перехваченных контекстов для асинхронных потоков.
 > - Распознавать, когда новый интерфейс и источник данных предпочтительнее для более ранних синхронных последовательностей данных.
 
 ## <a name="prerequisites"></a>Предварительные требования
@@ -41,13 +42,13 @@ C# 8.0 представляет **асинхронные потоки**, кот
 
 ## <a name="run-the-starter-application"></a>Запуск начального приложения
 
-Вы можете получить код для начального приложения, используемый в этом руководстве в репозитории [dotnet/samples](https://github.com/dotnet/samples) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/start).
+Вы можете получить код для начального приложения, используемый в этом руководстве в репозитории [dotnet/docs](https://github.com/dotnet/docs) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start).
 
 Начальное приложение представляет собой консольное приложение, которое использует интерфейс [GraphQL GitHub](https://developer.github.com/v4/) для получения последних проблем, написанных в репозитории [dotnet/docs](https://github.com/dotnet/docs). Начнем с просмотра следующего кода для метода `Main` начального приложения.
 
-[!code-csharp[StarterAppMain](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#StarterAppMain)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetStarterAppMain" :::
 
-Вы можете задать переменную среды `GitHubKey` личному маркеру доступа или заменить последний аргумент в вызове на `GenEnvVariable` с помощью личного маркера доступа. Не помещайте свой код доступа в исходный код, если вы будете сохранять исходный код вместе с другими или помещать его в общий репозиторий с исходным кодом.
+Вы можете задать переменную среды `GitHubKey` личному маркеру доступа или заменить последний аргумент в вызове на `GenEnvVariable` с помощью личного маркера доступа. Не размещайте код доступа в исходном коде, если будете предоставлять общий доступ к источнику другим пользователям. Никогда не отправляйте коды доступа в репозиторий с общим исходным кодом.
 
 После создания клиента GitHub код в `Main` создает объект отчета о ходе выполнения и маркер отмены. После создания этих объектов `Main` вызывает `runPagedQueryAsync`, чтобы получить более 250 недавно созданных проблем. Результаты отобразятся после выполнения этой задачи.
 
@@ -57,13 +58,13 @@ C# 8.0 представляет **асинхронные потоки**, кот
 
 Реализация показывает, почему возникло поведение, обсуждавшееся в предыдущем разделе. Изучите код для `runPagedQueryAsync`.
 
-[!code-csharp[RunPagedQueryStarter](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#RunPagedQuery)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetRunPagedQuery" :::
 
 Давайте сконцентрируемся на алгоритме разбивки по страницам и асинхронной структуре предыдущего кода. (Дополнительные сведения об API GraphQL GitHub см. в [этой документации](https://developer.github.com/v4/guides/).) Метод `runPagedQueryAsync` перечисляет проблемы от самых последних до самых старых. Чтобы продолжить с предыдущей страницы, он запрашивает по 25 выпусков на страницу и проверяет структуру ответа `pageInfo`. Это следует за стандартной поддержкой страниц GraphQL для многостраничных ответов. Ответ включает в себя объект `pageInfo`, который содержит значение `hasPreviousPages` и `startCursor`, используемые для запроса предыдущей страницы. Проблемы в массиве `nodes`. Метод `runPagedQueryAsync` добавляет эти узлы в массив, который содержит результаты со всех страниц.
 
 После получения и восстановления страницы результатов `runPagedQueryAsync` сообщает о ходе выполнения и проверяет наличие отмены. Если есть запрос на отмену, `runPagedQueryAsync` выдает <xref:System.OperationCanceledException>.
 
-Существует несколько элементов в этом коде, которые можно улучшить. Самое главное, `runPagedQueryAsync` должен выделить хранилище для всех возвращенных проблем. Этот пример останавливается после нахождения 250 проблем, так как для извлечения всех открытых проблем потребуется гораздо больше памяти на их хранение. Кроме того, протоколы для поддержки хода выполнения и отмены делают алгоритм более сложным для понимания при первом чтении. Необходимо определить класс, где предоставляется ход выполнения. Вы также должны отслеживать передачу данных с помощью <xref:System.Threading.CancellationTokenSource> и связанный с ним <xref:System.Threading.CancellationToken>, чтобы понять, где запрашивается отмена и где она предоставляется.
+Существует несколько элементов в этом коде, которые можно улучшить. Самое главное, `runPagedQueryAsync` должен выделить хранилище для всех возвращенных проблем. Этот пример останавливается после нахождения 250 проблем, так как для извлечения всех открытых проблем потребуется гораздо больше памяти на их хранение. Протоколы для поддержки отчетов о ходе выполнения и отмены делают алгоритм более сложным для понимания при первом чтении. Задействовано больше типов и API. Вы должны отслеживать передачу данных с помощью <xref:System.Threading.CancellationTokenSource> и связанного с ним <xref:System.Threading.CancellationToken>, чтобы понять, где запрашивается отмена и где она предоставляется.
 
 ## <a name="async-streams-provide-a-better-way"></a>Предоставление лучшего способа асинхронных потоков
 
@@ -71,30 +72,9 @@ C# 8.0 представляет **асинхронные потоки**, кот
 
 Эти новые языковые функции зависят от трех новых интерфейсов, добавленных в .NET Standard 2.1 и реализованных в .NET Core 3.0.
 
-```csharp
-namespace System.Collections.Generic
-{
-    public interface IAsyncEnumerable<out T>
-    {
-        IAsyncEnumerator<T> GetAsyncEnumerator(CancellationToken cancellationToken = default);
-    }
-
-    public interface IAsyncEnumerator<out T> : IAsyncDisposable
-    {
-        T Current { get; }
-
-        ValueTask<bool> MoveNextAsync();
-    }
-}
-
-namespace System
-{
-    public interface IAsyncDisposable
-    {
-        ValueTask DisposeAsync();
-    }
-}
-```
+- <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IAsyncEnumerator%601?displayProperty=nameWithType>
+- <xref:System.IAsyncDisposable?displayProperty=nameWithType>
 
 Большинство разработчиков C# должны знать об этих трех интерфейсах. Они ведут себя подобно своим синхронным аналогам.
 
@@ -108,33 +88,63 @@ namespace System
 
 Затем для создания асинхронного потока преобразуйте метод `runPagedQueryAsync`. Сначала измените подпись `runPagedQueryAsync`, чтобы вернуть `IAsyncEnumerable<JToken>`, затем удалите маркер отмены и объекты хода выполнения из списка параметров, как показано в следующем коде.
 
-[!code-csharp[FinishedSignature](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#UpdateSignature)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetUpdateSignature" :::
 
 В следующем коде показано, как начальный код обрабатывает каждую страницу для извлечения.
 
-[!code-csharp[StarterPaging](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#ProcessPage)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetProcessPage" :::
 
 Замените эти три строки следующим кодом.
 
-[!code-csharp[FinishedPaging](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#YieldReturnPage)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetYieldReturnPage" :::
 
 Вы также можете удалить объявление `finalResults` ранее в этом методе и оператор `return`, следующий за измененным циклом.
 
-Вы завершили изменения для создания асинхронного потока. Готовый метод должен напоминать код, указанный ниже.
+Вы завершили изменения для создания асинхронного потока. Готовый метод должен иметь вид, аналогичный приведенному ниже коду:
 
-[!code-csharp[FinishedGenerate](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#GenerateAsyncStream)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGenerateAsyncStream" :::
 
 Затем измените код, который использует коллекцию, для асинхронного потока. Найдите следующий код в `Main`, который обрабатывает коллекцию проблем.
 
-[!code-csharp[EnumerateOldStyle](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#EnumerateOldStyle)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetEnumerateOldStyle" :::
 
 Замените код следующим циклом `await foreach`.
 
-[!code-csharp[FinishedEnumerateAsyncStream](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#EnumerateAsyncStream)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateAsyncStream" :::
+
+Новый интерфейс <xref:System.Collections.Generic.IAsyncEnumerator%601> является производным от <xref:System.IAsyncDisposable>. Это означает, что предыдущий цикл будет асинхронно удалять поток по завершении цикла. Цикл похож на следующий код:
+
+```csharp
+int num = 0;
+var enumerator = runPagedQueryAsync(client, PagedIssueQuery, "docs").GetEnumeratorAsync();
+try
+{
+    while (await enumerator.MoveNextAsync())
+    {
+        var issue = enumerator.Current;
+        Console.WriteLine(issue);
+        Console.WriteLine($"Received {++num} issues in total");
+    }
+} finally
+{
+    if (enumerator != null)
+        await enumerator.DisposeAsync();
+}
+```
 
 Элементы потока по умолчанию обрабатываются в захваченном контексте. Чтобы отключить захват контекста, используйте метод расширения <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType>. Дополнительные сведения о контекстах синхронизации и захвате текущего контекста см. в [статье](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md), посвященной использованию асинхронной модели на основе задач.
 
-Вы можете получить код для 	готового руководства, используемый в репозитории [dotnet/samples](https://github.com/dotnet/samples) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/finished).
+Асинхронные потоки поддерживают отмену, используя тот же протокол, что и другие методы `async`. Для поддержки отмены можно изменить сигнатуру для метода асинхронного итератора следующим образом:
+
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGenerateWithCancellation" :::
+
+Атрибут <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?dipslayProperty=nameWithType> заставляет компилятор создать код для <xref:System.Collections.Generic.IAsyncEnumerator%601>, который делает токен, передаваемый `GetAsyncEnumerator`, видимым в тексте асинхронного итератора в виде аргумента. Внутри `runQueryAsync` можно проверить состояние маркера и отменить дальнейшую работу при необходимости.
+
+Используйте другой метод расширения, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%2A>, чтобы передать токен отмены асинхронному потоку. Измените цикл, перечисляя проблемы следующим образом:
+
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
+
+Вы можете получить код для готового руководства из репозитория [dotnet/docs](https://github.com/dotnet/docs) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished).
 
 ## <a name="run-the-finished-application"></a>Запуск готового приложения
 

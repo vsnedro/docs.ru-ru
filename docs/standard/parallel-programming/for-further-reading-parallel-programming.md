@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - tasks, further reading
 ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f
-ms.openlocfilehash: d424c04f52e08b0fdb72e187bd8999ef16427080
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1c6823808bf457cf23fbef8f7000d38604474a8a
+ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73134215"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82507485"
 ---
 # <a name="for-further-reading-parallel-programming"></a>Дополнительные сведения (параллельное программирование)
 
@@ -22,9 +22,9 @@ ms.locfileid: "73134215"
 
 - [Блог параллельного программирования на .NET](https://devblogs.microsoft.com/pfxteam/) содержит множество подробных статей о параллельном программировании на .NET.
 
-- На странице с [примерами параллельного программирования с помощью .NET Framework](https://code.msdn.microsoft.com/ParExtSamples) демонстрируется использование методов параллельного программирования на среднем и продвинутом уровнях сложности.
+- На странице с [примерами параллельного программирования с помощью .NET Core и .NET Standard](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel) демонстрируется использование методов параллельного программирования на среднем и продвинутом уровнях сложности.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Центр разработчиков параллельных вычислений](https://msdn.microsoft.com/vstudio/bb964701)
 - [Параллельное программирование в Visual C++](/cpp/parallel/parallel-programming-in-visual-cpp)

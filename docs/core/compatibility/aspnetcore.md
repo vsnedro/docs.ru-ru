@@ -2,15 +2,15 @@
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
 description: В этой статье приведен список критических изменений в ASP.NET Core.
-ms.date: 03/27/2020
+ms.date: 04/29/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 95057425614d7c717154ecfb687db2b9a6ca4a18
-ms.sourcegitcommit: a9b8945630426a575ab0a332e568edc807666d1b
+ms.openlocfilehash: 63d39b1aa6e46b6bcbeb5a409efacac01dea4262
+ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80391251"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82728342"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
@@ -31,14 +31,17 @@ ASP.NET Core предоставляет функции разработки ве
 - [Кэширование. Microsoft.Extensions.Caching.SqlServer использует новый пакет SqlClient](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Кэширование. Типы ResponseCaching pubternal теперь стали внутренними](#caching-responsecaching-pubternal-types-changed-to-internal)
 - [Защита данных. DataProtection.AzureStorage использует новые API службы хранилища Azure](#data-protection-dataprotectionazurestorage-uses-new-azure-storage-apis)
+- [Расширения. Изменения ссылок на пакеты, затрагивающие некоторые пакеты NuGet](#extensions-package-reference-changes-affecting-some-nuget-packages)
 - [Размещение. Модуль AspNetCoreModule версии 1 удален из пакета размещения Windows](#hosting-aspnetcoremodule-v1-removed-from-windows-hosting-bundle)
 - [Размещение. Универсальный узел ограничивает внедрение через конструктор Startup](#hosting-generic-host-restricts-startup-constructor-injection)
 - [Размещение. Для приложений IIS вне процесса включено перенаправление HTTPS](#hosting-https-redirection-enabled-for-iis-out-of-process-apps)
 - [Размещение. Удалены типы IHostingEnvironment и IApplicationLifetime](#hosting-ihostingenvironment-and-iapplicationlifetime-types-marked-obsolete-and-replaced)
 - [Размещение. ObjectPoolProvider удален из зависимостей WebHostBuilder](#hosting-objectpoolprovider-removed-from-webhostbuilder-dependencies)
+- [HTTP. Типы Kestrel и IIS BadHttpRequestException, помеченные как устаревшие и замененные](#http-kestrel-and-iis-badhttprequestexception-types-marked-obsolete-and-replaced)
 - [HTTP. Изменения SameSite в браузере влияют на проверку подлинности](#http-browser-samesite-changes-impact-authentication)
 - [HTTP. Удалена расширяемость DefaultHttpContext](#http-defaulthttpcontext-extensibility-removed)
 - [HTTP. Поля HeaderNames изменены на статические только для чтения](#http-headernames-constants-changed-to-static-readonly)
+- [HTTP. Экземпляры HttpClient, созданные с помощью целочисленных кодов состояния журнала IHttpClientFactory](#http-httpclient-instances-created-by-ihttpclientfactory-log-integer-status-codes)
 - [HTTP. Изменения в инфраструктуре текста ответа](#http-response-body-infrastructure-changes)
 - [HTTP. Внесены изменения в некоторые значения по умолчанию для параметра SameSite для файлов cookie](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP. Синхронный ввод-вывода отключен по умолчанию](#http-synchronous-io-disabled-in-all-servers)
@@ -52,6 +55,7 @@ ASP.NET Core предоставляет функции разработки ве
 - [Kestrel. Заголовки трейлеров запросов перемещены в новую коллекцию](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel. Внесены изменения в слой абстракции транспорта](#kestrel-transport-abstractions-removed-and-made-public)
 - [Локализация. Интерфейсы API отмечены как устаревшие](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
+- [Локализация. Удален класс ResourceManagerWithCultureStringLocalizer и элемент интерфейса WithCulture](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Ведение журнала. Класс DebugLogger стал внутренним](#logging-debuglogger-class-made-internal)
 - [MVC. Удален асинхронный суффикс действия контроллера](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC. JsonResult перемещен в Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
@@ -67,6 +71,7 @@ ASP.NET Core предоставляет функции разработки ве
 - [SignalR. Изменены конструкторы HubConnectionContext](#signalr-hubconnectioncontext-constructors-changed)
 - [SignalR. Изменено имя пакета клиента JavaScript](#signalr-javascript-client-package-name-changed)
 - [SignalR. Протокол MessagePack для концентратора перемещен в пакет MessagePack 2.x](#signalr-messagepack-hub-protocol-moved-to-messagepack-2x-package)
+- [SignalR. Тип параметров протокола концентратора MessagePack изменился](#signalr-messagepack-hub-protocol-options-type-changed)
 - [SignalR. Устаревшие API](#signalr-usesignalr-and-useconnections-methods-marked-obsolete)
 - [SignalR. Методы UseSignalR и UseConnections удалены](#signalr-usesignalr-and-useconnections-methods-removed)
 - [Одностраничные приложения. Изменено поведение по умолчанию при переключении на средство ведения журнала консоли SpaServices и NodeServices](#spas-spaservices-and-nodeservices-no-longer-fall-back-to-console-logger)
@@ -80,7 +85,27 @@ ASP.NET Core предоставляет функции разработки ве
 
 ***
 
+[!INCLUDE[Extensions: Package reference changes](~/includes/core-changes/aspnetcore/5.0/extensions-package-reference-changes.md)]
+
+***
+
+[!INCLUDE[HTTP: HttpClient instances created by IHttpClientFactory log integer status codes](~/includes/core-changes/aspnetcore/5.0/http-httpclient-instances-log-integer-status-codes.md)]
+
+***
+
+[!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
+
+***
+
+[!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
+
+***
+
 [!INCLUDE[SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-package.md)]
+
+***
+
+[!INCLUDE[SignalR: MessagePack Hub Protocol options type changed](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-hub-protocol-options-changed.md)]
 
 ***
 

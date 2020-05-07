@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Создание пула объектов с помощью класса ConcurrentBag
-ms.date: 03/30/2017
+title: Создание пула объектов с помощью класса ConcurrentBag
+ms.date: 05/01/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -8,22 +8,27 @@ dev_langs:
 helpviewer_keywords:
 - object pool, in .NET Framework
 ms.assetid: 0480e7ff-b6f9-480e-a889-2ed4264d8372
-ms.openlocfilehash: 888521eb5c3c3169c4b39a26e82fef2e35c286d9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2c060dc901f8d06a5f9c51db1cd563cb28e4fda3
+ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75711276"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "82728475"
 ---
-# <a name="how-to-create-an-object-pool-by-using-a-concurrentbag"></a>Практическое руководство. Создание пула объектов с помощью класса ConcurrentBag
-В этом примере показано, как использовать контейнер ConcurrentBag для реализации пула объектов. Пулы объектов позволяют улучшить производительность приложения, когда требуется несколько экземпляров класса, которые "дорого" создавать или уничтожать. Когда клиентская программа запрашивает новый объект, сперва происходит поиск в пуле объектов ранее созданного и возвращенного в пул объекта. Новый объект создается, только если в пуле не нашлось нужного объекта.  
-  
- <xref:System.Collections.Concurrent.ConcurrentBag%601> используется для хранения объектов, так как поддерживает быстрое добавление и удаление, особенно при добавлении и удалении элементов одним потоком. Этот пример можно расширить до построения на основе интерфейса <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>, который реализует структура данных контейнера, например <xref:System.Collections.Concurrent.ConcurrentQueue%601> и <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
-  
-## <a name="example"></a>Пример  
- [!code-csharp[CDS#04](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/objectpool.cs#04)]
- [!code-vb[CDS#04](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/objectpool04.vb#04)]  
-  
-## <a name="see-also"></a>См. также раздел
+# <a name="create-an-object-pool-by-using-a-concurrentbag"></a>Создание пула объектов с помощью класса ConcurrentBag
+
+В этом примере показано, как использовать контейнер <xref:System.Collections.Concurrent.ConcurrentBag%601> для реализации пула объектов. Пулы объектов позволяют улучшить производительность приложения, когда требуется несколько экземпляров класса, которые "дорого" создавать или уничтожать. Когда клиентская программа запрашивает новый объект, сперва происходит поиск в пуле объектов ранее созданного и возвращенного в пул объекта. Новый объект создается, только если в пуле не нашлось нужного объекта.
+
+<xref:System.Collections.Concurrent.ConcurrentBag%601> используется для хранения объектов, так как поддерживает быстрое добавление и удаление, особенно при добавлении и удалении элементов одним потоком. Этот пример можно расширить до построения на основе интерфейса <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>, который реализует структура данных контейнера, например <xref:System.Collections.Concurrent.ConcurrentQueue%601> и <xref:System.Collections.Concurrent.ConcurrentStack%601>.
+
+> [!TIP]
+> В этой статье описывается написание собственной реализации пула объектов с базовым параллельным типом для хранения объектов, чтобы их можно было использовать повторно. Однако тип <xref:Microsoft.Extensions.ObjectPool.ObjectPool%601?displayProperty=nameWithType> уже существует в пространстве имен <xref:Microsoft.Extensions.ObjectPool?displayProperty=fullName>. Перед созданием собственной реализации, которая включает множество дополнительных функций, рекомендуется использовать доступный тип.
+
+## <a name="example"></a>Пример
+
+[!code-csharp[CDS#04](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/objectpool.cs#04)]
+[!code-vb[CDS#04](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/objectpool04.vb#04)]
+
+## <a name="see-also"></a>См. также
 
 - [Потокобезопасные коллекции](../../../../docs/standard/collections/thread-safe/index.md)

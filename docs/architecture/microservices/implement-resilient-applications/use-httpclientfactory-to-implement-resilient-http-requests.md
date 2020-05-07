@@ -2,12 +2,12 @@
 title: Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 description: Узнайте, как использовать интерфейс IHttpClientFactory, доступный в .NET Core, начиная с версии 2.1, для создания экземпляров `HttpClient`, чтобы облегчить их применение в ваших приложениях.
 ms.date: 03/03/2020
-ms.openlocfilehash: 088fb6c7e10ad656247ee4065da5c13d383b2cf7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ade26208a931faa456c8e267def2caef7a3f32de
+ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78847223"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82507303"
 ---
 # <a name="use-ihttpclientfactory-to-implement-resilient-http-requests"></a>Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 
@@ -21,7 +21,7 @@ ms.locfileid: "78847223"
 
 Таким образом, создается один экземпляр `HttpClient`, которые будет использоваться повторно на протяжении всего жизненного цикла приложения. Создание экземпляра класса `HttpClient` для каждого запроса будет сокращать количество доступных сокетов при больших нагрузках. В результате будут возникать ошибки `SocketException`. Возможные способы решения этой проблемы основаны на создании объекта `HttpClient` в виде класса-одиночки или статического класса, как описано в этой [статье Майкрософт об использовании HttpClient](../../../csharp/tutorials/console-webapiclient.md). Это может быть хорошим решением для консольных приложений, которые выполняются непродолжительное время несколько раз в день, а также их аналогов.
 
-Кроме того, разработчики сталкиваются с проблемами при использовании общего экземпляра `HttpClient` в длительно выполняющихся процессах. Если экземпляр HttpClient создается в единичном виде или как статический объект, он не может обрабатывать изменения DNS, как описывается в этой [проблеме](https://github.com/dotnet/corefx/issues/11224) в репозитории GitHub dotnet/corefx.
+Кроме того, разработчики сталкиваются с проблемами при использовании общего экземпляра `HttpClient` в длительно выполняющихся процессах. Если экземпляр HttpClient создается в единичном виде или как статический объект, он не может обрабатывать изменения DNS, как описывается в этой [проблеме](https://github.com/dotnet/runtime/issues/18348) в репозитории GitHub dotnet/среды выполнения.
 
 Тем не менее эта проблема связана не с самим объектом `HttpClient`, а с [конструктором по умолчанию для HttpClient](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.-ctor?view=netcore-3.1#System_Net_Http_HttpClient__ctor), поскольку он создает новый конкретный экземпляр <xref:System.Net.Http.HttpMessageHandler>, который является источником описываемых выше проблем, связанных с *нехваткой сокетов* и изменениями DNS.
 

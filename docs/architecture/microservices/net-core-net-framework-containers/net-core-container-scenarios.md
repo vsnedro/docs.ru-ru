@@ -2,12 +2,12 @@
 title: Выбор .NET Core для контейнеров Docker
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Выбор .NET Core для контейнеров Docker
 ms.date: 01/30/2020
-ms.openlocfilehash: f784512af3f520f96d499ab002eda58071b3c284
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8d25cf58c48aac137ba91300515bdb72a7eb648d
+ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79147379"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82507277"
 ---
 # <a name="when-to-choose-net-core-for-docker-containers"></a>Выбор .NET Core для контейнеров Docker
 
@@ -27,7 +27,7 @@ ms.locfileid: "79147379"
 
 [Visual Studio для Mac](https://www.visualstudio.com/vs/visual-studio-mac/) — это интегрированная среда разработки, которая является эволюцией Xamarin Studio, выполняется в macOS и поддерживает разработку приложений на основе Docker. Она должна быть предпочтительным вариантом для разработчиков, работающих на компьютерах Mac и стремящихся использовать мощную интегрированную среду разработки.
 
-Редактор [Visual Studio Code](https://code.visualstudio.com/) можно также использовать в macOS, Linux и Windows. Visual Studio Code полностью поддерживает .NET Core, включая технологию IntelliSense и отладку. Так как VS Code является упрощенным редактором, для разработки контейнерных приложений на компьютере Mac его можно использовать в сочетании с Docker CLI и [.NET Core CLI](../../../core/tools/index.md). Для разработки на платформе .NET Core также можно использовать большинство сторонних редакторов, например Sublime, Emacs, vi и проект с открытым кодом OmniSharp, который также поддерживает технологию IntelliSense.
+Редактор [Visual Studio Code](https://code.visualstudio.com/) можно также использовать в macOS, Linux и Windows. Visual Studio Code полностью поддерживает .NET Core, включая технологию IntelliSense и отладку. Так как VS Code является упрощенным редактором, для разработки контейнерных приложений на компьютере его можно использовать в сочетании с Docker CLI и [.NET Core CLI](../../../core/tools/index.md). Для разработки на платформе .NET Core также можно использовать большинство сторонних редакторов, например Sublime, Emacs, vi и проект с открытым кодом OmniSharp, который также поддерживает технологию IntelliSense.
 
 Наряду с интегрированными средами разработки и редакторами для всех поддерживаемых платформ вы можете использовать [.NET Core CLI](../../../core/tools/index.md).
 
