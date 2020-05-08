@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9fcefa98-750d-4168-8915-8173a43accf2
 topic_type:
 - apiref
-ms.openlocfilehash: 0b024d3396dfe1796fcb18afa122d4aee39c4ccc
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c8a62d8b4a4db0f36d991c32dbfc5bad68780f1b
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132724"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894696"
 ---
 # <a name="icordebugchainenumerateframes-method"></a>Метод ICorDebugChain::EnumerateFrames
 Возвращает перечислитель, содержащий все управляемые кадры стека в цепочке, начиная с самого последнего кадра.  
@@ -37,16 +37,16 @@ HRESULT EnumerateFrames (
  `ppFrames`  
  заполняет Указатель на адрес объекта ICorDebugFrameEnum, который является перечислителем для кадров стека.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Цепочка представляет физический стек вызовов для потока.  
   
- Метод `EnumerateFrames` должен вызываться только для управляемых цепочек. API отладки не предоставляет методы для получения кадров, содержащихся в неуправляемых цепочках. Для получения этих сведений отладчик должен использовать другие средства.  
+ `EnumerateFrames` Метод должен вызываться только для управляемых цепочек. API отладки не предоставляет методы для получения кадров, содержащихся в неуправляемых цепочках. Для получения этих сведений отладчик должен использовать другие средства.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

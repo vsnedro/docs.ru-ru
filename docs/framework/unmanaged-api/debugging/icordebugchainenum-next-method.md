@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6b791351-bcc5-4ddd-9cab-eff2f7dd5142
 topic_type:
 - apiref
-ms.openlocfilehash: 3c11a0547ad5acc5613324d7e9d7439d44549dbc
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 2d075820df534e08bdf4c2b75d36f6a60f979662
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125813"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894092"
 ---
 # <a name="icordebugchainenumnext-method"></a>Метод ICorDebugChainEnum::Next
 Возвращает указанное число экземпляров ICorDebugChain из перечисления, начиная с текущей позиции.  
@@ -38,19 +38,19 @@ HRESULT Next (
   
 ## <a name="parameters"></a>Параметры  
  `celt`  
- окне Число извлекаемых экземпляров `ICorDebugChain`.  
+ окне Число извлекаемых `ICorDebugChain` экземпляров.  
   
  `chains`  
- заполняет Массив указателей, каждый из которых указывает на объект `ICorDebugChain`, представляющий цепочку.  
+ заполняет Массив указателей, каждый из которых указывает на `ICorDebugChain` объект, представляющий цепочку.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращаемых экземпляров `ICorDebugChain`. Это значение может быть равно null, если `celt` является одним.  
+ заполняет Указатель на число фактически возвращенных `ICorDebugChain` экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

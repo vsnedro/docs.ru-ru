@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 44cd98cf-2127-4d46-8c6a-da4e857bb6b0
 topic_type:
 - apiref
-ms.openlocfilehash: f33225eae4b62f2d5f0793212ae7dcc70e97f508
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 82f282630a2e31b8c67d43fa0f0b30431a0d6ee4
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73088533"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895057"
 ---
 # <a name="icordebugarrayvaluegetcount-method"></a>Метод ICorDebugArrayValue::GetCount
 Возвращает общее число элементов в массиве.  
@@ -38,10 +38,10 @@ HRESULT GetCount (
  заполняет Указатель на общее число элементов в массиве.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

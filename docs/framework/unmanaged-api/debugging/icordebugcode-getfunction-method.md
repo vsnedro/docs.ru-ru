@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c568b737-fdb2-4816-accd-051f5ab760f1
 topic_type:
 - apiref
-ms.openlocfilehash: 217ca0a850926e5f697340cece264c6ed442a9bb
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 9f785eafa8925324e3bd269ca08a3b1367b74c44
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125647"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82893591"
 ---
 # <a name="icordebugcodegetfunction-method"></a>Метод ICorDebugCode::GetFunction
 Возвращает "ICorDebugFunction", связанный с этим "ICorDebugCode".  
@@ -37,14 +37,14 @@ HRESULT GetFunction (
  `ppFunction`  
  заполняет Указатель на адрес функции.  
   
-## <a name="remarks"></a>Заметки  
- `ICorDebugCode` и `ICorDebugFunction` поддерживать связь "один к одному".  
+## <a name="remarks"></a>Remarks  
+ `ICorDebugCode`и `ICorDebugFunction` поддерживают связь «один к одному».  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

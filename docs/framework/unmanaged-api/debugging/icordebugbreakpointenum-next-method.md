@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2e6bbaea-79ba-448c-a0e3-7c90fc7c2939
 topic_type:
 - apiref
-ms.openlocfilehash: d29576c6f073f1d0e8e0aea417fc38c09a8327c1
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: af90886390b59932d3ae146a70fc2901ec1c378d
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73122747"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894671"
 ---
 # <a name="icordebugbreakpointenumnext-method"></a>Метод ICorDebugBreakpointEnum::Next
 Возвращает указанное число экземпляров Икордебугбреакпоинт из перечисления, начиная с текущей позиции.  
@@ -38,19 +38,19 @@ HRESULT Next (
   
 ## <a name="parameters"></a>Параметры  
  `celt`  
- окне Число извлекаемых экземпляров `ICorDebugBreakpoint`.  
+ окне Число извлекаемых `ICorDebugBreakpoint` экземпляров.  
   
  `breakpoints`  
- заполняет Массив указателей, каждый из которых указывает на объект `ICorDebugBreakpoint`, представляющий точку останова.  
+ заполняет Массив указателей, каждый из которых указывает на `ICorDebugBreakpoint` объект, представляющий точку останова.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращаемых экземпляров `ICorDebugBreakpoint`. Это значение может быть равно null, если `celt` является одним.  
+ заполняет Указатель на число фактически возвращенных `ICorDebugBreakpoint` экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

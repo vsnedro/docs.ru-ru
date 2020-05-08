@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: d492284f-d3c5-4614-adb8-d718d5042500
 topic_type:
 - apiref
-ms.openlocfilehash: f720b06581ac60c8bd68dc5e85f15843fd9425f6
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 6b02657012870de4d0f888f6c05b115b25073fa2
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788908"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82892830"
 ---
 # <a name="icordebugcomobjectvaluegetcachedinterfacetypes-method"></a>Метод ICorDebugComObjectValue::GetCachedInterfaceTypes
 Предоставляет перечислитель для типов интерфейса, которые текущий объект приводят к типу или используются в качестве.  
@@ -33,23 +33,23 @@ HRESULT GetCachedInterfaceTypes(
   
 ## <a name="parameters"></a>Параметры  
  `bIInspectableOnly`  
- окне Значение, указывающее, возвращает ли метод только среда выполнения Windows интерфейсы (интерфейсы`IInspectable`) или все COM-интерфейсы, кэшированные вызываемой оболочкой времени выполнения (RCW).  
+ окне Значение, указывающее, возвращает ли метод только среда выполнения Windows интерфейсы (`IInspectable` интерфейсы) или все COM-интерфейсы, кэшированные вызываемой оболочкой времени выполнения (RCW).  
   
  `ppInterfacesEnum`  
  заполняет Указатель на адрес перечислителя ICorDebugTypeEnum, который предоставляет доступ к объектам ICorDebugType, представляющим кэшированные типы интерфейсов, отфильтрованные в соответствии с `bIInspectableOnly`.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Интерфейс ICorDebugComObjectValue](icordebugcomobjectvalue-interface.md)
+- [Интерфейс ICorDebugComObjectValue Interface](icordebugcomobjectvalue-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

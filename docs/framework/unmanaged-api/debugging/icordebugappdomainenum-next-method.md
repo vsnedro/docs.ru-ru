@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b8d1def7-0ebc-4314-a3a2-fd36a75973e7
 topic_type:
 - apiref
-ms.openlocfilehash: 55e331ff4e6ada73dc92bb2e880f555887639714
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 17bf4c92b1e1347a8fe790c8df5937de0f95df4d
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73088796"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895086"
 ---
 # <a name="icordebugappdomainenumnext-method"></a>Метод ICorDebugAppDomainEnum::Next
 Возвращает указанное число доменов приложений из коллекции, начиная с текущей позиции курсора.  
@@ -44,13 +44,13 @@ HRESULT Next (
  заполняет Массив указателей, каждый из которых указывает на объект ICorDebugAppDomain, представляющий домен приложения.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращенных доменов приложений. Это значение может быть равно null, если `celt` является одним.  
+ заполняет Указатель на число фактически возвращенных доменов приложений. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

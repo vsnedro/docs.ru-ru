@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5e83c82c-593d-4691-90b0-383d218b415e
 topic_type:
 - apiref
-ms.openlocfilehash: 9a4cf1f9ea1ccb174b5fb9336040d5e168653fb1
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e6401731844f2ce7a1d9fec1c94019f763870fe7
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73088277"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894992"
 ---
 # <a name="icordebugarrayvaluegetrank-method"></a>Метод ICorDebugArrayValue::GetRank
 Получает число измерений в массиве.  
@@ -38,10 +38,10 @@ HRESULT GetRank (
  заполняет Указатель на число измерений в этом `ICorDebugArrayValue` объекте.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c7ba51a1-0dd5-4452-b471-232febe0f897
 topic_type:
 - apiref
-ms.openlocfilehash: b55bd41039fce84a21c5d651d93b56f5d84b7611
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 12dc5466d5be73b327f171c389c41c55901f2915
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73088182"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894958"
 ---
 # <a name="icordebugassemblyenumeratemodules-method"></a>Методы ICorDebugAssembly::EnumerateModules
-Возвращает перечислитель для модулей, содержащихся в `ICorDebugAssembly`.  
+Возвращает перечислитель для модулей, `ICorDebugAssembly`содержащихся в.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,10 +38,10 @@ HRESULT EnumerateModules (
  заполняет Указатель на адрес интерфейса Икордебугмодулинум, который является перечислителем.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
