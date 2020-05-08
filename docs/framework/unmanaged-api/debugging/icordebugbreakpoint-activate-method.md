@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e30c29f7-3f19-4081-b572-a731aa14cd44
 topic_type:
 - apiref
-ms.openlocfilehash: 50794e96484432c8b7c203f6b8caa60130068a8c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 24dc55cc9a49c3602829ca627d584c761b4088ce
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73122791"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894748"
 ---
 # <a name="icordebugbreakpointactivate-method"></a>Метод ICorDebugBreakpoint::Activate
-Задает активное состояние этого `ICorDebugBreakpoint`.  
+Задает активное состояние этого `ICorDebugBreakpoint`объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,13 +35,13 @@ HRESULT Activate (
   
 ## <a name="parameters"></a>Параметры  
  `bActive`  
- окне Присвойте этому параметру значение `true`, чтобы указать состояние "активный". в противном случае присвойте этому параметру значение `false`.  
+ окне Установите это значение `true` , чтобы указать состояние "активный". в противном случае задайте для `false`этого параметра значение.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

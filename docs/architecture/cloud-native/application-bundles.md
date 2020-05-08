@@ -2,12 +2,12 @@
 title: Пакеты приложений, ориентированных на облако
 description: Создание архитектуры облачных приложений .NET для Azure | Пакеты облачных приложений машинного кода
 ms.date: 06/30/2019
-ms.openlocfilehash: 0c67035af08d3c337ff027f3742e1ce8a83f8d0f
-ms.sourcegitcommit: 55f438d4d00a34b9aca9eedaac3f85590bb11565
+ms.openlocfilehash: 6f85ca14ff4d17f9c7a90a9ace51a1448b89fcb3
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "73840745"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895684"
 ---
 # <a name="cloud-native-application-bundles"></a>Пакеты приложений, ориентированных на облако
 
@@ -72,7 +72,7 @@ ms.locfileid: "73840745"
 
 **Рис. 11-13** . пример файла terraform
 
-`bundle.json` также определяет набор параметров, которые передаются в terraform. Параметризация пакета позволяет устанавливать в различных средах.
+`bundle.json` Также определяет набор параметров, которые передаются в terraform. Параметризация пакета позволяет устанавливать в различных средах.
 
 Формат КНАБ также является гибким, что позволяет использовать его в любом облаке. Его можно использовать и в локальных решениях, таких как [OpenStack](https://www.openstack.org/).
 
@@ -82,3 +82,4 @@ ms.locfileid: "73840745"
 
 >[!div class="step-by-step"]
 >[Назад](infrastructure-as-code.md)
+>[Вперед](summary.md)

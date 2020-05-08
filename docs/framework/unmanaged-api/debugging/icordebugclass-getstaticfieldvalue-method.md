@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 56e718b4-fabd-418b-a5b3-3cc33c745683
 topic_type:
 - apiref
-ms.openlocfilehash: 873dd5a1eb2c9356049d2d0c0cb495b963c2ae46
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: d4a254853256e1a1440f5588418b94e39eabcc9a
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76784191"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894109"
 ---
 # <a name="icordebugclassgetstaticfieldvalue-method"></a>Метод ICorDebugClass::GetStaticFieldValue
 Возвращает значение указанного статического поля.  
@@ -37,7 +37,7 @@ HRESULT GetStaticFieldValue (
   
 ## <a name="parameters"></a>Параметры  
  `fieldDef`  
- окне Поле `Def` токен, ссылающийся на извлекаемое поле.  
+ окне Токен поля `Def` , ссылающийся на извлекаемое поле.  
   
  `pFrame`  
  окне Указатель на объект ICorDebugFrame, представляющий кадр, который будет использоваться для однозначного определения статических элементов потока, контекста или домена приложения.  
@@ -47,14 +47,14 @@ HRESULT GetStaticFieldValue (
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет значение статического поля.  
   
-## <a name="remarks"></a>Заметки  
- Для параметризованных типов значение статического поля задается относительно конкретного экземпляра. Таким образом, если конструктор класса принимает параметры типа <xref:System.Type>, вызовите метод [ICorDebugType:: GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) вместо `ICorDebugClass::GetStaticFieldValue`.  
+## <a name="remarks"></a>Remarks  
+ Для параметризованных типов значение статического поля задается относительно конкретного экземпляра. Поэтому, если конструктор класса принимает параметры типа <xref:System.Type>, вызовите метод [ICorDebugType:: GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) вместо. `ICorDebugClass::GetStaticFieldValue`  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

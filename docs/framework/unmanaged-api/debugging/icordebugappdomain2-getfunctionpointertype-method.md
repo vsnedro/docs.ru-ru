@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0aba6096-5b38-435c-a72a-86d35db4daef
 topic_type:
 - apiref
-ms.openlocfilehash: 5a6e0b009674ff52595aaa0ae4a060f1cdfd1398
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: fb9b5ee329b41a8b842b94d59bd61c8bcf5f0bf5
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73089050"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895152"
 ---
 # <a name="icordebugappdomain2getfunctionpointertype-method"></a>Метод ICorDebugAppDomain2::GetFunctionPointerType
 Возвращает указатель на функцию с заданной сигнатурой.  
@@ -43,13 +43,13 @@ HRESULT GetFunctionPointerType (
  окне Массив указателей, каждый из которых указывает на объект ICorDebugType, представляющий аргумент типа функции. Первый элемент является типом возвращаемого значения; Каждый из остальных элементов является типом параметра.  
   
  `ppType`  
- заполняет Указатель на адрес объекта `ICorDebugType`, который представляет указатель на функцию.  
+ заполняет Указатель на адрес `ICorDebugType` объекта, который представляет указатель на функцию.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

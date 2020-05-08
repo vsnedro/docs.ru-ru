@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7137e3d1-1dad-48d8-8c37-16ac816534d3
 topic_type:
 - apiref
-ms.openlocfilehash: fde76c3b34fcc9f2321f3426d2801b310f681067
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 59a497d203d241bbc6e0f884007d4a401c112073
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178995"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82893650"
 ---
 # <a name="icordebugcodegetcode-method"></a>Метод ICorDebugCode::GetCode
-Получает весь код для указанной функции, отформатированный для разборки. Этот метод был унесена в версии .NET Framework 2.0. Вместо этого используйте [ICorDebugCode2::GetCodeChunks.](icordebugcode2-getcodechunks-method.md)  
+Возвращает весь код для указанной функции, отформатированный для дизассемблирования. Этот метод не рекомендуется к использованию в .NET Framework версии 2,0. Вместо этого используйте [ICorDebugCode2:: жеткодечункс](icordebugcode2-getcodechunks-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,31 +40,31 @@ HRESULT GetCode (
   
 ## <a name="parameters"></a>Параметры  
  `startOffset`  
- (в) Смещение начала функции.  
+ окне Смещение начала функции.  
   
  `endOffset`  
- (в) Смещение конца функции.  
+ окне Смещение конца функции.  
   
  `cBufferAlloc`  
- (в) Размер массива, `buffer` в который будет возвращен код.  
+ окне Размер `buffer` массива, в который будет возвращен код.  
   
  `buffer`  
- (ваут) Массив, в который код будет возвращен.  
+ заполняет Массив, в который будет возвращен код.  
   
  `pcBufferSize`  
- (ваут) Число байтов вернулось.  
+ заполняет Число возвращаемых байтов.  
   
 ## <a name="remarks"></a>Remarks  
- Если код функции был разделен на несколько фрагментов, они скатированы в порядке увеличения родной смещения. Границы инструкций не проверяются.  
+ Если код функции делится на несколько блоков, они объединяются в порядке возрастания смещения в машинном коде. Границы инструкций не проверяются.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Рамочные версии .NET:** 1.1, 1.0  
+ **.NET Framework версии:** 1,1, 1,0  
   
 ## <a name="see-also"></a>См. также раздел
 

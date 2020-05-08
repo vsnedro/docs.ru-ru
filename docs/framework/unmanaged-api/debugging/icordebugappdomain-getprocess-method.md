@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9d0b9628-a91c-40d0-b9bc-00b34a396b8f
 topic_type:
 - apiref
-ms.openlocfilehash: 46d045712e5d3f688ec35d039ccfecba0088037c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 90ac981f9b5ee71ca59f76823e7b796471571e4e
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134692"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895205"
 ---
 # <a name="icordebugappdomaingetprocess-method"></a>Метод ICorDebugAppDomain::GetProcess
 Возвращает процесс, содержащий домен приложения.  
@@ -38,10 +38,10 @@ HRESULT GetProcess (
  заполняет Указатель на адрес объекта ICorDebugProcess, который представляет процесс.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 33f431d7-ab1a-494d-8af2-20ab15aba194
 topic_type:
 - apiref
-ms.openlocfilehash: 0ca66f001d04bc86b64e0fe2d1cd37559e4fc633
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 66b50bad0e8d2622922da96c213643ac3be83a9e
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76785119"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895373"
 ---
 # <a name="icordebug-interface"></a>Интерфейс ICorDebug
 Предоставляет методы, позволяющие разработчикам отлаживать приложения в среде среды CLR.  
@@ -39,25 +39,25 @@ ms.locfileid: "76785119"
 |[Метод Initialize](icordebug-initialize-method.md)|Инициализирует объект `ICorDebug`.|  
 |[Метод SetManagedHandler](icordebug-setmanagedhandler-method.md)|Указывает объект обработчика событий для управляемых событий.|  
 |[Метод SetUnmanagedHandler](icordebug-setunmanagedhandler-method.md)|Указывает объект обработчика событий для неуправляемых событий.|  
-|[Метод Terminate](icordebug-terminate-method.md)|Завершает объект `ICorDebug`.|  
+|[Метод Terminate](icordebug-terminate-method.md)|Завершает `ICorDebug` объект.|  
   
-## <a name="remarks"></a>Заметки  
- `ICorDebug` представляет цикл обработки событий для процесса отладчика. Перед освобождением этого интерфейса отладчик должен ожидать обратного вызова [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.  
+## <a name="remarks"></a>Remarks  
+ `ICorDebug`представляет цикл обработки событий для процесса отладчика. Перед освобождением этого интерфейса отладчик должен ожидать обратного вызова [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.  
   
- Объект `ICorDebug` является начальным объектом для управления всеми дальнейшими управляемыми отладками. В .NET Framework версиях 1,0 и 1,1 этот объект был `CoClass` объектом, созданным из COM. В .NET Framework версии 2,0 этот объект больше не является объектом `CoClass`. Она должна быть создана функцией [CreateDebuggingInterfaceFromVersion](../../../../docs/framework/unmanaged-api/hosting/createdebugginginterfacefromversion-function.md) , которая поддерживает больше версий. Эта новая функция создания позволяет клиентам получить определенную реализацию `ICorDebug`, которая также эмулирует определенную версию API отладки.  
+ `ICorDebug` Объект является начальным объектом для управления всеми дальнейшими управляемыми отладками. В .NET Framework версиях 1,0 и 1,1 этот объект был объектом, `CoClass` созданным из com. В .NET Framework версии 2,0 этот объект больше не является `CoClass` объектом. Она должна быть создана функцией [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) , которая поддерживает больше версий. Эта новая функция создания позволяет клиентам получить определенную реализацию `ICorDebug`, которая также эмулирует определенную версию API отладки.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

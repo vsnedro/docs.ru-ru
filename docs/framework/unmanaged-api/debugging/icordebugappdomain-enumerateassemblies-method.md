@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7add64f9-19a8-46a9-be62-905d5e7d1bd8
 topic_type:
 - apiref
-ms.openlocfilehash: 573b08fcf2ce0fa5ce3187df6ae6a1c2cc385f52
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 880c234462ac369ead06578730f3c14532c466e9
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134009"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895290"
 ---
 # <a name="icordebugappdomainenumerateassemblies-method"></a>Метод ICorDebugAppDomain::EnumerateAssemblies
 Возвращает перечислитель для сборок в домене приложения.  
@@ -38,10 +38,10 @@ HRESULT EnumerateAssemblies (
  заполняет Указатель на адрес объекта ICorDebugAssemblyEnum, который является перечислителем для сборок в домене приложения.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

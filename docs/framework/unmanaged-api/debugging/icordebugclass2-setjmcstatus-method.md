@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 077e6c7f-f857-480c-bebb-76ee1de4e8fc
 topic_type:
 - apiref
-ms.openlocfilehash: a862dd3f6a9c10c6b3a5a0bb41208d351c4ca9f1
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 9fb2f960098e970b4d3d9f0be499f4d9fda6558e
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125690"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82893895"
 ---
 # <a name="icordebugclass2setjmcstatus-method"></a>Метод ICorDebugClass2::SetJMCStatus
 Для каждого метода класса задает значение, указывающее, является ли метод определяемым пользователем кодом.  
@@ -35,18 +35,18 @@ HRESULT SetJMCStatus (
   
 ## <a name="parameters"></a>Параметры  
  `bIsJustMyCode`  
- окне Задайте значение `true`, чтобы указать, что метод является определяемым пользователем кодом; в противном случае задайте значение `false`.  
+ окне Задайте значение `true` , чтобы указать, что метод является пользовательским кодом; в противном случае `false`задайте для значение.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Средство "только мой код" (JMC) пропускает код, не определенный пользователем. Определяемый пользователем код должен быть подмножеством отлаживаемого кода.  
   
- `SetJMCStatus` возвращает значение HRESULT, равное S_FALSE, если не удается задать значение для какого бы то ни было метода, даже если оно успешно задает значение для всех других методов.  
+ `SetJMCStatus`Возвращает значение HRESULT, равное S_FALSE, если не удается задать значение для какого бы то ни было метода, даже если оно успешно задает значение для всех остальных методов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
