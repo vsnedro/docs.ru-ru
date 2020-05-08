@@ -93,3 +93,5 @@
           href: infrastructure-as-code.md
         - name: 'Пакеты приложений, ориентированных на облако'
           href: application-bundles.md
+    - name: Сводка
+      href: summary.md

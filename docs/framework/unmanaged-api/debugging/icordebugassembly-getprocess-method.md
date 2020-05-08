@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: ea52be06-0a16-4f57-afca-4287d72e76c4
 topic_type:
 - apiref
-ms.openlocfilehash: 49b234b065eb66dc2ec0bc7e991117c5b54a92f3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c9cb599dd27a809ed5245c9570cddb8110be8172
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73196353"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894927"
 ---
-# <a name="icordebugassemblygetprocess-method"></a><span data-ttu-id="999d6-102">Метод ICorDebugAssembly::GetProcess</span><span class="sxs-lookup"><span data-stu-id="999d6-102">ICorDebugAssembly::GetProcess Method</span></span>
-<span data-ttu-id="999d6-103">Возвращает указатель интерфейса на процесс, в котором выполняется данный экземпляр ICorDebugAssembly.</span><span class="sxs-lookup"><span data-stu-id="999d6-103">Gets an interface pointer to the process in which this ICorDebugAssembly instance is running.</span></span>  
+# <a name="icordebugassemblygetprocess-method"></a><span data-ttu-id="dd9d4-102">Метод ICorDebugAssembly::GetProcess</span><span class="sxs-lookup"><span data-stu-id="dd9d4-102">ICorDebugAssembly::GetProcess Method</span></span>
+<span data-ttu-id="dd9d4-103">Возвращает указатель интерфейса на процесс, в котором выполняется данный экземпляр ICorDebugAssembly.</span><span class="sxs-lookup"><span data-stu-id="dd9d4-103">Gets an interface pointer to the process in which this ICorDebugAssembly instance is running.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="999d6-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="999d6-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="dd9d4-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="dd9d4-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetProcess (  
@@ -33,15 +33,15 @@ HRESULT GetProcess (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="999d6-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="999d6-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="dd9d4-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="dd9d4-105">Parameters</span></span>  
  `ppProcess`  
- <span data-ttu-id="999d6-106">заполняет Указатель на интерфейс ICorDebugProcess, представляющий процесс.</span><span class="sxs-lookup"><span data-stu-id="999d6-106">[out] A pointer to an ICorDebugProcess interface that represents the process.</span></span>  
+ <span data-ttu-id="dd9d4-106">заполняет Указатель на интерфейс ICorDebugProcess, представляющий процесс.</span><span class="sxs-lookup"><span data-stu-id="dd9d4-106">[out] A pointer to an ICorDebugProcess interface that represents the process.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="999d6-107">Требования</span><span class="sxs-lookup"><span data-stu-id="999d6-107">Requirements</span></span>  
- <span data-ttu-id="999d6-108">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="999d6-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="dd9d4-107">Требования</span><span class="sxs-lookup"><span data-stu-id="dd9d4-107">Requirements</span></span>  
+ <span data-ttu-id="dd9d4-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="dd9d4-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="999d6-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="999d6-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="dd9d4-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="dd9d4-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="999d6-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="999d6-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="dd9d4-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="dd9d4-110">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="999d6-111">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="999d6-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="dd9d4-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="dd9d4-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>

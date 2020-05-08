@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 3a867a5b-bf94-493f-a4f5-b28685cf5325
 topic_type:
 - apiref
-ms.openlocfilehash: 475cc6c688262f318aa7f844b975ad69fa80bbe9
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 401f052b881c1a0cfa065ba60c93aca1706f34f4
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73122822"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894787"
 ---
-# <a name="icordebugboxvaluegetobject-method"></a><span data-ttu-id="8ed0e-102">Метод ICorDebugBoxValue::GetObject</span><span class="sxs-lookup"><span data-stu-id="8ed0e-102">ICorDebugBoxValue::GetObject Method</span></span>
-<span data-ttu-id="8ed0e-103">Возвращает упакованное значение.</span><span class="sxs-lookup"><span data-stu-id="8ed0e-103">Gets the boxed value.</span></span>  
+# <a name="icordebugboxvaluegetobject-method"></a><span data-ttu-id="04401-102">Метод ICorDebugBoxValue::GetObject</span><span class="sxs-lookup"><span data-stu-id="04401-102">ICorDebugBoxValue::GetObject Method</span></span>
+<span data-ttu-id="04401-103">Возвращает упакованное значение.</span><span class="sxs-lookup"><span data-stu-id="04401-103">Gets the boxed value.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="8ed0e-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8ed0e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="04401-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="04401-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetObject (  
@@ -33,15 +33,15 @@ HRESULT GetObject (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="8ed0e-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="8ed0e-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="04401-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="04401-105">Parameters</span></span>  
  `ppObject`  
- <span data-ttu-id="8ed0e-106">заполняет Указатель на адрес объекта ICorDebugObjectValue, который представляет упакованное значение.</span><span class="sxs-lookup"><span data-stu-id="8ed0e-106">[out] A pointer to the address of an ICorDebugObjectValue object that represents the boxed value.</span></span>  
+ <span data-ttu-id="04401-106">заполняет Указатель на адрес объекта ICorDebugObjectValue, который представляет упакованное значение.</span><span class="sxs-lookup"><span data-stu-id="04401-106">[out] A pointer to the address of an ICorDebugObjectValue object that represents the boxed value.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="8ed0e-107">Требования</span><span class="sxs-lookup"><span data-stu-id="8ed0e-107">Requirements</span></span>  
- <span data-ttu-id="8ed0e-108">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="8ed0e-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="04401-107">Требования</span><span class="sxs-lookup"><span data-stu-id="04401-107">Requirements</span></span>  
+ <span data-ttu-id="04401-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="04401-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="8ed0e-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="8ed0e-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="04401-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="04401-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="8ed0e-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="8ed0e-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="04401-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="04401-110">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="8ed0e-111">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8ed0e-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="04401-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="04401-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
