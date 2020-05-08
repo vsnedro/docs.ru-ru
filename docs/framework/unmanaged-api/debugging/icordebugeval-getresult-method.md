@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 50dbb9af-58a1-41f4-b56d-3da20011884f
 topic_type:
 - apiref
-ms.openlocfilehash: 52bfe669d3b078657916554255a11cecfc07d484
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 2d065d956319076d3b92eddafd4a2c25ffbfbac1
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73085092"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82976269"
 ---
 # <a name="icordebugevalgetresult-method"></a>Метод ICorDebugEval::GetResult
 Возвращает результаты этой оценки.  
@@ -37,16 +37,16 @@ HRESULT GetResult (
  `ppResult`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет результаты этой оценки, если вычисление завершается нормально.  
   
-## <a name="remarks"></a>Заметки  
- Метод `GetResult` действителен только после завершения оценки.  
+## <a name="remarks"></a>Remarks  
+ `GetResult` Метод действителен только после завершения оценки.  
   
- Если вычисление завершается нормально, `ppResult` указывает результаты. Если оно завершается с исключением, результатом является исключение. Если вычисление выполнялось для нового объекта, результатом является ссылка на новый объект.  
+ Если вычисление завершается обычным `ppResult` образом, задает результаты. Если оно завершается с исключением, результатом является исключение. Если вычисление выполнялось для нового объекта, результатом является ссылка на новый объект.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

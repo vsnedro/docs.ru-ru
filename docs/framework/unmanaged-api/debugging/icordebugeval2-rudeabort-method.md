@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 02468edf-d32b-4cb3-aaa8-3dd2abfc8b25
 topic_type:
 - apiref
-ms.openlocfilehash: a486935d5d53a6fc7d862160ed1186c5774814c7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e901c65824ee8d6949c79c7778944148c0d9eb28
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73084798"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82976061"
 ---
 # <a name="icordebugeval2rudeabort-method"></a>Метод ICorDebugEval2::RudeAbort
-Прерывает вычисление, выполняемое в данный момент `ICorDebugEval2`.  
+Прерывает вычисление, `ICorDebugEval2` выполняемое в данный момент.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,14 +31,14 @@ ms.locfileid: "73084798"
 HRESULT RudeAbort ();  
 ```  
   
-## <a name="remarks"></a>Заметки  
- `RudeAbort` не освобождает никакие блокировки, которые содержит средство оценки, поэтому сеанс отладки остается в ненадежном состоянии. Вызывайте этот метод с особой осторожностью.  
+## <a name="remarks"></a>Remarks  
+ `RudeAbort`не освобождает никакие блокировки, которые содержит средство оценки, поэтому сеанс отладки остается в ненадежном состоянии. Вызывайте этот метод с особой осторожностью.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

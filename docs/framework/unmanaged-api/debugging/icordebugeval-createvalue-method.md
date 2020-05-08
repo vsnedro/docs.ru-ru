@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9a1c0b47-6f10-4fcb-844a-4ab2d7990140
 topic_type:
 - apiref
-ms.openlocfilehash: bd6f1b2153404ba4567ef8348ff128b5d475c6fe
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 55888786fdd8ff2b1d5610a74ee729db0d4fcfde
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793492"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82976256"
 ---
 # <a name="icordebugevalcreatevalue-method"></a>Метод ICorDebugEval::CreateValue
 Создает значение указанного типа с начальным значением нуль или null.  
@@ -39,7 +39,7 @@ HRESULT CreateValue (
   
 ## <a name="parameters"></a>Параметры  
  `elementType`  
- окне Значение перечисления [корелементтипе](../../../../docs/framework/unmanaged-api/metadata/corelementtype-enumeration.md) , указывающее тип значения.  
+ окне Значение перечисления [корелементтипе](../metadata/corelementtype-enumeration.md) , указывающее тип значения.  
   
  `pElementClass`  
  окне Указатель на объект [ICorDebugClass](icordebugclass-interface.md) , указывающий класс значения, если тип не является типом-примитивом.  
@@ -47,15 +47,15 @@ HRESULT CreateValue (
  `ppValue`  
  заполняет Указатель на адрес объекта "ICorDebugValue", представляющего значение.  
   
-## <a name="remarks"></a>Заметки  
- `CreateValue` создает объект `ICorDebugValue` данного типа для единственной цели его использования в вычислении функции. Этот объект значения можно использовать для передачи пользовательских констант в качестве параметров.  
+## <a name="remarks"></a>Remarks  
+ `CreateValue`создает `ICorDebugValue` объект данного типа для единственной цели использования в вычислении функции. Этот объект значения можно использовать для передачи пользовательских констант в качестве параметров.  
   
  Если тип значения является типом-примитивом, его начальное значение равно нулю или null. Используйте [ICorDebugGenericValue:: SetValue](icordebuggenericvalue-setvalue-method.md) , чтобы задать значение типа-примитива.  
   
- Если значение `elementType` ELEMENT_TYPE_CLASS, вы получаете "ICorDebugReferenceValue" (возвращается в `ppValue`), представляющий ссылку на пустой объект. Этот объект можно использовать для передачи значения NULL в вычисление функции, имеющей параметры ссылки на объект. Вы не можете задать для `ICorDebugValue` любое значение; Он всегда остается пустым.  
+ Если значение `elementType` равно ELEMENT_TYPE_CLASS, вы получаете "ICorDebugReferenceValue" (возвращаемый в `ppValue`), представляющий ссылку на пустой объект. Этот объект можно использовать для передачи значения NULL в вычисление функции, имеющей параметры ссылки на объект. Нельзя задать значение, `ICorDebugValue` равное чему; Он всегда остается пустым.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
@@ -63,7 +63,7 @@ HRESULT CreateValue (
   
  **.NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Метод CreateValueForType](icordebugeval2-createvaluefortype-method.md)
 - [Интерфейс ICorDebugEval](icordebugeval-interface.md)
