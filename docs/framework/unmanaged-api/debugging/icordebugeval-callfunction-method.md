@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7f470c5c-e1c0-4d8d-aad8-830f113ae751
 topic_type:
 - apiref
-ms.openlocfilehash: 4ac26ef4449dc02230f26b1247616b4587d217b7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 1cf0080945ad78565fae3fedb454ceba7825cb4a
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73085158"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82976243"
 ---
 # <a name="icordebugevalcallfunction-method"></a>Метод ICorDebugEval::CallFunction
 
@@ -49,13 +49,13 @@ HRESULT CallFunction (
 `ppArgs`\
 окне Массив указателей, каждый из которых указывает на объект ICorDebugValue, указывающий аргумент, передаваемый в функцию.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Если функция является виртуальной, `CallFunction` выполняет виртуальную диспетчеризацию. Если функция находится в другом домене приложения, произойдет переход, если все аргументы также находятся в этом домене приложения.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
 **Заголовок:** CorDebug.idl, CorDebug.h
 
@@ -63,6 +63,6 @@ HRESULT CallFunction (
 
 **.NET Framework версии:** 1,1, 1,0
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md)

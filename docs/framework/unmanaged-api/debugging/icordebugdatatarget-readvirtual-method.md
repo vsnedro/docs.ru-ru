@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 55e57640-b3d2-413d-b4f4-fbc27fb8e37c
 topic_type:
 - apiref
-ms.openlocfilehash: 20cea94961a250c3981d892910da1dcee20a060b
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 36a18d92f05db55957bba55de84490c0da1a1f86
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76783737"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82976516"
 ---
 # <a name="icordebugdatatargetreadvirtual-method"></a>Метод ICorDebugDataTarget::ReadVirtual
 Возвращает блок непрерывной памяти, начиная с указанного адреса, и возвращает его в указанном буфере.  
@@ -47,21 +47,21 @@ HRESULT ReadVirtual(
  окне Число байтов, получаемых с целевого адреса.  
   
  `pBytesRead`  
- заполняет Число байтов, фактически считанных из целевого адреса. Это число может быть меньше `bytesRequested`.  
+ заполняет Число байтов, фактически считанных из целевого адреса. Это может быть меньше, `bytesRequested`чем.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Если можно считать первый байт (с указанным начальным адресом), вызов должен вернуть результат (для поддержки эффективного чтения структур данных с самоописывающей длиной, например со строками, завершающимися нулем).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugDataTarget](icordebugdatatarget-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cc79a67d-5368-434d-a943-209db90491b9
 topic_type:
 - apiref
-ms.openlocfilehash: 13ac5379992f4e768b09a03d31591143ba9bf627
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 496a6a7e01dec8aa90ba4e849c431ccd499ef53d
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788725"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82976204"
 ---
 # <a name="icordebugevalnewarray-method"></a>Метод ICorDebugEval::NewArray
 Выделяет новый массив указанного типа элемента и измерений.  
@@ -55,11 +55,11 @@ HRESULT NewArray (
  `lowBounds`  
  [в] Необязательно. Нижняя граница каждого измерения массива. Если это значение пропущено, для каждого измерения предполагается Нижняя граница, равная нулю.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Массив всегда создается в домене приложения, в котором в данный момент выполняется поток.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
