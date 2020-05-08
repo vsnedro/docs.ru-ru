@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 87029cc4-e5e1-42d5-8b98-655bb7ece520
 topic_type:
 - apiref
-ms.openlocfilehash: 94f2d20816bfc28118877f52c04237c41b3859e3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: fd048b692ad05f60621a057024be22cb48b3abbe
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125788"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894200"
 ---
 # <a name="icordebugclassgetmodule-method"></a>Метод ICorDebugClass::GetModule
 Возвращает модуль, который определяет этот класс.  
@@ -38,10 +38,10 @@ HRESULT GetModule (
  заполняет Указатель на адрес объекта ICorDebugModule, который представляет модуль, в котором определен этот класс.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

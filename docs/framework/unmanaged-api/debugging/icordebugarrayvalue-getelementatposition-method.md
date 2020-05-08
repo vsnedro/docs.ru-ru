@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6fd5eaa4-1997-4910-82f5-3887480db764
 topic_type:
 - apiref
-ms.openlocfilehash: 10584442d7e0bd61e6decaf2b494dfe39f339d6d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 5644c20ec5df2606c7258131573691997f424e50
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73088420"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895012"
 ---
 # <a name="icordebugarrayvaluegetelementatposition-method"></a>Метод ICorDebugArrayValue::GetElementAtPosition
 Возвращает элемент в заданной позиции, рассматривая массив как одномерный массив с отсчетом от нуля.  
@@ -41,14 +41,14 @@ HRESULT GetElementAtPosition (
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет значение элемента.  
   
-## <a name="remarks"></a>Заметки  
- Макет массива с несколькими измерениями соответствует C++ стилю макета массива.  
+## <a name="remarks"></a>Remarks  
+ Компоновка многомерного массива соответствует стилю в C++ для макета массива.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

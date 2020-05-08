@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fdab0ade-7f56-4fa2-b3ef-f7a1d2852bba
 topic_type:
 - apiref
-ms.openlocfilehash: 2d71cebb77ed3ca586e857710667c0077f4f76ed
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 3630e25b6c24edaa366f1b0fae088e760e851fa4
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793584"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895409"
 ---
 # <a name="icordebugdebugactiveprocess-method"></a>Метод ICorDebug::DebugActiveProcess
 Присоединяет отладчик к существующему процессу.  
@@ -40,23 +40,23 @@ HRESULT DebugActiveProcess (
  окне Идентификатор процесса, к которому должен быть присоединен отладчик.  
   
  `win32Attach`  
- окне Логическое значение, которое устанавливается в `true`, если отладчик должен вести себя в качестве отладчика Win32 для процесса и отправляют неуправляемые обратные вызовы. в противном случае `false`.  
+ окне Логическое значение, равное, `true` если отладчик должен вести себя в качестве отладчика Win32 для процесса и передать неуправляемые обратные вызовы. в противном случае — `false`.  
   
  `ppProcess`  
  заполняет Указатель на адрес объекта "ICorDebugProcess", который представляет процесс, к которому присоединен отладчик.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Отладка взаимодействия не поддерживается на платформах Win9x и на платформе, отличной от x86, например на платформах на основе IA-64 и AMD64.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebug](icordebug-interface.md)

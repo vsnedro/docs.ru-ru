@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 554284e7-3f6c-4d40-8da5-1c9317fbd484
 topic_type:
 - apiref
-ms.openlocfilehash: 64e697323377d664b7b1e36bbf5931a44465cc51
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 40ecc183c32500ad9e88ceb1bfc0528d717430e8
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178955"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82894457"
 ---
 # <a name="icordebugchaingetstackrange-method"></a>Метод ICorDebugChain::GetStackRange
-Получает адресный диапазон сегмента стека для этой цепочки.  
+Возвращает диапазон адресов сегмента стека для этой цепочки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,19 +36,19 @@ HRESULT GetStackRange (
   
 ## <a name="parameters"></a>Параметры  
  `pStart`  
- (ваут) Указатель на `CORDB_ADDRESS` значение, которое является исходным адресом сегмента стека.  
+ заполняет Указатель на `CORDB_ADDRESS` значение, которое является начальным адресом сегмента стека.  
   
  `pEnd`  
- (ваут) Указатель на `CORDB_ADDRESS` значение, которое является конечной адрес сегмента стека.  
+ заполняет Указатель на `CORDB_ADDRESS` значение, которое является конечным адресом сегмента стека.  
   
 ## <a name="remarks"></a>Remarks  
- Числовой диапазон имеет смысл только для сравнения расположения стек-кадра. Вы не можете делать какие-либо предположения о том, что на самом деле хранится в стеке.  
+ Числовой диапазон имеет смысл только для сравнения расположений в кадрах стека. Вы не можете делать предположения о том, что фактически хранится в стеке.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

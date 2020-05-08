@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ac3cba5-c282-402e-b7ef-b46634f5176b
 topic_type:
 - apiref
-ms.openlocfilehash: adcb7b5a27f3b8c63dbbb660a23b5c891f84ac46
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7a52e61f41bd1d7f68523dd16f70010ffbba401e
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179012"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895025"
 ---
 # <a name="icordebugarrayvaluegetelement-method"></a>Метод ICorDebugArrayValue::GetElement
-Получает значение данного элемента массива.  
+Возвращает значение заданного элемента массива.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,23 +38,23 @@ HRESULT GetElement (
   
 ## <a name="parameters"></a>Параметры  
  `cdim`  
- (в) Количество размеров этого `ICorDebugArrayValue` объекта.  
+ окне Число измерений данного `ICorDebugArrayValue` объекта.  
   
- Это значение также является `indices` размером массива, поскольку его размер `ICorDebugArrayValue` равен количеству размеров объекта.  
+ Это значение также является размером `indices` массива, поскольку его размер равен числу измерений `ICorDebugArrayValue` объекта.  
   
  `indices`  
- (в) Массив значений индекса, каждое из которых определяет положение в `ICorDebugArrayValue` измерении объекта.  
+ окне Массив значений индекса, каждый из которых задает позиции в измерении `ICorDebugArrayValue` объекта.  
   
- Это значение не должно быть нулевым.  
+ Это значение не должно быть равно null.  
   
  `ppValue`  
- (ваут) Указатель на адрес объекта ICorDebugValue, представляющий значение указанного элемента.  
+ заполняет Указатель на адрес объекта ICorDebugValue, представляющий значение указанного элемента.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
