@@ -32,12 +32,12 @@ helpviewer_keywords:
 - conditional OR operator [C#]
 - short-circuiting OR operator [C#]
 - '|| operator [C#]'
-ms.openlocfilehash: 930329b922f585ac4763e6a66d3b192ae839f14f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5f85b88236c2e643f97453c64173a3f4f7159a35
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398199"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795005"
 ---
 # <a name="boolean-logical-operators-c-reference"></a>Логические операторы (справочник по C#)
 
@@ -57,7 +57,7 @@ ms.locfileid: "79398199"
 
 Начиная с версии C# 8.0, унарный постфиксный оператор `!`[допускает значение NULL](null-forgiving.md).
 
-## <a name="logical-and-operator-"></a> Оператор логического И &amp;
+## <a name="logical-and-operator-amp"></a><a name="logical-and-operator-"></a> Оператор логического И &amp;
 
 Оператор `&` вычисляет логическое И для всех своих операндов. Результат операции `x & y` принимает значение `true`, если оба оператора `x` и `y` имеют значение `true`. В противном случае результат будет `false`.
 
@@ -93,7 +93,7 @@ ms.locfileid: "79398199"
 
 Для операндов [целочисленных типов](../builtin-types/integral-numeric-types.md) оператор `|` вычисляет [побитовое логическое ИЛИ](bitwise-and-shift-operators.md#logical-or-operator-) своих операндов.
 
-## <a name="conditional-logical-and-operator-"></a> Условный оператор логического И &amp;&amp;
+## <a name="conditional-logical-and-operator-ampamp"></a><a name="conditional-logical-and-operator-"></a> Условный оператор логического И &amp;&amp;
 
 Условный оператор логического И `&&` (оператор короткого замыкания) вычисляет логическое И для своих операндов. Результат операции `x && y` принимает значение `true`, если оба оператора `x` и `y` имеют значение `true`. В противном случае результат будет `false`. Если `x` имеет значение `false`, `y` не вычисляется.
 
@@ -157,7 +157,8 @@ x = x op y
 
 [!code-csharp-interactive[compound assignment](snippets/BooleanLogicalOperators.cs#CompoundAssignment)]
 
-Условные логические операторы `&&` и `||` не поддерживают составное присваивание.
+> [!NOTE]
+> Условные логические операторы `&&` и `||` не поддерживают составное присваивание.
 
 ## <a name="operator-precedence"></a>Приоритет операторов
 

@@ -2,12 +2,12 @@
 title: Интерполяция строк. Руководство по C#
 description: В этом руководстве показано, как использовать функцию интерполяции строк в C# для включения форматированных результатов выражений в строку.
 ms.date: 10/23/2018
-ms.openlocfilehash: 22637895f241585bac4909479f225bf3cb581614
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: d1b78670361e8b333499d12b68c0364ad9e40a85
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738281"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82796058"
 ---
 # <a name="use-string-interpolation-to-construct-formatted-strings"></a>Создание форматированных строк с помощью интерполяции
 
@@ -165,4 +165,4 @@ Console.WriteLine($"[{DateTime.Now,-20:d}] Hour [{DateTime.Now,-10:HH}] [{1063.3
 
 Вы завершили работу с руководством по интерполяции строк.
 
-Дополнительные сведения об интерполяции строк см. в разделе [Интерполяция строк](../../language-reference/tokens/interpolated.md) и в руководстве [Интерполяция строк в C#](../../tutorials/string-interpolation.md).
+Дополнительные сведения об интерполяции строк см. в разделе [Интерполяция строк](../../language-reference/tokens/interpolated.md) и в руководстве [Интерполяция строк в C#](../string-interpolation.md).

@@ -7,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
-ms.openlocfilehash: 5c2d997d9006a3f1eb971eac20982b9dd5677ebf
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 2d991a7835d22af2c780b020d6884f626908665e
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710756"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82796175"
 ---
 # <a name="inferring-schemas-from-xml-documents"></a>Выведение схем из XML-документов
 В этом разделе описывается, как использовать класс <xref:System.Xml.Schema.XmlSchemaInference> для выведения схемы XSD из структуры XML-документа.  
@@ -29,7 +29,7 @@ ms.locfileid: "75710756"
     <child>One</child>  
     <child>Two</child>  
 </parent>  
-<parent attribute1="A">  
+<parent attribute1="A" />
 ```  
   
  В примере выше, когда в процессе `attribute1` обнаруживается атрибут `6` со значением <xref:System.Xml.Schema.XmlSchemaInference>, для него предполагается тип `xs:unsignedByte`. Когда в процессе `parent` обнаруживается второй элемент <xref:System.Xml.Schema.XmlSchemaInference>, ограничение ослабляется путем замены типа на `xs:string`, поскольку теперь атрибут `attribute1` имеет значение `A`. Аналогично, атрибут `minOccurs` для всех элементов `child`, выведенных в схему, ослабляется до значения `minOccurs="0"`, поскольку второй родительский элемент не имеет дочерних.  

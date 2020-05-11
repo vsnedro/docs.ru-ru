@@ -7,12 +7,12 @@ helpviewer_keywords:
 - .NET Framework, compatibility with earlier versions
 - .NET Framework versions, compatibility
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
-ms.openlocfilehash: 2e268753bf5941e9d28ee2bdd82ce77016ddf01a
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: c3bc92b89a46fc947b4d7e67644930374eeab2e4
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82102987"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82796006"
 ---
 # <a name="version-compatibility"></a>Совместимость версий
 
@@ -33,7 +33,7 @@ ms.locfileid: "82102987"
 </configuration>
 ```
 
-Дополнительные сведения см. в разделе [Практическое руководство. Настройка приложения для поддержки платформы .NET Framework 4 или 4.x](../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md).
+Дополнительные сведения см. в разделе [Практическое руководство. Настройка приложения для поддержки платформы .NET Framework 4 или 4.x](how-to-configure-an-app-to-support-net-framework-4-or-4-5.md).
 
 ## <a name="version-compatibility-for-components"></a>Совместимость версий компонентов
 
@@ -51,7 +51,7 @@ ms.locfileid: "82102987"
 
 - Если приложение разработано для выполнения в любой версии платформы .NET Framework, начиная с .NET Framework 4.0, см. раздел [Совместимость приложений](application-compatibility.md), чтобы создать списки изменений между вашей целевой версией .NET Framework и версией, в которой выполняется приложение.
 
-- Если приложение предназначено для .NET Framework 3.5, см. также раздел [Проблемы при миграции на .NET Framework 4](../migration-guide/net-framework-4-migration-issues.md).
+- Если приложение предназначено для .NET Framework 3.5, см. также раздел [Проблемы при миграции на .NET Framework 4](net-framework-4-migration-issues.md).
 
 - Если приложение предназначено для .NET Framework 2.0, см. также раздел [Изменения в .NET Framework 3.5 SP1](https://docs.microsoft.com/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
 
@@ -71,6 +71,6 @@ ms.locfileid: "82102987"
 
 - [Новые возможности](../whats-new/index.md)
 - [Устаревшие классы библиотеки классов](../whats-new/whats-obsolete.md)
-- [Совместимость приложений](../migration-guide/application-compatibility.md)
+- [Совместимость приложений](application-compatibility.md)
 - [Официальная политика поддержки .NET Framework](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
-- [Проблемы при миграции на .NET Framework 4](../migration-guide/net-framework-4-migration-issues.md)
+- [Проблемы при миграции на .NET Framework 4](net-framework-4-migration-issues.md)

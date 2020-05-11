@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Узнайте о технологиях .NET Framework, недоступных в .NET Core
 author: cartermp
 ms.date: 04/30/2019
-ms.openlocfilehash: f95205330837551085b8f58dfbdfcd702356c98f
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: b75d946b9436b1075a068494b941fbdea5970e42
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82506835"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795603"
 ---
 # <a name="net-framework-technologies-unavailable-on-net-core"></a>Технологии .NET Framework, недоступные в .NET Core
 
@@ -49,4 +49,4 @@ ms.locfileid: "82506835"
 
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения о переносе кода в .NET Core из .NET Framework](../porting/index.md)
+- [Общие сведения о переносе кода в .NET Core из .NET Framework](index.md)

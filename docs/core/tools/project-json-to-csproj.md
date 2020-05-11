@@ -3,12 +3,12 @@ title: Сравнение project.json и CSPROJ
 description: См. сопоставление между элементами project.json и CSPROJ.
 author: natemcmaster
 ms.date: 03/13/2017
-ms.openlocfilehash: abe515007b47b415ac33e3350a29edced1784d68
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: feaa7e9cde7e1aa4dfe94d699b14a018fc728f27
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77451109"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82794628"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>Сопоставление между свойствами project.json и CSPROJ
 
@@ -675,4 +675,4 @@ And it's really great!</Description>
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Краткий обзор изменений в интерфейсе командной строки](../tools/cli-msbuild-architecture.md)
+- [Краткий обзор изменений в интерфейсе командной строки](cli-msbuild-architecture.md)

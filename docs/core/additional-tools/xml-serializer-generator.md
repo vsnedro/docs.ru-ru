@@ -5,12 +5,12 @@ author: mlacouture
 ms.date: 01/19/2017
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 094dd1227033e167050ad73121b3005a592a0ae4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c3f1fcda8a8a6abc58d35bf37e51485bb3590fa3
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75714527"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82794641"
 ---
 # <a name="using-microsoft-xml-serializer-generator-on-net-core"></a>Использование генератора XML-сериализатора Майкрософт в .NET Core
 
@@ -50,7 +50,7 @@ dotnet new console
 
 ### <a name="add-a-reference-to-the-microsoftxmlserializergenerator-package-in-the-myapp-project"></a>Добавление ссылки на пакет Microsoft.XmlSerializer.Generator в проекте MyApp
 
-Используйте команду [`dotnet add package`](../tools//dotnet-add-package.md), чтобы добавить ссылку в проект.
+Используйте команду [`dotnet add package`](../tools/dotnet-add-package.md), чтобы добавить ссылку в проект.
 
 Тип:
 
@@ -64,7 +64,7 @@ dotnet add package Microsoft.XmlSerializer.Generator -v 1.0.0
 
 Откройте *MyApp.csproj* в текстовом редакторе.
 
-После запуска команды [`dotnet add package`](../tools//dotnet-add-package.md) в файл проекта *MyApp.csproj* добавляются следующие строки:
+После запуска команды [`dotnet add package`](../tools/dotnet-add-package.md) в файл проекта *MyApp.csproj* добавляются следующие строки:
 
  ```xml
  <ItemGroup>
