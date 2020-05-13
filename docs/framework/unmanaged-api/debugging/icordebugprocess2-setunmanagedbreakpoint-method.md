@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 93829d15-d942-4e2d-b7a4-dfc9d7fb96be
 topic_type:
 - apiref
-ms.openlocfilehash: fb8b8f3e29c141e91587a4d0cdc81cdabccdbc9e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6b9396d03892f29e3698af90856d0c0023dc628a
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178649"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213469"
 ---
 # <a name="icordebugprocess2setunmanagedbreakpoint-method"></a>Метод ICorDebugProcess2::SetUnmanagedBreakpoint
-Устанавливает неуправляемую точку разрыва в указанном смещении родного изображения.  
+Задает неуправляемую точку останова в указанном смещении машинного образа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,25 +39,25 @@ HRESULT SetUnmanagedBreakpoint (
   
 ## <a name="parameters"></a>Параметры  
  `address`  
- (в) Объект, `CORDB_ADDRESS` опознававательный смещение родного изображения.  
+ окне `CORDB_ADDRESS`Объект, указывающий смещение машинного образа.  
   
  `bufsize`  
- (в) Размер массива, `buffer` в байтах.  
+ окне Размер массива в байтах `buffer` .  
   
  `buffer`  
- (ваут) Массив, содержащий opcode, который заменяется точкой разрыва.  
+ заполняет Массив, содержащий код операции, который заменяется точкой останова.  
   
  `bufLen`  
- (ваут) Указатель на количество байтов, `buffer` возвращенных в массиве.  
+ заполняет Указатель на число байтов, возвращенных в `buffer` массиве.  
   
 ## <a name="remarks"></a>Remarks  
- Если смещение изображения нативного изображения находится в пределах общего времени выполнения языка (CLR), точка разрыва будет проигнорирована. Это позволяет CLR избежать отправки внеполосной точки разрыва, когда точка разрыва устанавливается отладчиком.  
+ Если смещение машинного образа находится в среде CLR, точка останова будет пропущена. Это позволяет среде CLR избежать диспетчеризации точки останова по внешнему каналу, когда точка останова задается отладчиком.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

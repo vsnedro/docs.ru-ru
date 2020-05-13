@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e28e51d3-8f73-494f-bcd4-48bac239fbe1
 topic_type:
 - apiref
-ms.openlocfilehash: 9677fd14f50cf93eac7eeaef784082d45e8884c7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: cab25738c9f4727fe3970cc1db15c38e68b08de6
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137691"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212923"
 ---
 # <a name="icordebugframegetchain-method"></a>Метод ICorDebugFrame::GetChain
 Возвращает указатель на цепочку, частью которой является этот кадр.  
@@ -38,10 +38,10 @@ HRESULT GetChain (
  заполняет Указатель на адрес объекта ICorDebugChain, который представляет цепочку, содержащую этот кадр.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

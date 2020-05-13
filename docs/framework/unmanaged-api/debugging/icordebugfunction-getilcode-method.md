@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f794dd47-a7cd-47f6-96e9-a41a4dae8e72
 topic_type:
 - apiref
-ms.openlocfilehash: c2ce4b95de75bef3928e144656b565676568caa0
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8c7be2d48a30a9f649c6d86e4edbc10085195b68
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137900"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213625"
 ---
 # <a name="icordebugfunctiongetilcode-method"></a>Метод ICorDebugFunction::GetILCode
 Возвращает экземпляр ICorDebugCode, представляющий код на языке MSIL, связанный с данным объектом ICorDebugFunction.  
@@ -35,16 +35,16 @@ HRESULT GetILCode (
   
 ## <a name="parameters"></a>Параметры  
  `ppCode`  
- заполняет Указатель на экземпляр `ICorDebugCode` или значение null, если функция не была скомпилирована в MSIL.  
+ заполняет Указатель на `ICorDebugCode` экземпляр или значение null, если функция не была скомпилирована в MSIL.  
   
-## <a name="remarks"></a>Заметки  
- Если для этой функции разрешено изменение и продолжение, то метод `GetILCode` получит код MSIL, соответствующий измененной версии кода этой функции в среде CLR.  
+## <a name="remarks"></a>Remarks  
+ Если функция "изменить и продолжить" была разрешена для этой функции, метод получит `GetILCode` код MSIL, соответствующий измененной версии кода этой функции в общеязыковой среде выполнения (CLR).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

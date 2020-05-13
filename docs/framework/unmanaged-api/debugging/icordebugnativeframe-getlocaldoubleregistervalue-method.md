@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1f838215-ac8a-434f-8ce6-03021d3098d9
 topic_type:
 - apiref
-ms.openlocfilehash: a45061b6a3105565fdbb36173731b3c3dfe5aa4f
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 21c4d00e4156b9db27ae4188aace19764a2be53e
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137294"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213079"
 ---
 # <a name="icordebugnativeframegetlocaldoubleregistervalue-method"></a>Метод ICorDebugNativeFrame::GetLocalDoubleRegisterValue
 Возвращает значение аргумента или локальной переменной, которая хранится в двух указанных регистрах для этого собственного кадра.  
@@ -42,27 +42,27 @@ HRESULT GetLocalDoubleRegisterValue (
  окне Значение перечисления "CorDebugRegister", указывающее регистр, содержащий старшее слово значения.  
   
  `lowWordReg`  
- окне Значение перечисления `CorDebugRegister`, указывающее регистр, содержащий нижнее слово значения.  
+ окне Значение `CorDebugRegister` перечисления, указывающее регистр, содержащий нижнее слово значения.  
   
  `cbSigBlob`  
- окне Целое число, указывающее размер подписи двоичных метаданных, на которую ссылается параметр `pvSigBlob`.  
+ окне Целое число, указывающее размер подписи двоичных метаданных, на которую ссылается `pvSigBlob` параметр.  
   
  `pvSigBlob`  
- окне Значение `PCCOR_SIGNATURE`, которое указывает на сигнатуру двоичных метаданных для типа значения.  
+ окне `PCCOR_SIGNATURE`Значение, которое указывает на сигнатуру двоичных метаданных для типа значения.  
   
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, представляющего извлеченное значение, хранящееся в указанных регистрах.  
   
-## <a name="remarks"></a>Заметки  
- Метод `GetLocalDoubleRegisterValue` можно использовать либо в машинном кадре, либо в кадре JIT-компиляции.  
+## <a name="remarks"></a>Remarks  
+ `GetLocalDoubleRegisterValue`Метод можно использовать либо в машинном кадре, либо в кадре JIT-компиляции.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также

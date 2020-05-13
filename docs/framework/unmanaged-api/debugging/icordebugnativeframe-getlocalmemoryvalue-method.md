@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b600b3a2-9908-42d8-8093-ab6f39e9a2c9
 topic_type:
 - apiref
-ms.openlocfilehash: cee095003c136142052b8f946fa8227927c80ee2
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 4c4bfe6a797fc1476ff53a8f2db4f80debc41f6b
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73096871"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212442"
 ---
 # <a name="icordebugnativeframegetlocalmemoryvalue-method"></a>Метод ICorDebugNativeFrame::GetLocalMemoryValue
 Возвращает значение аргумента или локальной переменной, которая хранится в указанном месте в памяти для этого машинного кадра.  
@@ -38,24 +38,24 @@ HRESULT GetLocalMemoryValue (
   
 ## <a name="parameters"></a>Параметры  
  `address`  
- окне Значение `CORDB_ADDRESS`, указывающее место в памяти, содержащее значение.  
+ окне `CORDB_ADDRESS`Значение типа, указывающее место в памяти, содержащее значение.  
   
  `cbSigBlob`  
- окне Целое число, указывающее размер подписи двоичных метаданных, на которую ссылается параметр `pvSigBlob`.  
+ окне Целое число, указывающее размер подписи двоичных метаданных, на которую ссылается `pvSigBlob` параметр.  
   
  `pvSigBlob`  
- окне Значение `PCCOR_SIGNATURE`, которое указывает на сигнатуру двоичных метаданных для типа значения.  
+ окне `PCCOR_SIGNATURE`Значение, которое указывает на сигнатуру двоичных метаданных для типа значения.  
   
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, представляющего извлеченное значение, хранящееся в указанном расположении в памяти.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также

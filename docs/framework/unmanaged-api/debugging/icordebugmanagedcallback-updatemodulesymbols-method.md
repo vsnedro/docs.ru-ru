@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0863f644-58e8-45a0-b0c3-a28e99b20938
 topic_type:
 - apiref
-ms.openlocfilehash: 2b64122489481c6b0fde605015720d0a56ba8fe2
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 9ee6f43c94b8ff2e765d2a0dde0697c4c895a94f
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788315"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212377"
 ---
 # <a name="icordebugmanagedcallbackupdatemodulesymbols-method"></a>Метод ICorDebugManagedCallback::UpdateModuleSymbols
 Уведомляет отладчик о том, что символы для модуля среды CLR были изменены.  
@@ -43,24 +43,24 @@ HRESULT UpdateModuleSymbols (
  окне Указатель на объект ICorDebugModule, представляющий модуль, в котором были изменены символы.  
   
  `pSymbolStream`  
- окне Указатель на объект `IStream` Win32 COM, содержащий измененные символы.  
+ окне Указатель на COM-объект Win32 `IStream` , содержащий измененные символы.  
   
-## <a name="remarks"></a>Заметки  
- Этот метод предоставляет возможность обновить представление символов модуля отладчика путем вызова [ISymUnmanagedReader:: UpdateSymbolStore](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-updatesymbolstore-method.md) или [ISymUnmanagedReader:: ReplaceSymbolStore](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-replacesymbolstore-method.md).  
+## <a name="remarks"></a>Remarks  
+ Этот метод предоставляет возможность обновить представление символов модуля отладчика путем вызова [ISymUnmanagedReader:: UpdateSymbolStore](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-updatesymbolstore-method.md) или [ISymUnmanagedReader:: ReplaceSymbolStore](../diagnostics/isymunmanagedreader-replacesymbolstore-method.md).  
   
  Этот обратный вызов может происходить несколько раз для одного модуля.  
   
  Отладчик должен попытаться привязать несвязанные точки останова на уровне источника.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: db499637-7ba9-421e-b8b1-35856995e80b
 topic_type:
 - apiref
-ms.openlocfilehash: b27e7a2cdcbfc3a88a734230118d99c2dd5c700e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 55342c803756aa10c2e7c835d9e1d58b439bb36c
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129541"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212546"
 ---
 # <a name="icordebugmodulegetname-method"></a>Метод ICorDebugModule::GetName
 Возвращает имя файла модуля.  
@@ -45,16 +45,16 @@ HRESULT GetName(
  `szName`  
  заполняет Массив, в котором хранится возвращаемое имя.  
   
-## <a name="remarks"></a>Заметки  
- Метод `GetName` возвращает значение S_OK HRESULT, если имя файла модуля совпадает с именем на диске. `GetName` возвращает значение S_FALSE HRESULT, если имя является составным, например, для динамического или в памяти модуля.  
+## <a name="remarks"></a>Remarks  
+ `GetName`Метод возвращает S_OK HRESULT, если имя файла модуля совпадает с именем на диске. `GetName`Возвращает S_FALSE HRESULT, если имя является составным, например, для динамического или в памяти модуля.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также

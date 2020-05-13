@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6fe12194-4ef7-43c1-9570-ade35ccf127a
 topic_type:
 - apiref
-ms.openlocfilehash: cb966a918c63b4fbc00dcf52819b9384427dfdaa
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: a33b6ff308f3444496e5a1cb2e04f28e80305db5
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129592"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212585"
 ---
 # <a name="icordebugmodulegetfunctionfromtoken-method"></a>Метод ICorDebugModule::GetFunctionFromToken
 Возвращает функцию, заданную маркером метаданных.  
@@ -36,19 +36,19 @@ HRESULT GetFunctionFromToken(
   
 ## <a name="parameters"></a>Параметры  
  `methodDef`  
- окне `mdMethodDef` маркер метаданных, который ссылается на метаданные функции.  
+ окне `mdMethodDef`Токен метаданных, который ссылается на метаданные функции.  
   
  `ppFunction`  
  заполняет Указатель на адрес объекта интерфейса ICorDebugFunction, представляющего функцию.  
   
-## <a name="remarks"></a>Заметки  
- Метод `GetFunctionFromToken` возвращает HRESULT CORDBG_E_FUNCTION_NOT_IL, если значение, передаваемое в `methodDef`, не ссылается на метод промежуточного языка MSIL.  
+## <a name="remarks"></a>Remarks  
+ `GetFunctionFromToken`Метод возвращает CORDBG_E_FUNCTION_NOT_IL HRESULT, если переданное значение `methodDef` не ссылается на метод языка MSIL.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

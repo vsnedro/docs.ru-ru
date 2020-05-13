@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 55cb673a-e240-43a6-a406-6912e7c0fe66
 topic_type:
 - apiref
-ms.openlocfilehash: 80836cbbf82a97ccd6dc7251e5cbe934e0cbe66f
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 8cb8699c103f48b42694449a2bb2bbd25c42d3c6
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76777275"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212736"
 ---
 # <a name="icordebugmanagedcallbackloadassembly-method"></a>Метод ICorDebugManagedCallback::LoadAssembly
 Уведомляет отладчик о том, что сборка среды CLR была успешно загружена.  
@@ -42,15 +42,15 @@ HRESULT LoadAssembly (
  окне Указатель на объект ICorDebugAssembly, представляющий сборку.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Метод UnloadAssembly](icordebugmanagedcallback-unloadassembly-method.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

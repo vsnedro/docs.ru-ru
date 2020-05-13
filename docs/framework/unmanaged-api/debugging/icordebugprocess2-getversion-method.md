@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e11d5a75-61d9-4548-aedf-79c26079bd17
 topic_type:
 - apiref
-ms.openlocfilehash: 5f618f6779f6931785bba18f70fb1ac9baf46753
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 391b848d3b3f66f6af6bf3adbefb6e94d526e748
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137194"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213508"
 ---
 # <a name="icordebugprocess2getversion-method"></a>Метод ICorDebugProcess2::GetVersion
 
@@ -39,16 +39,16 @@ HRESULT GetVersion (
 `version`\
 заполняет Указатель на структуру COR_VERSION, в которой хранится номер версии среды выполнения.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Метод `GetVersion` возвращает код ошибки, если в процессе не была загружена среда выполнения.
+`GetVersion`Метод возвращает код ошибки, если в процессе не была загружена среда выполнения.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
 **Заголовок:** CorDebug.idl, CorDebug.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

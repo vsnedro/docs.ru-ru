@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0a65e2a4-5bb6-496c-ae6f-40474426b5a6
 topic_type:
 - apiref
-ms.openlocfilehash: da532ee1b5909a68bedbb9e6f6c96333e88002a8
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: bdf027f94c8416d052cb807d04be76a39868ccf7
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73109726"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212936"
 ---
 # <a name="icordebugmoduleenablejitdebugging-method"></a>Метод ICorDebugModule::EnableJITDebugging
 Определяет, сохраняет ли JIT-компилятор сведения об отладке для методов в этом модуле.  
@@ -36,19 +36,19 @@ HRESULT EnableJITDebugging(
   
 ## <a name="parameters"></a>Параметры  
  `bTrackJITInfo`  
- окне Присвойте этому параметру значение `true`, чтобы разрешить JIT-компилятору сохранять сведения о сопоставлении между версией MSIL и версией каждого метода в этом модуле, скомпилированном по требованию.  
+ окне Установите это значение, чтобы `true` разрешить JIT-компилятору сохранять сведения о сопоставлении между версией MSIL и версией каждого метода в этом модуле, скомпилированном по требованию.  
   
  `bAllowJitOpts`  
- окне Задайте для этого параметра значение `true`, чтобы JIT-компилятор создавал код с определенными оптимизацией JIT для отладки.  
+ окне Установите это значение, чтобы `true` разрешить JIT-компилятору создавать код с определенными оптимизацией JIT для отладки.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  JIT-отладка включается по умолчанию для всех модулей, загружаемых при активном отладчике. Программное включение или отключение параметров переопределяет глобальные параметры.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

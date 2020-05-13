@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a46925b3-3bf8-404f-9f30-a86ae41032c1
 topic_type:
 - apiref
-ms.openlocfilehash: e7821022e6966dbdea90d57b6899f09b2ed1964e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 6e214131aeb2d6d17ea4b0a730b5fc77428a7ca8
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73090529"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213690"
 ---
 # <a name="icordebugframegetfunctiontoken-method"></a>Метод ICorDebugFrame::GetFunctionToken
 Возвращает маркер метаданных для функции, которая содержит код, связанный с этим кадром стека.  
@@ -35,13 +35,13 @@ HRESULT GetFunctionToken (
   
 ## <a name="parameters"></a>Параметры  
  `pToken`  
- заполняет Указатель на маркер `mdMethodDef`, который ссылается на метаданные функции.  
+ заполняет Указатель на `mdMethodDef` маркер, который ссылается на метаданные функции.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

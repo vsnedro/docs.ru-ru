@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e95d7cb-144d-4ccf-8a69-d605f4744be2
 topic_type:
 - apiref
-ms.openlocfilehash: 7923008eecb9011bead685fbbb7f05f81f12329b
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 646b2661148e38f3c918fc18fce5c9cd0b1134a1
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73138577"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213027"
 ---
 # <a name="icordebuggenericvaluegetvalue-method"></a>Метод ICorDebugGenericValue::GetValue
 Копирует значение этого универсального объекта в указанный буфер.  
@@ -38,10 +38,10 @@ HRESULT GetValue (
  заполняет Указатель на значение, представленное этим объектом ICorDebugGenericValue. Значение может быть простым типом или ссылочным типом (т. е. указателем).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

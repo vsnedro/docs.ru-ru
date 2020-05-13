@@ -2,12 +2,12 @@
 title: Метод ICorDebugMergedAssemblyRecord::GetPublicKey
 ms.date: 03/30/2017
 ms.assetid: 6f4e78ba-082b-489d-8b58-4c35fbcc7a5b
-ms.openlocfilehash: 632e990899346493d5a7df08d293e25b83ed7ad0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 51724aa1ee6101c50c7cdb4b6071fb458814f483
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178732"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213547"
 ---
 # <a name="icordebugmergedassemblyrecordgetpublickey-method"></a>Метод ICorDebugMergedAssemblyRecord::GetPublicKey
 Возвращает открытый ключ сборки.  
@@ -37,15 +37,15 @@ HRESULT GetPublicKey(
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)
