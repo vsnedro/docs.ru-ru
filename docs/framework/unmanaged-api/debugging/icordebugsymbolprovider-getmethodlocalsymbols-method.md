@@ -2,12 +2,12 @@
 title: Метод ICorDebugSymbolProvider::GetMethodLocalSymbols
 ms.date: 03/30/2017
 ms.assetid: 8b989e38-e779-49d1-9e90-f1f920484b08
-ms.openlocfilehash: 41fc8e94ec8a5c8794674bebb32494bb3806e69d
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 7e9aa01a3fa1c90b0ab4f85970c4eb294b9a4904
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791609"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379614"
 ---
 # <a name="icordebugsymbolprovidergetmethodlocalsymbols-method"></a>Метод ICorDebugSymbolProvider::GetMethodLocalSymbols
 Получает локальные символы метода с учетом относительного виртуального адреса (RVA) этого метода.  
@@ -36,21 +36,21 @@ HRESULT GetMethodLocalSymbols(
  `pcFetchedSymbols`  
  заполняет Указатель на массив [ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md) , содержащий локальные символы метода.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Метод GetMethodParameterSymbols](icordebugsymbolprovider-getmethodparametersymbols-method.md)
 - [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)

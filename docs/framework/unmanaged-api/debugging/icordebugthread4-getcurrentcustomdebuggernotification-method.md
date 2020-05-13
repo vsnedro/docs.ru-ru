@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 57e0f2d2-5f0e-4e2d-99ec-3f26632eb693
 topic_type:
 - apiref
-ms.openlocfilehash: a8a377074ca1005ad8089dfd8e2a6a464bb86f60
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 76ad1c0ac421f05cf30f6d3d1f3e65848796a0c7
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791355"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378699"
 ---
 # <a name="icordebugthread4getcurrentcustomdebuggernotification-method"></a>Метод ICorDebugThread4::GetCurrentCustomDebuggerNotification
 
@@ -37,23 +37,23 @@ HRESULT GetCurrentCustomDebuggerNotification(
 ## <a name="parameters"></a>Параметры
 
 `ppNotificationObject`\
-заполняет Указатель на текущий объект `ICorDebugManagedCallback3::CustomNotification` в текущем потоке.
+заполняет Указатель на текущий `ICorDebugManagedCallback3::CustomNotification` объект в текущем потоке.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Значение `ppNotificationObject` равно null, если метод не вызывается из обратного вызова `ICorDebugManagedCallback3::CustomNotification` или если текущий объект уведомления не существует.
+Значение `ppNotificationObject` равно null, если метод не вызывается из `ICorDebugManagedCallback3::CustomNotification` обратного вызова или если текущий объект уведомления не существует.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
 **Заголовок:** CorDebug.idl, CorDebug.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
+**.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugThread4](icordebugthread4-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

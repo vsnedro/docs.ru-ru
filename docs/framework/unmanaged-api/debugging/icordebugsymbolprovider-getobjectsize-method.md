@@ -2,12 +2,12 @@
 title: Метод ICorDebugSymbolProvider::GetObjectSize
 ms.date: 03/30/2017
 ms.assetid: 3c564396-ac64-4ef3-b4f6-df96f1d46fc7
-ms.openlocfilehash: fce7410b5ae9571af0c8a5963596e2af41737798
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 64324df49ad0b5dfa3c25455950bddc3d687b178
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791568"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379561"
 ---
 # <a name="icordebugsymbolprovidergetobjectsize-method"></a>Метод ICorDebugSymbolProvider::GetObjectSize
 Возвращает размер объекта для объекта на основе его сигнатуры TypeSpec.  
@@ -32,21 +32,21 @@ HRESULT GetObjectSize(
  `pObjectSize`  
  [out] Указатель на размер объекта.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

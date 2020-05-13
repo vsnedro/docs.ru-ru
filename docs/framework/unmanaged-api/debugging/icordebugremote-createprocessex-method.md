@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
 topic_type:
 - apiref
-ms.openlocfilehash: cfec84483d387630623f77c176c668171303dd0f
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 4b2689f04228c9ecbbbb18531a0aefd3c40e3072
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791980"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83377981"
 ---
 # <a name="icordebugremotecreateprocessex-method"></a>Метод ICorDebugRemote::CreateProcessEx
 Запускает процесс на удаленном компьютере в отладчике.  
@@ -92,11 +92,11 @@ HRESULT CreateProcessEx (
  E_FAIL (или другие коды возврата E_)  
  Не удалось запустить процесс на удаленном компьютере и вернуть для отладки "Интерфейс ICorDebugProcess".  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Отладка в смешанном режиме не поддерживается в Silverlight.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug. idl  
   
@@ -104,7 +104,7 @@ HRESULT CreateProcessEx (
   
  **.NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRemote](icordebugremote-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

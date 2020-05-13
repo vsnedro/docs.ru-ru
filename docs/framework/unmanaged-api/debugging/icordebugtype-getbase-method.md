@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f24e1af9-c220-4f79-ae62-4153ec17ea81
 topic_type:
 - apiref
-ms.openlocfilehash: cff527aa7cde6a13667d47d030a0ef7db96ad5ba
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: fc406f6e87e5b2be48c6fe7d5fc988774ac5cd11
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73122337"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379987"
 ---
 # <a name="icordebugtypegetbase-method"></a>Метод ICorDebugType::GetBase
-Возвращает указатель интерфейса на объект ICorDebugType, представляющий базовый тип, если он существует, типа, представленного этим `ICorDebugType`.  
+Возвращает указатель интерфейса на объект ICorDebugType, представляющий базовый тип, если он существует, типа, представленного этим объектом `ICorDebugType` .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,16 +35,16 @@ HRESULT GetBase (
   
 ## <a name="parameters"></a>Параметры  
  `pBase`  
- заполняет Указатель на адрес объекта `ICorDebugType`, который представляет базовый тип.  
+ заполняет Указатель на адрес `ICorDebugType` объекта, который представляет базовый тип.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Поиск базового типа для типа полезен для реализации общих функциональных возможностей отладчика, таких как вывод всех полей объекта или его родительских классов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

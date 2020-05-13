@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ec00bc21-117e-4acd-9301-2cfafd5be8d3
 topic_type:
 - apiref
-ms.openlocfilehash: 38fe50f5a6608bb27d7a7818dee4784a7f8113ef
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 711fccd65379bc3e5e178869e7220dd84fd07fbe
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133607"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379705"
 ---
 # <a name="icordebugthreadenumeratechains-method"></a>Метод ICorDebugThread::EnumerateChains
 Получает указатель интерфейса на перечислитель Икордебугчаиненум, который содержит все цепочки стека в этом объекте ICorDebugThread.  
@@ -35,9 +35,9 @@ HRESULT EnumerateChains (
   
 ## <a name="parameters"></a>Параметры  
  `ppChains`  
- заполняет Указатель на адрес объекта `ICorDebugChainEnum`, который позволяет перечислить все цепочки стека в этом потоке, начиная с активной (то есть самой последней) цепочки.  
+ заполняет Указатель на адрес `ICorDebugChainEnum` объекта, который допускает перечисление всех цепочек стека в этом потоке, начиная с активной (то есть самой последней) цепочки.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Цепочка стека представляет физический стек вызовов для потока. В следующих случаях создается граница цепочки стеков:  
   
 - Переход с управляемого на неуправляемый или неуправляемый на управляемый.  
@@ -51,10 +51,10 @@ HRESULT EnumerateChains (
  Отладчик может захотеть перераспределить физические стеки вызовов всех потоков на логические стеки вызовов. Это может привести к сортировке всех цепочек потоков по связям "Вызывающий/вызываемый" и их перегруппировку.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

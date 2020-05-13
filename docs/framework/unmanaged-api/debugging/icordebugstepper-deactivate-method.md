@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 855f4199-b62d-40ce-998e-1eb4a1772142
 topic_type:
 - apiref
-ms.openlocfilehash: 1d75897e00c36bd5c484e837ee68e54443168e77
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 760f69baf311cf320e9c358ba1c45c942934f1a5
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131755"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379395"
 ---
 # <a name="icordebugstepperdeactivate-method"></a>Метод ICorDebugStepper::Deactivate
 Заставляет этот объект ICorDebugStepper отменить последнюю полученную команду шага.  
@@ -31,14 +31,14 @@ ms.locfileid: "73131755"
 HRESULT Deactivate ();  
 ```  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Новая команда пошагового выполнения может быть выдана после отмены последней полученной команды Step.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

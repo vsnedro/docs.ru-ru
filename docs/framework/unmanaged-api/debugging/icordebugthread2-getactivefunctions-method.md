@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 27fae01a-ecec-423a-973e-24f8de55826c
 topic_type:
 - apiref
-ms.openlocfilehash: 9b9a301714ea60b4e3220eb75721e56e39bd9659
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e064a7db131a671adc4d0b6df522f3456e3a31d5
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139929"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83377156"
 ---
 # <a name="icordebugthread2getactivefunctions-method"></a>Метод ICorDebugThread2::GetActiveFunctions
 Возвращает сведения об активной функции в каждом кадре этого потока.  
@@ -41,23 +41,23 @@ HRESULT GetActiveFunctions (
  [in] Размер массива `pFunctions`.  
   
  `pcFunctions`  
- заполняет Указатель на число объектов, возвращаемых в массиве `pFunctions`. Число возвращаемых объектов будет равно числу управляемых кадров в стеке.  
+ заполняет Указатель на число объектов, возвращаемых в `pFunctions` массиве. Число возвращаемых объектов будет равно числу управляемых кадров в стеке.  
   
  `pFunctions`  
  [вход, выход] Массив объектов COR_ACTIVE_FUNCTION, каждый из которых содержит сведения об активных функциях в кадрах этого потока.  
   
  Первый элемент будет использоваться для конечного фрейма и так далее — в корне стека.  
   
-## <a name="remarks"></a>Заметки  
- Если во входных данных `pFunctions` имеет значение null, `GetActiveFunctions` возвращает только число функций в стеке. То есть если во входных данных `pFunctions` имеет значение null, `GetActiveFunctions` возвращает значение только в `pcFunctions`.  
+## <a name="remarks"></a>Remarks  
+ Если `pFunctions` для входных данных задано значение null, `GetActiveFunctions` функция возвращает только число функций в стеке. То есть если `pFunctions` во входных данных параметр имеет значение null, `GetActiveFunctions` возвращает значение только в `pcFunctions` .  
   
- Метод `GetActiveFunctions` предназначен для оптимизации при получении тех же сведений из кадров в трассировке стека и включает только те кадры, для которых в полной трассировке стека был бы объект ICorDebugILFrame.  
+ `GetActiveFunctions`Метод предназначен для оптимизации при получении тех же сведений из кадров в трассировке стека и включает только те кадры, для которых в полной трассировке стека был бы объект ICorDebugILFrame.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

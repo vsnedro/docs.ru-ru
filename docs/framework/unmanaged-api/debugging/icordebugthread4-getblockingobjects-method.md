@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a7e6c54e-7be9-4e52-bbb4-95f52458e8e4
 topic_type:
 - apiref
-ms.openlocfilehash: 39833b689f28437b4241d9cb15fb4a92b2f9bcc3
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 366b5124cc66a4e9a1c3bd4e77f604f15ba8d8a8
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791376"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379673"
 ---
 # <a name="icordebugthread4getblockingobjects-method"></a>Метод ICorDebugThread4::GetBlockingObjects
 Предоставляет упорядоченное перечисление структур [CorDebugBlockingObject](cordebugblockingobject-structure.md) , которые предоставляют сведения о блокировке потока.  
@@ -36,27 +36,27 @@ HRESULT GetBlockingObjects (
  `ppBlockingObjectEnum`  
  заполняет Указатель на упорядоченное перечисление структур [CorDebugBlockingObject](cordebugblockingobject-structure.md) .  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Первый элемент в возвращенном перечислении соответствует первой структуре, блокирующей поток. Второй элемент соответствует блокирующему элементу, который обнаруживается при выполнении асинхронного вызова процедуры (APC) при блокировке в первом и т. д.  
   
  Перечисление допустимо только в течение текущего синхронизированного состояния.  
   
  Этот метод должен вызываться, когда отлаживаемый объект находится в синхронизированном состоянии.  
   
- Если `ppBlockingObjectEnum` не является допустимым указателем, результат не определен.  
+ Если не `ppBlockingObjectEnum` является допустимым указателем, результат не определен.  
   
  Если поток заблокирован и ошибка не может быть определена, метод возвращает значение HRESULT, указывающее на ошибку; в противном случае возвращается S_OK.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugThread4](icordebugthread4-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

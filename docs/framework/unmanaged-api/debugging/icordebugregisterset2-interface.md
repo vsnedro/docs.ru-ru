@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d7fbccbf-3b6b-4db8-a96d-768e1cb6b1a6
 topic_type:
 - apiref
-ms.openlocfilehash: 161358fab9a4601e7b718321273d493bd84a3228
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: f989f1c1f29c63af54ff125f4ad1aaa2bcee6757
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76792009"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378198"
 ---
 # <a name="icordebugregisterset2-interface"></a>Интерфейс ICorDebugRegisterSet2
 Расширяет возможности интерфейса [ICorDebugRegisterSet](icordebugregisterset-interface.md) для аппаратных платформ, имеющих более 64 регистров.  
@@ -32,21 +32,21 @@ ms.locfileid: "76792009"
 |[Метод GetRegistersAvailable](icordebugregisterset2-getregistersavailable-method.md)|Возвращает массив байтов, предоставляющий битовую карту доступных регистров.|  
 |[Метод SetRegisters](icordebugregisterset2-setregisters-method.md)|Не реализовано в .NET Framework версии 2,0.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Интерфейс ICorDebugRegisterSet](icordebugregisterset-interface.md)

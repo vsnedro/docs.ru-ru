@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 189c36be-028c-4fba-a002-5edfb8fcd07f
 topic_type:
 - apiref
-ms.openlocfilehash: b76d17337408653d130ee0cb8594e759bdade37c
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: b89e968e9b12943c8192af3b280f8bd321a02110
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791869"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378788"
 ---
 # <a name="icordebugstackwalknext-method"></a>Метод ICorDebugStackWalk::Next
 Перемещает объект [икордебугстакквалк](icordebugstackwalk-interface.md) в следующий кадр.  
@@ -37,25 +37,25 @@ HRESULT Next();
 |HRESULT|Описание|  
 |-------------|-----------------|  
 |S_OK|Среда выполнения успешно развернута до следующего кадра (см. примечания).|  
-|E_FAIL|Объект `ICorDebugStackWalk` не может быть расширен.|  
+|E_FAIL|`ICorDebugStackWalk`Объект не может быть расширен.|  
 |CORDBG_S_AT_END_OF_STACK|В результате этого очистки достигнут конец стека.|  
 |CORDBG_E_PAST_END_OF_STACK|Указатель фрейма уже находится в конце стека; Поэтому доступ к дополнительным кадрам невозможен.|  
   
 ## <a name="exceptions"></a>Исключения  
   
-## <a name="remarks"></a>Заметки  
- Метод `Next` перемещает объект `ICorDebugStackWalk` в вызывающий кадр только в том случае, если среда выполнения может очистить текущий кадр. В противном случае объект переходит к следующему кадру, который среда выполнения может очистить.  
+## <a name="remarks"></a>Remarks  
+ `Next`Метод перемещает `ICorDebugStackWalk` объект в вызывающий кадр только в том случае, если среда выполнения может очистить текущий кадр. В противном случае объект переходит к следующему кадру, который среда выполнения может очистить.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugStackWalk](icordebugstackwalk-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

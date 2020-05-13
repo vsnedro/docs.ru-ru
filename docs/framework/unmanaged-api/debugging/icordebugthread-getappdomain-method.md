@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 415b3d34-8b35-4b60-a318-140646cc83f8
 topic_type:
 - apiref
-ms.openlocfilehash: a845eed993914e02de34ec5c60ed232ccabc561e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 52efebf8a2786afaabe87b96b35a13c5fa1eb578
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133530"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379784"
 ---
 # <a name="icordebugthreadgetappdomain-method"></a>Метод ICorDebugThread::GetAppDomain
 Возвращает указатель интерфейса на домен приложения, в котором выполняется данный интерфейс ICorDebugThread.  
@@ -38,10 +38,10 @@ HRESULT GetAppDomain (
  заполняет Указатель на объект ICorDebugAppDomain, представляющий домен приложения, в котором выполняется данный поток в данный момент.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9be27b0c-1d99-4722-b0d4-40cf6753ce5c
 topic_type:
 - apiref
-ms.openlocfilehash: f054f8f2bd7c322e722a1e17290ba6fbad9e37b0
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 13125f60f596cb8a80d9c42c51a979f632de494b
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133512"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379755"
 ---
 # <a name="icordebugthreadgetdebugstate-method"></a>Метод ICorDebugThread::GetDebugState
 Возвращает текущее состояние отладки этого объекта ICorDebugThread.  
@@ -37,14 +37,14 @@ HRESULT GetDebugState (
  `pState`  
  заполняет Указатель на побитовую комбинацию значений перечисления Кордебугсреадстате, описывающих текущее состояние отладки этого потока.  
   
-## <a name="remarks"></a>Заметки  
- Если процесс в данный момент остановлен, `pState` представляет состояние отладки, которое будет существовать для этого потока, если процесс был продолжен, а не текущее состояние этого потока.  
+## <a name="remarks"></a>Remarks  
+ Если процесс в данный момент остановлен, `pState` представляет состояние отладки, которое существовало для этого потока, если процесс был продолжен, а не фактическое текущее состояние этого потока.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

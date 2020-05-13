@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d0ea0f30-e8d2-48b0-8477-e1a029ceb4dd
 topic_type:
 - apiref
-ms.openlocfilehash: 11d9c7393827b613d49e23972b4896bfe657a544
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 293d1a9cd93b5ce45105427e7df864ad8bfbe77a
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73138987"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379193"
 ---
 # <a name="icordebugstepperenumnext-method"></a>Метод ICorDebugStepperEnum::Next
 Возвращает указанное число экземпляров ICorDebugStepper из перечисления, начиная с текущей позиции.  
@@ -38,19 +38,19 @@ HRESULT Next(
   
 ## <a name="parameters"></a>Параметры  
  `celt`  
- окне Число извлекаемых экземпляров `ICorDebugStepper`.  
+ окне Число `ICorDebugStepper` извлекаемых экземпляров.  
   
  `steppers`  
- заполняет Массив указателей, каждый из которых указывает на объект `ICorDebugStepper`.  
+ заполняет Массив указателей, каждый из которых указывает на `ICorDebugStepper` объект.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращаемых экземпляров `ICorDebugStepper`. Это значение может быть равно null, если `celt` является одним.  
+ заполняет Указатель на число `ICorDebugStepper` фактически возвращенных экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

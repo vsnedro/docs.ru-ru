@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f5cdc135-6db4-4b32-9dd1-260ec58b774f
 topic_type:
 - apiref
-ms.openlocfilehash: 6c076dd2912a22e4f9492492a2d7a9fb73db88e8
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ab1351af042aba5042cc7a04614bc3cf14f7d7ae
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139041"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379459"
 ---
 # <a name="icordebugstepper2setjmc-method"></a>Метод ICorDebugStepper2::SetJMC
 Задает значение, указывающее, следует ли выполнить шаги для этого параметра ICorDebugStepper только с помощью кода, созданного разработчиком приложения. Этот процесс также известен как отладка "только мой код" (JMC).  
@@ -35,13 +35,13 @@ HRESULT SetJMC (
   
 ## <a name="parameters"></a>Параметры  
  `fIsJMCStepper`  
- окне Присвойте параметру значение `true` для шага только с помощью кода, созданного разработчиком приложения; в противном случае задайте значение `false`.  
+ окне Установите в значение `true` только для шага с помощью кода, созданного разработчиком приложения; в противном случае задайте для значение `false` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

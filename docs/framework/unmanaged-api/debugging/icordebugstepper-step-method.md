@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 38c1940b-ada1-40ba-8295-4c0833744e1e
 topic_type:
 - apiref
-ms.openlocfilehash: 43f86e704e4a52a702b8f563e3c613806eb061b5
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 39d2fd0163b0e61295187461d5dbdf5742450306
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137533"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379520"
 ---
 # <a name="icordebugstepperstep-method"></a>Метод ICorDebugStepper::Step
 Приводит к тому, что данный ICorDebugStepper пошаговым путем через содержащий его поток, и, при необходимости, для продолжения пошагового выполнения функций, которые вызываются в потоке.  
@@ -35,16 +35,16 @@ HRESULT Step (
   
 ## <a name="parameters"></a>Параметры  
  `bStepIn`  
- окне Задайте значение `true`, чтобы выполнить шаг с заходом в функцию, которая вызывается в потоке. Задайте для параметра значение `false`, чтобы выполнить шаг с обходом функции.  
+ окне Задайте для значение, чтобы `true` выполнить шаг с заходом в функцию, которая вызывается в потоке. Задайте для значение `false` , чтобы выполнить шаг с обходом функции.  
   
-## <a name="remarks"></a>Заметки  
- Шаг завершается, когда среда CLR выполняет следующую управляемую инструкцию в кадре этого средства. Если `Step` вызывается в пошаговом процессе, который не находится в управляемом коде, шаг будет выполнен, когда поток выполняет следующую инструкцию управляемого кода.  
+## <a name="remarks"></a>Remarks  
+ Шаг завершается, когда среда CLR выполняет следующую управляемую инструкцию в кадре этого средства. Если `Step` метод вызывается в пошаговом процессе, который не находится в управляемом коде, шаг будет выполнен, когда поток выполняет следующую инструкцию управляемого кода.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

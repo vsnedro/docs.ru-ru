@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 62eb5d55-53ee-4fb3-8d47-7b6c96808f9e
 topic_type:
 - apiref
-ms.openlocfilehash: 37bf5abf66b613d8432af84c7d73aff60e9127cb
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 83ac91133b226e2ac263356941c3fc3288355e7e
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791276"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379934"
 ---
 # <a name="icordebugtypegetstaticfieldvalue-method"></a>Метод ICorDebugType::GetStaticFieldValue
 Возвращает указатель интерфейса на объект ICorDebugValue, содержащий значение статического поля, на которое ссылается заданный токен поля в указанном кадре стека.  
@@ -37,29 +37,29 @@ HRESULT GetStaticFieldValue (
   
 ## <a name="parameters"></a>Параметры  
  `fieldDef`  
- окне Токен `mdFieldDef`, указывающий статическое поле.  
+ окне `mdFieldDef`Токен, указывающий статическое поле.  
   
  `pFrame`  
  окне Указатель на объект ICorDebugFrame, представляющий кадр стека.  
   
  `ppValue`  
- заполняет Указатель на адрес `ICorDebugValue`, который содержит значение статического поля.  
+ заполняет Указатель на адрес объекта `ICorDebugValue` , который содержит значение статического поля.  
   
-## <a name="remarks"></a>Заметки  
- Метод `GetStaticFieldValue` можно использовать только в том случае, если тип является ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE, как показано в методе [ICorDebugType:: GetType](icordebugtype-gettype-method.md) .  
+## <a name="remarks"></a>Remarks  
+ `GetStaticFieldValue`Метод может использоваться только в том случае, если тип имеет значение ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE, как указано в методе [ICorDebugType:: GetType](icordebugtype-gettype-method.md) .  
   
- Для неуниверсальных типов операция, выполняемая `GetStaticFieldValue`, идентична вызову [ICorDebugClass:: GetStaticFieldValue](icordebugclass-getstaticfieldvalue-method.md) для объекта ICorDebugClass, возвращаемого методами [ICorDebugType::](icordebugtype-getclass-method.md)GetObject.  
+ Для неуниверсальных типов операция, выполняемая, `GetStaticFieldValue` идентична вызову [ICorDebugClass:: GetStaticFieldValue](icordebugclass-getstaticfieldvalue-method.md) для объекта ICorDebugClass, возвращаемого командлетом [ICorDebugType::](icordebugtype-getclass-method.md)GetObject.  
   
  Для универсальных типов значение статического поля будет относиться к определенному экземпляру. Кроме того, если статическое поле может быть связано с потоком, контекстом или доменом приложения, то кадр стека поможет отладчику определить правильное значение.  
   
-## <a name="remarks"></a>Заметки  
- `GetStaticFieldValue` можно использовать только в том случае, если вызов метода `ICorDebugType::GetType` возвращает значение ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE.  
+## <a name="remarks"></a>Remarks  
+ `GetStaticFieldValue`может использоваться, только если вызов `ICorDebugType::GetType` возвращает значение ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

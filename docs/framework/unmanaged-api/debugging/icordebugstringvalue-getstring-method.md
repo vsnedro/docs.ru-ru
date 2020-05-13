@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2b94bda7-09ee-435d-91b9-c4e31af1896c
 topic_type:
 - apiref
-ms.openlocfilehash: e23133176cbd703a58c92f9bf1ead530b0bbb8a8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9c154d4ad561e0bd9d82adaca77d2e30f11a5237
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178499"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379667"
 ---
 # <a name="icordebugstringvaluegetstring-method"></a>Метод ICorDebugStringValue::GetString
-Получает строку, на которую ссылается этот ICorDebugStringValue.  
+Возвращает строку, на которую ссылается этот ICorDebugStringValue.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,16 +41,16 @@ HRESULT GetString (
  [in] Размер массива `szString`.  
   
  `pcchString`  
- (ваут) Указатель на количество символов, возвращенных в `szString` массиве.  
+ заполняет Указатель на число символов, возвращаемых в `szString` массиве.  
   
  `szString`  
- (ваут) Массив, в течение которого хранится извлеченная строка.  
+ заполняет Массив, в котором хранится извлеченная строка.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

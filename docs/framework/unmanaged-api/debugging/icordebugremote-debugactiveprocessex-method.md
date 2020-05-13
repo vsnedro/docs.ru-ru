@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type:
 - apiref
-ms.openlocfilehash: b78bff2994cefc6c35a4bd59133338392c3a1b24
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: b95e9f3a0d584511a2bcf156ed2c50a98f96d071
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791972"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379064"
 ---
 # <a name="icordebugremotedebugactiveprocessex-method"></a>Метод ICorDebugRemote::DebugActiveProcessEx
 Запускает процесс на удаленном компьютере в отладчике.  
@@ -44,7 +44,7 @@ HRESULT DebugActiveProcessEx (
  окне Идентификатор процесса, к которому должен быть присоединен отладчик.  
   
  `win32Attach`  
- [in] `true`, если отладчик должен вести себя в качестве отладчика Win32 для процесса и передать неуправляемые обратные вызовы; в противном случае `false`.  
+ [входные] `true` значение, если отладчик должен вести себя в качестве отладчика Win32 для процесса и передавать неуправляемые обратные вызовы; в противном случае — `false` .  
   
  `ppProcess`  
  заполняет Указатель на адрес объекта "ICorDebugProcess", который представляет процесс, к которому присоединен отладчик.  
@@ -56,11 +56,11 @@ HRESULT DebugActiveProcessEx (
  E_FAIL (или другие коды возврата E_)  
  Не удалось присоединиться к процессу на удаленном компьютере.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Отладка в смешанном режиме не поддерживается в Silverlight.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
@@ -68,7 +68,7 @@ HRESULT DebugActiveProcessEx (
   
  **.NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRemote](icordebugremote-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)
