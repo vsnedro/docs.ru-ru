@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 91b1345c-a94f-4ef8-9696-3823d06c6d05
 topic_type:
 - apiref
-ms.openlocfilehash: d87f414e9dfd05a519b60efc7ecdd5328a6dd86f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1cf6f9c5fe8777f3333e449a804a3c3a0a64ff19
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178868"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213092"
 ---
-# <a name="icordebuggcreferenceenumnext-method"></a><span data-ttu-id="1c6f6-102">Метод ICorDebugGCReferenceEnum::Next</span><span class="sxs-lookup"><span data-stu-id="1c6f6-102">ICorDebugGCReferenceEnum::Next Method</span></span>
-<span data-ttu-id="1c6f6-103">Получает указанное количество [COR_GC_REFERENCE](cor-gc-reference-structure.md) экземпляров, содержащих информацию об объектах, которые будут собраны мусором.</span><span class="sxs-lookup"><span data-stu-id="1c6f6-103">Gets the specified number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) instances that contain information about objects that will be garbage-collected.</span></span>  
+# <a name="icordebuggcreferenceenumnext-method"></a><span data-ttu-id="84119-102">Метод ICorDebugGCReferenceEnum::Next</span><span class="sxs-lookup"><span data-stu-id="84119-102">ICorDebugGCReferenceEnum::Next Method</span></span>
+<span data-ttu-id="84119-103">Возвращает указанное число экземпляров [COR_GC_REFERENCE](cor-gc-reference-structure.md) , содержащих сведения об объектах, которые будут собираться сборщиком мусора.</span><span class="sxs-lookup"><span data-stu-id="84119-103">Gets the specified number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) instances that contain information about objects that will be garbage-collected.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="1c6f6-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1c6f6-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="84119-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="84119-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT Next(  
@@ -34,28 +34,28 @@ HRESULT Next(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="1c6f6-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="1c6f6-105">Parameters</span></span>  
- <span data-ttu-id="1c6f6-106">celt</span><span class="sxs-lookup"><span data-stu-id="1c6f6-106">celt</span></span>  
- <span data-ttu-id="1c6f6-107">(в) Количество корней, которые необходимо извлечь.</span><span class="sxs-lookup"><span data-stu-id="1c6f6-107">[in] The number of roots to be retrieved.</span></span>  
+## <a name="parameters"></a><span data-ttu-id="84119-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="84119-105">Parameters</span></span>  
+ <span data-ttu-id="84119-106">celt</span><span class="sxs-lookup"><span data-stu-id="84119-106">celt</span></span>  
+ <span data-ttu-id="84119-107">окне Число извлекаемых корневых элементов.</span><span class="sxs-lookup"><span data-stu-id="84119-107">[in] The number of roots to be retrieved.</span></span>  
   
- <span data-ttu-id="1c6f6-108">Корни</span><span class="sxs-lookup"><span data-stu-id="1c6f6-108">roots</span></span>  
- <span data-ttu-id="1c6f6-109">(ваут) Массив указателей, каждый из которых указывает на [COR_GC_REFERENCE](cor-gc-reference-structure.md) объект, представляющий корень объекта, который будет собран мусором.</span><span class="sxs-lookup"><span data-stu-id="1c6f6-109">[out] An array of pointers, each of which points to a [COR_GC_REFERENCE](cor-gc-reference-structure.md) object that represents the root of an object to be garbage-collected.</span></span>  
+ <span data-ttu-id="84119-108">корня</span><span class="sxs-lookup"><span data-stu-id="84119-108">roots</span></span>  
+ <span data-ttu-id="84119-109">заполняет Массив указателей, каждый из которых указывает на объект [COR_GC_REFERENCE](cor-gc-reference-structure.md) , представляющий корень объекта, который должен быть собран сборщиком мусора.</span><span class="sxs-lookup"><span data-stu-id="84119-109">[out] An array of pointers, each of which points to a [COR_GC_REFERENCE](cor-gc-reference-structure.md) object that represents the root of an object to be garbage-collected.</span></span>  
   
- <span data-ttu-id="1c6f6-110">pceltFetched</span><span class="sxs-lookup"><span data-stu-id="1c6f6-110">pceltFetched</span></span>  
- <span data-ttu-id="1c6f6-111">(ваут) Указатель на количество [COR_GC_REFERENCE](cor-gc-reference-structure.md) объектов `roots`фактически вернулся в .</span><span class="sxs-lookup"><span data-stu-id="1c6f6-111">[out] A pointer to the number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) objects actually returned in `roots`.</span></span> <span data-ttu-id="1c6f6-112">Это значение может быть `null`, если параметр `celt` имеет значение 1.</span><span class="sxs-lookup"><span data-stu-id="1c6f6-112">This value may be `null` if `celt` is 1.</span></span>  
+ <span data-ttu-id="84119-110">pceltFetched</span><span class="sxs-lookup"><span data-stu-id="84119-110">pceltFetched</span></span>  
+ <span data-ttu-id="84119-111">заполняет Указатель на число объектов [COR_GC_REFERENCE](cor-gc-reference-structure.md) , фактически возвращаемых в `roots` .</span><span class="sxs-lookup"><span data-stu-id="84119-111">[out] A pointer to the number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) objects actually returned in `roots`.</span></span> <span data-ttu-id="84119-112">Это значение может быть `null`, если параметр `celt` имеет значение 1.</span><span class="sxs-lookup"><span data-stu-id="84119-112">This value may be `null` if `celt` is 1.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="1c6f6-113">Remarks</span><span class="sxs-lookup"><span data-stu-id="1c6f6-113">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="84119-113">Remarks</span><span class="sxs-lookup"><span data-stu-id="84119-113">Remarks</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="1c6f6-114">Требования</span><span class="sxs-lookup"><span data-stu-id="1c6f6-114">Requirements</span></span>  
- <span data-ttu-id="1c6f6-115">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="1c6f6-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="84119-114">Требования</span><span class="sxs-lookup"><span data-stu-id="84119-114">Requirements</span></span>  
+ <span data-ttu-id="84119-115">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="84119-115">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="1c6f6-116">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="1c6f6-116">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="84119-116">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="84119-116">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="1c6f6-117">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="1c6f6-117">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="84119-117">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="84119-117">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="1c6f6-118">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1c6f6-118">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
+ <span data-ttu-id="84119-118">**.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="84119-118">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1c6f6-119">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="1c6f6-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="84119-119">См. также</span><span class="sxs-lookup"><span data-stu-id="84119-119">See also</span></span>
 
-- [<span data-ttu-id="1c6f6-120">Интерфейс ICorDebugGCReferenceEnum</span><span class="sxs-lookup"><span data-stu-id="1c6f6-120">ICorDebugGCReferenceEnum Interface</span></span>](icordebuggcreferenceenum-interface.md)
-- [<span data-ttu-id="1c6f6-121">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="1c6f6-121">Debugging Interfaces</span></span>](debugging-interfaces.md)
+- [<span data-ttu-id="84119-120">Интерфейс ICorDebugGCReferenceEnum</span><span class="sxs-lookup"><span data-stu-id="84119-120">ICorDebugGCReferenceEnum Interface</span></span>](icordebuggcreferenceenum-interface.md)
+- [<span data-ttu-id="84119-121">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="84119-121">Debugging Interfaces</span></span>](debugging-interfaces.md)
