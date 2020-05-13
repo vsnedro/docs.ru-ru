@@ -2,12 +2,12 @@
 title: Каталог идентификаторов сред выполнения (RID) в .NET Core
 description: Сведения об идентификаторах сред выполнения и их использовании в .NET Core.
 ms.date: 02/22/2019
-ms.openlocfilehash: feb19632f16a047ecfb2dcb697a9b837824a1929
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b581f46becc6808ca957ac66c0c22e5e5f973bd1
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77451737"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795564"
 ---
 # <a name="net-core-rid-catalog"></a>Каталог идентификаторов сред выполнения (RID) в .NET Core
 
@@ -35,7 +35,7 @@ RID — это сокращение от *Runtime IDentifier* (идентифи
 
 - `[architecture]` — это архитектура процессора. Например, `x86`, `x64`, `arm` или `arm64`.
 
-- `[additional qualifiers]` дополнительно дифференцируют разные платформы. Пример: `aot`.
+- `[additional qualifiers]` дополнительно дифференцируют разные платформы. Например, `aot`.
 
 ## <a name="rid-graph"></a>Схема RID
 
@@ -117,7 +117,8 @@ SDK для .NET Core 2.0 представляет концепцию перен
 - Переносные (.NET Core 2.0 или более поздние версии):
   - `linux-x64` (большинство дистрибутивов для компьютеров, например CentOS, Debian, Fedora, Ubuntu и производные от них);
   - `linux-musl-x64` (упрощенные дистрибутивы, которые используют [musl](https://wiki.musl-libc.org/projects-using-musl.html), например Alpine Linux);
-  - `linux-arm` (дистрибутивы Linux, которые работают на архитектуре ARM, например Raspberry Pi).
+  - `linux-arm` (дистрибутивы Linux, которые работают на архитектуре ARM, например Raspbian on Raspberry Pi Model 2+)
+  - `linux-arm64` (дистрибутивы Linux, которые работают на 64-разрядной архитектуре ARM, например 64-разрядный Ubuntu Server на Raspberry Pi Model 3+)
 - Red Hat Enterprise Linux
   - `rhel-x64` (заменен на `linux-x64` для RHEL новее версии 6);
   - `rhel.6-x64` (.NET Core 2.0 или более поздние версии)
@@ -147,6 +148,6 @@ SDK для .NET Core 2.0 представляет концепцию перен
 
 Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](install/dependencies.md?pivots=os-macos).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Идентификаторы среды выполнения](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/readme.md)

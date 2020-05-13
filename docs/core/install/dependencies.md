@@ -3,14 +3,14 @@ title: Зависимости пакета SDK для .NET Core и среды в
 description: Сведения о предварительных требованиях к операционной системе и архитектуре ЦП для установки пакета SDK для .NET Core и среды выполнения .NET Core в Windows, Linux и macOS.
 author: leecow
 ms.author: leecow
-ms.date: 12/04/2019
+ms.date: 04/30/2020
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: 42765d4402dfa17d4e962b2ecaf7a83e91853c76
-ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
+ms.openlocfilehash: 280aa1431686ff99257580bb024a84b1e57f85c0
+ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82140990"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82895489"
 ---
 # <a name="net-core-dependencies-and-requirements"></a>Зависимости и требования для .NET Core
 
@@ -41,7 +41,7 @@ ms.locfileid: "82140990"
 
 # <a name="net-core-30"></a>[.NET Core 3.0](#tab/netcore30)
 
- *Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+*Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 3.0 поддерживает следующие версии Windows:
 
@@ -59,7 +59,7 @@ ms.locfileid: "82140990"
 
 # <a name="net-core-22"></a>[.NET Core 2.2](#tab/netcore22)
 
- *Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+*Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 2.2 поддерживает следующие версии Windows:
 
@@ -157,7 +157,7 @@ ms.locfileid: "82140990"
 
 # <a name="net-core-30"></a>[.NET Core 3.0](#tab/netcore30)
 
- *Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+*Сейчас .NET Core 3.0 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 3.0 воспринимает Linux как отдельную операционную систему. Существует отдельная сборка для Linux (на основе архитектуры микросхемы) с поддержкой дистрибутивов Linux.
 
@@ -185,7 +185,7 @@ ms.locfileid: "82140990"
 
 # <a name="net-core-22"></a>[.NET Core 2.2](#tab/netcore22)
 
- *Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+*Сейчас .NET Core 2.2 не поддерживается. Дополнительные сведения см. в статье о [политике поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 2.2 воспринимает Linux как отдельную операционную систему. Существует отдельная сборка для Linux (на основе архитектуры микросхемы) с поддержкой дистрибутивов Linux.
 
@@ -290,6 +290,24 @@ ms.locfileid: "82140990"
 
 > [!WARNING]
 > В большинство версий CentOS и Fedora входит более ранняя версия libgdiplus. Вы можете установить последнюю версию libgdiplus, добавив в систему репозиторий Mono. Для получения дополнительной информации см. <https://www.mono-project.com/download/stable/>.
+
+### <a name="alpine"></a>Alpine
+
+Для дистрибутивов Alpine должны быть установлены следующие библиотеки:
+
+- icu-libs (не требуется, если глобализация отключена)
+- krb5-libs
+- libcurl
+- libintl
+- libssl1.1 (для Alpine 3.9 или более поздних версий) или libssl1.0 (для более ранних версий)
+- libstdc++
+- lttng-ust
+- numactl (необязательно, используется только для устройств с включенным NUMA)
+- zlib
+
+Для приложений .NET Core, использующих сборку *System.Drawing.Common*, необходима также следующая зависимость:
+
+- libgdiplus (доступно только в граничном/тестовом репозитории)
 
 ::: zone-end
 

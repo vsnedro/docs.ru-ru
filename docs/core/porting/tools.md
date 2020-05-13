@@ -2,13 +2,13 @@
 title: Инструменты для переноса в .NET Core
 description: Дополнительные сведения о некоторых инструментах, которые можно использовать для переноса в .NET Core
 author: cartermp
-ms.date: 12/07/2018
-ms.openlocfilehash: 64bad7600d8e17ada83d4bd8bc56762fd1789f43
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.date: 05/03/2020
+ms.openlocfilehash: d0cf0abf206950beb34556ca3ba7243d8cad241e
+ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80989133"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82795590"
 ---
 # <a name="tools-to-help-with-porting-to-net-core"></a>Инструменты для переноса в .NET Core
 
@@ -18,8 +18,4 @@ ms.locfileid: "80989133"
   - как [программа командной строки](https://github.com/Microsoft/dotnet-apiport/releases);
   - как [расширение Visual Studio](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer).
 - [Анализатор API .NET](../../standard/analyzers/api-analyzer.md) — анализатор на основе Roslyn выявляет риски совместимости для API на языке C# на разных платформах, а также отслеживает вызовы устаревших API.
-
-Кроме того, можно попытаться перенести более мелкие решения или отдельные проекты в формат файла проекта .NET Core с помощью средства [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017).
-
-> [!WARNING]
-> CsprojToVs2017 — это стороннее средство. Нет никакой гарантии, что оно будет поддерживать все проекты. Кроме того, оно может вызвать незначительные изменения в ожидаемом поведении. CsprojToVs2017 следует использовать в качестве _начальной точки_, которая автоматизирует соответствующие основные процессы. Это решение не может гарантировать перенос форматов файлов проекта.
+- [try-convert](https://www.nuget.org/packages/try-convert/) — глобальное средство .NET Core, которое может преобразовать проект или все решение в пакет SDK для .NET, включая перенос настольных приложений в .NET Core. Это не рекомендуется, если у вас более сложная сборка (например, пользовательские задачи, целевые объекты или импорты), так как будут отклоняться многие типы проектов, несовместимые с .NET Core.

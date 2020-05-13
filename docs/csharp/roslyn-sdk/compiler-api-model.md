@@ -3,12 +3,12 @@ title: Концепции пакета SDK для .NET Compiler Platform и об
 description: Этот обзор содержит сведения, необходимые для эффективной работы с пакетом SDK компилятора .NET. Вы узнаете о слоях API, основных используемых типах и общей объектной модели.
 ms.date: 10/10/2017
 ms.custom: mvc
-ms.openlocfilehash: e563260e21fb8807017db90ff63e30fec0415a48
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 529ce6fbdef22964251c8b22abbd5d8aadab633d
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156965"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82975944"
 ---
 # <a name="understand-the-net-compiler-platform-sdk-model"></a>Общие сведения о модели пакета SDK для .NET Compiler Platform
 

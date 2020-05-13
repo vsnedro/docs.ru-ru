@@ -2,20 +2,23 @@
 title: Команда dotnet vstest
 description: Команда dotnet vstest выполняет сборку проекта и всех его зависимостей.
 ms.date: 02/27/2020
-ms.openlocfilehash: e8fa94cf12ca2fe5fb99c6e3c1dcdb52185798c0
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: f7db58f4aab59354b8c69ce0371324c23482dafe
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463288"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82975398"
 ---
 # <a name="dotnet-vstest"></a>dotnet vstest
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 2.1 и более поздних версий
 
+> [!IMPORTANT]
+> Команда `dotnet vstest` заменяется на `dotnet test`, которую теперь можно использовать для запуска сборок. См. раздел [`dotnet test`](dotnet-test.md).
+
 ## <a name="name"></a>name
 
-`dotnet-vstest` — запускает тесты из указанных файлов.
+`dotnet-vstest` — запускает тесты из указанных сборок.
 
 ## <a name="synopsis"></a>Краткий обзор
 
