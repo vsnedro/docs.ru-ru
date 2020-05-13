@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: ed4c6458-0435-44fc-8e78-8ba00be362f2
 topic_type:
 - apiref
-ms.openlocfilehash: 4cd03895b4e33c3e42c71acca12eaf950fc9a145
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 972a981188c36236b81f3da17c09abeeb1e32857
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73138557"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212195"
 ---
-# <a name="icordebuggenericvaluesetvalue-method"></a><span data-ttu-id="c223c-102">Метод ICorDebugGenericValue::SetValue</span><span class="sxs-lookup"><span data-stu-id="c223c-102">ICorDebugGenericValue::SetValue Method</span></span>
-<span data-ttu-id="c223c-103">Копирует новое значение из указанного буфера.</span><span class="sxs-lookup"><span data-stu-id="c223c-103">Copies a new value from the specified buffer.</span></span>  
+# <a name="icordebuggenericvaluesetvalue-method"></a><span data-ttu-id="a2f25-102">Метод ICorDebugGenericValue::SetValue</span><span class="sxs-lookup"><span data-stu-id="a2f25-102">ICorDebugGenericValue::SetValue Method</span></span>
+<span data-ttu-id="a2f25-103">Копирует новое значение из указанного буфера.</span><span class="sxs-lookup"><span data-stu-id="a2f25-103">Copies a new value from the specified buffer.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c223c-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c223c-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a2f25-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a2f25-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetValue (  
@@ -33,18 +33,18 @@ HRESULT SetValue (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="c223c-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="c223c-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="a2f25-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="a2f25-105">Parameters</span></span>  
  `pFrom`  
- <span data-ttu-id="c223c-106">окне Указатель на буфер, из которого копируется значение.</span><span class="sxs-lookup"><span data-stu-id="c223c-106">[in] A pointer to the buffer from which to copy the value.</span></span>  
+ <span data-ttu-id="a2f25-106">окне Указатель на буфер, из которого копируется значение.</span><span class="sxs-lookup"><span data-stu-id="a2f25-106">[in] A pointer to the buffer from which to copy the value.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="c223c-107">Заметки</span><span class="sxs-lookup"><span data-stu-id="c223c-107">Remarks</span></span>  
- <span data-ttu-id="c223c-108">Для ссылочных типов значением является ссылка, а не содержимое.</span><span class="sxs-lookup"><span data-stu-id="c223c-108">For reference types, the value is the reference, not the content.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="a2f25-107">Remarks</span><span class="sxs-lookup"><span data-stu-id="a2f25-107">Remarks</span></span>  
+ <span data-ttu-id="a2f25-108">Для ссылочных типов значением является ссылка, а не содержимое.</span><span class="sxs-lookup"><span data-stu-id="a2f25-108">For reference types, the value is the reference, not the content.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="c223c-109">Требования</span><span class="sxs-lookup"><span data-stu-id="c223c-109">Requirements</span></span>  
- <span data-ttu-id="c223c-110">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="c223c-110">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="a2f25-109">Требования</span><span class="sxs-lookup"><span data-stu-id="a2f25-109">Requirements</span></span>  
+ <span data-ttu-id="a2f25-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a2f25-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="c223c-111">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="c223c-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="a2f25-111">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="a2f25-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="c223c-112">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="c223c-112">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="a2f25-112">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="a2f25-112">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="c223c-113">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c223c-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="a2f25-113">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a2f25-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>

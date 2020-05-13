@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 18217ba1-1776-4297-a3b9-f77e64b0fead
 topic_type:
 - apiref
-ms.openlocfilehash: f30516a8f59b90de9b4c052d92a8c88575ace3c4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3890cb4236f113bc6efc23bfb606d19a525ec234
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178827"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210271"
 ---
-# <a name="icordebugilframegetip-method"></a><span data-ttu-id="a2028-102">Метод ICorDebugILFrame::GetIP</span><span class="sxs-lookup"><span data-stu-id="a2028-102">ICorDebugILFrame::GetIP Method</span></span>
-<span data-ttu-id="a2028-103">Получает значение указателя инструкции и битое комбинированное значение, которое описывает, как было получено значение указателя инструкции.</span><span class="sxs-lookup"><span data-stu-id="a2028-103">Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.</span></span>  
+# <a name="icordebugilframegetip-method"></a><span data-ttu-id="2b3eb-102">Метод ICorDebugILFrame::GetIP</span><span class="sxs-lookup"><span data-stu-id="2b3eb-102">ICorDebugILFrame::GetIP Method</span></span>
+<span data-ttu-id="2b3eb-103">Возвращает значение указателя инструкции и битовое значение сочетания, которое описывает, как было получено значение указателя инструкции.</span><span class="sxs-lookup"><span data-stu-id="2b3eb-103">Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a2028-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a2028-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="2b3eb-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="2b3eb-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetIP (  
@@ -34,23 +34,23 @@ HRESULT GetIP (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="a2028-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="a2028-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="2b3eb-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="2b3eb-105">Parameters</span></span>  
  `pnOffset`  
- <span data-ttu-id="a2028-106">(ваут) Значение указателя инструкции.</span><span class="sxs-lookup"><span data-stu-id="a2028-106">[out] The value of the instruction pointer.</span></span>  
+ <span data-ttu-id="2b3eb-106">заполняет Значение указателя инструкции.</span><span class="sxs-lookup"><span data-stu-id="2b3eb-106">[out] The value of the instruction pointer.</span></span>  
   
  `pMappingResult`  
- <span data-ttu-id="a2028-107">(ваут) Указатель на битную комбинацию значений перечисления CorDebugMappingResult, описывающих, как было получено значение указателя инструкции.</span><span class="sxs-lookup"><span data-stu-id="a2028-107">[out] A pointer to a bitwise combination of the CorDebugMappingResult enumeration values that describe how the value of the instruction pointer was obtained.</span></span>  
+ <span data-ttu-id="2b3eb-107">заполняет Указатель на побитовую комбинацию значений перечисления Кордебугмаппингресулт, описывающих, как было получено значение указателя инструкции.</span><span class="sxs-lookup"><span data-stu-id="2b3eb-107">[out] A pointer to a bitwise combination of the CorDebugMappingResult enumeration values that describe how the value of the instruction pointer was obtained.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="a2028-108">Remarks</span><span class="sxs-lookup"><span data-stu-id="a2028-108">Remarks</span></span>  
- <span data-ttu-id="a2028-109">Значение указателя инструкции — это смещение кадра стека в промежуточный язык функции (MSIL).</span><span class="sxs-lookup"><span data-stu-id="a2028-109">The value of the instruction pointer is the stack frame's offset into the function's Microsoft intermediate language (MSIL) code.</span></span> <span data-ttu-id="a2028-110">Если кадр стека активен, этот адрес является следующей инструкцией для выполнения.</span><span class="sxs-lookup"><span data-stu-id="a2028-110">If the stack frame is active, this address is the next instruction to execute.</span></span> <span data-ttu-id="a2028-111">Если кадр стека не активен, этот адрес является следующей инструкцией для выполнения при повторной активации кадра стека.</span><span class="sxs-lookup"><span data-stu-id="a2028-111">If the stack frame is not active, this address is the next instruction to execute when the stack frame is reactivated.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="2b3eb-108">Remarks</span><span class="sxs-lookup"><span data-stu-id="2b3eb-108">Remarks</span></span>  
+ <span data-ttu-id="2b3eb-109">Значение указателя инструкции является смещением кадра стека в коде MSIL для функции.</span><span class="sxs-lookup"><span data-stu-id="2b3eb-109">The value of the instruction pointer is the stack frame's offset into the function's Microsoft intermediate language (MSIL) code.</span></span> <span data-ttu-id="2b3eb-110">Если кадр стека активен, то этот адрес является следующей инструкцией для выполнения.</span><span class="sxs-lookup"><span data-stu-id="2b3eb-110">If the stack frame is active, this address is the next instruction to execute.</span></span> <span data-ttu-id="2b3eb-111">Если кадр стека неактивен, этот адрес является следующей инструкцией для выполнения при повторной активации кадра стека.</span><span class="sxs-lookup"><span data-stu-id="2b3eb-111">If the stack frame is not active, this address is the next instruction to execute when the stack frame is reactivated.</span></span>  
   
- <span data-ttu-id="a2028-112">Если этот кадр является точно в срок (JIT) скомпилированный кадр, значение указателя инструкции будет определено путем отображения назад от фактического указателя инструкции, так что значение может быть только приблизительным.</span><span class="sxs-lookup"><span data-stu-id="a2028-112">If this frame is a just-in-time (JIT) compiled frame, the value of the instruction pointer will be determined by mapping backwards from the actual native instruction pointer, so the value may be only approximate.</span></span>  
+ <span data-ttu-id="2b3eb-112">Если этот кадр является JIT-скомпилированным кадром, то значение указателя инструкции будет определяться в обратном направлении от фактического указателя инструкций в машинном виде, поэтому значение может быть только приблизительным.</span><span class="sxs-lookup"><span data-stu-id="2b3eb-112">If this frame is a just-in-time (JIT) compiled frame, the value of the instruction pointer will be determined by mapping backwards from the actual native instruction pointer, so the value may be only approximate.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="a2028-113">Требования</span><span class="sxs-lookup"><span data-stu-id="a2028-113">Requirements</span></span>  
- <span data-ttu-id="a2028-114">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a2028-114">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="2b3eb-113">Требования</span><span class="sxs-lookup"><span data-stu-id="2b3eb-113">Requirements</span></span>  
+ <span data-ttu-id="2b3eb-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="2b3eb-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a2028-115">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="a2028-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="2b3eb-115">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="2b3eb-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="a2028-116">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="a2028-116">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="2b3eb-116">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="2b3eb-116">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="a2028-117">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a2028-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="2b3eb-117">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2b3eb-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
