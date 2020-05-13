@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 26a82815-1982-4eb7-92d1-5c3d318d5be4
 topic_type:
 - apiref
-ms.openlocfilehash: aff8fb0a2316817e413f10e82215556f1f54fbc4
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 9270afa1d8c8ddd74cfe6dd05e39c1480f5767e6
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73109627"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83206935"
 ---
 # <a name="icordebugmodulegetbaseaddress-method"></a>Метод ICorDebugModule::GetBaseAddress
 Возвращает базовый адрес модуля.  
@@ -35,18 +35,18 @@ HRESULT GetBaseAddress(
   
 ## <a name="parameters"></a>Параметры  
  `pAddress`  
- заполняет `CORDB_ADDRESS`, указывающий базовый адрес модуля.  
+ заполняет Значение типа `CORDB_ADDRESS` , указывающее базовый адрес модуля.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Если модуль является машинным образом (то есть, если модуль был создан генератором образов в машинном код, NGen. exe), его базовый адрес будет равен нулю.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также

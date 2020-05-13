@@ -2,12 +2,12 @@
 title: Метод ICorDebugProcess6::DecodeEvent
 ms.date: 03/30/2017
 ms.assetid: 1453bc0c-6e0d-4d5a-b176-22607f8a3e6c
-ms.openlocfilehash: a0b77724a5a70461073d554a9794c5a904f6a363
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7c163311f9ce8f3d98ce72f45165a5e517c6c0aa
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178584"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83205504"
 ---
 # <a name="icordebugprocess6decodeevent-method"></a>Метод ICorDebugProcess6::DecodeEvent
 Декодирует события управляемой отладки, которые были инкапсулированы в полезную нагрузку из событий отладки специально созданных собственных исключений.  
@@ -33,16 +33,16 @@ HRESULT DecodeEvent(
  [входной] Количество элементов в массиве байтов `pRecord`.  
   
  `format`  
- (в) [РегистраторRecordFormat](cordebugrecordformat-enumeration.md) перечисляет, который определяет формат неуправляемого события отладки.  
+ окне Элемент перечисления [кордебугрекордформат](cordebugrecordformat-enumeration.md) , указывающий формат неуправляемого события отладки.  
   
  `dwFlags`  
- [входной] Битовое поле, которое зависит от целевой архитектуры и содержит дополнительные сведения о событии отладки. Для систем Windows он может быть участником пересчета [CorDebugDecodeEventFlagsWindows.](cordebugdecodeeventflagswindows-enumeration.md)  
+ [входной] Битовое поле, которое зависит от целевой архитектуры и содержит дополнительные сведения о событии отладки. Для систем Windows он может быть членом перечисления [кордебугдекодивентфлагсвиндовс](cordebugdecodeeventflagswindows-enumeration.md) .  
   
  `dwThreadId`  
  [входной] Идентификатор операционной системы для потока, в котором возникло исключение.  
   
  `ppEvent`  
- (ваут) Указатель на адрес объекта [ICorDebugDebugEvent,](icordebugdebugevent-interface.md) представляющего декодированное управляемое событие отладки.  
+ заполняет Указатель на адрес объекта [ICorDebugDebugEvent](icordebugdebugevent-interface.md) , который представляет декодированное управляемое событие отладки.  
   
 ## <a name="remarks"></a>Remarks  
   
@@ -50,15 +50,15 @@ HRESULT DecodeEvent(
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess6](icordebugprocess6-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

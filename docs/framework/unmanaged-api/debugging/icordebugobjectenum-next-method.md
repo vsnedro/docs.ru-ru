@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 10093e3d-26b6-4ad7-8ef3-bbf66243fc02
 topic_type:
 - apiref
-ms.openlocfilehash: e9b32980a5606629676549905d3c9956633f25b0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 70514464f27d6123a4de1d5800ed016a39541287
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178701"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83207547"
 ---
 # <a name="icordebugobjectenumnext-method"></a>Метод ICorDebugObjectEnum::Next
-Получает относительные виртуальные адреса (РВС) указанного количества объектов из перечисления, начиная с текущего положения.  
+Возвращает относительные виртуальные адреса (RVA) указанного числа объектов из перечисления, начиная с текущей позиции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,18 +41,18 @@ HRESULT Next (
  [in] Количество объектов, которые должны быть получены.  
   
  `objects`  
- (ваут) Массив указателей, каждый из которых указывает на CORDB_ADDRESS объект.  
+ заполняет Массив указателей, каждый из которых указывает на объект CORDB_ADDRESS.  
   
  `pceltFetched`  
- (ваут) Указатель на количество фактически возвращенных объектов. Это значение может `celt` быть нулевым, если он один.  
+ заполняет Указатель на число фактически возвращенных объектов. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также

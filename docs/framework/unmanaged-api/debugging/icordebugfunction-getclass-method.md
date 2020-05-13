@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 27967230-144f-40d3-9e23-961d0241abd9
 topic_type:
 - apiref
-ms.openlocfilehash: 887d207aea3de9296107c041816606b2f5947406
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 7a089831c39c36b0f8a0c7746e95a96e4ddfc5d9
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73124034"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83209400"
 ---
 # <a name="icordebugfunctiongetclass-method"></a>Метод ICorDebugFunction::GetClass
 Возвращает объект ICorDebugClass, представляющий класс, членом которого является эта функция.  
@@ -35,13 +35,13 @@ HRESULT GetClass (
   
 ## <a name="parameters"></a>Параметры  
  `ppClass`  
- заполняет Указатель на адрес объекта `ICorDebugClass`, который представляет класс, или значение null, если эта функция не является членом класса.  
+ заполняет Указатель на адрес `ICorDebugClass` объекта, представляющий класс, или значение null, если эта функция не является членом класса.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

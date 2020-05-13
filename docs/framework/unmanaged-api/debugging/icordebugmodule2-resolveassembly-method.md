@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ddf9085c-7161-44bd-9609-cd2732b9009f
 topic_type:
 - apiref
-ms.openlocfilehash: 0809a149a5a5a5e9adea059140d7b4b456337ef3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e64e39d10d20f63430ffe9d2c4df8643e286a677
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125303"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210043"
 ---
 # <a name="icordebugmodule2resolveassembly-method"></a>Метод ICorDebugModule2::ResolveAssembly
 
@@ -38,21 +38,21 @@ HRESULT ResolveAssembly (
 ## <a name="parameters"></a>Параметры
 
 `tkAssemblyRef`\
-окне Значение `mdToken`, которое ссылается на сборку.
+окне `mdToken`Значение, которое ссылается на сборку.
 
 `ppAssembly`\
 заполняет Указатель на адрес объекта ICorDebugAssembly, который представляет сборку.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Если сборка еще не загружена при вызове `ResolveAssembly`, возвращается значение HRESULT CORDBG_E_CANNOT_RESOLVE_ASSEMBLY.
+Если сборка еще не загружена при `ResolveAssembly` вызове метода, возвращается значение HRESULT, равное CORDBG_E_CANNOT_RESOLVE_ASSEMBLY.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
 **Заголовок:** CorDebug.idl, CorDebug.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

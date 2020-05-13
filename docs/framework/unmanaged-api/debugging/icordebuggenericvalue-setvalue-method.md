@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ed4c6458-0435-44fc-8e78-8ba00be362f2
 topic_type:
 - apiref
-ms.openlocfilehash: 4cd03895b4e33c3e42c71acca12eaf950fc9a145
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 972a981188c36236b81f3da17c09abeeb1e32857
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73138557"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212195"
 ---
 # <a name="icordebuggenericvaluesetvalue-method"></a>Метод ICorDebugGenericValue::SetValue
 Копирует новое значение из указанного буфера.  
@@ -37,14 +37,14 @@ HRESULT SetValue (
  `pFrom`  
  окне Указатель на буфер, из которого копируется значение.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Для ссылочных типов значением является ссылка, а не содержимое.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 937de6a0-6fbf-4ddc-80ea-a6217b73e62b
 topic_type:
 - apiref
-ms.openlocfilehash: e104f8c522af2ee4cd42332b7459f4a2fd185511
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 603ab20b57dc4ba736b0342797d0be649a5bebc4
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76792690"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83207483"
 ---
 # <a name="icordebugobjectvalue-interface"></a>Интерфейс ICorDebugObjectValue
 
@@ -29,29 +29,29 @@ ms.locfileid: "76792690"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetClass](icordebugobjectvalue-getclass-method.md)|Возвращает указатель интерфейса на <xref:System.Type> среды CLR объекта, на который ссылается этот `ICorDebugObjectValue`.|  
+|[Метод GetClass](icordebugobjectvalue-getclass-method.md)|Возвращает указатель интерфейса на общеязыковую среду выполнения (CLR) <xref:System.Type> объекта, `ICorDebugObjectValue` на который ссылается эта ссылка.|  
 |[Метод GetContext](icordebugobjectvalue-getcontext-method.md)|Не реализовано.|  
 |[Метод GetFieldValue](icordebugobjectvalue-getfieldvalue-method.md)|Возвращает указатель интерфейса на объект [ICorDebugValue](icordebugvalue-interface.md) , представляющий значение указанного поля указанного класса.|  
-|[Метод GetManagedCopy](icordebugobjectvalue-getmanagedcopy-method.md)|Устаревшее. Не вызывайте этот метод.|  
+|[Метод GetManagedCopy](icordebugobjectvalue-getmanagedcopy-method.md)|Устаревшее. Этот метод не следует вызывать.|  
 |[Метод GetVirtualMethod](icordebugobjectvalue-getvirtualmethod-method.md)|Не реализовано.|  
-|[Метод IsValueClass](icordebugobjectvalue-isvalueclass-method.md)|Возвращает значение, указывающее, является ли объект, на который ссылается данный `ICorDebugObjectValue`, типом значения.|  
-|[Метод SetFromManagedCopy](icordebugobjectvalue-setfrommanagedcopy-method.md)|Устаревшее. Не вызывайте этот метод.|  
+|[Метод IsValueClass](icordebugobjectvalue-isvalueclass-method.md)|Возвращает значение, указывающее, является ли объект, на который ссылается это, `ICorDebugObjectValue` типом значения.|  
+|[Метод SetFromManagedCopy](icordebugobjectvalue-setfrommanagedcopy-method.md)|Устаревшее. Этот метод не следует вызывать.|  
   
-## <a name="remarks"></a>Заметки  
- `ICorDebugObjectValue` остается действительным до тех пор, пока отлаживаемый процесс не будет продолжен.  
+## <a name="remarks"></a>Remarks  
+ `ICorDebugObjectValue`Остается действительным до тех пор, пока отлаживаемый процесс не будет продолжен.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

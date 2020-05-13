@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4ac7077c-8d88-49c4-b360-b3af0c541c63
 topic_type:
 - apiref
-ms.openlocfilehash: 0666becb5a34688d3f4cf5bddd1e2fa71785b38a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: d00a5f71ac7e47d78deebca0e46350e465964c72
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139789"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210102"
 ---
 # <a name="icordebugprocessenumnext-method"></a>Метод ICorDebugProcessEnum::Next
 Возвращает указанное число экземпляров ICorDebugProcess из перечисления, начиная с текущей позиции.  
@@ -38,19 +38,19 @@ HRESULT Next (
   
 ## <a name="parameters"></a>Параметры  
  `celt`  
- окне Число извлекаемых экземпляров `ICorDebugProcess`.  
+ окне Число `ICorDebugProcess` извлекаемых экземпляров.  
   
  `processes`  
- заполняет Массив указателей, каждый из которых указывает на объект `ICorDebugProcess`, представляющий процесс.  
+ заполняет Массив указателей, каждый из которых указывает на `ICorDebugProcess` объект, представляющий процесс.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращаемых экземпляров `ICorDebugProcess`. Это значение может быть равно null, если `celt` является одним.  
+ заполняет Указатель на число `ICorDebugProcess` фактически возвращенных экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

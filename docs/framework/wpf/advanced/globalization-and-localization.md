@@ -11,15 +11,15 @@ helpviewer_keywords:
 - WPF [WPF], localization
 - Windows Presentation Foundation [WPF], localization
 ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
-ms.openlocfilehash: 80e0bf641c46eb1461769f5a85950982258c78f5
-ms.sourcegitcommit: f8c36054eab877de4d40a705aacafa2552ce70e9
+ms.openlocfilehash: d5e51e86c4c37c882c8a061e60d2d21587d0d3d0
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75559426"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212208"
 ---
 # <a name="globalization-and-localization"></a>Глобализация и локализация
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] предоставляет обширную поддержку для разработки приложений, готовых к международному использованию.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]предоставляет обширную поддержку для разработки приложений, готовых к международному использованию.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Общие сведения о глобализации и локализации WPF](wpf-globalization-and-localization-overview.md)  
@@ -27,9 +27,9 @@ ms.locfileid: "75559426"
  [Обзор использования автоматической разметки](use-automatic-layout-overview.md)  
  [Атрибуты и комментарии локализации](localization-attributes-and-comments.md)  
  [Общие сведения о двусторонних возможностях в WPF](bidirectional-features-in-wpf-overview.md)  
- [Практические руководства](globalization-and-localization-how-to-topics.md)  
+ [Инструкции](how-to-localize-an-application.md)  
   
-## <a name="reference"></a>Справочные сведения  
+## <a name="reference"></a>Справочник  
  <xref:System.Globalization>  
   
  <xref:System.Windows.FrameworkElement.FlowDirection%2A>  

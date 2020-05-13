@@ -10,12 +10,12 @@ api_type:
 ms.assetid: f9dc2afd-df8a-464d-bdbf-5af0a1d4bf85
 topic_type:
 - apiref
-ms.openlocfilehash: 30008d6cc98f7d0d0501d67e18703ed5a344d43a
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 65995e8386b3bc686178b79d4fbb21a7c71bed3e
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76794365"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210336"
 ---
 # <a name="icordebugilcode2-interface"></a>Интерфейс ICorDebugILCode2
 [Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]  
@@ -30,15 +30,15 @@ ms.locfileid: "76794365"
 |[Метод GetLocalVarSigToken](icordebugilcode2-getlocalvarsigtoken-method.md)|Получает маркер метаданных для подписи локальной переменной, предназначенной для представленной этим экземпляром функции.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugILCode](icordebugilcode-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

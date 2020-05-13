@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c8111502-5a20-447f-9dc2-76e8acd7ed5a
 topic_type:
 - apiref
-ms.openlocfilehash: 4b48132ee60bcaebb218d8f583de6558372f5055
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: de570507c4312f09def0908b9d56e5371c63527e
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178608"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83207294"
 ---
 # <a name="icordebugprocess5getobject-method"></a>Метод ICorDebugProcess5::GetObject
 Преобразует адрес объекта в объект "ICorDebugObjectValue".  
@@ -36,24 +36,24 @@ HRESULT GetObject(
   
 ## <a name="parameters"></a>Параметры  
  `addr`  
- (в) Адрес объекта.  
+ окне Адрес объекта.  
   
  `ppObject`  
- (ваут) Указатель на адрес объекта "ICorDebugObjectValue".  
+ заполняет Указатель на адрес объекта "ICorDebugObjectValue".  
   
 ## <a name="remarks"></a>Remarks  
- Если `addr` `GetObject` не указывает на допустимый управляемый объект, метод возвращается. `E_FAIL`  
+ Если не `addr` указывает на допустимый управляемый объект, `GetObject` метод возвращает значение `E_FAIL` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

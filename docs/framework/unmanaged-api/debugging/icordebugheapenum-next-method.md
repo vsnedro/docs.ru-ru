@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2221fd06-9e27-4113-972e-2530db8c3594
 topic_type:
 - apiref
-ms.openlocfilehash: f5af8e559b4fbfeb60530372185ca10104ade987
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5d0b231b4014e60a9e8778c6b9d6ed7758b2d8c5
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178849"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83208477"
 ---
 # <a name="icordebugheapenumnext-method"></a>Метод ICorDebugHeapEnum::Next
-Получает указанное количество [COR_HEAPOBJECT](cor-heapobject-structure.md) экземпляров, содержащих информацию об объектах на управляемой куче.  
+Возвращает указанное число экземпляров [COR_HEAPOBJECT](cor-heapobject-structure.md) , содержащих сведения об объектах в управляемой куче.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,24 +39,24 @@ HRESULT Next(
  [in] Количество объектов, которые должны быть получены.  
   
  объекты  
- (ваут) Массив указателей, каждый из которых указывает на [COR_HEAPOBJECT](cor-heapobject-structure.md) объект, предоставляющий информацию об объекте на управляемой куче.  
+ заполняет Массив указателей, каждый из которых указывает на объект [COR_HEAPOBJECT](cor-heapobject-structure.md) , предоставляющий сведения об объекте в управляемой куче.  
   
  pceltFetched  
- (ваут) Указатель на количество [COR_HEAPOBJECT](cor-heapobject-structure.md) объектов `objects`фактически вернулся в . Это значение может быть `null`, если параметр `celt` имеет значение 1.  
+ заполняет Указатель на число объектов [COR_HEAPOBJECT](cor-heapobject-structure.md) , фактически возвращаемых в `objects` . Это значение может быть `null`, если параметр `celt` имеет значение 1.  
   
 ## <a name="remarks"></a>Remarks  
  Поле `COR_HEAPOBJECT.type` является идентификатором вложенного COM-интерфейса с подсчетом ссылок. Эта ссылка должна быть выпущена вызывающим объектом `ICorDebugHeapEnum::Next`.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugHeapEnum](icordebugheapenum-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

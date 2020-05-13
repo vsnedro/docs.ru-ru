@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 dev_langs:
 - cpp
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
-ms.openlocfilehash: 2c0da899b3f6f3c229c6f5e5b4cafe48fdc19742
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: e54dd051f0dbd9c1964d381c2e05189c375fa66d
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76792171"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210141"
 ---
 # <a name="icordebugprocess8enableexceptioncallbacksoutsideofmycode-method"></a>Метод ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode
 [Поддерживается в .NET Framework 4,6 и более поздних версиях]  
@@ -28,7 +28,7 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
  `enableExceptionsOutsideOfJMC`  
  [in]  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Если `enableExceptionsOutsideOfJMC` имеет значение `false`:  
   
 - Исключение DEBUG_EXCEPTION_FIRST_CHANCE не будет приводить к обратному вызову отладчика.  
@@ -38,15 +38,15 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
  Значением свойства `enableExceptionsOutsideOfJMC` по умолчанию является `true`.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess8](icordebugprocess8-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

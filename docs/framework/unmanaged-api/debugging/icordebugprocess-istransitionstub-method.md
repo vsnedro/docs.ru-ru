@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f7653317-7e48-4163-be03-f50f1a4b0f70
 topic_type:
 - apiref
-ms.openlocfilehash: 852c77be0dc8ef91933bacbbd3d6b3f5a69ae8c8
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ab2121605f974fdf3f9053214a4d29d8b0dd72db
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139387"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83211449"
 ---
 # <a name="icordebugprocessistransitionstub-method"></a>Метод ICorDebugProcess::IsTransitionStub
 Возвращает значение, указывающее, находится ли адрес в заглушке, что приведет к переходу в управляемый код.  
@@ -35,21 +35,21 @@ HRESULT IsTransitionStub(
   
 ## <a name="parameters"></a>Параметры  
  `address`  
- окне Значение `CORDB_ADDRESS`, указывающее адрес в вопросе.  
+ окне `CORDB_ADDRESS`Значение, указывающее рассматриваемый адрес.  
   
  `pbTransitionStub`  
- заполняет Указатель на логическое значение, `true`, если указанный адрес находится внутри заглушки, которая приведет к переходу в управляемый код. в противном случае *`pbTransitionStub` `false`.  
+ заполняет Указатель на логическое значение, равное, `true` если указанный адрес находится внутри заглушки, которая приведет к переходу в управляемый код; в противном случае `pbTransitionStub` — * `false` .  
   
-## <a name="remarks"></a>Заметки  
- Метод `IsTransitionStub` может использоваться неуправляемым пошаговым кодом, чтобы решить, когда следует возвращать управление пошаговым выполнением в управляемое средство Организации.  
+## <a name="remarks"></a>Remarks  
+ `IsTransitionStub`Метод может использоваться неуправляемым кодом пошагового выполнения, чтобы решить, когда следует возвращать контроль пошагового выполнения в управляемое средство Организации.  
   
  Вы также можете идентифицировать заглушки перехода, просмотрев информацию в переносимом исполняемом файле (PE).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

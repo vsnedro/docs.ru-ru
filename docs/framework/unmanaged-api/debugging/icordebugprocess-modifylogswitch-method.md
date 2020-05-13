@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5fd30875-555e-4e96-877b-5dd266cde7c4
 topic_type:
 - apiref
-ms.openlocfilehash: 27e13e298c1be61018a92e53a0ee82c786729c7d
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: c9375854b45432eafb6cc706a1a62f5424e0fee8
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76792588"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210492"
 ---
 # <a name="icordebugprocessmodifylogswitch-method"></a>Метод ICorDebugProcess::ModifyLogSwitch
 Задает уровень серьезности указанного переключателя журнала.  
@@ -40,14 +40,14 @@ HRESULT ModifyLogSwitch(
  `lLevel`  
  окне Уровень серьезности, заданный для указанного переключателя журнала.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Этот метод допустим только после выполнения обратного вызова [ICorDebugManagedCallback:: CreateProcess](icordebugmanagedcallback-createprocess-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

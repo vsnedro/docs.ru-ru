@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 30a39d79-1f10-4328-9c5d-094ed824e2ba
 topic_type:
 - apiref
-ms.openlocfilehash: 263124db75abdc058d26ffb606a13fc711aed8bf
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 1953a3e0492e4cfcdaea761b68ea22cf5a4a8ed7
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76792301"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83205521"
 ---
 # <a name="icordebugprocess5-interface"></a>Интерфейс ICorDebugProcess5
 Расширяет интерфейс ICorDebugProcess для поддержки доступа к управляемой куче, предоставляет сведения о сборке мусора управляемых объектов и определяет, загружает ли отладчик изображения из локального кэша образов в машинном код.  
@@ -41,22 +41,22 @@ ms.locfileid: "76792301"
 |[Метод GetTypeID](icordebugprocess5-gettypeid-method.md)|Возвращает идентификатор типа для объекта по указанному адресу.|  
 |[Метод GetTypeLayout](icordebugprocess5-gettypelayout-method.md)|Возвращает сведения о макете объекта в памяти на основе его идентификатора типа.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Этот интерфейс логически расширяет интерфейсы ICorDebugProcess, ICorDebugProcess2 и [ICorDebugProcess3](icordebugprocess3-interface.md) .  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленный вызов на другом компьютере или другом процессе.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

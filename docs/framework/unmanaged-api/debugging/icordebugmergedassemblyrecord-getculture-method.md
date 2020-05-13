@@ -2,12 +2,12 @@
 title: Метод ICorDebugMergedAssemblyRecord::GetCulture
 ms.date: 03/30/2017
 ms.assetid: 030b2f8c-8c21-40b7-855d-3afa78975a17
-ms.openlocfilehash: ad54a93b16e803170987dd56d8063669f7e67f94
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f73aac169cc048a87aca3bfc325cf8c6243012e9
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178752"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83207856"
 ---
 # <a name="icordebugmergedassemblyrecordgetculture-method"></a>Метод ICorDebugMergedAssemblyRecord::GetCulture
 Возвращает строку с названием языка и региональных параметров сборки.  
@@ -39,15 +39,15 @@ HRESULT GetCulture(
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

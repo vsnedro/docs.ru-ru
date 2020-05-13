@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d508981f-e2b2-445b-a649-69951c22702d
 topic_type:
 - apiref
-ms.openlocfilehash: 4489238df05edef384b4073ee738a184ff8809ff
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 748a44075f7f73e54bab689bcb8865dee2b14946
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178674"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83207840"
 ---
 # <a name="icordebugprocessenumerateappdomains-method"></a>Метод ICorDebugProcess::EnumerateAppDomains
-Перечисляет все области приложений в этом процессе.  
+Перечисляет все домены приложений в этом процессе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,16 +34,16 @@ HRESULT EnumerateAppDomains(
   
 ## <a name="parameters"></a>Параметры  
  `ppAppDomains`  
- (ваут) Указатель на адрес [ICorDebugAppDomainEnum,](icordebugappdomainenum-interface.md) который является регистратором для доменов приложений в этом процессе.  
+ заполняет Указатель на адрес [икордебугаппдомаиненум](icordebugappdomainenum-interface.md) , который является перечислителем для доменов приложений в этом процессе.  
   
 ## <a name="remarks"></a>Remarks  
- Этот метод можно использовать до [вызова ICorDebugManagedCallback::CreateProcess.](icordebugmanagedcallback-createprocess-method.md)  
+ Этот метод можно использовать перед обратным вызовом [ICorDebugManagedCallback:: CreateProcess](icordebugmanagedcallback-createprocess-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

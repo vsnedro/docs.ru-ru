@@ -12,12 +12,12 @@ api_type:
 ms.assetid: cf7a0e00-06ae-47a5-8037-598b26196802
 topic_type:
 - apiref
-ms.openlocfilehash: ac9a4e4b54b302afeae4ede1dd574c15ded3ff12
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: e1fd68cd079b381d941d416831133c54e49ac48a
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788603"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210388"
 ---
 # <a name="icordebugilcodegetehclauses-method"></a>Метод ICorDebugILCode::GetEHClauses
 [Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]  
@@ -35,7 +35,7 @@ HRESULT GetEHClauses(
   
 ## <a name="parameters"></a>Параметры  
  `cClauses`  
- [в] Емкость хранилища массива `clauses`. Дополнительные сведения см. в разделе «Примечания».  
+ [в] Емкость хранилища массива `clauses`. Дополнительные сведения см. в разделе «Примечания».  
   
  `pcClauses`  
  [из] Количество предложений, информация о которых записывается в массив `clauses`.  
@@ -43,19 +43,19 @@ HRESULT GetEHClauses(
  предложения  
  заполняет Массив объектов [кордебужехклаусе](cordebugehclause-structure.md) , содержащих сведения о предложениях обработки исключений, определенных для этого IL.  
   
-## <a name="remarks"></a>Заметки  
- Если `cClauses` имеет значение 0, а `pcClauses` не равно**null**, `pcClauses` задается число доступных предложений обработки исключений. Если значение `cClauses` не равно 0, оно обозначает емкость хранилища массива `clauses`. Когда метод возвращает не пустое значение, `clauses` содержит максимум элементов `cClauses`, а значению `pcClauses` присваивается количество предложений, записанных в массив `clauses` на данный момент.  
+## <a name="remarks"></a>Remarks  
+ Если значение `cClauses` равно 0 и `pcClauses` не равно**null**, то параметру присваивается `pcClauses` число доступных предложений обработки исключений. Если значение `cClauses` не равно 0, оно обозначает емкость хранилища массива `clauses`. Когда метод возвращает не пустое значение, `clauses` содержит максимум элементов `cClauses`, а значению `pcClauses` присваивается количество предложений, записанных в массив `clauses` на данный момент.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugILCode](icordebugilcode-interface.md)
 - [Структура CorDebugEHClause](cordebugehclause-structure.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a95389d3-cf2e-47a4-9805-61426acc6b65
 topic_type:
 - apiref
-ms.openlocfilehash: b97f29b94ed4fad6892697ca1c7ed4a20c99c03e
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 63e3f166c4cbf17f4892dccf770343bfbf6e0284
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793271"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83209751"
 ---
 # <a name="icordebugmanagedcallback3-interface"></a>Интерфейс ICorDebugManagedCallback3
 Предоставляет метод обратного вызова, указывающий, что создано включенное пользовательское уведомление отладчика.  
@@ -30,22 +30,22 @@ ms.locfileid: "76793271"
 |------------|-----------------|  
 |[Метод CustomNotification](icordebugmanagedcallback3-customnotification-method.md)|Указывает, что создано включенное пользовательское уведомление отладчика.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Этот интерфейс является логическим расширением интерфейсов [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) и [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) .  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)

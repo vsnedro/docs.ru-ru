@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bc14f408-b359-4c8c-ade2-888ccdf7261b
 topic_type:
 - apiref
-ms.openlocfilehash: e60d4b128bf03ff81863e0c95815b2c204807583
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 7c5359ddf2c021f77ad1ea0a8579316c3c773fd5
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76794473"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83209790"
 ---
 # <a name="icordebuggenericvalue-interface"></a>Интерфейс ICorDebugGenericValue
 
@@ -32,8 +32,8 @@ ms.locfileid: "76794473"
 |[Метод GetValue](icordebuggenericvalue-getvalue-method.md)|Копирует значение в указанный буфер.|  
 |[Метод SetValue](icordebuggenericvalue-setvalue-method.md)|Копирует новое значение из указанного буфера.|  
   
-## <a name="remarks"></a>Заметки  
- `ICorDebugGenericValue` является подинтерфейсом, так как он не является удаленным.  
+## <a name="remarks"></a>Remarks  
+ `ICorDebugGenericValue`является подинтерфейсом, так как он не является удаленным.  
   
  Для ссылочных типов значение является ссылкой, а не содержимым ссылки.  
   
@@ -43,14 +43,14 @@ ms.locfileid: "76794473"
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

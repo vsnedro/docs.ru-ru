@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 989762c4-3d15-4485-b8ee-69e0fa8ec895
 topic_type:
 - apiref
-ms.openlocfilehash: 29c9d9dde4776ef729c0bbae7b644171a265e3ec
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 86e2b28448caf2a872e44490e8ee4763b056ed44
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137468"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83206966"
 ---
 # <a name="icordebugmodulegetassembly-method"></a>Метод ICorDebugModule::GetAssembly
 Возвращает содержащуюся сборку для этого модуля.  
@@ -38,10 +38,10 @@ HRESULT GetAssembly(
  заполняет Указатель на объект ICorDebugAssembly, представляющий сборку, содержащую этот модуль.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

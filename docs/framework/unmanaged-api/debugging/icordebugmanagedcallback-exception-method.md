@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ab18a509-dff3-4930-b585-bd15e0414176
 topic_type:
 - apiref
-ms.openlocfilehash: 328c10c1895f65b43dc365b1be6b4ec5ef01e720
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 2d0461709accf1a9300c072b62bd58734cb33fb8
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76777350"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83209816"
 ---
 # <a name="icordebugmanagedcallbackexception-method"></a>Метод ICorDebugManagedCallback::Exception
 Уведомляет отладчик о появлении исключения из управляемого кода.  
@@ -43,20 +43,20 @@ HRESULT Exception (
  окне Указатель на объект ICorDebugThread, представляющий поток, в котором было создано исключение.  
   
  `unhandled`  
- окне Если это значение равно `false`, исключение еще не было обработано приложением; в противном случае исключение не обработано, и процесс завершится.  
+ окне Если это значение равно `false` , исключение еще не было обработано приложением; в противном случае исключение не обрабатывается, и процесс завершится.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Конкретное исключение можно получить из объекта потока.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

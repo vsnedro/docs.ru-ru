@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 00ac81e2-a774-422a-bd88-54a4b3c99f73
 topic_type:
 - apiref
-ms.openlocfilehash: d74c5a6f966201c8ca9d2854de2e9986e7f1d0fa
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 3945b1dea62dc0616d669356faf60f0d09cfb084
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131029"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210310"
 ---
 # <a name="icordebugilframeenumeratearguments-method"></a>Метод ICorDebugILFrame::EnumerateArguments
 Возвращает перечислитель для аргументов в этом кадре.  
@@ -37,14 +37,14 @@ HRESULT EnumerateArguments (
  `ppValueEnum`  
  заполняет Указатель на адрес объекта ICorDebugValueEnum, который является перечислителем для аргументов в этом кадре.  
   
-## <a name="remarks"></a>Заметки  
- `EnumerateArguments` Получает перечислитель, который может перечислить аргументы, доступные в кадре вызова, представленном этим объектом ICorDebugILFrame. Список будет содержать аргументы [vararg](/cpp/windows/vararg) (то есть переменное число аргументов), а также аргументы, которые не `vararg`.  
+## <a name="remarks"></a>Remarks  
+ `EnumerateArguments`Возвращает перечислитель, который может перечислить аргументы, доступные в кадре вызова, представленном этим объектом ICorDebugILFrame. Список будет содержать аргументы [vararg](/cpp/windows/vararg) (то есть переменное число аргументов), а также аргументы, которые не являются аргументами `vararg` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

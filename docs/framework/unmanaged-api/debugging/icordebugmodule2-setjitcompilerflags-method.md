@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ea574c84-c622-4589-9a14-b55771af5e06
 topic_type:
 - apiref
-ms.openlocfilehash: b28e457ea0b51d320581c0fbe36574698081ea36
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: f73919634ba15dfd16694676d1389875fc2d79bc
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76792965"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83210193"
 ---
 # <a name="icordebugmodule2setjitcompilerflags-method"></a>Метод ICorDebugModule2::SetJITCompilerFlags
 Задает флаги, управляющие JIT-компиляцией этого ICorDebugModule2.  
@@ -37,18 +37,18 @@ HRESULT SetJITCompilerFlags (
  `dwFlags`  
  окне Побитовое сочетание значений перечисления [CorDebugJITCompilerFlags](cordebugjitcompilerflags-enumeration.md) .  
   
-## <a name="remarks"></a>Заметки  
- Если `dwFlags` значение недопустимо, метод `SetJITCompilerFlags` завершится ошибкой.  
+## <a name="remarks"></a>Remarks  
+ Если `dwFlags` значение недопустимо, `SetJITCompilerFlags` метод завершится ошибкой.  
   
- Метод `SetJITCompilerFlags` можно вызвать только в обратном вызове [ICorDebugManagedCallback:: LoadModule](icordebugmanagedcallback-loadmodule-method.md) для этого модуля. Попытки вызвать его после доставки `ICorDebugManagedCallback::LoadModule`ного обратного вызова завершатся ошибкой.  
+ `SetJITCompilerFlags`Метод может быть вызван только в обратном вызове [ICorDebugManagedCallback:: LoadModule](icordebugmanagedcallback-loadmodule-method.md) для этого модуля. Попытки вызвать его после `ICorDebugManagedCallback::LoadModule` доставки обратного вызова завершатся ошибкой.  
   
- "Изменить и продолжить" не поддерживается на платформах 64-разрядных или Win9x. Поэтому при вызове метода `SetJITCompilerFlags` на любой из этих двух платформ с флагом CORDEBUG_JIT_ENABLE_ENC, установленным в `dwFlags`, метод `SetJITCompilerFlags` и все методы, относящиеся к Edit и Continue, такие как [ICorDebugModule2:: ApplyChanges](icordebugmodule2-applychanges-method.md), завершатся ошибкой.  
+ "Изменить и продолжить" не поддерживается на платформах 64-разрядных или Win9x. Поэтому при вызове `SetJITCompilerFlags` метода для любой из этих двух платформ с флагом CORDEBUG_JIT_ENABLE_ENC, установленным в `dwFlags` , `SetJITCompilerFlags` метод и все методы, относящиеся к Edit и Continue, такие как [ICorDebugModule2:: ApplyChanges](icordebugmodule2-applychanges-method.md), завершатся ошибкой.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

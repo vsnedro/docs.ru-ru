@@ -3,12 +3,12 @@ title: Изучение кода с помощью визуализатора с
 description: Визуализатор синтаксиса предоставляет визуальное средство для изучения моделей, создаваемых для кода пакетом SDK .NET Compiler Platform.
 ms.date: 03/07/2018
 ms.custom: mvc, vs-dotnet
-ms.openlocfilehash: 27e5a1f0b31dd2af2ac779223538b03cdb4db0c5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c7a34fda909bd044a9e65a8353d5626b533730e3
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156991"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82975931"
 ---
 # <a name="explore-code-with-the-roslyn-syntax-visualizer-in-visual-studio"></a>Изучение кода с помощью визуализатора синтаксиса Roslyn в Visual Studio
 
@@ -89,7 +89,7 @@ ms.locfileid: "79156991"
 
 Визуализатор синтаксиса обладает простейшими функциями для просмотра символов и семантической информации. Введите `double x = 1 + 1;` внутри Main() в примере C#. Выберите выражение `1 + 1` в окне редактора кода. Визуализатор выделяет узел **AddExpression**. Щелкните правой кнопкой мыши узел **AddExpression** и выберите команду **View Symbol (if any)** (Просмотреть символ (при наличии)). Обратите внимание, что большинство пунктов меню имеют квалификатор "if any" (при наличии). Визуализатор синтаксиса проверяет свойства узла, включая свойства, которые могут присутствовать не для всех узлов.
 
-Сетка свойств в визуализаторе обновляется, как показано на рисунке ниже: символом для выражения является **SynthesizedIntrinsicOperatorSymbol**, у которого **Вид = Метод**.
+Сетка свойств в визуализаторе обновляется, как показано на рисунке ниже. Символом для выражения является **SynthesizedIntrinsicOperatorSymbol**, у которого **Вид = Метод**.
 
 ![Свойства символов](media/syntax-visualizer/symbol-properties.png)
 

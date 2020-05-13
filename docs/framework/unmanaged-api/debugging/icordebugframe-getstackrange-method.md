@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: fab037cb-fda6-40fb-9367-921e435dd5a0
 topic_type:
 - apiref
-ms.openlocfilehash: 7a35ce025360e0ec8b7085d68e54548026b7c7fc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cacdccf5c27cd1d115134d49e754b4ace2870b72
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178902"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83205163"
 ---
 # <a name="icordebugframegetstackrange-method"></a>Метод ICorDebugFrame::GetStackRange
-Получает абсолютный диапазон адресов этого стека кадра.  
+Возвращает диапазон абсолютных адресов этого кадра стека.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,19 +36,19 @@ HRESULT GetStackRange (
   
 ## <a name="parameters"></a>Параметры  
  `pStart`  
- (ваут) Указатель на `CORDB_ADDRESS` указатель, который определяет начальный адрес кадра `ICorDebugFrame` стека, представленного этим объектом.  
+ заполняет Указатель на объект `CORDB_ADDRESS` , указывающий начальный адрес кадра стека, представленного этим `ICorDebugFrame` объектом.  
   
  `pEnd`  
- (ваут) Указатель на `CORDB_ADDRESS` указатель, который определяет конечный адрес кадра `ICorDebugFrame` стека, представленного этим объектом.  
+ заполняет Указатель на объект `CORDB_ADDRESS` , указывающий конечный адрес кадра стека, представленного этим `ICorDebugFrame` объектом.  
   
 ## <a name="remarks"></a>Remarks  
- Диапазон адресов стека полезен для склеивания взаимосвязанных следов стека, собранных из нескольких двигателей отладки. Числовой диапазон не содержит информации о содержимом кадра стека. Это имеет смысл только для сравнения расположения стек кадра.  
+ Диапазон адресов стека полезен для пиеЦинг вместе чередующихся трассировок стека, собранных из нескольких ядер отладки. Числовой диапазон не предоставляет сведений о содержимом кадра стека. Он имеет смысл только для сравнения расположений в кадрах стека.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
