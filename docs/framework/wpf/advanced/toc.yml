@@ -464,15 +464,14 @@
         - name: Общие сведения о двусторонних возможностях в WPF
           href: bidirectional-features-in-wpf-overview.md
         - name: Практические руководства
-          href: globalization-and-localization-how-to-topics.md
           items:
             - name: Локализация приложения
               href: how-to-localize-an-application.md
-            - name: Использование автоматического макета для создания кнопки
+            - name: Использование автоматической разметки для создания кнопки
               href: how-to-use-automatic-layout-to-create-a-button.md
-            - name: Использование сетки для автоматического макета
+            - name: Использование сетки для автоматической разметки
               href: how-to-use-a-grid-for-automatic-layout.md
-            - name: Использование ResourceDictionary для управления локализуемыми строковыми ресурсами
+            - name: Использование ResourceDictionary для управления ресурсами
               href: how-to-use-a-resourcedictionary-to-manage-localizable-string-resources.md
             - name: Использование ресурсов в локализуемых приложениях
               href: how-to-use-resources-in-localizable-applications.md
