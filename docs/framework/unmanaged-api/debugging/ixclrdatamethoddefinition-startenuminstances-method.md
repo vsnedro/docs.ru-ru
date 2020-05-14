@@ -1,5 +1,5 @@
 ---
-title: Метод IXCLRDataMethodDefinition::StartEnumInstances
+title: 'Метод Иксклрдатамесоддефинитион:: Стартенуминстанцес'
 ms.date: 01/16/2019
 api.name:
 - IXCLRDataMethodDefinition::StartEnumInstances Method
@@ -15,20 +15,20 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 89473f2a6a3da73ee5d172a3700bdb4d624278ff
-ms.sourcegitcommit: 7f616512044ab7795e32806578e8dc0c6a0e038f
+ms.openlocfilehash: 84e0ad392c5fee8377115427482d80543454fff3
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67756297"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397210"
 ---
-# <a name="ixclrdatamethoddefinitionstartenuminstances-method"></a><span data-ttu-id="b6da3-102">Метод IXCLRDataMethodDefinition::StartEnumInstances</span><span class="sxs-lookup"><span data-stu-id="b6da3-102">IXCLRDataMethodDefinition::StartEnumInstances Method</span></span>
+# <a name="ixclrdatamethoddefinitionstartenuminstances-method"></a><span data-ttu-id="99fba-102">Метод Иксклрдатамесоддефинитион:: Стартенуминстанцес</span><span class="sxs-lookup"><span data-stu-id="99fba-102">IXCLRDataMethodDefinition::StartEnumInstances Method</span></span>
 
-<span data-ttu-id="b6da3-103">Предоставляет дескриптор для перечисления экземпляров метода для заданного `IXCLRDataAppDomain`.</span><span class="sxs-lookup"><span data-stu-id="b6da3-103">Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`.</span></span>
+<span data-ttu-id="99fba-103">Предоставляет обработчик для перечисления экземпляров методов для заданного объекта `IXCLRDataAppDomain` .</span><span class="sxs-lookup"><span data-stu-id="99fba-103">Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`.</span></span>
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
-## <a name="syntax"></a><span data-ttu-id="b6da3-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b6da3-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="99fba-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="99fba-104">Syntax</span></span>
 
 ```cpp
 HRESULT StartEnumInstances(
@@ -37,27 +37,27 @@ HRESULT StartEnumInstances(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="b6da3-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="b6da3-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="99fba-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="99fba-105">Parameters</span></span>
 
 `appDomain`\
-<span data-ttu-id="b6da3-106">[in] Домен приложения для перечисления.</span><span class="sxs-lookup"><span data-stu-id="b6da3-106">[in] An AppDomain for the enumeration.</span></span>
+<span data-ttu-id="99fba-106">окне Домен приложения для перечисления.</span><span class="sxs-lookup"><span data-stu-id="99fba-106">[in] An AppDomain for the enumeration.</span></span>
 
 `handle`\
-<span data-ttu-id="b6da3-107">[out] Дескриптор для перечисления экземпляров.</span><span class="sxs-lookup"><span data-stu-id="b6da3-107">[out] A handle for enumerating the instances.</span></span>
+<span data-ttu-id="99fba-107">заполняет Маркер для перечисления экземпляров.</span><span class="sxs-lookup"><span data-stu-id="99fba-107">[out] A handle for enumerating the instances.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b6da3-108">Примечания</span><span class="sxs-lookup"><span data-stu-id="b6da3-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="99fba-108">Remarks</span><span class="sxs-lookup"><span data-stu-id="99fba-108">Remarks</span></span>
 
-<span data-ttu-id="b6da3-109">Указанный метод является частью `IXCLRDataMethodDefinition` интерфейса и соответствует третьем слоте таблицы виртуальных методов.</span><span class="sxs-lookup"><span data-stu-id="b6da3-109">The provided method is part of the `IXCLRDataMethodDefinition` interface and corresponds to the third slot of the virtual method table.</span></span>
+<span data-ttu-id="99fba-109">Предоставленный метод является частью `IXCLRDataMethodDefinition` интерфейса и соответствует 5-сегменту таблицы виртуального метода.</span><span class="sxs-lookup"><span data-stu-id="99fba-109">The provided method is part of the `IXCLRDataMethodDefinition` interface and corresponds to the 5th slot of the virtual method table.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="b6da3-110">Требования</span><span class="sxs-lookup"><span data-stu-id="b6da3-110">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="99fba-110">Требования</span><span class="sxs-lookup"><span data-stu-id="99fba-110">Requirements</span></span>
 
-<span data-ttu-id="b6da3-111">**Платформы:** См. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b6da3-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
-<span data-ttu-id="b6da3-112">**Заголовок.** None</span><span class="sxs-lookup"><span data-stu-id="b6da3-112">**Header:** None</span></span>  
-<span data-ttu-id="b6da3-113">**Библиотека:** None</span><span class="sxs-lookup"><span data-stu-id="b6da3-113">**Library:** None</span></span>  
-<span data-ttu-id="b6da3-114">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span><span class="sxs-lookup"><span data-stu-id="b6da3-114">**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span></span>  
+<span data-ttu-id="99fba-111">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="99fba-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+<span data-ttu-id="99fba-112">**Заголовок:** None</span><span class="sxs-lookup"><span data-stu-id="99fba-112">**Header:** None</span></span>  
+<span data-ttu-id="99fba-113">**Библиотека:** None</span><span class="sxs-lookup"><span data-stu-id="99fba-113">**Library:** None</span></span>  
+<span data-ttu-id="99fba-114">**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span><span class="sxs-lookup"><span data-stu-id="99fba-114">**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="b6da3-115">См. также</span><span class="sxs-lookup"><span data-stu-id="b6da3-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="99fba-115">См. также статью</span><span class="sxs-lookup"><span data-stu-id="99fba-115">See also</span></span>
 
-- [<span data-ttu-id="b6da3-116">Перечисление CLRDataSourceType</span><span class="sxs-lookup"><span data-stu-id="b6da3-116">CLRDataSourceType Enumeration</span></span>](clrdatasourcetype-enumeration.md)
-- [<span data-ttu-id="b6da3-117">Отладка</span><span class="sxs-lookup"><span data-stu-id="b6da3-117">Debugging</span></span>](index.md)
-- [<span data-ttu-id="b6da3-118">Интерфейс IXCLRDataMethodDefinition</span><span class="sxs-lookup"><span data-stu-id="b6da3-118">IXCLRDataMethodDefinition Interface</span></span>](ixclrdatamethoddefinition-interface.md)
+- [<span data-ttu-id="99fba-116">Перечисление Клрдатасаурцетипе</span><span class="sxs-lookup"><span data-stu-id="99fba-116">CLRDataSourceType Enumeration</span></span>](clrdatasourcetype-enumeration.md)
+- [<span data-ttu-id="99fba-117">Отладка</span><span class="sxs-lookup"><span data-stu-id="99fba-117">Debugging</span></span>](index.md)
+- [<span data-ttu-id="99fba-118">Интерфейс IXCLRDataMethodDefinition</span><span class="sxs-lookup"><span data-stu-id="99fba-118">IXCLRDataMethodDefinition Interface</span></span>](ixclrdatamethoddefinition-interface.md)

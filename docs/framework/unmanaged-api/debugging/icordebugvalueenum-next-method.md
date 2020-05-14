@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: f5ef94dd-dfee-49d3-a398-b110f8906dd8
 topic_type:
 - apiref
-ms.openlocfilehash: 09394acb07b8595f99d9ecc873eb0985cdd79316
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: db1721fed6414310556ceac493275e069a781ac8
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134596"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397142"
 ---
-# <a name="icordebugvalueenumnext-method"></a><span data-ttu-id="3b38a-102">Метод ICorDebugValueEnum::Next</span><span class="sxs-lookup"><span data-stu-id="3b38a-102">ICorDebugValueEnum::Next Method</span></span>
-<span data-ttu-id="3b38a-103">Возвращает указанное число экземпляров "ICorDebugValue" из перечисления, начиная с текущей позиции.</span><span class="sxs-lookup"><span data-stu-id="3b38a-103">Gets the specified number of "ICorDebugValue" instances from the enumeration, starting at the current position.</span></span>  
+# <a name="icordebugvalueenumnext-method"></a><span data-ttu-id="20524-102">Метод ICorDebugValueEnum::Next</span><span class="sxs-lookup"><span data-stu-id="20524-102">ICorDebugValueEnum::Next Method</span></span>
+<span data-ttu-id="20524-103">Возвращает указанное число экземпляров "ICorDebugValue" из перечисления, начиная с текущей позиции.</span><span class="sxs-lookup"><span data-stu-id="20524-103">Gets the specified number of "ICorDebugValue" instances from the enumeration, starting at the current position.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3b38a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="3b38a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="20524-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="20524-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT Next (  
@@ -36,23 +36,23 @@ HRESULT Next (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="3b38a-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="3b38a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="20524-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="20524-105">Parameters</span></span>  
  `celt`  
- <span data-ttu-id="3b38a-106">окне Число извлекаемых экземпляров `ICorDebugValue`.</span><span class="sxs-lookup"><span data-stu-id="3b38a-106">[in] The number of `ICorDebugValue` instances to be retrieved.</span></span>  
+ <span data-ttu-id="20524-106">окне Число `ICorDebugValue` извлекаемых экземпляров.</span><span class="sxs-lookup"><span data-stu-id="20524-106">[in] The number of `ICorDebugValue` instances to be retrieved.</span></span>  
   
  `values`  
- <span data-ttu-id="3b38a-107">заполняет Массив указателей, каждый из которых указывает на объект `ICorDebugValue`.</span><span class="sxs-lookup"><span data-stu-id="3b38a-107">[out] An array of pointers, each of which points to an `ICorDebugValue` object.</span></span>  
+ <span data-ttu-id="20524-107">заполняет Массив указателей, каждый из которых указывает на `ICorDebugValue` объект.</span><span class="sxs-lookup"><span data-stu-id="20524-107">[out] An array of pointers, each of which points to an `ICorDebugValue` object.</span></span>  
   
  `pceltFetched`  
- <span data-ttu-id="3b38a-108">заполняет Указатель на число фактически возвращаемых экземпляров `ICorDebugValue`.</span><span class="sxs-lookup"><span data-stu-id="3b38a-108">[out] Pointer to the number of `ICorDebugValue` instances actually returned.</span></span> <span data-ttu-id="3b38a-109">Это значение может быть равно null, если `celt` является одним.</span><span class="sxs-lookup"><span data-stu-id="3b38a-109">This value may be null if `celt` is one.</span></span>  
+ <span data-ttu-id="20524-108">заполняет Указатель на число `ICorDebugValue` фактически возвращенных экземпляров.</span><span class="sxs-lookup"><span data-stu-id="20524-108">[out] Pointer to the number of `ICorDebugValue` instances actually returned.</span></span> <span data-ttu-id="20524-109">Это значение может быть равно NULL `celt` , если равно единице.</span><span class="sxs-lookup"><span data-stu-id="20524-109">This value may be null if `celt` is one.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="3b38a-110">Требования</span><span class="sxs-lookup"><span data-stu-id="3b38a-110">Requirements</span></span>  
- <span data-ttu-id="3b38a-111">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="3b38a-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="20524-110">Требования</span><span class="sxs-lookup"><span data-stu-id="20524-110">Requirements</span></span>  
+ <span data-ttu-id="20524-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="20524-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="3b38a-112">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="3b38a-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="20524-112">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="20524-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="3b38a-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3b38a-113">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="20524-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="20524-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="3b38a-114">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3b38a-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="20524-114">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="20524-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3b38a-115">См. также</span><span class="sxs-lookup"><span data-stu-id="3b38a-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="20524-115">См. также</span><span class="sxs-lookup"><span data-stu-id="20524-115">See also</span></span>
