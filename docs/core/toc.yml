@@ -401,6 +401,8 @@
       href: versions/selection.md
 - name: Каталог идентификаторов сред выполнения (RID)
   href: rid-catalog.md
+- name: Имена манифестов ресурса
+  href: resources/manifest-file-names.md
 - name: Управление зависимостями и их загрузка
   items:
     - name: Управление зависимостями
