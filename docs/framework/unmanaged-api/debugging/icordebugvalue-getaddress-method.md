@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a247c792-45e1-4538-9e1f-b46acca4a463
 topic_type:
 - apiref
-ms.openlocfilehash: 906ca2540e421953b3ce39300aa7b2376f789929
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 467ba53f90081f0c3499fb22acab96b5e380a3f4
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137103"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83395841"
 ---
 # <a name="icordebugvaluegetaddress-method"></a>Метод ICorDebugValue::GetAddress
 Возвращает адрес этого объекта "ICorDebugValue", который находится в процессе отладки.  
@@ -35,18 +35,18 @@ HRESULT GetAddress (
   
 ## <a name="parameters"></a>Параметры  
  `pAddress`  
- заполняет Указатель на объект `CORDB_ADDRESS`, указывающий адрес этого объекта значения.  
+ заполняет Указатель на `CORDB_ADDRESS` объект, указывающий адрес этого объекта значения.  
   
-## <a name="remarks"></a>Заметки  
- Если значение недоступно, возвращается 0 (нуль). Это может произойти, если значение по крайней мере частично находится в регистрах или хранится в обработчике сборщика мусора (`GCHandle`).  
+## <a name="remarks"></a>Remarks  
+ Если значение недоступно, возвращается 0 (нуль). Это может произойти, если значение не меньше частично в регистрах или хранится в обработчике сборщика мусора ( `GCHandle` ).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также

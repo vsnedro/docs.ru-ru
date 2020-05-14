@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d0fdeba3-c195-4ece-8caf-79b1f40025d2
 topic_type:
 - apiref
-ms.openlocfilehash: fc205e347fc39fd486d9b8a3fb256a5d29a980a2
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 83adea3d659eea6d4af9ae364aad18df67e69c03
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73110064"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396624"
 ---
 # <a name="icordebugtypeenumnext-method"></a>Метод ICorDebugTypeEnum::Next
 Возвращает количество экземпляров "ICorDebugType", заданных `celt` из перечисления, начиная с текущей позиции.  
@@ -38,21 +38,21 @@ HRESULT Next (
   
 ## <a name="parameters"></a>Параметры  
  `celt`  
- окне Число извлекаемых экземпляров `ICorDebugType`.  
+ окне Число `ICorDebugType` извлекаемых экземпляров.  
   
  `values`  
- заполняет Массив указателей, каждый из которых указывает на объект `ICorDebugType`.  
+ заполняет Массив указателей, каждый из которых указывает на `ICorDebugType` объект.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращаемых экземпляров `ICorDebugType`. Это значение может быть равно null, если `celt` является одним.  
+ заполняет Указатель на число `ICorDebugType` фактически возвращенных экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: eb9ea96c-5b58-4655-8104-094fc8b393b8
 topic_type:
 - apiref
-ms.openlocfilehash: 2bb6fee00bb99555bc19f35e1250880cc3985f7f
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 980f563d3b11fbfcce48b6d7c05275af520e14f1
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790927"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396506"
 ---
 # <a name="icordebugvariablehomeenumnext-method"></a>Метод ICorDebugVariableHomeEnum:: Next
 Возвращает указанное число экземпляров [ICorDebugVariableHome](icordebugvariablehome-interface.md) , содержащих сведения о локальных переменных и аргументах в функции.  
@@ -51,21 +51,21 @@ HRESULT Next(
 |HRESULT|Описание|  
 |-------------|-----------------|  
 |`S_OK`|Метод завершился успешно.|  
-|`S_FALSE`|Фактическое число полученных экземпляров, как отражается в `pceltFetched`, меньше, чем количество запрошенных экземпляров.|  
+|`S_FALSE`|Фактическое число получаемых экземпляров, как показано в `pceltFetched` , меньше числа запрошенных экземпляров.|  
   
-## <a name="remarks"></a>Заметки  
- Метод [ICorDebugVariableHomeEnum:: Next](icordebugvariablehomeenum-next-method.md) извлекает не более `celt` объектов, начиная с текущей позиции перечислителя. Когда метод возвращает значение, `pceltFetched` содержит фактическое число извлеченных объектов.  
+## <a name="remarks"></a>Remarks  
+ Метод [ICorDebugVariableHomeEnum:: Next](icordebugvariablehomeenum-next-method.md) извлекает максимум `celt` объектов, начиная с текущей позиции перечислителя. При возврате из метода `pceltFetched` содержит фактическое число извлеченных объектов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)
 - [Интерфейс ICorDebugVariableHome](icordebugvariablehome-interface.md)

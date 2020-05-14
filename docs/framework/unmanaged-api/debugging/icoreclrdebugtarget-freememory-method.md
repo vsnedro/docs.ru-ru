@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 98f2a0db-a6ec-4f9b-861d-f82485237d08
 topic_type:
 - apiref
-ms.openlocfilehash: cfa313d286d0decad82f51bcedc582470549c8e1
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 061a2b9990d4b4d6398d0a31b97bc403a5f10de4
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790775"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397169"
 ---
 # <a name="icoreclrdebugtargetfreememory-method"></a>Метод ICoreClrDebugTarget::FreeMemory
 Освобождает память, выделенную методам [ICoreClrDebugTarget:: EnumProcesses](icoreclrdebugtarget-enumprocesses-method.md) и [ICoreClrDebugTarget:: EnumRuntimes](icoreclrdebugtarget-enumruntimes-method.md) .  
@@ -39,7 +39,7 @@ void FreeMemory (
  окне Указатель на массив, возвращаемый методом [ICoreClrDebugTarget:: EnumProcesses](icoreclrdebugtarget-enumprocesses-method.md) или [ICoreClrDebugTarget:: EnumRuntimes](icoreclrdebugtarget-enumruntimes-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   
@@ -47,6 +47,6 @@ void FreeMemory (
   
  **.NET Framework версии:** 3,5 SP1  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICoreClrDebugTarget](icoreclrdebugtarget-interface.md)

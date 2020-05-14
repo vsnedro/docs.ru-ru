@@ -1,5 +1,5 @@
 ---
-title: Метод IXCLRDataMethodInstance::GetILAddressMap
+title: 'Метод Иксклрдатамесодинстанце:: Жетиладдрессмап'
 ms.date: 01/16/2019
 api.name:
 - IXCLRDataMethodInstance::GetILAddressMap Method
@@ -15,16 +15,16 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 66e4768acff7ab735c6ac9e8f8f51a9511f7e371
-ms.sourcegitcommit: 7f616512044ab7795e32806578e8dc0c6a0e038f
+ms.openlocfilehash: 7c4dcf59ce159434d5012120043f5bb548d49731
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67744685"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396820"
 ---
-# <a name="ixclrdatamethodinstancegetiladdressmap-method"></a>Метод IXCLRDataMethodInstance::GetILAddressMap
+# <a name="ixclrdatamethodinstancegetiladdressmap-method"></a>Метод Иксклрдатамесодинстанце:: Жетиладдрессмап
 
-Возвращает IL для сведений о сопоставлении адрес.
+Возвращает IL для сопоставления сведений о сопоставлении.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -41,26 +41,26 @@ HRESULT GetILAddressMap(
 ## <a name="parameters"></a>Параметры
 
 `mapLen`\
-[in] Длина массива предоставленного сопоставления.
+окне Длина указанного массива сопоставлений.
 
 `mapNeeded`\
-[out] Число записей карты, необходимые для метода.
+заполняет Количество записей карт, необходимых методу.
 
 `maps`\
-[out, size_is(mapLen)] Массив для хранения записей карты.
+[out, size_is (Маплен)] Массив для хранения записей сопоставлений.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Указанный метод является частью `IXCLRDataMethodInstance` интерфейса и соответствует 14 слот в таблице виртуального метода.
+Предоставленный метод является частью `IXCLRDataMethodInstance` интерфейса и соответствует 15-слоту таблицы виртуального метода.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
-**Заголовок.** None  
+**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Отладка](index.md)
 - [Интерфейс IXCLRDataMethodInstance](ixclrdatamethodinstance-interface.md)

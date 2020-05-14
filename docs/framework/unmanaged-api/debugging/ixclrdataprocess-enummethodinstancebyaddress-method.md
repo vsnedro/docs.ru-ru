@@ -1,5 +1,5 @@
 ---
-title: IXCLRDataProcess::EnumMethodInstanceByAddress Метод
+title: 'Метод Иксклрдатапроцесс:: Енуммесодинстанцебяддресс'
 ms.date: 01/16/2019
 api.name:
 - IXCLRDataProcess::EnumMethodInstanceByAddress Method
@@ -15,16 +15,16 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: afc5fc377dd45d5e8d4d2d7b3385ca0524df69e1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f3800a5980304394dd648111fe23a3bb0890c575
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176660"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83395110"
 ---
-# <a name="ixclrdataprocessenummethodinstancebyaddress-method"></a>IXCLRDataProcess::EnumMethodInstanceByAddress Метод
+# <a name="ixclrdataprocessenummethodinstancebyaddress-method"></a>Метод Иксклрдатапроцесс:: Енуммесодинстанцебяддресс
 
-Перечисляет экземпляры метода этого процесса, начиная с смещения адреса.
+Перечисляет экземпляры методов этого процесса, начиная с смещения адреса.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -40,22 +40,22 @@ HRESULT EnumMethodInstanceByAddress(
 ## <a name="parameters"></a>Параметры
 
 `handle`\
-(в) Ручка для перечисления экземпляров метода.
+окне Описатель для перечисления экземпляров методов.
 
 `mod`\
-(ваут) Перечисленный экземпляр метода.
+заполняет Экземпляр перечисленного метода.
 
 ## <a name="remarks"></a>Remarks
 
-Предоставляемый метод является `IXCLRDataProcess` частью интерфейса и соответствует 28-му слоту таблицы виртуального метода.
+Предоставленный метод является частью `IXCLRDataProcess` интерфейса и соответствует слоту 29 таблицы виртуальных методов.
 
 ## <a name="requirements"></a>Требования
 
 **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
-**Заголовок:** Нет **библиотеки:** Нет **.NET Рамочные версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+**Заголовок:** Нет **библиотеки:** нет **.NET Framework версий:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Перечисление CLRDataSourceType](clrdatasourcetype-enumeration.md)
-- [Отладки](index.md)
+- [Перечисление Клрдатасаурцетипе](clrdatasourcetype-enumeration.md)
+- [Отладка](index.md)
 - [Интерфейс IXCLRDataProcess](ixclrdataprocess-interface.md)

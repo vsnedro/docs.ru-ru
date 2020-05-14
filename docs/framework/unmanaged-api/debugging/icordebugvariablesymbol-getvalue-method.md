@@ -2,12 +2,12 @@
 title: Метод ICorDebugVariableSymbol::GetValue
 ms.date: 03/30/2017
 ms.assetid: 90abece1-392e-4ade-94a1-30c75b0f7074
-ms.openlocfilehash: 2dc074384d209d0740a1fb0a9a16d96ff355f02b
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: f217f7226d53a27363f66eb90a340fd3604a0217
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790884"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396520"
 ---
 # <a name="icordebugvariablesymbolgetvalue-method"></a>Метод ICorDebugVariableSymbol::GetValue
 Возвращает значение переменной в виде массива байтов.  
@@ -44,21 +44,21 @@ HRESULT GetValue(
  `pValue`  
  [out] Массив байтов, содержащий значение переменной.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

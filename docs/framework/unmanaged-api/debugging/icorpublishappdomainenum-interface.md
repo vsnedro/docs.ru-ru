@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bb798c56-042e-475d-a245-b6fac36d0c07
 topic_type:
 - apiref
-ms.openlocfilehash: 61cac0922423acabef3d47618d98ddf082d071da
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: a48e20413f466e25a9145e9dbf1ba93d90155770
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790674"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397033"
 ---
 # <a name="icorpublishappdomainenum-interface"></a>Интерфейс ICorPublishAppDomainEnum
 Подкласс интерфейса [ICorPublishEnum](icorpublishenum-interface.md) , предоставляющий методы для прохода по коллекции объектов [ICorPublishAppDomain](icorpublishappdomain-interface.md) , которые в данный момент существуют в процессе.  
@@ -28,21 +28,21 @@ ms.locfileid: "76790674"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Next](icorpublishappdomainenum-next-method.md)|Возвращает указанное число экземпляров `ICorPublishAppDomain` из коллекции, начиная с текущей позиции.|  
+|[Метод Next](icorpublishappdomainenum-next-method.md)|Возвращает указанное количество `ICorPublishAppDomain` экземпляров из коллекции, начиная с текущей позиции.|  
   
-## <a name="remarks"></a>Заметки  
- Интерфейс `ICorPublishAppDomainEnum` реализует методы абстрактного интерфейса [ICorPublishEnum](icorpublishenum-interface.md).  
+## <a name="remarks"></a>Remarks  
+ `ICorPublishAppDomainEnum`Интерфейс реализует методы абстрактного интерфейса [ICorPublishEnum](icorpublishenum-interface.md).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Кокласс CorpubPublish](corpubpublish-coclass.md)

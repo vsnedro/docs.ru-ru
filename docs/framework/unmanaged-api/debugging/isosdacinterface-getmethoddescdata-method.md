@@ -1,5 +1,5 @@
 ---
-title: Метод ISOSDacInterface::GetMethodDescData
+title: 'Метод ИсосдаЦинтерфаце:: Жетмесоддескдата'
 ms.date: 01/16/2019
 api.name:
 - ISOSDacInterface::GetMethodDescData Method
@@ -15,16 +15,16 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: ea54fdd83b9470db4a08daceaa695e450f5ca1af
-ms.sourcegitcommit: 7f616512044ab7795e32806578e8dc0c6a0e038f
+ms.openlocfilehash: e4c44379d9db0f5e98f3ca66ec0486961ec2df3a
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67764821"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396949"
 ---
-# <a name="isosdacinterfacegetmethoddescdata-method"></a>Метод ISOSDacInterface::GetMethodDescData
+# <a name="isosdacinterfacegetmethoddescdata-method"></a>Метод ИсосдаЦинтерфаце:: Жетмесоддескдата
 
-Получает данные для заданный указатель MethodDesc.
+Возвращает данные для заданного указателя MethodDesc.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -44,35 +44,35 @@ HRESULT GetMethodDescData(
 ## <a name="parameters"></a>Параметры
 
 `methodDesc`\
-[in] Адрес MethodDesc.
+окне Адрес MethodDesc.
 
 `ip`\
-[in] IP-адрес метода.
+окне IP-адрес метода.
 
 `data`\
-[out] Данные, связанные с MethodDesc, возвращенный внутренним API.
+заполняет Данные, связанные с MethodDesc, возвращаются из внутренних API-интерфейсов.
 
 `cRevertedRejitVersions`\
-[out] Число версий rejit возвращенного в предыдущее состояние.
+заполняет Число восстановленных версий rejit.
 
 `rgRevertedRejitData`\
-[out] Данные, связанные с версиями возвращенного в предыдущее состояние rejit, возвращенный внутренним API.
+заполняет Данные, связанные с возвращенными версиями rejit, возвращенные из внутренних API.
 
 `pcNeededRevertedRejitData`\
-[out] Число байтов, необходимое для хранения данных, связанные с восстанавливаемой версиями ReJit.
+заполняет Число байтов, необходимое для хранения данных, связанных с возвращенными версиями ReJit.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Указанный метод является частью `ISOSDacInterface` интерфейса и соответствует 20 слот в таблице виртуального метода. Чтобы иметь возможность использовать их, [ `CLRDATA_ADDRESS` ](../common-data-types-unmanaged-api-reference.md) должен быть определен как 64-разрядное целое число без знака.
+Предоставленный метод является частью `ISOSDacInterface` интерфейса и соответствует 21-сегменту таблицы виртуального метода. Чтобы иметь возможность использовать их, [`CLRDATA_ADDRESS`](../common-data-types-unmanaged-api-reference.md) необходимо определить как 64-разрядное целое число без знака.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
-**Заголовок.** None  
+**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Отладка](index.md)
 - [Интерфейс ISOSDacInterface](isosdacinterface-interface.md)

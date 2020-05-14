@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 316df866-442d-40cc-b049-45e8adcb65d1
 topic_type:
 - apiref
-ms.openlocfilehash: 4b55ac1d895bfecbe74be447bd06f4aa22b9d04f
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: fc8269d4cc22ab53569edaa48c27b4a01970dcc7
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790795"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397173"
 ---
 # <a name="icoreclrdebugtargetenumruntimes-method"></a>Метод ICoreClrDebugTarget::EnumRuntimes
 Перечисляет среды CLR в указанном процессе, который выполняется на удаленном компьютере.  
@@ -49,7 +49,7 @@ HRESULT EnumRuntimes (
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK  
- Выполнено.  
+ Успешно.  
   
  S_FALSE  
  `dwInternalProcessID` не соответствует ни одному процессу, который выполняется на компьютере, возможно потому, что этот процесс был завершен. `pcRuntimes` и `ppRuntimes` будут иметь значение null.  
@@ -60,11 +60,11 @@ HRESULT EnumRuntimes (
  E_FAIL (или другие коды возврата E_)  
  Прочие сбои.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Чтобы освободить память, выделенную этим методом, вызовите метод [ICoreClrDebugTarget:: FreeMemory](icoreclrdebugtarget-freememory-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   
@@ -72,6 +72,6 @@ HRESULT EnumRuntimes (
   
  **.NET Framework версии:** 3,5 SP1  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICoreClrDebugTarget](icoreclrdebugtarget-interface.md)

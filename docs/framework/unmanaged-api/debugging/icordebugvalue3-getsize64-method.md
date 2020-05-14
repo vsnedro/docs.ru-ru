@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fee56a29-3154-4192-958d-71da2ced3740
 topic_type:
 - apiref
-ms.openlocfilehash: 7ae06d825565faff70b0c8be2ccbee5228737e41
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 6eb26de83a6cdce47477e6cb3dffd6a94d889975
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791104"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397026"
 ---
 # <a name="icordebugvalue3getsize64-method"></a>Метод ICorDebugValue3::GetSize64
 Возвращает размер данного объекта [ICorDebugValue3](icordebugvalue3-interface.md) в байтах.  
@@ -37,21 +37,21 @@ HRESULT GetSize64(
  псизе  
  заполняет Указатель на размер данного объекта в байтах.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Если этот тип значения является ссылочным, этот метод возвращает размер указателя, а не размер объекта.  
   
- Метод `ICorDebugValue3::GetSize` отличается от метода [ICorDebugValue:: resize](icordebugvalue-getsize-method.md) в типе выходного параметра. В [ICorDebugValue::-size](icordebugvalue-getsize-method.md)выходной параметр является `ULONG32`; в `ICorDebugValue3::GetSize`это `ULONG64`. Это позволяет интерфейсу [ICorDebugValue3](icordebugvalue3-interface.md) сообщать размер массивов, ПРЕВЫШАЮЩИХ 2 ГБ.  
+ `ICorDebugValue3::GetSize`Метод отличается от метода [ICorDebugValue:: resize](icordebugvalue-getsize-method.md) в типе выходного параметра. В [ICorDebugValue::-size](icordebugvalue-getsize-method.md)параметр Output имеет значение `ULONG32` ; в, а `ICorDebugValue3::GetSize` — `ULONG64` . Это позволяет интерфейсу [ICorDebugValue3](icordebugvalue3-interface.md) сообщать размер массивов, ПРЕВЫШАЮЩИХ 2 ГБ.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorDebugValue3](icordebugvalue3-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

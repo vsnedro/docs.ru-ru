@@ -1,5 +1,5 @@
 ---
-title: Метод IXCLRDataProcess::StartEnumMethodInstancesByAddress
+title: 'Метод Иксклрдатапроцесс:: Стартенуммесодинстанцесбяддресс'
 ms.date: 01/16/2019
 api.name:
 - IXCLRDataProcess::StartEnumMethodInstancesByAddress Method
@@ -15,16 +15,16 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: d7c395e68ad5d8042f9850f25757a5aa445e5c40
-ms.sourcegitcommit: 7f616512044ab7795e32806578e8dc0c6a0e038f
+ms.openlocfilehash: e28fa73300e147ac07a2d325fbf517480bb73797
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67752685"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83394938"
 ---
-# <a name="ixclrdataprocessstartenummethodinstancesbyaddress-method"></a>Метод IXCLRDataProcess::StartEnumMethodInstancesByAddress
+# <a name="ixclrdataprocessstartenummethodinstancesbyaddress-method"></a>Метод Иксклрдатапроцесс:: Стартенуммесодинстанцесбяддресс
 
-Предоставляет дескриптор для перечисления экземпляров метод `AppDomain` начиная с данного адреса.
+Предоставляет описатель для перечисления экземпляров методов, `AppDomain` начиная с заданного адреса.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -41,27 +41,27 @@ HRESULT StartEnumMethodInstancesByAddress(
 ## <a name="parameters"></a>Параметры
 
 `address`\
-[in] Адрес первого экземпляра метода.
+окне Адрес первого экземпляра метода.
 
 `appDomain`\
-[in] Домен приложения экземпляров метода.
+окне AppDomain экземпляров метода.
 
 `handle`\
-[out] Дескриптор для перечисления экземпляров метода.
+заполняет Описатель для перечисления экземпляров методов.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Указанный метод является частью `IXCLRDataProcess` интерфейса и соответствует 27 слот в таблице виртуального метода.
+Предоставленный метод является частью `IXCLRDataProcess` интерфейса и соответствует 28-го слоту таблицы виртуального метода.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
-**Заголовок.** None  
+**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Перечисление CLRDataSourceType](clrdatasourcetype-enumeration.md)
+- [Перечисление Клрдатасаурцетипе](clrdatasourcetype-enumeration.md)
 - [Отладка](index.md)
 - [Интерфейс IXCLRDataProcess](ixclrdataprocess-interface.md)

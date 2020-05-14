@@ -1,5 +1,5 @@
 ---
-title: Метод ISOSDacInterface::GetMethodDescPtrFromIP
+title: 'Метод ИсосдаЦинтерфаце:: Жетмесоддескптрфромип'
 ms.date: 02/01/2019
 api.name:
 - ISOSDacInterface::GetMethodDescPtrFromIP Method
@@ -15,16 +15,16 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: cd256250021436e611142de11c3625a21aeec814
-ms.sourcegitcommit: 7f616512044ab7795e32806578e8dc0c6a0e038f
+ms.openlocfilehash: 0c8d91c11205e06857b4a6e7edfedcd087270d00
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67764740"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396931"
 ---
-# <a name="isosdacinterfacegetmethoddescptrfromip-method"></a>Метод ISOSDacInterface::GetMethodDescPtrFromIP
+# <a name="isosdacinterfacegetmethoddescptrfromip-method"></a>Метод ИсосдаЦинтерфаце:: Жетмесоддескптрфромип
 
-Извлекает указатель MethodDesc, соответствующий метод, содержащий адрес заданной инструкции машинного кода.
+Получает указатель MethodDesc, соответствующий методу, содержащему указанный адрес собственной инструкции.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -40,23 +40,23 @@ HRESULT GetMethodDescPtrFromIP(
 ## <a name="parameters"></a>Параметры
 
 `ip`\
-[in] Адрес в пределах метода во время выполнения.
+окне Адрес в методе во время выполнения.
 
 `ppMD`\
-[out] Адрес `MethodDesc` для конкретного метода.
+заполняет Адрес `MethodDesc` для конкретного метода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Указанный метод является частью [ `ISOSDacInterface` интерфейс](isosdacinterface-interface.md) и соответствует 21 слот в таблице виртуального метода.
+Предоставленный метод является частью [ `ISOSDacInterface` интерфейса](isosdacinterface-interface.md) и соответствует слоту 22 таблицы виртуальных методов.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
-**Заголовок.** None  
+**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Отладка](index.md)
 - [Интерфейс ISOSDacInterface](isosdacinterface-interface.md)

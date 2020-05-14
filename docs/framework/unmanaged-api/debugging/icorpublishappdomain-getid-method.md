@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 229437e3-1465-4bd8-8846-9804b2488133
 topic_type:
 - apiref
-ms.openlocfilehash: 8d6e130981693268ae5c2cd615036b84ca8ed2d8
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 36c5c674f3cdf867107b9ee85a5befadc9246d78
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790697"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396307"
 ---
 # <a name="icorpublishappdomaingetid-method"></a>Метод ICorPublishAppDomain::GetID
 Возвращает уникальный идентификатор для этого [ICorPublishAppDomain](icorpublishappdomain-interface.md).  
@@ -37,18 +37,18 @@ HRESULT GetID (
  `puId`  
  заполняет Указатель на идентификатор домена приложения.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Идентификатор уникален только в области содержащего его процесса.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorPublishAppDomain](icorpublishappdomain-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 88027c55-8ec6-4f1e-a55b-7eefdbbc3515
 topic_type:
 - apiref
-ms.openlocfilehash: 5d33c917ab814083ec2f3a3f3de6bdc264d90b77
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 8874deede8b46b93df0e298fb3970fa153b51415
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791008"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396563"
 ---
 # <a name="icordebugvariablehomegetlocationtype-method"></a>Метод ICorDebugVariableHome:: Жетлокатионтипе
 Возвращает тип собственного расположения переменной.  
@@ -38,15 +38,15 @@ HRESULT GetLocationType(
  заполняет Указатель на тип собственного расположения переменной.  Дополнительные сведения см. в описании перечисления [вариаблелокатионтипе](variablelocationtype-enumeration.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorDebugVariableHome](icordebugvariablehome-interface.md)
 - [Перечисление VariableLocationType](variablelocationtype-enumeration.md)

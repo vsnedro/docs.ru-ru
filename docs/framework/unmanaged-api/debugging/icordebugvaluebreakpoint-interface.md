@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c02338fe-da6c-467f-9567-70ebb387e901
 topic_type:
 - apiref
-ms.openlocfilehash: e1bb5a6fd0550f7c25d46fa31ca11a10cec54986
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 1183f9f6d1ac221b20767f0a1bab15b3e9665a61
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76791073"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396611"
 ---
 # <a name="icordebugvaluebreakpoint-interface"></a>Интерфейс ICorDebugValueBreakpoint
 Расширяет интерфейс Икордебугбреакпоинт для предоставления доступа к конкретным значениям.  
@@ -30,20 +30,20 @@ ms.locfileid: "76791073"
 |------------|-----------------|  
 |[Метод GetValue](icordebugvaluebreakpoint-getvalue-method.md)|Возвращает указатель интерфейса на объект ICorDebugValue, представляющий значение объекта, для которого задана точка останова.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейсы отладки](debugging-interfaces.md)

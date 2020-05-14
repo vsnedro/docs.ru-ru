@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
 topic_type:
 - apiref
-ms.openlocfilehash: 190671b4f690f8c2cad43cf446a1196985ec5a42
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: c44a12ef377d29e0b33b8be86aa1d8f0aa9d26bd
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790755"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397155"
 ---
 # <a name="icoreclrdebugtarget-interface"></a>Интерфейс ICoreClrDebugTarget
 Предоставляет методы, управляющие счетчиком ссылок, перечисление процессов и освобождение памяти, связанной с отладчиком, который подключен к удаленному целевому объекту Macintosh Silverlight.  
@@ -55,11 +55,11 @@ class ICoreClrDebugTarget {
 |[Метод ICoreClrDebugTarget::EnumRuntimes](icoreclrdebugtarget-enumruntimes-method.md)|Перечисляет общеязыковые среды выполнения (CLR) в указанном процессе на удаленном компьютере.|  
 |[Метод ICoreClrDebugTarget::FreeMemory](icoreclrdebugtarget-freememory-method.md)|Освобождает память, выделенную методами перечисления в этом классе.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  В настоящее время эта функция поддерживается только для отладки целевого объекта приложения на основе Silverlight, который выполняется на удаленном компьютере Macintosh.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   
@@ -67,7 +67,7 @@ class ICoreClrDebugTarget {
   
  **.NET Framework версии:** 3,5 SP1  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

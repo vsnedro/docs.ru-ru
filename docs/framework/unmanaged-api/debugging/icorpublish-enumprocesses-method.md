@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4ae765f0-93b2-4b6f-aea1-7b0cf44e04a7
 topic_type:
 - apiref
-ms.openlocfilehash: 5f785b22a3fbda6403c124ec70757b16f5335907
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 70255a89cee13abfe63b01351f8ffba51e54665a
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790759"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396401"
 ---
 # <a name="icorpublishenumprocesses-method"></a>Метод ICorPublish::EnumProcesses
 Возвращает перечислитель для управляемых процессов, выполняющихся на этом компьютере.  
@@ -41,20 +41,20 @@ HRESULT EnumProcesses (
  `ppIEnum`  
  Указатель на адрес экземпляра [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) , который является перечислителем процессов.  
   
-## <a name="remarks"></a>Заметки  
- Коллекция процессов перечислителя основана на моментальном снимке процессов, выполняемых при вызове метода `EnumProcesses`. Перечислитель не будет включать процессы, которые завершаются до или после вызова `EnumProcesses`.  
+## <a name="remarks"></a>Remarks  
+ Коллекция процессов перечислителя основана на моментальном снимке процессов, выполняемых при `EnumProcesses` вызове метода. Перечислитель не будет включать процессы, которые завершаются до или запуска после `EnumProcesses` вызова.  
   
- Метод `EnumProcesses` может быть вызван более одного раза в этом экземпляре [ICorPublish](icorpublish-interface.md) для создания новой актуальной коллекции процессов. Последующие вызовы метода `EnumProcesses` не будут затронуты существующими коллекциями.  
+ `EnumProcesses`Метод может быть вызван более одного раза в этом экземпляре [ICorPublish](icorpublish-interface.md) для создания новой актуальной коллекции процессов. Последующие вызовы метода не будут затронуты существующими коллекциями `EnumProcesses` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorPublish](icorpublish-interface.md)
