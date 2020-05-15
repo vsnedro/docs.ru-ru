@@ -2,13 +2,13 @@
 title: Критические изменения, миграция с .NET Framework на .NET Core
 titleSuffix: ''
 description: Список критических изменений, миграция с .NET Framework на .NET Core.
-ms.date: 12/18/2019
-ms.openlocfilehash: f712be14d7debc4b3008f8459e6ee925754b25f0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 05/05/2020
+ms.openlocfilehash: bb18e38fecc0805dfafe6a16c853ae04fd2a2913
+ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77449412"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82859942"
 ---
 # <a name="breaking-changes-for-migration-from-net-framework-to-net-core"></a>Критические изменения для миграции с .NET Framework на .NET Core
 
@@ -17,10 +17,12 @@ ms.locfileid: "77449412"
 > [!NOTE]
 > Эта статья не является исчерпывающим списком критических изменений между .NET Framework и .NET Core. Здесь добавляются самые важные критические изменения, как только мы о них узнаем.
 
-## <a name="corefx"></a>CoreFX
+## <a name="core-net-libraries"></a>Библиотеки Core .NET
 
 - [Изменено значение по умолчанию для UseShellExecute](#change-in-default-value-of-useshellexecute)
 - [Исключение UnauthorizedAccessException, вызванное FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
+- [Обработка исключений с поврежденным состоянием процесса не поддерживается](#handling-corrupted-state-exceptions-is-not-supported)
+- [Для свойств UriBuilder больше не добавляются начальные символы](#uribuilder-properties-no-longer-prepend-leading-characters)
 
 ### <a name="net-core-21"></a>.NET Core 2.1
 
@@ -34,6 +36,14 @@ ms.locfileid: "77449412"
 
 ***
 
+[!INCLUDE [corrupted-state-exceptions](~/includes/core-changes/corefx/1.0/corrupted-state-exceptions.md)]
+
+***
+
+[!INCLUDE [uribuilder-behavior-changes](../../../includes/core-changes/corefx/1.0/uribuilder-behavior-changes.md)]
+
+***
+
 ## <a name="cryptography"></a>Шифрование
 
 - [Логический параметр SignedCms.ComputeSignature учитывается](#boolean-parameter-of-signedcmscomputesignature-is-respected)
@@ -41,6 +51,16 @@ ms.locfileid: "77449412"
 ### <a name="net-core-21"></a>.NET Core 2.1
 
 [!INCLUDE [Boolean parameter of SignedCms.ComputeSignature is respected](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
+
+***
+
+## <a name="networking"></a>Сети
+
+- [WebClient.CancelAsync не всегда сразу отменяет запрос](#webclientcancelasync-doesnt-always-cancel-immediately)
+
+### <a name="net-core-20"></a>.NET Core 2.0;
+
+[!INCLUDE [behavior-change-webclient-cancelasync](../../../includes/core-changes/networking/2.0/behavior-change-webclient-cancelasync.md)]
 
 ***
 
@@ -128,7 +148,7 @@ ms.locfileid: "77449412"
 
 ***
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [API, которые всегда создают исключения в .NET Core](unsupported-apis.md)
 - [Технологии .NET Framework, недоступные в .NET Core](../porting/net-framework-tech-unavailable.md)

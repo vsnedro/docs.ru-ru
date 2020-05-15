@@ -3,12 +3,12 @@ title: Использование модели синтаксиса пакета
 description: Данный обзор описывает типы, используемые для получения сведений о синтаксических узлах и управления ими.
 ms.date: 10/15/2017
 ms.custom: mvc
-ms.openlocfilehash: fc1b1f5ae5ec985425c8d6aec49ef7f830ea9162
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 87b79c3af4958299fcd966dcc4b04868f88675c7
+ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75740475"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "82975918"
 ---
 # <a name="work-with-syntax"></a>Работа с синтаксисом
 
