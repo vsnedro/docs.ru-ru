@@ -86,9 +86,11 @@
       items:
         - name: 'Безопасность Azure для приложений, ориентированных на облако'
           href: azure-security.md
-    - name: 'Средства DevOps, ориентированные на облако'
+    - name: DevOps
       href: devops.md
       items:
+        - name: Флаги компонентов
+          href: feature-flags.md
         - name: Инфраструктура как код
           href: infrastructure-as-code.md
         - name: 'Пакеты приложений, ориентированных на облако'
