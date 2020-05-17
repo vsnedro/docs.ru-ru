@@ -53,7 +53,7 @@ ms.locfileid: "79167548"
   
 - <span data-ttu-id="89de5-125">Индексаторы могут иметь более одного формального параметра, например при доступе к двумерному массиву.</span><span class="sxs-lookup"><span data-stu-id="89de5-125">Indexers can have more than one formal parameter, for example, when accessing a two-dimensional array.</span></span>  
   
-## <a name="BKMK_RelatedSections"></a> <span data-ttu-id="89de5-126">См. также</span><span class="sxs-lookup"><span data-stu-id="89de5-126">Related Sections</span></span>  
+## <a name="related-sections"></a><a name="BKMK_RelatedSections"></a> <span data-ttu-id="89de5-126">См. также</span><span class="sxs-lookup"><span data-stu-id="89de5-126">Related Sections</span></span>  
   
 - [<span data-ttu-id="89de5-127">Использование индексаторов</span><span class="sxs-lookup"><span data-stu-id="89de5-127">Using Indexers</span></span>](./using-indexers.md)  
   
