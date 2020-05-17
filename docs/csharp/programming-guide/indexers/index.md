@@ -53,7 +53,7 @@ ms.locfileid: "79167548"
   
 - Индексаторы могут иметь более одного формального параметра, например при доступе к двумерному массиву.  
   
-## <a name="BKMK_RelatedSections"></a> См. также  
+## <a name="related-sections"></a><a name="BKMK_RelatedSections"></a> См. также  
   
 - [Использование индексаторов](./using-indexers.md)  
   
