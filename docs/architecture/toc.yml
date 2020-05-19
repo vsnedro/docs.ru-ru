@@ -15,6 +15,8 @@
       href: microservices/
     - name: 'Бессерверные приложения: Архитектура, шаблоны и реализация в Azure'
       href: serverless/
+    - name: "Модернизация классических приложений для Windows\_10 с помощью .NET Core\_3.1"
+      href: modernize-desktop/
 - name: Просмотреть электронные книги
   expanded: true
   items:
