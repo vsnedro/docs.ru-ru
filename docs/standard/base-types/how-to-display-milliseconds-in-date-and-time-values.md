@@ -26,7 +26,7 @@ ms.locfileid: "74960405"
   
 1. Если вы работаете со строковым представлением даты, преобразуйте ее в значение типа <xref:System.DateTime> или <xref:System.DateTimeOffset>, используя статичный метод <xref:System.DateTime.Parse%28System.String%29?displayProperty=nameWithType> или <xref:System.DateTimeOffset.Parse%28System.String%29?displayProperty=nameWithType>.  
   
-2. Чтобы извлечь строковое представление компонента миллисекунд, вызовите метод <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType>или <xref:System.DateTimeOffset.ToString%2A> для значения даты и времени, передав ему в параметре `fff` шаблон пользовательского формата `FFF` или `format`, отдельно или с другим описателем пользовательского формата.  
+2. Чтобы извлечь строковое представление компонента миллисекунд, вызовите метод <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType>или <xref:System.DateTimeOffset.ToString%2A> для значения даты и времени, передав ему в параметре `format` шаблон пользовательского формата `fff` или `FFF`, отдельно или с другим описателем пользовательского формата.  
   
 ## <a name="example"></a>Пример  
  Этот пример выводит в консоль компонент миллисекунд <xref:System.DateTime> и значение <xref:System.DateTimeOffset>, как отдельно, так и в составе более длинной строки даты и времени.  

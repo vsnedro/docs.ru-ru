@@ -147,7 +147,7 @@ Public Function IsPrime(candidate As Integer) As Boolean
 End Function
 ```
 
-Выполните команду *еще раз в каталоге*unit-testing-vb-nunit`dotnet test`. Команда `dotnet test` запускает сборку для проекта `PrimeService` и затем для проекта `PrimeService.Tests`. После сборки обоих проектов она запускает этот отдельный тест. Он выполняется.
+Выполните команду `dotnet test` еще раз в каталоге *unit-testing-vb-nunit*. Команда `dotnet test` запускает сборку для проекта `PrimeService` и затем для проекта `PrimeService.Tests`. После сборки обоих проектов она запускает этот отдельный тест. Он выполняется.
 
 ## <a name="adding-more-features"></a>Добавление дополнительных возможностей
 

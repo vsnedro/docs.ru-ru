@@ -50,7 +50,7 @@ ms.locfileid: "77501801"
 
 Секреты, хранящиеся в диспетчере секретов, используются в приложении путем вызова `AddUserSecrets<T>` в экземпляре ConfigurationBuilder, чтобы включить секреты приложения в его конфигурацию. Общий параметр T должен обозначать тип в сборке, к которой применяется UserSecretId. Как правило, можно использовать `AddUserSecrets<Startup>`.
 
-`AddUserSecrets<Startup>()` относится к параметрам по умолчанию для среды разработки, если в `CreateDefaultBuilder`Program.cs*используется метод*.
+`AddUserSecrets<Startup>()` относится к параметрам по умолчанию для среды разработки, если в *Program.cs* используется метод `CreateDefaultBuilder`.
 
 >[!div class="step-by-step"]
 >[Назад](authorization-net-microservices-web-applications.md)

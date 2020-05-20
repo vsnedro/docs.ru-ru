@@ -43,7 +43,7 @@ ms.locfileid: "74345599"
   
      [!code-vb[VbVbalrMyComputer#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#42)]  
   
-7. Добавьте в оператор `Else` блок `If` — он будет использоваться, если строка уже прочитана. Этот блок прикрепляет строку из последовательного порта к возвращаемой строке.  
+7. Добавьте в оператор `If` блок `Else` — он будет использоваться, если строка уже прочитана. Этот блок прикрепляет строку из последовательного порта к возвращаемой строке.  
   
      [!code-vb[VbVbalrMyComputer#43](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#43)]  
   

@@ -28,7 +28,7 @@ ms.locfileid: "74353614"
 
      Методы <xref:System.Diagnostics.TraceListener.Write%2A> и <xref:System.Diagnostics.TraceListener.WriteLine%2A>, которые нужны для базового класса, используют `MsgBox` для отображения входных данных.
 
-     К методам <xref:System.Security.Permissions.HostProtectionAttribute> и <xref:System.Diagnostics.TraceListener.Write%2A> применяется атрибут <xref:System.Diagnostics.TraceListener.WriteLine%2A>, чтобы их атрибуты соответствовали методы базового класса. Атрибут <xref:System.Security.Permissions.HostProtectionAttribute> позволяет узлу, на котором выполняется код, проверять наличие в коде синхронизации защиты узла.
+     К методам <xref:System.Diagnostics.TraceListener.Write%2A> и <xref:System.Diagnostics.TraceListener.WriteLine%2A> применяется атрибут <xref:System.Security.Permissions.HostProtectionAttribute>, чтобы их атрибуты соответствовали методы базового класса. Атрибут <xref:System.Security.Permissions.HostProtectionAttribute> позволяет узлу, на котором выполняется код, проверять наличие в коде синхронизации защиты узла.
 
     > [!NOTE]
     > Атрибут <xref:System.Security.Permissions.HostProtectionAttribute> действует только для неуправляемых приложений, на которых размещена среда CLR и реализована защита узлов, например для SQL Server.
@@ -45,7 +45,7 @@ ms.locfileid: "74353614"
 
 3. Выберите поле **Подписать сборку**.
 
-4. В раскрывающемся списке **Выберите файл ключа строгого имени\< щелкните** **Новый...>** .
+4. В раскрывающемся списке **Выберите файл ключа строгого имени** щелкните **\<Новый...>**.
 
      Откроется диалоговое окно **Создание ключа строгого имени**.
 

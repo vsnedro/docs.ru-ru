@@ -51,7 +51,7 @@ ms.locfileid: "75635942"
   
  [!code-csharp[csLINQGettingStarted#24](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#24)]  
   
- Для применения нужного числа выражений фильтра в предложении `AND` можно использовать знакомые логические операторы C# `OR` и `where`. Например, для получения только заказчиков из Лондона `AND` с именем Devon следует написать следующий код:  
+ Для применения нужного числа выражений фильтра в предложении `where` можно использовать знакомые логические операторы C# `AND` и `OR`. Например, для получения только заказчиков из Лондона `AND` с именем Devon следует написать следующий код:  
   
  [!code-csharp[csLINQGettingStarted#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#25)]  
   

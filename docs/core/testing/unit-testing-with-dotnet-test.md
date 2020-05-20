@@ -97,7 +97,7 @@ ms.locfileid: "78240900"
   dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
   ```
 
-* Добавьте в проект `PrimeService`PrimeService.Tests*библиотеку классов* в качестве зависимости:
+* Добавьте в проект *PrimeService.Tests* библиотеку классов `PrimeService` в качестве зависимости:
 
   ```dotnetcli
   dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj  

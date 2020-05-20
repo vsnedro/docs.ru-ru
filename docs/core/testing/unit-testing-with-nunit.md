@@ -139,7 +139,7 @@ public bool IsPrime(int candidate)
 }
 ```
 
-Выполните команду *еще раз в каталоге*unit-testing-using-nunit`dotnet test`. Команда `dotnet test` запускает сборку для проекта `PrimeService` и затем для проекта `PrimeService.Tests`. После сборки обоих проектов она запускает этот отдельный тест. Он выполняется.
+Выполните команду `dotnet test` еще раз в каталоге *unit-testing-using-nunit*. Команда `dotnet test` запускает сборку для проекта `PrimeService` и затем для проекта `PrimeService.Tests`. После сборки обоих проектов она запускает этот отдельный тест. Он выполняется.
 
 ## <a name="adding-more-features"></a>Добавление дополнительных возможностей
 

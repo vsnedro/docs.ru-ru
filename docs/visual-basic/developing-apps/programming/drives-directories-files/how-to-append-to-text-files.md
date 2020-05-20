@@ -21,7 +21,7 @@ ms.locfileid: "74348875"
   
 - Используйте метод `WriteAllText`, указав конечный файл и строку, которую требуется добавить, и присвоив параметру `append` значение `True`.  
   
-     В этом примере в файл с именем `"This is a test string."` записывается строка `Testfile.txt`.  
+     В этом примере в файл с именем `Testfile.txt` записывается строка `"This is a test string."`.  
   
      [!code-vb[VbFileIOWrite#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOWrite/VB/Class1.vb#6)]  
   

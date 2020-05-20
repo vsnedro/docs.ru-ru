@@ -86,7 +86,7 @@ namespace HelloWorld
 
 [!code-csharp[Declare the program text](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#1 "Declare a constant string for the program text to analyze")]
 
-Затем добавьте в константу **следующий код для создания**дерева синтаксиса`programText` для текста кода.  Добавьте следующую строку в метод `Main`:
+Затем добавьте в константу `programText` следующий код для создания **дерева синтаксиса** для текста кода.  Добавьте следующую строку в метод `Main`:
 
 [!code-csharp[Create the tree](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#2 "Create the syntax tree")]
 

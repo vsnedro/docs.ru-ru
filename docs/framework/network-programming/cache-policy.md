@@ -30,7 +30,7 @@ ms.locfileid: "71048775"
 |<xref:System.Net.Cache.RequestCachePolicy>|Представляет политики кэша на основе расположения или политики кэша на основе времени <xref:System.Net.Cache.RequestCacheLevel.Default> для ресурсов, запрашиваемых с помощью объектов <xref:System.Net.WebRequest>.|  
 |<xref:System.Net.Cache.HttpCacheAgeControl>|Задает значения, используемые для создания объектов <xref:System.Net.Cache.HttpRequestCachePolicy> на основе времени.|  
 |<xref:System.Net.Cache.HttpRequestCacheLevel>|Задает значения, используемые для создания объектов <xref:System.Net.Cache.HttpRequestCachePolicy> на основе расположения и на основе времени.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Задает значения, используемые для создания объектов <xref:System.Net.Cache.RequestCacheLevel.Default> на основе расположения или на основе времени <xref:System.Net.Cache.RequestCachePolicy>.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Задает значения, используемые для создания объектов <xref:System.Net.Cache.RequestCachePolicy> на основе расположения или на основе времени <xref:System.Net.Cache.RequestCacheLevel.Default>.|  
   
  Определить политику кэша можно для всех запросов, совершаемых приложением, или для отдельных запросов. Если определены политики кэша как на уровне приложения, так и на уровне запросов, применяется политика на уровне запросов. Политику кэша на уровне приложения можно настроить программными средствами либо с помощью файлов конфигурации приложения или компьютера. Дополнительные сведения см. в разделе [Элемент \<requestCaching> (сетевые параметры)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   

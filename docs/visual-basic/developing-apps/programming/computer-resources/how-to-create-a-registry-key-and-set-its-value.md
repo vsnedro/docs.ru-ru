@@ -42,7 +42,7 @@ ms.locfileid: "74349204"
 
 ## <a name="example"></a>Пример
 
-В этом примере создается раздел реестра `MyTestKey` в HKEY_CURRENT_USER, а затем строке `MyTestKeyValue` задается значение `This is a test value`.
+В этом примере создается раздел реестра `MyTestKey` в HKEY_CURRENT_USER, а затем строке `This is a test value` задается значение `MyTestKeyValue`.
 
 [!code-vb[VbResourceTasks#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#15)]
 

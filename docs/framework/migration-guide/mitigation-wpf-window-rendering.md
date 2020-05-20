@@ -37,7 +37,7 @@ ms.locfileid: "73457764"
 
   - `false` — для отключения обрезки окон по границам монитора во время отрисовки.
 
-- Путем задания значения <xref:System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping%2A> для свойства `true` при запуске приложения.
+- Путем задания значения `true` для свойства <xref:System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping%2A> при запуске приложения.
 
 ## <a name="see-also"></a>См. также раздел
 

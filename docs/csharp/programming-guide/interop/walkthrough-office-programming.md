@@ -52,7 +52,7 @@ Visual Studio предлагает новые функции C# и Visual Basic,
 
 1. В **обозревателе решений** щелкните имя проекта правой кнопкой мыши и выберите пункт **Добавить ссылку**. Откроется диалоговое окно **Добавление ссылки**.
 
-2. На вкладке **Сборки** в списке **Имя компонента** выберите `<version>.0.0.0`Microsoft.Office.Interop.Excel[, версия ](https://en.wikipedia.org/wiki/Microsoft_Office#Versions) (расшифровку номеров версий продуктов Office см. в разделе **Версии Майкрософт**), а затем, удерживая нажатой клавишу CTRL, выберите **Microsoft.Office.Interop.Word**, `version <version>.0.0.0`. Если сборки отсутствуют, может потребоваться проверить, что они установлены и отображаются (см. раздел [Практическое руководство. Установка основных сборок взаимодействия Microsoft Office](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies)).
+2. На вкладке **Сборки** в списке **Имя компонента** выберите **Microsoft.Office.Interop.Excel**, версия `<version>.0.0.0` (расшифровку номеров версий продуктов Office см. в разделе [Версии Майкрософт](https://en.wikipedia.org/wiki/Microsoft_Office#Versions)), а затем, удерживая нажатой клавишу CTRL, выберите **Microsoft.Office.Interop.Word**, `version <version>.0.0.0`. Если сборки отсутствуют, может потребоваться проверить, что они установлены и отображаются (см. раздел [Практическое руководство. Установка основных сборок взаимодействия Microsoft Office](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies)).
 
 3. Нажмите кнопку **ОК**.
 

@@ -32,7 +32,7 @@ ms.locfileid: "75713772"
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере метод `Person` присутствует как в базовом классе `Employee`, так и в производном классе `Getinfo`. С помощью ключевого слова `base` можно вызвать метод `Getinfo` базового класса из производного класса.
+В приведенном ниже примере метод `Getinfo` присутствует как в базовом классе `Person`, так и в производном классе `Employee`. С помощью ключевого слова `base` можно вызвать метод `Getinfo` базового класса из производного класса.
 
 [!code-csharp[csrefKeywordsAccess#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#1)]
 

@@ -149,7 +149,7 @@ public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestra
 }
 ```
 
-Метод `DurableOrchestrationContext``CreateTimer` настраивает расписание следующего вызова цикла для проверки изменений цен на акции. `DurableOrchestrationContext` также имеет свойство `CurrentUtcDateTime`, позволяющее получить текущее значение даты и времени в формате UTC. Лучше использовать это свойство вместо `DateTime.UtcNow`, так как оно легко имитируется для тестирования.
+Метод `CreateTimer``DurableOrchestrationContext` настраивает расписание следующего вызова цикла для проверки изменений цен на акции. `DurableOrchestrationContext` также имеет свойство `CurrentUtcDateTime`, позволяющее получить текущее значение даты и времени в формате UTC. Лучше использовать это свойство вместо `DateTime.UtcNow`, так как оно легко имитируется для тестирования.
 
 ## <a name="recommended-resources"></a>Рекомендуемые ресурсы
 
