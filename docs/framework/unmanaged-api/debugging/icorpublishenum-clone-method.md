@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c9a26ea3-b8eb-4b8e-854f-9a2ca26b3b39
 topic_type:
 - apiref
-ms.openlocfilehash: afd16f1f31be9148422dd6d0be748036a8e5d99a
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 38f49e8fe632e9b38ede8815de6d8865278351f9
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790662"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421206"
 ---
 # <a name="icorpublishenumclone-method"></a>Метод ICorPublishEnum::Clone
 Создает копию этого объекта [ICorPublishEnum](icorpublishenum-interface.md) .  
@@ -35,17 +35,17 @@ HRESULT Clone (
   
 ## <a name="parameters"></a>Параметры  
  `ppEnum`  
- заполняет Указатель на адрес объекта `ICorPublishEnum`, который является копией этого `ICorPublishEnum` объекта.  
+ заполняет Указатель на адрес `ICorPublishEnum` объекта, который является копией этого `ICorPublishEnum` объекта.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorPublishEnum](icorpublishenum-interface.md)

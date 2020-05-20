@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f31185e0-f01d-463a-b392-42163e39bfe9
 topic_type:
 - apiref
-ms.openlocfilehash: 4cc6bbde2c7367c1109ca73e66f2670a56b2cdbe
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 95a4ef3ab77b33c67c63be2c22647075f2f95ce8
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790559"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421115"
 ---
 # <a name="icorpublishprocessgetprocessid-method"></a>Метод ICorPublishProcess::GetProcessID
 Возвращает идентификатор операционной системы для этого процесса.  
@@ -38,14 +38,14 @@ HRESULT GetProcessID (
  заполняет Указатель на идентификатор процесса, представленного этим объектом [ICorPublishProcess](icorpublishprocess-interface.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorPublishProcess](icorpublishprocess-interface.md)

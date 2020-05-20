@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: faebf594-67d5-4abf-b9c1-547fd3a1ff87
 topic_type:
 - apiref
-ms.openlocfilehash: 47477bb473df8b568844d07bea704df681c9b95d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 54c8c7f5c3ba6b4afd4ff352a8afb947a92e2d61
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448605"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441881"
 ---
 # <a name="isymencunmanagedmethod-interface"></a>Интерфейс ISymENCUnmanagedMethod
 Предоставляет сведения для функции "изменить и продолжить".  
@@ -28,15 +28,15 @@ ms.locfileid: "74448605"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetDocumentsForMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-getdocumentsformethod-method.md)|Возвращает документы, в которых у этого метода есть строки.|  
-|[Метод GetDocumentsForMethodCount](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-getdocumentsformethodcount-method.md)|Возвращает число документов, в которых у этого метода есть строки.|  
-|[Метод GetFileNameFromOffset](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-getfilenamefromoffset-method.md)|Возвращает имя файла для строки, связанной со смещением.|  
-|[Метод GetLineFromOffset](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-getlinefromoffset-method.md)|Возвращает сведения о строке, связанные со смещением.|  
-|[Метод GetSourceExtentInDocument](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-getsourceextentindocument-method.md)|Возвращает наименьшую начальную строку и самую новую конечную строку для метода в определенном документе.|  
+|[Метод GetDocumentsForMethod](isymencunmanagedmethod-getdocumentsformethod-method.md)|Возвращает документы, в которых у этого метода есть строки.|  
+|[Метод GetDocumentsForMethodCount](isymencunmanagedmethod-getdocumentsformethodcount-method.md)|Возвращает число документов, в которых у этого метода есть строки.|  
+|[Метод GetFileNameFromOffset](isymencunmanagedmethod-getfilenamefromoffset-method.md)|Возвращает имя файла для строки, связанной со смещением.|  
+|[Метод GetLineFromOffset](isymencunmanagedmethod-getlinefromoffset-method.md)|Возвращает сведения о строке, связанные со смещением.|  
+|[Метод GetSourceExtentInDocument](isymencunmanagedmethod-getsourceextentindocument-method.md)|Возвращает наименьшую начальную строку и самую новую конечную строку для метода в определенном документе.|  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

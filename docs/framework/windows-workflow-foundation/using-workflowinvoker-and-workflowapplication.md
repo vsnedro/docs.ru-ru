@@ -1,16 +1,17 @@
 ---
 title: Использование WorkflowInvoker и WorkflowApplication
+description: В этой статье описывается размещение рабочих процессов с помощью WorkflowInvoker и WorkflowApplication в Windows Workflow Foundation.
 ms.date: 03/30/2017
 ms.assetid: cd0e583c-a3f9-4fa2-b247-c7b3368c48a7
-ms.openlocfilehash: 5d09fc3c902b1993b32edf3e9f92393433281636
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 50ad291bc73818092e7a08d489d6860636f9c379
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182706"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421323"
 ---
 # <a name="using-workflowinvoker-and-workflowapplication"></a>Использование WorkflowInvoker и WorkflowApplication
-Фонд рабочего процесса Windows (WF) предоставляет несколько методов хостинга рабочих процессов. <xref:System.Activities.WorkflowInvoker> предоставляет простой способ вызова рабочего процесса аналогично вызову метода и может использоваться только для рабочих процессов, не использующих сохраняемость. <xref:System.Activities.WorkflowApplication> предоставляет улучшенную модель выполнения рабочих процессов, которая обеспечивает уведомления о событиях жизненного цикла, управление выполнением, возобновление закладок и сохраняемость. <xref:System.ServiceModel.Activities.WorkflowServiceHost> предоставляет поддержку для действий по обмену сообщениями и главным образом используется со службами Workflow Service. В этом разделе вы познакомитесь с размещением рабочих процессов в <xref:System.Activities.WorkflowInvoker> и <xref:System.Activities.WorkflowApplication>. Для получения дополнительной информации <xref:System.ServiceModel.Activities.WorkflowServiceHost>о работе хостинга с, см. [Службы обработки рабочего процесса](../wcf/feature-details/workflow-services.md) и [хостинг служб ы работы Обзор](../wcf/feature-details/hosting-workflow-services-overview.md).  
+Windows Workflow Foundation (WF) предоставляет несколько методов размещения рабочих процессов. <xref:System.Activities.WorkflowInvoker> предоставляет простой способ вызова рабочего процесса аналогично вызову метода и может использоваться только для рабочих процессов, не использующих сохраняемость. <xref:System.Activities.WorkflowApplication> предоставляет улучшенную модель выполнения рабочих процессов, которая обеспечивает уведомления о событиях жизненного цикла, управление выполнением, возобновление закладок и сохраняемость. <xref:System.ServiceModel.Activities.WorkflowServiceHost> предоставляет поддержку для действий по обмену сообщениями и главным образом используется со службами Workflow Service. В этом разделе вы познакомитесь с размещением рабочих процессов в <xref:System.Activities.WorkflowInvoker> и <xref:System.Activities.WorkflowApplication>. Дополнительные сведения о рабочих процессах размещения с помощью см <xref:System.ServiceModel.Activities.WorkflowServiceHost> . в разделе [службы рабочих процессов](../wcf/feature-details/workflow-services.md) и [размещение общих сведений о службах рабочих процессов](../wcf/feature-details/hosting-workflow-services-overview.md).  
   
 ## <a name="using-workflowinvoker"></a>Использование WorkflowInvoker  
  <xref:System.Activities.WorkflowInvoker> предоставляет модель для исполнения рабочего процесса аналогично вызову метода. Чтобы вызвать рабочий процесс при помощи <xref:System.Activities.WorkflowInvoker>, вызовите метод <xref:System.Activities.WorkflowInvoker.Invoke%2A> и передайте определение вызываемого рабочего процесса. В данном примере действие <xref:System.Activities.Statements.WriteLine> вызывается при помощи <xref:System.Activities.WorkflowInvoker>.  
@@ -24,7 +25,7 @@ ms.locfileid: "79182706"
 > [!NOTE]
 > Исключение <xref:System.TimeoutException> создается только в случае, если время ожидания истекло и рабочий процесс перешел в состояние бездействия во время выполнения. Рабочий процесс, не завершающийся в течение отведенного времени ожидания, завершается успешно, если не переходит в состояние простоя.  
   
- <xref:System.Activities.WorkflowInvoker> предоставляет также асинхронные версии метода вызова. Дополнительные сведения см. в разделе <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> и <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>.  
+ <xref:System.Activities.WorkflowInvoker> предоставляет также асинхронные версии метода вызова. Дополнительные сведения см. в разделах <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> и <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>.  
   
 ### <a name="setting-input-arguments-of-a-workflow"></a>Настройка входных аргументов рабочего процесса  
  Данные можно передать в рабочий процесс при помощи словаря входных параметров, ключом которого является имя аргумента, сопоставляемого с входными аргументами рабочего процесса. В данном примере вызывается действие <xref:System.Activities.Statements.WriteLine>, а значение его аргумента <xref:System.Activities.Statements.WriteLine.Text%2A> указывается при помощи словаря входных параметров.  
@@ -60,14 +61,14 @@ ms.locfileid: "79182706"
  [!code-csharp[CFX_WorkflowApplicationExample#30](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#30)]  
   
 ### <a name="retrieving-output-arguments-of-a-workflow"></a>Получение выходных аргументов рабочего процесса  
- После завершения рабочего процесса любой из выходных аргументов можно извлечь в обработчик <xref:System.Activities.WorkflowApplication.Completed%2A>, обратившись к словарю <xref:System.Activities.WorkflowApplicationCompletedEventArgs.Outputs%2A?displayProperty=nameWithType>. В следующем примере рабочий процесс размещается с помощью <xref:System.Activities.WorkflowApplication>. Экземпляр <xref:System.Activities.WorkflowApplication> построен с использованием определения рабочего процесса, состоящего из одного `DiceRoll` действия. Действие `DiceRoll` имеет два выходных аргумента, представляющих результаты броска игральных костей. После завершения рабочего процесса выходные параметры возвращаются из обработчика <xref:System.Activities.WorkflowApplication.Completed%2A>.  
+ После завершения рабочего процесса любой из выходных аргументов можно извлечь в обработчик <xref:System.Activities.WorkflowApplication.Completed%2A>, обратившись к словарю <xref:System.Activities.WorkflowApplicationCompletedEventArgs.Outputs%2A?displayProperty=nameWithType>. В следующем примере рабочий процесс размещается с помощью <xref:System.Activities.WorkflowApplication>. <xref:System.Activities.WorkflowApplication>Экземпляр создается с использованием определения рабочего процесса, состоящего из одного `DiceRoll` действия. Действие `DiceRoll` имеет два выходных аргумента, представляющих результаты броска игральных костей. После завершения рабочего процесса выходные параметры возвращаются из обработчика <xref:System.Activities.WorkflowApplication.Completed%2A>.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#130](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#130)]  
   
  [!code-csharp[CFX_WorkflowApplicationExample#21](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#21)]  
   
 > [!NOTE]
-> <xref:System.Activities.WorkflowApplication> и <xref:System.Activities.WorkflowInvoker> получают словарь входных аргументов и возвращают словарь аргументов `out`. Эти параметры словаря, свойства и возвращаемые значения имеют тип `IDictionary<string, object>`. Фактически передаваемым экземпляром класса словаря может быть любой класс, который реализует `IDictionary<string, object>`. В этих примерах используется `Dictionary<string, object>`. Для получения дополнительной информации <xref:System.Collections.Generic.IDictionary%602> <xref:System.Collections.Generic.Dictionary%602>о словарях, см.  
+> <xref:System.Activities.WorkflowApplication> и <xref:System.Activities.WorkflowInvoker> получают словарь входных аргументов и возвращают словарь аргументов `out`. Эти параметры словаря, свойства и возвращаемые значения имеют тип `IDictionary<string, object>`. Фактически передаваемым экземпляром класса словаря может быть любой класс, который реализует `IDictionary<string, object>`. В этих примерах используется `Dictionary<string, object>`. Дополнительные сведения о словарях см. в статьях <xref:System.Collections.Generic.IDictionary%602> и <xref:System.Collections.Generic.Dictionary%602> .  
   
 ### <a name="passing-data-into-a-running-workflow-using-bookmarks"></a>Передача данных в запущенный рабочий процесс при помощи закладок  
  Закладки - это механизм, при помощи которого действие может пассивно ждать возобновления; с их помощью можно передавать данные в запущенный экземпляр рабочего процесса. Если действие ждет данные, оно может создать <xref:System.Activities.Bookmark> и зарегистрировать метод обратного вызова, который будет вызываться, когда возобновляется <xref:System.Activities.Bookmark>, как показано в следующем примере.  
@@ -85,13 +86,13 @@ ms.locfileid: "79182706"
  Следующий пример кода подобен предыдущему примеру, за исключением того, что активные закладки перечисляются до возобновления закладки. Рабочий процесс запускается, и, когда создается <xref:System.Activities.Bookmark>, а рабочий процесс переходит в состояние бездействия, вызывается метод <xref:System.Activities.WorkflowApplication.GetBookmarks%2A>. После завершения рабочего процесса на консоль выводятся следующие данные.  
   
  **Как вас зовут?**  
-**ЗакладкаИмя: UserName - OwnerDisplayName: ReadLine**
-**Стив**
-**Здравствуйте, Стив**
+**BookmarkName: username-овнердисплайнаме: ReadLine** 
+ **Стив** 
+ **Привет, Виктор**
 
 [!code-csharp[CFX_WorkflowApplicationExample#14](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
   
- В следующем примере кода проверяются аргументы <xref:System.Activities.WorkflowApplicationIdleEventArgs>, переданные в обработчик <xref:System.Activities.WorkflowApplication.Idle%2A> экземпляра <xref:System.Activities.WorkflowApplication>. В этом примере рабочий процесс, переходящий в состояние бездействия, содержит одну закладку <xref:System.Activities.Bookmark> с именем `EnterGuess`, которая принадлежит действию с именем `ReadInt`. Этот пример кода основан на том, [как: Запустить рабочий процесс,](how-to-run-a-workflow.md)который является частью [Начинаюм учебного урока.](getting-started-tutorial.md) Если на данном этапе изменить обработчик <xref:System.Activities.WorkflowApplication.Idle%2A> и включить код из этого примера, то будут выведены следующие данные.  
+ В следующем примере кода проверяются аргументы <xref:System.Activities.WorkflowApplicationIdleEventArgs>, переданные в обработчик <xref:System.Activities.WorkflowApplication.Idle%2A> экземпляра <xref:System.Activities.WorkflowApplication>. В этом примере рабочий процесс, переходящий в состояние бездействия, содержит одну закладку <xref:System.Activities.Bookmark> с именем `EnterGuess`, которая принадлежит действию с именем `ReadInt`. Этот пример кода основан на том, [как запустить рабочий процесс](how-to-run-a-workflow.md), который является частью [учебника по начало работы](getting-started-tutorial.md). Если на данном этапе изменить обработчик <xref:System.Activities.WorkflowApplication.Idle%2A> и включить код из этого примера, то будут выведены следующие данные.  
   
  **BookmarkName: EnterGuess — OwnerDisplayName: ReadInt**
 

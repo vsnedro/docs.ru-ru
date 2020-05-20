@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a30102ff-c52e-48c9-b3a9-aa14286a42b2
 topic_type:
 - apiref
-ms.openlocfilehash: 2d67bee3ea0e57080179b3fbb7e0b4193860c44d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e18ceb25b9c58a9710ef967cb071e3ef55beea8c
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73103292"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421050"
 ---
 # <a name="initdbgtransportmanager-function"></a>Функция InitDbgTransportManager
 Инициализирует диспетчер транспорта для подключения к удаленному целевому объекту для процесса и перечисления среды выполнения.  
@@ -34,7 +34,7 @@ HRESULT InitDbgTransportManager ();
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK  
- Выполнено.  
+ Успешно.  
   
  E_OUTOFMEMORY  
  Функции не удалось выделить память для диспетчера транспорта.  
@@ -43,7 +43,7 @@ HRESULT InitDbgTransportManager ();
  Прочие сбои.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   

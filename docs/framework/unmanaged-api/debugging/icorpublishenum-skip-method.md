@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1680ec06-4ab0-447e-93ad-cdb8693fde5c
 topic_type:
 - apiref
-ms.openlocfilehash: bd62fb38352022f69c45d2a5921973cfbec1c6e4
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: b68a9ec1e8fee4fdecd2114af28c75c4a236cb3a
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790594"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421154"
 ---
 # <a name="icorpublishenumskip-method"></a>Метод ICorPublishEnum::Skip
 Перемещает курсор вперед в перечислении на указанное число элементов.  
@@ -38,14 +38,14 @@ HRESULT Skip (
  окне Число элементов, по которым перемещается курсор.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейс ICorPublishEnum](icorpublishenum-interface.md)

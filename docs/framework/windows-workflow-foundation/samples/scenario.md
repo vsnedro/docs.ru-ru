@@ -1,24 +1,25 @@
 ---
 title: Сценарии рабочих процессов Windows
+description: Просмотрите примеры сценариев Windows Workflow Foundation, таких как сценарии с использованием встроенной библиотеки действий и сценариев, использующих действия служб рабочего процесса.
 ms.date: 03/30/2017
 ms.assetid: cb678fda-79aa-4495-833b-ef570539d4c3
-ms.openlocfilehash: 9e4d4023ee18305b843c62785fa454bb1cbe2787
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: c758d8f98380084886ab5e4465c8109e074e7d6f
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61785935"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421362"
 ---
 # <a name="scenario"></a>Сценарий
 
-Этот раздел содержит примеры сценариев для Windows Workflow Foundation (WF).  
+В этом разделе содержатся примеры сценариев Windows Workflow Foundation (WF).  
   
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
-[Библиотека действий](activity-library.md) -примеры, демонстрирующие сценарии, использующие библиотеку встроенных действий.  
+[Библиотека действий](activity-library.md) — содержит примеры, демонстрирующие сценарии с помощью встроенной библиотеки действий.  
   
-[Службы](accessing-operationcontext.md) -примеры, демонстрирующие сценарии с использованием действий рабочего процесса службы.  
+[Службы](accessing-operationcontext.md) — содержит примеры, демонстрирующие сценарии с помощью действий служб рабочего процесса.  
   
-[Интеграция WPF и WF в XAML](wpf-and-wf-integration-in-xaml.md) -показано, как создать приложение, использующее функции Windows Presentation Foundation (WPF) и Windows Workflow Foundation (WF) в одном документе XAML. Для этого в образце используется расширяемость Windows Workflow Foundation (WF) и XAML.  
+[Интеграция WPF и WF в XAML](wpf-and-wf-integration-in-xaml.md) — демонстрирует создание приложения, которое использует функции Windows Presentation Foundation (WPF) и Windows Workflow Foundation (WF) в одном документе XAML. Для этого в примере используется Windows Workflow Foundation (WF) и расширяемость XAML.  
   
-[Набор средств внешнего набора правил](external-ruleset-toolkit.md) — показано, как управлять и изменять наборы правил в базе данных и получить доступ к этим наборам правил из рабочего процесса во время выполнения.
+[Набор внешних наборов правил](external-ruleset-toolkit.md) — демонстрирует, как управлять и изменять наборы правил в базе данных, а также получать доступ к наборам правил из рабочего процесса во время выполнения.

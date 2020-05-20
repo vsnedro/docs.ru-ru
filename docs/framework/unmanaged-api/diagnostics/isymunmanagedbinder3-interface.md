@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 37527a84-4b03-4f08-8135-94d898599089
 topic_type:
 - apiref
-ms.openlocfilehash: e4a415b21e3980e7603319d7acbb3831462fac9e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 5a26de2a8f5439b7c81560927c991d449e57b76c
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449300"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441595"
 ---
 # <a name="isymunmanagedbinder3-interface"></a>Интерфейс ISymUnmanagedBinder3
-Расширяет интерфейс связывателя символов. Получите этот интерфейс путем вызова `QueryInterface` для объекта, реализующего интерфейс `ISymUnmanagedBinder`.  
+Расширяет интерфейс связывателя символов. Получите этот интерфейс, вызвав метод `QueryInterface` для объекта, который реализует `ISymUnmanagedBinder` интерфейс.  
   
 > [!IMPORTANT]
 > При открытии файла базы данных программы (PDB) из ненадежного источника возникает угроза безопасности.  
@@ -31,13 +31,13 @@ ms.locfileid: "74449300"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetReaderFromCallback](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-getreaderfromcallback-method.md)|Позволяет пользователю реализовать или предоставить обратный вызов с помощью обратного вызова либо `IID_IDiaReadExeAtRVACallback`, либо `IID_IDiaReadExeAtOffsetCallback`, чтобы получить сведения о каталоге отладки из памяти.|  
+|[Метод GetReaderFromCallback](isymunmanagedbinder3-getreaderfromcallback-method.md)|Позволяет пользователю реализовать или предоставить через обратный вызов либо `IID_IDiaReadExeAtRVACallback` `IID_IDiaReadExeAtOffsetCallback` для получения сведений о каталоге отладки из памяти.|  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
-- [Интерфейс ISymUnmanagedBinder](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)
-- [Интерфейс ISymUnmanagedBinder2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-interface.md)
+- [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
+- [Интерфейс ISymUnmanagedBinder](isymunmanagedbinder-interface.md)
+- [Интерфейс ISymUnmanagedBinder2](isymunmanagedbinder2-interface.md)

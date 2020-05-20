@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - endpoints [WCF], addressing
 ms.assetid: ac24f5ad-9558-4298-b168-c473c68e819b
-ms.openlocfilehash: 47a7bb42ea2441ffef2fd27f26a20beceb871173
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 5ec6432d2f9cc7bf8619f59bad470c6b2cb190e0
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72321135"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441023"
 ---
 # <a name="specifying-an-endpoint-address"></a>Задание адреса конечной точки
 
@@ -26,13 +26,13 @@ ms.locfileid: "72321135"
 
 - Схема: http:
 
-- Компьютер: `www.fabrikam.com`
+- Машине`www.fabrikam.com`
 
 - (Необязательно) Порт: 322
 
 - Путь: /mathservice.svc/secureEndpoint
 
-Одной из особенностей модели EPR является то, что каждая ссылка на конечную точку может содержать некоторые ссылочные параметры, которые добавляют дополнительные идентификационные сведения. В WCF эти ссылочные параметры моделируются как экземпляры класса <xref:System.ServiceModel.Channels.AddressHeader>.
+Одной из особенностей модели EPR является то, что каждая ссылка на конечную точку может содержать некоторые ссылочные параметры, которые добавляют дополнительные идентификационные сведения. В WCF эти ссылочные параметры моделируются как экземпляры <xref:System.ServiceModel.Channels.AddressHeader> класса.
 
 Адрес конечной точки службы можно задать императивно с помощью кода или декларативно с помощью конфигурации. Как правило, определять конечные точки в коде непрактично, поскольку привязки и адреса для развернутой службы чаще всего отличаются от привязок и адресов, используемых в процессе разработки службы. Обычно более целесообразно задать конечные точки службы в конфигурации, а не в коде. Если не указывать привязку и адрес в коде, их можно изменять без повторной компиляции и повторного развертывания приложения. Если конечные точки не заданы в коде или в конфигурации, то среда выполнения добавляет одну конечную точку по умолчанию для каждого базового адреса в каждом контракте службы, реализованном в службе.
 
@@ -42,15 +42,15 @@ ms.locfileid: "72321135"
 
 ## <a name="defining-endpoint-addresses-in-configuration"></a>Определение адреса конечной точки в конфигурации
 
-Чтобы определить конечную точку в файле конфигурации, используйте элемент [>\<конечной точки](../configure-apps/file-schema/wcf/endpoint-element.md) .
+Чтобы определить конечную точку в файле конфигурации, используйте элемент [ \< Endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md) .
 
-[!code-xml[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]
+[!code-xml[S_UEHelloWorld#5](./snippets/specifying-an-endpoint-address/serviceapp2.config#5)]
 
-При вызове метода <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> (т. е. когда приложение размещения пытается запустить службу) система ищет элемент [>\<ной службы](../configure-apps/file-schema/wcf/service.md) с атрибутом имени, УКАЗЫВАЮЩИМ "UE. Samples. Хеллосервице ". Если элемент [> службы\<](../configure-apps/file-schema/wcf/service.md) найден, система загружает указанный класс и создает конечные точки, используя определения конечных точек, предоставленные в файле конфигурации. Благодаря такому механизму можно загружать и запускать службу с двумя строками кода, при этом не указывая привязку и адрес в коде. Преимуществом этого подхода является отсутствие необходимости в повторной компиляции или повторном развертывании приложения при внесении этих изменений.
+При <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> вызове метода (т. е. когда приложение размещения пытается запустить службу) система ищет элемент [ \<>службы](../configure-apps/file-schema/wcf/service.md) с атрибутом Name, указывающим "UE. Samples. Хеллосервице ". Если элемент [ \< Service>](../configure-apps/file-schema/wcf/service.md) найден, система загружает указанный класс и создает конечные точки, используя определения конечных точек, предоставленные в файле конфигурации. Благодаря такому механизму можно загружать и запускать службу с двумя строками кода, при этом не указывая привязку и адрес в коде. Преимуществом этого подхода является отсутствие необходимости в повторной компиляции или повторном развертывании приложения при внесении этих изменений.
 
-Необязательные заголовки объявляются в [\<заголовков >](../configure-apps/file-schema/wcf/headers-element.md). Ниже приведен пример элементов, используемых для указания конечных точек службы в файле конфигурации, который различает два заголовка: "золотых" клиентов `http://tempuri1.org/` и "стандартных" клиентов из `http://tempuri2.org/`. Клиент, вызывающий эту службу, должен иметь соответствующие [заголовки\<>](../configure-apps/file-schema/wcf/headers-element.md) в файле конфигурации.
+Необязательные заголовки объявляются в [ \< заголовках>](../configure-apps/file-schema/wcf/headers-element.md). Ниже приведен пример элементов, используемых для указания конечных точек службы в файле конфигурации, который различает два заголовка: "Gold" клиентов `http://tempuri1.org/` и "стандартные" клиенты из `http://tempuri2.org/` . Клиент, вызывающий эту службу, должен иметь соответствующие [ \< заголовки,>](../configure-apps/file-schema/wcf/headers-element.md) в файле конфигурации.
 
-[!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]
+[!code-xml[S_UEHelloWorld#1](./snippets/specifying-an-endpoint-address/serviceapp.config#1)]
 
 Можно настроить заголовки для отдельных сообщений конечной точки, а не всех одновременно (как показано выше). В этом случае для создания нового контекста в клиентском приложении для добавления пользовательского заголовка в исходящее сообщение используется <xref:System.ServiceModel.OperationContextScope>, как показано в следующем примере.
 
@@ -86,7 +86,7 @@ ms.locfileid: "72321135"
 
 Если конечные точки предоставляются явно, то конечные точки по умолчанию можно добавить, вызвав метод <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> класса <xref:System.ServiceModel.ServiceHost> перед вызовом <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. Дополнительные сведения о конечных точках по умолчанию, привязках и режимах работы см. в разделах [Упрощенная конфигурация](simplified-configuration.md) и [Упрощенная конфигурация служб WCF](./samples/simplified-configuration-for-wcf-services.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.EndpointAddress>
 - [Идентификация и проверка подлинности службы](./feature-details/service-identity-and-authentication.md)

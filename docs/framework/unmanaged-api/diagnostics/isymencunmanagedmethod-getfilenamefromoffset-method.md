@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 00e2e194-12f5-436e-a997-2b9d3e844d4f
 topic_type:
 - apiref
-ms.openlocfilehash: 74002ce9c76eebaa3ea5860b09cd3e7c9a884f8d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 857410187edf1c712865626a3327dd4c92cc211f
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448652"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441933"
 ---
 # <a name="isymencunmanagedmethodgetfilenamefromoffset-method"></a>Метод ISymENCUnmanagedMethod::GetFileNameFromOffset
 Возвращает имя файла для строки, связанной со смещением.  
@@ -38,13 +38,13 @@ HRESULT GetFileNameFromOffset(
   
 ## <a name="parameters"></a>Параметры  
  `dwOffset`  
- окне `ULONG32`, содержащий смещение.  
+ окне Значение типа `ULONG32` , содержащее смещение.  
   
  `cchName`  
- окне `ULONG32`, указывающий размер буфера `szName`.  
+ окне Значение типа `ULONG32` , указывающее размер `szName` буфера.  
   
  `pcchName`  
- заполняет Указатель на `ULONG32`, который получает размер (в символах) буфера, необходимого для хранения имен файлов.  
+ заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения имен файлов.  
   
  `szName`  
  заполняет Буфер, содержащий имена файлов.  
@@ -55,6 +55,6 @@ HRESULT GetFileNameFromOffset(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymENCUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+- [Интерфейс ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)

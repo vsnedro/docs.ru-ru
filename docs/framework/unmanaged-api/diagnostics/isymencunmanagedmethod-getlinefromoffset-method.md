@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: cc09bad2-fb34-4d13-a521-6ec7b1a1d915
 topic_type:
 - apiref
-ms.openlocfilehash: 94a571a4bc01b805387aebe5a6e23bad0b735313
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: d9a7b18e90a3038c1ffb634ccc7315143875c809
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448649"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441920"
 ---
 # <a name="isymencunmanagedmethodgetlinefromoffset-method"></a>Метод ISymENCUnmanagedMethod::GetLineFromOffset
-Возвращает сведения о строке, связанные со смещением. Если параметр offset (`dwOffset`) не является точкой последовательности, этот метод получает сведения о строке, связанные с предыдущим смещением.  
+Возвращает сведения о строке, связанные со смещением. Если параметр offset ( `dwOffset` ) не является точкой последовательности, этот метод получает сведения о строке, связанные с предыдущим смещением.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,22 +39,22 @@ HRESULT GetLineFromOffset(
   
 ## <a name="parameters"></a>Параметры  
  `dwOffset`  
- окне `ULONG32`, содержащий смещение.  
+ окне Значение типа `ULONG32` , содержащее смещение.  
   
  `pline`  
- заполняет Указатель на `ULONG32`, который получает строку.  
+ заполняет Указатель на объект `ULONG32` , получающий строку.  
   
  `pcolumn`  
- заполняет Указатель на `ULONG32`, который получает столбец.  
+ заполняет Указатель на объект `ULONG32` , который получает столбец.  
   
  `pendLine`  
- заполняет Указатель на `ULONG32`, который получает конечную строку.  
+ заполняет Указатель на объект `ULONG32` , который получает конечную строку.  
   
  `pendColumn`  
- заполняет Указатель на `ULONG32`, который получает конечный столбец.  
+ заполняет Указатель на объект `ULONG32` , который получает конечный столбец.  
   
  `pdwStartOffset`  
- заполняет Указатель на `ULONG32`, который получает связанную точку последовательности.  
+ заполняет Указатель на объект `ULONG32` , который получает связанную точку последовательности.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -62,6 +62,6 @@ HRESULT GetLineFromOffset(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymENCUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+- [Интерфейс ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)

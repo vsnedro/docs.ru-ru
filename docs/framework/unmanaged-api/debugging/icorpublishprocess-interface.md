@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d1dc41b-8aa2-4889-bb00-1cbccc00c123
 topic_type:
 - apiref
-ms.openlocfilehash: 3ae48df9e66890161c1aef944d37b0a279939d56
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 8d958e949612b502ab218f5c6b75779174d34e19
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790540"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421089"
 ---
 # <a name="icorpublishprocess-interface"></a>Интерфейс ICorPublishProcess
 Предоставляет методы, которые обращаются к сведениям, отображаемым в процессе.  
@@ -28,21 +28,21 @@ ms.locfileid: "76790540"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод EnumAppDomains](icorpublishprocess-enumappdomains-method.md)|Возвращает экземпляр [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md) , содержащий домены приложений в процессе, на который ссылается эта `ICorPublishProcess`.|  
-|[Метод GetDisplayName](icorpublishprocess-getdisplayname-method.md)|Возвращает полный путь к исполняемому файлу для процесса, на который ссылается эта `ICorPublishProcess`.|  
-|[Метод GetProcessID](icorpublishprocess-getprocessid-method.md)|Возвращает идентификатор операционной системы для процесса, на который ссылается эта `ICorPublishProcess`.|  
-|[Метод IsManaged](icorpublishprocess-ismanaged-method.md)|Возвращает значение, указывающее, называется ли процесс, на который ссылается эта `ICorPublishProcess`, выполнением управляемого кода.|  
+|[Метод EnumAppDomains](icorpublishprocess-enumappdomains-method.md)|Возвращает экземпляр [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md) , содержащий домены приложений в процессе, на который ссылается this `ICorPublishProcess` .|  
+|[Метод GetDisplayName](icorpublishprocess-getdisplayname-method.md)|Возвращает полный путь к исполняемому файлу для процесса, на который ссылается this `ICorPublishProcess` .|  
+|[Метод GetProcessID](icorpublishprocess-getprocessid-method.md)|Возвращает идентификатор операционной системы для процесса, на который ссылается this `ICorPublishProcess` .|  
+|[Метод IsManaged](icorpublishprocess-ismanaged-method.md)|Возвращает значение, указывающее, называется ли процесс, на который ссылается данный объект, `ICorPublishProcess` выполнением управляемого кода.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Кокласс CorpubPublish](corpubpublish-coclass.md)

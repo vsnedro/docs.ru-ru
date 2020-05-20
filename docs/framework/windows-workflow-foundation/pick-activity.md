@@ -1,18 +1,19 @@
 ---
 title: Действие Pick
+description: В Workflow Foundation действие выбор упрощает моделирование набора триггеров событий, за которыми следуют соответствующие обработчики.
 ms.date: 03/30/2017
 ms.assetid: b3e49b7f-0285-4720-8c09-11ae18f0d53e
-ms.openlocfilehash: 672de5fd3df5e8dde6c54118503bf2a11353b116
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: eb59dc20919ed2d30a48f920ad154d4b0d99c41f
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182894"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421466"
 ---
 # <a name="pick-activity"></a>Действие Pick
-Действие <xref:System.Activities.Statements.Pick> позволяет упростить моделирование набора триггеров событий, а затем соответствующих обработчиков.  Действие содержит <xref:System.Activities.Statements.Pick> коллекцию действий <xref:System.Activities.Statements.PickBranch>, в которой все элементы <xref:System.Activities.Statements.PickBranch> являются парами, состоящими из действия <xref:System.Activities.Statements.PickBranch.Trigger%2A> и действия <xref:System.Activities.Statements.PickBranch.Action%2A>.  Во время выполнения триггеры для всех ветвей выполняются параллельно.  Когда срабатывает один триггер, выполняется соответствующее действие, а остальные триггеры отменяются.  Поведение [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] <xref:System.Activities.Statements.Pick> действия аналогично деятельности .NET Framework 3.5. <xref:System.Workflow.Activities.ListenActivity>  
+Действие <xref:System.Activities.Statements.Pick> позволяет упростить моделирование набора триггеров событий, а затем соответствующих обработчиков.  Действие содержит <xref:System.Activities.Statements.Pick> коллекцию действий <xref:System.Activities.Statements.PickBranch>, в которой все элементы <xref:System.Activities.Statements.PickBranch> являются парами, состоящими из действия <xref:System.Activities.Statements.PickBranch.Trigger%2A> и действия <xref:System.Activities.Statements.PickBranch.Action%2A>.  Во время выполнения триггеры для всех ветвей выполняются параллельно.  Когда срабатывает один триггер, выполняется соответствующее действие, а остальные триггеры отменяются.  Поведение [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] <xref:System.Activities.Statements.Pick> действия аналогично действию .NET Framework 3,5 <xref:System.Workflow.Activities.ListenActivity> .  
   
- На следующем снимке экрана из примера пакета SDK [Использование действия Pick](./samples/using-the-pick-activity.md) показано действие Pick с двумя ветвями.  В одной ветви есть триггер с именем **Read input** — настраиваемое действие, считывающее входные данные из командной строки. Во второй ветви имеется триггер действия <xref:System.Activities.Statements.Delay>. Если активность **ввода Чтения** получает <xref:System.Activities.Statements.Delay> данные <xref:System.Activities.Statements.Delay> до завершения действия, задержка будет отменена, а приветствие будет записано на консоль.  В противном случае, если действие **Read input** не получает данные в отведенное время, это действие отменяется, и в консоль выводится сообщение об окончании времени ожидания.  Это стандартный прием для добавления периода времени ожидания к любому действию.  
+ На следующем снимке экрана из примера пакета SDK [Использование действия Pick](./samples/using-the-pick-activity.md) показано действие Pick с двумя ветвями.  В одной ветви есть триггер с именем **Read input** — настраиваемое действие, считывающее входные данные из командной строки. Во второй ветви имеется триггер действия <xref:System.Activities.Statements.Delay>. Если действие **Read input** получает данные до <xref:System.Activities.Statements.Delay> завершения действия, <xref:System.Activities.Statements.Delay> задержка будет отменена и приветствие будет записано на консоль.  В противном случае, если действие **Read input** не получает данные в отведенное время, это действие отменяется, и в консоль выводится сообщение об окончании времени ожидания.  Это стандартный прием для добавления периода времени ожидания к любому действию.  
   
  ![Действие Pick](./media/pick-activity/pick-activity-two-branches.jpg)  
   

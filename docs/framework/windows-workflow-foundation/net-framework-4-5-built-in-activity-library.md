@@ -1,13 +1,14 @@
 ---
 title: Встроенная библиотека действий .NET Framework 4.5
+description: В этой статье описывается новая библиотека действий с расширенными функциональными возможностями, которые входят в состав .NET Framework 4,5.
 ms.date: 03/30/2017
 ms.assetid: e559e87b-6aed-491d-9546-e92bcec16fdf
-ms.openlocfilehash: 6d47c36a55829684a0eefb2a560e65f7b91462a7
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 4ce4420759512ec3adfff70bf0c365014d96ec7b
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61786013"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421492"
 ---
 # <a name="net-framework-45-built-in-activity-library"></a>Встроенная библиотека действий .NET Framework 4.5
 
@@ -21,7 +22,7 @@ ms.locfileid: "61786013"
 
 - [Действия обмена сообщениями](../wcf/feature-details/messaging-activities.md)
 
-- [Среда выполнения](runtime-activities-in-wf.md)
+- [Этапе](runtime-activities-in-wf.md)
 
 - [Примитивы](primitives-activities-in-wf.md)
 
@@ -33,4 +34,4 @@ ms.locfileid: "61786013"
 
 - [Миграция](migration-activity-in-wf.md)
 
-Действия в библиотеку встроенных действий может быть рабочие процессы или использовать совместно с пользовательскими действиями. Действия из библиотеки действий запечатаны; они не предназначены для использования для создания новой функциональности с помощью наследования.
+Действия во встроенной библиотеке действий можно составить в рабочие процессы или использовать вместе с пользовательскими действиями. Действия из библиотеки действий запечатаны; они не предназначены для использования для создания новой функциональности с помощью наследования.

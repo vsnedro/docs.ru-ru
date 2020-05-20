@@ -1,13 +1,14 @@
 ---
 title: Процесс утверждения документа
+description: В этом примере демонстрируется множество Windows Workflow Foundation и Windows Communication Foundationных функций в сценарии процесса утверждения документа.
 ms.date: 03/30/2017
 ms.assetid: 9b240937-76a7-45cd-8823-7f82c34d03bd
-ms.openlocfilehash: cee43aff991f9482de7b3172174eb0e786ec1fe6
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 18b4f978e9234daf22395f0d2f6f0889d0edf966
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74710847"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421414"
 ---
 # <a name="document-approval-process"></a>Процесс утверждения документа
 
@@ -18,7 +19,7 @@ ms.locfileid: "74710847"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Application\DocumentApprovalProcess`
 
@@ -26,7 +27,7 @@ ms.locfileid: "74710847"
 
 На следующем рисунке показан рабочий процесс утверждения документов.
 
-![Рабочий процесс утверждения документов](./media/document-approval-process/document-approval-process.jpg)
+![Рабочий процесс утверждения документа](./media/document-approval-process/document-approval-process.jpg)
 
 С точки зрения клиента процесс утверждения документа протекает следующим образом.
 
@@ -90,7 +91,7 @@ ms.locfileid: "74710847"
 
 2. Для построения решения нажмите CTRL+SHIFT+B.
 
-3. Чтобы запустить решение, запустите приложение "Диспетчер утверждений", щелкнув правой кнопкой мыши проект Аппровалманажер в **Обозреватель решений** и выбрав **Отладка**->**запустить** новый экземпляр из контекстного меню.
+3. Чтобы запустить решение, запустите приложение "Диспетчер утверждений", щелкнув правой кнопкой мыши проект аппровалманажер в **Обозреватель решений** и выбрав пункт **Отладка** -> **запустить** новый экземпляр в контекстном меню.
 
     Подождите, пока от диспетчера не придет сообщение о готовности.
 
@@ -140,7 +141,7 @@ ms.locfileid: "74710847"
 
 6. На клиенте `UserType1` выберите один тип подтверждения из раскрывающегося меню и введите имя и содержимое документа. Щелкните **запросить утверждение**.
 
-7. На клиентах `UserType2` появится документ, ожидающий подтверждения. Выберите его и нажмите кнопку **утвердить**. документ передается клиенту `UserType3`.
+7. На клиентах `UserType2` появится документ, ожидающий подтверждения. Выберите его и нажмите кнопку **утвердить**. документ передается `UserType3` клиенту.
 
     Если документ был утвержден первым кворумом `UserType2`, этот документ буден передан клиенту `UserType3`.
 

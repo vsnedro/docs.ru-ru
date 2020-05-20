@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 708c681a98113a406249a360c2fc81087e5b97f8
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: ebb689eee4a89a70e81d8f9d958e7826c3b3421b
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790425"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420959"
 ---
 # <a name="ixclrdatamethoddefinition-interface"></a>Интерфейс IXCLRDataMethodDefinition
 
@@ -34,22 +34,22 @@ ms.locfileid: "76790425"
 
 | Метод                                                                                                                          | Описание                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [стартенуминстанцес](ixclrdatamethoddefinition-startenuminstances-method.md) | Предоставляет обработчик для перечисления экземпляров методов для заданного `IXCLRDataAppDomain`. |
-| [енуминстанце](ixclrdatamethoddefinition-enuminstance-method.md)             | Перечисляет экземпляры этого определения метода.                                         |
-| [енденуминстанцес](ixclrdatamethoddefinition-endenuminstances-method.md)     | Освобождает ресурсы, используемые внутренними итераторами, используемыми при перечислении экземпляров.         |
+| [StartEnumInstances](ixclrdatamethoddefinition-startenuminstances-method.md) | Предоставляет обработчик для перечисления экземпляров методов для заданного объекта `IXCLRDataAppDomain` . |
+| [EnumInstance](ixclrdatamethoddefinition-enuminstance-method.md)             | Перечисляет экземпляры этого определения метода.                                         |
+| [EnumInstance](ixclrdatamethoddefinition-endenuminstances-method.md)     | Освобождает ресурсы, используемые внутренними итераторами, используемыми при перечислении экземпляров.         |
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` с GUID `AAF60008-FB2C-420b-8FB1-42D244A54A97`, который можно получить с помощью обычных механизмов COM.
+Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` GUID `AAF60008-FB2C-420b-8FB1-42D244A54A97` , который можно получить с помощью стандартных механизмов com.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Отладка](index.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

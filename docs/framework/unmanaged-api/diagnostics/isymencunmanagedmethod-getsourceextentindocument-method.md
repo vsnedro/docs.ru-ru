@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9c5566ab-4ec7-4b61-9753-839bb90ae78c
 topic_type:
 - apiref
-ms.openlocfilehash: b8e72745eff09c6707afe5a5f20a1ddf38b239ae
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 3ac8bb3a20ce82b734a572832a9cbb75fa2568c4
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448616"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441907"
 ---
 # <a name="isymencunmanagedmethodgetsourceextentindocument-method"></a>Метод ISymENCUnmanagedMethod::GetSourceExtentInDocument
 Возвращает наименьшую начальную строку и самую новую конечную строку для метода в определенном документе.  
@@ -39,10 +39,10 @@ HRESULT GetSourceExtentInDocument(
  окне Указатель на документ.  
   
  `pstartLine`  
- заполняет Указатель на `ULONG32`, который получает начальную строку.  
+ заполняет Указатель на объект `ULONG32` , получающий начальную строку.  
   
  `pendLine`  
- заполняет Указатель на `ULONG32`, который получает конечную строку.  
+ заполняет Указатель на объект `ULONG32` , который получает конечную строку.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -50,6 +50,6 @@ HRESULT GetSourceExtentInDocument(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymENCUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+- [Интерфейс ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)

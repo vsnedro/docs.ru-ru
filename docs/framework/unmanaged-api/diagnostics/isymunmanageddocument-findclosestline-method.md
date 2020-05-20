@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
 topic_type:
 - apiref
-ms.openlocfilehash: 0e95255479792c7056bee7ee4f6c507e0f41eb6a
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 9e6134d39096c4ab157aa545646d83339f92a0b8
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449216"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441036"
 ---
 # <a name="isymunmanageddocumentfindclosestline-method"></a>Метод ISymUnmanagedDocument::FindClosestLine
 Возвращает ближайшую строку, которая является точкой последовательности, с учетом строки в этом документе, которая может быть или не являться точкой последовательности.  
@@ -43,6 +43,6 @@ HRESULT FindClosestLine(
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае — код ошибки.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedDocument](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+- [Интерфейс ISymUnmanagedDocument](isymunmanageddocument-interface.md)

@@ -1,52 +1,53 @@
 ---
 title: Практическое руководство. Запуск рабочего процесса
+description: В этой статье показано, как создать узел рабочего процесса и запустить рабочий процесс, определенный в предыдущей статье этой Windows Workflow Foundation серии руководств.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f814ff82-fe2b-4614-aebb-b768c3e61179
-ms.openlocfilehash: 07f0e5dc232411633626add460ffc29cc7a79d81
-ms.sourcegitcommit: 581ab03291e91983459e56e40ea8d97b5189227e
+ms.openlocfilehash: 86062dd5147e6e354833928fd98bd1f6b5de9114
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70044354"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421505"
 ---
 # <a name="how-to-run-a-workflow"></a>Практическое руководство. Запуск рабочего процесса
-Этот раздел является продолжением учебника по Windows Workflow Foundation начало работы и описывает создание узла рабочего процесса и запуск рабочего процесса, определенного в предыдущем [разделе. Создание раздела рабочего](how-to-create-a-workflow.md) процесса.
+Этот раздел продолжает учебник "Приступая к работе" для Windows Workflow Foundation и показывает, как создать узел рабочего процесса и выполнить рабочий процесс, описанный в предыдущем разделе [How to: Create a Workflow](how-to-create-a-workflow.md) .
 
 > [!NOTE]
-> Каждый раздел в учебнике «Приступая к работе» построен на основе предыдущих разделов. Для выполнения этой статьи сначала необходимо выполнить [следующие действия: Создайте действие](how-to-create-an-activity.md) и [выполните следующие действия. Создайте рабочий процесс](how-to-create-a-workflow.md).
+> Каждый раздел в учебнике «Приступая к работе» построен на основе предыдущих разделов. Для изучения этого раздела необходимо сначала пройти руководства [How to: Create an Activity](how-to-create-an-activity.md) и [How to: Create a Workflow](how-to-create-a-workflow.md).
 
 > [!NOTE]
 > Чтобы скачать завершенную версию учебника, см. раздел [Windows Workflow Foundation (WF45), учебник "Приступая к работе"](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### <a name="to-create-the-workflow-host-project"></a>Создание проекта узла рабочего процесса  
   
-1. Откройте решение из предыдущего [руководства. Создание раздела действия](how-to-create-an-activity.md) с помощью Visual Studio 2012.  
+1. Откройте решение из предыдущего раздела [инструкции. Создание действия](how-to-create-an-activity.md) с помощью Visual Studio 2012.  
   
 2. Щелкните правой кнопкой мыши решение **WF45GettingStartedTutorial** в окне **Обозреватель решений** и выберите **Добавить**, **Создать проект**.  
   
     > [!TIP]
-    > Если окно **Обозреватель решений** не отображается, в меню **Вид** выберите пункт **Обозреватель решений** .
+    > Если окно **Обозреватель решений** не отображается, выберите пункт **Обозреватель решений** в меню **Вид**.
 
 3. В узле **Установленные** выберите пункты **Visual C#** и **Рабочий процесс** (или **Visual Basic**и **Рабочий процесс**).
 
     > [!NOTE]
-    > В зависимости от того, какой язык программирования задан как основной в Visual Studio, узел **Visual C#** или **Visual Basic** может находиться в разделе **Другие языки** узла **Установленные** .
+    > В зависимости от основного используемого языка программирования Visual Studio узел **Visual C#** или **Visual Basic** может располагаться в узле **Другие языки** под узлом **Установлено**.
 
-     Убедитесь, что в раскрывающемся списке версий .NET Framework выбран пункт **.NET Framework 4.5** . В списке **Рабочий процесс** выберите **Консольное приложение рабочего процесса** . Введите `NumberGuessWorkflowHost` в поле **Имя** и нажмите кнопку **ОК**. Будет создано начальное приложение рабочего процесса с базовой поддержкой размещения рабочего процесса. Этот базовый код размещения изменяется и используется для выполнения приложения рабочего процесса.
+     Убедитесь, что в раскрывающемся списке версий .NET Framework выбран пункт **.NET Framework 4.5**. В списке **Рабочий процесс** выберите **Консольное приложение рабочего процесса** . Введите `NumberGuessWorkflowHost` в поле **Имя** и нажмите кнопку **ОК**. Будет создано начальное приложение рабочего процесса с базовой поддержкой размещения рабочего процесса. Этот базовый код размещения изменяется и используется для выполнения приложения рабочего процесса.
 
 4. Щелкните правой кнопкой мыши созданный проект **NumberGuessWorkflowHost** в **обозревателе решений** и выберите **Добавить ссылку**. Выберите **Решение** из списка **Добавление ссылки** , установите флажок рядом с **NumberGuessWorkflowActivities**и нажмите кнопку **ОК**.
 
-5. Щелкните правой кнопкой мыши **Workflow1.xaml** в окне **Обозреватель решений** и выберите **Удалить**. Нажмите кнопку **ОК** для подтверждения.
+5. Щелкните правой кнопкой мыши **Workflow1.xaml** в окне **Обозреватель решений** и выберите **Удалить**. Для подтверждения нажмите кнопку **ОК**.
 
 ### <a name="to-modify-the-workflow-hosting-code"></a>Изменение кода размещения рабочего процесса
 
 1. В **Solution Explorer** дважды щелкните **Program.cs** или **Module1.vb** для вывода кода.
 
     > [!TIP]
-    > Если окно **Обозреватель решений** не отображается, в меню **Вид** выберите пункт **Обозреватель решений** .
+    > Если окно **Обозреватель решений** не отображается, выберите пункт **Обозреватель решений** в меню **Вид**.
 
      Поскольку этот проект был создан с помощью шаблона **Консольное приложение рабочего процесса** , **Program.cs** или **Module1.vb** содержит следующий базовый код размещения рабочего процесса.
 
@@ -77,7 +78,7 @@ ms.locfileid: "70044354"
      Замените строки кода, использующие <xref:System.Activities.WorkflowInvoker> , следующим базовым кодом размещения <xref:System.Activities.WorkflowApplication> . Этот образец кода размещения показывает основные шаги по размещению и вызову рабочего процесса, но пока не обладает достаточной функциональностью для успешного выполнения рабочего процесса, описанного в данном разделе. В ходе следующих шагов этот базовый код модифицируется и добавляются дополнительные функции, пока приложение не будет полностью готово.
 
     > [!NOTE]
-    > Замените `Workflow1` в этих `FlowchartNumberGuessWorkflow`примерах на, `SequentialNumberGuessWorkflow`или `StateMachineNumberGuessWorkflow`, в зависимости от того, какой рабочий процесс был выполнен в [предыдущем примере. Создайте шаг рабочего](how-to-create-a-workflow.md) процесса. Если не заменить `Workflow1` , то при попытке создать или запустить рабочий процесс будут выданы ошибки сборки.
+    > Замените `Workflow1` в этих примерах на `FlowchartNumberGuessWorkflow`, `SequentialNumberGuessWorkflow`или `StateMachineNumberGuessWorkflow`в зависимости от рабочего процесса, который вы выполнили на предыдущем шаге [How to: Create a Workflow](how-to-create-a-workflow.md) . Если не заменить `Workflow1` , то при попытке создать или запустить рабочий процесс будут выданы ошибки сборки.
 
      [!code-csharp[CFX_WF_GettingStarted#4](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/extrasnippets.cs#4)]
      [!code-vb[CFX_WF_GettingStarted#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/extrasnippets.vb#4)]
@@ -94,7 +95,7 @@ ms.locfileid: "70044354"
 2. Замените строку кода, создающую новое <xref:System.Activities.WorkflowApplication> , следующим кодом, который создает и передает словарь параметров рабочему процессу, когда процесс создается.
 
     > [!NOTE]
-    > Замените `Workflow1` в этих `FlowchartNumberGuessWorkflow`примерах на, `SequentialNumberGuessWorkflow`или `StateMachineNumberGuessWorkflow`, в зависимости от того, какой рабочий процесс был выполнен в [предыдущем примере. Создайте шаг рабочего](how-to-create-a-workflow.md) процесса. Если не заменить `Workflow1` , то при попытке создать или запустить рабочий процесс будут выданы ошибки сборки.
+    > Замените `Workflow1` в этих примерах на `FlowchartNumberGuessWorkflow`, `SequentialNumberGuessWorkflow`или `StateMachineNumberGuessWorkflow`в зависимости от рабочего процесса, который вы выполнили на предыдущем шаге [How to: Create a Workflow](how-to-create-a-workflow.md) . Если не заменить `Workflow1` , то при попытке создать или запустить рабочий процесс будут выданы ошибки сборки.
 
      [!code-csharp[CFX_WF_GettingStarted#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#6)]
      [!code-vb[CFX_WF_GettingStarted#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#6)]
@@ -120,7 +121,7 @@ ms.locfileid: "70044354"
      [!code-csharp[CFX_WF_GettingStarted#9](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#9)]
      [!code-vb[CFX_WF_GettingStarted#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#9)]
 
-     Каждый раз, когда рабочий процесс переходит в неактивный режим в ожидании следующего предположения, вызывается этот обработчик и устанавливается `idleAction` <xref:System.Threading.AutoResetEvent> . Код на следующем этапе использует `idleEvent` и `syncEvent` , чтобы определить, ждет рабочий процесс следующего предположения или он завершился.
+     Каждый раз, когда рабочий процесс переходит в режим ожидания следующего предположения, вызывается этот обработчик и `idleAction` <xref:System.Threading.AutoResetEvent> задается. Код на следующем этапе использует `idleEvent` и `syncEvent` , чтобы определить, ждет рабочий процесс следующего предположения или он завершился.
 
     > [!NOTE]
     > В этом примере ведущее приложение использует события автоматического сброса в обработчиках <xref:System.Activities.WorkflowApplication.Completed%2A> и <xref:System.Activities.WorkflowApplication.Idle%2A> , чтобы синхронизировать ведущее приложение с ходом выполнения рабочего процесса. Устанавливать блокировку и ждать неактивности рабочего процесса перед возобновлением закладки не обязательно, но в этом примере требуются события синхронизации, чтобы узел знал, завершен ли рабочий процесс, или он ждет дальнейшего ввода данных от пользователя с помощью <xref:System.Activities.Bookmark>. Дополнительные сведения см. в разделе [закладки](bookmarks.md).
@@ -137,7 +138,7 @@ ms.locfileid: "70044354"
      [!code-csharp[CFX_WF_GettingStarted#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#11)]
      [!code-vb[CFX_WF_GettingStarted#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#11)]
 
-## <a name="BKMK_ToRunTheApplication"></a> Сборка и запуск приложения
+## <a name="to-build-and-run-the-application"></a><a name="BKMK_ToRunTheApplication"></a>Сборка и запуск приложения
 
 1. Щелкните правой кнопкой мыши **NumberGuessWorkflowHost** в окне **Обозреватель решений** и выберите команду **Установить как запускаемый проект**.
 
@@ -148,24 +149,24 @@ ms.locfileid: "70044354"
      [!code-csharp[CFX_WF_GettingStarted#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#6)]
      [!code-vb[CFX_WF_GettingStarted#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#6)]
 
-     Инструкции по добавлению сохраняемости в приложение рабочего процесса см. в следующем разделе [: Создание и запуск длительно выполняемого](how-to-create-and-run-a-long-running-workflow.md)рабочего процесса.
+     Инструкции по добавлению сохраняемости к приложению рабочего процесса см. в следующем разделе [How to: Create and Run a Long Running Workflow](how-to-create-and-run-a-long-running-workflow.md).
 
 ## <a name="example"></a>Пример
  Ниже приведен полный код для метода `Main` .
 
 > [!NOTE]
-> Замените `Workflow1` в этих `FlowchartNumberGuessWorkflow`примерах на, `SequentialNumberGuessWorkflow`или `StateMachineNumberGuessWorkflow`, в зависимости от того, какой рабочий процесс был выполнен в [предыдущем примере. Создайте шаг рабочего](how-to-create-a-workflow.md) процесса. Если не заменить `Workflow1` , то при попытке создать или запустить рабочий процесс будут выданы ошибки сборки.
+> Замените `Workflow1` в этих примерах на `FlowchartNumberGuessWorkflow`, `SequentialNumberGuessWorkflow`или `StateMachineNumberGuessWorkflow`в зависимости от рабочего процесса, который вы выполнили на предыдущем шаге [How to: Create a Workflow](how-to-create-a-workflow.md) . Если не заменить `Workflow1` , то при попытке создать или запустить рабочий процесс будут выданы ошибки сборки.
 
  [!code-csharp[CFX_WF_GettingStarted#12](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#12)]
  [!code-vb[CFX_WF_GettingStarted#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#12)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.Activities.WorkflowApplication>
 - <xref:System.Activities.Bookmark>
-- [Программирование в Windows Workflow Foundation](programming.md)
-- [Руководство по началу работы](getting-started-tutorial.md)
+- [Программирование в Windows Workflow Foundation](programming.md)
+- [Учебник по началу работы](getting-started-tutorial.md)
 - [Практическое руководство. Создание рабочего процесса](how-to-create-a-workflow.md)
-- [Практическое руководство. Создание и запуск длительно выполняемого рабочего процесса](how-to-create-and-run-a-long-running-workflow.md)
+- [Практическое руководство. Создание и запуск длительного рабочего процесса](how-to-create-and-run-a-long-running-workflow.md)
 - [Ожидание входных данных в рабочем процессе](waiting-for-input-in-a-workflow.md)
 - [Размещение рабочих процессов](hosting-workflows.md)

@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 72560de9777b2d826418e63b4a4fcccf1e4fa8b9
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: ae1ef2a3c8cf9e042ab9ab233ed993f8e36b2fce
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396482"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420946"
 ---
 # <a name="ixclrdatamethoddefinitionenuminstance-method"></a>Метод Иксклрдатамесоддефинитион:: Енуминстанце
 
@@ -45,13 +45,13 @@ HRESULT EnumInstance(
 `instance`\
 заполняет Перечислимый экземпляр.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Предоставленный метод является частью `IXCLRDataMethodDefinition` интерфейса и соответствует шестому слоту таблицы виртуального метода.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
 **.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  

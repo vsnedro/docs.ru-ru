@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cbaca4e1-4473-459b-ba34-f1f59ce7c0ba
 topic_type:
 - apiref
-ms.openlocfilehash: 924feaeb91b42404461ad5d276c0cb77279d4dc4
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 2dd70693528904459a34689dbad944c65c971254
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449278"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441647"
 ---
 # <a name="isymunmanagedconstantgetname-method"></a>Метод ISymUnmanagedConstant::GetName
 Возвращает имя константы.  
@@ -37,10 +37,10 @@ HRESULT GetName(
   
 ## <a name="parameters"></a>Параметры  
  `cchName`  
- окне Длина буфера, на который указывает параметр `szName`.  
+ окне Длина буфера, `szName` на который указывает параметр.  
   
  `pcchName`  
- заполняет Указатель на `ULONG32`, который получает размер (в символах) буфера, необходимого для хранения имени, включая завершающее пустое значение.  
+ заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения имени, включая завершение нулевого значения.  
   
  `szName`  
  заполняет Буфер, в котором хранится имя.  
@@ -51,8 +51,8 @@ HRESULT GetName(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedConstant](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)
-- [Метод GetSignature](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getsignature-method.md)
-- [Метод GetValue](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getvalue-method.md)
+- [Интерфейс ISymUnmanagedConstant](isymunmanagedconstant-interface.md)
+- [Метод GetSignature](isymunmanagedconstant-getsignature-method.md)
+- [Метод GetValue](isymunmanagedconstant-getvalue-method.md)

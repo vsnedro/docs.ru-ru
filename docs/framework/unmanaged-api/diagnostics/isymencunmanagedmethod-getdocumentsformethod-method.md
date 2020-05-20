@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bd6ccde5-d578-48d8-abed-b474fbd48d13
 topic_type:
 - apiref
-ms.openlocfilehash: 97f0d81c389ffd0bd8a69df2ca39322d726f98bc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 89be772ee3d8a6fc5acb74d5ebe6d3c691764f89
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176634"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441959"
 ---
 # <a name="isymencunmanagedmethodgetdocumentsformethod-method"></a>Метод ISymENCUnmanagedMethod::GetDocumentsForMethod
-Получает документы, в которые есть строки этого метода.  
+Возвращает документы, в которых у этого метода есть строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,20 +36,20 @@ HRESULT GetDocumentsForMethod(
   
 ## <a name="parameters"></a>Параметры  
  `cDocs`  
- (в) Длина буфера, на `pcDocs`который указывает .  
+ окне Длина буфера, на который указывает `pcDocs` .  
   
  `pcDocs`  
- (ваут) Указатель на `ULONG32` указатель, который получает размер в символах буфера, необходимого для хранения документов.  
+ заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения документов.  
   
  `documents`  
- (в) Буфер, содержащий документы.  
+ окне Буфер, содержащий документы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- S_OK, если метод удается; в противном случае код ошибки.  
+ S_OK, если метод выполнен. в противном случае — код ошибки.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** CorSym.idl, CorSym.h  
+ **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymENCUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+- [Интерфейс ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)

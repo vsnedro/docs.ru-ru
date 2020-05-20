@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3eb41151-a228-43e3-ba8f-e6dd3ceb8542
 topic_type:
 - apiref
-ms.openlocfilehash: 401dfbea0da309db24f3052f462daa66e8bbef4a
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 332d60418c744a9391c7c0afc20248c2239b090c
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449271"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441624"
 ---
 # <a name="isymunmanagedconstantgetsignature-method"></a>Метод ISymUnmanagedConstant::GetSignature
 Возвращает сигнатуру константы.  
@@ -37,10 +37,10 @@ HRESULT GetSignature(
   
 ## <a name="parameters"></a>Параметры  
  `cSig`  
- окне Длина буфера, на который указывает параметр `pcSig`.  
+ окне Длина буфера, `pcSig` на который указывает параметр.  
   
  `pcSig`  
- заполняет Указатель на `ULONG32`, который получает размер (в символах) буфера, необходимого для хранения подписи.  
+ заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения подписи.  
   
  `sig`  
  заполняет Буфер, в котором хранится подпись.  
@@ -51,8 +51,8 @@ HRESULT GetSignature(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedConstant](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)
-- [Метод GetName](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getname-method.md)
-- [Метод GetValue](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getvalue-method.md)
+- [Интерфейс ISymUnmanagedConstant](isymunmanagedconstant-interface.md)
+- [Метод GetName](isymunmanagedconstant-getname-method.md)
+- [Метод GetValue](isymunmanagedconstant-getvalue-method.md)

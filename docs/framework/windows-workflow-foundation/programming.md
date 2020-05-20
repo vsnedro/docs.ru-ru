@@ -1,29 +1,30 @@
 ---
 title: Программирование в Windows Workflow Foundation
+description: В этой статье содержатся ссылки, которые необходимо знать, чтобы стать хорошо понятным Windows Workflow Foundation программисту.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Workflow Foundation [WF], programming
 - programming [WF]
 - WF [WF], programming
 ms.assetid: f62354e2-6a2b-4e8c-a4bc-533fb96267a4
-ms.openlocfilehash: 3b4e56c332567cdf1aea94a836ef7dcdcd8a94fe
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 33c656ed453a1a2df6916c691245e01bbf7c6f33
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61794359"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421453"
 ---
 # <a name="windows-workflow-foundation-programming"></a>Программирование в Windows Workflow Foundation
-Этот раздел содержит набор разделов, которые нужно изучить, чтобы стать программистом опытом использования Windows Workflow Foundation (WF).  
+Этот раздел содержит набор разделов руководства, которые следует понимать, чтобы стать хорошо знакомым программистом Windows Workflow Foundation (WF).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Разработка рабочих процессов](designing-workflows.md)  
  Разделы, которые описывают парадигмы управления потоками, используемые в разработке рабочих процессов.  
   
  [Использование и создание действий](using-and-creating-activities.md)  
- Разделы, в которых описываются системные действия, доступные в Windows Workflow Foundation (WF).  
+ Разделы, описывающие предоставляемые системой действия, доступные в Windows Workflow Foundation (WF).  
   
- [Модель данных Windows Workflow Foundation](data-model.md)  
+ [Модель данных Windows Workflow Foundation](data-model.md)  
  Разделы, которые описывают переменные, аргументы и выражения в [!INCLUDE[wf1](../../../includes/wf1-md.md)].  
   
  [Ожидание входных данных в рабочем процессе](waiting-for-input-in-a-workflow.md)  
@@ -38,10 +39,10 @@ ms.locfileid: "61794359"
  [Динамическое обновление](dynamic-update.md)  
  Описывает способ обновления определения рабочего процесса сохраненного экземпляра рабочего процесса с помощью динамического обновления.  
   
- [Службы рабочих процессов](../wcf/feature-details/workflow-services.md)  
+ [Службы рабочего процесса](../wcf/feature-details/workflow-services.md)  
  Подразделы, описывающие модель программирования, которая поддерживает написание служб декларативно.  
   
- [Сохраняемость рабочих процессов](workflow-persistence.md)  
+ [Сохраняемость рабочего процесса](workflow-persistence.md)  
  Разделы, в которых описаны параметры автоматического или ручного сохранения данных рабочих процессов и выгрузки рабочих процессов из памяти.  
   
  [Руководство по миграции](migration-guidance.md)  
@@ -51,7 +52,7 @@ ms.locfileid: "61794359"
  Разделы, описывающие отслеживание, трассировку рабочих процессов и способ использования этих возможностей для мониторинга рабочих процессов.  
   
  [Безопасность рабочих процессов](workflow-security.md)  
- В этой статье описывается безопасность рабочего процесса при использовании SQL и Windows Communication Foundation (WCF).  
+ Описывает, как обеспечить безопасность рабочего процесса при использовании SQL и Windows Communication Foundation (WCF).  
   
- [Производительность Windows Workflow Foundation 4](performance.md)  
- Описывает производительность Windows Workflow Foundation 4 и сравнивает его с предыдущей версией WF.
+ [Производительность Windows Workflow Foundation 4](performance.md)  
+ Описывает Windows Workflow Foundation 4 и сравнивает их с предыдущей версией WF.

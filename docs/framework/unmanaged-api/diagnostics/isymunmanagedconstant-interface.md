@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e11c9baa-4cf1-4bb4-a95f-b1908893b46c
 topic_type:
 - apiref
-ms.openlocfilehash: ca5afa8c0cf0198dbc8ab65824605f18c22dcdbb
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 58d81fd150684f254333c17374d06f7dd5b95823
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449259"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441418"
 ---
 # <a name="isymunmanagedconstant-interface"></a>Интерфейс ISymUnmanagedConstant
 Предоставляет доступ к неуправляемым константам.  
@@ -28,13 +28,13 @@ ms.locfileid: "74449259"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetName](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getname-method.md)|Возвращает имя константы.|  
-|[Метод GetSignature](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getsignature-method.md)|Возвращает сигнатуру константы.|  
-|[Метод GetValue](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getvalue-method.md)|Возвращает значение константы.|  
+|[Метод GetName](isymunmanagedconstant-getname-method.md)|Возвращает имя константы.|  
+|[Метод GetSignature](isymunmanagedconstant-getsignature-method.md)|Возвращает сигнатуру константы.|  
+|[Метод GetValue](isymunmanagedconstant-getvalue-method.md)| Возвращает значение константы.|  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
