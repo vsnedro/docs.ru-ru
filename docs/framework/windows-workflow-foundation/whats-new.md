@@ -1,23 +1,24 @@
 ---
 title: Новые возможности в Windows Workflow Foundation (WF)
+description: Сведения об изменениях Windows Workflow Foundation в .NET Framework 4. Рабочие процессы проще создавать, выполнять и обслуживать.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Workflow Foundation [WF], what's new
 - WF [WF], what's new
 ms.assetid: 11f96014-001e-41a0-bcc2-d0684a52fa43
-ms.openlocfilehash: 8f79c6d2a564571f8b753f322a79e91a01b1cf2f
-ms.sourcegitcommit: fbb8a593a511ce667992502a3ce6d8f65c594edf
+ms.openlocfilehash: b25b71a61f8a96d59c79e780d9fe5cd03abfa299
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74142001"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83419347"
 ---
 # <a name="whats-new-in-windows-workflow-foundation"></a>Новые возможности в Windows Workflow Foundation (WF)
 
 Windows Workflow Foundation (WF) в .NET Framework 4 изменяет несколько парадигм разработки из предыдущих версий. Теперь рабочие процессы стало еще проще создавать, выполнять и поддерживать, а также реализовывать узел с новыми функциями. Дополнительные сведения о переносе приложений рабочих процессов .NET 3,0 и .NET 3,5 на использование последней версии см. в [руководстве по миграции](migration-guidance.md).  
   
 ## <a name="workflow-activity-model"></a>Модель действий рабочего процесса  
- Теперь действие, а не использования класса <xref:System.Workflow.Activities.SequentialWorkflowActivity> или <xref:System.Workflow.Activities.StateMachineWorkflowActivity> является базовой единицей создания рабочего процесса. Класс <xref:System.Activities.Activity> обеспечивает базовую абстракцию поведения рабочего процесса. Авторы действий могут использовать <xref:System.Activities.CodeActivity> для базовых функций пользовательских действий или <xref:System.Activities.NativeActivity> для функций пользовательских действий, использующих среду выполнения. <xref:System.Activities.Activity> — это класс, используемый авторами действий для декларативного выражения новых поведений с точки зрения других <xref:System.Activities.NativeActivity>, <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>или <xref:System.Activities.DynamicActivity> объектов, независимо от того, разработаны они как пользовательские или включенные во [встроенную библиотеку действий](net-framework-4-5-built-in-activity-library.md).  
+ Теперь действие, а не использования класса <xref:System.Workflow.Activities.SequentialWorkflowActivity> или <xref:System.Workflow.Activities.StateMachineWorkflowActivity> является базовой единицей создания рабочего процесса. Класс <xref:System.Activities.Activity> обеспечивает базовую абстракцию поведения рабочего процесса. Авторы действий могут использовать <xref:System.Activities.CodeActivity> для базовых функций пользовательских действий или <xref:System.Activities.NativeActivity> для функций пользовательских действий, использующих среду выполнения. <xref:System.Activities.Activity>класс, используемый авторами действий для выражения новых поведений декларативно с точки зрения других <xref:System.Activities.NativeActivity> объектов,, <xref:System.Activities.CodeActivity> <xref:System.Activities.AsyncCodeActivity> или <xref:System.Activities.DynamicActivity> , независимо от того, созданы они или включены в [встроенную библиотеку действий](net-framework-4-5-built-in-activity-library.md).  
   
 ## <a name="rich-composite-activity-options"></a>Параметры сложных композитных действий  
  <xref:System.Activities.Statements.Flowchart> - это новое мощное действие потока управления, позволяющее авторам моделировать произвольные циклы и условное ветвление. <xref:System.Activities.Statements.Flowchart> предоставляет модель программирования на основе событий, которую раньше можно было реализовать только с помощью <xref:System.Workflow.Activities.StateMachineWorkflowActivity>. Процедурные рабочие процессы получают дополнительные преимущества благодаря новым действиям управления потоком, которые моделируют обычные структуры управления потоком, такие как <xref:System.Activities.Statements.TryCatch> и <xref:System.Activities.Statements.Switch%601>.  

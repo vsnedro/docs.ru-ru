@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 8757642db6c4375cf55d1f7288669c4c8a752a38
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 3c2bc771c0a131329b9403c99a33ca7b79023771
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790394"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420855"
 ---
 # <a name="ixclrdatamodule-interface"></a>Интерфейс IXCLRDataModule
 
@@ -32,22 +32,22 @@ ms.locfileid: "76790394"
 
 | Метод                                                                                                                                | Описание                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [жетмесоддефинитионбитокен](ixclrdatamodule-getmethoddefinitionbytoken-method.md) | Возвращает определение метода, соответствующее заданному маркеру метаданных. |
-| [Запрос](ixclrdatamodule-request-method.md)                                       | Запросы на заполнение буфера данными модуля.       |
-| [жетверсионид](ixclrdatamodule-getversionid-method.md)                             | Возвращает идентификатор версии модуля.                                       |
+| [GetMethodDefinitionByToken](ixclrdatamodule-getmethoddefinitionbytoken-method.md) | Возвращает определение метода, соответствующее заданному маркеру метаданных. |
+| [Получения](ixclrdatamodule-request-method.md)                                       | Запросы на заполнение буфера данными модуля.       |
+| [GetVersionId](ixclrdatamodule-getversionid-method.md)                             | Возвращает идентификатор версии модуля.                                       |
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` с GUID `88E32849-0A0A-4cb0-9022-7CD2E9E139E2`, который можно получить с помощью обычных механизмов COM.
+Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` GUID `88E32849-0A0A-4cb0-9022-7CD2E9E139E2` , который можно получить с помощью стандартных механизмов com.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Отладка](index.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

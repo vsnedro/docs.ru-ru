@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: c51825433bbc86c897c097475d5c15c855f6ec8b
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 0b1c982b25af9edea76a038b4314b4bd608f07df
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790413"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420894"
 ---
 # <a name="ixclrdatamethodinstance-interface"></a>Интерфейс IXCLRDataMethodInstance
 
@@ -32,21 +32,21 @@ ms.locfileid: "76790413"
 
 | Метод                                                                                                                  | Описание                                 |
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [жетиладдрессмап](ixclrdatamethodinstance-getiladdressmap-method.md) | Возвращает IL для сопоставления сведений о сопоставлении. |
-| [жетрепресентативинтряддресс](ixclrdatamethodinstance-getrepresentativeentryaddress-method.md) | Возвращает наиболее репрезентативный адрес точки входа для собственной компиляции всех возможных точек входа для метода. |
+| [GetILAddressMap](ixclrdatamethodinstance-getiladdressmap-method.md) | Возвращает IL для сопоставления сведений о сопоставлении. |
+| [GetRepresentativeEntryAddress](ixclrdatamethodinstance-getrepresentativeentryaddress-method.md) | Возвращает наиболее репрезентативный адрес точки входа для собственной компиляции всех возможных точек входа для метода. |
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` с GUID `ECD73800-22CA-4b0d-AB55-E9BA7E6318A5`, который можно получить с помощью обычных механизмов COM.
+Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` GUID `ECD73800-22CA-4b0d-AB55-E9BA7E6318A5` , который можно получить с помощью стандартных механизмов com.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Отладка](index.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

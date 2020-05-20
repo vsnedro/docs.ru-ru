@@ -1,20 +1,20 @@
 ---
 title: Выражения запросов
-description: Сведения о поддержке выражений запросов для LINQ в языке F# программирования.
+description: 'Сведения о поддержке выражений запросов для LINQ на языке программирования F #.'
 ms.date: 05/16/2016
-ms.openlocfilehash: f0c7245a930a06576487a61d73a1e5b94190ee59
-ms.sourcegitcommit: 14ad34f7c4564ee0f009acb8bfc0ea7af3bc9541
+ms.openlocfilehash: bbd15352aa89bd1891b409177921a675784a0227
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73424886"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83419191"
 ---
 # <a name="query-expressions"></a>Выражения запросов
 
 > [!NOTE]
 > Ссылки на справочник по API в этой статье ведут на сайт MSDN.  Работа над справочником по API docs.microsoft.com не завершена.
 
-Выражения запросов позволяют запрашивать источник данных и размещать данные в нужной форме. Выражения запросов обеспечивают поддержку LINQ в F#.
+Выражения запросов позволяют запрашивать источник данных и размещать данные в нужной форме. Выражения запросов обеспечивают поддержку LINQ в F #.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -22,9 +22,9 @@ ms.locfileid: "73424886"
 query { expression }
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Выражения запросов — это тип вычислительного выражения, аналогичный выражениям последовательности. Точно так же, как вы указываете последовательность, предоставляя код в выражении последовательности, вы указываете набор данных, предоставляя код в выражении запроса. В выражении последовательности ключевое слово `yield` определяет данные, возвращаемые как часть результирующей последовательности. В выражениях запроса ключевое слово `select` выполняет ту же функцию. Помимо ключевого слова `select`, F# также поддерживает несколько операторов запросов, которые во многом аналогичны частям инструкции SQL SELECT. Ниже приведен пример простого выражения запроса вместе с кодом, который подключается к источнику OData базы данных Northwind.
+Выражения запросов — это тип вычислительного выражения, аналогичный выражениям последовательности. Точно так же, как вы указываете последовательность, предоставляя код в выражении последовательности, вы указываете набор данных, предоставляя код в выражении запроса. В выражении последовательности `yield` ключевое слово определяет данные, возвращаемые как часть результирующей последовательности. В выражениях запросов `select` ключевое слово выполняет ту же функцию. Кроме `select` ключевого слова, F # также поддерживает ряд операторов запросов, которые во многом аналогичны частям инструкции SQL SELECT. Ниже приведен пример простого выражения запроса вместе с кодом, который подключается к источнику OData базы данных Northwind.
 
 ```fsharp
 // Use the OData type provider to create types that can be used to access the Northwind database.
@@ -46,17 +46,17 @@ query1
 |> Seq.iter (fun customer -> printfn "Company: %s Contact: %s" customer.CompanyName customer.ContactName)
 ```
 
-В предыдущем примере кода выражение запроса заключено в фигурные скобки. Значение кода в выражении — возвращает каждого клиента в таблице Customers в базе данных в результатах запроса. Выражения запроса возвращают тип, реализующий <xref:System.Linq.IQueryable%601> и <xref:System.Collections.Generic.IEnumerable%601>, поэтому их можно итеративно использовать в [модуле seq](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) , как показано в примере.
+В предыдущем примере кода выражение запроса заключено в фигурные скобки. Значение кода в выражении — возвращает каждого клиента в таблице Customers в базе данных в результатах запроса. Выражения запроса возвращают тип, который реализует <xref:System.Linq.IQueryable%601> и <xref:System.Collections.Generic.IEnumerable%601> , и поэтому их можно перебирать с помощью [модуля seq](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) , как показано в примере.
 
-Каждый тип вычислительного выражения строится на основе класса построителя. Класс построителя для выражения вычисления запроса `QueryBuilder`. Дополнительные сведения см. в разделе [выражения вычислений](computation-expressions.md) и [класс LINQ. QueryBuilder](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d).
+Каждый тип вычислительного выражения строится на основе класса построителя. Класс построителя для выражения вычисления запроса имеет значение `QueryBuilder` . Дополнительные сведения см. в разделе [выражения вычислений](computation-expressions.md) и [класс LINQ. QueryBuilder](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d).
 
 ## <a name="query-operators"></a>Операторы запроса
 
-Операторы запросов позволяют указать сведения о запросе, например, чтобы задать условия для возвращаемых записей, или указать порядок сортировки результатов. Источник запроса должен поддерживать оператор запроса. При попытке использовать неподдерживаемый оператор запроса возникнет `System.NotSupportedException`.
+Операторы запросов позволяют указать сведения о запросе, например, чтобы задать условия для возвращаемых записей, или указать порядок сортировки результатов. Источник запроса должен поддерживать оператор запроса. При попытке использовать неподдерживаемый оператор запроса `System.NotSupportedException` будет создано исключение.
 
-В выражениях запросов допускаются только выражения, которые могут быть преобразованы в SQL. Например, в выражениях нельзя использовать вызовы функций при использовании оператора запроса `where`.
+В выражениях запросов допускаются только выражения, которые могут быть преобразованы в SQL. Например, при использовании оператора запроса в выражениях не допускаются вызовы функций `where` .
 
-В таблице 1 показаны доступные операторы запросов. Кроме того, см. раздел Table2, в котором сравниваются SQL запросы F# и эквивалентные выражения запросов далее в этом разделе. Некоторые поставщики типов не поддерживают некоторые операторы запросов. В частности, поставщик типов OData ограничен в операторах запросов, которые он поддерживает, из-за ограничений в OData. Дополнительные сведения см. в разделе [ODataService Type ProviderF#()](https://msdn.microsoft.com/library/bac609dd-9d12-4bf9-a662-24bdf4faa43e).
+В таблице 1 показаны доступные операторы запросов. Кроме того, см. раздел Table2, в котором сравниваются SQL запросы и эквивалентные выражения запросов F # далее в этом разделе. Некоторые поставщики типов не поддерживают некоторые операторы запросов. В частности, поставщик типов OData ограничен в операторах запросов, которые он поддерживает, из-за ограничений в OData. Дополнительные сведения см. в разделе [ODataService Type Provider (F #)](https://msdn.microsoft.com/library/bac609dd-9d12-4bf9-a662-24bdf4faa43e).
 
 В этой таблице предполагается, что база данных имеет следующий вид:
 
@@ -83,7 +83,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 
 <table style="width:100%">
   <tr>
-    <th>оператора</th>
+    <th>Оператор</th>
     <th>Описание</th>
   </tr>
   <tr>
@@ -231,7 +231,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </code></pre>
 
 </td></tr><tr>
-<td><code>thenBy</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в возрастающем порядке по заданному ключу сортировки. Этот оператор можно использовать только после <code>sortBy</code>, <code>sortByDescending</code>, <code>thenBy</code>или <code>thenByDescending</code>.<br/><br/>
+<td><code>thenBy</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в возрастающем порядке по заданному ключу сортировки. Этот оператор может использоваться только после <code>sortBy</code> , <code>sortByDescending</code> , <code>thenBy</code> или <code>thenByDescending</code> .<br/><br/>
 
 <pre><code class="lang-fsharp">query {
     for student in db.Student do
@@ -243,7 +243,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </code></pre>
 
 </td></tr><tr>
-<td><code>thenByDescending</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в порядке убывания по заданному ключу сортировки. Этот оператор можно использовать только после <code>sortBy</code>, <code>sortByDescending</code>, <code>thenBy</code>или <code>thenByDescending</code>.<br/><br/>
+<td><code>thenByDescending</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в порядке убывания по заданному ключу сортировки. Этот оператор может использоваться только после <code>sortBy</code> , <code>sortByDescending</code> , <code>thenBy</code> или <code>thenByDescending</code> .<br/><br/>
 
 <pre><code class="lang-fsharp">query {
     for student in db.Student do
@@ -265,7 +265,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </code></pre>
 
 </td></tr><tr>
-<td><code>join</code></td><td>Сопоставляет два набора выбранных значений на основе совпадающих ключей. Обратите внимание, что порядок клавиш вокруг знака = в выражении Join является существенным. Во всех объединениях, если строка разделяется после <code>-&gt;</code> символа, отступ должен быть меньше, чем ключевое слово <code>for</code>.<br/><br/>
+<td><code>join</code></td><td>Сопоставляет два набора выбранных значений на основе совпадающих ключей. Обратите внимание, что порядок клавиш вокруг знака = в выражении Join является существенным. Во всех объединениях, если строка разбивается после <code>-&gt;</code> символа, отступ должен иметь отступ по крайней мере до ключевого слова <code>for</code> .<br/><br/>
 
 <pre><code class="lang-fsharp">query {
     for student in db.Student do
@@ -474,7 +474,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </code></pre>
 
 </td></tr><tr>
-<td><code>thenByNullable</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в возрастающем порядке по заданному ключу сортировки, допускающему значение null. Этот оператор может использоваться только сразу после <code>sortBy</code>, <code>sortByDescending</code>, <code>thenBy</code>или <code>thenByDescending</code>или их разновидностей, допускающих значение null.<br/><br/>
+<td><code>thenByNullable</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в возрастающем порядке по заданному ключу сортировки, допускающему значение null. Этот оператор может использоваться только сразу после,, <code>sortBy</code> , <code>sortByDescending</code> <code>thenBy</code> или <code>thenByDescending</code> их вариантов, допускающих значение null.<br/><br/>
 
 <pre><code class="lang-fsharp">query {
     for student in db.Student do
@@ -485,7 +485,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </code></pre>
 
 </td></tr><tr>
-<td><code>thenByNullableDescending</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в убывающем порядке по заданному ключу сортировки, допускающему значение null. Этот оператор может использоваться только сразу после <code>sortBy</code>, <code>sortByDescending</code>, <code>thenBy</code>или <code>thenByDescending</code>или их разновидностей, допускающих значение null.<br/><br/>
+<td><code>thenByNullableDescending</code></td><td>Выполняет последующее упорядочение элементов, выбранных на данный момент в убывающем порядке по заданному ключу сортировки, допускающему значение null. Этот оператор может использоваться только сразу после,, <code>sortBy</code> , <code>sortByDescending</code> <code>thenBy</code> или <code>thenByDescending</code> их вариантов, допускающих значение null.<br/><br/>
 
 <pre><code class="lang-fsharp">query {
     for student in db.Student do
@@ -500,14 +500,14 @@ let data = [ 1; 5; 7; 11; 18; 21]
 
 ## <a name="comparison-of-transact-sql-and-f-query-expressions"></a>Сравнение выражений запросов Transact-SQL и F#
 
-В следующей таблице показаны некоторые распространенные запросы Transact-SQL и их эквиваленты F#в. Код в этой таблице также предполагает ту же базу данных, что и Предыдущая таблица, и тот же начальный код для настройки поставщика типов.
+В следующей таблице показаны некоторые распространенные запросы Transact-SQL и их эквиваленты в F #. Код в этой таблице также предполагает ту же базу данных, что и Предыдущая таблица, и тот же начальный код для настройки поставщика типов.
 
-### <a name="table-2-transact-sql-and-f-query-expressions"></a>Таблица 2. Выражения запросов Transact-SQL и F#
+### <a name="table-2-transact-sql-and-f-query-expressions"></a>Таблица 2. Выражения запросов Transact-SQL и F#
 
 <table style="width:100%">
   <tr>
     <th>Transact-SQL (без учета регистра)</th>
-    <th>F#Выражение запроса (с учетом регистра)</th>
+    <th>Выражение запроса F # (с учетом регистра)</th>
   </tr>
 <tr><td>
 Выбрать все поля из таблицы.<br>
@@ -543,11 +543,14 @@ query {
 <td><code>EXISTS</code>
 <br />
 
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable no-space-in-emphasis -->
 <pre><code class="lang-sql">SELECT * FROM Student
 WHERE EXISTS
   (SELECT * FROM CourseSelection
    WHERE CourseSelection.StudentID = Student.StudentID)
 </code></pre>
+<!-- markdownlint-restore -->
 </td>
 
 <td>
@@ -608,11 +611,14 @@ query {
 </td></tr><tr><td>
 Группирование с условием подсчета.<br/>
 
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable no-space-in-emphasis -->
 <pre><code class="lang-sql">SELECT Student.Age, COUNT( * )
 FROM Student
 GROUP BY Student.Age
 HAVING COUNT( * ) > 1
 </code></pre>
+<!-- markdownlint-restore -->
 
 </td><td>
 
@@ -652,12 +658,15 @@ query {
 </td></tr><tr><td>
 Группирование, подсчет и упорядочивание по количеству.<br/>
 
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable no-space-in-emphasis -->
 <pre><code class="lang-sql">SELECT Student.Age, COUNT( * ) as myCount
 FROM Student
 GROUP BY Student.Age
 HAVING COUNT( * ) > 1
 ORDER BY COUNT( * ) DESC
 </code></pre>
+<!-- markdownlint-restore -->
 
 </td><td>
 
@@ -674,7 +683,7 @@ query {
 </code></pre>
 
 </td></tr><tr><td>
-<code>IN</code> набор указанных значений<br/>
+<code>IN</code>набор указанных значений<br/>
 
 <pre><code class="lang-sql">SELECT *
 FROM Student
@@ -715,7 +724,7 @@ query {
 </code></pre>
 
 </td></tr><tr><td>
-<code>LIKE</code> с набором совпадений шаблона.<br/>
+<code>LIKE</code>с набором совпадений шаблона.<br/>
 
 <pre><code class="lang-sql">-- '[abc]%' matches strings where the first character is
 -- 'a', 'b', 'c', 'A', 'B', or 'C'
@@ -732,7 +741,7 @@ WHERE Student.Name LIKE '[abc]%'
 </code></pre>
 
 </td></tr><tr><td>
-<code>LIKE</code> с шаблоном исключения Set.<br/>
+<code>LIKE</code>с шаблоном исключения Set.<br/>
 
 <pre><code class="lang-sql">-- '[^abc]%' matches strings where the first character is
 -- not 'a', 'b', 'c', 'A', 'B', or 'C'
@@ -751,7 +760,7 @@ query {
 </code></pre>
 
 </td></tr><tr><td>
-<code>LIKE</code> в одном поле, но выберите другое поле.<br/>
+<code>LIKE</code>в одном поле, но выберите другое поле.<br/>
 
 <pre><code class="lang-sql">SELECT StudentID AS ID FROM Student
 WHERE Student.Name LIKE '[^abc]%'
@@ -766,7 +775,7 @@ WHERE Student.Name LIKE '[^abc]%'
 }
 </code></pre>
 
-</td></tr><tr><td><code>LIKE</code>с поиском подстроки.<br/>
+</td></tr><tr><td><code>LIKE</code>, с поиском подстроки.<br/>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 WHERE Student.Name like '%A%'
@@ -783,7 +792,7 @@ query {
 </code></pre>
 
 </td></tr><tr><td>
-Простая <code>JOIN</code> с двумя таблицами.<br/>
+Простой <code>JOIN</code> с двумя таблицами.<br/>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 JOIN CourseSelection
@@ -801,7 +810,7 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td><code>LEFT JOIN</code> с двумя таблицами.<br/>
+</td></tr><tr><td><code>LEFT JOIN</code>с двумя таблицами.<br/>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 LEFT JOIN CourseSelection
@@ -903,7 +912,7 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td><code>OR</code> с упорядочением<br/>
+</td></tr><tr><td><code>OR</code>с упорядочением<br/>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 WHERE Student.Age = 12 OR Student.Age = 13
@@ -921,7 +930,7 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td><code>TOP</code>, <code>OR</code>и упорядочение.<br/>
+</td></tr><tr><td><code>TOP</code>, <code>OR</code> и упорядочение.<br/>
 
 <pre><code class="lang-sql">SELECT TOP 2 student.Name FROM Student
 WHERE Student.Age = 11 OR Student.Age = 12
@@ -943,12 +952,15 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td><code>UNION</code> двух запросов.<br/>
+</td></tr><tr><td><code>UNION</code>двух запросов.<br/>
 
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable no-space-in-emphasis -->
 <pre><code class="lang-sql">SELECT * FROM Student
 UNION
 SELECT * FROM lastStudent
 </code></pre>
+<!-- markdownlint-restore -->
 
 </td><td>
 
@@ -970,10 +982,13 @@ query2.Union (query1)
 
 </td></tr><tr><td>Пересечение двух запросов.<br/>
 
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable no-space-in-emphasis -->
 <pre><code class="lang-sql">SELECT * FROM Student
 INTERSECT
 SELECT * FROM LastStudent
 </code></pre>
+<!-- markdownlint-restore -->
 </td><td>
 
 <pre><code class="lang-fsharp">
@@ -992,7 +1007,7 @@ let query2 =
 query1.Intersect(query2)
 </code></pre>
 
-</td></tr><tr><td>условие <code>CASE</code>.<br/>
+</td></tr><tr><td><code>CASE</code>выполняет.<br/>
 
 <pre><code class="lang-sql">SELECT student.StudentID,
 CASE Student.Age
@@ -1861,7 +1876,7 @@ query {
 |> Seq.iter (fun (studentName, courseName) -> printfn "%s %s" studentName courseName)
 ```
 
-Ниже приведен полный результат выполнения этого кода в F# интерактивном режиме.
+Ниже приведен полный результат выполнения кода в F# Interactive.
 
 ```console
 --> Referenced 'C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll'
@@ -2422,8 +2437,8 @@ module Queries2 = begin
 end
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Справочник по языку F#](index.md)
+- [Справочник по языку F #](index.md)
 - [Класс LINQ. QueryBuilder](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)
 - [Выражения вычисления](Computation-Expressions.md)

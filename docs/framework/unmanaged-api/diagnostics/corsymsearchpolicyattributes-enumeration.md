@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: 03abde84-930a-49d3-bac3-23abb34a0184
 topic_type:
 - apiref
-ms.openlocfilehash: 786e53d43ecde0bc3a97fadb77184d25d41430bc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0cd451854d4dbb3b243339efdc33d7dcd7860eb7
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178346"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420608"
 ---
 # <a name="corsymsearchpolicyattributes-enumeration"></a>Перечисление CorSymSearchPolicyAttributes
-Определяет политику, которая будет использоваться при поиске считывателя символов. Эти константы используются методами [ISymUnmanagedBinder2::GetReaderForFile2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-getreaderforfile2-method.md) и [ISymUnmanagedBinder3::GetReaderFromCallback](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-getreaderfromcallback-method.md) методы.  
+Указывает политику, используемую при поиске средства чтения символов. Эти константы используются методами [ISymUnmanagedBinder2:: GetReaderForFile2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-getreaderforfile2-method.md) и [ISymUnmanagedBinder3:: жетреадерфромкаллбакк](isymunmanagedbinder3-getreaderfromcallback-method.md) .  
   
 > [!IMPORTANT]
-> Открытие файла базы данных программы (PDB) из недоверчивого источника представляет собой риск для обеспечения безопасности.  
+> При открытии файла базы данных программы (PDB) из ненадежного источника возникает угроза безопасности.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,18 +39,18 @@ typedef enum CorSymSearchPolicyAttributes
 } CorSymSearchPolicyAttributes;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`AllowRegistryAccess`|Запрашивает реестр путей поиска символов.|  
-|`AllowSymbolServerAccess`|Доступ к серверу символов.|  
-|`AllowOriginalPathAccess`|Поиск пути, указанного в каталоге Debug.|  
-|`AllowReferencePathAccess`|Поиск PDB в месте, где находится файл .exe.|  
+|`AllowRegistryAccess`|Запрашивает пути поиска символов в реестре.|  
+|`AllowSymbolServerAccess`|Обращается к серверу символов.|  
+|`AllowOriginalPathAccess`|Выполняет поиск по пути, указанному в каталоге отладки.|  
+|`AllowReferencePathAccess`|Выполняет поиск PDB в месте, где находится EXE-файл.|  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** CorSym.idl, CorSym.h  
+ **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+- [Перечисления хранилища символов диагностики](diagnostics-symbol-store-enumerations.md)

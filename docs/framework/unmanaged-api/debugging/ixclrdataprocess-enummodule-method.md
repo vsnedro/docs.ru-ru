@@ -1,5 +1,5 @@
 ---
-title: Метод IXCLRDataProcess::EnumModule
+title: 'Метод Иксклрдатапроцесс:: Енуммодуле'
 ms.date: 01/16/2019
 api.name:
 - IXCLRDataProcess::EnumModule Method
@@ -15,14 +15,14 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 40ab90a3218d4309cda709004a191e9440fe505d
-ms.sourcegitcommit: 7f616512044ab7795e32806578e8dc0c6a0e038f
+ms.openlocfilehash: 5caadcfe091393a8ff79106d57a50a532c349829
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67769583"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420783"
 ---
-# <a name="ixclrdataprocessenummodule-method"></a>Метод IXCLRDataProcess::EnumModule
+# <a name="ixclrdataprocessenummodule-method"></a>Метод Иксклрдатапроцесс:: Енуммодуле
 
 Перечисляет модули этого процесса.
 
@@ -40,25 +40,25 @@ HRESULT EnumModule(
 ## <a name="parameters"></a>Параметры
 
 `handle`\
-[in, out] Дескриптор для перечисления модули.
+[вход, выход] Маркер для перечисления модулей.
 
 `mod`\
-[out] Перечислимый модуль.
+заполняет Перечисленный модуль.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Указанный метод является частью `IXCLRDataProcess` интерфейса и соответствует 25 слот в таблице виртуального метода.
+Предоставленный метод является частью `IXCLRDataProcess` интерфейса и соответствует 25-е слоту таблицы виртуального метода.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
-**Заголовок.** None  
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
+**Заголовок:** None  
 **Библиотека:** None  
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Перечисление CLRDataSourceType](clrdatasourcetype-enumeration.md)
+- [Перечисление Клрдатасаурцетипе](clrdatasourcetype-enumeration.md)
 - [Отладка](index.md)
 - [Интерфейс IXCLRDataModule](ixclrdatamodule-interface.md)
 - [Интерфейс IXCLRDataProcess](ixclrdataprocess-interface.md)

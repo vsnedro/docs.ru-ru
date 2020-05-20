@@ -1,21 +1,22 @@
 ---
 title: Разработка рабочих процессов
+description: Узнайте о парадигмах управления потоками, таких как блок-схема, процедурный и конечный автомат, в рабочих процессах разработки и создания рабочих процессов с помощью императивного кода.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], designing workflows
 ms.assetid: 41f727b5-b142-4c1b-b046-492b96135ae6
-ms.openlocfilehash: c774161fb5adbc5fc8e44b22d994d15fa0d2e489
-ms.sourcegitcommit: fbb8a593a511ce667992502a3ce6d8f65c594edf
+ms.openlocfilehash: 07ccd1de6648438ad65f88bada3e055e1e2a4134
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74141917"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83419932"
 ---
 # <a name="designing-workflows"></a>Разработка рабочих процессов
 Подразделы данного раздела описывают принципы управления потоками, используемые при разработке рабочих процессов.  
   
-## <a name="in-this-section"></a>Содержание  
- [Рабочие процессы с блок-схемой](flowchart-workflows.md)  
+## <a name="in-this-section"></a>в этом разделе  
+ [Рабочие процессы блок-схемы](flowchart-workflows.md)  
  Демонстрирует процесс моделирования рабочих процессов с помощью известных принципов блок-схем.  
   
  [Процедурные рабочие процессы](procedural-workflows.md)  
@@ -24,5 +25,5 @@ ms.locfileid: "74141917"
  [Рабочие процессы конечного автомата](state-machine-workflows.md)  
  Описывает, как использовать рабочие процессы блок-схемы для реализации рабочих процессов, управляемых событиями, в .NET Framework 4 в качестве замены для модели конечного автомата, используемой в предыдущих версиях.  
   
- [Разработка рабочих процессов, действий и выражений с использованием императивного кода](authoring-workflows-activities-and-expressions-using-imperative-code.md)  
+ [Разработка рабочих процессов, действий и выражений с помощью императивного кода](authoring-workflows-activities-and-expressions-using-imperative-code.md)  
  Описывает способы создания рабочего процесса с императивным кодом.

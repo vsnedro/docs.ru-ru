@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: bfd46324-afec-4782-9c18-586d81fb4740
 topic_type:
 - apiref
-ms.openlocfilehash: 8c606f67766334800444f39b115d90f65ecca13d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 1c795ee536483a7def9c0339efae66a013898a77
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448594"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420634"
 ---
 # <a name="call_id-structure"></a>Структура CALL_ID
-Предоставляет сведения отладчику о вызываемой функции. Дополнительные сведения см. в интерфейсе [INotifySink2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md) .  
+Предоставляет сведения отладчику о вызываемой функции. Дополнительные сведения см. в интерфейсе [INotifySink2](inotifysink2-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,7 +38,7 @@ typedef struct tagCALL_ID
 } CALL_ID;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -52,7 +52,7 @@ typedef struct tagCALL_ID
 ## <a name="requirements"></a>Требования  
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс INotifySink2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
-- [Структуры хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)
+- [Интерфейс INotifySink2](inotifysink2-interface.md)
+- [Структуры хранилища символов диагностики](diagnostics-symbol-store-structures.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d4cef11f-a8ca-49bc-a1b8-6631f9e28f3e
 topic_type:
 - apiref
-ms.openlocfilehash: c81a5787eb06971e3d52aff5d1c1154a72564daf
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 45ae947cda5b4ddadfb10f5b2bdc78a95f031703
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790336"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420696"
 ---
 # <a name="stacktrace_simplecontext-structure"></a>Структура StackTrace_SimpleContext
 Обеспечивает простой контекст, который может использоваться вместо полной структуры `CONTEXT`.  
@@ -44,17 +44,17 @@ struct StackTrace_SimpleContext
 |`FrameOffset`|Смещение кадра или регистр EBP на платформах x86.|  
 |`InstructionOffset`|Указатель инструкции или ввод указателя инструкции (EIP) на платформах x86.|  
   
-## <a name="remarks"></a>Заметки  
- Так как функции трассировки стека обычно должны возвращать только адрес, Смещение фрейма и адрес стека, при необходимости можно использовать структуру `SimpleContext` вместо большой структуры `CONTEXT`.  
+## <a name="remarks"></a>Комментарии  
+ Поскольку функции трассировки стека обычно должны возвращать только адрес, Смещение фрейма и адрес стека, при необходимости можно использовать `SimpleContext` структуру, а не большую `CONTEXT` структуру.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** SOS_Stacktrace. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)
