@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 426f4e4f-e60d-4ad1-b546-a10e3c55c283
 topic_type:
 - apiref
-ms.openlocfilehash: acbd49de7362d9c05a609a2d870af100637e10ab
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ab248c6a624fbed1a6783383566be093c449ff97
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74427908"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83609889"
 ---
 # <a name="isymunmanagedwriteropennamespace-method"></a>Метод ISymUnmanagedWriter::OpenNamespace
 Открывает новое пространство имен. Вызовите этот метод перед определением методов или переменных, которые занимают пространство имен. Пространства имен могут быть вложенными.  
@@ -42,7 +42,7 @@ HRESULT OpenNamespace(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
-- [Метод CloseNamespace](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closenamespace-method.md)
+- [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
+- [Метод CloseNamespace](isymunmanagedwriter-closenamespace-method.md)

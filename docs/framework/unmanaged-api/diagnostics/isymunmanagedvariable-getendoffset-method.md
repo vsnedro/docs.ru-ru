@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e5d777c5-d450-4c0f-999c-b3953ee22cfb
 topic_type:
 - apiref
-ms.openlocfilehash: 4ac1fc0b3567c49dfb36d2886926bee72d62a8dd
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 91117eae23d38f3bc608f3203ebe53f92516c9c9
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446067"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83610500"
 ---
 # <a name="isymunmanagedvariablegetendoffset-method"></a>Метод ISymUnmanagedVariable::GetEndOffset
 Возвращает конечное смещение данной переменной в родительском объекте. Если это локальная переменная в области, то конечное смещение будет находиться в пределах смещений, определенных для области.  
@@ -34,7 +34,7 @@ HRESULT GetEndOffset(
   
 ## <a name="parameters"></a>Параметры  
  `pRetVal`  
- заполняет Указатель на `ULONG32`, который получает конечное смещение.  
+ заполняет Указатель на объект `ULONG32` , который получает конечное смещение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -42,7 +42,7 @@ HRESULT GetEndOffset(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedVariable](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
-- [Метод GetStartOffset](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getstartoffset-method.md)
+- [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)
+- [Метод GetStartOffset](isymunmanagedvariable-getstartoffset-method.md)

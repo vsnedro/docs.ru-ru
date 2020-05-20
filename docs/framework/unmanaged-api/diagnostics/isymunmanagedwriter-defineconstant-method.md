@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9e986986-2223-4d5f-b040-85d716146924
 topic_type:
 - apiref
-ms.openlocfilehash: c8d0145b9dffe1c0ff6ed3281c90f3bcec082ab8
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 200e68abb3f176c267045bf2a5e7e35d18400519
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74428061"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83610097"
 ---
 # <a name="isymunmanagedwriterdefineconstant-method"></a>Метод ISymUnmanagedWriter::DefineConstant
 Определяет имя для постоянного значения.  
@@ -37,7 +37,7 @@ HRESULT DefineConstant(
   
 ## <a name="parameters"></a>Параметры  
  `name`  
- окне Указатель на `WCHAR`, который определяет имя константы.  
+ окне Указатель на объект `WCHAR` , который определяет имя константы.  
   
  `value`  
  окне Значение константы.  
@@ -54,7 +54,7 @@ HRESULT DefineConstant(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
-- [Метод DefineConstant2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-defineconstant2-method.md)
+- [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
+- [Метод DefineConstant2](isymunmanagedwriter2-defineconstant2-method.md)

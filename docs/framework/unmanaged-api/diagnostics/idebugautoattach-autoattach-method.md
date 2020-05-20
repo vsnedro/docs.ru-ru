@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3cf3bd9c-7d88-4afa-a476-94cdc7609aa6
 topic_type:
 - apiref
-ms.openlocfilehash: 766aeb31436101babeab31b615a1c633578bfcc5
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: aae03b0dc76639c50f4615d41eef73990226b5f7
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445522"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442128"
 ---
 # <a name="idebugautoattachautoattach-method"></a>Метод IDebugAutoAttach::AutoAttach
 Выполняет вызванное сервером автоматическое присоединение отладчика.  
@@ -40,13 +40,13 @@ HRESULT AutoAttach
   
 ## <a name="parameters"></a>Параметры  
  `guidPort`  
- окне Всегда имеет значение `GUID_NULL`.  
+ окне Всегда имеет значение `GUID_NULL` .  
   
  `dwPid`  
- окне Идентификатор процесса, обычно полученный с помощью функции `GetCurrentProcessId`.  
+ окне Идентификатор процесса, обычно полученный с помощью `GetCurrentProcessId` функции.  
   
  `dwProgramType`  
- окне Тип программы: `AUTOATTACH_PROGRAM_WIN32`, `AUTOATTACH_PROGRAM_COMPLUS`или `AUTOATTACH_PROGRAM_UNKNOWN`.  
+ окне Тип программы: `AUTOATTACH_PROGRAM_WIN32` , `AUTOATTACH_PROGRAM_COMPLUS` или `AUTOATTACH_PROGRAM_UNKNOWN` .  
   
  `dwProgramId`  
  окне Идентификатор программы.  
@@ -60,6 +60,6 @@ HRESULT AutoAttach
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Дбгаутоаттач. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс IDebugAutoAttach](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md)
+- [Интерфейс IDebugAutoAttach](idebugautoattach-interface.md)

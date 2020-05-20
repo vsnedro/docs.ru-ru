@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1f25b294-72b6-4882-a49b-6c9d364b6008
 topic_type:
 - apiref
-ms.openlocfilehash: 794615994cd11ee00c2a381b9ba883cebb8233a0
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 6256d052780b1c610e61267be2517954d722a42d
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446122"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83610604"
 ---
 # <a name="isymunmanagedvariablegetaddressfield2-method"></a>Метод ISymUnmanagedVariable::GetAddressField2
 Получает второе поле адреса для этой переменной. Его значение зависит от типа адреса.  
@@ -34,7 +34,7 @@ HRESULT GetAddressField2(
   
 ## <a name="parameters"></a>Параметры  
  `pRetVal`  
- заполняет Указатель на `ULONG32`, который получает второе поле адреса.  
+ заполняет Указатель на объект `ULONG32` , который получает второе поле адреса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -42,9 +42,9 @@ HRESULT GetAddressField2(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedVariable](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
-- [Метод GetAddressField1](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddressfield1-method.md)
-- [Метод GetAddressField3](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddressfield3-method.md)
-- [Метод GetAddressKind](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddresskind-method.md)
+- [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)
+- [Метод GetAddressField1](isymunmanagedvariable-getaddressfield1-method.md)
+- [Метод GetAddressField3](isymunmanagedvariable-getaddressfield3-method.md)
+- [Метод GetAddressKind](isymunmanagedvariable-getaddresskind-method.md)

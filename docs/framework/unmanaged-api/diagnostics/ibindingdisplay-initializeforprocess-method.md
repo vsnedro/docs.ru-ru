@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 59417acb-4e59-46ad-acfe-d827e6ab6078
 topic_type:
 - apiref
-ms.openlocfilehash: bb796a12868cc3e44394ab493f7838dc48ab4dc5
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 8645878132359b6218cd62b1ff707208de53704b
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448494"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442154"
 ---
 # <a name="ibindingdisplayinitializeforprocess-method"></a>Метод IBindingDisplay::InitializeForProcess
-Инициализирует объект [ибиндингдисплай](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md) .  
+Инициализирует объект [ибиндингдисплай](ibindingdisplay-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,18 +37,18 @@ HRESULT InitializeForProcess (
  `pid`  
  окне Идентификатор процесса.  
   
-## <a name="remarks"></a>Примечания  
- Отладчик вызывает метод `InitializeForProcess` во время создания, чтобы инициализировать отображение привязки. `InitializeForProcess` должны вызываться во время создания до вызова любого другого метода в `IBindingDisplay`.  
+## <a name="remarks"></a>Комментарии  
+ Отладчик вызывает `InitializeForProcess` метод во время создания, чтобы инициализировать отображение привязки. `InitializeForProcess`должен вызываться во время создания до вызова любого другого метода `IBindingDisplay` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Биндингдисплай. h  
   
  **Библиотека:** Биндингдисплай. idl  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс IBindingDisplay](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)
+- [Интерфейс IBindingDisplay](ibindingdisplay-interface.md)

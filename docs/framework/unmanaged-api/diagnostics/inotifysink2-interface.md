@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c1018789-4206-455d-aacc-2d876fc0d0bb
 topic_type:
 - apiref
-ms.openlocfilehash: af50c82974b779b901135795f37e3bd4c8b8c156
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: c7afe074afb9b38d6fefa1192799120dbb50b403
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74440972"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442063"
 ---
 # <a name="inotifysink2-interface"></a>Интерфейс INotifySink2
 Объявляет методы для уведомления о приемнике.  
@@ -28,16 +28,16 @@ ms.locfileid: "74440972"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод OnSyncCallEnter](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallenter-method.md)|Вызывается при вводе вызова.|  
-|[Метод OnSyncCallExit](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallexit-method.md)|Вызывается при выходе из вызова.|  
-|[Метод OnSyncCallOut](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallout-method.md)|Вызывается, когда вызывается метод out.|  
-|[Метод OnSyncCallReturn](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallreturn-method.md)|Вызывается при возвращении вызова.|  
+|[Метод OnSyncCallEnter](inotifysink2-onsynccallenter-method.md)|Вызывается при вводе вызова.|  
+|[Метод OnSyncCallExit](inotifysink2-onsynccallexit-method.md)|Вызывается при выходе из вызова.|  
+|[Метод OnSyncCallOut](inotifysink2-onsynccallout-method.md)|Вызывается, когда вызывается метод out.|  
+|[Метод OnSyncCallReturn](inotifysink2-onsynccallreturn-method.md)|Вызывается при возвращении вызова.|  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс INotifyConnection2](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
-- [Интерфейс INotifySource2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
-- [Интерфейсы хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Интерфейс INotifyConnection2](inotifyconnection2-interface.md)
+- [Интерфейс INotifySource2](inotifysource2-interface.md)
+- [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

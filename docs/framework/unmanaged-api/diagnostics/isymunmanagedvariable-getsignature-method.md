@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 78c1ba28-a410-4360-805c-23a95408964a
 topic_type:
 - apiref
-ms.openlocfilehash: 2939d9cf3991a9e0b8f93bb301925b1092eca50e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: a3ec0af33f3f1201ce2f6b62291dfc67696fecab
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446048"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83610448"
 ---
 # <a name="isymunmanagedvariablegetsignature-method"></a>Метод ISymUnmanagedVariable::GetSignature
 Возвращает сигнатуру этой переменной.  
@@ -37,10 +37,10 @@ HRESULT GetSignature(
   
 ## <a name="parameters"></a>Параметры  
  `cSig`  
- окне Длина буфера, на который указывает параметр `sig`.  
+ окне Длина буфера, на который указывает `sig` параметр.  
   
  `pcSig`  
- заполняет Указатель на `ULONG32`, который получает размер (в символах) буфера, необходимого для хранения подписи.  
+ заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения подписи.  
   
  `sig`  
  заполняет Буфер, в котором хранится подпись.  
@@ -51,6 +51,6 @@ HRESULT GetSignature(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedVariable](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
+- [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)

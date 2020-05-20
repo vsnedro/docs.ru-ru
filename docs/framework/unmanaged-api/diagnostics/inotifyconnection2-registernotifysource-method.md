@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2632da80-6e4b-4429-8dee-b382745a5f81
 topic_type:
 - apiref
-ms.openlocfilehash: 76514cfbd2e533f04c5139dbaef4429c12463106
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: b7fa777466e2c7edd7b3110dd91e776785c63c58
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445472"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442076"
 ---
 # <a name="inotifyconnection2registernotifysource-method"></a>Метод INotifyConnection2::RegisterNotifySource
 Устанавливает указанный источник уведомления.  
@@ -48,9 +48,9 @@ HRESULT RegisterNotifySource
 ## <a name="requirements"></a>Требования  
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс INotifyConnection2](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
-- [Интерфейс INotifySource2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
-- [Интерфейс INotifySink2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
-- [Метод UnregisterNotifySource](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-unregisternotifysource-method.md)
+- [Интерфейс INotifyConnection2](inotifyconnection2-interface.md)
+- [Интерфейс INotifySource2](inotifysource2-interface.md)
+- [Интерфейс INotifySink2](inotifysink2-interface.md)
+- [Метод UnregisterNotifySource](inotifyconnection2-unregisternotifysource-method.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a71563c0-62f2-4eb4-970c-825d61827613
 topic_type:
 - apiref
-ms.openlocfilehash: 4d2de38e5e506873a6db262dcec19c7af9d8a0d0
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 093c5e3e64395c8946acd9201990d132e8111fc7
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446095"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83610591"
 ---
 # <a name="isymunmanagedvariablegetaddresskind-method"></a>Метод ISymUnmanagedVariable::GetAddressKind
 Возвращает тип адреса этой переменной.  
@@ -34,7 +34,7 @@ HRESULT GetAddressKind(
   
 ## <a name="parameters"></a>Параметры  
  `pRetVal`  
- заполняет Указатель на `ULONG32`, который получает значение. Возможные значения определяются в перечислении [корсимаддркинд](../../../../docs/framework/unmanaged-api/diagnostics/corsymaddrkind-enumeration.md) .  
+ заполняет Указатель на объект `ULONG32` , который получает значение. Возможные значения определяются в перечислении [корсимаддркинд](corsymaddrkind-enumeration.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -42,6 +42,6 @@ HRESULT GetAddressKind(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedVariable](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
+- [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
 topic_type:
 - apiref
-ms.openlocfilehash: 92e40dbe8892d48dba1c54d9cd16faa409440b24
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: b20e18d5f4314a0ab1442ac7bd5c6514e4db85d5
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74438116"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83609486"
 ---
 # <a name="notify_filter-enumeration"></a>Перечисление NOTIFY_FILTER
-Определяет обратные вызовы для функций отладчика. Дополнительные сведения см. в описании метода [INotifySource2:: сетнотифифилтер](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-setnotifyfilter-method.md) .  
+Определяет обратные вызовы для функций отладчика. Дополнительные сведения см. в описании метода [INotifySource2:: сетнотифифилтер](inotifysource2-setnotifyfilter-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,21 +39,21 @@ enum tagNOTIFY_FILTER
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`NOTIFY_FILTER_ONSYNCCALLOUT`|Указывает, что должен быть вызван метод [INotifySink2:: OnSyncCallOut](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallout-method.md) .|  
-|`NOTIFY_FILTER_ONSYNCCALLENTER`|Указывает, что должен быть вызван метод [INotifySink2:: OnSyncCallEnter](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallenter-method.md) .|  
-|`NOTIFY_FILTER_ONSYNCCALLEXIT`|Указывает, что должен быть вызван метод [INotifySink2:: онсинккаллексит](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallexit-method.md) .|  
-|`NOTIFY_FILTER_ONSYNCCALLRETURN`|Указывает, что должен быть вызван метод [INotifySink2:: онсинккаллретурн](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-onsynccallreturn-method.md) .|  
-|`NOTIFY_FILTER_ALLSYNC`|Указывает, что должны быть вызваны все методы [INotifySink2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md) .|  
+|`NOTIFY_FILTER_ONSYNCCALLOUT`|Указывает, что должен быть вызван метод [INotifySink2:: OnSyncCallOut](inotifysink2-onsynccallout-method.md) .|  
+|`NOTIFY_FILTER_ONSYNCCALLENTER`|Указывает, что должен быть вызван метод [INotifySink2:: OnSyncCallEnter](inotifysink2-onsynccallenter-method.md) .|  
+|`NOTIFY_FILTER_ONSYNCCALLEXIT`|Указывает, что должен быть вызван метод [INotifySink2:: онсинккаллексит](inotifysink2-onsynccallexit-method.md) .|  
+|`NOTIFY_FILTER_ONSYNCCALLRETURN`|Указывает, что должен быть вызван метод [INotifySink2:: онсинккаллретурн](inotifysink2-onsynccallreturn-method.md) .|  
+|`NOTIFY_FILTER_ALLSYNC`|Указывает, что должны быть вызваны все методы [INotifySink2](inotifysink2-interface.md) .|  
 |`NOTIFY_FILTER_ALL`|Активирует все существующие и будущие уведомления.|  
 |`NOTIFY_FILTER_NONE`|Указывает, что методы уведомления вызывать не нужно.|  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Перечисления хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+- [Перечисления хранилища символов диагностики](diagnostics-symbol-store-enumerations.md)

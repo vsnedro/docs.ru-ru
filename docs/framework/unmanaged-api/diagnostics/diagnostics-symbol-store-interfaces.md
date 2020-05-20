@@ -9,113 +9,113 @@ helpviewer_keywords:
 - debugging interfaces [.NET Framework]
 - interfaces [.NET Framework debugging]
 ms.assetid: f96987d5-e6a5-478b-ac5e-302e16545cce
-ms.openlocfilehash: bdb691570a9a2bf7bd2bb21af500b06c10b0bc53
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 044ed5e08a85442c5a73c123cf51529d2fd3f1fc
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448523"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442180"
 ---
 # <a name="diagnostics-symbol-store-interfaces"></a>Интерфейсы хранилища символов диагностики
 В этом разделе описываются неуправляемые интерфейсы, позволяющие компилятору создавать символьные сведения для использования отладчиком.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Интерфейс IBindingDisplay](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)  
+## <a name="in-this-section"></a>в этом разделе  
+ [Интерфейс IBindingDisplay](ibindingdisplay-interface.md)  
  Предоставляет методы, отображающие текущие сведения о привязке для выполняющегося приложения.  
   
- [Интерфейс IDebugAutoAttach](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md)  
+ [Интерфейс IDebugAutoAttach](idebugautoattach-interface.md)  
  Определяет интерфейс для автоматического присоединения отладчика, вызываемого сервером.  
   
- [Интерфейс INotifyConnection2](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)  
+ [Интерфейс INotifyConnection2](inotifyconnection2-interface.md)  
  Объявляет методы для регистрации и отмены регистрации источника уведомления о соединении.  
   
- [Интерфейс INotifySink2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)  
+ [Интерфейс INotifySink2](inotifysink2-interface.md)  
  Объявляет методы для уведомления о приемнике.  
   
- [Интерфейс INotifySource2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)  
+ [Интерфейс INotifySource2](inotifysource2-interface.md)  
  Объявляет метод для установки фильтров уведомлений.  
   
- [Интерфейс ISymENCUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)  
+ [Интерфейс ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)  
  Предоставляет сведения для функции "изменить и продолжить".  
   
- [Интерфейс ISymUnmanagedAsyncMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)  
- Этот интерфейс является дополнением к [интерфейсу метод isymunmanagedasyncmethodpropertieswriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-interface.md)для чтения.  
+ [Интерфейс ISymUnmanagedAsyncMethod](isymunmanagedasyncmethod-interface.md)  
+ Этот интерфейс является дополнением к [интерфейсу метод isymunmanagedasyncmethodpropertieswriter](isymunmanagedasyncmethodpropertieswriter-interface.md)для чтения.  
   
- [Интерфейс ISymUnmanagedAsyncMethodPropertiesWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-interface.md)  
- Разрешает определение дополнительных сведений о асинхронном методе для каждого символа метода. Должен использовать с открытым методом (то есть между вызовами [метода опенмесод](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md)и [методом клосемесод](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closemethod-method.md)).  
+ [Интерфейс ISymUnmanagedAsyncMethodPropertiesWriter](isymunmanagedasyncmethodpropertieswriter-interface.md)  
+ Разрешает определение дополнительных сведений о асинхронном методе для каждого символа метода. Должен использовать с открытым методом (то есть между вызовами [метода опенмесод](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md)и [методом клосемесод](isymunmanagedwriter-closemethod-method.md)).  
   
- [Интерфейс ISymUnmanagedBinder](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)  
+ [Интерфейс ISymUnmanagedBinder](isymunmanagedbinder-interface.md)  
  Представляет связыватель символов для неуправляемого кода.  
   
- [Интерфейс ISymUnmanagedBinder2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-interface.md)  
- Представляет связыватель символов для неуправляемого кода и расширяет интерфейс `ISymUnmanagedBinder`.  
+ [Интерфейс ISymUnmanagedBinder2](isymunmanagedbinder2-interface.md)  
+ Представляет связыватель символов для неуправляемого кода и расширяет `ISymUnmanagedBinder` интерфейс.  
   
- [Интерфейс ISymUnmanagedBinder3](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-interface.md)  
- Представляет связыватель символов для неуправляемого кода и расширяет интерфейс `ISymUnmanagedBinder`.  
+ [Интерфейс ISymUnmanagedBinder3](isymunmanagedbinder3-interface.md)  
+ Представляет связыватель символов для неуправляемого кода и расширяет `ISymUnmanagedBinder` интерфейс.  
   
- [Интерфейс ISymUnmanagedConstant](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)  
+ [Интерфейс ISymUnmanagedConstant](isymunmanagedconstant-interface.md)  
  Предоставляет доступ к неуправляемым константам.  
   
- [Интерфейс ISymUnmanagedDispose](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddispose-interface.md)  
+ [Интерфейс ISymUnmanagedDispose](isymunmanageddispose-interface.md)  
  Уничтожает неуправляемые ресурсы.  
   
- [Интерфейс ISymUnmanagedDocument](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)  
+ [Интерфейс ISymUnmanagedDocument](isymunmanageddocument-interface.md)  
  Представляет документ, на который ссылается хранилище символов.  
   
- [Интерфейс ISymUnmanagedDocumentWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)  
+ [Интерфейс ISymUnmanagedDocumentWriter](isymunmanageddocumentwriter-interface.md)  
  Предоставляет методы для записи в документ, на который ссылается хранилище символов.  
   
- [Интерфейс ISymUnmanagedENCUpdate](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)  
+ [Интерфейс ISymUnmanagedENCUpdate](isymunmanagedencupdate-interface.md)  
  Предоставляет методы для функции "изменить и продолжить".  
   
- [Интерфейс ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)  
+ [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)  
  Представляет метод в хранилище символов.  
   
- [Интерфейс ISymUnmanagedNamespace](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)  
+ [Интерфейс ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)  
  Представляет пространство имен.  
   
- [Интерфейс ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)  
+ [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)  
  Представляет средство чтения символов, предоставляющее доступ к документам, методам и переменным в хранилище символов.  
   
- [Интерфейс ISymUnmanagedReader2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)  
+ [Интерфейс ISymUnmanagedReader2](isymunmanagedreader2-interface.md)  
  Возвращает метод чтения символов по заданному токену метода и номеру версии для редактирования и копирования.  
   
- [Интерфейс ISymUnmanagedReaderSymbolSearchInfo](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)  
+ [Интерфейс ISymUnmanagedReaderSymbolSearchInfo](isymunmanagedreadersymbolsearchinfo-interface.md)  
  Предоставляет методы, которые получают сведения о поиске символов.  
   
- [Интерфейс ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)  
+ [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)  
  Представляет лексическую область внутри метода.  
   
- [Интерфейс ISymUnmanagedScope2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-interface.md)  
- Представляет лексическую область внутри метода и расширяет интерфейс `ISymUnmanagedScope` с помощью методов, которые получают сведения о константах, определенных в области.  
+ [Интерфейс ISymUnmanagedScope2](isymunmanagedscope2-interface.md)  
+ Представляет лексическую область внутри метода и расширяет `ISymUnmanagedScope` интерфейс методами, которые получают сведения о константах, определенных в области.  
   
- [Интерфейс ISymUnmanagedSourceServerModule](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)  
+ [Интерфейс ISymUnmanagedSourceServerModule](isymunmanagedsourceservermodule-interface.md)  
  Предоставляет данные сервера-источника для модуля.  
   
- [Интерфейс ISymUnmanagedSymbolSearchInfo](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md)  
+ [Интерфейс ISymUnmanagedSymbolSearchInfo](isymunmanagedsymbolsearchinfo-interface.md)  
  Предоставляет методы, получающие сведения о пути поиска.  
   
- [Интерфейс ISymUnmanagedVariable](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)  
+ [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)  
  Представляет переменную, например параметр, локальную переменную или поле.  
   
- [Интерфейс ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)  
+ [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)  
  Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных.  
   
- [Интерфейс ISymUnmanagedWriter2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)  
- Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных. Расширяет интерфейс `ISymUnmanagedWriter`.  
+ [Интерфейс ISymUnmanagedWriter2](isymunmanagedwriter2-interface.md)  
+ Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных. Расширяет `ISymUnmanagedWriter` интерфейс.  
   
- [Интерфейс ISymUnmanagedWriter3](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)  
- Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных. Расширяет интерфейс `ISymUnmanagedWriter`.  
+ [Интерфейс ISymUnmanagedWriter3](isymunmanagedwriter3-interface.md)  
+ Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных. Расширяет `ISymUnmanagedWriter` интерфейс.  
   
- [Интерфейс ISymUnmanagedWriter4](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter4-interface.md)  
+ [Интерфейс ISymUnmanagedWriter4](isymunmanagedwriter4-interface.md)  
  Интерфейс ISymUnmanagedWriter4.  
   
- [Интерфейс ISymUnmanagedWriter5](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter5-interface.md)  
+ [Интерфейс ISymUnmanagedWriter5](isymunmanagedwriter5-interface.md)  
  Интерфейс ISymUnmanagedWriter5.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Перечисления хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)  
+ [Перечисления хранилища символов диагностики](diagnostics-symbol-store-enumerations.md)  
   
- [Структуры хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)  
+ [Структуры хранилища символов диагностики](diagnostics-symbol-store-structures.md)  
   
- [Отладка](../../../../docs/framework/unmanaged-api/debugging/index.md)
+ [Отладка](../debugging/index.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1e1f0be6-c4e8-4d6c-98cd-d5fa9f686e87
 topic_type:
 - apiref
-ms.openlocfilehash: f795147bdcd822db90106c7f2171eb1771b1126f
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 88fc6b7d6076bca42050ca87533062557e6a7b50
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446252"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83610955"
 ---
 # <a name="isymunmanagedscope2getconstantcount-method"></a>Метод ISymUnmanagedScope2::GetConstantCount
 Возвращает число констант, определенных в этой области.  
@@ -34,7 +34,7 @@ HRESULT GetConstantCount(
   
 ## <a name="parameters"></a>Параметры  
  `pRetVal`  
- заполняет Указатель на `ULONG32`, который получает размер буфера (в символах), необходимого для хранения констант.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера (в символах), необходимого для хранения констант.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -42,6 +42,6 @@ HRESULT GetConstantCount(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedScope2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-interface.md)
+- [Интерфейс ISymUnmanagedScope2](isymunmanagedscope2-interface.md)
