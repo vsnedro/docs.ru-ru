@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 35588317-6184-485c-ab41-4b15fc1765d9
 topic_type:
 - apiref
-ms.openlocfilehash: 393984241412f543b6ac082484cf5e23edb2d9f4
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: f363bed8e7002bf898755b434c919f8722dea3fb
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448980"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614504"
 ---
 # <a name="isymunmanagedencupdateupdatesymbolstore2-method"></a>Метод ISymUnmanagedENCUpdate::UpdateSymbolStore2
 Позволяет компилятору опускать функции, которые не были изменены из потока базы данных программы (PDB), при условии, что сведения о строке соответствуют требованиям. Правильная информация о строке может быть определена со старыми сведениями о строке PDB и одной разностью для всех строк в функции.  
@@ -39,10 +39,10 @@ HRESULT UpdateSymbolStore2(
  окне Указатель на объект [IStream](/windows/desktop/api/objidl/nn-objidl-istream) , содержащий сведения о строке.  
   
  `pDeltaLines`  
- окне Указатель на структуру [SYMLINEDELTA](../../../../docs/framework/unmanaged-api/diagnostics/symlinedelta-structure.md) , содержащую измененные строки.  
+ окне Указатель на структуру [SYMLINEDELTA](symlinedelta-structure.md) , содержащую измененные строки.  
   
  `cDeltaLines`  
- окне `ULONG`, представляющая число измененных строк.  
+ окне Объект `ULONG` , представляющий число измененных строк.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -50,6 +50,6 @@ HRESULT UpdateSymbolStore2(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedENCUpdate](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+- [Интерфейс ISymUnmanagedENCUpdate](isymunmanagedencupdate-interface.md)

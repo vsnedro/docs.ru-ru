@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: dbc498a8-ba3f-42f2-bdd9-b623c77a1019
 topic_type:
 - apiref
-ms.openlocfilehash: b7a356d80d63fae65191bbf4fc0a23d7e02004c9
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 71b9d59621efb547713cb4a6c9df7a7142f4a677
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378233"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615193"
 ---
-# <a name="icordebugregisterset2getregisters-method"></a>Метод ICorDebugRegisterSet2::GetRegisters
+# <a name="icordebugregisterset2getregisters-method"></a>Метод ICorDebugRegisterSet2::
+
 Возвращает значение каждого регистра (для платформы, в которой код выполняется в данный момент), заданный заданной битовой маской.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,7 +37,8 @@ HRESULT GetRegisters (
 );  
 ```  
   
-## <a name="parameters"></a>Параметры  
+## <a name="parameters"></a>Параметры
+
  `maskCount`  
  окне Размер массива в байтах `mask` .  
   
@@ -49,16 +51,18 @@ HRESULT GetRegisters (
  `regBuffer`  
  заполняет Массив `CORDB_REGISTER` объектов, каждый из которых получает значение регистра.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии
+
  `GetRegisters`Метод возвращает массив значений из регистров, заданных маской. Массив не содержит значений регистров, бит маски которых не задан. Таким `regBuffer` же размером массива должно быть значение, равное количеству 1 в маске. Если значение `regCount` слишком мало для количества регистров, указанных маской, значения более высоких регистров будут обрезаны из набора. Если `regCount` значение слишком велико, неиспользуемые `regBuffer` элементы будут неизменными.  
   
  Если недоступная ККМ обозначается маской, для этой регистрации будет возвращено неопределенное значение.  
   
- Этот `ICorDebugRegisterSet2::GetRegisters` метод необходим для платформ, которые имеют более 64 регистров. Например, IA64 имеет 128 регистров общего назначения и 128 регистров с плавающей запятой, поэтому в битовой маске требуется более 64 бит.  
+ Этот `ICorDebugRegisterSet2::GetRegisters` метод необходим для платформ, имеющих более 64 регистров. Например, IA64 имеет 128 регистров общего назначения и 128 регистров с плавающей запятой, поэтому в битовой маске требуется более 64 бит.  
   
- Если у вас больше 64 регистров, как в случае с платформами, такими как x86, `GetRegisters` метод фактически преобразует байты в `mask` массиве байтов в, `ULONG64` а затем вызывает метод [ICorDebugRegisterSet::](icordebugregisterset-getregisters-method.md) GetBytes, который принимает `ULONG64` маску.  
+ Если у вас больше 64 регистров, как в случае с платформами, такими как x86, `GetRegisters` метод просто преобразует байты в `mask` массиве байтов в, `ULONG64` а затем вызывает метод [ICorDebugRegisterSet::](icordebugregisterset-getregisters-method.md) GetBytes, который принимает `ULONG64` маску.  
   
-## <a name="requirements"></a>Требования  
+## <a name="requirements"></a>Требования
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -67,7 +71,7 @@ HRESULT GetRegisters (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Интерфейс ICorDebugRegisterSet2](icordebugregisterset2-interface.md)
 - [Интерфейс ICorDebugRegisterSet](icordebugregisterset-interface.md)

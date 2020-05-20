@@ -2,16 +2,14 @@
 title: Развертывание контейнеров в Azure
 description: Развертывание контейнеров в Azure с помощью реестра контейнеров Azure, службы Kubernetes Azure и Azure Dev Spaces.
 ms.date: 04/13/2020
-ms.openlocfilehash: 57a4739d39b8ad022d699d54255f56f16d305440
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: ba2854323ee0f1394a3cff0dd3756cb3c7c32d5b
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895606"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614153"
 ---
 # <a name="deploying-containers-in-azure"></a>Развертывание контейнеров в Azure
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 В этой главе мы обсуждали контейнеры и в главе 1. Мы увидели, что контейнеры предоставляют множество преимуществ для облачных приложений, включая переносимость. В облаке Azure вы можете развернуть одни и те же контейнерные службы в промежуточной и рабочей средах. Azure предоставляет несколько вариантов размещения этих контейнерных рабочих нагрузок:
 
@@ -25,7 +23,7 @@ ms.locfileid: "82895606"
 
 После создания образы контейнеров хранятся в реестрах контейнеров. Они позволяют создавать и хранить образы контейнеров, а также управлять ими. Существует множество доступных реестров, как открытых, так и закрытых. Реестр контейнеров Azure (запись контроля доступа) — это полностью управляемая служба реестра контейнеров в облаке Azure. Он сохраняет образы в сети Azure, уменьшая время на их развертывание на узлах контейнеров Azure. Их также можно защитить с помощью тех же процедур безопасности и идентификации, которые используются для других ресурсов Azure.
 
-Реестр контейнеров Azure создается с помощью средств [портал Azure](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal), [Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli)или [PowerShell](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Создание реестра в Azure выполняется просто. Для этого требуется подписка Azure, Группа ресурсов и уникальное имя. На рис. 3-11 показаны основные параметры для создания реестра, который будет размещаться в `registryname.azurecr.io`.
+Реестр контейнеров Azure создается с помощью средств [портал Azure](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal), [Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli)или [PowerShell](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Создание реестра в Azure выполняется просто. Для этого требуется подписка Azure, Группа ресурсов и уникальное имя. На рис. 3-11 показаны основные параметры для создания реестра, который будет размещаться в `registryname.azurecr.io` .
 
 ![Создание реестра контейнеров](./media/create-container-registry.png)
 
@@ -59,7 +57,7 @@ docker rmi myregistry.azurecr.io/mycontainer:v1
 
 ## <a name="acr-tasks"></a>Задачи ACR
 
-[Задачи записи контроля](https://docs.microsoft.com/azure/container-registry/container-registry-tasks-overview) доступа — это набор функций, доступных в реестре контейнеров Azure. Он расширяет [цикл разработки внутреннего цикла](https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow) , создавая образы контейнеров и управляя ими в облаке Azure. Вместо того, чтобы вызывать `docker build` и `docker push` локально на компьютере разработки, они автоматически обрабатываются задачами контроля доступа в облаке.
+[Задачи записи контроля](https://docs.microsoft.com/azure/container-registry/container-registry-tasks-overview) доступа — это набор функций, доступных в реестре контейнеров Azure. Он расширяет [цикл разработки внутреннего цикла](https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow) , создавая образы контейнеров и управляя ими в облаке Azure. Вместо того `docker build` , чтобы вызывать и `docker push` локально на компьютере разработки, они автоматически обрабатываются ЗАДАЧами контроля доступа в облаке.
 
 Следующая команда AZ CLI строит образ контейнера и отправляет его в запись контроля доступа:
 
@@ -96,7 +94,7 @@ az acr build --image sample/hello-world:v1  --registry myContainerRegistry008 --
 - Аутентификация
 - Сеть
 - Наблюдение
-- Tags
+- Теги
 
 Это [Краткое руководство содержит инструкции по развертыванию кластера AKS с помощью портал Azure](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
 
@@ -124,10 +122,10 @@ az acr build --image sample/hello-world:v1  --registry myContainerRegistry008 --
 az aks use-dev-spaces -g my-aks-resource-group -n MyAKSCluster
 ```
 
-Затем можно использовать `azds prep` команду, чтобы создать необходимые ресурсы диаграммы DOCKER и Helm для запуска приложения. Затем выполняется код в AKS с помощью `azds up`. При первом выполнении этой команды будет установлена диаграмма Helm. Контейнеры будут созданы и развернуты в соответствии с вашими инструкциями. Эта задача может занять несколько минут при первом запуске. Однако после внесения изменений можно подключиться к своему дочернему пространству разработки с помощью `azds space select` , а затем развернуть и отладить обновления в изолированном дочернем пространстве разработки. После создания и запуска пространства разработки можно отправить в него обновления, выполнив `azds up` команду или используя встроенные средства в Visual Studio или Visual Studio Code. С помощью VS Code палитра команд используется для подключения к пространству разработки. На рис. 3-12 показано, как запустить веб-приложение с помощью Azure Dev Spaces в Visual Studio.
+Затем можно использовать `azds prep` команду, чтобы создать необходимые ресурсы диаграммы DOCKER и Helm для запуска приложения. Затем выполняется код в AKS с помощью `azds up` . При первом выполнении этой команды будет установлена диаграмма Helm. Контейнеры будут созданы и развернуты в соответствии с вашими инструкциями. Эта задача может занять несколько минут при первом запуске. Однако после внесения изменений можно подключиться к своему дочернему пространству разработки с помощью `azds space select` , а затем развернуть и отладить обновления в изолированном дочернем пространстве разработки. После создания и запуска пространства разработки можно отправить в него обновления, выполнив `azds up` команду или используя встроенные средства в Visual Studio или Visual Studio Code. С помощью VS Code палитра команд используется для подключения к пространству разработки. На рис. 3-12 показано, как запустить веб-приложение с помощью Azure Dev Spaces в Visual Studio.
 
-![Подключение к Azure dev Spaces в Visual Studio](./media/azure-dev-spaces-visual-studio-launchsettings.png)
-**рис. 3-12**. Подключение к Azure Dev Spaces в Visual Studio
+![Подключение к Azure Dev Spaces в Visual Studio ](./media/azure-dev-spaces-visual-studio-launchsettings.png)
+ **рис. 3-12**. Подключение к Azure Dev Spaces в Visual Studio
 
 >[!div class="step-by-step"]
 >[Назад](combine-containers-serverless-approaches.md)

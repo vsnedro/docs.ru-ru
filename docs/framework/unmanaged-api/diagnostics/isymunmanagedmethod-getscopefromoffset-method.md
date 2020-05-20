@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d14cf210-81f8-46e1-8b19-6ddec0ba8b11
 topic_type:
 - apiref
-ms.openlocfilehash: 36b1b2394907f242c0e8c5e277c0d1c5b3b02e1b
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 4eefd019280f501a6ce194e5ce84388e32cc66e1
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448902"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615167"
 ---
 # <a name="isymunmanagedmethodgetscopefromoffset-method"></a>Метод ISymUnmanagedMethod::GetScopeFromOffset
 Возвращает наиболее окружающую лексическую область внутри этого метода, которая заключает заданное смещение. Это можно использовать для запуска поиска локальных переменных.  
@@ -35,10 +35,10 @@ HRESULT GetScopeFromOffset(
   
 ## <a name="parameters"></a>Параметры  
  `offset`  
- окне `ULONG`, содержащий смещение.  
+ окне Значение типа `ULONG` , содержащее смещение.  
   
  `pRetVal`  
- заполняет Указатель, которому присваивается возвращаемый интерфейс [исимунманажедскопе](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md) .  
+ заполняет Указатель, которому присваивается возвращаемый интерфейс [исимунманажедскопе](isymunmanagedscope-interface.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -46,6 +46,6 @@ HRESULT GetScopeFromOffset(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 40fcdbc5-3bb2-41e9-b995-40984c209a7f
 topic_type:
 - apiref
-ms.openlocfilehash: 402b5b4bc9734be59ff342a4f86f2c4a1ed23b5f
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 2b5a42c89e0e3efed61b1b471c227e0df85a51aa
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446411"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614907"
 ---
 # <a name="isymunmanagedreadersymbolsearchinfogetsymbolsearchinfo-method"></a>Метод ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo
 Возвращает сведения о поиске символов.  
@@ -37,13 +37,13 @@ HRESULT GetSymbolSearchInfo(
   
 ## <a name="parameters"></a>Параметры  
  `cSearchInfo`  
- окне `ULONG32`, указывающий размер `rgpSearchInfo`.  
+ окне Значение типа `ULONG32` , указывающее размер `rgpSearchInfo` .  
   
  `pcSearchInfo`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимый для хранения сведений о поиске.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения сведений о поиске.  
   
  `rgpSearchInfo`  
- заполняет Указатель, которому присваивается возвращаемый интерфейс [исимунманажедсимболсеарчинфо](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md) .  
+ заполняет Указатель, которому присваивается возвращаемый интерфейс [исимунманажедсимболсеарчинфо](isymunmanagedsymbolsearchinfo-interface.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -51,6 +51,6 @@ HRESULT GetSymbolSearchInfo(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReaderSymbolSearchInfo](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)
+- [Интерфейс ISymUnmanagedReaderSymbolSearchInfo](isymunmanagedreadersymbolsearchinfo-interface.md)

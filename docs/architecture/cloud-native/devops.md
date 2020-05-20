@@ -1,17 +1,15 @@
 ---
 title: DevOps
 description: Рекомендации по DevOps для облачных приложений
-ms.date: 05/12/2020
-ms.openlocfilehash: 498ce64c3a387433862142826059b4f7e513ec7b
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.date: 05/13/2020
+ms.openlocfilehash: ce814595245d49e409e780cb0f63c436299c2e4e
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83395782"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614125"
 ---
 # <a name="devops"></a>DevOps
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Любимые мантру консультантов по программному обеспечению — это вопрос, что он зависит от любого вопроса. Это не так, потому что консультанты по программному обеспечению не любят в должности. Это обусловлено тем, что в программном обеспечении нет одного действительного ответа на любые вопросы. Абсолютное право и неверно, а не баланс между противоположными.
 

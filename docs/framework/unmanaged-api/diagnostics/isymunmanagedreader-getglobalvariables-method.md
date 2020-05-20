@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a2dd5098-3e58-4be5-b7a2-e4160b3b505a
 topic_type:
 - apiref
-ms.openlocfilehash: b6cf7293f1d65db1f60301f49ce655c74df3daca
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 20bfb3e48f411524bd4d9798f17dd935595a12bb
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448313"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615024"
 ---
 # <a name="isymunmanagedreadergetglobalvariables-method"></a>Метод ISymUnmanagedReader::GetGlobalVariables
 Возвращает все глобальные переменные.  
@@ -37,10 +37,10 @@ HRESULT GetGlobalVariables(
   
 ## <a name="parameters"></a>Параметры  
  `cVars`  
- окне Длина буфера, на который указывает `pcVars`.  
+ окне Длина буфера, на который указывает `pcVars` .  
   
  `pcVars`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимого для хранения переменных.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения переменных.  
   
  `pVars`  
  заполняет Буфер, содержащий переменные.  
@@ -51,6 +51,6 @@ HRESULT GetGlobalVariables(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

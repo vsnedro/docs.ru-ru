@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e774eefe-858c-4362-8d2d-28ebf2ba1a24
 topic_type:
 - apiref
-ms.openlocfilehash: 73f536b4ab98aa596c2395810cb8b616ffd309e9
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ac7559bd5431f45b266602404ddde9081aa2944d
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74438295"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614699"
 ---
 # <a name="isymunmanagedwriter2definelocalvariable2-method"></a>Метод ISymUnmanagedWriter2::DefineLocalVariable2
-Определяет одну переменную в текущей лексической области видимости. Этот метод может вызываться несколько раз для переменной с тем же именем, которая имеет несколько домов в пределах области. Однако в этом случае значения параметров `startOffset` и `endOffset` не должны перекрываться.  
+Определяет одну переменную в текущей лексической области видимости. Этот метод может вызываться несколько раз для переменной с тем же именем, которая имеет несколько домов в пределах области. Однако в этом случае значения `startOffset` `endOffset` параметров и не должны перекрываться.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -63,10 +63,10 @@ HRESULT DefineLocalVariable2(
  окне Третий адрес для спецификации параметра.  
   
  `startOffset`  
- окне Начальное смещение для переменной. Этот параметр является необязательным. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
+ окне Начальное смещение для переменной. Этот параметр необязателен. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
   
  `endOffset`  
- окне Конечное смещение для переменной. Этот параметр является необязательным. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
+ окне Конечное смещение для переменной. Этот параметр необязателен. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -74,7 +74,7 @@ HRESULT DefineLocalVariable2(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedWriter2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
-- [Метод DefineLocalVariable](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)
+- [Интерфейс ISymUnmanagedWriter2](isymunmanagedwriter2-interface.md)
+- [Метод DefineLocalVariable](isymunmanagedwriter-definelocalvariable-method.md)

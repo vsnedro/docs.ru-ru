@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0ea9d9af-8709-4a46-872b-f54d9e840088
 topic_type:
 - apiref
-ms.openlocfilehash: da2906187c02bbc7a35c937663e3fc7db1ebda13
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 48c50ac6be6d525676d85578e5a55a27104c180a
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74433884"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615102"
 ---
 # <a name="isymunmanagednamespacegetnamespaces-method"></a>Метод ISymUnmanagedNamespace::GetNamespaces
 Возвращает дочерние элементы этого пространства имен.  
@@ -37,10 +37,10 @@ HRESULT GetNamespaces(
   
 ## <a name="parameters"></a>Параметры  
  `cNameSpaces`  
- окне `ULONG32`, указывающий размер массива `namespaces`.  
+ окне Значение типа `ULONG32` , указывающее размер `namespaces` массива.  
   
  `pcNameSpaces`  
- заполняет Указатель на `ULONG32`, который получает размер буфера (в символах), необходимого для хранения пространств имен.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера (в символах), необходимого для хранения пространств имен.  
   
  `namespaces`  
  заполняет Указатель на буфер, содержащий пространства имен.  
@@ -51,6 +51,6 @@ HRESULT GetNamespaces(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedNamespace](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+- [Интерфейс ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)

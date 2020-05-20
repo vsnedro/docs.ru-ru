@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ea7c1617-f3ce-4220-8288-f2b50eaf0f0f
 topic_type:
 - apiref
-ms.openlocfilehash: 98ed5556020b93fb1f31d1dde84690fc33092627
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 091f497024b48589953456e1ea6daf6635738240
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448377"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615089"
 ---
 # <a name="isymunmanagednamespacegetvariables-method"></a>Метод ISymUnmanagedNamespace::GetVariables
 Возвращает все переменные, определенные в глобальной области видимости в этом пространстве имен.  
@@ -37,10 +37,10 @@ HRESULT GetVariables(
   
 ## <a name="parameters"></a>Параметры  
  `cVars`  
- окне `ULONG32`, указывающий размер массива `pVars`.  
+ окне Значение типа `ULONG32` , указывающее размер `pVars` массива.  
   
  `pcVars`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимого для хранения пространств имен.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения пространств имен.  
   
  `pVars`  
  заполняет Указатель на буфер, содержащий пространства имен.  
@@ -51,6 +51,6 @@ HRESULT GetVariables(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedNamespace](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+- [Интерфейс ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)

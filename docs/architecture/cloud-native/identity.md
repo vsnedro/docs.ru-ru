@@ -1,17 +1,15 @@
 ---
-title: Тождество
+title: Идентификация
 description: Создание архитектуры облачных приложений .NET для Azure | Идентифицирует
-ms.date: 09/23/2019
-ms.openlocfilehash: 4cc7c04bf323d2589777df466321f6801f511b6f
-ms.sourcegitcommit: 55f438d4d00a34b9aca9eedaac3f85590bb11565
+ms.date: 05/13/2020
+ms.openlocfilehash: 9fa48977e58e2ca5a5f3e231372a4791640a85fd
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "73840349"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614023"
 ---
-# <a name="identity"></a>Тождество
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# <a name="identity"></a>Идентификация
 
 Большинство программных приложений должны иметь определенные знания о пользователе или процессе, которые их вызывают. Пользователь или процесс, взаимодействующий с приложением, называется субъектом безопасности, а процесс проверки подлинности и авторизации этих участников называется управлением удостоверениями или просто *удостоверениями*. Простые приложения могут включать в себя все свое управление удостоверениями в рамках приложения, но этот подход плохо масштабируется при использовании многих приложений и многих видов субъектов безопасности. Windows поддерживает использование Active Directory для обеспечения централизованной проверки подлинности и авторизации.
 
@@ -29,7 +27,7 @@ ms.locfileid: "73840349"
 
 ## <a name="references"></a>Ссылки
 
-- [Платформа Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/)
+- [Платформа удостоверений Майкрософт](https://docs.microsoft.com/azure/active-directory/develop/)
 
 >[!div class="step-by-step"]
 >[Назад](azure-monitor.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 275ef87b-0b53-49f9-af6b-58506335dc06
 topic_type:
 - apiref
-ms.openlocfilehash: 9aace77c4b3549c033433d4c305b07daa1f7a8c1
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 9a490299c24f44b59da682f714f4b696fde3cba5
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448993"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614517"
 ---
 # <a name="isymunmanagedencupdateupdatemethodlines-method"></a>Метод ISymUnmanagedENCUpdate::UpdateMethodLines
 Позволяет обновлять сведения о строке для метода, который не был перекомпилирован, но строки были перемещены независимо друг от друга. Допускается использование разности для каждой инструкции.  
@@ -39,10 +39,10 @@ HRESULT UpdateMethodLines(
  окне Метаданные токена метода.  
   
  `pDeltas`  
- окне Массив значений `INT32`, указывающий разность для каждой точки следования в методе.  
+ окне Массив `INT32` значений, указывающий разность для каждой точки следования в методе.  
   
  `cDeltas`  
- окне `ULONG`, содержащий размер параметра `pDeltas`.  
+ окне Значение типа, `ULONG` содержащее размер `pDeltas` параметра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -50,6 +50,6 @@ HRESULT UpdateMethodLines(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedENCUpdate](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+- [Интерфейс ISymUnmanagedENCUpdate](isymunmanagedencupdate-interface.md)

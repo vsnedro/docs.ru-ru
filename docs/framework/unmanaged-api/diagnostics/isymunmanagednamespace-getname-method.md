@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 657bf91d-005a-4ea4-9298-04d1291c0bc3
 topic_type:
 - apiref
-ms.openlocfilehash: 43f32ac85bebc12d0a9253205aae3f1de0dc9e5b
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 84b2f1226c84713483499c7ff777838058cb0f95
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74433974"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615115"
 ---
 # <a name="isymunmanagednamespacegetname-method"></a>Метод ISymUnmanagedNamespace::GetName
 Возвращает имя этого пространства имен.  
@@ -37,10 +37,10 @@ HRESULT GetName(
   
 ## <a name="parameters"></a>Параметры  
  `cchName`  
- окне `ULONG32`, указывающий размер буфера `szName`.  
+ окне Значение типа `ULONG32` , указывающее размер `szName` буфера.  
   
  `pcchName`  
- заполняет Указатель на `ULONG32`, который получает размер (в символах) буфера, необходимого для хранения имени пространства имен, включая завершение значения NULL.  
+ заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения имени пространства имен, включая завершение значения NULL.  
   
  `szName`  
  заполняет Указатель на буфер, содержащий имя пространства имен.  
@@ -51,6 +51,6 @@ HRESULT GetName(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedNamespace](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+- [Интерфейс ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)

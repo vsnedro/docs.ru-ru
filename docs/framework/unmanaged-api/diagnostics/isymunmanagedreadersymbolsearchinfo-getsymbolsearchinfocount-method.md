@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4068b6ec-525f-4446-8818-0296178cbd19
 topic_type:
 - apiref
-ms.openlocfilehash: a193c4e9e87616217efc90286032944d05d766c0
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: a81a5afeec8f97864e1772347c6575b9d09cb176
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446396"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614894"
 ---
 # <a name="isymunmanagedreadersymbolsearchinfogetsymbolsearchinfocount-method"></a>Метод ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount
 Возвращает число сведений о поиске символов.  
@@ -34,7 +34,7 @@ HRESULT GetSymbolSearchInfoCount(
   
 ## <a name="parameters"></a>Параметры  
  `pcSearchInfo`  
- ] out] указатель на `ULONG32`, который получает размер буфера, необходимый для хранения сведений для поиска.  
+ ] out] указатель на объект `ULONG32` , который получает размер буфера, необходимый для хранения сведений о поиске.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -42,6 +42,6 @@ HRESULT GetSymbolSearchInfoCount(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReaderSymbolSearchInfo](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)
+- [Интерфейс ISymUnmanagedReaderSymbolSearchInfo](isymunmanagedreadersymbolsearchinfo-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a85283d8-379c-417a-9736-ddeeef9bcf50
 topic_type:
 - apiref
-ms.openlocfilehash: 1f1bd9c33f24847eae4ff7d26c5b996cd34afb72
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: cd5d1f2d59d3e55ba454f23d2e5dd4b1316c0df4
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448924"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615180"
 ---
 # <a name="isymunmanagedmethodgetranges-method"></a>Метод ISymUnmanagedMethod::GetRanges
 При наличии позиции в документе возвращает массив пар начального и конечного смещения, соответствующих диапазонам промежуточного языка MSIL, которые находятся в этом методе. Массив является массивом целых чисел и имеет формат [начало, конец, начало, конец]. Число пар диапазонов — это длина массива, деленная на 2.  
@@ -52,7 +52,7 @@ HRESULT GetRanges(
  [in] Размер массива `ranges`.  
   
  `pcRanges`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимый для хранения диапазонов.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения диапазонов.  
   
  `ranges`  
  заполняет Указатель на буфер, который получает диапазоны.  
@@ -63,6 +63,6 @@ HRESULT GetRanges(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

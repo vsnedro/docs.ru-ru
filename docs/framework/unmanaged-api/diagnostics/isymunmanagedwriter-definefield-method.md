@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6a1f797-dbf4-40f5-ab99-d9b4bfb26148
 topic_type:
 - apiref
-ms.openlocfilehash: 7eea63cae27c08260177dfc7746046b975434611
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: aba551a1973a41a909869316cda07e8d655e9882
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74428038"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614842"
 ---
 # <a name="isymunmanagedwriterdefinefield-method"></a>Метод ISymUnmanagedWriter::DefineField
 Определяет одну переменную, не находящиеся в методе. Этот метод используется для определенных полей в классах, битовых полях и т. д.  
@@ -51,7 +51,7 @@ HRESULT DefineField(
  окне Атрибуты поля.  
   
  `cSig`  
- окне `ULONG32`, которая представляет собой размер (в символах) буфера, необходимого для хранения подписи поля.  
+ окне Объект `ULONG32` , который представляет собой размер (в символах) буфера, необходимого для хранения подписи поля.  
   
  `signature`  
  окне Массив подписей полей.  
@@ -74,6 +74,6 @@ HRESULT DefineField(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+- [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

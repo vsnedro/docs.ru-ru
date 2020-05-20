@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2a420900-01f1-4461-8777-3a34a6dc1426
 topic_type:
 - apiref
-ms.openlocfilehash: 01ab69b73a7bc4929e2ebd49b3847f8d7c4646a2
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 25e797fdf563a01ab727f16e7173eec2552eeb27
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448861"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614426"
 ---
 # <a name="isymunmanagedmethodgetsourcestartend-method"></a>Метод ISymUnmanagedMethod::GetSourceStartEnd
 Возвращает начальную и конечную позиции документа для источника данного метода. Первой позицией массива является начало, а вторая — конец.  
@@ -46,7 +46,7 @@ HRESULT GetSourceStartEnd(
  окне Начальные и конечные столбцы в соответствующих исходных документах.  
   
  `pRetVal`  
- [out] `true`, если позиции определены; в противном случае `false`.  
+ [out] `true` значение, если позиции определены; в противном случае — `false` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -54,6 +54,6 @@ HRESULT GetSourceStartEnd(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

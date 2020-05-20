@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e0ebd793-3764-4df0-8f12-0e95f60b9eae
 topic_type:
 - apiref
-ms.openlocfilehash: 6e9ab623d5fe9fcfda2305df078e988a561afdc5
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 1553e616f60b4f05c06b6457d47454dfb4bc2eb7
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74427974"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614777"
 ---
 # <a name="isymunmanagedwriterinitialize-method"></a>Метод ISymUnmanagedWriter::Initialize
 Задает интерфейс передатчика метаданных, с которым будет связан этот модуль записи, и задает имя выходного файла, в который будут записываться отладочные символы.  
@@ -45,10 +45,10 @@ HRESULT Initialize(
  окне Имя файла, в который записываются отладочные символы. Если имя файла задано для модуля записи, который не использует имена файлов, этот параметр пропускается.  
   
  `pIStream`  
- окне Если этот параметр указан, модуль записи символов выдает символы в заданный <xref:System.Runtime.InteropServices.ComTypes.IStream>, а не в файл, указанный в `filename`. Параметр `pIStream` является необязательным.  
+ окне Если этот параметр указан, модуль записи символов выдает символы в заданный объект, а не в <xref:System.Runtime.InteropServices.ComTypes.IStream> файл, указанный в `filename` аргументе. Параметр `pIStream` не обязателен.  
   
  `fFullBuild`  
- [in] `true`, если это полная перестроение; `false`, если это инкрементная компиляция.  
+ [входные] `true` значение, если это полная перестроение; `false`если это инкрементная компиляция.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -56,7 +56,7 @@ HRESULT Initialize(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
-- [Метод Initialize2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-initialize2-method.md)
+- [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
+- [Метод Initialize2](isymunmanagedwriter-initialize2-method.md)

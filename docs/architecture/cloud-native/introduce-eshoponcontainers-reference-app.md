@@ -1,17 +1,15 @@
 ---
 title: Введение в Справочное приложение eShopOnContainers
 description: Общие сведения о приложении для ASP.NET Core и Azure, встроенном в облачные микрослужбы.
-ms.date: 06/30/2019
-ms.openlocfilehash: b97b62268db1d9990f762d9769233ad72551c226
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.date: 05/13/2020
+ms.openlocfilehash: a6f3defabec809eaf1cb143e2b521904248b74f2
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83395399"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83613971"
 ---
 # <a name="introducing-eshoponcontainers-reference-app"></a>Введение в Справочное приложение eShopOnContainers
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Корпорация Майкрософт, в связи с ведущими экспертами сообщества, создала полнофункциональное облачное приложение-Справочник по микрослужбам, eShopOnContainers. Это приложение предназначено для демонстрации использования .NET Core и DOCKER, а также, при необходимости, Azure, Kubernetes и Visual Studio, для создания Интернет-магазина.
 
@@ -32,8 +30,8 @@ ms.locfileid: "83395399"
 - Изменение или удаление элементов из корзины
 - Извлечение
 - Регистрация учетной записи
-- Вход
-- Выход
+- Войти
+- Выйти
 - Обзор заказов
 
 Приложение также имеет следующие нефункциональные требования:

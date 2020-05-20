@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 64d9b80e-b883-4539-89c7-03573185a1eb
 topic_type:
 - apiref
-ms.openlocfilehash: 8a4d205586921b377147eeab80754e1a0d9e52b0
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 39b0c065a324f2b3939467901739f995bc9abbad
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74427839"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614764"
 ---
 # <a name="isymunmanagedwritersetsymattribute-method"></a>Метод ISymUnmanagedWriter::SetSymAttribute
 Определяет настраиваемый атрибут на основе его имени. Эти атрибуты хранятся в хранилище символов в отличие от пользовательских атрибутов метаданных.  
@@ -40,10 +40,10 @@ HRESULT SetSymAttribute(
  окне Токен метаданных, для которого определяется атрибут.  
   
  `name`  
- окне Указатель на `WCHAR`, содержащий имя атрибута.  
+ окне Указатель на объект `WCHAR` , содержащий имя атрибута.  
   
  `cData`  
- окне `ULONG32`, указывающий размер массива `data`.  
+ окне Значение типа `ULONG32` , указывающее размер `data` массива.  
   
  `data`  
  окне Значение атрибута.  
@@ -54,6 +54,6 @@ HRESULT SetSymAttribute(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+- [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

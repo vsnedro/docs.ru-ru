@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
 topic_type:
 - apiref
-ms.openlocfilehash: c7e9d2fe94c33127d8b105333ad6dac9d6cc5af6
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: c6d21f40c260890c9c88dcdfccd7e31161024ba3
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446375"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614868"
 ---
 # <a name="isymunmanagedscopegetchildren-method"></a>Метод ISymUnmanagedScope::GetChildren
 Возвращает дочерние элементы этой области.  
@@ -37,10 +37,10 @@ HRESULT GetChildren(
   
 ## <a name="parameters"></a>Параметры  
  `cChildren`  
- окне `ULONG32`, указывающий размер массива `children`.  
+ окне Значение типа `ULONG32` , указывающее размер `children` массива.  
   
  `pcChildren`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимого для хранения дочерних элементов.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения дочерних элементов.  
   
  `children`  
  заполняет Возвращаемый массив дочерних элементов.  
@@ -51,7 +51,7 @@ HRESULT GetChildren(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
-- [Метод GetParent](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getparent-method.md)
+- [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)
+- [Метод GetParent](isymunmanagedscope-getparent-method.md)

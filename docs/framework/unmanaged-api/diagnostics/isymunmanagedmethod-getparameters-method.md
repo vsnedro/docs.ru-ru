@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a8074f1-facc-4a3f-bb9b-d6574fc2fc74
 topic_type:
 - apiref
-ms.openlocfilehash: 9e8139a822c877e70731e18ae5a75b83e6b7578e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 031e9d9434bc655ba8947a2bb6aba56a150e9002
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448952"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614465"
 ---
 # <a name="isymunmanagedmethodgetparameters-method"></a>Метод ISymUnmanagedMethod::GetParameters
 Возвращает параметры для этого метода. Параметры возвращаются в том порядке, в котором они определены в сигнатуре метода.  
@@ -40,7 +40,7 @@ HRESULT GetParameters(
  [in] Размер массива `params`.  
   
  `pcParams`  
- окне Указатель на `ULONG32`, который получает размер буфера, который требуется для хранения параметров.  
+ окне Указатель на объект `ULONG32` , который получает размер буфера, который требуется для хранения параметров.  
   
  `params`  
  заполняет Указатель на буфер, который получает параметры.  
@@ -51,6 +51,6 @@ HRESULT GetParameters(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

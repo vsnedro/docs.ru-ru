@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
 topic_type:
 - apiref
-ms.openlocfilehash: 77dec4332aa65f6125685db607169b3398bcab98
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: b48d131fa99b65d38856d2b635bf59145db9157e
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446053"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615245"
 ---
 # <a name="isymunmanagedvariablegetname-method"></a>Метод ISymUnmanagedVariable::GetName
 Возвращает имя этой переменной.  
@@ -37,10 +37,10 @@ HRESULT GetName(
   
 ## <a name="parameters"></a>Параметры  
  `cchName`  
- окне Длина буфера, на который указывает параметр `pcchName`.  
+ окне Длина буфера, `pcchName` на который указывает параметр.  
   
  `pcchName`  
- заполняет Указатель на `ULONG32`, который получает размер (в символах) буфера, необходимого для хранения имени, включая завершающее пустое значение.  
+ заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения имени, включая завершение нулевого значения.  
   
  `szName`  
  заполняет Буфер, в котором хранится имя.  
@@ -51,6 +51,6 @@ HRESULT GetName(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedVariable](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
+- [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)

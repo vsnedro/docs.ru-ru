@@ -2,15 +2,15 @@
 title: Метод ISymUnmanagedWriter4::GetDebugInfoWithPadding
 ms.date: 03/30/2017
 ms.assetid: 881e20ca-8131-4bd0-ba41-c2d6391b0fe2
-ms.openlocfilehash: 274bf79175bda9e880b1ef3cf8f125a017ad0734
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: cfc6c22558cee780823c8cca0c36b883147e9496
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73121660"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614647"
 ---
 # <a name="isymunmanagedwriter4getdebuginfowithpadding-method"></a>Метод ISymUnmanagedWriter4::GetDebugInfoWithPadding
-Функция аналогична [методу GetDebugInfo](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-getdebuginfo-method.md) , за исключением того, что строка пути дополнена нулями после завершающего нуль-символа, чтобы сделать строку фиксированным размером `MAX_PATH`. Заполнение задается только в том случае, если длина строки пути меньше `MAX_PATH`.  
+Функция аналогична [методу GetDebugInfo](isymunmanagedwriter-getdebuginfo-method.md) , за исключением того, что строка пути дополнена нулями после завершающего нуль-символа, чтобы сделать строку фиксированным размером `MAX_PATH` . Заполнение задается только в том случае, если длина строки пути меньше `MAX_PATH` .  
   
  Это упрощает написание средств, которые отличаются от PE файлов.  
   
@@ -35,6 +35,6 @@ HRESULT GetDebugInfoWithPadding(    [in, out] IMAGE_DEBUG_DIRECTORY *pIDD,    [i
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedWriter4](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter4-interface.md)
+- [Интерфейс ISymUnmanagedWriter4](isymunmanagedwriter4-interface.md)

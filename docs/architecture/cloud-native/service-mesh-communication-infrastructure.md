@@ -2,17 +2,15 @@
 title: Инфраструктура связи для слоя взаимодействия между службами
 description: Узнайте, как технологии сетки служб упрощают взаимодействие с микрослужбами, встроенные в облако
 author: robvet
-ms.date: 03/03/2020
-ms.openlocfilehash: 89bc4d307d725e7e31e020ef156c4c5967dd2a1c
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.date: 05/13/2020
+ms.openlocfilehash: 1b11024cd029433c756812850e2665b7836a13d3
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82199954"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83613695"
 ---
 # <a name="service-mesh-communication-infrastructure"></a>Инфраструктура связи для слоя взаимодействия между службами
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 В этой главе мы изучили проблемы взаимодействия микрослужб. Мы говорили, что группы разработчиков должны учитывать, как взаимодействуют друг с другом серверные службы. В идеале, чем меньше взаимодействие между службами, тем лучше. Тем не менее, не всегда возможно, что серверные службы часто зависят друг от друга для выполнения операций.
 

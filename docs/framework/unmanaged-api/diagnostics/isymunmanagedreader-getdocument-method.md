@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bb203853-6a6d-4027-b9e9-603a7f28b9d3
 topic_type:
 - apiref
-ms.openlocfilehash: 1fcb885b6e19457065c2ca9971f068b42f97147d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 950fb3b9c51ae2c9470b5aadd31c877d7aa6b6f6
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448340"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615063"
 ---
 # <a name="isymunmanagedreadergetdocument-method"></a>Метод ISymUnmanagedReader::GetDocument
 Находит документ. Язык документа, поставщик и тип являются необязательными.  
@@ -41,13 +41,13 @@ HRESULT GetDocument (
  окне URL-адрес, определяющий документ.  
   
  `language`  
- окне Язык документа. Этот параметр является необязательным.  
+ окне Язык документа. Этот параметр необязателен.  
   
  `languageVendor`  
- окне Удостоверение поставщика для языка документа. Этот параметр является необязательным.  
+ окне Удостоверение поставщика для языка документа. Этот параметр необязателен.  
   
  `documentType`  
- окне Тип документа. Этот параметр является необязательным.  
+ окне Тип документа. Этот параметр необязателен.  
   
  `pRetVal`  
  заполняет Указатель на возвращаемый интерфейс.  
@@ -58,6 +58,6 @@ HRESULT GetDocument (
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f909ac48-3d8f-49fb-a369-e3d9959151cd
 topic_type:
 - apiref
-ms.openlocfilehash: 75d477af7395a9b7d3328b2a5787f810733f3749
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 451cfecde7e14fad9d3fed3367112e1fb59796e5
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448874"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615149"
 ---
 # <a name="isymunmanagedmethodgetsequencepoints-method"></a>Метод ISymUnmanagedMethod::GetSequencePoints
 Возвращает все точки следования в этом методе.  
@@ -41,10 +41,10 @@ HRESULT GetSequencePoints(
   
 ## <a name="parameters"></a>Параметры  
  `cPoints`  
- окне `ULONG32`, получающий размер массивов `offsets`, `documents`, `lines`, `columns`, `endLines`и `endColumns`.  
+ окне Объект `ULONG32` , который получает размер `offsets` массивов,,,, `documents` `lines` `columns` `endLines` и `endColumns` .  
   
  `pcPoints`  
- заполняет Указатель на `ULONG32`, который получает длину буфера, необходимую для хранения точек следования.  
+ заполняет Указатель на объект `ULONG32` , который получает длину буфера, необходимого для хранения точек следования.  
   
  `offsets`  
  окне Массив, в котором хранятся смещения MSIL от начала метода для точек следования.  
@@ -70,6 +70,6 @@ HRESULT GetSequencePoints(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

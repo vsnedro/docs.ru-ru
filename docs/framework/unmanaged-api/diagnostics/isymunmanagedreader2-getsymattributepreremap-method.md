@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
 topic_type:
 - apiref
-ms.openlocfilehash: 4009f8988c90ed090c0cc3d86164af347055722f
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: e6248aba1c41b2815f2806942d419da869ed94b4
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446418"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614920"
 ---
 # <a name="isymunmanagedreader2getsymattributepreremap-method"></a>Метод ISymUnmanagedReader2::GetSymAttributePreRemap
 Возвращает настраиваемый атрибут на основе его имени. В отличие от пользовательских атрибутов метаданных эти атрибуты хранятся в хранилище символов.  
@@ -42,13 +42,13 @@ HRESULT GetSymAttributePreRemap(
  окне Маркер метаданных родителя.  
   
  `name`  
- окне Указатель на `WCHAR`, содержащий имя.  
+ окне Указатель на объект `WCHAR` , содержащий имя.  
   
  `cBuffer`  
- окне `ULONG32`, указывающий размер массива `buffer`.  
+ окне Значение типа `ULONG32` , указывающее размер `buffer` массива.  
   
  `pcBuffer`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимый для хранения байтов атрибута.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения байтов атрибута.  
   
  `buffer`  
  заполняет Указатель на буфер, который получает байты атрибута.  
@@ -59,6 +59,6 @@ HRESULT GetSymAttributePreRemap(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReader2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+- [Интерфейс ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

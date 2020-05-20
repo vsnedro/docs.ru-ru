@@ -2,16 +2,14 @@
 title: Azure Active Directory
 description: Создание архитектуры облачных приложений .NET для Azure | Azure Active Directory
 ms.date: 06/30/2019
-ms.openlocfilehash: 207043507a9052c47683383a98cef6417a1a2740
-ms.sourcegitcommit: 55f438d4d00a34b9aca9eedaac3f85590bb11565
+ms.openlocfilehash: 03f5ea8e84bc3c4a2a88a63d4b109aabf0c64f36
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "73840733"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614283"
 ---
 # <a name="azure-active-directory"></a>Azure Active Directory
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Microsoft Azure Active Directory (Azure AD) предлагает управление удостоверениями и доступом в качестве службы. Клиенты используют его для настройки и обслуживания пользователей, сведения о том, какие данные следует хранить, кто имеет доступ к этой информации, кто может управлять ею и какие приложения могут получить к ним доступ. AAD может проверять подлинность пользователей для приложений, настроенных на его использование, обеспечивая единый вход (SSO). Его можно использовать самостоятельно или интегрировать с Windows AD на локальном компьютере.
 
@@ -21,7 +19,7 @@ Azure AD поддерживает экраны входа с фирменной 
 
 ## <a name="references"></a>Ссылки
 
-- [Платформа Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/)
+- [Платформа удостоверений Майкрософт](https://docs.microsoft.com/azure/active-directory/develop/)
 
 >[!div class="step-by-step"]
 >[Назад](authentication-authorization.md)

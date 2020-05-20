@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 83605f1e-e4f3-49e6-859b-f13cad68bb54
 topic_type:
 - apiref
-ms.openlocfilehash: 923a92ea256f79a1b0130b61c4fd99460fda96a0
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: bba0fc039c403d45e8a5b60f2b0231eb24226280
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74441808"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614959"
 ---
 # <a name="isymunmanagedreadergetmethodsfromdocumentposition-method"></a>Метод ISymUnmanagedReader::GetMethodsFromDocumentPosition
 Возвращает массив методов, каждый из которых содержит точку останова в заданной позиции в документе.  
@@ -52,10 +52,10 @@ HRESULT GetMethodsFromDocumentPosition (
  [in] Размер массива `pRetVal`.  
   
  `pcMethod`  
- заполняет Указатель на переменную, которая получает количество элементов, возвращенных в массиве `pRetVal`.  
+ заполняет Указатель на переменную, которая получает количество элементов, возвращаемых в `pRetVal` массиве.  
   
  `pRetVal`  
- заполняет Массив указателей, каждый из которых указывает на объект [ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md) , представляющий метод, содержащий точку останова.  
+ заполняет Массив указателей, каждый из которых указывает на объект [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) , представляющий метод, содержащий точку останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -63,6 +63,6 @@ HRESULT GetMethodsFromDocumentPosition (
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

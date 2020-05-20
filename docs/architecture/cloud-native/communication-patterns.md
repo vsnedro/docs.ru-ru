@@ -2,17 +2,15 @@
 title: Модели связи, ориентированные на облако
 description: Сведения о вопросах взаимодействия с основными службами в собственных облачных приложениях
 author: robvet
-ms.date: 08/31/2019
-ms.openlocfilehash: b3edc0817fb76ad99a1344b17d600eb747187f86
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.date: 05/13/2020
+ms.openlocfilehash: 3d678df44b5fef68427846e59f446b7408795625
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895631"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614218"
 ---
 # <a name="cloud-native-communication-patterns"></a>Модели связи, ориентированные на облако
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 При создании собственной облачной системы обмен данными является значительным решением по проектированию. Как клиентское приложение клиентского взаимодействия взаимодействует с серверной микрослужбой? Как серверные микрослужбы взаимодействуют друг с другом? Каковы принципы, шаблоны и рекомендации, которые следует учитывать при реализации взаимодействия в собственных приложениях в облаке?
 

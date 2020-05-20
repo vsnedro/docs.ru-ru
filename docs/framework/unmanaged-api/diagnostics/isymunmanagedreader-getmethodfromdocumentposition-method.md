@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 55773dbc-9053-46e3-8a3c-86caa9d91fb4
 topic_type:
 - apiref
-ms.openlocfilehash: 5afd48b36355835647ab8d06691f2bd2058b00cb
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 8015056b110fe8a5b5122b1bc81143980b780047
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74426734"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614985"
 ---
 # <a name="isymunmanagedreadergetmethodfromdocumentposition-method"></a>Метод ISymUnmanagedReader::GetMethodFromDocumentPosition
 Возвращает метод, содержащий точку останова в заданной позиции в документе.  
@@ -46,7 +46,7 @@ HRESULT GetMethodFromDocumentPosition (
  окне Столбец указанного документа.  
   
  `pRetVal`  
- заполняет Указатель на адрес объекта [интерфейса ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md) , который представляет метод, содержащий точку останова.  
+ заполняет Указатель на адрес объекта [интерфейса ISymUnmanagedMethod](isymunmanagedmethod-interface.md) , который представляет метод, содержащий точку останова.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -54,6 +54,6 @@ HRESULT GetMethodFromDocumentPosition (
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)
