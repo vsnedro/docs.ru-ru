@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: c1bda761-6292-4750-a14b-7d5db8f33456
 topic_type:
 - apiref
-ms.openlocfilehash: d2d90d33ce7a8135f40a0fb4039a2418dd1987ac
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ff1dabcfc366607639cd98be4392f8dd59dc83a1
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74435967"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442011"
 ---
-# <a name="inotifysink2onsynccallreturn-method"></a><span data-ttu-id="ed36c-102">Метод INotifySink2::OnSyncCallReturn</span><span class="sxs-lookup"><span data-stu-id="ed36c-102">INotifySink2::OnSyncCallReturn Method</span></span>
-<span data-ttu-id="ed36c-103">Вызывается при возвращении вызова.</span><span class="sxs-lookup"><span data-stu-id="ed36c-103">Gets invoked when a call returns.</span></span>  
+# <a name="inotifysink2onsynccallreturn-method"></a><span data-ttu-id="9f3c9-102">Метод INotifySink2::OnSyncCallReturn</span><span class="sxs-lookup"><span data-stu-id="9f3c9-102">INotifySink2::OnSyncCallReturn Method</span></span>
+<span data-ttu-id="9f3c9-103">Вызывается при возвращении вызова.</span><span class="sxs-lookup"><span data-stu-id="9f3c9-103">Gets invoked when a call returns.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ed36c-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ed36c-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9f3c9-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="9f3c9-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT OnSyncCallReturn  
@@ -36,24 +36,24 @@ HRESULT OnSyncCallReturn
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="ed36c-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="ed36c-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="9f3c9-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="9f3c9-105">Parameters</span></span>  
  `in_CallID`  
- <span data-ttu-id="ed36c-106">окне Идентификатор возвращаемого вызова.</span><span class="sxs-lookup"><span data-stu-id="ed36c-106">[in] ID of the call being returned from.</span></span> <span data-ttu-id="ed36c-107">См. раздел [структура CALL_ID](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md).</span><span class="sxs-lookup"><span data-stu-id="ed36c-107">See [CALL_ID Structure](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md).</span></span>  
+ <span data-ttu-id="9f3c9-106">окне Идентификатор возвращаемого вызова.</span><span class="sxs-lookup"><span data-stu-id="9f3c9-106">[in] ID of the call being returned from.</span></span> <span data-ttu-id="9f3c9-107">См. раздел [структура CALL_ID](call-id-structure.md).</span><span class="sxs-lookup"><span data-stu-id="9f3c9-107">See [CALL_ID Structure](call-id-structure.md).</span></span>  
   
  `in_pBuffer`  
- <span data-ttu-id="ed36c-108">окне Буфер вызова.</span><span class="sxs-lookup"><span data-stu-id="ed36c-108">[in] Call buffer.</span></span>  
+ <span data-ttu-id="9f3c9-108">окне Буфер вызова.</span><span class="sxs-lookup"><span data-stu-id="9f3c9-108">[in] Call buffer.</span></span>  
   
  `in_BufferSize`  
- <span data-ttu-id="ed36c-109">окне Размер буфера вызова в байтах.</span><span class="sxs-lookup"><span data-stu-id="ed36c-109">[in] Size of the call buffer, in bytes.</span></span>  
+ <span data-ttu-id="9f3c9-109">окне Размер буфера вызова в байтах.</span><span class="sxs-lookup"><span data-stu-id="9f3c9-109">[in] Size of the call buffer, in bytes.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="ed36c-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="ed36c-110">Return Value</span></span>  
- <span data-ttu-id="ed36c-111">S_OK, если метод выполнен.</span><span class="sxs-lookup"><span data-stu-id="ed36c-111">S_OK if the method succeeds.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="9f3c9-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="9f3c9-110">Return Value</span></span>  
+ <span data-ttu-id="9f3c9-111">S_OK, если метод выполнен.</span><span class="sxs-lookup"><span data-stu-id="9f3c9-111">S_OK if the method succeeds.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="ed36c-112">Требования</span><span class="sxs-lookup"><span data-stu-id="ed36c-112">Requirements</span></span>  
- <span data-ttu-id="ed36c-113">**Заголовок:** ProtocolNotify2. idl</span><span class="sxs-lookup"><span data-stu-id="ed36c-113">**Header:** ProtocolNotify2.idl</span></span>  
+## <a name="requirements"></a><span data-ttu-id="9f3c9-112">Требования</span><span class="sxs-lookup"><span data-stu-id="9f3c9-112">Requirements</span></span>  
+ <span data-ttu-id="9f3c9-113">**Заголовок:** ProtocolNotify2. idl</span><span class="sxs-lookup"><span data-stu-id="9f3c9-113">**Header:** ProtocolNotify2.idl</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ed36c-114">См. также</span><span class="sxs-lookup"><span data-stu-id="ed36c-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9f3c9-114">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="9f3c9-114">See also</span></span>
 
-- [<span data-ttu-id="ed36c-115">Интерфейс INotifySink2</span><span class="sxs-lookup"><span data-stu-id="ed36c-115">INotifySink2 Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
-- [<span data-ttu-id="ed36c-116">Интерфейс INotifySource2</span><span class="sxs-lookup"><span data-stu-id="ed36c-116">INotifySource2 Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
-- [<span data-ttu-id="ed36c-117">Интерфейс INotifyConnection2</span><span class="sxs-lookup"><span data-stu-id="ed36c-117">INotifyConnection2 Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
+- [<span data-ttu-id="9f3c9-115">Интерфейс INotifySink2</span><span class="sxs-lookup"><span data-stu-id="9f3c9-115">INotifySink2 Interface</span></span>](inotifysink2-interface.md)
+- [<span data-ttu-id="9f3c9-116">Интерфейс INotifySource2</span><span class="sxs-lookup"><span data-stu-id="9f3c9-116">INotifySource2 Interface</span></span>](inotifysource2-interface.md)
+- [<span data-ttu-id="9f3c9-117">Интерфейс INotifyConnection2</span><span class="sxs-lookup"><span data-stu-id="9f3c9-117">INotifyConnection2 Interface</span></span>](inotifyconnection2-interface.md)
