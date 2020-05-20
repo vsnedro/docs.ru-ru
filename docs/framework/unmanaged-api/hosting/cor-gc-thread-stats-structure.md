@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 01f9a59b-7679-4d42-9ced-4a8981625c3d
 topic_type:
 - apiref
-ms.openlocfilehash: 64e0c466edcd8863244e6ed184c18422b5f66875
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 88e81779fc9c20c506f3b0aa11ac2da3958dfe86
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178269"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616701"
 ---
 # <a name="cor_gc_thread_stats-structure"></a>Структура COR_GC_THREAD_STATS
-Содержит статистику по потоку, относящуюся к сбору мусора.  
+Содержит статистику по каждому потоку, относящуюся к сборке мусора.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,26 +33,26 @@ typedef struct _COR_GC_THREAD_STATS {
 } COR_GC_THREAD_STATS;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`PerThreadAllocation`|Количество байтов памяти, выделенных на потоке, связанном с текущим `COR_GC_THREAD_STATS` экземпляром. Это число очищается до нуля каждый раз, когда происходит сбор мусора с нулевым поколением.|  
-|`Flags`|Количество байтов, повышенных до более высокого поколения на последнем сборе мусора.|  
+|`PerThreadAllocation`|Число байтов памяти, выделенных в потоке, связанном с текущим `COR_GC_THREAD_STATS` экземпляром. Это число сбрасывается в ноль каждый раз, когда происходит сборка мусора нулевого поколения.|  
+|`Flags`|Число байтов, преобразованных в более высокое поколение при последней сборке мусора.|  
   
-## <a name="remarks"></a>Remarks  
- [ICLRTask::GetMemStats](../../../../docs/framework/unmanaged-api/hosting/iclrtask-getmemstats-method.md) принимает выходный `COR_GC_THREAD_STATS`параметр типа.  
+## <a name="remarks"></a>Комментарии  
+ [ICLRTask:: жетмемстатс](iclrtask-getmemstats-method.md) принимает выходной параметр типа `COR_GC_THREAD_STATS` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** GCHost.idl  
+ **Заголовок:** Гчост. idl  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Структуры размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
-- [Интерфейс IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
+- [Структуры размещения](hosting-structures.md)
+- [Интерфейс IHostTask](ihosttask-interface.md)

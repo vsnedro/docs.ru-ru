@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3f958d41-e82e-4ec3-ae6f-16c7b3b31e3e
 topic_type:
 - apiref
-ms.openlocfilehash: 15ce6b589beb6c8b30ff4e8b16440c8110cc466b
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 30e8df6e2dcdfed15badaa6c0996ee6c912315d2
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136890"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616541"
 ---
 # <a name="cormarkthreadinthreadpool-function"></a>Функция CorMarkThreadInThreadPool
 Помечает выполняющийся в данный момент поток пула потоков для выполнения управляемого кода. Начиная с версии .NET Framework 2,0 эта функция не действует. Он не является обязательным и может быть удален из кода. Эта функция является устаревшей в .NET Framework 4.  
@@ -31,14 +31,14 @@ void CorMarkThreadInThreadPool ();
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 51f848be-84c5-4036-9839-c762c576bbf5
 topic_type:
 - apiref
-ms.openlocfilehash: cc0cea10b4a209583fb7afb551a6b80d52ad7f62
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e8dda83df8a320733f45dbcc13599cdf37d26492
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127032"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83617156"
 ---
 # <a name="host_type-enumeration"></a>Перечисление HOST_TYPE
 Содержит значения, указывающие тип узла, запускающего приложение.  
@@ -34,7 +34,7 @@ typedef enum {
 } HOST_TYPE;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -43,14 +43,14 @@ typedef enum {
 |`HOST_TYPE_DEFAULT`|То же, что и HOST_TYPE_APPLAUNCH.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Размещение перечислений](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Размещение перечислений](hosting-enumerations.md)

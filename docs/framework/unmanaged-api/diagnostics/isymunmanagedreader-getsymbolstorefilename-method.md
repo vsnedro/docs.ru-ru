@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c84f4846-9bc8-44a4-9a76-e39106d6d8b2
 topic_type:
 - apiref
-ms.openlocfilehash: b3674c4058dba2f6185418b55b35eefb14c312f6
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 6ffab3b2f81680404f870cfd63ae5125173a346c
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74431237"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615518"
 ---
 # <a name="isymunmanagedreadergetsymbolstorefilename-method"></a>Метод ISymUnmanagedReader::GetSymbolStoreFileName
 Предоставляет имя файла на диске для хранилища символов.  
@@ -37,10 +37,10 @@ HRESULT GetSymbolStoreFileName (
   
 ## <a name="parameters"></a>Параметры  
  `cchName`  
- окне Размер буфера `szName`.  
+ окне Размер `szName` буфера.  
   
  `pcchName`  
- заполняет Указатель на переменную, которая получает длину имени, возвращаемого в `szName`, включая завершение значения NULL.  
+ заполняет Указатель на переменную, которая получает длину имени, возвращаемого в `szName` , включая завершение значения NULL.  
   
  `szName`  
  заполняет Указатель на переменную, которая получает имя файла хранилища символов.  
@@ -51,6 +51,6 @@ HRESULT GetSymbolStoreFileName (
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

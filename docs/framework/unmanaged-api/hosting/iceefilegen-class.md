@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 90368606-506e-40df-be1f-8d595159203f
 topic_type:
 - apiref
-ms.openlocfilehash: 8f9761cc8bc881cd694f5d9620e5c4ab5987a2ed
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fc0de164b9489c9661bc6cb0ffb681f75e88ea26
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176400"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83617013"
 ---
 # <a name="iceefilegen-class"></a>Класс ICeeFileGen
-Обеспечивает функциональность для создания родного портативного исполняемого (PE) файла. Интерфейс обычно используется компиляторами для создания компилированного вывода.  
+Предоставляет функциональные возможности для создания машинного переносимого исполняемого файла (PE). Интерфейс, как правило, используется компиляторами для создания скомпилированного выходного исполняемого файла.  
   
 > [!NOTE]
-> `ICeeFileGen`поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из кода.  
+> `ICeeFileGen`поддерживает инфраструктуру .NET Framework и не предназначена для непосредственного использования в коде.  
   
- Этот интерфейс был обесточен и будет удален в будущем выпуске.  
+ Этот интерфейс является устаревшим и будет удален в следующем выпуске.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -235,12 +235,12 @@ public:
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** ICeeFileGen.h  
+ **Заголовок:** Ицеефилежен. h  
   
- **Рамочная версия .NET:** 1.0  
+ **Версия .NET Framework:** 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Интерфейсы размещения](hosting-interfaces.md)

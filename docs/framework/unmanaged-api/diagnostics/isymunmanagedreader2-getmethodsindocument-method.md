@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c7ae84d6-81e8-4cb7-a1f9-d48b6cde5d79
 topic_type:
 - apiref
-ms.openlocfilehash: 70c1d87ae32fb70f8d9f6e32b527394022459526
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 68a0f9ec8793d465a6fa3b1cb6936eddd7be4c8f
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446433"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615414"
 ---
 # <a name="isymunmanagedreader2getmethodsindocument-method"></a>Метод ISymUnmanagedReader2::GetMethodsInDocument
 Возвращает каждый метод, имеющий сведения о строке в указанном документе.  
@@ -41,10 +41,10 @@ HRESULT GetMethodsInDocument(
  окне Указатель на документ.  
   
  `cMethod`  
- окне `ULONG32`, указывающий размер массива `pRetVal`.  
+ окне Значение типа `ULONG32` , указывающее размер `pRetVal` массива.  
   
  `pcMethod`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимый для хранения методов.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения методов.  
   
  `pRetVal`  
  заполняет Указатель на буфер, который получает методы.  
@@ -55,6 +55,6 @@ HRESULT GetMethodsInDocument(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedReader2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+- [Интерфейс ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

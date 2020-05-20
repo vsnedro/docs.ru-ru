@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: aa227704-0ab1-4b08-aee2-1f439762162e
 topic_type:
 - apiref
-ms.openlocfilehash: 63275aaa7ed1f63c4f100845d2cbe9e93fcd0bcd
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 2206499cad9be2a29f485ee66d468accbe00b5f5
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131247"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616688"
 ---
 # <a name="cor_gc_thread_stats_types-enumeration"></a>Перечисление COR_GC_THREAD_STATS_TYPES
 Указывает статистику сборки мусора для потока.  
@@ -32,19 +32,19 @@ typedef enum {
 } COR_GC_THREAD_STATS_TYPES;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
 |`COR_GC_THREAD_HAS_PROMOTED_BYTES`|Поток содержит байты, которые были повышены в последней сборке мусора.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Гчост. idl, Гчост. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Размещение перечислений](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Размещение перечислений](hosting-enumerations.md)

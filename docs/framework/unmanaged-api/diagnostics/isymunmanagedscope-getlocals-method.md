@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 17c45f15-8c44-44da-b070-f902077b36e4
 topic_type:
 - apiref
-ms.openlocfilehash: bf932b63973f93c56883f099ddaadd9d1519f337
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 0acd31d85504688427cace0222a657885035c537
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446333"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615388"
 ---
 # <a name="isymunmanagedscopegetlocals-method"></a>Метод ISymUnmanagedScope::GetLocals
 Возвращает локальные переменные, определенные в этой области.  
@@ -37,10 +37,10 @@ HRESULT GetLocals(
   
 ## <a name="parameters"></a>Параметры  
  `cLocals`  
- окне `ULONG32`, указывающий размер массива `locals`.  
+ окне Значение типа `ULONG32` , указывающее размер `locals` массива.  
   
  `pcLocals`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимый для хранения локальных переменных.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения локальных переменных.  
   
  `locals`  
  заполняет Массив, который получает локальные переменные.  
@@ -51,6 +51,6 @@ HRESULT GetLocals(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+- [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)

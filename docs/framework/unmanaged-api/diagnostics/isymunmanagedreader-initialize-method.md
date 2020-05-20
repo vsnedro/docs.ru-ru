@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8f0dd2fe-7df7-464e-91f4-5518c586bb5f
 topic_type:
 - apiref
-ms.openlocfilehash: ca34d1d84d6f9960d021c35566f8412df321464d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 07d2de5d12fd769cb5cce243d9e721bb6fc185a7
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74429747"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615479"
 ---
 # <a name="isymunmanagedreaderinitialize-method"></a>Метод ISymUnmanagedReader::Initialize
 Инициализирует средство чтения символов с помощью интерфейса средства импорта метаданных, с которым будет связан этот модуль чтения, вместе с именем файла модуля.  
@@ -43,10 +43,10 @@ HRESULT Initialize (
  окне Интерфейс средства импорта метаданных, с которым будет связан этот модуль чтения.  
   
  `filename`  
- окне Имя файла модуля. Вместо этого можно использовать параметр `pIStream`.  
+ окне Имя файла модуля. Вместо этого можно использовать `pIStream` параметр.  
   
  `searchPath`  
- окне Путь для поиска. Этот параметр является необязательным.  
+ окне Путь для поиска. Этот параметр необязателен.  
   
  `pIStream`  
  окне Файловый поток, используемый в качестве альтернативы параметру filename.  
@@ -54,12 +54,12 @@ HRESULT Initialize (
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
-## <a name="remarks"></a>Примечания  
- Необходимо указать только один из параметров `filename` или `pIStream`, но не оба. Параметр `searchPath` является необязательным.  
+## <a name="remarks"></a>Комментарии  
+ Необходимо указать только один из `filename` `pIStream` параметров или, но не оба. Параметр `searchPath` не обязателен.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

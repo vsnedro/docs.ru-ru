@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab
 topic_type:
 - apiref
-ms.openlocfilehash: 4eb878b61b72378bc6870af7f2cd09f0b6943b13
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ff7e7b299d185b8db263d2076c1e075b87b487fc
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136506"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616402"
 ---
 # <a name="destroyiceefilegen-function"></a>Функция DestroyICeeFileGen
-Уничтожает объект [ицеефилежен](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) .  
+Уничтожает объект [ицеефилежен](iceefilegen-class.md) .  
   
  Эта функция является устаревшей в .NET Framework 4.  
   
@@ -38,23 +38,23 @@ HRESULT DestroyICeeFileGen (
   
 ## <a name="parameters"></a>Параметры  
  `ceeFileGen`  
- окне Объект `ICeeFileGen` для уничтожения.  
+ окне `ICeeFileGen`Объект для уничтожения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Этот метод возвращает стандартные коды ошибок COM.  
   
-## <a name="remarks"></a>Заметки  
- `DestroyICeeFileGen` уничтожает объект `ICeeFileGen`, созданный функцией [креатеицеефилежен](../../../../docs/framework/unmanaged-api/hosting/createiceefilegen-function.md) .  
+## <a name="remarks"></a>Комментарии  
+ `DestroyICeeFileGen`уничтожает `ICeeFileGen` объект, созданный функцией [креатеицеефилежен](createiceefilegen-function.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Ицеефилежен. h  
   
  **Библиотека:** Мскорпе. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

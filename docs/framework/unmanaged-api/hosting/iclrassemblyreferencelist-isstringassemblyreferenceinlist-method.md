@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e6121cc3-2f11-42c7-bdae-47808581ff71
 topic_type:
 - apiref
-ms.openlocfilehash: 4dc91723f009d46f9c57b1c99aa66ba7a1b127e4
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 91f174cab4986882df795eb531baedfc0dd43962
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73126636"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615869"
 ---
 # <a name="iclrassemblyreferencelistisstringassemblyreferenceinlist-method"></a>Метод ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList
 Возвращает значение, указывающее, совпадает ли заданное имя с именем сборки в списке.  
@@ -43,20 +43,20 @@ HRESULT IsStringAssemblyReferenceInList (
 |-------------|-----------------|  
 |S_OK|Строка появится в списке.|  
 |S_FALSE|Строка не отображается в списке.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод вернет значение E_FAIL, среда CLR больше не будет использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не будет использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRAssemblyIdentityManager](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
-- [Интерфейс ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
-- [Интерфейс IHostAssemblyManager](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)
-- [Интерфейс IHostAssemblyStore](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)
+- [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
+- [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
+- [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)
+- [Интерфейс IHostAssemblyStore](ihostassemblystore-interface.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2adb5827-2268-4914-a1c6-f62b61880a45
 topic_type:
 - apiref
-ms.openlocfilehash: 38f3140a181deae1a86569bfc2eb7cf3cd7d1991
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 939acc0ad47021d5fdffe7b7b71ea6a4a1635a6d
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131930"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616740"
 ---
 # <a name="comcallunmarshal-coclass"></a>Компонентный класс ComCallUnmarshal
 Предоставляет интерфейсы для управления упаковкой указателей интерфейса.  
@@ -32,21 +32,21 @@ coclass ComCallUnmarshal {
 };  
 ```  
   
-## <a name="interfaces"></a>интерфейсов,  
+## <a name="interfaces"></a>Интерфейсы  
   
 |Интерфейс|Описание|  
 |---------------|-----------------|  
 |`IMarshal`|Предоставляет методы для создания, инициализации и управления прокси-сервером в клиентском процессе.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. idl  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Размещение коклассов](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)
+- [Размещение коклассов](hosting-coclasses.md)

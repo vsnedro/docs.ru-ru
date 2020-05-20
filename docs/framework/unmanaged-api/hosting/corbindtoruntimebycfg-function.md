@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: ded1e492-a782-4185-9c66-709e421c1782
 topic_type:
 - apiref
-ms.openlocfilehash: 4fbc6e7ea531f65a6b1cd0ec93f4847ab8e4fe83
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9326484c6a9f96d245e3c61a0ac3e3465a8a6dcd
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178246"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616649"
 ---
 # <a name="corbindtoruntimebycfg-function"></a>Функция CorBindToRuntimeByCfg
-Загружает время выполнения общего языка (CLR) в процесс, используя информацию о версии, которая читается из файла XML.  
+Загружает среду CLR в процесс с использованием сведений о версии, считываемых из XML-файла.  
   
- Эта функция была унесена в системе .NET 4.  
+ Эта функция является устаревшей в .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,40 +41,40 @@ HRESULT CorBindToRuntimeByCfg (
   
 ## <a name="parameters"></a>Параметры  
  `pCfgStream`  
- (в) Указатель на `IStream` объект, который читает файл XML.  
+ окне Указатель на `IStream` объект, считывающий XML-файл.  
   
  `reserved`  
- [in] Зарезервирован для будущего использования. Используйте 0 (ноль) в качестве значения.  
+ [in] Зарезервирован для будущего использования. Используйте 0 (нуль) в качестве значения.  
   
  `startupFlags`  
- (в) Значение [STARTUP_FLAGS](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) перечисления, которое определяет поведение стартапа CLR.  
+ окне Значение перечисления [STARTUP_FLAGS](startup-flags-enumeration.md) , указывающее поведение среды CLR при запуске.  
   
  `rclsid`  
- (в) Кокласс, `CLSID` который реализует либо [iCorRuntimeHost,](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) либо интерфейс [ICLRRuntimeHost.](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md) Поддерживаемые значения являются CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
+ окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
- (в) Либо `IID` или `ICorRuntimeHost` `ICLRRuntimeHost` интерфейс. Поддерживаемые значения IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
+ окне `IID`Либо `ICorRuntimeHost` интерфейса, либо `ICLRRuntimeHost` . Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
   
  `ppv`  
- (ваут) Указатель на адрес возвращенного интерфейса.  
+ заполняет Указатель на адрес возвращенного интерфейса.  
   
-## <a name="remarks"></a>Remarks  
- Формат файла XML моделируется после стандартного файла конфигурации приложения. Для получения дополнительной информации о файлах XML [см.](../../../../docs/framework/configure-apps/file-schema/index.md)  
+## <a name="remarks"></a>Комментарии  
+ Формат XML-файла моделируется после стандартного файла конфигурации приложения. Дополнительные сведения о XML-файлах см. в разделе [Схема файла конфигурации](../../configure-apps/file-schema/index.md).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE.dll  
+ **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Функция CorBindToCurrentRuntime](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)
-- [Функция CorBindToRuntime](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)
-- [Функция CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)
-- [Функция CorBindToRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimehost-function.md)
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
+- [Функция CorBindToRuntime](corbindtoruntime-function.md)
+- [Функция CorBindToRuntimeEx](corbindtoruntimeex-function.md)
+- [Функция CorBindToRuntimeHost](corbindtoruntimehost-function.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

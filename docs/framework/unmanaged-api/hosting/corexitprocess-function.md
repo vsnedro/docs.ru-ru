@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
 topic_type:
 - apiref
-ms.openlocfilehash: 44578595b3cb790570c5359e714bd39c109cf1f8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a60805e1fd78cb14835957a7afc14fe279cb20fb
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176465"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616571"
 ---
 # <a name="corexitprocess-function"></a>Функция CorExitProcess
-Выключает текущий неуправляемый процесс.  
+Завершает текущий неуправляемый процесс.  
   
- Эта функция была унесена в системе .NET 4. Вместо этого используйте метод [ICLRMetaHost::ExitProcess.](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-exitprocess-method.md)  
+ Эта функция является устаревшей в .NET Framework 4. Используйте вместо этого метод [ICLRMetaHost:: ExitProcess](iclrmetahost-exitprocess-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,22 +40,22 @@ void STDMETHODCALLTYPE CorExitProcess (
   
 ## <a name="parameters"></a>Параметры  
  `exitCode`  
- Неисчер, оговаривает код выхода процесса.  
+ Целое число, указывающее код завершения процесса.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
-> Начиная с .NET Framework `CorExitProcess` 4, выходы из каждого запущенного времени выполнения в процессе, а не только время выполнения, к которому были связаны устаревшие AI.  
+> Начиная с .NET Framework 4, `CorExitProcess` завершает каждую запущенную среду выполнения в процессе, а не только среду выполнения, к которой привязаны API прежних версий.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE.dll  
+ **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2709f18f-3eee-497f-bc33-3ab7a485599b
 topic_type:
 - apiref
-ms.openlocfilehash: 970468bc2f50144c62c6e3cbcf9c00c2027f7663
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 6fd7a19d9fc77b43bbceb1b5e5399a455429e700
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73138178"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616157"
 ---
 # <a name="fexecuteinappdomaincallback-function-pointer"></a>Указатель функции FExecuteInAppDomainCallback
 Указывает на функцию, которая вызывается средой CLR для выполнения управляемого кода.  
@@ -41,14 +41,14 @@ typedef HRESULT (__stdcall *FExecuteInAppDomainCallback) (
  Выделение и время существования этой памяти управляются вызывающим объектом (то есть средой CLR). Это не управляемая средой CLR память в куче.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorWks. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b38bbc9a-872c-41a9-b8c3-ca011d25456a
 topic_type:
 - apiref
-ms.openlocfilehash: d6092f16804fae39dd9496e8572edd64e1b7e9bd
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 81b6f009ea61294f398a21c4def927ef2609f32b
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129373"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615754"
 ---
 # <a name="iclrdebugmanagersetconnectiontasks-method"></a>Метод ICLRDebugManager::SetConnectionTasks
-Связывает список экземпляров [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) с идентификатором и понятным именем.  
+Связывает список экземпляров [ICLRTask](iclrtask-interface.md) с идентификатором и понятным именем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,45 +37,45 @@ HRESULT SetConnectionTasks (
   
 ## <a name="parameters"></a>Параметры  
  `id`  
- окне Специфический для узла идентификатор соединения, с которым связывается массив `ppCLRTask`.  
+ окне Специфический для узла идентификатор соединения, с которым связывается `ppCLRTask` массив.  
   
  `dwCount`  
- окне Число членов `ppCLRTask`. Это число должно быть больше нуля.  
+ окне Число членов `ppCLRTask` . Это число должно быть больше нуля.  
   
  `ppCLRTask`  
- окне Массив `ICLRTask`ных указателей, связываемых с соединением, идентифицируемым `id`. Этот массив должен содержать по крайней мере один элемент.  
+ окне Массив `ICLRTask` указателей, связываемый с соединением, определенным `id` . Этот массив должен содержать по крайней мере один элемент.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`SetConnectionTasks` успешно возвращено.|  
+|S_OK|`SetConnectionTasks`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод вернет значение E_FAIL, среда CLR больше не будет использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
-|E_INVALIDARG|[Бегинконнектион](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-beginconnection-method.md) не вызывался с помощью этого значения `id`или `dwCount` или `id` равно нулю, либо один из элементов `ppCLRTask` имеет значение null.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_INVALIDARG|[Бегинконнектион](iclrdebugmanager-beginconnection-method.md) не вызывался с использованием этого значения `id` , или `dwCount` или `id` равно нулю, либо один из элементов `ppCLRTask` имеет значение null.|  
   
-## <a name="remarks"></a>Заметки  
- [ICLRDebugManager](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md) предоставляет три метода: `BeginConnection`, `SetConnectionTasks`и [ендконнектион](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-endconnection-method.md)для связывания списков задач с идентификаторами и понятными именами.  
+## <a name="remarks"></a>Комментарии  
+ [ICLRDebugManager](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md) предоставляет три метода, `BeginConnection` , `SetConnectionTasks` и [ендконнектион](iclrdebugmanager-endconnection-method.md)для связывания списков задач с идентификаторами и понятными именами.  
   
 > [!IMPORTANT]
-> Эти три метода должны вызываться в определенном порядке для каждого набора задач. Сначала вызывается `BeginConnection`, чтобы установить новое соединение. `SetConnectionTasks` вызывается далее для предоставления набора задач, которые должны быть связаны с этим соединением. `EndConnection` вызывается Last для удаления связи между списком задач и идентификатором и понятным именем. Однако вызовы для различных соединений могут быть вложенными.  
+> Эти три метода должны вызываться в определенном порядке для каждого набора задач. `BeginConnection`вызывается первым для установления нового соединения. `SetConnectionTasks`вызывается далее для предоставления набора задач, которые должны быть связаны с этим соединением. `EndConnection`вызывается последним, чтобы удалить связь между списком задач и идентификатором и понятным именем. Однако вызовы для различных соединений могут быть вложенными.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRControl](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [Интерфейс ICLRDebugManager](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
-- [Метод BeginConnection](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-beginconnection-method.md)
-- [Метод EndConnection](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-endconnection-method.md)
-- [Интерфейс IHostControl](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+- [Интерфейс ICLRControl](iclrcontrol-interface.md)
+- [Интерфейс ICLRDebugManager](iclrdebugmanager-interface.md)
+- [Метод BeginConnection](iclrdebugmanager-beginconnection-method.md)
+- [Метод EndConnection](iclrdebugmanager-endconnection-method.md)
+- [Интерфейс IHostControl](ihostcontrol-interface.md)

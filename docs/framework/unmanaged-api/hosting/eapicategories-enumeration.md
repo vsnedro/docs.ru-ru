@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3c4a8a5a-8a46-4ac9-947f-4959bc9d6ac6
 topic_type:
 - apiref
-ms.openlocfilehash: 0fd9409a5157e1013365c94f01631f130a76f54b
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: d31b0190ef9a697fb27c849db080bec6c57618ae
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131217"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616389"
 ---
 # <a name="eapicategories-enumeration"></a>Перечисление EApiCategories
 Описывает категории возможностей, которые узел может блокировать при выполнении в частично доверенном коде.  
@@ -42,7 +42,7 @@ typedef enum {
 } EHostProtectionCategories;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -58,21 +58,21 @@ typedef enum {
 |`eSynchronization`|Указывает, что классы и члены среды CLR, которые позволяют коду пользователя удерживать блокировки, блокируются в частично доверенном коде.|  
 |`eUI`|Указывает, что управляемые классы и члены, которые разрешают или запрашивать взаимодействие с пользователем, блокируются в частично доверенном коде.|  
   
-## <a name="remarks"></a>Заметки  
- Метод [иклрхостпротектионманажер:: SetProtectedCategories](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-setprotectedcategories-method.md) принимает параметр типа `EApiCategories`.  
+## <a name="remarks"></a>Комментарии  
+ Метод [иклрхостпротектионманажер:: SetProtectedCategories](iclrhostprotectionmanager-setprotectedcategories-method.md) принимает параметр типа `EApiCategories` .  
   
- Перечисление `EApiCategories` и метод `SetProtectedCategories` напрямую связаны с управляемым классом <xref:System.Security.Permissions.HostProtectionAttribute?displayProperty=nameWithType>. Управляемый класс используется с перечислением <xref:System.Security.Permissions.HostProtectionResource?displayProperty=nameWithType>, значения которого непосредственно соответствуют значениям `EApiCategories`, чтобы пометить управляемые типы и члены, которые предоставляют возможности, соответствующие категориям, описанным `EApiCategories`.  
+ `EApiCategories`Перечисление и `SetProtectedCategories` метод напрямую связаны с управляемым <xref:System.Security.Permissions.HostProtectionAttribute?displayProperty=nameWithType> классом. Управляемый класс используется с <xref:System.Security.Permissions.HostProtectionResource?displayProperty=nameWithType> перечислением, значения которого непосредственно соответствуют `EApiCategories` значениям, чтобы пометить управляемые типы и члены, которые предоставляют возможности, соответствующие категориям, описанным в `EApiCategories` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRHostProtectionManager](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-interface.md)
-- [Размещение перечислений](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Интерфейс ICLRHostProtectionManager](iclrhostprotectionmanager-interface.md)
+- [Размещение перечислений](hosting-enumerations.md)

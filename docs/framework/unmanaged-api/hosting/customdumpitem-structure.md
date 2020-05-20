@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fd9085ff-7beb-4c38-97f0-037cd8ba4f65
 topic_type:
 - apiref
-ms.openlocfilehash: 154beef9398029f31dcb4d081019b9f292238af4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5c77a332593ba470d2e29b87cba182a770d5db7e
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176478"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616441"
 ---
 # <a name="customdumpitem-structure"></a>Структура CustomDumpItem
-Описывает элемент, который должен быть добавлен в пользовательский дамп в сообщении об ошибке.  
+Описывает элемент, добавляемый в пользовательский дамп в отчетах об ошибках.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,25 +35,25 @@ struct {
 } CustomDumpItem;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`itemKind`|Значение [ECustomDumpItemKind,](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpitemkind-enumeration.md) которое указывает вид товара, который будет добавлен.|  
-|`pReserved`|В настоящий момент не используется. Любые элементы, добавленные в союз, должны быть не больше размера указателя. Если `struct` требуется, вы должны выделить его отдельно и указать на него.|  
+|`itemKind`|Значение [екустомдумпитемкинд](ecustomdumpitemkind-enumeration.md) , указывающее тип добавляемого элемента.|  
+|`pReserved`|В настоящий момент не используется. Все элементы, добавляемые в объединение, не должны быть больше размера указателя. Если `struct` требуется, необходимо выделить его отдельно и указать на него.|  
   
-## <a name="remarks"></a>Remarks  
- [ICLRErrorReportingManager::BeginCustomDump](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-begincustomdump-method.md) принимает параметр `CustomDumpItem`типа .  
+## <a name="remarks"></a>Комментарии  
+ [Iclrerrorreportingmanagergetbucketparametersforcurrentexception:: BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md) принимает параметр типа `CustomDumpItem` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.idl  
+ **Заголовок:** MSCorEE. idl  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Структуры размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+- [Структуры размещения](hosting-structures.md)

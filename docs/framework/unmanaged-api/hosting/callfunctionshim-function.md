@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 37118465-ddf3-41f0-bf27-335b72777e63
 topic_type:
 - apiref
-ms.openlocfilehash: d39e15a2ba71ba0c0147482259f5618dcb5d298b
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e8945d40a3761ec51a73a8ae90ddc1d84ccab651
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73192098"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616870"
 ---
 # <a name="callfunctionshim-function"></a>Функция CallFunctionShim
 Вызывает функцию с указанным именем и параметрами в указанной библиотеке.  
@@ -56,17 +56,17 @@ HRESULT CallFunctionShim (
  окне Версия библиотеки, которая содержит функцию.  
   
  `pvReserved`  
- окне Зарезервировано для будущего использования. В этом параметре следует передать ноль.  
+ [in] Зарезервирован для будущего использования. В этом параметре следует передать ноль.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

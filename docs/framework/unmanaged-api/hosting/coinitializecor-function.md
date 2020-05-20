@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9b9079fb-579e-4141-b3f0-791072dd40dc
 topic_type:
 - apiref
-ms.openlocfilehash: e8d65e739504e01a7d11b37d1b34d7313b13a5e1
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 188f98504fa73c4a85615a4e688bae02d966b9b6
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73138336"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616753"
 ---
 # <a name="coinitializecor-function"></a>Функция CoInitializeCor
 `CoInitializeCor` устарел.  
@@ -33,12 +33,12 @@ STDAPI CoInitializeCor (
 );  
 ```  
   
-## <a name="remarks"></a>Заметки  
- Чтобы инициализировать среду CLR, используйте либо [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) , либо [корбиндтокуррентрунтиме](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md).  
+## <a name="remarks"></a>Remarks  
+ Чтобы инициализировать среду CLR, используйте либо [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) , либо [корбиндтокуррентрунтиме](corbindtocurrentruntime-function.md).  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** COR. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Глобальные статические функции метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)

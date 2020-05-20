@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf
 topic_type:
 - apiref
-ms.openlocfilehash: 6566adc442034763e0209869404b60b5afa63866
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: afb25ad9e1760f390aa8dfb3e1de39ea60f185c2
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176491"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616623"
 ---
 # <a name="corbindtoruntimehost-function"></a>Функция CorBindToRuntimeHost
-Позволяет хостам загружать определенную версию общего времени выполнения языка (CLR) в процесс.  
+Позволяет узлам загружать в процесс указанную версию среды CLR.  
   
- Эта функция была унесена в системе .NET 4.  
+ Эта функция является устаревшей в .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,54 +43,54 @@ HRESULT CorBindToRuntimeHost (
   
 ## <a name="parameters"></a>Параметры  
  `pwszVersion`  
- (в) Строка, описывающая версию CLR, которую вы хотите загрузить.  
+ окне Строка, описывающая версию среды CLR, которую требуется загрузить.  
   
- Номер версии в рамочном варианте .NET состоит из четырех частей, разделенных периодами: *major.minor.build.revision*. Строка прошла `pwszVersion` так, как должна начаться с символа "v", за которым следуют первые три части номера версии (например, "v1.0.1529").  
+ Номер версии в .NET Framework состоит из четырех частей, разделенных точками: *основной. дополнительный. сборка. Редакция*. Строка, передаваемая как, `pwszVersion` должна начинаться с символа "v", за которым следуют первые три части номера версии (например, "v 1.0.1529").  
   
- Некоторые версии CLR установлены с программным заявлением, которое определяет совместимость с предыдущими версиями CLR. По умолчанию shim запуска `pwszVersion` оценивается в соответствии с политическими заявлениями и загружает последнюю версию времени выполнения, совместимую с запрашиваемым вариантом. Хост может заставить shim пропустить оценку `pwszVersion` политики и загрузить точную версию, указанную в, передавая значение STARTUP_LOADER_SAFEMODE для `startupFlags` параметра.  
+ Некоторые версии среды CLR устанавливаются с инструкцией политики, которая определяет совместимость с предыдущими версиями среды CLR. По умолчанию оболочка запуска выполняет проверку на `pwszVersion` соответствие инструкциям политики и загружает последнюю версию среды выполнения, совместимую с запрашиваемой версией. Узел может заставить оболочку пропускать вычисление политики и загружать точную версию, указанную в `pwszVersion` , передав значение STARTUP_LOADER_SAFEMODE для `startupFlags` параметра.  
   
- `null,` Если `pwszVersion` метод не загружает ни одной версии CLR. Вместо этого он возвращает CLR_E_SHIM_RUNTIMELOAD, что указывает на то, что он не смог загрузить время выполнения.  
+ Если `pwszVersion` — `null,` метод не загружает ни одной версии среды CLR. Вместо этого он возвращает CLR_E_SHIM_RUNTIMELOAD, который указывает, что ему не удалось загрузить среду выполнения.  
   
  `pwszBuildFlavor`  
- (в) Строка, которая определяет, загружать ли сервер или сборку рабочей станции CLR. Допустимые значения: `svr` и `wks`. Сборка сервера оптимизирована, чтобы использовать преимущества нескольких процессоров для сбора мусора, а сборка рабочих станций оптимизирована для клиентских приложений, работающих на однопроцессорной машине.  
+ окне Строка, указывающая, загружать ли сервер или рабочую станцию сборку среды CLR. Допустимые значения: `svr` и `wks`. Сборка сервера оптимизирована для использования нескольких процессоров для сборок мусора, а сборка рабочей станции оптимизирована для клиентских приложений, работающих на однопроцессорном компьютере.  
   
- Если `pwszBuildFlavor` установка сведена на нет, сборка рабочей станции загружается. При работе на однопроцессорной машине сборка рабочей станции всегда загружается, даже если `pwszBuildFlavor` настроена на. `svr` Однако, `pwszBuildFlavor` если `svr` установлен и одновременное вывоз мусора `startupFlags` указан (см. описание параметра), сборка сервера загружается.  
+ Если параметр `pwszBuildFlavor` имеет значение null, загружается сборка рабочей станции. При запуске на однопроцессорном компьютере сборка рабочей станции всегда загружается, даже если параметр `pwszBuildFlavor` имеет значение `svr` . Однако если задано `pwszBuildFlavor` значение `svr` и задана параллельная сборка мусора (см `startupFlags` . Описание параметра), то загружается серверная сборка.  
   
 > [!NOTE]
-> Параллельный сбор мусора не поддерживается в приложениях под управлением эмулятора WOW64 x86 на 64-битных системах, реализуемых в архитектуре Intel Itanium (ранее именуемой IA-64). Для получения дополнительной информации об использовании WOW64 на 64-битных системах Windows [см.](/windows/desktop/WinProg64/running-32-bit-applications)  
+> Параллельная сборка мусора не поддерживается в приложениях, использующих Эмулятор WOW64 x86 в 64-разрядных системах, которые реализуют архитектуру Intel Itanium (прежнее название — IA-64). Дополнительные сведения об использовании WOW64 в 64-разрядных системах Windows см. в разделе [выполнение 32-разрядных приложений](/windows/desktop/WinProg64/running-32-bit-applications).  
   
  `pwszHostConfigFile`  
- (в) Название файла конфигурации хоста, который определяет версию CLR для загрузки. Если имя файла не включает полностью квалифицированный путь, предполагается, что файл находится в том же каталоге, что и исполняемый, который выполняет вызов.  
+ окне Имя файла конфигурации узла, указывающего версию среды CLR для загрузки. Если имя файла не содержит полного пути, предполагается, что файл находится в том же каталоге, что и исполняемый файл, выполняющий вызов.  
   
  `pReserved`  
- (в) Зарезервировано для будущей расширяемости.  
+ окне Зарезервировано для будущего расширения.  
   
  `startupFlags`  
- (в) Набор флагов, который контролирует параллельный сбор мусора, нейтральный код домена и поведение `pwszVersion` параметра. По умолчанию один домен, если флаг не установлен. Список поддерживаемых значений можно узнать [STARTUP_FLAGS.](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md)  
+ окне Набор флагов, управляющих параллельной сборкой мусора, нейтральным к домену кодом и поведением `pwszVersion` параметра. Значение по умолчанию — один домен, если флаг не установлен. Список поддерживаемых значений см. в разделе [перечисление STARTUP_FLAGS](startup-flags-enumeration.md).  
   
  `rclsid`  
- (в) Кокласс, `CLSID` который реализует либо [iCorRuntimeHost,](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) либо интерфейс [ICLRRuntimeHost.](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md) Поддерживаемые значения являются CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
+ окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
- (в) Интерфейс, `IID` который вы запрашиваете. Поддерживаемые значения IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
+ окне `IID`Запрашиваемый интерфейс. Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
   
  `ppv`  
- (ваут) Указатель интерфейса к версии загруженного времени выполнения.  
+ заполняет Указатель интерфейса на версию загруженной среды выполнения.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.idl  
+ **Заголовок:** MSCorEE. idl  
   
- **Библиотека:** MSCorEE.dll  
+ **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Функция CorBindToCurrentRuntime](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)
-- [Функция CorBindToRuntime](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)
-- [Функция CorBindToRuntimeByCfg](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)
-- [Функция CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
+- [Функция CorBindToRuntime](corbindtoruntime-function.md)
+- [Функция CorBindToRuntimeByCfg](corbindtoruntimebycfg-function.md)
+- [Функция CorBindToRuntimeEx](corbindtoruntimeex-function.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

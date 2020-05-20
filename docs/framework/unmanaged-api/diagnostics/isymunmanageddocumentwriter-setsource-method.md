@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ea5b9d9f-ff06-4bd3-8de5-6435343aba59
 topic_type:
 - apiref
-ms.openlocfilehash: ff18f95bd6b4cfde5aaa4d3f6f68b58fd37c04b3
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 06c6f9b05d34ea98dde437393ded289cbab2f61d
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449073"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615531"
 ---
 # <a name="isymunmanageddocumentwritersetsource-method"></a>Метод ISymUnmanagedDocumentWriter::SetSource
 Задает внедренный источник для записываемого документа.  
@@ -35,7 +35,7 @@ HRESULT SetSource(
   
 ## <a name="parameters"></a>Параметры  
  `sourceSize`  
- окне `ULONG32`, который содержит размер буфера `source`.  
+ окне Значение типа `ULONG32` , содержащее размер `source` буфера.  
   
  `source`  
  окне Буфер, в котором хранится внедренный источник.  
@@ -46,6 +46,6 @@ HRESULT SetSource(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedDocumentWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)
+- [Интерфейс ISymUnmanagedDocumentWriter](isymunmanageddocumentwriter-interface.md)

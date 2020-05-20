@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: edc8a02b-a0ac-46e3-80c1-fb8b5cef6341
 topic_type:
 - apiref
-ms.openlocfilehash: f6d033b6910120ac3074cf008391cf93e084fa2e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ba5c8cffcaff38b60be7031a98d4588ec6071d76
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449086"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615557"
 ---
 # <a name="isymunmanageddocumentwriter-interface"></a>Интерфейс ISymUnmanagedDocumentWriter
 Предоставляет методы для записи в документ, на который ссылается хранилище символов.  
@@ -28,12 +28,12 @@ ms.locfileid: "74449086"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод SetCheckSum](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-setchecksum-method.md)|Задает сведения о контрольной сумме.|  
-|[Метод SetSource](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-setsource-method.md)|Задает внедренный источник для записываемого документа.|  
+|[Метод SetCheckSum](isymunmanageddocumentwriter-setchecksum-method.md)|Задает сведения о контрольной сумме.|  
+|[Метод SetSource](isymunmanageddocumentwriter-setsource-method.md)|Задает внедренный источник для записываемого документа.|  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы хранилища символов диагностики](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

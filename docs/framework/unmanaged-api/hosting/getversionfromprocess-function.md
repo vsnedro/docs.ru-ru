@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
 topic_type:
 - apiref
-ms.openlocfilehash: a04a0c5e6865c3664d2cb5fb341c3625e35d4d7c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fbaf45da0902ded8a2f7bf0d470aaed3b5f531aa
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178119"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83617130"
 ---
 # <a name="getversionfromprocess-function"></a>Функция GetVersionFromProcess
-Получает номер версии общего времени выполнения языка (CLR), который связан с указанной ручкой процесса.  
+Возвращает номер версии общеязыковой среды выполнения (CLR), связанной с указанным обработчиком процесса.  
   
- Эта функция была унесена в системе .NET 4.  
+ Эта функция является устаревшей в .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,38 +40,38 @@ HRESULT GetVersionFromProcess (
   
 ## <a name="parameters"></a>Параметры  
  `hProcess`  
- (в) Ручка к процессу.  
+ окне Обработчик процесса.  
   
  `pVersion`  
- (ваут) Буфер, содержащий строку числа версий после успешного завершения метода.  
+ заполняет Буфер, содержащий строку номера версии после успешного завершения метода.  
   
  `cchBuffer`  
- (в) Длина буфера версии.  
+ окне Длина буфера версии.  
   
  `pdwLength`  
- (ваут) Указатель на длину строки номера версии.  
+ заполняет Указатель на длину строки номера версии.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Этот метод возвращает стандартные коды ошибок компонентной модели объектов (COM), как это определено в WinError.h, в дополнение к следующим значениям.  
+ Этот метод возвращает коды стандартных ошибок модели COM, как определено в файле WinError. h, в дополнение к следующим значениям.  
   
 |Код возврата|Описание|  
 |-----------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|E_INVALIDARG|`pVersion`является недействительным `cchBuffer` и не является недействительным, или наоборот.<br /><br /> -или-<br /><br /> `hProcess`не является допустимой ручкой для процесса.<br /><br /> -или-<br /><br /> CLR не загружается.|  
-|ERROR_INSUFFICIENT_BUFFER|`cchBuffer`является нулевым или меньше, чем длина строки версии.|  
-|E_NOTIMPL|Этот метод недоступен на операционной системе Microsoft Windows 95, Microsoft Windows 98 или Microsoft Windows Millennium Edition.|  
+|E_INVALIDARG|`pVersion`имеет значение NULL и не `cchBuffer` имеет значение null, или наоборот.<br /><br /> -или-<br /><br /> `hProcess`не является допустимым маркером для процесса.<br /><br /> -или-<br /><br /> Среда CLR не загружена.|  
+|ERROR_INSUFFICIENT_BUFFER|`cchBuffer`параметр имеет значение null или меньше длины строки версии.|  
+|E_NOTIMPL|Этот метод недоступен в операционной системе Microsoft Windows 95, Microsoft Windows 98 или Microsoft Windows Millennium Edition.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE.dll  
+ **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Функция GetRequestedRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeinfo-function.md)
-- [Функция GetRequestedRuntimeVersion](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeversion-function.md)
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Функция GetRequestedRuntimeInfo](getrequestedruntimeinfo-function.md)
+- [Функция GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c7963c87-6ec5-49b3-a5cd-e0fe0c43f9b4
 topic_type:
 - apiref
-ms.openlocfilehash: 512dd4055a0aad8498db6ef2241c9363aecee9c7
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 95ae081d61200e4fd020609a4d23783f265d2cc6
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446285"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615362"
 ---
 # <a name="isymunmanagedscopegetparent-method"></a>Метод ISymUnmanagedScope::GetParent
 Возвращает родительскую область этой области.  
@@ -34,7 +34,7 @@ HRESULT GetParent(
   
 ## <a name="parameters"></a>Параметры  
  `pRetVal`  
- заполняет Указатель на возвращаемый интерфейс [исимунманажедскопе](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md) .  
+ заполняет Указатель на возвращаемый интерфейс [исимунманажедскопе](isymunmanagedscope-interface.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
@@ -42,7 +42,7 @@ HRESULT GetParent(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
-- [Метод GetChildren](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getchildren-method.md)
+- [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)
+- [Метод GetChildren](isymunmanagedscope-getchildren-method.md)

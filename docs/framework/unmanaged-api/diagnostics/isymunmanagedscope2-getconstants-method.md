@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f241b620-9ec5-42fd-92ef-3b22329db72a
 topic_type:
 - apiref
-ms.openlocfilehash: 45268929b6e9ad6ac6423aa0fa2b7b5022bc9179
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f558d209d13fae93bd3a6f5e0e653afb91371a6a
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176621"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615336"
 ---
 # <a name="isymunmanagedscope2getconstants-method"></a>Метод ISymUnmanagedScope2::GetConstants
-Получает локальные константы, определяемые в этой области.  
+Возвращает локальные константы, определенные в этой области.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,20 +38,20 @@ HRESULT GetConstants(
   
 ## <a name="parameters"></a>Параметры  
  `cConstants`  
- (в) Длина буфера, `pcConstants` на который указывает параметр.  
+ окне Длина буфера, `pcConstants` на который указывает параметр.  
   
  `pcConstants`  
- (ваут) Указатель на `ULONG32` то, что получает размер, в символах, буфера, необходимого для содержать константы.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера (в символах), необходимого для хранения констант.  
   
  `constants`  
- (ваут) Буфер, который хранит константы.  
+ заполняет Буфер, в котором хранятся константы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- S_OK, если метод удается; в противном случае, E_FAIL или какой-либо другой код ошибки.  
+ S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
- **Заголовок:** CorSym.idl, CorSym.h  
+ **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ISymUnmanagedScope2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-interface.md)
+- [Интерфейс ISymUnmanagedScope2](isymunmanagedscope2-interface.md)

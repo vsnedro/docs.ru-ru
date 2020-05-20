@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7115e920-aaff-440a-824e-39497139c6f6
 topic_type:
 - apiref
-ms.openlocfilehash: a18e1efd246b0d6895d18ae0e7089a78703eae0e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 933edf734a0e02b4ac9c88d9f193277d963adada
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129426"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615804"
 ---
 # <a name="iclrdebugmanagergetdacl-method"></a>Метод ICLRDebugManager::GetDacl
 Этот метод не реализован.  
@@ -44,17 +44,17 @@ HRESULT GetDacl (
 |E_NOTIMPL|Метод не реализован.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRControl](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [Интерфейс ICLRDebugManager](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
-- [Метод SetDacl](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setdacl-method.md)
-- [Интерфейс IHostControl](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+- [Интерфейс ICLRControl](iclrcontrol-interface.md)
+- [Интерфейс ICLRDebugManager](iclrdebugmanager-interface.md)
+- [Метод SetDacl](iclrdebugmanager-setdacl-method.md)
+- [Интерфейс IHostControl](ihostcontrol-interface.md)

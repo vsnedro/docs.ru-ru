@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: b3222c85-da88-4485-97d7-3a6ee3e8d358
 topic_type:
 - apiref
-ms.openlocfilehash: f3b51c1b376fa9c664de53aa76ec724ca305ae6a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2dd004a44b20d48dafc72711ac23abcb55739224
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178181"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83617204"
 ---
 # <a name="getfileversion-function"></a>Функция GetFileVersion
-Получает информацию о версии общего времени выполнения языка (CLR) указанного файла с использованием указанного буфера.  
+Возвращает сведения о версии среды CLR указанного файла, используя указанный буфер.  
   
- Эта функция была унесена в системе .NET 4.  
+ Эта функция является устаревшей в .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,24 +39,24 @@ HRESULT GetFileVersion (
   
 ## <a name="parameters"></a>Параметры  
  `szFilename`  
- (в) Путь изучения файла.  
+ окне Путь к файлу, который необходимо проверить.  
   
  `szBuffer`  
- (в, вне) Буфер, выделенный для возвращенной информации версии.  
+ [вход, выход] Буфер, выделенный для возвращаемой информации о версии.  
   
  `cchBuffer`  
- (в) Размер, в широких символов, из `szBuffer`.  
+ окне Размер (в расширенных символах) `szBuffer` .  
   
  `dwLength`  
- (ваут) Размер, в байтах, `szBuffer`возвращенного .  
+ заполняет Размер возвращаемого объекта (в байтах) `szBuffer` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

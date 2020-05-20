@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5f5a311a-839a-465f-89d9-ff1c74da9736
 topic_type:
 - apiref
-ms.openlocfilehash: 3531cfc0815c3f8a9479e35b2df60b2825801b39
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: fa6297e926d53c02bb0d1af7b59b45b8ee152399
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136849"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616467"
 ---
 # <a name="couninitializeee-function"></a>Функция CoUninitializeEE
-`CoUninitializeEE` устарел и не предоставляет никаких функциональных возможностей.  
+`CoUninitializeEE`является устаревшим и не предоставляет никаких функциональных возможностей.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,10 +33,10 @@ void CoUninitializeEE (
 );  
 ```  
   
-## <a name="remarks"></a>Заметки  
- Подсистема выполнения среды CLR не может быть выгружена из процесса. Чтобы завершить работу подсистемы выполнения, [корекситпроцесс](../../../../docs/framework/unmanaged-api/hosting/corexitprocess-function.md)вызов.  
+## <a name="remarks"></a>Remarks  
+ Подсистема выполнения среды CLR не может быть выгружена из процесса. Чтобы завершить работу подсистемы выполнения, [корекситпроцесс](corexitprocess-function.md)вызов.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Функция CoInitializeEE](../../../../docs/framework/unmanaged-api/hosting/coinitializeee-function.md)
-- [Глобальные статические функции метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [Функция CoInitializeEE](coinitializeee-function.md)
+- [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)
