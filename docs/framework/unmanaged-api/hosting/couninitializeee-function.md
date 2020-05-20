@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 5f5a311a-839a-465f-89d9-ff1c74da9736
 topic_type:
 - apiref
-ms.openlocfilehash: 3531cfc0815c3f8a9479e35b2df60b2825801b39
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: fa6297e926d53c02bb0d1af7b59b45b8ee152399
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136849"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616467"
 ---
-# <a name="couninitializeee-function"></a><span data-ttu-id="0a58b-102">Функция CoUninitializeEE</span><span class="sxs-lookup"><span data-stu-id="0a58b-102">CoUninitializeEE Function</span></span>
-<span data-ttu-id="0a58b-103">`CoUninitializeEE` устарел и не предоставляет никаких функциональных возможностей.</span><span class="sxs-lookup"><span data-stu-id="0a58b-103">`CoUninitializeEE` is obsolete and provides no functionality.</span></span>  
+# <a name="couninitializeee-function"></a><span data-ttu-id="594b8-102">Функция CoUninitializeEE</span><span class="sxs-lookup"><span data-stu-id="594b8-102">CoUninitializeEE Function</span></span>
+<span data-ttu-id="594b8-103">`CoUninitializeEE`является устаревшим и не предоставляет никаких функциональных возможностей.</span><span class="sxs-lookup"><span data-stu-id="594b8-103">`CoUninitializeEE` is obsolete and provides no functionality.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="0a58b-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="0a58b-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="594b8-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="594b8-104">Syntax</span></span>  
   
 ```cpp  
 void CoUninitializeEE (  
@@ -33,10 +33,10 @@ void CoUninitializeEE (
 );  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="0a58b-105">Заметки</span><span class="sxs-lookup"><span data-stu-id="0a58b-105">Remarks</span></span>  
- <span data-ttu-id="0a58b-106">Подсистема выполнения среды CLR не может быть выгружена из процесса.</span><span class="sxs-lookup"><span data-stu-id="0a58b-106">The common language runtime execution engine cannot be unloaded from a process.</span></span> <span data-ttu-id="0a58b-107">Чтобы завершить работу подсистемы выполнения, [корекситпроцесс](../../../../docs/framework/unmanaged-api/hosting/corexitprocess-function.md)вызов.</span><span class="sxs-lookup"><span data-stu-id="0a58b-107">To shut down the execution engine call [CorExitProcess](../../../../docs/framework/unmanaged-api/hosting/corexitprocess-function.md).</span></span>  
+## <a name="remarks"></a><span data-ttu-id="594b8-105">Remarks</span><span class="sxs-lookup"><span data-stu-id="594b8-105">Remarks</span></span>  
+ <span data-ttu-id="594b8-106">Подсистема выполнения среды CLR не может быть выгружена из процесса.</span><span class="sxs-lookup"><span data-stu-id="594b8-106">The common language runtime execution engine cannot be unloaded from a process.</span></span> <span data-ttu-id="594b8-107">Чтобы завершить работу подсистемы выполнения, [корекситпроцесс](corexitprocess-function.md)вызов.</span><span class="sxs-lookup"><span data-stu-id="594b8-107">To shut down the execution engine call [CorExitProcess](corexitprocess-function.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0a58b-108">См. также</span><span class="sxs-lookup"><span data-stu-id="0a58b-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="594b8-108">См. также статью</span><span class="sxs-lookup"><span data-stu-id="594b8-108">See also</span></span>
 
-- [<span data-ttu-id="0a58b-109">Функция CoInitializeEE</span><span class="sxs-lookup"><span data-stu-id="0a58b-109">CoInitializeEE Function</span></span>](../../../../docs/framework/unmanaged-api/hosting/coinitializeee-function.md)
-- [<span data-ttu-id="0a58b-110">Глобальные статические функции метаданных</span><span class="sxs-lookup"><span data-stu-id="0a58b-110">Metadata Global Static Functions</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [<span data-ttu-id="594b8-109">Функция CoInitializeEE</span><span class="sxs-lookup"><span data-stu-id="594b8-109">CoInitializeEE Function</span></span>](coinitializeee-function.md)
+- [<span data-ttu-id="594b8-110">Глобальные статические функции метаданных</span><span class="sxs-lookup"><span data-stu-id="594b8-110">Metadata Global Static Functions</span></span>](../metadata/metadata-global-static-functions.md)

@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: f241b620-9ec5-42fd-92ef-3b22329db72a
 topic_type:
 - apiref
-ms.openlocfilehash: 45268929b6e9ad6ac6423aa0fa2b7b5022bc9179
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f558d209d13fae93bd3a6f5e0e653afb91371a6a
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176621"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83615336"
 ---
-# <a name="isymunmanagedscope2getconstants-method"></a><span data-ttu-id="d81c8-102">Метод ISymUnmanagedScope2::GetConstants</span><span class="sxs-lookup"><span data-stu-id="d81c8-102">ISymUnmanagedScope2::GetConstants Method</span></span>
-<span data-ttu-id="d81c8-103">Получает локальные константы, определяемые в этой области.</span><span class="sxs-lookup"><span data-stu-id="d81c8-103">Gets the local constants defined within this scope.</span></span>  
+# <a name="isymunmanagedscope2getconstants-method"></a><span data-ttu-id="8f739-102">Метод ISymUnmanagedScope2::GetConstants</span><span class="sxs-lookup"><span data-stu-id="8f739-102">ISymUnmanagedScope2::GetConstants Method</span></span>
+<span data-ttu-id="8f739-103">Возвращает локальные константы, определенные в этой области.</span><span class="sxs-lookup"><span data-stu-id="8f739-103">Gets the local constants defined within this scope.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="d81c8-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="d81c8-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8f739-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8f739-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetConstants(  
@@ -36,22 +36,22 @@ HRESULT GetConstants(
              constants[]);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="d81c8-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="d81c8-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="8f739-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="8f739-105">Parameters</span></span>  
  `cConstants`  
- <span data-ttu-id="d81c8-106">(в) Длина буфера, `pcConstants` на который указывает параметр.</span><span class="sxs-lookup"><span data-stu-id="d81c8-106">[in] The length of the buffer that the `pcConstants` parameter points to.</span></span>  
+ <span data-ttu-id="8f739-106">окне Длина буфера, `pcConstants` на который указывает параметр.</span><span class="sxs-lookup"><span data-stu-id="8f739-106">[in] The length of the buffer that the `pcConstants` parameter points to.</span></span>  
   
  `pcConstants`  
- <span data-ttu-id="d81c8-107">(ваут) Указатель на `ULONG32` то, что получает размер, в символах, буфера, необходимого для содержать константы.</span><span class="sxs-lookup"><span data-stu-id="d81c8-107">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the constants.</span></span>  
+ <span data-ttu-id="8f739-107">заполняет Указатель на объект `ULONG32` , который получает размер буфера (в символах), необходимого для хранения констант.</span><span class="sxs-lookup"><span data-stu-id="8f739-107">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the constants.</span></span>  
   
  `constants`  
- <span data-ttu-id="d81c8-108">(ваут) Буфер, который хранит константы.</span><span class="sxs-lookup"><span data-stu-id="d81c8-108">[out] The buffer that stores the constants.</span></span>  
+ <span data-ttu-id="8f739-108">заполняет Буфер, в котором хранятся константы.</span><span class="sxs-lookup"><span data-stu-id="8f739-108">[out] The buffer that stores the constants.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="d81c8-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="d81c8-109">Return Value</span></span>  
- <span data-ttu-id="d81c8-110">S_OK, если метод удается; в противном случае, E_FAIL или какой-либо другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="d81c8-110">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="8f739-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="8f739-109">Return Value</span></span>  
+ <span data-ttu-id="8f739-110">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="8f739-110">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="d81c8-111">Требования</span><span class="sxs-lookup"><span data-stu-id="d81c8-111">Requirements</span></span>  
- <span data-ttu-id="d81c8-112">**Заголовок:** CorSym.idl, CorSym.h</span><span class="sxs-lookup"><span data-stu-id="d81c8-112">**Header:** CorSym.idl, CorSym.h</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8f739-111">Требования</span><span class="sxs-lookup"><span data-stu-id="8f739-111">Requirements</span></span>  
+ <span data-ttu-id="8f739-112">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="8f739-112">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d81c8-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="d81c8-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8f739-113">См. также статью</span><span class="sxs-lookup"><span data-stu-id="8f739-113">See also</span></span>
 
-- [<span data-ttu-id="d81c8-114">Интерфейс ISymUnmanagedScope2</span><span class="sxs-lookup"><span data-stu-id="d81c8-114">ISymUnmanagedScope2 Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-interface.md)
+- [<span data-ttu-id="8f739-114">Интерфейс ISymUnmanagedScope2</span><span class="sxs-lookup"><span data-stu-id="8f739-114">ISymUnmanagedScope2 Interface</span></span>](isymunmanagedscope2-interface.md)
