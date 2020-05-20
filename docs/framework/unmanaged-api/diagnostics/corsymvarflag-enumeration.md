@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: c3f7d307-4047-4f9a-be8c-f152fca42fd0
 topic_type:
 - apiref
-ms.openlocfilehash: 21e92d8f2fb80c4c41d516ef281bf4fc8a75f4e1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d41e048b67d4bc7159f6dd5266457651f1658290
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176647"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420595"
 ---
-# <a name="corsymvarflag-enumeration"></a><span data-ttu-id="2aef0-102">Перечисление CorSymVarFlag</span><span class="sxs-lookup"><span data-stu-id="2aef0-102">CorSymVarFlag Enumeration</span></span>
-<span data-ttu-id="2aef0-103">Указывает, генерируется ли переменная компилятором.</span><span class="sxs-lookup"><span data-stu-id="2aef0-103">Indicates whether a variable is compiler-generated.</span></span>  
+# <a name="corsymvarflag-enumeration"></a><span data-ttu-id="42a21-102">Перечисление CorSymVarFlag</span><span class="sxs-lookup"><span data-stu-id="42a21-102">CorSymVarFlag Enumeration</span></span>
+<span data-ttu-id="42a21-103">Указывает, создается ли переменная компилятором.</span><span class="sxs-lookup"><span data-stu-id="42a21-103">Indicates whether a variable is compiler-generated.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="2aef0-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="2aef0-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="42a21-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="42a21-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorSymVarFlag
@@ -33,15 +33,15 @@ typedef enum CorSymVarFlag
 } CorSymVarFlag;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="2aef0-105">Члены</span><span class="sxs-lookup"><span data-stu-id="2aef0-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="42a21-105">Участники</span><span class="sxs-lookup"><span data-stu-id="42a21-105">Members</span></span>  
   
-|<span data-ttu-id="2aef0-106">Участник</span><span class="sxs-lookup"><span data-stu-id="2aef0-106">Member</span></span>|<span data-ttu-id="2aef0-107">Описание</span><span class="sxs-lookup"><span data-stu-id="2aef0-107">Description</span></span>|  
+|<span data-ttu-id="42a21-106">Член</span><span class="sxs-lookup"><span data-stu-id="42a21-106">Member</span></span>|<span data-ttu-id="42a21-107">Описание</span><span class="sxs-lookup"><span data-stu-id="42a21-107">Description</span></span>|  
 |------------|-----------------|  
-|`VAR_IS_COMP_GEN`|<span data-ttu-id="2aef0-108">Указывает, что данная переменная генерируется компилятором.</span><span class="sxs-lookup"><span data-stu-id="2aef0-108">Indicates that the given variable is compiler-generated.</span></span>|  
+|`VAR_IS_COMP_GEN`|<span data-ttu-id="42a21-108">Указывает, что заданная переменная создается компилятором.</span><span class="sxs-lookup"><span data-stu-id="42a21-108">Indicates that the given variable is compiler-generated.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="2aef0-109">Требования</span><span class="sxs-lookup"><span data-stu-id="2aef0-109">Requirements</span></span>  
- <span data-ttu-id="2aef0-110">**Заголовок:** CorSym.idl, CorSym.h</span><span class="sxs-lookup"><span data-stu-id="2aef0-110">**Header:** CorSym.idl, CorSym.h</span></span>  
+## <a name="requirements"></a><span data-ttu-id="42a21-109">Требования</span><span class="sxs-lookup"><span data-stu-id="42a21-109">Requirements</span></span>  
+ <span data-ttu-id="42a21-110">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="42a21-110">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2aef0-111">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="2aef0-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="42a21-111">См. также статью</span><span class="sxs-lookup"><span data-stu-id="42a21-111">See also</span></span>
 
-- [<span data-ttu-id="2aef0-112">Перечисления хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="2aef0-112">Diagnostics Symbol Store Enumerations</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+- [<span data-ttu-id="42a21-112">Перечисления хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="42a21-112">Diagnostics Symbol Store Enumerations</span></span>](diagnostics-symbol-store-enumerations.md)
