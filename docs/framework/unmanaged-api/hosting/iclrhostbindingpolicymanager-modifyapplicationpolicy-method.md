@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
 topic_type:
 - apiref
-ms.openlocfilehash: d8df78e3d5cebe5378dfba11dc0ea93cc8e346eb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e32714bba2403752f1ac2551ab182f2655f1fa75
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178101"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703859"
 ---
 # <a name="iclrhostbindingpolicymanagermodifyapplicationpolicy-method"></a>Метод ICLRHostBindingPolicyManager::ModifyApplicationPolicy
-Изменяет обязательную политику для указанной сборки и создает новую версию политики.  
+Изменяет политику привязки для указанной сборки и создает новую версию политики.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,51 +41,51 @@ HRESULT  ModifyApplicationPolicy (
   
 ## <a name="parameters"></a>Параметры  
  `pwzSourceAssemblyIdentity`  
- (в) Идентификация сборки для изменения.  
+ окне Идентификатор сборки, которую необходимо изменить.  
   
  `pwzTargetAssemblyIdentity`  
- (в) Новая идентичность модифицированной сборки.  
+ окне Новое удостоверение измененной сборки.  
   
  `pbApplicationPolicy`  
- (в) Указатель на буфер, содержащий обязательные данные политики для сборки для изменения.  
+ окне Указатель на буфер, содержащий данные политики привязки для изменяемой сборки.  
   
  `cbAppPolicySize`  
- (в) Размер обязательной политики, подавивающей на замену.  
+ окне Размер заменяемой политики привязки.  
   
  `dwPolicyModifyFlags`  
- (в) Логическое или сочетание значений [EHostBindingPolicyModifyFlags,](../../../../docs/framework/unmanaged-api/hosting/ehostbindingpolicymodifyflags-enumeration.md) указывающих на контроль перенаправления.  
+ окне Логическое или сочетание значений [ехостбиндингполицимодифифлагс](ehostbindingpolicymodifyflags-enumeration.md) , указывающее на контроль перенаправления.  
   
  `pbNewApplicationPolicy`  
- (ваут) Указатель на буфер, содержащий новые обязательные данные политики.  
+ заполняет Указатель на буфер, содержащий новые данные политики привязки.  
   
  `pcbNewAppPolicySize`  
- (в, вне) Указатель на размер нового обязательного буфера политики.  
+ [вход, выход] Указатель на размер нового буфера политики привязки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|Политика была успешно изменена.|  
-|E_INVALIDARG|`pwzSourceAssemblyIdentity`или `pwzTargetAssemblyIdentity` была нулевая ссылка.|  
+|S_OK|Политика успешно изменена.|  
+|E_INVALIDARG|`pwzSourceAssemblyIdentity`или `pwzTargetAssemblyIdentity` является пустой ссылкой.|  
 |ERROR_INSUFFICIENT_BUFFER|`pbNewApplicationPolicy` слишком мал.|  
-|HOST_E_CLRNOTAVAILABLE|Время выполнения общего языка (CLR) не было загружено в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. После того, как метод возвращается E_FAIL, CLR больше не может быть пригодным к удочку в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Remarks  
- Метод `ModifyApplicationPolicy` можно вызвать дважды. Первый вызов должен предоставить `pbNewApplicationPolicy` нулевую стоимость параметра. Этот вызов будет возвращаться `pcbNewAppPolicySize`с необходимым значением для . Второй вызов должен предоставить `pcbNewAppPolicySize`это значение для, и `pbNewApplicationPolicy`указать на буфер такого размера для .  
+## <a name="remarks"></a>Комментарии  
+ `ModifyApplicationPolicy`Метод можно вызвать дважды. Первый вызов должен предоставить значение NULL для `pbNewApplicationPolicy` параметра. Этот вызов возвратит с требуемым значением для `pcbNewAppPolicySize` . Второй вызов должен предоставить это значение для `pcbNewAppPolicySize` и указать буфер этого размера для `pbNewApplicationPolicy` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRHostBindingPolicyManager](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
+- [Интерфейс ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md)

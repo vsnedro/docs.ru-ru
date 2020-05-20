@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9e359384-0d3d-451c-807e-5d7fcebf2be7
 topic_type:
 - apiref
-ms.openlocfilehash: 9415d5189edb901822abad9269e0150e7601a963
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c99607bfe5fda01eb1abfd7771cb3907ddabeec5
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73140966"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703772"
 ---
 # <a name="iclrmetahostenumerateinstalledruntimes-method"></a>Метод ICLRMetaHost::EnumerateInstalledRuntimes
-Возвращает перечисление, которое содержит допустимый интерфейс [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) для каждой версии среды CLR, установленной на компьютере.  
+Возвращает перечисление, которое содержит допустимый интерфейс [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) для каждой версии среды CLR, установленной на компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ HRESULT EnumerateInstalledRuntimes (
   
 ## <a name="parameters"></a>Параметры  
  `ppEnumerator`  
- заполняет Перечисление интерфейсов [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) , соответствующих каждой версии среды CLR, установленной на компьютере.  
+ заполняет Перечисление интерфейсов [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) , соответствующих каждой версии среды CLR, установленной на компьютере.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
@@ -42,18 +42,18 @@ HRESULT EnumerateInstalledRuntimes (
 |HRESULT|Описание|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|E_POINTER|Параметр `ppEnumerator` имеет значение null.|  
+|E_POINTER|Параметр `ppEnumerator` имеет значение NULL.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
-- [Размещение](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [Интерфейс ICLRMetaHost](iclrmetahost-interface.md)
+- [Размещение](index.md)

@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: cc7b0e5b-48c3-4509-8ebb-611ddb1f7ec2
 topic_type:
 - apiref
-ms.openlocfilehash: 295deeec2e8eb42ccaa4d0cfb8b08b32438d047c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c8ac959c192814562488ab916c8462b0baa0d8e6
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73120241"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703647"
 ---
 # <a name="iclrruntimeinfogetinterface-method"></a>Метод ICLRRuntimeInfo::GetInterface
-Загружает среду CLR в текущий процесс и возвращает указатели на интерфейсы среды выполнения, такие как [ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md), [метод iclrstrongname](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)и [IMetaDataDispenserEx](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md).  
+Загружает среду CLR в текущий процесс и возвращает указатели на интерфейсы среды выполнения, такие как [ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md), [метод iclrstrongname](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)и [IMetaDataDispenserEx](../metadata/imetadatadispenser-interface.md).  
   
- Этот метод заменяет все функции `CorBindTo`* в разделе [устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md) .  
+ Этот метод заменяет все `CorBindTo` функции * в разделе [устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ HRESULT GetInterface(
  окне Интерфейс CLSID для компонентного класса.  
   
  `riid`  
- окне IID запрошенного интерфейса `rclsid`.  
+ окне IID запрашиваемого `rclsid` интерфейса.  
   
  `ppUnk`  
  заполняет Указатель на запрашиваемый интерфейс.  
@@ -52,14 +52,14 @@ HRESULT GetInterface(
 |HRESULT|Описание|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|E_POINTER|Параметр `ppUnk` имеет значение null.|  
+|E_POINTER|Параметр `ppUnk` имеет значение NULL.|  
 |E_OUTOFMEMORY|Недостаточно памяти для выполнения запроса.|  
 |CLR_E_SHIM_LEGACYRUNTIMEALREADYBOUND|Другая среда выполнения уже привязана к устаревшей политике активации CLR версии 2.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
  Этот метод приводит к тому, что среда CLR загружается, но не инициализируется.  
   
- В следующей таблице приведены поддерживаемые сочетания для `rclsid` и `riid`.  
+ В следующей таблице приведены поддерживаемые сочетания для `rclsid` и `riid` .  
   
 |`rclsid`|`riid`|  
 |--------------|------------|  
@@ -73,16 +73,16 @@ HRESULT GetInterface(
 |CLSID_CLRStrongName|IID_ICLRStrongName|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Размещение](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
+- [Интерфейсы размещения](hosting-interfaces.md)
+- [Размещение](index.md)

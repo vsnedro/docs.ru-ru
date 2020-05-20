@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a3a9446-7a4e-4836-9b27-5c536c15993d
 topic_type:
 - apiref
-ms.openlocfilehash: 9600573a0a730cee10247d5644d587e75856cdd9
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f72a66354bfc907dab7ebc24de515bdfb20ddfb2
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73141180"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703596"
 ---
 # <a name="iclrhostbindingpolicymanagerevaluatepolicy-method"></a>Метод ICLRHostBindingPolicyManager::EvaluatePolicy
 Оценивает политику привязки от имени узла.  
@@ -46,7 +46,7 @@ HRESULT EvaluatePolicy (
  окне Указатель на буфер, содержащий данные политики.  
   
  `cbAppPolicySize`  
- окне Размер буфера `pbApplicationPolicy`.  
+ окне Размер `pbApplicationPolicy` буфера.  
   
  `pwzPostPolicyReferenceIdentity`  
  заполняет Ссылка на сборку после вычисления новых данных политики.  
@@ -55,33 +55,33 @@ HRESULT EvaluatePolicy (
  [вход, выход] Указатель на размер буфера ссылки идентификации сборки после вычисления новых данных политики.  
   
  `pdwPoliciesApplied`  
- заполняет Указатель на логическое или сочетание значений [EBindPolicyLevels](../../../../docs/framework/unmanaged-api/hosting/ebindpolicylevels-enumeration.md) , указывающих, какие политики были применены.  
+ заполняет Указатель на логическое или сочетание значений [EBindPolicyLevels](ebindpolicylevels-enumeration.md) , указывающих, какие политики были применены.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
 |S_OK|Оценка успешно завершена.|  
-|E_INVALIDARG|Либо `pwzReferenceIdentity`, либо `pbApplicationPolicy` является пустой ссылкой.|  
+|E_INVALIDARG|Либо `pwzReferenceIdentity` `pbApplicationPolicy` является пустой ссылкой.|  
 |ERROR_INSUFFICIENT_BUFFER|`cbAppPolicySize` слишком мал.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод вернет значение E_FAIL, среда CLR больше не будет использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Заметки  
- Метод `EvaluatePolicy` позволяет основному приложению оказывать влияние на политику привязки для поддержки требований к версии сборки, относящейся к конкретному узлу. Сам модуль политики остается внутри среды CLR.  
+## <a name="remarks"></a>Комментарии  
+ `EvaluatePolicy`Метод позволяет основному приложению влиять на политику привязки, чтобы обеспечить соответствие требованиям к версии сборки, относящейся к конкретному узлу. Сам модуль политики остается внутри среды CLR.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRHostBindingPolicyManager](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
+- [Интерфейс ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md)

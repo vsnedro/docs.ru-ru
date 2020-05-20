@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 66eeca30-adb4-45f4-aff5-347564c95724
 topic_type:
 - apiref
-ms.openlocfilehash: 3c6def32c63e3557a4de72baf7b1c3e67feb4891
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 57f771d933e896677dfc0bd5d9dac58da2af22c8
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136531"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83617260"
 ---
 # <a name="getclridentitymanager-function"></a>Функция GetCLRIdentityManager
 Возвращает указатель на интерфейс, который позволяет среде CLR управлять удостоверениями.  
@@ -37,23 +37,23 @@ STDAPI GetCLRIdentityManager(
   
 ## <a name="parameters"></a>Параметры  
  `riid`  
- окне `REFIID` (идентификатор интерфейса), указывающий, какой интерфейс следует получить. Это значение должно быть либо IID_ICLRAssemblyIdentityManager, либо IID_ICLRHostBindingPolicyManager.  
+ окне Объект `REFIID` (идентификатор интерфейса), указывающий, какой интерфейс следует получить. Это значение должно быть либо IID_ICLRAssemblyIdentityManager, либо IID_ICLRHostBindingPolicyManager.  
   
  `ppManager`  
- заполняет Указатель на адрес объекта [ICLRAssemblyIdentityManager](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md) или [ICLRHostBindingPolicyManager](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md) .  
+ заполняет Указатель на адрес объекта [ICLRAssemblyIdentityManager](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md) или [ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md) .  
   
-## <a name="remarks"></a>Заметки  
- Вызовите функцию [жетреалпрокаддресс](../../../../docs/framework/unmanaged-api/hosting/getrealprocaddress-function.md) , чтобы получить указатель на функцию `GetCLRIdentityManager`.  
+## <a name="remarks"></a>Комментарии  
+ Вызовите функцию [жетреалпрокаддресс](getrealprocaddress-function.md) , чтобы получить указатель на `GetCLRIdentityManager` функцию.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorWks. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

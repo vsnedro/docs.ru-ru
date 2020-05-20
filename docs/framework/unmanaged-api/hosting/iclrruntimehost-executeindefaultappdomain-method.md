@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 30b5cf9a-a762-4bd4-be12-d6c1442b78b1
 topic_type:
 - apiref
-ms.openlocfilehash: 1a1bc7609042422de876fe167a9e61655aaf62b4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 070c52258b66dcc352f2beef81b9a0694b8301ce
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176413"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703284"
 ---
 # <a name="iclrruntimehostexecuteindefaultappdomain-method"></a>Метод ICLRRuntimeHost::ExecuteInDefaultAppDomain
 Вызывает указанный метод указанного типа в указанной управляемой сборке.  
@@ -39,49 +39,49 @@ HRESULT ExecuteInDefaultAppDomain (
   
 ## <a name="parameters"></a>Параметры  
  `pwzAssemblyPath`  
- (в) Путь к <xref:System.Reflection.Assembly> тому, <xref:System.Type> который определяет метод, который должен вызываться.  
+ окне Путь к элементу <xref:System.Reflection.Assembly> , который определяет <xref:System.Type> метод, для которого нужно вызвать.  
   
  `pwzTypeName`  
- (в) <xref:System.Type> Название, определяющее метод для ввода.  
+ окне Имя объекта <xref:System.Type> , определяющего вызываемый метод.  
   
  `pwzMethodName`  
- (в) Название метода для ввода.  
+ окне Имя вызываемого метода.  
   
  `pwzArgument`  
- (в) Параметр строки для передачи методу.  
+ окне Строковый параметр для передачи в метод.  
   
  `pReturnValue`  
- (ваут) Значение цельное возвращается усылаемым методом.  
+ заполняет Целочисленное значение, возвращаемое вызванным методом.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`ExecuteInDefaultAppDomain`вернулся успешно.|  
-|HOST_E_CLRNOTAVAILABLE|Время выполнения общего языка (CLR) не было загружено в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. Если метод возвращается E_FAIL, CRL больше не может быть пригоден к удочку в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
+|S_OK|`ExecuteInDefaultAppDomain`успешно возвращено.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, список отзыва сертификатов больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Remarks  
- Усылаемый метод должен иметь следующую подпись:  
+## <a name="remarks"></a>Комментарии  
+ Вызванный метод должен иметь следующую сигнатуру:  
   
 ```cpp  
 static int pwzMethodName (String pwzArgument)  
 ```  
   
- где `pwzMethodName` представлено имя вызываемого `pwzArgument` метода и представлено значение строки, передаваемое в качестве параметра этому методу. Если значение HRESULT настроено `pReturnValue` на S_OK, устанавливается к значению integer, возвращаемому вызовуемым методом. В `pReturnValue` противном случае, не устанавливается.  
+ где `pwzMethodName` представляет имя вызванного метода и `pwzArgument` представляет строковое значение, передаваемое в качестве параметра этому методу. Если значение HRESULT установлено в S_OK, то для параметра задается `pReturnValue` целочисленное значение, возвращаемое вызванным методом. В противном случае `pReturnValue` значение не задано.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
+- [Интерфейс ICLRRuntimeHost](iclrruntimehost-interface.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 98a4762d-9ad2-45bd-9d03-39064a028b44
 topic_type:
 - apiref
-ms.openlocfilehash: f1ad414c30788801e14a33e98a0893e2a0f58d0c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: af42de820b2d835e8ea137a2643a51678e382ff0
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136519"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83617286"
 ---
 # <a name="flockclrversioncallback-function-pointer"></a>Указатель функции FLockClrVersionCallback
 Указывает на функцию, которая вызывается средой CLR для указания того, что инициализация запущена или завершена.  
@@ -32,19 +32,19 @@ ms.locfileid: "73136519"
 typedef HRESULT (__stdcall *FLockClrVersionCallback) ( );  
 ```  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
  Эта функция реализуется узлом.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorWks. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Функция LockClrVersion](../../../../docs/framework/unmanaged-api/hosting/lockclrversion-function.md)
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Функция LockClrVersion](lockclrversion-function.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

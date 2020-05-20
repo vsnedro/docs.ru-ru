@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 003f6974-9727-4322-bed5-e330d1224d0b
 topic_type:
 - apiref
-ms.openlocfilehash: b44a71137e39130bb0fe4c303fdff62c76d38cbd
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 39c9752912e88b04455516c0e9bed43610ba8aa0
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73141009"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703812"
 ---
 # <a name="iclriocompletionmanageroncomplete-method"></a>Метод ICLRIoCompletionManager::OnComplete
-Уведомляет среду CLR о состоянии запроса ввода-вывода, выполненного с помощью вызова метода [IHostIoCompletionManager:: BIND](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-bind-method.md) .  
+Уведомляет среду CLR о состоянии запроса ввода-вывода, выполненного с помощью вызова метода [IHostIoCompletionManager:: BIND](ihostiocompletionmanager-bind-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,7 +39,7 @@ HRESULT OnComplete (
  `dwErrorCode`  
  окне Значение HRESULT, указывающее состояние операции привязки.  
   
-- Значение S_OK указывает, что операция выполнена успешно.  
+- S_OK указывает, что операция выполнена успешно.  
   
 - HOST_E_INTERRUPTED указывает, что вызов прерван до завершения.  
   
@@ -49,33 +49,33 @@ HRESULT OnComplete (
  окне Число байтов, передаваемых во время обработки запроса ввода-вывода.  
   
  `pvOverlapped`  
- окне Указатель на структуру `OVERLAPPED`, которая была передана в вызов метода `IHostIoCompletionManager::Bind`.  
+ окне Указатель на `OVERLAPPED` структуру, которая была передана в вызов `IHostIoCompletionManager::Bind` метода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`OnComplete` успешно возвращено.|  
+|S_OK|`OnComplete`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод вернет значение E_FAIL, среда CLR больше не будет использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Заметки  
- Если узел реализует абстракцию завершения ввода-вывода, среда CLR делает запросы ввода-вывода через узел с помощью методов [IHostIoCompletionManager](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md). Затем узел вызывает метод `OnComplete`, чтобы уведомить среду выполнения о результатах таких запросов.  
+## <a name="remarks"></a>Комментарии  
+ Если узел реализует абстракцию завершения ввода-вывода, среда CLR делает запросы ввода-вывода через узел с помощью методов [IHostIoCompletionManager](ihostiocompletionmanager-interface.md). Затем узел вызывает метод, `OnComplete` чтобы уведомить среду выполнения о результатах таких запросов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRIoCompletionManager](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
-- [Интерфейс IHostIoCompletionManager](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
-- [Интерфейс IHostThreadPoolManager](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+- [Интерфейс ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
+- [Интерфейс IHostIoCompletionManager](ihostiocompletionmanager-interface.md)
+- [Интерфейс IHostThreadPoolManager](ihostthreadpoolmanager-interface.md)

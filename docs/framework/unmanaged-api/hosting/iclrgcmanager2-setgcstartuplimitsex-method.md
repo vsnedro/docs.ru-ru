@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6c3a08a9-5d65-48d4-8bbf-2a86ed7d356a
 topic_type:
 - apiref
-ms.openlocfilehash: 9885149a71147db6eef13958b8ef825caa1d6ec6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f71c3b738d8e1f1670ac870d5e8c23ea9182d924
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176387"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703968"
 ---
 # <a name="iclrgcmanager2setgcstartuplimitsex-method"></a>Метод ICLRGCManager2::SetGCStartupLimitsEx
-Устанавливает размер сегмента сбора мусора и максимальный размер поколения 0 системы сбора мусора.  
+Задает размер сегмента сборки мусора и максимальный размер поколения 0 для системы сборки мусора.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,43 +36,43 @@ HRESULT SetGCStartupLimitsEx (
   
 ## <a name="parameters"></a>Параметры  
  `SegmentSize`  
- (в) Указанный размер сегмента сбора мусора.  
+ окне Указанный размер сегмента сборки мусора.  
   
- Минимальный размер сегмента составляет 4 МБ. Сегменты могут быть увеличены с шагом 1 МБ или больше.  
+ Минимальный размер сегмента — 4 МБ. Размер сегментов можно увеличить с шагом в 1 МБ или больше.  
   
  `MaxGen0Size`  
- (в) Указанный максимальный размер для поколения 0.  
+ окне Указанный максимальный размер для поколения 0.  
   
- Минимальный размер поколения 0 составляет 64 кБ.  
+ Минимальный размер поколения 0 — 64 КБ.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`SetGCStartupLimitsEx`вернулся успешно.|  
-|HOST_E_CLRNOTAVAILABLE|Время выполнения общего языка (CLR) не было загружено в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. После того, как метод возвращается E_FAIL, CLR больше не может быть пригодным к удочку в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
+|S_OK|`SetGCStartupLimitsEx`успешно возвращено.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Remarks  
- Значения, `SetGCStartupLimitsEx` которые наборы могут быть указаны только до запуска узла. Более поздние звонки `SetGCStartupLimitsEx` игнорируются.  
+## <a name="remarks"></a>Комментарии  
+ Значения, которые `SetGCStartupLimitsEx` задаются, можно указать только перед запуском узла. Последующие вызовы метода `SetGCStartupLimitsEx` игнорируются.  
   
- Чтобы установить любой параметр, не затрагивая другой, укажите 0 (ноль) для параметра, который вы не хотите менять.  
+ Чтобы задать любой параметр, не влияя на другой, укажите 0 (нуль) для параметра, который не нужно изменять.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Автоматическое управление памятью](../../../standard/automatic-memory-management.md)
 - [Сборка мусора](../../../standard/garbage-collection/index.md)
-- [Интерфейс ICLRControl](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [Интерфейс ICLRGCManager2](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-interface.md)
+- [Интерфейс ICLRControl](iclrcontrol-interface.md)
+- [Интерфейс ICLRGCManager2](iclrgcmanager2-interface.md)

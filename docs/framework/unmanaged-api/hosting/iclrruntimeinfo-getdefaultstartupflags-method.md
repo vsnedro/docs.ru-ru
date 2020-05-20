@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 35c2173e-3b0b-4b2a-950d-e0a01c6df052
 topic_type:
 - apiref
-ms.openlocfilehash: 0ce822533b0699f3467dc08044aa4dab59285a77
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8513787f48ae89632816face386bbcda20555dac
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73120318"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703887"
 ---
 # <a name="iclrruntimeinfogetdefaultstartupflags-method"></a>Метод ICLRRuntimeInfo::GetDefaultStartupFlags
 Возвращает флаги запуска и файл конфигурации узла, которые будут использоваться для запуска среды выполнения.  
@@ -42,7 +42,7 @@ HRESULT GetDefaultStartupFlags(
  заполняет Указатель на путь к каталогу текущего файла конфигурации узла.  
   
  `pcchHostConfigFile`  
- [вход, выход] На входе — размер `pwzHostConfigFile`, чтобы избежать переполнения буфера. Если `pwzHostConfigFile` имеет значение null, метод возвращает требуемый размер `pwzHostConfigFile` для предварительного выделения.  
+ [вход, выход] Во входных данных — размер `pwzHostConfigFile` , чтобы избежать переполнения буфера. Если `pwzHostConfigFile` имеет значение null, метод возвращает требуемый размер `pwzHostConfigFile` для предварительного выделения.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  Этот метод возвращает следующее конкретное значение HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
@@ -51,20 +51,20 @@ HRESULT GetDefaultStartupFlags(
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
   
-## <a name="remarks"></a>Заметки  
- Этот метод возвращает значения флагов по умолчанию (`STARTUP_CONCURRENT_GC` и `NULL`) или значения, предоставленные предыдущим вызовом [метода ICLRRuntimeInfo:: сетдефаултстартупфлагс](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-setdefaultstartupflags-method.md), или значения, заданные любыми методами `CorBind*`, если они привязаны к этой среде выполнения.  
+## <a name="remarks"></a>Комментарии  
+ Этот метод возвращает значения флагов по умолчанию ( `STARTUP_CONCURRENT_GC` и `NULL` ) или значения, предоставленные предыдущим вызовом [метода ICLRRuntimeInfo:: сетдефаултстартупфлагс](iclrruntimeinfo-setdefaultstartupflags-method.md), или значения, заданные любыми `CorBind*` методами, если они привязаны к этой среде выполнения.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Размещение](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
+- [Интерфейсы размещения](hosting-interfaces.md)
+- [Размещение](index.md)
