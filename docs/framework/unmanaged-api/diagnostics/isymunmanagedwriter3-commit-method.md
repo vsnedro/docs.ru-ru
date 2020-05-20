@@ -15,28 +15,28 @@ helpviewer_keywords:
 ms.assetid: f6961922-46ec-4d2c-8369-85f880731f37
 topic_type:
 - apiref
-ms.openlocfilehash: 5985257a186839a297c245b23f093f0b18a798fe
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 4331728a4766d81b723c439747e5e1181815394f
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74438264"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614673"
 ---
-# <a name="isymunmanagedwriter3commit-method"></a><span data-ttu-id="2e786-102">Метод ISymUnmanagedWriter3::Commit</span><span class="sxs-lookup"><span data-stu-id="2e786-102">ISymUnmanagedWriter3::Commit Method</span></span>
-<span data-ttu-id="2e786-103">Фиксирует изменения, записанные на данный момент в поток.</span><span class="sxs-lookup"><span data-stu-id="2e786-103">Commits the changes written so far to the stream.</span></span>  
+# <a name="isymunmanagedwriter3commit-method"></a><span data-ttu-id="c6984-102">Метод ISymUnmanagedWriter3::Commit</span><span class="sxs-lookup"><span data-stu-id="c6984-102">ISymUnmanagedWriter3::Commit Method</span></span>
+<span data-ttu-id="c6984-103">Фиксирует изменения, записанные на данный момент в поток.</span><span class="sxs-lookup"><span data-stu-id="c6984-103">Commits the changes written so far to the stream.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="2e786-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="2e786-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="c6984-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c6984-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT Commit();  
 ```  
   
-## <a name="return-value"></a><span data-ttu-id="2e786-105">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="2e786-105">Return Value</span></span>  
- <span data-ttu-id="2e786-106">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="2e786-106">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="c6984-105">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="c6984-105">Return Value</span></span>  
+ <span data-ttu-id="c6984-106">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="c6984-106">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="2e786-107">Требования</span><span class="sxs-lookup"><span data-stu-id="2e786-107">Requirements</span></span>  
- <span data-ttu-id="2e786-108">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="2e786-108">**Header:** CorSym.idl, CorSym.h</span></span>  
+## <a name="requirements"></a><span data-ttu-id="c6984-107">Требования</span><span class="sxs-lookup"><span data-stu-id="c6984-107">Requirements</span></span>  
+ <span data-ttu-id="c6984-108">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="c6984-108">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2e786-109">См. также:</span><span class="sxs-lookup"><span data-stu-id="2e786-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c6984-109">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="c6984-109">See also</span></span>
 
-- [<span data-ttu-id="2e786-110">Интерфейс ISymUnmanagedWriter3</span><span class="sxs-lookup"><span data-stu-id="2e786-110">ISymUnmanagedWriter3 Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)
+- [<span data-ttu-id="c6984-110">Интерфейс ISymUnmanagedWriter3</span><span class="sxs-lookup"><span data-stu-id="c6984-110">ISymUnmanagedWriter3 Interface</span></span>](isymunmanagedwriter3-interface.md)

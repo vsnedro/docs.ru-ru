@@ -15,30 +15,30 @@ helpviewer_keywords:
 ms.assetid: c6639418-e9f2-4a99-8ce2-ec9876e0bc79
 topic_type:
 - apiref
-ms.openlocfilehash: cea18fefa2d356cbb5857db5133b1086c38ac6ff
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 084f3ae12d906f5e80fdb86e65b09d2371fd246b
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449179"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614595"
 ---
-# <a name="isymunmanageddocumentgetlanguage-method"></a><span data-ttu-id="11d93-102">Метод ISymUnmanagedDocument::GetLanguage</span><span class="sxs-lookup"><span data-stu-id="11d93-102">ISymUnmanagedDocument::GetLanguage Method</span></span>
-<span data-ttu-id="11d93-103">Возвращает идентификатор языка этого документа.</span><span class="sxs-lookup"><span data-stu-id="11d93-103">Gets the language identifier of this document</span></span>  
+# <a name="isymunmanageddocumentgetlanguage-method"></a><span data-ttu-id="d66c6-102">Метод ISymUnmanagedDocument::GetLanguage</span><span class="sxs-lookup"><span data-stu-id="d66c6-102">ISymUnmanagedDocument::GetLanguage Method</span></span>
+<span data-ttu-id="d66c6-103">Возвращает идентификатор языка этого документа.</span><span class="sxs-lookup"><span data-stu-id="d66c6-103">Gets the language identifier of this document</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="11d93-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="11d93-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d66c6-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="d66c6-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetLanguage(  
     [out, retval]  GUID*  pRetVal);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="11d93-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="11d93-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="d66c6-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="d66c6-105">Parameters</span></span>  
  `pRetVal`  
- <span data-ttu-id="11d93-106">заполняет Указатель на переменную, которая получает идентификатор языка.</span><span class="sxs-lookup"><span data-stu-id="11d93-106">[out] A pointer to a variable that receives the language identifier.</span></span>  
+ <span data-ttu-id="d66c6-106">заполняет Указатель на переменную, которая получает идентификатор языка.</span><span class="sxs-lookup"><span data-stu-id="d66c6-106">[out] A pointer to a variable that receives the language identifier.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="11d93-107">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="11d93-107">Return Value</span></span>  
- <span data-ttu-id="11d93-108">S_OK, если метод выполнен.</span><span class="sxs-lookup"><span data-stu-id="11d93-108">S_OK if the method succeeds.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="d66c6-107">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="d66c6-107">Return Value</span></span>  
+ <span data-ttu-id="d66c6-108">S_OK, если метод выполнен.</span><span class="sxs-lookup"><span data-stu-id="d66c6-108">S_OK if the method succeeds.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="11d93-109">См. также:</span><span class="sxs-lookup"><span data-stu-id="11d93-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d66c6-109">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="d66c6-109">See also</span></span>
 
-- [<span data-ttu-id="11d93-110">Интерфейс ISymUnmanagedDocument</span><span class="sxs-lookup"><span data-stu-id="11d93-110">ISymUnmanagedDocument Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+- [<span data-ttu-id="d66c6-110">Интерфейс ISymUnmanagedDocument</span><span class="sxs-lookup"><span data-stu-id="d66c6-110">ISymUnmanagedDocument Interface</span></span>](isymunmanageddocument-interface.md)

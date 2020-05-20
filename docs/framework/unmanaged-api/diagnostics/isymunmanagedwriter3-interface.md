@@ -14,28 +14,28 @@ helpviewer_keywords:
 ms.assetid: a034c21e-e371-4360-b470-29e88288948f
 topic_type:
 - apiref
-ms.openlocfilehash: 115d4b58b01606c29719fb88ab7dbf5a858b1251
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 006045ce101884119f676e4f6324815eb21a10a4
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74438167"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614660"
 ---
-# <a name="isymunmanagedwriter3-interface"></a><span data-ttu-id="00014-102">Интерфейс ISymUnmanagedWriter3</span><span class="sxs-lookup"><span data-stu-id="00014-102">ISymUnmanagedWriter3 Interface</span></span>
-<span data-ttu-id="00014-103">Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных.</span><span class="sxs-lookup"><span data-stu-id="00014-103">Represents a symbol writer, and provides methods to define documents, sequence points, lexical scopes, and variables.</span></span> <span data-ttu-id="00014-104">Этот интерфейс расширяет интерфейс [ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="00014-104">This interface extends the [ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) interface.</span></span>  
+# <a name="isymunmanagedwriter3-interface"></a><span data-ttu-id="c6639-102">Интерфейс ISymUnmanagedWriter3</span><span class="sxs-lookup"><span data-stu-id="c6639-102">ISymUnmanagedWriter3 Interface</span></span>
+<span data-ttu-id="c6639-103">Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных.</span><span class="sxs-lookup"><span data-stu-id="c6639-103">Represents a symbol writer, and provides methods to define documents, sequence points, lexical scopes, and variables.</span></span> <span data-ttu-id="c6639-104">Этот интерфейс расширяет интерфейс [ISymUnmanagedWriter](isymunmanagedwriter-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="c6639-104">This interface extends the [ISymUnmanagedWriter](isymunmanagedwriter-interface.md) interface.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="00014-105">Методы</span><span class="sxs-lookup"><span data-stu-id="00014-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="c6639-105">Методы</span><span class="sxs-lookup"><span data-stu-id="c6639-105">Methods</span></span>  
   
-|<span data-ttu-id="00014-106">Метод</span><span class="sxs-lookup"><span data-stu-id="00014-106">Method</span></span>|<span data-ttu-id="00014-107">Описание</span><span class="sxs-lookup"><span data-stu-id="00014-107">Description</span></span>|  
+|<span data-ttu-id="c6639-106">Метод</span><span class="sxs-lookup"><span data-stu-id="c6639-106">Method</span></span>|<span data-ttu-id="c6639-107">Описание</span><span class="sxs-lookup"><span data-stu-id="c6639-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="00014-108">Метод Commit</span><span class="sxs-lookup"><span data-stu-id="00014-108">Commit Method</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-commit-method.md)|<span data-ttu-id="00014-109">Фиксирует изменения, записанные на данный момент в поток.</span><span class="sxs-lookup"><span data-stu-id="00014-109">Commits the changes written so far to the stream.</span></span>|  
-|[<span data-ttu-id="00014-110">Метод OpenMethod2</span><span class="sxs-lookup"><span data-stu-id="00014-110">OpenMethod2 Method</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-openmethod2-method.md)|<span data-ttu-id="00014-111">Открывает метод и предоставляет его фактическое смещение раздела в изображении.</span><span class="sxs-lookup"><span data-stu-id="00014-111">Opens a method and provides its real section offset in the image.</span></span>|  
+|[<span data-ttu-id="c6639-108">Метод Commit</span><span class="sxs-lookup"><span data-stu-id="c6639-108">Commit Method</span></span>](isymunmanagedwriter3-commit-method.md)|<span data-ttu-id="c6639-109">Фиксирует изменения, записанные на данный момент в поток.</span><span class="sxs-lookup"><span data-stu-id="c6639-109">Commits the changes written so far to the stream.</span></span>|  
+|[<span data-ttu-id="c6639-110">Метод OpenMethod2</span><span class="sxs-lookup"><span data-stu-id="c6639-110">OpenMethod2 Method</span></span>](isymunmanagedwriter3-openmethod2-method.md)|<span data-ttu-id="c6639-111">Открывает метод и предоставляет его фактическое смещение раздела в изображении.</span><span class="sxs-lookup"><span data-stu-id="c6639-111">Opens a method and provides its real section offset in the image.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="00014-112">Требования</span><span class="sxs-lookup"><span data-stu-id="00014-112">Requirements</span></span>  
- <span data-ttu-id="00014-113">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="00014-113">**Header:** CorSym.idl, CorSym.h</span></span>  
+## <a name="requirements"></a><span data-ttu-id="c6639-112">Требования</span><span class="sxs-lookup"><span data-stu-id="c6639-112">Requirements</span></span>  
+ <span data-ttu-id="c6639-113">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="c6639-113">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="00014-114">См. также</span><span class="sxs-lookup"><span data-stu-id="00014-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c6639-114">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="c6639-114">See also</span></span>
 
-- [<span data-ttu-id="00014-115">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="00014-115">Diagnostics Symbol Store Interfaces</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
-- [<span data-ttu-id="00014-116">Интерфейс ISymUnmanagedWriter</span><span class="sxs-lookup"><span data-stu-id="00014-116">ISymUnmanagedWriter Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
-- [<span data-ttu-id="00014-117">Интерфейс ISymUnmanagedWriter2</span><span class="sxs-lookup"><span data-stu-id="00014-117">ISymUnmanagedWriter2 Interface</span></span>](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
+- [<span data-ttu-id="c6639-115">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="c6639-115">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
+- [<span data-ttu-id="c6639-116">Интерфейс ISymUnmanagedWriter</span><span class="sxs-lookup"><span data-stu-id="c6639-116">ISymUnmanagedWriter Interface</span></span>](isymunmanagedwriter-interface.md)
+- [<span data-ttu-id="c6639-117">Интерфейс ISymUnmanagedWriter2</span><span class="sxs-lookup"><span data-stu-id="c6639-117">ISymUnmanagedWriter2 Interface</span></span>](isymunmanagedwriter2-interface.md)
