@@ -10,7 +10,7 @@ ms.locfileid: "67858623"
 
 |   |   |
 |---|---|
-|Подробнее|Из-за ошибки в .NET Framework 4.5 обработчики событий <xref:System.Windows.Controls.DataGrid>, которые выполняют удаление строки, могут привести к созданию исключения <xref:System.NullReferenceException?displayProperty=name> при попытке получить доступ к свойствам <xref:System.Windows.Controls.DataGrid> или <xref:System.Windows.Controls.Primitives.Selector.SelectedItem?displayProperty=name><xref:System.Windows.Controls.Primitives.MultiSelector.SelectedItems?displayProperty=name>.|
+|Подробнее|Из-за ошибки в .NET Framework 4.5 обработчики событий <xref:System.Windows.Controls.DataGrid>, которые выполняют удаление строки, могут привести к созданию исключения <xref:System.NullReferenceException?displayProperty=name> при попытке получить доступ к свойствам <xref:System.Windows.Controls.Primitives.Selector.SelectedItem?displayProperty=name> или <xref:System.Windows.Controls.Primitives.MultiSelector.SelectedItems?displayProperty=name><xref:System.Windows.Controls.DataGrid>.|
 |Предложение|Эта проблема была устранена в .NET Framework 4.6 и может быть решена путем обновления до этой версии платформы .NET Framework.|
 |Область|Дополнительный номер|
 |Version|4,5|

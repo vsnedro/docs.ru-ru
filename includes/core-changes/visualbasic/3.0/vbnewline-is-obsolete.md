@@ -16,7 +16,7 @@ ms.locfileid: "76116366"
 
 #### <a name="change-description"></a>Описание изменений
 
-Начиная с .NET Core 3.0 (предварительная версия 8), к константе [ применяется атрибут ](xref:System.ObsoleteAttribute)Obsolete<xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName>. При использовании константы выдается предупреждение компилятора. В .NET Framework и предыдущих версиях .NET Core она не была помечена как устаревшая.
+Начиная с .NET Core 3.0 (предварительная версия 8), к константе <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> применяется атрибут [Obsolete](xref:System.ObsoleteAttribute). При использовании константы выдается предупреждение компилятора. В .NET Framework и предыдущих версиях .NET Core она не была помечена как устаревшая.
 
 Это изменение было внесено для поддержки Visual Basic в качестве языка для разработки на нескольких платформах. Константа <xref:Microsoft.VisualBasic.Constants.vbNewLine> эквивалентна `\r\n`, последовательности символов новой строки в Windows. В системах на основе Unix символ новой строки — `\n`.
 

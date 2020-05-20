@@ -14,7 +14,7 @@ ms.locfileid: "74568164"
 
 В .NET Core 3.0 (предварительная версия 7) в API-интерфейсы <xref:System.Text.Json.JsonElement> были внесены указанные ниже изменения для удобства обнаружения и использования.
 
-1. Из `WriteProperty` удалены все перегрузки методов <xref:System.Text.Json.JsonElement>. Это влияет на следующий код:
+1. Из <xref:System.Text.Json.JsonElement> удалены все перегрузки методов `WriteProperty`. Это влияет на следующий код:
 
    ```csharp
    using (JsonDocument doc = JsonDocument.Parse(jsonString))
@@ -51,7 +51,7 @@ ms.locfileid: "74568164"
 
 Если эти изменения влияют на ваш код, можно сделать следующее.
 
-- Для перегрузок метода `WriteProperty` в <xref:System.Text.Json.JsonElement> не существует заменяющего API. Вместо этого вместе с методом <xref:System.Text.Json.Utf8JsonWriter.WritePropertyName%2A?displayProperty=nameWithType> можно вызвать одну из перегрузок <xref:System.Text.Json.JsonElement.WriteTo%2A>, чтобы достичь того же результата. Пример:
+- Для перегрузок метода `WriteProperty` в <xref:System.Text.Json.JsonElement> не существует заменяющего API. Вместо этого вместе с методом <xref:System.Text.Json.JsonElement.WriteTo%2A> можно вызвать одну из перегрузок <xref:System.Text.Json.Utf8JsonWriter.WritePropertyName%2A?displayProperty=nameWithType>, чтобы достичь того же результата. Пример:
 
    ```csharp
    using (JsonDocument doc = JsonDocument.Parse(jsonString))

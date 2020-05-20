@@ -39,7 +39,7 @@ var info = new Pkcs8PrivateKeyInfo(algorithmId, algorithmParameters, privateKey)
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
-Убедитесь, что предоставлены только допустимые значения `algorithmParameters` и что при вызовах конструктора `Pkcs8PrivateKeyInfo` проверяются и <xref:System.ArgumentException>, и <xref:System.Security.Cryptography.CryptographicException>, если требуется обработка исключений.
+Убедитесь, что предоставлены только допустимые значения `algorithmParameters` и что при вызовах конструктора `Pkcs8PrivateKeyInfo` проверяются и <xref:System.Security.Cryptography.CryptographicException>, и <xref:System.ArgumentException>, если требуется обработка исключений.
 
 ### <a name="category"></a>Категория
 
