@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c44b0440-04bd-460a-84fb-41afecf44503
 topic_type:
 - apiref
-ms.openlocfilehash: b765294826a5da4010cdd2db79b50667a6f1cdb4
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 6f11a69671864ba4627c2bb8c86e0c9beb27eeb1
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446303"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83611124"
 ---
 # <a name="isymunmanagedscopegetnamespaces-method"></a>Метод ISymUnmanagedScope::GetNamespaces
 Возвращает пространства имен, используемые в этой области.  
@@ -41,7 +41,7 @@ HRESULT GetNamespaces(
  [in] Размер массива `namespaces`.  
   
  `pcNameSpaces`  
- заполняет Указатель на `ULONG32`, который получает размер буфера, необходимого для хранения пространств имен.  
+ заполняет Указатель на объект `ULONG32` , который получает размер буфера, необходимого для хранения пространств имен.  
   
  `namespaces`  
  заполняет Массив, получающий пространства имен.  
@@ -52,6 +52,6 @@ HRESULT GetNamespaces(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+- [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)
