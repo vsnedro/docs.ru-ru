@@ -15,12 +15,12 @@
       href: microservices/
     - name: 'Бессерверные приложения: Архитектура, шаблоны и реализация в Azure'
       href: serverless/
+    - name: Разработка ориентированных на облако приложений .NET для Azure
+      href: cloud-native/
     - name: "Модернизация классических приложений для Windows\_10 с помощью .NET Core\_3.1"
       href: modernize-desktop/
 - name: Просмотреть электронные книги
   expanded: true
   items:
-    - name: Разработка ориентированных на облако приложений .NET для Azure
-      href: cloud-native/
     - name: Blazor для разработчиков ASP.NET Web Forms
       href: blazor-for-web-forms-developers/
