@@ -6,12 +6,12 @@ metadata:
   description: Ознакомьтесь с рекомендациями по проектированию, сборке и переносу приложений .NET.
   ms.topic: landing-page
   ms.date: 03/19/2020
-  ms.openlocfilehash: dc358f45532625bd5474b01af630674a170baf0b
-  ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+  ms.openlocfilehash: ff3b842d33ea3fd5d9cbed5b39b2757933c1a616
+  ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/15/2020
-  ms.locfileid: "83418983"
+  ms.lasthandoff: 05/19/2020
+  ms.locfileid: "83613646"
 landingContent:
 - title: Разработка приложений ASP.NET Core
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
   linkLists:
   - linkListType: concept
     links:
-    - text: Разработка ориентированных на облако приложений .NET для Azure (предварительная версия)
+    - text: Разработка ориентированных на облако приложений .NET для Azure
       url: cloud-native/index.md
     - text: 'Бессерверные приложения: Архитектура, шаблоны и реализация в Azure'
       url: serverless/index.md
