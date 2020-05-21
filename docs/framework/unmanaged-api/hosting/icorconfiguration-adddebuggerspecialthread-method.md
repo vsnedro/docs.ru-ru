@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1f1e3239-438e-4be9-a3bb-7d0722d3a76d
 topic_type:
 - apiref
-ms.openlocfilehash: c5d6cfa3826667514eb70f9bb0df118d9ba0d07c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8b6593ad995872f0e0014b1e8bcd8a4b576bbeaf
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127821"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762436"
 ---
 # <a name="icorconfigurationadddebuggerspecialthread-method"></a>Метод ICorConfiguration::AddDebuggerSpecialThread
 Указывает службам отладки, что определенному потоку должен быть разрешено продолжать выполнение, пока отладчик не остановит работу приложения во время управляемых или неуправляемых сценариев отладки.  
@@ -37,18 +37,18 @@ HRESULT AddDebuggerSpecialThread (
  `dwSpecialThreadId`  
  окне Идентификатор потока, который должен быть разрешен для продолжения выполнения.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
  Указанный поток не может выполнять управляемый код или вводить среду выполнения каким бы то ни было образом. Примером такого потока может быть внутрипроцессный поток для поддержки устаревших отладчиков скриптов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICorConfiguration](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)
+- [Интерфейс ICorConfiguration](icorconfiguration-interface.md)

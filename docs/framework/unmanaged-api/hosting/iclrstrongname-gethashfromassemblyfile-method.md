@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0b67ea03-d474-4605-acaa-57455790250c
 topic_type:
 - apiref
-ms.openlocfilehash: 8131a9838cc958405ca23c75c702db5ec65a41c8
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+ms.openlocfilehash: 007de0365bf70b1f4a9a9e0f01807e7fdac19f54
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901191"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762153"
 ---
 # <a name="iclrstrongnamegethashfromassemblyfile-method"></a>Метод ICLRStrongName::GetHashFromAssemblyFile
 Получает хэш указанного файла сборки с помощью указанного хэш-алгоритма.  
@@ -48,24 +48,24 @@ HRESULT GetHashFromAssemblyFile (
  заполняет Возвращаемый буфер хэша.  
   
  `cchHash`  
- окне Запрошенный максимальный размер `pbHash`.  
+ окне Запрошенный максимальный размер `pbHash` .  
   
  `pchHash`  
- заполняет Возвращаемый размер `pbHash`в байтах.  
+ заполняет Возвращаемый размер (в байтах) для `pbHash` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `S_OK`, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
+ `S_OK`значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Метод GetHashFromAssemblyFileW](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfilew-method.md)
-- [Интерфейс ICLRStrongName](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [Метод GetHashFromAssemblyFileW](iclrstrongname-gethashfromassemblyfilew-method.md)
+- [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

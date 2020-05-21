@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fc725afb-b66b-4015-aa44-1c0d1304197f
 topic_type:
 - apiref
-ms.openlocfilehash: 12677799136e9ca887809e58fba838cb421ea183
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+ms.openlocfilehash: e71fcf80b51edc318bbc7d81bb277c614184ee55
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901064"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762517"
 ---
 # <a name="iclrstrongnamestrongnametokenfromassembly-method"></a>Метод ICLRStrongName::StrongNameTokenFromAssembly
 Создает маркер строгого имени из указанного файла сборки.  
@@ -46,23 +46,23 @@ HRESULT StrongNameTokenFromAssembly (
  заполняет Размер (в байтах) маркера строгого имени.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `S_OK`, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
+ `S_OK`значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
  Маркер строгого имени — это сокращенная форма открытого ключа. Маркер представляет собой 64-разрядный хэш, созданный из открытого ключа, используемого для подписания сборки. Токен является частью строгого имени сборки и может быть считан из метаданных сборки.  
   
- После создания маркера следует вызвать метод [метод iclrstrongname:: StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md) , чтобы освободить выделенную память.  
+ После создания маркера следует вызвать метод [метод iclrstrongname:: StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md) , чтобы освободить выделенную память.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Метод StrongNameTokenFromAssemblyEx](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfromassemblyex-method.md)
-- [Интерфейс ICLRStrongName](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [Метод StrongNameTokenFromAssemblyEx](iclrstrongname-strongnametokenfromassemblyex-method.md)
+- [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

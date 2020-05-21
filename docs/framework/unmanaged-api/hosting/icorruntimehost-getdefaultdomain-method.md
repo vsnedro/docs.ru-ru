@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5e17a6fc-f335-4aae-9bb0-c3e1271a9426
 topic_type:
 - apiref
-ms.openlocfilehash: 6dc25cbeef2576a2ecc6ec39b2cb3f9abb7b9964
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: a23083777d0cd5965511f3689578a60220008420
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139555"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762234"
 ---
 # <a name="icorruntimehostgetdefaultdomain-method"></a>Метод ICorRuntimeHost::GetDefaultDomain
-Возвращает указатель интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType>, представляющий домен по умолчанию для текущего процесса.  
+Возвращает указатель интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType> , представляющий домен по умолчанию для текущего процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,9 +35,9 @@ HRESULT GetDefaultDomain (
   
 ## <a name="parameters"></a>Параметры  
  `pAppDomain`  
- заполняет Указатель интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType> на экземпляр <xref:System.AppDomain>, представляющий домен приложения по умолчанию для процесса.  
+ заполняет Указатель интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType> на <xref:System.AppDomain> экземпляр, представляющий домен приложения по умолчанию для процесса.  
   
- Этот указатель типизирован `IUnknown`, поэтому вызывающие объекты должны обычно вызывать `QueryInterface` для получения указателя интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType>.  
+ Этот указатель типизирован `IUnknown` , поэтому вызывающие объекты должны, как правило, вызывать `QueryInterface` для получения указателя интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType> .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
@@ -45,11 +45,11 @@ HRESULT GetDefaultDomain (
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
@@ -61,4 +61,4 @@ HRESULT GetDefaultDomain (
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6ff45fc-905d-4c6e-b00c-97c6c7c55d99
 topic_type:
 - apiref
-ms.openlocfilehash: 8f2d74531233f2ba423c39126ddc43e499cbb5d8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6dbb3360132186c38c007fb5fa12a3724ca145aa
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176374"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762101"
 ---
 # <a name="iclrstrongnamegethashfromfilew-method"></a>Метод ICLRStrongName::GetHashFromFileW
 Создает хэш содержимого файла, указанного строкой Юникода.  
@@ -39,36 +39,36 @@ HRESULT GetHashFromFileW (
   
 ## <a name="parameters"></a>Параметры  
  `wszFilePath`  
- (в) Имя файла Unicode хэша.  
+ окне Имя файла в Юникоде для хэширования.  
   
  `piHashAlg`  
- (в, вне) Алгоритм для использования при генерации хэша. Действительные алгоритмы определяются Win32 CryptoAPI. Если `piHashAlg` установлен до 0, используется алгоритм по умолчанию CALG_SHA-1.  
+ [вход, выход] Алгоритм, используемый при формировании хэша. Допустимыми являются алгоритмы, определяемые интерфейсом Win32 CryptoAPI. Если параметр `piHashAlg` имеет значение 0, используется алгоритм по умолчанию CALG_SHA-1.  
   
  `pbHash`  
- (ваут) Массив байта, содержащий генерируемый хэш.  
+ заполняет Массив байтов, содержащий созданный хэш.  
   
  `cchHash`  
- (в) Максимальный размер буфера, `pbHash`на который указывает .  
+ окне Максимальный размер буфера, на который указывает `pbHash` .  
   
  `pchHash`  
- (ваут) Размер, в байтах, из `pbHash`.  
+ заполняет Размер (в байтах) `pbHash` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `S_OK`если метод успешно завершен; в противном случае значение HRESULT, указывающем на сбой (см. [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
+ `S_OK`значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
-## <a name="remarks"></a>Remarks  
- Этот метод такой же, как [метод ICLRStrongName::GetHashFromFile](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md) метод, за исключением того, что спецификация имени файла Unicode вместо ANSI.  
+## <a name="remarks"></a>Комментарии  
+ Этот метод аналогичен методу [метод iclrstrongname:: GetHashFromFile](iclrstrongname-gethashfromfile-method.md) , за исключением того, что спецификация имени файла имеет кодировку Unicode, а не ANSI.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MetaHost.h  
+ **Заголовок:** Метахост. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Метод GetHashFromFile](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md)
-- [Интерфейс ICLRStrongName](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [Метод GetHashFromFile](iclrstrongname-gethashfromfile-method.md)
+- [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

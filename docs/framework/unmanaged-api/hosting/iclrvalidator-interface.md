@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2edd0a10-77fb-4173-91eb-f2970cc364d0
 topic_type:
 - apiref
-ms.openlocfilehash: 483d647028d1a05ea20ab836730099afe3e09374
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e071f9cba7e991c59bf697647e0e4badea57573a
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127845"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762049"
 ---
 # <a name="iclrvalidator-interface"></a>Интерфейс ICLRValidator
 Предоставляет методы для проверки переносимых исполняемых (PE) образов и создания отчетов об ошибках проверки.  
@@ -28,20 +28,20 @@ ms.locfileid: "73127845"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод FormatEventInfo](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-formateventinfo-method.md)|Возвращает подробное сообщение об указанной ошибке проверки.|  
-|[Метод Validate](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-validate-method.md)|Проверяет переносимый исполняемый файл или язык MSIL в указанном файле.|  
+|[Метод FormatEventInfo](iclrvalidator-formateventinfo-method.md)|Возвращает подробное сообщение об указанной ошибке проверки.|  
+|[Метод Validate](iclrvalidator-validate-method.md)|Проверяет переносимый исполняемый файл или язык MSIL в указанном файле.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** IValidator. idl, IValidator. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICLRErrorReportingManager](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Кокласс CLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/clrruntimehost-coclass.md)
+- [Интерфейс ICLRErrorReportingManager](iclrerrorreportingmanager-interface.md)
+- [Интерфейсы размещения](hosting-interfaces.md)
+- [Кокласс CLRRuntimeHost](clrruntimehost-coclass.md)

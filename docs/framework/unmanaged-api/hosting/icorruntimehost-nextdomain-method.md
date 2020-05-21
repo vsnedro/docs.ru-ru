@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fe07a05b-f6d6-44b5-ab01-b9a6eb15c350
 topic_type:
 - apiref
-ms.openlocfilehash: 36eacedfb83c1248fc252091872bcfeecdbcd874
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 079164d15141983711e976e0209cc22c818d9cd9
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139514"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83760424"
 ---
 # <a name="icorruntimehostnextdomain-method"></a>Метод ICorRuntimeHost::NextDomain
 Возвращает указатель интерфейса на следующий домен в перечислении.  
@@ -36,10 +36,10 @@ HRESULT NextDomain (
   
 ## <a name="parameters"></a>Параметры  
  `hEnum`  
- окне Перечислитель, полученный при вызове [енумдомаинс](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-enumdomains-method.md).  
+ окне Перечислитель, полученный при вызове [енумдомаинс](icorruntimehost-enumdomains-method.md).  
   
  `pAppDomain`  
- заполняет Указатель интерфейса на тип <xref:System._AppDomain?displayProperty=nameWithType>, представляющий следующий домен в перечислении, или значение null, если другие домены не существуют.  
+ заполняет Указатель интерфейса на <xref:System._AppDomain?displayProperty=nameWithType> тип, представляющий следующий домен в перечислении, или значение null, если другие домены не существуют.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
@@ -47,11 +47,11 @@ HRESULT NextDomain (
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию, или в перечислении больше нет доменов.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
@@ -63,4 +63,4 @@ HRESULT NextDomain (
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 4517ada3-4417-4ac5-a150-73da7a87c686
 topic_type:
 - apiref
-ms.openlocfilehash: 8c72f58bb65bd862b0625bfa0398b26bad0197e9
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 09c80c3a56d86943ebe00e5222bb5452ab44e150
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73192087"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762179"
 ---
 # <a name="iclrruntimeinfoloadlibrary-method"></a>Метод ICLRRuntimeInfo::LoadLibrary
-Загружает библиотеку .NET Framework из среды CLR, представленной интерфейсом [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) .  
+Загружает библиотеку .NET Framework из среды CLR, представленной интерфейсом [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) .  
   
- Этот метод заменяет функцию [лоадлибраришим](../../../../docs/framework/unmanaged-api/hosting/loadlibraryshim-function.md) .  
+ Этот метод заменяет функцию [лоадлибраришим](loadlibraryshim-function.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,20 +51,20 @@ HRESULT LoadLibrary(
 |E_POINTER|`pwzDllName` или `phndModule` равно null.|  
 |E_OUTOFMEMORY|Недостаточно памяти для выполнения запроса.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
  Этот метод загружает только библиотеки DLL, входящие в распространяемый пакет .NET Framework. Он не может загружать сборки, созданные пользователем.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Размещение](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
+- [Интерфейсы размещения](hosting-interfaces.md)
+- [Размещение](index.md)

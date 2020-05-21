@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c66f3ac5-6489-484a-9bed-c31b711cee01
 topic_type:
 - apiref
-ms.openlocfilehash: c450d83669a3bc548c15ed5800dc73438b9a84a6
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ccad76e1c8a49222d4f527f8b7b18d4e40ff8cae
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127685"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83760411"
 ---
 # <a name="icorruntimehoststart-method"></a>Метод ICorRuntimeHost::Start
 Запускает среду CLR.  
@@ -37,14 +37,14 @@ HRESULT Start ();
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
-## <a name="remarks"></a>Заметки  
- Обычно не требуется вызывать метод `Start`, так как среда CLR запускается автоматически при первом запросе на выполнение управляемого кода.  
+## <a name="remarks"></a>Комментарии  
+ Как правило, вызов метода не требуется `Start` , поскольку среда CLR запускается автоматически при первом запросе на выполнение управляемого кода.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
@@ -54,4 +54,4 @@ HRESULT Start ();
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

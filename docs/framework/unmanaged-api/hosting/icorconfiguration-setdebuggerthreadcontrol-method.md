@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1ded7639-dacb-4db1-961c-d1ceaec01959
 topic_type:
 - apiref
-ms.openlocfilehash: 0f6a369691ab2e4e9fd2e5d9731fb1dc0a42ba11
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: d02b834b22ba7897e4939de88bc3c61c62ac2b0e
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127797"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762413"
 ---
 # <a name="icorconfigurationsetdebuggerthreadcontrol-method"></a>Метод ICorConfiguration::SetDebuggerThreadControl
 Задает интерфейс обратного вызова, который службы отладки будут вызывать, так как потоки среды CLR блокируются и разблокируются для отладки.  
@@ -35,17 +35,17 @@ HRESULT SetDebuggerThreadControl (
   
 ## <a name="parameters"></a>Параметры  
  `pDebuggerThreadControl`  
- окне Указатель на объект [идебугжерсреадконтрол](../../../../docs/framework/unmanaged-api/hosting/idebuggerthreadcontrol-interface.md) , который уведомляет узел о блокировании и разблокировке потоков службами отладки.  
+ окне Указатель на объект [идебугжерсреадконтрол](idebuggerthreadcontrol-interface.md) , который уведомляет узел о блокировании и разблокировке потоков службами отладки.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICorConfiguration](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)
+- [Интерфейс ICorConfiguration](icorconfiguration-interface.md)

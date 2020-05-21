@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dd9e9204-a80d-44f3-8192-779224b35056
 topic_type:
 - apiref
-ms.openlocfilehash: dfdcb9b8aedeb3ccbbd27864e79ce43338942922
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 558b6e4c6ac369e33be3d45b7241e8b11db8bfae
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133362"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83760398"
 ---
 # <a name="icorruntimehostunloaddomain-method"></a>Метод ICorRuntimeHost::UnloadDomain
 Выгружает указанный домен приложения из текущего процесса.  
@@ -35,7 +35,7 @@ HRESULT UnloadDomain (
   
 ## <a name="parameters"></a>Параметры  
  `pAppDomain`  
- окне Указатель типа <xref:System._AppDomain?displayProperty=nameWithType>, представляющий домен для выгрузки.  
+ окне Указатель типа <xref:System._AppDomain?displayProperty=nameWithType> , представляющий домен для выгрузки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
@@ -43,11 +43,11 @@ HRESULT UnloadDomain (
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
@@ -59,4 +59,4 @@ HRESULT UnloadDomain (
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

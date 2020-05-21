@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2b159225-f09c-42f1-aa7c-44087e121249
 topic_type:
 - apiref
-ms.openlocfilehash: 3073f391efd483a161d9e7bc3787a6ce180aa28c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c3ebe0bcd546feeeb0aa8c962f2b4c8b0562cb6f
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133370"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83760450"
 ---
 # <a name="icorthreadpoolcorbindiocompletioncallback-method"></a>Метод ICorThreadpool::CorBindIoCompletionCallback
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
@@ -35,14 +35,14 @@ HRESULT CorBindIoCompletionCallback (
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICorThreadpool](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)
+- [Интерфейс ICorThreadpool](icorthreadpool-interface.md)

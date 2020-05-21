@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 96b74995-0cde-4876-b6df-7fc164e6a5d1
 topic_type:
 - apiref
-ms.openlocfilehash: e5a1642f968228c5815732ecd470cb8f02a0eb83
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: a97471e1c257902633b7eb363c3cc51288c70917
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139583"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762257"
 ---
 # <a name="icorruntimehostenumdomains-method"></a>Метод ICorRuntimeHost::EnumDomains
 Возвращает перечислитель для доменов в текущем процессе.  
@@ -43,11 +43,11 @@ HRESULT EnumDomains (
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
@@ -57,4 +57,4 @@ HRESULT EnumDomains (
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

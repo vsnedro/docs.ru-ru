@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c21dab60-fb65-47d9-8a94-7fd47ca53b48
 topic_type:
 - apiref
-ms.openlocfilehash: 217874e625604613e67170a118a7bc3616e02c4d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: aa1ce70311cd4ef0204c1c31efee8bd7b313c81d
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139645"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762335"
 ---
 # <a name="icorruntimehostcreatedomainsetup-method"></a>Метод ICorRuntimeHost::CreateDomainSetup
-Возвращает указатель интерфейса типа IAppDomainSetup на экземпляр <xref:System.AppDomainSetup?displayProperty=nameWithType>. `IAppDomainSetup` предоставляет методы для настройки аспектов домена приложения перед его созданием.  
+Возвращает указатель интерфейса типа IAppDomainSetup на <xref:System.AppDomainSetup?displayProperty=nameWithType> экземпляр. `IAppDomainSetup`предоставляет методы для настройки аспектов домена приложения перед его созданием.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,7 +35,7 @@ HRESULT CreateDomainSetup (
   
 ## <a name="parameters"></a>Параметры  
  `pAppDomainSetup`  
- заполняет Указатель интерфейса на экземпляр <xref:System.AppDomainSetup?displayProperty=nameWithType>. Этот параметр типизирован как `IUnknown`, поэтому вызывающие объекты должны обычно вызывать `QueryInterface` для этого указателя, чтобы получить указатель интерфейса типа `IAppDomainSetup`.  
+ заполняет Указатель интерфейса на <xref:System.AppDomainSetup?displayProperty=nameWithType> экземпляр. Этот параметр типизирован как `IUnknown` , поэтому вызывающие объекты должны обычно вызывать `QueryInterface` этот указатель для получения указателя интерфейса типа `IAppDomainSetup` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
@@ -43,14 +43,14 @@ HRESULT CreateDomainSetup (
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
-## <a name="remarks"></a>Заметки  
- Указатель, возвращаемый из этого метода, обычно передается в качестве параметра в метод [CreateDomainEx](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomainex-method.md) .  
+## <a name="remarks"></a>Комментарии  
+ Указатель, возвращаемый из этого метода, обычно передается в качестве параметра в метод [CreateDomainEx](icorruntimehost-createdomainex-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
@@ -64,4 +64,4 @@ HRESULT CreateDomainSetup (
 - <xref:System.AppDomain>
 - <xref:System.AppDomainSetup>
 - <xref:System.IAppDomainSetup?displayProperty=nameWithType>
-- [Интерфейс ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

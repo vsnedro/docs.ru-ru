@@ -15,21 +15,21 @@ helpviewer_keywords:
 ms.assetid: 52c543ab-9ef5-4ee7-b836-c0ffc35cd45b
 topic_type:
 - apiref
-ms.openlocfilehash: 20f2041599e85b8df20a7a9cf44680da9f17244e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: da6efae38cd70a68feea56b12e86be23fde7f0cb
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73195931"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762192"
 ---
 # <a name="iclrruntimeinfoloaderrorstring-method"></a>Метод ICLRRuntimeInfo::LoadErrorString
 Преобразует значение HRESULT в соответствующее сообщение об ошибке для указанного языка и региональных параметров.  
   
  Этот метод заменяет следующие функции:  
   
-- [лоадстрингрк](../../../../docs/framework/unmanaged-api/hosting/loadstringrc-function.md)  
+- [лоадстрингрк](loadstringrc-function.md)  
   
-- [лоадстрингрцекс](../../../../docs/framework/unmanaged-api/hosting/loadstringrcex-function.md)  
+- [лоадстрингрцекс](loadstringrcex-function.md)  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,7 +49,7 @@ HRESULT LoadErrorString(
  заполняет Строка сообщения, связанная с данным значением HRESULT.  
   
  `pcchBuffer`  
- [вход, выход] Размер `pwzbuffer`, чтобы избежать переполнения буфера. Если `pwzbuffer` имеет значение null, `pcchBuffer` предоставляет ожидаемый размер `pwzbuffer`, чтобы разрешить предварительное выделение.  
+ [вход, выход] Размер `pwzbuffer` во избежание переполнения буфера. Если `pwzbuffer` параметр имеет значение null, `pcchBuffer` то предоставляет ожидаемый размер `pwzbuffer` для разрешения предварительного выделения.  
   
  `iLocaleID`  
  окне Идентификатор языка и региональных параметров. Чтобы использовать язык и региональные параметры по умолчанию, необходимо указать значение-1.  
@@ -60,20 +60,20 @@ HRESULT LoadErrorString(
 |HRESULT|Описание|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|E_POINTER|Параметр `pcchBuffer` имеет значение null.|  
-|E_INVALIDARG|Параметр `pwzBuffer` имеет значение null.|  
+|E_POINTER|Параметр `pcchBuffer` имеет значение NULL.|  
+|E_INVALIDARG|Параметр `pwzBuffer` имеет значение NULL.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Размещение](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
+- [Интерфейсы размещения](hosting-interfaces.md)
+- [Размещение](index.md)

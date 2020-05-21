@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 42c933f1-30a8-4011-bdea-e117f3c3265e
 topic_type:
 - apiref
-ms.openlocfilehash: 431b90f8c5db5f40bf50be0b03fa315c6ea15ef7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e3655f77a94da25f65bada2cd4067ef53550e778
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133207"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762023"
 ---
 # <a name="icorthreadpoolcorunregisterwait-method"></a>Метод ICorThreadpool::CorUnregisterWait
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
@@ -36,14 +36,14 @@ HRESULT CorUnregisterWait (
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс ICorThreadpool](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)
+- [Интерфейс ICorThreadpool](icorthreadpool-interface.md)
