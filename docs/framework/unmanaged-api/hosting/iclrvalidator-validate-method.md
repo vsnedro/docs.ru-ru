@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
 topic_type:
 - apiref
-ms.openlocfilehash: 427895ffea94e6c657d775ebdeb8571070a61c6e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 18492f3e95947a3a11da9d5d303651c04d764a8f
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178064"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762634"
 ---
 # <a name="iclrvalidatorvalidate-method"></a>Метод ICLRValidator::Validate
-Проверяет портативный исполняемый (PE) или промежуточный язык Microsoft (MSIL) в указанном файле.  
+Проверяет переносимый исполняемый (PE) или промежуточный язык Майкрософт (MSIL) в указанном файле.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,49 +42,49 @@ HRESULT Validate (
   
 ## <a name="parameters"></a>Параметры  
  `veh`  
- (в) Указатель на `IVEHandler` экземпляр, обрабатывая ошибки проверки.  
+ окне Указатель на `IVEHandler` экземпляр, который обрабатывает ошибки проверки.  
   
  `ulAppDomainId`  
- (в) Идентификатор <xref:System.AppDomain>для текущего .  
+ окне Идентификатор текущего <xref:System.AppDomain> .  
   
  `ulFlags`  
- (в) Комбинация значений [ValidatorFlags,](../../../../docs/framework/unmanaged-api/hosting/validatorflags-enumeration.md) указывающая на вид проверки, которая должна быть выполнена.  
+ окне Сочетание значений [валидаторфлагс](validatorflags-enumeration.md) , указывающих тип проверки, которую следует выполнить.  
   
  `ulMaxError`  
- (в) Максимальное количество ошибок, которые можно разрешить перед выходом из проверки.  
+ окне Максимальное число ошибок, которое необходимо разрешить перед выходом из проверки.  
   
  `token`  
  [in] Не используется.  
   
  `fileName`  
- (в) Имя файла, которое должно быть проверено.  
+ окне Имя проверяемого файла.  
   
  `pe`  
- (в) Указатель на буфер файла.  
+ окне Указатель на файловый буфер.  
   
  `ulSize`  
- (в) Размер файла, в байтах, должен быть проверен.  
+ окне Размер проверяемого файла в байтах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`Validate`вернулся успешно.|  
-|HOST_E_CLRNOTAVAILABLE|Время выполнения общего языка (CLR) не было загружено в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. Когда метод возвращается E_FAIL, CLR больше не используется в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
+|S_OK|`Validate`успешно возвращено.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** IValidator.idl, IValidator.h  
+ **Заголовок:** IValidator. idl, IValidator. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс ICLRValidator](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)
+- [Интерфейс ICLRValidator](iclrvalidator-interface.md)
