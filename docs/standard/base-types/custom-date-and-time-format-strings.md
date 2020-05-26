@@ -14,19 +14,19 @@ helpviewer_keywords:
 - formatting [.NET Framework], time
 - date and time strings
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
-ms.openlocfilehash: 32b3c9de708d22ba4150c5f01ef79d74d5824e27
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: ae2711aac8bd864e623efe18e698c8de75a3ac32
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81243002"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83440997"
 ---
 # <a name="custom-date-and-time-format-strings"></a>Строки настраиваемых форматов даты и времени
 
 Строки форматов даты и времени определяют текстовое представление значений <xref:System.DateTime> и <xref:System.DateTimeOffset>, получаемое после операции форматирования. Также они могут определять представление значения даты и времени, необходимое при операции синтаксического анализа для успешного преобразования строки в дату и время. Строка настраиваемого формата состоит из одного или нескольких настраиваемых описателей формата даты и времени. Любая строка, не являющаяся [строкой стандартного формата даты и времени](../../../docs/standard/base-types/standard-date-and-time-format-strings.md), воспринимается как строка настраиваемого формата даты и времени.
 
 > [!TIP]
-> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
+> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 Строки настраиваемого формата даты и времени могут использоваться как со значением <xref:System.DateTime>, так и со значением <xref:System.DateTimeOffset>.
 
@@ -698,5 +698,5 @@ ms.locfileid: "81243002"
 - <xref:System.IFormatProvider?displayProperty=nameWithType>
 - [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
 - [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
-- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
-- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)
+- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

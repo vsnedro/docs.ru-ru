@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2902578b-d5e2-4f8d-a103-0c7b6dceda9e
 topic_type:
 - apiref
-ms.openlocfilehash: 3c662021894acbb8eb448fa2166498254158caa4
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: a97009a4ebc834d867dddcc350033c550364ea42
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133863"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83804752"
 ---
 # <a name="ihostiocompletionmanagergethostoverlappedsize-method"></a>Метод IHostIoCompletionManager::GetHostOverlappedSize
 Возвращает размер любых пользовательских данных, которые узел намеревается добавить к запросам ввода-вывода.  
@@ -35,43 +35,43 @@ HRESULT GetHostOverlappedSize (
   
 ## <a name="parameters"></a>Параметры  
  `pcbSize`  
- заполняет Указатель на число байтов, которое должна выделить среда CLR, в дополнение к размеру объекта Win32 `OVERLAPPED`.  
+ заполняет Указатель на число байтов, которое должна выделить среда CLR в дополнение к размеру `OVERLAPPED` объекта Win32.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`GetHostOverlappedSize` успешно возвращено.|  
+|S_OK|`GetHostOverlappedSize`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Заметки  
- Все асинхронные вызовы операций ввода-вывода в API платформы Windows принимают объект Win32 `OVERLAPPED`, который предоставляет такую информацию, как расположение указателя файла. Для поддержания состояния приложения, которые выполняют асинхронные вызовы операций ввода-вывода, обычно добавляют в структуру пользовательские данные. `GetHostOverlappedSize` и [IHostIoCompletionManager:: инитиализехостоверлаппед](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-initializehostoverlapped-method.md) предоставляют возможность для узла включать такие пользовательские данные.  
+## <a name="remarks"></a>Замечания  
+ Все асинхронные вызовы операций ввода-вывода в API платформы Windows принимают `OVERLAPPED` объект Win32, который предоставляет такую информацию, как расположение указателя файла. Для поддержания состояния приложения, которые выполняют асинхронные вызовы операций ввода-вывода, обычно добавляют в структуру пользовательские данные. `GetHostOverlappedSize`и [IHostIoCompletionManager:: инитиализехостоверлаппед](ihostiocompletionmanager-initializehostoverlapped-method.md) предоставляют возможность ведущему приложению включать такие пользовательские данные.  
   
- Среда CLR вызывает метод `GetHostOverlappedSize`, чтобы определить размер пользовательских данных, которые узел намеревается добавить к объекту `OVERLAPPED`.  
+ Среда CLR вызывает `GetHostOverlappedSize` метод, чтобы определить размер пользовательских данных, которые узел намеревается добавить к `OVERLAPPED` объекту.  
   
 > [!NOTE]
-> `GetHostOverlappedSize` вызывается только один раз. Пользовательские данные узла должны иметь одинаковый размер для каждого запроса ввода-вывода.  
+> `GetHostOverlappedSize`вызывается только один раз. Пользовательские данные узла должны иметь одинаковый размер для каждого запроса ввода-вывода.  
   
 > [!IMPORTANT]
-> Размер самого объекта `OVERLAPPED` не включается в значение `pcbSize`.  
+> Размер `OVERLAPPED` самого объекта не включается в значение `pcbSize` .  
   
- Дополнительные сведения о структуре `OVERLAPPED` см. в документации по платформе Windows.  
+ Дополнительные сведения о `OVERLAPPED` структуре см. в документации по платформе Windows.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.Threading.NativeOverlapped>
-- [Интерфейс ICLRIoCompletionManager](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
-- [Интерфейс IHostIoCompletionManager](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+- [Интерфейс ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
+- [Интерфейс IHostIoCompletionManager](ihostiocompletionmanager-interface.md)
