@@ -4,12 +4,12 @@ description: Сведения о концепциях модульного те�
 author: ardalis
 ms.author: wiwagn
 ms.date: 12/04/2019
-ms.openlocfilehash: c9e3d63a2cf4f560591459833340b729ffec1b95
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d8cf0e29c8a482b39bd7e99bcde1fd60301f046f
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78240900"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83702947"
 ---
 # <a name="unit-testing-c-in-net-core-using-dotnet-test-and-xunit"></a>Модульное тестирование C# в .NET Core с использованием dotnet test и xUnit
 
@@ -52,18 +52,18 @@ ms.locfileid: "78240900"
 * Замените код файла *PrimeService.cs* на код, приведенный ниже.
   
   ```csharp
-    using System;
+  using System;
 
-    namespace Prime.Services
-    {
-        public class PrimeService
-        {
-            public bool IsPrime(int candidate)
-            {
-                throw new NotImplementedException("Not implemented.");
-            }
-        }
-    }
+  namespace Prime.Services
+  {
+      public class PrimeService
+      {
+          public bool IsPrime(int candidate)
+          {
+              throw new NotImplementedException("Not implemented.");
+          }
+      }
+  }
   ```
 
 * Предыдущий код:
@@ -85,7 +85,7 @@ ms.locfileid: "78240900"
   ```
 
 * Предыдущая команда позволяет:
-  * Создает проект *PrimeService.Tests* в каталоге *PrimeService.Tests*. В тестовом проекте используется библиотека тестов [xUnit](https://xunit.github.io/).
+  * Создает проект *PrimeService.Tests* в каталоге *PrimeService.Tests*. В тестовом проекте используется библиотека тестов [xUnit](https://xunit.net/).
   * Настраивает средство выполнения тестов, добавляя следующие элементы `<PackageReference />` в файл проекта:
     * Microsoft.NET.Test.Sdk
     * xunit
@@ -190,7 +190,6 @@ Assert.False(result, "1 should not be prime");
 Копирование кода теста, в котором изменяется только один параметр, приводит к дублированию кода и раздуванию теста. Следующие атрибуты xUnit позволяют создавать набор сходных тестов.
 
 - `[Theory]` представляет набор тестов, которые выполняют один и тот же код, но имеют разные входные аргументы.
-
 - Атрибут `[InlineData]` задает значения для этих входных данных.
 
 Чтобы не создавать новые тесты, примените указанные выше атрибуты xUnit для создания единой теории. Замените представленный ниже код.
@@ -230,6 +229,6 @@ public bool IsPrime(int candidate)
 
 ### <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Официальный сайт xUnit.net](https://xunit.github.io)
+- [Официальный сайт xUnit.net](https://xunit.net)
 - [Тестирование логики контроллера в ASP.NET Core](/aspnet/core/mvc/controllers/testing)
 - [`dotnet add reference`](../tools/dotnet-add-reference.md)

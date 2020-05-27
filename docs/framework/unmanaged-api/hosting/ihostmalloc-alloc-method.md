@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
 topic_type:
 - apiref
-ms.openlocfilehash: dded37fdef02963f60883b289462aa6a96693b3d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6f58e2290afa166d48306c0bbb50edd1df36888b
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176309"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83804649"
 ---
 # <a name="ihostmallocalloc-method"></a>Метод IHostMAlloc::Alloc
-Запросы, чтобы хост выделил указанное количество памяти из кучи.  
+Запрашивает, что узел выделяет указанный объем памяти из кучи.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,39 +37,39 @@ HRESULT Alloc (
   
 ## <a name="parameters"></a>Параметры  
  `cbSize`  
- (в) Размер в байтах текущего запроса распределения памяти.  
+ окне Размер (в байтах) текущего запроса на выделение памяти.  
   
  `dwCriticalLevel`  
- (в) Одно из значений [EMemoryCriticalLevel,](../../../../docs/framework/unmanaged-api/hosting/ememorycriticallevel-enumeration.md) указывающее на последствия сбоя выделения.  
+ окне Одно из значений [EMemoryCriticalLevel](ememorycriticallevel-enumeration.md) , указывающее влияние сбоя выделения.  
   
  `ppMem`  
- (ваут) Указатель на выделенную память или null, если запрос не может быть завершен.  
+ заполняет Указатель на выделенную память или значение null, если не удалось завершить запрос.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`Alloc`вернулся успешно.|  
-|HOST_E_CLRNOTAVAILABLE|Время выполнения общего языка (CLR) не было загружено в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. Когда метод возвращается E_FAIL, CLR больше не используется в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
-|E_OUTOFMEMORY|Недостаточно памяти было доступно для завершения запроса на выделение.|  
+|S_OK|`Alloc`успешно возвращено.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_OUTOFMEMORY|Недостаточно памяти для завершения запроса на выделение.|  
   
-## <a name="remarks"></a>Remarks  
- CLR получает указатель интерфейса `IHostMalloc` к экземпляру, позвонив в метод [IHostMemoryManager::CreateMalloc.](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-createmalloc-method.md)  
+## <a name="remarks"></a>Замечания  
+ Среда CLR получает указатель интерфейса на `IHostMalloc` экземпляр, вызывая метод [IHostMemoryManager:: CreateMalloc](ihostmemorymanager-createmalloc-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IHostMemoryManager](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
-- [Интерфейс IHostMalloc](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)
+- [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)
+- [Интерфейс IHostMalloc](ihostmalloc-interface.md)

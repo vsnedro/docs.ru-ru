@@ -7,12 +7,12 @@ helpviewer_keywords:
 - converting strings to int [C#]
 - strings [C#], converting to int
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
-ms.openlocfilehash: 54a4562a5cc493fc287bdf2f6bcf9723557f2a05
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f1d4a0f36292acafad409bf666f861b7637cd644
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79157043"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442206"
 ---
 # <a name="how-to-convert-a-string-to-a-number-c-programming-guide"></a>Руководство по программированию на C#. Преобразование строки в число
 
@@ -58,4 +58,4 @@ ms.locfileid: "79157043"
 
 - [Типы](./index.md)
 - [Определение представления числового значения в строке](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
-- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
+- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)

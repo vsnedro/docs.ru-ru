@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c17105bb-b49f-434e-8f9b-77f8c85b9220
 topic_type:
 - apiref
-ms.openlocfilehash: 4a55ae265230c4da3cc0a19b06a7597be8661beb
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c68ec0b41bb38afc7cefaf47df718fffcf42d250
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73103249"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842435"
 ---
 # <a name="imanagedobjectgetserializedbuffer-method"></a>Метод IManagedObject::GetSerializedBuffer
 Возвращает строковое представление этого управляемого объекта.  
@@ -37,18 +37,18 @@ HRESULT GetSerializedBuffer (
  `pBSTR`  
  заполняет Указатель на строку, которая является сериализованным объектом.  
   
-## <a name="remarks"></a>Заметки  
- Метод `GetSerializedBuffer` сериализует объект, чтобы его можно было маршалировать на клиент.  
+## <a name="remarks"></a>Примечания  
+ `GetSerializedBuffer`Метод сериализует объект, чтобы его можно было маршалировать клиенту.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс IManagedObject](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)
+- [Интерфейс IManagedObject](imanagedobject-interface.md)

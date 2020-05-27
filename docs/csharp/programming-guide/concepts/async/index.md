@@ -2,12 +2,12 @@
 title: Асинхронное программирование на C#
 description: Общие сведения о языковой поддержке асинхронного программирования в C# с помощью async, await, задач и Task<T>
 ms.date: 03/18/2019
-ms.openlocfilehash: 4cbbff0f2c48f0ec2f8befa234ea5023465a1c5d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4bf00d5c77138dfa2d527a262a6cd54a72a688f5
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79169913"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83761854"
 ---
 # <a name="asynchronous-programming-with-async-and-await"></a>Асинхронное программирование с использованием ключевых слов async и await
 
@@ -30,7 +30,7 @@ ms.locfileid: "79169913"
 
 Теперь рассмотрим эти же инструкции, написанные на C#.
 
-[!code-csharp[SynchronousBreakfast](~/samples/snippets/csharp/tour-of-async/AsyncBreakfast-starter/Program.cs#Main)]
+[!code-csharp[SynchronousBreakfast](./snippets/index/AsyncBreakfast-starter/Program.cs#Main)]
 
 Компьютеры не рассматривают эти инструкции так же, как люди. Компьютер будет задерживаться над каждой инструкцией до момента, когда работа будет завершена, прежде чем перейдет к следующему оператору. Вряд ли такой завтрак вас устроит. Более поздние задачи не будут начаты до завершения предыдущих. Потребуется гораздо больше времени для приготовления завтрака, к тому же часть уже остынет еще до подачи.
 
@@ -46,7 +46,7 @@ ms.locfileid: "79169913"
 
 Давайте начнем менять этот код, чтобы не блокировать поток во время выполнения задачи. Ключевое слово `await` позволяет обойтись без блокировки для запуска задачи, а затем продолжить выполнение, когда задача завершается. Простая асинхронная версия кода для приготовления завтрака будет выглядеть так:
 
-[!code-csharp[SimpleAsyncBreakfast](~/samples/snippets/csharp/tour-of-async/AsyncBreakfast-V2/Program.cs#Main)]
+[!code-csharp[SimpleAsyncBreakfast](./snippets/index/AsyncBreakfast-V2/Program.cs#Main)]
 
 Этот код не блокируется при приготовлении яиц или бекона. Этот код, однако, не запускает других задач. По-прежнему придется поместить тост в тостер и смотреть на него, пока он не выскочит. Но по крайней мере можно отвечать всем, кто хочет вашего внимания. В ресторане, где будет размещаться несколько заказов, повар сможет начать готовить другой завтрак, пока первый готовится.
 
@@ -116,11 +116,11 @@ Console.WriteLine("Breakfast is ready!");
 
 Приведенный выше код показал, что можно использовать объекты <xref:System.Threading.Tasks.Task> или <xref:System.Threading.Tasks.Task%601> для хранения выполняемых задач. Вы вызываете `await` для каждой задачи, прежде чем использовать ее результат. Следующим шагом является создание методов, которые представляют сочетание другой работы. Перед подачей завтрака требуется дождаться задачи, представляющей поджарку хлеба перед добавлением масла и джема. Вы можете представить эту работу следующим кодом:
 
-[!code-csharp[ComposeToastTask](~/samples/snippets/csharp/tour-of-async/AsyncBreakfast-V3/Program.cs#ComposeToastTask)]
+[!code-csharp[ComposeToastTask](./snippets/index/AsyncBreakfast-V3/Program.cs#ComposeToastTask)]
 
 Предыдущий метод имеет `async` модификатор в сигнатуре. Он сообщает компилятору, что этот метод содержит инструкцию `await`; она содержит асинхронные операции. Этот метод представляет задачу, в рамках которой поджаривается хлеб, а затем добавляется масло и джем. Этот метод возвращает <xref:System.Threading.Tasks.Task%601>, представляющий сочетание этих трех операций. Теперь вид основного блока кода будет таким:
 
-[!code-csharp[StartConcurrentTasks](~/samples/snippets/csharp/tour-of-async/AsyncBreakfast-V3/Program.cs#Main)]
+[!code-csharp[StartConcurrentTasks](./snippets/index/AsyncBreakfast-V3/Program.cs#Main)]
 
 Предыдущее изменение показывает важную методику для работы с асинхронным кодом. Составные задачи можно создавать, разделяя операции в новом методе, который возвращает задачу. Вы можете выбрать, когда следует ожидать выполнения созданной задачи. Одновременно можно запускать другие задачи.
 
@@ -138,10 +138,10 @@ Console.WriteLine("Breakfast is ready!");
 
 Другой вариант — использовать <xref:System.Threading.Tasks.Task.WhenAny%2A>, который возвращает `Task<Task>`, выполняемый по завершении любого из своих аргументов. Можно ожидать возвращенной задачи, зная, что она уже завершена. В следующем коде показано, как использовать <xref:System.Threading.Tasks.Task.WhenAny%2A> для ожидания первой задачи, чтобы затем обработать ее результат. После обработки результата завершенной задачи удалим ее из списка задач, передаваемого в `WhenAny`.
 
-[!code-csharp[AwaitAnyTask](~/samples/snippets/csharp/tour-of-async/AsyncBreakfast-final/Program.cs#AwaitAnyTask)]
+[!code-csharp[AwaitAnyTask](./snippets/index/AsyncBreakfast-final/Program.cs#AwaitAnyTask)]
 
 После всех этих изменений окончательная версия `Main` выглядит так:
 
-[!code-csharp[Final](~/samples/snippets/csharp/tour-of-async/AsyncBreakfast-final/Program.cs#Main)]
+[!code-csharp[Final](./snippets/index/AsyncBreakfast-final/Program.cs#Main)]
 
 Этот итоговый код выполняется асинхронно. Он более точно отражает, как пользователь будет готовить завтрак. Сравните предыдущий код с первым примером кода в этой статье. Основные действия по-прежнему очевидны при прочтении. Этот код можно прочитать так же, как указания по приготовлению завтрака в начале этой статьи. Возможности языка для `async` и `await` делают возможными преобразования, которые любой человек производит, выполняя эти инструкции: запуск задач без блокировки в ожидании их завершения.

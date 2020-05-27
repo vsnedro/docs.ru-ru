@@ -4,12 +4,12 @@ description: В этом расширенном руководстве пока�
 ms.date: 02/10/2019
 ms.technology: csharp-async
 ms.custom: mvc
-ms.openlocfilehash: 03254e5208a048469f4753d632de7b0d451cde40
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.openlocfilehash: fd9fed3469d18c919102640df7bb501b116f5e0e
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200110"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420374"
 ---
 # <a name="tutorial-generate-and-consume-async-streams-using-c-80-and-net-core-30"></a>Учебник. Создание и использование асинхронных потоков с использованием C# 8.0 и .NET Core 3.0
 
@@ -42,7 +42,7 @@ ms.locfileid: "82200110"
 
 ## <a name="run-the-starter-application"></a>Запуск начального приложения
 
-Вы можете получить код для начального приложения, используемый в этом руководстве в репозитории [dotnet/docs](https://github.com/dotnet/docs) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start).
+Вы можете получить код для начального приложения, используемый в этом руководстве в репозитории [dotnet/docs](https://github.com/dotnet/docs) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start).
 
 Начальное приложение представляет собой консольное приложение, которое использует интерфейс [GraphQL GitHub](https://developer.github.com/v4/) для получения последних проблем, написанных в репозитории [dotnet/docs](https://github.com/dotnet/docs). Начнем с просмотра следующего кода для метода `Main` начального приложения.
 
@@ -144,7 +144,7 @@ try
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 
-Вы можете получить код для готового руководства из репозитория [dotnet/docs](https://github.com/dotnet/docs) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished).
+Вы можете получить код для готового руководства из репозитория [dotnet/docs](https://github.com/dotnet/docs) в папке [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished).
 
 ## <a name="run-the-finished-application"></a>Запуск готового приложения
 

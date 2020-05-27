@@ -3,13 +3,14 @@ title: Модульное тестирование в .NET Core и .NET Standard
 description: В этой статье представлен краткий обзор модульного тестирования для проектов .NET Core и .NET Standard.
 author: ardalis
 ms.author: wiwagn
-ms.date: 08/30/2017
-ms.openlocfilehash: 1263bfe337b9d6609c0ca7df70aa299a61a7f1a0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 05/18/2020
+zone_pivot_groups: unit-testing-framework-set-one
+ms.openlocfilehash: e15f80b173389cdff86c6e62013e9c0f21171dd6
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78157405"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83703107"
 ---
 # <a name="unit-testing-in-net-core-and-net-standard"></a>Модульное тестирование в .NET Core и .NET Standard
 
@@ -32,7 +33,7 @@ ms.locfileid: "78157405"
 
 Попробуйте не создавать зависимости в инфраструктуре при написании модульных тестов. Из-за этого тесты выполняются медленно и нестабильно. Зависимости следует использовать в интеграционных тестах. Чтобы избежать появления зависимостей в коде приложения, следуйте [принципу явных зависимостей](https://deviq.com/explicit-dependencies-principle/) и используйте [внедрение зависимостей](/aspnet/core/fundamentals/dependency-injection). Вы также можете разместить модульные тесты в отдельном проекте, не содержащем интеграционных тестов. Это гарантирует отсутствие в проекте модульного теста ссылок на пакеты инфраструктуры или зависимостей от них.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 Дополнительные сведения о модульном тестировании в проектах .NET Core.
 
@@ -42,23 +43,35 @@ ms.locfileid: "78157405"
 - [F#](../../fsharp/index.yml)
 - [Visual Basic](../../visual-basic/index.yml)
 
-Также вы можете выбрать один из следующих вариантов:
+Для модульного тестирования также доступно несколько платформ:
 
-- [xUnit](https://xunit.github.io)
+- [xUnit](https://xunit.net/)
 - [NUnit](https://nunit.org)
 - [MSTest](https://github.com/Microsoft/testfx-docs)
 
 Дополнительные сведения см. в следующих пошаговых руководствах:
 
-- Создание модульных тестов с помощью [*xUnit*, *C#* и .NET Core CLI](unit-testing-with-dotnet-test.md).
-- Создание модульных тестов с помощью [*NUnit*, *C#* и интерфейса командной строки .NET Core](unit-testing-with-nunit.md).
+:::zone pivot="mstest"
+
 - Создание модульных тестов с помощью [*MSTest*, *C#* и .NET Core CLI](unit-testing-with-mstest.md).
-- Создание модульных тестов с помощью [*xUnit*, *F#* и .NET Core CLI](unit-testing-fsharp-with-dotnet-test.md).
-- Создание модульных тестов с помощью [*NUnit*, *F#* и интерфейса командной строки .NET Core](unit-testing-fsharp-with-nunit.md).
 - Создание модульных тестов с помощью [*MSTest*, *F#* и .NET Core CLI](unit-testing-fsharp-with-mstest.md).
-- Создание модульных тестов с помощью [*xUnit*, *Visual Basic* и .NET Core CLI](unit-testing-visual-basic-with-dotnet-test.md).
-- Создание модульных тестов с помощью [*NUnit*, *Visual Basic* и интерфейса командной строки .NET Core](unit-testing-visual-basic-with-nunit.md).
 - Создание модульных тестов с помощью [*MSTest*, *Visual Basic* и .NET Core CLI](unit-testing-visual-basic-with-mstest.md).
+
+:::zone-end
+:::zone pivot="xunit"
+
+- Создание модульных тестов с помощью [*xUnit*, *C#* и .NET Core CLI](unit-testing-with-dotnet-test.md).
+- Создание модульных тестов с помощью [*xUnit*, *F#* и .NET Core CLI](unit-testing-fsharp-with-dotnet-test.md).
+- Создание модульных тестов с помощью [*xUnit*, *Visual Basic* и .NET Core CLI](unit-testing-visual-basic-with-dotnet-test.md).
+
+:::zone-end
+:::zone pivot="nunit"
+
+- Создание модульных тестов с помощью [*NUnit*, *C#* и интерфейса командной строки .NET Core](unit-testing-with-nunit.md).
+- Создание модульных тестов с помощью [*NUnit*, *F#* и интерфейса командной строки .NET Core](unit-testing-fsharp-with-nunit.md).
+- Создание модульных тестов с помощью [*NUnit*, *Visual Basic* и интерфейса командной строки .NET Core](unit-testing-visual-basic-with-nunit.md).
+
+:::zone-end
 
 Дополнительные сведения см. в следующих статьях:
 

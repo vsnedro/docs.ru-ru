@@ -16,12 +16,12 @@ helpviewer_keywords:
 - formatting numbers [.NET Framework]
 - format specifiers, custom numeric format strings
 ms.assetid: 6f74fd32-6c6b-48ed-8241-3c2b86dea5f4
-ms.openlocfilehash: 5961cce4601a89b34708b7090207edfed63b5b08
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 1e2456da9fd1b9bd26d0317c0d04c6d1b61cf16d
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81242989"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83440920"
 ---
 # <a name="custom-numeric-format-strings"></a>Строки настраиваемых числовых форматов
 
@@ -30,7 +30,7 @@ ms.locfileid: "81242989"
 Строки настраиваемых числовых форматов поддерживаются некоторыми перегрузками метода `ToString` всех числовых типов. Например, можно задать строку числового формата для методов <xref:System.Int32.ToString%28System.String%29> и <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29> типа <xref:System.Int32> . Строки настраиваемых числовых форматов также поддерживаются [функцией составного форматирования .NET Framework](../../../docs/standard/base-types/composite-formatting.md), используемой некоторыми методами `Write` и `WriteLine` классов <xref:System.Console> и <xref:System.IO.StreamWriter>, а также методами <xref:System.String.Format%2A?displayProperty=nameWithType> и <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>. Функция [интерполяции строк](../../csharp/language-reference/tokens/interpolated.md) также поддерживает строки настраиваемого числового формата.
 
 > [!TIP]
-> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
+> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 <a name="table"></a> В следующей таблице приведены описатели стандартного числового формата и примеры выходных данных, формируемых каждым описателем формата. Дополнительные сведения об использовании строк настраиваемого числового формата см. в разделе [Примечания](#NotesCustomFormatting); обширную демонстрацию их использования см. в разделе [Пример](#example).
 
@@ -291,5 +291,5 @@ ms.locfileid: "81242989"
 - [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
 - [Строки стандартных числовых форматов](../../../docs/standard/base-types/standard-numeric-format-strings.md)
 - [Практическое руководство. Добавление к числу начальных нулей](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)
-- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
-- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)
+- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

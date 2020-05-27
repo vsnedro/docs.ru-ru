@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ef2f83c2-127e-4c38-8385-306c03cd2167
 topic_type:
 - apiref
-ms.openlocfilehash: b70454cd1e2d6d38e6ca4d0ea0bd8974963c201c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f5469a6f35826bcb06fe821e3748861dbf3682f3
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136732"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83804545"
 ---
 # <a name="ihostmemorymanageracquiredvirtualaddressspace-method"></a>Метод IHostMemoryManager::AcquiredVirtualAddressSpace
 Уведомляет узел о том, что среда CLR получила указанную память из операционной системы.  
@@ -41,18 +41,18 @@ HRESULT AcquiredVirtualAddressSpace(
  `size`  
  окне Размер памяти в байтах.  
   
-## <a name="remarks"></a>Заметки  
- Метод `AcquiredVirtualAddressSpace` является методом обратного вызова и должен быть реализован модулем записи размещающего приложения. Он вызывается средой CLR.  
+## <a name="remarks"></a>Замечания  
+ `AcquiredVirtualAddressSpace`Метод является методом обратного вызова и должен быть реализован модулем записи размещающего приложения. Он вызывается средой CLR.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IHostMemoryManager](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)

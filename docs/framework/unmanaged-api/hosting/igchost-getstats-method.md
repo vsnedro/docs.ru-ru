@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c4ae022c-46ac-4f19-9ddd-09b955f19412
 topic_type:
 - apiref
-ms.openlocfilehash: c86786a34ff236fb57a1ea6bc4d00b9cd5c4a717
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 67668aa7ff9faf035a047e485a8a3c8a451f45b9
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134887"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83805237"
 ---
 # <a name="igchostgetstats-method"></a>Метод IGCHost::GetStats
 Возвращает статистику текущего состояния системы сборки мусора.  
@@ -35,20 +35,20 @@ HRESULT GetStats (
   
 ## <a name="parameters"></a>Параметры  
  `pStats`  
- [вход, выход] Указатель на структуру [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) , содержащую статистику по текущему состоянию системы сборки мусора.  
+ [вход, выход] Указатель на структуру [COR_GC_STATS](cor-gc-stats-structure.md) , которая содержит статистику для текущего состояния системы сборки мусора.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Замечания  
  Статистика может использоваться системой интеллектуального распределения, чтобы помочь системе сборки мусора. Например, система распределения может определить, что после проверки статистики потребуется добавить память или принудительно выполнить сбор.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Гчост. idl, Гчост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IGCHost](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+- [Интерфейс IGCHost](igchost-interface.md)

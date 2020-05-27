@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: becae23cd810623bbb33c693b707c2d4735aeece
-ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
+ms.openlocfilehash: 298cb441bf9fe7daddb30c85f9d7366dc972628c
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82158487"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83720916"
 ---
 ### <a name="replacing-ill-formed-utf-8-byte-sequences-follows-unicode-guidelines"></a>Замена неправильно сформированных последовательностей байтов в кодировке UTF-8 в соответствии с правилами Юникода
 
@@ -46,7 +46,7 @@ ms.locfileid: "82158487"
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Text.UTF8Encoding.GetCharCount`
 - `Overload:System.Text.UTF8Encoding.GetChars`

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 71f0eab5-0170-46f8-9f88-1df5abdeb34a
 topic_type:
 - apiref
-ms.openlocfilehash: a3ae474a73f4c8e4b98c4b2bc5d04e55bcae6874
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: bb13c7329c558aa92ec65237aa8a9963c82fe1dc
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73128670"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83804513"
 ---
 # <a name="ihostmemorymanagerneedsvirtualaddressspace-method"></a>Метод IHostMemoryManager::NeedsVirtualAddressSpace
 Уведомляет узел о том, что среда CLR будет пытаться использовать указанную память.  
@@ -41,20 +41,20 @@ HRESULT NeedsVirtualAddressSpace (
  `size`  
  окне Размер памяти в байтах.  
   
-## <a name="remarks"></a>Заметки  
- Метод `NeedsVirtualAddressSpace` является методом обратного вызова и должен быть реализован модулем записи размещающего приложения. Он вызывается средой CLR.  
+## <a name="remarks"></a>Замечания  
+ `NeedsVirtualAddressSpace`Метод является методом обратного вызова и должен быть реализован модулем записи размещающего приложения. Он вызывается средой CLR.  
   
- Если узел не хочет, чтобы среда CLR использовала указанную память, она может вернуть значение E_OUTOFMEMORY HRESULT.  
+ Если узел не хочет, чтобы среда CLR использовала указанную память, она может вернуть E_OUTOFMEMORY HRESULT.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IHostMemoryManager](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)

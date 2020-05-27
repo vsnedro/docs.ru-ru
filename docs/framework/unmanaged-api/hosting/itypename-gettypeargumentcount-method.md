@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ecb5480c-761a-4b02-83e0-b79abc67fd08
 topic_type:
 - apiref
-ms.openlocfilehash: 2b332c39ea38734babca4c72b9e74b1c6b29bc73
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 627e4f596cde8f02edcaecfb26fa277b5ecf3a6b
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73095470"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842144"
 ---
 # <a name="itypenamegettypeargumentcount-method"></a>Метод ITypeName::GetTypeArgumentCount
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
@@ -34,14 +34,14 @@ HRESULT GetTypeArgumentCount (
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Интерфейсы размещения](hosting-interfaces.md)

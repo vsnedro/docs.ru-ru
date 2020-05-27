@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: f2299ac807c845dab482306cc4c710560bb7f1e7
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: 0fb21b09fbf97f9c9ac2bf2982c391b87e2debc1
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607866"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83614361"
 ---
 # <a name="deploy-net-core-apps-with-visual-studio"></a>Развертывание приложений .NET Core с помощью Visual Studio
 
@@ -38,8 +38,8 @@ ms.locfileid: "81607866"
 
    Откройте файл *Program.cs* или *Program.vb* в редакторе и замените автоматически созданный код приведенным ниже кодом. Он выводит запрос на ввод текста и отображает отдельные слова, введенные пользователем. Для разделения слов во введенном тексте в нем используется регулярное выражение `\w+`.
 
-   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
-   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
+   [!code-csharp[deployment#1](./snippets/deploy-with-vs/csharp/deployment-example.cs)]
+   [!code-vb[deployment#1](./snippets/deploy-with-vs/vb/deployment-example.vb)]
 
 1. Создание отладочной сборки приложения.
 
@@ -89,8 +89,8 @@ ms.locfileid: "81607866"
 
    Откройте файл *Program.cs* или *Program.vb* в редакторе и замените автоматически созданный код приведенным ниже кодом. Он выводит запрос на ввод текста и отображает отдельные слова, введенные пользователем. Для разделения слов во введенном тексте в нем используется регулярное выражение `\w+`.
 
-   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
-   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
+   [!code-csharp[deployment#1](./snippets/deploy-with-vs/csharp/deployment-example.cs)]
+   [!code-vb[deployment#1](./snippets/deploy-with-vs/vb/deployment-example.vb)]
 
 1. Определите, хотите ли вы использовать инвариантный режим глобализации.
 
@@ -98,7 +98,7 @@ ms.locfileid: "81607866"
 
    Чтобы включить инвариантный режим, щелкните правой кнопкой мыши проект (не решение) в **обозревателе решений** и выберите **Изменить SCD.csproj** или **Изменить SCD.vbproj**. Затем добавьте следующие выделенные строки в файл:
 
-   [!code-xml[globalization-invariant-mode](~/samples/snippets/core/deploying/xml/invariant.csproj?highlight=6-8)]
+   [!code-xml[globalization-invariant-mode](./snippets/deploy-with-vs/xml/invariant.csproj?highlight=6-8)]
 
 1. Создание отладочной сборки приложения.
 

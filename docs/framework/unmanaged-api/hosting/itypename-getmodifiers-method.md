@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 75508c55-3e09-4135-80da-cc811003fa82
 topic_type:
 - apiref
-ms.openlocfilehash: c96764749a766f3b4bbff4cf6512677a47197f4c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8544b8d7b1f23853465bbb2aea697dfe021d77f2
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73095831"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842183"
 ---
 # <a name="itypenamegetmodifiers-method"></a>Метод ITypeName::GetModifiers
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
@@ -36,14 +36,14 @@ HRESULT GetModifiers (
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Интерфейсы размещения](hosting-interfaces.md)

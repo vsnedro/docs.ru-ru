@@ -1,17 +1,17 @@
 ---
-title: Управление зависимостями в .NET Core
-description: Сведения об управлении зависимостями проекта для приложения .NET Core.
+title: ''
+description: ''
 no-loc:
 - dotnet add package
 - dotnet remove package
 - dotnet list package
-ms.date: 02/25/2020
-ms.openlocfilehash: 3e1d807ea69e66e31b277a92cd6a1dc0e76531b5
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.date: ''
+ms.openlocfilehash: 667b2d4d68edd82a4d18c370e45ea18f4d4b379a
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795551"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83702837"
 ---
 # <a name="manage-dependencies-in-net-core-applications"></a>Управление зависимостями в приложениях .NET Core
 
@@ -78,5 +78,5 @@ dotnet remove package Microsoft.EntityFrameworkCore
 
 ## <a name="see-also"></a>См. также
 
-* [Ссылки на пакеты в файлах проекта](../project-sdk/msbuild-props.md#reference-properties)
-* [Команда dotnet list package](dotnet-remove-package.md)
+* [Ссылки на пакеты в файлах проекта](../project-sdk/msbuild-props.md#reference-properties-and-items)
+* [Команда dotnet list package](dotnet-list-package.md)

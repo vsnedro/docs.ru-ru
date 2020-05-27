@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e8138f6e-a0a4-48d4-8dae-9466b4dc6180
 topic_type:
 - apiref
-ms.openlocfilehash: 88acd50c83eb1ff4d59aa50d677db2383912659a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 73d9ae865b2c971a4defcacf5bd6505836c74e02
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176283"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83804507"
 ---
 # <a name="ihostmemorymanagergetmemoryload-method"></a>Метод IHostMemoryManager::GetMemoryLoad
-Получает количество физической памяти, которая в настоящее время используется, и, следовательно, недоступны, как сообщает хост.  
+Возвращает объем физической памяти, используемой в данный момент, и, следовательно, недоступен, сообщаемый узлом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,37 +36,37 @@ HRESULT GetMemoryLoad (
   
 ## <a name="parameters"></a>Параметры  
  `pMemoryLoad`  
- (ваут) Указатель на приблизительный процент общей физической памяти, которая в настоящее время используется.  
+ заполняет Указатель на Приблизительный процент общего объема физической памяти, который используется в данный момент.  
   
  `pAvailableBytes`  
- (ваут) Указатель на количество байтов, доступных для общего времени выполнения языка (CLR).  
+ заполняет Указатель на число байтов, доступных для среды CLR.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`GetMemoryLoad`вернулся успешно.|  
-|HOST_E_CLRNOTAVAILABLE|CLR не был загружен в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. Когда метод возвращается E_FAIL, CLR больше не используется в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
+|S_OK|`GetMemoryLoad`успешно возвращено.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Remarks  
- `GetMemoryLoad`обертывает функцию `GlobalMemoryStatus` Win32. Значение `pMemoryLoad` эквивалентно еженедельнное `dwMemoryLoad` поле `GlobalMemoryStatus`в возвращаемом строении. `MEMORYSTATUS`  
+## <a name="remarks"></a>Замечания  
+ `GetMemoryLoad`заключает в оболочку `GlobalMemoryStatus` функцию Win32. Значение `pMemoryLoad` является эквивалентом `dwMemoryLoad` поля в `MEMORYSTATUS` структуре, возвращаемой из `GlobalMemoryStatus` .  
   
- Время выполнения использует значение возврата в качестве эвристического для сборщика мусора. Например, если хост сообщает, что большая часть памяти используется, сборщик мусора может выбрать для сбора из нескольких поколений, чтобы увеличить объем памяти, который потенциально может стать доступным.  
+ Среда выполнения использует возвращаемое значение в качестве эвристики для сборщика мусора. Например, если основное приложение сообщает о том, что используется большая часть памяти, сборщик мусора может выбрать сбор данных из нескольких поколений, чтобы увеличить объем памяти, который потенциально может стать доступным.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.GC?displayProperty=nameWithType>
-- [Интерфейс IHostMemoryManager](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)

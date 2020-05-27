@@ -6,30 +6,30 @@ helpviewer_keywords:
 - native API reference [.NET Framework], hosting
 - hosting [.NET Framework], using the unmanaged API
 ms.assetid: 14295c28-1da8-408b-a656-9584abcd9896
-ms.openlocfilehash: 3fe07ba06d5e50c178c84dcb05351923e0548849
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e6430e16de39b4acecf55d855785503ff19673ec
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73102680"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842313"
 ---
 # <a name="hosting-unmanaged-api-reference"></a>Размещение (справочник по неуправляемым интерфейсам API)
 API размещения позволяет неуправляемым узлам интегрировать среду CLR в свои приложения.  
   
-## <a name="in-this-section"></a>Содержание  
- [Размещение коклассов](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)  
+## <a name="in-this-section"></a>В этом разделе  
+ [Размещение коклассов](hosting-coclasses.md)  
  Описываются неуправляемые коклассы, которые использует API размещения.  
   
- [Размещение перечислений](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)  
+ [Размещение перечислений](hosting-enumerations.md)  
  Описываются неуправляемые перечисления, которые использует API размещения.  
   
- [Глобальные статические функции размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-global-static-functions.md)  
+ [Глобальные статические функции размещения](hosting-global-static-functions.md)  
  Описываются неуправляемые глобальные статистические функции, которые использует API размещения.  
   
- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
+ [Интерфейсы размещения](hosting-interfaces.md)  
  Описываются неуправляемые интерфейсы, позволяющие хост-приложению среды выполнения интегрировать среду CLR в неуправляемое приложение.  
   
- [Структуры размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
+ [Структуры размещения](hosting-structures.md)  
  Описываются неуправляемые структуры, которые использует API размещения.  
   
 ## <a name="related-sections"></a>Связанные разделы  

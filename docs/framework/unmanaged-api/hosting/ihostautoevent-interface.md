@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6c1d15c1-a80a-4ee9-b1e4-6e859db6575a
 topic_type:
 - apiref
-ms.openlocfilehash: 2b191243ea03adcfecaadbd3a5871e1773b28bb1
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: a24939ac0b0808546ef3615fae4909c6c3cf8a2e
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73124454"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83804997"
 ---
 # <a name="ihostautoevent-interface"></a>Интерфейс IHostAutoEvent
 Предоставляет представление реализации события автоматического сброса в узле.  
@@ -28,21 +28,21 @@ ms.locfileid: "73124454"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Set](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-set-method.md)|Задает для текущего экземпляра `IHostAutoEvent` сигнальное состояние.|  
-|[Метод Wait](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-wait-method.md)|Вызывает ожидание текущего экземпляра `IHostAutoEvent` до тех пор, пока не будет присвоено событие или не истечет указанное количество времени.|  
+|[Метод Set](ihostautoevent-set-method.md)|Устанавливает для текущего `IHostAutoEvent` экземпляра сигнальное состояние.|  
+|[Метод Wait](ihostautoevent-wait-method.md)|Заставляет текущий `IHostAutoEvent` экземпляр ожидать, пока событие не будет присвоено, или истечет указанное время.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [Интерфейс IHostManualEvent](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)
-- [Интерфейс IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
+- [Интерфейс IHostManualEvent](ihostmanualevent-interface.md)
+- [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)
+- [Интерфейсы размещения](hosting-interfaces.md)

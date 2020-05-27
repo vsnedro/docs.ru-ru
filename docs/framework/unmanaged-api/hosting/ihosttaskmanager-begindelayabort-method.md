@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 75f42a8b-ed68-4718-a030-a179cfba7d72
 topic_type:
 - apiref
-ms.openlocfilehash: b765d5449cebbdec5f106a8e4743fee2f0ee5521
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ea3269d06fdd3f5a2e365465d45ba6e569127b0a
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133141"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842378"
 ---
 # <a name="ihosttaskmanagerbegindelayabort-method"></a>Метод IHostTaskManager::BeginDelayAbort
 Уведомляет узел о том, что управляемый код вводит точку, в которой не нужно прерывать текущую задачу.  
@@ -35,28 +35,28 @@ HRESULT BeginDelayAbort ();
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`BeginDelayAbort` успешно возвращено.|  
+|S_OK|`BeginDelayAbort`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
-|E_UNEXPECTED|`BeginDelayAbort` уже вызван, но соответствующий вызов [EndDelayAbort](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enddelayabort-method.md) еще не получен.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_UNEXPECTED|`BeginDelayAbort`уже вызван, но соответствующий вызов [EndDelayAbort](ihosttaskmanager-enddelayabort-method.md) еще не получен.|  
   
-## <a name="remarks"></a>Заметки  
- Узел не должен прерывать текущую задачу до тех пор, пока не будет вызван `EndDelayAbort`. Если другой вызов `BeginDelayAbort` выполняется без промежуточного вызова `EndDelayAbort`, узел должен вернуть E_UNEXPECTED из `BeginDelayAbort`и не должен предпринимать никаких действий.  
+## <a name="remarks"></a>Примечания  
+ Узел не должен прерывать текущую задачу до `EndDelayAbort` вызова метода. Если другой вызов выполняется `BeginDelayAbort` без промежуточного вызова `EndDelayAbort` , узел должен возвращать E_UNEXPECTED из `BeginDelayAbort` и не должен предпринимать никаких действий.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
-- [Интерфейс ICLRTaskManager](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
-- [Интерфейс IHostTaskManager](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+- [Интерфейс ICLRTask](iclrtask-interface.md)
+- [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)
+- [Интерфейс IHostTaskManager](ihosttaskmanager-interface.md)

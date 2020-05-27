@@ -1,6 +1,6 @@
 ---
 title: -langversion (параметры компилятора C#)
-ms.date: 08/23/2019
+ms.date: 05/20/2020
 f1_keywords:
 - /langversion
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -langversion compiler option [C#]
 - langversion compiler option [C#]
 ms.assetid: 3fb00b05-a0ff-4782-b313-13a4c0f62d94
-ms.openlocfilehash: 007b10f6f27233c43caad4c1910e3d1158682950
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 408b2fb1f19f872db675321601ebc1b0c921044b
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76920368"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83802958"
 ---
 # <a name="-langversion-c-compiler-options"></a>-langversion (параметры компилятора C#)
 
@@ -29,28 +29,13 @@ ms.locfileid: "76920368"
 
 `option`
 
-Допустимы следующие значения:
+Допустимы следующие значения.
 
-|Параметр|Значение|
-|------------|-------------|
-|предварительный просмотр|Компилятор допускает использование любого допустимого синтаксиса языка из последней предварительной версии, которую он поддерживает.|
-|последняя|Компилятор допускает использование любого допустимого синтаксиса языка из последней версии (включая дополнительные выпуски), которую он поддерживает.|
-|latestMajor|Компилятор допускает использование любого допустимого синтаксиса языка из последней основной версии, которую он поддерживает.|
-|8.0|Компилятор принимает только синтаксис, включенный в спецификацию C# 8.0 или более ранней версии.|
-|7.3|Компилятор принимает только синтаксис, включенный в спецификацию C# 7.3 или более ранней версии.|
-|7.2|Компилятор принимает только синтаксис, включенный в спецификацию C# 7.2 или более ранней версии.|
-|7.1|Компилятор принимает только синтаксис, включенный в спецификацию C# 7.1 или более ранней версии.|
-|7|Компилятор принимает только синтаксис, включенный в спецификацию C# 7.0 или более ранней версии.|
-|6|Компилятор принимает только синтаксис, включенный в спецификацию C# 6.0 или более ранней версии.|
-|5|Компилятор принимает только синтаксис, включенный в спецификацию C# 5.0 или более ранней версии.|
-|4|Компилятор принимает только синтаксис, включенный в спецификацию C# 4.0 или более ранней версии.|
-|3|Компилятор принимает только синтаксис, включенный в спецификацию C# 3.0 или более ранней версии.|
-|ISO-2|Компилятор принимает только синтаксис, включенный в спецификацию ISO/IEC 23270:2006 C# (2.0).|
-|ISO-1|Компилятор принимает только синтаксис, включенный в спецификацию ISO/IEC 23270:2003 C# (1.0/1.2).|
+[!INCLUDE [lang-versions-table](../includes/langversion-table.md)]
 
 Версия языка по умолчанию зависит от целевой платформы приложения, а также от установленной версии пакета SDK или Visual Studio. Эти правила определяются в статье о [настройке версии языка](../configure-language-version.md#defaults).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметр компилятора **-langversion** не влияет на метаданные, на которые ссылается ваше приложение C#.
 
@@ -66,35 +51,42 @@ ms.locfileid: "76920368"
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
-|Version|Ссылка|Описание:|
-|-------|----|-----------|
-|C# 7.0 и более поздние версии||в настоящее время недоступно|
-|C# 6.0|[Ссылка](/dotnet/csharp/language-reference/language-specification/introduction)|Спецификация языка C# версии 6 (неофициальный проект): .NET Foundation|
-|C# 5.0|[Скачать в формате PDF](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)|Стандарт ECMA-334, 5-й выпуск|
-|C# 3.0|[Загрузить DOC-файл](https://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc)|Спецификация языка C# версии 3.0: корпорация Майкрософт|
-|C# 2.0|[Скачать в формате PDF](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%204th%20edition%20June%202006.pdf)|Стандарт ECMA-334, 4-й выпуск|
-|C# 1.2|[Загрузить DOC-файл](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%202nd%20edition%20December%202002.pdf)|Спецификация языка C# версии 1.2: корпорация Майкрософт|
-|C# 1.0|[Загрузить DOC-файл](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%201st%20edition%20December%202001.pdf)|Спецификация языка C# версии 1.0: корпорация Майкрософт|
+| Version          | Ссылка                       | Описание                                                             |
+|------------------|----------------------------|-------------------------------------------------------------------------|
+| C# 7.0 и более поздние версии |                            | В настоящее время недоступно.                                                 |
+| C# 6.0           | [Ссылка][csharp-6]           | Спецификация языка C# версии 6 (неофициальный проект): .NET Foundation |
+| C# 5.0           | [Загрузить PDF-файл][csharp-5]   | Стандарт ECMA-334, 5-й выпуск                                           |
+| C# 3.0           | [Загрузить DOC-файл][csharp-3]   | Спецификация языка C#, версия 3.0: Microsoft Corporation            |
+| C# 2.0           | [Загрузить PDF-файл][csharp-2]   | Стандарт ECMA-334, 4-й выпуск                                           |
+| C# 1.2           | [Загрузить DOC-файл][csharp-1.2] | Спецификация языка C#, версия 1.2: Microsoft Corporation            |
+| C# 1.0           | [Загрузить DOC-файл][csharp-1]   | Спецификация языка C#, версия 1.0: Microsoft Corporation            |
+
+[csharp-6]: /dotnet/csharp/language-reference/language-specification/introduction
+[csharp-5]: https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf
+[csharp-3]: https://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc
+[csharp-2]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%204th%20edition%20June%202006.pdf
+[csharp-1.2]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%202nd%20edition%20December%202002.pdf
+[csharp-1]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%201st%20edition%20December%202001.pdf
 
 ## <a name="minimum-sdk-version-needed-to-support-all-language-features"></a>Минимальная версия пакета SDK, необходимая для поддержки всех возможностей языка
 
 В следующей таблице перечислены минимальные версии пакета SDK с компилятором C#, поддерживающим соответствующую версию языка:
 
-|Версия C#|Минимальная версия пакета SDK|
-|----------|-------------------|
-|C# 8.0| Microsoft Visual Studio/Build Tools 2019, версия 16.3 или пакет SDK .NET Core 3.0 |
-|C# 7.3| Microsoft Visual Studio/Build Tools 2017, версия 15.7 |
-|C# 7.2| Microsoft Visual Studio/Build Tools 2017, версия 15.5 |
-|C# 7.1| Microsoft Visual Studio/Build Tools 2017, версия 15.3 |
-|C# 7.0| Microsoft Visual Studio/Build Tools 2017 |
-|C# 6| Microsoft Visual Studio/Build Tools 2015 |
-|C# 5| Microsoft Visual Studio/Build Tools 2012 или встроенный компилятор .NET Framework 4.5 |
-|C# 4| Microsoft Visual Studio/Build Tools 2010 или встроенный компилятор .NET Framework 4.0 |
-|C# 3| Microsoft Visual Studio/Build Tools 2008 или встроенный компилятор .NET Framework 3.5 |
-|C# 2| Microsoft Visual Studio/Build Tools 2005 или встроенный компилятор .NET Framework 2.0 |
-|C# 1.0/1.2 | Microsoft Visual Studio/Build Tools .NET 2002 или встроенный компилятор .NET Framework 1.0 |
+| Версия C# | Минимальная версия пакета SDK                                                                  |
+|------------|--------------------------------------------------------------------------------------|
+| C# 8.0     | Microsoft Visual Studio/Build Tools 2019, версия 16.3 или пакет SDK .NET Core 3.0         |
+| C# 7.3     | Microsoft Visual Studio/Build Tools 2017, версия 15.7                               |
+| C# 7.2     | Microsoft Visual Studio/Build Tools 2017, версия 15.5                               |
+| C# 7.1     | Microsoft Visual Studio/Build Tools 2017, версия 15.3                               |
+| C# 7.0     | Microsoft Visual Studio/Build Tools 2017                                             |
+| C# 6       | Microsoft Visual Studio/Build Tools 2015                                             |
+| C# 5       | Microsoft Visual Studio/Build Tools 2012 или встроенный компилятор .NET Framework 4.5      |
+| C# 4       | Microsoft Visual Studio/Build Tools 2010 или встроенный компилятор .NET Framework 4.0      |
+| C# 3       | Microsoft Visual Studio/Build Tools 2008 или встроенный компилятор .NET Framework 3.5      |
+| C# 2       | Microsoft Visual Studio/Build Tools 2005 или встроенный компилятор .NET Framework 2.0      |
+| C# 1.0/1.2 | Microsoft Visual Studio/Build Tools .NET 2002 или встроенный компилятор .NET Framework 1.0 |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры компилятора C# ](index.md)
 - [Управление свойствами проектов и решений](/visualstudio/ide/managing-project-and-solution-properties)

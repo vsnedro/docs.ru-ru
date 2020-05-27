@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c6dcca8384cbd97a968b77e4bc834afa1f683298
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: b90821d0d3495f6006d1d97b3d3377e984c74c5e
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895664"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83613594"
 ---
 # <a name="net-docs"></a>Документация по .NET
 
@@ -12,7 +12,6 @@ ms.locfileid: "82895664"
 
 В этом репозитории содержится основная документация по .NET. [Сайт документации по .NET](https://docs.microsoft.com/dotnet) состоит из нескольких репозиториев в дополнение к этому:
 
-- [Примеры и фрагменты кода](https://github.com/dotnet/samples)
 - [Справочник по API](https://github.com/dotnet/dotnet-api-docs)
 - [Справочник по пакету SDK для .NET Compiler Platform](https://github.com/dotnet/roslyn-api-docs)
 

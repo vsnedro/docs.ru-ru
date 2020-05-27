@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8790637c31d503455eb8ba722cca827c2a24b7c9
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.openlocfilehash: a4476fbff572c004632153e5a98812c241efca57
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82021457"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83720931"
 ---
 ### <a name="openssl-versions-on-macos"></a>Версии OpenSSL в macOS
 
@@ -56,7 +56,7 @@ ms.locfileid: "82021457"
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `T:System.Security.Cryptography.AesCcm``
 - `T:System.Security.Cryptography.AesGcm`

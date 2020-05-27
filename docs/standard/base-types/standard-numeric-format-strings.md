@@ -16,12 +16,12 @@ helpviewer_keywords:
 - standard numeric format strings
 - formatting numbers [.NET Framework]
 - format specifiers, standard numeric format strings
-ms.openlocfilehash: 9b0c784a1c7b6b428636a1a4c99ec8e2bb76a9e0
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 93f93574e6a3c24fc03a2cbc6c7d0f11f4fe61f6
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81242716"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83440880"
 ---
 # <a name="standard-numeric-format-strings"></a>Строки стандартных числовых форматов
 
@@ -47,7 +47,7 @@ ms.locfileid: "81242716"
 - [Интерполированные строки](../../csharp/language-reference/tokens/interpolated.md) в C# и Visual Basic, которые предоставляют упрощенный синтаксис по сравнению со строками составного формата.
 
 > [!TIP]
-> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
+> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 <a name="table"></a> В следующей таблице приведены описатели стандартного числового формата и примеры выходных данных, формируемых каждым описателем формата. Дополнительные сведения о использовании строк стандартных числовых форматов см. в разделе [Примечания](#NotesStandardFormatting). Обширную демонстрацию их использования см. в разделе [Пример](#example).
 
@@ -388,5 +388,5 @@ ms.locfileid: "81242716"
 - [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
 - [Практическое руководство. Добавление к числу начальных нулей](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)
 - [Составное форматирование](../../../docs/standard/base-types/composite-formatting.md)
-- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
-- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)
+- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
 topic_type:
 - apiref
-ms.openlocfilehash: fef2f56fd000a8610a40661a30aa306ae5a7884e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7079a915c0402df62afa5648317619af82c943b0
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177991"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83841988"
 ---
 # <a name="ihosttaskmanagercreatetask-method"></a>Метод IHostTaskManager::CreateTask
-Запросы на создание узла новой задачи.  
+Запрашивает создание новой задачи узлом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,44 +38,44 @@ HRESULT CreateTask (
   
 ## <a name="parameters"></a>Параметры  
  `stacksize`  
- (в) Запрошенный размер, в байтах, запрашиваемого стека, или 0 (ноль) для размера по умолчанию.  
+ окне Запрошенный размер (в байтах) запрошенного стека или 0 (ноль) для размера по умолчанию.  
   
  `pStartAddress`  
- (в) Указатель на функцию, которую выполняет задача.  
+ окне Указатель на функцию, которая должна быть выполнена задачей.  
   
  `pParameter`  
- (в) Указатель на пользовательские данные, которые должны быть переданы функции, или нулевые, если функция не принимает никаких параметров.  
+ окне Указатель на пользовательские данные, передаваемые в функцию, или значение null, если функция не принимает параметры.  
   
  `ppTask`  
- (ваут) Указатель на адрес экземпляра [IHostTask,](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) созданный унизатом, или нулевый, если задача не может быть создана. Задача остается в приостановленном состоянии до тех пор, пока она явно не запущена вызовом на [IHostTask::Start](../../../../docs/framework/unmanaged-api/hosting/ihosttask-start-method.md).  
+ заполняет Указатель на адрес экземпляра [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) , созданного узлом, или значение null, если задача не может быть создана. Задача остается в приостановленном состоянии до тех пор, пока она не будет явно запущена вызовом [IHostTask:: Start](ihosttask-start-method.md).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`CreateTask`вернулся успешно.|  
-|HOST_E_CLRNOTAVAILABLE|Время выполнения общего языка (CLR) не было загружено в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. Когда метод возвращается E_FAIL, CLR больше не используется в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
-|E_OUTOFMEMORY|Недостаточно памяти было доступно для создания запрашиваемых задач.|  
+|S_OK|`CreateTask`успешно возвращено.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенной задачи.|  
   
-## <a name="remarks"></a>Remarks  
- CLR требует, `CreateTask` чтобы ухтабыла создала новую задачу. Хост возвращает указатель `IHostTask` интерфейса в экземпляр. Возвращалась задача должна оставаться `IHostTask::Start`приостановленной до тех пор, пока она явно не будет запущена вызовом.  
+## <a name="remarks"></a>Примечания  
+ Вызовы CLR `CreateTask` для запроса создания новой задачи узлом. Узел возвращает указатель интерфейса на `IHostTask` экземпляр. Возвращаемая задача должна оставаться приостановленной до тех пор, пока она не будет явно запущена вызовом метода `IHostTask::Start` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейс ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
-- [Интерфейс ICLRTaskManager](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
-- [Интерфейс IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
-- [Интерфейс IHostTaskManager](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+- [Интерфейс ICLRTask](iclrtask-interface.md)
+- [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)
+- [Интерфейс IHostTask](ihosttask-interface.md)
+- [Интерфейс IHostTaskManager](ihosttaskmanager-interface.md)

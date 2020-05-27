@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d35de48dd22003c851cf5dba9e8517ec48b9217b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c0551fa086644497c631cd9b6d7058398ff9ccfa
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74567763"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83702293"
 ---
 ### <a name="c-locale-maps-to-the-invariant-locale"></a>Языковой стандарт "C" сопоставляется с инвариантным языковым стандартом
 
@@ -20,18 +20,20 @@ ms.locfileid: "74567763"
 
 3,0
 
-### <a name="recommended-action"></a>Рекомендованное действие
+#### <a name="recommended-action"></a>Рекомендованное действие
 
 Ничего конкретного, кроме сведений об этом изменении. Это изменение затрагивает только приложения, использующее сопоставление языкового параметра "C".
 
-### <a name="category"></a>Категория
+#### <a name="category"></a>Категория
 
 Глобализация
 
-### <a name="affected-apis"></a>Затронутые API
+#### <a name="affected-apis"></a>Затронутые API
 
 Это изменение затрагивает все API параметров сортировки и языка и региональных параметров.
 
 <!--
+
+#### Affected APIs
 
 -->

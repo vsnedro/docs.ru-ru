@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 37679e94-5ff9-4173-8fa5-457febeb89bf
 topic_type:
 - apiref
-ms.openlocfilehash: 02066d3923714e66bf287f1435b7854280c97cb7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 680280e959d523356b95a5a4d9390c80720c0330
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73195830"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83803138"
 ---
 # <a name="ihostsyncmanagercreatesemaphore-method"></a>Метод IHostSyncManager::CreateSemaphore
-Создает объект [IHostSemaphore](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md) для общеязыковой среды выполнения (CLR) для использования в качестве семафора для событий ожидания.  
+Создает объект [IHostSemaphore](ihostsemaphore-interface.md) для общеязыковой среды выполнения (CLR) для использования в качестве семафора для событий ожидания.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,40 +37,40 @@ HRESULT CreateSemaphore (
   
 ## <a name="parameters"></a>Параметры  
  `dwInitial`  
- окне Начальное число для `ppSemaphore`.  
+ окне Начальное число для `ppSemaphore` .  
   
  `dwMax`  
- окне Максимальное число для `ppSemaphore`.  
+ окне Максимальное число для `ppSemaphore` .  
   
  `ppSemaphore`  
- заполняет Указатель на адрес экземпляра `IHostSemaphore` или значение null, если не удалось создать семафор.  
+ заполняет Указатель на адрес `IHostSemaphore` экземпляра или значение null, если не удалось создать семафор.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`CreateSemaphore` успешно возвращено.|  
+|S_OK|`CreateSemaphore`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенного объекта события.|  
   
-## <a name="remarks"></a>Заметки  
- `CreateSemaphore` дублирует функцию Win32 с тем же именем. Параметры `dwInitial` и `dwMax` используют ту же семантику для числа семафоров, что и параметры `lInitialCount` и `lMaximumCount` Win32 соответственно. значение `dwInitial` должно находиться в диапазоне от 0 до `dwMax`включительно. значение `dwMax` должно быть больше нуля.  
+## <a name="remarks"></a>Замечания  
+ `CreateSemaphore`отражает функцию Win32 с тем же именем. `dwInitial`Параметры и `dwMax` используют ту же семантику для счетчика семафора `lInitialCount` , что и Win32 и `lMaximumCount` параметры соответственно. `dwInitial`значение должно находиться в диапазоне от 0 до `dwMax` включительно. `dwMax`должно быть больше нуля.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [Интерфейс IHostSemaphore](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)
-- [Интерфейс IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
+- [Интерфейс IHostSemaphore](ihostsemaphore-interface.md)
+- [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)

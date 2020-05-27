@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4723e553-10c6-4828-aff8-bc62385163b8
 topic_type:
 - apiref
-ms.openlocfilehash: 80378504f3ff8bfc8b0a8635b7ac6c5d1886df6d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 73cce31372e8c419834a2fdbda5bc0ab4e8113f0
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125295"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842118"
 ---
 # <a name="itypenamebuilderaddassemblyspec-method"></a>Метод ITypeNameBuilder::AddAssemblySpec
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
@@ -34,14 +34,14 @@ HRESULT AddAssemblySpec (
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Интерфейсы размещения](hosting-interfaces.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 958970d6-f6a2-4b84-b32a-f555cbaf8f61
 topic_type:
 - apiref
-ms.openlocfilehash: 7198698edce48546c4f9a82ace18d5a6e71891ee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e43eb7ebfc367e7d4a7a209a5037fcc4566cd7ec
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176257"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83803929"
 ---
 # <a name="ihostsecuritymanagergetsecuritycontext-method"></a>Метод IHostSecurityManager::GetSecurityContext
-Получает запрошенный [IHostSecurityКонтекст](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md) от хоста.  
+Возвращает запрошенный [IHostSecurityContext](ihostsecuritycontext-interface.md) из узла.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,36 +36,36 @@ HRESULT GetSecurityContext (
   
 ## <a name="parameters"></a>Параметры  
  `eContextType`  
- (в) Одно из значений [EContextType,](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md) указывающее, какой тип контекста безопасности вернуть.  
+ окне Одно из значений [еконтексттипе](econtexttype-enumeration.md) , указывающее тип возвращаемого контекста безопасности.  
   
  `ppSecurityContext`  
- (ваут) Адрес указателя интерфейса `IHostSecurityContext` `eContextType`к .  
+ заполняет Адрес указателя интерфейса на `IHostSecurityContext` `eContextType` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`GetSecurityContext`вернулся успешно.|  
-|HOST_E_CLRNOTAVAILABLE|Время выполнения общего языка (CLR) не было загружено в процесс, или CLR находится в состоянии, в котором он не может запустить управляемый код или успешно обработать вызов.|  
-|HOST_E_TIMEOUT|Вызов приурочен.|  
-|HOST_E_NOT_OWNER|Звонящее не владеет замком.|  
-|HOST_E_ABANDONED|Событие было отменено в то время как заблокированный поток или волокно ждало на нем.|  
-|E_FAIL|Произошел неизвестный катастрофический сбой. Когда метод возвращается E_FAIL, CLR больше не используется в процессе. Последующие вызовы к методам хостинга возвращают HOST_E_CLRNOTAVAILABLE.|  
+|S_OK|`GetSecurityContext`успешно возвращено.|  
+|HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
+|HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
+|HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
+|HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Remarks  
- Хост может управлять всем доступом к коду к токетонотам потока как по CLR, так и по пользовательскому коду. Он также может гарантировать, что полная информация о контексте безопасности передается через асинхронные операции или кодовые точки с ограниченным доступом к коду. `IHostSecurityContext`инкапсулирует эту информацию контекста безопасности, которая непрозрачна для CLR. CLR фиксирует эту информацию и перемещает ее по диспетчеризации элемента рабочего элемента пула потоков, выполнению окончательного элемента, а также конструкции модуля и класса.  
+## <a name="remarks"></a>Замечания  
+ Узел может управлять доступом кода к маркерам потоков как средой CLR, так и кодом пользователя. Он также может гарантировать, что полные сведения о контексте безопасности передаются по асинхронным операциям или кодовым точкам с ограниченным доступом к коду. `IHostSecurityContext`инкапсулирует эти сведения о контексте безопасности, которые непрозрачны для среды CLR. Среда CLR захватывает эти сведения и перемещает их между отправкой рабочего элемента пула потоков, выполнением метода завершения, а также созданием модулей и классов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включено в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Перечисление EContextType](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md)
-- [Интерфейс IHostSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
-- [Интерфейс IHostSecurityManager](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
+- [Перечисление EContextType](econtexttype-enumeration.md)
+- [Интерфейс IHostSecurityContext](ihostsecuritycontext-interface.md)
+- [Интерфейс IHostSecurityManager](ihostsecuritymanager-interface.md)

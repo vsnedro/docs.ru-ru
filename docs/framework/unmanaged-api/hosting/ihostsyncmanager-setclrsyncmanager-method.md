@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2b8bbe76-a45d-4989-bacb-11df42f8798c
 topic_type:
 - apiref
-ms.openlocfilehash: 9c08a790d4dad748e5d09271bd870add22255b4a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: bbeae2561d2d340c1a7dfed38e740dcc6838e4da
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132614"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83803099"
 ---
 # <a name="ihostsyncmanagersetclrsyncmanager-method"></a>Метод IHostSyncManager::SetCLRSyncManager
-Задает экземпляр [ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md) , связываемый с текущим экземпляром [метод ihostsyncmanager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md) .  
+Задает экземпляр [ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md) , связываемый с текущим экземпляром [метод ihostsyncmanager](ihostsyncmanager-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,32 +35,32 @@ HRESULT SetCLRSyncManager (
   
 ## <a name="parameters"></a>Параметры  
  `pManager`  
- окне Указатель на экземпляр `ICLRSyncManager`, предоставляемый средой CLR.  
+ окне Указатель на `ICLRSyncManager` экземпляр, предоставленный средой CLR.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`SetCLRSyncManager` успешно возвращено.|  
+|S_OK|`SetCLRSyncManager`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Заметки  
- Для упрощения обмена данными между узлом и средой CLR интерфейсы размещения обычно бывают парными. Один член пары реализуется узлом, а другой — средой CLR. В качестве реализации на стороне узла интерфейс `IHostSyncManager` соответствует интерфейсу `ICLRSyncManager`, реализуемому средой CLR. Среда CLR вызывает `SetCLRSyncManager`, чтобы предоставить экземпляр `ICLRSyncManager`, связываемый с текущим экземпляром `IHostSyncManager`.  
+## <a name="remarks"></a>Замечания  
+ Для упрощения обмена данными между узлом и средой CLR интерфейсы размещения обычно бывают парными. Один член пары реализуется узлом, а другой — средой CLR. В качестве реализации на стороне узла `IHostSyncManager` интерфейс соответствует `ICLRSyncManager` интерфейсу, РЕАЛИЗОВАНному средой CLR. Среда CLR вызывает метод, `SetCLRSyncManager` чтобы предоставить `ICLRSyncManager` узлу экземпляр, связываемый с текущим `IHostSyncManager` экземпляром.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [Интерфейс IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
+- [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)

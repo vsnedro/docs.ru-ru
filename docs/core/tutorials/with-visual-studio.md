@@ -5,12 +5,12 @@ author: BillWagner
 ms.author: wiwagn
 ms.date: 12/09/2019
 ms.custom: vs-dotnet
-ms.openlocfilehash: ba996e4add1cfe44681154b00a6530b1f3e70b37
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 738fc49a820c3c5d94fb35c1bf7a8b718ed75cb3
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713998"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83394824"
 ---
 # <a name="tutorial-create-your-first-net-core-console-application-in-visual-studio-2019"></a>Учебник. Создание первого консольного приложения .NET Core в Visual Studio 2019
 
@@ -100,7 +100,7 @@ ms.locfileid: "75713998"
 
 1. Замените содержимое метода `Main` (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:
 
-   [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
+   [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/HelloWorld.cs#1)]
 
    Теперь код выдает строку "What is your name?" (Как вас зовут?) в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Наконец, с помощью [интерполированной строки](../../csharp/language-reference/tokens/interpolated.md) эти значения выводятся в окно консоли.
 
@@ -118,7 +118,7 @@ ms.locfileid: "75713998"
 
 1. Замените содержимое метода `Main` (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:
 
-   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
+   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/Program.vb#1)]
 
    Теперь код выдает строку "What is your name?" (Как вас зовут?) в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Наконец, с помощью [интерполированной строки](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) эти значения выводятся в окно консоли.
 

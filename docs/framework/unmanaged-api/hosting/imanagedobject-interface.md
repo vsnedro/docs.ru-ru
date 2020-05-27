@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 1fbbf572-6d28-41a5-82fb-579ac90bfcf5
 topic_type:
 - apiref
-ms.openlocfilehash: c5dc1ad5bd98899f82e0b52345710c5ea3da864b
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8439be4d466c13feaaf4ac6cf946b5960e2862a3
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73103037"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842326"
 ---
 # <a name="imanagedobject-interface"></a>Интерфейс IManagedObject
 Предоставляет методы для управления управляемым объектом.  
@@ -28,18 +28,18 @@ ms.locfileid: "73103037"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetObjectIdentity](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-getobjectidentity-method.md)|Возвращает удостоверение этого управляемого объекта.|  
-|[Метод GetSerializedBuffer](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-getserializedbuffer-method.md)|Возвращает строковое представление этого управляемого объекта.|  
+|[Метод GetObjectIdentity](imanagedobject-getobjectidentity-method.md)|Возвращает удостоверение этого управляемого объекта.|  
+|[Метод GetSerializedBuffer](imanagedobject-getserializedbuffer-method.md)|Возвращает строковое представление этого управляемого объекта.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Интерфейсы размещения](hosting-interfaces.md)
