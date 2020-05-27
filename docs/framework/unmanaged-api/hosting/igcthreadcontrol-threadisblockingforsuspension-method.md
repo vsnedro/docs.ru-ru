@@ -15,34 +15,34 @@ helpviewer_keywords:
 ms.assetid: ed5b5b58-7db7-46b5-9e2c-278db7159cee
 topic_type:
 - apiref
-ms.openlocfilehash: e6534c3085b70b590c2dcc3f50cf0253bd5e6682
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b5f6d7d40274972438a01313bc6aaec475b8e0c6
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134750"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83805091"
 ---
-# <a name="igcthreadcontrolthreadisblockingforsuspension-method"></a><span data-ttu-id="631a6-102">Метод IGCThreadControl::ThreadIsBlockingForSuspension</span><span class="sxs-lookup"><span data-stu-id="631a6-102">IGCThreadControl::ThreadIsBlockingForSuspension Method</span></span>
-<span data-ttu-id="631a6-103">Уведомляет узел о том, что поток, выполняющий вызов, будет заблокирован, возможно, для сборки мусора или другой приостановки.</span><span class="sxs-lookup"><span data-stu-id="631a6-103">Notifies the host that the thread that is making the call is about to block, perhaps for a garbage collection or other suspension.</span></span>  
+# <a name="igcthreadcontrolthreadisblockingforsuspension-method"></a><span data-ttu-id="49fb9-102">Метод IGCThreadControl::ThreadIsBlockingForSuspension</span><span class="sxs-lookup"><span data-stu-id="49fb9-102">IGCThreadControl::ThreadIsBlockingForSuspension Method</span></span>
+<span data-ttu-id="49fb9-103">Уведомляет узел о том, что поток, выполняющий вызов, будет заблокирован, возможно, для сборки мусора или другой приостановки.</span><span class="sxs-lookup"><span data-stu-id="49fb9-103">Notifies the host that the thread that is making the call is about to block, perhaps for a garbage collection or other suspension.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="631a6-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="631a6-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="49fb9-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="49fb9-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT ThreadIsBlockingForSuspension ( );  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="631a6-105">Заметки</span><span class="sxs-lookup"><span data-stu-id="631a6-105">Remarks</span></span>  
- <span data-ttu-id="631a6-106">Узел может выбрать в `ThreadIsBlockingForSuspension` обратного вызова, следует ли перепланировать поток.</span><span class="sxs-lookup"><span data-stu-id="631a6-106">The host may choose within the `ThreadIsBlockingForSuspension` callback whether to reschedule a thread.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="49fb9-105">Remarks</span><span class="sxs-lookup"><span data-stu-id="49fb9-105">Remarks</span></span>  
+ <span data-ttu-id="49fb9-106">Основное приложение может выбрать в `ThreadIsBlockingForSuspension` обратном вызове, следует ли перепланировать поток.</span><span class="sxs-lookup"><span data-stu-id="49fb9-106">The host may choose within the `ThreadIsBlockingForSuspension` callback whether to reschedule a thread.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="631a6-107">Требования</span><span class="sxs-lookup"><span data-stu-id="631a6-107">Requirements</span></span>  
- <span data-ttu-id="631a6-108">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="631a6-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="49fb9-107">Требования</span><span class="sxs-lookup"><span data-stu-id="49fb9-107">Requirements</span></span>  
+ <span data-ttu-id="49fb9-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="49fb9-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="631a6-109">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="631a6-109">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="49fb9-109">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="49fb9-109">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="631a6-110">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="631a6-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="49fb9-110">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="49fb9-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="631a6-111">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="631a6-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="49fb9-111">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="49fb9-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="631a6-112">См. также</span><span class="sxs-lookup"><span data-stu-id="631a6-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49fb9-112">См. также статью</span><span class="sxs-lookup"><span data-stu-id="49fb9-112">See also</span></span>
 
-- [<span data-ttu-id="631a6-113">Интерфейс IGCThreadControl</span><span class="sxs-lookup"><span data-stu-id="631a6-113">IGCThreadControl Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)
+- [<span data-ttu-id="49fb9-113">Интерфейс IGCThreadControl</span><span class="sxs-lookup"><span data-stu-id="49fb9-113">IGCThreadControl Interface</span></span>](igcthreadcontrol-interface.md)
