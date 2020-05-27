@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c7e7c2d0-e58c-4650-b40c-47b2be2cda45
 topic_type:
 - apiref
-ms.openlocfilehash: c060e4883335a8318970b5fbd74bf72c9e13f5bf
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 93ed63b4abacce1d8943434965aacf67190631b6
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134864"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83805191"
 ---
 # <a name="igchostsetvirtualmemlimit-method"></a>Метод IGCHost::SetVirtualMemLimit
 Задает максимальный размер виртуальной памяти среды выполнения.  
@@ -37,18 +37,18 @@ HRESULT SetVirtualMemLimit (
  `sztMaxVirtualMemMB`  
  окне Максимальный размер виртуальной памяти среды выполнения в мегабайтах.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Замечания  
  Максимальный размер виртуальной памяти среды выполнения можно изменить динамически.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Гчост. idl, Гчост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IGCHost](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+- [Интерфейс IGCHost](igchost-interface.md)

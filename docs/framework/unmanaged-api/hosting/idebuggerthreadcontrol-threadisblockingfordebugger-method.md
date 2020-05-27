@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d4d7cb2d-69da-48b3-879a-1a8a68c9bfa8
 topic_type:
 - apiref
-ms.openlocfilehash: 067d4e844055206543e5c7fb409296b0d0a7a549
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f7cdc3fe9d52db56d0280bc602d3a9f2f54e8246
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134941"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83805256"
 ---
 # <a name="idebuggerthreadcontrolthreadisblockingfordebugger-method"></a>Метод IDebuggerThreadControl::ThreadIsBlockingForDebugger
 Уведомляет узел о том, что поток, отправляющий этот обратный вызов, будет заблокирован в службах отладки.  
@@ -31,20 +31,20 @@ ms.locfileid: "73134941"
 HRESULT ThreadIsBlockingForDebugger ( );  
 ```  
   
-## <a name="remarks"></a>Заметки  
- Метод `ThreadIsBlockingForDebugger` всегда будет вызываться в потоке среды выполнения.  
+## <a name="remarks"></a>Remarks  
+ `ThreadIsBlockingForDebugger`Метод всегда будет вызываться в потоке среды выполнения.  
   
- Метод `ThreadIsBlockingForDebugger` дает узлу возможность выполнить еще одно действие, пока блокируется поток.  
+ `ThreadIsBlockingForDebugger`Метод дает узлу возможность выполнить еще одно действие, пока блокируется поток.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Версии .NET Framework:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IDebuggerThreadControl](../../../../docs/framework/unmanaged-api/hosting/idebuggerthreadcontrol-interface.md)
+- [Интерфейс IDebuggerThreadControl](idebuggerthreadcontrol-interface.md)

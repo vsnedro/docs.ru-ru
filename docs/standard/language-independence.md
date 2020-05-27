@@ -7,12 +7,12 @@ dev_langs:
 - vb
 ms.technology: dotnet-standard
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
-ms.openlocfilehash: 03751fa3758c239cb9eea5fe826dff66c1c1605b
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: f04ff902743c91147a6f056bca3292ee47952bbd
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249582"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420556"
 ---
 # <a name="language-independence-and-language-independent-components"></a>Независимость от языка и независимые от языка компоненты
 
@@ -341,7 +341,7 @@ CLS-совместимый тип | Описание
 
 В библиотеке классов .NET Framework и других библиотеках классов могут встречаться другие типы, не являющиеся CLS-совместимыми. Например:
 
-* Упакованные типы значений. Следующий пример кода на C# создает класс с открытым свойством типа `int`* с именем `Value`. Так как `int`* — это упакованный тип значений, компилятор помечает, что он не соответствует правилам CLS-совместимости.
+* Упакованные типы значений. Следующий пример кода на C# создает класс с открытым свойством `int*` типа `Value`. Поскольку `int*` — это упакованный тип значений, компилятор помечает, что он не соответствует правилам CLS-совместимости.
 
 ```csharp
 using System;

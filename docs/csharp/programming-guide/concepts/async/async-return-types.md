@@ -2,12 +2,12 @@
 title: Асинхронные типы возвращаемых значений (C#)
 ms.date: 04/14/2020
 ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
-ms.openlocfilehash: 73a6e1924652c8635377547e2faddc864ac5540a
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: c2584f1e285a7ab76eb43f9a211a8d2a51c2c55e
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389137"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83761880"
 ---
 # <a name="async-return-types-c"></a>Асинхронные типы возвращаемых значений (C#)
 
@@ -26,7 +26,7 @@ ms.locfileid: "81389137"
   
 В следующем примере асинхронный метод `GetLeisureHours` содержит инструкцию `return`, которая возвращает целое число. Поэтому в объявлении метода должен указываться тип возвращаемого значения `Task<int>`.  Асинхронный метод <xref:System.Threading.Tasks.Task.FromResult%2A> представляет собой заполнитель для операции, которая возвращает строку.
   
-:::code language="csharp" source="./snippets/async-returns1.cs" id="SnippetFirstExample":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns1.cs" id="SnippetFirstExample":::
 
 При вызове `GetLeisureHours` из выражения await в методе `ShowTodaysInfo` это выражение await извлекает целочисленное значение (значение `leisureHours`), хранящееся в задаче, которая возвращается методом `GetLeisureHours`. Дополнительные сведения о выражениях await см. в разделе [await](../../../language-reference/operators/await.md).  
   
@@ -35,14 +35,14 @@ ms.locfileid: "81389137"
 > [!IMPORTANT]
 > Свойство <xref:System.Threading.Tasks.Task%601.Result%2A> является блокирующим свойством. При попытке доступа к нему до завершения его задачи поток, который в текущий момент активен, блокируется до того момента, пока задача не будет завершена, а ее значение не станет доступным. В большинстве случаев следует получать доступ к этому значению с помощью `await` вместо прямого обращения к свойству. <br/> В предыдущем примере извлекалось значение свойства <xref:System.Threading.Tasks.Task%601.Result%2A> для блокировки основного потока. Это позволяет закончить выполнение метода `ShowTodaysInfo` до того, как завершится работа приложения.  
 
-:::code language="csharp" source="./snippets/async-returns1a.cs" id="SnippetSecondVersion":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns1a.cs" id="SnippetSecondVersion":::
 
 ## <a name="task-return-type"></a>Тип возвращаемого значения Task  
 Асинхронные методы, не содержащие инструкцию `return` или содержащие инструкцию `return`, которая не возвращает операнд, обычно имеют тип возвращаемого значения <xref:System.Threading.Tasks.Task>. При синхронном выполнении такие методы возвращают `void`. Если для асинхронного метода вы используете тип возвращаемого значения <xref:System.Threading.Tasks.Task>, вызывающий метод может использовать оператор `await` для приостановки выполнения вызывающего объекта до завершения вызванного асинхронного метода.  
   
 В следующем примере асинхронный метод `WaitAndApologize` не содержит инструкцию `return`, в связи с чем он возвращает объект <xref:System.Threading.Tasks.Task>. Возврат `Task` позволяет реализовать ожидание `WaitAndApologize`. Тип <xref:System.Threading.Tasks.Task> не имеет возвращаемого значения и, соответственно, не содержит свойство `Result`.  
 
-:::code language="csharp" source="./snippets/async-returns2.cs" id="SnippetTaskReturn":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns2.cs" id="SnippetTaskReturn":::
 
 `WaitAndApologize` вызывается и ожидается с помощью инструкции await (вместо выражения await), похожей на инструкцию вызова для синхронного метода, возвращающего значение void. Применение оператора await в этом случае не возвращает значение.  
   
@@ -50,7 +50,7 @@ ms.locfileid: "81389137"
   
 В следующем коде вызов метода `WaitAndApologize` отделяется от ожидания задачи, которую возвращает этот метод.  
 
-:::code language="csharp" source="./snippets/async-returns2a.cs" id="SnippetAwaitTask":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns2a.cs" id="SnippetAwaitTask":::
 
 ## <a name="void-return-type"></a>Тип возвращаемого значения Void
 
@@ -62,7 +62,7 @@ ms.locfileid: "81389137"
   
 В следующем примере показано поведение асинхронного обработчика событий. В примере кода асинхронный обработчик событий должен сообщить основному потоку о завершении своей работы. Основной поток может ожидать завершения работы асинхронного обработчика событий перед выходом из программы.
 
-:::code language="csharp" source="./snippets/async-returns3.cs":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns3.cs":::
 
 ## <a name="generalized-async-return-types-and-valuetasktresult"></a>Обобщенные асинхронные типы возвращаемых значений и ValueTask\<TResult\>
 
@@ -72,13 +72,13 @@ ms.locfileid: "81389137"
 
 На платформе .NET представлена структура <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType>, которая является упрощенной реализацией обобщенного значения, возвращающего задачу. Чтобы использовать тип <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType>, необходимо добавить в проект пакет NuGet `System.Threading.Tasks.Extensions`. В следующем примере структура <xref:System.Threading.Tasks.ValueTask%601> используется для извлечения значений двух игральных костей.
   
-:::code language="csharp" source="./snippets/async-valuetask.cs":::
+:::code language="csharp" source="./snippets/async-return-types/async-valuetask.cs":::
 
 ## <a name="async-streams-with-iasyncenumerablet"></a>Асинхронные потоки с IAsyncEnumerable\<T\>
 
 Начиная с C# 8.0, асинхронный метод может возвращать *асинхронный поток*, представленный интерфейсом <xref:System.Collections.Generic.IAsyncEnumerable%601>. Асинхронный поток позволяет перечислять элементы, считываемые из потока, при создании блоков элементов с помощью повторяющихся асинхронных вызовов. В следующем примере показан асинхронный метод, создающий асинхронный поток.
 
-:::code language="csharp" source="./snippets/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
+:::code language="csharp" source="./snippets/async-return-types/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
 
 В предыдущем примере показано асинхронное считывание строк. После считывания каждой строки код перечисляет каждое слово в строке. Вызывающие объекты будут перечислять каждое слово с помощью оператора `await foreach`. Метод ожидает, когда необходимо асинхронно считать следующую строку из исходной строки.
 

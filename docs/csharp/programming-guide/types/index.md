@@ -11,12 +11,12 @@ helpviewer_keywords:
 - C# language, types
 - strong typing [C#]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.openlocfilehash: 1e0141ceafe4c3450b3f798463ddc62ea79f1b36
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: ca499f9762f52126720159fb7c22660b1001895c
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615219"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83802932"
 ---
 # <a name="types-c-programming-guide"></a>Типы (Руководство по программированию на C#)
 
@@ -92,10 +92,10 @@ C# предоставляет стандартный набор встроенн
 
 Существует две категории типов значений: [структура](../../language-reference/builtin-types/struct.md) и [перечисление](../../language-reference/builtin-types/enum.md).
 
-Встроенные числовые типы являются структурами и имеют свойства и методы, к которым можно обращаться.
+Встроенные числовые типы являются структурами и имеют поля и методы, к которым можно обращаться.
 
 ```csharp
-// Static method on type byte.
+// constant field on type byte.
 byte b = byte.MaxValue;
 ```
 

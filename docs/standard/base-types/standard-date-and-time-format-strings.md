@@ -14,12 +14,12 @@ helpviewer_keywords:
 - formatting [.NET Framework], time
 - date and time strings
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-ms.openlocfilehash: 5db29046bfe67c530fe3a613c126c3841e6402e1
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: d6bde74441334a4454865c1fdb890a4e859bc072
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81242755"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83440906"
 ---
 # <a name="standard-date-and-time-format-strings"></a>Строки стандартных форматов даты и времени
 
@@ -30,7 +30,7 @@ ms.locfileid: "81242755"
 - Для определения текстового представления значения даты и времени, которое можно преобразовать в значение <xref:System.DateTime> или <xref:System.DateTimeOffset> с помощью операции синтаксического анализа.
 
 > [!TIP]
-> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
+> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 Строки стандартного формата даты и времени могут использоваться как со значением <xref:System.DateTime>, так и со значением <xref:System.DateTimeOffset>.
 
@@ -452,5 +452,5 @@ ms.locfileid: "81242755"
 - <xref:System.DateTimeOffset?displayProperty=nameWithType>
 - [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
 - [Строки настраиваемых форматов даты и времени](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
-- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
-- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)
+- [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

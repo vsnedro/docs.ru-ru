@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0af312af-98e9-415e-b182-42e80a1aee51
 topic_type:
 - apiref
-ms.openlocfilehash: 1e1d63ab28276f69e5b3a762520db8f8300d05bc
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 2acabe66e3b6b5652df20e31a9d2294c2396b54b
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134763"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83805102"
 ---
 # <a name="igcthreadcontrolsuspensionstarting-method"></a>Метод IGCThreadControl::SuspensionStarting
 Уведомляет узел о том, что среда выполнения начинает приостановку потока для сборки мусора или другой приостановки.  
@@ -31,18 +31,18 @@ ms.locfileid: "73134763"
 HRESULT SuspensionStarting ( );  
 ```  
   
-## <a name="remarks"></a>Заметки  
- Не Перепланируйте потоки во время обратного вызова `SuspensionStarting`.  
+## <a name="remarks"></a>Remarks  
+ Не Перепланируйте потоки во время `SuspensionStarting` обратного вызова.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IGCThreadControl](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)
+- [Интерфейс IGCThreadControl](igcthreadcontrol-interface.md)

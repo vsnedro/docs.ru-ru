@@ -2,12 +2,12 @@
 title: Реализация уровня сохраняемости инфраструктуры с помощью Entity Framework Core
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Сведения о реализации уровня сохраняемости инфраструктуры с помощью Entity Framework Core.
 ms.date: 01/30/2020
-ms.openlocfilehash: 7ab3be0d6a5affda478f7ec8f6c356571e304759
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.openlocfilehash: c91980504b0f9de859c6d211f3a1f47435b2d3cc
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805490"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396255"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>Реализация уровня сохраняемости инфраструктуры с помощью Entity Framework Core
 
@@ -117,7 +117,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 На уровне реализации репозиторий является просто классом с кодом сохраняемости данных, координируемым единицей работы (DBContext в EF Core) при выполнении обновлений, как показано в следующем классе:
 
 ```csharp
-// using statements...
+// using directives...
 namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositories
 {
     public class BuyerRepository : IBuyerRepository

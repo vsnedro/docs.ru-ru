@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
 topic_type:
 - apiref
-ms.openlocfilehash: 632b8d43ed459d489825dc796d39864e2ed15ec3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 86bc320c28a5fbf122d234a4a1f15b674628c0b5
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73139413"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83803398"
 ---
 # <a name="ihostsyncmanagercreatecrstwithspincount-method"></a>Метод IHostSyncManager::CreateCrstWithSpinCount
 Создает объект критической секции с количеством счетчиков для синхронизации.  
@@ -39,34 +39,34 @@ HRESULT CreateCrstWithSpinCount (
  окне Указывает счетчик счетчиков для объекта критической секции.  
   
  `ppCrst`  
- заполняет Указатель на адрес экземпляра [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) или значение null, если не удалось создать критическую секцию.  
+ заполняет Указатель на адрес экземпляра [IHostCrst](ihostcrst-interface.md) или значение null, если не удалось создать критическую секцию.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`CreateCrstWithSpinCount` успешно возвращено.|  
+|S_OK|`CreateCrstWithSpinCount`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенной критической секции.|  
   
-## <a name="remarks"></a>Заметки  
- Счетчик прокрутки используется только в многопроцессорной системе. Число счетчиков указывает, сколько раз вызывающий поток должен прокрутить перед выполнением операции ожидания семафора, связанного с недоступным критическим разделом. Если критическая секция будет свободна во время операции Spin, вызывающий поток не будет выполнять операцию ожидания. `CreateCrstWithSpinCount` дублирует функцию Win32 `InitializeCriticalSectionAndSpinCount`.  
+## <a name="remarks"></a>Замечания  
+ Счетчик прокрутки используется только в многопроцессорной системе. Число счетчиков указывает, сколько раз вызывающий поток должен прокрутить перед выполнением операции ожидания семафора, связанного с недоступным критическим разделом. Если критическая секция будет свободна во время операции Spin, вызывающий поток не будет выполнять операцию ожидания. `CreateCrstWithSpinCount`отражает функцию Win32 `InitializeCriticalSectionAndSpinCount` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [Интерфейс IHostSemaphore](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)
-- [Интерфейс IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
+- [Интерфейс IHostSemaphore](ihostsemaphore-interface.md)
+- [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)

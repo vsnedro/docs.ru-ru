@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ac298ebd-0815-47e4-a823-30b31baab903
 topic_type:
 - apiref
-ms.openlocfilehash: 108492ba298e9f8429b2acd890ab3404365bc602
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e8cb1486ccea11ba6edcf7bbb781a9bf210b496d
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73130527"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83804906"
 ---
 # <a name="ihostcrst-interface"></a>Интерфейс IHostCrst
 Служит в качестве представления критической секции для потоков в основном приложении.  
@@ -28,25 +28,25 @@ ms.locfileid: "73130527"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Enter](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-enter-method.md)|Входит в критическую секцию.|  
-|[Метод Leave](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-leave-method.md)|Оставляет критическую секцию.|  
-|[Метод SetSpinCount](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-setspincount-method.md)|Задает счетчик счетчиков для критической секции.|  
-|[Метод TryEnter](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-tryenter-method.md)|Пытается войти в критическую секцию и немедленно сообщает об успешном или неуспешном завершении.|  
+|[Метод Enter](ihostcrst-enter-method.md)|Входит в критическую секцию.|  
+|[Метод Leave](ihostcrst-leave-method.md)|Оставляет критическую секцию.|  
+|[Метод SetSpinCount](ihostcrst-setspincount-method.md)|Задает счетчик счетчиков для критической секции.|  
+|[Метод TryEnter](ihostcrst-tryenter-method.md)|Пытается войти в критическую секцию и немедленно сообщает об успешном или неуспешном завершении.|  
   
-## <a name="remarks"></a>Заметки  
- `IHostCrst` позволяет среде CLR взаимодействовать непосредственно с представлением критического раздела в основном приложении вместо использования функций Win32, таких как `EnterCriticalSection` или `LeaveCriticalSection`.  
+## <a name="remarks"></a>Замечания  
+ `IHostCrst`позволяет среде CLR взаимодействовать непосредственно с представлением критического раздела узла, а не использовать функции Win32, такие как `EnterCriticalSection` или `LeaveCriticalSection` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [Интерфейс IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
+- [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)
+- [Интерфейсы размещения](hosting-interfaces.md)

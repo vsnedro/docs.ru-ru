@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 524c7fd3-9b5c-46e7-99ba-555fd2fe33f0
 topic_type:
 - apiref
-ms.openlocfilehash: f7426585045c7ae81377ec9bfca9d397d6f734cb
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c0f7e1fd6bf4c9386300b11477df85e87899fc67
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73192019"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83803322"
 ---
 # <a name="ihostsyncmanagercreatemonitorevent-method"></a>Метод IHostSyncManager::CreateMonitorEvent
 Создает Отслеживаемый объект события автоматического сброса.  
@@ -39,37 +39,37 @@ HRESULT CreateMonitorEvent (
  окне Файл cookie, связываемый с объектом события.  
   
  `ppEvent`  
- заполняет Указатель на адрес экземпляра [ихостаутоевент](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md) или значение null, если не удалось создать объект события.  
+ заполняет Указатель на адрес экземпляра [ихостаутоевент](ihostautoevent-interface.md) или значение null, если не удалось создать объект события.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|`CreateMonitorEvent` успешно возвращено.|  
+|S_OK|`CreateMonitorEvent`успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
-|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает значение E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
+|E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенного объекта события.|  
   
-## <a name="remarks"></a>Заметки  
- `CreateMonitorEvent` возвращает `IHostAutoEvent`, который среда CLR использует в реализации управляемого типа <xref:System.Threading.Monitor?displayProperty=nameWithType>. Этот метод отражает функцию `CreateEvent` Win32 со значением `false`, указанным для параметра `bManualReset`.  
+## <a name="remarks"></a>Замечания  
+ `CreateMonitorEvent`Возвращает объект `IHostAutoEvent` , используемый средой CLR в реализации управляемого <xref:System.Threading.Monitor?displayProperty=nameWithType> типа. Этот метод отражает функцию Win32 `CreateEvent` со значением, `false` указанным для `bManualReset` параметра.  
   
- Узел может использовать файл cookie, чтобы определить, какая задача ожидает монитор, вызвав метод [ICLRSyncManager:: GetMonitorOwner](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-getmonitorowner-method.md) .  
+ Узел может использовать файл cookie, чтобы определить, какая задача ожидает монитор, вызвав метод [ICLRSyncManager:: GetMonitorOwner](iclrsyncmanager-getmonitorowner-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [Интерфейс IHostAutoEvent](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
-- [Интерфейс IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
+- [Интерфейс IHostAutoEvent](ihostautoevent-interface.md)
+- [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)
 - <xref:System.Threading.Monitor>
