@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 47132dda-fa92-4bd1-ae4b-24cd9a60665a
 topic_type:
 - apiref
-ms.openlocfilehash: b921118f7c43edef3c07cbb34cbbd9119d36ce51
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 220556ec130c7bff7c413405820c4fee0582b051
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177553"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008018"
 ---
 # <a name="imetadataemitsetfieldprops-method"></a>Метод IMetaDataEmit::SetFieldProps
-Устанавливает или обновляет значение по умолчанию для поля, на который ссылается указанный маркер поля.  
+Задает или обновляет значение по умолчанию для поля, на которое ссылается заданный токен поля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,30 +39,30 @@ HRESULT SetFieldProps (
   
 ## <a name="parameters"></a>Параметры  
  `fd`  
- (в) Токен для целевого поля.  
+ окне Токен для целевого поля.  
   
  `dwFieldFlags`  
- (в) Полевые атрибуты. Это битмаска ценностей. `CorFieldAttr`  
+ окне Атрибуты поля. Это битовая маска `CorFieldAttr` значений.  
   
  `dwCPlusTypeFlag`  
- (в) Для `ELEMENT_TYPE_` *\** постоянного значения. Это `CorElementType` значение. Если константа не определена, `ELEMENT_TYPE_END`установите это значение.  
+ окне `ELEMENT_TYPE_` *\** Значение для постоянного значения. Это `CorElementType` значение. Если константа не определена, присвойте этому параметру значение `ELEMENT_TYPE_END` .  
   
  `pValue`  
- (в) Постоянное значение для поля.  
+ окне Постоянное значение для поля.  
   
  `cchValue`  
- (в) Размер, в unicode символов, из `pValue`.  
+ окне Размер (в символах Юникода) `pValue` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

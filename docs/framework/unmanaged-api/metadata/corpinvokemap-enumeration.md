@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type:
 - apiref
-ms.openlocfilehash: 8216dc3030b18428ab52fbf8385d392f81057aa0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 199a649b0481c2a740926636345eefbda6831ef2
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176153"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007550"
 ---
 # <a name="corpinvokemap-enumeration"></a>Перечисление CorPinvokeMap
-Определяет варианты вызова PInvoke.  
+Задает параметры для вызова PInvoke.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -61,40 +61,40 @@ typedef enum  CorPinvokeMap {
 } CorPinvokeMap;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`pmNoMangle`|Используйте каждое имя участника в качестве указанного.|  
+|`pmNoMangle`|Используйте каждое имя элемента, как указано.|  
 |`pmCharSetMask`|Зарезервировано.|  
 |`pmCharSetNotSpec`|Зарезервировано.|  
 |`pmCharSetAnsi`|Маршалирует строки в виде строк многобайтовых символов.|  
 |`pmCharSetUnicode`|Маршалирует строки в виде 2-байтных символов Юникода.|  
-|`pmCharSetAuto`|Выполняет автоматический маршалинг строк способом, соответствующим целевой операционной системе. По умолчанию по умолчанию находится Unicode на Windows NT, Windows 2000, Windows XP и семейство Windows Server 2003; по умолчанию ANSI на Windows 98 и Windows Me.|  
+|`pmCharSetAuto`|Выполняет автоматический маршалинг строк способом, соответствующим целевой операционной системе. По умолчанию используется Юникод в Windows NT, Windows 2000, Windows XP и семействе Windows Server 2003. значение по умолчанию — ANSI в Windows 98 и Windows Me.|  
 |`pmBestFitUseAssem`|Зарезервировано.|  
-|`pmBestFitEnabled`|Выполняйте наиболее подходящее отображение символов Unicode, которым не хватает точного соответствия в наборе символов ANSI.|  
-|`pmBestFitDisabled`|Не выполняйте наиболее оптимальное отображение символов Unicode. В этом случае все неприязненное символы будут заменены на '?'.|  
+|`pmBestFitEnabled`|Выполните наилучшее сопоставление символов Юникода, не имея точного соответствия в кодировке ANSI.|  
+|`pmBestFitDisabled`|Не выполняйте наилучшее соответствие символов Юникода. В этом случае все несопоставимые символы будут заменены символом "?".|  
 |`pmBestFitMask`|Зарезервировано.|  
 |`pmThrowOnUnmappableCharUseAssem`|Зарезервировано.|  
-|`pmThrowOnUnmappableCharEnabled`|Бросьте исключение, когда interop marshaler сталкивается с непомерным характером.|  
-|`pmThrowOnUnmappableCharDisabled`|Не бросайте исключение, когда интероп маршалер сталкивается с непомерным персонажем.|  
-|`pmThrowOnUnmappableCharMask`|Reserved|  
-|`pmSupportsLastError`|Разрешить вызывающего вызова функции `SetLastError` Win32, прежде чем вернуться из приписываемого метода.|  
-|`pmCallConvMask`|Reserved|  
-|`pmCallConvWinapi`|Используйте конвенцию вызова платформы по умолчанию. Например, на Windows `StdCall` по умолчанию и на `Cdecl`Windows CE .NET это .|  
-|`pmCallConvCdecl`|Используйте `Cdecl` конвенцию о вызове. В этом случае абонент очищает стек. Это позволяет вызывать функции с (т.е. `varargs` функциями, которые принимают переменное количество параметров).|  
-|`pmCallConvStdcall`|Используйте `StdCall` конвенцию о вызове. В этом случае звонивший очищает стек. Это соглашение, используемое по умолчанию для вызова неуправляемых функций с вызовом неуправляемого кода.|  
-|`pmCallConvThiscall`|Используйте `ThisCall` конвенцию о вызове. В этом случае первым параметром является `this` указатель и хранится в регистре ECX. Другие параметры помещаются в стек. Конвенция `ThisCall` вызова используется для вызова методов на классах, экспортированных из неуправляемого DLL.|  
+|`pmThrowOnUnmappableCharEnabled`|Создавать исключение, когда модуль маршалинга взаимодействия встречает несопоставимый символ.|  
+|`pmThrowOnUnmappableCharDisabled`|Не вызывайте исключение, если модуль маршалинга взаимодействия встречает несопоставимый символ.|  
+|`pmThrowOnUnmappableCharMask`|Зарезервированное|  
+|`pmSupportsLastError`|Разрешить вызываемому `SetLastError` методу вызывать функцию Win32 перед возвратом из метода с атрибутом.|  
+|`pmCallConvMask`|Зарезервированное|  
+|`pmCallConvWinapi`|Используйте соглашение о вызовах платформы по умолчанию. Например, в Windows значение по умолчанию — `StdCall` и на Windows CE .NET — `Cdecl` .|  
+|`pmCallConvCdecl`|Используйте `Cdecl` соглашение о вызовах. В этом случае вызывающий объект очищает стек. Это позволяет вызывать функции с `varargs` (то есть функциями, принимающими переменное количество параметров).|  
+|`pmCallConvStdcall`|Используйте `StdCall` соглашение о вызовах. В этом случае вызываемый объект очищает стек. Это соглашение, используемое по умолчанию для вызова неуправляемых функций с вызовом неуправляемого кода.|  
+|`pmCallConvThiscall`|Используйте `ThisCall` соглашение о вызовах. В этом случае первый параметр является `this` указателем и хранится в регистре ECX. Другие параметры помещаются в стек. `ThisCall`Соглашение о вызовах используется для вызова методов для классов, экспортируемых из неуправляемой библиотеки DLL.|  
 |`pmCallConvFastcall`|Зарезервировано.|  
 |`pmMaxValue`|Зарезервировано.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** CorHdr.h  
+ **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

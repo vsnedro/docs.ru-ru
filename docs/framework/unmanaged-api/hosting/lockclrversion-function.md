@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
 topic_type:
 - apiref
-ms.openlocfilehash: 216852f8f051440b2814619b843a1f25013e4042
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 09bcebfdcfea3d5728d404cdb6b5fb170a5432c3
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133779"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008499"
 ---
 # <a name="lockclrversion-function"></a>Функция LockClrVersion
 Позволяет узлу определить, какая версия среды CLR будет использоваться в процессе перед явной инициализацией среды CLR.  
@@ -55,8 +55,8 @@ HRESULT LockClrVersion (
 |S_OK|Метод завершился успешно.|  
 |E_INVALIDARG|Один или несколько аргументов имеют значение null.|  
   
-## <a name="remarks"></a>Заметки  
- Узел вызывает `LockClrVersion` перед инициализацией среды CLR. `LockClrVersion` принимает три параметра, все из которых являются обратными вызовами типа [FLockClrVersionCallback](../../../../docs/framework/unmanaged-api/hosting/flockclrversioncallback-function-pointer.md). Этот тип определяется следующим образом.  
+## <a name="remarks"></a>Примечания  
+ Узел вызывает `LockClrVersion` перед инициализацией среды CLR. `LockClrVersion`принимает три параметра, все из которых являются обратными вызовами типа [FLockClrVersionCallback](flockclrversioncallback-function-pointer.md). Этот тип определяется следующим образом.  
   
 ```cpp  
 typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();  
@@ -64,33 +64,33 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
  При инициализации среды выполнения выполняются следующие действия.  
   
-1. Узел вызывает [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) или одну из других функций инициализации среды выполнения. Кроме того, узел может инициализировать среду выполнения с помощью активации объекта COM.  
+1. Узел вызывает [CorBindToRuntimeEx](corbindtoruntimeex-function.md) или одну из других функций инициализации среды выполнения. Кроме того, узел может инициализировать среду выполнения с помощью активации объекта COM.  
   
-2. Среда выполнения вызывает функцию, указанную параметром `hostCallback`.  
+2. Среда выполнения вызывает функцию, указанную `hostCallback` параметром.  
   
-3. Функция, указанная `hostCallback`, затем выполняет следующую последовательность вызовов:  
+3. Функция, указанная с помощью, `hostCallback` выполняет следующую последовательность вызовов:  
   
-    - Функция, заданная параметром `pBeginHostSetup`.  
+    - Функция, заданная `pBeginHostSetup` параметром.  
   
-    - `CorBindToRuntimeEx` (или другую функцию инициализации среды выполнения).  
+    - `CorBindToRuntimeEx`(или другую функцию инициализации среды выполнения).  
   
-    - [ICLRRuntimeHost:: SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md).  
+    - [ICLRRuntimeHost:: SetHostControl](iclrruntimehost-sethostcontrol-method.md).  
   
-    - [ICLRRuntimeHost:: Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md).  
+    - [ICLRRuntimeHost:: Start](iclrruntimehost-start-method.md).  
   
-    - Функция, заданная параметром `pEndHostSetup`.  
+    - Функция, заданная `pEndHostSetup` параметром.  
   
- Все вызовы от `pBeginHostSetup` к `pEndHostSetup` должны выполняться в одном потоке или Fiber с одним и тем же логическим стеком. Этот поток может отличаться от потока, в котором вызывается `hostCallback`.  
+ Все вызовы из `pBeginHostSetup` в `pEndHostSetup` должны выполняться в одном потоке или Fiber с одним и тем же логическим стеком. Этот поток может отличаться от потока, в котором `hostCallback` вызывается.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

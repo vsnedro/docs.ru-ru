@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8d3080ee-39fe-4c57-8950-51323632d045
 topic_type:
 - apiref
-ms.openlocfilehash: 8fe6216e11a64ea182d796247d888b862b1e8377
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d8d7a43848929e49a8cb48fb957f37213ac78f2e
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177930"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007355"
 ---
 # <a name="corregflags-enumeration"></a>Перечисление CorRegFlags
-Обеспечивает значения флага, используемые для регистрации при установке модуля или композитного изображения.  
+Предоставляет значения флагов, используемые для регистрации при установке модуля или составного образа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,23 +35,23 @@ typedef enum
 } CorRegFlags;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`regNoCopy`|Уточняется, что файлы не должны быть скопированы в пункт назначения.|  
-|`regConfig`|Уточняется, что модуль или композит является конфигурацией.|  
-|`regHasRefs`|Уточняется, что модуль или композит имеет ссылки класса.|  
+|`regNoCopy`|Указывает, что файлы не должны копироваться в место назначения.|  
+|`regConfig`|Указывает, что модуль или составной является конфигурацией.|  
+|`regHasRefs`|Указывает, что модуль или составная ссылка содержит ссылки на классы.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)
