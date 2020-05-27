@@ -15,34 +15,34 @@ helpviewer_keywords:
 ms.assetid: 0af312af-98e9-415e-b182-42e80a1aee51
 topic_type:
 - apiref
-ms.openlocfilehash: 1e1d63ab28276f69e5b3a762520db8f8300d05bc
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 2acabe66e3b6b5652df20e31a9d2294c2396b54b
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134763"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83805102"
 ---
-# <a name="igcthreadcontrolsuspensionstarting-method"></a><span data-ttu-id="c5ace-102">Метод IGCThreadControl::SuspensionStarting</span><span class="sxs-lookup"><span data-stu-id="c5ace-102">IGCThreadControl::SuspensionStarting Method</span></span>
-<span data-ttu-id="c5ace-103">Уведомляет узел о том, что среда выполнения начинает приостановку потока для сборки мусора или другой приостановки.</span><span class="sxs-lookup"><span data-stu-id="c5ace-103">Notifies the host that the runtime is beginning a thread suspension for a garbage collection or other suspension.</span></span>  
+# <a name="igcthreadcontrolsuspensionstarting-method"></a><span data-ttu-id="5bfa1-102">Метод IGCThreadControl::SuspensionStarting</span><span class="sxs-lookup"><span data-stu-id="5bfa1-102">IGCThreadControl::SuspensionStarting Method</span></span>
+<span data-ttu-id="5bfa1-103">Уведомляет узел о том, что среда выполнения начинает приостановку потока для сборки мусора или другой приостановки.</span><span class="sxs-lookup"><span data-stu-id="5bfa1-103">Notifies the host that the runtime is beginning a thread suspension for a garbage collection or other suspension.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c5ace-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c5ace-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="5bfa1-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5bfa1-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT SuspensionStarting ( );  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="c5ace-105">Заметки</span><span class="sxs-lookup"><span data-stu-id="c5ace-105">Remarks</span></span>  
- <span data-ttu-id="c5ace-106">Не Перепланируйте потоки во время обратного вызова `SuspensionStarting`.</span><span class="sxs-lookup"><span data-stu-id="c5ace-106">Do not reschedule any threads during the `SuspensionStarting` callback.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="5bfa1-105">Remarks</span><span class="sxs-lookup"><span data-stu-id="5bfa1-105">Remarks</span></span>  
+ <span data-ttu-id="5bfa1-106">Не Перепланируйте потоки во время `SuspensionStarting` обратного вызова.</span><span class="sxs-lookup"><span data-stu-id="5bfa1-106">Do not reschedule any threads during the `SuspensionStarting` callback.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="c5ace-107">Требования</span><span class="sxs-lookup"><span data-stu-id="c5ace-107">Requirements</span></span>  
- <span data-ttu-id="c5ace-108">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="c5ace-108">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="5bfa1-107">Требования</span><span class="sxs-lookup"><span data-stu-id="5bfa1-107">Requirements</span></span>  
+ <span data-ttu-id="5bfa1-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="5bfa1-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="c5ace-109">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="c5ace-109">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="5bfa1-109">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="5bfa1-109">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="c5ace-110">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="c5ace-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="5bfa1-110">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="5bfa1-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="c5ace-111">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c5ace-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="5bfa1-111">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5bfa1-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c5ace-112">См. также</span><span class="sxs-lookup"><span data-stu-id="c5ace-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5bfa1-112">См. также статью</span><span class="sxs-lookup"><span data-stu-id="5bfa1-112">See also</span></span>
 
-- [<span data-ttu-id="c5ace-113">Интерфейс IGCThreadControl</span><span class="sxs-lookup"><span data-stu-id="c5ace-113">IGCThreadControl Interface</span></span>](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)
+- [<span data-ttu-id="5bfa1-113">Интерфейс IGCThreadControl</span><span class="sxs-lookup"><span data-stu-id="5bfa1-113">IGCThreadControl Interface</span></span>](igcthreadcontrol-interface.md)

@@ -740,18 +740,6 @@
                                   href: programming-guide/concepts/linq/intermediate-materialization.md
                                 - name: Связывание стандартных операторов запросов
                                   href: programming-guide/concepts/linq/chaining-standard-query-operators-together.md
-                            - name: Учебник. Объединение запросов в цепочки
-                              items:
-                                - name: Отложенное выполнение и отложенное вычисление в LINQ to XML
-                                  href: programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
-                                - name: Пример отложенного выполнения
-                                  href: programming-guide/concepts/linq/deferred-execution-example.md
-                                - name: Пример связывания запросов
-                                  href: programming-guide/concepts/linq/chaining-queries-example.md
-                                - name: Промежуточная материализация
-                                  href: programming-guide/concepts/linq/intermediate-materialization.md
-                                - name: Связывание стандартных операторов запросов
-                                  href: programming-guide/concepts/linq/chaining-standard-query-operators-together.md
                             - name: Учебник. Обработка содержимого документа WordprocessingML
                               items:
                                 - name: Форма документов WordprocessingML
