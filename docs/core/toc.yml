@@ -98,11 +98,6 @@
         - name: Модульное тестирование библиотеки
           href: tutorials/testing-library-with-visual-studio.md
           displayName: 'tutorials, visual studio, vs'
-        - name: Использование библиотеки
-          href: tutorials/consuming-library-with-visual-studio.md
-          displayName: 'tutorials, visual studio, vs'
-        - name: "Live Unit\_Testing"
-          href: /visualstudio/test/live-unit-testing-start
         - name: Установка и использование пакета
           href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
           displayName: 'tutorials, visual studio, vs'
