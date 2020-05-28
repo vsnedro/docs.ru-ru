@@ -11,12 +11,12 @@ helpviewer_keywords:
 - application development [.NET], globalization
 - multilingual application development
 ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
-ms.openlocfilehash: eae1c38c2383d13bfb4dab83f2fe9551970b39f4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c5c601d18d92d9b57781bc8a09f26f0bc3a9216a
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73120888"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83842014"
 ---
 # <a name="globalizing-and-localizing-net-applications"></a>Глобализация и локализация приложений .NET
 
@@ -44,11 +44,15 @@ ms.locfileid: "73120888"
 
 Дополнительные сведения см. в [документации по глобализации](/globalization/).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 [Глобализация](globalization.md)
 
 Описание первого этапа создания международного приложения, который предполагает проектирование и кодирование приложения, не зависящего от языка и региональных параметров.
+
+[Глобализация .NET и ICU](globalization-icu.md)
+
+Описание использования библиотек Юникода [International Components for Unicode (ICU)](http://site.icu-project.org/home) в глобализации .NET.
 
 [Проверка локализуемости](localizability-review.md)
 
@@ -70,7 +74,7 @@ ms.locfileid: "73120888"
 
 - Пространство имен <xref:System.Globalization?displayProperty=nameWithType>
 
-   Содержит классы, определяющие сведения, относящиеся к языку и региональным параметрам, такие как язык, страна или регион, используемые календари, шаблоны форматирования дат, денежных единиц и чисел, а также порядок сортировки строк.
+   Содержит классы, определяющие сведения, относящиеся к культуре, такие как язык, название страны, используемые календари, шаблоны форматирования дат, денежных единиц и чисел, а также порядок сортировки строк.
 
 - Пространство имен <xref:System.Resources>
 

@@ -81,59 +81,95 @@
   href: compatibility/
 - name: Учебники
   items:
-    - name: Обзор
+    - name: Использование Visual Studio
+      items:
+        - name: Создание консольного приложения
+          href: tutorials/with-visual-studio.md
+          displayName: 'tutorials, visual studio, vs'
+        - name: Отладка приложения
+          href: tutorials/debugging-with-visual-studio.md
+          displayName: 'tutorials, visual studio, vs'
+        - name: Публикация приложения
+          href: tutorials/publishing-with-visual-studio.md
+          displayName: 'tutorials, visual studio, vs'
+        - name: Создание библиотеки
+          href: tutorials/library-with-visual-studio.md
+          displayName: 'tutorials, visual studio, vs'
+        - name: Модульное тестирование библиотеки
+          href: tutorials/testing-library-with-visual-studio.md
+          displayName: 'tutorials, visual studio, vs'
+        - name: Использование библиотеки
+          href: tutorials/consuming-library-with-visual-studio.md
+          displayName: 'tutorials, visual studio, vs'
+        - name: "Live Unit\_Testing"
+          href: /visualstudio/test/live-unit-testing-start
+        - name: Установка и использование пакета
+          href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
+          displayName: 'tutorials, visual studio, vs'
+        - name: Создание и публикация пакета
+          href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+          displayName: 'tutorials, visual studio, vs'
+    - name: "Использование Visual Studio\_Code"
+      items:
+        - name: Создание консольного приложения
+          href: tutorials/with-visual-studio-code.md
+          displayName: 'tutorials, visual studio code, vs code, cli'
+        - name: Создание и публикация консольного приложения
+          href: tutorials/cli-create-console-app.md
+          displayName: 'tutorials, cli'
+        - name: "Создание и модульное тестирование библиотеки\_— macOS"
+          href: tutorials/using-on-macos.md
+          displayName: 'tutorials, visual studio code, vs code, cli'
+        - name: Установка и использование пакета
+          href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
+          displayName: 'tutorials, cli'
+        - name: Создание и публикация пакета
+          href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+          displayName: tutorials
+    - name: Использование Visual Studio для Mac
+      items:
+        - name: Создание консольного приложения
+          href: tutorials/using-on-mac-vs.md
+          displayName: tutorials
+        - name: Создание и модульное тестирование библиотеки
+          href: tutorials/using-on-mac-vs-full-solution.md
+          displayName: tutorials
+        - name: Установка и использование пакета
+          href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+          displayName: tutorials
+    - name: Дополнительные разделы
+      items:
+        - name: "Модульное тестирование приложения с помощью\_xUnit"
+          href: tutorials/testing-with-cli.md
+          displayName: 'tutorials, cli'
+        - name: Создание библиотек
+          href: tutorials/libraries.md
+        - name: Создание шаблонов для интерфейса командной строки
+          items:
+            - name: 1. Создание шаблона элемента
+              href: tutorials/cli-templates-create-item-template.md
+              displayName: 'tutorials, cli'
+            - name: 2. Создание шаблона проекта
+              href: tutorials/cli-templates-create-project-template.md
+              displayName: 'tutorials, cli'
+            - name: 3. Создание пакета шаблонов
+              href: tutorials/cli-templates-create-template-pack.md
+              displayName: 'tutorials, cli'
+        - name: Создание средств для интерфейса командной строки
+          items:
+            - name: 1. Создание средства
+              displayName: 'tools, tutorials, cli'
+              href: tools/global-tools-how-to-create.md
+            - name: 2. Использование глобального средства
+              displayName: 'tools, tutorials, cli'
+              href: tools/global-tools-how-to-use.md
+            - name: 3. Использование локального средства
+              href: tools/local-tools-how-to-use.md
+              displayName: 'tools, tutorials, cli'
+        - name: Создание приложения с подключаемыми модулями
+          href: tutorials/creating-app-with-plugin-support.md
+    - name: Другие руководства
       href: tutorials/index.md
-    - name: Начало работы с .NET Core с помощью Visual Studio
-      href: tutorials/with-visual-studio.md
-    - name: Начало работы с .NET Core с помощью Visual Studio Code
-      href: tutorials/with-visual-studio-code.md
-    - name: Начало работы с .NET Core с помощью средств интерфейса командной строки
-      href: tutorials/cli-create-console-app.md
-    - name: Начало работы с .NET Core с помощью Visual Studio Code в macOS
-      href: tutorials/using-on-macos.md
-    - name: Начало работы с .NET Core с помощью Visual Studio для Mac
-      href: tutorials/using-on-mac-vs.md
-    - name: Отладка приложения с помощью Visual Studio
-      href: tutorials/debugging-with-visual-studio.md
-    - name: Публикация приложения с помощью Visual Studio
-      href: tutorials/publishing-with-visual-studio.md
-    - name: "Создание библиотеки .NET\_Standard в Visual Studio"
-      href: tutorials/library-with-visual-studio.md
-    - name: "Тестирование библиотеки .NET\_Standard в Visual Studio"
-      href: tutorials/testing-library-with-visual-studio.md
-    - name: "Использование библиотеки .NET\_Standard в Visual Studio"
-      href: tutorials/consuming-library-with-visual-studio.md
-    - name: Создание полноценного решения .NET Core в macOS
-      href: tutorials/using-on-mac-vs-full-solution.md
-    - name: Организация и тестирование проектов с помощью инструментов командной строки .NET Core
-      href: tutorials/testing-with-cli.md
-    - name: Разработка библиотек с помощью кроссплатформенных средств
-      href: tutorials/libraries.md
-    - name: Создание приложения .NET Core с подключаемыми модулями
-      href: tutorials/creating-app-with-plugin-support.md
-    - name: Разработка приложений ASP.NET Core
-      href: tutorials/aspnet-core.md
-    - name: Размещение .NET Core из машинного кода
-      href: tutorials/netcore-hosting.md
-    - name: Создание шаблонов для интерфейса командной строки
-      items:
-        - name: 1. Создание шаблона элемента
-          href: tutorials/cli-templates-create-item-template.md
-        - name: 2. Создание шаблона проекта
-          href: tutorials/cli-templates-create-project-template.md
-        - name: 3. Создание пакета шаблонов
-          href: tutorials/cli-templates-create-template-pack.md
-    - name: Создание средств для интерфейса командной строки
-      items:
-        - name: 1. Создание средства
-          displayName: 'tools, tutorials'
-          href: tools/global-tools-how-to-create.md
-        - name: 2. Использование глобального средства
-          displayName: 'tools, tutorials'
-          href: tools/global-tools-how-to-use.md
-        - name: 3. Использование локального средства
-          href: tools/local-tools-how-to-use.md
-          displayName: 'tools, tutorials'
 - name: Пакеты SDK для проектов
   items:
     - name: Обзор
@@ -441,6 +477,8 @@
   href: distribution-packaging.md
 - name: Предоставление доступа к компонентам .NET Core для COM
   href: native-interop/expose-components-to-com.md
+- name: Размещение .NET Core из машинного кода
+  href: tutorials/netcore-hosting.md
 - name: 'Пакеты, метапакеты и платформы'
   href: packages.md
 - name: Непрерывная интеграция
