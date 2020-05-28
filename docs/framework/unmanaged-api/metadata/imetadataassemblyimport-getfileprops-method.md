@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c5e6216f-ae3d-4697-9688-66b69c1251ec
 topic_type:
 - apiref
-ms.openlocfilehash: dae4a36537eeac58ffb17ebc1b78d935ec807cd8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 78c192f10f629a0c1316ae7af7fc774819f4de8f
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175984"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007485"
 ---
 # <a name="imetadataassemblyimportgetfileprops-method"></a>Метод IMetaDataAssemblyImport::GetFileProps
-Получает свойства файла с указанной подписью метаданных.  
+Возвращает свойства файла с указанной сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,35 +41,35 @@ HRESULT GetFileProps (
   
 ## <a name="parameters"></a>Параметры  
  `mdf`  
- (в) Токен `mdFile` метаданных, представляющий файл, для которого можно получить свойства.  
+ окне `mdFile`Токен метаданных, представляющий файл, для которого необходимо получить свойства.  
   
  `szName`  
- (ваут) Простое название файла.  
+ заполняет Простое имя файла.  
   
  `cchName`  
- (в) Размер, в широких chars, . `szName`  
+ окне Размер (в расширенных символах) для `szName` .  
   
  `pchName`  
- (ваут) Количество широких chars фактически `szName`вернулся в .  
+ заполняет Число расширенных символов, фактически возвращаемых в `szName` .  
   
  `ppbHashValue`  
- (ваут) Указатель на значение хэша. Это хэш, использующий алгоритм SHA-1, файла.  
+ заполняет Указатель на хэш-значение. Это хэш-код с использованием алгоритма SHA-1 файла.  
   
  `pcbHashValue`  
- (ваут) Количество широких chars в возвращенном значении хэша.  
+ заполняет Число расширенных символов в возвращенном хэш-значении.  
   
  `pdwFileFlags`  
- (ваут) Указатель на флаги, описывающие метаданные, применяемые к файлу. Значение флагов представляет собой сочетание одного или нескольких значений [CorFileFlags.](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md)  
+ заполняет Указатель на флаги, описывающие метаданные, примененные к файлу. Значение Flags является сочетанием одного или нескольких значений [корфилефлагс](corfileflags-enumeration.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформа:** Смотрите [системные требования](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

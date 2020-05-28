@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 519389f2-0217-436c-99d4-93a76ebce5b5
 topic_type:
 - apiref
-ms.openlocfilehash: 1072026f92edbc646653c6dd74ec8e22d5b887e5
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 941093b9a0856c2b716ba359c854473f3c9ea26a
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73105911"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84006523"
 ---
 # <a name="stackoverflowinfo-structure"></a>Структура StackOverflowInfo
 Хранит тип произошедшего переполнения и сведения об исключении, порождаемом из-за переполнения.  
@@ -33,25 +33,25 @@ typedef struct _StackOverflowInfo {
 } StackOverflowInfo;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`soType`|Значение перечисления [StackOverflowType](../../../../docs/framework/unmanaged-api/hosting/stackoverflowtype-enumeration.md) , указывающее тип переполнения.|  
-|`pExceptionInfo`|Указатель на объект Win32 `EXCEPTION_POINTERS`, который содержит запись исключения с независимым от компьютера описанием исключения и записью контекста с зависящим от компьютера описанием контекста процессора на момент возникновения исключения.|  
+|`soType`|Значение перечисления [StackOverflowType](stackoverflowtype-enumeration.md) , указывающее тип переполнения.|  
+|`pExceptionInfo`|Указатель на `EXCEPTION_POINTERS` объект Win32, который содержит запись исключения с независимым от компьютера описанием исключения и записью контекста с зависящим от компьютера описанием контекста процессора на момент возникновения исключения.|  
   
-## <a name="remarks"></a>Заметки  
- Объект `StackOverflowInfo` передается в метод [иактиононклревент:: oneven](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-onevent-method.md) для событий `Event_StackOverflow`.  
+## <a name="remarks"></a>Примечания  
+ `StackOverflowInfo`Объект передается в метод [иактиононклревент:: oneven](iactiononclrevent-onevent-method.md) для `Event_StackOverflow` событий.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. idl  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Структуры размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+- [Структуры размещения](hosting-structures.md)

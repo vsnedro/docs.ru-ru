@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 124656f6-0dad-4ceb-9043-d3869ab65cde
 topic_type:
 - apiref
-ms.openlocfilehash: 44a84e0752eecc1c694f3b8cf6e568b72b7d0f5c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 78b30f624bd71234e8f1b56600b3a23d15fdf517
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176218"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84006039"
 ---
 # <a name="ceesectionreloctype-enumeration"></a>Перечисление CeeSectionRelocType
-Предоставляет значения для влияния `reloc` на тип инструкции, излучаемые в вызове к [ICeeGen::AddSectionReloc](../../../../docs/framework/unmanaged-api/metadata/iceegen-addsectionreloc-method.md).  
+Предоставляет значения, влияющие на тип `reloc` инструкции, выдаваемой при вызове метода [ICeeGen:: AddSectionReloc](iceegen-addsectionreloc-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,37 +48,37 @@ typedef enum  {
     } CeeSectionRelocType;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`srRelocAbsolute`|Генерирует только раздел-родственник, `reloc`ничего не отправляя в раздел .reloc.|  
-|`srRelocHighLow`|Генерирует `reloc` место для указателя. Это превращается в BASED_HIGHLOW или BASED_DIR64 в зависимости от платформы.|  
-|`srRelocHighAdj`|Генерирует `reloc` для топ 16 битов 32-битного числа, где нижние 16 битов включены в следующее слово в таблице .reloc.|  
-|`srRelocMapToken`|Генерирует перемещение токенов карты, ничего не отправляя в раздел .reloc.|  
-|`srRelocRelative`|Указывает, что значение является исправлением относительного адреса.|  
-|`srRelocFilePos`|Генерирует только раздел-родственник, `reloc`ничего не отправляя в раздел .reloc. Это `reloc` относительно положения файла раздела, а не виртуального адреса раздела.|  
-|`srRelocCodeRelative`|Установить исправление код-относительного адреса.|  
-|`srRelocIA64Imm64`|Генерирует `reloc` 64-битный адрес в инструкции `movl` ia64.|  
-|`srRelocDir64`|Генерирует `reloc` 64-разрядный адрес.|  
-|`srRelocIA64PcRel25`|Создайте `reloc` для 25-битного PC-относительного адреса `br.call` в инструкции ia64.|  
-|`srRelocIA64PcRel64`|Генерирует `reloc` 64-разрядный pc-относительный адрес в инструкции ia64. `brl.call`|  
-|`srRelocAbsoluteTagged`|Генерирует 30-битный сечение-относительный, `reloc`используемый для помеченных значений указателя.|  
-|`srRelocSentinel`|Значение дозорного, которое поможет обеспечить, чтобы любые `reloc` дополнения к этому эквайму были отражены во внутреннем массиве имен.|  
-|`srNoBaseReloc`|Указывает не излучать базу. `reloc`|  
-|`srRelocPtr`|Значение, указывающее на то, что предварительное исправление содержимого памяти является указателем, а не смещением секции.|  
+|`srRelocAbsolute`|Создает только относительный раздел `reloc` , отправляя в раздел. reloc ничего.|  
+|`srRelocHighLow`|Создает `reloc` для расположения, размер которого определяется указателем. Он преобразуется в BASED_HIGHLOW или BASED_DIR64 в зависимости от платформы.|  
+|`srRelocHighAdj`|Создает `reloc` для старших 16 бит 32-разрядного числа, где 16 нижних бит включены в следующее слово в таблице. reloc.|  
+|`srRelocMapToken`|Создает перемещение карт маркеров, отправляя в раздел. reloc значение Nothing.|  
+|`srRelocRelative`|Указывает, что значением является адресная привязка относительных адресов.|  
+|`srRelocFilePos`|Создает только относительный раздел `reloc` , отправляя в раздел. reloc ничего. Это `reloc` относится к расположению файла в разделе, а не к виртуальному адресу раздела.|  
+|`srRelocCodeRelative`|Указывает адресную привязку адреса, относительную для кода.|  
+|`srRelocIA64Imm64`|Создает `reloc` для 64-разрядного адреса в инструкции ia64 `movl` .|  
+|`srRelocDir64`|Создает `reloc` для 64-разрядного адреса.|  
+|`srRelocIA64PcRel25`|Создание `reloc` для 25-разрядного адреса, относительного для ПК, в `br.call` инструкции IA64.|  
+|`srRelocIA64PcRel64`|Создает `reloc` для 64-разрядного адреса, относительный для ПК, в `brl.call` инструкции IA64.|  
+|`srRelocAbsoluteTagged`|Формирует 30-разрядный раздел относительно `reloc` значений указателей с тегами.|  
+|`srRelocSentinel`|Значение Sentinel, которое помогает гарантировать, что все дополнения к этому перечислению отражаются в `reloc` массиве внутренних имен.|  
+|`srNoBaseReloc`|Указывает, что не следует создавать базу `reloc` .|  
+|`srRelocPtr`|Значение, указывающее, что предварительная адресная привязка содержимого памяти является указателем, а не смещением раздела.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
-- [Интерфейс ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
-- [Метод AddSectionReloc](../../../../docs/framework/unmanaged-api/metadata/iceegen-addsectionreloc-method.md)
+- [Перечисления метаданных](metadata-enumerations.md)
+- [Интерфейс ICeeGen](iceegen-interface.md)
+- [Метод AddSectionReloc](iceegen-addsectionreloc-method.md)

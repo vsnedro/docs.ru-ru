@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9
 topic_type:
 - apiref
-ms.openlocfilehash: fda890cee5f513ea8cf7e82e710f5451a860c49f
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: b1a83f07f03ddb17d5c306453cf838101a77ed65
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74443908"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007940"
 ---
 # <a name="corassemblyflags-enumeration"></a>Перечисление CorAssemblyFlags
 Содержит значения, которые описывают метаданные, применяемые к компиляции сборки.  
@@ -53,7 +53,7 @@ typedef enum CorAssemblyFlags {
 } CorAssemblyFlags;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -64,25 +64,25 @@ typedef enum CorAssemblyFlags {
 |`afPA_IA64`|Указывает, что архитектура процессора — Itanium (формат PE32 +).|  
 |`afPA_AMD64`|Указывает, что архитектура процессора — это AMD x64 (формат PE32 +).|  
 |`afPA_ARM`|Указывает, что архитектура процессора — ARM (формат PE32).|  
-|`afPA_NoPlatform`|Указывает, что сборка является ссылочной сборкой; то есть он применяется к любой архитектуре, но не может работать в любой архитектуре. Таким образом, флаг будет таким же, как `afPA_Mask`.|  
-|`afPA_Specified`|Указывает, что флаги архитектуры процессора должны распространяться на запись `AssemblyRef`.|  
+|`afPA_NoPlatform`|Указывает, что сборка является ссылочной сборкой; то есть он применяется к любой архитектуре, но не может работать в любой архитектуре. Таким образом, флаг будет таким же, как и `afPA_Mask` .|  
+|`afPA_Specified`|Указывает, что флаги архитектуры процессора должны распространяться на `AssemblyRef` запись.|  
 |`afPA_Mask`|Маска, описывающая архитектуру процессора.|  
 |`afPA_FullMask`|Указывает, что включено описание архитектуры процессора.|  
 |`afPA_Shift`|Указывает число смещений в флагах архитектуры процессора в индекс и из него.|  
-|`afEnableJITcompileTracking`|Указывает соответствующее значение из <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> <xref:System.Diagnostics.DebuggableAttribute>.|  
-|`afDisableJITcompileOptimizer`|Указывает соответствующее значение из <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> <xref:System.Diagnostics.DebuggableAttribute>.|  
+|`afEnableJITcompileTracking`|Указывает соответствующее значение из <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> объекта <xref:System.Diagnostics.DebuggableAttribute> .|  
+|`afDisableJITcompileOptimizer`|Указывает соответствующее значение из <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> объекта <xref:System.Diagnostics.DebuggableAttribute> .|  
 |`afRetargetable`|Указывает, что сборка может быть перенацелена во время выполнения в сборку из другого издателя.|  
 |`afContentType_Mask`|Маска, описывающая тип содержимого.|  
 |`afContentType_Default`|Указывает тип содержимого по умолчанию.|  
 |`afContentType_WindowsRuntime`|Указывает тип содержимого среда выполнения Windows.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

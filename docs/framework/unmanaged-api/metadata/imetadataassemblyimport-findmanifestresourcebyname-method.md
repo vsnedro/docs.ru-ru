@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7b72fa11-3866-402b-bdea-2b966b77cfe0
 topic_type:
 - apiref
-ms.openlocfilehash: ae9097725aecd21e910e49a78d81951df39e9b2d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ef6f7a1a6e86b45acce91792385bc3761dfb4c39
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177777"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84009084"
 ---
 # <a name="imetadataassemblyimportfindmanifestresourcebyname-method"></a>Метод IMetaDataAssemblyImport::FindManifestResourceByName
-Получает указатель на ресурс манифеста с указанным именем.  
+Возвращает указатель на ресурс манифеста с указанным именем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,21 +39,21 @@ HRESULT FindManifestResourceByName (
  [in] Имя ресурса.  
   
  `ptkManifestResource`  
- (ваут) Массив, используемый `mdManifestResource` для хранения токенов метаданных, каждый из которых представляет собой манифест ресурс.  
+ заполняет Массив, используемый для хранения `mdManifestResource` маркеров метаданных, каждый из которых представляет ресурс манифеста.  
   
-## <a name="remarks"></a>Remarks  
- Метод `FindManifestResourceByName` использует стандартные правила, используемые общим языком времени выполнения для решения ссылок.  
+## <a name="remarks"></a>Примечания  
+ `FindManifestResourceByName`Метод использует стандартные правила, используемые средой CLR для разрешения ссылок.  
   
 ## <a name="requirements"></a>Требования  
- **Платформа:** Смотрите [системные требования](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
-- [Как Время выполнения находит сборки](../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)
+- [Обнаружение сборок в среде выполнения](../../deployment/how-the-runtime-locates-assemblies.md)

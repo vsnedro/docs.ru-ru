@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 93c9a369-225f-4eff-9b78-3fbee4902cf1
 topic_type:
 - apiref
-ms.openlocfilehash: 74807a678b5c0c2738f33fe552f6462af93ca1f9
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 629e18b6cd2fd7910804ecc608a45d2406dddea1
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74436465"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007498"
 ---
 # <a name="cortokentype-enumeration"></a>Перечисление CorTokenType
 Указывает тип маркера метаданных.  
@@ -59,47 +59,47 @@ typedef enum CorTokenType {
 } CorTokenType;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`mdtModule`|Токен `mdModule`.|  
-|`mdtTypeRef`|Токен `mdTypeRef`.|  
-|`mdtTypeDef`|Токен `mdTypeDef`.|  
-|`mdtFieldDef`|Токен `mdFieldDef`.|  
-|`mdtMethodDef`|Токен `mdMethodDef`.|  
-|`mdtParamDef`|Токен `mdParamDef`.|  
-|`mdtInterfaceImpl`|Токен `mdInterfaceImpl`.|  
-|`mdtMemberRef`|Токен `mdMemberRef`.|  
-|`mdtCustomAttribute`|Токен `mdCustomAttribute`.|  
-|`mdtPermission`|Токен `mdPermission`.|  
-|`mdtSignature`|Токен `mdSignature`.|  
-|`mdtEvent`|Токен `mdEvent`.|  
-|`mdtProperty`|Токен `mdProperty`.|  
-|`mdtModuleRef`|Токен `mdModuleRef`.|  
-|`mdtTypeSpec`|Токен `mdTypeSpec`.|  
-|`mdtAssembly`|Токен `mdAssembly`.|  
-|`mdtAssemblyRef`|Токен `mdAssemblyRef`.|  
-|`mdtFile`|Токен `mdFile`.|  
-|`mdtExportedType`|Токен `mdExportedType`.|  
-|`mdtManifestResource`|Токен `mdManifestResource`.|  
-|`mdtGenericParam`|Токен `mdGenericParam`.|  
-|`mdtMethodSpec`|Токен `mdMethodSpec`.|  
-|`mdtGenericParamConstraint`|Токен `mdGenericParamConstraint`.|  
-|`mdtString`|Токен `mdString`.|  
-|`mdtName`|Токен `mdName`.|  
+|`mdtModule`|`mdModule`Токен.|  
+|`mdtTypeRef`|`mdTypeRef`Токен.|  
+|`mdtTypeDef`|`mdTypeDef`Токен.|  
+|`mdtFieldDef`|`mdFieldDef`Токен.|  
+|`mdtMethodDef`|`mdMethodDef`Токен.|  
+|`mdtParamDef`|`mdParamDef`Токен.|  
+|`mdtInterfaceImpl`|`mdInterfaceImpl`Токен.|  
+|`mdtMemberRef`|`mdMemberRef`Токен.|  
+|`mdtCustomAttribute`|`mdCustomAttribute`Токен.|  
+|`mdtPermission`|`mdPermission`Токен.|  
+|`mdtSignature`|`mdSignature`Токен.|  
+|`mdtEvent`|`mdEvent`Токен.|  
+|`mdtProperty`|`mdProperty`Токен.|  
+|`mdtModuleRef`|`mdModuleRef`Токен.|  
+|`mdtTypeSpec`|`mdTypeSpec`Токен.|  
+|`mdtAssembly`|`mdAssembly`Токен.|  
+|`mdtAssemblyRef`|`mdAssemblyRef`Токен.|  
+|`mdtFile`|`mdFile`Токен.|  
+|`mdtExportedType`|`mdExportedType`Токен.|  
+|`mdtManifestResource`|`mdManifestResource`Токен.|  
+|`mdtGenericParam`|`mdGenericParam`Токен.|  
+|`mdtMethodSpec`|`mdMethodSpec`Токен.|  
+|`mdtGenericParamConstraint`|`mdGenericParamConstraint`Токен.|  
+|`mdtString`|`mdString`Токен.|  
+|`mdtName`|`mdName`Токен.|  
 |`mdtBaseType`|Не используется.|  
   
 ## <a name="remarks"></a>Примечания  
  Каждое значение равно значению верхнего байта в соответствующем маркере метаданных.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

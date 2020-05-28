@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e2501fc8-b2bc-4dcc-9205-e3acd5a53ffe
 topic_type:
 - apiref
-ms.openlocfilehash: dc6375f3e2cff1a744a8ff2e6a6adab27bbf8af3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b5af877c26c20bf64a27618bf24a7bce5b410419
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177476"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007784"
 ---
 # <a name="imetadataemitsetpropertyprops-method"></a>Метод IMetaDataEmit::SetPropertyProps
-Устанавливает функции, хранящиеся в метаданных, для свойства, определяемого предыдущим вызовом [методу DefineProperty.](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-defineproperty-method.md)  
+Задает функции, хранимые в метаданных для свойства, определенного при предыдущем вызове [метода DefineProperty](imetadataemit-defineproperty-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,39 +42,39 @@ HRESULT SetPropertyProps (
   
 ## <a name="parameters"></a>Параметры  
  `pr`  
- (в) Токен для изменения свойства  
+ окне Токен изменяемого свойства  
   
  `dwPropFlags`  
- (в) Флаги свойств.  
+ окне Флаги свойств.  
   
  `dwCPlusTypeFlag`  
- (в) Тип значения по умолчанию.  
+ окне Тип значения свойства по умолчанию.  
   
  `pValue`  
- (в) Значение значения по умолчанию для свойства.  
+ окне Значение по умолчанию для свойства.  
   
  `cchValue`  
- (в) Количество символов (Unicode) `pValue`в .  
+ окне Число символов Юникода в `pValue` .  
   
  `mdSetter`  
- (в) Метод, устанавливающие значение свойства.  
+ окне Метод, который задает значение свойства.  
   
  `mdGetter`  
- (в) Метод, который получает значение свойства.  
+ окне Метод, который получает значение свойства.  
   
  `rmdOtherMethods[]`  
- (в) Массив других методов, связанных с свойством. Прекратите этот `mdTokenNil` массив с помощью маркера.  
+ окне Массив других методов, связанных со свойством. Завершите этот массив `mdTokenNil` токеном.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b9b4bf2f-1098-43d6-9619-a99b4bda1940
 topic_type:
 - apiref
-ms.openlocfilehash: 428b022ed560648f59798154d5987d382938c280
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 027694cee1b3e4d990796ba31300918f6d859679
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176075"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008200"
 ---
 # <a name="imaptokenmap-method"></a>Метод IMapToken::Map
-Отображает связь между сборками с помощью подписей метаданных.  
+Сопоставляет связь между сборками, используя подписи метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,23 +36,23 @@ HRESULT Map (
   
 ## <a name="parameters"></a>Параметры  
  `tkImp`  
- (в) Токен метаданных, представляющий объект импортированного кода.  
+ окне Токен метаданных, представляющий импортированный объект кода.  
   
  `tkEmit`  
- (в) Токен метаданных, представляющий испускаемый объект кода.  
+ окне Токен метаданных, представляющий созданный объект кода.  
   
-## <a name="remarks"></a>Remarks  
- Когда повторная карта токенов происходит во время слияния, исходный маркер приобщен в области метаданных импортируемых (источников), а новый маркер — в области испускаемых (целевых) метаданных.  
+## <a name="remarks"></a>Примечания  
+ Когда повторное отображение токена происходит во время слияния, исходный маркер ограничивается в импортированной (исходной) области метаданных, а новый маркер — в области исрожденных (целевых) метаданных.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md)
+- [Интерфейс IMapToken](imaptoken-interface.md)

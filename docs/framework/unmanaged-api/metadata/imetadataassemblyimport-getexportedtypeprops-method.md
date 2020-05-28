@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 25ca7623-5a55-4f09-b44a-36b03d142278
 topic_type:
 - apiref
-ms.openlocfilehash: 15b58e01d4ce99f19f510c760819471b84380b45
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 944941c2356cae93ecc85f1714b4b29aefcb50ad
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177758"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008408"
 ---
 # <a name="imetadataassemblyimportgetexportedtypeprops-method"></a>Метод IMetaDataAssemblyImport::GetExportedTypeProps
-Получает набор свойств экспортируемого типа с указанной подписью метаданных.  
+Возвращает набор свойств экспортированного типа с указанной сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,35 +41,35 @@ HRESULT GetExportedTypeProps (
   
 ## <a name="parameters"></a>Параметры  
  `mdct`  
- (в) Токен `mdExportedType` метаданных, представляющий экспортированный тип.  
+ окне `mdExportedType`Токен метаданных, представляющий экспортированный тип.  
   
  `szName`  
- (ваут) Название экспортируемого типа.  
+ заполняет Имя экспортированного типа.  
   
  `cchName`  
- (в) Размер, в широких символов, из `szName`.  
+ окне Размер (в расширенных символах) `szName` .  
   
  `pchName`  
- (ваут) Количество широких символов фактически вернулся в`szName`  
+ заполняет Число расширенных символов, фактически возвращаемых в`szName`  
   
  `ptkImplementation`  
- (ваут) `mdFile`Токен `mdAssemblyRef`метаданных, содержащий или позволяющий получить доступ к свойствам экспортируемого типа, или `mdExportedType` метаданный.  
+ заполняет `mdFile` `mdAssemblyRef` Маркер метаданных, или `mdExportedType` , который содержит или разрешает доступ к свойствам экспортированного типа.  
   
  `ptkTypeDef`  
- (ваут) Указатель на `mdTypeDef` маркер, представляющий тип файла.  
+ заполняет Указатель на `mdTypeDef` маркер, представляющий тип в файле.  
   
  `pdwExportedTypeFlags`  
- (ваут) Указатель на флаги, описывающие метаданные, применяемые к экспортируемому типу. Значение флагов может быть одним или более значениями [CorTypeAttr.](../../../../docs/framework/unmanaged-api/metadata/cortypeattr-enumeration.md)  
+ заполняет Указатель на флаги, описывающие метаданные, применяемые к экспортируемому типу. Значение Flags может быть одним или несколькими [кортипеаттр](cortypeattr-enumeration.md) значениями.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

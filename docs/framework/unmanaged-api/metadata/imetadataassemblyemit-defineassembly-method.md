@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
 topic_type:
 - apiref
-ms.openlocfilehash: 14bd352099890e4ca36321d550b8e982d4373231
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 17c91200730431c4c6e230b8c1561ce7c4863868
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177888"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008187"
 ---
 # <a name="imetadataassemblyemitdefineassembly-method"></a>Метод IMetaDataAssemblyEmit::DefineAssembly
-Создает `Assembly` структуру, содержащую метаданные для указанной сборки, и возвращает связанный токен метаданных.  
+Создает `Assembly` структуру, содержащую метаданные для указанной сборки, и возвращает связанный маркер метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,38 +41,38 @@ HRESULT DefineAssembly (
   
 ## <a name="parameters"></a>Параметры  
  `pbPublicKey`  
- (в) Открытый ключ, который идентифицирует издателя сборки, или NULL, если сборка не названа решительно.  
+ окне Открытый ключ, определяющий издателя сборки, или значение NULL, если сборка не имеет строгого имени.  
   
  `cbPublicKey`  
- (в) Размер байтов `pbPublicKey`.  
+ окне Размер в байтах для `pbPublicKey` .  
   
  `uHashAlgId`  
- (в) Идентификатор алгоритма хэширования для шифрования файлов в сборке или NULL для указания алгоритма SHA-1.  
+ окне Идентификатор алгоритма хэширования, используемого для шифрования файлов в сборке, или значение NULL для указания алгоритма SHA-1.  
   
  `szName`  
- (в) Читаемое человеком текстовое название сборки. Это значение не должно превышать 1024 символов.  
+ окне Понятное для человека текстовое имя сборки. Это значение не должно превышать 1024 символов.  
   
  `pMetaData`  
- (в) Указатель на экземпляр ASSEMBLYMETADATA, содержащий информацию о версии, платформе и локализации для сборки.  
+ окне Указатель на экземпляр ASSEMBLYMETADATA, содержащий сведения о версии, платформе и локали для сборки.  
   
  `dwAssemblyFlags`  
- (в) Сочетание значений [CorAssemblyFlags,](../../../../docs/framework/unmanaged-api/metadata/corassemblyflags-enumeration.md) описывающие особенности сборки.  
+ окне Сочетание значений [корассемблифлагс](corassemblyflags-enumeration.md) , описывающих функции сборки.  
   
  `pmda`  
- (ваут) Указатель на маркер метаданных.  
+ заполняет Указатель на маркер метаданных.  
   
-## <a name="remarks"></a>Remarks  
- Только `Assembly` одна структура метаданных может быть определена в манифесте.  
+## <a name="remarks"></a>Примечания  
+ `Assembly`В манифесте может быть определена только одна структура метаданных.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

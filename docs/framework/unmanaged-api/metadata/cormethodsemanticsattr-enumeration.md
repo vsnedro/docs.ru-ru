@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
 topic_type:
 - apiref
-ms.openlocfilehash: bab215a8221696a0e43e228278085fcef52a40e9
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 1572c206f4a5a5fe0fd189ca84d0bcda2249c6d4
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74442822"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007654"
 ---
 # <a name="cormethodsemanticsattr-enumeration"></a>Перечисление CorMethodSemanticsAttr
 Содержит значения, описывающие связь между методом и соответствующим свойством или событием.  
@@ -39,24 +39,24 @@ typedef enum CorMethodSemanticsAttr {
 } CorMethodSemanticsAttr;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`msSetter`|Указывает, что метод является `set`ным методом доступа для свойства.|  
-|`msGetter`|Указывает, что метод является `get`ным методом доступа для свойства.|  
+|`msSetter`|Указывает, что метод является методом `set` доступа для свойства.|  
+|`msGetter`|Указывает, что метод является методом `get` доступа для свойства.|  
 |`msOther`|Указывает, что метод имеет связь со свойством или событием, отличным от указанных здесь.|  
 |`msAddOn`|Указывает, что метод добавляет методы обработчика для события.|  
 |`msRemoveOn`|Указывает, что метод удаляет методы обработчика для события.|  
 |`msFire`|Указывает, что метод вызывает событие.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

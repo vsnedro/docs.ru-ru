@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1
 topic_type:
 - apiref
-ms.openlocfilehash: 11bb220068e978dc130701e3b28ab3f421be7337
-ms.sourcegitcommit: 7e2128d4a4c45b4274bea3b8e5760d4694569ca1
+ms.openlocfilehash: 4b270c36bdbea9c8d81915eba424cae1054ce7d7
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75937651"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008538"
 ---
 # <a name="loadlibraryshim-function"></a>Функция LoadLibraryShim
 Загружает указанную версию библиотеки DLL, которая входит в состав распространяемого пакета .NET Framework.  
   
- Эта функция является устаревшей в .NET Framework 4. Используйте вместо этого метод [ICLRRuntimeInfo:: LoadLibrary](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-loadlibrary-method.md) .  
+ Эта функция является устаревшей в .NET Framework 4. Используйте вместо этого метод [ICLRRuntimeInfo:: LoadLibrary](iclrruntimeinfo-loadlibrary-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,10 +43,10 @@ HRESULT LoadLibraryShim (
  окне Строка, завершающаяся нулем, которая представляет имя библиотеки DLL, загружаемой из библиотеки .NET Framework.  
   
  `szVersion`  
- окне Строка, заканчивающаяся нулем и представляющая версию загружаемой библиотеки DLL. Если `szVersion` имеет значение null, версия, выбранная для загрузки, является последней версией указанной библиотеки DLL, которая меньше версии 4. То есть все версии, равные или больше версии 4, игнорируются, если `szVersion` имеет значение null, и если не установлена версия, отличная от версии 4, то не удается загрузить библиотеку DLL. Это необходимо для того, чтобы установка .NET Framework 4 не влияла на существующие приложения или компоненты. См. запись [In-Proc SxS и Migration быстрое начало](https://devblogs.microsoft.com/dotnet/in-proc-sxs-and-migration-quick-start/) в блоге команды разработчиков CLR.  
+ окне Строка, заканчивающаяся нулем и представляющая версию загружаемой библиотеки DLL. Если `szVersion` параметр имеет значение null, версия, выбранная для загрузки, является последней версией указанной библиотеки DLL, которая меньше версии 4. То есть все версии, равные или больше версии 4, игнорируются `szVersion` , если имеет значение null, и если не установлена версия, отличная от версии 4, то не удается загрузить библиотеку DLL. Это необходимо для того, чтобы установка .NET Framework 4 не влияла на существующие приложения или компоненты. См. запись [In-Proc SxS и Migration быстрое начало](https://devblogs.microsoft.com/dotnet/in-proc-sxs-and-migration-quick-start/) в блоге команды разработчиков CLR.  
   
  `pvReserved`  
- Зарезервировано для будущего использования.  
+ Зарезервировано для последующего использования.  
   
  `phModDll`  
  заполняет Указатель на маркер модуля.  
@@ -57,21 +57,21 @@ HRESULT LoadLibraryShim (
 |Код возврата|Описание|  
 |-----------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|CLR_E_SHIM_RUNTIMELOAD|Загрузка `szDllName` требует загрузки среды CLR, и не удается загрузить необходимую версию среды CLR.|  
+|CLR_E_SHIM_RUNTIMELOAD|`szDllName`Для загрузки требуется загрузка среды CLR, и необходимая версия CLR не может быть загружена.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Эта функция используется для загрузки библиотек DLL, включенных в распространяемый пакет .NET Framework. Он не загружает создаваемые пользователем библиотеки DLL.  
   
 > [!NOTE]
 > Начиная с версии .NET Framework 2,0, Загрузка Fusion. dll приводит к загрузке среды CLR. Это обусловлено тем, что функции в Fusion. dll теперь являются оболочками, реализации которых предоставляются средой выполнения.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

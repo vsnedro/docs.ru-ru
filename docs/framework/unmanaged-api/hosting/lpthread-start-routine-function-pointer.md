@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7b9b93b0-fe92-42ba-8693-701168a29dde
 topic_type:
 - apiref
-ms.openlocfilehash: c6e0c02af93b9df726202f397bbb2afc306f3b3a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 84cdb42b11ad70f54f21ae36ca2734dc794d06d7
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73090883"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008473"
 ---
 # <a name="lpthread_start_routine-function-pointer"></a>Указатель функции LPTHREAD_START_ROUTINE
 Указывает на функцию, которая уведомляет узел о начале выполнения потока.  
@@ -38,18 +38,18 @@ typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE) (
  `lpThreadParameter`  
  окне Указатель на код, который начал выполнять.  
   
-## <a name="remarks"></a>Заметки  
- Функция, к которой `LPTHREAD_START_ROUTINE` Points, является функцией обратного вызова и должна быть реализована модулем записи размещающего приложения.  
+## <a name="remarks"></a>Примечания  
+ Функция, к которой `LPTHREAD_START_ROUTINE` points является функцией обратного вызова и должна быть реализована модулем записи размещающего приложения.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorWks. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3bb4b526-0118-42e2-ba59-c95648528ce9
 topic_type:
 - apiref
-ms.openlocfilehash: 048286fb9e1af34cd964fb5b21892778f9575d2c
-ms.sourcegitcommit: 7e2128d4a4c45b4274bea3b8e5760d4694569ca1
+ms.openlocfilehash: bb40ed65a2e34f1bf293e4c4c842d7db63d2eaa5
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75938195"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008447"
 ---
 # <a name="metahost_policy_flags-enumeration"></a>Перечисление METAHOST_POLICY_FLAGS
-Предоставляет политики привязки, которые являются общими для большинства хостов среды выполнения. Это перечисление используется методом [ICLRMetaHostPolicy:: GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) .  
+Предоставляет политики привязки, которые являются общими для большинства хостов среды выполнения. Это перечисление используется методом [ICLRMetaHostPolicy:: GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,25 +44,25 @@ typedef enum {
 |Член|Описание|  
 |------------|-----------------|  
 |`METAHOST_POLICY_HIGHCOMPAT`|Определяет политику высокой совместимости, которая не учитывает среду CLR, которая загружается в текущий процесс. Вместо этого он учитывает только установленные CLR и параметры компонента, как производные от самого файла сборки, объявленной встроенной версии или файла конфигурации.|  
-|`METAHOST_POLICY_APPLY_UPGRADE_POLICY`|Применяет политику обновления к результату привязки к версии, если точное соответствие не найдено, на основе содержимого HKEY_LOCAL_MACHINE \Софтваре\микрософт\\. нетфрамеворк\полици\упградес. Это тот же результат, что и [RUNTIME_INFO_UPGRADE_VERSION](../../../../docs/framework/unmanaged-api/hosting/runtime-info-flags-enumeration.md).|  
-|`METAHOST_POLICY_EMULATE_EXE_LAUNCH`|Результаты привязки возвращаются, как если бы изображение, предоставленное для вызова, было запущено в новом процессе. В настоящее время `GetRequestedRuntime` игнорирует набор сред выполнения, допускающих загрузку, и привязывает их к набору установленных сред выполнения. Этот флаг позволяет узлу определить, к какой среде выполнения будет привязан EXE-файл при запуске.|  
-|`METAHOST_POLICY_SHOW_ERROR_DIALOG`|Если `GetRequestedRuntime` не удается найти среду выполнения, совместимую с входными параметрами, отображается диалоговое окно ошибка. Начиная с .NET Framework 4,5, это диалоговое окно с сообщением об ошибке может иметь форму диалогового окна компонента Windows, в котором спрашивается, нужно ли пользователю включить соответствующую функцию.|  
-|`METAHOST_POLICY_USE_PROCESS_IMAGE_PATH`|`GetRequestedRuntime` использует образ процесса (и любой соответствующий файл конфигурации) в качестве дополнительных входных данных для процесса привязки. По умолчанию `GetRequestedRuntime` не попадает в путь к образу процесса (обычно это EXE-файл, который использовался для запуска процесса) при определении среды выполнения для привязки.|  
-|`METAHOST_POLICY_ENSURE_SKU_SUPPORTED`|`GetRequestedRuntime` необходимо проверить, установлен ли соответствующий SKU, если в файле конфигурации нет доступных сведений. Это позволяет приложениям, не имеющим файлов конфигурации, корректно завершать работу на более мелких SKU, чем установка по умолчанию .NET Framework. По умолчанию `GetRequestedRuntime` не проверяет, установлен ли соответствующий SKU, если атрибут SKU не указан в элементе `<supportedRuntime />` файла конфигурации.|  
-|`METAHOST_POLICY_IGNORE_ERROR_MODE`|`GetRequestedRuntime` следует игнорировать SEM_FAILCRITICALERRORS (который задается вызовом функции [функцию SetErrorMode](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode) ) и отобразить диалоговое окно ошибки. По умолчанию SEM_FAILCRITICALERRORS подавляет диалоговое окно ошибки. Возможно, он был унаследован от другого процесса, и в вашем сценарии может быть нежелательным сообщение об ошибке.|  
+|`METAHOST_POLICY_APPLY_UPGRADE_POLICY`|Применяет политику обновления к результату привязки к версии, если точное соответствие не найдено, в зависимости от содержимого HKEY_LOCAL_MACHINE \Софтваре\микрософт \\ . нетфрамеворк\полици\упградес. Это тот же результат, что и [RUNTIME_INFO_UPGRADE_VERSION](runtime-info-flags-enumeration.md).|  
+|`METAHOST_POLICY_EMULATE_EXE_LAUNCH`|Результаты привязки возвращаются, как если бы изображение, предоставленное для вызова, было запущено в новом процессе. В настоящее время не `GetRequestedRuntime` учитывает набор сред выполнения, допускающих загрузку, и привязывает их к набору установленных сред выполнения. Этот флаг позволяет узлу определить, к какой среде выполнения будет привязан EXE-файл при запуске.|  
+|`METAHOST_POLICY_SHOW_ERROR_DIALOG`|Если `GetRequestedRuntime` приложению не удается найти среду выполнения, совместимую с входными параметрами, отображается диалоговое окно ошибки. Начиная с .NET Framework 4,5, это диалоговое окно с сообщением об ошибке может иметь форму диалогового окна компонента Windows, в котором спрашивается, нужно ли пользователю включить соответствующую функцию.|  
+|`METAHOST_POLICY_USE_PROCESS_IMAGE_PATH`|`GetRequestedRuntime`использует образ процесса (и любой соответствующий файл конфигурации) в качестве дополнительных входных данных для процесса привязки. По умолчанию не `GetRequestedRuntime` выполняет откат к пути образа процесса (как правило, к исполняемому файлу, который использовался для запуска процесса) при определении среды выполнения для привязки.|  
+|`METAHOST_POLICY_ENSURE_SKU_SUPPORTED`|`GetRequestedRuntime`необходимо проверить, установлен ли соответствующий SKU, если в файле конфигурации нет доступных сведений. Это позволяет приложениям, не имеющим файлов конфигурации, корректно завершать работу на более мелких SKU, чем установка по умолчанию .NET Framework. По умолчанию не `GetRequestedRuntime` проверяет, установлен ли соответствующий SKU, если атрибут sku не указан в элементе файла конфигурации `<supportedRuntime />` .|  
+|`METAHOST_POLICY_IGNORE_ERROR_MODE`|`GetRequestedRuntime`следует пропускать SEM_FAILCRITICALERRORS (который задается вызовом функции [функцию SetErrorMode](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode) ) и выводить диалоговое окно ошибки. По умолчанию SEM_FAILCRITICALERRORS подавляет диалоговое окно ошибки. Возможно, он был унаследован от другого процесса, и в вашем сценарии может быть нежелательным сообщение об ошибке.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Размещение перечислений](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
-- [Метод GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md)
+- [Размещение перечислений](hosting-enumerations.md)
+- [Метод GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md)

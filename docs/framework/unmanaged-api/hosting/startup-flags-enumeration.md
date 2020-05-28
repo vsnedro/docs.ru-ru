@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
 topic_type:
 - apiref
-ms.openlocfilehash: 1799e0af91fa6074f174120b29e2302a27230c62
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b4694efffa0a3dd6fed1f97fc2359c5eb335d440
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73141466"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84006419"
 ---
 # <a name="startup_flags-enumeration"></a>Перечисление STARTUP_FLAGS
 Содержит значения, которые указывают на поведение среды CLR при запуске. По умолчанию сборка мусора не параллельна, и в область, нейтральную к домену, загружается только Библиотека базовых классов.  
@@ -51,7 +51,7 @@ typedef enum {
 } STARTUP_FLAGS;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -68,19 +68,19 @@ typedef enum {
 |`STARTUP_LEGACY_IMPERSONATION`|Указывает, что олицетворение не должно проходить через асинхронные точки по умолчанию.|  
 |`STARTUP_DISABLE_COMMITTHREADSTACK`|Указывает, что весь стек потоков не должен зафиксироваться при запуске потока.|  
 |`STARTUP_ALWAYSFLOW_IMPERSONATION`|Указывает, что управляемые олицетворения и олицетворения, полученные через вызов неуправляемого кода, будут передаваться через асинхронные точки. По умолчанию только управляемые олицетворения будут проходить через асинхронные точки.|  
-|`STARTUP_TRIM_GC_COMMIT`|Указывает, что при нехватке системной памяти сборка мусора будет использовать меньше зафиксированного пространства. См. `gcTrimCommitOnLowMemory` в разделе [Оптимизация для размещения общих веб-](../../../standard/garbage-collection/optimization-for-shared-web-hosting.md)сайтов.|  
-|`STARTUP_ETW`|Указывает, что трассировка событий для Windows (ETW) включена для событий общеязыковой среды выполнения. Начиная с Windows Vista, трассировка событий всегда включена, поэтому этот флаг не действует. См. раздел [Управление ведением журнала .NET Framework](../../../../docs/framework/performance/controlling-logging.md).|  
-|`STARTUP_ARM`|Указывает, что отслеживание ресурсов домена приложения включено. См. свойства <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> и [\<элемент > аппдомаинресаурцемониторинг](../../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
+|`STARTUP_TRIM_GC_COMMIT`|Указывает, что при нехватке системной памяти сборка мусора будет использовать меньше зафиксированного пространства. См `gcTrimCommitOnLowMemory` . раздел [Оптимизация для размещения общих веб-](../../../standard/garbage-collection/optimization-for-shared-web-hosting.md)сайтов.|  
+|`STARTUP_ETW`|Указывает, что трассировка событий для Windows (ETW) включена для событий общеязыковой среды выполнения. Начиная с Windows Vista, трассировка событий всегда включена, поэтому этот флаг не действует. См. раздел [Управление ведением журнала .NET Framework](../../performance/controlling-logging.md).|  
+|`STARTUP_ARM`|Указывает, что отслеживание ресурсов домена приложения включено. См <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> . свойство и [ \<appDomainResourceMonitoring> элемент](../../configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Размещение перечислений](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Размещение перечислений](hosting-enumerations.md)

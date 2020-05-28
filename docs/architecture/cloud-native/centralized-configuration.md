@@ -59,7 +59,7 @@ Key Vault значительно снижает вероятность случ�
 - [Обзор базы данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)
 - [Кэш Azure для Redis](https://azure.microsoft.com/services/cache/)
 - [API Azure Cosmos DB для MongoDB](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)
-- [Служебная шина Azure](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
+- [служебной шине Azure](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
 - [Общие сведения о службе Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)
 - [eShopOnContainers: Создание кластера Kubernetes в AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#create-kubernetes-cluster-in-aks)
 - [eShopOnContainers: Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces)

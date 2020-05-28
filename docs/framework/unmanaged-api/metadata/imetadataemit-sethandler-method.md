@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c6c1aaaf-e2cd-407c-b73e-fbe6ffd83bb3
 topic_type:
 - apiref
-ms.openlocfilehash: 375c4b2cece0bdfd763ae383c5412c9e25614baf
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4fa227d18b8cb10936d93fda9bcaf413ce63ca3b
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177545"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84003958"
 ---
 # <a name="imetadataemitsethandler-method"></a>Метод IMetaDataEmit::SetHandler
-Устанавливает метод, указанный `IUnknown` указателем, в качестве обратного вызова уведомлений для рекарт маркеров.  
+Задает метод, на который ссылается указанный `IUnknown` указатель, в качестве обратного вызова уведомления для повторного сопоставления токена.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,23 +35,23 @@ HRESULT SetHandler (
   
 ## <a name="parameters"></a>Параметры  
  `pUnk`  
- (в) Обработчик для регистрации.  
+ окне Регистрируемый обработчик.  
   
-## <a name="remarks"></a>Remarks  
- Движок метаданных отправляет уведомления с помощью `SetHandler`предоставленного метода компиляторы, которые не генерируют записи оптимизированным способом и которые хотели бы оптимизировать сохраненные записи.  
+## <a name="remarks"></a>Примечания  
+ Обработчик метаданных отправляет уведомление с помощью метода, предоставляемого `SetHandler` , компиляторам, которые не создают записи оптимизированным образом и хотели бы оптимизировать сохраненные записи.  
   
- Если метод обратного откаивается не через, `SetHandler`не будет выполнена оптимизация при `IMapToken` сохранении, за исключением случаев, когда несколько областей импорта были объединены с использованием на слиянии для каждой области.  
+ Если метод обратного вызова не предоставляется через `SetHandler` , то для сохранения не будет выполняться оптимизация, за исключением случаев, когда для каждой области были объединены несколько областей импорта с использованием `IMapToken` On MERGE.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

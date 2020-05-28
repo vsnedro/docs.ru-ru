@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e47a72f1-9609-48ed-bb34-97170d7f6890
 topic_type:
 - apiref
-ms.openlocfilehash: 09a351db65c7ed310d3eb68c71a5207ed6040dd4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dd97c479f12e7bdb015b39a802b398ca2b0bcd3f
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177972"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007641"
 ---
 # <a name="cornativetype-enumeration"></a>Перечисление CorNativeType
 Содержит значения, описывающие собственные неуправляемые типы.  
@@ -85,66 +85,66 @@ typedef enum CorNativeType {
 } CorNativeType;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`NATIVE_TYPE_END`|Устаревшее.|  
 |`NATIVE_TYPE_VOID`|Устаревшее.|  
-|`NATIVE_TYPE_BOOLEAN`|4-байт Boolean значение, где правда не является нулевым и FALSE равна нулю.|  
-|`NATIVE_TYPE_I1`|Подписанное 8-битное значение.|  
-|`NATIVE_TYPE_U1`|Неподписанное 8-битное значение.|  
-|`NATIVE_TYPE_I2`|Подписанное 16-битное значение.|  
-|`NATIVE_TYPE_U2`|Неподписанное 16-битное значение.|  
+|`NATIVE_TYPE_BOOLEAN`|4-байтовое логическое значение, где TRUE — ненулевое, а FALSE — ноль.|  
+|`NATIVE_TYPE_I1`|8-разрядное целое значение со знаком.|  
+|`NATIVE_TYPE_U1`|8-разрядное целочисленное значение без знака.|  
+|`NATIVE_TYPE_I2`|16-разрядное целое значение со знаком.|  
+|`NATIVE_TYPE_U2`|16-разрядное целочисленное значение без знака.|  
 |`NATIVE_TYPE_I4`|32-разрядное целое значение со знаком.|  
 |`NATIVE_TYPE_U4`|32-разрядное целое значение без знака.|  
-|`NATIVE_TYPE_I8`|Подписанное 64-битное значение.|  
-|`NATIVE_TYPE_U8`|Неподписанное 64-битное значение.|  
-|`NATIVE_TYPE_R4`|4-байт плавающего точки численное значение.|  
-|`NATIVE_TYPE_R8`|8-байт плавающего точки численное значение.|  
+|`NATIVE_TYPE_I8`|64-разрядное целочисленное значение со знаком.|  
+|`NATIVE_TYPE_U8`|64-разрядное целочисленное значение без знака.|  
+|`NATIVE_TYPE_R4`|4-байтовое числовое значение с плавающей запятой.|  
+|`NATIVE_TYPE_R8`|8-байтовое числовое значение с плавающей запятой.|  
 |`NATIVE_TYPE_SYSCHAR`|Устаревшее.|  
 |`NATIVE_TYPE_VARIANT`|Устаревшее.|  
-|`NATIVE_TYPE_CURRENCY`|Тип числового COM, соответствующий <xref:System.Decimal> управляемому типу.|  
+|`NATIVE_TYPE_CURRENCY`|Числовой COM-тип, соответствующий управляемому <xref:System.Decimal> типу.|  
 |`NATIVE_TYPE_PTR`|Устаревшее.|  
 |`NATIVE_TYPE_DECIMAL`|Устаревшее.|  
 |`NATIVE_TYPE_DATE`|Устаревшее.|  
 |`NATIVE_TYPE_BSTR`|COM-взаимодействие.|  
-|`NATIVE_TYPE_LPSTR`|Значение строки LPSTR.|  
-|`NATIVE_TYPE_LPWSTR`|Значение строки LPWSTR.|  
-|`NATIVE_TYPE_LPTSTR`|Значение строки LPTSTR.|  
-|`NATIVE_TYPE_FIXEDSYSSTRING`|Фиксированное, системное значение строки.|  
+|`NATIVE_TYPE_LPSTR`|Строковое значение LPSTR.|  
+|`NATIVE_TYPE_LPWSTR`|Строковое значение LPWSTR.|  
+|`NATIVE_TYPE_LPTSTR`|Строковое значение LPTSTR.|  
+|`NATIVE_TYPE_FIXEDSYSSTRING`|Фиксированное, определяемое системой строковое значение.|  
 |`NATIVE_TYPE_OBJECTREF`|Устаревшее.|  
 |`NATIVE_TYPE_IUNKNOWN`|COM-взаимодействие.|  
 |`NATIVE_TYPE_IDISPATCH`|COM-взаимодействие.|  
-|`NATIVE_TYPE_STRUCT`|Нативное значение структуры.|  
+|`NATIVE_TYPE_STRUCT`|Значение собственной структуры.|  
 |`NATIVE_TYPE_INTF`|COM-взаимодействие.|  
 |`NATIVE_TYPE_SAFEARRAY`|COM-взаимодействие.|  
 |`NATIVE_TYPE_FIXEDARRAY`|Значение массива фиксированной длины.|  
-|`NATIVE_TYPE_INT`|Родной 16-битный подписанный integer значение.|  
-|`NATIVE_TYPE_UINT`|Родной 16-битный неподписанный ряд.|  
+|`NATIVE_TYPE_INT`|Собственное 16-разрядное целое число со знаком.|  
+|`NATIVE_TYPE_UINT`|Собственное 16-битовое целочисленное значение без знака.|  
 |`NATIVE_TYPE_NESTEDSTRUCT`|Устаревшее.<br /><br /> Используйте NATIVE_TYPE_STRUCT.|  
 |`NATIVE_TYPE_BYVALSTR`|COM-взаимодействие.|  
 |`NATIVE_TYPE_ANSIBSTR`|COM-взаимодействие.|  
-|`NATIVE_TYPE_TBSTR`|COM-взаимодействие.<br /><br /> Выберите BSTR или ANSIBSTR в зависимости от платформы.|  
-|`NATIVE_TYPE_VARIANTBOOL`|2-байт Boolean значение, где true является -1 и FALSE равна нулю.|  
+|`NATIVE_TYPE_TBSTR`|COM-взаимодействие.<br /><br /> Выберите BSTR или АНСИБСТР в зависимости от платформы.|  
+|`NATIVE_TYPE_VARIANTBOOL`|2-байтовое логическое значение, где TRUE равно-1, а FALSE — нуль.|  
 |`NATIVE_TYPE_FUNC`|Указатель функции.|  
-|`NATIVE_TYPE_ASANY`|Ссылка на любой родной тип.|  
-|`NATIVE_TYPE_ARRAY`|Ссылка на массив с членами неопределенного типа.|  
-|`NATIVE_TYPE_LPSTRUCT`|32-битный рядуказатель к структуре.|  
-|`NATIVE_TYPE_CUSTOMMARSHALER`|Пользовательский родной тип маршала.<br /><br /> За этим должна последовать строка следующего формата: "Имя типа Native type/0Custom marshaler Type name/0Optional cookie/0" или "Родной тип GUID/0Custom marshaler type name/0Optional cookie/0"|  
-|`NATIVE_TYPE_ERROR`|COM-взаимодействие.<br /><br /> С ELEMENT_TYPE_I4 карты этого типа для VT_HRESULT.|  
-|`NATIVE_TYPE_IINSPECTABLE`|Родной `IInspectable` тип.|  
-|`NATIVE_TYPE_HSTRING`|Родной `HString`.|  
+|`NATIVE_TYPE_ASANY`|Ссылка на любой собственный тип.|  
+|`NATIVE_TYPE_ARRAY`|Ссылка на массив с элементами незаданного типа.|  
+|`NATIVE_TYPE_LPSTRUCT`|32-разрядный целочисленный указатель на структуру.|  
+|`NATIVE_TYPE_CUSTOMMARSHALER`|Собственный тип пользовательского модуля упаковки.<br /><br /> После этого должен быть указан строковый формат: "имя собственного типа/имя типа модуля маршалирования/0Optional cookie/0" или "{native Type GUID}/0Custom имя типа-маршалером/0Optional файл cookie/0"|  
+|`NATIVE_TYPE_ERROR`|COM-взаимодействие.<br /><br /> С ELEMENT_TYPE_I4 этот тип сопоставляется с VT_HRESULT.|  
+|`NATIVE_TYPE_IINSPECTABLE`|Собственный `IInspectable` тип.|  
+|`NATIVE_TYPE_HSTRING`|Собственный `HString` .|  
 |`NATIVE_TYPE_MAX`|Недопустимое значение.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** CorHdr.h  
+ **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.Runtime.InteropServices.UnmanagedType>
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

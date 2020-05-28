@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3ca41592-b8da-475a-8032-a15627730003
 topic_type:
 - apiref
-ms.openlocfilehash: f85a36c810df52f871ecc75b92a3b4440455c66b
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 0ed1579886f1682348a136be3391f6bdc2543d26
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74450292"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007394"
 ---
 # <a name="corfilemapping-enumeration"></a>Перечисление CorFileMapping
-Содержит значения, описывающие тип сопоставления файлов, возвращаемого при вызове метода [иметадатаинфо:: GetFileMapping](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md) .  
+Содержит значения, описывающие тип сопоставления файлов, возвращаемого при вызове метода [иметадатаинфо:: GetFileMapping](imetadatainfo-getfilemapping-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,21 +35,21 @@ typedef enum CorFileMapping {
 } CorFileMapping;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`fmFlat`|Файл сопоставляется как файл данных. То есть флаг `SEC_IMAGE` не был передан функции Microsoft Win32 `CreateFileMapping`.|  
-|`fmExecutableImage`|Файл сопоставляется для выполнения с помощью функции `LoadLibrary` или функции `CreateFileMapping` с флагом `SEC_IMAGE`.|  
+|`fmFlat`|Файл сопоставляется как файл данных. То есть `SEC_IMAGE` флаг не был передан функции Microsoft Win32 `CreateFileMapping` .|  
+|`fmExecutableImage`|Файл сопоставляется для выполнения с помощью `LoadLibrary` функции или `CreateFileMapping` функции с `SEC_IMAGE` флагом.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
-- [Метод GetFileMapping](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md)
+- [Перечисления метаданных](metadata-enumerations.md)
+- [Метод GetFileMapping](imetadatainfo-getfilemapping-method.md)

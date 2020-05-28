@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0eaa4aa9-9441-444a-920c-e4b2a2db899e
 topic_type:
 - apiref
-ms.openlocfilehash: dfa900e2184a8c415d75f5702c572b14c4018749
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a90deaf3e9ddf326c6fca558cbb4681fc40e022d
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177788"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84009058"
 ---
 # <a name="imetadataassemblyimportgetassemblyprops-method"></a>Метод IMetaDataAssemblyImport::GetAssemblyProps
-Получает набор свойств для сборки с указанной подписью метаданных.  
+Возвращает набор свойств для сборки с указанной сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,41 +43,41 @@ HRESULT GetAssemblyProps (
   
 ## <a name="parameters"></a>Параметры  
  `mda`  
- [in]. Токен `mdAssembly` метаданных, представляющий сборку, для которой можно получить свойства.  
+ [in]. `mdAssembly`Токен метаданных, представляющий сборку, для которой необходимо получить свойства.  
   
  `ppbPublicKey`  
- (ваут) Указатель на открытый ключ или токен метаданных.  
+ заполняет Указатель на открытый ключ или маркер метаданных.  
   
  `pcbPublicKey`  
- (ваут) Количество байтов в возвращенном публичном ключе.  
+ заполняет Число байтов в возвращенном открытом ключе.  
   
  `pulHashAlgId`  
- (ваут) Указатель на алгоритм, используемый для хэширования файлов в сборке.  
+ заполняет Указатель на алгоритм, используемый для хэширования файлов в сборке.  
   
  `szName`  
- (ваут) Простое название сборки.  
+ заполняет Простое имя сборки.  
   
  `cchName`  
- (в) Размер, в широких chars, . `szName`  
+ окне Размер (в расширенных символах) для `szName` .  
   
  `pchName`  
- (ваут) Количество широких chars фактически `szName`вернулся в .  
+ заполняет Число расширенных символов, фактически возвращаемых в `szName` .  
   
  `pMetaData`  
- (ваут) Указатель на структуру ASSEMBLYMETADATA, содержащую метаданные сборки.  
+ заполняет Указатель на структуру ASSEMBLYMETADATA, содержащую метаданные сборки.  
   
  `pdwAssemblyFlags`  
- (ваут) Флаги, описывающие метаданные, применяемые к сборке. Это значение представляет собой сочетание одного или нескольких значений [CorAssemblyFlags.](../../../../docs/framework/unmanaged-api/metadata/corassemblyflags-enumeration.md)  
+ заполняет Флаги, описывающие метаданные, применяемые к сборке. Это значение представляет собой сочетание одного или нескольких значений [корассемблифлагс](corassemblyflags-enumeration.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

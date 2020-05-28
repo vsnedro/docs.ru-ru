@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5c4c1dc2-d40d-4173-bbe6-7058fb21c98f
 topic_type:
 - apiref
-ms.openlocfilehash: eb3ecbf39376e7126b5ec93a26badcbf5076d1db
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 479cb25ad8e1c263d3539a4203ac5bea781eb931
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175789"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84009383"
 ---
 # <a name="imetadataemitdefineproperty-method"></a>Метод IMetaDataEmit::DefineProperty
-Создает определение свойства для указанного типа `get` `set` с указанными и доступными для метода, и получает маркер к определению этого свойства.  
+Создает определение свойства для указанного типа с указанными `get` `set` методами доступа и и получает маркер для этого определения свойства.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,51 +46,51 @@ HRESULT DefineProperty (
   
 ## <a name="parameters"></a>Параметры  
  `td`  
- (в) Токен для класса или интерфейса, на котором определяется свойство.  
+ окне Токен для класса или интерфейса, для которого определяется свойство.  
   
  `szProperty`  
  [in] Имя свойства.  
   
  `dwPropFlags`  
- (в) Флаги свойств.  
+ окне Флаги свойств.  
   
  `pvSig`  
- (в) Подпись собственности.  
+ окне Сигнатура свойства.  
   
  `cbSig`  
- (в) Количество байтов `pvSig`в .  
+ окне Число байтов в `pvSig` .  
   
  `dwCPlusTypeFlag`  
- (в) Тип значения по умолчанию.  
+ окне Тип значения свойства по умолчанию.  
   
  `pValue`  
- (в) Значение значения по умолчанию для свойства.  
+ окне Значение по умолчанию для свойства.  
   
  `cchValue`  
- (в) Количество символов (Unicode) `pValue`в .  
+ окне Число символов Юникода в `pValue` .  
   
  `mdSetter`  
- (в) Метод, устанавливающие значение свойства.  
+ окне Метод, который задает значение свойства.  
   
  `mdGetter`  
- (в) Метод, который получает значение свойства.  
+ окне Метод, который получает значение свойства.  
   
  `rmdOtherMethods[]`  
- (в) Массив других методов, связанных с свойством. Упраздните `mdTokenNil`массив с помощью .  
+ окне Массив других методов, связанных со свойством. Завершите массив с помощью `mdTokenNil` .  
   
  `pmdProp`  
- (ваут) Назначенный `mdProperty` маркер.  
+ заполняет `mdProperty`Назначенный маркер.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3b039e50-63ec-4730-99ff-2327408de477
 topic_type:
 - apiref
-ms.openlocfilehash: f664e694303691fb1132150037dcbcdb5549539a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 720133e64c02aa09c9ff7e43a20630b0d55c1acf
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177531"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008759"
 ---
 # <a name="imetadataemitseteventprops-method"></a>Метод IMetaDataEmit::SetEventProps
-Устанавливает или обновляет указанную функцию события, определяемую предыдущим вызовом [на IMetaDataEmit::DefineEvent](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-defineevent-method.md).  
+Задает или обновляет указанную функцию события, определенного при предыдущем вызове метода [IMetaDataEmit::D ефинивент](imetadataemit-defineevent-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,36 +41,36 @@ HRESULT SetEventProps (
   
 ## <a name="parameters"></a>Параметры  
  `ev`  
- (в) Токен события.  
+ окне Токен события.  
   
  `dwEventFlags`  
- (в) Флаги событий. Это битмаска ценностей. `CorEventAttr`  
+ окне Флаги событий. Это битовая маска `CorEventAttr` значений.  
   
  `tkEventType`  
- (в) Токен для класса событий. Это либо `mdTypeDef` знак, `mdTypeRef` либо жетон.  
+ окне Токен для класса событий. Это либо маркер, либо `mdTypeDef` `mdTypeRef` .  
   
  `mdAddOn`  
- (в) Метод, используемый для подписки на событие, или нулевой.  
+ окне Метод, используемый для подписки на событие, или значение null.  
   
  `mdRemoveOn`  
- (в) Метод, используемый для отписаться от события или свести на нет.  
+ окне Метод, используемый для отмены подписки на событие или значение null.  
   
  `mdFire`  
- (в) Метод, используемый (производным классом) для поднятия события.  
+ окне Метод, используемый (производным классом) для вызова события.  
   
  `rmdOtherMethods[]`  
- (в) Массив токенов для других методов, связанных с событием. Последний элемент массива `mdMethodDefNil`должен быть.  
+ окне Массив токенов для других методов, связанных с событием. Последний элемент массива должен быть `mdMethodDefNil` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

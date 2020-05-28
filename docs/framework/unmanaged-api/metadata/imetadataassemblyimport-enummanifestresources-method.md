@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9543b111-5705-40c9-935c-a3ffc7a581aa
 topic_type:
 - apiref
-ms.openlocfilehash: 22141cf46a965c0624c076bd1d86d2624e5a09f3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 560a6adf85fab7f421b86cba52224d5b1bfe1089
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176023"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84006263"
 ---
 # <a name="imetadataassemblyimportenummanifestresources-method"></a>Метод IMetaDataAssemblyImport::EnumManifestResources
-Получает указатель на регистратор для ресурсов, упомянутых в текущем манифесте сборки.  
+Возвращает указатель на перечислитель для ресурсов, указанных в текущем манифесте сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,33 +38,33 @@ HRESULT EnumManifestResources (
   
 ## <a name="parameters"></a>Параметры  
  `phEnum`  
- (в, вне) Указатель на регистратор. Это должно быть нулевая величина, `EnumManifestResources` когда метод вызывается в первый раз.  
+ [вход, выход] Указатель на перечислитель. Это значение должно быть null, если `EnumManifestResources` метод вызывается в первый раз.  
   
  `rManifestResources`  
- (ваут) Массив, используемый `mdManifestResource` для хранения токенов метаданных.  
+ заполняет Массив, используемый для хранения `mdManifestResource` маркеров метаданных.  
   
  `cMax`  
- (в) Максимальное количество `mdManifestResource` токенов, которые `rManifestResources`могут быть размещены в .  
+ окне Максимальное число `mdManifestResource` токенов, которые могут быть помещены в `rManifestResources` .  
   
  `pcTokens`  
- (ваут) Количество `mdManifestResource` токенов фактически помещено в `rManifestResources`.  
+ заполняет Количество маркеров, которые `mdManifestResource` в действительности помещаются в `rManifestResources` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumManifestResources`вернулся успешно.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом `pcTokens` случае, устанавливается до нуля.|  
+|`S_OK`|`EnumManifestResources`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае `pcTokens` имеет значение 0.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

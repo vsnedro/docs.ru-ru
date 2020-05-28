@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0b284b18-0084-4b3a-912a-5ebe9f29c88b
 topic_type:
 - apiref
-ms.openlocfilehash: c88b7a401a19b1bd0e02edab7ef7bbee1372199e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 612463bca18c23fac0b086adde2d208a0fbc5ae5
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74432078"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008174"
 ---
 # <a name="imetadataassemblyemitdefineassemblyref-method"></a>Метод IMetaDataAssemblyEmit::DefineAssemblyRef
 Создает структуру `AssemblyRef`, содержащую метаданные для сборки, на которую ссылается данная сборка, и возвращает связанный токен метаданных.  
@@ -42,10 +42,10 @@ HRESULT DefineAssemblyRef (
   
 ## <a name="parameters"></a>Параметры  
  `pbPublicKeyOrToken`  
- окне Открытый ключ издателя сборки, на которую указывает ссылка. Вспомогательную функцию [StrongNameTokenFromAssembly](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfromassembly-function.md) можно использовать, чтобы получить хэш открытого ключа для передачи в качестве этого параметра.  
+ окне Открытый ключ издателя сборки, на которую указывает ссылка. Вспомогательную функцию [StrongNameTokenFromAssembly](../strong-naming/strongnametokenfromassembly-function.md) можно использовать, чтобы получить хэш открытого ключа для передачи в качестве этого параметра.  
   
  `cbPublicKeyOrToken`  
- окне Размер в байтах `pbPublicKeyOrToken`.  
+ окне Размер в байтах для `pbPublicKeyOrToken` .  
   
  `szName`  
  окне Понятное для человека текстовое имя сборки. Это значение не должно превышать 1024 символов.  
@@ -54,31 +54,31 @@ HRESULT DefineAssemblyRef (
  окне Экземпляр ASSEMBLYMETADATA, содержащий сведения о версии, платформе и языковой стандарте сборки, на которую указывает ссылка.  
   
  `pbHashValue`  
- окне Хэш-данные, связанные с упоминаемой сборкой. Необязательно.  
+ окне Хэш-данные, связанные с упоминаемой сборкой. Необязательный параметр.  
   
  `cbHashValue`  
- окне Размер в байтах `pbHashValue`.  
+ окне Размер в байтах для `pbHashValue` .  
   
  `dwAssemblyRefFlags`  
- окне Побитовое сочетание значений [корассемблифлагс](../../../../docs/framework/unmanaged-api/metadata/corassemblyflags-enumeration.md) , влияющих на поведение подсистемы выполнения.  
+ окне Побитовое сочетание значений [корассемблифлагс](corassemblyflags-enumeration.md) , влияющих на поведение подсистемы выполнения.  
   
  `pmdar`  
- заполняет Указатель на возвращаемый маркер `AssemblyRef` метаданных.  
+ заполняет Указатель на возвращаемый `AssemblyRef` маркер метаданных.  
   
 ## <a name="remarks"></a>Примечания  
- Для каждой сборки, на которую ссылается эта сборка, необходимо определить одну `AssemblyRef` структуру метаданных.  
+ `AssemblyRef`Для каждой сборки, на которую ссылается эта сборка, должна быть определена одна структура метаданных.  
   
  Во время выполнения сведения о сборке, на которую указывает ссылка, передаются распознавателю сборок с указанием, что они представляют "как встроенные" сведения. Затем сопоставитель сборок применяет политику.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

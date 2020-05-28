@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 91b633d7-9e75-43c3-a8d2-2144984e5f9e
 topic_type:
 - apiref
-ms.openlocfilehash: f79320d5b7d2ad4ad44a79fae063ce6718490a70
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 7c6adcbcfe64f63048078b4ccba6727a58531033
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74431947"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008109"
 ---
 # <a name="imetadataassemblyemitsetassemblyprops-method"></a>Метод IMetaDataAssemblyEmit::SetAssemblyProps
 Изменяет указанную структуру метаданных `Assembly`.  
@@ -41,13 +41,13 @@ HRESULT SetAssemblyProps (
   
 ## <a name="parameters"></a>Параметры  
  `pma`  
- окне Маркер метаданных, указывающий структуру метаданных `Assembly`, которую необходимо изменить.  
+ окне Токен метаданных, указывающий `Assembly` структуру метаданных, которую необходимо изменить.  
   
  `pbPublicKey`  
  окне Указатель на открытый ключ издателя сборки.  
   
  `cbPublicKey`  
- окне Размер в байтах `pbPublicKey`.  
+ окне Размер в байтах для `pbPublicKey` .  
   
  `ulHashAlgId`  
  окне Идентификатор хэш-алгоритма, используемого для хэширования файлов сборки.  
@@ -59,20 +59,20 @@ HRESULT SetAssemblyProps (
  окне Указатель на ASSEMBLYMETADATA, содержащий сведения о версии, платформе и локали для сборки.  
   
  `dwAssemblyFlags`  
- окне Побитовое сочетание значений [AssemblyFlags](../../../../docs/framework/unmanaged-api/metadata/assemblyflags-enumeration.md) , задающих различные атрибуты сборки.  
+ окне Побитовое сочетание значений [AssemblyFlags](assemblyflags-enumeration.md) , задающих различные атрибуты сборки.  
   
 ## <a name="remarks"></a>Примечания  
- Чтобы создать `Assembly` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинеассембли](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineassembly-method.md) .  
+ Чтобы создать `Assembly` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинеассембли](imetadataassemblyemit-defineassembly-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформа:** См. раздел [требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

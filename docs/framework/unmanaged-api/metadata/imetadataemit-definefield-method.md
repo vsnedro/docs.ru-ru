@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6b5be4fc-2e86-499c-8b09-833160bca767
 topic_type:
 - apiref
-ms.openlocfilehash: 8ca5ab70f60de4d783800fb18612a8f04cb9cee1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ccc4843864f375c167acdb12575c282dbe3a49e1
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177704"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84004820"
 ---
 # <a name="imetadataemitdefinefield-method"></a>Метод IMetaDataEmit::DefineField
-Создает определение для поля с указанной подписью метаданных и получает маркер в этом определении поля.  
+Создает определение для поля с указанной сигнатурой метаданных и получает маркер для этого определения поля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,42 +43,42 @@ HRESULT DefineField (
   
 ## <a name="parameters"></a>Параметры  
  `td`  
- (в) Токен `mdTypeDef` для прилагающего класса или интерфейса.  
+ окне `mdTypeDef`Токен для включающего класса или интерфейса.  
   
  `szName`  
- (в) Название поля в Unicode.  
+ окне Имя поля в Юникоде.  
   
  `dwFieldFlags`  
- (в) Атрибуты поля. Это битмаска ценностей. `CorFieldAttr`  
+ окне Атрибуты поля. Это битовая маска `CorFieldAttr` значений.  
   
  `pvSigBlob`  
- (в) Подпись поля как BLOB.  
+ окне Подпись поля в виде большого двоичного объекта.  
   
  `cbSigBlob`  
- (в) Количество байтов `pvSigBlob`в .  
+ окне Число байтов в `pvSigBlob` .  
   
  `dwCPlusTypeFlag`  
- (в) Для `ELEMENT_TYPE_` *\** постоянного значения. Это `CorElementType` значение. Если не определить постоянное значение `ELEMENT_TYPE_END`для поля, используйте .  
+ окне `ELEMENT_TYPE_` *\** Значение для постоянного значения. Это `CorElementType` значение. Если для поля не определено постоянное значение, используйте `ELEMENT_TYPE_END` .  
   
  `pValue`  
- (в) Постоянное значение для поля.  
+ окне Постоянное значение для поля.  
   
  `cchValue`  
- (в) Размер в (Unicode) символы `pValue`.  
+ окне Размер символов (в Юникоде) `pValue` .  
   
  `pmd`  
- (ваут) Назначенный `mdFieldDef` маркер.  
+ заполняет `mdFieldDef`Назначенный маркер.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 1edd1670-976a-4fc8-bef7-7c41e60ad989
 topic_type:
 - apiref
-ms.openlocfilehash: 411fad0accb59431f776c5bd66e8bd3027ddd907
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: e8065a5492884a4b7f5d662737e4beddc6fca5b3
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74450156"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007602"
 ---
 # <a name="cornotificationfortokenmovement-enumeration"></a>Перечисление CorNotificationForTokenMovement
 Указывает уведомления, которые будут отправляться клиенту API метаданных при выполнении сопоставления маркеров.  
@@ -59,44 +59,44 @@ typedef enum CorNotificationForTokenMovement {
 } CorNotificationForTokenMovement;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`MDNotifyDefault`|Уведомлять при перемещении маркеров `mdTypeRef`, `mdMethodDef`, `mdMemberRef`или `mdFieldDef`.|  
+|`MDNotifyDefault`|Уведомлять при `mdTypeRef` `mdMethodDef` `mdMemberRef` `mdFieldDef` перемещении токенов,, или.|  
 |`MDNotifyAll`|Уведомлять при перемещении токена.|  
 |`MDNotifyNone`|Не уведомлять при перемещении токенов.|  
-|`MDNotifyMethodDef`|Уведомлять при перемещении маркера `mdMethodDef`.|  
-|`MDNotifyMemberRef`|Уведомлять при перемещении маркера `mdMemberRef`.|  
-|`MDNotifyFieldDef`|Уведомлять при перемещении маркера `mdFieldDef`.|  
-|`MDNotifyTypeRef`|Уведомлять при перемещении маркера `mdTypeRef`.|  
-|`MDNotifyTypeDef`|Уведомлять при перемещении маркера `mdTypeDef`.|  
-|`MDNotifyParamDef`|Уведомлять при перемещении маркера `mdParamDef`.|  
-|`MDNotifyInterfaceImpl`|Уведомлять при перемещении маркера `mdInterfaceImpl`.|  
-|`MDNotifyProperty`|Уведомлять при перемещении маркера `mdProperty`.|  
-|`MDNotifyEvent`|Уведомлять при перемещении маркера `mdEvent`.|  
-|`MDNotifySignature`|Уведомлять при перемещении маркера `mdSignature`.|  
-|`MDNotifyTypeSpec`|Уведомлять при перемещении маркера `mdTypeSpec`.|  
-|`MDNotifyCustomAttribute`|Уведомлять при перемещении маркера `mdCustomAttribute`.|  
-|`MDNotifySecurityValue`|Уведомлять при перемещении маркера `mdSecurityValue`.|  
-|`MDNotifyPermission`|Уведомлять при перемещении маркера `mdPermission`.|  
-|`MDNotifyModuleRef`|Уведомлять при перемещении маркера `mdModuleRef`.|  
-|`MDNotifyNameSpace`|Уведомлять при перемещении маркера `mdNameSpace`.|  
-|`MDNotifyAssemblyRef`|Уведомлять при перемещении маркера `mdAssemblyRef`.|  
-|`MDNotifyFile`|Уведомлять при перемещении маркера `mdFile`.|  
-|`MDNotifyExportedType`|Уведомлять при перемещении маркера `mdExportedType`.|  
-|`MDNotifyResource`|Уведомлять при перемещении маркера `mdManifestResource`.|  
+|`MDNotifyMethodDef`|Уведомлять при `mdMethodDef` перемещении маркера.|  
+|`MDNotifyMemberRef`|Уведомлять при `mdMemberRef` перемещении маркера.|  
+|`MDNotifyFieldDef`|Уведомлять при `mdFieldDef` перемещении маркера.|  
+|`MDNotifyTypeRef`|Уведомлять при `mdTypeRef` перемещении маркера.|  
+|`MDNotifyTypeDef`|Уведомлять при `mdTypeDef` перемещении маркера.|  
+|`MDNotifyParamDef`|Уведомлять при `mdParamDef` перемещении маркера.|  
+|`MDNotifyInterfaceImpl`|Уведомлять при `mdInterfaceImpl` перемещении маркера.|  
+|`MDNotifyProperty`|Уведомлять при `mdProperty` перемещении маркера.|  
+|`MDNotifyEvent`|Уведомлять при `mdEvent` перемещении маркера.|  
+|`MDNotifySignature`|Уведомлять при `mdSignature` перемещении маркера.|  
+|`MDNotifyTypeSpec`|Уведомлять при `mdTypeSpec` перемещении маркера.|  
+|`MDNotifyCustomAttribute`|Уведомлять при `mdCustomAttribute` перемещении маркера.|  
+|`MDNotifySecurityValue`|Уведомлять при `mdSecurityValue` перемещении маркера.|  
+|`MDNotifyPermission`|Уведомлять при `mdPermission` перемещении маркера.|  
+|`MDNotifyModuleRef`|Уведомлять при `mdModuleRef` перемещении маркера.|  
+|`MDNotifyNameSpace`|Уведомлять при `mdNameSpace` перемещении маркера.|  
+|`MDNotifyAssemblyRef`|Уведомлять при `mdAssemblyRef` перемещении маркера.|  
+|`MDNotifyFile`|Уведомлять при `mdFile` перемещении маркера.|  
+|`MDNotifyExportedType`|Уведомлять при `mdExportedType` перемещении маркера.|  
+|`MDNotifyResource`|Уведомлять при `mdManifestResource` перемещении маркера.|  
   
 ## <a name="remarks"></a>Примечания  
  Маркер может быть повторно сопоставлен (т. е. перемещен) во время слияния метаданных.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

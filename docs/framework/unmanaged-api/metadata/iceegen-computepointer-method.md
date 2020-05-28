@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b6b95c04-0f2c-4fcc-a8bc-3b1dcbdba731
 topic_type:
 - apiref
-ms.openlocfilehash: 9587bbe8f087fd9a51bba67492af1d5acb53ae4a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 206dcd3a0a82da9b6211c8c2045e4e9d3d991973
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176101"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008876"
 ---
 # <a name="iceegencomputepointer-method"></a>Метод ICeeGen::ComputePointer
 Определяет буфер для указанного раздела кода.  
@@ -39,23 +39,23 @@ HRESULT ComputePointer (
   
 ## <a name="parameters"></a>Параметры  
  `section`  
- (в) Раздел кода, для которого можно вернуть буфер.  
+ окне Раздел кода, для которого возвращается буфер.  
   
  `RVA`  
- (в) Относительный виртуальный адрес метода, для которого можно получить указатель.  
+ окне Относительный виртуальный адрес метода, для которого необходимо получить указатель.  
   
  `lpBuffer`  
- (ваут) Указатель на возвращенный буфер.  
+ заполняет Указатель на возвращаемый буфер.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [Интерфейс ICeeGen](iceegen-interface.md)

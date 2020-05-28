@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 58ac8202-854d-4efd-acfb-d2da8b446e12
 topic_type:
 - apiref
-ms.openlocfilehash: 95a798d662b44cf2e088af84d3b1eec97da8e7fb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b6651f30e0df3a5ffc29d310b9067e76761dcf01
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177945"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007537"
 ---
 # <a name="corpropertyattr-enumeration"></a>Перечисление CorPropertyAttr
 Содержит значения, описывающие метаданные свойства.  
@@ -38,23 +38,23 @@ typedef enum CorPropertyAttr {
 } CorPropertyAttr;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`prSpecialName`|Уточняется, что свойство является особенным, и что его название описывает, как.|  
-|`prReservedMask`|Зарезервировано для внутреннего использования общим временем выполнения языка.|  
-|`prRTSpecialName`|Уточняется, что внутренние AAIs с общим временем выполнения языка должны проверять кодирование имени свойства.|  
+|`prSpecialName`|Указывает, что свойство является специальным, и что его имя описывает, как это делать.|  
+|`prReservedMask`|Зарезервировано для внутреннего использования средой CLR.|  
+|`prRTSpecialName`|Указывает, что внутренние API метаданных среды CLR должны проверять кодировку имени свойства.|  
 |`prHasDefault`|Указывает, что свойство имеет значение по умолчанию.|  
 |`prUnused`|Не используется.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** CorHdr.h  
+ **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

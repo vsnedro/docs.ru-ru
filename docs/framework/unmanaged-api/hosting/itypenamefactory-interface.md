@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: fa4247c4-f4f1-4855-9241-e04d737f5f73
 topic_type:
 - apiref
-ms.openlocfilehash: f224ecc60822862d7c587d7094011d8232fb2b09
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 5356ae201dcab423bcb9539031a1a61d23cbb131
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73123332"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008616"
 ---
 # <a name="itypenamefactory-interface"></a>Интерфейс ITypeNameFactory
 Предоставляет методы для деконструирования имени типа.  
@@ -27,15 +27,15 @@ ms.locfileid: "73123332"
  Этот интерфейс поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейсы размещения](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Кокласс TypeNameFactory](../../../../docs/framework/unmanaged-api/hosting/typenamefactory-coclass.md)
+- [Интерфейсы размещения](hosting-interfaces.md)
+- [Компонентный класс TypeNameFactory](typenamefactory-coclass.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: cf064bac-9a9f-41c5-9e1d-108ff7af3afe
 topic_type:
 - apiref
-ms.openlocfilehash: a9598be850604f16ee8cc62187e1fed7ecf3a7e4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7babd0a90b9882acb03b6360753f55c57a399b9e
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175854"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84005639"
 ---
 # <a name="imetadataemitdefineevent-method"></a>Метод IMetaDataEmit::DefineEvent
-Создает определение события с указанной подписью метаданных и получает маркер к определению этого события.  
+Создает определение для события с указанной сигнатурой метаданных и получает маркер для этого определения события.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,42 +43,42 @@ HRESULT DefineEvent (
   
 ## <a name="parameters"></a>Параметры  
  `td`  
- (в) Токен для целевого класса или интерфейса. Это либо `mdTypeDef` знак, либо `mdTypeDefNil` маркер.  
+ окне Токен для целевого класса или интерфейса. Это либо токен, `mdTypeDef` либо `mdTypeDefNil` .  
   
  `szEvent`  
  [in] Имя события.  
   
  `dwEventFlags`  
- (в) Флаги событий.  
+ окне Флаги событий.  
   
  `tkEventType`  
- (в) Токен для класса событий. `mdTypeDef`Это, a `mdTypeRef`, или `mdTokenNil` маркер.  
+ окне Токен для класса событий. Это `mdTypeDef` , `mdTypeRef` или, или `mdTokenNil` маркер.  
   
  `mdAddOn`  
- (в) Метод, используемый для подписки на событие, или нулевой.  
+ окне Метод, используемый для подписки на событие, или значение null.  
   
  `mdRemoveOn`  
- (в) Метод, используемый для отписаться от события или свести на нет.  
+ окне Метод, используемый для отмены подписки на событие или значение null.  
   
  `mdFire`  
- (в) Метод, используемый (производным классом) для поднятия события.  
+ окне Метод, используемый (производным классом) для вызова события.  
   
  `rmdOtherMethods[]`  
- (в) Массив токенов для других методов, связанных с событием. Массив завершается маркером. `mdMethodDefNil`  
+ окне Массив токенов для других методов, связанных с событием. Массив завершается `mdMethodDefNil` токеном.  
   
  `pmdEvent`  
- (ваут) Токен метаданных, назначенный событию.  
+ заполняет Маркер метаданных, назначенный событию.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

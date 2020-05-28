@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
 topic_type:
 - apiref
-ms.openlocfilehash: 6ad6bbb8a4c69f575bbeba3a297c46e049a97325
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fb381a872cbeb787da0c6920f2cdeef434fb33ea
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176049"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008096"
 ---
 # <a name="imetadataassemblyemitsetassemblyrefprops-method"></a>Метод IMetaDataAssemblyEmit::SetAssemblyRefProps
 Изменяет указанную структуру метаданных `AssemblyRef`.  
@@ -42,41 +42,41 @@ HRESULT SetAssemblyRefProps (
   
 ## <a name="parameters"></a>Параметры  
  `ar`  
- (в) Токен метаданных, который определяет `AssemblyRef` структуру метаданных для изменения.  
+ окне Токен метаданных, указывающий `AssemblyRef` структуру метаданных, которую необходимо изменить.  
   
  `pbPublicKeyOrToken`  
- (в) Открытый ключ издателя ссылки сборки.  
+ окне Открытый ключ издателя сборки, на которую указывает ссылка.  
   
  `cbPublicKeyOrToken`  
- (в) Размер байтов `pbPublicKeyOrToken`.  
+ окне Размер в байтах для `pbPublicKeyOrToken` .  
   
  `szName`  
- (в) Читаемое человеком текстовое название сборки.  
+ окне Понятное для человека текстовое имя сборки.  
   
  `pMetaData`  
- (в) Указатель на экземпляр ASSEMBLYMETADATA, содержащий информацию о версии, платформе и локализации для сборки.  
+ окне Указатель на экземпляр ASSEMBLYMETADATA, содержащий сведения о версии, платформе и локали для сборки.  
   
  `pbHashValue`  
- (в) Указатель на хэш-данные, связанные с сборкой.  
+ окне Указатель на хэш-данные, связанные со сборкой.  
   
  `cbHashValue`  
- (в) Размер байтов `pbHashValue`.  
+ окне Размер в байтах для `pbHashValue` .  
   
  `dwAssemblyRefFlags`  
- (в) Битовая комбинация значений [AssemblyRefFlags,](../../../../docs/framework/unmanaged-api/metadata/assemblyrefflags-enumeration.md) которые указывают атрибуты указанной сборки.  
+ окне Побитовое сочетание значений [ассемблиреффлагс](assemblyrefflags-enumeration.md) , задающих атрибуты упоминаемой сборки.  
   
-## <a name="remarks"></a>Remarks  
- Для создания `AssemblyRef` структуры метаданных используйте метод [IMetaDataAssemblyEmit::DefineAssemblyRef.](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineassemblyref-method.md)  
+## <a name="remarks"></a>Примечания  
+ Чтобы создать `AssemblyRef` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинеассемблиреф](imetadataassemblyemit-defineassemblyref-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

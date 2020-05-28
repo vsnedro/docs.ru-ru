@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: fe4150e8-071d-43fb-8e06-c3c616dbeed2
 topic_type:
 - apiref
-ms.openlocfilehash: 39f72e670ddc700c257f50f6bad6fab702ec21b6
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 93a194ea72ab894544927cf96304397b7211b5ac
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74432777"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84009162"
 ---
 # <a name="corsetenc-enumeration"></a>Перечисление CorSetENC
 Содержит значения, используемые для оказания влияния на поведение во время создания метаданных.  
@@ -42,26 +42,26 @@ typedef enum CorSetENC {
 } CorSetENC;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`MDSetENCOn`|Устарело.|  
-|`MDSetENCOff`|Устарело.|  
+|`MDSetENCOn`|Устаревшее.|  
+|`MDSetENCOff`|Устаревшее.|  
 |`MDUpdateENC`|Указывает, что в то время как метаданные могут быть обновлены, токены перемещаться нельзя.|  
 |`MDUpdateFull`|Указывает, что токены можно перемещать во время обновлений.|  
 |`MDUpdateExtension`|Указывает, что обновления могут состоять только из добавлений. Маркеры не могут быть перемещены.|  
 |`MDUpdateIncremental`|Указывает, что компиляция является добавочной.|  
 |`MDUpdateDelta`|Указывает, что должны быть сохранены только измененные метаданные.|  
-|`MDUpdateMask`|Включает `MDUpdateENC`, `MDUpdateFull` и `MDUpdateIncremental`.|  
+|`MDUpdateMask`|Включает `MDUpdateENC` , `MDUpdateFull` и `MDUpdateIncremental` .|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

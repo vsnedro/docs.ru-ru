@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1e994de6-4628-459c-b967-b34be1e9fe4f
 topic_type:
 - apiref
-ms.openlocfilehash: 3b8fd9876563bace52a6088747d1ca4ed26ea872
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2b24c2ca6907dfdb63ad934ec30557c246db174c
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175815"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84004360"
 ---
 # <a name="imetadataemitdefinenestedtype-method"></a>Метод IMetaDataEmit::DefineNestedType
-Создает подпись метаданных определения типа, `mdTypeDef` возвращает маркер для этого типа и указывает, что определенный тип является членом типа, на который ссылается `tdEncloser` параметр.  
+Создает сигнатуру метаданных определения типа, возвращает `mdTypeDef` маркер для этого типа и указывает, что определенный тип является членом типа, на который ссылается `tdEncloser` параметр.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,33 +40,33 @@ HRESULT DefineNestedType (
   
 ## <a name="parameters"></a>Параметры  
  `szTypeDef`  
- (в) Название типа в Unicode.  
+ окне Имя типа в Юникоде.  
   
  `dwTypeDefFlags`  
- (в) `TypeDef` атрибуты. Это битмаска ценностей. `CorTypeAttr`  
+ [входные] `TypeDef` атрибута. Это битовая маска `CorTypeAttr` значений.  
   
  `tkExtends`  
- (в) Токен базового класса. Это либо `mdTypeDef` знак, `mdTypeRef` либо жетон.  
+ окне Маркер базового класса. Это либо маркер, либо `mdTypeDef` `mdTypeRef` .  
   
  `rtkImplements`[]  
- (в) Массив токенов, определяющих интерфейсы, реализуемые этим классом или интерфейсом.  
+ окне Массив токенов, задающих интерфейсы, реализуемые этим классом или интерфейсом.  
   
  `tdEncloser`  
- (в) Токен типа прилагаемого. Последний элемент массива `mdTokenNil`должен быть.  
+ окне Токен включающего типа. Последний элемент массива должен быть `mdTokenNil` .  
   
  `ptd`  
- (ваут) Назначенный `mdTypeDef` маркер.  
+ заполняет `mdTypeDef`Назначенный маркер.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

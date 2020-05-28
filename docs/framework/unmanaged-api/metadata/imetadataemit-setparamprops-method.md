@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a95a3908-9f87-4084-937e-8e01ef03ad63
 topic_type:
 - apiref
-ms.openlocfilehash: 13220dcfdd260688494d5aebc50f94abf8a82215
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b710f966f519e2702607b7e186fff5986110d391
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177496"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007823"
 ---
 # <a name="imetadataemitsetparamprops-method"></a>Метод IMetaDataEmit::SetParamProps
-Устанавливает или изменяет особенности параметра метода, который был определен предыдущим вызовом [на IMetaDataEmit::DefineParam.](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-defineparam-method.md)  
+Задает или изменяет функции параметра метода, который был определен при предыдущем вызове [IMetaDataEmit::D ефинепарам](imetadataemit-defineparam-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,33 +40,33 @@ HRESULT SetParamProps (
   
 ## <a name="parameters"></a>Параметры  
  `pd`  
- (в) Токен для целевого параметра.  
+ окне Токен для целевого параметра.  
   
  `szName`  
- (в) Название параметра в Unicode.  
+ окне Имя параметра в Юникоде.  
   
  `dwParamFlags`  
- (в) Флаги для параметра.  
+ окне Флаги для параметра.  
   
  `dwCPlusTypeFlag`  
- (в) За постоянную стоимость ELEMENT_TYPE_.  
+ окне ELEMENT_TYPE_ * для постоянного значения.  
   
  `pValue`  
- (в) Постоянное значение параметра.  
+ окне Постоянное значение для параметра.  
   
  `cchValue`  
- (в) Размер в (Unicode) символы `pValue`.  
+ окне Размер символов (в Юникоде) `pValue` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

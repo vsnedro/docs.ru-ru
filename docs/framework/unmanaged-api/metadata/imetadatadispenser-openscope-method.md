@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 65063ad5-e0d9-4c01-8f8b-9a5950109fa6
 topic_type:
 - apiref
-ms.openlocfilehash: 5185fb6663910c85ce5dae1225b9b10c5dd8bb28
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8d9de753f1c44338a96e990def80643d591f2a8b
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175945"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007472"
 ---
 # <a name="imetadatadispenseropenscope-method"></a>Метод IMetaDataDispenser::OpenScope
-Открывает существующий файл на диске и отображает свои метаданные в память.  
+Открывает существующий файл на диске и сопоставляет его метаданные с памятью.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,44 +38,44 @@ HRESULT OpenScope (
   
 ## <a name="parameters"></a>Параметры  
  `szScope`  
- (в) Имя файла, которое будет открыто. Файл должен содержать метаданные общего времени выполнения языка (CLR).  
+ окне Имя открываемого файла. Файл должен содержать метаданные среды CLR.  
   
  `dwOpenFlags`  
- (в) Значение значения [CorOpenFlags](../../../../docs/framework/unmanaged-api/metadata/coropenflags-enumeration.md) перечисления указать режим (читать, писать и так далее) для открытия.  
+ окне Значение перечисления [коропенфлагс](coropenflags-enumeration.md) , определяющее режим (чтение, запись и т. д.) для открытия.  
   
  `riid`  
- (в) IID желаемого интерфейса метаданных, который должен быть возвращен; абонент будет использовать интерфейс для импорта (чтения) или испускателя (записи) метаданных.  
+ окне Идентификатор IID требуемого интерфейса метаданных, который должен быть возвращен; вызывающий объект будет использовать интерфейс для импорта (чтения) или выдачи (записи) метаданных.  
   
- Значение `riid` должно указывать один из интерфейсов "импорт" или "излучать". Действительные значения— IID_IMetaDataEmit, IID_IMetaDataImport, IID_IMetaDataAssemblyEmit, IID_IMetaDataAssemblyImport, IID_IMetaDataEmit2 или IID_IMetaDataImport2.  
+ Значение `riid` должно указывать один из интерфейсов "import" или "Emit". Допустимые значения: IID_IMetaDataEmit, IID_IMetaDataImport, IID_IMetaDataAssemblyEmit, IID_IMetaDataAssemblyImport, IID_IMetaDataEmit2 или IID_IMetaDataImport2.  
   
  `ppIUnk`  
- (ваут) Указатель на возвращенный интерфейс.  
+ заполняет Указатель на возвращаемый интерфейс.  
   
-## <a name="remarks"></a>Remarks  
- Копия метаданных в памяти может быть запрошена с помощью методов одного из «импортных» интерфейсов или добавлена к методам одного из интерфейсов «излучать».  
+## <a name="remarks"></a>Примечания  
+ Копию метаданных в памяти можно запросить с помощью методов из одного из интерфейсов "Импорт" или добавить к методам из одного из интерфейсов "выдачи".  
   
- Если целевой файл не содержит метаданных `OpenScope` CLR, метод выйдет из строя.  
+ Если целевой файл не содержит метаданные CLR, `OpenScope` метод завершится ошибкой.  
   
- В версии .NET Framework 1.0 и версии 1.1, если область открыта с `dwOpenFlags` набором к read, она имеет право на обмен. То есть, если `OpenScope` последующие вызовы передаются во имя файла, который был ранее открыт, существующая область используется повторно и не создается новый набор структур данных. Тем не менее, проблемы могут возникнуть из-за этого обмена.  
+ В .NET Framework версии 1,0 и 1,1, если область открыта с параметром `dwOpenFlags` офреад, она может предоставлять общий доступ. То есть, если последующие вызовы `OpenScope` передают имя ранее открытого файла, существующая область используется повторно, а новый набор структур данных не создается. Тем не менее проблемы могут возникать из-за этого общего доступа.  
   
- В версии .NET Framework 2.0 `dwOpenFlags` области области, открытые с набором ofRead, больше не являются общими. Используйте значение ReadOnly, чтобы можно было поделиться областью. При совместном использовании области запросы, в которых используются интерфейсы метаданных "читать/писать", завершаются неудачей.  
+ В .NET Framework версии 2,0 области, открытые с параметром `dwOpenFlags` офреад, больше не являются общими. Используйте значение Офреадонли, чтобы разрешить общий доступ к области. При совместном использовании области запросы, использующие интерфейсы метаданных для чтения и записи, завершатся ошибкой.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataDispenser](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
-- [Интерфейс IMetaDataDispenserEx](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
-- [Интерфейс IMetaDataAssemblyEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
-- [Интерфейс IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)
+- [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)
+- [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)
+- [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

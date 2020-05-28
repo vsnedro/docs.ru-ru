@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: cca4a9a1-731b-4411-9e04-00cffe7a56d8
 topic_type:
 - apiref
-ms.openlocfilehash: 0dafa741634cc88f8a7d86247e4fa8681d7c4305
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 39d8713b2b78047e615b6c2fdd6e95e9aacbd2ae
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74436371"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008850"
 ---
 # <a name="iceegengenerateceefile-method"></a>Метод ICeeGen::GenerateCeeFile
-Создает файл с базовым кодом, содержащий базу кода, которая в данный момент загружена в этот интерфейс [ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md) .  
+Создает файл с базовым кодом, содержащий базу кода, которая в данный момент загружена в этот интерфейс [ICeeGen](iceegen-interface.md) .  
   
  Этот метод устарел и не должен использоваться.  
   
@@ -34,17 +34,17 @@ HRESULT GenerateCeeFile ();
 ```  
   
 ## <a name="parameters"></a>Параметры  
- `GenerateCeeFile` не принимает параметров.  
+ `GenerateCeeFile`не принимает параметров.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [Интерфейс ICeeGen](iceegen-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3afe7252-5f28-48d9-a74d-1927566c404c
 topic_type:
 - apiref
-ms.openlocfilehash: 2d974b7368dd01062d2d310d076dce05e102eb81
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 50aebb09924b93a622e5b7d84e65e41ee91f6018
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74442293"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84006198"
 ---
 # <a name="imetadatadispenserexfindassembly-method"></a>Метод IMetaDataDispenserEx::FindAssembly
 Этот метод не реализован. При вызове возвращается E_NOTIMPL.  
@@ -41,13 +41,13 @@ HRESULT FindAssembly(
   
 ## <a name="parameters"></a>Параметры  
  `szAppBase`  
- окне Не используется.  
+ [in] Не используется.  
   
  `szPrivateBin`  
- окне Не используется.  
+ [in] Не используется.  
   
  `szGlobalBin`  
- окне Не используется.  
+ [in] Не используется.  
   
  `szAssemblyName`  
  окне Найденная сборка.  
@@ -56,21 +56,21 @@ HRESULT FindAssembly(
  заполняет Простое имя сборки.  
   
  `cchName`  
- окне Размер `szName`в байтах.  
+ окне Размер (в байтах) `szName` .  
   
  `pcName`  
- заполняет Число символов, фактически возвращаемых в `szName`.  
+ заполняет Число символов, фактически возвращаемых в `szName` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформа:** См. раздел [требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataDispenserEx](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
-- [Интерфейс IMetaDataDispenser](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+- [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)
+- [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)

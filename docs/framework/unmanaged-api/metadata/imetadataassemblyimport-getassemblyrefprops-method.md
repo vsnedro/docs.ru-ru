@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5c6b7fb4-cbca-4479-b650-ab9a99732ea0
 topic_type:
 - apiref
-ms.openlocfilehash: 9aef471c1155070af0e9bcca14975a65bc5dc763
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2858e924ab6effe192955ce53dad9d333d2d244d
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175971"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84009071"
 ---
 # <a name="imetadataassemblyimportgetassemblyrefprops-method"></a>Метод IMetaDataAssemblyImport::GetAssemblyRefProps
-Получает набор свойств для ссылки сборки с указанной подписью метаданных.  
+Возвращает набор свойств для ссылки на сборку с указанной сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,47 +44,47 @@ HRESULT GetAssemblyRefProps (
   
 ## <a name="parameters"></a>Параметры  
  `mdar`  
- (в) Токен `mdAssemblyRef` метаданных, представляющий ссылку сборки для получения свойств.  
+ окне `mdAssemblyRef`Токен метаданных, представляющий ссылку на сборку, для которой необходимо получить свойства.  
   
  `ppbPublicKeyOrToken`  
- (ваут) Указатель на открытый ключ или токен метаданных.  
+ заполняет Указатель на открытый ключ или маркер метаданных.  
   
  `pcbPublicKeyOrToken`  
- (ваут) Количество байтов в возвращенном публичном ключе или маркере.  
+ заполняет Число байтов в возвращенном открытом ключе или токене.  
   
  `szName`  
- (ваут) Простое название сборки.  
+ заполняет Простое имя сборки.  
   
  `cchName`  
- (в) Размер, в широких chars, . `szName`  
+ окне Размер (в расширенных символах) для `szName` .  
   
  `pchName`  
- (ваут) Указатель на количество широких chars `szName`фактически вернулся в .  
+ заполняет Указатель на число расширенных символов, фактически возвращаемых в `szName` .  
   
  `pMetaData`  
- (ваут) Указатель на структуру ASSEMBLYMETADATA, содержащую метаданные сборки.  
+ заполняет Указатель на структуру ASSEMBLYMETADATA, содержащую метаданные сборки.  
   
  `ppbHashValue`  
- (ваут) Указатель на значение хэша. Это хэш, использующий алгоритм SHA-1, `PublicKey` имущества сборки, на который ссылается, если только не установлен флаг ArfFullOriginator в перечислении [AssemblyRefFlags.](../../../../docs/framework/unmanaged-api/metadata/assemblyrefflags-enumeration.md)  
+ заполняет Указатель на хэш-значение. Это хэш с использованием алгоритма SHA-1 `PublicKey` Свойства сборки, на которую указывает ссылка, если не задан флаг арффуллоригинатор перечисления [ассемблиреффлагс](assemblyrefflags-enumeration.md) .  
   
  `pcbHashValue`  
- (ваут) Количество широких chars в возвращенном значении хэша.  
+ заполняет Число расширенных символов в возвращенном хэш-значении.  
   
  `pdwAssemblyRefFlags`  
- (ваут) Указатель на флаги, описывающие метаданные, применяемые к сборке. Значение флагов представляет собой сочетание одного или нескольких значений [CorAssemblyFlags.](../../../../docs/framework/unmanaged-api/metadata/corassemblyflags-enumeration.md)  
+ заполняет Указатель на флаги, описывающие метаданные, примененные к сборке. Значение Flags является сочетанием одного или нескольких значений [корассемблифлагс](corassemblyflags-enumeration.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Этот метод возвращает S_OK, если он преуспевает; в противном случае он возвращает один из кодов ошибок, определенных в файле заголовка Winerror.h.  
+ Этот метод возвращает S_OK, если он выполнен. в противном случае возвращается один из кодов ошибок, определенных в файле заголовка Winerror. h.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataAssemblyImport](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

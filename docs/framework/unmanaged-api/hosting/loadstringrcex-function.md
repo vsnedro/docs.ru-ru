@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
 topic_type:
 - apiref
-ms.openlocfilehash: a300c2679ef11a84edb2ab89c8dea96e445c9ee3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a05cbe985c2cfebb67756fdfb54398b36e87f441
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177981"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008522"
 ---
 # <a name="loadstringrcex-function"></a>Функция LoadStringRCEx
-Переводит значение HRESULT в соответствующее сообщение об ошибке для указанной культуры.  
+Преобразует значение HRESULT в соответствующее сообщение об ошибке для указанного языка и региональных параметров.  
   
- Эта функция была унесена в системе .NET 4.  
+ Эта функция является устаревшей в .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,45 +41,45 @@ HRESULT LoadStringRCEx (
   
 ## <a name="parameters"></a>Параметры  
  `lcid`  
- (в) Идентификатор культуры. Pass -1 `lcid` для использования культуры по умолчанию.  
+ окне Идентификатор языка и региональных параметров. Pass-1 для `lcid` для использования языка и региональных параметров по умолчанию.  
   
  `iResourceID`  
  [in] Значение HRESULT.  
   
  `szBuffer`  
- (ваут) Буфер, содержащий сообщение об ошибке при успешном завершении.  
+ заполняет Буфер, содержащий сообщение об ошибке после успешного завершения.  
   
  `iMax`  
- (в) Размер буфера сообщения об ошибке.  
+ окне Размер буфера сообщений об ошибках.  
   
  `bQuiet`  
- (в) Игнорировать.  
+ окне Игнорируют.  
   
  `pcwchUsed`  
- (ваут) Указатель на длину сообщения об ошибке.  
+ заполняет Указатель на длину сообщения об ошибке.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Этот метод возвращает стандартные коды ошибок COM, как это определено в WinError.h, в дополнение к следующим значениям.  
+ Этот метод возвращает стандартные коды ошибок COM, как определено в файле WinError. h, а также следующие значения.  
   
 |Код возврата|Описание|  
 |-----------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|E_INVALIDARG|`szBuffer`является нулевым, или `iMax` равна нулю (0).|  
+|E_INVALIDARG|`szBuffer`имеет значение null или `iMax` равно нулю (0).|  
   
-## <a name="remarks"></a>Remarks  
- Если метод не выполняется `szBuffer` успешно, содержитпустую строку.  
+## <a name="remarks"></a>Примечания  
+ Если метод не завершается успешно, `szBuffer` содержит пустую строку.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** MSCorEE.h  
+ **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE.dll  
+ **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>
-- [Функция LoadStringRC](../../../../docs/framework/unmanaged-api/hosting/loadstringrc-function.md)
-- [Устаревшие функции размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Функция LoadStringRC](loadstringrc-function.md)
+- [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

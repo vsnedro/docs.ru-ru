@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 21b5bcb8-ea75-4962-8acc-ad17584061e5
 topic_type:
 - apiref
-ms.openlocfilehash: e371330336002c673f2c54d882e70dbed41b743c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 576f4561ed782f091840ac378831110a1bfef9c6
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175841"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84004701"
 ---
 # <a name="imetadataemitdefinememberref-method"></a>Метод IMetaDataEmit::DefineMemberRef
-Определяет ссылку на участника модуля за пределами текущей области и получает маркер этого эталонного определения.  
+Определяет ссылку на член модуля вне текущей области и получает маркер для этого эталонного определения.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,30 +39,30 @@ HRESULT DefineMemberRef (
   
 ## <a name="parameters"></a>Параметры  
  `tkImport`  
- (в) Токен для класса или интерфейса целевого участника, если участник не является глобальным; если участник является глобальным, `mdModuleRef` токен для другого файла.  
+ окне Токен для класса или интерфейса целевого элемента, если элемент не является глобальным; Если элемент является глобальным, `mdModuleRef` маркер для этого файла.  
   
  `szName`  
- (в) Имя целевого участника.  
+ окне Имя целевого элемента.  
   
  `pvSigBlob`  
- (в) Подпись целевого члена.  
+ окне Сигнатура целевого элемента.  
   
  `cbSigBlob`  
- (в) Количество байтов `pvSigBlob`в .  
+ окне Число байтов в `pvSigBlob` .  
   
  `pmr`  
- (ваут) Назначенный `mdMemberRef` маркер.  
+ заполняет `mdMemberRef`Назначенный маркер.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

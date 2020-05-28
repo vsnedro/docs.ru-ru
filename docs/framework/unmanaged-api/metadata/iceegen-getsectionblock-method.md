@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 05c78aaf-5bbd-497e-9ae2-55f4fae0c5fb
 topic_type:
 - apiref
-ms.openlocfilehash: a494b1aaa762549528e92ab93d18929ef73eb8da
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ed534890fc90d3b8543a1166c85903f10163f0a8
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176088"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008336"
 ---
 # <a name="iceegengetsectionblock-method"></a>Метод ICeeGen::GetSectionBlock
-Получает разделный блок базы кода.  
+Возвращает блок базы кода.  
   
  Этот метод устарел и не должен использоваться.  
   
@@ -40,29 +40,29 @@ HRESULT GetSectionBlock (
   
 ## <a name="parameters"></a>Параметры  
  `section`  
- (в) Раздел, из которого можно получить блок базы кода.  
+ окне Раздел, из которого извлекается блок базы кода.  
   
  `len`  
- (в) Длина блока, который необходимо извлечь.  
+ окне Длина извлекаемого блока.  
   
  `align`  
- (в) Байт, относительно начала раздела, с которым выровнять первый байт блока. Это положение блока в разделе.  
+ окне Байт относительно начала раздела, с которым будет выравняться первый байт блока. Это расположение блока в разделе.  
   
  `ppBytes`  
- (ваут) Указатель на место, которое получает адрес извлеченного блока.  
+ заполняет Указатель на расположение, которое получает адрес полученного блока.  
   
-## <a name="remarks"></a>Remarks  
- Звоните `GetSectionBlock` только в том случае, если у вас есть специальные требования к разделу, которые не обрабатываются другими методами.  
+## <a name="remarks"></a>Примечания  
+ Вызывайте `GetSectionBlock` только при наличии особых требований к разделам, которые не обрабатываются другими методами.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [Интерфейс ICeeGen](iceegen-interface.md)

@@ -14,34 +14,34 @@ helpviewer_keywords:
 ms.assetid: 4c5c4df0-43f3-4830-a01b-8d029806f2c4
 topic_type:
 - apiref
-ms.openlocfilehash: 8521452d6cd39a6a89b8c83f208fedfc390c21fb
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 7858237f46ecfa71f0ce0e726ec8ef441b291456
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74432219"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008213"
 ---
 # <a name="imaptoken-interface"></a>Интерфейс IMapToken
 Предоставляет возможности сопоставления между сборками.  
   
 > [!NOTE]
-> Клиент должен реализовать интерфейс `IMapToken`.  
+> `IMapToken`Интерфейс должен быть реализован клиентом.  
   
 ## <a name="methods"></a>Методы  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Map](../../../../docs/framework/unmanaged-api/metadata/imaptoken-map-method.md)|Сопоставляет связь между двумя сборками, используя подписи метаданных.|  
+|[Метод Map](imaptoken-map-method.md)|Сопоставляет связь между двумя сборками, используя подписи метаданных.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейсы метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Интерфейсы метаданных](metadata-interfaces.md)

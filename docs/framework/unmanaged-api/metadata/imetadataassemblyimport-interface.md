@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 29c6fba5-4cea-417d-b484-7ed22ebff1c9
 topic_type:
 - apiref
-ms.openlocfilehash: 289e26868ff2eb9e1d97cf084e9a888815062ea4
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 2a67f50fa1042e8d3957a9a0394507f260a328c6
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74436308"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84009019"
 ---
 # <a name="imetadataassemblyimport-interface"></a>Интерфейс IMetaDataAssemblyImport
 Предоставляет методы для доступа и изучения содержимого манифеста сборки.  
@@ -28,31 +28,31 @@ ms.locfileid: "74436308"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод CloseEnum](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-closeenum-method.md)|Освобождает дескриптор указанного перечислителя.|  
-|[Метод EnumAssemblyRefs](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-enumassemblyrefs-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий маркеры `mdAssemblyRef` сборок, на которые ссылается сборка в текущей области метаданных.|  
-|[Метод EnumExportedTypes](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-enumexportedtypes-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий маркеры `mdExportedType` типов COM, на которые ссылается сборка в текущей области метаданных.|  
-|[Метод EnumFiles](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-enumfiles-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий маркеры `mdFile` файлов, на которые ссылается сборка в текущей области метаданных.|  
-|[Метод EnumManifestResources](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-enummanifestresources-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий маркеры `mdManifestResource` ресурсов, на которые ссылается сборка в текущей области метаданных.|  
-|[Метод FindAssembliesByName](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-findassembliesbyname-method.md)|Возвращает массив токенов `mdAssemblyRef` для сборок с указанным именем.|  
-|[Метод FindExportedTypeByName](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-findexportedtypebyname-method.md)|Возвращает токен `mdExportedType` для типа COM с указанным именем.|  
-|[Метод FindManifestResourceByName](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-findmanifestresourcebyname-method.md)|Возвращает токен `mdManifestResource` для ресурса с указанным именем.|  
-|[Метод GetAssemblyFromScope](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-getassemblyfromscope-method.md)|Возвращает токен для сборки в текущей области метаданных.|  
-|[Метод GetAssemblyProps](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-getassemblyprops-method.md)|Возвращает параметры свойства указанной сборки.|  
-|[Метод GetAssemblyRefProps](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-getassemblyrefprops-method.md)|Возвращает параметры свойства указанного маркера `mdAssemblyRef`.|  
-|[Метод GetExportedTypeProps](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-getexportedtypeprops-method.md)|Возвращает параметры свойства указанного типа COM.|  
-|[Метод GetFileProps](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-getfileprops-method.md)|Возвращает настройки свойств указанного файла.|  
-|[Метод GetManifestResourceProps](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-getmanifestresourceprops-method.md)|Возвращает параметры свойства указанного ресурса манифеста.|  
+|[Метод CloseEnum](imetadataassemblyimport-closeenum-method.md)|Освобождает дескриптор указанного перечислителя.|  
+|[Метод EnumAssemblyRefs](imetadataassemblyimport-enumassemblyrefs-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий `mdAssemblyRef` маркеры сборок, на которые ссылается сборка в текущей области метаданных.|  
+|[Метод EnumExportedTypes](imetadataassemblyimport-enumexportedtypes-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий `mdExportedType` маркеры COM-типов, на которые ссылается сборка в текущей области метаданных.|  
+|[Метод EnumFiles](imetadataassemblyimport-enumfiles-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий `mdFile` маркеры файлов, на которые ссылается сборка в текущей области метаданных.|  
+|[Метод EnumManifestResources](imetadataassemblyimport-enummanifestresources-method.md)|Возвращает указатель интерфейса на перечислитель, содержащий `mdManifestResource` маркеры ресурсов, на которые ссылается сборка в текущей области метаданных.|  
+|[Метод FindAssembliesByName](imetadataassemblyimport-findassembliesbyname-method.md)|Возвращает массив `mdAssemblyRef` токенов для сборок с указанным именем.|  
+|[Метод FindExportedTypeByName](imetadataassemblyimport-findexportedtypebyname-method.md)|Возвращает `mdExportedType` токен для типа COM с указанным именем.|  
+|[Метод FindManifestResourceByName](imetadataassemblyimport-findmanifestresourcebyname-method.md)|Возвращает `mdManifestResource` токен для ресурса с указанным именем.|  
+|[Метод GetAssemblyFromScop](imetadataassemblyimport-getassemblyfromscope-method.md)|Возвращает токен для сборки в текущей области метаданных.|  
+|[Метод GetAssemblyProps](imetadataassemblyimport-getassemblyprops-method.md)|Возвращает параметры свойства указанной сборки.|  
+|[Метод GetAssemblyRefProps](imetadataassemblyimport-getassemblyrefprops-method.md)|Возвращает параметры свойства указанного `mdAssemblyRef` токена.|  
+|[Метод GetExportedTypeProps](imetadataassemblyimport-getexportedtypeprops-method.md)|Возвращает параметры свойства указанного типа COM.|  
+|[Метод GetFileProps](imetadataassemblyimport-getfileprops-method.md)|Возвращает настройки свойств указанного файла.|  
+|[Метод GetManifestResourceProps](imetadataassemblyimport-getmanifestresourceprops-method.md)|Возвращает параметры свойства указанного ресурса манифеста.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформа:** См. раздел [требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейсы метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
-- [Интерфейс IMetaDataAssemblyEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [Интерфейсы метаданных](metadata-interfaces.md)
+- [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)
