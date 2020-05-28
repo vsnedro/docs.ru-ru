@@ -4,50 +4,56 @@ description: Руководства по .NET Core научат вас созд
 author: richlander
 ms.date: 03/16/2017
 titleSuffix: ''
-ms.openlocfilehash: 84784787465bec43cc460d34ca84e4baa5a15d7d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9fb87180bb001a7f54d93c6e95631562103c49e8
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "77625938"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83840927"
 ---
-# <a name="learn-net-core-and-the-net-core-sdk-tools-by-exploring-these-tutorials"></a><span data-ttu-id="397e9-103">См. дополнительные сведения о средствах пакета SDK для .NET Core и .NET Core</span><span class="sxs-lookup"><span data-stu-id="397e9-103">Learn .NET Core and the .NET Core SDK tools by exploring these tutorials</span></span>
+# <a name="learn-net-core-and-the-net-core-sdk-tools-by-exploring-these-tutorials"></a><span data-ttu-id="8cf11-103">См. дополнительные сведения о средствах пакета SDK для .NET Core и .NET Core</span><span class="sxs-lookup"><span data-stu-id="8cf11-103">Learn .NET Core and the .NET Core SDK tools by exploring these tutorials</span></span>
 
-<span data-ttu-id="397e9-104">Ниже приведены доступные учебники по использованию .NET Core.</span><span class="sxs-lookup"><span data-stu-id="397e9-104">The following tutorials are available for learning about .NET Core.</span></span>
+<span data-ttu-id="8cf11-104">Ниже приведены доступные учебники по использованию .NET Core.</span><span class="sxs-lookup"><span data-stu-id="8cf11-104">The following tutorials are available for learning about .NET Core.</span></span>
 
-## <a name="create-applications-with-visual-studio"></a><span data-ttu-id="397e9-105">Создание приложений с помощью Visual Studio</span><span class="sxs-lookup"><span data-stu-id="397e9-105">Create applications with Visual Studio</span></span>
+## <a name="use-visual-studio"></a><span data-ttu-id="8cf11-105">Использование Visual Studio</span><span class="sxs-lookup"><span data-stu-id="8cf11-105">Use Visual Studio</span></span>
 
-- [<span data-ttu-id="397e9-106">Создание консольного приложения Hello World</span><span class="sxs-lookup"><span data-stu-id="397e9-106">Create a Hello World console application</span></span>](with-visual-studio.md)
-- [<span data-ttu-id="397e9-107">Отладка приложения Hello World</span><span class="sxs-lookup"><span data-stu-id="397e9-107">Debug your Hello World application</span></span>](debugging-with-visual-studio.md)
-- [<span data-ttu-id="397e9-108">Публикация приложения Hello World</span><span class="sxs-lookup"><span data-stu-id="397e9-108">Publish your Hello World application</span></span>](publishing-with-visual-studio.md)
-- [<span data-ttu-id="397e9-109">Создание библиотеки классов</span><span class="sxs-lookup"><span data-stu-id="397e9-109">Build a class library</span></span>](library-with-visual-studio.md)
-- [<span data-ttu-id="397e9-110">Тестирование библиотеки классов</span><span class="sxs-lookup"><span data-stu-id="397e9-110">Test a class library</span></span>](testing-library-with-visual-studio.md)
-- [<span data-ttu-id="397e9-111">Использование библиотеки классов</span><span class="sxs-lookup"><span data-stu-id="397e9-111">Consume a class library</span></span>](consuming-library-with-visual-studio.md)
-- [<span data-ttu-id="397e9-112">Azure Cosmos DB. Начало работы с API SQL и .NET Core</span><span class="sxs-lookup"><span data-stu-id="397e9-112">Azure Cosmos DB: Get started with the SQL API and .NET Core</span></span>](/azure/cosmos-db/sql-api-dotnetcore-get-started)
+- [<span data-ttu-id="8cf11-106">Создание консольного приложения</span><span class="sxs-lookup"><span data-stu-id="8cf11-106">Create a console app</span></span>](with-visual-studio.md)
+- [<span data-ttu-id="8cf11-107">Создание консольного приложения на F#</span><span class="sxs-lookup"><span data-stu-id="8cf11-107">Create an F# console app</span></span>](../../fsharp/get-started/get-started-visual-studio.md)
+- [<span data-ttu-id="8cf11-108">Отладка приложения</span><span class="sxs-lookup"><span data-stu-id="8cf11-108">Debug an app</span></span>](debugging-with-visual-studio.md)
+- [<span data-ttu-id="8cf11-109">Публикация приложения</span><span class="sxs-lookup"><span data-stu-id="8cf11-109">Publish an app</span></span>](publishing-with-visual-studio.md)
+- [<span data-ttu-id="8cf11-110">Создание библиотеки классов</span><span class="sxs-lookup"><span data-stu-id="8cf11-110">Create a class library</span></span>](library-with-visual-studio.md)
+- [<span data-ttu-id="8cf11-111">Модульное тестирование библиотеки классов</span><span class="sxs-lookup"><span data-stu-id="8cf11-111">Unit test a class library</span></span>](testing-library-with-visual-studio.md)
+- [<span data-ttu-id="8cf11-112">Использование библиотеки классов</span><span class="sxs-lookup"><span data-stu-id="8cf11-112">Use a class library</span></span>](consuming-library-with-visual-studio.md)
+- [<span data-ttu-id="8cf11-113">Установка и использование пакета</span><span class="sxs-lookup"><span data-stu-id="8cf11-113">Install and use a package</span></span>](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+- [<span data-ttu-id="8cf11-114">Создание и публикация пакета</span><span class="sxs-lookup"><span data-stu-id="8cf11-114">Create and publish a package</span></span>](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
 
-## <a name="build-applications-with-visual-studio-code"></a><span data-ttu-id="397e9-113">Создание приложений с помощью Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="397e9-113">Build applications with Visual Studio Code</span></span>
+## <a name="use-visual-studio-code"></a><span data-ttu-id="8cf11-115">Использование Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="8cf11-115">Use Visual Studio Code</span></span>
 
-- [<span data-ttu-id="397e9-114">Начало работы с C# и Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="397e9-114">Get started with C# and Visual Studio Code</span></span>](with-visual-studio-code.md)
-- [<span data-ttu-id="397e9-115">Начало работы с .NET Core в macOS</span><span class="sxs-lookup"><span data-stu-id="397e9-115">Get started with .NET Core on macOS</span></span>](using-on-macos.md)
+<span data-ttu-id="8cf11-116">Выбирайте эти руководства, если хотите использовать Visual Studio Code или какой-то другой редактор кода.</span><span class="sxs-lookup"><span data-stu-id="8cf11-116">Choose these tutorials if you want to use Visual Studio Code or some other code editor.</span></span> <span data-ttu-id="8cf11-117">Все они используют интерфейс командной строки (CLI) для задач разработки .NET Core, поэтому они подходят для любого редактора.</span><span class="sxs-lookup"><span data-stu-id="8cf11-117">All use the CLI for .NET Core development tasks, so all can be used with any code editor.</span></span>
 
-## <a name="build-applications-with-visual-studio-for-mac"></a><span data-ttu-id="397e9-116">Создание приложений с помощью Visual Studio для Mac</span><span class="sxs-lookup"><span data-stu-id="397e9-116">Build applications with Visual Studio for Mac</span></span>
+- [<span data-ttu-id="8cf11-118">Создание консольного приложения</span><span class="sxs-lookup"><span data-stu-id="8cf11-118">Create a console app</span></span>](with-visual-studio-code.md)
+- [<span data-ttu-id="8cf11-119">Создание и публикация консольного приложения</span><span class="sxs-lookup"><span data-stu-id="8cf11-119">Create a console app and publish it</span></span>](cli-create-console-app.md)
+- [<span data-ttu-id="8cf11-120">Создание консольного приложения на F#</span><span class="sxs-lookup"><span data-stu-id="8cf11-120">Create an F# console app</span></span>](../../fsharp/get-started/get-started-vscode.md)
+- [<span data-ttu-id="8cf11-121">Создание и модульное тестирование библиотеки — macOS</span><span class="sxs-lookup"><span data-stu-id="8cf11-121">Create a library and unit test it - macOS</span></span>](using-on-macos.md)
+- [<span data-ttu-id="8cf11-122">Установка и использование пакета</span><span class="sxs-lookup"><span data-stu-id="8cf11-122">Install and use a package</span></span>](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
+- [<span data-ttu-id="8cf11-123">Создание и публикация пакета</span><span class="sxs-lookup"><span data-stu-id="8cf11-123">Create and publish a package</span></span>](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
 
-- [<span data-ttu-id="397e9-117">Начало работы с .NET Core в macOS с помощью Visual Studio для Mac</span><span class="sxs-lookup"><span data-stu-id="397e9-117">Get started with .NET Core on macOS using Visual Studio for Mac</span></span>](using-on-mac-vs.md)
-- [<span data-ttu-id="397e9-118">Создание полноценного решения .NET Core на базе macOS с помощью Visual Studio для Mac</span><span class="sxs-lookup"><span data-stu-id="397e9-118">Building a complete .NET Core solution on macOS using Visual Studio for Mac</span></span>](using-on-mac-vs-full-solution.md)
+## <a name="use-visual-studio-for-mac"></a><span data-ttu-id="8cf11-124">Использование Visual Studio для Mac</span><span class="sxs-lookup"><span data-stu-id="8cf11-124">Use Visual Studio for Mac</span></span>
 
-## <a name="build-applications-with-the-net-core-cli"></a><span data-ttu-id="397e9-119">Создание приложений с помощью .NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="397e9-119">Build applications with the .NET Core CLI</span></span>
+- [<span data-ttu-id="8cf11-125">Создание консольного приложения</span><span class="sxs-lookup"><span data-stu-id="8cf11-125">Create a console app</span></span>](using-on-mac-vs.md)
+- [<span data-ttu-id="8cf11-126">Создание и модульное тестирование библиотеки</span><span class="sxs-lookup"><span data-stu-id="8cf11-126">Create a library and unit test it</span></span>](using-on-mac-vs-full-solution.md)
+- [<span data-ttu-id="8cf11-127">Установка и использование пакета</span><span class="sxs-lookup"><span data-stu-id="8cf11-127">Install and use a package</span></span>](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
-- [<span data-ttu-id="397e9-120">Начало работы с .NET Core в Windows, Linux и macOS с помощью .NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="397e9-120">Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI</span></span>](cli-create-console-app.md)
-- [<span data-ttu-id="397e9-121">Организация и тестирование проектов с помощью .NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="397e9-121">Organizing and testing projects with the .NET Core CLI</span></span>](testing-with-cli.md)
-- [<span data-ttu-id="397e9-122">Начало работы с F#</span><span class="sxs-lookup"><span data-stu-id="397e9-122">Get started with F#</span></span>](../../fsharp/get-started/get-started-command-line.md)
+## <a name="advanced-topics"></a><span data-ttu-id="8cf11-128">Дополнительные разделы</span><span class="sxs-lookup"><span data-stu-id="8cf11-128">Advanced topics</span></span>
 
-## <a name="other"></a><span data-ttu-id="397e9-123">Другой</span><span class="sxs-lookup"><span data-stu-id="397e9-123">Other</span></span>
+- [<span data-ttu-id="8cf11-129">Создание библиотек</span><span class="sxs-lookup"><span data-stu-id="8cf11-129">How to create libraries</span></span>](libraries.md)
+- [<span data-ttu-id="8cf11-130">Модульное тестирование приложения с помощью xUnit</span><span class="sxs-lookup"><span data-stu-id="8cf11-130">Unit test an app with xUnit</span></span>](testing-with-cli.md)
+- [<span data-ttu-id="8cf11-131">Модульное тестирование на C#/VB/F# с помощью NUnit/xUnit/MSTest</span><span class="sxs-lookup"><span data-stu-id="8cf11-131">Unit test using C#/VB/F# with NUnit/xUnit/MSTest</span></span>](../testing/index.md)
+- [<span data-ttu-id="8cf11-132">Live Unit Testing в Visual Studio</span><span class="sxs-lookup"><span data-stu-id="8cf11-132">Live unit test with Visual Studio</span></span>](/visualstudio/test/live-unit-testing-start)
+- [<span data-ttu-id="8cf11-133">Создание шаблонов для интерфейса командной строки</span><span class="sxs-lookup"><span data-stu-id="8cf11-133">Create templates for the CLI</span></span>](cli-templates-create-item-template.md)
+- [<span data-ttu-id="8cf11-134">Создание и использование средств для интерфейса командной строки</span><span class="sxs-lookup"><span data-stu-id="8cf11-134">Create and use tools for the CLI</span></span>](../tools/global-tools-how-to-create.md)
+- [<span data-ttu-id="8cf11-135">Создание приложения с подключаемыми модулями</span><span class="sxs-lookup"><span data-stu-id="8cf11-135">Create an app with plugins</span></span>](creating-app-with-plugin-support.md)
 
-- [<span data-ttu-id="397e9-124">Модульное тестирование в .NET Core с помощью команды dotnet test</span><span class="sxs-lookup"><span data-stu-id="397e9-124">Unit Testing in .NET Core using dotnet test</span></span>](../testing/unit-testing-with-dotnet-test.md)
-- [<span data-ttu-id="397e9-125">Модульное тестирование с использованием MSTest и .NET Core</span><span class="sxs-lookup"><span data-stu-id="397e9-125">Unit testing with MSTest and .NET Core</span></span>](../testing/unit-testing-with-mstest.md)
-- [<span data-ttu-id="397e9-126">Разработка библиотек с помощью кроссплатформенных средств</span><span class="sxs-lookup"><span data-stu-id="397e9-126">Developing Libraries with Cross Platform Tools</span></span>](libraries.md)
-- [<span data-ttu-id="397e9-127">Размещение .NET Core из машинного кода</span><span class="sxs-lookup"><span data-stu-id="397e9-127">Hosting .NET Core from native code</span></span>](netcore-hosting.md)
-- [<span data-ttu-id="397e9-128">Создание шаблонов для интерфейса командной строки</span><span class="sxs-lookup"><span data-stu-id="397e9-128">Create templates for the CLI</span></span>](cli-templates-create-item-template.md)
-- [<span data-ttu-id="397e9-129">Создание и использование средств для интерфейса командной строки</span><span class="sxs-lookup"><span data-stu-id="397e9-129">Create and use tools for the CLI</span></span>](../tools/global-tools-how-to-create.md)
+## <a name="create-web-apps"></a><span data-ttu-id="8cf11-136">Создание веб-приложений</span><span class="sxs-lookup"><span data-stu-id="8cf11-136">Create web apps</span></span>
 
-<span data-ttu-id="397e9-130">Руководства по разработке веб-приложений на ASP.NET Core см. в [документации по ASP.NET Core](/aspnet/core/).</span><span class="sxs-lookup"><span data-stu-id="397e9-130">For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).</span></span>
+<span data-ttu-id="8cf11-137">Руководства по разработке веб-приложений на ASP.NET Core см. в [документации по ASP.NET Core](/aspnet/core/).</span><span class="sxs-lookup"><span data-stu-id="8cf11-137">For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).</span></span>
