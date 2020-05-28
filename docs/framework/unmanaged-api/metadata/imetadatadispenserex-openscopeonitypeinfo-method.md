@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3480bbdb-c442-44a0-b7c6-333354503c52
 topic_type:
 - apiref
-ms.openlocfilehash: 8deefe026e32a56d853e173e6a8fa3be942ccd9c
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 91ef9eaa855ed841bc75bfaeead462f045eb1d8b
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74431132"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007459"
 ---
 # <a name="imetadatadispenserexopenscopeonitypeinfo-method"></a>Метод IMetaDataDispenserEx::OpenScopeOnITypeInfo
 Этот метод не реализован. При вызове возвращается E_NOTIMPL.  
@@ -50,15 +50,15 @@ HRESULT OpenScopeOnITypeInfo (
  заполняет Указатель на указатель на возвращенный интерфейс.  
   
 ## <a name="requirements"></a>Требования  
- **Платформа:** См. раздел [требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataDispenserEx](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
-- [Интерфейс IMetaDataDispenser](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+- [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)
+- [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9bede0ec-5fdf-42a2-b5b7-bee64056acb6
 topic_type:
 - apiref
-ms.openlocfilehash: b1586184c91619994ba0dfc9d5dcc277c10f99cf
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: b6936081ca3dbadb4f802a6856fafb53f6cef3fa
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74436448"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008967"
 ---
 # <a name="cortypeattr-enumeration"></a>Перечисление CorTypeAttr
 Содержит значения, указывающие тип метаданных.  
@@ -73,7 +73,7 @@ typedef enum CorTypeAttr {
 } CorTypeAttr;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -103,7 +103,7 @@ typedef enum CorTypeAttr {
 |`tdAnsiClass`|Указывает, что этот тип интерпретирует LPTSTR как ANSI.|  
 |`tdUnicodeClass`|Указывает, что этот тип интерпретирует LPTSTR как Юникод.|  
 |`tdAutoClass`|Указывает, что этот тип интерпретирует LPTSTR автоматически.|  
-|`tdCustomFormatClass`|Указывает, что тип имеет нестандартную кодировку, как указано в `CustomFormatMask`.|  
+|`tdCustomFormatClass`|Указывает, что тип имеет нестандартную кодировку, как указано в `CustomFormatMask` .|  
 |`tdCustomFormatMask`|Используйте эту маску для получения нестандартных сведений о кодировке для собственного взаимодействия. Значение этих двух битов не определено.|  
 |`tdBeforeFieldInit`|Указывает, что тип должен быть инициализирован перед первой попыткой доступа к статическому полю.|  
 |`tdForwarder`|Указывает, что тип экспортирован и является пересылкой типа.|  
@@ -112,12 +112,12 @@ typedef enum CorTypeAttr {
 |`tdHasSecurity`|Указывает, что с типом связана безопасность.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
-- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Перечисления метаданных](metadata-enumerations.md)

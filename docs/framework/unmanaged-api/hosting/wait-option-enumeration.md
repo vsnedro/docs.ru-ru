@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 962fc293-8ded-4b3b-90ce-2c21a4f1b244
 topic_type:
 - apiref
-ms.openlocfilehash: 9ecfb551b55551e5f6cc7e7e9ffb55e5a96259ee
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 4c57a3fde3565a21800c60794b6c2d1c7616ddd8
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73141516"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008005"
 ---
 # <a name="wait_option-enumeration"></a>Перечисление WAIT_OPTION
 Содержит значения, указывающие действие, которое должен выполнить узел при выполнении операции, запрашиваемой блоками среды CLR.  
@@ -34,26 +34,26 @@ typedef enum {
 } WAIT_OPTION;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`WAIT_ALERTABLE`|Уведомляет узел о том, что задача должна быть пробуждена, если среда CLR вызывает метод [IHostTask:: Alert](../../../../docs/framework/unmanaged-api/hosting/ihosttask-alert-method.md) .|  
-|`WAIT_MSGPUMP`|Уведомляет узел о том, что он должен передавать сообщения в текущем потоке операционной системы, если поток блокируется. Среда выполнения задает это значение только в потоке <xref:System.Threading.ApartmentState.STA>.|  
-|`WAIT_NOTINDEADLOCK`|Сообщает узлу, что указанный запрос на синхронизацию не может быть разбит узлом. Это значит, что узел не может возвращать `HOST_E_DEADLOCK`.|  
+|`WAIT_ALERTABLE`|Уведомляет узел о том, что задача должна быть пробуждена, если среда CLR вызывает метод [IHostTask:: Alert](ihosttask-alert-method.md) .|  
+|`WAIT_MSGPUMP`|Уведомляет узел о том, что он должен передавать сообщения в текущем потоке операционной системы, если поток блокируется. Среда выполнения задает это значение только в <xref:System.Threading.ApartmentState.STA> потоке.|  
+|`WAIT_NOTINDEADLOCK`|Сообщает узлу, что указанный запрос на синхронизацию не может быть разбит узлом. Это значит, что узел не может вернуть `HOST_E_DEADLOCK` .|  
   
-## <a name="remarks"></a>Заметки  
- Методы [IHostTaskManager:: Sleep](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-sleep-method.md) и [IHostTaskManager:: свитчтотаск](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-switchtotask-method.md) принимают параметр этого типа.  
+## <a name="remarks"></a>Примечания  
+ Методы [IHostTaskManager:: Sleep](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-sleep-method.md) и [IHostTaskManager:: свитчтотаск](ihosttaskmanager-switchtotask-method.md) принимают параметр этого типа.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
  **Библиотека:** MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
-- [Размещение перечислений](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Размещение перечислений](hosting-enumerations.md)

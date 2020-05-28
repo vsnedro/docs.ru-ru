@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7dd14854-b756-4401-b167-88ca576dc8f0
 topic_type:
 - apiref
-ms.openlocfilehash: 9c4ed282e259aa46fc0cb0175214dc51d3d5fbee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 17757df566ba8d141e7adec00dcc1f75959d0e00
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175893"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84005633"
 ---
 # <a name="imetadataemitdefinecustomattribute-method"></a>Метод IMetaDataEmit::DefineCustomAttribute
-Создает определение для пользовательского атрибута с указанной подписью метаданных, который будет прикреплен к указанному объекту, и получает маркер к этому пользовательскому определению атрибута.  
+Создает определение для настраиваемого атрибута с указанной подписью метаданных, присоединяемого к указанному объекту и получает маркер для этого определения настраиваемого атрибута.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,30 +39,30 @@ HRESULT DefineCustomAttribute (
   
 ## <a name="parameters"></a>Параметры  
  `tkObj`  
- (в) Токен для элемента владельца.  
+ окне Токен для элемента владельца.  
   
  `tkType`  
- (в) Токен, идентифицирует пользовательский атрибут.  
+ окне Токен, определяющий настраиваемый атрибут.  
   
  `pCustomAttribute`  
- (в) Указатель на пользовательский атрибут.  
+ окне Указатель на настраиваемый атрибут.  
   
  `cbCustomAttribute`  
- (в) Количество байтов `pCustomAttribute`в .  
+ окне Число байтов в `pCustomAttribute` .  
   
  `pcv`  
- (ваут) Назначенный `mdCustomAttribute` маркер.  
+ заполняет `mdCustomAttribute`Назначенный маркер.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)
