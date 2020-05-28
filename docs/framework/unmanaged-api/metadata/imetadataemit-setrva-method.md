@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 4d69fb6d-ee35-4318-8224-5eea2bd16818
 topic_type:
 - apiref
-ms.openlocfilehash: fe0b4b7fef0d05c4acc06dad5bc8a4eaf0722c9c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3059d30f3969b4e19cee5a8d7a34c606f3849c05
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175581"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84008746"
 ---
-# <a name="imetadataemitsetrva-method"></a><span data-ttu-id="12236-102">Метод IMetaDataEmit::SetRVA</span><span class="sxs-lookup"><span data-stu-id="12236-102">IMetaDataEmit::SetRVA Method</span></span>
-<span data-ttu-id="12236-103">Устанавливает относительный виртуальный адрес указанного метода.</span><span class="sxs-lookup"><span data-stu-id="12236-103">Sets the relative virtual address of the specified method.</span></span>  
+# <a name="imetadataemitsetrva-method"></a><span data-ttu-id="81fc3-102">Метод IMetaDataEmit::SetRVA</span><span class="sxs-lookup"><span data-stu-id="81fc3-102">IMetaDataEmit::SetRVA Method</span></span>
+<span data-ttu-id="81fc3-103">Задает относительный виртуальный адрес указанного метода.</span><span class="sxs-lookup"><span data-stu-id="81fc3-103">Sets the relative virtual address of the specified method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="12236-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="12236-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="81fc3-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="81fc3-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetRVA (  
@@ -34,23 +34,23 @@ HRESULT SetRVA (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="12236-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="12236-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="81fc3-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="81fc3-105">Parameters</span></span>  
  `md`  
- <span data-ttu-id="12236-106">(в) Токен для реализации целевого метода или метода.</span><span class="sxs-lookup"><span data-stu-id="12236-106">[in] The token for the target method or method implementation.</span></span>  
+ <span data-ttu-id="81fc3-106">окне Токен для реализации целевого метода или метода.</span><span class="sxs-lookup"><span data-stu-id="81fc3-106">[in] The token for the target method or method implementation.</span></span>  
   
  `ulRVA`  
- <span data-ttu-id="12236-107">(в) Адрес кода или области данных.</span><span class="sxs-lookup"><span data-stu-id="12236-107">[in] The address of the code or data area.</span></span>  
+ <span data-ttu-id="81fc3-107">окне Адрес кода или области данных.</span><span class="sxs-lookup"><span data-stu-id="81fc3-107">[in] The address of the code or data area.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="12236-108">Требования</span><span class="sxs-lookup"><span data-stu-id="12236-108">Requirements</span></span>  
- <span data-ttu-id="12236-109">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="12236-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="81fc3-108">Требования</span><span class="sxs-lookup"><span data-stu-id="81fc3-108">Requirements</span></span>  
+ <span data-ttu-id="81fc3-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="81fc3-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="12236-110">**Заголовок:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="12236-110">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="81fc3-110">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="81fc3-110">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="12236-111">**Библиотека:** Используется в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="12236-111">**Library:** Used as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="81fc3-111">**Библиотека:** Используется в качестве ресурса в MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="81fc3-111">**Library:** Used as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="12236-112">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="12236-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="81fc3-112">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="81fc3-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="12236-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="12236-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="81fc3-113">См. также статью</span><span class="sxs-lookup"><span data-stu-id="81fc3-113">See also</span></span>
 
-- [<span data-ttu-id="12236-114">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="12236-114">IMetaDataEmit Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [<span data-ttu-id="12236-115">Интерфейс IMetaDataEmit2</span><span class="sxs-lookup"><span data-stu-id="12236-115">IMetaDataEmit2 Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [<span data-ttu-id="81fc3-114">Интерфейс IMetaDataEmit</span><span class="sxs-lookup"><span data-stu-id="81fc3-114">IMetaDataEmit Interface</span></span>](imetadataemit-interface.md)
+- [<span data-ttu-id="81fc3-115">Интерфейс IMetaDataEmit2</span><span class="sxs-lookup"><span data-stu-id="81fc3-115">IMetaDataEmit2 Interface</span></span>](imetadataemit2-interface.md)
