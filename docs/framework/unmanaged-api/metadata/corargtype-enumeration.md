@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 3c1cb268-57a0-4664-91c7-f6908ff29e32
 topic_type:
 - apiref
-ms.openlocfilehash: 689295610006824be1107577c50376e79551cddc
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ac822dda30d697cbbbcacf19eb6a57d1e5fb4c3b
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74444361"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007953"
 ---
-# <a name="corargtype-enumeration"></a><span data-ttu-id="a521e-102">Перечисление CorArgType</span><span class="sxs-lookup"><span data-stu-id="a521e-102">CorArgType Enumeration</span></span>
-<span data-ttu-id="a521e-103">Содержит значения, описывающие собственный тип дескриптора среды выполнения.</span><span class="sxs-lookup"><span data-stu-id="a521e-103">Contains values that describe the native type of a runtime handle.</span></span>  
+# <a name="corargtype-enumeration"></a><span data-ttu-id="de4fd-102">Перечисление CorArgType</span><span class="sxs-lookup"><span data-stu-id="de4fd-102">CorArgType Enumeration</span></span>
+<span data-ttu-id="de4fd-103">Содержит значения, описывающие собственный тип дескриптора среды выполнения.</span><span class="sxs-lookup"><span data-stu-id="de4fd-103">Contains values that describe the native type of a runtime handle.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a521e-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a521e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="de4fd-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="de4fd-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorArgType {  
@@ -44,13 +44,13 @@ typedef enum CorArgType {
 } CorArgType;  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="a521e-105">Требования</span><span class="sxs-lookup"><span data-stu-id="a521e-105">Requirements</span></span>  
- <span data-ttu-id="a521e-106">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a521e-106">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="de4fd-105">Требования</span><span class="sxs-lookup"><span data-stu-id="de4fd-105">Requirements</span></span>  
+ <span data-ttu-id="de4fd-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="de4fd-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="a521e-107">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="a521e-107">**Header:** CorHdr.h</span></span>  
+ <span data-ttu-id="de4fd-107">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="de4fd-107">**Header:** CorHdr.h</span></span>  
   
- <span data-ttu-id="a521e-108">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a521e-108">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="de4fd-108">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="de4fd-108">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a521e-109">См. также:</span><span class="sxs-lookup"><span data-stu-id="a521e-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="de4fd-109">См. также статью</span><span class="sxs-lookup"><span data-stu-id="de4fd-109">See also</span></span>
 
-- [<span data-ttu-id="a521e-110">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="a521e-110">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [<span data-ttu-id="de4fd-110">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="de4fd-110">Metadata Enumerations</span></span>](metadata-enumerations.md)

@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: c5e6216f-ae3d-4697-9688-66b69c1251ec
 topic_type:
 - apiref
-ms.openlocfilehash: dae4a36537eeac58ffb17ebc1b78d935ec807cd8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 78c192f10f629a0c1316ae7af7fc774819f4de8f
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175984"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007485"
 ---
-# <a name="imetadataassemblyimportgetfileprops-method"></a><span data-ttu-id="86ea0-102">Метод IMetaDataAssemblyImport::GetFileProps</span><span class="sxs-lookup"><span data-stu-id="86ea0-102">IMetaDataAssemblyImport::GetFileProps Method</span></span>
-<span data-ttu-id="86ea0-103">Получает свойства файла с указанной подписью метаданных.</span><span class="sxs-lookup"><span data-stu-id="86ea0-103">Gets the properties of the file with the specified metadata signature.</span></span>  
+# <a name="imetadataassemblyimportgetfileprops-method"></a><span data-ttu-id="05e53-102">Метод IMetaDataAssemblyImport::GetFileProps</span><span class="sxs-lookup"><span data-stu-id="05e53-102">IMetaDataAssemblyImport::GetFileProps Method</span></span>
+<span data-ttu-id="05e53-103">Возвращает свойства файла с указанной сигнатурой метаданных.</span><span class="sxs-lookup"><span data-stu-id="05e53-103">Gets the properties of the file with the specified metadata signature.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="86ea0-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="86ea0-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="05e53-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="05e53-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetFileProps (  
@@ -39,37 +39,37 @@ HRESULT GetFileProps (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="86ea0-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="86ea0-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="05e53-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="05e53-105">Parameters</span></span>  
  `mdf`  
- <span data-ttu-id="86ea0-106">(в) Токен `mdFile` метаданных, представляющий файл, для которого можно получить свойства.</span><span class="sxs-lookup"><span data-stu-id="86ea0-106">[in] The `mdFile` metadata token that represents the file for which to get the properties.</span></span>  
+ <span data-ttu-id="05e53-106">окне `mdFile`Токен метаданных, представляющий файл, для которого необходимо получить свойства.</span><span class="sxs-lookup"><span data-stu-id="05e53-106">[in] The `mdFile` metadata token that represents the file for which to get the properties.</span></span>  
   
  `szName`  
- <span data-ttu-id="86ea0-107">(ваут) Простое название файла.</span><span class="sxs-lookup"><span data-stu-id="86ea0-107">[out] The simple name of the file.</span></span>  
+ <span data-ttu-id="05e53-107">заполняет Простое имя файла.</span><span class="sxs-lookup"><span data-stu-id="05e53-107">[out] The simple name of the file.</span></span>  
   
  `cchName`  
- <span data-ttu-id="86ea0-108">(в) Размер, в широких chars, . `szName`</span><span class="sxs-lookup"><span data-stu-id="86ea0-108">[in] The size, in wide chars, of `szName`.</span></span>  
+ <span data-ttu-id="05e53-108">окне Размер (в расширенных символах) для `szName` .</span><span class="sxs-lookup"><span data-stu-id="05e53-108">[in] The size, in wide chars, of `szName`.</span></span>  
   
  `pchName`  
- <span data-ttu-id="86ea0-109">(ваут) Количество широких chars фактически `szName`вернулся в .</span><span class="sxs-lookup"><span data-stu-id="86ea0-109">[out] The number of wide chars actually returned in `szName`.</span></span>  
+ <span data-ttu-id="05e53-109">заполняет Число расширенных символов, фактически возвращаемых в `szName` .</span><span class="sxs-lookup"><span data-stu-id="05e53-109">[out] The number of wide chars actually returned in `szName`.</span></span>  
   
  `ppbHashValue`  
- <span data-ttu-id="86ea0-110">(ваут) Указатель на значение хэша.</span><span class="sxs-lookup"><span data-stu-id="86ea0-110">[out] A pointer to the hash value.</span></span> <span data-ttu-id="86ea0-111">Это хэш, использующий алгоритм SHA-1, файла.</span><span class="sxs-lookup"><span data-stu-id="86ea0-111">This is the hash, using the SHA-1 algorithm, of the file.</span></span>  
+ <span data-ttu-id="05e53-110">заполняет Указатель на хэш-значение.</span><span class="sxs-lookup"><span data-stu-id="05e53-110">[out] A pointer to the hash value.</span></span> <span data-ttu-id="05e53-111">Это хэш-код с использованием алгоритма SHA-1 файла.</span><span class="sxs-lookup"><span data-stu-id="05e53-111">This is the hash, using the SHA-1 algorithm, of the file.</span></span>  
   
  `pcbHashValue`  
- <span data-ttu-id="86ea0-112">(ваут) Количество широких chars в возвращенном значении хэша.</span><span class="sxs-lookup"><span data-stu-id="86ea0-112">[out] The number of wide chars in the returned hash value.</span></span>  
+ <span data-ttu-id="05e53-112">заполняет Число расширенных символов в возвращенном хэш-значении.</span><span class="sxs-lookup"><span data-stu-id="05e53-112">[out] The number of wide chars in the returned hash value.</span></span>  
   
  `pdwFileFlags`  
- <span data-ttu-id="86ea0-113">(ваут) Указатель на флаги, описывающие метаданные, применяемые к файлу.</span><span class="sxs-lookup"><span data-stu-id="86ea0-113">[out] A pointer to the flags that describe the metadata applied to a file.</span></span> <span data-ttu-id="86ea0-114">Значение флагов представляет собой сочетание одного или нескольких значений [CorFileFlags.](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md)</span><span class="sxs-lookup"><span data-stu-id="86ea0-114">The flags value is a combination of one or more [CorFileFlags](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md) values.</span></span>  
+ <span data-ttu-id="05e53-113">заполняет Указатель на флаги, описывающие метаданные, примененные к файлу.</span><span class="sxs-lookup"><span data-stu-id="05e53-113">[out] A pointer to the flags that describe the metadata applied to a file.</span></span> <span data-ttu-id="05e53-114">Значение Flags является сочетанием одного или нескольких значений [корфилефлагс](corfileflags-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="05e53-114">The flags value is a combination of one or more [CorFileFlags](corfileflags-enumeration.md) values.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="86ea0-115">Требования</span><span class="sxs-lookup"><span data-stu-id="86ea0-115">Requirements</span></span>  
- <span data-ttu-id="86ea0-116">**Платформа:** Смотрите [системные требования](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="86ea0-116">**Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="05e53-115">Требования</span><span class="sxs-lookup"><span data-stu-id="05e53-115">Requirements</span></span>  
+ <span data-ttu-id="05e53-116">**Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="05e53-116">**Platform:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="86ea0-117">**Заголовок:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="86ea0-117">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="05e53-117">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="05e53-117">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="86ea0-118">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="86ea0-118">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="05e53-118">**Библиотека:** Используется в качестве ресурса в MsCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="05e53-118">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="86ea0-119">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="86ea0-119">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="05e53-119">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="05e53-119">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="86ea0-120">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="86ea0-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="05e53-120">См. также статью</span><span class="sxs-lookup"><span data-stu-id="05e53-120">See also</span></span>
 
-- [<span data-ttu-id="86ea0-121">Интерфейс IMetaDataAssemblyImport</span><span class="sxs-lookup"><span data-stu-id="86ea0-121">IMetaDataAssemblyImport Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [<span data-ttu-id="05e53-121">Интерфейс IMetaDataAssemblyImport</span><span class="sxs-lookup"><span data-stu-id="05e53-121">IMetaDataAssemblyImport Interface</span></span>](imetadataassemblyimport-interface.md)

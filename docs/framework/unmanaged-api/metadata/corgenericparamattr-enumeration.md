@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 36c76266-71d8-48dc-bd89-54943fa659c1
 topic_type:
 - apiref
-ms.openlocfilehash: bf0008ce9429671f0c156df4256bed0b2aaee184
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ea84b742c901ba58a3bb730f1f5033a0d90610ce
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176179"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007381"
 ---
-# <a name="corgenericparamattr-enumeration"></a><span data-ttu-id="98262-102">Перечисление CorGenericParamAttr</span><span class="sxs-lookup"><span data-stu-id="98262-102">CorGenericParamAttr Enumeration</span></span>
-<span data-ttu-id="98262-103">Содержит значения, описывающие <xref:System.Type> параметры для генерических типов, используемые при вызовах на [IMetaDataEmit2::DefineGenericParam.](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-definegenericparam-method.md)</span><span class="sxs-lookup"><span data-stu-id="98262-103">Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to [IMetaDataEmit2::DefineGenericParam](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-definegenericparam-method.md).</span></span>  
+# <a name="corgenericparamattr-enumeration"></a><span data-ttu-id="8e616-102">Перечисление CorGenericParamAttr</span><span class="sxs-lookup"><span data-stu-id="8e616-102">CorGenericParamAttr Enumeration</span></span>
+<span data-ttu-id="8e616-103">Содержит значения, описывающие <xref:System.Type> параметры для универсальных типов, которые используются в вызовах [IMetaDataEmit2::D ефинеженерикпарам](imetadataemit2-definegenericparam-method.md).</span><span class="sxs-lookup"><span data-stu-id="8e616-103">Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to [IMetaDataEmit2::DefineGenericParam](imetadataemit2-definegenericparam-method.md).</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="98262-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="98262-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="8e616-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8e616-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorGenericParamAttr {  
@@ -43,27 +43,27 @@ typedef enum CorGenericParamAttr {
 } CorGenericParamAttr;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="98262-105">Члены</span><span class="sxs-lookup"><span data-stu-id="98262-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="8e616-105">Участники</span><span class="sxs-lookup"><span data-stu-id="8e616-105">Members</span></span>  
   
-|<span data-ttu-id="98262-106">Участник</span><span class="sxs-lookup"><span data-stu-id="98262-106">Member</span></span>|<span data-ttu-id="98262-107">Описание</span><span class="sxs-lookup"><span data-stu-id="98262-107">Description</span></span>|  
+|<span data-ttu-id="8e616-106">Член</span><span class="sxs-lookup"><span data-stu-id="8e616-106">Member</span></span>|<span data-ttu-id="8e616-107">Описание</span><span class="sxs-lookup"><span data-stu-id="8e616-107">Description</span></span>|  
 |------------|-----------------|  
-|`gpVarianceMask`|<span data-ttu-id="98262-108">Разница параметров применяется только к общим параметрам для интерфейсов и делегатов.</span><span class="sxs-lookup"><span data-stu-id="98262-108">Parameter variance applies only to generic parameters for interfaces and delegates.</span></span>|  
-|`gpNonVariant`|<span data-ttu-id="98262-109">Указывает на отсутствие дисперсии.</span><span class="sxs-lookup"><span data-stu-id="98262-109">Indicates the absence of variance.</span></span>|  
-|`gpCovariant`|<span data-ttu-id="98262-110">Указывает на коварность.</span><span class="sxs-lookup"><span data-stu-id="98262-110">Indicates covariance.</span></span>|  
-|`gpContravariant`|<span data-ttu-id="98262-111">Указывает на противопоказания.</span><span class="sxs-lookup"><span data-stu-id="98262-111">Indicates contravariance.</span></span>|  
-|`gpSpecialConstraintMask`|<span data-ttu-id="98262-112">Специальные ограничения могут <xref:System.Type> применяться к любому параметру.</span><span class="sxs-lookup"><span data-stu-id="98262-112">Special constraints can apply to any <xref:System.Type> parameter.</span></span>|  
-|`gpNoSpecialConstraint`|<span data-ttu-id="98262-113">Означает, что к параметру <xref:System.Type> не применяется ограничение.</span><span class="sxs-lookup"><span data-stu-id="98262-113">Indicates that no constraint applies to the <xref:System.Type> parameter.</span></span>|  
-|`gpReferenceTypeConstraint`|<span data-ttu-id="98262-114">Означает, <xref:System.Type> что параметр должен быть эталонным типом.</span><span class="sxs-lookup"><span data-stu-id="98262-114">Indicates that the <xref:System.Type> parameter must be a reference type.</span></span>|  
-|`gpNotNullableValueTypeConstraint`|<span data-ttu-id="98262-115">Означает, <xref:System.Type> что параметр должен быть типом значения, который не может быть нулевая величина.</span><span class="sxs-lookup"><span data-stu-id="98262-115">Indicates that the <xref:System.Type> parameter must be a value type that cannot be a null value.</span></span>|  
-|`gpDefaultConstructorConstraint`|<span data-ttu-id="98262-116">Означает, <xref:System.Type> что параметр должен иметь общедоступный конструктор по умолчанию, который не принимает никаких параметров.</span><span class="sxs-lookup"><span data-stu-id="98262-116">Indicates that the <xref:System.Type> parameter must have a default public constructor that takes no parameters.</span></span>|  
+|`gpVarianceMask`|<span data-ttu-id="8e616-108">Дисперсия параметров применяется только к универсальным параметрам для интерфейсов и делегатов.</span><span class="sxs-lookup"><span data-stu-id="8e616-108">Parameter variance applies only to generic parameters for interfaces and delegates.</span></span>|  
+|`gpNonVariant`|<span data-ttu-id="8e616-109">Указывает отсутствие дисперсии.</span><span class="sxs-lookup"><span data-stu-id="8e616-109">Indicates the absence of variance.</span></span>|  
+|`gpCovariant`|<span data-ttu-id="8e616-110">Указывает ковариацию.</span><span class="sxs-lookup"><span data-stu-id="8e616-110">Indicates covariance.</span></span>|  
+|`gpContravariant`|<span data-ttu-id="8e616-111">Указывает контрвариация.</span><span class="sxs-lookup"><span data-stu-id="8e616-111">Indicates contravariance.</span></span>|  
+|`gpSpecialConstraintMask`|<span data-ttu-id="8e616-112">К любому параметру могут применяться специальные ограничения <xref:System.Type> .</span><span class="sxs-lookup"><span data-stu-id="8e616-112">Special constraints can apply to any <xref:System.Type> parameter.</span></span>|  
+|`gpNoSpecialConstraint`|<span data-ttu-id="8e616-113">Указывает, что ограничение не применяется к <xref:System.Type> параметру.</span><span class="sxs-lookup"><span data-stu-id="8e616-113">Indicates that no constraint applies to the <xref:System.Type> parameter.</span></span>|  
+|`gpReferenceTypeConstraint`|<span data-ttu-id="8e616-114">Указывает, что <xref:System.Type> параметр должен быть ссылочным типом.</span><span class="sxs-lookup"><span data-stu-id="8e616-114">Indicates that the <xref:System.Type> parameter must be a reference type.</span></span>|  
+|`gpNotNullableValueTypeConstraint`|<span data-ttu-id="8e616-115">Указывает, что <xref:System.Type> параметр должен быть типом значения, который не может иметь значение null.</span><span class="sxs-lookup"><span data-stu-id="8e616-115">Indicates that the <xref:System.Type> parameter must be a value type that cannot be a null value.</span></span>|  
+|`gpDefaultConstructorConstraint`|<span data-ttu-id="8e616-116">Указывает, что <xref:System.Type> параметр должен иметь открытый конструктор по умолчанию, который не принимает параметров.</span><span class="sxs-lookup"><span data-stu-id="8e616-116">Indicates that the <xref:System.Type> parameter must have a default public constructor that takes no parameters.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="98262-117">Требования</span><span class="sxs-lookup"><span data-stu-id="98262-117">Requirements</span></span>  
- <span data-ttu-id="98262-118">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="98262-118">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="8e616-117">Требования</span><span class="sxs-lookup"><span data-stu-id="8e616-117">Requirements</span></span>  
+ <span data-ttu-id="8e616-118">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="8e616-118">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="98262-119">**Заголовок:** CorHdr.h</span><span class="sxs-lookup"><span data-stu-id="98262-119">**Header:** CorHdr.h</span></span>  
+ <span data-ttu-id="8e616-119">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="8e616-119">**Header:** CorHdr.h</span></span>  
   
- <span data-ttu-id="98262-120">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="98262-120">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="8e616-120">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="8e616-120">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="98262-121">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="98262-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8e616-121">См. также статью</span><span class="sxs-lookup"><span data-stu-id="8e616-121">See also</span></span>
 
-- [<span data-ttu-id="98262-122">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="98262-122">Metadata Enumerations</span></span>](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [<span data-ttu-id="8e616-122">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="8e616-122">Metadata Enumerations</span></span>](metadata-enumerations.md)

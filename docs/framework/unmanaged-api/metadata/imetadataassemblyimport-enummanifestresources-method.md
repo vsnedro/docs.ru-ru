@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 9543b111-5705-40c9-935c-a3ffc7a581aa
 topic_type:
 - apiref
-ms.openlocfilehash: 22141cf46a965c0624c076bd1d86d2624e5a09f3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 560a6adf85fab7f421b86cba52224d5b1bfe1089
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176023"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84006263"
 ---
-# <a name="imetadataassemblyimportenummanifestresources-method"></a><span data-ttu-id="7d5a1-102">Метод IMetaDataAssemblyImport::EnumManifestResources</span><span class="sxs-lookup"><span data-stu-id="7d5a1-102">IMetaDataAssemblyImport::EnumManifestResources Method</span></span>
-<span data-ttu-id="7d5a1-103">Получает указатель на регистратор для ресурсов, упомянутых в текущем манифесте сборки.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-103">Gets a pointer to an enumerator for the resources referenced in the current assembly manifest.</span></span>  
+# <a name="imetadataassemblyimportenummanifestresources-method"></a><span data-ttu-id="6826c-102">Метод IMetaDataAssemblyImport::EnumManifestResources</span><span class="sxs-lookup"><span data-stu-id="6826c-102">IMetaDataAssemblyImport::EnumManifestResources Method</span></span>
+<span data-ttu-id="6826c-103">Возвращает указатель на перечислитель для ресурсов, указанных в текущем манифесте сборки.</span><span class="sxs-lookup"><span data-stu-id="6826c-103">Gets a pointer to an enumerator for the resources referenced in the current assembly manifest.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7d5a1-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7d5a1-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6826c-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6826c-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT EnumManifestResources (  
@@ -36,35 +36,35 @@ HRESULT EnumManifestResources (
 );
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="7d5a1-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="7d5a1-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="6826c-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="6826c-105">Parameters</span></span>  
  `phEnum`  
- <span data-ttu-id="7d5a1-106">(в, вне) Указатель на регистратор.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-106">[in, out] A pointer to the enumerator.</span></span> <span data-ttu-id="7d5a1-107">Это должно быть нулевая величина, `EnumManifestResources` когда метод вызывается в первый раз.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-107">This must be a null value when the `EnumManifestResources` method is called for the first time.</span></span>  
+ <span data-ttu-id="6826c-106">[вход, выход] Указатель на перечислитель.</span><span class="sxs-lookup"><span data-stu-id="6826c-106">[in, out] A pointer to the enumerator.</span></span> <span data-ttu-id="6826c-107">Это значение должно быть null, если `EnumManifestResources` метод вызывается в первый раз.</span><span class="sxs-lookup"><span data-stu-id="6826c-107">This must be a null value when the `EnumManifestResources` method is called for the first time.</span></span>  
   
  `rManifestResources`  
- <span data-ttu-id="7d5a1-108">(ваут) Массив, используемый `mdManifestResource` для хранения токенов метаданных.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-108">[out] The array used to store the `mdManifestResource` metadata tokens.</span></span>  
+ <span data-ttu-id="6826c-108">заполняет Массив, используемый для хранения `mdManifestResource` маркеров метаданных.</span><span class="sxs-lookup"><span data-stu-id="6826c-108">[out] The array used to store the `mdManifestResource` metadata tokens.</span></span>  
   
  `cMax`  
- <span data-ttu-id="7d5a1-109">(в) Максимальное количество `mdManifestResource` токенов, которые `rManifestResources`могут быть размещены в .</span><span class="sxs-lookup"><span data-stu-id="7d5a1-109">[in] The maximum number of `mdManifestResource` tokens that can be placed in `rManifestResources`.</span></span>  
+ <span data-ttu-id="6826c-109">окне Максимальное число `mdManifestResource` токенов, которые могут быть помещены в `rManifestResources` .</span><span class="sxs-lookup"><span data-stu-id="6826c-109">[in] The maximum number of `mdManifestResource` tokens that can be placed in `rManifestResources`.</span></span>  
   
  `pcTokens`  
- <span data-ttu-id="7d5a1-110">(ваут) Количество `mdManifestResource` токенов фактически помещено в `rManifestResources`.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-110">[out] The number of `mdManifestResource` tokens actually placed in `rManifestResources`.</span></span>  
+ <span data-ttu-id="6826c-110">заполняет Количество маркеров, которые `mdManifestResource` в действительности помещаются в `rManifestResources` .</span><span class="sxs-lookup"><span data-stu-id="6826c-110">[out] The number of `mdManifestResource` tokens actually placed in `rManifestResources`.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="7d5a1-111">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="7d5a1-111">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="6826c-111">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="6826c-111">Return Value</span></span>  
   
-|<span data-ttu-id="7d5a1-112">HRESULT</span><span class="sxs-lookup"><span data-stu-id="7d5a1-112">HRESULT</span></span>|<span data-ttu-id="7d5a1-113">Описание</span><span class="sxs-lookup"><span data-stu-id="7d5a1-113">Description</span></span>|  
+|<span data-ttu-id="6826c-112">HRESULT</span><span class="sxs-lookup"><span data-stu-id="6826c-112">HRESULT</span></span>|<span data-ttu-id="6826c-113">Описание</span><span class="sxs-lookup"><span data-stu-id="6826c-113">Description</span></span>|  
 |-------------|-----------------|  
-|`S_OK`|<span data-ttu-id="7d5a1-114">`EnumManifestResources`вернулся успешно.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-114">`EnumManifestResources` returned successfully.</span></span>|  
-|`S_FALSE`|<span data-ttu-id="7d5a1-115">Нет токенов для перечисления.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-115">There are no tokens to enumerate.</span></span> <span data-ttu-id="7d5a1-116">В этом `pcTokens` случае, устанавливается до нуля.</span><span class="sxs-lookup"><span data-stu-id="7d5a1-116">In this case, `pcTokens` is set to zero.</span></span>|  
+|`S_OK`|<span data-ttu-id="6826c-114">`EnumManifestResources`успешно возвращено.</span><span class="sxs-lookup"><span data-stu-id="6826c-114">`EnumManifestResources` returned successfully.</span></span>|  
+|`S_FALSE`|<span data-ttu-id="6826c-115">Нет токенов для перечисления.</span><span class="sxs-lookup"><span data-stu-id="6826c-115">There are no tokens to enumerate.</span></span> <span data-ttu-id="6826c-116">В этом случае `pcTokens` имеет значение 0.</span><span class="sxs-lookup"><span data-stu-id="6826c-116">In this case, `pcTokens` is set to zero.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="7d5a1-117">Требования</span><span class="sxs-lookup"><span data-stu-id="7d5a1-117">Requirements</span></span>  
- <span data-ttu-id="7d5a1-118">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="7d5a1-118">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="6826c-117">Требования</span><span class="sxs-lookup"><span data-stu-id="6826c-117">Requirements</span></span>  
+ <span data-ttu-id="6826c-118">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="6826c-118">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="7d5a1-119">**Заголовок:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="7d5a1-119">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="6826c-119">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="6826c-119">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="7d5a1-120">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="7d5a1-120">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="6826c-120">**Библиотека:** Используется в качестве ресурса в MsCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="6826c-120">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="7d5a1-121">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7d5a1-121">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="6826c-121">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6826c-121">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7d5a1-122">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="7d5a1-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6826c-122">См. также статью</span><span class="sxs-lookup"><span data-stu-id="6826c-122">See also</span></span>
 
-- [<span data-ttu-id="7d5a1-123">Интерфейс IMetaDataAssemblyImport</span><span class="sxs-lookup"><span data-stu-id="7d5a1-123">IMetaDataAssemblyImport Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [<span data-ttu-id="6826c-123">Интерфейс IMetaDataAssemblyImport</span><span class="sxs-lookup"><span data-stu-id="6826c-123">IMetaDataAssemblyImport Interface</span></span>](imetadataassemblyimport-interface.md)
