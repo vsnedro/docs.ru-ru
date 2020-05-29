@@ -2,12 +2,12 @@
 title: Использование микрослужб с шаблонами DDD и CQRS для решения сложных бизнес-задач
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Сведения об использовании микрослужб с шаблонами DDD и CQRS для решения сложных бизнес-задач
 ms.date: 10/08/2018
-ms.openlocfilehash: 88b105b68307c8587f877bb9ddf370e143d8539b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 852073548a66fbe568fc5c2531342db944d5a8b0
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73739828"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144647"
 ---
 # <a name="tackle-business-complexity-in-a-microservice-with-ddd-and-cqrs-patterns"></a>Использование микрослужб с шаблонами DDD и CQRS для решения сложных бизнес-задач
 
@@ -64,7 +64,7 @@ DDD — это обширная тема, по которой доступно 
   <https://www.amazon.com/Domain-Driven-Design-Quickly-Abel-Avram/dp/1411609255/>
 
 - **Скотт Миллетт (Scott Millett), Ник Тюн (Nick Tune). Шаблоны, принципы и методы предметно-ориентированного проектирования** \
-  <http://www.wrox.com/WileyCDA/WroxTitle/Patterns-Principles-and-Practices-of-Domain-Driven-Design.productCd-1118714709.html>
+  <https://www.wiley.com/Patterns%2C+Principles%2C+and+Practices+of+Domain+Driven+Design-p-9781118714706>
 
 ##### <a name="ddd-training"></a>Обучение по DDD
 

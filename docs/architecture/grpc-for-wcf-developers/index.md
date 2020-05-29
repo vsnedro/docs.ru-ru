@@ -2,12 +2,12 @@
 title: ASP.NET Core gRPC для разработчиков WCF — gRPC для разработчиков WCF
 description: Введение в создание служб gRPC в ASP.NET Core 3.0 для разработчиков WCF
 ms.date: 09/02/2019
-ms.openlocfilehash: 175dfbf1880a0937615543c248fba3bed0e25c23
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 6e18ecfdb8fcbe20f71fd0a7c77076166451427a
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988964"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144361"
 ---
 # <a name="aspnet-core-grpc-for-wcf-developers"></a>ASP.NET Core gRPC для разработчиков WCF
 
@@ -31,7 +31,7 @@ Redmond, Washington 98052-6399
 
 Некоторые приведенные в книге примеры служат только для иллюстрации и являются вымышленными. Все совпадения с реальными наименованиями, людьми и любыми другими предметами являются непреднамеренными и случайными.
 
-Microsoft и товарные знаки, перечисленные на странице "Товарные знаки" на сайте https://www.microsoft.com, являются товарными знаками группы компаний Майкрософт.
+Microsoft и товарные знаки, перечисленные на странице "Товарные знаки" на сайте <https://www.microsoft.com>, являются товарными знаками группы компаний Майкрософт.
 
 Логотип Docker с изображением кита является зарегистрированным товарным знаком Docker, Inc. Используется с разрешения.
 
