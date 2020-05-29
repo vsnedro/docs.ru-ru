@@ -9,22 +9,22 @@ helpviewer_keywords:
 - WCF Data Services, querying
 - WCF Data Services, accessing data
 ms.assetid: 823e9444-27aa-4f1f-be8e-0486d67f54c0
-ms.openlocfilehash: 99fe377e8fff193c4f8bb566946b95c61c1b3693
-ms.sourcegitcommit: 79a2d6a07ba4ed08979819666a0ee6927bbf1b01
+ms.openlocfilehash: 8ae4b4b9938f72f4f4fc011e180cd69440ec3dd9
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74568885"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84201760"
 ---
 # <a name="querying-the-data-service-wcf-data-services"></a>Выполнение запросов к службе данных (службы данных WCF)
 
-Клиентская библиотека WCF Data Services позволяет выполнять запросы к службе данных с помощью привычных .NET Framework шаблонов программирования, включая использование LINQ. Клиентская библиотека преобразует запрос, определенный на клиенте как экземпляр класса <xref:System.Data.Services.Client.DataServiceQuery%601>, в сообщение запроса HTTP GET. Библиотека получает ответное сообщение и преобразует его в экземпляры клиентских классов службы данных. Эти классы отслеживаются с помощью <xref:System.Data.Services.Client.DataServiceContext>, которому принадлежит объект <xref:System.Data.Services.Client.DataServiceQuery%601>.
+Клиентская библиотека WCF Data Services позволяет выполнять запросы к службе данных с помощью привычных .NET Framework шаблонов программирования, включая использование LINQ. Клиентская библиотека преобразует запрос, определенный на клиенте как экземпляр класса <xref:System.Data.Services.Client.DataServiceQuery%601>, в сообщение запроса HTTP GET. Библиотека получает ответное сообщение и преобразует его в экземпляры классов клиентской службы данных. Эти классы отслеживаются с помощью <xref:System.Data.Services.Client.DataServiceContext>, которому принадлежит объект <xref:System.Data.Services.Client.DataServiceQuery%601>.
 
 ## <a name="data-service-queries"></a>Запросы к службе данных
 
 Универсальный класс <xref:System.Data.Services.Client.DataServiceQuery%601> представляет запрос, который возвращает коллекцию, включающую ноль или больше экземпляров типа сущности. Запрос к службе данных всегда относится к контексту существующей службы данных. Этот контекст поддерживает URI службы и сведения о метаданных, необходимые для создания и выполнения запроса.
 
-При использовании диалогового окна **Добавление ссылки на службу** для добавления службы данных в клиентское приложение на основе .NET Framework создается класс контейнера сущностей, наследуемый от класса <xref:System.Data.Services.Client.DataServiceContext>. Этот класс включает свойства, возвращаемые типизированными экземплярами <xref:System.Data.Services.Client.DataServiceQuery%601>. Для каждого набора сущностей, предоставляемого службой данных, имеется одно свойство. Эти свойства облегчают создание экземпляра типизированного объекта <xref:System.Data.Services.Client.DataServiceQuery%601>.
+При использовании диалогового окна **Добавление ссылки на службу** для добавления службы данных в клиентское приложение на основе .NET Framework создается класс контейнера сущностей, наследующий от <xref:System.Data.Services.Client.DataServiceContext> класса. Этот класс включает свойства, возвращаемые типизированными экземплярами <xref:System.Data.Services.Client.DataServiceQuery%601>. Для каждого набора сущностей, предоставляемого службой данных, имеется одно свойство. Эти свойства облегчают создание экземпляра типизированного объекта <xref:System.Data.Services.Client.DataServiceQuery%601>.
 
 Запрос выполняется в следующих сценариях.
 
@@ -45,11 +45,11 @@ ms.locfileid: "74568885"
 
 Дополнительные сведения см. [в разделе инструкции. выполнение запросов службы данных](how-to-execute-data-service-queries-wcf-data-services.md).
 
-Клиент WCF Data Services поддерживает запросы для объектов с поздним связыванием, например при использовании *динамического* типа в C#. Тем не менее в силу влияния на производительность для службы данных необходимо всегда составлять строго типизированные запросы. Тип <xref:System.Tuple> и динамические объекты не поддерживаются клиентом.
+Клиент WCF Data Services поддерживает запросы для объектов с поздним связыванием, например при использовании *динамического* типа в C#. Однако по соображениям производительности всегда следует создавать строго типизированные запросы к службе данных. Тип <xref:System.Tuple> и динамические объекты не поддерживаются клиентом.
 
 ## <a name="linq-queries"></a>Запросы LINQ
 
-Поскольку класс <xref:System.Data.Services.Client.DataServiceQuery%601> реализует интерфейс <xref:System.Linq.IQueryable%601>, определенный LINQ, клиентская библиотека WCF Data Services может преобразовать запросы LINQ к данным набора сущностей в URI, представляющий выражение запроса, вычисляемое для ресурса службы данных. В следующем примере показан запрос LINQ, эквивалентный предыдущему объекту <xref:System.Data.Services.Client.DataServiceQuery%601>, который возвращает объект `Orders` со стоимостью транспортировки более 30 долларов и упорядочивает результаты по стоимости транспортировки.
+Поскольку <xref:System.Data.Services.Client.DataServiceQuery%601> класс реализует <xref:System.Linq.IQueryable%601> интерфейс, определенный LINQ, клиентская библиотека WCF Data Services может преобразовать запросы LINQ к данным набора сущностей в URI, представляющий выражение запроса, вычисляемое для ресурса службы данных. В следующем примере показан запрос LINQ, эквивалентный предыдущему объекту <xref:System.Data.Services.Client.DataServiceQuery%601>, который возвращает объект `Orders` со стоимостью транспортировки более 30 долларов и упорядочивает результаты по стоимости транспортировки.
 
 [!code-csharp[Astoria Northwind Client#AddQueryOptionsLinqSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addqueryoptionslinqspecific)]
 [!code-vb[Astoria Northwind Client#AddQueryOptionsLinqSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addqueryoptionslinqspecific)]
@@ -131,7 +131,7 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
 
 Можно также получить только общее число сущностей в наборе либо как значение типа <xref:System.Int32>, либо как значение типа <xref:System.Int64>, вызвав метод <xref:System.Linq.Enumerable.Count%2A> или <xref:System.Linq.Enumerable.LongCount%2A> соответственно. Если вызываются эти методы, объект <xref:System.Data.Services.Client.QueryOperationResponse%601> не возвращается, при этом возвращается только значение подсчета. Дополнительные сведения см. в разделе [инструкции. Определение количества сущностей, возвращаемых запросом](number-of-entities-returned-by-a-query-wcf.md).
 
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
 
 - [Проекции запросов](query-projections-wcf-data-services.md)
 
@@ -151,6 +151,6 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
 
 - [Практическое руководство. Проекция результатов запроса](how-to-project-query-results-wcf-data-services.md)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)

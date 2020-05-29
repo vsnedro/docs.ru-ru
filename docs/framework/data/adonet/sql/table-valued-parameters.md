@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 370c16d5-db7b-43e3-945b-ccaab35b739b
-ms.openlocfilehash: 2917a8d9b42d831566855271a2f2110637db586f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b968c599cf061fbd03b7ba8fb19470f6ace11a55
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174476"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202176"
 ---
 # <a name="table-valued-parameters"></a>Параметры, возвращающие табличные значения
 Параметры, возвращающие табличное значение, упрощают маршалинг нескольких строк данных из клиентского приложения в SQL Server, устраняя потребность в нескольких круговых путях или специальной серверной логике для обработки данных. Параметры, возвращающие табличное значение, можно использовать для инкапсуляции строк данных в клиентском приложении и их отправки на сервер единой параметризованной командой. Входящие строки данных хранятся в переменной таблицы, которой затем можно управлять с помощью Transact-SQL.  
@@ -39,7 +39,7 @@ ms.locfileid: "79174476"
 - Использовать программу `bcp` или объект <xref:System.Data.SqlClient.SqlBulkCopy>, чтобы загрузить в таблицу множество строк данных. Хотя этот метод очень эффективен, он не поддерживает обработку на стороне сервера, если данные не загружены во временную таблицу или табличную переменную.  
   
 ## <a name="creating-table-valued-parameter-types"></a>Создание типов параметров, возвращающих табличное значение  
- Возвращающие табличное значение параметры основаны на строго типизированных табличных структурах, заданных с помощью инструкций Transact-SQL CREATE TYPE. Перед использованием в клиентских приложениях возвращающих табличное значение параметров в SQL Server необходимо создать табличный тип и определить структуру. Для получения дополнительной информации [User-Defined Table Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100))о создании типов таблиц см.  
+ Возвращающие табличные значения параметры основываются на строго типизированных табличных структурах, которые определены с помощью инструкций CREATE TYPE языка Transact-SQL. Перед использованием в клиентских приложениях возвращающих табличное значение параметров в SQL Server необходимо создать табличный тип и определить структуру. Дополнительные сведения о создании табличных типов см. в разделе [определяемые пользователем табличные типы](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
   
  Следующая инструкция создает табличный тип с именем CategoryTableType, состоящий из столбцов CategoryID и CategoryName:  
   
@@ -128,7 +128,7 @@ Dim tvpParam As SqlParameter = _
 tvpParam.SqlDbType = SqlDbType.Structured  
 ```  
   
-## <a name="passing-a-table-valued-parameter-to-a-stored-procedure"></a><a name="passing"></a>Передача параметра, оцениваемого таблицей, к сохраненной процедуре  
+## <a name="passing-a-table-valued-parameter-to-a-stored-procedure"></a><a name="passing"></a>Передача возвращающего табличное значение параметра в хранимую процедуру  
  В этом примере демонстрируется передача данных возвращающего табличное значение параметра в хранимую процедуру. Код извлекает добавленные строки в новый объект <xref:System.Data.DataTable> с помощью метода <xref:System.Data.DataTable.GetChanges%2A>. Затем код определяет <xref:System.Data.SqlClient.SqlCommand>, устанавливая для свойства <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> значение <xref:System.Data.CommandType.StoredProcedure>. <xref:System.Data.SqlClient.SqlParameter> заполняется с помощью метода <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A>, а параметру <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> задано значение `Structured`. Затем <xref:System.Data.SqlClient.SqlCommand> выполняется с помощью метода <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>.  
   
 ```csharp  
@@ -272,10 +272,10 @@ tvpParam.SqlDbType = SqlDbType.Structured
 insertCommand.ExecuteNonQuery()  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Настройка параметров и типы данных параметров](../configuring-parameters-and-parameter-data-types.md)
 - [Команды и параметры](../commands-and-parameters.md)
 - [Параметры DataAdapter](../dataadapter-parameters.md)
-- [Операции с серверами серверов в ADO.NET](sql-server-data-operations.md)
+- [SQL Serverные операции с данными в ADO.NET](sql-server-data-operations.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

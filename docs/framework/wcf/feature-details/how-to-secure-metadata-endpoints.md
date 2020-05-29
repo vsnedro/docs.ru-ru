@@ -5,18 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 9f71b6ae-737c-4382-8d89-0a7b1c7e182b
-ms.openlocfilehash: ee64e53f49e15059c91982f2e64879b9f4c76d78
-ms.sourcegitcommit: 8a0fe8a2227af612f8b8941bdb8b19d6268748e7
+ms.openlocfilehash: 2746c608fb47b94446c5d7e10748ba185d555e7f
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71834679"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202329"
 ---
 # <a name="how-to-secure-metadata-endpoints"></a>Практическое руководство. Защита конечных точек метаданных
 
 Метаданные для службы могут содержать конфиденциальные сведения о приложении, которые могут быть использованы злоумышленником. Потребителям службы может также потребоваться безопасный механизм получения метаданных о службе. Поэтому необходимо время от времени публиковать метаданные с помощью защищенной конечной точки.
 
-Конечные точки метаданных обычно защищаются с помощью стандартных механизмов безопасности, определенных в Windows Communication Foundation (WCF) для защиты конечных точек приложений. Дополнительные сведения см. в разделе [Общие сведения о безопасности](security-overview.md).
+Конечные точки метаданных обычно защищаются с помощью стандартных механизмов безопасности, определенных в Windows Communication Foundation (WCF) для защиты конечных точек приложений. Дополнительные сведения см. в [обзоре безопасности](security-overview.md).
 
 В этом разделе содержится пошаговое руководство по созданию конечной точки, безопасность которой обеспечивается SSL-сертификатом, то есть конечной точкой HTTPS.
 
@@ -31,7 +31,7 @@ ms.locfileid: "71834679"
 
 3. Задайте свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> класса <xref:System.ServiceModel.Description.ServiceMetadataBehavior> значение `true`.
 
-4. Присвойте свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> соответствующее значение URL-адреса. Обратите внимание, что при указании абсолютного адреса URL-адрес должен начинаться со схемы "https://". При указании относительного адреса необходимо определить базовый адрес HTTPS узла службы. Если это свойство службы не задано, за адрес по умолчанию принимается "" или непосредственно базовый адрес HTTPS службы.
+4. Присвойте свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> соответствующее значение URL-адреса. Обратите внимание, что при указании абсолютного адреса URL-адрес должен начинаться с схемы `https://` . При указании относительного адреса необходимо определить базовый адрес HTTPS узла службы. Если это свойство службы не задано, за адрес по умолчанию принимается "" или непосредственно базовый адрес HTTPS службы.
 
 5. Создайте экземпляр коллекции поведений, который возвращает свойство <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> класса <xref:System.ServiceModel.Description.ServiceDescription> в соответствии со следующим кодом.
 
@@ -40,21 +40,21 @@ ms.locfileid: "71834679"
 
 ### <a name="to-create-a-secure-https-get-metadata-endpoint-in-configuration"></a>Добавление защищенной конечной точки метаданных HTTPS GET в конфигурацию
 
-1. Добавьте [\<behaviors >](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) элемент в [\<system. ServiceModel >](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) файла конфигурации службы.
+1. Добавьте [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) элемент в [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) элемент файла конфигурации для службы.
 
-2. Добавьте элемент [\<serviceBehaviors >](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) в элемент [поведения\<>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) .
+2. Добавьте [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) элемент в [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) элемент.
 
-3. Добавьте элемент [\<behavior >](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) в элемент `<serviceBehaviors>`.
+3. Добавьте [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) элемент в `<serviceBehaviors>` элемент.
 
 4. Задайте атрибуту `name` элемента `<behavior>` соответствующее значение. Атрибут `name` является обязательным. В приведенном ниже примере используется значение `mySvcBehavior`.
 
-5. Добавьте [\<serviceMetadata >](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) в элемент `<behavior>`.
+5. Добавьте в [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) `<behavior>` элемент.
 
 6. Задайте атрибуту `httpsGetEnabled` элемента `<serviceMetadata>` значение `true`.
 
-7. Задайте атрибуту `httpsGetUrl` элемента `<serviceMetadata>` соответствующее значение. Обратите внимание, что при указании абсолютного адреса URL-адрес должен начинаться со схемы "https://". При указании относительного адреса необходимо определить базовый адрес HTTPS узла службы. Если это свойство службы не задано, за адрес по умолчанию принимается "" или непосредственно базовый адрес HTTPS службы.
+7. Задайте атрибуту `httpsGetUrl` элемента `<serviceMetadata>` соответствующее значение. Обратите внимание, что при указании абсолютного адреса URL-адрес должен начинаться с схемы `https://` . При указании относительного адреса необходимо определить базовый адрес HTTPS узла службы. Если это свойство службы не задано, за адрес по умолчанию принимается "" или непосредственно базовый адрес HTTPS службы.
 
-8. Чтобы использовать поведение службы, установите атрибут `behaviorConfiguration` элемента [> службы\<](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) в значение атрибута Name элемента Behavior. В следующем примере приводится полный код конфигурации.
+8. Чтобы использовать поведение службы, присвойте `behaviorConfiguration` атрибуту [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) элемента значение атрибута Name элемента Behavior. В следующем примере приводится полный код конфигурации.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -95,7 +95,7 @@ ms.locfileid: "71834679"
 
 - <xref:System.ServiceModel.Description?displayProperty=nameWithType>
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>

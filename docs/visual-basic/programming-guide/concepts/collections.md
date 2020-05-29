@@ -2,18 +2,18 @@
 title: Коллекции
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
-ms.openlocfilehash: 232b9ec7b5975092e73daf0a7384fa816f55f72f
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: d27761ba7a955d1dc8843ad168a82a9c9c27a6f6
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81646347"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202445"
 ---
 # <a name="collections-visual-basic"></a>Коллекции (Visual Basic)
 
 Во многих приложениях требуется создавать группы связанных объектов и управлять ими. Существует два способа группировки объектов: создать массив объектов и создать коллекцию.
 
-Массивы удобнее всего использовать для создания и работы с фиксированным числом строго типизированных объектов. Информацию о массивах см. в разделе [Массивы](../../../visual-basic/programming-guide/language-features/arrays/index.md).
+Массивы удобнее всего использовать для создания фиксированного числа строго типизированных объектов и работы с ними. Информацию о массивах см. в разделе [Массивы](../../../visual-basic/programming-guide/language-features/arrays/index.md).
 
 Коллекции предоставляют более гибкий способ работы с группами объектов. В отличие от массивов, коллекция, с которой вы работаете, может расти или уменьшаться динамически при необходимости. Некоторые коллекции допускают назначение ключа любому объекту, который добавляется в коллекцию, чтобы в дальнейшем можно было быстро извлечь связанный с ключом объект из коллекции.
 
@@ -22,7 +22,7 @@ ms.locfileid: "81646347"
 Если коллекция содержит элементы только одного типа данных, можно использовать один из классов в пространстве имен <xref:System.Collections.Generic?displayProperty=nameWithType>. Универсальная коллекция обеспечивает строгую типизацию, так что в нее нельзя добавить другие типы данных. При извлечении элемента из универсальной коллекции не нужно определять или преобразовывать его тип данных.
 
 > [!NOTE]
-> Для примеров в этой теме `System.Collections.Generic` включите заявления [об импорте](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) для областей имен. `System.Linq`
+> Для примеров в этом разделе включите операторы [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) для `System.Collections.Generic` `System.Linq` пространств имен и.
 
 <a name="BKMK_SimpleCollection"></a>
 
@@ -30,7 +30,7 @@ ms.locfileid: "81646347"
 
 В примерах этого раздела используется универсальный класс <xref:System.Collections.Generic.List%601>, который позволяет работать со строго типизированными списками объектов.
 
-Следующий пример создает список строк, а затем итерирует через строки с помощью [для каждого ... Следующее](../../../visual-basic/language-reference/statements/for-each-next-statement.md) заявление.
+В следующем примере создается список строк, а затем выполняется итерация по строкам с помощью цикла [For Each... Следующий](../../../visual-basic/language-reference/statements/for-each-next-statement.md) оператор.
 
 ```vb
 ' Create a list of strings.
@@ -63,7 +63,7 @@ Next
 'Output: chinook coho pink sockeye
 ```
 
-Вы можете использовать [for... Следующее](../../../visual-basic/language-reference/statements/for-next-statement.md) заявление `For Each` вместо оператора для итерата через коллекцию. Для этого доступ к элементам коллекции осуществляется по позиции индекса. Индекс элементов начинается с 0 и заканчивается числом, равным количеству элементов минус 1.
+Можно использовать [для... Оператор Next](../../../visual-basic/language-reference/statements/for-next-statement.md) , а не `For Each` оператор для прохода по коллекции. Для этого доступ к элементам коллекции осуществляется по позиции индекса. Индекс элементов начинается с 0 и заканчивается числом, равным количеству элементов минус 1.
 
 В приведенном ниже примере выполняется перебор элементов коллекции с помощью оператора `For…Next` вместо `For Each`.
 
@@ -95,7 +95,7 @@ Next
 'Output: chinook pink sockeye
 ```
 
-В приведенном ниже примере удаляются элементы из универсального списка. Вместо `For Each` заявления, [для ... Используется следующее](../../../visual-basic/language-reference/statements/for-next-statement.md) утверждение, итерирующее в порядке убывания. Связано это с тем, что в результате работы метода <xref:System.Collections.Generic.List%601.RemoveAt%2A> элементы, следующие за удаленным элементом, получают меньшее значение индекса.
+В приведенном ниже примере удаляются элементы из универсального списка. Вместо `For Each` оператора, a [для... ](../../../visual-basic/language-reference/statements/for-next-statement.md)Используется оператор Next, который выполняет итерацию в убывающем порядке. Связано это с тем, что в результате работы метода <xref:System.Collections.Generic.List%601.RemoveAt%2A> элементы, следующие за удаленным элементом, получают меньшее значение индекса.
 
 ```vb
 Dim numbers As New List(Of Integer) From
@@ -296,7 +296,7 @@ Private Function BuildDictionary2() As Dictionary(Of String, Element)
 End Function
 ```
 
-В приведенном ниже примере используется метод <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> и свойство <xref:System.Collections.Generic.Dictionary%602.Item%2A>`Dictionary` для быстрого поиска элемента по ключу. Свойство `Item` позволяет получить доступ к `elements` элементу `elements(symbol)` в коллекции, используя код в Visual Basic.
+В приведенном ниже примере используется метод <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> и свойство <xref:System.Collections.Generic.Dictionary%602.Item%2A>`Dictionary` для быстрого поиска элемента по ключу. `Item`Свойство позволяет получить доступ к элементу в коллекции с `elements` помощью `elements(symbol)` кода в Visual Basic.
 
 ```vb
 Private Sub FindInDictionary(ByVal symbol As String)
@@ -330,7 +330,7 @@ End Sub
 
 ## <a name="using-linq-to-access-a-collection"></a>Использование LINQ для доступа к коллекции
 
-Для доступа к коллекции можно использовать язык LINQ. Запросы LINQ обеспечивают возможности фильтрации, упорядочения и группировки. Для получения дополнительной информации, [см. Начало работы с LIN's в Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md).
+Для доступа к коллекции можно использовать язык LINQ. Запросы LINQ обеспечивают возможности фильтрации, упорядочения и группировки. Дополнительные сведения см. [в разделе Начало работы с LINQ в Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md).
 
 В приведенном ниже примере выполняется запрос LINQ применительно к универсальной коллекции `List`. Запрос LINQ возвращает другую коллекцию, содержащую результаты.
 
@@ -458,7 +458,7 @@ End Class
 
 ## <a name="defining-a-custom-collection"></a>Определение настраиваемой коллекции
 
-Вы можете определить коллекцию, реализовав интерфейс <xref:System.Collections.Generic.IEnumerable%601> или <xref:System.Collections.IEnumerable>. Для получения дополнительной информации [см.](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100))
+Вы можете определить коллекцию, реализовав интерфейс <xref:System.Collections.Generic.IEnumerable%601> или <xref:System.Collections.IEnumerable>. Дополнительные сведения см. [в разделе Перечисление коллекции](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100)).
 
 Хотя можно определить настраиваемую коллекцию, обычно лучше использовать коллекции, входящие в .NET Framework, которые описаны в подразделе [Виды коллекций](#kinds-of-collections) ранее в этом разделе.
 
@@ -538,13 +538,13 @@ End Class
 
 ## <a name="iterators"></a>Iterators
 
-*Итератор* используется для выполнения настраиваемого перебора коллекции. Итератор может быть методом или методом доступа `get`. Итератор использует выписку [о доходности,](../../../visual-basic/language-reference/statements/yield-statement.md) чтобы вернуть каждый элемент коллекции по одному.
+*Итератор* используется для выполнения настраиваемого перебора коллекции. Итератор может быть методом или методом доступа `get`. Итератор использует оператор [yield](../../../visual-basic/language-reference/statements/yield-statement.md) для возвращения каждого элемента коллекции по одному за раз.
 
-Вы называете итератор с помощью [для каждого ... Следующее](../../../visual-basic/language-reference/statements/for-each-next-statement.md) заявление. Каждая итерация цикла `For Each` вызывает итератор. При достижении оператора `Yield` в итераторе возвращается выражение, и текущее расположение в коде сохраняется. При следующем вызове итератора выполнение возобновляется с этого места.
+Для вызова итератора используется оператор [For Each... Следующий](../../../visual-basic/language-reference/statements/for-each-next-statement.md) оператор. Каждая итерация цикла `For Each` вызывает итератор. При достижении оператора `Yield` в итераторе возвращается выражение, и текущее расположение в коде сохраняется. При следующем вызове итератора выполнение возобновляется с этого места.
 
-Для получения дополнительной информации [см.](../../../visual-basic/programming-guide/concepts/iterators.md)
+Дополнительные сведения см. в разделе [итераторы (Visual Basic)](../../../visual-basic/programming-guide/concepts/iterators.md).
 
-В приведенном ниже примере используется метод-итератор. Метод итератора имеет `Yield` заявление, которое находится внутри [For... Следующий](../../../visual-basic/language-reference/statements/for-next-statement.md) цикл. В методе `ListEvenNumbers` каждая итерация тела оператора `For Each` создает вызов метода-итератора, который переходит к следующему оператору `Yield`.
+В приведенном ниже примере используется метод-итератор. Метод итератора содержит `Yield` оператор, который находится внутри блока [for... Следующий](../../../visual-basic/language-reference/statements/for-next-statement.md) цикл. В методе `ListEvenNumbers` каждая итерация тела оператора `For Each` создает вызов метода-итератора, который переходит к следующему оператору `Yield`.
 
 ```vb
 Public Sub ListEvenNumbers()
@@ -568,11 +568,11 @@ As IEnumerable(Of Integer)
 End Function
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Инициализаторы коллекций](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
 - [Основные понятия программирования (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
-- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Оператор Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)
 - [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
 - [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/introduction-to-plinq.md)
 - [Коллекции и структуры данных](../../../standard/collections/index.md)

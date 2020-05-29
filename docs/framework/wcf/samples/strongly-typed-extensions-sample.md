@@ -2,17 +2,18 @@
 title: Пример строго типизированных расширений
 ms.date: 03/30/2017
 ms.assetid: 02220f11-1a83-441c-9e5a-85f9a9367572
-ms.openlocfilehash: 3cfbcddfdc7700618d499dd41d3a8c3b629bf550
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 65f14b2c8db7553cb2f14bc7a1fe6f7128f523b6
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183316"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84201554"
 ---
 # <a name="strongly-typed-extensions-sample"></a>Пример строго типизированных расширений
+
 В этом примере используется класс <xref:System.ServiceModel.Syndication.SyndicationFeed>. Однако показанные в примере шаблоны можно использовать со всеми классами Syndication, которые поддерживают данные расширения.  
   
- Объектная модель синдикации (<xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem> и связанные классы) поддерживает слабо типизированный доступ к данным расширений с использованием свойств <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> и <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A>. В этом образце показано, как обеспечить строго типизированный доступ к данным расширений, реализовав пользовательские производные классы для классов <xref:System.ServiceModel.Syndication.SyndicationFeed> и <xref:System.ServiceModel.Syndication.SyndicationItem>, чтобы сделать доступными в виде строго типизированных свойств некоторые относящиеся к конкретным приложениям расширения.  
+ Объектная модель синдикации (<xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem> и связанные классы) поддерживает слабо типизированный доступ к данным расширений с использованием свойств <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> и <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A>. В этом примере показано, как обеспечить строго типизированный доступ к данным расширения путем реализации пользовательских производных классов <xref:System.ServiceModel.Syndication.SyndicationFeed> и <xref:System.ServiceModel.Syndication.SyndicationItem> сделать доступными определенные расширения для конкретных приложений как строго типизированные свойства.  
   
  Например, здесь показано, как реализовать элемент расширения, определенный в документе RFC "Atom Threading Extensions". Этот образец приводится исключительно с целью демонстрации и не является полной реализацией предлагаемой спецификации.  
   
@@ -40,10 +41,10 @@ ms.locfileid: "79183316"
 </entry>  
 ```  
   
- Элемент `<in-reply-to>` определяет три требуемых атрибута `type` `href`(и),`ref`а также позволяет наличие дополнительных атрибутов расширения и элементов расширения.  
+ `<in-reply-to>`Элемент задает три обязательных атрибута ( `ref` `type` и), `href` а также разрешение на присутствие дополнительных атрибутов расширения и элементов расширения.  
   
 ## <a name="modeling-the-in-reply-to-element"></a>Моделирование элемента In-Reply-To  
- В этом образце элемент `<in-reply-to>` моделируется в среде CLR, которая реализует интерфейс <xref:System.Xml.Serialization.IXmlSerializable>, позволяющий использовать его с <xref:System.Runtime.Serialization.DataContractSerializer>. Кроме того, в образце реализованы методы и свойства для доступа к данным элемента, как показано в следующем образце кода.  
+ В этом образце элемент `<in-reply-to>` моделируется в среде CLR, которая реализует интерфейс <xref:System.Xml.Serialization.IXmlSerializable>, позволяющий использовать его с <xref:System.Runtime.Serialization.DataContractSerializer>. Он также реализует некоторые методы и свойства для доступа к данным элемента, как показано в следующем образце кода.  
   
 ```csharp  
 [XmlRoot(ElementName = "in-reply-to", Namespace = "http://contoso.org/syndication/thread/1.0")]  
@@ -211,7 +212,7 @@ public class ThreadedFeed : SyndicationFeed
 }  
 ```  
   
- Класс `ThreadedItem` наследует классу `SyndicationItem` и делает элемент `InReplyToElement` строго типизированным свойством. Это делает возможным удобный программный доступ к данным расширений `InReplyTo`. Кроме того, он реализует методы `TryParseElement` и `WriteElementExtensions` для чтения и записи данных расширений, как показано в следующем примере кода.  
+ Класс `ThreadedItem` наследует от класса `SyndicationItem` и делает `InReplyToElement` его свойством со строгой типизацией. Это делает возможным удобный программный доступ к данным расширений `InReplyTo`. Кроме того, он реализует методы `TryParseElement` и `WriteElementExtensions` для чтения и записи данных расширений, как показано в следующем примере кода.  
   
 ```csharp
 public class ThreadedItem : SyndicationItem  
@@ -272,17 +273,17 @@ public class ThreadedItem : SyndicationItem
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
 2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Syndication\StronglyTypedExtensions`  

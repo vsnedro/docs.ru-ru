@@ -1,16 +1,16 @@
 ---
-title: <Directives>Элемент (.NET Родной)
+title: <Directives>Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb
-ms.openlocfilehash: 49c1aaf005b80a6c1c1fa382eebc2cb0dbfa4be7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0c6ebb8954e80f3f6dc6733f0e9d76094477689b
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181045"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202385"
 ---
-# <a name="directives-element-net-native"></a>\<Директивы> Элемент (.NET Родной)
-Корневой элемент в каждом файле директив времени выполнения для .NET Native.  
+# <a name="directives-element-net-native"></a>\<Directives>Элемент (.NET Native)
+Корневой элемент в каждом файле директив среды выполнения для .NET Native.  
   
  `<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">`
   
@@ -24,23 +24,23 @@ ms.locfileid: "79181045"
   
 ## <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|`xmlns`|Пространство имен XML. Его ценность всегда **"http://schemas.microsoft.com/netfx/2013/01/metadata**.|  
+|`xmlns`|Пространство имен XML. Его значение всегда равно `http://schemas.microsoft.com/netfx/2013/01/metadata` .|  
   
 ## <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<Применение>](application-element-net-native.md)|Служит в качестве контейнера для типов и членов типов приложения, метаданные которого доступны для отражения.|  
-|[\<Библиотечная>](library-element-net-native.md)|Определяет сборку, чьи дочерние типы и члены типов требуют метаданные во время выполнения.|  
+|[\<Application>](application-element-net-native.md)|Служит в качестве контейнера для типов и членов типов приложения, метаданные которого доступны для отражения.|  
+|[\<Library>](library-element-net-native.md)|Определяет сборку, чьи дочерние типы и члены типов требуют метаданные во время выполнения.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
  Каждый файл директив среды выполнения содержит только один элемент `<Directives>`.  
   
- Элемент `<Directives>` может содержать ноль или одно [ \<приложение>](application-element-net-native.md) элемент, а также ноль, один или несколько [ \<](library-element-net-native.md) элементов библиотеки>.  
+ `<Directives>`Элемент может содержать ноль или один [\<Application>](application-element-net-native.md) элемент, а также ноль, один или несколько [\<Library>](library-element-net-native.md) элементов.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Справочник по конфигурационному файлу директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
