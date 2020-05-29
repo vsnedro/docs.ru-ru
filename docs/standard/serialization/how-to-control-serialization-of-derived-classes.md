@@ -1,23 +1,24 @@
 ---
 title: Практическое руководство. Управление сериализацией производных классов
+description: Поток XML можно настроить путем наследования из существующего класса и передачи в экземпляр XmlSerializer инструкций по сериализации нового класса.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: caa92596-9e15-4d91-acbe-56911ef47a84
-ms.openlocfilehash: af19981fd7cfeda3e8e985fa991fd7fdf2476b42
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: b9a8bd52b7dfe7a9bf43061d8f44747b3a847c68
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159927"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379128"
 ---
-# <a name="how-to-control-serialization-of-derived-classes"></a><span data-ttu-id="b802b-102">Практическое руководство. Управление сериализацией производных классов</span><span class="sxs-lookup"><span data-stu-id="b802b-102">How to: Control Serialization of Derived Classes</span></span>
-<span data-ttu-id="b802b-103">Использование атрибута **XmlElementAttribute** для изменения имени элемента XML — не единственный способ изменения сериализации объекта.</span><span class="sxs-lookup"><span data-stu-id="b802b-103">Using the **XmlElementAttribute** attribute to change the name of an XML element is not the only way to customize object serialization.</span></span> <span data-ttu-id="b802b-104">Поток XML также можно настроить путем наследования из существующего класса и передачи в экземпляр <xref:System.Xml.Serialization.XmlSerializer> инструкций по сериализации нового класса.</span><span class="sxs-lookup"><span data-stu-id="b802b-104">You can also customize the XML stream by deriving from an existing class and instructing the <xref:System.Xml.Serialization.XmlSerializer> instance how to serialize the new class.</span></span>  
+# <a name="how-to-control-serialization-of-derived-classes"></a><span data-ttu-id="245a7-103">Практическое руководство. Управление сериализацией производных классов</span><span class="sxs-lookup"><span data-stu-id="245a7-103">How to: Control Serialization of Derived Classes</span></span>
+<span data-ttu-id="245a7-104">Использование атрибута **XmlElementAttribute** для изменения имени элемента XML — не единственный способ изменения сериализации объекта.</span><span class="sxs-lookup"><span data-stu-id="245a7-104">Using the **XmlElementAttribute** attribute to change the name of an XML element is not the only way to customize object serialization.</span></span> <span data-ttu-id="245a7-105">Поток XML также можно настроить путем наследования из существующего класса и передачи в экземпляр <xref:System.Xml.Serialization.XmlSerializer> инструкций по сериализации нового класса.</span><span class="sxs-lookup"><span data-stu-id="245a7-105">You can also customize the XML stream by deriving from an existing class and instructing the <xref:System.Xml.Serialization.XmlSerializer> instance how to serialize the new class.</span></span>  
   
- <span data-ttu-id="b802b-105">Например, если имеется класс `Book`, посредством наследования от него можно создать класс `ExpandedBook` с большим числом свойств.</span><span class="sxs-lookup"><span data-stu-id="b802b-105">For example, given a `Book` class, you can derive from it and create an `ExpandedBook` class that has a few more properties.</span></span> <span data-ttu-id="b802b-106">Однако **XmlSerializer** должен принять производный тип при сериализации или десериализации.</span><span class="sxs-lookup"><span data-stu-id="b802b-106">However, you must instruct the **XmlSerializer** to accept the derived type when serializing or deserializing.</span></span> <span data-ttu-id="b802b-107">Это можно сделать, создав экземпляр класса <xref:System.Xml.Serialization.XmlElementAttribute> и указав тип производного класса в его свойстве **Type**.</span><span class="sxs-lookup"><span data-stu-id="b802b-107">This can be done by creating a <xref:System.Xml.Serialization.XmlElementAttribute> instance and setting its **Type** property to the derived class type.</span></span> <span data-ttu-id="b802b-108">Добавьте атрибут **XmlElementAttribute** к экземпляру класса <xref:System.Xml.Serialization.XmlAttributes>.</span><span class="sxs-lookup"><span data-stu-id="b802b-108">Add the **XmlElementAttribute** to a <xref:System.Xml.Serialization.XmlAttributes> instance.</span></span> <span data-ttu-id="b802b-109">Затем добавьте **XmlAttributes** к экземпляру класса <xref:System.Xml.Serialization.XmlAttributeOverrides>, указав переопределяемый тип и имя члена, принимающего производный класс.</span><span class="sxs-lookup"><span data-stu-id="b802b-109">Then add the **XmlAttributes** to a <xref:System.Xml.Serialization.XmlAttributeOverrides> instance, specifying the type being overridden and the name of the member that accepts the derived class.</span></span> <span data-ttu-id="b802b-110">Эти действия показаны в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="b802b-110">This is shown in the following example.</span></span>  
+ <span data-ttu-id="245a7-106">Например, если имеется класс `Book`, посредством наследования от него можно создать класс `ExpandedBook` с большим числом свойств.</span><span class="sxs-lookup"><span data-stu-id="245a7-106">For example, given a `Book` class, you can derive from it and create an `ExpandedBook` class that has a few more properties.</span></span> <span data-ttu-id="245a7-107">Однако **XmlSerializer** должен принять производный тип при сериализации или десериализации.</span><span class="sxs-lookup"><span data-stu-id="245a7-107">However, you must instruct the **XmlSerializer** to accept the derived type when serializing or deserializing.</span></span> <span data-ttu-id="245a7-108">Это можно сделать, создав экземпляр класса <xref:System.Xml.Serialization.XmlElementAttribute> и указав тип производного класса в его свойстве **Type**.</span><span class="sxs-lookup"><span data-stu-id="245a7-108">This can be done by creating a <xref:System.Xml.Serialization.XmlElementAttribute> instance and setting its **Type** property to the derived class type.</span></span> <span data-ttu-id="245a7-109">Добавьте атрибут **XmlElementAttribute** к экземпляру класса <xref:System.Xml.Serialization.XmlAttributes>.</span><span class="sxs-lookup"><span data-stu-id="245a7-109">Add the **XmlElementAttribute** to a <xref:System.Xml.Serialization.XmlAttributes> instance.</span></span> <span data-ttu-id="245a7-110">Затем добавьте **XmlAttributes** к экземпляру класса <xref:System.Xml.Serialization.XmlAttributeOverrides>, указав переопределяемый тип и имя члена, принимающего производный класс.</span><span class="sxs-lookup"><span data-stu-id="245a7-110">Then add the **XmlAttributes** to a <xref:System.Xml.Serialization.XmlAttributeOverrides> instance, specifying the type being overridden and the name of the member that accepts the derived class.</span></span> <span data-ttu-id="245a7-111">Эти действия показаны в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="245a7-111">This is shown in the following example.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="b802b-111">Пример</span><span class="sxs-lookup"><span data-stu-id="b802b-111">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="245a7-112">Пример</span><span class="sxs-lookup"><span data-stu-id="245a7-112">Example</span></span>  
   
 ```vb  
 Public Class Orders  
@@ -232,12 +233,12 @@ public class Run
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="b802b-112">См. также</span><span class="sxs-lookup"><span data-stu-id="b802b-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="245a7-113">См. также</span><span class="sxs-lookup"><span data-stu-id="245a7-113">See also</span></span>
 
 - <xref:System.Xml.Serialization.XmlSerializer>
 - <xref:System.Xml.Serialization.XmlElementAttribute>
 - <xref:System.Xml.Serialization.XmlAttributes>
 - <xref:System.Xml.Serialization.XmlAttributeOverrides>
-- [<span data-ttu-id="b802b-113">Сериализация XML и SOAP</span><span class="sxs-lookup"><span data-stu-id="b802b-113">XML and SOAP Serialization</span></span>](../../../docs/standard/serialization/xml-and-soap-serialization.md)
-- [<span data-ttu-id="b802b-114">Практическое руководство. Сериализация объекта</span><span class="sxs-lookup"><span data-stu-id="b802b-114">How to: Serialize an Object</span></span>](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [<span data-ttu-id="b802b-115">Практическое руководство. Указание имени альтернативного элемента для потока XML</span><span class="sxs-lookup"><span data-stu-id="b802b-115">How to: Specify an Alternate Element Name for an XML Stream</span></span>](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+- [<span data-ttu-id="245a7-114">Сериализация XML и SOAP</span><span class="sxs-lookup"><span data-stu-id="245a7-114">XML and SOAP Serialization</span></span>](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [<span data-ttu-id="245a7-115">Практическое руководство. Сериализация объекта</span><span class="sxs-lookup"><span data-stu-id="245a7-115">How to: Serialize an Object</span></span>](../../../docs/standard/serialization/how-to-serialize-an-object.md)
+- [<span data-ttu-id="245a7-116">Практическое руководство. Указание имени альтернативного элемента для потока XML</span><span class="sxs-lookup"><span data-stu-id="245a7-116">How to: Specify an Alternate Element Name for an XML Stream</span></span>](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
