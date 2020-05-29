@@ -1,5 +1,6 @@
 ---
 title: Независимая от версий сериализация
+description: В .NET Framework 2.0 реализована независимая от версий сериализация — набор функций, которые упрощают изменение сериализуемых типов.
 ms.date: 08/08/2017
 dev_langs:
 - csharp
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - BinaryFormatter class, samples
 - serialization, attributes
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
-ms.openlocfilehash: 9886e2f20ef7954b01ea1f46a9eabdb9ea2cc12d
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: afc822e1f8873bac069f6634fdf1d4665d392e69
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75348433"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83762595"
 ---
 # <a name="version-tolerant-serialization"></a>Независимая от версий сериализация
 
@@ -27,7 +28,7 @@ ms.locfileid: "75348433"
 - Приложения старых версий выдадут исключения при запросе десериализации новых версий старого типа.
 - Приложения более новых версий выдадут исключения при десериализации старых версий типа с отсутствующими данными.
 
-Независимая от версий сериализация (VTS) является набором функций, представленных в платформе .NET Framework 2.0, которые со временем упрощают изменение сериализуемых типов. В частности, функции VTS доступны для классов, к которым применен атрибут <xref:System.SerializableAttribute>, включая универсальные типы. VTS позволяет добавлять новые поля для таких классов, не нарушая совместимости с другими версиями типа. Пример работающего приложения см. в разделе [Образец технологии сериализации, независимой от версии](version-tolerant-serialization-technology-sample.md).
+Независимая от версий сериализация (VTS) является набором функций, представленных в платформе .NET Framework 2.0, которые со временем упрощают изменение сериализуемых типов. В частности, функции VTS доступны для классов, к которым применен атрибут <xref:System.SerializableAttribute>, включая универсальные типы. VTS позволяет добавлять новые поля для таких классов, не нарушая совместимости с другими версиями типа. Пример работающего приложения см. в разделе [Образец технологии сериализации, независимой от версии](basic-serialization-technology-sample.md).
 
 Функции VTS доступны при использовании <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Кроме того, при использовании <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> доступны все функции, за исключением допустимости лишних данных. Дополнительные сведения об использовании этих классов для сериализации см. в разделе [Двоичная сериализация](binary-serialization.md).
 

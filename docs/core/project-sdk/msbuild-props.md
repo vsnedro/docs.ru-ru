@@ -1,18 +1,18 @@
 ---
 title: Свойства MSBuild для Microsoft.NET.Sdk
-description: Справочник по свойствам MSBuild, распознаваемым пакетом SDK для .NET Core.
+description: Справочник по свойствам и элементам MSBuild, распознаваемым пакетом SDK для .NET Core.
 ms.date: 02/14/2020
 ms.topic: reference
-ms.openlocfilehash: 800ff59310d8437d7f770bf20a5bdf37714f8515
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: cda56b3e23592a341d9fe672fc1f1530adcdab49
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795577"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83206111"
 ---
-# <a name="msbuild-properties-for-net-core-sdk-projects"></a>Свойства MSBuild для проектов пакета SDK для .NET Core
+# <a name="msbuild-reference-for-net-core-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET Core
 
-На этой странице описываются свойства MSBuild для настройки проектов .NET Core. Можно указать *метаданные* для каждого свойства в качестве дочерних элементов свойства.
+Эта страница содержит справочные сведения о свойствах и элементах MSBuild, которые вы можете использовать для настройки проектов .NET Core.
 
 > [!NOTE]
 > Работа над этой страницей еще не завершена, поэтому здесь приведены лишь некоторые полезные свойства MSBuild для пакета SDK для .NET Core. Список стандартных свойств см. в статье [Общие свойства MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
@@ -78,7 +78,7 @@ ms.locfileid: "82795577"
 </PropertyGroup>
 ```
 
-## <a name="publish-properties"></a>Параметры публикации
+## <a name="publish-properties-and-items"></a>Публикация свойств и элементов
 
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
@@ -136,7 +136,23 @@ ms.locfileid: "82795577"
 
 ## <a name="compile-properties"></a>Свойства компиляции
 
+- [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [LangVersion](#langversion)
+
+### <a name="embeddedresourceusedependentuponconvention"></a>EmbeddedResourceUseDependentUponConvention
+
+Свойство `EmbeddedResourceUseDependentUponConvention` определяет, будет ли использоваться информация о типах в исходных файлах, расположенных в одной папке с файлами ресурсов, для создания имен файлов манифеста этих ресурсов. Например, если *Form1.resx* находится в той же папке, что и *Form1.cs*, а `EmbeddedResourceUseDependentUponConvention` имеет значение `true`, то созданному файл *.resources* присваивается имя на основе имени первого типа, определенного в файле *Form1.cs*. Например, если первым типом в файле *Form1.cs* является `MyNamespace.Form1`, созданному файлу присваивается имя *MyNamespace.Form1.resources*.
+
+> [!NOTE]
+> Если для `EmbeddedResource` элемента заданы метаданные `LogicalName`, `ManifestResourceName` или `DependentUpon`, то имя файла манифеста для этого файла ресурсов будет создаваться на основе таких метаданных.
+
+По умолчанию для нового проекта .NET Core этому свойству задается значение `true`. Если задано значение `false` и для элемента `EmbeddedResource` в файле проекта не указаны метаданные `LogicalName`, `ManifestResourceName` или `DependentUpon`, то имя файла манифеста для этого ресурса будет основано на имени корневого пространства имен проекта и относительном пути к файлу *.resx*. Дополнительные сведения об определение имени файла манифеста см. [здесь](../resources/manifest-file-names.md).
+
+```xml
+<PropertyGroup>
+  <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+</PropertyGroup>
+```
 
 ### <a name="langversion"></a>LangVersion
 
@@ -254,7 +270,7 @@ ms.locfileid: "82795577"
 </PropertyGroup>
 ```
 
-## <a name="reference-properties"></a>Свойства ссылки
+## <a name="reference-properties-and-items"></a>Справочники по свойствам и элементам
 
 - [AssetTargetFallback](#assettargetfallback)
 - [PackageReference](#packagereference)
@@ -276,7 +292,7 @@ ms.locfileid: "82795577"
 
 ### <a name="packagereference"></a>PackageReference
 
-`PackageReference` определяет ссылку на пакет NuGet. Например, может потребоваться сослаться на один пакет, а не на [метапакет](../packages.md#metapackages).
+Элемент `PackageReference` определяет ссылку на пакет NuGet. Например, может потребоваться сослаться на один пакет, а не на [метапакет](../packages.md#metapackages).
 
 Атрибут `Include` указывает идентификатор пакета. Атрибут `Version` указывает версию или диапазон версий. Сведения о том, как указать минимальную версию, максимальную версию, диапазон или точное соответствие, см. в разделе [Диапазоны версий](/nuget/concepts/package-versioning#version-ranges). Вы также можете добавить в ссылку на проект следующие метаданные: `IncludeAssets`, `ExcludeAssets` и `PrivateAssets`.
 
@@ -308,7 +324,7 @@ ms.locfileid: "82795577"
 
 Элемент `Reference` определяет ссылку на файл сборки.
 
-Атрибут `Include` задает имя файла, а дочерний элемент `HintPath` указывает путь к сборке.
+Атрибут `Include` задает имя файла, а метаданные `HintPath` указывают путь к этой сборке.
 
 ```xml
 <ItemGroup>

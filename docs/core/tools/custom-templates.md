@@ -2,13 +2,13 @@
 title: Пользовательские шаблоны для команды dotnet new
 description: Сведения о пользовательских шаблонах для проектов или файлов .NET любых типов.
 author: thraka
-ms.date: 06/14/2019
-ms.openlocfilehash: 8e1ac4ca21a8a90ad0f7c9bd3dd11281eb4a6e02
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 05/20/2020
+ms.openlocfilehash: 19855c99b240b66dfa819e70d4a1bee5c8ed14ed
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73420883"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83761919"
 ---
 # <a name="custom-templates-for-dotnet-new"></a>Пользовательские шаблоны для команды dotnet new
 
@@ -16,7 +16,10 @@ ms.locfileid: "73420883"
 
 Устанавливать пользовательские шаблоны из пакета NuGet можно в любом веб-канале NuGet, указывая прямую ссылку на файл *NUPKG* для NuGet или каталог в файловой системе, который содержит нужный шаблон. Модуль шаблонов предоставляет возможности, которые позволяют заменять значения, включать и исключать файлы, а также выполнять пользовательские операции обработки при использовании шаблона.
 
-Модуль шаблонов имеет открытый код. Репозиторий кода в Интернете — [dotnet/templating](https://github.com/dotnet/templating/) в GitHub. Образцы шаблонов можно найти в репозитории [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples). Дополнительные шаблоны, в том числе шаблоны от сторонних разработчиков, можно найти на странице [Доступные шаблоны для dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) в GitHub. Дополнительные сведения о создании и использовании пользовательских шаблонов см. в записи блога [Создание собственных шаблонов для команды dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) и на [вики-сайте, посвященном репозиторию dotnet/templating в GitHub](https://github.com/dotnet/templating/wiki).
+Модуль шаблонов имеет открытый код. Репозиторий кода в Интернете — [dotnet/templating](https://github.com/dotnet/templating/) в GitHub. Дополнительные шаблоны, в том числе шаблоны от сторонних разработчиков, можно найти на странице [Доступные шаблоны для dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) в GitHub. Дополнительные сведения о создании и использовании пользовательских шаблонов см. в записи блога [Создание собственных шаблонов для команды dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/) и на [вики-сайте, посвященном репозиторию dotnet/templating в GitHub](https://github.com/dotnet/templating/wiki).
+
+> [!NOTE]
+> Примеры шаблонов доступны в репозитории [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) GitHub. Но хотя эти примеры являются хорошим ресурсом для изучения работы шаблонов, репозиторий заархивирован и больше не поддерживается. Примеры могут устареть и больше не работать.
 
 Пошаговое руководство по созданию шаблона см. в учебнике [Создание пользовательского шаблона для команды dotnet new](../tutorials/cli-templates-create-item-template.md).
 
@@ -28,14 +31,14 @@ ms.locfileid: "73420883"
 dotnet new --list
 ```
 
-## <a name="configuration"></a>Конфигурация
+## <a name="configuration"></a>Параметр Configuration
 
 Шаблон состоит из следующих частей:
 
 - исходные файлы и папки;
 - файл конфигурации (*template.json*).
 
-### <a name="source-files-and-folders"></a>исходные файлы и папки;
+### <a name="source-files-and-folders"></a>Исходные файлы и папки
 
 К исходным файлам и папкам относятся все файлы и папки, которые должен использовать модуль шаблонов при выполнении команды `dotnet new <TEMPLATE>`. Модуль шаблонов предполагает использование *запускаемых проектов* в качестве исходного кода для создания проектов. Это дает ряд преимуществ.
 
@@ -48,11 +51,11 @@ dotnet new --list
 
 Создаваемые шаблоном файлы можно изменять с помощью логики и параметров, которые предоставляются в файле конфигурации *template.json*. Пользователь может переопределять эти параметры, передавая их в команду `dotnet new <TEMPLATE>`. Типичный пример пользовательской логики — определение имени класса или переменной в файле кода, который развернут с помощью шаблона.
 
-### <a name="templatejson"></a>template.json.
+### <a name="templatejson"></a>template.json
 
 Файл *template.json* размещается в папке *.template.config* в корневом каталоге шаблона. Он предоставляет сведения о конфигурации модулю шаблонов. В приведенной ниже таблице приведены элементы конфигурации, которые необходимы и достаточны для создания работающего шаблона.
 
-| Участник            | Type          | Описание: |
+| Член            | Type          | Описание |
 | ----------------- | ------------- | ----------- |
 | `$schema`         | URI           | Схема JSON для файла *template.json*. Редакторы, поддерживающие схемы JSON, обеспечивают возможности редактирования JSON при указании схемы. Например, в [Visual Studio Code](https://code.visualstudio.com/) требуется, чтобы этот элемент включал поддержку IntelliSense. Используйте значение `http://json.schemastore.org/template`. |
 | `author`          | string        | Автор шаблона. |
@@ -248,7 +251,7 @@ dotnet new -u <ABSOLUTE_FILE_SYSTEM_DIRECTORY>
 dotnet new <TEMPLATE>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание пользовательского шаблона для команды dotnet new (учебник)](../tutorials/cli-templates-create-item-template.md)
 - [Вики-сайт, посвященный репозиторию dotnet/templating в GitHub](https://github.com/dotnet/templating/wiki)

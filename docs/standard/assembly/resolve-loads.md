@@ -1,5 +1,6 @@
 ---
 title: Разрешение загрузки сборок
+description: В этой статье описывается событие .NET AppDomain.AssemblyResolve. Используйте это событие для приложений, которым требуется контроль над загрузкой сборок.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - assemblies [.NET Framework], resolving loads
@@ -12,12 +13,12 @@ dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: d6314fae266505fbb4410aaaa351973070ab3811
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 36f36b60a3a113c6b020cc1042c786c4091e567b
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78156443"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378666"
 ---
 # <a name="resolve-assembly-loads"></a>Разрешение загрузки сборок
 В .NET имеется событие <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> для приложений, требующих дополнительного управления загрузкой сборок. Обрабатывая это событие, приложение может загружать сборку в контекст загрузки не из каталогов, где обычно осуществляется поиск, выбирать, какую из версий сборки загрузить, создавать динамическую сборку и возвращать ее и многое другое. В этом разделе описывается использование события <xref:System.AppDomain.AssemblyResolve>.  

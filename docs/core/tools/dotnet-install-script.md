@@ -1,13 +1,13 @@
 ---
 title: Скрипты dotnet-install
 description: Сведения о скриптах dotnet-install, которые служат для установки пакета SDK для .NET Core и общей среды выполнения
-ms.date: 01/23/2020
-ms.openlocfilehash: 591413a17db577560bd0324995066c8ea7a35895
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.date: 04/30/2020
+ms.openlocfilehash: 9f5cef9cfcca1d8b344021efe803c063a7393f8e
+ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463679"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83802723"
 ---
 # <a name="dotnet-install-scripts-reference"></a>Справка по скриптам dotnet-install
 
@@ -31,7 +31,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
 dotnet-install.ps1 -Help
 ```
 
-Linux или macOS
+Linux или MacOS:
 
 ```bash
 dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
@@ -62,6 +62,8 @@ dotnet-install.sh --help
 Перед запуском скрипта установите все необходимые [зависимости](../install/dependencies.md).
 
 Вы можете установить конкретную версию с помощью аргумента `-Version|--version`. Версию следует указывать в виде трехкомпонентного номера (например, `2.1.0`). Если она не указана, используется версия `latest`.
+
+Скрипты установки не обновляют реестр в Windows. Они просто скачивают двоичные ZIP-файлы и копируют их в папку. Чтобы значения разделов реестра обновлялись, используйте установщики .NET Core.
 
 ## <a name="options"></a>Параметры
 
@@ -98,7 +100,7 @@ dotnet-install.sh --help
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 
-  Указывает путь установки. Если такого пути нет, создается каталог. Значение по умолчанию — *%LocalAppData%\Microsoft\dotnet*. Двоичные файлы помещаются непосредственно в этот каталог.
+  Указывает путь установки. Если такого пути нет, создается каталог. Значение по умолчанию — *%LocalAppData%\Microsoft\dotnet* в Windows и */usr/share/dotnet* в Linux и macOS. Двоичные файлы помещаются непосредственно в этот каталог.
 
 - **`-JSonFile|--jsonfile <JSONFILE>`**
 

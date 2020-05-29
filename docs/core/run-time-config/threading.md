@@ -3,19 +3,19 @@ title: Параметры конфигурации потоков
 description: Сведения о параметрах времени выполнения, определяющих использование потоков для приложений .NET Core.
 ms.date: 11/27/2019
 ms.topic: reference
-ms.openlocfilehash: 68b8e93ca6ec3f708a7a627307655ada1955500a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1c7c16993a07ef95223481791153b75ab2f61533
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76789852"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83761932"
 ---
 # <a name="run-time-configuration-options-for-threading"></a>Параметры конфигурации времени выполнения для потоков
 
 ## <a name="cpu-groups"></a>Группы ЦП
 
 - Определяет, выполняется ли автоматическое распределение потоков между группами ЦП.
-- По умолчанию: отключено (`0`).
+- Если этот параметр не задан, потоки не распределяются между группами ЦП. Это эквивалентно присвоению значения `0`.
 
 | | Имя параметра | Значения |
 | - | - | - |

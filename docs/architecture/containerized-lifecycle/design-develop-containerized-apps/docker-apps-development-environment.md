@@ -1,17 +1,17 @@
 ---
 title: Среда разработки приложений Docker
 description: Ознакомьтесь с наиболее важными средствами разработки, поддерживающими жизненный цикл разработки Docker.
-ms.date: 02/15/2019
-ms.openlocfilehash: 35236e75f47e830d0970ca9cfd074d9a69e6f85c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 04/16/2020
+ms.openlocfilehash: b1df16db88fa85f794407c989f5428030c4cddf7
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "71214303"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83394887"
 ---
 # <a name="development-environment-for-docker-apps"></a>Среда разработки приложений Docker
 
-## <a name="development-tools-choices-ide-or-editor"></a>Выбор средства разработки: IDE или редактор
+## <a name="development-tools-choices-ide-or-editor"></a>Выбор средств разработки: интегрированная среда разработки или редактор
 
 Предпочитаете ли вы использовать полнофункциональную среду IDE или упрощенный редактор, корпорация Майкрософт предлагает вам удобное решение для разработки приложений Docker.
 
@@ -26,7 +26,7 @@ ms.locfileid: "71214303"
 
 ### <a name="visual-studio-with-docker-tools-windows-development-machine"></a>Visual Studio со средствами Docker (компьютер Windows для разработки)
 
-Мы рекомендуем использовать Visual Studio 2017 (или более поздней версии) с включенными встроенными средствами Docker. С помощью Visual Studio вы можете разрабатывать, запускать и проверять приложения непосредственно в выбранной среде Docker. Нажмите клавишу F5 для отладки приложения (на основе одного контейнера или нескольких) непосредственно в узле Docker или клавиши CTRL+F5 для редактирования и обновления приложения без повторной сборки контейнера. Это самый простой и эффективный способ разработки в Windows контейнеров Docker для Linux или Windows.
+Мы рекомендуем использовать Visual Studio 2019 с включенными встроенными средствами Docker. С помощью Visual Studio вы можете разрабатывать, запускать и проверять приложения непосредственно в выбранной среде Docker. Нажмите клавишу F5 для отладки приложения (на основе одного контейнера или нескольких) непосредственно в узле Docker или клавиши CTRL+F5 для редактирования и обновления приложения без повторной сборки контейнера. Это самый простой и эффективный способ разработки в Windows контейнеров Docker для Linux или Windows.
 
 ### <a name="visual-studio-for-mac-mac-development-machine"></a>Visual Studio для Mac (компьютер Mac для разработки)
 

@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Использование инструмента определения схемы XML для создания классов и документов схемы XML
+description: Узнайте, как использовать средство определения схемы XML для создания схемы XML, которая описывает класс, или для создания класса, определенного схемой XML.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - generating XML classes using XML Schema Definition tool
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - XML Schema Definition tool, using to generate classes that conform to specific schema
 - XML Schema Definition tool, using to generate XML Schema Document
 ms.assetid: 51f0edc3-993d-4051-b7f2-77753694d3d1
-ms.openlocfilehash: 2bbdced0f984b653a58afba9685683e8c0891271
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 21ce4ad846e21a328ba199f6253bd259be9d932b
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389801"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379527"
 ---
 # <a name="how-to-use-the-xml-schema-definition-tool-to-generate-classes-and-xml-schema-documents"></a>Практическое руководство. Использование инструмента определения схемы XML для создания классов и документов схемы XML
 С помощью инструмента определения схемы XML (Xsd.exe) можно создать схему XML, которая описывает класс, или создать класс, определенный схемой XML. В процедурах ниже показана методика выполнения таких операций.

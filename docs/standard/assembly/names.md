@@ -1,16 +1,17 @@
 ---
 title: Имена сборок
+description: Узнайте о свойстве FullName, а также об именах сборок .NET, их влиянии на область сборки и использовании приложением.
 ms.date: 08/19/2019
 helpviewer_keywords:
 - names [.NET Framework], assemblies
 - assemblies [.NET Framework], names
 ms.assetid: 8f8c2c90-f15d-400e-87e7-a757e4f04d0e
-ms.openlocfilehash: 7a1a4d2512ebb002a3153fe2d51f47157136744d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5a499f4f04c84de8d6542d7107d7a707b808e47f
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73733098"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379886"
 ---
 # <a name="assembly-names"></a>Имена сборок
 Имя сборки хранится в метаданных и в значительной степени влияет на ее область определения и использование в приложениях. Сборки со строгим именем имеют полное имя, в состав которого входит имя сборки, язык и региональные параметры, открытый ключ и номер версии. Оно часто называется отображаемым именем; у загружаемых сборок его можно получить через свойство <xref:System.Reflection.Assembly.FullName%2A>.

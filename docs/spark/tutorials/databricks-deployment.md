@@ -1,15 +1,15 @@
 ---
 title: Развертывание приложения .NET для Apache Spark в Databricks
 description: Узнайте, как развернуть приложение .NET для Apache Spark в Databricks.
-ms.date: 01/23/2020
+ms.date: 05/12/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 3b00823034cbcb271cb7e169df40122f1144462a
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 245df14b9174a3b2ff152f90e6c50cc8766a2de9
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895719"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83397052"
 ---
 # <a name="tutorial-deploy-a-net-for-apache-spark-application-to-databricks"></a>Учебник. Развертывание приложения .NET для Apache Spark в Databricks
 
@@ -128,14 +128,14 @@ ms.locfileid: "82895719"
 
    ```dotnetcli
    cd mySparkApp
-   dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
+   dotnet publish -c Release -f netcoreapp3.1 -r ubuntu.16.04-x64
    ```
 
 2. Выполните следующие задачи и заархивируйте опубликованные файлы приложения, чтобы их можно было легко передать в кластер Databricks Spark.
 
    **В Windows:**
 
-   Перейдите в каталог mySparkApp/bin/Release/netcoreapp3.0/ubuntu.16.04-x64. Затем щелкните правой кнопкой мыши папку **Publish** и выберите **Отправить > Сжатая ZIP-папка**. Назовите папку **publish.zip**.
+   Перейдите в каталог mySparkApp/bin/Release/netcoreapp3.1/ubuntu.16.04-x64. Затем щелкните правой кнопкой мыши папку **Publish** и выберите **Отправить > Сжатая ZIP-папка**. Назовите папку **publish.zip**.
 
    **В Linux выполните следующую команду:**
 
@@ -152,16 +152,16 @@ ms.locfileid: "82895719"
    ```console
    databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
    databricks fs cp install-worker.sh dbfs:/spark-dotnet/install-worker.sh
-   databricks fs cp Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz dbfs:/spark-dotnet/   Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz
+   databricks fs cp Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-0.6.0.tar.gz dbfs:/spark-dotnet/   Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz
    ```
 
-2. Выполните следующие команды, чтобы отправить оставшиеся файлы, необходимые кластеру для запуска приложения: ZIP-папку публикации, *input.txt* и *microsoft-spark-2.4.x-0.3.0.jar*.
+2. Выполните следующие команды, чтобы отправить оставшиеся файлы, необходимые кластеру для запуска приложения: ZIP-папку публикации, *input.txt* и *microsoft-spark-2.4.x-0.3.1.jar*.
 
    ```console
    cd mySparkApp
    databricks fs cp input.txt dbfs:/input.txt
 
-   cd mySparkApp\bin\Release\netcoreapp3.0\ubuntu.16.04-x64 directory
+   cd mySparkApp\bin\Release\netcoreapp3.1\ubuntu.16.04-x64 directory
    databricks fs cp mySparkApp.zip dbfs:/spark-dotnet/publish.zip
    databricks fs cp microsoft-spark-2.4.x-0.6.0.jar dbfs:/spark-dotnet/microsoft-spark-2.4.x-0.6.0.jar
    ```

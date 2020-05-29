@@ -3,12 +3,12 @@ title: Автоматизация обучения модели с помощь�
 description: Сведения о том, как использовать средство ML.NET CLI для автоматического обучения оптимальной модели из командной строки.
 ms.date: 12/17/2019
 ms.custom: how-to, mlnet-tooling
-ms.openlocfilehash: 3344ed15266503d4d5c7cd9db0a0596f58a904fa
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2e8bade898adfc3fc4af92c880b62c646343eb2f
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79185885"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212416"
 ---
 # <a name="automate-model-training-with-the-mlnet-cli"></a>Автоматизация обучения модели с помощью ML.NET CLI
 
@@ -46,7 +46,7 @@ mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" 
 
 ![изображение](media/automate-training-with-cli/cli-model-generation.gif)
 
-Его можно схожим образом запустить в *Windows PowerShell*, *macOS/Linux bash или *Windows CMD*. Однако функция табличного автозавершения (предложения параметров) не будет работать в *Windows CMD*.
+Его можно схожим образом запустить в *Windows PowerShell*, *оболочке Bash в macOS или Linux* или в *Windows CMD*. Однако функция табличного автозавершения (предложения параметров) не будет работать в *Windows CMD*.
 
 ## <a name="output-assets-generated"></a>Созданные выходные ресурсы
 

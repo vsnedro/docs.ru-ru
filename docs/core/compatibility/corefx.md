@@ -2,12 +2,12 @@
 title: Критические изменения в библиотеке базовых классов
 description: В этой статье приведен список критических изменений в основных библиотеках .NET.
 ms.date: 09/20/2019
-ms.openlocfilehash: a2eb4be89d78f50d201272f3449374bc27d8c785
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: ca50123b842c256607d47010dbef9b216ece4661
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82859926"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420437"
 ---
 # <a name="core-net-libraries-breaking-changes"></a>Критические изменения в основных библиотеках .NET
 
@@ -38,6 +38,7 @@ ms.locfileid: "82859926"
 | [Исключение UnauthorizedAccessException, вызванное FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes) | 1.0 |
 | [Обработка исключений с поврежденным состоянием процесса не поддерживается](#handling-corrupted-state-exceptions-is-not-supported) | 1.0 |
 | [Для свойств UriBuilder больше не добавляются начальные символы](#uribuilder-properties-no-longer-prepend-leading-characters) | 1.0 |
+| [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## <a name="net-50"></a>.NET 5.0
 
@@ -128,5 +129,9 @@ ms.locfileid: "82859926"
 ***
 
 [!INCLUDE [uribuilder-behavior-changes](../../../includes/core-changes/corefx/1.0/uribuilder-behavior-changes.md)]
+
+***
+
+[!INCLUDE [startinfo-throws-exception](../../../includes/core-changes/corefx/1.0/startinfo-throws-exception.md)]
 
 ***

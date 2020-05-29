@@ -10,12 +10,12 @@ helpviewer_keywords:
 - versions, determining for .NET Framework
 - .NET Framework, determining version
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
-ms.openlocfilehash: 8469f977c6ed9691c81a2a8354935557b5c27171
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d25e4ae97877462b2a3b90e51262fb656921e392
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "77093839"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83205500"
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>Практическое руководство. Определение установленных версий платформы .NET Framework
 
@@ -61,7 +61,7 @@ ms.locfileid: "77093839"
 | .NET Framework 4.7     | Windows 10 Creators Update: 460798<br />Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 460805 |
 | .NET Framework 4.7.1   | Windows 10 Fall Creators Update и Windows Server версии 1709: 461308<br/>Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 461310 |
 | .NET Framework 4.7.2   | Windows 10 за апрель 2018 г. Update и Windows Server версии 1803: 461808<br/>Все остальные операционные системы, кроме Windows 10 с обновлением за апрель 2018 г. и Windows Server версии 1803: 461814 |
-| .NET Framework 4.8     | Обновление Windows 10 за май 2019 года и обновление Windows 10 за ноябрь 2019 года: 528040<br/>В Windows 10 и Windows Server версии 1909: 528209<br/>Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 528049 |
+| .NET Framework 4.8     | Обновление Windows 10 за май 2019 года и обновление Windows 10 за ноябрь 2019 года: 528040<br/>Обновление Windows 10 за май 2020 г.: 528209<br/>Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 528049 |
 
 ### <a name="minimum-version"></a>Минимальная версия
 

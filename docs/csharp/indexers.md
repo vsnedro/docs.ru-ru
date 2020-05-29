@@ -4,12 +4,12 @@ description: Сведения об индексаторах в C# и о том, 
 ms.date: 06/20/2016
 ms.technology: csharp-fundamentals
 ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
-ms.openlocfilehash: 8e583b8a7cedab61ea6fdd56587608907610b6b4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e9b1cb18157982f068f1c1e4546e637f2bd707cb
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79145688"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83394700"
 ---
 # <a name="indexers"></a>Индексаторы
 
@@ -313,7 +313,7 @@ public class HistoricalWeatherData
 
 В этом примере создается индексатор, который сопоставляет данные о погоде по двум разным аргументам: городу (представленному `string`) и дате (представленной `DateTime`). Внутреннее хранилище использует два класса `Dictionary`, представляющие двухмерный словарь. Открытый API больше не представляет базовое хранилище. Вместо этого функции языка для индексаторов позволяют создать открытый интерфейс, который представляет абстракцию, несмотря на то, что базовое хранилище должно использовать разные базовые типы коллекции.
 
-Этот код включает две части, которые могут быть незнакомы некоторым разработчикам. Эти два оператора `using`:
+Этот код включает две части, которые могут быть незнакомы некоторым разработчикам. Эти две директивы `using`:
 
 ```csharp
 using DateMeasurements = System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;

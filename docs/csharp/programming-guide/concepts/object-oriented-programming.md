@@ -1,13 +1,13 @@
 ---
 title: Объектно ориентированное программирование (C#)
-ms.date: 02/08/2020
+ms.date: 05/13/2020
 ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
-ms.openlocfilehash: 2b6be3384f76fa210c2b52c55ecf9bd865df43a6
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.openlocfilehash: 541d1a2581a3241f35fc8478040c007b6581e3b2
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200097"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396686"
 ---
 # <a name="object-oriented-programming-c"></a>Объектно-ориентированное программирование (C#)
 
@@ -89,10 +89,9 @@ class SampleClass
 
 У большинства свойств есть методы или процедуры для задания и возврата значения свойства. Однако можно создать свойства, доступные только для чтения или только на запись, чтобы запретить изменение или чтение значений свойств. В C# можно опустить метод свойства `get` или `set`. Следует отметить, что автоматически реализуемые свойства не могут быть доступными только для записи. Автоматически реализуемые свойства, доступные только для чтения, можно задать в конструкторах содержащего класса.
 
-Дополнительные сведения можно найти в разделе 
+Дополнительные сведения можно найти в разделе
 
 - [get](../../language-reference/keywords/get.md)
-
 - [set](../../language-reference/keywords/set.md)
 
 #### <a name="methods"></a>Методы
@@ -104,7 +103,7 @@ class SampleClass
 ```csharp
 class SampleClass
 {
-    public int sampleMethod(string sampleParam)
+    public int SampleMethod(string sampleParam)
     {
         // Insert code here
     }
@@ -116,13 +115,13 @@ class SampleClass
 Перегрузка метода:
 
 ```csharp
-public int sampleMethod(string sampleParam) {}
-public int sampleMethod(int sampleParam) {}
+public int SampleMethod(string sampleParam) { }
+public int SampleMethod(int sampleParam) { }
 ```
 
 Как правило, метод объявляется при определении класса. Однако C# также поддерживает *методы расширения*, которые позволяют добавлять методы в существующий класс вне определения класса.
 
-Дополнительные сведения можно найти в разделе 
+Дополнительные сведения можно найти в разделе
 
 - [Методы](../classes-and-structs/methods.md)
 - [Методы расширения](../classes-and-structs/extension-methods.md)
@@ -156,9 +155,7 @@ public class SampleClass
 События позволяют классу или объекту уведомлять другие классы или объекты о возникновении каких-либо ситуаций. Класс, отправляющий (или порождающий) событие, называется *издателем*, а классы, принимающие (или обрабатывающие) событие, называются *подписчиками*. Дополнительные сведения о том, как порождаются и обрабатываются события, см. в разделе [События](../../../standard/events/index.md).
 
 - Чтобы объявить событие в классе, используйте ключевое слово [event](../../language-reference/keywords/event.md).
-
 - Чтобы породить событие, вызовите делегат события.
-
 - Чтобы подписаться на событие, используйте оператор `+=`. Чтобы отменить подписку на событие, воспользуйтесь оператором `-=`.
 
 #### <a name="nested-classes"></a>Вложенные классы
@@ -187,14 +184,14 @@ Container.Nested nestedInstance = new Container.Nested()
 
 Имеющиеся модификаторы доступа указаны в следующей таблице.
 
-|Модификатор C#|Определение|
-|------------------|----------------|
-|[public](../../language-reference/keywords/public.md)|Доступ к типу или члену возможен из любого другого кода в той же сборке или другой сборке, ссылающейся на него.|
-|[private](../../language-reference/keywords/private.md)|Доступ к типу или члену можно получить только из кода в том же классе.|
-|[protected](../../language-reference/keywords/protected.md)|Доступ к типу или члену можно получить только из кода в том же классе или в производном классе.|
-|[internal](../../language-reference/keywords/internal.md)|Доступ к типу или члену возможен из любого кода в той же сборке, но не из другой сборки.|
-|[protected internal](../../language-reference/keywords/protected-internal.md)|Доступ к типу или члену возможен из любого кода в той же сборке, или из производного класса в другой сборке.|
-|[private protected](../../language-reference/keywords/private-protected.md)|Доступ к типу или члену можно получить из кода в том же классе или в производном классе в сборке базового класса.|
+| Модификатор C# | Определение |
+|--|--|
+| [public](../../language-reference/keywords/public.md) | Доступ к типу или члену возможен из любого другого кода в той же сборке или другой сборке, ссылающейся на него. |
+| [private](../../language-reference/keywords/private.md) | Доступ к типу или члену можно получить только из кода в том же классе. |
+| [protected](../../language-reference/keywords/protected.md) | Доступ к типу или члену можно получить только из кода в том же классе или в производном классе. |
+| [internal](../../language-reference/keywords/internal.md) | Доступ к типу или члену возможен из любого кода в той же сборке, но не из другой сборки. |
+| [protected internal](../../language-reference/keywords/protected-internal.md) | Доступ к типу или члену возможен из любого кода в той же сборке, или из производного класса в другой сборке. |
+| [private protected](../../language-reference/keywords/private-protected.md) | Доступ к типу или члену можно получить из кода в том же классе или в производном классе в сборке базового класса. |
 
 Дополнительные сведения см. в статье [Модификаторы доступа](../classes-and-structs/access-modifiers.md).
 
@@ -212,18 +209,21 @@ SampleClass sampleObject = new SampleClass();
 // Set a property value.
 sampleObject.sampleProperty = "Sample String";
 // Call a method.
-sampleObject.sampleMethod();
+sampleObject.SampleMethod();
 ```
 
 Чтобы назначить значения свойствам в процессе создания экземпляра класса, используйте инициализаторы объектов:
 
 ```csharp
 // Set a property value.
-SampleClass sampleObject = new SampleClass
-    { FirstProperty = "A", SecondProperty = "B" };
+var sampleObject = new SampleClass
+{
+    FirstProperty = "A",
+    SecondProperty = "B"
+};
 ```
 
-Дополнительные сведения можно найти в разделе 
+Дополнительные сведения можно найти в разделе
 
 - [Оператор new](../../language-reference/operators/new-operator.md)
 - [Инициализаторы объектов и коллекций](../classes-and-structs/object-and-collection-initializers.md)
@@ -259,8 +259,11 @@ Console.WriteLine(SampleClass.SampleString);
 
 ```csharp
 // sampleObject is an instance of a simple anonymous type.
-var sampleObject =
-    new { FirstProperty = "A", SecondProperty = "B" };
+var sampleObject = new
+{
+    FirstProperty = "A",
+    SecondProperty = "B"
+};
 ```
 
 Дополнительные сведения можно найти в разделе  [Анонимные типы](../classes-and-structs/anonymous-types.md).
@@ -275,7 +278,7 @@ var sampleObject =
 Наследование от базового класса:
 
 ```csharp
-class DerivedClass:BaseClass {}
+class DerivedClass:BaseClass { }
 ```
 
 По умолчанию унаследовать класс можно от любого класса. Однако можно указать, должен ли класс использоваться в качестве базового класса, или создать класс, который может использоваться только в качестве базового.
@@ -292,10 +295,9 @@ public sealed class A { }
 public abstract class B { }
 ```
 
-Дополнительные сведения можно найти в разделе 
+Дополнительные сведения можно найти в разделе
 
 - [sealed](../../language-reference/keywords/sealed.md)
-
 - [abstract](../../language-reference/keywords/abstract.md)
 
 ### <a name="overriding-members"></a>переопределение членов;
@@ -304,12 +306,12 @@ public abstract class B { }
 
 Следующие модификаторы используются для управления переопределением свойств и методов.
 
-|Модификатор C#|Определение|
-|------------------|----------------|
-|[virtual](../../language-reference/keywords/virtual.md)|Разрешает переопределение члена класса в производном классе.|
-|[override](../../language-reference/keywords/override.md)|Переопределяет виртуальный (переопределяемый) член в базовом классе.|
-|[abstract](../../language-reference/keywords/abstract.md)|Требует, чтобы член класса был переопределен в производном классе.|
-|[Модификатор new](../../language-reference/keywords/new-modifier.md)|Скрывает член, наследуемый от базового класса|
+| Модификатор C# | Определение |
+|--|--|
+| [virtual](../../language-reference/keywords/virtual.md) | Разрешает переопределение члена класса в производном классе. |
+| [override](../../language-reference/keywords/override.md) | Переопределяет виртуальный (переопределяемый) член в базовом классе. |
+| [abstract](../../language-reference/keywords/abstract.md) | Требует, чтобы член класса был переопределен в производном классе. |
+| [Модификатор new](../../language-reference/keywords/new-modifier.md) | Скрывает член, наследуемый от базового класса |
 
 ## <a name="interfaces"></a>Интерфейсы
 
@@ -320,7 +322,7 @@ public abstract class B { }
 ```csharp
 interface ISampleInterface
 {
-    void doSomething();
+    void DoSomething();
 }
 ```
 
@@ -329,7 +331,7 @@ interface ISampleInterface
 ```csharp
 class SampleClass : ISampleInterface
 {
-    void ISampleInterface.doSomething()
+    void ISampleInterface.DoSomething()
     {
         // Method implementation.
     }
@@ -354,15 +356,14 @@ public class SampleGeneric<T>
 Создание экземпляра универсального класса:
 
 ```csharp
-SampleGeneric<string> sampleObject = new SampleGeneric<string>();
+var sampleObject = new SampleGeneric<string>();
 sampleObject.Field = "Sample string";
 ```
 
-Дополнительные сведения можно найти в разделе 
+Дополнительные сведения можно найти в разделе
 
-- [Универсальные шаблоны](../../../standard/generics/index.md)
-
-- [Универсальные шаблоны](../generics/index.md)
+- [Универсальные шаблоны в .NET](../../../standard/generics/index.md)
+- [Универсальные шаблоны. Руководство по программированию на C#](../generics/index.md)
 
 ## <a name="delegates"></a>Делегаты
 
@@ -383,10 +384,11 @@ public delegate void SampleDelegate(string str);
 class SampleClass
 {
     // Method that matches the SampleDelegate signature.
-    public static void sampleMethod(string message)
+    public static void SampleMethod(string message)
     {
         // Add code here.
     }
+
     // Method that instantiates the delegate.
     void SampleDelegate()
     {

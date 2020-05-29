@@ -1,19 +1,19 @@
 ---
 title: Асинхронное программирование на C#
 description: Общие сведения о языковой поддержке асинхронного программирования в C# с помощью async, await, задач и Task<T>
-ms.date: 03/18/2019
-ms.openlocfilehash: 4bf00d5c77138dfa2d527a262a6cd54a72a688f5
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.date: 05/26/2020
+ms.openlocfilehash: 703392ca6ba4e6fb08dd8a88817babc167394788
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83761854"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007966"
 ---
 # <a name="asynchronous-programming-with-async-and-await"></a>Асинхронное программирование с использованием ключевых слов async и await
 
-Модель асинхронного программирования задач (TAP) предоставляет абстракцию асинхронного кода. Вы пишете код как последовательность операторов, как обычно. Вы можете читать этот код, как если бы каждая инструкция завершалась до начала следующей. Компилятор выполняет ряд преобразований, так как некоторые из этих инструкций могут начать работу и вернуть <xref:System.Threading.Tasks.Task>, представляющий текущую работу.
+[Модель асинхронного программирования на основе задач (TAP)](task-asynchronous-programming-model.md) предоставляет абстракцию асинхронного кода. Вы пишете код как последовательность операторов, как обычно. Вы можете читать этот код, как если бы каждая инструкция завершалась до начала следующей. Компилятор выполняет ряд преобразований, так как некоторые из этих инструкций могут начать работу и вернуть <xref:System.Threading.Tasks.Task>, представляющий текущую работу.
 
-Это и есть цель такого синтаксиса: сделать возможным код, который читается как последовательность операторов, но выполняется в гораздо более сложном порядке на основе выделения внешних ресурсов и при завершении задач. Это аналогично тому, как люди дают инструкции для процессов, которые включают асинхронные задачи. В этой статье вы используете пример инструкции для приготовления завтрака, чтобы увидеть, как ключевые слова `async` и `await` упрощают понимание кода, который включает в себя серию асинхронных инструкций. Можно написать инструкции аналогично следующему списку, чтобы объяснить, как приготовить завтрак.
+Это и есть цель такого синтаксиса: сделать возможным код, который читается как последовательность операторов, но выполняется в гораздо более сложном порядке на основе выделения внешних ресурсов и при завершении задач. Это аналогично тому, как люди дают инструкции для процессов, которые включают асинхронные задачи. В этой статье вы будете использовать пример инструкции для приготовления завтрака, чтобы увидеть, как ключевые слова `async` и `await` упрощают понимание кода, который включает в себя серию асинхронных инструкций. Можно написать инструкции аналогично следующему списку, чтобы объяснить, как приготовить завтрак.
 
 1. Налить чашку кофе.
 1. Нагреть сковородку, а затем поджарить два яйца.
@@ -30,7 +30,10 @@ ms.locfileid: "83761854"
 
 Теперь рассмотрим эти же инструкции, написанные на C#.
 
-[!code-csharp[SynchronousBreakfast](./snippets/index/AsyncBreakfast-starter/Program.cs#Main)]
+:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8-27":::
+
+> [!NOTE]
+> Классы `Coffee`, `Egg`, `Bacon`, `Toast` и `Juice` пусты. Они просто являются классами меток, используемыми в целях демонстрации, не содержат свойств и не используются для выполнения других задач.
 
 Компьютеры не рассматривают эти инструкции так же, как люди. Компьютер будет задерживаться над каждой инструкцией до момента, когда работа будет завершена, прежде чем перейдет к следующему оператору. Вряд ли такой завтрак вас устроит. Более поздние задачи не будут начаты до завершения предыдущих. Потребуется гораздо больше времени для приготовления завтрака, к тому же часть уже остынет еще до подачи.
 
@@ -46,7 +49,10 @@ ms.locfileid: "83761854"
 
 Давайте начнем менять этот код, чтобы не блокировать поток во время выполнения задачи. Ключевое слово `await` позволяет обойтись без блокировки для запуска задачи, а затем продолжить выполнение, когда задача завершается. Простая асинхронная версия кода для приготовления завтрака будет выглядеть так:
 
-[!code-csharp[SimpleAsyncBreakfast](./snippets/index/AsyncBreakfast-V2/Program.cs#Main)]
+:::code language="csharp" source="snippets/index/AsyncBreakfast-V2/Program.cs" id="SnippetMain":::
+
+> [!TIP]
+> Тексты методов `FryEggsAsync`, `FryBaconAsync` и `ToastBreadAsync` были обновлены так, чтобы возвращать `Task<Egg>`, `Task<Bacon>` и `Task<Toast>`, соответственно. Методы переименованы и теперь содержат суффикс "Async". Их реализации показаны в составе [окончательной версии](#final-version) далее в этой статье.
 
 Этот код не блокируется при приготовлении яиц или бекона. Этот код, однако, не запускает других задач. По-прежнему придется поместить тост в тостер и смотреть на него, пока он не выскочит. Но по крайней мере можно отвечать всем, кто хочет вашего внимания. В ресторане, где будет размещаться несколько заказов, повар сможет начать готовить другой завтрак, пока первый готовится.
 
@@ -65,20 +71,23 @@ ms.locfileid: "83761854"
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
-Task<Egg> eggsTask = FryEggs(2);
+
+Task<Egg> eggsTask = FryEggsAsync(2);
 Egg eggs = await eggsTask;
 Console.WriteLine("eggs are ready");
-Task<Bacon> baconTask = FryBacon(3);
+
+Task<Bacon> baconTask = FryBaconAsync(3);
 Bacon bacon = await baconTask;
 Console.WriteLine("bacon is ready");
-Task<Toast> toastTask = ToastBread(2);
+
+Task<Toast> toastTask = ToastBreadAsync(2);
 Toast toast = await toastTask;
 ApplyButter(toast);
 ApplyJam(toast);
 Console.WriteLine("toast is ready");
+
 Juice oj = PourOJ();
 Console.WriteLine("oj is ready");
-
 Console.WriteLine("Breakfast is ready!");
 ```
 
@@ -87,9 +96,11 @@ Console.WriteLine("Breakfast is ready!");
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
-Task<Egg> eggsTask = FryEggs(2);
-Task<Bacon> baconTask = FryBacon(3);
-Task<Toast> toastTask = ToastBread(2);
+
+Task<Egg> eggsTask = FryEggsAsync(2);
+Task<Bacon> baconTask = FryBaconAsync(3);
+Task<Toast> toastTask = ToastBreadAsync(2);
+
 Toast toast = await toastTask;
 ApplyButter(toast);
 ApplyJam(toast);
@@ -116,11 +127,11 @@ Console.WriteLine("Breakfast is ready!");
 
 Приведенный выше код показал, что можно использовать объекты <xref:System.Threading.Tasks.Task> или <xref:System.Threading.Tasks.Task%601> для хранения выполняемых задач. Вы вызываете `await` для каждой задачи, прежде чем использовать ее результат. Следующим шагом является создание методов, которые представляют сочетание другой работы. Перед подачей завтрака требуется дождаться задачи, представляющей поджарку хлеба перед добавлением масла и джема. Вы можете представить эту работу следующим кодом:
 
-[!code-csharp[ComposeToastTask](./snippets/index/AsyncBreakfast-V3/Program.cs#ComposeToastTask)]
+:::code language="csharp" source="snippets/index/AsyncBreakfast-V3/Program.cs" id="SnippetComposeToastTask":::
 
 Предыдущий метод имеет `async` модификатор в сигнатуре. Он сообщает компилятору, что этот метод содержит инструкцию `await`; она содержит асинхронные операции. Этот метод представляет задачу, в рамках которой поджаривается хлеб, а затем добавляется масло и джем. Этот метод возвращает <xref:System.Threading.Tasks.Task%601>, представляющий сочетание этих трех операций. Теперь вид основного блока кода будет таким:
 
-[!code-csharp[StartConcurrentTasks](./snippets/index/AsyncBreakfast-V3/Program.cs#Main)]
+:::code language="csharp" source="snippets/index/AsyncBreakfast-V3/Program.cs" id="SnippetMain":::
 
 Предыдущее изменение показывает важную методику для работы с асинхронным кодом. Составные задачи можно создавать, разделяя операции в новом методе, который возвращает задачу. Вы можете выбрать, когда следует ожидать выполнения созданной задачи. Одновременно можно запускать другие задачи.
 
@@ -138,10 +149,33 @@ Console.WriteLine("Breakfast is ready!");
 
 Другой вариант — использовать <xref:System.Threading.Tasks.Task.WhenAny%2A>, который возвращает `Task<Task>`, выполняемый по завершении любого из своих аргументов. Можно ожидать возвращенной задачи, зная, что она уже завершена. В следующем коде показано, как использовать <xref:System.Threading.Tasks.Task.WhenAny%2A> для ожидания первой задачи, чтобы затем обработать ее результат. После обработки результата завершенной задачи удалим ее из списка задач, передаваемого в `WhenAny`.
 
-[!code-csharp[AwaitAnyTask](./snippets/index/AsyncBreakfast-final/Program.cs#AwaitAnyTask)]
+```csharp
+var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
+while (breakfastTasks.Count > 0)
+{
+    Task finishedTask = await Task.WhenAny(breakfastTasks);
+    if (finishedTask == eggsTask)
+    {
+        Console.WriteLine("eggs are ready");
+    }
+    else if (finishedTask == baconTask)
+    {
+        Console.WriteLine("bacon is ready");
+    }
+    else if (finishedTask == toastTask)
+    {
+        Console.WriteLine("toast is ready");
+    }
+    breakfastTasks.Remove(finishedTask);
+}
+```
 
-После всех этих изменений окончательная версия `Main` выглядит так:
-
-[!code-csharp[Final](./snippets/index/AsyncBreakfast-final/Program.cs#Main)]
+После всех этих изменений окончательная версия кода выглядит так: <a id="final-version"></a>
+:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" highlight="9-40":::
 
 Этот итоговый код выполняется асинхронно. Он более точно отражает, как пользователь будет готовить завтрак. Сравните предыдущий код с первым примером кода в этой статье. Основные действия по-прежнему очевидны при прочтении. Этот код можно прочитать так же, как указания по приготовлению завтрака в начале этой статьи. Возможности языка для `async` и `await` делают возможными преобразования, которые любой человек производит, выполняя эти инструкции: запуск задач без блокировки в ожидании их завершения.
+
+## <a name="next-steps"></a>Следующие шаги
+
+> [!div class="nextstepaction"]
+> [Ознакомьтесь с моделью асинхронного программирования](task-asynchronous-programming-model.md)

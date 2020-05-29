@@ -18,12 +18,12 @@ helpviewer_keywords:
 - comparing strings
 - strings [.NET Framework],comparing
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
-ms.openlocfilehash: e633b6c1d03a3d1cd70e277395da10f70f315f16
-ms.sourcegitcommit: 79b0dd8bfc63f33a02137121dd23475887ecefda
+ms.openlocfilehash: 0fb7ec8d9de8fae7a0443984511e538d38d93c7a
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80523978"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83441010"
 ---
 # <a name="best-practices-for-using-strings-in-net"></a>Рекомендации по использованию строк в .NET
 
@@ -317,18 +317,20 @@ InvariantCulture: a + ̊ = å
 
 - При использовании методов <xref:System.String.Format%2A?displayProperty=nameWithType> и `ToString` вызовите перегрузку с параметром `provider`, например <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> или <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>, и передайте ему свойство <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, экземпляр <xref:System.Globalization.CultureInfo>, представляющий требуемый язык и региональные параметры, или свойство <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType>.
 
-- Для объединения строк не позволяйте компилятору выполнять неявные преобразования. Вместо этого выполните явное преобразование путем вызова перегрузки `ToString` с параметром `provider`. Например, компилятор неявно использует текущий язык и региональные параметры при преобразовании значения <xref:System.Double> в строку в следующем коде C#:
+- Для объединения строк не позволяйте компилятору выполнять неявные преобразования. Вместо этого выполните явное преобразование путем вызова перегрузки `ToString` с параметром `provider`. Например, компилятор неявно использует текущий язык и региональные параметры при преобразовании значения <xref:System.Double> в строку в следующем коде:
 
-  [!code-csharp[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#1)]
+  [!code-csharp[Implicit String Conversion](./snippets/best-practices-strings/csharp/tostring/Program.cs#1)]
+  [!code-vb[Implicit String Conversion](./snippets/best-practices-strings/vb/tostring/Program.vb#1)]
 
-  Вместо этого можно явно указать язык и региональные параметры, соглашения о форматировании которых используются в преобразовании, вызвав метод <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType>, как показано в следующем коде C#:
+  Вместо этого можно явно указать язык и региональные параметры, соглашения о форматировании которых используются в преобразовании, вызвав метод <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType>, как показано в следующем коде:
 
-  [!code-csharp[Explicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#2)]
+  [!code-csharp[Explicit String Conversion](./snippets/best-practices-strings/csharp/tostring/Program.cs#2)]
+  [!code-vb[Implicit String Conversion](./snippets/best-practices-strings/vb/tostring/Program.vb#2)]
 
 - Для интерполяции строк вместо назначения интерполированной строки экземпляру <xref:System.String> назначьте его <xref:System.FormattableString>. Затем можно вызвать его метод <xref:System.FormattableString.ToString?displayProperty=nameWithType>, чтобы создать результирующую строку, отражающую правила для текущего языка и региональных параметров, либо можно вызвать метод <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType>, чтобы создать результирующую строку, отражающую правила для указанного языка и региональных параметров. Также можно передать форматируемую строку статическому методу <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType>, чтобы создать результирующую строку, отражающую правила для инвариантного языка и региональных параметров. Этот подход показан в приведенном ниже примере. (Выходные данные примера отражают текущий язык и региональные параметры en-US.)
 
-  [!code-csharp[String interpolation](~/samples/snippets/standard/base-types/string-practices/cs/formattable.cs)]
-  [!code-vb[String interpolation](~/samples/snippets/standard/base-types/string-practices/vb/formattable.vb)]
+  [!code-csharp[String interpolation](./snippets/best-practices-strings/csharp/formattable/Program.cs)]
+  [!code-vb[String interpolation](./snippets/best-practices-strings/vb/formattable/Program.vb)]
 
 Нестроковые данные можно сохранить в виде двоичных или форматированных данных. Если решено сохранять данные в виде форматированных, нужно вызвать перегрузку метода форматирования, которая включает параметр `provider` , и передать ей свойство <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> . Инвариантный язык и региональные параметры предоставляют согласованный формат для форматированных данных независимо от языка, региональных параметров и компьютера. Напротив, сохранение форматированных данных с использованием языков и региональных параметров, отличающихся от инвариантных, имеет ряд ограничений.
 

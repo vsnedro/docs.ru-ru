@@ -1,16 +1,17 @@
 ---
 title: Расположение сборки
+description: Расположение сборки .NET определяет, как среда CLR находит ее, а также может ли она использоваться совместно с другими сборками.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - locating assemblies
 - assemblies [.NET Framework], location
 ms.assetid: 9f1f41a7-2954-49d3-a2c0-62b6ef4d40ab
-ms.openlocfilehash: 0b84aba749625f0f86027cd9d09a5e9a2229a3f2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7ab3804b14b586e1430d654f4da32a310bcb6cc9
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73733122"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379898"
 ---
 # <a name="assembly-location"></a>Расположение сборки
 От места расположения сборки зависит, сможет ли среда CLR найти сборку по ссылке на нее. Это расположение также определяет возможность совместного использования сборки вместе с другими сборками. Для развертывания сборки можно использовать следующие расположения.
@@ -27,7 +28,7 @@ ms.locfileid: "73733122"
 
      Сборка, развернутая на HTTP-сервере, должна иметь строгое имя; в разделе базы кода файла конфигурации приложения должно присутствовать указание на сборку.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание сборок](create.md)
 - [Глобальный кэш сборок](../../framework/app-domains/gac.md)

@@ -2,12 +2,12 @@
 title: Source Link и библиотеки .NET
 description: Практические рекомендации по использованию Source Link для повышения эффективности отладки для библиотек .NET.
 ms.date: 01/15/2019
-ms.openlocfilehash: 3d768ae6e79efa23a8402ea37bc34cd58cd52c8c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0261019087bce8e9d088a90c5e36bdd0b22f556b
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76744551"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212429"
 ---
 # <a name="source-link"></a>Source Link
 
@@ -37,6 +37,10 @@ Source Link — это технология, которая дает возмо
 ✔ РЕКОМЕНДУЕТСЯ публиковать файлы символов (`*.pdb`).
 
 > Для повышения качества отладки библиотеки следует публиковать файлы символов, а также использовать ссылки на источник. См. дополнительные сведения о [файлах и пакетах символов](./nuget.md#symbol-packages).
+
+✔️ РЕКОМЕНДУЕТСЯ включить детерминированные сборки.
+
+> Детерминированные сборки позволяют убедиться в том, что полученный двоичный файл построен на основе указанного источника и обеспечивает трассировку. См. сведения о [детерминированных сборках](https://github.com/clairernovotny/DeterministicBuilds) и инструкции по их включению.
 
 >[!div class="step-by-step"]
 >[Назад](dependencies.md)

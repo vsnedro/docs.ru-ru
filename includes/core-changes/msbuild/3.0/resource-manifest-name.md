@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: 16ee73bfc0ab33b04ea3e2fa6d0eec521a9b8634
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f24a29a00a1bff34a452c43716d76bf72ef277b5
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78968084"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83206208"
 ---
-### <a name="resource-manifest-file-names"></a>Имена файлов манифеста ресурса
+### <a name="resource-manifest-file-name-change"></a>Изменение имени файла манифеста для ресурса
 
-Начиная с .NET Core 3.0, создание имени файла манифеста ресурса изменилось.
+Начиная с .NET Core 3.0, в стандартных ситуациях MSBuild создает другие имена файлов манифеста для файлов ресурсов.
 
 #### <a name="version-introduced"></a>Представленная версия
 
@@ -16,70 +16,28 @@ ms.locfileid: "78968084"
 
 #### <a name="change-description"></a>Описание изменений
 
-До .NET Core 3.0, когда для файла ресурсов ( *.resx*) в файле проекта MSBuild были заданы метаданные [DependentUpon](/visualstudio/msbuild/common-msbuild-project-items#compile), созданным именем манифеста было *Namespace.Classname.resources*. Если параметр [DependentUpon](/visualstudio/msbuild/common-msbuild-project-items#compile) не был задан, созданным именем манифеста было *Namespace.Classname.FolderPathRelativeToRoot.Culture.resources*.
+До версии .NET Core 3.0, если для элемента `EmbeddedResource` в файле проекта не были указаны метаданные `LogicalName`, `ManifestResourceName`или `DependentUpon`, платформа MSBuild создавала имя файла манифеста в формате `<RootNamespace>.<ResourceFilePathFromProjectRoot>.resources`. Если в файле проекта не определено значение `RootNamespace`, по умолчанию используется имя проекта. Например, для файла ресурсов с именем *Form1.resx* в корневом каталоге проекта создавался манифест с именем *MyProject.Form1.resources*.
 
-Начиная с .NET Core 3.0, при совмещении файла *.resx* с одноименным исходным файлом, например, в приложениях Windows Forms, имя манифеста ресурсов генерируется из полного имени первого типа в исходном файле. Например, если *Type.cs* размещается вместе с *Type.resx*, создается имя манифеста *Namespace.Classname.resources*. Однако если изменить какие-либо атрибуты в свойстве `EmbeddedResource` для файла *.resx*, имя созданного файла манифеста может отличаться:
+Начиная с версии .NET Core 3.0, при размещении файла ресурса в одной папке с одноименным исходным файлом, (*Form1.resx* и *Form1.cs*), MSBuild использует сведения о типе из исходного файла для создания имени файла манифеста в формате `<Namespace>.<ClassName>.resources`. Пространство имен и имя класса извлекаются из первого типа в исходном файле, найденном в той же папке. Например, для файла ресурсов с именем *Form1.resx*, который расположен в одной папке с исходным файлом *Form1.cs*, создается манифест с именем *MyNamespace.Form1.resources*. Важно отметить, что первая часть имени файла отличается от имени в прежних версиях .NET Core (*MyNamespace* вместо *MyProject*).
 
-- Если для свойства `EmbeddedResource` задан атрибут `LogicalName`, это значение используется в качестве имени файла манифеста ресурса.
+> [!NOTE]
+> Если для элемента `EmbeddedResource` в файле проекта указаны метаданные `LogicalName`, `ManifestResourceName` или `DependentUpon`, это изменение не применяется к соответствующему файлу ресурсов.
 
-  Примеры
-
-  ```xml
-  <EmbeddedResource Include="X.resx" LogicalName="SomeName.resources" />
-  -or-
-  <EmbeddedResource Include="X.fr-FR.resx" LogicalName="SomeName.resources" />
-  ```
-
-  **Имя созданного файла манифеста ресурса**: *SomeName.resources* (независимо от имени файла *.resx*, языка и региональных параметров или любых других метаданных).
-
-- Если `LogicalName` не установлено, но в свойстве `EmbeddedResource` задано атрибут `ManifestResourceName`, то в качестве имени файла манифеста ресурса используется его значение в сочетании с расширением файла *.resources*.
-
-  Примеры
-
-  ```xml
-  <EmbeddedResource Include="X.resx" ManifestResourceName="SomeName" />
-  -or-
-  <EmbeddedResource Include="X.fr-FR.resx" ManifestResourceName="SomeName.fr-FR" />
-  ```
-
-  **Имя созданного файла манифеста ресурса**: *SomeName.resources* или *SomeName.fr-FR.resources*.
-
-- Если предыдущие правила не применяются, а атрибут `DependentUpon` в элементе `EmbeddedResource` установлен для исходного файла, то в имени файла манифеста ресурса используется тип имени первого класса в исходном файле. Точнее, имя сгенерированного файла — *Namespace.Classname\[.Culture].resources*.
-
-  Примеры
-
-  ```xml
-  <EmbeddedResource Include="X.resx" DependentUpon="MyTypes.cs">
-  -or-
-  <EmbeddedResource Include="X.fr-FR.resx" DependentUpon="MyTypes.cs">
-  ```
-
-  **Имя созданного файла манифеста ресурса**: *Namespace.Classname.resources* или *Namespace.Classname.fr-FR.resources* (где `Namespace.Classname` — имя первого класса в *MyTypes.cs*).
-
-- Если предыдущие правила не применяются, `EmbeddedResourceUseDependentUponConvention` является `true` (по умолчанию для .NET Core), и есть исходный файл, совмещенный с файлом *.resx*, который имеет то же самое базовое имя файла, файл *.resx* становится зависимым от совпадающего исходного файла, а сгенерированное имя будет таким же, как и в предыдущем правиле. Это правило "настройки по умолчанию" для проектов .NET Core.
-  
-  Примеры
-  
-  Файлы *MyTypes.cs* и *MyTypes.resx* или *MyTypes.fr-FR.resx* находятся в одной папке.
-  
-  **Имя созданного файла манифеста ресурса**: *Namespace.Classname.resources* или *Namespace.Classname.fr-FR.resources* (где `Namespace.Classname` — имя первого класса в *MyTypes.cs*).
-
-- Если ни одно из предыдущих правил не применяется, то именем сгенерированного файла манифеста ресурса будет *RootNamespace.RelativePathWithDotsForSlashes.\[Culture.]resources*. Относительный путь — это значение атрибута `Link` элемента `EmbeddedResource`, если он установлен. В противном случае относительный путь — это значение атрибута `Identity` элемента `EmbeddedResource`. В Visual Studio это путь от корня проекта до файла в обозревателе решений.
+Это критическое изменение было введено одновременно с добавлением свойства `EmbeddedResourceUseDependentUponConvention` для проектов .NET Core. По умолчанию файлы ресурсов не указаны явным образом в файле проекта .NET Core, поэтому в них нет метаданных `DependentUpon`, которые позволяют задать формат именования созданного файла *.resources*. Если `EmbeddedResourceUseDependentUponConvention` имеет значение `true` (используется по умолчанию), MSBuild ищет в той же папке исходный файл и извлекает из этого файла пространство имен и имя класса. Если для `EmbeddedResourceUseDependentUponConvention` задано значение `false`, MSBuild создает имя манифеста по правилам для прежних версий, то есть объединяет `RootNamespace` и относительный путь к файлу.
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
-Если вы не удовлетворены сгенерированными именами манифеста, вы можете выполнить приведенные ниже действия.
+В большинстве случаев разработчикам не нужно предпринимать по этому поводу никаких действий, и приложение должно работать нормально. Если же это изменение нарушит работу приложения, вы можете выполнить одно из следующих действий.
 
-- Измените метаданные файла ресурса в соответствии с одним из описанных выше правил именования.
+- Измените код так, чтобы он ожидал новое имя манифеста.
 
-- Задайте для `EmbeddedResourceUseDependentUponConvention` значение `false` в вашем файле проекта, чтобы полностью отказаться от нового соглашения:
+- Откажитесь от нового соглашения об именовании, указав в файле проекта параметр `EmbeddedResourceUseDependentUponConvention` со значением `false`.
 
-   ```xml
-   <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
-   ```
-
-   > [!NOTE]
-   > Если присутствуют атрибуты `LogicalName` или `ManifestResourceName`, то их значения все равно будут использоваться для сгенерированного имени файла.
+  ```xml
+  <PropertyGroup>
+    <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
+  </PropertyGroup>
+  ```
 
 #### <a name="category"></a>Категория
 

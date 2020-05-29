@@ -1,17 +1,18 @@
 ---
 title: Содержимое сборок
+description: В этой статье описывается содержимое сборки .NET, которая может включать метаданные сборки, метаданные типа, код MSIL и ресурсы.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - assemblies [.NET Framework]
 - assemblies [.NET Core]
 - single-file assemblies
 ms.assetid: 28116714-da77-45f7-826d-fa035d121948
-ms.openlocfilehash: bee9d5422ec3101b2486f233ae0816ae3643f4e7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 94df452162ed7290fab7fa267d2624e6d844a587
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75345574"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378569"
 ---
 # <a name="assembly-contents"></a>Содержимое сборок
 
@@ -33,7 +34,7 @@ ms.locfileid: "75345574"
 
 При проектировании исходного кода необходимо принять определенные решения о способе разделения функций приложения между одним или несколькими файлами. При проектировании кода .NET необходимо принять аналогичные решения о способе разделения функций между одной или несколькими сборками.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сборки в .NET](index.md)
 - [Манифест сборки](manifest.md)

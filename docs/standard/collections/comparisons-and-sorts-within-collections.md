@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Equals method
 - collections [.NET Framework], comparisons
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
-ms.openlocfilehash: 932a5abfaf2a6cc972e84cbc3d6b930cdd716f71
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.openlocfilehash: 8e4530063f14211688e5ef2d2ec4ed7e4834cdf1
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728169"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83212971"
 ---
 # <a name="comparisons-and-sorts-within-collections"></a>Сравнение и сортировка в коллекциях
 
@@ -28,7 +28,7 @@ ms.locfileid: "82728169"
 <a name="BKMK_Checkingforequality"></a>
 ## <a name="check-for-equality"></a>Проверка на равенство
 
-Такие методы, как `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>и `Remove` , используют компаратор проверки на равенство для элементов коллекции. Если коллекция является универсальной, то элементы проверяются на равенство согласно следующим правилам.
+Такие методы, как `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>и `Remove` , используют компаратор проверки на равенство для элементов коллекции. Если коллекция является универсальной, элементы проверяются на равенство согласно следующим правилам:
 
 - Если тип T реализует универсальный интерфейс <xref:System.IEquatable%601> , компаратором проверки на равенство является метод <xref:System.IEquatable%601.Equals%2A> этого интерфейса.
 
@@ -47,7 +47,7 @@ ms.locfileid: "82728169"
 
 - Если тип T реализует неуниверсальный интерфейс <xref:System.IComparable?displayProperty=nameWithType> , компаратором по умолчанию является метод <xref:System.IComparable.CompareTo%28System.Object%29?displayProperty=nameWithType> этого интерфейса.
 
-- Если тип T не реализует никакого интерфейса, компаратор по умолчанию отсутствует, а компаратор или делегат сравнения должен быть предоставлен явно.
+- Если тип T не реализует интерфейс, это значит, что функция сравнения по умолчанию отсутствует, и она или делегат сравнения должны быть предоставлены явно.
 
 Для осуществления явных сравнений некоторые методы принимают реализацию **IComparer** в качестве параметра. Например, метод <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> принимает реализацию <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> .
 

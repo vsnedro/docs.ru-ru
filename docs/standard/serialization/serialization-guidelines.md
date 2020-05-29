@@ -1,5 +1,6 @@
 ---
 title: Правила сериализации
+description: В этом документе приводятся рекомендации, которые необходимо учитывать при проектировании API для сериализации, и сводка по трем основным технологиям сериализации, доступным в .NET.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - serialization, guidelines
 - binary serialization, guidelines
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
-ms.openlocfilehash: 067f32a026e3354e6c4256602ed17fd7d7bde0b8
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: af0b857e98ffbe0ff9f12108174b79f873c2b38f
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159797"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378387"
 ---
 # <a name="serialization-guidelines"></a>Правила сериализации
 В настоящем документе перечислены рекомендации, которые следует учитывать при разработке сериализуемого API.  

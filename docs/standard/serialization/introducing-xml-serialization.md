@@ -1,5 +1,6 @@
 ---
 title: Сведения о сериализации XML
+description: Сериализация преобразует объект в форму, которую можно переносить. В этой статье представлен обзор сериализации XML и класса XmlSerializer.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - DataSet class, serializing
 - XML Schema, serializing
 ms.assetid: 8c63200d-db63-4a03-a93d-21641623df62
-ms.openlocfilehash: d644e80cbf5ac17fca4df039d915c847a1936217
-ms.sourcegitcommit: 961ec21c22d2f1d55c9cc8a7edf2ade1d1fd92e3
+ms.openlocfilehash: 7534ad702039b37a85a24223576320aea8052e9e
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80588459"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83421271"
 ---
 # <a name="xml-serialization"></a>сериализация XML
 

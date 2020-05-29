@@ -2,12 +2,12 @@
 title: Команда dotnet pack
 description: Команда dotnet pack создает пакеты NuGet для проекта .NET Core.
 ms.date: 04/28/2020
-ms.openlocfilehash: 26a8581f55a8dc9e61aa52e62ed94c73eefd3e03
-ms.sourcegitcommit: d7666f6e49c57a769612602ea7857b927294ce47
+ms.openlocfilehash: 00cda2c52a12a7a3aef5f61291120f522536131d
+ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82595758"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83442232"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
@@ -64,7 +64,7 @@ dotnet pack -h|--help
 
 `PROJECT | SOLUTION`
 
-  Проект или решение для упаковки. Это путь к файлу [CSPROJ](csproj.md), файлу решения или каталогу. Если он не указан, команда ищет текущий каталог для файла решения или проекта.
+  Проект или решение для упаковки. Это путь к файлу [.csproj](csproj.md), .vbproj или .fsproj либо файлу решения или каталогу. Если он не указан, команда ищет текущий каталог для файла решения или проекта.
 
 ## <a name="options"></a>Параметры
 

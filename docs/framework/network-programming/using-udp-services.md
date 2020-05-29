@@ -17,14 +17,15 @@ helpviewer_keywords:
 - sending data, UDP
 - application protocols, UDP
 ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
-ms.openlocfilehash: 477095ada6e44f66cbc60cd80375da9a87f38e39
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5ff40e8759b1732d4ad228b1414f96f9c37e5ac5
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180608"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83209777"
 ---
-# <a name="using-udp-services"></a>Использование служб UDP
+# <a name="use-udp-services"></a>Использование служб UDP
+
 Класс <xref:System.Net.Sockets.UdpClient> взаимодействует с сетевыми службами по протоколу UDP. Методы и свойства класса <xref:System.Net.Sockets.UdpClient> абстрагируют сведения о создании <xref:System.Net.Sockets.Socket> для запроса и получения данных по протоколу UDP.
 
 UDP — это простой протокол для максимально эффективной передачи данных в удаленный узел. Однако поскольку протокол UDP не предусматривает установление соединений, доставка датаграмм UDP, отправляемых в удаленную конечную точку, не гарантируется. Кроме того, не гарантируется их доставка в той же очередности, в которой они отправлялись. Приложения, использующие протокол UDP, должны быть готовы обрабатывать отсутствующие, повторяющиеся и идущие не по порядку датаграммы.
@@ -158,7 +159,7 @@ class Program
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.Sockets.UdpClient>
 - <xref:System.Net.IPAddress>

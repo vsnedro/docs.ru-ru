@@ -3,12 +3,12 @@ title: Создание клиента REST с использованием .NET
 description: Это руководство раскроет для вас некоторые возможности .NET Core и языка C#.
 ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: 0105db519f7accec6bf8bfbafdc6a67a444b1074
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: 4a3a76d1ec9893c2c3e0353e305a19e59c586fe5
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249172"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420387"
 ---
 # <a name="rest-client"></a>Клиент REST
 
@@ -77,9 +77,7 @@ using System.Threading.Tasks;
 
 Если сейчас вы выполните сборку проекта, то получите предупреждение для этого метода, поскольку он не содержит ни одного оператора `await`, и поэтому будет выполняться синхронно. Пока это предупреждение можно игнорировать. Операторы `await` здесь появятся по мере заполнения метода.
 
-А пока переименуйте пространство имен, определенное в инструкции `namespace`, указав имя `WebAPIClient` вместо имени по умолчанию `ConsoleApp`. Позднее в этом пространстве имен мы определим класс `repo`.
-
-Теперь измените метод `Main`, добавив вызов этого метода. Метод `ProcessRepositories` возвращает задачу, до завершения которой выполнение программы не должно прекращаться. Поэтому следует изменить сигнатуру `Main`. Добавьте модификатор `async` и измените тип возвращаемого значения на `Task`. Затем в теле метода добавьте вызов к `ProcessRepositories`. Добавьте ключевое слово `await` в этот вызов метода.
+Затем измените метод `Main`, чтобы он вызывал метод `ProcessRepositories`. Метод `ProcessRepositories` возвращает задачу, до завершения которой выполнение программы не должно прекращаться. Поэтому следует изменить сигнатуру `Main`. Добавьте модификатор `async` и измените тип возвращаемого значения на `Task`. Затем в теле метода добавьте вызов к `ProcessRepositories`. Добавьте ключевое слово `await` в этот вызов метода.
 
 ```csharp
 static async Task Main(string[] args)
@@ -170,9 +168,10 @@ var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos
 var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
 ```
 
-Вы используете новое пространство имён, поэтому его нужно добавить в верхней части файла:
+Вы используете новое пространство имён, поэтому его также нужно добавить в верхней части файла:
 
 ```csharp
+using System.Collections.Generic;
 using System.Text.Json;
 ```
 

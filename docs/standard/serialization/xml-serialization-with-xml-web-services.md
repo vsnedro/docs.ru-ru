@@ -1,5 +1,6 @@
 ---
 title: Сериализация XML с использованием XML-веб-служб
+description: Узнайте о сериализации XML — базовом механизме передачи, применяемом в архитектуре веб-служб XML. Сериализация XML выполняется классом XmlSerializer.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - literal XML serialization
 - serialization, attributes
 ms.assetid: a416192f-8102-458e-bc0a-0b8f3f784da9
-ms.openlocfilehash: 2301f30a55e136b9a75a414d9325e4cf71c161da
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: d15bf884640707cd2bd113422c837480ad73a74f
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159537"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83377260"
 ---
 # <a name="xml-serialization-with-xml-web-services"></a>Сериализация XML с использованием XML-веб-служб
 Сериализация XML является базовым механизмом передачи, применяемом в архитектуре XML-веб-служб, и выполняется с использованием класса <xref:System.Xml.Serialization.XmlSerializer>. Для управления кодом XML, созданным XML-веб-службой, для классов, возвращаемых значений, параметров и полей файла, используемых для создания XML-веб-службы (файл ASMX), можно применять атрибуты, указанные в разделах [Атрибуты управления сериализацией XML](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md) и [Атрибуты управления сериализацией с кодировкой SOAP](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md). Дополнительные сведения о создании XML-веб-службы см. в разделе [XML-веб-службы с использованием ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ba0z6a33(v=vs.100)).  

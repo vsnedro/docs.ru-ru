@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Ссылка на сборку со строгим именем
+description: В этой статье показано, как создавать ссылки на типы или ресурсы в сборке .NET со строгим именем во время компиляции или выполнения.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - strong-named assemblies, compile-time references
@@ -11,12 +12,12 @@ dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: adda4ed2ab5c59e3518b8e724044529a79840ad0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e42c1b461da16d7000605b9b9321138bbfebd307
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78156482"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379866"
 ---
 # <a name="how-to-reference-a-strong-named-assembly"></a>Практическое руководство. Ссылка на сборку со строгим именем
 Процесс использования ссылок на типы или ресурсы, находящиеся в сборке со строгим именем, обычно понятен. Создать ссылку можно в момент компиляции (ранняя привязка) или же во время выполнения.  

@@ -3,12 +3,12 @@ title: Критические изменения, миграция с .NET Frame
 titleSuffix: ''
 description: Список критических изменений, миграция с .NET Framework на .NET Core.
 ms.date: 05/05/2020
-ms.openlocfilehash: bb18e38fecc0805dfafe6a16c853ae04fd2a2913
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: f830d4571f21752900b35a7462bf0881673d6d2e
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82859942"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420452"
 ---
 # <a name="breaking-changes-for-migration-from-net-framework-to-net-core"></a>Критические изменения для миграции с .NET Framework на .NET Core
 
@@ -23,6 +23,7 @@ ms.locfileid: "82859942"
 - [Исключение UnauthorizedAccessException, вызванное FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 - [Обработка исключений с поврежденным состоянием процесса не поддерживается](#handling-corrupted-state-exceptions-is-not-supported)
 - [Для свойств UriBuilder больше не добавляются начальные символы](#uribuilder-properties-no-longer-prepend-leading-characters)
+- [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start)
 
 ### <a name="net-core-21"></a>.NET Core 2.1
 
@@ -44,6 +45,10 @@ ms.locfileid: "82859942"
 
 ***
 
+[!INCLUDE [startinfo-throws-exception](../../../includes/core-changes/corefx/1.0/startinfo-throws-exception.md)]
+
+***
+
 ## <a name="cryptography"></a>Шифрование
 
 - [Логический параметр SignedCms.ComputeSignature учитывается](#boolean-parameter-of-signedcmscomputesignature-is-respected)
@@ -51,6 +56,16 @@ ms.locfileid: "82859942"
 ### <a name="net-core-21"></a>.NET Core 2.1
 
 [!INCLUDE [Boolean parameter of SignedCms.ComputeSignature is respected](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
+
+***
+
+## <a name="msbuild"></a>MSBuild
+
+- [Изменение имен файлов манифеста ресурса](#resource-manifest-file-name-change)
+
+### <a name="net-core-30"></a>.NET Core 3.0
+
+[!INCLUDE[Resource file names](~/includes/core-changes/msbuild/3.0/resource-manifest-name.md)]
 
 ***
 

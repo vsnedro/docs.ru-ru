@@ -1,7 +1,7 @@
 ---
 title: Операторы сравнения. Справочник по C#
 description: Дополнительные сведения об операторах сравнения C#, которые можно использовать для проверки очередности числовых значений.
-ms.date: 04/25/2019
+ms.date: 05/11/2020
 author: pkulikov
 f1_keywords:
 - <_CSharpKeyword
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - <= operator [C#]
 - greater than or equal to operator [C#]
 - '>= operator [C#]'
-ms.openlocfilehash: 68502205193a1fc8ab7410053e13274560ffffb0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: eda039d950e4be13d9c041c8bb95b6ea773b83f6
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398055"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83207230"
 ---
 # <a name="comparison-operators-c-reference"></a>Операторы сравнения (справочник по C#)
 
@@ -32,6 +32,8 @@ ms.locfileid: "79398055"
 
 > [!NOTE]
 > Если какой-то из операндов операторов `==`, `<`, `>`, `<=` и `>=` не является числом (<xref:System.Double.NaN?displayProperty=nameWithType> или <xref:System.Single.NaN?displayProperty=nameWithType>), результатом операции будет `false`. Это означает, что значение `NaN` не больше, не меньше и не равно любому другому значению `double` (или `float`), включая `NaN`. Дополнительные сведения и примеры см. в справочных статьях по <xref:System.Double.NaN?displayProperty=nameWithType> или <xref:System.Single.NaN?displayProperty=nameWithType>.
+
+Тип [char](../builtin-types/char.md) также поддерживает операторы сравнения. В случае операндов `char` сравниваются соответствующие коды символов.
 
 Типы перечисления также поддерживают операторы сравнения. Если операнды имеют одинаковый тип [enum](../builtin-types/enum.md), сравниваются соответствующие значения базового целочисленного типа.
 
@@ -71,7 +73,7 @@ ms.locfileid: "79398055"
 
 Дополнительные сведения см. в разделе [Операторы отношения и проверки типа](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) в статье по [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
 - [Операторы в C#](index.md)

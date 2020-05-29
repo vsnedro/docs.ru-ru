@@ -1,18 +1,18 @@
 ---
 title: Тип char. Справочник по C#
-ms.date: 11/22/2019
+ms.date: 05/11/2020
 f1_keywords:
 - char
 - char_CSharpKeyword
 helpviewer_keywords:
 - char data type [C#]
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
-ms.openlocfilehash: a07cae6e607bb6cda965240c669c655207632298
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: f771626e9777deab30e798559d847615d6124e6d
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739055"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83205778"
 ---
 # <a name="char-c-reference"></a>char (Справочник по C#)
 
@@ -23,6 +23,8 @@ ms.locfileid: "81739055"
 |`char`|От U+0000 до U+FFFF|16 разрядов|<xref:System.Char?displayProperty=nameWithType>|
 
 Значение по умолчанию для типа `char` — `\0`, то есть U+0000.
+
+Тип `char` поддерживает [сравнение](../operators/comparison-operators.md), [проверку равенства](../operators/equality-operators.md), а также операции [инкремента](../operators/arithmetic-operators.md#increment-operator-) и [декремента](../operators/arithmetic-operators.md#decrement-operator---). Кроме того, для операндов `char` [арифметические](../operators/arithmetic-operators.md) и [побитовые логические](../operators/bitwise-and-shift-operators.md) операторы выполняют операцию с соответствующими кодами символов и создают результат типа `int`.
 
 Тип [string](reference-types.md#the-string-type) представляет текст как последовательность значений `char`.
 

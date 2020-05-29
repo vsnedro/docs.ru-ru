@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Создание неподписанных дружественных сборок
+description: В этой статье показано использование дружественных сборок с неподписанными сборками. Кроме того, здесь приводятся сведения о безопасности .NET.
 ms.date: 08/19/2019
 ms.assetid: 78cbc4f0-b021-4141-a4ff-eb4edbd814ca
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: f8fec064507553b8208083578165965de2303a33
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8d3e13669c36048759fedeb3df1bfb59fd476317
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74352438"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378969"
 ---
 # <a name="how-to-create-unsigned-friend-assemblies"></a>Практическое руководство. Создание неподписанных дружественных сборок
 

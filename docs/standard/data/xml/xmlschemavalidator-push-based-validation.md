@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 911d4460-dd91-4958-85b2-2ca3299f9ec6
-ms.openlocfilehash: 6a0cc110c2b8bcd97b9f5c16a344db5a63046353
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: d5b2fe4325000023acc98580a2a6d014f56fecbd
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75709807"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83419113"
 ---
 # <a name="xmlschemavalidator-push-based-validation"></a>Принудительная проверка с помощью XmlSchemaValidator
 
@@ -456,7 +456,7 @@ static void SchemaValidationEventHandler(object sender, ValidationEventArgs e)
 |------------|-----------------|
 |&#124;|Можно вызывать или метод, или состояние (перед чертой или после нее).|
 |?|Метод или состояние перед вопросительным знаком (?) являются необязательными, но их можно вызывать только один раз.|
-|*|Метод или состояние перед символом «звездочки» (*) являются необязательными. Их можно вызывать несколько раз.|
+|\*|Метод или состояние перед символом \* являются необязательными. Их можно вызывать несколько раз.|
 
 ## <a name="validation-context"></a>Контекст проверки
 

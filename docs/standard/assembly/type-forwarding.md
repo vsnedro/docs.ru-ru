@@ -1,5 +1,6 @@
 ---
 title: Переадресация типов в общеязыковой среде CLR
+description: Перенаправление типа позволяет переместить тип в другую сборку .NET без повторной компиляции приложений, использующих исходную сборку.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - assemblies [.NET Framework], type forwarding
@@ -8,12 +9,12 @@ ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
 dev_langs:
 - csharp
 - cpp
-ms.openlocfilehash: 215636a9617a2723d8ab69640c1d3e69491a7d87
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f0be61bd4ce88569e22a350a9ea9490d67e74ff3
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78160369"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378596"
 ---
 # <a name="type-forwarding-in-the-common-language-runtime"></a>Переадресация типов в общеязыковой среде CLR
 Перенаправление типа позволяет переместить тип в другую сборку без повторной компиляции приложений, использующих исходную сборку.  
@@ -44,7 +45,7 @@ ms.locfileid: "78160369"
 
 4. Перекомпилируйте сборку, где раньше находился тип, со ссылкой на сборку, которая теперь содержит тип. Например, при компиляции файла C# из командной строки используйте параметр [-reference (параметры компилятора C#)](../../csharp/language-reference/compiler-options/reference-compiler-option.md), чтобы указать сборку, содержащую тип. В C++ используйте директиву [#using](/cpp/preprocessor/hash-using-directive-cpp) в исходном файле, чтобы указать сборку, содержащую тип.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>
 - [Перенаправление типов (C++/CLI)](/cpp/windows/type-forwarding-cpp-cli)

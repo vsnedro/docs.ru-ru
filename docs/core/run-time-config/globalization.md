@@ -1,21 +1,21 @@
 ---
 title: Параметры конфигурации глобализации
 description: Вы можете узнать о параметрах времени выполнения, настраивающих аспекты глобализации для приложения .NET Core, например способа анализа дат на японском языке.
-ms.date: 11/27/2019
+ms.date: 05/18/2020
 ms.topic: reference
-ms.openlocfilehash: 7668c345181d7c08cfca9c5cb76b8addd76223ec
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: 56228e9a6cb6dbab6a22bdc00d11212e1019776b
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82506809"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83761971"
 ---
 # <a name="run-time-configuration-options-for-globalization"></a>Параметры конфигурации времени выполнения для глобализации
 
 ## <a name="invariant-mode"></a>Invariant mode (Инвариантный режим)
 
 - Определяет, выполняется ли приложение .NET Core в инвариантном режиме глобализации без доступа к данным и поведению, зависящим от языка и региональных параметров.
-- По умолчанию: выполнение приложения с доступом к данным языка и региональных параметров (`false`).
+- Если этот параметр не задан, приложение будет работать с доступом к данным языка и региональных параметров. Это эквивалентно присвоению значения `false`.
 - Дополнительные сведения см. в статье [Инвариантный режим глобализации .NET Core](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
 
 | | Имя параметра | Значения |
@@ -53,7 +53,7 @@ ms.locfileid: "82506809"
 ## <a name="era-year-ranges"></a>Era year ranges (Диапазоны лет эры)
 
 - Определяет, являются ли проверки диапазона для календарей, поддерживающих несколько эр, нестрогими, или даты, превышающие диапазон дат эры, вызывают <xref:System.ArgumentOutOfRangeException>.
-- По умолчанию: проверки диапазонов нестрогие (`false`).
+- Если этот параметр не задан, проверки диапазона будут нестрогими. Это эквивалентно присвоению значения `false`.
 - Дополнительные сведения см. в разделе [Календари, эры и диапазоны дат: нестрогие проверки диапазонов](../../standard/datetime/working-with-calendars.md#calendars-eras-and-date-ranges-relaxed-range-checks).
 
 | | Имя параметра | Значения |
@@ -64,7 +64,7 @@ ms.locfileid: "82506809"
 ## <a name="japanese-date-parsing"></a>Japanese date parsing (Анализ дат на японском языке)
 
 - Определяет, успешно ли анализируется строка, содержащая "1" или "Ганнен" в качестве года, либо поддерживается только значение "1".
-- По умолчанию: анализ строк, содержащих "1" или "Ганнен" в качестве года (`false`).
+- Если этот параметр не задан, строки, содержащие "1" или "Ганнен" в качестве года, будут успешно проанализированы. Это эквивалентно присвоению значения `false`.
 - Дополнительные сведения см. в разделе [Представление дат в календарях с несколькими эрами](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
 | | Имя параметра | Значения |
@@ -75,10 +75,21 @@ ms.locfileid: "82506809"
 ## <a name="japanese-year-format"></a>Japanese year format (Японский формат года)
 
 - Определяет, форматируется ли первый год японской календарной эры как "Ганнен" или как число.
-- По умолчанию: первый год форматируется как "Ганнен" (`false`).
+- Если этот параметр не задан, первый год форматируется, как "Ганнен". Это эквивалентно присвоению значения `false`.
 - Дополнительные сведения см. в разделе [Представление дат в календарях с несколькими эрами](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
 | | Имя параметра | Значения |
 | - | - | - |
 | **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | `false` — формат в виде "Ганнен"<br/>`true` — формат в виде числа |
 | **Переменная среды** | Н/Д | Н/Д |
+
+## <a name="nls"></a>NLS
+
+- Определяет, использует ли .NET API глобализации для приложений Windows: National Language Support (NLS) и International Components for Unicode (ICU). .NET 5.0 и более поздних версий использует API глобализации ICU по умолчанию в обновлении Windows за 10 мая 2019 г. и более поздних версиях.
+- Если этот параметр не задан, .NET по умолчанию использует API глобализации ICU. Это эквивалентно присвоению значения `false`.
+- См. сведения об [API глобализации, которые используют библиотеки ICU в Windows](../compatibility/3.1-5.0.md#globalization-apis-use-icu-libraries-on-windows).
+
+| | Имя параметра | Значения | Введенный |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Globalization.UseNls` | `false` — использование API глобализации ICU<br/>`true` — использование API глобализации NLS | .NET 5.0 |
+| **Переменная среды** | `DOTNET_SYSTEM_GLOBALIZATION_USENLS` | `false` — использование API глобализации ICU<br/>`true` — использование API глобализации NLS | .NET 5.0 |

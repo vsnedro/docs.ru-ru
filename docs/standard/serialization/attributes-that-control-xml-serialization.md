@@ -1,5 +1,6 @@
 ---
 title: Атрибуты управления сериализацией XML
+description: Эта статья содержит атрибуты, которые можно применять к классам и членам класса, чтобы управлять тем, как для XmlSerializer выполняет сериализацию и десериализацию экземпляра класса.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - classes, serializing
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - serialization, attributes
 - XML Schema, serializing
 ms.assetid: 414b820f-a696-4206-b576-2711d85490c7
-ms.openlocfilehash: 0d1aee4650ea29083348af482e445011289e9581
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 3a269e1f3e8fd6e982db3c241c113f471134f9d3
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61794970"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378446"
 ---
 # <a name="attributes-that-control-xml-serialization"></a>Атрибуты управления сериализацией XML
 Для управления способом, с помощью которого <xref:System.Xml.Serialization.XmlSerializer> сериализует или десериализует экземпляр класса, к классам и членам класса можно применять атрибуты, указанные в следующей таблице. Сведения о том, как эти атрибуты управляют XML-сериализацией, см. в разделе [Управление сериализацией XML с использованием атрибутов](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md).  

@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Сериализация объекта
+description: 'В этой статье показано, как сериализовать объект. Выберите формат передачи для хранения потока XML: в виде потока или в виде файла.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - serializing objects
 - objects, serializing steps
 ms.assetid: a1207d05-32b2-4953-8582-959607991227
-ms.openlocfilehash: 3e24d890d47747c51086214530073fc551321079
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: 63446df3fa2c931c839eda91c648cee961715f93
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159888"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83377555"
 ---
 # <a name="how-to-serialize-an-object"></a>Практическое руководство. Сериализация объекта
 Для сериализации объекта сначала следует создать сериализуемый объект и задать открытые свойства и поля. Для этого необходимо выбрать формат передачи, в котором будет храниться поток XML: поток или файл. Например, если поток XML должен храниться в неизменном виде, создайте объект <xref:System.IO.FileStream>.  

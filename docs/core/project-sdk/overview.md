@@ -1,14 +1,15 @@
 ---
 title: Обзор пакета SDK для проекта .NET Core
+titleSuffix: ''
 description: Сведения о пакетах SDK для проектов .NET Core.
 ms.date: 02/02/2020
 ms.topic: conceptual
-ms.openlocfilehash: d0ac01dca31dffea482745126e00c34b1da20774
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 88ec1bf2c4917c69b80b997d090219097694d2bc
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389672"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83206050"
 ---
 # <a name="net-core-project-sdks"></a>Пакеты SDK для проектов .NET Core
 
@@ -82,9 +83,9 @@ ms.locfileid: "81389672"
 
 ### <a name="default-compilation-includes"></a>Включения для элементов компиляции по умолчанию
 
-В пакете SDK определены заданные по умолчанию включения и исключения для элементов компиляции и внедренных ресурсов В отличие от проектов .NET Framework без пакетов SDK в файле проекта не нужно указывать эти элементы, так как для наиболее распространенных вариантов использования действуют значения по умолчанию. Это позволяет уменьшить файлы проекта и без труда понимать их, а также при необходимости вносить правки вручную.
+В пакете SDK определены стандартные включения и исключения для элементов компиляции, внедренных ресурсов и элементов `None`. В отличие от проектов .NET Framework без пакетов SDK в файле проекта не нужно указывать эти элементы, так как для наиболее распространенных вариантов использования действуют значения по умолчанию. Это позволяет уменьшить файлы проекта и без труда понимать их, а при необходимости даже вносить правки вручную.
 
-Следующая таблица показывает, какой элемент и какие [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)) включены и исключены в пакете SDK для .NET Core.
+В следующей таблице показано, какие элементы и [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)) включены и исключены в пакете SDK для .NET Core:
 
 | Элемент           | Стандартная маска включения                              | Стандартная маска исключения                                                  | Стандартная маска удаления              |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|--------------------------|
@@ -95,39 +96,43 @@ ms.locfileid: "81389672"
 > [!NOTE]
 > Папки `./bin` и `./obj`, которые представлены свойствами MSBuild `$(BaseOutputPath)` и `$(BaseIntermediateOutputPath)`, исключаются из стандартных масок исключения по умолчанию. Исключения представляется свойством `$(DefaultItemExcludes)`.
 
-При явном определении этих элементов в файле проекта, скорее всего, появится следующая ошибка:
+#### <a name="build-errors"></a>Ошибки сборки
 
-**Duplicate Compile items were included. The .NET SDK includes Compile items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file. (Включены повторяющиеся элементы Compile. По умолчанию пакет SDK для .NET включает элементы Compile из каталога проекта. Можно удалить эти элементы из файла проекта или задать для свойства EnableDefaultCompileItems значение false, чтобы явно включить их в файл проекта).**
+Если вы явным образом определите любой из этих элементов в файле проекта, скорее всего, произойдет ошибка сборки NETSDK1022 с примерно таким сообщением:
 
-Чтобы устранить эту ошибку, удалите явные элементы `Compile`, совпадающие с неявными элементами, указанными в предыдущей таблице, или задайте свойству `EnableDefaultCompileItems` значение `false`, которое отключает неявное включение.
+  > "Duplicate 'Compile' items were included. The .NET SDK includes Compile items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file. (Включены повторяющиеся элементы Compile. По умолчанию пакет SDK для .NET включает элементы Compile из каталога проекта. Можно удалить эти элементы из файла проекта или задать для свойства "EnableDefaultCompileItems" значение "false", чтобы явно включить их в файл проекта.)
 
-```xml
-<PropertyGroup>
-  <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-</PropertyGroup>
-```
+  > "Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file" (Включены повторяющиеся элементы EmbeddedResource. По умолчанию пакет SDK для .NET включает элементы EmbeddedResource из каталога проекта. Можно удалить эти элементы из файла проекта или задать для свойства EnableDefaultEmbeddedResourceItems значение false, чтобы явно включить их в файл проекта).
 
-Если вы хотите указать, например, отдельные файлы для публикации вместе со своим приложением, для этого можно по-прежнему использовать привычные механизмы MSBuild (например, элемент `Content`).
+Чтобы устранить такую проблему, выполните любое из следующих действий:
 
-`EnableDefaultCompileItems` отключает только стандартные маски `Compile`, не затрагивая все остальные, например неявную стандартную маску `None`, которая также применяется к элементам \*.cs. Из-за этого обозреватель решений в Visual Studio отображает элементы \*.cs как часть проекта, включенную в виде элементов `None`. Чтобы отключить неявную стандартную маску `None`, задайте свойству `EnableDefaultNoneItems` значение `false`.
+- Удалите явно заданные элементы `Compile`, `EmbeddedResource` или `None`, которые совпадают с неявно заданными параметрами из предыдущей таблицы.
 
-```xml
-<PropertyGroup>
-  <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-</PropertyGroup>
-```
+- Задайте свойству `EnableDefaultItems` значение `false`, чтобы отключить все неявные включения файлов.
 
-Чтобы отключить *все* неявные стандартные маски, задайте свойству `EnableDefaultItems` значение `false`.
+  ```xml
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+  </PropertyGroup>
+  ```
 
-```xml
-<PropertyGroup>
-  <EnableDefaultItems>false</EnableDefaultItems>
-</PropertyGroup>
-```
+  Если вы хотите указать файлы, которые нужно публиковать вместе с приложением, для этого можно по-прежнему использовать привычные механизмы MSBuild (например, элемент `Content`).
+
+- Выборочно отключите только стандартные маски `Compile`, `EmbeddedResource` или `None`, задав для свойства `EnableDefaultCompileItems`, `EnableDefaultEmbeddedResourceItems` или `EnableDefaultNoneItems` значение `false`.
+
+  ```xml
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+  </PropertyGroup>
+  ```
+
+  Если вы отключите только стандартные маски `Compile`, обозреватель решений в Visual Studio будет по-прежнему отображать элементы \*.cs в составе проекта, включая их в виде элементов `None`. Чтобы отключить неявную стандартную маску `None`, задайте свойству `EnableDefaultNoneItems` значение `false`.
 
 ## <a name="customize-the-build"></a>Настройка сборки
 
-Существует несколько способов [настройки сборки](/visualstudio/msbuild/customize-your-build). Может потребоваться переопределить свойство, передав его в качестве аргумента в команду [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) или [dotnet](../tools/index.md). Можно также добавить свойство в файл проекта или в файл *Directory.Build.props*. Список полезных свойств для проектов .NET Core см. в статье [Свойства MSBuild для проектов пакета SDK для .NET Core](msbuild-props.md).
+Существует несколько способов [настройки сборки](/visualstudio/msbuild/customize-your-build). Может потребоваться переопределить свойство, передав его в качестве аргумента в команду [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) или [dotnet](../tools/index.md). Можно также добавить свойство в файл проекта или в файл *Directory.Build.props*. Список полезных свойств для проектов .NET Core см. в статье [Свойства MSBuild для проектов пакета SDK для .NET Core](msbuild-props.md).
 
 ### <a name="custom-targets"></a>Пользовательские целевые объекты
 

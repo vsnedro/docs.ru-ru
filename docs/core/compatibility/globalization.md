@@ -2,12 +2,12 @@
 title: Критические изменения в области глобализации
 description: Список критических изменений в области глобализации в .NET Core.
 ms.date: 04/07/2020
-ms.openlocfilehash: 1436f9e2ec540b0f8b1e710b25c2115646d4e5b4
-ms.sourcegitcommit: 2b3b2d684259463ddfc76ad680e5e09fdc1984d2
+ms.openlocfilehash: 0c3367cb3515c6f473f53be6062b54f2e836b8c5
+ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80888177"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83702309"
 ---
 # <a name="globalization-breaking-changes"></a>Критические изменения в области глобализации
 
@@ -15,10 +15,15 @@ ms.locfileid: "80888177"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [API-интерфейсы глобализации, которые используют библиотеки ICU в Windows](#globalization-apis-use-icu-libraries-on-windows) | 5.0 |
 | [Теперь StringInfo и TextElementEnumerator совместимы с UAX29](#stringinfo-and-textelementenumerator-are-now-uax29-compliant) | 5.0 |
 | [Языковой стандарт "C" сопоставляется с инвариантным языковым стандартом](#c-locale-maps-to-the-invariant-locale) | 3.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [icu-globalization-api](../../../includes/core-changes/globalization/5.0/icu-globalization-api.md)]
+
+***
 
 [!INCLUDE [uax29-compliant-grapheme-enumeration](../../../includes/core-changes/globalization/5.0/uax29-compliant-grapheme-enumeration.md)]
 

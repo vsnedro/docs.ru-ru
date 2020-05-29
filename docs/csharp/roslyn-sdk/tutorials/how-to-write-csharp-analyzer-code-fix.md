@@ -3,12 +3,12 @@ title: Учебник. Создание средства для анализа �
 description: В этом руководстве описано, как создать анализатор и исправление кода с помощью пакета SDK для .NET Compiler Platform (API Roslyn).
 ms.date: 08/01/2018
 ms.custom: mvc
-ms.openlocfilehash: d6c3ddff288bf114e1c257ae77ebf3a419913990
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 23ebf4befc75e08592890d85f2dda51251f59cd6
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895440"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396284"
 ---
 # <a name="tutorial-write-your-first-analyzer-and-code-fix"></a>Учебник. Создание средства для анализа и исправления кода
 
@@ -235,7 +235,7 @@ var newLocal = trimmedLocal
 
 [!code-csharp[Format the new declaration](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#FormatLocal  "Format the new declaration")]
 
-Для выполнения этого кода требуется новое пространство имен. Добавьте следующий оператор `using` в начало файла:
+Для выполнения этого кода требуется новое пространство имен. Добавьте следующую директиву `using` в начало файла.
 
 ```csharp
 using Microsoft.CodeAnalysis.Formatting;
@@ -497,7 +497,7 @@ else if (variableType.IsReferenceType && constantValue.Value != null)
 
 [!code-csharp[Replace Var designations](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#ReplaceVar "Replace a var designation with the explicit type")]
 
-Чтобы использовать тип <xref:Microsoft.CodeAnalysis.Simplification.Simplifier>, потребуется добавить один оператор `using`:
+Чтобы использовать тип <xref:Microsoft.CodeAnalysis.Simplification.Simplifier>, потребуется добавить одну директиву `using`:
 
 ```csharp
 using Microsoft.CodeAnalysis.Simplification;

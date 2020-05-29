@@ -1,16 +1,17 @@
 ---
 title: Сборки и параллельное выполнение
+description: Познакомьтесь с параллельным выполнением — это возможность сохранения и выполнения нескольких версий приложения или компонента на одном компьютере.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - side-by-side execution [.NET Framework]
 - assemblies [.NET Framework], side-by-side execution
 ms.assetid: e42036ee-7590-47d1-b884-cc856e39bd5d
-ms.openlocfilehash: 234efba66d87b520b54d6d113afcc4bba0bfe06a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 74b5710c7e8ad60873fb83a3699ce3992ead6e07
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73138664"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378628"
 ---
 # <a name="assemblies-and-side-by-side-execution"></a>Сборки и параллельное выполнение
 
@@ -20,7 +21,7 @@ ms.locfileid: "73138664"
   
 Хотя среда выполнения предоставляет возможность создавать параллельные приложения, параллельное выполнение не реализуется автоматически. Дополнительные сведения о создании приложений для параллельного выполнения см. в разделе [Рекомендации по созданию компонентов для параллельного выполнения](../../framework/deployment/guidelines-for-creating-components-for-side-by-side-execution.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обнаружение сборок в среде выполнения](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Сборки в .NET](index.md)

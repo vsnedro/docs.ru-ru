@@ -3,12 +3,12 @@ title: Сравнение project.json и CSPROJ
 description: См. сопоставление между элементами project.json и CSPROJ.
 author: natemcmaster
 ms.date: 03/13/2017
-ms.openlocfilehash: feaa7e9cde7e1aa4dfe94d699b14a018fc728f27
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: a997b48f645ed58d15610a68aee7c67411f9763f
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794628"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83205836"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>Сопоставление между свойствами project.json и CSPROJ
 
@@ -179,7 +179,7 @@ And it's really great!</Description>
 </PropertyGroup>
 ```
 
-Обратите внимание, что значение `<RuntimeFrameworkVersion>` в перенесенном проекте определяется версией установленного пакета SDK.
+Значение `<RuntimeFrameworkVersion>` в перенесенном проекте определяется версией установленного пакета SDK.
 
 ### <a name="top-level-dependencies"></a>Высокоуровневые зависимости
 
@@ -485,8 +485,7 @@ And it's really great!</Description>
 </PropertyGroup>
 ```
 
-В MSBuild нет эквивалента для элемента `owners`.
-Для `summary` можно использовать свойство `<Description>` MSBuild, даже если значение `summary` не переносится на него автоматически, так как это свойство сопоставляется с элементом [`description`](#other-common-root-level-options).
+В MSBuild нет эквивалента для элемента `owners`. Для `summary` вы можете использовать свойство `<Description>` MSBuild. Значение `summary` не переносится в это свойство автоматически, так как это оно сопоставляется с элементом [`description`](#other-common-root-level-options).
 
 ## <a name="scripts"></a>scripts
 
@@ -499,7 +498,7 @@ And it's really great!</Description>
 }
 ```
 
-Эквивалентом в MSBuild являются [цели](/visualstudio/msbuild/msbuild-targets):
+Эквивалентом в MSBuild являются [целевые объекты](/visualstudio/msbuild/msbuild-targets):
 
 ```xml
 <Target Name="MyPreCompileTarget" BeforeTargets="Build">
@@ -528,7 +527,7 @@ And it's really great!</Description>
 }
 ```
 
-Все параметры в этой группе, кроме свойства "System.GC.Server", помещаются в файл *runtimeconfig.template.json* в папке проекта, при этом параметры переносятся до корневого объекта в процессе миграции:
+Все параметры в этой группе, кроме свойства `System.GC.Server`, помещаются в файл *runtimeconfig.template.json* в папке проекта, при этом параметры переносятся в корневой объект в ходе миграции:
 
 ```json
 {
@@ -541,7 +540,7 @@ And it's really great!</Description>
 }
 ```
 
-Свойство "System.GC.Server" переносится в файл CSPROJ:
+Свойство `System.GC.Server` переносится в файл .csproj:
 
 ```xml
 <PropertyGroup>
@@ -569,7 +568,7 @@ And it's really great!</Description>
 }
 ```
 
-Не поддерживается в CSPROJ. Вместо этого необходимо создать файлы для включения содержимого в ваш файл *NUSPEC*.
+Не поддерживается в CSPROJ. Вместо этого создайте файлы для включения содержимого в ваш файл *.nuspec*.
 Дополнительные сведения см. в разделе [Включение файлов содержимого](/nuget/schema/nuspec#including-content-files).
 
 ## <a name="files"></a>файлы
@@ -621,8 +620,7 @@ And it's really great!</Description>
 ```
 
 > [!NOTE]
-> Многие из [стандартных масок](https://en.wikipedia.org/wiki/Glob_(programming)) по умолчанию добавляются автоматически с помощью пакета SDK для .NET Core.
-> Дополнительные сведения см. в статье [Значения для элемента Compile по умолчанию](https://aka.ms/sdkimplicititems).
+> Многие из [стандартных масок](https://en.wikipedia.org/wiki/Glob_(programming)) по умолчанию добавляются автоматически с помощью пакета SDK для .NET Core. См. сведения о том, [что включает компиляция по умолчанию](../project-sdk/overview.md#default-compilation-includes).
 
 Все элементы `ItemGroup` MSBuild поддерживают `Include`, `Exclude` и `Remove`.
 
@@ -673,6 +671,6 @@ And it's really great!</Description>
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Краткий обзор изменений в интерфейсе командной строки](cli-msbuild-architecture.md)

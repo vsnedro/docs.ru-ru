@@ -8,12 +8,12 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: 6fd2dab09fe97aa4af87d82e2d23664c4347c8b3
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: b86fe4fd91b395498926512650490f8d3a0383a1
+ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82101999"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83761841"
 ---
 # <a name="lambda-expressions-c-programming-guide"></a>Лямбда-выражения (руководство по программированию на C#)
 
@@ -231,6 +231,5 @@ customers.Where(c => c.City == "London");
 - [Встроенный язык запросов LINQ](../concepts/linq/index.md)
 - [Деревья выражений](../concepts/expression-trees/index.md)
 - [Локальные функции или лямбда-выражения](../classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
-- [Неявно типизированные лямбда-выражения](../../implicitly-typed-lambda-expressions.md)
 - [Примеры C# в Visual Studio 2008 (см. файлы примеров запросов LINQ и программу XQuery)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [Рекурсивные лямбда-выражения](https://docs.microsoft.com/archive/blogs/madst/recursive-lambda-expressions)

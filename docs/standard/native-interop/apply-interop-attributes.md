@@ -1,5 +1,6 @@
 ---
 title: Применение атрибутов взаимодействия
+description: В этой статье перечислены атрибуты COM-взаимодействия пространства имен System.Runtime.InteropServices, в том числе атрибуты времени разработки и средства преобразования.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - design-time attributes
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - COM interop, exposing COM components
 - COM interop, applying attributes
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
-ms.openlocfilehash: ca104c512641774217de5e270dc50b7393fc5725
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: 831f8d79030264ef013a75cd91cb771c9d168576
+ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159251"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83420543"
 ---
 # <a name="applying-interop-attributes"></a>Применение атрибутов взаимодействия
 В пространстве имен <xref:System.Runtime.InteropServices> представлены три категории атрибутов взаимодействия: атрибуты, применяемые разработчиком во время разработки, API и средствами COM-взаимодействия в процессе преобразования, а также разработчиком или средой COM-взаимодействия.  

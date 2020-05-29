@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Управление сериализацией производных классов
+description: Поток XML можно настроить путем наследования из существующего класса и передачи в экземпляр XmlSerializer инструкций по сериализации нового класса.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: caa92596-9e15-4d91-acbe-56911ef47a84
-ms.openlocfilehash: af19981fd7cfeda3e8e985fa991fd7fdf2476b42
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: b9a8bd52b7dfe7a9bf43061d8f44747b3a847c68
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159927"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83379128"
 ---
 # <a name="how-to-control-serialization-of-derived-classes"></a>Практическое руководство. Управление сериализацией производных классов
 Использование атрибута **XmlElementAttribute** для изменения имени элемента XML — не единственный способ изменения сериализации объекта. Поток XML также можно настроить путем наследования из существующего класса и передачи в экземпляр <xref:System.Xml.Serialization.XmlSerializer> инструкций по сериализации нового класса.  

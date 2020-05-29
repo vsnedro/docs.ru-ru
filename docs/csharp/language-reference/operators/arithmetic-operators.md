@@ -1,7 +1,7 @@
 ---
 title: Арифметические операторы. Справочник по C#
 description: Сведения об операторах C#, выполняющих операции умножения, деления, вычисления остатка, сложения и вычитания с числовыми типами.
-ms.date: 03/27/2019
+ms.date: 05/11/2020
 author: pkulikov
 f1_keywords:
 - ++_CSharpKeyword
@@ -27,12 +27,12 @@ helpviewer_keywords:
 - + operator [C#]
 - subtraction operator [C#]
 - '- operator [C#]'
-ms.openlocfilehash: ea9bf9e065b2953fd20e0503a19d1dc143064c5d
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: d004ab466bc053ed286d85bcbee2766d8a087286
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738730"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83207241"
 ---
 # <a name="arithmetic-operators-c-reference"></a>Арифметические операторы (справочник по C#)
 
@@ -42,6 +42,8 @@ ms.locfileid: "81738730"
 - бинарные — [`*` (умножение)](#multiplication-operator-), [`/` (деление)](#division-operator-), [`%` (остаток от деления)](#remainder-operator-), [`+` (сложение)](#addition-operator-) и [`-` (вычитание)](#subtraction-operator--).
 
 Эти операторы поддерживаются всеми [целочисленными](../builtin-types/integral-numeric-types.md) типами и типами с [плавающей запятой](../builtin-types/floating-point-numeric-types.md).
+
+В случае целочисленных типов эти операторы (за исключением операторов `++` и `--`) определяются для типов `int`, `uint`, `long`и `ulong`. Если операнды принадлежат к другим целочисленным типам (`sbyte`, `byte`, `short`, `ushort` или `char`), их значения преобразуются в тип `int`, который также является типом результата операции. Если операнды принадлежат к разным целочисленным типам или типам с плавающей запятой, их значения преобразуются в ближайший содержащий тип, если такой тип существует. Дополнительные сведения см. в разделе [Числовые повышения уровня](~/_csharplang/spec/expressions.md#numeric-promotions) в статье [Спецификации языка C#](~/_csharplang/spec/introduction.md). Операторы `++` и `--` определяются для всех целочисленных числовых типов и числовых типов с плавающей запятой, а также типа [char](../builtin-types/char.md).
 
 ## <a name="increment-operator-"></a>Оператор инкремента ++
 

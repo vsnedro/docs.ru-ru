@@ -3,12 +3,12 @@ title: Построитель моделей и принципы его рабо
 description: Сведения об использовании построителя моделей ML.NET для автоматического обучения модели машинного обучения
 ms.date: 03/25/2020
 ms.custom: overview, mlnet-tooling
-ms.openlocfilehash: 9cf66455109908ebd9fc10e62cf4f067609b57d9
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 4afdbfd1682a30647b09d05d51a5c73c214fe2bd
+ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80344771"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83616934"
 ---
 # <a name="what-is-model-builder-and-how-does-it-work"></a>Построитель моделей и принципы его работы
 
@@ -114,7 +114,7 @@ ms.locfileid: "80344771"
 ||Прогнозирование мошеннических операций с кредитной картой|[данные по кредитным картам](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Класс (1 — мошенничество, 0 — нет)|Сумма, V1–V28 (анонимизированные признаки)|
 ||Прогнозирование типа проблемы в репозитории GitHub|[Данные по проблемам на GitHub](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Область|Название, описание|
 |Прогнозирование значений|Прогнозирование платы за такси|[данные по платам за такси](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Плата|Время поездки, расстояние|
-|Классификация изображений|Прогнозирование категории проблемы|[изображения цветов](http://download.tensorflow.org/example_images/flower_photos.tgz)|Вид цветов: маргаритки, одуванчики, розы, подсолнухи, тюльпаны|Данные изображения|
+|Классификация изображений|Прогнозирование категории, к которой относится цветок |[изображения цветов](http://download.tensorflow.org/example_images/flower_photos.tgz)|Вид цветов: маргаритки, одуванчики, розы, подсолнухи, тюльпаны|Данные изображения|
 |Рекомендация|Прогнозирование фильмов, которые понравятся пользователям|[рейтинги фильмов](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|пользователи, фильмы|Рейтинги|
 
 ## <a name="train"></a>Обучение

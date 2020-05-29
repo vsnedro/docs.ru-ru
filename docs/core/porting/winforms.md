@@ -4,12 +4,12 @@ description: Эта статья описывает, как перенести �
 author: Thraka
 ms.author: adegeo
 ms.date: 01/24/2020
-ms.openlocfilehash: 80b4bb225d6a6748743d91a4c70e8b09c10cc94b
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: efa73428c816eddc00c62c2275d3457c92284388
+ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635513"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83206136"
 ---
 # <a name="how-to-port-a-windows-forms-desktop-app-to-net-core"></a>Процесс переноса классического приложения Windows Forms в .NET Core
 
@@ -26,9 +26,10 @@ ms.locfileid: "80635513"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2019 16.5, предварительная версия 1](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&ch=pre&rel=16) или более поздние версии для выполнения задач по конструированию. Рекомендуется выполнить обновление до последней [предварительной версии Visual Studio](https://visualstudio.microsoft.com/vs/preview/).
+- [Visual Studio 2019 16.5, предварительная версия 1](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&ch=pre&rel=16) или более поздние версии для выполнения задач по конструированию. Рекомендуется выполнить обновление до последней [предварительной версии Visual Studio](https://visualstudio.microsoft.com/vs/preview/).
 
   Установите следующие рабочие нагрузки Visual Studio:
+  
   - Разработка классических приложений .NET
   - Кроссплатформенная разработка .NET Core
 

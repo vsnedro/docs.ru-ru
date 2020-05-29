@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Отключение функции пропуска строгих имен
+description: Обход строгого имени пропускает проверку подписи в полностью доверенных доменах в .NET. Эту функцию можно переопределить для одного или всех приложений.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - strong-name bypass feature
 - strong-named assemblies, loading into trusted application domains
 ms.assetid: 234e088c-3b11-495a-8817-e0962be79d82
-ms.openlocfilehash: a4c4ae7ea61a659d3bede532da3c1bdaea448873
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1914997b322591d8deda13d00192bc5f60d81ca2
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73141103"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378484"
 ---
 # <a name="how-to-disable-the-strong-name-bypass-feature"></a>Практическое руководство. Отключение функции пропуска строгих имен
 Начиная с версии .NET Framework 3.5 с пакетом обновления 1 (SP1), подписи строгого имени не проходили проверку при загрузке сборки в объект <xref:System.AppDomain> с полным доверием, например в `MyComputer` по умолчанию для зоны <xref:System.AppDomain>. Это называется возможностью обхода строгих имен. В среде с полным доверием всегда успешно обрабатываются запросы <xref:System.Security.Permissions.StrongNameIdentityPermission> для подписанных сборок с полным доверием независимо от их подписи. Единственное исключение связано с тем, что сборка должна иметь полное доверие, потому что полное доверие имеет ее зона. Так как в этом случае наличие строгого имени не является решающим фактором, смысла в проверке подписи нет. Пропуск проверки подписей строгого имени позволяет значительно повысить производительность приложения.  

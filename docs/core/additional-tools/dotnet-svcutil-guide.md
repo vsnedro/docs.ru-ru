@@ -3,12 +3,12 @@ title: Обзор средства WCF svcutil
 description: Обзор инструмента Microsoft WCF dotnet-svcutil, который расширяет функциональные возможности проектов .NET Core и ASP.NET Core аналогично инструменту WCF svcutil для проектов .NET Framework.
 author: mlacouture
 ms.date: 02/22/2019
-ms.openlocfilehash: 1f500c9355112183a135c2b639807c7cd62fbbfc
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.openlocfilehash: fde42f7d040fba91f51ce6faa58282ed0206a853
+ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82021254"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83396221"
 ---
 # <a name="wcf-dotnet-svcutil-tool-for-net-core"></a>Средство WCF dotnet-svcutil для .NET Core
 
@@ -21,7 +21,7 @@ WCF (Windows Communication Foundation) **dotnet-svcutil** — это средс
 > [!IMPORTANT]
 > Ссылаться на службы следует только из надежного источника. Добавление ссылок из ненадежного источника может нарушить безопасность.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 <!-- markdownlint-disable MD025 -->
 
@@ -119,7 +119,7 @@ public interface ISayHello
 
 2. Определите имена класса клиента и операций, которые хотите использовать. Файл `Reference.cs` будет содержать класс, наследующий свойства от `System.ServiceModel.ClientBase`, с методами, которые можно использовать для вызова операций из службы. В этом примере вызовите из службы _SayHello_ операцию _Hello_. `ServiceReference.SayHelloClient` — это имя класса клиента с методом `HelloAsync`, который можно использовать для вызова операции.
 
-3. Откройте файл `Startup.cs` в редакторе и добавьте оператор using для пространства имен ссылки на службу вверху:
+3. Откройте файл `Startup.cs` в редакторе и добавьте директиву `using` для пространства имен ссылки на службу вверху:
 
     ```csharp
     using ServiceReference;
@@ -153,7 +153,7 @@ public interface ISayHello
 
 6. Перейдите по указанному в консоли URL-адресу (например, `http://localhost:5000`) в веб-браузере.
 
-Вы увидите такой результат: "Hello dotnet-svcutil!".
+Должны выводиться следующие данные: "Hello dotnet-svcutil!"
 
 Подробное описание параметров средства `dotnet-svcutil` можно получить, вызвав это средство с параметром help, как показано ниже:
 # <a name="dotnet-svcutil-2x"></a>[dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
@@ -174,7 +174,7 @@ dotnet svcutil --help
 
 Если у вас появились вопросы или отзывы, [сообщите об этом на сайте GitHub](https://github.com/dotnet/wcf/issues/new). Вы также можете просмотреть имеющиеся вопросы или проблемы [в репозитории WCF на сайте GitHub](https://github.com/dotnet/wcf/issues?utf8=%E2%9C%93&q=is:issue%20label:tooling).
 
-## <a name="release-notes"></a>Заметки о выпуске
+## <a name="release-notes"></a>заметки о выпуске;
 
 - Актуальные сведения о выпуске, включая описание известных проблем, см. в [заметках о выпуске](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md).
 

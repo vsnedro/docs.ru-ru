@@ -1,5 +1,6 @@
 ---
 title: Вопросы безопасности сборок
+description: При создании сборки .NET можно указать разрешения, которые требуются для ее выполнения. В этой статье описаны сборки со строгими именами и средства подписывания.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - assemblies [.NET Framework], security
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - security [.NET Framework], assemblies
 - integrity with assemblies
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
-ms.openlocfilehash: 77c9f9131b556e0b8fa639cd723bf1ca8cd6602e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7f897241b121cf1bd52d02ee5f487aeafafc3cb0
+ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73972310"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83378663"
 ---
 # <a name="assembly-security-considerations"></a>Вопросы безопасности сборок
 При создании сборки можно указать набор разрешений, который требуется для ее выполнения. От свидетельства зависит, предоставляются ли сборке определенные разрешения.  
@@ -60,7 +61,7 @@ ms.locfileid: "73972310"
   
  Так как строгое именование и подпись с помощью [SignTool.exe (программы подписывания)](../../framework/tools/signtool-exe.md) гарантирует целостность, политику управления доступом для кода можно основать на этих двух видах свидетельства сборки. Строгое именование и подпись с помощью [SignTool.exe (программы подписывания)](../../framework/tools/signtool-exe.md) гарантируют целостность благодаря цифровым подписям и сертификатам. Все перечисленные технологии (проверка хэша, использование строгих имен и цифровая подпись с помощью [SignTool.exe (программы подписывания)](../../framework/tools/signtool-exe.md)) используются вместе, чтобы гарантировать, что сборка не была каким-либо образом изменена.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сборки со строгими именами](strong-named.md)
 - [Сборки в .NET](index.md)
