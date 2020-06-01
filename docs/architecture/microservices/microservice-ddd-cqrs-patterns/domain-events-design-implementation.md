@@ -2,12 +2,12 @@
 title: События предметной области. Проектирование и реализация
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Подробный обзор событий предметной области, ключевая концепция для установления связи между агрегатами.
 ms.date: 10/08/2018
-ms.openlocfilehash: e03abba66945a6434f6a81eaa9f50d53998f346c
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 630bd0a0b060431e565df98faa77f452e2045fa2
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988721"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144309"
 ---
 # <a name="domain-events-design-and-implementation"></a>События предметной области: проектирование и реализация
 
@@ -365,13 +365,13 @@ public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
   <https://www.tonytruong.net/domain-events-pattern-example/>
 
 - **Уди Дахан (Udi Dahan). Создание полностью инкапсулированных моделей предметной области** \
-  <http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
+  <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
 - **Уди Дахан (Udi Dahan). События предметной области. Попытка 2** \
-  <http://udidahan.com/2008/08/25/domain-events-take-2/>
+  <https://udidahan.com/2008/08/25/domain-events-take-2/>
 
 - **Уди Дахан (Udi Dahan). События предметной области. Спасение** \
-  <http://udidahan.com/2009/06/14/domain-events-salvation/>
+  <https://udidahan.com/2009/06/14/domain-events-salvation/>
 
 - **Ян Кронквист (Jan Kronquist). Не публикуйте события предметной области, а возвращайте их!** \
   <https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/>

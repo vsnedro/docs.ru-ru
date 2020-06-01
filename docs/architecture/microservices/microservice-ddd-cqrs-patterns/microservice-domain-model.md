@@ -2,12 +2,12 @@
 title: Проектирование модели предметной области микрослужбы
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Ключевые понятия при разработке модели предметной области, ориентированной на DDD.
 ms.date: 01/30/2020
-ms.openlocfilehash: 64860d75dca645904e973a4b8927a716a1603394
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 234d6e518eac8de5b2f130b91adb32b6a24a7265
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988418"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144595"
 ---
 # <a name="design-a-microservice-domain-model"></a>Проектирование модели предметной области микрослужбы
 
@@ -133,14 +133,14 @@ public class Order : Entity, IAggregateRoot
 
 #### <a name="additional-resources"></a>Дополнительные ресурсы
 
-- **Вон Вернон (Vaughn Vernon). Эффективная конструкция агрегата. Часть I. Моделирование одиночного агрегата** (из <http://dddcommunity.org/>) \
-  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf>
+- **Вон Вернон (Vaughn Vernon). Эффективная конструкция агрегата. Часть I. Моделирование одиночного агрегата** (из <https://dddcommunity.org/>) \
+  <https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf>
 
-- **Вон Вернон (Vaughn Vernon). Эффективная конструкция агрегата. Часть II. Организация совместной работы агрегатов** (из <http://dddcommunity.org/>) \
-  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf>
+- **Вон Вернон (Vaughn Vernon). Эффективная конструкция агрегата. Часть II. Организация совместной работы агрегатов** (из <https://dddcommunity.org/>) \
+  <https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf>
 
-- **Вон Вернон (Vaughn Vernon). Эффективная конструкция агрегата. Часть III. Постижение через обнаружение** (из <http://dddcommunity.org/>) \
-  <http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf>
+- **Вон Вернон (Vaughn Vernon). Эффективная конструкция агрегата. Часть III. Постижение через обнаружение** (из <https://dddcommunity.org/>) \
+  <https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf>
 
 - **Сергей Грибняк (Sergey Grybniak). Тактические конструктивные шаблоны DDD** \
   <https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part>

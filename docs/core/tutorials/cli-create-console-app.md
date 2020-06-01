@@ -6,12 +6,12 @@ ms.author: adegeo
 ms.date: 12/05/2019
 ms.technology: dotnet-cli
 ms.custom: updateeachrelease
-ms.openlocfilehash: fe69521a6ac88055e3e8c8502a7e19a72667dbef
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7658f2498b87a90b3925d83628f6ea9247a2fc15
+ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78240861"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83840875"
 ---
 # <a name="get-started-with-net-core-using-the-net-core-cli"></a>Начало работы с .NET Core с помощью .NET Core CLI
 
@@ -204,7 +204,21 @@ dotnet bin\Debug\netcoreapp3.1\publish\Hello.dll
 Вы получите приведенные ниже выходные данные.
 
 ```console
-Hello World!
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
 ```
 
 Как уже упоминалось в начале статьи, создается исполняемый файл, формат которого зависит от операционной системы, а также `Hello.dll`. В Windows это будет `Hello.exe`, а в Linux или macOS — `hello`. Для приведенного выше примера файлу будет присвоено имя `Hello.exe` или `Hello`. Опубликованный исполняемый файл можно запускать напрямую.
@@ -212,7 +226,21 @@ Hello World!
 ```console
 .\bin\Debug\netcoreapp3.1\publish\Hello.exe
 
-Hello World!
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
 ```
 
 ## <a name="conclusion"></a>Заключение

@@ -2,12 +2,12 @@
 title: Создание устойчивых служб, готовых к использованию в облаке адаптация к временным сбоям в облаке
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Создание устойчивых служб, готовых к использованию в облаке адаптация к временным сбоям в облаке
 ms.date: 04/30/2018
-ms.openlocfilehash: e516dc675ceb8def25c6d676bced0ea7f253b2d5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 899084ac00d9be0df47ef88c026f4e8c19722bb6
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74711247"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144256"
 ---
 # <a name="build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"></a>Создание устойчивых служб, готовых к использованию в облаке: адаптация к временным сбоям в облаке
 
@@ -55,7 +55,7 @@ ms.locfileid: "74711247"
 
 - **Библиотека Polly для устойчивого подключения по протоколу HTTP**
 
-    https://github.com/App-vNext/Polly
+    <https://github.com/App-vNext/Polly>
 
 >[!div class="step-by-step"]
 >[Назад](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

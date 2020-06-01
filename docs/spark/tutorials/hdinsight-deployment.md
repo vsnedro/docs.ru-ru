@@ -4,12 +4,12 @@ description: Узнайте, как развернуть приложение .N
 ms.date: 01/23/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 6b8dbe395a5db9631433a5821f5ef2b9ade556f6
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: edb876921030f5034d03c821051457ca111855f8
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895694"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144764"
 ---
 # <a name="tutorial-deploy-a-net-for-apache-spark-application-to-azure-hdinsight"></a>Учебник. Развертывание приложения .NET для Apache Spark в Azure HDInsight
 
@@ -152,7 +152,7 @@ ms.locfileid: "82895694"
    |---------|---------|
    | Тип скрипта |Другой|
    | name | Установка рабочей роли|
-   | URI bash-скрипта |https://mystorageaccount.blob.core.windows.net/mycontainer/install-worker.sh </br> Чтобы подтвердить этот URI, щелкните правой кнопкой мыши install-worker.sh в Обозреватель службы хранилища Azure и выберите пункт "Свойства". |
+   | URI bash-скрипта |`https://mystorageaccount.blob.core.windows.net/mycontainer/install-worker.sh` </br> Чтобы подтвердить этот URI, щелкните правой кнопкой мыши install-worker.sh в Обозреватель службы хранилища Azure и выберите пункт "Свойства". |
    | Типы узлов| Рабочий узел|
    | Параметры | azure </br> wasbs://mycontainer@myStorageAccount.blob.core.windows.net/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz </br> /usr/local/bin
 

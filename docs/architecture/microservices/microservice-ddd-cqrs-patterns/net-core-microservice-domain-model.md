@@ -2,12 +2,12 @@
 title: Реализация модели предметной области микрослужбы с помощью .NET Core
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Сведения о реализации модели предметной области, ориентированной на DDD.
 ms.date: 10/08/2018
-ms.openlocfilehash: 24f700b371d998cf99cbcf260a5278d797cb39d4
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 8aff06a2e37dc87e5ba4f556e9b808598ff3653a
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988431"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144582"
 ---
 # <a name="implement-a-microservice-domain-model-with-net-core"></a>Реализация модели предметной области микрослужбы с помощью .NET Core
 
@@ -177,7 +177,7 @@ myOrder.AddOrderItem(productId, productName, pictureUrl, unitPrice, discount, un
   <https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs>
 
 - **Уди Дахан (Udi Dahan). Создание полностью инкапсулированных моделей предметной области** \
-  <http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
+  <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
 > [!div class="step-by-step"]
 > [Назад](microservice-domain-model.md)

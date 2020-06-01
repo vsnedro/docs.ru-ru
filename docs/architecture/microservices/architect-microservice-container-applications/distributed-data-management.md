@@ -2,12 +2,12 @@
 title: 'Распределенное управление данными: проблемы и решения'
 description: Сведения о проблемах и решениях для распределенного управления данными в среде микрослужб.
 ms.date: 09/20/2018
-ms.openlocfilehash: c30de24591d5a73fd34087f34a69e9c7ed54cd35
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8b91879e879db293ed61bd5f3c49dc391b9d8f5a
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "71834447"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144322"
 ---
 # <a name="challenges-and-solutions-for-distributed-data-management"></a>Распределенное управление данными: проблемы и решения
 
@@ -105,7 +105,7 @@ ms.locfileid: "71834447"
   <https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction>
 
 - **Уди Дахан (Udi Dahan). Объединение на основе служб** \
-  <http://udidahan.com/2014/07/30/service-oriented-composition-with-video/>
+  <https://udidahan.com/2014/07/30/service-oriented-composition-with-video/>
 
 >[!div class="step-by-step"]
 >[Назад](logical-versus-physical-architecture.md)
