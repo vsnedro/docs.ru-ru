@@ -4,12 +4,12 @@ description: Руководства по .NET Core научат вас созд
 author: richlander
 ms.date: 03/16/2017
 titleSuffix: ''
-ms.openlocfilehash: 9fb87180bb001a7f54d93c6e95631562103c49e8
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 5a33158bdf02c5ac81379cfcdabb2f79230033e2
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83840927"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202189"
 ---
 # <a name="learn-net-core-and-the-net-core-sdk-tools-by-exploring-these-tutorials"></a>См. дополнительные сведения о средствах пакета SDK для .NET Core и .NET Core
 
@@ -29,9 +29,10 @@ ms.locfileid: "83840927"
 
 ## <a name="use-visual-studio-code"></a>Использование Visual Studio Code
 
-Выбирайте эти руководства, если хотите использовать Visual Studio Code или какой-то другой редактор кода. Все они используют интерфейс командной строки (CLI) для задач разработки .NET Core, поэтому они подходят для любого редактора.
+Выбирайте эти руководства, если хотите использовать Visual Studio Code или какой-то другой редактор кода. Все они используют интерфейс командной строки (CLI) для задач разработки .NET Core, поэтому все, кроме учебника по отладке, подходят для любого редактора.
 
 - [Создание консольного приложения](with-visual-studio-code.md)
+- [Отладка приложения](debugging-with-visual-studio-code.md)
 - [Создание и публикация консольного приложения](cli-create-console-app.md)
 - [Создание консольного приложения на F#](../../fsharp/get-started/get-started-vscode.md)
 - [Создание и модульное тестирование библиотеки — macOS](using-on-macos.md)
