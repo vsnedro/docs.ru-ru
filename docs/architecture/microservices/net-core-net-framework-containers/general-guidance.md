@@ -2,12 +2,12 @@
 title: Общие рекомендации
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Общие рекомендации
 ms.date: 09/11/2018
-ms.openlocfilehash: 2fa66d7593b764a8df4d9acc20f93d3f8fb26174
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e3bb4b8cf3e371c31d783fe4cfafeac282fb72b8
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73089652"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144569"
 ---
 # <a name="general-guidance"></a>Общие рекомендации
 
@@ -38,10 +38,10 @@ ms.locfileid: "73089652"
 ### <a name="additional-resources"></a>Дополнительные ресурсы
 
 - **Электронная книга. модернизация существующих приложений .NET Framework с помощью Azure и контейнеров Windows**  
-    https://aka.ms/liftandshiftwithcontainersebook
+    <https://aka.ms/liftandshiftwithcontainersebook>
 
 - **Примеры приложений: модернизация устаревших веб-приложений ASP.NET с помощью контейнеров Windows**  
-    https://aka.ms/eshopmodernizing
+    <https://aka.ms/eshopmodernizing>
 
 >[!div class="step-by-step"]
 >[Назад](index.md)
