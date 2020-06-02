@@ -7,17 +7,17 @@ helpviewer_keywords:
 - arrays [.NET Framework], usage guidelines
 - empty arrays
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
-ms.openlocfilehash: d4a1f379a88231654c710b1df7b505316377c915
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 30277507050091de6b1e9293401d61ac5e351a1f
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76741802"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84280625"
 ---
 # <a name="arrays"></a>Массивы
-✔️ предпочитаете использовать коллекции через массивы в общедоступных API. Раздел [Collections](../../../docs/standard/design-guidelines/guidelines-for-collections.md) содержит сведения о выборе между коллекциями и массивами.
+✔️ предпочитаете использовать коллекции через массивы в общедоступных API. Раздел [Collections](guidelines-for-collections.md) содержит сведения о выборе между коллекциями и массивами.
 
- ❌ не использовать поля массива, доступного только для чтения. Само поле доступно только для чтения и не может быть изменено, но элементы массива могут быть изменены.
+ ❌Не используйте поля массива, доступного только для чтения. Само поле доступно только для чтения и не может быть изменено, но элементы массива могут быть изменены.
 
  ✔️ Рассмотрите возможность использования немассивных массивов вместо многомерных массивов.
 
@@ -27,8 +27,8 @@ ms.locfileid: "76741802"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Array>
-- [Рекомендации по проектированию на основе Framework](../../../docs/standard/design-guidelines/index.md)
-- [Правила использования](../../../docs/standard/design-guidelines/usage-guidelines.md)
+- [Рекомендации по проектированию платформы](index.md)
+- [Рекомендации по использованию](usage-guidelines.md)

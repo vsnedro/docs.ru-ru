@@ -1,13 +1,14 @@
 ---
 title: Команды и параметры
+description: Узнайте, как использовать объекты команд для каждого поставщика данных .NET Framework для выполнения команд и возврата результатов из источника данных.
 ms.date: 03/30/2017
 ms.assetid: b623f810-d871-49a5-b0f5-078cc3c34db6
-ms.openlocfilehash: 1d0c3adb56e5ff44b5c5e065ac040f25584a1946
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: c0baec4d6c3984cb50178c3aa7f9ed3878055bb6
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70784954"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287146"
 ---
 # <a name="commands-and-parameters"></a>Команды и параметры
 После установки соединения с источником данных при помощи объекта <xref:System.Data.Common.DbCommand> можно выполнять команды и возвращать результаты из источника данных. Команду можно создать с помощью одного из используемых конструкторов команд для поставщика данных .NET Framework. Конструкторы могут принимать необязательные аргументы, например инструкцию SQL для выполнения в источнике данных, объект <xref:System.Data.Common.DbConnection> или объект <xref:System.Data.Common.DbTransaction>. Эти объекты также можно настроить как свойства команды. При помощи метода <xref:System.Data.Common.DbConnection.CreateCommand%2A> объекта `DbConnection` также можно создать команду для конкретного соединения. Инструкцию SQL, выполняемую командой, можно настроить с помощью свойства <xref:System.Data.Common.DbCommand.CommandText%2A>.  
@@ -15,7 +16,7 @@ ms.locfileid: "70784954"
  У каждого поставщика данных .NET Framework, имеющегося в платформе .NET Framework, есть объект `Command`. Поставщик данных .NET Framework для OLE DB содержит объект <xref:System.Data.OleDb.OleDbCommand>, поставщик данных .NET Framework для SQL Server - объект <xref:System.Data.SqlClient.SqlCommand>, поставщик данных .NET Framework для ODBC - объект <xref:System.Data.Odbc.OdbcCommand>, а поставщик данных .NET Framework для Oracle - объект <xref:System.Data.OracleClient.OracleCommand>.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Выполнение команды](executing-a-command.md)  
+ [Исполнение команды](executing-a-command.md)  
  Описание объекта ADO.NET `Command` и его использования для выполнения запросов и команд в источнике данных.  
   
  [Настройка параметров и типы данных параметров](configuring-parameters-and-parameter-data-types.md)  

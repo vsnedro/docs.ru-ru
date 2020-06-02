@@ -1,17 +1,18 @@
 ---
 title: Oracle и ADO.NET
+description: Сведения о функциях и поведении поставщика данных .NET Framework для Oracle, который обеспечивает доступ к базе данных Oracle с помощью интерфейса вызова Oracle.
 titleSuffix: ''
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
-ms.openlocfilehash: 5683f2b4ba57021ff6dda3a51baca016f886b605
-ms.sourcegitcommit: 19014f9c081ca2ff19652ca12503828db8239d48
+ms.openlocfilehash: 8757352a7444fad802ea88ba58e0fe643c86cbb8
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76980084"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286693"
 ---
 # <a name="oracle-and-adonet"></a>Oracle и ADO.NET
 > [!NOTE]
@@ -21,7 +22,7 @@ ms.locfileid: "76980084"
   
  Поставщик данных .NET Framework для Oracle предоставляет доступ к базе данных Oracle с помощью интерфейса Oracle Call Interface (OCI), предоставляемого клиентским программным обеспечением Oracle. Функциональные возможности поставщика данных аналогичны функциям .NET Framework поставщиков данных для SQL Server, OLE DB и ODBC.  
   
- Чтобы использовать поставщик данных .NET Framework для Oracle, приложение должно ссылаться на пространство имен <xref:System.Data.OracleClient> следующим образом:  
+ Чтобы использовать поставщик данных .NET Framework для Oracle, приложение должно ссылаться на <xref:System.Data.OracleClient> пространство имен следующим образом:  
   
 ```vb  
 Imports System.Data.OracleClient  
@@ -44,7 +45,7 @@ csc /r:System.Data.OracleClient.dll
  [BFILE в Oracle](oracle-bfiles.md)  
  Описывает класс <xref:System.Data.OracleClient.OracleBFile>, который используется для работы с типом данных Oracle BFILE.  
   
- [Большие объекты (LOB) в Oracle](oracle-lobs.md)  
+ [Большие двоичные объекты (LOB) Oracle](oracle-lobs.md)  
  Описывает класс <xref:System.Data.OracleClient.OracleLob>, который используется для работы с типом данных Oracle LOB.  
   
  [REF CURSOR в Oracle](oracle-ref-cursors.md)  
@@ -78,7 +79,7 @@ csc /r:System.Data.OracleClient.dll
  [DbProviderFactories](dbproviderfactories.md)  
  Описывает универсальные классы, позволяющие писать независимый от поставщика код в ADO.NET.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [ADO.NET](index.md)
 - [Общие сведения об ADO.NET](ado-net-overview.md)

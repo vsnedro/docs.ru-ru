@@ -1,13 +1,14 @@
 ---
 title: Объекты DataAdapter и DataReader
+description: Сведения о ADO.NET DataReader, который извлекает данные из базы данных, и DataAdapter, который извлекает данные из источника данных и заполняет набор данных.
 ms.date: 03/30/2017
 ms.assetid: cc952ca2-ec19-46ab-9189-15174b52cb74
-ms.openlocfilehash: 20c6d514e70d2e4db451e0fff02e72688bf7d0ba
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 17463d65266baa53521bed9603c8abd96923277b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70786646"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286977"
 ---
 # <a name="dataadapters-and-datareaders"></a>Объекты DataAdapter и DataReader
 ADO.NET **DataReader** можно использовать для получения однопроходного потока данных из базы данных только для чтения. Результаты возвращаются при выполнении запроса и хранятся в сетевом буфере на клиенте, пока они не будут запрошены с помощью метода **Read** объекта **DataReader**. Использование **DataReader** может увеличить производительность приложения, извлекая данные сразу после их доступности и (по умолчанию) сохраняя в памяти только одну строку за раз, уменьшая нагрузку на систему.  
@@ -29,7 +30,7 @@ ADO.NET **DataReader** можно использовать для получен
  [Добавление существующих ограничений к набору данных](adding-existing-constraints-to-a-dataset.md)  
  Показывает, как добавить существующие ограничения к `DataSet`.  
   
- [Сопоставления DataAdapter, DataTable и DataColumn](dataadapter-datatable-and-datacolumn-mappings.md)  
+ [Сопоставления DataAdapter DataTable и DataColumn](dataadapter-datatable-and-datacolumn-mappings.md)  
  Описывает, как задать `DataTableMappings` и `ColumnMappings` для `DataAdapter`.  
   
  [Разбивка на страницы результатов запроса](paging-through-a-query-result.md)  
@@ -41,7 +42,7 @@ ADO.NET **DataReader** можно использовать для получен
  [Обработка событий DataAdapter](handling-dataadapter-events.md)  
  Описывает события `DataAdapter` и способы их использования.  
   
- [Выполнение пакетных операций с использованием объектов DataAdapter](performing-batch-operations-using-dataadapters.md)  
+ [Выполнение пакетных операций с использованием объектов DataAdapters](performing-batch-operations-using-dataadapters.md)  
  Показывает, как повысить производительность приложения путем уменьшения количества циклов обмена данными с SQL Server в ходе применения обновлений из `DataSet`.  
   
 ## <a name="see-also"></a>См. также

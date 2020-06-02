@@ -1,18 +1,19 @@
 ---
 title: Наборы данных, таблицы данных и объекты DataView
+description: Изучите несколько способов работы с набором данных ADO.NET, представленным в памяти представлением данных, обеспечивающим единообразную реляционную модель программирования.
 ms.date: 03/30/2017
 ms.assetid: 6d4c4b69-8919-4224-8a65-6cca1c61b48f
-ms.openlocfilehash: 1744f6c6d8ea3c28a8dab30c0d201ae1dacc7ee3
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: f6562452261cbc1f7ee36fb264b858646a42e4f5
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70786198"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286899"
 ---
 # <a name="datasets-datatables-and-dataviews"></a>Наборы данных, таблицы данных и объекты DataView
 ADO.NET <xref:System.Data.DataSet> - расположенное в оперативной памяти представление данных, обеспечивающее согласованную реляционную программную модель независимо от источника данных. <xref:System.Data.DataSet> представляет полный набор данных, включая таблицы, содержащие, упорядочивающие и ограничивающие данные, а также связи между таблицами.  
   
- Существует несколько способов работы с <xref:System.Data.DataSet>, которые могут применяться отдельно или в сочетании. Можно выполнить следующие действия:  
+ Существует несколько способов работы с <xref:System.Data.DataSet>, которые могут применяться отдельно или в сочетании. Вы можете выбрать один из следующих вариантов.  
   
 - Программно создать <xref:System.Data.DataTable>, <xref:System.Data.DataRelation> и <xref:System.Data.Constraint> внутри <xref:System.Data.DataSet> и заполнить таблицы данными.  
   

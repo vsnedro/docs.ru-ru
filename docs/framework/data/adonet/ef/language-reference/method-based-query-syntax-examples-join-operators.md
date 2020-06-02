@@ -1,16 +1,17 @@
 ---
 title: Примеры синтаксиса запросов на основе методов. Операторы соединения
+description: Используйте эти примеры, чтобы узнать, как использовать методы Join и GroupJoin для запроса модели с помощью синтаксиса запросов на основе методов в LINQ to Entities.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d00f0efa-9084-4c17-843f-54904fcb4204
-ms.openlocfilehash: c7dafae846a30424f008cce5f597efbdefa4bdf8
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.openlocfilehash: 3b1445b39bdcd9a9b4d0672be0598233319cb85d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70397356"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286835"
 ---
 # <a name="method-based-query-syntax-examples-join-operators"></a>Примеры синтаксиса запросов на основе методов. Операторы соединения
 В примерах этого раздела показано, как использовать <xref:System.Linq.Enumerable.Join%2A> методы и <xref:System.Linq.Enumerable.GroupJoin%2A> для запроса [модели AdventureWorks Sales](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) с помощью синтаксиса запросов на основе методов. Модель AdventureWorks Sales, которая используется в этих примерах, состоит из таблиц Contact, Address, Product, SalesOrderHeader и SalesOrderDetail образца базы данных AdventureWorks.  

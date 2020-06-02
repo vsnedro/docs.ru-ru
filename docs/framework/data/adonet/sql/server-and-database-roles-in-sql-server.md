@@ -1,13 +1,14 @@
 ---
 title: Роли сервера и базы данных в SQL Server
+description: Сведения об предопределенных ролях сервера и базы данных с фиксированным набором назначенных разрешений. SQL Server использует безопасность на основе ролей.
 ms.date: 03/30/2017
 ms.assetid: 5482dfdb-e498-4614-8652-b174829eed13
-ms.openlocfilehash: f3e31aa67bfbaa541d8d1eb5b8b61dfd28182c72
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 9c3725b0404a5b3c754a53fa56f4a22497afee70
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70791776"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286245"
 ---
 # <a name="server-and-database-roles-in-sql-server"></a>Роли сервера и базы данных в SQL Server
 Во всех версиях SQL Server используется безопасность на основе ролей, что позволяет назначать разрешения роли или группе пользователей, а не отдельным пользователям. Предопределенные роли сервера и предопределенные роли базы данных имеют предопределенный набор разрешений, назначенных для них.  
@@ -25,7 +26,7 @@ ms.locfileid: "70791776"
   
  Дополнительные сведения о предопределенных ролях SQL Server см. в следующих ресурсах.  
   
-|Resource|Описание|  
+|Ресурс|Описание|  
 |--------------|-----------------|  
 |[Роли уровня сервера](/sql/relational-databases/security/authentication-access/server-level-roles)|Описание предопределенных ролей сервера и разрешений, связанных с ними в SQL Server.|  
 |[Роли уровня базы данных](/sql/relational-databases/security/authentication-access/database-level-roles)|Описывает предопределенные роли базы данных и связанные с ними разрешения|  
@@ -56,16 +57,16 @@ ms.locfileid: "70791776"
   
  Дополнительные сведения об именах входа, пользователях и ролях SQL Server см. в следующих ресурсах.  
   
-|Resource|Описание|  
+|Ресурс|Описание|  
 |--------------|-----------------|  
-|[начало работы с разрешениями ядро СУБД](/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions)|Содержит ссылки на разделы, описывающие участников, роли, учетные данные, защищаемые объекты и разрешения.|  
+|[Приступая к работе с разрешениями Database Engine](/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions)|Содержит ссылки на разделы, описывающие участников, роли, учетные данные, защищаемые объекты и разрешения.|  
 |[Субъекты](/sql/relational-databases/security/authentication-access/principals-database-engine)|Описывает участников и содержит ссылки на разделы, описывающие роли сервера и базы данных.|  
   
 ## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](../securing-ado-net-applications.md)
 - [Сценарии безопасности приложений в SQL Server](application-security-scenarios-in-sql-server.md)
-- [Проверка подлинности в SQL Server](authentication-in-sql-server.md)
+- [Аутентификация в SQL Server](authentication-in-sql-server.md)
 - [Владение и отделение пользователей от схем в SQL Server](ownership-and-user-schema-separation-in-sql-server.md)
 - [Авторизация и разрешения в SQL Server](authorization-and-permissions-in-sql-server.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Creating GenericPrincipal Objects
 - GenericIdentity Objects
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-ms.openlocfilehash: 546b4d20f7b6b7a8c448f704fefd9a39b3ebd1d7
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 10a71185db3359cda1c3bf7a12f5698929c98296
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75706153"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290867"
 ---
 # <a name="how-to-create-genericprincipal-and-genericidentity-objects"></a>Практическое руководство. Создание объектов GenericPrincipal и GenericIdentity
 
-Класс <xref:System.Security.Principal.GenericIdentity> можно использовать совместно с классом <xref:System.Security.Principal.GenericPrincipal> для создания схемы авторизации, которая существует независимо от домена Windows.
+Класс можно использовать <xref:System.Security.Principal.GenericIdentity> совместно с <xref:System.Security.Principal.GenericPrincipal> классом для создания схемы авторизации, которая существует независимо от домена Windows.
 
 ### <a name="to-create-a-genericprincipal-object"></a>Создание объекта GenericPrincipal
 
@@ -46,7 +46,7 @@ ms.locfileid: "75706153"
     GenericPrincipal myPrincipal = new GenericPrincipal(myIdentity, myStringArray);
     ```
 
-3. Для подключения участника к текущему потоку используйте следующий код. Это полезно в ситуациях, когда участник должен проверяться несколько раз, он должен быть проверен другим кодом, выполняемым в приложении, или его необходимо проверить с помощью объекта <xref:System.Security.Permissions.PrincipalPermission>. Объект Principal по-прежнему можно проверять на основании ролей без подключения его к потоку. Дополнительные сведения см. в разделе [Замена объекта Principal](../../../docs/standard/security/replacing-a-principal-object.md).
+3. Для подключения участника к текущему потоку используйте следующий код. Это полезно в ситуациях, когда участник должен проверяться несколько раз, он должен быть проверен другим кодом, выполняющимся в приложении, или должен быть проверен <xref:System.Security.Permissions.PrincipalPermission> объектом. Объект Principal по-прежнему можно проверять на основании ролей без подключения его к потоку. Дополнительные сведения см. в разделе [Замена объекта Principal](replacing-a-principal-object.md).
 
     ```vb
     Thread.CurrentPrincipal = myPrincipal
@@ -139,10 +139,10 @@ The IsAuthenticated is: True
 Is this a Manager? True
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.Principal.GenericIdentity>
 - <xref:System.Security.Principal.GenericPrincipal>
 - <xref:System.Security.Permissions.PrincipalPermission>
-- [Замена объекта Principal](../../../docs/standard/security/replacing-a-principal-object.md)
-- [Объекты Principal и Identity](../../../docs/standard/security/principal-and-identity-objects.md)
+- [Замена объекта Principal](replacing-a-principal-object.md)
+- [Объекты Principal и Identity](principal-and-identity-objects.md)

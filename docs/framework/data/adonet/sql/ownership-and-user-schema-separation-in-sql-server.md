@@ -1,13 +1,14 @@
 ---
 title: Владение и отделение пользователей от схем в SQL Server
+description: Узнайте, как разделение пользовательских схем обеспечивает гибкость при управлении SQL Server разрешений на объекты базы данных. Схемы группируют объекты в отдельные пространства имен.
 ms.date: 03/30/2017
 ms.assetid: 242830c1-31b5-4427-828c-cc22ff339f30
-ms.openlocfilehash: 5ad3d927bcf3534e134db2c98b79842b0e6148f3
-ms.sourcegitcommit: 5ae5a1a9520b8b8b6164ad728d396717f30edafc
+ms.openlocfilehash: 97e742979785fedd922dc887295b63e2d93bd147
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70894435"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286266"
 ---
 # <a name="ownership-and-user-schema-separation-in-sql-server"></a>Владение и отделение пользователей от схем в SQL Server
 Основным принципом безопасности SQL Server является то, что владельцы объектов имеют неотзываемые разрешения на их администрирование. Нельзя удалять права доступа у владельцев объектов. Также нельзя удалять пользователей из базы данных, если они владеют в ней объектами.  
@@ -53,15 +54,15 @@ Server.Database.DatabaseSchema.DatabaseObject
 ## <a name="external-resources"></a>Внешние ресурсы  
  Дополнительные сведения о принадлежности объектов и схемах см. в следующих документах.  
   
-|Resource|Описание|  
+|Ресурс|Описание|  
 |--------------|-----------------|  
-|[Разделение схем пользователей](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms190387(v=sql.105))|Описывает изменения, возникшие из-за отделения пользователей от схем. Сюда входит новое поведение, его влияние на владение, представления каталогов и разрешения.|  
+|[Отделение пользователей от схем](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms190387(v=sql.105))|Описывает изменения, возникшие из-за отделения пользователей от схем. Сюда входит новое поведение, его влияние на владение, представления каталогов и разрешения.|  
   
 ## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](../securing-ado-net-applications.md)
 - [Сценарии безопасности приложений в SQL Server](application-security-scenarios-in-sql-server.md)
-- [Проверка подлинности в SQL Server](authentication-in-sql-server.md)
+- [Аутентификация в SQL Server](authentication-in-sql-server.md)
 - [Роли сервера и базы данных в SQL Server](server-and-database-roles-in-sql-server.md)
 - [Авторизация и разрешения в SQL Server](authorization-and-permissions-in-sql-server.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

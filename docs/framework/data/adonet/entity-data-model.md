@@ -1,13 +1,14 @@
 ---
 title: EDM (модель данных с использованием сущностей)
+description: EDM описывает структуру данных независимо от их сохраненной формы, которая решает проблемы, связанные с сохранением данных во многих формах.
 ms.date: 03/30/2017
 ms.assetid: 2dda3d5b-4582-4ba0-a91d-fcd7a1498137
-ms.openlocfilehash: ed834c57104e9f03ac337f6c1d30a0498bd42a06
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.openlocfilehash: c98b1f4559ef297f8b11051940fd91f5f6fa06fd
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73738408"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286744"
 ---
 # <a name="entity-data-model"></a>EDM (модель данных с использованием сущностей)
 Модель EDM - это набор основных понятий, которые описывают структуру данных независимо от формы хранения. Модель EDM заимствует свойства модели «сущность-связь», описанной Питером Ченом в 1976 г., более того, она строится на модели «сущность-связь» и расширяет возможности ее традиционного использования.  
@@ -16,16 +17,16 @@ ms.locfileid: "73738408"
   
  `conceptual model` - это специфическое представление структуры данных в виде сущностей и связей, которое обычно определяется на доменном языке DSL, реализующем основные понятия модели EDM. [Язык CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec) — это пример такого доменного языка. Сущности и связи, описанные в концептуальной модели, можно представить в виде абстракций объектов и ассоциаций в приложении. Это позволяет разработчикам сфокусировать внимание на концептуальной модели, не думая о схеме хранения, и писать эффективный и поддерживаемый код. Одновременно разработчики схем хранения могут сфокусировать внимание на эффективности доступа к данным, хранения и масштабируемости.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
  В подразделах этого раздела описываются основные понятия модели EDM. Любой специфический язык домена (DSL), реализующий модель EDM, должен включать основные понятия, описанные в данном разделе. Обратите внимание, что [ADO.NET Entity Framework](./ef/index.md) использует язык CSDL для определения концептуальных моделей. Для получения дополнительной информации см. [CSDL Specification](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec).  
   
  [Основные понятия модели EDM](entity-data-model-key-concepts.md)  
   
- [Модель EDM. Пространство имен](entity-data-model-namespaces.md)  
+ [EDM (модель данных с использованием сущностей): Пространства имен](entity-data-model-namespaces.md)  
   
- [Модель EDM. Примитивные типы данных](entity-data-model-primitive-data-types.md)  
+ [EDM (модель данных с использованием сущностей): примитивные типы данных](entity-data-model-primitive-data-types.md)  
   
- [Модель EDM. Наследование](entity-data-model-inheritance.md)  
+ [EDM (модель данных с использованием сущностей): Наследование](entity-data-model-inheritance.md)  
   
  [конечная точка ассоциации](association-end.md)  
   
@@ -39,30 +40,30 @@ ms.locfileid: "73738408"
   
  [сложный тип](complex-type.md)  
   
- [контейнер сущности](entity-container.md)  
+ [контейнер сущностей](entity-container.md)  
   
  [ключ сущности](entity-key.md)  
   
- [набор сущности](entity-set.md)  
+ [набор сущностей](entity-set.md)  
   
  [тип сущности](entity-type.md)  
   
- [facet](facet.md)  
+ [устанавливают](facet.md)  
   
  [свойство внешнего ключа](foreign-key-property.md)  
   
  [объявляемая моделью функция](model-declared-function.md)  
   
- [определяемая моделью функция](model-defined-function.md)  
+ [функция определенной модели](model-defined-function.md)  
   
  [свойство навигации](navigation-property.md)  
   
- [свойство](property.md)  
+ [property](property.md)  
   
  [ограничение ссылочной целостности](referential-integrity-constraint.md)  
   
 ## <a name="see-also"></a>См. также
 
 - [Средства EDM ADO.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
-- [Общие сведения о файле EDMX](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
-- [Спецификация CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)
+- [Общие сведения о EDMX-файлах](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [Спецификация языка CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

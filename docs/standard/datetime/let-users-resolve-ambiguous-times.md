@@ -1,19 +1,19 @@
 ---
-title: Как разрешить пользователям устранять неоднозначность времени
+title: Практическое руководство. Предоставление пользователям возможности разрешения неоднозначности времени
 ms.date: 04/10/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - time zones [.NET Framework], ambiguous time
 - ambiguous time [.NET Framework]
 ms.assetid: bca874ee-5b68-4654-8bbd-3711220ef332
-ms.openlocfilehash: f988616a4b2a5d8202c87e3be3cb23c7f9f1f130
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ac723738d80a2f686a5fcaf279cec791b3c58619
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73122278"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84281587"
 ---
-# <a name="how-to-let-users-resolve-ambiguous-times"></a>Как разрешить пользователям устранять неоднозначность времени
+# <a name="how-to-let-users-resolve-ambiguous-times"></a>Практическое руководство. Предоставление пользователям возможности разрешения неоднозначности времени
 
 Неоднозначное время — это время, которое соответствует более чем одному значению времени в формате UTC. Это происходит, когда часы переводятся назад, как при переходе в одном часовом поясе с летнего времени на его стандартное время. При обработке неоднозначного времени можно выполнить одно из следующих действий:
 
@@ -27,15 +27,15 @@ ms.locfileid: "73122278"
 
 1. Получите значение даты и времени, введенное пользователем.
 
-2. Вызовите метод <xref:System.TimeZoneInfo.IsAmbiguousTime%2A>, чтобы определить, является ли время неоднозначным.
+2. Вызовите <xref:System.TimeZoneInfo.IsAmbiguousTime%2A> метод, чтобы определить, является ли время неоднозначным.
 
-3. Если время неоднозначно, вызовите метод <xref:System.TimeZoneInfo.GetAmbiguousTimeOffsets%2A>, чтобы получить массив объектов <xref:System.TimeSpan>. Каждый элемент массива содержит смещение в формате UTC, которое может сопоставляться с неоднозначным временем.
+3. Если время неоднозначно, вызовите метод, <xref:System.TimeZoneInfo.GetAmbiguousTimeOffsets%2A> чтобы получить массив <xref:System.TimeSpan> объектов. Каждый элемент массива содержит смещение в формате UTC, которое может сопоставляться с неоднозначным временем.
 
 4. Предоставьте пользователю возможность выбрать нужное смещение.
 
 5. Получите дату и время в формате UTC путем вычитания выбранного пользователем смещения из локального времени.
 
-6. Вызовите метод `static` (`Shared` в Visual Basic .NET) <xref:System.DateTime.SpecifyKind%2A>, чтобы задать для свойства <xref:System.DateTime.Kind%2A> значения даты и времени в формате UTC значение <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.
+6. Вызовите `static` `Shared` метод (в Visual Basic .NET), <xref:System.DateTime.SpecifyKind%2A> чтобы задать свойству значения даты и времени в формате UTC значение <xref:System.DateTime.Kind%2A> <xref:System.DateTimeKind.Utc?displayProperty=nameWithType> .
 
 ## <a name="example"></a>Пример
 
@@ -44,17 +44,17 @@ ms.locfileid: "73122278"
 [!code-csharp[System.TimeZone2.Concepts#11](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#11)]
 [!code-vb[System.TimeZone2.Concepts#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#11)]
 
-В ядре примера кода используется массив объектов <xref:System.TimeSpan> для указания возможных смещений неоднозначного времени от времени в формате UTC. Однако эти смещения скорее всего не будут иметь значения для пользователя. Для уточнения значений этих смещений в коде также учитывается, представляет ли смещение стандартное время местного часового пояса или его летнее время. Код определяет, какое время является стандартным и какое время является летним, сравнивая смещение со значением свойства <xref:System.TimeZoneInfo.BaseUtcOffset%2A>. Это свойство указывает разницу между временем UTC и стандартным временем часового пояса.
+В ядре примера кода используется массив <xref:System.TimeSpan> объектов для указания возможных смещений неоднозначного времени от времени в формате UTC. Однако эти смещения скорее всего не будут иметь значения для пользователя. Для уточнения значений этих смещений в коде также учитывается, представляет ли смещение стандартное время местного часового пояса или его летнее время. Код определяет, какое время является стандартным и какое время является летним, сравнивая смещение со значением <xref:System.TimeZoneInfo.BaseUtcOffset%2A> Свойства. Это свойство указывает разницу между временем UTC и стандартным временем часового пояса.
 
-В этом примере все ссылки на местный часовой пояс выполняются через свойство <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>. местный часовой пояс никогда не назначается объектной переменной. Это рекомендуемый подход, поскольку вызов метода <xref:System.TimeZoneInfo.ClearCachedData%2A?displayProperty=nameWithType> делает недействительными все объекты, которым назначен местный часовой пояс.
+В этом примере все ссылки на местный часовой пояс выполняются через <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> свойство; местный часовой пояс никогда не назначается объектной переменной. Это рекомендуемый подход, поскольку вызов <xref:System.TimeZoneInfo.ClearCachedData%2A?displayProperty=nameWithType> метода делает недействительными все объекты, которым назначен местный часовой пояс.
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 
 Для этого примера требуются:
 
-- , Что <xref:System> пространство имен должно быть импортировано с помощью оператора `using` C# (требуется в коде).
+- , Что <xref:System> пространство имен должно быть импортировано с помощью `using` оператора (требуется в коде C#).
 
 ## <a name="see-also"></a>См. также
 
-- [Даты, время и часовые пояса](../../../docs/standard/datetime/index.md)
-- [Практическое руководство. Разрешение проблемы неоднозначности времени](../../../docs/standard/datetime/resolve-ambiguous-times.md)
+- [Даты, время и часовые пояса](index.md)
+- [Практическое руководство. Разрешение проблемы неоднозначности времени](resolve-ambiguous-times.md)

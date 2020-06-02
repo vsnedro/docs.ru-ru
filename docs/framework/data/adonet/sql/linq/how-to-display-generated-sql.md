@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Как отобразить сформированный код SQL
+description: Узнайте, как просмотреть код SQL, созданный для запросов, с помощью свойства Log, чтобы понять LINQ to SQL функциональности и для отладки.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 626492c0-5ee3-4675-88e8-8c40379510b6
-ms.openlocfilehash: 15fc6a50d232ea12b229b7b2790c0398bc1c370d
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: 5e75a8aadf4631f0a6e50641db72ba7b83af41fe
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72002980"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286382"
 ---
 # <a name="how-to-display-generated-sql"></a>Практическое руководство. Как отобразить сформированный код SQL
 Для просмотра кода SQL, созданного для запросов, и изменения обработки используется свойство <xref:System.Data.Linq.DataContext.Log%2A>. Такой подход может оказаться полезным для получения основных сведений о функциях [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] и для отладки конкретных проблем.  
@@ -18,7 +19,7 @@ ms.locfileid: "72002980"
 ## <a name="example"></a>Пример  
  В следующем примере для отображения кода SQL в окне консоли перед его выполнением использовано свойство <xref:System.Data.Linq.DataContext.Log%2A>.  Это свойство можно применять с командами выполнения запросов, вставки, обновления и удаления.  
   
- Строки из окна консоли отображаются при выполнении Visual Basic или C# кода, приведенного ниже.  
+ Строки из окна консоли отображаются при выполнении приведенного ниже кода Visual Basic или C#.  
   
 ```console  
 SELECT [t0].[CustomerID], [t0].[CompanyName], [t0].[ContactName], [t0].[ContactT  

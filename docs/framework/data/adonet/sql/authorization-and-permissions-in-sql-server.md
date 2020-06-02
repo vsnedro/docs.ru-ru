@@ -1,13 +1,14 @@
 ---
 title: Авторизация и разрешения в SQL Server
+description: Узнайте, как явно предоставить разрешения на создание объектов базы данных, доступных пользователям в SQL Server с помощью ADO.NET.
 ms.date: 03/30/2017
 ms.assetid: d340405c-91f4-4837-a3cc-a238ee89888a
-ms.openlocfilehash: c9b041a078494cd29d6cab5297728d233dafa236
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: eb01e29b36da5e1793b9176301a968a42115d19c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70782590"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286537"
 ---
 # <a name="authorization-and-permissions-in-sql-server"></a>Авторизация и разрешения в SQL Server
 После создания объектов базы данных необходимо явно предоставить разрешения, чтобы сделать их доступными для пользователей. Каждый защищаемый объект имеет разрешения, которые могут быть предоставлены участнику с помощью инструкций разрешения.  
@@ -52,9 +53,9 @@ ms.locfileid: "70782590"
 > Формирование цепочки владения не применяется в случае выполнения динамических инструкций SQL. Чтобы вызвать процедуру, в которой выполняется инструкция SQL, вызывающему объекту необходимо предоставить разрешения на базовые таблицы, в результате чего приложение становится уязвимым для атаки путем внедрения кода SQL. SQL Server предоставляет новые механизмы, такие как олицетворение и подписание модулей с помощью сертификатов, не требующие предоставления разрешений на базовые таблицы. Эти механизмы могут также использоваться для работы с хранимыми процедурами среды CLR.  
   
 ## <a name="external-resources"></a>Внешние ресурсы  
- Дополнительные сведения см. в следующих ресурсах.  
+ Для получения дополнительных сведений см. следующие ресурсы.  
   
-|Resource|Описание|  
+|Ресурс|Описание|  
 |--------------|-----------------|  
 |[Разрешения](/sql/relational-databases/security/permissions-database-engine)|Содержит разделы, описывающие иерархию разрешений, представления каталога и разрешения предопределенных ролей сервера и базы данных.|
   
@@ -62,7 +63,7 @@ ms.locfileid: "70782590"
 
 - [Защита приложений ADO.NET](../securing-ado-net-applications.md)
 - [Сценарии безопасности приложений в SQL Server](application-security-scenarios-in-sql-server.md)
-- [Проверка подлинности в SQL Server](authentication-in-sql-server.md)
+- [Аутентификация в SQL Server](authentication-in-sql-server.md)
 - [Роли сервера и базы данных в SQL Server](server-and-database-roles-in-sql-server.md)
 - [Владение и отделение пользователей от схем в SQL Server](ownership-and-user-schema-separation-in-sql-server.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

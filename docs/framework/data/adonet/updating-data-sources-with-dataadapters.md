@@ -1,16 +1,17 @@
 ---
 title: Обновление источников данных с объектами DataAdapter
+description: Узнайте, как метод Update объекта DataAdapter разрешает изменения из набора данных обратно в источник данных в ADO.NET приложениях.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d1bd9a8c-0e29-40e3-bda8-d89176b72fb1
-ms.openlocfilehash: 4a6e22352a309f9d624c6922abc531cb31a5baf1
-ms.sourcegitcommit: 878ca7550b653114c3968ef8906da2b3e60e3c7a
+ms.openlocfilehash: e2348a3a89aa1c28856bfc21aaa25f2c8327aac7
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736691"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286188"
 ---
 # <a name="updating-data-sources-with-dataadapters"></a>Обновление источников данных с объектами DataAdapter
 
@@ -46,14 +47,14 @@ ms.locfileid: "71736691"
 > [!NOTE]
 > Если метод `SelectCommand` возвращает результаты инструкции OUTER JOIN, то `DataAdapter` не задает значение `PrimaryKey` для результирующего набора `DataTable`. Необходимо непосредственно определить значение `PrimaryKey` для обеспечения того, чтобы решение по обработке повторяющихся строк было принято правильно. Дополнительные сведения см. в разделе [Определение первичных ключей](./dataset-datatable-dataview/defining-primary-keys.md).
 
-Для обработки исключений, которые могут `Update` возникнуть при вызове метода, можно `RowUpdated` использовать событие для реагирования на ошибки обновления строк по мере их возникновения (см. раздел `true` [Обработка событий DataAdapter](handling-dataadapter-events.md)) или значение `DataAdapter.ContinueUpdateOnError` до вызов `Update`и реагирование на сведения об ошибке, хранящиеся `RowError` в свойстве определенной строки по завершении обновления (см. [сведения об ошибке строки](./dataset-datatable-dataview/row-error-information.md)).
+Для обработки исключений, которые могут возникнуть при вызове `Update` метода, можно использовать `RowUpdated` событие для реагирования на ошибки обновления строк по мере их возникновения (см. раздел [Обработка событий DataAdapter](handling-dataadapter-events.md)) или установить `DataAdapter.ContinueUpdateOnError` значение `true` до вызова `Update` и ответить на сведения об ошибке, хранящиеся в `RowError` свойстве определенной строки после завершения обновления (см. [сведения об ошибке строки](./dataset-datatable-dataview/row-error-information.md)).
 
 > [!NOTE]
-> Вызов `AcceptChanges` `DataRow`метода `Original` для `DataSet`, `DataTable`или приведетктому`DataRow` , что все значения для будут перезаписаны значениямидля.`Current` `DataRow` Если были изменены значения полей, уникальным образом идентифицирующих строку, то после вызова метода `AcceptChanges` значения `Original` больше не будут соответствовать этим значениям в источнике данных. Метод `AcceptChanges` вызывается автоматически для каждой строки во время вызова метода Update объекта `DataAdapter`. Можно сохранить первоначальные значения во время вызова метода Update, для чего вначале следует задать значение свойства `AcceptChangesDuringUpdate` объекта `DataAdapter` равным false, или создать обработчик событий для события `RowUpdated` и задать значение <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A>, равное <xref:System.Data.UpdateStatus.SkipCurrentRow>. Дополнительные сведения см. в разделе [Объединение содержимого набора данных](./dataset-datatable-dataview/merging-dataset-contents.md) и [Обработка событий DataAdapter](handling-dataadapter-events.md).
+> Вызов метода `AcceptChanges` для `DataSet` , `DataTable` или `DataRow` приведет к тому, что все `Original` значения для `DataRow` будут перезаписаны `Current` значениями для `DataRow` . Если были изменены значения полей, уникальным образом идентифицирующих строку, то после вызова метода `AcceptChanges` значения `Original` больше не будут соответствовать этим значениям в источнике данных. Метод `AcceptChanges` вызывается автоматически для каждой строки во время вызова метода Update объекта `DataAdapter`. Можно сохранить первоначальные значения во время вызова метода Update, для чего вначале следует задать значение свойства `AcceptChangesDuringUpdate` объекта `DataAdapter` равным false, или создать обработчик событий для события `RowUpdated` и задать значение <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A>, равное <xref:System.Data.UpdateStatus.SkipCurrentRow>. Дополнительные сведения см. в разделе [Объединение содержимого набора данных](./dataset-datatable-dataview/merging-dataset-contents.md) и [Обработка событий DataAdapter](handling-dataadapter-events.md).
 
 ## <a name="example"></a>Пример
 
-В следующих примерах показано, как выполнять обновления измененных строк путем явного задания `UpdateCommand` `DataAdapter` значения свойства и вызова его `Update` метода. Обратите внимание на то, что задан параметр, указанный в предложении WHERE инструкции UPDATE, чтобы использовалось значение `Original` объекта `SourceColumn`. Это важно, поскольку значение `Current` могло быть изменено, поэтому может не соответствовать этому значению в источнике данных. Значение `Original` представляет собой значение, которое использовалось для заполнения `DataTable` из источника данных.
+В следующих примерах показано, как выполнять обновления измененных строк путем явного задания значения свойства `UpdateCommand` `DataAdapter` и вызова его `Update` метода. Обратите внимание на то, что задан параметр, указанный в предложении WHERE инструкции UPDATE, чтобы использовалось значение `Original` объекта `SourceColumn`. Это важно, поскольку значение `Current` могло быть изменено, поэтому может не соответствовать этому значению в источнике данных. Значение `Original` представляет собой значение, которое использовалось для заполнения `DataTable` из источника данных.
 
 [!code-csharp[DataWorks SqlClient.DataAdapterUpdate#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.DataAdapterUpdate/CS/source.cs#1)]
 [!code-vb[DataWorks SqlClient.DataAdapterUpdate#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.DataAdapterUpdate/VB/source.vb#1)]
@@ -180,7 +181,7 @@ ALTER TABLE [dbo].[Course] CHECK CONSTRAINT [FK_Course_Department]
 GO
 ```
 
-C#Visual Basic проекты с этим примером кода можно найти в [примерах кода для разработчиков](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=How%20to%20use%20DataAdapter%20to%20retrieve%20and%20update%20data&f%5B1%5D).
+Проекты C# и Visual Basic с этим примером кода можно найти в [примерах кода для разработчиков](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=How%20to%20use%20DataAdapter%20to%20retrieve%20and%20update%20data&f%5B1%5D).
 
 ```csharp
 using System;
