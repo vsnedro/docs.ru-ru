@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Подписание XML-документов при помощи цифровых подписей
+title: Практическое руководство. Подписание XML-документов с помощью цифровых подписей
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - XML signing
 - signing XML
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
-ms.openlocfilehash: 0df036b3336527f3cc0e48d9a7ec835ab9f1cf4a
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 81fa5e4c503f26dc13758090f845fd8387287084
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75706049"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84277184"
 ---
-# <a name="how-to-sign-xml-documents-with-digital-signatures"></a>Практическое руководство. Подписание XML-документов при помощи цифровых подписей
+# <a name="how-to-sign-xml-documents-with-digital-signatures"></a>Практическое руководство. Подписание XML-документов с помощью цифровых подписей
 Можно использовать классы в пространстве имен <xref:System.Security.Cryptography.Xml> для подписания XML-документа или его части при помощи цифровой подписи.  Цифровые подписи XML (XMLDSIG) позволяют убедиться, что данные не были изменены после подписания.  Дополнительные сведения о стандарте XMLDSIG см. в разделе рекомендации по [синтаксису XML-подписи](https://www.w3.org/TR/xmldsig-core/)консорциум W3C (W3C) и обработке.  
   
- В примере кода в этой процедуре показано, как подписать весь XML-документ с помощью цифровой подписи и присоединить подпись к документу в элементе <`Signature`>.  Пример создает ключ подписывания RSA, добавляет его в безопасный контейнер ключей и затем использует этот ключ для создания цифровой подписи XML-документа.  Впоследствии ключ можно извлечь для проверки цифровой подписи XML либо использовать для подписывания другого XML-документа.  
+ В примере кода в этой процедуре показано, как подписать весь XML-документ с помощью цифровой подписи и присоединить подпись к документу в `Signature` элементе <>.  Пример создает ключ подписывания RSA, добавляет его в безопасный контейнер ключей и затем использует этот ключ для создания цифровой подписи XML-документа.  Впоследствии ключ можно извлечь для проверки цифровой подписи XML либо использовать для подписывания другого XML-документа.  
   
- Сведения о том, как проверить цифровую подпись XML, созданную с помощью этой процедуры, см. [в разделе как проверить цифровые подписи XML-документов](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md).  
+ Сведения о том, как проверить цифровую подпись XML, созданную с помощью этой процедуры, см. [в разделе как проверить цифровые подписи XML-документов](how-to-verify-the-digital-signatures-of-xml-documents.md).  
   
 ### <a name="to-digitally-sign-an-xml-document"></a>Создание цифровой подписи XML-документа  
   
@@ -75,7 +75,7 @@ ms.locfileid: "75706049"
      [!code-csharp[HowToSignXMLDocumentRSA#10](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToSignXMLDocumentRSA/cs/sample.cs#10)]
      [!code-vb[HowToSignXMLDocumentRSA#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToSignXMLDocumentRSA/vb/sample.vb#10)]  
   
-10. Извлеките XML-представление сигнатуры (<`Signature`элемент >) и сохраните его в новом объекте <xref:System.Xml.XmlElement>.  
+10. Извлеките XML-представление сигнатуры ( `Signature` элемент> <) и сохраните его в новый <xref:System.Xml.XmlElement> объект.  
   
      [!code-csharp[HowToSignXMLDocumentRSA#11](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToSignXMLDocumentRSA/cs/sample.cs#11)]
      [!code-vb[HowToSignXMLDocumentRSA#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToSignXMLDocumentRSA/vb/sample.vb#11)]  
@@ -111,12 +111,12 @@ ms.locfileid: "75706049"
   
 - Включите следующие пространства имен: <xref:System.Xml>, <xref:System.Security.Cryptography> и <xref:System.Security.Cryptography.Xml>.  
   
-## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
- Не следует хранить или передавать закрытый ключ из пары асимметричных ключей в виде обычного текста.  Дополнительные сведения о симметричных и асимметричных криптографических ключах см. в разделе [Создание ключей для шифрования и расшифровки](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md).  
+## <a name="net-framework-security"></a>Безопасность .NET Framework  
+ Не следует хранить или передавать закрытый ключ из пары асимметричных ключей в виде обычного текста.  Дополнительные сведения о симметричных и асимметричных криптографических ключах см. в разделе [Создание ключей для шифрования и расшифровки](generating-keys-for-encryption-and-decryption.md).  
   
- Не следует внедрять закрытый ключ непосредственно в исходный код.  Встроенные ключи можно легко считывать из сборки с помощью [Ildasm. exe (ДИЗАССЕМБЛЕР IL)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) или путем открытия сборки в текстовом редакторе, например в блокноте.  
+ Не следует внедрять закрытый ключ непосредственно в исходный код.  Встроенные ключи можно легко считывать из сборки с помощью [Ildasm. exe (ДИЗАССЕМБЛЕР IL)](../../framework/tools/ildasm-exe-il-disassembler.md) или путем открытия сборки в текстовом редакторе, например в блокноте.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.Cryptography.Xml>
-- [Практическое руководство. Проверка цифровых подписей XML-документов](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)
+- [Практическое руководство. Проверка цифровых подписей XML-документов](how-to-verify-the-digital-signatures-of-xml-documents.md)

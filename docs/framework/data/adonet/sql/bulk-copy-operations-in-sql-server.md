@@ -1,42 +1,43 @@
 ---
 title: Операции массового копирования в SQL Server
+description: Научитесь использовать класс SqlBulkCopy для создания решений с управляемым кодом, которые позволяют выполнять операции копирования больших файлов в таблицы или представления в SQL Server базах данных.
 ms.date: 03/30/2017
 ms.assetid: 83a7a0d2-8018-4354-97b9-0b1d99f8342b
-ms.openlocfilehash: ae97bcdd6776d573cf9e523133c2c00a42c273bb
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 4f877836aa45efe162cce3c42cb5733f86deab2c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70782522"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286524"
 ---
 # <a name="bulk-copy-operations-in-sql-server"></a>Операции массового копирования в SQL Server
-Microsoft SQL Server включает популярную программу командной строки с именем **bcp** для быстрого копирования больших файлов в таблицы или представления в базах данных SQL Server. Класс <xref:System.Data.SqlClient.SqlBulkCopy> позволяет разрабатывать решения на управляемом коде, обеспечивающие аналогичную функциональность. Существуют другие способы загрузки данных в таблицу SQL Server (например, инструкция INSERT), но класс <xref:System.Data.SqlClient.SqlBulkCopy> существенно превосходит их по производительности.  
+Microsoft SQL Server включает популярную служебную программу командной строки **bcp**, позволяющую быстро выполнять массовое копирование больших файлов в таблицы или представления баз данных SQL Server. Класс <xref:System.Data.SqlClient.SqlBulkCopy> позволяет создавать решения с управляемым кодом, которые предоставляют аналогичные возможности. Существуют другие способы загрузки данных в таблицу SQL Server (например, с помощью инструкции INSERT), но <xref:System.Data.SqlClient.SqlBulkCopy> делает это значительно быстрее.  
   
- Класс <xref:System.Data.SqlClient.SqlBulkCopy> может использоваться для записи данных только в таблицы SQL Server. SQL Server не является единственным источником данных. Можно использовать любой источник данных при условии, что данные можно будет загрузить в экземпляр <xref:System.Data.DataTable> или считать экземпляром <xref:System.Data.IDataReader>.  
+ Класс <xref:System.Data.SqlClient.SqlBulkCopy> можно использовать для записи данных только в таблицы SQL Server. SQL Server не является единственным источником данных. Можно использовать любой источник данных при условии, что данные можно будет загрузить в экземпляр <xref:System.Data.DataTable> или считать экземпляром <xref:System.Data.IDataReader>.  
   
- При помощи класса <xref:System.Data.SqlClient.SqlBulkCopy> можно выполнить следующие операции.  
+ Класс <xref:System.Data.SqlClient.SqlBulkCopy> предоставляет следующие возможности:  
   
-- Отдельную операцию массового копирования.  
+- одну операцию массового копирования;  
   
-- Несколько операций массового копирования.  
+- несколько операций массового копирования;  
   
-- Операцию массового копирования внутри транзакции.  
+- операцию массового копирования в транзакции.  
   
 > [!NOTE]
-> При использовании .NET Framework версии 1,1 или более ранней (которая не поддерживает <xref:System.Data.SqlClient.SqlBulkCopy> класс) можно выполнить SQL Server инструкцию **BULK INSERT** Transact-SQL с помощью <xref:System.Data.SqlClient.SqlCommand> объекта.  
+> При использовании платформы .NET Framework 1.1 или более ранней версии (не поддерживающей класс <xref:System.Data.SqlClient.SqlBulkCopy>) инструкцию SQL Server Transact-SQL **BULK INSERT** можно выполнить при помощи объекта <xref:System.Data.SqlClient.SqlCommand>.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Установка примера массового копирования](bulk-copy-example-setup.md)  
- Описывает таблицы, используемые в примерах массового копирования, и содержит скрипты SQL для создания таблиц в базе данных AdventureWorks.  
+ [Пример установки с массовым копированием](bulk-copy-example-setup.md)  
+ Описание таблиц, используемых в примерах с массовым копированием, и примеры скриптов SQL для создания таблиц в базе данных AdventureWorks.  
   
- [Отдельные операции массового копирования](single-bulk-copy-operations.md)  
- Описывает выполнение отдельной операции массового копирования данных в экземпляр SQL Server с помощью класса <xref:System.Data.SqlClient.SqlBulkCopy> и операции массового копирования с помощью инструкций Transact-SQL и класса <xref:System.Data.SqlClient.SqlCommand>.  
+ [Одиночные операции копирования](single-bulk-copy-operations.md)  
+ Описание процессов одного массового копирования данных в экземпляр SQL Server с помощью класса <xref:System.Data.SqlClient.SqlBulkCopy>, а также массового копирования с помощью инструкций Transact-SQL и класса <xref:System.Data.SqlClient.SqlCommand>.  
   
- [Несколько операций массового копирования](multiple-bulk-copy-operations.md)  
- Описывает выполнение нескольких операций массового копирования данных в экземпляр SQL Server с помощью класса <xref:System.Data.SqlClient.SqlBulkCopy>.  
+ [Несколько операций с массовым копированием](multiple-bulk-copy-operations.md)  
+ Описание выполнения нескольких операций массового копирования данных в экземпляр SQL Server с помощью класса <xref:System.Data.SqlClient.SqlBulkCopy>.  
   
- [Транзакции и операции массового копирования](transaction-and-bulk-copy-operations.md)  
- Описывает выполнение операции массового копирования внутри транзакции, включая фиксацию или откат транзакции.  
+ [Операции транзакций и операций с массовым копированием](transaction-and-bulk-copy-operations.md)  
+ Сведения о том, как выполнить операцию массового копирования в рамках транзакции, в том числе как зафиксировать или откатить эту транзакцию.  
   
 ## <a name="see-also"></a>См. также
 

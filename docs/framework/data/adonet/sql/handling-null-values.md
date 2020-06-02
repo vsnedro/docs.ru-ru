@@ -1,22 +1,23 @@
 ---
 title: Обработка значений NULL
+description: Сведения о том, как поставщик данных .NET Framework для SQL Server обрабатывает значение null, а также сведения о логике со значением NULL и SqlBoolean, а также присвоение значений NULL.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f18b288f-b265-4bbe-957f-c6833c0645ef
-ms.openlocfilehash: c45c6672983866df6c47ec84981cc7bd11637c0c
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: a4d086d81f1c2c959780366cfeb59f2d265bc40c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249081"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286459"
 ---
 # <a name="handling-null-values"></a>Обработка значений NULL
 Значение NULL в реляционной базе данных используется, если значение в столбце неизвестно или отсутствует. NULL не является ни пустой строкой (для типов данных character или datetime), ни нулевым значением (для числовых типов данных). В спецификации ANSI SQL-92 указано, что значение NULL должно быть одинаковым для всех типов данных, чтобы все значения NULL обрабатывались согласованно. Пространство имен <xref:System.Data.SqlTypes> обеспечивает семантику со значением NULL, реализуя интерфейс <xref:System.Data.SqlTypes.INullable>. Каждый из типов данных в <xref:System.Data.SqlTypes> имеет собственное свойство `IsNull` и значение `Null`, которое может быть назначено экземпляру этого типа данных.  
   
 > [!NOTE]
-> Версия .NET Framework 2.0 ввела поддержку для недействительных типов значений, что позволяет программистам расширять тип значения, чтобы представлять все значения базового типа. Эти типы недействительных значений <xref:System.Nullable> CLR представляют собой экземпляр структуры. Эта возможность особенно полезна, если типы значений упакованы и распакованы, что обеспечивает улучшенную совместимость с типами объектов. Типы недействительных значений CLR не предназначены для хранения данных, так как null `null` ANSI `Nothing` S'L не ведет себя так же, как ссылка (или в Visual Basic). Для работы со значениями NULL в базе данных ANSI SQL используйте значения NULL <xref:System.Data.SqlTypes> вместо <xref:System.Nullable>. Для получения дополнительной информации о работе с значениями CLR недействительные типы в Visual Basic см. [Недействительные типы значений,](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)а для СЗ см. [Nullable value types](../../../../csharp/language-reference/builtin-types/nullable-value-types.md)  
+> В .NET Framework версии 2,0 добавлена поддержка типов значений, допускающих значения NULL, которые позволяют программистам расширять тип значения для представления всех значений базового типа. Эти типы значений, допускающие значение null, представляют собой экземпляр <xref:System.Nullable> структуры. Эта возможность особенно полезна, если типы значений упакованы и распакованы, что обеспечивает улучшенную совместимость с типами объектов. Типы значений, допускающие значение null, не предназначены для хранения значений NULL в базе данных, так как ANSI SQL NULL не работает точно так же, как `null` ссылка (или `Nothing` в Visual Basic). Для работы со значениями NULL в базе данных ANSI SQL используйте значения NULL <xref:System.Data.SqlTypes> вместо <xref:System.Nullable>. Дополнительные сведения о работе с типами значений, допускающими значение NULL в CLR, в Visual Basic [см. в разделе](../../../../csharp/language-reference/builtin-types/nullable-value-types.md) [типы значений](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md), допускающих значения NULL, а для C# см.  
   
 ## <a name="nulls-and-three-valued-logic"></a>Значения NULL и тройственная логика  
  Разрешение значений NULL в определениях столбцов вводит в приложение логику трех значений. Результатом сравнения может быть одно из трех условий:  
@@ -35,7 +36,7 @@ ms.locfileid: "80249081"
  ![Таблица истинности](./media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")  
   
 ### <a name="understanding-the-ansi_nulls-option"></a>Основные сведения о параметре ANSI_NULLS  
- <xref:System.Data.SqlTypes> предоставляет ту же семантику, что и при установке параметра ANSI_NULLS в SQL Server. Все арифметические операторы (яп., -,, \*/, \|%), bitwise операторов (я, &, ), и большинство функций `IsNull`вернуть недействительными, если какой-либо из operands или аргументы являются недействительными, за исключением собственности .  
+ <xref:System.Data.SqlTypes> предоставляет ту же семантику, что и при установке параметра ANSI_NULLS в SQL Server. Все арифметические операторы (+,-, \* ,/,%), битовые операторы (~, &, \| ) и большинство функций возвращают значение null, если любой из операндов или аргументов имеет значение null, за исключением свойства `IsNull` .  
   
  Стандарт ANSI SQL-92 не поддерживает *columnName* = NULL в предложении WHERE. В SQL Server параметр ANSI_NULLS управляет допустимостью значений NULL по умолчанию в базе данных и вычислением сравнений со значениями NULL. Если параметр ANSI_NULLS включен (по умолчанию), то при проверке на наличие значений NULL в выражениях должен использоваться оператор IS NULL. Например, результатом следующего сравнения всегда является неизвестность при включенном параметре ANSI_NULLS:  
   
@@ -144,4 +145,4 @@ String.Equals instance method:
 ## <a name="see-also"></a>См. также
 
 - [Типы данных SQL Server и ADO.NET](sql-server-data-types.md)
-- [Общие сведения о ADO.NET](../ado-net-overview.md)
+- [Общие сведения об ADO.NET](../ado-net-overview.md)

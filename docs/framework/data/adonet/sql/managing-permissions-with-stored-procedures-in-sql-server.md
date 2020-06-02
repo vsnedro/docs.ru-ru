@@ -1,13 +1,14 @@
 ---
 title: Управление разрешениями с использованием хранимых процедур в SQL Server
+description: Узнайте, как ограничить доступ к данным и объектам базы данных, реализовав доступ с помощью хранимых процедур или определяемых пользователем функций.
 ms.date: 03/30/2017
 ms.assetid: 08fa34e8-2ffa-470d-ba62-e511a5f8558e
-ms.openlocfilehash: 85383c46dd029db825d24d2f67d2dbda00f3bc95
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: 890c1c6dd7003f3abd684d6c827b6a77a3a019c1
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452387"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286292"
 ---
 # <a name="managing-permissions-with-stored-procedures-in-sql-server"></a>Управление разрешениями с использованием хранимых процедур в SQL Server
 Одним из методов создания нескольких линий защиты для базы данных является реализация доступа ко всем данным с помощью хранимых процедур или определяемых пользователем функций. Отменяются или запрещаются разрешения на все базовые объекты (например, таблицы), на хранимые процедуры предоставляются разрешения EXECUTE. Тем самым создается эффективный периметр безопасности вокруг данных и объектов базы данных.  
@@ -52,11 +53,11 @@ ms.locfileid: "77452387"
 ## <a name="external-resources"></a>Внешние ресурсы  
  Для получения дополнительных сведений см. следующие ресурсы.  
   
-|Ресурс|Description|  
+|Ресурс|Описание|  
 |--------------|-----------------|  
 |[Хранимые процедуры](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) и [внедрение кода SQL](/sql/relational-databases/security/sql-injection)|В статьях объясняется, как создавать хранимые процедуры и как работает внедрение кода SQL.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](../securing-ado-net-applications.md)
 - [Общие сведения о безопасности SQL Server](overview-of-sql-server-security.md)

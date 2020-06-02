@@ -1,47 +1,48 @@
 ---
 title: SQL Server и ADO.NET
+description: Сведения о функциях и поведении поставщика данных .NET Framework для SQL Server, который инкапсулирует протоколы, относящиеся к базе данных.
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: c18b1fb1-2af1-4de7-80a4-95e56fd976cb
-ms.openlocfilehash: 6e88c35936de72f0d426c23493bbe5a08e707ee1
-ms.sourcegitcommit: 19014f9c081ca2ff19652ca12503828db8239d48
+ms.openlocfilehash: eeb0ab69a68dfc2fc0faa1b4e833f80b307fffe5
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76979980"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286446"
 ---
 # <a name="sql-server-and-adonet"></a>SQL Server и ADO.NET
 В данном разделе описываются возможности и поведение, характерное для поставщика данных .NET Framework для SQL Server (<xref:System.Data.SqlClient>).  
   
- Объект <xref:System.Data.SqlClient> предоставляет доступ к версиям SQL Server и инкапсулирует протоколы для конкретных баз данных. Возможности поставщика данных похожи на возможности поставщиков данных .NET Framework для OLE DB, ODBC и Oracle. Объект <xref:System.Data.SqlClient> включает средство синтаксического анализа потока табличных данных, которое служит для непосредственного взаимодействия с SQL Server.  
+ <xref:System.Data.SqlClient> предоставляет доступ к версиям SQL Server и инкапсулирует протоколы для конкретных баз данных. Возможности поставщика данных похожи на возможности поставщиков данных .NET Framework для OLE DB, ODBC и Oracle. <xref:System.Data.SqlClient> содержит средство синтаксического анализа потока табличных данных (TDS) для непосредственного взаимодействия с SQL Server.  
   
 > [!NOTE]
 > Чтобы использовать поставщик данных .NET Framework для SQL Server, приложение должно ссылаться на пространство имен <xref:System.Data.SqlClient>.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Безопасность SQL Server](sql-server-security.md)  
- Приводятся общие сведения о возможностях системы безопасности SQL Server, а также сценарии для создания безопасных приложений ADO.NET, предназначенных для работы с SQL Server.  
+ Общие сведения о средствах безопасности SQL Server и сценариях приложений для создания безопасных приложений ADO.NET, предназначенных для SQL Server.  
   
  [Типы данных SQL Server и ADO.NET](sql-server-data-types.md)  
  Описывается работа с типами данных SQL Server и их взаимодействие с типами данных .NET Framework.  
   
- [Двоичные данные и данные большого объема SQL Server](sql-server-binary-and-large-value-data.md)  
- Описывается работа в SQL Server с данными большого размера.  
+ [SQL Server данные в двоичном и больших значениях](sql-server-binary-and-large-value-data.md)  
+ Описание работы с данными больших значений в SQL Server.  
   
- [Операции данных SQL Server Data в ADO.NET](sql-server-data-operations.md)  
- Описание работы с данными в SQL Server. Содержит разделы, посвященные операциям массового копирования, MARS, асинхронным операциям и возвращающим табличное значение параметрам.  
+ [SQL Serverные операции с данными в ADO.NET](sql-server-data-operations.md)  
+ Описание работы с данными в SQL Server. Содержит разделы, посвященные массовым операциям копирования, режиму MARS, асинхронным операциям и возвращающим табличное значение параметрам.  
   
- [Возможности SQL Server и ADO.NET](sql-server-features-and-adonet.md)  
- Описываются возможности SQL Server, полезные для разработчиков приложений ADO.NET.  
+ [SQL Server функций и ADO.NET](sql-server-features-and-adonet.md)  
+ Описание функций SQL Server, полезных для разработчиков приложений ADO.NET.  
   
  [LINQ to SQL](./linq/index.md)  
  Описываются основные стандартные блоки, процессы и методы, необходимые для создания приложений по технологии LINQ to SQL.  
   
- Полную документацию по ядру СУБД SQL Server см. в электронной документации по SQL Server для используемой версии SQL Server.  
+ Полное описание ядра СУБД SQL Server приведено в электронной документации по используемой версии SQL Server.  
   
  [Электронная документация по SQL Server](/sql/sql-server/sql-server-technical-documentation)  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](../securing-ado-net-applications.md)
 - [Сопоставления типов данных в ADO.NET](../data-type-mappings-in-ado-net.md)
