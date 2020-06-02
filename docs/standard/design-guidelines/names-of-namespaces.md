@@ -9,19 +9,19 @@ helpviewer_keywords:
 - namespaces [.NET Framework], names
 - names [.NET Framework], type names
 ms.assetid: a49058d2-0276-43a7-9502-04adddf857b2
-ms.openlocfilehash: 0ad98af240cf8d1041d6a8b64ab71a56e763f76f
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: e435e0281165b4a9f12bbccbeb10401b57375dcb
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419061"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290205"
 ---
 # <a name="names-of-namespaces"></a>Имена пространств имен.
 Как и в случае с другими рекомендациями по именованию, цель при именовании пространств имен заключается в создании достаточной ясности для программиста, использующего платформу для немедленного знания содержимого пространства имен. Следующий шаблон задает общее правило для именования пространств имен.
 
  `<Company>.(<Product>|<Technology>)[.<Feature>][.<Subnamespace>]`
 
- Примеры:
+ Ниже приведены примеры.
 
  `Fabrikam.Math` `Litware.Security`
 
@@ -82,7 +82,7 @@ ms.locfileid: "83419061"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
-- [Рекомендации по проектированию платформы](../../../docs/standard/design-guidelines/index.md)
-- [Рекомендации по именованию](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Рекомендации по проектированию платформы](index.md)
+- [Рекомендации по именованию](naming-guidelines.md)

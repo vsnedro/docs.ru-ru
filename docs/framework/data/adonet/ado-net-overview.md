@@ -1,13 +1,14 @@
 ---
 title: Обзор
+description: Ознакомьтесь с обзором ADO.NET в .NET Framework и прочитайте о ресурсах для получения более подробных пояснений и примеров.
 ms.date: 03/30/2017
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
-ms.openlocfilehash: d5dc9cf7081c6876118914a0b95853a5a7ca5e57
-ms.sourcegitcommit: 19014f9c081ca2ff19652ca12503828db8239d48
+ms.openlocfilehash: 2ff3b7ad197bfe1e1c12e382f3a59bd470c57a75
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76980344"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287159"
 ---
 # <a name="adonet-overview"></a>Общие сведения о ADO.NET
 ADO.NET предоставляет согласованный доступ к таким источникам данных, как SQL Server и XML, а также к источникам данных, предоставляемым при помощи OLE DB и ODBC. Пользовательские приложения, использующие общие данные, могут использовать ADO.NET для соединения с этими источниками данных и для получения, обработки и обновления имеющихся в них данных.  
@@ -35,7 +36,7 @@ ADO.NET предоставляет согласованный доступ к т
  [Поставщики данных .NET Framework](data-providers.md)  
  Предоставляет общие сведения о конструкции поставщика данных .NET Framework и поставщиков данных .NET Framework, включенных при помощи ADO.NET.  
   
- [DataSets в ADO.NET](ado-net-datasets.md)  
+ [Наборы данных ADO.NET](ado-net-datasets.md)  
  Предоставляет общие сведения о конструкции и компонентах `DataSet`.  
   
  [Одновременное выполнение в ADO.NET](side-by-side-execution.md)  
@@ -57,7 +58,7 @@ ADO.NET предоставляет согласованный доступ к т
  [Извлечение и изменение данных в ADO.NET](retrieving-and-modifying-data.md)  
  Описывает, как выполнять соединение с источником данных, получать и изменять данные. К этому относятся `DataReaders` и `DataAdapters`.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [ADO.NET](index.md)
 - [Доступ к данным в Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)

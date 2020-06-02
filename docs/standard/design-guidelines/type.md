@@ -8,12 +8,12 @@ helpviewer_keywords:
 - class library design guidelines [.NET Framework], type design guidelines
 - types [.NET Framework], design guidelines
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
-ms.openlocfilehash: 2a3cca0139974cbc92ce85a19db73dfb3d13d1a0
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 17bd300277a039818a3d563c8f2d5f99eb2fc68d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76743567"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289568"
 ---
 # <a name="type-design-guidelines"></a>Правила разработки типов
 С точки зрения среды CLR существует только две категории типов — ссылочные типы и типы значений, но в целях обсуждения структуры платформы мы разделены на несколько логических групп, каждый из которых имеет собственные собственные правила проектирования.
@@ -32,11 +32,11 @@ ms.locfileid: "76743567"
 
  ✔️ гарантировать, что каждый тип является четко определенным набором связанных элементов, а не только случайным набором несвязанных функций.
 
-## <a name="in-this-section"></a>в этом разделе
- [Выбор между](../../../docs/standard/design-guidelines/choosing-between-class-and-struct.md) [абстрактным](../../../docs/standard/design-guidelines/abstract-class.md) классом класса и структурой конструктор [статических классов](../../../docs/standard/design-guidelines/static-class.md) [конструктор](../../../docs/standard/design-guidelines/interface.md) [структуры](../../../docs/standard/design-guidelines/struct.md) [перечисление](../../../docs/standard/design-guidelines/enum.md) структур [вложенных типов](../../../docs/standard/design-guidelines/nested-types.md) *© 2005, 2009 Корпорация Майкрософт. Все права защищены.*
+## <a name="in-this-section"></a>В этом разделе
+ [Выбор между](choosing-between-class-and-struct.md) [абстрактным](abstract-class.md) классом класса и структурой конструктор [статических классов](static-class.md) [конструктор](interface.md) [структуры](struct.md) [перечисление](enum.md) структур [вложенных типов](nested-types.md) *© 2005, 2009 Корпорация Майкрософт. Все права защищены.*
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Рекомендации по проектированию на основе Framework](../../../docs/standard/design-guidelines/index.md)
+- [Рекомендации по проектированию платформы](index.md)

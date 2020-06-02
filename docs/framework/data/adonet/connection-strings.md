@@ -1,13 +1,14 @@
 ---
 title: Строки соединения
+description: Сведения о строках подключения в ADO.NET, которые содержат сведения об инициализации, передаваемые в качестве параметра из поставщика данных в источник данных.
 ms.date: 10/10/2018
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
-ms.openlocfilehash: 3f56a487121757706ef6b4dfd11fcd761657431a
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: baa6599a532746895cbb3920f2c623dd4c2be864
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202277"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287029"
 ---
 # <a name="connection-strings-in-adonet"></a>Строки подключения в ADO.NET
 
@@ -73,7 +74,7 @@ Keyword=a=b=c
 [Защита сведений о соединении](protecting-connection-information.md)\
 Демонстрирует методы защиты сведений, используемых для подключения к источнику данных.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Подключение к источнику данных](/cpp/data/odbc/connecting-to-a-data-source)
 - [Общие сведения об ADO.NET](ado-net-overview.md)

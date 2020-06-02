@@ -11,12 +11,12 @@ helpviewer_keywords:
 - security [.NET Framework], principals
 - principal objects, creating
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
-ms.openlocfilehash: 30af18b7d7b86621586c7da66eda1b37356d5565
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: 6064c98c4e1e5153f4e0de4849de196228972a89
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159784"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284433"
 ---
 # <a name="how-to-create-a-windowsprincipal-object"></a>Практическое руководство. Создание объекта WindowsPrincipal
 Существует два способа создания объекта <xref:System.Security.Principal.WindowsPrincipal> в зависимости от того, должен ли код выполнять проверку на основании ролей многократно или всего один раз.  
@@ -75,6 +75,6 @@ ms.locfileid: "78159784"
   
 3. После создания объекта субъекта можно использовать один из нескольких методов для его проверки.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Объекты Principal и Identity](../../../docs/standard/security/principal-and-identity-objects.md)
+- [Объекты Principal и Identity](principal-and-identity-objects.md)

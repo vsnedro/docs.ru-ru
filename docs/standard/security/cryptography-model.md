@@ -6,12 +6,12 @@ helpviewer_keywords:
 - cryptography [.NET Framework], model
 - encryption [.NET Framework], model
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-ms.openlocfilehash: f878f73497b83aaf31f2ba3b23cca1f685867b3e
-ms.sourcegitcommit: 011314e0c8eb4cf4a11d92078f58176c8c3efd2d
+ms.openlocfilehash: c2d28abacd34736764b69be750a850a0f2e8db85
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2020
-ms.locfileid: "77095272"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288385"
 ---
 # <a name="net-framework-cryptography-model"></a>Модель криптографии .NET Framework
 
@@ -49,7 +49,7 @@ ms.locfileid: "77095272"
 
 ## <a name="cryptographic-configuration"></a>Криптографическая конфигурация
 
-Криптографическая конфигурация позволяет разрешить определенную реализацию алгоритма до имени алгоритма, что обеспечивает расширяемость криптографических классов .NET Framework. Вы можете добавить свою собственную аппаратную или программную реализацию алгоритма и сопоставить ее с необходимым именем алгоритма. Если алгоритм не задан в файле конфигурации, используются параметры по умолчанию. Дополнительные сведения о конфигурации криптографии см. в разделе [Настройка криптографических классов](../../../docs/framework/configure-apps/configure-cryptography-classes.md).
+Криптографическая конфигурация позволяет разрешить определенную реализацию алгоритма до имени алгоритма, что обеспечивает расширяемость криптографических классов .NET Framework. Вы можете добавить свою собственную аппаратную или программную реализацию алгоритма и сопоставить ее с необходимым именем алгоритма. Если алгоритм не задан в файле конфигурации, используются параметры по умолчанию. Дополнительные сведения о конфигурации криптографии см. в разделе [Настройка криптографических классов](../../framework/configure-apps/configure-cryptography-classes.md).
 
 ## <a name="choosing-an-algorithm"></a>Выбор алгоритма
 
@@ -73,7 +73,7 @@ ms.locfileid: "77095272"
 - Формирование ключа из пароля:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes>
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Службы криптографии](../../../docs/standard/security/cryptographic-services.md)
+- [Службы шифрования](cryptographic-services.md)
 - [Примененные протоколы шифрования, алгоритмы и исходный код в C, Брюс Шнайера](https://www.schneier.com/books/applied_cryptography/)

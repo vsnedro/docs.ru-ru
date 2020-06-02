@@ -1,13 +1,14 @@
 ---
 title: Знакомство с интеграцией CLR в SQL Server
+description: Интеграция со средой CLR с SQL Server поддерживает хранимые процедуры, триггеры, определяемые пользователем функции, определяемые пользователем типы и определяемые пользователем статистические функции в управляемом коде.
 ms.date: 03/30/2017
 ms.assetid: 551d2290-ed80-49be-b377-44b32444da1c
-ms.openlocfilehash: 41dd89af4f45c673cf6b7283fc39aaf91fd9963c
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: fa2ef68792d09cf94b3e0680a14bd79f9b593999
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452413"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286434"
 ---
 # <a name="introduction-to-sql-server-clr-integration"></a>Знакомство с интеграцией CLR в SQL Server
 Среда CLR является сердцем платформы Microsoft .NET Framework и предоставляет среду выполнения для всего кода .NET Framework. Код, выполняемый в среде CLR, называется управляемым кодом. Среда CLR предоставляет различные функции и услуги, требуемые для выполнения программы, включая JIT-компиляцию, распределение и управление памятью, соблюдение безопасности типов, обработку исключений, управление потоками и безопасность.  
@@ -65,7 +66,7 @@ GO
   
 - [Отладка объектов базы данных среды CLR](/sql/relational-databases/clr-integration/debugging-clr-database-objects)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление доступом для кода и ADO.NET](../code-access-security.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

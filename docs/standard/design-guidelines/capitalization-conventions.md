@@ -9,12 +9,12 @@ helpviewer_keywords:
 - case sensitivity, capitalization conventions
 - names [.NET Framework], capitalization
 ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
-ms.openlocfilehash: 8af4a15e1e5b34c38b14c6b547cf44801bbf13e6
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 10d628700a9cbf0e842416878ec2c7febfa3d6f5
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76741761"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84280404"
 ---
 # <a name="capitalization-conventions"></a>Соглашения о написании прописными буквами
 Рекомендации в этой главе посвящены созданию простого метода использования, который при единообразном применении делает идентификаторы для типов, членов и параметров простыми для чтения.
@@ -50,10 +50,10 @@ ms.locfileid: "76741761"
 |Идентификатор|Регистр|Пример|
 |----------------|------------|-------------|
 |Пространство имен|Pascal|`namespace System.Security { ... }`|
-|Тип|Pascal|`public class StreamReader { ... }`|
+|Type|Pascal|`public class StreamReader { ... }`|
 |Интерфейс|Pascal|`public interface IEnumerable { ... }`|
 |Метод|Pascal|`public class Object {` <br />  `public virtual string ToString();` <br /> `}`|
-|Свойство|Pascal|`public class String {` <br />  `public int Length { get; }` <br /> `}`|
+|Свойство.|Pascal|`public class String {` <br />  `public int Length { get; }` <br /> `}`|
 |Событие|Pascal|`public class Process {` <br />  `public event EventHandler Exited;` <br /> `}`|
 |Поле|Pascal|`public class MessageQueue {` <br />  `public static readonly TimeSpan` <br /> `InfiniteTimeout;` <br /> `}` <br /> `public struct UInt32 {` <br />  `public const Min = 0;` <br /> `}`|
 |Значение перечисления|Pascal|`public enum FileMode {` <br />  `Append,` <br />  `...` <br /> `}`|
@@ -62,7 +62,7 @@ ms.locfileid: "76741761"
 ## <a name="capitalizing-compound-words-and-common-terms"></a>Преобразование сложных слов и общих терминов в прописные
  Большинство составных терминов рассматриваются как отдельные слова в целях капитализации.
 
- ❌ не заменяйте каждое слово на прописные, так называемые составные слова с закрытыми формами.
+ ❌НЕ используйте прописные буквы в каждом слове так называемых составных слов с закрытой формой.
 
  Это составные слова, написанные как одно слово, например конечная точка. В соответствии с рекомендациями по регистру рассматривайте составное слово с закрытой формой как одно слово. Используйте текущий словарь, чтобы определить, написано ли составное слово в закрытой форме.
 
@@ -97,13 +97,13 @@ ms.locfileid: "76741761"
 ## <a name="case-sensitivity"></a>Чувствительность к регистру
  Языки, которые могут выполняться в среде CLR, не должны поддерживать чувствительность к регистру, хотя и некоторые. Даже если ваш язык поддерживает, другие языки, которые могут получить доступ к вашей платформе, не поддерживаются. Все интерфейсы API, доступ к которым осуществляется извне, поэтому не могут полагаться только на регистр, чтобы различать два имени в одном контексте.
 
- ❌ не предполагается, что все языки программирования чувствительны к регистру. Это не так. Имена не могут отличаться только регистром.
+ ❌НЕ следует рассчитывать на то, что все языки программирования чувствительны к регистру. Это не так. Имена не могут отличаться только регистром.
 
  *Части © 2005, 2009 Корпорация Майкрософт. Все права защищены.*
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Рекомендации по проектированию на основе Framework](../../../docs/standard/design-guidelines/index.md)
-- [Правила именования](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Рекомендации по проектированию платформы](index.md)
+- [Рекомендации по именованию](naming-guidelines.md)

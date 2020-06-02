@@ -1,13 +1,14 @@
 ---
 title: ограничение ссылочной целостности
+description: Сведения об ограничениях ссылочной целостности в EDM, которые гарантируют, что между типами сущностей всегда существуют допустимые ассоциации.
 ms.date: 03/30/2017
 ms.assetid: 3d3ba44b-4302-40d8-a7a9-62932e0395e5
-ms.openlocfilehash: ad35df7bcca62ffdbc3842b0817b22c5482a3d4d
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.openlocfilehash: 65c811b2a12a64870107ff771d5acc64e86f2c1f
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73738369"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286628"
 ---
 # <a name="referential-integrity-constraint"></a>ограничение ссылочной целостности
 *Ограничение ссылочной целостности* в EDM (EDM) аналогично ограничению ссылочной целостности в реляционной базе данных. Точно так же, как столбец (или столбцы) из таблицы базы данных может ссылаться на первичный ключ другой таблицы, [свойство](property.md) (или свойства) [типа сущности](entity-type.md) может ссылаться на [ключ сущности](entity-key.md) другого типа сущности. Тип сущности, на который указывает ссылка, называется *основным элементом* ограничения. Тип сущности, который ссылается на основной элемент, называется *зависимым окончанием* ограничения.  
@@ -27,7 +28,7 @@ ms.locfileid: "73738369"
 ## <a name="example"></a>Пример  
  На приведенной ниже схеме показана концептуальная модель с двумя ассоциациями: `WrittenBy` и `PublishedBy`. Тип сущности `Book` имеет свойство `PublisherId`, которое ссылается на ключ сущности типа сущности `Publisher` при определении ограничения ссылочной целостности ассоциации `PublishedBy`.  
   
- ![рефконстраинтмодел](./media/referential-integrity-constraint/reference-constraint-model.gif "Пример модели ссылочного ограничения")  
+ ![RefConstraintModel](./media/referential-integrity-constraint/reference-constraint-model.gif "Пример модели ссылочного ограничения")  
   
  [Entity Framework ADO.NET](./ef/index.md) использует доменный язык (DSL), называемый языком определения концептуальной схемы ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)), для определения концептуальных моделей. Далее на языке CSDL определяется ограничение ссылочной целостности для ассоциации `PublishedBy`, которая ранее приводилась в концептуальной модели.  
   
@@ -36,4 +37,4 @@ ms.locfileid: "73738369"
 ## <a name="see-also"></a>См. также
 
 - [Основные понятия модели EDM](entity-data-model-key-concepts.md)
-- [Сущностная модель данных](entity-data-model.md)
+- [EDM (модель данных с использованием сущностей)](entity-data-model.md)

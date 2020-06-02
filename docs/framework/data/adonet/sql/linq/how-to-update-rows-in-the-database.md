@@ -1,27 +1,28 @@
 ---
 title: Практическое руководство. Как обновлять строки в базе данных
+description: Научитесь обновлять строки в базе данных, изменяя LINQ to SQL объекты в коллекции, связанной с таблицами. LINQ to SQL преобразует дополнения в команды обновления SQL.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a2b5c90f-6cc3-4128-bfab-1db488d5af26
-ms.openlocfilehash: c2055e1dd988352b50a439531ab5533f34a4965e
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: f25efb91fb5a83fb1c7c109bd018c8210edaec8b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70793130"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286343"
 ---
 # <a name="how-to-update-rows-in-the-database"></a>Практическое руководство. Как обновлять строки в базе данных
 
-Строки в базе данных можно обновлять, изменяя значения членов объектов, связанных с [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Table%601> коллекцией, а затем отправляя изменения в базу данных. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]преобразует изменения в соответствующие команды SQL `UPDATE` .
+Строки в базе данных можно обновлять, изменяя значения членов объектов, связанных с [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Table%601> коллекцией, а затем отправляя изменения в базу данных. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]преобразует изменения в соответствующие `UPDATE` команды SQL.
 
 > [!NOTE]
 > Можно переопределить методы [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], используемые по умолчанию для операций `Insert`, `Update` и `Delete` базы данных. Дополнительные сведения см. в разделе [Настройка операций вставки, обновления и удаления](customizing-insert-update-and-delete-operations.md).
 >
 > Разработчики, использующие Visual Studio, могут использовать реляционный конструктор объектов для разработки хранимых процедур для той же цели.
 
-В следующих шагах предполагается, что подключение к базе данных Northwind выполняется с помощью допустимого объекта <xref:System.Data.Linq.DataContext>. Дополнительные сведения см. в разделе [Практическое руководство. Подключитесь к базе](how-to-connect-to-a-database.md)данных.
+В следующих шагах предполагается, что подключение к базе данных Northwind выполняется с помощью допустимого объекта <xref:System.Data.Linq.DataContext>. Дополнительные сведения см. в разделе [как подключиться к базе данных](how-to-connect-to-a-database.md).
 
 ### <a name="to-update-a-row-in-the-database"></a>Чтобы обновить строку в базе данных, выполните следующие действия.
 
@@ -40,6 +41,6 @@ ms.locfileid: "70793130"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Управление конфликтами изменений](how-to-manage-change-conflicts.md)
-- [Практическое руководство. Назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)
+- [Практическое руководство. Как управлять конфликтами изменений](how-to-manage-change-conflicts.md)
+- [Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)
 - [Внесение и отправка изменений данных](making-and-submitting-data-changes.md)

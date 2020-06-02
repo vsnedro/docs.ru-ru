@@ -11,18 +11,18 @@ helpviewer_keywords:
 - cryptography [.NET Framework], asymmetric
 - asymmetric encryption
 ms.assetid: 7ecce51f-db5f-4bd4-9321-cceb6fcb2a77
-ms.openlocfilehash: 669b9c77ca0102ed94d8743cf37b18c0d0c528dc
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: 3230836b93ea191e5de27717a918038f2f8dead6
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159407"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288359"
 ---
 # <a name="encrypting-data"></a>Шифрование данных
 Симметричное и асимметричное шифрования выполняются с использованием различных процессов. Симметричное шифрование выполняется в рамках потоков, поэтому его удобно применять для шифрования больших объемов данных. Асимметричное шифрование выполняется в рамках небольшого числа байтов, поэтому его удобно применять для шифрования только небольших объемов данных.  
   
 ## <a name="symmetric-encryption"></a>Симметричное шифрование  
- Управляемые классы симметричного шифрования используются со специальным классом потока <xref:System.Security.Cryptography.CryptoStream> , который шифрует данные, считанные в поток. Класс **CryptoStream** инициализируется при помощи управляемого класса потока, класса, реализующего интерфейс <xref:System.Security.Cryptography.ICryptoTransform> (созданный из класса, который реализует алгоритм шифрования), и перечисления <xref:System.Security.Cryptography.CryptoStreamMode> , описывающего разрешенный тип доступа для **CryptoStream**. Класс **CryptoStream** может быть инициализирован при помощи любого класса, производного от класса <xref:System.IO.Stream> , включая <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>и <xref:System.Net.Sockets.NetworkStream>. При помощи этих классов можно осуществлять симметричное шифрование для различных объектов потока.  
+ Управляемые классы симметричного шифрования используются со специальным классом потока <xref:System.Security.Cryptography.CryptoStream> , который шифрует данные, считанные в поток. Класс **CryptoStream** инициализируется при помощи управляемого класса потока, класса, реализующего интерфейс <xref:System.Security.Cryptography.ICryptoTransform> (созданный из класса, который реализует алгоритм шифрования), и перечисления <xref:System.Security.Cryptography.CryptoStreamMode> , описывающего разрешенный тип доступа для **CryptoStream**. Класс **CryptoStream** можно инициализировать с помощью любого класса, производного от <xref:System.IO.Stream> класса, включая <xref:System.IO.FileStream> , <xref:System.IO.MemoryStream> и <xref:System.Net.Sockets.NetworkStream> . При помощи этих классов можно осуществлять симметричное шифрование для различных объектов потока.  
   
  В следующем примере показано, как создать новый экземпляр класса <xref:System.Security.Cryptography.RijndaelManaged> , который реализует алгоритм шифрования Rijndael, и использовать его для шифрования класса **CryptoStream** . В этом примере **CryptoStream** инициализируется при помощи объекта потока `myStream` , который может быть любым типом управляемого потока. В метод **CreateEncryptor** из класса **RijndaelManaged** передается ключ и вектор инициализации, используемые для шифрования. В этом случае используется ключ и вектор инициализации по умолчанию, созданные из `rmCrypto` . Наконец, передается **CryptoStreamMode.Write** , указывая доступ на запись к потоку.  
   
@@ -260,8 +260,8 @@ class Class1
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Создание ключей для шифрования и расшифровки](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)
-- [Расшифровка данных](../../../docs/standard/security/decrypting-data.md)
-- [Службы криптографии](../../../docs/standard/security/cryptographic-services.md)
+- [Создание ключей для шифрования и расшифровки](generating-keys-for-encryption-and-decryption.md)
+- [Расшифровка данных](decrypting-data.md)
+- [Службы шифрования](cryptographic-services.md)
