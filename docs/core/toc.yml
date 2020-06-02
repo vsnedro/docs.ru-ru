@@ -112,9 +112,9 @@
         - name: Отладка приложения
           href: tutorials/debugging-with-visual-studio-code.md
           displayName: 'tutorials, visual studio code, vs code'
-        - name: Создание и публикация консольного приложения
-          href: tutorials/cli-create-console-app.md
-          displayName: 'tutorials, cli'
+        - name: Публикация приложения
+          href: tutorials/publishing-with-visual-studio-code.md
+          displayName: 'tutorials, visual studio, vs'
         - name: "Создание и модульное тестирование библиотеки\_— macOS"
           href: tutorials/using-on-macos.md
           displayName: 'tutorials, visual studio code, vs code, cli'
