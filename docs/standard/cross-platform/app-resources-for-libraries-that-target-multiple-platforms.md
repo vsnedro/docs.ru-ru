@@ -12,28 +12,28 @@ helpviewer_keywords:
 - resources, for multiple platforms
 - targeting multiple platforms, resources for
 ms.assetid: 72c76f0b-7255-4576-9261-3587f949669c
-ms.openlocfilehash: 3bf475117a85c2fced260dcc9460d55cd7007277
-ms.sourcegitcommit: 011314e0c8eb4cf4a11d92078f58176c8c3efd2d
+ms.openlocfilehash: a2d02a8ebe5e2611db3bc284bb022470ff77f601
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77123666"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290361"
 ---
 # <a name="app-resources-for-libraries-that-target-multiple-platforms"></a>Ресурсы приложений для библиотек, предназначенных для нескольких платформ
-Можно использовать тип проекта [Переносимая библиотека классов](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) .NET Framework, чтобы обеспечить доступ к ресурсам в библиотеках классов из нескольких платформ. Этот тип проекта доступен в Visual Studio 2012 и предназначен для переносимого подмножества библиотеки классов .NET Framework. Использование переносимой библиотеки классов гарантирует, что доступ к библиотеке можно получить из классических приложений, приложений Silverlight, Windows Phone приложений и приложений Магазина Windows 8. x.
+Можно использовать тип проекта [Переносимая библиотека классов](cross-platform-development-with-the-portable-class-library.md) .NET Framework, чтобы обеспечить доступ к ресурсам в библиотеках классов из нескольких платформ. Этот тип проекта доступен в Visual Studio 2012 и предназначен для переносимого подмножества библиотеки классов .NET Framework. Использование переносимой библиотеки классов гарантирует, что доступ к библиотеке можно получить из классических приложений, приложений Silverlight, Windows Phone приложений и приложений Магазина Windows 8. x.
 
 [!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
 
- Проект переносимой библиотеки классов делает неограниченным подмножество типов в пространстве имен <xref:System.Resources>, доступном для приложения, но позволяет использовать класс <xref:System.Resources.ResourceManager> для получения ресурсов. Однако при создании приложения с помощью Visual Studio необходимо использовать строго типизированную оболочку, созданную Visual Studio, а не класс <xref:System.Resources.ResourceManager> непосредственно.
+ Проект переносимой библиотеки классов делает неограниченным подмножество типов в <xref:System.Resources> пространстве имен, доступном для вашего приложения, но позволяет использовать <xref:System.Resources.ResourceManager> класс для получения ресурсов. Однако при создании приложения с помощью Visual Studio необходимо использовать строго типизированную оболочку, созданную Visual Studio, а не класс <xref:System.Resources.ResourceManager> непосредственно.
 
- Чтобы создать строго типизированную оболочку в Visual Studio, установите **Модификатор доступа** основного файла ресурсов в конструкторе ресурсов Visual Studio в значение **Public**. При этом создастся файл [имя_файла_ресурсов].designer.cs или [имя_файла_ресурсов].designer.vb, содержащий строго типизированную оболочку ResourceManager. Дополнительные сведения об использовании обертки ресурсов со строгой типизацией см. в подразделе «Создание класса ресурсов со строгой типизацией» раздела [Resgen. exe (генератор файлов ресурсов)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) .
+ Чтобы создать строго типизированную оболочку в Visual Studio, установите **Модификатор доступа** основного файла ресурсов в конструкторе ресурсов Visual Studio в значение **Public**. При этом создастся файл [имя_файла_ресурсов].designer.cs или [имя_файла_ресурсов].designer.vb, содержащий строго типизированную оболочку ResourceManager. Дополнительные сведения об использовании обертки ресурсов со строгой типизацией см. в подразделе «Создание класса ресурсов со строгой типизацией» раздела [Resgen. exe (генератор файлов ресурсов)](../../framework/tools/resgen-exe-resource-file-generator.md) .
 
 ## <a name="resource-manager-in-the-portable-class-library"></a>диспетчер ресурсов в переносимой библиотеке классов
- В проекте переносимой библиотеки классов весь доступ к ресурсам обрабатывается классом <xref:System.Resources.ResourceManager>. Поскольку типы в пространстве имен <xref:System.Resources>, такие как <xref:System.Resources.ResourceReader> и <xref:System.Resources.ResourceSet>, недоступны из проекта переносимой библиотеки классов, они не могут использоваться для доступа к ресурсам.
+ В проекте переносимой библиотеки классов весь доступ к ресурсам обрабатывается <xref:System.Resources.ResourceManager> классом. Поскольку типы в <xref:System.Resources> пространстве имен, такие как <xref:System.Resources.ResourceReader> и <xref:System.Resources.ResourceSet> , недоступны из проекта переносимой библиотеки классов, они не могут использоваться для доступа к ресурсам.
 
- Проект переносимой библиотеки классов включает четыре <xref:System.Resources.ResourceManager> членов, перечисленных в следующей таблице. Эти конструкторы и методы позволяют создать экземпляр объекта <xref:System.Resources.ResourceManager> и извлечь строковые ресурсы.
+ Проект переносимой библиотеки классов включает в себя четыре <xref:System.Resources.ResourceManager> члена, перечисленные в следующей таблице. Эти конструкторы и методы позволяют создать экземпляр объекта <xref:System.Resources.ResourceManager> и извлечь строковые ресурсы.
 
-|Член`ResourceManager`|Description|
+|Член`ResourceManager`|Описание|
 |------------------------------|-----------------|
 |<xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29>|Создает экземпляр <xref:System.Resources.ResourceManager> для доступа к именованному файлу ресурсов, найденному в заданной сборке.|
 |<xref:System.Resources.ResourceManager.%23ctor%28System.Type%29>|Создает экземпляр <xref:System.Resources.ResourceManager>, соответствующий указанному типу.|
@@ -61,11 +61,11 @@ ms.locfileid: "77123666"
 |HiredLength|12|
 |ID|ID|
 |ID.Length|12|
-|Имя|Имя|
+|Название|Название|
 |NameLength|25|
-|Title|Employee Database|
+|Название|Employee Database|
 
- В следующем коде определяется класс `UILibrary`, использующий оболочку диспетчер ресурсов с именем `resources`, созданную Visual Studio, когда **Модификатор доступа** для файла изменяется на **Public**. Класс UILibrary анализирует строковые данные по мере необходимости. . Обратите внимание, что класс находится в пространстве имен `MyCompany.Employees`.
+ В следующем коде определяется `UILibrary` класс, который использует оболочку диспетчер ресурсов, `resources` созданную Visual Studio, когда **Модификатор доступа** для файла изменяется на **Public**. Класс UILibrary анализирует строковые данные по мере необходимости. . Обратите внимание, что класс находится в пространстве имен `MyCompany.Employees`.
 
  [!code-csharp[Conceptual.Resources.Portable#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portable/cs/uilibrary.cs#1)]
  [!code-vb[Conceptual.Resources.Portable#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portable/vb/uilibrary.vb#1)]
@@ -75,12 +75,12 @@ ms.locfileid: "77123666"
  [!code-csharp[Conceptual.Resources.Portable#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portable/cs/program.cs#2)]
  [!code-vb[Conceptual.Resources.Portable#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portable/vb/module1.vb#2)]
 
- В следующем коде показано, как к классу `UILibrary` и его ресурсам можно получить доступ из приложения Магазина Windows 8. x. Для этого требуется ссылка на UILibrary. dll для добавления в проект приложения Магазина Windows.
+ В следующем коде показано, как `UILibrary` к классу и его ресурсам можно получить доступ из приложения Магазина Windows 8. x. Для этого требуется ссылка на UILibrary. dll для добавления в проект приложения Магазина Windows.
 
  [!code-csharp[Conceptual.Resources.PortableMetro#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portablemetro/cs/blankpage.xaml.cs#1)]
 
 ## <a name="example-localized-portable-class-library"></a>Пример: локализованная Переносимая библиотека классов
- В следующем примере переносимой библиотеки классов содержатся ресурсы для языков и региональных параметров "французский (Франция)" и "Английский (США)". Язык и региональные параметры по умолчанию для английского языка (США). его ресурсы показаны в таблице в [предыдущем разделе](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md#NonLoc). Файл ресурсов для французского (Франция) языка и региональных параметров называется LibResources.fr-FR.resx и состоит из строковых ресурсов, перечисленных в представленной ниже таблице. Исходный код для класса `UILibrary` такой же, как и в предыдущем разделе.
+ В следующем примере переносимой библиотеки классов содержатся ресурсы для языков и региональных параметров "французский (Франция)" и "Английский (США)". Язык и региональные параметры по умолчанию для английского языка (США). его ресурсы показаны в таблице в [предыдущем разделе](app-resources-for-libraries-that-target-multiple-platforms.md#NonLoc). Файл ресурсов для французского (Франция) языка и региональных параметров называется LibResources.fr-FR.resx и состоит из строковых ресурсов, перечисленных в представленной ниже таблице. Исходный код для класса `UILibrary` такой же, как и в предыдущем разделе.
 
 |Имя ресурса|Значение ресурса|
 |-------------------|--------------------|
@@ -89,21 +89,21 @@ ms.locfileid: "77123666"
 |Hired|Дата ембаучé|
 |HiredLength|16|
 |ID|ID|
-|Имя|Nom|
-|Title|Base de доннéес des емплойéс|
+|Название|Nom|
+|Название|Base de доннéес des емплойéс|
 
  В следующем примере кода показано, как к классу `UILibrary` и его ресурсам можно обращаться из консольного приложения. Для этого требуется ссылка на UILibrary. dll для добавления в проект консольного приложения.
 
  [!code-csharp[Conceptual.Resources.Portable#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portable/cs/program2.cs#3)]
  [!code-vb[Conceptual.Resources.Portable#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portable/vb/module2.vb#3)]
 
- В следующем коде показано, как к классу `UILibrary` и его ресурсам можно получить доступ из приложения Магазина Windows 8. x. Для этого требуется ссылка на UILibrary. dll для добавления в проект приложения Магазина Windows. В коде используется статическое свойство `ApplicationLanguages.PrimaryLanguageOverride`, чтобы в качестве предпочтительного языка приложения указать французский язык.
+ В следующем коде показано, как `UILibrary` к классу и его ресурсам можно получить доступ из приложения Магазина Windows 8. x. Для этого требуется ссылка на UILibrary. dll для добавления в проект приложения Магазина Windows. В коде используется статическое свойство `ApplicationLanguages.PrimaryLanguageOverride`, чтобы в качестве предпочтительного языка приложения указать французский язык.
 
  [!code-csharp[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portablemetroloc/cs/blankpage.xaml.cs#1)]
  [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Resources.ResourceManager>
-- [Ресурсы в приложениях для настольных систем](../../../docs/framework/resources/index.md)
-- [Упаковка и развертывание ресурсов](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Ресурсы в приложениях для настольных систем](../../framework/resources/index.md)
+- [Упаковка и развертывание ресурсов](../../framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

@@ -1,21 +1,22 @@
 ---
 title: Добавление столбцов в таблицу данных
+description: Объект DataTable содержит объекты DataColumn, на которые ссылается свойство Columns таблицы. Используйте этот пример кода для добавления столбцов в таблицу в ADO.NET.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e85c4a0e-4f3f-458c-b58b-0ddbc06bf974
-ms.openlocfilehash: 6e0dcd819dc354e1fd23b244692dff5091142004
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 9d6d21696acd7a6b63cfd6d2ea7e906ec2acd7c9
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70784855"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286951"
 ---
 # <a name="adding-columns-to-a-datatable"></a>Добавление столбцов в таблицу данных
-Объект <xref:System.Data.DataTable> содержит<xref:System.Data.DataColumn> коллекцию объектов, на которые ссылается свойство **Columns** таблицы. Эта коллекция столбцов наряду с ограничениями определяет схему, или структуру, таблицы.  
+Объект <xref:System.Data.DataTable> содержит коллекцию <xref:System.Data.DataColumn> объектов, на которые ссылается свойство **Columns** таблицы. Эта коллекция столбцов наряду с ограничениями определяет схему, или структуру, таблицы.  
   
- Объекты **DataColumn** создаются в таблице с помощью конструктора **DataColumn** или путем вызова метода **Add** свойства **Columns** таблицы, то есть <xref:System.Data.DataColumnCollection>. Метод **Add** принимает необязательные аргументы **ColumnName**, **DataType**и **Expression** и создает новый **столбец** данных в качестве члена коллекции. Он также принимает существующий объект **DataColumn** и добавляет его в коллекцию и возвращает ссылку на добавленный **DataColumn-столбец** по запросу. Поскольку объекты **DataTable** не относятся к какому-либо источнику данных, .NET Framework типы используются при указании типа данных **DataColumn**.  
+ Объекты **DataColumn** создаются в таблице с помощью конструктора **DataColumn** или путем вызова метода **Add** свойства **Columns** таблицы, то есть <xref:System.Data.DataColumnCollection> . Метод **Add** принимает необязательные аргументы **ColumnName**, **DataType**и **Expression** и создает новый **столбец** данных в качестве члена коллекции. Он также принимает существующий объект **DataColumn** и добавляет его в коллекцию и возвращает ссылку на добавленный **DataColumn-столбец** по запросу. Поскольку объекты **DataTable** не относятся к какому-либо источнику данных, .NET Framework типы используются при указании типа данных **DataColumn**.  
   
  В следующем примере в **таблицу DataTable**добавляются четыре столбца.  
   
@@ -56,6 +57,6 @@ workTable.Columns.Add("Purchases", typeof(Double));
 - <xref:System.Data.DataColumn>
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataTable>
-- [Определение схемы DataTable](datatable-schema-definition.md)
+- [Определение схемы таблицы данных](datatable-schema-definition.md)
 - [DataTables](datatables.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

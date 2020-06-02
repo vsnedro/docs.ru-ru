@@ -1,16 +1,17 @@
 ---
 title: Получение класса DbProviderFactory
+description: Узнайте, как получить DbProviderFactory из класса Дбпровидерфакториес для работы с конкретными источниками данных в .NET Framework.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a16e4a4d-6a5b-45db-8635-19570e4572ae
-ms.openlocfilehash: 0e2efd593019199ff641610b8602825cc60d4661
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b790c87cc3ec293c18bf730567f92b490c7c6594
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79149470"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286719"
 ---
 # <a name="obtaining-a-dbproviderfactory"></a>Получение класса DbProviderFactory
 Процесс получения <xref:System.Data.Common.DbProviderFactory> состоит из передачи сведений о поставщике данных классу <xref:System.Data.Common.DbProviderFactories>. На основе этих сведений метод <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> создает строго типизированную фабрику поставщика. Например, чтобы создать фабрику <xref:System.Data.SqlClient.SqlClientFactory>, можно передать методу `GetFactory` строку с именем поставщика, указанным в формате «System.Data.SqlClient». Другая перегрузка метода `GetFactory` принимает <xref:System.Data.DataRow>. После создания фабрики поставщика можно использовать ее методы для создания дополнительных объектов. К методам фабрики `SqlClientFactory` относятся <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection%2A>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand%2A> и <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter%2A>.  
@@ -19,7 +20,7 @@ ms.locfileid: "79149470"
 > Классы .NET Framework <xref:System.Data.OracleClient.OracleClientFactory>, <xref:System.Data.Odbc.OdbcFactory> и <xref:System.Data.OleDb.OleDbFactory> также предоставляют похожие возможности.  
   
 ## <a name="registering-dbproviderfactories"></a>Регистрация фабрик DbProviderFactory  
- Каждый поставщик данных .NET Framework, поддерживающий заводской класс, регистрирует информацию о конфигурации в разделе **DbProviderFactories** файла **machine.config** на локальном компьютере. В следующем фрагменте файла конфигурации показан синтаксис и формат для <xref:System.Data.SqlClient>.  
+ Каждый поставщик данных .NET Framework, поддерживающий класс на основе фабрики, регистрирует сведения о конфигурации в разделе **дбпровидерфакториес** файла **Machine. config** на локальном компьютере. В следующем фрагменте файла конфигурации показан синтаксис и формат для <xref:System.Data.SqlClient>.  
   
 ```xml  
 <system.data>  
@@ -34,14 +35,14 @@ ms.locfileid: "79149470"
 </system.data>  
 ```  
   
- **Инвариантный** атрибут определяет основного поставщика данных. Этот трехкомпонентный синтаксис имени также применяется при создании новой фабрики и для определения поставщика в файле конфигурации, чтобы имя поставщика вместе со связанной с ним строкой соединения можно было получать во время выполнения.  
+ **Инвариантный** атрибут определяет базовый поставщик данных. Этот трехкомпонентный синтаксис имени также применяется при создании новой фабрики и для определения поставщика в файле конфигурации, чтобы имя поставщика вместе со связанной с ним строкой соединения можно было получать во время выполнения.  
   
 ## <a name="retrieving-provider-information"></a>Извлечения сведений поставщика  
- Сведения обо всех поставщиках, установленных на локальном компьютере, можно получить с помощью метода <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>. Он возвращает <xref:System.Data.DataTable> имя **DbProviderFactories,** содержащее столбцы, описанные в следующей таблице.  
+ Сведения обо всех поставщиках, установленных на локальном компьютере, можно получить с помощью метода <xref:System.Data.Common.DbProviderFactories.GetFactoryClasses%2A>. Он возвращает <xref:System.Data.DataTable> именованный **дбпровидерфакториес** , содержащий столбцы, описанные в следующей таблице.  
   
 |Порядковый номер столбца|Имя столбца|Пример выходных данных|Описание|  
 |--------------------|-----------------|--------------------|-----------------|  
-|0|**Название**|Поставщик данных SqlClient|Понятное имя поставщика данных.|  
+|0|**имя**;|Поставщик данных SqlClient|Понятное имя поставщика данных.|  
 |1|**Описание**|Поставщик данных .NET Framework для SqlServer|Понятное описание поставщика данных.|  
 |2|**InvariantName**|System.Data.SqlClient|Имя, которое можно использовать программно, чтобы ссылаться на поставщик данных.|  
 |3|**AssemblyQualifiedName**|System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Полное имя фабричного класса, которое содержит достаточно данных для создания экземпляров объектов.|  
@@ -55,9 +56,9 @@ ms.locfileid: "79149470"
  [!code-vb[DataWorks DbProviderFactories#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DbProviderFactories/VB/source.vb#1)]  
   
 ## <a name="using-application-configuration-files-to-store-factory-information"></a>Использование файлов конфигурации приложений для хранения сведений о фабрике  
- Шаблон проектирования, используемый для работы с фабриками, предполагает хранение информации о поставщике и строках соединения в файле конфигурации приложения, таких как **app.config** для приложения Windows и **web.config** для ASP.NET приложения.  
+ Шаблон разработки, используемый для работы с фабриками, предполагает хранение сведений о поставщике и строке подключения в файле конфигурации приложения, например **app. config** для приложения Windows, и **Web. config** для приложения ASP.NET.  
   
- В следующем фрагменте файла конфигурации демонстрируется, как сохранять две именованные строки соединения «NorthwindSQL» для соединения с базой данных Northwind в SQL Server и «NorthwindAccess» для соединения с базой данных Northwind в Access/Jet. Имя **инварианта** используется для атрибута **providerName.**  
+ В следующем фрагменте файла конфигурации демонстрируется, как сохранять две именованные строки соединения «NorthwindSQL» для соединения с базой данных Northwind в SQL Server и «NorthwindAccess» для соединения с базой данных Northwind в Access/Jet. **Инвариантное** имя используется для атрибута **providerName** .  
   
 ```xml  
 <configuration>  
@@ -79,7 +80,7 @@ ms.locfileid: "79149470"
 ```  
   
 ### <a name="retrieving-a-connection-string-by-provider-name"></a>Извлечение строки соединения по имени поставщика  
- Чтобы создать фабрику поставщика, необходимо предоставить строку соединения, а также имя поставщика. Этот пример показывает, как извлечь строку соединения из файла конфигурации приложения, передавая имя поставщика в инвариантном формате "*System.Data.ProviderName*". В коде выполняется просмотр элементов коллекции <xref:System.Configuration.ConnectionStringSettingsCollection>. В случае успеха возвращается <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A>; в противном случае - `null` (`Nothing` в Visual Basic). При наличии нескольких записей для поставщика возвращается первая найденная. Для получения дополнительной информации и примеров извлечения строк соединения из файлов конфигурации [см.](connection-strings-and-configuration-files.md)  
+ Чтобы создать фабрику поставщика, необходимо предоставить строку соединения, а также имя поставщика. В этом примере показано, как получить строку подключения из файла конфигурации приложения, передав имя поставщика в инвариантном формате "*System. Data. ProviderName*". В коде выполняется просмотр элементов коллекции <xref:System.Configuration.ConnectionStringSettingsCollection>. В случае успеха возвращается <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A>; в противном случае - `null` (`Nothing` в Visual Basic). При наличии нескольких записей для поставщика возвращается первая найденная. Дополнительные сведения и примеры получения строк подключения из файлов конфигурации см. в разделе [строки подключения и файлы конфигурации](connection-strings-and-configuration-files.md).  
   
 > [!NOTE]
 > Для выполнения этого кода необходима ссылка на файл `System.Configuration.dll`.  
@@ -88,14 +89,14 @@ ms.locfileid: "79149470"
  [!code-vb[DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider/VB/source.vb#1)]  
   
 ## <a name="creating-the-dbproviderfactory-and-dbconnection"></a>Создание DbProviderFactory и DbConnection  
- Этот пример демонстрирует, как <xref:System.Data.Common.DbProviderFactory> <xref:System.Data.Common.DbConnection> создать объект, передавая ему имя поставщика в формате "*System.Data.ProviderName*" и строку соединения. В случае успеха возвращается объект `DbConnection`; в случае любой ошибки - `null` (`Nothing` в Visual Basic).  
+ В этом примере показано, как создать <xref:System.Data.Common.DbProviderFactory> <xref:System.Data.Common.DbConnection> объект и, передав ему имя поставщика в формате "*System. Data. ProviderName*" и строку подключения. В случае успеха возвращается объект `DbConnection`; в случае любой ошибки - `null` (`Nothing` в Visual Basic).  
   
  Этот код получает `DbProviderFactory` путем вызова <xref:System.Data.Common.DbProviderFactories.GetFactory%2A>. Затем метод <xref:System.Data.Common.DbProviderFactory.CreateConnection%2A> создает объект <xref:System.Data.Common.DbConnection>, а свойству <xref:System.Data.Common.DbConnection.ConnectionString%2A> присваивается значение строки соединения.  
   
  [!code-csharp[DataWorks DbProviderFactories.GetFactory#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/CS/source.cs#1)]
  [!code-vb[DataWorks DbProviderFactories.GetFactory#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DbProviderFactories.GetFactory/VB/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [DbProviderFactories](dbproviderfactories.md)
 - [Строки подключения](connection-strings.md)

@@ -1,19 +1,20 @@
 ---
 title: Построители строк подключения
+description: Сведения о классах построителя строк подключения, используемых для различных поставщиков в ADO.NET, все из которых наследуются от DbConnectionStringBuilder.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8434b608-c4d3-43d3-8ae3-6d8c6b726759
-ms.openlocfilehash: 8cadeac0bcbf301f7d973e93435885de82052603
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e493140b4cf5a939e8ae8f42b617fb739ed09dec
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151667"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287068"
 ---
 # <a name="connection-string-builders"></a>Построители строк подключения
-В более ранних версиях ADO.NET, компиляция времени проверки строк соединения с конкатируемыми значениями строки не произошло, так что во время выполнения, неправильное ключевое слово генерируется <xref:System.ArgumentException>. Каждый из поставщиков данных .NET Framework поддерживал различные синтаксисы для ключевых слов строки соединения, что затрудняло построение действительных строк соединения, если они выполняются вручную. Для решения этой проблемы ADO.NET 2.0 ввели новые стробы строк и строки подключения для каждого поставщика данных .NET Framework. Каждый поставщик данных включает класс построителя строк соединения со строгой типизацией, наследованный от класса <xref:System.Data.Common.DbConnectionStringBuilder>. В следующей таблице перечислены поставщики данных .NET Framework и связанные с ними классы строителей строк соединения.  
+В более ранних версиях ADO.NET проверка строк подключения во время компиляции со сцепленными строковыми значениями не выполнялась, так что во время выполнения было указано неверное ключевое слово <xref:System.ArgumentException> . Каждый из .NET Framework поставщиков данных поддерживал разный синтаксис для ключевых слов строки подключения, что делает несложным создание допустимых строк соединения, если это сделано вручную. Для решения этой проблемы в ADO.NET 2,0 появились новые построители строк подключения для каждого .NET Framework поставщика данных. Каждый поставщик данных включает класс построителя строк соединения со строгой типизацией, наследованный от класса <xref:System.Data.Common.DbConnectionStringBuilder>. В следующей таблице перечислены поставщики данных .NET Framework и связанные с ними классы построителя строк подключения.  
   
 |Поставщик|Класс ConnectionStringBuilder|  
 |--------------|-----------------------------------|  
@@ -59,7 +60,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
  Один из перегруженных конструкторов для построителя строки соединения принимает в качестве аргумента значение типа <xref:System.String>, что позволяет использовать частичную строку соединения, которую впоследствии пользователь может дополнить. Частичную строку соединения можно сохранить в файле конфигурации и получить во время выполнения.  
   
 > [!NOTE]
-> Пространство имен <xref:System.Configuration> обеспечивает программный доступ к файлам конфигурации, предоставляя класс <xref:System.Web.Configuration.WebConfigurationManager> для веб-приложений и класс <xref:System.Configuration.ConfigurationManager> для приложений Windows. Для получения дополнительной информации о работе со [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md)строками соединения и файлами конфигурации см.  
+> Пространство имен <xref:System.Configuration> обеспечивает программный доступ к файлам конфигурации, предоставляя класс <xref:System.Web.Configuration.WebConfigurationManager> для веб-приложений и класс <xref:System.Configuration.ConfigurationManager> для приложений Windows. Дополнительные сведения о работе со строками подключения и файлами конфигурации см. в разделе [строки подключения и файлы конфигурации](connection-strings-and-configuration-files.md).  
   
 ### <a name="example"></a>Пример  
  В этом примере демонстрируется получение частичной строки соединения из файла конфигурации и ее завершение путем установки свойств <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource%2A>, <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserID%2A> и <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Password%2A> для объекта <xref:System.Data.SqlClient.SqlConnectionStringBuilder>. Файл конфигурации определяется следующим образом.  
@@ -79,7 +80,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
  [!code-csharp[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/CS/source.cs#1)]
  [!code-vb[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/VB/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Строки подключения](connection-strings.md)
 - [Конфиденциальность и безопасность данных](privacy-and-data-security.md)
