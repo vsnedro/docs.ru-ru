@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Visual C#, programming concepts
 - C# language, concepts
 ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
-ms.openlocfilehash: de40369a661c347a2125075e820420af4eb71cac
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: df69d895dee51f1bad1fb6164fcb18996ee3eef4
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75337257"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241660"
 ---
 # <a name="c-programming-guide"></a>Руководство по программированию на C#
 
-Этот раздел содержит подробные сведения о ключевых функциях языка C# и возможностях, которые платформа .NET Framework предоставляет для C#.  
+Этот раздел содержит подробные сведения о ключевых функциях языка C# и возможностях, которые платформа .NET предоставляет для C#.  
   
  В текстах этого раздела обычно предполагается, что вы уже знакомы с языком C# и общими концепциями программирования. Если вы раньше никогда не программировали или не работали с языком C#, рекомендуем посмотреть руководства [Знакомство с C#](../tutorials/intro-to-csharp/index.md) или [Руководство в браузере по .NET](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1), которые не требуют знаний программирования.  
   
- Сведения о ключевых словах, операторах и директивах препроцессора см. в [справочнике по C#](../language-reference/index.md). Сведения о спецификации языка C# размещены в статье [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction).  
+ Сведения о конкретных ключевых словах, операторах и директивах препроцессора см. в [справочнике по C#](../language-reference/index.md). Сведения о спецификации языка C# размещены в статье [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction).  
   
 ## <a name="program-sections"></a>Разделы о программе
 
@@ -80,10 +80,10 @@ ms.locfileid: "75337257"
   
  [Файловая система и реестр (руководство по программированию на C#)](./file-system/index.md)  
   
- [Совместимость](./interop/index.md)  
+ [Взаимодействие](./interop/index.md)  
   
  [Отражение](./concepts/reflection.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../language-reference/index.md)

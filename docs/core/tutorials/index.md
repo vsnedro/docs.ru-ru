@@ -4,12 +4,12 @@ description: Руководства по .NET Core научат вас созд
 author: richlander
 ms.date: 03/16/2017
 titleSuffix: ''
-ms.openlocfilehash: 31f63a2bbafc7f1c8dacea0fa8d3a40f36f69e55
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: a685b7d8d6c849cfea061a997780b9cafeb6d938
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241478"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84283732"
 ---
 # <a name="learn-net-core-and-the-net-core-sdk-tools-by-exploring-these-tutorials"></a>См. дополнительные сведения о средствах пакета SDK для .NET Core и .NET Core
 
@@ -22,10 +22,8 @@ ms.locfileid: "84241478"
 - [Публикация приложения](publishing-with-visual-studio.md)
 - [Создание библиотеки классов](library-with-visual-studio.md)
 - [Модульное тестирование библиотеки классов](testing-library-with-visual-studio.md)
-- [Использование библиотеки классов](consuming-library-with-visual-studio.md)
 - [Установка и использование пакета](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 - [Создание и публикация пакета](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-
 - [Создание консольного приложения на F#](../../fsharp/get-started/get-started-visual-studio.md)
 
 ## <a name="use-visual-studio-code"></a>Использование Visual Studio Code
@@ -35,10 +33,10 @@ ms.locfileid: "84241478"
 - [Создание консольного приложения](with-visual-studio-code.md)
 - [Отладка приложения](debugging-with-visual-studio-code.md)
 - [Публикация приложения](publishing-with-visual-studio-code.md)
-- [Создание и модульное тестирование библиотеки — macOS](using-on-macos.md)
+- [Создание библиотеки классов](library-with-visual-studio-code.md)
+- [Модульное тестирование библиотеки классов](testing-library-with-visual-studio-code.md)
 - [Установка и использование пакета](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
 - [Создание и публикация пакета](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
-
 - [Создание консольного приложения на F#](../../fsharp/get-started/get-started-vscode.md)
 
 ## <a name="use-visual-studio-for-mac"></a>Использование Visual Studio для Mac

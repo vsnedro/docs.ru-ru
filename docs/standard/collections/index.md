@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Collections classes
 - collections [.NET Framework]
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
-ms.openlocfilehash: 1bc632a7cfdb96967c7fc508e22ca93c1ed9318f
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.openlocfilehash: 0b87121a4a2003d3f85cf58f6d93f156fc121e54
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728499"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287956"
 ---
 # <a name="collections-and-data-structures"></a>Коллекции и структуры данных
 
@@ -32,7 +32,7 @@ ms.locfileid: "82728499"
 
 - **Возможность перечисления коллекции**
 
-    Чтобы обеспечить итерацию по коллекции, коллекции .NET Framework реализуют либо <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, либо <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. Перечислитель может рассматриваться как перемещаемый указатель на любой элемент в коллекции. Оператор [foreach, in](../../csharp/language-reference/keywords/foreach-in.md) и [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md) использует итератор, предоставляемый методом <xref:System.Collections.IEnumerable.GetEnumerator%2A>, и скрывает сложность работы с итератором. Кроме того, любая коллекция, реализующая <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, считается *запрашиваемым типом*, и к ней можно создавать запросы LINQ. Запросы LINQ предоставляют общий шаблон для доступа к данным. Обычно они являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, и предлагают возможности фильтрации, упорядочения и группировки. LINQ запросы также могут повысить производительность. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md), [Введение в запросы LINQ (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) и [Базовые операции с запросами (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
+    Чтобы обеспечить итерацию по коллекции, коллекции .NET Framework реализуют либо <xref:System.Collections.IEnumerable?displayProperty=nameWithType>, либо <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. Перечислитель может рассматриваться как перемещаемый указатель на любой элемент в коллекции. Оператор [foreach, in](../../csharp/language-reference/keywords/foreach-in.md) и [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md) использует итератор, предоставляемый методом <xref:System.Collections.IEnumerable.GetEnumerator%2A>, и скрывает сложность работы с итератором. Кроме того, любая коллекция, реализующая <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, считается *запрашиваемым типом*, и к ней можно создавать запросы LINQ. Запросы LINQ предоставляют общий шаблон для доступа к данным. Обычно они являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, и предлагают возможности фильтрации, упорядочения и группировки. LINQ запросы также могут повысить производительность. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), [Введение в запросы LINQ (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) и [Базовые операции с запросами (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
 
 - **Возможность копирования содержимого коллекции в массив**
 
@@ -54,7 +54,7 @@ ms.locfileid: "82728499"
 
 - **Синхронизация для доступа из нескольких потоков** (только классы <xref:System.Collections>).
 
-    Для типов неуниверсальных коллекций в пространстве имен <xref:System.Collections> синхронизация обеспечивает определенную степень потокобезопасности. Обычно для выполнения синхронизации используются члены <xref:System.Collections.ICollection.SyncRoot%2A> и <xref:System.Collections.ICollection.IsSynchronized%2A>. Эти коллекции не являются потокобезопасными по умолчанию. Если требуется масштабируемый и эффективный многопотоковый доступ к коллекции, используйте один из классов в пространстве имен <xref:System.Collections.Concurrent> или рассмотрите возможность использования неизменяемой коллекции. Дополнительные сведения см. в разделе [Потокобезопасные коллекции](../../../docs/standard/collections/thread-safe/index.md).
+    Для типов неуниверсальных коллекций в пространстве имен <xref:System.Collections> синхронизация обеспечивает определенную степень потокобезопасности. Обычно для выполнения синхронизации используются члены <xref:System.Collections.ICollection.SyncRoot%2A> и <xref:System.Collections.ICollection.IsSynchronized%2A>. Эти коллекции не являются потокобезопасными по умолчанию. Если требуется масштабируемый и эффективный многопотоковый доступ к коллекции, используйте один из классов в пространстве имен <xref:System.Collections.Concurrent> или рассмотрите возможность использования неизменяемой коллекции. Дополнительные сведения см. в разделе [Потокобезопасные коллекции](thread-safe/index.md).
 
 <a name="BKMK_Choosingacollection"></a>
 ## <a name="choose-a-collection"></a>Выбор коллекции
@@ -98,13 +98,13 @@ ms.locfileid: "82728499"
 
 |Заголовок|Описание|
 |-----------|-----------------|
-|[Выбор класса коллекции](../../../docs/standard/collections/selecting-a-collection-class.md)|Описывает различные коллекций и содержит сведения по выбору коллекции, соответствующей сценарию пользователя.|
-|[Часто используемые типы коллекций](../../../docs/standard/collections/commonly-used-collection-types.md)|Описывает часто используемые типы универсальных и неуниверсальных коллекций, таких как <xref:System.Array?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> и <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.|
-|[Когда следует использовать универсальные коллекции](../../../docs/standard/collections/when-to-use-generic-collections.md)|Рассматривает использование типов универсальных коллекций.|
-|[Сравнение и сортировка в коллекциях](../../../docs/standard/collections/comparisons-and-sorts-within-collections.md)|Описывает использование проверок равенства и сортировки в коллекциях.|
-|[Отсортированные типы коллекций](../../../docs/standard/collections/sorted-collection-types.md)|Описывает производительность и характеристики отсортированных коллекций.|
-|[Типы коллекций Hashtable и Dictionary](../../../docs/standard/collections/hashtable-and-dictionary-collection-types.md)|Описывает возможности универсальных и неуниверсальных типов словарей на основе хэша.|
-|[Потокобезопасные коллекции](../../../docs/standard/collections/thread-safe/index.md)|Описывает типы коллекций, такие как <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> и <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType>, поддерживающие безопасный и эффективный одновременный доступ из нескольких потоков.|
+|[Выбор класса коллекции](selecting-a-collection-class.md)|Описывает различные коллекций и содержит сведения по выбору коллекции, соответствующей сценарию пользователя.|
+|[Часто используемые типы коллекций](commonly-used-collection-types.md)|Описывает часто используемые типы универсальных и неуниверсальных коллекций, таких как <xref:System.Array?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> и <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.|
+|[Когда следует использовать универсальные коллекции](when-to-use-generic-collections.md)|Рассматривает использование типов универсальных коллекций.|
+|[Сравнение и сортировка в коллекциях](comparisons-and-sorts-within-collections.md)|Описывает использование проверок равенства и сортировки в коллекциях.|
+|[Отсортированные типы коллекций](sorted-collection-types.md)|Описывает производительность и характеристики отсортированных коллекций.|
+|[Типы коллекций Hashtable и Dictionary](hashtable-and-dictionary-collection-types.md)|Описывает возможности универсальных и неуниверсальных типов словарей на основе хэша.|
+|[Потокобезопасные коллекции](thread-safe/index.md)|Описывает типы коллекций, такие как <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> и <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType>, поддерживающие безопасный и эффективный одновременный доступ из нескольких потоков.|
 |System.Collections.Immutable|Приводятся вводные сведения о неизменяемых коллекциях и ссылки на типы коллекций.|
 
 <a name="BKMK_Reference"></a>
