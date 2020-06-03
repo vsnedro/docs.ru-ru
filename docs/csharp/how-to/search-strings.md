@@ -39,13 +39,13 @@ ms.locfileid: "81121496"
 
 Класс <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> можно использовать для поиска строк. Такой поиск может отличаться по сложности от самых простых до очень сложных текстовых шаблонов.
 
-В следующем примере кода выполняется поиск слов "the" и "their" в предложении без учета регистра. Статический метод <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> выполняет поиск. В метод передается строка и шаблон поиска. В нашем примере третий аргумент задает поиск без учета регистра. Дополнительные сведения см. в разделе <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.  
+В следующем примере кода выполняется поиск слов "the" и "their" в предложении без учета регистра. Статический метод <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> выполняет поиск. В метод передается строка и шаблон поиска. В нашем примере третий аргумент задает поиск без учета регистра. Для получения дополнительной информации см. <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.  
 
 Шаблон поиска описывает текст для поиска. Следующая таблица описывает каждый элемент шаблона поиска. (В таблице ниже используется одинарный символ `\`, который в строке на языке C# необходимо экранировать как `\\`.)
 
 | pattern  | Значение     |
 | -------- |-------------|
-| the      | соответствует тексту "the" |
+| мыши      | соответствует тексту "the" |
 | (eir)?   | Соответствует 0 или 1 вхождению "eir" |
 | \s       | Соответствует пробелу.    |
   
@@ -74,7 +74,7 @@ ms.locfileid: "81121496"
 
 Вы можете оценить эти примеры, просмотрев код в нашем [репозитории GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Или можете загрузить образцы [в ZIP-файле](../../../samples/snippets/csharp/how-to/strings.zip).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../programming-guide/index.md)
 - [Строки](../programming-guide/strings/index.md)

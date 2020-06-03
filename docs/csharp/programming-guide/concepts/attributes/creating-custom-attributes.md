@@ -63,7 +63,7 @@ class SampleClass
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Reflection>
 - [Руководство по программированию на C#](../../index.md)

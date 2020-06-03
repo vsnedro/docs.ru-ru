@@ -57,7 +57,7 @@ The keyword new is required on 'MyDerivedC.x' because it hides inherited member 
 
 Дополнительные сведения см. в разделе [Модификатор new](~/_csharplang/spec/classes.md#the-new-modifier) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

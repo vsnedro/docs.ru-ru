@@ -165,7 +165,7 @@ Throw New StudentNotFoundException("The student cannot be found.", "John")
     > [!NOTE]
     > Если имя проекта — `TestProject`, а файл ресурсов *ExceptionMessages.resx* находится в папке *Ресурсы* проекта, полное имя файла ресурсов — `TestProject.Resources.ExceptionMessages`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Как создать пользовательские исключения](how-to-create-user-defined-exceptions.md)
 - [Создание вспомогательных сборок для приложений для настольных систем](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md)

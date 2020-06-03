@@ -13,7 +13,7 @@ ms.locfileid: "81463666"
 
 **Эта статья относится к следующему** ✔️ SDK для .NET Core 2.2 и более поздних версий
 
-## <a name="name"></a>Имя
+## <a name="name"></a>name
 
 `dotnet list package` — перечисляет ссылки на пакет для проекта или решения.
 
@@ -28,7 +28,7 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
 dotnet list package -h|--help
 ```
 
-## <a name="description"></a>Описание:
+## <a name="description"></a>Описание
 
 Команду `dotnet list package` удобно использовать для получения списка всех ссылок на пакеты NuGet для определенного проекта или решения. Сначала нужно создать проект, чтобы получить ресурсы, необходимые для обработки этой командой. В следующем примере показаны выходные данные команды `dotnet list package` для проекта [SentimentAnalysis](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis):
 
@@ -80,7 +80,7 @@ Project 'HelloPlugin' has the following package references
 
 - **`--framework <FRAMEWORK>`**
 
-  Отображает только пакеты для указанной [целевой платформы](../../standard/frameworks.md). Чтобы указать несколько платформ, задайте параметр несколько раз. Пример: `--framework netcoreapp2.2 --framework netstandard2.0`.
+  Отображает только пакеты для указанной [целевой платформы](../../standard/frameworks.md). Чтобы указать несколько платформ, задайте параметр несколько раз. Например, `--framework netcoreapp2.2 --framework netstandard2.0`.
 
 - **`-h|--help`**
 

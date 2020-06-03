@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, creating dataflow pipeline
 ms.assetid: 69308f82-aa22-4ac5-833d-e748533b58e8
-ms.openlocfilehash: 339365381b1fa2c777cead3c75bfe783f7af800e
-ms.sourcegitcommit: 961ec21c22d2f1d55c9cc8a7edf2ade1d1fd92e3
+ms.openlocfilehash: cfe3296815dc344b0d9d1f7bad1ab4a130380e2b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80588288"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284615"
 ---
 # <a name="walkthrough-creating-a-dataflow-pipeline"></a>Пошаговое руководство. Создание конвейера потока данных
 Чтобы получать сообщения из блоков источника, можно использовать методы <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Receive%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive%2A?displayProperty=nameWithType> или же объединить блоки сообщений в *конвейер потока данных*. Конвейер потока данных — это цепочка компонентов, или *блоков потока данных*, каждый из которых выполняет конкретную задачу в рамках более крупной цели. Каждый блок потока данных в конвейере потока данных выполняет работу, когда получает сообщение от другого блока потока данных. Можно сравнить это с линией сборки автомобилей. Как при продвижении автомобиля по сборочной линии одна станция собирает раму, следующая — устанавливает двигатель и так далее. Так как при этом можно собирать одновременно много автомобилей, линия сборки обеспечивает большую производительность, чем полная сборка автомобилей по одному.
@@ -34,8 +34,8 @@ ms.locfileid: "80588288"
   
 6. Подождите, пока конвейер не завершит всю работу.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Прежде чем начать выполнение этого пошагового руководства, ознакомьтесь с документом [Поток данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md).  
+## <a name="prerequisites"></a>Предварительные требования  
+ Прежде чем начать выполнение этого пошагового руководства, ознакомьтесь с документом [Поток данных](dataflow-task-parallel-library.md).  
   
 ## <a name="creating-a-console-application"></a>Создание консольного приложения  
  В Visual Studio создайте проект "Консольное приложение" на Visual C# или Visual Basic. Установите пакет System.Threading.Tasks.Dataflow NuGet.
@@ -53,7 +53,7 @@ ms.locfileid: "80588288"
  [!code-csharp[TPLDataflow_Palindromes#3](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_palindromes/cs/dataflowpalindromes.cs#3)]
  [!code-vb[TPLDataflow_Palindromes#3](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_palindromes/vb/dataflowpalindromes.vb#3)]  
   
-|Участник|Type|Описание:|  
+|Член|Type|Описание|  
 |------------|----------|-----------------|  
 |`downloadString`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|Загружает текст книги из Интернета.|  
 |`createWordList`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|Разбивает текст книги на массив слов.|  
@@ -101,13 +101,13 @@ ms.locfileid: "80588288"
  [!code-csharp[TPLDataflow_Palindromes#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_palindromes/cs/dataflowpalindromes.cs#1)]
  [!code-vb[TPLDataflow_Palindromes#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_palindromes/vb/dataflowpalindromes.vb#1)]  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Следующие шаги  
  В этом примере один url-адрес отправляется на обработку через конвейер потока данных. Если через конвейер отправляется более одного входного значения, можно внедрить в приложении форму параллелизма, которая напоминает перемещение деталей по автомобильному заводу. Когда первая часть конвейера отправляет свой результат второй части, она может обрабатывать другой элемент параллельно с тем, как вторая часть обрабатывает первый результат.  
   
  Параллелизм, достигаемый за счет применения конвейеров потока данных, обозначается как *грубый параллелизм*, поскольку он включает небольшое количество крупных задач. Можно также использовать более *точный параллелизм*, включив в конвейер потока данных задачи меньшего размера, выполняющиеся быстрее. В этот пример конвейера включен элемент `findReversedWords`, который использует метод [PLINQ](introduction-to-plinq.md) для параллельной обработки нескольких элементов в списке работ. Использование точного параллелизма в конвейере с несколькими крупными функциями может повысить общую пропускную способность.  
   
- Вы также можете подсоединить блок-источник потока данных к нескольким целевым блокам для создания *сети потока данных*. Перегруженная версия метода <xref:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo%2A> принимает объект <xref:System.Predicate%601>, который определяет, примет ли целевой объект сообщение, основываясь на его значении. Большинство типов блоков потока данных, выполняющих роль источников, предлагают сообщения всем подключенным целевым блокам в порядке их подсоединения, пока один из блоков не примет это сообщение. С помощью этого механизма фильтрации можно создавать системы связанных блоков потока данных, которые будут направлять определенные по одному пути, а другие данные — по другому пути. Пример с использованием фильтрации для создания сети потока данных, см. в статье [Пошаговое руководство. Использование потоков данных в приложении Windows Forms](../../../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md).  
+ Вы также можете подсоединить блок-источник потока данных к нескольким целевым блокам для создания *сети потока данных*. Перегруженная версия метода <xref:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo%2A> принимает объект <xref:System.Predicate%601>, который определяет, примет ли целевой объект сообщение, основываясь на его значении. Большинство типов блоков потока данных, выполняющих роль источников, предлагают сообщения всем подключенным целевым блокам в порядке их подсоединения, пока один из блоков не примет это сообщение. С помощью этого механизма фильтрации можно создавать системы связанных блоков потока данных, которые будут направлять определенные по одному пути, а другие данные — по другому пути. Пример, использующий фильтрацию для создания сети потока данных, см. в статье [Пошаговое руководство. Использование потока данных в приложении Windows Forms](walkthrough-using-dataflow-in-a-windows-forms-application.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Поток данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Поток данных](dataflow-task-parallel-library.md)

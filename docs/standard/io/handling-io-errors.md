@@ -55,12 +55,12 @@ ms.locfileid: "81242677"
 | <xref:System.OperationCanceledException> | Да | Да |
 | <xref:System.UnauthorizedAccessException> | Да | Да |
 | <xref:System.ArgumentException> | .NET Core 2.0 или более ранняя версия| Да |
-| <xref:System.NotSupportedException> | нет | Да |
-| <xref:System.Security.SecurityException> | нет | Только для ограниченного доверия |
+| <xref:System.NotSupportedException> | Нет | Да |
+| <xref:System.Security.SecurityException> | Нет | Только для ограниченного доверия |
 
 ## <a name="handling-ioexception"></a>Обработка IOException
 
-<xref:System.IO> является базовым классом для исключений в пространстве имен <xref:System.IO.IOException> и создается для любого кода ошибки, который не имеет сопоставления с определенным типом исключения. Это означает, что оно может появиться в любой операции ввода-вывода.
+<xref:System.IO.IOException> является базовым классом для исключений в пространстве имен <xref:System.IO> и создается для любого кода ошибки, который не имеет сопоставления с определенным типом исключения. Это означает, что оно может появиться в любой операции ввода-вывода.
 
 > [!IMPORTANT]
 > Так как <xref:System.IO.IOException> является базовым классом для других типов исключений в пространстве имен <xref:System.IO>, его нужно обрабатывать в блоке `catch` после обработки других исключений, связанных с вводом-выводом.
@@ -71,7 +71,7 @@ ms.locfileid: "81242677"
 
 В случае с <xref:System.IO.IOException> дополнительные сведения об ошибке можно получить из свойства [IOException.HResult](xref:System.Exception.HResult). Чтобы преобразовать значение HResult в код ошибки Win32, отбросьте верхние 16 бит из 32-разрядного значения. В приведенной ниже таблице перечислены коды ошибок, которые могут быть заключены в <xref:System.IO.IOException>.
 
-| HResult | Константа | Описание: |
+| HResult | Константа | Описание |
 | --- | --- | --- |
 | ERROR_SHARING_VIOLATION | 32 | Отсутствует имя файла, или файл или каталог уже используется. |
 | ERROR_FILE_EXISTS | 80 | Файл уже существует. |
@@ -83,7 +83,7 @@ ms.locfileid: "81242677"
 [!code-csharp[io-exception-handling](~/samples/snippets/standard/io/io-exceptions/cs/io-exceptions.cs)]
 [!code-vb[io-exception-handling](~/samples/snippets/standard/io/io-exceptions/vb/io-exceptions.vb)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обработка и создание исключений в .NET](../exceptions/index.md)
 - [Обработка исключений (библиотека параллельных задач)](../parallel-programming/exception-handling-task-parallel-library.md)

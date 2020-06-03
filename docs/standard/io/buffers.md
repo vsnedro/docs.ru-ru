@@ -51,8 +51,8 @@ ms.locfileid: "81739621"
 
 <xref:System.Buffers.ReadOnlySequence%601> — это структура, которая может представлять смежную или несмежную последовательность `T`. Она может состоять из следующих компонентов:
 
-1. `T[]`;
-1. `ReadOnlyMemory<T>`;
+1. `T[]`
+1. `ReadOnlyMemory<T>`
 1. Пара узла связанного списка <xref:System.Buffers.ReadOnlySequenceSegment%601> и индекса, представляющая начальную и конечную позицию последовательности.
 
 Третье представление является наиболее интересным, так как оно влияет на производительность различных операций с `ReadOnlySequence<T>`.
@@ -156,7 +156,7 @@ SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data) => bu
 
 ## <a name="sequencereadert"></a>SequenceReader\<T\>
 
-<xref:System.Buffers.SequenceReader%601>:
+<xref:System.Buffers.SequenceReader%601>.
 
 - Новый тип, который появился в .NET Core 3.0. Он позволяет упростить обработку `ReadOnlySequence<T>`.
 - Обобщает различия между `ReadOnlySequence<T>` с одним сегментом и `ReadOnlySequence<T>` с несколькими сегментами.
