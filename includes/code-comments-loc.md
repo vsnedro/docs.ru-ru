@@ -6,4 +6,4 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/15/2020
 ms.locfileid: "77627401"
 ---
-<span data-ttu-id="858e4-101">Если вы хотите увидеть комментарии к коду, переведенные на языки, отличные от английского, сообщите нам на странице [обсуждения этой проблемы на сайте GitHub](https://github.com/MicrosoftDocs/feedback/issues/2515).</span><span class="sxs-lookup"><span data-stu-id="858e4-101">If you would like to see code comments translated to languages other than English, let us know in [this GitHub discussion issue](https://github.com/MicrosoftDocs/feedback/issues/2515).</span></span>
+<span data-ttu-id="75903-101">Если вы хотите увидеть комментарии к коду, переведенные на языки, отличные от английского, сообщите нам на странице [обсуждения этой проблемы на сайте GitHub](https://github.com/MicrosoftDocs/feedback/issues/2515).</span><span class="sxs-lookup"><span data-stu-id="75903-101">If you would like to see code comments translated to languages other than English, let us know in [this GitHub discussion issue](https://github.com/MicrosoftDocs/feedback/issues/2515).</span></span>
