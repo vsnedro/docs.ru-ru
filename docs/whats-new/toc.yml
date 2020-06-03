@@ -4,6 +4,8 @@
   items:
     - name: 2020
       items:
+        - name: Май
+          href: dotnet-2020-05.md
         - name: Апрель
           href: dotnet-2020-04.md
         - name: Март
@@ -16,5 +18,3 @@
       items:
         - name: Декабрь
           href: 2019-12.md
-        - name: Ноябрь
-          href: 2019-11.md
