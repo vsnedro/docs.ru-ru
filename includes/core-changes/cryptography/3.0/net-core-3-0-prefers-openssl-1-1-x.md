@@ -20,7 +20,7 @@ ms.locfileid: "83720959"
 
 #### <a name="version-introduced"></a>Представленная версия
 
-3,0
+3.0
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
