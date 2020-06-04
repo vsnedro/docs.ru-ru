@@ -2,12 +2,12 @@
 title: Для режима открытия файла не было задано правильное значение
 ms.date: 07/20/2015
 ms.assetid: 969541f6-9ff6-4804-ba61-0d17370060ef
-ms.openlocfilehash: e6dfae9b9bbe374b6779ea32a4653b6fbb81d89d
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 3eb41670ef5a45959588f5b22cae4bfc1a0a4b6c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64624896"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84358429"
 ---
 # <a name="files-open-mode-wasnt-set-to-a-valid-value"></a>Для режима открытия файла не было задано правильное значение
 Значение, указанное для режима открытия файла, недопустимо. В следующей таблице показаны допустимые значения перечисления <xref:Microsoft.VisualBasic.OpenMode> .  
@@ -24,8 +24,8 @@ ms.locfileid: "64624896"
   
 - Убедитесь, что для режима открытия файла указывается значение.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
-- [Чтение из файлов](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
-- [Запись в файлы](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+- [My. Computer. FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+- [Чтение из файлов](../developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Запись в файлы](../developing-apps/programming/drives-directories-files/writing-to-files.md)

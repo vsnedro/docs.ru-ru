@@ -5,18 +5,18 @@ helpviewer_keywords:
 - calling extension methods [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: df07750f-40f4-4c07-a79e-1113a27cfbea
-ms.openlocfilehash: a19705a8f90833d48869df26a18d19b0ad1488e0
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 54419c99ae08c9ca2e3cfa86993dc99bc02bbb64
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74340396"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84388664"
 ---
 # <a name="how-to-call-an-extension-method-visual-basic"></a>Практическое руководство. Вызов метода расширения (Visual Basic)
 
 Методы расширения позволяют добавлять методы в существующий класс. После объявления и включения в область действия метода расширения можно вызвать его как метод экземпляра типа, который он расширяет. Дополнительные сведения о написании метода расширения см. [в разделе как написать метод расширения](./how-to-write-an-extension-method.md).
 
- Следующие инструкции относятся к методу расширения `PrintAndPunctuate`, в котором будет отображаться экземпляр строки, вызывающий его, а затем значение, переданное в качестве второго параметра, `punc`.
+ Следующие инструкции относятся к методу расширения `PrintAndPunctuate` , который отображает экземпляр строки, который вызывает его, за которым следует любое значение, отправляемое для второго параметра `punc` .
 
 ```vb
 Imports System.Runtime.CompilerServices
@@ -35,19 +35,19 @@ End Module
 
 ### <a name="to-call-an-extension-method"></a>Вызов метода расширения
 
-1. Объявите переменную с типом данных первого параметра метода расширения. Для `PrintAndPunctuate`требуется <xref:System.String>ая переменная:
+1. Объявите переменную с типом данных первого параметра метода расширения. Для необходимо `PrintAndPunctuate` иметь <xref:System.String> переменную:
 
     ```vb
     Dim example = "Ready"
     ```
 
-2. Эта переменная вызывает метод расширения, и его значение привязывается к первому параметру, `aString`. В следующем вызывающем операторе будет отображаться `Ready?`.
+2. Эта переменная вызывает метод расширения, и его значение привязывается к первому параметру, `aString` . Отобразится следующая инструкция вызова `Ready?` .
 
     ```vb
     example.PrintAndPunctuate("?")
     ```
 
-     Обратите внимание, что вызов этого метода расширения выглядит так же, как вызов любого метода экземпляра <xref:System.String>, для которого требуется один параметр:
+     Обратите внимание, что вызов этого метода расширения выглядит так же, как вызов любого метода <xref:System.String> экземпляра, для которого требуется один параметр:
 
     ```vb
     example.EndsWith("dy")
@@ -61,7 +61,7 @@ End Module
     example2.PrintAndPunctuate("!!!")
     ```
 
-     Результат в это время: `or not!!!`.
+     Результат в этом случае: `or not!!!` .
 
 ## <a name="example"></a>Пример
  Следующий код является полным примером создания и использования простого метода расширения.
@@ -95,8 +95,8 @@ End Module
 ' Goodbye?
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Написание метода расширения](./how-to-write-an-extension-method.md)
 - [Методы расширения](./extension-methods.md)
-- [Область в Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+- [Область видимости в Visual Basic](../declared-elements/scope.md)

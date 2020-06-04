@@ -1,15 +1,15 @@
 ---
-title: Объекты
+title: объекты.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - objects [Visual Basic]
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
-ms.openlocfilehash: 2108e36956ada98e48e6ab05cec56dbf2a12b3dd
-ms.sourcegitcommit: a4f9b754059f0210e29ae0578363a27b9ba84b64
+ms.openlocfilehash: e927f69b7606866a0a9e8eadd59270f51ffc5e2b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74838264"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414223"
 ---
 # <a name="objects-visual-basic"></a>Объекты (Visual Basic)
 В этом разделе приводятся ссылки на другие разделы, содержащие описание объектов времени выполнения Visual Basic и таблицы процедур, свойств и событий их элементов.  
@@ -35,16 +35,16 @@ ms.locfileid: "74838264"
 |`My.Computer.Network` (<xref:Microsoft.VisualBasic.Devices.Network>)|Включает свойство, событие и методы для взаимодействия с сетью, к которой подключен компьютер.|  
 |`My.Computer.Ports` (<xref:Microsoft.VisualBasic.Devices.Ports>)|Предлагает свойство и метод для доступа к последовательным портам компьютера.|  
 |`My.Computer.Registry` (<xref:Microsoft.VisualBasic.MyServices.RegistryProxy>)|Включает свойства и методы для управления реестром.|  
-|[Объект My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.md)|Предлагает свойства для доступа к экземпляру каждой формы Windows Forms, объявленной в текущем проекте.|  
+|[Объект My.Forms](my-forms-object.md)|Предлагает свойства для доступа к экземпляру каждой формы Windows Forms, объявленной в текущем проекте.|  
 |`My.Log` (<xref:Microsoft.VisualBasic.Logging.AspLog>)|Включает свойство и методы для записи сведений о событиях и исключениях в прослушивателе журнала для веб-приложений.|  
-|[Объект My.Request](../../../visual-basic/language-reference/objects/my-request-object.md)|Возвращает объект <xref:System.Web.HttpRequest> для запрашиваемой страницы. Объект `My.Request` содержит сведения о текущем HTTP-запросе.<br /><br /> Объект `My.Request` доступен только для приложений ASP.NET.|  
-|[Объект My.Resources](../../../visual-basic/language-reference/objects/my-resources-object.md)|Содержит свойства и классы для доступа к ресурсам приложения.|  
-|[Объект My.Response](../../../visual-basic/language-reference/objects/my-response-object.md)|Возвращает объект <xref:System.Web.HttpResponse>, связанный с <xref:System.Web.UI.Page>. Этот объект позволяет отправлять клиенту данные HTTP-ответа и содержит сведения об этом ответе.<br /><br /> Объект `My.Response` доступен только для приложений ASP.NET.|  
-|[Объект My.Settings](../../../visual-basic/language-reference/objects/my-settings-object.md)|Включает свойства и методы для доступа к параметрам приложения.|  
+|[Объект My.Request](my-request-object.md)|Возвращает объект <xref:System.Web.HttpRequest> для запрашиваемой страницы. Объект `My.Request` содержит сведения о текущем HTTP-запросе.<br /><br /> Объект `My.Request` доступен только для приложений ASP.NET.|  
+|[Объект My.Resources](my-resources-object.md)|Содержит свойства и классы для доступа к ресурсам приложения.|  
+|[Объект My.Response](my-response-object.md)|Возвращает объект <xref:System.Web.HttpResponse>, связанный с <xref:System.Web.UI.Page>. Этот объект позволяет отправлять клиенту данные HTTP-ответа и содержит сведения об этом ответе.<br /><br /> Объект `My.Response` доступен только для приложений ASP.NET.|  
+|[Объект My.Settings](my-settings-object.md)|Включает свойства и методы для доступа к параметрам приложения.|  
 |`My.User` (<xref:Microsoft.VisualBasic.ApplicationServices.User>)|Предоставляет доступ к сведениям о текущем пользователе.|  
-|[Объект My.WebServices](../../../visual-basic/language-reference/objects/my-webservices-object.md)|Предлагает свойства для создания экземпляров каждой веб-службы, на которую ссылается текущий проект, а также для доступа к этим экземплярам.|  
+|[Объект My.WebServices](my-webservices-object.md)|Предлагает свойства для создания экземпляров каждой веб-службы, на которую ссылается текущий проект, а также для доступа к этим экземплярам.|  
 |<xref:Microsoft.VisualBasic.FileIO.TextFieldParser>|Предоставляет методы и свойства для анализа структурированных текстовых файлов.|  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Справочник по языку Visual Basic](../../../visual-basic/language-reference/index.md)
+- [Справочник по языку Visual Basic](../index.md)

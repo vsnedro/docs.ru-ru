@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BC30036
 ms.assetid: b2c83de9-a132-449a-870b-e7c409d4d7ee
-ms.openlocfilehash: f2d7a025fd18c5655caea4ae45477798425d9ece
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: c11c78292301cf837ec8d4003b6434cd968abe16
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64661792"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84387352"
 ---
 # <a name="overflow-visual-basic-error"></a>Переполнение (ошибка Visual Basic)
-Литерал представляет собой значение, выходящее за пределы типа данных, к которому он назначен.  
+Литерал представляет значение за пределами ограничений типа данных, которым он присваивается.  
   
  **Идентификатор ошибки:** BC30036  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Сверьтесь с диапазоном значений для целевого типа данных и перепишите литерал для обеспечения соответствия для этого диапазона.  
+- Просмотрите диапазон значений для целевого типа данных и перепишите литерал, чтобы он соответствовал этому диапазону.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы данных](../../../visual-basic/language-reference/data-types/index.md)
+- [Типы данных](../data-types/index.md)

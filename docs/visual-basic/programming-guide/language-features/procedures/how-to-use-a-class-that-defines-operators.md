@@ -11,12 +11,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
-ms.openlocfilehash: 455c839702b90738ec5aea37c1b09d72eba42ff4
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: fe15e976e6a5469f2a9d1b3521a70a3e1860fdd3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75347889"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414354"
 ---
 # <a name="how-to-use-a-class-that-defines-operators-visual-basic"></a>Практическое руководство. Использование класса, в котором определяются операторы (Visual Basic)
 При использовании класса или структуры, определяющей собственные операторы, можно получить доступ к этим операторам из Visual Basic.  
@@ -24,30 +24,30 @@ ms.locfileid: "75347889"
  Определение оператора для класса или структуры также называется *перегрузкой* оператора.  
   
 ## <a name="example"></a>Пример  
- В следующем примере осуществляется доступ к структуре SQL <xref:System.Data.SqlTypes.SqlString>, которая определяет операторы преобразования ([Функция CType](../../../../visual-basic/language-reference/functions/ctype-function.md)) в обоих направлениях между строкой SQL и строкой Visual Basic. Используйте `CType(`*строковое выражение SQL*, `String)` для преобразования строки sql в Visual Basic строку и `CType(`*Visual Basic строкового выражения*<xref:System.Data.SqlTypes.SqlString>`)` для преобразования в другом направлении.  
+ В следующем примере осуществляется доступ к структуре SQL <xref:System.Data.SqlTypes.SqlString> , которая определяет операторы преобразования ([Функция CType](../../../language-reference/functions/ctype-function.md)) в обоих направлениях между строкой SQL и строкой Visual Basic. Используйте `CType(` *строковое выражение SQL*, `String)` чтобы преобразовать строку SQL в Visual Basic строку и `CType(` *Visual Basic строковое выражение* <xref:System.Data.SqlTypes.SqlString> `)` для преобразования в другом направлении.  
   
  [!code-vb[VbVbcnProcedures#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#30)]  
   
  [!code-vb[VbVbcnProcedures#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#31)]  
   
- Структура <xref:System.Data.SqlTypes.SqlString> определяет оператор преобразования ([функцию CType](../../../../visual-basic/language-reference/functions/ctype-function.md)) от `String` до <xref:System.Data.SqlTypes.SqlString>, а другой — от <xref:System.Data.SqlTypes.SqlString> до `String`. Инструкция, которая присваивает `title` `jobTitle` использует первый оператор, а <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> вызов функции использует второй метод.  
+ <xref:System.Data.SqlTypes.SqlString>Структура определяет оператор преобразования ([Функция CType](../../../language-reference/functions/ctype-function.md)) из `String` в <xref:System.Data.SqlTypes.SqlString> и другой из <xref:System.Data.SqlTypes.SqlString> в `String` . Инструкция, которая назначается `title` для `jobTitle` использования первого оператора, а <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> вызов функции использует второй.  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
- Убедитесь, что используемый класс или структура определяет оператор, который вы хотите использовать. Не следует считать, что класс или структура определили все операторы, доступные для перегрузки. Список доступных операторов см. в разделе Оператор [operator](../../../../visual-basic/language-reference/statements/operator-statement.md).  
+ Убедитесь, что используемый класс или структура определяет оператор, который вы хотите использовать. Не следует считать, что класс или структура определили все операторы, доступные для перегрузки. Список доступных операторов см. в разделе Оператор [operator](../../../language-reference/statements/operator-statement.md).  
   
- Включите соответствующую инструкцию `Imports` для строки SQL в начало исходного файла (в данном случае <xref:System.Data.SqlTypes>).  
+ Включите соответствующую `Imports` инструкцию для строки SQL в начало исходного файла (в данном случае <xref:System.Data.SqlTypes> ).  
   
  Проект должен иметь ссылки на System. Data и System. XML.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры операторов](./operator-procedures.md)
 - [Практическое руководство. Определение оператора](./how-to-define-an-operator.md)
 - [Практическое руководство. Определение оператора преобразования](./how-to-define-a-conversion-operator.md)
 - [Практическое руководство. Вызов процедуры оператора](./how-to-call-an-operator-procedure.md)
-- [Расширение](../../../../visual-basic/language-reference/modifiers/widening.md)
-- [Narrowing](../../../../visual-basic/language-reference/modifiers/narrowing.md)
-- [Оператор Structure](../../../../visual-basic/language-reference/statements/structure-statement.md)
-- [Практическое руководство. Объявление структуры](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
-- [Явные и неявные преобразования](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
-- [Расширяющие и сужающие преобразования](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Widening](../../../language-reference/modifiers/widening.md)
+- [Narrowing](../../../language-reference/modifiers/narrowing.md)
+- [Оператор Structure](../../../language-reference/statements/structure-statement.md)
+- [Практическое руководство. Объявление структуры](../data-types/how-to-declare-a-structure.md)
+- [Явные и неявные преобразования](../data-types/implicit-and-explicit-conversions.md)
+- [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md)
