@@ -2,19 +2,19 @@
 title: Классификация стандартных операторов запросов по способу выполнения
 ms.date: 07/20/2015
 ms.assetid: 7f55b0be-9f6e-44f8-865c-6afbea50cc54
-ms.openlocfilehash: edace870ea684c70bbf2768c44388f2236622c2c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: e1ba5d8bdc2b7a521a11ca5c055323fde4bcb9d9
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345713"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410907"
 ---
 # <a name="classification-of-standard-query-operators-by-manner-of-execution-visual-basic"></a>Классификация стандартных операторов запросов по способу выполнения (Visual Basic)
 В реализации LINQ to Objects выполнение методов стандартных операторов запросов бывает немедленным и отложенным. Операторы запросов, использующие отложенное выполнение, можно дополнительно разделить на две категории: потоковые и непотоковые. Если вы знаете, каким образом выполняются разные операторы запросов, это может помочь понять результаты, полученные из данного запроса. Это особенно справедливо при изменении источника данных или создании одного запроса поверх другого. В этом разделе представлена классификация стандартных операторов запросов по способу выполнения.  
   
 ## <a name="manners-of-execution"></a>Способ выполнения  
   
-### <a name="immediate"></a>Немедленный  
+### <a name="immediate"></a>Немедленно  
  Немедленное выполнение означает, что источник данных считывается и операция выполняется в той точке кода, где объявлен запрос. Все стандартные операторы запросов, возвращающие один, неперечислимый результат, выполняются немедленно.  
   
 ### <a name="deferred"></a>Отложено  
@@ -22,7 +22,7 @@ ms.locfileid: "74345713"
   
  Операторы запросов, использующие отложенное выполнение, можно дополнительно разделить на потоковые и непотоковые.  
   
-#### <a name="streaming"></a>Потоковые операторы  
+#### <a name="streaming"></a>Потоковая передача  
  Потоковые операторы не считывают все исходные данные до создания элементов. Во время выполнения потоковый оператор выполняет свою операцию с каждым исходным элементом по мере считывания и при необходимости создает элемент. Потоковый оператор продолжает считывание исходных элементов до того момента, когда можно будет создать итоговый элемент. Это означает, что для получения одного итогового элемента может быть считано несколько исходных элементов.  
   
 #### <a name="non-streaming"></a>Непотоковые  
@@ -87,9 +87,9 @@ ms.locfileid: "74345713"
 |<xref:System.Linq.Enumerable.Union%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
 |<xref:System.Linq.Enumerable.Where%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq.Enumerable>
-- [Общие сведения о стандартных операторах запроса (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
-- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
+- [Синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)](query-expression-syntax-for-standard-query-operators.md)
+- [LINQ to Objects (Visual Basic)](linq-to-objects.md)

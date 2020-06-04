@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID424
 ms.assetid: afdc660b-81a5-4c92-ac7e-9c3a3105fc16
-ms.openlocfilehash: a083ef1bf6f95f46f31786ba54476f54ce882cf2
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 4e0544ad7d570c31fc4308534b9b5c18b8b431b9
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349665"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409322"
 ---
 # <a name="object-required-visual-basic"></a>Требуется объект (Visual Basic)
 Для ссылок на свойства и методы часто требуется явный квалификатор объекта. Это так.  
@@ -24,6 +24,6 @@ ms.locfileid: "74349665"
   
 4. Проверьте документацию объекта и убедитесь, что действие допустимо.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы ошибок](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Типы ошибок](../../programming-guide/language-features/error-types.md)
