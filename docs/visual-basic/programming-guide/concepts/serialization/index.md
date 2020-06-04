@@ -2,12 +2,12 @@
 title: Сериализация
 ms.date: 07/20/2015
 ms.assetid: 67379a76-5465-4af8-a781-0b0b25a62d9a
-ms.openlocfilehash: 9ce97e541cb204b92663464e36d9e8f221ccc3f2
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: db14147a23940fa2403613036750be1bca566e8e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351918"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84413145"
 ---
 # <a name="serialization-visual-basic"></a>Сериализация (Visual Basic)
 Сериализация — это процесс преобразования объекта в поток байтов для сохранения или передачи в память, в базу данных или в файл. Эта операция предназначена для того, чтобы сохранить состояния объекта для последующего воссоздания при необходимости. Обратный процесс называется десериализацией.  
@@ -25,7 +25,7 @@ ms.locfileid: "74351918"
 ### <a name="making-an-object-serializable"></a>Превращение объекта в сериализуемый  
  Чтобы сериализовать объект, вам нужен сам этот объект, поток, который будет содержать объект, и класс <xref:System.Runtime.Serialization.Formatter>. Классы для сериализации и десериализации объектов содержатся в <xref:System.Runtime.Serialization>.  
   
- Примените к типу атрибут <xref:System.SerializableAttribute>, чтобы указать возможность сериализации экземпляров этого типа. Если в типе нет атрибута <xref:System.Runtime.Serialization.SerializationException> при попытке сериализации, выдается исключение <xref:System.SerializableAttribute>.  
+ Примените к типу атрибут <xref:System.SerializableAttribute>, чтобы указать возможность сериализации экземпляров этого типа. Если в типе нет атрибута <xref:System.SerializableAttribute> при попытке сериализации, выдается исключение <xref:System.Runtime.Serialization.SerializationException>.  
   
  Если вы не хотите, чтобы поле в классе было сериализуемым, примените атрибут <xref:System.NonSerializedAttribute>. Если поле сериализуемого типа содержит указатель, дескриптор или специальные структуры данных для определенной среды, и содержимое этого поле невозможно разумно воссоздать в другой среде, такое поле лучше сделать несериализуемым.  
   
@@ -58,12 +58,12 @@ ms.locfileid: "74351918"
 ## <a name="designer-serialization"></a>Сериализация конструктора  
  Сериализация конструктора — это особая форма сериализации, при которой применяется способ постоянного хранения объектов, обычно используемый в средствах разработки. Сериализация конструктора выполняет преобразование графа объекта в файл исходного кода, с помощью которого впоследствии можно восстановить граф объекта. Этот файл исходного кода может содержать программный код, разметку или даже информацию из таблицы SQL.  
   
-## <a name="BKMK_RelatedTopics"></a> Связанные разделы и примеры  
- [Walkthrough: Persisting an Object in Visual Studio (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md) (Пошаговое руководство. Сохранение объекта в Visual Studio (Visual Basic))  
+## <a name="related-topics-and-examples"></a><a name="BKMK_RelatedTopics"></a> Связанные разделы и примеры  
+ [Пошаговое руководство. Сохранение объекта в Visual Studio (Visual Basic)](walkthrough-persisting-an-object-in-visual-studio.md)  
  Демонстрирует, как с помощью сериализации сохранить данные объекта между экземплярами, чтобы сохранять значения и извлекать их при следующем создании экземпляра объекта.  
   
- [How to: Read Object Data from an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md) (Практическое руководство. Чтение данных объекта из XML-файла (Visual Basic))  
+ [How to: Read Object Data from an XML File (Visual Basic)](how-to-read-object-data-from-an-xml-file.md) (Практическое руководство. Чтение данных объекта из XML-файла (Visual Basic))  
  Показывает считывание данных объекта, которые ранее были записаны в XML-файл с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.  
   
- [How to: Write Object Data to an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md) (Практическое руководство. Запись данных объекта в XML-файл (Visual Basic))  
+ [How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md) (Практическое руководство. Запись данных объекта в XML-файл (Visual Basic))  
  Показывает, как записать объект из класса в XML-файл с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.

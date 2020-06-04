@@ -1,13 +1,13 @@
 ---
-title: Как создать документ с пространствами имен (LINQ to XML)
+title: Практическое руководство. Создание документа с пространствами имен (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: cc5b0d4d-360c-4ada-94fa-2d2916e989be
-ms.openlocfilehash: bbd23840b0356cf14d2c7d6cb71591fe6461a8bd
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a440c9d810798eb5ebd025a336cbb17fface23b4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74332582"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414638"
 ---
 # <a name="how-to-create-a-document-with-namespaces-linq-to-xml-visual-basic"></a>Практическое руководство. Создание документа с пространствами имен (LINQ to XML) (Visual Basic)
 В этом разделе описано, как создать документ с пространствами имен в Visual Basic.  
@@ -18,7 +18,7 @@ ms.locfileid: "74332582"
   
  Как пространства имен по умолчанию, так и пространства имен с префиксами можно задавать при помощи ключа `Imports`.  
   
- Дополнительные сведения см. [в разделе Введение в XML-литералы в Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-xml-literals.md).  
+ Дополнительные сведения см. [в разделе Введение в XML-литералы в Visual Basic](introduction-to-xml-literals.md).  
   
  Обратите внимание, что пространство имен XML по умолчанию применимо только к элементам, а не к атрибутам. Атрибуты по умолчанию никогда не находятся в пространстве имен. Однако можно использовать префикс пространства имен, чтобы ввести атрибут в пространство имен.  
   

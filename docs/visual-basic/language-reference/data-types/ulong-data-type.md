@@ -16,39 +16,39 @@ helpviewer_keywords:
 - ULong data type
 - UL literal type characters [Visual Basic]
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-ms.openlocfilehash: 3c6cd4086e08b808c158948756b4806f098196b9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ee9297ae917345d44d8e630bd09beea2245b56da
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79401319"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84415522"
 ---
-# <a name="ulong-data-type-visual-basic"></a>ULong тип данных (Visual Basic)
+# <a name="ulong-data-type-visual-basic"></a>Тип данных ULong (Visual Basic)
 
-Держит неподписанные 64-разрядные (8-байт) бесых в диапазоне от 0 до 18 446 744 073 709 551 615 (более 1,84 раза 10 и 19).
+Содержит 64-разрядные (8-байтные) целые числа без знака в диапазоне от 0 до 18446744073709551615 (более 1,84 раза больше 10 ^ 19).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Используйте `ULong` тип данных для хранения `UInteger`двоичных данных слишком большой для, или максимально возможных неподписанных значения бесчисленности.
+Используйте `ULong` тип данных для хранения двоичных данных, которые слишком велики для `UInteger` , или наибольшего возможного целого числа без знака.
 
 Значение по умолчанию для типа `ULong` — 0.
 
-## <a name="literal-assignments"></a>Литературные задания
+## <a name="literal-assignments"></a>Присваивания литералов
 
-Вы можете объявить `ULong` и инициализировать переменную, назначив ей десятичную буквальную, гексадецичную буквальную, октальную буквальную или (начиная с Visual Basic 2017) двоичный буквальный. Если целочисленный литерал выходит за пределы диапазона `ULong` (то есть, если он меньше <xref:System.UInt64.MinValue?displayProperty=nameWithType> или больше <xref:System.UInt64.MaxValue?displayProperty=nameWithType>), возникает ошибка компиляции.
+Можно объявить и инициализировать `ULong` переменную, назначив ей десятичный литерал, шестнадцатеричный литерал, Восьмеричный литерал или (начиная с Visual Basic 2017) двоичный литерал. Если целочисленный литерал выходит за пределы диапазона `ULong` (то есть, если он меньше <xref:System.UInt64.MinValue?displayProperty=nameWithType> или больше <xref:System.UInt64.MaxValue?displayProperty=nameWithType>), возникает ошибка компиляции.
 
 В следующем примере целые числа, равные 7 934 076 125 и представленные в виде десятичного, шестнадцатеричного и двоичного литерала, назначаются значениям `ULong`.
 
 [!code-vb[ULong](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#ULong)]
 
 > [!NOTE]
-> Вы используете `&h` приставку или `&H` для обозначения гексадецимального буквального, приставки `&b` или `&B` для `&o` `&O` обозначения двоичного буквального, и приставки или для обозначения октал буквального. У десятичных литералов префиксов нет.
+> Используйте префикс `&h` или `&H` , чтобы обозначить шестнадцатеричный литерал, префикс `&b` или `&B` обозначить двоичный литерал, а также префикс `&o` или `&O` обозначить Восьмеричный литерал. У десятичных литералов префиксов нет.
 
-Начиная с Visual Basic 2017, вы также `_`можете использовать символ подчеркивания, как цифровой сепаратор для повышения читаемости, как показано в следующем примере.
+Начиная с Visual Basic 2017, можно также использовать символ подчеркивания () в `_` качестве разделителя цифр, чтобы улучшить удобочитаемость, как показано в следующем примере.
 
 [!code-vb[ULong](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#LongS)]
 
-Начиная с Visual Basic 15.5, вы также`_`можете использовать символ подчеркивателя ( ) в качестве ведущего сепаратора между приставкой и гексадецичными, бинарными или октальными цифрами. Пример:
+Начиная с Visual Basic 15,5, можно также использовать символ подчеркивания () в `_` качестве начального разделителя между префиксом и шестнадцатеричными, двоичными или восьмеричными цифрами. Пример:
 
 ```vb
 Dim number As ULong = &H_F9AC_0326_1489_D68C
@@ -56,7 +56,7 @@ Dim number As ULong = &H_F9AC_0326_1489_D68C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Число в перечном виде `UL` `ul` может также включать `ULong` символ или [тип](../../programming-guide/language-features/data-types/type-characters.md) для обозначения типа данных, как показано в следующем примере.
+Числовые литералы также могут включать `UL` `ul` [символ типа](../../programming-guide/language-features/data-types/type-characters.md) или для обозначения `ULong` типа данных, как показано в следующем примере.
 
 ```vb
 Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
@@ -64,25 +64,25 @@ Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
 
 ## <a name="programming-tips"></a>Советы по программированию
 
-- **Отрицательные числа.** Поскольку `ULong` он является неподписанным типом, он не может представлять отрицательное число. Если вы используете необезыщаемый минус`-` `ULong`() оператора на выражение, которое оценивает вводить, Visual Basic преобразует выражение в `Decimal` первое.
+- **Отрицательные числа.** Так как `ULong` является неподписанным типом, он не может представлять отрицательное число. При использовании оператора унарного минуса ( `-` ) в выражении, результатом которого является тип `ULong` , Visual Basic преобразует выражение в `Decimal` First.
 
-- **Соответствие требованиям CLS.** Тип `ULong` данных не является частью [спецификации общего языка](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), поэтому код, совместимый с CLS, не может потреблять компонент, который его использует.
+- **Соответствие CLS.** `ULong`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications/standards/Ecma-335.htm) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
 
-- **Вопросы взаимодействия.** Если вы взаимосвязаны с компонентами, не записанными для рамочного соглашения .NET, например объектами Automation или COM, имейте в виду, что такие типы, как, `ulong` могут иметь различную ширину данных (32 бита) в других средах. Если вы передаете 32-битный аргумент такому `UInteger` компоненту, объявите его, а не `ULong` в управляемом коде Visual Basic.
+- **Вопросы взаимодействия.** Если вы взаимодействуете с компонентами, которые не написаны для .NET Framework, например автоматизации или COM-объекты, помните, что такие типы, как, `ulong` могут иметь разную ширину данных (32 бит) в других средах. При передаче аргумента 32-bit в такой компонент объявите его как `UInteger` вместо `ULong` в управляемом коде Visual Basic.
 
-  Кроме того, Automation не поддерживает 64-разрядные пакеты на Windows 95, Windows 98, Windows ME или Windows 2000. На этих платформах `ULong` невозможно передать элемент Visual Basic компоненту автоматизации.
+  Более того, Автоматизация не поддерживает 64-разрядные целые числа в Windows 95, Windows 98, Windows ME или Windows 2000. Невозможно передать `ULong` аргумент Visual Basic в компонент автоматизации на этих платформах.
 
-- **Расширение.** Тип `ULong` данных расширяется `Single`до `Double` `Decimal`, и . Это означает, `ULong` что вы можете преобразовать <xref:System.OverflowException?displayProperty=nameWithType> в любой из этих типов, не сталкиваясь с ошибкой.
+- **Расширяющие.** `ULong`Тип данных расширяется до `Decimal` , `Single` и `Double` . Это означает, что можно преобразовать `ULong` в любой из этих типов без возникновения <xref:System.OverflowException?displayProperty=nameWithType> ошибки.
 
-- **Тип символов.** Придаток символов `UL` буквального типа к буквальному `ULong` заставляет его типа данных. `ULong`не имеет символа типа идентификатора.
+- **Символы типа.** При добавлении символов типа литерала `UL` к литералу он применяет его к `ULong` типу данных. `ULong`не имеет символа типа идентификатора.
 
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.UInt64?displayProperty=nameWithType>.
 
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.UInt64>
-- [Типы данных](../../../visual-basic/language-reference/data-types/index.md)
-- [Функции преобразования типов](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Сводка по преобразованию](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
-- [Эффективное использование типов данных](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Типы данных](index.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Сводка по преобразованию](../keywords/conversion-summary.md)
+- [Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа](../../programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
+- [Эффективное использование типов данных](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - declared elements [Visual Basic], referencing
 - declared elements [Visual Basic], about declared elements
 ms.assetid: e39c0752-f19f-4d2e-a453-00df1b5fc7ee
-ms.openlocfilehash: 0915adbbabb778b1bdd3b6b30e56725a7e74867c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: c1f4c2fbf339358be77e76468b1db94616bf04a2
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345360"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84357236"
 ---
 # <a name="how-to-hide-a-variable-with-the-same-name-as-your-variable-visual-basic"></a>Практическое руководство. Сокрытие переменной с тем же именем, что и ваша переменная (Visual Basic)
 
@@ -25,7 +25,7 @@ ms.locfileid: "74345360"
 
 - **Затенение через область.** Это можно сделать с помощью области, переобъявляя ее в подобласти области, содержащей переменную, которую необходимо скрыть.
 
-- **Затенение посредством наследования.** Если переменная, которую нужно скрыть, определена на уровне класса, ее можно затенить с помощью наследования, повторно объявляя ее с помощью ключевого слова [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) в производном классе.
+- **Затенение посредством наследования.** Если переменная, которую нужно скрыть, определена на уровне класса, ее можно затенить с помощью наследования, повторно объявляя ее с помощью ключевого слова [Shadows](../../../language-reference/modifiers/shadows.md) в производном классе.
 
 ## <a name="two-ways-to-hide-a-variable"></a>Два способа скрыть переменную
 
@@ -36,13 +36,13 @@ ms.locfileid: "74345360"
     |Регион переменной|Допустимая подобласть для переопределения|
     |-----------------------|-------------------------------------------|
     |Модуль|Класс внутри модуля|
-    |Class|Подкласс в классе<br /><br /> Процедура в классе|
+    |Класс|Подкласс в классе<br /><br /> Процедура в классе|
 
-    Нельзя переопределить переменную процедуры в блоке внутри этой процедуры, например в конструкции `If`...`End If` или в цикле `For`.
+    Нельзя переопределить переменную процедуры в блоке внутри этой процедуры, например в `If` конструкции... `End If` или в `For` цикле.
 
 2. Создайте подобласть, если она еще не существует.
 
-3. В пределах подобласти напишите [оператор Dim](../../../../visual-basic/language-reference/statements/dim-statement.md) , объявляющий переменную с тенью.
+3. В пределах подобласти напишите [оператор Dim](../../../language-reference/statements/dim-statement.md) , объявляющий переменную с тенью.
 
     Если код внутри подобласти ссылается на имя переменной, компилятор разрешает ссылку на переменную с тенью.
 
@@ -68,9 +68,9 @@ ms.locfileid: "74345360"
     End Module
     ```
 
-    В предыдущем примере переменная объявляется `num` как на уровне модуля, так и на уровне процедуры (в процедуре `show`). Локальная переменная `num` затеняет переменную уровня модуля `num` в пределах `show`, поэтому локальной переменной присваивается значение 2. Однако в процедуре `useModuleLevelNum` нет локальной переменной для теневого `num`. Таким образом, `useModuleLevelNum` устанавливает значение переменной уровня модуля равным 1.
+    В предыдущем примере переменная объявляется `num` как на уровне модуля, так и на уровне процедуры (в процедуре `show` ). Локальная переменная `num` затеняет переменную уровня модуля `num` в `show` , поэтому локальной переменной присваивается значение 2. Однако нет локальной переменной для скрытия `num` в `useModuleLevelNum` процедуре. Поэтому `useModuleLevelNum` присваивает переменной уровня модуля значение 1.
 
-    `MsgBox` вызов в `show` обходит механизм теневого копирования путем уточнения `num` именем модуля. Таким образом, вместо локальной переменной отображается переменная уровня модуля.
+    `MsgBox`Вызов внутри `show` обходит механизм теневого копирования путем уточнения `num` именем модуля. Таким образом, вместо локальной переменной отображается переменная уровня модуля.
 
 #### <a name="to-hide-a-variable-by-shadowing-it-through-inheritance"></a>Скрытие переменной путем ее скрытия с помощью наследования
 
@@ -78,7 +78,7 @@ ms.locfileid: "74345360"
 
 2. Определите класс, производный от класса переменной, если он еще не существует.
 
-3. Внутри производного класса напишите оператор `Dim`, объявляющий переменную. Включите в объявление ключевое слово [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) .
+3. Внутри производного класса напишите оператор, `Dim` объявляющий переменную. Включите в объявление ключевое слово [Shadows](../../../language-reference/modifiers/shadows.md) .
 
     Если код в производном классе ссылается на имя переменной, компилятор разрешает ссылку на переменную.
 
@@ -99,19 +99,19 @@ ms.locfileid: "74345360"
     End Class
     ```
 
-    В предыдущем примере переменная объявляется `shadowString` в базовом классе и скрывается в производном классе. Процедура, `showStrings` в производном классе, отображает версию строки с тенью, если имя `shadowString` не является полным. Затем отображается затененная версия, если `shadowString` дополнено ключевым словом `MyBase`.
+    В предыдущем примере переменная объявляется `shadowString` в базовом классе и переобъявляется в производном классе. Процедура `showStrings` в производном классе отображает версию строки с тенью, если ее имя `shadowString` не является полным. После этого она отображает затененную версию, если `shadowString` дополнена `MyBase` ключевым словом.
 
 ## <a name="robust-programming"></a>Отказоустойчивость
 
 При затенении введено более одной версии переменной с тем же именем. Если инструкция Code ссылается на имя переменной, версия, на которую компилятор разрешает ссылку, зависит от таких факторов, как расположение инструкции Code и наличие подходящих строк. Это может увеличить риск обращения к непреднамеренной версии затененной переменной. Можно снизить этот риск, полностью подполняя все ссылки на затененную переменную.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Ссылки на объявленные элементы](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
-- [Затенение в Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
-- [Различия между затемнением и переопределением](../../../../visual-basic/programming-guide/language-features/declared-elements/differences-between-shadowing-and-overriding.md)
-- [Практическое руководство. Сокрытие наследуемой переменной](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-an-inherited-variable.md)
-- [Практическое руководство. Доступ к переменной, скрытой производным классом](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-access-a-variable-hidden-by-a-derived-class.md)
-- [Переопределения](../../../../visual-basic/language-reference/modifiers/overrides.md)
-- [Me, My, MyBase и MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
-- [Основы наследования](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [References to Declared Elements](references-to-declared-elements.md)
+- [Сокрытие в Visual Basic](shadowing.md)
+- [Различия между удаленным управлением и переопределением](differences-between-shadowing-and-overriding.md)
+- [Практическое руководство. Сокрытие наследуемой переменной](how-to-hide-an-inherited-variable.md)
+- [Практическое руководство. Доступ к переменной, скрытой производным классом](how-to-access-a-variable-hidden-by-a-derived-class.md)
+- [Переопределения](../../../language-reference/modifiers/overrides.md)
+- [Me, My, MyBase и MyClass](../../program-structure/me-my-mybase-and-myclass.md)
+- [Основы наследования](../objects-and-classes/inheritance-basics.md)

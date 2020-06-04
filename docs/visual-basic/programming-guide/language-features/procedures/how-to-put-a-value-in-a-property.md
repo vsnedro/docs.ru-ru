@@ -8,23 +8,23 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic], values
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
-ms.openlocfilehash: ad0d0e81f94dd3dead50f21c3bd6ff580c004dd6
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: c0fb3e137010390097a68aea161efcff93839d94
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346059"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414341"
 ---
 # <a name="how-to-put-a-value-in-a-property-visual-basic"></a>Практическое руководство. Запись значения в свойство (Visual Basic)
 Значение в свойстве сохраняется путем размещения имени свойства в левой части оператора присваивания.  
   
- Процедура `Set` свойства сохраняет значение, но не вызывается явно по имени. Свойство используется так же, как и переменная. Visual Basic выполняет вызовы процедур свойств.  
+ `Set`Процедура свойства сохраняет значение, но явно не вызывает его по имени. Свойство используется так же, как и переменная. Visual Basic выполняет вызовы процедур свойств.  
   
 ### <a name="to-store-a-value-in-a-property"></a>Сохранение значения в свойстве  
   
 1. Используйте имя свойства в левой части оператора присваивания.  
   
-     В следующем примере для свойства Visual Basic `TimeOfDay` задается значение полудня, неявно вызывающее его процедуру `Set`.  
+     В следующем примере свойству Visual Basic присваивается значение `TimeOfDay` полдень, неявное вызов его `Set` процедуры.  
   
      [!code-vb[VbVbcnProcedures#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#11)]  
   
@@ -34,15 +34,15 @@ ms.locfileid: "74346059"
   
 4. Значение, созданное в правой части оператора присваивания, хранится в свойстве.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>
 - [Процедуры свойств](./property-procedures.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
-- [Оператор Property](../../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../../../language-reference/statements/property-statement.md)
 - [Различия между свойствами и переменными в Visual Basic](./differences-between-properties-and-variables.md)
 - [Практическое руководство. Создание свойства](./how-to-create-a-property.md)
 - [Практическое руководство. Объявление свойства со смешанным уровнем доступа](./how-to-declare-a-property-with-mixed-access-levels.md)
 - [Практическое руководство. Вызов процедуры свойства](./how-to-call-a-property-procedure.md)
-- [Инструкции. объявление и вызов свойства по умолчанию в Visual Basic](./how-to-declare-and-call-a-default-property.md)
+- [Практическое руководство. Объявление и вызов свойства по умолчанию в Visual Basic](./how-to-declare-and-call-a-default-property.md)
 - [Практическое руководство. Получение значения из свойства](./how-to-get-a-value-from-a-property.md)

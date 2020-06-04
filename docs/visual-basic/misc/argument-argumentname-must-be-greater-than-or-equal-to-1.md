@@ -1,17 +1,17 @@
 ---
-title: Аргумент '<argumentname>' должно быть больше или равно 1
+title: Аргумент "<argumentname>" должен быть больше или равен 1
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_GEOne1
 ms.assetid: e7769937-5227-4530-89ca-3d6ffc505005
-ms.openlocfilehash: da5042efc692e2d3501d59c18df266d68aa46451
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 26328a6454ec6741244615a0c45c20bc0a834629
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62025149"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84412836"
 ---
-# <a name="argument-argumentname-must-be-greater-than-or-equal-to-1"></a>Аргумент '\<имя_аргумента >' должен быть больше или равно 1
+# <a name="argument-argumentname-must-be-greater-than-or-equal-to-1"></a>Аргумент "\<argumentname>" должен быть больше или равен 1
 Значение аргумента меньше 1.  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
@@ -20,6 +20,6 @@ ms.locfileid: "62025149"
   
 2. Если аргумент является результатом вычисления, проверьте значения, обрабатываемые при вычислении.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Передача аргументов по значению и по ссылке](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Передача аргументов по значению и по ссылке](../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

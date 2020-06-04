@@ -16,39 +16,39 @@ helpviewer_keywords:
 - UShort data type
 - US literal type characters [Visual Basic]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-ms.openlocfilehash: 7cdbd5fb192fd5cc1be6260dcdcdb1f30cf3f865
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ee31156e00059699125fd72a7f091afbb21beab0
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79401313"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84415483"
 ---
 # <a name="ushort-data-type-visual-basic"></a>Тип данных UShort (Visual Basic)
 
-Держит неподписанные 16-битные (2-байт) многоразовые значения от 0 до 65 535.  
+Содержит 16-разрядные (2-байтные) целые числа без знака в диапазоне от 0 до 65 535.  
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
- Используйте `UShort` тип данных для хранения `Byte`двоичных данных слишком большой для.  
+ Используйте `UShort` тип данных для хранения двоичных данных, размер которых слишком велик `Byte` .  
   
  Значение по умолчанию для типа `UShort` — 0.  
 
-## <a name="literal-assignments"></a>Литературные задания
+## <a name="literal-assignments"></a>Присваивания литералов
 
-Вы можете объявить `UShort` и инициализировать переменную, назначив ей десятичную буквальную, гексадецичную буквальную, октальную буквальную или (начиная с Visual Basic 2017) двоичный буквальный. Если целочисленный литерал выходит за пределы диапазона `UShort` (то есть, если он меньше <xref:System.UInt16.MinValue?displayProperty=nameWithType> или больше <xref:System.UInt16.MaxValue?displayProperty=nameWithType>), возникает ошибка компиляции.
+Можно объявить и инициализировать `UShort` переменную, назначив ей десятичный литерал, шестнадцатеричный литерал, Восьмеричный литерал или (начиная с Visual Basic 2017) двоичный литерал. Если целочисленный литерал выходит за пределы диапазона `UShort` (то есть, если он меньше <xref:System.UInt16.MinValue?displayProperty=nameWithType> или больше <xref:System.UInt16.MaxValue?displayProperty=nameWithType>), возникает ошибка компиляции.
 
-В следующем примере значениям присваиваются `UShort` целые 65 034, которые представлены как десятичные, гексадекемальные и бинарные буквы.
+В следующем примере целые числа, равные 65 034, представленные в виде десятичных, шестнадцатеричных и двоичных литералов, присваиваются `UShort` значениям.
   
 [!code-vb[UShort](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#UShort)]
 
 > [!NOTE]
-> Вы используете `&h` приставку или `&H` для обозначения гексадецимального буквального, приставки `&b` или `&B` для `&o` `&O` обозначения двоичного буквального, и приставки или для обозначения октал буквального. У десятичных литералов префиксов нет.
+> Используйте префикс `&h` или `&H` , чтобы обозначить шестнадцатеричный литерал, префикс `&b` или `&B` обозначить двоичный литерал, а также префикс `&o` или `&O` обозначить Восьмеричный литерал. У десятичных литералов префиксов нет.
 
-Начиная с Visual Basic 2017, вы также `_`можете использовать символ подчеркивания, как цифровой сепаратор для повышения читаемости, как показано в следующем примере.
+Начиная с Visual Basic 2017, можно также использовать символ подчеркивания () в `_` качестве разделителя цифр, чтобы улучшить удобочитаемость, как показано в следующем примере.
 
 [!code-vb[UShort](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#UShortS)]
 
-Начиная с Visual Basic 15.5, вы также`_`можете использовать символ подчеркивателя ( ) в качестве ведущего сепаратора между приставкой и гексадецичными, бинарными или октальными цифрами. Пример:
+Начиная с Visual Basic 15,5, можно также использовать символ подчеркивания () в `_` качестве начального разделителя между префиксом и шестнадцатеричными, двоичными или восьмеричными цифрами. Пример:
 
 ```vb
 Dim number As UShort = &H_FF8C
@@ -56,7 +56,7 @@ Dim number As UShort = &H_FF8C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Число в перечном виде `US` `us` может также включать `UShort` символ или [тип](../../programming-guide/language-features/data-types/type-characters.md) для обозначения типа данных, как показано в следующем примере.
+Числовые литералы также могут включать `US` `us` [символ типа](../../programming-guide/language-features/data-types/type-characters.md) или для обозначения `UShort` типа данных, как показано в следующем примере.
 
 ```vb
 Dim number = &H_5826us
@@ -64,21 +64,21 @@ Dim number = &H_5826us
 
 ## <a name="programming-tips"></a>Советы по программированию
   
-- **Отрицательные числа.** Поскольку `UShort` он является неподписанным типом, он не может представлять отрицательное число. Если вы используете необезыщаемый минус`-` `UShort`() оператора на выражение, которое оценивает вводить, Visual Basic преобразует выражение в `Integer` первое.  
+- **Отрицательные числа.** Так как `UShort` является неподписанным типом, он не может представлять отрицательное число. При использовании оператора унарного минуса ( `-` ) в выражении, результатом которого является тип `UShort` , Visual Basic преобразует выражение в `Integer` First.  
   
-- **Соответствие требованиям CLS.** Тип `UShort` данных не является частью [спецификации общего языка](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), поэтому код, совместимый с CLS, не может потреблять компонент, который его использует.
+- **Соответствие CLS.** `UShort`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications/standards/Ecma-335.htm) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
   
-- **Расширение.** Тип `UShort` данных расширяется `UInteger` `Long`до `ULong` `Integer` `Decimal`, `Single`, `Double`, , и . Это означает, `UShort` что вы можете преобразовать <xref:System.OverflowException?displayProperty=nameWithType> в любой из этих типов, не сталкиваясь с ошибкой.  
+- **Расширяющие.** `UShort`Тип данных расширяется до `Integer` ,,,,, `UInteger` `Long` `ULong` `Decimal` `Single` и `Double` . Это означает, что можно преобразовать `UShort` в любой из этих типов без возникновения <xref:System.OverflowException?displayProperty=nameWithType> ошибки.  
   
-- **Тип символов.** Придаток символов `US` буквального типа к буквальному `UShort` заставляет его типа данных. `UShort`не имеет символа типа идентификатора.  
+- **Символы типа.** При добавлении символов типа литерала `US` к литералу он применяет его к `UShort` типу данных. `UShort`не имеет символа типа идентификатора.  
   
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.UInt16?displayProperty=nameWithType>.  
   
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.UInt16>
-- [Типы данных](../../../visual-basic/language-reference/data-types/index.md)
-- [Функции преобразования типов](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Сводка по преобразованию](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
-- [Эффективное использование типов данных](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Типы данных](index.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Сводка по преобразованию](../keywords/conversion-summary.md)
+- [Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа](../../programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
+- [Эффективное использование типов данных](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

@@ -1,17 +1,17 @@
 ---
-title: Аргумент '<argumentname>' имеет значение Nothing
+title: Аргумент "<argumentname>" имеет значение Nothing
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_InvalidNullValue1
 ms.assetid: abbde904-c191-4911-8822-c9dd2f81d616
-ms.openlocfilehash: 2a0be0a10bc8b2a19c1c4b7ab3517ac6a32401e4
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: fe06605c25b9bb281ad9818708375a2f8f5c9480
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61666057"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84412875"
 ---
-# <a name="argument-argumentname-is-nothing"></a>Аргумент '\<имя_аргумента >' имеет значение Nothing
+# <a name="argument-argumentname-is-nothing"></a>Аргумент "\<argumentname>" имеет значение Nothing
 Выражение содержит аргумент null.  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
@@ -20,6 +20,6 @@ ms.locfileid: "61666057"
   
 2. Проверьте предыдущие операции с переменными в выражении, в особенности те, которые передавались в процедуру как аргументы из других процедур.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Передача аргументов по значению и по ссылке](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Передача аргументов по значению и по ссылке](../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
