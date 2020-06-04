@@ -2,18 +2,18 @@
 title: Команда dotnet migrate
 description: Команда dotnet migrate переносит проект и все его зависимости.
 ms.date: 02/14/2020
-ms.openlocfilehash: 71f587c1bfadd445aca818448bdd5f136f009fe0
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 2e7f9ae5a1d11c54280d914b04df761f0d5aff99
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463638"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284096"
 ---
 # <a name="dotnet-migrate"></a>dotnet migrate
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 2.x
 
-## <a name="name"></a>Имя
+## <a name="name"></a>name
 
 `dotnet migrate` — перемещает проект .NET Core предварительной версии 2 в проект в стиле пакета SDK для .NET Core.
 
@@ -28,11 +28,11 @@ dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [--format-report-file-json <REPORT_
 dotnet migrate -h|--help
 ```
 
-## <a name="description"></a>Описание:
+## <a name="description"></a>Описание
 
 Эта команда отключена. Команда `dotnet migrate` недоступна начиная с пакета SDK для .NET Core 3.0. Она выполняет только миграцию проекта .NET Core (предварительная версия 2) в проект .NET Core 1.x, который не поддерживается.
 
-По умолчанию команда переносит корневой проект и все ссылки, которые он содержит. Это поведение можно отключить в среде выполнения с помощью параметра `--skip-project-references`.
+По умолчанию команда переносит корневой проект и все ссылки, которые он содержит. Это поведение можно отключить во время выполнения с помощью параметра `--skip-project-references`.
 
 Миграция выполняется для следующих ресурсов:
 

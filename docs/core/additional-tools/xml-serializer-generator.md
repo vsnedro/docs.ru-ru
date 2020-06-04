@@ -5,16 +5,16 @@ author: mlacouture
 ms.date: 01/19/2017
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: c3f1fcda8a8a6abc58d35bf37e51485bb3590fa3
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: efa0925a96fcdd4356109632fa77199edde73c26
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794641"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284290"
 ---
 # <a name="using-microsoft-xml-serializer-generator-on-net-core"></a>Использование генератора XML-сериализатора Майкрософт в .NET Core
 
-Это руководство описывает использование генератора XML-сериализатора Майкрософт в приложении .NET Core на языке C#. В ходе работы с этим руководством вы узнаете:
+Это руководство описывает использование генератора XML-сериализатора Майкрософт в приложении .NET Core на языке C#. В ходе работы с этим руководством вы:
 
 > [!div class="checklist"]
 >
@@ -26,9 +26,9 @@ ms.locfileid: "82794641"
 
 Являясь аналогом [генератора XML-сериализатора (sgen.exe)](../../standard/serialization/xml-serializer-generator-tool-sgen-exe.md) для .NET Framework, [пакет NuGet Microsoft.XmlSerializer.Generator](https://www.nuget.org/packages/Microsoft.XmlSerializer.Generator) предназначен для проектов .NET Core и .NET Standard. Он создает сборку сериализации XML для содержащихся в сборке типов, улучшая производительность при запуске сериализации или десериализации XML для объектов этих типов с помощью <xref:System.Xml.Serialization.XmlSerializer>.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
-Для работы с этим руководством:
+Для работы с этим руководством вам понадобится следующее:
 
 - [пакет SDK для .NET Core 2.1](https://dotnet.microsoft.com/download) или более поздней версии;
 - любой редактор кода.
@@ -101,7 +101,7 @@ public class MyClass
 var serializer = new System.Xml.Serialization.XmlSerializer(typeof(MyClass));
 ```
 
-### <a name="build-and-run-the-application"></a>Создание и запуск приложения
+### <a name="build-and-run-the-application"></a>Построение и запуск приложения
 
 Оставаясь в папке *MyApp*, запустите приложение с помощью [`dotnet run`](../tools/dotnet-run.md). При этом оно автоматически загружает и использует предварительно созданные сериализаторы во время выполнения.
 
@@ -132,4 +132,4 @@ dotnet run
 
 - [Введение в сериализацию XML](../../standard/serialization/introducing-xml-serialization.md)
 - [Сериализация с использованием XmlSerializer (C#)](../../csharp/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
-- [Практическое руководство. Сериализация с использованием XmlSerializer (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
+- [Практическое руководство. Serialize Using XmlSerializer (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md) (Сериализация с использованием XmlSerializer (Visual Basic))

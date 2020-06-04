@@ -13,12 +13,12 @@ helpviewer_keywords:
 - assemblies [.NET Framework]
 - version boundaries
 - type boundaries
-ms.openlocfilehash: 87030bf9770c464709559b2fb8f4c0004009e48d
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 364a1a8c0fbaae93a02495aaf2e8c519ffb46451
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379914"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290945"
 ---
 # <a name="assemblies-in-net"></a>Сборки в .NET
 
@@ -86,7 +86,7 @@ ms.locfileid: "83379914"
 Чтобы использовать сборку в приложении, нужно добавить ссылку на нее. Когда вы добавите ссылку на сборку, в вашем приложении станут доступны все предоставленные в сборке типы, свойства, методы и другие члены пространств имен, как если бы их код являлся частью файла с исходным кодом вашего приложения.
 
 > [!NOTE]
-> Ссылки на большинство сборок из библиотеки классов .NET создаются автоматически. Если системная сборка не упоминается в ссылке автоматически, для .NET Core можно добавить ссылку на пакет NuGet, содержащий эту сборку. Используйте диспетчер пакетов NuGet в Visual Studio или добавьте элемент [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) для сборки в файл проекта с расширением *.csproj* или *.vbproj*. В .NET Framework можно добавить ссылку на сборку с помощью диалогового окна **Добавить ссылку** в Visual Studio или параметра командной строки `-reference` для компиляторов [C#](../../csharp/language-reference/compiler-options/reference-compiler-option.md) или [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md).
+> Ссылки на большинство сборок из библиотеки классов .NET создаются автоматически. Если системная сборка не упоминается в ссылке автоматически, для .NET Core можно добавить ссылку на пакет NuGet, содержащий эту сборку. Используйте диспетчер пакетов NuGet в Visual Studio или добавьте элемент [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) для сборки в файл проекта с расширением *.csproj* или *.vbproj*. В .NET Framework можно добавить ссылку на сборку с помощью диалогового окна **Добавить ссылку** в Visual Studio или параметра командной строки `-reference` для компиляторов [C#](../../csharp/language-reference/compiler-options/reference-compiler-option.md) или [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md).
 
 На C# вы можете использовать две версии одной и той же сборки в одном приложении. Дополнительные сведения см. в разделе [Псевдоним extern](../../csharp/language-reference/keywords/extern-alias.md).
 
@@ -102,8 +102,8 @@ ms.locfileid: "83379914"
 |[Управление версиями сборок](versioning.md)|Общие сведения о политике управления версиями платформы .NET Framework.|
 |[Размещение сборок](../../framework/app-domains/assembly-placement.md)|Вопросы размещения сборок.|
 |[Сборки и параллельное выполнение](side-by-side-execution.md)|Использование нескольких версий среды выполнения или сборки.|
-|[Предоставление динамических методов и сборок](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)|Способы создания динамических сборок.|
-|[Обнаружение сборок в среде выполнения](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)|Способы разрешения платформой .NET Framework ссылок на сборки во время выполнения.|
+|[Предоставление динамических методов и сборок](../../framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)|Способы создания динамических сборок.|
+|[Обнаружение сборок в среде выполнения](../../framework/deployment/how-the-runtime-locates-assemblies.md)|Способы разрешения платформой .NET Framework ссылок на сборки во время выполнения.|
 
 ## <a name="reference"></a>Справочник
 

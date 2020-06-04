@@ -223,6 +223,10 @@
           displayName: 'unmanaged resources, memory management'
         - name: Реализация метода Dispose
           href: garbage-collection/implementing-dispose.md
+          displayName: 'using, Dispose, dispose pattern, IDisposable'
+        - name: Реализация метода DisposeAsync
+          href: garbage-collection/implementing-disposeasync.md
+          displayName: 'await using, DisposeAsync, async dispose pattern, IAsyncDisposable'
         - name: 'Использование объектов, реализующих IDisposable'
           href: garbage-collection/using-objects.md
     - name: Сборка мусора
