@@ -2,23 +2,23 @@
 title: Программирование с узлами
 ms.date: 07/20/2015
 ms.assetid: d8422a9b-dd37-44a3-8aac-2237ed9561e0
-ms.openlocfilehash: 9c64c348f5d26172f26593b927e6bc24baf365bf
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 4cae85d99e7e28506faad8ca39347cf8f271718e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794407"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396380"
 ---
-# <a name="programming-with-nodes-visual-basic"></a><span data-ttu-id="a49cc-102">Программирование с использованием узлов (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="a49cc-102">Programming with Nodes (Visual Basic)</span></span>
-<span data-ttu-id="a49cc-103">Разработчикам [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], которым требуется написать такие программы, как XML-редактор, система преобразования или модуль формирования отчетов, часто приходится писать программы, которые работают на более высоком уровне гранулярности по сравнению с элементами и атрибутами.</span><span class="sxs-lookup"><span data-stu-id="a49cc-103">[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] developers who need to write programs such as an XML editor, a transform system, or a report writer often need to write programs that work at a finer level of granularity than elements and attributes.</span></span> <span data-ttu-id="a49cc-104">Им часто приходится работать на уровне узлов, обрабатывая текстовые узлы, инструкции по обработке и комментарии.</span><span class="sxs-lookup"><span data-stu-id="a49cc-104">They often need to work at the node level, manipulating text nodes, processing instructions, and comments.</span></span> <span data-ttu-id="a49cc-105">В этом разделе приводятся некоторые сведения о программировании на уровне узлов.</span><span class="sxs-lookup"><span data-stu-id="a49cc-105">This topic provides some details about programming at the node level.</span></span>  
+# <a name="programming-with-nodes-visual-basic"></a><span data-ttu-id="83ca0-102">Программирование с использованием узлов (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="83ca0-102">Programming with Nodes (Visual Basic)</span></span>
+<span data-ttu-id="83ca0-103">Разработчикам [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], которым требуется написать такие программы, как XML-редактор, система преобразования или модуль формирования отчетов, часто приходится писать программы, которые работают на более высоком уровне гранулярности по сравнению с элементами и атрибутами.</span><span class="sxs-lookup"><span data-stu-id="83ca0-103">[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] developers who need to write programs such as an XML editor, a transform system, or a report writer often need to write programs that work at a finer level of granularity than elements and attributes.</span></span> <span data-ttu-id="83ca0-104">Им часто приходится работать на уровне узлов, обрабатывая текстовые узлы, инструкции по обработке и комментарии.</span><span class="sxs-lookup"><span data-stu-id="83ca0-104">They often need to work at the node level, manipulating text nodes, processing instructions, and comments.</span></span> <span data-ttu-id="83ca0-105">В этом разделе приводятся некоторые сведения о программировании на уровне узлов.</span><span class="sxs-lookup"><span data-stu-id="83ca0-105">This topic provides some details about programming at the node level.</span></span>  
   
-## <a name="node-details"></a><span data-ttu-id="a49cc-106">Сведения об узле</span><span class="sxs-lookup"><span data-stu-id="a49cc-106">Node Details</span></span>  
- <span data-ttu-id="a49cc-107">Программист, работающий на уровне узлов, должен учитывать целый ряд нюансов программирования.</span><span class="sxs-lookup"><span data-stu-id="a49cc-107">There are a number of details of programming that a programmer working at the node level should know.</span></span>  
+## <a name="node-details"></a><span data-ttu-id="83ca0-106">Сведения об узле</span><span class="sxs-lookup"><span data-stu-id="83ca0-106">Node Details</span></span>  
+ <span data-ttu-id="83ca0-107">Программист, работающий на уровне узлов, должен учитывать целый ряд нюансов программирования.</span><span class="sxs-lookup"><span data-stu-id="83ca0-107">There are a number of details of programming that a programmer working at the node level should know.</span></span>  
   
-### <a name="parent-property-of-children-nodes-of-xdocument-is-set-to-null"></a><span data-ttu-id="a49cc-108">Родительскому свойству дочерних узлов XDocument задано значение Null</span><span class="sxs-lookup"><span data-stu-id="a49cc-108">Parent Property of Children Nodes of XDocument is Set to Null</span></span>  
- <span data-ttu-id="a49cc-109">Свойство <xref:System.Xml.Linq.XObject.Parent%2A> содержит родительский объект <xref:System.Xml.Linq.XElement>, а не родительский узел.</span><span class="sxs-lookup"><span data-stu-id="a49cc-109">The <xref:System.Xml.Linq.XObject.Parent%2A> property contains the parent <xref:System.Xml.Linq.XElement>, not the parent node.</span></span> <span data-ttu-id="a49cc-110">Дочерние узлы объекта <xref:System.Xml.Linq.XDocument> не имеют родительского объекта <xref:System.Xml.Linq.XElement>.</span><span class="sxs-lookup"><span data-stu-id="a49cc-110">Child nodes of <xref:System.Xml.Linq.XDocument> have no parent <xref:System.Xml.Linq.XElement>.</span></span> <span data-ttu-id="a49cc-111">Их родителем является документ, поэтому свойству <xref:System.Xml.Linq.XObject.Parent%2A> этих узлов задается значение NULL.</span><span class="sxs-lookup"><span data-stu-id="a49cc-111">Their parent is the document, so the <xref:System.Xml.Linq.XObject.Parent%2A> property for those nodes is set to null.</span></span>  
+### <a name="parent-property-of-children-nodes-of-xdocument-is-set-to-null"></a><span data-ttu-id="83ca0-108">Родительскому свойству дочерних узлов XDocument задано значение Null</span><span class="sxs-lookup"><span data-stu-id="83ca0-108">Parent Property of Children Nodes of XDocument is Set to Null</span></span>  
+ <span data-ttu-id="83ca0-109">Свойство <xref:System.Xml.Linq.XObject.Parent%2A> содержит родительский объект <xref:System.Xml.Linq.XElement>, а не родительский узел.</span><span class="sxs-lookup"><span data-stu-id="83ca0-109">The <xref:System.Xml.Linq.XObject.Parent%2A> property contains the parent <xref:System.Xml.Linq.XElement>, not the parent node.</span></span> <span data-ttu-id="83ca0-110">Дочерние узлы объекта <xref:System.Xml.Linq.XDocument> не имеют родительского объекта <xref:System.Xml.Linq.XElement>.</span><span class="sxs-lookup"><span data-stu-id="83ca0-110">Child nodes of <xref:System.Xml.Linq.XDocument> have no parent <xref:System.Xml.Linq.XElement>.</span></span> <span data-ttu-id="83ca0-111">Их родителем является документ, поэтому свойству <xref:System.Xml.Linq.XObject.Parent%2A> этих узлов задается значение NULL.</span><span class="sxs-lookup"><span data-stu-id="83ca0-111">Their parent is the document, so the <xref:System.Xml.Linq.XObject.Parent%2A> property for those nodes is set to null.</span></span>  
   
- <span data-ttu-id="a49cc-112">Следующий пример демонстрирует это:</span><span class="sxs-lookup"><span data-stu-id="a49cc-112">The following example demonstrates this:</span></span>  
+ <span data-ttu-id="83ca0-112">Следующий пример демонстрирует это:</span><span class="sxs-lookup"><span data-stu-id="83ca0-112">The following example demonstrates this:</span></span>  
   
 ```vb  
 Dim doc As XDocument = XDocument.Parse("<!-- a comment --><Root/>")  
@@ -26,17 +26,17 @@ Console.WriteLine(doc.Nodes().OfType(Of XComment).First().Parent Is Nothing)
 Console.WriteLine(doc.Root.Parent Is Nothing)  
 ```  
   
- <span data-ttu-id="a49cc-113">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="a49cc-113">This example produces the following output:</span></span>  
+ <span data-ttu-id="83ca0-113">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="83ca0-113">This example produces the following output:</span></span>  
   
 ```console  
 True  
 True  
 ```  
   
-### <a name="adjacent-text-nodes-are-possible"></a><span data-ttu-id="a49cc-114">Соседние текстовые узлы возможны</span><span class="sxs-lookup"><span data-stu-id="a49cc-114">Adjacent Text Nodes are Possible</span></span>  
- <span data-ttu-id="a49cc-115">В нескольких моделях программирования XML соседние текстовые узлы всегда объединяются.</span><span class="sxs-lookup"><span data-stu-id="a49cc-115">In a number of XML programming models, adjacent text nodes are always merged.</span></span> <span data-ttu-id="a49cc-116">Иногда такую операцию называют нормализацией текстовых узлов.</span><span class="sxs-lookup"><span data-stu-id="a49cc-116">This is sometimes called normalization of text nodes.</span></span> [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <span data-ttu-id="a49cc-117">не нормализует текстовые узлы.</span><span class="sxs-lookup"><span data-stu-id="a49cc-117">does not normalize text nodes.</span></span> <span data-ttu-id="a49cc-118">Если добавить два текстовых узла в один элемент, то они будут соседними.</span><span class="sxs-lookup"><span data-stu-id="a49cc-118">If you add two text nodes to the same element, it will result in adjacent text nodes.</span></span> <span data-ttu-id="a49cc-119">Однако если добавить содержимое, определенное как строка, а не как узел <xref:System.Xml.Linq.XText>, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] может объединить строку с соседним текстовым узлом.</span><span class="sxs-lookup"><span data-stu-id="a49cc-119">However, if you add content specified as a string rather than as an <xref:System.Xml.Linq.XText> node, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] might merge the string with an adjacent text node.</span></span>  
+### <a name="adjacent-text-nodes-are-possible"></a><span data-ttu-id="83ca0-114">Соседние текстовые узлы возможны</span><span class="sxs-lookup"><span data-stu-id="83ca0-114">Adjacent Text Nodes are Possible</span></span>  
+ <span data-ttu-id="83ca0-115">В нескольких моделях программирования XML соседние текстовые узлы всегда объединяются.</span><span class="sxs-lookup"><span data-stu-id="83ca0-115">In a number of XML programming models, adjacent text nodes are always merged.</span></span> <span data-ttu-id="83ca0-116">Иногда такую операцию называют нормализацией текстовых узлов.</span><span class="sxs-lookup"><span data-stu-id="83ca0-116">This is sometimes called normalization of text nodes.</span></span> [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <span data-ttu-id="83ca0-117">не нормализует текстовые узлы.</span><span class="sxs-lookup"><span data-stu-id="83ca0-117">does not normalize text nodes.</span></span> <span data-ttu-id="83ca0-118">Если добавить два текстовых узла в один элемент, то они будут соседними.</span><span class="sxs-lookup"><span data-stu-id="83ca0-118">If you add two text nodes to the same element, it will result in adjacent text nodes.</span></span> <span data-ttu-id="83ca0-119">Однако если добавить содержимое, определенное как строка, а не как узел <xref:System.Xml.Linq.XText>, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] может объединить строку с соседним текстовым узлом.</span><span class="sxs-lookup"><span data-stu-id="83ca0-119">However, if you add content specified as a string rather than as an <xref:System.Xml.Linq.XText> node, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] might merge the string with an adjacent text node.</span></span>  
   
- <span data-ttu-id="a49cc-120">Следующий пример демонстрирует это:</span><span class="sxs-lookup"><span data-stu-id="a49cc-120">The following example demonstrates this:</span></span>  
+ <span data-ttu-id="83ca0-120">Следующий пример демонстрирует это:</span><span class="sxs-lookup"><span data-stu-id="83ca0-120">The following example demonstrates this:</span></span>  
   
 ```vb  
 Dim xmlTree As XElement = <Root>Content</Root>  
@@ -51,7 +51,7 @@ xmlTree.Add(New XText("more text"))
 Console.WriteLine(xmlTree.Nodes().OfType(Of XText)().Count())  
 ```  
   
- <span data-ttu-id="a49cc-121">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="a49cc-121">This example produces the following output:</span></span>  
+ <span data-ttu-id="83ca0-121">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="83ca0-121">This example produces the following output:</span></span>  
   
 ```console  
 1  
@@ -59,8 +59,8 @@ Console.WriteLine(xmlTree.Nodes().OfType(Of XText)().Count())
 2  
 ```  
   
-### <a name="empty-text-nodes-are-possible"></a><span data-ttu-id="a49cc-122">Пустые текстовые узлы возможны</span><span class="sxs-lookup"><span data-stu-id="a49cc-122">Empty Text Nodes are Possible</span></span>  
- <span data-ttu-id="a49cc-123">В некоторых моделях программирования XML гарантируется, что текстовые узлы не будут содержать пустые строки.</span><span class="sxs-lookup"><span data-stu-id="a49cc-123">In some XML programming models, text nodes are guaranteed to not contain the empty string.</span></span> <span data-ttu-id="a49cc-124">Обоснованием является то, что такой текстовый узел не будет влиять на сериализацию XML.</span><span class="sxs-lookup"><span data-stu-id="a49cc-124">The reasoning is that such a text node has no impact on serialization of the XML.</span></span> <span data-ttu-id="a49cc-125">Однако по этой же причине, по которой возможны соседние текстовые узлы, удаление текста из текстового узла путем присваивания ему в качестве значения пустой строки не приводит к удалению самого текстового узла.</span><span class="sxs-lookup"><span data-stu-id="a49cc-125">However, for the same reason that adjacent text nodes are possible, if you remove the text from a text node by setting its value to the empty string, the text node itself will not be deleted.</span></span>  
+### <a name="empty-text-nodes-are-possible"></a><span data-ttu-id="83ca0-122">Пустые текстовые узлы возможны</span><span class="sxs-lookup"><span data-stu-id="83ca0-122">Empty Text Nodes are Possible</span></span>  
+ <span data-ttu-id="83ca0-123">В некоторых моделях программирования XML гарантируется, что текстовые узлы не будут содержать пустые строки.</span><span class="sxs-lookup"><span data-stu-id="83ca0-123">In some XML programming models, text nodes are guaranteed to not contain the empty string.</span></span> <span data-ttu-id="83ca0-124">Обоснованием является то, что такой текстовый узел не будет влиять на сериализацию XML.</span><span class="sxs-lookup"><span data-stu-id="83ca0-124">The reasoning is that such a text node has no impact on serialization of the XML.</span></span> <span data-ttu-id="83ca0-125">Однако по этой же причине, по которой возможны соседние текстовые узлы, удаление текста из текстового узла путем присваивания ему в качестве значения пустой строки не приводит к удалению самого текстового узла.</span><span class="sxs-lookup"><span data-stu-id="83ca0-125">However, for the same reason that adjacent text nodes are possible, if you remove the text from a text node by setting its value to the empty string, the text node itself will not be deleted.</span></span>  
   
 ```vb  
 Dim xmlTree As XElement = <Root>Content</Root>  
@@ -73,14 +73,14 @@ Dim textNode2 As XText = xmlTree.Nodes().OfType(Of XText)().First()
 Console.WriteLine(">>{0}<<", textNode2)  
 ```  
   
- <span data-ttu-id="a49cc-126">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="a49cc-126">This example produces the following output:</span></span>  
+ <span data-ttu-id="83ca0-126">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="83ca0-126">This example produces the following output:</span></span>  
   
 ```console  
 >><<  
 ```  
   
-### <a name="an-empty-text-node-impacts-serialization"></a><span data-ttu-id="a49cc-127">Пустые текстовые узлы влияют на сериализацию</span><span class="sxs-lookup"><span data-stu-id="a49cc-127">An Empty Text Node Impacts Serialization</span></span>  
- <span data-ttu-id="a49cc-128">Если элемент содержит только дочерний текстовый узел, который является пустым, то он сериализуется с использованием синтаксиса длинных тегов: `<Child></Child>`.</span><span class="sxs-lookup"><span data-stu-id="a49cc-128">If an element contains only a child text node that is empty, it is serialized with the long tag syntax: `<Child></Child>`.</span></span> <span data-ttu-id="a49cc-129">Если элемент не содержит ни одного дочернего узла, то он сериализуется c использованием синтаксиса коротких тегов: `<Child />`.</span><span class="sxs-lookup"><span data-stu-id="a49cc-129">If an element contains no child nodes whatsoever, it is serialized with the short tag syntax: `<Child />`.</span></span>  
+### <a name="an-empty-text-node-impacts-serialization"></a><span data-ttu-id="83ca0-127">Пустые текстовые узлы влияют на сериализацию</span><span class="sxs-lookup"><span data-stu-id="83ca0-127">An Empty Text Node Impacts Serialization</span></span>  
+ <span data-ttu-id="83ca0-128">Если элемент содержит только дочерний текстовый узел, который является пустым, то он сериализуется с использованием синтаксиса длинных тегов: `<Child></Child>`.</span><span class="sxs-lookup"><span data-stu-id="83ca0-128">If an element contains only a child text node that is empty, it is serialized with the long tag syntax: `<Child></Child>`.</span></span> <span data-ttu-id="83ca0-129">Если элемент не содержит ни одного дочернего узла, то он сериализуется c использованием синтаксиса коротких тегов: `<Child />`.</span><span class="sxs-lookup"><span data-stu-id="83ca0-129">If an element contains no child nodes whatsoever, it is serialized with the short tag syntax: `<Child />`.</span></span>  
   
 ```vb  
 Dim child1 As XElement = New XElement("Child1", _  
@@ -91,17 +91,17 @@ Console.WriteLine(child1)
 Console.WriteLine(child2)  
 ```  
   
- <span data-ttu-id="a49cc-130">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="a49cc-130">This example produces the following output:</span></span>  
+ <span data-ttu-id="83ca0-130">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="83ca0-130">This example produces the following output:</span></span>  
   
 ```xml  
 <Child1></Child1>  
 <Child2 />  
 ```  
   
-### <a name="namespaces-are-attributes-in-the-linq-to-xml-tree"></a><span data-ttu-id="a49cc-131">Пространства имен являются атрибутами в дереве LINQ to XML</span><span class="sxs-lookup"><span data-stu-id="a49cc-131">Namespaces are Attributes in the LINQ to XML Tree</span></span>  
- <span data-ttu-id="a49cc-132">Несмотря на то что синтаксис деклараций пространств имен похож на синтаксис атрибутов, в некоторых программных интерфейсах, например XSLT и XPath, декларации пространств имен не считаются атрибутами.</span><span class="sxs-lookup"><span data-stu-id="a49cc-132">Even though namespace declarations have identical syntax to attributes, in some programming interfaces, such as XSLT and XPath, namespace declarations are not considered to be attributes.</span></span> <span data-ttu-id="a49cc-133">Однако в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] пространства имен хранятся в XML-дереве как объекты <xref:System.Xml.Linq.XAttribute>.</span><span class="sxs-lookup"><span data-stu-id="a49cc-133">However, in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], namespaces are stored as <xref:System.Xml.Linq.XAttribute> objects in the XML tree.</span></span> <span data-ttu-id="a49cc-134">Если просмотреть атрибуты элемента, который содержит декларацию пространства имен, то можно увидеть, что декларация пространства имен является одним из элементов возвращенной коллекции.</span><span class="sxs-lookup"><span data-stu-id="a49cc-134">If you iterate through the attributes for an element that contains a namespace declaration, you will see the namespace declaration as one of the items in the returned collection.</span></span>  
+### <a name="namespaces-are-attributes-in-the-linq-to-xml-tree"></a><span data-ttu-id="83ca0-131">Пространства имен являются атрибутами в дереве LINQ to XML</span><span class="sxs-lookup"><span data-stu-id="83ca0-131">Namespaces are Attributes in the LINQ to XML Tree</span></span>  
+ <span data-ttu-id="83ca0-132">Несмотря на то что синтаксис деклараций пространств имен похож на синтаксис атрибутов, в некоторых программных интерфейсах, например XSLT и XPath, декларации пространств имен не считаются атрибутами.</span><span class="sxs-lookup"><span data-stu-id="83ca0-132">Even though namespace declarations have identical syntax to attributes, in some programming interfaces, such as XSLT and XPath, namespace declarations are not considered to be attributes.</span></span> <span data-ttu-id="83ca0-133">Однако в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] пространства имен хранятся в XML-дереве как объекты <xref:System.Xml.Linq.XAttribute>.</span><span class="sxs-lookup"><span data-stu-id="83ca0-133">However, in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], namespaces are stored as <xref:System.Xml.Linq.XAttribute> objects in the XML tree.</span></span> <span data-ttu-id="83ca0-134">Если просмотреть атрибуты элемента, который содержит декларацию пространства имен, то можно увидеть, что декларация пространства имен является одним из элементов возвращенной коллекции.</span><span class="sxs-lookup"><span data-stu-id="83ca0-134">If you iterate through the attributes for an element that contains a namespace declaration, you will see the namespace declaration as one of the items in the returned collection.</span></span>  
   
- <span data-ttu-id="a49cc-135">Свойство <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> указывает, является ли атрибут декларацией пространства имен.</span><span class="sxs-lookup"><span data-stu-id="a49cc-135">The <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> property indicates whether an attribute is a namespace declaration.</span></span>  
+ <span data-ttu-id="83ca0-135">Свойство <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> указывает, является ли атрибут декларацией пространства имен.</span><span class="sxs-lookup"><span data-stu-id="83ca0-135">The <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> property indicates whether an attribute is a namespace declaration.</span></span>  
   
 ```vb  
 Dim root As XElement = _
@@ -115,7 +115,7 @@ For Each att As XAttribute In root.Attributes()
 Next  
 ```  
   
- <span data-ttu-id="a49cc-136">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="a49cc-136">This example produces the following output:</span></span>  
+ <span data-ttu-id="83ca0-136">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="83ca0-136">This example produces the following output:</span></span>  
   
 ```console  
 xmlns="http://www.adventure-works.com"  IsNamespaceDeclaration:True  
@@ -123,8 +123,8 @@ xmlns:fc="www.fourthcoffee.com"  IsNamespaceDeclaration:True
 AnAttribute="abc"  IsNamespaceDeclaration:False  
 ```  
   
-### <a name="xpath-axis-methods-do-not-return-child-white-space-of-xdocument"></a><span data-ttu-id="a49cc-137">Методы оси XPath не возвращают дочерние пробелы XDocument</span><span class="sxs-lookup"><span data-stu-id="a49cc-137">XPath Axis Methods Do Not Return Child White Space of XDocument</span></span>  
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <span data-ttu-id="a49cc-138">допускает дочерние текстовые узлы объекта <xref:System.Xml.Linq.XDocument>, если эти текстовые узлы содержат только пробелы.</span><span class="sxs-lookup"><span data-stu-id="a49cc-138">allows for child text nodes of an <xref:System.Xml.Linq.XDocument>, as long as the text nodes contain only white space.</span></span> <span data-ttu-id="a49cc-139">Однако модель объектов XPath не включает пробелы как дочерние узлы документа, поэтому при прохождении по дочерним узлам объекта <xref:System.Xml.Linq.XDocument> при помощи оси <xref:System.Xml.Linq.XContainer.Nodes%2A> возвращаются текстовые узлы с пробелами.</span><span class="sxs-lookup"><span data-stu-id="a49cc-139">However, the XPath object model does not include white space as child nodes of a document, so when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the <xref:System.Xml.Linq.XContainer.Nodes%2A> axis, white space text nodes will be returned.</span></span> <span data-ttu-id="a49cc-140">Однако при прохождении по дочерним узлам объекта <xref:System.Xml.Linq.XDocument> при помощи методов оси XPath текстовые узлы с пробелами возвращены не будут.</span><span class="sxs-lookup"><span data-stu-id="a49cc-140">However, when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the XPath axis methods, white space text nodes will not be returned.</span></span>  
+### <a name="xpath-axis-methods-do-not-return-child-white-space-of-xdocument"></a><span data-ttu-id="83ca0-137">Методы оси XPath не возвращают дочерние пробелы XDocument</span><span class="sxs-lookup"><span data-stu-id="83ca0-137">XPath Axis Methods Do Not Return Child White Space of XDocument</span></span>  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <span data-ttu-id="83ca0-138">допускает дочерние текстовые узлы объекта <xref:System.Xml.Linq.XDocument>, если эти текстовые узлы содержат только пробелы.</span><span class="sxs-lookup"><span data-stu-id="83ca0-138">allows for child text nodes of an <xref:System.Xml.Linq.XDocument>, as long as the text nodes contain only white space.</span></span> <span data-ttu-id="83ca0-139">Однако модель объектов XPath не включает пробелы как дочерние узлы документа, поэтому при прохождении по дочерним узлам объекта <xref:System.Xml.Linq.XDocument> при помощи оси <xref:System.Xml.Linq.XContainer.Nodes%2A> возвращаются текстовые узлы с пробелами.</span><span class="sxs-lookup"><span data-stu-id="83ca0-139">However, the XPath object model does not include white space as child nodes of a document, so when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the <xref:System.Xml.Linq.XContainer.Nodes%2A> axis, white space text nodes will be returned.</span></span> <span data-ttu-id="83ca0-140">Однако при прохождении по дочерним узлам объекта <xref:System.Xml.Linq.XDocument> при помощи методов оси XPath текстовые узлы с пробелами возвращены не будут.</span><span class="sxs-lookup"><span data-stu-id="83ca0-140">However, when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the XPath axis methods, white space text nodes will not be returned.</span></span>  
   
 ```vb  
 ' Create a document with some white space child nodes of the document.  
@@ -141,15 +141,15 @@ Dim nodes As IEnumerable = CType(root.XPathEvaluate("text()"), IEnumerable)
 Console.WriteLine(nodes.OfType(Of XText)().Count())  
 ```  
   
- <span data-ttu-id="a49cc-141">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="a49cc-141">This example produces the following output:</span></span>  
+ <span data-ttu-id="83ca0-141">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="83ca0-141">This example produces the following output:</span></span>  
   
 ```console  
 3  
 0  
 ```  
   
-### <a name="xdeclaration-objects-are-not-nodes"></a><span data-ttu-id="a49cc-142">Объекты XDeclaration не являются узлами</span><span class="sxs-lookup"><span data-stu-id="a49cc-142">XDeclaration Objects are not Nodes</span></span>  
- <span data-ttu-id="a49cc-143">При прохождении по дочерним узлам объекта <xref:System.Xml.Linq.XDocument> нельзя увидеть объект XML-декларации.</span><span class="sxs-lookup"><span data-stu-id="a49cc-143">When you iterate through the children nodes of an <xref:System.Xml.Linq.XDocument>, you will not see the XML declaration object.</span></span> <span data-ttu-id="a49cc-144">Это свойство документа, а не его дочерний узел.</span><span class="sxs-lookup"><span data-stu-id="a49cc-144">It is a property of the document, not a child node of it.</span></span>  
+### <a name="xdeclaration-objects-are-not-nodes"></a><span data-ttu-id="83ca0-142">Объекты XDeclaration не являются узлами</span><span class="sxs-lookup"><span data-stu-id="83ca0-142">XDeclaration Objects are not Nodes</span></span>  
+ <span data-ttu-id="83ca0-143">При прохождении по дочерним узлам объекта <xref:System.Xml.Linq.XDocument> нельзя увидеть объект XML-декларации.</span><span class="sxs-lookup"><span data-stu-id="83ca0-143">When you iterate through the children nodes of an <xref:System.Xml.Linq.XDocument>, you will not see the XML declaration object.</span></span> <span data-ttu-id="83ca0-144">Это свойство документа, а не его дочерний узел.</span><span class="sxs-lookup"><span data-stu-id="83ca0-144">It is a property of the document, not a child node of it.</span></span>  
   
 ```vb  
 Dim doc As XDocument = _  
@@ -163,7 +163,7 @@ Console.WriteLine(File.ReadAllText("Temp.xml"))
 Console.WriteLine(doc.Nodes().Count())  
 ```  
   
- <span data-ttu-id="a49cc-145">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="a49cc-145">This example produces the following output:</span></span>  
+ <span data-ttu-id="83ca0-145">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="83ca0-145">This example produces the following output:</span></span>  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
@@ -171,6 +171,6 @@ Console.WriteLine(doc.Nodes().Count())
 1
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="a49cc-146">См. также</span><span class="sxs-lookup"><span data-stu-id="a49cc-146">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="83ca0-146">См. также</span><span class="sxs-lookup"><span data-stu-id="83ca0-146">See also</span></span>
 
-- [<span data-ttu-id="a49cc-147">Расширенное программирование LINQ to XML (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="a49cc-147">Advanced LINQ to XML Programming (Visual Basic)</span></span>](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+- [<span data-ttu-id="83ca0-147">Расширенное программирование LINQ to XML (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="83ca0-147">Advanced LINQ to XML Programming (Visual Basic)</span></span>](advanced-linq-to-xml-programming.md)

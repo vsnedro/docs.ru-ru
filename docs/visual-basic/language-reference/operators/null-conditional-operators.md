@@ -6,18 +6,18 @@ helpviewer_keywords:
 - ?. operator [Visual Basic]
 - ?[] operator [C#]
 - ?[] operator [Visual Basic]
-ms.openlocfilehash: 003f579a7128bbe2462b7fbe7057de03e61bfbe6
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: bffbba859968e0a050397cd9e685c142f801798a
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348283"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401476"
 ---
-# <a name="-and--null-conditional-operators-visual-basic"></a><span data-ttu-id="e0008-102">?.</span><span class="sxs-lookup"><span data-stu-id="e0008-102">?.</span></span> <span data-ttu-id="e0008-103">перетаскивани? ()-условные операторы null (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="e0008-103">and ?() null-conditional operators (Visual Basic)</span></span>
+# <a name="-and--null-conditional-operators-visual-basic"></a><span data-ttu-id="5b2d0-102">?.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-102">?.</span></span> <span data-ttu-id="5b2d0-103">перетаскивани? ()-условные операторы null (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="5b2d0-103">and ?() null-conditional operators (Visual Basic)</span></span>
 
-<span data-ttu-id="e0008-104">Проверяет значение левого операнда для значения NULL (`Nothing`) перед выполнением операции доступа к члену (`?.`) или индекса (`?()`); Возвращает `Nothing`, если левый операнд принимает значение `Nothing`.</span><span class="sxs-lookup"><span data-stu-id="e0008-104">Tests the value of the left-hand operand for null (`Nothing`) before performing a member access (`?.`) or index (`?()`) operation; returns `Nothing` if the left-hand operand evaluates to `Nothing`.</span></span> <span data-ttu-id="e0008-105">Обратите внимание, что в выражениях, которые обычно возвращают типы значений, условный оператор null возвращает <xref:System.Nullable%601>.</span><span class="sxs-lookup"><span data-stu-id="e0008-105">Note that in expressions that ordinarily return value types, the null-conditional operator returns a <xref:System.Nullable%601>.</span></span>
+<span data-ttu-id="5b2d0-104">Проверяет значение левого операнда для NULL ( `Nothing` ) перед выполнением операции доступа к члену ( `?.` ) или индекса ( `?()` ); возвращает, `Nothing` если левый операнд принимает значение `Nothing` .</span><span class="sxs-lookup"><span data-stu-id="5b2d0-104">Tests the value of the left-hand operand for null (`Nothing`) before performing a member access (`?.`) or index (`?()`) operation; returns `Nothing` if the left-hand operand evaluates to `Nothing`.</span></span> <span data-ttu-id="5b2d0-105">Обратите внимание, что в выражениях, которые обычно возвращают типы значений, условный оператор null возвращает <xref:System.Nullable%601> .</span><span class="sxs-lookup"><span data-stu-id="5b2d0-105">Note that in expressions that ordinarily return value types, the null-conditional operator returns a <xref:System.Nullable%601>.</span></span>
 
-<span data-ttu-id="e0008-106">Эти операторы помогают писать меньше кода для проверки значений NULL, особенно при сортировке по структурам данных.</span><span class="sxs-lookup"><span data-stu-id="e0008-106">These operators help you write less code to handle null checks, especially when descending into data structures.</span></span> <span data-ttu-id="e0008-107">Пример.</span><span class="sxs-lookup"><span data-stu-id="e0008-107">For example:</span></span>
+<span data-ttu-id="5b2d0-106">Эти операторы помогают писать меньше кода для проверки значений NULL, особенно при сортировке по структурам данных.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-106">These operators help you write less code to handle null checks, especially when descending into data structures.</span></span> <span data-ttu-id="5b2d0-107">Пример:</span><span class="sxs-lookup"><span data-stu-id="5b2d0-107">For example:</span></span>
 
 ```vb
 ' Nothing if customers is Nothing
@@ -30,7 +30,7 @@ Dim first As Customer = customers?(0)
 Dim count As Integer? = customers?(0)?.Orders?.Count()
 ```
 
-<span data-ttu-id="e0008-108">Для сравнения альтернативный код для первого из этих выражений без условного оператора null имеет значение:</span><span class="sxs-lookup"><span data-stu-id="e0008-108">For comparison, the alternative code for the first of these expressions without a null-conditional operator is:</span></span>
+<span data-ttu-id="5b2d0-108">Для сравнения альтернативный код для первого из этих выражений без условного оператора null имеет значение:</span><span class="sxs-lookup"><span data-stu-id="5b2d0-108">For comparison, the alternative code for the first of these expressions without a null-conditional operator is:</span></span>
 
 ```vb
 Dim length As Integer
@@ -39,7 +39,7 @@ If customers IsNot Nothing Then
 End If
 ```
 
-<span data-ttu-id="e0008-109">Иногда необходимо выполнить действие над объектом, который может иметь значение null, на основе значения логического элемента в этом объекте (например, логическое свойство `IsAllowedFreeShipping` в следующем примере):</span><span class="sxs-lookup"><span data-stu-id="e0008-109">Sometimes you need to take an action on an object that may be null, based on the value of a Boolean member on that object (like the Boolean property `IsAllowedFreeShipping` in the following example):</span></span>
+<span data-ttu-id="5b2d0-109">Иногда необходимо выполнить действие над объектом, который может иметь значение null, на основе значения логического элемента в этом объекте (например, логическое свойство `IsAllowedFreeShipping` в следующем примере):</span><span class="sxs-lookup"><span data-stu-id="5b2d0-109">Sometimes you need to take an action on an object that may be null, based on the value of a Boolean member on that object (like the Boolean property `IsAllowedFreeShipping` in the following example):</span></span>
 
 ```vb
 Dim customer = FindCustomerByID(123) 'customer will be Nothing if not found.
@@ -49,7 +49,7 @@ If customer IsNot Nothing AndAlso customer.IsAllowedFreeShipping Then
 End If
 ```
 
-<span data-ttu-id="e0008-110">Вы можете сократить код и избежать ручной проверки значения NULL с помощью оператора Conditional, как показано ниже:</span><span class="sxs-lookup"><span data-stu-id="e0008-110">You can shorten your code and avoid manually checking for null by using the null-conditional operator as follows:</span></span>
+<span data-ttu-id="5b2d0-110">Вы можете сократить код и избежать ручной проверки значения NULL с помощью оператора Conditional, как показано ниже:</span><span class="sxs-lookup"><span data-stu-id="5b2d0-110">You can shorten your code and avoid manually checking for null by using the null-conditional operator as follows:</span></span>
 
 ```vb
 Dim customer = FindCustomerByID(123) 'customer will be Nothing if not found.
@@ -57,13 +57,13 @@ Dim customer = FindCustomerByID(123) 'customer will be Nothing if not found.
 If customer?.IsAllowedFreeShipping Then ApplyFreeShippingToOrders(customer)
 ```
 
-<span data-ttu-id="e0008-111">Операторы с условием NULL предусматривают сокращенную обработку.</span><span class="sxs-lookup"><span data-stu-id="e0008-111">The null-conditional operators are short-circuiting.</span></span>  <span data-ttu-id="e0008-112">Если одна операция в цепочке условного доступа к члену и операции с индексами возвращает `Nothing`, оставшаяся часть выполнения цепочки останавливается.</span><span class="sxs-lookup"><span data-stu-id="e0008-112">If one operation in a chain of conditional member access and index operations returns `Nothing`, the rest of the chain’s execution stops.</span></span>  <span data-ttu-id="e0008-113">В следующем примере `C(E)` не вычисляется, если `A`, `B`или `C` равен `Nothing`.</span><span class="sxs-lookup"><span data-stu-id="e0008-113">In the following example, `C(E)` isn't evaluated if `A`, `B`, or `C` evaluates to `Nothing`.</span></span>
+<span data-ttu-id="5b2d0-111">Операторы с условием NULL предусматривают сокращенную обработку.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-111">The null-conditional operators are short-circuiting.</span></span>  <span data-ttu-id="5b2d0-112">Если одна операция в цепочке операций доступа к условному элементу и операциям с индексами возвращает `Nothing` , оставшаяся часть выполнения цепочки останавливается.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-112">If one operation in a chain of conditional member access and index operations returns `Nothing`, the rest of the chain’s execution stops.</span></span>  <span data-ttu-id="5b2d0-113">В следующем примере `C(E)` не вычисляется, если `A` , `B` или `C` имеет значение `Nothing` .</span><span class="sxs-lookup"><span data-stu-id="5b2d0-113">In the following example, `C(E)` isn't evaluated if `A`, `B`, or `C` evaluates to `Nothing`.</span></span>
 
 ```vb
 A?.B?.C?(E)
 ```
 
-<span data-ttu-id="e0008-114">Другим вариантом использования для доступа к членам с атрибутом null является вызов делегатов потокобезопасным способом с гораздо меньшим объемом кода.</span><span class="sxs-lookup"><span data-stu-id="e0008-114">Another use for null-conditional member access is to invoke delegates in a thread-safe way with much less code.</span></span>  <span data-ttu-id="e0008-115">В следующем примере определяются два типа: `NewsBroadcaster` и `NewsReceiver`.</span><span class="sxs-lookup"><span data-stu-id="e0008-115">The following example defines two types, a `NewsBroadcaster` and a `NewsReceiver`.</span></span> <span data-ttu-id="e0008-116">Элементы новостей отправляются получателю с помощью делегата `NewsBroadcaster.SendNews`.</span><span class="sxs-lookup"><span data-stu-id="e0008-116">News items are sent to the receiver by the `NewsBroadcaster.SendNews` delegate.</span></span>
+<span data-ttu-id="5b2d0-114">Другим вариантом использования для доступа к членам с атрибутом null является вызов делегатов потокобезопасным способом с гораздо меньшим объемом кода.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-114">Another use for null-conditional member access is to invoke delegates in a thread-safe way with much less code.</span></span>  <span data-ttu-id="5b2d0-115">В следующем примере определяются два типа: `NewsBroadcaster` и `NewsReceiver` .</span><span class="sxs-lookup"><span data-stu-id="5b2d0-115">The following example defines two types, a `NewsBroadcaster` and a `NewsReceiver`.</span></span> <span data-ttu-id="5b2d0-116">Элементы новостей отправляются получателю `NewsBroadcaster.SendNews` делегатом.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-116">News items are sent to the receiver by the `NewsBroadcaster.SendNews` delegate.</span></span>
 
 ```vb
 Public Module NewsBroadcaster
@@ -91,7 +91,7 @@ Public Class NewsReceiver
 End Class
 ```
 
-<span data-ttu-id="e0008-117">Если в списке вызовов `SendNews` нет элементов, `SendNews` делегат создает <xref:System.NullReferenceException>.</span><span class="sxs-lookup"><span data-stu-id="e0008-117">If there are no elements in the `SendNews` invocation list, the `SendNews` delegate throws a <xref:System.NullReferenceException>.</span></span> <span data-ttu-id="e0008-118">Перед пустыми условными операторами, код, подобный приведенному ниже, гарантирует, что список вызовов делегата не `Nothing`:</span><span class="sxs-lookup"><span data-stu-id="e0008-118">Before null conditional operators, code like the following ensured that the delegate invocation list was not `Nothing`:</span></span>
+<span data-ttu-id="5b2d0-117">Если в `SendNews` списке вызовов нет элементов, `SendNews` делегат создает исключение <xref:System.NullReferenceException> .</span><span class="sxs-lookup"><span data-stu-id="5b2d0-117">If there are no elements in the `SendNews` invocation list, the `SendNews` delegate throws a <xref:System.NullReferenceException>.</span></span> <span data-ttu-id="5b2d0-118">Перед пустыми условными операторами, код, подобный приведенному ниже, гарантирует, что список вызовов делегата не был `Nothing` :</span><span class="sxs-lookup"><span data-stu-id="5b2d0-118">Before null conditional operators, code like the following ensured that the delegate invocation list was not `Nothing`:</span></span>
 
 ```vb
 SendNews = SendNews.Combine({SendNews, client})
@@ -100,17 +100,17 @@ If SendNews IsNot Nothing Then
 End If
 ```
 
-<span data-ttu-id="e0008-119">Новый способ гораздо проще:</span><span class="sxs-lookup"><span data-stu-id="e0008-119">The new way is much simpler:</span></span>
+<span data-ttu-id="5b2d0-119">Новый способ гораздо проще:</span><span class="sxs-lookup"><span data-stu-id="5b2d0-119">The new way is much simpler:</span></span>
 
 ```vb
 SendNews = SendNews.Combine({SendNews, client})
 SendNews?.Invoke("Just in...")
 ```
 
-<span data-ttu-id="e0008-120">Новый способ является потокобезопасным, так как компилятор создает код для вычисления `SendNews` только один раз, запоминая результат во временной переменной.</span><span class="sxs-lookup"><span data-stu-id="e0008-120">The new way is thread-safe because the compiler generates code to evaluate `SendNews` one time only, keeping the result in a temporary variable.</span></span> <span data-ttu-id="e0008-121">Необходимо явно вызывать метод `Invoke`, так как отсутствует синтаксис `SendNews?(String)` для вызова делегатов с условием NULL.</span><span class="sxs-lookup"><span data-stu-id="e0008-121">You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `SendNews?(String)`.</span></span>
+<span data-ttu-id="5b2d0-120">Новый способ является потокобезопасным, так как компилятор создает код для вычисления `SendNews` только один раз, запоминая результат во временной переменной.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-120">The new way is thread-safe because the compiler generates code to evaluate `SendNews` one time only, keeping the result in a temporary variable.</span></span> <span data-ttu-id="5b2d0-121">Необходимо явно вызывать метод `Invoke`, так как отсутствует синтаксис `SendNews?(String)` для вызова делегатов с условием NULL.</span><span class="sxs-lookup"><span data-stu-id="5b2d0-121">You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `SendNews?(String)`.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e0008-122">См. также</span><span class="sxs-lookup"><span data-stu-id="e0008-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5b2d0-122">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="5b2d0-122">See also</span></span>
 
-- [<span data-ttu-id="e0008-123">Операторы (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="e0008-123">Operators (Visual Basic)</span></span>](index.md)
-- [<span data-ttu-id="e0008-124">Руководство по программированию на Visual Basic</span><span class="sxs-lookup"><span data-stu-id="e0008-124">Visual Basic Programming Guide</span></span>](../../../visual-basic/programming-guide/index.md)
-- [<span data-ttu-id="e0008-125">Справочник по языку Visual Basic</span><span class="sxs-lookup"><span data-stu-id="e0008-125">Visual Basic Language Reference</span></span>](../../../visual-basic/language-reference/index.md)
+- [<span data-ttu-id="5b2d0-123">Операторы (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="5b2d0-123">Operators (Visual Basic)</span></span>](index.md)
+- [<span data-ttu-id="5b2d0-124">Руководство по программированию на Visual Basic</span><span class="sxs-lookup"><span data-stu-id="5b2d0-124">Visual Basic Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="5b2d0-125">Справочник по языку Visual Basic</span><span class="sxs-lookup"><span data-stu-id="5b2d0-125">Visual Basic Language Reference</span></span>](../index.md)

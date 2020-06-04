@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30439
 ms.assetid: 0a842906-3bc5-4946-8a37-3e3da883ef63
-ms.openlocfilehash: 4f801337c07d6b3829aa6e0c535c434d8bd672b2
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 2f282e6268e4e4b1e86657408c356d1c19c48c1a
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61649859"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401593"
 ---
-# <a name="constant-expression-not-representable-in-type-typename"></a><span data-ttu-id="6a254-102">Константное выражение, которое нельзя представить в типе "\<typename >"</span><span class="sxs-lookup"><span data-stu-id="6a254-102">Constant expression not representable in type '\<typename>'</span></span>
-<span data-ttu-id="6a254-103">Вы пытаетесь вычислить константу, которая не соответствует целевому типу, обычно из-за переполнения диапазона.</span><span class="sxs-lookup"><span data-stu-id="6a254-103">You are trying to evaluate a constant that will not fit into the target type, usually because it is overflowing the range.</span></span>  
+# <a name="constant-expression-not-representable-in-type-typename"></a><span data-ttu-id="03b34-102">Константное выражение не может быть представлено как имеющее тип \<typename></span><span class="sxs-lookup"><span data-stu-id="03b34-102">Constant expression not representable in type '\<typename>'</span></span>
+<span data-ttu-id="03b34-103">Вы пытаетесь вычислить константу, которая не помещается в целевой тип, обычно потому, что она переполняет диапазон.</span><span class="sxs-lookup"><span data-stu-id="03b34-103">You are trying to evaluate a constant that will not fit into the target type, usually because it is overflowing the range.</span></span>  
   
- <span data-ttu-id="6a254-104">**Идентификатор ошибки:** BC30439</span><span class="sxs-lookup"><span data-stu-id="6a254-104">**Error ID:** BC30439</span></span>  
+ <span data-ttu-id="03b34-104">**Идентификатор ошибки:** BC30439</span><span class="sxs-lookup"><span data-stu-id="03b34-104">**Error ID:** BC30439</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="6a254-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="6a254-105">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="03b34-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="03b34-105">To correct this error</span></span>  
   
-1. <span data-ttu-id="6a254-106">Измените тип целевого объекта, который может обрабатывать константы.</span><span class="sxs-lookup"><span data-stu-id="6a254-106">Change the target type to one that can handle the constant.</span></span>  
+1. <span data-ttu-id="03b34-106">Измените тип целевого объекта на другой, который может справиться с константой.</span><span class="sxs-lookup"><span data-stu-id="03b34-106">Change the target type to one that can handle the constant.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6a254-107">См. также</span><span class="sxs-lookup"><span data-stu-id="6a254-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="03b34-107">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="03b34-107">See also</span></span>
 
-- [<span data-ttu-id="6a254-108">Общие сведения о константах</span><span class="sxs-lookup"><span data-stu-id="6a254-108">Constants Overview</span></span>](../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
-- [<span data-ttu-id="6a254-109">Константы и перечисления</span><span class="sxs-lookup"><span data-stu-id="6a254-109">Constants and Enumerations</span></span>](../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [<span data-ttu-id="03b34-108">Общие сведения о константах</span><span class="sxs-lookup"><span data-stu-id="03b34-108">Constants Overview</span></span>](../../programming-guide/language-features/constants-enums/constants-overview.md)
+- [<span data-ttu-id="03b34-109">Константы и перечисления</span><span class="sxs-lookup"><span data-stu-id="03b34-109">Constants and Enumerations</span></span>](../constants-and-enumerations.md)

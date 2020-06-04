@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - BC36563
 ms.assetid: 3ca8b873-e98d-419b-95f2-d75bd2a9eb6c
-ms.openlocfilehash: 925a17bef5147a5679a076af1801bdd305dd5bad
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8e5e94bbde016ec7342a9933905977dac85fb035
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61921034"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397250"
 ---
-# <a name="method-does-not-have-a-signature-compatible-with-the-delegate"></a><span data-ttu-id="3382e-102">Метод не имеет подписи, совместимой с делегатом</span><span class="sxs-lookup"><span data-stu-id="3382e-102">Method does not have a signature compatible with the delegate</span></span>
-<span data-ttu-id="3382e-103">Есть несоответствие между сигнатурами метода и делегата, к которому вы пытаетесь использовать.</span><span class="sxs-lookup"><span data-stu-id="3382e-103">There is an incompatibility between the signatures of the method and the delegate you are trying to use.</span></span> <span data-ttu-id="3382e-104">Типы параметров и значений, возвращаемых классом делегата, определяются оператором `Delegate` .</span><span class="sxs-lookup"><span data-stu-id="3382e-104">The `Delegate` statement defines the parameter types and return types of a delegate class.</span></span> <span data-ttu-id="3382e-105">Любая процедура, которая имеет соответствующие типами параметров и возвращаемые типы можно использовать для создания экземпляра этого типа делегата.</span><span class="sxs-lookup"><span data-stu-id="3382e-105">Any procedure that has matching parameters of compatible types and return types can be used to create an instance of this delegate type.</span></span>  
+# <a name="method-does-not-have-a-signature-compatible-with-the-delegate"></a><span data-ttu-id="6fb76-102">Метод не имеет подписи, совместимой с делегатом</span><span class="sxs-lookup"><span data-stu-id="6fb76-102">Method does not have a signature compatible with the delegate</span></span>
+<span data-ttu-id="6fb76-103">Существует несовместимость между сигнатурами метода и делегата, который вы пытаетесь использовать.</span><span class="sxs-lookup"><span data-stu-id="6fb76-103">There is an incompatibility between the signatures of the method and the delegate you are trying to use.</span></span> <span data-ttu-id="6fb76-104">Типы параметров и значений, возвращаемых классом делегата, определяются оператором `Delegate` .</span><span class="sxs-lookup"><span data-stu-id="6fb76-104">The `Delegate` statement defines the parameter types and return types of a delegate class.</span></span> <span data-ttu-id="6fb76-105">Для создания экземпляра этого типа делегата можно использовать любую процедуру, которая имеет соответствующие параметры совместимых типов и возвращаемых типов.</span><span class="sxs-lookup"><span data-stu-id="6fb76-105">Any procedure that has matching parameters of compatible types and return types can be used to create an instance of this delegate type.</span></span>  
   
- <span data-ttu-id="3382e-106">**Идентификатор ошибки**: BC36563</span><span class="sxs-lookup"><span data-stu-id="3382e-106">**Error ID**: BC36563</span></span>  
+ <span data-ttu-id="6fb76-106">**Идентификатор ошибки**: BC36563</span><span class="sxs-lookup"><span data-stu-id="6fb76-106">**Error ID**: BC36563</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3382e-107">См. также</span><span class="sxs-lookup"><span data-stu-id="3382e-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6fb76-107">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6fb76-107">See also</span></span>
 
-- [<span data-ttu-id="3382e-108">Оператор AddressOf</span><span class="sxs-lookup"><span data-stu-id="3382e-108">AddressOf Operator</span></span>](../../../visual-basic/language-reference/operators/addressof-operator.md)
-- [<span data-ttu-id="3382e-109">Оператор Delegate</span><span class="sxs-lookup"><span data-stu-id="3382e-109">Delegate Statement</span></span>](../../../visual-basic/language-reference/statements/delegate-statement.md)
-- [<span data-ttu-id="3382e-110">Разрешение перегрузки</span><span class="sxs-lookup"><span data-stu-id="3382e-110">Overload Resolution</span></span>](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
-- [<span data-ttu-id="3382e-111">Generic Types in Visual Basic</span><span class="sxs-lookup"><span data-stu-id="3382e-111">Generic Types in Visual Basic</span></span>](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [<span data-ttu-id="6fb76-108">Оператор AddressOf</span><span class="sxs-lookup"><span data-stu-id="6fb76-108">AddressOf Operator</span></span>](../operators/addressof-operator.md)
+- [<span data-ttu-id="6fb76-109">Оператор Delegate</span><span class="sxs-lookup"><span data-stu-id="6fb76-109">Delegate Statement</span></span>](../statements/delegate-statement.md)
+- [<span data-ttu-id="6fb76-110">Разрешение перегрузки</span><span class="sxs-lookup"><span data-stu-id="6fb76-110">Overload Resolution</span></span>](../../programming-guide/language-features/procedures/overload-resolution.md)
+- [<span data-ttu-id="6fb76-111">Generic Types in Visual Basic</span><span class="sxs-lookup"><span data-stu-id="6fb76-111">Generic Types in Visual Basic</span></span>](../../programming-guide/language-features/data-types/generic-types.md)

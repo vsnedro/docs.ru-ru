@@ -4,30 +4,30 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - clauses [Visual Basic]
 ms.assetid: 5e89f5f3-d129-4ed1-8857-30cd71cff95e
-ms.openlocfilehash: b6b1d1587e63b03adc56726d4868cdc5dcc4548c
-ms.sourcegitcommit: a4f9b754059f0210e29ae0578363a27b9ba84b64
+ms.openlocfilehash: a8974d83901c1f005a8d6042bf3a9de2e5e0e125
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74838238"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397146"
 ---
-# <a name="clauses-visual-basic"></a><span data-ttu-id="3e83c-102">Предложения (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="3e83c-102">Clauses (Visual Basic)</span></span>
-<span data-ttu-id="3e83c-103">Темы в этом разделе задокументированы Visual Basic предложений времени выполнения.</span><span class="sxs-lookup"><span data-stu-id="3e83c-103">The topics in this section document Visual Basic run-time clauses.</span></span>  
+# <a name="clauses-visual-basic"></a><span data-ttu-id="9fadf-102">Предложения (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="9fadf-102">Clauses (Visual Basic)</span></span>
+<span data-ttu-id="9fadf-103">Темы в этом разделе задокументированы Visual Basic предложений времени выполнения.</span><span class="sxs-lookup"><span data-stu-id="9fadf-103">The topics in this section document Visual Basic run-time clauses.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="3e83c-104">Содержание</span><span class="sxs-lookup"><span data-stu-id="3e83c-104">In This Section</span></span>  
- [<span data-ttu-id="3e83c-105">Alias</span><span class="sxs-lookup"><span data-stu-id="3e83c-105">Alias</span></span>](../../../visual-basic/language-reference/statements/alias-clause.md)  
+## <a name="in-this-section"></a><span data-ttu-id="9fadf-104">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="9fadf-104">In This Section</span></span>  
+ [<span data-ttu-id="9fadf-105">Псевдоним</span><span class="sxs-lookup"><span data-stu-id="9fadf-105">Alias</span></span>](alias-clause.md)  
   
- [<span data-ttu-id="3e83c-106">As</span><span class="sxs-lookup"><span data-stu-id="3e83c-106">As</span></span>](../../../visual-basic/language-reference/statements/as-clause.md)  
+ [<span data-ttu-id="9fadf-106">Тех</span><span class="sxs-lookup"><span data-stu-id="9fadf-106">As</span></span>](as-clause.md)  
   
- [<span data-ttu-id="3e83c-107">Handles</span><span class="sxs-lookup"><span data-stu-id="3e83c-107">Handles</span></span>](../../../visual-basic/language-reference/statements/handles-clause.md)  
+ [<span data-ttu-id="9fadf-107">Маркеры</span><span class="sxs-lookup"><span data-stu-id="9fadf-107">Handles</span></span>](handles-clause.md)  
   
- [<span data-ttu-id="3e83c-108">Implements</span><span class="sxs-lookup"><span data-stu-id="3e83c-108">Implements</span></span>](../../../visual-basic/language-reference/statements/implements-clause.md)  
+ [<span data-ttu-id="9fadf-108">Реализации</span><span class="sxs-lookup"><span data-stu-id="9fadf-108">Implements</span></span>](implements-clause.md)  
   
- [<span data-ttu-id="3e83c-109">In</span><span class="sxs-lookup"><span data-stu-id="3e83c-109">In</span></span>](../../../visual-basic/language-reference/statements/in-clause.md)  
+ [<span data-ttu-id="9fadf-109">В</span><span class="sxs-lookup"><span data-stu-id="9fadf-109">In</span></span>](in-clause.md)  
   
- [<span data-ttu-id="3e83c-110">Into</span><span class="sxs-lookup"><span data-stu-id="3e83c-110">Into</span></span>](../../../visual-basic/language-reference/statements/into-clause.md)  
+ [<span data-ttu-id="9fadf-110">Бить</span><span class="sxs-lookup"><span data-stu-id="9fadf-110">Into</span></span>](into-clause.md)  
   
- [<span data-ttu-id="3e83c-111">Of</span><span class="sxs-lookup"><span data-stu-id="3e83c-111">Of</span></span>](../../../visual-basic/language-reference/statements/of-clause.md)  
+ [<span data-ttu-id="9fadf-111">Окна</span><span class="sxs-lookup"><span data-stu-id="9fadf-111">Of</span></span>](of-clause.md)  
   
-## <a name="related-sections"></a><span data-ttu-id="3e83c-112">Связанные разделы</span><span class="sxs-lookup"><span data-stu-id="3e83c-112">Related Sections</span></span>  
- [<span data-ttu-id="3e83c-113">Справочник по языку Visual Basic</span><span class="sxs-lookup"><span data-stu-id="3e83c-113">Visual Basic Language Reference</span></span>](../../../visual-basic/language-reference/index.md)  
+## <a name="related-sections"></a><span data-ttu-id="9fadf-112">Связанные разделы</span><span class="sxs-lookup"><span data-stu-id="9fadf-112">Related Sections</span></span>  
+ [<span data-ttu-id="9fadf-113">Справочник по языку Visual Basic</span><span class="sxs-lookup"><span data-stu-id="9fadf-113">Visual Basic Language Reference</span></span>](../index.md)  

@@ -2,18 +2,18 @@
 title: Практическое руководство. Подсчет вхождений слова в строке (LINQ)
 ms.date: 07/20/2015
 ms.assetid: bc367e46-f7cc-45f9-936f-754e661b7bb9
-ms.openlocfilehash: 07742e7e99291e056e4c91a31b2e588e36a6e177
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: c6894359e5785419ccf8f283f976c0a897288a5d
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75348181"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405330"
 ---
-# <a name="how-to-count-occurrences-of-a-word-in-a-string-linq-visual-basic"></a><span data-ttu-id="06e77-102">Как подсчитать количество вхождений слова в строке (LINQ) (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="06e77-102">How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)</span></span>
+# <a name="how-to-count-occurrences-of-a-word-in-a-string-linq-visual-basic"></a><span data-ttu-id="68e04-102">Как подсчитать количество вхождений слова в строке (LINQ) (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="68e04-102">How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)</span></span>
 
-<span data-ttu-id="06e77-103">В этом примере показано, как с помощью запроса LINQ определить, сколько раз то или иное слово встречается в строке.</span><span class="sxs-lookup"><span data-stu-id="06e77-103">This example shows how to use a LINQ query to count the occurrences of a specified word in a string.</span></span> <span data-ttu-id="06e77-104">Обратите внимание на то, что для этого сначала вызывается метод <xref:System.String.Split%2A>, который создает массив слов.</span><span class="sxs-lookup"><span data-stu-id="06e77-104">Note that to perform the count, first the <xref:System.String.Split%2A> method is called to create an array of words.</span></span> <span data-ttu-id="06e77-105">Использование метода <xref:System.String.Split%2A> связано с определенным снижением производительности.</span><span class="sxs-lookup"><span data-stu-id="06e77-105">There is a performance cost to the <xref:System.String.Split%2A> method.</span></span> <span data-ttu-id="06e77-106">Если для строки выполняется только подсчет слов, рекомендуется вместо него использовать метод <xref:System.Text.RegularExpressions.Regex.Matches%2A> или <xref:System.String.IndexOf%2A>.</span><span class="sxs-lookup"><span data-stu-id="06e77-106">If the only operation on the string is to count the words, you should consider using the <xref:System.Text.RegularExpressions.Regex.Matches%2A> or <xref:System.String.IndexOf%2A> methods instead.</span></span> <span data-ttu-id="06e77-107">Если же производительность не критична или вы уже разбили предложение, чтобы выполнить с ним другие типы запросов, имеет смысл подсчитать слова или фразы с помощью LINQ.</span><span class="sxs-lookup"><span data-stu-id="06e77-107">However, if performance is not a critical issue, or you have already split the sentence in order to perform other types of queries over it, then it makes sense to use LINQ to count the words or phrases as well.</span></span>
+<span data-ttu-id="68e04-103">В этом примере показано, как с помощью запроса LINQ определить, сколько раз то или иное слово встречается в строке.</span><span class="sxs-lookup"><span data-stu-id="68e04-103">This example shows how to use a LINQ query to count the occurrences of a specified word in a string.</span></span> <span data-ttu-id="68e04-104">Обратите внимание на то, что для этого сначала вызывается метод <xref:System.String.Split%2A>, который создает массив слов.</span><span class="sxs-lookup"><span data-stu-id="68e04-104">Note that to perform the count, first the <xref:System.String.Split%2A> method is called to create an array of words.</span></span> <span data-ttu-id="68e04-105">Использование метода <xref:System.String.Split%2A> связано с определенным снижением производительности.</span><span class="sxs-lookup"><span data-stu-id="68e04-105">There is a performance cost to the <xref:System.String.Split%2A> method.</span></span> <span data-ttu-id="68e04-106">Если для строки выполняется только подсчет слов, рекомендуется вместо него использовать метод <xref:System.Text.RegularExpressions.Regex.Matches%2A> или <xref:System.String.IndexOf%2A>.</span><span class="sxs-lookup"><span data-stu-id="68e04-106">If the only operation on the string is to count the words, you should consider using the <xref:System.Text.RegularExpressions.Regex.Matches%2A> or <xref:System.String.IndexOf%2A> methods instead.</span></span> <span data-ttu-id="68e04-107">Если же производительность не критична или вы уже разбили предложение, чтобы выполнить с ним другие типы запросов, имеет смысл подсчитать слова или фразы с помощью LINQ.</span><span class="sxs-lookup"><span data-stu-id="68e04-107">However, if performance is not a critical issue, or you have already split the sentence in order to perform other types of queries over it, then it makes sense to use LINQ to count the words or phrases as well.</span></span>
 
-## <a name="example"></a><span data-ttu-id="06e77-108">Пример</span><span class="sxs-lookup"><span data-stu-id="06e77-108">Example</span></span>
+## <a name="example"></a><span data-ttu-id="68e04-108">Пример</span><span class="sxs-lookup"><span data-stu-id="68e04-108">Example</span></span>
 
 ```vb
 Class CountWords
@@ -58,10 +58,10 @@ End Class
 ' 3 occurrence(s) of the search term "data" were found.
 ```
 
-## <a name="compile-the-code"></a><span data-ttu-id="06e77-109">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="06e77-109">Compile the code</span></span>
+## <a name="compile-the-code"></a><span data-ttu-id="68e04-109">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="68e04-109">Compile the code</span></span>
 
-<span data-ttu-id="06e77-110">Создайте Visual Basic проект консольного приложения, используя инструкцию `Imports` для пространства имен System. LINQ.</span><span class="sxs-lookup"><span data-stu-id="06e77-110">Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.</span></span>
+<span data-ttu-id="68e04-110">Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.</span><span class="sxs-lookup"><span data-stu-id="68e04-110">Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="06e77-111">См. также:</span><span class="sxs-lookup"><span data-stu-id="06e77-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="68e04-111">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="68e04-111">See also</span></span>
 
-- [<span data-ttu-id="06e77-112">LINQ и строки (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="06e77-112">LINQ and Strings (Visual Basic)</span></span>](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [<span data-ttu-id="68e04-112">LINQ и строки (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="68e04-112">LINQ and Strings (Visual Basic)</span></span>](linq-and-strings.md)
