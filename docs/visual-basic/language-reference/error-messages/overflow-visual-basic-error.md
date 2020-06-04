@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BC30036
 ms.assetid: b2c83de9-a132-449a-870b-e7c409d4d7ee
-ms.openlocfilehash: f2d7a025fd18c5655caea4ae45477798425d9ece
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: c11c78292301cf837ec8d4003b6434cd968abe16
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64661792"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84387352"
 ---
-# <a name="overflow-visual-basic-error"></a><span data-ttu-id="db775-102">Переполнение (ошибка Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="db775-102">Overflow (Visual Basic Error)</span></span>
-<span data-ttu-id="db775-103">Литерал представляет собой значение, выходящее за пределы типа данных, к которому он назначен.</span><span class="sxs-lookup"><span data-stu-id="db775-103">A literal represents a value outside the limits of the data type to which it is being assigned.</span></span>  
+# <a name="overflow-visual-basic-error"></a><span data-ttu-id="cd072-102">Переполнение (ошибка Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="cd072-102">Overflow (Visual Basic Error)</span></span>
+<span data-ttu-id="cd072-103">Литерал представляет значение за пределами ограничений типа данных, которым он присваивается.</span><span class="sxs-lookup"><span data-stu-id="cd072-103">A literal represents a value outside the limits of the data type to which it is being assigned.</span></span>  
   
- <span data-ttu-id="db775-104">**Идентификатор ошибки:** BC30036</span><span class="sxs-lookup"><span data-stu-id="db775-104">**Error ID:** BC30036</span></span>  
+ <span data-ttu-id="cd072-104">**Идентификатор ошибки:** BC30036</span><span class="sxs-lookup"><span data-stu-id="cd072-104">**Error ID:** BC30036</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="db775-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="db775-105">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="cd072-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="cd072-105">To correct this error</span></span>  
   
-- <span data-ttu-id="db775-106">Сверьтесь с диапазоном значений для целевого типа данных и перепишите литерал для обеспечения соответствия для этого диапазона.</span><span class="sxs-lookup"><span data-stu-id="db775-106">Consult the value range for the target data type and rewrite the literal to conform to that range.</span></span>  
+- <span data-ttu-id="cd072-106">Просмотрите диапазон значений для целевого типа данных и перепишите литерал, чтобы он соответствовал этому диапазону.</span><span class="sxs-lookup"><span data-stu-id="cd072-106">Consult the value range for the target data type and rewrite the literal to conform to that range.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="db775-107">См. также</span><span class="sxs-lookup"><span data-stu-id="db775-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cd072-107">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="cd072-107">See also</span></span>
 
-- [<span data-ttu-id="db775-108">Типы данных</span><span class="sxs-lookup"><span data-stu-id="db775-108">Data Types</span></span>](../../../visual-basic/language-reference/data-types/index.md)
+- [<span data-ttu-id="cd072-108">Типы данных</span><span class="sxs-lookup"><span data-stu-id="cd072-108">Data Types</span></span>](../data-types/index.md)
