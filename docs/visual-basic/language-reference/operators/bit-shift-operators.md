@@ -1,25 +1,25 @@
 ---
-title: Операторы поразрядного сдвига
+title: Операторы сдвига битов
 ms.date: 07/20/2015
 helpviewer_keywords:
 - shift operators [Visual Basic], bit
 - operators [Visual Basic], shift
 - bit shift operators [Visual Basic]
 ms.assetid: 64889319-a057-471b-85d8-69fcd4af6230
-ms.openlocfilehash: 10f64f8f39c5f96072ebe56a1c60753afeafc022
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 549f3caf2c3ccf8b985891acca689e6af0aad73b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74336125"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84371717"
 ---
-# <a name="bit-shift-operators-visual-basic"></a><span data-ttu-id="b8976-102">Операторы поразрядного сдвига (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="b8976-102">Bit Shift Operators (Visual Basic)</span></span>
-<span data-ttu-id="b8976-103">Ниже приведены операторы побитового сдвига, определенные в Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="b8976-103">The following are the bit shift operators defined in Visual Basic.</span></span>  
+# <a name="bit-shift-operators-visual-basic"></a><span data-ttu-id="21312-102">Операторы поразрядного сдвига (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="21312-102">Bit Shift Operators (Visual Basic)</span></span>
+<span data-ttu-id="21312-103">Ниже приведены операторы побитового сдвига, определенные в Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="21312-103">The following are the bit shift operators defined in Visual Basic.</span></span>  
   
- [<span data-ttu-id="b8976-104">Оператор <\<</span><span class="sxs-lookup"><span data-stu-id="b8976-104"><\< Operator</span></span>](../../../visual-basic/language-reference/operators/left-shift-operator.md)  
+ [<span data-ttu-id="21312-104"><\<Станции</span><span class="sxs-lookup"><span data-stu-id="21312-104"><\< Operator</span></span>](left-shift-operator.md)  
   
- [<span data-ttu-id="b8976-105">Оператор >></span><span class="sxs-lookup"><span data-stu-id="b8976-105">>> Operator</span></span>](../../../visual-basic/language-reference/operators/right-shift-operator.md)  
+ [<span data-ttu-id="21312-105">Оператор>> </span><span class="sxs-lookup"><span data-stu-id="21312-105">>> Operator</span></span>](right-shift-operator.md)  
   
-## <a name="see-also"></a><span data-ttu-id="b8976-106">См. также</span><span class="sxs-lookup"><span data-stu-id="b8976-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="21312-106">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="21312-106">See also</span></span>
 
-- [<span data-ttu-id="b8976-107">Список операторов, сгруппированных по функциональному назначению</span><span class="sxs-lookup"><span data-stu-id="b8976-107">Operators Listed by Functionality</span></span>](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [<span data-ttu-id="21312-107">Список операторов, сгруппированных по функциональному назначению</span><span class="sxs-lookup"><span data-stu-id="21312-107">Operators Listed by Functionality</span></span>](operators-listed-by-functionality.md)
