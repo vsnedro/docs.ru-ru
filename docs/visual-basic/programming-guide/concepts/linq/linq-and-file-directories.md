@@ -2,12 +2,12 @@
 title: LINQ и каталоги файлов
 ms.date: 07/20/2015
 ms.assetid: 159fd5c3-3926-4071-ae78-d8e423287eb7
-ms.openlocfilehash: 390d3c7a1c738aea0df8e3dcad0edb70563f8fb6
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 9738dc2b07b33b2d96f8134e8418c54aae53e6a1
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74347791"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397523"
 ---
 # <a name="linq-and-file-directories-visual-basic"></a>LINQ и каталоги файлов (Visual Basic)
 Многие операции файловой системы по существу являются запросами и, следовательно, соответствуют принципам LINQ.  
@@ -16,30 +16,30 @@ ms.locfileid: "74347791"
   
  В этом разделе рассматриваются следующие вопросы.  
   
- [Как запросить файлы с указанным атрибутом или именем (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md)  
+ [Как запросить файлы с указанным атрибутом или именем (Visual Basic)](how-to-query-for-files-with-a-specified-attribute-or-name.md)  
  Демонстрация поиска файлов путем проверки одного или нескольких свойств его объекта <xref:System.IO.FileInfo>.  
   
- [Пошаговое руководство. Группировка файлов по расширению (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md)  
+ [Пошаговое руководство. Группировка файлов по расширению (LINQ) (Visual Basic)](how-to-group-files-by-extension-linq.md)  
  Демонстрация возвращения групп объектов <xref:System.IO.FileInfo> в зависимости от расширения имени файла.  
   
- [Как запросить общее число байтов в наборе папок (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders.md)  
+ [Как запросить общее число байтов в наборе папок (LINQ) (Visual Basic)](how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders.md)  
  Демонстрация возвращения общего числа байтов во всех файлах в указанном дереве каталогов.  
   
- [Как сравнить содержимое двух папок (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md)s  
+ [Как сравнить содержимое двух папок (LINQ) (Visual Basic)](how-to-compare-the-contents-of-two-folders-linq.md)s  
  Демонстрация возвращения всех файлов, присутствующих в двух указанных папках, а также всех файлов, которые присутствуют в одной папке, но отсутствуют в другой.  
   
- [Как запросить самый крупный файл или файлы в дереве каталогов (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree.md)  
+ [Практическое руководство. Запрос самого большого файла или файлов в дереве папок (LINQ) (Visual Basic)](how-to-query-for-the-largest-file-or-files-in-a-directory-tree.md)  
  Демонстрация возвращения наибольшего или наименьшего файла либо определенного числа файлов в дереве каталогов.  
   
- [Как запросить дубликаты файлов в дереве каталогов (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md)  
+ [Как запросить дубликаты файлов в дереве каталогов (LINQ) (Visual Basic)](how-to-query-for-duplicate-files-in-a-directory-tree-linq.md)  
  Демонстрация группирования всех имен файлов, находящихся в нескольких расположениях в указанном дереве каталогов. Также показано, как выполнять более сложные сравнения на основе пользовательской функции сравнения.  
   
  [Запрос содержимого файлов в папке (LINQ) (Visual Basic)](how-to-query-the-contents-of-files-in-a-folder-linq.md)  
  Демонстрация итерации по папкам в дереве, открытия каждого файла и запроса содержимого файла.  
   
-## <a name="comments"></a>Comments  
+## <a name="comments"></a>Комментарии  
  Существуют некоторые сложности, связанные с созданием источника данных, который точно представляет содержимое файловой системы и корректно обрабатывает исключения. В примерах этого раздела создается моментальный снимок коллекции объектов <xref:System.IO.FileInfo>, представляющих все файлы в указанной корневой папке и всех ее подпапках. Фактическое состояние каждого объекта <xref:System.IO.FileInfo> может измениться в период между началом и окончанием выполнения запроса. Например, можно создать список объектов <xref:System.IO.FileInfo> для использования в качестве источника данных. При попытке доступа к свойству `Length` в запросе объект <xref:System.IO.FileInfo> попытается получить доступ к файловой системе для обновления значения `Length`. Если файл больше не существует, вы получите исключение <xref:System.IO.FileNotFoundException> в запросе, даже если не запрашиваете файловую систему напрямую. Некоторые запросы в этом разделе используют отдельный метод, который использует эти конкретные исключения в определенных случаях. Другой возможностью является поддержка источника данных, обновляемого динамически с помощью <xref:System.IO.FileSystemWatcher>.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ to Objects (Visual Basic)](linq-to-objects.md)

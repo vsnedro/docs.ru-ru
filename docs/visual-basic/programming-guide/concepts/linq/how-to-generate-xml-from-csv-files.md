@@ -1,19 +1,19 @@
 ---
-title: Практическое руководство. Создание кода XML из CSV-файлов
+title: Практическое руководство. Создание XML из CSV-файлов
 ms.date: 07/20/2015
 ms.assetid: fe4dbc87-7b0d-40bf-88c3-5d706ee89a4d
-ms.openlocfilehash: 79b609c3a706db4c8b4c082fbeaf143632a75033
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: 647cab02c730f18629c669c3526520b2a98a86d8
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636826"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396614"
 ---
 # <a name="how-to-generate-xml-from-csv-files-visual-basic"></a>Как создавать XML-файлы из CSV-файлов (Visual Basic)
-В этом примере показано, как использовать LINQ и [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] для создания XML-файла из файла значений с разделителями-запятыми (CSV).  
+В этом примере показано, как использовать LINQ и [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] для создания XML-документа из файла с разделителями-запятыми (.csv).  
   
 ## <a name="example"></a>Пример  
- Следующий код выполняет запрос LINQ к массиву строк.  
+ В следующем коде выполняется запрос LINQ к массиву строк.  
   
 ```vb  
       ' Create the text file.  
@@ -107,6 +107,6 @@ Console.WriteLine(cust)
 </Root>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Проекции и преобразования (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- [Проекции и преобразования (LINQ to XML) (Visual Basic)](projections-and-transformations-linq-to-xml.md)

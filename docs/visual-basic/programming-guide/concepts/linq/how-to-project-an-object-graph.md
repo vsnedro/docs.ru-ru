@@ -2,18 +2,18 @@
 title: Практическое руководство. Проецирование графа объекта
 ms.date: 07/20/2015
 ms.assetid: 9451eb47-6a31-49d7-84df-73368c618422
-ms.openlocfilehash: 71d41b515983e19f90e163f76ca400248d3cc848
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: 2900a31a469266d392f1b07b4714a08e253d2abd
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636683"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396497"
 ---
 # <a name="how-to-project-an-object-graph-visual-basic"></a>Руководство. Проецирование графа объектов (Visual Basic)
 Данный раздел иллюстрирует способ проецирования, или наполнения, из XML графа объектов.  
   
 ## <a name="example"></a>Пример  
- В следующем коде происходит заполнение графа объектов классами `Address`, `PurchaseOrder` и `PurchaseOrderItem` из XML-документа [Пример XML-файла. Стандартный заказ на покупку (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md).  
+ В следующем коде происходит заполнение графа объектов классами `Address`, `PurchaseOrder` и `PurchaseOrderItem` из XML-документа [Пример XML-файла. Стандартный заказ на покупку (LINQ to XML)](sample-xml-file-typical-purchase-order-linq-to-xml.md).  
   
 ```vb  
 Class Address  
@@ -296,7 +296,7 @@ Sub Main()
 End Sub  
 ```  
   
- В этом примере результат запроса LINQ возвращается в виде <xref:System.Collections.Generic.IEnumerable%601> `PurchaseOrderItem`. Элементы в классе `PurchaseOrder` относятся к типу <xref:System.Collections.Generic.IEnumerable%601> класса `PurchaseOrderItem`. В коде используется метод расширения <xref:System.Linq.Enumerable.ToList%2A> для создания коллекции <xref:System.Collections.Generic.List%601> исходя из результатов запроса.  
+ В данном примере результат запроса LINQ возвращается в виде <xref:System.Collections.Generic.IEnumerable%601> класса `PurchaseOrderItem`. Элементы в классе `PurchaseOrder` относятся к типу <xref:System.Collections.Generic.IEnumerable%601> класса `PurchaseOrderItem`. В коде используется метод расширения <xref:System.Linq.Enumerable.ToList%2A> для создания коллекции <xref:System.Collections.Generic.List%601> исходя из результатов запроса.  
   
  Пример выводит следующие результаты:  
   
@@ -337,8 +337,8 @@ USPrice: 39.98
 ShipDate: 5/21/1999  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq.Enumerable.Select%2A>
 - <xref:System.Linq.Enumerable.ToList%2A>
-- [Проекции и преобразования (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- [Проекции и преобразования (LINQ to XML) (Visual Basic)](projections-and-transformations-linq-to-xml.md)
