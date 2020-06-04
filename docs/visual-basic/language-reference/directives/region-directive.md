@@ -10,12 +10,12 @@ helpviewer_keywords:
 - region directive (#region)
 - '#Region keyword [Visual Basic]'
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
-ms.openlocfilehash: 4cf9b103486378d001b588aa285f590980b51bb8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: cd53a6079c1564a8c73a0a1a6273fc166d18d3e6
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74343797"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409948"
 ---
 # <a name="region-directive"></a>Директива #Region
 
@@ -28,14 +28,14 @@ ms.locfileid: "74343797"
 #End Region  
 ```  
   
-## <a name="parts"></a>Части  
+## <a name="parts"></a>Компоненты  
   
 |Термин|Определение|  
 |---|---|  
-|`identifier_string`|Обязательно. Строка, которая выступает в качестве заголовка области, если он свернут. По умолчанию области свернуты.|  
+|`identifier_string`|Обязательный. Строка, которая выступает в качестве заголовка области, если он свернут. По умолчанию области свернуты.|  
 |`#End Region`|Завершает блок `#Region`.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
 
  Используйте директиву `#Region`, чтобы указать блок кода, который можно разворачивать и сворачивать с помощью функции структурирования в редакторе кода Visual Studio. Вы можете разместить или *вложить*области внутри других регионов, чтобы сгруппировать похожие регионы.  
   
@@ -45,8 +45,8 @@ ms.locfileid: "74343797"
   
  [!code-vb[VbVbalrConditionalComp#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#4)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Директивы #If...Then...#Else](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Директивы #If...Then...#Else](if-then-else-directives.md)
 - [Структура](/visualstudio/ide/outlining)
-- [Практическое руководство. Сворачивание и скрытие частей кода](../../../visual-basic/programming-guide/program-structure/how-to-collapse-and-hide-sections-of-code.md)
+- [Практическое руководство. Сворачивание и скрытие частей кода](../../programming-guide/program-structure/how-to-collapse-and-hide-sections-of-code.md)

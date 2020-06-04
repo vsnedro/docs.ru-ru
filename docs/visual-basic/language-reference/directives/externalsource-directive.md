@@ -12,12 +12,12 @@ helpviewer_keywords:
 - ExternalSource directive (#ExternalSource)
 - '#ExternalSource directive'
 ms.assetid: 243bc6a2-34c3-4eeb-a776-9fd2bf988149
-ms.openlocfilehash: fa0a40827c1b3865b90c7d796ea4dd364774e1c4
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: e4c7704c32c3a6c73e069d0b7129d5386696b438
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74343835"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84402996"
 ---
 # <a name="externalsource-directive"></a>Директива #ExternalSource
 
@@ -31,7 +31,7 @@ ms.locfileid: "74343835"
 #End ExternalSource  
 ```  
   
-## <a name="parts"></a>Части  
+## <a name="parts"></a>Компоненты  
 
  `StringLiteral`  
  Путь к внешнему источнику.  
@@ -45,7 +45,7 @@ ms.locfileid: "74343835"
  `#End ExternalSource`  
  Завершает блок `#ExternalSource`.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
 
  Эта директива используется только компилятором и отладчиком.  
   
@@ -53,6 +53,6 @@ ms.locfileid: "74343835"
   
  Директивы External Source не влияют на компиляцию и не могут быть вложенными. Они предназначены только для внутреннего использования приложением.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Условная компиляция](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [Условная компиляция](../../programming-guide/program-structure/conditional-compilation.md)

@@ -1,24 +1,24 @@
 ---
-title: Инструкции. Объявление объектной переменной и назначение ей объекта
+title: Практическое руководство. Объявление объектной переменной и присвоение ей объекта
 ms.date: 07/20/2015
 helpviewer_keywords:
 - object variables [Visual Basic], declaring
 - declaring object variables [Visual Basic]
 ms.assetid: 2fa77dde-1fb2-439a-80d4-3e9787649fad
-ms.openlocfilehash: eaaeda2a986584e6e1a2e0d2cda3890fb6187598
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: d9a8c1fb30bfa5988d48202e41202e7ede0f5f27
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75344235"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410507"
 ---
 # <a name="how-to-declare-an-object-variable-and-assign-an-object-to-it-in-visual-basic"></a>Практическое руководство. Объявление объектной переменной в Visual Basic и присвоение ей объекта
 
-Переменная [типа данных Object](../../../../visual-basic/language-reference/data-types/object-data-type.md) объявляется путем указания `As Object` в [операторе Dim](../../../../visual-basic/language-reference/statements/dim-statement.md). Вы назначаете объект такой переменной, помещая объект после знака равенства (`=`) в операторе присваивания или в предложении инициализации.
+Переменная [типа данных Object](../../../language-reference/data-types/object-data-type.md) объявляется путем указания `As Object` в [операторе Dim](../../../language-reference/statements/dim-statement.md). Вы назначаете объект такой переменной, помещая объект после знака равенства ( `=` ) в операторе присваивания или предложении инициализации.
 
 ## <a name="example"></a>Пример
 
-В следующем примере объявляется переменная `Object` и ей присваивается текущий экземпляр.
+В следующем примере объявляется `Object` переменная и назначается ей текущий экземпляр.
 
 ```vb
 Dim thisObject As Object
@@ -37,16 +37,16 @@ Dim thisObject As Object= "This is an Object"
 
 - ссылка на пространство имен <xref:System>.
 
-- Класс, структура или модуль, в котором будет размещена инструкция `Dim`.
+- Класс, структура или модуль, в котором будет размещена `Dim` инструкция.
 
 - Процедура, в которой следует разместить оператор присваивания.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Объявление переменных](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Объектные переменные](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Объявление объектной переменной](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
-- [Оператор Dim](../../../../visual-basic/language-reference/statements/dim-statement.md)
-- [Вывод локального типа](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Оператор Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Объявление переменной](variable-declaration.md)
+- [Объектные переменные](object-variables.md)
+- [Объявление объектной переменной](object-variable-declaration.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)
+- [Оператор Dim](../../../language-reference/statements/dim-statement.md)
+- [Вывод локального типа](local-type-inference.md)
+- [Оператор Option Strict](../../../language-reference/statements/option-strict-statement.md)

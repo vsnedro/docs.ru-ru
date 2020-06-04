@@ -6,26 +6,26 @@ helpviewer_keywords:
 - objects [Visual Basic], inheritance
 - object variables [Visual Basic], determining relation
 ms.assetid: da002e3f-6616-4bad-a229-f842d06652bb
-ms.openlocfilehash: b3f5fc017166ba9cf28359db5de850c81b73bd69
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 30e88a21e737aa57513745899577381ed34151a2
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348626"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410468"
 ---
 # <a name="how-to-determine-whether-two-objects-are-related-visual-basic"></a>Практическое руководство. Определение наличия связи между двумя объектами (Visual Basic)
 
-Можно сравнить два объекта, чтобы определить связь между классами, из которых они были созданы. Метод <xref:System.Type.IsInstanceOfType%2A> класса <xref:System.Type?displayProperty=nameWithType> возвращает `True`, если указанный класс наследуется от текущего класса, или если текущий тип является интерфейсом, поддерживаемым указанным классом.
+Можно сравнить два объекта, чтобы определить связь между классами, из которых они были созданы. <xref:System.Type.IsInstanceOfType%2A>Метод <xref:System.Type?displayProperty=nameWithType> класса возвращает значение `True` , если указанный класс наследуется от текущего класса, или если текущий тип является интерфейсом, поддерживаемым указанным классом.
 
 ### <a name="to-determine-if-one-object-inherits-from-another-objects-class-or-interface"></a>Определение того, наследуется ли один объект от класса или интерфейса другого объекта
 
-1. В объекте, который вы считаете, может быть базовым типом, вызовите метод <xref:System.Object.GetType%2A>.
+1. В объекте, который вы считаете, может быть базовым типом, вызовите <xref:System.Object.GetType%2A> метод.
 
-2. В объекте <xref:System.Type?displayProperty=nameWithType>, возвращенном <xref:System.Object.GetType%2A>, вызовите метод <xref:System.Type.IsInstanceOfType%2A>.
+2. В <xref:System.Type?displayProperty=nameWithType> объекте, возвращенном методом <xref:System.Object.GetType%2A> , вызовите <xref:System.Type.IsInstanceOfType%2A> метод.
 
-3. В списке аргументов для <xref:System.Type.IsInstanceOfType%2A>укажите объект, который может быть производным типом.
+3. В списке аргументов для <xref:System.Type.IsInstanceOfType%2A> Укажите объект, который может иметь производный тип.
 
-    <xref:System.Type.IsInstanceOfType%2A> возвращает `True`, если его тип аргумента наследуется от типа объекта <xref:System.Type?displayProperty=nameWithType>.
+    <xref:System.Type.IsInstanceOfType%2A>Возвращает значение `True` , если тип его аргумента наследуется от <xref:System.Type?displayProperty=nameWithType> типа объекта.
 
 ## <a name="example"></a>Пример
  В следующем примере определяется, представляет ли один объект класс, производный от класса другого объекта.
@@ -46,14 +46,14 @@ Public Class testTheseClasses
 End Class
 ```
 
-Обратите внимание на неожиданное размещение двух переменных объекта в вызове метода <xref:System.Type.IsInstanceOfType%2A>. Предполагаемый базовый тип используется для создания класса <xref:System.Type?displayProperty=nameWithType>, а предполагаемый производный тип передается в качестве аргумента методу <xref:System.Type.IsInstanceOfType%2A>.
+Обратите внимание на непредвиденное размещение двух переменных объекта в вызове <xref:System.Type.IsInstanceOfType%2A> . Предполагаемый базовый тип используется для создания <xref:System.Type?displayProperty=nameWithType> класса, а предполагаемый производный тип передается в качестве аргумента в <xref:System.Type.IsInstanceOfType%2A> метод.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Object.GetType%2A>
 - <xref:System.Type?displayProperty=nameWithType>
 - <xref:System.Type.IsInstanceOfType%2A>
-- [Тип данных Object](../../../../visual-basic/language-reference/data-types/object-data-type.md)
-- [Объектные переменные](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Значения объектных переменных](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
-- [Практическое руководство. Определение идентичности двух объектов](../../../../visual-basic/programming-guide/language-features/variables/how-to-determine-whether-two-objects-are-identical.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)
+- [Объектные переменные](object-variables.md)
+- [Значения объектных переменных](object-variable-values.md)
+- [Практическое руководство. Определение идентичности двух объектов](how-to-determine-whether-two-objects-are-identical.md)

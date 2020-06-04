@@ -10,23 +10,23 @@ helpviewer_keywords:
 - Using statement [Visual Basic], Using...End Using
 - Using block
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
-ms.openlocfilehash: c493051050442597196ba484fb9ce8e99249dbb7
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: dd15c6746628f45b072d46eea40051ed9afb7921
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353946"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403502"
 ---
 # <a name="how-to-dispose-of-a-system-resource-visual-basic"></a>Практическое руководство. Удаление системного ресурса (Visual Basic)
-Можно использовать блок `Using`, чтобы гарантировать, что система удаляет ресурс, когда код выходит из блока. Это полезно, если вы используете системный ресурс, который потребляет большой объем памяти или что другие компоненты также хотят использовать.  
+Вы можете использовать `Using` блок, чтобы гарантировать, что система уничтожает ресурс, когда код выходит из блока. Это полезно, если вы используете системный ресурс, который потребляет большой объем памяти или что другие компоненты также хотят использовать.  
   
 ### <a name="to-dispose-of-a-database-connection-when-your-code-is-finished-with-it"></a>Удаление подключения к базе данных после завершения работы с ним кода  
   
-1. Убедитесь, что вы включили соответствующий [оператор Imports (пространство имен .NET и тип)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) для подключения к базе данных в начале исходного файла (в данном случае <xref:System.Data.SqlClient>).  
+1. Убедитесь, что вы включили соответствующий [оператор Imports (пространство имен .NET и тип)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) для подключения к базе данных в начале исходного файла (в данном случае <xref:System.Data.SqlClient> ).  
   
-2. Создайте блок `Using` с инструкциями `Using` и `End Using`. Внутри блока разместите код, который работает с подключением к базе данных.  
+2. Создайте `Using` блок с `Using` `End Using` инструкциями и. Внутри блока разместите код, который работает с подключением к базе данных.  
   
-3. Объявите соединение и создайте его экземпляр в составе оператора `Using`.  
+3. Объявите соединение и создайте его экземпляр в составе `Using` инструкции.  
   
     ```vb  
     ' Insert the following line at the beginning of your source file.  
@@ -40,16 +40,16 @@ ms.locfileid: "74353946"
   
      Система уничтожает ресурс независимо от того, как вы выйдете из блока, включая случай необработанного исключения.  
   
-     Обратите внимание, что доступ к `sqc` извне блока `Using` невозможен, так как его область ограничена блоком.  
+     Обратите внимание, что доступ извне блока невозможен `sqc` `Using` , так как его область ограничена блоком.  
   
-     Эту же методику можно использовать для системных ресурсов, таких как файловый обработчик или оболочка COM. Используйте блок `Using`, если вы хотите оставить ресурс доступным для других компонентов после выхода из блока `Using`.  
+     Эту же методику можно использовать для системных ресурсов, таких как файловый обработчик или оболочка COM. `Using`Если вы хотите оставить ресурс доступным для других компонентов после выхода из блока, используйте блок `Using` .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Data.SqlClient.SqlConnection>
-- [Поток управления](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
-- [Структуры решений](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
-- [Циклические структуры](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [Другие структуры управления](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)
-- [Вложенные структуры управления](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
-- [Оператор Using](../../../../visual-basic/language-reference/statements/using-statement.md)
+- [Поток управления](index.md)
+- [Структуры решений](decision-structures.md)
+- [Циклические структуры](loop-structures.md)
+- [Другие структуры управления](other-control-structures.md)
+- [Вложенные структуры управления](nested-control-structures.md)
+- [Оператор using](../../../language-reference/statements/using-statement.md)

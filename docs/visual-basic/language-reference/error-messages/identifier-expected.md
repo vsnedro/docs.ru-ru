@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - BC30203
 ms.assetid: c05162ee-55d0-4d7f-84bb-e7758d4c5081
-ms.openlocfilehash: 619b1c55ef035530c6854fa15763fb9c187565a6
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: e33450e921f1859c97edf1fbf123a0a95267767f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64662026"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84402892"
 ---
 # <a name="identifier-expected"></a>Требуется идентификатор
-Программный элемент, который не является распознаваемым именем объявленного элемента происходит в контексте требуется имя элемента. Одной из возможных причин является, что атрибут был указан не в начале инструкции.  
+Элемент программирования, который не является распознаваемым именем объявленного элемента, возникает там, где для контекста требуется имя элемента. Одной из возможных причин является то, что атрибут был указан в другом месте, чем в начале инструкции.  
   
  **Идентификатор ошибки:** BC30203  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Убедитесь, что все атрибуты в инструкции помещены в начале.  
+- Убедитесь, что все атрибуты в инструкции размещены в начале.  
   
-- Убедитесь, что все имена элементов в инструкции написаны правильно.  
+- Убедитесь, что все имена элементов в операторе написаны правильно.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Имена объявленных элементов](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
-- [Обзор атрибутов](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Обзор атрибутов](../../programming-guide/concepts/attributes/index.md)

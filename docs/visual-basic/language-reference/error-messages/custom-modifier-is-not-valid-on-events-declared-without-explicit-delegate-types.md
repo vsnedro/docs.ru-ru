@@ -7,41 +7,41 @@ f1_keywords:
 helpviewer_keywords:
 - BC31122
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
-ms.openlocfilehash: 169cb49cc5abc76b7c52785392d0083b81a99450
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 0c5a4188fedf9685afdd1cde4c1de93a0b43b919
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61803887"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409791"
 ---
 # <a name="custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types"></a>Модификатор Custom недопустим для событий, объявленных без явных делегируемых типов
-В отличие от событий ненастраиваемых `Custom Event` требует `As` предложение после имени события, которая явно задает тип делегата для события.  
+В отличие от нестандартного события, `Custom Event` объявление требует наличия `As` предложения, следующего за именем события, которое явно указывает тип делегата для события.  
   
- Обычные события могут быть определены с `As` предложение и явный тип делегата или списка параметров сразу после имени события.  
+ Ненастраиваемые события могут быть определены с помощью предложения, `As` явного типа делегата или списка параметров, непосредственно следующего за именем события.  
   
  **Идентификатор ошибки:** BC31122  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1. Определите делегат с такой же список параметров, как пользовательское событие.  
+1. Определите делегат с тем же списком параметров, что и пользовательское событие.  
   
-     Например если `Custom Event` определен с помощью `Custom Event Test(ByVal sender As Object, ByVal i As Integer)`, а затем соответствующий делегат будет следующим.  
+     Например, если объект `Custom Event` был определен с помощью `Custom Event Test(ByVal sender As Object, ByVal i As Integer)` , соответствующий делегат будет выглядеть следующим образом.  
   
      [!code-vb[VbVbalrEventError#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#18)]  
   
-2. Замените список параметров пользовательского события с `As` предложение, определяющее тип делегата.  
+2. Замените список параметров пользовательского события `As` предложением с указанием типа делегата.  
   
-     В примере `Custom Event` объявление можно переписать следующим образом.  
+     Продолжая работу с примером, `Custom Event` объявление будет перезаписано следующим образом.  
   
      [!code-vb[VbVbalrEventError#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#19)]  
   
 ## <a name="example"></a>Пример  
- В этом примере объявляется `Custom Event` и указывает необходимые `As` предложение с типом делегата.  
+ В этом примере объявляется `Custom Event` и указывается обязательное `As` предложение с типом делегата.  
   
  [!code-vb[VbVbalrEventError#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#2)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Event](../../../visual-basic/language-reference/statements/event-statement.md)
-- [Оператор Delegate](../../../visual-basic/language-reference/statements/delegate-statement.md)
-- [События](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Оператор Event](../statements/event-statement.md)
+- [Оператор Delegate](../statements/delegate-statement.md)
+- [События](../../programming-guide/language-features/events/index.md)

@@ -2,18 +2,18 @@
 title: Преобразование типов данных
 ms.date: 07/20/2015
 ms.assetid: 9b0cf1ab-de48-4c6e-9f00-05b40fade46e
-ms.openlocfilehash: 25d21954f0bb7555f1f5666f83fb37f4f73e2a60
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 1394f53923ba850ae11fbc326a25c279589c3be1
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74354256"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410855"
 ---
 # <a name="converting-data-types-visual-basic"></a>Преобразование типов данных (Visual Basic)
 
 Методы преобразования изменяют тип входных объектов.
 
- Операции преобразования в запросах LINQ удобны в различных ситуациях. Рассмотрим несколько примеров.
+ Операции преобразования в запросах LINQ удобны в различных ситуациях. Ниже приводятся некоторые примеры:
 
 - Метод <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> можно использовать, чтобы скрыть настраиваемую реализацию типа стандартного оператора запроса.
 
@@ -40,7 +40,7 @@ ms.locfileid: "74354256"
 
 ## <a name="query-expression-syntax-example"></a>Пример синтаксиса выражения запроса
 
-В следующем примере кода используется предложение `From As` для приведения типа к подтипу перед доступом к элементу, доступному только для подтипа.
+В следующем примере кода предложение используется `From As` для приведения типа к подтипу перед доступом к элементу, доступному только для подтипа.
 
 ```vb
 Class Plant
@@ -80,9 +80,9 @@ Sub Cast()
 End Sub
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq>
-- [Общие сведения о стандартных операторах запроса (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Предложение From](../../../../visual-basic/language-reference/queries/from-clause.md)
-- [Как выполнить запрос к ArrayList с помощью LINQ (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)
+- [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
+- [Предложение FROM](../../../language-reference/queries/from-clause.md)
+- [Как выполнить запрос к ArrayList с помощью LINQ (Visual Basic)](how-to-query-an-arraylist-with-linq.md)

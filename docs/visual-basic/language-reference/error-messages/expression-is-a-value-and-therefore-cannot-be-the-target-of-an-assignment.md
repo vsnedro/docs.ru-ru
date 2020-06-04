@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30068
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
-ms.openlocfilehash: d5aae4d30abbf9ed2af260412352a5e0452e0dcc
-ms.sourcegitcommit: 463f3f050cecc0b6403e67f19a61f870fb8e7b7d
+ms.openlocfilehash: 9e4dbaf2f2800454c673cd58ddec4cf0f6e5c6b9
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68513040"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409512"
 ---
 # <a name="expression-is-a-value-and-therefore-cannot-be-the-target-of-an-assignment"></a>Нельзя присвоить значение выражению, поскольку оно является значением
 
@@ -29,7 +29,7 @@ maximum = 50
 
 Аналогичные примеры могут применяться к свойствам и элементам массива.
 
-**Косвенный доступ.** Непрямой доступ через тип значения может также вызвать эту ошибку. Рассмотрим следующий пример кода, который пытается задать значение <xref:System.Drawing.Point> путем прямого доступа к нему через. <xref:System.Windows.Forms.Control.Location%2A>
+**Косвенный доступ.** Непрямой доступ через тип значения может также вызвать эту ошибку. Рассмотрим следующий пример кода, который пытается задать значение <xref:System.Drawing.Point> путем прямого доступа к нему через <xref:System.Windows.Forms.Control.Location%2A> .
 
 ```vb
 ' Assume this code runs inside Form1.
@@ -39,7 +39,7 @@ exitButton.Location.X = 140
 ' The preceding line is an ERROR because of no storage for Location.
 ```
 
-Последняя инструкция из предыдущего примера завершается сбоем, так как создает только временное выделение для <xref:System.Drawing.Point> структуры, возвращаемой <xref:System.Windows.Forms.Control.Location%2A> свойством. Структура является типом значения, а временная структура не сохраняется после выполнения инструкции. Проблема решается путем объявления и использования переменной для <xref:System.Windows.Forms.Control.Location%2A>, которая создает более постоянное выделение <xref:System.Drawing.Point> для структуры. В следующем примере показан код, который может заменить последнюю инструкцию из предыдущего примера.
+Последняя инструкция из предыдущего примера завершается сбоем, так как создает только временное выделение для <xref:System.Drawing.Point> структуры, возвращаемой <xref:System.Windows.Forms.Control.Location%2A> свойством. Структура является типом значения, а временная структура не сохраняется после выполнения инструкции. Проблема решается путем объявления и использования переменной для <xref:System.Windows.Forms.Control.Location%2A> , которая создает более постоянное выделение для <xref:System.Drawing.Point> структуры. В следующем примере показан код, который может заменить последнюю инструкцию из предыдущего примера.
 
 ```vb
 Dim exitLocation as New System.Drawing.Point(140, exitButton.Location.Y)
@@ -58,8 +58,8 @@ exitButton.Location = exitLocation
 
 - Используйте переменную для доступа к свойству, чтобы присвоить ему значение.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Операторы и выражения](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Операторы](../../../visual-basic/programming-guide/language-features/statements.md)
-- [Рекомендации по устранению неполадок](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Операторы и выражения](../../programming-guide/language-features/operators-and-expressions/index.md)
+- [Операторы](../../programming-guide/language-features/statements.md)
+- [Рекомендации по устранению неполадок](../../programming-guide/language-features/procedures/troubleshooting-procedures.md)

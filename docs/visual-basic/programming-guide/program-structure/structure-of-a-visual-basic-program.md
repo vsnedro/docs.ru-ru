@@ -7,80 +7,80 @@ helpviewer_keywords:
 - procedures [Visual Basic], structure
 - Visual Basic code, program structure
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
-ms.openlocfilehash: 4f4136a2c8fb7ca98ff22aa6a5fc676f30cd1c5d
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: dc6b38d78f02a42c8e7cc2aa964e9f3f74996f44
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64624300"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408768"
 ---
 # <a name="structure-of-a-visual-basic-program"></a>Структура программы Visual Basic
-Программы на Visual Basic — это результат из стандартных блоков. Объект *решение* состоит из одного или нескольких проектов. Объект *проекта* в свою очередь может содержать одну или несколько сборок. Каждый *сборки* компилируется из одного или нескольких исходных файлов. Объект *исходный файл* предоставляет определение и реализацию классов, структур, модулей и интерфейсов, которые в конечном счете содержит весь код.  
+Visual Basicная программа строится на основе стандартных блоков. *Решение* состоит из одного или нескольких проектов. *Проект* , в свою очередь, может содержать одну или несколько сборок. Каждая *Сборка* компилируется из одного или нескольких исходных файлов. *Исходный файл* предоставляет определение и реализацию классов, структур, модулей и интерфейсов, которые в конечном итоге содержат весь код.  
   
- Дополнительные сведения о эти блоки программы на Visual Basic, см. в разделе [решения и проекты](/visualstudio/ide/solutions-and-projects-in-visual-studio) и [сборок в .NET](../../../standard/assembly/index.md).  
+ Дополнительные сведения об этих стандартных блоках Visual Basic программы см. в разделе [решения и проекты](/visualstudio/ide/solutions-and-projects-in-visual-studio) и [сборки в .NET](../../../standard/assembly/index.md).  
   
 ## <a name="file-level-programming-elements"></a>Элементы программирования на уровне файлов  
- При запуске проекта или файла и открыть редактор кода, вы увидите некоторые код уже на месте и в правильном порядке. Любой код, написанный следует придерживаться следующей последовательности:  
+ При запуске проекта или файла и открытии редактора кода вы увидите, что какой-то код уже существует и в правильном порядке. Любой код, который вы пишете, должен соответствовать следующей последовательности:  
   
-1. `Option` Инструкции  
+1. `Option`инструкции  
   
-2. `Imports` Инструкции  
+2. `Imports`инструкции  
   
-3. `Namespace` инструкции и элементы уровня пространства имен  
+3. `Namespace`операторы и элементы уровня пространства имен  
   
- При вводе инструкций в другом порядке, это может привести к ошибкам компиляции.  
+ При вводе инструкций в другом порядке могут возникнуть ошибки компиляции.  
   
- Программа также может содержать операторы условной компиляции. Вы можете перемежать их в файле источника вместе предыдущей последовательности.  
+ Программа также может содержать инструкции условной компиляции. Их можно отключать в исходном файле между инструкциями предыдущей последовательности.  
   
-### <a name="option-statements"></a>Параметры инструкции  
- `Option` Инструкции устанавливают основные правила для последующего кода, помогая избежать синтаксических и логических ошибок. [Оператор Option Explicit](../../../visual-basic/language-reference/statements/option-explicit-statement.md) гарантирует, что все переменные объявлены и написаны правильно, что уменьшает время при отладке. [Оператор Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md) помогает свести к минимуму логики ошибки и потери данных, может возникнуть при работе с переменными разных типов данных. [Оператор Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md) указывает способа сравнения строк друг с другом, на основе их `Binary` или `Text` значения.  
+### <a name="option-statements"></a>Операторы Option  
+ `Option`инструкции устанавливают правила заземления для последующего кода, помогая предотвратить синтаксические и логические ошибки. [Оператор Option Explicit](../../language-reference/statements/option-explicit-statement.md) гарантирует, что все переменные объявляются и написаны правильно, что сокращает время отладки. [Оператор Option-Statement](../../language-reference/statements/option-strict-statement.md) позволяет снизить количество логических ошибок и потери данных, которые могут возникать при работе между переменными различных типов данных. [Оператор Option Compare](../../language-reference/statements/option-compare-statement.md) указывает, каким образом строки сравниваются друг с другом на основе их `Binary` `Text` значений или.  
   
 ### <a name="imports-statements"></a>Операторы Imports  
- Можно включить [оператор Imports (пространство имен .NET и тип)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) импортировать имена, определенные вне данного проекта. `Imports` Инструкция позволяет ссылаться на классы и другие типы, определенные в импортированном пространстве имен, не определяя их код. Можно использовать любое количество `Imports` инструкций соответствующим образом. Дополнительные сведения см. в разделе [ссылки и оператор Imports](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md).  
+ Можно включить [оператор Imports (пространство имен .NET и тип)](../../language-reference/statements/imports-statement-net-namespace-and-type.md) для импорта имен, определенных за пределами проекта. `Imports`Оператор позволяет коду ссылаться на классы и другие типы, определенные в импортированном пространстве имен, без необходимости уточнять их. Можно использовать столько `Imports` инструкций, сколько необходимо. Дополнительные сведения см. [в разделе ссылки и оператор Imports](references-and-the-imports-statement.md).  
   
 ### <a name="namespace-statements"></a>Операторы пространства имен  
- Пространства имен помогают организовать и классифицировать элементы программирования для упрощения группирования и доступ к ним. Использовании [оператор Namespace](../../../visual-basic/language-reference/statements/namespace-statement.md) для классификации следующие инструкции в пределах определенного пространства имен. Дополнительные сведения см. в разделе [Пространства имен в Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md).  
+ Пространства имен помогают организовывать и классифицировать программные элементы для простоты группирования и доступа. [Оператор Namespace](../../language-reference/statements/namespace-statement.md) используется для классификации следующих операторов в определенном пространстве имен. Дополнительные сведения см. в разделе [Пространства имен в Visual Basic](namespaces.md).  
   
 ### <a name="conditional-compilation-statements"></a>Операторы условной компиляции  
- Условная компиляция операторы могут использоваться в любом месте в файле исходного кода. Они смогут нанести части кода нужно включить или исключить во время компиляции в зависимости от определенных условий. Вы также их можно использовать для отладки приложения, поскольку условный код выполняется только в режиме отладки. Дополнительные сведения см. в разделе [условной компиляции](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md).  
+ Операторы условной компиляции могут находиться практически в любом месте исходного файла. Они приводят к включению или исключению частей кода во время компиляции в зависимости от определенных условий. Их также можно использовать для отладки приложения, так как условный код выполняется только в режиме отладки. Дополнительные сведения см. в разделе [условная компиляция](conditional-compilation.md).  
   
 ## <a name="namespace-level-programming-elements"></a>Элементы программирования уровня пространства имен  
- Классы, структуры и модули содержат весь код в файле исходного кода. Они являются *уровня пространства имен* элементы, которые могут отображаться в пространстве имен или на уровне файла источника. Они содержат описания всех других элементов программирования. Интерфейсы, которые определяют подписи элементов, но не выполняют реализацию, также отображаются на уровне модуля. Дополнительные сведения об элементах на уровне модуля см. в разделе ниже:  
+ Классы, структуры и модули содержат весь код в исходном файле. Они представляют собой элементы *уровня пространства имен* , которые могут использоваться в пространстве имен или на уровне исходного файла. Они содержат объявления всех других программных элементов. Интерфейсы, которые определяют подписи элементов, но не предоставляют реализации, также отображаются на уровне модуля. Дополнительные сведения об элементах уровня модуля см. в следующих статьях:  
   
-- [Оператор Class](../../../visual-basic/language-reference/statements/class-statement.md)  
+- [Оператор Class](../../language-reference/statements/class-statement.md)  
   
-- [Оператор Structure](../../../visual-basic/language-reference/statements/structure-statement.md)  
+- [Оператор Structure](../../language-reference/statements/structure-statement.md)  
   
-- [Оператор Module](../../../visual-basic/language-reference/statements/module-statement.md)  
+- [Оператор Module](../../language-reference/statements/module-statement.md)  
   
-- [Оператор Interface](../../../visual-basic/language-reference/statements/interface-statement.md)  
+- [Оператор Interface](../../language-reference/statements/interface-statement.md)  
   
- Элементы данных на уровне пространства имен, перечисления и делегаты.  
+ Элементы данных на уровне пространства имен являются перечислениями и делегатами.  
   
 ## <a name="module-level-programming-elements"></a>Элементы программирования уровня модуля  
- Процедуры, операторы, свойства и события являются единственными элементами программирования, которые могут содержать исполняемый код (инструкции, которые выполняют действия во время выполнения). Они являются *уровня модуля* элементы программы. Дополнительные сведения об элементах уровня процедуры см. в разделе ниже:  
+ Процедуры, операторы, свойства и события — это единственные элементы программирования, которые могут содержать исполняемый код (операторы, выполняющие действия во время выполнения). Они являются элементами *уровня модуля* программы. Дополнительные сведения об элементах уровня процедуры см. в следующих статьях:  
   
-- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Оператор Function](../../language-reference/statements/function-statement.md)  
   
-- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Оператор Sub](../../language-reference/statements/sub-statement.md)  
   
-- [Оператор Declare](../../../visual-basic/language-reference/statements/declare-statement.md)  
+- [Declare Statement](../../language-reference/statements/declare-statement.md)  
   
-- [Оператор Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+- [Operator Statement](../../language-reference/statements/operator-statement.md)  
   
-- [Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../language-reference/statements/property-statement.md)  
   
-- [Оператор Event](../../../visual-basic/language-reference/statements/event-statement.md)  
+- [Оператор Event](../../language-reference/statements/event-statement.md)  
   
- Элементы данных на уровне модуля являются переменные, константы, перечисления и делегаты.  
+ Элементы данных на уровне модуля — это переменные, константы, перечисления и делегаты.  
   
-## <a name="procedure-level-programming-elements"></a>Элементы программирования на уровне процедуры  
- Большая часть содержимого *уровня процедуры* элементы являются исполняемые операторы, которые составляют код времени выполнения программы. Весь исполняемый код должен быть в какую-либо процедуру (`Function`, `Sub`, `Operator`, `Get`, `Set`, `AddHandler`, `RemoveHandler`, `RaiseEvent`). Дополнительные сведения см. в разделе [Выписки](../../../visual-basic/programming-guide/language-features/statements.md).  
+## <a name="procedure-level-programming-elements"></a>Элементы программирования на уровне процедур  
+ Большая часть содержимого элементов *уровня процедуры* — это исполняемые операторы, которые составляют код времени выполнения программы. Весь исполняемый код должен быть в некоторой процедуре ( `Function` ,,,,,, `Sub` `Operator` `Get` `Set` `AddHandler` `RemoveHandler` , `RaiseEvent` ). Дополнительные сведения см. в разделе [Инструкции](../language-features/statements.md).  
   
- Элементы данных на уровне процедуры ограничены локальных переменных и констант.  
+ Элементы данных на уровне процедуры ограничены локальными переменными и константами.  
   
 ## <a name="the-main-procedure"></a>Основная процедура  
- `Main` Процедура — это первый код для запуска при загрузке приложения. `Main` служит в качестве отправной точки и возможностей управления для вашего приложения. Существует четыре разновидности `Main`:  
+ `Main`Процедура является первым кодом, который выполняется при загрузке приложения. `Main`служит в качестве начальной точки и общего управления для приложения. Существует четыре вида `Main` :  
   
 - `Sub Main()`  
   
@@ -90,10 +90,10 @@ ms.locfileid: "64624300"
   
 - `Function Main(ByVal cmdArgs() As String) As Integer`  
   
- Наиболее распространенный вид этой процедуры является `Sub Main()`. Дополнительные сведения см. в разделе [процедура Main в Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md).  
+ Наиболее распространенная часть этой процедуры — `Sub Main()` . Дополнительные сведения см. [в разделе Главная процедура в Visual Basic](main-procedure.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Процедура Main в Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
-- [Соглашения об именах Visual Basic](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
-- [Ограничения в Visual Basic](../../../visual-basic/programming-guide/program-structure/limitations.md)
+- [Процедура Main в Visual Basic](main-procedure.md)
+- [Соглашения об именах Visual Basic](naming-conventions.md)
+- [Ограничения в Visual Basic](limitations.md)

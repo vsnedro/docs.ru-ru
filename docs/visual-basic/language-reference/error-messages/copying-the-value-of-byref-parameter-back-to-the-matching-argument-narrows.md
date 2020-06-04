@@ -7,40 +7,40 @@ f1_keywords:
 helpviewer_keywords:
 - BC32053
 ms.assetid: 281564b7-99f7-451f-b10d-f985e831bb25
-ms.openlocfilehash: 6d238e9c426b5ae7df0cde745b51eace1cae5d87
-ms.sourcegitcommit: e08b319358a8025cc6aa38737854f7bdb87183d6
+ms.openlocfilehash: bac5f9a88df719bc64a8b0541f65e5912275866e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64913206"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409755"
 ---
-# <a name="copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument-narrows-from-type-typename1-to-type-typename2"></a>При копировании значения параметра «ByRef» "\<имя_параметра >" обратно в соответствующий аргумент сводит тип "\<Имя_типа1 >" к типу "\<имя_типа2 >"
-Процедура вызывается с аргументом, который расширяется до соответствующего типа параметра, а сужающие преобразования аргумент из параметра.  
+# <a name="copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument-narrows-from-type-typename1-to-type-typename2"></a>При копировании значения ByRef параметра \<parametername> обратно в соответствующий аргумент тип \<typename1> сужается в тип \<typename2>
+Процедура вызывается с аргументом, который расширяется до соответствующего типа параметра, а преобразование из параметра в аргумент является сужением.  
   
- При определении класса или структуры можно определить один или несколько операторов преобразования для преобразования типа класса или структуры в другие типы. Можно также определить операторы обратного преобразования для преобразования других типов обратно в тип класса или структуры. При использовании типов класса или структуры в вызове процедуры Visual Basic можно использовать эти операторы преобразования для преобразования типа аргумента в тип соответствующего параметра.  
+ При определении класса или структуры можно определить один или несколько операторов преобразования для преобразования типа класса или структуры в другие типы. Можно также определить операторы обратного преобразования для преобразования других типов обратно в тип класса или структуры. При использовании типа класса или структуры в вызове процедуры Visual Basic могут использовать эти операторы преобразования для преобразования типа аргумента в тип соответствующего параметра.  
   
- Если передается аргумент [ByRef](../../../visual-basic/language-reference/modifiers/byref.md), Visual Basic иногда копирует его значение в локальную переменную в процедуре вместо передачи ссылки. В этом случае когда процедура возвращает результат, Visual Basic должен скопировать значение локальной переменной обратно в аргументе в вызывающем коде.  
+ При передаче аргумента [ByRef](../modifiers/byref.md)Visual Basic иногда копирует значение аргумента в локальную переменную в процедуре вместо передачи ссылки. В этом случае, когда процедура возвращает, Visual Basic необходимо скопировать значение локальной переменной обратно в аргумент в вызывающем коде.  
   
- Если значение аргумента `ByRef` копируется в процедуру, а аргумент и параметр имеют один и тот же тип, то преобразование не требуется. Но если типы различны, Visual Basic необходимо преобразовать в обоих направлениях. Если один из типов является типом соответствующего класса или структуры, Visual Basic необходимо преобразовать в и от другого типа. Если один из этих преобразований является расширяющим, обратное преобразование может быть сужающим.  
+ Если значение аргумента `ByRef` копируется в процедуру, а аргумент и параметр имеют один и тот же тип, то преобразование не требуется. Но если типы различаются, Visual Basic должны быть преобразованы в обоих направлениях. Если один из типов является типом класса или структуры, Visual Basic должен преобразовать его в другой тип и из него. Если одно из этих преобразований является расширяющим, то обратным преобразованием может быть сужение.  
   
  **Идентификатор ошибки:** BC32053  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- По возможности используйте аргумент вызова того же типа, что и параметр процедуры, поэтому Visual Basic не нужно выполнять никаких преобразований.  
+- По возможности используйте аргумент вызова того же типа, что и параметр процедуры, поэтому Visual Basic не требуется выполнять преобразование.  
   
-- Если необходимо вызвать процедуру с аргументом, тип которого отличается от типа параметра, но не требуется возвращать значение в аргумент вызова, то определите параметр как [ByVal](../../../visual-basic/language-reference/modifiers/byval.md) , а не `ByRef`.  
+- Если необходимо вызвать процедуру с аргументом, тип которого отличается от типа параметра, но не требуется возвращать значение в аргумент вызова, то определите параметр как [ByVal](../modifiers/byval.md) , а не `ByRef`.  
   
-- Если требуется возвращать значение в аргумент вызова, определите оператор обратного преобразования как [Widening](../../../visual-basic/language-reference/modifiers/widening.md), если это возможно.  
+- Если необходимо вернуть значение в аргумент вызова, определите оператор обратного преобразования в качестве [расширяющего](../modifiers/widening.md), если это возможно.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Процедуры](../../../visual-basic/programming-guide/language-features/procedures/index.md)
-- [Параметры и аргументы процедуры](../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
-- [Передача аргументов по значению и по ссылке](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
-- [Процедуры операторов](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
-- [Оператор Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Практическое руководство. Определение оператора](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
-- [Практическое руководство. Определение оператора преобразования](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
-- [Преобразование типов в Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
-- [Расширяющие и сужающие преобразования](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Процедуры](../../programming-guide/language-features/procedures/index.md)
+- [Параметры и аргументы процедуры](../../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
+- [Передача аргументов по значению и по ссылке](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Процедуры операторов](../../programming-guide/language-features/procedures/operator-procedures.md)
+- [Operator Statement](../statements/operator-statement.md)
+- [Практическое руководство. Определение оператора](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [Практическое руководство. Определение оператора преобразования](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Преобразование типов в Visual Basic](../../programming-guide/language-features/data-types/type-conversions.md)
+- [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
