@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - BC42026
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
-ms.openlocfilehash: 42177f22e632e4a05b1f0b4d934f3e56ab9ff0f2
-ms.sourcegitcommit: 3094dcd17141b32a570a82ae3f62a331616e2c9c
+ms.openlocfilehash: e3a9f4cf2f4105d2c449813bf0c593860df7d1f0
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71698565"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409534"
 ---
-# <a name="expression-recursively-calls-the-containing-property-propertyname"></a>Выражение рекурсивно вызывает содержащееся свойство "\<propertyname >"
-Инструкция в процедуре `Set` определения свойства хранит значение в имени свойства.  
+# <a name="expression-recursively-calls-the-containing-property-propertyname"></a>Выражение рекурсивно вызывает содержащее свойство \<propertyname>
+Оператор в `Set` процедуре определения свойства сохраняет значение в имени свойства.  
   
- Рекомендуемый подход к удержанию значения свойства — определить переменную `Private` в контейнере свойства и использовать ее в процедурах `Get` и `Set`. Процедура `Set` сохраняет входящее значение в этой переменной `Private`.  
+ Рекомендуемый подход к удержанию значения свойства — определить `Private` переменную в контейнере свойства и использовать ее в `Get` `Set` процедурах и. `Set`Процедура должна сохранить входящее значение в этой `Private` переменной.  
   
- Процедура `Get` ведет себя как процедура `Function`, поэтому ей можно присвоить значение имени свойства и вернуть управление, выполнив инструкцию `End Get`. Однако рекомендуемый подход состоит в том, чтобы включить переменную `Private` в качестве значения в [операторе return](../../../visual-basic/language-reference/statements/return-statement.md).  
+ `Get`Процедура ведет себя как `Function` процедура, поэтому ей можно присвоить значение имени свойства и вернуть управление, выполнив `End Get` инструкцию. Однако рекомендуемый подход заключается в включении `Private` переменной в качестве значения в [операторе return](../statements/return-statement.md).  
   
- Процедура `Set` ведет себя как процедура `Sub`, которая не возвращает значение. Поэтому имя процедуры или свойства не имеет особого смысла в процедуре `Set`, и в ней нельзя хранить значение.  
+ `Set`Процедура ведет себя как `Sub` процедура, которая не возвращает значение. Следовательно, имя процедуры или свойства не имеет особого смысла в `Set` процедуре, и в ней нельзя хранить значение.  
   
  В следующем примере показан подход, который может вызвать эту ошибку, за которым следует рекомендуемый подход.  
   
@@ -55,7 +55,7 @@ Public Class illustrateProperties
 End Class  
 ```  
   
- По умолчанию данное сообщение является предупреждением. Дополнительные сведения о скрытии предупреждений и обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ По умолчанию данное сообщение является предупреждением. Дополнительные сведения о скрытии предупреждений или обработке предупреждений как ошибок см. [в разделе Настройка предупреждений в Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Идентификатор ошибки:** BC42026  
   
@@ -63,8 +63,8 @@ End Class
   
 - Перепишите определение свойства, чтобы использовать рекомендуемый подход, как показано в предыдущем примере.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Процедуры свойств](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
-- [Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md)
-- [Оператор Set](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Процедуры свойств](../../programming-guide/language-features/procedures/property-procedures.md)
+- [Property Statement](../statements/property-statement.md)
+- [Инструкция SET](../statements/set-statement.md)

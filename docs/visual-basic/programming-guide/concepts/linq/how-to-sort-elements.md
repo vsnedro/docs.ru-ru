@@ -2,18 +2,18 @@
 title: Практическое руководство. Сортировка элементов
 ms.date: 07/20/2015
 ms.assetid: c2c09279-6c8a-482e-8e71-b1453a815052
-ms.openlocfilehash: 84d791a73c27b9acf1eaa5a5e4a31d6798a6c76d
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 1204fb4dc190d68956d01ffce225ce40e11538a4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74341539"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397756"
 ---
 # <a name="how-to-sort-elements-visual-basic"></a>Руководство. Сортировка элементов (Visual Basic)
 В этом примере показано, как создавать запросы с сортировкой результатов.  
   
 ## <a name="example"></a>Пример  
- В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные (LINQ to XML)](sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```vb  
 Dim root As XElement = XElement.Load("Data.xml")  
@@ -42,7 +42,7 @@ Next
 ## <a name="example"></a>Пример  
  Следующий пример демонстрирует тот же запрос XML, что и в пространстве имен. Дополнительные сведения см. в разделе [Общие сведения о пространствах имен (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные пространства имен](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные пространства имен](sample-xml-file-numerical-data-in-a-namespace.md).  
   
 ```vb  
 Imports <xmlns='http://www.adatum.com'>  
@@ -74,7 +74,7 @@ End Module
 89.99  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Сортировка данных](../../../../visual-basic/programming-guide/concepts/linq/sorting-data.md)
-- [Основные запросы (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Сортировка данных](sorting-data.md)
+- [Основные запросы (LINQ to XML) (Visual Basic)](basic-queries-linq-to-xml.md)
