@@ -1,13 +1,13 @@
 ---
-title: Клонирование и присоединение
+title: Сравнение клонирования и присоединения
 ms.date: 07/20/2015
 ms.assetid: 3c3bd105-c9d3-49bd-875b-27ab4e8bc7a3
-ms.openlocfilehash: 22e86ee78d5c3fa0a7b80ae559c39f424fc9d61a
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: aaf3344c0439d96a01006ee000d0a827884a5af9
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345695"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410881"
 ---
 # <a name="cloning-vs-attaching-visual-basic"></a>Клонирование и присоединение (Visual Basic)
 При добавлении объекта <xref:System.Xml.Linq.XNode> (включая <xref:System.Xml.Linq.XElement>) или объекта <xref:System.Xml.Linq.XAttribute> в новое дерево, если новое содержимое не имеет родителя, объекты просто добавляются к XML-дереву. Если у нового содержимого уже есть родитель и оно является частью другого XML-дерева, то новое содержимое клонируется. Затем клонированное содержимое присоединяется к XML-дереву.  
@@ -52,4 +52,4 @@ Child2 was attached
   
 ## <a name="see-also"></a>См. также
 
-- [Создание деревьев XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Создание деревьев XML (Visual Basic)](creating-xml-trees.md)
