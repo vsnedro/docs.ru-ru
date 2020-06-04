@@ -1,64 +1,64 @@
 ---
-title: запросы,
+title: Запросы
 ms.date: 07/20/2015
 helpviewer_keywords:
 - queries [Visual Basic]
 - LINQ, queries
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
-ms.openlocfilehash: d23e18527fadce031f56bed3ae4c5a5c17b12e18
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: 8fb245309170d4b9adf7458bb3bcfde3e28c0538
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636735"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84359838"
 ---
 # <a name="queries-visual-basic"></a>Запросы (Visual Basic)
 Visual Basic позволяет создавать LINQ-выражения в коде.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Предложение Aggregate](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- Описывает предложение `Aggregate`, которое применяет одну или несколько агрегатных функций к коллекции.  
+ [Aggregate Clause](aggregate-clause.md)  
+ Описывает `Aggregate` предложение, которое применяет одну или несколько агрегатных функций к коллекции.  
   
- [Предложение Distinct](../../../visual-basic/language-reference/queries/distinct-clause.md)  
- Описывает предложение `Distinct`, которое позволяет ограничивать значения текущей переменной диапазона, чтобы исключить дублирующиеся значения в результатах запроса.  
+ [Предложение Distinct](distinct-clause.md)  
+ Описывает `Distinct` предложение, которое позволяет ограничивать значения текущей переменной диапазона, чтобы исключить дублирующиеся значения в результатах запроса.  
   
- [Предложение From](../../../visual-basic/language-reference/queries/from-clause.md)  
- Описывает предложение `From`, которое задает коллекцию и переменную диапазона для запроса.  
+ [Предложение FROM](from-clause.md)  
+ Описывает `From` предложение, которое задает коллекцию и переменную диапазона для запроса.  
   
- [Предложение Group By](../../../visual-basic/language-reference/queries/group-by-clause.md)  
- Описывает предложение `Group By`, которое группирует элементы результата запроса и может использоваться для применения агрегатных функций к каждой группе.  
+ [Предложение Group By](group-by-clause.md)  
+ Описывает `Group By` предложение, которое группирует элементы результата запроса и может использоваться для применения агрегатных функций к каждой группе.  
   
- [Предложение Group Join](../../../visual-basic/language-reference/queries/group-join-clause.md)  
- Описывает предложение `Group Join`, объединяющее две коллекции в одну иерархическую коллекцию.  
+ [Предложение Group Join](group-join-clause.md)  
+ Описывает `Group Join` предложение, объединяющее две коллекции в одну иерархическую коллекцию.  
   
- [Предложение Join](../../../visual-basic/language-reference/queries/join-clause.md)  
- Описывает предложение `Join`, объединяющее две коллекции в одной коллекции.  
+ [Предложение Join](join-clause.md)  
+ Описывает `Join` предложение, объединяющее две коллекции в одной коллекции.  
   
- [Предложение Let](../../../visual-basic/language-reference/queries/let-clause.md)  
- Описывает предложение `Let`, которое выполняет вычисление значения и присваивает его новой переменной в запросе.  
+ [Предложение Let](let-clause.md)  
+ Описывает `Let` предложение, которое выполняет вычисление значения и присваивает его новой переменной в запросе.  
   
- [Предложение Order By](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- Описывает предложение `Order By`, которое указывает порядок сортировки для столбцов в запросе.  
+ [Предложение Order By](order-by-clause.md)  
+ Описывает `Order By` предложение, которое указывает порядок сортировки для столбцов в запросе.  
   
- [Предложение Select](../../../visual-basic/language-reference/queries/select-clause.md)  
- Описывает предложение `Select`, которое объявляет набор переменных диапазона для запроса.  
+ [Предложение SELECT](select-clause.md)  
+ Описывает `Select` предложение, которое объявляет набор переменных диапазона для запроса.  
   
- [Предложение Skip](../../../visual-basic/language-reference/queries/skip-clause.md)  
- Описывает предложение `Skip`, которое обходит указанное число элементов в коллекции, а затем возвращает остальные элементы.  
+ [Предложение Skip](skip-clause.md)  
+ Описывает `Skip` предложение, которое обходит заданное число элементов в коллекции, а затем возвращает остальные элементы.  
   
- [Предложение Skip While](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- Описывает предложение `Skip While`, которое обходит элементы в коллекции, пока заданное условие `true`, а затем возвращает оставшиеся элементы.  
+ [Предложение Skip While](skip-while-clause.md)  
+ Описывает `Skip While` предложение, которое обходит элементы в коллекции, пока заданное условие имеет значение `true` , а затем возвращает оставшиеся элементы.  
   
- [Предложение Take](../../../visual-basic/language-reference/queries/take-clause.md)  
- Описывает предложение `Take`, которое возвращает указанное количество смежных элементов с начала коллекции.  
+ [Предложение Take](take-clause.md)  
+ Описывает `Take` предложение, которое возвращает указанное количество смежных элементов с начала коллекции.  
   
- [Предложение Take While](../../../visual-basic/language-reference/queries/take-while-clause.md)  
- Описывает предложение `Take While`, которое включает в себя элементы в коллекции, пока заданное условие `true` и обходит оставшиеся элементы.  
+ [Предложение Take While](take-while-clause.md)  
+ Описывает `Take While` предложение, которое включает в себя элементы в коллекции, если заданное условие имеет значение `true` , и обходит оставшиеся элементы.  
   
- [Предложения Where](../../../visual-basic/language-reference/queries/where-clause.md)  
- Описывает предложение `Where`, которое указывает условие фильтрации для запроса.  
+ [Предложение WHERE](where-clause.md)  
+ Описывает `Where` предложение, которое задает условие фильтрации для запроса.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
+- [LINQ](../../programming-guide/language-features/linq/index.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
