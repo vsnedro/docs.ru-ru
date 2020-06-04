@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BC36629
 ms.assetid: 0a1e2dbc-d9a4-433d-9306-c5540782b81d
-ms.openlocfilehash: 42bde0b1843e52bbc16118bb056ade791591904e
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: 52e5391fbcf30a4dada4d64a0e810c900ea85806
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249504"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409391"
 ---
 # <a name="nullable-type-inference-is-not-supported-in-this-context"></a>Выведение типа Nullable не поддерживается в данном контексте
-Типы значений и структуры могут быть признаны недействительными.  
+Типы значений и структуры могут быть объявлены как допускающие значение null.  
   
 ```vb  
 Dim a? As Integer  
 Dim b As Integer?  
 ```  
   
- Однако вы не можете использовать необдательную декларацию в сочетании с выводом типа. Следующие примеры вызывают эту ошибку.  
+ Однако нельзя использовать объявление Nullable в сочетании с выводом типа. Следующие примеры вызывают эту ошибку.  
   
 ```vb  
 ' Not valid.  
@@ -34,9 +34,9 @@ Dim b As Integer?
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Используйте `As` оговорку, чтобы объявить переменную в качестве необобнажаемого типа значения.  
+- Используйте `As` предложение, чтобы объявить переменную как тип значения, допускающего значение null.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы значений, допускающие значение NULL](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
-- [Вывод локального типа](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Типы значений, допускающие значение null](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [Вывод локального типа](../../programming-guide/language-features/variables/local-type-inference.md)

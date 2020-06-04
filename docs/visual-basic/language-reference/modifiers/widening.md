@@ -10,35 +10,35 @@ helpviewer_keywords:
 - Widening keyword [Visual Basic]
 - data type conversion [Visual Basic]
 ms.assetid: 646ae263-94d3-40a2-b0cc-64f619292f56
-ms.openlocfilehash: 1c9aa78549ca6e41c9fe54c12e0aaec8e7cc30cb
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 69040bf48b44a54f7a231738b88db1cbc716ebb3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74347833"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84359907"
 ---
 # <a name="widening-visual-basic"></a>Widening (Visual Basic)
-Указывает, что оператор преобразования (`CType`) преобразует класс или структуру в тип, который может содержать все возможные значения исходного класса или структуры.  
+Указывает, что оператор преобразования ( `CType` ) преобразует класс или структуру в тип, который может содержать все возможные значения исходного класса или структуры.  
   
 ## <a name="converting-with-the-widening-keyword"></a>Преобразование с помощью ключевого слова Widening  
- В дополнение к `Widening`у в процедуре преобразования необходимо указать `Public Shared`.  
+ Процедура преобразования должна указываться `Public Shared` в дополнение к `Widening` .  
   
- Расширяющие преобразования всегда выполняются в период выполнения и никогда не вызывают потери данных. Примеры `Single` для `Double`, `Char` `String`и производного типа к его базовому типу. Последнее преобразование является расширяющим, так как производный тип содержит все члены базового типа и, таким же, является экземпляром базового типа.  
+ Расширяющие преобразования всегда выполняются в период выполнения и никогда не вызывают потери данных. Примеры: `Single` `Double` , `Char` до `String` и производный тип в его базовом типе. Последнее преобразование является расширяющим, так как производный тип содержит все члены базового типа и, таким же, является экземпляром базового типа.  
   
- В таком коде не обязательно использовать `CType` для расширяющего преобразования, даже если `Option Strict` `On`.  
+ Этот код не обязательно должен использоваться `CType` для расширяющих преобразований, даже если `Option Strict` имеет значение `On` .  
   
- В этом контексте можно использовать ключевое слово `Widening`:  
+ `Widening`Ключевое слово можно использовать в следующем контексте:  
   
- [Оператор Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [Operator Statement](../statements/operator-statement.md)  
   
- Примеры определений расширяющих и суженных операторов преобразования см. в разделе [руководство. Определение оператора преобразования](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md).  
+ Примеры определений расширяющих и суженных операторов преобразования см. в разделе [руководство. Определение оператора преобразования](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)
-- [Расширяющие и сужающие преобразования](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
-- [Практическое руководство. Определение оператора](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
-- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)
-- [Оператор Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [Практическое руководство. Определение оператора преобразования](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Operator Statement](../statements/operator-statement.md)
+- [Narrowing](narrowing.md)
+- [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Практическое руководство. Определение оператора](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [CType Function](../functions/ctype-function.md)
+- [Оператор Option Strict](../statements/option-strict-statement.md)
+- [Практическое руководство. Определение оператора преобразования](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

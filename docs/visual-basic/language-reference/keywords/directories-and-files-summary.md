@@ -6,19 +6,19 @@ helpviewer_keywords:
 - directories [Visual Basic], Visual Basic
 - files [Visual Basic], summary
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
-ms.openlocfilehash: 6c7e1ef37b8abffee89c207ac1dcfb5cbef25c29
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: c4429d58d2f089b86f5c32c1f3ce8353b02880c4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349841"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84373897"
 ---
 # <a name="directories-and-files-summary-visual-basic"></a>Сводка по каталогам и файлам (Visual Basic)
 Ключевые слова языка Visual Basic и элементы библиотеки времени выполнения упорядочены по целям и использованию.  
   
- Использование функции `My` обеспечивает более высокую производительность и производительность операций файлового ввода-вывода, чем использование этих членов. Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
+ Использование этой `My` функции обеспечивает более высокую производительность и производительность операций файлового ввода-вывода, чем использование этих членов. Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
   
-|**Действие**|**Элемент языка**|  
+|**Действие**|**Языковой элемент**|  
 |----------------|--------------------------|  
 |Изменение каталога или папки.|<xref:Microsoft.VisualBasic.FileSystem.ChDir%2A>|  
 |Измените диск.|<xref:Microsoft.VisualBasic.FileSystem.ChDrive%2A>|  
@@ -33,11 +33,11 @@ ms.locfileid: "74349841"
 |Возврат имени файла или метки тома.|<xref:Microsoft.VisualBasic.FileSystem.Dir%2A>|  
 |Установка сведений об атрибутах для файла.|<xref:Microsoft.VisualBasic.FileSystem.SetAttr%2A>|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
-- [Члены библиотеки времени выполнения Visual Basic](../../../visual-basic/language-reference/runtime-library-members.md)
-- [Чтение из файлов](../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
-- [Запись в файлы](../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
-- [Создание, удаление и перемещение файлов и каталогов](../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
-- [Анализ текстовых файлов с помощью объекта TextFieldParser](../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+- [Ключевые слова](index.md)
+- [Члены библиотеки времени выполнения Visual Basic](../runtime-library-members.md)
+- [Чтение из файлов](../../developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Запись в файлы](../../developing-apps/programming/drives-directories-files/writing-to-files.md)
+- [Создание, удаление и перемещение файлов и каталогов](../../developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+- [Анализ текстовых файлов с помощью объекта TextFieldParser](../../developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

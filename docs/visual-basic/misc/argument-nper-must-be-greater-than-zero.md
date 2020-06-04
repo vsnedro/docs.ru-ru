@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrRate_NPerMustBeGTZero
 ms.assetid: d49242df-dbd1-4b26-bd8c-ed56d24fdfcd
-ms.openlocfilehash: 43f700c28d5ffce8dc8b33651ce69493d9742272
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 0c2cf0f0000de44e1be796bb2de962b45c1d6969
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64659087"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84368066"
 ---
 # <a name="argument-nper-must-be-greater-than-zero"></a>Аргумент NPer должен быть больше нуля
 Функция `NPer` , которая возвращает значение `Double` , определяющее количество периодов для ежегодного дохода на основе периодических фиксированных выплат и фиксированной процентной ставки, требует аргумент, значение которого больше нуля.  
@@ -20,6 +20,6 @@ ms.locfileid: "64659087"
   
 - Проверьте предыдущие операции с переменными в выражении, в особенности те, которые передавались в процедуру как аргументы из других процедур.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Передача аргументов по значению и по ссылке](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Передача аргументов по значению и по ссылке](../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

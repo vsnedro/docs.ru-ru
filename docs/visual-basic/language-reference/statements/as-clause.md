@@ -8,62 +8,62 @@ helpviewer_keywords:
 - As keyword [Visual Basic], statement syntax
 - As keyword [Visual Basic]
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
-ms.openlocfilehash: cf1acbfeee150f1ea353ce134a4e94dab9928e8a
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 4afc2800a98ceeda8eeb3a1fada0b82c2e8bcedb
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350173"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408462"
 ---
 # <a name="as-clause-visual-basic"></a>Предложение As (Visual Basic)
-Вводит предложение `As`, которое определяет тип данных в операторе объявления или список ограничений для параметра универсального типа.  
+Вводит `As` предложение, которое определяет тип данных в операторе объявления или список ограничений для параметра универсального типа.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
  Ключевое слово `As` можно использовать в следующих контекстах:  
   
- [Предложение Aggregate](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
+ [Aggregate Clause](../queries/aggregate-clause.md)  
   
- [Оператор Class](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Оператор Class](class-statement.md)  
   
- [Оператор Const](../../../visual-basic/language-reference/statements/const-statement.md)  
+ [Оператор Const](const-statement.md)  
   
- [Оператор Declare](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Declare Statement](declare-statement.md)  
   
- [Оператор Delegate](../../../visual-basic/language-reference/statements/delegate-statement.md)  
+ [Оператор Delegate](delegate-statement.md)  
   
- [Оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Оператор Dim](dim-statement.md)  
   
- [Оператор Enum](../../../visual-basic/language-reference/statements/enum-statement.md)  
+ [Оператор Enum](enum-statement.md)  
   
- [Оператор Event](../../../visual-basic/language-reference/statements/event-statement.md)  
+ [Оператор Event](event-statement.md)  
   
- [Для... Следующие операторы](../../../visual-basic/language-reference/statements/for-next-statement.md)  
+ [Для... Следующие операторы](for-next-statement.md)  
   
- [Для каждого... Следующие операторы](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
+ [Для каждого... Следующие операторы](for-each-next-statement.md)  
   
- [Предложение From](../../../visual-basic/language-reference/queries/from-clause.md)  
+ [Предложение FROM](../queries/from-clause.md)  
   
- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Оператор Function](function-statement.md)  
   
- [Предложение Group Join](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Предложение Group Join](../queries/group-join-clause.md)  
   
- [Оператор Interface](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Оператор Interface](interface-statement.md)  
   
- [Оператор Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [Operator Statement](operator-statement.md)  
   
- [Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Property Statement](property-statement.md)  
   
- [Оператор Structure](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Оператор Structure](structure-statement.md)  
   
- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Оператор Sub](sub-statement.md)  
   
- [Попробуйте... Перехватить... Операторы finally](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
+ [Попробуйте... Перехватить... Операторы finally](try-catch-finally-statement.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Создание переменной](../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)
-- [Типы данных](../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Объявление переменных](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Список типов](../../../visual-basic/language-reference/statements/type-list.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
+- [Практическое руководство. Создание новой переменной](../../programming-guide/language-features/variables/how-to-create-a-new-variable.md)
+- [Типы данных](../../programming-guide/language-features/data-types/index.md)
+- [Объявление переменной](../../programming-guide/language-features/variables/variable-declaration.md)
+- [Type List](type-list.md)
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [Ключевые слова](../keywords/index.md)

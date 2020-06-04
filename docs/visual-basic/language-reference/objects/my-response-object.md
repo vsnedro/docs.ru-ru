@@ -7,27 +7,27 @@ f1_keywords:
 helpviewer_keywords:
 - My.Response object
 ms.assetid: 626359bc-3165-40b4-bfaf-2c610e26eb5b
-ms.openlocfilehash: 522814ad48fb7548032b8a37779bb3ff6ca62413
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 962108264563c5e0b2894c5c856a5f23a3c1a8b4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350655"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84372468"
 ---
 # <a name="myresponse-object"></a>Объект My.Response
-Возвращает объект <xref:System.Web.HttpResponse>, связанный с <xref:System.Web.UI.Page>. Этот объект позволяет отправлять клиенту данные HTTP-ответа и содержит сведения об этом ответе.  
+Возвращает <xref:System.Web.HttpResponse> объект, связанный с объектом <xref:System.Web.UI.Page> . Этот объект позволяет отправлять клиенту данные HTTP-ответа и содержит сведения об этом ответе.  
   
-## <a name="remarks"></a>Примечания  
- Объект `My.Response` содержит текущий объект <xref:System.Web.HttpResponse>, связанный со страницей.  
+## <a name="remarks"></a>Комментарии  
+ `My.Response`Объект содержит текущий объект, <xref:System.Web.HttpResponse> связанный со страницей.  
   
- Объект `My.Response` доступен только для приложений ASP.NET.  
+ `My.Response`Объект доступен только для приложений ASP.NET.  
   
 ## <a name="example"></a>Пример  
- Следующий пример получает коллекцию заголовков из объекта `My.Request` и использует объект `My.Response` для записи на страницу ASP.NET.  
+ Следующий пример получает коллекцию заголовков из `My.Request` объекта и использует `My.Response` объект для записи на страницу ASP.NET.  
   
  [!code-aspx-vb[VbVbalrMyWeb#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWeb/VB/Default.aspx#1)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Web.HttpResponse>
-- [Объект My.Request](../../../visual-basic/language-reference/objects/my-request-object.md)
+- [Объект My.Request](my-request-object.md)

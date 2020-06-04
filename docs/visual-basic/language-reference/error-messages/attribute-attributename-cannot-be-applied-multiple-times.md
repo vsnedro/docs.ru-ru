@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - BC30663
 ms.assetid: 3760e7ff-7238-40a1-8676-77d858a64fc0
-ms.openlocfilehash: f2f4dc428a247275f9919c4a8b6e6944a558eef0
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 14145f165adf5ccd20298a70ca5596488b488b0c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73968229"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84409963"
 ---
-# <a name="attribute-attributename-cannot-be-applied-multiple-times"></a>Атрибут "\<AttributeName >" не может применяться несколько раз
+# <a name="attribute-attributename-cannot-be-applied-multiple-times"></a>Атрибут \<attributename> не может применяться многократно
 
-Атрибут можно применить только один раз. Атрибут `AttributeUsage` определяет, может ли атрибут быть применен более одного раза.  
+Атрибут можно применить только один раз. `AttributeUsage`Атрибут определяет, можно ли применить атрибут более одного раза.  
   
  **Идентификатор ошибки:** BC30663  
   
@@ -24,14 +24,14 @@ ms.locfileid: "73968229"
   
 1. Убедитесь, что атрибут применяется только один раз.  
   
-2. При использовании настраиваемых атрибутов, которые вы разработали, рассмотрите возможность изменения атрибута `AttributeUsage`, чтобы разрешить использование нескольких атрибутов, как показано в следующем примере.  
+2. Если вы используете созданные вами настраиваемые атрибуты, попробуйте изменить их `AttributeUsage` атрибут, чтобы разрешить использование нескольких атрибутов, как показано в следующем примере.  
   
 ```vb  
 <AttributeUsage(AllowMultiple := True)>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.AttributeUsageAttribute>
-- [Создание настраиваемых атрибутов](../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
-- [AttributeUsage](../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)
+- [Создание настраиваемых атрибутов](../../programming-guide/concepts/attributes/creating-custom-attributes.md)
+- [AttributeUsage](../../programming-guide/concepts/attributes/attributeusage.md)

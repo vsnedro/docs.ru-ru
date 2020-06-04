@@ -2,12 +2,12 @@
 title: Практическое руководство. Вызов метода делегата
 ms.date: 07/20/2015
 ms.assetid: b56866ae-abf9-4a5a-a855-486359455e9c
-ms.openlocfilehash: 520bacfbe6103490e0459cd5af149c1d55a8fce4
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: f319727c007b93c7b334af0598f1b9f7c034144d
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345255"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410725"
 ---
 # <a name="how-to-invoke-a-delegate-method-visual-basic"></a>Практическое руководство. Вызов метода делегата (Visual Basic)
 
@@ -15,7 +15,7 @@ ms.locfileid: "74345255"
 
 ### <a name="create-the-delegate-and-matching-procedures"></a>Создание делегата и процедур сопоставления
 
-1. Создайте делегат с именем `MySubDelegate`.
+1. Создайте делегат с именем `MySubDelegate` .
 
     ```vb
     Delegate Sub MySubDelegate(ByVal x As Integer)
@@ -31,7 +31,7 @@ ms.locfileid: "74345255"
     End Class
     ```
 
-3. Определите метод, который создает экземпляр делегата и вызывает метод, связанный с делегатом, вызвав встроенный метод `Invoke`.
+3. Определите метод, который создает экземпляр делегата и вызывает метод, связанный с делегатом, вызвав встроенный `Invoke` метод.
 
     ```vb
     Protected Sub DelegateTest()
@@ -43,9 +43,9 @@ ms.locfileid: "74345255"
     End Sub
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Delegate](../../../../visual-basic/language-reference/statements/delegate-statement.md)
-- [Делегаты](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
-- [События](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Оператор Delegate](../../../language-reference/statements/delegate-statement.md)
+- [Делегаты](index.md)
+- [События](../events/index.md)
 - [Многопоточные приложения](../../../../standard/threading/using-threads-and-threading.md)
