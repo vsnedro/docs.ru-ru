@@ -5,14 +5,14 @@ helpviewer_keywords:
 - <para> XML tag
 - para XML tag
 ms.assetid: a3a18b6c-6416-4358-94ec-37b22675fd37
-ms.openlocfilehash: 8f28ecc33eea99150509bb4bade047489b4b826b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0e2051d1b00b881c06082b3af483890d8595899f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352305"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400077"
 ---
-# <a name="para-visual-basic"></a>\<> абзаца (Visual Basic)
+# <a name="para-visual-basic"></a>\<para> (Visual Basic)
 Указывает, что содержимое форматируется как абзац.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,16 +25,16 @@ ms.locfileid: "74352305"
  `content`  
  Текст абзаца.  
   
-## <a name="remarks"></a>Примечания  
- Тег `<para>` предназначен для использования внутри тега, например [\<> сводки](../../../visual-basic/language-reference/xmldoc/summary.md), [\<примечания >](../../../visual-basic/language-reference/xmldoc/remarks.md)или [\<возвращает >](../../../visual-basic/language-reference/xmldoc/returns.md)и позволяет добавлять в текст структуру.  
+## <a name="remarks"></a>Remarks  
+ `<para>`Тег используется внутри тега, например, [\<summary>](summary.md) [\<remarks>](remarks.md) или [\<returns>](returns.md) , и позволяет добавить в текст структуру.  
   
- Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
+ Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../reference/command-line-compiler/doc.md).  
   
 ## <a name="example"></a>Пример  
- В этом примере используется тег `<para>` для разбиения раздела примечаний для метода `UpdateRecord` на два абзаца.  
+ В этом примере `<para>` тег используется для разбиения раздела примечаний для `UpdateRecord` метода на два абзаца.  
   
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [XML-теги для комментариев](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML-теги для комментариев](index.md)

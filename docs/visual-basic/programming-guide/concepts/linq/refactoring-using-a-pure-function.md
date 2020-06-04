@@ -2,20 +2,20 @@
 title: Рефакторинг с использованием чистых функций
 ms.date: 07/20/2015
 ms.assetid: af0ea62f-4f57-4868-b624-a85524055935
-ms.openlocfilehash: 3a0365c79b8283fef242ecf8f2b68ea4de780049
-ms.sourcegitcommit: 43d10ef65f0f1fd6c3b515e363bde11a3fcd8d6d
+ms.openlocfilehash: 675baa4eb07db7a798b9bd47877c8f019a7021e3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78266941"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84413457"
 ---
 # <a name="refactoring-using-a-pure-function-visual-basic"></a>Рефакторинг с использованием чистых функций (Visual Basic)
-Следующий пример рефакторинг предыдущего примера, [Refactoring Использование метода расширения (Visual Basic),](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)чтобы использовать чистую функцию В этом `ParagraphText`примере, код, чтобы найти текст абзаца, перемещается в чистый статический метод.  
+В следующем примере переносится предыдущий пример, [Рефакторинг с помощью метода расширения (Visual Basic)](refactoring-using-an-extension-method.md), для использования чистой функции в этом примере код для поиска текста абзаца перемещается в чистый статический метод `ParagraphText` .  
   
 ## <a name="example"></a>Пример  
  В данном примере обрабатывается документ WordprocessingML, из которого извлекаются узлы абзацев. Также идентифицируется стиль каждого абзаца. Этот пример основан на предыдущих примерах данного учебника. Оптимизированный код поясняется в комментариях кода ниже.  
   
- Для инструкций по созданию исходного документа для этого примера [см.](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)  
+ Инструкции по созданию исходного документа для этого примера см. в разделе [Создание исходного документа Office Open XML (Visual Basic)](creating-the-source-office-open-xml-document.md).  
   
  В этом примере используются классы из сборки WindowsBase. Используются типы из пространства имен <xref:System.IO.Packaging?displayProperty=nameWithType>.  
   
@@ -170,10 +170,10 @@ StyleName:Code >Hello World<
 ### <a name="next-steps"></a>Next Steps  
  В следующем примере показано, как выполнить проекцию XML в другую форму:  
   
-- [Проектирование XML в другой форме (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projecting-xml-in-a-different-shape.md)  
+- [Проецирование XML в другую форму (Visual Basic)](projecting-xml-in-a-different-shape.md)  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Учебник: Манипулирование контентом в документе WordprocessingML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
-- [Рефакторинг с использованием метода расширения (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)
-- [Рефакторинг в чистые функции (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+- [Руководство. Управление содержимым в документе WordprocessingML (Visual Basic)](tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+- [Рефакторинг с помощью метода расширения (Visual Basic)](refactoring-using-an-extension-method.md)
+- [Рефакторинг в чистые функции (Visual Basic)](refactoring-into-pure-functions.md)

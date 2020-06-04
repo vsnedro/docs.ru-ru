@@ -2,12 +2,12 @@
 title: Практическое руководство. Создание иерархии с помощью группировки
 ms.date: 07/20/2015
 ms.assetid: 4eb3ca6b-1aed-43de-b8b9-41c769c993f8
-ms.openlocfilehash: 3fea3e008e0bb18ae92f8883d08be4f27929b9fd
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 551a1b8909eb36fea17c93563895296f65794cac
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74341597"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414586"
 ---
 # <a name="how-to-create-hierarchy-using-grouping-visual-basic"></a>Инструкции. Создание иерархии с помощью группирования (Visual Basic)
 Этот пример показывает, как группировать данные и затем создавать код XML на основе группирования.  
@@ -15,7 +15,7 @@ ms.locfileid: "74341597"
 ## <a name="example"></a>Пример  
  В этом примере сначала данные группируются по категориям, а затем создается новый XML-файл, в котором XML-иерархия отражает группирование.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные (LINQ to XML)](sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```vb  
 Dim doc As XElement = XElement.Load("Data.xml")  
@@ -79,6 +79,6 @@ Console.WriteLine(newData)
 </Root>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)
