@@ -1,13 +1,13 @@
 ---
-title: Практическое руководство. Запись метода оси LINQ to XML
+title: Практическое руководство. Написание метода оси LINQ to XML
 ms.date: 07/20/2015
 ms.assetid: b676f025-a24c-4076-8713-aa809b2b8ce0
-ms.openlocfilehash: 88a9df9a2750736cfd34b655cf3ea0f57b2bff39
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0a20bef800c07b0db8ed47c7a04fd102c1076588
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348347"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397652"
 ---
 # <a name="how-to-write-a-linq-to-xml-axis-method-visual-basic"></a>Руководство. написание метода оси LINQ to XML (Visual Basic)
 Можно написать свои собственные методы оси для получения коллекций из XML-дерева. Один из лучших способов выполнения этого состоит в написании метода расширения, возвращающего коллекцию элементов или атрибутов. Метод расширения можно написать для возврата указанных поднаборов элементов или атрибутов с учетом требований приложения.  
@@ -15,7 +15,7 @@ ms.locfileid: "74348347"
 ## <a name="example"></a>Пример  
  В следующем примере используются два метода расширения. Первый метод расширения, `GetXPath`, действует применительно к <xref:System.Xml.Linq.XObject> и возвращает выражение XPath, которое после его вычисления возвращает узел или атрибут. Второй метод расширения, `Find`, применяется к <xref:System.Xml.Linq.XElement>. Он возвращает коллекцию объектов <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>, содержащих некоторый указанный текст.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
 Imports System.Runtime.CompilerServices  
@@ -215,6 +215,6 @@ End Module
 1999-10-22  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)

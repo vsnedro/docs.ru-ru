@@ -1,15 +1,15 @@
 ---
-title: Инструкции. СозданиеC++ объединения C с помощью атрибутов
+title: Инструкции. Создание объединения C-C + + с помощью атрибутов
 ms.date: 07/20/2015
 ms.assetid: 9352a7e4-c0da-4d07-aa14-55ed43736fcb
-ms.openlocfilehash: acb8dc781e2872ae46e5aa058a98b3dd98f3e064
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ebab0ad947f776932f9379af3969e369eeec1941
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349501"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400685"
 ---
-# <a name="how-to-create-a-cc-union-by-using-attributes-visual-basic"></a>Инструкции. Создание C/C++ Union с помощью атрибутов (Visual Basic)
+# <a name="how-to-create-a-cc-union-by-using-attributes-visual-basic"></a>How to: Create a C/C++ Union by Using Attributes (Visual Basic) (Практическое руководство. Создание объединения C/C++ с помощью атрибутов (Visual Basic))
 
 С помощью атрибутов можно настраивать расположение структур в памяти. Например, можно создать так называемое объединение в C/C++ с помощью атрибутов `StructLayout(LayoutKind.Explicit)` и `FieldOffset`.
 
@@ -69,13 +69,13 @@ Structure TestExplicit
 
 Два целочисленных поля `i1` и `i2` используют те же адреса памяти, что и `lg`. Такое управление расположением структуры полезно при использовании вызова неуправляемого кода.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>
-- [Руководство по программированию на Visual Basic](../../../../visual-basic/programming-guide/index.md)
+- [Руководство по программированию на Visual Basic](../../index.md)
 - [Атрибуты](../../../../standard/attributes/index.md)
-- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md) (Отражение (Visual Basic))
-- [Атрибуты (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)
-- [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md) (Создание настраиваемых атрибутов (Visual Basic))
-- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))
+- [Reflection (Visual Basic)](../reflection.md) (Отражение (Visual Basic))
+- [Атрибуты (Visual Basic)](../../../language-reference/attributes.md)
+- [Creating Custom Attributes (Visual Basic)](creating-custom-attributes.md) (Создание настраиваемых атрибутов (Visual Basic))
+- [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))

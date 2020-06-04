@@ -1,15 +1,15 @@
 ---
-title: 'Пример XML-файла: конфигурация тестирования (LINQ to XML)'
+title: Пример XML-файла. Конфигурация тестирования (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 2e0e19f2-83e4-42ad-958a-6b3e34c9bf17
-ms.openlocfilehash: ef0df3ba2aa6d7628902cf59ff5fad4d29b017f1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b971044ad28763858f40d36e454c08762598a435
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61786936"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84360858"
 ---
-# <a name="sample-xml-file-test-configuration-linq-to-xml"></a>Пример XML-файла: конфигурация тестирования (LINQ to XML)
+# <a name="sample-xml-file-test-configuration-linq-to-xml"></a>Пример XML-файла. Конфигурация тестирования (LINQ to XML)
 Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. Это тестовый файл конфигурации.  
   
 ## <a name="testconfigxml"></a>TestConfig.xml  
@@ -56,6 +56,6 @@ ms.locfileid: "61786936"
 </Tests>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Примеры XML-документов (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+- [Примеры XML-документов (LINQ to XML)](sample-xml-documents-linq-to-xml.md)

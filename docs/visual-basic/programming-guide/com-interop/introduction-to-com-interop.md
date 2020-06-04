@@ -5,12 +5,12 @@ helpviewer_keywords:
 - interop assemblies
 - COM interop [Visual Basic], about COM interop
 ms.assetid: 8bd62e68-383d-407f-998b-29aa0ce0fd67
-ms.openlocfilehash: c7909b3b6a2c9f0b397b9621b7e5125c232be313
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 6c7caf266514c43e40135b33d848a688546acf1c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353202"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396783"
 ---
 # <a name="introduction-to-com-interop-visual-basic"></a>Знакомство с COM-взаимодействием (Visual Basic)
 Модель COM позволяет объекту предоставлять свою функциональность другим компонентам и размещать приложения. Хотя COM-объекты основаны на программировании Windows в течение многих лет, приложения, разработанные для среды CLR, имеют множество преимуществ.  
@@ -51,12 +51,12 @@ ms.locfileid: "74353202"
 ## <a name="interoperability-marshaling"></a>Упаковка взаимодействия  
  Все приложения .NET Framework используют набор общих типов, обеспечивающих взаимодействие объектов, независимо от используемого языка программирования. Параметры и возвращаемые значения COM-объектов иногда используют типы данных, отличные от используемых в управляемом коде. *Маршалирование взаимодействия* — это процесс упаковки параметров и возврата значений в эквивалентные типы данных по мере их перемещения в COM-объекты и обратно. Дополнительные сведения см. в разделе [Маршалинг взаимодействия](../../../framework/interop/interop-marshaling.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [COM-взаимодействие](../../../visual-basic/programming-guide/com-interop/index.md)
-- [Пошаговое руководство. Реализация наследования с использованием COM-объектов](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
+- [COM-взаимодействие](index.md)
+- [Пошаговое руководство. Реализация наследования с использованием COM-объектов](walkthrough-implementing-inheritance-with-com-objects.md)
 - [Взаимодействие с неуправляемым кодом](../../../framework/interop/index.md)
-- [Устранение неполадок взаимодействия](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
+- [Устранение неполадок взаимодействия](troubleshooting-interoperability.md)
 - [Сборки в .NET](../../../standard/assembly/index.md)
 - [Tlbimp.exe (программа экспорта библиотек типов)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
 - [Tlbexp.exe (программа экспорта библиотек типов)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)

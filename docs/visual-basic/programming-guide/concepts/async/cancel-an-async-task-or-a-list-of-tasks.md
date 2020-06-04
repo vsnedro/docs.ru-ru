@@ -2,23 +2,23 @@
 title: Отмена асинхронной задачи или списка задач
 ms.date: 07/20/2015
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
-ms.openlocfilehash: 2956582cd0c8e044fcd37ffab13686489a7c854c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 932bf46f1e3aee220d0412f1688e961faaef3459
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74347965"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396705"
 ---
-# <a name="cancel-an-async-task-or-a-list-of-tasks-visual-basic"></a>Отмена асинхронной задачи или списка задач (Visual Basic)
+# <a name="cancel-an-async-task-or-a-list-of-tasks-visual-basic"></a>Cancel an Async Task or a List of Tasks (Visual Basic) (Отмена асинхронной задачи или списка задач в Visual Basic)
 
 Вы можете настроить кнопку, которая позволит отменить асинхронное приложение в случае, если вы не захотите дожидаться его завершения. Выполнив код в приведенных ниже примерах, вы сможете добавить в приложение кнопку отмены, загружающую содержимое одного веб-сайта или список веб-сайтов.
 
-В примерах используется пользовательский интерфейс для [точной настройки приложения async (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md) .
+В примерах используется пользовательский интерфейс для [точной настройки приложения async (Visual Basic)](fine-tuning-your-async-application.md) .
 
 > [!NOTE]
 > Для выполнения примеров необходимо, чтобы на компьютере были установлены Visual Studio 2012 или более поздняя версия и .NET Framework 4.5 или более поздняя версия.
 
-## <a name="BKMK_CancelaTask"></a> Отмена задачи
+## <a name="cancel-a-task"></a><a name="BKMK_CancelaTask"></a>Отмена задачи
 
 Код в первом примере связывает кнопку **Отмена** с отдельной задачей загрузки. Если нажать эту кнопку, когда приложение загружает содержимое, загрузка будет отменена.
 
@@ -138,7 +138,7 @@ ms.locfileid: "74347965"
     Download canceled.
     ```
 
-## <a name="BKMK_CancelaListofTasks"></a> Отмена список задач
+## <a name="cancel-a-list-of-tasks"></a><a name="BKMK_CancelaListofTasks"></a>Отмена списка задач
 
 Вы можете расширить предыдущий пример до отмены сразу нескольких задач, связав с каждой из них один и тот же экземпляр `CancellationTokenSource`. В этом случае кнопка **Отмена** отменяет сразу все незавершенные задачи.
 
@@ -253,7 +253,7 @@ ms.locfileid: "74347965"
     Downloads canceled.
     ```
 
-## <a name="BKMK_CompleteExamples"></a> Полные примеры
+## <a name="complete-examples"></a><a name="BKMK_CompleteExamples"></a>Полные примеры
 
 Следующие разделы содержат код каждого из приведенных выше примеров. Обратите внимание на то, что необходимо добавить ссылку для <xref:System.Net.Http>.
 
@@ -463,10 +463,10 @@ End Class
 ' Downloads canceled.
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>
-- [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
-- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md) (Настройка асинхронного приложения (Visual Basic))
+- [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](index.md)
+- [Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md) (Настройка асинхронного приложения (Visual Basic))
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) (Пример использования Async. Тонкая настройка асинхронного приложения)

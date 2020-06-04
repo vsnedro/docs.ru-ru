@@ -2,12 +2,12 @@
 title: Практическое руководство. Изменение порядка полей файла с разделителями (LINQ)
 ms.date: 07/20/2015
 ms.assetid: c451c7db-663b-4daf-b8ba-a2093095d672
-ms.openlocfilehash: 736f0218f14f0077683456599d3d7ef3ecec7517
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 6f87374978425e0d51542c6eceda23697d7a3a67
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74347603"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397899"
 ---
 # <a name="how-to-reorder-the-fields-of-a-delimited-file-linq-visual-basic"></a>Как изменить порядок полей файла с разделителями (LINQ) (Visual Basic)
 
@@ -75,8 +75,8 @@ End Class
 ' 122, Michael Tucker
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [LINQ и строки (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ и каталоги файлов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
-- [Практическое руководство. Создание кода XML из CSV-файлов](../../../../visual-basic/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)
+- [LINQ и строки (Visual Basic)](linq-and-strings.md)
+- [LINQ и каталоги файлов (Visual Basic)](linq-and-file-directories.md)
+- [Как создать XML из CSV-файлов](how-to-generate-xml-from-csv-files.md)

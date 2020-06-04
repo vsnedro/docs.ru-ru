@@ -1,31 +1,31 @@
 ---
-title: Общие сведения об атрибутах
+title: Обзор атрибутов
 ms.date: 07/20/2015
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
-ms.openlocfilehash: 97a2a13102718b6ee8829fca678b2b49df21e5d1
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a0a080d44796289cc3562803c84ec915dcedd314
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349484"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400710"
 ---
 # <a name="attributes-overview-visual-basic"></a>Общие сведения об атрибутах (Visual Basic)
 
-Атрибуты предоставляют мощное средство для связывания метаданных или декларативной информации с кодом (сборки, типы, методы, свойства и т. д.). Связав атрибут связан с сущностью программы, вы можете проверять этот атрибут во время выполнения, используя технику *отражения*. Дополнительные сведения см. в статье [Отражение (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md).
+Атрибуты предоставляют мощное средство для связывания метаданных или декларативной информации с кодом (сборки, типы, методы, свойства и т. д.). Связав атрибут связан с сущностью программы, вы можете проверять этот атрибут во время выполнения, используя технику *отражения*. Дополнительные сведения см. в статье [Отражение (Visual Basic)](../reflection.md).
 
 Атрибуты имеют следующие свойства.
 
-- Атрибуты добавляют в программу метаданные. *Метаданные* — это сведения о типах, определенных в программе. Все сборки .NET содержат некоторый набор метаданных, описывающих типы и члены типов, определенные в этой сборке. Вы можете добавить пользовательские атрибуты, чтобы указать любую дополнительную информацию. Дополнительные сведения см. в статье [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md) (Создание пользовательских атрибутов (Visual Basic)).
+- Атрибуты добавляют в программу метаданные. *Метаданные* — это сведения о типах, определенных в программе. Все сборки .NET содержат некоторый набор метаданных, описывающих типы и члены типов, определенные в этой сборке. Вы можете добавить пользовательские атрибуты, чтобы указать любую дополнительную информацию. Дополнительные сведения см. в статье [Creating Custom Attributes (Visual Basic)](creating-custom-attributes.md) (Создание пользовательских атрибутов (Visual Basic)).
 
 - Вы можете применить один или несколько атрибутов ко всей сборке, к модулю или к более мелким элементам программы, например к классам и свойствам.
 
 - Атрибуты могут принимать аргументы, так же как методы и свойства.
 
-- Программа может проверить собственные метаданные или метаданные в других программах, используя отражение. Дополнительные сведения см. в статье [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic)).
+- Программа может проверить собственные метаданные или метаданные в других программах, используя отражение. Дополнительные сведения см. в статье [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic)).
 
 ## <a name="using-attributes"></a>Использование атрибутов
 
-Атрибуты можно использовать почти в любых объявлениях, но для каждого атрибута можно ограничить типы объявлений, в которых он является допустимым. В Visual Basic атрибуты заключаются в угловые скобки (\< >). Они должны располагаться непосредственно перед тем элементом, к которому они применяются, и обязательно в той же строке.
+Атрибуты можно использовать почти в любых объявлениях, но для каждого атрибута можно ограничить типы объявлений, в которых он является допустимым. В Visual Basic атрибут заключен в угловые скобки ( \< > ). Они должны располагаться непосредственно перед тем элементом, к которому они применяются, и обязательно в той же строке.
 
 В этом примере атрибут <xref:System.SerializableAttribute> используется для применения определенной характеристики к классу:
 
@@ -100,7 +100,7 @@ End Sub
 |`assembly`|Вся сборка|
 |`module`|Текущий модуль сборки (это не то же самое, что модуль Visual Basic)|
 
- Следующий пример демонстрирует, как применить атрибуты к сборкам и модулям. Дополнительные сведения см. в статье [Common Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md) (Распространенные атрибуты (Visual Basic)).
+ Следующий пример демонстрирует, как применить атрибуты к сборкам и модулям. Дополнительные сведения см. в статье [Common Attributes (Visual Basic)](common-attributes.md) (Распространенные атрибуты (Visual Basic)).
 
 ```vb
 Imports System.Reflection
@@ -114,7 +114,7 @@ Module: CLSCompliant(True)>
 
 - Указание для методов в веб-службах атрибута `WebMethod`, который обозначает, что метод должен вызываться по протоколу SOAP. Дополнительные сведения см. в разделе <xref:System.Web.Services.WebMethodAttribute>.
 
-- Описание способов упаковки параметров методов при взаимодействии с машинным кодом. Дополнительные сведения см. в разделе <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
+- Описание способов упаковки параметров методов при взаимодействии с машинным кодом. Для получения дополнительной информации см. <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
 
 - Описание свойств COM для классов, методов и интерфейсов.
 
@@ -136,20 +136,20 @@ Module: CLSCompliant(True)>
 
 ## <a name="related-sections"></a>Связанные разделы
 
-Дополнительные сведения см. на странице
+Дополнительные сведения можно найти в разделе
 
-- [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md) (Создание настраиваемых атрибутов (Visual Basic))
+- [Creating Custom Attributes (Visual Basic)](creating-custom-attributes.md) (Создание настраиваемых атрибутов (Visual Basic))
 
-- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))
+- [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))
 
-- [How to: Create a C/C++ Union by Using Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md) (Практическое руководство. Создание объединения C/C++ с помощью атрибутов (Visual Basic))
+- [How to: Create a C/C++ Union by Using Attributes (Visual Basic)](how-to-create-a-c-cpp-union-by-using-attributes.md) (Практическое руководство. Создание объединения C/C++ с помощью атрибутов (Visual Basic))
 
-- [Common Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md) (Распространенные атрибуты (Visual Basic))
+- [Common Attributes (Visual Basic)](common-attributes.md) (Распространенные атрибуты (Visual Basic))
 
-- [Caller Information (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md) (Сведения о вызывающем (Visual Basic))
+- [Caller Information (Visual Basic)](../caller-information.md) (Сведения о вызывающем (Visual Basic))
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Руководство по программированию на Visual Basic](../../../../visual-basic/programming-guide/index.md)
-- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md) (Отражение (Visual Basic))
+- [Руководство по программированию на Visual Basic](../../index.md)
+- [Reflection (Visual Basic)](../reflection.md) (Отражение (Visual Basic))
 - [Атрибуты](../../../../standard/attributes/index.md)

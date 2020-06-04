@@ -1,13 +1,13 @@
 ---
-title: Сохранение пробелов при Serializing2
+title: Сохранение пробелов во время Serializing2
 ms.date: 07/20/2015
 ms.assetid: 2d7abbd4-37f4-422b-89dd-0a694b5edc17
-ms.openlocfilehash: e02335f564155fa8dc08fc3320ddc4e8c178a132
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: e9b73089830bf7e6cb0ea9e469bf667f12c571d8
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64666110"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396406"
 ---
 # <a name="preserving-white-space-while-serializing"></a>Сохранение пробелов при сериализации
 В этом разделе описывается управление пробелами при сериализации XML-дерева.  
@@ -31,6 +31,6 @@ ms.locfileid: "64666110"
   
  Если метод берет объект <xref:System.Xml.Linq.SaveOptions> в качестве аргумента, то можно указать, что этот метод не должен форматировать (расставлять отступы) сериализованный XML. В этом случае все незначащие пробелы в XML-дереве сохраняются.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Сериализация деревьев XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)
+- [Сериализация деревьев XML (Visual Basic)](serializing-xml-trees.md)

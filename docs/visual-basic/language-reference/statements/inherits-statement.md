@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Inherits statement [Visual Basic]
 - Inherits statement [Visual Basic], syntax
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
-ms.openlocfilehash: 6e6e9cc9210232059210862f2bda691c57b372d6
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 5d88a01f90bc91a88229d19aa2368f8c71075b2f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353228"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404503"
 ---
 # <a name="inherits-statement"></a>Inherits Statement
 Заставляет текущий класс или интерфейс наследовать атрибуты, переменные, свойства, процедуры и события из другого класса или набора интерфейсов.  
@@ -24,35 +24,35 @@ ms.locfileid: "74353228"
 Inherits basetypenames  
 ```  
   
-## <a name="parts"></a>Части  
+## <a name="parts"></a>Компоненты  
   
 |Термин|Определение|  
 |---|---|  
-|`basetypenames`|Обязательно. Имя класса, от которого наследует этот класс.<br /><br /> \- или -<br /><br /> Имена интерфейсов, из которых наследуется этот интерфейс. Используйте запятые для разделения нескольких имен.|  
+|`basetypenames`|Обязательный. Имя класса, от которого наследует этот класс.<br /><br /> -или-<br /><br /> Имена интерфейсов, из которых наследуется этот интерфейс. Используйте запятые для разделения нескольких имен.|  
   
-## <a name="remarks"></a>Примечания  
- При использовании оператор `Inherits` должен быть первой непустой строкой, не являющейся комментарием, в определении класса или интерфейса. Он должен следовать сразу за `Class` или инструкцией `Interface`.  
+## <a name="remarks"></a>Комментарии  
+ При использовании `Inherits` инструкция должна быть первой непустой строкой, не являющейся комментарием, в определении класса или интерфейса. Он должен следовать сразу за `Class` `Interface` оператором или.  
   
- `Inherits` можно использовать только в классе или интерфейсе. Это означает, что контекст объявления для наследования не может быть исходным файлом, пространством имен, структурой, модулем, процедурой или блоком.  
+ Можно использовать `Inherits` только в классе или интерфейсе. Это означает, что контекст объявления для наследования не может быть исходным файлом, пространством имен, структурой, модулем, процедурой или блоком.  
   
 ## <a name="rules"></a>Правила  
   
-- **Наследование класса.** Если класс использует инструкцию `Inherits`, можно указать только один базовый класс.  
+- **Наследование класса.** Если класс использует `Inherits` инструкцию, можно указать только один базовый класс.  
   
      Класс не может наследовать от класса, вложенного в него.  
   
-- **Наследование интерфейса.** Если интерфейс использует инструкцию `Inherits`, можно указать один или несколько базовых интерфейсов. Можно наследовать от двух интерфейсов, даже если каждый из них определяет член с тем же именем. В этом случае реализующий код должен использовать уточнение имени, чтобы указать, какой член он реализует.  
+- **Наследование интерфейса.** Если интерфейс использует `Inherits` инструкцию, можно указать один или несколько базовых интерфейсов. Можно наследовать от двух интерфейсов, даже если каждый из них определяет член с тем же именем. В этом случае реализующий код должен использовать уточнение имени, чтобы указать, какой член он реализует.  
   
-     Интерфейс не может наследовать от другого интерфейса с более узким уровнем доступа. Например, интерфейс `Public` не может наследовать от интерфейса `Friend`.  
+     Интерфейс не может наследовать от другого интерфейса с более узким уровнем доступа. Например, `Public` интерфейс не может наследовать от `Friend` интерфейса.  
   
      Интерфейс не может наследовать от вложенного в него интерфейса.  
   
- Примером наследования класса в .NET Framework является класс <xref:System.ArgumentException>, который наследуется от класса <xref:System.SystemException>. Это позволяет <xref:System.ArgumentException> все предопределенные свойства и процедуры, необходимые системным исключениям, такие как свойство <xref:System.Exception.Message%2A> и метод <xref:System.Exception.ToString%2A>.  
+ Примером наследования класса в .NET Framework является <xref:System.ArgumentException> класс, который наследует от <xref:System.SystemException> класса. Это обеспечивает <xref:System.ArgumentException> все предопределенные свойства и процедуры, необходимые системным исключениям, таким как <xref:System.Exception.Message%2A> свойство и <xref:System.Exception.ToString%2A> метод.  
   
- Примером наследования интерфейса в .NET Framework является интерфейс <xref:System.Collections.ICollection>, который наследуется от интерфейса <xref:System.Collections.IEnumerable>. В результате <xref:System.Collections.ICollection> наследует определение перечислителя, необходимого для прохода по коллекции.  
+ Примером наследования интерфейса в .NET Framework является <xref:System.Collections.ICollection> интерфейс, который наследует от <xref:System.Collections.IEnumerable> интерфейса. Это приводит <xref:System.Collections.ICollection> к наследованию определения перечислителя, необходимого для прохода по коллекции.  
   
 ## <a name="example"></a>Пример  
- В следующем примере используется оператор `Inherits`, чтобы продемонстрировать, как класс с именем `thisClass` может наследовать все члены базового класса с именем `anotherClass`.  
+ В следующем примере оператор используется `Inherits` для демонстрации того, как класс с именем `thisClass` может наследовать все члены базового класса с именем `anotherClass` .  
   
  [!code-vb[VbVbalrStatements#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#37)]  
   
@@ -61,12 +61,12 @@ Inherits basetypenames
   
  [!code-vb[VbVbalrStatements#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#38)]  
   
- Интерфейс с именем `thisInterface` теперь включает все определения в интерфейсах <xref:System.IComparable>, <xref:System.IDisposable>и <xref:System.IFormattable>. унаследованные члены предоставляют соответствующие типы для сравнения двух объектов, высвобождения выделенных ресурсов и выражения значения объекта в виде `String`. Класс, реализующий `thisInterface`, должен реализовывать каждый член каждого базового интерфейса.  
+ Интерфейс с именем `thisInterface` теперь включает все определения в <xref:System.IComparable> <xref:System.IDisposable> интерфейсах, и, <xref:System.IFormattable> унаследованные члены предоставляют соответствующие типы для сравнения двух объектов, высвобождения выделенных ресурсов и выражения значения объекта как `String` . Класс, реализующий, `thisInterface` должен реализовывать каждый член каждого базового интерфейса.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
-- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
-- [Объекты и классы](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
-- [Основы наследования](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
-- [Интерфейсы](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+- [MustInherit](../modifiers/mustinherit.md)
+- [NotInheritable](../modifiers/notinheritable.md)
+- [Объекты и классы](../../programming-guide/language-features/objects-and-classes/index.md)
+- [Основы наследования](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Интерфейсы](../../programming-guide/language-features/interfaces/index.md)

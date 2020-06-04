@@ -8,56 +8,56 @@ helpviewer_keywords:
 - LINQ [Visual Basic]
 - LINQ, Visual Basic
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
-ms.openlocfilehash: 20eba6a67900383dc3d603bf30babd5a97d05a6a
-ms.sourcegitcommit: 515469828d0f040e01bde01df6b8e4eb43630b06
+ms.openlocfilehash: 97db059c33e8c5603c2bf54bbcf128612a0d028f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78950984"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398400"
 ---
 # <a name="getting-started-with-linq-in-visual-basic"></a>Приступая к работе с LINQ в Visual Basic
-Этот раздел содержит обзоры, примеры и справочную информацию, которая поможет вам понять и использовать визуальный базовый и языковой интегрированный запрос (LINЗ).  
+В этом разделе содержатся обзоры, примеры и общие сведения, которые помогут вам понять и использовать Visual Basic и LINQ.  
   
-## <a name="in-this-section"></a>в этом разделе  
- [Написание первого запроса LINQ](../../../../visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query.md)  
- Описывает три этапа в написании базового запроса LIN': получение источника данных, написание запроса и выполнение запроса.  
+## <a name="in-this-section"></a>В этом разделе  
+ [Написание первого запроса LINQ](writing-your-first-linq-query.md)  
+ Описывает три этапа написания простого запроса LINQ: получение источника данных, запись запроса и выполнение запроса.  
   
- [Основные операции запроса (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md)  
- Описывает наиболее распространенные типы операций запросов и то, как они выражаются в Visual Basic.  
+ [Основные операции запроса (Visual Basic)](basic-query-operations.md)  
+ Описывает наиболее распространенные типы операций запросов и их выражения в Visual Basic.  
   
- [Возможности Visual Basic, поддерживающие LINQ](../../../../visual-basic/programming-guide/concepts/linq/features-that-support-linq.md)  
- Описывает функции визуального базового языка, поддерживающие LIN', такие как анонимные типы и выводы типов.  
+ [Возможности Visual Basic, поддерживающие LINQ](features-that-support-linq.md)  
+ Описывает функции языка Visual Basic, поддерживающие LINQ, такие как анонимные типы и вывод типов.  
   
- [Отношения типов в операциях запроса (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/type-relationships-in-query-operations.md)  
+ [Отношения типов в операциях запроса (Visual Basic)](type-relationships-in-query-operations.md)  
  Описывает, как сохраняются или преобразуются типы данных при написании и выполнении запросов.  
   
- [Пошаговое руководство. Написание запросов в Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)  
- Пошаговые инструкции по созданию проекта Visual Basic LIN, добавлению простого источника данных и выполнению некоторых основных операций запроса.  
+ [Пошаговое руководство. Написание запросов в Visual Basic](walkthrough-writing-queries.md)  
+ Пошаговые инструкции по созданию Visual Basic проекта LINQ, добавлению простого источника данных и выполнению некоторых основных операций с запросами.  
   
-## <a name="related-sections"></a>См. также  
- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)  
+## <a name="related-sections"></a>Связанные разделы  
+ [Introduction to LINQ in Visual Basic](../../language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)  
  Общие сведения о запросах в LINQ и ссылки на дополнительные ресурсы.  
   
- [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md) (Общие сведения о LINQ to XML в Visual Basic)  
- Описывает, как Visual Basic поддерживает LIN-к XML.  
+ [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md) (Общие сведения о LINQ to XML в Visual Basic)  
+ Описывает, как Visual Basic поддерживает LINQ to XML.  
   
  [Общие сведения о LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset-overview.md)  
- Предоставляет концептуальный обзор LIN'а dataSet.  
+ Содержит общие сведения о LINQ to DataSet.  
   
  [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- Объясняет технологию LIN' на S'L и предоставляет ссылки на темы, которые помогут вам использовать LIN's для S'L.  
+ Описание технологии LINQ to SQL и ссылки на разделы, помогающие использовать LINQ to SQL.  
   
- [Инструменты для поддержки LINQ в IDE Visual Studio (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md)  
- Описывает инструменты, доступные в среде Visual Studio для проектирования, кодирования и отладки приложений с поддержкой LIN.  
+ [Инструменты для поддержки LINQ в IDE Visual Studio (Visual Basic)](visual-studio-ide-and-tools-support-for-linq.md)  
+ Описание средств, доступных в среде Visual Studio для проектирования, кодирования и отладки приложений с поддержкой LINQ.  
   
- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
- Включает в себя подборку тем «Как-к» для использования LIN'а с коллекциями в памяти.  
+ [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
+ Включает в себя набор инструкций по использованию LINQ с коллекциями в памяти.  
   
- [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)  
+ [LINQ to XML (Visual Basic)](linq-to-xml.md)  
  Ссылки на разделы по использованию интерфейса LINQ to XML, который позволяет модифицировать документы в памяти с использованием модели DOM и поддерживает выражения запросов LINQ.  
   
- [LINQ (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ [LINQ (Visual Basic)](index.md)  
  Ссылки на разделы, в которых описываются технологии LINQ.  
   
  [Приступая к работе с LINQ в C#](../../../../csharp/programming-guide/concepts/linq/index.md)  
- Предоставляет ссылки на темы об использовании LIN'а в C.
+ Содержит ссылки на разделы, посвященные использованию LINQ в C#.

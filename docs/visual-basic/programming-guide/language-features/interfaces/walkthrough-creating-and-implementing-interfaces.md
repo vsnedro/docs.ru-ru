@@ -7,12 +7,12 @@ helpviewer_keywords:
 - interface implementation [Visual Basic], walkthrough
 - interfaces [Visual Basic], creating
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
-ms.openlocfilehash: 47176d2e7a512d8e8c27a90ac04d2a2a2af274b5
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 89e8f91a04b25b84bc783d5c4f4b91cf12426f72
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345042"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405071"
 ---
 # <a name="walkthrough-creating-and-implementing-interfaces-visual-basic"></a>Пошаговое руководство. Создание и реализация интерфейсов (Visual Basic)
 
@@ -33,9 +33,9 @@ ms.locfileid: "74345042"
   
 3. Присвойте новому модулю имя `Module1.vb` и нажмите кнопку **Добавить**. Отобразится код для нового модуля.  
   
-4. Определите интерфейс с именем `TestInterface` в `Module1`, введя `Interface TestInterface` между инструкциями `Module` и `End Module` и нажав клавишу ВВОД. **Редактор кода** делает отступ для ключевого слова `Interface` и добавляет оператор `End Interface` для формирования блока кода.  
+4. Определите интерфейс с именем `TestInterface` в `Module1` , введя `Interface TestInterface` между `Module` `End Module` операторами и, а затем нажав клавишу ВВОД. **Редактор кода** смещает `Interface` ключевое слово и добавляет `End Interface` оператор для формирования блока кода.  
   
-5. Определите свойство, метод и событие для интерфейса, поместив следующий код между операторами `Interface` и `End Interface`:  
+5. Определите свойство, метод и событие для интерфейса, поместив следующий код между `Interface` `End Interface` операторами и:  
   
      [!code-vb[VbVbalrOOP#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#98)]
   
@@ -45,27 +45,27 @@ ms.locfileid: "74345042"
   
 ### <a name="to-implement-the-interface"></a>Реализация интерфейса
   
-1. Добавьте класс с именем `ImplementationClass`, добавив следующую инструкцию в `Module1`, после инструкции `End Interface`, но перед инструкцией `End Module` и нажав клавишу ВВОД:  
+1. Добавьте класс с именем, `ImplementationClass` добавив следующий оператор в `Module1` , после `End Interface` оператора, но перед `End Module` оператором, а затем нажав клавишу ВВОД:  
   
      [!code-vb[VbVbalrOOP#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#99)]
   
-     При работе в интегрированной среде разработки **Редактор кода** предоставляет соответствующую инструкцию `End Class` при нажатии клавиши ВВОД.  
+     При работе в интегрированной среде разработки **Редактор кода** предоставляет соответствующий `End Class` оператор при нажатии клавиши ВВОД.  
   
-2. Добавьте следующую инструкцию `Implements` в `ImplementationClass`, которая именует интерфейс, реализуемый классом:  
+2. Добавьте следующий `Implements` оператор в `ImplementationClass` , который именует интерфейс, реализуемый классом:  
   
      [!code-vb[VbVbalrOOP#100](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#100)]
   
-     При указании отдельно от других элементов в верхней части класса или структуры оператор `Implements` указывает, что класс или структура реализуют интерфейс.  
+     При указании отдельно от других элементов в верхней части класса или структуры `Implements` оператор указывает, что класс или структура реализуют интерфейс.  
   
-     При работе в интегрированной среде разработки **Редактор кода** реализует члены класса, необходимые для `TestInterface` при нажатии клавиши ВВОД, и можно пропустить следующий шаг.  
+     При работе в интегрированной среде разработки **Редактор кода** реализует члены класса, необходимые `TestInterface` при нажатии клавиши ВВОД, и вы можете пропустить следующий шаг.  
   
-3. Если вы не работаете в интегрированной среде разработки, необходимо реализовать все члены интерфейса `MyInterface`. Добавьте следующий код `ImplementationClass` для реализации `Event1`, `Method1`и `Prop1`:  
+3. Если вы не работаете в интегрированной среде разработки, необходимо реализовать все члены интерфейса `MyInterface` . Добавьте следующий код в `ImplementationClass` для реализации `Event1` , `Method1` и `Prop1` :  
   
      [!code-vb[VbVbalrOOP#101](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#101)]
   
-     `Implements` оператор именует интерфейс и член интерфейса, который реализуется.  
+     `Implements`Оператор именует интерфейс и член интерфейса, который реализуется.  
   
-4. Завершите определение `Prop1`, добавив закрытое поле в класс, который сохранил значение свойства:  
+4. Завершите определение `Prop1` , добавив закрытое поле в класс, который сохранил значение свойства:  
   
      [!code-vb[VbVbalrOOP#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#102)]
   
@@ -77,39 +77,39 @@ ms.locfileid: "74345042"
   
      [!code-vb[VbVbalrOOP#104](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#104)]
   
-5. Завершите определение `Method1`, добавив следующий код.  
+5. Завершите определение `Method1` , добавив следующий код.  
   
      [!code-vb[VbVbalrOOP#105](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#105)]
   
 ### <a name="to-test-the-implementation-of-the-interface"></a>Тестирование реализации интерфейса
   
-1. Щелкните правой кнопкой мыши форму запуска проекта в **Обозреватель решений**и выберите пункт **Просмотреть код**. Редактор отображает класс для начальной формы. По умолчанию форма запуска называется `Form1`.  
+1. Щелкните правой кнопкой мыши форму запуска проекта в **Обозреватель решений**и выберите пункт **Просмотреть код**. Редактор отображает класс для начальной формы. По умолчанию вызывается форма запуска `Form1` .  
   
-2. Добавьте следующее поле `testInstance` в класс `Form1`:  
+2. Добавьте в `testInstance` класс следующее поле `Form1` :  
   
      [!code-vb[VbVbalrOOP#120](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#120)]
   
-     Объявляя `testInstance` как `WithEvents`, класс `Form1` может управлять его событиями.  
+     Если объявить `testInstance` как `WithEvents` , `Form1` класс может управлять его событиями.  
   
-3. Добавьте следующий обработчик событий в класс `Form1` для обработки событий, вызванных `testInstance`:  
+3. Добавьте следующий обработчик событий в `Form1` класс для обработки событий, вызванных `testInstance` :  
   
      [!code-vb[VbVbalrOOP#106](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#106)]
   
-4. Добавьте подпрограммы с именем `Test` в класс `Form1`, чтобы протестировать класс реализации:  
+4. Добавьте подпрограммы с именем `Test` в `Form1` класс для проверки класса реализации:  
   
      [!code-vb[VbVbalrOOP#107](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#107)]
   
-     `Test` процедура создает экземпляр класса, который реализует `MyInterface`, присваивает этот экземпляр полю `testInstance`, устанавливает свойство и запускает метод через интерфейс.  
+     `Test`Процедура создает экземпляр класса, реализующего `MyInterface` , присваивает этот экземпляр `testInstance` полю, устанавливает свойство и запускает метод через интерфейс.  
   
-5. Добавьте код для вызова процедуры `Test` из `Form1 Load` процедуры формы запуска:  
+5. Добавьте код для вызова `Test` процедуры из `Form1 Load` процедуры формы запуска:  
   
      [!code-vb[VbVbalrOOP#108](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#108)]
   
 6. Выполните `Test` процедуру, нажав клавишу F5. Отображается сообщение «Prop1 имело значение 9». После нажатия кнопки ОК отображается сообщение "параметр X для Method1 равен 5". Нажмите кнопку ОК, после чего появится сообщение "обработчик событий захватил событие".  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Implements](../../../../visual-basic/language-reference/statements/implements-statement.md)
-- [Интерфейсы](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)
-- [Оператор Interface](../../../../visual-basic/language-reference/statements/interface-statement.md)
-- [Оператор Event](../../../../visual-basic/language-reference/statements/event-statement.md)
+- [Оператор Implements](../../../language-reference/statements/implements-statement.md)
+- [Интерфейсы](index.md)
+- [Оператор Interface](../../../language-reference/statements/interface-statement.md)
+- [Оператор Event](../../../language-reference/statements/event-statement.md)

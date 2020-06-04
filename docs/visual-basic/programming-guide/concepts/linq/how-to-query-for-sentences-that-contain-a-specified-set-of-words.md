@@ -2,12 +2,12 @@
 title: Практическое руководство. Запрос к предложениям, содержащим указанный набор слов (LINQ)
 ms.date: 07/20/2015
 ms.assetid: a5ae8ced-61fe-4c10-bb8a-95630e50f603
-ms.openlocfilehash: 6595932fae9737a0ac482c952b29bfde429de76f
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: ce88bf001346f90eb9b08ca1ff14afc7dcb04fa0
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75344152"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397964"
 ---
 # <a name="how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq-visual-basic"></a>Практическое руководство. Запрос к предложениям, содержащим указанный набор слов (LINQ) (Visual Basic)
 
@@ -65,8 +65,8 @@ End Class
 
 ## <a name="compile-the-code"></a>Компиляция кода
 
-Создайте Visual Basic проект консольного приложения, используя инструкцию `Imports` для пространства имен System. LINQ.
+Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [LINQ и строки (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ и строки (Visual Basic)](linq-and-strings.md)

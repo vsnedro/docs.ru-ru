@@ -2,12 +2,12 @@
 title: Операции объединения
 ms.date: 07/20/2015
 ms.assetid: 4021e019-a8f7-477b-879e-07dd7f44feb9
-ms.openlocfilehash: db9bebb967faf3791fd28c4fd4dac9591fd2c9f8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 32e7cc8234fa4aa3289eaae33f487b45a08b84db
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345672"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410894"
 ---
 # <a name="concatenation-operations-visual-basic"></a>Операции объединения (Visual Basic)
 Объединением называют операцию добавления одной последовательности к другой.  
@@ -20,12 +20,12 @@ ms.locfileid: "74345672"
   
 ## <a name="methods"></a>Методы  
   
-|Имя метода|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|  
+|Имя метода|Описание:|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|  
 |-----------------|-----------------|------------------------------------------|----------------------|  
-|Concat|Объединяет две последовательности в одну.|Неприменимо.|<xref:System.Linq.Enumerable.Concat%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Concat%2A?displayProperty=nameWithType>|  
+|Concat|Объединяет две последовательности в одну.|Не применяется|<xref:System.Linq.Enumerable.Concat%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Concat%2A?displayProperty=nameWithType>|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq>
-- [Общие сведения о стандартных операторах запроса (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Практические руководства. объединение и сравнение коллекций строк (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)
+- [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
+- [Практические руководства. объединение и сравнение коллекций строк (LINQ) (Visual Basic)](how-to-combine-and-compare-string-collections-linq.md)

@@ -1,15 +1,15 @@
 ---
-title: 'Пример XML-файла: Типичный заказ на покупку в пространстве имен3'
+title: Пример XML-файла. типичный заказ на покупку в Namespace3
 ms.date: 07/20/2015
 ms.assetid: 38260901-c9f9-4240-9cbf-652c8b05021d
-ms.openlocfilehash: de0ac574b0f7b086592bc2d6afa3db3fdcebda78
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: e753d0a4d6bea3e4a01221258e1f5de3862c4ecb
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61786923"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84360843"
 ---
-# <a name="sample-xml-file-typical-purchase-order-in-a-namespace"></a>Пример XML-файла: типичный заказ на покупку в пространстве имен
+# <a name="sample-xml-file-typical-purchase-order-in-a-namespace"></a>Пример XML-файла. Стандартный заказ на покупку в пространстве имен
 Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. Этот файл представляет собой типичный заказ на покупку. XML располагается в пространстве имен.  
   
 ## <a name="purchaseorderinnamespacexml"></a>PurchaseOrderInNamespace.xml  
@@ -54,6 +54,6 @@ ms.locfileid: "61786923"
 </aw:PurchaseOrder>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Примеры XML-документов (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+- [Примеры XML-документов (LINQ to XML)](sample-xml-documents-linq-to-xml.md)

@@ -1,15 +1,15 @@
 ---
-title: 'Пример XML-файла: числовые данные (LINQ to XML)'
+title: Пример XML-файла. Числовые данные (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 5faef812-0006-4d84-9cf2-5746070e7fbf
-ms.openlocfilehash: 578ec2de69ae549e255fdafb98d3483f6330ce5d
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 546d7c4cfdac2e82ae9fa614693aadcb96f31211
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61786962"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84360895"
 ---
-# <a name="sample-xml-file-numerical-data-linq-to-xml"></a>Пример XML-файла: числовые данные (LINQ to XML)
+# <a name="sample-xml-file-numerical-data-linq-to-xml"></a>Пример XML-файла. Числовые данные (LINQ to XML)
 Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. Этот файл содержит числовые данные для суммирования, вычисления средних значений и группирования.  
   
 ## <a name="dataxml"></a>Data.xml  
@@ -55,6 +55,6 @@ ms.locfileid: "61786962"
 </Root>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Примеры XML-документов (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+- [Примеры XML-документов (LINQ to XML)](sample-xml-documents-linq-to-xml.md)

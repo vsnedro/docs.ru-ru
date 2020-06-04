@@ -1,13 +1,13 @@
 ---
-title: Документ WordprocessingML со Styles2
+title: Документ WordprocessingML с Styles2
 ms.date: 07/20/2015
 ms.assetid: a9136e4d-c368-4661-8049-7d45c679a236
-ms.openlocfilehash: 977de8e4272ca7cea004127adcf1b15726dcc211
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: caf80014077bf57dc1ffb8eaeac6390cf4258015
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61907950"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403554"
 ---
 # <a name="wordprocessingml-document-with-styles"></a>Документ WordprocessingML со стилями
 Более сложные документы WordprocessingML обладают абзацами, которые форматированы по стилям.  
@@ -17,7 +17,7 @@ ms.locfileid: "61907950"
  При доступе к пакетам очень важно использовать для этого связи между частями, а не произвольный путь. Этот вопрос не рассматривается в учебнике "Обработка содержимого документа WordprocessingML", однако примеры программ, включенные в этот учебник, демонстрируют правильный подход.  
   
 ## <a name="a-document-that-uses-styles"></a>Документ, в котором используются стили  
- Пример WordML, приводимый представлены в [форма документов WordprocessingML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md) раздел является очень простым. Следующий документ более сложный. Он содержит абзацы, форматированные по стилям. Самый простой способ увидеть XML, который составляет документ Office Open XML — это выполнить [пример этого выходные данные Office Open XML части документа (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md).  
+ Пример WordML, представленный в [форме WordprocessingML Documents (Visual Basic)](shape-of-wordprocessingml-documents.md) , является очень простым. Следующий документ более сложный: он содержит абзацы, отформатированные с использованием стилей. Самый простой способ увидеть XML, составляющий документ Office Open XML, — это запустить [пример, который выводит элементы документа Office Open XML (Visual Basic)](example-that-outputs-office-open-xml-document-parts.md).  
   
  В следующем документе первый абзац имеет стиль `Heading1`. Имеется несколько абзацев со стилем по умолчанию. Также имеется несколько абзацев со стилем `Code`. Благодаря этой относительной сложности синтаксический анализ этого документа при помощи LINQ to XML более интересен.  
   
@@ -137,6 +137,6 @@ ms.locfileid: "61907950"
 </w:document>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Сведения о Office Open XML-документов WordprocessingML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+- [Сведения о документах WordprocessingML в формате Office Open XML (Visual Basic)](details-of-office-open-xml-wordprocessingml-documents.md)

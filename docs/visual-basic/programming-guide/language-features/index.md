@@ -5,82 +5,82 @@ helpviewer_keywords:
 - Visual Basic code, elements of
 - Visual Basic code
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
-ms.openlocfilehash: 0c8496d4e452da92e0ae994f0b246cc16723c06e
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: 2a2e8d0a08fda5783fa20e7403ea215133d0514e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636579"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405058"
 ---
 # <a name="visual-basic-language-features"></a>Возможности и элементы языка Visual Basic
-В следующих разделах описываются и обсуждаются основные компоненты Visual Basic, объектно-ориентированного языка программирования. После того, как вы подготовите пользовательский интерфейс для вашего приложения с помощью форм и элементов управления, необходимо написать код, определяющий поведение приложения. Как и все остальные современные языки программирования, Visual Basic поддерживает ряд общих конструкций программирования и элементов языка.  
+В следующих разделах описываются и обсуждаются основные компоненты Visual Basic, объектно-ориентированного языка программирования. После того, как вы подготовите пользовательский интерфейс для вашего приложения с помощью форм и элементов управления, необходимо написать код, определяющий поведение приложения. Как и любой современный язык программирования, Visual Basic поддерживает ряд общих программных конструкций и языковых элементов.  
   
  Если у вас есть опыт программирования на других языках, большая часть материала этой статьи покажется вам знакомой. Хотя большинство конструкций похожи на те, которые относятся к другим языкам, на основе событий Visual Basic представлены некоторые незначительные различия.  
   
  Если вы пока новичок в программировании, материал этой статьи поможет вам понять основные принципы создания кода. Поняв основные принципы, можно создавать мощные приложения с помощью Visual Basic.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Массивы](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
+ [Массивы](arrays/index.md)  
  Описывает возможность сделать код более компактным и мощным, объявляя и используя массивы с несколькими связанными значениями.  
   
- [Инициализаторы коллекций](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
+ [Инициализаторы коллекций](collection-initializers/index.md)  
  Описывает инициализаторы коллекций, которые позволяют создать коллекцию и заполнить ее начальным набором значений.  
   
- [Константы и перечисления](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  
+ [Константы и перечисления](constants-enums/index.md)  
  Описывает хранение неизменных значений для многократного использования, в том числе наборов связанных констант.  
   
- [Поток управления](../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
+ [Поток управления](control-flow/index.md)  
  Демонстрирует управление потоком выполнения программы.  
   
- [Типы данных](../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Типы данных](data-types/index.md)  
  Описывает, какие виды данных может содержать элемент программирования, и как хранятся эти данные.  
   
- [Объявленные элементы](../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
+ [Объявленные элементы](declared-elements/index.md)  
  Описывает элементы программирования, которые вы можете объявить, в том числе имена, характеристики и действия компилятора для разрешения ссылок на них.  
   
- [Делегаты](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
+ [Делегаты](delegates/index.md)  
  Дает вводную информацию о делегатах и их применении в Visual Basic.  
   
- [Раннее и позднее связывание](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
+ [Раннее и позднее связывание](early-late-binding/index.md)  
  Описывает связывание, которое выполняется компилятором при присвоении объекта переменной объекта, а также различия между объектами с ранним и поздним связыванием.  
   
- [Типы ошибок](../../../visual-basic/programming-guide/language-features/error-types.md)  
+ [Типы ошибок](error-types.md)  
  Дает общий обзор синтаксических ошибок, ошибок времени выполнения и логических ошибок.  
   
- [События](../../../visual-basic/programming-guide/language-features/events/index.md)  
+ [События](events/index.md)  
  Демонстрирует объявление и использование событий.  
   
- [Интерфейсы](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
+ [Интерфейсы](interfaces/index.md)  
  Описывает, что такое интерфейсы и как их можно использовать в приложениях.  
   
- [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
+ [LINQ](linq/index.md)  
  Содержит ссылки на разделы, в которых представлены функции и программирование LINQ.  
   
- [Объекты и классы](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
+ [Объекты и классы](objects-and-classes/index.md)  
  Описывает объекты и классы, методы их использования и взаимоотношения, а также предоставляемые ими свойства, методы и события.  
   
- [Операторы и выражения](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
+ [Операторы и выражения](operators-and-expressions/index.md)  
  Описывает элементы кода, которые управляют элементами хранения значений, предлагает методы их эффективного использования и объединения для получения новых значений.  
   
- [Процедуры](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
+ [Процедуры](procedures/index.md)  
  Описывает процедуры `Sub`, `Function`, `Property` и `Operator`, а также сложные варианты их использования, например рекурсивные и перегруженные процедуры.  
   
- [Операторы](../../../visual-basic/programming-guide/language-features/statements.md)  
+ [Операторы](statements.md)  
  Описывает операторы объявления и исполняемые операторы.  
   
- [Строки](../../../visual-basic/programming-guide/language-features/strings/index.md)  
+ [Строки](strings/index.md)  
  Содержит ссылки на разделы, описывающие основные принципы использования строк в Visual Basic.  
   
- [Переменные](../../../visual-basic/programming-guide/language-features/variables/index.md)  
+ [Переменные](variables/index.md)  
  Описывает переменные и их использование в Visual Basic.  
   
- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)  
+ [XML](xml/index.md)  
  Содержит ссылки на разделы, описывающие использование XML в Visual Basic.  
   
 ## <a name="related-sections"></a>Связанные разделы
 
- [Коллекции](../../../visual-basic/programming-guide/concepts/collections.md)  
+ [Коллекции](../concepts/collections.md)  
  Описывает некоторые типы коллекций, предоставляемых платформой .NET Framework. Демонстрирует использование простых коллекций и коллекций с парами "ключ — значение".  
   
- [Справочник по языку Visual Basic](../../../visual-basic/language-reference/index.md)  
+ [Справочник по языку Visual Basic](../../language-reference/index.md)  
  Справочные сведения о различных аспектах программирования Visual Basic.

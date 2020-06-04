@@ -2,12 +2,12 @@
 title: Практическое руководство. Изменение документа в формате Office Open XML
 ms.date: 07/20/2015
 ms.assetid: 1cefd7f5-8e39-44c4-869c-f8021538a777
-ms.openlocfilehash: a6d546b064afe7020e5d3287351e946e182f03e6
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 9fb046f43686405a3d84cb68b49cd6dcd34e0839
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75337894"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398029"
 ---
 # <a name="how-to-modify-an-office-open-xml-document-visual-basic"></a>Как изменить документ Office Open XML (Visual Basic)
 В этом разделе представлен пример, в котором открывается документ Office Open XML, затем он изменяется и сохраняется.  
@@ -137,12 +137,12 @@ End Module
   
  Если открыть файл `SampleDoc.docx` после выполнения этой программы, можно будет увидеть, что программа преобразовала первый абзац в документе в верхний регистр.  
   
- При запуске с помощью примера документа Open XML, описанного в разделе [Создание исходного документа Office Open XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md), в этом примере выводится следующий результат:  
+ При запуске с помощью примера документа Open XML, описанного в разделе [Создание исходного документа Office Open XML (Visual Basic)](creating-the-source-office-open-xml-document.md), в этом примере выводится следующий результат:  
   
 ```console  
 New first paragraph: >PARSING WORDPROCESSINGML WITH LINQ TO XML<  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)

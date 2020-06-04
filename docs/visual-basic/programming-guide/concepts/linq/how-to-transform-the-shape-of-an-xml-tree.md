@@ -2,17 +2,17 @@
 title: Практическое руководство. Преобразование формы дерева XML
 ms.date: 07/20/2015
 ms.assetid: 84b60854-48b2-452c-87f2-77d53e1d653a
-ms.openlocfilehash: 24cf02d84b498fc4b41238b1adaf7316cb139a10
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 90fa23df09972eb76154dc47ce0a025e85a12ea3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82796110"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397665"
 ---
 # <a name="how-to-transform-the-shape-of-an-xml-tree-visual-basic"></a>Как преобразовать форму XML-дерева (Visual Basic)
 Понятие *форма* применительно к XML-документу обозначает совокупность имен элементов, атрибутов и характеристик его иерархии.  
   
- Иногда может потребоваться изменить форму XML-документа. Например, может потребоваться передать существующий XML-документ в другую систему, которая использует другие названия элементов и атрибутов. Можно пройти по документу, удаляя и переименовывая элементы согласно требованиям, однако использование результатов функциональных построений дает более читаемый код и просто код для обработки. Дополнительные сведения о функциональном построении см. в разделе [функциональное построение (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-construction-linq-to-xml.md).  
+ Иногда может потребоваться изменить форму XML-документа. Например, может потребоваться передать существующий XML-документ в другую систему, которая использует другие названия элементов и атрибутов. Можно пройти по документу, удаляя и переименовывая элементы согласно требованиям, однако использование результатов функциональных построений дает более читаемый код и просто код для обработки. Дополнительные сведения о функциональном построении см. в разделе [функциональное построение (LINQ to XML) (Visual Basic)](functional-construction-linq-to-xml.md).  
   
  В первом примере выполнится изменение организации всего XML-документа. Происходит перемещение сложных элементов из одного места дерева в другое.  
   
@@ -23,7 +23,7 @@ ms.locfileid: "82796110"
   
  Исходный XML-документ в этом примере содержит `Customers` элемент `Root`, в котором содержится список всех клиентов. Он также содержит элемент `Orders` под элементом `Root`, который содержит все заказы. В этом примере создается новое XML-дерево, в котором заказы каждого клиента содержатся в элементе `Orders`, который является дочерним по отношению к элементу `Customer`. Оригинальный документ также содержит элемент `CustomerID` внутри элемента `Order`. Этот элемент будет удален из преобразованного документа.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Клиенты и заказы (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Клиенты и заказы (LINQ to XML)](sample-xml-file-customers-and-orders-linq-to-xml.md).  
   
 ```vb  
 Dim co As XElement = XElement.Load("CustomersOrders.xml")  
@@ -95,7 +95,7 @@ Console.WriteLine(newCustOrd)
   
  Код вызывает `ConvertAddress`, который возвращает объекты <xref:System.Xml.Linq.XElement>. По отношению к методу аргументом является запрос, который определяет сложный элемент `Address`, в котором атрибут `Type` обладает значением `"Shipping"`.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Стандартный заказ на покупку (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Стандартный заказ на покупку (LINQ to XML)](sample-xml-file-typical-purchase-order-linq-to-xml.md).  
   
 ```vb  
 Function ConvertAddress(ByVal add As XElement) As IEnumerable(Of XElement)  
@@ -145,4 +145,4 @@ End Sub
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Проекции и преобразования (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- [Проекции и преобразования (LINQ to XML) (Visual Basic)](projections-and-transformations-linq-to-xml.md)

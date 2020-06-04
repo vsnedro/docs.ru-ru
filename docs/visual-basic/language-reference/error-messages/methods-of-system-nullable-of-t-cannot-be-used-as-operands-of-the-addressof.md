@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC32126
 ms.assetid: 2325668b-e2ad-40ee-a1ec-30450236c20d
-ms.openlocfilehash: e55e561fa20a3740d352537958681b0a66fc381e
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 61c6fe7c33b3292066e653304ded43a863413723
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64592042"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397224"
 ---
 # <a name="methods-of-systemnullableof-t-cannot-be-used-as-operands-of-the-addressof-operator"></a>Методы System.Nullable(Of T) нельзя использовать в качестве операндов оператора AddressOf
-В операторе используется `AddressOf` с операндом, представляющим процедуру <xref:System.Nullable%601> структуры.  
+Оператор использует `AddressOf` оператор с операндом, представляющим процедуру <xref:System.Nullable%601> структуры.  
   
  **Идентификатор ошибки:** BC32126  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Замените имя процедуры в `AddressOf` предложение с операндом, который не является членом <xref:System.Nullable%601>.  
+- Замените имя процедуры в `AddressOf` предложении операндом, который не является членом <xref:System.Nullable%601> .  
   
-- Напишите класс-оболочку для метода <xref:System.Nullable%601> , вы хотите использовать. В следующем примере `NullableWrapper` класс определяет новый метод с именем `GetValueOrDefault`. Так как этот новый метод не является членом <xref:System.Nullable%601>, он может быть применен к `nullInstance`, экземпляр обнуляемого типа, для формирования аргумента для `AddressOf`.  
+- Напишите класс, который заключает в оболочку метод <xref:System.Nullable%601> , который требуется использовать. В следующем примере `NullableWrapper` класс определяет новый метод с именем `GetValueOrDefault` . Поскольку этот новый метод не является членом <xref:System.Nullable%601> , он может быть применен к `nullInstance` экземпляру типа, допускающему значение null, для формирования аргумента для `AddressOf` .  
   
 ```vb  
 Module Module1  
@@ -61,9 +61,9 @@ Module Module1
 End Module  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Nullable%601>
-- [Оператор AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md)
-- [Типы значений, допускающие значение NULL](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Оператор AddressOf](../operators/addressof-operator.md)
+- [Типы значений, допускающие значение null](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)

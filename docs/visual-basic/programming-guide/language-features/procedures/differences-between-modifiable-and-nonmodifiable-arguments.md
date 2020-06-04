@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - arguments [Visual Basic], modifiable
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
-ms.openlocfilehash: 989795ee2cdd3a78b71bad4d95cf9b384c2719bd
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 733f92cc2cdaa6e923c57649774ceb64de172c18
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74341388"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403347"
 ---
 # <a name="differences-between-modifiable-and-nonmodifiable-arguments-visual-basic"></a>Различия между аргументами Modifiable и Nonmodifiable (Visual Basic)
 При вызове процедуры в нее обычно передается один или несколько аргументов. Каждый аргумент соответствует базовому программному элементу. Как базовые элементы, так и сами аргументы могут быть либо изменяемыми, либо неизменяемыми.  
@@ -31,13 +31,13 @@ ms.locfileid: "74341388"
 |Элементы массива|Выражения (даже если их элементы являются изменяемыми)|  
   
 ## <a name="modifiable-and-nonmodifiable-arguments"></a>Изменяемые и неизменяемые аргументы  
- *Изменяемый аргумент* — это один из изменяемых базовых элементов. Вызывающий код может сохранить новое значение в любое время, и при передаче аргумента [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)код в процедуре также может изменить базовый элемент в вызывающем коде.  
+ *Изменяемый аргумент* — это один из изменяемых базовых элементов. Вызывающий код может сохранить новое значение в любое время, и при передаче аргумента [ByRef](../../../language-reference/modifiers/byref.md)код в процедуре также может изменить базовый элемент в вызывающем коде.  
   
- *Неизменяемый аргумент* либо имеет неизменяемый базовый элемент, либо передается [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md). Процедура не может изменить базовый элемент в вызывающем коде, даже если это изменяемый элемент. Если это неизменяемый элемент, то сам вызывающий код не может изменить его.  
+ *Неизменяемый аргумент* либо имеет неизменяемый базовый элемент, либо передается [ByVal](../../../language-reference/modifiers/byval.md). Процедура не может изменить базовый элемент в вызывающем коде, даже если это изменяемый элемент. Если это неизменяемый элемент, то сам вызывающий код не может изменить его.  
   
  Вызванная процедура может изменить свою локальную копию неизменяемого аргумента, но это изменение не влияет на базовый элемент в вызывающем коде.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
@@ -48,4 +48,4 @@ ms.locfileid: "74341388"
 - [Практическое руководство. Защита аргумента процедуры от изменений значения](./how-to-protect-a-procedure-argument-against-value-changes.md)
 - [Практическое руководство. Принудительная передача аргумента по значению](./how-to-force-an-argument-to-be-passed-by-value.md)
 - [Передача аргументов по позиции и по имени](./passing-arguments-by-position-and-by-name.md)
-- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Value Types and Reference Types](../data-types/value-types-and-reference-types.md)

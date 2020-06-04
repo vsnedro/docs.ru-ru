@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - BC32128
 ms.assetid: 1155b23a-ad75-4bab-b9da-73f35c767a36
-ms.openlocfilehash: 1660971e2a1a11d7a2d14f222cd149edf4aa4c7b
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: fb61b04021bd844fade94413b4f3b28b82f6411b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249517"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84402802"
 ---
 # <a name="isnot-operand-of-type-typename-can-only-be-compared-to-nothing-because-typename-is-a-nullable-type"></a>Операнд IsNot типа  можно сравнить только с Nothing, так как  является типом, допускающим значение NULL
 
-Переменная, объявленная как недействительный тип значения, `Nothing` сравнивалась с выражением, не использующим `IsNot` оператора.
+Переменная, объявленная как тип значения, допускающего значение null, была сравнена с выражением, отличным от `Nothing` `IsNot` оператора.
 
 **Идентификатор ошибки:** BC32128
 
@@ -34,7 +34,7 @@ If number IsNot Nothing Then
 End If
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы значений, допускающие значение NULL](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
-- [Оператор IsNot](../../../visual-basic/language-reference/operators/isnot-operator.md)
+- [Типы значений, допускающие значение null](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [Оператор IsNot](../operators/isnot-operator.md)

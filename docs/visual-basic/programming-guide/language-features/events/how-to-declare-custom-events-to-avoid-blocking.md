@@ -6,12 +6,12 @@ helpviewer_keywords:
 - events [Visual Basic], custom
 - custom events [Visual Basic]
 ms.assetid: 998b6a90-67c5-4d2c-8b11-366d3e355505
-ms.openlocfilehash: 8d73d9c4590afb33e7176f647069cafcb3a9d7d8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a9f9529d468a036d81c4e436429cbdb3207efd6e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345138"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405161"
 ---
 # <a name="how-to-declare-custom-events-to-avoid-blocking-visual-basic"></a>Практическое руководство. Объявление пользовательских событий для предотвращения блокировки (Visual Basic)
 Существует несколько ситуаций, когда важно, чтобы один обработчик событий не блокировал последующие обработчики событий. Пользовательские события позволяют событию вызывать свои обработчики событий асинхронно.  
@@ -21,9 +21,9 @@ ms.locfileid: "74345138"
  Вместо использования реализации по умолчанию событий, предоставляемых Visual Basic, можно использовать пользовательское событие для асинхронного выполнения обработчиков событий.  
   
 ## <a name="example"></a>Пример  
- В этом примере метод доступа `AddHandler` добавляет делегат для каждого обработчика события `Click` в <xref:System.Collections.ArrayList>, хранящееся в поле `EventHandlerList`.  
+ В этом примере `AddHandler` метод доступа добавляет делегат для каждого обработчика `Click` события в объект, <xref:System.Collections.ArrayList> хранящийся в `EventHandlerList` поле.  
   
- Когда код вызывает событие `Click`, метод доступа `RaiseEvent` вызывает асинхронный вызов всех делегатов обработчика событий с помощью метода <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>. Этот метод вызывает каждый обработчик в рабочем потоке и сразу же возвращает, поэтому обработчики не могут блокировать друг друга.  
+ Когда код вызывает `Click` событие, `RaiseEvent` метод доступа вызывает все делегаты обработчика событий асинхронно с помощью <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A> метода. Этот метод вызывает каждый обработчик в рабочем потоке и сразу же возвращает, поэтому обработчики не могут блокировать друг друга.  
   
  [!code-vb[VbVbalrEvents#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#27)]  
   
@@ -31,5 +31,5 @@ ms.locfileid: "74345138"
 
 - <xref:System.Collections.ArrayList>
 - <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>
-- [События](../../../../visual-basic/programming-guide/language-features/events/index.md)
-- [Практическое руководство. Объявление пользовательских событий для экономии памяти](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
+- [События](index.md)
+- [Практическое руководство. Объявление пользовательских событий для экономии памяти](how-to-declare-custom-events-to-conserve-memory.md)

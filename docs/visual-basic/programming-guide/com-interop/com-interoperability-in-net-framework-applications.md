@@ -6,12 +6,12 @@ helpviewer_keywords:
 - COM interop [Visual Basic]
 - shared components
 ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d
-ms.openlocfilehash: c3567464616d3b0b3f91ff57e8a169aca046c866
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: 377958a21886fe0257633ea19417f9a19bd51ff3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452296"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396873"
 ---
 # <a name="com-interoperability-in-net-framework-applications-visual-basic"></a>COM-взаимодействие в приложениях .NET Framework (Visual Basic)
 
@@ -21,11 +21,11 @@ ms.locfileid: "77452296"
 
 Ссылки на этой странице содержат сведения о взаимодействии между COM и объектами .NET Framework.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 | | |
 |---------|---------|
-| [COM-взаимодействие](../../../visual-basic/programming-guide/com-interop/index.md) | Ссылки на разделы, посвященные COM-взаимодействию в Visual Basic, включая COM-объекты, элементы управления ActiveX, библиотеки DLL Win32, управляемые объекты и наследование COM-объектов. |
+| [COM-взаимодействие](index.md) | Ссылки на разделы, посвященные COM-взаимодействию в Visual Basic, включая COM-объекты, элементы управления ActiveX, библиотеки DLL Win32, управляемые объекты и наследование COM-объектов. |
 | [Взаимодействие с неуправляемым кодом](../../../framework/interop/index.md) | Краткое описание некоторых проблем взаимодействия между управляемым и неуправляемым кодом, а также ссылки для дальнейшего изучения. |
 | [Oболочки COM](../../../standard/native-interop/com-wrappers.md) | Обсуждаются вызываемые оболочки среды выполнения, которые позволяют управляемому коду вызывать методы COM и вызываемые оболочки COM, позволяющие клиентам COM вызывать методы объектов .NET. |
 | [Расширенное COM-взаимодействие](../../../framework/interop/index.md) | Содержит ссылки на разделы, посвященные COM-взаимодействию в отношении оболочек, исключений, наследования, потоков, событий, преобразований и маршалирования. |

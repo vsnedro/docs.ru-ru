@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30617
 ms.assetid: 5e9de8e5-d26b-4fb2-9e28-814413fe9cef
-ms.openlocfilehash: fc3c102dbfe7c55e66093421bc11379d48ba000d
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: d01c30571fc34e142300ac8706c56d5e99175fcf
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64592095"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397211"
 ---
 # <a name="module-statements-can-occur-only-at-file-or-namespace-level"></a>Операторы Module могут присутствовать только на уровне файлов или пространств имен
-`Module` операторы должны находиться в начале файла исходного кода сразу же после `Option` и `Imports` инструкции, глобальных атрибутов и деклараций пространств имен, но перед всеми объявлениями.  
+`Module`операторы должны находиться в верхней части исходного файла сразу после `Option` и `Imports` инструкций, глобальных атрибутов и объявлений пространств имен, но перед всеми остальными объявлениями.  
   
  **Идентификатор ошибки:** BC30617  
   
@@ -23,6 +23,6 @@ ms.locfileid: "64592095"
   
 - Переместите оператор `Module` в начало объявления пространства имен или исходного файла.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Module](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Оператор Module](../statements/module-statement.md)

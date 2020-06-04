@@ -7,27 +7,27 @@ f1_keywords:
 helpviewer_keywords:
 - BC40042
 ms.assetid: 1d6eae29-4ad3-4434-bde4-a53b6051adf5
-ms.openlocfilehash: 88f8b7ea1e0a9b4cb115646f40abbf8a567a2b1d
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: 8e53d036ead114d828d9035cef76cee72bf6b1db
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65641393"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400296"
 ---
-# <a name="type-of-optional-value-for-optional-parameter-parametername-is-not-cls-compliant"></a>Тип необязательного значения для необязательного параметра \<имя_параметра > не является CLS-совместимым
-Процедура помечена как `<CLSCompliant(True)>`, но она объявляет [необязательный](../../../visual-basic/language-reference/modifiers/optional.md) параметр со значением по умолчанию несовместимого типа.  
+# <a name="type-of-optional-value-for-optional-parameter-parametername-is-not-cls-compliant"></a>Тип необязательного значения для необязательного параметра \<parametername> несовместим с CLS
+Процедура помечена как `<CLSCompliant(True)>`, но она объявляет [необязательный](../modifiers/optional.md) параметр со значением по умолчанию несовместимого типа.  
   
  Для соответствия требованиям, описанным в статье [Независимость от языка и независимые от языка компоненты](../../../standard/language-independence-and-language-independent-components.md) (CLS), процедура должна использовать только типы, совместимые с CLS. Это касается типов параметров, типа возвращаемого значения и типов всех локальных переменных. Это также касается значений по умолчанию для необязательных параметров.  
   
- Следующие типы данных Visual Basic не являются CLS-совместимыми:  
+ Следующие типы данных Visual Basic несовместимы с CLS:  
   
-- [Тип данных SByte](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)  
+- [Тип данных SByte](../data-types/sbyte-data-type.md)  
   
-- [Тип данных UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
+- [Тип данных UInteger](../data-types/uinteger-data-type.md)  
   
-- [Тип данных ULong](../../../visual-basic/language-reference/data-types/ulong-data-type.md)  
+- [Тип данных ULong](../data-types/ulong-data-type.md)  
   
-- [Тип данных UShort](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
+- [Тип данных UShort](../data-types/ushort-data-type.md)  
   
  Когда вы применяете атрибут <xref:System.CLSCompliantAttribute> к программному элементу, вы задаете для параметра `isCompliant` атрибута значение `True` или `False` , чтобы указать на соответствие или несоответствие требованиям. Для этого параметра нет значения по умолчанию, и вы должны предоставить значение.  
   
@@ -39,8 +39,8 @@ ms.locfileid: "65641393"
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Если необязательный параметр должен иметь значение по умолчанию этого конкретного типа, удалите <xref:System.CLSCompliantAttribute>. Процедура не может соответствовать CLS.  
+- Если необязательный параметр должен иметь значение по умолчанию для этого конкретного типа, удалите <xref:System.CLSCompliantAttribute> . Процедура не может быть совместимой с CLS.  
   
-- Если процедура должна быть совместимой с CLS, измените тип этого значения по умолчанию на ближайший тип, совместимый с CLS. Например, вместо `UInteger` вы можете использовать `Integer`, если вам не нужен диапазон значений, превышающий 2 147 483 647. Если вам нужен расширенный диапазон, вы можете заменить `UInteger` на `Long`.  
+- Если процедура должна быть совместимой с CLS, измените тип этого значения по умолчанию на ближайший тип, совместимый с CLS. Например, вместо `UInteger` вы можете использовать `Integer` , если вам не нужен диапазон значений, превышающий 2 147 483 647. Если вам нужен расширенный диапазон, вы можете заменить `UInteger` на `Long`.  
   
-- При взаимодействии с автоматизация или COM-объектами, имейте в виду, что некоторые типы имеют разные данные от длины в .NET Framework. Например, данные типа `int` часто являются 16-битными в других средах. Если вы принимаете 16-разрядное целое число из таких компонентов, объявите его как `Short` вместо `Integer` в управляемом коде Visual Basic.
+- При взаимоработе с автоматизацией или COM-объектами Помните, что некоторые типы имеют разную ширину данных, чем в .NET Framework. Например, данные типа `int` часто являются 16-битными в других средах. Если вы принимаете 16-разрядное целое число из такого компонента, объявите его как `Short` вместо `Integer` в управляемом коде Visual Basic.

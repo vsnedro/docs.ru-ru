@@ -2,18 +2,18 @@
 title: Практическое руководство. Работа со словарями с помощью LINQ to XML
 ms.date: 07/20/2015
 ms.assetid: 6cb3f969-1986-414a-b850-87418712edea
-ms.openlocfilehash: 12327be3c9d32d34866691b156f58fd1e8e40240
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 14c9c35693f323292849f01af79ae81f92921611
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74332367"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397678"
 ---
 # <a name="how-to-work-with-dictionaries-using-linq-to-xml-visual-basic"></a>Практические руководства. Работа со словарями с помощью LINQ to XML (Visual Basic)
 Часто бывает удобно преобразовать структуры данных в XML, а затем преобразовать XML в другие структуры данных. В этом разделе показана конкретная реализация этого общего подхода на примере преобразования <xref:System.Collections.Generic.Dictionary%602> в XML и обратно.  
   
 ## <a name="example"></a>Пример  
- В этом примере используются литералы XML и запрос во внедренном выражении. Запрос проецирует новые <xref:System.Xml.Linq.XElement> объекты, которые затем становятся новым содержимым для объекта `Root` <xref:System.Xml.Linq.XElement>.  
+ В этом примере используются литералы XML и запрос во внедренном выражении. Запрос проецирует новые <xref:System.Xml.Linq.XElement> объекты, которые затем становятся новым содержимым для `Root` <xref:System.Xml.Linq.XElement> объекта.  
   
 ```vb  
 Dim dict As Dictionary(Of String, String) = New Dictionary(Of String, String)()  
@@ -70,6 +70,6 @@ Child3:Value3
 Child4:Value4  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Проекции и преобразования (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- [Проекции и преобразования (LINQ to XML) (Visual Basic)](projections-and-transformations-linq-to-xml.md)

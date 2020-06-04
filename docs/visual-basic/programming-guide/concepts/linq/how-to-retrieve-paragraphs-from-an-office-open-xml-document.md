@@ -2,12 +2,12 @@
 title: Практическое руководство. Извлечение абзацев из документа в формате Office Open XML
 ms.date: 07/20/2015
 ms.assetid: 66053f21-9217-473c-a6f3-a0897be07756
-ms.openlocfilehash: 8755dc40fe64d4ff37ed66006f757ec1b32334a1
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 49441da3b9a0bc43c3528a14d03aa44d8173be42
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75347054"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397834"
 ---
 # <a name="how-to-retrieve-paragraphs-from-an-office-open-xml-document-visual-basic"></a>Как получить абзацы из документа Office Open XML (Visual Basic)
 В этом разделе представлен пример, открывающий документ Office Open XML и получающий коллекцию всех абзацев документа.  
@@ -19,7 +19,7 @@ ms.locfileid: "75347054"
   
  В этом примере используется метод расширения с именем `StringConcatenate`, который также показан в примере.  
   
- Подробный учебник, в котором объясняется, как работает этот пример, см. в разделе [Чистые функциональные преобразования XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md).  
+ Подробный учебник, в котором объясняется, как работает этот пример, см. в разделе [Чистые функциональные преобразования XML (Visual Basic)](pure-functional-transformations-of-xml.md).  
   
  В этом примере используются классы, находящиеся в сборке WindowsBase. Используются типы из пространства имен <xref:System.IO.Packaging?displayProperty=nameWithType>.  
   
@@ -152,7 +152,7 @@ Module Module1
 End Module  
 ```  
   
- При запуске с помощью примера документа Open XML, описанного в разделе [Создание исходного документа Office Open XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md), в этом примере выводится следующий результат:  
+ При запуске с помощью примера документа Open XML, описанного в разделе [Создание исходного документа Office Open XML (Visual Basic)](creating-the-source-office-open-xml-document.md), в этом примере выводится следующий результат:  
   
 ```console  
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<  
@@ -172,6 +172,6 @@ StyleName:Normal ><
 StyleName:Code >Hello World<  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [Дополнительные методы запросов (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)

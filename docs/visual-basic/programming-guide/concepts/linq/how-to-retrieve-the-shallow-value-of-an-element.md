@@ -1,13 +1,13 @@
 ---
-title: Практическое руководство. Извлечение поверхностных значений элемента
+title: Практическое руководство. Извлечение поверхностного значения элемента
 ms.date: 07/20/2015
 ms.assetid: 730a6670-fb8c-41fc-8a1b-eb97a837e432
-ms.openlocfilehash: 7449d6d1230313aef6005284270370bb9d243a3f
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 24e6b128481f56941f0a61da9766f02813a46e97
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346913"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397821"
 ---
 # <a name="how-to-retrieve-the-shallow-value-of-an-element-visual-basic"></a>Как извлечь неглубокое значение элемента (Visual Basic)
 
@@ -76,6 +76,6 @@ Column  Name="CustomerId"   =Customer.CustomerId
 Column  Name="Name"         =Customer.Name
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оси LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [Оси LINQ to XML (Visual Basic)](linq-to-xml-axes.md)

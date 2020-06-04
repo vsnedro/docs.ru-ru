@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC36635
 ms.assetid: 74609979-9c03-4864-bbce-f588aa2e0917
-ms.openlocfilehash: e9bf248da980705f070be878208c55b0cc6dae01
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 08f7cd9dd95a10cad0df6539ba43122495347bae
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64589721"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397367"
 ---
 # <a name="lambda-expressions-are-not-valid-in-the-first-expression-of-a-select-case-statement"></a>Лямбда-выражения недопустимы в первом выражении оператора Select Case
-Лямбда-выражения нельзя использовать для проверки выражения в `Select Case` инструкции. Определения лямбда-выражений возвращают функции, а выражение проверки `Select Case` инструкция должна быть простой тип данных.  
+Нельзя использовать лямбда-выражение для тестового выражения в `Select Case` инструкции. Определения лямбда-выражений возвращают функции, а тестовое выражение `Select Case` инструкции должно иметь простейший тип данных.  
   
  Следующий код вызывает эту ошибку:  
   
@@ -31,7 +31,7 @@ ms.locfileid: "64589721"
   
 - Проверьте свой код, чтобы определить, подойдет ли вам другая условная конструкция, например оператор `If...Then...Else` .  
   
-- Возможно, предполагалось вызывать функцию, как показано в следующем коде:  
+- Возможно, вы предполагали вызвать функцию, как показано в следующем коде:  
   
 ```vb  
 Dim num? As Integer  
@@ -40,8 +40,8 @@ Select Case ((Function(arg? As Integer) arg Is Nothing)(num))
 End Select  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Лямбда-выражения](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
-- [Оператор If...Then...Else](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
-- [Оператор Select...Case](../../../visual-basic/language-reference/statements/select-case-statement.md)
+- [Лямбда-выражения](../../programming-guide/language-features/procedures/lambda-expressions.md)
+- [Оператор If…Then…Else](../statements/if-then-else-statement.md)
+- [Оператор Select…Case](../statements/select-case-statement.md)

@@ -2,12 +2,12 @@
 title: Сортировка данных
 ms.date: 07/20/2015
 ms.assetid: 6f81065c-0c89-4bf3-a6d8-442273f8810e
-ms.openlocfilehash: f1d4d8afb9b6e176a7ac048ba3270ecafdce24c9
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a5ccff745995ed7f41731cf98fb7c49d3247d994
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350591"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406798"
 ---
 # <a name="sorting-data-visual-basic"></a>Сортировка данных (Visual Basic)
 
@@ -21,13 +21,13 @@ ms.locfileid: "74350591"
 
 ## <a name="methods"></a>Методы
 
-|Имя метода|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
+|Имя метода|Описание:|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
 |-----------------|-----------------|------------------------------------------|----------------------|
 |OrderBy|Сортировка значений в возрастающем порядке.|`Order By`|<xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderBy%2A?displayProperty=nameWithType>|
 |OrderByDescending|Сортировка значений в убывающем порядке.|`Order By … Descending`|<xref:System.Linq.Enumerable.OrderByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderByDescending%2A?displayProperty=nameWithType>|
 |ThenBy|Дополнительная сортировка по возрастанию.|`Order By …, …`|<xref:System.Linq.Enumerable.ThenBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenBy%2A?displayProperty=nameWithType>|
 |ThenByDescending|Дополнительная сортировка по убыванию.|`Order By …, … Descending`|<xref:System.Linq.Enumerable.ThenByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenByDescending%2A?displayProperty=nameWithType>|
-|Reverse|Изменение порядка элементов в коллекции на обратный.|Неприменимо.|<xref:System.Linq.Enumerable.Reverse%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse%2A?displayProperty=nameWithType>|
+|Reverse|Изменение порядка элементов в коллекции на обратный.|Не применяется|<xref:System.Linq.Enumerable.Reverse%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse%2A?displayProperty=nameWithType>|
 
 ## <a name="query-expression-syntax-examples"></a>Примеры синтаксиса выражений запросов
 
@@ -147,10 +147,10 @@ MsgBox(sb.ToString())
 ' brown
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq>
-- [Общие сведения о стандартных операторах запроса (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Предложение Order By](../../../../visual-basic/language-reference/queries/order-by-clause.md)
-- [How to: Sort Query Results](../../../../visual-basic/programming-guide/language-features/linq/how-to-sort-query-results-by-using-linq.md) (Практическое руководство. Сортировка результатов запроса)
-- [Как сортировать или фильтровать текстовые данные по любому слову или полю (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
+- [Предложение Order By](../../../language-reference/queries/order-by-clause.md)
+- [How to: Sort Query Results](../../language-features/linq/how-to-sort-query-results-by-using-linq.md) (Практическое руководство. Сортировка результатов запроса)
+- [Практическое руководство. Сортировка или фильтрация текстовых данных по любому слову или полю (LINQ) (Visual Basic)](how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

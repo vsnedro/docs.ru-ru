@@ -5,14 +5,14 @@ helpviewer_keywords:
 - <value> XML tag
 - value XML tag
 ms.assetid: 0b84b02e-9e6d-41b5-a926-0d5dc76dacb5
-ms.openlocfilehash: 240c2131179420834e6dade729ee631c0d7811a4
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 24358a1b004f1cefbfeb3fb8451380ed883841df
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352176"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84411477"
 ---
-# <a name="value-visual-basic"></a>> значение \<(Visual Basic)
+# <a name="value-visual-basic"></a>\<value> (Visual Basic)
 Задает описание свойства.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,16 +25,16 @@ ms.locfileid: "74352176"
  `property-description`  
  Описание свойства.  
   
-## <a name="remarks"></a>Заметки  
- Для описания свойства используйте тег `<value>`. Обратите внимание, что при добавлении свойства с помощью мастера кода в среде разработки Visual Studio добавляется [\<сводка >](../../../visual-basic/language-reference/xmldoc/summary.md) тега для нового свойства. Затем следует вручную добавить тег `<value>` для описания значения, которое представляет свойство.  
+## <a name="remarks"></a>Комментарии  
+ Используйте `<value>` тег для описания свойства. Обратите внимание, что при добавлении свойства с помощью мастера кода в среде разработки Visual Studio будет добавлен [\<summary>](summary.md) тег для нового свойства. Затем следует вручную добавить `<value>` тег для описания значения, которое представляет свойство.  
   
- Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
+ Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../reference/command-line-compiler/doc.md).  
   
 ## <a name="example"></a>Пример  
- В этом примере используется тег `<value>` для описания значения, которое содержит свойство `Counter`.  
+ В этом примере `<value>` тег используется для описания значения, которое `Counter` содержит свойство.  
   
  [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [XML-теги для комментариев](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML-теги для комментариев](index.md)

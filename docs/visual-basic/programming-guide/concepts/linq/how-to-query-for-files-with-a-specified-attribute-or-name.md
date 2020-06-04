@@ -1,13 +1,13 @@
 ---
-title: Практическое руководство. Запрос файлов с указанными атрибутами или именем
+title: Практическое руководство. Запрос файлов с указанным атрибутом или именем
 ms.date: 07/20/2015
 ms.assetid: b26026a3-3f43-448f-a582-259997af6be0
-ms.openlocfilehash: 970fb862b843016425e3a0f0c2bcf00e6fcba3a6
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 4a6a5630f4ac0eb0cb08aed0dc8a390225194675
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75342143"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396419"
 ---
 # <a name="how-to-query-for-files-with-a-specified-attribute-or-name-visual-basic"></a>Как запросить файлы с указанным атрибутом или именем (Visual Basic)
 В этом примере показано, как обнаружить все файлы с указанным расширением (например, TXT) в заданном дереве каталогов. Кроме того, он показывает, как обнаружить самый новый или самый старый файл в дереве, используя время создания.  
@@ -61,9 +61,9 @@ End Module
 ```  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
-Создайте Visual Basic проект консольного приложения, используя инструкцию `Imports` для пространства имен System. LINQ.
+Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ и каталоги файлов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (Visual Basic)](linq-to-objects.md)
+- [LINQ и каталоги файлов (Visual Basic)](linq-and-file-directories.md)

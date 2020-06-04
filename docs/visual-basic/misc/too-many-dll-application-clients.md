@@ -4,20 +4,20 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID47
 ms.assetid: 4b87780b-67ad-4c96-9253-db954a751dad
-ms.openlocfilehash: 3a0fe2d84c2fe6d080e4b555501fdbe7d5ee57e2
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 3d6fa507a754447c33e08c90805755b4a379a09f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64620002"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398530"
 ---
 # <a name="too-many-dll-application-clients"></a>Слишком много приложений-клиентов DLL
-Библиотеки динамической компоновки (DLL) для Visual Basic может обеспечить доступ ограниченному числу ведущих приложений. Приложения и другие приложения, которые являются узлами Visual Basic (некоторые из которых может получить доступ к приложению) пытается получить доступ к DLL Visual Basic, в то же время.  
+Библиотека динамической компоновки (DLL) для Visual Basic может поддерживать доступ только ограниченное количество ведущих приложений. Приложение и другие приложения, Visual Basic узлы (некоторые из которых могут быть доступны приложению), пытаются одновременно получить доступ к библиотеке DLL Visual Basic.  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Уменьшите число открытых приложений, использующих Visual Basic.  
+- Сократите число открытых приложений, обращающихся к Visual Basic.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы ошибок](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Типы ошибок](../programming-guide/language-features/error-types.md)

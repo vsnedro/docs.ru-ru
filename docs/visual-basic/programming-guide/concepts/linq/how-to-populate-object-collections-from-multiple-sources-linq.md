@@ -2,12 +2,12 @@
 title: Практическое руководство. Заполнение коллекций объектов из нескольких источников (LINQ)
 ms.date: 06/22/2018
 ms.assetid: 63062a22-e6a9-42c0-b357-c7c965f58f33
-ms.openlocfilehash: 74a2a0f71e575136f1758f72f9a8db72549a9489
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 9c6d8ff5165bf886d8aad87b64305819e65361ab
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346976"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396523"
 ---
 # <a name="how-to-populate-object-collections-from-multiple-sources-linq-visual-basic"></a>Как заполнить коллекции объектов из нескольких источников (LINQ) (Visual Basic)
 
@@ -18,7 +18,7 @@ ms.locfileid: "74346976"
 
 ## <a name="to-create-the-data-file"></a>Создание файла данных
 
-- Скопируйте файлы Names. csv и scores. csv в папку проекта, как описано в разделе [как присоединиться к содержимому из разнородных файлов (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md).
+- Скопируйте файлы Names. csv и scores. csv в папку проекта, как описано в разделе [как присоединиться к содержимому из разнородных файлов (LINQ) (Visual Basic)](how-to-join-content-from-dissimilar-files-linq.md).
 
 ## <a name="example"></a>Пример
 
@@ -100,7 +100,7 @@ End Class
 ' The average score of Michael Tucker is 92
 ```
 
-В предложении [предложения SELECT](../../../../visual-basic/language-reference/queries/select-clause.md) инициализатор объекта используется для создания экземпляра каждого нового `Student` объекта с помощью данных из двух источников.
+В предложении [предложения SELECT](../../../language-reference/queries/select-clause.md) инициализатор объекта используется для создания экземпляра каждого нового `Student` объекта с использованием данных из двух источников.
 
 Если не требуется хранить результаты запроса, анонимные типы могут быть более удобными, чем именованные типы. Именованные типы необходимы, если результаты запроса передаются за пределы метода, в котором выполняется запрос. Следующий пример кода выполняет ту же задачу, что и в предыдущем примере, но использует анонимные типы вместо именованных типов:
 
@@ -128,6 +128,6 @@ For Each s In queryNamesScores2
 Next
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [LINQ и строки (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ и строки (Visual Basic)](linq-and-strings.md)

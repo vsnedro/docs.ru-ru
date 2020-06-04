@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30157
 ms.assetid: 70daaee1-14f9-45b7-9f30-53794310b95e
-ms.openlocfilehash: 15390fb506fe9bca10f6917f5b26451a5569bece
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 149acc2baac0f45fa971a11f254d694526d140d7
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61921125"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397328"
 ---
 # <a name="leading--or--can-only-appear-inside-a-with-statement"></a>Символ "." или "!", стоящий в начале оператора, может использоваться только внутри оператора "With"
-Точка (.) или восклицательный знак (!), не находится внутри `With` блок происходит без выражения в левой части. Доступ к членам (`.`) и доступ к членам словаря (`!`) требуется выражение, задающее элемент, содержащий элемент. Это должно быть расположено слева метода доступа или в качестве целевого объекта `With` блока, содержащего доступ к члену.  
+Точка (.) или восклицательный знак (!), не находящиеся внутри `With` блока, происходит без выражения слева. Для доступа к членам ( `.` ) и доступа к членам словаря ( `!` ) требуется выражение, указывающее элемент, содержащий элемент. Он должен располагаться непосредственно слева от метода доступа или являться целевым объектом блока, `With` содержащего доступ к члену.  
   
  **Идентификатор ошибки:** BC30157  
   
@@ -23,9 +23,9 @@ ms.locfileid: "61921125"
   
 1. Убедитесь, что `With` блок имеет правильный формат.  
   
-2. Если нет `With` block, добавьте выражение слева от метода доступа, результатом вычисления элемента, содержащего элемент.  
+2. Если `With` блок отсутствует, добавьте выражение слева от метода доступа, результатом которого является определенный элемент, содержащий элемент.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Специальные символы в коде](../../../visual-basic/programming-guide/program-structure/special-characters-in-code.md)
-- [Оператор With...End With](../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+- [Специальные символы в коде](../../programming-guide/program-structure/special-characters-in-code.md)
+- [Оператор With…End With](../statements/with-end-with-statement.md)

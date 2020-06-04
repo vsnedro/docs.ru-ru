@@ -2,12 +2,12 @@
 title: Практическое руководство. Запрос самого большого файла или файлов в дереве папок (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 8c1c9f0c-95dd-4222-9be2-9ec026a13e81
-ms.openlocfilehash: 723a42e79f1def171a08b28986049ffa04945fc4
-ms.sourcegitcommit: 43d10ef65f0f1fd6c3b515e363bde11a3fcd8d6d
+ms.openlocfilehash: 107f3457fe7361fab16c2c8ce837c90484fc7633
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78266993"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397951"
 ---
 # <a name="how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq-visual-basic"></a>Практическое руководство. Запрос самого большого файла или файлов в дереве папок (LINQ) (Visual Basic)
 В этом примере показано пять запросов, связанных с размером файла в байтах.  
@@ -118,9 +118,9 @@ End Module
  Запрос вызывает отдельный метод, чтобы получить размер файла в байтах для обработки возможных исключений, которые будут вызваны при удалении файла в другом потоке за период времени с момента создания объекта <xref:System.IO.FileInfo> в вызове `GetFiles`. Даже если объект <xref:System.IO.FileInfo> уже создан, может возникнуть исключение, так как объект <xref:System.IO.FileInfo> будет пытаться обновить свойство <xref:System.IO.FileInfo.Length%2A>, используя самый последний размер в байтах при первом обращении к свойству. Поместив эту операцию в блок try-catch вне запроса, будет выполнено правило исключения использования операций в запросах, которые могут вызвать побочные эффекты. В целом, необходимо соблюдать осторожность при перехвате исключений, чтобы убедиться, что приложение не остается в неизвестном состоянии.  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
-Создайте проект приложения Visual Basic `Imports` с заявлением для пространства имен System.Linq.
+Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.
   
 ## <a name="see-also"></a>См. также раздел
 
-- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ и каталоги файлов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (Visual Basic)](linq-to-objects.md)
+- [LINQ и каталоги файлов (Visual Basic)](linq-and-file-directories.md)

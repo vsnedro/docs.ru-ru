@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30043
 ms.assetid: 7973aa82-a681-440c-9bca-242627d7ba86
-ms.openlocfilehash: 8ec1e704815ee10cb98d8cc20fb5982ee4b92832
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 537689405ea30bdd7c075320eba58a8723a93cdb
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64662013"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397406"
 ---
-# <a name="keyword-is-valid-only-within-an-instance-method"></a>"\<ключевое слово >" является допустимым только в методе экземпляра
-`Me`, `MyClass`, И `MyBase` ключевые слова ссылаются на экземпляры определенного класса. Их нельзя использовать внутри совместно используемого `Function` или `Sub` процедуры.  
+# <a name="keyword-is-valid-only-within-an-instance-method"></a>\<keyword> разрешено использовать только в методе экземпляра
+`Me` `MyClass` Ключевые слова, и `MyBase` относятся к конкретным экземплярам класса. Их нельзя использовать в общей `Function` или `Sub` процедурной среде.  
   
  **Идентификатор ошибки:** BC30043  
   
@@ -23,8 +23,8 @@ ms.locfileid: "64662013"
   
 - Удалите ключевое слово из процедуры или удалите `Shared` ключевое слово из объявления процедуры.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Присваивание объектных переменных](../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)
-- [Me, My, MyBase и MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
-- [Основы наследования](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Присваивание объектных переменных](../../programming-guide/language-features/variables/object-variable-assignment.md)
+- [Me, My, MyBase и MyClass](../../programming-guide/program-structure/me-my-mybase-and-myclass.md)
+- [Основы наследования](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)

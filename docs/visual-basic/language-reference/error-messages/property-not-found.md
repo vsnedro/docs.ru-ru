@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID422
 ms.assetid: 127e0f5f-0997-4ac5-b9af-2e6a2eb513a2
-ms.openlocfilehash: c45c8458e9acb7f168fc9afb6b1979a950a38dc7
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ddf08aa0bebb36acc781a243705cebbe78281c99
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61920787"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400452"
 ---
 # <a name="property-not-found"></a>Свойство не найдено
 Этот объект не поддерживает указанное свойство.  
@@ -18,8 +18,8 @@ ms.locfileid: "61920787"
   
 1. Проверьте правильность написания имени свойства.  
   
-2. См. в документации объекта, чтобы убедиться в том, что вы не пытаетесь получить доступ примерно свойством «text», если объект фактически поддерживает «caption» или свойство с таким же именем.  
+2. Проверьте документацию объекта, чтобы убедиться, что вы не пытаетесь получить доступ к тому, как к свойству Text, когда объект фактически поддерживает свойство Caption или с аналогичным именем.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы ошибок](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Типы ошибок](../../programming-guide/language-features/error-types.md)

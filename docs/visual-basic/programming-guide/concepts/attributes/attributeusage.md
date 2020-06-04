@@ -2,12 +2,12 @@
 title: AttributeUsage
 ms.date: 07/20/2015
 ms.assetid: 48757216-c21d-4051-86d5-8a3e03c39d2c
-ms.openlocfilehash: 7e54e82c1e9edfd0d9d393a014f9d91f82970363
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 677d49aba38801f2adf42cc745983af30b3eddc5
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353544"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400736"
 ---
 # <a name="attributeusage-visual-basic"></a>AttributeUsage (Visual Basic)
 
@@ -57,7 +57,7 @@ End Class
 
 В этом случае `MultiUseAttr` можно применять несколько раз, так как `AllowMultiple` имеет значение `true`. Для применения нескольких атрибутов допускаются оба показанных формата.
 
-Если `Inherited` имеет значение `false`, то атрибут не наследуется классами, производными от класса с атрибутами. Пример.
+Если `Inherited` имеет значение `false`, то атрибут не наследуется классами, производными от класса с атрибутами. Пример:
 
 ```vb
 <AttributeUsage(AttributeTargets.Class, Inherited:=False)>
@@ -77,11 +77,11 @@ End Class
 
 В этом случае `Attr1` не применяется к `DClass` путем наследования.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Атрибут `AttributeUsage` можно использовать только один раз — его нельзя повторно применять к одному и тому же классу. `AttributeUsage` является псевдонимом для <xref:System.AttributeUsageAttribute>.
 
-Дополнительные сведения см. в статье [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic)).
+Дополнительные сведения см. в статье [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic)).
 
 ## <a name="example"></a>Пример
 
@@ -136,7 +136,7 @@ Public Class TestAttributeUsage
 End Class
 ```
 
-## <a name="sample-output"></a>Пример результатов выполнения
+## <a name="sample-output"></a>Пример выходных данных
 
 ```console
 Attributes on Base Class:
@@ -148,13 +148,13 @@ A3
 A2
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Attribute>
 - <xref:System.Reflection>
-- [Руководство по программированию на Visual Basic](../../../../visual-basic/programming-guide/index.md)
+- [Руководство по программированию на Visual Basic](../../index.md)
 - [Атрибуты](../../../../standard/attributes/index.md)
-- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md) (Отражение (Visual Basic))
-- [Атрибуты (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)
-- [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md) (Создание настраиваемых атрибутов (Visual Basic))
-- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))
+- [Reflection (Visual Basic)](../reflection.md) (Отражение (Visual Basic))
+- [Атрибуты (Visual Basic)](../../../language-reference/attributes.md)
+- [Creating Custom Attributes (Visual Basic)](creating-custom-attributes.md) (Создание настраиваемых атрибутов (Visual Basic))
+- [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))

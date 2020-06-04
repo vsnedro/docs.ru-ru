@@ -13,14 +13,14 @@ helpviewer_keywords:
 - item XML tag
 - <term> XML tag
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
-ms.openlocfilehash: db5c571d2f2c59419c886f6596f4e4dbd30d7baf
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 955c1a4c5c5619f908b8d03dbf12360c23574478
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352325"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400090"
 ---
-# <a name="list-visual-basic"></a>> списка \<(Visual Basic)
+# <a name="list-visual-basic"></a>\<list> (Visual Basic)
 Определяет список или таблицу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -46,22 +46,22 @@ ms.locfileid: "74352325"
  Используется, только если `type` имеет значение "Table". Термин для определения, который определен в теге description.  
   
  `description`  
- Если `type` имеет значение "маркированный" или "число", `description` является элементом списка, если `type` "Таблица", `description` является определением `term`.  
+ Если параметр `type` имеет значение "маркированный" или "Number", `description` то элемент списка, если `type` "Table", `description` является определением `term` .  
   
-## <a name="remarks"></a>Заметки  
- Блок `<listheader>` определяет заголовок таблицы или списка определений. При определении таблицы необходимо указать в заголовке только запись для `term`.  
+## <a name="remarks"></a>Комментарии  
+ `<listheader>`Блок определяет заголовок таблицы или списка определений. При определении таблицы необходимо указать `term` в заголовке только запись.  
   
- Каждый элемент в списке задается блоком `<item>`. При создании списка определений необходимо указать и `term`, и `description`. Однако для таблицы, маркированного списка или нумерованного списка необходимо указать только запись для `description`.  
+ Каждый элемент в списке указывается `<item>` блоком. При создании списка определений необходимо указать `term` и `description` . Однако для таблицы, маркированного списка или нумерованного списка необходимо указать только запись для `description` .  
   
  Список или таблица может содержать столько `<item>` блоков, сколько необходимо.  
   
- Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
+ Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../reference/command-line-compiler/doc.md).  
   
 ## <a name="example"></a>Пример  
- В этом примере тег `<list>` используется для определения маркированного списка в разделе "Примечания".  
+ В этом примере `<list>` тег используется для определения маркированного списка в разделе "Примечания".  
   
  [!code-vb[VbVbcnXmlDocComments#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#5)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [XML-теги для комментариев](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML-теги для комментариев](index.md)

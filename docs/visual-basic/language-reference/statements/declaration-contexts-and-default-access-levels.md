@@ -9,12 +9,12 @@ helpviewer_keywords:
 - access levels, Visual Basic
 - access levels, default levels
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
-ms.openlocfilehash: 1ba25d830b1e7529bdf09c1195cc1fe7f9b2243b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: b5bb943a062ac648f88645fb6de1acb42213071c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74354104"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404801"
 ---
 # <a name="declaration-contexts-and-default-access-levels-visual-basic"></a>Контексты объявления и уровни доступа по умолчанию (Visual Basic)
 В этом разделе описано, какие типы Visual Basic могут быть объявлены, в которых можно объявлять другие типы, а также уровни доступа по умолчанию, если они не указаны.  
@@ -28,31 +28,31 @@ ms.locfileid: "74354104"
   
 - *Уровень модуля* — в классе, структуре, модуле или интерфейсе, но не внутри процедуры или блока  
   
-- *Уровень процедуры* — внутри процедуры или блока (например, `If` или `For`).  
+- *Уровень процедуры* — внутри процедуры или блока (например, `If` или `For` ).  
   
  В следующей таблице показаны уровни доступа по умолчанию для различных объявленных программных элементов в зависимости от контекстов объявления.  
   
 |Объявленный элемент|Уровень пространства имен|Уровень модуля|Уровень процедуры|  
 |----------------------|---------------------|------------------|---------------------|  
-|Variable ([оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md))|Нельзя использовать|`Private` (`Public` в `Structure`, запрещено в `Interface`)|`Public`|  
-|Constant ([оператор Const](../../../visual-basic/language-reference/statements/const-statement.md))|Нельзя использовать|`Private` (`Public` в `Structure`, запрещено в `Interface`)|`Public`|  
-|Enumeration ([оператор Enum](../../../visual-basic/language-reference/statements/enum-statement.md))|`Friend`|`Public`|Нельзя использовать|  
-|Class ([оператор Class](../../../visual-basic/language-reference/statements/class-statement.md))|`Friend`|`Public`|Нельзя использовать|  
-|Structure ([оператор Structure](../../../visual-basic/language-reference/statements/structure-statement.md))|`Friend`|`Public`|Нельзя использовать|  
-|Module ([оператор Module](../../../visual-basic/language-reference/statements/module-statement.md))|`Friend`|Нельзя использовать|Нельзя использовать|  
-|Interface ([оператор Interface](../../../visual-basic/language-reference/statements/interface-statement.md))|`Friend`|`Public`|Нельзя использовать|  
-|PROCEDURE ([оператор Function](../../../visual-basic/language-reference/statements/function-statement.md), [оператор подвыражения](../../../visual-basic/language-reference/statements/sub-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
-|Внешняя ссылка ([Инструкция DECLARE](../../../visual-basic/language-reference/statements/declare-statement.md))|Нельзя использовать|`Public` (не допускается в `Interface`)|Нельзя использовать|  
-|Оператор operator (оператор[operator](../../../visual-basic/language-reference/statements/operator-statement.md))|Нельзя использовать|`Public` (не допускается в `Interface` или `Module`)|Нельзя использовать|  
-|Property ([Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
-|Свойство по умолчанию ([по умолчанию](../../../visual-basic/language-reference/modifiers/default.md))|Нельзя использовать|`Public` (не допускается в `Module`)|Нельзя использовать|  
-|Event ([оператор Event](../../../visual-basic/language-reference/statements/event-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
-|Delegate ([оператор Delegate](../../../visual-basic/language-reference/statements/delegate-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|Variable ([оператор Dim](dim-statement.md))|Нельзя использовать|`Private`( `Public` в `Structure` , недопустимо в `Interface` )|`Public`|  
+|Constant ([оператор Const](const-statement.md))|Нельзя использовать|`Private`( `Public` в `Structure` , недопустимо в `Interface` )|`Public`|  
+|Enumeration ([оператор Enum](enum-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|Class ([оператор Class](class-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|Structure ([оператор Structure](structure-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|Module ([оператор Module](module-statement.md))|`Friend`|Нельзя использовать|Нельзя использовать|  
+|Interface ([оператор Interface](interface-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|PROCEDURE ([оператор Function](function-statement.md), [оператор подвыражения](sub-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
+|Внешняя ссылка ([Инструкция DECLARE](declare-statement.md))|Нельзя использовать|`Public`(не допускается в `Interface` )|Нельзя использовать|  
+|Оператор operator (оператор[operator](operator-statement.md))|Нельзя использовать|`Public`(не допускается в `Interface` или `Module` )|Нельзя использовать|  
+|Property ([Оператор Property](property-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
+|Свойство по умолчанию ([по умолчанию](../modifiers/default.md))|Нельзя использовать|`Public`(не допускается в `Module` )|Нельзя использовать|  
+|Event ([оператор Event](event-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
+|Delegate ([оператор Delegate](delegate-statement.md))|`Friend`|`Public`|Нельзя использовать|  
   
- Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
-- [Закрытые](../../../visual-basic/language-reference/modifiers/private.md)
-- [Public](../../../visual-basic/language-reference/modifiers/public.md)
+- [Объявление](../modifiers/friend.md)
+- [Частное](../modifiers/private.md)
+- [Открытый](../modifiers/public.md)

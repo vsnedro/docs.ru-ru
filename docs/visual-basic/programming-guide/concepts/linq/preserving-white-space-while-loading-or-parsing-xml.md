@@ -1,13 +1,13 @@
 ---
-title: Сохранение пробелов при загрузке или синтаксическом анализе XML2
+title: Сохранение пробелов при загрузке или анализе XML2
 ms.date: 07/20/2015
 ms.assetid: ef6518e0-2c8d-462c-8b92-a16e9dc737ad
-ms.openlocfilehash: 7febbf1ea27d3e73df8b91869befcd0b29a07c6e
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 9c60c707730ed0b07e82040a4ce3aab5d83eef1c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64666129"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396445"
 ---
 # <a name="preserving-white-space-while-loading-or-parsing-xml"></a>Сохранение пробелов при загрузке и анализе XML
 В этом разделе показан способ управления тем, как обрабатываются пробелы в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
@@ -16,7 +16,7 @@ ms.locfileid: "64666129"
   
  Другой типичный сценарий заключается в чтении и изменении XML с уже существующими преднамеренными отступами. Эти отступы ни в коем случае изменять нельзя. Для этого в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] можно сохранить пробелы при загрузке или синтаксическом анализе XML и отключить форматирование при сериализации XML.  
   
- В этом разделе описывается, как методы, заполняющие XML-деревья, обрабатывают пробелы. Сведения об управлении пробелами при сериализации деревьев XML см. в разделе [Сохранение пробелов при сериализации](../../../../visual-basic/programming-guide/concepts/linq/preserving-white-space-while-serializing.md).  
+ В этом разделе описывается, как методы, заполняющие XML-деревья, обрабатывают пробелы. Сведения об управлении пробелами при сериализации деревьев XML см. в разделе [Сохранение пробелов при сериализации](preserving-white-space-while-serializing.md).  
   
 ## <a name="behavior-of-methods-that-populate-xml-trees"></a>Поведение методов, заполняющих XML-деревья  
  Следующие методы в классах <xref:System.Xml.Linq.XElement> и <xref:System.Xml.Linq.XDocument> заполняют XML-дерево. XML-дерево можно заполнить из файла, объекта <xref:System.IO.TextReader>, объекта <xref:System.Xml.XmlReader> или строки:  
@@ -37,6 +37,6 @@ ms.locfileid: "64666129"
   
  XML-дерево можно создать при помощи объекта <xref:System.Xml.XmlWriter>. Узлы, которые записываются в <xref:System.Xml.XmlWriter>, вставляются в дерево. Однако при построении XML-дерева при помощи этого метода сохраняются все методы, независимо от того, содержит ли узел пробел или нет, является ли пробел значащим или нет.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Синтаксический анализ XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)
+- [Синтаксический анализ XML (Visual Basic)](parsing-xml.md)
