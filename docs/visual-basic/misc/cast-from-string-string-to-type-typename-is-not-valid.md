@@ -1,23 +1,23 @@
 ---
-title: Преобразование из строки &quot; <string> &quot; к типу '<typename>' является недопустимым
+title: Недопустимое приведение строки &quot; <string> &quot; к типу " <typename> "
 ms.date: 07/20/2015
 f1_keywords:
 - vbrInvalidCast_FromStringTo
 ms.assetid: a7382c0a-e8a4-4125-9690-db3fa030a06a
-ms.openlocfilehash: 6ce6f9a6f29b29ba3404ffee61f4baf962bba316
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b2961ce9741f55643416e4e69f927268f368ba59
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61941665"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84364959"
 ---
-# <a name="cast-from-string-quotstringquot-to-type-typename-is-not-valid"></a>Преобразование из строки &quot; \<строка >&quot; к типу '\<typename >' является недопустимым
+# <a name="cast-from-string-quotstringquot-to-type-typename-is-not-valid"></a>Недопустимое приведение строки &quot; \<string> &quot; к типу " \<typename> "
 Предпринята попытка недопустимого преобразования строковой переменной в другой тип.  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
 1. Проверьте используемые при преобразовании типы и убедитесь в том, что преобразование выполняется в допустимый тип.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Преобразование типов в Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Преобразование типов в Visual Basic](../programming-guide/language-features/data-types/type-conversions.md)
