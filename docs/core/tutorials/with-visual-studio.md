@@ -1,142 +1,123 @@
 ---
-title: Создание приложения Hello World с помощью .NET Core в Visual Studio
-description: Узнайте, как создать свое первое консольное приложение .NET Core с помощью C# или Visual Basic в Visual Studio.
+title: Создание консольного приложения с помощью .NET Core в Visual Studio
+description: Узнайте, как консольное приложение .NET Core с помощью C# или Visual Basic в Visual Studio.
 author: BillWagner
 ms.author: wiwagn
-ms.date: 12/09/2019
+ms.date: 05/20/2020
+dev_langs:
+- csharp
+- vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 738fc49a820c3c5d94fb35c1bf7a8b718ed75cb3
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 9c3456cd8c940e53e8a70c1d3a7c3b09de77c21d
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83394824"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84201588"
 ---
-# <a name="tutorial-create-your-first-net-core-console-application-in-visual-studio-2019"></a><span data-ttu-id="59194-103">Учебник. Создание первого консольного приложения .NET Core в Visual Studio 2019</span><span class="sxs-lookup"><span data-stu-id="59194-103">Tutorial: Create your first .NET Core console application in Visual Studio 2019</span></span>
+# <a name="tutorial-create-a-net-core-console-application-in-visual-studio-2019"></a><span data-ttu-id="e3e86-103">Учебник. Создание консольного приложения .NET Core в Visual Studio 2019</span><span class="sxs-lookup"><span data-stu-id="e3e86-103">Tutorial: Create a .NET Core console application in Visual Studio 2019</span></span>
 
-<span data-ttu-id="59194-104">В этой статье приводятся пошаговые инструкции по созданию и запуску консольного приложения Hello World .NET Core в Visual Studio 2019.</span><span class="sxs-lookup"><span data-stu-id="59194-104">This article provides a step-by-step introduction to create and run a Hello World .NET Core console application in Visual Studio 2019.</span></span> <span data-ttu-id="59194-105">Приложение Hello World традиционно используется для ознакомления начинающих с новым языком программирования.</span><span class="sxs-lookup"><span data-stu-id="59194-105">A Hello World application is traditionally used to introduce beginners to a new programming language.</span></span> <span data-ttu-id="59194-106">Эта программа просто отображает фразу "Hello World!"</span><span class="sxs-lookup"><span data-stu-id="59194-106">This program simply displays the phrase "Hello World!"</span></span> <span data-ttu-id="59194-107">"Hello World!".</span><span class="sxs-lookup"><span data-stu-id="59194-107">on the screen.</span></span>
+<span data-ttu-id="e3e86-104">В этом учебнике показано, как создать и запустить консольное приложение .NET Core в помощью Visual Studio 2019.</span><span class="sxs-lookup"><span data-stu-id="e3e86-104">This tutorial shows how to create and run a .NET Core console application in Visual Studio 2019.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="59194-108">Предварительные требования</span><span class="sxs-lookup"><span data-stu-id="59194-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e3e86-105">Предварительные требования</span><span class="sxs-lookup"><span data-stu-id="e3e86-105">Prerequisites</span></span>
 
-- <span data-ttu-id="59194-109">[Visual Studio 2019 версии 16.4 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**.</span><span class="sxs-lookup"><span data-stu-id="59194-109">[Visual Studio 2019 version 16.4 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed.</span></span> <span data-ttu-id="59194-110">Пакет SDK для .NET Core 3.1 устанавливается автоматически при выборе этой рабочей нагрузки.</span><span class="sxs-lookup"><span data-stu-id="59194-110">.NET Core 3.1 SDK is automatically installed when you select this workload.</span></span>
+- <span data-ttu-id="e3e86-106">[Visual Studio 2019 версии 16.6 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-106">[Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed.</span></span> <span data-ttu-id="e3e86-107">Пакет SDK для .NET Core 3.1 устанавливается автоматически при выборе этой рабочей нагрузки.</span><span class="sxs-lookup"><span data-stu-id="e3e86-107">The .NET Core 3.1 SDK is automatically installed when you select this workload.</span></span>
 
-<span data-ttu-id="59194-111">Дополнительные сведения см. в разделе [Установка с помощью Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) статьи [Установка пакета SDK для .NET Core](../install/sdk.md?pivots=os-windows).</span><span class="sxs-lookup"><span data-stu-id="59194-111">For more information, see the [Install with Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) section on the [Install the .NET Core SDK](../install/sdk.md?pivots=os-windows) article.</span></span>
+  <span data-ttu-id="e3e86-108">Дополнительные сведения см. в разделе [Установка с помощью Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) статьи [Установка пакета SDK для .NET Core](../install/sdk.md?pivots=os-windows).</span><span class="sxs-lookup"><span data-stu-id="e3e86-108">For more information, see the [Install with Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) section on the [Install the .NET Core SDK](../install/sdk.md?pivots=os-windows) article.</span></span>
 
-## <a name="create-the-app"></a><span data-ttu-id="59194-112">Создание приложения</span><span class="sxs-lookup"><span data-stu-id="59194-112">Create the app</span></span>
-
-<span data-ttu-id="59194-113">Ниже приведены инструкции по созданию простого консольного приложения Hello World:</span><span class="sxs-lookup"><span data-stu-id="59194-113">The following instructions create a simple Hello World console application:</span></span>
+## <a name="create-the-app"></a><span data-ttu-id="e3e86-109">Создание приложения</span><span class="sxs-lookup"><span data-stu-id="e3e86-109">Create the app</span></span>
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="c"></a>[<span data-ttu-id="59194-114">C#</span><span class="sxs-lookup"><span data-stu-id="59194-114">C#</span></span>](#tab/csharp)
+1. <span data-ttu-id="e3e86-110">Запустите Visual Studio 2019.</span><span class="sxs-lookup"><span data-stu-id="e3e86-110">Open Visual Studio 2019.</span></span>
 
-1. <span data-ttu-id="59194-115">Запустите Visual Studio 2019.</span><span class="sxs-lookup"><span data-stu-id="59194-115">Open Visual Studio 2019.</span></span>
+1. <span data-ttu-id="e3e86-111">Создайте проект консольного приложения .NET Core с именем HelloWorld.</span><span class="sxs-lookup"><span data-stu-id="e3e86-111">Create a new .NET Core console app project named "HelloWorld".</span></span>
 
-1. <span data-ttu-id="59194-116">Создайте проект консольного приложения .NET Core на C# с именем HelloWorld.</span><span class="sxs-lookup"><span data-stu-id="59194-116">Create a new C# .NET Core console app project named "HelloWorld".</span></span>
+   1. <span data-ttu-id="e3e86-112">На начальной странице выберите **Создать проект**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-112">On the start page, choose **Create a new project**.</span></span>
 
-   1. <span data-ttu-id="59194-117">На начальном экране выберите **Создать проект**.</span><span class="sxs-lookup"><span data-stu-id="59194-117">On the start window, choose **Create a new project**.</span></span>
+      ![Кнопка "Создать проект", выбранная на начальной странице Visual Studio](./media/with-visual-studio/start-window.png)
 
-      ![Кнопка "Создать проект", выбранная в начальном окне Visual Studio](./media/with-visual-studio/start-window.png)
-
-   1. <span data-ttu-id="59194-119">На странице **Создание проекта** введите в поле поиска **консоль**.</span><span class="sxs-lookup"><span data-stu-id="59194-119">On the **Create a new project** page, enter **console** in the search box.</span></span> <span data-ttu-id="59194-120">Затем выберите **C#** в списке языков и **Все платформы** в списке платформ.</span><span class="sxs-lookup"><span data-stu-id="59194-120">Next, choose **C#** from the Language list, and then choose **All platforms** from the Platform list.</span></span> <span data-ttu-id="59194-121">Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.</span><span class="sxs-lookup"><span data-stu-id="59194-121">Choose the **Console App (.NET Core)** template, and then choose **Next**.</span></span>
+   1. <span data-ttu-id="e3e86-114">На странице **Создание проекта** введите в поле поиска **консоль**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-114">On the **Create a new project** page, enter **console** in the search box.</span></span> <span data-ttu-id="e3e86-115">Затем выберите **C#** или **Visual Basic** из списка языков, а затем — **Все платформы** из списка платформ.</span><span class="sxs-lookup"><span data-stu-id="e3e86-115">Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list.</span></span> <span data-ttu-id="e3e86-116">Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-116">Choose the **Console App (.NET Core)** template, and then choose **Next**.</span></span>
 
       ![Окно "Создание проекта" с выбранными фильтрами](./media/with-visual-studio/create-new-project.png)
 
       > [!TIP]
-      > <span data-ttu-id="59194-123">Если вы не видите шаблоны .NET Core, вероятно, вы не установили требуемую рабочую нагрузку.</span><span class="sxs-lookup"><span data-stu-id="59194-123">If you don't see the .NET Core templates, you're probably missing the required workload installed.</span></span> <span data-ttu-id="59194-124">В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**.</span><span class="sxs-lookup"><span data-stu-id="59194-124">Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link.</span></span> <span data-ttu-id="59194-125">Откроется Visual Studio Installer.</span><span class="sxs-lookup"><span data-stu-id="59194-125">The Visual Studio Installer opens.</span></span> <span data-ttu-id="59194-126">Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.</span><span class="sxs-lookup"><span data-stu-id="59194-126">Make sure you have the **.NET Core cross-platform development** workload installed.</span></span>
+      > <span data-ttu-id="e3e86-118">Если вы не видите шаблоны .NET Core, вероятно, у вас не установлена требуемая рабочая нагрузка.</span><span class="sxs-lookup"><span data-stu-id="e3e86-118">If you don't see the .NET Core templates, you're probably missing the required workload.</span></span> <span data-ttu-id="e3e86-119">В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-119">Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link.</span></span> <span data-ttu-id="e3e86-120">Откроется Visual Studio Installer.</span><span class="sxs-lookup"><span data-stu-id="e3e86-120">The Visual Studio Installer opens.</span></span> <span data-ttu-id="e3e86-121">Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-121">Make sure you have the **.NET Core cross-platform development** workload installed.</span></span>
 
-   1. <span data-ttu-id="59194-127">На странице **настройки нового проекта** введите **HelloWorld** в поле **Имя проекта**.</span><span class="sxs-lookup"><span data-stu-id="59194-127">On the **Configure your new project** page,  enter **HelloWorld** in the **Project name** box.</span></span> <span data-ttu-id="59194-128">Затем нажмите **Создать**.</span><span class="sxs-lookup"><span data-stu-id="59194-128">Then, choose **Create**.</span></span>
+   1. <span data-ttu-id="e3e86-122">На странице **настройки нового проекта** введите **HelloWorld** в поле **Имя проекта**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-122">On the **Configure your new project** page,  enter **HelloWorld** in the **Project name** box.</span></span> <span data-ttu-id="e3e86-123">Затем нажмите кнопку **Создать**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-123">Then choose **Create**.</span></span>
 
       ![Окно настройки нового проекта с полями имени проекта, расположения и имени решения](./media/with-visual-studio/configure-new-project.png)
 
-   <span data-ttu-id="59194-130">Шаблон консольного приложения C# для .NET Core автоматически определяет класс `Program` с одним методом `Main`, который принимает в качестве аргумента массив <xref:System.String>.</span><span class="sxs-lookup"><span data-stu-id="59194-130">The C# Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument.</span></span> <span data-ttu-id="59194-131">`Main` — точка входа в приложение. Это метод, который автоматически вызывается средой выполнения при запуске приложения.</span><span class="sxs-lookup"><span data-stu-id="59194-131">`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application.</span></span> <span data-ttu-id="59194-132">Все аргументы, предоставленные в командной строке при запуске приложения, доступны через массив *args*.</span><span class="sxs-lookup"><span data-stu-id="59194-132">Any command-line arguments supplied when the application is launched are available in the *args* array.</span></span>
+   <span data-ttu-id="e3e86-125">Шаблон консольного приложения для .NET Core определяет класс `Program` с одним методом `Main`, который принимает в качестве аргумента массив <xref:System.String>.</span><span class="sxs-lookup"><span data-stu-id="e3e86-125">The Console Application template for .NET Core defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument.</span></span> <span data-ttu-id="e3e86-126">`Main` — точка входа в приложение. Это метод, который автоматически вызывается средой выполнения при запуске приложения.</span><span class="sxs-lookup"><span data-stu-id="e3e86-126">`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application.</span></span> <span data-ttu-id="e3e86-127">Все аргументы, предоставленные в командной строке при запуске приложения, доступны через массив *args*.</span><span class="sxs-lookup"><span data-stu-id="e3e86-127">Any command-line arguments supplied when the application is launched are available in the *args* array.</span></span>
 
-   ![Visual Studio и новый проект Hello World](./media/with-visual-studio/visual-studio-main-window.png)
+   <span data-ttu-id="e3e86-128">Если нужный язык не отображается, измените выбор языка в верхней части страницы.</span><span class="sxs-lookup"><span data-stu-id="e3e86-128">If the language you want to use is not shown, change the language selector at the top of the page.</span></span>
 
-# <a name="visual-basic"></a>[<span data-ttu-id="59194-134">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="59194-134">Visual Basic</span></span>](#tab/vb)
+   ```csharp
+   using System;
 
-1. <span data-ttu-id="59194-135">Запустите Visual Studio 2019.</span><span class="sxs-lookup"><span data-stu-id="59194-135">Open Visual Studio 2019.</span></span>
+   namespace HelloWorld
+   {
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               Console.WriteLine("Hello World!");
+           }
+       }
+   }
+   ```
 
-1. <span data-ttu-id="59194-136">Создайте проект консольного приложения .NET Core на Visual Basic с именем HelloWorld.</span><span class="sxs-lookup"><span data-stu-id="59194-136">Create a new Visual Basic .NET Core console app project named "HelloWorld".</span></span>
+   ```vb
+   Imports System
 
-   1. <span data-ttu-id="59194-137">На начальном экране выберите **Создать проект**.</span><span class="sxs-lookup"><span data-stu-id="59194-137">On the start window, choose **Create a new project**.</span></span>
+   Module Program
+       Sub Main(args As String())
+           Console.WriteLine("Hello World!")
+       End Sub
+   End Module
+   ```
 
-      ![Кнопка "Создать проект", выбранная в начальном окне Visual Studio](./media/with-visual-studio/start-window.png)
+   <span data-ttu-id="e3e86-129">Этот шаблон создает простое приложение Hello World.</span><span class="sxs-lookup"><span data-stu-id="e3e86-129">The template creates a simple "Hello World" application.</span></span> <span data-ttu-id="e3e86-130">Он вызывает метод <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> для отображения сообщения "Hello World!"</span><span class="sxs-lookup"><span data-stu-id="e3e86-130">It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!"</span></span> <span data-ttu-id="e3e86-131">в окне консоли.</span><span class="sxs-lookup"><span data-stu-id="e3e86-131">in the console window.</span></span>
 
-   1. <span data-ttu-id="59194-139">На странице **Создание проекта** введите в поле поиска **консоль**.</span><span class="sxs-lookup"><span data-stu-id="59194-139">On the **Create a new project** page, enter **console** in the search box.</span></span> <span data-ttu-id="59194-140">В списке языков выберите **Visual Basic**, а затем в списке платформ выберите **Все платформы**.</span><span class="sxs-lookup"><span data-stu-id="59194-140">Next, choose **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list.</span></span> <span data-ttu-id="59194-141">Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.</span><span class="sxs-lookup"><span data-stu-id="59194-141">Choose the **Console App (.NET Core)** template, and then choose **Next**.</span></span>
+## <a name="run-the-app"></a><span data-ttu-id="e3e86-132">Запуск приложения</span><span class="sxs-lookup"><span data-stu-id="e3e86-132">Run the app</span></span>
 
-      ![Выбор шаблона Visual Basic для консольного приложения (.NET Framework)](./media/with-visual-studio/vb/create-new-project.png)
-
-      > [!TIP]
-      > <span data-ttu-id="59194-143">Если вы не видите шаблоны .NET Core, вероятно, вы не установили требуемую рабочую нагрузку.</span><span class="sxs-lookup"><span data-stu-id="59194-143">If you don't see the .NET Core templates, you're probably missing the required workload installed.</span></span> <span data-ttu-id="59194-144">В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**.</span><span class="sxs-lookup"><span data-stu-id="59194-144">Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link.</span></span> <span data-ttu-id="59194-145">Откроется Visual Studio Installer.</span><span class="sxs-lookup"><span data-stu-id="59194-145">The Visual Studio Installer opens.</span></span> <span data-ttu-id="59194-146">Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.</span><span class="sxs-lookup"><span data-stu-id="59194-146">Make sure you have the **.NET Core cross-platform development** workload installed.</span></span>
-
-   1. <span data-ttu-id="59194-147">На странице **настройки нового проекта** введите **HelloWorld** в поле **Имя проекта**.</span><span class="sxs-lookup"><span data-stu-id="59194-147">On the **Configure your new project** page,  enter **HelloWorld** in the **Project name** box.</span></span> <span data-ttu-id="59194-148">Затем нажмите **Создать**.</span><span class="sxs-lookup"><span data-stu-id="59194-148">Then, choose **Create**.</span></span>
-
-   <span data-ttu-id="59194-149">Шаблон консольного приложения для .NET Core автоматически определяет класс `Program` с одним методом `Main`, который принимает в качестве аргумента массив <xref:System.String>.</span><span class="sxs-lookup"><span data-stu-id="59194-149">The console app template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument.</span></span> <span data-ttu-id="59194-150">`Main` — точка входа в приложение. Это метод, который автоматически вызывается средой выполнения при запуске приложения.</span><span class="sxs-lookup"><span data-stu-id="59194-150">`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application.</span></span> <span data-ttu-id="59194-151">Все аргументы, предоставленные в командной строке при запуске приложения, доступны в параметре `args`.</span><span class="sxs-lookup"><span data-stu-id="59194-151">Any command-line arguments supplied when the application is launched are available in the `args` parameter.</span></span>
-
-   ![Visual Studio и новый проект Hello World](./media/with-visual-studio/vb/visual-studio-main-window.png)
-
----
-
-   <span data-ttu-id="59194-153">Этот шаблон создает простое приложение Hello World.</span><span class="sxs-lookup"><span data-stu-id="59194-153">The template creates a simple "Hello World" application.</span></span> <span data-ttu-id="59194-154">Он вызывает метод <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> для отображения литеральной строки "Hello World!"</span><span class="sxs-lookup"><span data-stu-id="59194-154">It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display the literal string "Hello World!"</span></span> <span data-ttu-id="59194-155">в окне консоли.</span><span class="sxs-lookup"><span data-stu-id="59194-155">in the console window.</span></span>
-
-## <a name="run-the-app"></a><span data-ttu-id="59194-156">Запуск приложения</span><span class="sxs-lookup"><span data-stu-id="59194-156">Run the app</span></span>
-
-1. <span data-ttu-id="59194-157">Чтобы запустить программу, выберите **HelloWorld** на панели инструментов или нажмите клавишу **F5**.</span><span class="sxs-lookup"><span data-stu-id="59194-157">To run the program, choose **HelloWorld** on the toolbar, or press **F5**.</span></span>
+1. <span data-ttu-id="e3e86-133">Чтобы запустить программу, выберите **HelloWorld** на панели инструментов или нажмите клавишу **F5**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-133">To run the program, choose **HelloWorld** on the toolbar, or press **F5**.</span></span>
 
    ![Панель инструментов Visual Studio с выбранной кнопкой запуска HelloWorld](./media/with-visual-studio/run-program.png)
 
-   <span data-ttu-id="59194-159">Откроется окно консоли с текстом "Hello World!"</span><span class="sxs-lookup"><span data-stu-id="59194-159">A console window opens with the text "Hello World!"</span></span> <span data-ttu-id="59194-160">на экране и информацией об отладке Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="59194-160">printed on the screen and some Visual Studio debug information.</span></span>
+   <span data-ttu-id="e3e86-135">Откроется окно консоли с текстом "Hello World!"</span><span class="sxs-lookup"><span data-stu-id="e3e86-135">A console window opens with the text "Hello World!"</span></span> <span data-ttu-id="e3e86-136">на экране и информацией об отладке Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="e3e86-136">printed on the screen and some Visual Studio debug information.</span></span>
 
    ![Окно консоли с приложением Hello World и надписью "Чтобы продолжить, нажмите любую клавишу"](./media/with-visual-studio/hello-world-console.png)
 
-1. <span data-ttu-id="59194-162">Для закрытия консольного окна нажмите любую клавишу.</span><span class="sxs-lookup"><span data-stu-id="59194-162">Press any key to close the console window.</span></span>
+1. <span data-ttu-id="e3e86-138">Для закрытия консольного окна нажмите любую клавишу.</span><span class="sxs-lookup"><span data-stu-id="e3e86-138">Press any key to close the console window.</span></span>
 
-## <a name="enhance-the-app"></a><span data-ttu-id="59194-163">Улучшение приложения</span><span class="sxs-lookup"><span data-stu-id="59194-163">Enhance the app</span></span>
+## <a name="enhance-the-app"></a><span data-ttu-id="e3e86-139">Улучшение приложения</span><span class="sxs-lookup"><span data-stu-id="e3e86-139">Enhance the app</span></span>
 
-<span data-ttu-id="59194-164">Давайте расширим приложение. Теперь у пользователя будет запрашиваться имя, которое затем будет отображаться с датой и временем.</span><span class="sxs-lookup"><span data-stu-id="59194-164">Enhance your application to prompt the user for their name and display it along with the date and time.</span></span> <span data-ttu-id="59194-165">Ниже приведены инструкции по изменению и повторному запуску приложения:</span><span class="sxs-lookup"><span data-stu-id="59194-165">The following instructions modify and run the app again:</span></span>
+<span data-ttu-id="e3e86-140">Давайте расширим приложение. Теперь у пользователя будет запрашиваться имя, которое затем будет отображаться с датой и временем.</span><span class="sxs-lookup"><span data-stu-id="e3e86-140">Enhance the application to prompt the user for their name and display it along with the date and time.</span></span> <span data-ttu-id="e3e86-141">Ниже приведены инструкции по изменению приложения и его повторному запуску:</span><span class="sxs-lookup"><span data-stu-id="e3e86-141">The following instructions modify the app and run it again:</span></span>
 
-# <a name="c"></a>[<span data-ttu-id="59194-166">C#</span><span class="sxs-lookup"><span data-stu-id="59194-166">C#</span></span>](#tab/csharp)
+1. <span data-ttu-id="e3e86-142">Замените содержимое метода `Main` (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:</span><span class="sxs-lookup"><span data-stu-id="e3e86-142">Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:</span></span>
 
-1. <span data-ttu-id="59194-167">Замените содержимое метода `Main` (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:</span><span class="sxs-lookup"><span data-stu-id="59194-167">Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:</span></span>
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="Snippet1":::
 
-   [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/HelloWorld.cs#1)]
+   :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="Snippet1":::
 
-   <span data-ttu-id="59194-168">Теперь код выдает строку "What is your name?" (Как вас зовут?)</span><span class="sxs-lookup"><span data-stu-id="59194-168">This code displays "What is your name?"</span></span> <span data-ttu-id="59194-169">в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД.</span><span class="sxs-lookup"><span data-stu-id="59194-169">in the console window and waits until the user enters a string followed by the Enter key.</span></span> <span data-ttu-id="59194-170">Приложение сохраняет полученную строку в переменной с именем `name`.</span><span class="sxs-lookup"><span data-stu-id="59194-170">It stores this string into a variable named `name`.</span></span> <span data-ttu-id="59194-171">Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`.</span><span class="sxs-lookup"><span data-stu-id="59194-171">It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`.</span></span> <span data-ttu-id="59194-172">Наконец, с помощью [интерполированной строки](../../csharp/language-reference/tokens/interpolated.md) эти значения выводятся в окно консоли.</span><span class="sxs-lookup"><span data-stu-id="59194-172">Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.</span></span>
+   <span data-ttu-id="e3e86-143">Теперь код выдает строку "What is your name?" (Как вас зовут?)</span><span class="sxs-lookup"><span data-stu-id="e3e86-143">This code displays "What is your name?"</span></span> <span data-ttu-id="e3e86-144">в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД.</span><span class="sxs-lookup"><span data-stu-id="e3e86-144">in the console window and waits until the user enters a string followed by the Enter key.</span></span> <span data-ttu-id="e3e86-145">Приложение сохраняет полученную строку в переменной с именем `name`.</span><span class="sxs-lookup"><span data-stu-id="e3e86-145">It stores this string in a variable named `name`.</span></span> <span data-ttu-id="e3e86-146">Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date` (`currentDate` в Visual Basic).</span><span class="sxs-lookup"><span data-stu-id="e3e86-146">It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date` (`currentDate` in Visual Basic).</span></span> <span data-ttu-id="e3e86-147">Наконец, оно отображает эти значения в окне консоли.</span><span class="sxs-lookup"><span data-stu-id="e3e86-147">Finally, it displays these values in the console window.</span></span>
 
-1. <span data-ttu-id="59194-173">Скомпилируйте программу, выбрав действие **Сборка** > **Собрать решение**.</span><span class="sxs-lookup"><span data-stu-id="59194-173">Compile the program by choosing **Build** > **Build Solution**.</span></span>
+   <span data-ttu-id="e3e86-148">`\n` (`vbCrLf` в Visual Basic) представляет собой символ новой строки.</span><span class="sxs-lookup"><span data-stu-id="e3e86-148">The `\n` (`vbCrLf` in Visual Basic) represents a newline character.</span></span>
 
-1. <span data-ttu-id="59194-174">Чтобы запустить программу, выберите **HelloWorld** на панели инструментов или нажмите клавишу **F5**.</span><span class="sxs-lookup"><span data-stu-id="59194-174">To run the program, choose **HelloWorld** on the toolbar, or press **F5**.</span></span>
+   <span data-ttu-id="e3e86-149">Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке.</span><span class="sxs-lookup"><span data-stu-id="e3e86-149">The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string.</span></span> <span data-ttu-id="e3e86-150">Значение выражения вставляется в строку вместо выражения.</span><span class="sxs-lookup"><span data-stu-id="e3e86-150">The expression value is inserted into the string in place of the expression.</span></span> <span data-ttu-id="e3e86-151">Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).</span><span class="sxs-lookup"><span data-stu-id="e3e86-151">This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).</span></span>
 
-1. <span data-ttu-id="59194-175">В ответ на приглашение в командной строке введите имя и нажмите клавишу **ВВОД**.</span><span class="sxs-lookup"><span data-stu-id="59194-175">Respond to the prompt by entering a name and pressing the **Enter** key.</span></span>
+1. <span data-ttu-id="e3e86-152">Чтобы запустить программу, выберите **HelloWorld** на панели инструментов или нажмите клавишу **F5**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-152">To run the program, choose **HelloWorld** on the toolbar, or press **F5**.</span></span>
 
-   ![Окно консоли с измененными выходными данными программы](./media/with-visual-studio/hello-world-update.png)
-
-1. <span data-ttu-id="59194-177">Для закрытия консольного окна нажмите любую клавишу.</span><span class="sxs-lookup"><span data-stu-id="59194-177">Press any key to close the console window.</span></span>
-
-# <a name="visual-basic"></a>[<span data-ttu-id="59194-178">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="59194-178">Visual Basic</span></span>](#tab/vb)
-
-1. <span data-ttu-id="59194-179">Замените содержимое метода `Main` (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:</span><span class="sxs-lookup"><span data-stu-id="59194-179">Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:</span></span>
-
-   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/Program.vb#1)]
-
-   <span data-ttu-id="59194-180">Теперь код выдает строку "What is your name?" (Как вас зовут?)</span><span class="sxs-lookup"><span data-stu-id="59194-180">This code displays "What is your name?"</span></span> <span data-ttu-id="59194-181">в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД.</span><span class="sxs-lookup"><span data-stu-id="59194-181">in the console window and waits until the user enters a string followed by the Enter key.</span></span> <span data-ttu-id="59194-182">Приложение сохраняет полученную строку в переменной с именем `name`.</span><span class="sxs-lookup"><span data-stu-id="59194-182">It stores this string into a variable named `name`.</span></span> <span data-ttu-id="59194-183">Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`.</span><span class="sxs-lookup"><span data-stu-id="59194-183">It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`.</span></span> <span data-ttu-id="59194-184">Наконец, с помощью [интерполированной строки](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) эти значения выводятся в окно консоли.</span><span class="sxs-lookup"><span data-stu-id="59194-184">Finally, it uses an [interpolated string](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) to display these values in the console window.</span></span>
-
-1. <span data-ttu-id="59194-185">Скомпилируйте программу, выбрав действие **Сборка** > **Собрать решение**.</span><span class="sxs-lookup"><span data-stu-id="59194-185">Compile the program by choosing **Build** > **Build Solution**.</span></span>
-
-1. <span data-ttu-id="59194-186">Чтобы запустить программу, выберите **HelloWorld** на панели инструментов или нажмите клавишу **F5**.</span><span class="sxs-lookup"><span data-stu-id="59194-186">To run the program, choose **HelloWorld** on the toolbar, or press **F5**.</span></span>
-
-1. <span data-ttu-id="59194-187">В ответ на приглашение в командной строке введите имя и нажмите клавишу **ВВОД**.</span><span class="sxs-lookup"><span data-stu-id="59194-187">Respond to the prompt by entering a name and pressing the **Enter** key.</span></span>
+1. <span data-ttu-id="e3e86-153">В ответ на приглашение в командной строке введите имя и нажмите клавишу **ВВОД**.</span><span class="sxs-lookup"><span data-stu-id="e3e86-153">Respond to the prompt by entering a name and pressing the **Enter** key.</span></span>
 
    ![Окно консоли с измененными выходными данными программы](./media/with-visual-studio/hello-world-update.png)
 
-1. <span data-ttu-id="59194-189">Для закрытия консольного окна нажмите любую клавишу.</span><span class="sxs-lookup"><span data-stu-id="59194-189">Press any key to close the console window.</span></span>
+1. <span data-ttu-id="e3e86-155">Для закрытия консольного окна нажмите любую клавишу.</span><span class="sxs-lookup"><span data-stu-id="e3e86-155">Press any key to close the console window.</span></span>
 
----
+## <a name="next-steps"></a><span data-ttu-id="e3e86-156">Следующие шаги</span><span class="sxs-lookup"><span data-stu-id="e3e86-156">Next steps</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="59194-190">Следующие шаги</span><span class="sxs-lookup"><span data-stu-id="59194-190">Next steps</span></span>
-
-<span data-ttu-id="59194-191">Работая с этой статьей, вы создали и запустили свое первое приложение .NET Core.</span><span class="sxs-lookup"><span data-stu-id="59194-191">In this article, you've created and run your first .NET Core application.</span></span> <span data-ttu-id="59194-192">На следующем шаге выполняется отладка приложения.</span><span class="sxs-lookup"><span data-stu-id="59194-192">In the next step, you debug your app.</span></span>
+<span data-ttu-id="e3e86-157">В этом учебнике вы создали приложение .NET Core.</span><span class="sxs-lookup"><span data-stu-id="e3e86-157">In this tutorial, you created a .NET Core application.</span></span> <span data-ttu-id="e3e86-158">В следующем учебнике описывается отладка приложения.</span><span class="sxs-lookup"><span data-stu-id="e3e86-158">In the next tutorial, you debug the app.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="59194-193">Отладка приложения .NET Core Hello World на C# или Visual с помощью Visual Studio 2017</span><span class="sxs-lookup"><span data-stu-id="59194-193">Debug a .NET Core Hello World application in Visual Studio</span></span>](debugging-with-visual-studio.md)
+> [<span data-ttu-id="e3e86-159">Отладка консольного приложения .NET Core в Visual Studio</span><span class="sxs-lookup"><span data-stu-id="e3e86-159">Debug a .NET Core console application in Visual Studio</span></span>](debugging-with-visual-studio.md)
