@@ -2,12 +2,12 @@
 title: Практическое руководство. Вычисление значений столбцов в текстовом CSV-файле (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 88b2b9f3-c82e-41f3-b1b4-26ede5973a02
-ms.openlocfilehash: 230bb26d04a85decc401abaa6c7fd7fc8a6b4806
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 679d53787b1392181696c05e0327ca1b1b910015
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75338506"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84357508"
 ---
 # <a name="how-to-compute-column-values-in-a-csv-text-file-linq-visual-basic"></a>Руководство. Вычисление значений столбцов в текстовом файле CSV (LINQ) (Visual Basic)
 
@@ -145,9 +145,9 @@ End Class
 
 ## <a name="compile-the-code"></a>Компиляция кода
 
-Создайте Visual Basic проект консольного приложения, используя инструкцию `Imports` для пространства имен System. LINQ.
+Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [LINQ и строки (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ и каталоги файлов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ и строки (Visual Basic)](linq-and-strings.md)
+- [LINQ и каталоги файлов (Visual Basic)](linq-and-file-directories.md)

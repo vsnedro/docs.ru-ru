@@ -2,18 +2,18 @@
 title: Практическое руководство. Анализ строки
 ms.date: 07/20/2015
 ms.assetid: 896e1b4b-f9bd-4975-8bc1-55b6badce1ac
-ms.openlocfilehash: 31bae00eb3ebf0d8e64fc657693e8c0767c4f5d4
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0a9076fc516bb8e6bc74732ca252fabfeda43d53
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344488"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398016"
 ---
 # <a name="how-to-parse-a-string-visual-basic"></a>Руководство. анализ строки (Visual Basic)
-В этом разделе показано, как создать XML-дерево C#в.  
+В этом разделе показано, как создать XML-дерево в C#.  
   
 ## <a name="example"></a>Пример  
- Можно выполнить синтаксический анализ строки в Visual Basic с помощью метода `XElement.Parse`. Однако более эффективно используются XML-литералы, как показано в следующем коде, поскольку применение XML-литералов не приводит к снижению производительности, в отличие от синтаксического анализа кода XML, полученного из строки.  
+ Можно выполнить синтаксический анализ строки в Visual Basic с помощью `XElement.Parse` метода. Однако более эффективно используются XML-литералы, как показано в следующем коде, поскольку применение XML-литералов не приводит к снижению производительности, в отличие от синтаксического анализа кода XML, полученного из строки.  
   
  Используя литералы XML, можно просто скопировать и вставить XML-код в программу Visual Basic.  
   
@@ -49,6 +49,6 @@ Dim contacts as XElement = _
     </Contacts>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Синтаксический анализ XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)
+- [Синтаксический анализ XML (Visual Basic)](parsing-xml.md)

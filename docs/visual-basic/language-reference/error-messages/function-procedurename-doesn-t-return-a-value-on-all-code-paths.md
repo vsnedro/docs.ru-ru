@@ -7,27 +7,27 @@ f1_keywords:
 helpviewer_keywords:
 - BC42105
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
-ms.openlocfilehash: 5564f95048f6b44a48229c7e5be9331839803439
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: edb2195f4e83c2315aa929936aff8af88ca8556c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64662102"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84374139"
 ---
-# <a name="function-procedurename-doesnt-return-a-value-on-all-code-paths"></a>Функция "\<имя_процедуры >" не возвращает значение на всех путях кода
-Функция "\<имя_процедуры >" не возвращает значение на всех путях кода. Возможно, отсутствует оператор «Return»?  
+# <a name="function-procedurename-doesnt-return-a-value-on-all-code-paths"></a>Функция \<procedurename> возвращает значение не для всех путей выполнения
+Функция " \<procedurename> " не возвращает значение для всех ветвей кода. У вас отсутствует оператор "return"?  
   
- Объект `Function` процедура имеет по крайней мере один возможный путь во всем коде, который не возвращает значение.  
+ `Function`Процедура имеет по крайней мере один возможный путь в коде, который не возвращает значение.  
   
- Может возвращать значение из `Function` процедуры в любой из следующих способов:  
+ Получить значение из `Function` процедуры можно одним из следующих способов.  
   
-- Включите значение в [оператор Return](../../../visual-basic/language-reference/statements/return-statement.md).  
+- Включите значение в [оператор return](../statements/return-statement.md).  
   
-- Присвойте значение `Function` процедуры имя, а затем выполнить `Exit Function` инструкции.  
+- Присвойте значение `Function` имени процедуры, а затем выполните `Exit Function` инструкцию.  
   
-- Присвойте значение `Function` процедуры имя, а затем выполнить `End Function` инструкции.  
+- Присвойте значение `Function` имени процедуры, а затем выполните `End Function` инструкцию.  
   
- Если управление передается `Exit Function` или `End Function` и которые не были назначены любое значение для имени процедуры, процедура возвращает значение по умолчанию тип возвращаемых данных. Дополнительные сведения см. в разделе «Поведение» в [инструкции Function](../../../visual-basic/language-reference/statements/function-statement.md).  
+ Если элемент управления передается в `Exit Function` или `End Function` и вы не назначили какое бы то ни было значение имени процедуры, процедура возвращает значение по умолчанию для возвращаемого типа данных. Дополнительные сведения см. в разделе «поведение» в [операторе Function](../statements/function-statement.md).  
   
  По умолчанию данное сообщение является предупреждением. Дополнительные сведения о скрытии предупреждений или обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
@@ -35,12 +35,12 @@ ms.locfileid: "64662102"
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Проверьте логику потока управления и убедитесь, что можно присвоить значение перед каждой инструкции, которая вызывает возврат.  
+- Проверьте логику потока управления и убедитесь, что значение присваивается перед каждой инструкцией, которая вызывает возврат.  
   
-     Проще гарантировать, что каждое возвращение из процедуры возвращает значение, если всегда использовать `Return` инструкции. После этого, последней инструкцией перед `End Function` должно быть `Return` инструкции.  
+     Проще гарантировать, что каждый возврат из процедуры возвращает значение, если всегда используется `Return` оператор. В этом случае последняя инструкция `End Function` должна быть `Return` оператором.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Процедуры функций](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)
-- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Процедуры функций](../../programming-guide/language-features/procedures/function-procedures.md)
+- [Оператор Function](../statements/function-statement.md)
 - [Страница "Компиляция" в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)

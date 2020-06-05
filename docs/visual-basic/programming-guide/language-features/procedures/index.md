@@ -8,21 +8,21 @@ helpviewer_keywords:
 - structured code [Visual Basic], procedures
 - procedures
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
-ms.openlocfilehash: b959f4b6986bc325c97c7cbe9aeee0341832f6cc
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: c0d9921704570c6984b203817aed8f5546b2f936
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345983"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408793"
 ---
 # <a name="procedures-in-visual-basic"></a>Процедуры в Visual Basic
-*Процедура* — это блок Visual Basic инструкций, заключенных в оператор объявления (`Function`, `Sub`, `Operator`, `Get`, `Set`) и соответствующее объявление `End`. Все исполняемые инструкции в Visual Basic должны находиться в пределах некоторой процедуры.  
+*Процедура* — это блок Visual Basic инструкций, заключенных в оператор объявления ( `Function` ,, `Sub` `Operator` , `Get` , `Set` ) и `End` объявлении сопоставления. Все исполняемые инструкции в Visual Basic должны находиться в пределах некоторой процедуры.  
   
 ## <a name="calling-a-procedure"></a>Вызов процедуры  
  Процедура вызывается из другого места в коде. Это называется *вызовом процедуры*. После завершения процедуры она возвращает управление в код, из которого она была вызвана (*вызывающий код*). Вызывающий код — это оператор или выражение в составе оператора, в которых указывается имя процедуры и передается управление процедуре.  
   
 ## <a name="returning-from-a-procedure"></a>Возврат из процедуры  
- После завершения процедуры она возвращает управление вызывающему коду. Чтобы сделать это, можно использовать [оператор Return](../../../../visual-basic/language-reference/statements/return-statement.md), соответствующий [оператор Exit](../../../../visual-basic/language-reference/statements/exit-statement.md) для процедуры или [ключевое слово >\< оператора ](../../../../visual-basic/language-reference/statements/end-keyword-statement.md)End. Затем управление передается в вызывающий код, следующий за точкой вызова процедуры.  
+ После завершения процедуры она возвращает управление вызывающему коду. Для этого можно использовать [инструкцию Return](../../../language-reference/statements/return-statement.md), соответствующую инструкцию [Exit](../../../language-reference/statements/exit-statement.md) Function для процедуры или инструкцию [End \<keyword> инструкции](../../../language-reference/statements/end-keyword-statement.md) процедуры. Затем управление передается в вызывающий код, следующий за точкой вызова процедуры.  
   
 - При использовании оператора `Return` управление немедленно возвращается в вызывающий код. Операторы, следующие за оператором `Return`, не выполняются. В одной и той же процедуре можно использовать несколько операторов `Return`.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "74345983"
   
 - [Процедуры операторов](./operator-procedures.md) определяют поведение стандартного оператора, если один или оба операнда представляют собой недавно определенный класс или структуру.  
   
-- В [универсальных процедурах в Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md) определяются *параметры типа* в дополнение к обычным параметрам процедуры. Это позволяет передавать параметры определенного типа из вызывающего кода при каждом вызове.  
+- В [универсальных процедурах в Visual Basic](../data-types/generic-procedures.md) определяются *параметры типа* в дополнение к обычным параметрам процедуры. Это позволяет передавать параметры определенного типа из вызывающего кода при каждом вызове.  
   
 ## <a name="procedures-and-structured-code"></a>Процедуры и структурированный код  
  Каждая строка исполняемого кода в приложении должна находиться внутри некоторой процедуры, такой как `Main`, `calculate` или `Button1_Click`. Если разделить большие процедуры на более мелкие, код будет более удобным для чтения.  
@@ -61,7 +61,7 @@ ms.locfileid: "74345983"
   
 - После разработки процедур для использования в одной программе их можно использовать в других программах без изменений или с небольшими изменениями. Это помогает избежать дублирования кода.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Создание процедуры](./how-to-create-a-procedure.md)
 - [Подпрограммы](./sub-procedures.md)
@@ -71,5 +71,5 @@ ms.locfileid: "74345983"
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
 - [Рекурсивные процедуры](./recursive-procedures.md)
 - [Перегрузка процедур](./procedure-overloading.md)
-- [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)
-- [Объекты и классы](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Generic Procedures in Visual Basic](../data-types/generic-procedures.md)
+- [Объекты и классы](../objects-and-classes/index.md)

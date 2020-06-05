@@ -12,12 +12,12 @@ helpviewer_keywords:
 - generics [Visual Basic], procedures
 - generic procedures [Visual Basic], type inference
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
-ms.openlocfilehash: 16a629e07cf711778b3d8d1863958ec7a6300649
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 2efc0410b9d4bb663e1ff19d5a5456d7ff2c99bd
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350087"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84394069"
 ---
 # <a name="generic-procedures-in-visual-basic"></a>Generic Procedures in Visual Basic
 *Универсальная процедура*, также называемая *универсальным методом*, представляет собой процедуру, определенную по крайней мере с одним параметром типа. Это позволяет вызывающему коду адаптировать типы данных к их требованиям при каждом вызове процедуры.  
@@ -27,7 +27,7 @@ ms.locfileid: "74350087"
  Универсальная процедура может использовать свои параметры-типы в его стандартном списке параметров, в его возвращаемом типе, если он есть, и в коде процедуры.  
   
 ## <a name="type-inference"></a>Вывод типа  
- Можно вызвать универсальную процедуру без указания каких-либо аргументов типа. При таком вызове компилятор пытается определить подходящие типы данных для передачи аргументам типа процедуры. Это называется *выводом типа*. В следующем коде показан вызов, в котором компилятор определяет, что ему следует передать тип `String` в параметр типа `t`.  
+ Можно вызвать универсальную процедуру без указания каких-либо аргументов типа. При таком вызове компилятор пытается определить подходящие типы данных для передачи аргументам типа процедуры. Это называется *выводом типа*. В следующем коде показан вызов, в котором компилятор определяет, что он должен передать тип `String` в параметр типа `t` .  
   
  [!code-vb[VbVbalrDataTypes#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#15)]  
   
@@ -50,26 +50,26 @@ End Sub
 ## <a name="example"></a>Пример  
   
 ### <a name="description"></a>Описание  
- В следующем примере определяется универсальная процедура `Function` для поиска определенного элемента в массиве. Он определяет один параметр типа и использует его для создания двух параметров в списке параметров.  
+ В следующем примере определяется универсальная `Function` процедура поиска определенного элемента в массиве. Он определяет один параметр типа и использует его для создания двух параметров в списке параметров.  
   
 ### <a name="code"></a>Код  
  [!code-vb[VbVbalrDataTypes#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#14)]  
   
 ### <a name="comments"></a>Комментарии  
- В предыдущем примере требуется возможность сравнения `searchValue` с каждым элементом `searchArray`. Чтобы гарантировать эту возможность, он ограничивает параметр типа `T` для реализации интерфейса <xref:System.IComparable%601>. В коде используется метод <xref:System.IComparable%601.CompareTo%2A> вместо оператора `=`, поскольку нет гарантии, что аргумент типа, предоставляемый для `T`, поддерживает оператор `=`.  
+ В предыдущем примере требуется возможность сравнения с `searchValue` каждым элементом `searchArray` . Чтобы гарантировать эту возможность, он ограничивает параметр типа `T` для реализации <xref:System.IComparable%601> интерфейса. В коде используется <xref:System.IComparable%601.CompareTo%2A> метод вместо `=` оператора, поскольку нет никакой гарантии, что аргумент типа предоставляется для `T` поддержки `=` оператора.  
   
- Процедуру `findElement` можно проверить с помощью следующего кода.  
+ Процедуру можно проверить `findElement` с помощью следующего кода.  
   
  [!code-vb[VbVbalrDataTypes#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#13)]  
   
- Предыдущие вызовы `MsgBox` отображают "0", "1" и "-1" соответственно.  
+ Предыдущие вызовы для `MsgBox` отображают "0", "1" и "-1" соответственно.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [Практическое руководство. Определение класса, реализующего одинаковую функциональность для различных типов данных](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)
-- [Практическое руководство. Использование универсального класса](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
-- [Процедуры](../../../../visual-basic/programming-guide/language-features/procedures/index.md)
-- [Параметры и аргументы процедуры](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
-- [Список типов](../../../../visual-basic/language-reference/statements/type-list.md)
-- [Список параметров](../../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Generic Types in Visual Basic](generic-types.md)
+- [Практическое руководство. Определение класса, реализующего одинаковую функциональность для разных типов данных](how-to-define-a-class-that-can-provide-identical-functionality.md)
+- [Практическое руководство. Использование универсального класса](how-to-use-a-generic-class.md)
+- [Процедуры](../procedures/index.md)
+- [Параметры и аргументы процедуры](../procedures/procedure-parameters-and-arguments.md)
+- [Type List](../../../language-reference/statements/type-list.md)
+- [Список параметров](../../../language-reference/statements/parameter-list.md)

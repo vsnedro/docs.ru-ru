@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - attributes [Visual Basic]
 ms.assetid: 5deb2b8a-1afd-4dbd-8ee8-f093d74ad0eb
-ms.openlocfilehash: 226187fc183b12055e9a67a8fdef0178edb317d8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 27dea66da794e5fed95902c40a81fa03422f6267
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74347860"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84374503"
 ---
 # <a name="attributes-visual-basic"></a>Атрибуты (Visual Basic)
 
@@ -19,9 +19,9 @@ Visual Basic предоставляет несколько атрибутов, �
 |---|---|  
 |<xref:Microsoft.VisualBasic.ComClassAttribute>|Предписывает компилятору добавлять метаданные, позволяющие предоставить класс в качестве COM-объекта.|
 |<xref:Microsoft.VisualBasic.HideModuleNameAttribute>|Разрешает доступ к членам модуля только по квалификации, необходимой для модуля.|
-|<xref:Microsoft.VisualBasic.VBFixedArrayAttribute>|Указывает, что массив в структуре или нелокальной переменной должен рассматриваться как массив фиксированной длины.|
-|<xref:Microsoft.VisualBasic.VBFixedStringAttribute>|Указывает, что строка должна рассматриваться как фиксированная длина.|
+|<xref:Microsoft.VisualBasic.VBFixedArrayAttribute>|Указывает, что массив в структуре или внешней переменной следует рассматривать как массив с фиксированным размером.|
+|<xref:Microsoft.VisualBasic.VBFixedStringAttribute>|Указывает, что строка должна обрабатываться как строка с фиксированной длиной.|
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Обзор атрибутов](../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Обзор атрибутов](../programming-guide/concepts/attributes/index.md)

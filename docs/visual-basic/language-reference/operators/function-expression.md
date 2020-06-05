@@ -6,12 +6,12 @@ helpviewer_keywords:
 - functions [Visual Basic], function expressions
 - lambda expressions [Visual Basic], function expression
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
-ms.openlocfilehash: 454c4e3d926640934a8edc4fcb16e4308a89dd50
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: a9b621ff03f833fcf0f07f876fd864ee963bef75
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75632341"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84371185"
 ---
 # <a name="function-expression-visual-basic"></a>Выражение Function (Visual Basic)
 Объявляет параметры и код, определяющие лямбда-выражение функции.  
@@ -26,25 +26,25 @@ Function ( [ parameterlist ] )
 End Function  
 ```  
   
-## <a name="parts"></a>Части  
+## <a name="parts"></a>Компоненты  
   
 |Термин|Определение|  
 |---|---|  
-|`parameterlist`|(Необязательный аргумент) Список имен локальных переменных, представляющих параметры этой процедуры. Круглые скобки должны присутствовать, даже если список пуст. См. [список параметров](../../../visual-basic/language-reference/statements/parameter-list.md).|  
-|`expression`|Обязательное Одно выражение. Тип выражения является типом возвращаемого значения функции.|  
-|`statements`|Обязательное Список инструкций, которые возвращают значение с помощью оператора `Return`. (См. раздел [оператор return](../../../visual-basic/language-reference/statements/return-statement.md).) Тип возвращаемого значения — это возвращаемый тип функции.|  
+|`parameterlist`|Необязательный элемент. Список имен локальных переменных, представляющих параметры этой процедуры. Круглые скобки должны присутствовать, даже если список пуст. См. [список параметров](../statements/parameter-list.md).|  
+|`expression`|Обязательный. Одно выражение. Тип выражения является типом возвращаемого значения функции.|  
+|`statements`|Обязательный. Список инструкций, которые возвращают значение с помощью `Return` инструкции. (См. раздел [оператор return](../statements/return-statement.md).) Тип возвращаемого значения — это возвращаемый тип функции.|  
   
-## <a name="remarks"></a>Заметки  
- *Лямбда-выражение* — это функция без имени, которая вычисляет и возвращает значение. Лямбда-выражение можно использовать в любом месте, где можно использовать тип делегата, за исключением того, что в качестве аргумента для `RemoveHandler`. Дополнительные сведения о делегатах и использовании лямбда-выражений с делегатами см. в разделе [оператор Delegate](../../../visual-basic/language-reference/statements/delegate-statement.md) и [Преобразование неявного делегата](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
+## <a name="remarks"></a>Комментарии  
+ *Лямбда-выражение* — это функция без имени, которая вычисляет и возвращает значение. Лямбда-выражение можно использовать в любом месте, где можно использовать тип делегата, кроме аргумента `RemoveHandler` . Дополнительные сведения о делегатах и использовании лямбда-выражений с делегатами см. в разделе [оператор Delegate](../statements/delegate-statement.md) и [Преобразование неявного делегата](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
   
 ## <a name="lambda-expression-syntax"></a>Синтаксис лямбда-выражений  
  Синтаксис лямбда-выражения напоминает стандартную функцию. Различия заключаются в следующем.  
   
 - Лямбда-выражение не имеет имени.  
   
-- Лямбда-выражения не могут иметь модификаторы, такие как `Overloads` или `Overrides`.  
+- Лямбда-выражения не могут иметь модификаторы, такие как `Overloads` или `Overrides` .  
   
-- Лямбда-выражения не используют предложение `As` для обозначения возвращаемого типа функции. Вместо этого тип выводится из значения, которое принимает текст однострочного лямбда-выражения, или возвращаемое значение многострочного лямбда-выражения. Например, если текст однострочного лямбда-выражения имеет `Where cust.City = "London"`, его возвращаемый тип — `Boolean`.  
+- Лямбда-выражения не используют `As` предложение для обозначения возвращаемого типа функции. Вместо этого тип выводится из значения, которое принимает текст однострочного лямбда-выражения, или возвращаемое значение многострочного лямбда-выражения. Например, если текст однострочного лямбда-выражения имеет значение `Where cust.City = "London"` , его тип возвращаемого значения — `Boolean` .  
   
 - Тело однострочного лямбда-выражения должно быть выражением, а не оператором. Тело может состоять из вызова процедуры функции, но не вызова процедуры подпрограммы.  
   
@@ -67,7 +67,7 @@ End Function
  [!code-vb[VbVbalrLambdas#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#3)]  
   
 ## <a name="example"></a>Пример  
- Ниже приведен пример лямбда-выражения, которое увеличивает свой аргумент и возвращает значение. В примере показан синтаксис однострочного и многострочного лямбда-выражения для функции. Дополнительные примеры см. в разделе [лямбда-выражения](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
+ Ниже приведен пример лямбда-выражения, которое увеличивает свой аргумент и возвращает значение. В примере показан синтаксис однострочного и многострочного лямбда-выражения для функции. Дополнительные примеры см. в разделе [лямбда-выражения](../../programming-guide/language-features/procedures/lambda-expressions.md).  
   
  [!code-vb[VbVbalrLambdas#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#14)]  
   
@@ -85,15 +85,15 @@ Dim londonCusts = db.Customers.
                   Select(Function(cust) cust)  
 ```  
   
- Дополнительные сведения о методах запросов см. в разделе [запросы](../../../visual-basic/language-reference/queries/index.md). Дополнительные сведения о стандартных операторах запросов см. в разделе [Общие сведения о стандартных операторах запросов](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
+ Дополнительные сведения о методах запросов см. в разделе [запросы](../queries/index.md). Дополнительные сведения о стандартных операторах запросов см. в разделе [Общие сведения о стандартных операторах запросов](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Лямбда-выражения](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
-- [Операторы и выражения](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Операторы](../../../visual-basic/programming-guide/language-features/statements.md)
-- [Сравнения значений](../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
-- [Логические выражения](../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)
-- [Оператор If](../../../visual-basic/language-reference/operators/if-operator.md)
-- [Неявное преобразование делегата](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+- [Оператор Function](../statements/function-statement.md)
+- [Лямбда-выражения](../../programming-guide/language-features/procedures/lambda-expressions.md)
+- [Операторы и выражения](../../programming-guide/language-features/operators-and-expressions/index.md)
+- [Операторы](../../programming-guide/language-features/statements.md)
+- [Сравнения значений](../../programming-guide/language-features/operators-and-expressions/value-comparisons.md)
+- [Логические выражения](../../programming-guide/language-features/operators-and-expressions/boolean-expressions.md)
+- [Оператор If](if-operator.md)
+- [Неявное преобразование делегата](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

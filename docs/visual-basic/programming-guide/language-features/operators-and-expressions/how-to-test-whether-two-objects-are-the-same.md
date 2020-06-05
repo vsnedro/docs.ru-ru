@@ -9,26 +9,26 @@ helpviewer_keywords:
 - objects [Visual Basic], variables referring to same
 - Visual Basic code, operators
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
-ms.openlocfilehash: 22e8e1e688d9e3bc3804899103ee78814aac235b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: b215225dbc2d8c0d2bdfe2206e5d4a4f1faa6d0c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74343623"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403425"
 ---
 # <a name="how-to-test-whether-two-objects-are-the-same-visual-basic"></a>Практическое руководство. Проверка совпадения двух объектов (Visual Basic)
-При наличии двух переменных, ссылающихся на объекты, можно использовать либо оператор `Is` или `IsNot`, либо и то, и другое, чтобы определить, ссылаются ли они на один и тот же экземпляр.  
+При наличии двух переменных, ссылающихся на объекты, можно использовать либо `Is` `IsNot` оператор OR, либо и то, и другое, чтобы определить, ссылаются ли они на один и тот же экземпляр.  
   
 ### <a name="to-test-whether-two-objects-are-the-same"></a>Проверка того, совпадают ли два объекта  
   
-- Используйте [оператор is](../../../../visual-basic/language-reference/operators/is-operator.md) или [IsNot](../../../../visual-basic/language-reference/operators/isnot-operator.md) с двумя переменными в качестве операндов.  
+- Используйте [оператор is](../../../language-reference/operators/is-operator.md) или [IsNot](../../../language-reference/operators/isnot-operator.md) с двумя переменными в качестве операндов.  
   
      [!code-vb[VbVbalrOperators#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#69)]  
   
- Может потребоваться выполнить определенное действие в зависимости от того, ссылаются ли два объекта на один и тот же экземпляр. Предыдущий пример сравнивает `c` элемента управления с активным элементом управления в `f`формы. Если нет активного элемента управления или если он существует, но он не является тем же экземпляром элемента управления, что и `c`, то инструкция `If` завершается ошибкой и процедура возвращается без дальнейшей обработки.  
+ Может потребоваться выполнить определенное действие в зависимости от того, ссылаются ли два объекта на один и тот же экземпляр. Предыдущий пример сравнивает элемент управления с `c` активным элементом управления в форме `f` . Если активный элемент управления отсутствует или имеется, но он не является одним и тем же экземпляром элемента управления `c` , то `If` выполнение инструкции завершается ошибкой и процедура возвращается без дальнейшей обработки.  
   
- Независимо от того, используется ли `Is` или `IsNot`. Один из них может быть проще читать, чем другой в данном выражении.  
+ Независимо от того, используется ли `Is` `IsNot` для вас персональное удобство. Один из них может быть проще читать, чем другой в данном выражении.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Операторы сравнения в Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [Comparison Operators in Visual Basic](comparison-operators.md)

@@ -2,19 +2,19 @@
 title: Файл, указанный в FileName, не является допустимым XML-файлом
 ms.date: 07/20/2015
 ms.assetid: c4c30bf3-e0ad-4bc8-89e0-2c3e49e9793b
-ms.openlocfilehash: 5a54e5e7e7c75bb7d766b1bbda10f401fa8b99af
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: a84042490935e3e7e5a6de2a802d9effd5b4d3d4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65640829"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84358352"
 ---
 # <a name="file-specified-in-filename-is-not-a-valid-xml-file"></a>Файл, указанный в FileName, не является допустимым XML-файлом
 
-Указанное имя файла не представляет допустимый XML-файл. Чтобы задать допустимую структуру и содержимое XML-документа, можно использовать схему DTD, Microsoft XML-Data Reduced (XDR) или языка определения схемы XML. XSD-схемы являются предпочтительным способом указания грамматики XML в .NET Framework.
+Указанное имя файла не представляет допустимый XML-файл. Чтобы задать допустимую структуру и содержимое XML-документа, можно использовать схему DTD, Microsoft XML-Data Reduced (XDR) или языка определения схемы XML. Схемы XSD — предпочтительный способ указания грамматики XML в .NET Framework.
 
 > [!NOTE]
-> В некоторых более ранних версиях Visual Studio **конструктор XML** — это конструктор для типизированных наборов данных и схемы XML. **Конструктор XML** по-прежнему можно использовать для создания и редактирования файлов схемы XML. Тем не менее, в Visual Studio 2012, конструктор для создания и редактирования типизированных наборов данных — **конструктор наборов данных**. Дополнительные сведения см. в разделе [Создание и изменение типизированных наборов DataSet](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/314t4see(v=vs.120)).
+> В некоторых более ранних версиях Visual Studio **конструктор XML** — это конструктор для типизированных наборов данных и схемы XML. **Конструктор XML** по-прежнему можно использовать для создания и редактирования файлов схемы XML. Однако в Visual Studio 2012 конструктор для создания и редактирования типизированных наборов данных — это **Конструктор наборов данных**. Дополнительные сведения см. в разделе [Создание и изменение типизированных наборов данных](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/314t4see(v=vs.120)).
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
@@ -24,7 +24,7 @@ ms.locfileid: "65640829"
 
 - Если XML-файл имеет связанную схему XML, удостоверьтесь, что элементы существуют в определенной структуре и что содержимое отдельных элементов соответствует объявленным типам данных, указанным в схеме.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Xml>
-- [Практическое руководство. Анализ путей к файлам](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [Практическое руководство. Анализ путей к файлам](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
