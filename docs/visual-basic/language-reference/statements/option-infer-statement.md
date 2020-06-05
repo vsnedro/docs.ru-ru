@@ -11,12 +11,12 @@ helpviewer_keywords:
 - declaring variables [Visual Basic], inferred
 - inferred variable declaration
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
-ms.openlocfilehash: 53bc9d41f28f63061db2012395480aa6be7515dd
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 977e492c1c8ec5040c22169d91268c9c2241f6c4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346498"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404360"
 ---
 # <a name="option-infer-statement"></a>Option Infer - оператор
 
@@ -28,14 +28,14 @@ ms.locfileid: "74346498"
 Option Infer { On | Off }
 ```
 
-## <a name="parts"></a>Части
+## <a name="parts"></a>Компоненты
 
 |Термин|Определение|
 |---|---|
 |`On`|Необязательный элемент. Включает локальное определение типов.|
 |`Off`|Необязательный элемент. Отключает локальное определение типов.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Чтобы задать `Option Infer` в файле, введите `Option Infer On` или `Option Infer Off` в начале файла перед всем остальным исходным кодом. Если значение, заданное для `Option Infer` в файле, конфликтует со значением, заданным в среде разработки или в командной строке, приоритет имеет значение в файле.
 
@@ -58,25 +58,25 @@ Option Infer { On | Off }
 
 Определение типов применяется на уровне процедур и не применяется вне процедур в классах, структурах, модулях и интерфейсах.
 
-Дополнительные сведения см. в разделе [определение локального типа](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
+Дополнительные сведения см. в разделе [определение локального типа](../../programming-guide/language-features/variables/local-type-inference.md).
 
 ## <a name="when-an-option-infer-statement-is-not-present"></a>Если оператор Option Infer отсутствует
 
-Если исходный код не содержит инструкцию `Option Infer`, то используется параметр **Option Infer** на [странице Компиляция, конструктор проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) . Если используется компилятор командной строки, используется параметр компилятора [-оптионинфер](../../../visual-basic/reference/command-line-compiler/optioninfer.md) .
+Если исходный код не содержит `Option Infer` инструкцию, то используется параметр **Option Infer** на [странице Компиляция, конструктор проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) . Если используется компилятор командной строки, используется параметр компилятора [-оптионинфер](../../reference/command-line-compiler/optioninfer.md) .
 
 #### <a name="to-set-option-infer-in-the-ide"></a>Чтобы включить Option Infer в среде разработки
 
-1. Выберите проект в **обозревателе решений**. В меню **Проект** выберите пункт **Свойства**.
+1. В **Обозреватель решений**выберите проект. В меню **Проект** выберите пункт **Свойства**.
 
 2. Откройте вкладку **Компиляция**.
 
 3. Задайте значение в поле **параметр Infer** .
 
-При создании нового проекта параметр **Option Infer** на вкладке **Компиляция** имеет значение **Option Infer** в диалоговом окне настройки **VB по умолчанию** . Чтобы открыть диалоговое окно **настройки VB по умолчанию** , в меню **Сервис** выберите пункт **Параметры**. В диалоговом окне **Параметры** разверните узел **Проекты и решения** и выберите пункт **Параметры Visual Basic по умолчанию**. Начальным параметром по умолчанию в **VB по умолчанию** является `On`.
+При создании нового проекта параметр **Option Infer** на вкладке **Компиляция** имеет значение **Option Infer** в диалоговом окне настройки **VB по умолчанию** . Чтобы открыть диалоговое окно **настройки VB по умолчанию** , в меню **Сервис** выберите пункт **Параметры**. В диалоговом окне **Параметры** разверните узел **Проекты и решения** и выберите пункт **Параметры Visual Basic по умолчанию**. Начальным значением по умолчанию в **VB по умолчанию** является `On` .
 
 #### <a name="to-set-option-infer-on-the-command-line"></a>Чтобы включить Option Infer в командной строке
 
-Включите параметр компилятора [-оптионинфер](../../../visual-basic/reference/command-line-compiler/optioninfer.md) в команду **vbc** .
+Включите параметр компилятора [-оптионинфер](../../reference/command-line-compiler/optioninfer.md) в команду **vbc** .
 
 ## <a name="default-data-types-and-values"></a>Типы данных и значения по умолчанию
 
@@ -84,9 +84,9 @@ Option Infer { On | Off }
 
 |Указан тип данных?|Указан инициализатор?|Пример|Результат|
 |---|---|---|---|
-|Нет|Нет|`Dim qty`|Если `Option Strict` отключен (по умолчанию), для переменной устанавливается значение `Nothing`.<br /><br /> Если параметр `Option Strict` включен, возникает ошибка времени при компиляции.|
-|Нет|Да|`Dim qty = 5`|Если параметр `Option Infer` включен (по умолчанию), переменная получает тип данных инициализатора. См. раздел [определение локального типа](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).<br /><br /> Если параметры `Option Infer` и `Option Strict` отключены, переменная получает тип данных `Object`.<br /><br /> Если параметр `Option Infer` отключен, а параметр `Option Strict` включен, возникает ошибка времени компиляции.|
-|Да|Нет|`Dim qty As Integer`|Переменная инициализируется со значением по умолчанию для типа данных. Дополнительные сведения см. в разделе [оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md).|
+|нет|нет|`Dim qty`|Если `Option Strict` отключен (по умолчанию), для переменной устанавливается значение `Nothing`.<br /><br /> Если параметр `Option Strict` включен, возникает ошибка времени при компиляции.|
+|нет|Да|`Dim qty = 5`|Если параметр `Option Infer` включен (по умолчанию), переменная получает тип данных инициализатора. См. раздел [определение локального типа](../../programming-guide/language-features/variables/local-type-inference.md).<br /><br /> Если параметры `Option Infer` и `Option Strict` отключены, переменная получает тип данных `Object`.<br /><br /> Если параметр `Option Infer` отключен, а параметр `Option Strict` включен, возникает ошибка времени компиляции.|
+|Да|нет|`Dim qty As Integer`|Переменная инициализируется со значением по умолчанию для типа данных. Дополнительные сведения см. в разделе [оператор Dim](dim-statement.md).|
 |Да|Да|`Dim qty  As Integer = 5`|Если тип данных инициализатора нельзя преобразовать в указанный тип данных, возникает ошибка времени компиляции.|
 
 ## <a name="example"></a>Пример
@@ -101,13 +101,13 @@ Option Infer { On | Off }
 
 [!code-vb[VbVbalrTypeInference#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#11)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md)
-- [Вывод локального типа](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Оператор Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md)
-- [Оператор Option Explicit](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
-- [Оператор Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Оператор Dim](dim-statement.md)
+- [Вывод локального типа](../../programming-guide/language-features/variables/local-type-inference.md)
+- [Оператор Option Compare](option-compare-statement.md)
+- [Оператор Option Explicit](option-explicit-statement.md)
+- [Оператор Option Strict](option-strict-statement.md)
 - [Страница "Параметры Visual Basic по умолчанию", папка "Проекты", диалоговое окно "Параметры"](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
-- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [-optioninfer](../../reference/command-line-compiler/optioninfer.md)
 - [Упаковка-преобразование и распаковка-преобразование](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

@@ -2,12 +2,12 @@
 title: Практическое руководство. Изменение пространства имен для всего дерева XML
 ms.date: 07/20/2015
 ms.assetid: 1837324b-5cb5-4fa8-95b9-3071efa0f913
-ms.openlocfilehash: 37edb426b106d3fbf90ea06118526abab0a78bf8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 11938b575ed5133d930e585dbe4d744e3168cced
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346929"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84374983"
 ---
 # <a name="how-to-change-the-namespace-for-an-entire-xml-tree-visual-basic"></a>Как изменить пространство имен для всего дерева XML (Visual Basic)
 Иногда необходимо программно изменить пространство имен для элемента или атрибута. В LINQ to XML это делается легко. Можно установить свойство <xref:System.Xml.Linq.XElement.Name%2A?displayProperty=nameWithType>. Свойство <xref:System.Xml.Linq.XAttribute.Name%2A?displayProperty=nameWithType> не может быть установлено, но можно легко скопировать атрибуты в объект <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, заменив существующие атрибуты, а затем добавить новые атрибуты из нового пространства имен.  
@@ -78,4 +78,4 @@ Console.WriteLine(root)
   
 ## <a name="see-also"></a>См. также
 
-- [Изменение деревьев XML (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)
+- [Изменение деревьев XML (LINQ to XML) (Visual Basic)](modifying-xml-trees-linq-to-xml.md)
