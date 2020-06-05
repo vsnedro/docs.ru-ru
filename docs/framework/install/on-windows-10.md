@@ -3,12 +3,12 @@ title: Установка платформы .NET Framework в Windows 10
 description: Сведения об установке платформы .NET Framework в Windows 10 или Windows Server 2016.
 ms.date: 04/18/2019
 ms.custom: updateeachrelease
-ms.openlocfilehash: eed15b9088d6ba46d8f5bc6d16ba779dd6115b0d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1443ae8f8d4e61b0561f4827fafc9ecedd80fccc
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76965975"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144738"
 ---
 # <a name="install-the-net-framework-on-windows-10-and-windows-server-2016-and-later"></a>Установка платформы .NET Framework в Windows 10 и Windows Server 2016 и более поздней версии
 
@@ -25,7 +25,7 @@ ms.locfileid: "76965975"
 - [обновления Windows 10 за май 2019 г.](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
 
 > [!div class="button"]
-> [скачать .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48).
+> [Скачать .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
 [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) можно использовать для запуска приложений, созданных для .NET Framework версий от 4.0 до 4.7.2.
 
@@ -36,7 +36,7 @@ ms.locfileid: "76965975"
 - Windows 10 Fall Creators Update (версия 1709)
 - Обновление Windows 10 Creators Update (версия 1703)
 - Юбилейное обновление Windows 10 Anniversary Update (версия 1607)
-- Windows Server 2019
+- Windows Server 2019
 - Windows Server, версия 1809
 - Windows Server, версия 1803
 - Windows Server 2016
@@ -76,8 +76,9 @@ ms.locfileid: "76965975"
 
 Вы можете [обратиться за помощью в корпорацию Майкрософт](mailto:dotnet-install-help@service.microsoft.com?subject=Install-Help), если не можете определить правильную версию установленной платформы .NET Framework.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Скачиваемые файлы .NET](https://dotnet.microsoft.com/download)
 - [Устранение неполадок с заблокированными установками и удалениями .NET Framework](troubleshoot-blocked-installations-and-uninstallations.md)
 - [Установка .NET Framework для разработчиков](guide-for-developers.md)
+- [Определение установленных версий платформы .NET Framework](../migration-guide/how-to-determine-which-versions-are-installed.md)

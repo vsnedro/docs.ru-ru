@@ -1,15 +1,15 @@
 ---
-title: Интегрированная проверка подлинности Windows с расширенной защитой
+title: Встроенная аутентификация Windows с расширенной защитой
 ms.date: 03/30/2017
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
-ms.openlocfilehash: c4afc008f600c9be0040f8d7623f5e20623dfd7d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d69471f4be0f102381dee4fc5037e8f8b0c625c3
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74444242"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144855"
 ---
-# <a name="integrated-windows-authentication-with-extended-protection"></a>Интегрированная проверка подлинности Windows с расширенной защитой
+# <a name="integrated-windows-authentication-with-extended-protection"></a>Встроенная аутентификация Windows с расширенной защитой
 Были добавлены улучшения, которые влияют на обработку встроенной проверки подлинности Windows в <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Security.SslStream>, <xref:System.Net.Security.NegotiateStream> и связанных классах в <xref:System.Net> и соответствующих пространствах имен. Была добавлена поддержка расширенной защиты для повышения безопасности.  
   
  Эти изменения могут влиять на приложения, которые используют эти классы для создания веб-запросов и получения ответов, в которых используется встроенная проверка подлинности Windows. Это изменение также может повлиять на веб-серверы и клиентские приложения, в которых используется встроенная проверка подлинности Windows.  
@@ -84,7 +84,7 @@ ms.locfileid: "74444242"
   
  Пространство имен <xref:System.Security.Authentication.ExtendedProtection.Configuration> обеспечивает поддержку настройки проверки подлинности для приложений с использованием расширенной защиты.  
   
- В существующем пространстве имен <xref:System.Net> были изменены некоторые функции для поддержки расширенной защиты. В число этих изменений входят следующие.  
+ В существующем пространстве имен <xref:System.Net> были изменены некоторые функции для поддержки расширенной защиты. К этим изменениям относятся следующие:  
   
 - В пространство имен <xref:System.Net> добавлен новый класс <xref:System.Net.TransportContext>, который представляет контекст транспорта.  
   
@@ -96,7 +96,7 @@ ms.locfileid: "74444242"
   
 - Свойство <xref:System.Net.Mail.SmtpClient.TargetName%2A> в классе <xref:System.Net.Mail.SmtpClient>, которое представляет имя участника-службы, используемое для проверки подлинности при использовании расширенной защиты для клиентских приложений SMTP.  
   
- В существующем пространстве имен <xref:System.Net.Security> были изменены некоторые функции для поддержки расширенной защиты. В число этих изменений входят следующие.  
+ В существующем пространстве имен <xref:System.Net.Security> были изменены некоторые функции для поддержки расширенной защиты. К этим изменениям относятся следующие:  
   
 - В класс <xref:System.Net.Security.NegotiateStream> добавлены новые перегрузки методов <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> и <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A>, которые позволяют передавать маркер привязки канала для поддержки расширенной защиты клиентских приложений.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "74444242"
 ## <a name="extended-protection-for-server-applications"></a>Расширенная защита для серверных приложений  
  <xref:System.Net.HttpListener> автоматически предоставляет механизмы для проверки привязок службы при проверке подлинности HTTP.  
   
- Наиболее безопасный сценарий — включение расширенной защиты для префиксов HTTPS://. В этом случае установите <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> в значение <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>, <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> — в значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> или <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> и <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> — в значение <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected>. Значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> переводит <xref:System.Net.HttpListener> в частично усиленный режим, а <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> — в полностью усиленный режим.  
+ Наиболее безопасный сценарий — включение расширенной защиты для префиксов `HTTPS://`. В этом случае установите <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> в значение <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>, <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> — в значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> или <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> и <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> — в значение <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected>. Значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> переводит <xref:System.Net.HttpListener> в частично усиленный режим, а <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> — в полностью усиленный режим.  
   
  В этой конфигурации при выполнении запроса к серверу с помощью внешнего безопасного канала у внешнего канала запрашивается привязка канала. Эта привязка канала передается вызовам проверки подлинности SSPI, которые проверяют соответствие переданной привязки и привязки канала в BLOB-объекте проверки подлинности. Существует три возможных результата:  
   
@@ -130,7 +130,7 @@ ms.locfileid: "74444242"
   
  Если приложение выполняет собственные вызовы SSPI для проверки подлинности на основе BLOB-объектов, передаваемых в тексте HTTP-запроса, и хочет поддерживать привязки каналов, приложение должно получить ожидаемую привязку канала из внешнего безопасного канала с помощью <xref:System.Net.HttpListener> и передать ее собственной функции Win32 [AcceptSecurityContext](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext). Для этого используйте свойство <xref:System.Net.HttpListenerRequest.TransportContext%2A> и вызовите метод <xref:System.Net.TransportContext.GetChannelBinding%2A> для получения маркера привязки канала. Поддерживаются только привязки конечной точки. Если указано что-то иное, кроме <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint>, будет выдано исключение <xref:System.NotSupportedException>. Если базовая операционная система поддерживает привязки каналов, метод <xref:System.Net.TransportContext.GetChannelBinding%2A> будет возвращать объект <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding><xref:System.Runtime.InteropServices.SafeHandle>, в котором содержится указатель на привязку канала, который можно передать функции [AcceptSecurityContext](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) в качестве элемента pvBuffer структуры SecBuffer, передаваемой в параметре `pInput`. Свойство <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding.Size%2A> содержит длину привязки канала в байтах. Если базовая операционная система не поддерживает привязки каналов, функция возвращает `null`.  
   
- Другой возможный сценарий — включение расширенной защиты для префиксов HTTP://, когда прокси не используются. В этом случае установите <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> в значение <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>, <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> — в значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> или <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> и <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> — в значение <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected>. Значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> переводит <xref:System.Net.HttpListener> в частично усиленный режим, а <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> — в полностью усиленный режим.  
+ Другой возможный сценарий — включение расширенной защиты для префиксов `HTTP://`, когда прокси не используются. В этом случае установите <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> в значение <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>, <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> — в значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> или <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> и <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> — в значение <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected>. Значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> переводит <xref:System.Net.HttpListener> в частично усиленный режим, а <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> — в полностью усиленный режим.  
   
  По умолчанию список допустимых имен служб создается на основе префиксов, которые были зарегистрированы с <xref:System.Net.HttpListener>. Для просмотра списка по умолчанию можно использовать свойство <xref:System.Net.HttpListener.DefaultServiceNames%2A>. Если этот список не является исчерпывающим, приложение может указать пользовательскую коллекцию имен служб в конструкторе класса <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>, и эта коллекция будет использоваться вместо списка имен служб по умолчанию.  
   
@@ -148,7 +148,7 @@ ms.locfileid: "74444242"
   
  Эти функции расширенной защиты также могут использоваться серверными приложениями для проверки подлинности с другими типами запросов, а также при использовании доверенного прокси.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.Authentication.ExtendedProtection>
 - <xref:System.Security.Authentication.ExtendedProtection.Configuration>

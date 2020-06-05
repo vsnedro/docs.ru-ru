@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - command-line arguments [C#]
 ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26
-ms.openlocfilehash: d6775263e6f1afb227aa263b01d60f5181da74f3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c203716d9bb8298c934a999a496793c294949ddb
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77093514"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84007758"
 ---
 # <a name="command-line-arguments-c-programming-guide"></a>Аргументы командной строки (Руководство по программированию на C#)
 
@@ -25,6 +25,9 @@ ms.locfileid: "77093514"
 Параметр метода `Main` — это массив <xref:System.String>, представляющий аргументы командной строки. Как правило, определить, существуют ли аргументы, можно, проверив свойство `Length`, например:
 
 [!code-csharp[csProgGuideMain#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#4)]
+
+> [!TIP]
+> Массив `args` не может иметь значение NULL. Поэтому доступ к свойству `Length` можно получить без проверки значения NULL.
 
 Строковые аргументы также можно преобразовать в числовые типы с помощью класса <xref:System.Convert> или метода `Parse`. Например, следующая инструкция преобразует `string` в число `long` с помощью метода <xref:System.Int64.Parse%2A>:
 
@@ -44,7 +47,7 @@ long num = long.Parse(args[0]);
 long num = Convert.ToInt64(s);
 ```
 
-Дополнительные сведения см. в разделе <xref:System.Int64.Parse%2A> и <xref:System.Convert>.
+Дополнительные сведения см. в разделах <xref:System.Int64.Parse%2A> и <xref:System.Convert>.
 
 ## <a name="example"></a>Пример
 
@@ -73,7 +76,7 @@ long num = Convert.ToInt64(s);
 > [!NOTE]
 > При выполнении приложения в Visual Studio аргументы командной строки можно указать на [странице "Отладка" в конструкторе проектов](/visualstudio/ide/reference/debug-page-project-designer).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Environment?displayProperty=nameWithType>
 - [Руководство по программированию на C#](../index.md)

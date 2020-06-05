@@ -3,12 +3,12 @@ title: Начало работы с синтаксическими преобр�
 description: Введение в обходы, отправка запросов и прохождение деревьев синтаксиса.
 ms.date: 06/01/2018
 ms.custom: mvc
-ms.openlocfilehash: 232fe5fcba35f152dbc3f00b2f2c092b5df0dd35
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 5879dfd6ed0a5f6465829eec496d10cfcfd07362
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794797"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202126"
 ---
 # <a name="get-started-with-syntax-transformation"></a>Начало работы с синтаксическими преобразованиями
 
@@ -34,7 +34,7 @@ ms.locfileid: "82794797"
 
 Этот проект использует методы класса <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> для создания объекта <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType>, представляющего пространство имен `System.Collections.Generic`.
 
-Добавьте следующую директиву using в начало файла `Program.cs`, чтобы импортировать фабричные методы класса <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory> и методы <xref:System.Console>. Это позволит применять их без полного описания:
+Добавьте следующую директиву в начало `Program.cs`.
 
 [!code-csharp[import the SyntaxFactory class](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#StaticUsings "import the Syntax Factory class and the System.Console class")]
 

@@ -1,142 +1,124 @@
 ---
-title: Начало работы с C# и Visual Studio Code
-description: Узнайте, как создать и отладить в Visual Studio Code свое первое приложение .NET Core на языке C#.
-author: kendrahavens
-ms.date: 04/23/2020
-ms.openlocfilehash: 3dd7c4602fbb27e29bad977f8d3df34b6061bc23
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+title: Создание консольного приложения с помощью .NET Core в Visual Studio Code
+description: Узнайте, как создать консольное приложение .NET Core с помощью Visual Studio Code и .NET Core CLI.
+ms.date: 05/22/2020
+ms.openlocfilehash: 673c4a639a2cab26261b7cdafd5d8e20acfafb94
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82506914"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84201704"
 ---
-# <a name="get-started-with-c-and-visual-studio-code"></a>Начало работы с C# и Visual Studio Code
+# <a name="tutorial-create-a-console-application-with-net-core-using-visual-studio-code"></a>Учебник. Создание консольного приложения с помощью .NET Core в Visual Studio Code
 
-.NET Core предcтавляет собой быструю модульную платформу для создания приложений, работающих на ОС Windows, Linux и macOS. Visual Studio Code с расширением C# позволяет эффективно работать с кодом, а также обеспечивает полную поддержку IntelliSense (интеллектуальное завершение кода) и отладки для языка C#.
+В этом учебнике показано, как создать и запустить консольное приложение .NET Core с помощью Visual Studio Code и .NET Core CLI. Задачи проекта, такие как создание, компиляция и запуск проекта, выполняются с помощью интерфейса командной строки, поэтому вы можете следовать этому учебнику, используя другой редактор кода, и выполнять команды в терминале при желании.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-1. Установите [Visual Studio Code](https://code.visualstudio.com/).
-2. Установите [пакета SDK для .NET Core](https://dotnet.microsoft.com/download).
-3. Установите [расширение C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) для Visual Studio Code. См. дополнительные сведения об [установке расширений Visual Studio Code из Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+1. Установленная платформа [Visual Studio Code](https://code.visualstudio.com/) с [расширением C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). См. сведения об [установке расширений Visual Studio Code из Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+2. [Пакет SDK для .NET Core 3.1 или более поздней версии](https://dotnet.microsoft.com/download)
 
-## <a name="hello-world"></a>Hello World
+## <a name="create-the-app"></a>Создание приложения
 
-Начните с создания простой программы Hello World для .NET Core:
+1. Откройте Visual Studio Code.
 
-1. Откройте проект.
+1. Создайте проект.
 
-    - Откройте Visual Studio Code.
-    - В главном меню выберите **Файл** > **Открыть папку**.
-    - Создайте папку с именем *HelloWorld* и щелкните **Выбрать папку**. Имя папки по умолчанию преобразуется в имя проекта и имя пространства имен. Вы добавите код позже в этом учебнике. Предполагается, что пространство имен проекта — `HelloWorld`.
+   1. В главном меню выберите **Файл** > **Открыть папку**/**Открыть**, создайте папку *HelloWorld* и нажмите **Выбрать папку**/**Открыть**.
 
-1. Инициализируйте проект C#.
+      Имя папки по умолчанию преобразуется в имя проекта и имя пространства имен. Вы добавите код позже в этом учебнике. Предполагается, что пространство имен проекта — `HelloWorld`.
 
-    - Откройте в Visual Studio Code терминал, выбрав **Просмотр** > **Терминал** в главном меню.
-    - В окне терминала введите `dotnet new console`.
+   1. Откройте **терминал** в Visual Studio Code, выбрав в основном меню пункт **Вид** > **Терминал**.
 
-      Эта команда создает в выбранной папке файл *Program.cs* с уже готовой простой программой Hello World, а также файл проекта C# с именем *HelloWorld.csproj*.
+      Откроется окно **Терминал** с командной строкой в папке *HelloWorld*.
 
-      ![Команда dotnet new](media/with-visual-studio-code/dotnet-new-command.png)
+   1. В **окне терминала** введите следующую команду:
 
-1. Запустите программу Hello World.
+      ```dotnetcli
+      dotnet new console
+      ```
 
-    - В окне терминала введите `dotnet run`.
+Шаблон консольного приложения для .NET Core определяет класс `Program` с одним методом `Main`, который принимает в качестве аргумента массив <xref:System.String>. В файле *Program.cs* находится следующий код:
 
-      ![Команда dotnet run](media/with-visual-studio-code/dotnet-run-command.png)
+```csharp
+using System;
 
-## <a name="debug"></a>Отладка
-
-1. Откройте файл *Program.cs*, щелкнув его. Когда вы в первый раз открываете файл C# в Visual Studio Code, в редакторе загружается [OmniSharp](https://www.omnisharp.net/).
-
-    ![Откройте файл Program.cs](media/with-visual-studio-code/open-program-cs.png)
-
-1. Visual Studio Code предлагает добавить недостающие ресурсы для сборки и отладки приложения. Выберите ответ **Да**.
-
-    ![Предупреждение о недостающих ресурсах](media/with-visual-studio-code/missing-assets.png)
-
-1. Чтобы открыть окно отладки, щелкните значок "Отладка" в меню слева.
-
-    ![Откройте вкладку "Отладка" в Visual Studio Code](media/with-visual-studio-code/open-debug-tab.png)
-
-1. Найдите зеленую стрелку в верхней части панели. Убедитесь, что в раскрывающемся списке рядом с ней выбран вариант **Запуск .NET Core (консоль)** .
-
-    ![Выбор .NET Core в Visual Studio Code](media/with-visual-studio-code/select-net-core.png)
-
-1. Добавьте в проект точку останова, щелкнув **поле редактора** (пустое пространство слева от номеров строк) в строке 9, или переместите курсор текста в строку 9 в редакторе и нажмите клавишу <kbd>F9</kbd>.
-
-    ![Установка точки останова](media/with-visual-studio-code/set-breakpoint-vs-code.png)
-
-1. Чтобы начать отладку, нажмите клавишу <kbd>F5</kbd> или щелкните зеленую стрелку. Отладчик останавливает выполнение программы, когда достигнет точки останова, которую вы только что установили.
-    - Во время отладки вы можете просматривать локальные переменные в верхней левой области или в консоли отладки.
-
-1. Выберите синюю стрелку в верхней части, чтобы продолжить отладку, или выберите красный квадрат в верхней части, чтобы остановить процесс.
-
-    ![Запуск и отладка в Visual Studio Code](media/with-visual-studio-code/run-debug-vs-code.png)
-
-> [!TIP]
-> Дополнительные сведения и советы по отладке .NET Core в Visual Studio Code с помощью OmniSharp см. в разделе [Инструкции по настройке отладчика .NET Core](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
-
-## <a name="add-a-class"></a>Добавление класса
-
-1. Чтобы добавить новый класс, щелкните правой кнопкой мыши в обозревателе VS Code под *Program.cs* и выберите **Новый файл**. Так вы добавите новый файл в папку, открытую в VSCode.
-1. Назовите файл *MyClass.cs*. Необходимо сохранить его с расширением `.cs`, чтобы он распознавался как файл С#.
-1. Добавьте приведенный ниже код для создания класса.
-
-    ``` csharp
-    using System;
-
-    namespace HelloWorld
+namespace HelloWorld
+{
+    class Program
     {
-        public class MyClass
+        static void Main(string[] args)
         {
-            public string ReturnMessage()
-            {
-                return "Happy coding!";
-            }
+            Console.WriteLine("Hello World!");
         }
     }
-    ```
+}
+```
 
-1. Вызовите новый класс из метода `Main`, заменив код в *Program.cs* следующим кодом:
+`Main` — точка входа в приложение. Это метод, который автоматически вызывается средой выполнения при запуске приложения. Все аргументы, предоставленные в командной строке при запуске приложения, доступны через массив *args*.
 
-    ```csharp
-    using System;
+Шаблон создает простое приложение, которое вызывает метод <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> для вывода сообщения "Hello World!" в окне консоли.
 
-    namespace HelloWorld
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                var c1 = new MyClass();
-                Console.WriteLine($"Hello World! {c1.ReturnMessage()}");
-            }
-        }
-    }
-    ```
+## <a name="run-the-app"></a>Запуск приложения
+
+Выполните следующие команды в **окне терминала**:
+
+```dotnetcli
+dotnet run
+```
+
+В программе отобразится сообщение "Hello World!", после чего она завершится.
+
+![Команда dotnet run](media/with-visual-studio-code/dotnet-run-command.png)
+
+## <a name="enhance-the-app"></a>Улучшение приложения
+
+Давайте расширим приложение. Теперь у пользователя будет запрашиваться имя, которое затем будет отображаться с датой и временем.
+
+1. Откройте файл *Program.cs*, щелкнув его.
+
+   Когда вы в первый раз открываете файл C# в Visual Studio Code, в редакторе загружается [OmniSharp](https://www.omnisharp.net/).
+
+   ![Откройте файл Program.cs](media/with-visual-studio-code/open-program-cs.png)
+
+1. Когда в Visual Studio Code будет предложено добавить недостающие ресурсы для сборки и отладки приложения, выберите **Да**.
+
+   ![Предупреждение о недостающих ресурсах](media/with-visual-studio-code/missing-assets.png)
+
+1. Замените содержимое метода `Main` в файле *Program.cs* (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:
+
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="Snippet1":::
+
+   Теперь код выдает строку "What is your name?" (Как вас зовут?) в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу **ВВОД**. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Наконец, оно отображает эти значения в окне консоли.
+
+   `\n` — это символ новой строки.
+
+   Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке. Значение выражения вставляется в строку вместо выражения. Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).
 
 1. Сохраните изменения.
 
-1. Запустите программу еще раз.
+   > [!IMPORTANT]
+   > В Visual Studio Code необходимо явно сохранить изменения. В отличие от Visual Studio, изменения файлов не сохраняются автоматически при сборке и запуске приложения.
 
-    ```dotnetcli
-    dotnet run
-    ```
+1. Запустите программу еще раз:
 
-    Должно отобразиться новое сообщение с добавленной строкой.
+   ```dotnetcli
+   dotnet run
+   ```
 
-    ```console
-    Hello World! Happy coding!
-    ```
+1. В ответ на приглашение в командной строке введите имя и нажмите клавишу **ВВОД**.
 
-## <a name="faq"></a>часто задаваемые вопросы
+   :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Окно терминала с измененными выходными данными программы":::
 
-### <a name="im-missing-required-assets-to-build-and-debug-c-in-visual-studio-code-my-debugger-says-no-configuration"></a>Мне не хватает ресурсов для выполнения сборки и отладки C# в Visual Studio Code. Отладчик выдает сообщение: "Конфигурация отсутствует".
+1. Нажмите любую клавишу для выхода из программы.
 
-Ресурсы для сборки и отладки можно создать с помощью расширения Visual Studio Code C#. Visual Studio Code предложит создать эти ресурсы при первом открытии проекта C#. Если вы не создали ресурсы, вы все равно сможете выполнить эту команду. Для этого откройте палитру команд (**Вид > Палитра команд**) и введите ">.NET: Generate Assets for Build and Debug" (.NET: создать ресурсы для сборки и отладки). После этого будут созданы необходимые файлы конфигурации *.vscode*, *launch.json* и *tasks.json*.
-
-## <a name="see-also"></a>См. также
+## <a name="additional-resources"></a>Дополнительные ресурсы
 
 - [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview) (Настройка Visual Studio Code)
-- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) (Отладка в Visual Studio Code)
+
+## <a name="next-steps"></a>Следующие шаги
+
+В этом учебнике вы создали приложение .NET Core. В следующем учебнике описывается отладка приложения.
+
+> [!div class="nextstepaction"]
+> [Отладка консольного приложения .NET Core с помощью Visual Studio Code](debugging-with-visual-studio-code.md)

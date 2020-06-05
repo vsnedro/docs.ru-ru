@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - LINQ [C#], features supporting LINQ
 ms.assetid: 524b0078-ebfd-45a7-b390-f2ceb9d84797
-ms.openlocfilehash: 9fc8adaa49d02f8b69c2db6e94a28b9fab36b3b0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 32ba8f5e60b3ed2efd813a8ae32e5f4009eb790d
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635799"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202409"
 ---
 # <a name="c-features-that-support-linq"></a>Возможности C#, поддерживающие LINQ
 
@@ -40,9 +40,9 @@ var query = from str in stringArray
             select str;
 ```
 
-Переменные, объявленные как `var`, настолько же строго типизированы, как и переменные, тип которых вы задаете явно. Использование `var` делает возможным создание анонимных типов, однако его можно использовать только для локальных переменных. Массивы также могут быть объявлены путем неявной типизации.
+Переменные, объявленные как `var`, так же строго типизированы, как и переменные, тип которых задается явно. Использование `var` делает возможным создание анонимных типов, однако его можно использовать только для локальных переменных. Массивы также могут быть объявлены путем неявной типизации.
 
-Дополнительные сведения см. в разделе [Неявно типизированные локальные переменные](../../classes-and-structs/implicitly-typed-local-variables.md).
+Дополнительные сведения см. в статье [Неявно типизированные локальные переменные (руководство по программированию на C#)](../../classes-and-structs/implicitly-typed-local-variables.md).
 
 ## <a name="object-and-collection-initializers"></a>Инициализаторы объектов и коллекций
 
@@ -86,7 +86,7 @@ select new {name = cust.Name, phone = cust.Phone};
 
 Метод расширения представляет собой статический метод, который может быть связан с типом, чтобы его можно было вызывать, как если бы он являлся методом экземпляра типа. Эта возможность позволяет, по сути, "добавлять" новые методы в существующие типы, фактически не изменяя их. Стандартные операторы запросов — это набор методов расширения, предоставляющий функции запросов LINQ для любого типа, реализующего <xref:System.Collections.Generic.IEnumerable%601>.
 
-Дополнительные сведения см. в статье [Методы расширения](../../classes-and-structs/extension-methods.md).
+Дополнительные сведения см. в разделе [Методы расширения](../../classes-and-structs/extension-methods.md).
 
 ## <a name="lambda-expressions"></a>Лямбда-выражения
 
@@ -100,6 +100,6 @@ select new {name = cust.Name, phone = cust.Phone};
 
 - [Деревья выражений (C#)](../expression-trees/index.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ (C#)](./index.md)

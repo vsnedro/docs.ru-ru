@@ -1,17 +1,21 @@
 ---
 title: Миграция из Newtonsoft.Json в System.Text.Json — .NET
-author: ''
-ms.author: ''
+author: tdykstra
+ms.author: tdykstra
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
-ms.date: ''
-helpviewer_keywords: []
+ms.date: 01/10/2020
+helpviewer_keywords:
+- JSON serialization
+- serializing objects
+- serialization
+- objects, serializing
 ms.openlocfilehash: fe370b34d311816a815f3b2d419751ac7871f013
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
+ms.lasthandoff: 05/29/2020
 ms.locfileid: "83703578"
 ---
 # <a name="how-to-migrate-from-newtonsoftjson-to-systemtextjson"></a>Миграция из Newtonsoft.Json в System.Text.Json
@@ -39,339 +43,43 @@ ms.locfileid: "83703578"
 * Не поддерживается, обходной путь нецелесообразен или невозможен. Если вы используете эти функции `Newtonsoft.Json`, миграция будет невозможна без существенных изменений.
 
 | Функция Newtonsoft.Json                               | Эквивалент System.Text.Json |
-|---
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
-----------------------------|--- title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: "Миграция из Newtonsoft.Json в System.Text.Json — .NET" author: ms.author: no-loc:
-- 'System.Text.Json'
-- "Newtonsoft.Json" ms.date: helpviewer_keywords:
-- 
-- 
-- 
-- 
-
----------------| | Десериализация без учета регистра по умолчанию           | ✔️ [Глобальный параметр PropertyNameCaseInsensitive](#case-insensitive-deserialization) | | Имена свойств в "верблюжьем" стиле                             | ✔️ [Глобальный параметр PropertyNamingPolicy](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) | | Минимальное экранирование символов                            | ✔️ [Строгое экранирование символов, возможность настройки](#minimal-character-escaping) | | Глобальный параметр `NullValueHandling.Ignore`             | ✔️ [Глобальный параметр IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) | | Разрешить комментарии                                        | ✔️ [Глобальный параметр ReadCommentHandling](#comments) | | Разрешить конечные запятые                                 | ✔️ [Глобальный параметр AllowTrailingCommas](#trailing-commas) | | Регистрация пользовательского преобразователя                         | ✔️ [Различие порядка приоритета](#converter-registration-precedence) | | Отсутствие максимальной глубины по умолчанию                           | ✔️ [Максимальная глубина по умолчанию 64, возможность настройки](#maximum-depth) | | Поддержка широкого диапазона типов                    | ⚠️ [Некоторые типы требуют пользовательских преобразователей](#types-without-built-in-support) | | Десериализация строк в виде чисел                        | ⚠️ [Не поддерживается, обходное решение, пример](#quoted-numbers) | | Десериализация `Dictionary` с ключом, не являющимся строкой          | ⚠️ [Не поддерживается, обходное решение, пример](#dictionary-with-non-string-key) | | Полиморфная сериализация                             | ⚠️ [Не поддерживается, обходное решение, пример](#polymorphic-serialization) | | Полиморфная десериализация                           | ⚠️ [Не поддерживается, обходное решение, пример](#polymorphic-deserialization) | | Десериализация выводимого типа в свойства `object`       | ⚠️ [Не поддерживается, обходное решение, пример](#deserialization-of-object-properties) | | Десериализация литерала JSON `null` в типы значений, не допускающие значения NULL | ⚠️ [Не поддерживается, обходное решение, пример](#deserialize-null-to-non-nullable-type) | | Десериализация в неизменяемые классы и структуры          | ⚠️ [Не поддерживается, обходное решение, пример](#deserialize-to-immutable-classes-and-structs) | | Атрибут `[JsonConstructor]`                          | ⚠️ [Не поддерживается, обходное решение, пример](#specify-constructor-to-use) | | Параметр `Required` для атрибута `[JsonProperty]`         | ⚠️ [Не поддерживается, обходное решение, пример](#required-properties) | | Параметр `NullValueHandling` для атрибута `[JsonProperty]` | ⚠️ [Не поддерживается, обходное решение, пример](#conditionally-ignore-a-property)  | | Параметр `DefaultValueHandling` для атрибута `[JsonProperty]` | ⚠️ [Не поддерживается, обходное решение, пример](#conditionally-ignore-a-property)  | | Глобальный параметр `DefaultValueHandling`                  | ⚠️ [Не поддерживается, обходное решение, пример](#conditionally-ignore-a-property) | | `DefaultContractResolver` для исключения свойств       | ⚠️ [Не поддерживается, обходное решение, пример](#conditionally-ignore-a-property) | | Параметры `DateTimeZoneHandling`, `DateFormatString`   | ⚠️ [Не поддерживается, обходное решение, пример](#specify-date-format) | | Обратные вызовы                                             | ⚠️ [Не поддерживается, обходное решение, пример](#callbacks) | | Поддержка открытых и закрытых полей              | ⚠️ [Не поддерживается, обходное решение](#public-and-non-public-fields) | | Поддержка внутренних и частных методов задания и получения | ⚠️ [Не поддерживается, обходное решение](#internal-and-private-property-setters-and-getters) | | Метод `JsonConvert.PopulateObject`                    | ⚠️ [Не поддерживается, обходное решение](#populate-existing-objects) | | Глобальный параметр `ObjectCreationHandling`               | ⚠️ [Не поддерживается, обходное решение](#reuse-rather-than-replace-properties) | | Добавление в коллекции без методов задания                    | ⚠️ [Не поддерживается, обходное решение](#add-to-collections-without-setters) | | Глобальный параметр `PreserveReferencesHandling`           | ❌ [Не поддерживается](#preserve-object-references-and-handle-loops) | | Глобальный параметр `ReferenceLoopHandling`                | ❌ [Не поддерживается](#preserve-object-references-and-handle-loops) | | Поддержка атрибутов `System.Runtime.Serialization` | ❌ [Не поддерживается](#systemruntimeserialization-attributes) | | Глобальный параметр `MissingMemberHandling`                 | ❌ [Не поддерживается](#missingmemberhandling) | | Разрешить имена свойств без кавычек                   | ❌ [Не поддерживается](#json-strings-property-names-and-string-values) | | Разрешить одинарные кавычки для строковых значений              | ❌ [Не поддерживается](#json-strings-property-names-and-string-values) | | Разрешить нестроковые значения JSON для строковых свойств    | ❌ [Не поддерживается](#non-string-values-for-string-properties) |
+|-------------------------------------------------------|-----------------------------|
+| Десериализация без учета регистра по умолчанию           | ✔️ [Глобальный параметр PropertyNameCaseInsensitive](#case-insensitive-deserialization) |
+| Имена свойств в "верблюжьем" стиле                             | ✔️ [Глобальный параметр PropertyNamingPolicy](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) |
+| Минимальное экранирование символов                            | ✔️ [Строгое экранирование символов, возможность настройки](#minimal-character-escaping) |
+| Глобальный параметр `NullValueHandling.Ignore`             | ✔️ [Глобальный параметр IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) |
+| Возможность комментариев                                        | ✔️ [Глобальный параметр ReadCommentHandling](#comments) |
+| Возможность конечных запятых                                 | ✔️ [Глобальный параметр AllowTrailingCommas](#trailing-commas) |
+| Регистрация пользовательского преобразователя                         | ✔️ [Очередность применения различается](#converter-registration-precedence) |
+| По умолчанию отсутствует максимальная глубина                           | ✔️ [Максимальная глубина по умолчанию —64, настраиваемая](#maximum-depth) |
+| Поддержка широкого спектра типов                    | ⚠️ [Для некоторых типов требуются пользовательские преобразователи](#types-without-built-in-support) |
+| Десериализация строк как чисел                        | ⚠️ [Не поддерживается, существует обходной путь, пример](#quoted-numbers) |
+| Десериализация `Dictionary` с ключом, не являющимся строкой          | ⚠️ [Не поддерживается, существует обходной путь, пример](#dictionary-with-non-string-key) |
+| Полиморфная сериализация                             | ⚠️ [Не поддерживается, существует обходной путь, пример](#polymorphic-serialization) |
+| Полиморфная десериализация                           | ⚠️ [Не поддерживается, существует обходной путь, пример](#polymorphic-deserialization) |
+| Десериализация выводимого типа в свойства `object`      | ⚠️ [Не поддерживается, существует обходной путь, пример](#deserialization-of-object-properties) |
+| Десериализация литерала JSON `null` в типы значений, не допускающие значения NULL | ⚠️ [Не поддерживается, существует обходной путь, пример](#deserialize-null-to-non-nullable-type) |
+| Десериализация в неизменяемые классы и структуры          | ⚠️ [Не поддерживается, существует обходной путь, пример](#deserialize-to-immutable-classes-and-structs) |
+| Атрибут `[JsonConstructor]`                         | ⚠️ [Не поддерживается, существует обходной путь, пример](#specify-constructor-to-use) |
+| Установка `Required` для атрибута `[JsonProperty]`        | ⚠️ [Не поддерживается, существует обходной путь, пример](#required-properties) |
+| Установка `NullValueHandling` для атрибута `[JsonProperty]` | ⚠️ [Не поддерживается, существует обходной путь, пример](#conditionally-ignore-a-property)  |
+| Установка `DefaultValueHandling` для атрибута `[JsonProperty]` | ⚠️ [Не поддерживается, существует обходной путь, пример](#conditionally-ignore-a-property)  |
+| Глобальный параметр `DefaultValueHandling`                 | ⚠️ [Не поддерживается, существует обходной путь, пример](#conditionally-ignore-a-property) |
+| `DefaultContractResolver` для исключения свойств       | ⚠️ [Не поддерживается, существует обходной путь, пример](#conditionally-ignore-a-property) |
+| Параметры `DateTimeZoneHandling`, `DateFormatString`   | ⚠️ [Не поддерживается, существует обходной путь, пример](#specify-date-format) |
+| Обратные вызовы                                             | ⚠️ [Не поддерживается, существует обходной путь, пример](#callbacks) |
+| Поддержка открытых и не открытых полей              | ⚠️ [Не поддерживается, существует обходной путь, пример](#public-and-non-public-fields) |
+| Поддержка методов задания и получения для внутренних и закрытых свойств | ⚠️ [Не поддерживается, существует обходной путь, пример](#internal-and-private-property-setters-and-getters) |
+| Метод `JsonConvert.PopulateObject`                   | ⚠️ [Не поддерживается, существует обходной путь, пример](#populate-existing-objects) |
+| Глобальный параметр `ObjectCreationHandling`               | ⚠️ [Не поддерживается, существует обходной путь, пример](#reuse-rather-than-replace-properties) |
+| Добавление в коллекции без методов задания                    | ⚠️ [Не поддерживается, существует обходной путь, пример](#add-to-collections-without-setters) |
+| Глобальный параметр `PreserveReferencesHandling`           | ❌ [Не поддерживается](#preserve-object-references-and-handle-loops) |
+| Глобальный параметр `ReferenceLoopHandling`                | ❌ [Не поддерживается](#preserve-object-references-and-handle-loops) |
+| Поддержка атрибутов `System.Runtime.Serialization` | ❌ [Не поддерживается](#systemruntimeserialization-attributes) |
+| Глобальный параметр `MissingMemberHandling`                | ❌ [Не поддерживается](#missingmemberhandling) |
+| Возможность имен свойств без кавычек                   | ❌ [Не поддерживается](#json-strings-property-names-and-string-values) |
+| Возможность одиночных кавычек вокруг строковых значений              | ❌ [Не поддерживается](#json-strings-property-names-and-string-values) |
+| Возможность нестроковых значений JSON для строковых свойств    | ❌ [Не поддерживается](#non-string-values-for-string-properties) |
 
 Это неполный список функций `Newtonsoft.Json`. В список входят многие сценарии, которые были запрошены в [проблемах GitHub](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) или записях [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json). Если вы реализуете обходной путь для одного из перечисленных здесь сценариев, для которого в настоящее время нет примера кода, и если вы хотите поделиться своим решением, нажмите **Эта страница** в разделе **Отзывы** (в нижней части этой страницы). Это позволит создать проблему в репозитории GitHub в этой документации и указать ее в разделе **Отзывы** на этой странице.
 
@@ -796,7 +504,7 @@ public JsonElement ReturnFileName(JsonElement source)
 
 ## <a name="utf8jsonreader-compared-to-jsontextreader"></a>Сравнение Utf8JsonReader и JsonTextReader
 
-<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> — это последовательный модуль чтения текста JSON в кодировке UTF-8 с высокой производительностью и низким уровнем распределения, при этом чтение выполняется из [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) или [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601). `Utf8JsonReader` — это низкоуровневый тип, с помощью которого можно создавать пользовательские средства синтаксического анализа и десериализаторы.
+<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> — это последовательный модуль чтения текста JSON в кодировке UTF-8 с высокой производительностью и низким уровнем распределения, при этом чтение выполняется из [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) или [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601). `Utf8JsonReader` — это низкоуровневый тип, с помощью которого можно создавать пользовательские средства синтаксического анализа и десериализаторы.
 
 В следующих разделах описываются рекомендуемые шаблоны программирования для использования `Utf8JsonReader`.
 

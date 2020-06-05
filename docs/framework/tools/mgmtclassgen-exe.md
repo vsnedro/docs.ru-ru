@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Mgmtclassgen.exe
 - early-bound managed classes
 ms.assetid: 02ce6699-49b5-4a0b-b0d5-1003c491232e
-ms.openlocfilehash: 5e39670fbb40acb999a243ac86683219f3c89e4f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d6de28694a1fdcd22cc2baa8cff66387c601414c
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180370"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84201864"
 ---
 # <a name="mgmtclassgenexe-management-strongly-typed-class-generator"></a>Mgmtclassgen.exe (генератор строго типизированных классов управления)
 Генератор классов управления со строгим типом позволяет быстро создавать управляемые классы с ранней привязкой для указанного класса инструментария управления Windows (WMI). Создаваемый класс упрощает код, необходимый для доступа к экземпляру класса WMI.  
@@ -87,7 +87,7 @@ WMIClass [options]
   
 - В WMI значение данных типа CIM_DATETIME может быть представлено как в виде определенной даты и времени, так и в виде временного интервала. Если значение данных представляет собой время и дату, в созданном классе ему будет соответствовать тип данных **DateTime**. Если значение данных представляет собой временной интервал, в созданном классе ему будет соответствовать тип данных **TimeSpan**.  
   
- Управляемые классы со строгим типом можно создавать также с помощью Server Explorer Management Extension в Visual Studio .NET.  
+ Управляемые классы со строгим типом можно создавать также с помощью расширения для управления обозревателем серверов в Visual Studio .NET.  
   
  Дополнительные сведения о WMI см. в разделе **Инструментарий управления Windows** в документации по продукту Platform SDK.  
   

@@ -7,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: 03a7c5a1-b296-4af4-b209-043c958dc0a5
-ms.openlocfilehash: 1770eb08055fd244bd0f220fed6d1641c35174fd
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: ea42cbfe7427e026f5e3339af5f5a2ceec17dad3
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794355"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202204"
 ---
 # <a name="modify-xml-data-using-xpathnavigator"></a>Изменение XML-данных с помощью класса XPathNavigator
 Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет набор методов для изменения узлов и значений в XML-документе. Для использования этих методов необходимо сделать редактируемым объект <xref:System.Xml.XPath.XPathNavigator>, то есть установить для свойства <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> значение `true`.  
@@ -104,7 +104,7 @@ navigator.SetTypedValue(DateTime.Now);
  [!code-xml[XPathXMLExamples#3](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
   
 #### <a name="the-effects-of-editing-strongly-typed-xml-data"></a>Последствия изменения строго типизированных XML-данных  
- Класс <xref:System.Xml.XPath.XPathNavigator> использует схему XML W3C, как основу для описания строго типизированного XML. Элементы и атрибуты могут сопровождаться информацией о типе, создаваемой по результатам проверки на основе документа схемы XML W3C. Элементы, содержащие другие элементы или атрибуты, называются сложными типами, а имеющие только текстовое содержимое - простыми типами.  
+ Класс <xref:System.Xml.XPath.XPathNavigator> использует схему XML W3C как основу для описания строго типизированного XML. Элементы и атрибуты могут сопровождаться информацией о типе, создаваемой по результатам проверки на основе документа схемы XML W3C. Элементы, содержащие другие элементы или атрибуты, называются сложными типами, а имеющие только текстовое содержимое - простыми типами.  
   
 > [!NOTE]
 > Атрибуты могут иметь только простой тип.  

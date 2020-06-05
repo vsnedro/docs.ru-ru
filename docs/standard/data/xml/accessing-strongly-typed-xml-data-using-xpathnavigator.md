@@ -6,15 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 898e0f52-8a7c-4d1f-afcd-6ffb28b050b4
-ms.openlocfilehash: e6ec30e3c7c2318b199122cd63c7f56584707a98
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: afbfd516ef25eff94a9eed841f313892007c58a1
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78158055"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202342"
 ---
 # <a name="accessing-strongly-typed-xml-data-using-xpathnavigator"></a>Доступ к XML-данным со строгой типизацией с помощью XPathNavigator
-Класс <xref:System.Xml.XPath.XPathNavigator> как экземпляр модели данных XPath 2.0, может содержать данные со строгой типизацией, которые сопоставляются с типами CLR. Согласно модели данных XPath 2.0, только элементы и атрибуты могут содержать данные со строгой типизацией. Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет механизмы для доступа к данным со строгой типизацией в объектах <xref:System.Xml.XPath.XPathDocument> и <xref:System.Xml.XmlDocument>, а также механизмы для преобразования данных из одного типа в другой.  
+Класс <xref:System.Xml.XPath.XPathNavigator>, как экземпляр модели данных XPath 2.0, может содержать данные со строгой типизацией, которые сопоставляются с типами CLR. Согласно модели данных XPath 2.0, только элементы и атрибуты могут содержать данные со строгой типизацией. Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет механизмы для доступа к данным со строгой типизацией в объектах <xref:System.Xml.XPath.XPathDocument> и <xref:System.Xml.XmlDocument>, а также механизмы для преобразования данных из одного типа в другой.  
   
 ## <a name="type-information-exposed-by-xpathnavigator"></a>Информация о типах, предоставляемая XPathNavigator  
  Данные XML 1.0 практически не имеют типа, если они не обработаны с помощью определения DTD, схемы XSD или другим средством. Существует несколько категорий сведений о типах, которые можно связать с XML-элементом или атрибутом.  

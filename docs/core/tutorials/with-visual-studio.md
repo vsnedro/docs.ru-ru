@@ -1,84 +1,83 @@
 ---
-title: Создание приложения Hello World с помощью .NET Core в Visual Studio
-description: Узнайте, как создать свое первое консольное приложение .NET Core с помощью C# или Visual Basic в Visual Studio.
+title: Создание консольного приложения с помощью .NET Core в Visual Studio
+description: Узнайте, как консольное приложение .NET Core с помощью C# или Visual Basic в Visual Studio.
 author: BillWagner
 ms.author: wiwagn
-ms.date: 12/09/2019
+ms.date: 05/20/2020
+dev_langs:
+- csharp
+- vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 738fc49a820c3c5d94fb35c1bf7a8b718ed75cb3
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 9c3456cd8c940e53e8a70c1d3a7c3b09de77c21d
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83394824"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84201588"
 ---
-# <a name="tutorial-create-your-first-net-core-console-application-in-visual-studio-2019"></a>Учебник. Создание первого консольного приложения .NET Core в Visual Studio 2019
+# <a name="tutorial-create-a-net-core-console-application-in-visual-studio-2019"></a>Учебник. Создание консольного приложения .NET Core в Visual Studio 2019
 
-В этой статье приводятся пошаговые инструкции по созданию и запуску консольного приложения Hello World .NET Core в Visual Studio 2019. Приложение Hello World традиционно используется для ознакомления начинающих с новым языком программирования. Эта программа просто отображает фразу "Hello World!" "Hello World!".
+В этом учебнике показано, как создать и запустить консольное приложение .NET Core в помощью Visual Studio 2019.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2019 версии 16.4 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**. Пакет SDK для .NET Core 3.1 устанавливается автоматически при выборе этой рабочей нагрузки.
+- [Visual Studio 2019 версии 16.6 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**. Пакет SDK для .NET Core 3.1 устанавливается автоматически при выборе этой рабочей нагрузки.
 
-Дополнительные сведения см. в разделе [Установка с помощью Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) статьи [Установка пакета SDK для .NET Core](../install/sdk.md?pivots=os-windows).
+  Дополнительные сведения см. в разделе [Установка с помощью Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) статьи [Установка пакета SDK для .NET Core](../install/sdk.md?pivots=os-windows).
 
 ## <a name="create-the-app"></a>Создание приложения
 
-Ниже приведены инструкции по созданию простого консольного приложения Hello World:
-
 <!-- markdownlint-disable MD025 -->
-
-# <a name="c"></a>[C#](#tab/csharp)
 
 1. Запустите Visual Studio 2019.
 
-1. Создайте проект консольного приложения .NET Core на C# с именем HelloWorld.
+1. Создайте проект консольного приложения .NET Core с именем HelloWorld.
 
-   1. На начальном экране выберите **Создать проект**.
+   1. На начальной странице выберите **Создать проект**.
 
-      ![Кнопка "Создать проект", выбранная в начальном окне Visual Studio](./media/with-visual-studio/start-window.png)
+      ![Кнопка "Создать проект", выбранная на начальной странице Visual Studio](./media/with-visual-studio/start-window.png)
 
-   1. На странице **Создание проекта** введите в поле поиска **консоль**. Затем выберите **C#** в списке языков и **Все платформы** в списке платформ. Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.
+   1. На странице **Создание проекта** введите в поле поиска **консоль**. Затем выберите **C#** или **Visual Basic** из списка языков, а затем — **Все платформы** из списка платформ. Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.
 
       ![Окно "Создание проекта" с выбранными фильтрами](./media/with-visual-studio/create-new-project.png)
 
       > [!TIP]
-      > Если вы не видите шаблоны .NET Core, вероятно, вы не установили требуемую рабочую нагрузку. В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**. Откроется Visual Studio Installer. Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.
+      > Если вы не видите шаблоны .NET Core, вероятно, у вас не установлена требуемая рабочая нагрузка. В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**. Откроется Visual Studio Installer. Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.
 
-   1. На странице **настройки нового проекта** введите **HelloWorld** в поле **Имя проекта**. Затем нажмите **Создать**.
+   1. На странице **настройки нового проекта** введите **HelloWorld** в поле **Имя проекта**. Затем нажмите кнопку **Создать**.
 
       ![Окно настройки нового проекта с полями имени проекта, расположения и имени решения](./media/with-visual-studio/configure-new-project.png)
 
-   Шаблон консольного приложения C# для .NET Core автоматически определяет класс `Program` с одним методом `Main`, который принимает в качестве аргумента массив <xref:System.String>. `Main` — точка входа в приложение. Это метод, который автоматически вызывается средой выполнения при запуске приложения. Все аргументы, предоставленные в командной строке при запуске приложения, доступны через массив *args*.
+   Шаблон консольного приложения для .NET Core определяет класс `Program` с одним методом `Main`, который принимает в качестве аргумента массив <xref:System.String>. `Main` — точка входа в приложение. Это метод, который автоматически вызывается средой выполнения при запуске приложения. Все аргументы, предоставленные в командной строке при запуске приложения, доступны через массив *args*.
 
-   ![Visual Studio и новый проект Hello World](./media/with-visual-studio/visual-studio-main-window.png)
+   Если нужный язык не отображается, измените выбор языка в верхней части страницы.
 
-# <a name="visual-basic"></a>[Visual Basic](#tab/vb)
+   ```csharp
+   using System;
 
-1. Запустите Visual Studio 2019.
+   namespace HelloWorld
+   {
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               Console.WriteLine("Hello World!");
+           }
+       }
+   }
+   ```
 
-1. Создайте проект консольного приложения .NET Core на Visual Basic с именем HelloWorld.
+   ```vb
+   Imports System
 
-   1. На начальном экране выберите **Создать проект**.
+   Module Program
+       Sub Main(args As String())
+           Console.WriteLine("Hello World!")
+       End Sub
+   End Module
+   ```
 
-      ![Кнопка "Создать проект", выбранная в начальном окне Visual Studio](./media/with-visual-studio/start-window.png)
-
-   1. На странице **Создание проекта** введите в поле поиска **консоль**. В списке языков выберите **Visual Basic**, а затем в списке платформ выберите **Все платформы**. Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.
-
-      ![Выбор шаблона Visual Basic для консольного приложения (.NET Framework)](./media/with-visual-studio/vb/create-new-project.png)
-
-      > [!TIP]
-      > Если вы не видите шаблоны .NET Core, вероятно, вы не установили требуемую рабочую нагрузку. В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**. Откроется Visual Studio Installer. Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.
-
-   1. На странице **настройки нового проекта** введите **HelloWorld** в поле **Имя проекта**. Затем нажмите **Создать**.
-
-   Шаблон консольного приложения для .NET Core автоматически определяет класс `Program` с одним методом `Main`, который принимает в качестве аргумента массив <xref:System.String>. `Main` — точка входа в приложение. Это метод, который автоматически вызывается средой выполнения при запуске приложения. Все аргументы, предоставленные в командной строке при запуске приложения, доступны в параметре `args`.
-
-   ![Visual Studio и новый проект Hello World](./media/with-visual-studio/vb/visual-studio-main-window.png)
-
----
-
-   Этот шаблон создает простое приложение Hello World. Он вызывает метод <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> для отображения литеральной строки "Hello World!" в окне консоли.
+   Этот шаблон создает простое приложение Hello World. Он вызывает метод <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> для отображения сообщения "Hello World!" в окне консоли.
 
 ## <a name="run-the-app"></a>Запуск приложения
 
@@ -94,17 +93,19 @@ ms.locfileid: "83394824"
 
 ## <a name="enhance-the-app"></a>Улучшение приложения
 
-Давайте расширим приложение. Теперь у пользователя будет запрашиваться имя, которое затем будет отображаться с датой и временем. Ниже приведены инструкции по изменению и повторному запуску приложения:
-
-# <a name="c"></a>[C#](#tab/csharp)
+Давайте расширим приложение. Теперь у пользователя будет запрашиваться имя, которое затем будет отображаться с датой и временем. Ниже приведены инструкции по изменению приложения и его повторному запуску:
 
 1. Замените содержимое метода `Main` (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:
 
-   [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/HelloWorld.cs#1)]
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="Snippet1":::
 
-   Теперь код выдает строку "What is your name?" (Как вас зовут?) в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Наконец, с помощью [интерполированной строки](../../csharp/language-reference/tokens/interpolated.md) эти значения выводятся в окно консоли.
+   :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="Snippet1":::
 
-1. Скомпилируйте программу, выбрав действие **Сборка** > **Собрать решение**.
+   Теперь код выдает строку "What is your name?" (Как вас зовут?) в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date` (`currentDate` в Visual Basic). Наконец, оно отображает эти значения в окне консоли.
+
+   `\n` (`vbCrLf` в Visual Basic) представляет собой символ новой строки.
+
+   Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке. Значение выражения вставляется в строку вместо выражения. Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).
 
 1. Чтобы запустить программу, выберите **HelloWorld** на панели инструментов или нажмите клавишу **F5**.
 
@@ -113,30 +114,10 @@ ms.locfileid: "83394824"
    ![Окно консоли с измененными выходными данными программы](./media/with-visual-studio/hello-world-update.png)
 
 1. Для закрытия консольного окна нажмите любую клавишу.
-
-# <a name="visual-basic"></a>[Visual Basic](#tab/vb)
-
-1. Замените содержимое метода `Main` (в настоящий момент это просто строка, вызывающая `Console.WriteLine`) следующим кодом:
-
-   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/Program.vb#1)]
-
-   Теперь код выдает строку "What is your name?" (Как вас зовут?) в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу ВВОД. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Наконец, с помощью [интерполированной строки](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) эти значения выводятся в окно консоли.
-
-1. Скомпилируйте программу, выбрав действие **Сборка** > **Собрать решение**.
-
-1. Чтобы запустить программу, выберите **HelloWorld** на панели инструментов или нажмите клавишу **F5**.
-
-1. В ответ на приглашение в командной строке введите имя и нажмите клавишу **ВВОД**.
-
-   ![Окно консоли с измененными выходными данными программы](./media/with-visual-studio/hello-world-update.png)
-
-1. Для закрытия консольного окна нажмите любую клавишу.
-
----
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Работая с этой статьей, вы создали и запустили свое первое приложение .NET Core. На следующем шаге выполняется отладка приложения.
+В этом учебнике вы создали приложение .NET Core. В следующем учебнике описывается отладка приложения.
 
 > [!div class="nextstepaction"]
-> [Отладка приложения .NET Core Hello World на C# или Visual с помощью Visual Studio 2017](debugging-with-visual-studio.md)
+> [Отладка консольного приложения .NET Core в Visual Studio](debugging-with-visual-studio.md)

@@ -4,12 +4,12 @@ description: Узнайте, как развернуть приложение .N
 ms.date: 05/12/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 245df14b9174a3b2ff152f90e6c50cc8766a2de9
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 4010f363e8ba606a7294ea32dc34587da6d6c8aa
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83397052"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202239"
 ---
 # <a name="tutorial-deploy-a-net-for-apache-spark-application-to-databricks"></a>Учебник. Развертывание приложения .NET для Apache Spark в Databricks
 
@@ -87,7 +87,7 @@ ms.locfileid: "83397052"
 
 1. В интерфейсе командной строки Databricks выполните команду `databricks configure --token`.
 
-2. После выполнения команды конфигурации будет предложено ввести узел. URL-адрес узла использует формат: **https://<\Location>.azuredatabricks.net**. Например, если вы выбрали **eastus2** при создании службы Azure Databricks, узел будет **https://eastus2.azuredatabricks.net** .
+2. После выполнения команды конфигурации будет предложено ввести узел. Поддерживается следующий формат: `https://<Location>.azuredatabricks.net`. Например, если вы выбрали **eastus2** при создании службы Azure Databricks, узел будет `https://eastus2.azuredatabricks.net`.
 
 3. После ввода узла вам будет предложено ввести маркер. На портале Azure выберите **Запустить рабочую область**, чтобы запустить рабочую область Azure Databricks.
 

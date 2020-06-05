@@ -4,12 +4,12 @@ description: Сведения о базовых типах (числовых, с
 ms.date: 10/10/2016
 ms.technology: csharp-fundamentals
 ms.assetid: 95c686ba-ae4f-440e-8e94-0dbd6e04d11f
-ms.openlocfilehash: 89b5cebdc887db808db8abb1fa9eda34e2bec9e5
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 468482bd1b4f1a5835df9d66ee483edc33c28f61
+ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205810"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84202212"
 ---
 # <a name="types-variables-and-values"></a>Типы, переменные и значения
 
@@ -66,7 +66,7 @@ C# предоставляет стандартный набор встроенн
   
 [!code-csharp[Generic types](../../samples/snippets/csharp/concepts/basic-types/generic-type.cs)]
   
-Использование параметра типа позволяет повторно использовать один же класс для хранения элементов любого типа, не преобразовывая каждый элемент в [объект](language-reference/builtin-types/reference-types.md#the-object-type). Универсальные классы коллекций называются *строго типизированными коллекциями*, так как компилятору известен конкретный тип элементов коллекции и он может выдать ошибку во время компиляции, если, к примеру, вы попытаетесь добавить целое число в объект `strings`, созданный в предыдущем примере. Дополнительные сведения см. в разделе [Универсальные типы](programming-guide/generics/index.md).
+Использование параметра типа позволяет повторно использовать один же класс для хранения элементов любого типа, не преобразовывая каждый элемент в [объект](language-reference/builtin-types/reference-types.md#the-object-type). Универсальные классы коллекций называются *строго типизированными коллекциями*, так как компилятору известен конкретный тип элементов коллекции, и он может выдать ошибку во время компиляции, если, к примеру, вы попытаетесь добавить целое число в объект `strings`, созданный в предыдущем примере. Дополнительные сведения см. в статье [Универсальные шаблоны](programming-guide/generics/index.md).
 
 ## <a name="implicit-types-anonymous-types-and-tuple-types"></a>Неявные, анонимные и кортежные типы
 

@@ -1,104 +1,105 @@
 ---
 title: Тестирование библиотеки классов .NET Standard с помощью .NET Core в Visual Studio
 description: Создайте проект модульного теста для библиотеки классов .NET Core. Проверьте правильность работы библиотеки классов .NET Core с помощью модульных тестов.
-ms.date: 12/24/2019
+ms.date: 05/21/2020
 dev_langs:
 - csharp
 - vb
-ms.custom: vs-dotnet, seodoc18
-ms.openlocfilehash: 307261088f5c7c69c0e69fbd6b99940c04842eec
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.custom: vs-dotnet
+ms.openlocfilehash: 79b680022484bb9222b66c3df76bdd5a06de8117
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78156625"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84005015"
 ---
-# <a name="test-a-net-standard-library-with-net-core-in-visual-studio"></a>Тестирование библиотеки .NET Standard с помощью .NET Core в Visual Studio
+# <a name="tutorial-test-a-net-standard-library-with-net-core-in-visual-studio"></a>Учебник. Тестирование библиотеки .NET Standard с помощью .NET Core в Visual Studio
 
-Работая со статьей [Создание библиотеки .NET Standard на C# с помощью пакета SDK для .NET Core в Visual Studio 2017](library-with-visual-studio.md), вы уже создали простую библиотеку классов, которая добавляет метод расширения к классу <xref:System.String>. Теперь вы создадите модульный тест и убедитесь, что все работает правильно. Новый проект модульного теста вы добавите к решению, созданному при работе с предыдущей статьей.
+В этом руководстве показано, как автоматизировать модульное тестирование путем добавления тестового проекта в решение.
+
+## <a name="prerequisites"></a>Предварительные требования
+
+- В этом руководстве используется решение, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio](library-with-visual-studio.md).
 
 ## <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 
-Чтобы создать проект модульного теста, выполните следующие действия.
-
-1. Откройте решение`ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки .NET Standard на C# с помощью пакета SDK для .NET Core в Visual Studio 2017](library-with-visual-studio.md).
+1. Откройте решение`ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio](library-with-visual-studio.md).
 
 1. Добавьте в решение новый проект модульного теста с именем StringLibraryTest.
 
    1. Щелкните решение в **обозревателе решений** правой кнопкой мыши и выберите **Добавить** > **Новый проект**.
 
-   1. На странице **Добавить новый проект** введите в поле поиска **mstest**. Выберите **C#** или **Visual Basic** из списка языков, а затем — **Все платформы** из списка платформ. Выберите шаблон **Проект тестов MSTest (.NET Core)** и нажмите кнопку **Далее**.
+   1. На странице **Добавить новый проект** введите в поле поиска **mstest**. Выберите **C#** или **Visual Basic** из списка языков, а затем — **Все платформы** из списка платформ.
 
-   1. На странице **Настроить новый проект** введите **StringLibraryTest** в поле **Имя проекта**. Щелкните **Создать**.
+   1. Выберите шаблон **Тестовый проект MSTest (.NET Core)** и нажмите кнопку **Далее**.
+
+   1. На странице **Настроить новый проект** введите **StringLibraryTest** в поле **Имя проекта**. Затем нажмите кнопку **Создать**.
 
    > [!NOTE]
-   > Кроме MSTest, можно также создать тестовые проекты xUnit и nUnit для .NET Core в Visual Studio.
+   > MSTest — это одна из трех доступных для выбора платформ тестирования. Другими являются xUnit и nUnit.
 
-1. Visual Studio создаст проект и откроет файл класса в окне кода с помощью следующего кода:
+1. Visual Studio создаст проект и откроет файл класса в окне кода с помощью следующего кода: Если нужный язык не отображается, измените выбор языка в верхней части страницы.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-    namespace StringLibraryTest
-    {
-        [TestClass]
-        public class UnitTest1
-        {
-            [TestMethod]
-            public void TestMethod1()
-            {
-            }
-        }
-    }
-    ```
+   namespace StringLibraryTest
+   {
+       [TestClass]
+       public class UnitTest1
+       {
+           [TestMethod]
+           public void TestMethod1()
+           {
+           }
+       }
+   }
+   ```
 
-    ```vb
-    Imports Microsoft.VisualStudio.TestTools.UnitTesting
+   ```vb
+   Imports Microsoft.VisualStudio.TestTools.UnitTesting
 
-    Namespace StringLibraryTest
-        <TestClass>
-        Public Class UnitTest1
-            <TestMethod>
-            Sub TestSub()
+   Namespace StringLibraryTest
+       <TestClass>
+       Public Class UnitTest1
+           <TestMethod>
+           Sub TestSub()
 
-            End Sub
-        End Class
-    End Namespace
-    ```
+           End Sub
+       End Class
+   End Namespace
+   ```
 
    Исходный код, созданный шаблоном модульного теста, выполняет следующие действия.
 
    - Он импортирует пространство имен <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=nameWithType>, которое содержит типы, используемые для модульного тестирования.
+   - Он применяет атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> к классу `UnitTest1`.
+   - Он применяет атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> для определения `TestMethod1` в C# или `TestSub` в Visual Basic.
 
-   - Он применяет атрибут [TestClass](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) к классу `UnitTest1`. При запуске модульного теста автоматически выполняются все методы теста в тестовом классе, помеченные атрибутом [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute).
+   При запуске модульного теста автоматически выполняются все методы теста, помеченные атрибутом [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute), в тестовом классе, помеченном атрибутом [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute).
 
-   - Атрибут [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) определяет `TestMethod1` в C# или `TestSub` в Visual Basic как метод теста, который будет автоматически выполняться при запуске модульного теста.
+1. В **обозревателе решений** правой кнопкой мыши щелкните узел **Зависимости** в проекте **StringLibraryTest** и в контекстном меню выберите пункт **Добавить ссылку на проект**.
 
-1. В **обозревателе решений** щелкните узел **Зависимости** в проекте **StringLibraryTest** правой кнопкой мыши и выберите в контекстном меню пункт **Добавить ссылку**.
+1. В диалоговом окне **Диспетчер ссылок** разверните узел **Проекты** и установите флажок рядом с пунктом **StringLibrary**. Добавление ссылки на сборку `StringLibrary` позволяет компилятору находить методы **StringLibrary** во время компиляции проекта **StringLibraryTest**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Контекстное меню узла "Зависимости" в проекте StringLibraryTest](./media/testing-library-with-visual-studio/add-reference-context-menu.png)
-
-1. В диалоговом окне **Диспетчер ссылок** разверните узел **Проекты** и установите флажок рядом с пунктом **StringLibrary**. Добавление ссылки на сборку `StringLibrary` позволяет компилятору находить методы **StringLibrary**. Нажмите кнопку **OK**. Добавляется ссылка на ваш проект библиотеки классов `StringLibrary`.
-
-   ![Диалоговое окно "Диспетчер ссылок" в Visual Studio](./media/testing-library-with-visual-studio/project-reference-manager.png)
+1. Нажмите кнопку **ОК**.
 
 ## <a name="add-and-run-unit-test-methods"></a>Добавление и выполнение методов модульного теста
 
-При запуске модульного теста Visual Studio выполняет каждый метод, помеченный атрибутом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>, из класса модульных тестов (это класс, к которому применяется атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>). Метод теста завершается, когда происходит первый сбой или когда все тесты, содержащиеся в методе, будут успешно выполнены.
+При запуске модульного теста Visual Studio выполняет каждый метод, помеченный атрибутом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>, в классе, помеченном атрибутом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>. Метод теста завершается, когда происходит первый сбой или когда все тесты, содержащиеся в методе, будут успешно выполнены.
 
 В самых распространенных тестах вызываются члены класса <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>. Многие методы утверждения (Assert) принимают по крайней мере два параметра, из которых один представляет ожидаемый результат теста, а второй — фактический результат теста. Наиболее популярные из этих методов класса `Assert` перечислены в следующей таблице:
 
-| Методы утверждения     | Компонент |
+| Методы утверждения     | Функция |
 | ------------------ | -------- |
 | `Assert.AreEqual`  | Проверяет равенство двух значений или объектов. Утверждение не выполняется, если значения или объекты не равны. |
 | `Assert.AreSame`   | Проверяет, что две объектные переменные ссылаются на один и тот же объект. Утверждение не выполняется, если переменные ссылаются на разные объекты. |
 | `Assert.IsFalse`   | Проверяет, что условие имеет значение `false`. Утверждение не выполняется, если условие имеет значение `true`. |
 | `Assert.IsNotNull` | Проверяет, что объект не имеет значение `null`. Утверждение не выполняется, если объект является `null`. |
 
-Вы можете также использовать метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> в методе теста, чтобы указать тип исключения, которое он должен создавать. Такой тест считается не выполненным, если заявленное исключение не было создано.
+Вы можете также использовать метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> в методе теста, чтобы указать тип исключения, которое он должен создавать. Такой тест считается не выполненным, если заявленное исключение не было создано.
 
-Для тестирования метода `StringLibrary.StartsWithUpper` необходимо предоставить несколько строк, которые начинаются с символов верхнего регистра. Предполагается, что в этих случаях метод возвратит `true`, поэтому можно вызвать метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue%2A>. Представьте также несколько строк, которые не начинаются с символов верхнего регистра. Предполагается, что в этих случаях метод возвратит `false`, поэтому можно вызвать метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse%2A>.
+Для тестирования метода `StringLibrary.StartsWithUpper` необходимо предоставить несколько строк, которые начинаются с символов верхнего регистра. Предполагается, что в этих случаях метод возвратит `true`, поэтому можно вызвать метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue%2A?displayProperty=nameWithType>. Представьте также несколько строк, которые не начинаются с символов верхнего регистра. Предполагается, что в этих случаях метод возвратит `false`, поэтому можно вызвать метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse%2A?displayProperty=nameWithType>.
 
 Так как ваш метод библиотеки обрабатывает строки, нам нужно проверить правильность обработки [пустых строк (`String.Empty`)](xref:System.String.Empty) (так называется допустимая строка, которая не содержит символов и для которой свойство <xref:System.String.Length> имеет значение 0) и строки `null`, которая не была инициализирована. Если `StartsWithUpper` вызывается в качестве метода расширения для экземпляра <xref:System.String>, ему нельзя передавать строку `null`. Однако его можно вызвать напрямую как статический метод и передать ему один аргумент типа <xref:System.String>.
 
@@ -127,7 +128,7 @@ ms.locfileid: "78156625"
 
    Если вы не сохраните исходный код в кодировке UTF8, Visual Studio может сохранить его как файл ASCII. В этом случае среде выполнения не удастся правильно раскодировать символы UTF8 за пределами стандартного диапазона ASCII, и результаты теста будут неправильными.
 
-1. В строке меню выберите **Тест** > **Выполнить** > **Все тесты**. Откроется окно **Обозреватель тестов**, и появится сообщение о том, что тесты успешно выполнены. В разделе **Пройденные тесты** перечислены три теста, а раздел **Сводка** содержит результат тестового запуска.
+1. В строке меню выберите **Тест** > **Выполнить все тесты**. Если окно **обозревателя тестов** не открыто, откройте его, выбрав **Тест** > **Обозреватель тестов**. В разделе **Пройденные тесты** перечислены три теста, а раздел **Сводка** содержит результат тестового запуска.
 
    > [!div class="mx-imgBorder"]
    > ![Окно "Обозреватель тестов" с пройденными тестами](./media/testing-library-with-visual-studio/test-explorer-window.png)
@@ -149,12 +150,12 @@ ms.locfileid: "78156625"
 
    ```
 
-1. Выполните тест, последовательно выбрав в строке меню пункты **Тест** > **Выполнить** > **Все тесты**. В окне **Обозреватель тестов** будет указано, что два теста выполнены успешно, а третий завершился ошибкой.
+1. Выполните тест, последовательно выбрав в строке меню пункты **Тест** > **Выполнить все тесты**. В окне **Обозреватель тестов** будет указано, что два теста выполнены успешно, а третий завершился ошибкой.
 
    > [!div class="mx-imgBorder"]
    > ![Окно "Обозреватель тестов" с тестами, которые завершились ошибкой](./media/testing-library-with-visual-studio/failed-test-window.png)
 
-1. Выберите непройденный тест `TestDoesNotStartWith`. В окне **Обозреватель тестов** появится сообщение, созданное методом утверждения: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Из-за этого сбоя все строки в массиве, расположенные после слова Error, не проверялись.
+1. Выберите непройденный тест `TestDoesNotStartWith`. В окне **Обозреватель тестов** появится сообщение, созданное методом утверждения "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Из-за этого сбоя все строки в массиве, расположенные после слова Error, не проверялись.
 
    > [!div class="mx-imgBorder"]
    > ![Окно "Обозреватель тестов" с сообщением о том, что утверждение IsFalse ошибочно](./media/testing-library-with-visual-studio/failed-test-detail.png)
@@ -163,7 +164,7 @@ ms.locfileid: "78156625"
 
 ## <a name="test-the-release-version-of-the-library"></a>Тестирование версии выпуска для библиотеки
 
-До сих пор вы выполняли тесты с отладочной версией библиотеки. Теперь, когда все созданные тесты пройдены и вы достаточно подробно проверили работу библиотеки, выполните все тесты еще раз, теперь уже для сборки выпуска библиотеки. Некоторые факторы, например оптимизации компилятора, иногда могут вызывать разное поведение сборки в режимах отладки и выпуска.
+Теперь, когда все тесты пройдены во время запуска версии отладки, следует запустить все тесты еще раз, теперь уже для сборки выпуска библиотеки. Некоторые факторы, например оптимизации компилятора, иногда могут вызывать разное поведение сборки в режимах отладки и выпуска.
 
 Протестируйте сборку выпуска следующим образом.
 
@@ -177,10 +178,25 @@ ms.locfileid: "78156625"
    > [!div class="mx-imgBorder"]
    > ![Контекстное меню проекта StringLibrary с командой сборки](./media/testing-library-with-visual-studio/build-library-context-menu.png)
 
-1. Выполните модульные тесты, выбрав в строке меню **Тест** > **Выполнить** > **Все тесты**. Все тесты будут пройдены.
+1. Выполните модульные тесты, выбрав в строке меню **Тест** > **Выполнить все тесты**. Все тесты будут пройдены.
 
-Теперь вы полностью завершили тестирование библиотеки, и ее можно предоставить пользователям. Ее можно включить в состав любого приложения или нескольких приложений, а также предоставить в виде пакета NuGet. Дополнительные сведения см. в статье [Использование стандартной библиотеки классов для .NET Core в Visual Studio](consuming-library-with-visual-studio.md).
-
-## <a name="see-also"></a>См. также раздел
+## <a name="additional-resources"></a>Дополнительные ресурсы
 
 - [Основные сведения о модульных тестах](/visualstudio/test/unit-test-basics)
+
+## <a name="next-steps"></a>Следующие шаги
+
+В этом руководстве вы выполнили модульное тестирование библиотеки классов. Чтобы сделать библиотеку доступной другим пользователям, опубликуйте ее в [NuGet](https://nuget.org) в качестве пакета. Чтобы узнать, как это делать, следуйте указаниям в руководстве по NuGet:
+
+> [!div class="nextstepaction"]
+> [Создание и публикация пакета NuGet с помощью Visual Studio](/nuget/quickstart/create-and-publish-a-package-using-visual-studio?tabs=netcore-cli)
+
+Если библиотека опубликована как пакет NuGet, ее могут устанавливать и использовать другие пользователи. Чтобы узнать, как это делать, следуйте указаниям в руководстве по NuGet:
+
+> [!div class="nextstepaction"]
+> [Установка и использование пакета в Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+
+Библиотеку не нужно распространять как пакет. Ее можно объединить с консольным приложением, где она используется. Чтобы узнать, как опубликовать консольное приложение, ознакомьтесь с предыдущим руководством в этой серии:
+
+> [!div class="nextstepaction"]
+> [Публикация консольного приложения .NET Core в Visual Studio](publishing-with-visual-studio.md)

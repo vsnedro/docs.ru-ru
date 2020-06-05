@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: 22b27007d26c98cff40733ef8d449ce334f87848
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: b427954fe0026e6ac96d3bbce2b70b5c44e884e0
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83802680"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84005379"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -79,6 +79,10 @@ dotnet test -h|--help
 - **`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
 
   Включает сборщик данных для тестового запуска. Дополнительные сведения см. в разделе [Мониторинг и анализ тестового запуска](https://aka.ms/vstest-collect).
+  
+  Чтобы получить объем протестированного кода на любой платформе, поддерживаемой .NET Core, установите [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) и используйте параметр `--collect:"XPlat Code Coverage"`.
+
+  В Windows объем протестированного кода можно получить с помощью параметра `--collect "Code Coverage"`. Этот параметр создает файл *COVERAGE*, который можно открыть в Visual Studio 2019 Enterprise. Дополнительные сведения см. в статьях [Использование объема протестированного кода](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) и [Настройка анализа объема протестированного кода](/visualstudio/test/customizing-code-coverage-analysis).
 
 - **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
@@ -171,6 +175,18 @@ dotnet test -h|--help
   dotnet test --logger trx
   ```
 
+- Выполнение тестов в проекте в текущем каталоге и создание файла с объемом протестированного кода (после установки [Coverlet](https://github.com/tonerdo/coverlet/blob/master/README.md)):
+
+  ```dotnetcli
+  dotnet test --collect:"XPlat Code Coverage"
+  ```
+
+- Выполнение тестов в проекте в текущем каталоге и создание файла с объемом протестированного кода (только Windows):
+
+  ```dotnetcli
+  dotnet test --collect "Code Coverage"
+  ```
+
 - Выполнение тестов в проекте в текущем каталоге и вывод журнала с подробными сведениями в консоль:
 
   ```dotnetcli
@@ -195,6 +211,7 @@ dotnet test -h|--help
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
 | xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Признаки</li></ul>                                   |
+| NUnit          | <ul><li>FullyQualifiedName</li><li>name</li><li>TestCategory</li><li>Priority</li></ul>                                   |
 
 `<operator>` описывает связь между свойством и значением:
 

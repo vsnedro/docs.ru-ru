@@ -2,12 +2,12 @@
 title: Обзор .NET Core
 description: Сведения о характеристиках и компоновке .NET Core, а также ее сравнение с другими реализациями .NET.
 ms.date: 03/26/2020
-ms.openlocfilehash: c9a63ddba14cf176be529e9520027c0610cfc087
-ms.sourcegitcommit: a9b8945630426a575ab0a332e568edc807666d1b
+ms.openlocfilehash: e57451968ed8c4d5457acea084d3c6c9f998b8da
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80391173"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144530"
 ---
 # <a name="net-core-overview"></a>Обзор .NET Core
 
@@ -28,7 +28,7 @@ ms.locfileid: "80391173"
 - [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 
-Интеграция редактора возможна во многом благодаря участникам проектов [OmniSharp](https://www.omnisharp.net/) и [Ionide](http://ionide.io).
+Интеграция редактора возможна во многом благодаря участникам проектов [OmniSharp](https://www.omnisharp.net/) и [Ionide](https://ionide.io).
 
 ## <a name="apis"></a>API - интерфейсы
 
@@ -69,6 +69,6 @@ ms.locfileid: "80391173"
 
 Двоичные дистрибутивы .NET Core от Майкрософт собираются и тестируются в Azure на серверах Майкрософт и следуют методикам проектирования и безопасности Майкрософт.
 
-[Red Hat поддерживает .NET Core](http://redhatloves.net/) в операционной системе Red Hat Enterprise Linux (RHEL). Red Hat собирает .NET Core из исходного кода и публикует сборки на сайте [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat и Майкрософт совместно занимаются обеспечением беспроблемной работы .NET Core в RHEL.
+[Red Hat поддерживает .NET Core](https://developers.redhat.com/topics/dotnet/) в операционной системе Red Hat Enterprise Linux (RHEL). Red Hat собирает .NET Core из исходного кода и публикует сборки на сайте [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat и Майкрософт совместно занимаются обеспечением беспроблемной работы .NET Core в RHEL.
 
 [Tizen поддерживает .NET Core](https://developer.tizen.org/development/training/.net-application) на платформах Tizen.

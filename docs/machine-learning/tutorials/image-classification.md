@@ -4,12 +4,12 @@ description: Узнайте, как передавать знания из су�
 ms.date: 01/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-ms.openlocfilehash: be21a94f571a1676d2a4bce2196dec34bf008121
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: ae6094d5acd4d26482f3690e174d82bbf1807266
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607575"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144439"
 ---
 # <a name="tutorial-generate-an-mlnet-image-classification-model-from-a-pre-trained-tensorflow-model"></a>Учебник. Создание модели классификации изображений ML.NET на основе предварительно обученной модели TensorFlow
 
@@ -66,9 +66,9 @@ ms.locfileid: "81607575"
 >[!Note]
 > Изображения выше принадлежат Викискладу и имеют следующие атрибуты:
 >
-> * 220px-Pepperoni_pizza.jpg, открытый источник, https://commons.wikimedia.org/w/index.php?curid=79505;
-> * 119px-Nalle_-_a_small_brown_teddy_bear.jpg, автор — [Jonik](https://commons.wikimedia.org/wiki/User:Jonik), автофотография, лицензия CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=48166;
-> * 193px-Broodrooster.jpg, автор — [M. Minderhoud](https://nl.wikipedia.org/wiki/Gebruiker:Michiel1972), собственное фото, лицензия CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=27403.
+> * 220px-Pepperoni_pizza.jpg, открытый источник, <https://commons.wikimedia.org/w/index.php?curid=79505>;
+> * 119px-Nalle_-_a_small_brown_teddy_bear.jpg, автор — [Jonik](https://commons.wikimedia.org/wiki/User:Jonik), автофотография, лицензия CC BY-SA 2.0, <https://commons.wikimedia.org/w/index.php?curid=48166>;
+> * 193px-Broodrooster.jpg, автор — [M. Minderhoud](https://nl.wikipedia.org/wiki/Gebruiker:Michiel1972), собственное фото, лицензия CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=27403>.
 
 Модель `Inception model` обучена классифицировать изображения по тысяче категорий, но в этом учебнике вам столько категорий не нужно. Вам также нужны четко определенные категории. Перейдем к этапу передачи (`transfer`) этого процесса передачи обучения (`transfer learning`). Вы можете передать способность `Inception model` распознавать и классифицировать изображения в новые ограниченные категории своего классификатора изображений.
 
@@ -110,7 +110,9 @@ toaster2.png    appliance
 <!-- markdownlint-enable MD010 -->
 
 Изображения для обучения и тестирования расположены в папках ресурсов, которые вы скачали в виде ZIP-файла. Эти изображения принадлежат Викискладу.
-> *[Викисклад](https://commons.wikimedia.org/w/index.php?title=Main_Page&oldid=313158208), бесплатный репозиторий мультимедиа.* Получено 17 октября 2018 г. в 10:48 со страниц: https://commons.wikimedia.org/wiki/Pizza https://commons.wikimedia.org/wiki/Toaster https://commons.wikimedia.org/wiki/Teddy_bear
+> *[Викисклад](https://commons.wikimedia.org/w/index.php?title=Main_Page&oldid=313158208), бесплатный репозиторий мультимедиа.* Получено 17 октября 2018 г. в 10:48 со страниц: <https://commons.wikimedia.org/wiki/Pizza>
+> <https://commons.wikimedia.org/wiki/Toaster>
+> <https://commons.wikimedia.org/wiki/Teddy_bear>
 
 ## <a name="setup"></a>Установка
 

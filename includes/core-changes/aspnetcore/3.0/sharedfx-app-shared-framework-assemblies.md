@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 64e854b06895ca54a9ab9870b85868788a731c00
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.openlocfilehash: d598d8d3203e804e5e935c3564b0053f9fc2e9a6
+ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79549596"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84144991"
 ---
 ### <a name="shared-framework-assemblies-removed-from-microsoftaspnetcoreapp"></a>Общая платформа. Из Microsoft.AspNetCore.App удалены сборки
 
@@ -54,7 +54,7 @@ Json.NET и Entity Framework Core будут и дальше работать с
 
 Это изменение не затрагивает двоичные файлы, которые указываются через `Microsoft.AspNetCore.App` в ASP.NET Core 2.x. Несколько важных исключений:
 
-- Библиотеки `Microsoft.Extensions`, которые по-прежнему нацеливаются на .NET Standard, будут доступны в виде пакетов NuGet (см. https://github.com/dotnet/extensions).
+- Библиотеки `Microsoft.Extensions`, которые по-прежнему ориентированы на .NET Standard, будут доступны в виде пакетов NuGet (см. <https://github.com/dotnet/extensions>).
 - API-интерфейсы, которые выпускаются командой разработчиков ASP.NET Core и не входят в `Microsoft.AspNetCore.App`. Например, в формате пакетов NuGet предоставляются следующие компоненты:
   - Entity Framework Core
   - API-интерфейсы, которые обеспечивают интеграцию с решениями сторонних разработчиков;

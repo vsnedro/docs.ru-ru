@@ -2,12 +2,12 @@
 title: Команда dotnet restore
 description: Вы узнаете, как восстановить зависимости и связанные с проектом средства при помощи команды dotnet restore.
 ms.date: 02/27/2020
-ms.openlocfilehash: cc8f374468ba95baccf058ac0b0a0175672cdf01
-ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
+ms.openlocfilehash: 276fad896a6a8a647ed05a9de8c582d463d9ab8f
+ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82158311"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84005325"
 ---
 # <a name="dotnet-restore"></a>dotnet restore
 
@@ -25,7 +25,7 @@ dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-parallel]
     [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
     [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
-    [--use-lockfile] [-v|--verbosity <LEVEL>]
+    [--use-lock-file] [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```
@@ -143,9 +143,9 @@ dotnet restore -h|--help
 
 - **`-s|--source <SOURCE>`**
 
-  Указывает источник пакета NuGet для использования во время операции восстановления. Этот параметр переопределяет все источники, указанные в файлах *nuget.config*. Чтобы указать несколько источников, задайте этот параметр несколько раз.
+  Указывает URI источника пакета NuGet для использования во время операции восстановления. Этот параметр переопределяет все источники, указанные в файлах *nuget.config*. Чтобы указать несколько источников, задайте этот параметр несколько раз.
 
-- **`--use-lockfile`**
+- **`--use-lock-file`**
 
   Включает создание файла блокировки проекта и использование этого файла при восстановлении.
 
