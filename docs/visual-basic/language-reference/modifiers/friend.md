@@ -10,76 +10,76 @@ helpviewer_keywords:
 - Protected Friend keyword combination
 - Friend keyword [Visual Basic], and Protected
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
-ms.openlocfilehash: 98f8ed947c9f4376c5778011a3a91ca8b094f9ec
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 4ac8e5942cf6097642ec111992ebfcdb91e8d7c1
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351564"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84392175"
 ---
 # <a name="friend-visual-basic"></a>Friend (Visual Basic)
 Указывает, что один или несколько объявленных программных элементов доступны только в пределах сборки, содержащей их объявление.  
   
-## <a name="remarks"></a>Примечания  
- Во многих случаях требуется, чтобы элементы программирования, такие как классы и структуры, использовались целой сборкой, а не только компонентом, который их объявляет. Однако может быть нежелательно, чтобы они были доступны коду за пределами сборки (например, если приложение является собственным). Если требуется ограничить доступ к элементу таким образом, его можно объявить с помощью модификатора `Friend`.  
+## <a name="remarks"></a>Комментарии  
+ Во многих случаях требуется, чтобы элементы программирования, такие как классы и структуры, использовались целой сборкой, а не только компонентом, который их объявляет. Однако может быть нежелательно, чтобы они были доступны коду за пределами сборки (например, если приложение является собственным). Если требуется ограничить доступ к элементу таким образом, его можно объявить с помощью `Friend` модификатора.  
   
- Код в других классах, структурах и модулях, компилируемых в одну и ту же сборку, имеет доступ ко всем элементам `Friend` в этой сборке.  
+ Код в других классах, структурах и модулях, компилируемых в одну и ту же сборку, может обращаться ко всем `Friend` элементам в этой сборке.  
   
- `Friend` доступом часто является предпочтительным уровнем для программных элементов приложения, а `Friend` является уровнем доступа по умолчанию для интерфейса, модуля, класса или структуры.  
+ `Friend`доступ часто является предпочтительным уровнем для программных элементов приложения, а `Friend` также уровнем доступа по умолчанию для интерфейса, модуля, класса или структуры.  
   
- `Friend` можно использовать только на уровне модуля, интерфейса или пространства имен. Таким образом, контекст объявления для элемента `Friend` должен быть исходным файлом, пространством имен, интерфейсом, модулем, классом или структурой. она не может быть процедурой.  
+ Можно использовать `Friend` только на уровне модуля, интерфейса или пространства имен. Таким образом, контекст объявления для `Friend` элемента должен быть исходным файлом, пространством имен, интерфейсом, модулем, классом или структурой. он не может быть процедурой.  
 
 > [!NOTE]
 > Можно также использовать модификатор доступа [Protected Friend](protected-friend.md) , который делает член класса доступным из этого класса, из производных классов и из той же сборки, в которой определен класс. Для ограничения доступа к члену из его класса и из производных классов в той же сборке используется модификатор [закрытого](private-protected.md) доступа.
 
- Сравнение `Friend` и других модификаторов доступа см. [в разделе уровни доступа в Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ Сравнение `Friend` и других модификаторов доступа см. [в разделе уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).  
   
 > [!NOTE]
-> Можно указать, что другая сборка является дружественной, что позволяет ей получить доступ ко всем типам и членам, помеченным как `Friend`. Дополнительные сведения см. в разделе [Дружественные сборки](../../../standard/assembly/friend.md).
+> Можно указать, что другая сборка является дружественной, что позволяет ей получить доступ ко всем типам и членам, помеченным как `Friend` . Дополнительные сведения см. в разделе [Дружественные сборки](../../../standard/assembly/friend.md).
 
 ## <a name="example"></a>Пример  
- Следующий класс использует модификатор `Friend`, чтобы разрешить другим программным элементам в той же сборке доступ к определенным элементам.  
+ Следующий класс использует `Friend` модификатор, чтобы разрешить другим элементам программирования в той же сборке доступ к определенным элементам.  
   
  [!code-vb[VbVbalrAccessModifiers#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalraccessmodifiers/vb/class1.vb#1)]  
   
 ## <a name="usage"></a>Использование  
- Модификатор `Friend` можно использовать в следующих контекстах:  
+ Модификатор можно использовать `Friend` в следующих контекстах:  
   
- [Оператор Class](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Оператор Class](../statements/class-statement.md)  
   
- [Оператор Const](../../../visual-basic/language-reference/statements/const-statement.md)  
+ [Оператор Const](../statements/const-statement.md)  
   
- [Оператор Declare](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Declare Statement](../statements/declare-statement.md)  
   
- [Оператор Delegate](../../../visual-basic/language-reference/statements/delegate-statement.md)  
+ [Оператор Delegate](../statements/delegate-statement.md)  
   
- [Оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Оператор Dim](../statements/dim-statement.md)  
   
- [Оператор Enum](../../../visual-basic/language-reference/statements/enum-statement.md)  
+ [Оператор Enum](../statements/enum-statement.md)  
   
- [Оператор Event](../../../visual-basic/language-reference/statements/event-statement.md)  
+ [Оператор Event](../statements/event-statement.md)  
   
- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Оператор Function](../statements/function-statement.md)  
   
- [Оператор Interface](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Оператор Interface](../statements/interface-statement.md)  
   
- [Оператор Module](../../../visual-basic/language-reference/statements/module-statement.md)  
+ [Оператор Module](../statements/module-statement.md)  
   
- [Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Property Statement](../statements/property-statement.md)  
   
- [Оператор Structure](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Оператор Structure](../statements/structure-statement.md)  
   
- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Оператор Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
-- [Public](../../../visual-basic/language-reference/modifiers/public.md)
-- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
-- [Закрытые](../../../visual-basic/language-reference/modifiers/private.md)
-- [Private Protected](./private-protected.md)
+- [Открытый](public.md)
+- [От](protected.md)
+- [Частное](private.md)
+- [Частный защищенный](./private-protected.md)
 - [Protected Friend](./protected-friend.md)
-- [Уровни доступа в Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
-- [Процедуры](../../../visual-basic/programming-guide/language-features/procedures/index.md)
-- [Структуры](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Объекты и классы](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)
+- [Процедуры](../../programming-guide/language-features/procedures/index.md)
+- [Структуры](../../programming-guide/language-features/data-types/structures.md)
+- [Объекты и классы](../../programming-guide/language-features/objects-and-classes/index.md)

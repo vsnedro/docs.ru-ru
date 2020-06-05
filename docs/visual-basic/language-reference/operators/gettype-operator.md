@@ -7,15 +7,15 @@ helpviewer_keywords:
 - GetType operator [Visual Basic]
 - GetType keyword [Visual Basic]
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
-ms.openlocfilehash: 4e59bcfaa24c9545ed75c6b5c1d29cad398ac2de
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 37644a9c37ffde084120c5f1e1ee8c87a04ffc3c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349548"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84371159"
 ---
 # <a name="gettype-operator-visual-basic"></a>Оператор GetType (Visual Basic)
-Возвращает объект <xref:System.Type> для указанного типа. Объект <xref:System.Type> предоставляет сведения о типе, например его свойства, методы и события.  
+Возвращает <xref:System.Type> объект для указанного типа. <xref:System.Type>Объект предоставляет сведения о типе, например его свойства, методы и события.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,12 +29,12 @@ GetType(typename)
 |---|---|  
 |`typename`|Имя типа, для которого требуется получить сведения.|  
   
-## <a name="remarks"></a>Заметки  
- Оператор `GetType` возвращает объект <xref:System.Type> для указанного `typename`. В `typename`можно передать имя любого определенного типа. Это поведение характеризуется следующим образом.  
+## <a name="remarks"></a>Комментарии  
+ `GetType`Оператор возвращает <xref:System.Type> объект для указанного объекта `typename` . Имя любого определенного типа можно передать в `typename` . Это включает следующие действия.  
   
-- Любой тип данных Visual Basic, например `Boolean` или `Date`.  
+- Любой тип данных Visual Basic, например `Boolean` или `Date` .  
   
-- Любой .NET Framework класс, структура, модуль или интерфейс, например <xref:System.ArgumentException?displayProperty=nameWithType> или <xref:System.Double?displayProperty=nameWithType>.  
+- Любой .NET Framework класс, структура, модуль или интерфейс, например <xref:System.ArgumentException?displayProperty=nameWithType> или <xref:System.Double?displayProperty=nameWithType> .  
   
 - Любой класс, структура, модуль или интерфейс, определенный приложением.  
   
@@ -44,21 +44,21 @@ GetType(typename)
   
 - Любое перечисление, определенное Visual Basic, .NET Framework или вашего приложения.  
   
- Если требуется получить объект типа объектной переменной, используйте метод <xref:System.Type.GetType%2A?displayProperty=nameWithType>.  
+ Если требуется получить объект типа объектной переменной, используйте <xref:System.Type.GetType%2A?displayProperty=nameWithType> метод.  
   
- Оператор `GetType` может быть полезен в следующих случаях:  
+ `GetType`Оператор может быть полезен в следующих случаях:  
   
-- Необходимо получить доступ к метаданным для типа во время выполнения. Объект <xref:System.Type> предоставляет метаданные, такие как члены типов и сведения о развертывании. Это необходимо, например, для отражения сборки. Дополнительные сведения см. в разделе <xref:System.Reflection?displayProperty=nameWithType>.  
+- Необходимо получить доступ к метаданным для типа во время выполнения. <xref:System.Type>Объект предоставляет метаданные, такие как члены типов и сведения о развертывании. Это необходимо, например, для отражения сборки. Дополнительные сведения см. в разделе <xref:System.Reflection?displayProperty=nameWithType>.  
   
-- Необходимо сравнить две ссылки на объект, чтобы определить, ссылаются ли они на экземпляры одного типа. В противном случае `GetType` возвращает ссылки на один и тот же объект <xref:System.Type>.  
+- Необходимо сравнить две ссылки на объект, чтобы определить, ссылаются ли они на экземпляры одного типа. В противном случае `GetType` возвращает ссылки на один и тот же <xref:System.Type> объект.  
   
 ## <a name="example"></a>Пример  
- В следующих примерах показан используемый оператор `GetType`.  
+ В следующих примерах показан используемый `GetType` оператор.  
   
  [!code-vb[VbVbalrOperators#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#26)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Порядок применения операторов в Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Список операторов, сгруппированных по функциональному назначению](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
-- [Операторы и выражения](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Порядок применения операторов в Visual Basic](operator-precedence.md)
+- [Список операторов, сгруппированных по функциональному назначению](operators-listed-by-functionality.md)
+- [Операторы и выражения](../../programming-guide/language-features/operators-and-expressions/index.md)
