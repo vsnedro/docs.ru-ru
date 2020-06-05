@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - BC33107
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
-ms.openlocfilehash: 4b520949cb59b63ea39441632dc5e2c6d000d711
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: ca16c6604ee071668a5c65d7e9052b233e2313c7
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249530"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403022"
 ---
-# <a name="first-operand-in-a-binary-if-expression-must-be-nullable-or-a-reference-type"></a><span data-ttu-id="e51ea-102">Первый операнд в двоичном выражении If должен поддерживать значение NULL или быть ссылочного типа</span><span class="sxs-lookup"><span data-stu-id="e51ea-102">First operand in a binary 'If' expression must be nullable or a reference type</span></span>
-<span data-ttu-id="e51ea-103">Выражение `If` может занять два или три аргумента.</span><span class="sxs-lookup"><span data-stu-id="e51ea-103">An `If` expression can take either two or three arguments.</span></span> <span data-ttu-id="e51ea-104">При отправке только двух аргументов первым аргументом должен быть тип ссылки или необыдаенный тип значения.</span><span class="sxs-lookup"><span data-stu-id="e51ea-104">When you send only two arguments, the first argument must be a reference type or a nullable value type.</span></span> <span data-ttu-id="e51ea-105">Если первый аргумент оценивается `Nothing`ни к чему, кроме, его значение возвращается.</span><span class="sxs-lookup"><span data-stu-id="e51ea-105">If the first argument evaluates to anything other than `Nothing`, its value is returned.</span></span> <span data-ttu-id="e51ea-106">Если первый аргумент `Nothing`оценивается, второй аргумент оценивается и возвращается.</span><span class="sxs-lookup"><span data-stu-id="e51ea-106">If the first argument evaluates to `Nothing`, the second argument is evaluated and returned.</span></span>  
+# <a name="first-operand-in-a-binary-if-expression-must-be-nullable-or-a-reference-type"></a><span data-ttu-id="668c6-102">Первый операнд в двоичном выражении If должен поддерживать значение NULL или быть ссылочного типа</span><span class="sxs-lookup"><span data-stu-id="668c6-102">First operand in a binary 'If' expression must be nullable or a reference type</span></span>
+<span data-ttu-id="668c6-103">`If`Выражение может принимать либо два, либо три аргумента.</span><span class="sxs-lookup"><span data-stu-id="668c6-103">An `If` expression can take either two or three arguments.</span></span> <span data-ttu-id="668c6-104">При отправке только двух аргументов первый аргумент должен быть ссылочным типом или типом значения, допускающим значение null.</span><span class="sxs-lookup"><span data-stu-id="668c6-104">When you send only two arguments, the first argument must be a reference type or a nullable value type.</span></span> <span data-ttu-id="668c6-105">Если первый аргумент принимает значение, отличное от, то `Nothing` возвращается.</span><span class="sxs-lookup"><span data-stu-id="668c6-105">If the first argument evaluates to anything other than `Nothing`, its value is returned.</span></span> <span data-ttu-id="668c6-106">Если первый аргумент имеет значение `Nothing` , то вычисляется и возвращается второй аргумент.</span><span class="sxs-lookup"><span data-stu-id="668c6-106">If the first argument evaluates to `Nothing`, the second argument is evaluated and returned.</span></span>  
   
- <span data-ttu-id="e51ea-107">Например, следующий код `If` содержит два выражения: одно с тремя аргументами и одно с двумя аргументами.</span><span class="sxs-lookup"><span data-stu-id="e51ea-107">For example, the following code contains two `If` expressions, one with three arguments and one with two arguments.</span></span> <span data-ttu-id="e51ea-108">Выражения вычисляют и возвращают одно и то же значение.</span><span class="sxs-lookup"><span data-stu-id="e51ea-108">The expressions calculate and return the same value.</span></span>  
+ <span data-ttu-id="668c6-107">Например, следующий код содержит два `If` выражения: один с тремя аргументами и один с двумя аргументами.</span><span class="sxs-lookup"><span data-stu-id="668c6-107">For example, the following code contains two `If` expressions, one with three arguments and one with two arguments.</span></span> <span data-ttu-id="668c6-108">Выражения вычисляют и возвращают одно и то же значение.</span><span class="sxs-lookup"><span data-stu-id="668c6-108">The expressions calculate and return the same value.</span></span>  
   
 ```vb  
 ' firstChoice is a nullable value type.  
@@ -29,7 +29,7 @@ Console.WriteLine(If(firstChoice IsNot Nothing, firstChoice, secondChoice))
 Console.WriteLine(If(firstChoice, secondChoice))  
 ```  
   
- <span data-ttu-id="e51ea-109">Следующие выражения вызывают эту ошибку:</span><span class="sxs-lookup"><span data-stu-id="e51ea-109">The following expressions cause this error:</span></span>  
+ <span data-ttu-id="668c6-109">Эта ошибка возникает в следующих выражениях:</span><span class="sxs-lookup"><span data-stu-id="668c6-109">The following expressions cause this error:</span></span>  
   
 ```vb  
 Dim choice1 = 4  
@@ -42,19 +42,19 @@ Dim booleanVar = True
 'Console.WriteLine(If(booleanVar, "Test returns True."))  
 ```  
   
- <span data-ttu-id="e51ea-110">**Идентификатор ошибки:** BC33107</span><span class="sxs-lookup"><span data-stu-id="e51ea-110">**Error ID:** BC33107</span></span>  
+ <span data-ttu-id="668c6-110">**Идентификатор ошибки:** BC33107</span><span class="sxs-lookup"><span data-stu-id="668c6-110">**Error ID:** BC33107</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="e51ea-111">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="e51ea-111">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="668c6-111">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="668c6-111">To correct this error</span></span>  
   
-- <span data-ttu-id="e51ea-112">Если вы не можете изменить код таким образом, чтобы первый аргумент был необоснованной типом `If...Then...Else` значения или типом ссылки, рассмотрите возможность преобразования в выражение из трех аргументов `If` или в заявление.</span><span class="sxs-lookup"><span data-stu-id="e51ea-112">If you cannot change the code so that the first argument is a nullable value type or reference type, consider converting to a three-argument `If` expression, or to an `If...Then...Else` statement.</span></span>  
+- <span data-ttu-id="668c6-112">Если не удается изменить код, чтобы первый аргумент являлся типом значения, допускающим значение null, или ссылочным типом, попробуйте преобразовать в выражение с тремя аргументами `If` или в `If...Then...Else` оператор.</span><span class="sxs-lookup"><span data-stu-id="668c6-112">If you cannot change the code so that the first argument is a nullable value type or reference type, consider converting to a three-argument `If` expression, or to an `If...Then...Else` statement.</span></span>  
   
 ```vb  
 Console.WriteLine(If(choice1 < choice2, 1, 2))  
 Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="e51ea-113">См. также</span><span class="sxs-lookup"><span data-stu-id="e51ea-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="668c6-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="668c6-113">See also</span></span>
 
-- [<span data-ttu-id="e51ea-114">Оператор If</span><span class="sxs-lookup"><span data-stu-id="e51ea-114">If Operator</span></span>](../../../visual-basic/language-reference/operators/if-operator.md)
-- [<span data-ttu-id="e51ea-115">Оператор If…Then…Else</span><span class="sxs-lookup"><span data-stu-id="e51ea-115">If...Then...Else Statement</span></span>](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
-- [<span data-ttu-id="e51ea-116">Типы значений, допускающие значение NULL</span><span class="sxs-lookup"><span data-stu-id="e51ea-116">Nullable Value Types</span></span>](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+- [<span data-ttu-id="668c6-114">Оператор If</span><span class="sxs-lookup"><span data-stu-id="668c6-114">If Operator</span></span>](../operators/if-operator.md)
+- [<span data-ttu-id="668c6-115">Оператор If…Then…Else</span><span class="sxs-lookup"><span data-stu-id="668c6-115">If...Then...Else Statement</span></span>](../statements/if-then-else-statement.md)
+- [<span data-ttu-id="668c6-116">Типы значений, допускающие значение null</span><span class="sxs-lookup"><span data-stu-id="668c6-116">Nullable Value Types</span></span>](../../programming-guide/language-features/data-types/nullable-value-types.md)

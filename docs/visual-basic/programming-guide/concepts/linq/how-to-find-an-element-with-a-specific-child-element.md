@@ -2,20 +2,20 @@
 title: Практическое руководство. Поиск элементов с определенным дочерним элементом
 ms.date: 07/20/2015
 ms.assetid: b0d0a463-6a85-46c3-8453-ad25b0ecf93c
-ms.openlocfilehash: a00ca238c67e2edf4e2e68a46fbd7e2cb480ba15
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a05504070fe3d2ea5eb6135fd3bf697b131686c6
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352916"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405291"
 ---
-# <a name="how-to-find-an-element-with-a-specific-child-element-visual-basic"></a><span data-ttu-id="bcb15-102">Как найти элемент с указанным дочерним элементом (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="bcb15-102">How to: Find an Element with a Specific Child Element (Visual Basic)</span></span>
-<span data-ttu-id="bcb15-103">В этом разделе показан определенный элемент, имеющий дочерний элемент с заданным значением.</span><span class="sxs-lookup"><span data-stu-id="bcb15-103">This topic shows how to find a particular element that has a child element with a specific value.</span></span>  
+# <a name="how-to-find-an-element-with-a-specific-child-element-visual-basic"></a><span data-ttu-id="c00eb-102">Как найти элемент с указанным дочерним элементом (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="c00eb-102">How to: Find an Element with a Specific Child Element (Visual Basic)</span></span>
+<span data-ttu-id="c00eb-103">В этом разделе показан определенный элемент, имеющий дочерний элемент с заданным значением.</span><span class="sxs-lookup"><span data-stu-id="c00eb-103">This topic shows how to find a particular element that has a child element with a specific value.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="bcb15-104">Пример</span><span class="sxs-lookup"><span data-stu-id="bcb15-104">Example</span></span>  
- <span data-ttu-id="bcb15-105">В этом примере осуществляется поиск элемента `Test`, имеющего дочерний элемент `CommandLine` со значением «Examp2.EXE».</span><span class="sxs-lookup"><span data-stu-id="bcb15-105">The example finds the `Test` element that has a `CommandLine` child element with the value of "Examp2.EXE".</span></span>  
+## <a name="example"></a><span data-ttu-id="c00eb-104">Пример</span><span class="sxs-lookup"><span data-stu-id="c00eb-104">Example</span></span>  
+ <span data-ttu-id="c00eb-105">В этом примере осуществляется поиск элемента `Test`, имеющего дочерний элемент `CommandLine` со значением «Examp2.EXE».</span><span class="sxs-lookup"><span data-stu-id="c00eb-105">The example finds the `Test` element that has a `CommandLine` child element with the value of "Examp2.EXE".</span></span>  
   
- <span data-ttu-id="bcb15-106">В этом примере используется следующий XML-документ: [Пример XML-файла. Конфигурация тестирования (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="bcb15-106">This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md).</span></span>  
+ <span data-ttu-id="c00eb-106">В этом примере используется следующий XML-документ: [Пример XML-файла. Конфигурация тестирования (LINQ to XML)](sample-xml-file-test-configuration-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="c00eb-106">This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](sample-xml-file-test-configuration-linq-to-xml.md).</span></span>  
   
 ```vb  
 Dim root As XElement = XElement.Load("TestConfig.xml")  
@@ -28,19 +28,19 @@ For Each el as XElement In tests
 Next  
 ```  
   
- <span data-ttu-id="bcb15-107">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="bcb15-107">This code produces the following output:</span></span>  
+ <span data-ttu-id="c00eb-107">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="c00eb-107">This code produces the following output:</span></span>  
   
 ```console  
 0002  
 0006  
 ```  
   
- <span data-ttu-id="bcb15-108">Обратите внимание, что в этом примере используется [свойство дочерней оси XML](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md), [свойство оси атрибутов XML](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)и [свойство XML value](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md).</span><span class="sxs-lookup"><span data-stu-id="bcb15-108">Note that this example uses the [XML Child axis property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md), the [XML Attribute axis property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md), and the [XML Value property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md).</span></span>  
+ <span data-ttu-id="c00eb-108">Обратите внимание, что в этом примере используется [свойство дочерней оси XML](../../../language-reference/xml-axis/xml-child-axis-property.md), [свойство оси атрибутов XML](../../../language-reference/xml-axis/xml-attribute-axis-property.md)и [свойство XML value](../../../language-reference/xml-axis/xml-value-property.md).</span><span class="sxs-lookup"><span data-stu-id="c00eb-108">Note that this example uses the [XML Child axis property](../../../language-reference/xml-axis/xml-child-axis-property.md), the [XML Attribute axis property](../../../language-reference/xml-axis/xml-attribute-axis-property.md), and the [XML Value property](../../../language-reference/xml-axis/xml-value-property.md).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="bcb15-109">Пример</span><span class="sxs-lookup"><span data-stu-id="bcb15-109">Example</span></span>  
- <span data-ttu-id="bcb15-110">Следующий пример демонстрирует тот же запрос XML, что и в пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="bcb15-110">The following example shows the same query for XML that is in a namespace.</span></span> <span data-ttu-id="bcb15-111">Дополнительные сведения см. в разделе [Общие сведения о пространствах имен (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="bcb15-111">For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).</span></span>  
+## <a name="example"></a><span data-ttu-id="c00eb-109">Пример</span><span class="sxs-lookup"><span data-stu-id="c00eb-109">Example</span></span>  
+ <span data-ttu-id="c00eb-110">Следующий пример демонстрирует тот же запрос XML, что и в пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="c00eb-110">The following example shows the same query for XML that is in a namespace.</span></span> <span data-ttu-id="c00eb-111">Дополнительные сведения см. в разделе [Общие сведения о пространствах имен (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="c00eb-111">For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).</span></span>  
   
- <span data-ttu-id="bcb15-112">В этом примере используется следующий XML-документ: [Пример XML-файла. Конфигурация тестирования в пространстве имен](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace.md).</span><span class="sxs-lookup"><span data-stu-id="bcb15-112">This example uses the following XML document: [Sample XML File: Test Configuration in a Namespace](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace.md).</span></span>  
+ <span data-ttu-id="c00eb-112">В этом примере используется следующий XML-документ: [Пример XML-файла. Конфигурация тестирования в пространстве имен](sample-xml-file-test-configuration-in-a-namespace.md).</span><span class="sxs-lookup"><span data-stu-id="c00eb-112">This example uses the following XML document: [Sample XML File: Test Configuration in a Namespace](sample-xml-file-test-configuration-in-a-namespace.md).</span></span>  
   
 ```vb  
 Imports <xmlns='http://www.adatum.com'>  
@@ -59,17 +59,17 @@ Module Module1
 End Module  
 ```  
   
- <span data-ttu-id="bcb15-113">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="bcb15-113">This code produces the following output:</span></span>  
+ <span data-ttu-id="c00eb-113">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="c00eb-113">This code produces the following output:</span></span>  
   
 ```console  
 0002  
 0006  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="bcb15-114">См. также</span><span class="sxs-lookup"><span data-stu-id="bcb15-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c00eb-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="c00eb-114">See also</span></span>
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>
-- [<span data-ttu-id="bcb15-115">Основные запросы (LINQ to XML) (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="bcb15-115">Basic Queries (LINQ to XML) (Visual Basic)</span></span>](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
-- [<span data-ttu-id="bcb15-116">Общие сведения о стандартных операторах запроса (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="bcb15-116">Standard Query Operators Overview (Visual Basic)</span></span>](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [<span data-ttu-id="bcb15-117">Операции проекции (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="bcb15-117">Projection Operations (Visual Basic)</span></span>](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)
+- [<span data-ttu-id="c00eb-115">Основные запросы (LINQ to XML) (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="c00eb-115">Basic Queries (LINQ to XML) (Visual Basic)</span></span>](basic-queries-linq-to-xml.md)
+- [<span data-ttu-id="c00eb-116">Общие сведения о стандартных операторах запроса (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="c00eb-116">Standard Query Operators Overview (Visual Basic)</span></span>](standard-query-operators-overview.md)
+- [<span data-ttu-id="c00eb-117">Операции проекции (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="c00eb-117">Projection Operations (Visual Basic)</span></span>](projection-operations.md)

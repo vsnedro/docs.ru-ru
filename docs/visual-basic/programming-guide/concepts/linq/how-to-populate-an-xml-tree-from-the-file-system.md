@@ -2,18 +2,18 @@
 title: Практическое руководство. Заполнение дерева XML из файловой системы
 ms.date: 07/20/2015
 ms.assetid: 34eec79e-7945-4ba8-9f74-d05bb8ec67f6
-ms.openlocfilehash: 5a4c7eaea91db54afcd91d85745dfec27cbabb8c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a3898b63f24bb87ab5e0de47685c36d61f09250b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344478"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396536"
 ---
-# <a name="how-to-populate-an-xml-tree-from-the-file-system-visual-basic"></a><span data-ttu-id="7b1cc-102">Как заполнить дерево XML из файловой системы (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="7b1cc-102">How to: Populate an XML Tree from the File System (Visual Basic)</span></span>
-<span data-ttu-id="7b1cc-103">Распространенным и полезным применением XML-деревьев является использование их в качестве иерархической структуры для хранения данных с именем и значением.</span><span class="sxs-lookup"><span data-stu-id="7b1cc-103">A common and useful application of XML trees is as a hierarchical name/value data store.</span></span> <span data-ttu-id="7b1cc-104">Можно заполнить дерево XML-данными, распределенными внутри иерархии, после чего выполнять по нему запросы, преобразования и, если необходимо, сериализацию.</span><span class="sxs-lookup"><span data-stu-id="7b1cc-104">You can populate an XML tree with hierarchical data, and then query it, transform it, and if necessary, serialize it.</span></span> <span data-ttu-id="7b1cc-105">В следующем сценарии многие виды семантических конструкций, присущих XML, например пространства имен и обработка пробельных символов, неважны.</span><span class="sxs-lookup"><span data-stu-id="7b1cc-105">In this usage scenario, many of the XML specific semantics, such as namespaces and white space behavior, are not important.</span></span> <span data-ttu-id="7b1cc-106">Вместо этого XML-дерево используется как небольшая иерархическая база данных для одного пользователя, которая находится в памяти.</span><span class="sxs-lookup"><span data-stu-id="7b1cc-106">Instead, you are using the XML tree as a small, in memory, single user hierarchical database.</span></span>  
+# <a name="how-to-populate-an-xml-tree-from-the-file-system-visual-basic"></a><span data-ttu-id="e3d52-102">Как заполнить дерево XML из файловой системы (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="e3d52-102">How to: Populate an XML Tree from the File System (Visual Basic)</span></span>
+<span data-ttu-id="e3d52-103">Распространенным и полезным применением XML-деревьев является использование их в качестве иерархической структуры для хранения данных с именем и значением.</span><span class="sxs-lookup"><span data-stu-id="e3d52-103">A common and useful application of XML trees is as a hierarchical name/value data store.</span></span> <span data-ttu-id="e3d52-104">Можно заполнить дерево XML-данными, распределенными внутри иерархии, после чего выполнять по нему запросы, преобразования и, если необходимо, сериализацию.</span><span class="sxs-lookup"><span data-stu-id="e3d52-104">You can populate an XML tree with hierarchical data, and then query it, transform it, and if necessary, serialize it.</span></span> <span data-ttu-id="e3d52-105">В следующем сценарии многие виды семантических конструкций, присущих XML, например пространства имен и обработка пробельных символов, неважны.</span><span class="sxs-lookup"><span data-stu-id="e3d52-105">In this usage scenario, many of the XML specific semantics, such as namespaces and white space behavior, are not important.</span></span> <span data-ttu-id="e3d52-106">Вместо этого XML-дерево используется как небольшая иерархическая база данных для одного пользователя, которая находится в памяти.</span><span class="sxs-lookup"><span data-stu-id="e3d52-106">Instead, you are using the XML tree as a small, in memory, single user hierarchical database.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="7b1cc-107">Пример</span><span class="sxs-lookup"><span data-stu-id="7b1cc-107">Example</span></span>  
- <span data-ttu-id="7b1cc-108">В следующем примере происходит заполнение XML-дерева из локальной файловой системы при помощи рекурсии.</span><span class="sxs-lookup"><span data-stu-id="7b1cc-108">The following example populates an XML tree from the local file system using recursion.</span></span> <span data-ttu-id="7b1cc-109">Затем выполняется запрос по дереву и вычисляется общий размер всех файлов в дереве.</span><span class="sxs-lookup"><span data-stu-id="7b1cc-109">It then queries the tree, calculating the total of the sizes of all files in the tree.</span></span>  
+## <a name="example"></a><span data-ttu-id="e3d52-107">Пример</span><span class="sxs-lookup"><span data-stu-id="e3d52-107">Example</span></span>  
+ <span data-ttu-id="e3d52-108">В следующем примере происходит заполнение XML-дерева из локальной файловой системы при помощи рекурсии.</span><span class="sxs-lookup"><span data-stu-id="e3d52-108">The following example populates an XML tree from the local file system using recursion.</span></span> <span data-ttu-id="e3d52-109">Затем выполняется запрос по дереву и вычисляется общий размер всех файлов в дереве.</span><span class="sxs-lookup"><span data-stu-id="e3d52-109">It then queries the tree, calculating the total of the sizes of all files in the tree.</span></span>  
   
 ```vb  
 Module Module1  
@@ -44,7 +44,7 @@ Module Module1
 End Module  
 ```  
   
- <span data-ttu-id="7b1cc-110">Этот пример выводит данные примерно так:</span><span class="sxs-lookup"><span data-stu-id="7b1cc-110">This example produces output similar to the following:</span></span>  
+ <span data-ttu-id="e3d52-110">Этот пример выводит данные примерно так:</span><span class="sxs-lookup"><span data-stu-id="e3d52-110">This example produces output similar to the following:</span></span>  
   
 ```xml  
 <Dir Name="Tmp">  
@@ -114,6 +114,6 @@ End Module
 Total File Size:59089  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="7b1cc-111">См. также</span><span class="sxs-lookup"><span data-stu-id="7b1cc-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e3d52-111">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="e3d52-111">See also</span></span>
 
-- [<span data-ttu-id="7b1cc-112">Дополнительные методы запросов (LINQ to XML) (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="7b1cc-112">Advanced Query Techniques (LINQ to XML) (Visual Basic)</span></span>](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [<span data-ttu-id="e3d52-112">Дополнительные методы запросов (LINQ to XML) (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="e3d52-112">Advanced Query Techniques (LINQ to XML) (Visual Basic)</span></span>](advanced-query-techniques-linq-to-xml.md)
