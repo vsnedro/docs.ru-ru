@@ -5,32 +5,32 @@ helpviewer_keywords:
 - elementary data types [Visual Basic]
 - data types [Visual Basic], elementary
 ms.assetid: dfad6fe9-2da6-49a4-b0b1-2d7ae0283de5
-ms.openlocfilehash: 799cac39c0d4978a4840fbc4386b4563fa46bc2c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 56e2a675b0c63b9cbc4e587ee85a119e77b9a021
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350091"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84394095"
 ---
 # <a name="elementary-data-types-visual-basic"></a>Простые типы данных (Visual Basic)
 Visual Basic предоставляет набор предопределенных типов данных, которые можно использовать для многих элементов программирования. В этом разделе описываются эти типы и способы их использования.  
   
 > [!NOTE]
-> Каждый простейший тип данных в Visual Basic поддерживается структурой или классом в пространстве имен <xref:System>. Компилятор использует ключевое слово каждого типа данных в качестве псевдонима для базовой структуры или класса. Например, объявление переменной с помощью зарезервированного слова `Byte` совпадает с объявлением с помощью полного имени структуры <xref:System.Byte?displayProperty=nameWithType>.  
+> Каждый простейший тип данных в Visual Basic поддерживается структурой или классом, который находится в <xref:System> пространстве имен. Компилятор использует ключевое слово каждого типа данных в качестве псевдонима для базовой структуры или класса. Например, объявление переменной с помощью зарезервированного слова аналогично `Byte` объявлению с помощью полного имени структуры <xref:System.Byte?displayProperty=nameWithType> .  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Числовые типы данных](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)  
+ [Числовые типы данных](numeric-data-types.md)  
  Описывает целочисленные и неинтегральные числовые типы.  
   
- [Символьные типы данных](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)  
- Описывает типы `Char` и `String`.  
+ [Символьные типы данных](character-data-types.md)  
+ Описывает `Char` типы и `String` .  
   
- [Прочие типы данных](../../../../visual-basic/programming-guide/language-features/data-types/miscellaneous-data-types.md)  
- Описывает типы `Boolean`, `Date`и `Object`.  
+ [Прочие типы данных](miscellaneous-data-types.md)  
+ Описывает `Boolean` типы, `Date` и `Object` .  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Типы данных](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Типы данных](index.md)  
  Вводит Visual Basic типы данных и описывает, как их использовать.  
   
- [Типы данных](../../../../visual-basic/language-reference/data-types/index.md)  
+ [Типы данных](../../../language-reference/data-types/index.md)  
  Содержит общие сведения о простейших типах данных, предоставляемых Visual Basic.
