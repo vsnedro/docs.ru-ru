@@ -15,42 +15,42 @@ helpviewer_keywords:
 - MustOverride keyword [Visual Basic]
 - properties [Visual Basic], overriding
 ms.assetid: 6e9d9ad6-bb64-433f-b32b-3ef84293bf96
-ms.openlocfilehash: dc6a153a604fd0e5cee9d7d46ebcd63294f33628
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 1b20108a2d42e82c0af7598fde8d60a08fea28ec
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351482"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396198"
 ---
 # <a name="mustoverride-visual-basic"></a>MustOverride (Visual Basic)
 Указывает, что свойство или процедура не реализованы в этом классе и должны быть переопределены в производном классе, прежде чем его можно будет использовать.  
   
-## <a name="remarks"></a>Заметки  
- `MustOverride` можно использовать только в операторе объявления свойства или процедуры. Свойство или процедура, указывающая `MustOverride` должен быть членом класса, а класс должен быть помечен как [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md).  
+## <a name="remarks"></a>Комментарии  
+ Можно использовать `MustOverride` только в операторе объявления свойства или процедуры. Свойство или процедура, указывающие, `MustOverride` должен быть членом класса, а класс должен быть помечен как [MustInherit](mustinherit.md).  
   
 ## <a name="rules"></a>Правила  
   
-- **Неполное объявление.** При указании `MustOverride`не предоставляются дополнительные строки кода для свойства или процедуры, а не инструкции `End Function`, `End Property`или `End Sub`.  
+- **Неполное объявление.** При указании `MustOverride` не предоставляется никаких дополнительных строк кода для свойства или процедуры, а не `End Function` `End Property` инструкции, или `End Sub` .  
   
-- **Комбинированные модификаторы.** В одном объявлении нельзя указать `MustOverride` вместе с `NotOverridable`, `Overridable`или `Shared`.  
+- **Комбинированные модификаторы.** Нельзя указывать `MustOverride` вместе с `NotOverridable` , `Overridable` или `Shared` в одном объявлении.  
   
-- **Затенение и переопределение.** Сокрытие и переопределение заменяют наследуемый элемент, но между этими подходами существуют значительные различия. Дополнительные сведения см. [в разделе теневая поддержка в Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).  
+- **Сокрытие и переопределение.** Сокрытие и переопределение заменяют наследуемый элемент, но между этими подходами существуют значительные различия. Дополнительные сведения см. [в разделе теневая поддержка в Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md).  
   
 - **Альтернативные условия.** Элемент, который нельзя использовать, за исключением переопределения, иногда называют *чисто виртуальным* элементом.  
   
  Модификатор `MustOverride` можно использовать в следующих контекстах:  
   
- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Оператор Function](../statements/function-statement.md)  
   
- [Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Property Statement](../statements/property-statement.md)  
   
- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Оператор Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)
-- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)
-- [Переопределения](../../../visual-basic/language-reference/modifiers/overrides.md)
-- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
-- [Затенение в Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
+- [NotOverridable](notoverridable.md)
+- [Overridable](overridable.md)
+- [Переопределения](overrides.md)
+- [MustInherit](mustinherit.md)
+- [Ключевые слова](../keywords/index.md)
+- [Сокрытие в Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md)

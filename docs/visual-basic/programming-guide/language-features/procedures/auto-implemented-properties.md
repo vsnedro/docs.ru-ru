@@ -8,15 +8,15 @@ helpviewer_keywords:
 - properties [Visual Basic], auto-implemented
 - auto-implemented properties [Visual Basic]
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
-ms.openlocfilehash: b322bd2215c95298be0a33ace1f3590a63878e24
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: d991a385e537c43daeb708e96e712acd92110379
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350388"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403386"
 ---
 # <a name="auto-implemented-properties-visual-basic"></a>Автоматически реализуемые свойства (Visual Basic)
-*Автоматические реализованные свойства* позволяют быстро указывать свойство класса без необходимости написания кода для `Get` и `Set` свойства. При написании кода для автоматически реализуемого свойства компилятор Visual Basic автоматически создает закрытое поле для хранения переменной свойства, в дополнение к созданию связанных процедур `Get` и `Set`.  
+*Автоматические реализованные свойства* позволяют быстро указывать свойство класса без необходимости написания кода для `Get` и `Set` Свойства. При написании кода для автоматически реализуемого свойства компилятор Visual Basic автоматически создает закрытое поле для хранения переменной свойства, в дополнение к созданию связанных процедур `Get` и `Set`.  
   
  С помощью автоматически реализуемых свойств вы сможете объявлять свойства, включая значение по умолчанию, в одной строке. В следующем примере показано три объявления свойства.  
   
@@ -90,13 +90,13 @@ End Class
 - Добавить XML-комментарии для резервного поля.  
   
 ## <a name="expanding-an-auto-implemented-property"></a>Расширение автоматически реализуемого свойства  
- Если вам требуется преобразовать автоматически реализуемое свойство в расширенное свойство, которое содержит процедуру `Get` или `Set`, редактор кода Visual Basic может автоматически создать процедуры `Get` и `Set` и оператор `End Property` для свойства. Код создается при помещении курсора на пустую строку после оператора `Property` введите `G` (для `Get`) или `S` (для `Set`) и нажмите клавишу ВВОД. Редактор кода Visual Basic автоматически создает процедуру `Get` или `Set` для свойств только для чтения и только для записи при нажатии клавиши ВВОД после оператора `Property`.  
+ Если вам требуется преобразовать автоматически реализуемое свойство в расширенное свойство, которое содержит процедуру `Get` или `Set`, редактор кода Visual Basic может автоматически создать процедуры `Get` и `Set` и оператор `End Property` для свойства. Код создается при помещении курсора на пустую строку после `Property` оператора, введите a `G` (для `Get` ) или `S` (для `Set` ) и нажмите клавишу ВВОД. Редактор кода Visual Basic автоматически создает процедуру `Get` или `Set` для свойств только для чтения и только для записи при нажатии клавиши ВВОД после оператора `Property`.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Инструкции. объявление и вызов свойства по умолчанию в Visual Basic](./how-to-declare-and-call-a-default-property.md)
+- [Практическое руководство. Объявление и вызов свойства по умолчанию в Visual Basic](./how-to-declare-and-call-a-default-property.md)
 - [Практическое руководство. Объявление свойства со смешанным уровнем доступа](./how-to-declare-a-property-with-mixed-access-levels.md)
-- [Оператор Property](../../../../visual-basic/language-reference/statements/property-statement.md)
-- [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md)
-- [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)
-- [Объекты и классы](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Property Statement](../../../language-reference/statements/property-statement.md)
+- [Доступно](../../../language-reference/modifiers/readonly.md)
+- [WriteOnly](../../../language-reference/modifiers/writeonly.md)
+- [Объекты и классы](../objects-and-classes/index.md)

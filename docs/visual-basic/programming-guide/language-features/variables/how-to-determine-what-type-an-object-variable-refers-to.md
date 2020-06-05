@@ -6,27 +6,27 @@ helpviewer_keywords:
 - variables [Visual Basic], object
 - object variables [Visual Basic], determining type
 ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
-ms.openlocfilehash: b3778a170759f685db78e7dcde219138196f9eca
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: d3224000f5958a8619e38c4d2f6dc5dbb275ad45
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75344198"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410494"
 ---
 # <a name="how-to-determine-what-type-an-object-variable-refers-to-visual-basic"></a>Практическое руководство. Определение типа, на который указывает объектная переменная (Visual Basic)
 
-Объектная переменная содержит указатель на данные, которые хранятся в других местах. Тип этих данных может изменяться во время выполнения. В любой момент можно использовать метод <xref:System.Type.GetTypeCode%2A> для определения текущего типа времени выполнения или [оператор typeof](../../../../visual-basic/language-reference/operators/typeof-operator.md) , чтобы определить, совместим ли текущий тип времени выполнения с указанным типом.
+Объектная переменная содержит указатель на данные, которые хранятся в других местах. Тип этих данных может изменяться во время выполнения. В любой момент можно использовать <xref:System.Type.GetTypeCode%2A> метод для определения текущего типа времени выполнения или [оператор typeof](../../../language-reference/operators/typeof-operator.md) , чтобы определить, совместим ли текущий тип времени выполнения с указанным типом.
 
 ### <a name="to-determine-the-exact-type-an-object-variable-currently-refers-to"></a>Определение точного типа объектной переменной, на которую в настоящее время ссылается
 
-1. В объектной переменной вызовите метод <xref:System.Object.GetType%2A>, чтобы получить объект <xref:System.Type?displayProperty=nameWithType>.
+1. В объектной переменной вызовите <xref:System.Object.GetType%2A> метод, чтобы получить <xref:System.Type?displayProperty=nameWithType> объект.
 
     ```vb
     Dim myObject As Object
     myObject.GetType()
     ```
 
-2. В классе <xref:System.Type?displayProperty=nameWithType> вызовите общий метод <xref:System.Type.GetTypeCode%2A>, чтобы получить значение перечисления <xref:System.TypeCode> для типа объекта.
+2. В <xref:System.Type?displayProperty=nameWithType> классе вызовите метод Shared, <xref:System.Type.GetTypeCode%2A> чтобы получить <xref:System.TypeCode> значение перечисления для типа объекта.
 
     ```vb
     Dim myObject As Object
@@ -34,11 +34,11 @@ ms.locfileid: "75344198"
     MsgBox("myObject currently has type code " & CStr(datTyp))
     ```
 
-    Можно проверить значение перечисления <xref:System.TypeCode> в отношении любого интересующего его члена, например `Double`.
+    Можно проверить <xref:System.TypeCode> значение перечисления в отношении любого интересующего его члена, например `Double` .
 
 ### <a name="to-determine-whether-an-object-variables-type-is-compatible-with-a-specified-type"></a>Определение, совместима ли тип объектной переменной с указанным типом
 
-- Используйте оператор `TypeOf` в сочетании с [оператором is](../../../../visual-basic/language-reference/operators/is-operator.md) для проверки объекта с помощью выражения `TypeOf`...`Is`.
+- Используйте `TypeOf` оператор в сочетании с [оператором is](../../../language-reference/operators/is-operator.md) для проверки объекта с помощью выражения. `TypeOf` .. `Is`
 
     ```vb
     If TypeOf objA Is System.Windows.Forms.Control Then
@@ -46,20 +46,20 @@ ms.locfileid: "75344198"
     End If
     ```
 
-    Выражение `TypeOf`...`Is` возвращает `True`, если тип времени выполнения объекта совместим с указанным типом.
+    `TypeOf`Выражение... `Is` возвращает значение, `True` Если тип времени выполнения объекта совместим с указанным типом.
 
-    Критерий совместимости зависит от того, является ли указанный тип классом, структурой или интерфейсом. Как правило, типы являются совместимыми, если объект имеет тот же тип, что и, наследует от или реализует указанный тип. Дополнительные сведения см. в разделе [оператор typeof](../../../../visual-basic/language-reference/operators/typeof-operator.md).
+    Критерий совместимости зависит от того, является ли указанный тип классом, структурой или интерфейсом. Как правило, типы являются совместимыми, если объект имеет тот же тип, что и, наследует от или реализует указанный тип. Дополнительные сведения см. в разделе [оператор typeof](../../../language-reference/operators/typeof-operator.md).
 
 ## <a name="compile-the-code"></a>Компиляция кода
 
-Обратите внимание, что указанный тип не может быть переменной или выражением. Это должно быть имя определенного типа, например класса, структуры или интерфейса. Сюда входят встроенные типы, такие как `Integer` и `String`.
+Обратите внимание, что указанный тип не может быть переменной или выражением. Это должно быть имя определенного типа, например класса, структуры или интерфейса. Сюда входят встроенные типы, такие как `Integer` и `String` .
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Object.GetType%2A>
 - <xref:System.Type?displayProperty=nameWithType>
 - <xref:System.Type.GetTypeCode%2A>
 - <xref:System.TypeCode>
-- [Объектные переменные](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Значения объектных переменных](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Объектные переменные](object-variables.md)
+- [Значения объектных переменных](object-variable-values.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)

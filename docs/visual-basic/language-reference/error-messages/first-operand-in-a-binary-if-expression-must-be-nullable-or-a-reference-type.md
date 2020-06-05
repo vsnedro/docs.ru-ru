@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - BC33107
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
-ms.openlocfilehash: 4b520949cb59b63ea39441632dc5e2c6d000d711
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: ca16c6604ee071668a5c65d7e9052b233e2313c7
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249530"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403022"
 ---
 # <a name="first-operand-in-a-binary-if-expression-must-be-nullable-or-a-reference-type"></a>Первый операнд в двоичном выражении If должен поддерживать значение NULL или быть ссылочного типа
-Выражение `If` может занять два или три аргумента. При отправке только двух аргументов первым аргументом должен быть тип ссылки или необыдаенный тип значения. Если первый аргумент оценивается `Nothing`ни к чему, кроме, его значение возвращается. Если первый аргумент `Nothing`оценивается, второй аргумент оценивается и возвращается.  
+`If`Выражение может принимать либо два, либо три аргумента. При отправке только двух аргументов первый аргумент должен быть ссылочным типом или типом значения, допускающим значение null. Если первый аргумент принимает значение, отличное от, то `Nothing` возвращается. Если первый аргумент имеет значение `Nothing` , то вычисляется и возвращается второй аргумент.  
   
- Например, следующий код `If` содержит два выражения: одно с тремя аргументами и одно с двумя аргументами. Выражения вычисляют и возвращают одно и то же значение.  
+ Например, следующий код содержит два `If` выражения: один с тремя аргументами и один с двумя аргументами. Выражения вычисляют и возвращают одно и то же значение.  
   
 ```vb  
 ' firstChoice is a nullable value type.  
@@ -29,7 +29,7 @@ Console.WriteLine(If(firstChoice IsNot Nothing, firstChoice, secondChoice))
 Console.WriteLine(If(firstChoice, secondChoice))  
 ```  
   
- Следующие выражения вызывают эту ошибку:  
+ Эта ошибка возникает в следующих выражениях:  
   
 ```vb  
 Dim choice1 = 4  
@@ -46,15 +46,15 @@ Dim booleanVar = True
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Если вы не можете изменить код таким образом, чтобы первый аргумент был необоснованной типом `If...Then...Else` значения или типом ссылки, рассмотрите возможность преобразования в выражение из трех аргументов `If` или в заявление.  
+- Если не удается изменить код, чтобы первый аргумент являлся типом значения, допускающим значение null, или ссылочным типом, попробуйте преобразовать в выражение с тремя аргументами `If` или в `If...Then...Else` оператор.  
   
 ```vb  
 Console.WriteLine(If(choice1 < choice2, 1, 2))  
 Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор If](../../../visual-basic/language-reference/operators/if-operator.md)
-- [Оператор If…Then…Else](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
-- [Типы значений, допускающие значение NULL](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+- [Оператор If](../operators/if-operator.md)
+- [Оператор If…Then…Else](../statements/if-then-else-statement.md)
+- [Типы значений, допускающие значение null](../../programming-guide/language-features/data-types/nullable-value-types.md)

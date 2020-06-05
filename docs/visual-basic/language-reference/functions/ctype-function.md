@@ -9,12 +9,12 @@ helpviewer_keywords:
 - CType function
 - conversions [Visual Basic], expression
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
-ms.openlocfilehash: 18b2d5a28cd6ef885ba8d237da6764dbbd108b59
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 88d609146648fe1b0c3124b99a65e85293fc0707
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348099"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406434"
 ---
 # <a name="ctype-function-visual-basic"></a>Функция CType (Visual Basic)
 
@@ -26,50 +26,50 @@ ms.locfileid: "74348099"
 CType(expression, typename)
 ```
 
-## <a name="parts"></a>Части
+## <a name="parts"></a>Компоненты
 
-`expression` любое допустимое выражение. Если значение `expression` находится вне диапазона, разрешенного `typename`, Visual Basic создает исключение.
+`expression`Любое допустимое выражение. Если значение `expression` выходит за пределы диапазона, допустимого параметром `typename` , Visual Basic создает исключение.
 
-`typename` любое выражение, которое является допустимым в предложении `As` в операторе `Dim`, то есть имя любого типа данных, объекта, структуры, класса или интерфейса.
+`typename`Любое выражение, которое является допустимым в `As` предложении `Dim` оператора, то есть имя любого типа данных, объекта, структуры, класса или интерфейса.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 > [!TIP]
 > Для преобразования типов также можно использовать следующие функции.
 >
-> - Функции преобразования типов, такие как `CByte`, `CDbl`и `CInt`, которые выполняют преобразование в конкретный тип данных. Дополнительные сведения см. в разделе [функции преобразования типов](../../../visual-basic/language-reference/functions/type-conversion-functions.md).
-> - Оператор [DirectCast](../../../visual-basic/language-reference/operators/directcast-operator.md) или [Оператор TryCast](../../../visual-basic/language-reference/operators/trycast-operator.md). Для этих операторов требуется, чтобы один тип наследовал или реализовывал другой тип. Они могут обеспечить более высокую производительность, чем `CType` при преобразовании в тип данных `Object` и из него.
+> - Функции преобразования типов, такие как `CByte` , `CDbl` и `CInt` , которые выполняют преобразование в конкретный тип данных. Дополнительные сведения см. в разделе [Функции преобразования типов](type-conversion-functions.md).
+> - Оператор [DirectCast](../operators/directcast-operator.md) или [Оператор TryCast](../operators/trycast-operator.md). Для этих операторов требуется, чтобы один тип наследовал или реализовывал другой тип. Они могут обеспечить более высокую производительность, чем `CType` при преобразовании в тип данных и из него `Object` .
 
-`CType` компилируется встроенным образом. Это означает, что код преобразования является частью кода, который вычисляет выражение. В некоторых случаях код выполняется быстрее, так как для выполнения преобразования не вызываются никакие процедуры.
+`CType`компилируется встроенным образом, что означает, что код преобразования является частью кода, который вычисляет выражение. В некоторых случаях код выполняется быстрее, так как для выполнения преобразования не вызываются никакие процедуры.
 
-Если преобразование из `expression` в `typename` не определено (например, из `Integer` в `Date`), Visual Basic выводит сообщение об ошибке времени компиляции.
+Если преобразование не определено из `expression` в `typename` (например, из в `Integer` `Date` ), Visual Basic отображает сообщение об ошибке времени компиляции.
 
-Если во время выполнения происходит сбой преобразования, выдается соответствующее исключение. Если сужение преобразования завершается неудачно, то наиболее распространенным результатом является <xref:System.OverflowException>. Если преобразование не определено, создается <xref:System.InvalidCastException>. Например, это может произойти, если `expression` имеет тип `Object` и тип времени выполнения не преобразуется в `typename`.
+Если во время выполнения происходит сбой преобразования, выдается соответствующее исключение. Если понижающие преобразования не удается выполнить, <xref:System.OverflowException> наиболее распространенным результатом является. Если преобразование не определено, <xref:System.InvalidCastException> в вызываемом элементе. Например, это может произойти, если `expression` имеет тип `Object` , а тип времени выполнения не имеет преобразования в `typename` .
 
-Если тип данных `expression` или `typename` является определенным классом или структурой, можно определить `CType` в этом классе или структуре как оператор преобразования. Это делает `CType` действовать в качестве *перегруженного оператора*. В этом случае можно управлять поведением преобразований в класс или структуру, включая исключения, которые могут быть созданы.
+Если тип данных `expression` или `typename` является определенным классом или структурой, можно определить `CType` в этом классе или структуре как оператор преобразования. Это делает работу `CType` в качестве *перегруженного оператора*. В этом случае можно управлять поведением преобразований в класс или структуру, включая исключения, которые могут быть созданы.
 
 ## <a name="overloading"></a>Перегрузка
 
-Оператор `CType` можно также перегрузить в классе или структуре, определенной вне кода. Если код преобразует в или из такого класса или структуры, убедитесь, что вы понимаете поведение его оператора `CType`. Для получения дополнительной информации см. [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).
+`CType`Оператор также может быть перегружен для класса или структуры, определенной вне кода. Если код преобразует в или из такого класса или структуры, убедитесь, что вы понимаете поведение его `CType` оператора. Для получения дополнительной информации см. [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).
 
 ## <a name="converting-dynamic-objects"></a>Преобразование динамических объектов
 
-Преобразования типов динамических объектов выполняются с помощью определяемых пользователем динамических преобразований, использующих методы <xref:System.Dynamic.DynamicObject.TryConvert%2A> или <xref:System.Dynamic.DynamicMetaObject.BindConvert%2A>. При работе с динамическими объектами используйте метод <xref:Microsoft.VisualBasic.Conversion.CTypeDynamic%2A> для преобразования динамического объекта.
+Преобразования типов динамических объектов выполняются с помощью определяемых пользователем динамических преобразований, использующих <xref:System.Dynamic.DynamicObject.TryConvert%2A> <xref:System.Dynamic.DynamicMetaObject.BindConvert%2A> методы или. При работе с динамическими объектами используйте <xref:Microsoft.VisualBasic.Conversion.CTypeDynamic%2A> метод для преобразования динамического объекта.
 
 ## <a name="example"></a>Пример
 
-В следующем примере функция `CType` используется для преобразования выражения в тип данных `Single`.
+В следующем примере функция используется `CType` для преобразования выражения в `Single` тип данных.
 
 [!code-vb[VbVbalrFunctions#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#24)]
 
-Дополнительные примеры см. в разделе [явные и неявные преобразования](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).
+Дополнительные примеры см. в разделе [явные и неявные преобразования](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.OverflowException>
 - <xref:System.InvalidCastException>
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Функции преобразования](../../../visual-basic/language-reference/functions/conversion-functions.md)
-- [Оператор Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Практическое руководство. Определение оператора преобразования](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Type Conversion Functions](type-conversion-functions.md)
+- [Функции преобразования](conversion-functions.md)
+- [Operator Statement](../statements/operator-statement.md)
+- [Практическое руководство. Определение оператора преобразования](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
 - [Преобразование типов в .NET Framework](../../../standard/base-types/type-conversion.md)

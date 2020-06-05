@@ -2,12 +2,12 @@
 title: Фильтрация данных
 ms.date: 07/20/2015
 ms.assetid: 7749519a-7edc-49fe-aef9-6a353864af6c
-ms.openlocfilehash: 81e207e451055fb2952e4bf393db067f0851afb4
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: f7a1aa76dc93cc03952e55f5f8fc3f75176a3f9f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353489"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84383421"
 ---
 # <a name="filtering-data-visual-basic"></a>Фильтрация данных (Visual Basic)
 
@@ -21,14 +21,14 @@ ms.locfileid: "74353489"
 
 ## <a name="methods"></a>Методы
 
-|Имя метода|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
+|Имя метода|Описание:|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
 |-----------------|-----------------|------------------------------------------|----------------------|
-|OfType|Выбирает значения в зависимости от возможности приведения их к указанному типу.|Неприменимо.|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|
+|OfType|Выбирает значения в зависимости от возможности приведения их к указанному типу.|Не применяется|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|
 |Where|Выбирает значения, основанные на функции предиката.|`Where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=nameWithType>|
 
 ## <a name="query-expression-syntax-example"></a>Пример синтаксиса выражения запроса
 
-В следующем примере `Where` используется для фильтрации из массива строк, имеющих определенную длину.
+В следующем примере используется `Where` для фильтрации из массива строк, имеющих определенную длину.
 
 ```vb
 Dim words() As String = {"the", "quick", "brown", "fox", "jumps"}
@@ -51,12 +51,12 @@ MsgBox(sb.ToString())
 ' fox
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq>
-- [Общие сведения о стандартных операторах запроса (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Предложения Where](../../../../visual-basic/language-reference/queries/where-clause.md)
-- [How to: Filter Query Results](../../../../visual-basic/programming-guide/language-features/linq/how-to-filter-query-results-by-using-linq.md) (Практическое руководство. Фильтрование результатов запроса)
-- [Как запрашивать метаданные сборки с помощью отражения (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
-- [Как запросить файлы с указанным атрибутом или именем (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md)
-- [Как сортировать или фильтровать текстовые данные по любому слову или полю (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
+- [Предложение WHERE](../../../language-reference/queries/where-clause.md)
+- [How to: Filter Query Results](../../language-features/linq/how-to-filter-query-results-by-using-linq.md) (Практическое руководство. Фильтрование результатов запроса)
+- [Как запрашивать метаданные сборки с помощью отражения (LINQ) (Visual Basic)](how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
+- [Как запросить файлы с указанным атрибутом или именем (Visual Basic)](how-to-query-for-files-with-a-specified-attribute-or-name.md)
+- [Практическое руководство. Сортировка или фильтрация текстовых данных по любому слову или полю (LINQ) (Visual Basic)](how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

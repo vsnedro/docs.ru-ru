@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - In keyword [Visual Basic]
 ms.assetid: 2f003a85-8fb6-4280-822b-6ac12839b915
-ms.openlocfilehash: bf7a21e694b245ea72916e0930f11c332a3c9726
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ad3a1281cfaf366f1f28a847d3c3831ad11b0a20
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353580"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404528"
 ---
 # <a name="in-clause-visual-basic"></a>Предложение In (Visual Basic)
-Указывает группу, которую будет перебирать переменная цикла в цикле `For Each` или определяет коллекцию для запроса в предложении `From`, `Join`или `Group Join`.  
+Указывает группу, которую должна пройти циклическая переменная цикла `For Each` , или определяет коллекцию для запроса в `From` `Join` `Group Join` предложении, или.  
   
-## <a name="remarks"></a>Заметки  
- Ключевое слово `In` можно использовать в следующих контекстах:  
+## <a name="remarks"></a>Комментарии  
+ `In`Ключевое слово можно использовать в следующих контекстах:  
   
- [Оператор For Each...Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
+ [Оператор For Each…Next](for-each-next-statement.md)  
   
- [Предложение From](../../../visual-basic/language-reference/queries/from-clause.md)  
+ [Предложение FROM](../queries/from-clause.md)  
   
- [Предложение Join](../../../visual-basic/language-reference/queries/join-clause.md)  
+ [Предложение Join](../queries/join-clause.md)  
   
- [Предложение Group Join](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Предложение Group Join](../queries/group-join-clause.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
+- [Ключевые слова](../keywords/index.md)

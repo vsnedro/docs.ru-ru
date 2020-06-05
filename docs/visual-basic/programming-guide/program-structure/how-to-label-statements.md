@@ -7,16 +7,16 @@ helpviewer_keywords:
 - ': separator character'
 - Visual Basic code, labeling statements
 ms.assetid: 38f1ff43-2054-42cb-963b-1998e60c6ed4
-ms.openlocfilehash: be116ac8046c43e89e44c2d9127c6131e4dfaa52
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 8f04d592c51b6a0630bfe623fd3574555aef9ff8
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74347381"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403217"
 ---
 # <a name="how-to-label-statements-visual-basic"></a>Практическое руководство. Операторы меток (Visual Basic)
 
-Блоки инструкций состоят из строк кода, разделенных двоеточиями. Строки кода, которым предшествует идентифицирующая строка или целое число, говорят о *метке*. Метки операторов используются для пометки строки кода, чтобы она определялась для использования с такими инструкциями, как `On Error Goto`.
+Блоки инструкций состоят из строк кода, разделенных двоеточиями. Строки кода, которым предшествует идентифицирующая строка или целое число, говорят о *метке*. Метки операторов используются для пометки строки кода, чтобы она определялась для использования с такими операторами, как `On Error Goto` .
 
 Метки могут быть либо допустимыми Visual Basic идентификаторами, например, для идентификации программных элементов, либо целочисленными литералами. Метка должна располагаться в начале строки исходного кода, после которой должно следовать двоеточие, независимо от того, за чем следует оператор в той же строке.
 
@@ -31,12 +31,12 @@ ms.locfileid: "74347381"
 
 Поместите идентификатор, за которым следует двоеточие, в начало строки исходного кода.
 
-Например, следующие строки кода помечены как `Jump` и `120`соответственно:
+Например, следующие строки кода помечены как `Jump` и `120` , соответственно:
 
 [!code-vb[VbVbalrStatements#708](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#708)]
 
 ## <a name="see-also"></a>См. также
 
-- [Операторы](../../../visual-basic/programming-guide/language-features/statements.md)
-- [Имена объявленных элементов](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
-- [Соглашения о структуре программы и коде](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
+- [Операторы](../language-features/statements.md)
+- [Declared Element Names](../language-features/declared-elements/declared-element-names.md)
+- [Соглашения о структуре программы и коде](program-structure-and-code-conventions.md)

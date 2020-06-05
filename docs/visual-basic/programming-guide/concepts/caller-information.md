@@ -2,19 +2,19 @@
 title: Сведения о вызывающем
 ms.date: 07/20/2015
 ms.assetid: 15d556eb-4d0c-4497-98a3-7f60abb7d6a1
-ms.openlocfilehash: 7c87b540a68f4d0219918fed66de6c1b635104a9
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 93fb1e327d65ac19f293a2f77b7d5712fc5e8d2f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349477"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400672"
 ---
-# <a name="caller-information-visual-basic"></a>Сведения о вызывающем объекте (Visual Basic)
+# <a name="caller-information-visual-basic"></a>Caller Information (Visual Basic) (Сведения о вызывающем (Visual Basic))
 С помощью информационных атрибутов вызывающего объекта можно получить сведения о вызывающем объекте метода. Можно получить путь к файлу исходного кода, номер строки в исходном коде и имя вызывающего объекта. Эти сведения полезны для трассировки, отладки и создания средств диагностики.  
   
  Для получения этих сведений используются атрибуты, которые применяются к необязательным параметрам, каждый из которых имеет значение по умолчанию. В следующей таблице перечислены информационные атрибуты вызывающего объекта, которые определены в пространстве имен <xref:System.Runtime.CompilerServices?displayProperty=nameWithType>:  
   
-|Атрибут|Описание|Введите|  
+|Атрибут|Описание|Type|  
 |---|---|---|  
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Полный путь исходного файла, содержащего вызывающий объект. Это путь к файлу во время компиляции.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Номер строки в исходном файле, в которой вызывается метод.|`Integer`|  
@@ -46,7 +46,7 @@ End Sub
 '   source line number: 15  
 ```  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
  Для каждого необязательного параметра необходимо указать явное значение по умолчанию. Нельзя применять информационные атрибуты вызывающего объекта к параметрам, которые не были указаны как необязательные.  
   
  Информационные атрибуты вызывающего объекта не делают параметр необязательным. Вместо этого они влияют на значение по умолчанию, которое передается, если аргумент был опущен.  
@@ -55,7 +55,7 @@ End Sub
   
  Можно явно передать необязательные аргументы, чтобы управлять сведениями о вызывающем объекте или скрывать сведения о вызывающем объекте.  
   
-### <a name="MEMBERNAMES"></a> Имена членов  
+### <a name="member-names"></a><a name="MEMBERNAMES"></a>Имена элементов  
  Можно использовать атрибут `CallerMemberName`, чтобы не указывать имя члена в виде аргумента `String` вызываемому методу. Этот прием позволяет избежать проблемы, заключающейся в том, что **операция рефакторинга и переименования** не изменяет значений `String`. Это особенно полезно при выполнении следующих задач:  
   
 - Использование процедур трассировки и диагностики.  
@@ -76,7 +76,7 @@ End Sub
   
 ## <a name="see-also"></a>См. также
 
-- [Атрибуты (Visual Basic)](../../../visual-basic/language-reference/attributes.md)
-- [Common Attributes (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md) (Распространенные атрибуты (Visual Basic))
-- [Необязательные параметры](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
-- [Основные понятия программирования (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
+- [Атрибуты (Visual Basic)](../../language-reference/attributes.md)
+- [Common Attributes (Visual Basic)](attributes/common-attributes.md) (Распространенные атрибуты (Visual Basic))
+- [Необязательные параметры](../language-features/procedures/optional-parameters.md)
+- [Основные понятия программирования (Visual Basic)](index.md)

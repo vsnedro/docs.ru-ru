@@ -4,15 +4,15 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - enumerations [Visual Basic]
 ms.assetid: e6e47b5b-3ed9-452d-a481-9c3fed88519a
-ms.openlocfilehash: 5daae8d487ddfe079a54e305e59e32e8ded8f65e
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ba69249e16b8c0ee06d57d06d192874a283b295e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353963"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403541"
 ---
 # <a name="when-to-use-an-enumeration-visual-basic"></a>Когда следует использовать перечисление (Visual Basic)
-Перечисления предлагают простой способ работы с наборами связанных констант. Перечисление, или `Enum`, является символическим именем для набора значений. Перечисления обрабатываются как типы данных, и их можно использовать для создания наборов констант для использования с переменными и свойствами.  
+Перечисления предлагают простой способ работы с наборами связанных констант. Перечисление или `Enum` является символическим именем для набора значений. Перечисления обрабатываются как типы данных, и их можно использовать для создания наборов констант для использования с переменными и свойствами.  
   
 ## <a name="when-to-use-an-enumeration"></a>Когда следует использовать перечисление  
  Если процедура принимает ограниченный набор переменных, рекомендуется использовать перечисление. Перечисления делают более понятным и удобочитаемым кодом, особенно при использовании осмысленных имен.  
@@ -30,17 +30,17 @@ ms.locfileid: "74353963"
 ## <a name="naming-enumerations"></a>Перечисления именования  
  Используйте соглашение об именовании для членов перечисления. Когда Visual Basic встречает имя члена перечисления, может возникнуть исключение, если другие библиотеки типов содержат одно и то же имя. Используйте уникальный префикс, определяющий значения из приложения или компонента.  
   
- При ссылке на член перечисления необходимо уточнить имя члена с помощью имени перечисления или использовать оператор `Imports`. Дополнительные сведения см. в разделе [перечисления и квалификация имени](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md).  
+ При ссылке на член перечисления необходимо уточнить имя члена с помощью имени перечисления или использовать `Imports` оператор. Дополнительные сведения см. в разделе [перечисления и квалификация имени](enumerations-and-name-qualification.md).  
   
 ## <a name="predefined-enumerations"></a>Предопределенные перечисления  
- Visual Basic предоставляет ряд предопределенных перечислений, таких как `FirstDayOfWeek` и `MsgBoxResult`, для упрощения кода. Список этих элементов см. в разделе [константы и перечисления](../../../../visual-basic/language-reference/constants-and-enumerations.md).  
+ Visual Basic предоставляет ряд предопределенных перечислений, таких как `FirstDayOfWeek` и `MsgBoxResult` , для упрощения кода. Список этих элементов см. в разделе [константы и перечисления](../../../language-reference/constants-and-enumerations.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Инструкции. Объявление перечисления](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
-- [Практическое руководство. Ссылка на элемент перечисления](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)
-- [Перечисления и уточнение имен](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)
-- [Пошаговое руководство. перебор перечислений в Visual Basic](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-iterate-through-an-enumeration.md)
-- [Практическое руководство. Определение строки, связанной со значением из перечисления](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-determine-the-string-associated-with-an-enumeration-value.md)
-- [Оператор Enum](../../../../visual-basic/language-reference/statements/enum-statement.md)
-- [Константы и перечисления](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Практическое руководство. Объявление перечисления](how-to-declare-enumerations.md)
+- [Практическое руководство. Ссылка на элемент перечисления](how-to-refer-to-an-enumeration-member.md)
+- [Перечисления и уточнение имен](enumerations-and-name-qualification.md)
+- [Практическое руководство. Перебор элементов перечисления в Visual Basic](how-to-iterate-through-an-enumeration.md)
+- [Практическое руководство. Определение строки, связанной со значением из перечисления](how-to-determine-the-string-associated-with-an-enumeration-value.md)
+- [Оператор Enum](../../../language-reference/statements/enum-statement.md)
+- [Константы и перечисления](../../../language-reference/constants-and-enumerations.md)

@@ -2,12 +2,12 @@
 title: Практическое руководство. Поиск элементов-потомков (XPath-LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: e7e2dc9e-bda9-420d-a5b1-4fabf1cca46b
-ms.openlocfilehash: 080afdb782bd6f1acaf2819814bb97a6e5ad0c77
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ee67a54116a7d91f6cf6af179d6398a4dcece9c4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346809"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405239"
 ---
 # <a name="how-to-find-descendant-elements-xpath-linq-to-xml-visual-basic"></a>Руководство. Поиск элементов-потомков (XPath-LINQ to XML) (Visual Basic)
 В этом разделе рассказывается, как возвращать элементы-потомки с определенным именем.  
@@ -17,7 +17,7 @@ ms.locfileid: "74346809"
 ## <a name="example"></a>Пример  
  В этом примере обнаруживаются все потомки с именем `Name`.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
       Dim po As XDocument = XDocument.Load("PurchaseOrders.xml")  
@@ -51,6 +51,6 @@ Results are identical
 <Name>Jessica Arnold</Name>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [LINQ to XML для пользователей XPath (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML для пользователей XPath (Visual Basic)](linq-to-xml-for-xpath-users.md)

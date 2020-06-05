@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - BC30920
 ms.assetid: e47dc755-4294-4368-b813-2177b7677957
-ms.openlocfilehash: 89b6c241bb637f2efc6014c4640b3b463c4facfa
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 33dd15e3f5f5538963597f2b00f4214895e1f47a
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61801885"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403009"
 ---
-# <a name="first-statement-of-this-sub-new-must-be-an-explicit-call-to-mybasenew-or-myclassnew-because-the-constructorname-in-the-base-class-baseclassname-of-derivedclassname-is-marked-obsolete-errormessage"></a>Первый оператор в «Sub New» должен иметь явный вызов в «MyBase.New» или «MyClass.New», так как "\<имя_конструктора >" в базовом классе\<имя_базового_класса > "из"\<имя_производного_класса > "помечен как устаревший:"\< сообщение об ошибке > "
+# <a name="first-statement-of-this-sub-new-must-be-an-explicit-call-to-mybasenew-or-myclassnew-because-the-constructorname-in-the-base-class-baseclassname-of-derivedclassname-is-marked-obsolete-errormessage"></a>Первым оператором в этой процедуре Sub New должен быть явный вызов MyBase.New или MyClass.New, так как \<constructorname> в базовом классе \<baseclassname> класса \<derivedclassname> отмечен как устаревший: \<errormessage>
 Конструктор класса не вызывает явно конструктор базового класса, а вызванный неявно конструктор базового класса помечается атрибутом <xref:System.ObsoleteAttribute> , что является причиной возникновения ошибки.  
   
- Если конструктор производного класса не вызывает конструктор базового класса, Visual Basic пытается создать неявный вызов конструктора базового класса без параметров. Если в базовом классе, которые могут вызываться без аргументов нет доступного конструктора, Visual Basic не удается создать неявный вызов. В этом случае необходимый конструктор помечается <xref:System.ObsoleteAttribute> атрибут, поэтому его нельзя вызвать Visual Basic.  
+ Если конструктор производного класса не вызывает конструктор базового класса, Visual Basic пытается создать неявный вызов конструктора базового класса без параметров. Если в базовом классе нет доступного конструктора, который можно вызвать без аргументов, Visual Basic не может создать неявный вызов. В этом случае обязательный конструктор помечается <xref:System.ObsoleteAttribute> атрибутом, поэтому Visual Basic не может вызвать его.  
   
  Вы можете пометить любой программный элемент как неиспользуемый, применив к нему атрибут <xref:System.ObsoleteAttribute> . Если вы это сделаете, вы можете задать для свойства <xref:System.ObsoleteAttribute.IsError%2A> атрибута значение `True` или `False`. Если задать значение `True`, компилятор будет рассматривать попытку использовать элемент как ошибку. Если задать значение `False`или оставить значение по умолчанию `False`, то при попытке использовать элемент компилятор выдаст предупреждение.  
   
@@ -29,6 +29,6 @@ ms.locfileid: "61801885"
   
 2. Включите вызов `MyBase.New()` или `MyClass.New()` в качестве первого оператора `Sub New` в производном классе.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Обзор атрибутов](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Обзор атрибутов](../../programming-guide/concepts/attributes/index.md)

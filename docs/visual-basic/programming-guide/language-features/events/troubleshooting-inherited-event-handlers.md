@@ -8,12 +8,12 @@ helpviewer_keywords:
 - event handling, troubleshooting
 - event handlers, troubleshooting
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
-ms.openlocfilehash: fd2ef1c25233cc1eaad6bcde68923688393b471d
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 4e7bedd1de5197fcf8b69091f4cc878f41b01cd5
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345104"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405110"
 ---
 # <a name="troubleshooting-inherited-event-handlers-in-visual-basic"></a>Устранение неполадок, связанных с унаследованными обработчиками событий, в Visual Basic
 В этом разделе перечислены распространенные проблемы, возникающие при работе с обработчиками событий в наследуемых компонентах.  
@@ -22,12 +22,12 @@ ms.locfileid: "74345104"
   
 #### <a name="code-in-event-handler-executes-twice-for-every-call"></a>Код в обработчике событий выполняется дважды для каждого вызова  
   
-- Наследуемый обработчик событий не должен включать предложение [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) . Метод в базовом классе уже связан с событием и будет срабатывать соответствующим образом. Удалите предложение `Handles` из унаследованного метода.  
+- Наследуемый обработчик событий не должен включать предложение [Handles](../../../language-reference/statements/handles-clause.md) . Метод в базовом классе уже связан с событием и будет срабатывать соответствующим образом. Удалите `Handles` предложение из унаследованного метода.  
   
      [!code-vb[VbVbalrEvents#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#32)]  
   
-- Если наследуемый метод не имеет ключевого слова `Handles`, убедитесь, что код не содержит дополнительную [инструкцию AddHandler](../../../../visual-basic/language-reference/statements/addhandler-statement.md) или дополнительные методы, обрабатывающие то же событие.  
+- Если наследуемый метод не имеет `Handles` ключевого слова, убедитесь, что код не содержит лишних [операторов AddHandler](../../../language-reference/statements/addhandler-statement.md) или дополнительных методов, обрабатывающих это же событие.  
   
 ## <a name="see-also"></a>См. также
 
-- [События](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [События](index.md)

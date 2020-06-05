@@ -17,37 +17,37 @@ helpviewer_keywords:
 - members [Visual Basic], Implements keyword
 - reimplementation
 ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
-ms.openlocfilehash: f114aee75356e59eafd9d3ba6af9c64402cb374f
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 46ab1a1148e8d73d91293aedfc407e5efdc7cfb4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345876"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404567"
 ---
 # <a name="implements-clause-visual-basic"></a>Предложение Implements (Visual Basic)
 Указывает, что член класса или структуры предоставляет реализацию для члена, определенного в интерфейсе.  
   
-## <a name="remarks"></a>Примечания  
-Ключевое слово `Implements` не совпадает с [оператором Implements](../../../visual-basic/language-reference/statements/implements-statement.md). Используйте оператор `Implements`, чтобы указать, что класс или структура реализует один или несколько интерфейсов, а затем для каждого элемента вы используете `Implements` ключевое слово, чтобы указать, какой интерфейс и какой член он реализует.
+## <a name="remarks"></a>Комментарии  
+`Implements`Ключевое слово не совпадает с [оператором Implements](implements-statement.md). `Implements`Инструкция используется для указания того, что класс или структура реализует один или несколько интерфейсов, а затем для каждого элемента используется `Implements` ключевое слово для указания интерфейса и члена, который он реализует.
 
-Если класс или структура реализует интерфейс, он должен включать инструкцию `Implements` сразу после оператора [Class](../../../visual-basic/language-reference/statements/class-statement.md) или [Structure](../../../visual-basic/language-reference/statements/structure-statement.md), и она должна реализовывать все члены, определенные интерфейсом.
+Если класс или структура реализует интерфейс, он должен включать `Implements` инструкцию сразу после оператора [Class](class-statement.md) или [Structure](structure-statement.md), и она должна реализовывать все члены, определенные интерфейсом.
 
 ## <a name="reimplementation"></a>Воссоздании  
 В производном классе можно повторно реализовать член интерфейса, который уже реализован в базовом классе. Это отличается от переопределения члена базового класса в следующих отношениях.
 
-- Член базового класса не обязательно должен быть [переопределяемым](../../../visual-basic/language-reference/modifiers/overridable.md) для повторной реализации.
+- Член базового класса не обязательно должен быть [переопределяемым](../modifiers/overridable.md) для повторной реализации.
 - Элемент можно повторно реализовать с другим именем.
 
-Ключевое слово `Implements` можно использовать в следующих контекстах:
+`Implements`Ключевое слово можно использовать в следующих контекстах:
 
-- [Оператор Event](../../../visual-basic/language-reference/statements/event-statement.md)
-- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md)
-- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Оператор Event](event-statement.md)
+- [Оператор Function](function-statement.md)
+- [Property Statement](property-statement.md)
+- [Оператор Sub](sub-statement.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Implements](../../../visual-basic/language-reference/statements/implements-statement.md)
-- [Оператор Interface](../../../visual-basic/language-reference/statements/interface-statement.md)
-- [Оператор Class](../../../visual-basic/language-reference/statements/class-statement.md)
-- [Оператор Structure](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Оператор Implements](implements-statement.md)
+- [Оператор Interface](interface-statement.md)
+- [Оператор Class](class-statement.md)
+- [Оператор Structure](structure-statement.md)

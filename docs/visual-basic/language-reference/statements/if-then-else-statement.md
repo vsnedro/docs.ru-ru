@@ -1,5 +1,5 @@
 ---
-title: Оператор If...Then...Else
+title: Оператор If…Then…Else
 ms.date: 04/16/2018
 f1_keywords:
 - vb.ElseIf
@@ -21,12 +21,12 @@ helpviewer_keywords:
 - If function [Visual Basic], and If...Then...Else statements
 - Else statement [Visual Basic]
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
-ms.openlocfilehash: f505755caeb9cc3cfeeb1ba83b6de15f48314103
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0884b71c24742286e695e720add9d00dd4bfe52b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351164"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404593"
 ---
 # <a name="ifthenelse-statement-visual-basic"></a>Оператор If...Then...Else (Visual Basic)
 
@@ -50,63 +50,63 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 
 ## <a name="quick-links-to-example-code"></a>Быстрые ссылки на примеры кода
 
-Эта статья содержит несколько примеров, демонстрирующих использование оператора `If`...`Then`...`Else`:
+Эта статья содержит несколько примеров, демонстрирующих использование `If` ... `Then` ...`Else` баланс
 
 - [Пример многострочного синтаксиса](#multi-line)
 - [Пример вложенного синтаксиса](#nested)
 - [Пример однострочного синтаксиса](#single-line)
 
-## <a name="parts"></a>Части
+## <a name="parts"></a>Компоненты
 
 `condition` \
-Обязательно. Выражение. Необходимо вычислить значение `True` или `False`или тип данных, который может быть неявно преобразован в `Boolean`.
+Обязательный. Выражение. Должен иметь значение `True` или `False` , или, или к типу данных, который неявно преобразуется в `Boolean` .
 
-Если выражение является [обнуляемым](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` переменной, результатом которой является [Nothing](../../../visual-basic/language-reference/nothing.md), условие обрабатывается так, как если бы выражение `False`, а блоки `ElseIf` вычисляются, если они существуют, или блок `Else` выполняется, если он существует.
+Если выражение является переменной, [допускающей значение NULL](../../programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` , значением которого является [Nothing](../nothing.md), условие обрабатывается так, как если `False` бы выражение было, а `ElseIf` блоки оцениваются, если они существуют, или `Else` блок выполняется, если он существует.
 
 `Then` \
 Требуется в однострочном синтаксисе; Необязательный в многострочном синтаксисе.
 
 `statements` \
-Необязательный элемент. Один или несколько инструкций, следующих за `If`...`Then`, которые выполняются, если `condition` вычисляется как `True`.
+Необязательный элемент. Один или несколько инструкций, следующих за `If` ... `Then` , которые выполняются, если `condition` имеет значение `True` .
 
 `elseifcondition` \
-Требуется при наличии `ElseIf`. Выражение. Необходимо вычислить значение `True` или `False`или тип данных, который может быть неявно преобразован в `Boolean`.
+Требуется, если имеется `ElseIf` . Выражение. Должен иметь значение `True` или `False` , или, или к типу данных, который неявно преобразуется в `Boolean` .
 
 `elseifstatements` \
-Необязательный элемент. Один или несколько инструкций, следующих за `ElseIf`...`Then`, которые выполняются, если `elseifcondition` вычисляется как `True`.
+Необязательный элемент. Один или несколько инструкций, следующих за `ElseIf` ... `Then` , которые выполняются, если `elseifcondition` имеет значение `True` .
 
 `elsestatements` \
-Необязательный элемент. Одна или несколько инструкций, которые выполняются, если предыдущее `condition` или `elseifcondition` выражение не имеет значение `True`.
+Необязательный элемент. Одна или несколько инструкций, выполняемых, если ни Предыдущая, ни `condition` `elseifcondition` выражение не имеет значение `True` .
 
 `End If` \
-Завершает многострочную версию блока `If`...`Then`...`Else`.
+Завершает многострочную версию `If` ... `Then` ...`Else` блок.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 ### <a name="multiline-syntax"></a>Многострочный синтаксис
 
-При обнаружении оператора `If`...`Then`...`Else` проверяется `condition`. Если `condition` `True`, выполняются операторы, следующие `Then`. Если `condition` `False`, то каждый оператор `ElseIf` (если таковые имеются) вычисляется по порядку. При обнаружении `elseifcondition` `True` выполняются инструкции, следующие непосредственно за соответствующим `ElseIf`. Если `elseifcondition` не принимает значение `True`или если нет инструкций `ElseIf`, выполняются операторы, следующие за `Else`. После выполнения инструкций, следующих за `Then`, `ElseIf`или `Else`, выполнение продолжится с оператора, следующего за `End If`.
+Когда `If` ... `Then` ...`Else` , проверяется `condition` . Если `condition` имеет значение `True` , выполняются следующие операторы `Then` . Если `condition` имеет значение `False` , то каждый `ElseIf` оператор (если таковые имеются) вычисляется по порядку. Когда `True` `elseifcondition` обнаруживается, выполняются операторы, непосредственно следующие за ними `ElseIf` . Если `elseifcondition` значение не равно `True` или если нет `ElseIf` инструкций, выполняются следующие операторы `Else` . После выполнения инструкций, указанных после `Then` , `ElseIf` или `Else` , выполнение переходит к следующей инструкции `End If` .
 
-Предложения `ElseIf` и `Else` являются необязательными. Можно использовать любое количество `ElseIf` предложений в `If`...`Then`...`Else`, но предложение `ElseIf` не может появляться после предложения `Else`. операторы `If`...`Then`...`Else` могут быть вложены друг в друга.
+`ElseIf`Предложения и `Else` являются необязательными. Можно использовать любое количество `ElseIf` предложений в `If` ... `Then` ...`Else` , но `ElseIf` после предложения предложение не может быть указано `Else` . `If`...`Then` ...`Else` операторы могут быть вложенными друг в друга.
 
-В многострочном синтаксисе оператор `If` должен быть единственным оператором в первой строке. Операторам `ElseIf`, `Else`и `End If` может предшествовать только метка строки. Блок `If`...`Then`...`Else` должен заканчиваться оператором `End If`.
+В многострочном синтаксисе `If` оператор должен быть единственным оператором в первой строке. `ElseIf` `Else` Операторам, и `End If` может предшествовать только метка строки. .. `If` . `Then` ...`Else` блок должен заканчиваться `End If` оператором.
 
 > [!TIP]
-> [Выберите... Оператор Case](../../../visual-basic/language-reference/statements/select-case-statement.md) может оказаться более полезным при вычислении одного выражения, имеющего несколько возможных значений.
+> [Выберите... Оператор Case](select-case-statement.md) может оказаться более полезным при вычислении одного выражения, имеющего несколько возможных значений.
 
 ### <a name="single-line-syntax"></a>Однострочный синтаксис
 
 Можно использовать однострочный синтаксис для одного условия с кодом для выполнения, если это так. Однако многострочный синтаксис обеспечивает большую структуру и гибкость и проще в чтении, обслуживании и отладке.
 
-Что следует за ключевым словом `Then`, проверяется, является ли оператор однострочным `If`. Если после `Then` в той же строке отображается любое значение, кроме комментария, инструкция рассматривается как однострочная `If` инструкция. Если `Then` отсутствует, он должен быть началом многострочного `If`...`Then`...`Else`.
+Что следует за `Then` ключевым словом, проверяется, является ли оператор однострочным `If` . Если после `Then` на той же строке появляется нечто, кроме комментария, инструкция рассматривается как однострочный `If` оператор. Если `Then` параметр отсутствует, он должен быть началом многострочного `If` ... `Then` ...`Else`.
 
-В однострочном синтаксисе можно использовать несколько инструкций, выполняемых в результате `If`...`Then` принятия решения. Все операторы должны находиться в одной строке и быть разделены двоеточиями.
+В однострочном синтаксисе можно использовать несколько инструкций, выполняемых в результате `If` принятия решения... `Then` Все операторы должны находиться в одной строке и быть разделены двоеточиями.
 
 ## <a name="multiline-syntax-example"></a>Пример многострочного синтаксиса
 
 <a name="multi-line"></a>
 
-В следующем примере показано использование многострочного синтаксиса инструкции `If`...`Then`...`Else`.
+В следующем примере показано использование многострочного синтаксиса `If` ... `Then` ...`Else` баланс.
 
 [!code-vb[VbVbalrStatements#101](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#101)]
 
@@ -114,7 +114,7 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 
 <a name="nested"></a>
 
-В следующем примере содержатся вложенные операторы `If`...`Then`...`Else`.
+Следующий пример содержит вложенные `If` ... `Then` ...`Else` инструкции.
 
 [!code-vb[VbVbalrStatements#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#102)]
 
@@ -124,13 +124,13 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 
 [!code-vb[VbVbalrStatements#103](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#103)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - <xref:Microsoft.VisualBasic.Interaction.Switch%2A>
-- [Директивы #If...Then...#Else](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
-- [Оператор Select...Case](../../../visual-basic/language-reference/statements/select-case-statement.md)
-- [Вложенные структуры управления](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
-- [Структуры решений](../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
-- [Логические и побитовые операторы в Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
-- [Оператор If](../../../visual-basic/language-reference/operators/if-operator.md)
+- [Директивы #If...Then...#Else](../directives/if-then-else-directives.md)
+- [Оператор Select…Case](select-case-statement.md)
+- [Вложенные структуры управления](../../programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Структуры решений](../../programming-guide/language-features/control-flow/decision-structures.md)
+- [Логические и побитовые операторы в Visual Basic](../../programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+- [Оператор If](../operators/if-operator.md)

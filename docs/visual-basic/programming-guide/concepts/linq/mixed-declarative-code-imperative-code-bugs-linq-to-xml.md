@@ -2,15 +2,15 @@
 title: Ошибки смешанного декларативного и императивного кода (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: f12b1ab4-bb92-4b92-a648-0525e45b3ce7
-ms.openlocfilehash: 369fae59516df785ac686645d47e74e69a8f1457
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: e5526a64805b19ea293d3ef28636738923d03662
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74331647"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84361077"
 ---
 # <a name="mixed-declarative-codeimperative-code-bugs-linq-to-xml-visual-basic"></a>Ошибки смешанного декларативного кода или императивного кода (LINQ to XML) (Visual Basic)
-[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] содержит различные методы, которые позволяют прямо модифицировать XML-дерево. Можно добавить элементы, удалить элементы, изменить содержимое элемента, добавить атрибуты и т. п. Этот программный интерфейс описан в разделе [изменение деревьев XML (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md). Если выполняется переход в пределах одной оси, например <xref:System.Xml.Linq.XContainer.Elements%2A>, и при этом выполняется изменение XML-дерева, можно в итоге обнаружить некоторые неожиданные ошибки.  
+[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] содержит различные методы, которые позволяют прямо модифицировать XML-дерево. Можно добавить элементы, удалить элементы, изменить содержимое элемента, добавить атрибуты и т. п. Этот программный интерфейс описан в разделе [изменение деревьев XML (LINQ to XML) (Visual Basic)](modifying-xml-trees-linq-to-xml.md). Если выполняется переход в пределах одной оси, например <xref:System.Xml.Linq.XContainer.Elements%2A>, и при этом выполняется изменение XML-дерева, можно в итоге обнаружить некоторые неожиданные ошибки.  
   
  Этот вид ошибки иногда называется Halloween Problem.  
   
@@ -176,6 +176,6 @@ Dim newRoot As XElement = New XElement("Root", _
 Console.WriteLine(newRoot)  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Расширенное программирование LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+- [Расширенное программирование LINQ to XML (Visual Basic)](advanced-linq-to-xml-programming.md)

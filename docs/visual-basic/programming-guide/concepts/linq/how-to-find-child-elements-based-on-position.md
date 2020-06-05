@@ -2,12 +2,12 @@
 title: Практическое руководство. Поиск дочерних элементов по положению (XPath-LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 6831e1db-5e97-444f-a7a1-d0a87104b005
-ms.openlocfilehash: c3062963c6144dfafed8b49410208f480c273ec9
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: d6dd1150ae3e4ad586e476b777b1f7d47d60c261
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349088"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405265"
 ---
 # <a name="how-to-find-child-elements-based-on-position-xpath-linq-to-xml-visual-basic"></a>Пошаговое руководство. Поиск дочерних элементов по положению (XPath-LINQ to XML) (Visual Basic)
 Иногда требуется найти элементы на основании их позиции. Может понадобиться найти второй элемент или найти третий элемент через пятый.  
@@ -21,7 +21,7 @@ ms.locfileid: "74349088"
 ## <a name="example"></a>Пример  
  В данном примере производится поиск второго элемента через четвертый элемент `Test`. Результатом является коллекция элементов.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Конфигурация тестирования (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Конфигурация тестирования (LINQ to XML)](sample-xml-file-test-configuration-linq-to-xml.md).  
   
 ```vb  
 Dim testCfg As XElement = XElement.Load("TestConfig.xml")  
@@ -80,4 +80,4 @@ Results are identical
   
 ## <a name="see-also"></a>См. также
 
-- [LINQ to XML для пользователей XPath (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML для пользователей XPath (Visual Basic)](linq-to-xml-for-xpath-users.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual Basic code, expressions
 - numeric expressions
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
-ms.openlocfilehash: d213f6b5a4abf8c52d8872ae36e89796183ff27c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 94b02693f308dcfcfa6983f2750a26d9d419f7be
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348965"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403463"
 ---
 # <a name="how-to-calculate-numeric-values-visual-basic"></a>Практическое руководство. Вычисление числовых значений (Visual Basic)
 Числовые значения можно вычислить с помощью числовых выражений. *Числовое выражение* представляет собой выражение, которое содержит литералы, константы и переменные, представляющие числовые значения, и операторы, действующие на эти значения.  
@@ -45,9 +45,9 @@ ms.locfileid: "74348965"
   
      [!code-vb[VbVbalrOperators#82](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#82)]  
   
-     В предыдущем примере значение выражения в правой части оператора равенства (`=`) присваивается переменной `j` в левой части оператора, поэтому `j` вычисляется как 276.  
+     В предыдущем примере значение выражения в правой части оператора равенства ( `=` ) присваивается переменной `j` в левой части оператора, поэтому `j` результатом вычисления будет 276.  
   
-     Дополнительные сведения см. в разделе [Выписки](../../../../visual-basic/language-reference/statements/index.md).  
+     Дополнительные сведения см. в разделе [Инструкции](../../../language-reference/statements/index.md).  
   
 ## <a name="multiple-operators"></a>Несколько операторов  
  Если числовое выражение содержит более одного оператора, порядок их вычисления определяется правилами приоритета операторов. Чтобы переопределить правила приоритета операторов, заключите выражения в круглые скобки, как в приведенном выше примере. выражения, заключенные в кавычки, оцениваются первыми.  
@@ -58,15 +58,15 @@ ms.locfileid: "74348965"
   
      [!code-vb[VbVbalrOperators#83](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#83)]  
   
-     В предыдущем примере вычисление для `j` выполняет сначала оператор сложения (`+`), так как круглые скобки вокруг `(67 + i)` переопределяют нормальный приоритет, а значение, присваиваемое `j`, — 276 (4 раза 69). Вычисление для `k` выполняет операторы с нормальным приоритетом (`*` до `+`), а значение, назначенное `k`, равно 270 (268 плюс 2).  
+     В предыдущем примере вычисление для `j` выполняет оператор сложения ( `+` ) сначала, так как круглые скобки `(67 + i)` обопределяют нормальный приоритет, а присваиваемое значение `j` — 276 (4 раза 69). Вычисление для `k` выполняет операторы в нормальном порядке ( `*` до `+` ), а присваиваемое ему значение `k` равно 270 (268 плюс 2).  
   
-     Дополнительные сведения см. [в разделе приоритет операторов в Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md).  
+     Дополнительные сведения см. [в разделе приоритет операторов в Visual Basic](../../../language-reference/operators/operator-precedence.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Операторы и выражения](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Сравнения значений](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
-- [Операторы](../../../../visual-basic/language-reference/statements/index.md)
-- [Порядок применения операторов в Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Арифметические операторы](../../../../visual-basic/language-reference/operators/arithmetic-operators.md)
-- [Эффективное сочетание операторов](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)
+- [Операторы и выражения](index.md)
+- [Сравнения значений](value-comparisons.md)
+- [Операторы](../../../language-reference/statements/index.md)
+- [Порядок применения операторов в Visual Basic](../../../language-reference/operators/operator-precedence.md)
+- [Арифметические операторы](../../../language-reference/operators/arithmetic-operators.md)
+- [Эффективное сочетание операторов](efficient-combination-of-operators.md)

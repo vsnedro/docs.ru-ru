@@ -1,13 +1,13 @@
 ---
-title: Практическое руководство. Поиск атрибутов одноуровневых узлов с определенным именем (XPath-LINQ to XML)
+title: Практическое руководство. Поиск атрибутов элементов того же уровня с определенным именем (XPath-LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 83b3ddca-830a-4b71-9756-9e4bdf907302
-ms.openlocfilehash: ea4492dbbe9dc8e32c675e1a938cda0d10321b7a
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0317e03de6f671991d6d0a4247ca2e9c172439b5
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74343677"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84405278"
 ---
 # <a name="how-to-find-attributes-of-siblings-with-a-specific-name-xpath-linq-to-xml-visual-basic"></a>Как найти атрибуты одноуровневых элементов с указанным именем (XPath-LINQ to XML) (Visual Basic)
 В этом разделе показано, как найти все атрибуты одноуровневых элементов контекстного узла. В коллекции возвращаются только атрибуты с заданным именем.  
@@ -19,7 +19,7 @@ ms.locfileid: "74343677"
 ## <a name="example"></a>Пример  
  В этом примере вначале происходит поиск элемента `Book`, затем всех одноуровневых элементов с именем `Book`, а после этого всех атрибутов с именем `id`. Результатом становится коллекция атрибутов.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Книги (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Книги (LINQ to XML)](sample-xml-file-books-linq-to-xml.md).  
   
 ```vb  
 Dim books as XDocument = XDocument.Load("Books.xml")  
@@ -56,4 +56,4 @@ id="bk102"
   
 ## <a name="see-also"></a>См. также
 
-- [LINQ to XML для пользователей XPath (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML для пользователей XPath (Visual Basic)](linq-to-xml-for-xpath-users.md)

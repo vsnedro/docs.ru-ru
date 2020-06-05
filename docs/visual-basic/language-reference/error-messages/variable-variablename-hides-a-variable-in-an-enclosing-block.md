@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30616
 ms.assetid: e7658ebc-da45-451b-a409-a0f8915f0beb
-ms.openlocfilehash: 4312abef83728f432e2f6a492e5acad3450719b1
-ms.sourcegitcommit: 35da8fb45b4cca4e59cc99a5c56262c356977159
+ms.openlocfilehash: 474a920c9cfdfba7a8157320d9c88b8677958425
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71592066"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406525"
 ---
-# <a name="variable-variablename-hides-a-variable-in-an-enclosing-block"></a>Переменная "\<variablename >" скрывает переменную во внешнем блоке
+# <a name="variable-variablename-hides-a-variable-in-an-enclosing-block"></a>Переменная \<variablename> скрывает содержащуюся в блоке переменную
 Переменная, заключенная в блок, имеет то же имя, что и другая локальная переменная.  
   
  **Идентификатор ошибки:** BC30616  
@@ -30,11 +30,11 @@ ms.locfileid: "71592066"
     End If  
     ```  
   
-- Распространенной причиной этой ошибки является использование `Catch e As Exception` внутри обработчика событий. Если это так, присвойте переменной блока `Catch` `ex`, а не `e`.  
+- Распространенной причиной этой ошибки является использование `Catch e As Exception` внутри обработчика событий. Если это так, назовите `Catch` переменную блока, `ex` а не `e` .  
   
-- Другой распространенный источник этой ошибки — попытка доступа к локальной переменной, объявленной в блоке `Try`, в отдельном блоке `Catch`. Чтобы исправить это, объявите переменную вне структуры `Try...Catch...Finally`.  
+- Другой распространенный источник этой ошибки — попытка доступа к локальной переменной, объявленной в `Try` блоке, в отдельном `Catch` блоке. Чтобы исправить это, объявите переменную вне `Try...Catch...Finally` структуры.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Try...Catch...Finally](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
-- [Объявление переменных](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Оператор Try…Catch…Finally](../statements/try-catch-finally-statement.md)
+- [Объявление переменной](../../programming-guide/language-features/variables/variable-declaration.md)

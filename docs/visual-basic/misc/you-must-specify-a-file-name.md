@@ -2,12 +2,12 @@
 title: Необходимо указать имя файла
 ms.date: 07/20/2015
 ms.assetid: e011825a-019f-4c01-8d5b-3194f172e495
-ms.openlocfilehash: ba8ab6ebbd2d6ae7094ccae927ef317c1571c178
-ms.sourcegitcommit: e08b319358a8025cc6aa38737854f7bdb87183d6
+ms.openlocfilehash: 7e8c6b3e14d4d36fa780fe75db1d214a06b5afac
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64913251"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406941"
 ---
 # <a name="you-must-specify-a-file-name"></a>Необходимо указать имя файла
 Вы попытались выполнить операцию (например, перемещение или копирование файла), для которой необходимо указать имя файла.  
@@ -16,10 +16,10 @@ ms.locfileid: "64913251"
   
 - Укажите требуемое имя файла.  
   
-- Убедитесь, что путь не заканчивается символом разделителя каталогов (\\).  
+- Убедитесь, что путь не заканчивается символом разделителя каталогов ( \\ ).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Анализ путей к файлам](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
-- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
-- [Доступ к файлам с помощью Visual Basic](../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)
+- [Практическое руководство. Анализ путей к файлам](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [My. Computer. FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+- [Доступ к файлам с помощью Visual Basic](../developing-apps/programming/drives-directories-files/file-access.md)

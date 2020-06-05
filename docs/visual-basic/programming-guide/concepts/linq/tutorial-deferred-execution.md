@@ -1,26 +1,26 @@
 ---
-title: Учебник. отложенное выполнение
+title: Учебник. Отложенное выполнение
 ms.date: 07/20/2015
 ms.assetid: c80d53a8-1a30-4115-b232-52f0d089fec5
-ms.openlocfilehash: a38ec1540d44dbc8710866de804a4935f8d17a2c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 051d4a412ecd3ce53cc546f435f8ade1e15899b3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350534"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406746"
 ---
 # <a name="tutorial-deferred-execution-visual-basic"></a>Учебник. отложенное выполнение (Visual Basic)
 В этом учебнике приводится модель обработки, при которой запросы объединяются в цепочку. Объединение запросов в цепочку - ключевая часть написания функциональных преобразований. Необходимо полностью понимать принцип работы запросов, объединенных в цепочку.  
   
  Запросы, с помощью которых обрабатываются XML-документы Office Open, широко используют этот способ.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
   
 |Раздел|Описание|  
 |-----------|-----------------|  
-|[Отложенное выполнение и отложенное вычисление в LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)|Описываются основные понятия отложенного выполнения и неспешного вычисления.|  
-|[Пример отложенного выполнения (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-example.md)|Также приводится пример отложенного выполнения.|  
+|[Отложенное выполнение и отложенное вычисление в LINQ to XML (Visual Basic)](deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)|Описываются основные понятия отложенного выполнения и неспешного вычисления.|  
+|[Пример отложенного выполнения (Visual Basic)](deferred-execution-example.md)|Также приводится пример отложенного выполнения.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Чистые функциональные преобразования XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)
+- [Чистые функциональные преобразования XML (Visual Basic)](pure-functional-transformations-of-xml.md)
