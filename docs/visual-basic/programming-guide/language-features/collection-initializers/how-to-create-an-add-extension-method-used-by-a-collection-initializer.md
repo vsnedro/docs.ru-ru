@@ -1,23 +1,23 @@
 ---
-title: Практическое руководство. Создание метода расширения Add, используемого инициализатором набора
+title: Практическое руководство. Создание метода добавления расширения, используемого инициализатором коллекции
 ms.date: 07/20/2015
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: f64b52c7-8b11-4410-93a6-cb3aeebcc772
-ms.openlocfilehash: 6d5f9d38b413b79f111a14ec3829c57a9797ce54
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 4dbe6146b70181864a6717146071f9b93a1f583e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346711"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414573"
 ---
 # <a name="how-to-create-an-add-extension-method-used-by-a-collection-initializer-visual-basic"></a>Практическое руководство. Создание метода расширения Add, используемого инициализатором набора (Visual Basic)
-При использовании инициализатора коллекции для создания коллекции компилятор Visual Basic выполняет поиск метода `Add` типа коллекции, параметры которого соответствуют типам значений в инициализаторе коллекции с помощью параметров метода `Add`. Этот метод `Add` используется для заполнения коллекции значениями из инициализатора коллекции.  
+При использовании инициализатора коллекции для создания коллекции компилятор Visual Basic выполняет поиск `Add` метода типа коллекции, для которого параметры `Add` метода соответствуют типам значений в инициализаторе коллекции. Этот `Add` метод используется для заполнения коллекции значениями из инициализатора коллекции.  
   
- Если соответствующий метод `Add` не существует и вы не можете изменить код для коллекции, можно добавить метод расширения с именем `Add`, который принимает параметры, необходимые инициализатору коллекции. Обычно это необходимо сделать при использовании инициализаторов коллекций для универсальных коллекций.  
+ Если соответствующий `Add` метод не существует и вы не можете изменить код для коллекции, можно добавить метод расширения `Add` с именем, принимающий параметры, необходимые инициализатору коллекции. Обычно это необходимо сделать при использовании инициализаторов коллекций для универсальных коллекций.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как добавить метод расширения в универсальный тип <xref:System.Collections.Generic.List%601>, чтобы инициализатор коллекции можно было использовать для добавления объектов типа `Employee`. Метод расширения позволяет использовать сокращенный синтаксис инициализатора коллекции.  
+ В следующем примере показано, как добавить метод расширения в универсальный тип, <xref:System.Collections.Generic.List%601> чтобы инициализатор коллекции можно было использовать для добавления объектов типа `Employee` . Метод расширения позволяет использовать сокращенный синтаксис инициализатора коллекции.  
   
  [!code-vb[VbVbalrCollectionInitializersHowTo1#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializersHowTo1/VB/Module1.vb#1)]  
   
@@ -25,7 +25,7 @@ ms.locfileid: "74346711"
   
  [!code-vb[VbVbalrCollectionInitializersHowTo1#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializersHowTo1/VB/Module1.vb#3)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Инициализаторы коллекций](../../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
-- [Практическое руководство. Создание коллекции, используемой инициализатором набора](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md)
+- [Инициализаторы коллекций](index.md)
+- [Практическое руководство. Создание коллекции с помощью инициализатора набора](how-to-create-a-collection-used-by-a-collection-initializer.md)

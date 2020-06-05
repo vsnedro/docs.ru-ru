@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Continue statement [Visual Basic]
 - loops, transferring to next iteration
 ms.assetid: 3ad00103-358b-4af3-a3a8-1b9ea0e995d3
-ms.openlocfilehash: 20140cafb68c7e5518bf3d5fa80e56ca1c1de2c6
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: fd604b281a590073a5e76398788d7648cadd145c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74354112"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84382098"
 ---
 # <a name="continue-statement-visual-basic"></a>Оператор Continue (Visual Basic)
 Немедленно передает управление следующей итерации цикла.  
@@ -23,25 +23,25 @@ ms.locfileid: "74354112"
 Continue { Do | For | While }  
 ```  
   
-## <a name="remarks"></a>Примечания  
- Можно переносить из цикла `Do`, `For`или `While` в следующую итерацию этого цикла. Управление немедленно передается в условие цикла, что эквивалентно передаче в оператор `For` или `While` либо на `Do` или `Loop` инструкцию, содержащую `Until` или `While`.  
+## <a name="remarks"></a>Remarks  
+ Можно переносить из `Do` `For` цикла, или `While` в следующую итерацию этого цикла. Элемент управления сразу же передается в условие цикла, что эквивалентно передаче `For` инструкции или или `While` `Do` `Loop` инструкции или, содержащей `Until` `While` предложение OR.  
   
- `Continue` можно использовать в любом расположении в цикле, допускающем передачу данных. Правила, допускающие перемещение элементов управления, аналогичны [инструкциям оператора goto](../../../visual-basic/language-reference/statements/goto-statement.md).  
+ Можно использовать `Continue` в любом расположении в цикле, допускающем передачу данных. Правила, допускающие перемещение элементов управления, аналогичны [инструкциям оператора goto](goto-statement.md).  
   
- Например, если цикл полностью содержится в блоке `Try`, блоке `Catch` или блоке `Finally`, можно использовать `Continue` для перемещения из цикла. С другой стороны, если структура `Try`...`End Try` содержится в цикле, нельзя использовать `Continue` для передачи управления из блока `Finally`, и его можно использовать для передачи из `Try` или `Catch` блока только в том случае, если вы полностью передаете структуру `Try`...`End Try`.  
+ Например, если цикл полностью содержится в `Try` блоке, `Catch` блоке или `Finally` блоке, можно использовать `Continue` для перемещения цикла. Если, с другой стороны, `Try` структура... `End Try` содержится в цикле, нельзя использовать `Continue` для передачи управления из `Finally` блока, и ее можно использовать для передачи из `Try` блока или только в том `Catch` случае, если полностью передать из `Try` структуры... `End Try` .  
   
- Если у вас есть вложенные циклы одного типа, например цикл `Do` в рамках другого цикла `Do`, то оператор `Continue Do` переходит к следующей итерации самого внутреннего цикла `Do`, который его содержит. Нельзя использовать `Continue` для перехода к следующей итерации содержащего цикла того же типа.  
+ При наличии вложенных циклов одного и того же типа, например `Do` цикла в другом `Do` цикле, `Continue Do` оператор переходит к следующей итерации самого внутреннего `Do` цикла, который его содержит. Нельзя использовать `Continue` для перехода к следующей итерации содержащего цикла того же типа.  
   
- Если у вас есть вложенные циклы разных типов, например цикл `Do` в цикле `For`, можно перейти к следующей итерации любого цикла, используя либо `Continue Do`, либо `Continue For`.  
+ При наличии вложенных циклов разных типов, например цикла в `Do` `For` цикле, можно перейти к следующей итерации любого цикла, используя либо `Continue Do` или `Continue For` .  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода инструкция `Continue While` используется для перехода к следующему столбцу массива, если делитель равен нулю. `Continue While` находится внутри цикла `For`. Он передает оператору `While col < lastcol`, который является следующей итерацией самого внутреннего цикла `While`, содержащего цикл `For`.  
+ В следующем примере кода инструкция используется `Continue While` для перехода к следующему столбцу массива, если делитель равен нулю. `Continue While`Находится внутри `For` цикла. Он передает `While col < lastcol` оператору, который является следующей итерацией самого внутреннего `While` цикла, содержащего `For` цикл.  
   
  [!code-vb[VbVbalrStatements#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#14)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Do...Loop](../../../visual-basic/language-reference/statements/do-loop-statement.md)
-- [Оператор For...Next](../../../visual-basic/language-reference/statements/for-next-statement.md)
-- [Оператор While...End While](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
-- [Оператор Try...Catch...Finally](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Оператор Do…Loop](do-loop-statement.md)
+- [Оператор For…Next](for-next-statement.md)
+- [Оператор While…End While](while-end-while-statement.md)
+- [Оператор Try…Catch…Finally](try-catch-finally-statement.md)

@@ -17,18 +17,18 @@ helpviewer_keywords:
 - type parameters
 - data type arguments
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
-ms.openlocfilehash: d88c43efe858d6b81b7d8d2470b234ff5d40632a
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 8497f46453d586fb94e1f7c82c81c6b923dd6f60
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353843"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404425"
 ---
 # <a name="of-clause-visual-basic"></a>Предложение Of (Visual Basic)
-Вводит предложение `Of`, которое определяет *параметр типа* в *универсальном* классе, структуре, интерфейсе, делегате или процедуре. Сведения об универсальных типах см. [в разделе Универсальные типы в Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md).  
+Вводит `Of` предложение, которое определяет *параметр типа* в *универсальном* классе, структуре, интерфейсе, делегате или процедуре. Сведения об универсальных типах см. [в разделе Универсальные типы в Visual Basic](../../programming-guide/language-features/data-types/generic-types.md).  
   
 ## <a name="using-the-of-keyword"></a>Использование ключевого слова of  
- В следующем примере кода ключевое слово `Of` используется для определения структуры класса, принимающего два параметра типа. Он *ограничивает* параметр `keyType` интерфейсом <xref:System.IComparable>, что означает, что в используемом коде должен быть указан аргумент типа, реализующий <xref:System.IComparable>. Это необходимо для того, чтобы процедура `add` могла вызвать метод <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType>. Дополнительные сведения об ограничениях см. в разделе [Type List](../../../visual-basic/language-reference/statements/type-list.md).  
+ В следующем примере кода `Of` ключевое слово используется для определения структуры класса, принимающего два параметра типа. Он *ограничивает* `keyType` параметр <xref:System.IComparable> интерфейсом, что означает, что в используемом коде должен быть указан аргумент типа, реализующий <xref:System.IComparable> . Это необходимо для того, чтобы `add` процедура могла вызвать <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> метод. Дополнительные сведения об ограничениях см. в разделе [Type List](type-list.md).  
   
 ```vb  
 Public Class Dictionary(Of entryType, keyType As IComparable)  
@@ -42,9 +42,9 @@ Public Class Dictionary(Of entryType, keyType As IComparable)
 End Class  
 ```  
   
- Если вы закончите предыдущее определение класса, можно создать из него разнообразные `dictionary` классы. Типы, предоставляемые для `entryType` и `keyType` определяют, какой тип записи принадлежит классу и какой тип ключа он связывает с каждой записью. Из-за ограничения необходимо указать, чтобы `keyType` тип, реализующий <xref:System.IComparable>.  
+ Если вы закончите предыдущее определение класса, можно создать `dictionary` из него разнообразные классы. Предоставленные типы `entryType` и определяют, `keyType` какой тип записи принадлежит классу и какой тип ключа он связывает с каждой записью. Из-за ограничения необходимо указать `keyType` тип, реализующий <xref:System.IComparable> .  
   
- В следующем примере кода создается объект, содержащий `String` записи и связывающий ключ `Integer` с каждым из них. `Integer` реализует <xref:System.IComparable> и, следовательно, удовлетворяет ограничениям на `keyType`.  
+ В следующем примере кода создается объект, который содержит `String` записи и связывает `Integer` ключ с каждым из них. `Integer`реализует <xref:System.IComparable> и поэтому удовлетворяет ограничению для `keyType` .  
   
 ```vb  
 Dim d As New dictionary(Of String, Integer)  
@@ -52,22 +52,22 @@ Dim d As New dictionary(Of String, Integer)
   
  Ключевое слово `Of` можно использовать в следующих контекстах:  
   
- [Оператор Class](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Оператор Class](class-statement.md)  
   
- [Оператор Delegate](../../../visual-basic/language-reference/statements/delegate-statement.md)  
+ [Оператор Delegate](delegate-statement.md)  
   
- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Оператор Function](function-statement.md)  
   
- [Оператор Interface](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Оператор Interface](interface-statement.md)  
   
- [Оператор Structure](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Оператор Structure](structure-statement.md)  
   
- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Оператор Sub](sub-statement.md)  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IComparable>
-- [Список типов](../../../visual-basic/language-reference/statements/type-list.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
-- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+- [Type List](type-list.md)
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [В](../modifiers/in-generic-modifier.md)
+- [Заполняет](../modifiers/out-generic-modifier.md)

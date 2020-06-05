@@ -2,12 +2,12 @@
 title: Отложенное выполнение и отложенное вычисление в LINQ to XML
 ms.date: 07/20/2015
 ms.assetid: 31998eed-b95e-47fb-a865-9de1f337d1fb
-ms.openlocfilehash: 8e94b9133a2d2dd287fba91600c94460a5204b2c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 98a5010de6ea7ef46d845c6a921c54d4e7692370
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346409"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410816"
 ---
 # <a name="deferred-execution-and-lazy-evaluation-in-linq-to-xml-visual-basic"></a>Отложенное выполнение и отложенное вычисление в LINQ to XML (Visual Basic)
 Операции по обработке запросов и осей часто реализуются с использованием отложенного выполнения. В этом разделе разъясняются требования и достоинства отложенного выполнения, а также содержатся некоторые соображения относительно реализации.  
@@ -26,13 +26,13 @@ ms.locfileid: "74346409"
   
  Метод неспешного вычисления обычно обеспечивает более высокую производительность, поскольку он равномерно распределяет затраты на обработку по всему периоду вычисления и сводит к минимуму использование временных данных. Разумеется, при выполнении некоторых операций не остается ничего иного, как материализовать промежуточные результаты.  
   
-## <a name="next-steps"></a>Дальнейшие шаги  
+## <a name="next-steps"></a>Next Steps  
  Следующий раздел настоящего учебника иллюстрирует отложенное выполнение:  
   
-- [Пример отложенного выполнения (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-example.md)  
+- [Пример отложенного выполнения (Visual Basic)](deferred-execution-example.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Учебник. отложенное выполнение (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-deferred-execution.md)
-- [Основные понятия и терминология (функциональное преобразование) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md)
-- [Операции агрегирования (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/aggregation-operations.md)
+- [Учебник. отложенное выполнение (Visual Basic)](tutorial-deferred-execution.md)
+- [Основные понятия и терминология (функциональное преобразование) (Visual Basic)](concepts-and-terminology-functional-transformation.md)
+- [Операции агрегирования (Visual Basic)](aggregation-operations.md)

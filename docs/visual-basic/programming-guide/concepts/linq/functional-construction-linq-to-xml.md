@@ -1,13 +1,13 @@
 ---
-title: Функциональная сборка (LINQ to XML)
+title: Функциональное сборка (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: feac4273-39ab-43ae-bab7-4059c807a785
-ms.openlocfilehash: a51360d6c8d44770c462afb728a1fb78d3e2cd42
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: f42cd6f31134c5f4c7d6a75f38997b2be0c317f3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636852"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398068"
 ---
 # <a name="functional-construction-linq-to-xml-visual-basic"></a>Функциональное построение (LINQ to XML) (Visual Basic)
 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] предоставляет эффективный способ создания XML-элементов, который называется *функциональным построением*. Функциональное построение — это возможность создать XML-дерево одной инструкцией.  
@@ -18,9 +18,9 @@ ms.locfileid: "75636852"
   
 - Конструктор <xref:System.Xml.Linq.XElement> принимает массив `params` типа <xref:System.Object>, так что этому конструктору можно передать любое количество объектов. Это позволяет создавать элементы со сложным содержимым.  
   
-- Если объект реализует интерфейс <xref:System.Collections.Generic.IEnumerable%601>, коллекция в этом объекте перечисляется и добавляются все элементы коллекции. Если коллекция содержит объекты <xref:System.Xml.Linq.XElement> или <xref:System.Xml.Linq.XAttribute>, каждый ее элемент добавляется отдельно. Это важно, поскольку позволяет передавать результаты запроса LINQ в конструктор.  
+- Если объект реализует интерфейс <xref:System.Collections.Generic.IEnumerable%601>, коллекция в этом объекте перечисляется и добавляются все элементы коллекции. Если коллекция содержит объекты <xref:System.Xml.Linq.XElement> или <xref:System.Xml.Linq.XAttribute>, каждый ее элемент добавляется отдельно. Это важно, так как позволяет передавать результаты запроса LINQ конструктору.  
   
- Ниже рассматривается пример:  
+ Ниже представлен пример такого кода:  
   
  Эти функции позволяют писать код с помощью XML-литералов для создания XML-дерева, а также для написания кода, который использует результаты запросов LINQ при создании XML-дерева.  
   
@@ -56,6 +56,6 @@ Console.WriteLine(xmlTree)
 </Root>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Создание деревьев XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Создание деревьев XML (Visual Basic)](creating-xml-trees.md)
