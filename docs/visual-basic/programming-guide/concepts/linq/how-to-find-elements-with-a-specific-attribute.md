@@ -2,14 +2,14 @@
 title: Практическое руководство. Поиск элементов с определенным атрибутом (XPath-LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 4bb38d2c-bc7c-4196-8909-aaf41fb86b28
-ms.openlocfilehash: 36f725a7684dc009dbfb956a1584fd6ca5e487b0
-ms.sourcegitcommit: 43d10ef65f0f1fd6c3b515e363bde11a3fcd8d6d
+ms.openlocfilehash: 4b625fcccc834f860072ad92587bbfd7ed5ec4ad
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78267045"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84364777"
 ---
-# <a name="how-to-find-elements-with-a-specific-attribute-xpath-linq-to-xml-visual-basic"></a>Как: Найти элементы с конкретным атрибутом (XPath-LIN' к XML) (Visual Basic)
+# <a name="how-to-find-elements-with-a-specific-attribute-xpath-linq-to-xml-visual-basic"></a>Пошаговое руководство. Поиск элементов с указанным атрибутом (XPath-LINQ to XML) (Visual Basic)
 Иногда может понадобиться найти все элементы, имеющие конкретный атрибут. Вас не интересует содержимое атрибута. Вместо этого вы хотите сделать выбор на основании самого существования атрибута.  
   
  Выражение XPath:  
@@ -51,7 +51,7 @@ For Each el As XElement In list1
 Next  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```console
 Results are identical  
@@ -59,6 +59,6 @@ Results are identical
 <Child4 Select="true">4</Child4>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [ДЛЯ пользователей XPath (Visual Basic) линков к XML](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML для пользователей XPath (Visual Basic)](linq-to-xml-for-xpath-users.md)
