@@ -6,12 +6,12 @@ helpviewer_keywords:
 - My.Computer object [Visual Basic], tasks
 - computer resources [Visual Basic], accessing
 ms.assetid: 75b81c88-f7c0-46e0-95c8-0c006d2120f9
-ms.openlocfilehash: 27310a50289b9b2c315f52ad471da1f32ef0721a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9595abaa1daa2b4a4436577d58856183dcb4d9ac
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74345533"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401788"
 ---
 # <a name="accessing-computer-resources-visual-basic"></a>Доступ к ресурсам компьютера (Visual Basic)
 
@@ -30,26 +30,26 @@ ms.locfileid: "74345533"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-[Воспроизведение звуков](../../../../visual-basic/developing-apps/programming/computer-resources/playing-sounds.md)  
+[Воспроизведение звуков](playing-sounds.md)  
 Перечень задач, связанных с объектом `My.Computer.Audio`, например воспроизведение звука в фоновом режиме.
 
-[Запись данных в буфер обмена и чтение их оттуда](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
+[Запись данных в буфер обмена и чтение их оттуда](storing-data-to-and-reading-from-the-clipboard.md)  
 Перечень задач, связанных с объектом `My.Computer.Clipboard`, например чтение данных из буфера обмена и запись данных в него.
 
-[Получение сведений о компьютере](../../../../visual-basic/developing-apps/programming/computer-resources/getting-information-about-the-computer.md)  
+[Получение сведений о компьютере](getting-information-about-the-computer.md)  
 Перечень задач, связанных с объектом `My.Computer.Info`, например определение полного имени компьютера и его IP-адреса.
 
-[Доступ к клавиатуре](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)  
+[Доступ к клавиатуре](accessing-the-keyboard.md)  
 Перечень задач, связанных с объектом `My.Computer.Keyboard`, например определение того, включен ли режим CAPS LOCK.
 
-[Доступ к мыши](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse.md)  
+[Доступ к мыши](accessing-the-mouse.md)  
 Перечень задач, связанных с объектом `My.Computer.Mouse`, например определение факта присутствия мыши.
 
-[Выполнение сетевых операций](../../../../visual-basic/developing-apps/programming/computer-resources/performing-network-operations.md)  
+[Выполнение сетевых операций](performing-network-operations.md)  
 Перечень задач, связанных с объектом `My.Computer.Network`, например отправка и загрузка файлов.
 
-[Доступ к портам компьютера](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md)  
+[Доступ к портам компьютера](accessing-the-computer-s-ports.md)  
 Перечень задач, связанных с объектом `My.Computer.Ports`, например отображение доступных последовательных портов и отправка в них строк.
 
-[Чтение данных из реестра и запись в реестр](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)  
+[Чтение данных из реестра и запись в реестр](reading-from-and-writing-to-the-registry.md)  
 Перечень задач, связанных с объектом `My.Computer.Registry`, например чтение данных из реестра и запись данных в него.

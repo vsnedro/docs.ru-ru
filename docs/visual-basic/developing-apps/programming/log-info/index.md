@@ -9,12 +9,12 @@ helpviewer_keywords:
 - My.Application.Log object
 - examples [Visual Basic], logging application information
 ms.assetid: 8bf4f047-22d6-48d6-aec5-93b98ad5b8e8
-ms.openlocfilehash: dace4bac3bf7529b8c50a492a092ad478f4d9e2d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 43738b2d654435532a98654cbc40af134d43f02c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74353258"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410027"
 ---
 # <a name="logging-information-from-the-application-visual-basic"></a>Запись сведений в журнал из приложения (Visual Basic)
 
@@ -28,18 +28,18 @@ ms.locfileid: "74353258"
   
 |Кому|См.|  
 |--------|---------|  
-|Запись информации о событиях в журналы приложения.|[Практическое руководство. Запись сообщений в журнал](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)|  
-|Запись информации об исключениях в журналы приложения.|[Практическое руководство. Исплючения журналов](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
-|Запись данных трассировки в журналы приложения во время запуска и завершения работы приложения.|[Практическое руководство. Запись в журнал сообщений при запуске и завершении приложения](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-messages-when-the-application-starts-or-shuts-down.md)|  
-|Настройка объекта `My.Application.Log` для записи информации в текстовый файл.|[Практическое руководство. Запись сведений о событиях в текстовый файл](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)|  
-|Настройка объекта `My.Application.Log` для записи информации в журнал событий.|[Практическое руководство. Запись в журнал событий приложения](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)|  
-|Изменение места, в которое объект `My.Application.Log` записывает информацию.|[Пошаговое руководство: Изменение места записи сведений для My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)|  
-|Выбор места, в которое объект `My.Application.Log` записывает информацию.|[Пошаговое руководство: Определение места записи сведений для My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
-|Создание пользовательского прослушивателя журнала для `My.Application.Log`.|[Пошаговое руководство: Создание пользовательских прослушивателей журнала](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)|  
-|Фильтрация выходных данных журналов `My.Application.Log`.|[Пошаговое руководство: Фильтрация вывода My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md)|  
+|Запись информации о событиях в журналы приложения.|[Практическое руководство. Запись сообщений в журнал](how-to-write-log-messages.md)|  
+|Запись информации об исключениях в журналы приложения.|[Практическое руководство. Исплючения журналов](how-to-log-exceptions.md)|  
+|Запись данных трассировки в журналы приложения во время запуска и завершения работы приложения.|[Практическое руководство. Запись в журнал сообщений при запуске и завершении приложения](how-to-log-messages-when-the-application-starts-or-shuts-down.md)|  
+|Настройка объекта `My.Application.Log` для записи информации в текстовый файл.|[Практическое руководство. Запись сведений о событиях в текстовый файл](how-to-write-event-information-to-a-text-file.md)|  
+|Настройка объекта `My.Application.Log` для записи информации в журнал событий.|[Практическое руководство. Запись в журнал событий приложения](how-to-write-to-an-application-event-log.md)|  
+|Изменение места, в которое объект `My.Application.Log` записывает информацию.|[Пошаговое руководство: Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md)|  
+|Выбор места, в которое объект `My.Application.Log` записывает информацию.|[Пошаговое руководство: Определение места записи сведений для My.Application.Log](walkthrough-determining-where-my-application-log-writes-information.md)|  
+|Создание пользовательского прослушивателя журнала для `My.Application.Log`.|[Пошаговое руководство: Создание пользовательских прослушивателей журнала](walkthrough-creating-custom-log-listeners.md)|  
+|Фильтрация выходных данных журналов `My.Application.Log`.|[Пошаговое руководство: Фильтрация вывода My.Application.Log](walkthrough-filtering-my-application-log-output.md)|  
   
 ## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
-- [Работа с журналами приложения](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
-- [Устранение неполадок. Прослушиватели журнала](../../../../visual-basic/developing-apps/programming/log-info/troubleshooting-log-listeners.md)
+- [Работа с журналами приложения](working-with-application-logs.md)
+- [Устранение неполадок. Прослушиватели журнала](troubleshooting-log-listeners.md)
