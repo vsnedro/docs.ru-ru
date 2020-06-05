@@ -2,14 +2,14 @@
 title: Практическое руководство. Выполнение деревьев выражений
 ms.date: 07/20/2015
 ms.assetid: 9dfb5ab3-f48f-417e-975f-f8f6f1cdc18d
-ms.openlocfilehash: 2a2749eaed5279d04b72eb77b066c83de9722fa9
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 7b7b08ea1a7a1310b1d98876be96f1fa28ecba91
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75346008"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84375334"
 ---
-# <a name="how-to-execute-expression-trees-visual-basic"></a>Инструкции. Выполнение деревьев выражений (Visual Basic)
+# <a name="how-to-execute-expression-trees-visual-basic"></a>Практическое руководство. Выполнение деревьев выражений (Visual Basic)
 В этом разделе показано, как выполнить дерево выражения. В результате выполнения дерева выражения может возвращаться значение или просто выполняться действие, такое как вызов метода.  
   
  Можно выполнять только деревья выражений, представляющие лямбда-выражения. Деревья выражений, представляющие лямбда-выражения, имеют тип <xref:System.Linq.Expressions.LambdaExpression> или <xref:System.Linq.Expressions.Expression%601>. Для выполнения таких деревьев выражений вызовите метод <xref:System.Linq.Expressions.LambdaExpression.Compile%2A>, чтобы создать исполняемый делегат, а затем вызовите делегат.  
@@ -46,7 +46,7 @@ MsgBox(result)
   
 - Включите пространство имен System.Linq.Expressions.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md) (Деревья выражений (Visual Basic))
-- [Руководство. изменение деревьев выражений (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)
+- [Expression Trees (Visual Basic)](index.md) (Деревья выражений (Visual Basic))
+- [Практическое руководство. Изменение деревьев выражений (Visual Basic)](how-to-modify-expression-trees.md)

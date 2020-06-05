@@ -4,23 +4,23 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], Nothing
 ms.assetid: 261380af-2024-4ecf-823b-43b1034d92cd
-ms.openlocfilehash: dfc43748d0754f0a6a29763c42ab82d9937f89f8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 392de45b0ee1688224f3e8170b0144f1acdb0912
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344298"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84360570"
 ---
 # <a name="nothing-and-strings-in-visual-basic"></a>Nothing и строки в Visual Basic
-Среда выполнения Visual Basic и .NET Framework оценивают `Nothing` по-разному, когда речь идет о строках.  
+Среда выполнения Visual Basic и .NET Framework оцениваются по- `Nothing` разному, когда речь идет о строках.  
   
 ## <a name="visual-basic-runtime-and-the-net-framework"></a>Среда выполнения Visual Basic и .NET Framework  
  Рассмотрим следующий пример.  
   
  [!code-vb[VbVbalrStrings#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#47)]  
   
- Visual Basic среда выполнения обычно вычисляет `Nothing` как пустую строку (""). Однако .NET Framework не создает исключение, когда выполняется попытка выполнить операцию со строкой в `Nothing`.  
+ Среда выполнения Visual Basic обычно вычисляется `Nothing` как пустая строка (""). Однако .NET Framework не создает исключение, когда выполняется попытка выполнить операцию со строкой `Nothing` .  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Знакомство со строками в Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Знакомство со строками в Visual Basic](introduction-to-strings.md)
