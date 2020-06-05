@@ -2,18 +2,18 @@
 title: Практическое руководство. Добавление настраиваемых методов для запросов LINQ
 ms.date: 07/20/2015
 ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
-ms.openlocfilehash: 3004a9c9c7abeffd9993b848ad765e7ae2dc8876
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 55004441d2d1d74556da6841f28d113b876d1048
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353376"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400608"
 ---
 # <a name="how-to-add-custom-methods-for-linq-queries-visual-basic"></a>Как добавить пользовательские методы для запросов LINQ (Visual Basic)
 
 Вы можете расширить набор методов, которые можно использовать для запросов LINQ, путем добавления методов расширения в интерфейс <xref:System.Collections.Generic.IEnumerable%601>. Например, помимо стандартных операций вычисления среднего или максимального значения, можно создать настраиваемый метод агрегирования для вычисления одного значения на основе последовательности значений. Также можно создать метод, который работает как настраиваемый фильтр или особое преобразование данных для последовательности значений и возвращает новую последовательность. Примерами таких методов являются <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A> и <xref:System.Linq.Enumerable.Reverse%2A>.
 
-При расширении интерфейса <xref:System.Collections.Generic.IEnumerable%601> настраиваемые методы можно применять к любой перечислимой коллекции. Дополнительные сведения см. в статье [Методы расширения](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md).
+При расширении интерфейса <xref:System.Collections.Generic.IEnumerable%601> настраиваемые методы можно применять к любой перечислимой коллекции. Дополнительные сведения см. в статье [Методы расширения](../../language-features/procedures/extension-methods.md).
 
 ## <a name="adding-an-aggregate-method"></a>Использование метода агрегирования
 
@@ -53,7 +53,7 @@ End Module
 Этот метод расширения вызывается для любых перечислимых коллекций так же, как другие методы агрегирования из интерфейса <xref:System.Collections.Generic.IEnumerable%601>.
 
 > [!NOTE]
-> В Visual Basic можно либо использовать вызов метода, либо стандартный синтаксис запроса для `Aggregate` или предложения `Group By`. Дополнительные сведения см. в разделе [предложение Aggregate](../../../../visual-basic/language-reference/queries/aggregate-clause.md) и [предложение GROUP BY](../../../../visual-basic/language-reference/queries/group-by-clause.md).
+> В Visual Basic можно либо использовать вызов метода, либо стандартный синтаксис запроса для `Aggregate` `Group By` предложения или. Дополнительные сведения см. в разделе [предложение Aggregate](../../../language-reference/queries/aggregate-clause.md) и [предложение GROUP BY](../../../language-reference/queries/group-by-clause.md).
 
 В следующем примере кода показано использование метода `Median` для массива типа `double`.
 
@@ -129,7 +129,7 @@ Function Median(Of T)(ByVal source As IEnumerable(Of T),
 End Function
 ```
 
-Теперь вы можете вызвать метод `Median` для последовательности объектов любого типа. Если тип не содержит собственную перегрузку метода, вам потребуется передать параметр делегата. В Visual Basic для этой цели можно использовать лямбда-выражение. Кроме того, если вместо вызова метода используется предложение `Aggregate` или `Group By`, можно передать любое значение или выражение, которое находится в области данного предложения.
+Теперь вы можете вызвать метод `Median` для последовательности объектов любого типа. Если тип не содержит собственную перегрузку метода, вам потребуется передать параметр делегата. В Visual Basic для этой цели можно использовать лямбда-выражение. Кроме того, если `Aggregate` `Group By` вместо вызова метода используется предложение или, можно передать любое значение или выражение, которое находится в области данного предложения.
 
 В следующем примере кода показано, как вызвать метод `Median` для массива целых чисел и массива строк. Для строк вычисляется срединное значение длин строк в массиве. В примере демонстрируется передача параметра делегата <xref:System.Func%602> в метод `Median` для каждого из случаев.
 
@@ -204,7 +204,7 @@ Next
 ' e
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Collections.Generic.IEnumerable%601>
-- [Методы расширения](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)
+- [Методы расширения](../../language-features/procedures/extension-methods.md)

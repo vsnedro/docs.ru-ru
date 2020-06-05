@@ -7,33 +7,33 @@ f1_keywords:
 helpviewer_keywords:
 - BC31102
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
-ms.openlocfilehash: cf0158692c1154a8a903c893ba287e51c1e34ac8
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 077533a5b1fe241b61ded9516ad8f450d7dbbf5e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64593274"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400348"
 ---
-# <a name="set-accessor-of-property-propertyname-is-not-accessible"></a>Метод доступа свойства «set» "\<имя_свойства >" не доступен
-Оператор пытается сохранить значение свойства, если он не имеет доступа к свойству `Set` процедуры.  
+# <a name="set-accessor-of-property-propertyname-is-not-accessible"></a>Метод доступа Set свойства \<propertyname> недоступен
+Оператор пытается сохранить значение свойства, если оно не имеет доступа к `Set` процедуре свойства.  
   
- Если [инструкция Set](../../../visual-basic/language-reference/statements/set-statement.md) помечается более строгий доступ уровня, чем его [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md), попытка задать значение свойства может завершиться ошибкой в следующих случаях:  
+ Если [инструкция SET](../statements/set-statement.md) помечена более ограниченным уровнем доступа, чем его [Инструкция Property](../statements/property-statement.md), попытка установить значение свойства может завершиться ошибкой в следующих случаях:  
   
-- `Set` Оператор помечен [частного](../../../visual-basic/language-reference/modifiers/private.md) и вызывающий код находится за пределами класса или структуры, в котором оно определено свойство.  
+- `Set`Инструкция помечена как [закрытая](../modifiers/private.md) , а вызывающий код находится за пределами класса или структуры, в которой определено свойство.  
   
-- `Set` Оператор помечен [Protected](../../../visual-basic/language-reference/modifiers/protected.md) и вызывающий код находится не в классе или структуре, в котором оно определено свойство, ни в производном классе.  
+- `Set`Инструкция помечена как [protected](../modifiers/protected.md) и вызывающий код не находится в классе или структуре, в которой определено свойство, и в производном классе.  
   
-- `Set` Оператор помечен [Friend](../../../visual-basic/language-reference/modifiers/friend.md) и вызывающий код не находится в той же сборке, в котором оно определено свойство.  
+- `Set`Инструкция помечена как [Friend](../modifiers/friend.md) , а вызывающий код — не в той сборке, в которой определено свойство.  
   
  **Идентификатор ошибки:** BC31102  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Если у вас есть контроль исходного кода, определяющего свойство, рассмотрим следующее объявление `Set` процедуру с тот же уровень доступа, как и само свойство.  
+- Если вы управляете исходным кодом, определяющим свойство, попробуйте объявить `Set` процедуру с тем же уровнем доступа, что и само свойство.  
   
-- Если у вас нет контроля исходного кода, определяющего свойство или необходимо ограничить `Set` больше, чем у самого свойства, попробуйте переместить оператор, который задает значение свойства в область кода, имеющего более удобный доступ к процедуре уровень доступа свойство.  
+- Если у вас нет контроля над исходным кодом, определяющим свойство, или необходимо ограничить `Set` уровень доступа к процедуре больше, чем само свойство, попробуйте переместить инструкцию, устанавливающую значение свойства, в область кода, имеющую Улучшенный доступ к свойству.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Процедуры свойств](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
-- [Практическое руководство. Объявление свойства со смешанным уровнем доступа](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)
+- [Процедуры свойств](../../programming-guide/language-features/procedures/property-procedures.md)
+- [Практическое руководство. Объявление свойства со смешанным уровнем доступа](../../programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)
