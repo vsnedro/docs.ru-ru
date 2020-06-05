@@ -2,19 +2,19 @@
 title: LINQ to XML и другие XML-Technologies2
 ms.date: 07/20/2015
 ms.assetid: 72ce3a82-ffc6-488c-98e7-b9b40f3591ec
-ms.openlocfilehash: 35d2be530c63cdbc09631c5dfc036558bb9851bc
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: ee855c40e61a6b63c2891d8f30072fc8e235fe4b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636621"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84389323"
 ---
-# <a name="linq-to-xml-vs-other-xml-technologies"></a>LINQ to XML и другие технологии XML
+# <a name="linq-to-xml-vs-other-xml-technologies"></a>LINQ to XML или Другие XML-технологии
 В этом разделе [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] сравнивается со следующими XML-технологиями: <xref:System.Xml.XmlReader>, XSLT, MSXML и XmlLite. Данные сведения могут помочь в выборе технологии.  
   
- Сравнение [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] с модель DOM (DOM) см. в разделе [LINQ to XML vs. DOM (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-dom.md).  
+ Сравнение [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] с модель DOM (DOM) см. в разделе [LINQ to XML и DOM (Visual Basic)](linq-to-xml-vs-dom.md).  
   
-## <a name="linq-to-xml-vs-xmlreader"></a>Сравнение LINQ to XML с XmlReader  
+## <a name="linq-to-xml-vs-xmlreader"></a>LINQ to XML или XmlReader  
  <xref:System.Xml.XmlReader> - это быстрое однопроходное средство синтаксического анализа без кэширования.  
   
  Технология [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] реализована на основе <xref:System.Xml.XmlReader>, и эти средства тесно связаны друг с другом. Но вы можете использовать объект <xref:System.Xml.XmlReader> и сам по себе.  
@@ -23,7 +23,7 @@ ms.locfileid: "75636621"
   
  Напротив, если создается система, предназначенная для синтаксического анализа множества небольших XML-документов, отличающихся друг от друга, то целесообразно воспользоваться средствами повышения производительности, которые предоставляет технология [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
   
-## <a name="linq-to-xml-vs-xslt"></a>Сравнение LINQ to XML с XSLT  
+## <a name="linq-to-xml-vs-xslt"></a>LINQ to XML или XSLT  
  Технология [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] и язык XSLT предоставляют широкие возможности по преобразованию XML-документа. XSLT представляет собой декларативный подход, основанный на правилах. Опытные XSLT-программисты записывают код XSLT в стиле функционального программирования, в основе которого лежит подход без сохранения состояния. Преобразования могут быть написаны с использованием чистых функций, реализованных без побочных эффектов. С этим подходом, основанным на правилах или функциональным, незнакомы многие разработчики, и для его изучения потребуется много времени и усилий.  
   
  Технология XSLT может стать основой весьма продуктивной системы, позволяющей создавать высокопроизводительные приложения. Например, несколько крупных компаний, работающих в сфере веб-технологий, используют XSLT для создания HTML-кода из XML-кода, полученного из различных хранилищ данных. Управляемое ядро XSLT компилирует XSLT в код CLR и в некоторых сценариях работает даже лучше собственного ядра XSLT.  
@@ -38,20 +38,20 @@ ms.locfileid: "75636621"
   
  Код XSLT представляет собой код XML, поэтому с ним можно проводить манипуляции программным путем.  
   
-## <a name="linq-to-xml-vs-msxml"></a>Сравнение LINQ to XML с MSXML  
+## <a name="linq-to-xml-vs-msxml"></a>LINQ to XML или MSXML  
  MSXML - это основанная на модели COM технология обработки XML, включенная в ОС Microsoft Windows. MSXML обеспечивает собственную реализацию DOM с поддержкой XPath и XSLT. Она также содержит средство синтаксического анализа SAX2, основанное на событиях, без кэширования.  
   
  MSXML обеспечивает высокую производительность, по умолчанию обеспечивает безопасность в большинстве сценариев и может использоваться в обозревателе Internet Explorer для выполнения обработки XML на стороне клиента в приложениях AJAX. Возможность применения технологии MSXML предусмотрена в любом языке программирования, поддерживающем COM, включая C++, JavaScript и Visual Basic 6.0.  
   
  Не рекомендуется использовать MSXML в управляемом коде, основанном на среде CLR.  
   
-## <a name="linq-to-xml-vs-xmllite"></a>Сравнение LINQ to XML с XmlLite  
+## <a name="linq-to-xml-vs-xmllite"></a>LINQ to XML или XmlLite  
  XmlLite представляет собой запрашивающее средство синтаксического анализа с последовательным доступом, без кэширования. В основном разработчики используют XmlLite с языком C++. Не рекомендуется использовать XmlLite с управляемым кодом.  
   
  Основным преимуществом такого средства синтаксического анализа XML, как XmlLite, является его простота, быстродействие и безопасность в большинстве сценариев. Его контактная зона, подверженная угрозам, очень мала. Если требуется проведение анализа документов, не заслуживающих доверия, и необходимо защититься от атак типа «отказ в обслуживании» или раскрытия данных, то XmlLite является хорошим выбором.  
   
- XmlLite не интегрирован с запросом, интегрированным с языком (LINQ). Он не дает улучшений продуктивности программиста, которые являются мотивацией на основе LINQ.  
+ XmlLite не поддерживает интеграцию с LINQ. Применение этого инструмента не приводит к повышению продуктивности программиста, что является одним из побудительных мотивов к использованию LINQ.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Начало работы (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+- [Начало работы (LINQ to XML)](getting-started-linq-to-xml.md)

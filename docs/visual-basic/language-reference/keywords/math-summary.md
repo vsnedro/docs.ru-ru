@@ -7,12 +7,12 @@ helpviewer_keywords:
 - math functions, Visual Basic
 - math functions
 ms.assetid: 6abf2dd7-92d2-488a-8e2b-819be9b30c3f
-ms.openlocfilehash: 21c6d35b4e6aa17bb29be1c1e4b5e88a5fb389d8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ef0e014745ec99afbce16824e65587276bc145e4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348491"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84373451"
 ---
 # <a name="math-summary-visual-basic"></a>Сводка по математическим функциям (Visual Basic)
 Ключевые слова языка Visual Basic и элементы библиотеки времени выполнения упорядочены по целям и использованию.  
@@ -26,8 +26,8 @@ ms.locfileid: "74348491"
 |Возвращает знак выражения.|<xref:System.Math.Sign%2A>|  
 |Выполняет числовые преобразования.|<xref:Microsoft.VisualBasic.Conversion.Fix%2A>, <xref:Microsoft.VisualBasic.Conversion.Int%2A>|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Производные математические функции](../../../visual-basic/language-reference/keywords/derived-math-functions.md)
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
-- [Члены библиотеки времени выполнения Visual Basic](../../../visual-basic/language-reference/runtime-library-members.md)
+- [Производные математические функции](derived-math-functions.md)
+- [Ключевые слова](index.md)
+- [Члены библиотеки времени выполнения Visual Basic](../runtime-library-members.md)
