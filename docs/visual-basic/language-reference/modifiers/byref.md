@@ -8,26 +8,26 @@ helpviewer_keywords:
 - ByRef keyword [Visual Basic]
 - ByRef keyword [Visual Basic], contexts
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
-ms.openlocfilehash: 12c2f7c52986d49a761167536f04e61d0904ecbb
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0ad07aa206ec982e3120d5cededbb575a936e777
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351609"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84373093"
 ---
 # <a name="byref-visual-basic"></a>ByRef (Visual Basic)
 Указывает, что аргумент передается таким образом, что вызываемая процедура может изменить значение переменной, которая является базовым аргументом в вызывающем коде.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
  Модификатор `ByRef` можно использовать в следующих контекстах:  
   
- [Оператор Declare](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Declare Statement](../statements/declare-statement.md)  
   
- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Оператор Function](../statements/function-statement.md)  
   
- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Оператор Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
-- [Передача аргументов по значению и по ссылке](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Ключевые слова](../keywords/index.md)
+- [Передача аргументов по значению и по ссылке](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

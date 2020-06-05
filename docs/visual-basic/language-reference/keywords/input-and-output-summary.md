@@ -6,17 +6,17 @@ helpviewer_keywords:
 - output, Visual Basic functions
 - I/O [Visual Basic], functions
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
-ms.openlocfilehash: 12651977609d8a689f13777b0fe2244cdb10819c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 44321d75ce88beead2c631318392e5d630bae74b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348523"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84373477"
 ---
 # <a name="input-and-output-summary-visual-basic"></a>Сводка по вводу и выводу (Visual Basic)
 Ключевые слова языка Visual Basic и элементы библиотеки времени выполнения упорядочены по целям и использованию.  
   
-|Действие|Language, элемент|  
+|Действие|Элемент языка|  
 |------------|----------------------|  
 |Доступ к файлу или его создание.|<xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>|  
 |Закройте файлы.|<xref:Microsoft.VisualBasic.FileSystem.FileClose%2A>, <xref:Microsoft.VisualBasic.FileSystem.Reset%2A>|  
@@ -31,7 +31,7 @@ ms.locfileid: "74348523"
 |Задайте расположение для чтения и записи в файле.|<xref:Microsoft.VisualBasic.FileSystem.Seek%2A>|  
 |Запись в файл.|<xref:Microsoft.VisualBasic.FileSystem.FilePut%2A>, <xref:Microsoft.VisualBasic.FileSystem.FilePutObject%2A>, <xref:Microsoft.VisualBasic.FileSystem.Print%2A>, <xref:Microsoft.VisualBasic.FileSystem.Write%2A>, <xref:Microsoft.VisualBasic.FileSystem.WriteLine%2A>|  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
-- [Члены библиотеки времени выполнения Visual Basic](../../../visual-basic/language-reference/runtime-library-members.md)
+- [Ключевые слова](index.md)
+- [Члены библиотеки времени выполнения Visual Basic](../runtime-library-members.md)

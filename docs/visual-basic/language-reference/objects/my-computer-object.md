@@ -4,17 +4,17 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Computer object
 ms.assetid: cc814d79-6f7f-4e54-8b9d-5ecfdd77a0b8
-ms.openlocfilehash: c1d6113872f2196f2db4ac1849222cd69f95ffd7
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 25fd9d2fc52b27f34164b7ed95ed1ebce9919a33
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74332112"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84372665"
 ---
 # <a name="mycomputer-object"></a>Объект My.Computer
 Включает свойства для управления компонентами компьютера, такими как звук, часы, клавиатура, файловая система и т. д.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
  Сведения о методах и свойствах объекта `My.Computer` см. в разделе <xref:Microsoft.VisualBasic.Devices.Computer>. Базовый класс <xref:Microsoft.VisualBasic.Devices.ServerComputer> предоставляет элементы, доступные во всех проектах.  
   
 ## <a name="requirements"></a>Требования  
@@ -24,16 +24,16 @@ ms.locfileid: "74332112"
   
  **Сборка:** Библиотека времени выполнения Visual Basic (в Microsoft. VisualBasic. dll)  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Объект My.Computer.Audio](../../../visual-basic/language-reference/objects/my-computer-audio-object.md)
-- [Объект My.Computer.Clipboard](../../../visual-basic/language-reference/objects/my-computer-clipboard-object.md)
-- [Объект My.Computer.Clock](../../../visual-basic/language-reference/objects/my-computer-clock-object.md)
-- [Объект My.Computer.FileSystem](../../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)
-- [Объект My.Computer.FileSystem.SpecialDirectories](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)
-- [Объект My.Computer.Info](../../../visual-basic/language-reference/objects/my-computer-info-object.md)
-- [Объект My.Computer.Keyboard](../../../visual-basic/language-reference/objects/my-computer-keyboard-object.md)
-- [Объект My.Computer.Mouse](../../../visual-basic/language-reference/objects/my-computer-mouse-object.md)
-- [Объект My.Computer.Network](../../../visual-basic/language-reference/objects/my-computer-network-object.md)
-- [Объект My.Computer.Ports](../../../visual-basic/language-reference/objects/my-computer-ports-object.md)
-- [Объект My.Computer.Registry](../../../visual-basic/language-reference/objects/my-computer-registry-object.md)
+- [Объект My.Computer.Audio](my-computer-audio-object.md)
+- [Объект My.Computer.Clipboard](my-computer-clipboard-object.md)
+- [Объект My.Computer.Clock](my-computer-clock-object.md)
+- [Объект My.Computer.FileSystem](my-computer-filesystem-object.md)
+- [Объект My.Computer.FileSystem.SpecialDirectories](my-computer-filesystem-specialdirectories-object.md)
+- [Объект My.Computer.Info](my-computer-info-object.md)
+- [Объект My.Computer.Keyboard](my-computer-keyboard-object.md)
+- [Объект My.Computer.Mouse](my-computer-mouse-object.md)
+- [Объект My.Computer.Network](my-computer-network-object.md)
+- [Объект My.Computer.Ports](my-computer-ports-object.md)
+- [Объект My.Computer.Registry](my-computer-registry-object.md)

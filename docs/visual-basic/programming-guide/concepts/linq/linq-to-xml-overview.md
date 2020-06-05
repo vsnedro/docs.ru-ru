@@ -2,12 +2,12 @@
 title: Общие сведения о LINQ to XML
 ms.date: 07/20/2015
 ms.assetid: 502661e0-bc5d-438d-94c2-7efb63bb6fbd
-ms.openlocfilehash: a30340e06a3f8eac9fe2b7718b14ba20363d682f
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: afdec54ac05bb4a631de7fdb599123ffe964c443
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636475"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84368743"
 ---
 # <a name="linq-to-xml-overview-visual-basic"></a>Обзор LINQ to XML (Visual Basic)
 XML широко используется для форматирования данных в целом ряде контекстов. Примеры XML можно обнаружить в веб-среде, в файлах конфигурации, в файлах Microsoft Office Word и в базах данных.  
@@ -22,13 +22,13 @@ XML широко используется для форматирования д
 ## <a name="what-is-linq-to-xml"></a>Что такое LINQ to XML?  
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] — это выполняющийся в памяти интерфейс программирования XML с поддержкой LINQ, который позволяет работать с XML из языков программирования .NET Framework.  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] подобен модели DOM в том отношении, что загружает XML-документ в память. К такому документу можно направить запрос, его можно изменить, а после изменения его можно сохранить в файле или сериализовать и передать через Интернет. Однако [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] отличается от DOM: она предоставляет новую объектную модель, которая более проста и удобна для работы с, и использует преимущества языковых функций в Visual Basic.  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] подобен модели DOM в том отношении, что загружает XML-документ в память. К такому документу можно направить запрос, его можно изменить, а после изменения его можно сохранить в файле или сериализовать и передать через Интернет. Однако [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] отличается от модели DOM: она предоставляет новую объектную модель, которая более проста и удобна для работы с, и использует преимущества языковых функций в Visual Basic.  
   
- Наиболее важным преимуществом [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] является его интеграция с запросом, интегрированным с языком (LINQ). Эта интеграция дает возможность создавать запросы к загруженному в память XML-документу с целью получения коллекций элементов и атрибутов. По своей функциональности (но не по синтаксису) реализованные в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] возможности формирования запросов сопоставимы с возможностями XPath и XQuery. Интеграция LINQ в Visual Basic обеспечивает более надежную типизацию, проверку во время компиляции и улучшенную поддержку отладчика.  
+ Важнейшее достоинство [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] представлено интеграцией с LINQ. Эта интеграция дает возможность создавать запросы к загруженному в память XML-документу с целью получения коллекций элементов и атрибутов. По своей функциональности (но не по синтаксису) реализованные в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] возможности формирования запросов сопоставимы с возможностями XPath и XQuery. Интеграция LINQ в Visual Basic обеспечивает более надежную типизацию, проверку во время компиляции и улучшенную поддержку отладчика.  
   
  Другим преимуществом [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] является то, что возможность использования результатов запросов в качестве параметров конструкторов объектов <xref:System.Xml.Linq.XElement> и <xref:System.Xml.Linq.XAttribute> позволяет применять мощный подход для создания XML-деревьев. Этот подход, известный как *функциональное построение*, дает разработчикам возможность легко преобразовывать деревья XML из одной формы в другую.  
   
- Пусть имеется типичный заказ на покупку в формате XML, как это описано в разделе [Пример XML-файла. Стандартный заказ на покупку (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md). С помощью интерфейса [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] можно выполнить следующий запрос для получения значения атрибута артикула для каждого элемента в заказе на покупку:  
+ Пусть имеется типичный заказ на покупку в формате XML, как это описано в разделе [Пример XML-файла. Стандартный заказ на покупку (LINQ to XML)](sample-xml-file-typical-purchase-order-linq-to-xml.md). С помощью интерфейса [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] можно выполнить следующий запрос для получения значения атрибута артикула для каждого элемента в заказе на покупку:  
   
 ```vb  
 Dim partNos = _  
@@ -47,7 +47,7 @@ Order By item.<PartNumber>.Value _
 Select item  
 ```  
   
- Помимо этих возможностей LINQ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] предоставляет улучшенный интерфейс программирования XML. Благодаря [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] появляются следующие возможности:  
+ В дополнение к функциям, реализованным в LINQ, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] предоставляет усовершенствованный интерфейс программирования XML. Благодаря [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] появляются следующие возможности:  
   
 - Загрузка XML из файлов или из потоков.  
   
@@ -83,13 +83,13 @@ Dim contacts = _
 </Contacts>  
 ```  
   
- Компилятор Visual Basic преобразует литералы XML в вызовы методов [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
+ Компилятор Visual Basic преобразует литералы XML в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] вызовы методов.  
   
- Дополнительные сведения см. в разделе [Создание деревьев XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md).  
+ Дополнительные сведения см. в разделе [Создание деревьев XML (Visual Basic)](creating-xml-trees.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Xml.Linq>
-- [Начало работы (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
-- [Общие сведения о LINQ to XML в Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [Начало работы (LINQ to XML)](getting-started-linq-to-xml.md)
+- [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md) (Общие сведения о LINQ to XML в Visual Basic)
+- [XML](../../language-features/xml/index.md)
