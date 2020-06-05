@@ -2,14 +2,14 @@
 title: Общие атрибуты
 ms.date: 07/20/2015
 ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
-ms.openlocfilehash: 2889411779a275baa8c91862d4cac2f820d660d0
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 57ef8f103d64a51d896f46d2889d78ec99ff3223
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353529"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400723"
 ---
-# <a name="common-attributes-visual-basic"></a>Общие атрибуты (Visual Basic)
+# <a name="common-attributes-visual-basic"></a>Common Attributes (Visual Basic) (Распространенные атрибуты (Visual Basic))
 
 В этом разделе описываются атрибуты, наиболее часто используемые в Visual Basic программах.
 
@@ -23,7 +23,7 @@ ms.locfileid: "74353529"
 
 - [Атрибуты Visual Basic](#VB)
 
-## <a name="Global"></a> Глобальные атрибуты
+## <a name="global-attributes"></a><a name="Global"></a>Глобальные атрибуты
 
 Большинство атрибутов применяется к определенным элементам языка, таким как классы или методы. Тем не менее некоторые атрибуты являются глобальными — они применяются ко всей сборке или модулю. Например, атрибут <xref:System.Reflection.AssemblyVersionAttribute> можно использовать для встраивания сведений о версии в сборку, например следующим образом:
 
@@ -31,9 +31,9 @@ ms.locfileid: "74353529"
 <Assembly: AssemblyVersion("1.0.0.0")>
 ```
 
-Глобальные атрибуты появляются в исходном коде после любых операторов верхнего уровня `Imports` и перед объявлениями типа, модуля или пространства имен. Глобальные атрибуты могут содержаться в нескольких исходных файлах, однако эти файлы должны быть скомпилированы за один проход компиляции. Для проектов Visual Basic глобальные атрибуты обычно помещаются в файл AssemblyInfo. vb (файл создается автоматически при создании проекта в Visual Studio).
+Глобальные атрибуты появляются в исходном коде после любых инструкций верхнего уровня `Imports` и перед любыми объявлениями типа, модуля или пространства имен. Глобальные атрибуты могут содержаться в нескольких исходных файлах, однако эти файлы должны быть скомпилированы за один проход компиляции. Для проектов Visual Basic глобальные атрибуты обычно помещаются в файл AssemblyInfo. vb (файл создается автоматически при создании проекта в Visual Studio).
 
-Атрибуты сборки — это значения, которые предоставляют сведения о сборке. Они подразделяются на следующие категории:
+Атрибуты сборки — это значения, которые предоставляют сведения о сборке. Они делятся на следующие категории:
 
 - Атрибуты удостоверения сборки
 
@@ -79,9 +79,9 @@ ms.locfileid: "74353529"
 |<xref:System.Reflection.AssemblyConfigurationAttribute>|Определяет настраиваемый атрибут, задающий конфигурацию сборки для манифеста сборки.|
 |<xref:System.Reflection.AssemblyDefaultAliasAttribute>|Определяет понятный псевдоним по умолчанию для манифеста сборки.|
 
-## <a name="Obsolete"></a> Атрибут Obsolete
+## <a name="obsolete-attribute"></a><a name="Obsolete"></a>Устаревший атрибут
 
-Атрибут `Obsolete` помечает сущность программы как нерекомендуемую для использования. Каждый случай использования сущности, помеченной как устаревшая, будет приводить к созданию предупреждения или сообщения об ошибке в зависимости от настройки атрибута. Пример.
+Атрибут `Obsolete` помечает сущность программы как нерекомендуемую для использования. Каждый случай использования сущности, помеченной как устаревшая, будет приводить к созданию предупреждения или сообщения об ошибке в зависимости от настройки атрибута. Пример:
 
 ```vb
 <System.Obsolete("use class B")>
@@ -122,7 +122,7 @@ b.NewMethod()
 
 Атрибут `Obsolete` является атрибутом однократного использования и может применяться к любой сущности, допускающей использование атрибутов. `Obsolete` является псевдонимом для <xref:System.ObsoleteAttribute>.
 
-## <a name="Conditional"></a> Атрибут Conditional
+## <a name="conditional-attribute"></a><a name="Conditional"></a>Атрибут Conditional
 
 Атрибут `Conditional` определяет зависимость выполнения метода от идентификатора предварительной обработки. Атрибут `Conditional` является псевдонимом для <xref:System.Diagnostics.ConditionalAttribute> и может применяться к методу или классу атрибута.
 
@@ -218,21 +218,21 @@ Class SampleClass
 End Class
 ```
 
-## <a name="CallerInfo"></a> Информационные атрибуты вызывающего объекта
+## <a name="caller-info-attributes"></a><a name="CallerInfo"></a>Атрибуты сведений о вызывающем объекте
 
 С помощью информационных атрибутов вызывающего объекта можно получить сведения о вызывающем объекте метода. Можно получить путь к файлу исходного кода, номер строки в исходном коде и имя вызывающего объекта.
 
 Для получения этих сведений используются атрибуты, которые применяются к необязательным параметрам. Каждый необязательный параметр задает значение по умолчанию. В следующей таблице перечислены информационные атрибуты вызывающего объекта, которые определены в пространстве имен <xref:System.Runtime.CompilerServices?displayProperty=nameWithType>:
 
-|Атрибут|Описание|Введите|
+|attribute|Описание|Type|
 |---|---|---|
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Полный путь исходного файла, содержащего вызывающий объект. Это путь во время компиляции.|`String`|
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Номер строки в исходном файле, из которого вызывается метод.|`Integer`|
-|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Имя свойства или метода вызывающего объекта. Дополнительные сведения см. в разделе [сведения о вызывающем объекте (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md).|`String`|
+|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Имя свойства или метода вызывающего объекта. Дополнительные сведения см. в разделе [сведения о вызывающем объекте (Visual Basic)](../caller-information.md).|`String`|
 
-Дополнительные сведения об атрибутах сведений о вызывающем объекте см. в разделе [сведения о вызывающем объекте (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md).
+Дополнительные сведения об атрибутах сведений о вызывающем объекте см. в разделе [сведения о вызывающем объекте (Visual Basic)](../caller-information.md).
 
-## <a name="VB"></a>Атрибуты Visual Basic
+## <a name="visual-basic-attributes"></a><a name="VB"></a>Атрибуты Visual Basic
 
 В следующей таблице перечислены атрибуты, характерные для Visual Basic.
 
@@ -245,15 +245,15 @@ End Class
 
 ### <a name="comclassattribute"></a>COMClassAttribute
 
-Используйте `COMClassAttribute`, чтобы упростить процесс создания COM-компонентов из Visual Basic. Объекты COM значительно отличаются от .NET Framework сборок, и без `COMClassAttribute`необходимо выполнить ряд действий по созданию COM-объекта из Visual Basic. Для классов, помеченных `COMClassAttribute`, компилятор выполняет многие из этих шагов автоматически.
+Используйте `COMClassAttribute` , чтобы упростить процесс создания COM-компонентов из Visual Basic. Объекты COM значительно отличаются от .NET Framework сборок, и без `COMClassAttribute` них необходимо выполнить ряд действий по созданию COM-объекта из Visual Basic. Для классов, помеченных `COMClassAttribute` , компилятор выполняет многие из этих шагов автоматически.
 
 ### <a name="hidemodulenameattribute"></a>HideModuleNameAttribute
 
-Используйте `HideModuleNameAttribute`, чтобы разрешить доступ к членам модуля только с помощью квалификации, необходимой для модуля.
+Используйте `HideModuleNameAttribute` , чтобы разрешить доступ к членам модуля только с помощью квалификации, необходимой для модуля.
 
 ### <a name="vbfixedstringattribute"></a>VBFixedStringAttribute
 
-Используйте `VBFixedStringAttribute`, чтобы принудительно Visual Basic создать строку фиксированной длины. По умолчанию строки имеют переменную длину, и этот атрибут полезен при хранении строк в файлах. Следующий код демонстрирует это:
+Используется `VBFixedStringAttribute` для принудительного Visual Basic создания строки фиксированной длины. По умолчанию строки имеют переменную длину, и этот атрибут полезен при хранении строк в файлах. Следующий код демонстрирует это:
 
 ```vb
 Structure Worker
@@ -267,13 +267,13 @@ End Structure
 
 ### <a name="vbfixedarrayattribute"></a>VBFixedArrayAttribute
 
-Используйте `VBFixedArrayAttribute`, чтобы объявить массивы с фиксированным размером. Как и в случае с Visual Basic строками, по умолчанию массивы имеют переменную длину. Этот атрибут полезен при сериализации или записи данных в файлы.
+Используется `VBFixedArrayAttribute` для объявления массивов с фиксированным размером. Как и в случае с Visual Basic строками, по умолчанию массивы имеют переменную длину. Этот атрибут полезен при сериализации или записи данных в файлы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>
-- [Руководство по программированию на Visual Basic](../../../../visual-basic/programming-guide/index.md)
+- [Руководство по программированию на Visual Basic](../../index.md)
 - [Атрибуты](../../../../standard/attributes/index.md)
-- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md) (Отражение (Visual Basic))
-- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))
+- [Reflection (Visual Basic)](../reflection.md) (Отражение (Visual Basic))
+- [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md) (Обращение к атрибутам с помощью отражения (Visual Basic))

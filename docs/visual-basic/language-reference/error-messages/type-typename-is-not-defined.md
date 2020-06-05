@@ -7,35 +7,35 @@ f1_keywords:
 helpviewer_keywords:
 - BC30002
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
-ms.openlocfilehash: 1f66b86a61fb0344a449bf0aa46b7655813c7c30
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 89e2d1d18b456c96f62d6b9ee1dd8dc9d41bf665
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64664245"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84386936"
 ---
-# <a name="type-typename-is-not-defined"></a>Тип "\<typename >" не определен
-Инструкция содержится ссылка на тип, который не был определен. Можно определить тип в операторе объявления таких как `Enum`, `Structure`, `Class`, или `Interface`.  
+# <a name="type-typename-is-not-defined"></a>Тип \<typename> не определен
+Оператор выполнил ссылку на тип, который не был определен. Тип можно определить в операторе объявления, например,, `Enum` `Structure` `Class` или `Interface` .  
   
  **Идентификатор ошибки:** BC30002  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Убедитесь, что определение типа и его ссылка используется написания.  
+- Убедитесь, что определение типа и его ссылка используют одинаковое написание.  
   
-- Убедитесь, что определение типа доступно для ссылки. Например, если тип находится в другом модуле и был объявлен `Private`, переместите определение типа в модуль ссылки или объявите его `Public`.  
+- Убедитесь, что определение типа доступно для ссылки. Например, если тип находится в другом модуле и был объявлен `Private` , переместите определение типа в ссылающийся модуль или объявите его `Public` .  
   
-- Убедитесь, что пространство имен типа не переопределено в проекте. Если это так, используйте `Global` ключевое слово для задания полного имени типа. Например, если проект определяет пространство имен с именем `System`, <xref:System.Object?displayProperty=nameWithType> типа невозможен, если он не является полным образом `Global` ключевое слово: `Global.System.Object`.  
+- Убедитесь, что пространство имен типа не переопределено в проекте. Если это так, используйте `Global` ключевое слово, чтобы полностью определить имя типа. Например, если проект определяет пространство имен с именем `System` , доступ к этому <xref:System.Object?displayProperty=nameWithType> типу невозможен, если он не является полным с `Global` ключевым словом: `Global.System.Object` .  
   
-- Если тип определен, но библиотека объектов или библиотеки типов, в котором он определен, не зарегистрирована в Visual Basic, щелкните **добавить ссылку** на **проекта** меню, а затем выберите соответствующий объект Библиотека или библиотеки типов.  
+- Если тип определен, но библиотека объектов или библиотека типов, в которой он определен, не зарегистрирована в Visual Basic, щелкните **Добавить ссылку** в меню **проект** , а затем выберите соответствующую библиотеку объектов или библиотеку типов.  
   
-- Убедитесь, что тип в сборке, которая является частью целевого профиля .NET Framework. Дополнительные сведения см. в разделе [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
+- Убедитесь, что тип находится в сборке, которая является частью целевого .NET Framework профиля. Дополнительные сведения см. в разделе [Устранение неполадок .NET Framework нацеливание на ошибки](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Пространства имен в Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
-- [Оператор Enum](../../../visual-basic/language-reference/statements/enum-statement.md)
-- [Оператор Structure](../../../visual-basic/language-reference/statements/structure-statement.md)
-- [Оператор Class](../../../visual-basic/language-reference/statements/class-statement.md)
-- [Оператор Interface](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Пространства имен в Visual Basic](../../programming-guide/program-structure/namespaces.md)
+- [Оператор Enum](../statements/enum-statement.md)
+- [Оператор Structure](../statements/structure-statement.md)
+- [Оператор Class](../statements/class-statement.md)
+- [Оператор Interface](../statements/interface-statement.md)
 - [Управление ссылками в проекте](/visualstudio/ide/managing-references-in-a-project)

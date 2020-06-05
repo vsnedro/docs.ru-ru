@@ -2,12 +2,12 @@
 title: Атомарные объекты XName и XNamespace (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
-ms.openlocfilehash: 0ffed5d00364f6614b439480607ed521f52754ec
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 6a94bc0f2fd8013997e233b300fa19c12671bf29
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74345731"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84383693"
 ---
 # <a name="atomized-xname-and-xnamespace-objects-linq-to-xml-visual-basic"></a>Атомарные объекты XName и XNamespace (LINQ to XML) (Visual Basic)
 
@@ -19,7 +19,7 @@ ms.locfileid: "74345731"
 
 Чтобы разрешить создание атомарных объектов класса, необходимо, чтобы конструктор класса был закрытым, а не открытым. Это требование основано на том, что если бы конструктор был открытым, можно было бы создавать неатомарные объекты. Классы <xref:System.Xml.Linq.XName> и <xref:System.Xml.Linq.XNamespace> реализуют неявный оператор преобразования строки в объект <xref:System.Xml.Linq.XName> или <xref:System.Xml.Linq.XNamespace>. Экземпляры этих объектов могут быть получены только таким способом. Создание экземпляров с помощью конструктора невозможно, так как конструктор недоступен.
 
-<xref:System.Xml.Linq.XName> и <xref:System.Xml.Linq.XNamespace> также реализуют операторы равенства и неравенства, чтобы определить, являются ли два сравниваемых объекта ссылками на один и тот же экземпляр.
+Классы <xref:System.Xml.Linq.XName> и<xref:System.Xml.Linq.XNamespace> также реализуют операторы для проверки равенства и неравенства, определяющие, ссылаются ли два сравниваемых объекта на один и тот же экземпляр.
 
 ## <a name="example"></a>Пример
 
@@ -74,4 +74,4 @@ Next
 
 ## <a name="see-also"></a>См. также
 
-- [Производительность (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+- [Производительность (LINQ to XML) (Visual Basic)](performance-linq-to-xml.md)

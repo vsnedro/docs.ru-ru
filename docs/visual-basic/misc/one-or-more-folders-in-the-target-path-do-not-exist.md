@@ -2,12 +2,12 @@
 title: Одна или несколько папок в целевом пути не существует.
 ms.date: 07/20/2015
 ms.assetid: b33b00f6-0eb6-47fa-a639-269f97e790cd
-ms.openlocfilehash: 026b3aca7808c7e10c6df87f1c313eb0d59c7301
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 884d62fbd6f76e47f1bd2a1c6742ca0f16187adf
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64591836"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84376034"
 ---
 # <a name="one-or-more-folders-in-the-target-path-do-not-exist"></a>Одна или несколько папок в целевом пути не существует.
 Один или несколько каталогов, представленных в целевом пути, не существует. Это может быть результатом неправильного синтаксического анализа пути, особенно при указании относительного пути.  
@@ -16,6 +16,6 @@ ms.locfileid: "64591836"
   
 - Убедитесь в том, что вы указали правильный путь.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Анализ путей к файлам](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [Практическое руководство. Анализ путей к файлам](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

@@ -2,12 +2,12 @@
 title: Пример, выводящий части документа в формате Office Open XML
 ms.date: 07/20/2015
 ms.assetid: a951925b-c985-48ed-b215-2a68b58f1ae5
-ms.openlocfilehash: 47a4ac649fb370145962247e07e1d8841411cac0
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: f374967ec633dcb0dd0fab3ac77de669c65a219c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353503"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84375191"
 ---
 # <a name="example-that-outputs-office-open-xml-document-parts-visual-basic"></a>Пример вывода частей документа Office Open XML (Visual Basic)
 В этом разделе разъясняется, как открывать документ Office Open XML и как обращаться к частям этого документа.  
@@ -64,6 +64,6 @@ Using wdPackage As Package = Package.Open(fileName, FileMode.Open, FileAccess.Re
 End Using  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Сведения о документах WordprocessingML в формате Office Open XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+- [Сведения о документах WordprocessingML в формате Office Open XML (Visual Basic)](details-of-office-open-xml-wordprocessingml-documents.md)

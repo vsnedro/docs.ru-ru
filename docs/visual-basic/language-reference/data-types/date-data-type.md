@@ -15,18 +15,18 @@ helpviewer_keywords:
 - literals [Visual Basic], Date
 - '# specifier for Date literals'
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
-ms.openlocfilehash: 972df72874753a0f1213f3a4942468c59e3913ce
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 46c25e14db56d4cc3c6d59ec7649b37c35676e2e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344024"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84387430"
 ---
 # <a name="date-data-type-visual-basic"></a>Тип данных Date (Visual Basic)
 
 Содержит 64-разрядные (8-байтные) значения IEEE, представляющие даты в диапазоне от 1 января 0001 года до 31 декабря 9999 года и время от 00:00:00 (полночь) до 23:59:9999999. Каждое приращение представляет 100 наносекунд затраченного времени с начала 1 января 1 года по григорианскому календарю. Максимальное значение представляет 100 наносекунд перед началом 1 января 10 000 года.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Используйте тип данных `Date`, содержащий значения даты, времени или даты и времени.
 
@@ -42,7 +42,7 @@ ms.locfileid: "74344024"
 
 ## <a name="workarounds"></a>Методы обхода проблемы
 
-Для преобразования литерала `Date` в формат языкового стандарта или пользовательский формат, передайте литерал функции <xref:Microsoft.VisualBasic.Strings.Format%2A>, указав стандартный или пользовательский формат даты. В следующем примере это показано.
+Для преобразования литерала `Date` в формат языкового стандарта или пользовательский формат, передайте литерал функции <xref:Microsoft.VisualBasic.Strings.Format%2A>, указав стандартный или пользовательский формат даты. Это продемонстрировано в следующем примере.
 
 ```vb
 MsgBox("The formatted date is " & Format(#5/31/1993#, "dddd, d MMM yyyy"))
@@ -70,9 +70,9 @@ Dim dateInMay As New System.DateTime(1993, 5, 31, 12, 14, 0)
 
 - **Вопросы взаимодействия.** При взаимодействие с компонентами, которые не написаны для платформы .NET Framework (например, автоматизация или COM-объекты), необходимо помнить, что в других средах типы даты и времени несовместимы с типом `Date` Visual Basic. Если вы передаете аргумент даты и времени такому компоненту, объявите его `Double`, а не как `Date` в новом коде Visual Basic и используйте методы преобразования <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> и <xref:System.DateTime.ToOADate%2A?displayProperty=nameWithType>.
 
-- **Символы типа.** `Date` не имеет символа типа литерала или символа типа идентификатора. Однако компилятор обрабатывает литералы, заключенные в решетки (`# #`), как `Date`.
+- **Символы типа.** `Date`не имеет символа типа литерала или символа типа идентификатора. Однако компилятор обрабатывает литералы, заключенные в решетки (`# #`), как `Date`.
 
-- **Тип платформы.** В .NET Framework данный тип соответствует структуре <xref:System.DateTime?displayProperty=nameWithType>.
+- **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.DateTime?displayProperty=nameWithType>.
 
 ## <a name="example"></a>Пример
 
@@ -82,12 +82,12 @@ Dim dateInMay As New System.DateTime(1993, 5, 31, 12, 14, 0)
 Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.DateTime?displayProperty=nameWithType>
-- [Типы данных](../../../visual-basic/language-reference/data-types/index.md)
-- [Standard Date and Time Format Strings](../../../standard/base-types/standard-date-and-time-format-strings.md)
-- [Custom Date and Time Format Strings](../../../standard/base-types/custom-date-and-time-format-strings.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Сводка по преобразованию](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Эффективное использование типов данных](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Типы данных](index.md)
+- [Строки стандартных форматов даты и времени](../../../standard/base-types/standard-date-and-time-format-strings.md)
+- [Строки настраиваемых форматов даты и времени](../../../standard/base-types/custom-date-and-time-format-strings.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Сводка по преобразованию](../keywords/conversion-summary.md)
+- [Эффективное использование типов данных](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

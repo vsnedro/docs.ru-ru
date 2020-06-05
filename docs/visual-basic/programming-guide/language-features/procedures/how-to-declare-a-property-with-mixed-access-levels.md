@@ -10,39 +10,39 @@ helpviewer_keywords:
 - properties [Visual Basic], access levels
 - Property statement [Visual Basic], declaring mixed access levels
 ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
-ms.openlocfilehash: d74e23f33fbf7d9d29ab84b9b1bd4fc08863ac48
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: f0f7aba25888544dfcc093906850ae7ada621182
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349699"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84388249"
 ---
 # <a name="how-to-declare-a-property-with-mixed-access-levels-visual-basic"></a>Практическое руководство. Объявление свойства со смешанным уровнем доступа (Visual Basic)
-Если требуется, чтобы процедуры `Get` и `Set` для свойства имели разные уровни доступа, можно использовать более строгий уровень в инструкции `Property` и более строгий уровень в инструкции `Get` или `Set`. Смешанные уровни доступа для свойства используются, если требуется, чтобы определенные части кода могли получить значение свойства, а некоторые другие части кода могут изменить значение.  
+Если требуется `Get` `Set` , чтобы процедуры и для свойства имели разные уровни доступа, можно использовать более строгий уровень в `Property` инструкции и более строгий уровень в `Get` `Set` операторе или. Смешанные уровни доступа для свойства используются, если требуется, чтобы определенные части кода могли получить значение свойства, а некоторые другие части кода могут изменить значение.  
   
- Дополнительные сведения об уровнях доступа см. [в разделе уровни доступа в Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ Дополнительные сведения об уровнях доступа см. [в разделе уровни доступа в Visual Basic](../declared-elements/access-levels.md).  
   
 ### <a name="to-declare-a-property-with-mixed-access-levels"></a>Объявление свойства со смешанными уровнями доступа  
   
-1. Объявите свойство обычным способом и укажите менее четкий уровень доступа (например, `Public`) в инструкции `Property`.  
+1. Объявите свойство обычным способом и укажите менее низкий уровень доступа (например, `Public` ) в `Property` инструкции.  
   
-2. Объявите `Get` или `Set` процедуру, указав более четкий уровень доступа (например, `Friend`).  
+2. Объявите `Get` или процедуру, `Set` указав более четкий уровень доступа (например, `Friend` ).  
   
-3. Не указывайте уровень доступа для другой процедуры свойства. Предполагается уровень доступа, объявленный в операторе `Property`. Доступ можно ограничить только для одной из процедур свойств.  
+3. Не указывайте уровень доступа для другой процедуры свойства. Он предполагает уровень доступа, объявленный в `Property` инструкции. Доступ можно ограничить только для одной из процедур свойств.  
   
      [!code-vb[VbVbcnProcedures#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#10)]  
   
-     В предыдущем примере процедура `Get` имеет тот же `Protected` доступ, что и само свойство, а процедура `Set` имеет `Private` доступ. Класс, производный от `employee`, может считывать `salary` значение, но только класс `employee` может его задать.  
+     В предыдущем примере `Get` процедура имеет тот же `Protected` доступ, что и само свойство, а `Set` процедура имеет `Private` доступ. Класс, производный от `employee` , может считывать `salary` значение, но только `employee` класс может его задать.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Процедуры свойств](./property-procedures.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
-- [Оператор Property](../../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../../../language-reference/statements/property-statement.md)
 - [Различия между свойствами и переменными в Visual Basic](./differences-between-properties-and-variables.md)
 - [Практическое руководство. Создание свойства](./how-to-create-a-property.md)
 - [Практическое руководство. Вызов процедуры свойства](./how-to-call-a-property-procedure.md)
-- [Инструкции. объявление и вызов свойства по умолчанию в Visual Basic](./how-to-declare-and-call-a-default-property.md)
+- [Практическое руководство. Объявление и вызов свойства по умолчанию в Visual Basic](./how-to-declare-and-call-a-default-property.md)
 - [Практическое руководство. Запись значения в свойство](./how-to-put-a-value-in-a-property.md)
 - [Практическое руководство. Получение значения из свойства](./how-to-get-a-value-from-a-property.md)

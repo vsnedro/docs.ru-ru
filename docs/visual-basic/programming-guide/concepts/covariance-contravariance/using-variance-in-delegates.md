@@ -2,20 +2,20 @@
 title: Использование вариативности в делегатах
 ms.date: 07/20/2015
 ms.assetid: 7b5c20f1-6416-46a3-94b6-f109c31c842c
-ms.openlocfilehash: 9c2aad0e4b9408939600938412fe5c3e73b5bf15
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 842392a1342f7d3689d4d1f2a2adb7470eeda05e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349031"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84375788"
 ---
-# <a name="using-variance-in-delegates-visual-basic"></a>Использование вариативности в делегатах (Visual Basic)
+# <a name="using-variance-in-delegates-visual-basic"></a>Использование вариативности в делегатах (Visual Basic)
 
 При назначении метода делегату *ковариация* и *контравариантость* обеспечивают гибкость сопоставления типа делегата с сигнатурой метода. Ковариация позволяет методу иметь тип возвращаемого значения, степень наследования которого больше, чем указано в делегате. Контравариантность позволяет использовать метод с типами параметров, степень наследования которых меньше, чем у типа делегата.
 
 ## <a name="example-1-covariance"></a>Пример 1. Ковариация
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
 
 В этом примере демонстрируется использование делегатов с методами, типы возвращаемых значений которых являются производными от типа возвращаемого значения в сигнатуре делегата. Тип данных, возвращаемый `DogsHandler`, является типом `Dogs`, производным от определенного в делегате типа `Mammals`.
 
@@ -46,7 +46,7 @@ End Class
 
 ## <a name="example-2-contravariance"></a>Пример 2. Контравариантность
 
-### <a name="description"></a>Описание
+### <a name="description"></a>Описание:
 
 В этом примере демонстрируется использование делегатов с методами, параметры типа которых являются базовыми типами типа параметра сигнатуры делегата. Контравариантность позволяет использовать один обработчик событий вместо нескольких. В следующем примере используется два делегата:
 
@@ -86,7 +86,7 @@ Private Sub Form1_Load(ByVal sender As System.Object,
 End Sub
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Вариативность в делегатах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)
-- [Использование вариативности в универсальных методах-делегатах Func и Action (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+- [Вариативность в делегатах (Visual Basic)](variance-in-delegates.md)
+- [Использование вариативности в универсальных методах-делегатах Func и Action (Visual Basic)](using-variance-for-func-and-action-generic-delegates.md)

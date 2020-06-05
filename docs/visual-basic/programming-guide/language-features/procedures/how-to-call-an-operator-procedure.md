@@ -11,17 +11,17 @@ helpviewer_keywords:
 - overloaded operators [Visual Basic], calling
 - operator overloading
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
-ms.openlocfilehash: a977b17d4b2c797bbe38d289a57f3d9d31fa64fa
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: fa2bc5417b8b917ff48502a5bd0a4daa21fab67e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75345968"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84388573"
 ---
 # <a name="how-to-call-an-operator-procedure-visual-basic"></a>Практическое руководство. Вызов процедуры оператора (Visual Basic)
-Для вызова процедуры оператора используется символ оператора в выражении. В случае оператора преобразования вызывается [Функция CType](../../../../visual-basic/language-reference/functions/ctype-function.md) для преобразования значения из одного типа данных в другой.  
+Для вызова процедуры оператора используется символ оператора в выражении. В случае оператора преобразования вызывается [Функция CType](../../../language-reference/functions/ctype-function.md) для преобразования значения из одного типа данных в другой.  
   
- Процедуры оператора не вызываются явным образом. Вы просто используете оператор или функцию `CType` в операторе присваивания или выражении так же, как обычно используется оператор. Visual Basic выполняет вызов процедуры оператора.  
+ Процедуры оператора не вызываются явным образом. Вы просто используете оператор или `CType` функцию в операторе присваивания или выражении так же, как обычно используется оператор. Visual Basic выполняет вызов процедуры оператора.  
   
  Определение оператора для класса или структуры также называется *перегрузкой* оператора.  
   
@@ -39,29 +39,29 @@ ms.locfileid: "75345968"
   
 2. Убедитесь, что типы данных операндов подходят для преобразования, и в правильном порядке.  
   
-3. `CType` вызывает процедуру оператора преобразования и возвращает преобразованное значение.  
+3. `CType`вызывает процедуру оператора преобразования и возвращает преобразованное значение.  
   
 ## <a name="example"></a>Пример  
- Следующий пример создает две структуры <xref:System.TimeSpan>, добавляет их вместе и сохраняет результат в третьей структуре <xref:System.TimeSpan>. Структура <xref:System.TimeSpan> определяет процедуры операторов для перегрузки нескольких стандартных операторов.  
+ Следующий пример создает две <xref:System.TimeSpan> структуры, добавляет их вместе и сохраняет результат в третьей <xref:System.TimeSpan> структуре. <xref:System.TimeSpan>Структура определяет процедуры операторов для перегрузки нескольких стандартных операторов.  
   
  [!code-vb[VbVbcnProcedures#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#29)]  
   
- Поскольку <xref:System.TimeSpan> перегружает стандартный оператор `+`, в предыдущем примере вызывается процедура оператора при вычислении значения `combinedSpan`.  
+ Поскольку <xref:System.TimeSpan> перегружает Стандартный `+` оператор, предыдущий пример вызывает процедуру оператора при вычислении значения `combinedSpan` .  
   
  Пример вызова процедуры оператора диалога см. [в разделе как использовать класс, определяющий операторы](./how-to-use-a-class-that-defines-operators.md).  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
  Убедитесь, что используемый класс или структура определяет оператор, который вы хотите использовать.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры операторов](./operator-procedures.md)
 - [Практическое руководство. Определение оператора](./how-to-define-an-operator.md)
 - [Практическое руководство. Определение оператора преобразования](./how-to-define-a-conversion-operator.md)
-- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Расширение](../../../../visual-basic/language-reference/modifiers/widening.md)
-- [Narrowing](../../../../visual-basic/language-reference/modifiers/narrowing.md)
-- [Оператор Structure](../../../../visual-basic/language-reference/statements/structure-statement.md)
-- [Практическое руководство. Объявление структуры](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
-- [Явные и неявные преобразования](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
-- [Расширяющие и сужающие преобразования](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Operator Statement](../../../language-reference/statements/operator-statement.md)
+- [Widening](../../../language-reference/modifiers/widening.md)
+- [Narrowing](../../../language-reference/modifiers/narrowing.md)
+- [Оператор Structure](../../../language-reference/statements/structure-statement.md)
+- [Практическое руководство. Объявление структуры](../data-types/how-to-declare-a-structure.md)
+- [Явные и неявные преобразования](../data-types/implicit-and-explicit-conversions.md)
+- [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md)
