@@ -7,19 +7,19 @@ helpviewer_keywords:
 - statements [Visual Basic], structure
 - structures [Visual Basic], declaring
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.openlocfilehash: 41d2d03064dea703909218de56feb863526c220b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a6b70d0973e92db90e35e61b7fed2279c5b0bac3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349999"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84393978"
 ---
 # <a name="how-to-declare-a-structure-visual-basic"></a>Практическое руководство. Объявление структуры (Visual Basic)
-Объявление структуры начинается с [оператора Structure](../../../../visual-basic/language-reference/statements/structure-statement.md)и завершается с помощью оператора `End Structure`. Между этими двумя операторами необходимо объявить хотя бы один *элемент*. Элементы могут иметь любой тип данных, но хотя бы один из них должен быть либо необщей переменной, либо нестандартным, ненастраиваемым событием.  
+Объявление структуры начинается с [оператора Structure](../../../language-reference/statements/structure-statement.md)и заканчивается `End Structure` инструкцией. Между этими двумя операторами необходимо объявить хотя бы один *элемент*. Элементы могут иметь любой тип данных, но хотя бы один из них должен быть либо необщей переменной, либо нестандартным, ненастраиваемым событием.  
   
  Нельзя инициализировать какие либо элементы структуры в объявлении структуры. При объявлении переменной, имеющей тип структуры, необходимо назначить значения элементам, обращаясь к ним через переменную.  
   
- Обсуждение различий между структурами и классами см. в разделе [структуры и классы](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md).  
+ Обсуждение различий между структурами и классами см. в разделе [структуры и классы](structures-and-classes.md).  
   
  В демонстрационных целях рассмотрим ситуацию, когда необходимо отследить имя сотрудника, телефонное расширение и заработную плату. Структура позволяет сделать это в одной переменной.  
   
@@ -27,7 +27,7 @@ ms.locfileid: "74349999"
   
 1. Создайте начальную и конечную инструкции для структуры.  
   
-     Уровень доступа структуры можно указать с помощью ключевого слова [Public](../../../../visual-basic/language-reference/modifiers/public.md), [protected](../../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)или [Private](../../../../visual-basic/language-reference/modifiers/private.md) . также можно разрешить `Public`по умолчанию.  
+     Можно указать уровень доступа структуры с помощью ключевого слова [Public](../../../language-reference/modifiers/public.md), [protected](../../../language-reference/modifiers/protected.md), [Friend](../../../language-reference/modifiers/friend.md)или [Private](../../../language-reference/modifiers/private.md) , либо можно разрешить по умолчанию использовать `Public` .  
   
     ```vb  
     Private Structure employee  
@@ -36,7 +36,7 @@ ms.locfileid: "74349999"
   
 2. Добавьте элементы в текст структуры.  
   
-     Структура должна содержать по крайней мере один элемент. Необходимо объявить каждый элемент и указать для него уровень доступа. Если вы используете [инструкцию Dim](../../../../visual-basic/language-reference/statements/dim-statement.md) без ключевых слов, для специальных возможностей по умолчанию используется значение `Public`.  
+     Структура должна содержать по крайней мере один элемент. Необходимо объявить каждый элемент и указать для него уровень доступа. Если вы используете [инструкцию Dim](../../../language-reference/statements/dim-statement.md) без ключевых слов, для специальных возможностей по умолчанию используется значение `Public` .  
   
     ```vb  
     Private Structure employee  
@@ -51,19 +51,19 @@ ms.locfileid: "74349999"
     End Structure  
     ```  
   
-     Поле `salary` в предыдущем примере имеет `Private`, что означает, что оно недоступно за пределами структуры, даже из содержащего класса. Однако процедура `giveRaise` `Public`, поэтому ее можно вызывать вне структуры. Аналогичным образом можно вызвать событие `salaryReviewTime` за пределами структуры.  
+     `salary`Поле в предыдущем примере имеет значение `Private` , которое означает, что оно недоступно за пределами структуры, даже из содержащего класса. Однако `giveRaise` процедура является `Public` , поэтому ее можно вызывать извне структуры. Аналогичным образом можно вызвать `salaryReviewTime` событие за пределами структуры.  
   
-     В дополнение к переменным, `Sub` процедурам и событиям можно также определить константы, `Function` процедуры и свойства в структуре. Можно назначить не более одного свойства в качестве *свойства по умолчанию*при условии, что оно принимает по крайней мере один аргумент. Можно выполнить обработку события с помощью [общей](../../../../visual-basic/language-reference/modifiers/shared.md) процедуры`Sub`. Дополнительные сведения см. в разделе [инструкции. объявление и вызов свойства по умолчанию в Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md).  
+     Помимо переменных, процедур и `Sub` событий, в структуре можно также определять константы, `Function` процедуры и свойства. Можно назначить не более одного свойства в качестве *свойства по умолчанию*при условии, что оно принимает по крайней мере один аргумент. Можно выполнить обработку события с помощью [общей](../../../language-reference/modifiers/shared.md) `Sub` процедуры. Дополнительные сведения см. в разделе [инструкции. объявление и вызов свойства по умолчанию в Visual Basic](../procedures/how-to-declare-and-call-a-default-property.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы данных](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Простые типы данных](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
-- [Составные типы данных](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
-- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
-- [Структуры](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Устранение неполадок, связанных с типами данных](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [Переменные структуры](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)
-- [Структуры и другие элементы программирования](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)
-- [Структуры и классы](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
-- [Тип данных, определенный пользователем](../../../../visual-basic/language-reference/data-types/user-defined-data-type.md)
+- [Типы данных](index.md)
+- [Простые типы данных](elementary-data-types.md)
+- [Составные типы данных](composite-data-types.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Структуры](structures.md)
+- [Устранение неполадок, связанных с типами данных](troubleshooting-data-types.md)
+- [Переменные структуры](structure-variables.md)
+- [Структуры и другие элементы программирования](structures-and-other-programming-elements.md)
+- [Структуры и классы](structures-and-classes.md)
+- [Определяемый пользователем тип данных](../../../language-reference/data-types/user-defined-data-type.md)

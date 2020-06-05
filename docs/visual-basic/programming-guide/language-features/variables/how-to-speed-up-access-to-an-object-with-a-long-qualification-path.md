@@ -8,18 +8,18 @@ helpviewer_keywords:
 - With block
 - object variables [Visual Basic], accessing
 ms.assetid: 3eb7657f-c9fe-4e05-8bc3-4bb14d5ae585
-ms.openlocfilehash: 83670ae6af0904156b08398024658cf504b7663f
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: fe93e7bac2a21f1060d1f93765eb35e1ad0c7eb0
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346815"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410416"
 ---
 # <a name="how-to-speed-up-access-to-an-object-with-a-long-qualification-path-visual-basic"></a>Практическое руководство. Увеличение скорости доступа к объекту с длинным классификационным путем (Visual Basic)
 
 При частом доступе к объекту, для которого требуется квалификация пути нескольких методов и свойств, можно ускорить код, не повторив классификационный путь.
 
-Существует два способа избежать повторения пути для уточнения. Объект можно назначить переменной или использовать в блоке `With`...`End With`.
+Существует два способа избежать повторения пути для уточнения. Объект можно назначить переменной или использовать в `With` блоке.... `End With`
 
 ### <a name="to-speed-up-access-to-a-heavily-qualified-object-by-assigning-it-to-a-variable"></a>Ускорение доступа к сильно известному объекту путем присвоения его переменной
 
@@ -39,13 +39,13 @@ ms.locfileid: "74346815"
 
 ### <a name="to-speed-up-access-to-a-heavily-qualified-object-by-using-a-withend-with-block"></a>Для ускорения доступа к сильно известному объекту с помощью метода with... Конец блока
 
-1. Укажите классификационный путь в операторе `With`.
+1. Укажите классификационный путь в `With` операторе.
 
     ```vb
     With someForm.ActiveForm.ActiveControl
     ```
 
-2. Получите доступ к членам объекта внутри блока `With` перед инструкцией `End With`.
+2. Получите доступ к членам объекта внутри `With` блока перед `End With` инструкцией.
 
     ```vb
         .Text = "Test"
@@ -54,7 +54,7 @@ ms.locfileid: "74346815"
     End With
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Объектные переменные](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Оператор With...End With](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+- [Объектные переменные](object-variables.md)
+- [Оператор With…End With](../../../language-reference/statements/with-end-with-statement.md)
