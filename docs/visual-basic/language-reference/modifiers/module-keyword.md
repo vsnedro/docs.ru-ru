@@ -1,5 +1,5 @@
 ---
-title: <keyword> модуля
+title: Модуль<keyword>
 ms.date: 07/20/2015
 f1_keywords:
 - vb.ModuleAttribute
@@ -8,25 +8,25 @@ helpviewer_keywords:
 - Module modifier
 - attribute blocks, Module keyword
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
-ms.openlocfilehash: cd2f762181b5a702f0b0defd5b71bb7bdf129c7b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0cb009c22dada7b92956e113d33505923a92f2b3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351555"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84362428"
 ---
-# <a name="module-keyword-visual-basic"></a>Ключевое слово \<модуля > (Visual Basic)
+# <a name="module-keyword-visual-basic"></a>Module \<keyword> (Visual Basic)
 Указывает, что атрибут в начале исходного файла применяется к текущему модулю сборки.  
   
-## <a name="remarks"></a>Примечания  
- Многие атрибуты относятся к отдельному программному элементу, например классу или свойству. Вы применяете такой атрибут, присоединяя блок атрибута в угловых скобках (`< >`) непосредственно к оператору объявления.  
+## <a name="remarks"></a>Комментарии  
+ Многие атрибуты относятся к отдельному программному элементу, например классу или свойству. Вы применяете такой атрибут, присоединив блок атрибута в угловых скобках ( `< >` ) непосредственно к оператору объявления.  
   
- Если атрибут относится не только к следующему элементу, но и к текущему модулю сборки, блок атрибута помещается в начало исходного файла и определяется атрибутом с ключевым словом `Module`. Если он применяется ко всей сборке, используется ключевое слово [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md) .  
+ Если атрибут относится не только к следующему элементу, но и к текущему модулю сборки, блок атрибута помещается в начало исходного файла и определяется атрибутом с `Module` ключевым словом. Если он применяется ко всей сборке, используется ключевое слово [Assembly](assembly.md) .  
   
- Модификатор `Module` не совпадает с [оператором Module](../../../visual-basic/language-reference/statements/module-statement.md).  
+ `Module`Модификатор не совпадает с [оператором module](../statements/module-statement.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Сборка](../../../visual-basic/language-reference/modifiers/assembly.md)
-- [Оператор Module](../../../visual-basic/language-reference/statements/module-statement.md)
-- [Обзор атрибутов](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Сборка](assembly.md)
+- [Оператор Module](../statements/module-statement.md)
+- [Обзор атрибутов](../../programming-guide/concepts/attributes/index.md)

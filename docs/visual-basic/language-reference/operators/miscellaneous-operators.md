@@ -5,12 +5,12 @@ helpviewer_keywords:
 - operators [Visual Basic]
 - operators [Visual Basic], miscellaneous
 ms.assetid: 2423b3c5-fc3f-479c-bcd2-2c6ebe92814f
-ms.openlocfilehash: c7ae316e2409f5e5d1cb83dee60bdf08c679416c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 3f352302ef875e66fe711187d891712fb32f219c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344067"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401528"
 ---
 # <a name="miscellaneous-operators-visual-basic"></a>Прочие операторы (Visual Basic)
 Ниже приведены различные операторы, определенные в Visual Basic.  
@@ -19,18 +19,18 @@ ms.locfileid: "74344067"
 
 [? () NULL — условный оператор](null-conditional-operators.md)
 
- [Оператор AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md)  
+ [Оператор AddressOf](addressof-operator.md)  
   
- [Оператор await](../../../visual-basic/language-reference/operators/await-operator.md)  
+ [Оператор await](await-operator.md)  
   
- [GetType, оператор](../../../visual-basic/language-reference/operators/gettype-operator.md)  
+ [GetType, оператор](gettype-operator.md)  
   
- [Выражение функции](../../../visual-basic/language-reference/operators/function-expression.md)  
+ [Выражение функции](function-expression.md)  
 
- [Оператор if](../../../visual-basic/language-reference/operators/if-operator.md)  
+ [Оператор if](if-operator.md)  
   
- [TypeOf, оператор](../../../visual-basic/language-reference/operators/typeof-operator.md)  
+ [TypeOf, оператор](typeof-operator.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Операторы, перечисленные по функциональным возможностям](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Операторы, перечисленные по функциональным возможностям](operators-listed-by-functionality.md)

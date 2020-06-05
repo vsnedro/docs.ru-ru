@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - BC31200
 ms.assetid: 053e8cba-8584-45cc-9fa0-43d122779772
-ms.openlocfilehash: edd8032e693c233a51248daa6ffdfc830b0648a3
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: bda92b4244631f66142499a94be562854b35437e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64662601"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406473"
 ---
 # <a name="xml-literals-and-xml-properties-are-not-supported-in-embedded-code-within-aspnet"></a>XML литералы и XML свойства не поддерживаются во встроенном в ASP.NET коде
-Литералы XML и свойства XML не поддерживаются во встроенном в ASP.NET коде. Чтобы использовать функции XML, переместите код для кода.  
+XML-литералы и XML-свойства не поддерживаются во внедренном коде в ASP.NET. Чтобы использовать функции XML, переместите код в код программной части.  
   
- Литерал XML или свойство оси XML определен во встроенном коде (`<%= =>`) в файле ASP.NET.  
+ XML-литерал или свойство оси XML определяются внутри внедренного кода ( `<%= =>` ) в файле ASP.NET.  
   
  **Идентификатор ошибки:** BC31200  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Переместите код, который содержит XML-литерала или свойства оси XML в файл фонового кода ASP.NET.  
+- Переместите код, включающий XML-литерал или свойство оси XML, в файл кода программной части ASP.NET.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [XML-литералы](../../../visual-basic/language-reference/xml-literals/index.md)
-- [Свойства оси XML](../../../visual-basic/language-reference/xml-axis/index.md)
-- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [XML-литералы](../xml-literals/index.md)
+- [Свойства оси XML](../xml-axis/index.md)
+- [XML](../../programming-guide/language-features/xml/index.md)

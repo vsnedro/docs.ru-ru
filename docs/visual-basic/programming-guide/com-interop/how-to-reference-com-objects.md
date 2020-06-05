@@ -8,17 +8,17 @@ helpviewer_keywords:
 - COM objects, referencing
 - interop assemblies
 ms.assetid: 9c518fb4-27d9-4112-9e6a-5a7d0210af6f
-ms.openlocfilehash: ea0e1d9b0ae9f151d901c425512508ba7bc05343
-ms.sourcegitcommit: 4f4a32a5c16a75724920fa9627c59985c41e173c
+ms.openlocfilehash: 2e2cbac6fad5e1686b7383c44619b8c6f5326483
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72524358"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84396808"
 ---
 # <a name="how-to-reference-com-objects-from-visual-basic"></a>Практическое руководство. Ссылка на COM-объект в Visual Basic
 В Visual Basic добавление ссылок на COM-объекты, имеющие библиотеки типов, требует создания сборки взаимодействия для библиотеки COM. Ссылки на члены COM-объекта направляются в сборку взаимодействия, а затем пересылаются на фактический COM-объект. Ответы от COM-объекта направляются в сборку взаимодействия и пересылаются в приложение .NET Framework.  
   
- Вы можете ссылаться на COM-объект без использования сборки взаимодействия, внедрив сведения о типе для COM-объекта в сборку .NET. Чтобы внедрить сведения о типе, задайте для свойства `Embed Interop Types` значение `True` для ссылки на COM-объект. При компиляции с помощью компилятора командной строки используйте параметр `/link` для ссылки на библиотеку COM. Дополнительные сведения см. в разделе [-Link (Visual Basic)](../../../visual-basic/reference/command-line-compiler/link.md).  
+ Вы можете ссылаться на COM-объект без использования сборки взаимодействия, внедрив сведения о типе для COM-объекта в сборку .NET. Чтобы внедрить сведения о типе, задайте `Embed Interop Types` для свойства значение, чтобы `True` получить ссылку на COM-объект. При компиляции с помощью компилятора командной строки используйте `/link` параметр для ссылки на БИБЛИОТЕКУ com. Дополнительные сведения см. в разделе [-Link (Visual Basic)](../../reference/command-line-compiler/link.md).  
   
  Visual Basic автоматически создает сборки взаимодействия при добавлении ссылки на библиотеку типов из интегрированной среды разработки (IDE). При работе из командной строки можно использовать служебную программу Tlbimp для создания сборок взаимодействия вручную.  
   
@@ -28,7 +28,7 @@ ms.locfileid: "72524358"
   
 2. Выберите компонент, который вы хотите использовать, из списка COM-объектов.  
   
-3. Чтобы упростить доступ к сборке взаимодействия, добавьте оператор `Imports` в начало класса или модуля, в котором будет использоваться COM-объект. Например, в следующем примере кода выполняется импорт пространства имен `INKEDLib` для объектов, упоминаемых в библиотеке `Microsoft InkEdit Control 1.0`.  
+3. Чтобы упростить доступ к сборке взаимодействия, добавьте `Imports` оператор в начало класса или модуля, в котором будет использоваться COM-объект. Например, в следующем примере кода выполняется импорт пространства имен `INKEDLib` для объектов, упоминаемых в `Microsoft InkEdit Control 1.0` библиотеке.  
   
      [!code-vb[VbVbalrInterop#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#40)]  
   
@@ -52,11 +52,11 @@ ms.locfileid: "72524358"
   
      Программу Tlbimp можно использовать для создания сборок взаимодействия для библиотек типов, даже для незарегистрированных COM-объектов. Однако COM-объекты, на которые ссылаются сборки взаимодействия, должны быть правильно зарегистрированы на компьютере, где они будут использоваться. Вы можете зарегистрировать COM-объект с помощью служебной программы regsvr32, входящей в состав операционной системы Windows.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [COM-взаимодействие](../../../visual-basic/programming-guide/com-interop/index.md)
+- [COM-взаимодействие](index.md)
 - [Tlbimp.exe (программа экспорта библиотек типов)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
 - [Tlbexp.exe (программа экспорта библиотек типов)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)
-- [Пошаговое руководство. Реализация наследования с использованием COM-объектов](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
-- [Устранение неполадок взаимодействия](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
-- [Оператор Imports (пространство имен и тип .NET)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [Пошаговое руководство. Реализация наследования с использованием COM-объектов](walkthrough-implementing-inheritance-with-com-objects.md)
+- [Устранение неполадок взаимодействия](troubleshooting-interoperability.md)
+- [Оператор Imports (пространство имен .NET и тип)](../../language-reference/statements/imports-statement-net-namespace-and-type.md)

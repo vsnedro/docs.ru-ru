@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - BC30996
 ms.assetid: 6e183fe0-8888-43ed-a062-01571079455f
-ms.openlocfilehash: 0795fdc1c4b177e13979d7555cd7588217b8cb4c
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 13fa8917f228661fc44f5e0920d91c596e250c38
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62013807"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84402841"
 ---
 # <a name="initializer-expected"></a>Ожидается инициализатор
-Предпринята попытка объявить экземпляр класса с помощью инициализатора объектов, в котором список инициализации пуст, как показано в следующем примере.  
+Предпринята попытка объявить экземпляр класса с помощью инициализатора объекта, в котором список инициализации пуст, как показано в следующем примере.  
   
  `' Not valid.`  
   
  `' Dim aStudent As New Student With {}`  
   
- По крайней мере одно поле или свойство должны быть инициализированы в списке инициализаторов, как показано в следующем примере.  
+ В списке инициализаторов должно быть инициализировано по крайней мере одно поле или свойство, как показано в следующем примере.  
   
  `Dim aStudent As New Student With {.year = "Senior"}`  
   
@@ -29,9 +29,9 @@ ms.locfileid: "62013807"
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1. Инициализация по крайней мере одно поле или свойство в инициализаторе или не использовать инициализатор объекта.  
+1. Инициализируйте по крайней мере одно поле или свойство в инициализаторе или не используйте инициализатор объекта.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Инициализаторы объектов. Именованные и анонимные типы](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Практическое руководство. Объявление объекта с помощью инициализатора объектов](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)
+- [Инициализаторы объектов: именованные и анонимные типы](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [Практическое руководство. Объявление объекта с помощью инициализатора объектов](../../programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)

@@ -2,12 +2,12 @@
 title: Практическое руководство. Поиск одноуровневых узлов (XPath-LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 73082738-2113-4438-8545-98d5df0927cb
-ms.openlocfilehash: 52151c939bbf67df37a9535b1081ff902d357123
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: add51249dbc7cc4d33c79fcf6f82126f6bdb5612
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344630"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84364543"
 ---
 # <a name="how-to-find-sibling-nodes-xpath-linq-to-xml-visual-basic"></a>Руководство. Поиск узлов того же уровня (XPath-LINQ to XML) (Visual Basic)
 
@@ -21,7 +21,7 @@ ms.locfileid: "74344630"
 
 В этом примере вначале осуществляется поиск элемента `Book`, а затем всех одноуровневых элементов с именем `Book`. Полученная в результате коллекция содержит контекстный узел.
 
-В этом примере используется следующий XML-документ: [Пример XML-файла. Книги (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).
+В этом примере используется следующий XML-документ: [Пример XML-файла. Книги (LINQ to XML)](sample-xml-file-books-linq-to-xml.md).
 
 ```vb
 Dim books As XDocument = XDocument.Load("Books.xml")
@@ -71,4 +71,4 @@ Results are identical
 
 ## <a name="see-also"></a>См. также
 
-- [LINQ to XML для пользователей XPath (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML для пользователей XPath (Visual Basic)](linq-to-xml-for-xpath-users.md)

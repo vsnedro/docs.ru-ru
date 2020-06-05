@@ -1,18 +1,18 @@
 ---
-title: Функциональное и императивное программирование
+title: Сравнение функционального и Командное программирование
 ms.date: 07/20/2015
 ms.assetid: 6a1f3b57-00e6-447d-9906-74c7c4d5d85c
-ms.openlocfilehash: 704beadc29af0de606b8f246360dc6fffca8cfcc
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0090761dc07218673e1e0299951530d5a4763ffe
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353432"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84364803"
 ---
 # <a name="functional-programming-vs-imperative-programming-visual-basic"></a>Сравнение функционального и императивного программирования (Visual Basic)
 В этом разделе сравнивается и противопоставляется функциональное программирование с традиционным императивным (процедурным) программированием.  
   
-## <a name="functional-programming-vs-imperative-programming"></a>Функциональное и императивное программирование  
+## <a name="functional-programming-vs-imperative-programming"></a>Сравнение функционального и Командное программирование  
  Принципы *функционального программирования* формулировались специально для поддержки чисто функционального подхода к решению проблем. Функциональное программирование является одной из форм *декларативного программирования*. В отличие от этого, большинство традиционных языков, в том числе такие языки объектно-ориентированного программирования (OOP), как C#, Visual Basic, C++ и Java, разрабатывались в основном для *императивного* (процедурного) программирования.  
   
  При императивном подходе разработчик пишет код, подробно определяющий шаги, которые должен выполнить компьютер для достижения цели. Такое программирование иногда называют *алгоритмическим*. В отличие от него, функциональный подход сводится к составлению решения задачи в виде набора функций, которые должны быть выполнены. Разработчик подробно определяет вход каждой функции и возвращаемые ею результаты. В следующей таблице описаны некоторые важные различия между этими двумя подходами.  
@@ -52,6 +52,6 @@ ms.locfileid: "74353432"
   
 ## <a name="see-also"></a>См. также
 
-- [Введение в чистые функциональные преобразования (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+- [Введение в чистые функциональные преобразования (Visual Basic)](introduction-to-pure-functional-transformations.md)
 - [Преобразования XSLT](../../../../standard/data/xml/xslt-transformations.md)
-- [Рефакторинг в чистые функции (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+- [Рефакторинг в чистые функции (Visual Basic)](refactoring-into-pure-functions.md)

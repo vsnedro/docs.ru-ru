@@ -2,12 +2,12 @@
 title: Общие сведения о стандартных операторах запроса
 ms.date: 07/20/2015
 ms.assetid: 302bd39e-2ec1-495b-94bf-37d370d6f05f
-ms.openlocfilehash: 0f68d175b526a9da86853272c47b5e7d7b4a5992
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 7c229a576f6695282473352d6253d2c699c76604
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84201082"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406785"
 ---
 # <a name="standard-query-operators-overview-visual-basic"></a>Общие сведения о стандартных операторах запроса (Visual Basic)
 
@@ -66,7 +66,7 @@ MsgBox(output.ToString())
 
 ## <a name="query-expression-syntax"></a>Синтаксис выражений запросов
 
-Некоторые из наиболее часто используемых стандартных операторов запросов имеют представление в виде ключевых слов в синтаксисе языка C# и Visual Basic, что позволяет вызывать их как часть *выражения* *запроса*. Дополнительные сведения о стандартных операторах запросов, имеющих выделенные ключевые слова и соответствующие синтаксисы, см. в разделе [синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md).
+Некоторые из наиболее часто используемых стандартных операторов запросов имеют представление в виде ключевых слов в синтаксисе языка C# и Visual Basic, что позволяет вызывать их как часть *выражения* *запроса*. Дополнительные сведения о стандартных операторах запросов, имеющих выделенные ключевые слова и соответствующие синтаксисы, см. в разделе [синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)](query-expression-syntax-for-standard-query-operators.md).
 
 ## <a name="extending-the-standard-query-operators"></a>Расширение стандартных операторов запросов
 
@@ -76,39 +76,39 @@ MsgBox(output.ToString())
 
 Следующие ссылки адресуют к разделам, содержащим дополнительные сведения о различных стандартных операторах запросов в зависимости от их функциональности.
 
-- [Сортировка данных](../../../../visual-basic/programming-guide/concepts/linq/sorting-data.md)
+- [Сортировка данных](sorting-data.md)
 
-- [Операции с наборами (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/set-operations.md)
+- [Операции с наборами (Visual Basic)](set-operations.md)
 
-- [Фильтрация данных (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/filtering-data.md)
+- [Фильтрация данных (Visual Basic)](filtering-data.md)
 
-- [Операции квантификаторов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md)
+- [Операции квантификаторов (Visual Basic)](quantifier-operations.md)
 
-- [Операции проекции (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)
+- [Операции проекции (Visual Basic)](projection-operations.md)
 
-- [Секционирование данных (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/partitioning-data.md)
+- [Секционирование данных (Visual Basic)](partitioning-data.md)
 
-- [Операции JOIN (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/join-operations.md)
+- [Операции JOIN (Visual Basic)](join-operations.md)
 
-- [Группирование данных (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/grouping-data.md)
+- [Группирование данных (Visual Basic)](grouping-data.md)
 
-- [Операции создания (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/generation-operations.md)
+- [Операции создания (Visual Basic)](generation-operations.md)
 
-- [Операции равенства (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/equality-operations.md)
+- [Операции равенства (Visual Basic)](equality-operations.md)
 
-- [Операции с элементами (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/element-operations.md)
+- [Операции с элементами (Visual Basic)](element-operations.md)
 
-- [Преобразование типов данных (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/converting-data-types.md)
+- [Преобразование типов данных (Visual Basic)](converting-data-types.md)
 
-- [Операции объединения (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/concatenation-operations.md)
+- [Операции объединения (Visual Basic)](concatenation-operations.md)
 
-- [Операции агрегирования (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/aggregation-operations.md)
+- [Операции агрегирования (Visual Basic)](aggregation-operations.md)
 
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>
-- [Знакомство с LINQ (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)
-- [Синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
-- [Классификация стандартных операторов запросов по способу выполнения (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)
-- [Методы расширения](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)
+- [Знакомство с LINQ (Visual Basic)](introduction-to-linq.md)
+- [Синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)](query-expression-syntax-for-standard-query-operators.md)
+- [Классификация стандартных операторов запросов по способу выполнения (Visual Basic)](classification-of-standard-query-operators-by-manner-of-execution.md)
+- [Методы расширения](../../language-features/procedures/extension-methods.md)

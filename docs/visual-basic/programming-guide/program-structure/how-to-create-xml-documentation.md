@@ -5,12 +5,12 @@ helpviewer_keywords:
 - XML comments
 - XML documentation [Visual Basic], creating
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
-ms.openlocfilehash: 41b7ef1f435fd0a4f20c4ca2936e2d91e155f7c5
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 1421cc85beba42b3cf3656c34b1d02347fbaf164
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74347420"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403243"
 ---
 # <a name="how-to-create-xml-documentation-in-visual-basic"></a>Практическое руководство. Создание XML-документации в Visual Basic
 
@@ -22,23 +22,23 @@ ms.locfileid: "74347420"
 
 1. В **редакторе кода**поместите курсор в строку над типом или членом, для которого требуется создать документацию.
 
-2. Введите `'''` (три одинарные кавычки).
+2. Тип `'''` (три одинарные кавычки).
 
     В **редакторе кода**ДОБАВЛЯЕТСЯ XML-схема для типа или члена.
 
 3. Добавьте описательные сведения между соответствующими тегами.
 
     > [!NOTE]
-    > При добавлении дополнительных строк в блок XML-документации каждая строка должна начинаться с `'''`.
+    > При добавлении дополнительных строк в блок XML-документации каждая строка должна начинаться с `'''` .
 
 4. Добавьте дополнительный код, который использует тип или член с новыми комментариями XML-документации.
 
-    IntelliSense отображает текст из \<сводки > тега для типа или члена.
+    IntelliSense отображает текст из \<summary> тега для типа или члена.
 
-5. Скомпилируйте код, чтобы создать XML-файл, содержащий комментарии к документации. Дополнительные сведения см. в разделе [-doc](../../../visual-basic/reference/command-line-compiler/doc.md).
+5. Скомпилируйте код, чтобы создать XML-файл, содержащий комментарии к документации. Дополнительные сведения см. в разделе [-doc](../../reference/command-line-compiler/doc.md).
 
 ## <a name="see-also"></a>См. также
 
-- [Документирование кода с помощью XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
-- [XML-теги для комментариев](../../../visual-basic/language-reference/xmldoc/index.md)
-- [-doc](../../../visual-basic/reference/command-line-compiler/doc.md)
+- [Документирование кода с помощью XML](documenting-your-code-with-xml.md)
+- [XML-теги для комментариев](../../language-reference/xmldoc/index.md)
+- [-doc](../../reference/command-line-compiler/doc.md)

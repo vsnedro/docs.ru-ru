@@ -7,30 +7,30 @@ helpviewer_keywords:
 - strings [Visual Basic], validating
 - validation [Visual Basic], strings
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
-ms.openlocfilehash: e9a034a430ff7f30c259bcdd395ebf6147dfc582
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 58ca052f4a03d99ab62e651f5c15e45c94b8d483
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346243"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84363721"
 ---
 # <a name="validating-strings-in-visual-basic"></a>Проверка строк в Visual Basic
 В этом разделе описано, как проверить строки в Visual Basic.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Как проверить имена файлов и пути в Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/how-to-validate-file-names-and-paths.md)  
+ [Практическое руководство. Проверка имен файлов и путей в Visual Basic](how-to-validate-file-names-and-paths.md)  
  Как определить, представляет ли строка имя или путь к файлу.  
   
- [Практическое руководство. Проверка строк, представляющих дату или время](../../../../visual-basic/programming-guide/language-features/strings/how-to-validate-strings-that-represent-dates-or-times.md)  
+ [Практическое руководство. Проверка строк, представляющих дату или время](how-to-validate-strings-that-represent-dates-or-times.md)  
  Как определить, представляет ли строка допустимую дату.  
   
- [Использование регулярных выражений с элементом управления MaskedTextBox в Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/using-regular-expressions-with-the-maskedtextbox-control.md)  
- Демонстрирует преобразование простых регулярных выражений для работы с элементом управления <xref:System.Windows.Forms.MaskedTextBox>.  
+ [Использование регулярных выражений в элементе управления MaskedTextBox в Visual Basic](using-regular-expressions-with-the-maskedtextbox-control.md)  
+ Демонстрирует преобразование простых регулярных выражений для работы с <xref:System.Windows.Forms.MaskedTextBox> элементом управления.  
   
- [Пошаговое руководство. Проверка паролей на сложность](../../../../visual-basic/programming-guide/language-features/strings/walkthrough-validating-that-passwords-are-complex.md)  
+ [Пошаговое руководство. Проверка паролей на сложность](walkthrough-validating-that-passwords-are-complex.md)  
  Как определить, имеет ли строка характеристики надежного пароля.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Строки](../../../../visual-basic/programming-guide/language-features/strings/index.md)
+- [Строки](index.md)
 - [Элемент управления MaskedTextBox](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

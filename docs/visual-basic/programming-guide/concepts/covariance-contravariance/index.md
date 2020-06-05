@@ -2,12 +2,12 @@
 title: Ковариация и контрвариация
 ms.date: 07/20/2015
 ms.assetid: 59224c46-9931-466b-8c6e-3648c3e609c6
-ms.openlocfilehash: a75970d98890cb1fb363d4672bd90d376bccf89c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 11dd71a8cfde12b7af1de79e3f5a095f79d8aa6e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352144"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400633"
 ---
 # <a name="covariance-and-contravariance-visual-basic"></a>Ковариация и контрвариантность (Visual Basic)
 
@@ -48,7 +48,7 @@ Dim array() As Object = New String(10) {}
 ' array(0) = 10
 ```
 
-Поддержка ковариации и контрвариантности для групп методов позволяет сопоставить сигнатуры методов с типами делегатов. За счет этого вы можете назначать делегатам не только методы с совпадающими сигнатурами, но и методы, которые возвращают более производные типы (ковариация) или принимают параметры с менее производными типами (контрвариантность), чем задает тип делегата. Дополнительные сведения см. в разделах [Вариативность в делегатах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md) и [Использование вариативности в делегатах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md).
+Поддержка ковариации и контрвариантности для групп методов позволяет сопоставить сигнатуры методов с типами делегатов. За счет этого вы можете назначать делегатам не только методы с совпадающими сигнатурами, но и методы, которые возвращают более производные типы (ковариация) или принимают параметры с менее производными типами (контрвариантность), чем задает тип делегата. Дополнительные сведения см. в разделах [Вариативность в делегатах (Visual Basic)](variance-in-delegates.md) и [Использование вариативности в делегатах (Visual Basic)](using-variance-in-delegates.md).
 
 В следующем примере кода демонстрируется поддержка ковариации и контрвариантности для групп методов.
 
@@ -79,7 +79,7 @@ Shared Sub Test()
 End Sub
 ```
 
-В .NET Framework 4 или более поздней версии Visual Basic поддерживает ковариации и контрвариация в универсальных интерфейсах и делегатах и позволяет неявное преобразование параметров универсального типа. Дополнительные сведения см. в разделах [Вариативность в универсальных интерфейсах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md) и [Вариативность в делегатах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md).
+В .NET Framework 4 или более поздней версии Visual Basic поддерживает ковариации и контрвариация в универсальных интерфейсах и делегатах и позволяет неявное преобразование параметров универсального типа. Дополнительные сведения см. в разделах [Вариативность в универсальных интерфейсах (Visual Basic)](variance-in-generic-interfaces.md) и [Вариативность в делегатах (Visual Basic)](variance-in-delegates.md).
 
 В следующем примере кода показано неявное преобразование ссылок для универсальных интерфейсов.
 
@@ -88,15 +88,15 @@ Dim strings As IEnumerable(Of String) = New List(Of String)
 Dim objects As IEnumerable(Of Object) = strings
 ```
 
-Универсальный интерфейс или делегат называется *вариантным*, если его универсальные параметры объявлены ковариантными или контрвариантными. Visual Basic позволяет вам создавать свои собственные вариантные интерфейсы и делегаты. Дополнительные сведения см. в разделах [Создание вариативных универсальных интерфейсов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md) и [Вариативность в делегатах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md).
+Универсальный интерфейс или делегат называется *вариантным*, если его универсальные параметры объявлены ковариантными или контрвариантными. Visual Basic позволяет вам создавать свои собственные вариантные интерфейсы и делегаты. Дополнительные сведения см. в разделах [Создание вариативных универсальных интерфейсов (Visual Basic)](creating-variant-generic-interfaces.md) и [Вариативность в делегатах (Visual Basic)](variance-in-delegates.md).
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>См. также
 
-|Название|Описание|
+|Заголовок|Описание|
 |-----------|-----------------|
-|[Вариативность в универсальных интерфейсах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)|В этом разделе описываются ковариация и контрвариация в универсальных интерфейсах, а также представлен список вариативных универсальных интерфейсов платформы .NET Framework.|
-|[Создание вариативных универсальных интерфейсов (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)|Узнайте, как создавать ваши собственные вариантные интерфейсы.|
-|[Использование вариативности в интерфейсах для универсальных коллекций (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)|Узнайте, как использовать поддержку ковариации и контрвариантности в интерфейсах <xref:System.Collections.Generic.IEnumerable%601> и <xref:System.IComparable%601> для многократного использования кода.|
-|[Вариативность в делегатах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)|Раздел описывает ковариацию и контрвариантность в универсальных и неуниверсальных делегатах, а также приводит список вариантных универсальных делегатов в платформе .NET Framework.|
-|[Использование вариативности в делегатах (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)|Узнайте, как использовать поддержку ковариации и контрвариантности в неуниверсальных делегатах для сопоставления сигнатур методов с типами делегатов.|
-|[Использование вариативности в универсальных методах-делегатах Func и Action (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)|Узнайте, как использовать поддержку ковариации и контрвариантности в делегатах `Func` и `Action` для многократного использования кода.|
+|[Вариативность в универсальных интерфейсах (Visual Basic)](variance-in-generic-interfaces.md)|В этом разделе описываются ковариация и контрвариация в универсальных интерфейсах, а также представлен список вариативных универсальных интерфейсов платформы .NET Framework.|
+|[Создание вариативных универсальных интерфейсов (Visual Basic)](creating-variant-generic-interfaces.md)|Узнайте, как создавать ваши собственные вариантные интерфейсы.|
+|[Использование вариативности в интерфейсах для универсальных коллекций (Visual Basic)](using-variance-in-interfaces-for-generic-collections.md)|Узнайте, как использовать поддержку ковариации и контрвариантности в интерфейсах <xref:System.Collections.Generic.IEnumerable%601> и <xref:System.IComparable%601> для многократного использования кода.|
+|[Вариативность в делегатах (Visual Basic)](variance-in-delegates.md)|Раздел описывает ковариацию и контрвариантность в универсальных и неуниверсальных делегатах, а также приводит список вариантных универсальных делегатов в платформе .NET Framework.|
+|[Использование вариативности в делегатах (Visual Basic)](using-variance-in-delegates.md)|Узнайте, как использовать поддержку ковариации и контрвариантности в неуниверсальных делегатах для сопоставления сигнатур методов с типами делегатов.|
+|[Использование вариативности в универсальных методах-делегатах Func и Action (Visual Basic)](using-variance-for-func-and-action-generic-delegates.md)|Узнайте, как использовать поддержку ковариации и контрвариантности в делегатах `Func` и `Action` для многократного использования кода.|

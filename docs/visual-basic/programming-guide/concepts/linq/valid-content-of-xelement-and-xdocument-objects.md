@@ -1,13 +1,13 @@
 ---
-title: Допустимое содержимое объектов XElement и XDocument Objects2
+title: Допустимое содержимое XElement и XDocument Objects2
 ms.date: 07/20/2015
 ms.assetid: 400bb692-478a-40b6-ac1b-4ccbb4cbbd02
-ms.openlocfilehash: 5e9b5ec54b3005d18a1a0da10d78d3c8ad5300ea
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: d222f19f6f588968a3ef1515dca522a4a80e1ffb
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64614360"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84364348"
 ---
 # <a name="valid-content-of-xelement-and-xdocument-objects"></a>Допустимое содержимое объектов XElement и XDocument
 В этом разделе описываются допустимые аргументы, которые можно передавать конструкторам, а также методы, которые можно использовать для добавления содержимого в элементы и документы.  
@@ -45,7 +45,7 @@ ms.locfileid: "64614360"
   
 - <xref:System.Xml.Linq.XAttribute>  
   
-- Любой тип, реализующий <xref:System.Collections.Generic.IEnumerable%601>  
+- Любой тип, реализующий объект <xref:System.Collections.Generic.IEnumerable%601>.  
   
  Если объект реализует интерфейс <xref:System.Collections.Generic.IEnumerable%601>, коллекция в этом объекте перечисляется и добавляются все элементы коллекции. Если коллекция содержит объекты <xref:System.Xml.Linq.XNode> или <xref:System.Xml.Linq.XAttribute>, каждый ее элемент добавляется отдельно. Если коллекция содержит текст (или объекты, преобразованные в текст), текст в коллекции объединяется и добавляется в виде единого текстового узла.  
   
@@ -88,6 +88,6 @@ ms.locfileid: "64614360"
 |<xref:System.Xml.Linq.XContainer.ReplaceNodes%2A>|Заменяет дочерние узлы новым содержимым.|  
 |<xref:System.Xml.Linq.XNode.ReplaceWith%2A>|Заменяет узел новым содержимым.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Создание деревьев XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Создание деревьев XML (Visual Basic)](creating-xml-trees.md)
