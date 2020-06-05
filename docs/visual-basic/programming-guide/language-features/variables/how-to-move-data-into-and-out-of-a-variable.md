@@ -5,12 +5,12 @@ helpviewer_keywords:
 - variables [Visual Basic], retrieving values
 - variables [Visual Basic], storing data
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
-ms.openlocfilehash: bc5a7377a5e2e4c7ebe7291fd5f0093c4d6e996d
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: fe19a6160623aa9ea867becdf7a15b51319abf45
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346893"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410442"
 ---
 # <a name="how-to-move-data-into-and-out-of-a-variable-visual-basic"></a>Практическое руководство. Запись данных в переменную и их извлечение из переменной (Visual Basic)
 
@@ -22,7 +22,7 @@ ms.locfileid: "74346893"
 
 - Используйте имя переменной в левой части оператора присваивания.
 
-    В следующем примере задается значение переменной `alpha`.
+    В следующем примере задается значение переменной `alpha` .
 
     ```vb
     alpha = (beta * 6.27) / (gamma + 2.1)
@@ -40,9 +40,9 @@ ms.locfileid: "74346893"
 
   \-или-
 
-- Используйте имя переменной после знака равенства (`=`) в операторе присваивания.
+- Используйте имя переменной после знака равенства ( `=` ) в операторе присваивания.
 
-  В следующем примере считывается значение переменной `startValue` а затем в выражении используется значение переменной `counter`.
+  В следующем примере считывается значение переменной `startValue` , а затем используется значение переменной `counter` в выражении.
 
   ```vb
   counter = startValue
@@ -51,8 +51,8 @@ ms.locfileid: "74346893"
 
   Значение переменной участвует в выражении точно так же, как константа, а затем хранится в переменной или свойстве в левой части оператора присваивания.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Переменные](../../../../visual-basic/programming-guide/language-features/variables/index.md)
-- [Объявление переменных](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Объектные переменные](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Переменные](index.md)
+- [Объявление переменной](variable-declaration.md)
+- [Объектные переменные](object-variables.md)

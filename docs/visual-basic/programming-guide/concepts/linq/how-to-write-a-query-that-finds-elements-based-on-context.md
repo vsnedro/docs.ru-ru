@@ -2,12 +2,12 @@
 title: Практическое руководство. Написание запроса, ищущего элементы на основании контекста
 ms.date: 07/20/2015
 ms.assetid: 0b085290-ddc1-4126-aaa0-e4c95a3d9a09
-ms.openlocfilehash: d25c6d47eee2ae092c84c3db3c08c3e21e7d98d6
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 52945cecb1fabe8ebabc836c7e9d61e3570fafb3
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346207"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397639"
 ---
 # <a name="how-to-write-a-query-that-finds-elements-based-on-context-visual-basic"></a>Как написать запрос, который находит элементы на основе контекста (Visual Basic)
 Иногда требуется написать запрос, который выбирает элементы, исходя из их контекста. Может потребоваться использовать фильтрацию с учетом предыдущих или следующих одноуровневых элементов. Может потребоваться использовать фильтрацию с учетом дочерних или родительских элементов.  
@@ -106,10 +106,10 @@ id = 3
 id = 6  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Xml.Linq.XElement.Parse%2A>
 - <xref:System.Xml.Linq.XContainer.Descendants%2A>
 - <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>
 - <xref:System.Linq.Enumerable.FirstOrDefault%2A>
-- [Основные запросы (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Основные запросы (LINQ to XML) (Visual Basic)](basic-queries-linq-to-xml.md)

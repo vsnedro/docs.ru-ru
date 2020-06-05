@@ -5,12 +5,12 @@ helpviewer_keywords:
 - variables [Visual Basic]
 - values [Visual Basic], storing
 ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
-ms.openlocfilehash: 26433acea2b98ad0e67b9c35bec4eb8e88f7b7b6
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ff617774d7e93ab4238ebc06617cc03fb6bc675a
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352413"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410390"
 ---
 # <a name="variables-in-visual-basic"></a>Переменные в Visual Basic
 При выполнении вычислений с Visual Basic часто приходится сохранять значения. Например, может потребоваться вычислить несколько значений, сравнить их и (в зависимости от результата сравнения) выполнить с ними различные операции. Чтобы сравнить значения, их необходимо сохранить.  
@@ -18,7 +18,7 @@ ms.locfileid: "74352413"
 ## <a name="usage"></a>Использование  
  Visual Basic, как и большинство языков программирования, использует переменные для хранения значений. *Переменная* имеет имя (слово, которое используется для ссылки на содержащееся в переменной значение). Переменная также имеет тип данных (который определяет, какие данные можно хранить в переменной). Переменная может представлять массив, если она должна хранить индексированный набор близко связанных элементов данных.  
   
- Вывод локального типа позволяет объявлять переменные без явного указания типа данных. Вместо этого компилятор выводит тип переменной из типа инициализирующего выражения. Дополнительные сведения см. в разделах [Вывод локального типа](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md) и [Оператор Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md).  
+ Вывод локального типа позволяет объявлять переменные без явного указания типа данных. Вместо этого компилятор выводит тип переменной из типа инициализирующего выражения. Дополнительные сведения см. в разделах [Вывод локального типа](local-type-inference.md) и [Оператор Option Infer](../../../language-reference/statements/option-infer-statement.md).  
   
 ## <a name="assigning-values"></a>Назначение значений  
  Для выполнения вычислений и присвоения результата переменной используются операторы присваивания, как показано в следующем примере.  
@@ -28,16 +28,16 @@ ms.locfileid: "74352413"
 > [!NOTE]
 > В этом примере знак равенства (`=`) является оператором присваивания, а не оператором равенства. Значение присваивается переменной `applesSold`.  
   
- Подробнее см. в разделе [Практическое руководство. Запись данных в переменную и их извлечение из переменной](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md).  
+ Подробнее см. в разделе [Практическое руководство. Запись данных в переменную и их извлечение из переменной](how-to-move-data-into-and-out-of-a-variable.md).  
   
 ## <a name="variables-and-properties"></a>Переменные и свойства  
- Как и переменная, *свойство* соответствует значению, к которому можно получить доступ. Но оно является более сложным, чем переменная. Свойство использует блоки кода, определяющие способ задания и получения его значения. Подробнее см. в разделе [Различия между свойствами и переменными в Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-properties-and-variables.md).  
+ Как и переменная, *свойство* соответствует значению, к которому можно получить доступ. Но оно является более сложным, чем переменная. Свойство использует блоки кода, определяющие способ задания и получения его значения. Подробнее см. в разделе [Различия между свойствами и переменными в Visual Basic](../procedures/differences-between-properties-and-variables.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Объявление переменных](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Объектные переменные](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Устранение неполадок, связанных с переменными](../../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)
-- [Практическое руководство. Запись данных в переменную и их извлечение из переменной](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)
-- [Различия между свойствами и переменными в Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-properties-and-variables.md)
-- [Вывод локального типа](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Объявление переменной](variable-declaration.md)
+- [Объектные переменные](object-variables.md)
+- [Устранение неполадок, связанных с переменными](troubleshooting-variables.md)
+- [Практическое руководство. Запись данных в переменную и их извлечение из переменной](how-to-move-data-into-and-out-of-a-variable.md)
+- [Различия между свойствами и переменными в Visual Basic](../procedures/differences-between-properties-and-variables.md)
+- [Вывод локального типа](local-type-inference.md)

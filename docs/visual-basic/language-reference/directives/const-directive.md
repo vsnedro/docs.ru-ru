@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Const statement [Visual Basic], directive (#Const)
 - 'declaring constants [Visual Basic], #const directive'
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
-ms.openlocfilehash: 278219edb1bb5d1c0bb015611d69cbe4ae70014b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 91152771a4ef5ec74a7408511ccc2afe28dd442e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74343849"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84415470"
 ---
 # <a name="const-directive"></a>Директива #Const
 
@@ -32,19 +32,19 @@ ms.locfileid: "74343849"
 #Const constname = expression  
 ```  
   
-## <a name="parts"></a>Части  
+## <a name="parts"></a>Компоненты  
 
  `constname`  
- Обязательно. Имя определяемой константы.  
+ Обязательный. Имя определяемой константы.  
   
  `expression`  
- Обязательно. Литерал, другая условная константа компилятора или любое сочетание, включающее любые или все арифметические или логические операторы, кроме `Is`.  
+ Обязательный. Literal, другая условная константа компилятора или любое сочетание, включающее любые или все арифметические или логические операторы, кроме `Is` .  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
 
- Константы условной компиляции всегда являются частными для файла, в котором они отображаются. Нельзя создавать открытые константы компилятора с помощью директивы `#Const`; их можно создавать только в пользовательском интерфейсе или с помощью параметра компилятора `/define`.  
+ Константы условной компиляции всегда являются частными для файла, в котором они отображаются. Нельзя создавать открытые константы компилятора с помощью `#Const` директивы. их можно создавать только в пользовательском интерфейсе или с помощью `/define` параметра компилятора.  
   
- В `expression`можно использовать только константы условной компиляции и литералы. Использование стандартной константы, определенной в `Const`, приводит к ошибке. И наоборот, константы, определенные с помощью ключевого слова `#Const`, можно использовать только для условной компиляции. Константы также могут быть неопределенными, в этом случае они имеют значение `Nothing`.  
+ В можно использовать только константы условной компиляции и литералы `expression` . Использование стандартной константы, определенной с помощью, `Const` приводит к ошибке. И наоборот, константы, определенные с помощью `#Const` ключевого слова, можно использовать только для условной компиляции. Константы также могут быть неопределенными, в этом случае они имеют значение `Nothing` .  
   
 ## <a name="example"></a>Пример  
 
@@ -52,10 +52,10 @@ ms.locfileid: "74343849"
   
  [!code-vb[VbVbalrConditionalComp#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#3)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [-define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
-- [Директивы #If...Then...#Else](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
-- [Оператор Const](../../../visual-basic/language-reference/statements/const-statement.md)
-- [Условная компиляция](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
-- [Оператор If...Then...Else](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [-define (Visual Basic)](../../reference/command-line-compiler/define.md)
+- [Директивы #If...Then...#Else](if-then-else-directives.md)
+- [Оператор Const](../statements/const-statement.md)
+- [Условная компиляция](../../programming-guide/program-structure/conditional-compilation.md)
+- [Оператор If…Then…Else](../statements/if-then-else-statement.md)

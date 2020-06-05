@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Return statement [Visual Basic]
 - expressions [Visual Basic], returning control to
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
-ms.openlocfilehash: efc85a3a844898345aa2d16926ba0e35d7346d1b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: cdb58e32c30c8e6c1662fb698ac5576c3f71258c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74333016"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404204"
 ---
 # <a name="return-statement-visual-basic"></a>Оператор Return (Visual Basic)
-Возвращает управление коду, который вызвал процедуру `Function`, `Sub`, `Get`, `Set`или `Operator`.  
+Возвращает управление коду, который вызвал `Function` процедуру,, `Sub` `Get` , `Set` или `Operator` .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -27,32 +27,32 @@ Return
 Return expression  
 ```  
   
-## <a name="part"></a>Отделение  
+## <a name="part"></a>Часть  
  `expression`  
- Требуется в `Function`, `Get`или процедуре `Operator`. Выражение, представляющее значение, возвращаемое вызывающему коду.  
+ Требуется в `Function` процедуре, `Get` или `Operator` . Выражение, представляющее значение, возвращаемое вызывающему коду.  
   
-## <a name="remarks"></a>Примечания  
- В `Sub` или `Set` инструкция `Return` эквивалентна инструкции `Exit Sub` или `Exit Property`, а `expression` не должен быть указан.  
+## <a name="remarks"></a>Комментарии  
+ В `Sub` процедуре или `Set` `Return` инструкция эквивалентна `Exit Sub` `Exit Property` оператору или и `expression` не должна быть указана.  
   
- В `Function`, `Get`или `Operator` инструкция `Return` должна включать `expression`, а `expression` должен иметь тип данных, преобразуемый в возвращаемый тип процедуры. В `Function` или `Get` можно также назначить выражение для имени процедуры, которое будет использоваться в качестве возвращаемого значения, а затем выполнить инструкцию `Exit Function` или `Exit Property`. В `Operator` процедуре необходимо использовать `Return expression`.  
+ В `Function` процедуре, `Get` или `Operator` `Return` инструкция должна включать оператор `expression` и `expression` должен иметь тип данных, преобразуемый в возвращаемый тип процедуры. В `Function` процедуре или `Get` вы также можете назначить выражение имени процедуры, которое будет использоваться в качестве возвращаемого значения, а затем выполнить `Exit Function` `Exit Property` инструкцию или. В `Operator` процедуре необходимо использовать `Return expression` .  
   
- В той же процедуре можно включить столько `Return` инструкций, сколько необходимо.  
+ В одной процедуре можно включить столько инструкций, сколько `Return` необходимо.  
   
 > [!NOTE]
-> Код в блоке `Finally` выполняется после того, как обнаруживается инструкция `Return` в блоке `Try` или `Catch`, но перед выполнением этой инструкции `Return`. Инструкция `Return` не может быть включена в блок `Finally`.  
+> Код в `Finally` блоке выполняется после `Return` обнаружения оператора в `Try` `Catch` блоке или, но перед `Return` выполнением этой инструкции. `Return`Инструкция не может быть включена в `Finally` блок.  
   
 ## <a name="example"></a>Пример  
- В следующем примере оператор `Return` используется несколько раз для возврата к вызывающему коду, если процедура не должна выполнять никаких других действий.  
+ В следующем примере оператор используется `Return` несколько раз для возврата к вызывающему коду, если процедура не должна предпринимать никаких других действий.  
   
  [!code-vb[VbVbalrStatements#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#53)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Function](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Оператор Sub](../../../visual-basic/language-reference/statements/sub-statement.md)
-- [Оператор Get](../../../visual-basic/language-reference/statements/get-statement.md)
-- [Оператор Set](../../../visual-basic/language-reference/statements/set-statement.md)
-- [Оператор Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Оператор Property](../../../visual-basic/language-reference/statements/property-statement.md)
-- [Оператор Exit](../../../visual-basic/language-reference/statements/exit-statement.md)
-- [Оператор Try...Catch...Finally](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Оператор Function](function-statement.md)
+- [Оператор Sub](sub-statement.md)
+- [Оператор Get](get-statement.md)
+- [Инструкция SET](set-statement.md)
+- [Operator Statement](operator-statement.md)
+- [Property Statement](property-statement.md)
+- [Оператор Exit](exit-statement.md)
+- [Оператор Try…Catch…Finally](try-catch-finally-statement.md)

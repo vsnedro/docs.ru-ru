@@ -7,31 +7,31 @@ f1_keywords:
 helpviewer_keywords:
 - WithEvents keyword [Visual Basic]
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
-ms.openlocfilehash: 2309c675b50a2025d73841a47fe8e30e7cecd522
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 48261e27de302c1809c9725e6e2fc0705a803930
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350741"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84386780"
 ---
 # <a name="withevents-visual-basic"></a>WithEvents (Visual Basic)
 Указывает, что одна или несколько объявленных переменных-членов ссылаются на экземпляр класса, который может создавать события.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Если переменная определена с помощью `WithEvents`, можно декларативно указать, что метод обрабатывает события переменной с помощью ключевого слова `Handles`.
+Если переменная определена с помощью `WithEvents` , можно декларативно указать, что метод обрабатывает события переменной с помощью `Handles` ключевого слова.
 
-`WithEvents` можно использовать только на уровне класса или модуля. Это означает, что контекст объявления для переменной `WithEvents` должен быть классом или модулем и не может быть исходным файлом, пространством имен, структурой или процедурой.
+Можно использовать `WithEvents` только на уровне класса или модуля. Это означает, что контекст объявления для `WithEvents` переменной должен быть классом или модулем и не может быть исходным файлом, пространством имен, структурой или процедурой.
 
 Нельзя использовать `WithEvents` в члене структуры.
 
-С помощью `WithEvents`можно объявлять только отдельные переменные (а не массивы).
+Можно объявлять только отдельные переменные, а не массивы, с помощью `WithEvents` .
 
 ## <a name="rules"></a>Правила
 
-**Типы элементов.** Необходимо объявить переменные `WithEvents` как переменные объекта, чтобы они могли принимать экземпляры класса. Однако их нельзя объявить как `Object`. Их необходимо объявить в качестве конкретного класса, который может вызывать события.
+**Типы элементов.** Переменные должны быть объявлены как `WithEvents` переменные объекта, чтобы они могли принимать экземпляры класса. Однако их нельзя объявить как `Object` . Их необходимо объявить в качестве конкретного класса, который может вызывать события.
 
-Модификатор `WithEvents` можно использовать в этом контексте: [оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md)
+`WithEvents`Модификатор можно использовать в этом контексте: [оператор Dim](../statements/dim-statement.md)
 
 ## <a name="example"></a>Пример
 
@@ -39,8 +39,8 @@ ms.locfileid: "74350741"
 Dim WithEvents app As Application
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
-- [События](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Маркеры](../statements/handles-clause.md)
+- [Ключевые слова](../keywords/index.md)
+- [События](../../programming-guide/language-features/events/index.md)

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - degrees
 - arccosine function
 ms.assetid: 63e449d8-9444-44fb-8db1-6d9cf346e2aa
-ms.openlocfilehash: 73cf56dd72f2baac0474d6f5c4e88228a1fe38cf
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 611f3d8faf2148b8a983467d9ace4fd6c18b30e6
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349852"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84373898"
 ---
 # <a name="derived-math-functions-visual-basic"></a>Производные математические функции (Visual Basic)
-В следующей таблице показаны невстроенные математические функции, которые могут быть производными от встроенных математических функций объекта <xref:System.Math?displayProperty=nameWithType>. Доступ к встроенным математическим функциям можно получить, добавив `Imports System.Math` в файл или проект.  
+В следующей таблице показаны невстроенные математические функции, которые могут быть производными от встроенных математических функций <xref:System.Math?displayProperty=nameWithType> объекта. Доступ к встроенным математическим функциям можно получить, добавив `Imports System.Math` в файл или проект.  
   
 |Функция|Производные эквиваленты|  
 |--------------|-------------------------|  
@@ -54,6 +54,6 @@ ms.locfileid: "74349852"
 |Обратный гиперболический косеканс (Аксч (x))|Log ((знак (x) * SQRT (x \* x + 1) + 1)/x)|  
 |Обратный гиперболический котангенс (Акос (x))|Log ((x + 1)/(x – 1))/2|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Математические функции](../../../visual-basic/language-reference/functions/math-functions.md)
+- [Математические функции](../functions/math-functions.md)

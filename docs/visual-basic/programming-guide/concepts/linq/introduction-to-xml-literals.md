@@ -1,20 +1,20 @@
 ---
-title: Введение в XML Литературы в visual Basic2
+title: Общие сведения о литералах XML в Visual Basic2
 ms.date: 07/20/2015
 ms.assetid: 94fc0e03-978e-4c08-ab6c-0dc3c1e64f10
-ms.openlocfilehash: 9f5c54574e51c537d9ea58d307afda10736d0d88
-ms.sourcegitcommit: 43d10ef65f0f1fd6c3b515e363bde11a3fcd8d6d
+ms.openlocfilehash: 8b92d22727c50274d57a5e407a0ca42807de3a94
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78266954"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397588"
 ---
 # <a name="introduction-to-xml-literals-in-visual-basic"></a>Знакомство с литералами XML в Visual Basic
-В этом разделе содержится информация о создании деревьев XML в Visual Basic.  
+В этом разделе содержатся сведения о создании деревьев XML в Visual Basic.  
   
- Для получения информации об использовании результатов запросов LIN' в качестве содержимого для дерева XML [см. Функциональное строительство (LIN' к XML) (Visual Basic).](../../../../visual-basic/programming-guide/concepts/linq/functional-construction-linq-to-xml.md)  
+ Сведения об использовании результатов запросов LINQ в качестве содержимого XML-дерева см. в разделе [функциональное построение (LINQ to XML) (Visual Basic)](functional-construction-linq-to-xml.md).  
   
- Для получения более подробной информации о [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)буквах XML в Visual Basic см.  
+ Дополнительные сведения о литералах XML в Visual Basic см. в разделе [обзор LINQ to XML в Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md).  
   
 ## <a name="creating-xml-trees"></a>Создание деревьев XML  
  В следующем примере показано, как создать объект <xref:System.Xml.Linq.XElement>. В этом случае дерево `contacts`:  
@@ -43,7 +43,7 @@ Dim n as XElement = <Customer>Adventure Works</Customer>
 Console.WriteLine(n)
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <Customer>Adventure Works</Customer>  
@@ -57,7 +57,7 @@ Dim n As XElement = <Customer/>
 Console.WriteLine(n)  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <Customer />  
@@ -84,7 +84,7 @@ Dim xmlTree2 As XElement = _
 Console.WriteLine(xmlTree2)  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <Root>  
@@ -102,7 +102,7 @@ Dim root As XElement = <Root><%= str %></Root>
 Console.WriteLine(root)  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <Root>Some content</Root>  
@@ -122,7 +122,7 @@ Dim n As XElement = _
 Console.WriteLine(n)  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <Root>  
@@ -149,7 +149,7 @@ Dim n As XElement = _
 Console.WriteLine(n)  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <Root att="aValue">  
@@ -157,7 +157,7 @@ Console.WriteLine(n)
 </Root>  
 ```  
   
-### <a name="cloning-vs-attaching"></a>Клонирование и присоединение  
+### <a name="cloning-vs-attaching"></a>Сравнение клонирования и присоединения  
  Как уже было сказано, если использовать внедренное выражение для добавления существующих узлов (включая элементы) и атрибутов в новое XML-дерево и если существующие узлы уже имеют родителей, узлы копируются и присоединяются к новому XML-дереву. Если существующие узлы не имеют родителей, узлы просто присоединяются к новому XML-дереву.  
   
 ```vb  
@@ -188,13 +188,13 @@ Console.WriteLine("Child2 was {0}", _
     "attached", "cloned"))  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```console  
 Child1 was cloned  
 Child2 was attached  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Создание деревьев XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Создание деревьев XML (Visual Basic)](creating-xml-trees.md)

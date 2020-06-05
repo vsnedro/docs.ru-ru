@@ -2,12 +2,12 @@
 title: Практическое руководство. Поиск объединения двух путей расположения (XPath-LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: c82c09b4-cb0a-47ec-8cc3-a124144c2788
-ms.openlocfilehash: db9ba3f66bfa8643738203ec05a106bab4193fda
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 36528d1748d5675231f14de92dcd78734a696711
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352984"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406876"
 ---
 # <a name="how-to-find-a-union-of-two-location-paths-xpath-linq-to-xml-visual-basic"></a>Как найти объединение двух путей расположения (XPath-LINQ to XML) (Visual Basic)
 XPath позволяет найти объединение результатов определения двух путей доступа XPath.  
@@ -21,7 +21,7 @@ XPath позволяет найти объединение результато�
 ## <a name="example"></a>Пример  
  В этом примере осуществляется поиск всех элементов `Category` и всех элементов `Price` и объединение их в одну коллекцию. Обратите внимание, что в запросе [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] вызывается метод <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> для упорядочения результатов. Эти результаты вычисления выражения XPath также представлены в той же последовательности, что и в документе.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Числовые данные (LINQ to XML)](sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```vb  
 Dim data As XDocument = XDocument.Load("Data.xml")  
@@ -67,4 +67,4 @@ Results are identical
   
 ## <a name="see-also"></a>См. также
 
-- [LINQ to XML для пользователей XPath (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML для пользователей XPath (Visual Basic)](linq-to-xml-for-xpath-users.md)

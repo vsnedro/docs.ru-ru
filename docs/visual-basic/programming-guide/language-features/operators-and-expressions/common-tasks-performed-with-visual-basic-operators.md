@@ -13,72 +13,72 @@ helpviewer_keywords:
 - operators [Visual Basic], comparison
 - operators [Visual Basic], short-circuiting logical
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
-ms.openlocfilehash: 88c05b54402733fadb686e3c6f883b2d2d56990c
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 62ced7f2048ae41c7ea4c9d62c0ff0a903c37856
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61864862"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84388924"
 ---
 # <a name="common-tasks-performed-with-visual-basic-operators"></a>Общие задачи, выполняемые с помощью операторов Visual Basic
-Операторы выполняют многие распространенные задачи, связанные с одним или несколькими выражениями вызывается *операндов*.  
+Операторы выполняют многие стандартные задачи, включающие одно или несколько выражений, именуемых *операндами*.  
   
-## <a name="arithmetic-and-bit-shift-tasks"></a>Арифметические и битового сдвига задачи  
- В следующей таблице перечислены доступные операции арифметические и сдвига.  
+## <a name="arithmetic-and-bit-shift-tasks"></a>Арифметические и битовые задачи  
+ В следующей таблице перечислены доступные операции арифметического и побитового сдвига.  
   
 |Кому|См.|  
 |---|---|  
-|Добавление одного числового значения в другой|[Оператор +](../../../../visual-basic/language-reference/operators/addition-operator.md)|  
-|Вычитание одного числового значения из другого|[-Оператор (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)|  
-|Изменяет знак числового значения|[-Оператор (Visual Basic)](../../../../visual-basic/language-reference/operators/subtraction-operator.md)|  
-|Умножить значения одного числового значения на другое|[Оператор *](../../../../visual-basic/language-reference/operators/multiplication-operator.md)|  
-|Деление одного числового значения в другой|[/ Оператор (Visual Basic)](../../../../visual-basic/language-reference/operators/floating-point-division-operator.md)|  
-|Найти частное от деления одного числового значения на другое (без остаток от деления)|[\ Оператор (Visual Basic)](../../../../visual-basic/language-reference/operators/integer-division-operator.md)|  
-|Найти остаток от деления одного числового значения на другое (без частного)|[Оператор Mod](../../../../visual-basic/language-reference/operators/mod-operator.md)|  
-|Вызывать одного числового значения в степень другого|[Оператор ^](../../../../visual-basic/language-reference/operators/exponentiation-operator.md)|  
-|Сдвинуть битовый шаблон числового значения влево|[<\< Оператор](../../../../visual-basic/language-reference/operators/left-shift-operator.md)|  
-|Сдвинуть битовый шаблон числовые значения вправо|[Оператор >>](../../../../visual-basic/language-reference/operators/right-shift-operator.md)|  
+|Добавить одно числовое значение в другое|[Оператор +](../../../language-reference/operators/addition-operator.md)|  
+|Вычесть одно числовое значение из другого|[Оператор-operator (Visual Basic)](../../../language-reference/operators/subtraction-operator.md)|  
+|Обратный знак числового значения|[Оператор-operator (Visual Basic)](../../../language-reference/operators/subtraction-operator.md)|  
+|Умножить одно числовое значение на другое|[* Оператор](../../../language-reference/operators/multiplication-operator.md)|  
+|Разделить одно числовое значение на другое|[Оператор/(Visual Basic)](../../../language-reference/operators/floating-point-division-operator.md)|  
+|Найти частное от деления одного числового значения на другое (без остатка)|[Оператор \ (Visual Basic)](../../../language-reference/operators/integer-division-operator.md)|  
+|Найти остаток от деления одного числового значения на другое (без частного)|[Оператор Mod](../../../language-reference/operators/mod-operator.md)|  
+|Возведите одно числовое значение в степень другого|[Оператор ^](../../../language-reference/operators/exponentiation-operator.md)|  
+|Сдвиг битового шаблона числового значения влево|[<\<Станции](../../../language-reference/operators/left-shift-operator.md)|  
+|Сдвиг битового шаблона числового значения вправо|[Оператор>> ](../../../language-reference/operators/right-shift-operator.md)|  
   
-## <a name="comparison-tasks"></a>Сравнение задачи  
+## <a name="comparison-tasks"></a>Задачи сравнения  
  В следующей таблице перечислены доступные операции сравнения.  
   
 |Кому|См.|  
 |---|---|  
-|Определить, равны ли два значения|`=` Оператор ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
-|Определить, не равны ли два значения|`<>` Оператор ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
-|Определить, является ли первое значение меньшим, чем другое|`<` Оператор ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
-|Определить, является ли первое значение большим, чем другое|`>` Оператор ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
-|Определить, является ли первое значение меньше или равно в другой|`<=` Оператор ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
-|Определить, является ли первое значение больше или равно другому|`>=` Оператор ([Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md))|  
-|Определить, ссылаются ли две объектные переменные на один и тот же экземпляр объекта|[Оператор Is](../../../../visual-basic/language-reference/operators/is-operator.md)|  
-|Определить, ссылаются ли две объектные переменные на разные экземпляры объекта|[Оператор IsNot](../../../../visual-basic/language-reference/operators/isnot-operator.md)|  
-|Определить, является ли объект определенного типа|[Оператор TypeOf](../../../../visual-basic/language-reference/operators/typeof-operator.md)|  
+|Определение того, равны ли два значения|`=`Оператор ([Операторы сравнения в Visual Basic](comparison-operators.md))|  
+|Определить, являются ли два значения неравными|`<>`Оператор ([Операторы сравнения в Visual Basic](comparison-operators.md))|  
+|Определить, меньше ли одно значение другого|`<`Оператор ([Операторы сравнения в Visual Basic](comparison-operators.md))|  
+|Определить, больше ли одно значение другого|`>`Оператор ([Операторы сравнения в Visual Basic](comparison-operators.md))|  
+|Определить, является ли одно значение меньшим или равным другому|`<=`Оператор ([Операторы сравнения в Visual Basic](comparison-operators.md))|  
+|Определить, является ли одно значение больше или равным другому|`>=`Оператор ([Операторы сравнения в Visual Basic](comparison-operators.md))|  
+|Определение того, ссылаются ли две объектные переменные на один и тот же экземпляр объекта|[Оператор is](../../../language-reference/operators/is-operator.md)|  
+|Определить, ссылаются ли две объектные переменные на разные экземпляры объектов|[Оператор IsNot](../../../language-reference/operators/isnot-operator.md)|  
+|Определение того, относится ли объект к определенному типу|[TypeOf, оператор](../../../language-reference/operators/typeof-operator.md)|  
   
 ## <a name="concatenation-tasks"></a>Задачи объединения  
  В следующей таблице перечислены доступные операции объединения.  
   
 |Кому|См.|  
 |---|---|  
-|Объединяют несколько строк в одну строку|`&` Оператор ([операторы объединения в Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
-|Присоединяйтесь к числовых значений с помощью строковых значений|`+` Оператор ([операторы объединения в Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md))|  
+|Объединение нескольких строк в одну строку|`&`Оператор ([Операторы объединения в Visual Basic](concatenation-operators.md))|  
+|Объединение числовых значений со строковыми значениями|`+`Оператор ([Операторы объединения в Visual Basic](concatenation-operators.md))|  
   
 ## <a name="logical-and-bitwise-tasks"></a>Логические и побитовые задачи  
  В следующей таблице перечислены доступные логические и побитовые операции.  
   
 |Кому|См.|  
 |---|---|  
-|Логического отрицания логическое значение|[Оператор Not](../../../../visual-basic/language-reference/operators/not-operator.md)|  
-|Выполнить логическое умножение двух логических значений|[Оператор And](../../../../visual-basic/language-reference/operators/and-operator.md)|  
-|Выполнить логическое сложение двух логических значений|[Оператор Or](../../../../visual-basic/language-reference/operators/or-operator.md)|  
-|Выполнить исключающее логическое сложение двух значений типа Boolean|[Оператор Xor](../../../../visual-basic/language-reference/operators/xor-operator.md)|  
-|Выполнить сокращенное логическое умножение двух логических значений|[Оператор AndAlso](../../../../visual-basic/language-reference/operators/andalso-operator.md)|  
-|Выполнить сокращенное включающее логическое сложение двух логических значений|[Оператор OrElse](../../../../visual-basic/language-reference/operators/orelse-operator.md)|  
-|Выполнить бит за битом логическое умножение двух целых значений|[Оператор And](../../../../visual-basic/language-reference/operators/and-operator.md)|  
-|Выполнить бит за битом включающее логическое сложение двух целых значений|[Оператор Or](../../../../visual-basic/language-reference/operators/or-operator.md)|  
-|Выполнить бит за битом исключающее логическое сложение двух целых значений|[Оператор Xor](../../../../visual-basic/language-reference/operators/xor-operator.md)|  
-|Бит за битом логического отрицания целочисленное значение|[Оператор Not](../../../../visual-basic/language-reference/operators/not-operator.md)|  
+|Выполнение логического отрицания для логического значения|[Оператор Not](../../../language-reference/operators/not-operator.md)|  
+|Выполнение логического умножения для двух логических значений|[Оператор And](../../../language-reference/operators/and-operator.md)|  
+|Выполнение включающего логического сложения для двух логических значений|[Оператор Or](../../../language-reference/operators/or-operator.md)|  
+|Выполнить исключающее логическое сложение для двух логических значений|[Оператор Xor](../../../language-reference/operators/xor-operator.md)|  
+|Выполнение сокращенного логического умножения двух логических значений|[Оператор AndAlso](../../../language-reference/operators/andalso-operator.md)|  
+|Выполнение сокращенного инклюзивного логического сложения для двух логических значений|[Оператор OrElse](../../../language-reference/operators/orelse-operator.md)|  
+|Выполнение побитового логического умножения двух целочисленных значений|[Оператор And](../../../language-reference/operators/and-operator.md)|  
+|Выполнение побитового логического сложения для двух целочисленных значений|[Оператор Or](../../../language-reference/operators/or-operator.md)|  
+|Выполнение побитового исключающего логического сложения для двух целочисленных значений|[Оператор Xor](../../../language-reference/operators/xor-operator.md)|  
+|Выполнение побитового логического отрицания в целочисленном значении|[Оператор Not](../../../language-reference/operators/not-operator.md)|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Операторы и выражения](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Список операторов, сгруппированных по функциональному назначению](../../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Операторы и выражения](index.md)
+- [Список операторов, сгруппированных по функциональному назначению](../../../language-reference/operators/operators-listed-by-functionality.md)
