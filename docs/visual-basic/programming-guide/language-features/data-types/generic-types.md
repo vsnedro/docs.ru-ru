@@ -36,12 +36,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
-ms.openlocfilehash: 3dcd7756b10fab8f66f4d5c10acedd8f600eb2e7
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: b14c7a3f1f667e7c13ec0ae46185ed3ece92beb8
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350124"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84394056"
 ---
 # <a name="generic-types-in-visual-basic-visual-basic"></a>Универсальные типы в Visual Basic (Visual Basic)
 *Универсальный тип* является одиночным элементом программирования, который используется для выполнения одинаковой функциональности для различных типов данных. При определении универсальных классов или процедур не нужно определять отдельную версию для каждого типа данных, для которых может потребоваться выполнение этой функциональности.  
@@ -58,7 +58,7 @@ ms.locfileid: "74350124"
   
  Теперь можно использовать `stringQ` для работы исключительно со значениями `String` . Так как `stringQ` предназначен конкретно для `String` , а не является универсальным для значений `Object` , вам не потребуется позднее связывание или преобразование типа. Это экономит время выполнения и сокращает число ошибок во время выполнения.  
   
- Дополнительные сведения об использовании универсального типа см. в разделе [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md).  
+ Дополнительные сведения об использовании универсального типа см. в разделе [How to: Use a Generic Class](how-to-use-a-generic-class.md).  
   
 ## <a name="example-of-a-generic-class"></a>Пример универсального класса  
  В следующем примере показано определение каркаса универсального класса.  
@@ -73,23 +73,23 @@ ms.locfileid: "74350124"
   
  [!code-vb[VbVbalrDataTypes#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#4)]  
   
- Более полный пример см. в разделе [как определить класс, который может обеспечить идентичную функциональность для различных типов данных](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md).  
+ Более полный пример см. в разделе [как определить класс, который может обеспечить идентичную функциональность для различных типов данных](how-to-define-a-class-that-can-provide-identical-functionality.md).  
   
 ## <a name="eligible-programming-elements"></a>Допустимые элементы программирования  
  Можно определять и использовать универсальные классы, структуры, интерфейсы, процедуры и делегаты. Обратите внимание, что .NET Framework определяет несколько универсальных классов, структур и интерфейсов, представляющих часто используемые универсальные элементы. Пространство имен <xref:System.Collections.Generic?displayProperty=nameWithType> предоставляет словари, списки, очереди и стеки. Перед определением собственного универсального элемента посмотрите, не существует ли он уже в <xref:System.Collections.Generic?displayProperty=nameWithType>.  
   
- Процедуры не являются типами, но можно определять и использовать универсальные процедуры. См. раздел [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md).  
+ Процедуры не являются типами, но можно определять и использовать универсальные процедуры. См. раздел [Generic Procedures in Visual Basic](generic-procedures.md).  
   
 ## <a name="advantages-of-generic-types"></a>Преимущества универсальных типов  
  Универсальный тип служит в качестве основы для объявления нескольких различных программных элементов, каждый из которых работает с определенным типом данных. Альтернативы для универсального типа:  
   
 1. одиночный тип, работающий с типом данных `Object` .  
   
-2. Набор *типозависимых* версий типа; каждая версия кодируется индивидуально и работает с одним конкретным типом данных (например `String`, `Integer`) или с определяемым пользователем типом, например `customer`.  
+2. Набор версий типа, *зависящих от типа* , каждая версия по отдельности запрограммирована и работает на одном конкретном типе данных, таком как `String` , `Integer` или определяемом пользователем типе, например `customer` .  
   
  Универсальный тип имеет следующие преимущества по сравнению с этими альтернативами.  
   
-- **Безопасность.** Универсальные типы обеспечивают проверку типов во время компиляции. Типы на основе `Object` принимают любой тип данных, и необходимо написать код, чтобы проверить, является ли тип входных данных приемлемым. При использовании универсальных типов компилятор может перехватить несоответствие типов до выполнения.  
+- **Безопасность типа.** Универсальные типы обеспечивают проверку типов во время компиляции. Типы на основе `Object` принимают любой тип данных, и необходимо написать код, чтобы проверить, является ли тип входных данных приемлемым. При использовании универсальных типов компилятор может перехватить несоответствие типов до выполнения.  
   
 - **Производительность.** Универсальные типы не должны *упаковывать* и *unупаковывать* данные, так как каждый из них является специальным для одного типа данных. Операции, основанные на `Object` , должны упаковывать типы входных данных для их преобразования в `Object` и распаковать данные, предназначенные для вывода. Упаковка и распаковка снижают производительность.  
   
@@ -122,11 +122,11 @@ ms.locfileid: "74350124"
   
 - Аргумент типа должен предоставлять конструктор без параметров, доступный коду, который создает объекты из него.  
   
-- Аргумент типа должен быть *типом ссылки*или *типом значения*.  
+- Аргумент типа должен быть *ссылочным типом*или иметь *тип значения*  
   
- Если нужно задать более одного требования, используйте разделенный запятыми *список ограничений* , заключенный в фигурные скобки (`{ }`). Чтобы запросить доступный конструктор, включите в список ключевое слово [New operator](../../../../visual-basic/language-reference/operators/new-operator.md) . Чтобы требовать ссылочный тип, включите ключевое слово `Class` . Чтобы требовать тип значения, включите ключевое слово `Structure` .  
+ Если нужно задать более одного требования, используйте разделенный запятыми *список ограничений* , заключенный в фигурные скобки (`{ }`). Чтобы запросить доступный конструктор, включите в список ключевое слово [New operator](../../../language-reference/operators/new-operator.md) . Чтобы требовать ссылочный тип, включите ключевое слово `Class` . Чтобы требовать тип значения, включите ключевое слово `Structure` .  
   
- Дополнительные сведения об ограничениях см. в разделе [Type List](../../../../visual-basic/language-reference/statements/type-list.md).  
+ Дополнительные сведения об ограничениях см. в разделе [Type List](../../../language-reference/statements/type-list.md).  
   
 ### <a name="example-of-multiple-constraints"></a>Пример множественных ограничений  
  В следующем примере показано каркасное определение универсального класса со списком ограничений в параметре типа. В коде, который создает экземпляр этого класса, аргумент типа должен реализовывать интерфейсы <xref:System.IComparable> и <xref:System.IDisposable> , быть ссылочным типом и предоставлять доступ к конструктору без параметров.  
@@ -146,16 +146,16 @@ ms.locfileid: "74350124"
   
 - *Сконструированный тип*. Класс, структура, интерфейс, процедура или делегат, объявленный из универсального типа с помощью указания аргументов типа для параметров типа.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Типы данных](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Знаки типов](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
-- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
-- [Преобразования типов в Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
-- [Устранение неполадок, связанных с типами данных](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [Типы данных](../../../../visual-basic/language-reference/data-types/index.md)
-- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)
-- [As](../../../../visual-basic/language-reference/statements/as-clause.md)
-- [Тип данных Object](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Типы данных](index.md)
+- [Символы типов](type-characters.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Преобразование типов в Visual Basic](type-conversions.md)
+- [Устранение неполадок, связанных с типами данных](troubleshooting-data-types.md)
+- [Типы данных](../../../language-reference/data-types/index.md)
+- [Окна](../../../language-reference/statements/of-clause.md)
+- [Тех](../../../language-reference/statements/as-clause.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)
 - [Ковариация и контрвариантность](../../concepts/covariance-contravariance/index.md)
-- [Итераторы](../../../../visual-basic/programming-guide/concepts/iterators.md)
+- [Итераторы](../../concepts/iterators.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - financial functions
 - payment
 ms.assetid: 474f973e-7103-42b7-aa4d-367c935e07e1
-ms.openlocfilehash: b0a930d4d39ea55feaa9f6cdb799717b7e98019b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 3b96dbfb3c5c218e1d63ef56735c9887ba28b489
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349810"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84373723"
 ---
 # <a name="financial-summary-visual-basic"></a>Сводка по финансовым функциям (Visual Basic)
 Ключевые слова языка Visual Basic и элементы библиотеки времени выполнения упорядочены по целям и использованию.  
@@ -25,7 +25,7 @@ ms.locfileid: "74349810"
 |Вычислить платежи.|<xref:Microsoft.VisualBasic.Financial.IPmt%2A>, <xref:Microsoft.VisualBasic.Financial.Pmt%2A>, <xref:Microsoft.VisualBasic.Financial.PPmt%2A>|  
 |Вычислить текущее значение.|<xref:Microsoft.VisualBasic.Financial.NPV%2A>, <xref:Microsoft.VisualBasic.Financial.PV%2A>|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
-- [Члены библиотеки времени выполнения Visual Basic](../../../visual-basic/language-reference/runtime-library-members.md)
+- [Ключевые слова](index.md)
+- [Члены библиотеки времени выполнения Visual Basic](../runtime-library-members.md)

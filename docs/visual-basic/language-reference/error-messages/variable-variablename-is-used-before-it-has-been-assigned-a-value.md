@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BC42104
 ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
-ms.openlocfilehash: a2ba752b95933d146da090a58c416015db75e106
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 34718243172d3b1a238a813268e672d62c4eeb6c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64662674"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406538"
 ---
-# <a name="variable-variablename-is-used-before-it-has-been-assigned-a-value"></a>Переменной "\<имя_переменной >" используется, прежде чем ей было назначено значение
-Переменной "\<имя_переменной >" используется, прежде чем ей было назначено значение. Во время выполнения может возникнуть исключение "пустая ссылка".  
+# <a name="variable-variablename-is-used-before-it-has-been-assigned-a-value"></a>Переменная \<variablename> используется до того, как ей присвоено значение
+Переменная " \<variablename> " используется до того, как ей было присвоено значение. Во время выполнения может возникнуть исключение "пустая ссылка".  
   
- Приложение имеет по крайней мере один возможный путь во всем коде, который считывает значение переменной, прежде чем к нему было назначено значение.  
+ Приложение имеет по крайней мере один возможный путь в коде, который считывает переменную, прежде чем ей будет присвоено значение.  
   
- Если переменной никогда не назначалось значение, она содержит значение по умолчанию для своего типа данных. Для ссылочного типа данных значение по умолчанию — [Nothing](../../../visual-basic/language-reference/nothing.md). Чтение переменной ссылки, которая имеет значение `Nothing` , в некоторых случаях может привести к исключению <xref:System.NullReferenceException> .  
+ Если переменной никогда не назначалось значение, она содержит значение по умолчанию для своего типа данных. Для ссылочного типа данных значение по умолчанию — [Nothing](../nothing.md). Чтение переменной ссылки, которая имеет значение `Nothing` , в некоторых случаях может привести к исключению <xref:System.NullReferenceException> .  
   
  По умолчанию данное сообщение является предупреждением. Дополнительные сведения о скрытии предупреждений или обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
@@ -27,12 +27,12 @@ ms.locfileid: "64662674"
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- Проверьте логику потока управления и убедитесь, что переменная имеет допустимое значение, прежде чем управление передается оператору, который считывает его.  
+- Проверьте логику потока управления и убедитесь, что переменная имеет допустимое значение, прежде чем управление передается в любую инструкцию, которая ее считывает.  
   
-- Для инициализации его как часть объявления является один из способов, чтобы гарантировать, что переменная всегда имеет допустимое значение. См. в разделе «Инициализация» в [оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md).  
+- Один из способов гарантировать, что переменная всегда имеет допустимое значение, — инициализировать ее как часть объявления. См. раздел "Инициализация" в [операторе Dim](../statements/dim-statement.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Dim](../../../visual-basic/language-reference/statements/dim-statement.md)
-- [Объявление переменных](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Устранение неполадок, связанных с переменными](../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)
+- [Оператор Dim](../statements/dim-statement.md)
+- [Объявление переменной](../../programming-guide/language-features/variables/variable-declaration.md)
+- [Устранение неполадок, связанных с переменными](../../programming-guide/language-features/variables/troubleshooting-variables.md)

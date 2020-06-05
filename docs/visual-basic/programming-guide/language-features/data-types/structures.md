@@ -9,12 +9,12 @@ helpviewer_keywords:
 - user-defined data types [Visual Basic], about user-defined data types
 - types [Visual Basic], user-defined
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
-ms.openlocfilehash: b5f1f8d6d783c6612fdb2bd2058b61a5a46024cc
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: a08a5da33fd9507494cac84fd0429b0ff9d9c88e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350775"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84393433"
 ---
 # <a name="structures-visual-basic"></a>Структуры (Visual Basic)
 *Структура* представляет собой обобщение определяемого пользователем типа (UDT), поддерживаемого предыдущими версиями Visual Basic. В дополнение к полям, структуры могут предоставлять свойства, методы и события. Структура может реализовывать один или несколько интерфейсов, и можно объявить отдельные уровни доступа для каждого поля.  
@@ -24,21 +24,21 @@ ms.locfileid: "74350775"
  Структуры полезны, если требуется, чтобы одна переменная содержала несколько связанных частей информации. Например, может потребоваться одновременное отслеживание имени сотрудника, телефонного расширения и оклада. Для этой информации можно использовать несколько переменных или определить структуру и использовать ее для одной переменной сотрудника. Преимущество структуры станет очевидным, если у вас много сотрудников и, следовательно, много экземпляров переменной.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Объявление структуры](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
+ [Практическое руководство. Объявление структуры](how-to-declare-a-structure.md)  
  Показывает, как объявить структуру и ее элементы.  
   
- [Переменные структуры](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)  
+ [Переменные структуры](structure-variables.md)  
  Описывает назначение структуры переменной и доступ к ее элементам.  
   
- [Структуры и другие элементы программирования](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)  
+ [Структуры и другие элементы программирования](structures-and-other-programming-elements.md)  
  Описывает, как структуры взаимодействуют с массивами, объектами, процедурами и друг с другом.  
   
- [Структуры и классы](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
+ [Структуры и классы](structures-and-classes.md)  
  Описывает сходства и различия между структурами и классами.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Типы данных](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Типы данных](index.md)  
  Вводит Visual Basic типы данных и описывает, как их использовать.  
   
- [Типы данных](../../../../visual-basic/language-reference/data-types/index.md)  
+ [Типы данных](../../../language-reference/data-types/index.md)  
  Содержит список простейших типов данных, предоставляемых Visual Basic.

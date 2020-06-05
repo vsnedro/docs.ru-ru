@@ -6,12 +6,12 @@ helpviewer_keywords:
 - constants [Visual Basic]
 - constants [Visual Basic], list of
 ms.assetid: 309c0ad5-83e4-4f96-99ea-83cd95107417
-ms.openlocfilehash: 5109bf42c9caa7528c5405bb1a5cff0cfb62a5ac
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 60cd1ddac9bca685ddc5778e7d289710245a183e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75705760"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84374490"
 ---
 # <a name="constants-and-enumerations-visual-basic"></a>Константы и перечисления (Visual Basic)
 
@@ -26,9 +26,9 @@ Visual Basic предоставляет разработчикам ряд пре
 |**Константа**|**Описание**|  
 |---|---|  
 |`CONFIG`|Строка, которая соответствует текущему значению поля **конфигурации активного решения** в **Configuration Manager**.|  
-|`DEBUG`|Значение `Boolean`, которое может быть задано в диалоговом окне **Свойства проекта** . По умолчанию конфигурация отладки для проекта определяет `DEBUG`. При определении `DEBUG` методы класса <xref:System.Diagnostics.Debug> создают выходные данные в окне **вывода** . Если он не определен, <xref:System.Diagnostics.Debug> методы класса не компилируются и выходные данные отладки не создаются.|  
-|`TARGET`|Строка, представляющая тип выходных данных для проекта или значение параметра командной строки для **целевого объекта** . Возможные значения `TARGET`:<br /><br /> — "winexe" для приложения Windows.<br />— "exe" для консольного приложения.<br />-"Library" для библиотеки классов.<br />— "Module" для модуля.<br />Параметр- **Target** можно задать в интегрированной среде разработки Visual Studio. Дополнительные сведения см. в разделе [-Target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
-|`TRACE`|Значение `Boolean`, которое может быть задано в диалоговом окне **Свойства проекта** . По умолчанию все конфигурации проекта определяют `TRACE`. При определении `TRACE` методы класса <xref:System.Diagnostics.Trace> создают выходные данные в окне **вывода** . Если он не определен, <xref:System.Diagnostics.Trace> методы класса не компилируются и `Trace` выходные данные не создаются.|  
+|`DEBUG`|`Boolean`Значение, которое может быть задано в диалоговом окне **Свойства проекта** . По умолчанию конфигурация отладки для проекта определяет `DEBUG` . Если `DEBUG` определен, <xref:System.Diagnostics.Debug> методы класса формируют выходные данные в окне **вывода** . Если он не определен, <xref:System.Diagnostics.Debug> методы класса не компилируются и выходные данные отладки не создаются.|  
+|`TARGET`|Строка, представляющая тип выходных данных для проекта или значение параметра командной строки для **целевого объекта** . Возможные значения `TARGET` :<br /><br /> — "winexe" для приложения Windows.<br />— "exe" для консольного приложения.<br />-"Library" для библиотеки классов.<br />— "Module" для модуля.<br />Параметр- **Target** можно задать в интегрированной среде разработки Visual Studio. Дополнительные сведения см. в разделе [-target (Visual Basic)](../reference/command-line-compiler/target.md).|  
+|`TRACE`|`Boolean`Значение, которое может быть задано в диалоговом окне **Свойства проекта** . По умолчанию все конфигурации проекта определяют `TRACE` . Если `TRACE` определен, <xref:System.Diagnostics.Trace> методы класса формируют выходные данные в окне **вывода** . Если он не определен, <xref:System.Diagnostics.Trace> методы класса не компилируются и `Trace` выходные данные не создаются.|  
 |`VBC_VER`|Число, представляющее Visual Basicную версию в *основном*. *дополнительный* формат.|  
   
 ### <a name="print-and-display-constants"></a>Константы печати и отображения  
@@ -43,7 +43,7 @@ Visual Basic предоставляет разработчикам ряд пре
 |`vbNewLine`|Символ новой строки.|  
 |`vbNullChar`|Символ null.|  
 |`vbNullString`|Не то же, что и строка нулевой длины (""); используется для вызова внешних процедур.|  
-|`vbObjectError`|Номер ошибки. Ошибки, определенные пользователем, должны иметь номер, превосходящий это число. Например:<br /><br /> `Err.Raise(Number) = vbObjectError + 1000`|  
+|`vbObjectError`|Номер ошибки. Ошибки, определенные пользователем, должны иметь номер, превосходящий это число. Пример:<br /><br /> `Err.Raise(Number) = vbObjectError + 1000`|  
 |`vbTab`|Символ табуляции.|  
 |`vbBack`|Символ Backspace.|  
 |`vbFormFeed`|Не используется в Microsoft Windows.|  
@@ -73,16 +73,16 @@ Visual Basic предоставляет разработчикам ряд пре
 |<xref:Microsoft.VisualBasic.OpenAccess>|Указывает, как открыть файл при вызове функций для работы с файлами.|  
 |<xref:Microsoft.VisualBasic.OpenMode>|Указывает, как открыть файл при вызове функций для работы с файлами.|  
 |<xref:Microsoft.VisualBasic.OpenShare>|Указывает, как открыть файл при вызове функций для работы с файлами.|  
-|<xref:Microsoft.VisualBasic.FileIO.RecycleOption>|Указывает, следует ли удалить файл без возможности восстановления или поместить в корзину.|  
+|<xref:Microsoft.VisualBasic.FileIO.RecycleOption>|Указывает, должен ли файл быть удален окончательно или помещен в корзину.|  
 |<xref:Microsoft.VisualBasic.FileIO.SearchOption>|Указывает, следует ли выполнять поиск по всем каталогам или только по каталогам верхнего уровня.|  
-|<xref:Microsoft.VisualBasic.TriState>|Указывает на `Boolean` значение или следует ли использовать по умолчанию при вызове функций форматирования чисел.|  
+|<xref:Microsoft.VisualBasic.TriState>|Указывает `Boolean` значение или следует ли использовать по умолчанию при вызове функций форматирования чисел.|  
 |<xref:Microsoft.VisualBasic.FileIO.UICancelOption>|Указывает, что следует делать, если пользователь нажимает кнопку **Отмена** во время операции.|  
 |<xref:Microsoft.VisualBasic.FileIO.UIOption>|Указывает, отображать ли диалоговое окно хода выполнения при копировании, удалении или перемещении файлов или каталогов.|  
 |<xref:Microsoft.VisualBasic.VariantType>|Указывает тип объекта Variant, возвращенного функцией <xref:Microsoft.VisualBasic.Information.VarType%2A>.|  
 |<xref:Microsoft.VisualBasic.VbStrConv>|Указывает, преобразование какого типа следует выполнить при вызове функции <xref:Microsoft.VisualBasic.Strings.StrConv%2A>.|  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Справочник по языку Visual Basic](../../visual-basic/language-reference/index.md)
-- [Общие сведения о константах](../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
-- [Общие сведения о перечислениях](../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
+- [Справочник по языку Visual Basic](index.md)
+- [Общие сведения о константах](../programming-guide/language-features/constants-enums/constants-overview.md)
+- [Общие сведения о перечислениях](../programming-guide/language-features/constants-enums/enumerations-overview.md)
