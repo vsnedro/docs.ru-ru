@@ -5,33 +5,33 @@ helpviewer_keywords:
 - operators [Visual Basic], logical
 - logical operators [Visual Basic], Visual Basic
 ms.assetid: 55de4889-7679-4859-8063-bee15abca53f
-ms.openlocfilehash: 7f957a6e4f2dfea3f744365d2d065442d3b85183
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 281004809c7f5000f1c68ecb0db759aa30c78e39
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350926"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401565"
 ---
 # <a name="logicalbitwise-operators-visual-basic"></a>Логические (побитовые) операторы (Visual Basic)
 Ниже приведены логические и битовые операторы, определенные в Visual Basic.  
   
- [Оператор And](../../../visual-basic/language-reference/operators/and-operator.md)  
+ [Оператор And](and-operator.md)  
   
- [Оператор Not](../../../visual-basic/language-reference/operators/not-operator.md)  
+ [Оператор Not](not-operator.md)  
   
- [Оператор Or](../../../visual-basic/language-reference/operators/or-operator.md)  
+ [Оператор Or](or-operator.md)  
   
- [Оператор Xor](../../../visual-basic/language-reference/operators/xor-operator.md)  
+ [Оператор Xor](xor-operator.md)  
   
- [Оператор AndAlso](../../../visual-basic/language-reference/operators/andalso-operator.md)  
+ [Оператор AndAlso](andalso-operator.md)  
   
- [Оператор OrElse](../../../visual-basic/language-reference/operators/orelse-operator.md)  
+ [Оператор OrElse](orelse-operator.md)  
   
- [Оператор IsFalse](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
+ [Оператор IsFalse](isfalse-operator.md)  
   
- [Оператор IsTrue](../../../visual-basic/language-reference/operators/istrue-operator.md)  
+ [Оператор IsTrue](istrue-operator.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Порядок применения операторов в Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Логические и побитовые операторы в Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+- [Порядок применения операторов в Visual Basic](operator-precedence.md)
+- [Логические и побитовые операторы в Visual Basic](../../programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

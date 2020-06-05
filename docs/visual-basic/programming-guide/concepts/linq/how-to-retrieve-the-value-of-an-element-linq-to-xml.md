@@ -2,14 +2,14 @@
 title: Практическое руководство. Извлечение значений элемента (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 76b9b2a5-b3ba-49da-ba74-82100e1bd21c
-ms.openlocfilehash: b1a61091dc59b403c5d967609e8870492c24347f
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: b8ff44416f0fbb590119af7e11714e449185d977
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80248938"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397795"
 ---
-# <a name="how-to-retrieve-the-value-of-an-element-linq-to-xml-visual-basic"></a>Как: Получить значение элемента (LIN' к XML) (Visual Basic)
+# <a name="how-to-retrieve-the-value-of-an-element-linq-to-xml-visual-basic"></a>Как получить значение элемента (LINQ to XML) (Visual Basic)
 В этом разделе показано получение значений элементов. Это можно сделать двумя основными способами. Первый способ состоит в приведении <xref:System.Xml.Linq.XElement> или <xref:System.Xml.Linq.XAttribute> к желаемому типу. Оператор явного преобразования, который преобразует содержимое элемента или атрибута в указанный тип и присваивает полученное значение указанной переменной. Иначе можно использовать свойство <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> или <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=nameWithType>.  
   
  При использовании Visual Basic лучшим подходом является использование свойства <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType>.  
@@ -23,7 +23,7 @@ Console.WriteLine(e)
 Console.WriteLine("Value of e:" & e.Value)  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <StringElement>abcde</StringElement>  
@@ -39,7 +39,7 @@ Console.WriteLine(e)
 Console.WriteLine("Value of e:" & CInt(e))  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <Age>44</Age>  
@@ -59,7 +59,7 @@ Console.WriteLine(e)
 Console.WriteLine("Value of e:" & e.Value)  
 ```  
   
- В примере получается следующий вывод.  
+ В этом примере выводятся следующие данные:  
   
 ```xml  
 <StringElement>abcde</StringElement>  
@@ -67,7 +67,7 @@ Value of e:abcde
 ```  
   
 ## <a name="example"></a>Пример  
- Иногда осуществляются попытки получить значение элемента, в отношении которого неизвестно, существует ли он. В этом случае при присвоении отлитого элемента `string` необоснованному типу (или одному из недействительных типов значений в рамке .NET) если элемент не существует, назначенная переменная просто установлена `Nothing`на . В следующем коде показано, что при отсутствии сведений о том, существует ли элемент, проще использовать приведение типа, чем свойство <xref:System.Xml.Linq.XElement.Value%2A>.  
+ Иногда осуществляются попытки получить значение элемента, в отношении которого неизвестно, существует ли он. В этом случае при назначении приводимого элемента типу, допускающему значение null ( `string` или одному из типов значений, допускающих значение null, в .NET Framework), если элемент не существует, назначенной переменной просто присваивается значение `Nothing` . В следующем коде показано, что при отсутствии сведений о том, существует ли элемент, проще использовать приведение типа, чем свойство <xref:System.Xml.Linq.XElement.Value%2A>.  
   
 ```vb  
 Dim root As XElement = <Root>  
@@ -151,4 +151,4 @@ v4:element does not exist
   
 ## <a name="see-also"></a>См. также
 
-- [Оси LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [Оси LINQ to XML (Visual Basic)](linq-to-xml-axes.md)

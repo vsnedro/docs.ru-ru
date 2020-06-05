@@ -4,25 +4,25 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - Into keyword [Visual Basic]
 ms.assetid: e1534550-8f4b-4978-b043-fad7b8fd79ac
-ms.openlocfilehash: 038cf9b812d3fbdb54afaca072694bbde4bfb600
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 4e3648ee9893ca0f4045e28e68b659c01035dee0
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348043"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84404477"
 ---
 # <a name="into-clause-visual-basic"></a>Предложение Into (Visual Basic)
 Определяет агрегатные функции или группирования, применяемые к коллекции.  
   
-## <a name="remarks"></a>Примечания  
- Ключевое слово `Each` используется в следующих контекстах:  
+## <a name="remarks"></a>Комментарии  
+ `Each`Ключевое слово используется в следующих контекстах:  
   
- [Предложение Aggregate](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
+ [Aggregate Clause](../queries/aggregate-clause.md)  
   
- [Предложение Group By](../../../visual-basic/language-reference/queries/group-by-clause.md)  
+ [Предложение Group By](../queries/group-by-clause.md)  
   
- [Предложение Group Join](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Предложение Group Join](../queries/group-join-clause.md)  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Ключевые слова](../../../visual-basic/language-reference/keywords/index.md)
+- [Ключевые слова](../keywords/index.md)

@@ -1,13 +1,13 @@
 ---
-title: Функциональное и процедурное программирование (LINQ to XML)
+title: Сравнение функционального и процедурного программирования (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: ea1015a5-d4c8-4d79-8e1e-ba17a40a4f39
-ms.openlocfilehash: 3d1e3cf01b30454d29836f176afcd39cb2b55b73
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0b525f13298e7402369b890516434cec47e01542
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353415"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398439"
 ---
 # <a name="functional-vs-procedural-programming-linq-to-xml-visual-basic"></a>Сравнение функционального и процедурного программирования (LINQ to XML) (Visual Basic)
 XML-приложения имеют самые разнообразные типы.  
@@ -36,10 +36,10 @@ XML-приложения имеют самые разнообразные тип
   
  LINQ to XML можно использовать в обоих подходах. Используются одни и те же классы, а в некоторых случаях и одинаковые методы. Но организация и цели этих двух подходов существенно различаются. Например, в разных ситуациях один из них часто оказывается производительнее другого и использует больше или меньше памяти. Кроме того, код на основе одного или другого подхода легче писать, а сам код является более простым в обслуживании.  
   
- Чтобы увидеть, как отличаются два подхода, ознакомьтесь с [изменениями в XML-дереве в памяти и функциональным построением (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/in-memory-xml-tree-modification-vs-functional-construction.md).  
+ Чтобы увидеть, как отличаются два подхода, ознакомьтесь с [изменениями в XML-дереве в памяти и функциональным построением (LINQ to XML) (Visual Basic)](in-memory-xml-tree-modification-vs-functional-construction.md).  
   
- Руководство по написанию функциональных преобразований см. в разделе [чисто функциональные преобразования XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md).  
+ Руководство по написанию функциональных преобразований см. в разделе [чисто функциональные преобразования XML (Visual Basic)](pure-functional-transformations-of-xml.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Общие сведения о программировании LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+- [Общие сведения о программировании LINQ to XML (Visual Basic)](linq-to-xml-programming-overview.md)
