@@ -3,14 +3,14 @@ title: API-интерфейсы, основанные на отражении
 ms.date: 03/30/2017
 ms.assetid: f9532629-6594-4a41-909f-d083f30a42f3
 ms.openlocfilehash: 1d8daceb6b744b984f86b011ad7952d0da583a79
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79181093"
 ---
 # <a name="apis-that-rely-on-reflection"></a>API-интерфейсы, основанные на отражении
-В некоторых случаях использование отражения в коде не очевидно, и поэтому цепочка инструментов .NET Native не сохраняет метаданные, необходимые во время выполнения. В этом разделе рассматриваются некоторые общие интерфейсы API или распространенные шаблоны программирования, которые не считаются частью API-интерфейса отражения, однако используют отражение для успешного выполнения. При их использовании в исходном коде можно добавить сведения о них в файл директив среды выполнения (. rd.xml), чтобы вызовы этих интерфейсов API не создавали исключений [MissingMetadataException](missingmetadataexception-class-net-native.md) или других исключений во время выполнения.  
+В некоторых случаях использование отражения в коде не очевидно, поэтому цепочка инструментов .NET Native не сохраняет метаданные, необходимые во время выполнения. В этом разделе рассматриваются некоторые общие интерфейсы API или распространенные шаблоны программирования, которые не считаются частью API-интерфейса отражения, однако используют отражение для успешного выполнения. При их использовании в исходном коде можно добавить сведения о них в файл директив среды выполнения (. rd.xml), чтобы вызовы этих интерфейсов API не создавали исключений [MissingMetadataException](missingmetadataexception-class-net-native.md) или других исключений во время выполнения.  
   
 ## <a name="typemakegenerictype-method"></a>Метод Type.MakeGenericType  
  Можно динамически создать экземпляр универсального типа `AppClass<T>` путем вызова метода <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> с помощью следующего кода:  
@@ -27,9 +27,9 @@ ms.locfileid: "79181093"
   
  Но даже при добавлении метаданных для универсального типа без экземпляров вызов метода <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> приводит к исключению [MissingMetadataException](missingmetadataexception-class-net-native.md):  
   
-Эта операция не может быть выполнена, поскольку метаданные для следующего типа были удалены по причинам производительности:  
+Эта операция не может быть выполнена, так как метаданные для следующего типа были удалены из соображений производительности:  
   
-`App1.AppClass`1<System.Int32>'.  
+`App1.AppClass`1<System. Int32>".  
   
  Можно добавить следующую директиву времени выполнения в файл директив среды выполнения, чтобы добавить метаданные `Activate` для конкретного экземпляра, созданного над `AppClass<T>` из <xref:System.Int32?displayProperty=nameWithType>:  
   
@@ -51,7 +51,7 @@ ms.locfileid: "79181093"
   
 - Метаданные `Browse` для метода, который требуется вызвать.  Если это открытый метод, добавление открытых метаданных `Browse` для содержащего типа включает и сам метод.  
   
-- Динамические метаданные для вызываемого метода, чтобы делегат вызова отражения не был удален цепочкой инструментов .NET Native. В случае отсутствия динамических метаданных для метода создается следующее исключение <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType>, когда вызывается метод:  
+- Динамические метаданные для метода, который необходимо вызвать, чтобы делегат вызова отражения не был удален цепочкой инструментов .NET Native. В случае отсутствия динамических метаданных для метода создается следующее исключение <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType>, когда вызывается метод:  
   
     ```output
     MakeGenericMethod() cannot create this generic method instantiation because the instantiation was not metadata-enabled: 'App1.Class1.GenMethod<Int32>(Int32)'.  
@@ -88,7 +88,7 @@ Unfortunately, no further information is available.
 <Type Name="App1.Class1[]" Browse="Required Public" />  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Начало работы](getting-started-with-net-native.md)
-- [Справочник по конфигурационному файлу директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

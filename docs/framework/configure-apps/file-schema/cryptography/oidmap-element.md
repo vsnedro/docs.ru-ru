@@ -9,18 +9,18 @@ helpviewer_keywords:
 - oidMap element
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
 ms.openlocfilehash: a28eaf68fe1e6ab3f26592eee5ae2d0f2e7a3256
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79155171"
 ---
-# <a name="oidmap-element"></a>\<oidMap> Элемент
-Содержит отображение идентификатора объектов ASN.1 (OID) для классов.  
+# <a name="oidmap-element"></a>Элемент \<oidMap>
+Содержит сопоставления идентификатора объекта (OID) ASN. 1 для классов.  
 
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<мскориб>**](mscorlib-element-for-cryptography-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<криптографияНастройки>**](cryptographysettings-element.md)\
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<oidMap>**
 
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +34,13 @@ ms.locfileid: "79155171"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<oidEntry>](oidentry-element.md)|Карты ASN.1 OID с дружественным именем.|  
+|[\<oidEntry>](oidentry-element.md)|Сопоставляет идентификатор объекта ASN. 1 с понятным именем.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -51,7 +51,7 @@ ms.locfileid: "79155171"
 |`mscorlib`|Содержит `cryptographySettings` элемент.|  
   
 ## <a name="example"></a>Пример  
- Ниже приводится, как использовать ** \<элемент oidMap>** содержать отображение OID для алгоритма хэша RIPEMD-160 для реализации этого хэш-алгоритма.  
+ В следующем примере показано, как использовать **\<oidMap>** элемент для включения СОПОСТАВЛЕНИЯ OID для алгоритма хэширования RIPEMD-160 к реализации этого хэш-алгоритма.  
   
 ```xml  
 <configuration>  
@@ -73,10 +73,10 @@ ms.locfileid: "79155171"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Схема конфигурации файлов](../index.md)
-- [Криптография Настройки Схема](index.md)
-- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
+- [Схема файла конфигурации](../index.md)
+- [Схема параметров криптографии](index.md)
+- [Службы шифрования](../../../../standard/security/cryptographic-services.md)
 - [Настройка криптографических классов](../../configure-cryptography-classes.md)
 - [Отображение идентификаторов объектов на криптографические алгоритмы](../../map-object-identifiers-to-cryptography-algorithms.md)

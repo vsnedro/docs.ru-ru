@@ -1,5 +1,5 @@
 ---
-title: <filter>Элемент <add> для<sharedListeners>
+title: <filter>Элемент для <add> для<sharedListeners>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add/filter
@@ -11,20 +11,20 @@ helpviewer_keywords:
 - trace listeners, filters
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
 ms.openlocfilehash: 6fb52cdfa5792ab6059b60d8dbb91c107cd666ca
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79153457"
 ---
-# <a name="filter-element-for-add-for-sharedlisteners"></a>\<фильтр> \<элемент амва для добавления> для \<> общей слушателей
+# <a name="filter-element-for-add-for-sharedlisteners"></a>\<filter>Элемент для \<add> для\<sharedListeners>
 Добавляет фильтр к прослушивателю в коллекции `sharedListeners`.  
 
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<общиеслушатели>**](sharedlisteners-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<добавить>**](add-element-for-sharedlisteners.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<фильтр>**
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sharedListeners>**](sharedlisteners-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-element-for-sharedlisteners.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filter>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,13 +38,13 @@ ms.locfileid: "79153457"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|**тип**|Обязательный атрибут.<br /><br /> Определяет тип фильтра. Вы можете использовать только полное имя типа (в формате <xref:System.Type.FullName%2A?displayProperty=nameWithType> свойства), или вы можете использовать полностью квалифицированное имя типа, включая информацию о сборке (в формате <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> свойства). Для получения информации о создании полностью квалифицированного имени типа [см.](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)|  
-|**инициализацияДанны**|Необязательный атрибут.<br /><br /> Строка перешла к конструктору для указанного класса.|  
+|**type**|Обязательный атрибут.<br /><br /> Указывает тип фильтра. Можно использовать только полное имя типа (в формате <xref:System.Type.FullName%2A?displayProperty=nameWithType> Свойства) или можно использовать полное имя типа, включая сведения о сборке (в формате <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> Свойства). Сведения о создании полного имени типа см. в разделе [Указание полных имен типов](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|**initializeData**|Необязательный атрибут.<br /><br /> Строка, передаваемая конструктору для указанного класса.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -52,16 +52,16 @@ ms.locfileid: "79153457"
 |-------------|-----------------|  
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`system.diagnostics`|Задает прослушиватели трассировки, собирающие, хранящие и маршрутизирующие сообщения, а также уровень, на котором установлен ключ трассировки.|  
-|`sharedListeners`|Коллекция слушателей, на которую может ссылаться любой источник или элемент микро- информации.|  
-|`add`|Добавляет слушателя в коллекцию **sharedListeners.**|  
+|`sharedListeners`|Коллекция прослушивателей, на которые может ссылаться любой источник или элемент трассировки.|  
+|`add`|Добавляет прослушиватель в коллекцию **шаредлистенерс** .|  
   
-## <a name="remarks"></a>Remarks  
- Если слушатель определен в `<add>` элементе `<sharedListeners>` элемента, фильтр для этого слушателя `<filter>` должен быть определен `<add>` в элементе, который является ребенком элемента.  
+## <a name="remarks"></a>Примечания  
+ Если прослушиватель определен в элементе элемента `<add>` `<sharedListeners>` , то фильтр для этого прослушивателя должен быть определен в `<filter>` элементе, который является дочерним по отношению к `<add>` элементу.  
   
- Этот элемент может быть использован в файле конфигурации машины (Machine.config) и файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать `<filter>` элемент для `console` добавления фильтра к слушателю трассировки в коллекции. `sharedListeners`  
+ В следующем примере показано, как использовать `<filter>` элемент для добавления фильтра в прослушиватель трассировки `console` в `sharedListeners` коллекции.  
   
 ```xml  
 <configuration>  
@@ -85,9 +85,9 @@ ms.locfileid: "79153457"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.TraceFilter>
 - <xref:System.Diagnostics.TraceListener>
 - <xref:System.Diagnostics.TraceSource>
-- [Схема настроек трассировки и отпараги](index.md)
+- [Схема параметров трассировки и отладки](index.md)

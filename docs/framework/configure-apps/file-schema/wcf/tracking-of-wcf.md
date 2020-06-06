@@ -3,20 +3,20 @@ title: <tracking>WCF
 ms.date: 03/30/2017
 ms.assetid: 70cfaf24-a91c-4e56-ac47-d2ed87a963b3
 ms.openlocfilehash: e8f74d635299a965b754536234e6be28e4e7a104
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70399422"
 ---
-# <a name="tracking-of-wcf"></a>\<Отслеживание > WCF
+# <a name="tracking-of-wcf"></a>\<tracking>WCF
 Представляет раздел конфигурации для определения настроек отслеживания для службы рабочего процесса.  
   
  Дополнительные сведения об отслеживании рабочих процессов и его конфигурации см. в разделе Отслеживание рабочего процесса [и трассировка](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) и [Настройка отслеживания рабочего процесса](../../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<Отслеживание >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<tracking>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -80,14 +80,14 @@ ms.locfileid: "70399422"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<Участники >](../windows-workflow-foundation/participants.md)|Коллекция элементов конфигурации, определяющих участников, которые подписываются на отслеживание записей. Участники содержат логику обработки полезных данных из записей отслеживания (например, они могут записать данные в файл).|  
-|[\<trackingProfile >](../windows-workflow-foundation/trackingprofile.md)|Профиль отслеживания для фильтрации записей отслеживания, выдаваемых экземпляром рабочего процесса.|  
+|[\<participants>](../windows-workflow-foundation/participants.md)|Коллекция элементов конфигурации, которые определяют участников, подписанных на записи отслеживания. Участники содержат логику обработки полезных данных из записей отслеживания (например, они могут записать данные в файл).|  
+|[\<trackingProfile>](../windows-workflow-foundation/trackingprofile.md)|Профиль отслеживания для фильтрации записей отслеживания, выдаваемых экземпляром рабочего процесса.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

@@ -1,23 +1,23 @@
 ---
-title: <behavior><serviceBehaviors> рабочего потока
+title: <behavior>из <serviceBehaviors> рабочего процесса
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 6a4b718a-1b40-4957-935a-f6122819ab3c
 ms.openlocfilehash: 071cff8e9f6ec3fa0546a07d19160869d8b43f60
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79152324"
 ---
-# <a name="behavior-of-servicebehaviors-of-workflow"></a>\<поведение> \<сервисовПоведение> рабочего процесса
-Элемент **поведения** содержит набор параметров для поведения службы. Каждое поведение индексируется по **названию.** Службы могут связываться с каждым поведением через это имя, используя атрибут **поведенческой** [ \<конфигурации элемента>.](../wcf/endpoint-element.md) Это позволяет конечным точкам иметь общие конфигурации поведений без переопределения параметров.  
+# <a name="behavior-of-servicebehaviors-of-workflow"></a>\<behavior>из \<serviceBehaviors> рабочего процесса
+Элемент **Behavior** содержит коллекцию параметров для поведения службы. Каждое поведение индексируется по **имени**. Службы могут ссылаться на каждое поведение с помощью этого имени, используя атрибут **behaviorConfiguration** [\<endpoint>](../wcf/endpoint-element.md) элемента. Это позволяет конечным точкам иметь общие конфигурации поведений без переопределения параметров.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<Системы. СервисМодель>**](system-servicemodel-of-workflow.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<поведение>**](behaviors-of-workflow.md)\
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors-of-workflow.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors-of-workflow.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<поведение>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<behavior>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -56,7 +56,7 @@ ms.locfileid: "79152324"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |name|Уникальная строка, содержащая имя конфигурации поведения. Это значение является заданной пользователем строкой, которая должна быть уникальной, поскольку она действует как строка идентификации для элемента.|  
   
@@ -64,13 +64,13 @@ ms.locfileid: "79152324"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<буферПолучить>](bufferreceive.md)|Поведение, позволяющее службе рабочего процесса использовать обработку буфера получения, благодаря чему можно обрабатывать неупорядоченные сообщения.|  
-|[\<>по>](../wcf/routing-of-servicebehavior.md)|Поведение службы позволяет ей использовать отслеживание ETW совместно с <xref:System.Activities.Tracking.EtwTrackingParticipant>.|  
+|[\<bufferReceive>](bufferreceive.md)|Поведение, позволяющее службе рабочего процесса использовать обработку буфера получения, благодаря чему можно обрабатывать неупорядоченные сообщения.|  
+|[\<routing>](../wcf/routing-of-servicebehavior.md)|Поведение службы позволяет ей использовать отслеживание ETW совместно с <xref:System.Activities.Tracking.EtwTrackingParticipant>.|  
 |[\<sendMessageChannelCache>](sendmessagechannelcache.md)|Поведение службы, которое позволяет изменить уровни доступа к кэшу, параметры кэша фабрики канала и параметры кэша канала для рабочих процессов, которые отправляют сообщения в конечные точки служб с использованием действий отправки сообщений.|  
 |[\<sqlWorkflowInstanceStore>](sqlworkflowinstancestore.md)|Поведение службы, позволяющее настроить функцию <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, поддерживающую сохранение сведений о состоянии для экземпляров службы рабочего процесса в базу данных SQL Server 2005 или SQL Server 2008.|  
-|[\<рабочий процесс>](workflowidle.md)|Поведение службы, управляющее выгрузкой и сохранением простаивающих экземпляров рабочего процесса.|  
-|[\<рабочий процессInstanceManagement>](workflowinstancemanagement.md)|Поведение службы, которое позволяет указать параметры, управляющие выполнением экземпляров рабочего процесса, включая сохраняемость, необработанное поведение исключения и неактивное поведение.|  
-|[\<рабочий процессUnhandledException>](workflowunhandledexception.md)|Поведение службы, позволяющее задать действие, которое будет выполнено при появлении необработанного исключения в службе рабочего процесса.|  
+|[\<workflowIdle>](workflowidle.md)|Поведение службы, управляющее выгрузкой и сохранением простаивающих экземпляров рабочего процесса.|  
+|[\<workflowInstanceManagement>](workflowinstancemanagement.md)|Поведение службы, которое позволяет указать параметры, управляющие выполнением экземпляров рабочего процесса, включая сохраняемость, необработанное поведение исключения и неактивное поведение.|  
+|[\<workflowUnhandledException>](workflowunhandledexception.md)|Поведение службы, позволяющее задать действие, которое будет выполнено при появлении необработанного исключения в службе рабочего процесса.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

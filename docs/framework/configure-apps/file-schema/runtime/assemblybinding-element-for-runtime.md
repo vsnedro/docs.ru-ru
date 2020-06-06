@@ -9,18 +9,18 @@ helpviewer_keywords:
 - container tags, <assemblyBinding> element
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
 ms.openlocfilehash: 202b063ad3f0f9696cdc12aff434d61fe5a813e6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79154326"
 ---
-# <a name="assemblybinding-element-for-runtime"></a>\<сборкаОбязательный \<элемент> для> выполнения
+# <a name="assemblybinding-element-for-runtime"></a>Элемент \<assemblyBinding> для \<runtime>
 Содержит сведения о перенаправлении версии сборки и о расположениях сборок.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<>выполнения**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<сборкаОбязательная>**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyBinding>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,19 +35,19 @@ ms.locfileid: "79154326"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |**xmlns**|Обязательный атрибут.<br /><br /> Задает пространство имен XML, необходимое для привязки сборок. Используйте строку urn:schemas-microsoft-com:asm.v1 в качестве значения.|  
-|**применяетсяTo**|Задает версию среды выполнения, к которой применяется перенаправление сборки .NET Framework. Этот необязательный атрибут содержит номер версии .NET Framework, к которой применяется перенаправление. Если атрибут **appliesTo** не указан, элемент **\<assemblyBinding>** применяется ко всем версиям платформы .NET Framework. Атрибут **был** введен в версии .NET Framework 1.1; он игнорируется версией .NET Framework 1.0. Это означает, что при использовании версии 1.0 .NET Framework **appliesTo** применяются все ** \<** элементы сборки,>.|  
+|**appliesTo**|Задает версию среды выполнения, к которой применяется перенаправление сборки .NET Framework. Этот необязательный атрибут содержит номер версии .NET Framework, к которой применяется перенаправление. Если атрибут **appliesTo** не указан, **\<assemblyBinding>** элемент применяется ко всем версиям .NET Framework. Атрибут **appliesTo** появился в .NET Framework версии 1,1; он игнорируется .NET Framework версии 1,0. Это означает, что все **\<assemblyBinding>** элементы применяются при использовании .NET Framework версии 1,0, даже если указан атрибут **appliesTo** .|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<зависимаясборка>](dependentassembly-element.md)|Инкапсулирует политику привязки и расположение сборки. Используйте один ** \<зависимыйтег>** тег для каждой сборки.|  
-|[\<зондирование>](probing-element.md)|Задает вложенные папки, в которых среда CLR выполняет поиск при загрузке сборки.|  
-|[\<издательПолитика>](publisherpolicy-element.md)|Указывает, применяет ли среда выполнения политику издателя.|  
-|[\<квалификацияСобрание>](qualifyassembly-element.md)|Задает полное имя сборки, которая должна загружаться динамически в случае использования неполного имени.|  
+|[\<dependentAssembly>](dependentassembly-element.md)|Инкапсулирует политику привязки и расположение сборки. **\<dependentAssembly>** Для каждой сборки используется один тег.|  
+|[\<probing>](probing-element.md)|Задает вложенные папки, в которых среда CLR выполняет поиск при загрузке сборки.|  
+|[\<publisherPolicy>](publisherpolicy-element.md)|Указывает, применяет ли среда выполнения политику издателя.|  
+|[\<qualifyAssembly>](qualifyassembly-element.md)|Задает полное имя сборки, которая должна загружаться динамически в случае использования неполного имени.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -77,7 +77,7 @@ ms.locfileid: "79154326"
 </configuration>  
 ```  
   
- В следующем примере показано, как использовать **атрибутдля для** перенаправления связывания сборки рамочной системы .NET.  
+ В следующем примере показано, как использовать атрибут **appliesTo** для перенаправления привязки .NET Framework сборки.  
   
 ```xml  
 <runtime>  
@@ -90,8 +90,8 @@ ms.locfileid: "79154326"
 </runtime>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
-- [Схема конфигурации файлов](../index.md)
+- [Схема файла конфигурации](../index.md)
 - [Перенаправление версий сборки](../../redirect-assembly-versions.md)

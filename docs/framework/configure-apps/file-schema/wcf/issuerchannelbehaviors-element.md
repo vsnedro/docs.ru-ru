@@ -12,24 +12,24 @@ no-loc:
 - <issuerChannelBehaviors>
 - <dataContractSerializer>
 ms.openlocfilehash: cbbfb9d3b5af47a360aa82cf837cd6749f61b641
-ms.sourcegitcommit: 5ae5a1a9520b8b8b6164ad728d396717f30edafc
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70893155"
 ---
-# <a name="issuerchannelbehaviors-element"></a>\<Элемент > issuerChannelBehaviors
+# <a name="issuerchannelbehaviors-element"></a>Элемент \<issuerChannelBehaviors>
 
-Содержит коллекцию поведений конечной точки клиента Windows Communication Foundation (WCF) (определенную в конфигурации) для использования при взаимодействии с указанными службами маркеров службы. Определенные поведения не могут включать в себя [ \<> элементы ClientCredentials](clientcredentials.md) .
+Содержит коллекцию поведений конечной точки клиента Windows Communication Foundation (WCF) (определенную в конфигурации) для использования при взаимодействии с указанными службами маркеров службы. Определенные поведения не могут включать [\<clientCredentials>](clientcredentials.md) элементы.
 
 [\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<> System. serviceModel](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[\<> поведения](behaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<endpointBehaviors >](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<> поведения](behavior-of-endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<> clientCredentials](clientcredentials.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<issuedToken >](issuedtoken.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<issuerChannelBehaviors >
+&nbsp;&nbsp;[\<system.serviceModel>](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<behaviors>](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<endpointBehaviors>](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<behavior>](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<clientCredentials>](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<issuedToken>](issuedtoken.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<issuerChannelBehaviors>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,7 +46,7 @@ ms.locfileid: "70893155"
 
 ### <a name="attributes"></a>Атрибуты
 
-Нет.
+Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -58,11 +58,11 @@ ms.locfileid: "70893155"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[\<issuedToken >](issuedtoken.md)|Задает пользовательский маркер, используемый для проверки подлинности клиента при подключении к службе.|
+|[\<issuedToken>](issuedtoken.md)|Задает пользовательский маркер, используемый для проверки подлинности клиента при подключении к службе.|
 
 ## <a name="remarks"></a>Примечания
 
-Этот элемент используется, когда для связи со службой необходимо любое поведение (кроме поведений, в которые включаются элементы `<clientCredentials>`). Например, если [ \<](datacontractserializer-element.md) необходимо добавить элемент поведения dataContractSerializer >.
+Этот элемент используется, когда для связи со службой необходимо любое поведение (кроме поведений, в которые включаются элементы `<clientCredentials>`). Например, если [\<dataContractSerializer>](datacontractserializer-element.md) необходимо добавить элемент поведения.
 
 ## <a name="see-also"></a>См. также
 
@@ -71,10 +71,10 @@ ms.locfileid: "70893155"
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential.IssuerChannelBehaviors%2A>
 - [Идентификация и проверка подлинности службы](../../../wcf/feature-details/service-identity-and-authentication.md)
-- [Поведения безопасности](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Поведение безопасности](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [Федерация и выданные маркеры](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [Защита служб и клиентов](../../../wcf/feature-details/securing-services-and-clients.md)
-- [Защита клиентов](../../../wcf/securing-clients.md)
+- [Обеспечение безопасности клиентов](../../../wcf/securing-clients.md)
 - [Практическое руководство. Создание федеративного клиента](../../../wcf/feature-details/how-to-create-a-federated-client.md)
 - [Практическое руководство. Настройка локального издателя](../../../wcf/feature-details/how-to-configure-a-local-issuer.md)
 - [Федерация и выданные маркеры](../../../wcf/feature-details/federation-and-issued-tokens.md)

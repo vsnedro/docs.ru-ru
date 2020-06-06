@@ -4,16 +4,16 @@ ms.date: 03/30/2017
 ms.assetid: fa1624dd-2d74-4ae3-942e-498cee261ac5
 author: BrucePerlerMS
 ms.openlocfilehash: 57757aaec39bc5c552e7ba12c9779cb3a92a9025
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79152508"
 ---
-# <a name="systemidentitymodelservices"></a>\<system.identityModel.services>
-Раздел конфигурации для проверки подлинности с использованием протокола WS-Federation.  
+# \<system.identityModel.services>
+Раздел конфигурации для проверки подлинности с помощью протокола WS-Federation.  
   
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<system.identityModel.services>**  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,27 +29,27 @@ ms.locfileid: "79152508"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- None  
+ Нет  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<федерацияКонфигурация>](federationconfiguration.md)|Содержит настройки, настраивающие <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> модули (WSFAM) и <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) HTTP.|  
+|[\<federationConfiguration>](federationconfiguration.md)|Содержит параметры, которые настраивают <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (всфам) и <xref:System.IdentityModel.Services.SessionAuthenticationModule> HTTP-модули (SAM).|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
  None  
   
 ## <a name="remarks"></a>Remarks  
- Добавьте `<system.identityModel.services>` раздел в файл конфигурации приложения, чтобы предоставить настройки для SAM и WSFAM.  
+ Добавьте `<system.identityModel.services>` раздел в файл конфигурации приложения, чтобы указать параметры для SAM и всфам.  
   
 > [!IMPORTANT]
-> При использовании <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> или класса для обеспечения элемента доступа на основе<xref:System.Security.Claims.ClaimsAuthorizationManager>утверждений в коде менеджер авторизации претензий () и политика, используемая для принятия решений о авторизации, настраиваются через `<identityConfiguration>` элемент, на который косвенно или явно ссылается `<federationConfiguration>` элемент в этом разделе. Для получения дополнительной **информации** см [ \<>.](federationconfiguration.md)  
+> При использовании <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> класса или для предоставления управления доступом на основе утверждений в коде Диспетчер авторизации утверждений ( <xref:System.Security.Claims.ClaimsAuthorizationManager> ) и политика, используемые для принятия решений об авторизации, настраиваются с помощью `<identityConfiguration>` элемента, который неявно или явно упоминается в `<federationConfiguration>` элементе в этом разделе. Дополнительные сведения см. в разделе **Примечания** в [\<federationConfiguration>](federationconfiguration.md) элементе.  
   
- Раздел `<system.identityModel.services>` представлен <xref:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection> классом. Коллекция элементов `<federationConfiguration>` ребенка, настроенная в разделе, представлена <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection> классом.  
+ `<system.identityModel.services>`Раздел представлен <xref:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection> классом. Коллекция дочерних элементов, `<federationConfiguration>` настроенных в разделе, представлена <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection> классом.  
   
 ## <a name="example"></a>Пример  
- В следующем XML показано, `<system.identityModel.services>` как добавить раздел в файл конфигурации. Сначала необходимо добавить объявления раздела как для раздела, `<system.identityModel.services>` так и для разделов. `<system.identityModel>` (При добавлении раздела `<system.identityModel.services>` следует также добавить декларацию для `<system.identityModel>` раздела, чтобы при необходимости можно было создать раздел по умолчанию `<identityConfiguration>` к времени выполнения.) После добавления объявлений раздела можно настроить настройки федеративной аутентификации под элементом. `<system.identityModel.services>`  
+ В следующем коде XML показано, как добавить `<system.identityModel.services>` раздел в файл конфигурации. Сначала необходимо добавить объявления разделов как для `<system.identityModel.services>` раздела, так и для `<system.identityModel>` разделов. (При добавлении раздела необходимо `<system.identityModel.services>` также добавить объявление для `<system.identityModel>` раздела, чтобы гарантировать, что при необходимости раздел по умолчанию `<identityConfiguration>` может быть создан средой выполнения.) После добавления объявлений разделов можно настроить параметры федеративной проверки подлинности в `<system.identityModel.services>` элементе.  
   
 ```xml  
 <configuration>  

@@ -7,18 +7,18 @@ helpviewer_keywords:
 - memoryCache element
 ms.assetid: 182a622f-f7cf-472d-9d0b-451d2fd94525
 ms.openlocfilehash: 94c21e0408b7616bf0c8a24267b72bfa7cc3aaa0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79153988"
 ---
-# <a name="memorycache-element-cache-settings"></a>\<memoryCache> элемент (Настройки кэша)
+# <a name="memorycache-element-cache-settings"></a>Элемент \<memoryCache> (параметры кэша)
 Определяет элемент, используемый для настройки кэша, который основан на классе <xref:System.Runtime.Caching.MemoryCache> . Класс <xref:System.Runtime.Caching.Configuration.MemoryCacheElement> определяет элемент [memoryCache](memorycache-element-cache-settings.md) , который можно использовать для настройки кэша. В одном приложении может использоваться несколько экземпляров класса <xref:System.Runtime.Caching.MemoryCache> . Каждый элемент `memoryCache` в файле конфигурации может содержать параметры для именованного экземпляра <xref:System.Runtime.Caching.MemoryCache> .  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.runtime.кэширования>**](system-runtime-caching-element-cache-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<памятьCache>**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<memoryCache>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,7 +30,7 @@ ms.locfileid: "79153988"
 </memoryCache>  
 ```  
   
-## <a name="type"></a>Тип  
+## <a name="type"></a>Type  
  Класс<xref:System.Runtime.Caching.MemoryCache> .  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
@@ -38,7 +38,7 @@ ms.locfileid: "79153988"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`CacheMemoryLimitMegabytes`|Максимальный объем памяти в мегабайтах, который может занимать экземпляр объекта <xref:System.Runtime.Caching.MemoryCache> . Значение по умолчанию — 0. Это означает, что эвристика автомасштабирования класса <xref:System.Runtime.Caching.MemoryCache> используется по умолчанию.|  
 |`Name`|Имя конфигурации кэша.|  
@@ -49,16 +49,16 @@ ms.locfileid: "79153988"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<имени Кэшес>](namedcaches-element-cache-settings.md)|Содержит коллекцию параметров конфигурации для экземпляра `namedCache` .|  
+|[\<namedCaches>](namedcaches-element-cache-settings.md)|Содержит коллекцию параметров конфигурации для экземпляра `namedCache` .|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<конфигурация>](../configuration-element.md)|Определяет корневой элемент в каждом файле конфигурации, который используется приложениями общего языка и приложениями .NET Framework.|  
-|[\<system.runtime.кэширования>](system-runtime-caching-element-cache-settings.md)|Содержит типы, которые позволяют реализовать кэширование в приложениях, встроенных в рамку .NET.|  
+|[\<configuration>](../configuration-element.md)|Указывает корневой элемент в каждом файле конфигурации, который используется средой CLR и .NET Framework приложениями.|  
+|[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Содержит типы, позволяющие реализовать кэширование вывода в приложениях, встроенных в .NET Framework.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Класс <xref:System.Runtime.Caching.MemoryCache> — это конкретная реализация абстрактного класса <xref:System.Runtime.Caching.ObjectCache> . Экземпляры класса <xref:System.Runtime.Caching.MemoryCache> можно снабдить сведениями о конфигурации из файлов конфигурации приложения. Раздел конфигурации [MemoryCache](memorycache-element-cache-settings.md) содержит коллекцию конфигураций `namedCaches` .  
   
  При инициализации объекта кэша на базе памяти он сначала пытается найти запись `namedCaches` , которая соответствует имени в параметре, передаваемом конструктору кэша памяти. Если запись `namedCaches` найдена, из файла конфигурации извлекаются сведения об опросах и управлении памятью.  
@@ -72,7 +72,7 @@ ms.locfileid: "79153988"
 - <xref:System.Runtime.Caching.MemoryCache.PollingInterval%2A>  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как <xref:System.Runtime.Caching.MemoryCache> установить имя объекта объекта кэша по умолчанию, установив `name` атрибут на "По умолчанию".  
+ В следующем примере показано, как задать имя <xref:System.Runtime.Caching.MemoryCache> объекта в качестве имени объекта кэша по умолчанию, задав `name` для атрибута значение Default.  
   
  Атрибутам `cacheMemoryLimitMegabytes` и `physicalMemoryLimitPercentage` присваивается нулевое значение. Это означает, что эвристика автомасштабирования <xref:System.Runtime.Caching.MemoryCache> используется по умолчанию. Реализация кэша должна каждые две минуты сравнивать текущую загрузку памяти с абсолютными и процентными ограничениями по памяти.  
   
@@ -91,8 +91,8 @@ ms.locfileid: "79153988"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Caching.MemoryCache>
-- [\<system.runtime.кэширования> элемент (Настройки кэша)](system-runtime-caching-element-cache-settings.md)
-- [\<имени Кэши> элемент (Настройки кэша)](namedcaches-element-cache-settings.md)
+- [\<system.runtime.caching>Элемент (параметры кэша)](system-runtime-caching-element-cache-settings.md)
+- [\<namedCaches>Элемент (параметры кэша)](namedcaches-element-cache-settings.md)
