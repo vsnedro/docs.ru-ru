@@ -4,21 +4,21 @@ ms.date: 03/30/2017
 ms.assetid: 42c7f291-2ec3-43c5-8872-35897ff3c660
 author: BrucePerlerMS
 ms.openlocfilehash: 653dd9cfadbfd33f5371b77172199b946321bc8c
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70251855"
 ---
-# <a name="servicecertificate"></a><span data-ttu-id="ee561-101">\<serviceCertificate ></span><span class="sxs-lookup"><span data-stu-id="ee561-101">\<serviceCertificate></span></span>
-<span data-ttu-id="ee561-102">Настраивает сертификат X. 509, используемый для шифрования и расшифровки токенов.</span><span class="sxs-lookup"><span data-stu-id="ee561-102">Configures the X.509 certificate that is used to encrypt and decrypt tokens.</span></span>  
+# \<serviceCertificate>
+<span data-ttu-id="7664c-101">Настраивает сертификат X. 509, используемый для шифрования и расшифровки токенов.</span><span class="sxs-lookup"><span data-stu-id="7664c-101">Configures the X.509 certificate that is used to encrypt and decrypt tokens.</span></span>  
   
-<span data-ttu-id="ee561-103">[ **\<configuration>** ](../configuration-element.md)</span><span class="sxs-lookup"><span data-stu-id="ee561-103">[**\<configuration>**](../configuration-element.md)</span></span>\
-<span data-ttu-id="ee561-104">&nbsp;&nbsp;[ **\<> System. identityModel. Services**](system-identitymodel-services.md)</span><span class="sxs-lookup"><span data-stu-id="ee561-104">&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)</span></span>\
-<span data-ttu-id="ee561-105">&nbsp;&nbsp;&nbsp;&nbsp;[ **\<federationConfiguration >** ](federationconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="ee561-105">&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)</span></span>\
-<span data-ttu-id="ee561-106">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<serviceCertificate >**</span><span class="sxs-lookup"><span data-stu-id="ee561-106">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**</span></span>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**  
   
-## <a name="syntax"></a><span data-ttu-id="ee561-107">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ee561-107">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7664c-102">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7664c-102">Syntax</span></span>  
   
 ```xml  
 <system.identityModel.services>  
@@ -29,26 +29,26 @@ ms.locfileid: "70251855"
 </system.identityModel.services>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="ee561-108">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="ee561-108">Attributes and Elements</span></span>  
- <span data-ttu-id="ee561-109">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="ee561-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="7664c-103">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="7664c-103">Attributes and Elements</span></span>  
+ <span data-ttu-id="7664c-104">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="7664c-104">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="ee561-110">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="ee561-110">Attributes</span></span>  
- <span data-ttu-id="ee561-111">Отсутствуют</span><span class="sxs-lookup"><span data-stu-id="ee561-111">None</span></span>  
+### <a name="attributes"></a><span data-ttu-id="7664c-105">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="7664c-105">Attributes</span></span>  
+ <span data-ttu-id="7664c-106">Нет</span><span class="sxs-lookup"><span data-stu-id="7664c-106">None</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="ee561-112">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="ee561-112">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="7664c-107">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="7664c-107">Child Elements</span></span>  
   
-|<span data-ttu-id="ee561-113">Элемент</span><span class="sxs-lookup"><span data-stu-id="ee561-113">Element</span></span>|<span data-ttu-id="ee561-114">Описание</span><span class="sxs-lookup"><span data-stu-id="ee561-114">Description</span></span>|  
+|<span data-ttu-id="7664c-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="7664c-108">Element</span></span>|<span data-ttu-id="7664c-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7664c-109">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="ee561-115">\<certificateReference ></span><span class="sxs-lookup"><span data-stu-id="ee561-115">\<certificateReference></span></span>](certificatereference.md)|<span data-ttu-id="ee561-116">Задает параметры, используемые для поиска и проверки сертификата X. 509 в хранилище сертификатов.</span><span class="sxs-lookup"><span data-stu-id="ee561-116">Specifies settings that are used to find and validate an X.509 certificate in a certificate store.</span></span>|  
+|[\<certificateReference>](certificatereference.md)|<span data-ttu-id="7664c-110">Задает параметры, используемые для поиска и проверки сертификата X. 509 в хранилище сертификатов.</span><span class="sxs-lookup"><span data-stu-id="7664c-110">Specifies settings that are used to find and validate an X.509 certificate in a certificate store.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="ee561-117">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="ee561-117">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="7664c-111">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="7664c-111">Parent Elements</span></span>  
   
-|<span data-ttu-id="ee561-118">Элемент</span><span class="sxs-lookup"><span data-stu-id="ee561-118">Element</span></span>|<span data-ttu-id="ee561-119">Описание</span><span class="sxs-lookup"><span data-stu-id="ee561-119">Description</span></span>|  
+|<span data-ttu-id="7664c-112">Элемент</span><span class="sxs-lookup"><span data-stu-id="7664c-112">Element</span></span>|<span data-ttu-id="7664c-113">Описание</span><span class="sxs-lookup"><span data-stu-id="7664c-113">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="ee561-120">\<federationConfiguration></span><span class="sxs-lookup"><span data-stu-id="ee561-120">\<federationConfiguration></span></span>](federationconfiguration.md)|<span data-ttu-id="ee561-121">Содержит параметры, которые настраивают <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> свойства (всфам) <xref:System.IdentityModel.Services.SessionAuthenticationModule> и (SAM).</span><span class="sxs-lookup"><span data-stu-id="ee561-121">Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).</span></span>|  
+|[\<federationConfiguration>](federationconfiguration.md)|<span data-ttu-id="7664c-114">Содержит параметры, которые настраивают свойства <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (всфам) и <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).</span><span class="sxs-lookup"><span data-stu-id="7664c-114">Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="ee561-122">Пример</span><span class="sxs-lookup"><span data-stu-id="ee561-122">Example</span></span>  
- <span data-ttu-id="ee561-123">В следующем коде XML показано использование \<элемента > serviceCertificate.</span><span class="sxs-lookup"><span data-stu-id="ee561-123">The following XML shows the use of the \<serviceCertificate> element.</span></span> <span data-ttu-id="ee561-124">XML взят из `CustomToken` примера.</span><span class="sxs-lookup"><span data-stu-id="ee561-124">The XML is taken from the `CustomToken` sample.</span></span>  
+## <a name="example"></a><span data-ttu-id="7664c-115">Пример</span><span class="sxs-lookup"><span data-stu-id="7664c-115">Example</span></span>  
+ <span data-ttu-id="7664c-116">В следующем коде XML показано использование \<serviceCertificate> элемента.</span><span class="sxs-lookup"><span data-stu-id="7664c-116">The following XML shows the use of the \<serviceCertificate> element.</span></span> <span data-ttu-id="7664c-117">XML взят из `CustomToken` примера.</span><span class="sxs-lookup"><span data-stu-id="7664c-117">The XML is taken from the `CustomToken` sample.</span></span>  
   
 ```xml  
 <serviceCertificate>  
