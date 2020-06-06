@@ -9,20 +9,20 @@ helpviewer_keywords:
 - oidEntry element
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
 ms.openlocfilehash: 4564cf59e3b6cfbdcd9dca06cd0f966d524834de
-ms.sourcegitcommit: 7f8eeef060ddeb2cabfa52843776faf652c5a1f5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74088552"
 ---
-# <a name="oidentry-element"></a>\<Оидентри > элемент
+# <a name="oidentry-element"></a>Элемент \<oidEntry>
 Сопоставляет идентификатор объекта (OID) ASN.1 с понятным именем.  
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> mscorlib**](mscorlib-element-for-cryptography-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<криптографисеттингс >** ](cryptographysettings-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<оидмап >** ](oidmap-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<оидентри >**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<oidMap>**](oidmap-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<oidEntry>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,10 +35,10 @@ ms.locfileid: "74088552"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |**КОДА**|Обязательный атрибут.<br /><br /> Указывает идентификатор объекта ASN. 1, соответствующий алгоритму, реализуемому вашим классом.|  
-|**name**|Обязательный атрибут.<br /><br /> Задает значение для атрибута **Name** в теге [\<элементе nameentry >](nameentry-element.md) .|  
+|**name**|Обязательный атрибут.<br /><br /> Задает значение для атрибута **Name** в [\<nameEntry>](nameentry-element.md) теге.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
@@ -49,14 +49,14 @@ ms.locfileid: "74088552"
 |-------------|-----------------|  
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`cryptographySettings`|Содержит параметры шифрования.|  
-|`mscorlib`|Содержит элемент `cryptographySettings`.|  
+|`mscorlib`|Содержит `cryptographySettings` элемент.|  
 |`oidMap`|Содержит сопоставления идентификатора объекта (OID) ASN. 1 для классов.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Идентификаторы объектов ASN. 1 обозначают алгоритмы в некоторых криптографических форматах. Сопоставьте идентификаторы объектов с понятными именами для алгоритмов, которые необходимо опознать.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать элемент **\<оидентри >** , чтобы связать идентификатор объекта для алгоритма хэширования RIPEMD-160 с реализацией этого хэш-алгоритма.  
+ В следующем примере показано, как с помощью **\<oidEntry>** элемента сопоставлять идентификатор объекта для алгоритма хэширования RIPEMD-160 к реализации этого хэш-алгоритма.  
   
 ```xml  
 <configuration>  
@@ -81,7 +81,7 @@ ms.locfileid: "74088552"
 ## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации](../index.md)
-- [Схема параметров шифрования](index.md)
-- [Службы криптографии](../../../../standard/security/cryptographic-services.md)
+- [Схема параметров криптографии](index.md)
+- [Службы шифрования](../../../../standard/security/cryptographic-services.md)
 - [Настройка криптографических классов](../../configure-cryptography-classes.md)
 - [Отображение идентификаторов объектов на криптографические алгоритмы](../../map-object-identifiers-to-cryptography-algorithms.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - <appDomainResourceMonitoring> element
 ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
 ms.openlocfilehash: 3c6092b6c34bb13c0ad0e66df2d3b7e65ac3de7e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79154380"
 ---
-# <a name="appdomainresourcemonitoring-element"></a>\<appDomainResourceMonitoring> Элемент
+# <a name="appdomainresourcemonitoring-element"></a>Элемент \<appDomainResourceMonitoring>
 Указывает среде собирать статистику для всех доменов приложений в процессе за весь период его существования.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<>выполнения**](runtime-element.md)\
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainResourceMonitoring>**  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,19 +31,19 @@ ms.locfileid: "79154380"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|`enabled`|Обязательный атрибут.<br /><br /> Уточняется, собирает ли время выполнения статистику для мониторинга ресурсов доменов приложений.|  
+|`enabled`|Обязательный атрибут.<br /><br /> Указывает, собирает ли среда выполнения статистические данные для отслеживания ресурсов домена приложения.|  
   
 ## <a name="enabled-attribute"></a>Атрибут enabled  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|`true`|Собрана статистика мониторинга ресурсов доменов приложений.|  
-|`false`|Статистика мониторинга ресурсов доменов приложений не собирается.|  
+|`true`|Собираются статистические данные для отслеживания ресурсов домена приложения.|  
+|`false`|Статистика по мониторингу ресурсов домена приложений не собирается.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -52,15 +52,15 @@ ms.locfileid: "79154380"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Remarks  
- Мониторинг ресурсов доменов приложений доступен через управляемый класс доменов приложений, интерфейс [хостинга ICLRAppDomainResourceMonitor](../../../unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) и отслеживание событий для Windows (ETW). При включении мониторинга собираются статистические данные по всем областям приложений в процессе процесса.  
+## <a name="remarks"></a>Примечания  
+ Мониторинг ресурсов домена приложений доступен через класс домена управляемого приложения, интерфейс размещения [ICLRAppDomainResourceMonitor](../../../unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) и трассировку событий для Windows (ETW). При включении мониторинга статистика собирается для всех доменов приложений в процессе в течение жизненного цикла процесса.  
   
- Для обеспечения мониторинга из <xref:System.AppDomain.MonitoringIsEnabled%2A> управляемого кода используйте свойство.  
+ Чтобы включить мониторинг из управляемого кода, используйте <xref:System.AppDomain.MonitoringIsEnabled%2A> свойство.  
   
- Этот элемент конфигурации доступен только в системе .NET 4 и позже.  
+ Этот элемент конфигурации доступен только в .NET Framework 4 и более поздних версиях.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как включить мониторинг ресурсов домена приложений.  
+ В следующем примере показано, как включить отслеживание ресурсов домена приложения.  
   
 ```xml  
 <configuration>  
@@ -70,8 +70,8 @@ ms.locfileid: "79154380"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
 - [Схема параметров среды выполнения](index.md)
-- [Схема конфигурации файлов](../index.md)
+- [Схема файла конфигурации](../index.md)

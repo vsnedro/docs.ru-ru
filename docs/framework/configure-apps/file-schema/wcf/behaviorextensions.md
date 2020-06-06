@@ -3,13 +3,13 @@ title: <behaviorExtensions>
 ms.date: 03/30/2017
 ms.assetid: 59f2791a-c78f-40d7-aa80-0d9cd10135d9
 ms.openlocfilehash: 39dc92d65a41d223ebd39aec3dc59871ad1fd101
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "77448689"
 ---
-# <a name="behaviorextensions"></a>\<Бехавиорекстенсионс >
+# \<behaviorExtensions>
 Расширения поведений позволяют пользователям создавать пользовательские элементы поведений. Эти элементы могут использоваться вместе со стандартными элементами поведений Windows Communication Foundation (WCF). В разделе `behaviorExtensions` определяется элемент, который может использоваться в конфигурации. Далее приведен пример типичного расширения поведения.  
   
 ```xml  
@@ -42,16 +42,16 @@ ms.locfileid: "77448689"
 </behaviors>
 ```  
   
-## <a name="security"></a>безопасность  
+## <a name="security"></a>Безопасность  
  Настоятельно рекомендуется использовать полные имена сборок при регистрации типов в файлах `machine.config` и `app.config`. Если тип определен неоднозначно, загрузчик типов среды CLR ищет его в следующих местоположениях в заданном порядке:  
   
  Если сборка типа известна, загрузчик ищет в местах перенаправления файла конфигурации, в глобальном кэше сборок, в текущей сборке, используя данные конфигурации, и в базовой папке приложения. Если сборка неизвестна, загрузчик ищет в текущей сборке, в библиотеке mscorlib и в месте, возвращаемом обработчиком событий `TypeResolve`. Порядок поиска в среде CLR может быть изменен с помощью таких средств, как механизм пересылки типа и событие AppDomain.TypeResolve.  
   
  Злоумышленник может использовать порядок поиска в среде CLR и выполнить неавторизованный код. Использование полных (надежных) имен однозначно определяет тип и повышает безопасность системы.  
   
- Дополнительные сведения см. [в разделе Обнаружение сборок и <xref:System.AppDomain.TypeResolve>в среде выполнения](../../../deployment/how-the-runtime-locates-assemblies.md) .  
+ Дополнительные сведения см. [в разделе как среда выполнения находит сборки](../../../deployment/how-the-runtime-locates-assemblies.md) и <xref:System.AppDomain.TypeResolve> .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>
 - [Настройка и расширение среды выполнения с помощью поведений](../../../wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

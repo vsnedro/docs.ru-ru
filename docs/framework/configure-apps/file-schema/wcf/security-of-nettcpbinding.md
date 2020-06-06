@@ -3,21 +3,21 @@ title: <security> из <netTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 ms.openlocfilehash: aa01e906ddd2f15007c72bfc2a45122cfb15ba2c
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73736375"
 ---
-# <a name="security-of-nettcpbinding"></a>\<> безопасности \<netTcpBinding >
+# <a name="security-of-nettcpbinding"></a>\<security> из \<netTcpBinding>
 Определяет параметры безопасности для привязки.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<System. serviceModel >** ](system-servicemodel.md)\
-привязки &nbsp;&nbsp;&nbsp;&nbsp;[ **\<** ](bindings.md) >
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<netTcpBinding >** ](nettcpbinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Binding** >\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<security >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netTcpBinding>**](nettcpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,16 +35,16 @@ ms.locfileid: "73736375"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|режим|Необязательный. Задает тип применяемого механизма обеспечения безопасности. Ниже приведены допустимые значения. Значение по умолчанию — `Transport`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
+|mode|Необязательный параметр. Задает тип применяемого механизма обеспечения безопасности. Ниже приведены допустимые значения. Значение по умолчанию — `Transport`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут mode  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
-|Отсутствуют|Режим безопасности отключен.|  
-|Transport|Безопасность транспорта обеспечивается с помощью TLS через TCP или SPNego. Может потребоваться настроить службу с использованием SSL-сертификатов. Этот режим позволяет контролировать уровень защиты.|  
+|None|Режим безопасности отключен.|  
+|Транспорт|Безопасность транспорта обеспечивается с помощью TLS через TCP или SPNego. Может потребоваться настроить службу с использованием SSL-сертификатов. Этот режим позволяет контролировать уровень защиты.|  
 |Сообщение|Безопасность обеспечивается с помощью средств безопасности сообщений SOAP. По умолчанию текст сообщений SOAP шифруется и подписывается. Этот режим предоставляет множество функций, таких как сведения о доступности учетных данных службы для клиентов за пределами диапазона, об используемом наборе алгоритмов и об уровне защиты, применяемом к тексту сообщения. Проверка подлинности клиента выполняется один раз за сеанс, и результаты проверки сохраняются в кэше на протяжении всего сеанса.|  
 |TransportWithMessageCredential|Безопасность транспорта связана с безопасностью сообщения. Безопасность транспорта обеспечивается протоколом TLS через TCP, или SPNego, и гарантирует целостность, конфиденциальность и проверку подлинности сервера. Безопасность сообщений SOAP представляет проверку подлинности клиента. По умолчанию проверка подлинности клиента выполняется один раз за сеанс, и результаты проверки сохраняются в кэше на протяжении всего сеанса.|  
   
@@ -52,16 +52,16 @@ ms.locfileid: "73736375"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<> транспорта](transport-of-nettcpbinding.md)|Определяет параметры безопасности для данного транспорта. Это элемент типа <xref:System.ServiceModel.Configuration.TcpTransportSecurityElement>.|  
-|[сообщение \<](message-element-of-nettcpbinding.md)|Определяет параметры безопасности сообщения. Это элемент типа <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>.|  
+|[\<transport>](transport-of-nettcpbinding.md)|Определяет параметры безопасности для данного транспорта. Это элемент типа <xref:System.ServiceModel.Configuration.TcpTransportSecurityElement>.|  
+|[\<message>](message-element-of-nettcpbinding.md)|Определяет параметры безопасности сообщения. Это элемент типа <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|привязка|Элемент Binding [\<> NetTcpBinding](nettcpbinding.md).|  
+|binding|Элемент Binding объекта [\<netTcpBinding>](nettcpbinding.md) .|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Каждая из стандартных привязок предоставляет параметры для управления требованиями безопасности перемещения. Эти параметры, как правило, включают режим безопасности, определяющий, используется ли безопасность уровня сообщения или уровня транспорта, а также выбор типа учетных данных клиента. На основании предоставленного выбора параметров создается стек каналов с соответствующей безопасностью.  
   
  Предоставляемые системой привязки, поставляемые Windows Communication Foundation (WCF), представляют собой набор, отвечающий требованиям наиболее распространенных сценариев. Каждая из этих привязок позволяет задавать требования безопасности для некоторых конкретных целевых сценариев.  
@@ -78,4 +78,4 @@ ms.locfileid: "73736375"
 - [Привязки](../../../wcf/bindings.md)
 - [Настройка привязок, предоставляемых системой](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Использование привязок для настройки служб и клиентов](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [> привязки \<](bindings.md)
+- [\<binding>](bindings.md)

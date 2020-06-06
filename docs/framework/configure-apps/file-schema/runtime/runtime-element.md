@@ -10,18 +10,18 @@ helpviewer_keywords:
 - container tags, <runtime> element
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 ms.openlocfilehash: 3825ae7c3e35193cb835981600fe1ef83097cd2d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74430457"
 ---
-# <a name="runtime-element"></a>Элемент > среды выполнения \<
+# <a name="runtime-element"></a>Элемент \<runtime>
 
 Предоставляет сведения, используемые средой CLR для настройки приложений.
 
 [\<configuration>](../configuration-element.md)\
-> среды выполнения \<&nbsp;&nbsp;
+&nbsp;&nbsp;\<runtime>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,7 +36,7 @@ ms.locfileid: "74430457"
 
 ### <a name="attributes"></a>Атрибуты
 
-Нет
+Отсутствует.
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -61,26 +61,26 @@ ms.locfileid: "74430457"
 |[\<gcAllowVeryLargeObjects>](gcallowverylargeobjects-element.md)|На 64 разрядных платформах позволяет использовать массивы, размер которых превышает 2 гигабайта (ГБ).|
 |[\<gcConcurrent>](gcconcurrent-element.md)|Указывает, должна ли среда CLR выполнять сборку мусора параллельно.|
 |[\<GCCpuGroup>](gccpugroup-element.md)|Определяет, поддерживает ли сборка мусора несколько групп ЦП.|
-|[\<Гчеапаффинитиземаск >](gcheapaffinitizemask-element.md)|Определяет сходство между кучами сборки мусора и отдельными процессорами.|
-|[\<Гчеапкаунт >](gcheapcount-element.md)|Указывает число куч/потоков, используемых для сборки мусора сервера.|
-|[\<Гклохсрешолд >](gclohthreshold-element.md)|Задает пороговый размер, который заставляет сборщик мусора разместить объекты в куче больших объектов.|
-|[\<Гкноаффинитизе >](gcnoaffinitize-element.md)|Указывает, следует ли привязать потоки сборки мусора сервера с процессорами.|
+|[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)|Определяет сходство между кучами сборки мусора и отдельными процессорами.|
+|[\<GCHeapCount>](gcheapcount-element.md)|Указывает число куч/потоков, используемых для сборки мусора сервера.|
+|[\<GCLOHThreshold>](gclohthreshold-element.md)|Задает пороговый размер, который заставляет сборщик мусора разместить объекты в куче больших объектов.|
+|[\<GCNoAffinitize>](gcnoaffinitize-element.md)|Указывает, следует ли привязать потоки сборки мусора сервера с процессорами.|
 |[\<gcServer>](gcserver-element.md)|Указывает, выполняет ли среда CLR сборку мусора сервера.|
 |[\<generatePublisherEvidence>](generatepublisherevidence-element.md)|Указывает, использует ли среда выполнения политику разграничения доступа кода, используемую издателем.|
 |[\<legacyCorruptedStateExceptionsPolicy>](legacycorruptedstateexceptionspolicy-element.md)|Указывает, позволяет ли среда выполнения управляемому коду перехватывать нарушения прав доступа и другие исключения поврежденного состояния.|
 |[\<legacyImpersonationPolicy>](legacyimpersonationpolicy-element.md)|Указывает, что удостоверение Windows не проходит через асинхронные точки, независимо от параметров потока для контекста выполнения в текущем потоке.|
 |[\<loadfromRemoteSources>](loadfromremotesources-element.md)|Указывает, загружены ли сборки из удаленных источников как полностью доверенные.|
-|[\<NetFx40_LegacySecurityPolicy >](netfx40-legacysecuritypolicy-element.md)|Указывает, использует ли среда выполнения устаревшую политику разграничения доступа кода.|
-|[\<NetFx40_PInvokeStackResilience >](netfx40-pinvokestackresilience-element.md)|Указывает, исправляет ли автоматически среда выполнения неправильные объявления вызова неуправляемого кода во время выполнения за счет скорости перехода между управляемыми и неуправляемым кодом.|
-|[\<NetFx45_CultureAwareComparerGetHashCode_LongStrings >](netfx45-cultureawarecomparergethashcode-longstrings-element.md)|Определяет, использует ли среда выполнения постоянный объем памяти для вычисления хэш-кодов методом <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> .|
-|[\<Преферкоминстеадофремотинг >](prefercominsteadofmanagedremoting-element.md)|Указывает, что среда выполнения должна использовать COM-взаимодействие вместо удаленного взаимодействия через границы домена приложения.|
+|[\<NetFx40_LegacySecurityPolicy>](netfx40-legacysecuritypolicy-element.md)|Указывает, использует ли среда выполнения устаревшую политику разграничения доступа кода.|
+|[\<NetFx40_PInvokeStackResilience>](netfx40-pinvokestackresilience-element.md)|Указывает, исправляет ли автоматически среда выполнения неправильные объявления вызова неуправляемого кода во время выполнения за счет скорости перехода между управляемыми и неуправляемым кодом.|
+|[\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](netfx45-cultureawarecomparergethashcode-longstrings-element.md)|Определяет, использует ли среда выполнения постоянный объем памяти для вычисления хэш-кодов методом <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> .|
+|[\<PreferComInsteadOfRemoting>](prefercominsteadofmanagedremoting-element.md)|Указывает, что среда выполнения должна использовать COM-взаимодействие вместо удаленного взаимодействия через границы домена приложения.|
 |[\<relativeBindForResources>](relativebindforresources-element.md)|Оптимизирует поиск вспомогательных сборок.|
 |[\<shadowCopyVerifyByTimeStamp>](shadowcopyverifybytimestamp-element.md)|Указывает, использует ли теневое копирование поведение при запуске по умолчанию, представленное в .NET Framework 4, или возвращается к поведению при запуске более ранних версий .NET Framework.|
 |[\<supportPortability>](supportportability-element.md)|Указывает, что приложение может ссылаться на ту же сборку в двух различных реализациях .NET Framework, отключая поведение по умолчанию, которое рассматривает сборки как эквивалент для переносимости приложения.|
 |[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Указывает сведения о конфигурации кэша объектов в памяти, используемого по умолчанию.|
-|[\<Thread_UseAllCpuGroups >](thread-useallcpugroups-element.md)|Указывает, распределяет ли среда выполнения управляемые потоки во всех группах ЦП.|
+|[\<Thread_UseAllCpuGroups>](thread-useallcpugroups-element.md)|Указывает, распределяет ли среда выполнения управляемые потоки во всех группах ЦП.|
 |[\<ThrowUnobservedTaskExceptions>](throwunobservedtaskexceptions-element.md)|Определяет, будут ли необработанные исключения задачи завершать выполняющийся процесс.|
-|[\<TimeSpan_LegacyFormatMode >](timespan-legacyformatmode-element.md)|Указывает, использует ли среда выполнения устаревшее форматирование для значений <xref:System.TimeSpan>.|
+|[\<TimeSpan_LegacyFormatMode>](timespan-legacyformatmode-element.md)|Указывает, использует ли среда выполнения устаревшее форматирование для значений <xref:System.TimeSpan>.|
 |[\<useLegacyJit>](uselegacyjit-element.md)|Определяет, использует ли среда CLR устаревший 64-разрядный JIT-компилятор для JIT-компиляции.|
 |[\<UseRandomizedStringHashAlgorithm>](userandomizedstringhashalgorithm-element.md)|Указывает, вычисляет ли среда выполнения хэш-коды для строк для каждого домена приложения.|
 |[\<UseSmallInternalThreadStacks>](usesmallinternalthreadstacks-element.md)|Запрашивает использование средой выполнения явных размеров стека при создании определенных потоков, используемых для внутренних целей, вместо размер стека по умолчанию.|
@@ -93,11 +93,11 @@ ms.locfileid: "74430457"
 
 ## <a name="remarks"></a>Примечания
 
-Дочерние элементы в разделе [среды выполнения\<>](runtime-element.md) файла конфигурации используются средой CLR для настройки способа выполнения приложения. Например, элемент [\<gcServer >](gcserver-element.md) определяет, использует ли сборщик мусора рабочую станцию для сборки мусора рабочей станции или сборки мусора сервера, элемент [\<UseRandomizedStringHashAlgorithm >](userandomizedstringhashalgorithm-element.md) определяет, вычисляет ли среда CLR хэш-коды для каждого приложения или домена приложения, а элемент `AppContextSwitchOverrides` позволяет пользователям библиотек выбирать или отказаться от измененных функциональных возможностей, предоставляемых библиотекой.
+Дочерние элементы в [\<runtime>](runtime-element.md) разделе файла конфигурации используются средой CLR для настройки способа выполнения приложения. Например, [\<gcServer>](gcserver-element.md) элемент определяет, использует ли сборщик мусора рабочую станцию для сборки мусора рабочей станции или сборки мусора сервера, [\<UseRandomizedStringHashAlgorithm>](userandomizedstringhashalgorithm-element.md) элемент определяет, вычисляет ли среда CLR хэш-коды для каждого приложения или домена приложения, и `AppContextSwitchOverrides` элемент позволяет пользователям библиотек выбрать или отказаться от измененных функциональных возможностей, предоставляемых библиотекой.
 
-Элементы в разделе [> среды выполнения\<](runtime-element.md) автоматически считываются средой CLR при запуске приложения. Можно также определить файл конфигурации для домена приложения, не используемого по умолчанию, указав его имя в свойстве <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType>. его параметры считываются автоматически при загрузке домена приложения. Если когда-либо нужно, необходимо напрямую считывать параметры в разделе [> среды выполнения\<](runtime-element.md) в файле конфигурации приложения.
+Элементы в [\<runtime>](runtime-element.md) разделе автоматически считываются средой CLR при запуске приложения. Можно также определить файл конфигурации для домена приложения, не используемого по умолчанию, указав его имя для <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType> Свойства. его параметры считываются автоматически при загрузке домена приложения. Если когда-либо в любом случае, необходимо напрямую считывать параметры в [\<runtime>](runtime-element.md) разделе файла конфигурации приложения.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

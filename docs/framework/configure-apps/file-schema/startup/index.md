@@ -7,10 +7,10 @@ helpviewer_keywords:
 - configuration schema [.NET Framework], startup settings
 ms.assetid: 03de6972-442a-4648-9f3e-efa654e3b949
 ms.openlocfilehash: e5f9c9af64ff38e7c0f1f26ccab039261b052e30
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "61701519"
 ---
 # <a name="startup-settings-schema"></a>Схема параметров запуска
@@ -19,9 +19,9 @@ ms.locfileid: "61701519"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<requiredRuntime>](requiredruntime-element.md)|Указывает, что приложение поддерживает только версию 1.0 среды CLR. Приложения, созданные с помощью среды выполнения версии 1.1, должны использовать элемент **\<supportedRuntime>**.|  
+|[\<requiredRuntime>](requiredruntime-element.md)|Указывает, что приложение поддерживает только версию 1.0 среды CLR. Приложения, созданные с помощью среды выполнения версии 1,1, должны использовать **\<supportedRuntime>** элемент.|  
 |[\<supportedRuntime>](supportedruntime-element.md)|Указывает, какие версии среды CLR поддерживает приложение.|  
-|[\<startup>](startup-element.md)|Содержит элементы **\<requiredRuntime>** и **\<supportedRuntime>**.|  
+|[\<startup>](startup-element.md)|Содержит **\<requiredRuntime>** элементы и **\<supportedRuntime>** .|  
   
 ## <a name="see-also"></a>См. также
 

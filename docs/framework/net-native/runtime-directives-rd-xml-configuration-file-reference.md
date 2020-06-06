@@ -3,10 +3,10 @@ title: Ссылка на файл конфигурации директив ср
 ms.date: 03/30/2017
 ms.assetid: 8241523f-d8e1-4fb6-bf6a-b29bfe07b38a
 ms.openlocfilehash: e74d34693446cca645003a9f93bc1777849e3182
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "76738404"
 ---
 # <a name="runtime-directives-rdxml-configuration-file-reference"></a>Ссылка на файл конфигурации директив среды выполнения (rd.xml)
@@ -150,7 +150,7 @@ ms.locfileid: "76738404"
 
 - `MarshalDelegate`. Определяет политики для маршалинга типов делегатов как указателей функции на машинный код.
 
-- `MarshalStructure`. Определяет политику для маршалинга структуры в машинный код.
+- `MarshalStructure` . Определяет политику для маршалинга структуры в машинный код.
 
 Параметры, связанные с этими типами политики:
 
@@ -445,7 +445,7 @@ ms.locfileid: "76738404"
 
 #### <a name="the-effect-of-xmlserializer-datacontractserializer-and-datacontractjsonserializer-policies"></a>Воздействие политик XmlSerializer, DataContractSerializer и DataContractJsonSerializer
 
-В отличие от политики `Serialize`, которая предназначена для сериализаторов на основе отражения, политики <xref:System.Xml.Serialization.XmlSerializer>, <xref:System.Runtime.Serialization.DataContractSerializer>и <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> используются для включения набора сериализаторов, известных цепочке инструментов .NET Native. Эти сериализаторы не реализуются с помощью отражения, но наборы типов, которые могут быть сериализованы во время выполнения определяются так же, как типы, которые могут отражаться.
+В отличие от `Serialize` политики, которая предназначена для сериализаторов на основе отражения, <xref:System.Xml.Serialization.XmlSerializer> <xref:System.Runtime.Serialization.DataContractSerializer> политики, и <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> используются для включения набора сериализаторов, известных цепочке инструментов .NET Native. Эти сериализаторы не реализуются с помощью отражения, но наборы типов, которые могут быть сериализованы во время выполнения определяются так же, как типы, которые могут отражаться.
 
 Применение одной из этих политик для типа позволяет сериализовать тип с помощью соответствующего сериализатора. Все типы, которые обработчик сериализации может статически определить, как нуждающиеся в сериализации, будут также сериализуемыми.
 
@@ -453,7 +453,7 @@ ms.locfileid: "76738404"
 
 Подробнее см. в подразделе "Различия в сериализаторах" раздела [Миграция приложения для Магазина Windows в .NET Native](migrating-your-windows-store-app-to-net-native.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
-- [Отражение и .NET Native](reflection-and-net-native.md)
+- [Отражение и машинный код .NET](reflection-and-net-native.md)

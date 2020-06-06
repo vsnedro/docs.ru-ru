@@ -3,20 +3,20 @@ title: <behavior> из <endpointBehaviors>
 ms.date: 03/30/2017
 ms.assetid: b90ca3bc-3c22-4174-b903-e3a39898bd27
 ms.openlocfilehash: 489678a5adeae3965acae90a847c4b087478354d
-ms.sourcegitcommit: fbb8a593a511ce667992502a3ce6d8f65c594edf
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74140812"
 ---
-# <a name="behavior-of-endpointbehaviors"></a>> \<поведения \<endpointBehaviors >
+# <a name="behavior-of-endpointbehaviors"></a>\<behavior> из \<endpointBehaviors>
 Элемент `behavior` содержит коллекцию параметров поведения конечной точки. Каждое поведение индексируется по атрибуту `name`. Конечные точки могут ссылаться на каждое поведение по этому имени. Начиная с .NET Framework 4, привязки и поведения не обязательно должны иметь имя. Дополнительные сведения о конфигурации по умолчанию и привязках и поведении, которые не имеют имен, см. в разделе [упрощенная конфигурация](../../../wcf/simplified-configuration.md) и [упрощенная конфигурация для служб WCF](../../../wcf/samples/simplified-configuration-for-wcf-services.md).  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<System. serviceModel >** ](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<поведения**](behaviors.md) >\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<endpointBehaviors >** ](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<**поведения** >  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<behavior>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,27 +37,27 @@ ms.locfileid: "74140812"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Уникальная строка, содержащая имя конфигурации поведения. Это значение является заданной пользователем строкой, которая должна быть уникальной, поскольку она действует как строка идентификации для элемента. Начиная с .NET Framework 4, привязки и поведения не обязательно должны иметь имя. Дополнительные сведения о конфигурации по умолчанию и привязках и поведении, которые не имеют имен, см. в разделе [упрощенная конфигурация](../../../wcf/simplified-configuration.md) и [упрощенная конфигурация для служб WCF](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|  
+|name|Уникальная строка, содержащая имя конфигурации поведения. Это значение является заданной пользователем строкой, которая должна быть уникальной, поскольку она действует как строка идентификации для элемента. Начиная с .NET Framework 4, привязки и поведения не обязательно должны иметь имя. Дополнительные сведения о конфигурации по умолчанию и привязках и поведении, которые не имеют имен, см. в разделе [упрощенная конфигурация](../../../wcf/simplified-configuration.md) и [упрощенная конфигурация для служб WCF](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<clientCredentials >](clientcredentials.md)|Задает учетные данные, используемые для проверки подлинности клиента при подключении к службе.|  
-|[\<Каллбаккдебуг >](callbackdebug.md)|Указывает отладку службы для объекта обратного вызова Windows Communication Foundation (WCF).|  
-|[\<Каллбакктимеаутс >](callbacktimeouts.md)|Задает время ожидания для обратного вызова клиента.|  
-|[\<Клиентвиа >](clientvia.md)|Задает маршрут, по которому должно быть передано сообщение.|  
-|[\<dataContractSerializer >](datacontractserializer.md)|Содержит данные конфигурации для DataContractSerializer.|  
-|[\<Диспатчерсинчронизатион >](dispatchersynchronization.md)|Указывает поведение конечной точки, которое позволяет службе отправлять ответы в асинхронном режиме.|  
-|[\<Енаблевебскрипт >](enablewebscript.md)|Включает поведение конечной точки, позволяющее использовать службу с веб-страниц ASP.NET с поддержкой технологии AJAX. Поведение следует использовать только в сочетании с \<webHttpBinding > стандартной привязкой либо с элементом привязки \<Вебмессажеенкодинг >.|  
-|[\<Ендпоинтдисковери >](endpointdiscovery.md)|Указывает различные параметры обнаружения для конечной точки, такие как возможность обнаружения, области и любые пользовательские модули для ее метаданных.|  
-|[\<Соаппроцессинг >](soapprocessing.md)|Определяет поведение конечной точки клиента, используемое для маршалинга сообщений между различными типами привязок и версиями сообщения.|  
-|[\<Синчронаусрецеиве >](synchronousreceive-element.md)|Задает поведение времени выполнения для получения сообщений в службе или клиентском приложении. Он не имеет атрибутов или дочерних элементов.|  
-|[\<Трансактедбатчинг >](transactedbatching.md)|Указывает, поддерживается ли объединение транзакций для операций получения.|  
-|[> \<HTTP](webhttp.md)|Задает WebHttpBehavior в конечной точке посредством настройки конфигурации. Это поведение при использовании в сочетании с привязкой \<webHttpBinding > Standard, включает модель веб-программирования для службы WCF.|  
+|[\<clientCredentials>](clientcredentials.md)|Задает учетные данные, используемые для проверки подлинности клиента при подключении к службе.|  
+|[\<callbackDebug>](callbackdebug.md)|Указывает отладку службы для объекта обратного вызова Windows Communication Foundation (WCF).|  
+|[\<callbackTimeouts>](callbacktimeouts.md)|Задает время ожидания для обратного вызова клиента.|  
+|[\<clientVia>](clientvia.md)|Задает маршрут, по которому должно быть передано сообщение.|  
+|[\<dataContractSerializer>](datacontractserializer.md)|Содержит данные конфигурации для DataContractSerializer.|  
+|[\<dispatcherSynchronization>](dispatchersynchronization.md)|Указывает поведение конечной точки, которое позволяет службе отправлять ответы в асинхронном режиме.|  
+|[\<enableWebScript>](enablewebscript.md)|Включает поведение конечной точки, позволяющее использовать службу с веб-страниц ASP.NET с поддержкой технологии AJAX. Поведение следует использовать только в сочетании со \<webHttpBinding> стандартной привязкой или с \<webMessageEncoding> элементом Binding.|  
+|[\<endpointDiscovery>](endpointdiscovery.md)|Указывает различные параметры обнаружения для конечной точки, такие как возможность обнаружения, области и любые пользовательские модули для ее метаданных.|  
+|[\<soapProcessing>](soapprocessing.md)|Определяет поведение конечной точки клиента, используемое для маршалинга сообщений между различными типами привязок и версиями сообщения.|  
+|[\<synchronousReceive>](synchronousreceive-element.md)|Задает поведение времени выполнения для получения сообщений в службе или клиентском приложении. Он не имеет атрибутов или дочерних элементов.|  
+|[\<transactedBatching>](transactedbatching.md)|Указывает, поддерживается ли объединение транзакций для операций получения.|  
+|[\<webHttp>](webhttp.md)|Задает WebHttpBehavior в конечной точке посредством настройки конфигурации. Такое поведение при использовании в сочетании со \<webHttpBinding> стандартной привязкой включает в себя модель веб-программирования для службы WCF.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<endpointBehaviors >](endpointbehaviors.md)|Коллекция элементов поведения конечной точки.|
+|[\<endpointBehaviors>](endpointbehaviors.md)|Коллекция элементов поведения конечной точки.|

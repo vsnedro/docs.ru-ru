@@ -4,19 +4,19 @@ ms.date: 03/30/2017
 ms.assetid: f11a631d-4094-4e11-bb03-4ede74b30281
 author: BrucePerlerMS
 ms.openlocfilehash: 017309436660991c69da569e9cc4219e842ecaa3
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70251879"
 ---
-# <a name="securitytokenhandlers"></a>\<securityTokenHandlers >
+# \<securityTokenHandlers>
 Указывает коллекцию обработчиков маркеров безопасности, зарегистрированных в конечной точке.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. identityModel**](system-identitymodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<identityConfiguration >** ](identityconfiguration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<securityTokenHandlers >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<securityTokenHandlers>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,7 +36,7 @@ ms.locfileid: "70251879"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Указывает имя коллекции обработчиков маркеров. Платформа принимает только те значения, которые распознаются платформой: "ActAs" и "OnBehalfOf". Если коллекции обработчиков маркеров указаны с одним из этих имен, коллекция будет использоваться при обработке маркеров ActAs или OnBehalfOf соответственно.|  
+|name|Указывает имя коллекции обработчиков маркеров. Платформа принимает только те значения, которые распознаются платформой: "ActAs" и "OnBehalfOf". Если коллекции обработчиков маркеров указаны с одним из этих имен, коллекция будет использоваться при обработке маркеров ActAs или OnBehalfOf соответственно.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -45,17 +45,17 @@ ms.locfileid: "70251879"
 |[\<add>](add.md)|Добавляет обработчик маркеров безопасности в коллекцию обработчиков маркеров.|  
 |[\<clear>](clear.md)|Удаляет все обработчики маркеров безопасности из коллекции обработчиков маркеров.|  
 |[\<remove>](remove.md)|Удаляет обработчик маркера безопасности из коллекции обработчиков маркеров.|  
-|[\<Секурититокенхандлерконфигуратион >](securitytokenhandlerconfiguration.md)|Предоставляет конфигурацию для коллекции обработчиков маркеров.|  
+|[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Предоставляет конфигурацию для коллекции обработчиков маркеров.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<identityConfiguration >](identityconfiguration.md)|Задает параметры удостоверений уровня службы.|  
+|[\<identityConfiguration>](identityconfiguration.md)|Задает параметры удостоверений уровня службы.|  
   
 ## <a name="remarks"></a>Примечания  
  В конфигурации службы можно указать одну или несколько именованных коллекций обработчиков маркеров безопасности. Имя коллекции можно указать с помощью `name` атрибута. Единственными именами, которые обрабатывает платформа, являются "ActAs" и "OnBehalfOf". Если в этих коллекциях есть обработчики, они используются службой маркеров безопасности (STS) вместо обработчиков по умолчанию при обработке `ActAs` и `OnBehalfOf` токенах.  
   
- По умолчанию <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler>коллекция заполняется следующими типами обработчиков:, <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>, <xref:System.IdentityModel.Tokens.KerberosSecurityTokenHandler>, <xref:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler> <xref:System.IdentityModel.Tokens.RsaSecurityTokenHandler> <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler>,, и <xref:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler>. Коллекцию можно изменить с помощью `<add>`элементов, `<remove>`и `<clear>` . Необходимо убедиться, что в коллекции существует только один обработчик любого определенного типа. Например, если создать производный обработчик от <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> класса, то либо обработчик, <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> либо может быть настроен в одной коллекции, но не в обоих.  
+ По умолчанию коллекция заполняется следующими типами обработчиков: <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> , <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> ,,,, <xref:System.IdentityModel.Tokens.KerberosSecurityTokenHandler> <xref:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler> <xref:System.IdentityModel.Tokens.RsaSecurityTokenHandler> <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> и <xref:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler> . Коллекцию можно изменить с помощью `<add>` `<remove>` элементов, и `<clear>` . Необходимо убедиться, что в коллекции существует только один обработчик любого определенного типа. Например, если создать производный обработчик от <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> класса, то либо обработчик, либо <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> может быть настроен в одной коллекции, но не в обоих.  
   
- Используйте элемент `<securityTokenHandlerConfiguration>` , чтобы указать параметры конфигурации для обработчиков в коллекции. Параметры, заданные с помощью этого элемента, [ \<](identityconfiguration.md) переопределяют указанные в службе элементы с помощью элемента identityConfiguration >. Некоторые обработчики (включая несколько встроенных типов обработчиков) могут поддерживать дополнительную конфигурацию через дочерний элемент `<add>` элемента. Параметры, заданные для обработчика, переопределяют эквивалентные параметры, указанные в коллекции или службе.
+ Используйте `<securityTokenHandlerConfiguration>` элемент, чтобы указать параметры конфигурации для обработчиков в коллекции. Параметры, заданные с помощью этого элемента, переопределяют указанные в службе элементы с помощью [\<identityConfiguration>](identityconfiguration.md) элемента. Некоторые обработчики (включая несколько встроенных типов обработчиков) могут поддерживать дополнительную конфигурацию через дочерний элемент `<add>` элемента. Параметры, заданные для обработчика, переопределяют эквивалентные параметры, указанные в коллекции или службе.

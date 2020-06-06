@@ -1,5 +1,5 @@
 ---
-title: элемент <clear> для NameValueSectionHandler и DictionarySectionHandler
+title: <clear>элемент для NameValueSectionHandler и DictionarySectionHandler
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/clear
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - <clear> Element
 ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
 ms.openlocfilehash: f6d860f35d22002030ffa3d09dd0d8a96116bf5e
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "77214743"
 ---
-# <a name="clear-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<Clear > элемента для NameValueSectionHandler и DictionarySectionHandler
+# <a name="clear-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<clear>элемент для NameValueSectionHandler и DictionarySectionHandler
 
 Удаляет все ранее определенные параметры в разделе.
 
-[ **\<configuration>** ](configuration-element.md)\
-&nbsp;&nbsp;[ **\<sectionName >** ](custom-element-2.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<clear >**
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,21 +36,21 @@ ms.locfileid: "77214743"
 
 |     | Описание |
 | --- | ------------|
-| [ **\<sectionName >** Дерев](custom-element-2.md) | Определяет параметры для пользовательских разделов конфигурации, использующих классы <xref:System.Configuration.NameValueSectionHandler> и <xref:System.Configuration.DictionarySectionHandler>. |
+| [**\<sectionName>** Дерев](custom-element-2.md) | Определяет параметры для пользовательских разделов конфигурации, использующих <xref:System.Configuration.NameValueSectionHandler> <xref:System.Configuration.DictionarySectionHandler> классы и. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
-Нет
+None
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Можно использовать элемент **\<clear >** , чтобы удалить из приложения все параметры, которые были определены на более высоком уровне в иерархии файлов конфигурации.
+С помощью элемента можно **\<clear>** удалить из приложения все параметры, которые были определены на более высоком уровне в иерархии файлов конфигурации.
 
 ## <a name="example"></a>Пример
 
-В этом примере определяется файл конфигурации компьютера и файл конфигурации приложения, а также демонстрируется использование элемента **\<clear >** в файле конфигурации приложения для очистки разделов, ранее определенных в файле конфигурации компьютера.
+В этом примере определяется файл конфигурации компьютера и файл конфигурации приложения, а также демонстрируется использование **\<clear>** элемента в файле конфигурации приложения для очистки разделов, ранее определенных в файле конфигурации компьютера.
 
-В следующем коде файла конфигурации компьютера объявляется раздел **\<мисектион >** :
+Следующий код файла конфигурации компьютера объявляет раздел **\<mySection>** :
 
 ```xml
 <!-- Machine.config file -->
@@ -65,7 +65,7 @@ ms.locfileid: "77214743"
 </configuration>
 ```
 
-Следующий код файла конфигурации приложения удаляет все параметры из **\<мисектион >** . Приложение не может получить параметры, которые были объявлены в, в разделе **\<мисектион >** файла конфигурации компьютера.
+Следующий код файла конфигурации приложения удаляет все параметры из **\<mySection>** . Приложение не может получить параметры, которые были объявлены в в **\<mySection>** разделе файла конфигурации компьютера.
 
 ```xml
 <!-- Application configuration file -->
@@ -80,6 +80,6 @@ ms.locfileid: "77214743"
 
 Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , которые не находятся на уровне каталога приложений.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации для .NET Framework](index.md)

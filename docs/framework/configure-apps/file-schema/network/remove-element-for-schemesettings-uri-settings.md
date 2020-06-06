@@ -3,19 +3,19 @@ title: Элемент <remove> для schemeSettings (параметры URI)
 ms.date: 03/30/2017
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
 ms.openlocfilehash: faf254174527ea74638442a139841eb2365d1e5d
-ms.sourcegitcommit: 7f8eeef060ddeb2cabfa52843776faf652c5a1f5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74089150"
 ---
-# <a name="remove-element-for-schemesettings-uri-settings"></a>\<удалить элемент > для schemeSettings (Параметры URI)
+# <a name="remove-element-for-schemesettings-uri-settings"></a>Элемент \<remove> для schemeSettings (параметры URI)
 Удаляет параметр схемы для имени схемы.  
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> uri**](uri-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<schemeSettings >** ](schemesettings-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<удалить >**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,7 +32,7 @@ ms.locfileid: "74089150"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Имя схемы, к которой применяется этот параметр. Поддерживаются только значения Name = "http" и Name = "HTTPS".|  
+|name|Имя схемы, к которой применяется этот параметр. Поддерживаются только значения Name = "http" и Name = "HTTPS".|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
@@ -41,10 +41,10 @@ ms.locfileid: "74089150"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент \<schemeSettings> (параметры URI)](schemesettings-element-uri-settings.md)|Определяет, как <xref:System.Uri> анализируется для определенных схем.|  
+|[\<schemeSettings>Элемент (Параметры URI)](schemesettings-element-uri-settings.md)|Определяет, как <xref:System.Uri> анализируется для определенных схем.|  
   
-## <a name="remarks"></a>Заметки  
- По умолчанию класс <xref:System.Uri?displayProperty=nameWithType> отменяет escape-символы в процентах от разделителей закодированного пути перед выполнением сжатия пути. Это было реализовано в качестве механизма безопасности для атак, подобных следующим:  
+## <a name="remarks"></a>Примечания  
+ По умолчанию класс отменяет <xref:System.Uri?displayProperty=nameWithType> escape-символы в процентах, закодированные разделителями, перед выполнением сжатия пути. Это было реализовано в качестве механизма безопасности для атак, подобных следующим:  
   
  `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`  
   
@@ -62,7 +62,7 @@ ms.locfileid: "74089150"
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
- В следующем примере показана конфигурация, используемая классом <xref:System.Uri>, который удаляет все параметры схемы для схемы HTTP.  
+ В следующем примере показана конфигурация, используемая <xref:System.Uri> классом, который удаляет все параметры схемы для схемы HTTP.  
   
 ```xml  
 <configuration>  

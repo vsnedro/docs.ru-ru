@@ -3,10 +3,10 @@ title: Сериализация и метаданные
 ms.date: 03/30/2017
 ms.assetid: 619ecf1c-1ca5-4d66-8934-62fe7aad78c6
 ms.openlocfilehash: cc9adf0e6627ef3190e74fea5d4f0f3afd581811
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "81389220"
 ---
 # <a name="serialization-and-metadata"></a>Сериализация и метаданные
@@ -15,7 +15,7 @@ ms.locfileid: "81389220"
   
 - Сериализиторы сторонних поставщиков на основе отражения. Они требуют изменений в файле директив среды выполнения и рассматриваются в следующем разделе.  
   
-- Неотражающие сериализаторы, найденные в библиотеке класса .NET Framework. Они могут потребовать внесения изменений в файл директив среды выполнения и обсуждаются в разделе [Сериализаторы Майкрософт](#Microsoft).  
+- В библиотеке классов .NET Framework найдены сериализаторы, не основанные на отражении. Они могут потребовать внесения изменений в файл директив среды выполнения и обсуждаются в разделе [Сериализаторы Майкрософт](#Microsoft).  
   
 <a name="ThirdParty"></a>
 ## <a name="third-party-serializers"></a>Сериализаторы сторонних поставщиков
@@ -28,7 +28,7 @@ ms.locfileid: "81389220"
 <Namespace Name="App.Models" Serialize="Required PublicAndInternal" />  
 ```  
   
- Для получения информации о синтаксисе, используемом в примере, с [ \<>м.](namespace-element-net-native.md)  
+ Сведения о синтаксисе, используемом в примере, см. в разделе [ \<Namespace> element](namespace-element-net-native.md).  
   
 <a name="Microsoft"></a>
 ## <a name="microsoft-serializers"></a>Сериализаторы Microsoft
@@ -37,15 +37,15 @@ ms.locfileid: "81389220"
   
 ### <a name="typeof-used-in-the-constructor"></a>TypeOf используется в конструкторе
 
- Если вы называете конструктора этих классов сериализации и включаете в вызов метода оператора [типофа,](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) **вам не нужно выполнять дополнительную работу.** Например, в каждом из следующих вызовов конструктора класса сериализации ключевое слово `typeof`используется как часть выражения, переданного в конструктор.  
+ Если вызвать конструктор этих классов сериализации и включить в вызов метода оператор C# [typeof](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) , нет необходимости **выполнять дополнительную работу**. Например, в каждом из следующих вызовов конструктора класса сериализации ключевое слово `typeof`используется как часть выражения, переданного в конструктор.  
   
  [!code-csharp[ProjectN#5](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#5)]  
   
- Компилятор .NET Native будет автоматически обрабатывать этот код.  
+ Компилятор .NET Native будет автоматически выполнять этот код.  
   
 ### <a name="typeof-used-outside-the-constructor"></a>TypeOf, использованный за пределами конструктора
 
- Если вы называете конструктора этих классов сериализации и используете оператора [типофа](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) Сз вне выражения, поставляемого на параметр конструктора, <xref:System.Type> как в следующем коде, компилятор .NET Native не может решить тип:  
+ При вызове конструктора этих классов сериализации и использовании оператора C# [typeof](../../csharp/language-reference/operators/type-testing-and-cast.md#typeof-operator) за пределами выражения, переданного в параметр конструктора <xref:System.Type> , как показано в следующем коде, компилятору .NET Native не удается разрешить тип:  
   
  [!code-csharp[ProjectN#6](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#6)]  
   
@@ -55,21 +55,21 @@ ms.locfileid: "81389220"
 <Type Name="DataSet" Browse="Required Public" />  
 ```  
   
- Аналогичным образом, если вы вызываете конструктора, <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.Type%5B%5D%29> <xref:System.Type> например, и предоставляете массив дополнительных объектов для сериализации, как в следующем коде, компилятор .NET Native не может решить эти типы.  
+ Аналогичным образом, если вызвать конструктор, например, <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.Type%5B%5D%29> и предоставить массив дополнительных <xref:System.Type> объектов для сериализации, как показано в следующем коде, компилятор .NET Native не может разрешить эти типы.  
   
  [!code-csharp[ProjectN#7](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#7)]  
   
-Добавление записей, таких как следующие для каждого типа, в файл директив времени выполнения:  
+Добавьте следующие записи для каждого типа в файл директив среды выполнения:  
   
 ```xml  
 <Type Name="t" Browse="Required Public" />  
 ```  
   
-Для получения информации о синтаксисе, используемом в примере, см [ \<>.](type-element-net-native.md)  
+Сведения о синтаксисе, используемом в примере, см. в разделе [ \<Type> element](type-element-net-native.md).  
   
 ## <a name="see-also"></a>См. также
 
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
-- [\<Элемент типа>](type-element-net-native.md)
-- [\<Названиепространства> Элемент](namespace-element-net-native.md)
+- [\<Type>Дерев](type-element-net-native.md)
+- [\<Namespace>Дерев](namespace-element-net-native.md)

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - <sectionGroup> Element
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 ms.openlocfilehash: eb221027470fe6e485f8fcc4b939b71e4f219712
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "77215261"
 ---
-# <a name="sectiongroup-element-for-configsections"></a>элемент \<sectionGroup > для \<configSections >
+# <a name="sectiongroup-element-for-configsections"></a>Элемент \<sectionGroup> для \<configSections>
 
 Определяет пространство имен для разделов конфигурации.
 
-[ **\<configuration>** ](configuration-element.md)\
-&nbsp;&nbsp;[ **\<configSections >** ](configsections-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<sectionGroup >**
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,17 +40,17 @@ ms.locfileid: "77215261"
 
 |     | Описание |
 | --- | ----------- |
-| [ **\<configSections >** Дерев](configsections-element-for-configuration.md) | Содержит раздел конфигурации и объявления пространств имен. |
+| [**\<configSections>** Дерев](configsections-element-for-configuration.md) | Содержит раздел конфигурации и объявления пространств имен. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
 |     | Описание |
 | --- | ----------- |
-| [ **\<разделе >** ](section-element.md) | Содержит объявление раздела конфигурации. |
+| [**\<section>**](section-element.md) | Содержит объявление раздела конфигурации. |
 
 ## <a name="remarks"></a>Примечания
 
-Объявление группы разделов создает тег контейнера для разделов конфигурации и гарантирует отсутствие конфликтов имен с разделами конфигурации, определенными другими пользователями. Элементы **\<sectionGroup >** можно вкладывать друг в друга.
+Объявление группы разделов создает тег контейнера для разделов конфигурации и гарантирует отсутствие конфликтов имен с разделами конфигурации, определенными другими пользователями. Элементы можно вкладывать **\<sectionGroup>** друг в друга.
 
 ## <a name="example"></a>Пример
 
@@ -76,6 +76,6 @@ ms.locfileid: "77215261"
 
 Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , которые не находятся на уровне каталога приложений.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации для .NET Framework](index.md)

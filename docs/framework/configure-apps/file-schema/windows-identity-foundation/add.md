@@ -4,20 +4,20 @@ ms.date: 03/30/2017
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
 author: BrucePerlerMS
 ms.openlocfilehash: 83ba51cbbd5100bf7412f9914a270cac88f7faa1
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73973805"
 ---
-# <a name="add"></a>\<add>
+# \<add>
 Добавляет указанный обработчик маркеров безопасности в коллекцию обработчиков маркеров.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<System. identityModel >** ](system-identitymodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<identityConfiguration >** ](identityconfiguration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<securityTokenHandlers >** ](securitytokenhandlers.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<добавить >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,25 +41,25 @@ ms.locfileid: "73973805"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|тип|Имя типа CLR обработчика токенов, который необходимо добавить. Дополнительные сведения об указании атрибута `type` см. в разделе [ссылки на пользовательские типы](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references).|  
+|type|Имя типа CLR обработчика токенов, который необходимо добавить. Дополнительные сведения об указании `type` атрибута см. в разделе [ссылки на пользовательские типы](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<samlSecurityTokenRequirement >](samlsecuritytokenrequirement.md)|Предоставляет конфигурацию для класса <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler>, класса <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> или производного класса любого из этих классов.|  
-|[\<Сессионтокенрекуиремент >](sessiontokenrequirement.md)|Предоставляет конфигурацию для класса <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> или производных классов.|  
-|[\<Усернамесекурититокенхандлеррекуиремент >](usernamesecuritytokenhandlerrequirement.md)|Предоставляет конфигурацию для класса <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> или производных классов.|  
-|[\<x509SecurityTokenHandlerRequirement >](x509securitytokenhandlerrequirement.md)|Предоставляет необязательную конфигурацию для класса <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> или производных классов.|  
+|[\<samlSecurityTokenRequirement>](samlsecuritytokenrequirement.md)|Предоставляет конфигурацию для <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> класса, <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> класса или производного класса любого из этих классов.|  
+|[\<sessionTokenRequirement>](sessiontokenrequirement.md)|Предоставляет конфигурацию для <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> класса или производных классов.|  
+|[\<userNameSecurityTokenHandlerRequirement>](usernamesecuritytokenhandlerrequirement.md)|Предоставляет конфигурацию для <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> класса или производных классов.|  
+|[\<x509SecurityTokenHandlerRequirement>](x509securitytokenhandlerrequirement.md)|Предоставляет необязательную конфигурацию для <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> класса или производных классов.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<securityTokenHandlers >](securitytokenhandlers.md)|Указывает коллекцию обработчиков маркеров безопасности, зарегистрированных в конечной точке.|  
+|[\<securityTokenHandlers>](securitytokenhandlers.md)|Указывает коллекцию обработчиков маркеров безопасности, зарегистрированных в конечной точке.|  
   
-## <a name="remarks"></a>Заметки  
- Элемент `<add>` может принимать один дочерний элемент, указывающий конфигурацию для обработчика маркеров. Это зависит от того, поддерживает ли этот компонент класс обработчика, на который ссылается атрибут `type` элемента `<add>`. Классы обработчиков маркеров, которые предоставляют эту функцию, должны предоставлять конструктор, принимающий объект <xref:System.Xml.XmlElement>.  
+## <a name="remarks"></a>Примечания  
+ `<add>`Элемент может принимать один дочерний элемент, указывающий конфигурацию для обработчика маркеров. Это зависит от того, поддерживает ли эта функция класс обработчика, на который ссылается `type` атрибут `<add>` элемента. Классы обработчиков маркеров, которые предоставляют эту функцию, должны предоставлять конструктор, принимающий <xref:System.Xml.XmlElement> объект.  
 
 ```csharp  
 public class CustomTokenHandler : Microsoft.IdentityModel.Tokens.SecurityTokenHandler  
@@ -70,15 +70,15 @@ public class CustomTokenHandler : Microsoft.IdentityModel.Tokens.SecurityTokenHa
 }  
 ```  
   
- Некоторые из встроенных классов обработчиков маркеров безопасности предоставляют эту функцию. Этими классами являются <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler>, <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>, <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler>, <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler>и <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>.  
+ Некоторые из встроенных классов обработчиков маркеров безопасности предоставляют эту функцию. Эти классы: <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> ,,, <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> и <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> .  
   
 > [!IMPORTANT]
-> Коллекция обработчиков маркеров может содержать только один обработчик любого заданного типа. Это означает, например, что если нужно добавить в коллекцию обработчик, производный от класса <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>, необходимо сначала удалить <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>, который существует по умолчанию, из коллекции. Можно использовать элемент [\<Remove >](remove.md) для удаления одного обработчика из коллекции или использовать [\<Clear >](clear.md) для удаления всех обработчиков из коллекции.  
+> Коллекция обработчиков маркеров может содержать только один обработчик любого заданного типа. Это означает, например, что если требуется добавить обработчик, производный от <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> класса, в коллекцию, необходимо сначала удалить объект <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> , который существует по умолчанию, из коллекции. С помощью элемента можно [\<remove>](remove.md) удалить один обработчик из коллекции или использовать [\<clear>](clear.md) элемент для удаления всех обработчиков из коллекции.  
   
- Параметры, заданные для обработчика, переопределяют эквивалентные параметры, указанные в коллекции обработчика маркеров в элементе [\<секурититокенхандлерконфигуратион >](securitytokenhandlerconfiguration.md) , и те, которые указаны на уровне службы в элементе [\<identityConfiguration >](identityconfiguration.md) .  
+ Параметры, заданные для обработчика, переопределяют эквивалентные параметры, заданные в коллекции обработчика маркеров в [\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md) элементе, и те, которые указаны на уровне службы в [\<identityConfiguration>](identityconfiguration.md) элементе.  
   
 ## <a name="example"></a>Пример  
- В следующем XML-коде показано использование элементов `<add>` и `<remove>` для замены обработчика токенов сеанса по умолчанию обработчиком пользовательского маркера сеанса. XML взят из примера `ClaimsAwareWebFarm`.  
+ В следующем коде XML показано использование `<add>` `<remove>` элементов и для замены обработчика токена сеанса по умолчанию обработчиком пользовательского маркера сеанса. XML взят из `ClaimsAwareWebFarm` примера.  
   
 ```xml  
 <securityTokenHandlers>  

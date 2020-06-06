@@ -1,5 +1,5 @@
 ---
-title: элемент <remove> для NameValueSectionHandler и DictionarySectionHandler
+title: <remove>элемент для NameValueSectionHandler и DictionarySectionHandler
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/remove
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - <remove> Element
 ms.assetid: 8d8af7f5-26c9-4db9-bbe4-b2a4e6949568
 ms.openlocfilehash: d1e4f3478f6afd6a20c01c6b57a137020ee88f5f
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "77214759"
 ---
-# <a name="remove-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<удалить элемент > для NameValueSectionHandler и DictionarySectionHandler
+# <a name="remove-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<remove>элемент для NameValueSectionHandler и DictionarySectionHandler
 
 Удаляет ранее определенный параметр.
 
-[ **\<configuration>** ](configuration-element.md)\
-&nbsp;&nbsp;[ **\<sectionName >** ](custom-element-2.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<удалить >**
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,21 +38,21 @@ ms.locfileid: "77214759"
 
 | Элемент | Описание |
 | ------- | ------------|
-| [ **\<sectionName >** Дерев](custom-element-2.md) | Определяет параметры для пользовательских разделов конфигурации, использующих классы <xref:System.Configuration.NameValueSectionHandler> и <xref:System.Configuration.DictionarySectionHandler>. |
+| [**\<sectionName>** Дерев](custom-element-2.md) | Определяет параметры для пользовательских разделов конфигурации, использующих <xref:System.Configuration.NameValueSectionHandler> <xref:System.Configuration.DictionarySectionHandler> классы и. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
-Нет
+None
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Элемент **\<удалить >** можно использовать для удаления из приложения параметров, определенных на более высоком уровне в иерархии файлов конфигурации.
+С помощью элемента можно **\<remove>** удалить из приложения параметры, которые были определены на более высоком уровне в иерархии файлов конфигурации.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано использование элемента **\<Remove >** в файле конфигурации приложения для удаления параметров, ранее определенных в файле конфигурации компьютера.
+В следующем примере показано, как использовать **\<remove>** элемент в файле конфигурации приложения для удаления параметров, ранее определенных в файле конфигурации компьютера.
 
-Следующий код файла конфигурации компьютера объявляет раздел **\<мисектион >** и добавляет в него два параметра: `key1` и `key2`.
+Следующий код файла конфигурации компьютера объявляет раздел **\<mySection>** и добавляет `key1` `key2` в него два параметра:
 
 ```xml
 <!-- Machine.config file -->
@@ -67,7 +67,7 @@ ms.locfileid: "77214759"
 </configuration>
 ```
 
-Следующий код файла конфигурации приложения удаляет параметр `key2` из **\<мисектион >** :
+Следующий код файла конфигурации приложения удаляет `key2` параметр из **\<mySection>** :
 
 ```xml
 <!--Application configuration file -->
@@ -82,6 +82,6 @@ ms.locfileid: "77214759"
 
 Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , которые не находятся на уровне каталога приложений.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации для .NET Framework](index.md)

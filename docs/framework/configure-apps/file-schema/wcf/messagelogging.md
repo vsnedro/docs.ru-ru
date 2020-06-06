@@ -3,19 +3,19 @@ title: <messageLogging>
 ms.date: 03/30/2017
 ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
 ms.openlocfilehash: 9291c38af28c18d20e23e34e8316b4a9fe523123
-ms.sourcegitcommit: 205b9a204742e9c77256d43ac9d94c3f82909808
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70855123"
 ---
-# <a name="messagelogging"></a>\<Мессажелоггинг >
+# \<messageLogging>
 Данный элемент определяет параметры ведения журнала сообщений для Windows Communication Foundation (WCF).  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<Диагностика >** ](diagnostics.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Мессажелоггинг >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<messageLogging>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ ms.locfileid: "70855123"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`logEntireMessage`|Логическое значение, указывающее, заносится ли в журнал сообщение целиком (тело и заголовок сообщения). Значением по умолчанию является `false`, означающее, что в журнал заносится только заголовок сообщения. Действие этого параметра распространяется на все уровни ведения журнала сообщений (службы, транспорта и неправильных сообщений).|  
 |`logMalformedMessages`|Логическое значение, указывающее, заносятся ли в журнал неправильные сообщения. Такие сообщения не учитываются в значении `maxMessagesToLog`. Значение по умолчанию — `false`.|  
@@ -54,7 +54,7 @@ ms.locfileid: "70855123"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|фильтры|Элемент `filters` содержит коллекцию фильтров XPath. Если включена регистрация сообщений на уровне транспорта (то есть атрибуту `logMessagesAtTransportLevel` присвоено значение `true`), в журнал заносятся только те сообщения, которые соответствуют фильтрам.<br /><br /> Фильтры применяются только на уровне транспорта. Фильтры не влияют на ведение журнала сообщений уровня службы и неправильно сформированных сообщений.<br /><br /> Единственным атрибутом элемента `filter` является XpathFilter.<br /><br /> `<filters>     <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">/soap:Envelope</add> </filters>`|  
+|filters|Элемент `filters` содержит коллекцию фильтров XPath. Если включена регистрация сообщений на уровне транспорта (то есть атрибуту `logMessagesAtTransportLevel` присвоено значение `true`), в журнал заносятся только те сообщения, которые соответствуют фильтрам.<br /><br /> Фильтры применяются только на уровне транспорта. Фильтры не влияют на ведение журнала сообщений уровня службы и неправильно сформированных сообщений.<br /><br /> Единственным атрибутом элемента `filter` является XpathFilter.<br /><br /> `<filters>     <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">/soap:Envelope</add> </filters>`|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

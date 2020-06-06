@@ -3,21 +3,21 @@ title: <webSocketSettings>
 ms.date: 03/30/2017
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
 ms.openlocfilehash: fa87a1b0961425d6a9bc84769bef6e87cbc2ce96
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73732554"
 ---
-# <a name="websocketsettings"></a>\<Вебсоккетсеттингс >
+# \<webSocketSettings>
 Элемент конфигурации, который служит для задания параметров веб-сокета.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<System. serviceModel >** ](system-servicemodel.md)\
-привязки &nbsp;&nbsp;&nbsp;&nbsp;[ **\<** ](bindings.md) >
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<netHttpBinding >** ](nethttpbinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Binding** >\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<вебсоккетсеттингс >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netHttpBinding>**](nethttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webSocketSettings>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ ms.locfileid: "73732554"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |createNotificationOnConnection|Определяет, следует ли отправлять уведомления при соединении.|  
 |disablePayloadMasking|Определяет, отключено ли маскирование веб-сокета.|  
@@ -54,23 +54,23 @@ ms.locfileid: "73732554"
   
 ## <a name="transportusage-attribute"></a>Атрибут transportUsage  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |WhenDuplex|Использовать протокол веб-сокета, если контракт является дуплексным.|  
 |Всегда|Всегда использовать протокол веб-сокетов независимо от контракта.|  
 |Никогда|Никогда не использовать протокол веб-сокетов.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Отсутствуют  
+ Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|\<netHttpBinding >|Определяет привязку NetHttpBinding|  
+|\<netHttpBinding>|Определяет привязку NetHttpBinding|  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать элемент \<Вебсоккетсеттингс >.  
+ В следующем примере показано использование элемента \<webSocketSettings>.  
   
 ```xml  
 <netHttpBinding>
@@ -96,4 +96,4 @@ ms.locfileid: "73732554"
 - [Привязки](../../../wcf/bindings.md)
 - [Настройка привязок, предоставляемых системой](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Использование привязок для настройки служб и клиентов](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [> привязки \<](bindings.md)
+- [\<binding>](bindings.md)

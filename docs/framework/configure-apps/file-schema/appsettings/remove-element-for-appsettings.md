@@ -8,19 +8,19 @@ helpviewer_keywords:
 - <remove> Element
 ms.assetid: 218c4464-e007-4539-803f-7c8b0a909fd8
 ms.openlocfilehash: 83abbdbf0d3e4dfd16c0e8c649200c4ecc7329f7
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "77215496"
 ---
-# <a name="remove-element-for-appsettings"></a>\<удалить элемент > для \<appSettings >
+# <a name="remove-element-for-appsettings"></a>Элемент \<remove> для \<appSettings>
 
 Удаляет пользовательские параметры приложения.
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<appSettings>** ](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<удалить >**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,15 +40,15 @@ ms.locfileid: "77215496"
 
 |     | Описание |
 | --- | ----------- |
-| [ **\<appSettings>** ](appsettings-element-for-configuration.md) | Содержит пользовательские параметры приложения, такие как пути к файлам, URL-адреса XML-веб-служб и другие сведения о пользовательской конфигурации приложения. |
+| [**\<appSettings>**](appsettings-element-for-configuration.md) | Содержит пользовательские параметры приложения, такие как пути к файлам, URL-адреса XML-веб-служб и другие сведения о пользовательской конфигурации приложения. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
-Нет
+None
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как удалить настраиваемый параметр конфигурации для `ApplicationName`.
+В следующем примере показано, как удалить настраиваемый параметр конфигурации для `ApplicationName` :
 
 ```xml
 <appSettings>
@@ -56,6 +56,6 @@ ms.locfileid: "77215496"
 </appSettings>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации для .NET Framework](../index.md)

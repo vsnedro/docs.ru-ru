@@ -5,19 +5,19 @@ helpviewer_keywords:
 - gcHeapCount element
 - <gcHeapCount> element
 ms.openlocfilehash: 3d6cac4185af182758cb82e6bfd9d96ed24869b4
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74283073"
 ---
-# <a name="gcheapcount-element"></a>\<Гчеапкаунт > элемент
+# <a name="gcheapcount-element"></a>Элемент \<GCHeapCount>
 
 Указывает число куч/потоков, используемых для сборки мусора сервера.
 
-\<> конфигурации \
-&nbsp;&nbsp;\<среды выполнения > \
-&nbsp;&nbsp;&nbsp;&nbsp;\<Гчеапкаунт >
+\<configuration>\
+&nbsp;&nbsp;\<runtime>\
+&nbsp;&nbsp;&nbsp;&nbsp;\<GCHeapCount>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,13 +38,13 @@ ms.locfileid: "74283073"
 
 #### <a name="enabled-attribute"></a>Включенный атрибут
 
-|значения|Описание|
+|Значение|Описание|
 |-----------|-----------------|
 |`nn`|Число куч, используемых для сервера GC.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-Нет.
+Отсутствует.
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -53,7 +53,7 @@ ms.locfileid: "74283073"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 По умолчанию потоки GC сервера жестко привязаны с соответствующими ПРОЦЕССОРами, чтобы существовала одна Куча сборщика мусора, один поток GC сервера и один поток GC для каждого процессора. Начиная с .NET Framework 4.6.2, можно использовать элемент **гчеапкаунт** для ограничения числа куч, используемых приложением для сборки мусора сервера. Ограничение числа куч, используемых для сервера GC, особенно полезно для систем, работающих с несколькими экземплярами серверного приложения.
 

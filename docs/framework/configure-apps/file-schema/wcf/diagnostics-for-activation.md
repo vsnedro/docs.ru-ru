@@ -3,18 +3,18 @@ title: <diagnostics> для активации
 ms.date: 03/30/2017
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
 ms.openlocfilehash: 33b2cd4c5ae1b4076892a61aa7e2b927efa1ddc1
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70400411"
 ---
-# <a name="diagnostics-for-activation"></a>\<Диагностика > для активации
+# <a name="diagnostics-for-activation"></a>\<diagnostics> для активации
 Настраивает функции диагностики прослушивателя Windows Communication Foundation (WCF).  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel. Activation**](system-servicemodel-activation.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<Диагностика >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel.activation>**](system-servicemodel-activation.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<diagnostics>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -26,7 +26,7 @@ ms.locfileid: "70400411"
 </configuration>
 ```  
   
-## <a name="type"></a>Тип  
+## <a name="type"></a>Type  
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
@@ -34,12 +34,12 @@ ms.locfileid: "70400411"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`performanceCountersEnabled`|Логическое значение, определяющее, включены ли счетчики производительности для целей диагностики.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

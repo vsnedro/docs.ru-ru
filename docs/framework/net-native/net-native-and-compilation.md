@@ -3,10 +3,10 @@ title: Машинный код .NET и компиляция
 ms.date: 03/30/2017
 ms.assetid: e38ae4f3-3e3d-42c3-a4b8-db1aa9d84f85
 ms.openlocfilehash: cf5c9f05b2f2cb4ca15e4add5b53bc9bdca757a3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73128247"
 ---
 # <a name="net-native-and-compilation"></a>Машинный код .NET и компиляция
@@ -58,9 +58,9 @@ ms.locfileid: "73128247"
 
 Итоговое приложение, созданное цепочкой инструментов .NET Native, записывается в каталог ilc.out в каталоге отладки или выпуска каталога проекта. Итоговое приложение состоит из следующих файлов:
 
-- *\<имя_приложения>* .exe — заглушка исполняемого файла, которая просто передает управление специальной функции `Main`, экспортируемой библиотекой *\<имя_приложения>* .dll.
+- *\<appName>* exe — исполняемый файл-заглушка, который просто передает управление Специальному `Main` экспорту в *\<appName>* DLL.
 
-- *\<имя_приложения>* .dll — библиотека DLL, содержащая весь код приложения, а также код из библиотеки классов .NET Framework и любых сторонних библиотек, от которых есть зависимости.  Итоговое приложение также содержит код поддержки, например код, необходимый для взаимодействия с Windows и сериализации объектов в приложении.
+- *\<appName>*. DLL — библиотека динамической компоновки Windows, которая содержит весь код приложения, а также код из библиотеки классов .NET Framework и любых сторонних библиотек, от которых зависит зависимость.  Итоговое приложение также содержит код поддержки, например код, необходимый для взаимодействия с Windows и сериализации объектов в приложении.
 
 - mrt100_app.dll — оптимизированная среда выполнения, которая предоставляет сервисы реального времени, такие как сборка мусора.
 
@@ -105,6 +105,6 @@ ms.locfileid: "73128247"
 ## <a name="see-also"></a>См. также
 
 - [Метаданные и компоненты с самоописанием](../../standard/metadata-and-self-describing-components.md)
-- [Внутри .NET Native (видео на канале 9)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)
-- [Отражение и .NET Native](reflection-and-net-native.md)
-- [.NET Native. Устранение общих неполадок](net-native-general-troubleshooting.md)
+- [Внутри .NET Native (видео Channel 9)](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)
+- [Отражение и машинный код .NET](reflection-and-net-native.md)
+- [Машинный код .NET: Устранение общих неполадок](net-native-general-troubleshooting.md)
