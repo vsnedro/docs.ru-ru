@@ -9,10 +9,10 @@ helpviewer_keywords:
 - cryptography, mapping object identifiers
 ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
 ms.openlocfilehash: a5aebac2d392d4540581dfe7c7afff0819968ac0
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "69912546"
 ---
 # <a name="mapping-object-identifiers-to-cryptography-algorithms"></a>Отображение идентификаторов объектов на криптографические алгоритмы
@@ -38,9 +38,9 @@ ms.locfileid: "69912546"
 </configuration>  
 ```  
   
- [Элемент > оидентрисодержитдваатрибута.\<](./file-schema/cryptography/oidentry-element.md) Атрибут **OID** — это номер идентификатора объекта. Атрибут **Name** — это значение [ \<атрибута Name из элемента элементе nameentry >](./file-schema/cryptography/nameentry-element.md). Необходимо сопоставить имя алгоритма с классом, чтобы идентификатор объекта можно было сопоставить с простым именем.  
+ [ \<oidEntry> Элемент](./file-schema/cryptography/oidentry-element.md) содержит два атрибута. Атрибут **OID** — это номер идентификатора объекта. Атрибут **Name** — это значение атрибута **Name** из [ \<nameEntry> элемента](./file-schema/cryptography/nameentry-element.md). Необходимо сопоставить имя алгоритма с классом, чтобы идентификатор объекта можно было сопоставить с простым именем.  
   
 ## <a name="see-also"></a>См. также
 
 - [Настройка криптографических классов](configure-cryptography-classes.md)
-- [Cryptographic Services](../../standard/security/cryptographic-services.md)
+- [Службы шифрования](../../standard/security/cryptographic-services.md)

@@ -11,20 +11,20 @@ helpviewer_keywords:
 - bypasslist, clear element
 ms.assetid: 301584ca-a914-4100-b180-3b288d3b099e
 ms.openlocfilehash: c25477c2c99be66b34b07e1f7e50115bfa8d14e9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79154937"
 ---
-# <a name="clear-element-for-bypasslist-network-settings"></a>\<ясно> элемент для обвисаем (Настройки сети)
-Очищает список обхода прокси.  
+# <a name="clear-element-for-bypasslist-network-settings"></a>Элемент \<clear> для bypasslist (параметры сети)
+Очищает список обхода прокси-сервера.  
   
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<по умолчаниюПрокси>**](defaultproxy-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<обвахние>**](bypasslist-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ясно>**
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<bypasslist>**](bypasslist-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,7 +36,7 @@ ms.locfileid: "79154937"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Нет.  
@@ -45,16 +45,16 @@ ms.locfileid: "79154937"
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[bypasslist](bypasslist-element-network-settings.md)|Предоставляет набор регулярных выражений, описывающие адреса, которые не используют прокси.|  
+|[bypasslist](bypasslist-element-network-settings.md)|Предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер.|  
   
-## <a name="remarks"></a>Remarks  
- Элемент `clear` очищает все записи из списка обхода.  
+## <a name="remarks"></a>Примечания  
+ `clear`Элемент удаляет все записи из списка обхода.  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
- Следующий пример очищает список обхода, а затем добавляет два адреса в список обхода. Первый обходит прокси для всех серверов в домене contoso.com; второй обходит прокси для всех серверов, чей IP-адрес начинается с 192.168.  
+ В следующем примере очищается список обхода, а затем два адреса добавляются в список обхода. Первый обход прокси-сервера для всех серверов в домене contoso.com; во втором пропускается прокси-сервер для всех серверов, IP-адрес которых начинается с 192,168.  
   
 ```xml  
 <configuration>  
@@ -70,7 +70,7 @@ ms.locfileid: "79154937"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Схема настройки сети](index.md)
+- [Схема параметров сети](index.md)

@@ -4,20 +4,20 @@ ms.date: 03/30/2017
 ms.assetid: f74392f6-3f5b-4880-bd8a-3a9130d31e65
 author: BrucePerlerMS
 ms.openlocfilehash: 67d7e0aa5b6b05bfe8b17a1b1efebb1fbddbb0eb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79152675"
 ---
-# <a name="issuertokenresolver"></a>\<issuerTokenResolver>
-Регистрирует токен-решателя эмитента, который используется обработчиками в коллекции обработчиков токенов. Разрешители маркеров эмитента используются для разрешения маркера подписи на входящих токенах и сообщениях.  
+# \<issuerTokenResolver>
+Регистрирует сопоставитель маркеров издателя, используемый обработчиками в коллекции обработчиков маркеров. Сопоставитель токенов издателя используется для разрешения маркера подписывания входящих токенов и сообщений.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.identityМодель>**](system-identitymodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<идентичностьНастройка>**](identityconfiguration.md)\
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenhandlerConfiguration>**](securitytokenhandlerconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlerConfiguration>**](securitytokenhandlerconfiguration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<issuerTokenResolver>**  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,29 +40,29 @@ ms.locfileid: "79152675"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|type|Определяет тип разрешительного маркера эмитента. Должен быть <xref:System.IdentityModel.Tokens.IssuerTokenResolver> либо класс, либо тип, <xref:System.IdentityModel.Tokens.IssuerTokenResolver> который вытекает из класса. Обязательный элемент.|  
+|type|Указывает тип сопоставителя маркеров издателя. Должен быть либо <xref:System.IdentityModel.Tokens.IssuerTokenResolver> классом, либо типом, производным от <xref:System.IdentityModel.Tokens.IssuerTokenResolver> класса. Обязательный.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- None  
+ Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<securityTokenhandlerConfiguration>](securitytokenhandlerconfiguration.md)|Обеспечивает конфигурацию для сбора обработчиков маркеров безопасности.|  
+|[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Предоставляет конфигурацию для коллекции обработчиков маркеров безопасности.|  
   
-## <a name="remarks"></a>Remarks  
- Разрешители маркеров эмитента используются для разрешения маркера подписи на входящих токенах и сообщениях. Он используется для извлечения криптографического материала, который используется для проверки подписи. Необходимо указать `type` атрибут. Указанный тип может <xref:System.IdentityModel.Tokens.IssuerTokenResolver> быть либо или пользовательским <xref:System.IdentityModel.Tokens.IssuerTokenResolver> типом, который вытекает из класса.  
+## <a name="remarks"></a>Примечания  
+ Сопоставитель токенов издателя используется для разрешения маркера подписывания входящих токенов и сообщений. Он используется для получения криптографического материала, используемого для проверки подписи. Необходимо указать `type` атрибут. Указанный тип может быть либо либо <xref:System.IdentityModel.Tokens.IssuerTokenResolver> пользовательским типом, производным от <xref:System.IdentityModel.Tokens.IssuerTokenResolver> класса.  
   
- Некоторые обработчики токенов позволяют указывать настройки маркера эмитента в конфигурации. Настройки отдельных обработчиков маркеров переопределяют те, которые указаны в коллекции обработчика маркеров безопасности.  
+ Некоторые обработчики маркеров позволяют задавать параметры сопоставителя маркеров издателя в конфигурации. Параметры отдельных обработчиков маркеров переопределяют те, которые указаны в коллекции обработчика маркеров безопасности.  
   
 > [!NOTE]
-> Определение элемента `<issuerTokenResolver>` в качестве элемента ребенка [ \<идентификационных конфигураций>](identityconfiguration.md) элемента было изуродовано, но по-прежнему поддерживается для обратной совместимости. Настройки элемента `<securityTokenHandlerConfiguration>` переопределяют элементы на элементе. `<identityConfiguration>`  
+> Указание `<issuerTokenResolver>` элемента в качестве дочернего элемента [\<identityConfiguration>](identityconfiguration.md) элемента является устаревшим, но по-прежнему поддерживается для обратной совместимости. Параметры `<securityTokenHandlerConfiguration>` элемента переопределяют их для `<identityConfiguration>` элемента.  
   
 ## <a name="example"></a>Пример  
- В следующем XML отображается конфигурация для разрешительного маркера эмитента, <xref:System.IdentityModel.Tokens.IssuerTokenResolver>основанная на пользовательском классе, который вытекает из. Разрешители токенов поддерживают словарь пар ключей аудитории, который инициализирован из пользовательского элемента конфигурации (),`<AddAudienceKeyPair>`определенного для класса. Класс переопределяет <xref:System.IdentityModel.Selectors.SecurityTokenResolver.LoadCustomConfiguration%2A> метод обработки этого элемента. Переопределение отображается в следующем примере; однако методы, которые он называет, не отображаются для краткости. Для полного примера `CustomToken` смотрите пример.  
+ В следующем коде XML показана конфигурация для сопоставителя маркеров издателя, основанного на пользовательском классе, производном от <xref:System.IdentityModel.Tokens.IssuerTokenResolver> . Сопоставитель токенов поддерживает словарь пар ключей аудитории, которые инициализируются из настраиваемого элемента конфигурации ( `<AddAudienceKeyPair>` ), определенного для класса. Класс переопределяет <xref:System.IdentityModel.Selectors.SecurityTokenResolver.LoadCustomConfiguration%2A> метод для обработки этого элемента. Переопределение показано в следующем примере. Однако методы, которые он вызывает, не отображаются для краткости. Полный пример см `CustomToken` . в примере.  
   
 ```xml  
 <issuerTokenResolver type="SimpleWebToken.CustomIssuerTokenResolver, SimpleWebToken">  
@@ -88,6 +88,6 @@ public override void LoadCustomConfiguration(System.Xml.XmlNodeList nodelist)
 }  
 ```
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Tokens.IssuerTokenResolver>

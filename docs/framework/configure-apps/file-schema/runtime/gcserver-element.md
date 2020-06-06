@@ -9,19 +9,19 @@ helpviewer_keywords:
 - <gcServer> element
 ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
 ms.openlocfilehash: 8eab5e36bab90510aff4f1a3e15328197ac59ed7
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73968949"
 ---
-# <a name="gcserver-element"></a>\<gcServer > элемент
+# <a name="gcserver-element"></a>Элемент \<gcServer>
 
 Указывает, выполняет ли среда CLR сборку мусора сервера.
 
 [\<configuration>](../configuration-element.md)\
-[> среды выполнения\<](runtime-element.md) &nbsp;&nbsp;\
-&nbsp;&nbsp;&nbsp;&nbsp;\<gcServer >
+&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;\<gcServer>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,7 +42,7 @@ ms.locfileid: "73968949"
 
 #### <a name="enabled-attribute"></a>Включенный атрибут
 
-|значения|Описание|
+|Значение|Описание|
 |-----------|-----------------|
 |`false`|Не выполняет сборку мусора сервера. Это значение по умолчанию.|
 |`true`|Выполняет сборку мусора сервера.|
@@ -58,7 +58,7 @@ ms.locfileid: "73968949"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 Среда CLR поддерживает два типа сборки мусора: сборку мусора рабочей станции, которая доступна во всех системах, и сборку мусора сервера, которая доступна в многопроцессорных системах. Используйте элемент **gcServer** для управления типом сборки мусора, ВЫПОЛНЯЕМой средой CLR. Используйте свойство <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>, чтобы определить, включена ли сборка мусора сервера.
 
@@ -67,7 +67,7 @@ ms.locfileid: "73968949"
 Этот элемент может использоваться только в файле конфигурации приложения; в файле конфигурации компьютера он игнорируется.
 
 > [!NOTE]
-> В платформе .NET Framework версии 4 и более ранних версиях параллельная сборка мусора недоступна, если включена серверная сборка мусора. С версии .NET Framework 4.5 серверная сборка мусора является параллельной. Чтобы использовать непараллельную сборку мусора сервера, присвойте элементу **gcServer** значение `true` а [элемент gcConcurrent](gcconcurrent-element.md) — `false`.
+> В платформе .NET Framework версии 4 и более ранних версиях параллельная сборка мусора недоступна, если включена серверная сборка мусора. С версии .NET Framework 4.5 серверная сборка мусора является параллельной. Чтобы использовать непараллельную сборку мусора сервера, установите для элемента **gcServer** значение `true` , а для [элемента gcConcurrent](gcconcurrent-element.md) — значение `false` .
 
 Начиная с .NET Framework 4.6.2 можно также использовать следующие элементы для настройки GC сервера:
 

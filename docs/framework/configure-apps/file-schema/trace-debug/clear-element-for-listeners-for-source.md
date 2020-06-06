@@ -1,5 +1,5 @@
 ---
-title: <clear>Элемент <listeners> для<source>
+title: <clear>Элемент для <listeners> для<source>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/clear
@@ -8,21 +8,21 @@ helpviewer_keywords:
 - clear element for <listeners> for <source>
 ms.assetid: 76796bb2-9c0b-4526-8135-8bf18b16d8d9
 ms.openlocfilehash: 7f9ddd93d27c3619119702c82c9e8752dab1af7b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79153585"
 ---
-# <a name="clear-element-for-listeners-for-source"></a>\<ясно> \<элемент для \<слушателей> для источников>
+# <a name="clear-element-for-listeners-for-source"></a>\<clear>Элемент для \<listeners> для\<source>
 Очищает коллекцию `Listeners` для источника трассировки.  
 
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<источники>**](sources-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<источник>**](source-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<слушатели>**](listeners-element-for-source.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ясно>**
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ ms.locfileid: "79153585"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Нет.  
@@ -47,16 +47,16 @@ ms.locfileid: "79153585"
 |`system.diagnostics`|Задает прослушиватели трассировки, собирающие, хранящие и маршрутизирующие сообщения, а также уровень, на котором установлен ключ трассировки.|  
 |`sources`|Содержит источники трассировки, которые инициируют сообщения трассировки.|  
 |`source`|Содержит источник трассировки, который инициирует сообщения трассировки.|  
-|`listeners`|Определяет слушателей, которые собирают, хранят и направляют сообщения.|  
+|`listeners`|Указывает прослушиватели, собирающие, хранящие и направляющие сообщения.|  
   
-## <a name="remarks"></a>Remarks  
- Элемент `<clear>` удаляет всех слушателей `Listeners` из коллекции для <xref:System.Diagnostics.DefaultTraceListener>источника трассировки, включая . Вы можете `<clear>` использовать элемент, `<add>` прежде чем использовать элемент, чтобы быть уверенным, что в коллекции нет других активных слушателей.  
+## <a name="remarks"></a>Примечания  
+ `<clear>`Элемент удаляет все прослушиватели из `Listeners` коллекции для источника трассировки, включая <xref:System.Diagnostics.DefaultTraceListener> . Элемент можно использовать `<clear>` перед использованием `<add>` элемента, чтобы убедиться в отсутствии других активных прослушивателей в коллекции.  
   
 ## <a name="configuration-file"></a>Файл конфигурации  
- Этот элемент может быть использован в файле конфигурации машины (Machine.config) и файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
- Ниже приводится следующий `<clear>` пример, как `<add>` использовать элемент `console` перед `textListener` использованием элементов для добавления слушателей и в коллекцию `Listeners` для источника `TraceSourceApp`трассировки.  
+ В следующем примере показано, как использовать `<clear>` элемент перед использованием `<add>` элементов для добавления прослушивателей `console` и `textListener` в `Listeners` коллекцию для источника трассировки `TraceSourceApp` .  
   
 ```xml  
 <configuration>  
@@ -84,9 +84,9 @@ ms.locfileid: "79153585"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>
-- [Схема настроек трассировки и отпараги](index.md)
+- [Схема параметров трассировки и отладки](index.md)
 - [Прослушиватели трассировки](../../../debug-trace-profile/trace-listeners.md)

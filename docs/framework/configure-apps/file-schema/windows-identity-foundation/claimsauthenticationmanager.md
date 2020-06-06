@@ -4,19 +4,19 @@ ms.date: 03/30/2017
 ms.assetid: 6d30a450-6d13-4671-81a8-77e0204500c5
 author: BrucePerlerMS
 ms.openlocfilehash: a54fc2cea84bb9d08a9725d846fe38efd7b5475a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79152753"
 ---
-# <a name="claimsauthenticationmanager"></a>\<претензииAuthenticationManager>
-Регистрирует менеджера проверки подлинности претензий для входящих претензий.  
+# \<claimsAuthenticationManager>
+Регистрирует диспетчер проверки подлинности утверждений для входящих утверждений.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.identityМодель>**](system-identitymodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<идентичностьНастройка>**](identityconfiguration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<претензииAuthenticationManager>**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<claimsAuthenticationManager>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,23 +35,23 @@ ms.locfileid: "79152753"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|type|Определяет пользовательский тип, который вытекает <xref:System.Security.Claims.ClaimsAuthenticationManager> из класса. Для получения дополнительной информации `type` о том, как указать атрибут, см.|  
+|type|Указывает пользовательский тип, производный от <xref:System.Security.Claims.ClaimsAuthenticationManager> класса. Дополнительные сведения об указании `type` атрибута см. в разделе [ссылки на пользовательские типы].|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- `type` Если нет атрибута, или `type` если атрибут <xref:System.Security.Claims.ClaimsAuthenticationManager> ссылается `<claimsAuthenticationManager>` на класс, элемент не принимает элементы ребенка; однако классы, <xref:System.Security.Claims.ClaimsAuthenticationManager> полученные из элементов конфигурации ребенка, могут определять элементы конфигурации ребенка.  
+ Если `type` атрибут отсутствует или `type` атрибут ссылается на <xref:System.Security.Claims.ClaimsAuthenticationManager> класс, `<claimsAuthenticationManager>` элемент не принимает дочерние элементы, однако классы, производные от, <xref:System.Security.Claims.ClaimsAuthenticationManager> могут определять дочерние элементы конфигурации.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<идентичностьНастройка>](identityconfiguration.md)|Определяет настройки удостоверения уровня обслуживания.|  
+|[\<identityConfiguration>](identityconfiguration.md)|Задает параметры удостоверений уровня службы.|  
   
-## <a name="remarks"></a>Remarks  
- Поведение по умолчанию, предоставляемое через класс, <xref:System.Security.Claims.ClaimsAuthenticationManager> перекликается с входящими претензиями. Если `type` атрибут не указан `type` или если атрибут <xref:System.Security.Claims.ClaimsAuthenticationManager> определяет класс, `<claimsAuthenticationManager>` элемент не принимает элементы ребенка. Можно указать `type` атрибут для регистрации типа, полученного из <xref:System.Security.Claims.ClaimsAuthenticationManager> класса, для реализации пользовательского поведения. Полученные классы могут поддерживать конфигурацию через элемент детского элемента, `<claimsAuthenticationManager>` переопределяя <xref:System.Security.Claims.ClaimsAuthenticationManager.LoadCustomConfiguration%2A> метод обработки этих элементов. Схема, определенная для элементов ребенка, до дизайнера класса.  
+## <a name="remarks"></a>Примечания  
+ Поведение по умолчанию, предоставляемое <xref:System.Security.Claims.ClaimsAuthenticationManager> классом, отображает входящие утверждения. Если `type` атрибут не указан или `type` атрибут указывает <xref:System.Security.Claims.ClaimsAuthenticationManager> класс, `<claimsAuthenticationManager>` элемент не принимает дочерние элементы. Можно указать `type` атрибут для регистрации типа, производного от класса, <xref:System.Security.Claims.ClaimsAuthenticationManager> для реализации пользовательского поведения. Производные классы могут поддерживать конфигурацию через дочерние элементы `<claimsAuthenticationManager>` элемента путем переопределения <xref:System.Security.Claims.ClaimsAuthenticationManager.LoadCustomConfiguration%2A> метода для работы с этими элементами. Схема, определенная для дочерних элементов, находится в конструкторе класса.  
   
- Элемент `<claimsAuthenticationManager>` устанавливает <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthenticationManager%2A?displayProperty=nameWithType> свойство.  
+ `<claimsAuthenticationManager>`Элемент задает <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthenticationManager%2A?displayProperty=nameWithType> свойство.  
   
 ## <a name="example"></a>Пример  
   

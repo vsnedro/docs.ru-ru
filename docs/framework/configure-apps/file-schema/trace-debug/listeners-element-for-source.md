@@ -8,20 +8,20 @@ helpviewer_keywords:
 - <listeners> element for <source>
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
 ms.openlocfilehash: 0eee325e01b41a15a19e4f40f479596f9d70f73b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79153416"
 ---
-# <a name="listeners-element-for-source"></a>\<слушатели> \<Элемент для исходных>
-Добавляет или удаляет слушателей в коллекции <xref:System.Diagnostics.TraceSource.Listeners%2A> для <xref:System.Diagnostics.TraceSource>. Слушатель направляет вывод трассировки в соответствующую цель, такую как журнал, окно или текстовый файл.  
+# <a name="listeners-element-for-source"></a>Элемент \<listeners> для \<source>
+Добавляет или удаляет прослушиватели в <xref:System.Diagnostics.TraceSource.Listeners%2A> коллекции для <xref:System.Diagnostics.TraceSource> . Прослушиватель направляет выходные данные трассировки в соответствующий целевой объект, например журнал, окно или текстовый файл.  
   
-[**\<конфигурация>**](../configuration-element.md)  
+[**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<источники>**](sources-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<источник>**](source-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<слушатели>**  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<listeners>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,15 +37,15 @@ ms.locfileid: "79153416"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<добавить>](add-element-for-listeners-for-source.md)|Добавляет прослушиватель в коллекцию `Listeners`.|  
-|[\<удалить>](remove-element-for-listeners-for-source.md)|Удаляет слушателя из `Listeners` коллекции.|  
-|[\<ясно>](clear-element-for-listeners-for-source.md)|Очищает коллекцию `Listeners` для источника трассировки.|  
+|[\<add>](add-element-for-listeners-for-source.md)|Добавляет прослушиватель в коллекцию `Listeners`.|  
+|[\<remove>](remove-element-for-listeners-for-source.md)|Удаляет прослушиватель из `Listeners` коллекции.|  
+|[\<clear>](clear-element-for-listeners-for-source.md)|Очищает коллекцию `Listeners` для источника трассировки.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -56,13 +56,13 @@ ms.locfileid: "79153416"
 |`sources`|Содержит источники трассировки, которые инициируют сообщения трассировки.|  
 |`source`|Содержит источник трассировки, который инициирует сообщения трассировки.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
   
 ## <a name="configuration-file"></a>Файл конфигурации  
- Этот элемент может быть использован в файле конфигурации машины (Machine.config) и файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать `<listeners>` элемент для `mySource` добавления слушателя трассы консоли к источнику и удаления слушателя трассировки по умолчанию.  
+ В следующем примере показано, как использовать `<listeners>` элемент для добавления прослушивателя трассировки консоли в `mySource` источник и для удаления прослушивателя трассировки по умолчанию.  
   
 ```xml  
 <configuration>  
@@ -87,8 +87,8 @@ ms.locfileid: "79153416"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.TraceListener>
-- [Схема настроек трассировки и отпараги](index.md)
+- [Схема параметров трассировки и отладки](index.md)
 - [Прослушиватели трассировки](../../../debug-trace-profile/trace-listeners.md)

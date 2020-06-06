@@ -9,16 +9,16 @@ helpviewer_keywords:
 - <system.Net> element
 ms.assetid: 52de4d6c-b24d-44aa-ba7d-6b5061f1357e
 ms.openlocfilehash: 88098f2afaad9728e38c4f9935b45f45826a0ca9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79154560"
 ---
-# <a name="systemnet-element-network-settings"></a>Элемент \<system.Net> (сетевые параметры)
+# <a name="systemnet-element-network-settings"></a>Элемент \<system.Net> (параметры сети)
 Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.  
   
-[**\<конфигурация>**](../configuration-element.md)  
+[**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;**\<system.net>**  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,31 +32,31 @@ ms.locfileid: "79154560"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[authenticationModules](authenticationmodules-element-network-settings.md)|Определяет модули, используемые для проверки подлинности запросов в Интернете.|  
-|[connectionManagement](connectionmanagement-element-network-settings.md)|Определяет максимальное количество подключений к интернет-хостам.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Указывает модули, используемые для проверки подлинности интернет запросов.|  
+|[connectionManagement](connectionmanagement-element-network-settings.md)|Указывает максимальное число подключений к узлу в Интернете.|  
 |[defaultProxy](defaultproxy-element-network-settings.md)|Настраивает прокси-сервер протокола передачи гипертекста (HTTP).|  
-|[mailSettings](mailsettings-element-network-settings.md)|Настраивает опции отправки почты Simple Mail Transport Protocol (SMTP).|  
-|[requestCaching](requestcaching-element-network-settings.md)|Контролирует механизм кэширования для сетевых запросов.|  
-|[настройки](settings-element-network-settings.md)|Настраивает основные сетевые <xref:System.Net> параметры для классов в и связанных с ними областях имен детей.|  
-|[webRequestModules](webrequestmodules-element-network-settings.md)|Определяет модули для использования для запроса информации у интернет-хостов.|  
+|[маилсеттингс](mailsettings-element-network-settings.md)|Настраивает параметры отправки почты по протоколу SMTP.|  
+|[requestCaching](requestcaching-element-network-settings.md)|Управляет механизмом кэширования для сетевых запросов.|  
+|[параметры](settings-element-network-settings.md)|Настраивает основные сетевые параметры для классов в <xref:System.Net> и связанных дочерних пространствах имен.|  
+|[webRequestModules](webrequestmodules-element-network-settings.md)|Указывает модули, используемые для запроса информации от узлов Интернета.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[Конфигурация](../configuration-element.md)|Содержит настройки для всех областей имен.|  
+|[Конфигурация](../configuration-element.md)|Содержит параметры для всех пространств имен.|  
   
-## <a name="remarks"></a>Remarks  
- Элемент [ \<system.net>](system-net-element-network-settings.md) содержит настройки <xref:System.Net> для классов в и связанных с ними областях имен ребенка. Настройки настраивают модули аутентификации, управление подключением, настройки почты, прокси-сервер и модули запросов Интернета для получения информации от интернет-хостов.  
+## <a name="remarks"></a>Примечания  
+ [\<system.net>](system-net-element-network-settings.md)Элемент содержит параметры для классов в <xref:System.Net> и связанных дочерних пространствах имен. Параметры настройки модулей проверки подлинности, управления подключениями, параметров почты, прокси-сервера и модулей запросов Интернета для получения данных от узлов Интернета.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показана <xref:System.Net> типичная конфигурация, используемая классами.  
+ В следующем примере показана типичная конфигурация, используемая <xref:System.Net> классами.  
   
 ```xml  
 <configuration>  
@@ -92,6 +92,6 @@ ms.locfileid: "79154560"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Схема настройки сети](index.md)
+- [Схема параметров сети](index.md)

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - <system.codedom> element
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
 ms.openlocfilehash: 40a3c84e1deed4d215383670176623a6a79ac41d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79155392"
 ---
-# <a name="systemcodedom-element"></a>\<system.codedom> Элемент
+# <a name="systemcodedom-element"></a>Элемент \<system.codedom>
 Задает параметры конфигурации компилятора для доступных поставщиков языков.  
   
-[**\<конфигурация>**](../configuration-element.md)  
+[**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;**\<system.codedom>**  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,40 +34,40 @@ ms.locfileid: "79155392"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<>составители](compilers-element.md)|Контейнер для элементов конфигурации компилятора; содержит ноль или более [ \<элементов компил>ятора.](compiler-element.md)|  
+|[\<compilers>](compilers-element.md)|Контейнер для элементов конфигурации компилятора; содержит ноль или более [\<compiler>](compiler-element.md) элементов.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<конфигурация>](../configuration-element.md)|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
+|[\<configuration>](../configuration-element.md)|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
   
-## <a name="net-framework-version-20"></a>Рамочная версия .NET 2.0  
- Элемент [ \<system.codedom>](system-codedom-element.md) содержит настройки конфигурации компилятора для языковых провайдеров, установленных на компьютере <xref:Microsoft.CSharp.CSharpCodeProvider> в <xref:Microsoft.VisualBasic.VBCodeProvider>дополнение к поставщикам по умолчанию, которые установлены с помощью рамочной системы .NET, таких как и . [ \<Компиляторы>](compilers-element.md) элемента содержат ноль или более [ \<элементов компилятора>.](compiler-element.md) Каждый [ \<компилятор>](compiler-element.md) элемент определяет атрибуты конфигурации компилятора для определенного поставщика языков.  
+## <a name="net-framework-version-20"></a>.NET Framework версии 2,0  
+ [\<system.codedom>](system-codedom-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков, установленных на компьютере в дополнение к поставщикам по умолчанию, которые устанавливаются вместе с .NET Framework, например <xref:Microsoft.CSharp.CSharpCodeProvider> и <xref:Microsoft.VisualBasic.VBCodeProvider> . [\<compilers>](compilers-element.md)Элемент содержит ноль или более [\<compiler>](compiler-element.md) элементов. Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.  
   
- Разработчики и поставщики компилятов могут добавлять настройки конфигурации <xref:System.CodeDom.Compiler.CodeDomProvider> в файл конфигурации машины (Machine.config) для новой реализации. Используйте <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> метод для программного перечисления как поставщиков языков по умолчанию, так и поставщиков языков, определенных настройками конфигурации компилятора на компьютере.  
+ Разработчики и поставщики компиляторов могут добавлять параметры конфигурации в файл конфигурации компьютера (Machine. config) для новой <xref:System.CodeDom.Compiler.CodeDomProvider> реализации. Используйте <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> метод для программного перечисления поставщиков языка по умолчанию и поставщиков языков, определенных параметрами конфигурации компилятора на компьютере.  
   
 > [!NOTE]
-> В версиях .NET Framework 1.0 и 1.1 поставщики языков по умолчанию, поставляемые рамочной системой .NET, идентифицируются в [ \<компиляторах>](compilers-element.md) элементе. В версии 2.0.NET Framework поставщики языков по умолчанию не идентифицируются в [ \<компиляторах>](compilers-element.md) элементом, но могут быть перечислены с помощью метода. <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A>  
+> В .NET Framework версиях 1,0 и 1,1 поставщики языка по умолчанию, предоставляемые .NET Framework, идентифицируются в [\<compilers>](compilers-element.md) элементе. В .NET Framework версии 2,0 поставщики языка по умолчанию не определяются в [\<compilers>](compilers-element.md) элементе, но их можно перечислить с помощью <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> метода.  
   
-## <a name="net-framework-versions-10-and-11"></a>Рамочные версии .NET 1.0 и 1.1  
- Элемент [ \<system.codedom>](system-codedom-element.md) содержит настройки конфигурации компилятора для языковых провайдеров на компьютере. [ \<Компиляторы>](compilers-element.md) элемента содержат ноль или более [ \<элементов компилятора>.](compiler-element.md) Каждый [ \<компилятор>](compiler-element.md) элемент определяет атрибуты конфигурации компилятора для определенного поставщика языков.  
+## <a name="net-framework-versions-10-and-11"></a>.NET Framework версии 1,0 и 1,1  
+ [\<system.codedom>](system-codedom-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков на компьютере. [\<compilers>](compilers-element.md)Элемент содержит ноль или более [\<compiler>](compiler-element.md) элементов. Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.  
   
  В .NET Framework начальные параметры компилятора определены файле конфигурации компьютера (Machine.config). Разработчики и поставщики компиляторов могут добавлять параметры конфигурации для новой реализации <xref:System.CodeDom.Compiler.CodeDomProvider>. С помощью метода <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> можно осуществлять программное перечисление параметров конфигурации для поставщиков языков и компиляторов на компьютере.  
   
 ## <a name="configuration-file"></a>Файл конфигурации  
- Этот элемент можно использовать в файле конфигурации машины и файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера и файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
- Следующий пример иллюстрирует типичную конфигурацию компилятора.  
+ В следующем примере показана типичная конфигурация компилятора.  
   
 ```xml  
 <configuration>  
@@ -87,10 +87,10 @@ ms.locfileid: "79155392"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
-- [Схема конфигурации файлов](../index.md)
-- [Схема настройки компилятора и языкового провайдера](index.md)
-- [\<компилятор> Элемент](compiler-element.md)
+- [Схема файла конфигурации](../index.md)
+- [Схема параметров поставщиков языков и компиляторов](index.md)
+- [\<compiler>Дерев](compiler-element.md)

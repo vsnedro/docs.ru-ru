@@ -1,15 +1,15 @@
 ---
-title: <Namespace>Элемент (.NET Родной)
+title: <Namespace>Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192
 ms.openlocfilehash: 06d88a7b0f95c7c1dbe98818b847c92e08a57a19
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79180956"
 ---
-# <a name="namespace-element-net-native"></a>\<Название> элемент (.NET Родной)
+# <a name="namespace-element-net-native"></a>\<Namespace>Элемент (.NET Native)
 Применяет политику отражения среды выполнения ко всем типам в указанном пространстве имен.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,7 +33,7 @@ ms.locfileid: "79180956"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Тип атрибута|Описание|  
+|Атрибут|Тип атрибута|Описание|  
 |---------------|--------------------|-----------------|  
 |`Name`|Общие сведения|Обязательный атрибут. Указывает имя пространства имен.|  
 |`Activate`|Отражение|Необязательный атрибут. Управляет доступом среды выполнения к конструкторам для включения активации экземпляров.|  
@@ -49,13 +49,13 @@ ms.locfileid: "79180956"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
-|*namespace_name*|Имя пространства имен. Если \<элемент Namespace> является ребенком [ \<>приложения, ](application-element-net-native.md) [ \<>библиотеки ](library-element-net-native.md)или *namespace_name* [ \<](assembly-element-net-native.md) элемента>сборки, namespace_name должны быть полностью квалифицированным именем пространства имен. Если элемент \<Namespace> является дочерним элементом другого элемента \<Namespace>, то *namespace_name* должно быть относительным именем пространства имен.|  
+|*namespace_name*|Имя пространства имен. Если \<Namespace> элемент является дочерним по отношению [\<Application>](application-element-net-native.md) к [\<Library>](library-element-net-native.md) элементу, или, [\<Assembly>](assembly-element-net-native.md) *namespace_name* должен быть полным именем пространства имен. Если \<Namespace> элемент является дочерним для другого \<Namespace> элемента, *namespace_name* должен быть относительным именем пространства имен.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |*policy_setting*|Значение для этого типа политики для всех типов в пространстве имен. Допустимые значения `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
@@ -64,25 +64,25 @@ ms.locfileid: "79180956"
 |Элемент|Описание|  
 |-------------|-----------------|  
 |`<Namespace>`|Применяет политику отражения среды выполнения для всех типов в родительском пространстве имен.|  
-|[\<Тип>](type-element-net-native.md)|Применяет политику отражения к типу.|  
-|[\<>typeInstantiation](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу.|  
+|[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу.|  
+|[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<Применение>](application-element-net-native.md)|Служит в качестве контейнера для типов и членов типов приложения, метаданные которого доступны для отражения во время выполнения. Элемент [ \<приложения>](application-element-net-native.md) может иметь ноль, один или несколько [ \<](assembly-element-net-native.md) элементов сборки>.|  
-|[\<>ассамблеи](assembly-element-net-native.md)|Применяет политику отражения среды выполнения ко всем типам в указанной сборке.|  
-|[\<Библиотечная>](library-element-net-native.md)|Определяет сборку, содержащую типы и члены типов, метаданные которой доступны для отражения во время выполнения. Элемент [ \<библиотеки>](library-element-net-native.md) может иметь ноль или один [ \<](assembly-element-net-native.md) элемент>сборки.|  
+|[\<Application>](application-element-net-native.md)|Служит в качестве контейнера для типов и членов типов приложения, метаданные которого доступны для отражения во время выполнения. [\<Application>](application-element-net-native.md)Элемент может иметь ноль, один или несколько [\<Assembly>](assembly-element-net-native.md) элементов.|  
+|[\<Assembly>](assembly-element-net-native.md)|Применяет политику отражения среды выполнения ко всем типам в указанной сборке.|  
+|[\<Library>](library-element-net-native.md)|Определяет сборку, содержащую типы и члены типов, метаданные которой доступны для отражения во время выполнения. [\<Library>](library-element-net-native.md)Элемент может иметь ноль или один [\<Assembly>](assembly-element-net-native.md) элемент.|  
 |`<Namespace>`|Применяет политику отражения для всех типов в родительском пространстве имен.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Атрибуты `Activate`, `Browse`, `Dynamic` и `Serialize` необязательны. Если таковые отсутствуют, элемент `<Namespace>` используется только как контейнер для дочерних элементов. Если они присутствуют, элемент `<Namespace>` применяет политика отражения среды выполнения ко всем типам в указанном пространстве имен.  
   
- Когда он является ребенком [ \<Ассамблеи](assembly-element-net-native.md) `<Namespace>`>элементом, этот элемент отменяет политику отражения времени выполнения, определяемую [ \<Ассамблеей>](assembly-element-net-native.md) элементом.  
+ Если это дочерний [\<Assembly>](assembly-element-net-native.md) элемент элемента, `<Namespace>` элемент переопределяет политику отражения среды выполнения, определенную [\<Assembly>](assembly-element-net-native.md) элементом.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md)
-- [Справочник по конфигурационному файлу директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)

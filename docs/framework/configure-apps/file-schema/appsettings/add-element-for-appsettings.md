@@ -8,19 +8,19 @@ helpviewer_keywords:
 - <add> Element
 ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
 ms.openlocfilehash: 5c7de79ec626966e71d461dd3865b294a8979db2
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "77214812"
 ---
-# <a name="add-element-for-appsettings"></a>\<добавить элемент > для \<appSettings >
+# <a name="add-element-for-appsettings"></a>Элемент \<add> для \<appSettings>
 
 Добавляет пользовательский параметр приложения.
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<appSettings>** ](appsettings-element-for-configuration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<добавить >**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,11 +41,11 @@ ms.locfileid: "77214812"
 
 |     | Описание |
 | --- | ----------- |
-| [ **\<appSettings>** ](appsettings-element-for-configuration.md) | Содержит пользовательские параметры приложения, такие как пути к файлам, URL-адреса XML-веб-служб и другие сведения о пользовательской конфигурации приложения. |
+| [**\<appSettings>**](appsettings-element-for-configuration.md) | Содержит пользовательские параметры приложения, такие как пути к файлам, URL-адреса XML-веб-служб и другие сведения о пользовательской конфигурации приложения. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
-Нет
+None
 
 ## <a name="example"></a>Пример
 
@@ -57,7 +57,7 @@ ms.locfileid: "77214812"
 </appSettings>
 ```
 
-В следующем примере элемент `<add>` используется для определения двух параметров совместимости в приложении ASP.NET:
+В следующем примере элемент используется `<add>` для определения двух параметров совместимости в приложении ASP.NET:
 
 ```xml
 <appSettings>
@@ -66,6 +66,6 @@ ms.locfileid: "77214812"
 </appSettings>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации для .NET Framework](../index.md)

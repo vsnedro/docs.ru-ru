@@ -3,14 +3,14 @@ title: Синтаксис директив WCF
 ms.date: 03/30/2017
 ms.assetid: e471b042-d5e3-491c-bc81-758655016a3a
 ms.openlocfilehash: fd2580b2b052d7e4f387c276d23f87ec69b6bca1
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "69920350"
 ---
 # <a name="wcf-directive-syntax"></a>Синтаксис директив WCF
-Задает параметры, используемые директивами Windows Communication Foundation (WCF) в SVC-файлах для направления компиляторов. Каждая директива может содержать один или несколько характерных для нее атрибутов (в паре со значениями). WCF имеет только [ \@](servicehost.md) директиву ServiceHost.  
+Задает параметры, используемые директивами Windows Communication Foundation (WCF) в SVC-файлах для направления компиляторов. Каждая директива может содержать один или несколько характерных для нее атрибутов (в паре со значениями). WCF имеет только директиву [ \@ ServiceHost](servicehost.md) .  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [@ServiceHost](servicehost.md)  

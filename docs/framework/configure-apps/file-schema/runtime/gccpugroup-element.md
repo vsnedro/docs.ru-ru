@@ -6,18 +6,18 @@ helpviewer_keywords:
 - <GCCpuGroup> element
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
 ms.openlocfilehash: f1cbe5a7109d6e4aae2e92710920a1c6b3a40d00
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "82102896"
 ---
-# <a name="gccpugroup-element"></a>\<GCCpuGroup> Элемент
+# <a name="gccpugroup-element"></a>Элемент \<GCCpuGroup>
 
 Определяет, поддерживает ли сборка мусора несколько групп ЦП.
 
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<>выполнения**](runtime-element.md)\
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<GCCpuGroup>**
 
 ## <a name="syntax"></a>Синтаксис
@@ -41,8 +41,8 @@ ms.locfileid: "82102896"
 
 |Значение|Описание|
 |-----------|-----------------|
-|`false`|Сбор мусора не поддерживает несколько групп процессоров. Это значение по умолчанию.|
-|`true`|Сбор мусора поддерживает несколько групп процессоров, если включен сбор мусора сервера.|
+|`false`|Сборка мусора не поддерживает несколько групп ЦП. Это значение по умолчанию.|
+|`true`|Сборка мусора поддерживает несколько групп ЦП, если включена сборка мусора сервера.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -55,16 +55,16 @@ ms.locfileid: "82102896"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Когда компьютер имеет несколько групп процессоров и сбор мусора сервера включен (см. [ \<элемент gcServer>),](gcserver-element.md) что позволяет этот элемент расширяет сбор мусора во всех группах процессоров и принимает все ядра во внимание при создании и балансировке кучи.
+Если на компьютере установлено несколько групп ЦП и включена сборка мусора сервера (см. [\<gcServer>](gcserver-element.md) элемент), включение этого элемента расширяет сбор мусора во всех группах ЦП и учитывает все ядра при создании и балансировке куч.
 
 > [!NOTE]
-> Этот элемент применяется только к потокам сбора мусора. Чтобы включить время выполнения для распределения потоков пользователей по всем группам процессора, необходимо также включить [ \<элемент Thread_UseAllCpuGroups>.](thread-useallcpugroups-element.md)
+> Этот элемент применяется только к потокам сборки мусора. Чтобы среда выполнения распространяла пользовательские потоки во всех группах ЦП, необходимо также включить [\<Thread_UseAllCpuGroups>](thread-useallcpugroups-element.md) элемент.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как включить сбор мусора для нескольких групп процессоров.
+В следующем примере показано, как включить сбор мусора для нескольких групп ЦП.
 
 ```xml
 <configuration>
@@ -75,9 +75,9 @@ ms.locfileid: "82102896"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Схема настройки выполнения](index.md)
-- [Схема конфигурации файлов](../index.md)
-- [Отключить параллельный сбор мусора](gcconcurrent-element.md#to-disable-background-garbage-collection)
+- [Схема параметров среды выполнения](index.md)
+- [Схема файла конфигурации](../index.md)
+- [Отключение параллельной сборки мусора](gcconcurrent-element.md#to-disable-background-garbage-collection)
 - [Сборка мусора рабочей станции и сборка мусора сервера](../../../../standard/garbage-collection/workstation-server-gc.md)

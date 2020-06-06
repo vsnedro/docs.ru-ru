@@ -1,15 +1,15 @@
 ---
-title: Элемент <claimTypeRequirements>
+title: <claimTypeRequirements> - элемент
 ms.date: 03/30/2017
 ms.assetid: a26efe73-4bad-4731-8cad-27f00d54354b
 ms.openlocfilehash: b4d8479dd9a24774afbd0549caf9e261f55fa147
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "69926141"
 ---
-# <a name="claimtyperequirements-element"></a>\<Элемент > claimTypeRequirements
+# <a name="claimtyperequirements-element"></a>Элемент \<claimTypeRequirements>
 Задает коллекцию обязательных типов утверждений.  
   
  В федеративном сценарии службы предъявляют требования к входящим учетным данным. Например, входящие учетные данные должны обладать определенным набором типов утверждений. Каждый дочерний элемент в этой коллекции задает типы обязательных и необязательных утверждений, которые могут появляться в федеративных учетных данных.  
@@ -32,6 +32,6 @@ ms.locfileid: "69926141"
 - [Привязки](../../../wcf/bindings.md)
 - [Расширение привязок](../../../wcf/extending/extending-bindings.md)
 - [Пользовательские привязки](../../../wcf/extending/custom-bindings.md)
-- [\<customBinding >](custombinding.md)
-- [Практическое руководство. Создание пользовательской привязки с помощью SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [\<customBinding>](custombinding.md)
+- [Практическое руководство. Создание пользовательской привязки с использованием элемента SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
 - [Безопасность пользовательской привязки](../../../wcf/samples/custom-binding-security.md)

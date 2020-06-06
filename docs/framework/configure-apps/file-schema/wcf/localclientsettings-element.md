@@ -1,24 +1,24 @@
 ---
-title: Элемент <localClientSettings>
+title: <localClientSettings> - элемент
 ms.date: 03/30/2017
 ms.assetid: 4680ace5-f4e1-4fcb-b9d8-a4a4af5cd7ae
 ms.openlocfilehash: 3ec0394943c030a8866087c98a912682a2a2112e
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70400324"
 ---
-# <a name="localclientsettings-element"></a>\<Элемент > Локалклиентсеттингс
+# <a name="localclientsettings-element"></a>Элемент \<localClientSettings>
 Задает параметры безопасности локального клиента для этой привязки.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<привязки >** ](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<customBinding >** ](custombinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Привязка >** \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> безопасности**](security-of-custombinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Локалклиентсеттингс >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<localClientSettings>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,7 +43,7 @@ ms.locfileid: "70400324"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`cacheCookies`|Логическое значение, указывающее, включено ли кэширование файлов cookie. Значение по умолчанию — `false`.|  
 |`cookieRenewalThresholdPercentage`|Целое число, задающее максимальный процент файлов cookie, которые могут обновляться. Это значение должно быть в диапазоне от 0 до 100 включительно. Значение по умолчанию — 90.|  
@@ -58,14 +58,14 @@ ms.locfileid: "70400324"
 |`timestampValidityDuration`|Положительное значение типа <xref:System.TimeSpan>, указывающее срок действия отметки времени. Значение по умолчанию - 00:15:00.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Отсутствуют  
+ Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<> безопасности](security-of-custombinding.md)|Задает параметры безопасности для пользовательской привязки.|  
-|[\<Секуреконверсатионбутстрап >](secureconversationbootstrap.md)|Задает значения по умолчанию, используемые для инициализации службы безопасного обмена данными.|  
+|[\<security>](security-of-custombinding.md)|Задает параметры безопасности для пользовательской привязки.|  
+|[\<secureConversationBootstrap>](secureconversationbootstrap.md)|Задает значения по умолчанию, используемые для инициализации службы безопасного обмена данными.|  
   
 ## <a name="remarks"></a>Примечания  
  Параметры являются локальными, в том смысле, что они не наследуются от политики безопасности службы.  
@@ -80,6 +80,6 @@ ms.locfileid: "70400324"
 - [Привязки](../../../wcf/bindings.md)
 - [Расширение привязок](../../../wcf/extending/extending-bindings.md)
 - [Пользовательские привязки](../../../wcf/extending/custom-bindings.md)
-- [\<customBinding >](custombinding.md)
-- [Практическое руководство. Создание пользовательской привязки с помощью SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [\<customBinding>](custombinding.md)
+- [Практическое руководство. Создание пользовательской привязки с использованием элемента SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
 - [Безопасность пользовательской привязки](../../../wcf/samples/custom-binding-security.md)

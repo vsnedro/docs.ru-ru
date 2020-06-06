@@ -11,19 +11,19 @@ helpviewer_keywords:
 - <add> element, authenticationModules
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 ms.openlocfilehash: 4181a045079bdb455a63ebda722dd6b0daf33c4d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79155119"
 ---
-# <a name="add-element-for-authenticationmodules-network-settings"></a>\<добавить элемент> для аутентификацииModules (Настройки сети)
-Добавляет модуль аутентификации в приложение.  
+# <a name="add-element-for-authenticationmodules-network-settings"></a>Элемент \<add> для authenticationModules (параметры сети)
+Добавляет модуль проверки подлинности в приложение.  
 
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<аутентификацияМоды>**](authenticationmodules-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<добавить>**
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,29 +38,29 @@ ms.locfileid: "79155119"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|**Атрибут**|**Описание**|  
+|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Описание**|  
 |-------------------|---------------------|  
-|`type`|Полностью квалифицированное имя <xref:System.Type.FullName%2A> типа (указано свойством) <xref:System.Reflection.Assembly.FullName%2A> и название сборки (указанное свойством), разделенное запятой.|  
+|`type`|Полное имя типа (обозначенное <xref:System.Type.FullName%2A> свойством) и имя сборки (указывается <xref:System.Reflection.Assembly.FullName%2A> свойством), разделенные запятыми.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[authenticationModules](authenticationmodules-element-network-settings.md)|Определяет модули, используемые для проверки подлинности сетевых запросов.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Указывает модули, используемые для проверки подлинности сетевых запросов.|  
   
-## <a name="remarks"></a>Remarks  
- Элемент `add` добавляет модуль проверки подлинности в конец списка зарегистрированных модулей проверки подлинности. Модули аутентификации называются в порядке, в котором они были добавлены в список.  
+## <a name="remarks"></a>Примечания  
+ Элемент `add` добавляет модуль проверки подлинности в конец списка зарегистрированных модулей проверки подлинности. Модули проверки подлинности вызываются в том порядке, в котором они были добавлены в список.  
   
- Значение для `type` атрибута должно быть действительным именем типа и соответствующим именем сборки, разделенным запятой.  
+ Значением `type` атрибута должно быть допустимое имя типа и соответствующее имя сборки, разделенные запятыми.  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
- Следующий пример позволяет модули аутентификации по умолчанию. Необходимо заменить значения для версии и PublicKeyToken правильными значениями для указанного модуля.  
+ В следующем примере включаются модули проверки подлинности по умолчанию. Необходимо заменить значения для Version и PublicKeyToken правильными значениями для указанного модуля.  
   
 ```xml  
 <configuration>  
@@ -81,8 +81,8 @@ ms.locfileid: "79155119"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>
-- [Схема настройки сети](index.md)
+- [Схема параметров сети](index.md)

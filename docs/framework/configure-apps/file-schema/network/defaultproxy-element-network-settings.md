@@ -9,18 +9,18 @@ helpviewer_keywords:
 - <defaultProxy> element
 ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
 ms.openlocfilehash: 0945629c1395917bc1cf825f2ba84d20afa99957
-ms.sourcegitcommit: 3094dcd17141b32a570a82ae3f62a331616e2c9c
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "71698205"
 ---
-# <a name="defaultproxy-element-network-settings"></a>Элемент \<defaultProxy > (параметры сети)
+# <a name="defaultproxy-element-network-settings"></a>Элемент \<defaultProxy> (параметры сети)
 Настраивает прокси-сервер протокола передачи гипертекста (HTTP).  
   
-[ **\<configuration>** ](../configuration-element.md)  
-&nbsp;&nbsp;[ **\<System. NET >** ](system-net-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp; **\<defaultProxy >**  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultProxy>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,7 +35,7 @@ ms.locfileid: "71698205"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
- Следующие разделы описывают атрибуты, дочерние элементы и родительские элементы.  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
@@ -48,9 +48,9 @@ ms.locfileid: "71698205"
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[бипасслист](bypasslist-element-network-settings.md)|Предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер.|  
-|[module](module-element-network-settings.md)|Добавляет в приложение новый модуль прокси-сервера.|  
-|[-](proxy-element-network-settings.md)|Определяет прокси-сервер.|  
+|[bypasslist](bypasslist-element-network-settings.md)|Предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер.|  
+|[модуль](module-element-network-settings.md)|Добавляет в приложение новый модуль прокси-сервера.|  
+|[proxy](proxy-element-network-settings.md)|Определяет прокси-сервер.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -61,7 +61,7 @@ ms.locfileid: "71698205"
 ## <a name="remarks"></a>Примечания  
  Если элемент defaultProxy пуст, будут использоваться параметры прокси-сервера из Internet Explorer. Это поведение отличается от поведения в .NET Framework версии 1.1.  
   
- Исключение возникает, если элемент [module](module-element-network-settings.md) задает тип, отличный от Public, тип не является производным от класса <xref:System.Net.IWebProxy>, возникло исключение из конструктора без параметров данного объекта или произошло исключение при получении указанного системой прокси-сервера по умолчанию. Свойство <xref:System.Exception.InnerException%2A> исключения должно иметь дополнительные сведения о первопричине ошибки.  
+ Исключение возникает, если элемент [module](module-element-network-settings.md) указывает на неоткрытый тип, тип не является производным от <xref:System.Net.IWebProxy> класса, возникло исключение из конструктора без параметров данного объекта или возникло исключение при получении указанного системой прокси-сервера по умолчанию. Свойство <xref:System.Exception.InnerException%2A> исключения должно иметь дополнительные сведения о первопричине ошибки.  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
@@ -86,7 +86,7 @@ ms.locfileid: "71698205"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [Схема параметров сети](index.md)

@@ -3,19 +3,19 @@ title: <transportConfigurationTypes>
 ms.date: 03/30/2017
 ms.assetid: 929c8b0a-5460-4f66-a098-2cb8d4e10b69
 ms.openlocfilehash: 4be08f780c1095b0016bd130b5719a2a7307d019
-ms.sourcegitcommit: 205b9a204742e9c77256d43ac9d94c3f82909808
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70854924"
 ---
-# <a name="transportconfigurationtypes"></a>\<Транспортконфигуратионтипес >
+# \<transportConfigurationTypes>
 Представляет коллекцию элементов конфигурации, которые определяют тип конкретного транспорта. Может использоваться для добавления пользовательских протоколов WAS.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<serviceHostingEnvironment >** ](servicehostingenvironment.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Транспортконфигуратионтипес >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceHostingEnvironment>**](servicehostingenvironment.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transportConfigurationTypes>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,7 +35,7 @@ ms.locfileid: "70854924"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Имя транспорта|  
+|name|Имя транспорта|  
 |transportConfigurationType|Тип, реализующий транспорт|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -48,7 +48,7 @@ ms.locfileid: "70854924"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<serviceHostingEnvironment >](servicehostingenvironment.md)|Определяет, какой тип среда размещения служб создает для конкретного транспорта.|  
+|[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Определяет, какой тип среда размещения служб создает для конкретного транспорта.|  
   
 ## <a name="see-also"></a>См. также
 

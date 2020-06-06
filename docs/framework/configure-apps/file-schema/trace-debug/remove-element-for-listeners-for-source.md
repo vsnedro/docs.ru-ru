@@ -1,5 +1,5 @@
 ---
-title: <remove>Элемент <listeners> для<source>
+title: <remove>Элемент для <listeners> для<source>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/remove
@@ -8,21 +8,21 @@ helpviewer_keywords:
 - <remove> element for <listeners> for <source>
 ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
 ms.openlocfilehash: 657e6db2af9b99b3bbf03afc6aab02c58a830f2d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79153339"
 ---
-# <a name="remove-element-for-listeners-for-source"></a>\<удалить элемент \<> для \<слушателей> для исходных>
+# <a name="remove-element-for-listeners-for-source"></a>\<remove>Элемент для \<listeners> для\<source>
 Удаляет прослушиватель из коллекции `Listeners` для источника трассировки.  
 
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<источники>**](sources-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<источник>**](source-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<слушатели>**](listeners-element-for-source.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<удалить>**
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,12 +35,12 @@ ms.locfileid: "79153339"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|`name`|Обязательный атрибут.<br /><br /> Имя слушателя удалить из коллекции. `Listeners`|  
+|`name`|Обязательный атрибут.<br /><br /> Имя прослушивателя, который необходимо удалить из `Listeners` коллекции.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -50,17 +50,17 @@ ms.locfileid: "79153339"
 |`system.diagnostics`|Задает прослушиватели трассировки, собирающие, хранящие и маршрутизирующие сообщения, а также уровень, на котором установлен ключ трассировки.|  
 |`sources`|Содержит источники трассировки, которые инициируют сообщения трассировки.|  
 |`source`|Содержит источник трассировки, который инициирует сообщения трассировки.|  
-|`listeners`|Определяет слушателей, которые собирают, хранят и направляют сообщения.|  
+|`listeners`|Указывает прослушиватели, собирающие, хранящие и направляющие сообщения.|  
   
-## <a name="remarks"></a>Remarks  
- Элемент `<remove>` удаляет указанного слушателя `Listeners` из коллекции для источника трассировки.  
+## <a name="remarks"></a>Примечания  
+ `<remove>`Элемент удаляет указанный прослушиватель из `Listeners` коллекции для источника трассировки.  
   
- Элемент можно удалить из `Listeners` коллекции для исходного источника <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> программно, <xref:System.Diagnostics.TraceSource.Listeners%2A> позвонив по способу свойства <xref:System.Diagnostics.TraceSource> экземпляра.  
+ Можно удалить элемент из `Listeners` коллекции для источника трассировки программным путем, вызвав <xref:System.Diagnostics.TraceListenerCollection.Remove%2A> метод для <xref:System.Diagnostics.TraceSource.Listeners%2A> свойства <xref:System.Diagnostics.TraceSource> экземпляра.  
   
- Этот элемент может быть использован в файле конфигурации машины (Machine.config) и файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, `<remove>` как `<add>` использовать элемент перед `console` использованием `Listeners` элемента для `TraceSourceApp`добавления слушателя в коллекцию для источника трассировки.  
+ В следующем примере показано, как использовать `<remove>` элемент перед использованием элемента, `<add>` чтобы добавить прослушиватель `console` в `Listeners` коллекцию для источника трассировки `TraceSourceApp` .  
   
 ```xml  
 <configuration>  
@@ -79,10 +79,10 @@ ms.locfileid: "79153339"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.TraceSource.Listeners%2A>
 - <xref:System.Diagnostics.TraceSource>
-- [Схема настроек трассировки и отпараги](index.md)
-- [\<ясно>](clear-element-for-listeners-for-source.md)
+- [Схема параметров трассировки и отладки](index.md)
+- [\<clear>](clear-element-for-listeners-for-source.md)
 - [Прослушиватели трассировки](../../../debug-trace-profile/trace-listeners.md)

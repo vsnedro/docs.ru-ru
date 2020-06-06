@@ -3,19 +3,19 @@ title: Элемент <add> для schemeSettings (параметры URI)
 ms.date: 03/30/2017
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 ms.openlocfilehash: ed40098e8d4c2d1298771e67a618b8d04f59c912
-ms.sourcegitcommit: 7f8eeef060ddeb2cabfa52843776faf652c5a1f5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74087719"
 ---
-# <a name="add-element-for-schemesettings-uri-settings"></a>\<добавить элемент > для schemeSettings (Параметры URI)
+# <a name="add-element-for-schemesettings-uri-settings"></a>Элемент \<add> для schemeSettings (параметры URI)
 Добавляет параметр схемы для имени схемы.  
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> uri**](uri-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<schemeSettings >** ](schemesettings-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<добавить >**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,25 +33,25 @@ ms.locfileid: "74087719"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|имя|Имя схемы, к которой применяется этот параметр. Поддерживаются только значения Name = "http" и Name = "HTTPS".|  
+|name|Имя схемы, к которой применяется этот параметр. Поддерживаются только значения Name = "http" и Name = "HTTPS".|  
   
 ## <a name="attribute-name-attribute"></a>{Имя атрибута} Версию  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |женерикурипарсероптионс|Параметры средства синтаксического анализа для этой схемы. Единственное поддерживаемое значение — Женерикурипарсероптионс = "Донтунескапепасдотсандслашес".|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Отсутствуют  
+ Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент \<schemeSettings> (параметры URI)](schemesettings-element-uri-settings.md)|Определяет, как <xref:System.Uri> анализируется для определенных схем.|  
+|[\<schemeSettings>Элемент (Параметры URI)](schemesettings-element-uri-settings.md)|Определяет, как <xref:System.Uri> анализируется для определенных схем.|  
   
-## <a name="remarks"></a>Заметки  
- По умолчанию класс <xref:System.Uri?displayProperty=nameWithType> отменяет escape-символы в процентах от разделителей закодированного пути перед выполнением сжатия пути. Это было реализовано в качестве механизма безопасности для атак, подобных следующим:  
+## <a name="remarks"></a>Примечания  
+ По умолчанию класс отменяет <xref:System.Uri?displayProperty=nameWithType> escape-символы в процентах, закодированные разделителями, перед выполнением сжатия пути. Это было реализовано в качестве механизма безопасности для атак, подобных следующим:  
   
  `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`  
   
@@ -69,7 +69,7 @@ ms.locfileid: "74087719"
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
- В следующем примере показана конфигурация, используемая классом <xref:System.Uri> для поддержки не экранирования разделителей пути в кодировке% для схемы HTTP.  
+ В следующем примере показана конфигурация, используемая <xref:System.Uri> классом для поддержки неэкранированных разделителей пути в кодировке% для схемы HTTP.  
   
 ```xml  
 <configuration>  

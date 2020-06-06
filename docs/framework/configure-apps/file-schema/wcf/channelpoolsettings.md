@@ -3,22 +3,22 @@ title: <channelPoolSettings>
 ms.date: 03/30/2017
 ms.assetid: 4755f3d3-4213-4c68-ae7f-45b67d744459
 ms.openlocfilehash: 26537980a6be5c0fe12661d93a6ba5fe862ceb4e
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70398160"
 ---
-# <a name="channelpoolsettings"></a>\<Чаннелпулсеттингс >
+# \<channelPoolSettings>
 Задает параметры пула каналов для пользовательской привязки.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<привязки >** ](bindings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<customBinding >** ](custombinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Привязка >** \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> oneWay**](oneway.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Чаннелпулсеттингс >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<oneWay>**](oneway.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<channelPoolSettings>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,20 +33,20 @@ ms.locfileid: "70398160"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`idleTimeout`|Положительное значение <xref:System.TimeSpan>, указывающее максимальное время бездействия канала в пуле перед отключением. Значение по умолчанию - 00:02:00.|  
 |`leaseTimeout`|Значение <xref:System.TimeSpan>, которое задает интервал времени, после которого канал закрывается при возвращении в пул. Значение по умолчанию - 00:10:00.|  
-|`maxOutboundChannelsPerEndpoint`|Положительное целое число, задающее максимальное количество каналов, которое можно хранить в пуле для каждой удаленной конечной точки. Значение по умолчанию — 10.|  
+|`maxOutboundChannelsPerEndpoint`|Положительное целое число, задающее максимальное количество каналов, которое можно хранить в пуле для каждой удаленной конечной точки. Значение по умолчанию равно 10.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<> oneWay](oneway.md)|Включает маршрутизацию пакетов для пользовательской привязки.|  
+|[\<oneWay>](oneway.md)|Включает маршрутизацию пакетов для пользовательской привязки.|  
   
 ## <a name="remarks"></a>Примечания  
  Квоты используются как механизм политики, служащий для предотвращения чрезмерного потребления ресурсов. Они препятствуют злонамеренным или неумышленным атакам типа «отказ в обслуживании» (DoS). Этот элемент используется при установке квот на пользовательском канале.  
@@ -66,8 +66,8 @@ ms.locfileid: "70398160"
 - <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>
 - <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [\<> oneWay](oneway.md)
+- [\<oneWay>](oneway.md)
 - [Привязки](../../../wcf/bindings.md)
 - [Расширение привязок](../../../wcf/extending/extending-bindings.md)
 - [Пользовательские привязки](../../../wcf/extending/custom-bindings.md)
-- [\<customBinding >](custombinding.md)
+- [\<customBinding>](custombinding.md)

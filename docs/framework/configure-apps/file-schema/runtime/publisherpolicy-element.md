@@ -11,20 +11,20 @@ helpviewer_keywords:
 - <publisherPolicy> element
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
 ms.openlocfilehash: 89fa8a991cc7d0352eb0a13cdfd3a6063ea468e7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73115846"
 ---
-# <a name="publisherpolicy-element"></a>\<Publisherpolicy Apply > элемент
+# <a name="publisherpolicy-element"></a>Элемент \<publisherPolicy>
 Указывает, применяет ли среда выполнения политику издателя.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp; &nbsp;[ **\<runtime >** ](runtime-element.md) \
-&nbsp; &nbsp; &nbsp; &nbsp;[ **\<assemblyBinding**](assemblybinding-element-for-runtime.md) > \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<dependentAssembly >** ](dependentassembly-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<publisherpolicy apply >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<publisherPolicy>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,15 +37,15 @@ ms.locfileid: "73115846"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`apply`|Указывает, следует ли применять политику издателя.|  
   
 ## <a name="apply-attribute"></a>применить атрибут  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
-|`yes`|Применяет политику издателя. Этот параметр используется по умолчанию.|  
+|`yes`|Применяет политику издателя. Это параметр по умолчанию.|  
 |`no`|Политика издателя не применяется.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -58,18 +58,18 @@ ms.locfileid: "73115846"
 |-------------|-----------------|  
 |`assemblyBinding`|Содержит сведения о перенаправлении версии сборки и о расположениях сборок.|  
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
-|`dependentAssembly`|Инкапсулирует политику привязки и расположение каждой сборки. Для каждой сборки используется один элемент `<dependentAssembly>`.|  
+|`dependentAssembly`|Инкапсулирует политику привязки и расположение каждой сборки. `<dependentAssembly>`Для каждой сборки используется один элемент.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Заметки  
- Когда поставщик компонента выпускает новую версию сборки, поставщик может включить политику издателя, чтобы приложения, использующие старую версию, теперь использовали новую версию. Чтобы указать, следует ли применять политику издателя для конкретной сборки, вставьте элемент **\<publisherpolicy apply >** в элемент **\<dependentAssembly >** .  
+## <a name="remarks"></a>Примечания  
+ Когда поставщик компонента выпускает новую версию сборки, поставщик может включить политику издателя, чтобы приложения, использующие старую версию, теперь использовали новую версию. Чтобы указать, следует ли применять политику издателя для определенной сборки, поставьте **\<publisherPolicy>** элемент в **\<dependentAssembly>** элемент.  
   
  Значение по умолчанию для атрибута **Apply** — **Да**. Присвоение атрибуту **Apply** значения **No** переопределяет любые предыдущие параметры **Yes** для сборки.  
   
- Для приложения требуется явное игнорирование политики издателя с помощью элемента [\<publisherpolicy Apply Apply = "No"/>](publisherpolicy-element.md) в файле конфигурации приложения. Разрешение предоставляется путем установки флага <xref:System.Security.Permissions.SecurityPermissionFlag> на <xref:System.Security.Permissions.SecurityPermission>. Дополнительные сведения см. в статье [разрешение безопасности перенаправления привязки сборок](../../assembly-binding-redirection-security-permission.md).  
+ Чтобы приложение явно игнорировало политику издателя с помощью [\<publisherPolicy apply="no"/>](publisherpolicy-element.md) элемента в файле конфигурации приложения, требуется разрешение. Разрешение предоставляется путем установки <xref:System.Security.Permissions.SecurityPermissionFlag> флага для <xref:System.Security.Permissions.SecurityPermission> . Дополнительные сведения см. в статье [разрешение безопасности перенаправления привязки сборок](../../assembly-binding-redirection-security-permission.md).  
   
 ## <a name="example"></a>Пример  
- В следующем примере отключается политика издателя для сборки `myAssembly`.  
+ В следующем примере отключается политика издателя для сборки `myAssembly` .  
   
 ```xml  
 <configuration>  

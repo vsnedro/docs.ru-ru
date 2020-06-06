@@ -8,17 +8,17 @@ helpviewer_keywords:
 - <assemblyBinding> Element
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
 ms.openlocfilehash: 21cf5e749b0dae310c3326f8abf82c6678fc97e9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79155483"
 ---
-# <a name="assemblybinding-element-for-configuration"></a>\<сборкаСвязы> \<элемент для> конфигурации
+# <a name="assemblybinding-element-for-configuration"></a>Элемент \<assemblyBinding> для \<configuration>
 
 Определяет политику привязки сборок на уровне конфигурации.
 
-конфигурация &nbsp; &nbsp; [** \<>**](configuration-element.md) ** \<сборкиОбязательная>**
+[**\<configuration>**](configuration-element.md) &nbsp;&nbsp;**\<assemblyBinding>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,7 +28,7 @@ ms.locfileid: "79155483"
 </assemblyBinding>
 ```
 
-## <a name="attribute"></a>attribute
+## <a name="attribute"></a>Атрибут
 
 |           | Описание |
 | --------- | ----------- |
@@ -38,24 +38,24 @@ ms.locfileid: "79155483"
 
 |     | Описание |
 | --- | ----------- |
-| [**\<конфигурация>**](configuration-element.md) | Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework. |
+| [**\<configuration>**](configuration-element.md) | Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework. |
 
 ## <a name="child-element"></a>Дочерний элемент
 
 |     | Описание |
 | --- | ----------- |
-| [**\<связаныКонфигурация>**](linkedconfiguration-element.md) | Указание файла конфигурации, который следует включить. |
+| [**\<linkedConfiguration>**](linkedconfiguration-element.md) | Указание файла конфигурации, который следует включить. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-[** \<LinkedConfiguration>**](linkedconfiguration-element.md) элемент упрощает управление сборками компонентов, позволяя файлам конфигурации приложений включать файлы конфигурации сборки в хорошо известных местах, а не дублировать настройки конфигурации сборки.
+[**\<linkedConfiguration>**](linkedconfiguration-element.md)Элемент упрощает управление сборками компонентов, позволяя файлам конфигурации приложения включать файлы конфигурации сборки в хорошо известные расположения, а не дублировать параметры конфигурации сборки.
 
 > [!NOTE]
-> ** \<Элемент linkedConfiguration>** не поддерживается для приложений с windows бок о бок.
+> **\<linkedConfiguration>** Элемент не поддерживается для приложений с параллельными манифестами Windows.
 
 ## <a name="example"></a>Пример
 
-Ниже приводится следующий пример, как включить файл конфигурации на локальном жестком диске:
+В следующем примере показано, как включить файл конфигурации на локальный жесткий диск:
 
 ```xml
 <configuration>
@@ -65,6 +65,6 @@ ms.locfileid: "79155483"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Схема конфигурации файла для рамочного соглашения .NET](index.md)
+- [Схема файла конфигурации для .NET Framework](index.md)

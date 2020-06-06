@@ -3,21 +3,21 @@ title: <transactionFlow>
 ms.date: 03/30/2017
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
 ms.openlocfilehash: f5bcd142fb2b032ea179bcbba68fee53b98d2d77
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73736315"
 ---
-# <a name="transactionflow"></a>\<transactionFlow >
+# \<transactionFlow>
 Задает поддержку потока транзакций для пользовательской привязки.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<System. serviceModel >** ](system-servicemodel.md)\
-привязки &nbsp;&nbsp;&nbsp;&nbsp;[ **\<** ](bindings.md) >
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<customBinding >** ](custombinding.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Binding** >\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<transactionFlow >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transactionFlow>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,9 +30,9 @@ ms.locfileid: "73736315"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|transactionProtocol|Задает используемый протокол транзакций. Допустимы следующие значения:<br /><br /> -OleTransactions<br />-WSAtomicTransactionOctober2004<br /><br /> Значение по умолчанию - OleTransactions.<br /><br /> Это атрибут типа <xref:System.ServiceModel.TransactionProtocol>.|  
+|transactionProtocol|Задает используемый протокол транзакций. Допустимые значения.<br /><br /> -OleTransactions<br />-WSAtomicTransactionOctober2004<br /><br /> Значение по умолчанию - OleTransactions.<br /><br /> Это атрибут типа <xref:System.ServiceModel.TransactionProtocol>.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
@@ -41,9 +41,9 @@ ms.locfileid: "73736315"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[> привязки \<](bindings.md)|Определяет все возможности пользовательской привязки.|  
+|[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Этот элемент позволяет включить или отключить входящий поток транзакций в параметрах привязки конечной точки, а также задать необходимый формат протокола для входящих транзакций. Дополнительные сведения об использовании этого элемента конфигурации см. в разделе [Конфигурация транзакций ServiceModel](../../../wcf/feature-details/servicemodel-transaction-configuration.md) и [Включение потока транзакций](../../../wcf/feature-details/enabling-transaction-flow.md).  
   
 > [!CAUTION]
@@ -59,4 +59,4 @@ ms.locfileid: "73736315"
 - [Привязки](../../../wcf/bindings.md)
 - [Расширение привязок](../../../wcf/extending/extending-bindings.md)
 - [Пользовательские привязки](../../../wcf/extending/custom-bindings.md)
-- [\<customBinding >](custombinding.md)
+- [\<customBinding>](custombinding.md)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - <webRequestModules> element
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 ms.openlocfilehash: 7f2805283f89e6165d336b3e593d34054e02115d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79154547"
 ---
-# <a name="webrequestmodules-element-network-settings"></a>\<Элемент webRequestModules> (параметры сети)
-Определяет модули для использования для запроса информации у сетевых хостов.  
+# <a name="webrequestmodules-element-network-settings"></a>Элемент \<webRequestModules> (параметры сети)
+Указывает модули, используемые для запроса сведений от сетевых узлов.  
   
-[**\<конфигурация>**](../configuration-element.md)  
+[**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;\<webRequestModules>  
   
@@ -33,15 +33,15 @@ ms.locfileid: "79154547"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[добавление](add-element-for-webrequestmodules-network-settings.md)|Добавляет пользовательский модуль веб-запроса в приложение.|  
-|[Ясно](clear-element-for-webrequestmodules-network-settings.md)|Удаляет из приложения все зарегистрированные модули веб-запросов.|  
-|[удаление](remove-element-for-webrequestmodules-network-settings.md)|Удаляет из приложения пользовательский модуль веб-запроса.|  
+|[добавление](add-element-for-webrequestmodules-network-settings.md)|Добавляет пользовательский модуль веб-запросов в приложение.|  
+|[открытым](clear-element-for-webrequestmodules-network-settings.md)|Удаляет из приложения все зарегистрированные модули веб-запросов.|  
+|[remove](remove-element-for-webrequestmodules-network-settings.md)|Удаляет пользовательский модуль веб-запросов из приложения.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -49,16 +49,16 @@ ms.locfileid: "79154547"
 |-----------------|---------------------|  
 |[system.net](system-net-element-network-settings.md)|Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.|  
   
-## <a name="remarks"></a>Remarks  
- Элемент `webRequestModules` регистрирует потомки класса <xref:System.Net.WebRequest>, чтобы обработать запросы информации к сетевым узлам. Модули веб-запроса должны реализовать <xref:System.Net.IWebRequestCreate> интерфейс.  
+## <a name="remarks"></a>Примечания  
+ Элемент `webRequestModules` регистрирует потомки класса <xref:System.Net.WebRequest>, чтобы обработать запросы информации к сетевым узлам. Модули веб-запросов должны реализовывать <xref:System.Net.IWebRequestCreate> интерфейс.  
   
- Рамочка .NET включает в себя веб-запросы модулей для URI, которые начинаются с `http://` `https://`, и `file://`. Переопределить модули по умолчанию можно только зарегистрировав пользовательский модуль в файле конфигурации.  
+ .NET Framework включает модули веб-запросов для URI, которые начинаются с `http://` , `https://` и `file://` . Модули по умолчанию можно переопределить только путем регистрации пользовательского модуля в файле конфигурации.  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
- Следующий пример регистрирует модуль HTTP по умолчанию. Необходимо заменить значения для версии и PublicKeyToken правильными значениями для указанного модуля.  
+ В следующем примере регистрируется HTTP-модуль по умолчанию. Необходимо заменить значения для Version и PublicKeyToken правильными значениями для указанного модуля.  
   
 ```xml  
 <configuration>  
@@ -73,8 +73,8 @@ ms.locfileid: "79154547"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.WebRequest>
 - <xref:System.Net.IWebRequestCreate>
-- [Схема настройки сети](index.md)
+- [Схема параметров сети](index.md)

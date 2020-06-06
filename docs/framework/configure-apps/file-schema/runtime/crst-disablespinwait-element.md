@@ -1,24 +1,24 @@
 ---
-title: < Crst_DisableSpinWait > элемент
+title: Элемент <Crst_DisableSpinWait>
 ms.date: 04/18/2019
 f1_keywords:
 - Crst_DisableSpinWait
 helpviewer_keywords:
 - Crst_DisableSpinWait element
 ms.openlocfilehash: 0683081183081e249b2a9c89e1a6a15f638fb339
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73117642"
 ---
-# <a name="crst_disablespinwait-element"></a>\<Crst_DisableSpinWait > элемент
+# <a name="crst_disablespinwait-element"></a>\<Crst_DisableSpinWait> - элемент
 
 Указывает, следует ли отключать режим ожидания для критической секции, если это не так.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp; &nbsp;[ **\<runtime >** ](runtime-element.md) \
-&nbsp;&nbsp;&nbsp;&nbsp; **\<Crst_DisableSpinWait >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<Crst_DisableSpinWait>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,16 +32,16 @@ ms.locfileid: "73117642"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |**доступной**|Указывает, отключен ли режим ожидания для критических разделов, если они не включены.|  
   
 ## <a name="enabled-attribute"></a>Атрибут enabled  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |1|Отключите режим ожидания, если критическая секция не может быть получена.|  
-|0|Не отключайте режим ожидания, если критическая секция не может быть получена. Это значение используется по умолчанию.|  
+|0|Не отключайте режим ожидания, если критическая секция не может быть получена. Это значение по умолчанию.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  

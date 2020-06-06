@@ -1,15 +1,15 @@
 ---
-title: Элемент <GenericParameter> (.NET Native)
+title: <GenericParameter>Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
 ms.openlocfilehash: d0b18211206a8f9d4365ab3affe6d1c376003348
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73128432"
 ---
-# <a name="genericparameter-element-net-native"></a>Элемент \<GenericParameter > (.NET Native)
+# <a name="genericparameter-element-net-native"></a>\<GenericParameter>Элемент (.NET Native)
 Применяет политику к параметру типа универсального типа или метода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,7 +35,7 @@ ms.locfileid: "73128432"
   
 |Атрибут|Тип атрибута|Описание|  
 |---------------|--------------------|-----------------|  
-|`Name`|Общее|Обязательный атрибут. Имя универсального параметра. Например, для универсального делегата <xref:System.Func%603>, значение атрибута `Name` равно «TResult» для применения политики среды выполнения к возвращаемому значению делегата.|  
+|`Name`|Общие сведения|Обязательный атрибут. Имя универсального параметра. Например, для универсального делегата <xref:System.Func%603>, значение атрибута `Name` равно «TResult» для применения политики среды выполнения к возвращаемому значению делегата.|  
 |`Activate`|Отражение|Необязательный атрибут. Управляет доступом среды выполнения к конструкторам для включения активации экземпляров.|  
 |`Browse`|Отражение|Необязательный атрибут. Управляет запросами для получения сведений об элементах программы, но не включает доступ среды выполнения.|  
 |`Dynamic`|Отражение|Необязательный атрибут. Управляет доступом среды выполнения ко всем членам типа, включая конструкторы, методы, поля, свойства и события, чтобы включить динамическое программирование.|  
@@ -49,13 +49,13 @@ ms.locfileid: "73128432"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|значения|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |*generic_parameter_name*|Обязательный атрибут. Имя универсального параметра типа. Например, для универсального делегата <xref:System.Func%603> значение *generic_parameter_name*, равное "TResult", применяет политику среды выполнения к возвращаемому значению делегата.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|значения|Описание|  
+|Значение|Описание:|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый для этого типа политики. Допустимые значения: `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
@@ -69,10 +69,10 @@ ms.locfileid: "73128432"
 |[\<Method>](method-element-net-native.md)|Применяет политику отражения среды выполнения к конструктору или методу.|  
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения среды выполнения для конкретного типа, например, класса или структуры.|  
   
-## <a name="remarks"></a>Заметки  
- Элемент `<GenericParameter>` является дочерним для элемента [\<Method>](method-element-net-native.md) или [\<Type>](type-element-net-native.md) и используется для применения политики к определенному параметру универсального типа, который задается его именем в сигнатуре универсального типа или метода.  
+## <a name="remarks"></a>Примечания  
+ `<GenericParameter>`Элемент является дочерним по отношению к [\<Method>](method-element-net-native.md) [\<Type>](type-element-net-native.md) элементу или и используется для применения политики к конкретному параметру универсального типа, который задается его именем в сигнатуре универсального типа или метода.  
   
- Элемент `<GenericParameter>` особенно полезен при использовании сериализаторов. В следующем примере используется элемент `<GenericParameter>`, который позволяет применить политику к типу `T` в вызовах к перегрузкам метода [JsonConvert.DeserializeObject\<T>(String)](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonConvert_DeserializeObject__1.htm) сериализатора NewtonSoft JSON.  
+ Элемент `<GenericParameter>` особенно полезен при использовании сериализаторов. В следующем примере элемент используется `<GenericParameter>` для применения политики к типу `T` при вызове перегрузок метода JsonConvert. методов DeserializeObject сериализатора JSON NewtonSoft [ \<T> (String)](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonConvert_DeserializeObject__1.htm) .  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -86,8 +86,8 @@ ms.locfileid: "73128432"
   
 ## <a name="see-also"></a>См. также
 
-- [Элемент \<Method>](method-element-net-native.md)
-- [Элемент > типа\<](type-element-net-native.md)
-- [Справочник по конфигурационному файлу директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
+- [\<Method>Дерев](method-element-net-native.md)
+- [\<Type>Дерев](type-element-net-native.md)
+- [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)

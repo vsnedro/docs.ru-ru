@@ -10,18 +10,18 @@ helpviewer_keywords:
 - <developmentMode> element
 ms.assetid: 60e79a8c-415a-497d-be29-b9d0fd9bdee3
 ms.openlocfilehash: 4a062da31740edb8f0c7a4f4db8b09800c687587
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "73117631"
 ---
-# <a name="developmentmode-element"></a>\<developmentMode > элемент
+# <a name="developmentmode-element"></a>Элемент \<developmentMode>
 Указывает, выполняет ли среда поиск сборок в каталогах, указанных в переменной среды DEVPATH.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp; &nbsp;[ **\<runtime >** ](runtime-element.md) \
-&nbsp;&nbsp;&nbsp;&nbsp; **\<developmentMode >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<developmentMode>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,16 +34,16 @@ ms.locfileid: "73117631"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |**девелоперинсталлатион**|Указывает, выполняет ли среда поиск сборок в каталогах, указанных в переменной среды DEVPATH.|  
   
 ## <a name="developerinstallation-attribute"></a>Атрибут Девелоперинсталлатион  
   
-|значения|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |**true**|Выполняет поиск сборок в каталогах, заданных переменной среды DEVPATH.|  
-|**false**|Не выполняет поиск сборок в каталогах, заданных переменной среды DEVPATH. Это значение по умолчанию|  
+|**false**|Не выполняет поиск сборок в каталогах, заданных переменной среды DEVPATH. Это значение установлено по умолчанию.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
@@ -55,7 +55,7 @@ ms.locfileid: "73117631"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Используйте этот параметр только во время разработки. Среда выполнения не проверяет версии сборок со строгими именами, найденных в DEVPATH. Он просто использует первую найденную сборку.  
   
 ## <a name="example"></a>Пример  

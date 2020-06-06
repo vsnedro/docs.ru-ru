@@ -3,18 +3,18 @@ title: <net.pipe>
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
 ms.openlocfilehash: dd984b2ab89060451b1b2d02c324e803766908ce
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70397718"
 ---
-# <a name="netpipe"></a>\<> NET. pipe
+# \<net.pipe>
 Задает параметры конфигурации для службы активации именованных каналов, которая управляет временем существования соединения для именованного канала, а также обрабатывает запросы на активацию, которые поступают по именованным каналам.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel. Activation**](system-servicemodel-activation.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<> NET. pipe**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel.activation>**](system-servicemodel-activation.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<net.pipe>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ ms.locfileid: "70397718"
 </configuration>
 ```  
   
-## <a name="type"></a>Тип  
+## <a name="type"></a>Type  
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
@@ -49,7 +49,7 @@ ms.locfileid: "70397718"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`maxPendingAccepts`|Целое число, которое определяет максимальное количество одновременных необработанных принимающих потоков в конечной точке для общей службы. Значение по умолчанию — 2|  
 |`maxPendingConnections`|Целое число, задающее максимальное количество соединений, которые могут ожидать распределения. Значение по умолчанию — 100.|  
@@ -59,7 +59,7 @@ ms.locfileid: "70397718"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<Алловаккаунтс >](allowaccounts.md)|Коллекция элементов конфигурации, которая содержит `securityIdentifier` атрибут для указания учетных записей пользователей для процессов, размещающий службы WCF, и которым предоставляется доступ к службе общего доступа.|  
+|[\<allowAccounts>](allowaccounts.md)|Коллекция элементов конфигурации, которая содержит `securityIdentifier` атрибут для указания учетных записей пользователей для процессов, размещающий службы WCF, и которым предоставляется доступ к службе общего доступа.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

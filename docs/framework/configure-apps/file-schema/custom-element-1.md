@@ -1,5 +1,5 @@
 ---
-title: Пользовательский элемент для SingleTagSectionHandler
+title: Настраиваемый элемент для Синглетагсектионхандлер
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName
@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom element
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
 ms.openlocfilehash: a40f35838655f6021af0b2e966335803ec8c16b4
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "80635398"
 ---
-# <a name="custom-element-for-singletagsectionhandler"></a>Пользовательский элемент для SingleTagSectionHandler
+# <a name="custom-element-for-singletagsectionhandler"></a>Настраиваемый элемент для Синглетагсектионхандлер
 
-Определяет настройки в специальном разделе конфигурации, который определяется разделом \<> элементом и использует <xref:System.Configuration.SingleTagSectionHandler> класс.
+Определяет параметры в пользовательском разделе конфигурации, определяемом \<section> элементом, и использует <xref:System.Configuration.SingleTagSectionHandler> класс.
 
-конфигурация &nbsp; &nbsp; [** \<>**](configuration-element.md) * \<разделаName>*
+[**\<configuration>**](configuration-element.md) &nbsp;&nbsp;*\<sectionName>*
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,19 +33,19 @@ ms.locfileid: "80635398"
 
 |     | Описание |
 | --- | ----------- |
-| [**\<конфигурация>**](configuration-element.md) | Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework. |
+| [**\<configuration>**](configuration-element.md) | Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
-Отсутствуют
+None
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-** \<Элемент sectionName>** является пользовательским элементом, определяемым [** \<разделом>**](section-element.md) тегом [** \<в элементе configSections>.**](configsections-element-for-configuration.md) Система конфигурации <xref:System.Collections.IDictionary> возвращает объект <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType>при вызове.
+**\<sectionName>** Элемент является пользовательским элементом, определяемым [**\<section>**](section-element.md) тегом в [**\<configSections>**](configsections-element-for-configuration.md) элементе. Система конфигурации возвращает <xref:System.Collections.IDictionary> объект при вызове метода <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType> .
 
 ## <a name="example"></a>Пример
 
-В следующем примере объявляется пользовательский элемент, называемый <xref:System.Configuration.SingleTagSectionHandler> ** \<sampleSection>,** содержащий параметры, прочитаны классом:
+В следующем примере объявляется пользовательский элемент с именем **\<sampleSection>** , который содержит параметры, считанные <xref:System.Configuration.SingleTagSectionHandler> классом:
 
 ```xml
 <configuration>
@@ -61,8 +61,8 @@ ms.locfileid: "80635398"
 
 ## <a name="configuration-file"></a>Файл конфигурации
 
-Этот элемент может быть использован в файле конфигурации приложения, файле конфигурации машины *(Machine.config)* и файлах *Web.config,* которые не на уровне каталога приложений.
+Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , не находящимся на уровне каталога приложения.
 
 ## <a name="see-also"></a>См. также
 
-- [Схема конфигурации файла для рамочного соглашения .NET](index.md)
+- [Схема файла конфигурации для .NET Framework](index.md)

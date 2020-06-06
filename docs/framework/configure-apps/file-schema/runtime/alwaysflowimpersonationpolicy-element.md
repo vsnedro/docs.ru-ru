@@ -9,18 +9,18 @@ helpviewer_keywords:
 - <alwaysFlowImpersonationPolicy> element
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
 ms.openlocfilehash: 7c8ac37932a528ff0f000cbaab49124dec51b88c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79154487"
 ---
-# <a name="alwaysflowimpersonationpolicy-element"></a>\<всегдаFlowImpersonationПолитика> Элемент
+# <a name="alwaysflowimpersonationpolicy-element"></a>Элемент \<alwaysFlowImpersonationPolicy>
 Указывает, что удостоверение Windows всегда проходит через асинхронные точки, независимо от того, как было выполнено олицетворение.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<>выполнения**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<всегдаFlowImpersonationПолитика>**\  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<alwaysFlowImpersonationPolicy>**\  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,19 +34,19 @@ ms.locfileid: "79154487"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|`enabled`|Обязательный атрибут.<br /><br /> Указывает, течет ли идентификация Windows по асинхронным точкам.|  
+|`enabled`|Обязательный атрибут.<br /><br /> Указывает, проходит ли идентификация Windows между асинхронными точками.|  
   
 ## <a name="enabled-attribute"></a>Атрибут enabled  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|`false`|Идентификация Windows не проходит через асинхронные точки, если олицетворение <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A>не выполняется с помощью управляемых методов, таких как . Это значение по умолчанию.|  
-|`true`|Идентификация Windows всегда течет по асинхронным точкам, независимо от того, как выполнялось олицетворение.|  
+|`false`|Удостоверение Windows не передается через асинхронные точки, если олицетворение не выполняется через управляемые методы, такие как <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> . Это значение по умолчанию.|  
+|`true`|Удостоверение Windows всегда проходит через асинхронные точки независимо от того, как было выполнено олицетворение.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -55,25 +55,25 @@ ms.locfileid: "79154487"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Remarks  
- В версиях .NET Framework 1.0 и 1.1 идентификация Windows не проходит через асинхронные точки. В версии 2.0 .NET Framework <xref:System.Threading.ExecutionContext> есть объект, который содержит информацию о исполняемом потоке, который в настоящее время выполняет сяочие, и перетекает в асинхронные точки в домене приложения. Также <xref:System.Security.Principal.WindowsIdentity> течет как часть информации, которая течет через асинхронные точки, при <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> условии, что олицетворение было достигнуто с помощью управляемых методов, таких как, а не с помощью других средств, таких как платформа ссылаться на родные методы. Этот элемент используется для указания того, что инообразная личность Windows действительно проходит через асинхронные точки, независимо от того, как было достигнуто олицетворение.  
+## <a name="remarks"></a>Примечания  
+ В .NET Framework версиях 1,0 и 1,1 идентификатор Windows не проходит через асинхронные точки. В .NET Framework версии 2,0 имеется <xref:System.Threading.ExecutionContext> объект, который содержит сведения о выполняемом в данный момент потоке и передает его между асинхронными точками в домене приложения. Также передается <xref:System.Security.Principal.WindowsIdentity> как часть информации, которая проходит через асинхронные точки, при условии, что олицетворение достигается с помощью управляемых методов, таких как <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> , а не с помощью других средств, таких как вызов неуправляемого кода в машинные методы. Этот элемент позволяет указать, что удостоверение Windows выполняет потоковую передачу через асинхронные точки независимо от того, как было достигнуто олицетворение.  
   
- Вы можете изменить это поведение по умолчанию двумя другими способами:  
+ Это поведение по умолчанию можно изменить двумя способами.  
   
-1. В управляемом коде на основе на поток.  
+1. В управляемом коде на основе каждого потока.  
   
-     Вы можете подавить поток на основе потока, <xref:System.Threading.ExecutionContext> <xref:System.Security.SecurityContext> изменяя и <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType> <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity%2A?displayProperty=nameWithType>настройки <xref:System.Security.SecurityContext.SuppressFlow%2A?displayProperty=nameWithType> с помощью, или метод.  
+     Можно подавить поток на основе каждого потока, изменив <xref:System.Threading.ExecutionContext> Параметры и с <xref:System.Security.SecurityContext> помощью <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType> <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity%2A?displayProperty=nameWithType> метода, или <xref:System.Security.SecurityContext.SuppressFlow%2A?displayProperty=nameWithType> .  
   
-2. При вызове к неуправляемому интерфейсу хостинга для загрузки общего языка времени выполнения (CLR).  
+2. В вызове неуправляемого интерфейса размещения для загрузки среды CLR.  
   
-     Если для загрузки CLR используется неуправляемый интерфейс хостинга (вместо простого управляемого исполнителя), можно указать специальный флаг в функции [CorBindToRuntimeEx.](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) Чтобы включить режим совместимости для всего процесса, установите `flags` параметр для `STARTUP_ALWAYSFLOW_IMPERSONATION` [функции CorBindToRuntimeEx.](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md)  
+     Если для загрузки среды CLR используется неуправляемый интерфейс размещения (вместо простого управляемого исполняемого файла), можно указать специальный флаг в вызове функции [функции CorBindToRuntimeEx](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) . Чтобы включить режим совместимости для всего процесса, задайте для `flags` параметра [CorBindToRuntimeEx функции](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) значение `STARTUP_ALWAYSFLOW_IMPERSONATION` .  
   
 ## <a name="configuration-file"></a>Файл конфигурации  
- В приложении .NET Framework этот элемент может быть использован только в файле конфигурации приложения.  
+ В приложении .NET Framework этот элемент можно использовать только в файле конфигурации приложения.  
   
- Для ASP.NET приложения поток олицетворения может быть настроен в файле aspnet.config, найденном в каталоге \<Windows Folder>-Microsoft.NET-Framework-vx.x.xxxx.  
+ Для приложения ASP.NET поток олицетворения можно настроить в файле aspnet. config, который находится в \<Windows Folder> каталоге \микрософт.нет\фрамеворк\вкс.КС.кскскскс.  
   
- ASP.NET по умолчанию отменяет поток олицетворения в файле aspnet.config с помощью следующих настроек конфигурации:  
+ ASP.NET по умолчанию отключает поток олицетворения в файле aspnet. config, используя следующие параметры конфигурации:  
   
 ```xml
 <configuration>  
@@ -84,7 +84,7 @@ ms.locfileid: "79154487"
 </configuration>  
 ```  
   
- В ASP.NET, если вместо этого требуется разрешить поток олицетворения, необходимо явно использовать следующие настройки конфигурации:  
+ В ASP.NET, если требуется разрешить поток олицетворения, необходимо явно использовать следующие параметры конфигурации:  
   
 ```xml  
 <configuration>  
@@ -96,7 +96,7 @@ ms.locfileid: "79154487"
 ```  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как указать, что идентификация Windows течет по асинхронным точкам, даже если олицетворение достигается с помощью других средств, помимо управляемых методов.  
+ В следующем примере показано, как указать, что удостоверение Windows проходит через асинхронные точки, даже если олицетворение достигается через средства, отличные от управляемых методов.  
   
 ```xml  
 <configuration>  
@@ -106,8 +106,8 @@ ms.locfileid: "79154487"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
-- [Схема конфигурации файлов](../index.md)
-- [\<legacyImpersonationПолитика> Элемент](legacyimpersonationpolicy-element.md)
+- [Схема файла конфигурации](../index.md)
+- [\<legacyImpersonationPolicy>Дерев](legacyimpersonationpolicy-element.md)

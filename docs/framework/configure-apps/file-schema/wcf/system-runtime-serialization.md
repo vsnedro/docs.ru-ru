@@ -3,16 +3,16 @@ title: <system.runtime.serialization>
 ms.date: 03/30/2017
 ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
 ms.openlocfilehash: c93a1f482882cc8cd9d229d82597efa64ba209bc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79152974"
 ---
-# <a name="systemruntimeserialization"></a>\<system.runtime.serialization>
+# \<system.runtime.serialization>
 Представляет корневой элемент для раздела пространства имен <xref:System.Runtime.Serialization> и содержит элементы для установки параметров <xref:System.Runtime.Serialization.DataContractSerializer>.  
 
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<system.runtime.serialization>**  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,7 +38,7 @@ ms.locfileid: "79152974"
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -50,9 +50,9 @@ ms.locfileid: "79152974"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<конфигурация> Элемент](../configuration-element.md)|Элемент конфигурации верхнего уровня.|  
+|[\<configuration>Дерев](../configuration-element.md)|Элемент конфигурации верхнего уровня.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization>
 - [Использование контрактов данных](../../../wcf/feature-details/using-data-contracts.md)

@@ -3,19 +3,19 @@ title: <routing>
 ms.date: 03/30/2017
 ms.assetid: a210c209-3940-4288-9a8e-39b1e62606bc
 ms.openlocfilehash: fcf2d4eec93fd7127c6f800e1c739ad1fac49203
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70399964"
 ---
-# <a name="routing"></a>\<> маршрутизации
+# \<routing>
 
-Представляет раздел конфигурации для определения набора фильтров маршрутизации, которые определяют тип Windows Communication Foundation (WCF) <xref:System.ServiceModel.Dispatcher.MessageFilter> , используемый при оценке входящих сообщений, а также таблицы маршрутизации, определяющие целевые конечные точки. Отправка сообщений в при совпадении фильтра.
+Представляет раздел конфигурации для определения набора фильтров маршрутизации, которые определяют тип Windows Communication Foundation (WCF), <xref:System.ServiceModel.Dispatcher.MessageFilter> используемый при оценке входящих сообщений, а также таблицы маршрутизации, определяющие целевые конечные точки для отправки сообщений при совпадении фильтра.
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<> маршрутизации**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<routing>**
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,20 +47,20 @@ ms.locfileid: "70399964"
 
 ### <a name="attributes"></a>Атрибуты
 
-Отсутствуют
+Нет
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |     | Описание |
 | --- | ----------- |
-| [ **\<Фильтры >** ](filters-of-routing.md) | Содержит набор фильтров маршрутизации, определяющих тип Windows Communication Foundation (WCF) MessageFilter, которые будут использоваться при оценке входящих сообщений. |
-| [ **\<Филтертаблес >** ](filtertables.md) | Содержит сопоставление между фильтрами маршрутизации и целевыми конечными точками для определения того, какие конечные точки будут использоваться при совпадении с критериями фильтра. |
+| [**\<filters>**](filters-of-routing.md) | Содержит набор фильтров маршрутизации, определяющих тип Windows Communication Foundation (WCF) MessageFilter, которые будут использоваться при оценке входящих сообщений. |
+| [**\<filterTables>**](filtertables.md) | Содержит сопоставление между фильтрами маршрутизации и целевыми конечными точками для определения того, какие конечные точки будут использоваться при совпадении с критериями фильтра. |
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |     | Описание |
 | --- | ----------- |
-| **\<системой. > ServiceModel** | Корневой элемент всех элементов конфигурации WCF. |
+| **\<system.ServiceModel>** | Корневой элемент всех элементов конфигурации WCF. |
 
 ## <a name="see-also"></a>См. также
 

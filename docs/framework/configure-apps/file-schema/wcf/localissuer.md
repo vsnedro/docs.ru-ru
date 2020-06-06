@@ -3,23 +3,23 @@ title: <localIssuer>
 ms.date: 03/30/2017
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
 ms.openlocfilehash: 055b7b49d1f775d49ac20de18c18ca0433716a23
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70397867"
 ---
-# <a name="localissuer"></a>\<Локалиссуер >
+# \<localIssuer>
 Указывает адрес и привязку локального издателя, используемого для получения маркера безопасности.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> поведения**](behaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<endpointBehaviors >** ](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> поведения**](behavior-of-endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> clientCredentials**](clientcredentials.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<issuedToken >** ](issuedtoken.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Локалиссуер >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<issuedToken>**](issuedtoken.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<localIssuer>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,27 +34,27 @@ ms.locfileid: "70397867"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|адрес|Обязательная строка. Указывает универсальный код ресурса (URI) локального издателя.|  
-|привязка|Необязательная строка. Одна из привязок, предоставляемых системой. Список см. в разделе [привязки, предоставляемые системой](../../../wcf/system-provided-bindings.md).|  
+|address|Обязательная строка. Указывает универсальный код ресурса (URI) локального издателя.|  
+|binding|Необязательная строка. Одна из привязок, предоставляемых системой. Список см. в разделе [привязки, предоставляемые системой](../../../wcf/system-provided-bindings.md).|  
 |bindingConfiguration|Необязательная строка. Указывает конфигурацию привязки в файле конфигурации.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<> удостоверений](identity.md)|Указывает идентификационные данные для локального издателя.|  
-|[\<заголовки >](headers-element.md)|Коллекция заголовков адреса, требуемых для правильного обращения к локальному издателю. Заголовок в эту коллекцию можно добавить с помощью ключевого слова `add`.|  
+|[\<identity>](identity.md)|Указывает идентификационные данные для локального издателя.|  
+|[\<headers>](headers-element.md)|Коллекция заголовков адреса, требуемых для правильного обращения к локальному издателю. Заголовок в эту коллекцию можно добавить с помощью ключевого слова `add`.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<issuedToken >](issuedtoken.md)|Задает пользовательский маркер, используемый для проверки подлинности клиента при подключении к службе.|  
+|[\<issuedToken>](issuedtoken.md)|Задает пользовательский маркер, используемый для проверки подлинности клиента при подключении к службе.|  
   
 ## <a name="remarks"></a>Примечания  
- При получении маркера от службы маркеров безопасности (STS) в клиентском приложении должны быть заданы адрес и привязка для установления соединения с STS. Если компонент не предоставляет URL-адрес для службы маркеров безопасности или если адресом издателя Федеративной привязки является `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` или `null`, канал Windows Communication Foundation клиента (WCF) использует значения, заданные параметром <xref:System.ServiceModel.WSFederationHttpBinding> `address` и`binding` для взаимодействия с STS для получения выданного маркера. Дополнительные сведения о настройке локального издателя см. в разделе [как Настройка локального издателя](../../../wcf/feature-details/how-to-configure-a-local-issuer.md).  
+ При получении маркера от службы маркеров безопасности (STS) в клиентском приложении должны быть заданы адрес и привязка для установления соединения с STS. Если <xref:System.ServiceModel.WSFederationHttpBinding> компонент не предоставляет URL-адрес для службы маркеров безопасности или если адресом издателя Федеративной привязки является `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` или `null` , канал Windows Communication Foundation клиента (WCF) использует значения, заданные параметром, `address` и, `binding` чтобы взаимодействовать с STS для получения выданного маркера. Дополнительные сведения о настройке локального издателя см. в разделе [как настроить локальный издатель](../../../wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
 ## <a name="example"></a>Пример  
  В следующем примере устанавливаются атрибуты `address`, `binding` и `bindingConfiguration` элемента `localIssuer`.  
@@ -83,12 +83,12 @@ ms.locfileid: "70397867"
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>
 - <xref:System.ServiceModel.Security.IssuedTokenClientCredential>
-- [Поведения безопасности](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Поведение безопасности](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [Практическое руководство. Настройка локального издателя](../../../wcf/feature-details/how-to-configure-a-local-issuer.md)
 - [Идентификация и проверка подлинности службы](../../../wcf/feature-details/service-identity-and-authentication.md)
-- [Поведения безопасности](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Поведение безопасности](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [Федерация и выданные маркеры](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [Защита служб и клиентов](../../../wcf/feature-details/securing-services-and-clients.md)
-- [Защита клиентов](../../../wcf/securing-clients.md)
+- [Обеспечение безопасности клиентов](../../../wcf/securing-clients.md)
 - [Практическое руководство. Создание федеративного клиента](../../../wcf/feature-details/how-to-create-a-federated-client.md)
 - [Федерация и выданные маркеры](../../../wcf/feature-details/federation-and-issued-tokens.md)

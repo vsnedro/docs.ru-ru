@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 ms.assetid: 4d4f6d76-49a5-4bad-b345-097b2e2844e9
 author: BrucePerlerMS
 ms.openlocfilehash: 14d596ae77019932d169e1a84732fb8522bfc46c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79152727"
 ---
 # <a name="windows-identity-foundation-configuration-schema"></a>Схема конфигурации Windows Identity Foundation
 
-В представленных в этом разделе статьях приводятся сведения о схеме конфигурации Windows Identity Foundation (WIF). Можно также настроить приложение для использования WIF через классы, подверженные фрейму. Эти классы указываются в разделах, посвященных соответствующим элементам схемы. Ниже показана базовая структура тегов XML, предоставляемая схемой конфигурации WIF. Атрибуты не приводятся. Выделенные комментарии указывают на основные компоненты схемы.  
+В представленных в этом разделе статьях приводятся сведения о схеме конфигурации Windows Identity Foundation (WIF). Вы также можете настроить приложение для использования WIF через классы, предоставляемые платформой. Эти классы указываются в разделах, посвященных соответствующим элементам схемы. Ниже показана базовая структура тегов XML, предоставляемая схемой конфигурации WIF. Атрибуты не приводятся. Выделенные комментарии указывают на основные компоненты схемы.  
   
 ```xml  
 <configuration>  
@@ -109,8 +109,8 @@ ms.locfileid: "79152727"
 </configuration>  
 ```  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
-[ \<system.identityМодель>](system-identitymodel.md) Обеспечивает конфигурацию для включения параметров WIF в приложениях.  
+[\<system.identityModel>](system-identitymodel.md)Предоставляет конфигурацию для включения параметров WIF в приложениях.  
   
-[ \<system.identityModel.services>](system-identitymodel-services.md) Обеспечивает конфигурацию для пассивной федерации с помощью WIF. Настраивает модуль проверки подлинности сеансов (SAM) и модуль федеративной проверки подлинности (WSFAM).
+[\<system.identityModel.services>](system-identitymodel-services.md)Предоставляет конфигурацию для пассивной федерации с помощью WIF. Настраивает модуль проверки подлинности сеансов (SAM) и модуль федеративной проверки подлинности (WSFAM).

@@ -4,20 +4,20 @@ ms.date: 03/30/2017
 ms.assetid: 1572ab23-6933-41b5-bfb4-0c4548145500
 author: BrucePerlerMS
 ms.openlocfilehash: 9f3a95fd0a39f199eaf13c7509aff22caa0e3b66
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70251786"
 ---
-# <a name="tokenreplaycache"></a>\<tokenReplayCache >
+# \<tokenReplayCache>
 Регистрирует кэш воспроизведения токенов с помощью службы или коллекции обработчиков маркеров безопасности.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. identityModel**](system-identitymodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[ **\<identityConfiguration >** ](identityconfiguration.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> кэшей**](caches.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<tokenReplayCache >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<caches>**](caches.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<tokenReplayCache>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,19 +39,19 @@ ms.locfileid: "70251786"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|type|Тип, производный от <xref:System.IdentityModel.Tokens.TokenReplayCache> класса. Дополнительные сведения о том, как указать пользовательский `type`параметр, см. в разделе [ссылки на пользовательские типы].
+|type|Тип, производный от <xref:System.IdentityModel.Tokens.TokenReplayCache> класса. Дополнительные сведения о том, как указать пользовательский параметр `type` , см. в разделе [ссылки на пользовательские типы].
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Отсутствуют  
+ Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<> кэшей](caches.md)|Регистрирует кэши, используемые службой или коллекцией обработчиков маркеров безопасности.|  
+|[\<caches>](caches.md)|Регистрирует кэши, используемые службой или коллекцией обработчиков маркеров безопасности.|  
   
 ## <a name="remarks"></a>Примечания  
- Кэш воспроизведения токенов используется для обнаружения воспроизводимых токенов. Обнаружение воспроизведения токенов включено [ \<элементом токенреплайдетектион >](tokenreplaydetection.md) , который также указывает максимальный срок действия токенов.  
+ Кэш воспроизведения токенов используется для обнаружения воспроизводимых токенов. Обнаружение воспроизведения токенов включается [\<tokenReplayDetection>](tokenreplaydetection.md) элементом, который также указывает максимальное время окончания срока действия токенов.  
   
 ## <a name="example"></a>Пример  
  В следующем коде XML показана конфигурация пользовательского кэша для обнаружения воспроизводимых токенов.  
@@ -66,4 +66,4 @@ ms.locfileid: "70251786"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Tokens.TokenReplayCache>
-- [\<Токенреплайдетектион >](tokenreplaydetection.md)
+- [\<tokenReplayDetection>](tokenreplaydetection.md)
