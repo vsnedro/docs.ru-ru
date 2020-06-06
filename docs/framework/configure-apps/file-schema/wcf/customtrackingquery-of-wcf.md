@@ -3,28 +3,28 @@ title: <customTrackingQuery>WCF
 ms.date: 03/30/2017
 ms.assetid: 164446ae-8440-4b67-b217-6786cfae1e01
 ms.openlocfilehash: 204bbb6cf5ebcb30bf92b697885ecbbbd94385e0
-ms.sourcegitcommit: 205b9a204742e9c77256d43ac9d94c3f82909808
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70855418"
 ---
-# <a name="customtrackingquery-of-wcf"></a><span data-ttu-id="8319b-102">\<Кустомтраккингкуери > WCF</span><span class="sxs-lookup"><span data-stu-id="8319b-102">\<customTrackingQuery> of WCF</span></span>
+# <a name="customtrackingquery-of-wcf"></a><span data-ttu-id="383bc-102">\<customTrackingQuery>WCF</span><span class="sxs-lookup"><span data-stu-id="383bc-102">\<customTrackingQuery> of WCF</span></span>
 
-<span data-ttu-id="8319b-103">Представляет запрос, который используется для трассировки событий, определенных в действиях кода.</span><span class="sxs-lookup"><span data-stu-id="8319b-103">Represents a query that is used to track events that you define in your code activities.</span></span> <span data-ttu-id="8319b-104">Запрос необходим, чтобы участник отслеживания подписался на пользовательские записи отслеживания.</span><span class="sxs-lookup"><span data-stu-id="8319b-104">The query is necessary for a tracking participant to subscribe to custom tracking records.</span></span>
+<span data-ttu-id="383bc-103">Представляет запрос, который используется для трассировки событий, определенных в действиях кода.</span><span class="sxs-lookup"><span data-stu-id="383bc-103">Represents a query that is used to track events that you define in your code activities.</span></span> <span data-ttu-id="383bc-104">Запрос необходим, чтобы участник отслеживания подписался на пользовательские записи отслеживания.</span><span class="sxs-lookup"><span data-stu-id="383bc-104">The query is necessary for a tracking participant to subscribe to custom tracking records.</span></span>
 
-<span data-ttu-id="8319b-105">Дополнительные сведения о запросах профиля отслеживания см. в разделе [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md) .</span><span class="sxs-lookup"><span data-stu-id="8319b-105">For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)</span></span>  
+<span data-ttu-id="383bc-105">Дополнительные сведения о запросах профиля отслеживания см. в разделе [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md) .</span><span class="sxs-lookup"><span data-stu-id="383bc-105">For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)</span></span>  
   
-<span data-ttu-id="8319b-106">[ **\<configuration>** ](../configuration-element.md)</span><span class="sxs-lookup"><span data-stu-id="8319b-106">[**\<configuration>**](../configuration-element.md)</span></span>\
-<span data-ttu-id="8319b-107">&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)</span><span class="sxs-lookup"><span data-stu-id="8319b-107">&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)</span></span>\
-<span data-ttu-id="8319b-108">&nbsp;&nbsp;&nbsp;&nbsp;[ **\<Отслеживание >** ](tracking-of-wcf.md)</span><span class="sxs-lookup"><span data-stu-id="8319b-108">&nbsp;&nbsp;&nbsp;&nbsp;[**\<tracking>**](tracking-of-wcf.md)</span></span>\
-<span data-ttu-id="8319b-109">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Профили >** </span><span class="sxs-lookup"><span data-stu-id="8319b-109">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<profiles>**</span></span>\
-<span data-ttu-id="8319b-110">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<trackingProfile >** ](trackingprofile-of-wcf.md)</span><span class="sxs-lookup"><span data-stu-id="8319b-110">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<trackingProfile>**](trackingprofile-of-wcf.md)</span></span>\
-<span data-ttu-id="8319b-111">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<> рабочего процесса**](workflow-of-wcf.md)</span><span class="sxs-lookup"><span data-stu-id="8319b-111">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflow>**](workflow-of-wcf.md)</span></span>\
-<span data-ttu-id="8319b-112">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ **\<Кустомтраккингкуериес >** ](customtrackingqueries-of-wcf.md)</span><span class="sxs-lookup"><span data-stu-id="8319b-112">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customTrackingQueries>**](customtrackingqueries-of-wcf.md)</span></span>\
-<span data-ttu-id="8319b-113">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **\<Кустомтраккингкуери >**</span><span class="sxs-lookup"><span data-stu-id="8319b-113">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<customTrackingQuery>**</span></span>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<tracking>**](tracking-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<profiles>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<trackingProfile>**](trackingprofile-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflow>**](workflow-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customTrackingQueries>**](customtrackingqueries-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<customTrackingQuery>**  
   
-## <a name="syntax"></a><span data-ttu-id="8319b-114">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="8319b-114">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="383bc-106">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="383bc-106">Syntax</span></span>  
   
 ```xml  
 <tracking>
@@ -41,30 +41,30 @@ ms.locfileid: "70855418"
 </tracking>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="8319b-115">Элементы и атрибуты</span><span class="sxs-lookup"><span data-stu-id="8319b-115">Attributes and elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="383bc-107">Элементы и атрибуты</span><span class="sxs-lookup"><span data-stu-id="383bc-107">Attributes and elements</span></span>  
 
-<span data-ttu-id="8319b-116">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="8319b-116">The following sections describe attributes, child elements, and parent elements.</span></span>  
+<span data-ttu-id="383bc-108">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="383bc-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="8319b-117">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="8319b-117">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="383bc-109">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="383bc-109">Attributes</span></span>  
   
-|<span data-ttu-id="8319b-118">Атрибут</span><span class="sxs-lookup"><span data-stu-id="8319b-118">Attribute</span></span>|<span data-ttu-id="8319b-119">Описание</span><span class="sxs-lookup"><span data-stu-id="8319b-119">Description</span></span>|  
+|<span data-ttu-id="383bc-110">Атрибут</span><span class="sxs-lookup"><span data-stu-id="383bc-110">Attribute</span></span>|<span data-ttu-id="383bc-111">Описание:</span><span class="sxs-lookup"><span data-stu-id="383bc-111">Description</span></span>|  
 |---------------|-----------------|  
-|`activityName`|<span data-ttu-id="8319b-120">Строка, задающая имя действия, сформировавшего запись отслеживания.</span><span class="sxs-lookup"><span data-stu-id="8319b-120">A string that specifies the name of the activity that generated the tracking record.</span></span>|  
-|`name`|<span data-ttu-id="8319b-121">Строка, задающая имя выдаваемой пользовательской записи отслеживания.</span><span class="sxs-lookup"><span data-stu-id="8319b-121">A string that specifies the name of the custom tracking record that is emitted.</span></span>|  
+|`activityName`|<span data-ttu-id="383bc-112">Строка, задающая имя действия, сформировавшего запись отслеживания.</span><span class="sxs-lookup"><span data-stu-id="383bc-112">A string that specifies the name of the activity that generated the tracking record.</span></span>|  
+|`name`|<span data-ttu-id="383bc-113">Строка, задающая имя выдаваемой пользовательской записи отслеживания.</span><span class="sxs-lookup"><span data-stu-id="383bc-113">A string that specifies the name of the custom tracking record that is emitted.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="8319b-122">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="8319b-122">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="383bc-114">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="383bc-114">Child elements</span></span>
 
-<span data-ttu-id="8319b-123">Нет.</span><span class="sxs-lookup"><span data-stu-id="8319b-123">None.</span></span>
+<span data-ttu-id="383bc-115">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="383bc-115">None.</span></span>
 
-### <a name="parent-elements"></a><span data-ttu-id="8319b-124">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="8319b-124">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="383bc-116">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="383bc-116">Parent elements</span></span>
 
-|<span data-ttu-id="8319b-125">Элемент</span><span class="sxs-lookup"><span data-stu-id="8319b-125">Element</span></span>|<span data-ttu-id="8319b-126">Описание</span><span class="sxs-lookup"><span data-stu-id="8319b-126">Description</span></span>|  
+|<span data-ttu-id="383bc-117">Элемент</span><span class="sxs-lookup"><span data-stu-id="383bc-117">Element</span></span>|<span data-ttu-id="383bc-118">Описание</span><span class="sxs-lookup"><span data-stu-id="383bc-118">Description</span></span>|  
 |-------------|-----------------|  
-|[<span data-ttu-id="8319b-127">\<Кустомтраккингкуериес ></span><span class="sxs-lookup"><span data-stu-id="8319b-127">\<customTrackingQueries></span></span>](customtrackingqueries-of-wcf.md)|<span data-ttu-id="8319b-128">Представляет коллекцию запросов, используемых для отслеживания событий, определенных в действиях кода.</span><span class="sxs-lookup"><span data-stu-id="8319b-128">Represents a collection of queries that are used to track events that you define in your code activities.</span></span>|
+|[\<customTrackingQueries>](customtrackingqueries-of-wcf.md)|<span data-ttu-id="383bc-119">Представляет коллекцию запросов, используемых для отслеживания событий, определенных в действиях кода.</span><span class="sxs-lookup"><span data-stu-id="383bc-119">Represents a collection of queries that are used to track events that you define in your code activities.</span></span>|
   
-## <a name="see-also"></a><span data-ttu-id="8319b-129">См. также</span><span class="sxs-lookup"><span data-stu-id="8319b-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="383bc-120">См. также</span><span class="sxs-lookup"><span data-stu-id="383bc-120">See also</span></span>
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>
-- [<span data-ttu-id="8319b-130">Отслеживание и трассировка рабочих процессов</span><span class="sxs-lookup"><span data-stu-id="8319b-130">Workflow Tracking and Tracing</span></span>](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [<span data-ttu-id="8319b-131">Профили отслеживания</span><span class="sxs-lookup"><span data-stu-id="8319b-131">Tracking Profiles</span></span>](../../../windows-workflow-foundation/tracking-profiles.md)
+- [<span data-ttu-id="383bc-121">Отслеживание и трассировка рабочих процессов</span><span class="sxs-lookup"><span data-stu-id="383bc-121">Workflow Tracking and Tracing</span></span>](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [<span data-ttu-id="383bc-122">Профили отслеживания</span><span class="sxs-lookup"><span data-stu-id="383bc-122">Tracking Profiles</span></span>](../../../windows-workflow-foundation/tracking-profiles.md)
