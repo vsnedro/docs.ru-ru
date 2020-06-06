@@ -9,18 +9,18 @@ helpviewer_keywords:
 - <mailSettings> element
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
 ms.openlocfilehash: 4e8bf23ce39edadf80f019315c690b597b3d7361
-ms.sourcegitcommit: 7f8eeef060ddeb2cabfa52843776faf652c5a1f5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74089233"
 ---
-# <a name="mailsettings-element-network-settings"></a>Элемент \<Маилсеттингс > (параметры сети)
+# <a name="mailsettings-element-network-settings"></a>Элемент \<mailSettings> (параметры сети)
 Настраивает параметры отправки почты.  
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<System. net >** ](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<маилсеттингс >**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<mailSettings>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,13 +40,13 @@ ms.locfileid: "74089233"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|[Элемент > SMTP \<(параметры сети)](smtp-element-network-settings.md)|Настраивает параметры протокола простого почтового транспорта.|  
+|[\<smtp>Элемент (параметры сети)](smtp-element-network-settings.md)|Настраивает параметры протокола простого почтового транспорта.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[Элемент \<system.Net> (сетевые параметры)](system-net-element-network-settings.md)|Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.|  
+|[\<system.Net>Элемент (параметры сети)](system-net-element-network-settings.md)|Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.|  
   
 ## <a name="example"></a>Пример  
  В следующем примере задаются соответствующие параметры SMTP для отправки электронной почты с использованием сетевых учетных данных по умолчанию.  

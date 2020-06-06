@@ -9,18 +9,18 @@ helpviewer_keywords:
 - <requestCaching> element
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
 ms.openlocfilehash: afee69eb894518b1c88483e34a1d64d452019244
-ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "74802131"
 ---
-# <a name="requestcaching-element-network-settings"></a>Элемент \<requestCaching> (сетевые параметры)
+# <a name="requestcaching-element-network-settings"></a>Элемент \<requestCaching> (параметры сети)
 Управляет механизмом кэширования для сетевых запросов.  
   
-[ **\<configuration>** ](../configuration-element.md)  
-&nbsp;&nbsp;[ **\<System. NET >** ](system-net-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp; **\<элемент requestcaching >**  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<requestCaching>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,11 +36,11 @@ ms.locfileid: "74802131"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
- Следующие разделы описывают атрибуты, дочерние элементы и родительские элементы.  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
 |`isPrivateCache`|Указывает, обеспечивает ли кэш изоляцию между данными разных пользователей. Значение по умолчанию — `true`. Это значение должно быть `false` для приложений среднего уровня.|  
 |`disableAllCaching`|Указывает, что кэширование отключено для всех веб-ответов и не может быть переопределено программным способом.|  
@@ -49,7 +49,7 @@ ms.locfileid: "74802131"
   
 ## <a name="policylevel-attribute"></a>Атрибут Полицилевел  
   
-|{2&gt;Value&lt;2}|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`Default`|Возвращает кэшированный ресурс, если ресурс является актуальным, длина содержимого является точной, а атрибуты срока действия, изменения и длины содержимого существуют.|  
 |`BypassCache`|Возвращает ресурс с сервера.|  
@@ -64,8 +64,8 @@ ms.locfileid: "74802131"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[defaultHttpCachePolicy](defaulthttpcachepolicy-element-network-settings.md)|Необязательный элемент.<br /><br /> Описывает, активно ли кэширование HTTP и описывает политику кэширования по умолчанию.|  
-|[Элемент \<Дефаултфтпкачеполици > (параметры сети)](defaultftpcachepolicy-element-network-settings.md)|Необязательный элемент.<br /><br /> Описывает, активно ли кэширование FTP и описывает политику кэширования по умолчанию.|  
+|[дефаулсттпкачеполици](defaulthttpcachepolicy-element-network-settings.md)|Необязательный элемент.<br /><br /> Описывает, активно ли кэширование HTTP и описывает политику кэширования по умолчанию.|  
+|[\<defaultFtpCachePolicy>Элемент (параметры сети)](defaultftpcachepolicy-element-network-settings.md)|Необязательный элемент.<br /><br /> Описывает, активно ли кэширование FTP и описывает политику кэширования по умолчанию.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -86,7 +86,7 @@ ms.locfileid: "74802131"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.Cache?displayProperty=nameWithType>
 - [Схема параметров сети](index.md)
