@@ -10,20 +10,20 @@ helpviewer_keywords:
 - assemblyIdentity element
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 ms.openlocfilehash: b026dafbde796bbd8726de56b532ed6710ba2290
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79154313"
 ---
-# <a name="assemblyidentity-element-for-runtime"></a>\<assemblyIdentity> \<Элемент для> времени выполнения
-Содержит идентифицирующую информацию о сборке.  
+# <a name="assemblyidentity-element-for-runtime"></a>Элемент \<assemblyIdentity> для \<runtime>
+Содержит идентифицирующие сведения о сборке.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<>выполнения**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<сборкаОбязательная>**](assemblybinding-element-for-runtime.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<зависимаясборка>**](dependentassembly-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<сборкаIdentityличная>**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyIdentity>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,24 +39,24 @@ culture="assembly culture"/>
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|`name`|Обязательный атрибут.<br /><br /> Название сборки|  
-|`culture`|Необязательный атрибут.<br /><br /> Строка, опоменавававательства языка и страны/региона собрания.|  
-|`publicKeyToken`|Необязательный атрибут.<br /><br /> Гексадецимическое значение, которое определяет сильное название сборки.|  
-|`processorArchitecture`|Необязательный атрибут.<br /><br /> Одно из значений "x86", "amd64", "msil" или "ia64", определяющее архитектуру процессора для сборки, содержащей код для процессора. Значения не чувствительны к случаям. Если атрибуту присваивается `<assemblyIdentity>` какое-либо другое значение, весь элемент игнорируется. См. раздел <xref:System.Reflection.ProcessorArchitecture>.|  
+|`name`|Обязательный атрибут.<br /><br /> Имя сборки|  
+|`culture`|Необязательный атрибут.<br /><br /> Строка, указывающая язык и страну или регион сборки.|  
+|`publicKeyToken`|Необязательный атрибут.<br /><br /> Шестнадцатеричное значение, указывающее строгое имя сборки.|  
+|`processorArchitecture`|Необязательный атрибут.<br /><br /> Одно из значений "x86", "amd64", "MSIL" или "ia64", определяющее архитектуру процессора для сборки, содержащей код, зависящий от процессора. В значениях регистр не учитывается. Если атрибуту присвоено любое другое значение, весь `<assemblyIdentity>` элемент игнорируется. См. раздел <xref:System.Reflection.ProcessorArchitecture>.|  
   
-## <a name="processorarchitecture-attribute"></a>processorArchitecture Атрибут  
+## <a name="processorarchitecture-attribute"></a>Атрибут processorArchitecture  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|`amd64`|AMD x86-64 только архитектура.|  
+|`amd64`|Только архитектура AMD x86-64.|  
 |`ia64`|Только архитектура Intel Itanium.|  
 |`msil`|Код нейтрален по отношению к процессору и разрядности слова.|  
-|`x86`|32-разрядный процессор x86, как родной, так и в среде Windows на Windows (WOW) на 64-битной платформе.|  
+|`x86`|32-разрядный процессор x86, либо собственный, либо в среде Windows on Windows (WOW) на 64-разрядной платформе.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -64,15 +64,15 @@ culture="assembly culture"/>
 |-------------|-----------------|  
 |`assemblyBinding`|Содержит сведения о перенаправлении версии сборки и о расположениях сборок.|  
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
-|`dependentAssembly`|Инкапсулирует политику привязки и расположение каждой сборки. Используйте `<dependentAssembly>` один элемент для каждой сборки.|  
+|`dependentAssembly`|Инкапсулирует политику привязки и расположение каждой сборки. `<dependentAssembly>`Для каждой сборки используется один элемент.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Remarks  
- Каждый ** \<зависимый элементсборки>** должен иметь одну ** \<сборкуIdentity>** элемента ребенка.  
+## <a name="remarks"></a>Примечания  
+ Каждый **\<dependentAssembly>** элемент должен иметь один **\<assemblyIdentity>** дочерний элемент.  
   
- При `processorArchitecture` наличии атрибута `<assemblyIdentity>` элемент применяется только к сборке с соответствующей архитектурой процессора. Если `processorArchitecture` атрибут не присутствует, `<assemblyIdentity>` элемент может применяться к сборке с любой архитектурой процессора.  
+ Если `processorArchitecture` атрибут имеется, `<assemblyIdentity>` элемент применяется только к сборке с соответствующей архитектурой процессора. Если `processorArchitecture` атрибут отсутствует, `<assemblyIdentity>` элемент может применяться к сборке с любой архитектурой процессора.  
   
- В следующем примере показан файл конфигурации для двух сборок с одинаковым именем, ориентированный на две разные две архитектуры процессора и версии которых не были синхронизированы. Когда приложение выполняется на платформе x86, первый `<assemblyIdentity>` элемент применяется, а другой игнорируется. Если приложение выполняется на платформе, кроме x86 или ia64, оба игнорируются.  
+ В следующем примере показан файл конфигурации для двух сборок с одинаковым именем, предназначенных для двух разных архитектур процессора, чьи версии не поддерживали синхронизацию. При выполнении приложения на платформе x86 первый `<assemblyIdentity>` элемент применяется, а другой игнорируется. Если приложение выполняется на платформе, отличной от x86 или ia64, то оба они игнорируются.  
   
 ```xml  
 <configuration>  
@@ -99,10 +99,10 @@ culture="assembly culture"/>
 </configuration>  
 ```  
   
- Если файл конфигурации `<assemblyIdentity>` содержит `processorArchitecture` элемент без атрибута и не содержит элемента, `processorArchitecture` который соответствует платформе, используется элемент без атрибута.  
+ Если файл конфигурации содержит элемент без `<assemblyIdentity>` `processorArchitecture` атрибута и не содержит элемент, соответствующий платформе, то используется элемент без `processorArchitecture` атрибута.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как предоставить информацию о сборке.  
+ В следующем примере показано, как предоставить сведения о сборке.  
   
 ```xml  
 <configuration>  
@@ -119,8 +119,8 @@ culture="assembly culture"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
-- [Схема конфигурации файлов](../index.md)
+- [Схема файла конфигурации](../index.md)
 - [Перенаправление версий сборки](../../redirect-assembly-versions.md)

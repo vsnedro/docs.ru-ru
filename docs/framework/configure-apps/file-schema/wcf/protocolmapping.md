@@ -3,18 +3,18 @@ title: <protocolMapping>
 ms.date: 03/30/2017
 ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
 ms.openlocfilehash: be4224ef1a8b17653df8123aaf89e105a496355a
-ms.sourcegitcommit: 093571de904fc7979e85ef3c048547d0accb1d8a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70400025"
 ---
-# <a name="protocolmapping"></a>\<Протоколмаппинг >
-Представляет раздел конфигурации для определения набора сопоставлений протоколов по умолчанию между схемами транспортного протокола (например, HTTP, net. TCP, net. pipe и т. д.) и привязками WCF. При создании конечных точек по умолчанию во время выполнения Windows Communication Foundation (WCF) рассматривает настроенные сопоставления и решает, какую привязку использовать для конкретного адреса на основе.  
+# \<protocolMapping>
+Представляет раздел конфигурации, в котором определяется набор сопоставления протоколов по умолчанию между схемами транспортных протоколов (например, http, net.tcp, net.pipe и т. д.) и привязками WCF. При создании конечных точек по умолчанию во время выполнения Windows Communication Foundation (WCF) рассматривает настроенные сопоставления и решает, какую привязку использовать для конкретного адреса на основе.  
   
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<Протоколмаппинг >**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<protocolMapping>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,13 +30,13 @@ ms.locfileid: "70400025"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<Фильтры>](filters-of-routing.md)|Содержит сопоставление протокола по умолчанию между схемой транспортного протокола (например, HTTP, net. TCP, net. pipe и т. д.) и привязкой WCF.|  
+|[\<filters>](filters-of-routing.md)|Содержит сопоставление протокола по умолчанию между схемой транспортного протокола (например http, net.tcp, net.pipe и т. д.) и привязкой WCF.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

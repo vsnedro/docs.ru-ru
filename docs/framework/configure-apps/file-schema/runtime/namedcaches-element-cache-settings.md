@@ -7,19 +7,19 @@ helpviewer_keywords:
 - <namedCaches> element
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
 ms.openlocfilehash: e0640ca18d386141f3c03135019eb4fe959b5bf8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79153962"
 ---
-# <a name="namedcaches-element-cache-settings"></a>\<имени Кэши> элемент (Настройки кэша)
-Определяет набор параметров конфигурации для названных <xref:System.Runtime.Caching.MemoryCache> экземпляров. Свойство <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> ссылается на набор параметров конфигурации из одного или нескольких `namedCaches` элементов файла конфигурации.  
+# <a name="namedcaches-element-cache-settings"></a>Элемент \<namedCaches> (параметры кэша)
+Задает коллекцию параметров конфигурации для именованных <xref:System.Runtime.Caching.MemoryCache> экземпляров. <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A>Свойство ссылается на коллекцию параметров конфигурации из одного или нескольких `namedCaches` элементов файла конфигурации.  
   
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.runtime.кэширования>**](system-runtime-caching-element-cache-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<памятьCache>**](memorycache-element-cache-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<имени Кэшес>**  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<memoryCache>**](memorycache-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namedCaches>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -29,7 +29,7 @@ ms.locfileid: "79153962"
 </namedCaches>  
 ```  
   
-## <a name="type"></a>Тип  
+## <a name="type"></a>Type  
  `None`  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
@@ -37,40 +37,40 @@ ms.locfileid: "79153962"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|attribute|Описание|  
+|Атрибут|Описание:|  
 |---------------|-----------------|  
-|`cacheMemoryLimitMegabytes`|Значение, которое определяет максимально допустимый размер, в мегабайтах, что <xref:System.Runtime.Caching.MemoryCache> экземпляр может вырасти до. Значение по умолчанию составляет 0, что означает, что <xref:System.Runtime.Caching.MemoryCache> аупизионизация эвристики класса используется по умолчанию.|  
+|`cacheMemoryLimitMegabytes`|Целочисленное значение, указывающее максимально допустимый размер (в мегабайтах), <xref:System.Runtime.Caching.MemoryCache> до которого может увеличиваться экземпляр. Значение по умолчанию — 0. Это означает, что по умолчанию используется эвристика автоподбора размера <xref:System.Runtime.Caching.MemoryCache> класса.|  
 |`name`|Имя кэша.|  
-|`physicalMemoryLimitPercentage`|Значение всей доли от 0 до 100, которое определяет максимальный процент физически установленной памяти компьютера, который может быть использован кэшем. Значение по умолчанию составляет 0, что означает, что <xref:System.Runtime.Caching.MemoryCache> аупизионизация эвристики класса используется по умолчанию.|  
-|`pollingInterval`|Значение, указывающее интервал, по истечении которого реализация кэша сравнивает текущую загрузку памяти с абсолютными и процентными ограничениями по памяти, заданными для данного экземпляра кэша. Это значение вводится в формате "HH:MM:SS".|  
+|`physicalMemoryLimitPercentage`|Целочисленное значение от 0 до 100, которое указывает максимальный процент физической памяти компьютера, который может потребляться кэшем. Значение по умолчанию — 0. Это означает, что по умолчанию используется эвристика автоподбора размера <xref:System.Runtime.Caching.MemoryCache> класса.|  
+|`pollingInterval`|Значение, указывающее интервал, по истечении которого реализация кэша сравнивает текущую загрузку памяти с абсолютными и процентными ограничениями по памяти, заданными для данного экземпляра кэша. Это значение указывается в формате "чч: мм: СС".|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<добавить>](add-element-for-namedcaches.md)|Добавляет именованный кэш к коллекции `namedCaches` для кэша памяти.|  
-|[\<ясно>](clear-element-for-namedcaches.md)|Очищает коллекцию `namedCaches` для кэша памяти.|  
-|[\<удалить>](remove-element-for-namedcaches.md)|Удаляет элемент именованного кэша из коллекции `namedCaches` для кэша памяти.|  
+|[\<add>](add-element-for-namedcaches.md)|Добавляет именованный кэш к коллекции `namedCaches` для кэша памяти.|  
+|[\<clear>](clear-element-for-namedcaches.md)|Очищает коллекцию `namedCaches` для кэша памяти.|  
+|[\<remove>](remove-element-for-namedcaches.md)|Удаляет элемент именованного кэша из коллекции `namedCaches` для кэша памяти.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<конфигурация>](../configuration-element.md)|Определяет корневой элемент в каждом файле конфигурации, который используется приложениями общего языка и приложениями .NET Framework.|  
-|[\<памятьCache>](memorycache-element-cache-settings.md)|Определяет элемент, используемый для настройки кэша, который основан на классе <xref:System.Runtime.Caching.MemoryCache> .|  
-|[\<system.runtime.кэширования>](system-runtime-caching-element-cache-settings.md)|Содержит типы, которые позволяют реализовать кэширование в приложениях, встроенных в рамку .NET.|  
+|[\<configuration>](../configuration-element.md)|Указывает корневой элемент в каждом файле конфигурации, который используется средой CLR и .NET Framework приложениями.|  
+|[\<memoryCache>](memorycache-element-cache-settings.md)|Определяет элемент, используемый для настройки кэша, который основан на классе <xref:System.Runtime.Caching.MemoryCache> .|  
+|[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Содержит типы, позволяющие реализовать кэширование вывода в приложениях, встроенных в .NET Framework.|  
   
-## <a name="remarks"></a>Remarks  
- Раздел конфигурации кэша памяти файла `add`Web.config может содержать `remove`атрибуты для `clear` коллекции. `namedCaches` Каждая `namedCaches` запись однозначно идентифицируется `name` атрибутом.  
+## <a name="remarks"></a>Примечания  
+ Раздел конфигурации кэша памяти файла Web. config может содержать `add` `remove` атрибуты, и `clear` для `namedCaches` коллекции. Каждая `namedCaches` запись уникально идентифицируется `name` атрибутом.  
   
- Вы можете получить экземпляры записей кэша памяти, ссылаясь на информацию в файлах конфигурации приложения. По умолчанию только экземпляр кэша по умолчанию имеет запись в файле конфигурации. Экземпляр кэша по умолчанию — <xref:System.Runtime.Caching.MemoryCache.Default%2A> это экземпляр, который возвращается из свойства.  
+ Экземпляры записей кэша памяти можно получить, обратившись к сведениям в файлах конфигурации приложения. По умолчанию в файле конфигурации содержится запись только для экземпляра кэша по умолчанию. Экземпляром кэша по умолчанию является экземпляр, который возвращается из <xref:System.Runtime.Caching.MemoryCache.Default%2A> Свойства.  
   
- При установке атрибута имени на "по умолчанию" элемент использует экземпляр кэша памяти по умолчанию.  
+ Если для атрибута name задано значение Default, то элемент использует экземпляр кэша памяти по умолчанию.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как установить имя кэша к `name` имени входа кэша по умолчанию, установив атрибут на "по умолчанию".  
+ В следующем примере показано, как задать имя кэша в качестве имени записи кэша по умолчанию, задав `name` для атрибута значение Default.  
   
- Атрибутам `cacheMemoryLimitMegabytes` и `physicalMemoryPercentage` присваивается нулевое значение. Установка этих атрибутов до нуля означает, что используются <xref:System.Runtime.Caching.MemoryCache> ауотизирующие эвристики класса. Реализация кэша сравнивает текущую нагрузку памяти с абсолютными и процентными ограничениями памяти каждые две минуты.  
+ Атрибутам `cacheMemoryLimitMegabytes` и `physicalMemoryPercentage` присваивается нулевое значение. Установка этих атрибутов равным нулю означает, что используется эвристический подход автоподбора размера <xref:System.Runtime.Caching.MemoryCache> класса. Реализация кэша сравнивает текущую загрузку памяти с абсолютными и процентными ограничениями памяти каждые две минуты.  
   
 ```xml  
 <configuration>  
@@ -89,6 +89,6 @@ ms.locfileid: "79153962"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [\<memoryCache> элемент (Настройки кэша)](memorycache-element-cache-settings.md)
+- [\<memoryCache>Элемент (параметры кэша)](memorycache-element-cache-settings.md)

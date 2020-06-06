@@ -9,18 +9,18 @@ helpviewer_keywords:
 - cryptoNameMapping element
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 ms.openlocfilehash: d31c5cd52ffe0e2a6eb5784735e76436d216444b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79155223"
 ---
-# <a name="cryptonamemapping-element"></a>\<cryptoNameMapping> элемент
+# <a name="cryptonamemapping-element"></a>Элемент \<cryptoNameMapping>
 Содержит сопоставления классов с понятными именами.  
 
-[**\<конфигурация>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<мскориб>**](mscorlib-element-for-cryptography-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<криптографияНастройки>**](cryptographysettings-element.md)\
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptoNameMapping>**
 
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +34,13 @@ ms.locfileid: "79155223"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|`cryptoClasses`|Содержит список классов криптографии, которые имеют отображение на дружественное имя в ** \<nameEntry>** элемент.|  
+|`cryptoClasses`|Содержит список криптографических классов, сопоставленных с понятным именем в **\<nameEntry>** элементе.|  
 |`nameEntry`|Сопоставляет имя класса с понятным именем алгоритма, что позволяет одному классу иметь несколько понятных имен.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -50,10 +50,10 @@ ms.locfileid: "79155223"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`cryptographySettings`|Содержит параметры шифрования.|  
 |`cryptoNameMapping`|Содержит сопоставления классов с понятными именами.|  
-|`mscorlib`|Содержит элемент \<cryptographySettings>.|  
+|`mscorlib`|Содержит \<cryptographySettings> элемент.|  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать ** \<элемент cryptoNameMapping>** для ссылки на класс криптографии и для настройки времени выполнения. Затем можно передать строку "RSA" <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> методу <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> и использовать `MyCryptoRSAClass` метод для возврата объекта.  
+ В следующем примере показано, как использовать **\<cryptoNameMapping>** элемент для ссылки на криптографический класс и настройки среды выполнения. Затем можно передать строку "RSA" в <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> метод и использовать <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> метод для возврата `MyCryptoRSAClass` объекта.  
   
 ```xml  
 <configuration>  
@@ -74,9 +74,9 @@ ms.locfileid: "79155223"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Схема конфигурации файлов](../index.md)
-- [Криптография Настройки Схема](index.md)
-- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
+- [Схема файла конфигурации](../index.md)
+- [Схема параметров криптографии](index.md)
+- [Службы шифрования](../../../../standard/security/cryptographic-services.md)
 - [Настройка криптографических классов](../../configure-cryptography-classes.md)

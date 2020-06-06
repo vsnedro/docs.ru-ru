@@ -6,18 +6,18 @@ f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#client
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
 ms.openlocfilehash: 7aa3755be97a839cb576d53852b75cfe50e39276
-ms.sourcegitcommit: 559259da2738a7b33a46c0130e51d336091c2097
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "72773947"
 ---
-# <a name="client"></a>> клиента \<
+# \<client>
 Элемент `client` определяет список конечных точек, к которым может подключаться клиент.
 
-[ **\<configuration>** ](../configuration-element.md)\
-&nbsp;&nbsp;[ **\<System. serviceModel >** ](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<клиента >**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<client>**
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,14 +36,14 @@ ms.locfileid: "72773947"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
- Отсутствуют
+ Нет
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[Конечная точка\<](endpoint-of-client.md)|Содержит коллекцию элементов Endpoint, указывающих конечные точки, к которым может подключаться этот клиент.|
-|[\<метаданных](metadata.md)|Содержит параметры обработки метаданных.|
+|[\<endpoint>](endpoint-of-client.md)|Содержит коллекцию элементов Endpoint, указывающих конечные точки, к которым может подключаться этот клиент.|
+|[\<metadata>](metadata.md)|Содержит параметры обработки метаданных.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -51,7 +51,7 @@ ms.locfileid: "72773947"
 |-------------|-----------------|
 |[\<system.serviceModel>](system-servicemodel.md)|Корневой элемент всех элементов конфигурации Windows Communication Foundation (WCF).|
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
  В разделе `client` определяется список конечных точек, к которым может подключаться клиент. Каждая конечная точка, указанная в разделе клиента, определяет свои собственные привязку, поведение и контракт. Она однозначно определяется сочетанием атрибутов `name` и `contract`. В коде клиента указывается атрибут `name` для подключения к конечной точке службы, выполняемой клиентом. Если атрибут `name` отсутствует, конечная точка действует как конечная точка по умолчанию для контракта, который она реализует.
 
  Кроме того, в данном разделе также задаются параметры обработки метаданных.

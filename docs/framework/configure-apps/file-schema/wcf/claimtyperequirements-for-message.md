@@ -1,15 +1,15 @@
 ---
-title: <claimTypeRequirements> для <message>
+title: <claimTypeRequirements> для <message>;
 ms.date: 03/30/2017
 ms.assetid: f95c5ecd-abb6-4b77-a6d7-a38727f4a142
 ms.openlocfilehash: db6717022bf3af0c4922818668595dd3937e9c71
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "61704411"
 ---
-# <a name="claimtyperequirements-for-message"></a>\<claimTypeRequirements > для \<сообщение >
+# <a name="claimtyperequirements-for-message"></a>\<claimTypeRequirements> для \<message>;
 Задает коллекцию обязательных типов утверждений.  
   
  Коллекция используется службой, чтобы задать обязательные и необязательные утверждения, которые должны содержаться в выданном маркере, используемом клиентом для доступа к службе. Служба предоставляет обязательные типы утверждений в метаданных, если публикация WDSL включена, но WCF не требует, чтобы выданный маркер содержал заданные типы утверждений. Службы, для которых необходимо принудительное наличие обязательных типов утверждений, должны использовать политику авторизации.  

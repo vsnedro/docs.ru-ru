@@ -3,19 +3,19 @@ title: <filters> из <routing>
 ms.date: 03/30/2017
 ms.assetid: 7993cf90-9afd-4c3c-9608-184d5da1105c
 ms.openlocfilehash: c9bc3a2c379e14d8cf687676a3ec40702d150e1e
-ms.sourcegitcommit: 205b9a204742e9c77256d43ac9d94c3f82909808
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "70855236"
 ---
-# <a name="filters-of-routing"></a>\<фильтрует > \<> маршрутизации
+# <a name="filters-of-routing"></a>\<filters> из \<routing>
 
-Представляет раздел конфигурации для определения набора фильтров маршрутизации, которые определяют тип Windows Communication Foundation (WCF) <xref:System.ServiceModel.Dispatcher.MessageFilter> , используемый при оценке входящих сообщений.
+Представляет раздел конфигурации для определения набора фильтров маршрутизации, которые определяют тип Windows Communication Foundation (WCF), <xref:System.ServiceModel.Dispatcher.MessageFilter> используемый при оценке входящих сообщений.
 
-[ **\<> System. serviceModel**](system-servicemodel.md)\
-&nbsp;&nbsp;[ **\<> маршрутизации**](routing.md)\
-&nbsp;&nbsp;&nbsp;&nbsp; **\<Фильтры >**  
+[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<filters>**  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,19 +38,19 @@ ms.locfileid: "70855236"
 
 ### <a name="attributes"></a>Атрибуты
 
-Отсутствуют
+Нет
 
 ### <a name="child-elements"></a>Дочерние элементы
 
 |     | Описание |
 | --- | ----------- |
-| [ **\<> фильтра**](filter.md) | Содержит фильтр маршрутизации, определяющий тип Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> , который будет использоваться при оценке входящих сообщений. |
+| [**\<filter>**](filter.md) | Содержит фильтр маршрутизации, определяющий тип Windows Communication Foundation (WCF), который <xref:System.ServiceModel.Dispatcher.MessageFilter> будет использоваться при оценке входящих сообщений. |
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |     | Описание |
 | --- | ----------- |
-| [ **\<> маршрутизации**](routing.md) | Представляет раздел конфигурации для определения набора фильтров маршрутизации, которые определяют тип Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> , используемый при оценке входящих сообщений, а также таблицы маршрутизации, определяющие целевые конечные точки. Отправка сообщений в при совпадении фильтра. |
+| [**\<routing>**](routing.md) | Представляет раздел конфигурации для определения набора фильтров маршрутизации, которые определяют тип Windows Communication Foundation (WCF), <xref:System.ServiceModel.Dispatcher.MessageFilter> используемый при оценке входящих сообщений, а также таблицы маршрутизации, определяющие целевые конечные точки для отправки сообщений при совпадении фильтра. |
 
 ## <a name="see-also"></a>См. также
 

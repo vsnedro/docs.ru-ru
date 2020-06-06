@@ -1,5 +1,5 @@
 ---
-title: <clear>Элемент <listeners> для<trace>
+title: <clear>Элемент для <listeners> для<trace>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/clear
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - <clear> element for <listeners> for <trace>
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
 ms.openlocfilehash: 905dad8274fede80f4809ff3c7a014049f9df450
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 06/06/2020
 ms.locfileid: "79153546"
 ---
-# <a name="clear-element-for-listeners-for-trace"></a>\<ясно> \<Элемент для \<слушателей> для следа>
+# <a name="clear-element-for-listeners-for-trace"></a>\<clear>Элемент для \<listeners> для\<trace>
 Очищает коллекцию `Listeners` для трассировки.  
 
-[**\<конфигурация>**](../configuration-element.md)\
+[**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<след>**](trace-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<слушатели>**](listeners-element-for-trace.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ясно>**
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<trace>**](trace-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-trace.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,7 +33,7 @@ ms.locfileid: "79153546"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет.  
+ Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Нет.  
@@ -45,20 +45,20 @@ ms.locfileid: "79153546"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`system.diagnostics`|Задает прослушиватели трассировки, собирающие, хранящие и маршрутизирующие сообщения, а также уровень, на котором установлен ключ трассировки.|  
 |`trace`|Содержит прослушиватели, которые собирают, хранят и маршрутизируют сообщения трассировки.|  
-|`listeners`|Содержит слушателей, которые собирают, хранят и направляют сообщения. Слушатели направляют результаты отслеживания на соответствующую цель.|  
+|`listeners`|Содержит прослушиватели, собирающие, сохраняющие и направляющие сообщения. Прослушиватели направляют выходные данные трассировки в соответствующий целевой объект.|  
   
-## <a name="remarks"></a>Remarks  
- Элемент `<clear>` удаляет всех слушателей `Listeners` из коллекции для отслеживания. Вы можете `<clear>` использовать элемент, `<add>` прежде чем использовать элемент, чтобы быть уверенным, что в коллекции нет других активных слушателей.  
+## <a name="remarks"></a>Примечания  
+ `<clear>`Элемент удаляет все прослушиватели из `Listeners` коллекции для трассировки. Элемент можно использовать `<clear>` перед использованием `<add>` элемента, чтобы убедиться в отсутствии других активных прослушивателей в коллекции.  
   
- Вы можете `Listeners` очистить коллекцию программно, <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> позвонив метод на <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> имущество (`System.Diagnostics.Trace.Listeners.Clear()`).  
+ Можно очистить `Listeners` коллекцию программным путем, вызвав <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> метод для <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> Свойства ( `System.Diagnostics.Trace.Listeners.Clear()` ).  
   
- Этот элемент может быть использован в файле конфигурации машины (Machine.config) и файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
   
 > [!NOTE]
-> Элемент `<clear>` <xref:System.Diagnostics.DefaultTraceListener> удаляет `Listeners` из коллекции, изменяя поведение <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType>, <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=nameWithType>и <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=nameWithType> методы. Вызов `Assert` или `Fail` метод обычно приводит к отображению ящика сообщений. Однако окно сообщений не отображается, <xref:System.Diagnostics.DefaultTraceListener> если `Listeners` его нет в коллекции.  
+> `<clear>`Элемент удаляет <xref:System.Diagnostics.DefaultTraceListener> из `Listeners` коллекции, изменяя поведение <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> методов,, <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=nameWithType> и <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=nameWithType> . Вызов `Assert` метода или `Fail` обычно приводит к отображению окна сообщения. Однако окно сообщения не отображается, если объект <xref:System.Diagnostics.DefaultTraceListener> отсутствует в `Listeners` коллекции.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, `<clear>` как `<add>` использовать элемент перед `console` использованием `Listeners` элемента для добавления слушателя в коллекцию для отслеживания.  
+ В следующем примере показано, как использовать `<clear>` элемент перед использованием `<add>` элемента для добавления прослушивателя `console` в `Listeners` коллекцию для трассировки.  
   
 ```xml  
 <configuration>  
@@ -77,12 +77,12 @@ ms.locfileid: "79153546"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.Trace.Listeners%2A>
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>
 - <xref:System.Diagnostics.TraceSource>
-- [Схема настроек трассировки и отпараги](index.md)
-- [\<удалить>](remove-element-for-listeners-for-trace.md)
+- [Схема параметров трассировки и отладки](index.md)
+- [\<remove>](remove-element-for-listeners-for-trace.md)
 - [Прослушиватели трассировки](../../../debug-trace-profile/trace-listeners.md)
