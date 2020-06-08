@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4e2d88c6-8a3a-4fbe-900b-b4f4c06bf6bf
 topic_type:
 - apiref
-ms.openlocfilehash: 91a19e5e15dddd446208dfa3b2c32826282067eb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a031cdb875b5eb046428d4d235d3093caddb7a6a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175399"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491294"
 ---
 # <a name="imetadataimportgetfieldmarshal-method"></a>Метод IMetaDataImport::GetFieldMarshal
-Получает указатель на родной, неуправляемый тип поля, представленный маркером метаданных указанного поля.  
+Возвращает указатель на собственный неуправляемый тип поля, представленного заданным токеном метаданных поля.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,24 +37,24 @@ HRESULT GetFieldMarshal (
   
 ## <a name="parameters"></a>Параметры  
  `tk`  
- (в) Токен метаданных, представляющий поле для получения информации о интеропе.  
+ окне Токен метаданных, представляющий поле, для которого необходимо получить сведения о маршалинге взаимодействия.  
   
  `ppvNativeType`  
- (ваут) Указатель на подпись метаданных родного типа поля.  
+ заполняет Указатель на сигнатуру метаданных собственного типа поля.  
   
  `pcbNativeType`  
- (ваут) Размер байтов `ppvNativeType`.  
+ заполняет Размер в байтах для `ppvNativeType` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

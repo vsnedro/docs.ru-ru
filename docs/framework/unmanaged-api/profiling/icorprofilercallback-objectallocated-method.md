@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: eb412622-77cc-4abd-a2cd-c910fe8edd54
 topic_type:
 - apiref
-ms.openlocfilehash: 38d9e83e9fa0e9cd0586fb10a6fd79c29bead4a6
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 9a402b7dfc3ece9d38994ed897162fe0d81ff0b9
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76866108"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503306"
 ---
 # <a name="icorprofilercallbackobjectallocated-method"></a>Метод ICorProfilerCallback::ObjectAllocated
-Уведомляет профилировщик о том, что для объекта выделена память в куче.  
+Уведомляет профилировщик о том, что память в куче была выделена для объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,19 +40,19 @@ HRESULT ObjectAllocated(
  `classId`  
  окне Идентификатор класса, экземпляр которого является объектом.  
   
-## <a name="remarks"></a>Заметки  
- Метод `ObjectedAllocated` не вызывается для выделений из стека или неуправляемой памяти. Параметр `classId` может ссылаться на класс в управляемом коде, который еще не был загружен. Профилировщик получит обратный вызов загрузки класса для этого класса сразу после `ObjectAllocated` обратного вызова.  
+## <a name="remarks"></a>Примечания  
+ `ObjectedAllocated`Метод не вызывается для выделений из стека или неуправляемой памяти. `classId`Параметр может ссылаться на класс в управляемом коде, который еще не был загружен. Профилировщик получит обратный вызов загрузки класса для этого класса сразу после `ObjectAllocated` обратного вызова.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ClassLoadStarted](icorprofilercallback-classloadstarted-method.md)

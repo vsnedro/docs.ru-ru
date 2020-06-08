@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9855f0e4-12c0-4d3d-ab5d-d6bc52d25eae
 topic_type:
 - apiref
-ms.openlocfilehash: 5faf1a6ae89045b2ef17fab789ee6e5bf23eecf2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 54c75156c32e5b40aa933ef6530b2cc33edf7de4
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175347"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84490995"
 ---
 # <a name="imetadataimportgetpermissionsetprops-method"></a>Метод IMetaDataImport::GetPermissionSetProps
-Получает метаданные, связанные <xref:System.Security.PermissionSet?displayProperty=nameWithType> с представленными указанным токеном «Разрешение».  
+Возвращает метаданные, связанные с <xref:System.Security.PermissionSet?displayProperty=nameWithType> объектом, представленным указанным маркером разрешений.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,28 +38,28 @@ HRESULT GetPermissionSetProps (
   
 ## <a name="parameters"></a>Параметры  
  `pm`  
- (в) Токен метаданных разрешения, представляющий набор разрешений для получения свойств метаданных.  
+ окне Маркер метаданных разрешения, представляющий набор разрешений, для которого необходимо получить свойства метаданных.  
   
  `pdwAction`  
- (ваут) Указатель на набор разрешений.  
+ заполняет Указатель на набор разрешений.  
   
  `ppvPermission`  
- (ваут) Указатель на двоичную подпись метаданных набора разрешений.  
+ заполняет Указатель на сигнатуру двоичных метаданных набора разрешений.  
   
  `pcbPermission`  
- (ваут) Размер байтов `ppvPermission`.  
+ заполняет Размер в байтах для `ppvPermission` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.PermissionSet>
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
