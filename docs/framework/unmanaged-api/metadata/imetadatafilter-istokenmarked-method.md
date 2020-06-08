@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 7d90dcee-0206-4540-807b-06982fe65f1a
 topic_type:
 - apiref
-ms.openlocfilehash: 47377e892aaf2bdd96a297630c47fe52215b0564
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: eb0ebab0f4e05d81730d5beb2b5345e319e8e274
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177380"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84492542"
 ---
-# <a name="imetadatafilteristokenmarked-method"></a><span data-ttu-id="88758-102">Метод IMetaDataFilter::IsTokenMarked</span><span class="sxs-lookup"><span data-stu-id="88758-102">IMetaDataFilter::IsTokenMarked Method</span></span>
-<span data-ttu-id="88758-103">Получает значение, указывающее, был ли указанный токен метаданных помечен как обработанный.</span><span class="sxs-lookup"><span data-stu-id="88758-103">Gets a value indicating whether the specified metadata token has been marked as processed.</span></span>  
+# <a name="imetadatafilteristokenmarked-method"></a><span data-ttu-id="131d0-102">Метод IMetaDataFilter::IsTokenMarked</span><span class="sxs-lookup"><span data-stu-id="131d0-102">IMetaDataFilter::IsTokenMarked Method</span></span>
+<span data-ttu-id="131d0-103">Возвращает значение, указывающее, помечен ли заданный маркер метаданных как обработанный.</span><span class="sxs-lookup"><span data-stu-id="131d0-103">Gets a value indicating whether the specified metadata token has been marked as processed.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="88758-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="88758-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="131d0-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="131d0-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT IsTokenMarked (  
@@ -34,22 +34,22 @@ HRESULT IsTokenMarked (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="88758-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="88758-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="131d0-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="131d0-105">Parameters</span></span>  
  `tk`  
- <span data-ttu-id="88758-106">(в) Токен для изучения для обрабатывающего знака.</span><span class="sxs-lookup"><span data-stu-id="88758-106">[in] The token to examine for a processing mark.</span></span>  
+ <span data-ttu-id="131d0-106">окне Токен для проверки на наличие метки обработки.</span><span class="sxs-lookup"><span data-stu-id="131d0-106">[in] The token to examine for a processing mark.</span></span>  
   
  `pIsMarked`  
- <span data-ttu-id="88758-107">(ваут) Значение, если `true` `tk` обработано; в `false`противном случае .</span><span class="sxs-lookup"><span data-stu-id="88758-107">[out] A value that is `true` if `tk` has been processed; otherwise `false`.</span></span>  
+ <span data-ttu-id="131d0-107">заполняет Значение, равное, если объект был `true` `tk` обработан; в противном случае — `false` .</span><span class="sxs-lookup"><span data-stu-id="131d0-107">[out] A value that is `true` if `tk` has been processed; otherwise `false`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="88758-108">Требования</span><span class="sxs-lookup"><span data-stu-id="88758-108">Requirements</span></span>  
- <span data-ttu-id="88758-109">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="88758-109">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="131d0-108">Требования</span><span class="sxs-lookup"><span data-stu-id="131d0-108">Requirements</span></span>  
+ <span data-ttu-id="131d0-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="131d0-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="88758-110">**Заголовок:** Cor.h</span><span class="sxs-lookup"><span data-stu-id="88758-110">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="131d0-110">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="131d0-110">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="88758-111">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="88758-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="131d0-111">**Библиотека:** Используется в качестве ресурса в MsCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="131d0-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="88758-112">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="88758-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="131d0-112">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="131d0-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="88758-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="88758-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="131d0-113">См. также</span><span class="sxs-lookup"><span data-stu-id="131d0-113">See also</span></span>
 
-- [<span data-ttu-id="88758-114">Интерфейс IMetaDataFilter</span><span class="sxs-lookup"><span data-stu-id="88758-114">IMetaDataFilter Interface</span></span>](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-interface.md)
+- [<span data-ttu-id="131d0-114">Интерфейс IMetaDataFilter</span><span class="sxs-lookup"><span data-stu-id="131d0-114">IMetaDataFilter Interface</span></span>](imetadatafilter-interface.md)

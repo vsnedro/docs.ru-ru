@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: f64c325a-ed3a-4aaf-b847-a88edbc4fefc
 topic_type:
 - apiref
-ms.openlocfilehash: edf5d61baae28a82aff0d0bd32d1d900085ac375
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: a308017dc80dd973cbf108ba9df824193775f5ff
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76867325"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501057"
 ---
-# <a name="cor_prf_clause_type-enumeration"></a><span data-ttu-id="0f625-102">Перечисление COR_PRF_CLAUSE_TYPE</span><span class="sxs-lookup"><span data-stu-id="0f625-102">COR_PRF_CLAUSE_TYPE Enumeration</span></span>
-<span data-ttu-id="0f625-103">Указывает тип предложения исключения, код которого был только что введен или удален.</span><span class="sxs-lookup"><span data-stu-id="0f625-103">Indicates the type of exception clause that the code has just entered or left.</span></span>  
+# <a name="cor_prf_clause_type-enumeration"></a><span data-ttu-id="45c5e-102">Перечисление COR_PRF_CLAUSE_TYPE</span><span class="sxs-lookup"><span data-stu-id="45c5e-102">COR_PRF_CLAUSE_TYPE Enumeration</span></span>
+<span data-ttu-id="45c5e-103">Указывает тип предложения исключения, код которого был только что введен или удален.</span><span class="sxs-lookup"><span data-stu-id="45c5e-103">Indicates the type of exception clause that the code has just entered or left.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="0f625-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="0f625-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="45c5e-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="45c5e-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum {  
@@ -35,24 +35,24 @@ typedef enum {
 } COR_PRF_CLAUSE_TYPE;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="0f625-105">Участники</span><span class="sxs-lookup"><span data-stu-id="0f625-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="45c5e-105">Участники</span><span class="sxs-lookup"><span data-stu-id="45c5e-105">Members</span></span>  
   
-|<span data-ttu-id="0f625-106">Член</span><span class="sxs-lookup"><span data-stu-id="0f625-106">Member</span></span>|<span data-ttu-id="0f625-107">Описание</span><span class="sxs-lookup"><span data-stu-id="0f625-107">Description</span></span>|  
+|<span data-ttu-id="45c5e-106">Член</span><span class="sxs-lookup"><span data-stu-id="45c5e-106">Member</span></span>|<span data-ttu-id="45c5e-107">Описание</span><span class="sxs-lookup"><span data-stu-id="45c5e-107">Description</span></span>|  
 |------------|-----------------|  
-|`COR_PRF_CLAUSE_NONE`|<span data-ttu-id="0f625-108">Недопустимое предложение исключения.</span><span class="sxs-lookup"><span data-stu-id="0f625-108">The exception clause is not valid.</span></span>|  
-|`COR_PRF_CLAUSE_FILTER`|<span data-ttu-id="0f625-109">Предложение Exception является критерием фильтра.</span><span class="sxs-lookup"><span data-stu-id="0f625-109">The exception clause is a filter expression.</span></span>|  
-|`COR_PRF_CLAUSE_CATCH`|<span data-ttu-id="0f625-110">Предложение Exception является оператором `catch`.</span><span class="sxs-lookup"><span data-stu-id="0f625-110">The exception clause is a `catch` statement.</span></span>|  
-|`COR_PRF_CLAUSE_FINALLY`|<span data-ttu-id="0f625-111">Предложение Exception является оператором `finally`.</span><span class="sxs-lookup"><span data-stu-id="0f625-111">The exception clause is a `finally` statement.</span></span>|  
+|`COR_PRF_CLAUSE_NONE`|<span data-ttu-id="45c5e-108">Недопустимое предложение исключения.</span><span class="sxs-lookup"><span data-stu-id="45c5e-108">The exception clause is not valid.</span></span>|  
+|`COR_PRF_CLAUSE_FILTER`|<span data-ttu-id="45c5e-109">Предложение Exception является критерием фильтра.</span><span class="sxs-lookup"><span data-stu-id="45c5e-109">The exception clause is a filter expression.</span></span>|  
+|`COR_PRF_CLAUSE_CATCH`|<span data-ttu-id="45c5e-110">Предложение Exception является `catch` оператором.</span><span class="sxs-lookup"><span data-stu-id="45c5e-110">The exception clause is a `catch` statement.</span></span>|  
+|`COR_PRF_CLAUSE_FINALLY`|<span data-ttu-id="45c5e-111">Предложение Exception является `finally` оператором.</span><span class="sxs-lookup"><span data-stu-id="45c5e-111">The exception clause is a `finally` statement.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="0f625-112">Требования</span><span class="sxs-lookup"><span data-stu-id="0f625-112">Requirements</span></span>  
- <span data-ttu-id="0f625-113">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="0f625-113">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="45c5e-112">Требования</span><span class="sxs-lookup"><span data-stu-id="45c5e-112">Requirements</span></span>  
+ <span data-ttu-id="45c5e-113">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="45c5e-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="0f625-114">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="0f625-114">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="45c5e-114">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="45c5e-114">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="0f625-115">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="0f625-115">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="45c5e-115">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="45c5e-115">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="0f625-116">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="0f625-116">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="45c5e-116">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="45c5e-116">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0f625-117">См. также:</span><span class="sxs-lookup"><span data-stu-id="0f625-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="45c5e-117">См. также</span><span class="sxs-lookup"><span data-stu-id="45c5e-117">See also</span></span>
 
-- [<span data-ttu-id="0f625-118">Перечисления профилирования</span><span class="sxs-lookup"><span data-stu-id="0f625-118">Profiling Enumerations</span></span>](profiling-enumerations.md)
+- [<span data-ttu-id="45c5e-118">Перечисления профилирования</span><span class="sxs-lookup"><span data-stu-id="45c5e-118">Profiling Enumerations</span></span>](profiling-enumerations.md)

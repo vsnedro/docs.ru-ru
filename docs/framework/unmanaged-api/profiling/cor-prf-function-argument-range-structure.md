@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 9f469eac-ac66-419b-8668-fe705bc1a51f
 topic_type:
 - apiref
-ms.openlocfilehash: dae5ed7c25f85051d1a28681fb88b056617c4de0
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 8b3785955ec138bbf898e84aa4deb5ed2a6e6b53
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76867255"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500953"
 ---
-# <a name="cor_prf_function_argument_range-structure"></a><span data-ttu-id="5ff06-102">Структура COR_PRF_FUNCTION_ARGUMENT_RANGE</span><span class="sxs-lookup"><span data-stu-id="5ff06-102">COR_PRF_FUNCTION_ARGUMENT_RANGE Structure</span></span>
-<span data-ttu-id="5ff06-103">Представляет блок аргументов функции, которые сохраняются в памяти последовательно слева направо.</span><span class="sxs-lookup"><span data-stu-id="5ff06-103">Represents a block of function arguments stored contiguously in left-to-right order in memory.</span></span>  
+# <a name="cor_prf_function_argument_range-structure"></a><span data-ttu-id="b85ff-102">Структура COR_PRF_FUNCTION_ARGUMENT_RANGE</span><span class="sxs-lookup"><span data-stu-id="b85ff-102">COR_PRF_FUNCTION_ARGUMENT_RANGE Structure</span></span>
+<span data-ttu-id="b85ff-103">Представляет блок аргументов функции, которые сохраняются в памяти последовательно слева направо.</span><span class="sxs-lookup"><span data-stu-id="b85ff-103">Represents a block of function arguments stored contiguously in left-to-right order in memory.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5ff06-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5ff06-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="b85ff-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b85ff-104">Syntax</span></span>  
   
 ```cpp  
 typedef struct _COR_PRF_FUNCTION_ARGUMENT_RANGE {  
@@ -33,22 +33,22 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_RANGE {
 } COR_PRF_FUNCTION_ARGUMENT_RANGE;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="5ff06-105">Участники</span><span class="sxs-lookup"><span data-stu-id="5ff06-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="b85ff-105">Участники</span><span class="sxs-lookup"><span data-stu-id="b85ff-105">Members</span></span>  
   
-|<span data-ttu-id="5ff06-106">Участники</span><span class="sxs-lookup"><span data-stu-id="5ff06-106">Members</span></span>|<span data-ttu-id="5ff06-107">Описание</span><span class="sxs-lookup"><span data-stu-id="5ff06-107">Description</span></span>|  
+|<span data-ttu-id="b85ff-106">Участники</span><span class="sxs-lookup"><span data-stu-id="b85ff-106">Members</span></span>|<span data-ttu-id="b85ff-107">Описание</span><span class="sxs-lookup"><span data-stu-id="b85ff-107">Description</span></span>|  
 |-------------|-----------------|  
-|`startAddress`|<span data-ttu-id="5ff06-108">Начальный адрес блока.</span><span class="sxs-lookup"><span data-stu-id="5ff06-108">The starting address of the block.</span></span>|  
-|`length`|<span data-ttu-id="5ff06-109">Длина непрерывного блока.</span><span class="sxs-lookup"><span data-stu-id="5ff06-109">The length of the contiguous block.</span></span>|  
+|`startAddress`|<span data-ttu-id="b85ff-108">Начальный адрес блока.</span><span class="sxs-lookup"><span data-stu-id="b85ff-108">The starting address of the block.</span></span>|  
+|`length`|<span data-ttu-id="b85ff-109">Длина непрерывного блока.</span><span class="sxs-lookup"><span data-stu-id="b85ff-109">The length of the contiguous block.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="5ff06-110">Требования</span><span class="sxs-lookup"><span data-stu-id="5ff06-110">Requirements</span></span>  
- <span data-ttu-id="5ff06-111">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="5ff06-111">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="b85ff-110">Требования</span><span class="sxs-lookup"><span data-stu-id="b85ff-110">Requirements</span></span>  
+ <span data-ttu-id="b85ff-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b85ff-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="5ff06-112">**Заголовок:** CorProf. idl</span><span class="sxs-lookup"><span data-stu-id="5ff06-112">**Header:** CorProf.idl</span></span>  
+ <span data-ttu-id="b85ff-112">**Заголовок:** CorProf. idl</span><span class="sxs-lookup"><span data-stu-id="b85ff-112">**Header:** CorProf.idl</span></span>  
   
- <span data-ttu-id="5ff06-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="5ff06-113">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="b85ff-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b85ff-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="5ff06-114">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5ff06-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="b85ff-114">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b85ff-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5ff06-115">См. также:</span><span class="sxs-lookup"><span data-stu-id="5ff06-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b85ff-115">См. также</span><span class="sxs-lookup"><span data-stu-id="b85ff-115">See also</span></span>
 
-- [<span data-ttu-id="5ff06-116">Структуры профилирования</span><span class="sxs-lookup"><span data-stu-id="5ff06-116">Profiling Structures</span></span>](profiling-structures.md)
+- [<span data-ttu-id="b85ff-116">Структуры профилирования</span><span class="sxs-lookup"><span data-stu-id="b85ff-116">Profiling Structures</span></span>](profiling-structures.md)

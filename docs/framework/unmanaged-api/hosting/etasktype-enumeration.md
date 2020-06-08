@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: aa527b31-89d4-41f2-ad6f-63b76950b7df
 topic_type:
 - apiref
-ms.openlocfilehash: 435d23d4a56d6ea98e3d368f0a5aa37c73e31d96
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 0fa72568df77c4916a3c6676e1dcca7c0c616c4a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616170"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493322"
 ---
-# <a name="etasktype-enumeration"></a><span data-ttu-id="07bd9-102">Перечисление ETaskType</span><span class="sxs-lookup"><span data-stu-id="07bd9-102">ETaskType Enumeration</span></span>
-<span data-ttu-id="07bd9-103">Содержит значения, указывающие тип задачи, представленной интерфейсом [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) или [IHostTask](ihosttask-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="07bd9-103">Contains values that indicate the type of task that is represented by either an [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) or an [IHostTask](ihosttask-interface.md) interface.</span></span>  
+# <a name="etasktype-enumeration"></a><span data-ttu-id="e91a4-102">Перечисление ETaskType</span><span class="sxs-lookup"><span data-stu-id="e91a4-102">ETaskType Enumeration</span></span>
+<span data-ttu-id="e91a4-103">Содержит значения, указывающие тип задачи, представленной интерфейсом [ICLRTask](iclrtask-interface.md) или [IHostTask](ihosttask-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="e91a4-103">Contains values that indicate the type of task that is represented by either an [ICLRTask](iclrtask-interface.md) or an [IHostTask](ihosttask-interface.md) interface.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="07bd9-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="07bd9-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="e91a4-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e91a4-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum ETaskType {  
@@ -42,31 +42,31 @@ typedef enum ETaskType {
 } ETaskType;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="07bd9-105">Участники</span><span class="sxs-lookup"><span data-stu-id="07bd9-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="e91a4-105">Участники</span><span class="sxs-lookup"><span data-stu-id="e91a4-105">Members</span></span>  
   
-|<span data-ttu-id="07bd9-106">Член</span><span class="sxs-lookup"><span data-stu-id="07bd9-106">Member</span></span>|<span data-ttu-id="07bd9-107">Описание</span><span class="sxs-lookup"><span data-stu-id="07bd9-107">Description</span></span>|  
+|<span data-ttu-id="e91a4-106">Член</span><span class="sxs-lookup"><span data-stu-id="e91a4-106">Member</span></span>|<span data-ttu-id="e91a4-107">Описание</span><span class="sxs-lookup"><span data-stu-id="e91a4-107">Description</span></span>|  
 |------------|-----------------|  
-|`TT_ADUNLOAD`|<span data-ttu-id="07bd9-108">Интерфейс представляет задачу выгрузки домена приложения.</span><span class="sxs-lookup"><span data-stu-id="07bd9-108">The interface represents an application domain unloading task.</span></span>|  
-|`TT_DEBUGGERHELPER`|<span data-ttu-id="07bd9-109">Интерфейс представляет вспомогательную задачу отладчика.</span><span class="sxs-lookup"><span data-stu-id="07bd9-109">The interface represents a debugger helper task.</span></span>|  
-|`TT_FINALIZER`|<span data-ttu-id="07bd9-110">Интерфейс представляет задачу финализатора.</span><span class="sxs-lookup"><span data-stu-id="07bd9-110">The interface represents a finalizer task.</span></span>|  
-|`TT_GC`|<span data-ttu-id="07bd9-111">Интерфейс представляет задачу сборки мусора.</span><span class="sxs-lookup"><span data-stu-id="07bd9-111">The interface represents a garbage collection task.</span></span>|  
-|`TT_THREADPOOL_GATE`|<span data-ttu-id="07bd9-112">Интерфейс представляет задачу потока шлюза.</span><span class="sxs-lookup"><span data-stu-id="07bd9-112">The interface represents a gate thread task.</span></span>|  
-|`TT_THREADPOOL_IOCOMPLETION`|<span data-ttu-id="07bd9-113">Интерфейс представляет задачу потока ввода-вывода или задачи потока порта завершения.</span><span class="sxs-lookup"><span data-stu-id="07bd9-113">The interface represents an I/O thread task or a completion port thread task.</span></span>|  
-|`TT_THREADPOOL_TIMER`|<span data-ttu-id="07bd9-114">Интерфейс представляет задачу потока таймера.</span><span class="sxs-lookup"><span data-stu-id="07bd9-114">The interface represents a timer thread task.</span></span>|  
-|`TT_THREADPOOL_WAIT`|<span data-ttu-id="07bd9-115">Интерфейс представляет задачу потока ожидания.</span><span class="sxs-lookup"><span data-stu-id="07bd9-115">The interface represents a wait thread task.</span></span>|  
-|`TT_THREADPOOL_WORKER`|<span data-ttu-id="07bd9-116">Интерфейс представляет задачу рабочего потока.</span><span class="sxs-lookup"><span data-stu-id="07bd9-116">The interface represents a worker thread task.</span></span>|  
-|`TT_UNKNOWN`|<span data-ttu-id="07bd9-117">Задача неизвестна.</span><span class="sxs-lookup"><span data-stu-id="07bd9-117">The task is unknown.</span></span>|  
-|`TT_USER`|<span data-ttu-id="07bd9-118">Интерфейс представляет задачу пользователя.</span><span class="sxs-lookup"><span data-stu-id="07bd9-118">The interface represents a user task.</span></span>|  
+|`TT_ADUNLOAD`|<span data-ttu-id="e91a4-108">Интерфейс представляет задачу выгрузки домена приложения.</span><span class="sxs-lookup"><span data-stu-id="e91a4-108">The interface represents an application domain unloading task.</span></span>|  
+|`TT_DEBUGGERHELPER`|<span data-ttu-id="e91a4-109">Интерфейс представляет вспомогательную задачу отладчика.</span><span class="sxs-lookup"><span data-stu-id="e91a4-109">The interface represents a debugger helper task.</span></span>|  
+|`TT_FINALIZER`|<span data-ttu-id="e91a4-110">Интерфейс представляет задачу финализатора.</span><span class="sxs-lookup"><span data-stu-id="e91a4-110">The interface represents a finalizer task.</span></span>|  
+|`TT_GC`|<span data-ttu-id="e91a4-111">Интерфейс представляет задачу сборки мусора.</span><span class="sxs-lookup"><span data-stu-id="e91a4-111">The interface represents a garbage collection task.</span></span>|  
+|`TT_THREADPOOL_GATE`|<span data-ttu-id="e91a4-112">Интерфейс представляет задачу потока шлюза.</span><span class="sxs-lookup"><span data-stu-id="e91a4-112">The interface represents a gate thread task.</span></span>|  
+|`TT_THREADPOOL_IOCOMPLETION`|<span data-ttu-id="e91a4-113">Интерфейс представляет задачу потока ввода-вывода или задачи потока порта завершения.</span><span class="sxs-lookup"><span data-stu-id="e91a4-113">The interface represents an I/O thread task or a completion port thread task.</span></span>|  
+|`TT_THREADPOOL_TIMER`|<span data-ttu-id="e91a4-114">Интерфейс представляет задачу потока таймера.</span><span class="sxs-lookup"><span data-stu-id="e91a4-114">The interface represents a timer thread task.</span></span>|  
+|`TT_THREADPOOL_WAIT`|<span data-ttu-id="e91a4-115">Интерфейс представляет задачу потока ожидания.</span><span class="sxs-lookup"><span data-stu-id="e91a4-115">The interface represents a wait thread task.</span></span>|  
+|`TT_THREADPOOL_WORKER`|<span data-ttu-id="e91a4-116">Интерфейс представляет задачу рабочего потока.</span><span class="sxs-lookup"><span data-stu-id="e91a4-116">The interface represents a worker thread task.</span></span>|  
+|`TT_UNKNOWN`|<span data-ttu-id="e91a4-117">Задача неизвестна.</span><span class="sxs-lookup"><span data-stu-id="e91a4-117">The task is unknown.</span></span>|  
+|`TT_USER`|<span data-ttu-id="e91a4-118">Интерфейс представляет задачу пользователя.</span><span class="sxs-lookup"><span data-stu-id="e91a4-118">The interface represents a user task.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="07bd9-119">Требования</span><span class="sxs-lookup"><span data-stu-id="07bd9-119">Requirements</span></span>  
- <span data-ttu-id="07bd9-120">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="07bd9-120">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="e91a4-119">Требования</span><span class="sxs-lookup"><span data-stu-id="e91a4-119">Requirements</span></span>  
+ <span data-ttu-id="e91a4-120">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="e91a4-120">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="07bd9-121">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="07bd9-121">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="e91a4-121">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="e91a4-121">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="07bd9-122">**Библиотека:** MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="07bd9-122">**Library:** MSCorEE.dll</span></span>  
+ <span data-ttu-id="e91a4-122">**Библиотека:** MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="e91a4-122">**Library:** MSCorEE.dll</span></span>  
   
- <span data-ttu-id="07bd9-123">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="07bd9-123">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="e91a4-123">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e91a4-123">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="07bd9-124">См. также статью</span><span class="sxs-lookup"><span data-stu-id="07bd9-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e91a4-124">См. также</span><span class="sxs-lookup"><span data-stu-id="e91a4-124">See also</span></span>
 
-- [<span data-ttu-id="07bd9-125">Размещение перечислений</span><span class="sxs-lookup"><span data-stu-id="07bd9-125">Hosting Enumerations</span></span>](hosting-enumerations.md)
+- [<span data-ttu-id="e91a4-125">Размещение перечислений</span><span class="sxs-lookup"><span data-stu-id="e91a4-125">Hosting Enumerations</span></span>](hosting-enumerations.md)
