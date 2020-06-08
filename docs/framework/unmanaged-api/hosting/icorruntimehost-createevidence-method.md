@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: e235ea80-b84c-4442-a4c3-fc96c25a8eb9
 topic_type:
 - apiref
-ms.openlocfilehash: 4a91f57126c0cf2074bd086ddb2fb4cd9e0716d4
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 264f16fc9e767584229376e67f5aee6db1069025
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762322"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501616"
 ---
-# <a name="icorruntimehostcreateevidence-method"></a><span data-ttu-id="9d42a-102">Метод ICorRuntimeHost::CreateEvidence</span><span class="sxs-lookup"><span data-stu-id="9d42a-102">ICorRuntimeHost::CreateEvidence Method</span></span>
-<span data-ttu-id="9d42a-103">Возвращает указатель интерфейса типа <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> , который позволяет основному приложению создавать доказательства безопасности для передачи в метод [CreateDomain](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md) или [CreateDomainEx](icorruntimehost-createdomainex-method.md) .</span><span class="sxs-lookup"><span data-stu-id="9d42a-103">Gets an interface pointer of type <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType>, which allows the host to create security evidence to pass to the [CreateDomain](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md) or [CreateDomainEx](icorruntimehost-createdomainex-method.md) method.</span></span>  
+# <a name="icorruntimehostcreateevidence-method"></a><span data-ttu-id="dd674-102">Метод ICorRuntimeHost::CreateEvidence</span><span class="sxs-lookup"><span data-stu-id="dd674-102">ICorRuntimeHost::CreateEvidence Method</span></span>
+<span data-ttu-id="dd674-103">Возвращает указатель интерфейса типа <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> , который позволяет основному приложению создавать доказательства безопасности для передачи в метод [CreateDomain](icorruntimehost-createdomain-method.md) или [CreateDomainEx](icorruntimehost-createdomainex-method.md) .</span><span class="sxs-lookup"><span data-stu-id="dd674-103">Gets an interface pointer of type <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType>, which allows the host to create security evidence to pass to the [CreateDomain](icorruntimehost-createdomain-method.md) or [CreateDomainEx](icorruntimehost-createdomainex-method.md) method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="9d42a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="9d42a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="dd674-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="dd674-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT CreateEvidence (  
@@ -33,33 +33,33 @@ HRESULT CreateEvidence (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="9d42a-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="9d42a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="dd674-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="dd674-105">Parameters</span></span>  
  `pEvidence`  
- <span data-ttu-id="9d42a-106">заполняет Указатель интерфейса на экземпляр, <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> используемый для создания свидетельств безопасности.</span><span class="sxs-lookup"><span data-stu-id="9d42a-106">[out] A interface pointer to an <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> instance used to create security evidence.</span></span> <span data-ttu-id="9d42a-107">Этот указатель типизирован `IUnknown` , поэтому вызывающие объекты обычно должны вызывать `QueryInterface` этот интерфейс для получения указателя на <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> .</span><span class="sxs-lookup"><span data-stu-id="9d42a-107">This pointer is typed `IUnknown`, so callers should typically call `QueryInterface` on this interface to obtain a pointer to an <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType>.</span></span>  
+ <span data-ttu-id="dd674-106">заполняет Указатель интерфейса на экземпляр, <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> используемый для создания свидетельств безопасности.</span><span class="sxs-lookup"><span data-stu-id="dd674-106">[out] A interface pointer to an <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> instance used to create security evidence.</span></span> <span data-ttu-id="dd674-107">Этот указатель типизирован `IUnknown` , поэтому вызывающие объекты обычно должны вызывать `QueryInterface` этот интерфейс для получения указателя на <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> .</span><span class="sxs-lookup"><span data-stu-id="dd674-107">This pointer is typed `IUnknown`, so callers should typically call `QueryInterface` on this interface to obtain a pointer to an <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType>.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="9d42a-108">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="9d42a-108">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="dd674-108">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="dd674-108">Return Value</span></span>  
   
-|<span data-ttu-id="9d42a-109">HRESULT</span><span class="sxs-lookup"><span data-stu-id="9d42a-109">HRESULT</span></span>|<span data-ttu-id="9d42a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9d42a-110">Description</span></span>|  
+|<span data-ttu-id="dd674-109">HRESULT</span><span class="sxs-lookup"><span data-stu-id="dd674-109">HRESULT</span></span>|<span data-ttu-id="dd674-110">Описание</span><span class="sxs-lookup"><span data-stu-id="dd674-110">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="9d42a-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="9d42a-111">S_OK</span></span>|<span data-ttu-id="9d42a-112">Операция выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="9d42a-112">The operation was successful.</span></span>|  
-|<span data-ttu-id="9d42a-113">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="9d42a-113">S_FALSE</span></span>|<span data-ttu-id="9d42a-114">Не удалось завершить операцию.</span><span class="sxs-lookup"><span data-stu-id="9d42a-114">The operation failed to complete.</span></span>|  
-|<span data-ttu-id="9d42a-115">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="9d42a-115">E_FAIL</span></span>|<span data-ttu-id="9d42a-116">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="9d42a-116">An unknown, catastrophic failure occurred.</span></span> <span data-ttu-id="9d42a-117">Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="9d42a-117">If a method returns E_FAIL, the common language runtime (CLR) is no longer usable in the process.</span></span> <span data-ttu-id="9d42a-118">Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="9d42a-118">Subsequent calls to any hosting APIs return HOST_E_CLRNOTAVAILABLE.</span></span>|  
-|<span data-ttu-id="9d42a-119">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="9d42a-119">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="9d42a-120">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="9d42a-120">The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
+|<span data-ttu-id="dd674-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="dd674-111">S_OK</span></span>|<span data-ttu-id="dd674-112">Операция выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="dd674-112">The operation was successful.</span></span>|  
+|<span data-ttu-id="dd674-113">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="dd674-113">S_FALSE</span></span>|<span data-ttu-id="dd674-114">Не удалось завершить операцию.</span><span class="sxs-lookup"><span data-stu-id="dd674-114">The operation failed to complete.</span></span>|  
+|<span data-ttu-id="dd674-115">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="dd674-115">E_FAIL</span></span>|<span data-ttu-id="dd674-116">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="dd674-116">An unknown, catastrophic failure occurred.</span></span> <span data-ttu-id="dd674-117">Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="dd674-117">If a method returns E_FAIL, the common language runtime (CLR) is no longer usable in the process.</span></span> <span data-ttu-id="dd674-118">Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="dd674-118">Subsequent calls to any hosting APIs return HOST_E_CLRNOTAVAILABLE.</span></span>|  
+|<span data-ttu-id="dd674-119">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="dd674-119">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="dd674-120">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="dd674-120">The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="9d42a-121">Комментарии</span><span class="sxs-lookup"><span data-stu-id="9d42a-121">Remarks</span></span>  
- <span data-ttu-id="9d42a-122">Этот метод возвращает пустую коллекцию, которая не может быть заполнена из машинного кода.</span><span class="sxs-lookup"><span data-stu-id="9d42a-122">This method returns an empty collection that cannot be populated from native code.</span></span> <span data-ttu-id="9d42a-123">Вместо этого следует использовать <xref:System.Security.Policy.Evidence> метод.</span><span class="sxs-lookup"><span data-stu-id="9d42a-123">You should use the <xref:System.Security.Policy.Evidence> method instead.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="dd674-121">Примечания</span><span class="sxs-lookup"><span data-stu-id="dd674-121">Remarks</span></span>  
+ <span data-ttu-id="dd674-122">Этот метод возвращает пустую коллекцию, которая не может быть заполнена из машинного кода.</span><span class="sxs-lookup"><span data-stu-id="dd674-122">This method returns an empty collection that cannot be populated from native code.</span></span> <span data-ttu-id="dd674-123">Вместо этого следует использовать <xref:System.Security.Policy.Evidence> метод.</span><span class="sxs-lookup"><span data-stu-id="dd674-123">You should use the <xref:System.Security.Policy.Evidence> method instead.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="9d42a-124">Требования</span><span class="sxs-lookup"><span data-stu-id="9d42a-124">Requirements</span></span>  
- <span data-ttu-id="9d42a-125">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="9d42a-125">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="dd674-124">Требования</span><span class="sxs-lookup"><span data-stu-id="dd674-124">Requirements</span></span>  
+ <span data-ttu-id="dd674-125">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="dd674-125">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="9d42a-126">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="9d42a-126">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="dd674-126">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="dd674-126">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="9d42a-127">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="9d42a-127">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="dd674-127">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="dd674-127">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="9d42a-128">**Версия .NET Framework:** 1,0, 1,1</span><span class="sxs-lookup"><span data-stu-id="9d42a-128">**.NET Framework Version:** 1.0, 1.1</span></span>  
+ <span data-ttu-id="dd674-128">**Версия .NET Framework:** 1,0, 1,1</span><span class="sxs-lookup"><span data-stu-id="dd674-128">**.NET Framework Version:** 1.0, 1.1</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="9d42a-129">См. также</span><span class="sxs-lookup"><span data-stu-id="9d42a-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dd674-129">См. также</span><span class="sxs-lookup"><span data-stu-id="dd674-129">See also</span></span>
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
-- [<span data-ttu-id="9d42a-130">Интерфейс ICorRuntimeHost</span><span class="sxs-lookup"><span data-stu-id="9d42a-130">ICorRuntimeHost Interface</span></span>](icorruntimehost-interface.md)
+- [<span data-ttu-id="dd674-130">Интерфейс ICorRuntimeHost</span><span class="sxs-lookup"><span data-stu-id="dd674-130">ICorRuntimeHost Interface</span></span>](icorruntimehost-interface.md)
