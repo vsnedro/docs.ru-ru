@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 8cdac941-8b94-4497-b874-4e571785f3fe
 topic_type:
 - apiref
-ms.openlocfilehash: 0b1ecd1266528f8a08ef114de2f111dd0f71ca8b
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: a2a3d58e0631fceab96c32f9d86fef25973fed84
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76866935"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500667"
 ---
 # <a name="functionleave2-function"></a>Функция FunctionLeave2
 Уведомляет профилировщик о том, что функция собирается вернуться к вызывающему объекту, и предоставляет сведения о кадре стека и возвращаемом значении функции.  
@@ -47,20 +47,20 @@ void __stdcall FunctionLeave2 (
 
 - `func`
 
-  \[in] `COR_PRF_FRAME_INFO` значение, указывающее на сведения о кадре стека.
+  \[в] `COR_PRF_FRAME_INFO` значение, указывающее на сведения о кадре стека.
 
   Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .  
   
 - `retvalRange`
 
-  \[в] указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) , указывающую расположение в памяти возвращаемого значения функции.
+  \[in] указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) , указывающую расположение в памяти возвращаемого значения функции.
 
-  Чтобы получить доступ к сведениям о возвращаемом значении, необходимо установить флаг `COR_PRF_ENABLE_FUNCTION_RETVAL`. Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий.
+  Чтобы получить доступ к сведениям о возвращаемом значении, `COR_PRF_ENABLE_FUNCTION_RETVAL` необходимо установить флаг. Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий.
 
-## <a name="remarks"></a>Заметки  
- Значения параметров `func` и `retvalRange` недопустимы после возврата функции `FunctionLeave2`, поскольку значения могут измениться или быть уничтожены.  
+## <a name="remarks"></a>Примечания  
+ Значения `func` `retvalRange` параметров и недопустимы после `FunctionLeave2` возврата функции, так как значения могут измениться или быть уничтожены.  
   
- Функция `FunctionLeave2` является обратным вызовом. его необходимо реализовать. Реализация должна использовать атрибут класса хранения `__declspec`(`naked`).  
+ `FunctionLeave2`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec` `naked` атрибут класса хранения ().  
   
  Подсистема выполнения не сохраняет никакие регистры перед вызовом этой функции.  
   
@@ -68,20 +68,20 @@ void __stdcall FunctionLeave2 (
   
 - При выходе необходимо восстановить стек, выключив все параметры, которые были переданы его вызывающим.  
   
- Реализация `FunctionLeave2` не должна блокироваться, так как она приведет к задержке сборки мусора. Реализация не должна пытаться выполнить сборку мусора, так как стек может не находиться в состоянии, понятном для сборки мусора. Если выполняется сборка мусора, среда выполнения блокируется до тех пор, пока не будет возвращено `FunctionLeave2`.  
+ Реализация `FunctionLeave2` не должна блокироваться, так как она приведет к задержке сборки мусора. Реализация не должна пытаться выполнить сборку мусора, так как стек может не находиться в состоянии, понятном для сборки мусора. Если выполняется сборка мусора, среда выполнения будет блокироваться до тех пор, пока не `FunctionLeave2` вернет.  
   
- Кроме того, функция `FunctionLeave2` не должна вызывать управляемый код или каким-либо образом приводит к выделению управляемой памяти.  
+ Кроме того, `FunctionLeave2` функция не должна вызывать управляемый код или каким-либо образом приводит к выделению управляемой памяти.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionTailcall2](functiontailcall2-function.md)

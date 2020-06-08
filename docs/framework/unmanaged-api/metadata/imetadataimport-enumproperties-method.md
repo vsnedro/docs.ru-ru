@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 60573ad7-8821-4721-a068-3f7a6d25926a
 topic_type:
 - apiref
-ms.openlocfilehash: 4fed7dbe4ec8343a3854d1f277e3228b14c0bf21
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 39343ffc88fc9b421b916e33e3e75e4e34fc233d
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74450027"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503795"
 ---
 # <a name="imetadataimportenumproperties-method"></a>Метод IMetaDataImport::EnumProperties
 Перечисляет токены PropertyDef, представляющие свойства типа, на который ссылается указанный токен TypeDef.  
@@ -51,25 +51,25 @@ HRESULT EnumProperties (
  [in] Максимальный размер массива `rProperties`.  
   
  `pcProperties`  
- заполняет Число маркеров Пропертидеф, возвращаемых в `rProperties`.  
+ заполняет Число токенов Пропертидеф, возвращаемых в `rProperties` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumProperties` успешно возвращено.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом случае `pcProperties` равно нулю.|  
+|`S_OK`|`EnumProperties`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcProperties` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

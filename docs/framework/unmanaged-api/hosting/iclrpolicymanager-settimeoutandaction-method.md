@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
 topic_type:
 - apiref
-ms.openlocfilehash: efd30ef04c148d5e098110efcb37e50f143884e4
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 02e836601be72d54f561e077cd3c466470bafb25
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703423"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504099"
 ---
 # <a name="iclrpolicymanagersettimeoutandaction-method"></a>Метод ICLRPolicyManager::SetTimeoutAndAction
 Задает значение времени ожидания для указанной операции и указывает действие политики, которое должна выполнять среда CLR при выполнении операции.  
@@ -65,8 +65,8 @@ HRESULT SetTimeoutAndAction (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_INVALIDARG|Не удается задать время ожидания для указанного `operation` или указано недопустимое значение для `action` .|  
   
-## <a name="remarks"></a>Комментарии  
- `SetTimeoutAndAction`Инкапсулирует возможности методов [ICLRPolicyManager:: setTimeout](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-settimeout-method.md) и [ICLRPolicyManager:: сетактиононтимеаут](iclrpolicymanager-setactionontimeout-method.md) , и их можно вызывать вместо последовательных вызовов этих двух методов.  
+## <a name="remarks"></a>Примечания  
+ `SetTimeoutAndAction`Инкапсулирует возможности методов [ICLRPolicyManager:: setTimeout](iclrpolicymanager-settimeout-method.md) и [ICLRPolicyManager:: сетактиононтимеаут](iclrpolicymanager-setactionontimeout-method.md) , и их можно вызывать вместо последовательных вызовов этих двух методов.  
   
 > [!IMPORTANT]
 > Не все значения действий политики могут быть указаны в качестве поведения времени ожидания для операций среды CLR. Допустимые значения см. в подразделах "Примечания" для этих двух методов.  
@@ -80,7 +80,7 @@ HRESULT SetTimeoutAndAction (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrOperation](eclroperation-enumeration.md)
 - [Перечисление EPolicyAction](epolicyaction-enumeration.md)
