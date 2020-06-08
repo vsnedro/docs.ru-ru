@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4369533d-7834-4497-bc37-bfea0ad737b1
 topic_type:
 - apiref
-ms.openlocfilehash: ac4787379436faa568727329e7b012f83d0a53d5
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 4b8018bb84dea08987d91f351b1ab0d9f3b48c56
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83760736"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503904"
 ---
 # <a name="icorruntimehost-interface"></a>Интерфейс ICorRuntimeHost
 Предоставляет методы, позволяющие основному приложению запускать и прекращать работу среды CLR, создавать и настраивать домены приложений, получать доступ к домену по умолчанию и перечислять все домены, выполняющиеся в процессе.  
@@ -34,7 +34,7 @@ ms.locfileid: "83760736"
 |[Метод CreateDomain](icorruntimehost-createdomain-method.md)|Создает домен приложения. Вызывающий объект получает указатель интерфейса типа <xref:System._AppDomain> на экземпляр типа <xref:System.AppDomain?displayProperty=nameWithType> .|  
 |[Метод CreateDomainEx](icorruntimehost-createdomainex-method.md)|Создает домен приложения. Этот метод позволяет вызывающему объекту передать экземпляр IAppDomainSetup для настройки дополнительных функций возвращаемого <xref:System._AppDomain> экземпляра.|  
 |[Метод CreateDomainSetup](icorruntimehost-createdomainsetup-method.md)|Возвращает указатель интерфейса типа `IAppDomainSetup` на <xref:System.AppDomainSetup> экземпляр. `IAppDomainSetup`предоставляет методы для настройки аспектов домена приложения перед его созданием.|  
-|[Метод CreateEvidence](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createevidence-method.md)|Возвращает указатель интерфейса типа <xref:System.Security.Principal.IIdentity> , который позволяет основному приложению создавать доказательства безопасности для передачи в [CreateDomain](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomain-method.md) или [CreateDomainEx](icorruntimehost-createdomainex-method.md).|  
+|[Метод CreateEvidence](icorruntimehost-createevidence-method.md)|Возвращает указатель интерфейса типа <xref:System.Security.Principal.IIdentity> , который позволяет основному приложению создавать доказательства безопасности для передачи в [CreateDomain](icorruntimehost-createdomain-method.md) или [CreateDomainEx](icorruntimehost-createdomainex-method.md).|  
 |[Метод CreateLogicalThreadState](icorruntimehost-createlogicalthreadstate-method.md)|Не используйте.|  
 |[Метод CurrentDomain](icorruntimehost-currentdomain-method.md)|Возвращает указатель интерфейса типа <xref:System._AppDomain> , который представляет домен, загруженный в текущем потоке.|  
 |[Метод DeleteLogicalThreadState](icorruntimehost-deletelogicalthreadstate-method.md)|Не используйте.|  

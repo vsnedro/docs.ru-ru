@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aae9fb17-5d01-41da-9773-1b5b5b642d81
 topic_type:
 - apiref
-ms.openlocfilehash: dcf2ce8bdb7cec1f567e548ff3314e160fffe9fd
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: e66b63ffa4ed25e861cff6bd9eb6065f57ff807f
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616636"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493504"
 ---
 # <a name="corbindtoruntimeex-function"></a>Функция CorBindToRuntimeEx
 Позволяет неуправляемым узлам загружать среду CLR в процесс. [CorBindToRuntime](corbindtoruntime-function.md) и `CorBindToRuntimeEx` функции выполняют одну и ту же операцию, но `CorBindToRuntimeEx` функция позволяет устанавливать флаги для указания поведения среды CLR.  
@@ -71,7 +71,7 @@ HRESULT CorBindToRuntimeEx (
  Если параметр `pwszBuildFlavor` имеет значение null, загружается сборка рабочей станции. При запуске на однопроцессорном компьютере сборка рабочей станции всегда загружается, даже если параметр `pwszBuildFlavor` имеет значение `svr` . Однако если задано `pwszBuildFlavor` значение `svr` и задана параллельная сборка мусора (см `startupFlags` . Описание параметра), то загружается серверная сборка.  
   
  `startupFlags`  
- окне Сочетание значений перечисления [STARTUP_FLAGS](startup-flags-enumeration.md) . Эти флаги контролируют параллельную сборку мусора, код, нейтральный к домену, и поведение `pwszVersion` параметра. Значение по умолчанию — один домен, если флаг не установлен. Допустимы следующие значения:  
+ окне Сочетание значений перечисления [STARTUP_FLAGS](startup-flags-enumeration.md) . Эти флаги контролируют параллельную сборку мусора, код, нейтральный к домену, и поведение `pwszVersion` параметра. Значение по умолчанию — один домен, если флаг не установлен. Допустимы следующие значения.  
   
 - `STARTUP_CONCURRENT_GC`  
   
@@ -102,7 +102,7 @@ HRESULT CorBindToRuntimeEx (
  Описание этих флагов см. в разделе Перечисление [STARTUP_FLAGS](startup-flags-enumeration.md) .  
   
  `rclsid`  
- окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
+ окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
  окне Объект `IID` запрашиваемого интерфейса из `rclsid` . Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
@@ -110,7 +110,7 @@ HRESULT CorBindToRuntimeEx (
  `ppv`  
  заполняет Возвращаемый указатель интерфейса в `riid` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Примечания  
  Если `pwszVersion` указывает несуществующую версию среды выполнения, `CorBindToRuntimeEx` ВОЗВРАЩАЕТ значение HRESULT, равное CLR_E_SHIM_RUNTIMELOAD.  
   
 ## <a name="execution-context-and-flow-of-windows-identity"></a>Контекст выполнения и поток удостоверения Windows  
@@ -122,7 +122,7 @@ HRESULT CorBindToRuntimeEx (
   
 2. Изменив режим обработки по умолчанию на режим совместимости версии 1, где <xref:System.Security.Principal.WindowsIdentity> объект не пополняется по какой бы то ни было асинхронной точке, независимо от <xref:System.Threading.ExecutionContext> параметров в текущем потоке. Изменение режима по умолчанию зависит от того, используется ли управляемый исполняемый файл или неуправляемый интерфейс размещения для загрузки среды CLR:  
   
-    1. Для управляемых исполняемых файлов необходимо задать `enabled` атрибуту элемента [ \<>легациимперсонатионполици](../../configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) значение `true` .  
+    1. Для управляемых исполняемых файлов необходимо задать `enabled` атрибуту [\<legacyImpersonationPolicy>](../../configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) элемента значение `true` .  
   
     2. Для неуправляемых интерфейсов размещения установите `STARTUP_LEGACY_IMPERSONATION` флаг в `startupFlags` параметре при вызове `CorBindToRuntimeEx` функции.  
   
@@ -137,7 +137,7 @@ HRESULT CorBindToRuntimeEx (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntime](corbindtoruntime-function.md)

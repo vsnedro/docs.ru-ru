@@ -12,12 +12,12 @@ api_type:
 ms.assetid: 05dbbe2b-049c-4a60-be69-2ad7a949405e
 topic_type:
 - apiref
-ms.openlocfilehash: 10e84b729c8af607165009a8591a69dbc1afcb1e
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 8027cdcde8281c363207e309bf65fcd90c03b626
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868386"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84495636"
 ---
 # <a name="icorprofilerinfo5seteventmask2-method"></a>Метод ICorProfilerInfo5::SetEventMask2
 [Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]  
@@ -38,21 +38,21 @@ HRESULT SetEventMask2(        [in] DWORD dwEventsLow,        [in] DWORD dwEvents
  `dwEventsHigh`  
  [в] 4-байтовое значение, определяющее категории событий.  Каждый бит управляет отдельной возможностью, поведением или типом события. Биты описаны в перечислении [COR_PRF_HIGH_MONITOR](cor-prf-high-monitor-enumeration.md) .  
   
-## <a name="remarks"></a>Заметки  
- Метод `SetEventMask2` используется для установки обратных вызовов, на которые подписывается профилировщик. Как правило, вызывается метод [GetEventMask2](icorprofilerinfo5-geteventmask2-method.md) , чтобы определить, какие биты заданы, ВЫПОЛНЯЮТ логическое или `pdwEventsLow` и `pdwEventsHigh` значения и любые новые биты, которые необходимо задать, а затем вызовите метод `SetEventMask2`.  
+## <a name="remarks"></a>Примечания  
+ Метод `SetEventMask2` используется для установки обратных вызовов, на которые подписывается профилировщик. Как правило, вызывается метод [GetEventMask2](icorprofilerinfo5-geteventmask2-method.md) , чтобы определить, какие биты заданы, ВЫПОЛНЯЮТ логическое или из `pdwEventsLow` его `pdwEventsHigh` значений и любых новых битов, которые необходимо задать, а затем вызовите `SetEventMask2` метод.  
   
  Этот метод является рекомендуемым альтернативой методу [SetEventMask](icorprofilerinfo-seteventmask-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo5](icorprofilerinfo5-interface.md)
 - [Метод GetEventMask2](icorprofilerinfo5-geteventmask2-method.md)

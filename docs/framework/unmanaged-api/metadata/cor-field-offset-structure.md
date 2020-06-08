@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: cced5298-277f-4a5a-8ecf-a0050c1096ea
 topic_type:
 - apiref
-ms.openlocfilehash: 70fb637cd1edf81be140b0e3306e3b0a483653a6
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 8cc803e3cf1442d324bf2eed0a37d0d236acd86d
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007992"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493076"
 ---
 # <a name="cor_field_offset-structure"></a>Структура COR_FIELD_OFFSET
 Хранит смещение указанного поля в пределах класса.  
@@ -41,7 +41,7 @@ typedef struct COR_FIELD_OFFSET {
 |`ulOffset`|Смещение поля в его классе.|  
   
 ## <a name="remarks"></a>Примечания  
- Методы [IMetaDataImport:: GetClassLayout](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-getclasslayout-method.md) и [IMetaDataEmit:: сеткласслайаут](imetadataemit-setclasslayout-method.md) принимают параметр типа `COR_FIELD_OFFSET` .  
+ Методы [IMetaDataImport:: GetClassLayout](imetadataimport-getclasslayout-method.md) и [IMetaDataEmit:: сеткласслайаут](imetadataemit-setclasslayout-method.md) принимают параметр типа `COR_FIELD_OFFSET` .  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -50,7 +50,7 @@ typedef struct COR_FIELD_OFFSET {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Структуры метаданных](metadata-structures.md)
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)

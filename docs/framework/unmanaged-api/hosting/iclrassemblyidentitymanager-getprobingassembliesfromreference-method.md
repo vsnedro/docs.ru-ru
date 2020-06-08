@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aec05744-e8d4-44c6-b4a8-e583229ac34e
 topic_type:
 - apiref
-ms.openlocfilehash: 98af9931e219c384b017d3c70fe21cdb6e052ac1
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 21ebd0c64d6c8bbdac327258ad4c7ffec83a1ce9
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615960"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504320"
 ---
 # <a name="iclrassemblyidentitymanagergetprobingassembliesfromreference-method"></a>Метод ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference
 Возвращает перечислитель [ICLRProbingAssemblyEnum](iclrprobingassemblyenum-interface.md) для удостоверений сборок, на которые ссылается сборка с указанным типом удостоверения.  
@@ -44,7 +44,7 @@ HRESULT GetProbingAssembliesFromReference (
  окне Предоставляется для будущего расширения. CLR_ASSEMBLY_IDENTITY_FLAGS_DEFAULT является единственным значением, которое поддерживает Текущая версия среды CLR.  
   
  `pwzReferenceIdentity`  
- окне Идентификатор привязки непрозрачной сборки, обычно возвращаемый из вызова метода [ICLRAssemblyIdentityManager:: GetBindingIdentityFromFile](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-getbindingidentityfromfile-method.md) или [ICLRAssemblyIdentityManager:: жетбиндингидентитифромстреам](iclrassemblyidentitymanager-getbindingidentityfromstream-method.md) .  
+ окне Идентификатор привязки непрозрачной сборки, обычно возвращаемый из вызова метода [ICLRAssemblyIdentityManager:: GetBindingIdentityFromFile](iclrassemblyidentitymanager-getbindingidentityfromfile-method.md) или [ICLRAssemblyIdentityManager:: жетбиндингидентитифромстреам](iclrassemblyidentitymanager-getbindingidentityfromstream-method.md) .  
   
  `ppProbingAssemblyEnum`  
  заполняет Указатель интерфейса на `ICLRProbingAssemblyEnum` перечислитель, содержащий ссылки на сборки, на которые ссылается сборка, определенная параметром `pwzReferenceIdentity` .  
@@ -69,7 +69,7 @@ HRESULT GetProbingAssembliesFromReference (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4400fb8c-0407-4791-8557-f011fd2aee51
 topic_type:
 - apiref
-ms.openlocfilehash: e3d167be9a4091ae57a3283424186142e90ca7a1
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: b8e503af11fa1d02aac2ec83edde0ffbd562d8e5
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868555"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84496403"
 ---
 # <a name="icorprofilerinfo3getruntimeinformation-method"></a>Метод ICorProfilerInfo3::GetRuntimeInformation
 Предоставляет сведения о версии для профилирования среды CLR.  
@@ -43,7 +43,7 @@ HRESULT GetRuntimeInformation(
   
 ## <a name="parameters"></a>Параметры  
  `pClrInstanceId`  
- заполняет Репрезентативный идентификатор выполняющегося экземпляра среды CLR в процессе. Это то же самое, что `ClrInstanceID`, что отчеты о событиях запуска трассировки событий Windows (ETW).  
+ заполняет Репрезентативный идентификатор выполняющегося экземпляра среды CLR в процессе. Это то же самое `ClrInstanceID` , что и отчеты о событиях запуска для трассировки событий Windows (ETW).  
   
  `pRuntimeType`  
  заполняет Тип среды выполнения. Этот параметр возвращает `COR_PRF_DESKTOP_CLR` для классической версии среды CLR или `COR_PRF_CORE_CLR` для основной версии среды CLR, используемой в Silverlight.  
@@ -64,25 +64,25 @@ HRESULT GetRuntimeInformation(
  окне Длина (в символах) буфера, на который `szVersionString` указывает.  
   
  `pcchVersionString`  
- заполняет Длина `szVersionString`в символах.  
+ заполняет Длина в символах `szVersionString` .  
   
  `szVersionString`  
  заполняет Строка версии среды CLR.  
   
-## <a name="remarks"></a>Заметки  
- Вы можете передать значение NULL для любого параметра. Однако `pcchVersionString` не может иметь значение null, если `szVersionString` также не имеет значение null.  
+## <a name="remarks"></a>Примечания  
+ Вы можете передать значение NULL для любого параметра. Однако `pcchVersionString` не может иметь значение null, если `szVersionString` не равно null.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Профилирование](index.md)

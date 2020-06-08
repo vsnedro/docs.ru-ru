@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 52118dc9-fe6e-4b39-aa48-c3cc3ea4214d
 topic_type:
 - apiref
-ms.openlocfilehash: e5fa3647c86d97730e7ad6a2576dd34af75251d6
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: f9a58a70b5264d7f1eb33fb0e09c702c94a13e85
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74433957"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491772"
 ---
 # <a name="imetadataimportenumparams-method"></a>Метод IMetaDataImport::EnumParams
 Перечисляет токены ParamDef, представляющие параметры метода, на который ссылается указанный токен MethodDef.  
@@ -51,25 +51,25 @@ HRESULT EnumParams (
  [in] Максимальный размер массива `rParams`.  
   
  `pcTokens`  
- заполняет Число маркеров Парамдеф, возвращаемых в `rParams`.  
+ заполняет Число токенов Парамдеф, возвращаемых в `rParams` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumParams` успешно возвращено.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом случае `pcTokens` равно нулю.|  
+|`S_OK`|`EnumParams`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcTokens` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформа:** См. раздел [требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

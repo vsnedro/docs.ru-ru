@@ -2,12 +2,12 @@
 title: Интерфейс ISymUnmanagedWriter4
 ms.date: 03/30/2017
 ms.assetid: 4af5e8c0-987d-405e-b934-8b9e70fcae6e
-ms.openlocfilehash: eaf2e8e60d9812ab6a31fb3b9050cbaae0f1a9d7
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 21d6520aae1367368973da1692f6bca3aeb2c129
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609473"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493660"
 ---
 # <a name="isymunmanagedwriter4-interface"></a>Интерфейс ISymUnmanagedWriter4
 Интерфейс ISymUnmanagedWriter4.  
@@ -23,12 +23,12 @@ ms.locfileid: "83609473"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetDebugInfoWithPadding](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter4-getdebuginfowithpadding-method.md)|Функция аналогична [методу GetDebugInfo](isymunmanagedwriter-getdebuginfo-method.md) , за исключением того, что строка пути дополнена нулями после завершающего нуль-символа, чтобы сделать строку фиксированным размером `MAX_PATH` . Заполнение задается только в том случае, если длина строки пути меньше `MAX_PATH` .<br /><br /> Это упрощает написание средств, которые отличаются от PE файлов.|  
+|[Метод GetDebugInfoWithPadding](isymunmanagedwriter4-getdebuginfowithpadding-method.md)|Функция аналогична [методу GetDebugInfo](isymunmanagedwriter-getdebuginfo-method.md) , за исключением того, что строка пути дополнена нулями после завершающего нуль-символа, чтобы сделать строку фиксированным размером `MAX_PATH` . Заполнение задается только в том случае, если длина строки пути меньше `MAX_PATH` .<br /><br /> Это упрощает написание средств, которые отличаются от PE файлов.|  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
 - [Интерфейс ISymUnmanagedWriter3](isymunmanagedwriter3-interface.md)

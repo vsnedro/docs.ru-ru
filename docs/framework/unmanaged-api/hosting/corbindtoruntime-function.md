@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 799740aa-46ec-4532-95da-6444565b4971
 topic_type:
 - apiref
-ms.openlocfilehash: 0bcfe42a70d64c091851a1eec81d03e49dbde52b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 52594c36c54c74941371f9950fbc6fb543b86de0
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616678"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493556"
 ---
 # <a name="corbindtoruntime-function"></a>Функция CorBindToRuntime
 Позволяет неуправляемым узлам загружать среду CLR в процесс.  
@@ -55,7 +55,7 @@ HRESULT CorBindToRuntime (
  Если параметр `pwszBuildFlavor` имеет значение null, загружается сборка рабочей станции. При запуске на однопроцессорном компьютере сборка рабочей станции всегда загружается, даже если параметр `pwszBuildFlavor` имеет значение `svr` . Однако если задано `pwszBuildFlavor` значение `svr` и задана параллельная сборка мусора (см `flags` . Описание параметра), то загружается серверная сборка.  
   
  `rclsid`  
- окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
+ окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
  окне Объект `IID` запрашиваемого интерфейса из `rclsid` . Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
@@ -63,7 +63,7 @@ HRESULT CorBindToRuntime (
  `ppv`  
  заполняет Возвращаемый указатель интерфейса в `riid` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Примечания  
  Если `pwszVersion` указывает несуществующую версию среды выполнения, `CorBindToRuntimeEx` ВОЗВРАЩАЕТ значение HRESULT, равное CLR_E_SHIM_RUNTIMELOAD.  
   
 ## <a name="execution-context-and-flow-of-windows-identity"></a>Контекст выполнения и поток удостоверения Windows  
@@ -75,13 +75,13 @@ HRESULT CorBindToRuntime (
   
 2. Изменив режим обработки по умолчанию на режим совместимости версии 1, где <xref:System.Security.Principal.WindowsIdentity> объект не пополняется по какой бы то ни было асинхронной точке, независимо от <xref:System.Threading.ExecutionContext> параметров в текущем потоке. Изменение режима по умолчанию зависит от того, используется ли управляемый исполняемый файл или неуправляемый интерфейс размещения для загрузки среды CLR:  
   
-    1. Для управляемых исполняемых файлов необходимо задать `enabled` атрибуту элемента [ \<>легациимперсонатионполици](../../configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) значение `true` .  
+    1. Для управляемых исполняемых файлов необходимо задать `enabled` атрибуту [\<legacyImpersonationPolicy>](../../configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) элемента значение `true` .  
   
     2. Для неуправляемых интерфейсов размещения установите `STARTUP_LEGACY_IMPERSONATION` флаг в `flags` параметре при вызове `CorBindToRuntimeEx` функции.  
   
      Режим совместимости версии 1 применяется ко всему процессу и всем доменам приложения в процессе.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Примечания  
  [CorBindToRuntimeEx](corbindtoruntimeex-function.md) и `CorBindToRuntime` выполните ту же операцию, но `CorBindToRuntimeEx` функция позволяет устанавливать флаги для указания поведения среды CLR.  
   
 ## <a name="requirements"></a>Требования  
@@ -93,7 +93,7 @@ HRESULT CorBindToRuntime (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntimeByCfg](corbindtoruntimebycfg-function.md)

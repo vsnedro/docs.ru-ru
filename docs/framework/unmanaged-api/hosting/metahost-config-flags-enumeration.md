@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 6f1e389f-ed99-4d6a-a0ba-72d7d869a01d
 topic_type:
 - apiref
-ms.openlocfilehash: a15c912cdf0eef1b8f131e8425ad9b5b01289982
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 6b37fcfc04e3ec880c67f102ec12d7f3e4b06a43
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006731"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493166"
 ---
 # <a name="metahost_config_flags-enumeration"></a>Перечисление METAHOST_CONFIG_FLAGS
-Описывает возможные флаги, возвращаемые в `pdwConfigFlags` параметре метода [ICLRMetaHostPolicy:: GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) , который указывает на присутствие и настройку `useLegacyV2RuntimeActivationPolicy` атрибута в [ \<startup> элементе](../../configure-apps/file-schema/startup/startup-element.md) файла конфигурации.  
+Описывает возможные флаги, возвращаемые в `pdwConfigFlags` параметре метода [ICLRMetaHostPolicy:: GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md) , который указывает на присутствие и настройку `useLegacyV2RuntimeActivationPolicy` атрибута в [ \<startup> элементе](../../configure-apps/file-schema/startup/startup-element.md) файла конфигурации.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -55,8 +55,8 @@ typedef enum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)
 - [Метод GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md)
-- [\<startup>Дерев](../../configure-apps/file-schema/startup/startup-element.md)
+- [\<startup> Элемент](../../configure-apps/file-schema/startup/startup-element.md)

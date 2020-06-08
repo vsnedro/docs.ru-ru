@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dbea0644-3873-4329-90b8-624163e87467
 topic_type:
 - apiref
-ms.openlocfilehash: 4008b2a7d785781da5f35b3dc1e564487cb8e760
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 2808606be24399c9a4fe03df4c53202d31cbbe91
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609785"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501720"
 ---
 # <a name="isymunmanagedwriteropenscope-method"></a>Метод ISymUnmanagedWriter::OpenScope
 Открывает новую лексическую область видимости в текущем методе. Область становится новой текущей областью и помещается в стек областей. Области должны образовывать иерархию. Не допускается перекрытие одноуровневых элементов.  
@@ -43,12 +43,12 @@ HRESULT OpenScope(
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
-## <a name="remarks"></a>Комментарии  
- `ISymUnmanagedWriter::OpenScope`возвращает непрозрачный идентификатор области, который можно использовать с [ISymUnmanagedWriter:: сетскоперанже](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-setscoperange-method.md) для определения начального и конечного смещения области в более позднее время. В этом случае смещения, передаваемые в `ISymUnmanagedWriter::OpenScope` и [ISymUnmanagedWriter:: CloseScope](isymunmanagedwriter-closescope-method.md) , игнорируются. Идентификаторы областей допустимы только в текущем методе.  
+## <a name="remarks"></a>Примечания  
+ `ISymUnmanagedWriter::OpenScope`возвращает непрозрачный идентификатор области, который можно использовать с [ISymUnmanagedWriter:: сетскоперанже](isymunmanagedwriter-setscoperange-method.md) для определения начального и конечного смещения области в более позднее время. В этом случае смещения, передаваемые в `ISymUnmanagedWriter::OpenScope` и [ISymUnmanagedWriter:: CloseScope](isymunmanagedwriter-closescope-method.md) , игнорируются. Идентификаторы областей допустимы только в текущем методе.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b95739fe-d2fa-4776-ae0d-31d9707ef799
 topic_type:
 - apiref
-ms.openlocfilehash: 0ebcab7a759b64bfbb254df1c1aa339cde77d054
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d3e25f271fc434785e25e7b226ad98f86b5f8dfc
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175568"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84492789"
 ---
 # <a name="imetadataemit2savedelta-method"></a>Метод IMetaDataEmit2::SaveDelta
-Сохраняет изменения от текущего сеанса отсеиваний и продолжения в указанный файл.  
+Сохраняет изменения из текущего сеанса "изменить и продолжить" в указанный файл.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,21 +36,21 @@ HRESULT SaveDelta (
   
 ## <a name="parameters"></a>Параметры  
  `szFile`  
- (в) Имя файла, под которым можно сохранить изменения.  
+ окне Имя файла, в котором необходимо сохранить изменения.  
   
  `dwSaveFlags`  
  [in] Зарезервировано. Должен равняться нулю.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataEmit2](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
-- [Интерфейс IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)
+- [Интерфейс IMetaDataEmit](imetadataemit-interface.md)

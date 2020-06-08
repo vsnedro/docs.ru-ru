@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 80a5308e-c22f-4201-ba89-31cc8562515b
 topic_type:
 - apiref
-ms.openlocfilehash: c287b630aee58c6795ef405cc1801149e220fd51
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 58d11e9084f53c69f2656b4f0ee6bc7d2cc4ae21
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868425"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84495870"
 ---
 # <a name="icorprofilerinfo4-interface"></a>Интерфейс ICorProfilerInfo4
-Предоставляет методы, используемые профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах. . Интерфейс `ICorProfilerInfo4` является расширением других интерфейсов `ICorProfilerInfo`. Он предоставляет новые методы для поддержки повторной компиляции JIT, добавленной в .NET Framework 4,5.  
+Предоставляет методы, используемые профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах. . `ICorProfilerInfo4`Интерфейс является расширением других `ICorProfilerInfo` интерфейсов. Он предоставляет новые методы для поддержки повторной компиляции JIT, добавленной в .NET Framework 4,5.  
   
 ## <a name="methods"></a>Методы  
   
@@ -39,19 +39,19 @@ ms.locfileid: "76868425"
 |[Метод RequestReJIT](icorprofilerinfo4-requestrejit-method.md)|Запрашивает перекомпиляцию JIT всех экземпляров указанных функций.|  
 |[Метод RequestRevert](icorprofilerinfo4-requestrevert-method.md)|Восстанавливает исходные версии всех экземпляров указанных функций.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Среда CLR реализует методы интерфейса `ICorProfilerInfo4` с помощью модели свободных потоков. Каждый метод возвращает значение HRESULT, указывающее на успешное выполнение или сбой. Список возможных кодов возврата см. в файле CorError.h.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

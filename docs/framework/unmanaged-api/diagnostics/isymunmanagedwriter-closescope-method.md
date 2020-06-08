@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6dade525-7770-4cb4-bafd-4bb995ad0d87
 topic_type:
 - apiref
-ms.openlocfilehash: 4d8790dc68bc063deed4c58ba0df8e9ea258b9d7
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: e2e911fb1d737ebb6b2106c89ac11335788ace4f
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610084"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501733"
 ---
 # <a name="isymunmanagedwriterclosescope-method"></a>Метод ISymUnmanagedWriter::CloseScope
 Закрывает текущую лексическую область видимости.  
@@ -39,14 +39,14 @@ HRESULT CloseScope(
 ## <a name="return-value"></a>Возвращаемое значение  
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Примечания  
  После закрытия области в ней больше нельзя определять переменные.  
   
- [ISymUnmanagedWriter:: OpenScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openscope-method.md) возвращает непрозрачный идентификатор области, который можно использовать с [ISymUnmanagedWriter:: сетскоперанже](isymunmanagedwriter-setscoperange-method.md) , чтобы определить начальное и конечное смещение области. В этом случае смещения, переданные методам `ISymUnmanagedWriter::OpenScope` и `ISymUnmanagedWriter::CloseScope`, пропускаются. Идентификаторы областей допустимы только в текущем методе.  
+ [ISymUnmanagedWriter:: OpenScope](isymunmanagedwriter-openscope-method.md) возвращает непрозрачный идентификатор области, который можно использовать с [ISymUnmanagedWriter:: сетскоперанже](isymunmanagedwriter-setscoperange-method.md) , чтобы определить начальное и конечное смещение области. В этом случае смещения, переданные методам `ISymUnmanagedWriter::OpenScope` и `ISymUnmanagedWriter::CloseScope`, пропускаются. Идентификаторы областей допустимы только в текущем методе.  
   
 ## <a name="requirements"></a>Требования  
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

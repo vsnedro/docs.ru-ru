@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7c36a7c2-75a2-4971-bc23-abf54c812154
 topic_type:
 - apiref
-ms.openlocfilehash: 388f0de26983f8bb876f40a527f60d8bc59191a3
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 3ecaebb9d943a3cdbb231307012b5dc3aaf000f7
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616359"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493423"
 ---
 # <a name="eclrevent-enumeration"></a>Перечисление EClrEvent
 Описывает события среды CLR, для которых узел может регистрировать обратные вызовы.  
@@ -44,12 +44,12 @@ typedef enum {
 |`Event_MDAFired`|Указывает, что создано сообщение помощника по отладке управляемого кода (MDA).|  
 |`Event_StackOverflow`|Указывает, что произошла ошибка переполнения стека.|  
   
-## <a name="remarks"></a>Комментарии  
- Узел может регистрировать обратные вызовы для любого из типов событий, описанных путем `EClrEvent` вызова методов интерфейса [ICLROnEventManager](../../../../docs/framework/unmanaged-api/hosting/iclroneventmanager-interface.md) . Узел получает указатель на этот интерфейс путем вызова метода [ICLRControl:: GetCLRManager](iclrcontrol-getclrmanager-method.md) .  
+## <a name="remarks"></a>Примечания  
+ Узел может регистрировать обратные вызовы для любого из типов событий, описанных путем `EClrEvent` вызова методов интерфейса [ICLROnEventManager](iclroneventmanager-interface.md) . Узел получает указатель на этот интерфейс путем вызова метода [ICLRControl:: GetCLRManager](iclrcontrol-getclrmanager-method.md) .  
   
  `Event_CLRDisabled`События и `Event_DomainUnload` могут вызываться более одного раза и из разных потоков для сигнализации выгрузки или отключения среды CLR.  
   
- `Event_MDAFired`Событие вызывает создание экземпляра [мдаинфо](../../../../docs/framework/unmanaged-api/hosting/mdainfo-structure.md) , содержащего подробные сведения о сообщении MDA. Дополнительные сведения о помощниках MDA см. в разделе [Диагностика ошибок с помощью помощников по отладке управляемого](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)кода.  
+ `Event_MDAFired`Событие вызывает создание экземпляра [мдаинфо](mdainfo-structure.md) , содержащего подробные сведения о сообщении MDA. Дополнительные сведения о помощниках MDA см. в разделе [Диагностика ошибок с помощью помощников по отладке управляемого](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)кода.  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -60,7 +60,7 @@ typedef enum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IActionOnCLREvent](iactiononclrevent-interface.md)
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)

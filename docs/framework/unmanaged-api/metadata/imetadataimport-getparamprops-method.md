@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4d5e5f00-bcab-4f41-b191-176511a186a7
 topic_type:
 - apiref
-ms.openlocfilehash: bb73ccdd9eee4b5a655a56b5d6757e0c6003fbc9
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: c2abf2813c6e1a9db4264bded32d9cb9c58a2bcb
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74437127"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491060"
 ---
 # <a name="imetadataimportgetparamprops-method"></a>Метод IMetaDataImport::GetParamProps
 Возвращает значения метаданных для параметра, на который ссылается указанный токен ParamDef.  
@@ -56,37 +56,37 @@ HRESULT GetParamProps (
  заполняет Буфер для хранения имени параметра.  
   
  `cchName`  
- окне Запрошенный размер в расширенных символах `szName`.  
+ окне Запрошенный размер в расширенных символах `szName` .  
   
  `pchName`  
- заполняет Возвращаемый размер в расширенных символах `szName`.  
+ заполняет Возвращаемый размер в расширенных символах `szName` .  
   
  `pdwAttr`  
  заполняет Указатель на любые флаги атрибутов, связанные с параметром. Это битовая маска `CorParamAttr` значений.  
   
  `pdwCPlusTypeFlag`  
- заполняет Указатель на флаг, указывающий, что параметр является <xref:System.ValueType>.  
+ заполняет Указатель на флаг, указывающий, что параметр является <xref:System.ValueType> .  
   
  `ppValue`  
  заполняет Указатель на константную строку, возвращенную параметром.  
   
  `pcchValue`  
- заполняет Размер `ppValue` в расширенных символах или нуль, если `ppValue` не содержит строку.  
+ заполняет Размер `ppValue` в расширенных символах или нуль, если не содержит `ppValue` строку.  
   
 ## <a name="remarks"></a>Примечания
 
-Значения последовательности в `pulSequence` начинаются с 1 для параметров. Возвращаемое значение имеет порядковый номер 0.
+Значения последовательности в `pulSequence` аргументе начинаются с 1 для параметров. Возвращаемое значение имеет порядковый номер 0.
 
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -2,12 +2,12 @@
 title: Интерфейс ICorProfilerInfo7
 ms.date: 03/30/2017
 ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313
-ms.openlocfilehash: f80f310c10bae33583cb7cd2048ede4f5efbe14c
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 0e9f76717aeff27e863245faac241927e7495076
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76861753"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84495493"
 ---
 # <a name="icorprofilerinfo7-interface"></a>Интерфейс ICorProfilerInfo7
 [Поддерживается в .NET Framework 4.6.1 и более поздних версиях.]  
@@ -18,17 +18,17 @@ ms.locfileid: "76861753"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод ApplyMetaData](icorprofilerinfo7-applymetadata-method.md)|Применяет метаданные, которые недавно задаются `IMetadataEmit::Define*` методами, к указанному модулю.|  
+|[Метод ApplyMetaData](icorprofilerinfo7-applymetadata-method.md)|Применяет метаданные, которые были недавно определены `IMetadataEmit::Define*` методами, к указанному модулю.|  
 |[Метод GetInMemorySymbolsLength](icorprofilerinfo7-getinmemorysymbolslength-method.md)|Возвращает длину потока символов в памяти.|  
 |[ReadInMemorySymbols](icorprofilerinfo7-readinmemorysymbols.md)|Считывает байты из потока символов в памяти.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)

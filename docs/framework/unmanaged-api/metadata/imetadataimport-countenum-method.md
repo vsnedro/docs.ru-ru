@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d1de53ad-9435-4b5f-9df7-07f21210e5b5
 topic_type:
 - apiref
-ms.openlocfilehash: b780ca513d8a0b4f88e66594e86e9ff8290f6523
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4521a3f15ec358a4d786a4533efb6b99d0e1c1cc
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177362"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84492386"
 ---
 # <a name="imetadataimportcountenum-method"></a>Метод IMetaDataImport::CountEnum
-Получает количество элементов в перечислении, которое было извлечено указанным регистратором.  
+Возвращает количество элементов в перечислении, полученных указанным перечислителем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,24 +36,24 @@ HRESULT CountEnum (
   
 ## <a name="parameters"></a>Параметры  
  `hEnum`  
- (в) Ручка для регистратора.  
+ окне Маркер для перечислителя.  
   
  `pulCount`  
- (ваут) Количество перечисленных элементов.  
+ заполняет Число перечисленных элементов.  
   
-## <a name="remarks"></a>Remarks  
- Ручка, `hEnum` указанная, получена `Enum`из предыдущего вызова *Name* (например, [IMetaDataImport::EnumTypeDefs).](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-enumtypedefs-method.md)  
+## <a name="remarks"></a>Примечания  
+ Маркер, заданный параметром, `hEnum` получается из предыдущего `Enum` вызова *имени* (например, [IMetaDataImport:: EnumTypeDefs](imetadataimport-enumtypedefs-method.md)).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

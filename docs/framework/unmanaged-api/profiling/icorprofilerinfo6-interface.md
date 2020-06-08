@@ -8,12 +8,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: 6f2bb148-1e2b-4e45-a5a5-0ceddc40064b
-ms.openlocfilehash: 80ac17a96e5c1c8c32cfc336da6c2be30eaf80fd
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: fba57a88cd3af582b4edf0e5bdbf6ac48020c9f7
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868373"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84495519"
 ---
 # <a name="icorprofilerinfo6-interface"></a>Интерфейс ICorProfilerInfo6
 [Поддерживается в .NET Framework 4,6 и более поздних версиях]  
@@ -27,12 +27,12 @@ ms.locfileid: "76868373"
 |[Метод ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod](icorprofilerinfo6-enumngenmodulemethodsinliningthismethod-method.md)|Возвращает перечислитель для всех методов, принадлежащих заданному модулю NGen и встроенных в тело данного метода.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)
