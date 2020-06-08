@@ -10,19 +10,19 @@ helpviewer_keywords:
 - serialization, attributes
 - XML Schema, serializing
 ms.assetid: 414b820f-a696-4206-b576-2711d85490c7
-ms.openlocfilehash: 3a269e1f3e8fd6e982db3c241c113f471134f9d3
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: fbc42ff696107f4a1b06d3611fc97a09cc4a3542
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378446"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84276703"
 ---
 # <a name="attributes-that-control-xml-serialization"></a>Атрибуты управления сериализацией XML
-Для управления способом, с помощью которого <xref:System.Xml.Serialization.XmlSerializer> сериализует или десериализует экземпляр класса, к классам и членам класса можно применять атрибуты, указанные в следующей таблице. Сведения о том, как эти атрибуты управляют XML-сериализацией, см. в разделе [Управление сериализацией XML с использованием атрибутов](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md).  
+Для управления способом, с помощью которого <xref:System.Xml.Serialization.XmlSerializer> сериализует или десериализует экземпляр класса, к классам и членам класса можно применять атрибуты, указанные в следующей таблице. Сведения о том, как эти атрибуты управляют XML-сериализацией, см. в разделе [Управление сериализацией XML с использованием атрибутов](controlling-xml-serialization-using-attributes.md).  
   
- Эти атрибуты можно также использовать для управления литеральным стилем сообщений SOAP, генерируемых XML-веб-службой. Дополнительные сведения о применении этих атрибутов для существующего метода XML-веб-служб см. в разделе [Сериализация XML с использованием XML-веб-служб](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md).  
+ Эти атрибуты можно также использовать для управления литеральным стилем сообщений SOAP, генерируемых XML-веб-службой. Дополнительные сведения о применении этих атрибутов для существующего метода XML-веб-служб см. в разделе [Сериализация XML с использованием XML-веб-служб](xml-serialization-with-xml-web-services.md).  
   
- Дополнительные сведения об атрибутах см. в разделе [Атрибуты](../../../docs/standard/attributes/index.md).  
+ Дополнительные сведения об атрибутах см. в разделе [Атрибуты](../attributes/index.md).  
   
 |Атрибут|Применение|Что определяет|  
 |---------------|----------------|---------------|  
@@ -42,13 +42,13 @@ ms.locfileid: "83378446"
   
  Кроме этих атрибутов, которые располагаются в пространстве имен <xref:System.Xml.Serialization>, к полю можно применять атрибут <xref:System.ComponentModel.DefaultValueAttribute>. Атрибут **DefaultValueAttribute** задает значение, которое автоматически назначается члену, если значение не указано.  
   
- Дополнительные сведения см. в разделе [Атрибуты управления сериализацией с кодировкой SOAP](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
+ Дополнительные сведения см. в разделе [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md).  
   
 ## <a name="see-also"></a>См. также
 
-- [Сериализация XML и SOAP](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [Сериализация XML и SOAP](xml-and-soap-serialization.md)
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [Управление сериализацией XML с использованием атрибутов](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
-- [Практическое руководство. Указание имени альтернативного элемента для потока XML](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
-- [Практическое руководство. Сериализация объекта](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [Практическое руководство. Десериализация объекта](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+- [Управление сериализацией XML с использованием атрибутов](controlling-xml-serialization-using-attributes.md)
+- [Практическое руководство. Указание имени альтернативного элемента для потока XML](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+- [Практическое руководство. Сериализация объекта](how-to-serialize-an-object.md)
+- [Практическое руководство. Десериализация объекта](how-to-deserialize-an-object.md)

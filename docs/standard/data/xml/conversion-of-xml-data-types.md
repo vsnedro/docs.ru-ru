@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
-ms.openlocfilehash: b6e6f2c4b28e9220727bf0fe1a958a7b69111571
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: d8b60428bc129958355ce5b285662847e9e712c3
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202162"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84282419"
 ---
 # <a name="conversion-of-xml-data-types"></a>Преобразование типов XML-данных
 Большая часть методов класса **XmlConvert** используются для преобразования данных в строки и строго типизированные форматы. Методы не зависят от языковых стандартов. Это означает, что при преобразовании они не принимают во внимание параметры языковых стандартов.  
@@ -66,5 +66,5 @@ writer.WriteElementString("TestInt32",XmlConvert.ToString(vInt32));
   
 ## <a name="see-also"></a>См. также
 
-- [Преобразование строк в типы данных .NET Framework](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)
-- [Преобразование типов .NET Framework в строки](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)
+- [Преобразование строк в типы данных .NET Framework](converting-strings-to-dotnet-data-types.md)
+- [Преобразование типов .NET Framework в строки](converting-dotnet-types-to-strings.md)

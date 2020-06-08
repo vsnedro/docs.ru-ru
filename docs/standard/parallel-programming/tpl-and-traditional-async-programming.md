@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, with other asynchronous models
 ms.assetid: e7b31170-a156-433f-9f26-b1fc7cd1776f
-ms.openlocfilehash: e71c609b500bc6771c405cfb6f4ac14923cc3939
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: 7db031c655980dd800de77cbbd6a07a0ba94b33b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82507550"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284888"
 ---
 # <a name="tpl-and-traditional-net-framework-asynchronous-programming"></a>Библиотека параллельных задач и традиционное асинхронное программирование .NET Framework
 Платформа .NET Framework предоставляет следующие две стандартные модели для выполнения асинхронных операций ввода-вывода и вычислений.  
@@ -102,7 +102,7 @@ ms.locfileid: "82507550"
  [!code-csharp[FromAsync#10](../../../samples/snippets/csharp/VS_Snippets_Misc/fromasync/cs/snippet10.cs#10)]
  [!code-vb[FromAsync#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/fromasync/vb/snippet10.vb#10)]  
   
- Более полный пример, включающий дополнительную обработку исключений и показывающий, как вызывать этот метод из клиентского кода, см. в разделе [Как создавать оболочки шаблонов EAP в задаче](../../../docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md).  
+ Более полный пример, включающий дополнительную обработку исключений и показывающий, как вызывать этот метод из клиентского кода, см. в разделе [Как создавать оболочки шаблонов EAP в задаче](how-to-wrap-eap-patterns-in-a-task.md).  
   
  Следует помнить, что любая задача, созданная объектом <xref:System.Threading.Tasks.TaskCompletionSource%601>, будет запущена этим TaskCompletionSource, и, таким образом, пользовательский код не должен вызывать метод Start в этой задаче.  
   
@@ -119,4 +119,4 @@ ms.locfileid: "82507550"
   
 ## <a name="see-also"></a>См. также
 
-- [Библиотека параллельных задач (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Библиотека параллельных задач (TPL)](task-parallel-library-tpl.md)

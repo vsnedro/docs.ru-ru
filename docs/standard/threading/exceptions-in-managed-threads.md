@@ -8,12 +8,12 @@ helpviewer_keywords:
 - threading [.NET Framework],exceptions in managed threads
 - managed threading
 ms.assetid: 11294769-2e89-43cb-890e-ad4ad79cfbee
-ms.openlocfilehash: 6c14c60b30f8f70aa5e888ed45d6f867154e18d8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 56900ddab5e1e6ee5375c8979dc19694d4ad9c54
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159654"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84279702"
 ---
 # <a name="exceptions-in-managed-threads"></a>Исключения в управляемых потоках
 Начиная с .NET Framework версии 2.0, среда CLR позволяет большинству необработанных исключений выполняться в потоках. Как правило, это означает, что необработанное исключение будет вызывать завершение работы приложения.  
@@ -64,7 +64,7 @@ ms.locfileid: "78159654"
   
 - Если поток необходимо остановить, чтобы было можно продолжить завершение процесса, сделайте поток фоновым, чтобы он автоматически завершался при выходе процесса.  
   
- Во всех случаях стратегия должна соответствовать правилам разработки исключений. См. раздел [Правила разработки исключений](../../../docs/standard/design-guidelines/exceptions.md).  
+ Во всех случаях стратегия должна соответствовать правилам разработки исключений. См. раздел [Правила разработки исключений](../design-guidelines/exceptions.md).  
   
 ### <a name="application-compatibility-flag"></a>Флаг совместимости приложений  
  В качестве временной меры обеспечения совместимости администраторы могут поместить флаг совместимости в раздел `<runtime>` файла конфигурации приложения. Это приведет к возврату среды CLR к поведению версий 1.0 и 1.1.  
@@ -74,8 +74,8 @@ ms.locfileid: "78159654"
 ```  
   
 ## <a name="host-override"></a>Переопределение узла  
- В платформе .NET Framework версии 2.0 неуправляемый узел может использовать интерфейс [ICLRPolicyManager](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) в API размещения для переопределения политики необработанных исключений по умолчанию среды CLR. Чтобы задать политику для необработанных исключений, используется функция [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md).  
+ В платформе .NET Framework версии 2.0 неуправляемый узел может использовать интерфейс [ICLRPolicyManager](../../framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) в API размещения для переопределения политики необработанных исключений по умолчанию среды CLR. Чтобы задать политику для необработанных исключений, используется функция [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md).  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Основы управляемых потоков](../../../docs/standard/threading/managed-threading-basics.md)
+- [Основы управляемых потоков](managed-threading-basics.md)

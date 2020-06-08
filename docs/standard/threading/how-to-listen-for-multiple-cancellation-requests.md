@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cancellation tokens, joining
 - LinkedTokenSource, how to
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
-ms.openlocfilehash: e35472040b6ee1263ebc4c4968fa1822045a2064
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3f92d1d9e8fec91475886e8bd7bffbc97bb632a0
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73138012"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84279399"
 ---
 # <a name="how-to-listen-for-multiple-cancellation-requests"></a>Практическое руководство. Прослушивание нескольких запросов на отмену
 В этом примере показано, как одновременно прослушивать два маркера отмены, любой из которых запускает отмену операции.  
@@ -34,4 +34,4 @@ ms.locfileid: "73138012"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Отмена в управляемых потоках](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+- [Отмена в управляемых потоках](cancellation-in-managed-threads.md)

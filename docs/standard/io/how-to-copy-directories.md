@@ -12,17 +12,17 @@ helpviewer_keywords:
 - copying directories
 - directories [.NET Framework], copying
 ms.assetid: 5a969765-e5f8-4b4e-977e-90e2b0a1fe3c
-ms.openlocfilehash: 5d40db7f902dac8bd6bbdc1510be8e56a321be30
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f71f428037f33fdbc692ca2f02a4c767998d684e
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159459"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288580"
 ---
 # <a name="how-to-copy-directories"></a>Практическое руководство. Копирование каталогов
 В этом разделе демонстрируется использование классов ввода-вывода для синхронного копирования содержимого каталога в другое место.
 
-Пример асинхронного копирования файлов см. в разделе [Асинхронный файловый ввод-вывод](../../../docs/standard/io/asynchronous-file-i-o.md).
+Пример асинхронного копирования файлов см. в разделе [Асинхронный файловый ввод-вывод](asynchronous-file-i-o.md).
 
 В этом примере для копирования подкаталогов объекту `copySubDirs` метода `DirectoryCopy` присваивается значение `true`. Метод `DirectoryCopy` выполняет рекурсивное копирование подкаталогов путем вызова самого себя для каждого последующего подкаталога, пока не будет скопировано все.  
   
@@ -37,6 +37,6 @@ ms.locfileid: "78159459"
 - <xref:System.IO.FileInfo>
 - <xref:System.IO.DirectoryInfo>
 - <xref:System.IO.FileStream>
-- [Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)
-- [Распространенные задачи ввода-вывода](../../../docs/standard/io/common-i-o-tasks.md)
-- [Асинхронный файловый ввод-вывод](../../../docs/standard/io/asynchronous-file-i-o.md)
+- [Файловый и потоковый ввод-вывод](index.md)
+- [Распространенные задачи ввода-вывода](common-i-o-tasks.md)
+- [Асинхронный файловый ввод-вывод](asynchronous-file-i-o.md)
