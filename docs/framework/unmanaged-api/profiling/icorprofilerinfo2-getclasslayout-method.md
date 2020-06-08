@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a3a36987-5666-4e2f-95b5-d0cb246502ec
 topic_type:
 - apiref
-ms.openlocfilehash: 85319a45861b2b48f7690f69bb8f9f9469af014c
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: ac35b18ce8c45c95bb2fb8e820423470ca1b75bf
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76862806"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84497157"
 ---
 # <a name="icorprofilerinfo2getclasslayout-method"></a>Метод ICorProfilerInfo2::GetClassLayout
 Получает сведения о макете в памяти полей, определенных с помощью указанного класса. То есть этот метод получает смещения полей класса.  
@@ -41,7 +41,7 @@ HRESULT GetClassLayout(
  [in] Идентификатор класса, для которого будет извлекаться макет.  
   
  `rFieldOffset`  
- [вход, выход] Массив структур [COR_FIELD_OFFSET](../../../../docs/framework/unmanaged-api/metadata/cor-field-offset-structure.md) , каждый из которых содержит токены и смещения полей класса.  
+ [вход, выход] Массив структур [COR_FIELD_OFFSET](../metadata/cor-field-offset-structure.md) , каждый из которых содержит токены и смещения полей класса.  
   
  `cFieldOffset`  
  [in] Размер массива `rFieldOffset`.  
@@ -52,7 +52,7 @@ HRESULT GetClassLayout(
  `pulClassSize`  
  [out] Указатель на расположение, которое содержит размер класса в байтах.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
  Метод `GetClassLayout` возвращает только поля, определенные самим классом. Если в родительском классе этого класса также определены поля, профилировщик должен вызвать `GetClassLayout` в родительском классе, чтобы получить эти поля.  
   
  Если вы используете метод `GetClassLayout` со строковыми классами, метод завершится с ошибкой с кодом ошибки E_INVALIDARG. Чтобы получить сведения о макете строки, используйте [ICorProfilerInfo2:: GetStringLayout](icorprofilerinfo2-getstringlayout-method.md) . Метод `GetClassLayout` также не завершится с ошибкой при его вызове с классом массива.  
@@ -62,17 +62,17 @@ HRESULT GetClassLayout(
  Кроме того, сначала можно вызвать метод `GetClassLayout` с буфером `rFieldOffset` нулевой длины для получения правильного размера буфера. Затем можно задать размер буфера равным значению, возвращенному в параметре `pcFieldOffset`, и вызвать метод `GetClassLayout` снова.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Профилирование](index.md)

@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: bce1dcf8-b4ec-4e73-a917-f2df1ad49c8a
 topic_type:
 - apiref
-ms.openlocfilehash: 99e473268fd0d5bb8ce120b97576277949b86508
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: cac8e9570dab55af6b6e1fcf6f53b6a697727972
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76869001"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502916"
 ---
 # <a name="icorprofilerinfosetilinstrumentedcodemap-method"></a>Метод ICorProfilerInfo::SetILInstrumentedCodeMap
 
 Задает карту кода для указанной функции, используя указанные записи о сопоставлении языка MSIL.
 
 > [!NOTE]
-> В .NET Framework версии 2,0 вызов `SetILInstrumentedCodeMap` на `FunctionID`, который представляет универсальную функцию в определенном домене приложения, повлияет на все экземпляры этой функции в домене приложения.
+> В .NET Framework версии 2,0 вызов `SetILInstrumentedCodeMap` для `FunctionID` , представляющий универсальную функцию в конкретном домене приложения, повлияет на все экземпляры этой функции в домене приложения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,17 +45,17 @@ HRESULT SetILInstrumentedCodeMap(
 окне Идентификатор функции, для которой необходимо задать карту кода.
 
 `fStartJit`\
-окне Логическое значение, указывающее, является ли вызов метода `SetILInstrumentedCodeMap` первым для конкретного `FunctionID`. Задайте для `fStartJit` значение `true` в первом вызове `SetILInstrumentedCodeMap` для заданного `FunctionID`, а затем — `false`.
+окне Логическое значение, указывающее, является ли вызов `SetILInstrumentedCodeMap` метода первым для конкретного `FunctionID` . Задайте `fStartJit` для значение `true` в первом вызове `SetILInstrumentedCodeMap` для заданного `FunctionID` , а затем в `false` .
 
 `cILMapEntries`\
-окне Число элементов в массиве `cILMapEntries`.
+окне Число элементов в `cILMapEntries` массиве.
 
 `rgILMapEntries`\
 окне Массив структур COR_IL_MAP, каждый из которых задает смещение MSIL.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-Профилировщик часто вставляет инструкции в исходном коде метода, чтобы инструментировать этот метод (например, уведомлять о достижении данной строки исходного кода). `SetILInstrumentedCodeMap` позволяет профилировщику сопоставлять исходные инструкции MSIL с их новыми расположениями. Профилировщик может использовать метод [ICorProfilerInfo:: GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) , чтобы получить исходное смещение MSIL для заданного смещения в машинном коде.
+Профилировщик часто вставляет инструкции в исходном коде метода, чтобы инструментировать этот метод (например, уведомлять о достижении данной строки исходного кода). `SetILInstrumentedCodeMap`позволяет профилировщику сопоставлять исходные инструкции MSIL с их новыми расположениями. Профилировщик может использовать метод [ICorProfilerInfo:: GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) , чтобы получить исходное смещение MSIL для заданного смещения в машинном коде.
 
 Отладчик предполагает, что каждое старое смещение ссылается на смещение MSIL в исходном, неизмененном коде MSIL и что каждое новое смещение ссылается на смещение MSIL в новом, инструментированном коде. Карту следует сортировать в порядке возрастания. Чтобы пошаговое выполнение работало правильно, следуйте приведенным ниже рекомендациям.
 
@@ -83,18 +83,18 @@ HRESULT SetILInstrumentedCodeMap(
 
   - Новое смещение, равное 20 или выше, будет сопоставлено старому смещению 9.
 
-В .NET Framework 3,5 и предыдущих версиях вы выделяете массив `rgILMapEntries`, вызывая метод [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) . Поскольку среда выполнения получает владение этой памятью, профилировщик не должен пытаться освободить его.
+В .NET Framework 3,5 и предыдущих версиях вы выделяете `rgILMapEntries` массив путем вызова метода [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) . Поскольку среда выполнения получает владение этой памятью, профилировщик не должен пытаться освободить его.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
+**.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

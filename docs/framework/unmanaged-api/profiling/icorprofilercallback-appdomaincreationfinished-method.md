@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
 topic_type:
 - apiref
-ms.openlocfilehash: 8b3f7712436c001e5cd44f214f6edb06390abd41
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 76f56971223154d3ed966c272081049adf30de54
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177076"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500498"
 ---
 # <a name="icorprofilercallbackappdomaincreationfinished-method"></a>Метод ICorProfilerCallback::AppDomainCreationFinished
-Уведомляет профайлера о том, что был создан домен приложения.  
+Уведомляет профилировщик о том, что домен приложения создан.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,26 +37,26 @@ HRESULT AppDomainCreationFinished(
 
 - `appDomainId`
 
-  \[в» определяет созданный домен.
+  \[в] определяет домен, который был создан.
 
 - `hrStatus`
 
-  \[в HRESULT, который указывает, успешно ли завершено создание домена приложения.
+  \[в] значение HRESULT, указывающее, успешно ли создана область приложения.
 
-## <a name="remarks"></a>Remarks  
- Идентификатор приложения не действителен `AppDomainCreationFinished` для любого запроса информации до тех пор, пока метод не будет вызван.  
+## <a name="remarks"></a>Примечания  
+ Идентификатор приложения не является допустимым для запроса информации до `AppDomainCreationFinished` вызова метода.  
   
- Некоторые части загрузки домена приложения `AppDomainCreationFinished` могут продолжиться после обратного вызова. Сбой HRESULT `hrStatus` в указывает на сбой. Тем не менее, `hrStatus` успех HRESULT в указывает только на то, что первая часть создания домена приложения удалось.  
+ Некоторые части загрузки домена приложения могут продолжаться после `AppDomainCreationFinished` обратного вызова. Ошибка HRESULT в `hrStatus` указывает на сбой. Однако значение HRESULT в случае успеха в `hrStatus` указывает, что первая часть создания домена приложения успешно выполнена.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

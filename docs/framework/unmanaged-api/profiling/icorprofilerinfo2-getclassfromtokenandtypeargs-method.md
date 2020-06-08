@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b25c88f0-71b9-443b-8eea-1c94db0a44b9
 topic_type:
 - apiref
-ms.openlocfilehash: e0663ff122397ba639a0a219e513be2f3f0cbbef
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 702c5f9f2bc08c824bdc0607741a6afd65a3e89b
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76862794"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84497261"
 ---
 # <a name="icorprofilerinfo2getclassfromtokenandtypeargs-method"></a>Метод ICorProfilerInfo2::GetClassFromTokenAndTypeArgs
-Возвращает `ClassID` типа, используя указанный токен метаданных и `ClassID` значения любых аргументов типа.  
+Возвращает объект `ClassID` типа, используя указанный токен метаданных и `ClassID` значения любых аргументов типа.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,34 +41,34 @@ HRESULT GetClassFromTokenAndTypeArgs(
  окне Идентификатор модуля, в котором находится тип.  
   
  `typeDef`  
- окне Токен метаданных `mdTypeDef`, ссылающийся на тип.  
+ окне `mdTypeDef`Токен метаданных, ссылающийся на тип.  
   
  `cTypeArgs`  
  окне Число параметров типа для данного типа. Для типов, не являющихся универсальными, это значение должно быть равно нулю.  
   
  `typeArgs`  
- окне Массив значений `ClassID`, каждый из которых является аргументом типа. Значение `typeArgs` может быть равно NULL, если `cTypeArgs` имеет значение 0.  
+ окне Массив `ClassID` значений, каждый из которых является аргументом типа. Значение `typeArgs` может быть равно null, если `cTypeArgs` имеет значение 0.  
   
  `pClassID`  
- заполняет Указатель на `ClassID` указанного типа.  
+ заполняет Указатель на объект `ClassID` указанного типа.  
   
-## <a name="remarks"></a>Заметки  
- Вызов метода `GetClassFromTokenAndTypeArgs` с `mdTypeRef`, а не `mdTypeDef` маркером метаданных, может иметь непредсказуемые результаты. вызывающие объекты должны разрешить `mdTypeRef` в `mdTypeDef` при передаче.  
+## <a name="remarks"></a>Примечания  
+ Вызов `GetClassFromTokenAndTypeArgs` метода с помощью `mdTypeRef` вместо `mdTypeDef` токена метаданных может иметь непредсказуемые результаты; вызывающие объекты должны разрешить объект `mdTypeRef` в `mdTypeDef` при передаче.  
   
- Если тип еще не загружен, вызов `GetClassFromTokenAndTypeArgs` запустит загрузку, что является опасной операцией во многих контекстах. Например, вызов этого метода во время загрузки модулей или других типов может привести к бесконечному циклу, так как среда выполнения пытается циклически загружать вещи.  
+ Если тип еще не загружен, вызов инициирует `GetClassFromTokenAndTypeArgs` загрузку, что является опасной операцией во многих контекстах. Например, вызов этого метода во время загрузки модулей или других типов может привести к бесконечному циклу, так как среда выполнения пытается циклически загружать вещи.  
   
- В общем случае использование `GetClassFromTokenAndTypeArgs` не рекомендуется. Если профилировщики заинтересованы в событиях для определенного типа, они должны хранить `ModuleID` и `mdTypeDef` этого типа, а также использовать [ICorProfilerInfo2:: GetClassIDInfo2](icorprofilerinfo2-getclassidinfo2-method.md) для проверки того, является ли данный `ClassID` требуемым типом.  
+ Как правило, использование параметра `GetClassFromTokenAndTypeArgs` не рекомендуется. Если профилировщики заинтересованы в событиях для определенного типа, они должны хранить и для `ModuleID` `mdTypeDef` этого типа, а также использовать [ICorProfilerInfo2:: GetClassIDInfo2](icorprofilerinfo2-getclassidinfo2-method.md) для проверки того `ClassID` , относится ли данный тип к требуемому типу.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

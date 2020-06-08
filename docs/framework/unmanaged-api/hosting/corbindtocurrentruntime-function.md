@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6105c13e-d9cd-44d2-a95a-924e042830c7
 topic_type:
 - apiref
-ms.openlocfilehash: 348ca9d157a668dcd180076475f1fe9861197174
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 4c015d77deb4e6ed3d43074f2903e26b687de84f
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616679"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493569"
 ---
 # <a name="corbindtocurrentruntime-function"></a>Функция CorBindToCurrentRuntime
 Загружает среду CLR в процесс с использованием сведений о версии, хранящихся в XML-файле. Формат XML-файла моделируется после стандартного файла конфигурации приложения. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../configure-apps/file-schema/index.md).  
@@ -42,12 +42,12 @@ HRESULT CorBindToCurrentRuntime (
  `pwszFileName`  
  окне Имя файла конфигурации приложения, указывающего версию среды CLR для загрузки. Если имя файла не указано полностью, предполагается, что он находится в том же каталоге, что и исполняемый объект, вызывающий вызов.  
   
- Версия загружаемой среды выполнения описывается атрибутом Version в элементе [ \< requiredRuntime>](../../configure-apps/file-schema/startup/requiredruntime-element.md) файла конфигурации.  
+ Версия загружаемой среды выполнения описывается атрибутом Version в [\<requiredRuntime>](../../configure-apps/file-schema/startup/requiredruntime-element.md) элементе файла конфигурации.  
   
  Если версия не указана или `<requiredRuntime>` элемент не найден, загружается последняя версия среды CLR, установленная на компьютере.  
   
  `rclsid`  
- окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
+ окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
  окне `IID`Запрашиваемый интерфейс. Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
@@ -64,7 +64,7 @@ HRESULT CorBindToCurrentRuntime (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Функция CorBindToRuntime](corbindtoruntime-function.md)
 - [Функция CorBindToRuntimeByCfg](corbindtoruntimebycfg-function.md)

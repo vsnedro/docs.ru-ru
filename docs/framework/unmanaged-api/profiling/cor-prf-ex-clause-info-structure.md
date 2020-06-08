@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d0d6fb7-bc9d-40f0-8163-c0d162eaba7d
 topic_type:
 - apiref
-ms.openlocfilehash: fb6d2e5fc21047fea0928137f983c553f9bb2bbd
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 5c764031f709eefe61022d0662f37bc5d3f3e281
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76867286"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501005"
 ---
 # <a name="cor_prf_ex_clause_info-structure"></a>Структура COR_PRF_EX_CLAUSE_INFO
 Хранит сведения об определенном экземпляре исключительного предложения и связанном с ним кадре.  
@@ -44,8 +44,8 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 |`framePointer`|Указатель на логический кадр для обработчика предложения, например содержимое регистра x86 EBP.|  
 |`shadowStackPointer`|Указатель на теневой стек. Это значение является содержимым регистра BSP и применяется только к версии IA64.|  
   
-## <a name="remarks"></a>Заметки  
- При получении уведомления об исключении можно использовать [ICorProfilerInfo2:: GetNotifiedExceptionClauseInfo](icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md) для получения сведений о собственном адресе и кадре для предложения исключения (`catch`/`finally`/Filter), которое будет выполняться или только что было запущено.  
+## <a name="remarks"></a>Примечания  
+ При получении уведомления об исключении можно использовать [ICorProfilerInfo2:: GetNotifiedExceptionClauseInfo](icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md) для получения сведений о собственном адресе и кадре для предложения исключения ( `catch` / `finally` /Filter), которое должно быть запущено или только что было запущено.  
   
  Выполнение предложения исключения включает следующие обратные вызовы из среды CLR:  
   
@@ -62,14 +62,14 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 - [ICorProfilerCallback:: Ексцептионсеарчфилтерлеаве](icorprofilercallback-exceptionsearchfilterleave-method.md)  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Структуры профилирования](profiling-structures.md)

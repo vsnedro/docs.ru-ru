@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 86d98f39-52e6-4c61-a625-9760f695ff12
 topic_type:
 - apiref
-ms.openlocfilehash: 15ce195af0c0e8f8777f6e5d02043e17e32308da
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: ce4a842bc71ff144e46efb0d6f7068dfca9d207d
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76866654"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500446"
 ---
 # <a name="icorprofilercallbackassemblyloadfinished-method"></a>Метод ICorProfilerCallback::AssemblyLoadFinished
 Уведомляет профилировщик о том, что загрузка сборки завершена.  
@@ -43,20 +43,20 @@ HRESULT AssemblyLoadFinished(
 
   \[in] значение HRESULT, указывающее, успешно ли завершена загрузка сборки.
 
-## <a name="remarks"></a>Заметки  
- Значение `assemblyId` недопустимо для информационного запроса, пока не будет вызван метод `AssemblyLoadFinished`.  
+## <a name="remarks"></a>Примечания  
+ Значение недопустимо `assemblyId` для информационного запроса до `AssemblyLoadFinished` вызова метода.  
   
- Некоторые части загрузки сборки могут продолжаться после обратного вызова `AssemblyLoadFinished`. Ошибка HRESULT в `hrStatus` указывает на сбой. Однако значение HRESULT успешного выполнения в `hrStatus` указывает только на то, что первая часть загрузки сборки завершилась успешно.  
+ Некоторые части загрузки сборки могут продолжаться после `AssemblyLoadFinished` обратного вызова. Ошибка HRESULT в `hrStatus` указывает на сбой. Однако значение HRESULT в случае успеха в `hrStatus` указывает только на то, что первая часть загрузки сборки завершилась успешно.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

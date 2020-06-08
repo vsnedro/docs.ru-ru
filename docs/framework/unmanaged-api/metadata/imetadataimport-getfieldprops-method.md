@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7b0e9b10-8cef-4ba6-8432-40bf63e65ab1
 topic_type:
 - apiref
-ms.openlocfilehash: 8c3f98a124dbbcae3b0500932a2357ed1757951f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2bd05b49c3d51ac13865997910c99cc0cd5ca2d9
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177238"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491252"
 ---
 # <a name="imetadataimportgetfieldprops-method"></a>Метод IMetaDataImport::GetFieldProps
 Возвращает метаданные, связанные с полем, на которое ссылается указанный токен FieldDef.  
@@ -45,48 +45,48 @@ HRESULT GetFieldProps (
   
 ## <a name="parameters"></a>Параметры  
  `mb`  
- (в) Токен FieldDef, представляющий поле для получения связанных метаданных.  
+ окне Токен FieldDef, представляющий поле, для которого нужно получить связанные метаданные.  
   
  `pClass`  
- (ваут) Указатель на маркер TypeDef, представляющий тип класса, к которому принадлежит поле.  
+ заполняет Указатель на маркер TypeDef, представляющий тип класса, которому принадлежит поле.  
   
  `szField`  
- (ваут) Название поля.  
+ заполняет Имя поля.  
   
  `cchField`  
- (в) Размер в широких символах буфера для *szField*.  
+ окне Размер в расширенных символах буфера для *сзфиелд*.  
   
  `pchField`  
- (ваут) Фактический размер возвращенного буфера.  
+ заполняет Фактический размер возвращаемого буфера.  
   
  `pdwAttr`  
- (ваут) Флаги, связанные с метаданными поля.  
+ заполняет Флаги, связанные с метаданными поля.  
   
  `ppvSigBlob`  
- (в) Указатель на двоичное значение метаданных, описывающий поле.  
+ окне Указатель на двоичное значение метаданных, описывающее поле.  
   
  `pcbSigBlob`  
- (ваут) Размер байтов `ppvSigBlob`.  
+ заполняет Размер в байтах для `ppvSigBlob` .  
   
  `pdwCPlusTypeFlag`  
- (ваут) Флаг, описавательный тип значения поля.  
+ заполняет Флаг, указывающий тип значения поля.  
   
  `ppValue`  
- (ваут) Постоянное значение для поля.  
+ заполняет Постоянное значение для поля.  
   
  `pcchValue`  
- (ваут) Размер в символах, или ноль, если строка `ppValue`не существует.  
+ заполняет Размер в символах `ppValue` или нуль, если строка не существует.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

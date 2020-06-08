@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9544b711-e669-4eaf-8630-ee862e5e4489
 topic_type:
 - apiref
-ms.openlocfilehash: 0bfbfec930c193ea05a01bd5bd9f46d2ec6714b1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 079d9245526ff7914d1cbd6a91f0f2d96a690af5
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175295"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84490449"
 ---
 # <a name="imetadataimport2getmethodspecprops-method"></a>Метод IMetaDataImport2::GetMethodSpecProps
-Получает подпись метаданных метода, на который ссылается указанный токен MethodSpec.  
+Возвращает сигнатуру метаданных метода, на который ссылается указанный токен MethodSpec.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,27 +38,27 @@ HRESULT GetMethodSpecProps (
   
 ## <a name="parameters"></a>Параметры  
  `mi`  
- (в) Токен MethodSpec, представляющий моментацию метода.  
+ окне Токен MethodSpec, представляющий создание экземпляра метода.  
   
  `tkParent`  
- (ваут) Указатель на токен MethodDef или MethodRef, представляющий определение метода.  
+ заполняет Указатель на токен MethodDef или Месодреф, представляющий определение метода.  
   
  `ppvSigBlob`  
- (ваут) Указатель на двоичную подпись метаданных метода.  
+ заполняет Указатель на сигнатуру двоичных метаданных метода.  
   
  `pcbSigBlob`  
- (ваут) Размер, в байтах, из `ppvSigBlob`.  
+ заполняет Размер (в байтах) `ppvSigBlob` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)

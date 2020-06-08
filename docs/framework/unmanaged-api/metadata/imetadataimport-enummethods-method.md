@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8cc3b0c3-d97d-4f71-9e7d-ef2a92b4959a
 topic_type:
 - apiref
-ms.openlocfilehash: 218b65b5899692774c434ae136a3976ecb97ea2f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 91ae326a89e463d26b39c1659d872130042557bf
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177309"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84492024"
 ---
 # <a name="imetadataimportenummethods-method"></a>Метод IMetaDataImport::EnumMethods
 Перечисляет токены MethodDef, представляющие методы указанного типа.  
@@ -39,37 +39,37 @@ HRESULT EnumMethods (
   
 ## <a name="parameters"></a>Параметры  
  `phEnum`  
- (в, вне) Указатель на регистратор. Это должно быть NULL для первого вызова этого метода.  
+ [вход, выход] Указатель на перечислитель. При первом вызове этого метода это значение должно быть равно NULL.  
   
  `cl`  
- (в) Токен TypeDef, представляющий тип с методами для перечисления.  
+ окне Токен TypeDef, представляющий тип с методами для перечисления.  
   
  `rMethods`  
- (ваут) Массив для хранения токенов MethodDef.  
+ заполняет Массив для хранения токенов MethodDef.  
   
  `cMax`  
- (в) Максимальный размер массива `rMethods` MethodDef.  
+ окне Максимальный размер `rMethods` массива MethodDef.  
   
  `pcTokens`  
- (ваут) Количество возвращенных токенов MethodDef `rMethods`.  
+ заполняет Число токенов MethodDef, возвращаемых в `rMethods` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumMethods`вернулся успешно.|  
-|`S_FALSE`|Нет токенов MethodDef для перечисления. В этом `pcTokens` случае, равна нулю.|  
+|`S_OK`|`EnumMethods`успешно возвращено.|  
+|`S_FALSE`|Отсутствуют токены MethodDef для перечисления. В этом случае значение `pcTokens` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
