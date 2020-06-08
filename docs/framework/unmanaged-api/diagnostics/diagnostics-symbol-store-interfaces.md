@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging interfaces [.NET Framework]
 - interfaces [.NET Framework debugging]
 ms.assetid: f96987d5-e6a5-478b-ac5e-302e16545cce
-ms.openlocfilehash: 044ed5e08a85442c5a73c123cf51529d2fd3f1fc
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 34eee8c05e1c356d4c431245c6837bd2b3a89b32
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442180"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504476"
 ---
 # <a name="diagnostics-symbol-store-interfaces"></a>Интерфейсы хранилища символов диагностики
 В этом разделе описываются неуправляемые интерфейсы, позволяющие компилятору создавать символьные сведения для использования отладчиком.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
  [Интерфейс IBindingDisplay](ibindingdisplay-interface.md)  
  Предоставляет методы, отображающие текущие сведения о привязке для выполняющегося приложения.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "83442180"
  Этот интерфейс является дополнением к [интерфейсу метод isymunmanagedasyncmethodpropertieswriter](isymunmanagedasyncmethodpropertieswriter-interface.md)для чтения.  
   
  [Интерфейс ISymUnmanagedAsyncMethodPropertiesWriter](isymunmanagedasyncmethodpropertieswriter-interface.md)  
- Разрешает определение дополнительных сведений о асинхронном методе для каждого символа метода. Должен использовать с открытым методом (то есть между вызовами [метода опенмесод](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md)и [методом клосемесод](isymunmanagedwriter-closemethod-method.md)).  
+ Разрешает определение дополнительных сведений о асинхронном методе для каждого символа метода. Должен использовать с открытым методом (то есть между вызовами [метода опенмесод](isymunmanagedwriter-openmethod-method.md)и [методом клосемесод](isymunmanagedwriter-closemethod-method.md)).  
   
  [Интерфейс ISymUnmanagedBinder](isymunmanagedbinder-interface.md)  
  Представляет связыватель символов для неуправляемого кода.  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1a5758ea-2354-43c0-92a3-32c9909d64e1
 topic_type:
 - apiref
-ms.openlocfilehash: 30f2e675532848c2dbb1f055a0f1489cf3b2baa1
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 47f25dbb1f88dbf580b096246016cd46f2d0d89c
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76865796"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84499835"
 ---
 # <a name="icorprofilercallback2garbagecollectionfinished-method"></a>Метод ICorProfilerCallback2::GarbageCollectionFinished
 Уведомляет профилировщик о завершении сборки мусора и выдает для него все обратные вызовы сборки мусора.  
@@ -31,19 +31,19 @@ ms.locfileid: "76865796"
 HRESULT GarbageCollectionFinished();  
 ```  
   
-## <a name="remarks"></a>Заметки  
- Профилировщик может быть защищен для проверки объектов в их конечном расположении при вызове метода `GarbageCollectionFinished`.  
+## <a name="remarks"></a>Примечания  
+ Профилировщик может быть защищен для проверки объектов в их конечном расположении при `GarbageCollectionFinished` вызове метода.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

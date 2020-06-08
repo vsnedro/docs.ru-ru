@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: eb4e4ce0-06e7-4469-bbc4-edc2eb5da4b1
 topic_type:
 - apiref
-ms.openlocfilehash: b8cba2b1a1f206392a59f8bc9b968e725e0ce6ee
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: cc8ab6f0c8115da4d74280023dc692b66846ed94
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76869316"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84497755"
 ---
 # <a name="icorprofilerinfo-interface"></a>Интерфейс ICorProfilerInfo
 Предоставляет методы для использования профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах.  
@@ -36,13 +36,13 @@ ms.locfileid: "76869316"
 |[Метод ForceGC](icorprofilerinfo-forcegc-method.md)|Принудительное выполнение сборки мусора в среде выполнения.|  
 |[Метод GetAppDomainInfo](icorprofilerinfo-getappdomaininfo-method.md)|Возвращает сведения об указанном домене приложения.|  
 |[Метод GetAssemblyInfo](icorprofilerinfo-getassemblyinfo-method.md)|Возвращает сведения о указанной сборке.|  
-|[Метод GetClassFromObject](icorprofilerinfo-getclassfromobject-method.md)|Возвращает `ClassID`<br /><br /> Объект, учитывая его `ObjectID`.|  
+|[Метод GetClassFromObject](icorprofilerinfo-getclassfromobject-method.md)|Возвращает объект `ClassID`<br /><br /> Объект, учитывая его свойство `ObjectID` .|  
 |[Метод GetClassFromToken](icorprofilerinfo-getclassfromtoken-method.md)|Возвращает идентификатор класса по заданному маркеру метаданных. Этот метод является устаревшим в .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) .|  
 |[Метод GetClassIDInfo](icorprofilerinfo-getclassidinfo-method.md)|Возвращает родительский модуль и маркер метаданных для указанного класса.|  
 |[Метод GetCodeInfo](icorprofilerinfo-getcodeinfo-method.md)|Получает экстент машинного кода, связанного с указанным идентификатором функции. Этот метод устарел. Используйте вместо этого метод [ICorProfilerInfo2:: GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md) .|  
 |[Метод GetCurrentThreadID](icorprofilerinfo-getcurrentthreadid-method.md)|Возвращает идентификатор текущего потока, если он является управляемым потоком.|  
 |[Метод GetEventMask](icorprofilerinfo-geteventmask-method.md)|Возвращает текущие категории событий, для которых профилировщик хочет получать уведомления о событиях из среды CLR.|  
-|[Метод GetFunctionFromIP](icorprofilerinfo-getfunctionfromip-method.md)|Сопоставляет указатель инструкции управляемого кода с `FunctionID`.|  
+|[Метод GetFunctionFromIP](icorprofilerinfo-getfunctionfromip-method.md)|Сопоставляет указатель инструкции управляемого кода с `FunctionID` .|  
 |[Метод GetFunctionFromToken](icorprofilerinfo-getfunctionfromtoken-method.md)|Возвращает идентификатор функции. Этот метод является устаревшим в .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) .|  
 |[Метод GetFunctionInfo](icorprofilerinfo-getfunctioninfo-method.md)|Возвращает родительский класс и токен метаданных для указанной функции.|  
 |[Метод GetHandleFromThread](icorprofilerinfo-gethandlefromthread-method.md)|Сопоставляет идентификатор потока с обработчиком потока Win32.|  
@@ -61,27 +61,27 @@ ms.locfileid: "76869316"
 |[Метод SetEnterLeaveFunctionHooks](icorprofilerinfo-setenterleavefunctionhooks-method.md)|Задает реализованные профилировщиком функции, которые должны вызываться для обработчиков "Ввод", "Leave" и "таилкалл" управляемых функций.|  
 |[Метод SetEventMask](icorprofilerinfo-seteventmask-method.md)|Задает значение, указывающее типы событий, для которых профилировщик хочет получать уведомления из среды CLR.|  
 |[Метод SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)|Задает реализуемую профилировщиком функцию, которая будет вызвана для сопоставления значений `FunctionID` с альтернативными значениями, передаваемыми обработчикам входа и выхода для функции профилировщика.|  
-|[Метод SetFunctionReJIT](icorprofilerinfo-setfunctionrejit-method.md)|Не реализовано. Не используется.|  
+|[Метод SetFunctionReJIT](icorprofilerinfo-setfunctionrejit-method.md)|Не реализовано. Не используйте.|  
 |[Метод SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md)|Заменяет тело указанной функции в указанном модуле.|  
 |[Метод SetILInstrumentedCodeMap](icorprofilerinfo-setilinstrumentedcodemap-method.md)|Указывает, каким способом смещений исходной схемы MSIL указанной функции к новым смещениям MSIL-кода, измененного профилировщиком функции.|  
   
-## <a name="remarks"></a>Заметки  
- Профилировщик вызывает метод в интерфейсе `ICorProfilerInfo`, чтобы взаимодействовать со средой CLR для управления мониторингом событий и сведениями о запросах.  
+## <a name="remarks"></a>Примечания  
+ Профилировщик вызывает метод в `ICorProfilerInfo` интерфейсе, чтобы взаимодействовать со средой CLR для управления мониторингом событий и сведениями о запросах.  
   
- Методы интерфейса `ICorProfilerInfo` реализуются средой CLR с помощью модели свободных потоков. Каждый метод возвращает значение HRESULT, указывающее на успешное выполнение или сбой. Список возможных кодов возврата см. в разделе CorError. h.  
+ Методы `ICorProfilerInfo` интерфейса реализуются средой CLR с помощью модели свободных потоков. Каждый метод возвращает значение HRESULT, указывающее на успешное выполнение или сбой. Список возможных кодов возврата см. в разделе CorError. h.  
   
- CLR передается через реализацию метода [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md)профилировщика, `ICorProfilerInfo` интерфейс для каждого профилировщика кода во время инициализации. Затем профилировщик кода может вызвать методы интерфейса `ICorProfilerInfo`, чтобы получить сведения об управляемом коде, выполняемом под управлением среды CLR.  
+ Среда CLR передается через реализацию метода [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md)в профилировщике, `ICorProfilerInfo` интерфейс к каждому профилировщику кода во время инициализации. Профилировщик кода может затем вызывать методы `ICorProfilerInfo` интерфейса для получения сведений об управляемом коде, выполняемом под управлением среды CLR.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0eed759f-cce8-405d-88dc-9ee293a38928
 topic_type:
 - apiref
-ms.openlocfilehash: 2b2d619c5940376806e9873a528b4f08886593e9
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 18c3b6e840ec1f6cb1481c8d752e6399dcdae077
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76863560"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84498145"
 ---
 # <a name="icorprofilerinfogetfunctionfromtoken-method"></a>Метод ICorProfilerInfo::GetFunctionFromToken
 Возвращает идентификатор функции. Этот метод является устаревшим в .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) .  
@@ -34,11 +34,11 @@ HRESULT GetFunctionFromToken(
     [out] FunctionID *pFunctionId);  
 ```  
   
-## <a name="remarks"></a>Заметки  
- Метод `GetFunctionFromToken` не будет работать для универсальных функций или функций в универсальных типах. Теперь она устарела. Используйте `ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs` для всех функций.  
+## <a name="remarks"></a>Примечания  
+ `GetFunctionFromToken`Метод не будет работать для универсальных функций или функций в универсальных типах. Теперь он устарел. Используется `ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs` для всех функций.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
@@ -46,6 +46,6 @@ HRESULT GetFunctionFromToken(
   
  **.NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

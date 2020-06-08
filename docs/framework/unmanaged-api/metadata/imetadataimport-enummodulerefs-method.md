@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 53441f3a-68d2-477c-906e-37c55dfcfb4d
 topic_type:
 - apiref
-ms.openlocfilehash: 66186d25e8fee0d6b25c0a2069d46ff9a104c625
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: fe7350e6d8e400ae37b5b8b7854a56f3c5c53ea7
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74450030"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491763"
 ---
 # <a name="imetadataimportenummodulerefs-method"></a>Метод IMetaDataImport::EnumModuleRefs
 Перечисляет токены ModuleRef, представляющие импортируемые модули.  
@@ -47,25 +47,25 @@ HRESULT EnumModuleRefs (
  [in] Максимальный размер массива `rModuleRefs`.  
   
  `pcModuleRefs`  
- заполняет Число маркеров ModuleRef, возвращаемых в `rModuleRefs`.  
+ заполняет Число токенов ModuleRef, возвращаемых в `rModuleRefs` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumModuleRefs` успешно возвращено.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом случае `pcModuleRefs` равно нулю.|  
+|`S_OK`|`EnumModuleRefs`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcModuleRefs` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

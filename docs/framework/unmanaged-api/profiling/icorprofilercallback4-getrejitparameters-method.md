@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0e9bfe07-9f20-498c-b568-9017c8f6056c
 topic_type:
 - apiref
-ms.openlocfilehash: 858d65783515a89a434cf719ef9d5a999643094c
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 527e48d02d5267d6ae41214686c2e8c997d85dca
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76865328"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84499549"
 ---
 # <a name="icorprofilercallback4getrejitparameters-method"></a>Метод ICorProfilerCallback4::GetReJITParameters
 Позволяет профилировщику кода устанавливать альтернативные флаги создания кода для нового текста перекомпилированного метода.  
@@ -36,24 +36,24 @@ HRESULT GetReJITParameters(     [in] ModuleID moduleId,     [in] mdMethodDef met
  окне Модуль, содержащий метод, для которого среда CLR требует параметры JIT-компиляции.  
   
  `methodId`  
- окне `MethodDef` метода, для которого среда CLR требует параметры JIT-компиляции.  
+ окне `MethodDef`Метод, для которого среда CLR требует параметры JIT-компиляции.  
   
  `pFunctionControl`  
  окне Указатель на интерфейс [икорпрофилерфунктионконтрол](icorprofilerfunctioncontrol-interface.md) , который профилировщик может использовать для предоставления сведений о JIT-компиляции для метода, для которого выполняется повторная компиляция.  
   
-## <a name="remarks"></a>Заметки  
- Среда CLR выдает ответный вызов `GetReJITParameters`, чтобы профилировщик мог указать параметры для перекомпиляции данного метода. Обратный вызов `GetReJITParameters` выдается только один раз для каждой функции; параметры, предоставляемые профилировщиком, применяются ко всем экземплярам этой функции.  
+## <a name="remarks"></a>Примечания  
+ Среда CLR выдает `GetReJITParameters` обратный вызов, чтобы профилировщик мог указать параметры для перекомпиляции данного метода. `GetReJITParameters`Обратный вызов выдается только один раз для каждой функции; параметры, предоставляемые профилировщиком, применяются ко всем экземплярам этой функции.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback4](icorprofilercallback4-interface.md)

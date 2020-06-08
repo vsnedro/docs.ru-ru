@@ -6,17 +6,17 @@ helpviewer_keywords:
 - enumerations [.NET Framework hosting]
 - hosting enumerations [.NET Framework]
 ms.assetid: e09131eb-1f7d-4f52-ae42-7393e9b62ef6
-ms.openlocfilehash: e6fb22f91d57a356a9a7c3749e44a9fb3c36b699
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 8edace3191ee4477b19f199d5db6c891c993dcd5
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616116"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504307"
 ---
 # <a name="hosting-enumerations"></a>Размещение перечислений
 В этом разделе описаны неуправляемые перечисления, используемые API размещения.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
  [Перечисление CLSID_RESOLUTION_FLAGS](clsid-resolution-flags-enumeration.md)  
  Содержит значения, которые указывают, как общеязыковая среда выполнения (CLR) должна разрешать `CLSID` .  
   
@@ -72,13 +72,13 @@ ms.locfileid: "83616116"
  Содержит значения, которые указывают на влияние сбоя при запросе определенного выделения памяти, но не могут быть удовлетворены.  
   
  [Перечисление EPolicyAction](epolicyaction-enumeration.md)  
- Описывает действия политики, которые узел может задать для операций, описанных в разделе Перечисление [еклроператион](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) и сбои, описанные в разделе [перечисление еклрфаилуре](eclrfailure-enumeration.md).  
+ Описывает действия политики, которые узел может задать для операций, описанных в разделе Перечисление [еклроператион](eclroperation-enumeration.md) и сбои, описанные в разделе [перечисление еклрфаилуре](eclrfailure-enumeration.md).  
   
  [Перечисление ESymbolReadingPolicy](esymbolreadingpolicy-enumeration.md)  
  Содержит значения, задают политику чтения PDB-файлов.  
   
  [Перечисление ETaskType](etasktype-enumeration.md)  
- Содержит значения, указывающие тип задачи, представленной [интерфейсом ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) или интерфейсом [IHostTask](ihosttask-interface.md) .  
+ Содержит значения, указывающие тип задачи, представленной [интерфейсом ICLRTask](iclrtask-interface.md) или интерфейсом [IHostTask](ihosttask-interface.md) .  
   
  [Перечисление HOST_TYPE](host-type-enumeration.md)  
  Содержит значения, указывающие тип узла, запускающего приложение.  

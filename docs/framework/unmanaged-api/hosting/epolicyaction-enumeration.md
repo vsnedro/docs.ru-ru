@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 72dd76ba-239e-45ac-9ded-318fb07d6c6d
 topic_type:
 - apiref
-ms.openlocfilehash: 8788d6e2220778a3f0926d5ed3dd59142487bcca
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 901c62e6f2519fc4f9251f348c77b11bbe0992be
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616194"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504349"
 ---
 # <a name="epolicyaction-enumeration"></a>Перечисление EPolicyAction
-Описание действий политики, которые узел может задать для операций, описанных в [еклроператион](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) и ошибках, описанных в [еклрфаилуре](eclrfailure-enumeration.md).  
+Описание действий политики, которые узел может задать для операций, описанных в [еклроператион](eclroperation-enumeration.md) и ошибках, описанных в [еклрфаилуре](eclrfailure-enumeration.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -56,8 +56,8 @@ typedef enum {
 |`eThrowException`|Указывает, что должно быть создано исключение, соответствующее условию, например нехватки памяти, переполнение буфера и т. д.|  
 |`eUnloadAppDomain`|Указывает, что <xref:System.AppDomain> необходимо выгрузить. Среда CLR пытается запустить методы завершения.|  
   
-## <a name="remarks"></a>Комментарии  
- Узел задает действия политики, вызывая методы интерфейса [ICLRPolicyManager](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) . Сведения о принудительном и корректном аварийном завершении см. в разделе Перечисление [еклроператион](eclroperation-enumeration.md) .  
+## <a name="remarks"></a>Примечания  
+ Узел задает действия политики, вызывая методы интерфейса [ICLRPolicyManager](iclrpolicymanager-interface.md) . Сведения о принудительном и корректном аварийном завершении см. в разделе Перечисление [еклроператион](eclroperation-enumeration.md) .  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -68,7 +68,7 @@ typedef enum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrFailure](eclrfailure-enumeration.md)
 - [Интерфейс ICLRPolicyManager](iclrpolicymanager-interface.md)

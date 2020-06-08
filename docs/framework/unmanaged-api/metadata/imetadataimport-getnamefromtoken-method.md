@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 32114ecf-8916-4ab2-a201-179c017344f1
 topic_type:
 - apiref
-ms.openlocfilehash: 6ed30f07fcec9c730e1514350c594399f0aa16e5
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 6d62739148280c7333cf7cdb6002b59a145496e3
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74437272"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503566"
 ---
 # <a name="imetadataimportgetnamefromtoken-method"></a>Метод IMetaDataImport::GetNameFromToken
 Возвращает имя объекта, на который ссылается указанный токен метаданных, в формате UTF-8. Этот метод устарел.  
@@ -42,10 +42,10 @@ HRESULT GetNameFromToken (
  заполняет Указатель на имя объекта UTF-8 в куче.  
   
 ## <a name="remarks"></a>Примечания  
- `GetNameFromToken` устарел. В качестве альтернативы можно вызвать метод для получения свойств определенного типа токена, например `GetFieldProps` для поля или `GetMethodProps` для метода.  
+ `GetNameFromToken` устарел. В качестве альтернативы можно вызвать метод, чтобы получить свойства требуемого типа токена, например `GetFieldProps` для поля или `GetMethodProps` для метода.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
@@ -53,7 +53,7 @@ HRESULT GetNameFromToken (
   
  **.NET Framework версии:** 1,0  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
