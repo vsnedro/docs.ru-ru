@@ -6,12 +6,12 @@ helpviewer_keywords:
 - utf8output compiler option [Visual Basic]
 - /utf8output compiler option [Visual Basic]
 ms.assetid: 8ab36b1e-027a-49ac-85b4-f48997d9e4d6
-ms.openlocfilehash: 5cdc60888cd872940afc1b03febd879bb6d87c2e
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 0a16cdc535de5ed0619bf080bb4637449b11cfef
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74350841"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403061"
 ---
 # <a name="-utf8output-visual-basic"></a>-utf8output (Visual Basic)
 Отображает выходные данные компилятора в кодировке UTF-8.  
@@ -41,5 +41,5 @@ vbc -utf8output in.vb
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)

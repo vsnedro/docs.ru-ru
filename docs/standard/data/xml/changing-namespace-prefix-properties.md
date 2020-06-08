@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d5c87cbe-4d69-429f-aad5-3103c2ca2770
-ms.openlocfilehash: b1df520d00d3a98b2e518092d4eff51b5d0b7741
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: b817a68ff9789be414118ff4c1a3d88ca3ea9f01
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78158029"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290919"
 ---
 # <a name="changing-namespace-prefix-properties"></a>Изменение свойств префикса пространства имен
 Класс **XmlNode** позволяет изменять префикс пространства имен, связанный с данным узлом. Изменение префикса элемента показано в следующем фрагменте кода.  
@@ -66,4 +66,4 @@ Console.WriteLine(doc.InnerXml);
   
 ## <a name="see-also"></a>См. также
 
-- [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [Модель объектов документов XML (DOM)](xml-document-object-model-dom.md)

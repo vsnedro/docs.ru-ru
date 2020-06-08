@@ -3,12 +3,12 @@ title: Удаление атрибутов из узла элемента в DOM
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4
-ms.openlocfilehash: bb18e712d5ed2cd06c7ae0e867b19ca8a9ad2513
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 0ac8528d52ef09aab99c76aea9378c0188fa66d4
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710353"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84292024"
 ---
 # <a name="removing-attributes-from-an-element-node-in-the-dom"></a>Удаление атрибутов из узла элемента в DOM
 Существует много способов удаления атрибутов. Один из них заключается в их удалении из коллекции атрибутов. Для этого выполняются следующие шаги.  
@@ -39,4 +39,4 @@ ms.locfileid: "75710353"
   
 ## <a name="see-also"></a>См. также
 
-- [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [Модель объектов документов XML (DOM)](xml-document-object-model-dom.md)

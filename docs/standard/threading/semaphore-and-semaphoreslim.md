@@ -10,12 +10,12 @@ helpviewer_keywords:
 - SemaphoreSlim class, about SemaphoreSlim class
 - threading [.NET Framework], Semaphore class
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
-ms.openlocfilehash: b9f7c122ac8acf34f740aca5f0fafc162edcea82
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9a18a6517548bb402e1e3b9ac02e95aae32a8f4a
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73127590"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291140"
 ---
 # <a name="semaphore-and-semaphoreslim"></a>Классы Semaphore и SemaphoreSlim
 <xref:System.Threading.Semaphore?displayProperty=nameWithType> Класс представляет собой именованный (общесистемный) или локальный семафор. Он является тонкой оболочкой вокруг объекта семафора Win32. Семафоры Win32 являются семафорами счета, которые могут быть использованы для управления доступом к пулу ресурсов.  
@@ -48,4 +48,4 @@ ms.locfileid: "73127590"
 
 - <xref:System.Threading.Semaphore>
 - <xref:System.Threading.SemaphoreSlim>
-- [Объекты и функциональные возможности работы с потоками](../../../docs/standard/threading/threading-objects-and-features.md)
+- [Объекты и функциональные возможности работы с потоками](threading-objects-and-features.md)
