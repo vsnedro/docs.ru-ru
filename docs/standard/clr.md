@@ -16,12 +16,12 @@ helpviewer_keywords:
 - code, runtime functionality
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 ms.custom: updateeachrelease
-ms.openlocfilehash: 6f9ad8aafc37039b55ae3bf6eb743e07ad8e2235
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 74421f79c18f32e121d51c47f3eb32f3c2ed71fd
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74884414"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289250"
 ---
 # <a name="common-language-runtime-clr-overview"></a>Обзор среды CLR
 
@@ -58,7 +58,7 @@ ms.locfileid: "74884414"
 
 - сборка мусора;
 
-- использование делегатов вместо указателей на функции для повышения типобезопасности и уровня защиты. Подробнее о делегатах см. в разделе [Система общих типов CTS](../../docs/standard/base-types/common-type-system.md).
+- использование делегатов вместо указателей на функции для повышения типобезопасности и уровня защиты. Подробнее о делегатах см. в разделе [Система общих типов CTS](base-types/common-type-system.md).
 
 ## <a name="clr-versions"></a>Версии CLR
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - tables [.NET Framework], type conversions
 - data types [.NET Framework], converting
 ms.assetid: 0ea65c59-85eb-4a52-94ca-c36d3bd13058
-ms.openlocfilehash: aa1ef8397338af949bd147fd3252b2d9ecaf53ef
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bb696c65078a5dae0b81a48bffc786d2257496c3
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73103888"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290569"
 ---
 # <a name="type-conversion-tables-in-net"></a>Таблицы преобразования типов в .NET
 Расширяющее преобразование — это преобразование, при котором значение одного типа преобразуется в другой тип равного или большего размера. Сужающее преобразование — это преобразование, при котором значение одного типа преобразуется в другой тип меньшего размера. Таблицы в этом разделе описывают характеристики обоих типов преобразований.  
@@ -72,4 +72,4 @@ ms.locfileid: "73103888"
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Convert?displayProperty=nameWithType>
-- [Преобразование типов в .NET](../../../docs/standard/base-types/type-conversion.md)
+- [Преобразование типов в .NET](type-conversion.md)

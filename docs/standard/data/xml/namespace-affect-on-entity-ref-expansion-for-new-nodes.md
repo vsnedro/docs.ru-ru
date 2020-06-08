@@ -3,12 +3,12 @@ title: Влияние пространства имен на раскрытие 
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 64359aee-aab0-4042-9a32-d19789af6ca7
-ms.openlocfilehash: 4772e3f7365069c537c4ec3bc8571f2f710bc9fc
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 05ec622f09106978281cd3e6f0a82f13703c2097
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710626"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288814"
 ---
 # <a name="namespace-affect-on-entity-reference-expansion-for-new-nodes-containing-elements-and-attributes"></a>Влияние пространства имен на раскрытие ссылок на сущности для новых узлов, содержащих элементы и атрибуты
 Так как содержимое декларации сущности может содержать абсолютно все, существует вероятность, что содержимое может содержать элемент типа `<!ENTITY aname "<elem>test</elem>">`.  
@@ -20,4 +20,4 @@ ms.locfileid: "75710626"
   
 ## <a name="see-also"></a>См. также
 
-- [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [Модель объектов документов XML (DOM)](xml-document-object-model-dom.md)

@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5711b225-6aa2-4e4f-9898-19f2d518ad1a
-ms.openlocfilehash: 87ae96944f9a9f2bbcefb54c343f429c75c3022d
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: da1cb81c819e55f572e9faaabef4dd49ee7397de
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710392"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288684"
 ---
 # <a name="reading-xml-data-using-xpathdocument-and-xmldocument"></a>Чтение XML-данных с помощью XPathDocument и XmlDocument
 Существует два способа чтения XML-документа в пространстве имен <xref:System.Xml.XPath?displayProperty=nameWithType>. Один - считывание XML-документа с использованием доступного только для чтения класса <xref:System.Xml.XPath.XPathDocument>, а другой - считывание XML-документа с использованием редактируемого класса <xref:System.Xml.XmlDocument> в пространстве имен <xref:System.Xml?displayProperty=nameWithType>.  
@@ -75,7 +75,7 @@ document.Load("books.xml");
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>
 - <xref:System.Xml.XPath.XPathNavigator>
-- [Обработка XML-данных с использованием модели данных XPath](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
-- [Доступ к XML-данным с помощью класса XPathNavigator](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)
-- [Изменение XML-данных с помощью XPathNavigator](../../../../docs/standard/data/xml/editing-xml-data-using-xpathnavigator.md)
-- [Проверка по схеме с помощью XPathNavigator](../../../../docs/standard/data/xml/schema-validation-using-xpathnavigator.md)
+- [Обработка XML-данных с использованием модели данных XPath](process-xml-data-using-the-xpath-data-model.md)
+- [Доступ к XML-данным с помощью класса XPathNavigator](accessing-xml-data-using-xpathnavigator.md)
+- [Изменение XML-данных с помощью XPathNavigator](editing-xml-data-using-xpathnavigator.md)
+- [Проверка по схеме с помощью XPathNavigator](schema-validation-using-xpathnavigator.md)

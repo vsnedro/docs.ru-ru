@@ -3,12 +3,12 @@ title: Навигация по пространствам имен XPath
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 06cc7abb-7416-415c-9dd6-67751b8cabd5
-ms.openlocfilehash: f35318b1439b762bf7c87cff217ed1787e8d007c
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: dce7d81d4249cb40c3be6dee4b8bd25951ccb10a
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78156326"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84283212"
 ---
 # <a name="xpath-namespace-navigation"></a>Навигация по пространствам имен XPath
 Для использования запросов XPath с XML-документами необходимо правильно задавать адреса пространств имен XML и элементов, содержащихся в этих пространствах имен. Использование пространств имен устраняет неоднозначность, возникающую, когда имена используются в нескольких контекстах. Например, имя `ID` может относиться к нескольким идентификаторам, связанным с различными элементами XML-документа. В синтаксисе пространств имен задаются URI, имена и префиксы, по которым различаются элементы XML-документа.  
@@ -64,5 +64,5 @@ using (XmlReader reader = XmlReader.Create("response.xml"))
   
 ## <a name="see-also"></a>См. также
 
-- [Доступ к XML-данным с помощью класса XPathNavigator](../../../../docs/standard/data/xml/accessing-xml-data-using-xpathnavigator.md)
-- [Выбор, вычисление и отбор XML-данных с помощью XPathNavigator](../../../../docs/standard/data/xml/selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)
+- [Доступ к XML-данным с помощью класса XPathNavigator](accessing-xml-data-using-xpathnavigator.md)
+- [Выбор, вычисление и отбор XML-данных с помощью XPathNavigator](selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)

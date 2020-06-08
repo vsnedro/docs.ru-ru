@@ -8,12 +8,12 @@ helpviewer_keywords:
 - files [Visual Basic], downloading
 - files [Visual Basic], transferring
 ms.assetid: ac479f81-c0e2-4b99-af73-217f446b73da
-ms.openlocfilehash: 4923feb46ff638de9514a4d70fc00367491a6f44
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a5b379da00656f65476e4d9504457bf8b464beac
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74345624"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84411659"
 ---
 # <a name="how-to-download-a-file-in-visual-basic"></a>Практическое руководство. Загрузка файла в Visual Basic
 
@@ -59,5 +59,5 @@ ms.locfileid: "74345624"
 
 - <xref:Microsoft.VisualBasic.Devices.Network>
 - <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A>
-- [Практическое руководство. Передача файла](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)
-- [Практическое руководство. Анализ путей к файлам](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [Практическое руководство. Передача файла](how-to-upload-a-file.md)
+- [Практическое руководство. Анализ путей к файлам](../drives-directories-files/how-to-parse-file-paths.md)

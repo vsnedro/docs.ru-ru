@@ -11,12 +11,12 @@ helpviewer_keywords:
 - streams, writing characters to strings
 - I/O [.NET Framework], writing characters to strings
 ms.assetid: 1222cbeb-0760-44bf-9888-914a2a37174b
-ms.openlocfilehash: ecbfa2de2c21ff79df269f74eeddfa0738e7e25c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 04fc21c452258a88292a886d952353ac55573121
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78160288"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288255"
 ---
 # <a name="how-to-write-characters-to-a-string"></a>Практическое руководство. Запись символов в строку
 Следующий пример кода демонстрирует синхронную или асинхронную запись символов из массива символов в строку.  
@@ -38,11 +38,11 @@ ms.locfileid: "78160288"
 - <xref:System.IO.StringWriter>  
 - <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>  
 - <xref:System.Text.StringBuilder>  
-- [Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)  
-- [Асинхронный файловый ввод-вывод](../../../docs/standard/io/asynchronous-file-i-o.md)  
-- [Практическое руководство. Перечисление каталогов и файлов](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [Практическое руководство. Открытие файла журнала и добавление в него данных](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [Практическое руководство. Чтение текста из файла](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [Практическое руководство. Запись текста в файл](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [Практическое руководство. Считывание символов из строки](../../../docs/standard/io/how-to-read-characters-from-a-string.md)
+- [Файловый и потоковый ввод-вывод](index.md)  
+- [Асинхронный файловый ввод-вывод](asynchronous-file-i-o.md)  
+- [Практическое руководство. Перечисление каталогов и файлов](how-to-enumerate-directories-and-files.md)  
+- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [Практическое руководство. Открытие файла журнала и добавление в него данных](how-to-open-and-append-to-a-log-file.md)  
+- [Практическое руководство. Чтение текста из файла](how-to-read-text-from-a-file.md)  
+- [Практическое руководство. Запись текста в файл](how-to-write-text-to-a-file.md)  
+- [Практическое руководство. Считывание символов из строки](how-to-read-characters-from-a-string.md)

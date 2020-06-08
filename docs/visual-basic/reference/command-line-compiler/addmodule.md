@@ -6,12 +6,12 @@ helpviewer_keywords:
 - addmodule compiler option [Visual Basic]
 - -addmodule compiler option [Visual Basic]
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
-ms.openlocfilehash: dd98b45d75ff421dc81666ed47695132a49bfa3a
-ms.sourcegitcommit: 4f4a32a5c16a75724920fa9627c59985c41e173c
+ms.openlocfilehash: 9e8146497d63d949f138d6cd08c9ea8c7b03c651
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72524476"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414315"
 ---
 # <a name="-addmodule"></a>-addmodule
 Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту.  
@@ -31,9 +31,9 @@ ms.locfileid: "72524476"
   
  Все модули, добавленные с помощью `-addmodule`, во время выполнения должны находиться в том же каталоге, что и выходной файл. То есть во время компиляции можно указать модуль в любом каталоге, но во время выполнения он должен находиться в каталоге приложения. В противном случае возникает ошибка <xref:System.TypeLoadException>.  
   
- При указании (неявно или явно) любого параметра [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md), кроме `-target:module` с `-addmodule`, файлы, передаваемые в `-addmodule`, становятся частью сборки проекта. Сборка необходима для запуска выходного файла, который содержит один или несколько файлов, добавленных с помощью `-addmodule`.  
+ При указании (неявно или явно) любого параметра [-target (Visual Basic)](target.md), кроме `-target:module` с `-addmodule`, файлы, передаваемые в `-addmodule`, становятся частью сборки проекта. Сборка необходима для запуска выходного файла, который содержит один или несколько файлов, добавленных с помощью `-addmodule`.  
   
- Используйте параметр [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md) для импорта метаданных из файла, содержащего сборку.  
+ Используйте параметр [-reference (Visual Basic)](reference.md) для импорта метаданных из файла, содержащего сборку.  
   
 > [!NOTE]
 > Параметр `-addmodule` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.  
@@ -51,7 +51,7 @@ ms.locfileid: "72524476"
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
-- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [-target (Visual Basic)](target.md)
+- [-reference (Visual Basic)](reference.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)

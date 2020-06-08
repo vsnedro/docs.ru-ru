@@ -12,12 +12,12 @@ helpviewer_keywords:
 - .NET Framework regular expressions, backreference constructs
 - regular expressions, backreference constructs
 ms.assetid: 567a4b8d-0e79-49dc-8df9-f4b1aa376a2a
-ms.openlocfilehash: 905578d763ebe5d5b8eb96a9056fbe11fbfab137
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 87c3dbde2eb2b5a19b91f34bb2b088af5c0d1827
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75711536"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290608"
 ---
 # <a name="backreference-constructs-in-regular-expressions"></a>Конструкции обратных ссылок в регулярных выражениях
 
@@ -26,7 +26,7 @@ ms.locfileid: "75711536"
 > [!NOTE]
 > Для ссылки на именованные и нумерованные захватываемые группы в строках замены используется отдельный синтаксис. Для получения дополнительной информации см. [Подстановки](substitutions-in-regular-expressions.md).
 
-.NET определяет отдельные элементы языка для ссылки на нумерованные и именованные захватываемые группы. Дополнительные сведения о группах записи см. в статье [Конструкции группирования](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+.NET определяет отдельные элементы языка для ссылки на нумерованные и именованные захватываемые группы. Дополнительные сведения о группах записи см. в статье [Конструкции группирования](grouping-constructs-in-regular-expressions.md).
 
 ## <a name="numbered-backreferences"></a>Нумерованные обратные ссылки
 
@@ -138,4 +138,4 @@ ms.locfileid: "75711536"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Элементы языка регулярных выражений — краткий справочник](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Элементы языка регулярных выражений — краткий справочник](regular-expression-language-quick-reference.md)

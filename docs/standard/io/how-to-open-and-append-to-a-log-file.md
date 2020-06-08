@@ -11,12 +11,12 @@ helpviewer_keywords:
 - log files, appending to
 - I/O [.NET Framework], log files
 ms.assetid: 74423362-1721-49cb-aa0a-e04005f72a06
-ms.openlocfilehash: a549aba3a763bcfc5a3889efd65e2495eca7622c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 025c35344b9262e1f2fa6da87b68e46e21a54222
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78155715"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291829"
 ---
 # <a name="how-to-open-and-append-to-a-log-file"></a>Практическое руководство. открытие файла журнала и добавление в него данных
 <xref:System.IO.StreamWriter> и <xref:System.IO.StreamReader> записывают данные в потоки и считывают данные из потоков. Следующий пример кода открывает файл *log.txt* для получения входных данных или создает его, если он не существует, а затем добавляет сведения журнала в конец файла. После этого он записывает содержимое файла для отображения в стандартный поток вывода.
@@ -37,10 +37,10 @@ ms.locfileid: "78155715"
 - <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType>  
 - <xref:System.IO.File.OpenText%2A?displayProperty=nameWithType>  
 - <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
-- [Практическое руководство. Перечисление каталогов и файлов](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [Практическое руководство. Чтение текста из файла](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [Практическое руководство. Запись текста в файл](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [Практическое руководство. Считывание символов из строки](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
-- [Практическое руководство. Запись символов в строку](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
-- [Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)
+- [Практическое руководство. Перечисление каталогов и файлов](how-to-enumerate-directories-and-files.md)  
+- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [Практическое руководство. Чтение текста из файла](how-to-read-text-from-a-file.md)  
+- [Практическое руководство. Запись текста в файл](how-to-write-text-to-a-file.md)  
+- [Практическое руководство. Считывание символов из строки](how-to-read-characters-from-a-string.md)  
+- [Практическое руководство. Запись символов в строку](how-to-write-characters-to-a-string.md)  
+- [Файловый и потоковый ввод-вывод](index.md)

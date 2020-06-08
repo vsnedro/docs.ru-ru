@@ -14,12 +14,12 @@ helpviewer_keywords:
 - I/O [Visual Basic]
 - sequential access
 ms.assetid: 231533bf-d049-4345-befa-3fb78fe6517d
-ms.openlocfilehash: 22bcd0f1f3acb0c0ad899b83ad2d879ead948f12
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3b2042862ae81a52d62374e35a456766ed47edc9
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74348899"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401736"
 ---
 # <a name="file-access-with-visual-basic"></a>Доступ к файлам с помощью Visual Basic
 
@@ -27,23 +27,23 @@ ms.locfileid: "74348899"
   
 ## <a name="in-this-section"></a>Содержание  
 
- [Чтение из файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
+ [Чтение из файлов](reading-from-files.md)  
  Список разделов, посвященных использованию объекта `My.Computer.FileSystem` для чтения из файлов.  
   
- [Запись в файлы](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  
+ [Запись в файлы](writing-to-files.md)  
  Список разделов, посвященных использованию объекта `My.Computer.FileSystem` для записи в файлы.  
   
- [Создание, удаление и перемещение файлов и каталогов](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)  
+ [Создание, удаление и перемещение файлов и каталогов](creating-deleting-and-moving-files-and-directories.md)  
  Список разделов, посвященных использованию объекта `My.Computer.FileSystem` для создания, копирования, удаления и перемещения файлов и папок.  
   
- [Анализ текстовых файлов с помощью объекта TextFieldParser](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
+ [Анализ текстовых файлов с помощью объекта TextFieldParser](parsing-text-files-with-the-textfieldparser-object.md)  
  Описание использования объекта `TextFieldReader` для анализа таких текстовых файлов как журналов.  
   
- [Кодировки файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
+ [Кодировки файлов](file-encodings.md)  
  Описание кодировок файлов и их применения.  
   
- [Пошаговое руководство. Операции с файлами и каталогами в Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
+ [Пошаговое руководство. Операции с файлами и каталогами в Visual Basic](walkthrough-manipulating-files-and-directories.md)  
  Демонстрация создания служебной программы, сообщающей сведения о файлах и папках.  
   
- [Исправление неполадок, связанных с чтением из текстовых файлов и записью в такие файлы](../../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)  
+ [Исправление неполадок, связанных с чтением из текстовых файлов и записью в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)  
  Список распространенных проблем, возникающих при чтении и записи в текстовые файлы, и предлагаемые способы их устранения.

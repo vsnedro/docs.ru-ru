@@ -6,12 +6,12 @@ helpviewer_keywords:
 - /libpath compiler option [Visual Basic]
 - -libpath compiler option [Visual Basic]
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
-ms.openlocfilehash: 9a5822a097828f818da020735c3822e86eb3236b
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: dff7e0c3eb696b9b18f4c4e59240a26c1cb9782c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75716641"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408553"
 ---
 # <a name="-libpath"></a>-libpath
 Сообщает расположение указанных сборок.  
@@ -29,7 +29,7 @@ ms.locfileid: "75716641"
 |`dirList`|Обязательный. Разделенный точками с запятой список каталогов, в котором компилятор должен искать сборку, если она отсутствует как в текущем рабочем каталоге (каталоге, из которого был вызван компилятор), так и в системном каталоге среды CLR. Если имя каталога содержит пробел, заключите имя в кавычки (" ").|  
   
 ## <a name="remarks"></a>Примечания  
- Параметр `-libpath` задает расположение сборок, указанных с помощью параметра [-reference](../../../visual-basic/reference/command-line-compiler/reference.md).  
+ Параметр `-libpath` задает расположение сборок, указанных с помощью параметра [-reference](reference.md).  
   
  Компилятор выполняет поиск связанных сборок, для которых не указано полное имя, в следующем порядке:  
   
@@ -59,5 +59,5 @@ vbc -libpath:c:\;"c:\New Assemblies" -reference:t2.dll t2.vb
 ## <a name="see-also"></a>См. также
 
 - [Сборки в .NET](../../../standard/assembly/index.md)
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)

@@ -7,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: 8a5ea56c-0140-4b51-8997-875ae6a8e0cb
-ms.openlocfilehash: c921331b00fe137d4ad52d62951e8c161768dfae
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: adc1a10bb9acb14ee88589c13e28c49773e42100
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75711146"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291595"
 ---
 # <a name="building-xml-schemas"></a>Построение XML-схем
 Классы в пространстве имен <xref:System.Xml.Schema?displayProperty=nameWithType> сопоставляются со структурами, определенными в рекомендациях по схемам XML консорциума W3C, и могут использоваться для сборки схем XML в памяти.  
@@ -88,10 +88,10 @@ ms.locfileid: "75711146"
   
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения об модели объектов XML-схемы](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
-- [Чтение и запись XML-схем](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Обход XML-схем](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
-- [Изменение XML-схем](../../../../docs/standard/data/xml/editing-xml-schemas.md)
-- [Включение или импорт XML-схем](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
-- [XmlSchemaSet для компиляции схемы](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
-- [Набор сведений для постсхемной компиляции](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+- [Общие сведения об модели объектов XML-схемы](xml-schema-object-model-overview.md)
+- [Чтение и запись XML-схем](reading-and-writing-xml-schemas.md)
+- [Обход XML-схем](traversing-xml-schemas.md)
+- [Изменение XML-схем](editing-xml-schemas.md)
+- [Включение или импорт XML-схем](including-or-importing-xml-schemas.md)
+- [XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md)
+- [Набор сведений для постсхемной компиляции](post-schema-compilation-infoset.md)

@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - parallel for loops, how to use local state
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
-ms.openlocfilehash: 14f4f1402f564d38bb508e893521a3951c1509f4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bb6ac1a64c3a71646946d1af894d1124b12e4769
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73139708"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290763"
 ---
 # <a name="how-to-write-a-parallelfor-loop-with-thread-local-variables"></a>Практическое руководство. Написание цикла Parallel.For и локальными переменными потока
 В этом примере показано, как использовать локальные переменные потока для хранения и получения состояния каждой отдельной задачи, создаваемой циклом <xref:System.Threading.Tasks.Parallel.For%2A>. Благодаря локальным переменным потока вы можете избежать дополнительной нагрузки при синхронизации большого количества доступов к общему состоянию. Вместо записи в общий ресурс при каждой итерации вы вычисляете и сохраняете значение до тех пор, пока не будут выполнены все итерации для задачи. После этого вы можете однократно записать итоговый результат в общий ресурс или передать его в другой метод.  
@@ -40,11 +40,11 @@ Function() new MyClass()
   
  Пятый параметр задает метод, который вызывается один раз после выполнения всех итераций в определенном потоке. Тип входного аргумента опять соответствует аргументу типа метода <xref:System.Threading.Tasks.Parallel.For%60%601%28System.Int32%2CSystem.Int32%2CSystem.Func%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Threading.Tasks.ParallelLoopState%2C%60%600%2C%60%600%7D%2CSystem.Action%7B%60%600%7D%29> и типу, возвращаемому телом лямбда-выражения. В данном примере это значение добавляется в переменную в области видимости класса потокобезопасным образом путем вызова метода <xref:System.Threading.Interlocked.Add%2A?displayProperty=nameWithType>. Благодаря использованию локальной переменной потока нам не пришлось выполнять запись в эту переменную класса при каждой итерации цикла.  
   
- См. дополнительные сведения о [лямбда-выражениях в PLINQ и TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).  
+ См. дополнительные сведения о [лямбда-выражениях в PLINQ и TPL](lambda-expressions-in-plinq-and-tpl.md).  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Параллелизм данных](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Параллельное программирование](../../../docs/standard/parallel-programming/index.md)
-- [Библиотека параллельных задач (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
-- [Лямбда-выражения в PLINQ и TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- [Параллелизм данных](data-parallelism-task-parallel-library.md)
+- [Параллельное программирование](index.md)
+- [Библиотека параллельных задач (TPL)](task-parallel-library-tpl.md)
+- [Лямбда-выражения в PLINQ и TPL](lambda-expressions-in-plinq-and-tpl.md)

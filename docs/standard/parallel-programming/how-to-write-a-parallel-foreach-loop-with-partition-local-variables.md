@@ -8,18 +8,18 @@ dev_langs:
 helpviewer_keywords:
 - parallel foreach loop, how to use local state
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
-ms.openlocfilehash: cca48889670c3bd67366c879ccede94c89542c8d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: eff176f7c3ae5cae4c450047214d8e9e20a6e66d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73139683"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290750"
 ---
 # <a name="how-to-write-a-parallelforeach-loop-with-partition-local-variables"></a>Практическое руководство. Написание цикла Parallel.ForEach c локальными переменными раздела
 
 В следующем примере описывается порядок написания метода <xref:System.Threading.Tasks.Parallel.ForEach%2A>, использующего локальные переменные раздела. Когда выполняется цикл <xref:System.Threading.Tasks.Parallel.ForEach%2A>, он делит свою исходную коллекцию на несколько разделов. Каждый раздел содержит свою копию локальной переменной раздела. Локальная переменная раздела аналогична [локальной переменной потока](xref:System.Threading.ThreadLocal%601), однако допускает выполнение нескольких разделов в одном потоке.
 
-Код и параметры в примере в значительной степени напоминают соответствующий метод <xref:System.Threading.Tasks.Parallel.For%2A>. См. дополнительные сведения о [написании цикла Parallel.For с локальными переменными потока](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md).
+Код и параметры в примере в значительной степени напоминают соответствующий метод <xref:System.Threading.Tasks.Parallel.For%2A>. См. дополнительные сведения о [написании цикла Parallel.For с локальными переменными потока](how-to-write-a-parallel-for-loop-with-thread-local-variables.md).
 
 Чтобы использовать локальную переменную раздела в цикле <xref:System.Threading.Tasks.Parallel.ForEach%2A>, следует вызвать одну из перегрузок метода, принимающую два параметра типа. Первый параметр типа `TSource` указывает тип исходного элемента, а второй параметр типа `TLocal` указывает тип локальной переменной раздела.
 
@@ -50,6 +50,6 @@ ms.locfileid: "73139683"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Параллелизм данных](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Практическое руководство. Написание цикла Parallel.For и локальными переменными потока](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md)
-- [Лямбда-выражения в PLINQ и TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- [Параллелизм данных](data-parallelism-task-parallel-library.md)
+- [Практическое руководство. Написание цикла Parallel.For и локальными переменными потока](how-to-write-a-parallel-for-loop-with-thread-local-variables.md)
+- [Лямбда-выражения в PLINQ и TPL](lambda-expressions-in-plinq-and-tpl.md)

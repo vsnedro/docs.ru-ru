@@ -17,18 +17,18 @@ helpviewer_keywords:
 - standard TimeSpan format strings
 - formatting [.NET Framework], time intervals
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
-ms.openlocfilehash: ec06edc16829c6d4caf8c760922aac1471e365c2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2ed9ca7337e40b5520ddbfc92925c5bedb45f701
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75346631"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289282"
 ---
 # <a name="standard-timespan-format-strings"></a>Строки стандартного формата TimeSpan
 
-Строка стандартного формата <xref:System.TimeSpan> использует один описатель формата для определения текстового представления значения <xref:System.TimeSpan>, получаемого после выполнения операции форматирования. Любая строка формата, содержащая более одной буквы, включая пробелы, интерпретируется как строка настраиваемого формата <xref:System.TimeSpan>. Дополнительные сведения см. в статье [Строки пользовательского формата TimeSpan](../../../docs/standard/base-types/custom-timespan-format-strings.md).  
+Строка стандартного формата <xref:System.TimeSpan> использует один описатель формата для определения текстового представления значения <xref:System.TimeSpan>, получаемого после выполнения операции форматирования. Любая строка формата, содержащая более одной буквы, включая пробелы, интерпретируется как строка настраиваемого формата <xref:System.TimeSpan>. Дополнительные сведения см. в статье [Строки пользовательского формата TimeSpan](custom-timespan-format-strings.md).  
   
- Строковые представления значений <xref:System.TimeSpan> создаются вызовами перегрузок метода <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType>, а также методами, поддерживающими составное форматирование, такими как <xref:System.String.Format%2A?displayProperty=nameWithType>. Дополнительные сведения см. в разделах [Типы форматирования](../../../docs/standard/base-types/formatting-types.md) и [Составное форматирование](../../../docs/standard/base-types/composite-formatting.md). В следующем примере показано использование строк стандартного формата в операциях форматирования.  
+ Строковые представления значений <xref:System.TimeSpan> создаются вызовами перегрузок метода <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType>, а также методами, поддерживающими составное форматирование, такими как <xref:System.String.Format%2A?displayProperty=nameWithType>. Дополнительные сведения см. в разделах [Типы форматирования](formatting-types.md) и [Составное форматирование](composite-formatting.md). В следующем примере показано использование строк стандартного формата в операциях форматирования.  
   
  [!code-csharp[Conceptual.TimeSpan.Standard#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/formatexample1.cs#2)]
  [!code-vb[Conceptual.TimeSpan.Standard#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/formatexample1.vb#2)]  
@@ -122,6 +122,6 @@ ms.locfileid: "75346631"
   
 ## <a name="see-also"></a>См. также
 
-- [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
-- [Строки настраиваемого формата TimeSpan](../../../docs/standard/base-types/custom-timespan-format-strings.md)
-- [Анализ строк в .NET](../../../docs/standard/base-types/parsing-strings.md)
+- [Типы форматирования](formatting-types.md)
+- [Строки настраиваемого формата TimeSpan](custom-timespan-format-strings.md)
+- [Анализ строк в .NET](parsing-strings.md)

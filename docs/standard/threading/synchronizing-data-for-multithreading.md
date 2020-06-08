@@ -7,12 +7,12 @@ helpviewer_keywords:
 - threading [.NET], synchronizing threads
 - managed threading
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
-ms.openlocfilehash: a70bd3070d8b1dcd06e55d330a01d29071293f6c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7f064738472a65ce89f17efc4d7ea00ac98280d0
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159394"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291101"
 ---
 # <a name="synchronizing-data-for-multithreading"></a>Синхронизация данных для многопоточности
 
@@ -22,11 +22,11 @@ ms.locfileid: "78159394"
   
 - Синхронизированные области кода. Используя класс <xref:System.Threading.Monitor> или поддержку компилятора для этого класса, можно синхронизировать только тот блок кода, которому эту требуется, повысив тем самым производительность.  
   
-- Синхронизация вручную. Вы можете использовать объекты синхронизации, предоставляемые библиотекой классов .NET. См. статью [Обзор примитивов синхронизации](../../../docs/standard/threading/overview-of-synchronization-primitives.md), в которой обсуждается класс <xref:System.Threading.Monitor>.  
+- Синхронизация вручную. Вы можете использовать объекты синхронизации, предоставляемые библиотекой классов .NET. См. статью [Обзор примитивов синхронизации](overview-of-synchronization-primitives.md), в которой обсуждается класс <xref:System.Threading.Monitor>.  
   
 - Синхронизированные контексты. Для приложений .NET Framework и Xamarin вы можете использовать <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> для реализации простой автоматической синхронизации для объектов <xref:System.ContextBoundObject>.  
   
-- Классы коллекции в пространстве имен <xref:System.Collections.Concurrent?displayProperty=nameWithType>. Эти классы предоставляют встроенные синхронизированные операции добавления и удаления. Дополнительные сведения см. в разделе [Потокобезопасные коллекции](../../../docs/standard/collections/thread-safe/index.md).  
+- Классы коллекции в пространстве имен <xref:System.Collections.Concurrent?displayProperty=nameWithType>. Эти классы предоставляют встроенные синхронизированные операции добавления и удаления. Дополнительные сведения см. в разделе [Потокобезопасные коллекции](../collections/thread-safe/index.md).  
   
  CLR предоставляет потоковую модель, где классы делятся на ряд категорий, которые можно синхронизировать различными способами в зависимости от конкретных требований. В следующей таблице показано, какая поддержка синхронизации предоставляется для полей и методов в соответствующей категории синхронизации.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "78159394"
  По умолчанию для объектов. Любой поток может получить доступ к любому методу или полю в любое время. Одновременно обращаться к этим объектам может только один поток.  
   
 ## <a name="manual-synchronization"></a>Синхронизация вручную  
- Библиотека классов .NET предоставляет ряд классов для синхронизации потоков. См. раздел [Обзор примитивов синхронизации](../../../docs/standard/threading/overview-of-synchronization-primitives.md).  
+ Библиотека классов .NET предоставляет ряд классов для синхронизации потоков. См. раздел [Обзор примитивов синхронизации](overview-of-synchronization-primitives.md).  
   
 ## <a name="synchronized-code-regions"></a>Синхронизированные области кода  
  Класс <xref:System.Threading.Monitor> или ключевое слово компилятора можно использовать для синхронизации блоков кода, методов экземпляров и статических методов. Синхронизированные статические поля не поддерживаются.  
@@ -70,7 +70,7 @@ ms.locfileid: "78159394"
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>
-- [Потоки и работа с потоками](../../../docs/standard/threading/threads-and-threading.md)
-- [Обзор примитивов синхронизации](../../../docs/standard/threading/overview-of-synchronization-primitives.md)
+- [Потоки и работа с потоками](threads-and-threading.md)
+- [Обзор примитивов синхронизации](overview-of-synchronization-primitives.md)
 - [Оператор SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md)
 - [Оператор lock](../../csharp/language-reference/keywords/lock-statement.md)

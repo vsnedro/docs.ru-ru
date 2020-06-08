@@ -3,12 +3,12 @@ title: Интеграция XML с реляционными данными и AD
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: f6ebb1a1-f2ca-49b9-92c9-0150940cf6e6
-ms.openlocfilehash: 30b788c77a2352d0d02ee772ab3f428381facd9f
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: f54c7a890ada01f2cffdd54c024cfbc98777200d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78155624"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289022"
 ---
 # <a name="xml-integration-with-relational-data-and-adonet"></a>Интеграция XML с реляционными данными и ADO.NET
 Класс **XmlDataDocument** является производным от класса **XmlDocument** и содержит XML-данные. Класс **XmlDataDocument** полезен тем, что он организует связь между реляционными и иерархическими данными. Этот класс **XmlDocument** можно привязать к объекту **DataSet**, после чего любые изменения их данных будут одновременно отображаться в обоих классах. Класс **XmlDocument**, привязанный к объекту **DataSet**, позволяет интегрировать XML-данные с реляционными данными, не преобразуя все данные в формат XML или в реляционный формат. Можно использовать оба формата, не ограничиваясь единым способом представления данных.  
@@ -41,10 +41,10 @@ ms.locfileid: "78155624"
 |Не обязательно сохранять порядок элементов в исходном XML-коде.|Важно сохранять порядок элементов в исходном XML-коде.|  
 |Не нужно сохранять пробелы между элементами и форматированием в исходном XML-коде.|Важно сохранять пробелы и форматирование в исходном XML-коде.|  
   
- Если непосредственная загрузка XML-данных в объект и из объекта **DataSet** соответствует поставленным задачам, изучите документацию о [загрузке DataSet из XML](../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md) и [записи DataSet в виде XML](../../../../docs/framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md).  
+ Если непосредственная загрузка XML-данных в объект и из объекта **DataSet** соответствует поставленным задачам, изучите документацию о [загрузке DataSet из XML](../../../framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md) и [записи DataSet в виде XML](../../../framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md).  
   
- Если нужно загружать данные в объект **DataSet** из класса **XmlDataDocument**, переходите к документу о [синхронизации объекта DataSet с XML-документом](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md).  
+ Если нужно загружать данные в объект **DataSet** из класса **XmlDataDocument**, переходите к документу о [синхронизации объекта DataSet с XML-документом](../../../framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md).  
   
 ## <a name="see-also"></a>См. также
 
-- [Использование XML в наборах данных](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
+- [Использование XML в наборах данных](../../../framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)

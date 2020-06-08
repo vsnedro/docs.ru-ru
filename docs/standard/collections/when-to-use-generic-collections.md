@@ -6,12 +6,12 @@ helpviewer_keywords:
 - collections [.NET Framework], generic
 - generic collections [.NET Framework]
 ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
-ms.openlocfilehash: feccd8c53e5171889666ed407258b9d36ad8a140
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.openlocfilehash: c59a125a8df95e3c4fe6e1839956d800bd6ee910
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728198"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290387"
 ---
 # <a name="when-to-use-generic-collections"></a>Когда следует использовать универсальные коллекции
 
@@ -60,7 +60,7 @@ ms.locfileid: "82728198"
 
 ## <a name="linq-to-objects"></a>LINQ to Objects
 
-Функция LINQ to Objects позволяет использовать запросы LINQ для доступа к объектам в памяти при условии, что тип объекта реализует интерфейс <xref:System.Collections.IEnumerable?displayProperty=nameWithType> или <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> . Запросы LINQ предоставляют общий шаблон для доступа к данным, являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, а также предоставляют возможности фильтрации, сортировки и группировки. LINQ запросы также могут повысить производительность. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md) и [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).
+Функция LINQ to Objects позволяет использовать запросы LINQ для доступа к объектам в памяти при условии, что тип объекта реализует интерфейс <xref:System.Collections.IEnumerable?displayProperty=nameWithType> или <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> . Запросы LINQ предоставляют общий шаблон для доступа к данным, являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, а также предоставляют возможности фильтрации, сортировки и группировки. LINQ запросы также могут повысить производительность. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md) и [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).
 
 ## <a name="additional-functionality"></a>Дополнительные функциональные возможности
 Некоторые универсальные типы имеют функциональные возможности, отсутствующие в неуниверсальных коллекциях. Например, класс <xref:System.Collections.Generic.List%601> , который соответствует неуниверсальный классу <xref:System.Collections.ArrayList> , имеет ряд методов, которые принимают универсальные делегаты, такие как делегат <xref:System.Predicate%601> , который позволяет указать методы для поиска в списке, делегат <xref:System.Action%601> , который представляет методы, выполняемые с каждым элементом списка, и делегат <xref:System.Converter%602> , который позволяет определять преобразования между типами.
@@ -69,6 +69,6 @@ ms.locfileid: "82728198"
 
 ## <a name="see-also"></a>См. также
 
-- [Коллекции и структуры данных](../../../docs/standard/collections/index.md)
-- [Часто используемые типы коллекций](../../../docs/standard/collections/commonly-used-collection-types.md)
-- [Универсальные шаблоны](../../../docs/standard/generics/index.md)
+- [Коллекции и структуры данных](index.md)
+- [Часто используемые типы коллекций](commonly-used-collection-types.md)
+- [Универсальные шаблоны](../generics/index.md)

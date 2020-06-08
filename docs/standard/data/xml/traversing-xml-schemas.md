@@ -7,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: cce69574-5861-4a30-b730-2e18d915d8ee
-ms.openlocfilehash: dbe02242f9bb8654e3f12d87b6ff6c2aea1f76b1
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 0951e83c3035de751801d194696eb64993260ef8
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710119"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289841"
 ---
 # <a name="traversing-xml-schemas"></a>Обход XML-схем
 
@@ -39,7 +39,7 @@ ms.locfileid: "75710119"
 >
 > Свойство <xref:System.Xml.Schema.XmlSchema.UnhandledAttributes%2A> предоставляет доступ ко всем атрибутам, не принадлежащим к пространству имен схемы. Эти атрибуты не обрабатываются обработчиком схемы.
 
-Ниже приведен пример кода, демонстрирующий обзор [пользовательской схемы XML](../../../../docs/standard/data/xml/building-xml-schemas.md). Приводится пример кода, в котором схема просматривается с помощью коллекций, описанных выше, и все элементы и атрибуты схемы выводятся в консоль.
+Ниже приведен пример кода, демонстрирующий обзор [пользовательской схемы XML](building-xml-schemas.md). Приводится пример кода, в котором схема просматривается с помощью коллекций, описанных выше, и все элементы и атрибуты схемы выводятся в консоль.
 
 В данном примере схема Customer просматривается с помощью следующих шагов.
 
@@ -65,14 +65,14 @@ ms.locfileid: "75710119"
 
 Свойство <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType%2A?displayProperty=nameWithType> может иметь тип <xref:System.Xml.Schema.XmlSchemaSimpleType> или <xref:System.Xml.Schema.XmlSchemaComplexType> если это определенный пользователем простой тип или сложный тип. Оно может также иметь тип <xref:System.Xml.Schema.XmlSchemaDatatype>, если это один из встроенных типов данных, описанных в рекомендациях схемы XML W3C. В схеме «Заказчик» тип <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType%2A> элемента `Customer` представляет собой <xref:System.Xml.Schema.XmlSchemaComplexType>, а тип элементов `FirstName` и `LastName` - <xref:System.Xml.Schema.XmlSchemaSimpleType>.
 
-Пример кода в руководстве по [созданию схемы XML](../../../../docs/standard/data/xml/building-xml-schemas.md) использует коллекцию <xref:System.Xml.Schema.XmlSchemaComplexType.Attributes%2A?displayProperty=nameWithType> для добавления атрибута `CustomerId` к элементу `Customer`. Это свойство доступно до компиляции схемы. Соответствующее свойство PSCI (доступное только после компиляции схемы) представляет собой коллекцию <xref:System.Xml.Schema.XmlSchemaComplexType.AttributeUses%2A?displayProperty=nameWithType>, которая хранит все атрибуты сложного типа, в том числе унаследованные.
+Пример кода в руководстве по [созданию схемы XML](building-xml-schemas.md) использует коллекцию <xref:System.Xml.Schema.XmlSchemaComplexType.Attributes%2A?displayProperty=nameWithType> для добавления атрибута `CustomerId` к элементу `Customer`. Это свойство доступно до компиляции схемы. Соответствующее свойство PSCI (доступное только после компиляции схемы) представляет собой коллекцию <xref:System.Xml.Schema.XmlSchemaComplexType.AttributeUses%2A?displayProperty=nameWithType>, которая хранит все атрибуты сложного типа, в том числе унаследованные.
 
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения об модели объектов XML-схемы](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
-- [Чтение и запись XML-схем](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Построение XML-схем](../../../../docs/standard/data/xml/building-xml-schemas.md)
-- [Изменение XML-схем](../../../../docs/standard/data/xml/editing-xml-schemas.md)
-- [Включение или импорт XML-схем](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
-- [XmlSchemaSet для компиляции схемы](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
-- [Набор сведений для постсхемной компиляции](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+- [Общие сведения об модели объектов XML-схемы](xml-schema-object-model-overview.md)
+- [Чтение и запись XML-схем](reading-and-writing-xml-schemas.md)
+- [Построение XML-схем](building-xml-schemas.md)
+- [Изменение XML-схем](editing-xml-schemas.md)
+- [Включение или импорт XML-схем](including-or-importing-xml-schemas.md)
+- [XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md)
+- [Набор сведений для постсхемной компиляции](post-schema-compilation-infoset.md)

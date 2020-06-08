@@ -8,12 +8,12 @@ helpviewer_keywords:
 - local thread storage
 - TLS
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
-ms.openlocfilehash: b5a7c4b78f8599f64aa11f1c98c033866e582933
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: adeeb6c95769d8e1ac120d4fb26d8aaedf7a1d4d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73127526"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291088"
 ---
 # <a name="thread-local-storage-thread-relative-static-fields-and-data-slots"></a>Локальное хранилище потока: статические поля потока и области данных
 Вы можете использовать управляемую локальную память потока для хранения данных, которые являются уникальными для потока и домена приложения. Платформа .NET Framework предоставляет два способа работы с локальной памятью: статические поля потоков и ячейки данных.  
@@ -24,7 +24,7 @@ ms.locfileid: "73127526"
   
  В неуправляемом коде C++ используются `TlsAlloc` для динамического выделения областей данных и `__declspec(thread)` для объявления переменных, которые нужно выделять в хранилище потока. Статические поля потоков и области данных реализуют такое же поведение для управляемого кода.  
   
- В .NET Framework 4 вы можете использовать класс <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> для создания объектов локального потока с отложенной инициализацией (при первом использовании объекта). Дополнительные сведения см. в статье [Отложенная инициализация](../../../docs/framework/performance/lazy-initialization.md).  
+ В .NET Framework 4 вы можете использовать класс <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> для создания объектов локального потока с отложенной инициализацией (при первом использовании объекта). Дополнительные сведения см. в статье [Отложенная инициализация](../../framework/performance/lazy-initialization.md).  
   
 ## <a name="uniqueness-of-data-in-managed-tls"></a>Уникальность данных в управляемой локальной памяти потока  
  Независимо от того, что вы используете — статические поля потоков или области данных — данные в управляемой локальной памяти потока являются уникальными для определенной комбинации потока и домена приложения.  
@@ -61,4 +61,4 @@ ms.locfileid: "73127526"
 - <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>
 - <xref:System.ThreadStaticAttribute>
 - <xref:System.Runtime.Remoting.Messaging.CallContext>
-- [Работа с потоками](../../../docs/standard/threading/index.md)
+- [Работа с потоками](index.md)

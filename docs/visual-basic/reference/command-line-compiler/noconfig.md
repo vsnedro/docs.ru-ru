@@ -6,12 +6,12 @@ helpviewer_keywords:
 - -noconfig compiler option [Visual Basic]
 - /noconfig compiler option [Visual Basic]
 ms.assetid: a7405067-bd21-4171-adf4-a126fa3ad6c3
-ms.openlocfilehash: c57ed1699d110959e9faf3dc3d43bcc200851c1c
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: ee7cd1b8039a8d9312a8b058cc85c41ca536ed2b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72005432"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401944"
 ---
 # <a name="-noconfig"></a>-noconfig
 Указывает, что компилятор не должен автоматически ссылаться на часто используемые сборки .NET Framework и импортировать пространства имен `System` и `Microsoft.VisualBasic`.  
@@ -28,7 +28,7 @@ ms.locfileid: "72005432"
 > [!NOTE]
 > При этом компилятор всегда ссылается на сборки Mscorlib.dll и Microsoft.VisualBasic.dll.  
   
- Можно изменить файл Vbc.rsp, указав дополнительные параметры компилятора, которые должны включаться в каждую компиляцию Vbc.exe (за исключением случаев, когда указан параметр `-noconfig`). Дополнительные сведения см. в документации синтаксиса [@ (указание файла ответа)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md).  
+ Можно изменить файл Vbc.rsp, указав дополнительные параметры компилятора, которые должны включаться в каждую компиляцию Vbc.exe (за исключением случаев, когда указан параметр `-noconfig`). Дополнительные сведения см. в документации синтаксиса [@ (указание файла ответа)](specify-response-file.md).  
   
  Компилятор обрабатывает параметры, передаваемые в команду `vbc`, последними. Таким образом, любой параметр командной строки переопределяет значение аналогичного параметра в файле Vbc.rsp.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "72005432"
   
 ## <a name="see-also"></a>См. также
 
-- [-nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib.md)
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [@ (указание файла ответов)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)
-- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+- [-nostdlib (Visual Basic)](nostdlib.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [@ (указание файла ответов)](specify-response-file.md)
+- [-reference (Visual Basic)](reference.md)

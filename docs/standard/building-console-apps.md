@@ -7,12 +7,12 @@ helpviewer_keywords:
 - application development [.NET Framework], console
 - console applications
 ms.assetid: c21fb997-9f0e-40a5-8741-f73bba376bd8
-ms.openlocfilehash: 1ec65795a7f3d706b2878dd8a8397ae42b61ce7e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3c2031e2d038f32f6392a2eb734e4f8851d7b936
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73132864"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291634"
 ---
 # <a name="building-console-applications-in-the-net-framework"></a>Построение консольных приложений в .NET Framework
 Приложения .NET Framework могут использовать класс <xref:System.Console?displayProperty=nameWithType> для выполнения консольного ввода-вывода символов. Данные, поступающие от консоли, считываются из стандартного потока ввода, выводимые на консоль данные записываются в стандартный поток вывода, а сведения об ошибках записываются в стандартный поток вывода ошибок. Эти потоки автоматически связываются с консолью при запуске приложения и представлены свойствами <xref:System.Console.In%2A>, <xref:System.Console.Out%2A> и <xref:System.Console.Error%2A> соответственно.  
@@ -28,9 +28,9 @@ ms.locfileid: "73132864"
   
  У консольных приложений отсутствует запускаемый по умолчанию механизм сообщений. Поэтому вызовы таймеров Microsoft Win32 из такого приложения могут завершаться неудачей.  
   
- У класса **System.Console** имеются методы, позволяющие считывать с консоли отдельные символы или целые строки. Другие методы выполняют преобразование данных и форматирование строковых значений, а затем выводят отформатированные строки на консоль. Дополнительные сведения о форматировании строк см. в статье [Общие сведения о форматировании](../../docs/standard/base-types/formatting-types.md).  
+ У класса **System.Console** имеются методы, позволяющие считывать с консоли отдельные символы или целые строки. Другие методы выполняют преобразование данных и форматирование строковых значений, а затем выводят отформатированные строки на консоль. Дополнительные сведения о форматировании строк см. в статье [Общие сведения о форматировании](base-types/formatting-types.md).  
   
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Console?displayProperty=nameWithType>
-- [Типы форматирования](../../docs/standard/base-types/formatting-types.md)
+- [Типы форматирования](base-types/formatting-types.md)

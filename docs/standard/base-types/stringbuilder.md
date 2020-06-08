@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Insert method
 - strings [.NET Framework], StringBuilder object
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
-ms.openlocfilehash: 19ee90f3300e3b610eeefd4949baa2759b834a60
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a8116013cc20ead3be13763ce72999d2c608dbce
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73121677"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289269"
 ---
 # <a name="using-the-stringbuilder-class-in-net"></a>Использование класса StringBuilder в .NET
 Объект <xref:System.String> является неизменяемым. Каждый раз при использовании одного из методов в классе <xref:System.String?displayProperty=nameWithType> вы создаете объект строки в памяти, для которого требуется выделение нового пространства. В случаях, когда необходимо выполнять повторяющиеся изменения строки, издержки, связанные с созданием объекта <xref:System.String>, могут оказаться значительными. Чтобы изменять строку без создания нового объекта, можно использовать класс <xref:System.Text.StringBuilder?displayProperty=nameWithType>. Например, использование класса <xref:System.Text.StringBuilder> может повысить производительность при соединении большого количества строк в цикле.  
@@ -76,7 +76,7 @@ ms.locfileid: "73121677"
  [!code-vb[Conceptual.StringBuilder#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#4)]  
   
 ### <a name="appendformat"></a>AppendFormat  
- Метод <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> добавляет текс в конец объекта <xref:System.Text.StringBuilder>. Он поддерживает возможность составного форматирования (дополнительные сведения см. в статье [Составное форматирование](../../../docs/standard/base-types/composite-formatting.md)) путем вызова реализации <xref:System.IFormattable> для одного или нескольких форматируемых объектов. Следовательно, он принимает строки стандартного формата для числовых значений, значений даты и времени, значений перечисления, строки пользовательского формата для чисел и дат и строки формата, определенные для пользовательских типов. (Дополнительные сведения о форматировании см. в разделе [Типы форматирования](../../../docs/standard/base-types/formatting-types.md).) Вы можете использовать этот метод для настройки формата переменных и добавления этих значений к <xref:System.Text.StringBuilder>. В следующем примере метод <xref:System.Text.StringBuilder.AppendFormat%2A> помещает в конец объекта <xref:System.Text.StringBuilder> целочисленное значение, отформатированное в виде значения валюты.  
+ Метод <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> добавляет текс в конец объекта <xref:System.Text.StringBuilder>. Он поддерживает возможность составного форматирования (дополнительные сведения см. в статье [Составное форматирование](composite-formatting.md)) путем вызова реализации <xref:System.IFormattable> для одного или нескольких форматируемых объектов. Следовательно, он принимает строки стандартного формата для числовых значений, значений даты и времени, значений перечисления, строки пользовательского формата для чисел и дат и строки формата, определенные для пользовательских типов. (Дополнительные сведения о форматировании см. в разделе [Типы форматирования](formatting-types.md).) Вы можете использовать этот метод для настройки формата переменных и добавления этих значений к <xref:System.Text.StringBuilder>. В следующем примере метод <xref:System.Text.StringBuilder.AppendFormat%2A> помещает в конец объекта <xref:System.Text.StringBuilder> целочисленное значение, отформатированное в виде значения валюты.  
   
  [!code-cpp[Conceptual.StringBuilder#5](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#5)]
  [!code-csharp[Conceptual.StringBuilder#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#5)]
@@ -112,5 +112,5 @@ ms.locfileid: "73121677"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Text.StringBuilder?displayProperty=nameWithType>
-- [Базовые операции со строками в .NET Framework](../../../docs/standard/base-types/basic-string-operations.md)
-- [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
+- [Базовые операции со строками в .NET Framework](basic-string-operations.md)
+- [Типы форматирования](formatting-types.md)

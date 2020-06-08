@@ -3,12 +3,12 @@ title: Примечания по реализации поддержки тип�
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
-ms.openlocfilehash: 40ab0f746ef82ccd195fc6b873f5c8edb255f868
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 91a685f122ff846217ea7a8677b29df430b65363
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75709872"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290283"
 ---
 # <a name="xml-type-support-implementation-notes"></a>Примечания по реализации поддержки типов XML
 В этом разделе описываются определенные детали реализации, которые следует знать.  
@@ -47,4 +47,4 @@ ms.locfileid: "75709872"
   
 ## <a name="see-also"></a>См. также
 
-- [Поддержка типов в классах System.Xml](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+- [Поддержка типов в классах System.Xml](type-support-in-the-system-xml-classes.md)

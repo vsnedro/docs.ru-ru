@@ -8,12 +8,12 @@ helpviewer_keywords:
 - optionstrict compiler option [Visual Basic]
 - /optionstrict compiler option [Visual Basic]
 ms.assetid: c7b10086-0fa4-49db-b3c8-4ae0db5957da
-ms.openlocfilehash: 469e22aef9d746fc55e04ba884d17d60d8baa85a
-ms.sourcegitcommit: 1f12db2d852d05bed8c53845f0b5a57a762979c8
+ms.openlocfilehash: 3dd12971a082869c32b6292ed45e2014b8b0e2c0
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72583073"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400543"
 ---
 # <a name="-optionstrict"></a>-optionstrict
 
@@ -50,7 +50,7 @@ ms.locfileid: "72583073"
 
 ### <a name="to-set--optionstrict-programmatically"></a>Порядок задания параметра -optionstrict программным образом
 
-См. раздел [Оператор Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md).
+См. раздел [Оператор Option Strict](../../language-reference/statements/option-strict-statement.md).
 
 ## <a name="example"></a>Пример
 
@@ -62,12 +62,12 @@ vbc -optionstrict+ test.vb
 
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
-- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
-- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
-- [-nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md)
-- [-warnaserror (Visual Basic)](../../../visual-basic/reference/command-line-compiler/warnaserror.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Оператор Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [-optioncompare](optioncompare.md)
+- [-optionexplicit](optionexplicit.md)
+- [-optioninfer](optioninfer.md)
+- [-nowarn](nowarn.md)
+- [-warnaserror (Visual Basic)](warnaserror.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
+- [Оператор Option Strict](../../language-reference/statements/option-strict-statement.md)
 - [Страница "Параметры Visual Basic по умолчанию", папка "Проекты", диалоговое окно "Параметры"](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - data stores, reading and writing to files
 - stores, reading and writing to files
 ms.assetid: f977ebdc-1b55-475a-bc3d-3376470b08ae
-ms.openlocfilehash: a1ea65b0b8280faf51595b2fe9edcbf17eaabd8f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d0c95f418ff85654dceed296b7a891c025ab2e62
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75706690"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291803"
 ---
 # <a name="how-to-read-and-write-to-files-in-isolated-storage"></a>Практическое руководство. Считывание из файлов и запись в файлы в изолированном хранилище
 Для чтения из файла или записи в файл в изолированном хранилище используется объект <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> с модулем чтения потока (объект <xref:System.IO.StreamReader> ) или модулем записи в поток (объект <xref:System.IO.StreamWriter>).  
@@ -40,5 +40,5 @@ ms.locfileid: "75706690"
 - <xref:System.IO.FileAccess?displayProperty=nameWithType>
 - <xref:System.IO.StreamReader?displayProperty=nameWithType>
 - <xref:System.IO.StreamWriter?displayProperty=nameWithType>
-- [Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)
-- [Изолированное хранилище](../../../docs/standard/io/isolated-storage.md)
+- [Файловый и потоковый ввод-вывод](index.md)
+- [Изолированное хранилище](isolated-storage.md)

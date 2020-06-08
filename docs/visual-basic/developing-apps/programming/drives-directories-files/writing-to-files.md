@@ -8,12 +8,12 @@ helpviewer_keywords:
 - writing to files [Visual Basic]
 - Visual Basic, writing to files
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
-ms.openlocfilehash: 8511a96c7abcc28997c293a09ef10bad543dc261
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 06809ce8a846ea06ff2decdd87f304d1b26a7750
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74352141"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406616"
 ---
 # <a name="writing-to-files-in-visual-basic"></a>Запись в файлы в Visual Basic
 
@@ -21,19 +21,19 @@ ms.locfileid: "74352141"
   
 ## <a name="in-this-section"></a>Содержание  
 
- [Практическое руководство. Запись текста в файлы](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)  
+ [Практическое руководство. Запись текста в файлы](how-to-write-text-to-files.md)  
  Объясняет, как записывать данные в текстовые файлы.  
   
- [Практическое руководство. Дозапись в текстовый файл](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-append-to-text-files.md)  
+ [Практическое руководство. Дозапись в текстовый файл](how-to-append-to-text-files.md)  
  Объясняет, как прикреплять текст к текстовым файлам.  
   
- [Практическое руководство. Запись в двоичные файлы](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-to-binary-files.md)  
+ [Практическое руководство. Запись в двоичные файлы](how-to-write-to-binary-files.md)  
  Объясняет, как записывать данные в двоичные файлы.  
   
- [Практическое руководство. Запись текста в файлы в каталоге "Мои документы"](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-in-the-my-documents-directory.md)  
+ [Практическое руководство. Запись текста в файлы в каталоге "Мои документы"](how-to-write-text-to-files-in-the-my-documents-directory.md)  
  Объясняет, как создать новый текстовый файл в каталоге **Мои документы** и записать в него данные.  
   
- [Практическое руководство. Запись текста в файлы с помощью StreamWriter](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md)  
+ [Практическое руководство. Запись текста в файлы с помощью StreamWriter](how-to-write-text-to-files-with-a-streamwriter.md)  
  Объясняет, как записывать данные в файл с помощью объекта <xref:System.IO.StreamWriter?displayProperty=nameWithType>.  
   
 ## <a name="reference"></a>Справочник  
@@ -52,14 +52,14 @@ ms.locfileid: "74352141"
   
 ## <a name="related-sections"></a>Связанные разделы  
 
- [Чтение из файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
+ [Чтение из файлов](reading-from-files.md)  
  Объясняет, как выполнять задачи, включающие чтение данных из файлов.  
   
- [Создание, удаление и перемещение файлов и каталогов](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)  
+ [Создание, удаление и перемещение файлов и каталогов](creating-deleting-and-moving-files-and-directories.md)  
  Объясняет, как выполнять задачи, включающие создание, удаление, перемещение и переименование файлов и каталогов.  
   
- [Запись данных в буфер обмена и чтение их оттуда](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
+ [Запись данных в буфер обмена и чтение их оттуда](../computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
  Объясняет, как выполнять задачи, связанные с `My.Computer.Clipboard`, такие как чтение данных и запись данных в буфер обмена.  
   
- [Кодировки файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
+ [Кодировки файлов](file-encodings.md)  
  Содержит общие сведения о кодировках файлов.

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - -doc compiler option [Visual Basic]
 - /doc compiler option [Visual Basic]
 ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
-ms.openlocfilehash: a818fd46bd93682f0bede1d22b8cbc2ca6467a40
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 57a81983278c26090c62995f4da55c5cbfd66047
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75716744"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408677"
 ---
 # <a name="-doc"></a>-doc
 Обрабатывает комментарии к документации в XML-файл.  
@@ -40,24 +40,24 @@ or
   
  В файлах исходного кода комментарии к документации могут предшествовать таким определениям:  
   
-- определяемые пользователем типы, такие как [class](../../../visual-basic/language-reference/statements/class-statement.md) или [interface](../../../visual-basic/language-reference/statements/interface-statement.md);  
+- определяемые пользователем типы, такие как [class](../../language-reference/statements/class-statement.md) или [interface](../../language-reference/statements/interface-statement.md);  
   
-- члены, такие как field, [event](../../../visual-basic/language-reference/statements/event-statement.md), [property](../../../visual-basic/language-reference/statements/property-statement.md), [function](../../../visual-basic/language-reference/statements/function-statement.md) или [subroutine](../../../visual-basic/language-reference/statements/sub-statement.md).  
+- члены, такие как field, [event](../../language-reference/statements/event-statement.md), [property](../../language-reference/statements/property-statement.md), [function](../../language-reference/statements/function-statement.md) или [subroutine](../../language-reference/statements/sub-statement.md).  
   
  Чтобы использовать созданный XML-файл с помощью такой функции Visual Studio, как [IntelliSense](/visualstudio/ide/using-intellisense), имя XML-файла должно совпадать с именем сборки. Убедитесь, что XML-файл находится в том же каталоге, что и сборка, чтобы при обращении к сборке в проекте Visual Studio XML-файл мог бы также быть найден. XML-файлы документации не являются обязательными для работы IntelliSense с кодом в рамках одного или нескольких проектов, на которые ссылается проект.  
   
  XML-файл содержит теги `<assembly></assembly>`, если сборка не выполняется с помощью `-target:module`. Эти теги указывают имя файла, содержащего манифест сборки для выходного файла компиляции.  
   
- Способы создания документации из комментариев в коде описаны в разделе об [XML-тегах комментариев](../../../visual-basic/language-reference/xmldoc/index.md).  
+ Способы создания документации из комментариев в коде описаны в разделе об [XML-тегах комментариев](../../language-reference/xmldoc/index.md).  
   
 |Настройка параметра -doc в интегрированной среде разработки Visual Studio|  
 |---|  
 |1.  Выберите проект в **Обозревателе решений**. В меню **Проект** выберите пункт **Свойства**. <br />2.  Откройте вкладку **Компиляция**.<br />3.  Задайте значение в поле **Создать XML-файл документации**.|  
   
 ## <a name="example"></a>Пример  
- Пример см. в статье [Документирование кода с помощью XML-комментариев](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md).  
+ Пример см. в статье [Документирование кода с помощью XML-комментариев](../../programming-guide/program-structure/documenting-your-code-with-xml.md).  
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Документирование кода с помощью XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Документирование кода с помощью XML](../../programming-guide/program-structure/documenting-your-code-with-xml.md)

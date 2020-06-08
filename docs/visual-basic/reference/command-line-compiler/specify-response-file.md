@@ -4,12 +4,12 @@ ms.date: 03/13/2018
 helpviewer_keywords:
 - '@ (Specify Response File) compiler option [Visual Basic]'
 ms.assetid: a6847eaa-e5f9-4303-9421-45b55484b9ca
-ms.openlocfilehash: c578495bbba0efee79f02da284c7feffb8c12fab
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 91cf1b5a55d16ab47a83fbd259dd1d83d8e9c31a
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348555"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403100"
 ---
 # <a name="-specify-response-file-visual-basic"></a>@ (указание файла ответа) (Visual Basic)
 
@@ -40,7 +40,7 @@ ms.locfileid: "74348555"
 
 Параметры, указанные в командной строке, можно объединять с параметрами, указанными в одном или нескольких файлах ответов. Компилятор обрабатывает параметры команд в том порядке, в котором встречает их. Таким образом, аргументы командной строки могут переопределять параметры, заданные ранее в файле ответов. Аналогично, параметры в файле ответов будут переопределять параметры, ранее заданные в командной строке или в других файлах ответов.
 
-В Visual Basic представлен файл Vbc.rsp, который находится в одном каталоге с файлом Vbc.exe. Файл Vbc.rsp включен по умолчанию, если не используется параметр `-noconfig`. Дополнительные сведения см. в [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md).
+В Visual Basic представлен файл Vbc.rsp, который находится в одном каталоге с файлом Vbc.exe. Файл Vbc.rsp включен по умолчанию, если не используется параметр `-noconfig`. Дополнительные сведения см. в [-noconfig](noconfig.md).
 
 > [!NOTE]
 > Параметр `@` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.
@@ -67,6 +67,6 @@ vbc @file1.rsp
 
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [-noconfig](noconfig.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - inline option constructs
 - options parameter
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-ms.openlocfilehash: bf352d6494a823d4f7b24eb2876d9bffa5877b2b
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 8c742c855234bfd9653bb57036c41e7ccce66295
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81242781"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289295"
 ---
 # <a name="regular-expression-options"></a>Параметры регулярных выражений
 
@@ -49,14 +49,14 @@ ms.locfileid: "81242781"
   [!code-csharp[Conceptual.Regex.Language.Options#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#6)]
   [!code-vb[Conceptual.Regex.Language.Options#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#6)]
 
-- Применяя встроенные параметры в шаблоне регулярного выражения с помощью синтаксиса `(?imnsx-imnsx)`. Параметр применяется к шаблону от точки, в которой определен параметр, и действует либо до конца шаблона, либо до точки, в которой другая конструкция отменяет параметр. Обратите внимание на то, что свойство <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> экземпляра <xref:System.Text.RegularExpressions.Regex> не отражает этих встроенных параметров. Дополнительные сведения см. в разделе [Другие конструкции](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md).
+- Применяя встроенные параметры в шаблоне регулярного выражения с помощью синтаксиса `(?imnsx-imnsx)`. Параметр применяется к шаблону от точки, в которой определен параметр, и действует либо до конца шаблона, либо до точки, в которой другая конструкция отменяет параметр. Обратите внимание на то, что свойство <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> экземпляра <xref:System.Text.RegularExpressions.Regex> не отражает этих встроенных параметров. Дополнительные сведения см. в разделе [Другие конструкции](miscellaneous-constructs-in-regular-expressions.md).
 
   Ниже приведен пример. В нем встроенные параметры используются для включения сопоставления без учета регистра и пропуска пробелов при определении слов, начинающихся с буквы "d".
 
   [!code-csharp[Conceptual.Regex.Language.Options#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#7)]
   [!code-vb[Conceptual.Regex.Language.Options#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#7)]
 
-- Применяя встроенные параметры в определенной конструкции группировки в шаблоне регулярного выражения с помощью синтаксиса `(?imnsx-imnsx:`*часть выражения*`)`. Если знак перед наборов параметров отсутствует, он включается. Если перед набором параметров есть знак минуса, набор отключается. (`?` — это фиксированная часть синтаксиса языковой конструкции, необходимая, если параметры включаются или отключаются.) Этот параметр применяется только к данной группе. Дополнительные сведения см. в разделе [Конструкции группировки](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+- Применяя встроенные параметры в определенной конструкции группировки в шаблоне регулярного выражения с помощью синтаксиса `(?imnsx-imnsx:`*часть выражения*`)`. Если знак перед наборов параметров отсутствует, он включается. Если перед набором параметров есть знак минуса, набор отключается. (`?` — это фиксированная часть синтаксиса языковой конструкции, необходимая, если параметры включаются или отключаются.) Этот параметр применяется только к данной группе. Дополнительные сведения см. в разделе [Конструкции группировки](grouping-constructs-in-regular-expressions.md).
 
   Ниже приведен пример. В нем встроенные параметры в конструкции группировки используются для включения сопоставления без учета регистра и пропуска пробелов при определении слов, начинающихся с буквы "d".
 
@@ -298,7 +298,7 @@ ms.locfileid: "81242781"
 [!code-csharp[Conceptual.Regex.Language.Options#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft1.cs#17)]
 [!code-vb[Conceptual.Regex.Language.Options#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft1.vb#17)]
 
-Кроме того, обратите внимание, что утверждение просмотра вперед (фрагмент языка `(?=`*subexpression*`)`) и утверждение просмотра назад (элемент языка `(?<=`*subexpression*`)`) не изменяют направление поиска. Утверждения просмотра вперед выполняют поиск вправо, а утверждения просмотра назад — влево. Например, регулярное выражение `(?<=\d{1,2}\s)\w+,?\s\d{4}` использует утверждения просмотра назад для проверки наличия даты, перед которой идет название месяца. Затем регулярное выражение сопоставляет месяц и год. Сведения об утверждениях просмотра вперед и назад см. в статье [Конструкции группировки в регулярных выражениях](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+Кроме того, обратите внимание, что утверждение просмотра вперед (фрагмент языка `(?=`*subexpression*`)`) и утверждение просмотра назад (элемент языка `(?<=`*subexpression*`)`) не изменяют направление поиска. Утверждения просмотра вперед выполняют поиск вправо, а утверждения просмотра назад — влево. Например, регулярное выражение `(?<=\d{1,2}\s)\w+,?\s\d{4}` использует утверждения просмотра назад для проверки наличия даты, перед которой идет название месяца. Затем регулярное выражение сопоставляет месяц и год. Сведения об утверждениях просмотра вперед и назад см. в статье [Конструкции группировки в регулярных выражениях](grouping-constructs-in-regular-expressions.md).
 
 [!code-csharp[Conceptual.Regex.Language.Options#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft2.cs#18)]
 [!code-vb[Conceptual.Regex.Language.Options#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft2.vb#18)]
@@ -324,7 +324,7 @@ ms.locfileid: "81242781"
 
 Поведение регулярных выражений ECMAScript и канонических регулярных выражений отличается в трех аспектах: синтаксис класса символов, ссылающиеся на себя захватываемые группы и интерпретация восьмеричных значений и обратных ссылок.
 
-- Синтаксис класса символов. Так как канонические регулярные выражения поддерживают Юникод, а ECMAScript — нет, синтаксис классов символов в ECMAScript более ограничен, а некоторые языковые элементы класса символов обладают другим значением. Например, ECMAScript не поддерживает такие языковые элементы, как категория Юникода или элементы блока `\p` и `\P`. Аналогичным образом, элемент `\w`, который сопоставляет словообразующее слово, эквивалентен классу символов `[a-zA-Z_0-9]` при использовании ECMAScript и `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` при использовании канонического поведения. Дополнительные сведения см. в разделе [Классы символов](../../../docs/standard/base-types/character-classes-in-regular-expressions.md).
+- Синтаксис класса символов. Так как канонические регулярные выражения поддерживают Юникод, а ECMAScript — нет, синтаксис классов символов в ECMAScript более ограничен, а некоторые языковые элементы класса символов обладают другим значением. Например, ECMAScript не поддерживает такие языковые элементы, как категория Юникода или элементы блока `\p` и `\P`. Аналогичным образом, элемент `\w`, который сопоставляет словообразующее слово, эквивалентен классу символов `[a-zA-Z_0-9]` при использовании ECMAScript и `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` при использовании канонического поведения. Дополнительные сведения см. в разделе [Классы символов](character-classes-in-regular-expressions.md).
 
   Следующий пример иллюстрирует разницу между каноническим сопоставлением шаблона и ECMAScript. В нем определяется регулярное выражение, `\b(\w+\s*)+`, сопоставляющее слова, за которыми следуют пробелы. Входные данные состоят из двух строк, одна из которых использует латиницу, а другая — кириллицу. Как видно из результата, при вызове метода <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>, использующего сопоставление ECMAScript, не удается сопоставить слова на кириллице, а при вызове метода, использующего каноническое сопоставление — удается.
 
@@ -363,7 +363,7 @@ ms.locfileid: "81242781"
 [!code-vb[Conceptual.Regex.Language.Options#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#14)]
 
 > [!NOTE]
-> Подробнее о сравнении строк с учетом регистра и использовании инвариантных региональных параметров см. в разделе [Рекомендации по использованию строк в .NET](../../../docs/standard/base-types/best-practices-strings.md).
+> Подробнее о сравнении строк с учетом регистра и использовании инвариантных региональных параметров см. в разделе [Рекомендации по использованию строк в .NET](best-practices-strings.md).
 
 Вместо использования сравнений без учета регистра текущих региональных параметров, можно указать параметр <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant?displayProperty=nameWithType>, чтобы игнорировать региональные отличия в языке и использовать соглашения инвариантных региональных параметров.
 
@@ -377,4 +377,4 @@ ms.locfileid: "81242781"
 
 ## <a name="see-also"></a>См. также
 
-- [Элементы языка регулярных выражений — краткий справочник](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Элементы языка регулярных выражений — краткий справочник](regular-expression-language-quick-reference.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - /errorreport compiler option [Visual Basic]
 - errorreport compiler option [Visual Basic]
 ms.assetid: a7fe83a2-a6d8-460c-8dad-79a8f433f501
-ms.openlocfilehash: a9741f7a8283f8603e02dae5abea151c6ee5d75e
-ms.sourcegitcommit: 559259da2738a7b33a46c0130e51d336091c2097
+ms.openlocfilehash: b6a1c8fce17e3e5a54366c2ff4dff4e6aa668f56
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72775669"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408664"
 ---
 # <a name="-errorreport"></a>-errorreport
 
@@ -38,9 +38,9 @@ ms.locfileid: "72775669"
 |`send`|Если возникает внутренняя ошибка компилятора, а параметры политики компьютера и пользователя это разрешают, компилятор отправляет данные в корпорацию Майкрософт.<br /><br /> Параметр `-errorreport:send` пытается автоматически отправить сведения об ошибке в корпорацию Майкрософт, если отчеты включены с помощью системных параметров [Отчеты об ошибках Windows](/windows/desktop/wer/windows-error-reporting). |
 |`none`|Если возникает внутренняя ошибка компилятора, сбор данных и их отправка в корпорацию Майкрософт выполняться не будут.|
 
-Компилятор отправляет данные, включающие стек на момент возникновения ошибки, который обычно содержит некоторый исходный код. Если `-errorreport` используется с параметром [-bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md), то отправляется весь исходный файл.
+Компилятор отправляет данные, включающие стек на момент возникновения ошибки, который обычно содержит некоторый исходный код. Если `-errorreport` используется с параметром [-bugreport](bugreport.md), то отправляется весь исходный файл.
 
-Этот вариант лучше всего использовать с параметром [-bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md), так как он позволяет специалистам Майкрософт легче воспроизвести ошибку.
+Этот вариант лучше всего использовать с параметром [-bugreport](bugreport.md), так как он позволяет специалистам Майкрософт легче воспроизвести ошибку.
 
 > [!NOTE]
 > Параметр `-errorreport` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.
@@ -55,6 +55,6 @@ vbc -errorreport:prompt t2.vb
 
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [-bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
+- [-bugreport](bugreport.md)

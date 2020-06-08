@@ -6,12 +6,12 @@ helpviewer_keywords:
 - langversion compiler option [Visual Basic]
 - -langversion compiler option [Visual Basic]
 ms.assetid: 59b7b0c8-2dde-4e9b-94e7-0237f7e0bafb
-ms.openlocfilehash: 72a5638a5c5364381ffd68604b0d44830d53f365
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 271606ac021e6afcb28fdac3e1bc86e1aaba7d2b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344202"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408542"
 ---
 # <a name="-langversion-visual-basic"></a>-langversion (Visual Basic)
 Инструктирует компилятор принимать только синтаксис, включенный в заданную версию языка Visual Basic.  
@@ -46,6 +46,6 @@ vbc -langversion:9.0 sample.vb
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
 - [Настройка конкретной версии платформы .NET Framework](/visualstudio/ide/visual-studio-multi-targeting-overview)

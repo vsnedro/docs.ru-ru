@@ -7,12 +7,12 @@ helpviewer_keywords:
 - .NET, parallel programming in
 - Parallel Programming
 ms.assetid: b8f99f43-9104-45fd-9bff-385a20488a23
-ms.openlocfilehash: 74a6fc20e95e11bfdbec617742f304a940f3e769
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: 45c9f43e67b66b00758afa0659897971aef317c2
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82507563"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284979"
 ---
 # <a name="task-parallel-library-tpl"></a>Библиотека параллельных задач (TPL)
 Библиотека параллельных задач (TPL) представляет собой набор открытых типов и API-интерфейсов в пространствах имен <xref:System.Threading?displayProperty=nameWithType> и <xref:System.Threading.Tasks?displayProperty=nameWithType>. Цель TPL — повышение производительности труда разработчиков за счет упрощения процедуры добавления параллелизма в приложения. TPL динамически масштабирует степень параллелизма для наиболее эффективного использования всех доступных процессоров. Кроме того, в библиотеке параллельных задач осуществляется секционирование работы, планирование потоков в пуле <xref:System.Threading.ThreadPool>, поддержка отмены, управление состоянием и выполняются другие низкоуровневые задачи. Используя библиотеку параллельных задач, можно повысить производительность кода, сосредоточившись на работе, для которой предназначена программа.  
@@ -23,13 +23,13 @@ ms.locfileid: "82507563"
   
 |Заголовок|Описание|  
 |-|-|  
-|[Параллелизм данных](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)|Описание создания параллельных циклов `for` и `foreach` (`For` и `For Each` в Visual Basic).|  
-|[Асинхронное программирование на основе задач](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)|Описание создания и запуска задач неявно с использованием перегрузки <xref:System.Threading.Tasks.Parallel.Invoke%2A?displayProperty=nameWithType> или явно с использованием объектов <xref:System.Threading.Tasks.Task> напрямую.|  
-|[Поток данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)|Описание использования компонентов потоков данных в библиотеке потоков данных TPL для обработки нескольких операций, которые должны взаимодействовать друг с другом, или для обработки данных, когда они становятся доступными.|  
-|[Использование библиотеки параллельных задач с другими асинхронными моделями](../../../docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md)|Описание использования библиотеки параллельных задач с другими асинхронными шаблонами в .NET.|  
-|[Возможные ошибки, связанные с параллелизмом данных и задач](../../../docs/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md)|Описание некоторых распространенных ошибок и способов их избежать.|  
-|[Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)|Описание способов достижения параллелизма данных с помощью запросов LINQ.|  
-|[Параллельное программирование](../../../docs/standard/parallel-programming/index.md)|Узел верхнего уровня для параллельного программирования в .NET.|  
+|[Параллелизм данных](data-parallelism-task-parallel-library.md)|Описание создания параллельных циклов `for` и `foreach` (`For` и `For Each` в Visual Basic).|  
+|[Асинхронное программирование на основе задач](task-based-asynchronous-programming.md)|Описание создания и запуска задач неявно с использованием перегрузки <xref:System.Threading.Tasks.Parallel.Invoke%2A?displayProperty=nameWithType> или явно с использованием объектов <xref:System.Threading.Tasks.Task> напрямую.|  
+|[Поток данных](dataflow-task-parallel-library.md)|Описание использования компонентов потоков данных в библиотеке потоков данных TPL для обработки нескольких операций, которые должны взаимодействовать друг с другом, или для обработки данных, когда они становятся доступными.|  
+|[Использование библиотеки параллельных задач с другими асинхронными моделями](using-tpl-with-other-asynchronous-patterns.md)|Описание использования библиотеки параллельных задач с другими асинхронными шаблонами в .NET.|  
+|[Возможные ошибки, связанные с параллелизмом данных и задач](potential-pitfalls-in-data-and-task-parallelism.md)|Описание некоторых распространенных ошибок и способов их избежать.|  
+|[Parallel LINQ (PLINQ)](introduction-to-plinq.md)|Описание способов достижения параллелизма данных с помощью запросов LINQ.|  
+|[Параллельное программирование](index.md)|Узел верхнего уровня для параллельного программирования в .NET.|  
   
 ## <a name="see-also"></a>См. также
 

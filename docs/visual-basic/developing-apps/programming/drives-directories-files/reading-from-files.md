@@ -8,12 +8,12 @@ helpviewer_keywords:
 - files [Visual Basic], reading
 - reading files [Visual Basic]
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
-ms.openlocfilehash: afba0df89aabad7ddf8b641fbab421800718deb3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b94a92567c62efca37b1f0ec34f79fb3ceca54bc
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74333827"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84406642"
 ---
 # <a name="reading-from-files-in-visual-basic"></a>Чтение из файлов в Visual Basic
 
@@ -21,22 +21,22 @@ ms.locfileid: "74333827"
   
 ## <a name="in-this-section"></a>Содержание  
 
- [Практическое руководство. Чтение из текстовых файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)  
+ [Практическое руководство. Чтение из текстовых файлов](how-to-read-from-text-files.md)  
  В этом руководстве рассказывается, как выполнять чтение из текстового файла.  
   
- [Практическое руководство. Чтение из текстовых файлов с разделителями-запятыми](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)  
+ [Практическое руководство. Чтение из текстовых файлов с разделителями-запятыми](how-to-read-from-comma-delimited-text-files.md)  
  В этом руководстве рассказывается, как выполнять чтение из текстовых файлов с разделителями-запятыми.  
   
- [Практическое руководство. Чтение из текстовых файлов с полями фиксированного размера](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
+ [Практическое руководство. Чтение из текстовых файлов с полями фиксированного размера](how-to-read-from-fixed-width-text-files.md)  
  В этом руководстве рассказывается, как выполнять чтение из файлов с полями фиксированного размера.  
   
- [Практическое руководство. Чтение из текстовых файлов различных форматов](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)  
+ [Практическое руководство. Чтение из текстовых файлов различных форматов](how-to-read-from-text-files-with-multiple-formats.md)  
  В этом руководстве рассказывается, как выполнять чтение из текстовых файлов различных форматов.  
   
- [Практическое руководство. Чтение из двоичных файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-binary-files.md)  
+ [Практическое руководство. Чтение из двоичных файлов](how-to-read-from-binary-files.md)  
  В этом руководстве рассказывается, как выполнять чтение из двоичных файлов.  
   
- [Практическое руководство. Чтение текста из файлов с помощью StreamReader](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md)  
+ [Практическое руководство. Чтение текста из файлов с помощью StreamReader](how-to-read-text-from-files-with-a-streamreader.md)  
  Демонстрирует, как использовать <xref:System.IO.StreamReader> для чтения из двоичных файлов.  
   
 ## <a name="reference"></a>Справочник  
@@ -58,14 +58,14 @@ ms.locfileid: "74333827"
   
 ## <a name="related-sections"></a>Связанные разделы  
 
- [Запись данных в буфер обмена и чтение их оттуда](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
+ [Запись данных в буфер обмена и чтение их оттуда](../computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
  Объясняет, как выполнять задачи, связанные с `My.Computer.Clipboard`, такие как чтение данных и запись данных в буфер обмена.  
   
- [Анализ текстовых файлов с помощью объекта TextFieldParser](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
+ [Анализ текстовых файлов с помощью объекта TextFieldParser](parsing-text-files-with-the-textfieldparser-object.md)  
  Содержит общие сведения о чтении текстовых файлов с помощью объекта `TextFieldParser`.  
   
- [Пошаговое руководство. Операции с файлами и каталогами в Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
+ [Пошаговое руководство. Операции с файлами и каталогами в Visual Basic](walkthrough-manipulating-files-and-directories.md)  
  Объясняет, как использовать функцию `My` с файлами и каталогами.  
   
- [Пошаговое руководство. Управление файлами с помощью методов .NET Framework](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
+ [Пошаговое руководство. Управление файлами с помощью методов .NET Framework](walkthrough-manipulating-files-by-using-net-framework-methods.md)  
  Объясняет, как использовать методы .NET Framework с файлами и каталогами.

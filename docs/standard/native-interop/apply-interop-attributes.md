@@ -14,17 +14,17 @@ helpviewer_keywords:
 - COM interop, exposing COM components
 - COM interop, applying attributes
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
-ms.openlocfilehash: 831f8d79030264ef013a75cd91cb771c9d168576
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: f9ccf59e52c1ef27649cd70a57f7b24bb5a8e9bf
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420543"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291335"
 ---
 # <a name="applying-interop-attributes"></a>Применение атрибутов взаимодействия
 В пространстве имен <xref:System.Runtime.InteropServices> представлены три категории атрибутов взаимодействия: атрибуты, применяемые разработчиком во время разработки, API и средствами COM-взаимодействия в процессе преобразования, а также разработчиком или средой COM-взаимодействия.  
   
- Дополнительные сведения о применении атрибутов к управляемому коду см. в разделе [Расширение метаданных с помощью атрибутов](../../../docs/standard/attributes/index.md). Как и другие настраиваемые атрибуты, атрибуты взаимодействия можно применять к типам, методам, свойствам, параметрам, полям и другим членам.  
+ Дополнительные сведения о применении атрибутов к управляемому коду см. в разделе [Расширение метаданных с помощью атрибутов](../attributes/index.md). Как и другие настраиваемые атрибуты, атрибуты взаимодействия можно применять к типам, методам, свойствам, параметрам, полям и другим членам.  
   
 ## <a name="design-time-attributes"></a>Атрибуты времени разработки  
  Атрибуты времени разработки позволяют настраивать результаты процесса преобразования, который выполняется API и средствами COM-взаимодействия. В следующей таблице описываются атрибуты, которые можно применять к управляемому исходному коду. В некоторых случаях средства COM-взаимодействия также могут применять описываемые здесь атрибуты.  
@@ -70,7 +70,7 @@ ms.locfileid: "83420543"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices>
-- [Предоставление компонентов .NET Framework клиентам COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
-- [Атрибуты](../../../docs/standard/attributes/index.md)
-- [Oпределение типов .NET для взаимодействия](../../../docs/standard/native-interop/qualify-net-types-for-interoperation.md)
-- [Упаковка сборки .NET Framework для COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)
+- [Предоставление компонентов .NET Framework клиентам COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Атрибуты](../attributes/index.md)
+- [Oпределение типов .NET для взаимодействия](qualify-net-types-for-interoperation.md)
+- [Упаковка сборки .NET Framework для COM](../../framework/interop/packaging-an-assembly-for-com.md)

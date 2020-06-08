@@ -8,12 +8,12 @@ helpviewer_keywords:
 - custom strings
 ms.assetid: 8133d357-90b5-4b62-9927-43323d99b6b6
 ms.custom: seadec18
-ms.openlocfilehash: 2ce1b148a2b1605b5b1283bdc3398409661f3f83
-ms.sourcegitcommit: 79b0dd8bfc63f33a02137121dd23475887ecefda
+ms.openlocfilehash: 8c19f6bcbdf5e4829c91aee1e2fd631537ed2e0a
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80523991"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84277756"
 ---
 # <a name="basic-string-operations-in-net"></a>Базовые операции со строками в .NET
 
@@ -23,8 +23,8 @@ ms.locfileid: "80523991"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[Преобразование типов в .NET](../../../docs/standard/base-types/type-conversion.md)\
+[Преобразование типов в .NET](type-conversion.md)\
 Описывает преобразование одних типов в другие.  
 
-[Типы форматирования](../../../docs/standard/base-types/formatting-types.md)\
+[Типы форматирования](formatting-types.md)\
 Описывает форматирование строк с использованием описателей формата.

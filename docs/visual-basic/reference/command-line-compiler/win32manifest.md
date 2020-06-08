@@ -6,12 +6,12 @@ helpviewer_keywords:
 - win32manifest compiler option [Visual Basic]
 - -win32manifest compiler option [Visual Basic]
 ms.assetid: 9e3191b4-90db-41c8-966a-28036fd20005
-ms.openlocfilehash: cef1e6c19e7fdd6fc9f42c8fc36008314ea80a80
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 6f77649365f8ca7b163cd55854aa9960d88f2984
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349133"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414263"
 ---
 # <a name="-win32manifest-visual-basic"></a>-win32manifest (Visual Basic)
 Определяет пользовательский файл манифеста приложения Win32 для внедрения в переносимый исполняемый файл проекта (PE-файл).  
@@ -32,7 +32,7 @@ ms.locfileid: "74349133"
  По умолчанию компилятор Visual Basic внедряет манифест приложения, определяющий запрошенный уровень выполнения "asInvoker". Он создает манифест в той же папке, в которой создан исполняемый файл; при использовании Visual Studio обычно это папка bin\Debug или bin\Release. Если вы хотите предоставить пользовательский манифест, например, чтобы задать запрошенный уровень выполнения highestAvailable или requireAdministrator, используйте этот параметр, чтобы указать имя файла.  
   
 > [!NOTE]
-> Этот параметр и параметр [-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md) являются взаимоисключающими. При попытке использовать оба параметра в одной командной строке возникнет ошибка сборки.  
+> Этот параметр и параметр [-win32resource](win32resource.md) являются взаимоисключающими. При попытке использовать оба параметра в одной командной строке возникнет ошибка сборки.  
   
  Приложение без манифеста, определяющего запрошенный уровень выполнения, требует виртуализации файлов или реестра с помощью функции "Контроль учетных записей" в Windows Vista. Дополнительные сведения о виртуализации см. в статье [ClickOnce Deployment on Windows Vista](/visualstudio/deployment/clickonce-deployment-on-windows-vista) (Развертывание ClickOnce в Windows Vista).  
   
@@ -68,5 +68,5 @@ ms.locfileid: "74349133"
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-nowin32manifest (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nowin32manifest.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [-nowin32manifest (Visual Basic)](nowin32manifest.md)

@@ -3,12 +3,12 @@ title: Объекты расширения XSLT
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
-ms.openlocfilehash: 6ad5b5140239ad7dc0ad72e65d10af744dfbd784
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 03e24153cc11c139fc9d9e692ef93bd82c51ee3d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75709716"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84282601"
 ---
 # <a name="xslt-extension-objects"></a>Объекты расширения XSLT
 Объекты расширения используются для расширения функциональности таблиц стилей. Объекты расширения обслуживаются классом <xref:System.Xml.Xsl.XsltArgumentList>.  
@@ -22,7 +22,7 @@ ms.locfileid: "75709716"
  Объекты расширения XSLT добавляются в объект <xref:System.Xml.Xsl.XsltArgumentList> с помощью метода <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>. В это время с объектом расширения связываются полное имя и URI-код пространства имен.  
   
 > [!NOTE]
-> Чтобы вызвать метод <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>, необходим набор разрешений FullTrust. См. дополнительные сведения об [управлении доступом к коду](../../../../docs/framework/misc/code-access-security.md) и [именованных наборах разрешений](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
+> Чтобы вызвать метод <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>, необходим набор разрешений FullTrust. См. дополнительные сведения об [управлении доступом к коду](../../../framework/misc/code-access-security.md) и [именованных наборах разрешений](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
   
  Объекты расширения возвращают один из четырех базовых типов данных XPath: `number`, `string`, `Boolean` и `node set`.  
   
@@ -38,5 +38,5 @@ ms.locfileid: "75709716"
   
 ## <a name="see-also"></a>См. также
 
-- [Преобразования XSLT](../../../../docs/standard/data/xml/xslt-transformations.md)
-- [Рекомендации по безопасности XSLT](../../../../docs/standard/data/xml/xslt-security-considerations.md)
+- [Преобразования XSLT](xslt-transformations.md)
+- [Рекомендации по безопасности XSLT](xslt-security-considerations.md)

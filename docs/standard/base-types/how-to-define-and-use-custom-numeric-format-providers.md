@@ -15,19 +15,19 @@ helpviewer_keywords:
 - format providers [.NET Framework]
 - custom format strings
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
-ms.openlocfilehash: 5345c90d966ea9ce0a0bbf6c884b8d8abc8b5fa7
-ms.sourcegitcommit: 79b0dd8bfc63f33a02137121dd23475887ecefda
+ms.openlocfilehash: d12899fff7d9e6cb63728ba0b160b70fa2a41a1a
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80523939"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290517"
 ---
 # <a name="how-to-define-and-use-custom-numeric-format-providers"></a>Практическое руководство. Определение и использование поставщиков настраиваемых числовых форматов
 .NET Framework обеспечивает расширенный контроль над строковым представлением числовых значений. Эта платформа поддерживает указанные далее возможности для настройки форматов числовых значений.  
   
-- Строки стандартных числовых форматов, которые предоставляют стандартный набор форматов для преобразования чисел в их строковое представление. Вы можете использовать их с любым методом числового форматирования, например <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType> с параметром `format`. Дополнительные сведения см. в статье [Строки стандартных числовых форматов](../../../docs/standard/base-types/standard-numeric-format-strings.md).  
+- Строки стандартных числовых форматов, которые предоставляют стандартный набор форматов для преобразования чисел в их строковое представление. Вы можете использовать их с любым методом числового форматирования, например <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType> с параметром `format`. Дополнительные сведения см. в статье [Строки стандартных числовых форматов](standard-numeric-format-strings.md).  
   
-- Строки настраиваемых числовых форматов, предоставляющих набор символов, которые могут быть объединены для определения описателей настраиваемого числового формата. Их можно использовать с любым методом числового форматирования, например <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType> с параметром `format`. Дополнительные сведения см. в разделе [Строки настраиваемых числовых форматов](../../../docs/standard/base-types/custom-numeric-format-strings.md).  
+- Строки настраиваемых числовых форматов, предоставляющих набор символов, которые могут быть объединены для определения описателей настраиваемого числового формата. Их можно использовать с любым методом числового форматирования, например <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType> с параметром `format`. Дополнительные сведения см. в разделе [Строки настраиваемых числовых форматов](custom-numeric-format-strings.md).  
   
 - Настраиваемые объекты <xref:System.Globalization.CultureInfo> и <xref:System.Globalization.NumberFormatInfo>, которые определяют символы и шаблоны форматирования для отображения строковых представлений числовых значений. Вы можете использовать их с любым методом числового форматирования, например <xref:System.Int32.ToString%2A> с параметром `provider`. Как правило, параметр `provider` используется для указания форматирования, зависящего от языка и региональных параметров.  
   

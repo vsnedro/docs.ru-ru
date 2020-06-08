@@ -6,12 +6,12 @@ helpviewer_keywords:
 - -delaysign compiler option [Visual Basic]
 - -delaysign compiler option [Visual Basic]
 ms.assetid: c76e61a4-1884-4252-9fb2-377f99caa690
-ms.openlocfilehash: 3ee94df096b756be544964cfbbd405355e3f728f
-ms.sourcegitcommit: 1f12db2d852d05bed8c53845f0b5a57a762979c8
+ms.openlocfilehash: c9bb302e2b34ebe1f51cf39bb3db1094d420d7f4
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72581272"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84408703"
 ---
 # <a name="-delaysign"></a>-delaysign
 
@@ -30,7 +30,7 @@ ms.locfileid: "72581272"
 
 ## <a name="remarks"></a>Примечания
 
-Параметр `-delaysign` не имеет никакого эффекта, если вместе с ним не указан параметр [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md) или [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md).
+Параметр `-delaysign` не имеет никакого эффекта, если вместе с ним не указан параметр [-keyfile](keyfile.md) или [-keycontainer](keycontainer.md).
 
 При запросе полностью подписанной сборки компилятор хэширует файл, содержащий манифест (метаданные сборки), и подписывает хэш закрытым ключом. Итоговая цифровая подпись хранится в файле, содержащем манифест. При использовании отложенной подписи компилятор не вычисляет и не сохраняет подпись, а резервирует место в файле для добавления подписи в сборку в будущем.
 
@@ -48,7 +48,7 @@ ms.locfileid: "72581272"
 
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)
-- [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [-keyfile](keyfile.md)
+- [-keycontainer](keycontainer.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)

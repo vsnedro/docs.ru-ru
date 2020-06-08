@@ -6,12 +6,12 @@ helpviewer_keywords:
 - application event logs, Visual Basic
 - application event logs
 ms.assetid: 2581afd1-5791-4bc4-86b2-46244e9fe468
-ms.openlocfilehash: 617b940d2cf15779ae3c10e4663b63c9771d44b6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e33efac8f65832c87d5c9271eba25c2ca1d1803b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74345903"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84387599"
 ---
 # <a name="working-with-application-logs-in-visual-basic"></a>Работа с журналами приложения в Visual Basic
 
@@ -45,11 +45,11 @@ C:\Documents and Settings\\`username`\Application Data
 
 Значения параметров `CompanyName`, `ProductName`и `ProductVersion` берутся из сведений о сборке приложения. Имя файла журнала имеет следующий формат: *AssemblyName*.log, где *AssemblyName* — имя файла сборки без расширения. Если требуется несколько файлов журнала, например, когда исходный журнал недоступен при попытке записи в журнал, имя файла журнала имеет следующий формат: *AssemblyName*-*iteration*.log, где `iteration` — положительное целое число типа `Integer`.
 
-Поведение по умолчанию можно переопределить путем добавления или изменения файлов конфигурации компьютера и приложения. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение места записи сведений для My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md).
+Поведение по умолчанию можно переопределить путем добавления или изменения файлов конфигурации компьютера и приложения. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md).
 
 ## <a name="configuring-log-settings"></a>Настройка параметров журнала
 
-Реализация объекта `Log` по умолчанию работает без файла конфигурации приложения app.config. Чтобы изменить значения по умолчанию, необходимо добавить файл конфигурации с новыми значениями параметров. Дополнительные сведения см. в разделе [Пошаговое руководство: Фильтрация выходных данных My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md).
+Реализация объекта `Log` по умолчанию работает без файла конфигурации приложения app.config. Чтобы изменить значения по умолчанию, необходимо добавить файл конфигурации с новыми значениями параметров. Дополнительные сведения см. в разделе [Пошаговое руководство: Фильтрация выходных данных My.Application.Log](walkthrough-filtering-my-application-log-output.md).
 
 Разделы конфигурации журнала находятся в узле `<system.diagnostics>` в основном узле `<configuration>` файла app.config. Сведения журнала определены в нескольких узлах.
 
@@ -109,4 +109,4 @@ C:\Documents and Settings\\`username`\Application Data
 ## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
-- [Запись сведений в журнал из приложения](../../../../visual-basic/developing-apps/programming/log-info/index.md)
+- [Запись сведений в журнал из приложения](index.md)

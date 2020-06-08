@@ -12,12 +12,12 @@ helpviewer_keywords:
 - time [.NET Framework], round-trip values
 - formatting strings [.NET Framework], round-trip values
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
-ms.openlocfilehash: 3aa615dc7d7d1d49dce4897f8508b5210b364fc0
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: 60483a6e29c65fc0c5803e8084053d53d9fc3c37
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635135"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290452"
 ---
 # <a name="how-to-round-trip-date-and-time-values"></a>Практическое руководство. Сохранение и восстановление значения даты и времени
 
@@ -99,5 +99,5 @@ ms.locfileid: "80635135"
 
 ## <a name="see-also"></a>См. также
 
-- [Выбор между типами DateTime, DateTimeOffset, TimeSpan и TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md).
-- [Строки стандартных форматов даты и времени](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+- [Выбор между типами DateTime, DateTimeOffset, TimeSpan и TimeZoneInfo](../datetime/choosing-between-datetime.md).
+- [Строки стандартных форматов даты и времени](standard-date-and-time-format-strings.md)

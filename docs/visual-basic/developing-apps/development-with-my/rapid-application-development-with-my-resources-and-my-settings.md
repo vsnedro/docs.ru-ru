@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rapid application development (RAD), My.Settings
 - My.Resources object [Visual Basic], developing applications
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
-ms.openlocfilehash: ce9a5bf76ba3132f58aa40227a145d8b5bf1591d
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 6c53d11a3830a5a8a2cb898728bed8694a226686
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349266"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84411672"
 ---
 # <a name="rapid-application-development-with-myresources-and-mysettings-visual-basic"></a>Быстрая разработка приложений с использованием My.Resources и My.Settings (Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "74349266"
   
  Объект `My.Resources` предоставляет только глобальные ресурсы. Он не предоставляет доступ к файлам ресурсов, связанным с формами. Вам нужно получить доступ к ресурсам формы из формы.  
   
- Аналогичным образом объект `My.Settings` предоставляет доступ к параметрам приложения, позволяя динамически сохранять и извлекать параметры свойств и другие сведения для приложения. См. сведения о [My.Resources Object](../../../visual-basic/language-reference/objects/my-resources-object.md) и [My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md).  
+ Аналогичным образом объект `My.Settings` предоставляет доступ к параметрам приложения, позволяя динамически сохранять и извлекать параметры свойств и другие сведения для приложения. См. сведения о [My.Resources Object](../../language-reference/objects/my-resources-object.md) и [My.Settings Object](../../language-reference/objects/my-settings-object.md).  
   
 ## <a name="see-also"></a>См. также
 
-- [Объект My.Resources](../../../visual-basic/language-reference/objects/my-resources-object.md)
-- [Объект My.Settings](../../../visual-basic/language-reference/objects/my-settings-object.md)
-- [Доступ к параметрам приложения](../../../visual-basic/developing-apps/programming/app-settings/index.md)
+- [Объект My.Resources](../../language-reference/objects/my-resources-object.md)
+- [Объект My.Settings](../../language-reference/objects/my-settings-object.md)
+- [Доступ к параметрам приложения](../programming/app-settings/index.md)

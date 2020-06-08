@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -win32resource compiler option [Visual Basic]
 - win32resource compiler option [Visual Basic]
 ms.assetid: e226946d-19ce-4cc9-91f5-aed24f77aa2b
-ms.openlocfilehash: cee06adec89aac4b3e3f170df3bf932e466f3070
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: bcbc690690993a094bc5360d0c13bddebf8cd615
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72004958"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414250"
 ---
 # <a name="-win32resource"></a>-win32resource
 Вставляет файл ресурсов Win32 в выходной файл.  
@@ -34,7 +34,7 @@ ms.locfileid: "72004958"
   
  Ресурс Win32 может содержать сведения о версии или точечный рисунок (значок), который помогает идентифицировать приложение в **проводнике**. Если параметр `-win32resource` не задан, компилятор создаст сведения о версии на основе версии сборки. Параметры `-win32resource` и `-win32icon` являются взаимоисключающими.  
   
- Чтобы создать ссылку на файл ресурсов .NET Framework, обратитесь к разделу [-linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md). Чтобы присоединить файл ресурсов .NET, обратитесь к разделу [-resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md).  
+ Чтобы создать ссылку на файл ресурсов .NET Framework, обратитесь к разделу [-linkresource (Visual Basic)](linkresource.md). Чтобы присоединить файл ресурсов .NET, обратитесь к разделу [-resource (Visual Basic)](resource.md).  
   
 > [!NOTE]
 > Параметр `-win32resource` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.  
@@ -48,5 +48,5 @@ vbc -win32resource:rf.res in.vb
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)

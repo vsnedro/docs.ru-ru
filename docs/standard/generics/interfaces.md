@@ -8,12 +8,12 @@ helpviewer_keywords:
 - generics [.NET Framework], interfaces
 - ordering comparisons [.NET Framework]
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
-ms.openlocfilehash: 704ada32d428c468d5b71a3f1390568ca586079e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 21a244a5d44b036a987d8eb8a79aef2c4b8e9a76
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75708328"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287523"
 ---
 # <a name="generic-interfaces"></a>Универсальные интерфейсы
 В этом разделе приводится обзор универсальных интерфейсов, которые предоставляют общие функциональные возможности для различных семейств универсальных типов.  
@@ -22,7 +22,7 @@ ms.locfileid: "75708328"
  Универсальные интерфейсы — это типобезопасные аналоги неуниверсальных интерфейсов, предназначенные для сортировки и сравнения на равенство, а также для реализации функциональности, совместно используемой универсальными коллекциями.  
   
 > [!NOTE]
-> Начиная с .NET Framework 4, параметры типов нескольких универсальных интерфейсов помечены как ковариантные или контравариантные, что обеспечивает дополнительную гибкость при назначении и использовании типов, реализующих эти интерфейсы. См. раздел [Ковариация и контрвариация](../../../docs/standard/generics/covariance-and-contravariance.md).  
+> Начиная с .NET Framework 4, параметры типов нескольких универсальных интерфейсов помечены как ковариантные или контравариантные, что обеспечивает дополнительную гибкость при назначении и использовании типов, реализующих эти интерфейсы. См. раздел [Ковариация и контрвариация](covariance-and-contravariance.md).  
   
 ### <a name="equality-and-ordering-comparisons"></a>Упорядочение и сравнение на равенство  
  В пространстве имен <xref:System> универсальные интерфейсы <xref:System.IComparable%601?displayProperty=nameWithType> и <xref:System.IEquatable%601?displayProperty=nameWithType>, как и их неуниверсальные аналоги, определяют методы для упорядочения и сравнения на равенство соответственно. Типы реализуют эти интерфейсы для предоставления способности выполнять такие сравнения.  
@@ -40,11 +40,11 @@ ms.locfileid: "75708328"
   
  Универсальный интерфейс <xref:System.Collections.Generic.IEnumerable%601> предоставляет структуру универсального перечислителя. Универсальный интерфейс <xref:System.Collections.Generic.IEnumerator%601>, реализуемый универсальными перечислителями, наследуется от неуниверсального интерфейса <xref:System.Collections.IEnumerator>. Члены <xref:System.Collections.IEnumerator.MoveNext%2A> и <xref:System.Collections.IEnumerator.Reset%2A>, которые не зависят от параметра типа `T`, присутствуют только в неуниверсальном интерфейсе. Это означает, что любой потребитель неуниверсального интерфейса также может использовать универсальный интерфейс.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Collections.Generic?displayProperty=nameWithType>
 - <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
-- [Универсальные шаблоны](../../../docs/standard/generics/index.md)
-- [Универсальные коллекции в .NET Framework](../../../docs/standard/generics/collections.md)
-- [Универсальные методы-делегаты для управления массивами и списками](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)
-- [Ковариация и контрвариантность](../../../docs/standard/generics/covariance-and-contravariance.md)
+- [Универсальные шаблоны](index.md)
+- [Универсальные коллекции в .NET Framework](collections.md)
+- [Универсальные методы-делегаты для управления массивами и списками](delegates-for-manipulating-arrays-and-lists.md)
+- [Ковариация и контрвариантность](covariance-and-contravariance.md)

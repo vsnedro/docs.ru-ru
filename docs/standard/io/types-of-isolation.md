@@ -18,12 +18,12 @@ helpviewer_keywords:
 - isolated storage, types
 - user authentication, isolated storage
 ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
-ms.openlocfilehash: 0e8be9b1d12d40f8135d21abe9dd6cb0b63bb2d8
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: 7802e4bc27195d1c8ecaccbd64121fb24328a4d8
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81646394"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288541"
 ---
 # <a name="types-of-isolation"></a>Типы изоляции
 Доступ к изолированному хранилищу всегда предоставляется только пользователю, который его создал. Чтобы поддерживать изоляцию такого типа, общеязыковая среда выполнения использует тот же подход к идентификации пользователя, что и операционная система, применяя идентификатор, связанный с процессом, в котором выполнялся код при открытии хранилища. Этот идентификатор обозначает аутентифицированного пользователя, но использование функции олицетворения может привести к тому, что идентификатор текущего пользователя изменится в ходе выполнения приложения.  
@@ -106,4 +106,4 @@ ms.locfileid: "81646394"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
-- [Изолированное хранилище](../../../docs/standard/io/isolated-storage.md)
+- [Изолированное хранилище](isolated-storage.md)

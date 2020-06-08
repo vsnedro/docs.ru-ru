@@ -11,12 +11,12 @@ helpviewer_keywords:
 - encoding, choosing
 - encoding, fallback strategy
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
-ms.openlocfilehash: 8e0cf961f4d6b481c354bdc854806f971458ce21
-ms.sourcegitcommit: e09dbff13f0b21b569a101f3b3c5efa174aec204
+ms.openlocfilehash: c626e79e7bbcd71c90775df8ee8c4d6570c29125
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82624947"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290582"
 ---
 # <a name="how-to-use-character-encoding-classes-in-net"></a>Использование классов кодировки символов в .NET
 
@@ -33,11 +33,11 @@ ms.locfileid: "82624947"
 
 Все классы кодировок в .NET наследуют от абстрактного класса <xref:System.Text.Encoding?displayProperty=nameWithType>, который определяет общую для всех кодировок функциональность. Для доступа к отдельным объектам кодировок, реализованным в .NET, можно сделать следующее:
 
-- Используйте статические свойства класса <xref:System.Text.Encoding>, которые возвращают объекты, представляющие стандартные кодировки символов .NET (ASCII, UTF-7, UTF-8, UTF-16 и UTF-32). Например, свойство <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> возвращает объект <xref:System.Text.UnicodeEncoding> . Каждый объект использует резервную стратегию замены для обработки строк, которые он не может закодировать, и байтов, которые не может декодировать. Дополнительные сведения см. в разделе [Replacement fallback](../../../docs/standard/base-types/character-encoding.md#Replacement).
+- Используйте статические свойства класса <xref:System.Text.Encoding>, которые возвращают объекты, представляющие стандартные кодировки символов .NET (ASCII, UTF-7, UTF-8, UTF-16 и UTF-32). Например, свойство <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> возвращает объект <xref:System.Text.UnicodeEncoding> . Каждый объект использует резервную стратегию замены для обработки строк, которые он не может закодировать, и байтов, которые не может декодировать. Дополнительные сведения см. в разделе [Replacement fallback](character-encoding.md#Replacement).
 
-- Вызвать конструктор класса кодировки. Таким образом могут быть созданы объекты для кодировок ASCII, UTF-7, UTF-8, UTF-16 и UTF-32. По умолчанию каждый объект использует резервную стратегию замены для обработки строк, которые он не может закодировать, и байтов, которые он не может декодировать, но вы можете указать, чтобы вместо этого создавалось исключение. Дополнительные сведения см. в разделе [Replacement fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) и [Exception fallback](../../../docs/standard/base-types/character-encoding.md#Exception).
+- Вызвать конструктор класса кодировки. Таким образом могут быть созданы объекты для кодировок ASCII, UTF-7, UTF-8, UTF-16 и UTF-32. По умолчанию каждый объект использует резервную стратегию замены для обработки строк, которые он не может закодировать, и байтов, которые он не может декодировать, но вы можете указать, чтобы вместо этого создавалось исключение. Дополнительные сведения см. в разделе [Replacement fallback](character-encoding.md#Replacement) и [Exception fallback](character-encoding.md#Exception).
 
-- Вызвать конструктор <xref:System.Text.Encoding.%23ctor%28System.Int32%29> и передать ему целое число, представляющее кодировку. Объекты стандартных кодировок используют резервные стратегии замены, а объекты кодовых страниц и двухбайтовых кодировок (DBCS) используют резервную стратегию наилучшего соответствия для обработки строк, которые не удается закодировать, или байтов, которые не удается декодировать. Дополнительные сведения см. в разделе [Best-fit fallback](../../../docs/standard/base-types/character-encoding.md#BestFit).
+- Вызвать конструктор <xref:System.Text.Encoding.%23ctor%28System.Int32%29> и передать ему целое число, представляющее кодировку. Объекты стандартных кодировок используют резервные стратегии замены, а объекты кодовых страниц и двухбайтовых кодировок (DBCS) используют резервную стратегию наилучшего соответствия для обработки строк, которые не удается закодировать, или байтов, которые не удается декодировать. Дополнительные сведения см. в разделе [Best-fit fallback](character-encoding.md#BestFit).
 
 - Вызовите метод <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>, возвращающий любую стандартную кодировку, кодовую страницу или кодировку DBCS, доступную в .NET. Перегрузки позволяют задать резервный объект как для кодировщика, так и для декодера.
 
@@ -145,7 +145,7 @@ ms.locfileid: "82624947"
 По умолчанию для объекта <xref:System.Text.Encoding> применяется стратегия наилучшего соответствия, при которой данные в формате Юникод кодируются в формат кодовой страницы. Ряд приложений предыдущих версий построен с учетом этой стратегии. Однако в целях безопасности в большинстве новых приложений не рекомендуется применять эту стратегию. Например, приложениям не следует выполнять кодировку доменного имени в режиме наилучшего соответствия.
 
 > [!NOTE]
-> Вы также можете реализовать пользовательскую стратегию наилучшего соответствия для кодировки. Дополнительные сведения см. в разделе [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) .
+> Вы также можете реализовать пользовательскую стратегию наилучшего соответствия для кодировки. Дополнительные сведения см. в разделе [Implementing a Custom Fallback Strategy](character-encoding.md#Custom) .
 
 Если стратегия наилучшего соответствия задана по умолчанию для объекта кодировки, вы можете выбрать другую резервную стратегию при извлечении объекта <xref:System.Text.Encoding> с помощью вызова перегрузки <xref:System.Text.Encoding.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> или <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> . В следующем разделе приводится пример, в котором каждый символ, который не удается сопоставить с кодовой страницей 1252, заменяется звездочкой (*).
 
@@ -167,7 +167,7 @@ ms.locfileid: "82624947"
 [!code-vb[Conceptual.Encoding#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/bestfit1a.vb#3)]
 
 > [!NOTE]
-> Также можно реализовать класс замены для кодировки. Дополнительные сведения см. в разделе [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) .
+> Также можно реализовать класс замены для кодировки. Дополнительные сведения см. в разделе [Implementing a Custom Fallback Strategy](character-encoding.md#Custom) .
 
 Помимо вопросительного знака (U+003F) в качестве замещающей строки часто используется замещающий символ Юникода (U+FFFD), особенно при декодировании последовательностей байтов, которые не удается преобразовать в символы Юникода. Однако вы можете выбрать любую замещающую строку, в том числе из нескольких символов.
 
@@ -181,7 +181,7 @@ ms.locfileid: "82624947"
 [!code-vb[Conceptual.Encoding#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/exceptionascii.vb#4)]
 
 > [!NOTE]
-> Вы также можете реализовать пользовательский обработчик исключений для операции кодирования. Дополнительные сведения см. в разделе [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) .
+> Вы также можете реализовать пользовательский обработчик исключений для операции кодирования. Дополнительные сведения см. в разделе [Implementing a Custom Fallback Strategy](character-encoding.md#Custom) .
 
 Объекты <xref:System.Text.EncoderFallbackException> и <xref:System.Text.DecoderFallbackException> предоставляют следующую информацию о состоянии, вызвавшем исключение:
 
@@ -268,4 +268,4 @@ ms.locfileid: "82624947"
 - <xref:System.Text.DecoderFallback>
 - <xref:System.Text.Encoding>
 - <xref:System.Text.EncoderFallback>
-- [Глобализация и локализация](../../../docs/standard/globalization-localization/index.md)
+- [Глобализация и локализация](../globalization-localization/index.md)

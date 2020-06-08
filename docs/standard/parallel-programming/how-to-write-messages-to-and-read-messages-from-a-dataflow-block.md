@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, reading and writing messages
 ms.assetid: 1a9bf078-aa82-46eb-b95a-f87237f028c5
-ms.openlocfilehash: 58927803b741acf6c1964b35f6603e6901f9cbf1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 917892e16a3517800953437f2fce877a57a64575
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73139290"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290711"
 ---
 # <a name="how-to-write-messages-to-and-read-messages-from-a-dataflow-block"></a>Практическое руководство. Запись и чтение сообщений в блоке потока данных
 В этом документе описываются способы использования библиотеки потоков данных TPL для записи сообщений в блок потока данных и считывания сообщений из него. Библиотека потоков данных TPL предоставляет как синхронные, так и асинхронные методы для записи сообщений в блок потока данных и чтения сообщений из него. В этом документе используется класс <xref:System.Threading.Tasks.Dataflow.BufferBlock%601?displayProperty=nameWithType>. Класс <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> помещает сообщения в буфер и работает и в качестве источника сообщений, и как адресат сообщения.  
@@ -38,7 +38,7 @@ ms.locfileid: "73139290"
  [!code-vb[TPLDataflow_ReadWrite#4](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_readwrite/vb/dataflowreadwrite.vb#4)]  
   
 ## <a name="writing-to-and-reading-from-a-dataflow-block-asynchronously"></a>Асинхронная запись в блок потока данных и чтение из него  
- В следующем примере используется метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A> для асинхронной записи в объект <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> и метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A> для асинхронного чтения из того же объекта. В этом образце используются операторы [async](../../csharp/language-reference/keywords/async.md) и [await](../../csharp/language-reference/operators/await.md) ([Async](../../visual-basic/language-reference/modifiers/async.md) и [Await](../../visual-basic/language-reference/operators/await-operator.md) в Visual Basic) для асинхронной передачи данных и считывания их из блока целевого объекта. Метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A> рекомендуется, если необходимо обеспечить возможность использования отложенных сообщений для потока данных. Метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A> полезен для использования, если вы собираетесь работать с данными, когда они становятся доступны. Дополнительные сведения о распространении сообщений среди блоков сообщений см. в разделе "Передача сообщений" документа [Поток данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md).  
+ В следующем примере используется метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A> для асинхронной записи в объект <xref:System.Threading.Tasks.Dataflow.BufferBlock%601> и метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A> для асинхронного чтения из того же объекта. В этом образце используются операторы [async](../../csharp/language-reference/keywords/async.md) и [await](../../csharp/language-reference/operators/await.md) ([Async](../../visual-basic/language-reference/modifiers/async.md) и [Await](../../visual-basic/language-reference/operators/await-operator.md) в Visual Basic) для асинхронной передачи данных и считывания их из блока целевого объекта. Метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A> рекомендуется, если необходимо обеспечить возможность использования отложенных сообщений для потока данных. Метод <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A> полезен для использования, если вы собираетесь работать с данными, когда они становятся доступны. Дополнительные сведения о распространении сообщений среди блоков сообщений см. в разделе "Передача сообщений" документа [Поток данных](dataflow-task-parallel-library.md).  
   
  [!code-csharp[TPLDataflow_ReadWrite#5](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_readwrite/cs/dataflowreadwrite.cs#5)]
  [!code-vb[TPLDataflow_ReadWrite#5](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_readwrite/vb/dataflowreadwrite.vb#5)]  
@@ -50,8 +50,8 @@ ms.locfileid: "73139290"
  [!code-vb[TPLDataflow_ReadWrite#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_readwrite/vb/dataflowreadwrite.vb#1)]  
   
 ## <a name="next-steps"></a>Next Steps  
- В этом примере показано, как считывать и записывать в блок сообщений напрямую. Можно также подключить блоки потока данных для создания *конвейеров*, которые являются линейными последовательностями блоков потока данных, или *сетей*, являющихся графами блоков потоков данных. Конвейеры или сети асинхронно распространяют исходные данные целевым объектам, когда данные становятся доступны. Пример, в котором создается базовый конвейер потока данных, см. в разделе [Пошаговое руководство. Создание конвейера потока данных](../../../docs/standard/parallel-programming/walkthrough-creating-a-dataflow-pipeline.md). Пример создания более комплексной сети потока данных см. в разделе [Пошаговое руководство. Использование потоков данных в приложении Windows Forms](../../../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md).  
+ В этом примере показано, как считывать и записывать в блок сообщений напрямую. Можно также подключить блоки потока данных для создания *конвейеров*, которые являются линейными последовательностями блоков потока данных, или *сетей*, являющихся графами блоков потоков данных. Конвейеры или сети асинхронно распространяют исходные данные целевым объектам, когда данные становятся доступны. Пример, в котором создается базовый конвейер потока данных, см. в разделе [Пошаговое руководство. Создание конвейера потока данных](walkthrough-creating-a-dataflow-pipeline.md). Пример создания более комплексной сети потока данных см. в разделе [Пошаговое руководство. Использование потоков данных в приложении Windows Forms](walkthrough-using-dataflow-in-a-windows-forms-application.md).  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Поток данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Поток данных](dataflow-task-parallel-library.md)

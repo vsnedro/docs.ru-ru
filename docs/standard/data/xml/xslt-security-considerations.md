@@ -3,12 +3,12 @@ title: Рекомендации по безопасности XSLT
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: fea695be-617c-4977-9567-140e820436fc
-ms.openlocfilehash: e6e490c0f637aace57dacc88ef49cc9be87532cd
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 81db764016607ebe6facfc530dbb2bac8e6b8cfe
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75709690"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84282516"
 ---
 # <a name="xslt-security-considerations"></a>Рекомендации по безопасности XSLT
 Язык XSLT обладает широким набором возможностей с большими возможностями и обеспечивает гибкость применения. В него входит много возможностей, которые полезны, но могут злонамеренно использоваться внешними источниками. Чтобы использовать XSLT безопасно, необходимо иметь представление о проблемах безопасности, сопряженных с использованием XSLT, и основных стратегиях, применяемых для снижения этих рисков.  
@@ -56,6 +56,6 @@ ms.locfileid: "75709690"
   
 ## <a name="see-also"></a>См. также
 
-- [Преобразования XSLT](../../../../docs/standard/data/xml/xslt-transformations.md)
-- [Разрешение внешних ресурсов в ходе обработки XSLT](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md)
-- [Управление доступом для кода](../../../../docs/framework/misc/code-access-security.md)
+- [Преобразования XSLT](xslt-transformations.md)
+- [Разрешение внешних ресурсов в ходе обработки XSLT](resolving-external-resources-during-xslt-processing.md)
+- [Управление доступом для кода](../../../framework/misc/code-access-security.md)

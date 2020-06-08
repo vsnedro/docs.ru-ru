@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - parallel programming, pitfalls
 ms.assetid: 1e357177-e699-4b8f-9e49-56d3513ed128
-ms.openlocfilehash: ff6ac9e8c41ee203ae72e1b28c088f462ddf6a54
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 00b4c89440223d229a06b0192032c9abcf931d58
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73140031"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291699"
 ---
 # <a name="potential-pitfalls-in-data-and-task-parallelism"></a>Потенциальные ошибки, связанные с параллелизмом данных и задач
 Во многих случаях <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> могут значительно повысить производительность по сравнению с обычным выполнением последовательных циклов. В то же время сложность процесса параллелизации может вызывать проблемы, которые в последовательном коде не встречаются или для него не типичны. В этом разделе перечислены некоторые рекомендации по написанию параллельных циклов.  
@@ -22,7 +22,7 @@ ms.locfileid: "73140031"
  В некоторых случаях параллельный цикл может выполняться медленнее, чем аналогичный последовательный. Первое правило состоит в том, что параллельные циклы с небольшим числом итераций и быстрыми пользовательскими делегатами, скорее всего, большого ускорения не дадут. Но в связи с тем, что на производительность влияет множество факторов, рекомендуем всегда оценивать фактические результаты.  
   
 ## <a name="avoid-writing-to-shared-memory-locations"></a>Избегайте размещения в общей памяти.  
- В последовательном коде для чтения и записи часто используются статические переменные и поля классов. Но всякий раз, когда к таким переменным обращаются сразу несколько потоков, может возникать состояние гонки. Несмотря на то что для синхронизации доступа к переменной можно использовать блокировки, связанные с нею затраты ресурсов могут снизить производительность. В связи с этим рекомендуем не использовать или хотя бы максимально ограничить обращение к общему состоянию в параллельном цикле. Для этого лучше всего использовать перегрузки <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>, которые используют переменную <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> для хранения локального состояния потока во время выполнения цикла. Дополнительные сведения см. в разделе [Практическое руководство. Написание цикла Parallel.For с локальными переменными потока](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) и [Практическое руководство. Написание цикла Parallel.ForEach c локальными переменными раздела](../../../docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md).  
+ В последовательном коде для чтения и записи часто используются статические переменные и поля классов. Но всякий раз, когда к таким переменным обращаются сразу несколько потоков, может возникать состояние гонки. Несмотря на то что для синхронизации доступа к переменной можно использовать блокировки, связанные с нею затраты ресурсов могут снизить производительность. В связи с этим рекомендуем не использовать или хотя бы максимально ограничить обращение к общему состоянию в параллельном цикле. Для этого лучше всего использовать перегрузки <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>, которые используют переменную <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> для хранения локального состояния потока во время выполнения цикла. Дополнительные сведения см. в разделе [Практическое руководство. Написание цикла Parallel.For с локальными переменными потока](how-to-write-a-parallel-for-loop-with-thread-local-variables.md) и [Практическое руководство. Написание цикла Parallel.ForEach c локальными переменными раздела](how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md).  
   
 ## <a name="avoid-over-parallelization"></a>Избегайте излишней параллелизации.  
  Использование параллельных циклов связано с чрезмерными затратами ресурсов на секционирование исходной коллекции и синхронизацию рабочих потоков. Преимущества параллелизации также ограничивает число процессоров на компьютере. Выполнение сразу нескольких потоков с большим количеством вычислений на одном и том же процессоре не повысит производительность. В связи с этим излишней параллелизации цикла следует избегать.  
@@ -80,6 +80,6 @@ ms.locfileid: "73140031"
   
 ## <a name="see-also"></a>См. также
 
-- [Параллельное программирование](../../../docs/standard/parallel-programming/index.md)
-- [Возможные ошибки, связанные с PLINQ](../../../docs/standard/parallel-programming/potential-pitfalls-with-plinq.md)
+- [Параллельное программирование](index.md)
+- [Возможные ошибки, связанные с PLINQ](potential-pitfalls-with-plinq.md)
 - [Шаблоны параллельного программирования. Описание и применение в .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=19222)

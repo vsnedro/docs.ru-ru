@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, how to create a dynamic partitioner
 ms.assetid: c875ad12-a161-43e6-ad1c-3d6927c536a7
-ms.openlocfilehash: 3970566b4e3f51ce538c328d4e69b20ec22ec09b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 197e71cf4f00c98891e58e5f72974c0ec407e6ce
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73091421"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288450"
 ---
 # <a name="how-to-implement-dynamic-partitions"></a>Практическое руководство. Реализация динамических разделов
 
@@ -30,5 +30,5 @@ ms.locfileid: "73091421"
   
 ## <a name="see-also"></a>См. также раздел
 
-* [Пользовательские разделители для PLINQ и TPL](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md)
-* [Практическое руководство. Реализация разделителя для статического секционирования](../../../docs/standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md)
+* [Пользовательские разделители для PLINQ и TPL](custom-partitioners-for-plinq-and-tpl.md)
+* [Практическое руководство. Реализация разделителя для статического секционирования](how-to-implement-a-partitioner-for-static-partitioning.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - reading data, strings
 - streams, reading characters from string
 ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
-ms.openlocfilehash: ed267ad62e46f6216c94906df1bcefb0684ab51b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6d32e9c5f89dba7590958bae6cc0489f104cd19a
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78155767"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291777"
 ---
 # <a name="how-to-read-characters-from-a-string"></a>Практическое руководство. Считывание символов из строки
 Следующий пример кода демонстрирует синхронное и асинхронное чтение символов из строки.  
@@ -39,11 +39,11 @@ ms.locfileid: "78155767"
 
 - <xref:System.IO.StringReader>  
 - <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
-- [Асинхронный файловый ввод-вывод](../../../docs/standard/io/asynchronous-file-i-o.md)  
+- [Асинхронный файловый ввод-вывод](asynchronous-file-i-o.md)  
 - [Практическое руководство. Создание списка каталогов](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))  
-- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [Практическое руководство. Открытие файла журнала и добавление в него данных](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [Практическое руководство. Чтение текста из файла](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [Практическое руководство. Запись текста в файл](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [Практическое руководство. Запись символов в строку](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
-- [Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)
+- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [Практическое руководство. Открытие файла журнала и добавление в него данных](how-to-open-and-append-to-a-log-file.md)  
+- [Практическое руководство. Чтение текста из файла](how-to-read-text-from-a-file.md)  
+- [Практическое руководство. Запись текста в файл](how-to-write-text-to-a-file.md)  
+- [Практическое руководство. Запись символов в строку](how-to-write-characters-to-a-string.md)  
+- [Файловый и потоковый ввод-вывод](index.md)

@@ -3,12 +3,12 @@ title: Создание новых узлов в модели DOM
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 6c2b9789-b61a-49f9-b33f-db01a945edf2
-ms.openlocfilehash: f48990286405baee347becef87d0511cd42e9e77
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: d99a3c68c7554ab266d71a4cbf2e676bc6db8cbc
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75711003"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289581"
 ---
 # <a name="create-new-nodes-in-the-dom"></a>Создание новых узлов в модели DOM
 К классе <xref:System.Xml.XmlDocument> доступен метод для создания всех типов узлов. Для создания узла методу нужно передать имя (если необходимо) и содержимое или другие параметры для узлов, имеющих содержимое (например, текстовый узел). Далее представлены методы, которым необходимо передать имя и некоторые другие параметры для создания нужного узла.  
@@ -37,7 +37,7 @@ ms.locfileid: "75711003"
   
  Для других типов узлов недостаточно просто задать данные параметров.  
   
- См. дополнительные сведения по [созданию атрибутов для элементов в модели DOM](../../../../docs/standard/data/xml/creating-new-attributes-for-elements-in-the-dom.md). См. дополнительные сведения о [проверке имен атрибутов и элементов XML при создании узлов](../../../../docs/standard/data/xml/xml-element-and-attribute-name-verification-when-creating-new-nodes.md). См. дополнительные сведения о [создании ссылок на сущности](../../../../docs/standard/data/xml/creating-new-entity-references.md). См. дополнительные сведения о [влиянии пространства имен на раскрытие ссылок на сущности для новых узлов, содержащих элементы и атрибуты](../../../../docs/standard/data/xml/namespace-affect-on-entity-ref-expansion-for-new-nodes.md).  
+ См. дополнительные сведения по [созданию атрибутов для элементов в модели DOM](creating-new-attributes-for-elements-in-the-dom.md). См. дополнительные сведения о [проверке имен атрибутов и элементов XML при создании узлов](xml-element-and-attribute-name-verification-when-creating-new-nodes.md). См. дополнительные сведения о [создании ссылок на сущности](creating-new-entity-references.md). См. дополнительные сведения о [влиянии пространства имен на раскрытие ссылок на сущности для новых узлов, содержащих элементы и атрибуты](namespace-affect-on-entity-ref-expansion-for-new-nodes.md).  
   
  После создания новых узлов становятся доступны несколько методов для вставки узлов в дерево. В таблице перечислены методы и описано место появления нового узла в модели XML DOM.  
   
@@ -51,4 +51,4 @@ ms.locfileid: "75711003"
   
 ## <a name="see-also"></a>См. также
 
-- [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [Модель объектов документов XML (DOM)](xml-document-object-model-dom.md)

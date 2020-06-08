@@ -7,18 +7,18 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
-ms.openlocfilehash: d9a18876d8a5ba3067aa35c617b1e20fce0411f5
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: f6c2829d45db147c81592c00710f04168b40679e
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710782"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287705"
 ---
 # <a name="including-or-importing-xml-schemas"></a>Включение или импорт XML-схем
 Схема XML может содержать элементы `<xs:import />`, `<xs:include />` и `<xs:redefine />`. Эти элементы схемы ссылаются на другие схемы XML, которые можно использовать в дополнение к структуре схемы, их включающей или импортирующей. Классы <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> и <xref:System.Xml.Schema.XmlSchemaRedefine> сопоставляются с этими элементами в API модели SOM.  
   
 ## <a name="including-or-importing-an-xml-schema"></a>Включение или импорт схемы XML  
- В следующем примере кода [пользовательская схема XML](../../../../docs/standard/data/xml/building-xml-schemas.md) дополняется схемой адресов. Добавление к пользовательской схеме схемы адресов делает типы адресов доступными в пользовательской схеме.  
+ В следующем примере кода [пользовательская схема XML](building-xml-schemas.md) дополняется схемой адресов. Добавление к пользовательской схеме схемы адресов делает типы адресов доступными в пользовательской схеме.  
   
  Схему адресов можно добавить с помощью элементов `<xs:include />` или `<xs:import />`, использующих компоненты схемы адресов без изменения, или с помощью элемента `<xs:redefine />`, который изменяет компоненты схемы в соответствии с задачами пользовательской схемы. Поскольку схема адресов имеет пространство имен `targetNamespace`, которое отличается от пользовательской схемы, используется элемент `<xs:import />` и семантика импорта.  
   
@@ -99,9 +99,9 @@ ms.locfileid: "75710782"
   
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения об модели объектов XML-схемы](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
-- [Чтение и запись XML-схем](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Построение XML-схем](../../../../docs/standard/data/xml/building-xml-schemas.md)
-- [Обход XML-схем](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
-- [Изменение XML-схем](../../../../docs/standard/data/xml/editing-xml-schemas.md)
-- [XmlSchemaSet для компиляции схемы](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
+- [Общие сведения об модели объектов XML-схемы](xml-schema-object-model-overview.md)
+- [Чтение и запись XML-схем](reading-and-writing-xml-schemas.md)
+- [Построение XML-схем](building-xml-schemas.md)
+- [Обход XML-схем](traversing-xml-schemas.md)
+- [Изменение XML-схем](editing-xml-schemas.md)
+- [XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md)

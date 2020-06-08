@@ -6,18 +6,18 @@ helpviewer_keywords:
 - observer design pattern [.NET Framework], best practices
 - best practices [.NET Framework], observer design pattern
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
-ms.openlocfilehash: 2da29e0baf429142707d0ddd39b1a11c13a17a90
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b4f8e568dcb6790dac1dc8fc5c969d6fa1367c4e
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73141542"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288463"
 ---
 # <a name="observer-design-pattern-best-practices"></a>Рекомендации по шаблону разработки Observer
 На платформе .NET Framework шаблон разработки наблюдателя реализован в виде набора интерфейсов. Интерфейс <xref:System.IObservable%601?displayProperty=nameWithType> представляет поставщик данных, который также отвечает за предоставление реализации <xref:System.IDisposable>, позволяющей наблюдателям отменять подписку на уведомления. Интерфейс <xref:System.IObserver%601?displayProperty=nameWithType> представляет наблюдателя. В этом разделе содержатся рекомендации, которым должны следовать разработчики при реализации шаблона разработки наблюдателя с помощью этих интерфейсов.  
   
 ## <a name="threading"></a>Потоки  
- Как правило, поставщик реализует метод <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> путем добавления определенного наблюдателя в список подписчиков, представленный неким объектом коллекции, и он реализует метод <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> путем удаления определенного наблюдателя из списка подписчиков. Наблюдатель может вызвать эти методы в любое время. Кроме того, поскольку в контракте поставщика и наблюдателя не указано, кто несет ответственность за отмену подписки после реализации метода обратного вызова <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType>, попытаться удалить тот же самый элемент из списка может как поставщик, так и наблюдатель. В связи с этим методы <xref:System.IObservable%601.Subscribe%2A> и <xref:System.IDisposable.Dispose%2A> должны быть потокобезопасными. Как правило, в этом случае предполагается использование [параллельной коллекции](../../../docs/standard/parallel-programming/data-structures-for-parallel-programming.md) или блокировки. Реализации, которые не являются потокобезопасными, должны явным образом сообщать об этом.  
+ Как правило, поставщик реализует метод <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> путем добавления определенного наблюдателя в список подписчиков, представленный неким объектом коллекции, и он реализует метод <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> путем удаления определенного наблюдателя из списка подписчиков. Наблюдатель может вызвать эти методы в любое время. Кроме того, поскольку в контракте поставщика и наблюдателя не указано, кто несет ответственность за отмену подписки после реализации метода обратного вызова <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType>, попытаться удалить тот же самый элемент из списка может как поставщик, так и наблюдатель. В связи с этим методы <xref:System.IObservable%601.Subscribe%2A> и <xref:System.IDisposable.Dispose%2A> должны быть потокобезопасными. Как правило, в этом случае предполагается использование [параллельной коллекции](../parallel-programming/data-structures-for-parallel-programming.md) или блокировки. Реализации, которые не являются потокобезопасными, должны явным образом сообщать об этом.  
   
  Любые дополнительные гарантии должны быть указаны на уровне выше контракта поставщика и наблюдателя. Чтобы избежать недоразумений, связанных с контрактом наблюдателя, разработчики должны четко сообщать о введении дополнительных требований.  
   
@@ -53,6 +53,6 @@ ms.locfileid: "73141542"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Шаблон разработки наблюдателя](../../../docs/standard/events/observer-design-pattern.md)
-- [Практическое руководство. Реализация объекта Observer](../../../docs/standard/events/how-to-implement-an-observer.md)
-- [Практическое руководство. Реализация поставщика](../../../docs/standard/events/how-to-implement-a-provider.md)
+- [Шаблон разработки наблюдателя](observer-design-pattern.md)
+- [Практическое руководство. Реализация объекта Observer](how-to-implement-an-observer.md)
+- [Практическое руководство. Реализация поставщика](how-to-implement-a-provider.md)

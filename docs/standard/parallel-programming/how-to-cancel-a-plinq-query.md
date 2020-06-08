@@ -9,12 +9,12 @@ helpviewer_keywords:
 - PLINQ queries, how to cancel
 - cancellation, PLINQ
 ms.assetid: 80b14640-edfa-4153-be1b-3e003d3e9c1a
-ms.openlocfilehash: 312c71b787ac7b4aa092f1517d2ed5af314a22e4
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: 09405a8a9f5d96d80454bcc98cbf29db54df6725
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635882"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288216"
 ---
 # <a name="how-to-cancel-a-plinq-query"></a>Практическое руководство. Отмена запроса PLINQ
 В приведенных ниже примерах показаны два способа отмены запроса PLINQ. В первом примере отменяется запрос, который состоит в основном из обхода данных. Во втором примере отменяется запрос, который содержит ресурсоемкую функцию.
@@ -22,7 +22,7 @@ ms.locfileid: "80635882"
 > [!NOTE]
 > Если включен режим "Только мой код", Visual Studio прерывает выполнение программы на той строке, в которой создается исключение, и выводит сообщение об ошибке "Exception not handled by user code" (Исключение, не обработанное пользовательским кодом). Эта ошибка не является критической. Вы можете нажать клавишу F5, чтобы продолжить выполнение программы и увидеть поведение системы при обработке этого исключения, которое продемонстрировано в примерах ниже. Чтобы выполнение программы не прерывалось после первой ошибки в Visual Studio, снимите флажок "Только мой код" в меню **Сервис > Параметры > Отладка > Общие**.
 >
-> Этот пример предназначен для демонстрации использования и может выполняться не быстрее аналогичного последовательного запроса LINQ to Objects. См. дополнительные сведения об [ускорении выполнения в PLINQ](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md).
+> Этот пример предназначен для демонстрации использования и может выполняться не быстрее аналогичного последовательного запроса LINQ to Objects. См. дополнительные сведения об [ускорении выполнения в PLINQ](understanding-speedup-in-plinq.md).
 
 ## <a name="example"></a>Пример
 
@@ -53,5 +53,5 @@ ms.locfileid: "80635882"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Linq.ParallelEnumerable>
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
-- [Отмена в управляемых потоках](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)
+- [Отмена в управляемых потоках](../threading/cancellation-in-managed-threads.md)

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - Implicit operator
 - data types [.NET Framework], converting
 ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
-ms.openlocfilehash: 0e88303f2bac2dae90a97f9d2de92af1d2a0f80d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 33b8c49033c901917e674879048558799f484194
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73976492"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291660"
 ---
 # <a name="type-conversion-in-the-net-framework"></a>Преобразование типов в .NET Framework
 Каждое значение имеет соответствующий тип, который определяет атрибуты, такие как объем памяти, выделяемой значению, диапазон возможных значений и доступные элементы. Многие значения можно выразить несколькими типами. Например, число 4 можно выразить как целое число или как число с плавающей запятой. Преобразование типа создает значение нового типа, эквивалентное значению старого типа, но при этом не обязательно сохраняется идентичность (или точные значения) первоначального объекта.  
@@ -157,7 +157,7 @@ ms.locfileid: "73976492"
  [!code-csharp[Conceptual.Conversion#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs/convert1.cs#9)]
  [!code-vb[Conceptual.Conversion#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb/convert1.vb#9)]  
   
- См. дополнительные сведения о [таблице, в которой перечислены расширяющие и сужающие преобразования](../../../docs/standard/base-types/conversion-tables.md), поддерживаемые классом <xref:System.Convert>.  
+ См. дополнительные сведения о [таблице, в которой перечислены расширяющие и сужающие преобразования](conversion-tables.md), поддерживаемые классом <xref:System.Convert>.  
 
 ### <a name="custom-conversions-with-the-changetype-method"></a>Настраиваемые преобразования с использованием метода ChangeType  
  В дополнение к поддержке преобразований в каждый из базовых типов класс <xref:System.Convert> может использоваться для преобразования настраиваемых типов в один или несколько предопределенных типов. Это преобразование выполняется с помощью метода <xref:System.Convert.ChangeType%28System.Object%2CSystem.Type%2CSystem.IFormatProvider%29?displayProperty=nameWithType>, который, в свою очередь, служит оболочкой вызова метода <xref:System.IConvertible.ToType%2A?displayProperty=nameWithType> параметра `value`. Это означает, что объект, представленный параметром `value`, должен предоставить реализацию интерфейса <xref:System.IConvertible>.  
@@ -194,4 +194,4 @@ ms.locfileid: "73976492"
 
 - <xref:System.Convert?displayProperty=nameWithType>
 - <xref:System.IConvertible>
-- [Таблицы преобразования типов](../../../docs/standard/base-types/conversion-tables.md)
+- [Таблицы преобразования типов](conversion-tables.md)

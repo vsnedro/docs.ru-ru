@@ -16,12 +16,12 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: 792aa8da-918b-458e-b154-9836b97735f3
-ms.openlocfilehash: cce01a7c87f6f20b5e6c46881b8c863bb5a72a88
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f4aac5afbb13cafa7bb0e9c1eb6bbd92ac41bf8c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78160072"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289425"
 ---
 # <a name="event-based-asynchronous-pattern-overview"></a>Обзор асинхронной модели, основанной на событиях
 Приложениям, выполняющим множество задач одновременно и при этом активно реагирующим на действия пользователя, часто требуется структура, использующая несколько потоков. Пространство имен <xref:System.Threading> предоставляет все необходимые средства для создания высокопроизводительных многопоточных приложений, однако для эффективного использования этих средств требуется значительный опыт в области многопоточной программной инженерии. Для относительно простых многопоточных приложений компонент <xref:System.ComponentModel.BackgroundWorker> предоставляет прямолинейное решение. Для более сложных асинхронных приложений рекомендуется реализовать класс, который соответствует асинхронной модели на основе событий.  
@@ -34,7 +34,7 @@ ms.locfileid: "78160072"
   
 - ожидать освобождения ресурсов без остановки ("блокирования") приложения;  
   
-- взаимодействовать с ожидающими асинхронными операциями с использованием привычной модели событий и делегатов. Дополнительные сведения об использовании обработчиков событий и делегатов см. в статье [События](../../../docs/standard/events/index.md).  
+- взаимодействовать с ожидающими асинхронными операциями с использованием привычной модели событий и делегатов. Дополнительные сведения об использовании обработчиков событий и делегатов см. в статье [События](../events/index.md).  
   
  Класс, который поддерживает асинхронную модель на основе событий, будет иметь один или несколько методов с именем _MethodName_**Async**. Эти методы могут копировать синхронные версии, выполняющие ту же операцию в текущем потоке. Этот класс может содержать событие _MethodName_**Completed**, а также метод _MethodName_**AsyncCancel** (или просто **CancelAsync**).  
   
@@ -45,7 +45,7 @@ ms.locfileid: "78160072"
  Асинхронная модель на основе событий требует наличия возможности отмены асинхронной операции, и элемент управления <xref:System.Windows.Forms.PictureBox> позволяет выполнить это требование с помощью метода <xref:System.Windows.Forms.PictureBox.CancelAsync%2A>. При вызове <xref:System.Windows.Forms.PictureBox.CancelAsync%2A> отправляется запрос на остановку ожидающей загрузки, а после отмены задачи возникает событие <xref:System.Windows.Forms.PictureBox.LoadCompleted>.  
   
 > [!CAUTION]
-> Загрузка может закончиться одновременно с получением запроса <xref:System.Windows.Forms.PictureBox.CancelAsync%2A>, поэтому <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> может не отражать отмену запроса. Это называется *состоянием гонки* и является распространенной проблемой в многопоточном программировании. Дополнительные сведения о проблемах многопоточного программирования см. в разделе [Рекомендации по работе с потоками](../../../docs/standard/threading/managed-threading-best-practices.md).  
+> Загрузка может закончиться одновременно с получением запроса <xref:System.Windows.Forms.PictureBox.CancelAsync%2A>, поэтому <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> может не отражать отмену запроса. Это называется *состоянием гонки* и является распространенной проблемой в многопоточном программировании. Дополнительные сведения о проблемах многопоточного программирования см. в разделе [Рекомендации по работе с потоками](../threading/managed-threading-best-practices.md).  
   
 ## <a name="characteristics-of-the-event-based-asynchronous-pattern"></a>Характеристики асинхронной модели на основе событий  
  Асинхронная модель на основе событий может принимать разную форму в зависимости от операций, поддерживаемых определенным классом. Простейшие классы могут иметь один метод _MethodName_**Async** и одно соответствующее ему событие _MethodName_**Completed**. Более сложные классы будут содержать несколько методов _MethodName_**Async** с соответствующими событиями _MethodName_**Completed**, а также синхронные версии этих методов. Классы также могут поддерживать отмену, составление отчетов о ходе работы и добавочные результаты для каждого асинхронного метода.  
@@ -136,9 +136,9 @@ public class AsyncExample
 - <xref:System.ComponentModel.ProgressChangedEventArgs>
 - <xref:System.ComponentModel.BackgroundWorker>
 - <xref:System.ComponentModel.AsyncCompletedEventArgs>
-- [Практическое руководство. Использование компонентов, поддерживающих асинхронную модель, основанную на событиях](../../../docs/standard/asynchronous-programming-patterns/how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)
-- [Практическое руководство. Фоновое выполнение операции](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [Практическое руководство. Реализация формы, в которой выполняется фоновая операция](../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
-- [Асинхронная модель на основе событий (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
-- [Рекомендации по реализации асинхронной модели, основанной на событиях](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
-- [Определение, когда следует реализовать асинхронную модель, основанную на событиях](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
+- [Практическое руководство. Использование компонентов, поддерживающих асинхронную модель, основанную на событиях](how-to-use-components-that-support-the-event-based-asynchronous-pattern.md)
+- [Практическое руководство. Фоновое выполнение операции](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [Практическое руководство. Реализация формы, в которой выполняется фоновая операция](../../framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md)
+- [Рекомендации по реализации асинхронной модели, основанной на событиях](best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
+- [Определение, когда следует реализовать асинхронную модель, основанную на событиях](deciding-when-to-implement-the-event-based-asynchronous-pattern.md)

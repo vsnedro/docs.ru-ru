@@ -10,19 +10,19 @@ helpviewer_keywords:
 - for loop, parallel construction in .NET
 - parallel for loops, how to use
 ms.assetid: 9029ba7f-a9d1-4526-8c84-c88716dba5d4
-ms.openlocfilehash: 78f07a4f0118c6bce7a043f111988281ddd6add0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b18e110b86389dd5d28bbc370e207aaaf7571aaf
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73139667"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290737"
 ---
 # <a name="how-to-write-a-simple-parallelfor-loop"></a>Практическое руководство. Написание простого цикла Parallel.For
 
 Этот раздел содержит два примера, иллюстрирующих использование метода <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType>. Первый использует перегрузку метода <xref:System.Threading.Tasks.Parallel.For%28System.Int64%2CSystem.Int64%2CSystem.Action%7BSystem.Int64%7D%29?displayProperty=nameWithType>, а второй — перегрузку <xref:System.Threading.Tasks.Parallel.For%28System.Int32%2CSystem.Int32%2CSystem.Action%7BSystem.Int32%7D%29?displayProperty=nameWithType>, которые являются двумя простейшими перегрузками метода <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType>. Эти две перегрузки метода <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> можно использовать, когда не требуется отменять цикл, прерывать итерации цикла или сохранять локальное состояние по отношению к потоку.
 
 > [!NOTE]
-> В этой документации для определения делегатов в библиотеке параллельных задач используются лямбда-выражения. Если вы не знакомы с лямбда-выражениями в C# или Visual Basic, см. раздел [Лямбда-выражения в PLINQ и TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).
+> В этой документации для определения делегатов в библиотеке параллельных задач используются лямбда-выражения. Если вы не знакомы с лямбда-выражениями в C# или Visual Basic, см. раздел [Лямбда-выражения в PLINQ и TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 Первый пример вычисляет размер файлов в одном каталоге. Второй — вычисляет произведение двух матриц.
 
@@ -44,7 +44,7 @@ ms.locfileid: "73139667"
 
 ## <a name="the-delegate"></a>Делегат
 
-Третий параметр этой перегрузки <xref:System.Threading.Tasks.Parallel.For%2A> — делегат типа `Action<int>` в C# или `Action(Of Integer)` в Visual Basic. Делегат `Action` всегда возвращает значение void независимо от того, сколько параметров типа он имеет. В Visual Basic поведение `Action` определяется `Sub`. Пример использует для создания делегата лямбда-выражение, но этот делегат можно создать и другими способами. См. дополнительные сведения см. в руководстве по [лямбда-выражениям в PLINQ и TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).
+Третий параметр этой перегрузки <xref:System.Threading.Tasks.Parallel.For%2A> — делегат типа `Action<int>` в C# или `Action(Of Integer)` в Visual Basic. Делегат `Action` всегда возвращает значение void независимо от того, сколько параметров типа он имеет. В Visual Basic поведение `Action` определяется `Sub`. Пример использует для создания делегата лямбда-выражение, но этот делегат можно создать и другими способами. См. дополнительные сведения см. в руководстве по [лямбда-выражениям в PLINQ и TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 ## <a name="the-iteration-value"></a>Значение итерации
 
@@ -72,5 +72,5 @@ ms.locfileid: "73139667"
 
 - <xref:System.Threading.Tasks.Parallel.For%2A>
 - <xref:System.Threading.Tasks.Parallel.ForEach%2A>
-- [Параллелизм данных](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Параллельное программирование](../../../docs/standard/parallel-programming/index.md)
+- [Параллелизм данных](data-parallelism-task-parallel-library.md)
+- [Параллельное программирование](index.md)

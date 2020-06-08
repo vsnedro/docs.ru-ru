@@ -11,18 +11,18 @@ helpviewer_keywords:
 - stopping asynchronous operations
 - asynchronous programming, beginning operations
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
-ms.openlocfilehash: 0a9ea3c8c9c589bb5954fa9771ffd1bb095f6d73
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 96ad18e613d68ee97f4e5666afe77febadc6f991
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73140140"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289984"
 ---
 # <a name="asynchronous-programming-model-apm"></a>Асинхронная модель программирования (APM)
 Асинхронная операция, использующая шаблон разработки <xref:System.IAsyncResult>, реализуется в виде двух методов с именами `BeginOperationName` и `EndOperationName`, которые соответственно начинают и завершают асинхронную операцию *OperationName*. Например, класс <xref:System.IO.FileStream> предоставляет методы <xref:System.IO.FileStream.BeginRead%2A> и <xref:System.IO.FileStream.EndRead%2A> для асинхронного считывания байтов из файла. Эти методы реализуют асинхронную версию метода <xref:System.IO.FileStream.Read%2A> .  
   
 > [!NOTE]
-> Начиная с версии .NET Framework 4 библиотека параллельных задач предоставляет новую модель для асинхронного и параллельного программирования. Дополнительные сведения см. в разделах [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md) и [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).)  
+> Начиная с версии .NET Framework 4 библиотека параллельных задач предоставляет новую модель для асинхронного и параллельного программирования. Дополнительные сведения см. в разделах [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md) и [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md).)  
   
  После вызова метода `BeginOperationName` приложение может продолжить выполнение инструкций в вызывающем потоке, пока асинхронная операция выполняется в другом потоке. Для каждого вызова метода `BeginOperationName` приложение должно вызывать метод `EndOperationName`, получающий результаты операции.  
   
@@ -53,18 +53,18 @@ ms.locfileid: "73140140"
   
  Разработчики приложений имеют выбор способов доступа к результатам асинхронной операции. Правильный выбор зависит от того, содержит ли приложение инструкции, которые могут выполняться, пока не завершена операция. Если приложение не может выполнять дополнительную работу, пока не получены результаты асинхронной операции, его необходимо заблокировать до момента, когда станут доступны результаты. Чтобы заблокировать работу до завершения асинхронной операции, используйте один из описанных ниже способов.  
   
-- Вызов метода `EndOperationName` из главного потока приложения блокирует выполнение приложения до завершения операции. Пример с демонстрацией этого способа см. в статье [Блокировка выполнения приложения путем завершения асинхронной операции](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md).  
+- Вызов метода `EndOperationName` из главного потока приложения блокирует выполнение приложения до завершения операции. Пример с демонстрацией этого способа см. в статье [Блокировка выполнения приложения путем завершения асинхронной операции](blocking-application-execution-by-ending-an-async-operation.md).  
   
-- Используйте свойство <xref:System.IAsyncResult.AsyncWaitHandle%2A> , чтобы заблокировать выполнение приложения до завершения одной или нескольких операций. Пример, демонстрирующий этот способ, см. в разделе [Блокировка выполнения приложения с помощью AsyncWaitHandle](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md).  
+- Используйте свойство <xref:System.IAsyncResult.AsyncWaitHandle%2A> , чтобы заблокировать выполнение приложения до завершения одной или нескольких операций. Пример, демонстрирующий этот способ, см. в разделе [Блокировка выполнения приложения с помощью AsyncWaitHandle](blocking-application-execution-using-an-asyncwaithandle.md).  
   
  В приложениях, которые не нужно блокировать до завершения асинхронной операции, можно использовать один из описанных ниже способов.  
   
-- Можно запрашивать состояние выполнения операции, периодически проверяя свойство <xref:System.IAsyncResult.IsCompleted%2A>, а когда операция будет завершена, вызвать метод `EndOperationName`. Пример, демонстрирующий этот способ, см. в разделе [Запрос состояния асинхронной операции](../../../docs/standard/asynchronous-programming-patterns/polling-for-the-status-of-an-asynchronous-operation.md).  
+- Можно запрашивать состояние выполнения операции, периодически проверяя свойство <xref:System.IAsyncResult.IsCompleted%2A>, а когда операция будет завершена, вызвать метод `EndOperationName`. Пример, демонстрирующий этот способ, см. в разделе [Запрос состояния асинхронной операции](polling-for-the-status-of-an-asynchronous-operation.md).  
   
-- Используйте делегат <xref:System.AsyncCallback> для указания метода, который должен вызываться при завершении операции. Пример, демонстрирующий этот способ, см. в разделе [Использование делегата AsyncCallback для завершения асинхронной операции](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
+- Используйте делегат <xref:System.AsyncCallback> для указания метода, который должен вызываться при завершении операции. Пример, демонстрирующий этот способ, см. в разделе [Использование делегата AsyncCallback для завершения асинхронной операции](using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Асинхронная модель на основе событий (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
-- [Асинхронный вызов синхронных методов](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)
-- [Использование делегата AsyncCallback и объекта состояния](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md)
+- [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md)
+- [Асинхронный вызов синхронных методов](calling-synchronous-methods-asynchronously.md)
+- [Использование делегата AsyncCallback и объекта состояния](using-an-asynccallback-delegate-and-state-object.md)

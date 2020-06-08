@@ -6,12 +6,12 @@ helpviewer_keywords:
 - /warnaserror compiler option [Visual Basic]
 - -warnaserror compiler option [Visual Basic]
 ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
-ms.openlocfilehash: f9ca5575e2a042d68fc490494f2e86991d58b80c
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 94a8b43a891df9837925869e17fac4536a995264
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351710"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414276"
 ---
 # <a name="-warnaserror-visual-basic"></a>-warnaserror (Visual Basic)
 Приводит к тому, что компилятор обрабатывает первое появление предупреждения как ошибку.  
@@ -37,7 +37,7 @@ ms.locfileid: "74351710"
  Если требуется обрабатывать как ошибки только конкретные предупреждения, укажите их номера через запятую.  
   
 > [!NOTE]
-> Параметр `-warnaserror` не управляет способом отображения предупреждений. Используйте параметр [-nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md), чтобы отключить предупреждения.  
+> Параметр `-warnaserror` не управляет способом отображения предупреждений. Используйте параметр [-nowarn](nowarn.md), чтобы отключить предупреждения.  
   
 |Настройка параметра -warnaserror для обработки всех предупреждений как ошибок в интегрированной среде разработки Visual Studio|  
 |---|  
@@ -63,6 +63,6 @@ vbc -warnaserror:42024 t2.vb
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
 - [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic)

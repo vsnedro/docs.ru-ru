@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
-ms.openlocfilehash: 58407d5f0c6e602af15f5b19b9a19cc6379b9af7
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: d38aea1a54c93b00ec14c6aac7ed11ceba288f7b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710288"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291504"
 ---
 # <a name="resolving-external-resources-during-xslt-processing"></a>Разрешение внешних ресурсов в ходе обработки XSLT
 Во время XSLT-преобразования может понадобиться несколько раз разрешать внешние ресурсы.  
@@ -46,4 +46,4 @@ ms.locfileid: "75710288"
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - <xref:System.Xml.Xsl.XsltSettings>
-- [Преобразования XSLT](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [Преобразования XSLT](xslt-transformations.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - namespaces [.NET Framework], types
 - types, about types
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
-ms.openlocfilehash: f079613f790121c000a312132e7135121ca721a6
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: a1aa244d470402823fc22e12cb5e32bbbdcd87fe
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635899"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289347"
 ---
 # <a name="common-type-system"></a>Система общих типов CTS
 
@@ -267,7 +267,7 @@ ms.locfileid: "80635899"
 
 ### <a name="events"></a>События
 
- Событие определяет происшествие, на которое можно реагировать, а также методы подписки, отказа от подписки или порождения события. События часто используются для оповещения других типов об изменениях состояния. Дополнительные сведения см. в статье [Events (Visual Basic)](../../../docs/standard/events/index.md) (События в Visual Basic).  
+ Событие определяет происшествие, на которое можно реагировать, а также методы подписки, отказа от подписки или порождения события. События часто используются для оповещения других типов об изменениях состояния. Дополнительные сведения см. в статье [Events (Visual Basic)](../events/index.md) (События в Visual Basic).  
 
 ### <a name="nested-types"></a>Вложенные типы
 
@@ -307,5 +307,5 @@ ms.locfileid: "80635899"
 ## <a name="see-also"></a>См. также
 
 - [Браузер API .NET](/dotnet/api)
-- [Общеязыковая среда выполнения](../../../docs/standard/clr.md)
-- [Преобразование типов в .NET](../../../docs/standard/base-types/type-conversion.md)
+- [Общеязыковая среда выполнения](../clr.md)
+- [Преобразование типов в .NET](type-conversion.md)

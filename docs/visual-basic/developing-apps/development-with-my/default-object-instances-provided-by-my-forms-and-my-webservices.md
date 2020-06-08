@@ -7,16 +7,16 @@ helpviewer_keywords:
 - rapid application development (RAD), My.Forms
 - rapid application development (RAD), My.WebServices
 ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79
-ms.openlocfilehash: d06df4bd023892429b2aaefdd624398a6546d06d
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 847724450ee2bc8bc591371f71171e8ba4ed9337
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74330204"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84411744"
 ---
 # <a name="default-object-instances-provided-by-myforms-and-mywebservices-visual-basic"></a>Экземпляры объектов, которые My.Forms и My.WebServices предоставляют по умолчанию (Visual Basic)
 
-Объекты [My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.md) и [My.WebServices](../../../visual-basic/language-reference/objects/my-webservices-object.md) предоставляют доступ к формам, источникам данных и веб-службам XML, используемым вашим приложением. Для этого они предоставляют коллекций *экземпляров по умолчанию* каждого из этих объектов.  
+Объекты [My.Forms](../../language-reference/objects/my-forms-object.md) и [My.WebServices](../../language-reference/objects/my-webservices-object.md) предоставляют доступ к формам, источникам данных и веб-службам XML, используемым вашим приложением. Для этого они предоставляют коллекций *экземпляров по умолчанию* каждого из этих объектов.  
   
 ## <a name="default-instances"></a>Экземпляры по умолчанию  
 
@@ -30,6 +30,6 @@ ms.locfileid: "74330204"
   
 ## <a name="see-also"></a>См. также
 
-- [Объект My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.md)
-- [Объект My.WebServices](../../../visual-basic/language-reference/objects/my-webservices-object.md)
-- [Зависимость My от типа проекта](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+- [Объект My.Forms](../../language-reference/objects/my-forms-object.md)
+- [Объект My.WebServices](../../language-reference/objects/my-webservices-object.md)
+- [Зависимость My от типа проекта](how-my-depends-on-project-type.md)

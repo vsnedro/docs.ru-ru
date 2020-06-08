@@ -3,12 +3,12 @@ title: Поддержка типов в классах System.Xml
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 63570538-06e3-4401-ad4d-ac50be90c7bf
-ms.openlocfilehash: cec47d40a0353639bc17b880265f7c15f2f53ac4
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 8ceda15cb8463db3e81260529ebb1e3a67a0c1af
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710106"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84283303"
 ---
 # <a name="type-support-in-the-systemxml-classes"></a>Поддержка типов в классах System.Xml
 На платформе .NET Framework версии 2.0 основные классы XML были улучшены, чтобы включить функции поддержки типов. Классы <xref:System.Xml.XmlReader>, <xref:System.Xml.XmlWriter> и <xref:System.Xml.XPath.XPathNavigator> включают возможности поддержки типов, включая возможность преобразования между собой типов схемы XML и типов CLR.  
@@ -27,14 +27,14 @@ ms.locfileid: "75710106"
 > На платформе .NET Framework версии 1.0 класс <xref:System.Xml.XmlConvert> был нужен для взаимного преобразования типов схемы XML и типов CLR.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Сопоставление типов XML-данных с типами CLR](../../../../docs/standard/data/xml/mapping-xml-data-types-to-clr-types.md)  
+ [Сопоставление типов XML-данных с типами CLR](mapping-xml-data-types-to-clr-types.md)  
  Описывает сопоставления типов данных XML и типов CLR по умолчанию.  
   
- [Примечания по реализации поддержки типов XML](../../../../docs/standard/data/xml/xml-type-support-implementation-notes.md)  
+ [Примечания по реализации поддержки типов XML](xml-type-support-implementation-notes.md)  
  Обсуждаются некоторые детали реализации поддержки типов.  
   
- [Преобразование типов XML-данных](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)  
+ [Преобразование типов XML-данных](conversion-of-xml-data-types.md)  
  Описывает использование класса <xref:System.Xml.XmlConvert> для взаимного преобразования типов схемы XML и типов CLR.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Доступ к XML-данным со строгой типизацией с помощью XPathNavigator](../../../../docs/standard/data/xml/accessing-strongly-typed-xml-data-using-xpathnavigator.md)
+ [Доступ к XML-данным со строгой типизацией с помощью XPathNavigator](accessing-strongly-typed-xml-data-using-xpathnavigator.md)

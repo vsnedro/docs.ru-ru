@@ -10,15 +10,15 @@ helpviewer_keywords:
 - providers [.NET Framework], in observer design pattern
 - observables [.NET Framework], in observer design pattern
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
-ms.openlocfilehash: f5bb3cda0caa39ba3fd094b80e0b769a4bfc1f85
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f8a213c0df3ef3c633106b7249a4947fe77c0d2
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73141551"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84280027"
 ---
 # <a name="how-to-implement-a-provider"></a>Практическое руководство. Реализация поставщика
-Шаблон разработки наблюдателя подразумевает разделение ролей поставщика, который отслеживает данные и отправляет уведомления, и одного или нескольких наблюдателей, которые получают от поставщика уведомления (обратные вызовы). В этой статье описан процесс создания поставщика. Создание наблюдателя рассматривается в схожей статье [Практическое руководство. Реализация объекта Observer](../../../docs/standard/events/how-to-implement-an-observer.md).  
+Шаблон разработки наблюдателя подразумевает разделение ролей поставщика, который отслеживает данные и отправляет уведомления, и одного или нескольких наблюдателей, которые получают от поставщика уведомления (обратные вызовы). В этой статье описан процесс создания поставщика. Создание наблюдателя рассматривается в схожей статье [Практическое руководство. Реализация объекта Observer](how-to-implement-an-observer.md).  
   
 ### <a name="to-create-a-provider"></a>Создание поставщика  
   
@@ -61,6 +61,6 @@ ms.locfileid: "73141551"
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IObservable%601>
-- [Шаблон разработки наблюдателя](../../../docs/standard/events/observer-design-pattern.md)
-- [Практическое руководство. Реализация объекта Observer](../../../docs/standard/events/how-to-implement-an-observer.md)
-- [Рекомендации по шаблону разработки Observer](../../../docs/standard/events/observer-design-pattern-best-practices.md)
+- [Шаблон разработки наблюдателя](observer-design-pattern.md)
+- [Практическое руководство. Реализация объекта Observer](how-to-implement-an-observer.md)
+- [Рекомендации по шаблону разработки Observer](observer-design-pattern-best-practices.md)

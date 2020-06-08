@@ -11,12 +11,12 @@ helpviewer_keywords:
 - serialization, cross-framework
 ms.assetid: 2b1ea3be-1152-4032-b2b3-07794054c405
 author: ViktorHofer
-ms.openlocfilehash: 4ed76437b743da842d6ba07d29fe7985f824abf0
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: c735d30920fd3c8cd13243b4a5a29489ce05b262
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421284"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84289698"
 ---
 # <a name="binary-serialization"></a>Двоичная сериализация
 
@@ -344,10 +344,10 @@ ms.locfileid: "83421284"
 - <xref:System.Runtime.Serialization>\
 Содержит классы, которые можно использовать для сериализации и десериализации объектов.
 
-- [Сериализация XML и SOAP](../../../docs/standard/serialization/xml-and-soap-serialization.md)\
+- [Сериализация XML и SOAP](xml-and-soap-serialization.md)\
 Описывает механизм XML-сериализации , входящий в среду CLR.
 
-- [Безопасность и сериализация](../../../docs/framework/misc/security-and-serialization.md)\
+- [Безопасность и сериализация](../../framework/misc/security-and-serialization.md)\
 Содержит рекомендации по написанию безопасного кода, выполняющего сериализацию.
 
 - [Удаленное взаимодействие .NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\

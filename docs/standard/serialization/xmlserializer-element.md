@@ -7,12 +7,12 @@ helpviewer_keywords:
 - XML serialization, configuration
 - xmlSerializer element
 ms.assetid: d129d10c-3eb7-45d9-8098-5fa853825e47
-ms.openlocfilehash: 68037959893ec307a896ea86d21e40a9d7aa824c
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 667d59f7eb0d1c7682afcdda584cc5b0ca2da802
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83380021"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84288931"
 ---
 # <a name="xmlserializer-element"></a>Элемент \<xmlSerializer>
 Указывает, выполнена ли дополнительная проверка хода выполнения <xref:System.Xml.Serialization.XmlSerializer>.  
@@ -43,7 +43,7 @@ ms.locfileid: "83380021"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент \<system.xml.serialization>](../../../docs/standard/serialization/system-xml-serialization-element.md)|Содержит параметры конфигурации для классов <xref:System.Xml.Serialization.XmlSerializer> и <xref:System.Xml.Serialization.XmlSchemaImporter>.|  
+|[\<system.xml.serialization> Элемент](system-xml-serialization-element.md)|Содержит параметры конфигурации для классов <xref:System.Xml.Serialization.XmlSerializer> и <xref:System.Xml.Serialization.XmlSchemaImporter>.|  
   
 ## <a name="remarks"></a>Примечания  
  По умолчанию <xref:System.Xml.Serialization.XmlSerializer> обеспечивает дополнительный уровень безопасности в отношении возможных атак типа "отказ в обслуживании" во время десериализации ненадежных данных. Такие атаки отслеживаются путем определения бесконечных циклов во время десериализации. Если обнаруживается такое состояние, выдается исключение со следующим сообщением: "Произошла внутренняя ошибка: сбой десериализации при перемещении по базовому потоку".  
@@ -64,5 +64,5 @@ ms.locfileid: "83380021"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [Элемент \<system.xml.serialization>](../../../docs/standard/serialization/system-xml-serialization-element.md)
-- [Сериализация XML и SOAP](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [\<system.xml.serialization> Элемент](system-xml-serialization-element.md)
+- [Сериализация XML и SOAP](xml-and-soap-serialization.md)

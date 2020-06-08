@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - tasks, further reading
 ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f
-ms.openlocfilehash: 1c6823808bf457cf23fbef8f7000d38604474a8a
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: 8aadb491c5a8c339b4d8df73202ee717900ef775
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82507485"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84447164"
 ---
 # <a name="for-further-reading-parallel-programming"></a>Дополнительные сведения (параллельное программирование)
 
@@ -26,5 +26,5 @@ ms.locfileid: "82507485"
 
 ## <a name="see-also"></a>См. также
 
-- [Центр разработчиков параллельных вычислений](https://msdn.microsoft.com/vstudio/bb964701)
+- [Центр разработчиков параллельных вычислений](https://docs.microsoft.com/previous-versions/bb964701(v=msdn.10))
 - [Параллельное программирование в Visual C++](/cpp/parallel/parallel-programming-in-visual-cpp)

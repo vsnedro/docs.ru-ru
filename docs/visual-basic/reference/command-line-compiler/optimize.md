@@ -7,12 +7,12 @@ helpviewer_keywords:
 - optimization [Visual Basic], enabling
 - -optimize compiler option [Visual Basic]
 ms.assetid: fcba4a97-3622-4b87-a891-0f77deab4998
-ms.openlocfilehash: e8daf4a49123623b6470bc3c6281869f1b9b3d0f
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: 337cb794ef9a405a178f1998cbe27b5da7709382
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72005374"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397445"
 ---
 # <a name="-optimize"></a>-optimize
 Разрешает или запрещает оптимизацию компилятора.  
@@ -32,7 +32,7 @@ ms.locfileid: "72005374"
 ## <a name="remarks"></a>Примечания  
  Оптимизации компилятора делают код более быстрым, коротким и эффективным. Но поскольку оптимизация изменяет порядок строк кода в файле вывода, `-optimize+` может осложнить процесс отладки.  
   
- Все модули, созданные с помощью `-target:module` для сборки, должны использовать те же параметры `-optimize`, что и сборка. Дополнительные сведения см. в разделе [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md).  
+ Все модули, созданные с помощью `-target:module` для сборки, должны использовать те же параметры `-optimize`, что и сборка. Дополнительные сведения см. в разделе [-target (Visual Basic)](target.md).  
   
  Параметры `-optimize` и `-debug` можно объединить.  
   
@@ -49,7 +49,7 @@ vbc t2.vb -optimize
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [-debug (Visual Basic)](debug.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
+- [-target (Visual Basic)](target.md)

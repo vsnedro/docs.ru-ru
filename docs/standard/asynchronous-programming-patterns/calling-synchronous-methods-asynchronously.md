@@ -20,12 +20,12 @@ helpviewer_keywords:
 - waiting for asynchronous calls
 - status information [.NET Framework], asynchronous operations
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
-ms.openlocfilehash: 06df584f0120fbd4978e18647854a3ee844a2095
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6a3dd83fe9d3fc48f66a0bb6bef333e4ff399108
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73105128"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289906"
 ---
 # <a name="calling-synchronous-methods-asynchronously"></a>Асинхронный вызов синхронных методов
 
@@ -39,7 +39,7 @@ ms.locfileid: "73105128"
 Метод `EndInvoke` извлекает результаты асинхронного вызова. Его можно вызвать в любое время после вызова метода `BeginInvoke`. Если асинхронный вызов не завершен, метод `EndInvoke` блокирует вызывающий поток до завершения вызова. Список параметров метода `EndInvoke` включает параметры `out` и `ref` (`<Out>` `ByRef` и `ByRef` в Visual Basic) метода, который требуется вызвать асинхронно, а также значение <xref:System.IAsyncResult>, возвращаемое методом `BeginInvoke`.
 
 > [!NOTE]
-> Функция IntelliSense в Visual Studio показывает параметры `BeginInvoke` и `EndInvoke`. Если вы не используете Visual Studio или похожий инструмент либо если используется C# вместе с Studio, см. статью [Асинхронная модель программирования (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) с описанием параметров, определенных для этих методов.
+> Функция IntelliSense в Visual Studio показывает параметры `BeginInvoke` и `EndInvoke`. Если вы не используете Visual Studio или похожий инструмент либо если используется C# вместе с Studio, см. статью [Асинхронная модель программирования (APM)](asynchronous-programming-model-apm.md) с описанием параметров, определенных для этих методов.
 
 В приведенных в этой статье примерах кода демонстрируется четыре основных способа использования методов `BeginInvoke` и `EndInvoke` для выполнения асинхронных вызовов. После вызова метода `BeginInvoke` можно выполнять следующие действия.
 
@@ -112,4 +112,4 @@ ms.locfileid: "73105128"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Delegate>
-- [Асинхронная модель на основе событий (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+- [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md)

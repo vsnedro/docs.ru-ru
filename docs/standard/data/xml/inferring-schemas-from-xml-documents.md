@@ -7,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
-ms.openlocfilehash: 2d991a7835d22af2c780b020d6884f626908665e
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 5b0f9bea33346083ce0015fbf3cdfeb0e0ea1181
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82796175"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287666"
 ---
 # <a name="inferring-schemas-from-xml-documents"></a>Выведение схем из XML-документов
 В этом разделе описывается, как использовать класс <xref:System.Xml.Schema.XmlSchemaInference> для выведения схемы XSD из структуры XML-документа.  
@@ -83,7 +83,7 @@ ms.locfileid: "82796175"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Schema.XmlSchemaInference>
-- [Модель объектов схемы XML (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)
-- [Выведение XML-схемы](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)
-- [Правила выведения структуры и типов узлов схемы](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)
-- [Правила выведения простых типов](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)
+- [Модель объектов схемы XML (SOM)](xml-schema-object-model-som.md)
+- [Выведение XML-схемы](inferring-an-xml-schema.md)
+- [Правила выведения структуры и типов узлов схемы](rules-for-inferring-schema-node-types-and-structure.md)
+- [Правила выведения простых типов](rules-for-inferring-simple-types.md)

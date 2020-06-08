@@ -12,12 +12,12 @@ helpviewer_keywords:
 - unmanaged resource cleanup
 - Finalize method
 ms.assetid: a17b0066-71c2-4ba4-9822-8e19332fc213
-ms.openlocfilehash: 2d8b22063a184773928e5bc072f51a9f7d5d45ba
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: aeb39f32c97424646b85b26ed9c4ed0e350d196b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396979"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287614"
 ---
 # <a name="cleaning-up-unmanaged-resources"></a>Очистка неуправляемых ресурсов
 
@@ -44,7 +44,7 @@ ms.locfileid: "83396979"
 
 [Реализация метода Dispose](implementing-dispose.md) — описание того, как реализовать шаблон удаления для освобождения неуправляемых ресурсов.
 
-[Использование объектов, реализующих`IDisposable`](../../../docs/standard/garbage-collection/using-objects.md) — описание того, как объекты-получатели типа обеспечивают вызов своей реализации метода <xref:System.IDisposable.Dispose%2A>. Для этого мы рекомендуем использовать `using` (C# ) или `Using` (Visual Basic).
+[Использование объектов, реализующих`IDisposable`](using-objects.md) — описание того, как объекты-получатели типа обеспечивают вызов своей реализации метода <xref:System.IDisposable.Dispose%2A>. Для этого мы рекомендуем использовать `using` (C# ) или `Using` (Visual Basic).
 
 ## <a name="reference"></a>Справочник
 

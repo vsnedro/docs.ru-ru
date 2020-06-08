@@ -9,12 +9,12 @@ helpviewer_keywords:
 - attributes [.NET Framework], XML serialization
 - serialization, attributes
 ms.assetid: 93ee258c-9c0f-4a08-897c-c10db7a00f91
-ms.openlocfilehash: 9e99856c3ac70b122c0def23e36bbc3059c5891c
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: d9a4631189d348c02ab36054257a54c9c4673018
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378461"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84289672"
 ---
 # <a name="attributes-that-control-encoded-soap-serialization"></a>Атрибуты управления сериализацией с кодировкой SOAP
 
@@ -22,7 +22,7 @@ ms.locfileid: "83378461"
 
 В следующей таблице показаны атрибуты, место их применения и выполняемые ими действия. Дополнительные сведения об использовании этих атрибутов для управления XML-сериализацией см. в статьях о том, как [ выполнить сериализацию объекта как потока XML с кодировкой SOAP](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md) и [ переопределить сериализацию XML с кодировкой SOAP](how-to-override-encoded-soap-xml-serialization.md).
 
-Дополнительные сведения об атрибутах см. в разделе [Атрибуты](../../../docs/standard/attributes/index.md).
+Дополнительные сведения об атрибутах см. в разделе [Атрибуты](../attributes/index.md).
 
 |Атрибут|Применение|Что определяет|
 |---------------|----------------|---------------|
@@ -38,7 +38,7 @@ ms.locfileid: "83378461"
 - [Сериализация XML и SOAP](xml-and-soap-serialization.md)
 - [Практическое руководство. Сериализация объекта как потока XML с кодировкой SOAP](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)
 - [Практическое руководство. Переопределение сериализации XML с кодировкой SOAP](how-to-override-encoded-soap-xml-serialization.md)
-- [Атрибуты](../../../docs/standard/attributes/index.md)
+- [Атрибуты](../attributes/index.md)
 - <xref:System.Xml.Serialization.XmlSerializer>
 - [Практическое руководство. Сериализация объекта](how-to-serialize-an-object.md)
 - [Практическое руководство. Десериализация объекта](how-to-deserialize-an-object.md)

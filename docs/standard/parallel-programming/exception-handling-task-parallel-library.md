@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, exceptions
 ms.assetid: beb51e50-9061-4d3d-908c-56a4f7c2e8c1
-ms.openlocfilehash: aa6d4b706eb11921ffd419402bcf4cf059a29b11
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.openlocfilehash: 674abcfe4477e14295f131e766a48422779391de
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82021513"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290049"
 ---
 # <a name="exception-handling-task-parallel-library"></a>Обработка исключений (библиотека параллельных задач)
 
@@ -63,7 +63,7 @@ ms.locfileid: "82021513"
 
 ## <a name="exceptions-that-indicate-cooperative-cancellation"></a>Исключения, указывающие координированную отмену
 
-Когда пользовательский код в задаче отвечает на запрос отмены, правильной процедурой будет создание исключения <xref:System.OperationCanceledException> , передаваемого в токен отмены, с помощью которого был передан запрос. Перед попыткой распространить исключение экземпляр задачи сравнивает токен в исключении с токеном, переданным в него при его создании. Если они совпадают, задача распространяет <xref:System.Threading.Tasks.TaskCanceledException> , заключенное в <xref:System.AggregateException>, и можно увидеть, когда проверяются внутренние исключения. Однако если вызывающий поток не ожидает задачу, это конкретное исключение не будет распространяться. Дополнительные сведения см. в разделе [Отмена задач](../../../docs/standard/parallel-programming/task-cancellation.md).
+Когда пользовательский код в задаче отвечает на запрос отмены, правильной процедурой будет создание исключения <xref:System.OperationCanceledException> , передаваемого в токен отмены, с помощью которого был передан запрос. Перед попыткой распространить исключение экземпляр задачи сравнивает токен в исключении с токеном, переданным в него при его создании. Если они совпадают, задача распространяет <xref:System.Threading.Tasks.TaskCanceledException> , заключенное в <xref:System.AggregateException>, и можно увидеть, когда проверяются внутренние исключения. Однако если вызывающий поток не ожидает задачу, это конкретное исключение не будет распространяться. Дополнительные сведения см. в разделе [Отмена задач](task-cancellation.md).
 
 [!code-csharp[TPL_Exceptions#4](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/exceptions.cs#4)]
 [!code-vb[TPL_Exceptions#4](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/tpl_exceptions.vb#4)]
@@ -104,4 +104,4 @@ ms.locfileid: "82021513"
 
 ## <a name="see-also"></a>См. также
 
-- [Библиотека параллельных задач (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Библиотека параллельных задач (TPL)](task-parallel-library-tpl.md)

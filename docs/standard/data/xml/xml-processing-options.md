@@ -3,12 +3,12 @@ title: Параметры обработки XML
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 33ced8ee-1745-4e71-8dee-ebe70ec067c7
-ms.openlocfilehash: 1707ed10d944a518872132dded40751026a4c8e7
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 544c3467f46f5bebf79cb95906faeca7926c3824
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75709924"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291426"
 ---
 # <a name="xml-processing-options"></a>Параметры обработки XML
 В следующих таблицах приведен список технологий Microsoft, с помощью которых можно обрабатывать XML-данные.  
@@ -22,7 +22,7 @@ ms.locfileid: "75709924"
 |<xref:System.Xml.XmlWriter?displayProperty=nameWithType>|На основе потоков|— Предоставляет быстрый способ последовательного формирования XML-данных без кэширования.<br />— Вы можете создавать объекты с помощью метода <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType>, указывая набор поддерживаемых объектом компонентов с помощью класса <xref:System.Xml.XmlWriterSettings>.|  
 |<xref:System.Xml.XmlDocument?displayProperty=nameWithType>|In-memory|— Реализует рекомендации модели W3C [DOM базового уровня 1](https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html) и [DOM базового уровня 2](https://www.w3.org/TR/DOM-Level-2-Core/).<br />— Узлы можно создавать, вставлять, удалять и изменять с помощью методов и свойств, основанных на знакомой модели DOM.<br />— Используйте этот вариант, если вы дорабатываете существующий код, в котором используется W3C DOM.|  
 |<xref:System.Xml.XPath.XPathNavigator?displayProperty=nameWithType>|In-memory|— Предлагает несколько вариантов для редактирования и навигации на основе модели курсора.<br />— XML-документы могут содержаться в объекте <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument>.<br />— Обеспечивает превосходную производительность при обработке XML в режиме чтения.<br />— Используйте этот вариант, если вы редактируете существующий код, в котором применяются запросы XPath или преобразования XSLT.|  
-|<xref:System.Xml.Xsl.XslCompiledTransform>|In-memory|— Предоставляет возможности для преобразования XML-данных с помощью преобразований XSL.<br />— [Компилятор XSLT (xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md) позволяет задавать в приложении ссылки на готовые преобразования.|  
+|<xref:System.Xml.Xsl.XslCompiledTransform>|In-memory|— Предоставляет возможности для преобразования XML-данных с помощью преобразований XSL.<br />— [Компилятор XSLT (xsltc.exe)](xslt-compiler-xsltc-exe.md) позволяет задавать в приложении ссылки на готовые преобразования.|  
   
 ## <a name="win32-and-com-based-options"></a>Win32 и параметры, основанные на технологии COM  
   
@@ -33,6 +33,6 @@ ms.locfileid: "75709924"
   
 ## <a name="see-also"></a>См. также
 
-- [Обработка XML-данных с использованием модели DOM](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)
-- [Обработка XML-данных с использованием модели данных XPath](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
-- [Компилятор XSLT (xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)
+- [Обработка XML-данных с использованием модели DOM](process-xml-data-using-the-dom-model.md)
+- [Обработка XML-данных с использованием модели данных XPath](process-xml-data-using-the-xpath-data-model.md)
+- [Компилятор XSLT (xsltc.exe)](xslt-compiler-xsltc-exe.md)

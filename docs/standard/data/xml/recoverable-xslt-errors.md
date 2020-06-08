@@ -3,12 +3,12 @@ title: Устранимые ошибки XSLT
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8
-ms.openlocfilehash: e3ff86cc80887d14fdffe50f256409cb70ff2d88
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: ada0b352cd867417ed3ecf86291df023ca7c579e
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710379"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289100"
 ---
 # <a name="recoverable-xslt-errors"></a>Устранимые ошибки XSLT
 Рекомендация W3C по XSL-преобразованиям (XSLT) версии 1.0 включает в себя такие области, в которых поставщик реализации может решать, как обрабатывать ситуацию. Эти области считаются предоставленными на усмотрение поставщика. Например, в разделе 7.3 «Инструкции по обработке при создании» рекомендаций XSLT 1.0 указывается на ошибку, которая возникает, если при формировании экземпляра содержимого `xsl:processing-instruction` создаются узлы, отличные от текстовых. Для некоторых проблем в рекомендациях XSLT 1.0 указывается решение, которое следует принять, если обработчик решает устранить ошибку. Для проблемы, приведенной в разделе 7.3, W3C заявляет, что реализация может устранять эту ошибку, игнорируя узлы и их содержимое.  
@@ -50,8 +50,8 @@ ms.locfileid: "75710379"
 |Атрибут `value` в узле `xsl:number` имеет значение NAN, бесконечное или менее 0,5.|поправка 24|Восстановление|  
 |Второй аргумент node-set функции документа пуст, поэтому URI-ссылка является относительной.|поправка 14|Восстановление|  
   
- <sup>*</sup>Это поведение отличается от класса <xref:System.Xml.Xsl.XslTransform>. См. дополнительные сведения по [реализации избирательного поведения в классе XslTransform](../../../../docs/standard/data/xml/implementation-of-discretionary-behaviors-in-the-xsltransform-class.md).  
+ <sup>*</sup>Это поведение отличается от класса <xref:System.Xml.Xsl.XslTransform>. См. дополнительные сведения по [реализации избирательного поведения в классе XslTransform](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md).  
   
 ## <a name="see-also"></a>См. также
 
-- [Преобразования XSLT](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [Преобразования XSLT](xslt-transformations.md)

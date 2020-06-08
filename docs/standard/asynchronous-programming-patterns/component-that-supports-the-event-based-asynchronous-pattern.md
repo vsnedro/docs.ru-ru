@@ -18,15 +18,15 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 61f676b5-936f-40f6-83ce-f22805ec9c2f
-ms.openlocfilehash: 44a1019ac8169138aa95b03e2027d9539cbf8391
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 83a60e0e793f33b8b0a1cec8342942fd05c82f55
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71957369"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289893"
 ---
 # <a name="how-to-implement-a-component-that-supports-the-event-based-asynchronous-pattern"></a>Практическое руководство. Реализация компонента, поддерживающего асинхронную модель, основанную на событиях
-Если вы создаете класс и некоторые операции этого класса могут привести к значительным задержкам, подумайте о том, чтобы реализовать для этого класса асинхронные функции с помощью [асинхронной модели на основе событий](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
+Если вы создаете класс и некоторые операции этого класса могут привести к значительным задержкам, подумайте о том, чтобы реализовать для этого класса асинхронные функции с помощью [асинхронной модели на основе событий](event-based-asynchronous-pattern-overview.md).  
   
  В этом руководстве мы покажем, как создать компонент, реализующий асинхронную модель на основе событий. Для такой реализации применяются вспомогательные классы из пространства имен <xref:System.ComponentModel?displayProperty=nameWithType>, что обеспечивает правильную работу компонента для приложений любой модели, включая ASP.NET, консольные приложения и приложения Windows Forms. Также этот компонент можно создать на основе элемента управления <xref:System.Windows.Forms.PropertyGrid> и пользовательских конструкторов.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "71957369"
   
 - реализация методов запуска и отмены.  
   
- Чтобы скопировать код из этого раздела единым блоком, см. [практическое руководство по реализация клиента асинхронной модели на основе событий](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
+ Чтобы скопировать код из этого раздела единым блоком, см. [практическое руководство по реализация клиента асинхронной модели на основе событий](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ## <a name="creating-the-component"></a>Создание компонента  
  На первом шаге мы создадим компонент, который будет реализовать асинхронную модель на основе событий.  
@@ -176,7 +176,7 @@ ms.locfileid: "71957369"
  Метод `CalculateWorker` заключается в делегат и вызывается асинхронно с помощью вызова к `BeginInvoke`.  
   
 > [!NOTE]
-> Отчет о ходе выполнения реализован в методе `BuildPrimeNumberList`. На быстрых компьютерах события `ProgressChanged` могут возникать быстро друг за другом. Клиентский поток, в котором возникают эти события, должен быть готов к такой ситуации. Если код пользовательского интерфейса будет перегружен сообщениями, это приведет к зависанию. Пример пользовательского интерфейса, который успешно справляется с этой ситуацией, см. в статье [Практическое руководство. Реализация клиента асинхронной модели, основанной на событиях](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
+> Отчет о ходе выполнения реализован в методе `BuildPrimeNumberList`. На быстрых компьютерах события `ProgressChanged` могут возникать быстро друг за другом. Клиентский поток, в котором возникают эти события, должен быть готов к такой ситуации. Если код пользовательского интерфейса будет перегружен сообщениями, это приведет к зависанию. Пример пользовательского интерфейса, который успешно справляется с этой ситуацией, см. в статье [Практическое руководство. Реализация клиента асинхронной модели, основанной на событиях](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ### <a name="to-execute-the-prime-number-calculation-asynchronously"></a>Для асинхронного вычисления простых чисел выполните следующие действия.  
   
@@ -242,7 +242,7 @@ ms.locfileid: "71957369"
   
  Итак, компонент `PrimeNumberCalculator` полностью готов к использованию.  
   
- Пример клиента, который использует компонент `PrimeNumberCalculator`, см. в статье [Практическое руководство. Реализация клиента асинхронной модели, основанной на событиях](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
+ Пример клиента, который использует компонент `PrimeNumberCalculator`, см. в статье [Практическое руководство. Реализация клиента асинхронной модели, основанной на событиях](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ## <a name="next-steps"></a>Next Steps  
  Попробуйте изучить следующий пример, в котором вы создадите `CalculatePrime`, синхронный эквивалент метода `CalculatePrimeAsync`. После этого компонент `PrimeNumberCalculator` будет полностью совместим с асинхронной моделью на основе событий.  
@@ -253,6 +253,6 @@ ms.locfileid: "71957369"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Фоновое выполнение операции](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [Обзор асинхронной модели, основанной на событиях](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
-- [Асинхронная модель на основе событий (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+- [Практическое руководство. Фоновое выполнение операции](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [Обзор асинхронной модели, основанной на событиях](event-based-asynchronous-pattern-overview.md)
+- [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md)

@@ -3,12 +3,12 @@ title: Общие сведения об модели объектов XML-схе
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 896a1e12-5655-42c6-8cdd-89c12862b34b
-ms.openlocfilehash: 3ebf0cd06ebea3092ef8aa42debe0afeac9be4f2
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 0358efdcc2e8b86f589eea312d791610da5238db
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129147"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290335"
 ---
 # <a name="xml-schema-object-model-overview"></a>Общие сведения об модели объектов XML-схемы
 Модель SOM в Microsoft .NET Framework является богатым по возможностям API, позволяющим создавать, изменять и проверять схемы программным путем. Модель SOM работает в документах схемы XML так же, как модель DOM работает в XML-документах. Документы схемы XML - это допустимые XML-файлы, которые после загрузки в память делают осмысленными утверждения о структуре и правильности других XML-документов, соответствующих этой схеме.  
@@ -38,10 +38,10 @@ ms.locfileid: "73129147"
   
 ## <a name="see-also"></a>См. также
 
-- [Чтение и запись XML-схем](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Построение XML-схем](../../../../docs/standard/data/xml/building-xml-schemas.md)
-- [Обход XML-схем](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
-- [Изменение XML-схем](../../../../docs/standard/data/xml/editing-xml-schemas.md)
-- [Включение или импорт XML-схем](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
-- [XmlSchemaSet для компиляции схемы](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
-- [Набор сведений для постсхемной компиляции](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+- [Чтение и запись XML-схем](reading-and-writing-xml-schemas.md)
+- [Построение XML-схем](building-xml-schemas.md)
+- [Обход XML-схем](traversing-xml-schemas.md)
+- [Изменение XML-схем](editing-xml-schemas.md)
+- [Включение или импорт XML-схем](including-or-importing-xml-schemas.md)
+- [XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md)
+- [Набор сведений для постсхемной компиляции](post-schema-compilation-infoset.md)

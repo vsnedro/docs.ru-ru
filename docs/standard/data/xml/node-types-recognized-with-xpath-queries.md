@@ -3,12 +3,12 @@ title: Типы узлов, распознаваемые запросами XPat
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 1d33e22d-18e5-43f8-a466-2e3d0a8dd094
-ms.openlocfilehash: cc1aa668ccf6fc7f210f48a28cf76b364459c784
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: b9fc55b11455491406970af2a9232b277160875f
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710548"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288736"
 ---
 # <a name="node-types-recognized-with-xpath-queries"></a>Типы узлов, распознаваемые запросами XPath
 Типы узлов, распознаваемые в запросе XPath, отличаются от типов узлов в модели DOM XML-документа.  
@@ -42,16 +42,16 @@ ms.locfileid: "75710548"
   
  Тип узла пространства имен - дополнение к модели данных XPath и не является распознаваемым типом узла DOM.  
   
- См. дополнительные сведения о навигации в руководствах по [навигации по наборам улов](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) и [улов атрибутов и пространств имен](../../../../docs/standard/data/xml/attribute-and-namespace-node-navigation-using-xpathnavigator.md) с помощью XPathNavigator.  
+ См. дополнительные сведения о навигации в руководствах по [навигации по наборам улов](node-set-navigation-using-xpathnavigator.md) и [улов атрибутов и пространств имен](attribute-and-namespace-node-navigation-using-xpathnavigator.md) с помощью XPathNavigator.  
   
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>
 - <xref:System.Xml.XPath.XPathNavigator>
-- [Обработка XML-данных с использованием модели данных XPath](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
-- [Выборка XML-данных с помощью XPathNavigator](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)
-- [Вычисление выражения XPath с помощью класса XPathNavigator](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)
-- [Соответствие узлов с помощью XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)
-- [Запросы XPath и пространства имен](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)
-- [Скомпилированные выражения XPath](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+- [Обработка XML-данных с использованием модели данных XPath](process-xml-data-using-the-xpath-data-model.md)
+- [Выборка XML-данных с помощью XPathNavigator](select-xml-data-using-xpathnavigator.md)
+- [Вычисление выражения XPath с помощью класса XPathNavigator](evaluate-xpath-expressions-using-xpathnavigator.md)
+- [Соответствие узлов с помощью XPathNavigator](matching-nodes-using-xpathnavigator.md)
+- [Запросы XPath и пространства имен](xpath-queries-and-namespaces.md)
+- [Скомпилированные выражения XPath](compiled-xpath-expressions.md)

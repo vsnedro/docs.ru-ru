@@ -5,12 +5,12 @@ helpviewer_keywords:
 - My namespace [Visual Basic], customizing
 - My namespace
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
-ms.openlocfilehash: 0387aca08e3a31b0a2045369919894d88caf5b76
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 5245c129281bc8c7c1c6fe9215a221889380a901
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74330316"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410222"
 ---
 # <a name="customizing-which-objects-are-available-in-my-visual-basic"></a>Настройка доступа к объектам через My (Visual Basic)
 
@@ -78,10 +78,10 @@ ms.locfileid: "74330316"
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.Logging.Log>
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>
-- [Зависимость My от типа проекта](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
-- [Условная компиляция](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
-- [-define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
-- [Объект My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.md)
-- [Объект My.Request](../../../visual-basic/language-reference/objects/my-request-object.md)
-- [Объект My.Response](../../../visual-basic/language-reference/objects/my-response-object.md)
-- [Объект My.WebServices](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+- [Зависимость My от типа проекта](../development-with-my/how-my-depends-on-project-type.md)
+- [Условная компиляция](../../programming-guide/program-structure/conditional-compilation.md)
+- [-define (Visual Basic)](../../reference/command-line-compiler/define.md)
+- [Объект My.Forms](../../language-reference/objects/my-forms-object.md)
+- [Объект My.Request](../../language-reference/objects/my-request-object.md)
+- [Объект My.Response](../../language-reference/objects/my-response-object.md)
+- [Объект My.WebServices](../../language-reference/objects/my-webservices-object.md)

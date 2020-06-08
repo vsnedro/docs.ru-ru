@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 76f28770-7126-428f-9ed5-7b5ae8bad5ee
-ms.openlocfilehash: af6df3729f1bd926e9a47cc5b9d9bf460c8e1225
-ms.sourcegitcommit: 00aa62e2f469c2272a457b04e66b4cc3c97a800b
+ms.openlocfilehash: 3d517652665d6d0693e141d623483ff8946bbbf4
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78159290"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290244"
 ---
 # <a name="xmlschemacollection-schema-compilation"></a>Компиляция схемы XmlSchemaCollection
 Объект **XmlSchemaCollection** является кэшем или библиотекой, где можно хранить и проверять схемы XDR и XSD. Использование **XmlSchemaCollection** повышает производительность, поскольку схемы кэшируются в памяти и их не нужно каждый раз получать из файла или по URL-адресу.  
@@ -20,7 +20,7 @@ ms.locfileid: "78159290"
 > Класс **XmlSchemaCollection** хранит и схемы XDR, и схемы XML, но все методы и свойства, которые принимают или возвращают объект **XmlSchema**, поддерживают только схемы XML.  
   
 > [!IMPORTANT]
-> Класс <xref:System.Xml.Schema.XmlSchemaCollection> устарел и заменен классом <xref:System.Xml.Schema.XmlSchemaSet>. Дополнительные сведения о классе <xref:System.Xml.Schema.XmlSchemaSet> см. в руководстве по [использованию XmlSchemaSet для компиляции схемы](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md).  
+> Класс <xref:System.Xml.Schema.XmlSchemaCollection> устарел и заменен классом <xref:System.Xml.Schema.XmlSchemaSet>. Дополнительные сведения о классе <xref:System.Xml.Schema.XmlSchemaSet> см. в руководстве по [использованию XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md).  
   
 ## <a name="add-schemas-to-the-collection"></a>Добавление схем в коллекцию  
  Схемы загружаются в коллекцию с помощью метода **Add** класса **XmlSchemaCollection**, и одновременно с этим схема связывается с URI пространства имен. Для схем XML URI-код пространства имен обычно является целевым пространством имен для схемы. Для схем XDR URI-код пространства имен будет задаваться во время добавления схемы в коллекцию.  
@@ -57,5 +57,5 @@ vr.Schemas.Add(xsc);
   
 ## <a name="see-also"></a>См. также
 
-- [XDR-проверка с помощью XmlSchemaCollection](../../../../docs/standard/data/xml/xdr-validation-with-xmlschemacollection.md)
-- [Проверка по XML-схеме (XSD) с помощью XmlSchemaCollection](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemacollection.md)
+- [XDR-проверка с помощью XmlSchemaCollection](xdr-validation-with-xmlschemacollection.md)
+- [Проверка по XML-схеме (XSD) с помощью XmlSchemaCollection](xml-schema-xsd-validation-with-xmlschemacollection.md)

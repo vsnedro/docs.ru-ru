@@ -13,12 +13,12 @@ helpviewer_keywords:
 - I/O [.NET Framework], writing data
 - BinaryWriter class, examples
 ms.assetid: e209d949-31e8-44ea-8e38-87f9093f3093
-ms.openlocfilehash: 3772aeeb25d1251a13fde2a0e51a913e5e39eabc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 18f44af81a38a48da3115d2082ef45af39f06529
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78155754"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291816"
 ---
 # <a name="how-to-read-and-write-to-a-newly-created-data-file"></a>Практическое руководство. считывание данных из нового файла и запись в этот файл
 Классы <xref:System.IO.BinaryWriter?displayProperty=nameWithType> и <xref:System.IO.BinaryReader?displayProperty=nameWithType> используются для записи и чтения данных вместо строк символов. Следующий пример показывает, как создать пустой файловый поток, записать в него данные, а затем считать их.
@@ -39,10 +39,10 @@ ms.locfileid: "78155754"
 - <xref:System.IO.FileStream>  
 - <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>  
 - <xref:System.IO.SeekOrigin>  
-- [Практическое руководство. Перечисление каталогов и файлов](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [Практическое руководство. Открытие файла журнала и добавление в него данных](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [Практическое руководство. Чтение текста из файла](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [Практическое руководство. Запись текста в файл](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [Практическое руководство. Считывание символов из строки](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
-- [Практическое руководство. Запись символов в строку](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
-- [Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)
+- [Практическое руководство. Перечисление каталогов и файлов](how-to-enumerate-directories-and-files.md)  
+- [Практическое руководство. Открытие файла журнала и добавление в него данных](how-to-open-and-append-to-a-log-file.md)  
+- [Практическое руководство. Чтение текста из файла](how-to-read-text-from-a-file.md)  
+- [Практическое руководство. Запись текста в файл](how-to-write-text-to-a-file.md)  
+- [Практическое руководство. Считывание символов из строки](how-to-read-characters-from-a-string.md)  
+- [Практическое руководство. Запись символов в строку](how-to-write-characters-to-a-string.md)  
+- [Файловый и потоковый ввод-вывод](index.md)

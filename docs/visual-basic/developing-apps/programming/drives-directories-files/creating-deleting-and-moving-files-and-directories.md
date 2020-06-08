@@ -22,12 +22,12 @@ helpviewer_keywords:
 - I/O [Visual Basic], renaming folders
 - I/O [Visual Basic], moving files
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
-ms.openlocfilehash: 8e0b291c0bb526c21654a1e8c08bd168d95ac53a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 12f5e8d29ea92750884e45bf1d9ef05bbfe672b8
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74348910"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401762"
 ---
 # <a name="creating-deleting-and-moving-files-and-directories-in-visual-basic"></a>Создание, удаление и перемещение файлов и папок в Visual Basic
 
@@ -35,46 +35,46 @@ ms.locfileid: "74348910"
   
 ## <a name="in-this-section"></a>Содержание  
 
- [Практическое руководство. Копирование файлов по заданному шаблону в каталог](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md)  
+ [Практическое руководство. Копирование файлов по заданному шаблону в каталог](how-to-copy-files-with-a-specific-pattern-to-a-directory.md)  
  Демонстрация копирования файлов с определенным шаблоном имени файла, например только файлов с расширением TXT, в заданный каталог.  
   
- [Практическое руководство. Создание копии файла в том же каталоге](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md)  
+ [Практическое руководство. Создание копии файла в том же каталоге](how-to-create-a-copy-of-a-file-in-the-same-directory.md)  
  Демонстрация создания копии файла в том же каталоге.  
   
- [Практическое руководство. Создание копии файла в другом каталоге](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-a-different-directory.md)  
+ [Практическое руководство. Создание копии файла в другом каталоге](how-to-create-a-copy-of-a-file-in-a-different-directory.md)  
  Демонстрация копирования файла в другой каталог.  
   
- [Практическое руководство. Создание файла](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-file.md)  
+ [Практическое руководство. Создание файла](how-to-create-a-file.md)  
  Демонстрация создания файла.  
   
- [Практическое руководство. Удаление файла](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-delete-a-file.md)  
+ [Практическое руководство. Удаление файла](how-to-delete-a-file.md)  
  Демонстрация удаления файла.  
   
- [Практическое руководство. Поиск файлов по конкретному шаблону](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)  
+ [Практическое руководство. Поиск файлов по конкретному шаблону](how-to-find-files-with-a-specific-pattern.md)  
  Демонстрация получения списка файлов в каталоге с именами, удовлетворяющими шаблону.  
   
- [Практическое руководство. Перемещение файла](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)  
+ [Практическое руководство. Перемещение файла](how-to-move-a-file.md)  
  Демонстрация перемещения файла в другой каталог.  
   
- [Практическое руководство. Переименование файла](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)  
+ [Практическое руководство. Переименование файла](how-to-rename-a-file.md)  
  Демонстрация переименования файла.  
   
- [Практическое руководство. Копирование каталога в другой каталог](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md)  
+ [Практическое руководство. Копирование каталога в другой каталог](how-to-copy-a-directory-to-another-directory.md)  
  Демонстрация копирования каталога в другое место.  
   
- [Практическое руководство. Создание каталога](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-directory.md)  
+ [Практическое руководство. Создание каталога](how-to-create-a-directory.md)  
  Демонстрация создания каталога.  
   
- [Практическое руководство. Поиск подкаталогов по шаблону](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)  
+ [Практическое руководство. Поиск подкаталогов по шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)  
  Демонстрация получения списка каталогов с именами, удовлетворяющими конкретному шаблону.  
   
- [Практическое руководство. Получение коллекции содержащихся в каталоге файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)  
+ [Практическое руководство. Получение коллекции содержащихся в каталоге файлов](how-to-get-the-collection-of-files-in-a-directory.md)  
  Демонстрация получения списка файлов в каталоге.  
   
- [Практическое руководство. Извлечение содержимого каталога "Мои документы"](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-retrieve-the-contents-of-the-my-documents-directory.md)  
+ [Практическое руководство. Извлечение содержимого каталога "Мои документы"](how-to-retrieve-the-contents-of-the-my-documents-directory.md)  
  Демонстрация чтения из специальных каталогов.  
   
- [Практическое руководство. Анализ путей к файлам](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
+ [Практическое руководство. Анализ путей к файлам](how-to-parse-file-paths.md)  
  Демонстрация использования методов объекта `My` для объединения путей к файлам.  
   
 ## <a name="reference"></a>Справочник  
@@ -120,8 +120,8 @@ ms.locfileid: "74348910"
   
 ## <a name="related-sections"></a>Связанные разделы  
 
- [Чтение из файлов](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
+ [Чтение из файлов](reading-from-files.md)  
  Перечень задач, связанных с чтением из файлов.  
   
- [Запись в файлы](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  
+ [Запись в файлы](writing-to-files.md)  
  Перечень задач, связанных с записью в файлы.

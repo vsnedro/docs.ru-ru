@@ -13,12 +13,12 @@ helpviewer_keywords:
 - command-line compilers [Visual Basic], Visual Basic
 - command line [Visual Basic], Visual Basic
 ms.assetid: e61947e9-a42e-4717-a699-5f70a98cdd03
-ms.openlocfilehash: c7219c0497bb87f0cc44f27229eaf25f9b3eebce
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ec6ae3328c2042af950d1ee78a33d3de97219f10
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74344797"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84414302"
 ---
 # <a name="building-from-the-command-line-visual-basic"></a>Построение из командной строки (Visual Basic)
 
@@ -35,18 +35,18 @@ Visual Basic предоставляет компилятор командной 
 
 ## <a name="in-this-section"></a>В этом разделе
 
-[Практическое руководство. Вызов компилятора командной строки](../../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) \
+[Практическое руководство. Вызов компилятора командной строки](how-to-invoke-the-command-line-compiler.md) \
 Описание вызова компилятора командной строки в командной строке MS-DOS или из определенного подкаталога.
 
-[Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md) \
+[Примеры командных строк компиляции](sample-compilation-command-lines.md) \
 Список примеров командных строк, которые можно изменять для использования в своих целях.
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md) \
+[Компилятор Visual Basic с интерфейсом командной строки](index.md) \
 Списки параметров компилятора, упорядоченных в алфавитном порядке или по назначению.
 
-[Условная компиляция](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md) \
+[Условная компиляция](../../programming-guide/program-structure/conditional-compilation.md) \
 Описание компиляции отдельных разделов кода.
 
 [Building and Cleaning Projects and Solutions in Visual Studio](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio) \ (Построение и очистка проектов и решений в Visual Studio)

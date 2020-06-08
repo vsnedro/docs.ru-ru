@@ -6,15 +6,15 @@ helpviewer_keywords:
 - XML serialization, configuration
 - <add> element for <schemaImporterExtensions> element
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
-ms.openlocfilehash: 401d1ba9cc2f97e93d7851f96f73b552e6ed6356
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 6fd8113ad39a22c927035fca574151ae8f002685
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378477"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84288333"
 ---
-# <a name="add-element-for-schemaimporterextensions"></a>Элемент \<add> для элемента \<schemaImporterExtensions>
-Добавляет типы, используемые <xref:System.Xml.Serialization.XmlSchemaImporter>, для сопоставления типов XSD с типами платформы .NET Framework. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../../docs/framework/configure-apps/file-schema/index.md).  
+# <a name="add-element-for-schemaimporterextensions"></a>Элемент \<add> для \<schemaImporterExtensions>
+Добавляет типы, используемые <xref:System.Xml.Serialization.XmlSchemaImporter>, для сопоставления типов XSD с типами платформы .NET Framework. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  
 \<system.xml.serialization>  
@@ -64,5 +64,5 @@ ms.locfileid: "83378477"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Serialization.XmlSchemaImporter>
-- [Элемент \<system.xml.serialization>](../../../docs/standard/serialization/system-xml-serialization-element.md)
-- [Элемент \<schemaImporterExtensions>](../../../docs/standard/serialization/schemaimporterextensions-element.md)
+- [\<system.xml.serialization> Элемент](system-xml-serialization-element.md)
+- [\<schemaImporterExtensions> Элемент](schemaimporterextensions-element.md)

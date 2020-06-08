@@ -3,12 +3,12 @@ title: Преобразование типов .NET Framework в строки
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: dc2e2b65-f623-4dc3-938b-d2a054d6832c
-ms.openlocfilehash: a63e0175f6660967eb4aa678c6731d353e44e2d5
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: d232fb0e3ea4cf3189294d6e6f43ae9270417407
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75711081"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287822"
 ---
 # <a name="converting-net-framework-types-to-strings"></a>Преобразование типов .NET Framework в строки
 Чтобы преобразовать тип .NET Framework в строку, используйте метод **ToString**. Метод **ToString** возвращает символьное представление переданного типа. В следующей таблице приведен список типов платформы .NET Framework, которые возвращают строку в формате, сопоставленном со спецификациями XSD.  
@@ -25,5 +25,5 @@ ms.locfileid: "75711081"
   
 ## <a name="see-also"></a>См. также
 
-- [Преобразование типов XML-данных](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)
-- [Преобразование строк в типы данных .NET Framework](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)
+- [Преобразование типов XML-данных](conversion-of-xml-data-types.md)
+- [Преобразование строк в типы данных .NET Framework](converting-strings-to-dotnet-data-types.md)

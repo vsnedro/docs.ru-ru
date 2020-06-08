@@ -35,12 +35,12 @@ helpviewer_keywords:
 - pattern-matching with regular expressions, classes
 - GroupCollection class
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
-ms.openlocfilehash: 8956be3cf8f96a8dd255f378d4927404c172c908
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ad7957fd555c1de8fe47c092d3eb399a803fb1fb
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78160005"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290906"
 ---
 # <a name="the-regular-expression-object-model"></a>Объектная модель регулярных выражений
 <a name="introduction"></a> В этом разделе описывается объектная модель, используемая при работе с регулярными выражениями в .NET. Он содержит следующие разделы:  
@@ -284,7 +284,7 @@ ms.locfileid: "78160005"
   
  Свойства класса <xref:System.Text.RegularExpressions.Group> предоставляют сведения о захватываемой группе: свойство `Group.Value` содержит выделенную подстроку, свойство `Group.Index` указывает начальную позицию захватываемой группы во входном тексте, свойство `Group.Length` содержит длину выделенного текста, а свойство `Group.Success` указывает, соответствует ли подстрока шаблону, заданному захватываемой группой.  
   
- Применение квантификаторов к группе (см. раздел [Квантификаторы](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)) изменяет связь одного выделения в захватываемой группе двумя способами:  
+ Применение квантификаторов к группе (см. раздел [Квантификаторы](quantifiers-in-regular-expressions.md)) изменяет связь одного выделения в захватываемой группе двумя способами:  
   
 - Если квантификатор `*` или `*?` (который указывает ноль или больше соответствий) применен к группе, во входной строке может отсутствовать соответствие захватываемой группе. Если выделенного текста нет, свойства объекта <xref:System.Text.RegularExpressions.Group> задаются, как показано в следующей таблице.  
   
@@ -352,5 +352,5 @@ ms.locfileid: "78160005"
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Text.RegularExpressions>
-- [Регулярные выражения .NET](../../../docs/standard/base-types/regular-expressions.md)
-- [Элементы языка регулярных выражений — краткий справочник](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Регулярные выражения .NET](regular-expressions.md)
+- [Элементы языка регулярных выражений — краткий справочник](regular-expression-language-quick-reference.md)

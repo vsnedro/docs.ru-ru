@@ -8,12 +8,12 @@ helpviewer_keywords:
 - weak references, long
 - garbage collection, weak references
 ms.assetid: 6a600fe5-3af3-4c64-82da-10a0a8e2d79b
-ms.openlocfilehash: 120777ca3c26b1634bd2143863547cfa4ea5deac
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4b7e7a62b92b2c685ff39baa75f4bc33602b5da2
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73141328"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287588"
 ---
 # <a name="weak-references"></a>Слабые ссылки
 Сборщик мусора не может собрать объект, используемый приложением, пока код приложения взаимодействует с этим объектом. Говорят, что приложение имеет строгую ссылку на объект.  
@@ -50,6 +50,6 @@ ms.locfileid: "73141328"
   
  Избегайте использования слабых ссылок в качестве автоматического решения проблем, связанных с управлением памятью. Вместо этого разработайте эффективную политику кэширования для обработки объектов приложения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Сборка мусора](../../../docs/standard/garbage-collection/index.md)
+- [Сборка мусора](index.md)

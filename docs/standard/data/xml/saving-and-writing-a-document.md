@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
-ms.openlocfilehash: 0af160b720b9eddd9e72689c920316bffdc6d21e
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 40d031c06f0b76668a634fac46b8defccce62f01
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710223"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289048"
 ---
 # <a name="saving-and-writing-a-document"></a>Сохранение и запись документа
 При загрузке и сохранении <xref:System.Xml.XmlDocument> между сохраненным и исходным документами возможны следующие различия:  
@@ -90,4 +90,4 @@ string xml = mydoc.DocumentElement.OuterXml;
   
 ## <a name="see-also"></a>См. также
 
-- [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [Модель объектов документов XML (DOM)](xml-document-object-model-dom.md)

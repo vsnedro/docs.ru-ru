@@ -7,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: fa09c8e5-c2b9-49d2-bb0d-40330cd13e4d
-ms.openlocfilehash: a295fee225d7eb5793b725db93e47fc73addf4ef
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: b309c390ede3afc38122188337fa0dc3336e3ad5
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794589"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84292063"
 ---
 # <a name="editing-xml-schemas"></a>Изменение XML-схем
 
@@ -22,7 +22,7 @@ ms.locfileid: "82794589"
 
 ## <a name="editing-an-xml-schema"></a>Изменение схемы XML
 
-В этом разделе приводятся два примера кода, в которых изменяется пользовательская схема, созданная в руководстве по [созданию схем XML](../../../../docs/standard/data/xml/building-xml-schemas.md). В первом примере кода добавляется новый элемент `PhoneNumber` в элемент `Customer`, а во втором примере кода добавляется новый атрибут `Title` в элемент `FirstName`. В первом образце для обзора пользовательской схемы используется коллекция <xref:System.Xml.Schema.XmlSchema.Elements%2A?displayProperty=nameWithType> типа «после компиляции схемы», а во втором примере кода используется коллекция <xref:System.Xml.Schema.XmlSchema.Items%2A?displayProperty=nameWithType> типа «перед компиляцией схемы».
+В этом разделе приводятся два примера кода, в которых изменяется пользовательская схема, созданная в руководстве по [созданию схем XML](building-xml-schemas.md). В первом примере кода добавляется новый элемент `PhoneNumber` в элемент `Customer`, а во втором примере кода добавляется новый атрибут `Title` в элемент `FirstName`. В первом образце для обзора пользовательской схемы используется коллекция <xref:System.Xml.Schema.XmlSchema.Elements%2A?displayProperty=nameWithType> типа «после компиляции схемы», а во втором примере кода используется коллекция <xref:System.Xml.Schema.XmlSchema.Items%2A?displayProperty=nameWithType> типа «перед компиляцией схемы».
 
 ### <a name="phonenumber-element-example"></a>Пример элемента PhoneNumber
 
@@ -48,7 +48,7 @@ ms.locfileid: "82794589"
 [!code-csharp[XmlSchemaEditExample1#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlSchemaEditExample1/CS/XmlSchemaEditExample1.cs#1)]
 [!code-vb[XmlSchemaEditExample1#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaEditExample1/VB/XmlSchemaEditExample1.vb#1)]
 
-Ниже приведена измененная пользовательская [схема XML](../../../../docs/standard/data/xml/building-xml-schemas.md).
+Ниже приведена измененная пользовательская [схема XML](building-xml-schemas.md).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -112,7 +112,7 @@ ms.locfileid: "82794589"
 [!code-csharp[XmlSchemaEditExample2#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlSchemaEditExample2/CS/XmlSchemaEditExample2.cs#1)]
 [!code-vb[XmlSchemaEditExample2#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaEditExample2/VB/XmlSchemaEditExample2.vb#1)]
 
-Ниже приведена измененная пользовательская [схема XML](../../../../docs/standard/data/xml/building-xml-schemas.md).
+Ниже приведена измененная пользовательская [схема XML](building-xml-schemas.md).
 
 ```xml
 <?xml version="1.0" encoding=" utf-8"?>
@@ -137,10 +137,10 @@ ms.locfileid: "82794589"
 
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения об модели объектов XML-схемы](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
-- [Чтение и запись XML-схем](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Построение XML-схем](../../../../docs/standard/data/xml/building-xml-schemas.md)
-- [Обход XML-схем](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
-- [Включение или импорт XML-схем](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
-- [XmlSchemaSet для компиляции схемы](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
-- [Набор сведений для постсхемной компиляции](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+- [Общие сведения об модели объектов XML-схемы](xml-schema-object-model-overview.md)
+- [Чтение и запись XML-схем](reading-and-writing-xml-schemas.md)
+- [Построение XML-схем](building-xml-schemas.md)
+- [Обход XML-схем](traversing-xml-schemas.md)
+- [Включение или импорт XML-схем](including-or-importing-xml-schemas.md)
+- [XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md)
+- [Набор сведений для постсхемной компиляции](post-schema-compilation-infoset.md)

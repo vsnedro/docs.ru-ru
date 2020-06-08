@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /optioninfer compiler option [Visual Basic]
 - optioninfer compiler option [Visual Basic]
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
-ms.openlocfilehash: d7209e431b84e52e487bccbf73bd633a346efde0
-ms.sourcegitcommit: 559259da2738a7b33a46c0130e51d336091c2097
+ms.openlocfilehash: 524660fca7c56fa490cc85169898bf2bf6d1a16e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72775619"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84400582"
 ---
 # <a name="-optioninfer"></a>-optioninfer
 Включает использование локального определения типов в различных объявлениях.  
@@ -34,7 +34,7 @@ ms.locfileid: "72775619"
 > Можно использовать параметр `-noconfig`, чтобы сохранить внутренние значения компилятора по умолчанию вместо использования значений, заданных в vbc.rsp. Значение компилятора по умолчанию для этого параметра — `-optioninfer-`.  
   
 ## <a name="remarks"></a>Примечания  
- Если файл исходного кода содержит [оператор Option Infer](../../../visual-basic/language-reference/statements/option-infer-statement.md), этот оператор переопределяет параметр компилятора командной строки `-optioninfer`.  
+ Если файл исходного кода содержит [оператор Option Infer](../../language-reference/statements/option-infer-statement.md), этот оператор переопределяет параметр компилятора командной строки `-optioninfer`.  
   
 ### <a name="to-set--optioninfer-in-the-visual-studio-ide"></a>Порядок задания параметра -optioninfer в среде Visual Studio IDE  
   
@@ -51,14 +51,14 @@ vbc -optioninfer+ test.vb
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
-- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
-- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Оператор Option Infer](../../../visual-basic/language-reference/statements/option-infer-statement.md)
-- [Вывод локального типа](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [-optioncompare](optioncompare.md)
+- [-optionexplicit](optionexplicit.md)
+- [-optionstrict](optionstrict.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
+- [Оператор Option Infer](../../language-reference/statements/option-infer-statement.md)
+- [Вывод локального типа](../../programming-guide/language-features/variables/local-type-inference.md)
 - [Страница "Параметры Visual Basic по умолчанию", папка "Проекты", диалоговое окно "Параметры"](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
 - [Страница "Компиляция" в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
-- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
-- [Построение из командной строки](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)
+- [-noconfig](noconfig.md)
+- [Построение из командной строки](building-from-the-command-line.md)

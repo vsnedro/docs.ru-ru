@@ -14,16 +14,16 @@ helpviewer_keywords:
 - DataSet class, serializing
 - XML Schema, serializing
 ms.assetid: eec46337-9696-435b-a375-dc5effae6992
-ms.openlocfilehash: 73f21c7f7d0670022d757e6c4c00280bb79709b8
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 98cc4a983c9703e6c5ab132f6110a327c6081b6c
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379176"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84289633"
 ---
 # <a name="examples-of-xml-serialization"></a>Примеры сериализации XML
 
-Сериализация XML может иметь несколько форм, от простой до сложной. Например, можно сериализовать класс, который состоит всего лишь из открытых полей и свойств, как показано в разделе [Введение в сериализацию XML](../../../docs/standard/serialization/introducing-xml-serialization.md). В следующих примерах кода представлены различные сложные сценарии, включая способы использования XML-сериализации для создания потока XML, соответствующего определенному документу схемы XML (XSD).
+Сериализация XML может иметь несколько форм, от простой до сложной. Например, можно сериализовать класс, который состоит всего лишь из открытых полей и свойств, как показано в разделе [Введение в сериализацию XML](introducing-xml-serialization.md). В следующих примерах кода представлены различные сложные сценарии, включая способы использования XML-сериализации для создания потока XML, соответствующего определенному документу схемы XML (XSD).
 
 ## <a name="serializing-a-dataset"></a>Сериализация DataSet
 

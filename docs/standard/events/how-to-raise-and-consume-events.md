@@ -11,17 +11,17 @@ helpviewer_keywords:
 - raising events
 - events [.NET Framework], samples
 ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
-ms.openlocfilehash: 256b5ae9ac2145e339136985872dfa5423aca730
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4d0b24b8a6f1b914745d819b90b973752e32447c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73131584"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84279962"
 ---
 # <a name="how-to-raise-and-consume-events"></a>Практическое руководство. Вызов и прием событий
 В примерах в этом разделе показано, как работать с событиями. Даны примеры делегата <xref:System.EventHandler>, делегата <xref:System.EventHandler%601> и пользовательского делегата, иллюстрирующие события как с данными, так и без.  
   
- В примерах используются понятия, описанные в руководстве по [событиям](../../../docs/standard/events/index.md).  
+ В примерах используются понятия, описанные в руководстве по [событиям](index.md).  
   
 ## <a name="example"></a>Пример  
  В первом примере показано, как вызывать и использовать событие, не содержащее данные. Он содержит класс `Counter` с событием `ThresholdReached`. Это событие возникает, когда значение счетчика больше порогового значения или равно ему. Делегат <xref:System.EventHandler> связан с событием, потому что данные события не предоставляются.  
@@ -44,4 +44,4 @@ ms.locfileid: "73131584"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [События](../../../docs/standard/events/index.md)
+- [События](index.md)

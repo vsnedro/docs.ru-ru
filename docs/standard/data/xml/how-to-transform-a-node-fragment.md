@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 73a6c582-b9d7-4fa7-9a05-6d931e1f3de8
-ms.openlocfilehash: 56e9ef6031a5736acfa066ed6c068f954bd5af8d
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: e44f44db3e12c5e297f137fa247ecfc2d809dd4d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710821"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287718"
 ---
 # <a name="how-to-transform-a-node-fragment"></a>Практическое руководство. Преобразование фрагмента узла
 Во время преобразования данных, содержащихся в объекте <xref:System.Xml.XmlDocument> или <xref:System.Xml.XPath.XPathDocument>, преобразования XSLT применяются к документу в целом. Иными словами, если передать узел, отличный от корневого узла документа, это не помешает процессу преобразования обратиться ко всем узлам загружаемого документа. Чтобы преобразовать фрагмент узла, необходимо создать отдельный объект, содержащий только этот фрагмент, и передать его методу <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A>.  
@@ -47,4 +47,4 @@ ms.locfileid: "75710821"
   
 ## <a name="see-also"></a>См. также
 
-- [Использование класса XslCompiledTransform](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+- [Использование класса XslCompiledTransform](using-the-xslcompiledtransform-class.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - My.Application.Log object, filtering output
 - application event logs, output filtering
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
-ms.openlocfilehash: f18556bbe1ca2d77925482319246d403892d31ef
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: aa63e7d23641ad71b135f15236e29399a535784f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74353591"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398257"
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>Пошаговое руководство. Фильтрация вывода My.Application.Log (Visual Basic)
 
@@ -43,7 +43,7 @@ ms.locfileid: "74353591"
 
 6. Закройте приложение.
 
-     Сведения о просмотре окна вывода отладочных данных приложения см. в разделе [Окно вывода](/visualstudio/ide/reference/output-window). Сведения о расположении файла журнала приложения см. в разделе [Пошаговое руководство. Определение места записи информации для My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).
+     Сведения о просмотре окна вывода отладочных данных приложения см. в разделе [Окно вывода](/visualstudio/ide/reference/output-window). Сведения о расположении файла журнала приложения см. в разделе [Пошаговое руководство. Определение места записи информации для My.Application.Log](walkthrough-determining-where-my-application-log-writes-information.md).
 
     > [!NOTE]
     > По умолчанию приложение записывает выходные данные в файл журнала при закрытии приложения.
@@ -249,13 +249,13 @@ ms.locfileid: "74353591"
 
 10. Закройте приложение.
 
-Дополнительные сведения об изменении параметров журнала после развертывания см. в разделе [Работа с журналами приложения](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).
+Дополнительные сведения об изменении параметров журнала после развертывания см. в разделе [Работа с журналами приложения](working-with-application-logs.md).
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Пошаговое руководство. Определение места записи сведений для My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)
-- [Пошаговое руководство. Изменение места записи сведений для My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
-- [Пошаговое руководство. Создание пользовательских прослушивателей журнала](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)
-- [Практическое руководство. Запись сообщений в журнал](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)
+- [Пошаговое руководство. Определение места записи сведений для My.Application.Log](walkthrough-determining-where-my-application-log-writes-information.md)
+- [Пошаговое руководство. Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md)
+- [Пошаговое руководство. Создание пользовательских прослушивателей журнала](walkthrough-creating-custom-log-listeners.md)
+- [Практическое руководство. Запись сообщений в журнал](how-to-write-log-messages.md)
 - [Переключатели трассировки](../../../../framework/debug-trace-profile/trace-switches.md)
-- [Запись сведений в журнал из приложения](../../../../visual-basic/developing-apps/programming/log-info/index.md)
+- [Запись сведений в журнал из приложения](index.md)

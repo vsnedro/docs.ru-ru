@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -vbruntime compiler option [Visual Basic]
 - /vbruntime compiler option [Visual Basic]
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
-ms.openlocfilehash: 8c7789c6af7b82ecb40ecd73d09f64aa1da3fd4b
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: 31b719fb7e43cdd6ac44424b359999410dd608a5
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72005053"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84403048"
 ---
 # <a name="-vbruntime"></a>-vbruntime
 Указывает, что компилятор должен выполнять компиляцию без ссылки на библиотеку времени выполнения Visual Basic или со ссылкой на конкретную библиотеку времени выполнения.  
@@ -85,7 +85,7 @@ ms.locfileid: "72005053"
 ## <a name="referencing-a-specified-library"></a>Использование ссылки на определенную библиотеку  
  Вы можете использовать аргумент `path` для компиляции со ссылкой на пользовательскую библиотеку среды выполнения вместо стандартной библиотеки среды выполнения Visual Basic.  
   
- Если в качестве значения аргумента `path` указан полный путь к библиотеке DLL, компилятор будет использовать этот файл как библиотеку среды выполнения. Если значение аргумента `path` не является полным путем к DLL, компилятор Visual Basic сначала выполнит поиск определенной библиотеки DLL в текущей папке. Затем он выполнит поиск в папке, которую вы указали с помощью параметра компилятора [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md). Если параметр компилятора `-sdkpath` не используется, компилятор выполнит поиск определенной библиотеки DLL в папке .NET Framework (`%systemroot%\Microsoft.NET\Framework\versionNumber`).  
+ Если в качестве значения аргумента `path` указан полный путь к библиотеке DLL, компилятор будет использовать этот файл как библиотеку среды выполнения. Если значение аргумента `path` не является полным путем к DLL, компилятор Visual Basic сначала выполнит поиск определенной библиотеки DLL в текущей папке. Затем он выполнит поиск в папке, которую вы указали с помощью параметра компилятора [-sdkpath](sdkpath.md). Если параметр компилятора `-sdkpath` не используется, компилятор выполнит поиск определенной библиотеки DLL в папке .NET Framework (`%systemroot%\Microsoft.NET\Framework\versionNumber`).  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как использовать параметр `-vbruntime` для компиляции со ссылкой на пользовательскую библиотеку.  
@@ -97,6 +97,6 @@ vbc -vbruntime:C:\VBLibraries\CustomVBLibrary.dll
 ## <a name="see-also"></a>См. также
 
 - [Visual Basic Core — новый режим компиляции в Visual Studio 2010 с пакетом обновления 1 (SP1)](https://devblogs.microsoft.com/vbteam/vb-core-new-compilation-mode-in-visual-studio-2010-sp1/)
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
+- [-sdkpath](sdkpath.md)

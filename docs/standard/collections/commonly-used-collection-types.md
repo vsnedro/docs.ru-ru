@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Collections classes
 - generic collections
 ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
-ms.openlocfilehash: 04ad3c8d8ea076e881e27e295d87572a51cbc128
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: 47e54bb76c65dd5acc8ce1921ee385a5cb55cf95
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635970"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287995"
 ---
 # <a name="commonly-used-collection-types"></a>Часто используемые типы коллекций
 Типы коллекций — это распространенные виды коллекций данных, такие как хэш-таблицы, очереди, стеки, контейнеры, словари и списки.  
@@ -28,16 +28,16 @@ ms.locfileid: "80635970"
   
  Коллекции могут различаться в зависимости от способов хранения и сортировки элементов, вариантов выполнения поисков и проведения сравнений. Класс <xref:System.Collections.Queue> и универсальный класс <xref:System.Collections.Generic.Queue%601> предоставляют списки по принципу "первым поступил — первым обслужен", а класс <xref:System.Collections.Stack> и универсальный класс <xref:System.Collections.Generic.Stack%601> предоставляют списки по принципу "последним поступил — первым обслужен". Класс <xref:System.Collections.SortedList> и универсальный класс <xref:System.Collections.Generic.SortedList%602> предоставляют сортируемые версии класса <xref:System.Collections.Hashtable> и универсального класса <xref:System.Collections.Generic.Dictionary%602>. Элементы <xref:System.Collections.Hashtable> или <xref:System.Collections.Generic.Dictionary%602> имеют доступ только по ключу элемента, а элементы <xref:System.Collections.SortedList> или <xref:System.Collections.ObjectModel.KeyedCollection%602> доступны с помощью ключа или индекса элемента. Индексы во всех коллекциях отсчитываются от нуля за исключением <xref:System.Array>, допускающего массивы с индексацией не от нуля.  
   
- Функция LINQ to Objects позволяет использовать запросы LINQ для доступа к объектам в памяти при условии, что тип объекта реализует интерфейс <xref:System.Collections.IEnumerable> или <xref:System.Collections.Generic.IEnumerable%601>. Запросы LINQ предоставляют общий шаблон для доступа к данным, являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, а также предоставляют возможности фильтрации, сортировки и группировки. LINQ запросы также могут повысить производительность. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md) и [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).  
+ Функция LINQ to Objects позволяет использовать запросы LINQ для доступа к объектам в памяти при условии, что тип объекта реализует интерфейс <xref:System.Collections.IEnumerable> или <xref:System.Collections.Generic.IEnumerable%601>. Запросы LINQ предоставляют общий шаблон для доступа к данным, являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, а также предоставляют возможности фильтрации, сортировки и группировки. LINQ запросы также могут повысить производительность. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md) и [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
   
 ## <a name="related-topics"></a>См. также  
   
 |Заголовок|Описание|  
 |-----------|-----------------|  
-|[Коллекции и структуры данных](../../../docs/standard/collections/index.md)|Описание различных типов коллекций, доступных в .NET Framework, в том числе стеков, очередей, списков, массивов и библиотек.|  
-|[Типы коллекций Hashtable и Dictionary](../../../docs/standard/collections/hashtable-and-dictionary-collection-types.md)|Описание возможностей универсальных и неуниверсальных типов словарей на основе хэша.|  
-|[Отсортированные типы коллекций](../../../docs/standard/collections/sorted-collection-types.md)|Описание классов, которые предоставляют функции сортировки списков и наборов.|  
-|[Универсальные шаблоны](../../../docs/standard/generics/index.md)|Описание возможности универсальных шаблонов, в том числе универсальных коллекций, делегатов и интерфейсов, предоставляемых платформой .NET Framework. Ссылки на документацию по C#, Visual Basic и Visual C++, а также на вспомогательные технологии, такие как Reflection.|  
+|[Коллекции и структуры данных](index.md)|Описание различных типов коллекций, доступных в .NET Framework, в том числе стеков, очередей, списков, массивов и библиотек.|  
+|[Типы коллекций Hashtable и Dictionary](hashtable-and-dictionary-collection-types.md)|Описание возможностей универсальных и неуниверсальных типов словарей на основе хэша.|  
+|[Отсортированные типы коллекций](sorted-collection-types.md)|Описание классов, которые предоставляют функции сортировки списков и наборов.|  
+|[Универсальные шаблоны](../generics/index.md)|Описание возможности универсальных шаблонов, в том числе универсальных коллекций, делегатов и интерфейсов, предоставляемых платформой .NET Framework. Ссылки на документацию по C#, Visual Basic и Visual C++, а также на вспомогательные технологии, такие как Reflection.|  
   
 ## <a name="reference"></a>Справочник  
  <xref:System.Collections?displayProperty=nameWithType>  

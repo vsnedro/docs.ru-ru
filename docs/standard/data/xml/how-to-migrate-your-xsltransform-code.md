@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 910beb2f-cfb3-4e8e-9936-f7e0c5f4064a
-ms.openlocfilehash: 2bc5cbc1b0857a82d3b0a11f05a4eb5756724546
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 42ca884c269611ebf7dae3b4e7aa8a39ba96b521
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710847"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287744"
 ---
 # <a name="how-to-migrate-your-xsltransform-code"></a>Практическое руководство. Как провести миграцию кода XslTransform
 Новые классы XSLT разработаны так, чтобы быть похожими на существующие классы. Класс <xref:System.Xml.Xsl.XslCompiledTransform> заменяет класс <xref:System.Xml.Xsl.XslTransform>. Таблицы стилей компилируются с помощью метода <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A>. Преобразования выполняются с помощью метода <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A>. В следующей процедуре показаны распространенные XSLT-задачи, а сравнивается код использования классов <xref:System.Xml.Xsl.XslTransform> и <xref:System.Xml.Xsl.XslCompiledTransform>.  
@@ -93,5 +93,5 @@ ms.locfileid: "75710847"
   
 ## <a name="see-also"></a>См. также
 
-- [Миграция с класса XslTransform](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md)
-- [Использование класса XslCompiledTransform](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+- [Миграция с класса XslTransform](migrating-from-the-xsltransform-class.md)
+- [Использование класса XslCompiledTransform](using-the-xslcompiledtransform-class.md)

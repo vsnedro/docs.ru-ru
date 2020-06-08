@@ -9,19 +9,19 @@ helpviewer_keywords:
 - task parallelism in .NET
 - parallel programming, task parallelism
 ms.assetid: 6b3ecd79-dec9-4ce1-abf4-62e5392a59c6
-ms.openlocfilehash: f61bbf10bbeef736f66710f50e621c3619355a1d
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: 2b353fb8cb5e04ee4cab6b49f55539ecb40fab4f
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635801"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84290802"
 ---
 # <a name="how-to-use-parallelinvoke-to-execute-parallel-operations"></a>Практическое руководство. Использование Parallel.Invoke для выполнения параллельных операций
 
 В этом примере показывается, как параллелизовать операции с помощью метода <xref:System.Threading.Tasks.Parallel.Invoke%2A> в библиотеке параллельных задач. В общем источнике данных выполняются три операции. Они могут выполняться параллельно простым способом, поскольку ни одна из этих операций не изменяет источник.
 
 > [!NOTE]
-> В этой документации для определения делегатов в библиотеке параллельных задач используются лямбда-выражения. Если вы не знакомы с лямбда-выражениями в C# или Visual Basic, см. статью [Лямбда-выражения в PLINQ и библиотеке параллельных задач](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).
+> В этой документации для определения делегатов в библиотеке параллельных задач используются лямбда-выражения. Если вы не знакомы с лямбда-выражениями в C# или Visual Basic, см. статью [Лямбда-выражения в PLINQ и библиотеке параллельных задач](lambda-expressions-in-plinq-and-tpl.md).
 
 ## <a name="example"></a>Пример
 
@@ -38,6 +38,6 @@ ms.locfileid: "80635801"
 
 ## <a name="see-also"></a>См. также
 
-- [Параллельное программирование](../../../docs/standard/parallel-programming/index.md)
-- [Практическое руководство. Отмена задачи и ее дочерних элементов](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
+- [Параллельное программирование](index.md)
+- [Практическое руководство. Отмена задачи и ее дочерних элементов](how-to-cancel-a-task-and-its-children.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

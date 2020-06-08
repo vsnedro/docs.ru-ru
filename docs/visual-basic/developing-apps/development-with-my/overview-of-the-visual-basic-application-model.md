@@ -5,12 +5,12 @@ helpviewer_keywords:
 - My.Application object [Visual Basic], Visual Basic application model
 - Visual Basic application model
 ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
-ms.openlocfilehash: aa47304cf2bded93bdb95ffe7dfa35bb37d9a643
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 46177d0af7e5df767eb8421caf424880baac615e
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73976462"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84411731"
 ---
 # <a name="overview-of-the-visual-basic-application-model"></a>Обзор модели приложения в Visual Basic
 
@@ -67,4 +67,4 @@ Visual Basic предоставляет четко определенную мо
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown>
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged>
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
-- [Расширение модели приложения Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)
+- [Расширение модели приложения Visual Basic](../customizing-extending-my/extending-the-visual-basic-application-model.md)

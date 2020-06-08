@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, improving efficiency
 ms.assetid: 5beb4983-80c2-4f60-8c51-a07f9fd94cb3
-ms.openlocfilehash: 4b2b6a6124bf8cc0fb3b379607135283678e3268
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e572c5a14958ccc069ae7649af8c8ed4eb967dc1
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73091362"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284589"
 ---
 # <a name="walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency"></a>Пошаговое руководство. Повышение эффективности с помощью BatchBlock и BatchedJoinBlock
 
@@ -24,7 +24,7 @@ ms.locfileid: "73091362"
 
 ## <a name="prerequisites"></a>Prerequisites
 
-1. Прочитайте описание блоков объединения в документации по [потокам данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md), прежде чем приступать к этому руководству.
+1. Прочитайте описание блоков объединения в документации по [потокам данных](dataflow-task-parallel-library.md), прежде чем приступать к этому руководству.
 
 2. Убедитесь, что на вашем компьютере есть копия базы данных Northwind, Northwind.sdf. Этот файл обычно находится в папке %Program Files%\Microsoft SQL Server Compact Edition\v3.5\Samples\\.
 
@@ -131,4 +131,4 @@ ms.locfileid: "73091362"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Поток данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Поток данных](dataflow-task-parallel-library.md)

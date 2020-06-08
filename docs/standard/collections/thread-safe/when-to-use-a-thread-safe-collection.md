@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - thread-safe collections, when to upgrade
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
-ms.openlocfilehash: 5a0abef6de9f932f44fc7e3239b98c3a27846580
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e2c5d612abb824c93c611514a836c811e6e65efe
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75711224"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288879"
 ---
 # <a name="when-to-use-a-thread-safe-collection"></a>Преимущества использования потокобезопасных коллекций
 В .NET Framework 4 представлено пять новых типов коллекций, специально разработанных для поддержки многопотоковых операций добавления и удаления. Для достижения потокобезопасности эти новые типы используют различные типы эффективных механизмов синхронизации с блокировкой и без блокировки. Синхронизация добавляет к операции издержки. Значения издержек зависят от используемого типа синхронизации, выполняемого типа операции и других факторов, например количества потоков, которые одновременно пытаются получить доступ к коллекции.  
@@ -63,5 +63,5 @@ ms.locfileid: "75711224"
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
-- [Потокобезопасные коллекции](../../../../docs/standard/collections/thread-safe/index.md)
-- [Параллельное программирование](../../../../docs/standard/parallel-programming/index.md)
+- [Потокобезопасные коллекции](index.md)
+- [Параллельное программирование](../../parallel-programming/index.md)
