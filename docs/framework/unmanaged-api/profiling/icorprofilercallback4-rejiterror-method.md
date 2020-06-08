@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d7888aa9-dfaa-420f-9f99-e06ab35ca482
 topic_type:
 - apiref
-ms.openlocfilehash: 66195ea9df4c8e9ce847b38f7d020a3bebffcd37
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 488069f3ea16352cb7bb5e81b9a726637a7a65f8
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76865185"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84499367"
 ---
 # <a name="icorprofilercallback4rejiterror-method"></a>Метод ICorProfilerCallback4::ReJITError
 Уведомляет профилировщик о том, что компилятор JIT обнаружил ошибку в процессе перекомпиляции.  
@@ -37,13 +37,13 @@ HRESULT ReJITError(
   
 ## <a name="parameters"></a>Параметры  
  `moduleID`  
- окне `ModuleID`, в котором была выполнена попытка повторной компиляции с ошибкой.  
+ окне Объект, `ModuleID` в котором была выполнена повторная попытка повторной компиляции.  
   
  `methodId`  
- окне `MethodDef` метода, для которого была выполнена попытка повторной компиляции.  
+ окне `MethodDef`Метод метода, для которого была выполнена попытка повторной компиляции.  
   
  `functionId`  
- окне Экземпляр функции, который перекомпилируется или помечен для повторной компиляции. Это значение может быть `NULL`, если ошибка возникла для каждого метода, а не для отдельных экземпляров (например, если профилировщик указал недопустимый токен метаданных для повторной компиляции метода).  
+ окне Экземпляр функции, который перекомпилируется или помечен для повторной компиляции. Это значение может быть `NULL` , если ошибка возникла для каждого метода, а не для каждого экземпляра (например, если профилировщик указал недопустимый токен метаданных для повторной компиляции метода).  
   
  `hrStatus`  
  окне Значение HRESULT, указывающее природу сбоя. Список значений см. в разделе Status HRESULTs.  
@@ -55,23 +55,23 @@ HRESULT ReJITError(
   
 |Массив значений HRESULT для состояния|Описание|  
 |--------------------------|-----------------|  
-|E_INVALIDARG|Маркер `moduleID` или `methodDef` `NULL`.|  
+|E_INVALIDARG|`moduleID`Токен или `methodDef` имеет значение `NULL` .|  
 |CORPROF_E_DATAINCOMPLETE|Модуль еще не полностью загружен или находится в процессе выгрузки.|  
-|CORPROF_E_MODULE_IS_DYNAMIC|Указанный модуль был динамически создан (например, с `Reflection.Emit`) и поэтому не поддерживается этим методом.|  
-|CORPROF_E_FUNCTION_IS_COLLECTIBLE|Экземпляр метода создается в собираемой сборке и поэтому не может быть перекомпилирован. Обратите внимание, что типы и функции, определенные в контексте без отражения (например, `List<MyCollectibleStruct>`), можно создать в собираемой сборке.|  
+|CORPROF_E_MODULE_IS_DYNAMIC|Указанный модуль был динамически создан (например, by `Reflection.Emit` ) и поэтому не поддерживается этим методом.|  
+|CORPROF_E_FUNCTION_IS_COLLECTIBLE|Экземпляр метода создается в собираемой сборке и поэтому не может быть перекомпилирован. Обратите внимание, что типы и функции, определенные в контексте, не являющемся контекстом отражения (например, `List<MyCollectibleStruct>` ), можно создать в собираемой сборке.|  
 |E_OUTOFMEMORY|В среде CLR возникла нехватка памяти при попытке пометить указанный метод для повторной компиляции JIT.|  
 |Другой|Операционная система возвратила сбой за пределами среды CLR. Например, если системный вызов для изменения защиты доступа к странице памяти завершается ошибкой, отображается сообщение об ошибке операционной системы.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback4](icorprofilercallback4-interface.md)

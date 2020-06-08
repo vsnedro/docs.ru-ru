@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 31214d3a-715e-49af-92b3-0fd11e4f218a
 topic_type:
 - apiref
-ms.openlocfilehash: 64c70fe0b657047ae35dccb763fa57120403deef
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8ab16ad5b2b2838125e07511ef47be737f40671c
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177155"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501213"
 ---
 # <a name="imetadatatablesgetcodedtokeninfo-method"></a>Метод IMetaDataTables::GetCodedTokenInfo
-Получает указатель на массив токенов, связанных с указанным индексом строки.  
+Возвращает указатель на массив токенов, связанных с указанным индексом строки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,27 +38,27 @@ HRESULT GetCodedTokenInfo (
   
 ## <a name="parameters"></a>Параметры  
  `ixCdTkn`  
- (в) Вид закодированного маркера для возврата.  
+ окне Тип возвращаемого закодированного токена.  
   
  `pcTokens`  
- (ваут) Указатель на длину `ppTokens`.  
+ заполняет Указатель на длину `ppTokens` .  
   
  `ppTokens`  
- (ваут) Указатель указателя на указатель на массив, содержащий список возвращенных токенов.  
+ заполняет Указатель на указатель на массив, содержащий список возвращенных токенов.  
   
  `ppName`  
- (ваут) Указатель на указатель на имя маркера `ixCdTkn`на .  
+ заполняет Указатель на указатель на имя маркера в `ixCdTkn` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataTables](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [Интерфейс IMetaDataTables2](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [Интерфейс IMetaDataTables](imetadatatables-interface.md)
+- [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)

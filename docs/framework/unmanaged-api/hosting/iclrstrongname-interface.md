@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2fac66fd-6b3b-4dbd-8baf-86038bd85526
 topic_type:
 - apiref
-ms.openlocfilehash: 04260429dd69f5ba1d6a94b6628979341d12b9e8
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 0b6efcbe4458977e8e938afabd7ae59171bc065a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762088"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501655"
 ---
 # <a name="iclrstrongname-interface"></a>Интерфейс ICLRStrongName
 Предоставляет базовые глобальные статические функции для подписи сборок со строгими именами. Все `ICLRStrongName` методы возвращают стандартные значения HRESULT com.  
@@ -35,7 +35,7 @@ ms.locfileid: "83762088"
 |[Метод GetHashFromFileW](iclrstrongname-gethashfromfilew-method.md)|Создает хэш содержимого файла, указанного строкой Юникода.|  
 |[Метод GetHashFromHandle](iclrstrongname-gethashfromhandle-method.md)|Создает хэш содержимого файла с заданным дескриптором файла с помощью указанного хэш-алгоритма.|  
 |[Метод StrongNameCompareAssemblies](iclrstrongname-strongnamecompareassemblies-method.md)|Определяет, отличаются ли две сборки только подписями строгого имени.|  
-|[Метод StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md)|Освобождает память, выделенную с помощью предыдущего вызова метода строгого имени, такого как [StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetpublickey-method.md), [StrongNameTokenFromPublicKey](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfrompublickey-method.md)или [StrongNameSignatureGeneration](iclrstrongname-strongnamesignaturegeneration-method.md).|  
+|[Метод StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md)|Освобождает память, выделенную с помощью предыдущего вызова метода строгого имени, такого как [StrongNameGetPublicKey](iclrstrongname-strongnamegetpublickey-method.md), [StrongNameTokenFromPublicKey](iclrstrongname-strongnametokenfrompublickey-method.md)или [StrongNameSignatureGeneration](iclrstrongname-strongnamesignaturegeneration-method.md).|  
 |[Метод StrongNameGetBlob](iclrstrongname-strongnamegetblob-method.md)|Заполняет указанный буфер двоичным представлением исполняемого файла по указанному адресу.|  
 |[Метод StrongNameGetBlobFromImage](iclrstrongname-strongnamegetblobfromimage-method.md)|Получает двоичное представление образа сборки по указанному адресу памяти.|  
 |[Метод StrongNameGetPublicKey](iclrstrongname-strongnamegetpublickey-method.md)|Получает открытый ключ из пары закрытого и открытого ключей.|  
@@ -54,7 +54,7 @@ ms.locfileid: "83762088"
 |[Метод StrongNameTokenFromAssemblyEx](iclrstrongname-strongnametokenfromassemblyex-method.md)|Создает маркер строгого имени из указанного файла сборки и возвращает открытый ключ.|  
 |[Метод StrongNameTokenFromPublicKey](iclrstrongname-strongnametokenfrompublickey-method.md)|Получает маркер, представляющий открытый ключ.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Примечания  
  Экземпляр компонента можно получить `ICLRStrongName` , вызвав метод [ICLRRuntimeInfo::](iclrruntimeinfo-getinterface-method.md) WebMethod с использованием `CLSID_CLRStrongName` и `IID_ICLRStrongName` в качестве параметров.  
   
 ## <a name="requirements"></a>Требования  

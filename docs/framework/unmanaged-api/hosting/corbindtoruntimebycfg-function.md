@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ded1e492-a782-4185-9c66-709e421c1782
 topic_type:
 - apiref
-ms.openlocfilehash: 9326484c6a9f96d245e3c61a0ac3e3465a8a6dcd
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 8b7dcdcc6d9d0106af1bb83ee591cff76239b416
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616649"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504443"
 ---
 # <a name="corbindtoruntimebycfg-function"></a>Функция CorBindToRuntimeByCfg
 Загружает среду CLR в процесс с использованием сведений о версии, считываемых из XML-файла.  
@@ -50,7 +50,7 @@ HRESULT CorBindToRuntimeByCfg (
  окне Значение перечисления [STARTUP_FLAGS](startup-flags-enumeration.md) , указывающее поведение среды CLR при запуске.  
   
  `rclsid`  
- окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
+ окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
  окне `IID`Либо `ICorRuntimeHost` интерфейса, либо `ICLRRuntimeHost` . Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
@@ -58,7 +58,7 @@ HRESULT CorBindToRuntimeByCfg (
  `ppv`  
  заполняет Указатель на адрес возвращенного интерфейса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Примечания  
  Формат XML-файла моделируется после стандартного файла конфигурации приложения. Дополнительные сведения о XML-файлах см. в разделе [Схема файла конфигурации](../../configure-apps/file-schema/index.md).  
   
 ## <a name="requirements"></a>Требования  
@@ -70,7 +70,7 @@ HRESULT CorBindToRuntimeByCfg (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntime](corbindtoruntime-function.md)

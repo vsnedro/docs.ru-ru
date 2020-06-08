@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 75331c7b-988b-436c-9eb9-a270d37b4f06
 topic_type:
 - apiref
-ms.openlocfilehash: 42b8360ac6a7bb62f29046475d6cc98124619770
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 94b4c3935c949c0c4008e41244713b6bfa4dba84
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449967"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503722"
 ---
 # <a name="imetadataimportenumtypespecs-method"></a>Метод IMetaDataImport::EnumTypeSpecs
 Перечисляет токены TypeSpec, определенные в текущей области метаданных.  
@@ -47,28 +47,28 @@ HRESULT EnumTypeSpecs (
  [in] Максимальный размер массива `rTypeSpecs`.  
   
  `pcTypeSpecs`  
- заполняет Число токенов TypeSpec, возвращаемых в `rTypeSpecs`.  
+ заполняет Число токенов TypeSpec, возвращаемых в `rTypeSpecs` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumTypeSpecs` успешно возвращено.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом случае `pcTypeSpecs` равно нулю.|  
+|`S_OK`|`EnumTypeSpecs`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcTypeSpecs` равно нулю.|  
   
-## <a name="remarks"></a>Заметки  
- Токены TypeSpec создаются методом [IMetaDataEmit:: жеттокенфромтипеспек](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-gettokenfromtypespec-method.md) .  
+## <a name="remarks"></a>Примечания  
+ Токены TypeSpec создаются методом [IMetaDataEmit:: жеттокенфромтипеспек](imetadataemit-gettokenfromtypespec-method.md) .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

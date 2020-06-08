@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 895c35cf-b95d-4e3b-93b5-cfc1cf9044fc
 topic_type:
 - apiref
-ms.openlocfilehash: 216a1f7bd2ff5a596fa7abf7874b5e603d5a9f7b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 41e7b8193ce3288d526db8d7d8c289b0a053ee4e
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175243"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84489760"
 ---
 # <a name="imetadatatablesgetstring-method"></a>Метод IMetaDataTables::GetString
-Получает строку в указанном индексе из столбца таблицы в текущей области отсчета.  
+Возвращает строку по указанному индексу из столбца таблицы в области текущей ссылки.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,21 +36,21 @@ HRESULT GetString (
   
 ## <a name="parameters"></a>Параметры  
  `ixString`  
- (в) Индекс, на котором можно начать поиск следующего значения.  
+ окне Индекс, с которого начинается поиск следующего значения.  
   
  `ppString`  
- (ваут) Указатель указателя на указатель на возвращенное значение строки.  
+ заполняет Указатель на указатель на возвращаемое строковое значение.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataTables](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [Интерфейс IMetaDataTables2](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [Интерфейс IMetaDataTables](imetadatatables-interface.md)
+- [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)

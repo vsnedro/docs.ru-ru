@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1032055b-cabb-45c5-a50e-7e853201b175
 topic_type:
 - apiref
-ms.openlocfilehash: f43d4d1547cbe92f325950e1697dada83b42c4f3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 76d23fe9221ae5a07d79b8c5c1a7ad297922b003
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177140"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501252"
 ---
 # <a name="imetadatatablesgetcolumn-method"></a>Метод IMetaDataTables::GetColumn
-Получает указатель на значение, содержащееся в ячейке указанного столбца и строку в данной таблице.  
+Возвращает указатель на значение, содержащееся в ячейке указанного столбца и строки в заданной таблице.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,48 +39,48 @@ HRESULT GetColumn (
 ## <a name="parameters"></a>Параметры
 
  `ixTbl`  
- (в) Индекс таблицы.  
+ окне Индекс таблицы.  
   
  `ixCol`  
- (в) Индекс столбца в таблице.  
+ окне Индекс столбца в таблице.  
   
  `rid`  
- (в) Индекс строки в таблице.  
+ окне Индекс строки в таблице.  
   
  `pVal`  
- (ваут) Указатель на значение в ячейке.  
+ заполняет Указатель на значение в ячейке.  
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Интерпретация возвращенного значения `pVal` зависит от типа столбца. Тип столбца можно определить, позвонив по [iMetaDataTables.GetColumnInfo](imetadatatables-getcolumninfo-method.md).
+Интерпретация значения, возвращаемого с помощью, `pVal` зависит от типа столбца. Тип столбца можно определить с помощью метода [IMetaDataTables. GetColumnInfo](imetadatatables-getcolumninfo-method.md).
 
-- Метод **GetColumn** автоматически преобразует столбцы типа **Rid** или **CodedToken** `mdToken` в полные 32-битные значения.
-- Он также автоматически преобразует 8-битные или 16-битные значения в полные 32-битные значения.
-- Для столбцов *типа кучи* возвращенный *pVal* будет индексом в соответствующую кучу.
+- Метод **DataColumn** автоматически преобразует столбцы типа **RID** или **кодедтокен** в полные 32-разрядные `mdToken` значения.
+- Он также автоматически преобразует 8-битные или 16-битные значения в полные 32-разрядные значения.
+- Для столбцов типа *кучи* возвращенный *Pval* будет индексом в соответствующей куче.
 
-| Тип столбца              | pVal содержит | Комментарий                          |
+| Тип столбца              | pVal содержит | Комментировать                          |
 |--------------------------|---------------|-----------------------------------|
-| `0`..`iRidMax`<br>(0..63)  | mdToken     | *pVal* будет содержать полный токен. Функция автоматически преобразует Rid в полный маркер. |
-| `iCodedToken`..`iCodedTokenMax`<br>(64..95) | mdToken | По возвращении *pVal* будет содержать полный токен. Функция автоматически распаковывает CodedToken в полный маркер. |
-| `iSHORT`(96)            | Int16         | Автоматически знак-расширенный до 32-битного.  |
-| `iUSHORT`(97)           | UInt16        | Автоматически знак-расширенный до 32-битного.  |
+| `0`..`iRidMax`<br>(0.. 63)  | mdToken     | *Pval* будет содержать полный маркер. Функция автоматически преобразует RID в полный маркер. |
+| `iCodedToken`..`iCodedTokenMax`<br>(64.. 95) | mdToken | После возврата *Pval* будет содержать полный маркер. Функция автоматически распаковывает Кодедтокен в полную лексему. |
+| `iSHORT`(96)            | Int16         | Автоматический вход в 32-разрядный.  |
+| `iUSHORT`(97)           | UInt16        | Автоматический вход в 32-разрядный.  |
 | `iLONG`(98)             | Int32         |                                        |
 | `iULONG`(99)            | UInt32        |                                        |
-| `iBYTE`(100)            | Byte          | Автоматически знак-расширенный до 32-битного.  |
-| `iSTRING`(101)          | Индекс струнной кучи | *pVal* — это индекс в струнную кучу. Используйте [IMetadataTables::GetString,](imetadatatables-getstring-method.md) чтобы получить фактическое значение строки столбца. |
-| `iGUID`(102)            | Индекс кучи Guid | *pVal* — это индекс в кучу Guid. Используйте [IMetadataTables::GetGuid,](imetadatatables-getguid-method.md) чтобы получить фактическое значение guid столбца. |
-| `iBLOB`(103)            | Индекс кучи blob | *pVal* является индексом в кучу Blob. Используйте [IMetadataTables::GetBlob,](imetadatatables-getblob-method.md) чтобы получить фактическое значение blob столбца. |
+| `iBYTE`(100)            | Byte          | Автоматический вход в 32-разрядный.  |
+| `iSTRING`(101)          | Индекс строковой кучи | *Pval* — это индекс в куче строк. Используйте [IMetadataTables:: GetString](imetadatatables-getstring-method.md) , чтобы получить фактическое строковое значение столбца. |
+| `iGUID`(102)            | Индекс кучи GUID | *Pval* — это индекс в куче GUID. Чтобы получить действительное значение GUID столбца, используйте [IMetadataTables::](imetadatatables-getguid-method.md) DataColumn. |
+| `iBLOB`(103)            | Индекс кучи больших двоичных объектов | *Pval* — это индекс в куче больших двоичных объектов. Для получения действительного значения большого двоичного объекта столбца используйте [IMetadataTables::-BLOB](imetadatatables-getblob-method.md) . |
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Рамочные версии .NET**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Версии .NET Framework**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataTables](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [Интерфейс IMetaDataTables2](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [Интерфейс IMetaDataTables](imetadatatables-interface.md)
+- [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)

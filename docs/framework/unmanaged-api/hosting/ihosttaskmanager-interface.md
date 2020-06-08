@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
 topic_type:
 - apiref
-ms.openlocfilehash: b742f717f4caa0ba23d5a4c1438ed3ce4dcc60d7
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 190908c675b96b8ea2d81fb0203aa16a80d6a8b4
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842261"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501408"
 ---
 # <a name="ihosttaskmanager-interface"></a>Интерфейс IHostTaskManager
 Предоставляет методы, позволяющие среде CLR работать с задачами через основное приложение, а не использовать стандартные функции потоков или волоконно-оптической операционной системы.  
@@ -40,7 +40,7 @@ ms.locfileid: "83842261"
 |[Метод LeaveRuntime](ihosttaskmanager-leaveruntime-method.md)|Уведомляет узел о том, что управляемый код собирается выполнить вызов неуправляемой функции.|  
 |[Метод ReverseEnterRuntime](ihosttaskmanager-reverseenterruntime-method.md)|Уведомляет узел о том, что в среде CLR выполняется вызов из неуправляемого кода.|  
 |[Метод ReverseLeaveRuntime](ihosttaskmanager-reverseleaveruntime-method.md)|Уведомляет узел, что элемент управления выходит из среды CLR и вводит неуправляемую функцию, которая, в свою очередь, вызывается из управляемого кода.|  
-|[Метод SetCLRTaskManager](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-setclrtaskmanager-method.md)|Предоставляет узлу указатель интерфейса на экземпляр [ICLRTaskManager](iclrtaskmanager-interface.md) , РЕАЛИЗУЕМый средой CLR.|  
+|[Метод SetCLRTaskManager](ihosttaskmanager-setclrtaskmanager-method.md)|Предоставляет узлу указатель интерфейса на экземпляр [ICLRTaskManager](iclrtaskmanager-interface.md) , РЕАЛИЗУЕМый средой CLR.|  
 |[Метод SetLocale](ihosttaskmanager-setlocale-method.md)|Уведомляет узел о том, что среда CLR изменила языковой стандарт текущей задачи.|  
 |[Метод SetStackGuarantee](ihosttaskmanager-setstackguarantee-method.md)|Зарезервировано только для внутреннего использования.|  
 |[Метод SetUILocale](ihosttaskmanager-setuilocale-method.md)|Уведомляет узел о том, что языковой стандарт пользовательского интерфейса был изменен в текущей задаче.|  
@@ -59,7 +59,7 @@ ms.locfileid: "83842261"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

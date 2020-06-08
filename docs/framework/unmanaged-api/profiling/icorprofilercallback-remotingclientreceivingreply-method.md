@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 15cfc300-8231-4ecb-9a04-19851c3eb484
 topic_type:
 - apiref
-ms.openlocfilehash: f7a943627e2087e6b8c78ced9fc32824843d44fc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0a21924008bcbfa0894218f57aee559a564f8003
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175139"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84499978"
 ---
 # <a name="icorprofilercallbackremotingclientreceivingreply-method"></a>Метод ICorProfilerCallback::RemotingClientReceivingReply
-Уведомляет профайлера о том, что часть вызова на стороне сервера перемотающего вызова завершена и клиент получает и собирается обработать ответ.  
+Уведомляет профилировщик о завершении серверной части удаленного вызова, а также о получении и обработке ответа клиентом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,28 +35,28 @@ HRESULT RemotingClientReceivingReply(
   
 ## <a name="parameters"></a>Параметры  
  `pCookie`  
- (в) Значение, которое будет соответствовать значению, предоставленному в [ICorProfilerCallback::RemotingServerSendingReply](icorprofilercallback-remotingserversendingreply-method.md) в следующих условиях:  
+ окне Значение, которое будет соответствовать значению, указанному в параметре [ICorProfilerCallback:: RemotingServerSendingReply](icorprofilercallback-remotingserversendingreply-method.md) в следующих условиях:  
   
-- Ремотивация GUID печенье активны.  
+- Файлы Cookie GUID удаленного взаимодействия активны.  
   
-- Каналу удается передать сообщение.  
+- Канал проходит успешную передачу сообщения.  
   
-- GuiD-файлы cookie активны в процессе на стороне сервера.  
+- Файлы Cookie GUID активны в процессе на стороне сервера.  
   
- Это позволяет легко спаривать перемотание вызовов.  
+ Это позволяет легко связывать вызовы удаленного взаимодействия.  
   
  `fIsAsync`  
- (в) Значение, `true` если вызов является асинхронным; в `false`противном случае, .  
+ окне Значение, равное, `true` Если вызов является асинхронным; в противном случае — `false` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

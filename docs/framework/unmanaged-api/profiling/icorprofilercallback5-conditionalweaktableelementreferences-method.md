@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 532c7a02-a9de-4cea-bb2b-7f470da594de
 topic_type:
 - apiref
-ms.openlocfilehash: ad721d28f6a7dc6ae0370ce10178990cb02fb9f9
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 17fbc99b30921f795c1f7ff882ec73432aade8c6
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74430053"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84499250"
 ---
 # <a name="icorprofilercallback5conditionalweaktableelementreferences-method"></a>Метод ICorProfilerCallback5::ConditionalWeakTableElementReferences
 
@@ -46,7 +46,7 @@ HRESULT ConditionalWeakTableElementReferences(
 [в] Массив идентификаторов объектов, каждый из которых содержит `ObjectID` для основного элемента в зависимости пары дескриптора.
 
 `valueRefIds`\
-[в] Массив идентификаторов объектов, каждый из которых содержит `ObjectID` для дополнительного элемента в зависимости пары дескриптора. (`keyRefIds[i]` поддерживает `valueRefIds[i]` Alive.)
+[в] Массив идентификаторов объектов, каждый из которых содержит `ObjectID` для дополнительного элемента в зависимости пары дескриптора. ( `keyRefIds[i]` продолжает `valueRefIds[i]` существовать.)
 
 `rootIds`\
 [в] Массив значений `GCHandleID`, указывающий на целое число, который содержит дополнительные сведения о корне сборки мусора.
@@ -80,15 +80,15 @@ HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
 
 ## <a name="remarks"></a>Примечания
 
-Профилировщик для .NET Framework 4,5 или более поздних версий реализует интерфейс [ICorProfilerCallback5](icorprofilercallback5-interface.md) и записывает зависимости, заданные методом `ConditionalWeakTableElementReferences`. `ICorProfilerCallback5` предоставляет полный набор зависимостей между динамическими объектами, представленными записями `ConditionalWeakTable`. Эти зависимости и ссылки на поля элементов, заданные методом [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md) , позволяют управляемому профилировщику создавать полный граф объектов для активных объектов.
+Профилировщик для .NET Framework 4,5 или более поздних версий реализует интерфейс [ICorProfilerCallback5](icorprofilercallback5-interface.md) и записывает зависимости, заданные `ConditionalWeakTableElementReferences` методом. `ICorProfilerCallback5`предоставляет полный набор зависимостей между динамическими объектами, представленными `ConditionalWeakTable` записями. Эти зависимости и ссылки на поля элементов, заданные методом [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md) , позволяют управляемому профилировщику создавать полный граф объектов для активных объектов.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).
+**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]
+**.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]
 
 ## <a name="see-also"></a>См. также
 

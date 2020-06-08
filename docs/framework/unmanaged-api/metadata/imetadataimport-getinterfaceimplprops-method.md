@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: be3f5985-b1e4-4036-8602-c16e8508d4af
 topic_type:
 - apiref
-ms.openlocfilehash: 4b8ddf7fec12d175f030c0ea0ed982c6fb334aee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1c9d9647084aa729817eeeb17ee3f5cd320c0d29
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175386"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491253"
 ---
 # <a name="imetadataimportgetinterfaceimplprops-method"></a>Метод IMetaDataImport::GetInterfaceImplProps
-Получает указатель на маркеры метаданных <xref:System.Type> для того, который реализует указанный метод, и для интерфейса, который декларирует этот метод.
+Возвращает указатель на маркеры метаданных для <xref:System.Type> , который реализует указанный метод, и для интерфейса, объявляющего этот метод.
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -37,25 +37,25 @@ HRESULT GetInterfaceImplProps (
   
 ## <a name="parameters"></a>Параметры  
  `iiImpl`  
- (в) Токен метаданных, представляющий метод возврата маркеров класса и интерфейса.  
+ окне Токен метаданных, представляющий метод, для которого необходимо вернуть маркеры класса и интерфейса.  
   
  `pClass`  
- (ваут) Токен метаданных, представляющий класс, реализующий метод.  
+ заполняет Маркер метаданных, представляющий класс, реализующий метод.  
   
  `ptkIface`  
- (ваут) Токен метаданных, представляющий интерфейс, определяющий реализованный метод.  
+ заполняет Токен метаданных, представляющий интерфейс, определяющий реализованный метод.  
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
- Значение для `iImpl` получения, позвонив в метод [EnumInterfaceImpls.](imetadataimport-enuminterfaceimpls-method.md)
+ Получить значение для можно `iImpl` путем вызова метода [енуминтерфацеимплс](imetadataimport-enuminterfaceimpls-method.md) .
 
- Например, предположим, что `mdTypeDef` класс имеет значение маркера 0x02000007 и что он реализует три интерфейса, типы которых имеют токены:
+ Например, предположим, что класс имеет `mdTypeDef` значение маркера 0x02000007 и реализует три интерфейса, типы которых имеют токены:
 
-- 0x0200003 (TypeDef)
+- 0x02000003 (TypeDef)
 - 0x0100000A (TypeRef)
 - 0x0200001C (TypeDef)
 
-Концептуально эта информация хранится в таблице реализации интерфейса как:
+По сути, эта информация хранится в таблице реализации интерфейса следующим образом:
 
 | Номер строки | Токен класса | Токен интерфейса |
 |------------|-------------|-----------------|
@@ -65,23 +65,23 @@ HRESULT GetInterfaceImplProps (
 | 7          |             |                 |
 | 8          | 02000007    | 0200001C        |
 
-Напомним, токен представляет собой значение 4 байт:
+Помните, что маркер является 4-байтовым значением:
 
-- Нижние 3 байта удерживают рядное число, или RID.
-- Верхний байт содержит тип маркера - `mdtInterfaceImpl`0x09 для .
+- 3 младших байта содержат номер строки или RID.
+- Верхний байт содержит тип токена — 0x09 для `mdtInterfaceImpl` .
 
-`GetInterfaceImplProps`возвращает информацию, хранявшуюся в `iImpl` строке, токен которой вы предоставляете в споре.
+`GetInterfaceImplProps`Возвращает информацию, удерживаемую в строке, токен которой вы задаете в `iImpl` аргументе.
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0863f644-58e8-45a0-b0c3-a28e99b20938
 topic_type:
 - apiref
-ms.openlocfilehash: 9ee6f43c94b8ff2e765d2a0dde0697c4c895a94f
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: c0381cf924e44e581c8b275c9750cacba045cf1b
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212377"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501785"
 ---
 # <a name="icordebugmanagedcallbackupdatemodulesymbols-method"></a>Метод ICorDebugManagedCallback::UpdateModuleSymbols
 Уведомляет отладчик о том, что символы для модуля среды CLR были изменены.  
@@ -45,8 +45,8 @@ HRESULT UpdateModuleSymbols (
  `pSymbolStream`  
  окне Указатель на COM-объект Win32 `IStream` , содержащий измененные символы.  
   
-## <a name="remarks"></a>Remarks  
- Этот метод предоставляет возможность обновить представление символов модуля отладчика путем вызова [ISymUnmanagedReader:: UpdateSymbolStore](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-updatesymbolstore-method.md) или [ISymUnmanagedReader:: ReplaceSymbolStore](../diagnostics/isymunmanagedreader-replacesymbolstore-method.md).  
+## <a name="remarks"></a>Примечания  
+ Этот метод предоставляет возможность обновить представление символов модуля отладчика путем вызова [ISymUnmanagedReader:: UpdateSymbolStore](../diagnostics/isymunmanagedreader-updatesymbolstore-method.md) или [ISymUnmanagedReader:: ReplaceSymbolStore](../diagnostics/isymunmanagedreader-replacesymbolstore-method.md).  
   
  Этот обратный вызов может происходить несколько раз для одного модуля.  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b38bbc9a-872c-41a9-b8c3-ca011d25456a
 topic_type:
 - apiref
-ms.openlocfilehash: 81b6f009ea61294f398a21c4def927ef2609f32b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: f63b761497b3e9a19a9b939b45acf60d5a7d37b0
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615754"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504242"
 ---
 # <a name="iclrdebugmanagersetconnectiontasks-method"></a>Метод ICLRDebugManager::SetConnectionTasks
 Связывает список экземпляров [ICLRTask](iclrtask-interface.md) с идентификатором и понятным именем.  
@@ -57,8 +57,8 @@ HRESULT SetConnectionTasks (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_INVALIDARG|[Бегинконнектион](iclrdebugmanager-beginconnection-method.md) не вызывался с использованием этого значения `id` , или `dwCount` или `id` равно нулю, либо один из элементов `ppCLRTask` имеет значение null.|  
   
-## <a name="remarks"></a>Комментарии  
- [ICLRDebugManager](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md) предоставляет три метода, `BeginConnection` , `SetConnectionTasks` и [ендконнектион](iclrdebugmanager-endconnection-method.md)для связывания списков задач с идентификаторами и понятными именами.  
+## <a name="remarks"></a>Примечания  
+ [ICLRDebugManager](iclrdebugmanager-interface.md) предоставляет три метода, `BeginConnection` , `SetConnectionTasks` и [ендконнектион](iclrdebugmanager-endconnection-method.md)для связывания списков задач с идентификаторами и понятными именами.  
   
 > [!IMPORTANT]
 > Эти три метода должны вызываться в определенном порядке для каждого набора задач. `BeginConnection`вызывается первым для установления нового соединения. `SetConnectionTasks`вызывается далее для предоставления набора задач, которые должны быть связаны с этим соединением. `EndConnection`вызывается последним, чтобы удалить связь между списком задач и идентификатором и понятным именем. Однако вызовы для различных соединений могут быть вложенными.  
@@ -72,7 +72,7 @@ HRESULT SetConnectionTasks (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)
 - [Интерфейс ICLRDebugManager](iclrdebugmanager-interface.md)
