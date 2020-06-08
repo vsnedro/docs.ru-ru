@@ -10,35 +10,35 @@ api_type:
 ms.assetid: 7bd48c34-37ed-4230-9eec-39a17280f05d
 topic_type:
 - apiref
-ms.openlocfilehash: 655cdd5db0894a4e44d43b071caf1ee0829ffe50
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 82f6262c2c576b49be4e7fcaa14043950df4c67a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76861727"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84495631"
 ---
-# <a name="icorprofilerinfo5-interface"></a><span data-ttu-id="2bd70-102">Интерфейс ICorProfilerInfo5</span><span class="sxs-lookup"><span data-stu-id="2bd70-102">ICorProfilerInfo5 Interface</span></span>
-<span data-ttu-id="2bd70-103">[Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]</span><span class="sxs-lookup"><span data-stu-id="2bd70-103">[Supported in the .NET Framework 4.5.2 and later versions]</span></span>  
+# <a name="icorprofilerinfo5-interface"></a><span data-ttu-id="bca58-102">Интерфейс ICorProfilerInfo5</span><span class="sxs-lookup"><span data-stu-id="bca58-102">ICorProfilerInfo5 Interface</span></span>
+<span data-ttu-id="bca58-103">[Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]</span><span class="sxs-lookup"><span data-stu-id="bca58-103">[Supported in the .NET Framework 4.5.2 and later versions]</span></span>  
   
- <span data-ttu-id="2bd70-104">Подкласс [метод icorprofilerinfo4](icorprofilerinfo4-interface.md) , предоставляющий методы для использования профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий.</span><span class="sxs-lookup"><span data-stu-id="2bd70-104">A subclass of [ICorProfilerInfo4](icorprofilerinfo4-interface.md) that provides methods for use by code profilers to communicate with the common language runtime (CLR) to control event monitoring.</span></span>  
+ <span data-ttu-id="bca58-104">Подкласс [метод icorprofilerinfo4](icorprofilerinfo4-interface.md) , предоставляющий методы для использования профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий.</span><span class="sxs-lookup"><span data-stu-id="bca58-104">A subclass of [ICorProfilerInfo4](icorprofilerinfo4-interface.md) that provides methods for use by code profilers to communicate with the common language runtime (CLR) to control event monitoring.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="2bd70-105">Методы</span><span class="sxs-lookup"><span data-stu-id="2bd70-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="bca58-105">Методы</span><span class="sxs-lookup"><span data-stu-id="bca58-105">Methods</span></span>  
   
-|<span data-ttu-id="2bd70-106">Метод</span><span class="sxs-lookup"><span data-stu-id="2bd70-106">Method</span></span>|<span data-ttu-id="2bd70-107">Описание</span><span class="sxs-lookup"><span data-stu-id="2bd70-107">Description</span></span>|  
+|<span data-ttu-id="bca58-106">Метод</span><span class="sxs-lookup"><span data-stu-id="bca58-106">Method</span></span>|<span data-ttu-id="bca58-107">Описание</span><span class="sxs-lookup"><span data-stu-id="bca58-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="2bd70-108">Метод GetEventMask2</span><span class="sxs-lookup"><span data-stu-id="2bd70-108">GetEventMask2 Method</span></span>](icorprofilerinfo5-geteventmask2-method.md)|<span data-ttu-id="2bd70-109">Получает текущие категории событий, о которых профилировщик хочет принимать уведомления из среды CLR.</span><span class="sxs-lookup"><span data-stu-id="2bd70-109">Gets the current event categories for which the profiler wants to receive notifications from the CLR.</span></span>|  
-|[<span data-ttu-id="2bd70-110">Метод SetEventMask2</span><span class="sxs-lookup"><span data-stu-id="2bd70-110">SetEventMask2 Method</span></span>](icorprofilerinfo5-seteventmask2-method.md)|<span data-ttu-id="2bd70-111">Определяет значение, указывающее типы событий, для которых профилировщик хочет принимать уведомления о событиях от среды CLR.</span><span class="sxs-lookup"><span data-stu-id="2bd70-111">Sets a value that specifies the types of events for which the profiler wants to receive event notifications from the CLR.</span></span>|  
+|[<span data-ttu-id="bca58-108">Метод GetEventMask2</span><span class="sxs-lookup"><span data-stu-id="bca58-108">GetEventMask2 Method</span></span>](icorprofilerinfo5-geteventmask2-method.md)|<span data-ttu-id="bca58-109">Получает текущие категории событий, о которых профилировщик хочет принимать уведомления из среды CLR.</span><span class="sxs-lookup"><span data-stu-id="bca58-109">Gets the current event categories for which the profiler wants to receive notifications from the CLR.</span></span>|  
+|[<span data-ttu-id="bca58-110">Метод SetEventMask2</span><span class="sxs-lookup"><span data-stu-id="bca58-110">SetEventMask2 Method</span></span>](icorprofilerinfo5-seteventmask2-method.md)|<span data-ttu-id="bca58-111">Определяет значение, указывающее типы событий, для которых профилировщик хочет принимать уведомления о событиях от среды CLR.</span><span class="sxs-lookup"><span data-stu-id="bca58-111">Sets a value that specifies the types of events for which the profiler wants to receive event notifications from the CLR.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="2bd70-112">Заметки</span><span class="sxs-lookup"><span data-stu-id="2bd70-112">Remarks</span></span>  
- <span data-ttu-id="2bd70-113">Методы, доступные в этом интерфейсе, предназначены для замены методов [ICorProfilerInfo:: GetEventMask](icorprofilerinfo-geteventmask-method.md) и [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) .</span><span class="sxs-lookup"><span data-stu-id="2bd70-113">The methods available on this interface are intended to replace the [ICorProfilerInfo::GetEventMask](icorprofilerinfo-geteventmask-method.md) and [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) methods.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="bca58-112">Примечания</span><span class="sxs-lookup"><span data-stu-id="bca58-112">Remarks</span></span>  
+ <span data-ttu-id="bca58-113">Методы, доступные в этом интерфейсе, предназначены для замены методов [ICorProfilerInfo:: GetEventMask](icorprofilerinfo-geteventmask-method.md) и [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) .</span><span class="sxs-lookup"><span data-stu-id="bca58-113">The methods available on this interface are intended to replace the [ICorProfilerInfo::GetEventMask](icorprofilerinfo-geteventmask-method.md) and [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) methods.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="2bd70-114">Требования</span><span class="sxs-lookup"><span data-stu-id="2bd70-114">Requirements</span></span>  
- <span data-ttu-id="2bd70-115">**Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="2bd70-115">**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="bca58-114">Требования</span><span class="sxs-lookup"><span data-stu-id="bca58-114">Requirements</span></span>  
+ <span data-ttu-id="bca58-115">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="bca58-115">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="2bd70-116">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="2bd70-116">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="bca58-116">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="bca58-116">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="2bd70-117">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2bd70-117">**.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span></span>  
+ <span data-ttu-id="bca58-117">**.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="bca58-117">**.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2bd70-118">См. также:</span><span class="sxs-lookup"><span data-stu-id="2bd70-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bca58-118">См. также</span><span class="sxs-lookup"><span data-stu-id="bca58-118">See also</span></span>
 
-- [<span data-ttu-id="2bd70-119">Интерфейсы профилирования</span><span class="sxs-lookup"><span data-stu-id="2bd70-119">Profiling Interfaces</span></span>](profiling-interfaces.md)
+- [<span data-ttu-id="bca58-119">Профилирующие интерфейсы</span><span class="sxs-lookup"><span data-stu-id="bca58-119">Profiling Interfaces</span></span>](profiling-interfaces.md)
