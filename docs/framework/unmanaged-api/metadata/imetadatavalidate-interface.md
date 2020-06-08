@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: db98608a-e85c-4f50-9d7b-5f57a426ddb6
 topic_type:
 - apiref
-ms.openlocfilehash: 8bf48abda63fb3a4f8abe7c54e443d01d8faf96c
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 2dbd4559bad54aee69f6980e8baf6441480f482c
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74426111"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84489728"
 ---
 # <a name="imetadatavalidate-interface"></a>Интерфейс IMetaDataValidate
 Предоставляет методы для проверки сигнатур метаданных.  
@@ -28,18 +28,18 @@ ms.locfileid: "74426111"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод ValidateMetaData](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-validatemetadata-method.md)|Проверяет сигнатуры метаданных объектов в текущей области метаданных.|  
-|[Метод ValidatorInit](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-validatorinit-method.md)|Устанавливает флаг, который указывает тип модуля в текущей области метаданных, и регистрирует указанный метод обратного вызова для ошибок проверки.|  
+|[Метод ValidateMetaData](imetadatavalidate-validatemetadata-method.md)|Проверяет сигнатуры метаданных объектов в текущей области метаданных.|  
+|[Метод ValidatorInit](imetadatavalidate-validatorinit-method.md)|Устанавливает флаг, который указывает тип модуля в текущей области метаданных, и регистрирует указанный метод обратного вызова для ошибок проверки.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейсы метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Интерфейсы метаданных](metadata-interfaces.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: cca0f799-09b8-4689-a33c-6d6537943a9b
 topic_type:
 - apiref
-ms.openlocfilehash: 7fb58c0eb2446253bd658434fc9d68bb857fe0e6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 25a4b101388bfc0151ba7c9c52da6561d48f806b
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175126"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503163"
 ---
 # <a name="icorprofilercallbackthreadcreated-method"></a>Метод ICorProfilerCallback::ThreadCreated
-Уведомляет профайлера о том, что поток был создан.  
+Уведомляет профилировщик о том, что поток был создан.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,21 +34,21 @@ HRESULT ThreadCreated(
   
 ## <a name="parameters"></a>Параметры  
  `threadId`  
- (в) Идентификатор созданного потока.  
+ окне Идентификатор созданного потока.  
   
-## <a name="remarks"></a>Remarks  
- Значение `threadId` немедленно действительно.  
+## <a name="remarks"></a>Примечания  
+ `threadId`Значение немедленно является допустимым.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ThreadDestroyed](icorprofilercallback-threaddestroyed-method.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ae0836d0-1170-4494-bac5-d0e809df51a2
 topic_type:
 - apiref
-ms.openlocfilehash: 40857620e47befce361ff8cb04af527915051df3
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: e1df31ed8b652837a33b360b1378f99e6800cbea
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804198"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501525"
 ---
 # <a name="ihostsecuritycontextcapture-method"></a>Метод IHostSecurityContext::Capture
-Возвращает клон экземпляра [IHostSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md) , возвращенный из вызова [IHostSecurityManager:: getsecuritycontext-](ihostsecuritymanager-getsecuritycontext-method.md).  
+Возвращает клон экземпляра [IHostSecurityContext](ihostsecuritycontext-interface.md) , возвращенный из вызова [IHostSecurityManager:: getsecuritycontext-](ihostsecuritymanager-getsecuritycontext-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,7 +48,7 @@ HRESULT Capture (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Примечания  
  Указатель интерфейса, возвращенный из `Capture` , является клоном захваченного контекста. Когда эта информация перемещается по асинхронной кодовой точке, ее время существования отделяется от указателя, на который был сделан вызов. Таким образом, исходный указатель может быть освобожден.  
   
 ## <a name="requirements"></a>Требования  
@@ -60,7 +60,7 @@ HRESULT Capture (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Интерфейс IHostSecurityManager](ihostsecuritymanager-interface.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ad32fb84-c2b6-41cd-888d-787ff3a90449
 topic_type:
 - apiref
-ms.openlocfilehash: dab155b82d87609b3d3f390133e6490502a43518
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fce4f3875fbdb110134d6b7f684eff40821f6bdd
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177285"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503683"
 ---
 # <a name="imetadataimportfindmember-method"></a>Метод IMetaDataImport::FindMember
-Получает указатель на токен MemberDef для поля или метода, который прилагается указанным <xref:System.Type> и который имеет указанное имя и подпись метаданных.  
+Возвращает указатель на токен Мембердеф для поля или метода, заключенного в заданный объект с <xref:System.Type> указанным именем и сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,40 +39,40 @@ HRESULT FindMember (
   
 ## <a name="parameters"></a>Параметры  
  `td`  
- (в) Токен TypeDef для класса или интерфейса, который примыкает к поиску участника. Если это `mdTokenNil`значение, то поиск выполняется для глобально-переменной или глобальной функции.  
+ окне Токен TypeDef для класса или интерфейса, который заключает элемент для поиска. Если это значение равно `mdTokenNil` , поиск выполняется для глобальной переменной или глобальной функции.  
   
  `szName`  
- (в) Имя участника для поиска.  
+ окне Имя искомого элемента.  
   
  `pvSigBlob`  
- (в) Указатель на двоичную подпись метаданных участника.  
+ окне Указатель на сигнатуру двоичных метаданных элемента.  
   
  `cbSigBlob`  
- (в) Размер байтов `pvSigBlob`.  
+ окне Размер в байтах для `pvSigBlob` .  
   
  `pmb`  
- (ваут) Указатель на соответствующий токен MemberDef.  
+ заполняет Указатель на соответствующий токен Мембердеф.  
   
-## <a name="remarks"></a>Remarks  
- Вы указываете участника, используя его`td`прилагающий`szName`класс или интерфейс (), его имя (), и по желанию его подпись ().`pvSigBlob` В классе или интерфейсе может быть несколько членов с одинаковым именем. В этом случае, пройти подпись члена, чтобы найти уникальный матч.  
+## <a name="remarks"></a>Примечания  
+ Элемент указывается с помощью включающего класса или интерфейса ( `td` ), его имени ( `szName` ) и (при необходимости) его сигнатуры ( `pvSigBlob` ). В классе или интерфейсе может быть несколько членов с одним и тем же именем. В этом случае передайте сигнатуру члена, чтобы найти уникальное совпадение.  
   
- Подпись, `FindMember` переданная, должна быть сгенерирована в текущей области, поскольку подписи привязаны к определенной области. Подпись может вставлять маркер, который определяет класс или тип значения. Токен — это индекс в локальной таблице TypeDef. Нельзя создавать подпись времени выполнения вне контекста текущей области и использовать `FindMember`эту подпись в качестве ввода для ввода.  
+ Подпись, передаваемая в `FindMember` , должна быть создана в текущей области, так как сигнатуры привязаны к определенной области. Сигнатура может внедрять маркер, идентифицирующий включающий класс или тип значения. Токен является индексом локальной таблицы TypeDef. Нельзя построить сигнатуру времени выполнения вне контекста текущей области и использовать эту сигнатуру в качестве входных данных для входных данных `FindMember` .  
   
- `FindMember`находит только участников, которые были определены непосредственно в классе или интерфейсе; он не находит наследственных членов.  
+ `FindMember`находит только элементы, которые были определены непосредственно в классе или интерфейсе; Он не находит наследуемых членов.  
   
 > [!NOTE]
-> `FindMember`является методом помощника. Он называет [IMetaDataИмпорт::FindMethod](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-findmethod-method.md); если этот вызов не находит `FindMember` совпадения, то звонит [IMetaDataImport::FindField](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-findfield-method.md).  
+> `FindMember`— Это вспомогательный метод. Он вызывает метод [IMetaDataImport:: FindMethod](imetadataimport-findmethod-method.md); Если этот вызов не находит совпадения, `FindMember` то вызывает метод [IMetaDataImport:: финдфиелд](imetadataimport-findfield-method.md).  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

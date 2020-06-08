@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b4896b8f-8e97-469c-8089-e72a025661b5
 topic_type:
 - apiref
-ms.openlocfilehash: e5d4ddd43b27d733a63c2e0dc5e92ffd2ba94a7f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0c7e96c50e59902cde4686f908047a86dd2b6a47
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175438"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503748"
 ---
 # <a name="imetadataimportenumtyperefs-method"></a>Метод IMetaDataImport::EnumTypeRefs
 Перечисляет токены TypeRef, определенные в текущей области метаданных.  
@@ -38,37 +38,37 @@ HRESULT EnumTypeRefs (
   
 ## <a name="parameters"></a>Параметры  
  `phEnum`  
- (в, вне) Указатель на регистратор. Это должно быть NULL для первого вызова этого метода.  
+ [вход, выход] Указатель на перечислитель. При первом вызове этого метода это значение должно быть равно NULL.  
   
  `rTypeRefs`  
- (ваут) Массив, используемый для хранения токенов TypeRef.  
+ заполняет Массив, используемый для хранения токенов TypeRef.  
   
  `cMax`  
  [in] Максимальный размер массива `rTypeRefs`.  
   
  `pcTypeRefs`  
- (ваут) Указатель на количество возвращенных токенов TypeRef в `rTypeRefs`.  
+ заполняет Указатель на число токенов TypeRef, возвращаемых в `rTypeRefs` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumTypeRefs`вернулся успешно.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом `pcTypeRefs` случае, равна нулю.|  
+|`S_OK`|`EnumTypeRefs`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcTypeRefs` равно нулю.|  
   
-## <a name="remarks"></a>Remarks  
- Токен TypeRef представляет собой отсылку к типу.  
+## <a name="remarks"></a>Примечания  
+ Токен TypeRef представляет ссылку на тип.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2b1f1418-4be8-4cdb-b418-b3abccc527a7
 topic_type:
 - apiref
-ms.openlocfilehash: 1c9f15881d3515f24a63f29e9337a7a356937f2d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: cd164008098c053e7d6506a6eef7d3bc8e4274b6
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449941"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503709"
 ---
 # <a name="imetadataimportenumuserstrings-method"></a>Метод IMetaDataImport::EnumUserStrings
 Перечисляет токены String, представляющие жестко заданные строки в текущей области метаданных.  
@@ -47,28 +47,28 @@ HRESULT EnumUserStrings (
  [in] Максимальный размер массива `rStrings`.  
   
  `pcStrings`  
- заполняет Число токенов строк, возвращаемых в `rStrings`.  
+ заполняет Число токенов строк, возвращаемых в `rStrings` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumUserStrings` успешно возвращено.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом случае `pcStrings` равно нулю.|  
+|`S_OK`|`EnumUserStrings`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcStrings` равно нулю.|  
   
-## <a name="remarks"></a>Заметки  
- Строковые токены создаются методом [IMetaDataEmit::D ефинеусерстринг](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-defineuserstring-method.md) . Этот метод предназначен для использования обозревателем метаданных, а не компилятором.  
+## <a name="remarks"></a>Примечания  
+ Строковые токены создаются методом [IMetaDataEmit::D ефинеусерстринг](imetadataemit-defineuserstring-method.md) . Этот метод предназначен для использования обозревателем метаданных, а не компилятором.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

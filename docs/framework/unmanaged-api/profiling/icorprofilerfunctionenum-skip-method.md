@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 051465b9-e479-494a-804b-c880323b4cbe
 topic_type:
 - apiref
-ms.openlocfilehash: 5f4ef55561c23997fca51dc7d463e2eefdba7d65
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 0f096f76ec47cfe3399e9184eb82bf20040efbbb
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76864314"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503046"
 ---
 # <a name="icorprofilerfunctionenumskip-method"></a>Метод ICorProfilerFunctionEnum::Skip
 Перемещает курсор перечислителя из текущей позиции, пропуская указанное число элементов.  
@@ -40,22 +40,22 @@ HRESULT Skip([in] ULONG celt);
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|S_OK|элементы `celt` пропущены.|  
-|S_FALSE|Пропущено менее `celt` элементов, что означает, что больше нет элементов.|  
+|S_OK|`celt`элементы пропущены.|  
+|S_FALSE|`celt`Пропущено меньше элементов, что означает, что больше нет элементов.|  
   
-## <a name="remarks"></a>Заметки  
- Новая позиции курсора перечислителя — (Текущая позиции) + `celt`.  
+## <a name="remarks"></a>Примечания  
+ Новая позиции курсора перечислителя — (Текущая позиции) + `celt` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerFunctionEnum](icorprofilerfunctionenum-interface.md)
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)

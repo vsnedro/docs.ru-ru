@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 00061a25-ba05-47a7-b984-fd916b06b149
 topic_type:
 - apiref
-ms.openlocfilehash: c9ac624e17223def206e86fd92ee4fd2de7f6082
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 6346b1e34e508e5c173bfd0119ac7451d7eef40e
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74436746"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84490800"
 ---
 # <a name="imetadataimportgettypedefprops-method"></a>Метод IMetaDataImport::GetTypeDefProps
-Возвращает сведения о метаданных для <xref:System.Type>, представленных указанным маркером TypeDef.  
+Возвращает сведения о метаданных для, <xref:System.Type> представленного указанным маркером TypeDef.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,27 +46,27 @@ HRESULT GetTypeDefProps (
  заполняет Буфер, содержащий имя типа.  
   
  `cchTypeDef`  
- окне Размер в расширенных символах `szTypeDef`.  
+ окне Размер в расширенных символах `szTypeDef` .  
   
  `pchTypeDef`  
- заполняет Число расширенных символов, возвращаемых в `szTypeDef`.  
+ заполняет Число расширенных символов, возвращаемых в `szTypeDef` .  
   
  `pdwTypeDefFlags`  
- заполняет Указатель на любые флаги, изменяющие определение типа. Это значение является битовой маской из перечисления [кортипеаттр](../../../../docs/framework/unmanaged-api/metadata/cortypeattr-enumeration.md) .  
+ заполняет Указатель на любые флаги, изменяющие определение типа. Это значение является битовой маской из перечисления [кортипеаттр](cortypeattr-enumeration.md) .  
   
  `ptkExtends`  
  заполняет Токен метаданных TypeDef или TypeRef, представляющий базовый тип запрошенного типа.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

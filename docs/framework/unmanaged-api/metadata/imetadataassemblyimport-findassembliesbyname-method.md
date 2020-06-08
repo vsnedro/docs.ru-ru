@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4db97cf9-e4c1-4233-8efa-cbdc0e14a8e4
 topic_type:
 - apiref
-ms.openlocfilehash: 05902436c09d082f90af01f48c7e918650317ce7
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: d2693a94f02214df6d7265b26e3d70d91adcf8a7
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009422"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503839"
 ---
 # <a name="imetadataassemblyimportfindassembliesbyname-method"></a>Метод IMetaDataAssemblyImport::FindAssembliesByName
 Возвращает массив сборок с указанным `szAssemblyName` параметром, используя стандартные правила, используемые средой CLR для разрешения ссылок.  
@@ -67,7 +67,7 @@ HRESULT FindAssembliesByName (
 ## <a name="remarks"></a>Примечания  
  При наличии имени сборки `FindAssembliesByName` метод находит сборку, следуя стандартным правилам разрешения ссылок на сборки. (Дополнительные сведения см. [в разделе Обнаружение сборок в среде выполнения](../../deployment/how-the-runtime-locates-assemblies.md).) `FindAssembliesByName`позволяет вызывающему объекту настраивать различные аспекты контекста сопоставителя сборок, такие как базовый и частный путь поиска приложения.  
   
- `FindAssembliesByName`Метод требует инициализации среды CLR в процессе для вызова логики разрешения сборки. Поэтому необходимо вызвать [CoInitialize](../../../../docs/framework/unmanaged-api/hosting/coinitializeee-function.md) (передав COINITEE_DEFAULT) перед вызовом `FindAssembliesByName` , а затем выполнить вызов [каунинитиализекор](../hosting/couninitializecor-function.md).  
+ `FindAssembliesByName`Метод требует инициализации среды CLR в процессе для вызова логики разрешения сборки. Поэтому необходимо вызвать [CoInitialize](../hosting/coinitializeee-function.md) (передав COINITEE_DEFAULT) перед вызовом `FindAssembliesByName` , а затем выполнить вызов [каунинитиализекор](../hosting/couninitializecor-function.md).  
   
  `FindAssembliesByName`Возвращает указатель [IMetaDataImport](imetadataimport-interface.md) на файл, содержащий манифест сборки для переданного имени сборки. Если заданное имя сборки не указано полностью (например, если оно не включает версию), может возвращаться несколько сборок.  
   

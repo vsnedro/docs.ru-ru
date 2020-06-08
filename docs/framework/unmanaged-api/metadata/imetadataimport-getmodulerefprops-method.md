@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b558e766-4c11-4628-ae47-b4e0a1800168
 topic_type:
 - apiref
-ms.openlocfilehash: f46033b9e643ef6b4a0063c4995b8c024b8c1f7e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f1784c9f3085ce188f9e540887dd02064f8448f3
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175360"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503586"
 ---
 # <a name="imetadataimportgetmodulerefprops-method"></a>Метод IMetaDataImport::GetModuleRefProps
 Возвращает имя модуля, на который ссылается указанный токен метаданных.  
@@ -38,27 +38,27 @@ HRESULT GetModuleRefProps (
   
 ## <a name="parameters"></a>Параметры  
  `mur`  
- (в) Токен метаданных ModuleRef, который ссылается на модуль для получения информации о метаданных.  
+ окне Токен метаданных ModuleRef, который ссылается на модуль для получения сведений о метаданных.  
   
  `szName`  
- (ваут) Буфер для удержания имени модуля.  
+ заполняет Буфер для хранения имени модуля.  
   
  `cchName`  
- (в) Запрошенный размер `szName` в широких символах.  
+ окне Запрошенный размер `szName` в расширенных символах.  
   
  `pchName`  
- (ваут) Возвращаемый размер в широких `szName` символах.  
+ заполняет Возвращаемый размер `szName` в расширенных символах.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

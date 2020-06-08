@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 297d7721-3911-4f36-9e34-d9da0c33e22a
 topic_type:
 - apiref
-ms.openlocfilehash: daca2849908a7798b588ff06f6e117d412db1b33
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: b273faafd7abb86ace58bb5c24473406af3ce20e
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76867273"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500979"
 ---
 # <a name="cor_prf_finalizer_flags-enumeration"></a>Перечисление COR_PRF_FINALIZER_FLAGS
 Описывает метод завершения для объекта.  
@@ -38,18 +38,18 @@ typedef enum {
 |------------|-----------------|  
 |`COR_PRF_FINALIZER_CRITICAL`|Метод завершения является критическим.|  
   
-## <a name="remarks"></a>Заметки  
- Перечисление `COR_PRF_FINALIZER_FLAGS` используется методом [ICorProfilerCallback2:: финализеаблеобжекткуеуед](icorprofilercallback2-finalizeableobjectqueued-method.md) для описания метода завершения для объекта.  
+## <a name="remarks"></a>Примечания  
+ `COR_PRF_FINALIZER_FLAGS`Перечисление используется методом [ICorProfilerCallback2:: финализеаблеобжекткуеуед](icorprofilercallback2-finalizeableobjectqueued-method.md) для описания метода завершения для объекта.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Перечисления профилирования](profiling-enumerations.md)

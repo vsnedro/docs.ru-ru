@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e0667ef7-1d31-4c89-a2d3-d426f023f8d2
 topic_type:
 - apiref
-ms.openlocfilehash: 4a258ce9121a287929ca5bc39c480f1ca2596e78
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 3c7c3525f2f8753241c9a206e4cf5e552bf06efe
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74437460"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503631"
 ---
 # <a name="imetadataimportgetmethodprops-method"></a>Метод IMetaDataImport::GetMethodProps
 Возвращает метаданные, связанные с методом, на который ссылается указанный токен MethodDef.  
@@ -53,10 +53,10 @@ HRESULT GetMethodProps (
  заполняет Указатель на буфер с именем метода.  
   
  `cchMethod`  
- окне Запрошенный размер `szMethod`.  
+ окне Запрошенный размер `szMethod` .  
   
  `pchMethod`  
- заполняет Указатель на размер в расширенных символах `szMethod`или в случае усечения — фактическое число расширенных символов в имени метода.  
+ заполняет Указатель на размер в расширенных символах `szMethod` , или, в случае усечения, фактическое число расширенных символов в имени метода.  
   
  `pdwAttr`  
  заполняет Указатель на любые флаги, связанные с методом.  
@@ -65,7 +65,7 @@ HRESULT GetMethodProps (
  заполняет Указатель на сигнатуру двоичных метаданных метода.  
   
  `pcbSigBlob`  
- заполняет Указатель на размер в байтах `ppvSigBlob`.  
+ заполняет Указатель на размер в байтах для `ppvSigBlob` .  
   
  `pulCodeRVA`  
  заполняет Указатель на относительный виртуальный адрес метода.  
@@ -74,15 +74,15 @@ HRESULT GetMethodProps (
  заполняет Указатель на любые флаги реализации метода.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

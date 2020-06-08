@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 01837955-ce1e-4068-b338-fd473bd77d1d
 topic_type:
 - apiref
-ms.openlocfilehash: 6ea7605e062eb77e0488b3a9561c4d83be16fa7d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 273922e00c3e5319d5a03652cc77b69f4479ea67
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74436709"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503527"
 ---
 # <a name="imetadataimportgettyperefprops-method"></a>Метод IMetaDataImport::GetTypeRefProps
-Возвращает метаданные, связанные с <xref:System.Type>, на который ссылается указанный токен TypeRef.  
+Возвращает метаданные, связанные с <xref:System.Type> объектом, на который ссылается указанный токен TypeRef.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -48,21 +48,21 @@ HRESULT GetTypeRefProps (
  заполняет Буфер, содержащий имя типа.  
   
  `cchName`  
- окне Запрошенный размер в расширенных символах `szName`.  
+ окне Запрошенный размер в расширенных символах `szName` .  
   
  `pchName`  
- заполняет Возвращаемый размер в расширенных символах `szName`.  
+ заполняет Возвращаемый размер в расширенных символах `szName` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

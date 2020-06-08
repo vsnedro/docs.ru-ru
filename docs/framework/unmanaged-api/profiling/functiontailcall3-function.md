@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 1e48243f-5de6-4bd6-a1d0-e1d248bca4b8
 topic_type:
 - apiref
-ms.openlocfilehash: 3bedb2c5f55f608b1153272437c0f55b730c2dfc
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 55955cd47bd32fb4294b0b8e852dd692702bd74f
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76866860"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500550"
 ---
 # <a name="functiontailcall3-function"></a>Функция FunctionTailcall3
 Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail.  
@@ -34,12 +34,12 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
 
 - `functionOrRemappedID`
 
-  \[в] идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
+  \[in] идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
 
-## <a name="remarks"></a>Заметки  
- Функция обратного вызова `FunctionTailcall3` уведомляет профилировщик о вызове функций. Чтобы зарегистрировать реализацию этой функции, используйте [метод ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) .  
+## <a name="remarks"></a>Примечания  
+ `FunctionTailcall3`Функция обратного вызова уведомляет профилировщик о вызове функций. Чтобы зарегистрировать реализацию этой функции, используйте [метод ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) .  
   
- Функция `FunctionTailcall3` является обратным вызовом. его необходимо реализовать. Реализация должна использовать атрибут класса хранения `__declspec(naked)`.  
+ `FunctionTailcall3`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec(naked)` атрибут класса хранения.  
   
  Подсистема выполнения не сохраняет никакие регистры перед вызовом этой функции.  
   
@@ -47,20 +47,20 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
   
 - При выходе необходимо восстановить стек, выключив все параметры, которые были переданы его вызывающим.  
   
- Реализация `FunctionTailcall3` не должна блокироваться, так как она приведет к задержке сборки мусора. Реализация не должна пытаться выполнить сборку мусора, так как стек может не находиться в состоянии, удобном для сборки мусора. Если выполняется сборка мусора, среда выполнения блокируется до тех пор, пока не будет возвращено `FunctionTailcall3`.  
+ Реализация `FunctionTailcall3` не должна блокироваться, так как она приведет к задержке сборки мусора. Реализация не должна пытаться выполнить сборку мусора, так как стек может не находиться в состоянии, удобном для сборки мусора. Если выполняется сборка мусора, среда выполнения будет блокироваться до тех пор, пока не `FunctionTailcall3` вернет.  
   
- Функция `FunctionTailcall3` не должна вызывать управляемый код или вызывать управляемое выделение памяти каким-либо образом.  
+ `FunctionTailcall3`Функция не должна вызывать управляемый код или вызывать управляемое выделение памяти каким-либо образом.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [FunctionEnter3](functionenter3-function.md)
 - [FunctionLeave3](functionleave3-function.md)

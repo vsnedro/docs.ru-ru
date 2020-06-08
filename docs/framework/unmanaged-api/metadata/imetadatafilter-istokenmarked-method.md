@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7d90dcee-0206-4540-807b-06982fe65f1a
 topic_type:
 - apiref
-ms.openlocfilehash: 47377e892aaf2bdd96a297630c47fe52215b0564
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: eb0ebab0f4e05d81730d5beb2b5345e319e8e274
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177380"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84492542"
 ---
 # <a name="imetadatafilteristokenmarked-method"></a>Метод IMetaDataFilter::IsTokenMarked
-Получает значение, указывающее, был ли указанный токен метаданных помечен как обработанный.  
+Возвращает значение, указывающее, помечен ли заданный маркер метаданных как обработанный.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,20 +36,20 @@ HRESULT IsTokenMarked (
   
 ## <a name="parameters"></a>Параметры  
  `tk`  
- (в) Токен для изучения для обрабатывающего знака.  
+ окне Токен для проверки на наличие метки обработки.  
   
  `pIsMarked`  
- (ваут) Значение, если `true` `tk` обработано; в `false`противном случае .  
+ заполняет Значение, равное, если объект был `true` `tk` обработан; в противном случае — `false` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataFilter](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-interface.md)
+- [Интерфейс IMetaDataFilter](imetadatafilter-interface.md)

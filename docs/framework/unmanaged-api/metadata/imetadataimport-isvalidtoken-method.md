@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aeb0fc63-9eff-4384-9284-cb9900572d74
 topic_type:
 - apiref
-ms.openlocfilehash: edf24de8ae38aab97e41a53cc86ae5aa6c592c50
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 9190d021b801be951d214406dde7e6d76da15608
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74434690"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503445"
 ---
 # <a name="imetadataimportisvalidtoken-method"></a>Метод IMetaDataImport::IsValidToken
 Возвращает значение, указывающее, содержится ли в заданном токене допустимая ссылка на объект кода.  
@@ -38,18 +38,18 @@ BOOL IsValidToken (
  окне Токен, для которого проверяется допустимость ссылки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `true`, если `tk` является допустимым маркером метаданных в текущей области. В противном случае — значение `false`.  
+ `true`Если `tk` является допустимым токеном метаданных в текущей области. В противном случае — `false`.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a945d439-3b34-4aa4-b575-8413dd7806ce
 topic_type:
 - apiref
-ms.openlocfilehash: 4e7e76a4a3ab291ee97ad0912e3d6224cdf96fba
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 09b4a06892cdc450eed9dead503a990b6f19804e
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804488"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501512"
 ---
 # <a name="ihostmemorymanager-interface"></a>Интерфейс IHostMemoryManager
 Предоставляет методы, позволяющие среде CLR выполнять запросы к виртуальной памяти через основное приложение вместо использования стандартных функций виртуальной памяти Win32.  
@@ -29,7 +29,7 @@ ms.locfileid: "83804488"
 |Метод|Описание|  
 |------------|-----------------|  
 |[Метод AcquiredVirtualAddressSpace](ihostmemorymanager-acquiredvirtualaddressspace-method.md)|Уведомляет узел о том, что среда CLR получила указанную память из операционной системы.|  
-|[Метод CreateMAlloc](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-createmalloc-method.md)|Возвращает указатель интерфейса на экземпляр [IHostMAlloc](ihostmalloc-interface.md) , который используется для запроса выделения памяти из кучи, созданного узлом.|  
+|[Метод CreateMAlloc](ihostmemorymanager-createmalloc-method.md)|Возвращает указатель интерфейса на экземпляр [IHostMAlloc](ihostmalloc-interface.md) , который используется для запроса выделения памяти из кучи, созданного узлом.|  
 |[Метод GetMemoryLoad](ihostmemorymanager-getmemoryload-method.md)|Возвращает объем используемой в данный момент физической памяти, сообщаемой узлом.|  
 |[Метод NeedsVirtualAddressSpace](ihostmemorymanager-needsvirtualaddressspace-method.md)|Уведомляет узел о том, что среда CLR будет пытаться использовать указанную память.|  
 |[Метод RegisterMemoryNotificationCallback](ihostmemorymanager-registermemorynotificationcallback-method.md)|Регистрирует указатель на функцию обратного вызова, которая вызывается хостом для уведомления среды CLR о текущей загрузке памяти на компьютере.|  
@@ -39,7 +39,7 @@ ms.locfileid: "83804488"
 |[Метод VirtualProtect](ihostmemorymanager-virtualprotect-method.md)|Служит логической оболочкой для соответствующей функции Win32, которая изменяет защиту в области зафиксированных страниц в виртуальном адресном пространстве вызывающего процесса.|  
 |[Метод VirtualQuery](ihostmemorymanager-virtualquery-method.md)|Служит логической оболочкой для соответствующей функции Win32, которая получает сведения о диапазоне страниц в виртуальном адресном пространстве вызывающего процесса.|  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Примечания  
  `IHostMemoryManager`также предоставляет методы для среды CLR для получения указателя, с помощью которого можно выполнять запросы к памяти в куче и получать уровень нехватки памяти в процессе, сообщаемый узлом.  
   
 ## <a name="requirements"></a>Требования  
@@ -51,7 +51,7 @@ ms.locfileid: "83804488"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostMalloc](ihostmalloc-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

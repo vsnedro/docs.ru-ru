@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8f35414d-f40b-4b99-8768-9adb675c622a
 topic_type:
 - apiref
-ms.openlocfilehash: e02d7dd4b287d027b633ae9bf2e98e036062bdd0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 36c0ffef2d984604be4ae19899e8f3f912cee123
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175412"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491476"
 ---
 # <a name="imetadataimportgetclasslayout-method"></a>Метод IMetaDataImport::GetClassLayout
 Возвращает сведения о структуре для класса, на который ссылается указанный токен TypeDef.  
@@ -40,33 +40,33 @@ HRESULT GetClassLayout  (
   
 ## <a name="parameters"></a>Параметры  
  `td`  
- (в) Токен TypeDef для класса с макетом для возврата.  
+ окне Токен TypeDef для класса с макетом, который должен быть возвращен.  
   
  `pdwPackSize`  
- (ваут) Одно из значений 1, 2, 4, 8 или 16, представляющее размер упаковки класса.  
+ заполняет Одно из значений 1, 2, 4, 8 или 16, представляющее размер пакета класса.  
   
  `rFieldOffset`  
- (ваут) Массив [COR_FIELD_OFFSET](../../../../docs/framework/unmanaged-api/metadata/cor-field-offset-structure.md) значений.  
+ заполняет Массив значений [COR_FIELD_OFFSET](cor-field-offset-structure.md) .  
   
  `cMax`  
  [in] Максимальный размер массива `rFieldOffset`.  
   
  `pcFieldOffset`  
- (ваут) Количество элементов, `rFieldOffset`возвращенных в .  
+ заполняет Число элементов, возвращаемых в `rFieldOffset` .  
   
  `pulClassSize`  
- (ваут) Размер байтов класса, представленных `td`.  
+ заполняет Размер в байтах класса, представленного параметром `td` .  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

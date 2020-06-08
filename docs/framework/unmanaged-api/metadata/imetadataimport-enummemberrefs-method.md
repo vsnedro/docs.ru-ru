@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e97c97a6-6e4f-41f5-9af1-9b3cf3bdbd6b
 topic_type:
 - apiref
-ms.openlocfilehash: b8a65b0748fec0e474d8b3b5dc03473fbd716108
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 68cdefe7ab362b26bbf060fa46766068eb0d7094
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177334"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503761"
 ---
 # <a name="imetadataimportenummemberrefs-method"></a>Метод IMetaDataImport::EnumMemberRefs
 Перечисляет токены MemberRef, представляющие члены указанного типа.  
@@ -39,37 +39,37 @@ HRESULT EnumMemberRefs (
   
 ## <a name="parameters"></a>Параметры  
  `phEnum`  
- (в, вне) Указатель на регистратор.  
+ [вход, выход] Указатель на перечислитель.  
   
  `tkParent`  
- (в) Токен TypeDef, TypeRef, MethodDef или ModuleRef для типа, члены которого должны быть перечислены.  
+ окне Токен TypeDef, TypeRef, MethodDef или ModuleRef для типа, элементы которого необходимо перечислить.  
   
  `rMemberRefs`  
- (ваут) Массив, используемый для хранения токенов MemberRef.  
+ заполняет Массив, используемый для хранения токенов MemberRef.  
   
  `cMax`  
  [in] Максимальный размер массива `rMemberRefs`.  
   
  `pcTokens`  
- (ваут) Фактическое количество возвращенных токенов `rMemberRefs`MemberRef в .  
+ заполняет Фактическое число токенов MemberRef, возвращаемых в `rMemberRefs` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumMemberRefs`вернулся успешно.|  
-|`S_FALSE`|Нет токенов MemberRef для перечисления. В этом `pcTokens` случае, до нуля.|  
+|`S_OK`|`EnumMemberRefs`успешно возвращено.|  
+|`S_FALSE`|Отсутствуют токены MemberRef для перечисления. В этом случае значение `pcTokens` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

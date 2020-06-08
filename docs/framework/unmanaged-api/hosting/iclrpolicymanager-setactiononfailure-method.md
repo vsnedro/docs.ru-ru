@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4664033f-db97-4388-b988-2ec470796e58
 topic_type:
 - apiref
-ms.openlocfilehash: fb2ecc80f272a3fc9b63b20c5956e7a28f117784
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 727cd82226b9a59c4879ffea5e87f93dd5fe38c9
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703470"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504112"
 ---
 # <a name="iclrpolicymanagersetactiononfailure-method"></a>Метод ICLRPolicyManager::SetActionOnFailure
 Указывает действие политики, которое должна выполнять среда CLR при возникновении указанного сбоя.  
@@ -53,21 +53,21 @@ HRESULT SetActionOnFailure (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_INVALIDARG|Действие политики не может быть задано для указанной операции, или для операции указано недопустимое действие политики.|  
   
-## <a name="remarks"></a>Комментарии  
- По умолчанию среда CLR создает исключение, когда не удается выделить ресурс, например память. `SetActionOnFailure`позволяет узлу переопределить это поведение, указав действие политики для выполнения при сбое. В следующей таблице показаны поддерживаемые сочетания значений [еклрфаилуре](eclrfailure-enumeration.md) и [еполициактион](../../../../docs/framework/unmanaged-api/hosting/epolicyaction-enumeration.md) . (Префикс FAIL_ опущен из значений [еклрфаилуре](eclrfailure-enumeration.md) .)  
+## <a name="remarks"></a>Примечания  
+ По умолчанию среда CLR создает исключение, когда не удается выделить ресурс, например память. `SetActionOnFailure`позволяет узлу переопределить это поведение, указав действие политики для выполнения при сбое. В следующей таблице показаны поддерживаемые сочетания значений [еклрфаилуре](eclrfailure-enumeration.md) и [еполициактион](epolicyaction-enumeration.md) . (Префикс FAIL_ опущен из значений [еклрфаилуре](eclrfailure-enumeration.md) .)  
   
 ||нонкритикалресаурце|критикалресаурце|фаталрунтиме|орфанедлокк|StackOverflow|AccessViolationException|кодеконтракт|  
 |-|-------------------------|----------------------|------------------|------------------|-------------------|---------------------|------------------|  
-|`eNoAction`|X|X||||Недоступно||  
-|есровексцептион|X|X||||Недоступно||  
-|`eAbortThread`|X|X||||Недоступно|X|  
-|`eRudeAbortThread`|X|X||||Недоступно|X|  
-|`eUnloadAppDomain`|X|X||X||Недоступно|X|  
-|`eRudeUnloadAppDomain`|X|X||X|X|Недоступно|X|  
-|`eExitProcess`|X|X||X|X|Недоступно|X|  
-|ефастекситпроцесс|X|X||X|X|Недоступно||  
-|`eRudeExitProcess`|X|X|X|X|X|Недоступно||  
-|`eDisableRuntime`|X|X|X|X|X|Недоступно||  
+|`eNoAction`|X|X||||Н/Д||  
+|есровексцептион|X|X||||Н/Д||  
+|`eAbortThread`|X|X||||Н/Д|X|  
+|`eRudeAbortThread`|X|X||||Н/Д|X|  
+|`eUnloadAppDomain`|X|X||X||Н/Д|X|  
+|`eRudeUnloadAppDomain`|X|X||X|X|Н/Д|X|  
+|`eExitProcess`|X|X||X|X|Н/Д|X|  
+|ефастекситпроцесс|X|X||X|X|Н/Д||  
+|`eRudeExitProcess`|X|X|X|X|X|Н/Д||  
+|`eDisableRuntime`|X|X|X|X|X|Н/Д||  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -78,7 +78,7 @@ HRESULT SetActionOnFailure (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrFailure](eclrfailure-enumeration.md)
 - [Перечисление EPolicyAction](epolicyaction-enumeration.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d2250b38-c76a-40ce-80c8-ba45149886e8
 topic_type:
 - apiref
-ms.openlocfilehash: 0dc2f625da7f4e37583f198c8d6dba86f6dcdb10
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 9a1440be7011130b16d7112ae15026eb74856190
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83805055"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501603"
 ---
 # <a name="ihostassemblymanagergetnonhoststoreassemblies-method"></a>Метод IHostAssemblyManager::GetNonHostStoreAssemblies
 Возвращает указатель интерфейса на объект [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) , представляющий список сборок, которые должны загружаться хостом в среде CLR.  
@@ -49,14 +49,14 @@ HRESULT GetNonHostStoreAssemblies (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания списка ссылок для запрошенного объекта `ICLRAssemblyReferenceList` .|  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Примечания  
  Среда CLR разрешает ссылки с помощью следующего набора рекомендаций:  
   
 - Во первых, он обращается к списку ссылок на сборки, возвращаемых `GetNonHostStoreAssemblies` .  
   
 - Если сборка отображается в списке, среда CLR привязывает ее к обычному.  
   
-- Если сборка не отображается в списке и узел предоставил реализацию [IHostAssemblyStore](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md), среда CLR вызывает [IHostAssemblyStore::P ровидеассембли](ihostassemblystore-provideassembly-method.md) , чтобы разрешить узлу предоставить сборку для привязки.  
+- Если сборка не отображается в списке и узел предоставил реализацию [IHostAssemblyStore](ihostassemblystore-interface.md), среда CLR вызывает [IHostAssemblyStore::P ровидеассембли](ihostassemblystore-provideassembly-method.md) , чтобы разрешить узлу предоставить сборку для привязки.  
   
 - В противном случае среда CLR не сможет выполнить привязку к сборке.  
   
@@ -74,7 +74,7 @@ HRESULT GetNonHostStoreAssemblies (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)

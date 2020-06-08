@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b1e26bff-d3ea-436e-9867-29720df999f4
 topic_type:
 - apiref
-ms.openlocfilehash: 41955bd2f64d53e3620dede6b6da4cef2aab45f4
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 1981fdf25440a296801bdbd06c41ebcb4b87e870
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842300"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501404"
 ---
 # <a name="ihosttaskmanagerreverseenterruntime-method"></a>Метод IHostTaskManager::ReverseEnterRuntime
 Уведомляет узел о том, что в среде CLR выполняется вызов из неуправляемого кода.  
@@ -47,7 +47,7 @@ HRESULT ReverseEnterRuntime ();
  Если вызов среды CLR выполняется из последовательности, порожденной в управляемом коде, каждый вызов `ReverseEnterRuntime` соответствует вызову [ReverseLeaveRuntime](ihosttaskmanager-reverseleaveruntime-method.md).  
   
 > [!NOTE]
-> Вызовы могут исходить из неуправляемого кода без вложения. В этом случае нет вызова [EnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enterruntime-method.md), [леаверунтиме](ihosttaskmanager-leaveruntime-method.md)или `ReverseLeaveRuntime` , а число вызовов не `ReverseEnterRuntime` равно числу вызовов `ReverseLeaveRuntime` .  
+> Вызовы могут исходить из неуправляемого кода без вложения. В этом случае нет вызова [EnterRuntime](ihosttaskmanager-enterruntime-method.md), [леаверунтиме](ihosttaskmanager-leaveruntime-method.md)или `ReverseLeaveRuntime` , а число вызовов не `ReverseEnterRuntime` равно числу вызовов `ReverseLeaveRuntime` .  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -58,7 +58,7 @@ HRESULT ReverseEnterRuntime ();
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

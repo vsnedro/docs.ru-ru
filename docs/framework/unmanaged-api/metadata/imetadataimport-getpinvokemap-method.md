@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b8685c1e-b80c-4198-8eb3-748d6f48a99e
 topic_type:
 - apiref
-ms.openlocfilehash: c458fef77b49f522ca21dd5487731f4d43588cea
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 8409e56b5ec4dbe47035a0555b6b7ce175b517ee
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74437098"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84490982"
 ---
 # <a name="imetadataimportgetpinvokemap-method"></a>Метод IMetaDataImport::GetPinvokeMap
 Возвращает токен ModuleRef, представляющий целевую сборку вызова PInvoke.  
@@ -43,30 +43,30 @@ HRESULT GetPinvokeMap (
  окне Токен FieldDef или MethodDef для получения метаданных сопоставления PInvoke для.  
   
  `pdwMappingFlags`  
- заполняет Указатель на флаги, используемые для сопоставления. Это значение является битовой маской из перечисления [CorPinvokeMap](../../../../docs/framework/unmanaged-api/metadata/corpinvokemap-enumeration.md) .  
+ заполняет Указатель на флаги, используемые для сопоставления. Это значение является битовой маской из перечисления [CorPinvokeMap](corpinvokemap-enumeration.md) .  
   
  `szImportName`  
  заполняет Имя неуправляемой целевой библиотеки DLL.  
   
  `cchImportName`  
- окне Размер в расширенных символах `szImportName`.  
+ окне Размер в расширенных символах `szImportName` .  
   
  `pchImportName`  
- заполняет Число расширенных символов, возвращаемых в `szImportName`.  
+ заполняет Число расширенных символов, возвращаемых в `szImportName` .  
   
  `pmrImportDLL`  
  заполняет Указатель на токен ModuleRef, представляющий неуправляемую библиотеку целевых объектов.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

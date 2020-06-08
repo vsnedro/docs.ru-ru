@@ -7,12 +7,12 @@ helpviewer_keywords:
 - .NET Framework 2.0, hosting global static functions
 - hosting global static functions [.NET Framework], version 2.0
 ms.assetid: 91fbbb35-e543-4814-b806-371cebae8c5a
-ms.openlocfilehash: 8925278bdf4d48efc9e589ffc4e181d904444e6b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 083d0ff285abb4a99ad05c791bc504ff7f282c6a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616428"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504372"
 ---
 # <a name="deprecated-clr-hosting-functions"></a>Устаревшие функции размещения CLR
 В этом разделе описаны неуправляемые глобальные статические функции, которые использовались в предыдущих версиях API размещения.  
@@ -24,7 +24,7 @@ ms.locfileid: "83616428"
  Не рекомендуется. Создает экземпляр указанного управляемого типа.  
   
  [Функция CoInitializeCor](coinitializecor-function.md)  
- Устаревшее. Чтобы инициализировать среду CLR, используйте либо [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) , либо [корбиндтокуррентрунтиме](corbindtocurrentruntime-function.md).  
+ Устаревшее. Чтобы инициализировать среду CLR, используйте либо [CorBindToRuntimeEx](corbindtoruntimeex-function.md) , либо [корбиндтокуррентрунтиме](corbindtocurrentruntime-function.md).  
   
  [Функция CoInitializeEE](coinitializeee-function.md)  
  Не рекомендуется. Гарантирует, что подсистема выполнения среды CLR загружается в процесс. Используйте вместо этого метод [ICLRRuntimeHost:: Start](iclrruntimehost-start-method.md) .  
@@ -156,6 +156,6 @@ ms.locfileid: "83616428"
  [Функция _CorValidateImage](corvalidateimage-function.md)  
  Проверяет образы управляемого модуля и уведомляет загрузчик операционной системы после их загрузки.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции размещения платформы .NET Framework 4](net-framework-4-hosting-global-static-functions.md)

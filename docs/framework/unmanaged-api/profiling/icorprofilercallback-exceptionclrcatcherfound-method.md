@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73fe8b4b-8f9a-4ba5-a10c-b26521396a66
 topic_type:
 - apiref
-ms.openlocfilehash: a543e5119a3ad5580fb67c31dc0e59ab62eab571
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 4f4d53b086453adce38902518f2de3dde1f2812f
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76866496"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500251"
 ---
 # <a name="icorprofilercallbackexceptionclrcatcherfound-method"></a>Метод ICorProfilerCallback::ExceptionCLRCatcherFound
-Вызывается, когда блок `catch` для исключения находится внутри самой среды CLR. Этот метод является устаревшим в .NET Framework версии 2,0.  
+Вызывается, когда `catch` блок для исключения обнаруживается в самой среде CLR. Этот метод является устаревшим в .NET Framework версии 2,0.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -32,7 +32,7 @@ HRESULT ExceptionCLRCatcherFound();
 ```  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
@@ -40,7 +40,7 @@ HRESULT ExceptionCLRCatcherFound();
   
  **Версия .NET Framework:** 1,0  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ExceptionCLRCatcherExecute](icorprofilercallback-exceptionclrcatcherexecute-method.md)

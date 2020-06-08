@@ -6,21 +6,21 @@ helpviewer_keywords:
 - unmanaged global static functions [.NET Framework], metadata
 - metadata global static functions [.NET Framework]
 ms.assetid: d3bbc8a7-b1c7-494f-b1cc-d71cf2ecb1bc
-ms.openlocfilehash: a76d57bb45e53e461a43f3a9fb3be707782faccc
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 861f283d350310ab159b2d6f15339292e0d42b94
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447821"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84489597"
 ---
 # <a name="metadata-global-static-functions"></a>Глобальные статические функции метаданных
-Начиная с .NET Framework 4 Документация по функциям `_Cor*`, `CoInitialize*`, `CoUninitialize*`и `CoEEShutDownCOM`, которые относятся к размещению, находится в [нерекомендуемых функциях размещения CLR](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md). Не существует глобальных статических функций, относящихся к метаданным.  
+Начиная с .NET Framework 4, документация по `_Cor*` `CoInitialize*` `CoUninitialize*` функциям,, и `CoEEShutDownCOM` , относящимся к размещению, находится в [нерекомендуемых функциях размещения CLR](../hosting/deprecated-clr-hosting-functions.md). Не существует глобальных статических функций, относящихся к метаданным.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Интерфейсы метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)  
+ [Интерфейсы метаданных](metadata-interfaces.md)  
   
- [Перечисления метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)  
+ [Перечисления метаданных](metadata-enumerations.md)  
   
- [Структуры метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)  
+ [Структуры метаданных](metadata-structures.md)  
   
- [Объединения метаданных](../../../../docs/framework/unmanaged-api/metadata/metadata-unions.md)
+ [Объединения метаданных](metadata-unions.md)

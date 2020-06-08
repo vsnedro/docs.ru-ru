@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a8624913-2e23-46ad-a0c1-bb8eccbbf20f
 topic_type:
 - apiref
-ms.openlocfilehash: b0817288040550b5f4c3c4ec063f6a7fdb004137
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 66a09baea1df2e2de418bdce8821672802f1f51f
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74450057"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84491737"
 ---
 # <a name="imetadataimportenummethodswithname-method"></a>Метод IMetaDataImport::EnumMethodsWithName
 Перечисляет методы с заданным именем, определяемые по типу, на который ссылается указанный токен TypeDef.  
@@ -55,28 +55,28 @@ HRESULT EnumMethodsWithName (
  [in] Максимальный размер массива `rMethods`.  
   
  `pcTokens`  
- заполняет Число маркеров MethodDef, возвращаемых в `rMethods`.  
+ заполняет Число токенов MethodDef, возвращаемых в `rMethods` .  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод перечисляет поля и методы, но не свойства или события. В отличие от метода [IMetaDataImport:: enummethods-](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-enummethods-method.md), `EnumMethodsWithName` удаляет все маркеры методов, у которых нет указанного имени.  
+ Этот метод перечисляет поля и методы, но не свойства или события. В отличие от метода [IMetaDataImport:: enummethods-](imetadataimport-enummethods-method.md), `EnumMethodsWithName` отменяет все маркеры методов, у которых нет указанного имени.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumMethodsWithName` успешно возвращено.|  
-|`S_FALSE`|Нет токенов для перечисления. В этом случае `pcTokens` равно нулю.|  
+|`S_OK`|`EnumMethodsWithName`успешно возвращено.|  
+|`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcTokens` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

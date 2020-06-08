@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 31782b36-d311-4518-8f45-25f65385af5b
 topic_type:
 - apiref
-ms.openlocfilehash: e05cb944ea4f3a9ca718dc22c6cd726b6a516ea9
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 57981ef134dc3f30337d47f5cee426a25d0414cf
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76866238"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500043"
 ---
 # <a name="icorprofilercallbackjitcompilationstarted-method"></a>Метод ICorProfilerCallback::JITCompilationStarted
-Уведомляет профилировщик, что компилятор just-in-time (JIT) начал компиляцию функции.  
+Уведомляет профилировщик о том, что JIT-компилятор начал компиляцию функции.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,25 +38,25 @@ HRESULT JITCompilationStarted(
  окне Идентификатор функции, для которой начинается компиляция.  
   
  `fIsSafeToBlock`  
- окне Значение, указывающее профилировщику, будет ли блокировка влиять на работу среды выполнения. Значение `true`, если блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова. в противном случае `false`.  
+ окне Значение, указывающее профилировщику, будет ли блокировка влиять на работу среды выполнения. Значение равно `true` , если блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова; в противном случае — `false` .  
   
- Хотя значение `true` не будет нанести вред среде выполнения, оно может исказить результаты профилирования.  
+ Хотя значение `true` не будет нанести вред среде выполнения, оно может наклонять результаты профилирования.  
   
-## <a name="remarks"></a>Заметки  
- Можно получить более одной пары `JITCompilationStarted` и [ICorProfilerCallback:: JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md) для каждой функции, так как среда выполнения обрабатывает конструкторы классов. Например, среда выполнения начинает JIT-компилировать метод а, но необходимо запустить конструктор класса B. Поэтому среда выполнения JIT компилирует конструктор для класса B и запускает его. Пока конструктор выполняется, он вызывает метод а, что вызывает повторную JIT-компиляцию метода. В этом сценарии первая JIT-компиляция метода A останавливается. Однако обе попытки JIT-компиляции метода A сообщаются с событиями JIT-компиляции. Если профилировщик будет заменять код промежуточного языка MSIL для метода а путем вызова метода [ICorProfilerInfo:: SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) , он должен сделать это для обоих событий `JITCompilationStarted`, но может использовать один и тот же блок MSIL для обоих.  
+## <a name="remarks"></a>Примечания  
+ Можно получить более одной пары `JITCompilationStarted` вызовов и [ICorProfilerCallback:: JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md) для каждой функции, так как среда выполнения обрабатывает конструкторы классов. Например, среда выполнения начинает JIT-компилировать метод а, но необходимо запустить конструктор класса B. Поэтому среда выполнения JIT компилирует конструктор для класса B и запускает его. Пока конструктор выполняется, он вызывает метод а, что вызывает повторную JIT-компиляцию метода. В этом сценарии первая JIT-компиляция метода A останавливается. Однако обе попытки JIT-компиляции метода A сообщаются с событиями JIT-компиляции. Если профилировщик будет заменять код промежуточного языка MSIL для метода а путем вызова метода [ICorProfilerInfo:: SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) , он должен сделать это для обоих `JITCompilationStarted` событий, но может использовать один и тот же блок MSIL для обоих.  
   
- Профилировщики должны поддерживать последовательность обратных вызовов JIT в случаях, когда два потока одновременно осуществляют обратные вызовы. Например, поток а вызывает `JITCompilationStarted`. Однако до того, как поток A вызовет `JITCompilationFinished`, поток B вызывает [ICorProfilerCallback:: ексцептионсеарчфунктионентер](icorprofilercallback-exceptionsearchfunctionenter-method.md) с идентификатором функции из обратного вызова `JITCompilationStarted` потока A. Может показаться, что идентификатор функции еще не должен быть допустимым, поскольку профилировщик еще не получил вызов `JITCompilationFinished`. Однако в таком случае идентификатор функции является допустимым.  
+ Профилировщики должны поддерживать последовательность обратных вызовов JIT в случаях, когда два потока одновременно осуществляют обратные вызовы. Например, поток A вызывает `JITCompilationStarted` . Однако перед вызовом потока A `JITCompilationFinished` поток B вызывает [ICorProfilerCallback:: ЕКСЦЕПТИОНСЕАРЧФУНКТИОНЕНТЕР](icorprofilercallback-exceptionsearchfunctionenter-method.md) с идентификатором функции из `JITCompilationStarted` обратного вызова потока A. Может показаться, что идентификатор функции еще не должен быть допустимым, поскольку `JITCompilationFinished` профилировщик еще не получил вызов. Однако в таком случае идентификатор функции является допустимым.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md)

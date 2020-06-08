@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7c9e9120-3104-42f0-86ce-19a025f20dcc
 topic_type:
 - apiref
-ms.openlocfilehash: 7410f91a853f3a677a105dc2e12a86d723c9fad6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ea451bdd645d2d4dea4c5dd00408e0bc51804803
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177322"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84492074"
 ---
 # <a name="imetadataimportenummemberswithname-method"></a>Метод IMetaDataImport::EnumMembersWithName
 Перечисляет токены MemberDef, представляющие члены указанного типа с заданным именем.  
@@ -40,43 +40,43 @@ HRESULT EnumMembersWithName (
   
 ## <a name="parameters"></a>Параметры  
  `phEnum`  
- (в, вне) Указатель на регистратор.  
+ [вход, выход] Указатель на перечислитель.  
   
  `cl`  
- (в) Токен TypeDef, представляющий тип с членами для перечисления.  
+ окне Токен TypeDef, представляющий тип с элементами для перечисления.  
   
  `szName`  
- (в) Имя участника, ограничивающее область охвата регистратора.  
+ окне Имя элемента, ограничивающее область действия перечислителя.  
   
  `rMembers`  
- (ваут) Массив, используемый для хранения токенов MemberDef.  
+ заполняет Массив, используемый для хранения маркеров Мембердеф.  
   
  `cMax`  
  [in] Максимальный размер массива `rMembers`.  
   
  `pcTokens`  
- (ваут) Фактическое количество токенов MemberDef `rMembers`возвращено в .  
+ заполняет Фактическое число токенов Мембердеф, возвращаемых в `rMembers` .  
   
-## <a name="remarks"></a>Remarks  
- Этот метод перечисляет поля и методы, но не свойства или события. В отличие от [IMetaDataImport::EnumMembers,](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-enummembers-method.md) `EnumMembersWithName` отбрасываются все поля и токены-члены, которые не имеют указанного имени.  
+## <a name="remarks"></a>Примечания  
+ Этот метод перечисляет поля и методы, но не свойства или события. В отличие от [IMetaDataImport:: EnumMembers](imetadataimport-enummembers-method.md), `EnumMembersWithName` отменяет все маркеры полей и элементов, у которых нет указанного имени.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumTypeDefs`вернулся успешно.|  
-|`S_FALSE`|Нет токенов MemberDef для перечисления. В этом `pcTokens` случае, равна нулю.|  
+|`S_OK`|`EnumTypeDefs`успешно возвращено.|  
+|`S_FALSE`|Нет токенов Мембердеф для перечисления. В этом случае значение `pcTokens` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Cor.h  
+ **Заголовок:** COR. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 556bccfb-61bc-4761-b1d5-de4b1c18a38f
 topic_type:
 - apiref
-ms.openlocfilehash: 800b15bb75e74898cee9d838900ea14b60620940
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: f55af87e21b48430807166cb03e1d41271e830a1
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74431469"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84503449"
 ---
 # <a name="imetadataimportresolvetyperef-method"></a>Метод IMetaDataImport::ResolveTypeRef
 Разрешает <xref:System.Type> ссылку, представленную указанным токеном TypeRef.  
@@ -41,7 +41,7 @@ HRESULT ResolveTypeRef (
  окне Токен метаданных TypeRef для возврата сведений о типе, на который указывает ссылка.  
   
  `riid`  
- окне Идентификатор IID интерфейса, возвращаемого в `ppIScope`. Как правило, это IID_IMetaDataImport.  
+ окне IID интерфейса, в котором возвращается `ppIScope` . Как правило, это IID_IMetaDataImport.  
   
  `ppIScope`  
  заполняет Интерфейс к области модуля, в которой определен ссылочный тип.  
@@ -49,25 +49,25 @@ HRESULT ResolveTypeRef (
  `ptd`  
  заполняет Указатель на маркер TypeDef, представляющий ссылочный тип.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Примечания  
   
 > [!IMPORTANT]
 > Не используйте этот метод, если загружено несколько доменов приложений. Метод не учитывает границы домена приложения. Если загружено несколько версий сборки и они содержат один и тот же тип с одним и тем же пространством имен, метод возвращает область действия модуля первого найденного типа.  
   
- Метод `ResolveTypeRef` выполняет поиск определения типа в других модулях. Если определение типа найдено, `ResolveTypeRef` возвращает интерфейс в область этого модуля, а также маркер TypeDef для типа.  
+ `ResolveTypeRef`Метод выполняет поиск определения типа в других модулях. Если обнаружено определение типа, `ResolveTypeRef` возвращает интерфейс для этой области модуля, а также маркер TypeDef для типа.  
   
- Если разрешенная ссылка на тип имеет область определения AssemblyRef, метод `ResolveTypeRef` ищет совпадение только в областях метаданных, которые уже открыты с вызовами метода [IMetaDataDispenser:: OpenScope](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-openscope-method.md) или [IMetaDataDispenser:: OpenScopeOnMemory](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-openscopeonmemory-method.md) . Это связано с тем, что `ResolveTypeRef` не может определить только из области AssemblyRef, в которой хранится сборка на диске или в глобальном кэше сборок.  
+ Если разрешенная ссылка на тип имеет область определения AssemblyRef, `ResolveTypeRef` метод выполняет поиск совпадения только в областях метаданных, которые уже открыты с вызовами метода [IMetaDataDispenser:: OpenScope](imetadatadispenser-openscope-method.md) или [IMetaDataDispenser:: OpenScopeOnMemory](imetadatadispenser-openscopeonmemory-method.md) . Это связано с тем, что `ResolveTypeRef` не может определить только из области AssemblyRef, в которой хранится сборка на диске или в глобальном кэше сборок.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
  **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
-- [Интерфейс IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [Интерфейс IMetaDataImport2](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [Интерфейс IMetaDataImport](imetadataimport-interface.md)
+- [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
