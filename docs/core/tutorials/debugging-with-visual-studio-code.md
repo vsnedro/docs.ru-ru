@@ -61,7 +61,7 @@ ms.locfileid: "84202493"
 
 1. <span data-ttu-id="a2ecb-132">Откройте окно отладки, щелкнув значок "Отладка" в меню слева.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-132">Open the Debug view by selecting the Debugging icon on the left side menu.</span></span>
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Открытие вкладки "Отладка" в Visual Studio Code":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Открытие вкладки Отладка в Visual Studio Code":::
 
 1. <span data-ttu-id="a2ecb-134">Начните отладку, нажав зеленую стрелку в верхней части области, рядом с элементом **запуска .NET Core (консоль)** .</span><span class="sxs-lookup"><span data-stu-id="a2ecb-134">Start debugging by selecting the green arrow at the top of the pane, next to **.NET Core Launch (console)**.</span></span>  <span data-ttu-id="a2ecb-135">Также отладку можно запустить с помощью клавиши <kbd>F5</kbd>.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-135">Another way to start debugging is by pressing <kbd>F5</kbd>.</span></span>
 
@@ -69,13 +69,13 @@ ms.locfileid: "84202493"
 
 1. <span data-ttu-id="a2ecb-137">Выберите вкладку **Терминал**, чтобы отобразить запрос "What is your name?" (Как вас зовут?),</span><span class="sxs-lookup"><span data-stu-id="a2ecb-137">Select the **Terminal** tab to see the "What is your name?"</span></span> <span data-ttu-id="a2ecb-138">который появляется перед ожиданием ответа.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-138">prompt that the program displays before waiting for a response.</span></span>
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal.png" alt-text="Выбор вкладки "Терминал"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal.png" alt-text="Выбор вкладки Терминал":::
 
 1. <span data-ttu-id="a2ecb-140">Введите строку в окне **Терминал** в ответ на запрос имени, а затем нажмите клавишу <kbd>ВВОД</kbd>.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-140">Enter a string in the **Terminal** window in response to the prompt for a name, and then press <kbd>Enter</kbd>.</span></span>
 
    <span data-ttu-id="a2ecb-141">Выполнение программы остановится, когда будет достигнута точка останова, то есть перед выполнением метода `Console.WriteLine`.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-141">Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.</span></span> <span data-ttu-id="a2ecb-142">В окне **Локальные** окна **Переменные** отображаются значения переменных, которые определены в текущем выполняемом методе.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-142">The **Locals** section of the **Variables** window displays the values of variables that are defined in the currently executing method.</span></span>
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Достижение точки останова, отображение окна "Локальные"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Достижение точки останова, отображение окна Локальные":::
 
 ## <a name="change-variable-values"></a><span data-ttu-id="a2ecb-144">Изменение значений переменных</span><span class="sxs-lookup"><span data-stu-id="a2ecb-144">Change variable values</span></span>
 
@@ -137,7 +137,7 @@ ms.locfileid: "84202493"
    name == String.Empty
    ```
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/expression-in-debug-console.png" alt-text="Значение true в окне "Консоль отладки" после выполнения оператора":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/expression-in-debug-console.png" alt-text="Значение true в окне Консоль отладки после выполнения оператора":::
 
 1. <span data-ttu-id="a2ecb-177">Нажмите кнопку **Продолжить** на панели инструментов, чтобы возобновить выполнение программы.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-177">Select the **Continue** button on the toolbar to continue program execution.</span></span>
 
@@ -161,7 +161,7 @@ ms.locfileid: "84202493"
 
 1. <span data-ttu-id="a2ecb-190">Выберите **Шаг с заходом** или нажмите клавишу <kbd>F11</kbd>.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-190">Select **Step Into** or press <kbd>F11</kbd>.</span></span>
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Кнопка "Шаг с заходом"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Кнопка Шаг с заходом":::
 
    <span data-ttu-id="a2ecb-192">Будет выделена следующая строка.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-192">Visual Studio Code highlights the next line.</span></span>
 
@@ -191,7 +191,7 @@ ms.locfileid: "84202493"
 
 1. <span data-ttu-id="a2ecb-212">Выберите **Шаг с выходом** или нажмите клавиши <kbd>SHIFT</kbd>+<kbd>F11</kbd>.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-212">Select **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.</span></span>
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Кнопка "Шаг с выходом"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Кнопка Шаг с выходом":::
 
 1. <span data-ttu-id="a2ecb-214">Выберите вкладку **Терминал**.</span><span class="sxs-lookup"><span data-stu-id="a2ecb-214">Select the **Terminal** tab.</span></span>
 
