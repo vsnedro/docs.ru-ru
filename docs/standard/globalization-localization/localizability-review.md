@@ -16,12 +16,12 @@ helpviewer_keywords:
 - global applications, localizability
 - localizing resources
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
-ms.openlocfilehash: b286bdd2c5d7b03a0a2b5f94478e252da6cd0ae2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ef23cff2416792f13fda04dbe9beb34cbacfd7ea
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73120861"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288281"
 ---
 # <a name="localizability-review"></a>Проверка локализуемости
 
@@ -38,7 +38,7 @@ ms.locfileid: "73120861"
 <a name="global"></a>
 ## <a name="implement-globalization-recommendations"></a>Реализация рекомендаций по глобализации
 
-Если при проектировании и разработке приложения вы не забывали о локализации и соблюдали все рекомендации, описанные в статье [Глобализация](../../../docs/standard/globalization-localization/globalization.md), анализ локализуемости станет лишь формальным этапом контроля качества. В противном случае на этом этапе вам предстоит изучить и внедрить рекомендации по [глобализации](../../../docs/standard/globalization-localization/globalization.md), а также исправить все проблемы в исходном коде, которые будут мешать локализации.
+Если при проектировании и разработке приложения вы не забывали о локализации и соблюдали все рекомендации, описанные в статье [Глобализация](globalization.md), анализ локализуемости станет лишь формальным этапом контроля качества. В противном случае на этом этапе вам предстоит изучить и внедрить рекомендации по [глобализации](globalization.md), а также исправить все проблемы в исходном коде, которые будут мешать локализации.
 
 <a name="culture"></a>
 ## <a name="handle-culture-sensitive-features"></a>Обработка возможностей, чувствительных к языковым и региональным параметрам
@@ -75,11 +75,11 @@ ms.locfileid: "73120861"
 
 - Сравнения строк или сравнения на равенство, возвращающие непредвиденные результаты.
 
-Если при разработке приложения вы соблюдали все рекомендации по глобализации, правильно обрабатывали функции, чувствительные к языковым и региональным параметрам, выявляли и устраняли проблемы локализации на этапе тестирования, то теперь можете смело переходить к следующему шагу: [Локализация](../../../docs/standard/globalization-localization/localization.md).
+Если при разработке приложения вы соблюдали все рекомендации по глобализации, правильно обрабатывали функции, чувствительные к языковым и региональным параметрам, выявляли и устраняли проблемы локализации на этапе тестирования, то теперь можете смело переходить к следующему шагу: [Локализация](localization.md).
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Глобализация и локализация](../../../docs/standard/globalization-localization/index.md)
-- [Локализация](../../../docs/standard/globalization-localization/localization.md)
-- [Глобализация](../../../docs/standard/globalization-localization/globalization.md)
-- [Ресурсы в приложениях для настольных систем](../../../docs/framework/resources/index.md)
+- [Глобализация и локализация](index.md)
+- [Локализация](localization.md)
+- [Глобализация](globalization.md)
+- [Ресурсы в приложениях для настольных систем](../../framework/resources/index.md)

@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, continuations
 ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
-ms.openlocfilehash: 7de8c4e44e1866e3df36c666c9ecc210dc6a7d83
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c6952b4b341a76e15d9699a06cd64ae7b6b4f047
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159368"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84285616"
 ---
 # <a name="chaining-tasks-by-using-continuation-tasks"></a>Создание цепочки задач с помощью задач продолжения
 В асинхронном программировании при завершении одной асинхронной операции принято вызывать вторую операцию и передавать в нее данные. В большинстве случаев непрерывность достигается с помощью методов обратного вызова. В библиотеке параллельных задач эта функциональность обеспечивается *задачами продолжения*. Задача продолжения (также называемая просто продолжением) — это асинхронная задача, вызываемая другой задачей, которая называется *предшествующей*, при завершении этой предшествующей задачи.  
@@ -75,7 +75,7 @@ ms.locfileid: "78159368"
  [!code-csharp[TPL_Continuations#2](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/result1.cs#2)]
  [!code-vb[TPL_Continuations#2](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/result1.vb#2)]  
   
- Если вы хотите, чтобы продолжение выполнялось, даже если предшествующая задача не выполнилась до успешного завершения, необходимо защититься от этого исключения. Один из подходов заключается в проверке свойства <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> предшествующей задачи и выполнении попытки доступа к свойству <xref:System.Threading.Tasks.Task%601.Result%2A> только в том случае, если предшествующая задача не находится в состоянии <xref:System.Threading.Tasks.TaskStatus.Faulted> или <xref:System.Threading.Tasks.TaskStatus.Canceled>. Можно также проверять свойство <xref:System.Threading.Tasks.Task.Exception%2A> предшествующей задачи. Дополнительные сведения см. в разделе [Обработка исключений](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md). В следующем примере изменяется предыдущий пример, чтобы доступ к свойству <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> предшествующей задачи осуществлялся только в том случае, если она находится в состоянии <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>.  
+ Если вы хотите, чтобы продолжение выполнялось, даже если предшествующая задача не выполнилась до успешного завершения, необходимо защититься от этого исключения. Один из подходов заключается в проверке свойства <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> предшествующей задачи и выполнении попытки доступа к свойству <xref:System.Threading.Tasks.Task%601.Result%2A> только в том случае, если предшествующая задача не находится в состоянии <xref:System.Threading.Tasks.TaskStatus.Faulted> или <xref:System.Threading.Tasks.TaskStatus.Canceled>. Можно также проверять свойство <xref:System.Threading.Tasks.Task.Exception%2A> предшествующей задачи. Дополнительные сведения см. в разделе [Обработка исключений](exception-handling-task-parallel-library.md). В следующем примере изменяется предыдущий пример, чтобы доступ к свойству <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> предшествующей задачи осуществлялся только в том случае, если она находится в состоянии <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>.  
   
  [!code-csharp[TPL_Continuations#7](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/result2.cs#7)]
  [!code-vb[TPL_Continuations#7](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/result2.vb#7)]  
@@ -114,12 +114,12 @@ ms.locfileid: "78159368"
  [!code-csharp[TPL_Continuations#10](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/detached1.cs#10)]
  [!code-vb[TPL_Continuations#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/detached1.vb#10)]  
   
- Конечное состояние предшествующей задачи зависит от конечного состояния всех присоединенных дочерних задач. Состояние отсоединенных дочерних задач не влияет на родительскую задачу. Дополнительные сведения см. в разделе [Присоединенные и отсоединенные дочерние задачи](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).  
+ Конечное состояние предшествующей задачи зависит от конечного состояния всех присоединенных дочерних задач. Состояние отсоединенных дочерних задач не влияет на родительскую задачу. Дополнительные сведения см. в разделе [Присоединенные и отсоединенные дочерние задачи](attached-and-detached-child-tasks.md).  
   
 ## <a name="associating-state-with-continuations"></a>Связывание состояния с продолжениями  
  Вы можете связывать произвольное состояние с продолжением задачи. Метод <xref:System.Threading.Tasks.Task.ContinueWith%2A> предоставляет перегруженные версии, каждая из которых принимает значение <xref:System.Object> , представляющее состояние продолжения. Позднее можно получить доступ к этому объекту состояния с помощью свойства <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=nameWithType> . Если значение не предоставлено, то этот объект состояния имеет значение `null`.  
   
- Состояние продолжения полезно при преобразовании существующего кода, который использует библиотеку параллельных задач с помощью [асинхронной модели программирования (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md). В APM объект состояния обычно предоставляется в метод **Begin**_Method_, а впоследствии доступ к этому состоянию получается с помощью свойства <xref:System.IAsyncResult.AsyncState%2A?displayProperty=nameWithType>. С помощью метода <xref:System.Threading.Tasks.Task.ContinueWith%2A> можно сохранить это состояние при преобразовании кода,  использующего библиотеку параллельных задач с помощью  APM.  
+ Состояние продолжения полезно при преобразовании существующего кода, который использует библиотеку параллельных задач с помощью [асинхронной модели программирования (APM)](../asynchronous-programming-patterns/asynchronous-programming-model-apm.md). В APM объект состояния обычно предоставляется в метод **Begin**_Method_, а впоследствии доступ к этому состоянию получается с помощью свойства <xref:System.IAsyncResult.AsyncState%2A?displayProperty=nameWithType>. С помощью метода <xref:System.Threading.Tasks.Task.ContinueWith%2A> можно сохранить это состояние при преобразовании кода,  использующего библиотеку параллельных задач с помощью  APM.  
   
  Состояние продолжения также можно использовать при работе с объектами <xref:System.Threading.Tasks.Task> в отладчике Visual Studio. Например, в окне **Параллельные задачи** столбец **Задачи** отображает строковое представление объекта состояния для каждой задачи. Дополнительные сведения об окне **Параллельные задачи** см. в разделе [Использование окна задач](/visualstudio/debugger/using-the-tasks-window).  
   
@@ -146,10 +146,10 @@ ms.locfileid: "78159368"
      [!code-csharp[TPL_Continuations#11](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/exception2.cs#11)]
      [!code-vb[TPL_Continuations#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/exception2.vb#11)]  
   
-     Дополнительные сведения см. в разделе [Обработка исключений](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
+     Дополнительные сведения см. в разделе [Обработка исключений](exception-handling-task-parallel-library.md).  
   
-- Если продолжение является присоединенной дочерней задачей, созданной с использованием параметра <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType> , его исключения будут распространяться родительской задачей обратно в вызывающий поток, как и в случае любой другой присоединенной дочерней задачи. Дополнительные сведения см. в разделе [Присоединенные и отсоединенные дочерние задачи](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).  
+- Если продолжение является присоединенной дочерней задачей, созданной с использованием параметра <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType> , его исключения будут распространяться родительской задачей обратно в вызывающий поток, как и в случае любой другой присоединенной дочерней задачи. Дополнительные сведения см. в разделе [Присоединенные и отсоединенные дочерние задачи](attached-and-detached-child-tasks.md).  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Библиотека параллельных задач (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Библиотека параллельных задач (TPL)](task-parallel-library-tpl.md)

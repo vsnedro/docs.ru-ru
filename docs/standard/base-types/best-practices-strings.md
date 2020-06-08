@@ -18,12 +18,12 @@ helpviewer_keywords:
 - comparing strings
 - strings [.NET Framework],comparing
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
-ms.openlocfilehash: 0fb7ec8d9de8fae7a0443984511e538d38d93c7a
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 28c1397c71debeed181acb2c1acb01b0f8cee7c9
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441010"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289370"
 ---
 # <a name="best-practices-for-using-strings-in-net"></a>Рекомендации по использованию строк в .NET
 
@@ -309,7 +309,7 @@ InvariantCulture: a + ̊ = å
 При отображении нестроковых данных, например чисел, дат и времени, пользователям следует форматировать их с использованием параметров языка и региональных параметров пользователя. По умолчанию все следующие объекты используют текущий язык и региональные параметры потока в операциях форматирования:
 
 - Интерполированные строки, поддерживаемые компиляторами [C#](../../csharp/language-reference/tokens/interpolated.md) и [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md).
-- Строковые операции объединения, использующие операторы объединения [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) или [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md ) или вызывающие метод <xref:System.String.Concat%2A?displayProperty=nameWithType> напрямую.
+- Строковые операции объединения, использующие операторы объединения [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) или [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md) или вызывающие метод <xref:System.String.Concat%2A?displayProperty=nameWithType> напрямую.
 - метод <xref:System.String.Format%2A?displayProperty=nameWithType> ;
 - Методы `ToString` числовых типов, а также типы даты и времени.
 

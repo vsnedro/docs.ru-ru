@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2913ccf3-f932-4363-8028-9e2d22ce6093
-ms.openlocfilehash: 1a17aea66be7f9d35336434408c49bae8046b7e7
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: b6e18fe02a828ae307ac7ade15650d3303f2600c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710912"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287809"
 ---
 # <a name="evaluate-xpath-expressions-using-xpathnavigator"></a>Вычисление выражения XPath с помощью класса XPathNavigator
 Класс <xref:System.Xml.XPath.XPathNavigator> содержит метод <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> для вычисления выражения Xpath. Метод <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> принимает выражение XPath, вычисляет его и возвращает соответствующий стандарту W3C тип XPath Boolean, Number, String или Node Set, основанный на результате вычисления выражения XPath.  
@@ -49,9 +49,9 @@ Console.WriteLine(total);
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>
 - <xref:System.Xml.XPath.XPathNavigator>
-- [Обработка XML-данных с использованием модели данных XPath](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
-- [Выборка XML-данных с помощью XPathNavigator](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)
-- [Соответствие узлов с помощью XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)
-- [Типы узлов, распознаваемые запросами XPath](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)
-- [Запросы XPath и пространства имен](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)
-- [Скомпилированные выражения XPath](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+- [Обработка XML-данных с использованием модели данных XPath](process-xml-data-using-the-xpath-data-model.md)
+- [Выборка XML-данных с помощью XPathNavigator](select-xml-data-using-xpathnavigator.md)
+- [Соответствие узлов с помощью XPathNavigator](matching-nodes-using-xpathnavigator.md)
+- [Типы узлов, распознаваемые запросами XPath](node-types-recognized-with-xpath-queries.md)
+- [Запросы XPath и пространства имен](xpath-queries-and-namespaces.md)
+- [Скомпилированные выражения XPath](compiled-xpath-expressions.md)

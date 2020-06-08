@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 9404d758-679f-4ffb-995d-3d07d817659e
-ms.openlocfilehash: 8383d8cb3e5819c46a0716c59323e492bb9add8e
-ms.sourcegitcommit: 7e2128d4a4c45b4274bea3b8e5760d4694569ca1
+ms.openlocfilehash: d18cf72f0629d347fb5f55ad7332e6046614c01b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75937994"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84282393"
 ---
 # <a name="migrating-from-the-xsltransform-class"></a>Миграция с класса XslTransform
 
@@ -35,7 +35,7 @@ ms.locfileid: "75937994"
 [!code-csharp[XML_Migration#16](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#16)]
 [!code-vb[XML_Migration#16](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#16)]
 
-Дополнительные сведения см. в статье [Рекомендации по безопасности XSLT](../../../../docs/standard/data/xml/xslt-security-considerations.md).
+Дополнительные сведения см. в статье [Рекомендации по безопасности XSLT](xslt-security-considerations.md).
 
 ## <a name="new-features"></a>Новые функции
 
@@ -97,7 +97,7 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
 
 ### <a name="discretionary-behavior"></a>Поведение, реализуемое по усмотрению разработчика
 
-Рекомендация W3C по XSL-преобразованиям (XSLT) версии 1.0 включает в себя такие области, в которых поставщик реализации может решать, как обрабатывать ситуацию. Эти области считаются предоставленными на усмотрение поставщика. Существует несколько областей, в которых поведение класса <xref:System.Xml.Xsl.XslCompiledTransform> отличается от класса <xref:System.Xml.Xsl.XslTransform>. Дополнительные сведения см. в статье [Устранимые ошибки XSLT](../../../../docs/standard/data/xml/recoverable-xslt-errors.md).
+Рекомендация W3C по XSL-преобразованиям (XSLT) версии 1.0 включает в себя такие области, в которых поставщик реализации может решать, как обрабатывать ситуацию. Эти области считаются предоставленными на усмотрение поставщика. Существует несколько областей, в которых поведение класса <xref:System.Xml.Xsl.XslCompiledTransform> отличается от класса <xref:System.Xml.Xsl.XslTransform>. Дополнительные сведения см. в статье [Устранимые ошибки XSLT](recoverable-xslt-errors.md).
 
 ### <a name="extension-objects-and-script-functions"></a>Объекты расширения и функции скриптов
 
@@ -109,7 +109,7 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
 
 В классе <xref:System.Xml.Xsl.XslCompiledTransform> привязка (поиск имени метода) к функциям скриптов выполняется во время компиляции, и таблицы стилей, работающие с объектом XslTransform, могут вызвать исключение при загрузке с классом <xref:System.Xml.Xsl.XslCompiledTransform>.
 
-Класс <xref:System.Xml.Xsl.XslCompiledTransform> поддерживает дочерние элементы `msxsl:using` и `msxsl:assembly` внутри элемента `msxsl:script`. Чтобы декларировать дополнительные пространства имен и сборок для использования в блоке скриптов, используются элементы `msxsl:using` и `msxsl:assembly`. В статье [Блоки скриптов с использованием msxsl:script](../../../../docs/standard/data/xml/script-blocks-using-msxsl-script.md) вы найдете дополнительную информацию об этом.
+Класс <xref:System.Xml.Xsl.XslCompiledTransform> поддерживает дочерние элементы `msxsl:using` и `msxsl:assembly` внутри элемента `msxsl:script`. Чтобы декларировать дополнительные пространства имен и сборок для использования в блоке скриптов, используются элементы `msxsl:using` и `msxsl:assembly`. В статье [Блоки скриптов с использованием msxsl:script](script-blocks-using-msxsl-script.md) вы найдете дополнительную информацию об этом.
 
 Класс <xref:System.Xml.Xsl.XslCompiledTransform> запрещает объекты расширения, которые имеют несколько перегруженных методов с одинаковым количеством аргументов.
 
@@ -127,5 +127,5 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
 
 ## <a name="see-also"></a>См. также
 
-- [Преобразования XSLT](../../../../docs/standard/data/xml/xslt-transformations.md)
-- [Использование класса XslCompiledTransform](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+- [Преобразования XSLT](xslt-transformations.md)
+- [Использование класса XslCompiledTransform](using-the-xslcompiledtransform-class.md)

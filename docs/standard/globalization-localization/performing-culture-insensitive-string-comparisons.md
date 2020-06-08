@@ -13,12 +13,12 @@ helpviewer_keywords:
 - culture-insensitive string operations, comparisons
 - culture parameter
 ms.assetid: abae50ef-32f7-4a50-a540-fd256fd1aed0
-ms.openlocfilehash: 85ba91b63ab0edbccc768e2d1ad4aaef31fd2f21
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 91996bc721db55b24521be97e4d9accd53ef7924
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73120833"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84288619"
 ---
 # <a name="performing-culture-insensitive-string-comparisons"></a>Сравнение строк без учета языка и региональных параметров
 По умолчанию метод <xref:System.String.Compare%2A?displayProperty=nameWithType> выполняет сравнение с учетом языка и региона и регистра символов. Этот метод также содержит несколько перегрузок, которые предоставляют параметр `culture`, позволяющий задать используемый язык и региональные параметры, и параметр `comparisonType`, позволяющий указать используемые правила сравнения. При вызове этих методов вместо перегрузки по умолчанию удаляется любая неопределенность в отношении правил, используемых при вызове конкретного метода, и четко определяется, учитываются ли при конкретном сравнении язык и региональные параметры.  
@@ -43,5 +43,5 @@ ms.locfileid: "73120833"
 
 - <xref:System.String.Compare%2A?displayProperty=nameWithType>
 - <xref:System.String.CompareTo%2A?displayProperty=nameWithType>
-- [Выполнение строковых операций, не зависящих от языка и региональных параметров](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
-- [Рекомендации по использованию строк](../../../docs/standard/base-types/best-practices-strings.md)
+- [Выполнение строковых операций, не зависящих от языка и региональных параметров](performing-culture-insensitive-string-operations.md)
+- [Рекомендации по использованию строк](../base-types/best-practices-strings.md)

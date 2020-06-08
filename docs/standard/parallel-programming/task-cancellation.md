@@ -9,15 +9,15 @@ helpviewer_keywords:
 - tasks, cancellation
 - asynchronous task cancellation
 ms.assetid: 3ecf1ea9-e399-4a6a-a0d6-8475f48dcb28
-ms.openlocfilehash: 17cabde95644dbc1584dd85b99e26ff7c5cb686d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9f17b11699195e5b2186d008ebefce306834ea8d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73139968"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84285278"
 ---
 # <a name="task-cancellation"></a>Отмена задач
-Классы <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> поддерживают отмену с помощью токенов отмены в .NET Framework. Дополнительные сведения см. в статье [Отмена в управляемых потоках](../../../docs/standard/threading/cancellation-in-managed-threads.md). В классах задач отмена включает взаимодействие между пользовательским делегатом, который представляет операцию отмены, и кодом, который запросил отмену.  Успешная отмена включает запрашивающий код, вызывающий метод <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> , и пользовательский делегат, своевременно завершающий операцию. Операцию можно завершить одним из следующих способов.  
+Классы <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> поддерживают отмену с помощью токенов отмены в .NET Framework. Дополнительные сведения см. в статье [Отмена в управляемых потоках](../threading/cancellation-in-managed-threads.md). В классах задач отмена включает взаимодействие между пользовательским делегатом, который представляет операцию отмены, и кодом, который запросил отмену.  Успешная отмена включает запрашивающий код, вызывающий метод <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> , и пользовательский делегат, своевременно завершающий операцию. Операцию можно завершить одним из следующих способов.  
   
 - Путем простого возврата из делегата. Во многих сценариях этого достаточно, однако экземпляр задачи, отмененный таким образом, переходит в состояние <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType> , а не в состояние <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> .  
   
@@ -28,7 +28,7 @@ ms.locfileid: "73139968"
  [!code-csharp[TPL_Cancellation#02](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_cancellation/cs/snippet02.cs#02)]
  [!code-vb[TPL_Cancellation#02](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_cancellation/vb/module1.vb#02)]  
   
- См. дополнительные сведения об [отмене задачи и ее дочерних элементов](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md).  
+ См. дополнительные сведения об [отмене задачи и ее дочерних элементов](how-to-cancel-a-task-and-its-children.md).  
   
  Когда экземпляр задачи обнаруживает исключение <xref:System.OperationCanceledException> , созданное пользовательским кодом, он сравнивает токен исключения со связанным токеном (переданным в API-интерфейс, в котором была создана задача). Если они совпадают и свойство <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> токена возвращает значение true, задача интерпретирует это как подтверждение отмены и переходит в состояние Canceled. Если метод <xref:System.Threading.Tasks.Task.Wait%2A> или <xref:System.Threading.Tasks.Task.WaitAll%2A> не используется для ожидания задачи, она просто устанавливает состояние <xref:System.Threading.Tasks.TaskStatus.Canceled>.  
   
@@ -40,5 +40,5 @@ ms.locfileid: "73139968"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Отмена в управляемых потоках](../../../docs/standard/threading/cancellation-in-managed-threads.md)
-- [Практическое руководство. Отмена задачи и ее дочерних элементов](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)
+- [Отмена в управляемых потоках](../threading/cancellation-in-managed-threads.md)
+- [Практическое руководство. Отмена задачи и ее дочерних элементов](how-to-cancel-a-task-and-its-children.md)

@@ -10,18 +10,18 @@ helpviewer_keywords:
 - TPL dataflow library, creating custom dataflow blocks
 - dataflow blocks, creating custom in TPL
 ms.assetid: a6147146-0a6a-4d9b-ab0f-237b3c1ac691
-ms.openlocfilehash: cb953952bbed90edd2db799e92d44ec9f062babf
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 37857e465bf4089dbeecc4cfd532d0702f795495
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73139877"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284706"
 ---
 # <a name="walkthrough-creating-a-custom-dataflow-block-type"></a>Пошаговое руководство. Создание пользовательского типа блока потока данных
 Хотя библиотека потоков данных предоставляет несколько типов блоков потоков данных, которые позволяют использовать различные функции, можно также создавать пользовательские типы блоков. В этом документе описано, как создать тип блока потока данных, который реализует пользовательское поведение.  
   
 ## <a name="prerequisites"></a>Prerequisites  
- Ознакомьтесь с руководством по [потокам данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md), прежде чем читать этот документ.  
+ Ознакомьтесь с руководством по [потокам данных](dataflow-task-parallel-library.md), прежде чем читать этот документ.  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
   
@@ -52,4 +52,4 @@ ms.locfileid: "73139877"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Поток данных](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Поток данных](dataflow-task-parallel-library.md)
