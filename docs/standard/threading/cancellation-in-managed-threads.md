@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - cancellation in .NET, overview
 ms.assetid: eea11fe5-d8b0-4314-bb5d-8a58166fb1c3
-ms.openlocfilehash: d4bbf30923d65ad7aeced80efa626136ae27491b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e56d0f71afdc9281271b7d15316a133e7c720bd0
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73138139"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84277886"
 ---
 # <a name="cancellation-in-managed-threads"></a>Отмена в управляемых потоках
 В .NET Framework 4 введена новая универсальная модель совместной отмены асинхронных или долго выполняющихся синхронных операций. Эта модель построена на простом объекте, называемом токеном отмены. Объект, который вызывает одну или несколько отменяемых операций, например, путем создания новых потоков или задач, передает этот токен в каждую операцию. Операция, в свою очередь, передает копии этого токена в другие операции. Некоторое время спустя объект, создавший токен, может использовать его для запроса остановки выполнения операции. Запрос на отмену может создавать только запрашивающий объект, и каждый прослушиватель должен обнаружить этот запрос, чтобы правильно и своевременно отреагировать на него.  
@@ -33,7 +33,7 @@ ms.locfileid: "73138139"
   
  На рисунке ниже показана связь между источником токена и всеми копиями токена.  
   
- ![CancellationTokenSource и токены отмены](../../../docs/standard/threading/media/vs-cancellationtoken.png "VS_CancellationToken")  
+ ![CancellationTokenSource и токены отмены](media/vs-cancellationtoken.png "VS_CancellationToken")  
   
  Новая модель отмены упрощает создание приложений и библиотек, поддерживающих отмену. Она также поддерживает перечисленные ниже возможности.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "73138139"
  В примере ниже запрашивающий объект создает объект <xref:System.Threading.CancellationTokenSource>, а затем передает его свойство <xref:System.Threading.CancellationTokenSource.Token%2A> в отменяемую операцию. Операция, получающая запрос, отслеживает значение свойства <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> токена путем опроса. Когда свойство принимает значение `true`, прослушиватель может завершить операцию любым приемлемым способом. В этом примере просто выполняется выход из метода. Во многих случаях этого достаточно.  
   
 > [!NOTE]
-> В этом примере метод <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> используется для демонстрации совместимости новой инфраструктуры отмены с устаревшими интерфейсами API. Пример, в котором используется новый предпочтительный тип <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, см. в разделе [Руководство. Отмена задачи и ее дочерних элементов](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md).  
+> В этом примере метод <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> используется для демонстрации совместимости новой инфраструктуры отмены с устаревшими интерфейсами API. Пример, в котором используется новый предпочтительный тип <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, см. в разделе [Руководство. Отмена задачи и ее дочерних элементов](../parallel-programming/how-to-cancel-a-task-and-its-children.md).  
   
  [!code-csharp[Cancellation#1](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex1.cs#1)]
  [!code-vb[Cancellation#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex1.vb#1)]  
@@ -84,7 +84,7 @@ ms.locfileid: "73138139"
   
  Однако в более сложных случаях может потребоваться, чтобы пользовательский делегат уведомлял код библиотеки об отмене. В таких случаях, чтобы правильно завершить операцию, следует вызвать из делегата метод <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A>, который создает исключение <xref:System.OperationCanceledException>. Код библиотеки может перехватить это исключение в потоке пользовательского делегата и проверить токен исключения, чтобы определить, указывает ли исключение на совместную отмену или возникновение другой исключительной ситуации.  
   
- Класс <xref:System.Threading.Tasks.Task> обрабатывает <xref:System.OperationCanceledException> таким образом. Дополнительные сведения см. в разделе [Отмена задач](../../../docs/standard/parallel-programming/task-cancellation.md).  
+ Класс <xref:System.Threading.Tasks.Task> обрабатывает <xref:System.OperationCanceledException> таким образом. Дополнительные сведения см. в разделе [Отмена задач](../parallel-programming/task-cancellation.md).  
   
 ### <a name="listening-by-polling"></a>Прослушивание с помощью опросов  
  Для длительных циклических или рекурсивных вычислений можно прослушивать запрос на отмену путем периодического опроса значения свойства <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=nameWithType>. Если его значение равно `true`, метод должен максимально быстро выполнить очистку и завершение. Оптимальная частота опроса зависит от типа приложения. Разработчик должен определить оптимальную частоту опроса для конкретной программы. Сам по себе опрос не оказывает значительного влияния на производительность. В примере ниже показан один из возможных способов опроса.  
@@ -92,7 +92,7 @@ ms.locfileid: "73138139"
  [!code-csharp[Cancellation#3](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex11.cs#3)]
  [!code-vb[Cancellation#3](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex11.vb#3)]  
   
- Более полный пример см. в подразделе [Практическое руководство. Прослушивание запросов на отмену посредством опросов](../../../docs/standard/threading/how-to-listen-for-cancellation-requests-by-polling.md).  
+ Более полный пример см. в подразделе [Практическое руководство. Прослушивание запросов на отмену посредством опросов](how-to-listen-for-cancellation-requests-by-polling.md).  
   
 ### <a name="listening-by-registering-a-callback"></a>Прослушивание путем регистрации обратного вызова  
  Некоторые операции могут быть заблокированы таким образом, при котором невозможно своевременно проверить значение токена отмены. В этих случаях можно зарегистрировать метод обратного вызова, который разблокирует метод при получении запроса на отмену.  
@@ -112,7 +112,7 @@ ms.locfileid: "73138139"
   
 - Обратные вызовы не должны обрабатывать какие-либо ручные потоки или использовать <xref:System.Threading.SynchronizationContext> в обратном вызове. Если обратный вызов должен выполняться в определенном потоке, используйте конструктор <xref:System.Threading.CancellationTokenRegistration?displayProperty=nameWithType>, который позволяет задать активный объект <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType> в качестве целевого объекта syncContext. Выполнение ручного потока в обратном вызове может привести к взаимоблокировке.  
   
- Более полный пример см. в подразделе [Практическое руководство. Регистрация обратных вызовов для запросов на отмену](../../../docs/standard/threading/how-to-register-callbacks-for-cancellation-requests.md).  
+ Более полный пример см. в подразделе [Практическое руководство. Регистрация обратных вызовов для запросов на отмену](how-to-register-callbacks-for-cancellation-requests.md).  
   
 ### <a name="listening-by-using-a-wait-handle"></a>Прослушивание с помощью дескриптора ожидания  
  В случаях, когда отменяемая операция может блокироваться на время ожидания примитива синхронизации, такого как <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> или <xref:System.Threading.Semaphore?displayProperty=nameWithType>, можно с помощью свойства <xref:System.Threading.CancellationToken.WaitHandle%2A?displayProperty=nameWithType> включить ожидание операцией как этого события, так и запроса на отмену. Дескриптору ожидания токена отмены будет отправлен сигнал в ответ на запрос отмены, и метод сможет с помощью возвращаемого значения метода <xref:System.Threading.WaitHandle.WaitAny%2A> определить, был ли этот сигнал отправлен токеном отмены. Затем операция может выполнить выход или создать исключение <xref:System.OperationCanceledException> в зависимости от ситуации.  
@@ -125,7 +125,7 @@ ms.locfileid: "73138139"
  [!code-csharp[Cancellation#6](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex10.cs#6)]
  [!code-vb[Cancellation#6](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex10.vb#6)]  
   
- Более полный пример см. в подразделе [Практическое руководство. Прослушивание запросов на отмену, содержащих дескрипторы ожидания](../../../docs/standard/threading/how-to-listen-for-cancellation-requests-that-have-wait-handles.md).  
+ Более полный пример см. в подразделе [Практическое руководство. Прослушивание запросов на отмену, содержащих дескрипторы ожидания](how-to-listen-for-cancellation-requests-that-have-wait-handles.md).  
   
 ### <a name="listening-to-multiple-tokens-simultaneously"></a>Одновременное прослушивание нескольких токенов  
  В некоторых случаях прослушивателю может требоваться одновременного прослушивать несколько токенов отмены. Например, отменяемая операция может в дополнение к токену отмены, переданному извне в качестве аргумента в параметр метода, отслеживать также внутренний токен отмены. Для этого создайте источник связанных токенов, который может объединять два или более токенов в один, как показано в примере ниже.  
@@ -133,7 +133,7 @@ ms.locfileid: "73138139"
  [!code-csharp[Cancellation#7](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex13.cs#7)]
  [!code-vb[Cancellation#7](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex13.vb#7)]  
   
- Следует отметить, что после выполнения источником связанных токенов всех возложенных на него функций необходимо вызвать для него метод `Dispose`. Более полный пример см. в подразделе [Практическое руководство. Прослушивание нескольких запросов на отмену](../../../docs/standard/threading/how-to-listen-for-multiple-cancellation-requests.md).  
+ Следует отметить, что после выполнения источником связанных токенов всех возложенных на него функций необходимо вызвать для него метод `Dispose`. Более полный пример см. в подразделе [Практическое руководство. Прослушивание нескольких запросов на отмену](how-to-listen-for-multiple-cancellation-requests.md).  
   
 ## <a name="cooperation-between-library-code-and-user-code"></a>Совместная работа кода библиотеки и пользовательского кода  
  Унифицированная инфраструктура отмены позволяет коду библиотеки отменять пользовательский код, а пользовательскому коду — отменять код библиотеки по принципу совместной работы. Успешная совместная работа зависит от соблюдения каждой стороной перечисленных ниже рекомендаций.  
@@ -144,8 +144,8 @@ ms.locfileid: "73138139"
   
 - Пользовательские делегаты должны пытаться своевременно отвечать на запросы отмены от кода библиотеки.  
   
- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> и <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType> — примеры классов, соответствующих этим рекомендациям. Дополнительные сведения см. в разделах [Отмена задач](../../../docs/standard/parallel-programming/task-cancellation.md) и [Практическое руководство. Отмена запроса PLINQ](../../../docs/standard/parallel-programming/how-to-cancel-a-plinq-query.md).  
+ <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> и <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType> — примеры классов, соответствующих этим рекомендациям. Дополнительные сведения см. в разделах [Отмена задач](../parallel-programming/task-cancellation.md) и [Практическое руководство. Отмена запроса PLINQ](../parallel-programming/how-to-cancel-a-plinq-query.md).  
   
 ## <a name="see-also"></a>См. также
 
-- [Основы управляемых потоков](../../../docs/standard/threading/managed-threading-basics.md)
+- [Основы управляемых потоков](managed-threading-basics.md)

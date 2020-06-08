@@ -2,12 +2,12 @@
 title: Чтение данных объекта из XML-файла (C#)
 ms.date: 07/20/2015
 ms.assetid: 6ad60d96-a4d9-48e6-a8b0-d7f6f803cafa
-ms.openlocfilehash: 18428cbe2f2d3b9434a77ee4d063ceabbba6bcb8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e2365d1260d3f6e239f294b2af3399c2fb659575
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79167822"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241881"
 ---
 # <a name="how-to-read-object-data-from-an-xml-file-c"></a>Чтение данных объекта из XML-файла (C#)
 В этом примере демонстрируется считывание данных объекта, которые ранее были записаны в XML-файл с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.  
@@ -58,10 +58,10 @@ public void ReadXML()
   
 - Файл не существует (<xref:System.IO.IOException>).  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
+## <a name="net-security"></a>Безопасность .NET  
  Всегда проверяйте входные данные и никогда не десериализуйте данные из непроверенных источников. Созданный заново объект выполняется на локальном компьютере с разрешениями кода, который его десериализовал. Следует проверять все входные данные перед использованием их в приложении.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IO.StreamWriter>
 - [Практическое руководство. Запись данных объекта в XML-файл (C#)](./how-to-write-object-data-to-an-xml-file.md)

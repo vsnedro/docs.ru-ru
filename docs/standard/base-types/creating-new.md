@@ -13,12 +13,12 @@ helpviewer_keywords:
 - strings [.NET Framework], creating
 - Insert method
 ms.assetid: 06fdf123-2fac-4459-8904-eb48ab908a30
-ms.openlocfilehash: ef65c50111d6ba91ab70d0b9c8cb90c606f9366c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a5dfe6429ac135202874f0524a252a7af900bd8d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73103821"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84279016"
 ---
 # <a name="creating-new-strings-in-net"></a>Создание новых строк в .NET
 .NET Framework позволяет создавать строки с помощью простой операции присваивания, а также перегружать конструктор класса для создания строк с помощью различных параметров. Кроме того, .NET Framework предоставляет в классе <xref:System.String?displayProperty=nameWithType> несколько методов для создания строковых объектов путем объединения строк, массивов строк или объектов.  
@@ -41,7 +41,7 @@ ms.locfileid: "73103821"
 |<xref:System.String.CopyTo%2A?displayProperty=nameWithType>|Копирование указанных знаков в строке в указанную позицию в массиве символов.|  
   
 ### <a name="format"></a>Формат  
- Метод **String.Format** позволяет создавать форматированные строки и сцеплять строки, представляющие несколько объектов. Этот метод автоматически преобразует в строку любой переданный объект. Например, если приложение должно предоставить пользователю значение **Int32** и значение **DateTime**, с помощью метода **Format** вы можете соединить их в одну строку для отображения. Сведения о правилах форматирования, используемых в этом методе, см. в разделе [Составное форматирование](../../../docs/standard/base-types/composite-formatting.md).  
+ Метод **String.Format** позволяет создавать форматированные строки и сцеплять строки, представляющие несколько объектов. Этот метод автоматически преобразует в строку любой переданный объект. Например, если приложение должно предоставить пользователю значение **Int32** и значение **DateTime**, с помощью метода **Format** вы можете соединить их в одну строку для отображения. Сведения о правилах форматирования, используемых в этом методе, см. в разделе [Составное форматирование](composite-formatting.md).  
   
  В следующем примере метод **Format** используется для создания строки, содержащей целочисленную переменную.  
   
@@ -80,5 +80,5 @@ ms.locfileid: "73103821"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Базовые операции со строками в .NET Framework](../../../docs/standard/base-types/basic-string-operations.md)
-- [Составное форматирование](../../../docs/standard/base-types/composite-formatting.md)
+- [Базовые операции со строками в .NET Framework](basic-string-operations.md)
+- [Составное форматирование](composite-formatting.md)

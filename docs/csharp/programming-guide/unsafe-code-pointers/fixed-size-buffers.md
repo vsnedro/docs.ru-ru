@@ -5,12 +5,12 @@ helpviewer_keywords:
 - fixed size buffers [C#]
 - unsafe buffers [C#]
 - unsafe code [C#], fixed size buffers
-ms.openlocfilehash: 5920dd125ded34969d60feb299568b56402056ab
-ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
+ms.openlocfilehash: 932ff3d57995ce47c4b74e8e888a479f0d09d0ed
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82140544"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397432"
 ---
 # <a name="fixed-size-buffers-c-programming-guide"></a>Буферы фиксированного размера (Руководство по программированию на C#)
 
@@ -26,11 +26,11 @@ private fixed char name[30];
 
 Размер следующего объекта `struct` не зависит от количества элементов в массиве, поскольку `pathName` представляет собой ссылку:
 
-[!code-csharp[Struct with embedded array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#6)]
+[!code-csharp[Struct with embedded array](snippets/FixedKeywordExamples.cs#6)]
 
 `struct` может содержать внедренный массив в небезопасном коде. В приведенном ниже примере массив `fixedBuffer` имеет фиксированный размер. Для установки указателя на первый элемент используется оператор `fixed`. С помощью этого указателя осуществляется доступ к элементам массива. Оператор `fixed` закрепляет поле экземпляра `fixedBuffer` в определенном месте в памяти.
 
-[!code-csharp[Struct with embedded inline array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#7)]
+[!code-csharp[Struct with embedded inline array](snippets/FixedKeywordExamples.cs#7)]
 
 Размер массива из 128 элементов `char` составляет 256 байт. В буферах типа [char](../../language-reference/builtin-types/char.md) фиксированного размера на один символ всегда приходится два байта независимо от кодировки. Это справедливо даже в том случае, когда буферы char маршалируются в методы API или структуры с `CharSet = CharSet.Auto` или `CharSet = CharSet.Ansi`. Для получения дополнительной информации см. <xref:System.Runtime.InteropServices.CharSet>.
 

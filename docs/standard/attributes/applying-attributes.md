@@ -10,12 +10,12 @@ helpviewer_keywords:
 - assemblies [.NET Framework], attributes
 - attributes [.NET Framework], applying
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
-ms.openlocfilehash: 14cd6fef80ff9ae3a9d78531785edab0da7cc6b9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5557da1531eb55c13d1c7540a50b044d1a7b8a1d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73130918"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84276339"
 ---
 # <a name="applying-attributes"></a>Применение атрибутов
 Чтобы применить атрибут к элементу кода, выполните указанные ниже действия.  
@@ -48,12 +48,12 @@ ms.locfileid: "73130918"
  [!code-csharp[Conceptual.Attributes.Usage#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source1.cs#2)]
  [!code-vb[Conceptual.Attributes.Usage#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source1.vb#2)]  
   
- Если атрибут применяется, строка `"My Assembly"` помещается в манифест сборки в раздел метаданных файла. Для просмотра атрибута можно воспользоваться [дизассемблером MSIL (Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) или создать пользовательскую программу для извлечения атрибута.  
+ Если атрибут применяется, строка `"My Assembly"` помещается в манифест сборки в раздел метаданных файла. Для просмотра атрибута можно воспользоваться [дизассемблером MSIL (Ildasm.exe)](../../framework/tools/ildasm-exe-il-disassembler.md) или создать пользовательскую программу для извлечения атрибута.  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Атрибуты](../../../docs/standard/attributes/index.md)
-- [Извлечение информации, сохраненной в атрибуте](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)
+- [Атрибуты](index.md)
+- [Извлечение информации, сохраненной в атрибуте](retrieving-information-stored-in-attributes.md)
 - [Основные понятия](/cpp/windows/attributed-programming-concepts)
 - [Атрибуты (C#)](../../csharp/programming-guide/concepts/attributes/index.md)
 - [Общие сведения об атрибутах (Visual Basic)](../../visual-basic/programming-guide/concepts/attributes/index.md)

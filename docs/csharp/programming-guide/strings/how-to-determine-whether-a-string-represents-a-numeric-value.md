@@ -6,12 +6,12 @@ helpviewer_keywords:
 - validating numeric input [C#]
 - strings [C#], numeric
 ms.assetid: a4e84e10-ea0a-489f-a868-503dded9d85f
-ms.openlocfilehash: 15a21a6298f8f0a57e0189554246202b220dd259
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 37437460ea4c6ca216f2844d63af3688ccc984c6
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79157069"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241725"
 ---
 # <a name="how-to-determine-whether-a-string-represents-a-numeric-value-c-programming-guide"></a>Руководство по программированию в C#. Определение представления числового значения в строке
 Чтобы определить, является ли строка допустимым представлением указанного числового типа, воспользуйтесь статическим методом `TryParse`, реализуемым всеми простыми числовыми типами, например <xref:System.DateTime> и <xref:System.Net.IPAddress>. В следующем примере показано, как определить, является ли число 108 допустимым типом [int](../../language-reference/builtin-types/integral-numeric-types.md).  
@@ -35,10 +35,10 @@ bool result = int.TryParse(s, out i); //i now = 108
 ## <a name="robust-programming"></a>Отказоустойчивость  
  Простые числовые типы также реализуют статический метод `Parse`, который вызывает исключение, если строка не является допустимым числом. В целом оператор `TryParse` более эффективен, поскольку если число не является допустимым, он просто возвращает значение "false".  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
+## <a name="net-security"></a>Безопасность .NET  
  Для проверки данных, введенных пользователем в такие элементы управления, как текстовые поля и поля со списком, всегда следует использовать метод `TryParse` или `Parse`.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Преобразование массива байтов в значение типа int](../types/how-to-convert-a-byte-array-to-an-int.md)
 - [Практическое руководство. Преобразование строки в число](../types/how-to-convert-a-string-to-a-number.md)

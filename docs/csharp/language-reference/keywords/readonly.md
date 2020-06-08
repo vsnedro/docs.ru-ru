@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - readonly keyword [C#]
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
-ms.openlocfilehash: 03b0aa63eda3e7a9d8745baaa33479fd5e85b01b
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 66a096e8831f72a2216e8ba5dd9866046504624f
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389056"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84368625"
 ---
 # <a name="readonly-c-reference"></a>readonly (Справочник по C#)
 
@@ -38,7 +38,7 @@ ms.locfileid: "81389056"
 
 В этом примере значение поля `year` нельзя изменить в методе `ChangeYear`, несмотря на то, что в конструкторе класса ему присваивается значение:
 
-[!code-csharp[Readonly Field example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#ReadonlyField)]
+[!code-csharp[Readonly Field example](snippets/ReadonlyKeywordExamples.cs#ReadonlyField)]
 
 Можно присвоить значение полю `readonly` только в следующих контекстах:
 
@@ -60,7 +60,7 @@ ms.locfileid: "81389056"
 > public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
 > ```
 
-[!code-csharp[Initialize readonly Field example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#InitReadonlyField)]
+[!code-csharp[Initialize readonly Field example](snippets/ReadonlyKeywordExamples.cs#InitReadonlyField)]
 
 В предыдущем примере при использовании такого оператора:
 
@@ -76,7 +76,7 @@ p2.y = 66;        // Error
 
 Модификатор `readonly` в `ref return` указывает, что возвращаемую ссылку нельзя изменить. Следующий пример возвращает ссылку на источник. Он использует модификатор `readonly`, чтобы указать, что вызывающие объекты не могут изменять источник:
 
-[!code-csharp[readonly return example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#ReadonlyReturn)]
+[!code-csharp[readonly return example](snippets/ReadonlyKeywordExamples.cs#ReadonlyReturn)]
 
 Необязательно должен возвращаться тип `readonly struct`. Любой тип, возвращаемый из `ref`, может возвращаться из `ref readonly`.
 

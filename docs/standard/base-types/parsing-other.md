@@ -13,12 +13,12 @@ helpviewer_keywords:
 - parsing strings, other strings
 - Boolean data type, parsing strings
 ms.assetid: d139bc00-3c4e-4d78-ac9a-5c951b258d28
-ms.openlocfilehash: 08e891501bbefcf8b32eff10dd7294af9d81adac
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a3503e0e499c6010fcc3d8669fa5c1eaf2dbf570
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73127574"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84277548"
 ---
 # <a name="parsing-other-strings-in-net"></a>Анализ других строк в .NET
 Кроме числовых строк и строк <xref:System.DateTime> вы можете преобразовать строки, представляющих типы <xref:System.Char>, <xref:System.Boolean> или <xref:System.Enum>, в соответствующие типы данных.  
@@ -50,6 +50,6 @@ ms.locfileid: "73127574"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Анализ строк в .NET Framework](../../../docs/standard/base-types/parsing-strings.md)
-- [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
-- [Преобразование типов в .NET](../../../docs/standard/base-types/type-conversion.md)
+- [Анализ строк в .NET Framework](parsing-strings.md)
+- [Типы форматирования](formatting-types.md)
+- [Преобразование типов в .NET](type-conversion.md)

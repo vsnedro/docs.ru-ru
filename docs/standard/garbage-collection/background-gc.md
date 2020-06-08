@@ -5,18 +5,18 @@ ms.date: 04/21/2020
 helpviewer_keywords:
 - garbage collection, background
 - background garbage collection
-ms.openlocfilehash: dcb1d348e679e07646273b8fbc4ea29b44ee4974
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: 8134c0af55d74e57dcfce8c7174265b8c9902feb
+ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82103499"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84307076"
 ---
 # <a name="background-garbage-collection"></a>Фоновая сборка мусора
 
 При фоновой сборке мусора сборка эфемерных поколений (0 и 1) выполняется по мере надобности, в ходе выполнения сборки поколения 2. Фоновая сборка мусора выполняется в одном или нескольких выделенных потоках в зависимости от того, является ли она фоновой или серверной и применяется только к коллекциям поколения 2.
 
-Фоновая сборка мусора включена по умолчанию. Ее можно включить или отключить с помощью параметра конфигурации [gcConcurrent](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) в приложениях .NET Framework или параметра [System.GC.Concurrent](../../core/run-time-config/garbage-collector.md#systemgcconcurrentcomplus_gcconcurrent) в приложениях .NET Core.
+Фоновая сборка мусора включена по умолчанию. Ее можно включить или отключить с помощью параметра конфигурации [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) в приложениях .NET Framework или параметра [System.GC.Concurrent](../../core/run-time-config/garbage-collector.md#systemgcconcurrentcomplus_gcconcurrent) в приложениях .NET Core.
 
 > [!NOTE]
 > Фоновая сборка мусора заменяет [параллельную сборку мусора](#concurrent-garbage-collection) и доступна в .NET Framework 4 и более поздних версиях. В .NET Framework 4 она поддерживается только для сборки мусора на *рабочих станциях*. Начиная с .NET Framework 4.5 фоновая сборка мусора доступна для сборки мусора как на *рабочих станциях*, так и на *серверах*
@@ -39,11 +39,11 @@ ms.locfileid: "82103499"
 
 На следующем рисунке показана фоновая сборка мусора *рабочей станции* в отдельном выделенном потоке:
 
-![Фоновая сборка мусора рабочей станции](./media/fundamentals/background-workstation-garbage-collection.png)
+![Фоновая сборка мусора рабочей станции](media/fundamentals/background-workstation-garbage-collection.png)
 
 На следующем рисунке показана фоновая сборка мусора *сервера* в отдельном выделенном потоке:
 
-![Фоновая сборка мусора сервера](./media/fundamentals/background-server-garbage-collection.png)
+![Фоновая сборка мусора сервера](media/fundamentals/background-server-garbage-collection.png)
 
 ## <a name="concurrent-garbage-collection"></a>Параллельная сборка мусора
 
@@ -55,7 +55,7 @@ ms.locfileid: "82103499"
 >
 > В более поздних версиях параллельная сборка мусора заменена на фоновую.
 
-При сборке мусора рабочей станции или серверной сборке мусора можно [включить параллельную сборку мусора](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md), что позволит потокам работать параллельно с выделенным потоком, выполняющим сборку мусора, в течение большей части продолжительности сборки. Этот вариант влияет только на сборки мусора для поколения 2, сборки для поколений 0 и 1 всегда выполняются непараллельно, так как они заканчиваются быстро.
+При сборке мусора рабочей станции или серверной сборке мусора можно [включить параллельную сборку мусора](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md), что позволит потокам работать параллельно с выделенным потоком, выполняющим сборку мусора, в течение большей части продолжительности сборки. Этот вариант влияет только на сборки мусора для поколения 2, сборки для поколений 0 и 1 всегда выполняются непараллельно, так как они заканчиваются быстро.
 
 Параллельная сборка мусора позволяет интерактивным приложениям лучше реагировать, минимизируя паузы для сборки. В течение большей части времени выполнения потока параллельной сборки мусора управляемые потоки могут продолжить выполнение. Это приведет к сокращению пауз во время выполнения сборки мусора.
 
@@ -63,7 +63,7 @@ ms.locfileid: "82103499"
 
 На следующем рисунке показана параллельная сборка мусора на отдельном выделенном потоке.
 
-![Параллельные потоки сборки мусора](./media/gc-concurrent.png)
+![Параллельные потоки сборки мусора](media/gc-concurrent.png)
 
 ## <a name="see-also"></a>См. также
 

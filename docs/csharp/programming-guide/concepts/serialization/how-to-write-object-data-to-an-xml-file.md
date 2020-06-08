@@ -2,12 +2,12 @@
 title: Запись данных объекта в XML-файл (C#)
 ms.date: 07/20/2015
 ms.assetid: 7681eb98-703d-4005-a369-26a7bca0f894
-ms.openlocfilehash: f7ffb47a22d3cd94cd7cb6f702b64180a8790eb4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6f18ae194d2ed70f633665a29772622319ea9493
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79167518"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241998"
 ---
 # <a name="how-to-write-object-data-to-an-xml-file-c"></a>Запись данных объекта в XML-файл (C#)
 Показывает, как записать объект из класса в XML-файл с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.  
@@ -58,10 +58,10 @@ public class XMLWrite
   
 - Диск заполнен (<xref:System.IO.IOException>).  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
+## <a name="net-security"></a>Безопасность .NET  
  В этом примере создается файл (если файл отсутствует). Если приложению требуется создать файл, оно должно иметь доступ к каталогу для создания файлов (`Create`). Если файл уже существует, то приложению достаточно иметь лишь доступ для записи файлов (`Write`), т. е. меньшие привилегии. Безопаснее создавать файл во время развертывания, если это возможно, а также предоставлять доступ `Read` к отдельному файлу вместо доступа `Create` к папке.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IO.StreamWriter>
 - [Практическое руководство. Чтение данных объекта из XML-файла (C#)](./how-to-read-object-data-from-an-xml-file.md)

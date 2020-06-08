@@ -13,12 +13,12 @@ helpviewer_keywords:
 - regular expressions [.NET Framework], examples
 - pattern-matching with regular expressions, examples
 ms.assetid: 5fcc75a5-09d7-45ae-a4c0-9ad6085ac83d
-ms.openlocfilehash: 358e26957747073fec9dfe9eb0d404cb438afaf9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4290bf0d6ee9deec8129c5f4f6092eedb08345f0
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73084184"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84276183"
 ---
 # <a name="regular-expression-example-changing-date-formats"></a>Пример регулярного выражения. Изменение форматов даты
 В следующем примере кода метод <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> используется для замены дат в формате *мм*/*дд*/*гг* на даты в формате *дд*-*мм*-*гг*.  
@@ -57,4 +57,4 @@ ms.locfileid: "73084184"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Регулярные выражения .NET](../../../docs/standard/base-types/regular-expressions.md)
+- [Регулярные выражения .NET](regular-expressions.md)

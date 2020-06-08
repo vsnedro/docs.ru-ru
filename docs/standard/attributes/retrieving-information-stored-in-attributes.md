@@ -11,18 +11,18 @@ helpviewer_keywords:
 - multiple attribute instances
 - attributes [.NET Framework], retrieving
 ms.assetid: 37dfe4e3-7da0-48b6-a3d9-398981524e1c
-ms.openlocfilehash: 4f0f3555ae1ab7e662d5f88ac65739a7c791a964
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fc8dcb38471d80d01d1f87993783af3d24868506
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78158081"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84276139"
 ---
 # <a name="retrieving-information-stored-in-attributes"></a>Извлечение информации, сохраненной в атрибуте
 Извлечение пользовательских атрибутов не представляет никакой сложности. Сначала объявите экземпляр атрибута, который вам нужно получить. Затем вызовите метод <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>, чтобы инициализировать новый атрибут тем значением, которое вы хотите получить. После инициализации нового атрибута обращайтесь к его свойствам, чтобы получить значения.  
   
 > [!IMPORTANT]
-> В этой статье объясняется, как можно получить настраиваемые атрибуты для кода, загруженного в контекст выполнения. Чтобы получить атрибуты для кода, загруженного в контекст только для отражения, необходимо использовать класс <xref:System.Reflection.CustomAttributeData>, как показано в статье о [загрузке сборок в контекст, предназначенный только для отражения](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
+> В этой статье объясняется, как можно получить настраиваемые атрибуты для кода, загруженного в контекст выполнения. Чтобы получить атрибуты для кода, загруженного в контекст только для отражения, необходимо использовать класс <xref:System.Reflection.CustomAttributeData>, как показано в статье о [загрузке сборок в контекст, предназначенный только для отражения](../../framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
   
  В этом разделе описываются следующие способы извлечения атрибутов.  
   
@@ -87,4 +87,4 @@ The attribute was not found.
 - <xref:System.Type?displayProperty=nameWithType>
 - <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>
 - <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>
-- [Атрибуты](../../../docs/standard/attributes/index.md)
+- [Атрибуты](index.md)

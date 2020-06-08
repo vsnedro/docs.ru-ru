@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Task-based Asynchronous Pattern, .NET Framework support for
 - .NET Framework, asynchronous design patterns
 ms.assetid: f120a5d9-933b-4d1d-acb6-f034a57c3749
-ms.openlocfilehash: 981c13c68eaf1eb0c19f95eb1b097935ea02a16d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fe5d8321a62b67a54dc09507e8fd86ee8d5cf74d
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159758"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84276560"
 ---
 # <a name="interop-with-other-asynchronous-patterns-and-types"></a>Взаимодействие с другими асинхронными шаблонами и типами
-В .NET Framework 1.0 появился шаблон <xref:System.IAsyncResult> , также известный как [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md)или шаблон `Begin/End` .  В .NET Framework 2.0 добавлен [Асинхронная модель на основе событий (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md).  Начиная с платформы .NET Framework 4 [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) заменяет APM и EAP, но при этом предоставляет возможность легко строить процедуры миграции с более ранних шаблонов.  
+В .NET Framework 1.0 появился шаблон <xref:System.IAsyncResult> , также известный как [Asynchronous Programming Model (APM)](asynchronous-programming-model-apm.md)или шаблон `Begin/End` .  В .NET Framework 2.0 добавлен [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md).  Начиная с платформы .NET Framework 4 [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md) заменяет APM и EAP, но при этом предоставляет возможность легко строить процедуры миграции с более ранних шаблонов.  
   
  В этом разделе:  
   
@@ -35,7 +35,7 @@ ms.locfileid: "78159758"
   
 <a name="ApmToTap"></a>
 ### <a name="from-apm-to-tap"></a>от APM к TAP  
- Так как шаблон [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) сильно структурирован, можно довольно легко создавать оболочки для предоставления реализации APM в качестве реализации TAP. На деле платформа .NET Framework начиная с версии .NET Framework 4 включает вспомогательные процедуры в форме перегрузок методов <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> для реализации этого преобразования.  
+ Так как шаблон [Asynchronous Programming Model (APM)](asynchronous-programming-model-apm.md) сильно структурирован, можно довольно легко создавать оболочки для предоставления реализации APM в качестве реализации TAP. На деле платформа .NET Framework начиная с версии .NET Framework 4 включает вспомогательные процедуры в форме перегрузок методов <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> для реализации этого преобразования.  
   
  Рассмотрим класс <xref:System.IO.Stream> и его методы <xref:System.IO.Stream.BeginRead%2A> и <xref:System.IO.Stream.EndRead%2A> , которые представляют аналог APM для синхронного метода <xref:System.IO.Stream.Read%2A> :  
   
@@ -82,7 +82,7 @@ ms.locfileid: "78159758"
   
 <a name="EAP"></a>
 ## <a name="tasks-and-the-event-based-asynchronous-pattern-eap"></a>Задачи и асинхронная модель, основанная на событиях  
- Создание оболочки для реализации [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md) сложнее создания оболочки для шаблона APM, так как шаблон EAP имеет несколько вариантов и менее структурирован, чем шаблон APM.  В качестве демонстрации следующий код создает оболочку метода `DownloadStringAsync` .  `DownloadStringAsync` принимает универсальный код ресурса (URI), создает событие `DownloadProgressChanged` во время скачивания, чтобы периодически передавать данные о ходе загрузки, а когда загрузка завершена, создает событие `DownloadStringCompleted` .  Конечным результатом является строка, содержащая оглавление страницы по указанному URI.  
+ Создание оболочки для реализации [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md) сложнее создания оболочки для шаблона APM, так как шаблон EAP имеет несколько вариантов и менее структурирован, чем шаблон APM.  В качестве демонстрации следующий код создает оболочку метода `DownloadStringAsync` .  `DownloadStringAsync` принимает универсальный код ресурса (URI), создает событие `DownloadProgressChanged` во время скачивания, чтобы периодически передавать данные о ходе загрузки, а когда загрузка завершена, создает событие `DownloadStringCompleted` .  Конечным результатом является строка, содержащая оглавление страницы по указанному URI.  
   
  [!code-csharp[Conceptual.AsyncInterop#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.AsyncInterop/cs/EAP1.cs#11)]
  [!code-vb[Conceptual.AsyncInterop#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.AsyncInterop/vb/EAP1.vb#11)]  
@@ -102,7 +102,7 @@ ms.locfileid: "78159758"
  [!code-csharp[Conceptual.AsyncInterop#13](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.AsyncInterop/cs/Semaphore1.cs#13)]
  [!code-vb[Conceptual.AsyncInterop#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.AsyncInterop/vb/Semaphore1.vb#13)]  
   
- Можно также создать асинхронный семафор, который не зависит от дескрипторов ожидания и вместо этого работает только с задачами. Для этого используются методы, описанные в разделе [Consuming the Task-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md) для построения структур данных на основе <xref:System.Threading.Tasks.Task>.  
+ Можно также создать асинхронный семафор, который не зависит от дескрипторов ожидания и вместо этого работает только с задачами. Для этого используются методы, описанные в разделе [Consuming the Task-based Asynchronous Pattern](consuming-the-task-based-asynchronous-pattern.md) для построения структур данных на основе <xref:System.Threading.Tasks.Task>.  
   
 <a name="TapToWH"></a>
 ### <a name="from-tap-to-wait-handles"></a>от TAP к дескрипторам ожидания  
@@ -113,6 +113,6 @@ ms.locfileid: "78159758"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) (Асинхронный шаблон, основанный на задачах (TAP))
-- [Реализация асинхронной модели на основе задач](../../../docs/standard/asynchronous-programming-patterns/implementing-the-task-based-asynchronous-pattern.md)
-- [Использование асинхронной модели на основе задач](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md)
+- [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md) (Асинхронный шаблон, основанный на задачах (TAP))
+- [Реализация асинхронной модели на основе задач](implementing-the-task-based-asynchronous-pattern.md)
+- [Использование асинхронной модели на основе задач](consuming-the-task-based-asynchronous-pattern.md)

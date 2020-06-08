@@ -8,22 +8,22 @@ helpviewer_keywords:
 - concurrency [.NET]
 - asynchronous programming [.NET]
 ms.assetid: e573faa8-0212-44b1-a850-ce85dc54f47f
-ms.openlocfilehash: 08a1b45759b1b78368f867161a13cf2af4db1a60
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2f65d7ec317a12c933eda41c5fd957d21c332b42
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73123201"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84285876"
 ---
 # <a name="parallel-processing-concurrency-and-async-programming-in-net"></a>Параллельная обработка, параллелизм и асинхронное программирование в .NET
 .NET предоставляет ряд способов написания асинхронного кода, позволяющего уменьшить время отклика приложения на действия пользователя, а также написания параллельного кода, который использует несколько потоков выполнения, чтобы повысить производительность компьютера.  
   
 ## <a name="in-this-section"></a>Содержание  
- [Асинхронное программирование](../../docs/standard/async.md)  
+ [Асинхронное программирование](async.md)  
  Описываются механизмы асинхронного программирования, предоставляемые .NET.  
   
- [Параллельное программирование](../../docs/standard/parallel-programming/index.md)  
+ [Параллельное программирование](parallel-programming/index.md)  
  Описывает модель программирования, основанную на задачах, которая упрощает разработку параллельных приложений, позволяя писать эффективный, точный и масштабируемый параллельный код естественным образом без необходимости работать непосредственно с потоками или пулом потоков.  
 
- [Работа с потоками](../../docs/standard/threading/index.md)  
+ [Работа с потоками](threading/index.md)  
  Описываются основные механизмы параллелизма и синхронизации, предоставляемые .NET.  

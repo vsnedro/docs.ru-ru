@@ -9,12 +9,12 @@ helpviewer_keywords:
 - reading data, text files
 - text files, reading
 ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
-ms.openlocfilehash: d401a1d1bb2c6fccb203c440f367bd14c80e70e3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8f79d22a86390ca931b05262e50865d852c154c7
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705019"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241751"
 ---
 # <a name="how-to-read-from-a-text-file-c-programming-guide"></a>Руководство по программированию на C#. Чтение из текстового файла
 В этом примере считывается содержимое текстового файла с помощью статических методов <xref:System.IO.File.ReadAllText%2A> и <xref:System.IO.File.ReadAllLines%2A> из класса <xref:System.IO.File?displayProperty=nameWithType>.  
@@ -37,10 +37,10 @@ ms.locfileid: "75705019"
   
 - Файл не существует или не существует в указанном месте. Проверьте правильность написания имени файла и путь к нему.  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
+## <a name="net-security"></a>Безопасность .NET  
  Не следует полагаться на имя файла, чтобы определить содержимое файла. Например, файл `myFile.cs` может вовсе не быть исходным файлом C#.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IO?displayProperty=nameWithType>
 - [Руководство по программированию на C#](../index.md)

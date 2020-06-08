@@ -2,12 +2,12 @@
 title: Начало работы с Azure и .NET
 description: Необходимые основные сведения об Azure и .NET.
 ms.date: 03/15/2020
-ms.openlocfilehash: 64defed4433647c2a0dcce91493d9ec77d21b541
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: d57d1d50852c9d7fff099554bd64c48c15129bb4
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607885"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84446396"
 ---
 # <a name="introduction-to-azure-and-net"></a>Введение в Azure и .NET
 
@@ -77,5 +77,5 @@ ms.locfileid: "81607885"
 
 * [Создание веб-приложения ASP.NET Core в Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
 * [Аутентификация в пакете Azure SDK для .NET](./sdk/authentication.md)
-* [Diagnosing Errors on your Cloud Apps](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps) (Диагностика ошибок в облачных приложениях)
+* [Diagnosing Errors on your Cloud Apps](https://devblogs.microsoft.com/aspnet/diagnosing-errors-on-your-cloud-apps/) (Диагностика ошибок в облачных приложениях)
 * Скачайте бесплатно электронную книгу [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook) (Краткое руководство по началу работы с Azure для разработчиков .NET)

@@ -6,12 +6,12 @@ f1_keywords:
 - whereconstraint_CSharpKeyword
 helpviewer_keywords:
 - where (generic type constraint) [C#]
-ms.openlocfilehash: 5a56b8058735d3ca786520a82424c79d1975bfc4
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 406c710cd884363c32b98336717732a09b3d1fc1
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463011"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401879"
 ---
 # <a name="where-generic-type-constraint-c-reference"></a>where (ограничение универсального типа) (справочник по C#)
 
@@ -19,20 +19,20 @@ ms.locfileid: "81463011"
 
 Например, можно объявить универсальный класс `MyGenericClass` так, чтобы параметр типа `T` реализовывал интерфейс <xref:System.IComparable%601>:
 
-[!code-csharp[using an interface constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#1)]
+[!code-csharp[using an interface constraint](snippets/GenericWhereConstraints.cs#1)]
 
 > [!NOTE]
 > Дополнительные сведения о предложении where в выражении запроса см. в разделе [Предложение where](where-clause.md).
 
 Предложение `where` также может включать ограничение базового класса. Ограничение базового класса указывает, что тип, который должен использоваться как аргумент типа для этого универсального типа, имеет заданный класс в качестве базового класса или является этим базовым классом. Если ограничение базового класса используется, оно должно быть указано перед любыми другими ограничениями данного параметра типа. Некоторые типы не могут использоваться как ограничение базового класса: <xref:System.Object>, <xref:System.Array> и <xref:System.ValueType>. До C# 7.3 <xref:System.Enum>, <xref:System.Delegate> и <xref:System.MulticastDelegate> также не могли использоваться в качестве ограничений базового класса. Ниже приведен пример типов, которые теперь можно указать как базовый класс:
 
-[!code-csharp[using an interface constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#2)]
+[!code-csharp[using an interface constraint](snippets/GenericWhereConstraints.cs#2)]
 
 В контексте, допускающем значения NULL, в C# 8.0 и более поздних версиях принудительно применяется допустимость значений NULL для типа базового класса. Если базовый класс не допускает значения NULL (например, `Base`), аргумент типа должен иметь значение, отличное от NULL. Если базовый класс допускает значения NULL (например, `Base?`), аргумент типа может быть ссылочным типом, допускающим или не допускающим значения NULL. Компилятор выдает предупреждение, если аргумент типа является ссылочным типом, допускающим значения NULL, когда базовый класс не допускает значения NULL.
 
 Предложение `where` может указывать, что тип является `class` или `struct`. Ограничение `struct` избавляет от необходимости указывать ограничение базового класса `System.ValueType`. Тип `System.ValueType` не может использоваться как ограничение базового класса. Ограничения `class` и `struct` показаны в следующем примере:
 
-[!code-csharp[using the class and struct constraints](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#3)]
+[!code-csharp[using the class and struct constraints](snippets/GenericWhereConstraints.cs#3)]
 
 В контексте, допускающем значения NULL, в C# 8.0 и более поздних версиях для ограничения `class` требуется тип, являющийся ссылочным типом, не допускающим значения NULL. Чтобы разрешить ссылочные типы, допускающие значения NULL, используйте ограничение `class?`, которое разрешает ссылочные типы, допускающие и не допускающие значения NULL.
 
@@ -41,29 +41,29 @@ ms.locfileid: "81463011"
 > [!IMPORTANT]
 > Универсальные объявления, включающие ограничение `notnull`, можно использовать в обнуляемом контексте, допускающем значение NULL, но компилятор не применяет ограничение.
 
-[!code-csharp[using the nonnull constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#NotNull)]
+[!code-csharp[using the nonnull constraint](snippets/GenericWhereConstraints.cs#NotNull)]
 
 Предложение `where` также может включать ограничение `unmanaged`. Ограничение `unmanaged` позволяет использовать в качестве параметра типа только типы, называемые [неуправляемыми типами](../builtin-types/unmanaged-types.md). Ограничение `unmanaged` упрощает написание кода взаимодействия низкого уровня на языке C#. Это ограничение включает подпрограммы с возможностью повторного использования для всех неуправляемых типов. Ограничение `unmanaged` нельзя использовать с ограничением `class` или `struct`. Ограничение `unmanaged` требует тип `struct`:
 
-[!code-csharp[using the unmanaged constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#4)]
+[!code-csharp[using the unmanaged constraint](snippets/GenericWhereConstraints.cs#4)]
 
 Предложение `where` также может включать ограничение конструктора, `new()`. Это ограничение позволяет создать экземпляр параметра типа с помощью оператора `new`. [Ограничение new()](new-constraint.md) сообщает компилятору о том, что все предоставленные аргументы типа должны иметь доступный конструктор без параметров. Пример:
 
-[!code-csharp[using the new constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#5)]
+[!code-csharp[using the new constraint](snippets/GenericWhereConstraints.cs#5)]
 
 Ограничение `new()` отображается в предложении `where` последним. Ограничение `new()` не может использоваться с ограничениями `struct` или `unmanaged`. Все типы, удовлетворяющие этим ограничениям, должны иметь доступ к конструктору без параметров, поэтому ограничение `new()` будет избыточным.
 
 Если параметров типа несколько, для каждого из них необходимо использовать по одному предложению `where`, например:
 
-[!code-csharp[using multiple where constraints](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#6)]
+[!code-csharp[using multiple where constraints](snippets/GenericWhereConstraints.cs#6)]
 
 Кроме того, ограничения можно присоединять к параметрам типа универсальных методов следующим образом:
 
-[!code-csharp[where constraints with generic methods](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#7)]
+[!code-csharp[where constraints with generic methods](snippets/GenericWhereConstraints.cs#7)]
 
 Обратите внимание на то, что ограничения параметров типа для делегатов имеют такой же синтаксис, как и методы:
 
-[!code-csharp[where constraints with generic methods](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#8)]
+[!code-csharp[where constraints with generic methods](snippets/GenericWhereConstraints.cs#8)]
 
 Дополнительные сведения об универсальных делегатах см. в разделе [Универсальные делегаты](../../programming-guide/generics/generic-delegates.md).
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - registry keys, creating [C#]
 - keys, creating in registry
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
-ms.openlocfilehash: 16974db950a3a460416cfb917147439707e1d007
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9e340083ffca118337dc9a53bdf20808cd1b15cb
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635448"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241634"
 ---
 # <a name="how-to-create-a-key-in-the-registry-c-programming-guide"></a>Руководство по программированию на C#. Создание раздела в реестре
 Код в этом примере добавляет в раздел Names реестра текущего пользователя пару значений — Name и Isabella.  
@@ -48,14 +48,14 @@ key.Close();
   
 - Раздел реестра доступен только для чтения.  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
+## <a name="net-security"></a>Безопасность .NET  
  Безопаснее записывать данные в папку пользователя (`Microsoft.Win32.Registry.CurrentUser`), чем на локальный компьютер (`Microsoft.Win32.Registry.LocalMachine`).  
   
  Создавая значение реестра, необходимо решить, что делать, если это значение уже существует. Другой процесс (возможно, вредоносный) мог уже создать это значение и получить к нему доступ. Данные, добавленные в значение реестра, становятся доступными для другого процесса. Чтобы этого избежать, используйте `Overload:Microsoft.Win32.RegistryKey.GetValue` метод. Он возвращает значение NULL, если раздел еще не существует.  
   
  Небезопасно хранить секретные данные (например, пароли) в реестре как обычный текст, даже если раздел реестра защищен с помощью списков управления доступом (ACL).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IO?displayProperty=nameWithType>
 - [Руководство по программированию на C#](../index.md)

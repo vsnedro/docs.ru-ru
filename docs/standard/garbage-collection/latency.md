@@ -6,12 +6,12 @@ helpviewer_keywords:
 - garbage collection, intrusiveness
 - garbage collection, latency modes
 ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
-ms.openlocfilehash: a8eaf0c80aa32978eead80c51a905cbcd66a537b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ee45fe5e8016c7507bc3a873e615fd8379810a8e
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74283595"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286019"
 ---
 # <a name="latency-modes"></a>Режимы задержки
 
@@ -58,12 +58,12 @@ ms.locfileid: "74283595"
 
 - Не забывайте про потоки, которые могут выделять память. Поскольку свойство <xref:System.Runtime.GCSettings.LatencyMode%2A> относится ко всему процессу, исключения <xref:System.OutOfMemoryException> можно создать в любом потоке, выделяющем память.
 
-- Заключите код режима небольшой задержки в области ограниченного выполнения. Дополнительные сведения см. в статье [Области ограниченного выполнения](../../../docs/framework/performance/constrained-execution-regions.md).
+- Заключите код режима небольшой задержки в области ограниченного выполнения. Дополнительные сведения см. в статье [Области ограниченного выполнения](../../framework/performance/constrained-execution-regions.md).
 
 - Можно принудительно запускать освобождение объектов поколения 2 в периоды небольшого времени ожидания путем вызова метода <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=nameWithType>.
 
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.GC?displayProperty=nameWithType>
-- [Индуцированные коллекции](../../../docs/standard/garbage-collection/induced.md)
-- [Сборка мусора](../../../docs/standard/garbage-collection/index.md)
+- [Индуцированные коллекции](induced.md)
+- [Сборка мусора](index.md)

@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - garbage collection, forced
 ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149
-ms.openlocfilehash: 604b49ef577a46204b523ebf5a8575a30b81635e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 36dff45587c6c28ba17fd7389dc3863893ff8f61
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73120917"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286045"
 ---
 # <a name="induced-collections"></a>Индуцированные коллекции
 В большинстве случаев сборщик мусора может определить самое подходящее время для выполнения сборки мусора, поэтому следует дать ему возможность работать независимо. В очень редких случаях принудительная сборка мусора может улучшить производительность приложения. В этих случаях вы можете принудительно запустить сборку мусора с помощью метода <xref:System.GC.Collect%2A?displayProperty=nameWithType>.  
@@ -36,5 +36,5 @@ ms.locfileid: "73120917"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Режимы задержки](../../../docs/standard/garbage-collection/latency.md)
-- [Сборка мусора](../../../docs/standard/garbage-collection/index.md)
+- [Режимы задержки](latency.md)
+- [Сборка мусора](index.md)

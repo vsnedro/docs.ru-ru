@@ -6,12 +6,12 @@ helpviewer_keywords:
 - codepage compiler option [Visual Basic]
 - -codepage compiler option [Visual Basic]
 ms.assetid: be36ec33-6800-4505-838c-4124564f5cc9
-ms.openlocfilehash: a38fb4be9347b3372b4a459fce2e96b9e38c3a51
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 34dbf36cc79a8c4715cf6a07c57d559e14f40030
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74343548"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84363634"
 ---
 # <a name="-codepage-visual-basic"></a>-codepage (Visual Basic)
 Задает кодовую страницу, используемую для всех файлов исходного кода при компиляции.  
@@ -38,4 +38,4 @@ ms.locfileid: "74343548"
   
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)

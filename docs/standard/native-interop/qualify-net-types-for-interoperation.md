@@ -10,12 +10,12 @@ helpviewer_keywords:
 - interoperation with unmanaged code, exposing .NET Framework components
 - COM interop, exposing COM components
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
-ms.openlocfilehash: 5b122befffbcad39258393462c75ac20431d9136
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 5e8d604c8152d37475bf93e3b5687f24cfebfa02
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420504"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84285967"
 ---
 # <a name="qualifying-net-types-for-com-interoperation"></a>Уточнение типов .NET для COM-взаимодействия
 Если вы планируете предоставлять типы в сборке COM-приложениям, во время разработки необходимо учитывать требования COM-взаимодействия. Управляемые типы (класс, интерфейс, структура и перечисление) легко интегрируются с COM-типами, если следовать приведенным ниже рекомендациям:  
@@ -49,7 +49,7 @@ ms.locfileid: "83420504"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.ComVisibleAttribute>
-- [Предоставление компонентов .NET Framework клиентам COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
+- [Предоставление компонентов .NET Framework клиентам COM](../../framework/interop/exposing-dotnet-components-to-com.md)
 - [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface) (Введение в интерфейс класса)
-- [Применение атрибутов взаимодействия](../../../docs/standard/native-interop/apply-interop-attributes.md)
-- [Упаковка сборки .NET Framework для COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)
+- [Применение атрибутов взаимодействия](apply-interop-attributes.md)
+- [Упаковка сборки .NET Framework для COM](../../framework/interop/packaging-an-assembly-for-com.md)
