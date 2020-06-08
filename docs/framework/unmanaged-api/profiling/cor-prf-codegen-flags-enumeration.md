@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3e184022-0247-4824-a23d-6b29593d8d01
 topic_type:
 - apiref
-ms.openlocfilehash: 4dd4e39c9092d018f13e3bd2822e9492d71141ad
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: c2c7ae7a8930949c79b5e24e2da75f3b4649e7f6
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76867299"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500992"
 ---
 # <a name="cor_prf_codegen_flags-enumeration"></a>Перечисление COR_PRF_CODEGEN_FLAGS
 Определяет флаги создания кода, которые можно задать с помощью метода [икорпрофилерфунктионконтрол:: SetCodegenFlags](icorprofilerfunctioncontrol-setcodegenflags-method.md) .  
@@ -40,18 +40,18 @@ typedef enum {
 |`COR_PRF_CODEGEN_DISABLE_INLINING`|Никакие функции не будут встроены в текст этой функции. Однако сама функция может быть встроена в ее вызывающие объекты.|  
 |`COR_PRF_CODEGEN_DISABLE_ALL_OPTIMIZATIONS`|Для текста этой функции будут отключены все оптимизации. Однако сама функция по-прежнему может быть встроена в ее вызывающие объекты.|  
   
-## <a name="remarks"></a>Заметки  
- Перечисление `COR_PRF_CODEGEN_FLAGS` используется методом [икорпрофилерфунктионконтрол:: SetCodegenFlags](icorprofilerfunctioncontrol-setcodegenflags-method.md) , чтобы позволить профилировщику управлять созданием кода для JIT-перекомпилированной функции.  
+## <a name="remarks"></a>Примечания  
+ `COR_PRF_CODEGEN_FLAGS`Перечисление используется методом [икорпрофилерфунктионконтрол:: SetCodegenFlags](icorprofilerfunctioncontrol-setcodegenflags-method.md) , чтобы позволить профилировщику управлять созданием кода для JIT-перекомпилированной функции.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Перечисления профилирования](profiling-enumerations.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
 topic_type:
 - apiref
-ms.openlocfilehash: 8841fab0517353849ef99594bcbd03dda772c766
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 426b39aa3d1ada5ae44565a742b70681a7bcf6d3
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616506"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493478"
 ---
 # <a name="_corvalidateimage-function"></a>Функция _CorValidateImage
 Проверяет образы управляемого модуля и уведомляет загрузчик операционной системы после их загрузки.  
@@ -48,7 +48,7 @@ STDAPI _CorValidateImage (
 |`STATUS_INVALID_IMAGE_FORMAT`|Недопустимый образ. Это значение имеет 0xC000007BL HRESULT.|  
 |`STATUS_SUCCESS`|Изображение является допустимым. Это значение равно HRESULT 0x00000000.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Примечания  
  В Windows XP и более поздних версиях загрузчик операционной системы проверяет наличие управляемых модулей, проверяя бит каталога дескрипторов COM в заголовке COFF. Заданный бит указывает на управляемый модуль. Если загрузчик обнаруживает управляемый модуль, он загружает библиотеку MsCorEE. dll и вызывает метод `_CorValidateImage` , который выполняет следующие действия:  
   
 - Подтверждает, что образ является допустимым управляемым модулем.  
@@ -59,7 +59,7 @@ STDAPI _CorValidateImage (
   
 - Возвращается загрузчику при загрузке образов управляемого модуля.  
   
- Для исполняемых образов загрузчик операционной системы затем вызывает функцию [_CorExeMain](../../../../docs/framework/unmanaged-api/hosting/corexemain-function.md) , независимо от точки входа, указанной в исполняемом файле. Для образов сборки DLL загрузчик вызывает функцию [_CorDllMain](cordllmain-function.md) .  
+ Для исполняемых образов загрузчик операционной системы затем вызывает функцию [_CorExeMain](corexemain-function.md) , независимо от точки входа, указанной в исполняемом файле. Для образов сборки DLL загрузчик вызывает функцию [_CorDllMain](cordllmain-function.md) .  
   
  `_CorExeMain`или `_CorDllMain` выполняет следующие действия.  
   
@@ -80,6 +80,6 @@ STDAPI _CorValidateImage (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 625c3dd5-a3f0-442c-adde-310dadbb5054
 topic_type:
 - apiref
-ms.openlocfilehash: f97490e89e835716911072dbad5f70d8e55e76e6
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 162def0d703ea81efc3df3ea5ee08b58e34822e6
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83805018"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501577"
 ---
 # <a name="ihostassemblystoreprovideassembly-method"></a>Метод IHostAssemblyStore::ProvideAssembly
-Возвращает ссылку на сборку, на которую не ссылается [ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md) , возвращаемую из [IHostAssemblyManager:: GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md). Среда CLR вызывает `ProvideAssembly` для каждой сборки, которая не отображается в списке.  
+Возвращает ссылку на сборку, на которую не ссылается [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) , возвращаемую из [IHostAssemblyManager:: GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md). Среда CLR вызывает `ProvideAssembly` для каждой сборки, которая не отображается в списке.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -66,7 +66,7 @@ HRESULT ProvideAssembly (
 |COR_E_FILENOTFOUND (0x80070002)|Не удалось найти запрошенную сборку.|  
 |E_NOT_SUFFICIENT_BUFFER|Размер буфера, указанный в, `pAssemblyId` недостаточно велик для хранения идентификатора, который требуется вернуть узлу.|  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Примечания  
  Значение идентификатора, возвращенное для `pAssemblyId` , задается узлом. Идентификаторы должны быть уникальными в течение всего времени существования процесса. Среда CLR использует это значение в качестве уникального идентификатора потока. Он проверяет каждое значение по значениям `pAssemblyId` , возвращаемым другими вызовами метода `ProvideAssembly` . Если узел возвращает одно и то же `pAssemblyId` значение для другого `IStream` , среда CLR проверяет, было ли уже сопоставлено содержимое этого потока. Если это так, среда выполнения загружает существующую копию изображения вместо сопоставления нового.  
   
 ## <a name="requirements"></a>Требования  
@@ -78,7 +78,7 @@ HRESULT ProvideAssembly (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)

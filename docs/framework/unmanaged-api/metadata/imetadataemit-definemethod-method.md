@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3e2102c5-48b7-4c0e-b805-7e2b5e156e3d
 topic_type:
 - apiref
-ms.openlocfilehash: 514f227e3c0c385f61090079d2f5214dac9b3924
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: fbf6ce8c8c9628b08872058a794fb0e005764ab1
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84004534"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501304"
 ---
 # <a name="imetadataemitdefinemethod-method"></a>Метод IMetaDataEmit::DefineMethod
 Создает определение для метода или глобальной функции с указанной сигнатурой и возвращает маркер в это определение метода.  
@@ -81,7 +81,7 @@ HRESULT DefineMethod (
  Не следует определять дублирующиеся методы. Это значит, что не следует вызывать `DefineMethod` с помощью повторяющегося набора значений в `td` `wzName` `pvSig` параметрах, и. (Эти три параметра вместе уникально определяют метод.) Однако можно использовать повторяющееся тройное значение, если для одного из определений методов задается `mdPrivateScope` бит в `dwMethodFlags` параметре. ( `mdPrivateScope` Бит означает, что компилятор не будет создавать ссылку на это определение метода.)  
   
 ## <a name="method-implementation-information"></a>Сведения о реализации метода  
- Сведения о реализации метода часто неизвестны во время объявления метода. Поэтому при вызове не нужно передавать значения в `ulCodeRVA` `dwImplFlags` параметрах и `DefineMethod` . Значения можно указать позже с помощью [IMetaDataEmit:: сетмесодимплфлагс](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-setmethodimplflags-method.md) или [IMetaDataEmit:: SetRVA](imetadataemit-setrva-method.md).  
+ Сведения о реализации метода часто неизвестны во время объявления метода. Поэтому при вызове не нужно передавать значения в `ulCodeRVA` `dwImplFlags` параметрах и `DefineMethod` . Значения можно указать позже с помощью [IMetaDataEmit:: сетмесодимплфлагс](imetadataemit-setmethodimplflags-method.md) или [IMetaDataEmit:: SetRVA](imetadataemit-setrva-method.md).  
   
  В некоторых ситуациях, например при вызове платформы (PInvoke) или в сценариях COM-взаимодействия, тело метода не будет передано и `ulCodeRVA` должно быть установлено в ноль. В таких ситуациях метод не должен помечаться как абстрактный, поскольку среда выполнения обнаружит реализацию.  
   
@@ -110,7 +110,7 @@ HRESULT DefineMethod (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

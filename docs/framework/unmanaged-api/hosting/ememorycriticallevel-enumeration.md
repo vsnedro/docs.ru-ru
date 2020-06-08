@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2ca8a7a2-7b54-4ba3-8e73-277c7df485f3
 topic_type:
 - apiref
-ms.openlocfilehash: 248f1d281697923e2da14517ca174fe615bba4ff
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 359dd84032fce920892631dda2615f63aa54fa6b
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616207"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504385"
 ---
 # <a name="ememorycriticallevel-enumeration"></a>Перечисление EMemoryCriticalLevel
 Содержит значения, которые указывают на влияние сбоя при запросе определенного выделения памяти, но не могут быть удовлетворены.  
@@ -42,8 +42,8 @@ typedef enum {
 |`eProcessCritical`|Указывает, что выделение является критически важным для выполнения управляемого кода в процессе. Это значение используется при запуске и при запуске методов завершения. Если память не может быть выделена, среда CLR не может работать в процессе. Если выделение завершается неудачей, среда CLR фактически отключается. Все последующие вызовы в среде CLR завершаются сбоем с HOST_E_CLRNOTAVAILABLE.|  
 |`eTaskCritical`|Указывает, что выделение является критически важным для выполнения задачи, которая запросила выделение. Если память не может быть выделена, среда CLR не может гарантировать, что задача может быть выполнена. В случае сбоя среда CLR создает исключение <xref:System.Threading.ThreadAbortException> в системном потоке физической операции.|  
   
-## <a name="remarks"></a>Комментарии  
- Методы выделения памяти, определенные в интерфейсах [IHostMemoryManager](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md) и [IHostMAlloc](ihostmalloc-interface.md) , принимают параметр этого типа. В зависимости от серьезности сбоя узел может решить, следует ли немедленно выполнить запрос на выделение или подождать, пока он не будет удовлетворен.  
+## <a name="remarks"></a>Примечания  
+ Методы выделения памяти, определенные в интерфейсах [IHostMemoryManager](ihostmemorymanager-interface.md) и [IHostMAlloc](ihostmalloc-interface.md) , принимают параметр этого типа. В зависимости от серьезности сбоя узел может решить, следует ли немедленно выполнить запрос на выделение или подождать, пока он не будет удовлетворен.  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -54,7 +54,7 @@ typedef enum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRMemoryNotificationCallback](iclrmemorynotificationcallback-interface.md)
 - [Размещение перечислений](hosting-enumerations.md)

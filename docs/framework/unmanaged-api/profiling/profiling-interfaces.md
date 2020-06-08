@@ -1,19 +1,19 @@
 ---
-title: Интерфейсы профилирования
+title: Профилирующие интерфейсы
 ms.date: 04/10/2018
 helpviewer_keywords:
 - unmanaged interfaces [.NET Framework], profiling
 - profiling interfaces [.NET Framework]
 - interfaces [.NET Framework profiling]
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-ms.openlocfilehash: 8b6b9acff2945e2d8fd684bfa31e4af086ea5ab9
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: f073794b4fdf89f289b70fed9967ee37b5f4e133
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868152"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84494050"
 ---
-# <a name="profiling-interfaces"></a>Интерфейсы профилирования
+# <a name="profiling-interfaces"></a>Профилирующие интерфейсы
 В этом разделе описываются неуправляемые интерфейсы, позволяющие профилировать программу, выполняемую в среде CLR.  
   
 ## <a name="in-this-section"></a>В этом разделе  
@@ -63,7 +63,7 @@ ms.locfileid: "76868152"
  Расширяет интерфейс `ICorProfilerInfo` методами, поддерживаемыми платформой .NET Framework 2.0 и более поздних версий.  
   
  [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)  
- Расширяет интерфейс `ICorProfilerInfo2` с помощью методов, поддерживаемых в .NET Framework 4 и более поздних версиях.  
+ Расширяет `ICorProfilerInfo2` интерфейс с помощью методов, поддерживаемых в .NET Framework 4 и более поздних версий.  
   
  [Интерфейс ICorProfilerInfo4](icorprofilerinfo4-interface.md)  
  Предоставляет методы, которые используются профилировщиками кода для взаимодействия со средой CLR с целью управления отслеживанием событий и для запроса сведений.  
@@ -81,7 +81,7 @@ ms.locfileid: "76868152"
  Предоставляет методы для последовательного перебора коллекции модулей, загруженных приложением или профилировщиком.  
   
  [Интерфейс ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)  
- Предоставляет методы для последовательного прохода по коллекции замороженных объектов, созданных [Ngen. exe (генератор образов в машинном кодах)](../../../../docs/framework/tools/ngen-exe-native-image-generator.md).  
+ Предоставляет методы для последовательного прохода по коллекции замороженных объектов, созданных [Ngen. exe (генератор образов в машинном кодах)](../../tools/ngen-exe-native-image-generator.md).  
   
  [Интерфейс ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md)  
  Предоставляет методы для последовательного перебора коллекции потоков в среде CLR.  

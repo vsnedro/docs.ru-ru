@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4c02ec37-cdf0-46b2-890e-235092741236
 topic_type:
 - apiref
-ms.openlocfilehash: 8a9fdcd650e18bb91e2a4e30e5a22fb2a991d25c
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: a3018d8477d5abd7d03ad8675503624d2e44e8f4
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703497"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84504138"
 ---
 # <a name="iclroneventmanagerunregisteractiononevent-method"></a>Метод ICLROnEventManager::UnregisterActionOnEvent
 Отменяет регистрацию ранее зарегистрированного указателя обратного вызова для указанного события.  
@@ -39,7 +39,7 @@ HRESULT UnregisterActionOnEvent (
  окне Одно из значений [еклревент](eclrevent-enumeration.md) , указывающее событие, для которого отменяется регистрация указателя обратного вызова, описанного в `pAction` .  
   
  `pAction`  
- окне Указатель на объект [иактиононклревент](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-interface.md) , переданный в качестве параметра в метод [регистерактиононевент](iclroneventmanager-registeractiononevent-method.md) .  
+ окне Указатель на объект [иактиононклревент](iactiononclrevent-interface.md) , переданный в качестве параметра в метод [регистерактиононевент](iclroneventmanager-registeractiononevent-method.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
@@ -61,7 +61,7 @@ HRESULT UnregisterActionOnEvent (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrEvent](eclrevent-enumeration.md)
 - [Интерфейс IActionOnCLREvent](iactiononclrevent-interface.md)

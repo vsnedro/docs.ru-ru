@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
 topic_type:
 - apiref
-ms.openlocfilehash: 7079a915c0402df62afa5648317619af82c943b0
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 4037ffe63d8ebfca67cbd0b3293d36be7481b1bd
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83841988"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501421"
 ---
 # <a name="ihosttaskmanagercreatetask-method"></a>Метод IHostTaskManager::CreateTask
 Запрашивает создание новой задачи узлом.  
@@ -47,7 +47,7 @@ HRESULT CreateTask (
  окне Указатель на пользовательские данные, передаваемые в функцию, или значение null, если функция не принимает параметры.  
   
  `ppTask`  
- заполняет Указатель на адрес экземпляра [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) , созданного узлом, или значение null, если задача не может быть создана. Задача остается в приостановленном состоянии до тех пор, пока она не будет явно запущена вызовом [IHostTask:: Start](ihosttask-start-method.md).  
+ заполняет Указатель на адрес экземпляра [IHostTask](ihosttask-interface.md) , созданного узлом, или значение null, если задача не может быть создана. Задача остается в приостановленном состоянии до тех пор, пока она не будет явно запущена вызовом [IHostTask:: Start](ihosttask-start-method.md).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
@@ -73,7 +73,7 @@ HRESULT CreateTask (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

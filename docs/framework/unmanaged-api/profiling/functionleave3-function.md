@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 5d798088-7992-48a0-ae55-d2a7ee31913f
 topic_type:
 - apiref
-ms.openlocfilehash: 32d86f19e9c50694c7d113195e6967645b710666
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 456d9a0e8236948ac69ed069495b1999ebf7e80a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76866873"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84500615"
 ---
 # <a name="functionleave3-function"></a>Функция FunctionLeave3
 Уведомляет профилировщик о том, что управление возвращается из функции.  
@@ -34,12 +34,12 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
 
 - `functionOrRemappedID`
 
-  \[в] идентификатор функции, из которой возвращается элемент управления.
+  \[in] идентификатор функции, из которой возвращается элемент управления.
   
-## <a name="remarks"></a>Заметки  
- Функция обратного вызова `FunctionLeave3` уведомляет профилировщик о вызове функций, но не поддерживает проверку возвращаемого значения. Чтобы зарегистрировать реализацию этой функции, используйте [метод ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) .  
+## <a name="remarks"></a>Примечания  
+ `FunctionLeave3`Функция обратного вызова уведомляет профилировщик о вызове функций, но не поддерживает проверку возвращаемого значения. Чтобы зарегистрировать реализацию этой функции, используйте [метод ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) .  
   
- Функция `FunctionLeave3` является обратным вызовом. его необходимо реализовать. Реализация должна использовать атрибут класса хранения `__declspec(naked)`.  
+ `FunctionLeave3`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec(naked)` атрибут класса хранения.  
   
  Подсистема выполнения не сохраняет никакие регистры перед вызовом этой функции.  
   
@@ -47,20 +47,20 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
   
 - При выходе необходимо восстановить стек, выключив все параметры, которые были переданы его вызывающим.  
   
- Реализация `FunctionLeave3` не должна блокироваться, так как она приведет к задержке сборки мусора. Реализация не должна пытаться выполнить сборку мусора, так как стек может не находиться в состоянии, удобном для сборки мусора. Если выполняется сборка мусора, среда выполнения блокируется до тех пор, пока не будет возвращено `FunctionLeave3`.  
+ Реализация `FunctionLeave3` не должна блокироваться, так как она приведет к задержке сборки мусора. Реализация не должна пытаться выполнить сборку мусора, так как стек может не находиться в состоянии, удобном для сборки мусора. Если выполняется сборка мусора, среда выполнения будет блокироваться до тех пор, пока не `FunctionLeave3` вернет.  
   
- Функция `FunctionLeave3` не должна вызывать управляемый код или вызывать управляемое выделение памяти каким-либо образом.  
+ `FunctionLeave3`Функция не должна вызывать управляемый код или вызывать управляемое выделение памяти каким-либо образом.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** см. раздел [Требования к системе](../../../../docs/framework/get-started/system-requirements.md).  
+ **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [FunctionEnter3](functionenter3-function.md)
 - [FunctionTailcall3](functiontailcall3-function.md)
