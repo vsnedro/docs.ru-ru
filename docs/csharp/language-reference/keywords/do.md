@@ -7,36 +7,36 @@ f1_keywords:
 helpviewer_keywords:
 - do keyword [C#]
 ms.assetid: 50725f79-9ba6-4898-aa78-6e331568a1bb
-ms.openlocfilehash: 1d4323366e567dab4b27b07803d0c06e731611ce
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: d75dd816278a876fa05d133e5eb189d606300a5c
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738911"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401931"
 ---
-# <a name="do-c-reference"></a><span data-ttu-id="be8e0-102">do (Справочник по C#)</span><span class="sxs-lookup"><span data-stu-id="be8e0-102">do (C# Reference)</span></span>
+# <a name="do-c-reference"></a><span data-ttu-id="58259-102">do (Справочник по C#)</span><span class="sxs-lookup"><span data-stu-id="58259-102">do (C# Reference)</span></span>
 
-<span data-ttu-id="be8e0-103">Оператор `do` выполняет оператор или блок операторов, пока определенное логическое выражение равно значению `true`.</span><span class="sxs-lookup"><span data-stu-id="be8e0-103">The `do` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`.</span></span> <span data-ttu-id="be8e0-104">Так как это выражение оценивается после каждого выполнения цикла, цикл `do-while` выполняется один или несколько раз.</span><span class="sxs-lookup"><span data-stu-id="be8e0-104">Because that expression is evaluated after each execution of the loop, a `do-while` loop executes one or more times.</span></span> <span data-ttu-id="be8e0-105">Это отличает его от цикла [while](while.md), который выполняется от нуля до нескольких раз.</span><span class="sxs-lookup"><span data-stu-id="be8e0-105">This differs from the [while](while.md) loop, which executes zero or more times.</span></span>
+<span data-ttu-id="58259-103">Оператор `do` выполняет оператор или блок операторов, пока определенное логическое выражение равно значению `true`.</span><span class="sxs-lookup"><span data-stu-id="58259-103">The `do` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`.</span></span> <span data-ttu-id="58259-104">Так как это выражение оценивается после каждого выполнения цикла, цикл `do-while` выполняется один или несколько раз.</span><span class="sxs-lookup"><span data-stu-id="58259-104">Because that expression is evaluated after each execution of the loop, a `do-while` loop executes one or more times.</span></span> <span data-ttu-id="58259-105">Это отличает его от цикла [while](while.md), который выполняется от нуля до нескольких раз.</span><span class="sxs-lookup"><span data-stu-id="58259-105">This differs from the [while](while.md) loop, which executes zero or more times.</span></span>
 
-<span data-ttu-id="be8e0-106">В любой точке блока операторов `do` можно разорвать цикл с помощью оператора [break](break.md).</span><span class="sxs-lookup"><span data-stu-id="be8e0-106">At any point within the `do` statement block, you can break out of the loop by using the [break](break.md) statement.</span></span>
+<span data-ttu-id="58259-106">В любой точке блока операторов `do` можно разорвать цикл с помощью оператора [break](break.md).</span><span class="sxs-lookup"><span data-stu-id="58259-106">At any point within the `do` statement block, you can break out of the loop by using the [break](break.md) statement.</span></span>
 
-<span data-ttu-id="be8e0-107">Можно перейти непосредственно к оценке выражения `while`, воспользовавшись оператором [continue](continue.md).</span><span class="sxs-lookup"><span data-stu-id="be8e0-107">You can step directly to the evaluation of the `while` expression by using the [continue](continue.md) statement.</span></span> <span data-ttu-id="be8e0-108">Если значение выражения оценивается как `true`, выполнение продолжается с первого оператора цикла.</span><span class="sxs-lookup"><span data-stu-id="be8e0-108">If the expression evaluates to `true`, execution continues at the first statement in the loop.</span></span> <span data-ttu-id="be8e0-109">В противном случае выполнение продолжается с первого оператора после цикла.</span><span class="sxs-lookup"><span data-stu-id="be8e0-109">Otherwise, execution continues at the first statement after the loop.</span></span>
+<span data-ttu-id="58259-107">Можно перейти непосредственно к оценке выражения `while`, воспользовавшись оператором [continue](continue.md).</span><span class="sxs-lookup"><span data-stu-id="58259-107">You can step directly to the evaluation of the `while` expression by using the [continue](continue.md) statement.</span></span> <span data-ttu-id="58259-108">Если значение выражения оценивается как `true`, выполнение продолжается с первого оператора цикла.</span><span class="sxs-lookup"><span data-stu-id="58259-108">If the expression evaluates to `true`, execution continues at the first statement in the loop.</span></span> <span data-ttu-id="58259-109">В противном случае выполнение продолжается с первого оператора после цикла.</span><span class="sxs-lookup"><span data-stu-id="58259-109">Otherwise, execution continues at the first statement after the loop.</span></span>
 
-<span data-ttu-id="be8e0-110">Можно также выйти из цикла `do-while` с помощью операторов [goto](goto.md), [return](return.md) или [throw](throw.md).</span><span class="sxs-lookup"><span data-stu-id="be8e0-110">You can also exit a `do-while` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.</span></span>
+<span data-ttu-id="58259-110">Можно также выйти из цикла `do-while` с помощью операторов [goto](goto.md), [return](return.md) или [throw](throw.md).</span><span class="sxs-lookup"><span data-stu-id="58259-110">You can also exit a `do-while` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.</span></span>
 
-## <a name="example"></a><span data-ttu-id="be8e0-111">Пример</span><span class="sxs-lookup"><span data-stu-id="be8e0-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="58259-111">Пример</span><span class="sxs-lookup"><span data-stu-id="58259-111">Example</span></span>
 
-<span data-ttu-id="be8e0-112">В следующем примере показано применение оператора `do`.</span><span class="sxs-lookup"><span data-stu-id="be8e0-112">The following example shows the usage of the `do` statement.</span></span> <span data-ttu-id="be8e0-113">Нажмите **Запустить** для выполнения примера кода.</span><span class="sxs-lookup"><span data-stu-id="be8e0-113">Select **Run** to run the example code.</span></span> <span data-ttu-id="be8e0-114">После этого можно изменить код и запустить его еще раз.</span><span class="sxs-lookup"><span data-stu-id="be8e0-114">After that you can modify the code and run it again.</span></span>
+<span data-ttu-id="58259-112">В следующем примере показано применение оператора `do`.</span><span class="sxs-lookup"><span data-stu-id="58259-112">The following example shows the usage of the `do` statement.</span></span> <span data-ttu-id="58259-113">Нажмите **Запустить** для выполнения примера кода.</span><span class="sxs-lookup"><span data-stu-id="58259-113">Select **Run** to run the example code.</span></span> <span data-ttu-id="58259-114">После этого можно изменить код и запустить его еще раз.</span><span class="sxs-lookup"><span data-stu-id="58259-114">After that you can modify the code and run it again.</span></span>
 
-[!code-csharp-interactive[do loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#4)]
+[!code-csharp-interactive[do loop example](snippets/IterationKeywordsExamples.cs#4)]
 
-## <a name="c-language-specification"></a><span data-ttu-id="be8e0-115">Спецификация языка C#</span><span class="sxs-lookup"><span data-stu-id="be8e0-115">C# language specification</span></span>
+## <a name="c-language-specification"></a><span data-ttu-id="58259-115">Спецификация языка C#</span><span class="sxs-lookup"><span data-stu-id="58259-115">C# language specification</span></span>
 
-<span data-ttu-id="be8e0-116">Дополнительные сведения см. в разделе [Оператор do](~/_csharplang/spec/statements.md#the-do-statement) в документации [Предварительная спецификация C# 6.0](/dotnet/csharp/language-reference/language-specification/introduction).</span><span class="sxs-lookup"><span data-stu-id="be8e0-116">For more information, see [The do statement](~/_csharplang/spec/statements.md#the-do-statement) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).</span></span>
+<span data-ttu-id="58259-116">Дополнительные сведения см. в разделе [Оператор do](~/_csharplang/spec/statements.md#the-do-statement) в документации [Предварительная спецификация C# 6.0](/dotnet/csharp/language-reference/language-specification/introduction).</span><span class="sxs-lookup"><span data-stu-id="58259-116">For more information, see [The do statement](~/_csharplang/spec/statements.md#the-do-statement) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="be8e0-117">См. также</span><span class="sxs-lookup"><span data-stu-id="be8e0-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="58259-117">См. также</span><span class="sxs-lookup"><span data-stu-id="58259-117">See also</span></span>
 
-- [<span data-ttu-id="be8e0-118">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="be8e0-118">C# Reference</span></span>](../index.md)
-- [<span data-ttu-id="be8e0-119">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="be8e0-119">C# Programming Guide</span></span>](../../programming-guide/index.md)
-- [<span data-ttu-id="be8e0-120">Ключевые слова в C#</span><span class="sxs-lookup"><span data-stu-id="be8e0-120">C# Keywords</span></span>](index.md)
-- [<span data-ttu-id="be8e0-121">Оператор while</span><span class="sxs-lookup"><span data-stu-id="be8e0-121">while statement</span></span>](while.md)
+- [<span data-ttu-id="58259-118">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="58259-118">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="58259-119">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="58259-119">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="58259-120">Ключевые слова в C#</span><span class="sxs-lookup"><span data-stu-id="58259-120">C# Keywords</span></span>](index.md)
+- [<span data-ttu-id="58259-121">Оператор while</span><span class="sxs-lookup"><span data-stu-id="58259-121">while statement</span></span>](while.md)
