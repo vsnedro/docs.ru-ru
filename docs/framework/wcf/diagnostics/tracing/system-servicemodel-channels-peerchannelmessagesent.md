@@ -2,21 +2,21 @@
 title: System.ServiceModel.Channels.PeerChannelMessageSent
 ms.date: 03/30/2017
 ms.assetid: 7aa50d9d-37ee-454c-8746-e3c3857edd07
-ms.openlocfilehash: 3274680bb84b1be83ba78b9e5b4830c2956b3fb2
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 5face7e981a6e525c1bdd6470d13d44e14259734
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61779526"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84588604"
 ---
-# <a name="systemservicemodelchannelspeerchannelmessagesent"></a><span data-ttu-id="f5f52-102">System.ServiceModel.Channels.PeerChannelMessageSent</span><span class="sxs-lookup"><span data-stu-id="f5f52-102">System.ServiceModel.Channels.PeerChannelMessageSent</span></span>
-<span data-ttu-id="f5f52-103">Выполняется отправка нового сообщения PeerChannel.</span><span class="sxs-lookup"><span data-stu-id="f5f52-103">A new PeerChannel message is being sent.</span></span>  
+# <a name="systemservicemodelchannelspeerchannelmessagesent"></a><span data-ttu-id="350e2-102">System.ServiceModel.Channels.PeerChannelMessageSent</span><span class="sxs-lookup"><span data-stu-id="350e2-102">System.ServiceModel.Channels.PeerChannelMessageSent</span></span>
+<span data-ttu-id="350e2-103">Выполняется отправка нового сообщения PeerChannel.</span><span class="sxs-lookup"><span data-stu-id="350e2-103">A new PeerChannel message is being sent.</span></span>  
   
-## <a name="description"></a><span data-ttu-id="f5f52-104">Описание</span><span class="sxs-lookup"><span data-stu-id="f5f52-104">Description</span></span>  
- <span data-ttu-id="f5f52-105">Эта трассировка возникает при отправке сообщения PeerChannel.</span><span class="sxs-lookup"><span data-stu-id="f5f52-105">This trace occurs during the sending of a PeerChannel message.</span></span>  
+## <a name="description"></a><span data-ttu-id="350e2-104">Описание</span><span class="sxs-lookup"><span data-stu-id="350e2-104">Description</span></span>  
+ <span data-ttu-id="350e2-105">Эта трассировка возникает при отправке сообщения PeerChannel.</span><span class="sxs-lookup"><span data-stu-id="350e2-105">This trace occurs during the sending of a PeerChannel message.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f5f52-106">См. также</span><span class="sxs-lookup"><span data-stu-id="f5f52-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="350e2-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="350e2-106">See also</span></span>
 
-- [<span data-ttu-id="f5f52-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="f5f52-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="f5f52-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="f5f52-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="f5f52-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="f5f52-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="350e2-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="350e2-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="350e2-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="350e2-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="350e2-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="350e2-109">Administration and Diagnostics</span></span>](../index.md)
