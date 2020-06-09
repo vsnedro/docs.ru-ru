@@ -2,19 +2,19 @@
 title: Преобразование приложения NetTcpBinding в приложение одноранговых каналов
 ms.date: 03/30/2017
 ms.assetid: d4137292-a923-4b8f-8594-42276f2d3ce2
-ms.openlocfilehash: 362945959a781fac360c42475148fee1e47a1183
-ms.sourcegitcommit: ffd7dd79468a81bbb0d6449f6d65513e050c04c4
+ms.openlocfilehash: 42266d8c7c04e2d8f3f1e4734d9a05181c3f1ea3
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65960133"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595561"
 ---
 # <a name="converting-a-nettcpbinding-application-to-a-peer-channel-application"></a>Преобразование приложения NetTcpBinding в приложение одноранговых каналов
-Можно создавать подключения между клиентами, с помощью WinFX с помощью привязки, описывающие параметры подключения. Преобразование приложения .NET Framework для использования подключений peer-to-peer требуется привязка, поддерживающая эту технологию при установлении соединений клиента. Одноранговый канал предоставляет привязку, называемую <xref:System.ServiceModel.NetPeerTcpBinding>, которую можно использовать аналогично привязке <xref:System.ServiceModel.NetTcpBinding>. Основное отличие в том, как задается служба распознавателя и определяются параметры безопасности.  
+Можно создавать соединения между клиентами с помощью WinFX, используя привязки, описывающие параметры соединения. Для преобразования .NET Framework приложения для использования одноранговых подключений требуется привязка, поддерживающая эту технологию при подключении клиентов. Одноранговый канал предоставляет привязку, называемую <xref:System.ServiceModel.NetPeerTcpBinding>, которую можно использовать аналогично привязке <xref:System.ServiceModel.NetTcpBinding>. Основное отличие в том, как задается служба распознавателя и определяются параметры безопасности.  
   
  Если приложение использует распознаватель и параметры безопасности по умолчанию, преобразование обычного клиентско-серверного приложения для использования однорангового канала предполагает изменение имени привязки с "NetTcpBinding" на "NetPeerTcpBinding" в файле конфигурации приложения, при этом не требуется изменять базу кода приложения.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Создание приложения одноранговых каналов](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
-- [Привязки, предоставляемые системой](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [Создание приложения одноранговых каналов](building-a-peer-channel-application.md)
+- [Привязки, предоставляемые системой](../system-provided-bindings.md)
