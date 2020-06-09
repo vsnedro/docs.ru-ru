@@ -2,12 +2,12 @@
 title: Ограничение распространения сообщений
 ms.date: 03/30/2017
 ms.assetid: 8b5ec4b8-1ce9-45ef-bb90-2c840456bcc1
-ms.openlocfilehash: 36d9d43760e68f6bcf0099ac17dec5a8278d0e49
-ms.sourcegitcommit: 09b4090b78f52fd09b0e430cd4b26576f1fdf96e
+ms.openlocfilehash: 188d7bd365caad7d4cd438744c78ae8e7cd95e7e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76211898"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84586316"
 ---
 # <a name="limiting-message-distribution"></a>Ограничение распространения сообщений
 
@@ -63,12 +63,12 @@ ms.locfileid: "76211898"
 
   - *Случайный*: локальный фильтр.
 
-- **Использование пропускной способности**
+- **Потребляемая пропускная способность**
 
   - *Высокий*: прямое подключение, не рекомендуется, чтобы использовать мессажепропагатионфилтер или локальный фильтр.
 
   - *Низкий*: любое прямое подключение, скорее всего, не требуется.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Создание приложения одноранговых каналов](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Создание приложения одноранговых каналов](building-a-peer-channel-application.md)

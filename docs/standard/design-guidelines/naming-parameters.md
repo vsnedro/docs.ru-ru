@@ -1,17 +1,18 @@
 ---
 title: Именование параметров
+description: Ознакомьтесь с рекомендациями по именованию параметров. Например, используйте описательные имена параметров & Camel, & рассмотрите возможность именования на основе значения, а не типа.
 ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - parameters, names
 - names [.NET Framework], parameters
 ms.assetid: ca3c956e-725a-441b-b4e3-eab5d472f41c
-ms.openlocfilehash: 0d5c5cd144fbae88439ee981fbdb6e30ff487005
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 54f37c4d6a0f9a6931fa69d612bf0e45bf1f2ce7
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290166"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84583522"
 ---
 # <a name="naming-parameters"></a>Именование параметров
 Помимо очевидной причины удобочитаемости, важно следовать рекомендациям по именам параметров, так как параметры отображаются в документации и в конструкторе, когда визуальные средства проектирования предоставляют функции IntelliSense и просмотра классов.
@@ -35,7 +36,7 @@ ms.locfileid: "84290166"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по именованию](naming-guidelines.md)

@@ -1,16 +1,16 @@
 ---
-title: Как реализовать клиентское приложение, которое для поиска служб использует прокси-сервер обнаружения
+title: Практическое руководство. Как реализовать клиентское приложение, которое для поиска служб использует прокси-сервер обнаружения
 ms.date: 03/30/2017
 ms.assetid: 62b41a75-cf40-4c52-a842-a5f1c70e247f
-ms.openlocfilehash: 33ee5d2c9206b16b1667abd5f6d6c811ff955969
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a1e770531a196d73dfc7d93bf70ed432df343c88
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185375"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84587018"
 ---
-# <a name="how-to-implement-a-client-application-that-uses-the-discovery-proxy-to-find-a-service"></a>Как реализовать клиентское приложение, которое для поиска служб использует прокси-сервер обнаружения
-Это последний из трех разделов, в которых рассматривается реализация прокси-сервера обнаружения. В предыдущей теме, [Как: Реализация обнаруживаемой службы, которая регистрируется с Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md), вы реализовали службу WCF, которая регистрирует сят в прокси-сервере обнаружения. В этой теме вы создаете клиент WCF, который использует прокси-сервер обнаружения, чтобы найти службу WCF.  
+# <a name="how-to-implement-a-client-application-that-uses-the-discovery-proxy-to-find-a-service"></a>Практическое руководство. Как реализовать клиентское приложение, которое для поиска служб использует прокси-сервер обнаружения
+Это последний из трех разделов, в которых рассматривается реализация прокси-сервера обнаружения. В предыдущем разделе [как реализовать обнаруживаемую службу, которая регистрируется в прокси-сервере обнаружения](discoverable-service-that-registers-with-the-discovery-proxy.md), вы реализовали службу WCF, которая регистрирует себя с прокси-сервером обнаружения. В этом разделе вы создадите клиент WCF, который использует прокси-сервер обнаружения для поиска службы WCF.  
   
 ### <a name="implement-the-client"></a>Реализация клиента  
   
@@ -62,7 +62,7 @@ ms.locfileid: "79185375"
     }  
     ```  
   
-5. Добавьте в метод `Main` следующий код.  
+5. Добавьте следующий код в метод `Main` .  
   
     ```csharp  
     public static void Main()  
@@ -101,7 +101,7 @@ ms.locfileid: "79185375"
     }  
     ```  
   
- Реализация клиентского приложения завершена. Продолжить на [Как: Проверить Discovery прокси](../../../../docs/framework/wcf/feature-details/how-to-test-the-discovery-proxy.md).  
+ Реализация клиентского приложения завершена. Перейдите к [процедуре проверки прокси-сервера обнаружения](how-to-test-the-discovery-proxy.md).  
   
 ## <a name="example"></a>Пример  
  Ниже приведен полный листинг кода для этого раздела.  
@@ -281,8 +281,8 @@ namespace Microsoft.Samples.Discovery
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения об обнаружении WCF](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [Как реализовать прокси-сервера обнаружения](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)
-- [Как реализовать обнаружимую службу, которая регистрируется в прокси-сервере обнаружения](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)
+- [Общие сведения об обнаружении WCF](wcf-discovery-overview.md)
+- [Практическое руководство. Как реализовать прокси-сервер обнаружения](how-to-implement-a-discovery-proxy.md)
+- [Практическое руководство. Как реализовать обнаружимую службу, которая регистрируется в прокси-сервере обнаружения](discoverable-service-that-registers-with-the-discovery-proxy.md)

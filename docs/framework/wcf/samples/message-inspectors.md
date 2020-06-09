@@ -2,12 +2,12 @@
 title: Инспекторы сообщений
 ms.date: 03/30/2017
 ms.assetid: 9bd1f305-ad03-4dd7-971f-fa1014b97c9b
-ms.openlocfilehash: 705401a182d5d816bc2682f5f21ff09ca95f21c7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1a5519e815a6714e087a77c69e943a3a8c65db68
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144452"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84585082"
 ---
 # <a name="message-inspectors"></a>Инспекторы сообщений
 В этом образце демонстрируется, как реализовать и настроить инспекторы сообщений клиента и службы.  
@@ -202,7 +202,7 @@ void ValidateMessageBody(ref System.ServiceModel.Channels.Message message, bool 
 ```  
   
 ## <a name="behavior"></a>Поведение  
- Инспекторы сообщений являются расширениями среды выполнения клиента или среды выполнения распределения. Такие расширения настраиваются с использованием *поведения.* Поведение - это класс, изменяющий поведение среды выполнения модели служб путем изменения конфигурации по умолчанию или добавления в нее расширений (например, инспекторов сообщений).  
+ Инспекторы сообщений являются расширениями среды выполнения клиента или среды выполнения распределения. Такие расширения настраиваются с помощью *поведений*. Поведение - это класс, изменяющий поведение среды выполнения модели служб путем изменения конфигурации по умолчанию или добавления в нее расширений (например, инспекторов сообщений).  
   
  Следующий класс `SchemaValidationBehavior` является поведением, которое используется для добавления инспектора сообщений, создаваемого в данном образце, в среду выполнения клиента или среду выполнения распределения. В обоих случаях реализация достаточно проста. В случае <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A> и <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior%2A> инспектор сообщений создается и добавляется в коллекцию <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> соответствующей среды выполнения.  
   
@@ -259,7 +259,7 @@ public class SchemaValidationBehavior : IEndpointBehavior
 > Данное конкретное поведение не дублируется как атрибут, поэтому его нельзя декларативно добавить в тип контракта типа службы. Это решение было принято намеренно, поскольку коллекцию схем нельзя загрузить в объявление атрибута, а обращение к размещению дополнительной конфигурации (например, к параметрам приложения) в этом атрибуте означает создание элемента конфигурации, не согласованного с остальной конфигурацией модели служб. Поэтому данное поведение можно добавить только императивно посредством кода и посредством расширения конфигурации модели служб.  
   
 ## <a name="adding-the-message-inspector-through-configuration"></a>Добавление инспектора сообщений с помощью конфигурации  
- Для настройки пользовательского поведения на конечную точку в файле конфигурации приложения модель службы требует, чтобы <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>исполнители создавали элемент *расширения* конфигурации, представленный классом, полученным из. Это расширение затем необходимо добавить в раздел конфигурации модели служб для расширений, как показано для следующего расширения, рассматриваемого в данном разделе.  
+ Для настройки пользовательского поведения в конечной точке в файле конфигурации приложения модели службы требуются разработчики для создания *элемента расширения* конфигурации, представленного классом, производным от <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> . Это расширение затем необходимо добавить в раздел конфигурации модели служб для расширений, как показано для следующего расширения, рассматриваемого в данном разделе.  
   
 ```xml  
 <system.serviceModel>  
@@ -398,17 +398,17 @@ catch (Exception e)
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать решение, следуйте инструкциям по [созданию образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+2. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
-3. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageInspectors`  
