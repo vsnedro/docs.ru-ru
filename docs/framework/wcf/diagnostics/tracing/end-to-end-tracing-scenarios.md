@@ -2,12 +2,12 @@
 title: Сценарии сквозной трассировки
 ms.date: 03/30/2017
 ms.assetid: f83b7d53-6061-4362-a9a3-ee1daf6542be
-ms.openlocfilehash: 18fbd1e9733d55d60d7aa21f2fe8ac259b3da51b
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: d881a8396e21d31b2303d1bb270bed52823c8d49
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64650364"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84589257"
 ---
 # <a name="end-to-end-tracing-scenarios"></a>Сценарии сквозной трассировки
 В данном разделе содержатся подразделы, в которых описываются различные сценарии использования трассировки.  
@@ -24,21 +24,21 @@ ms.locfileid: "64650364"
   
 ## <a name="in-this-section"></a>В этом разделе  
   
-- [Список действий](../../../../../docs/framework/wcf/diagnostics/tracing/activity-list.md)  
+- [Список действий](activity-list.md)  
   
-- [Распространение ИД действия](../../../../../docs/framework/wcf/diagnostics/tracing/activity-id-propagation.md)  
+- [Распространение ИД действия](activity-id-propagation.md)  
   
-- [Синхронные сценарии с использованием HTTP, TCP или именованного канала](../../../../../docs/framework/wcf/diagnostics/tracing/synchronous-scenarios-using-http-tcp-or-named-pipe.md)  
+- [Синхронные сценарии с использованием HTTP, TCP или именованного канала](synchronous-scenarios-using-http-tcp-or-named-pipe.md)  
   
-- [Асинхронные сценарии с использованием HTTP, TCP или именованного канала](../../../../../docs/framework/wcf/diagnostics/tracing/asynchronous-scenarios-using-http-tcp-or-named-pipe.md)  
+- [Асинхронные сценарии с использованием HTTP, TCP или именованного канала](asynchronous-scenarios-using-http-tcp-or-named-pipe.md)  
   
-- [Отслеживание действий при обеспечении безопасности сообщений](../../../../../docs/framework/wcf/diagnostics/tracing/activity-tracing-in-message-security.md)  
+- [Отслеживание действий при обеспечении безопасности сообщений](activity-tracing-in-message-security.md)  
   
-- [MSMQ](../../../../../docs/framework/wcf/diagnostics/tracing/msmq.md)  
+- [MSMQ](msmq.md)  
   
-- [COM+](../../../../../docs/framework/wcf/diagnostics/tracing/com.md)  
+- [COM](com.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Использование трассировки для устранения неполадок приложения](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [Сквозная трассировка](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing.md)
+- [Использование трассировки для устранения неполадок приложения](using-tracing-to-troubleshoot-your-application.md)
+- [Сквозная трассировка](end-to-end-tracing.md)

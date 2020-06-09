@@ -2,24 +2,24 @@
 title: Защита сообщений с использованием средств обеспечения безопасности сообщений
 ms.date: 03/30/2017
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
-ms.openlocfilehash: a6b062d0d6a74ce2a2ff9afa7e8a0a18853dbd22
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 70c645101033c31da01d79f624ab03ce328dd3a6
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76746442"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84589985"
 ---
 # <a name="securing-messages-using-message-security"></a>Защита сообщений с использованием средств обеспечения безопасности сообщений
-В этом разделе обсуждается безопасность сообщений WCF при использовании <xref:System.ServiceModel.NetMsmqBinding>.  
+В этом разделе обсуждается безопасность сообщений WCF при использовании <xref:System.ServiceModel.NetMsmqBinding> .  
   
 > [!NOTE]
-> Перед чтением этого раздела рекомендуется ознакомиться с [основными понятиями безопасности](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
+> Перед чтением этого раздела рекомендуется ознакомиться с [основными понятиями безопасности](security-concepts.md).  
   
  На следующем рисунке представлена концептуальная модель обмена данными в очереди с помощью WCF. Для объяснения принципов безопасности транспорта  
   
  используются следующие терминология и рисунки.  
   
- ![Диаграмма приложений в очереди](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Схема распределенной очереди")  
+ ![Схема находящихся в очереди приложений](media/distributed-queue-figure.jpg "Схема распределенной очереди")  
   
  При отправке сообщений в очереди с помощью WCF сообщение WCF прикрепляется в качестве тела сообщения MSMQ. В то время как безопасность транспорта обеспечивает безопасность всего сообщения MSMQ, безопасность сообщений (или протокол SOAP) обеспечивает безопасность только тела сообщения MSMQ.  
   
@@ -63,9 +63,9 @@ ms.locfileid: "76746442"
 ## <a name="using-transport-and-message-security"></a>Использование безопасности транспорта и сообщений  
  При применении одновременно и безопасности транспорта, и безопасности сообщений для обеспечения безопасности сообщения как на уровне транспорта, так и на уровне сообщений SOAP должен использоваться один и тот же сертификат.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Защита сообщений с использованием средств обеспечения безопасности транспорта](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)
-- [Безопасность сообщений при использовании очереди сообщений](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
-- [Основные понятия безопасности](../../../../docs/framework/wcf/feature-details/security-concepts.md)
-- [Защита служб и клиентов](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Защита сообщений с использованием средств обеспечения безопасности транспорта](securing-messages-using-transport-security.md)
+- [Безопасность сообщений при использовании очереди сообщений](../samples/message-security-over-message-queuing.md)
+- [Основные понятия безопасности](security-concepts.md)
+- [Защита служб и клиентов](securing-services-and-clients.md)

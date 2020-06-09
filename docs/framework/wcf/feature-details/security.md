@@ -6,53 +6,53 @@ helpviewer_keywords:
 - security [WCF]
 - Windows Communication Foundation, security
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-ms.openlocfilehash: 0f79ac28af45e8c05922373955c5317095d2c682
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 327fb509a5186a0b3f428efc2ddd7f983bcfa978
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76744634"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595151"
 ---
 # <a name="windows-communication-foundation-security"></a>Безопасность Windows Communication Foundation
 В подразделах этого раздела описываются функции безопасности Windows Communication Foundation (WCF) и способы их использования для защиты сообщений.  
   
  Дополнительные сведения о Windows Server AppFabric и безопасности см. в статье [модель безопасности для Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10)) .  
   
-## <a name="in-this-section"></a>в этом разделе  
- [Общие сведения о безопасности для служб R SQL Server](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+## <a name="in-this-section"></a>В этом разделе  
+ [Обзор безопасности](security-overview.md)  
  Описание функций безопасности в WCF.  
   
- [Основные понятия безопасности](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
+ [Основные понятия безопасности](security-concepts.md)  
  Описывает основные термины и понятия, используемые в безопасности WCF.  
   
- [Типовые сценарии безопасности](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
+ [Типовые сценарии безопасности](common-security-scenarios.md)  
  Описание сценариев и топологий, которые можно настроить с помощью WCF.  
   
- [Поведения безопасности](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
+ [Поведение безопасности](security-behaviors-in-wcf.md)  
  Общие сведения о поведении WCF, которые оказывают влияние на безопасность, например на настройки учетных данных.  
   
- [Привязки и безопасность](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)  
+ [Привязки и безопасность](bindings-and-security.md)  
  Описание привязок с точки зрения безопасности, в том числе демонстрация создания настраиваемых привязок безопасности.  
   
- [Защита служб и клиентов](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Защита служб и клиентов](securing-services-and-clients.md)  
  Описывает, как защитить сообщения с помощью функций безопасности WCF.  
   
- [Аутентификация](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
+ [Аутентификация](authentication-in-wcf.md)  
  Примеры типичных задач, связанных с проверкой подлинности.  
   
- [Авторизация](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
+ [Авторизация](authorization-in-wcf.md)  
  Типичные сценарии авторизации с реализацией системы безопасности.  
   
- [Федерация и выданные маркеры](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
+ [Федерация и выданные маркеры](federation-and-issued-tokens.md)  
  Основы федерации и принципы создания клиентов, взаимодействующих с федеративными серверами.  
   
- [Частичное доверие](../../../../docs/framework/wcf/feature-details/partial-trust.md)  
+ [Частичное доверие](partial-trust.md)  
  Описывает, как выполнять частично доверенные сценарии и ограничения WCF при выполнении частичного доверия.  
   
- [Аудит](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
+ [Аудит](auditing-security-events.md)  
  Принципы аудита событий безопасности.  
   
- [Руководство и рекомендации по безопасности](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)  
+ [Руководство и рекомендации по безопасности](security-guidance-and-best-practices.md)  
  Рекомендации по созданию безопасных приложений WCF.  
   
 ## <a name="reference"></a>Справочник  
@@ -60,15 +60,15 @@ ms.locfileid: "76744634"
   
  <xref:System.ServiceModel.Security>  
   
-## <a name="related-sections"></a>См. также  
- [Подробные сведения о возможностях WCF](../../../../docs/framework/wcf/feature-details/index.md)  
+## <a name="related-sections"></a>Связанные разделы  
+ [Сведения о функции WCF](index.md)  
   
- [Базовое программирование для WCF](../../../../docs/framework/wcf/basic-wcf-programming.md)  
+ [Базовое программирование для WCF](../basic-wcf-programming.md)  
   
- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)  
+ [Учебник по начало работы](../getting-started-tutorial.md)  
   
- [Концептуальный обзор](../../../../docs/framework/wcf/conceptual-overview.md)  
+ [Обзор концепции](../conceptual-overview.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Настройка приложения](../../../../docs/framework/wcf/diagnostics/configuring-your-application.md)
+- [Настройка приложения](../diagnostics/configuring-your-application.md)

@@ -4,20 +4,20 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - claims [WCF], and tokens
 ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
-ms.openlocfilehash: 6d148bca56cfa4e28c2d3e6c0d9fcb564861a7cd
-ms.sourcegitcommit: d6e27023aeaffc4b5a3cb4b88685018d6284ada4
+ms.openlocfilehash: cbc97f2224bce640757e1cef88fe325db477cfd7
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67663461"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84587031"
 ---
 # <a name="claims-and-tokens"></a>Утверждения и маркеры
 
-В этом разделе описываются различные типы утверждений, которые создает Windows Communication Foundation (WCF) из поддерживаемых маркеров по умолчанию.
+В этом разделе описываются различные типы утверждений, которые Windows Communication Foundation (WCF) создают из маркеров по умолчанию, которые он поддерживает.
 
 Анализировать утверждения учетных данных клиента можно с помощью классов <xref:System.IdentityModel.Claims.ClaimSet> и <xref:System.IdentityModel.Claims.Claim>. Класс `ClaimSet` содержит коллекцию объектов `Claim`. Каждый объект `Claim` имеет следующие важные члены.
 
-- Свойство <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> возвращает универсальный код ресурса (URI), который указывает тип делаемого утверждения. Например, тип утверждения может представлять собой отпечаток сертификата, в котором в случае URI будет `http://schemas.microsoft.com/ws/20005/05/identity/claims/thumprint`.
+- Свойство <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> возвращает универсальный код ресурса (URI), который указывает тип делаемого утверждения. Например, тип утверждения может быть отпечаткой сертификата, в этом случае URI имеет значение `http://schemas.microsoft.com/ws/20005/05/identity/claims/thumprint` .
 
 - Свойство <xref:System.IdentityModel.Claims.Claim.Right%2A> возвращает универсальный код ресурса (URI), который указывает право утверждения. Предопределенные права находятся в классе <xref:System.IdentityModel.Claims.Rights> (<xref:System.IdentityModel.Claims.Rights.Identity%2A>, <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>).
 
@@ -53,28 +53,28 @@ ms.locfileid: "67663461"
 
   - Объект `Claim`, у которого свойство `ClaimType` указывает на отпечаток, свойство `Right` имеет значение PossessProperty, а значение свойства `Resource` представляет собой байтовый массив, содержащий отпечаток сертификата.
 
-  - Дополнительные утверждения с правом "PossessProperty" различных типов, включая "X500DistinguishedName","Dns", "Name", "Upn" и "Rsa", представляют различные свойства сертификата. Ресурс для утверждения типа Rsa является открытого ключа, связанного с сертификатом. **Примечание** где тип учетных данных клиента является сертификат, сопоставляемый с Windows учетная запись, два `ClaimSet` создаются объекты. Первый объект содержит все утверждения, связанные с учетной записью Windows, а второй содержит все утверждения, связанные с сертификатом.
+  - Дополнительные утверждения с правом "PossessProperty" различных типов, включая "X500DistinguishedName","Dns", "Name", "Upn" и "Rsa", представляют различные свойства сертификата. Ресурсом для утверждения RSA является открытый ключ, связанный с сертификатом. **Примечание** . Если тип учетных данных клиента — это сертификат, который служба сопоставляет с учетной записью Windows, `ClaimSet` создаются два объекта. Первый объект содержит все утверждения, связанные с учетной записью Windows, а второй содержит все утверждения, связанные с сертификатом.
 
 ## <a name="user-namepassword"></a>Имя пользователя/пароль
 
-Когда учетные данные клиента представляют собой имя пользователя/пароль (или эквивалент), которые не сопоставляются с учетной записью Windows, полученный в результате объект `ClaimSet` будет выдан статическим свойством <xref:System.IdentityModel.Claims.ClaimSet.System%2A> класса `ClaimSet`. `ClaimSet` Содержит `Identity` утверждения типа <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A> ресурсом которого является предоставленное клиентом имя пользователя. У соответствующего утверждения свойство`Right` имеет значение `PossessProperty`.
+Когда учетные данные клиента представляют собой имя пользователя/пароль (или эквивалент), которые не сопоставляются с учетной записью Windows, полученный в результате объект `ClaimSet` будет выдан статическим свойством <xref:System.IdentityModel.Claims.ClaimSet.System%2A> класса `ClaimSet`. Объект `ClaimSet` содержит `Identity` утверждение типа <xref:System.IdentityModel.Claims.ClaimTypes.Name%2A> , ресурсом которого является имя пользователя, предоставляемое клиентом. У соответствующего утверждения свойство`Right` имеет значение `PossessProperty`.
 
 ## <a name="rsa-keys"></a>Ключи RSA
 
-Если используется ключ RSA, не связанного с сертификатом, полученный в результате `ClaimSet` самостоятельно выданным и содержит `Identity` утверждения типа <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> , ресурсом которого является ключ RSA. У соответствующего утверждения свойство`Right` имеет значение `PossessProperty`.
+Если используется ключ RSA, не связанный с сертификатом, полученный результат `ClaimSet` является самозаверяющим и содержит `Identity` утверждение типа <xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> , ресурсом которого является ключ RSA. У соответствующего утверждения свойство`Right` имеет значение `PossessProperty`.
 
-## <a name="saml"></a>Маркеры SAML
+## <a name="saml"></a>SAML
 
 Когда для проверки подлинности клиента используется маркер на языке SAML, полученный в результате объект `ClaimSet` будет выдан сущностью, подписавшей маркер SAML; зачастую это сертификат службы маркеров безопасности, которая выдала маркер SAML. Объект `ClaimSet` содержит различные утверждения, обнаруженные в маркере SAML. Если маркер SAML содержит свойство `SamlSubject` с именем, отличным от `null`, создается утверждение с правом `Identity`, типом <xref:System.IdentityModel.Claims.ClaimTypes.NameIdentifier%2A> и ресурсом типа <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource>.
 
 ## <a name="identity-claims-and-servicesecuritycontextisanonymous"></a>Идентификационные утверждения и ServiceSecurityContext.IsAnonymous
 
-Если ни один из `ClaimSet` объектов, полученный в результате учетные данные клиента содержит утверждения, у `Right` из `Identity,` то <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> возвращает `true`. При наличии одного или нескольких таких утверждений свойство `IsAnonymous` возвращает значение `false`.
+Если ни один из `ClaimSet` объектов, полученных от учетных данных клиента, не содержит утверждение с параметром, `Right` `Identity,` <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> свойство возвращает значение `true` . При наличии одного или нескольких таких утверждений свойство `IsAnonymous` возвращает значение `false`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.IdentityModel.Claims.ClaimSet>
 - <xref:System.IdentityModel.Claims.Claim>
 - <xref:System.IdentityModel.Claims.Rights>
 - <xref:System.IdentityModel.Claims.ClaimTypes>
-- [Управление утверждениями и авторизацией с помощью модели удостоверения](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [Управление утверждениями и авторизацией с помощью модели удостоверения](managing-claims-and-authorization-with-the-identity-model.md)

@@ -5,27 +5,27 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f450f5d4-3547-47ec-9320-2809e6a12634
-ms.openlocfilehash: 2fa13a12a377cc16a95318367605d8b5d92769a7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 591f7db0f6b4e928a991961d3bc7c404f41028bf
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184684"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84579284"
 ---
 # <a name="intranet-unsecured-client-and-service"></a>Незащищенные интранет-клиент и служба
-На следующей иллюстрации показан ажурный сервис Windows Communication Foundation (WCF), разработанный для предоставления информации о защищенной частной сети для приложения WCF. Безопасность не требуется, поскольку данные имеют малое значение, сеть, как ожидается, будет по своей сути безопасной, или безопасность обеспечивается слоем ниже инфраструктуры WCF.  
+На следующем рисунке показана простая служба Windows Communication Foundation (WCF), разработанная для предоставления информации о защищенной частной сети приложению WCF. Безопасность не требуется, поскольку данные имеют низкую важность, ожидается безопасность сети, или безопасность обеспечивается уровнем, который находится под инфраструктурой WCF.  
   
- ![Сценарий необеспеченного клиента и обслуживания Intranet.](./media/intranet-unsecured-client-and-service/unsecured-web-client-service.gif)  
+ ![Сценарий незащищенного клиента и службы в интрасети.](./media/intranet-unsecured-client-and-service/unsecured-web-client-service.gif)  
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|None|  
-|Транспортировка|TCP|  
+|Режим безопасности|Нет|  
+|Транспорт|TCP|  
 |Привязка|<xref:System.ServiceModel.NetTcpBinding>|  
-|Совместимость|Только WCF|  
-|Аутентификация|None|  
-|Целостность|None|  
-|Конфиденциальность|None|  
+|Взаимодействие|Только WCF|  
+|Аутентификация|Нет|  
+|Целостность|Нет|  
+|Конфиденциальность|Нет|  
   
 ## <a name="service"></a>Служба  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
@@ -70,18 +70,18 @@ ms.locfileid: "79184684"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### <a name="code"></a>Код  
- Следующий код показывает основного клиента WCF, который получает доступ к незащищенной конечной точке с помощью протокола TCP.  
+ В следующем коде показан базовый клиент WCF, обращающийся к незащищенной конечной точке по протоколу TCP.  
   
  [!code-csharp[C_UnsecuredClient#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_unsecuredclient/cs/source.cs#2)]
  [!code-vb[C_UnsecuredClient#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_unsecuredclient/vb/source.vb#2)]  
@@ -112,8 +112,8 @@ ms.locfileid: "79184684"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.NetTcpBinding>
-- [Обзор безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

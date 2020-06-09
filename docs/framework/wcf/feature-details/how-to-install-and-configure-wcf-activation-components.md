@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - HTTP activation [WCF]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
-ms.openlocfilehash: e71664b4361ba28a50b29499585b20a8adbaefd2
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: f7a846b076691394cb855e4978e890cdcac76eb2
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75964468"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84597037"
 ---
 # <a name="how-to-install-and-configure-wcf-activation-components"></a>Практическое руководство. Установка и настройка компонентов активации WCF
 
@@ -19,11 +19,11 @@ ms.locfileid: "75964468"
 
 - Настройте WAS на поддержку отличных от HTTP протоколов. Следующая процедура настраивает Windows Vista для активации TCP.
 
-После установки и настройки WAS см. раздел [как разместить службу WCF в WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md) для процедур создания службы WCF, предоставляющей конечную точку, которая не является КОНЕЧНОЙ точкой HTTP.
+После установки и настройки WAS см. раздел [как разместить службу WCF в WAS](how-to-host-a-wcf-service-in-was.md) для процедур создания службы WCF, предоставляющей конечную точку, которая не является КОНЕЧНОЙ точкой HTTP.
 
 ## <a name="to-install-the-wcf-non-http-activation-components"></a>Установка компонентов активации WCF, работающих по отличному от HTTP протоколу
 
-1. Нажмите кнопку " **Пуск** " и выберите **Панель управления**.
+1. В меню **Пуск** выберите пункт **Панель управления**.
 
 2. Последовательно выберите **Программы**, **Программы и компоненты**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "75964468"
     ```
 
     > [!NOTE]
-    > Эта команда представляет собой одну строку текста. Эта команда позволяет получить доступ к приложению\<*WCF*>, используя как `http://localhost/<WCF Application>`, так и `net.tcp://localhost/<WCF Application>`.
+    > Эта команда представляет собой одну строку текста. Эта команда обеспечивает доступ к \<*WCF Application*> приложению или с помощью `http://localhost/<WCF Application>` и `net.tcp://localhost/<WCF Application>` .
 
      Удалите привязку сайта к протоколу net.tcp, добавленную ранее для данного образца.
 
@@ -101,9 +101,9 @@ ms.locfileid: "75964468"
     > [!NOTE]
     > Эта команда представляет собой одну строку текста.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Активация TCP](../../../../docs/framework/wcf/samples/tcp-activation.md)
-- [Активация MSMQ](../../../../docs/framework/wcf/samples/msmq-activation.md)
-- [Активация NamedPipe](../../../../docs/framework/wcf/samples/namedpipe-activation.md)
+- [Активация TCP](../samples/tcp-activation.md)
+- [Активация MSMQ](../samples/msmq-activation.md)
+- [Активация NamedPipe](../samples/namedpipe-activation.md)
 - [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

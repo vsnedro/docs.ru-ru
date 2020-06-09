@@ -2,50 +2,50 @@
 title: Примеры служб
 ms.date: 03/30/2017
 ms.assetid: 462a2218-f8c6-4fb7-95bc-64765459c429
-ms.openlocfilehash: afc4d20034730421d0b72659be62a64048a4c77e
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: a225d9bfb4d0ab70904a6e03c22269d69122f00b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75345119"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84591463"
 ---
 # <a name="services"></a>Службы
 
 В этом разделе содержатся примеры, демонстрирующие службы Windows Communication Foundation (WCF).
 
-## <a name="in-this-section"></a>В данном разделе
+## <a name="in-this-section"></a>Содержание раздела
 
-- [Размещение](../../../../docs/framework/wcf/feature-details/hosting.md)\
+- [Несущей](../feature-details/hosting.md)\
 Демонстрирует размещение служб WCF.
 
-- \ [взаимодействия служб](service-interoperability.md)
+- [Взаимодействие служб](service-interoperability.md)\
 Демонстрирует взаимодействие между WCF и другими технологиями служб.
 
-- \ [поведения](behaviors.md)
+- [Настройки](behaviors.md)\
 Демонстрирует поведение службы WCF.
 
-- \ [безопасности службы](service-security.md)
+- [Безопасность службы](service-security.md)\
 Демонстрирует безопасность службы WCF.
 
-- [Упрощенная конфигурация для служб WCF](simplified-configuration-for-wcf-services.md)\
+- [Упрощенная настройка служб WCF](simplified-configuration-for-wcf-services.md)\
 Демонстрирует, как реализовать и настроить типичную службу и клиент с помощью WCF.
 
 - [Использование стандартных конечных точек](usage-of-standard-endpoints.md)\
 Демонстрирует использование стандартных конечных точек в файлах конфигурации службы.
 
-- \ [политики расширенной защиты](extended-protection-policy.md)
+- [Расширенная политика защиты](extended-protection-policy.md)\
 Демонстрирует расширенную защиту, защитную инициативу, направленную на отражение атак типа «злоумышленник в середине».
 
-- \ [фабрики каналов конфигурации](configuration-channel-factory.md)
+- [Фабрика каналов конфигурации](configuration-channel-factory.md)\
 Демонстрирует использование действия класса <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>.
 
-- \ [адресации](addressing.md)
+- [APIPA](addressing.md)\
 Показаны различные аспекты и функции адресов конечных точек.
 
-- [Императивный](imperative.md)\
+- [Императивного](imperative.md)\
 Показывает, как определить привязку <xref:System.ServiceModel.WSHttpBinding> для службы в коде, вместо того чтобы определять привязку `wsHttpBinding` в конфигурации.
 
-- \ [нескольких контрактов](multiple-contracts.md)
+- [Несколько контрактов](multiple-contracts.md)\
 Демонстрируется способ реализации нескольких контрактов в службе и способ настройки конечных точек для взаимодействия с каждым из реализованных контрактов.
 
 - [Несколько конечных точек](multiple-endpoints.md)\
@@ -57,8 +57,8 @@ ms.locfileid: "75345119"
 - [OperationContextScope](operationcontextscope.md)\
 Демонстрирует, как отправить дополнительные сведения о вызове WCF с помощью заголовков.
 
-- \ [описания службы](service-description.md)
+- [Описание службы](service-description.md)\
 Демонстрируется процесс извлечения службой данных описания службы в среде выполнения.
 
-- [ConcurrencyMode.](concurrencymode-reentrant.md) повторный вход\
+- [ConcurrencyMode. повторный вход](concurrencymode-reentrant.md)\
 Демонстрируется использование повторного входа режима параллелизма в реализации службы.

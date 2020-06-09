@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], integration overview
 ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
-ms.openlocfilehash: 99e3c2f4445673f3b74048a2b466203af7bc2795
-ms.sourcegitcommit: 581ab03291e91983459e56e40ea8d97b5189227e
+ms.openlocfilehash: c283e7cbc4cb4b8bc37dd1313480410df93a93bf
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70045884"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596829"
 ---
 # <a name="integrating-with-com-applications-overview"></a>Общие сведения об интеграции с приложениями COM
 
@@ -67,6 +67,6 @@ Windows Communication Foundation (WCF) предоставляет разрабо
 >
 > `</configuration>`
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Практическое руководство. Регистрация и настройка моникера службы](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)
+- [Практическое руководство. Регистрация и настройка моникера службы](how-to-register-and-configure-a-service-moniker.md)

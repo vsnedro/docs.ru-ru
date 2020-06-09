@@ -7,34 +7,34 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], creating a session
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110
-ms.openlocfilehash: bdb0f89b950d086e04cbb9d6da161bd315fc64b3
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 80973a31050cf1ede03d4a3919066c62625ae590
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69934384"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84593416"
 ---
 # <a name="how-to-create-a-secure-session"></a>Практическое руководство. Создание сеанса безопасности
-За исключением [ \<привязки > BasicHttpBinding](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) , предоставляемые системой привязки в Windows Communication Foundation (WCF) автоматически используют защищенные сеансы при включенной безопасности сообщений.  
+За исключением [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) привязки, предоставляемые системой привязки в Windows Communication Foundation (WCF) автоматически используют защищенные сеансы при включенной безопасности сообщений.  
   
- По умолчанию безопасные сеансы не сохраняются на перезапускаемом веб-сервере. После установления безопасного сеанса клиент и служба кэшируют ключ, связанный с безопасным сеансом. При обмене сообщениями происходит только обмен идентификатором кэшированного ключа. При перезапуске веб-сервера кэш также перезапускается, следовательно, веб-сервер не может извлечь кэшированный ключ для идентификатора. В этом случае исключение передается назад клиенту. Безопасные сеансы, использующие токен контекста безопасности с отслеживанием состояния (SCT), сохраняются при перезапуске веб-сервера. Дополнительные сведения об использовании SCT с отслеживанием состояния в безопасном сеансе см [. в разделе как Создайте маркер контекста безопасности для безопасного сеанса](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+ По умолчанию безопасные сеансы не сохраняются на перезапускаемом веб-сервере. После установления безопасного сеанса клиент и служба кэшируют ключ, связанный с безопасным сеансом. При обмене сообщениями происходит только обмен идентификатором кэшированного ключа. При перезапуске веб-сервера кэш также перезапускается, следовательно, веб-сервер не может извлечь кэшированный ключ для идентификатора. В этом случае исключение передается назад клиенту. Безопасные сеансы, использующие токен контекста безопасности с отслеживанием состояния (SCT), сохраняются при перезапуске веб-сервера. Дополнительные сведения об использовании SCT с отслеживанием состояния в безопасном сеансе см. в разделе [инструкции. Создание маркера контекста безопасности для безопасного сеанса](how-to-create-a-security-context-token-for-a-secure-session.md).  
   
 ### <a name="to-specify-that-a-service-uses-secure-sessions-by-using-one-of-the-system-provided-bindings"></a>Задание использования службой безопасных сеансов с помощью одной из предоставляемых системой привязок  
   
 - Настройте службу на использование предоставляемой системой привязки, поддерживающей безопасность сообщений.  
   
-     За исключением [ \<привязки > BasicHttpBinding](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) , когда предоставляемые системой привязки настроены для использования безопасности сообщений, WCF автоматически использует защищенные сеансы. В следующей таблице перечислены предоставляемые системой привязки, поддерживающие безопасность сообщений, и указано, является ли безопасность сообщений механизмом безопасности по умолчанию для данной привязки.  
+     За исключением [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) привязки, когда предоставляемые системой привязки настроены для использования безопасности сообщений, WCF автоматически использует защищенные сеансы. В следующей таблице перечислены предоставляемые системой привязки, поддерживающие безопасность сообщений, и указано, является ли безопасность сообщений механизмом безопасности по умолчанию для данной привязки.  
   
     |Предоставляемая системой привязка|Элемент конфигурации|Безопасность сообщений включена по умолчанию|  
     |------------------------------|---------------------------|------------------------------------|  
-    |<xref:System.ServiceModel.BasicHttpBinding>|[\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)|Нет|  
-    |<xref:System.ServiceModel.WSHttpBinding>|[\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)|Да|  
-    |<xref:System.ServiceModel.WSDualHttpBinding>|[\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)|Да|  
-    |<xref:System.ServiceModel.WSFederationHttpBinding>|[\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|Да|  
-    |<xref:System.ServiceModel.NetTcpBinding>|[\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)|Нет|  
-    |<xref:System.ServiceModel.NetMsmqBinding>|[\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|Нет|  
+    |<xref:System.ServiceModel.BasicHttpBinding>|[\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md)|Нет|  
+    |<xref:System.ServiceModel.WSHttpBinding>|[\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md)|Да|  
+    |<xref:System.ServiceModel.WSDualHttpBinding>|[\<wsDualHttpBinding>](../../configure-apps/file-schema/wcf/wsdualhttpbinding.md)|Да|  
+    |<xref:System.ServiceModel.WSFederationHttpBinding>|[\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|Да|  
+    |<xref:System.ServiceModel.NetTcpBinding>|[\<netTcpBinding>](../../configure-apps/file-schema/wcf/nettcpbinding.md)|Нет|  
+    |<xref:System.ServiceModel.NetMsmqBinding>|[\<netMsmqBinding>](../../configure-apps/file-schema/wcf/netmsmqbinding.md)|Нет|  
   
-     В следующем примере кода используется конфигурация для указания привязки с именем `wsHttpBinding_Calculator` , которая [ \<использует > WSHttpBinding](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), безопасность сообщений и защищенные сеансы.  
+     В следующем примере кода используется конфигурация для указания привязки с именем, `wsHttpBinding_Calculator` которая использует [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) , безопасность сообщений и защищенные сеансы.  
   
     ```xml  
     <bindings>  
@@ -48,19 +48,19 @@ ms.locfileid: "69934384"
     </bindings>  
     ```  
   
-     В следующем примере кода указывается, `secureCalculator` что [ \<](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)для защиты службы используются > WSHttpBinding, безопасность сообщений и безопасные сеансы.  
+     В следующем примере кода указывается, что [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) для защиты службы используются, безопасность сообщений и безопасные сеансы `secureCalculator` .  
   
      [!code-csharp[c_CreateSecureSession#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_createsecuresession/cs/secureservice.cs#1)]
      [!code-vb[c_CreateSecureSession#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#1)]  
   
     > [!NOTE]
-    > Защищенные сеансы можно отключить для [ \<> WSHttpBinding](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) , задав `establishSecurityContext` для `false`атрибута значение. Безопасные сеансы для других предоставляемых системой привязок можно отключить, только создав пользовательскую привязку.  
+    > Защищенные сеансы можно отключить для, [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) задав `establishSecurityContext` для атрибута значение `false` . Безопасные сеансы для других предоставляемых системой привязок можно отключить, только создав пользовательскую привязку.  
   
 ### <a name="to-specify-that-a-service-uses-secure-sessions-by-using-a-custom-binding"></a>Задание использования службой безопасных сеансов с помощью пользовательской привязки  
   
 - Создайте пользовательскую привязку, которая задает, что сообщения SOAP защищаются безопасным сеансом.  
   
-     Дополнительные сведения о создании пользовательской привязки см. в разделе [как Настройка привязки](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md), предоставляемой системой.  
+     Дополнительные сведения о создании пользовательской привязки см. в разделе [инструкции. Настройка привязки, предоставляемой системой](../extending/how-to-customize-a-system-provided-binding.md).  
   
      В следующем примере кода с помощью конфигурации задается пользовательская привязка для обмена сообщениями с использованием безопасного сеанса.  
   
@@ -83,6 +83,6 @@ ms.locfileid: "69934384"
      [!code-csharp[c_CreateSecureSession#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_createsecuresession/cs/secureservice.cs#2)]
      [!code-vb[c_CreateSecureSession#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#2)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения о привязках WCF](../../../../docs/framework/wcf/bindings-overview.md)
+- [Общие сведения о привязках WCF](../bindings-overview.md)

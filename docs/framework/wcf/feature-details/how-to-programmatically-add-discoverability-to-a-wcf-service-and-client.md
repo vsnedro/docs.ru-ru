@@ -2,21 +2,21 @@
 title: Практическое руководство. Как программно добавить возможность обнаружения к службе и клиенту WCF
 ms.date: 03/30/2017
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
-ms.openlocfilehash: bf89c793cbd72a0a3980e6ec8e42c688dcedec26
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: c28815d1d208d3e91785a13d95e03c09c0f02ed9
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80344978"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596998"
 ---
 # <a name="how-to-programmatically-add-discoverability-to-a-wcf-service-and-client"></a>Практическое руководство. Как программно добавить возможность обнаружения к службе и клиенту WCF
-Эта тема объясняет, как сделать сервис Windows Communication Foundation (WCF) обнаруживаемым. Он основан на примере [Self-Host.](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host)  
+В этом разделе объясняется, как сделать службу Windows Communication Foundation (WCF) обнаруживаемой. Он основан на образце с [самостоятельным размещением](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) .  
   
 ### <a name="to-configure-the-existing-self-host-service-sample-for-discovery"></a>Настройка образца службы существующего резидентного размещения для обнаружения  
   
-1. Откройте решение Self-Host в Visual Studio 2012. Образец находится в каталоге TechnologySamples\Basic\Service\Hosting\SelfHost.  
+1. Откройте решение для самостоятельного размещения в Visual Studio 2012. Образец находится в каталоге TechnologySamples\Basic\Service\Hosting\SelfHost.  
   
-2. Добавьте ссылку на проект службы `System.ServiceModel.Discovery.dll`. Вы можете увидеть сообщение об ошибке с надписью "Система. ServiceModel.Discovery.dll или одна из его зависимостей требует более поздней версии рамочной .NET, чем та, которая указана в проекте ..." Если вы видите это сообщение, нажмите правой кнопкой мыши проекта в Solution Explorer и выберите **Свойства**. В окне **свойств проектов** убедитесь, [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]что **целевая рамка** — это .  
+2. Добавьте ссылку на проект службы `System.ServiceModel.Discovery.dll`. Может появиться сообщение об ошибке "System. Для ServiceModel. Discovery. dll или одной из его зависимостей требуется более поздняя версия .NET Framework, чем та, которая указана в проекте... " Если вы видите это сообщение, щелкните правой кнопкой мыши проект в обозреватель решений и выберите пункт **Свойства**. В окне **Свойства проекта** убедитесь, что **Целевая платформа** имеет значение [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] .  
   
 3. Откройте файл Service.cs и добавьте следующую инструкцию `using`.  
   
@@ -60,7 +60,7 @@ ms.locfileid: "80344978"
   
 2. Добавьте ссылку на сборки `System.ServiceModel.dll` и `System.ServiceModel.Discovery.dll`.  
   
-3. Скопируйте файлы GeneratedClient.cs и App.config из существующего проекта клиента в новый проект DiscoveryClientApp. Для этого нажмите правой кнопкой мыши файлы в **Solution Explorer**, выберите **Copy**, а затем выберите проект **DiscoveryClientApp,** нажмите правой кнопкой мыши и выберите **Пасту**.  
+3. Скопируйте файлы GeneratedClient.cs и App.config из существующего проекта клиента в новый проект DiscoveryClientApp. Для этого щелкните правой кнопкой мыши файлы в **Обозреватель решений**, выберите **Копировать**, а затем выберите проект **дисковериклиентапп** , щелкните правой кнопкой мыши и выберите команду **Вставить**.  
   
 4. Откройте файл Program.cs.  
   
@@ -92,7 +92,7 @@ ms.locfileid: "80344978"
     }  
     ```  
   
-     Это говорит WCF, что <xref:System.ServiceModel.Discovery.DiscoveryClient> класс должен использовать стандартную конечную точку открытия UDP для отправки и получения сообщений об открытии.  
+     Это говорит WCF, что <xref:System.ServiceModel.Discovery.DiscoveryClient> класс должен использовать стандартную конечную точку обнаружения UDP для отправки и получения сообщений обнаружения.  
   
 8. В следующей строке вызовите метод <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> и укажите экземпляр <xref:System.ServiceModel.Discovery.FindCriteria>, содержащий контракт службы, который необходимо найти. В данном случае укажите `ICalculator`.  
   
@@ -124,7 +124,7 @@ ms.locfileid: "80344978"
   
      Этот метод использует для вызова службы калькулятора адрес конечной точки, возвращенной из `FindCalculatorServiceAddress`.  
   
-11. Внутри метода `InvokeCalculatorService` создайте экземпляр класса `CalculatorServiceClient`. Этот класс определяется выборкой [Self-Host.](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) Он был сформирован с помощью программы Svcutil.exe.  
+11. Внутри метода `InvokeCalculatorService` создайте экземпляр класса `CalculatorServiceClient`. Этот класс определяется с помощью примера с [самостоятельным размещением](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) . Он был сформирован с помощью программы Svcutil.exe.  
   
     ```csharp  
     // Create a client  
@@ -220,7 +220,7 @@ ms.locfileid: "80344978"
     ```  
   
 ## <a name="example"></a>Пример  
- Ниже приведен полный листинг кода для данного образца. Поскольку этот код основан на примере [Self-Host,](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) перечислены только те файлы, которые изменены. Для получения дополнительной [информации](https://docs.microsoft.com/dotnet/framework/wcf/samples/set-up-instructions)о образце Self-Host см.  
+ Ниже приведен полный листинг кода для данного образца. Поскольку этот код основан на образце с [самостоятельным размещением](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) , отображаются только измененные файлы. Дополнительные сведения о примере с самостоятельным размещением см. в разделе [инструкции по установке](https://docs.microsoft.com/dotnet/framework/wcf/samples/set-up-instructions).  
   
 ```csharp  
 // Service.cs  
@@ -340,7 +340,7 @@ namespace DiscoveryClientApp
 }  
 ```  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения об обнаружении WCF](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [Модель объектов обнаружения WCF](../../../../docs/framework/wcf/feature-details/wcf-discovery-object-model.md)
+- [Общие сведения об обнаружении WCF](wcf-discovery-overview.md)
+- [Модель объектов обнаружения WCF](wcf-discovery-object-model.md)

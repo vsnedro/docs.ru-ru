@@ -2,12 +2,12 @@
 title: Упорядоченная обработка сообщений в режиме единого параллелизма
 ms.date: 03/30/2017
 ms.assetid: a90f5662-a796-46cd-ae33-30a4072838af
-ms.openlocfilehash: ecabb9a6e838b0137c538d76c554646356ea87f5
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: baba75fe398d974f989acfda7ef7366986f6813b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70991504"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84598740"
 ---
 # <a name="ordered-processing-of-messages-in-single-concurrency-mode"></a>Упорядоченная обработка сообщений в режиме единого параллелизма
 WCF не предоставляет никаких гарантий относительно порядка обработки сообщений, если только базовый канал не является сеансом.  Например, служба WCF, использующая Мсмкинпутчаннел, которая не является каналом с сеансом, не сможет обрабатывать сообщения по порядку. Существуют некоторые обстоятельства, в которых разработчику может потребоваться поведение при обработке заказа, но не нужно использовать сеансы. В этом разделе описано, как настроить такое поведение, когда служба запущена в режиме единого параллелизма.  
@@ -25,7 +25,7 @@ WCF не предоставляет никаких гарантий относи
   
  Если <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> имеет любое другое значение, выдается исключение <xref:System.InvalidOperationException>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Сеансы, экземпляры и параллелизм](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)
-- [Параллелизм](../../../../docs/framework/wcf/samples/concurrency.md)
+- [Сеансы, экземпляры и параллелизм](sessions-instancing-and-concurrency.md)
+- [Параллелизм](../samples/concurrency.md)

@@ -5,27 +5,27 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 01e7d0b8-10f9-45c3-a4c5-53d44dc61eb8
-ms.openlocfilehash: bcfeb5f863b1dd6cf9171a7fc53c8984ea68ecb3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dcb311523c6ec41b62f6e69fe6bc7635b9d49708
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184629"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595236"
 ---
 # <a name="message-security-with-a-windows-client"></a>Безопасность сообщений с клиентом Windows
-В этом сценарии показан клиент и сервер Windows Communication Foundation (WCF), защищенный режимом безопасности сообщений. Клиент и служба проходят проверку подлинности с использованием учетных данных Windows.  
+В этом сценарии показан клиент Windows Communication Foundation (WCF) и сервер, защищенный режимом безопасности сообщений. Клиент и служба проходят проверку подлинности с использованием учетных данных Windows.  
   
- ![Безопасность сообщений с клиентом Windows](../../../../docs/framework/wcf/feature-details/media/1c8618d4-0005-4022-beb6-32fd087a8c3c.gif "1c8618d4-0005-4022-beb6-32fd088a8c3c")  
+ ![Безопасность сообщений с помощью клиента Windows](media/1c8618d4-0005-4022-beb6-32fd087a8c3c.gif "1c8618d4-0005-4022-beb6-32fd087a8c3c")  
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
 |Режим безопасности|Сообщение|  
-|Совместимость|Только WCF|  
+|Взаимодействие|Только WCF|  
 |Проверка подлинности (сервера)|Взаимная проверка подлинности сервера и клиента|  
 |Проверка подлинности (клиента)|Взаимная проверка подлинности сервера и клиента|  
 |Целостность|Да, используется общий контекст безопасности|  
 |Конфиденциальность|Да, используется общий контекст безопасности|  
-|Транспортировка|NET.TCP|  
+|Транспорт|NET.TCP|  
 |Привязка|<xref:System.ServiceModel.NetTcpBinding>|  
   
 ## <a name="service"></a>Служба  
@@ -72,12 +72,12 @@ ms.locfileid: "79184629"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -116,7 +116,7 @@ ms.locfileid: "79184629"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Обзор безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

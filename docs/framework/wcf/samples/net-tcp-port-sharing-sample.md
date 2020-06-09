@@ -2,12 +2,12 @@
 title: Пример совместного использования портов Net.TCP
 ms.date: 03/30/2017
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
-ms.openlocfilehash: ac90a50c6fe06a643881da2889fdea308404508e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6c196380951d0da912cd937e3ebc38a03f80489c
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144296"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84584315"
 ---
 # <a name="nettcp-port-sharing-sample"></a>Пример совместного использования портов Net.TCP
 Протокол TCP/IP использует 16-разрядное число, называемое номером порта, чтобы различать подключения к разным сетевым приложениям, выполняющимся на одном компьютере. Если приложение ожидает передачи данных через порт, то весь трафик TCP через этот порт перенаправляется данному приложению. Другие приложения не могут одновременно ожидать передачи данных через тот же порт.  
@@ -17,15 +17,15 @@ ms.locfileid: "79144296"
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\TCP\PortSharing`  
   
  У многих протоколов имеется номер порта по умолчанию. Например, для протокола HTTP обычно используется порт TCP 80. У служб IIS имеется прослушиватель для совместного использования одного порта несколькими приложениями HTTP. Службы IIS ожидают передачи данных непосредственно через этот порт и перенаправляют сообщения соответствующим приложениям в зависимости от информации внутри сообщения. Это позволяет нескольким приложениям HTTP использовать один и тот же номер порта, не конкурируя за порт для получения сообщений.  
   
- NetTcp Port Sharing — это функция Фонда коммуникаций Windows (WCF), которая аналогичным образом позволяет нескольким сетевым приложениям совместно использовать один порт. Служба общего доступа к портам NetTcp принимает подключения с помощью протокола net.tcp и перенаправляет сообщения в зависимости от их адреса назначения.  
+ Совместное использование портов NetTcp — это функция Windows Communication Foundation (WCF), которая аналогично позволяет нескольким сетевым приложениям совместно использовать один порт. Служба общего доступа к портам NetTcp принимает подключения с помощью протокола net.tcp и перенаправляет сообщения в зависимости от их адреса назначения.  
   
- По умолчанию служба общего доступа к портам NetTcp отключена. Перед запуском этого образца необходимо вручную включить эту службу. Для получения дополнительной информации [см.](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md) Если служба отключена, при запуске серверного приложения создается исключение.  
+ По умолчанию служба общего доступа к портам NetTcp отключена. Перед запуском этого образца необходимо вручную включить эту службу. Дополнительные сведения см. [в разделе инструкции. Включение службы совместного использования портов net. TCP](../feature-details/how-to-enable-the-net-tcp-port-sharing-service.md). Если служба отключена, при запуске серверного приложения создается исключение.  
   
 ```console
 Unhandled Exception: System.ServiceModel.CommunicationException: The TransportManager failed to listen on the supplied URI using the NetTcpPortSharing service: failed to start the service because it is disabled. An administrator can enable it by running 'sc.exe config NetTcpPortSharing start= demand'.. ---> System.InvalidOperationException: Cannot start service NetTcpPortSharing on computer '.'. ---> System.ComponentModel.Win32Exception: The service cannot be started, either because it is disabled or because it has no enabled devices associated with it  
@@ -125,16 +125,16 @@ Press <ENTER> to terminate client.
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Установите ASP.NET 4.0 с помощью следующей команды.  
+1. Установите ASP.NET 4,0 с помощью следующей команды.  
   
     ```console  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+2. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
 3. Включите службу общего доступа к портам NetTcp, как описано в начале раздела.  
   
-4. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+4. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-5. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md) Конкретные сведения о выполнении этого образца описаны в разделе "Выполнение образца".  
+5. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md). Конкретные сведения о выполнении этого образца описаны в разделе "Выполнение образца".  

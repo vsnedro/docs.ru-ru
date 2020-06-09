@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Создание криптографического приложения
+description: Пошаговое руководство по созданию криптографического приложения. Сведения о шифровании и расшифровке содержимого в Windows Forms приложении.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - cryptography [NET Framework], cryptographic application example
 - cryptography [NET Framework], application example
 ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
-ms.openlocfilehash: 246028566c59e5c8a77b26a21729d3f143d38d07
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 72116227fbec2435d428ad2bbdb4cc74e5c3663f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289711"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602184"
 ---
 # <a name="walkthrough-creating-a-cryptographic-application"></a>Пошаговое руководство. Создание криптографического приложения
 В этом пошаговом руководстве показано, как зашифровать и расшифровать содержимое. Пример кода предназначен для приложения Windows Forms. Это приложение не демонстрирует реальные сценарии, такие как использование смарт-карт. Вместо этого оно демонстрирует основные принципы шифрования и расшифровки.  
@@ -43,7 +44,7 @@ ms.locfileid: "84289711"
 |Импорт открытого ключа|Загружает ключ из XML-файла в контейнер ключей.|  
 |Тестирование приложения|Список процедур для тестирования этого приложения.|  
   
-## <a name="prerequisites"></a>Предварительные условия  
+## <a name="prerequisites"></a>Предварительные требования  
  Для выполнения этого пошагового руководства требуются следующие компоненты:  
   
 - Ссылки на пространства имен <xref:System.IO> и <xref:System.Security.Cryptography>.  
@@ -51,7 +52,7 @@ ms.locfileid: "84289711"
 ## <a name="creating-a-windows-forms-application"></a>Создание приложения Windows Forms  
  Большинство примеров кода в этом пошаговом руководстве предназначено для использования в качестве обработчиков событий для элементов управления кнопок. В следующей таблице перечислены элементы управления, необходимые для образца приложения, и их имена в соответствии с примерами кода.  
   
-|Элемент управления|Название|Текстовое свойство (при необходимости)|  
+|Control|Имя|Текстовое свойство (при необходимости)|  
 |-------------|----------|---------------------------------|  
 |<xref:System.Windows.Forms.Button>|`buttonEncryptFile`|Шифрование файла|  
 |<xref:System.Windows.Forms.Button>|`buttonDecryptFile`|Расшифровка файла|  
@@ -208,6 +209,6 @@ ms.locfileid: "84289711"
   
 2. Нажмите кнопку `Decrypt File` и выберите только что зашифрованный файл. Эта операция будет успешной, так как имеется полная пара ключей для расшифровки.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Службы шифрования](cryptographic-services.md)

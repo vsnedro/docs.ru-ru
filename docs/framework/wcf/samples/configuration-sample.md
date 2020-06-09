@@ -2,25 +2,25 @@
 title: Образец конфигурации
 ms.date: 03/30/2017
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
-ms.openlocfilehash: 52747e6d964022d5028b0edb91dc8bc0ac0e82bc
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 6d84085d06da117ebf13fa4bb714513aacc3abd6
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463957"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594729"
 ---
 # <a name="configuration-sample"></a>Образец конфигурации
 Этот образец демонстрирует, как при помощи файла конфигурации можно сделать службу доступной для обнаружения.  
   
 > [!NOTE]
-> Данный образец реализует возможность обнаружения в конфигурации. Для примера, который реализует открытие в коде, [см.](../../../../docs/framework/wcf/samples/basic-sample.md)  
+> Данный образец реализует возможность обнаружения в конфигурации. Пример, в котором реализовано обнаружение в коде, см. в разделе [Basic](basic-sample.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
   
@@ -85,7 +85,7 @@ ms.locfileid: "81463957"
         </endpointBehaviors>  
 ```  
   
- Для получения дополнительной информации о области, см [Discovery Найти и найтиCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
+ Дополнительные сведения об областях см. в разделе [Обнаружение Find и FindCriteria](../feature-details/discovery-find-and-findcriteria.md).  
   
  Можно также управлять определенными сведениями о конечной точке обнаружения. Это выполняется с помощью объекта <xref:System.ServiceModel.Configuration.StandardEndpointsSection>. В данном образце изменяется версия используемого протокола, а также добавляется атрибут `maxResponseDelay`, как показано в следующем примере кода.  
   
@@ -260,9 +260,9 @@ ms.locfileid: "81463957"
   
 #### <a name="to-use-this-sample"></a>Использование этого образца  
   
-1. В этом образце используются конечные точки HTTP, и для работы этого образца необходимо добавить соответствующие списки управления доступом по URL-адресу. Для получения дополнительной информации смотрите [Настройка HTTP и HTTPS](../feature-details/configuring-http-and-https.md). Нужные списки управления доступом будут добавлены после выполнения следующей команды с повышенными привилегиями. Если команда не работает, следует указать домен и имя пользователя в следующих аргументах. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
+1. В этом образце используются конечные точки HTTP, и для работы этого образца необходимо добавить соответствующие списки управления доступом по URL-адресу. Дополнительные сведения см. в разделе [Настройка HTTP и HTTPS](../feature-details/configuring-http-and-https.md). Нужные списки управления доступом будут добавлены после выполнения следующей команды с повышенными привилегиями. Если команда не работает, следует указать домен и имя пользователя в следующих аргументах. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2. Создайте решение.  
+2. Постройте решение.  
   
 3. Выполните исполняемый файл службы из каталога сборки.  
   

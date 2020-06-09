@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF, authentication
 - WCF, Windows authentication
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-ms.openlocfilehash: 4a5e56f6b7f33a4c6f29aa384635737eeee37ddd
-ms.sourcegitcommit: 011314e0c8eb4cf4a11d92078f58176c8c3efd2d
+ms.openlocfilehash: eb3274b98234324bd47aa456feb4845da5a7f3a9
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2020
-ms.locfileid: "77095038"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599286"
 ---
 # <a name="debug-windows-authentication-errors"></a>Отладка ошибок проверки подлинности Windows
 
@@ -63,7 +63,7 @@ ms.locfileid: "77095038"
 ### <a name="kerberos-protocol"></a>Протокол Kerberos  
   
 #### <a name="spnupn-problems-with-the-kerberos-protocol"></a>Проблемы SPN/UPN, возникающие при использовании протокола Kerberos  
- Если при проверке подлинности Windows используется протокол Kerberos, или он выбирается с помощью интерфейса SSPI, URL-адрес, используемый конечной точкой клиента, должен включать полное доменное имя узла службы внутри URL-адреса службы. Предполагается, что у учетной записи, от имени которой запущена служба, есть доступ к ключу (имени участника-службы) (по умолчанию), который создается при добавлении компьютера в домен Active Directory, что чаще всего выполняется путем запуска службы в Учетная запись сетевой службы. Если у службы нет доступа к ключу имени участника-службы этого компьютера, необходимо предоставить правильное имя участника-службы или имя участника-пользователя (UPN) учетной записи, под которой выполняется служба в удостоверении конечной точки клиента. Дополнительные сведения о том, как WCF работает с SPN и UPN, см. в статье [удостоверение службы и проверка подлинности](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ Если при проверке подлинности Windows используется протокол Kerberos, или он выбирается с помощью интерфейса SSPI, URL-адрес, используемый конечной точкой клиента, должен включать полное доменное имя узла службы внутри URL-адреса службы. При этом подразумевается, что у учетной записи, от имени которой выполняется служба, есть доступ к ключу имени участника службы (SPN) компьютера (по умолчанию), который был создан при добавлении компьютера в домен Active Directory, что чаще всего осуществляется путем запуска службы от имени учетной записи Network Service. Если у службы нет доступа к ключу имени участника-службы этого компьютера, необходимо предоставить правильное имя участника-службы или имя участника-пользователя (UPN) учетной записи, под которой выполняется служба в удостоверении конечной точки клиента. Дополнительные сведения о том, как WCF работает с SPN и UPN, см. в статье [удостоверение службы и проверка подлинности](service-identity-and-authentication.md).  
   
  В сценариях с балансировкой нагрузки, например при использовании веб-ферм или веб-садов, распространена практика определения уникальной учетной записи для каждого из приложений, назначения этой учетной записи имени участника-службы и контроль за тем, чтобы все службы приложения выполнялись от имени этой учетной записи.  
   
@@ -94,12 +94,12 @@ ms.locfileid: "77095038"
   
     1. для этого в коде воспользуйтесь инструкцией: `ChannelFactory.Credentials.Windows.AllowNtlm = false`;  
   
-    2. либо в файле конфигурации установите атрибут `allowNtlm` равным `false`. Этот атрибут содержится в [\<windows >](../../../../docs/framework/configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md).  
+    2. либо в файле конфигурации установите атрибут `allowNtlm` равным `false`. Этот атрибут содержится в [\<windows>](../../configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md) .  
   
 ### <a name="ntlm-protocol"></a>Протокол NTLM  
   
 #### <a name="negotiate-ssp-falls-back-to-ntlm-but-ntlm-is-disabled"></a>В результате согласования SSP используется протокол NTLM, хотя протокол NTLM отключен  
- Свойству <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> присвоено значение `false`, что приводит к тому, что Windows Communication Foundation (WCF) не будет создавать исключение, если используется NTLM. Присвоение этому свойству значения `false` может препятствовать отправке учетных данных NTLM по сети.  
+ <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A>Свойству присвоено значение `false` , которое приводит к тому, что Windows Communication Foundation (WCF) наилучшим образом выдавать исключение, если используется NTLM. Установка этого свойства в значение `false` может препятствовать отправке учетных данных NTLM по сети.  
   
  Ниже показано, как отключить переключение к протоколу NTLM.  
   
@@ -122,7 +122,7 @@ ms.locfileid: "77095038"
  [!code-csharp[C_DebuggingWindowsAuth#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_debuggingwindowsauth/cs/source.cs#6)]
  [!code-vb[C_DebuggingWindowsAuth#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_debuggingwindowsauth/vb/source.vb#6)]  
   
- Дополнительные сведения об олицетворении см. в разделе [Делегирование и олицетворение](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+ Дополнительные сведения об олицетворении см. в разделе [Делегирование и олицетворение](delegation-and-impersonation-with-wcf.md).  
   
  Либо клиент может выполняться в качестве службы Windows от имени встроенной учетной записи SYSTEM.  
   
@@ -145,11 +145,11 @@ ms.locfileid: "77095038"
 #### <a name="developing-and-deploying-with-different-identities"></a>Разработка и развертывание с использованием различных удостоверений  
  В случае разработки приложения на одном компьютере и его развертывания на другом компьютере с использованием для проверки подлинности на каждом из компьютеров учетных записей различных типов работа приложения может различаться. Предположим, приложение разрабатывается на компьютере под управлением Windows XP Professional Edition с использованием режима проверки подлинности `SSPI Negotiated`. Если для проверки подлинности используется учетная запись локального пользователя, будет использоваться протокол NTLM. После разработки приложения служба развертывается на компьютере под управлением Windows Server 2003, где она выполняется от имени учетной записи домена. На этом этапе клиент не сможет проверить подлинность службы, так как он будет использовать Kerberos и контроллер домена.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.Security.WindowsServiceCredential>
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.ClientBase%601>
-- [Делегирование и олицетворение](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
-- [Неподдерживаемые сценарии](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+- [Делегирование и олицетворение](delegation-and-impersonation-with-wcf.md)
+- [Неподдерживаемые сценарии](unsupported-scenarios.md)

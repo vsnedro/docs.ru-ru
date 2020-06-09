@@ -2,12 +2,12 @@
 title: Производство каналов и кэширование
 ms.date: 03/30/2017
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
-ms.openlocfilehash: 98b77071204e2c2f98609e6c5bb1ca84a896dd58
-ms.sourcegitcommit: 581ab03291e91983459e56e40ea8d97b5189227e
+ms.openlocfilehash: 5b8348a98b484ca08e3dbeba141dc49825c8c071
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70040202"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84587369"
 ---
 # <a name="channel-factory-and-caching"></a>Производство каналов и кэширование
 
@@ -26,7 +26,7 @@ ms.locfileid: "70040202"
 > [!TIP]
 > Вы непосредственно управляете созданием фабрики каналов, когда класс <xref:System.ServiceModel.ChannelFactory%601> используется напрямую.
 
-Прокси-серверы клиента WCF, созданные с помощью [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) , являются производными от <xref:System.ServiceModel.ClientBase%601>. <xref:System.ServiceModel.ClientBase%601> определяет статическое свойство <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A>, которое определяет режим кэширования фабрики каналов. Параметры кэша задаются для определенного типа. Например, задание `ClientBase<ITest>.CacheSettings` одного из значений, определенных ниже, влияет только на прокси-объект или объект ClientBase типа `ITest`. Параметры кэша для конкретного <xref:System.ServiceModel.ClientBase%601> являются неизменяемыми после создания первого экземпляра класса-посредника или ClientBase.
+Прокси-серверы клиента WCF, созданные с помощью [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , являются производными от <xref:System.ServiceModel.ClientBase%601> . <xref:System.ServiceModel.ClientBase%601> определяет статическое свойство <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A>, которое определяет режим кэширования фабрики каналов. Параметры кэша задаются для определенного типа. Например, задание `ClientBase<ITest>.CacheSettings` одного из значений, определенных ниже, влияет только на прокси-объект или объект ClientBase типа `ITest` . Параметры кэша для конкретного <xref:System.ServiceModel.ClientBase%601> являются неизменяемыми после создания первого экземпляра класса-посредника или ClientBase.
 
 ## <a name="specifying-caching-behavior"></a>Установка режима кэширования
 
@@ -34,7 +34,7 @@ ms.locfileid: "70040202"
 
 |Значение параметра кэша|Описание|
 |-------------------------|-----------------|
-|<xref:System.ServiceModel.CacheSetting.AlwaysOn>|Все экземпляры <xref:System.ServiceModel.ClientBase%601> в пределах домена приложения могут участвовать в кэшировании. Разработчик определил, что при кэшировании не будет неблагоприятных последствий для безопасности. Кэширование не будет отключено даже при доступе к свойствам <xref:System.ServiceModel.ClientBase%601> с учетом безопасности. Свойства <xref:System.ServiceModel.ClientBase%601> , учитывающие безопасность, — это <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>, <xref:System.ServiceModel.ClientBase%601.Endpoint%2A> и <xref:System.ServiceModel.ClientBase%601.ChannelFactory%2A>.|
+|<xref:System.ServiceModel.CacheSetting.AlwaysOn>|Все экземпляры <xref:System.ServiceModel.ClientBase%601> в пределах домена приложения могут участвовать в кэшировании. Разработчик определил, что при кэшировании не будет неблагоприятных последствий для безопасности. Кэширование не будет отключено даже при доступе к свойствам с учетом безопасности <xref:System.ServiceModel.ClientBase%601> . Свойства, учитывающие безопасность <xref:System.ServiceModel.ClientBase%601> , — это <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> , <xref:System.ServiceModel.ClientBase%601.Endpoint%2A> и <xref:System.ServiceModel.ClientBase%601.ChannelFactory%2A> .|
 |<xref:System.ServiceModel.CacheSetting.Default>|Только экземпляры <xref:System.ServiceModel.ClientBase%601>, созданные на основе конечных точек, определенных в файлах конфигурации, участвуют в кэшировании внутри домена приложения. Ни один экземпляр <xref:System.ServiceModel.ClientBase%601>, созданный программно внутри домена приложения, не будет участвовать в кэшировании. Кроме того, кэширование будет отключено для экземпляра <xref:System.ServiceModel.ClientBase%601> после обращения к любому из свойств «с учетом безопасности».|
 |<xref:System.ServiceModel.CacheSetting.AlwaysOff>|Кэширование отключается для всех экземпляров <xref:System.ServiceModel.ClientBase%601> определенного типа в пределах домена приложений.|
 
@@ -113,10 +113,10 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
 
 В приведенном выше примере все экземпляры `TestClient` будут использовать различные фабрики каналов. Это полезно в случае, если каждая конечная точка имеет различные требования к безопасности и нет смысла выполнять кэширование.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.ClientBase%601>
-- [Создание клиентов](../../../../docs/framework/wcf/building-clients.md)
-- [Клиенты](../../../../docs/framework/wcf/feature-details/clients.md)
-- [Обращение к службам с помощью клиента WCF](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
-- [Практическое руководство. Использование ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+- [Создание клиентов](../building-clients.md)
+- [Клиенты](clients.md)
+- [Обращение к службам с использованием клиента WCF](../accessing-services-using-a-wcf-client.md)
+- [Практическое руководство. Использование ChannelFactory](how-to-use-the-channelfactory.md)

@@ -2,12 +2,12 @@
 title: Практическое руководство. Задание учетных данных безопасности канала
 ms.date: 03/30/2017
 ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119
-ms.openlocfilehash: 72fdcd18fba2eabe8255f73acd240e12e57d56ea
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 45a13460ce94cbacae0465fede4b455a2833ce81
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144712"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596946"
 ---
 # <a name="how-to-specify-channel-security-credentials"></a>Практическое руководство. Задание учетных данных безопасности канала
 Моникер службы Windows Communication Foundation (WCF) позволяет приложениям COM вызывать службы WCF. Большинству служб WCF требуется, чтобы клиент указал учетные данные для проверки подлинности и авторизации. При вызове службы WCF из клиента WCF можно указать эти учетные данные в управляемом коде или в файле конфигурации приложения. При вызове службы WCF из приложения COM можно использовать <xref:System.ServiceModel.ComIntegration.IChannelCredentials> интерфейс для указания учетных данных. В данном разделе описаны различные способы указания учетных данных с использованием интерфейса <xref:System.ServiceModel.ComIntegration.IChannelCredentials>.  
@@ -15,7 +15,7 @@ ms.locfileid: "84144712"
 > [!NOTE]
 > <xref:System.ServiceModel.ComIntegration.IChannelCredentials> - это интерфейс, основанный на IDispatch, и получение функциональных возможностей IntelliSense в среде Visual Studio невозможно.  
   
- В этой статье будет использоваться служба WCF, определенная в [примере безопасности сообщений](../../../../docs/framework/wcf/samples/message-security-sample.md).  
+ В этой статье будет использоваться служба WCF, определенная в [примере безопасности сообщений](../samples/message-security-sample.md).  
   
 ### <a name="to-specify-a-client-certificate"></a>Задание сертификата клиента  
   
@@ -115,7 +115,7 @@ ms.locfileid: "84144712"
   
 ### <a name="to-specify-an-issue-token"></a>Задание маркера вопроса  
   
-1. Маркеры вопроса используются только для приложений с федеративной безопасностью. Дополнительные сведения о федеративной безопасности см. в статье [Федерации и выданы токены](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md) и [Пример Федерации](../../../../docs/framework/wcf/samples/federation-sample.md).  
+1. Маркеры вопроса используются только для приложений с федеративной безопасностью. Дополнительные сведения о федеративной безопасности см. в статье [Федерации и выданы токены](federation-and-issued-tokens.md) и [Пример Федерации](../samples/federation-sample.md).  
   
      В следующем примере кода Visual Basic показано, как вызывать метод <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29>.  
   
@@ -131,10 +131,10 @@ ms.locfileid: "84144712"
   
      Дополнительные сведения о параметрах для этого метода см. в разделе <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Федерация](../../../../docs/framework/wcf/feature-details/federation.md)
-- [Практическое руководство. Настройка учетных данных службы федерации](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
-- [Практическое руководство. Создание федеративного клиента](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
-- [Безопасность сообщений](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)
-- [Привязки и безопасность](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+- [Федерация](federation.md)
+- [Практическое руководство. Настройка учетных данных службы федерации](how-to-configure-credentials-on-a-federation-service.md)
+- [Практическое руководство. Создание федеративного клиента](how-to-create-a-federated-client.md)
+- [Безопасность сообщений](message-security-in-wcf.md)
+- [Привязки и безопасность](bindings-and-security.md)

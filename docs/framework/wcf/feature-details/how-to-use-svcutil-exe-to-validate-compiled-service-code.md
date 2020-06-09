@@ -2,15 +2,15 @@
 title: Практическое руководство. Использование программы Svcutil.exe для проверки скомпилированного кода службы
 ms.date: 03/30/2017
 ms.assetid: d0d820fb-41c2-45b8-8f22-0fa5aeebbbaa
-ms.openlocfilehash: be8755ab4281b40d23ea4c8674c8c4f33631e7b6
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: 6f2064c696e3186c3208a7e57dc51655056d23ea
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70991597"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595353"
 ---
 # <a name="how-to-use-svcutilexe-to-validate-compiled-service-code"></a>Практическое руководство. Использование программы Svcutil.exe для проверки скомпилированного кода службы
-Для обнаружения ошибок в реализациях и конфигурациях служб без размещения службы можно использовать [средство служебной программы для метаданных ServiceModel (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) .  
+Для обнаружения ошибок в реализациях и конфигурациях служб без размещения службы можно использовать [средство служебной программы для метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) .  
   
 ### <a name="to-validate-a-service"></a>Проверка службы  
   
@@ -18,7 +18,7 @@ ms.locfileid: "70991597"
   
 2. Откройте окно командной строки SDK.  
   
-3. Из командной строки запустите средство Svcutil.exe, используя следующий формат. Дополнительные сведения о различных параметрах см. в разделе Service Валидатионсектион of [ServiceModel Metadata Utility Tool (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) .  
+3. Из командной строки запустите средство Svcutil.exe, используя следующий формат. Дополнительные сведения о различных параметрах см. в разделе Service Валидатионсектион of [ServiceModel Metadata Utility Tool (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) .  
   
     ```console
     svcutil.exe /validate /serviceName:<serviceConfigName>  <assemblyPath>*  
@@ -35,6 +35,6 @@ ms.locfileid: "70991597"
 svcutil /validate /serviceName:myServiceName myServiceHost.exe  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Служебная программа для метаданных ServiceModel (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

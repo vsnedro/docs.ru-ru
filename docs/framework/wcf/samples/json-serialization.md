@@ -1,20 +1,20 @@
 ---
-title: Образец DataContractJsonSerializer
+title: Пример DataContractJsonSerializer
 ms.date: 03/30/2017
 ms.assetid: 3c2c4747-7510-4bdf-b4fe-64f98428ef4a
-ms.openlocfilehash: d3456582d73640f1802c17d7f29f4931a6f920b6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4aa0ee679ae424251000b14abfbacf0590a6ccd3
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144634"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84592038"
 ---
-# <a name="datacontractjsonserializer-sample"></a>Образец DataContractJsonSerializer
+# <a name="datacontractjsonserializer-sample"></a>Пример DataContractJsonSerializer
 
 > [!NOTE]
-> Этот образец <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>предназначен для . Для большинства сценариев, связанных с сериализуем и десериализизацией JSON, мы рекомендуем AA в [пространстве имен System.Text.Json.](../../../standard/serialization/system-text-json-overview.md)
+> Этот пример предназначен для <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> . В большинстве сценариев, в которых участвует сериализация и десериализация JSON, мы рекомендуем использовать интерфейсы API в [пространстве имен System. Text. JSON](../../../standard/serialization/system-text-json-overview.md).
 
-<xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> поддерживает те же типы, что и <xref:System.Runtime.Serialization.DataContractSerializer>. Формат данных JSON бывает особенно полезен при написании веб-приложений AJAX (Asynchronous JavaScript and XML). Поддержка AJAX в Фонде связи Windows (WCF) оптимизирована для использования с ASP.NET AJAX через контроль ScriptManager. Примеры использования Windows Communication Foundation (WCF) с ASP.NET AJAX можно найти в [примере AJAX.](ajax.md)  
+<xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> поддерживает те же типы, что и <xref:System.Runtime.Serialization.DataContractSerializer>. Формат данных JSON бывает особенно полезен при написании веб-приложений AJAX (Asynchronous JavaScript and XML). Поддержка AJAX в Windows Communication Foundation (WCF) оптимизирована для использования с ASP.NET AJAX через элемент управления ScriptManager. Примеры использования Windows Communication Foundation (WCF) с ASP.NET AJAX см. в разделе [примеры AJAX](ajax.md).  
   
 Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
   
@@ -61,12 +61,12 @@ Person p2 = (Person)ser.ReadObject(stream1);
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Ajax\JsonSerialization`  
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, построение и выполнение примера  
   
-1. Создайте решение JsonSerialization.sln, как описано в [создании образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+1. Создайте решение Жсонсериализатион. sln, как описано в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
 2. Запустите получившееся консольное приложение.  

@@ -2,23 +2,23 @@
 title: Проверка клиента
 ms.date: 03/30/2017
 ms.assetid: f0c1f805-1a81-4d0d-a112-bf5e2e87a631
-ms.openlocfilehash: 641d5e84c09575574ff6b06888d156c4b4aa0a38
-ms.sourcegitcommit: 581ab03291e91983459e56e40ea8d97b5189227e
+ms.openlocfilehash: dce11ec2e3ef552c0c53e1faf89a12bc13b66ae0
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70040113"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84585328"
 ---
 # <a name="client-validation"></a>Проверка клиента
 Службы часто публикуют метаданные, чтобы включить автоматическое создание и настройку типов прокси клиента. Если служба не является доверенной, клиентские приложения должны убедиться, что метаданные соответствуют политике клиентского приложения в плане безопасности, транзакций, типа контракта службы и т. д. В следующем образце показано, как создать поведение конечной точки клиента, которое проверяет конечную точку службы на предмет безопасности использования.  
   
  Служба предоставляет четыре конечных точки службы. Первая конечная точка использует WSDualHttpBinding, вторая - проверку подлинности NTLM, третья конечная точка включает поток транзакций, а четвертая использует проверку подлинности на основе сертификатов.  
   
- Для извлечения метаданных для службы клиент использует класс <xref:System.ServiceModel.Description.MetadataResolver>. Клиент реализует политику запрещения дуплексных привязок, проверки подлинности NTLM и потока транзакций с помощью поведения проверки. Для каждого <xref:System.ServiceModel.Description.ServiceEndpoint> экземпляра, импортированного из метаданных службы, клиентское приложение добавляет экземпляр `InternetClientValidatorBehavior` поведения <xref:System.ServiceModel.Description.ServiceEndpoint> конечной точки в перед попыткой использовать клиент Windows Communication Foundation (WCF) для подключения к Конечная точка. Метод `Validate` этого поведения выполняется до вызова каких-либо операций в службе и реализует политику клиента, создавая исключение `InvalidOperationExceptions`.  
+ Для извлечения метаданных для службы клиент использует класс <xref:System.ServiceModel.Description.MetadataResolver>. Клиент реализует политику запрещения дуплексных привязок, проверки подлинности NTLM и потока транзакций с помощью поведения проверки. Для каждого <xref:System.ServiceModel.Description.ServiceEndpoint> экземпляра, импортированного из метаданных службы, клиентское приложение добавляет экземпляр `InternetClientValidatorBehavior` поведения конечной точки в <xref:System.ServiceModel.Description.ServiceEndpoint> перед попыткой использовать клиент Windows Communication Foundation (WCF) для подключения к конечной точке. Метод `Validate` этого поведения выполняется до вызова каких-либо операций в службе и реализует политику клиента, создавая исключение `InvalidOperationExceptions`.  
   
 ### <a name="to-build-the-sample"></a>Сборка образца  
   
-1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
 ### <a name="to-run-the-sample-on-the-same-computer"></a>Запуск образца на одном компьютере  
   
@@ -34,13 +34,13 @@ ms.locfileid: "70040113"
   
 ### <a name="to-run-the-sample-across-computers"></a>Запуск образца на нескольких компьютерах  
   
-1. На сервере в Командная строка разработчика для запуска Visual Studio с правами администратора введите `setup.bat service`. При запуске `setup.bat` с аргументомсоздаетсясертификатслужбысполнымдоменнымименемкомпьютераиэкспортируетсясертификатслужбывфайлсименемService.cer.`service`  
+1. На сервере в Командная строка разработчика для запуска Visual Studio с правами администратора введите `setup.bat service` . `setup.bat`При запуске с `service` аргументом создается сертификат службы с полным доменным именем компьютера и экспортируется сертификат службы в файл с именем Service. cer.  
   
-2. Измените App.config на сервере так, чтобы в файле отражалось новое имя сертификата. То есть измените `findValue` атрибут [ \<в элементе serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) на полное доменное имя компьютера.  
+2. Измените App.config на сервере так, чтобы в файле отражалось новое имя сертификата. То есть измените `findValue` атрибут в [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) элементе на полное доменное имя компьютера.  
   
 3. Скопируйте файл Service.cer из каталога службы в клиентский каталог на клиентском компьютере.  
   
-4. На клиенте откройте Командная строка разработчика для Visual Studio с правами администратора и введите `setup.bat client`. При запуске `setup.bat` с аргументомсоздаетсясертификатклиентасименемClient.comиэкспортируетсясертификатклиентавфайлсименемClient.cer.`client`  
+4. На клиенте откройте Командная строка разработчика для Visual Studio с правами администратора и введите `setup.bat client` . `setup.bat`При запуске с `client` аргументом создается сертификат клиента с именем Client.com и экспортируется сертификат клиента в файл с именем Client. cer.  
   
 5. В файле client.cs измените значение адреса конечной точки MEX и `findValue` для задания сертификата сервера по умолчанию таким образом, чтобы они соответствовали новому адресу службы. Для этого замените имя localhost полным именем домена сервера. Выполните перестроение.  
   
@@ -63,6 +63,6 @@ ms.locfileid: "70040113"
     > [!NOTE]
     > Этот скрипт не удаляет сертификаты службы на клиенте при запуске образца на нескольких компьютерах. Если вы выполнили примеры WCF, использующие сертификаты на нескольких компьютерах, обязательно очистите сертификаты службы, установленные в хранилище CurrentUser-TrustedPeople. Для этого используйте следующую команду: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Использование метаданных](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+- [Использование метаданных](../feature-details/using-metadata.md)

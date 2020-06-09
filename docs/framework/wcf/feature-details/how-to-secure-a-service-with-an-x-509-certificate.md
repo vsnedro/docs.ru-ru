@@ -5,21 +5,21 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2d06c2aa-d0d7-4e5e-ad7e-77416aa1c10b
-ms.openlocfilehash: 69db887bf8e7b51c4450c04bd1a08d3d952e84f7
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 10d6db63368ee55040f85f922b9483982e8ff264
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64643575"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596972"
 ---
 # <a name="how-to-secure-a-service-with-an-x509-certificate"></a>Практическое руководство. Защита службы с использованием сертификата X.509
-Защита службы с использованием сертификата X.509 является базовый метод, используемый в большинстве привязок в Windows Communication Foundation (WCF). В этом разделе описывается порядок настройки резидентной службы с сертификатом X.509.  
+Обеспечение безопасности службы с помощью сертификата X. 509 — это базовый метод, который большинство привязок используется в Windows Communication Foundation (WCF). В этом разделе описывается порядок настройки резидентной службы с сертификатом X.509.  
   
- Предварительным условием является наличие действительного сертификата, который можно использовать для проверки подлинности сервера. Сертификат должен быть выдан серверу доверенным центром сертификации. Если сертификат недействителен, ни один клиент, пытающийся воспользоваться службой, не будет доверять этой службе, следовательно, соединение установлено не будет. Дополнительные сведения об использовании сертификатов см. в разделе [работа с сертификатами](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ Предварительным условием является наличие действительного сертификата, который можно использовать для проверки подлинности сервера. Сертификат должен быть выдан серверу доверенным центром сертификации. Если сертификат недействителен, ни один клиент, пытающийся воспользоваться службой, не будет доверять этой службе, следовательно, соединение установлено не будет. Дополнительные сведения об использовании сертификатов см. [в разделе Работа с сертификатами](working-with-certificates.md).  
   
 ### <a name="to-configure-a-service-with-a-certificate-using-code"></a>Настройка службы с сертификатом в коде  
   
-1. Создайте контракт службы и реализованную службу. Дополнительные сведения см. в разделе [проектирование и реализация служб](../../../../docs/framework/wcf/designing-and-implementing-services.md).  
+1. Создайте контракт службы и реализованную службу. Дополнительные сведения см. в разделе [проектирование и реализация служб](../designing-and-implementing-services.md).  
   
 2. Создайте экземпляр класса <xref:System.ServiceModel.WSHttpBinding> и установите для него режим безопасности <xref:System.ServiceModel.SecurityMode.Message>, как показано в следующем коде.  
   
@@ -31,7 +31,7 @@ ms.locfileid: "64643575"
      [!code-csharp[C_SecureWithCertificate#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#2)]
      [!code-vb[C_SecureWithCertificate#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#2)]  
   
-4. Создайте экземпляр класса <xref:System.Uri> для базового адреса службы. Так как `WSHttpBinding` использует транспорт HTTP, универсальный код ресурса (URI) должен начинаться с соответствующей схемы, или Windows Communication Foundation (WCF) приведет к возникновению исключения при открытии службы.  
+4. Создайте экземпляр класса <xref:System.Uri> для базового адреса службы. Поскольку `WSHttpBinding` использует транспорт HTTP, универсальный код ресурса (URI) должен начинаться с этой схемы, или Windows Communication Foundation (WCF) вызовет исключение при открытии службы.  
   
      [!code-csharp[C_SecureWithCertificate#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#3)]
      [!code-vb[C_SecureWithCertificate#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#3)]  
@@ -46,7 +46,7 @@ ms.locfileid: "64643575"
      [!code-csharp[C_SecureWithCertificate#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#5)]
      [!code-vb[C_SecureWithCertificate#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#5)]  
   
-7. Необязательный параметр. Чтобы извлекать метаданные из службы, создайте новый объект <xref:System.ServiceModel.Description.ServiceMetadataBehavior> и присвойте свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> значение `true`.  
+7. Необязательный элемент. Чтобы извлекать метаданные из службы, создайте новый объект <xref:System.ServiceModel.Description.ServiceMetadataBehavior> и присвойте свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> значение `true`.  
   
      [!code-csharp[C_SecureWithCertificate#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#6)]
      [!code-vb[C_SecureWithCertificate#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#6)]  
@@ -82,6 +82,6 @@ ms.locfileid: "64643575"
   
 - <xref:System.Runtime.Serialization>  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Работа с сертификатами](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Работа с сертификатами](working-with-certificates.md)

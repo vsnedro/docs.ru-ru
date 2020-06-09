@@ -1,17 +1,18 @@
 ---
 title: Модель криптографии .NET Framework
+description: Ознакомьтесь с реализациями обычных криптографических алгоритмов в .NET. Изучение расширяемой криптографической модели наследования объектов, проектирования потоков & конфигурации.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - cryptography [.NET Framework], model
 - encryption [.NET Framework], model
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-ms.openlocfilehash: c2d28abacd34736764b69be750a850a0f2e8db85
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 11af4c15c8b291df898a3c2416faa15875eab70b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288385"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596323"
 ---
 # <a name="net-framework-cryptography-model"></a>Модель криптографии .NET Framework
 
@@ -73,7 +74,7 @@ ms.locfileid: "84288385"
 - Формирование ключа из пароля:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Службы шифрования](cryptographic-services.md)
 - [Примененные протоколы шифрования, алгоритмы и исходный код в C, Брюс Шнайера](https://www.schneier.com/books/applied_cryptography/)

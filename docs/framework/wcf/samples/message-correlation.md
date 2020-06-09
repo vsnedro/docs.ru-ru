@@ -2,12 +2,12 @@
 title: Корреляция сообщений
 ms.date: 03/30/2017
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
-ms.openlocfilehash: 9ded0886920f9f0b3d2f9b441061253b42a1c567
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 84b10b507f9fdaa7c53cf937bb132c8cc0aac33f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76747165"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84591648"
 ---
 # <a name="message-correlation"></a>Корреляция сообщений
 
@@ -17,7 +17,7 @@ ms.locfileid: "76747165"
 
  Контракт службы `IOrderProcessor` определяет одностороннюю операцию службы, которую можно использовать с очередями. Сообщение MSMQ не содержит заголовка Action, поэтому автоматически соотнести различные сообщения MSMQ с контрактами операций невозможно. Поэтому в данном случае может существовать только один контракт операции. Если нужно определить для службы несколько контрактов операций, приложение должно сообщать, какой заголовок сообщения MSMQ (например, метку или correlationID) можно использовать для выбора контракта операции.
 
- Кроме того, сообщение MSMQ не содержит сведений о том, какие заголовки соответствуют различным параметрам контракта операции. Поэтому в данном случае в контракте операции может существовать только один параметр. Параметр имеет тип <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, который содержит базовое сообщение MSMQ. Тип "T" в классе `MsmqMessage<T>` представляет данные, сериализованные в тело сообщения MSMQ. В этом образце тип `PurchaseOrder` сериализован в основную часть сообщения MSMQ.
+ Кроме того, сообщение MSMQ не содержит сведений о том, какие заголовки соответствуют различным параметрам контракта операции. Поэтому в данном случае в контракте операции может существовать только один параметр. Параметр имеет тип <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601> , который содержит базовое сообщение MSMQ. Тип "T" в классе `MsmqMessage<T>` представляет данные, сериализованные в тело сообщения MSMQ. В этом образце тип `PurchaseOrder` сериализован в основную часть сообщения MSMQ.
 
 ```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
@@ -68,7 +68,7 @@ public class OrderProcessorService : IOrderProcessor
 
  Служба использует пользовательский клиентский метод `OrderResponseClient` для отправки сообщения MSMQ в очередь. Так как приложение, получающее и обрабатывающее сообщение, является приложением MSMQ, а не приложением WCF, неявный контракт службы между двумя приложениями отсутствует. То есть в данном сценарии нельзя создать прокси-класс с помощью средства Svcutil.exe.
 
- По сути, пользовательский прокси-сервер одинаков для всех приложений WCF, использующих привязку `msmqIntegrationBinding` для отправки сообщений. В отличии от других прокси, он не включает ряда операций службы. В него входит только операция отправки сообщения.
+ По сути, пользовательский прокси-сервер одинаков для всех приложений WCF, использующих `msmqIntegrationBinding` привязку для отправки сообщений. В отличии от других прокси, он не включает ряда операций службы. В него входит только операция отправки сообщения.
 
 ```csharp
 [System.ServiceModel.ServiceContractAttribute(Namespace = "http://Microsoft.ServiceModel.Samples")]
@@ -272,7 +272,7 @@ static void DisplayOrderStatus()
 
 ## <a name="set-up-build-and-run-the-sample"></a>Настройка, сборка и запуск примера
 
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
 2. При первом запуске служба проверит наличие очереди. Если очередь отсутствует, служба ее создаст. Можно сначала запустить службу, чтобы создать очередь, либо создать ее с помощью диспетчера очередей MSMQ. Чтобы создать очередь в Windows 2008, выполните следующие шаги.
 
@@ -284,11 +284,11 @@ static void DisplayOrderStatus()
 
     4. Установите флажок **транзакционная** .
 
-    5. Введите `ServiceModelSamplesTransacted` в качестве имени новой очереди.
+    5. Введите в `ServiceModelSamplesTransacted` качестве имени новой очереди.
 
-3. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+3. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-4. Чтобы запустить пример в конфигурации с одним компьютером, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).
+4. Чтобы запустить пример в конфигурации с одним компьютером, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
 ## <a name="run-the-sample-across-computers"></a>Запуск примера на нескольких компьютерах
 
@@ -309,11 +309,11 @@ static void DisplayOrderStatus()
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MessageCorrelation`
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Очереди в WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
-- [Очередь сообщений](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))
+- [Очереди в WCF](../feature-details/queuing-in-wcf.md)
+- [служба очередей сообщений](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

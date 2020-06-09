@@ -2,12 +2,12 @@
 title: Распространение
 ms.date: 03/30/2017
 ms.assetid: f8181e75-d693-48d1-b333-a776ad3b382a
-ms.openlocfilehash: ab8b6c003f9e483dccd7b9c7b2687a409f27fdc3
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 732ae5cb1ce311b78728f8d5de0fd9102bf32499
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64600028"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84578959"
 ---
 # <a name="propagation"></a>Распространение
 В этом разделе описывается распространение действий в модели трассировки Windows Communication Foundation (WCF).  
@@ -21,7 +21,7 @@ ms.locfileid: "64600028"
 <source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity="true" >  
 ```  
   
- Распространение действий — настраиваемая функция, вызывающая WCF для добавления заголовков исходящих сообщений, который включает в себя идентификатор действия из локальной памяти ПОТОКА. Включая этот идентификатор в последующие трассировки на стороне сервера, можно коррелировать действия клиента и сервера.  
+ Распространение действий — это настраиваемая возможность, которая заставляет WCF добавлять заголовок к исходящим сообщениям, включая идентификатор действия в TLS. Включая этот идентификатор в последующие трассировки на стороне сервера, можно коррелировать действия клиента и сервера.  
   
 ## <a name="propagation-definition"></a>Определение распространения  
  Идентификатор gAId действия M распространяется на действие N, если выполняются все следующие условия.  
@@ -76,9 +76,9 @@ ms.locfileid: "64600028"
 ## <a name="synchronization"></a>Синхронизация  
  Чтобы синхронизировать события между конечными точками, выполняемыми на разных компьютерах, к заголовку ActivityId, распространяемому в сообщениях, добавляется заголовок CorrelationId. Средства могут использовать этот идентификатор для синхронизации событий между компьютерами с разным системным временем. В частности, программа Service Trace Viewer использует этот идентификатор для отображения потоков сообщений между конечными точками.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Настройка трассировки](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
-- [Использование программы Service Trace Viewer для просмотра скоррелированных трассировок и устранения неполадок](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
-- [Сценарии сквозной трассировки](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
-- [Средство просмотра трассировки служб (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Настройка трассировки](configuring-tracing.md)
+- [Использование программы Service Trace Viewer для просмотра скоррелированных трассировок и устранения неполадок](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [Сценарии сквозной трассировки](end-to-end-tracing-scenarios.md)
+- [Программа Service Trace Viewer (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
