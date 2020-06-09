@@ -2,12 +2,12 @@
 title: Структура проверки подлинности маркера
 ms.date: 03/30/2017
 ms.assetid: 84382f2c-f6b1-4c32-82fa-aebc8f6064db
-ms.openlocfilehash: 835a158ba668a3aef749602c73fd9157e8d83a40
-ms.sourcegitcommit: 14ad34f7c4564ee0f009acb8bfc0ea7af3bc9541
+ms.openlocfilehash: f4b49edd3b5a2cecd203feed713c7694450f7497
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73425037"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596556"
 ---
 # <a name="token-authenticator"></a>Структура проверки подлинности маркера
 Данный образец демонстрирует способ реализации пользовательской структуры проверки подлинности маркеров. Средство проверки подлинности маркеров в Windows Communication Foundation (WCF) используется для проверки маркера, используемого с сообщением, проверки его самоединообразия и проверки подлинности удостоверения, связанного с маркером.
@@ -324,9 +324,9 @@ static void DisplayIdentityInformation()
 
 #### <a name="to-set-up-and-build-the-sample"></a>Настройка и сборка образца
 
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).
 
 #### <a name="to-run-the-sample-on-the-same-computer"></a>Запуск образца на одном компьютере
 

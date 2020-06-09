@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6400bc71-a858-4ac2-8d5a-caa72d3b5482
-ms.openlocfilehash: cd8d76137ac195e452a7d66fb6ddbeda405a922f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 28f2858d68de99839d7fec66b0fe4528d7e42325
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185088"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84579531"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-service-to-use-port-sharing"></a>Практическое руководство. Настройка службы Windows Communication Foundation на совместное использование портов
-Самый простой способ использовать net.tcp:// обмен портом в приложении Windows Communication <xref:System.ServiceModel.NetTcpBinding>Foundation (WCF) — это разоблачить службу с помощью .  
+Самый простой способ использовать NET. TCP://совместное использование портов в приложении Windows Communication Foundation (WCF) — предоставить службу с помощью <xref:System.ServiceModel.NetTcpBinding> .  
   
  Эта привязка предоставляет свойство <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A>, которое определяет, включено ли совместное использование порта net.tcp:// для службы, настраиваемой с этой привязкой.  
   
@@ -21,7 +21,7 @@ ms.locfileid: "79185088"
   
 ### <a name="to-enable-nettcp-port-sharing-on-a-nettcpbinding-in-code"></a>Включение совместного использования порта net.tcp:// в привязке NetTcpBinding с помощью кода  
   
-1. Создайте сервис для реализации вызова контракта `IMyService` и вызова его. `MyService`  
+1. Создайте службу для реализации контракта с именем `IMyService` и его вызова `MyService` ,.  
   
      [!code-csharp[c_ConfigurePortSharing#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_configureportsharing/cs/source.cs#1)]
      [!code-vb[c_ConfigurePortSharing#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_configureportsharing/vb/source.vb#1)]  
@@ -60,7 +60,7 @@ ms.locfileid: "79185088"
 </system.serviceModel>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Совместное использование портов Net.TCP](../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)
-- [Практическое руководство. Включение службы совместного использования портов Net.TCP](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md)
+- [Совместное использование портов Net.TCP](net-tcp-port-sharing.md)
+- [Практическое руководство. Включение службы совместного использования портов Net.TCP](how-to-enable-the-net-tcp-port-sharing-service.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - shared [elements VB]
 - elements [Visual Basic], shared
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
-ms.openlocfilehash: 000cc13bc6e80914e9a21b6ee60e91127809ee08
-ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
+ms.openlocfilehash: d8c9879ea2f62bfbeaa378d0aaee806623ea1c55
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84307089"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84579116"
 ---
 # <a name="shared-visual-basic"></a>Shared (Visual Basic)
 
@@ -26,13 +26,13 @@ ms.locfileid: "84307089"
 
 Совместное использование члена класса или структуры делает его доступным для каждого экземпляра, а не для *общего доступа*, где каждый экземпляр хранит собственную копию. Это полезно, например, если значение переменной применяется ко всему приложению. Если объявить эту переменную как `Shared` , то все экземпляры получают доступ к тому же месту хранения, и если один экземпляр изменяет значение переменной, все экземпляры получают доступ к обновленному значению.
 
-Совместное использование не изменяет уровень доступа элемента. Например, член класса может быть общим и частным (доступным только в пределах класса), а также не является общим и открытым. Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+Совместное использование не изменяет уровень доступа элемента. Например, член класса может быть общим и частным (доступным только в пределах класса), а также не является общим и открытым. Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 ## <a name="rules"></a>Правила
 
 - **Контекст объявления.** `Shared` можно использовать только на уровне модуля. Это означает, что контекст объявления для `Shared` элемента должен быть классом или структурой и не может быть исходным файлом, пространством имен или процедурой.
 
-- **Комбинированные модификаторы.** Нельзя указывать `Shared` вместе с [переопределениями](../../../visual-basic/language-reference/modifiers/overrides.md), [переопределяемыми](../../../visual-basic/language-reference/modifiers/overridable.md), [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md), [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)или [static](../../../visual-basic/language-reference/modifiers/static.md) в одном объявлении.
+- **Комбинированные модификаторы.** Нельзя указывать `Shared` вместе с [переопределениями](overrides.md), [переопределяемыми](overridable.md), [NotOverridable](notoverridable.md), [MustOverride](mustoverride.md)или [static](static.md) в одном объявлении.
 
 - **Данному.** Доступ к общему элементу осуществляется путем указания его имени класса или структуры, а не имени переменной определенного экземпляра его класса или структуры. Вам даже не нужно создавать экземпляр класса или структуры для доступа к его общим членам.
 
@@ -42,7 +42,7 @@ ms.locfileid: "84307089"
      If Double.IsNaN(result) Then Console.WriteLine("Result is mathematically undefined.")
      ```
 
-- **Неявный общий доступ.** Нельзя использовать `Shared` Модификатор в [операторе const](../../../visual-basic/language-reference/statements/const-statement.md), но константы неявно являются общими. Аналогичным образом нельзя объявить член модуля или интерфейса `Shared` , но они являются неявно общими.
+- **Неявный общий доступ.** Нельзя использовать `Shared` Модификатор в [операторе const](../statements/const-statement.md), но константы неявно являются общими. Аналогичным образом нельзя объявить член модуля или интерфейса `Shared` , но они являются неявно общими.
 
 ## <a name="behavior"></a>Поведение
 
@@ -93,10 +93,10 @@ ms.locfileid: "84307089"
 - [Property Statement](../statements/property-statement.md)
 - [Оператор Sub](../statements/sub-statement.md)
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Shadows](shadows.md)
-- [Статически](static.md)
+- [Статическое](static.md)
 - [Время существования в Visual Basic](../../programming-guide/language-features/declared-elements/lifetime.md)
 - [Процедуры](../../programming-guide/language-features/procedures/index.md)
 - [Структуры](../../programming-guide/language-features/data-types/structures.md)

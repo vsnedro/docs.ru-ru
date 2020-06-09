@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1f5ce46b-e259-4bc9-a0b9-89d06fc9341c
-ms.openlocfilehash: b226eed9218207cde99add61ef1f3eb64b459009
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f90906b4c3fc1d1d76977451abfb238bb33fb581
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184295"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595119"
 ---
 # <a name="trusted-subsystem"></a>Доверенная подсистема
 Клиент обращается к одной или нескольким веб-службам, распределенным по сети. Веб-службы устроены так, что доступ к дополнительным ресурсам (таким как базы данных или другие веб-службы) инкапсулируется в бизнес-логике веб-службы. Эти ресурсы должны быть защищены от несанкционированного доступа. На следующем рисунке показан процесс доверенной подсистемы.  
   
- ![Надежная подсистема](../../../../docs/framework/wcf/feature-details/media/wcfc-trustedsubsystemc.gif "wcfc_TrustedSubsystemc")  
+ ![Доверенная подсистема](media/wcfc-trustedsubsystemc.gif "wcfc_TrustedSubsystemc")  
   
  Показанный на рисунке процесс доверенной подсистемы пошагово описан ниже.  
   
@@ -32,13 +32,13 @@ ms.locfileid: "79184295"
 |Характеристика|Описание|  
 |--------------------|-----------------|  
 |Режим безопасности|Сообщение|  
-|Совместимость|Фонд связи Windows (WCF) только.|  
+|Взаимодействие|Только Windows Communication Foundation (WCF).|  
 |Проверка подлинности (служба)|Служба маркеров безопасности проверяет подлинность клиентов и авторизует их.|  
 |Проверка подлинности (клиент)|Доверенная подсистема проверяет подлинность клиента, а ресурс проверяет подлинность службы доверенной подсистемы.|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
-|Транспортировка|HTTP между клиентом и службой доверенной подсистемы.<br /><br /> NET.TCP между службой доверенной подсистемы и ресурсом (внутренней службой).|  
-|Привязка|<xref:System.ServiceModel.WSHttpBinding><xref:System.ServiceModel.NetTcpBinding> [и \<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
+|Транспорт|HTTP между клиентом и службой доверенной подсистемы.<br /><br /> NET.TCP между службой доверенной подсистемы и ресурсом (внутренней службой).|  
+|Привязка|<xref:System.ServiceModel.WSHttpBinding>перетаскивани<xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
   
 ## <a name="resource-back-end-service"></a>Ресурс (внутренняя служба)  
   
@@ -163,7 +163,7 @@ ms.locfileid: "79184295"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
   
 ### <a name="code"></a>Код  
  В следующем коде показано, как создать клиент, обменивающийся данными с доверенной подсистемой в режиме безопасности сообщения по протоколу HTTP и использующий для проверки подлинности имя пользователя и пароль.  
@@ -210,7 +210,7 @@ ms.locfileid: "79184295"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Обзор безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

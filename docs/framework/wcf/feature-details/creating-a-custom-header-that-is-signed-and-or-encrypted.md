@@ -2,12 +2,12 @@
 title: Создание подписанного и зашифрованного пользовательского заголовка
 ms.date: 03/30/2017
 ms.assetid: e8668b37-c79f-4714-9de5-afcb88b9ff02
-ms.openlocfilehash: d737647f8c0442a3d6fa0d077a1ffe2c251ea043
-ms.sourcegitcommit: 205b9a204742e9c77256d43ac9d94c3f82909808
+ms.openlocfilehash: 0adb4100bca1add2c23ff2c802ddb5e2cb1c368c
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70856173"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84579662"
 ---
 # <a name="creating-a-custom-header-that-is-signed-and-or-encrypted"></a>Создание подписанного и зашифрованного пользовательского заголовка
 При вызове службы, которая не является службой WCF, с помощью клиента WCF иногда приходится применять пользовательские заголовки протокола SOAP. В WCF имеется ошибка канонизации, которая не позволяет подписанным и зашифрованным пользовательским заголовкам работать со службами, не являющимися службами WCF. Проблема вызывается неверной канонизацией пространств имен XML по умолчанию. Она возникает только при вызове служб, не являющихся службами WCF, с подписанными и/или зашифрованными пользовательскими заголовками.  Когда служба получает сообщение, содержащее подписанный и/или зашифрованный пользовательский заголовок, ей не удается проверить сигнатуру. Данный обходный путь решения проблемы обходит проблему канонизации, позволяет работать со службами, которые не являются службами WCF, но не мешает работать и со службами WCF.  
@@ -56,8 +56,8 @@ public  class MyMessageContract
 }  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Контракт сообщения по умолчанию](../../../../docs/framework/wcf/samples/default-message-contract.md)
-- [Контракты сообщений](../../../../docs/framework/wcf/samples/message-contracts.md)
-- [Использование контрактов сообщений](../../../../docs/framework/wcf/feature-details/using-message-contracts.md)
+- [Контракт сообщения по умолчанию](../samples/default-message-contract.md)
+- [Контракты сообщений](../samples/message-contracts.md)
+- [Использование контрактов сообщений](using-message-contracts.md)

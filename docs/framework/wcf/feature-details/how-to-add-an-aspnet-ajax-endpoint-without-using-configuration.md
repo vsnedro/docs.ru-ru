@@ -2,25 +2,25 @@
 title: Практическое руководство. Добавление конечной точки ASP.NET AJAX без использования конфигурации
 ms.date: 03/30/2017
 ms.assetid: b05c1742-8d0a-4673-9d71-725b18a3008e
-ms.openlocfilehash: 9935e2a7738796fff9a037b09237a6acbf7bf988
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9aab53d6457aa7848fd4acea6317a30da352cc98
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185136"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84579635"
 ---
 # <a name="how-to-add-an-aspnet-ajax-endpoint-without-using-configuration"></a>Практическое руководство. Добавление конечной точки ASP.NET AJAX без использования конфигурации
-Фонд связи Windows (WCF) позволяет создать сервис, который предоставляет ASP.NET топовой с поддержкой AJAX, которая может быть вызвана из JavaScript на веб-сайте клиента. Для создания этой конечной точки можно воспользоваться либо файлом конфигурации (как и для всех остальных конечных точек WCF), либо методом, не требующим никаких элементов конфигурации. В этом разделе показано решение этой задачи вторым методом.  
+Windows Communication Foundation (WCF) позволяет создать службу, предоставляющую конечную точку с поддержкой AJAX ASP.NET, которая может быть вызвана из JavaScript на веб-сайте клиента. Для создания этой конечной точки можно воспользоваться либо файлом конфигурации (как и для всех остальных конечных точек WCF), либо методом, не требующим никаких элементов конфигурации. В этом разделе показано решение этой задачи вторым методом.  
   
- Создание служб с конечными точками ASP.NET AJAX без конфигурации возможно только при размещении служб в службах IIS. Чтобы активировать ASP.NET конечную точку <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> AJAX с помощью этого подхода, укажите параметр Factory в директиве [ \@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) в файле .svc. Эта пользовательская фабрика является компонентом, который автоматически настраивает конечную точку ASP.NET AJAX так, чтобы ее можно было вызвать из кода JavaScript на веб-сайте клиента.  
+ Создание служб с конечными точками ASP.NET AJAX без конфигурации возможно только при размещении служб в службах IIS. Чтобы активировать конечную точку ASP.NET AJAX с помощью этого подхода, укажите в <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> качестве параметра фабрики в директиве [ \@ ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) в SVC – файле. Эта пользовательская фабрика является компонентом, который автоматически настраивает конечную точку ASP.NET AJAX так, чтобы ее можно было вызвать из кода JavaScript на веб-сайте клиента.  
   
- В рабочем примере см. [службу AJAX без конфигурации.](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md)  
+ Рабочий пример см. в разделе [Служба AJAX без настройки](../samples/ajax-service-without-configuration.md).  
   
- Для набросков того, как настроить конечную точку ASP.NET AJAX с использованием элементов конфигурации, [см. Как: Используйте конфигурацию для добавления ASP.NET конечной точки AJAX.](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)  
+ Сведения о настройке конечной точки ASP.NET AJAX с помощью элементов конфигурации см. в разделе [как использовать конфигурацию для добавления конечной точки ASP.NET AJAX](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md).  
   
 ### <a name="to-create-a-basic-wcf-service"></a>Создание базовой службы WCF  
   
-1. Определите базовый контракт службы WCF <xref:System.ServiceModel.ServiceContractAttribute> с интерфейсом, отмеченным атрибутом. Пометьте каждую операцию атрибутом <xref:System.ServiceModel.OperationContractAttribute>. Не забудьте задать свойство <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A>.  
+1. Определите базовый контракт службы WCF с интерфейсом, помеченным <xref:System.ServiceModel.ServiceContractAttribute> атрибутом. Пометьте каждую операцию атрибутом <xref:System.ServiceModel.OperationContractAttribute>. Не забудьте задать свойство <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A>.  
   
     ```csharp  
     [ServiceContract(Namespace = "MyService")]]  
@@ -59,7 +59,7 @@ ms.locfileid: "79185136"
   
 ### <a name="to-host-the-service-in-internet-information-services-without-configuration"></a>Размещение службы в службах IIS без конфигурации  
   
-1. Создайте в приложении новый файл с именем "service" и расширением .svc. Отобразите этот файл, добавив соответствующую [ \@](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) директивную информацию ServiceHost для службы. Укажите, <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> что это должно использоваться в директиве [ \@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) для автоматической настройки ASP.NET конечную точку AJAX.  
+1. Создайте в приложении новый файл с именем "service" и расширением .svc. Измените этот файл, добавив соответствующие сведения об директиве [ \@ ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) для службы. Укажите, что <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> класс должен использоваться в директиве [ \@ ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) для автоматической настройки конечной точки ASP.NET AJAX.  
   
     ```text
     <%@ServiceHost
@@ -70,11 +70,11 @@ ms.locfileid: "79185136"
     %>  
     ```  
   
-2. Создайте службу и вызовите ее из клиента. Internet Information Services (IIS) активирует данную службу при вызове. Для получения дополнительной информации о хостинге в IIS, [см.](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)  
+2. Создайте службу и вызовите ее из клиента. Internet Information Services (IIS) активирует данную службу при вызове. Дополнительные сведения о размещении в службах IIS см. в разделе [как разместить службу WCF в IIS](how-to-host-a-wcf-service-in-iis.md).  
   
 ### <a name="to-call-the-service"></a>Вызов службы  
   
-1. Конечная точка настроена по пустому адресу по отношению к файлу .svc, поэтому служба теперь доступна\<и может быть вызвана, отправив `Add` запросы на service.svc/> операции - например, service.svc/Add для операции. Для этого нужно указать URL-адрес службы в коллекции "Скрипты" в средстве управления диспетчера скриптов ASP.NET AJAX. Например, см. [службу AJAX без конфигурации.](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md)  
+1. Конечная точка настраивается по пустому адресу относительно SVC-файла, поэтому служба доступна и может быть вызвана путем отправки запросов к службе. svc/-например \<operation> , Service. svc/Add для `Add` операции. Для этого нужно указать URL-адрес службы в коллекции "Скрипты" в средстве управления диспетчера скриптов ASP.NET AJAX. Пример см. в разделе [Служба AJAX без настройки](../samples/ajax-service-without-configuration.md).  
   
 ## <a name="example"></a>Пример  
   
@@ -86,17 +86,17 @@ ms.locfileid: "79185136"
   
  С помощью конфигурации невозможно изменить параметры автоматически настраиваемой конечной точки. При необходимости изменить какой-либо параметр (например, квоту средств чтения) не следует использовать метод без конфигурации, т. е. удалять фабрику узла <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> из файла .svc и создавать запись конфигурации для конечной точки.  
   
- Если службе требуется режим совместимости с ASP.NET (например, если служба использует класс <xref:System.Web.HttpContext> или механизмы авторизации ASP.NET), для включения этого режима все равно понадобится файл конфигурации. Элемент конфигурации требуется [ \<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) элемент, который должен быть добавлен следующим образом.  
+ Если службе требуется режим совместимости с ASP.NET (например, если служба использует класс <xref:System.Web.HttpContext> или механизмы авторизации ASP.NET), для включения этого режима все равно понадобится файл конфигурации. Обязательный элемент конфигурации — это [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md) элемент, который должен быть добавлен следующим образом.  
   
  `<system.serviceModel>`  
   
  `<serviceHostingEnvironment aspNetCompatibilityEnabled="true" /> </system.serviceModel>`  
   
- Для получения дополнительной информации, см [ASP.NET.](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)  
+ Дополнительные сведения см. в разделе [WCF Services and ASP.NET](wcf-services-and-aspnet.md) .  
   
- Класс <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> наследуется от класса <xref:System.ServiceModel.Activation.ServiceHostFactory>. Подробное объяснение механизма завода-хозяина службы можно насайте тему [расширения хостинга с использованием ServiceHostFactory.](../../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md)  
+ Класс <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> наследуется от класса <xref:System.ServiceModel.Activation.ServiceHostFactory>. Подробное описание механизма фабрики узлов служб см. в разделе [расширение размещения с помощью ServiceHostFactory](../extending/extending-hosting-using-servicehostfactory.md) .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Создание служб WCF для ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md)
-- [Практическое руководство. Миграция веб-служб ASP.NET с поддержкой AJAX на платформу WCF](../../../../docs/framework/wcf/feature-details/how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md)
+- [Создание служб WCF для ASP.NET AJAX](creating-wcf-services-for-aspnet-ajax.md)
+- [Практическое руководство. Миграция веб-служб ASP.NET с поддержкой AJAX на платформу WCF](how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md)

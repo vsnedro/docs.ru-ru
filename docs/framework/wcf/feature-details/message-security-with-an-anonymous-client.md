@@ -5,32 +5,32 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
-ms.openlocfilehash: fccdd021e392e6c37615a9091ce13f0e94167246
-ms.sourcegitcommit: 09b4090b78f52fd09b0e430cd4b26576f1fdf96e
+ms.openlocfilehash: 058163c96bba036c3183695bf986b4d0424271ac
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76212008"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595223"
 ---
 # <a name="message-security-with-an-anonymous-client"></a>Безопасность сообщений с анонимным клиентом
 
-В следующем сценарии показан клиент и служба, защищенные с помощью защиты сообщений Windows Communication Foundation (WCF). Задача, поставленная при разработке, заключается в использовании безопасности сообщений, а не безопасности транспорта, чтобы в будущем возможно было использование более глубокой модели, использующей утверждения. Дополнительные сведения об использовании расширенных утверждений для авторизации см. [в статье Управление утверждениями и авторизацией с помощью модели удостоверений](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).
+В следующем сценарии показан клиент и служба, защищенные с помощью защиты сообщений Windows Communication Foundation (WCF). Задача, поставленная при разработке, заключается в использовании безопасности сообщений, а не безопасности транспорта, чтобы в будущем возможно было использование более глубокой модели, использующей утверждения. Дополнительные сведения об использовании расширенных утверждений для авторизации см. [в статье Управление утверждениями и авторизацией с помощью модели удостоверений](managing-claims-and-authorization-with-the-identity-model.md).
 
-Пример приложения см. в разделе [безопасность сообщений анонимно](../../../../docs/framework/wcf/samples/message-security-anonymous.md).
+Пример приложения см. в разделе [безопасность сообщений анонимно](../samples/message-security-anonymous.md).
 
-![Безопасность сообщений с анонимным клиентом](../../../../docs/framework/wcf/feature-details/media/b361a565-831c-4c10-90d7-66d8eeece0a1.gif "b361a565-831c-4c10-90d7-66d8eeece0a1")
+![Безопасность сообщений с анонимным клиентом](media/b361a565-831c-4c10-90d7-66d8eeece0a1.gif "b361a565-831c-4c10-90d7-66d8eeece0a1")
 
 |Характеристика|Описание|
 |--------------------|-----------------|
-|Режим безопасности|Message|
+|Режим безопасности|Сообщение|
 |Взаимодействие|Только WCF|
 |Проверка подлинности (сервера)|Первоначальное согласование возможно только после проверки подлинности сервера, но не клиента|
 |Проверка подлинности (клиента)|Нет|
 |Целостность|Да, используется общий контекст безопасности|
 |Конфиденциальность|Да, используется общий контекст безопасности|
-|Transport|HTTP|
+|Транспорт|HTTP|
 
-## <a name="service"></a>Service
+## <a name="service"></a>Служба
 
 Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.
 
@@ -94,7 +94,7 @@ ms.locfileid: "76212008"
 
 - Создайте автономный клиент, используя код (и код клиента).
 
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Например:
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.
 
     [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
     [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]
@@ -138,10 +138,10 @@ ms.locfileid: "76212008"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения о безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Защита распределенных приложений](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)
-- [Безопасность сообщений с возможностью анонимного доступа](../../../../docs/framework/wcf/samples/message-security-anonymous.md)
-- [Идентификация и проверка подлинности службы](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Обзор безопасности](security-overview.md)
+- [Защита распределенных приложений](distributed-application-security.md)
+- [Безопасность сообщений с возможностью анонимного доступа](../samples/message-security-anonymous.md)
+- [Идентификация и проверка подлинности службы](service-identity-and-authentication.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
