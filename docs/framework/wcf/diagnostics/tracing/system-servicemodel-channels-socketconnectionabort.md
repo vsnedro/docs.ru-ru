@@ -2,21 +2,21 @@
 title: System.ServiceModel.Channels.SocketConnectionAbort
 ms.date: 03/30/2017
 ms.assetid: 5e1a7716-b23a-46c5-952a-19c53b447a71
-ms.openlocfilehash: ad4d07f6a3abe9582bfcadb6e65f3962cff78705
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 494a89ebc24403841ec25eb28fc5ab9f26b9a65f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61767338"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84593923"
 ---
-# <a name="systemservicemodelchannelssocketconnectionabort"></a><span data-ttu-id="b37d9-102">System.ServiceModel.Channels.SocketConnectionAbort</span><span class="sxs-lookup"><span data-stu-id="b37d9-102">System.ServiceModel.Channels.SocketConnectionAbort</span></span>
-<span data-ttu-id="b37d9-103">System.ServiceModel.Channels.SocketConnectionAbort</span><span class="sxs-lookup"><span data-stu-id="b37d9-103">System.ServiceModel.Channels.SocketConnectionAbort</span></span>  
+# <a name="systemservicemodelchannelssocketconnectionabort"></a><span data-ttu-id="e9545-102">System.ServiceModel.Channels.SocketConnectionAbort</span><span class="sxs-lookup"><span data-stu-id="e9545-102">System.ServiceModel.Channels.SocketConnectionAbort</span></span>
+<span data-ttu-id="e9545-103">System.ServiceModel.Channels.SocketConnectionAbort</span><span class="sxs-lookup"><span data-stu-id="e9545-103">System.ServiceModel.Channels.SocketConnectionAbort</span></span>  
   
-## <a name="description"></a><span data-ttu-id="b37d9-104">Описание</span><span class="sxs-lookup"><span data-stu-id="b37d9-104">Description</span></span>  
- <span data-ttu-id="b37d9-105">Прервано подключение SocketConnection.</span><span class="sxs-lookup"><span data-stu-id="b37d9-105">SocketConnection aborted.</span></span>  
+## <a name="description"></a><span data-ttu-id="e9545-104">Описание</span><span class="sxs-lookup"><span data-stu-id="e9545-104">Description</span></span>  
+ <span data-ttu-id="e9545-105">Прервано подключение SocketConnection.</span><span class="sxs-lookup"><span data-stu-id="e9545-105">SocketConnection aborted.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="b37d9-106">См. также</span><span class="sxs-lookup"><span data-stu-id="b37d9-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e9545-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="e9545-106">See also</span></span>
 
-- [<span data-ttu-id="b37d9-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="b37d9-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="b37d9-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="b37d9-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="b37d9-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="b37d9-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="e9545-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="e9545-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="e9545-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="e9545-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="e9545-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="e9545-109">Administration and Diagnostics</span></span>](../index.md)
