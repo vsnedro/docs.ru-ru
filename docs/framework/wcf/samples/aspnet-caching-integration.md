@@ -2,18 +2,18 @@
 title: Интеграция кэширования ASP.NET
 ms.date: 03/30/2017
 ms.assetid: f581923a-8a72-42fc-bd6a-46de2aaeecc1
-ms.openlocfilehash: 23c10e56dba7daec2d1027de92e8252c8fe69055
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: c541f3caad8a500b9fdb33d00b58706bac876e37
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74716174"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594755"
 ---
 # <a name="aspnet-caching-integration"></a>Интеграция кэширования ASP.NET
 
 В этом образце демонстрируется использование выходного кэша ASP.NET в модели веб-программирования WCF HTTP . В этом разделе основное внимание уделено возможности интеграции выходного кэша ASP.NET.
 
-## <a name="demonstrates"></a>Демонстрации
+## <a name="demonstrates"></a>Что демонстрирует
 
 Интеграция с выходным кэшем ASP.NET
 
@@ -22,7 +22,7 @@ ms.locfileid: "74716174"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\AspNetCachingIntegration`
 
@@ -30,9 +30,9 @@ ms.locfileid: "74716174"
 
 В примере используется <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> для использования кэширования выходных данных ASP.NET со службой Windows Communication Foundation (WCF). Атрибут <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> применяется к операциям службы и предоставляет имя профиля кэша для файла конфигурации, который будет использован для ответов из заданной операции.
 
-В файле Service.cs примера проекта службы операции `GetCustomer` и `GetCustomers` помечаются <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>, который предоставляет имя профиля кэша "CacheFor60Seconds". В файле Web. config проекта службы профиль кэша "CacheFor60Seconds" предоставляется в элементе <`caching`> <`system.web`>. Для этого профиля кэша значением атрибута `duration` является "60", поэтому ответы, связанные с этим профилем, кэшируются в кэше вывода ASP.NET в течение 60 секунд. Кроме того, для этого профиля кэша атрибуту `varmByParam` присваивается значение "Format", чтобы запросы с разными значениями для параметра строки запроса `format` были кэшированы отдельно. Наконец, атрибуту `varyByHeader` профиля кэша присваивается значение Accept, поэтому ответы на запросы с разными значениями заголовков Accept кэшируются отдельно.
+В файле Service.cs примера проекта службы обе `GetCustomer` `GetCustomers` операции и помечаются атрибутом <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> , который предоставляет имя профиля кэша "CacheFor60Seconds". В файле Web. config проекта службы профиль кэша "CacheFor60Seconds" предоставляется в `caching` элементе < > < `system.web` >. Для этого профиля кэша значение `duration` атрибута равно "60", поэтому ответы, связанные с этим профилем, кэшируются в кэше вывода ASP.NET в течение 60 секунд. Кроме того, для этого профиля кэша `varmByParam` атрибуту присвоено значение "Format", чтобы запросы с разными значениями для `format` параметра строки запроса были кэшированы отдельно. Наконец, атрибут профиля кэша `varyByHeader` имеет значение Accept, поэтому ответы на запросы с разными значениями заголовков Accept кэшируются отдельно.
 
-В файле Program.cs из проекта «Клиент» показывается, как можно разработать клиент с помощью <xref:System.Net.HttpWebRequest>. Заметьте, что это лишь один из способов доступа к WCF-службе. Доступ к службе также можно получить с помощью других классов .NET Framework, таких как фабрика каналов WCF и <xref:System.Net.WebClient>. Другие примеры в пакете SDK (например, образец [службы HTTP Basic](../../../../docs/framework/wcf/samples/basic-http-service.md) ) иллюстрируют использование этих классов для взаимодействия со службой WCF.
+В файле Program.cs из проекта «Клиент» показывается, как можно разработать клиент с помощью <xref:System.Net.HttpWebRequest>. Заметьте, что это лишь один из способов доступа к WCF-службе. Доступ к службе также можно получить с помощью других классов .NET Framework, таких как фабрика каналов WCF и <xref:System.Net.WebClient> . Другие примеры в пакете SDK (например, образец [службы HTTP Basic](basic-http-service.md) ) иллюстрируют использование этих классов для взаимодействия со службой WCF.
 
 ## <a name="to-run-the-sample"></a>Выполнение образца
 

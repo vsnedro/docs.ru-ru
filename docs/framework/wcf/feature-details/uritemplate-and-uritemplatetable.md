@@ -2,12 +2,12 @@
 title: UriTemplate и UriTemplateTable
 ms.date: 03/30/2017
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
-ms.openlocfilehash: 2742217cb082f5c0354510a7e66818bafd6f1393
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 106ba21b58dabab96afbc8fb6db5cb305386f2fe
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144699"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595080"
 ---
 # <a name="uritemplate-and-uritemplatetable"></a>UriTemplate и UriTemplateTable
 Веб-разработчикам необходима возможность описания формы и структуры универсальных кодов ресурса (URI), на которые отвечают их службы. Windows Communication Foundation (WCF) добавил два новых класса, которые позволяют разработчикам управлять своими URI. <xref:System.UriTemplate>и <xref:System.UriTemplateTable> формируют основание механизма диспетчеризации на основе URI в WCF. Эти классы также можно использовать самостоятельно, что позволяет разработчикам использовать шаблоны и механизм сопоставления URI без реализации службы WCF.  
@@ -324,10 +324,10 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 > [!NOTE]
 > Символы б и б считаются разными символами, если они отображаются как часть пути URI или <xref:System.UriTemplate> литерала сегмента пути (но символы a и a считаются одинаковыми). Символы б и б считаются одними и теми же символами, когда они появляются как часть <xref:System.UriTemplate> {variablename} или строка запроса (а и, а также считаются одинаковыми символами).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения о модели программирования WCF Web HTTP](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
-- [Объектная модель программирования WCF Web HTTP](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
-- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)
-- [Таблица UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)
-- [Диспетчер таблицы UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)
+- [Общие сведения о модели программирования WCF Web HTTP](wcf-web-http-programming-model-overview.md)
+- [Объектная модель программирования WCF Web HTTP](wcf-web-http-programming-object-model.md)
+- [UriTemplate](../samples/uritemplate-sample.md)
+- [Таблица UriTemplate](../samples/uritemplate-table-sample.md)
+- [Диспетчер таблицы UriTemplate](../samples/uritemplate-table-dispatcher-sample.md)
