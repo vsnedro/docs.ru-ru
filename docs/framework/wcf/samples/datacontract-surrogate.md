@@ -2,15 +2,15 @@
 title: Суррогат DataContract
 ms.date: 03/30/2017
 ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
-ms.openlocfilehash: 7ef78c4361c055d7be35c03a3c8717e86aceddab
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9677e3cf024e6c1e5b2f3360423ab55536748495
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183833"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600053"
 ---
 # <a name="datacontract-surrogate"></a>Суррогат DataContract
-В этом образце показано, каким образом такие процессы, как сериализация, десериализация, экспорт и импорт схемы, могут быть настроены при помощи заменяющего класса контракта данных. В этом примере показано, как использовать суррогат в сценарии клиента и сервера, где данные сериализируются и передаются между клиентом и службой Windows Communication Foundation (WCF).  
+В этом образце показано, каким образом такие процессы, как сериализация, десериализация, экспорт и импорт схемы, могут быть настроены при помощи заменяющего класса контракта данных. В этом примере показано, как использовать суррогат в сценарии клиента и сервера, в котором данные сериализуются и передаются между клиентом Windows Communication Foundation (WCF) и службой.  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
@@ -220,7 +220,7 @@ private static void ApplyDataContractSurrogate(OperationDescription description)
   
  Чтобы подключить заменяющий класс для использования при создании метаданных, необходимо выполнить дополнительные действия. Одним из механизмов реализации этого является предоставление расширения `IWsdlExportExtension`, как показано в этом образце. Еще одним способом является непосредственное изменение `WsdlExporter`.  
   
- Атрибут `AllowNonSerializableTypesAttribute` реализует `IWsdlExportExtension` и `IContractBehavior`. Расширение может быть `IContractBehavior` как `IEndpointBehavior` в этом случае, так и в этом случае. Реализация метода `IWsdlExportExtension.ExportContract` включает заменяющий класс путем его добавления в `XsdDataContractExporter`, используемый во время создания схемы для DataContract. В следующем фрагменте кода показано, как это сделать.  
+ `AllowNonSerializableTypesAttribute`Атрибут реализует `IWsdlExportExtension` и `IContractBehavior` . В этом случае расширение может быть `IContractBehavior` либо `IEndpointBehavior` . Реализация метода `IWsdlExportExtension.ExportContract` включает заменяющий класс путем его добавления в `XsdDataContractExporter`, используемый во время создания схемы для DataContract. В следующем фрагменте кода показано, как это сделать.  
   
 ```csharp
 public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext context)  
@@ -247,24 +247,24 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
 }  
 ```  
   
- При выполнении образца клиент вызывает операцию AddEmployee после вызова операции GetEmployee, чтобы проверить, выполнен ли первый вызов успешно. Результат запроса операции GetEmployee отображается в окне консоли клиента. Операция GetEmployee должна преуспеть в поиске сотрудника и печати "найденного".  
+ При выполнении образца клиент вызывает операцию AddEmployee после вызова операции GetEmployee, чтобы проверить, выполнен ли первый вызов успешно. Результат запроса операции GetEmployee отображается в окне консоли клиента. Операция сотрудника должна пройти, чтобы найти сотрудника и напечатать "Found".  
   
 > [!NOTE]
-> В этом примере показано, как подключить заменяющий класс для сериализации, десериализации и создания метаданных. В нем не показано, как подключить заменяющий класс для создания кода из метаданных. Чтобы увидеть пример того, как суррогат может быть использован для подключения к генерации кода клиента, [см.](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)  
+> В этом примере показано, как подключить заменяющий класс для сериализации, десериализации и создания метаданных. В нем не показано, как подключить заменяющий класс для создания кода из метаданных. Чтобы увидеть пример того, как суррогат можно использовать для подключения к созданию клиентского кода, см. пример [пользовательской публикации WSDL](custom-wsdl-publication.md) .  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения для C', следуйте инструкциям по [созданию образцов Фонда коммуникаций Windows.](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+2. Чтобы построить выпуск решения на C#, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
-3. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\DataContract`  

@@ -7,15 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], auditing events
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
-ms.openlocfilehash: 62d26b24b5d46427c1871fccf48b063c45781beb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 186dd4a7fc2beae848e5cbd167a204352ee6ed4e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185114"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84601300"
 ---
 # <a name="how-to-audit-windows-communication-foundation-security-events"></a>Практическое руководство. Аудит событий безопасности Windows Communication Foundation
-Фонд связи Windows (WCF) позволяет регистрировать события безопасности в журнале событий Windows, который можно просматривать с помощью Windows Event Viewer. В этом разделе описано, как настроить приложение, чтобы события безопасности регистрировались в журнале. Для получения дополнительной информации о [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)аудите WCF см.  
+Windows Communication Foundation (WCF) позволяет регистрировать события безопасности в журнале событий Windows, который можно просмотреть с помощью Просмотр событий Windows. В этом разделе описано, как настроить приложение, чтобы события безопасности регистрировались в журнале. Дополнительные сведения об аудите WCF см. в разделе [Audit](auditing-security-events.md).  
   
 ### <a name="to-audit-security-events-in-code"></a>Аудит событий безопасности в коде  
   
@@ -24,7 +24,7 @@ ms.locfileid: "79185114"
      [!code-csharp[AuditingSecurityEvents#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#2)]
      [!code-vb[AuditingSecurityEvents#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#2)]  
   
-     Перечисление <xref:System.ServiceModel.AuditLogLocation> имеет три значения: `Application` `Security`, `Default`или . Эти значения определяют один журналов, доступных в средстве "Просмотр событий" - журнал безопасности или журнал приложения. Если установлено значение `Default`, выбор журнала будет зависеть от параметров операционной системы, в которой выполняется приложение. Если аудит включен, а расположение журнала аудита не задано, по умолчанию для платформ, поддерживающих ведение журнала безопасности, используется значение `Security`; в противном случае используется значение `Application`. Только Windows Server 2003 и Windows Vista поддерживают запись в журнал безопасности по умолчанию.  
+     <xref:System.ServiceModel.AuditLogLocation>Перечисление имеет три значения: `Application` , `Security` или `Default` . Эти значения определяют один журналов, доступных в средстве "Просмотр событий" - журнал безопасности или журнал приложения. Если установлено значение `Default`, выбор журнала будет зависеть от параметров операционной системы, в которой выполняется приложение. Если аудит включен, а расположение журнала аудита не задано, по умолчанию для платформ, поддерживающих ведение журнала безопасности, используется значение `Security`; в противном случае используется значение `Application`. Только Windows Server 2003 и Windows Vista поддерживают запись в журнал безопасности по умолчанию.  
   
 2. Настройте типы событий для аудита. Возможен одновременный аудит событий уровня службы и событий авторизации уровня сообщений. Для этого присвойте свойству <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A> или свойству <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A> одно из значений перечисления <xref:System.ServiceModel.AuditLevel>, как показано в следующем примере кода.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "79185114"
   
 ### <a name="to-set-up-auditing-in-configuration"></a>Настройка аудита в файле конфигурации  
   
-1. Чтобы настроить аудит в конфигурации, добавьте [ \<элемент поведения>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) в [ \<>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) раздела web.config. Затем добавьте [ \<>элемент serviceSecurityAudit](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) и установите различные атрибуты, как показано в следующем примере.  
+1. Чтобы настроить аудит в конфигурации, добавьте [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) элемент в [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) раздел файла Web. config. Затем добавьте [\<serviceSecurityAudit>](../../configure-apps/file-schema/wcf/servicesecurityaudit.md) элемент и задайте различные атрибуты, как показано в следующем примере.  
   
     ```xml  
     <behaviors>  
@@ -79,17 +79,17 @@ ms.locfileid: "79185114"
  [!code-vb[AuditingSecurityEvents#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#1)]  
   
 ## <a name="net-framework-security"></a>Безопасность .NET Framework  
- Если для свойства <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> задать значение `true`, все неудачные попытки создания аудита безопасности будут подавляться (если задано значение `false`, будет создаваться исключение). Однако при впуске следующего свойства **локальной настройки безопасности** Windows сбой в генерации событий аудита приведет к немедленному отключению Windows:  
+ Если для свойства <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> задать значение `true`, все неудачные попытки создания аудита безопасности будут подавляться (если задано значение `false`, будет создаваться исключение). Однако если включить следующее свойство **локального параметра безопасности** Windows, ошибка создания событий аудита приведет к немедленному завершению работы Windows:  
   
  **Аудит: немедленное отключение системы, если невозможно внести в журнал записи об аудите безопасности.**  
   
- Чтобы установить свойство, откройте поле для диалога **«Настройки безопасности».** В **настройках безопасности**нажмите **локальные политики.** Затем нажмите **Параметры безопасности**.  
+ Чтобы задать свойство, откройте диалоговое окно **локальные параметры безопасности** . В разделе **Параметры безопасности**щелкните **Локальные политики**. Затем щелкните **Параметры безопасности**.  
   
- Если <xref:System.ServiceModel.AuditLogLocation> свойство настроено на <xref:System.ServiceModel.AuditLogLocation.Security> объект и **доступ к объекту аудита** не установлен в **локальной политике безопасности,** события аудита не будут записаны в журнал безопасности. Обратите внимание, что ошибка не возвращается, а события аудита не регистрируются в журнале безопасности.  
+ Если <xref:System.ServiceModel.AuditLogLocation> свойство имеет значение <xref:System.ServiceModel.AuditLogLocation.Security> и **Аудит доступа к объектам** не задан в **локальной политике безопасности**, события аудита не будут записываться в журнал безопасности. Обратите внимание, что ошибка не возвращается, а события аудита не регистрируются в журнале безопасности.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>
-- [Аудита](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [Аудит](auditing-security-events.md)

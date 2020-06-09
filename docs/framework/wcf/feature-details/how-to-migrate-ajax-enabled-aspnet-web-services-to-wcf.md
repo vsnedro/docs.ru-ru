@@ -2,12 +2,12 @@
 title: Практическое руководство. Миграция веб-служб ASP.NET с поддержкой AJAX на платформу WCF
 ms.date: 03/30/2017
 ms.assetid: 1428df4d-b18f-4e6d-bd4d-79ab3dd5147c
-ms.openlocfilehash: 60e3088b9075464176c328af1f52676a69c4990f
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 6f356f47922945218e02271371d9ddea36ecc5a2
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73976133"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84597011"
 ---
 # <a name="how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf"></a>Практическое руководство. Миграция веб-служб ASP.NET с поддержкой AJAX на платформу WCF
 В этом разделе описаны процедуры переноса базовой службы ASP.NET AJAX в эквивалентную службу Windows Communication Foundation (WCF) с поддержкой AJAX. Здесь показано, как создать функционально эквивалентную версию WCF службы ASP.NET AJAX. Затем две службы можно использовать параллельно, или службу WCF можно использовать для замены службы ASP.NET AJAX.
@@ -22,7 +22,7 @@ ms.locfileid: "73976133"
 
  Код, получаемый в результате применения описанных в этом разделе процедур, приведен в примере после процедур.
 
- Дополнительные сведения о предоставлении службы WCF через конечную точку с поддержкой AJAX см. в разделе [Использование конфигурации для добавления конечной точки ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md) .
+ Дополнительные сведения о предоставлении службы WCF через конечную точку с поддержкой AJAX см. в разделе [Использование конфигурации для добавления конечной точки ASP.NET AJAX](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md) .
 
 ### <a name="to-create-and-test-the-aspnet-web-service-application"></a>Создание и тестирование приложения веб-службы ASP.NET
 
@@ -40,7 +40,7 @@ ms.locfileid: "73976133"
 
 7. На созданной веб-странице выберите операцию `HelloWorld`.
 
-8. Нажмите кнопку **Invoke (вызвать** ) на странице теста `HelloWorld`. Должен появиться следующий XML-ответ.
+8. Нажмите кнопку **Invoke (вызвать** ) на `HelloWorld` странице тест. Должен появиться следующий XML-ответ.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -59,7 +59,7 @@ ms.locfileid: "73976133"
 
 3. Откройте файл WCFHello.svc.cs.
 
-4. В Service1.asmx.cs скопируйте следующую реализацию операции `HelloWorld`.
+4. В Service1.asmx.cs скопируйте следующую реализацию `HelloWorld` операции.
 
     ```csharp
     public string HelloWorld()
@@ -68,7 +68,7 @@ ms.locfileid: "73976133"
     }
     ```
 
-5. Вставьте скопированную реализацию `HelloWorld` операции в файл WCFHello.svc.cs вместо следующего кода.
+5. Вставьте скопированную реализацию операции в `HelloWorld` файл WCFHello.svc.CS вместо следующего кода.
 
     ```csharp
     public void DoWork()
@@ -78,7 +78,7 @@ ms.locfileid: "73976133"
     }
     ```
 
-6. Укажите `Namespace` атрибут <xref:System.ServiceModel.ServiceContractAttribute> как `WCFHello`.
+6. Укажите `Namespace` атрибут для <xref:System.ServiceModel.ServiceContractAttribute> As `WCFHello` .
 
     ```csharp
     [ServiceContract(Namespace="WCFHello")]
@@ -87,7 +87,7 @@ ms.locfileid: "73976133"
     { … }
     ```
 
-7. Добавьте <xref:System.ServiceModel.Web.WebInvokeAttribute> в `HelloWorld` операцию и присвойте свойству <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> значение, возвращающее <xref:System.ServiceModel.Web.WebMessageFormat.Xml>. Обратите внимание, что если это свойство не задано, будет возвращаться тип <xref:System.ServiceModel.Web.WebMessageFormat.Json>.
+7. Добавьте в <xref:System.ServiceModel.Web.WebInvokeAttribute> `HelloWorld` операцию и присвойте <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> свойству значение Return <xref:System.ServiceModel.Web.WebMessageFormat.Xml> . Обратите внимание, что если это свойство не задано, будет возвращаться тип <xref:System.ServiceModel.Web.WebMessageFormat.Json>.
 
     ```csharp
     [OperationContract]
@@ -102,13 +102,13 @@ ms.locfileid: "73976133"
 
 9. Откройте файл Вкфхелло. svc и в меню **Отладка** выберите **Запуск без отладки**.
 
-10. Теперь служба предоставляет конечную точку на `WCFHello.svc/HelloWorld`, которая реагирует на HTTP-запросы POST. Запросы HTTP POST невозможно тестировать с помощью браузера, но конечная точка возвращает следующий XML-код.
+10. Теперь служба предоставляет конечную точку в `WCFHello.svc/HelloWorld` , которая реагирует на HTTP-запросы POST. Запросы HTTP POST невозможно тестировать с помощью браузера, но конечная точка возвращает следующий XML-код.
 
     ```xml
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">Hello World</string>
     ```
 
-11. `WCFHello.svc/HelloWorld` и конечные точки `Service1.aspx/HelloWorld` теперь функционально эквивалентны.
+11. `WCFHello.svc/HelloWorld` `Service1.aspx/HelloWorld` Конечные точки и теперь функционально эквивалентны.
 
 ## <a name="example"></a>Пример
  Код, получаемый в результате применения описанных в этом разделе процедур, приведен в следующем примере.
@@ -179,9 +179,9 @@ namespace ASPHello
 
  Если веб-службы ASMX обновляются и мигрируют параллельно службам WCF, Избегайте сопоставления двух типов с одним и тем же именем на клиенте. Это приведет к исключению при сериализации, если в атрибутах <xref:System.Web.Services.WebMethodAttribute> и <xref:System.ServiceModel.ServiceContractAttribute> будет использоваться один и тот же тип:
 
-- Если сначала добавляется служба WCF, вызов метода в веб-службе ASMX приводит к возникновению исключения в <xref:System.Web.UI.ObjectConverter.ConvertValue%28System.Object%2CSystem.Type%2CSystem.String%29>, так как определение стиля WCF для порядка в прокси-сервере имеет приоритет.
+- Если сначала добавляется служба WCF, то вызов метода в веб-службе ASMX приводит к возникновению исключения в <xref:System.Web.UI.ObjectConverter.ConvertValue%28System.Object%2CSystem.Type%2CSystem.String%29> , так как определение стиля для порядка в прокси-сервере имеет стиль WCF.
 
-- Если сначала добавляется веб-служба ASMX, вызов метода в службе WCF вызывает исключение в <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, так как определение стиля веб-службы для порядка в прокси-сервере имеет приоритет.
+- Если сначала добавляется веб-служба ASMX, вызов метода в службе WCF приводит к возникновению исключения в <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> , поскольку определение стиля веб-службы для порядка в прокси-сервере имеет приоритет.
 
  Имеются важные различия в работе класса <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> и класса <xref:System.Web.Script.Serialization.JavaScriptSerializer> AJAX ASP.NET. Например, класс <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> представляет словарь в виде массива пар "ключ-значение", а класс <xref:System.Web.Script.Serialization.JavaScriptSerializer> AJAX ASP.NET представляет словарь в виде фактических объектов JSON. Ниже представлен словарь в формате AJAX ASP.NET.
 
@@ -195,7 +195,7 @@ d.Add("two", 2);
 
 - [{"Key":"one","Value":1},{"Key":"two","Value":2}] - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
 
-- {"One": 1, "два": 2} ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>
+- {"One": 1, "два": 2} с помощью ASP.NET AJAX<xref:System.Web.Script.Serialization.JavaScriptSerializer>
 
  Класс <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> обладает более широкими возможностями в том смысле, что он может обрабатываться словари, где тип ключа не является строковым; класс <xref:System.Web.Script.Serialization.JavaScriptSerializer> не поддерживает такой возможности. Однако последний класс лучше работает с форматом JSON.
 
@@ -204,14 +204,14 @@ d.Add("two", 2);
 |Категория различий|DataContractJsonSerializer|JavaScriptSerializer AJAX ASP.NET|
 |-----------------------------|--------------------------------|---------------------------------------|
 |Десериализация пустого буфера (new byte[0]) в <xref:System.Object> (или <xref:System.Uri>, или некоторые другие классы).|SerializationException|null|
-|Сериализация <xref:System.DBNull.Value>|{} (или {"__type": "#System"})|Null|
+|Сериализация <xref:System.DBNull.Value>|{}(или {"__type": "#System"})|Null|
 |Сериализация закрытых членов типов [Serializable]|Сериализуются|Не сериализуются|
 |Сериализация открытых свойств типов <xref:System.Runtime.Serialization.ISerializable>|Не сериализуются|Сериализуются|
 |Расширения JSON|Удовлетворяет спецификации JSON, которая требует заключать имена членов объектов в кавычки ({"a":"hello"}).|Поддерживает имена членов объектов без кавычек ({a:"hello"}).|
-|Время в формате UTC (<xref:System.DateTime>)|Не поддерживает формат "\\/дате (123456789U)\\/" или "\\/дате\\(\d + (U&#124;(\\+\\-[\d{4}]))?\\)\\\\/) ".|Поддерживает формат "\\/дате (123456789U)\\/" and "\\/дате\\(\d + (U&#124;(\\+\\-[\d{4}]))?\\)\\\\/) "как значения DateTime.|
-|Представление словарей|Массив KeyValuePair\<K, V >, обрабатывает типы ключей, которые не являются строками.|Фактические объекты JSON, но обрабатывает только ключи строковых типов|
+|Время в формате UTC (<xref:System.DateTime>)|Не поддерживает формат " \\ /дате (123456789U) \\ /" или " \\ /дате \\ (\d + (U&#124; ( \\ + \\ -[\d {4} ]))? \\ ) \\ \\ /)".|Поддерживает формат " \\ /дате (123456789U) \\ /" и " \\ /дате \\ (\d + (U&#124; ( \\ + \\ -[\d {4} ]))? \\ ) \\ \\ /) "как значения DateTime.|
+|Представление словарей|Массив KeyValuePair \<K,V> обрабатывает типы ключей, которые не являются строками.|Фактические объекты JSON, но обрабатывает только ключи строковых типов|
 |Escape-символы|Всегда с escape-символом прямой косой черты (/); нельзя использовать недопустимые символы JSON без escape-символа, например "\n"|Значения DateTime с escape-символом прямой косой черты (/)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Практическое руководство. Использование конфигурации для добавления конечной точки ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
+- [Практическое руководство. Использование конфигурации для добавления конечной точки ASP.NET AJAX](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)

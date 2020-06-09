@@ -2,12 +2,12 @@
 title: Проверяющий элемент управления для имен пользователей и паролей
 ms.date: 03/30/2017
 ms.assetid: 42f03841-286b-42d8-ba58-18c75422bc8e
-ms.openlocfilehash: e66188cfe1874c4d4097f3f842fd19cfdd4c79f1
-ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
+ms.openlocfilehash: 5fbca30ef2dff0aebc13bda12c06adfd1989ea20
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82141278"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596517"
 ---
 # <a name="user-name-password-validator"></a>Проверяющий элемент управления для имен пользователей и паролей
 В этом образце показано, как реализовать пользовательский проверяющий элемент управления UserNamePassword. Это бывает полезно в случаях, когда ни один из встроенных режимов проверки имени пользователя и пароля не соответствует требования приложениям, например, когда пары "имя пользователя-пароль" хранятся во внешнем хранилище, например в базе данных. В этом образце показана служба, имеющая пользовательский проверяющий элемент управления, который проверяет две конкретных пары "имя пользователя-пароль". Клиент использует такие пары "имя пользователя-пароль" для проверки подлинности у службы.
@@ -17,7 +17,7 @@ ms.locfileid: "82141278"
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) [!INCLUDE[wf1](../../../../includes/wf1-md.md)] и примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\UserNamePasswordValidator`  
   
@@ -32,7 +32,7 @@ ms.locfileid: "82141278"
 
 - Сервер проходит проверку подлинности с использованием сертификата X.509 сервера.
 
- Служба предоставляет одну конечную точку для взаимодействия с нею; она определена в файле конфигурации App.config. Конечная точка состоит из адреса, привязки и контракта. Привязка настроена со стандартом `wsHttpBinding` , который по умолчанию использует WS-Security и проверку подлинности имени пользователя. В поведении службы задается режим `Custom` проверки пар "имя пользователя-пароль" клиента, а также тип класса проверяющего элемента управления. Коме того, поведение с помощью элемента `serviceCertificate` задает сертификат сервера. Сертификат сервера должен содержать то же значение, `SubjectName` что и `findValue` в [ \<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
+ Служба предоставляет одну конечную точку для взаимодействия с нею; она определена в файле конфигурации App.config. Конечная точка состоит из адреса, привязки и контракта. Привязка настроена со стандартом `wsHttpBinding` , который по умолчанию использует WS-Security и проверку подлинности имени пользователя. В поведении службы задается режим `Custom` проверки пар "имя пользователя-пароль" клиента, а также тип класса проверяющего элемента управления. Коме того, поведение с помощью элемента `serviceCertificate` задает сертификат сервера. Сертификат сервера должен содержать то же значение, `SubjectName` что и `findValue` в [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) .
 
 ```xml
 <system.serviceModel>
@@ -279,7 +279,7 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
 
 #### <a name="to-set-up-and-build-the-sample"></a>Настройка и сборка образца
 
-1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).
+1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).
 
 2. Чтобы выполнить образец на одном или нескольких компьютерах, выполните следующие инструкции.
 

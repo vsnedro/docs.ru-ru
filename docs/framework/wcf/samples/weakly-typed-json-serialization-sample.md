@@ -2,17 +2,17 @@
 title: Пример сериализации слабо типизированных данных JSON
 ms.date: 03/30/2017
 ms.assetid: 0b30e501-4ef5-474d-9fad-a9d559cf9c52
-ms.openlocfilehash: bdeaffe31ba9bced28eebcfe294fc9944e5d05d0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a503878f1cbb60090b648da8dfec741edbf02d1b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79143594"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602327"
 ---
 # <a name="weakly-typed-json-serialization-sample"></a>Пример сериализации слабо типизированных данных JSON
-При сериализации пользовательского типа в заданный формат передачи или при десериализации формата передачи в пользовательский тип заданный пользовательский тип должен быть доступен как службе, так и клиенту. Обычно для этого к пользовательским типам применяется атрибут <xref:System.Runtime.Serialization.DataContractAttribute> , а к их членам применяется атрибут <xref:System.Runtime.Serialization.DataMemberAttribute> . Этот механизм также применим при работе с объектами JSON, как описано в разделе [How to: Serialize and Deserialize JSON Data](../../../../docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md).  
+При сериализации пользовательского типа в заданный формат передачи или при десериализации формата передачи в пользовательский тип заданный пользовательский тип должен быть доступен как службе, так и клиенту. Обычно для этого к пользовательским типам применяется атрибут <xref:System.Runtime.Serialization.DataContractAttribute> , а к их членам применяется атрибут <xref:System.Runtime.Serialization.DataMemberAttribute> . Этот механизм также применим при работе с объектами JSON, как описано в разделе [How to: Serialize and Deserialize JSON Data](../feature-details/how-to-serialize-and-deserialize-json-data.md).  
   
- В некоторых сценариях служба или клиент Фонда связи Windows (WCF) должен получить доступ к объектам JSON, генерируемым службой или клиентом, неподконтрольным разработчику. Поскольку все больше веб-служб публично разоблачают AI JSON, разработчику WCF может стать нецелесообразным создавать локальные типы, определяемые пользователями, для десериализации произвольных объектов JSON. Этот пример обеспечивает механизм, который позволяет разработчикам WCF работать с десериализованными, произвольными объектами JSON, не создавая пользовательские типы. Он называется *слабо типизированной сериализацией* объектов JSON, поскольку тип, в который десериализуется объект JSON, во время компиляции неизвестен.  
+ В некоторых сценариях служба Windows Communication Foundation (WCF) или клиент должны получить доступ к объектам JSON, созданным службой или клиентом, которые выходят за пределы элемента управления разработчика. По мере того, как другие веб-службы предоставляют доступ к API JSON, разработчику WCF может оказаться непрактичным создавать локальные определяемые пользователем типы, в которые десериализовать произвольные объекты JSON. Этот образец предоставляет механизм, позволяющий разработчикам WCF работать с десериализованными произвольными объектами JSON, не создавая определяемые пользователем типы. Он называется *слабо типизированной сериализацией* объектов JSON, поскольку тип, в который десериализуется объект JSON, во время компиляции неизвестен.  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
@@ -23,7 +23,7 @@ ms.locfileid: "79143594"
 {"personal": {"name": "Paul", "age": 23, "height": 1.7, "isSingle": true, "luckyNumbers": [5,17,21]}, "favoriteBands": ["Band ABC", "Band XYZ"]}  
 ```  
   
- Для десеризаниза этого объекта клиент WCF должен реализовать следующие типы, определяемые пользователем.  
+ Для десериализации этого объекта клиент WCF должен реализовать следующие определяемые пользователем типы.  
   
 ```csharp  
 [DataContract]  
@@ -58,7 +58,7 @@ ms.locfileid: "79143594"
   
  Эта задача может быть громоздкой, особенно если клиент должен обрабатывать более одного типа объектов JSON.  
   
- Тип `JsonObject` в этом образце является слабо типизированным представлением объекта JSON. `JsonObject`опирается на естественное отображение между объектами JSON и словарями .NET Framework, а также на картирование между массивами JSON и массивами .NET Framework. В следующем примере кода демонстрируется тип `JsonObject` .  
+ Тип `JsonObject` в этом образце является слабо типизированным представлением объекта JSON. `JsonObject`зависит от естественного сопоставления между объектами JSON и .NET Framework словарями, а также с сопоставлением между массивами JSON и .NET Framework массивами. В следующем примере кода демонстрируется тип `JsonObject` .  
   
 ```csharp  
 // Instantiation of JsonObject json omitted  
@@ -78,7 +78,7 @@ string[] favoriteBands = {
                                     };  
 ```  
   
- Обратите внимание что объекты и массивы JSON можно просматривать без необходимости объявлять их тип во время компиляции. Описание требования к объекту верхнего уровня `["root"]` см. в разделе [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
+ Обратите внимание что объекты и массивы JSON можно просматривать без необходимости объявлять их тип во время компиляции. Описание требования к объекту верхнего уровня `["root"]` см. в разделе [Mapping Between JSON and XML](../feature-details/mapping-between-json-and-xml.md).  
   
 > [!NOTE]
 > Класс `JsonObject` предоставлен исключительно в качестве примера. Он не был тщательно протестирован, и его не следует использовать в рабочей среде. Очевидным недостатком слабо типизированной сериализации JSON является плохая типобезопасность при работе с `JsonObject`.  
@@ -110,7 +110,7 @@ XmlDictionaryReader reader = channel.GetMemberProfile().GetReaderAtBodyContents(
 JsonObject json = new JsonObject(reader);  
 ```  
   
- Конструктор `JsonObject` принимает объект <xref:System.Xml.XmlDictionaryReader>, который получается через метод <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> . Модуль чтения содержит XML-представление сообщения JSON, полученного клиентом. Для получения дополнительной информации смотрите тему [Картирование между JSON и XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
+ Конструктор `JsonObject` принимает объект <xref:System.Xml.XmlDictionaryReader>, который получается через метод <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> . Модуль чтения содержит XML-представление сообщения JSON, полученного клиентом. Дополнительные сведения см. в разделе [сопоставление JSON и XML](../feature-details/mapping-between-json-and-xml.md).  
   
  Программа выдает следующие результаты.  
   
@@ -125,9 +125,9 @@ My favorite bands are Band ABC and Band XYZ.
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Создайте решение WeaklyTypedJson.sln, следуя инструкциям из раздела [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Создайте решение WeaklyTypedJson.sln, следуя инструкциям из раздела [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 3. Запустите решение.  
   
@@ -136,6 +136,6 @@ My favorite bands are Band ABC and Band XYZ.
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\Ajax\WeaklyTypedJson`  

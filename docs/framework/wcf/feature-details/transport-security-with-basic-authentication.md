@@ -5,26 +5,26 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
-ms.openlocfilehash: 1b2b451eb1ea6a1a49ce1ba8cc1edef1fe72d01b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7c83de70e404fe8304bc2e35c1bb5df9e42f95b7
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184356"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84576100"
 ---
 # <a name="transport-security-with-basic-authentication"></a>Безопасность транспорта с обычной проверкой подлинности
-На следующей иллюстрации показана служба и клиент Фонда связи Windows (WCF). Серверу требуется действительный сертификат X.509, который можно использовать для протокола SSL, а клиенты должны доверять сертификату сервера. Кроме того, у веб-службы уже имеется сертификат SSL, который можно использовать. Для получения дополнительной информации о возможности базовой <https://docs.microsoft.com/iis/configuration/system.webserver/security/authentication/basicauthentication>аутентификации на Интернет информационных услуг (IIS), см.  
+На следующем рисунке показана служба Windows Communication Foundation (WCF) и клиент. Серверу требуется действительный сертификат X.509, который можно использовать для протокола SSL, а клиенты должны доверять сертификату сервера. Кроме того, у веб-службы уже имеется сертификат SSL, который можно использовать. Дополнительные сведения о включении обычной проверки подлинности для службы IIS (IIS) см. в разделе <https://docs.microsoft.com/iis/configuration/system.webserver/security/authentication/basicauthentication> .  
   
- ![Скриншот, который показывает транспортную безопасность с базовой аутентификацией.](./media/transport-security-with-basic-authentication/transport-security-basic-authentication.gif)  
+ ![Снимок экрана, показывающий безопасность транспорта с обычной проверкой подлинности.](./media/transport-security-with-basic-authentication/transport-security-basic-authentication.gif)  
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Транспортировка|  
-|Совместимость|С существующими службами и клиентами веб-служб|  
+|Режим безопасности|Транспорт|  
+|Взаимодействие|С существующими службами и клиентами веб-служб|  
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да (по протоколу HTTPS)<br /><br /> Да (по имени/паролю пользователя)|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
-|Транспортировка|HTTPS|  
+|Транспорт|HTTPS|  
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="service"></a>Служба  
@@ -35,7 +35,7 @@ ms.locfileid: "79184356"
 - Создайте службу, используя предоставленную конфигурацию, но не определяйте конечные точки.  
   
 ### <a name="code"></a>Код  
- В следующем примере кода показано, как создавать конечную точку службы, использующую имя и пароль пользователя в домене Windows для безопасности передачи. Обратите внимание, что для проверки подлинности клиента службе требуется сертификат X.509. Для получения дополнительной информации [см. Работа с сертификатами](../../../../docs/framework/wcf/feature-details/working-with-certificates.md) и [как: Нанастройка порта с сертификатом SSL](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
+ В следующем примере кода показано, как создавать конечную точку службы, использующую имя и пароль пользователя в домене Windows для безопасности передачи. Обратите внимание, что для проверки подлинности клиента службе требуется сертификат X.509. Дополнительные сведения см. в статьях [Работа с сертификатами](working-with-certificates.md) и [инструкции. Настройка порта с помощью SSL-сертификата](how-to-configure-a-port-with-an-ssl-certificate.md).  
   
  [!code-csharp[C_SecurityScenarios#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#1)]
  [!code-vb[C_SecurityScenarios#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#1)]  
@@ -69,7 +69,7 @@ ms.locfileid: "79184356"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
   
 ### <a name="code"></a>Код  
  В следующем примере кода демонстрируется код клиента, который содержит имя и пароль пользователя. Обратите внимание, что пользователь должен предоставить действительные имя и пароль пользователя в Windows. В данном разделе не представлен код, возвращающий имя и пароль пользователя. Используйте диалоговое окно или другой интерфейс, чтобы запросить пользователя об этой информации.  
@@ -110,12 +110,12 @@ ms.locfileid: "79184356"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
 - <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
-- [Работа с сертификатами](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [Практическое руководство. Настройка порта с использованием SSL-сертификата](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
-- [Обзор безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [\<клиентАли>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)
+- [Работа с сертификатами](working-with-certificates.md)
+- [Практическое руководство. Настройка порта с использованием SSL-сертификата](how-to-configure-a-port-with-an-ssl-certificate.md)
+- [Обзор безопасности](security-overview.md)
+- [\<clientCredentials>](../../configure-apps/file-schema/wcf/clientcredentials.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

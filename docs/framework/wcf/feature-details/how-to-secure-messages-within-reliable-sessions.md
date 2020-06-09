@@ -2,12 +2,12 @@
 title: Практическое руководство. Защита сообщений с помощью надежных сеансов
 ms.date: 03/30/2017
 ms.assetid: aee33e50-936f-4486-9ca8-c1520c19a62d
-ms.openlocfilehash: edff27fe9649387c1922c34e72ef59d615e52b90
-ms.sourcegitcommit: fbb8a593a511ce667992502a3ce6d8f65c594edf
+ms.openlocfilehash: 306d0f96b5163fe5c24d270b4b9a7c1d3f499e7e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74141665"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596959"
 ---
 # <a name="how-to-secure-messages-within-reliable-sessions"></a>Практическое руководство. Защита сообщений с помощью надежных сеансов
 
@@ -21,34 +21,34 @@ ms.locfileid: "74141665"
 
 1. необходимо задать тип учетных данных клиента, который должен использоваться при проверке подлинности клиента в службе.
 
-В первой задаче важно, чтобы элемент конфигурации конечной точки содержал атрибут `bindingConfiguration`, который ссылается на конфигурацию привязки с именем (в этом примере) `MessageSecurity`. Элемент конфигурации [ **> привязки\<** ](../../configure-apps/file-schema/wcf/bindings.md) затем ссылается на это имя, чтобы включить надежные сеансы, установив атрибут `enabled` элемента [ **\<ReliableSession >** ](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90)) в значение `true`. Можно потребовать гарантии упорядоченной доставки сообщений в ходе надежного сеанса, присвоив атрибуту `ordered` значение `true`.
+В первой задаче важно, чтобы элемент конфигурации конечной точки содержал `bindingConfiguration` атрибут, который ссылается на конфигурацию привязки с именем (в этом примере) `MessageSecurity` . [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md)Элемент Configuration затем ссылается на это имя, чтобы включить надежные сеансы, задав `enabled` атрибуту [**\<reliableSession>**](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90)) элемента значение `true` . Можно потребовать гарантии упорядоченной доставки сообщений в ходе надежного сеанса, присвоив атрибуту `ordered` значение `true`.
 
-Исходный экземпляр примера, на котором основана эта процедура конфигурации, см. в разделе [надежный сеанс WS](../../../../docs/framework/wcf/samples/ws-reliable-session.md).
+Исходный экземпляр примера, на котором основана эта процедура конфигурации, см. в разделе [надежный сеанс WS](../samples/ws-reliable-session.md).
 
-Ключевые элементы второй задачи выполняются путем установки атрибута `mode` элемента **> безопасности\<** , содержащегося в элементе **\<Binding >** клиента и службы для `Message`.
+Ключевые элементы второй задачи выполняются путем установки `mode` атрибута **\<security>** элемента, содержащегося в **\<binding>** элементе клиента и службы, на `Message` .
 
-Ключевые элементы третьей задачи выполняются путем установки атрибута `clientCredentialType` элемента **\<message >** , содержащегося в **\<> безопасности** клиента и службы.
+Наиболее важными элементами третьей задачи является установка `clientCredentialType` атрибута **\<message>** элемента, содержащегося в **\<security>** элементе клиента и службы, в значение `Certificate` .
 
 > [!NOTE]
 > При использовании безопасности сообщений с надежными сеансами надежный обмен сообщениями пытается проверить подлинность клиента, не прошедшего проверку подлинности, до тех пор, пока не будет вызвано исключение при первом сбое.
 
 ### <a name="configure-the-service-with-a-wshttpbinding-to-use-a-reliable-session"></a>Настройка службы с помощью WSHttpBinding для использования надежного сеанса
 
-Эта процедура описана в разделе [как обмениваться сообщениями в надежном сеансе](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-within-a-reliable-session.md).
+Эта процедура описана в разделе [как обмениваться сообщениями в надежном сеансе](how-to-exchange-messages-within-a-reliable-session.md).
 
 ### <a name="configure-the-client-with-a-wshttpbinding-to-use-a-reliable-session"></a>Настройка клиента с помощью WSHttpBinding для использования надежного сеанса
 
-Эта процедура описана в разделе [как обмениваться сообщениями в надежном сеансе](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-within-a-reliable-session.md).
+Эта процедура описана в разделе [как обмениваться сообщениями в надежном сеансе](how-to-exchange-messages-within-a-reliable-session.md).
 
 ### <a name="set-the-mode-and-clientcredentialtype-in-configuration"></a>Установка режима и ClientCredentialType в конфигурации
 
-1. Добавьте соответствующий элемент привязки в [ **\<привязки >** ](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) элемента файла конфигурации. В следующем примере добавляется элемент [ **\<wsHttpBinding >** ](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) .
+1. Добавьте соответствующий элемент привязки в [**\<bindings>**](../../configure-apps/file-schema/wcf/bindings.md) элемент файла конфигурации. В следующем примере добавляется [**\<wsHttpBinding>**](../../configure-apps/file-schema/wcf/wshttpbinding.md) элемент.
 
-1. Добавьте элемент **> binding\<** и задайте для его атрибута `name` соответствующее значение. В примере используется имя `MessageSecurity`.
+1. Добавьте **\<binding>** элемент и присвойте его `name` атрибуту соответствующее значение. В примере используется имя `MessageSecurity` .
 
-1. Добавьте элемент **> безопасности\<** и задайте для атрибута `mode` значение `Message`.
+1. Добавьте **\<security>** элемент и присвойте `mode` атрибуту значение `Message` .
 
-1. В элементе **> безопасности\<** добавьте элемент **\<сообщение >** и задайте для атрибута `clientCredentialType` значение `Certificate`.
+1. В **\<security>** элементе добавьте **\<message>** элемент и присвойте `clientCredentialType` атрибуту значение `Certificate` .
 
 ```xml
 <wsHttpBinding>

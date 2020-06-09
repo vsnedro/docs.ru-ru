@@ -2,15 +2,15 @@
 title: Защита приложений одноранговых каналов
 ms.date: 03/30/2017
 ms.assetid: d4a0311d-3f78-4525-9c4b-5c93c4492f28
-ms.openlocfilehash: 4b52e0476ce6ac54a2e4a3a8cfceb112d662186b
-ms.sourcegitcommit: ffd7dd79468a81bbb0d6449f6d65513e050c04c4
+ms.openlocfilehash: a77449710e9093bc8ea2d5446e6359c26a3d1c1e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65959883"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84589881"
 ---
 # <a name="securing-peer-channel-applications"></a>Защита приложений одноранговых каналов
-Как и другие привязки в разделе WinFX, `NetPeerTcpBinding` включена по умолчанию безопасность и предлагает и безопасности на основе транспорта и сообщений (или оба). В данном разделе обсуждаются два этих типа безопасности. Тип безопасности задается тегом режима безопасности в спецификации привязки (<xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>`Mode`).  
+Как и в случае с другими привязками в WinFX, `NetPeerTcpBinding` безопасность включена по умолчанию и обеспечивает безопасность на основе транспорта и сообщений (или и то, и другое). В данном разделе обсуждаются два этих типа безопасности. Тип безопасности задается тегом режима безопасности в спецификации привязки (<xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>`Mode`).  
   
 ## <a name="transport-based-security"></a>Безопасность на базе транспорта  
  Одноранговый канал поддерживает два типа учетных данных для проверки подлинности, обеспечивающие безопасность транспорта; оба типа требуют настройки свойства `ClientCredentialSettings.Peer` в связанной фабрике каналов `ChannelFactory`.  
@@ -39,9 +39,9 @@ ms.locfileid: "65959883"
  Используйте проверку подлинности сообщения, чтобы проверить, что сообщение было получено из надежного источника и не было подделано во время передачи. Без проверки подлинности сообщения злонамеренному клиенту легко подделать или заменить сообщения в сетке.  
   
 ## <a name="peer-channel-code-examples"></a>Примеры кода одноранговых каналов  
- [Сценарии одноранговых каналов](../../../../docs/framework/wcf/feature-details/peer-channel-scenarios.md)  
+ [Сценарии одноранговых каналов](peer-channel-scenarios.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Безопасность одноранговых каналов](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)
-- [Создание приложения одноранговых каналов](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Безопасность одноранговых каналов](peer-channel-security.md)
+- [Создание приложения одноранговых каналов](building-a-peer-channel-application.md)

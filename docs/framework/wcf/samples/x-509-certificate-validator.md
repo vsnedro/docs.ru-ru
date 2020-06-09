@@ -2,12 +2,12 @@
 title: Проверяющий элемент управления для сертификатов X.509
 ms.date: 03/30/2017
 ms.assetid: 3b042379-02c4-4395-b927-e57c842fd3e0
-ms.openlocfilehash: ba73381bb6211dcbd1ddad1457f9ae8611008d43
-ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
+ms.openlocfilehash: 32d99b93ef014967aa04bc70f73fbd2ebcfe2c60
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82141214"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594833"
 ---
 # <a name="x509-certificate-validator"></a>Проверяющий элемент управления для сертификатов X.509
 
@@ -23,7 +23,7 @@ ms.locfileid: "82141214"
 
 - Сервер проходит проверку подлинности с использованием сертификата X.509 сервера.
 
-Служба предоставляет одну конечную точку для взаимодействия с нею; она определяется в файле конфигурации App.config. Конечная точка состоит из адреса, привязки и контракта. Привязка настроена со стандартом `wsHttpBinding` , который по умолчанию использует `WSSecurity` и проверку подлинности сертификата клиента. В поведении службы задается пользовательский режим проверки сертификатов X.509 клиентов, а также тип класса проверяющего элемента управления. Коме того, поведение с помощью элемента serviceCertificate задает сертификат сервера. Сертификат сервера должен содержать то же значение, `SubjectName` что и `findValue` в [ \<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).
+Служба предоставляет одну конечную точку для взаимодействия с нею; она определяется в файле конфигурации App.config. Конечная точка состоит из адреса, привязки и контракта. Привязка настроена со стандартом `wsHttpBinding` , который по умолчанию использует `WSSecurity` и проверку подлинности сертификата клиента. В поведении службы задается пользовательский режим проверки сертификатов X.509 клиентов, а также тип класса проверяющего элемента управления. Коме того, поведение с помощью элемента serviceCertificate задает сертификат сервера. Сертификат сервера должен содержать то же значение, `SubjectName` что и `findValue` в [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) .
 
 ```xml
   <system.serviceModel>
@@ -305,7 +305,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 
 #### <a name="to-set-up-and-build-the-sample"></a>Настройка и сборка образца
 
-1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).
+1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).
 
 2. Чтобы запустить образец на одном или нескольких компьютерах, следуйте приведенным далее инструкциям.
 
@@ -332,9 +332,9 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 
 4. Скопируйте в клиентский каталог на клиентском компьютере файлы программы клиента. Кроме того, скопируйте на клиент файлы Setup.bat, Cleanup.bat и ImportServiceCert.bat.
 
-5. На сервере запустите `setup.bat service` в Командная строка разработчика для Visual Studio, открытой с правами администратора. При `setup.bat` запуске с `service` аргументом создается сертификат службы с полным доменным именем компьютера и экспортируется сертификат службы в файл с именем Service. cer.
+5. На сервере запустите `setup.bat service` в Командная строка разработчика для Visual Studio, открытой с правами администратора. `setup.bat`При запуске с `service` аргументом создается сертификат службы с полным доменным именем компьютера и экспортируется сертификат службы в файл с именем Service. cer.
 
-6. Измените файл Service. exe. config, указав новое имя сертификата (в `findValue` атрибуте в [ \<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)), которое совпадает с полным доменным именем компьютера. Также измените имя компьютера в элементе \<Service>/\<baseAddresses> с localhost на полное имя компьютера службы.
+6. Измените файл Service. exe. config, чтобы он отражал новое имя сертификата (в `findValue` атрибуте [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) ), совпадающее с полным доменным именем компьютера. Также измените имя компьютера в \<service> / \<baseAddresses> элементе с localhost на полное имя компьютера службы.
 
 7. Скопируйте файл Service.cer из каталога службы в клиентский каталог на клиентском компьютере.
 

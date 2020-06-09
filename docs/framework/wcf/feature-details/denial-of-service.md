@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - denial of service [WCF]
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
-ms.openlocfilehash: 55120430a9aaafe7d8bbf2b26f07806e4f1aa44a
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: 1c1778ace6abc332517786f910d0442eeed577c9
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75964426"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599273"
 ---
 # <a name="denial-of-service"></a>Отказ в обслуживании
 Если система перегружена так, что не удается обрабатывать сообщения, или сообщения обрабатываются слишком медленно, происходит отказ в обслуживании.  
@@ -17,7 +17,7 @@ ms.locfileid: "75964426"
 ## <a name="excess-memory-consumption"></a>Чрезмерный расход памяти  
  Проблема может возникнуть при прочтении XML-документа с большим количеством уникальных локальных имен, пространств имен или префиксов. При использовании класса, который наследуется от <xref:System.Xml.XmlReader>, и вызове свойства <xref:System.Xml.XmlReader.LocalName%2A>, <xref:System.Xml.XmlReader.Prefix%2A> или <xref:System.Xml.XmlReader.NamespaceURI%2A> для каждого элемента, возвращаемая строка добавляется в таблицу <xref:System.Xml.NameTable>. Коллекция, содержащаяся в таблице <xref:System.Xml.NameTable>, никогда не уменьшается в размерах, что создает виртуальную «утечку памяти» в дескрипторах строк.  
   
- Возможны следующие решения:  
+ Возможные способы устранения рисков  
   
 - Создайте класс, производный от <xref:System.Xml.NameTable>, и включите максимальную квоту по размеру. (Не существует способов предотвратить использование таблицы <xref:System.Xml.NameTable> или сменить таблицу <xref:System.Xml.NameTable> при ее заполнении.)  
   
@@ -44,10 +44,10 @@ ms.locfileid: "75964426"
 ## <a name="auditing-event-log-can-be-filled"></a>Возможно переполнение журнала событий аудита  
  Если злоумышленник знает о том, что включен аудит, он может отправлять недопустимые сообщения, приводящие к внесению записей аудита в журнал. Если это приводит к заполнению журнала аудита, система аудита дает сбой.  
   
- Для решения этой проблемы задайте свойству <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> значение `true` и используйте свойства средства «Просмотр событий» для управления поведением аудита. Дополнительные сведения об использовании Просмотр событий для просмотра журналов событий и управления ими см. в разделе [Просмотр событий](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). Дополнительные сведения см. в разделе [Audit](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+ Для решения этой проблемы задайте свойству <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> значение `true` и используйте свойства средства «Просмотр событий» для управления поведением аудита. Дополнительные сведения об использовании Просмотр событий для просмотра журналов событий и управления ими см. в разделе [Просмотр событий](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). Дополнительные сведения см. в разделе [Audit](auditing-security-events.md).  
   
 ## <a name="invalid-implementations-of-iauthorizationpolicy-can-cause-service-to-become-unresponsive"></a>Недопустимые реализации IAuthorizationPolicy могут привести к тому, что служба перестанет отвечать на запросы  
- Вызов метода <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> для неисправной реализации интерфейса <xref:System.IdentityModel.Policy.IAuthorizationPolicy> может привести к тому, что служба перестанет отвечать на запросы.  
+ Вызов <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> метода для неисправной реализации <xref:System.IdentityModel.Policy.IAuthorizationPolicy> интерфейса может привести к тому, что служба перестанет отвечать на запросы.  
   
  Устранение рисков. Используйте только надежный код. Это значит, следует использовать только тот код, который вы написали и испытали сами, или код от надежного поставщика. Не следует разрешать подключение к коду ненадежных расширений <xref:System.IdentityModel.Policy.IAuthorizationPolicy> без их тщательной проверки. Это относится ко всем расширениям, используемым при реализации службы. WCF не делает различий между кодом приложения и внешним кодом, подключенным с помощью точек расширения.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "75964426"
   
  Это влияет на то, что службы WCF могут не открываться в доменах с автоматической регистрацией. Это связано с тем, что условия поиска учетных данных X.509 службы по умолчанию могут быть достаточно сложными, поскольку имеется несколько сертификатов с полным DNS-именем компьютера. Один сертификат связан с авторегистрацией, а другой сертификат может быть выданным самостоятельно.  
   
- Чтобы устранить эту эту проблемы, сослаться на точный сертификат для использования с более точным критерием поиска [\<serviceCredentials >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md). Например, используйте параметр <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> и задавайте сертификат по его уникальному отпечатку (хэшу).  
+ Чтобы устранить эту проблемы, сослаться на точный сертификат для использования с более точным условием поиска в [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md) . Например, используйте параметр <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> и задавайте сертификат по его уникальному отпечатку (хэшу).  
   
  Дополнительные сведения о функции автоматической подачи заявок см. в статье [Автоматическая регистрация сертификатов в Windows Server 2003](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc778954(v%3dws.10)).  
   
@@ -75,16 +75,16 @@ ms.locfileid: "75964426"
  Когда клиент успешно проходит проверку подлинности на стороне службы и устанавливается безопасный сеанс для службы, служба отслеживает этот сеанс, пока клиент не отменит его, или пока срок действия сеанса не истечет. Каждый установленный сеанс учитывается службой относительно максимального числа одновременных активных сеансов. Когда будет достигнут этот предел, клиенты, пытающие создать сеансы для связи с этой службой, будут отклоняться, пока один или несколько активных сеансов не истекут или не будут отменены клиентом. У клиента может быть установлено несколько сеансов связи со службой, и все они учитываются при сравнении с предельным значением.  
   
 > [!NOTE]
-> При использовании сеансов с отслеживанием состояния предыдущий абзац неприменим. Дополнительные сведения о сеансах с отслеживанием состояния см. [в разделе инструкции. Создание маркера контекста безопасности для безопасного сеанса](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+> При использовании сеансов с отслеживанием состояния предыдущий абзац неприменим. Дополнительные сведения о сеансах с отслеживанием состояния см. [в разделе инструкции. Создание маркера контекста безопасности для безопасного сеанса](how-to-create-a-security-context-token-for-a-secure-session.md).  
   
  Чтобы избежать этого, задайте максимальное число активных сеансов и максимальное время существования сеанса с помощью свойства <xref:System.ServiceModel.Channels.SecurityBindingElement> класса <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Вопросы безопасности](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
-- [Раскрытие информации](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
-- [Повышение привилегий](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
-- [Отказ в обслуживании](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
-- [Атаки с повторением](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
-- [Подделка](../../../../docs/framework/wcf/feature-details/tampering.md)
-- [Неподдерживаемые сценарии](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+- [Вопросы безопасности](security-considerations-in-wcf.md)
+- [Раскрытие информации](information-disclosure.md)
+- [Повышение привилегий](elevation-of-privilege.md)
+- [Отказ в обслуживании](denial-of-service.md)
+- [Атаки с повторением](replay-attacks.md)
+- [незаконное изменение;](tampering.md)
+- [Неподдерживаемые сценарии](unsupported-scenarios.md)

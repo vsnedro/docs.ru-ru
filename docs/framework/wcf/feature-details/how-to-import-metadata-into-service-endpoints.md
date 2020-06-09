@@ -2,15 +2,15 @@
 title: Практическое руководство. Импорт метаданных в конечные точки службы
 ms.date: 03/30/2017
 ms.assetid: b69dbe20-92a1-4911-89d8-ffbc3dad4663
-ms.openlocfilehash: dce65c31134c211c134cbae2b9bd8296f74b1627
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 1de316b8e91739d5e3e24ff960e2cdfb33cc7fab
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69930728"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84597063"
 ---
 # <a name="how-to-import-metadata-into-service-endpoints"></a>Практическое руководство. Импорт метаданных в конечные точки службы
-В этом разделе объясняется, как импортировать метаданные в коллекцию конечных точек службы и использовать службу, определенную в [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md). Кроме того, в этом разделе демонстрируется создание клиентского приложения, импортирующего метаданные из службы, а затем вызывающего в службе метод `Add`.  
+В этом разделе объясняется, как импортировать метаданные в коллекцию конечных точек службы и использовать службу, определенную в [Начало работы](../samples/getting-started-sample.md). Кроме того, в этом разделе демонстрируется создание клиентского приложения, импортирующего метаданные из службы, а затем вызывающего в службе метод `Add`.  
   
 ### <a name="to-import-metadata-into-service-endpoints"></a>Импорт метаданных в конечные точки службы  
   
@@ -27,7 +27,7 @@ ms.locfileid: "69930728"
      [!code-csharp[UE_ImportMetadata#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#2)]  
   
     > [!NOTE]
-    > После импорта метаданных невозможно будет создать клиентский канал или экспортировать метаданные. Это объясняется тем, что на данном этапе не имеется никакой информации о типе. Информация о типе требуется для фактического взаимодействия со службой или экспорта метаданных. Для создания сведений о типе необходимо создать код, показанный в шагах 4 и 5. Кроме того, можно использовать вспомогательный класс <xref:System.ServiceModel.Description.MetadataResolver>. Дополнительные сведения см. в разделе [Практическое руководство. Используйте Метадатаресолвер для динамического](../../../../docs/framework/wcf/feature-details/how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md)получения метаданных привязки.  
+    > После импорта метаданных невозможно будет создать клиентский канал или экспортировать метаданные. Это объясняется тем, что на данном этапе не имеется никакой информации о типе. Информация о типе требуется для фактического взаимодействия со службой или экспорта метаданных. Для создания сведений о типе необходимо создать код, показанный в шагах 4 и 5. Кроме того, можно использовать вспомогательный класс <xref:System.ServiceModel.Description.MetadataResolver>. Дополнительные сведения см. в разделе [инструкции. Использование метадатаресолвер для динамического получения метаданных привязки](how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md).  
   
 4. Создайте информацию о типе для каждого контракта.  
   
@@ -37,7 +37,7 @@ ms.locfileid: "69930728"
   
      [!code-csharp[UE_ImportMetadata#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#4)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Метаданные](../../../../docs/framework/wcf/feature-details/metadata.md)
-- [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md)
+- [Метаданные](metadata.md)
+- [Начало работы](../samples/getting-started-sample.md)

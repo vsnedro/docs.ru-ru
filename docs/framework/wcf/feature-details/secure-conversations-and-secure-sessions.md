@@ -2,21 +2,21 @@
 title: Безопасные диалоги и безопасные сеансы
 ms.date: 03/30/2017
 ms.assetid: 48cb104a-532d-40ae-aa57-769dae103fda
-ms.openlocfilehash: 887b2e6e6553a910de046950514869907519cf35
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 3245c062db003cc387eff7af92fabe1554311c73
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76746461"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84590232"
 ---
 # <a name="secure-conversations-and-secure-sessions"></a>Безопасные диалоги и безопасные сеансы
 Компонент Windows Communication Foundation (WCF) — это возможность установить безопасные сеансы между двумя конечными точками, которые проходят проверку подлинности и подтверждают процесс шифрования и цифровой подписи. Например, конечная точка службы может требовать, чтобы клиентская конечная точка передавала для проверки подлинности маркер безопасности, основанный на сертификате X.509. После завершения проверки подлинности клиента конечная точка службы возвращает клиенту маркер контекста безопасности (SCT), который затем используется для обеспечения безопасности всех последующих сообщений в сеансе. Установление такого безопасного сеанса повышает эффективность набора сообщений, которыми обмениваются эти две конечные точки, так как маркер SCT имеет симметричный ключ. При создании цифровой подписи или шифровании набора данных асимметричные ключи, на которых основаны сертификаты X.509, требуют значительно большей вычислительной мощности, чем симметричные ключи.  
   
- Политика начальной загрузки (определенная в разделе 6.2.7 стандарта [WS-SecurityPolicy](https://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/ws-securitypolicy-1.2-spec-os.html) ) содержит утверждения безопасности сообщений, используемые для защиты канала и проверки подлинности клиента перед обменом RST/SCT и RSTR/SCT. Некоторые стандартные привязки WCF имеют свойство `Security.Message.EstablishSecurityContext`, которое определяет, используется ли безопасный диалог. При использовании пользовательских привязок начальная загрузка указывается вложенными элементами привязки безопасности либо с помощью [\<секуреконверсатионбутстрап, >](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) в файле конфигурации, либо путем вызова <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%2A> в коде.  
+ Политика начальной загрузки (определенная в разделе 6.2.7 стандарта [WS-SecurityPolicy](https://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/ws-securitypolicy-1.2-spec-os.html) ) содержит утверждения безопасности сообщений, используемые для защиты канала и проверки подлинности клиента перед обменом RST/SCT и RSTR/SCT. Некоторые стандартные привязки WCF имеют `Security.Message.EstablishSecurityContext` свойство, которое определяет, используется ли безопасный диалог. При использовании пользовательских привязок начальная загрузка обозначается вложением элементов привязки безопасности, как [\<secureConversationBootstrap>](../../configure-apps/file-schema/wcf/secureconversationbootstrap.md) в файле конфигурации, так и путем вызова <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%2A> в коде.  
   
- Дополнительные сведения о сеансах см. [в разделе Использование сеансов](../../../../docs/framework/wcf/using-sessions.md).  
+ Дополнительные сведения о сеансах см. [в разделе Использование сеансов](../using-sessions.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Сеансы, экземпляры и параллелизм](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)
-- [Практическое руководство. Создание службы, для которой требуются сеансы](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
+- [Сеансы, экземпляры и параллелизм](sessions-instancing-and-concurrency.md)
+- [Практическое руководство. Создание службы, для которой требуются сеансы](how-to-create-a-service-that-requires-sessions.md)

@@ -2,12 +2,12 @@
 title: Инструкции по установке сертификата сервера в службах IIS
 ms.date: 03/30/2017
 ms.assetid: 11281490-d2ac-4324-8f33-e7714611a34b
-ms.openlocfilehash: 300d689925d60998ef475ad63f3878bf6d066850
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: 301a10c615a13a42e1a6e1b89d2724476ca4fbae
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70989852"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594664"
 ---
 # <a name="internet-information-services-iis-server-certificate-installation-instructions"></a>Инструкции по установке сертификата сервера в службах IIS
 Чтобы запускать примеры, которые безопасным образом взаимодействуют со службами IIS, необходимо создать и установить сертификат сервера.  
@@ -34,9 +34,9 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
   
 5. Завершите работу мастера. Выберите назначение сертификата. Из отображаемого списка сертификатов выберите сертификат ServiceModelSamples-HTTPS-Server.  
   
-     ![Мастер сертификатов IIS](../../../../docs/framework/wcf/samples/media/iiscertificate-wizard.GIF "IISCertificate_Wizard")  
+     ![Мастер сертификатов IIS](media/iiscertificate-wizard.GIF "IISCertificate_Wizard")  
   
-6. Проверьте доступ к службе в браузере с помощью адреса `https://localhost/servicemodelsamples/service.svc`HTTPS.  
+6. Проверьте доступ к службе в браузере с помощью адреса HTTPS `https://localhost/servicemodelsamples/service.svc` .  
   
 #### <a name="if-ssl-was-previously-configured-by-using-httpcfgexe"></a>Если до этого был настроен протокол SSL с помощью Httpcfg.exe  
   
@@ -65,7 +65,7 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
   
 5. Выберите **servicemodelsamples-HTTPS-Server** из раскрывающегося списка **SSL-сертификат** и нажмите кнопку **ОК**.  
   
-6. Проверьте доступ к службе в браузере с помощью адреса `https://localhost/servicemodelsamples/service.svc`HTTPS.  
+6. Проверьте доступ к службе в браузере с помощью адреса HTTPS `https://localhost/servicemodelsamples/service.svc` .  
   
 > [!NOTE]
 > Поскольку только что установленный тестовый сертификат не является доверенным сертификатом, при переходе по локальным веб-адресам, защищенным с помощью этого сертификата, могут появиться дополнительные предупреждения системы безопасности Internet Explorer.  
