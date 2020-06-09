@@ -2,23 +2,23 @@
 title: Ссылки на объекты
 ms.date: 03/30/2017
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
-ms.openlocfilehash: 5eb842e1bff9ba60074379fde5ef3d0597f2184e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ba4ee3fd0cc16130f66570891ecc295b2d2c50aa
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183458"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599988"
 ---
-# <a name="object-references"></a><span data-ttu-id="a4168-102">Ссылки на объекты</span><span class="sxs-lookup"><span data-stu-id="a4168-102">Object References</span></span>
-<span data-ttu-id="a4168-103">В данном образце показано, как передать объекты по ссылкам между сервером и клиентом.</span><span class="sxs-lookup"><span data-stu-id="a4168-103">This sample demonstrates how to pass objects by references between server and client.</span></span> <span data-ttu-id="a4168-104">В образце используются смоделированные *социальные сети.*</span><span class="sxs-lookup"><span data-stu-id="a4168-104">The sample uses simulated *social networks*.</span></span> <span data-ttu-id="a4168-105">Социальная сеть состоит из класса `Person`, содержащего список друзей, в котором каждый друг является экземпляром класса `Person` с собственным списком друзей.</span><span class="sxs-lookup"><span data-stu-id="a4168-105">A social network consists of a `Person` class that contains a list of friends in which each friend is an instance of the `Person` class, with its own list of friends.</span></span> <span data-ttu-id="a4168-106">Таким образом создается граф объектов.</span><span class="sxs-lookup"><span data-stu-id="a4168-106">This creates a graph of objects.</span></span> <span data-ttu-id="a4168-107">Служба предоставляет операции для этих социальных сетей.</span><span class="sxs-lookup"><span data-stu-id="a4168-107">The service exposes operations on these social networks.</span></span>  
+# <a name="object-references"></a><span data-ttu-id="08061-102">Ссылки на объекты</span><span class="sxs-lookup"><span data-stu-id="08061-102">Object References</span></span>
+<span data-ttu-id="08061-103">В данном образце показано, как передать объекты по ссылкам между сервером и клиентом.</span><span class="sxs-lookup"><span data-stu-id="08061-103">This sample demonstrates how to pass objects by references between server and client.</span></span> <span data-ttu-id="08061-104">В этом примере используются смоделированные *социальные сети*.</span><span class="sxs-lookup"><span data-stu-id="08061-104">The sample uses simulated *social networks*.</span></span> <span data-ttu-id="08061-105">Социальная сеть состоит из класса `Person`, содержащего список друзей, в котором каждый друг является экземпляром класса `Person` с собственным списком друзей.</span><span class="sxs-lookup"><span data-stu-id="08061-105">A social network consists of a `Person` class that contains a list of friends in which each friend is an instance of the `Person` class, with its own list of friends.</span></span> <span data-ttu-id="08061-106">Таким образом создается граф объектов.</span><span class="sxs-lookup"><span data-stu-id="08061-106">This creates a graph of objects.</span></span> <span data-ttu-id="08061-107">Служба предоставляет операции для этих социальных сетей.</span><span class="sxs-lookup"><span data-stu-id="08061-107">The service exposes operations on these social networks.</span></span>  
   
- <span data-ttu-id="a4168-108">В этом образце служба размещается в службах IIS, а клиентом является консольное приложение (EXE).</span><span class="sxs-lookup"><span data-stu-id="a4168-108">In this sample, the service is hosted by Internet Information Services (IIS) and the client is a console application (.exe).</span></span>  
+ <span data-ttu-id="08061-108">В этом образце служба размещается в службах IIS, а клиентом является консольное приложение (EXE).</span><span class="sxs-lookup"><span data-stu-id="08061-108">In this sample, the service is hosted by Internet Information Services (IIS) and the client is a console application (.exe).</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="a4168-109">Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.</span><span class="sxs-lookup"><span data-stu-id="a4168-109">The setup procedure and build instructions for this sample are located at the end of this topic.</span></span>  
+> <span data-ttu-id="08061-109">Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.</span><span class="sxs-lookup"><span data-stu-id="08061-109">The setup procedure and build instructions for this sample are located at the end of this topic.</span></span>  
   
-## <a name="service"></a><span data-ttu-id="a4168-110">Служба</span><span class="sxs-lookup"><span data-stu-id="a4168-110">Service</span></span>  
- <span data-ttu-id="a4168-111">К классу `Person` применен атрибут<xref:System.Runtime.Serialization.DataContractAttribute>. Полю <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> присвоено значение `true`, объявляющее его ссылочным типом.</span><span class="sxs-lookup"><span data-stu-id="a4168-111">The `Person` class has the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied, with the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> field set to `true` to declare it as a reference type.</span></span> <span data-ttu-id="a4168-112">Ко всем свойствам применяется атрибут <xref:System.Runtime.Serialization.DataMemberAttribute>.</span><span class="sxs-lookup"><span data-stu-id="a4168-112">All properties have the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute applied.</span></span>  
+## <a name="service"></a><span data-ttu-id="08061-110">Служба</span><span class="sxs-lookup"><span data-stu-id="08061-110">Service</span></span>  
+ <span data-ttu-id="08061-111">К классу `Person` применен атрибут<xref:System.Runtime.Serialization.DataContractAttribute>. Полю <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> присвоено значение `true`, объявляющее его ссылочным типом.</span><span class="sxs-lookup"><span data-stu-id="08061-111">The `Person` class has the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied, with the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> field set to `true` to declare it as a reference type.</span></span> <span data-ttu-id="08061-112">Ко всем свойствам применяется атрибут <xref:System.Runtime.Serialization.DataMemberAttribute>.</span><span class="sxs-lookup"><span data-stu-id="08061-112">All properties have the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute applied.</span></span>  
   
 ```csharp
 [DataContract(IsReference=true)]  
@@ -51,7 +51,7 @@ public class Person
 }  
 ```  
   
- <span data-ttu-id="a4168-113">Операция `GetPeopleInNetwork` принимает параметр типа `Person` и возвращает всех людей в сети; то есть всех людей в списке `friends`, друзей друзей и так далее без повторений.</span><span class="sxs-lookup"><span data-stu-id="a4168-113">The `GetPeopleInNetwork` operation takes a parameter of type `Person` and returns all the people in the network; that is, all the people in the `friends` list, the friend's friends, and so on, without duplicates.</span></span>  
+ <span data-ttu-id="08061-113">Операция `GetPeopleInNetwork` принимает параметр типа `Person` и возвращает всех людей в сети; то есть всех людей в списке `friends`, друзей друзей и так далее без повторений.</span><span class="sxs-lookup"><span data-stu-id="08061-113">The `GetPeopleInNetwork` operation takes a parameter of type `Person` and returns all the people in the network; that is, all the people in the `friends` list, the friend's friends, and so on, without duplicates.</span></span>  
   
 ```csharp
 public List<Person> GetPeopleInNetwork(Person p)  
@@ -63,7 +63,7 @@ public List<Person> GetPeopleInNetwork(Person p)
 }  
 ```  
   
- <span data-ttu-id="a4168-114">Операция `GetMutualFriends` принимает параметр типа `Person` и возвращает всех друзей в списке, которые также имеют этого человека в их списке `friends`.</span><span class="sxs-lookup"><span data-stu-id="a4168-114">The `GetMutualFriends` operation takes a parameter of type `Person` and returns all the friends in the list who also have this person in their `friends` list.</span></span>  
+ <span data-ttu-id="08061-114">Операция `GetMutualFriends` принимает параметр типа `Person` и возвращает всех друзей в списке, которые также имеют этого человека в их списке `friends`.</span><span class="sxs-lookup"><span data-stu-id="08061-114">The `GetMutualFriends` operation takes a parameter of type `Person` and returns all the friends in the list who also have this person in their `friends` list.</span></span>  
   
 ```csharp
 public List<Person> GetMutualFriends(Person p)  
@@ -78,7 +78,7 @@ public List<Person> GetMutualFriends(Person p)
 }  
 ```  
   
- <span data-ttu-id="a4168-115">Операция `GetCommonFriends` принимает список типа `Person`.</span><span class="sxs-lookup"><span data-stu-id="a4168-115">The `GetCommonFriends` operation takes a list of type `Person`.</span></span> <span data-ttu-id="a4168-116">Предполагается, что в списке присутствует два объекта `Person`.</span><span class="sxs-lookup"><span data-stu-id="a4168-116">The list is expected to have two `Person` objects in it.</span></span> <span data-ttu-id="a4168-117">Операция возвращает список объектов `Person`, находящихся в списках `friends` обоих объектов `Person`, в списке ввода.</span><span class="sxs-lookup"><span data-stu-id="a4168-117">The operation returns a list of `Person` objects that are in the `friends` lists of both `Person` objects in the input list.</span></span>  
+ <span data-ttu-id="08061-115">Операция `GetCommonFriends` принимает список типа `Person`.</span><span class="sxs-lookup"><span data-stu-id="08061-115">The `GetCommonFriends` operation takes a list of type `Person`.</span></span> <span data-ttu-id="08061-116">Предполагается, что в списке присутствует два объекта `Person`.</span><span class="sxs-lookup"><span data-stu-id="08061-116">The list is expected to have two `Person` objects in it.</span></span> <span data-ttu-id="08061-117">Операция возвращает список объектов `Person`, находящихся в списках `friends` обоих объектов `Person`, в списке ввода.</span><span class="sxs-lookup"><span data-stu-id="08061-117">The operation returns a list of `Person` objects that are in the `friends` lists of both `Person` objects in the input list.</span></span>  
   
 ```csharp
 public List<Person> GetCommonFriends(List<Person> people)  
@@ -91,29 +91,29 @@ public List<Person> GetCommonFriends(List<Person> people)
 }  
 ```  
   
-## <a name="client"></a><span data-ttu-id="a4168-118">клиент</span><span class="sxs-lookup"><span data-stu-id="a4168-118">Client</span></span>  
- <span data-ttu-id="a4168-119">Прокси-сервер клиента создается с помощью функции **справки службы добавления** Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="a4168-119">The client proxy is created using the **Add Service Reference** feature of Visual Studio.</span></span>  
+## <a name="client"></a><span data-ttu-id="08061-118">Клиент</span><span class="sxs-lookup"><span data-stu-id="08061-118">Client</span></span>  
+ <span data-ttu-id="08061-119">Прокси клиента создается с помощью функции **Добавление ссылки на службу** в Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="08061-119">The client proxy is created using the **Add Service Reference** feature of Visual Studio.</span></span>  
   
- <span data-ttu-id="a4168-120">Создается социальная сеть, состоящая из пяти объектов `Person`.</span><span class="sxs-lookup"><span data-stu-id="a4168-120">A social network that consists of five `Person` objects is created.</span></span> <span data-ttu-id="a4168-121">Клиент вызывает каждый из трех методов службы.</span><span class="sxs-lookup"><span data-stu-id="a4168-121">The client calls each of the three methods in the service.</span></span>  
+ <span data-ttu-id="08061-120">Создается социальная сеть, состоящая из пяти объектов `Person`.</span><span class="sxs-lookup"><span data-stu-id="08061-120">A social network that consists of five `Person` objects is created.</span></span> <span data-ttu-id="08061-121">Клиент вызывает каждый из трех методов службы.</span><span class="sxs-lookup"><span data-stu-id="08061-121">The client calls each of the three methods in the service.</span></span>  
   
-#### <a name="to-set-up-build-and-run-the-sample"></a><span data-ttu-id="a4168-122">Настройка, сборка и выполнение образца</span><span class="sxs-lookup"><span data-stu-id="a4168-122">To set up, build, and run the sample</span></span>  
+#### <a name="to-set-up-build-and-run-the-sample"></a><span data-ttu-id="08061-122">Настройка, сборка и выполнение образца</span><span class="sxs-lookup"><span data-stu-id="08061-122">To set up, build, and run the sample</span></span>  
   
-1. <span data-ttu-id="a4168-123">Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)</span><span class="sxs-lookup"><span data-stu-id="a4168-123">Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).</span></span>  
+1. <span data-ttu-id="08061-123">Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).</span><span class="sxs-lookup"><span data-stu-id="08061-123">Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).</span></span>  
   
-2. <span data-ttu-id="a4168-124">Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).</span><span class="sxs-lookup"><span data-stu-id="a4168-124">To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).</span></span>  
+2. <span data-ttu-id="08061-124">Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).</span><span class="sxs-lookup"><span data-stu-id="08061-124">To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).</span></span>  
   
-3. <span data-ttu-id="a4168-125">Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)</span><span class="sxs-lookup"><span data-stu-id="a4168-125">To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).</span></span>  
+3. <span data-ttu-id="08061-125">Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).</span><span class="sxs-lookup"><span data-stu-id="08061-125">To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).</span></span>  
   
 > [!IMPORTANT]
-> <span data-ttu-id="a4168-126">Образцы уже могут быть установлены на компьютере.</span><span class="sxs-lookup"><span data-stu-id="a4168-126">The samples may already be installed on your machine.</span></span> <span data-ttu-id="a4168-127">Перед продолжением проверьте следующий каталог (по умолчанию).</span><span class="sxs-lookup"><span data-stu-id="a4168-127">Check for the following (default) directory before continuing.</span></span>  
+> <span data-ttu-id="08061-126">Образцы уже могут быть установлены на компьютере.</span><span class="sxs-lookup"><span data-stu-id="08061-126">The samples may already be installed on your machine.</span></span> <span data-ttu-id="08061-127">Перед продолжением проверьте следующий каталог (по умолчанию).</span><span class="sxs-lookup"><span data-stu-id="08061-127">Check for the following (default) directory before continuing.</span></span>  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> <span data-ttu-id="a4168-128">Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы.</span><span class="sxs-lookup"><span data-stu-id="a4168-128">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="a4168-129">Этот образец расположен в следующем каталоге.</span><span class="sxs-lookup"><span data-stu-id="a4168-129">This sample is located in the following directory.</span></span>  
+> <span data-ttu-id="08061-128">Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры.</span><span class="sxs-lookup"><span data-stu-id="08061-128">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="08061-129">Этот образец расположен в следующем каталоге.</span><span class="sxs-lookup"><span data-stu-id="08061-129">This sample is located in the following directory.</span></span>  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\ObjectReferences`  
   
-## <a name="see-also"></a><span data-ttu-id="a4168-130">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a4168-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="08061-130">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="08061-130">See also</span></span>
 
 - <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>
-- [<span data-ttu-id="a4168-131">Справочные сведения о взаимодействии объектов</span><span class="sxs-lookup"><span data-stu-id="a4168-131">Interoperable Object References</span></span>](../../../../docs/framework/wcf/feature-details/interoperable-object-references.md)
+- [<span data-ttu-id="08061-131">Справочные сведения о взаимодействии объектов</span><span class="sxs-lookup"><span data-stu-id="08061-131">Interoperable Object References</span></span>](../feature-details/interoperable-object-references.md)

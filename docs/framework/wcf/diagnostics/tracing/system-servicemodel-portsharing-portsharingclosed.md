@@ -2,21 +2,21 @@
 title: System.ServiceModel.PortSharing.PortSharingClosed
 ms.date: 03/30/2017
 ms.assetid: 8f93c5b3-d56c-412f-9c26-68da85f4bd92
-ms.openlocfilehash: 2ee99f27be0e9301ae40fa092623c34c2648af4b
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: c6f9d8ed57ed833ba2a175599b7e0f15c8bc6b3e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61860885"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599481"
 ---
-# <a name="systemservicemodelportsharingportsharingclosed"></a><span data-ttu-id="6f6ed-102">System.ServiceModel.PortSharing.PortSharingClosed</span><span class="sxs-lookup"><span data-stu-id="6f6ed-102">System.ServiceModel.PortSharing.PortSharingClosed</span></span>
-<span data-ttu-id="6f6ed-103">System.ServiceModel.PortSharing.PortSharingClosed</span><span class="sxs-lookup"><span data-stu-id="6f6ed-103">System.ServiceModel.PortSharing.PortSharingClosed</span></span>  
+# <a name="systemservicemodelportsharingportsharingclosed"></a><span data-ttu-id="f645f-102">System.ServiceModel.PortSharing.PortSharingClosed</span><span class="sxs-lookup"><span data-stu-id="f645f-102">System.ServiceModel.PortSharing.PortSharingClosed</span></span>
+<span data-ttu-id="f645f-103">System.ServiceModel.PortSharing.PortSharingClosed</span><span class="sxs-lookup"><span data-stu-id="f645f-103">System.ServiceModel.PortSharing.PortSharingClosed</span></span>  
   
-## <a name="description"></a><span data-ttu-id="6f6ed-104">Описание</span><span class="sxs-lookup"><span data-stu-id="6f6ed-104">Description</span></span>  
- <span data-ttu-id="6f6ed-105">TransportManager успешно закрыт.</span><span class="sxs-lookup"><span data-stu-id="6f6ed-105">The TransportManager was successfully closed.</span></span>  
+## <a name="description"></a><span data-ttu-id="f645f-104">Описание</span><span class="sxs-lookup"><span data-stu-id="f645f-104">Description</span></span>  
+ <span data-ttu-id="f645f-105">TransportManager успешно закрыт.</span><span class="sxs-lookup"><span data-stu-id="f645f-105">The TransportManager was successfully closed.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="6f6ed-106">См. также</span><span class="sxs-lookup"><span data-stu-id="6f6ed-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f645f-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="f645f-106">See also</span></span>
 
-- [<span data-ttu-id="6f6ed-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="6f6ed-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="6f6ed-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="6f6ed-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="6f6ed-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="6f6ed-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="f645f-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="f645f-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="f645f-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="f645f-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="f645f-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="f645f-109">Administration and Diagnostics</span></span>](../index.md)

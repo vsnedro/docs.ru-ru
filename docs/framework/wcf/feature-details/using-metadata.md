@@ -2,26 +2,26 @@
 title: Использование метаданных
 ms.date: 03/30/2017
 ms.assetid: 05cf53a1-b92d-4d8e-a87e-79f6e51c4a8d
-ms.openlocfilehash: 78005f68512e62c667b59c3cec5841a37723b973
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ac28de954c3754fba3763e40270d6427fb31566e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61933624"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600248"
 ---
-# <a name="using-metadata"></a><span data-ttu-id="3c4c7-102">Использование метаданных</span><span class="sxs-lookup"><span data-stu-id="3c4c7-102">Using Metadata</span></span>
-<span data-ttu-id="3c4c7-103">Метаданные службы содержат читаемое компьютером описание службы.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-103">Service metadata contains a machine-readable description of the service.</span></span> <span data-ttu-id="3c4c7-104">Они содержат описание конечных точек, привязок, контрактов, операций и сообщений службы.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-104">Service metadata includes descriptions of the service endpoints, bindings, contracts, operations, and messages.</span></span> <span data-ttu-id="3c4c7-105">Метаданными службы можно пользоваться для множества целей, включая автоматическое создание клиента для использования службы, реализацию описания службы и динамическое обновление привязки для клиента.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-105">You can use service metadata for a variety of purposes, including automatically generating a client for consuming the service, implementing the service description, and dynamically updating the binding for a client.</span></span>  
+# <a name="using-metadata"></a><span data-ttu-id="853ae-102">Использование метаданных</span><span class="sxs-lookup"><span data-stu-id="853ae-102">Using Metadata</span></span>
+<span data-ttu-id="853ae-103">Метаданные службы содержат читаемое компьютером описание службы.</span><span class="sxs-lookup"><span data-stu-id="853ae-103">Service metadata contains a machine-readable description of the service.</span></span> <span data-ttu-id="853ae-104">Они содержат описание конечных точек, привязок, контрактов, операций и сообщений службы.</span><span class="sxs-lookup"><span data-stu-id="853ae-104">Service metadata includes descriptions of the service endpoints, bindings, contracts, operations, and messages.</span></span> <span data-ttu-id="853ae-105">Метаданными службы можно пользоваться для множества целей, включая автоматическое создание клиента для использования службы, реализацию описания службы и динамическое обновление привязки для клиента.</span><span class="sxs-lookup"><span data-stu-id="853ae-105">You can use service metadata for a variety of purposes, including automatically generating a client for consuming the service, implementing the service description, and dynamically updating the binding for a client.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="3c4c7-106">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="3c4c7-106">In This Section</span></span>  
- [<span data-ttu-id="3c4c7-107">Основные сведения о созданном коде клиента</span><span class="sxs-lookup"><span data-stu-id="3c4c7-107">Understanding Generated Client Code</span></span>](../../../../docs/framework/wcf/feature-details/understanding-generated-client-code.md)  
- <span data-ttu-id="3c4c7-108">Описываются различные классы и интерфейсы, создаваемые средством Svcutil.exe.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-108">Describes the different classes and interfaces the Svcutil.exe tool generates.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="853ae-106">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="853ae-106">In This Section</span></span>  
+ [<span data-ttu-id="853ae-107">Основные сведения о созданном коде клиента</span><span class="sxs-lookup"><span data-stu-id="853ae-107">Understanding Generated Client Code</span></span>](understanding-generated-client-code.md)  
+ <span data-ttu-id="853ae-108">Описываются различные классы и интерфейсы, создаваемые средством Svcutil.exe.</span><span class="sxs-lookup"><span data-stu-id="853ae-108">Describes the different classes and interfaces the Svcutil.exe tool generates.</span></span>  
   
- [<span data-ttu-id="3c4c7-109">Практическое руководство. Извлечение данных и реализация совместимой службы</span><span class="sxs-lookup"><span data-stu-id="3c4c7-109">How to: Retrieve Metadata and Implement a Compliant Service</span></span>](../../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md)  
- <span data-ttu-id="3c4c7-110">Показывается, как получить метаданные с помощью средства Svcutil.exe и реализовать совместимую службу.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-110">Demonstrates how to retrieve metadata using Svcutil.exe and implement a compliant service.</span></span>  
+ [<span data-ttu-id="853ae-109">Практическое руководство. Извлечение данных и реализация совместимой службы</span><span class="sxs-lookup"><span data-stu-id="853ae-109">How to: Retrieve Metadata and Implement a Compliant Service</span></span>](how-to-retrieve-metadata-and-implement-a-compliant-service.md)  
+ <span data-ttu-id="853ae-110">Показывается, как получить метаданные с помощью средства Svcutil.exe и реализовать совместимую службу.</span><span class="sxs-lookup"><span data-stu-id="853ae-110">Demonstrates how to retrieve metadata using Svcutil.exe and implement a compliant service.</span></span>  
   
- [<span data-ttu-id="3c4c7-111">Создание клиента WCF из метаданных службы</span><span class="sxs-lookup"><span data-stu-id="3c4c7-111">Generating a WCF Client from Service Metadata</span></span>](../../../../docs/framework/wcf/feature-details/generating-a-wcf-client-from-service-metadata.md)  
- <span data-ttu-id="3c4c7-112">Показано, как получить метаданные с помощью Svcutil.exe и создания клиента Windows Communication Foundation (WCF).</span><span class="sxs-lookup"><span data-stu-id="3c4c7-112">Demonstrates how to retrieve metadata using Svcutil.exe and generate a Windows Communication Foundation (WCF) client.</span></span>  
+ [<span data-ttu-id="853ae-111">Создание клиента WCF из метаданных службы</span><span class="sxs-lookup"><span data-stu-id="853ae-111">Generating a WCF Client from Service Metadata</span></span>](generating-a-wcf-client-from-service-metadata.md)  
+ <span data-ttu-id="853ae-112">Демонстрирует получение метаданных с помощью Svcutil. exe и создание клиента Windows Communication Foundation (WCF).</span><span class="sxs-lookup"><span data-stu-id="853ae-112">Demonstrates how to retrieve metadata using Svcutil.exe and generate a Windows Communication Foundation (WCF) client.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3c4c7-113">См. также</span><span class="sxs-lookup"><span data-stu-id="3c4c7-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="853ae-113">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="853ae-113">See also</span></span>
 
-- [<span data-ttu-id="3c4c7-114">Метаданные</span><span class="sxs-lookup"><span data-stu-id="3c4c7-114">Metadata</span></span>](../../../../docs/framework/wcf/feature-details/metadata.md)
+- [<span data-ttu-id="853ae-114">Метаданные</span><span class="sxs-lookup"><span data-stu-id="853ae-114">Metadata</span></span>](metadata.md)
