@@ -2,21 +2,21 @@
 title: System.ServiceModel.Channels.MsmqDatagramSent
 ms.date: 03/30/2017
 ms.assetid: eab449e8-e01b-4af8-bd8e-0f3a24689c82
-ms.openlocfilehash: cc7e7c85f3dde4cccfbbb0077031d958118b5e36
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: a6f516aaec423eaa7768d6d0746caaebf993b5bf
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61792305"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594027"
 ---
-# <a name="systemservicemodelchannelsmsmqdatagramsent"></a><span data-ttu-id="4fdc5-102">System.ServiceModel.Channels.MsmqDatagramSent</span><span class="sxs-lookup"><span data-stu-id="4fdc5-102">System.ServiceModel.Channels.MsmqDatagramSent</span></span>
-<span data-ttu-id="4fdc5-103">System.ServiceModel.Channels.MsmqDatagramSent</span><span class="sxs-lookup"><span data-stu-id="4fdc5-103">System.ServiceModel.Channels.MsmqDatagramSent</span></span>  
+# <a name="systemservicemodelchannelsmsmqdatagramsent"></a><span data-ttu-id="2bf20-102">System.ServiceModel.Channels.MsmqDatagramSent</span><span class="sxs-lookup"><span data-stu-id="2bf20-102">System.ServiceModel.Channels.MsmqDatagramSent</span></span>
+<span data-ttu-id="2bf20-103">System.ServiceModel.Channels.MsmqDatagramSent</span><span class="sxs-lookup"><span data-stu-id="2bf20-103">System.ServiceModel.Channels.MsmqDatagramSent</span></span>  
   
-## <a name="description"></a><span data-ttu-id="4fdc5-104">Описание</span><span class="sxs-lookup"><span data-stu-id="4fdc5-104">Description</span></span>  
- <span data-ttu-id="4fdc5-105">Отправлено сообщение с датаграммами MSMQ.</span><span class="sxs-lookup"><span data-stu-id="4fdc5-105">MSMQ datagram message sent.</span></span>  
+## <a name="description"></a><span data-ttu-id="2bf20-104">Описание</span><span class="sxs-lookup"><span data-stu-id="2bf20-104">Description</span></span>  
+ <span data-ttu-id="2bf20-105">Отправлено сообщение с датаграммами MSMQ.</span><span class="sxs-lookup"><span data-stu-id="2bf20-105">MSMQ datagram message sent.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4fdc5-106">См. также</span><span class="sxs-lookup"><span data-stu-id="4fdc5-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2bf20-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="2bf20-106">See also</span></span>
 
-- [<span data-ttu-id="4fdc5-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="4fdc5-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="4fdc5-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="4fdc5-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="4fdc5-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="4fdc5-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="2bf20-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="2bf20-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="2bf20-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="2bf20-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="2bf20-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="2bf20-109">Administration and Diagnostics</span></span>](../index.md)
