@@ -2,19 +2,19 @@
 title: Базовый образец
 ms.date: 03/30/2017
 ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
-ms.openlocfilehash: 2ea5af0a1c05b5632632b2619c0ee4813696d2fc
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: db560ec7dea3912ecec8d84943cc9a01512d1f33
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76738180"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84575775"
 ---
 # <a name="basic-sample"></a>Базовый образец
 
 В этом образце показано, как сделать службу обнаруживаемой, а также как искать и вызывать обнаруживаемую службу. Этот образец состоит из двух проектов: службы и клиента.
 
 > [!NOTE]
-> Этот образец реализует возможность обнаружения в коде.  Пример, в котором реализуется обнаружение в конфигурации, см. в разделе [Configuration](../../../../docs/framework/wcf/samples/configuration-sample.md).
+> Этот образец реализует возможность обнаружения в коде.  Пример, в котором реализуется обнаружение в конфигурации, см. в разделе [Configuration](configuration-sample.md).
 
 ## <a name="service"></a>Служба
 
@@ -35,7 +35,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
 }
 ```
 
-## <a name="client"></a>клиент
+## <a name="client"></a>Клиент
 
 Клиент использует <xref:System.ServiceModel.Discovery.DynamicEndpoint> для определения местоположения службы. Стандартная конечная точка <xref:System.ServiceModel.Discovery.DynamicEndpoint> вычисляет конечную точку службы, когда открывается клиент. В этом случае <xref:System.ServiceModel.Discovery.DynamicEndpoint> ищет службу на основе контракта службы. Конечная точка <xref:System.ServiceModel.Discovery.DynamicEndpoint> ведет поиск по <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> по умолчанию. Когда конечная точка службы найдена, клиент подключается к этой службе по заданной привязке.
 
@@ -100,6 +100,6 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Basic`

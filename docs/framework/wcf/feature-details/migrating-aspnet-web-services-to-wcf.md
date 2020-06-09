@@ -2,12 +2,12 @@
 title: Миграция веб-служб ASP.NET на платформу WCF
 ms.date: 03/30/2017
 ms.assetid: 1adbb931-f0b1-47f3-9caf-169e4edc9907
-ms.openlocfilehash: 52e0e499b5338e20377c14b598c045a5173df7d3
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: fa707a4246d5bc9940417072c098b2973140f878
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69965340"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84598805"
 ---
 # <a name="migrating-aspnet-web-services-to-wcf"></a>Миграция веб-служб ASP.NET на платформу WCF
 Платформа ASP.NET предоставляет библиотеки классов .NET Framework и средства для построения веб-служб, а также возможности для их размещения в службах Internet Information Services (IIS). Windows Communication Foundation (WCF) предоставляет библиотеки классов .NET Framework, средства и средства размещения для взаимодействия программных сущностей с помощью любых протоколов, включая те, которые используются веб-службами.  Миграция веб-служб ASP.NET в WCF позволяет приложениям использовать преимущества новых функций и улучшений, уникальных для WCF.  
@@ -18,7 +18,7 @@ ms.locfileid: "69965340"
   
  WCF поддерживает больше протоколов для передачи сообщений, чем веб-службы ASP.NET. Веб-службы ASP.NET поддерживают только отправку сообщений с помощью протокола передачи гипертекста (HTTP). WCF поддерживает отправку сообщений с помощью протокола HTTP, а также протокол TCP, именованные каналы и очередь сообщений Майкрософт (MSMQ). Более важно, что WCF можно расширить для поддержки дополнительных транспортных протоколов. Таким образом, программное обеспечение, разработанное с помощью WCF, можно адаптировать для совместной работы с более широким спектром других программных продуктов, тем самым увеличивая вероятность возврата инвестиций.  
   
- WCF предоставляет широкие возможности для развертывания приложений и управления ими, чем предоставляемые веб-службы ASP.NET. Помимо системы конфигурации, которая также имеет ASP.NET, WCF предлагает редактор конфигурации, трассировку действий от отправителей к получателям и обратно через любое количество посредников, средство просмотра трассировки, ведение журнала сообщений, большое количество счетчиков производительности и Поддержка инструментарий управления Windows (WMI).  
+ WCF предоставляет широкие возможности для развертывания приложений и управления ими, чем предоставляемые веб-службы ASP.NET. Помимо системы конфигурации, которая также имеет ASP.NET, WCF предлагает редактор конфигурации, трассировку действий от отправителей к получателям и обратно через любое количество посредников, средство просмотра трассировки, ведение журнала сообщений, большое количество счетчиков производительности и поддержку инструментарий управления Windows (WMI).  
   
  Учитывая эти потенциальные преимущества WCF относительно веб-служб ASP.NET, если вы используете или планируете использовать веб-службы ASP.NET, у вас есть несколько вариантов:  
   
@@ -35,10 +35,10 @@ ms.locfileid: "69965340"
   
  В этом разделе подробно описываются эти возможности, сравниваются веб-службы ASP.NET с WCF и приводятся инструкции по переносу кода веб-служб ASP.NET в WCF.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Предполагается принятие Windows Communication Foundation: Ускорение миграции в будущем](../../../../docs/framework/wcf/feature-details/anticipating-adopting-wcf-migration.md)
-- [Предполагается принятие Windows Communication Foundation: Ускорение интеграции в будущем](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
-- [Переход на платформу Windows Communication Foundation](../../../../docs/framework/wcf/feature-details/adopting-wcf.md)
-- [Сравнение веб-служб ASP.NET с веб-службами на основе WCF по назначению и используемым стандартам](../../../../docs/framework/wcf/feature-details/comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)
-- [Сравнение веб-служб ASP.NET с веб-службами на основе WCF по процессу разработки](../../../../docs/framework/wcf/feature-details/comparing-aspnet-web-services-to-wcf-based-on-development.md)
+- [Планирование перехода на платформу Windows Communication Foundation: упрощение будущей миграции](anticipating-adopting-wcf-migration.md)
+- [Планирование перехода на платформу Windows Communication Foundation: упрощение будущей интеграции](anticipating-adopting-the-wcf-easing-future-integration.md)
+- [Переход на платформу Windows Communication Foundation](adopting-wcf.md)
+- [Сравнение веб-служб ASP.NET с веб-службами на основе WCF по назначению и используемым стандартам](comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)
+- [Сравнение веб-служб ASP.NET с веб-службами на основе WCF по процессу разработки](comparing-aspnet-web-services-to-wcf-based-on-development.md)
