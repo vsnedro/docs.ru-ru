@@ -2,25 +2,25 @@
 title: Основные понятия одноранговых каналов
 ms.date: 03/30/2017
 ms.assetid: 379c2c0b-a44f-4423-9480-4739e7f18614
-ms.openlocfilehash: 8955f6ab18e7fddac2f99b30be38532781c7ae21
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: c9a63784b685ce57a7878934ddd042afd70c32b9
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61769438"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84576347"
 ---
 # <a name="peer-channel-concepts"></a>Основные понятия одноранговых каналов
-В этом разделе кратко описываются основные понятия, составляющих однорангового канала Windows Communication Foundation (WCF).  
+В этом разделе кратко описаны понятия, составляющие одноранговый канал Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Одноранговые сетки](../../../../docs/framework/wcf/feature-details/peer-meshes.md):  Описываются характеристики сеток, создаваемых с помощью однорангового канала.  
+ [Одноранговые сети](peer-meshes.md): описывает характеристики сеток, созданных с помощью однорангового канала.  
   
- [Одноранговые узлы](../../../../docs/framework/wcf/feature-details/peer-nodes.md):  Описывает одноранговых узлов.  
+ [Одноранговые узлы](peer-nodes.md): описывает одноранговые узлы.  
   
- [Безопасность одноранговых каналов](../../../../docs/framework/wcf/feature-details/peer-channel-security.md):  Описывает сценарии безопасности и решения, предоставляемые одноранговым каналом.  
+ [Безопасность одноранговых каналов](peer-channel-security.md): Описывает сценарии безопасности и решения, предоставляемые одноранговым каналом.  
   
- [Одноранговые распознаватели](../../../../docs/framework/wcf/feature-details/peer-resolvers.md):  Обсуждается использование протокола разрешения имени однорангового узла (PRNP) и других пользовательских распознавателей.  
+ [Одноранговые арбитры](peer-resolvers.md): обсуждается использование протокола PNRP (прнп) и других пользовательских механизмов разрешения имен.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Создание приложения одноранговых каналов](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Создание приложения одноранговых каналов](building-a-peer-channel-application.md)

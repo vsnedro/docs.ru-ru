@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e0b12b34-8004-443a-a46d-83a5c00f2601
-ms.openlocfilehash: e8efbc5a3dec5f60dbefc8f6dc377d97b29b7653
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8a73dd90d268c61e0df974861753119e205a870f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61699621"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599078"
 ---
 # <a name="how-to-control-service-instancing"></a>Практическое руководство. Управление созданием экземпляров служб
-Установка режима экземпляра службы позволяет определить, когда будет создаваться объект <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> (и связанный с ним определяемый пользователем объект службы). Возможные режимы см. в перечислении <xref:System.ServiceModel.InstanceContextMode>. Дополнительные сведения о поведениях см. в разделе [настройку и расширение среды выполнения с помощью поведений](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md). Рабочие примеры см. в разделе [поведения](../../../../docs/framework/wcf/samples/behaviors.md).  
+Установка режима экземпляра службы позволяет определить, когда будет создаваться объект <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> (и связанный с ним определяемый пользователем объект службы). Возможные режимы см. в перечислении <xref:System.ServiceModel.InstanceContextMode>. Дополнительные сведения о поведении см. [в разделе Настройка и расширение среды выполнения с помощью поведений](../extending/configuring-and-extending-the-runtime-with-behaviors.md). Рабочие примеры см. в разделе [варианты поведения](../samples/behaviors.md).  
   
 ### <a name="to-control-the-service-instance-lifetime-using-code"></a>Управление временем существования экземпляра службы с помощью кода  
   
@@ -30,9 +30,9 @@ ms.locfileid: "61699621"
  [!code-csharp[c_ControlServiceInstancing#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_controlserviceinstancing/cs/source.cs#2)]
  [!code-vb[c_ControlServiceInstancing#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_controlserviceinstancing/vb/source.vb#2)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.ServiceBehaviorAttribute>
 - <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>
 - <xref:System.ServiceModel.InstanceContextMode>
-- [Служба: Примеры поведения](../samples/behaviors.md)
+- [Служба: примеры поведения](../samples/behaviors.md)

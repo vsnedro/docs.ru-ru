@@ -2,17 +2,17 @@
 title: Модуль форматирования и селектор операции
 ms.date: 03/30/2017
 ms.assetid: 1c27e9fe-11f8-4377-8140-828207b98a0e
-ms.openlocfilehash: 9d1bc0afa54f89e064eab3f3e45da60c8d10de38
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 344d3122d03e89a7f20e391db49005d0e085dfa6
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144283"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84575162"
 ---
 # <a name="operation-formatter-and-operation-selector"></a>Модуль форматирования и селектор операции
-Этот пример демонстрирует, как точки разъема Windows Communication Foundation (WCF) могут использоваться для предоставления данных сообщений в другом формате, чем ожидает WCF. По умолчанию WCF будет ожидать, что параметры `soap:body` метода будут включены в элемент. В этом образце показано, как реализовать пользовательский модуль форматирования операций, который анализирует параметры из строки HTTP-запроса GET и вызывает методы с использованием этих данных.  
+В этом образце показано, как можно использовать точки расширяемости Windows Communication Foundation (WCF) для предоставления данных сообщений в формате, отличном от того, который требуется WCF. По умолчанию модули форматирования WCF предполагают включение параметров метода в `soap:body` элемент. В этом образце показано, как реализовать пользовательский модуль форматирования операций, который анализирует параметры из строки HTTP-запроса GET и вызывает методы с использованием этих данных.  
   
- Образец основан на [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), `ICalculator` который реализует контракт на обслуживание. Он показывает, каким образом можно изменить сообщения Add, Subtract, Multiply и Divide, чтобы они использовали HTTP-запросы GET в качестве запросов клиента серверу и HTTP-запросы POST с сообщениями POX в качестве ответов сервера клиенту.  
+ Образец основан на [Начало работы](getting-started-sample.md), который реализует `ICalculator` контракт службы. Он показывает, каким образом можно изменить сообщения Add, Subtract, Multiply и Divide, чтобы они использовали HTTP-запросы GET в качестве запросов клиента серверу и HTTP-запросы POST с сообщениями POX в качестве ответов сервера клиенту.  
   
  Для этого в образце имеются следующие элементы.  
   
@@ -30,7 +30,7 @@ ms.locfileid: "79144283"
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
   
 ## <a name="key-concepts"></a>Основные понятия  
- `QueryStringFormatter`- Значение операции является компонентом в WCF, который отвечает за преобразование сообщения в массив объектов параметров и массив объектов параметра в сообщение. Эта задача выполняется на клиенте с помощью интерфейса <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> и на сервере с помощью интерфейса <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter>. Эти интерфейсы позволяют пользователям получать сообщения запросов и ответов из методов `Serialize` и `Deserialize`.  
+ `QueryStringFormatter`— Модуль форматирования операций — это компонент в WCF, который отвечает за преобразование сообщения в массив объектов параметров и массив объектов параметров в сообщение. Эта задача выполняется на клиенте с помощью интерфейса <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> и на сервере с помощью интерфейса <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter>. Эти интерфейсы позволяют пользователям получать сообщения запросов и ответов из методов `Serialize` и `Deserialize`.  
   
  В этом образце класс `QueryStringFormatter` реализует оба эти интерфейса и реализуется на стороне клиента и сервера.  
   
@@ -60,10 +60,10 @@ ms.locfileid: "79144283"
   
  Свойству <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector%2A> присвоена реализация <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector>.  
   
- По умолчанию WCF использует фильтр точного соответствия адреса. Код URI входящего сообщения содержит суффикс имени операции, за которым следует строка запроса, содержащая данные параметров, поэтому поведение также изменяет фильтр адресов, чтобы он срабатывал по совпадению префикса. Для этой цели<xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> он использует WCF.  
+ По умолчанию WCF использует фильтр адресов точного соответствия. Код URI входящего сообщения содержит суффикс имени операции, за которым следует строка запроса, содержащая данные параметров, поэтому поведение также изменяет фильтр адресов, чтобы он срабатывал по совпадению префикса. Для этой цели в ней используется WCF <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> .  
   
 ### <a name="installing-operation-formatters"></a>Установка модулей форматирования операций  
- Поведения операций, которые задают модули форматирования, являются уникальными. Одно такое поведение всегда реализуется по умолчанию для каждой операции, чтобы создать нужный модуль форматирования операции. Однако такие поведения очень похожи на поведения других операций; их невозможно идентифицировать по каким-либо другим атрибутам. Для установки поведения замены реализация должна искать определенные поведения formatter, установленные по загрузчиком типа WCF по умолчанию, и либо заменить его, либо добавить совместимое поведение для запуска после поведения по умолчанию.  
+ Поведения операций, которые задают модули форматирования, являются уникальными. Одно такое поведение всегда реализуется по умолчанию для каждой операции, чтобы создать нужный модуль форматирования операции. Однако такие поведения очень похожи на поведения других операций; их невозможно идентифицировать по каким-либо другим атрибутам. Чтобы установить поведение при замене, реализация должна найти определенные поведения модуля форматирования, которые устанавливаются загрузчиком типов WCF по умолчанию, и либо заменить его, либо добавить совместимое поведение для запуска после поведения по умолчанию.  
   
  Эти поведения модулей форматирования операций можно задать программным образом перед вызовом <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType> или путем задания поведения операции, которое выполняется после поведения по умолчанию. Однако его невозможно легко настроить с помощью поведения конечной точки (а следовательно с помощью конфигурации), поскольку модель поведений не допускает замены поведения другими поведениями или иного изменения дерева описаний.  
   
@@ -98,7 +98,7 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
   
 - Это необходимо сделать до вызова метода <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. В этом образце показано, каким образом можно вручную изменить модуль форматирования перед вызовом метода <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. Того же результата можно достичь, создав для класса <xref:System.ServiceModel.ServiceHost> производный класс, который вызывает `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` перед открытием (примеры см. в документации по размещению).  
   
-### <a name="user-experience"></a>Возможности для пользователя  
+### <a name="user-experience"></a>Взаимодействие с пользователем  
  На сервере:  
   
 - Серверную реализацию `ICalculator` изменять не требуется.  
@@ -166,14 +166,14 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Formatters\QueryStringFormatter`  
   
 ##### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать решение, следуйте инструкциям по [созданию образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+2. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
-3. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  

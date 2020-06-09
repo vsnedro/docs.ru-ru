@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 431879b8-a5f8-4947-ad1e-4768c726aca8
-ms.openlocfilehash: 9a07754e8fdad700bd5488f392f80b5c5f907f6e
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 872fe325a6705e79d026cd7f6e1f7cfef5145307
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69968442"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599026"
 ---
 # <a name="how-to-create-a-basic-rss-feed"></a>Практическое руководство. Создание базового RSS-канала
 Windows Communication Foundation (WCF) позволяет создать службу, предоставляющую канал синдикации. В данном разделе рассматривается процесс создания службы синдикации, предоставляющей веб-канал синдикации RSS.  
@@ -23,7 +23,7 @@ Windows Communication Foundation (WCF) позволяет создать слу�
      [!code-vb[htRssBasic#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htrssbasic/vb/program.vb#0)]  
   
     > [!NOTE]
-    > Все операции службы, применяющие атрибут <xref:System.ServiceModel.Web.WebGetAttribute>, сопоставляются с запросами HTTP GET. Чтобы сопоставить операцию с другим методом HTTP, используйте <xref:System.ServiceModel.Web.WebInvokeAttribute>. Дополнительные сведения см. в разделе [Практическое руководство. Создайте базовую веб-службу](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)HTTP WCF.  
+    > Все операции службы, применяющие атрибут <xref:System.ServiceModel.Web.WebGetAttribute>, сопоставляются с запросами HTTP GET. Чтобы сопоставить операцию с другим методом HTTP, используйте <xref:System.ServiceModel.Web.WebInvokeAttribute>. Дополнительные сведения см. [в разделе как создать базовую веб-службу HTTP WCF](how-to-create-a-basic-wcf-web-http-service.md).  
   
 2. Реализуйте контракт службы.  
   
@@ -64,7 +64,7 @@ Windows Communication Foundation (WCF) позволяет создать слу�
   
 ### <a name="to-call-getblog-with-an-http-get"></a>Вызов GetBlog() c HTTP GET  
   
-1. Откройте Internet Explorer, введите следующий URL-адрес и нажмите клавишу `http://localhost:8000/BlogService/GetBlog`ввод:. URL-адрес содержит базовый адрес службы (`http://localhost:8000/BlogService`), относительный адрес конечной точки и операцию службы для вызова.  
+1. Откройте Internet Explorer, введите следующий URL-адрес и нажмите клавишу ВВОД: `http://localhost:8000/BlogService/GetBlog` . URL-адрес содержит базовый адрес службы ( `http://localhost:8000/BlogService` ), относительный адрес конечной точки и операцию службы для вызова.  
   
 ### <a name="to-call-getblog-from-code"></a>Вызов GetBlog() из кода  
   

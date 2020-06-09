@@ -2,18 +2,18 @@
 title: Расширение трассировки
 ms.date: 03/30/2017
 ms.assetid: 2b971a99-16ec-4949-ad2e-b0c8731a873f
-ms.openlocfilehash: e61265210640d2b801ad55b9dc5a357cc4f161a7
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.openlocfilehash: 59bdfeea41bac812840ffe166895050a6cd1ad2d
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728394"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600520"
 ---
 # <a name="extend-tracing"></a>Расширить трассировку
 
-В этом примере показано, как расширить функцию трассировки Windows Communication Foundation (WCF) путем написания пользовательских трассировок действий в клиенте и в коде службы. Написание трассировки определяемых пользователем действий позволяет пользователю создавать действия трассировки и группировать трассировки в логические единицы работы. Кроме того, возможно согласование действий с помощью передач (в рамках одной конечной точки) и распространения (между конечными точками). В этом образце трассировка включается как для клиента, так и для службы. Дополнительные сведения о включении трассировки в файлах конфигурации клиента и службы см. в разделе [Трассировка и ведение журнала сообщений](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md).  
+В этом примере показано, как расширить функцию трассировки Windows Communication Foundation (WCF) путем написания пользовательских трассировок действий в клиенте и в коде службы. Написание трассировки определяемых пользователем действий позволяет пользователю создавать действия трассировки и группировать трассировки в логические единицы работы. Кроме того, возможно согласование действий с помощью передач (в рамках одной конечной точки) и распространения (между конечными точками). В этом образце трассировка включается как для клиента, так и для службы. Дополнительные сведения о включении трассировки в файлах конфигурации клиента и службы см. в разделе [Трассировка и ведение журнала сообщений](tracing-and-message-logging.md).  
   
- Этот образец основан на [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
+ Этот образец основан на [Начало работы](getting-started-sample.md).  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
@@ -23,7 +23,7 @@ ms.locfileid: "82728394"
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) [!INCLUDE[wf1](../../../../includes/wf1-md.md)] и примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ExtendingTracing`  
   
@@ -31,7 +31,7 @@ ms.locfileid: "82728394"
  Определяемая пользователем трассировка действий позволяет пользователю создавать собственные действия трассировки для группирования трассировок в логические единицы работы, сопоставлять действия посредством передачи и распространения, а также уменьшить затраты на производительность трассировки WCF (например, стоимость дискового пространства в файле журнала).  
   
 ### <a name="add-custom-sources"></a>Добавление пользовательских источников  
- Пользовательские трассировки можно добавлять как в код клиента, так и в код службы. Добавление источников трассировки в файлы конфигурации клиента или службы позволяет записывать и отображать эти пользовательские трассировки в [средстве Service Trace Viewer (SvcTraceViewer. exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). В следующем примере кода показано, как добавить в файл конфигурации пользовательский источник трассировки с именем `ServerCalculatorTraceSource`.  
+ Пользовательские трассировки можно добавлять как в код клиента, так и в код службы. Добавление источников трассировки в файлы конфигурации клиента или службы позволяет записывать и отображать эти пользовательские трассировки в [средстве Service Trace Viewer (SvcTraceViewer. exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). В следующем примере кода показано, как добавить в файл конфигурации пользовательский источник трассировки с именем `ServerCalculatorTraceSource`.  
   
 ```xml  
 <system.diagnostics>  
@@ -91,12 +91,12 @@ ms.locfileid: "82728394"
   
 ## <a name="set-up-build-and-run-the-sample"></a>Настройка, сборка и запуск примера  
   
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

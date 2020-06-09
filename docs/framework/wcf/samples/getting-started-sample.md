@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - basic samples [WCF], getting started
 ms.assetid: 967a3d94-0261-49ff-b85a-20bb07f1af20
-ms.openlocfilehash: 7bfef2c3fa5d0d3c6dafad5a6015eb9f5ca2b5c6
-ms.sourcegitcommit: cdf5084648bf5e77970cbfeaa23f1cab3e6e234e
+ms.openlocfilehash: fc4a7e9acb15f77140732638b2982dd4a9dae9ce
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921321"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84575190"
 ---
 # <a name="getting-started-sample"></a>Пример для начала работы
 
@@ -26,18 +26,18 @@ ms.locfileid: "76921321"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\GettingStarted\GettingStarted`
 
 Служба описывает операции, выполняемые ею в контракте службы, который она открыто предоставляет как метаданные. Служба также содержит код для реализации операций.
 
-Клиент содержит определение контракта службы и прокси-класс для доступа к службе. Код прокси-сервера создается на основе метаданных службы с помощью [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).
+Клиент содержит определение контракта службы и прокси-класс для доступа к службе. Код прокси-сервера создается на основе метаданных службы с помощью [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).
 
 В Windows Vista служба размещается в службе активации Windows (WAS). В Windows XP и Windows Server 2003 она размещена на службы IIS (IIS) и ASP.NET. Размещение службы в IIS или WAS позволяет активировать службу автоматически при первом доступе к ней.
 
 > [!NOTE]
-> Если вы предпочитаете приступить к работе с примером, в котором размещена служба, в консольном приложении, а не IIS, см. пример с помощью [узла для самостоятельного размещения](../../../../docs/framework/wcf/samples/self-host.md) .
+> Если вы предпочитаете приступить к работе с примером, в котором размещена служба, в консольном приложении, а не IIS, см. пример с помощью [узла для самостоятельного размещения](self-host.md) .
 
 Служба и клиент указывают данные для доступа в параметрах файла конфигурации, что обеспечивает гибкость при развертывании. Эти данные включают определение конечной точки, задающей адрес, привязку и контракт. Привязка определяет транспорт и детали обеспечения безопасности, касающиеся доступа к службе.
 
@@ -142,9 +142,9 @@ public class CalculatorService : ICalculator
 
 Служба предоставляет конечную точку по базовому адресу, который предоставляется узлом IIS или WAS. Привязка настраивается с использованием стандартного объекта <xref:System.ServiceModel.WSHttpBinding>, обеспечивающего взаимодействие по протоколу HTTP и стандартному протоколу веб-служб для адресации и безопасности. Контрактом является интерфейс `ICalculator`, реализуемый службой.
 
-Как настроено, доступ к службе можно получить на `http://localhost/servicemodelsamples/service.svc` клиентом на том же компьютере. Чтобы к службе могли получить доступ клиенты на удаленных компьютерах, вместо имени localhost необходимо указать полное имя домена.
+Как настроено, доступ к службе может осуществляться `http://localhost/servicemodelsamples/service.svc` клиентом на том же компьютере. Чтобы к службе могли получить доступ клиенты на удаленных компьютерах, вместо имени localhost необходимо указать полное имя домена.
 
-По умолчанию платформа не предоставляет никаких метаданных. Таким образом, служба включает <xref:System.ServiceModel.Description.ServiceMetadataBehavior> и предоставляет конечную точку обмена метаданными (MEX) на `http://localhost/servicemodelsamples/service.svc/mex`. Это демонстрируется в следующей конфигурации.
+По умолчанию платформа не предоставляет никаких метаданных. Таким образом, служба включает <xref:System.ServiceModel.Description.ServiceMetadataBehavior> и предоставляет конечную точку обмена метаданными (MEX) в `http://localhost/servicemodelsamples/service.svc/mex` . Это демонстрируется в следующей конфигурации.
 
 ```xaml
 <system.serviceModel>
@@ -174,7 +174,7 @@ public class CalculatorService : ICalculator
 </system.serviceModel>
 ```
 
-Клиент обменивается данными с использованием заданного типа контракта с помощью клиентского класса, созданного [средством служебной программы метаданных ServiceModel (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). Этот созданный клиент содержится в файлах generatedClient.cs или generatedClient.vb. Это средство извлекает метаданные для заданной службы и создает клиент, который будет использоваться клиентским приложением для взаимодействия по заданному контракту. Размещенная служба должна быть доступна для создания кода клиента, поскольку служба используется для извлечения обновленных метаданных.
+Клиент обменивается данными с использованием заданного типа контракта с помощью клиентского класса, созданного [средством служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Этот созданный клиент содержится в файлах generatedClient.cs или generatedClient.vb. Это средство извлекает метаданные для заданной службы и создает клиент, который будет использоваться клиентским приложением для взаимодействия по заданному контракту. Размещенная служба должна быть доступна для создания кода клиента, поскольку служба используется для извлечения обновленных метаданных.
 
  Чтобы создать типизированный прокси, выполните следующую команду из командной строки SDK в каталоге клиента.
 
@@ -273,17 +273,17 @@ Divide(22,7) = 3.14285714285714
 Press <ENTER> to terminate client.
 ```
 
-В образце "Начало работы" показан стандартный способ создания службы и клиента. Другой [базовый](../../../../docs/framework/wcf/samples/basic-sample.md) пример сборки этого образца для демонстрации конкретных функций продукта.
+В образце "Начало работы" показан стандартный способ создания службы и клиента. Другой [базовый](basic-sample.md) пример сборки этого образца для демонстрации конкретных функций продукта.
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
 
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Практическое руководство. Размещение службы WCF в управляемом приложении](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)
-- [Практическое руководство. Размещение службы WCF в IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)
+- [Практическое руководство. Размещение службы WCF в управляемом приложении](../how-to-host-a-wcf-service-in-a-managed-application.md)
+- [Практическое руководство. Размещение службы WCF в IIS](../feature-details/how-to-host-a-wcf-service-in-iis.md)

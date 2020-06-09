@@ -2,12 +2,12 @@
 title: Отправка сообщений из приложения Windows Communication Foundation в приложение MSMQ
 ms.date: 03/30/2017
 ms.assetid: 78d0d0c9-648e-4d4a-8f0a-14d9cafeead9
-ms.openlocfilehash: beb4382d61804e9b9ea12e1d191f3e96a637f871
-ms.sourcegitcommit: 011314e0c8eb4cf4a11d92078f58176c8c3efd2d
+ms.openlocfilehash: 872632dc7d0a8a94f8829ffb3fe8eea2607697c8
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2020
-ms.locfileid: "77094804"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602351"
 ---
 # <a name="windows-communication-foundation-to-message-queuing"></a>Отправка сообщений из приложения Windows Communication Foundation в приложение MSMQ
 
@@ -99,7 +99,7 @@ client.Close();
 
  При отправке сообщения MSMQ в очередь клиент использует внутренний пользовательский порядок сообщений. Так как приложение, получающее и обрабатывающее сообщение, является приложением MSMQ, а не приложением WCF, неявный контракт службы между двумя приложениями отсутствует. Таким образом, в данном сценарии невозможно создать прокси-класс при помощи средства Svculti.exe.
 
- По сути, Пользовательский клиент одинаков для всех приложений WCF, использующих привязку `MsmqIntegration` для отправки сообщений. В отличие от других клиентов, он не включает ряд операций службы. В него входит только операция отправки сообщения.
+ По сути, Пользовательский клиент одинаков для всех приложений WCF, использующих `MsmqIntegration` привязку для отправки сообщений. В отличие от других клиентов, он не включает ряд операций службы. В него входит только операция отправки сообщения.
 
 ```csharp
 [System.ServiceModel.ServiceContractAttribute(Namespace = "http://Microsoft.ServiceModel.Samples")]
@@ -135,7 +135,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 
 ## <a name="set-up-build-and-run-the-sample"></a>Настройка, сборка и запуск примера
 
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
 2. При первом запуске служба проверит наличие очереди. Если очередь отсутствует, служба ее создаст. Можно сначала запустить службу, чтобы создать очередь, либо создать ее с помощью диспетчера очередей MSMQ. Чтобы создать очередь в Windows 2008, выполните следующие шаги.
 
@@ -143,15 +143,15 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 
     2. Разверните вкладку **функции** .
 
-    3. Щелкните правой кнопкой мыши **частные очереди сообщений**и выберите **создать** > **Частная очередь**.
+    3. Щелкните правой кнопкой мыши **частные очереди сообщений**, а затем выберите **создать**  >  **частную очередь**.
 
     4. Установите флажок **транзакционная** .
 
-    5. Введите `ServiceModelSamplesTransacted` в качестве имени новой очереди.
+    5. Введите в `ServiceModelSamplesTransacted` качестве имени новой очереди.
 
-3. Чтобы создать C# или Visual Basic выпуск решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).
+3. Чтобы создать выпуск решения на C# или Visual Basic, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).
 
-4. Чтобы запустить пример в конфигурации с одним компьютером, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).
+4. Чтобы запустить пример в конфигурации с одним компьютером, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
 ## <a name="run-the-sample-across-computers"></a>Запуск примера на нескольких компьютерах
 
@@ -170,11 +170,11 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\WcfToMsmq`
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Практическое руководство. Обмен сообщениями с конечными точками WCF и приложениями очереди сообщений](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
-- [Очередь сообщений](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))
+- [Практическое руководство. Обмен сообщениями с конечными точками WCF и приложениями очереди сообщений](../feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
+- [служба очередей сообщений](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

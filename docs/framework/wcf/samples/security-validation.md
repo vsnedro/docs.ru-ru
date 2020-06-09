@@ -2,15 +2,15 @@
 title: Проверка безопасности
 ms.date: 03/30/2017
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
-ms.openlocfilehash: 90d335f32c43ecf575c69cf800ab69bee05f39ee
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.openlocfilehash: 70408976469b1cbcf9c4679bd91d81872ec74ae1
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728374"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599975"
 ---
 # <a name="security-validation"></a>Проверка безопасности
-Этот образец показывает, как с помощью пользовательского поведения проверять службы на компьютере на соответствие определенным условиям. В этом образце службы проверяются с помощью пользовательского поведения путем сканирования каждой конечной точки службы и проверки, содержат ли они безопасные элементы привязки. Этот образец основан на [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md).  
+Этот образец показывает, как с помощью пользовательского поведения проверять службы на компьютере на соответствие определенным условиям. В этом образце службы проверяются с помощью пользовательского поведения путем сканирования каждой конечной точки службы и проверки, содержат ли они безопасные элементы привязки. Этот образец основан на [Начало работы](getting-started-sample.md).  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
@@ -78,7 +78,7 @@ public void Validate(ServiceDescription serviceDescription,
 > [!NOTE]
 > При добавлении поведения во все службы предлагается перед внесением каких-либо изменений в файл Machine.config создать резервную копию этого файла.  
   
- Теперь запустите клиент, содержащийся в каталоге client\bin данного образца. Создается исключение со следующим сообщением: "запрошенная службаhttp://localhost/servicemodelsamples/service.svcне может быть активирована". Это ожидаемая ситуация, так как поведение проверки конечной точки считает конечную точку небезопасной и запрещает запуск службы. Поведение также создает внутреннее исключение, которое описывает, какая конечная точка является небезопасной, и записывает сообщение в системную программу Просмотр событий, в раздел источника "System.ServiceModel 4.0.0.0", категория "WebHost". В данном образце можно также включить трассировку в службе. Это позволит конечному пользователю просматривать исключения, созданные поведением проверки конечных точек, открыв трассировки службы с помощью программы Service Trace Viewer.  
+ Теперь запустите клиент, содержащийся в каталоге client\bin данного образца. Создается исключение со следующим сообщением: "запрошенная служба http://localhost/servicemodelsamples/service.svc не может быть активирована". Это ожидаемая ситуация, так как поведение проверки конечной точки считает конечную точку небезопасной и запрещает запуск службы. Поведение также создает внутреннее исключение, которое описывает, какая конечная точка является небезопасной, и записывает сообщение в системную программу Просмотр событий, в раздел источника "System.ServiceModel 4.0.0.0", категория "WebHost". В данном образце можно также включить трассировку в службе. Это позволит конечному пользователю просматривать исключения, созданные поведением проверки конечных точек, открыв трассировки службы с помощью программы Service Trace Viewer.  
   
 ### <a name="view-failed-endpoint-validation-exception-messages-in-the-event-viewer"></a>Просмотр сообщений об исключениях при проверке конечной точки в Просмотр событий  
   
@@ -92,21 +92,21 @@ public void Validate(ServiceDescription serviceDescription,
   
 ## <a name="set-up-build-and-run-the-sample"></a>Настройка, сборка и запуск примера  
   
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) [!INCLUDE[wf1](../../../../includes/wf1-md.md)] и примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ServiceValidation`  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

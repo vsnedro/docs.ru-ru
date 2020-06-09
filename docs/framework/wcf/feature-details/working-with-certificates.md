@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: e38ead0d378092af086218277fd2e85b4a6396c3
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: e61437efd87c30758c36d642bb9269ad2966c951
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76746890"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600118"
 ---
 # <a name="working-with-certificates"></a>Работа с сертификатами
 
@@ -72,7 +72,7 @@ ms.locfileid: "76746890"
 
 При создании новой службы пользователь может использовать сертификат, который был выдан центром сертификации, отличным от доверенного, или сертификат издателя может отсутствовать в хранилище «Доверенные корневые центры сертификации». Предусмотрена возможность временного отключения механизма, проверяющего цепочку сертификатов для заданного сертификата; эта возможность должна использоваться только в процессе разработки. Чтобы отключить данный механизм, задайте для свойства `CertificateValidationMode` значение `PeerTrust` или `PeerOrChainTrust`. Эти режимы определяют, что сертификат может быть либо самостоятельно выданным (доверие одноранговой группы), либо являться частью цепочки доверия. Указанное свойство можно задать для любого из следующих классов.
 
-|Class|Свойство|
+|Класс|Свойство.|
 |-----------|--------------|
 |<xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>|<xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A?displayProperty=nameWithType>|
 |<xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>|<xref:System.ServiceModel.Security.X509PeerCertificateAuthentication.CertificateValidationMode%2A?displayProperty=nameWithType>|
@@ -81,17 +81,17 @@ ms.locfileid: "76746890"
 
 Свойство также можно задать с использованием конфигурации. Для задания режима проверки используются следующие элементы.
 
-- [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md)
+- [\<authentication>](../../configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md)
 
-- [\<peerAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/peerauthentication-element.md)
+- [\<peerAuthentication>](../../configure-apps/file-schema/wcf/peerauthentication-element.md)
 
-- [\<messageSenderAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/messagesenderauthentication-element.md)
+- [\<messageSenderAuthentication>](../../configure-apps/file-schema/wcf/messagesenderauthentication-element.md)
 
 ## <a name="custom-authentication"></a>Нестандартная проверка подлинности
 
 Свойство `CertificateValidationMode` также позволяет настроить способ проверки сертификатов. По умолчанию задано значение `ChainTrust`. Чтобы использовать значение <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>, необходимо также установить атрибут `CustomCertificateValidatorType` для сборки и типа, которые используются при проверке сертификата. Для создания пользовательского проверяющего элемента управления необходимо наследование от абстрактного класса <xref:System.IdentityModel.Selectors.X509CertificateValidator>.
 
-При создании пользовательской структуры проверки подлинности наиболее важным методом, который необходимо переопределить, является метод <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A>. Образец создания пользовательской структуры проверки подлинности см. в разделе [Проверяющий элемент управления для сертификатов X.509](../../../../docs/framework/wcf/samples/x-509-certificate-validator.md). Дополнительные сведения см. в разделе [Пользовательские учетные данные и проверка учетных данных](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md).
+При создании пользовательской структуры проверки подлинности наиболее важным методом, который необходимо переопределить, является метод <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A>. Образец создания пользовательской структуры проверки подлинности см. в разделе [Проверяющий элемент управления для сертификатов X.509](../samples/x-509-certificate-validator.md). Дополнительные сведения см. в разделе [Пользовательские учетные данные и проверка учетных данных](../extending/custom-credential-and-credential-validation.md).
 
 ## <a name="using-the-powershell-new-selfsignedcertificate-cmdlet-to-build-a-certificate-chain"></a>Использование командлета PowerShell New-SelfSignedCertificate для создания цепочки сертификатов
 
@@ -113,9 +113,9 @@ ms.locfileid: "76746890"
 
 ### <a name="service-certificates"></a>Сертификаты служб
 
-Основной задачей сертификатов служб является удостоверение подлинности сервера для клиентов. При проверке подлинности сервера клиентом одной из исходных проверок является сравнение значения поля **Субъект** с универсальным кодом ресурса (URI), используемым для обращения к службе: DNS-имена должны совпадать. Например, если URI службы `http://www.contoso.com/endpoint/`, поле **subject** также должно содержать значение `www.contoso.com`.
+Основной задачей сертификатов служб является удостоверение подлинности сервера для клиентов. При проверке подлинности сервера клиентом одной из исходных проверок является сравнение значения поля **Субъект** с универсальным кодом ресурса (URI), используемым для обращения к службе: DNS-имена должны совпадать. Например, если URI службы, `http://www.contoso.com/endpoint/` поле **subject** также должно содержать значение `www.contoso.com` .
 
-Обратите внимание, что в этом поле может содержаться несколько значений с отдельными префиксами. Чаще всего это "CN" для общего имени, например `CN = www.contoso.com`. Кроме того, поле **Субъект** может быть пустым; в этом случае в поле **Альтернативное имя субъекта** может содержаться значение **DNS-имя**.
+Обратите внимание, что в этом поле может содержаться несколько значений с отдельными префиксами. Чаще всего для общего имени используется инициализация "CN", например `CN = www.contoso.com` . Кроме того, поле **Субъект** может быть пустым; в этом случае в поле **Альтернативное имя субъекта** может содержаться значение **DNS-имя**.
 
 Также обратите внимание, что поле **Назначения** сертификата должно включать соответствующее значение, например "Проверка подлинности сервера" или "Проверка подлинности клиента".
 
@@ -135,7 +135,7 @@ ms.locfileid: "76746890"
 
 В этом случае все цепочки, происходящие от отозванного сертификата, также становятся недействительными и механизмы проверки подлинности перестают им доверять. Для обозначения отозванных сертификатов каждый издатель публикует *список отзыва сертификатов*, имеющий отметку даты и времени. Этот список можно проверить с помощью режима с подключением к сети или автономного режима, задав одно из значений перечисления `RevocationMode` для свойства `DefaultRevocationMode` или <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> следующих классов: <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>, <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>, <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication> и <xref:System.ServiceModel.Security.IssuedTokenServiceCredential>. Значение по умолчанию для всех свойств - `Online`.
 
-Можно также задать режим в конфигурации с помощью атрибута `revocationMode` для элементов [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) ([\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md)) и [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) ([\<endpointBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md)).
+Можно также задать режим в конфигурации, используя `revocationMode` атрибут как [\<authentication>](../../configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of), так [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md) и [\<authentication>](../../configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of [\<endpointBehaviors>](../../configure-apps/file-schema/wcf/endpointbehaviors.md) ).
 
 ## <a name="the-setcertificate-method"></a>Метод SetCertificate
 
@@ -160,7 +160,7 @@ ms.locfileid: "76746890"
 
 ## <a name="certificates-in-configuration"></a>Сертификаты в конфигурации
 
-Сертификаты также можно задать с использованием конфигурации. При создании службы учетные данные, включая сертификаты, указываются в разделе [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md). В случае программирования клиента сертификаты указываются в разделе [\<endpointBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md).
+Сертификаты также можно задать с использованием конфигурации. При создании службы учетные данные, включая сертификаты, задаются в разделе [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md) . При программировании клиента сертификаты задаются в [\<endpointBehaviors>](../../configure-apps/file-schema/wcf/endpointbehaviors.md) .
 
 ## <a name="mapping-a-certificate-to-a-user-account"></a>Сопоставление сертификата с учетной записью пользователя
 
@@ -168,7 +168,7 @@ ms.locfileid: "76746890"
 
 Дополнительные сведения о сопоставлении Active Directory см. в разделе [Сопоставление сертификатов клиентов с помощью функции сопоставления службы каталогов](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc758484(v=ws.10)).
 
-Если эта функция включена, можно задать для свойства <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> класса <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> значение `true`. В конфигурации можно задать для атрибута `mapClientCertificateToWindowsAccount` элемента [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) значение `true`, как показано в следующем примере кода.
+Если эта функция включена, можно задать для свойства <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> класса <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> значение `true`. В конфигурации можно задать `mapClientCertificateToWindowsAccount` атрибуту [\<authentication>](../../configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) элемента значение `true` , как показано в следующем коде.
 
 ```xml
 <serviceBehaviors>
@@ -188,10 +188,10 @@ ms.locfileid: "76746890"
 
 В первом выпуске WCF сопоставление выполняется без обращения к политике домена. Поэтому более старые приложения, которые работали при использовании первого выпуска, могут не работать, если включено сопоставление и сертификат X.509 не удовлетворяет требованиям политики домена.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.Channels>
 - <xref:System.ServiceModel.Security>
 - <xref:System.ServiceModel>
 - <xref:System.Security.Cryptography.X509Certificates.X509FindType>
-- [Защита служб и клиентов](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Защита служб и клиентов](securing-services-and-clients.md)

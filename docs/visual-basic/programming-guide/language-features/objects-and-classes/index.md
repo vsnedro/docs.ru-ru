@@ -5,12 +5,12 @@ helpviewer_keywords:
 - classes [Visual Basic]
 - objects [Visual Basic]
 ms.assetid: c68c5752-1006-46e1-975a-6717b62a42fc
-ms.openlocfilehash: 10e257a1cbc8778565a9838aeef423522f9d2970
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 9e3cf262ef617a1ae5ee92bcc3d6fd5c691602f9
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290620"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600416"
 ---
 # <a name="objects-and-classes-in-visual-basic"></a>Объекты и классы Visual Basic
 
@@ -30,7 +30,7 @@ ms.locfileid: "84290620"
 
 ### <a name="create-an-object-from-a-class"></a>Создание объекта из класса
 
-1. Определите, из какого класса нужно создать объект, или определите собственный класс. Например:
+1. Определите, из какого класса нужно создать объект, или определите собственный класс. Пример.
 
    ```vb
    Public Class Customer
@@ -110,7 +110,7 @@ warningLabel.ForeColor = System.Drawing.Color.Red
 
 - Свойство имеет тип данных `String` и не имеет ограничений на размер или значение строки.
 
-- Дополнительные сведения см. в статье [Property Procedures (Visual Basic)](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md) (Процедуры свойств в Visual Basic).
+- Дополнительные сведения см. в статье [Property Procedures (Visual Basic)](../procedures/property-procedures.md) (Процедуры свойств в Visual Basic).
 
 > [!TIP]
 > Всегда оставляйте неконстантные поля частными. Если вы хотите сделать его общедоступным, используйте вместо него свойство.
@@ -256,7 +256,7 @@ End Sub
 
 В качестве примера объектов-контейнеров можно привести *коллекции*. Коллекции представляют собой группы однотипных перечисляемых объектов. Visual Basic поддерживает конкретный синтаксис в области [For Each... Оператор Next](../../../language-reference/statements/for-each-next-statement.md) , позволяющий выполнять итерацию по элементам коллекции. Кроме того, коллекции часто позволяют использовать свойство <xref:Microsoft.VisualBasic.Collection.Item%2A> для обращения к элементам по индексу или по уникальной строке. Коллекции иногда проще в использовании, чем массивы, поскольку они позволяют добавлять или удалять элементы без использования индексов. Благодаря простоте использования коллекции часто применяются для хранения форм и элементов управления.
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные темы
 
 [Пошаговое руководство. Определение классов](walkthrough-defining-classes.md)\
 Пошаговые инструкции по созданию класса.

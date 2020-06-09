@@ -2,19 +2,19 @@
 title: Практическое руководство. Как настроить отслеживание с помощью WorkflowServiceHost
 ms.date: 03/30/2017
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
-ms.openlocfilehash: 3f78b77849d6da7dfff3bdcba90bb4d5200186a7
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 54594a8f464e77062c658606db6bc941e319f71d
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81464160"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599104"
 ---
 # <a name="how-to-configure-tracking-with-workflowservicehost"></a>Практическое руководство. Как настроить отслеживание с помощью WorkflowServiceHost
 В этом разделе описывается настройка отслеживания для рабочего процесса платформы [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)], размещенного в <xref:System.ServiceModel.Activities.WorkflowServiceHost>. Она осуществляется с помощью файла Web.config, в котором задается поведение службы.  
   
 ### <a name="configure-tracking-in-configuration"></a>Настройка отслеживания в конфигурации  
   
-1. Добавьте <xref:System.Activities.Tracking.EtwTrackingParticipant> использование `behavior` элемента <> в файл конфигурации, как показано в следующем примере.  
+1. Добавьте <xref:System.Activities.Tracking.EtwTrackingParticipant> с помощью элемента <`behavior`> в файл конфигурации, как показано в следующем примере.  
   
     ```xml  
     <behaviors>  
@@ -27,9 +27,9 @@ ms.locfileid: "81464160"
     ```  
   
     > [!NOTE]
-    > В предыдущем образце конфигурации используется упрощенная конфигурация. Для получения дополнительной информации [см.](../../../../docs/framework/wcf/simplified-configuration.md)  
+    > В предыдущем образце конфигурации используется упрощенная конфигурация. Дополнительные сведения см. в разделе [упрощенная конфигурация](../simplified-configuration.md).  
   
-     В предыдущем образце конфигурации добавляется участник <xref:System.Activities.Tracking.EtwTrackingParticipant> и задается имя профиля отслеживания. Профили отслеживания создаются `trackingProfile` в элементе `tracking`> <в элементе <>. Профиль отслеживания содержит запросы отслеживания, позволяющие участнику отслеживания подписываться на события рабочего процесса, создаваемые в момент изменения состояния экземпляра рабочего процесса в ходе выполнения. Создание профиля отслеживания показано в следующем примере.  
+     В предыдущем образце конфигурации добавляется участник <xref:System.Activities.Tracking.EtwTrackingParticipant> и задается имя профиля отслеживания. Профили отслеживания создаются в элементе <`trackingProfile`> в `tracking` элементе <>. Профиль отслеживания содержит запросы отслеживания, позволяющие участнику отслеживания подписываться на события рабочего процесса, создаваемые в момент изменения состояния экземпляра рабочего процесса в ходе выполнения. Создание профиля отслеживания показано в следующем примере.  
   
     ```xml  
     <system.serviceModel>  
@@ -50,9 +50,9 @@ ms.locfileid: "81464160"
     </system.serviceModel>  
     ```  
   
-     Для получения дополнительной информации о [Tracking Profiles](../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)профилях отслеживания см.  
+     Дополнительные сведения о профилях отслеживания см. в разделе [Профили отслеживания](../../windows-workflow-foundation/tracking-profiles.md).  
   
-     Для получения дополнительной информации о отслеживании в целом, [см.](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+     Дополнительные сведения об отслеживании в целом см. в разделе [Отслеживание и трассировка рабочих процессов](../../windows-workflow-foundation/workflow-tracking-and-tracing.md).  
   
 ### <a name="configure-tracking-in-code"></a>Настройка отслеживания в коде  
   
@@ -62,14 +62,14 @@ ms.locfileid: "81464160"
     host.Description.Behaviors.Add(new EtwTrackingBehavior { ProfileName = "Sample Tracking Profile" });  
     ```  
   
-     В предыдущем образце кода добавляется участник <xref:System.Activities.Tracking.EtwTrackingParticipant> и задается имя профиля отслеживания. Профили отслеживания создаются `trackingProfile` в элементе `tracking` <> элементе в элементе <>, как показано в предыдущем разделе.  
+     В предыдущем образце кода добавляется участник <xref:System.Activities.Tracking.EtwTrackingParticipant> и задается имя профиля отслеживания. Профили отслеживания создаются в элементе <`trackingProfile`> в `tracking` элементе <>, как показано в предыдущем разделе.  
   
-     Для получения дополнительной информации о [Tracking Profiles](../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)профилях отслеживания см.  
+     Дополнительные сведения о профилях отслеживания см. в разделе [Профили отслеживания](../../windows-workflow-foundation/tracking-profiles.md).  
   
-     Для получения дополнительной информации о отслеживании в целом, [см.](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) На примере настройки отслеживания программно [см. Настройка отслеживания для рабочего процесса.](../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md)  
+     Дополнительные сведения об отслеживании в целом см. в разделе [Отслеживание и трассировка рабочих процессов](../../windows-workflow-foundation/workflow-tracking-and-tracing.md). Пример настройки отслеживания программным способом см. в разделе [Настройка отслеживания для рабочего процесса](../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Упрощенная конфигурация служб WCF](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)
-- [Службы рабочего процесса](../../../../docs/framework/wcf/feature-details/workflow-services.md)
-- [Профили отслеживания](../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+- [Упрощенная конфигурация служб WCF](../samples/simplified-configuration-for-wcf-services.md)
+- [Службы рабочего процесса](workflow-services.md)
+- [Профили отслеживания](../../windows-workflow-foundation/tracking-profiles.md)

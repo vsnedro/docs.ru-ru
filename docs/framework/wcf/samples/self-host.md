@@ -5,15 +5,15 @@ helpviewer_keywords:
 - Self hosted service
 - Self Host Sample [Windows Communication Foundation]
 ms.assetid: 05e68661-1ddf-4abf-a899-9bb1b8272a5b
-ms.openlocfilehash: a38738c369db3d3f8242bd71ee04a19a669b2cf4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f5c46bc486e03cf86ada3a565a3c282cd81db286
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144153"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599949"
 ---
 # <a name="self-host"></a>Резидентное размещение
-В этом образце показано, как реализовать резидентную службу в консольном приложения. Этот пример основан на [получении начала](../../../../docs/framework/wcf/samples/getting-started-sample.md). Файл конфигурации приложения был переименован из Web.config в App.config, и в нем был указан базовый адрес, используемый ведущим приложением. Исходный код службы был изменен, чтобы он реализовывал статическую функцию `Main`, которая создает и открывает узел службы, предоставляющее настроенный базовый адрес. Реализация службы была изменена, чтобы для каждой операции выводить результат на консоль. Клиент остался неизменным, но для него был задан правильный конечный адрес службы.  
+В этом образце показано, как реализовать резидентную службу в консольном приложения. Этот образец основан на [Начало работы](getting-started-sample.md). Файл конфигурации приложения был переименован из Web.config в App.config, и в нем был указан базовый адрес, используемый ведущим приложением. Исходный код службы был изменен, чтобы он реализовывал статическую функцию `Main`, которая создает и открывает узел службы, предоставляющее настроенный базовый адрес. Реализация службы была изменена, чтобы для каждой операции выводить результат на консоль. Клиент остался неизменным, но для него был задан правильный конечный адрес службы.  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
@@ -41,7 +41,7 @@ public static void Main()
 }  
 ```  
   
- Если служба размещается в службах IIS или службе активации Windows (WAS), базовый адрес службы предоставляется средой размещения. В случае резидентного размещения базовый адрес необходимо указывать самостоятельно. Это делается `add` с использованием элемента, ребенка [ \<baseAddresses>, ](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md)ребенка [ \<>хозяина, ](../../../../docs/framework/configure-apps/file-schema/wcf/host.md)ребенка [ \<службы>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) как показано в следующей конфигурации образца.  
+ Если служба размещается в службах IIS или службе активации Windows (WAS), базовый адрес службы предоставляется средой размещения. В случае резидентного размещения базовый адрес необходимо указывать самостоятельно. Это делается с помощью элемента, дочернего элемента, дочернего элемента дочернего элемента, `add` [\<baseAddresses>](../../configure-apps/file-schema/wcf/baseaddresses.md) [\<host>](../../configure-apps/file-schema/wcf/host.md) [\<service>](../../configure-apps/file-schema/wcf/service.md) как показано в следующем примере конфигурации.  
   
 ```xml  
 <service
@@ -60,21 +60,21 @@ public static void Main()
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. Чтобы запустить образец в одно- или кросс-компьютерной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\SelfHost`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - [Образцы размещения и сохраняемости AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))

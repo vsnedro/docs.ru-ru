@@ -2,17 +2,17 @@
 title: Вспомогательные маркеры
 ms.date: 03/30/2017
 ms.assetid: 65a8905d-92cc-4ab0-b6ed-1f710e40784e
-ms.openlocfilehash: 9d665c82f4af969204e1c87f982c6398b55cda01
-ms.sourcegitcommit: 14ad34f7c4564ee0f009acb8bfc0ea7af3bc9541
+ms.openlocfilehash: 9c8ee4b11cd61e51e91c2e116ab3c20448fc1a58
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73421376"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84575047"
 ---
 # <a name="supporting-tokens"></a>Вспомогательные маркеры
 Образец вспомогательных маркеров демонстрирует, как добавить дополнительные маркеры в сообщение, использующее WS-Security. Пример добавляет двоичный маркер безопасности X.509 в дополнение к маркеру безопасности имени пользователя. Этот маркер передается в заголовке сообщения WS-Security из клиента в службу, и часть сообщения подписывается закрытым ключом, связанным с маркером безопасности X.509, чтобы подтвердить получателю наличие сертификата X.509. Это полезно в случае, когда для проверки подлинности или авторизации отправителя требуются несколько утверждений, связанных с сообщением. Служба реализует контракт, определяющий шаблон взаимодействия "запрос-ответ".
 
-## <a name="demonstrates"></a>Демонстрации
+## <a name="demonstrates"></a>Что демонстрирует
  Образец демонстрирует следующие приемы.
 
 - Как клиент может передать в службу дополнительные маркеры безопасности.
@@ -414,9 +414,9 @@ iisreset
 
 ##### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
 
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).
 
 3. Чтобы выполнить образец на одном или нескольких компьютерах, выполните следующие инструкции.
 
@@ -441,9 +441,9 @@ iisreset
   
 4. Скопируйте в клиентский каталог на клиентском компьютере файлы программы клиента. Кроме того, скопируйте на клиент файлы Setup.bat, Cleanup.bat и ImportServiceCert.bat.  
   
-5. На сервере запустите `setup.bat service` в Командная строка разработчика для Visual Studio, открытой с правами администратора. При запуске `setup.bat` с аргументом `service` создается сертификат службы с полным доменным именем компьютера и экспортируется сертификат службы в файл с именем Service. cer.  
+5. На сервере запустите `setup.bat service` в Командная строка разработчика для Visual Studio, открытой с правами администратора. `setup.bat`При запуске с `service` аргументом создается сертификат службы с полным доменным именем компьютера и экспортируется сертификат службы в файл с именем Service. cer.  
   
-6. Измените файл Web. config в соответствии с новым именем сертификата (в атрибуте `findValue` в [\<serviceCertificate >](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)), который совпадает с полным доменным именем компьютера.  
+6. Измените файл Web. config, чтобы он отражал новое имя сертификата (в `findValue` атрибуте [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) ), совпадающее с полным доменным именем компьютера.  
   
 7. Скопируйте файл Service.cer из каталога службы в клиентский каталог на клиентском компьютере.  
   

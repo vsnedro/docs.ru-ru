@@ -2,15 +2,15 @@
 title: Ссылки на объекты
 ms.date: 03/30/2017
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
-ms.openlocfilehash: 5eb842e1bff9ba60074379fde5ef3d0597f2184e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ba4ee3fd0cc16130f66570891ecc295b2d2c50aa
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183458"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599988"
 ---
 # <a name="object-references"></a>Ссылки на объекты
-В данном образце показано, как передать объекты по ссылкам между сервером и клиентом. В образце используются смоделированные *социальные сети.* Социальная сеть состоит из класса `Person`, содержащего список друзей, в котором каждый друг является экземпляром класса `Person` с собственным списком друзей. Таким образом создается граф объектов. Служба предоставляет операции для этих социальных сетей.  
+В данном образце показано, как передать объекты по ссылкам между сервером и клиентом. В этом примере используются смоделированные *социальные сети*. Социальная сеть состоит из класса `Person`, содержащего список друзей, в котором каждый друг является экземпляром класса `Person` с собственным списком друзей. Таким образом создается граф объектов. Служба предоставляет операции для этих социальных сетей.  
   
  В этом образце служба размещается в службах IIS, а клиентом является консольное приложение (EXE).  
   
@@ -91,29 +91,29 @@ public List<Person> GetCommonFriends(List<Person> people)
 }  
 ```  
   
-## <a name="client"></a>клиент  
- Прокси-сервер клиента создается с помощью функции **справки службы добавления** Visual Studio.  
+## <a name="client"></a>Клиент  
+ Прокси клиента создается с помощью функции **Добавление ссылки на службу** в Visual Studio.  
   
  Создается социальная сеть, состоящая из пяти объектов `Person`. Клиент вызывает каждый из трех методов службы.  
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\ObjectReferences`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>
-- [Справочные сведения о взаимодействии объектов](../../../../docs/framework/wcf/feature-details/interoperable-object-references.md)
+- [Справочные сведения о взаимодействии объектов](../feature-details/interoperable-object-references.md)

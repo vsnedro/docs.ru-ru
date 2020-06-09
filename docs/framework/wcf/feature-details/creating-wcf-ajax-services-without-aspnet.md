@@ -2,19 +2,19 @@
 title: Создание служб WCF AJAX без использования ASP.NET
 ms.date: 03/30/2017
 ms.assetid: ba4a7d1b-e277-4978-9f62-37684e6dc934
-ms.openlocfilehash: f4d1d093132c501844aacbaa9cf28ecc3cede442
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b5f0f730f90227dcccc7e5ebf533d80a28f6e6eb
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185238"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599299"
 ---
 # <a name="creating-wcf-ajax-services-without-aspnet"></a>Создание служб WCF AJAX без использования ASP.NET
-Службы AJAX Фонда связи Windows (WCF) можно получить доступ на любой веб-странице с поддержкой JavaScript, не требуя ASP.NET AJAX. В этой теме описывается, как создать такую службу WCF.  
+Доступ к службам AJAX Windows Communication Foundation (WCF) можно получить с любой веб-страницы с поддержкой JavaScript, не требуя ASP.NET AJAX. В этом разделе описывается создание такой службы WCF.  
   
- Для получения инструкций по использованию WCF с ASP.NET AJAX см [ASP.NET.](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md)  
+ Инструкции по использованию WCF с ASP.NET AJAX см. в разделе [Создание служб WCF для ASP.NET AJAX](creating-wcf-services-for-aspnet-ajax.md).  
   
- Создание сервиса WCF AJAX трех частей:  
+ Создание службы WCF AJAX состоит из трех частей:  
   
 - Создание конечной точки AJAX, доступ к которой можно получить из браузера.  
   
@@ -23,7 +23,7 @@ ms.locfileid: "79185238"
 - Доступ к службам AJAX WCF.  
   
 ## <a name="creating-an-ajax-endpoint"></a>Создание конечной точки AJAX  
- Самый простой способ включить поддержку AJAX в <xref:System.ServiceModel.Activation.WebServiceHostFactory> службе WCF — использовать файл .svc, связанный с службой, как в следующем примере.  
+ Самый простой способ включить поддержку AJAX в службе WCF — использовать <xref:System.ServiceModel.Activation.WebServiceHostFactory> в SVC-файле, связанном со службой, как показано в следующем примере.  
   
 ```text
 <%ServiceHost
@@ -59,7 +59,7 @@ ms.locfileid: "79185238"
 </configuration>  
 ```  
   
- Для рабочего примера см. [службу AJAX с JSON и XML.](../../../../docs/framework/wcf/samples/ajax-service-with-json-and-xml-sample.md)  
+ Рабочий пример см. в разделе [Служба AJAX с JSON и XML](../samples/ajax-service-with-json-and-xml-sample.md).  
   
 ## <a name="creating-an-ajax-compatible-service-contract"></a>Создание контракта службы, совместимого с технологией AJAX  
  По умолчанию контракты служб, предоставляемые через конечную точку AJAX, возвращают данные в формате XML. Кроме того, по умолчанию доступ к операциям службы предоставляется через HTTP-запросы POST, поступающие в URL-адреса, содержащие адрес конечной точки, после которого следует имя операции, как показано в следующем примере.  
@@ -69,11 +69,11 @@ ms.locfileid: "79185238"
 string[] GetCities(string firstLetters);  
 ```  
   
- Эта операция доступна с помощью HTTP POST и `http://serviceaddress/endpointaddress/GetCities` возвращает сообщение XML.  
+ Эта операция доступна с помощью HTTP POST `http://serviceaddress/endpointaddress/GetCities` и возврата сообщения XML.  
   
- Можно использовать полную модель веб-программирования, чтобы настроить эти основные аспекты. Например, можно использовать атрибут <xref:System.ServiceModel.Web.WebGetAttribute> или атрибут <xref:System.ServiceModel.Web.WebInvokeAttribute> для управления HTTP-командой, на которую отвечает операция, или использовать свойство `UriTemplate` этих соответствующих атрибутов для указания пользовательских универсальных кодов ресурсов (URI). Для получения дополнительной информации, см [WCF Web HTTP Программирование Модель](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md) темы.  
+ Можно использовать полную модель веб-программирования, чтобы настроить эти основные аспекты. Например, можно использовать атрибут <xref:System.ServiceModel.Web.WebGetAttribute> или атрибут <xref:System.ServiceModel.Web.WebInvokeAttribute> для управления HTTP-командой, на которую отвечает операция, или использовать свойство `UriTemplate` этих соответствующих атрибутов для указания пользовательских универсальных кодов ресурсов (URI). Дополнительные сведения см. в разделе [модель программирования WCF Web HTTP](wcf-web-http-programming-model.md) .  
   
- В службах AJAX часто используется формат данных JSON. Чтобы создать операцию, возвращающую JSON вместо XML, присвойте свойству <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> (или свойству <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A>) значение <xref:System.ServiceModel.Web.WebMessageFormat.Json>. Тема [сериализации Stand-Alone JSON](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md) показывает, как встроенные типы .NET и типы типов данных на карте JSON.  
+ В службах AJAX часто используется формат данных JSON. Чтобы создать операцию, возвращающую JSON вместо XML, присвойте свойству <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> (или свойству <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A>) значение <xref:System.ServiceModel.Web.WebMessageFormat.Json>. В разделе [автономной СЕРИАЛИЗАЦИИ JSON](stand-alone-json-serialization.md) показано, как встроенные типы .NET и типы контрактов данных сопоставляются с JSON.  
   
  Обычно запросы и ответы JSON состоят из одного элемента. Для предыдущей операции `GetCities` запрос выглядит следующим образом.  
   
@@ -102,10 +102,10 @@ string[] GetCities(string firstLetters, int maxNumber);
 ```  
   
 ## <a name="accessing-ajax-services"></a>Доступ к службам AJAX  
- Конечные точки WCF AJAX всегда принимают запросы JSON и XML.  
+ Конечные точки AJAX WCF всегда принимают запросы JSON и XML.  
   
- Запросы HTTP POST с контент-типом "application/json" рассматриваются как JSON, а запросы с типом содержимого, указывающие на XML (например, "текст/xml") рассматриваются как XML.  
+ Запросы HTTP POST с типом содержимого "Application/JSON" рассматриваются как JSON, а те, которые имеют тип содержимого, указывающий на XML (например, "Text/XML"), обрабатываются как XML.  
   
  HTTP-запросы GET содержат все параметры запросов в самом URL-адресе.  
   
- Пользователь определяет, как создавать HTTP-запрос в конечную точку. Кроме того, пользователь имеет полный контроль над созданием JSON, формирующим тело запроса. Пример омичку создания запроса javaScript можно ознакомьтесь [с службой AJAX с JSON и XML.](../../../../docs/framework/wcf/samples/ajax-service-with-json-and-xml-sample.md)
+ Пользователь определяет, как создавать HTTP-запрос в конечную точку. Кроме того, пользователь имеет полный контроль над созданием JSON, формирующим тело запроса. Пример создания запроса из JavaScript см. в разделе [Служба AJAX с JSON и XML](../samples/ajax-service-with-json-and-xml-sample.md).

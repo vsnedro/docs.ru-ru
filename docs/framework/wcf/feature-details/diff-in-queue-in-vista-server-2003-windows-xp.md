@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], differences in operating systems
 ms.assetid: aa809d93-d0a3-4ae6-a726-d015cca37c04
-ms.openlocfilehash: 0d7b952382b50daae0291ed6afb22bb612447670
-ms.sourcegitcommit: cdf5084648bf5e77970cbfeaa23f1cab3e6e234e
+ms.openlocfilehash: abd81b5e7bf611fc6b4f446a82628b83130f2d54
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76920147"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599208"
 ---
 # <a name="differences-in-queuing-features-in-windows-vista-windows-server-2003-and-windows-xp"></a>Различия в возможностях очередей в Windows Vista, Windows Server 2003 и Windows XP
 В этом разделе перечислены различия в очередях Windows Communication Foundation (WCF) между Windows Vista, Windows Server 2003 и Windows XP.  
@@ -26,16 +26,16 @@ ms.locfileid: "76920147"
   
  Основные различия между очередью сообщений (MSMQ) в Windows Vista, Windows Server 2003 и Windows XP, относящиеся к устранению подозрительных ситуаций, включают следующее:  
   
-- MSMQ в Windows Vista поддерживает подочереди, в то время как Windows Server 2003 и Windows XP не поддерживают подочереди. Вложенные очереди используются при обработке подозрительных сообщений. Очереди повторных попыток и очередь подозрительных сообщений являются вложенными очередями очереди приложения, созданной на основе параметров обработки подозрительных сообщений. Значение `MaxRetryCycles` указывает, сколько необходимо создать вложенных очередей повторных попыток. Таким образом, при работе в Windows Server 2003 или Windows XP `MaxRetryCycles` игнорируются и `ReceiveErrorHandling.Move` не разрешается.  
+- MSMQ в Windows Vista поддерживает подочереди, в то время как Windows Server 2003 и Windows XP не поддерживают подочереди. Вложенные очереди используются при обработке подозрительных сообщений. Очереди повторных попыток и очередь подозрительных сообщений являются вложенными очередями очереди приложения, созданной на основе параметров обработки подозрительных сообщений. Значение `MaxRetryCycles` указывает, сколько необходимо создать вложенных очередей повторных попыток. Поэтому при работе в Windows Server 2003 или Windows XP `MaxRetryCycles` они игнорируются и `ReceiveErrorHandling.Move` не разрешаются.  
   
-- MSMQ в Windows Vista поддерживает негативное подтверждение, в то время как в Windows Server 2003 и Windows XP это не так. Уведомление о недоставке от диспетчера принимающей очереди приводит к тому, что диспетчер передающей очереди помещает сообщение в очередь недоставленных сообщений. Таким образом, `ReceiveErrorHandling.Reject` не разрешены в Windows Server 2003 и Windows XP.  
+- MSMQ в Windows Vista поддерживает негативное подтверждение, в то время как в Windows Server 2003 и Windows XP это не так. Уведомление о недоставке от диспетчера принимающей очереди приводит к тому, что диспетчер передающей очереди помещает сообщение в очередь недоставленных сообщений. `ReceiveErrorHandling.Reject`Это не допускается в Windows Server 2003 и Windows XP.  
   
 - MSMQ в Windows Vista поддерживает свойство Message, которое хранит количество попыток доставки сообщений. Это свойство счетчика прерываний недоступно в Windows Server 2003 и Windows XP. WCF поддерживает счетчик прерываний в памяти, поэтому возможно, что это свойство не может содержать точное значение, если одно и то же сообщение считывается несколькими службами WCF в веб-ферме.  
   
 ## <a name="remote-transactional-read"></a>Удаленное чтение в транзакциях  
  MSMQ в Windows Vista поддерживает удаленные транзакционные операции чтения. Это позволяет приложению, считывающему из очереди, находиться на компьютере, отличном от компьютера, на котором размещена очередь. Этим обеспечивается возможность использования фермы служб, осуществляющих чтение из центральной очереди, что увеличивает общую производительность системы. Кроме того, если во время чтения и обработки сообщения возникает ошибка, такой подход позволяет откатить транзакцию, и сообщение останется в очереди для последующей обработки.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Использование очередей недоставленных сообщений для обработки сбоев при передаче сообщений](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)
-- [Обработка подозрительных сообщений](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
+- [Использование очередей недоставленных сообщений для обработки сбоев при передаче сообщений](using-dead-letter-queues-to-handle-message-transfer-failures.md)
+- [Обработка подозрительных сообщений](poison-message-handling.md)

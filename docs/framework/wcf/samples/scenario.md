@@ -1,32 +1,32 @@
 ---
-title: Scenario2
+title: Сценарий 2
 ms.date: 03/30/2017
 ms.assetid: 816557e0-f676-4731-95c5-b02cbef3d8d7
-ms.openlocfilehash: d791681fab4b635c057d151d10183f583ae7ab2a
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: e983df89f35037732059ce284b67862da3171fd1
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61787495"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602405"
 ---
 # <a name="scenario"></a>Сценарий
-Этот раздел содержит образцы, демонстрирующие сценарии Windows Communication Foundation (WCF).  
+В этом разделе содержатся примеры, демонстрирующие сценарии Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Сценарии привязки данных](../../../../docs/framework/wcf/samples/data-binding-scenarios.md)  
+ [Сценарии привязки данных](data-binding-scenarios.md)  
  Демонстрирует сценарии привязки данных WCF.  
   
- [Образец безопасности при обнаружении](../../../../docs/framework/wcf/samples/discovery-security-sample.md)  
+ [Образец безопасности при обнаружении](discovery-security-sample.md)  
  Демонстрирует реализацию пользовательских каналов, которые вычисляют и проверяют сигнатуры сообщений в компактном формате (описан в разделе 8.2 спецификации WS-Discovery).  
   
- [Пример федерации](../../../../docs/framework/wcf/samples/federation-sample.md)  
+ [Пример федерации](federation-sample.md)  
  Демонстрирует федеративную безопасность.  
   
- [Сериализация слабо типизированных данных JSON (AJAX)](../../../../docs/framework/wcf/samples/weakly-typed-json-serialization-sample.md)  
- Показано, как разработчики WCF могут работать с десериализованные произвольными объектами JSON, без создания определяемых пользователем типов.  
+ [Сериализация слабо типизированных данных JSON (AJAX)](weakly-typed-json-serialization-sample.md)  
+ Демонстрирует, как разрешить разработчикам WCF работать с десериализованными произвольными объектами JSON, не создавая определяемые пользователем типы.  
   
- [Доверенная фасадная служба](../../../../docs/framework/wcf/samples/trusted-facade-service.md)  
- Демонстрируется способ передачи данных идентификации вызывающей стороны от одной службы к другой с помощью инфраструктуры безопасности WCF.  
+ [Доверенная фасадная служба](trusted-facade-service.md)  
+ Демонстрирует, как передать сведения об удостоверении вызывающего объекта из одной службы в другую с помощью инфраструктуры безопасности WCF.  
   
- [Шаблоны разработки: Публикация-подписка на основе списка](../../../../docs/framework/wcf/samples/design-patterns-list-based-publish-subscribe.md)  
- Демонстрируется использование шаблона публикация-подписка на основе списка, реализован как программа Windows Communication Foundation (WCF).
+ [Шаблоны разработки: публикация-подписка на основе списка](design-patterns-list-based-publish-subscribe.md)  
+ Демонстрируется шаблон публикации-подписки на основе списка, реализованный как программа Windows Communication Foundation (WCF).

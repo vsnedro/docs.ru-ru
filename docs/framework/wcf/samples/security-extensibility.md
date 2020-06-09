@@ -2,43 +2,43 @@
 title: Расширяемость средств обеспечения безопасности
 ms.date: 03/30/2017
 ms.assetid: 2afe044d-df4a-49a4-9865-38700474c3dd
-ms.openlocfilehash: afb11d240c25e6b9dbfd5b5c0a63759af8c534f5
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f3fc9a482271b904ccf56f1a911d3a44172bb40e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61787482"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602392"
 ---
 # <a name="security-extensibility"></a>Расширяемость средств обеспечения безопасности
-Этот раздел содержит образцы, демонстрирующие безопасности в Windows Communication Foundation (WCF).  
+Этот раздел содержит примеры, демонстрирующие пользовательскую безопасность в Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Пользовательский поставщик маркеров](../../../../docs/framework/wcf/samples/durable-issued-token-provider.md)  
+ [Пользовательский поставщик маркеров](durable-issued-token-provider.md)  
  Демонстрируется, как реализовать пользовательский поставщик маркеров, выданных клиентом.  
   
- [Поставщик маркеров SAML](../../../../docs/framework/wcf/samples/saml-token-provider.md)  
+ [Поставщик маркеров SAML](saml-token-provider.md)  
  Демонстрируется, как реализовать пользовательский поставщик маркеров SAML клиента.  
   
- [Вспомогательные маркеры](../../../../docs/framework/wcf/samples/supporting-tokens.md)  
+ [Вспомогательные маркеры](supporting-tokens.md)  
  Демонстрируется, как добавить дополнительные маркеры в сообщение, использующее WS-Security.  
   
- [Структура проверки подлинности маркера](../../../../docs/framework/wcf/samples/token-authenticator.md)  
+ [Структура проверки подлинности маркера](token-authenticator.md)  
  Демонстрируется, как реализовать пользовательскую структуру проверки подлинности маркеров.  
   
- [Поставщик маркеров](../../../../docs/framework/wcf/samples/token-provider.md)  
+ [Поставщик маркеров](token-provider.md)  
  Демонстрируется, как реализовать пользовательский поставщик маркеров.  
   
- [Проверяющий элемент управления для имен пользователей и паролей](../../../../docs/framework/wcf/samples/user-name-password-validator.md)  
+ [Проверяющий элемент управления для имен пользователей и паролей](user-name-password-validator.md)  
  Демонстрируется, как реализовать пользовательский проверяющий элемент управления для имени пользователя и пароля.  
   
- [Проверяющий элемент управления для сертификатов X.509](../../../../docs/framework/wcf/samples/x-509-certificate-validator.md)  
+ [Проверяющий элемент управления для сертификатов X.509](x-509-certificate-validator.md)  
  Демонстрируется, как реализовать пользовательскую структуру проверки подлинности сертификатов X.509.  
   
- [Политика авторизации](../../../../docs/framework/wcf/samples/authorization-policy.md)  
+ [Политика авторизации](authorization-policy.md)  
  Демонстрируется, как реализовать пользовательскую политику авторизации утверждений и связанный с ней пользовательский диспетчер авторизации службы.  
   
- [Пользовательский маркер](../../../../docs/framework/wcf/samples/custom-token.md)  
- В этой статье демонстрируется добавление пользовательской реализации маркера в приложение Windows Communication Foundation (WCF).  
+ [Пользовательский маркер](custom-token.md)  
+ Демонстрирует добавление пользовательской реализации токена в приложение Windows Communication Foundation (WCF).  
   
- [Проверка клиента](../../../../docs/framework/wcf/samples/client-validation.md)  
+ [Проверка клиента](client-validation.md)  
  Демонстрирует создание поведения конечной точки клиента, которое проверяет конечную точку службы, чтобы убедиться, что конечная точка службы является безопасной.

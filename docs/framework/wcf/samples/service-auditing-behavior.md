@@ -2,15 +2,15 @@
 title: Поведение аудита службы
 ms.date: 03/30/2017
 ms.assetid: 59bf0cda-e496-4418-a3a1-2f0f6e85f8ce
-ms.openlocfilehash: 6d5f254f4f94adfaeaf5632ddd696891af177e93
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: bfe13146a7f7cdec648a82a34c34077ec5466809
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69964549"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599936"
 ---
 # <a name="service-auditing-behavior"></a>Поведение аудита службы
-Этот образец демонстрирует, как использовать <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> для включения аудита событий безопасности во время выполнения операций службы. Этот образец основан на [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md). Служба и клиент настроены с помощью [ \<> WSHttpBinding](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). `Message` `clientCredentialType` [Атрибут > безопасностибылустановленвзначениеиимеетзначение.\<](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) `mode` `Windows` В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.  
+Этот образец демонстрирует, как использовать <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> для включения аудита событий безопасности во время выполнения операций службы. Этот образец основан на [Начало работы](getting-started-sample.md). Служба и клиент были настроены с помощью [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) . `mode`Атрибут [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) имеет значение `Message` и было `clientCredentialType` установлено в значение `Windows` . В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
@@ -34,7 +34,7 @@ ms.locfileid: "69964549"
   
  При выполнении примера запросы и ответы операций отображаются в окне консоли клиента. Чтобы закрыть клиент, нажмите клавишу ВВОД в окне консоли.  
   
- Получающиеся журналы аудита можно просматривать в программе Просмотр событий. По умолчанию в Windows XP события аудита отображаются в журнале приложений, а в операционных системах Windows Server 2003 и Windows Vista события аудита можно просмотреть в журнале безопасности. В Windows Server 2008 и Windows 7 события аудита можно увидеть в журналах приложений и служб. Расположение событий аудита можно задать, задав `auditLogLocation` для атрибута значение "Application" или "Security". Дополнительные сведения см. в разделе [Практическое руководство. Аудит событий](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)безопасности. Если события записываются в журнал безопасности, то Локалсекуритиполици-> включить доступ к объектам должен быть установлен для "Success" и "failure".  
+ Получающиеся журналы аудита можно просматривать в программе Просмотр событий. По умолчанию в Windows XP события аудита отображаются в журнале приложений, а в операционных системах Windows Server 2003 и Windows Vista события аудита можно просмотреть в журнале безопасности. В Windows Server 2008 и Windows 7 события аудита можно увидеть в журналах приложений и служб. Расположение событий аудита можно задать, задав `auditLogLocation` для атрибута значение "Application" или "Security". Дополнительные сведения см. [в разделе инструкции. Аудит событий безопасности](../feature-details/how-to-audit-wcf-security-events.md). Если события записываются в журнал безопасности, то Локалсекуритиполици-> включить доступ к объектам должен быть установлен для "Success" и "failure".  
   
  При просмотре журнала событий источником событий аудита является "ServiceModel Audit 3.0.0.0". Записи аудита проверки подлинности сообщений имеют категорию "Мессажеаусентикатион", а записи аудита авторизации служб имеют категорию "ServiceAuthorization".  
   
@@ -44,13 +44,13 @@ ms.locfileid: "69964549"
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Аудит](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
-- [Практическое руководство. Аудит событий безопасности](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
+- [Аудит](../feature-details/auditing-security-events.md)
+- [Практическое руководство. Аудит событий безопасности](../feature-details/how-to-audit-wcf-security-events.md)

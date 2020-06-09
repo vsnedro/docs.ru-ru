@@ -2,23 +2,23 @@
 title: Служба AJAX без конфигурации
 ms.date: 03/30/2017
 ms.assetid: e6db7acd-5679-45d4-b98a-8449c6873838
-ms.openlocfilehash: bf80f00bbca370c973dab9f20024284a465be521
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: ab3731ab6aeb80e0e46228b8bf702b0fe5c6e6e9
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74716195"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84575905"
 ---
 # <a name="ajax-service-without-configuration"></a>Служба AJAX без конфигурации
 
-В этом примере показано, как использовать Windows Communication Foundation (WCF) для создания базовой асинхронной службы JavaScript и XML (AJAX) ASP.NET (службы, к которой можно получить доступ с помощью кода JavaScript из клиента веб-браузера) без использования конфигурации. Параметры. Эта служба использует особый синтаксис в файле .svc для автоматического включения конечной точки AJAX.
+В этом примере показано, как использовать Windows Communication Foundation (WCF) для создания базовой ASP.NET асинхронной службы JavaScript и XML (AJAX) (службы, к которой можно получить доступ с помощью кода JavaScript из клиента веб-браузера) без использования параметров конфигурации. Эта служба использует особый синтаксис в файле .svc для автоматического включения конечной точки AJAX.
 
-Поддержка AJAX в WCF оптимизирована для использования с ASP.NET AJAX через элемент управления `ScriptManager`. Пример использования WCF с ASP.NET AJAX см. в разделе [примеры AJAX](ajax.md).
+Поддержка AJAX в WCF оптимизирована для использования с ASP.NET AJAX через `ScriptManager` элемент управления. Пример использования WCF с ASP.NET AJAX см. в разделе [примеры AJAX](ajax.md).
 
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.
 
- Этот образец сформирован на основе службы AJAX, в которой используются сообщения POST протокола HTTP. Как описано в примере [базовой службы AJAX](../../../../docs/framework/wcf/samples/basic-ajax-service.md) , <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> используется для размещения службы.
+ Этот образец сформирован на основе службы AJAX, в которой используются сообщения POST протокола HTTP. Как описано в примере [базовой службы AJAX](basic-ajax-service.md) , <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> для размещения службы используется.
 
 ```text
 <%ServiceHost
@@ -36,21 +36,21 @@ ms.locfileid: "74716195"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Ajax\ConfigFreeAjaxService`
 
 #### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
 
-1. Убедитесь, что инструкции по установке выполняются в ходе [однократной настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что инструкции по установке выполняются в ходе [однократной настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Создайте решение Конфигфриажакссервице. sln, как описано в разделе [Создание примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Создайте решение Конфигфриажакссервице. sln, как описано в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).
 
-3. Перейдите к `http://localhost/ServiceModelSamples/ConfigFreeClientPage.aspx` (не открывайте ConfigFreeClientPage. aspx в браузере в каталоге проекта).
+3. Перейдите к `http://localhost/ServiceModelSamples/ConfigFreeClientPage.aspx` (не открывайте ConfigFreeClientPage. aspx в браузере из каталога проекта).
 
 > [!NOTE]
 > При выполнении этого примера убедитесь, что анонимный доступ и проверка подлинности Windows не включены одновременно для папки ServiceModelSamples в IIS. Однако если они включены, отключите проверку подлинности Windows. По завершении выполнения примера включите проверку подлинности Windows и выполните "iisreset".
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Базовая служба AJAX](../../../../docs/framework/wcf/samples/basic-ajax-service.md)
+- [Базовая служба AJAX](basic-ajax-service.md)

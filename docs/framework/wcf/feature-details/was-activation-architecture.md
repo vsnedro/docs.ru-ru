@@ -2,12 +2,12 @@
 title: Архитектура активации WAS
 ms.date: 03/30/2017
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
-ms.openlocfilehash: 67ddcd97ac75ddeb0765c38bb9ce7b5e8f039272
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cfbfd91f9e7bc2e1b4f8485d5ae22c1fb2b5228b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184242"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600676"
 ---
 # <a name="was-activation-architecture"></a>Архитектура активации WAS
 В настоящем разделе перечисляются и обсуждаются компоненты службы активации процесса Windows (также известной как WAS).  
@@ -27,17 +27,17 @@ ms.locfileid: "79184242"
   
  Когда служба WAS активирует экземпляр рабочего процесса, она загружает требуемые обработчики протоколов процесса в рабочей процесс и использует диспетчер приложения для создания домена приложения, в котором будет размещено это приложение. Домен приложения загружает код приложения, а также обработчики протоколов домена приложения, которые требуются для используемых приложением сетевых протоколов.  
   
- ![Скриншот, который показывает архитектуру WAS.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
+ ![Снимок экрана, на котором показана архитектура WAS.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
   
 ### <a name="listener-adapters"></a>Адаптеры прослушивателя  
- Адаптеры прослушивателя - это отдельные службы Windows, реализующие логику сетевого взаимодействия, используемую для приема сообщений по сетевому протоколу, по которому они ожидают передачи данных. В следующей таблице перечислены адаптеры слушателя для протоколов Windows Communication Foundation (WCF).  
+ Адаптеры прослушивателя - это отдельные службы Windows, реализующие логику сетевого взаимодействия, используемую для приема сообщений по сетевому протоколу, по которому они ожидают передачи данных. В следующей таблице перечислены Адаптеры прослушивателя для протоколов Windows Communication Foundation (WCF).  
   
 |Имя службы адаптера прослушивателя|Протокол|Примечания|  
 |-----------------------------------|--------------|-----------|  
-|W3SVC|http|Общий компонент, обеспечивающий активацию HTTP как для IIS 7.0, так и для WCF.|  
+|W3SVC|http|Общий компонент, обеспечивающий активацию HTTP как для IIS 7,0, так и для WCF.|  
 |NetTcpActivator|net.tcp|Зависит от службы NetTcpPortSharing.|  
 |NetPipeActivator|net.pipe||  
-|NetMsmqActivator|net.msmq|Для использования с wCF основе сообщения queuing приложений.|  
+|NetMsmqActivator|net.msmq|Для использования с приложениями очереди сообщений на основе WCF.|  
 |NetMsmqActivator|msmq.formatname|Обеспечивает обратную совместимость с существующими приложениями очереди сообщений.|  
   
  Адаптеры прослушивателя для отдельных протоколов регистрируются во время установки в файле applicationHost.config, как показано в следующем примере XML.  
@@ -85,7 +85,7 @@ ms.locfileid: "79184242"
 </system.web>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Настройка WAS для использования с WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)
+- [Настройка WAS для использования с WCF](configuring-the-wpa--service-for-use-with-wcf.md)
 - [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

@@ -5,29 +5,29 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
-ms.openlocfilehash: 3660877194931c2be5b9b1c9aa54e2595701697f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2b2717bc68da9f07cd38e10a5d75b2a7df9add45
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184647"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602639"
 ---
 # <a name="message-security-with-a-certificate-client"></a>Безопасность сообщений при использовании клиентом сертификата
-В следующем сценарии показан клиент и служба Windows Communication Foundation (WCF), защищенные с помощью режима безопасности сообщений. Проверка подлинности клиента и службы выполняется с помощью сертификатов. Для получения дополнительной информации [см.](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)
+В следующем сценарии показана защита клиента Windows Communication Foundation (WCF) и службы с помощью режима безопасности сообщений. Проверка подлинности клиента и службы выполняется с помощью сертификатов. Дополнительные сведения см. в разделе [Безопасность распределенных приложений](distributed-application-security.md).
 
- ![Скриншот, на который изображен клиент с сертификатом.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
+ ![Снимок экрана, на котором показан клиент с сертификатом.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
   
- Для примера приложения [см.](../../../../docs/framework/wcf/samples/message-security-certificate.md)  
+ Пример приложения см. в разделе [сертификат безопасности сообщения](../samples/message-security-certificate.md).  
 
 |Характеристика|Описание|  
 |--------------------|-----------------|  
 |Режим безопасности|Сообщение|  
-|Совместимость|Только WCF|  
+|Взаимодействие|Только WCF|  
 |Проверка подлинности (сервера)|Использование сертификатов служб|  
 |Проверка подлинности (клиента)|Использование сертификатов клиента|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
-|Транспортировка|HTTP|  
+|Транспорт|HTTP|  
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="service"></a>Служба  
@@ -84,12 +84,12 @@ ms.locfileid: "79184647"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -101,7 +101,7 @@ ms.locfileid: "79184647"
  [!code-vb[C_SecurityScenarios#17](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#17)]  
   
 ### <a name="configuration"></a>Конфигурация  
- В следующей конфигурации задается сертификат клиента с помощью поведения конечной точки. Дополнительные сведения см. в разделе [Работа с сертификатами](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). Код также использует `identity` элемент <> для указания системы доменных имен (DNS) ожидаемого итога сервера. Для получения дополнительной информации о личности, см [Служба идентификации и аутентификации](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+ В следующей конфигурации задается сертификат клиента с помощью поведения конечной точки. Дополнительные сведения см. в разделе [Работа с сертификатами](working-with-certificates.md). Код также использует `identity` элемент> <, чтобы указать службу доменных имен (DNS) ожидаемого удостоверения сервера. Дополнительные сведения об удостоверении см. в статье [удостоверение службы и проверка подлинности](service-identity-and-authentication.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -143,9 +143,9 @@ ms.locfileid: "79184647"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Обзор безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Идентификация и проверка подлинности службы](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
-- [Работа с сертификатами](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Обзор безопасности](security-overview.md)
+- [Идентификация и проверка подлинности службы](service-identity-and-authentication.md)
+- [Работа с сертификатами](working-with-certificates.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

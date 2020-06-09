@@ -2,16 +2,16 @@
 title: Активация NamedPipe
 ms.date: 03/30/2017
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
-ms.openlocfilehash: a562ec51d35af08f49e89b652670e9a57b0f00c2
-ms.sourcegitcommit: a4f9b754059f0210e29ae0578363a27b9ba84b64
+ms.openlocfilehash: 8d9a10b94c52514db611144352653b911d109056
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74837861"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602470"
 ---
 # <a name="namedpipe-activation"></a>Активация NamedPipe
 
-Этот пример демонстрирует размещение службы, которая использует службу активации Windows (WAS), чтобы активировать службу, которая взаимодействует через именованные каналы. Этот пример основан на [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md) и требует запуска Windows Vista.
+Этот пример демонстрирует размещение службы, которая использует службу активации Windows (WAS), чтобы активировать службу, которая взаимодействует через именованные каналы. Этот пример основан на [Начало работы](getting-started-sample.md) и требует запуска Windows Vista.
 
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.
@@ -21,7 +21,7 @@ ms.locfileid: "74837861"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WASHost\NamedPipeActivation`
 
@@ -161,7 +161,7 @@ Press <ENTER> to terminate client.
 
 1. Убедитесь, что установлен сервер IIS 7,0. Для активации WAS требуется IIS 7,0.
 
-2. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+2. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
     Кроме того, необходимо установить компоненты активации WCF, отличные от HTTP:
 
@@ -198,9 +198,9 @@ Press <ENTER> to terminate client.
         > [!NOTE]
         > Эта команда представляет собой одну строку текста.
 
-        Эта команда позволяет получить доступ к приложению/сервицемоделсамплес, используя как `http://localhost/servicemodelsamples`, так `net.tcp://localhost/servicemodelsamples`.
+        Эта команда позволяет получить доступ к приложению/сервицемоделсамплес с помощью `http://localhost/servicemodelsamples` и `net.tcp://localhost/servicemodelsamples` .
 
-4. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+4. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 5. Удалите привязку узла к протоколу net.pipe, добавленную ранее для этого образца.
 
@@ -224,6 +224,6 @@ Press <ENTER> to terminate client.
         > [!NOTE]
         > Эта команда должна вводиться как одна строка текста.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Примеры размещения и сохраняемости AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))
+- [Образцы размещения и сохраняемости AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))

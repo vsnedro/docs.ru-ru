@@ -2,12 +2,12 @@
 title: Практическое руководство. Сокращение времени запуска клиентских приложений WCF с использованием XmlSerializer
 ms.date: 03/30/2017
 ms.assetid: 21093451-0bc3-4b1a-9a9d-05f7f71fa7d0
-ms.openlocfilehash: ca15d710a30586135f0d030e155b09b63a22ee45
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 91712963908ecc56ff17fbac028389207544b82f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73976060"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600261"
 ---
 # <a name="how-to-improve-the-startup-time-of-wcf-client-applications-using-the-xmlserializer"></a>Практическое руководство. Сокращение времени запуска клиентских приложений WCF с использованием XmlSerializer
 Службы и клиентские приложения, использующие типы данных, сериализуемые с помощью сериализатора <xref:System.Xml.Serialization.XmlSerializer>, создают и компилируют код сериализации для этих типов данных во время выполнения, что может привести к снижению производительности при запуске.  
@@ -15,7 +15,7 @@ ms.locfileid: "73976060"
 > [!NOTE]
 > Предварительно созданный код сериализации может использоваться только в клиентских приложениях, но не в службах.  
   
- [Средство служебной программы метаданных ServiceModel (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) может улучшить производительность при запуске этих приложений, создавая необходимый код сериализации из скомпилированных сборок для приложения. Svcutil.exe создает код сериализации для всех типов данных, используемых в контрактах служб в скомпилированной сборке приложения, которые могут быть сериализованы с помощью <xref:System.Xml.Serialization.XmlSerializer>. Контракты служб и операций, предусматривающие использование <xref:System.Xml.Serialization.XmlSerializer>, отмечены атрибутом <xref:System.ServiceModel.XmlSerializerFormatAttribute>.  
+ [Средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) может улучшить производительность при запуске этих приложений, создавая необходимый код сериализации из скомпилированных сборок для приложения. Svcutil.exe создает код сериализации для всех типов данных, используемых в контрактах служб в скомпилированной сборке приложения, которые могут быть сериализованы с помощью <xref:System.Xml.Serialization.XmlSerializer>. Контракты служб и операций, предусматривающие использование <xref:System.Xml.Serialization.XmlSerializer>, отмечены атрибутом <xref:System.ServiceModel.XmlSerializerFormatAttribute>.  
   
 ### <a name="to-generate-xmlserializer-serialization-code"></a>Создание кода сериализации XmlSerializer  
   
@@ -47,11 +47,11 @@ ms.locfileid: "73976060"
   
 1. Создание проектов службы и клиента WCF в Visual Studio. Затем добавьте ссылку на службу в клиентский проект.  
   
-2. Добавьте <xref:System.ServiceModel.XmlSerializerFormatAttribute> в контракт службы в файле *Reference.CS* в проекте клиентского приложения в разделе **укзать** -> **Reference. svcmap**. Обратите внимание, что для просмотра этих файлов необходимо показать все файлы в **Обозреватель решений** .  
+2. Добавьте в <xref:System.ServiceModel.XmlSerializerFormatAttribute> контракт службы в файле *Reference.CS* в проекте клиентского приложения в разделе **укзать**  ->  **Reference. svcmap**. Обратите внимание, что для просмотра этих файлов необходимо показать все файлы в **Обозреватель решений** .  
   
 3. Создайте клиентское приложение.  
   
-4. Используйте [средство служебной программы для метаданных ServiceModel (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) , чтобы создать предварительно созданный файл сериализатора *. CS* с помощью команды:  
+4. Используйте [средство служебной программы для метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , чтобы создать предварительно созданный файл сериализатора *. CS* с помощью команды:  
   
     ```console  
     svcutil.exe /t:xmlSerializer  <assemblyPath>*  
@@ -86,6 +86,6 @@ ms.locfileid: "73976060"
 svcutil /t:xmlserializer myContractLibrary.exe  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Служебная программа для метаданных ServiceModel (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

@@ -2,31 +2,31 @@
 title: Контракты служб
 ms.date: 03/30/2017
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
-ms.openlocfilehash: e6e4deaf3c5023f28f76983e6b7dfe2e24182c11
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f4487ac693b93a27b11fb69b1c663285ebcdc107
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61967587"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599897"
 ---
 # <a name="service-contracts"></a>Контракты служб
-Этот раздел содержит образцы, которые демонстрируют контракты служб в Windows Communication Foundation (WCF).  
+В этом разделе содержатся примеры, демонстрирующие контракты служб в Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Дуплекс](../../../../docs/framework/wcf/samples/duplex.md)  
+ [Дуплекс](duplex.md)  
  Показано, как определить и реализовать двухсторонний контракт.  
   
- [Контракт ошибок](../../../../docs/framework/wcf/samples/fault-contract.md)  
+ [Контракт ошибок](fault-contract.md)  
  Демонстрирует передачу информации об ошибке из службы клиенту.  
   
- [Одностороннее взаимодействие](../../../../docs/framework/wcf/samples/one-way.md)  
+ [Одностороннее взаимодействие](one-way.md)  
  Демонстрирует контакт службы с односторонними операциями службы.  
   
- [Session](../../../../docs/framework/wcf/samples/session.md)  
+ [Session](session.md)  
  Показана реализация контракта, требующего сеанс.  
   
- [Поток](../../../../docs/framework/wcf/samples/stream.md)  
+ [Поток](stream.md)  
  Показывает использование взаимодействия в режиме потоковой передачи.  
   
- [Ошибки XmlSerializer](../../../../docs/framework/wcf/samples/xmlserializer-faults.md)  
+ [Ошибки XmlSerializer](xmlserializer-faults.md)  
  Показывается, как передать сведения об ошибке из службы клиенту с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.

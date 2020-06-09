@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
-ms.openlocfilehash: 1a2723a445c71dd883492907587f8cbe7b89666a
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 67fbbb035a3a6683cefbf24e299f32579b674bbd
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64613221"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84597258"
 ---
 # <a name="how-the-wcf-syndication-object-model-maps-to-atom-and-rss"></a>Сопоставление объектной модели синдикации WCF моделям Atom и RSS
-При разработке службы синдикации Windows Communication Foundation (WCF), можно создавать, веб-каналы и элементы, используя следующие классы:  
+При разработке службы синдикации Windows Communication Foundation (WCF) вы создаете веб-каналы и элементы с помощью следующих классов:  
   
 - <xref:System.ServiceModel.Syndication.SyndicationFeed>  
   
@@ -31,9 +31,9 @@ ms.locfileid: "64613221"
   
 - <xref:System.ServiceModel.Syndication.XmlSyndicationContent>  
   
- Объект <xref:System.ServiceModel.Syndication.SyndicationFeed> может быть сериализован в любой формат синдикации, для которого определен модуль форматирования. WCF поставляется с двумя модулями форматирования: <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> и <xref:System.ServiceModel.Syndication.Rss20FeedFormatter>.  
+ Объект <xref:System.ServiceModel.Syndication.SyndicationFeed> может быть сериализован в любой формат синдикации, для которого определен модуль форматирования. WCF поставляется с двумя модулями форматирования: <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> и <xref:System.ServiceModel.Syndication.Rss20FeedFormatter> .  
   
- Объектная модель, связанная с классами <xref:System.ServiceModel.Syndication.SyndicationFeed> и <xref:System.ServiceModel.Syndication.SyndicationItem>, больше соответствует спецификации Atom 1.0, чем спецификации RSS 2.0. Это связано с тем, что Atom 1.0 - более значимая спецификация, определяющая элементы, которые являются неоднозначными или не включены в спецификацию RSS 2.0. По этой причине многие элементы в объектной модели синдикации WCF имеют непосредственно не представлены в спецификации RSS 2.0. При сериализации <xref:System.ServiceModel.Syndication.SyndicationFeed> и <xref:System.ServiceModel.Syndication.SyndicationItem> объекты в RSS 2.0, WCF позволяет сериализовать элементы данных Atom как элементы с указанием пространства имен расширения, которые соответствуют спецификации Atom. Этим процессом можно управлять с помощью параметра, передаваемого в конструктор <xref:System.ServiceModel.Syndication.Rss20FeedFormatter>.  
+ Объектная модель, связанная с классами <xref:System.ServiceModel.Syndication.SyndicationFeed> и <xref:System.ServiceModel.Syndication.SyndicationItem>, больше соответствует спецификации Atom 1.0, чем спецификации RSS 2.0. Это связано с тем, что Atom 1.0 - более значимая спецификация, определяющая элементы, которые являются неоднозначными или не включены в спецификацию RSS 2.0. По этой причине многие элементы в объектной модели синдикации WCF не имеют прямого представления в спецификации RSS 2,0. При сериализации <xref:System.ServiceModel.Syndication.SyndicationFeed> и использовании <xref:System.ServiceModel.Syndication.SyndicationItem> объектов в RSS 2,0 WCF позволяет сериализовать элементы данных Atom в виде элементов расширения пространства имен, которые соответствуют спецификации Atom. Этим процессом можно управлять с помощью параметра, передаваемого в конструктор <xref:System.ServiceModel.Syndication.Rss20FeedFormatter>.  
   
  В примерах кода в данном разделе для выполнения фактической сериализации используется один из двух определенных здесь методов.  
   
@@ -397,10 +397,10 @@ ms.locfileid: "64613221"
   
  `</content>`  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения о синдикации WCF](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)
-- [Архитектура синдикации](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)
-- [Практическое руководство. Создание базового RSS-канала](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)
-- [Практическое руководство. Создание базового канала Atom](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-atom-feed.md)
-- [Практическое руководство. Публикация канала в форматах Atom и RSS](../../../../docs/framework/wcf/feature-details/how-to-expose-a-feed-as-both-atom-and-rss.md)
+- [Общие сведения о синдикации WCF](wcf-syndication-overview.md)
+- [Архитектура синдикации](architecture-of-syndication.md)
+- [Практическое руководство. Создание базового RSS-канала](how-to-create-a-basic-rss-feed.md)
+- [Практическое руководство. Создание базового канала Atom](how-to-create-a-basic-atom-feed.md)
+- [Практическое руководство. Как предоставить доступ к каналу в форматах Atom и RSS](how-to-expose-a-feed-as-both-atom-and-rss.md)
