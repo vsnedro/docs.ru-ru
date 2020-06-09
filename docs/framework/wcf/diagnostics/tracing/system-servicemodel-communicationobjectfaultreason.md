@@ -2,21 +2,21 @@
 title: System.ServiceModel.CommunicationObjectFaultReason
 ms.date: 03/30/2017
 ms.assetid: d2530933-bfba-4b20-aba6-b1f99e97699d
-ms.openlocfilehash: 48718a42c48023ef288d5dc5e082cad604c9892d
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 6fc059c019368575220bd092f67a1e5046a34fc1
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61795867"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84588149"
 ---
-# <a name="systemservicemodelcommunicationobjectfaultreason"></a><span data-ttu-id="9261b-102">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="9261b-102">System.ServiceModel.CommunicationObjectFaultReason</span></span>
-<span data-ttu-id="9261b-103">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="9261b-103">System.ServiceModel.CommunicationObjectFaultReason</span></span>  
+# <a name="systemservicemodelcommunicationobjectfaultreason"></a><span data-ttu-id="9a79c-102">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="9a79c-102">System.ServiceModel.CommunicationObjectFaultReason</span></span>
+<span data-ttu-id="9a79c-103">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="9a79c-103">System.ServiceModel.CommunicationObjectFaultReason</span></span>  
   
-## <a name="description"></a><span data-ttu-id="9261b-104">Описание</span><span class="sxs-lookup"><span data-stu-id="9261b-104">Description</span></span>  
- <span data-ttu-id="9261b-105">Произошел сбой объекта связи из-за исключения.</span><span class="sxs-lookup"><span data-stu-id="9261b-105">A communication object faulted due to exception.</span></span>  
+## <a name="description"></a><span data-ttu-id="9a79c-104">Описание</span><span class="sxs-lookup"><span data-stu-id="9a79c-104">Description</span></span>  
+ <span data-ttu-id="9a79c-105">Произошел сбой объекта связи из-за исключения.</span><span class="sxs-lookup"><span data-stu-id="9a79c-105">A communication object faulted due to exception.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="9261b-106">См. также</span><span class="sxs-lookup"><span data-stu-id="9261b-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9a79c-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="9a79c-106">See also</span></span>
 
-- [<span data-ttu-id="9261b-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="9261b-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="9261b-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="9261b-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="9261b-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="9261b-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="9a79c-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="9a79c-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="9a79c-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="9a79c-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="9a79c-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="9a79c-109">Administration and Diagnostics</span></span>](../index.md)
