@@ -2,21 +2,21 @@
 title: System.ServiceModel.Activation.ServiceShutdown
 ms.date: 03/30/2017
 ms.assetid: fc356855-f996-4c0d-9ff9-503103803d91
-ms.openlocfilehash: 2a8ec9f2d3454979f83d92073348bf6145a612be
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 0fae5e2effb1314575d930f84c1607232cf5867b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61792552"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84582768"
 ---
-# <a name="systemservicemodelactivationserviceshutdown"></a><span data-ttu-id="50065-102">System.ServiceModel.Activation.ServiceShutdown</span><span class="sxs-lookup"><span data-stu-id="50065-102">System.ServiceModel.Activation.ServiceShutdown</span></span>
-<span data-ttu-id="50065-103">System.ServiceModel.Activation.ServiceShutdown</span><span class="sxs-lookup"><span data-stu-id="50065-103">System.ServiceModel.Activation.ServiceShutdown</span></span>  
+# <a name="systemservicemodelactivationserviceshutdown"></a><span data-ttu-id="38193-102">System.ServiceModel.Activation.ServiceShutdown</span><span class="sxs-lookup"><span data-stu-id="38193-102">System.ServiceModel.Activation.ServiceShutdown</span></span>
+<span data-ttu-id="38193-103">System.ServiceModel.Activation.ServiceShutdown</span><span class="sxs-lookup"><span data-stu-id="38193-103">System.ServiceModel.Activation.ServiceShutdown</span></span>  
   
-## <a name="description"></a><span data-ttu-id="50065-104">Описание</span><span class="sxs-lookup"><span data-stu-id="50065-104">Description</span></span>  
- <span data-ttu-id="50065-105">Получен запрос на завершение работы этой службы.</span><span class="sxs-lookup"><span data-stu-id="50065-105">A request to shutdown the service was received.</span></span>  
+## <a name="description"></a><span data-ttu-id="38193-104">Описание</span><span class="sxs-lookup"><span data-stu-id="38193-104">Description</span></span>  
+ <span data-ttu-id="38193-105">Получен запрос на завершение работы этой службы.</span><span class="sxs-lookup"><span data-stu-id="38193-105">A request to shutdown the service was received.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="50065-106">См. также</span><span class="sxs-lookup"><span data-stu-id="50065-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="38193-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="38193-106">See also</span></span>
 
-- [<span data-ttu-id="50065-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="50065-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="50065-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="50065-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="50065-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="50065-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="38193-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="38193-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="38193-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="38193-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="38193-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="38193-109">Administration and Diagnostics</span></span>](../index.md)

@@ -2,21 +2,21 @@
 title: System.ServiceModel.Activation.MessageQueueRegisterCalled
 ms.date: 03/30/2017
 ms.assetid: 89e57e8e-39ae-4850-880c-f15629945584
-ms.openlocfilehash: afe157db1e721c55c7b90d12d2cc28995c0f38c5
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: c1b58107c20e49f2e9a730748c77d6f8912c8d4e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61792591"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84582820"
 ---
-# <a name="systemservicemodelactivationmessagequeueregistercalled"></a><span data-ttu-id="5cbe2-102">System.ServiceModel.Activation.MessageQueueRegisterCalled</span><span class="sxs-lookup"><span data-stu-id="5cbe2-102">System.ServiceModel.Activation.MessageQueueRegisterCalled</span></span>
-<span data-ttu-id="5cbe2-103">System.ServiceModel.Activation.MessageQueueRegisterCalled</span><span class="sxs-lookup"><span data-stu-id="5cbe2-103">System.ServiceModel.Activation.MessageQueueRegisterCalled</span></span>  
+# <a name="systemservicemodelactivationmessagequeueregistercalled"></a><span data-ttu-id="d1cc5-102">System.ServiceModel.Activation.MessageQueueRegisterCalled</span><span class="sxs-lookup"><span data-stu-id="d1cc5-102">System.ServiceModel.Activation.MessageQueueRegisterCalled</span></span>
+<span data-ttu-id="d1cc5-103">System.ServiceModel.Activation.MessageQueueRegisterCalled</span><span class="sxs-lookup"><span data-stu-id="d1cc5-103">System.ServiceModel.Activation.MessageQueueRegisterCalled</span></span>  
   
-## <a name="description"></a><span data-ttu-id="5cbe2-104">Описание</span><span class="sxs-lookup"><span data-stu-id="5cbe2-104">Description</span></span>  
- <span data-ttu-id="5cbe2-105">Выполнен вызов для регистрации пространства имен.</span><span class="sxs-lookup"><span data-stu-id="5cbe2-105">A call was made to register a namespace.</span></span>  
+## <a name="description"></a><span data-ttu-id="d1cc5-104">Описание</span><span class="sxs-lookup"><span data-stu-id="d1cc5-104">Description</span></span>  
+ <span data-ttu-id="d1cc5-105">Выполнен вызов для регистрации пространства имен.</span><span class="sxs-lookup"><span data-stu-id="d1cc5-105">A call was made to register a namespace.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5cbe2-106">См. также</span><span class="sxs-lookup"><span data-stu-id="5cbe2-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d1cc5-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="d1cc5-106">See also</span></span>
 
-- [<span data-ttu-id="5cbe2-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="5cbe2-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="5cbe2-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="5cbe2-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="5cbe2-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="5cbe2-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="d1cc5-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="d1cc5-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="d1cc5-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="d1cc5-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="d1cc5-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="d1cc5-109">Administration and Diagnostics</span></span>](../index.md)
