@@ -2,16 +2,16 @@
 title: Совместимость с ASP.NET
 ms.date: 03/30/2017
 ms.assetid: c8b51f1e-c096-4c42-ad99-0519887bbbc5
-ms.openlocfilehash: 1f1690cdd1a880c852abc04ea8e4958bae2c5432
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 23930e0756d3fbefc28a8f650b5a056106145a50
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76728017"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594716"
 ---
 # <a name="aspnet-compatibility"></a>Совместимость с ASP.NET
 
-В этом примере показано, как включить режим совместимости ASP.NET в Windows Communication Foundation (WCF). Службы, работающие в режиме совместимости ASP.NET, полностью участвуют в конвейере приложений ASP.NET и могут использовать такие функции ASP.NET, как авторизация файлов и URL-адресов, состояние сеанса и класс <xref:System.Web.HttpContext>. Класс <xref:System.Web.HttpContext> предоставляет доступ к файлам cookie, сеансам и другим ASP.NET функциям. Для этого режима требуется, чтобы привязки использовали транспорт HTTP, а сами службы были размещены в службах IIS.
+В этом примере показано, как включить режим совместимости ASP.NET в Windows Communication Foundation (WCF). Службы, работающие в режиме совместимости ASP.NET, полностью участвуют в конвейере приложений ASP.NET и могут использовать такие функции ASP.NET, как авторизация файлов и URL-адресов, состояние сеанса и <xref:System.Web.HttpContext> класс. <xref:System.Web.HttpContext>Класс предоставляет доступ к файлам cookie, сеансам и другим ASP.NET функциям. Для этого режима требуется, чтобы привязки использовали транспорт HTTP, а сами службы были размещены в службах IIS.
 
 В этом примере клиентом является консольное приложение (как исполняемый файл), а служба размещается в службах IIS.
 
@@ -24,20 +24,20 @@ ms.locfileid: "76728017"
 
 2. Разверните элемент TreeView в области **подключения** . Выберите узел **Пулы приложений** .
 
-3. Чтобы настроить пул приложений по умолчанию для использования .NET Framework 4 (что может привести к проблемам несовместимости с существующими сайтами), щелкните правой кнопкой мыши элемент списка **DefaultAppPool** и выберите пункт **Основные параметры...** . Задайте для **версии .NET Framework версию** **.NET Framework v 4.0.30128** (или более позднюю).
+3. Чтобы настроить пул приложений по умолчанию для использования .NET Framework 4 (что может привести к проблемам несовместимости с существующими сайтами), щелкните правой кнопкой мыши элемент списка **DefaultAppPool** и выберите пункт **Основные параметры...**. Задайте для **версии .NET Framework версию** **.NET Framework v 4.0.30128** (или более позднюю).
 
-4. Чтобы создать новый пул приложений, использующий .NET Framework 4 (чтобы сохранить совместимость для других приложений), щелкните правой кнопкой мыши узел **Пулы приложений** и выберите **Добавить пул приложений.** ... Присвойте новому пулу приложений имя, а для параметра **версия .NET Framework** — значение **.NET Framework v 4.0.30128** (или более поздней версии). После выполнения приведенных ниже шагов настройки щелкните правой кнопкой мыши приложение **servicemodelsamples** и выберите **Управление приложением**, **Дополнительные параметры...** . Задайте для **пула приложений** новый пул приложений.
+4. Чтобы создать новый пул приложений, использующий .NET Framework 4 (чтобы сохранить совместимость для других приложений), щелкните правой кнопкой мыши узел **Пулы приложений** и выберите **Добавить пул приложений.**... Присвойте новому пулу приложений имя, а для параметра **версия .NET Framework** — значение **.NET Framework v 4.0.30128** (или более поздней версии). После выполнения приведенных ниже шагов настройки щелкните правой кнопкой мыши приложение **servicemodelsamples** и выберите **Управление приложением**, **Дополнительные параметры...**. Задайте для **пула приложений** новый пул приложений.
 
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebHost\ASPNetCompatibility`
 
-Этот образец основан на [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md), который реализует службу калькулятора. Контракт `ICalculator` был изменен в соответствии с контрактом `ICalculatorSession`, чтобы можно было выполнять набор операций с сохранением промежуточного результата.
+Этот образец основан на [Начало работы](getting-started-sample.md), который реализует службу калькулятора. Контракт `ICalculator` был изменен в соответствии с контрактом `ICalculatorSession`, чтобы можно было выполнять набор операций с сохранением промежуточного результата.
 
 ```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
@@ -63,7 +63,7 @@ public interface ICalculatorSession
 Служба использует сеанс ASP.NET для хранения результатов для каждого сеанса клиента. Это позволяет службе поддерживать промежуточный результат для каждого клиента по мере множественных вызовов службы.
 
 > [!NOTE]
-> Состояние сеанса ASP.NET и сеансы WCF очень различны. Дополнительные сведения о сеансах WCF см. в разделе [сеанс](../../../../docs/framework/wcf/samples/session.md) .
+> Состояние сеанса ASP.NET и сеансы WCF очень различны. Дополнительные сведения о сеансах WCF см. в разделе [сеанс](session.md) .
 
 Служба имеет глубокую зависимость от состояния сеанса ASP.NET и требует режима совместимости ASP.NET для правильной работы. Такие требования выражаются декларативно путем применения атрибута `AspNetCompatibilityRequirements`.
 
@@ -120,14 +120,14 @@ Press <ENTER> to terminate client.
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
 
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 3. После построения решения запустите программу Setup. bat, чтобы настроить приложение ServiceModelSamples в IIS 7,0. Теперь каталог ServiceModelSamples должен отображаться как приложение IIS 7,0.
 
-4. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).
+4. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Примеры размещения и сохраняемости AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))
+- [Образцы размещения и сохраняемости AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))

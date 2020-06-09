@@ -8,12 +8,12 @@ helpviewer_keywords:
 - claims [WCF], finding in a claimset
 - claims [WCF]
 ms.assetid: a76ce107-aeb3-47d0-bfa9-134c53664e20
-ms.openlocfilehash: 42e6ee682220913f872da337eb41f6c290082988
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 1954da20d382630f965582fcc01bbaf72665720a
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61856431"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595457"
 ---
 # <a name="finding-claims-in-a-claimset"></a>Поиск утверждений в наборах утверждений
 При использовании авторизации на основе утверждений часто выполняется проверка содержимого <xref:System.IdentityModel.Claims.ClaimSet> для определенных типов утверждений. Чтобы проверить <xref:System.IdentityModel.Claims.ClaimSet> на наличие определенных утверждений, используйте метод <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%2A>. Этот метод обеспечивает более высокую производительность по сравнению с выполнением итерации непосредственно с <xref:System.IdentityModel.Claims.ClaimSet>. Использование этого метода показано в следующем примере. Обратите внимание, что параметры `claimType` и `claimRight` могут иметь значение `null`. В этом случае параметры будут соответствовать всем типам и правам утверждения.  
@@ -24,4 +24,4 @@ ms.locfileid: "61856431"
   
 ## <a name="see-also"></a>См. также
 
-- [Управление утверждениями и авторизацией с помощью модели удостоверения](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [Управление утверждениями и авторизацией с помощью модели удостоверения](managing-claims-and-authorization-with-the-identity-model.md)

@@ -2,43 +2,43 @@
 title: Управление
 ms.date: 03/30/2017
 ms.assetid: 52f4825b-91a2-4f23-94f4-cfd76a7980cf
-ms.openlocfilehash: b5bb0b72f5290548bb844ac4f00b6fbbd9891cb7
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 53c53252e5798ffb01d42b143971a66d1c067851
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61787547"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84591791"
 ---
 # <a name="management"></a>Управление
-Этот раздел содержит образцы, демонстрирующие управление Windows Communication Foundation (WCF).  
+В этом разделе содержатся примеры, демонстрирующие управление Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Службы WCF и трассировка событий для Windows](../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)  
- Демонстрирует использование аналитического отслеживания в WCF для передачи событий в Windows (Трассировка событий).  
+ [Службы WCF и средство отслеживания событий для Windows](wcf-services-and-event-tracing-for-windows.md)  
+ Демонстрирует использование аналитической трассировки в WCF для выдачи событий в трассировке событий Windows (ETW).  
   
- [Аналитическая трассировка WCF](../../../../docs/framework/wcf/samples/wcf-analytic-tracing.md)  
- Демонстрирует способы добавления собственных событий трассировки событий в поток аналитической трассировки, WCF записывает трассировки событий Windows в [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
+ [Аналитическая трассировка WCF](wcf-analytic-tracing.md)  
+ Демонстрирует добавление собственных событий трассировки в поток аналитических трассировок, которые WCF записывает в ETW в [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] .  
   
- [Циклическая трассировка](../../../../docs/framework/wcf/samples/circular-tracing.md)  
+ [Циклическая трассировка](circular-tracing.md)  
  Демонстрирует реализацию прослушивателя трассировки циклического буфера.  
   
- [Трассировка ETW](../../../../docs/framework/wcf/samples/etw-tracing.md)  
+ [Трассировка ETW](etw-tracing.md)  
  Демонстрируется, как реализовать сквозную (E2E) трассировку с помощью средства отслеживания событий для Windows.  
   
- [Расширение трассировки](../../../../docs/framework/wcf/samples/extending-tracing.md)  
- Показано, как расширить возможности трассировки WCF, добавив трассировки пользовательских действий в коде клиента и службы.  
+ [Расширение трассировки](extending-tracing.md)  
+ Демонстрирует, как расширить функцию трассировки WCF путем написания пользовательских трассировок действий в клиенте и в коде службы.  
   
- [Блокировка безопасности PII](../../../../docs/framework/wcf/samples/pii-security-lockdown.md)  
- Показано, как управлять некоторыми возможностями безопасности службы WCF.  
+ [Блокировка безопасности PII](pii-security-lockdown.md)  
+ Демонстрирует, как управлять несколькими функциями службы WCF, относящимися к безопасности.  
   
- [Использование счетчиков производительности](../../../../docs/framework/wcf/samples/using-performance-counters.md)  
- Демонстрирует, как получить доступ к счетчикам производительности WCF и как создавать счетчики производительности, определяемые пользователем.  
+ [Использование счетчиков производительности](using-performance-counters.md)  
+ Демонстрирует, как получить доступ к счетчикам производительности WCF и как создавать пользовательские счетчики производительности.  
   
- [Трассировка и ведение журнала сообщений](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md)  
+ [Трассировка и ведение журнала сообщений](tracing-and-message-logging.md)  
  Показывает, как включить трассировку и ведение журнала сообщений.  
   
- [Проверка безопасности](../../../../docs/framework/wcf/samples/security-validation.md)  
+ [Проверка безопасности](security-validation.md)  
  Демонстрирует, как с помощью пользовательского поведения проверять службы на компьютере на их соответствие определенным условиям.  
   
- [Поставщик WMI](../../../../docs/framework/wcf/samples/wmi-provider.md)  
- Демонстрирует, как собирать данные из службы WCF в среде выполнения с помощью поставщика инструментария управления Windows (WMI), который встроен в WCF.
+ [Поставщик WMI](wmi-provider.md)  
+ Демонстрирует, как собирать данные из служб WCF во время выполнения с помощью поставщика инструментарий управления Windows (WMI) (WMI), встроенного в WCF.

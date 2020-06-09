@@ -2,30 +2,30 @@
 title: Практическое руководство. Использование поставщика ролей ASP.NET со службой
 ms.date: 03/30/2017
 ms.assetid: 88d33a81-8ac7-48de-978c-5c5b1257951e
-ms.openlocfilehash: ddfedeb2491998f64ab241ceba303d50d0714351
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 45eeda046e877b4379d7d0e5edd90fac305f5e44
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184772"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595301"
 ---
 # <a name="how-to-use-the-aspnet-role-provider-with-a-service"></a>Практическое руководство. Использование поставщика ролей ASP.NET со службой
 
-Поставщик ASP.NET роли (совместно с ASP.NET поставщиком членства) — это функция, позволяющая ASP.NET разработчикам создавать веб-сайты, позволяющие пользователям создавать учетную запись с сайта и присваиваться роли для целей авторизации. Эта возможность позволяет любому пользователю создать на сайте учетную запись и при входе получать монопольный доступ к сайту и его службам. В этом заключается отличие от безопасности Windows, по условиям которой пользователи обязаны создавать ученые записи в домене Windows. Вместо этого, любой пользователь, который поставляет свои учетные данные (комбинация имени пользователя /пароль) может использовать сайт и его услуги.  
+Поставщик ролей ASP.NET (в сочетании с поставщиком членства ASP.NET) — это функция, позволяющая разработчикам ASP.NET создавать веб-сайты, позволяющие пользователям создавать учетную запись с сайтом и назначать роли для авторизации. Эта возможность позволяет любому пользователю создать на сайте учетную запись и при входе получать монопольный доступ к сайту и его службам. В этом заключается отличие от безопасности Windows, по условиям которой пользователи обязаны создавать ученые записи в домене Windows. Вместо этого любой пользователь, предоставляющий свои учетные данные (сочетание имени пользователя и пароля), может использовать сайт и его службы.  
   
-Для примера приложения [см.](../../../../docs/framework/wcf/samples/membership-and-role-provider.md) Для получения дополнительной информации о функции поставщика ASP.NET членства [ASP.NET](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)см.  
+Пример приложения см. в разделе [поставщик членства и роли](../samples/membership-and-role-provider.md). Дополнительные сведения о функции поставщика членства в ASP.NET см. в разделе [как использовать поставщик членства ASP.NET](how-to-use-the-aspnet-membership-provider.md).  
   
-Возможность поставщика ролей использует базу данных SQL Server для хранения информации о пользователях. Разработчики Windows Communication Foundation (WCF) могут воспользоваться этими функциями в целях безопасности. При интеграции в приложение WCF пользователи должны предоставить клиентское приложение WCF комбинацию имени пользователя/пароля. Чтобы WCF мог использовать базу данных, необходимо <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> создать экземпляр <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode%2A> класса, установить его свойство <xref:System.ServiceModel.Description.PrincipalPermissionMode.UseAspNetRoles>и добавить экземпляр в коллекцию поведения к <xref:System.ServiceModel.ServiceHost> тому, что размещает службу.  
+Возможность поставщика ролей использует базу данных SQL Server для хранения информации о пользователях. Разработчики Windows Communication Foundation (WCF) могут воспользоваться преимуществами этих функций в целях обеспечения безопасности. При интеграции в приложение WCF пользователи должны указать сочетание имени пользователя и пароля для клиентского приложения WCF. Чтобы позволить WCF использовать базу данных, необходимо создать экземпляр <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> класса, установить его <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode%2A> свойство в значение <xref:System.ServiceModel.Description.PrincipalPermissionMode.UseAspNetRoles> и добавить экземпляр в коллекцию поведений в <xref:System.ServiceModel.ServiceHost> , где размещена служба.  
   
 ## <a name="configure-the-role-provider"></a>Настройка поставщика ролей  
   
-1. В файле Web.config под `system.web` элементом <`roleManager`> добавить `enabled` элемент `true`<> и установить его атрибут.  
+1. В файле Web. config в `system.web` элементе < > добавьте `roleManager` элемент < > и присвойте его `enabled` атрибуту значение `true` .  
   
 2. Задайте для атрибута `defaultProvider` значение `SqlRoleProvider`.  
   
-3. В качестве ребенка `roleManager` в элемент <`providers`> добавьте элемент> <.  
+3. В качестве дочернего `roleManager` элемента <> добавьте `providers` элемент <>.  
   
-4. Как ребенок, к `providers` элементу <`add`>, добавьте элемент <> со `name` `type`следующими атрибутами, установленными к соответствующим значениям: , `connectionStringName`и, `applicationName`как показано в следующем примере.  
+4. В качестве дочернего `providers` элемента <> добавьте `add` элемент <> со следующими атрибутами, для которых заданы соответствующие значения: `name` , `type` , `connectionStringName` и `applicationName` , как показано в следующем примере.  
   
     ```xml  
     <!-- Configure the Sql Role Provider. -->  
@@ -40,17 +40,17 @@ ms.locfileid: "79184772"
     </roleManager>  
     ```  
   
-## <a name="configure-the-service-to-use-the-role-provider"></a>Настройка службы для использования ролевой услуги поставщика  
+## <a name="configure-the-service-to-use-the-role-provider"></a>Настройка службы для использования поставщика ролей  
   
-1. В файле Web.config добавьте [ \<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) элемент.  
+1. В файле Web. config добавьте [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md) элемент.  
   
-2. Добавьте элемент [ \<>поведения](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) `system.ServiceModel` в элемент> <.  
+2. Добавьте [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) элемент в `system.ServiceModel` элемент> <.  
   
-3. Добавьте><`behaviors`> элемента [ \<serviceBehaviors.](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md)  
+3. Добавьте в [\<serviceBehaviors>](../../configure-apps/file-schema/wcf/servicebehaviors.md) `behaviors` элемент> <.  
   
-4. Добавьте [ \<элемент поведения>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) и установите `name` атрибут в соответствующее значение.  
+4. Добавьте [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) элемент и присвойте `name` атрибуту соответствующее значение.  
   
-5. Добавьте [ \<>авторизации службы](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) в элемент <`behavior`>.  
+5. Добавьте в [\<serviceAuthorization>](../../configure-apps/file-schema/wcf/serviceauthorization-element.md) `behavior` элемент> <.  
   
 6. Задайте для атрибута `principalPermissionMode` значение `UseAspNetRoles`.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "79184772"
     </behaviors>  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Поставщик членства и ролей](../../../../docs/framework/wcf/samples/membership-and-role-provider.md)
-- [Практическое руководство. Использование поставщика членства ASP.NET](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)
+- [Поставщик членства и ролей](../samples/membership-and-role-provider.md)
+- [Практическое руководство. Использование поставщика членства ASP.NET](how-to-use-the-aspnet-membership-provider.md)

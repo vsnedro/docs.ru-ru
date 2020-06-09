@@ -2,21 +2,21 @@
 title: CustomChannelsTester
 ms.date: 03/30/2017
 ms.assetid: ee1fa307-98b1-4647-8860-2e9217ba6082
-ms.openlocfilehash: c23bd3eddd49972b7083347fed88d4e70707ae58
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9123167e0f97592592765f7b4a4aa768064fc173
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183808"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596608"
 ---
 # <a name="customchannelstester"></a>CustomChannelsTester
 `CustomChannelsTester` - это средство, позволяющее проверять реализации пользовательских каналов на соответствие набору предопределенных контрактов службы. Можно выбрать набор контрактов службы и передать его средству с помощью XML-файла. Затем средство создает службу и клиента, использующих реализации пользовательского канала во время обмена сообщениями.  
   
 ### <a name="to-build-the-tool"></a>Построение средства  
   
-1. Чтобы создать решение, следуйте инструкциям по [созданию образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/building-the-samples.md)  
+1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
-2. При построении решения создаются три файла: CustomChannelsTester.exe, TestSpec.xml и SampleRun.cmd. Файл SampleRun.cmd имеет пример командной строки, которая показывает, как использовать этот инструмент для [тестирования транспорта:](../../../../docs/framework/wcf/samples/transport-udp.md) образец UDP.  
+2. При построении решения создаются три файла: CustomChannelsTester.exe, TestSpec.xml и SampleRun.cmd. Файл Самплерун. cmd содержит образец командной строки, который показывает, как использовать это средство для проверки образца [Transport: UDP](transport-udp.md) .  
   
 ### <a name="to-run-the-tool"></a>Запуск средства  
   
@@ -28,7 +28,7 @@ ms.locfileid: "79183808"
   
      Необходимо использовать параметр `/binding`.  
   
-     `/dll`требуется, если "обязательный" не является системной привязкой, предоставленной Фондом связи Windows (WCF).  
+     `/dll`требуется, если "Binding" не является предоставляемой системой привязкой, предоставляемой Windows Communication Foundation (WCF).  
   
      Аргумент `/testspec` является необязательным.  
   

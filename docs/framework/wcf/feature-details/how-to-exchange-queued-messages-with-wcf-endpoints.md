@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 938e7825-f63a-4c3d-b603-63772fabfdb3
-ms.openlocfilehash: 09b21c9483b4f2716409b560dbbb478fe5a6badd
-ms.sourcegitcommit: 7b1ce327e8c84f115f007be4728d29a89efe11ef
+ms.openlocfilehash: 7da7ba1b680bae2b29eeff8fe669e097ea8eda32
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70972226"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595379"
 ---
 # <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>Практическое руководство. Обмен сообщениями в очереди с конечными точками WCF
 Очереди обеспечивают надежный обмен сообщениями между клиентом и службой Windows Communication Foundation (WCF), даже если служба недоступна во время обмена данными. В следующих процедурах показано, как обеспечить устойчивое взаимодействие между клиентом и службой с помощью стандартной привязки в очереди при реализации службы WCF.  
   
- В этом разделе объясняется, <xref:System.ServiceModel.NetMsmqBinding> как использовать для обмена данными между клиентом WCF и службой WCF.  
+ В этом разделе объясняется, как использовать <xref:System.ServiceModel.NetMsmqBinding> для обмена данными между клиентом WCF и службой WCF.  
   
 ### <a name="to-use-queuing-in-a-wcf-service"></a>Использование очередей в службе WCF.  
   
@@ -75,13 +75,13 @@ ms.locfileid: "70972226"
  [!code-csharp[S_Msmq_Transacted#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/client.cs#12)]
  [!code-vb[S_Msmq_Transacted#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#12)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.NetMsmqBinding>
-- [Привязка MSMQ с поддержкой транзакций](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md)
-- [Очереди в WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
-- [Практическое руководство. Обмен сообщениями с конечными точками WCF и приложениями очереди сообщений](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
-- [Отправка сообщений из приложения Windows Communication Foundation в приложение MSMQ](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)
-- [Установка системы очередей сообщений (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)
-- [Передача сообщений из приложения MSMQ в приложение Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)
-- [Безопасность сообщений при использовании очереди сообщений](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
+- [Привязка MSMQ с поддержкой транзакций](../samples/transacted-msmq-binding.md)
+- [Очереди в WCF](queuing-in-wcf.md)
+- [Практическое руководство. Обмен сообщениями с конечными точками WCF и приложениями очереди сообщений](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
+- [Отправка сообщений из приложения Windows Communication Foundation в приложение MSMQ](../samples/wcf-to-message-queuing.md)
+- [Установка системы очередей сообщений (MSMQ)](../samples/installing-message-queuing-msmq.md)
+- [Передача сообщений из приложения MSMQ в приложение Windows Communication Foundation](../samples/message-queuing-to-wcf.md)
+- [Безопасность сообщений при использовании очереди сообщений](../samples/message-security-over-message-queuing.md)
