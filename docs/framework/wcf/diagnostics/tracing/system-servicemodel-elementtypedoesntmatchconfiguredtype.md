@@ -2,21 +2,21 @@
 title: System.ServiceModel.ElementTypeDoesntMatchConfiguredType
 ms.date: 03/30/2017
 ms.assetid: 0bc74839-6e28-449b-80c9-b62ad7e58207
-ms.openlocfilehash: c6125268e27331ed17cb3fd71776286fa874bdad
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 424d74bd69dffdcd3831d9eb9cf55c5a2e51a088
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61786026"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596029"
 ---
-# <a name="systemservicemodelelementtypedoesntmatchconfiguredtype"></a><span data-ttu-id="2dccd-102">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span><span class="sxs-lookup"><span data-stu-id="2dccd-102">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span></span>
-<span data-ttu-id="2dccd-103">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span><span class="sxs-lookup"><span data-stu-id="2dccd-103">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span></span>  
+# <a name="systemservicemodelelementtypedoesntmatchconfiguredtype"></a><span data-ttu-id="597ec-102">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span><span class="sxs-lookup"><span data-stu-id="597ec-102">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span></span>
+<span data-ttu-id="597ec-103">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span><span class="sxs-lookup"><span data-stu-id="597ec-103">System.ServiceModel.ElementTypeDoesntMatchConfiguredType</span></span>  
   
-## <a name="description"></a><span data-ttu-id="2dccd-104">Описание</span><span class="sxs-lookup"><span data-stu-id="2dccd-104">Description</span></span>  
- <span data-ttu-id="2dccd-105">Тип элемента не соответствует типу конфигурации.</span><span class="sxs-lookup"><span data-stu-id="2dccd-105">The type of the element does not match the configuration type.</span></span>  
+## <a name="description"></a><span data-ttu-id="597ec-104">Описание</span><span class="sxs-lookup"><span data-stu-id="597ec-104">Description</span></span>  
+ <span data-ttu-id="597ec-105">Тип элемента не соответствует типу конфигурации.</span><span class="sxs-lookup"><span data-stu-id="597ec-105">The type of the element does not match the configuration type.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2dccd-106">См. также</span><span class="sxs-lookup"><span data-stu-id="2dccd-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="597ec-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="597ec-106">See also</span></span>
 
-- [<span data-ttu-id="2dccd-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="2dccd-107">Tracing</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [<span data-ttu-id="2dccd-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="2dccd-108">Using Tracing to Troubleshoot Your Application</span></span>](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="2dccd-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="2dccd-109">Administration and Diagnostics</span></span>](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [<span data-ttu-id="597ec-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="597ec-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="597ec-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="597ec-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="597ec-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="597ec-109">Administration and Diagnostics</span></span>](../index.md)

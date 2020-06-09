@@ -2,26 +2,26 @@
 title: Взаимодействие с расширениями веб-служб 3.0
 ms.date: 03/30/2017
 ms.assetid: e8e589d2-12c6-4794-8a11-1ee90b47dfaa
-ms.openlocfilehash: 19786393a09610b4bd6c593f89beece8b9a0d3f6
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: e16a018a2ffd275344f7e81c087672b61ede4923
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62038666"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595262"
 ---
-# <a name="interoperability-with-web-services-enhancements-30"></a><span data-ttu-id="524ca-102">Взаимодействие с расширениями веб-служб 3.0</span><span class="sxs-lookup"><span data-stu-id="524ca-102">Interoperability with Web Services Enhancements 3.0</span></span>
-<span data-ttu-id="524ca-103">Клиенты Windows Communication Foundation (WCF) и службы при уровне линий связи совместимы с Web Services Enhancements 3.0 для Microsoft .NET (WSE) клиентами и службами WCF клиенты и службы настроены для использования версии августа 2004 г. Спецификация WS-Addressing.</span><span class="sxs-lookup"><span data-stu-id="524ca-103">Windows Communication Foundation (WCF) clients and services are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) clients and services when WCF clients and services are configured to use the August 2004 version of the WS-Addressing specification.</span></span>  
+# <a name="interoperability-with-web-services-enhancements-30"></a><span data-ttu-id="415de-102">Взаимодействие с расширениями веб-служб 3.0</span><span class="sxs-lookup"><span data-stu-id="415de-102">Interoperability with Web Services Enhancements 3.0</span></span>
+<span data-ttu-id="415de-103">Клиенты и службы Windows Communication Foundation (WCF) являются совместимыми с расширениями для веб-служб 3,0 для клиентов и служб Microsoft .NET (WSE), когда клиенты и службы WCF настроены для использования версии WS-Addressing в августе 2004.</span><span class="sxs-lookup"><span data-stu-id="415de-103">Windows Communication Foundation (WCF) clients and services are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) clients and services when WCF clients and services are configured to use the August 2004 version of the WS-Addressing specification.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="524ca-104">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="524ca-104">In This Section</span></span>  
- [<span data-ttu-id="524ca-105">Практическое руководство. Настройка служб WCF для взаимодействия с WSE 3.0 клиентами</span><span class="sxs-lookup"><span data-stu-id="524ca-105">How to: Configure WCF Services to Interoperate with WSE 3.0 Clients</span></span>](../../../../docs/framework/wcf/feature-details/how-to-configure-wcf-services-to-interoperate-with-wse-3-0-clients.md)  
- <span data-ttu-id="524ca-106">Описывается настройка службы WCF, Web Services Enhancements 3.0 для Microsoft .NET (WSE) клиент мог обмениваться данными с ним.</span><span class="sxs-lookup"><span data-stu-id="524ca-106">Describes how to configure a WCF service, so that a Web Services Enhancements 3.0 for Microsoft .NET (WSE) client can communicate with it.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="415de-104">В этом разделе</span><span class="sxs-lookup"><span data-stu-id="415de-104">In This Section</span></span>  
+ [<span data-ttu-id="415de-105">Практическое руководство. Настройка служб WCF для взаимодействия с клиентами WSE 3.0</span><span class="sxs-lookup"><span data-stu-id="415de-105">How to: Configure WCF Services to Interoperate with WSE 3.0 Clients</span></span>](how-to-configure-wcf-services-to-interoperate-with-wse-3-0-clients.md)  
+ <span data-ttu-id="415de-106">Описание настройки службы WCF, чтобы улучшения веб-служб 3,0 для клиента Microsoft .NET (WSE) могли взаимодействовать с ним.</span><span class="sxs-lookup"><span data-stu-id="415de-106">Describes how to configure a WCF service, so that a Web Services Enhancements 3.0 for Microsoft .NET (WSE) client can communicate with it.</span></span>  
   
- [<span data-ttu-id="524ca-107">Практическое руководство. Настройка клиента WCF для взаимодействия со службами WSE 3.0</span><span class="sxs-lookup"><span data-stu-id="524ca-107">How to: Configure a WCF Client to interoperate with WSE3.0 Services</span></span>](../../../../docs/framework/wcf/feature-details/how-to-configure-a-wcf-client-to-interoperate-with-wse3-0-services.md)  
- <span data-ttu-id="524ca-108">Описание процесса настройки клиента WCF, таким образом, чтобы он взаимодействует с Web Services Enhancements 3.0 для Microsoft .NET (WSE) службы.</span><span class="sxs-lookup"><span data-stu-id="524ca-108">Details how to configure a WCF client, so that it communicates with a Web Services Enhancements 3.0 for Microsoft .NET (WSE) service.</span></span>  
+ [<span data-ttu-id="415de-107">Практическое руководство. Настройка клиента WCF для взаимодействия со службами WSE 3.0</span><span class="sxs-lookup"><span data-stu-id="415de-107">How to: Configure a WCF Client to interoperate with WSE3.0 Services</span></span>](how-to-configure-a-wcf-client-to-interoperate-with-wse3-0-services.md)  
+ <span data-ttu-id="415de-108">Сведения о настройке клиента WCF, чтобы он взаимодействовал с расширениями веб-служб 3,0 для службы Microsoft .NET (WSE).</span><span class="sxs-lookup"><span data-stu-id="415de-108">Details how to configure a WCF client, so that it communicates with a Web Services Enhancements 3.0 for Microsoft .NET (WSE) service.</span></span>  
   
-## <a name="related-sections"></a><span data-ttu-id="524ca-109">Связанные разделы</span><span class="sxs-lookup"><span data-stu-id="524ca-109">Related Sections</span></span>  
- [<span data-ttu-id="524ca-110">Миграция веб-служб WSE 3.0 на платформу WCF</span><span class="sxs-lookup"><span data-stu-id="524ca-110">Migrating WSE 3.0 Web Services to WCF</span></span>](../../../../docs/framework/wcf/feature-details/migrating-wse-3-0-web-services-to-wcf.md)  
+## <a name="related-sections"></a><span data-ttu-id="415de-109">Связанные разделы</span><span class="sxs-lookup"><span data-stu-id="415de-109">Related Sections</span></span>  
+ [<span data-ttu-id="415de-110">Миграция веб-служб WSE 3.0 на платформу WCF</span><span class="sxs-lookup"><span data-stu-id="415de-110">Migrating WSE 3.0 Web Services to WCF</span></span>](migrating-wse-3-0-web-services-to-wcf.md)  
   
-## <a name="see-also"></a><span data-ttu-id="524ca-111">См. также</span><span class="sxs-lookup"><span data-stu-id="524ca-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="415de-111">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="415de-111">See also</span></span>
 
-- [<span data-ttu-id="524ca-112">Взаимодействие с веб-службами ASP.NET</span><span class="sxs-lookup"><span data-stu-id="524ca-112">Interoperability with ASP.NET Web Services</span></span>](../../../../docs/framework/wcf/feature-details/interop-with-aspnet-web-services.md)
+- [<span data-ttu-id="415de-112">Взаимодействие с веб-службами ASP.NET</span><span class="sxs-lookup"><span data-stu-id="415de-112">Interoperability with ASP.NET Web Services</span></span>](interop-with-aspnet-web-services.md)
