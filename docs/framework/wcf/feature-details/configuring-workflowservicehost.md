@@ -2,30 +2,30 @@
 title: Настройка WorkflowServiceHost
 ms.date: 03/30/2017
 ms.assetid: d8e961cb-0ef5-4f8c-8a25-e76ae6334fed
-ms.openlocfilehash: dcfc22c1c0084761039a876eec7bf00cf78b51a2
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f8364e7e6bed357f65c66f5b6b13bbb19d55237f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61857393"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84597492"
 ---
 # <a name="configuring-workflowservicehost"></a>Настройка WorkflowServiceHost
-Этот раздел содержит набор короткий «как» разделы, которые кратко описывают способы настройки различных возможностей <xref:System.ServiceModel.Activities.WorkflowServiceHost> класс в конфигурации. В этих разделах рассматриваются конфигурации службы рабочего процесса, все остальные настройки выполняются в так же, как обычную службу WCF.  
+В этом разделе содержится набор кратких подразделов "Практическое руководство", в которых кратко описывается, как настроить различные функции <xref:System.ServiceModel.Activities.WorkflowServiceHost> класса в конфигурации. В этих разделах рассматривается конфигурация службы рабочего процесса. все остальные настройки выполняются так же, как и обычная служба WCF.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Настроить сохраняемость с помощью WorkflowServiceHost](../../../../docs/framework/wcf/feature-details/how-to-configure-persistence-with-workflowservicehost.md)  
+ [Практическое руководство. Как настроить сохраняемость с помощью WorkflowServiceHost](how-to-configure-persistence-with-workflowservicehost.md)  
  Описывает настройку хранения службы рабочего процесса при помощи <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
   
- [Практическое руководство. Настроить отслеживание с помощью WorkflowServiceHost](../../../../docs/framework/wcf/feature-details/how-to-configure-tracking-with-workflowservicehost.md)  
+ [Практическое руководство. Как настроить отслеживание с помощью WorkflowServiceHost](how-to-configure-tracking-with-workflowservicehost.md)  
  Описывает настройку отслеживания рабочего процесса для службы рабочего процесса при помощи <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
   
- [Практическое руководство. Настроить неактивное поведение с помощью WorkflowServiceHost](../../../../docs/framework/wcf/feature-details/how-to-configure-idle-behavior-with-workflowservicehost.md)  
+ [Практическое руководство. Как настроить неактивное поведение с помощью WorkflowServiceHost](how-to-configure-idle-behavior-with-workflowservicehost.md)  
  Описывает настройку неактивного поведения службы рабочего процесса при помощи <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
   
- [Практическое руководство. Настройка рабочего процесса поведение необработанного исключения с помощью WorkflowServiceHost](../../../../docs/framework/wcf/feature-details/config-workflow-unhandled-exception-workflowservicehost.md)  
+ [Практическое руководство. Как настроить поведение необработанного исключения рабочего процесса при помощи WorkflowServiceHost](config-workflow-unhandled-exception-workflowservicehost.md)  
  Описывает настройку поведения необработанного исключения для службы рабочего процесса при помощи <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Службы рабочих процессов](../../../../docs/framework/wcf/feature-details/workflow-services.md)
-- [Общие сведения о размещении служб рабочих процессов](../../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)
+- [Службы рабочего процесса](workflow-services.md)
+- [Общие сведения о размещении служб рабочих процессов](hosting-workflow-services-overview.md)

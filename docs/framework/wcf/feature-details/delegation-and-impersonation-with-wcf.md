@@ -8,15 +8,15 @@ helpviewer_keywords:
 - impersonation [WCF]
 - delegation [WCF]
 ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
-ms.openlocfilehash: 3fd90cde16afdfe32b9bd0533ba04e35928d2706
-ms.sourcegitcommit: cdf5084648bf5e77970cbfeaa23f1cab3e6e234e
+ms.openlocfilehash: e491925fdbe8d44df8e0c64b563eb92569453e35
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76920203"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599260"
 ---
 # <a name="delegation-and-impersonation-with-wcf"></a>Делегирование и олицетворение с использованием WCF
-*Олицетворение* - это стандартная техника, которую службы используют для ограничения клиентского доступа к ресурсам домена службы. В роли ресурсов домена службы могут выступать ресурсы компьютера, например локальные файлы (олицетворение), или ресурсы, расположенные на другом компьютере, например общая папка (делегирование). Пример приложения см. в разделе [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md). Пример использования олицетворения см. в разделе [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md).  
+*Олицетворение* - это стандартная техника, которую службы используют для ограничения клиентского доступа к ресурсам домена службы. В роли ресурсов домена службы могут выступать ресурсы компьютера, например локальные файлы (олицетворение), или ресурсы, расположенные на другом компьютере, например общая папка (делегирование). Пример приложения см. в разделе [Impersonating the Client](../samples/impersonating-the-client.md). Пример использования олицетворения см. в разделе [How to: Impersonate a Client on a Service](../how-to-impersonate-a-client-on-a-service.md).  
   
 > [!IMPORTANT]
 > Следует иметь в виду, что при олицетворении клиента в службе служба выполняется с учетными данными клиента, которые могут иметь более высокий уровень разрешений, чем серверный процесс.  
@@ -29,7 +29,7 @@ ms.locfileid: "76920203"
 ## <a name="impersonation-basics"></a>Основные принципы олицетворения  
  Windows Communication Foundation (WCF) поддерживает олицетворение для различных клиентских учетных данных. В этом разделе описана поддержка модели служб для олицетворения вызывающего объекта во время реализации метода службы. Также рассматриваются распространенные сценарии развертывания, включающие олицетворение и параметры безопасности SOAP и WCF в этих сценариях.  
   
- В этом разделе основное внимание уделяется олицетворению и делегированию в WCF при использовании безопасности SOAP. Вы также можете использовать олицетворение и делегирование в WCF при использовании безопасности транспорта, как описано в разделе [использование олицетворения с защитой транспорта](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md).  
+ В этом разделе основное внимание уделяется олицетворению и делегированию в WCF при использовании безопасности SOAP. Вы также можете использовать олицетворение и делегирование в WCF при использовании безопасности транспорта, как описано в разделе [использование олицетворения с защитой транспорта](using-impersonation-with-transport-security.md).  
   
 ## <a name="two-methods"></a>Два метода  
  Безопасность WCF SOAP имеет два различных метода для выполнения олицетворения. Выбор используемого метода зависит от привязки. Первый - олицетворение на основании маркера Windows, получаемого из интерфейса поставщика поддержки безопасности (SSPI) или при проверке подлинности Kerberos, который затем кэшируется службой. Второй метод - олицетворение на основании маркера Windows, получаемого из расширений Kerberos, имеющих общее имя *Service-for-User* (S4U).  
@@ -41,7 +41,7 @@ ms.locfileid: "76920203"
   
 - привязка<xref:System.ServiceModel.BasicHttpBinding> , у которой <xref:System.ServiceModel.BasicHttpSecurityMode> имеет значение <xref:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential> , или любая другая стандартная привязка, с помощью которой клиент представляет имя пользователя, которое служба может сопоставить с действительной учетной записью Windows;  
   
-- любая привязка <xref:System.ServiceModel.Channels.CustomBinding> , использующая учетные данные клиента Windows, где свойство `requireCancellation` имеет значение `true`. (Свойство доступно в следующих классах: <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters>, <xref:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters>и <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters>.) Если для привязки используется безопасный диалог, для свойства `requireCancellation` также должно быть задано значение `true`.  
+- любая привязка <xref:System.ServiceModel.Channels.CustomBinding> , использующая учетные данные клиента Windows, где свойство `requireCancellation` имеет значение `true`. (Свойство доступно в следующих классах: <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters> , <xref:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters> и <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters> .) Если для привязки используется безопасный диалог, для свойства также должно быть `requireCancellation` задано значение `true` .  
   
 - любая привязка <xref:System.ServiceModel.Channels.CustomBinding> , в которой клиент представляет имя пользователя. При использовании в привязке безопасного обмена данными свойство `requireCancellation` также должно иметь значение `true`.  
   
@@ -57,10 +57,10 @@ ms.locfileid: "76920203"
  Уровень олицетворения клиента службой зависит от привилегий, доступных учетной записи при попытке олицетворения, используемого типа олицетворения и, возможно, от уровня олицетворения, разрешенного клиентом.  
   
 > [!NOTE]
-> Если клиент и служба выполняются на одном компьютере и клиент выполняется от имени системной учетной записи (например, `Local System` или `Network Service`), клиент невозможно олицетворить, если установлен безопасный сеанс с маркерами контекста безопасности с отслеживанием состояния. Приложения Windows Form и консольные приложения обычно выполняются от имени учетной записи находящегося в системе пользователя, поэтому эту учетную запись можно олицетворять по умолчанию. Однако если клиент является страницей ASP.NET и эта страница размещается в IIS 6,0 или IIS 7,0, то клиент по умолчанию работает под учетной записью `Network Service`. Все предоставляемые системой привязки, поддерживающие защищенные сеансы, по умолчанию используют маркеры контекста безопасности с отслеживанием состояния. Однако если клиент является ASP.NET страницей и используются безопасные сеансы с отслеживанием состояния, клиент не сможет выполнить олицетворение. Дополнительные сведения об использовании СКТС с отслеживанием состояния в безопасном сеансе см. в разделе [инструкции. Создание маркера контекста безопасности для безопасного сеанса](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+> Если клиент и служба выполняются на одном компьютере и клиент выполняется от имени системной учетной записи (например, `Local System` или `Network Service`), клиент невозможно олицетворить, если установлен безопасный сеанс с маркерами контекста безопасности с отслеживанием состояния. Приложения Windows Form и консольные приложения обычно выполняются от имени учетной записи находящегося в системе пользователя, поэтому эту учетную запись можно олицетворять по умолчанию. Однако если клиент является страницей ASP.NET и эта страница размещается в IIS 6,0 или IIS 7,0, то клиент по `Network Service` умолчанию работает под учетной записью. Все предоставляемые системой привязки, поддерживающие защищенные сеансы, по умолчанию используют маркеры контекста безопасности с отслеживанием состояния. Однако если клиент является ASP.NET страницей и используются безопасные сеансы с отслеживанием состояния, клиент не сможет выполнить олицетворение. Дополнительные сведения об использовании СКТС с отслеживанием состояния в безопасном сеансе см. в разделе [инструкции. Создание маркера контекста безопасности для безопасного сеанса](how-to-create-a-security-context-token-for-a-secure-session.md).  
   
 ## <a name="impersonation-in-a-service-method-declarative-model"></a>Олицетворение в методе службы: декларативная модель  
- Большинство сценариев олицетворения предполагают выполнение метода службы в контексте вызывающего объекта. WCF предоставляет функцию олицетворения, которая делает это простым, позволяя пользователю указать требование олицетворения в атрибуте <xref:System.ServiceModel.OperationBehaviorAttribute>. Например, в следующем коде инфраструктура WCF олицетворяет вызывающий объект перед выполнением метода `Hello`. Все попытки обратиться к собственным ресурсам внутри метода `Hello` окажутся успешными только в том случае, если список управления доступом (ACL) ресурса дает права на доступ вызывающему объекту. Чтобы включить олицетворение, присвойте свойству <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> одно из значений перечисления <xref:System.ServiceModel.ImpersonationOption> : <xref:System.ServiceModel.ImpersonationOption.Required?displayProperty=nameWithType> или <xref:System.ServiceModel.ImpersonationOption.Allowed?displayProperty=nameWithType>, как показано в следующем примере.  
+ Большинство сценариев олицетворения предполагают выполнение метода службы в контексте вызывающего объекта. WCF предоставляет функцию олицетворения, которая делает это простым, позволяя пользователю указать требование олицетворения в <xref:System.ServiceModel.OperationBehaviorAttribute> атрибуте. Например, в следующем коде инфраструктура WCF олицетворяет вызывающий объект перед выполнением `Hello` метода. Все попытки обратиться к собственным ресурсам внутри метода `Hello` окажутся успешными только в том случае, если список управления доступом (ACL) ресурса дает права на доступ вызывающему объекту. Чтобы включить олицетворение, присвойте свойству <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> одно из значений перечисления <xref:System.ServiceModel.ImpersonationOption> : <xref:System.ServiceModel.ImpersonationOption.Required?displayProperty=nameWithType> или <xref:System.ServiceModel.ImpersonationOption.Allowed?displayProperty=nameWithType>, как показано в следующем примере.  
   
 > [!NOTE]
 > Если у службы имеется больше прав, чем у удаленного клиента, то используются учетные данные службы, если свойство <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> имеет значение <xref:System.ServiceModel.ImpersonationOption.Allowed>. Это значит, что если пользователь с более узкими правами предоставляет свои учетные данные, то метод выполняется с более широкими правами службы, и пользователь получает доступ к ресурсам, доступ к которым он бы сам получить не смог.  
@@ -71,13 +71,13 @@ ms.locfileid: "76920203"
  Инфраструктура WCF может олицетворять вызывающий объект только в том случае, если вызывающий объект прошел проверку подлинности с учетными данными, которые можно сопоставить с учетной записью пользователя Windows. Если служба настроена на прохождение проверки подлинности с использованием учетных данных, которые невозможно сопоставить с учетной записью Windows, метод службы не выполняется.  
   
 > [!NOTE]
-> В Windows XP олицетворение завершается сбоем, если создается SCT с отслеживанием состояния, что приводит к <xref:System.InvalidOperationException>. Дополнительные сведения см. в разделе [неподдерживаемые сценарии](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+> В Windows XP олицетворение завершается сбоем, если создается SCT с отслеживанием состояния, что приводит к созданию <xref:System.InvalidOperationException> . Дополнительные сведения см. в разделе [неподдерживаемые сценарии](unsupported-scenarios.md).  
   
 ## <a name="impersonation-in-a-service-method-imperative-model"></a>Олицетворение в методе службы: императивная модель  
  Иногда вызывающему объекту требуется олицетворять не весь метод службы, а лишь его часть. В этом случае необходимо получить удостоверение Windows вызывающего объекта внутри метода службы и императивно выполнить олицетворение. Для этого необходимо с помощью свойства <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> объекта <xref:System.ServiceModel.ServiceSecurityContext> возвратить экземпляр класса <xref:System.Security.Principal.WindowsIdentity> и вызвать метод <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> перед использованием этого экземпляра.  
   
 > [!NOTE]
-> Не забудьте использовать инструкцию`Using` Visual Basic или инструкцию C# `using` для автоматической отмены действия олицетворения. Если вы не используете оператор или используете язык программирования, отличный от Visual Basic или C#, не забудьте вернуть уровень олицетворения. В противном случае возникнет угроза атаки типа «отказ в обслуживании» или «несанкционированное получение прав».  
+> Не забудьте использовать `Using` инструкцию Visual Basic или `using` инструкцию C# для автоматической отмены действия олицетворения. Если вы не используете оператор или используете язык программирования, отличный от Visual Basic или C#, не забудьте вернуть уровень олицетворения. В противном случае возникнет угроза атаки типа «отказ в обслуживании» или «несанкционированное получение прав».  
   
  [!code-csharp[c_ImpersonationAndDelegation#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs/source.cs#2)]
  [!code-vb[c_ImpersonationAndDelegation#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb/source.vb#2)]  
@@ -88,15 +88,15 @@ ms.locfileid: "76920203"
  [!code-csharp[c_ImpersonationAndDelegation#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_impersonationanddelegation/cs/source.cs#3)]
  [!code-vb[c_ImpersonationAndDelegation#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_impersonationanddelegation/vb/source.vb#3)]  
   
- В следующей таблице описывается поведение WCF для всех возможных сочетаний `ImpersonationOption` и `ImpersonateCallerForAllServiceOperations`.  
+ В следующей таблице описывается поведение WCF для всех возможных сочетаний функций `ImpersonationOption` и `ImpersonateCallerForAllServiceOperations` .  
   
 |`ImpersonationOption`|`ImpersonateCallerForAllServiceOperations`|Поведение|  
 |---------------------------|------------------------------------------------|--------------|  
-|Обязательное|Н/Д|WCF олицетворяет вызывающего|  
-|Allowed|false|WCF не олицетворяет вызывающего|  
-|Allowed|true|WCF олицетворяет вызывающего|  
+|Обязательно|Недоступно|WCF олицетворяет вызывающего|  
+|Разрешено|false|WCF не олицетворяет вызывающего|  
+|Разрешено|Да|WCF олицетворяет вызывающего|  
 |NotAllowed|false|WCF не олицетворяет вызывающего|  
-|NotAllowed|true|Disallowed. (Создается исключение <xref:System.InvalidOperationException> .)|  
+|NotAllowed|Да|Disallowed. (Создается исключение <xref:System.InvalidOperationException> .)|  
   
 ## <a name="impersonation-level-obtained-from-windows-credentials-and-cached-token-impersonation"></a>Уровень олицетворения, получаемый на основании учетных данных Windows, и олицетворение с использованием кэшированного маркера  
  В некоторых сценариях при использовании учетных данных клиента Windows клиент может лишь частично управлять уровнем олицетворения в службе. Один из таких сценариев имеет место, когда клиент задает уровень олицетворения Anonymous. Второй сценарий имеет место при олицетворении с использованием кэшированного маркера. Для этого задается свойство <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> класса <xref:System.ServiceModel.Security.WindowsClientCredential> , к которому происходит обращение как к свойству универсального класса <xref:System.ServiceModel.ChannelFactory%601> .  
@@ -113,31 +113,31 @@ ms.locfileid: "76920203"
   
 |Значение`AllowedImpersonationLevel`|У службы есть `SeImpersonatePrivilege`|Служба и клиент поддерживают делегирование|Кэшированный маркер `ImpersonationLevel`|  
 |---------------------------------------|------------------------------------------|--------------------------------------------------|---------------------------------------|  
-|Anonymous (Анонимный)|Да|Н/Д|Олицетворение|  
-|Anonymous (Анонимный)|Нет|Н/Д|Identification|  
-|Identification|Н/Д|Н/Д|Identification|  
-|Олицетворение|Да|Н/Д|Олицетворение|  
-|Олицетворение|Нет|Н/Д|Identification|  
+|Анонимные|Да|Недоступно|Олицетворение|  
+|Анонимные|нет|Недоступно|Идентификация|  
+|Идентификация|Н/Д|Н/Д|Идентификация|  
+|Олицетворение|Да|Недоступно|Олицетворение|  
+|Олицетворение|нет|Недоступно|Идентификация|  
 |Делегирование|Да|Да|Делегирование|  
 |Делегирование|Да|Нет|Олицетворение|  
-|Делегирование|Нет|Н/Д|Identification|  
+|Делегирование|нет|Недоступно|Идентификация|  
   
 ## <a name="impersonation-level-obtained-from-user-name-credentials-and-cached-token-impersonation"></a>Уровень олицетворения, получаемый на основании учетных данных имени пользователя, и олицетворение с использованием кэшированного маркера  
- Передавая службе имя пользователя и пароль, клиент позволяет WCF войти в систему от имени этого пользователя, что эквивалентно присвоению свойству `AllowedImpersonationLevel` значения <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>. (`AllowedImpersonationLevel` доступен в классах <xref:System.ServiceModel.Security.WindowsClientCredential> и <xref:System.ServiceModel.Security.HttpDigestClientCredential>.) В следующей таблице приводится уровень олицетворения, полученный при получении службой учетных данных имени пользователя.  
+ Передавая службе имя пользователя и пароль, клиент позволяет WCF войти в систему от имени этого пользователя, что эквивалентно присвоению `AllowedImpersonationLevel` свойству значения <xref:System.Security.Principal.TokenImpersonationLevel.Delegation> . (Объект `AllowedImpersonationLevel` доступен в <xref:System.ServiceModel.Security.WindowsClientCredential> <xref:System.ServiceModel.Security.HttpDigestClientCredential> классах и.) В следующей таблице приводится уровень олицетворения, полученный при получении службой учетных данных имени пользователя.  
   
 |`AllowedImpersonationLevel`|У службы есть `SeImpersonatePrivilege`|Служба и клиент поддерживают делегирование|Кэшированный маркер `ImpersonationLevel`|  
 |---------------------------------|------------------------------------------|--------------------------------------------------|---------------------------------------|  
-|Н/Д|Да|Да|Делегирование|  
-|Н/Д|Да|Нет|Олицетворение|  
-|Н/Д|Нет|Н/Д|Identification|  
+|Недоступно|Да|Да|Делегирование|  
+|Недоступно|Да|Нет|Олицетворение|  
+|Недоступно|нет|Недоступно|Идентификация|  
   
 ## <a name="impersonation-level-obtained-from-s4u-based-impersonation"></a>Уровень олицетворения при олицетворении на базе S4U  
   
 |У службы есть `SeTcbPrivilege`|У службы есть `SeImpersonatePrivilege`|Служба и клиент поддерживают делегирование|Кэшированный маркер `ImpersonationLevel`|  
 |----------------------------------|------------------------------------------|--------------------------------------------------|---------------------------------------|  
-|Да|Да|Н/Д|Олицетворение|  
-|Да|Нет|Н/Д|Identification|  
-|Нет|Н/Д|Н/Д|Identification|  
+|Да|Да|Недоступно|Олицетворение|  
+|Да|нет|Недоступно|Идентификация|  
+|нет|Недоступно|Н/Д|Идентификация|  
   
 ## <a name="mapping-a-client-certificate-to-a-windows-account"></a>Сопоставление сертификата клиента с учетной записью Windows  
  Клиент может выполнить свою проверку подлинности в службе с использованием сертификата, чтобы служба сама сопоставила клиент с существующей учетной записью в Active Directory. В следующем примере XML-кода показано, как настроить службы для сопоставления сертификата.  
@@ -201,7 +201,7 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
   
  Более подробные инструкции по настройке ограниченного делегирования см. в разделе [Смена протокола Kerberos и ограниченное делегирование](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc739587(v=ws.10)).
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceModel.OperationBehaviorAttribute>
 - <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>
@@ -216,7 +216,7 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.ChannelFactory%601>
 - <xref:System.Security.Principal.TokenImpersonationLevel.Identification>
-- [Использование олицетворения при обеспечении безопасности транспорта](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)
-- [Олицетворение клиента](../../../../docs/framework/wcf/samples/impersonating-the-client.md)
-- [Практическое руководство. Олицетворение клиента в рамках службы](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)
-- [Служебная программа для метаданных ServiceModel (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Использование олицетворения при обеспечении безопасности транспорта](using-impersonation-with-transport-security.md)
+- [Олицетворение клиента](../samples/impersonating-the-client.md)
+- [Практическое руководство. Олицетворение клиента в рамках службы](../how-to-impersonate-a-client-on-a-service.md)
+- [Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

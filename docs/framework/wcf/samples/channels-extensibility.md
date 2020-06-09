@@ -2,31 +2,31 @@
 title: Расширяемость каналов
 ms.date: 03/30/2017
 ms.assetid: 4cc3b20b-778a-4ae8-b58c-a3822fb13065
-ms.openlocfilehash: aeff683b786d81fc782914bd2df70adb10bcbcec
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 9dbae26a548bdc8a8cfb05a3dd90db91475b55ba
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61944057"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600637"
 ---
 # <a name="channels-extensibility"></a>Расширяемость каналов
 В этом разделе содержатся образцы, демонстрирующие пользовательские каналы.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Локальный канал](../../../../docs/framework/wcf/samples/local-channel.md)  
- Демонстрирует локальный канал, канал транспорта WCF, который используется для обмена данными в одном домене приложения.  
+ [Локальный канал](local-channel.md)  
+ Демонстрирует локальный канал, канал транспорта WCF, который используется для связи в пределах одного домена приложения.  
   
- [Надежный защищенный профиль](../../../../docs/framework/wcf/samples/reliable-secure-profile.md)  
- Показано использование WCF и надежных защищенным профилем (RSP).  
+ [Надежный защищенный профиль](reliable-secure-profile.md)  
+ Демонстрирует, как создать WCF и надежный защищенный профиль (RSP).  
   
- [Настраиваемый диспетчер каналов](../../../../docs/framework/wcf/samples/custom-channel-dispatcher.md)  
+ [Настраиваемый диспетчер каналов](custom-channel-dispatcher.md)  
  Демонстрирует построение пользовательского стека каналов путем непосредственной реализации <xref:System.ServiceModel.ServiceHostBase>, а также создание пользовательского диспетчера каналов в среде веб-узла.  
   
- [Фрагментирование канала](../../../../docs/framework/wcf/samples/chunking-channel.md)  
- Показано, как ограничить объем памяти, используемый для буферизации больших сообщений, отправляемых с помощью WCF.
+ [Фрагментирование канала](chunking-channel.md)  
+ Показывает, как ограничить объем памяти, используемой для буферизации больших сообщений, отправляемых с помощью WCF.
   
- [HttpCookieSession](../../../../docs/framework/wcf/samples/httpcookiesession.md)  
+ [HttpCookieSession](httpcookiesession.md)  
  Демонстрирует, как построить пользовательский канал протокола, который использует для управления сеансами протокол HTTP.  
   
- [Пользовательский перехватчик сообщений](../../../../docs/framework/wcf/samples/custom-message-interceptor.md)  
+ [Пользовательский перехватчик сообщений](custom-message-interceptor.md)  
  Показано, как реализовать пользовательский элемент привязки, который создает фабрики и прослушиватели каналов для перехвата всех входящих и исходящих сообщений в определенной точке стека времени выполнения.

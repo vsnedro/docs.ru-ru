@@ -2,20 +2,20 @@
 title: Сравнение веб-служб ASP.NET с веб-службами на основе WCF по назначению и используемым стандартам
 ms.date: 03/30/2017
 ms.assetid: d3890278-fa9b-4902-91ea-8da73b7143cc
-ms.openlocfilehash: 1600a398ac250f015f2a1d9aa4ae2d808c593b95
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: b27f3516868ec70319ce37fbbd774a29347b0bc8
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75963569"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84597583"
 ---
 # <a name="comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used"></a>Сравнение веб-служб ASP.NET с веб-службами на основе WCF по назначению и используемым стандартам
 Веб-службы ASP.NET были разработаны для создания приложений, которые отправляют и получают сообщения с использованием протокола SOAP (Simple Object Access Protocol) через HTTP. Структуру сообщений можно определить с помощью схемы XML, а для сериализации сообщений в объекты .NET Framework и обратно предусмотрено специальное средство. Эта технология позволяет автоматически создавать метаданные для описания веб-служб на языке WSDL (языке описания веб-служб), а второе средство предоставляется для создания клиентов для веб-служб из WSDL.  
   
  WCF позволяет .NET Frameworkным приложениям обмениваться сообщениями с другими сущностями программного обеспечения. По умолчанию используется протокол SOAP, но сообщения могут иметь любой формат и передаваться с использованием любого транспортного протокола. Структуру сообщений можно определить с помощью схемы XML, а для сериализации сообщений в объекты .NET Framework и обратно имеется несколько параметров. WCF может автоматически создавать метаданные для описания приложений, созданных с помощью технологии в WSDL, а также предоставляет средство для создания клиентов для этих приложений из WSDL.  
   
- Стандарты, поддерживаемые веб-службами ASP.NET, задокументированы в [преимуществах веб-служб XML, созданных с помощью ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0859ebft(v=vs.100)). Более широкий список стандартов, поддерживаемых WCF, указывается в списке [протоколов веб-служб, поддерживаемых привязками взаимодействия, предоставляемыми системой](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md).  
+ Стандарты, поддерживаемые веб-службами ASP.NET, задокументированы в [преимуществах веб-служб XML, созданных с помощью ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0859ebft(v=vs.100)). Более широкий список стандартов, поддерживаемых WCF, указывается в списке [протоколов веб-служб, поддерживаемых привязками взаимодействия, предоставляемыми системой](web-services-protocols-supported-by-system-provided-interoperability-bindings.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Сравнение веб-служб ASP.NET с веб-службами на основе WCF по процессу разработки](../../../../docs/framework/wcf/feature-details/comparing-aspnet-web-services-to-wcf-based-on-development.md)
+- [Сравнение веб-служб ASP.NET с веб-службами на основе WCF по процессу разработки](comparing-aspnet-web-services-to-wcf-based-on-development.md)

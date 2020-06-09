@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
-ms.openlocfilehash: d335cd47de68dccdbb6af7f402d1182fcd811a7d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6703da4f97cba38ee0dc334d3010ca509d1fb3ef
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184318"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84598701"
 ---
 # <a name="transport-security-with-windows-authentication"></a>Безопасность транспорта с проверкой подлинности Windows
-В следующем сценарии показан клиент и сервис Windows Communication Foundation (WCF), обеспеченный безопасностью Windows. Для получения дополнительной информации о программировании [см.](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)  
+В следующем сценарии показан клиент Windows Communication Foundation (WCF) и служба, защищенная системой безопасности Windows. Дополнительные сведения о программировании см. [в разделе как защитить службу с помощью учетных данных Windows](../how-to-secure-a-service-with-windows-credentials.md).  
   
  Веб-служба интрасети отображает информацию о персонале. Клиентом является приложение Windows Forms. Приложение развернуто на домене с защищающем его контроллером Kerberos.  
   
@@ -21,12 +21,12 @@ ms.locfileid: "79184318"
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Транспортировка|  
-|Совместимость|Только WCF|  
+|Режим безопасности|Транспорт|  
+|Взаимодействие|Только WCF|  
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да (при помощи встроенной проверки подлинности Windows)<br /><br /> Да (при помощи встроенной проверки подлинности Windows)|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
-|Транспортировка|NET.TCP|  
+|Транспорт|NET.TCP|  
 |Привязка|<xref:System.ServiceModel.NetTcpBinding>|  
   
 ## <a name="service"></a>Служба  
@@ -73,12 +73,12 @@ ms.locfileid: "79184318"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -117,8 +117,8 @@ ms.locfileid: "79184318"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Обзор безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Практическое руководство. Защита службы с использованием учетных данных Windows](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)
+- [Обзор безопасности](security-overview.md)
+- [Практическое руководство. Защита службы с использованием учетных данных Windows](../how-to-secure-a-service-with-windows-credentials.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
