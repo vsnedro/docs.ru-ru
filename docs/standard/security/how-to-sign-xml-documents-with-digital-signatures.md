@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Подписание XML-документов с помощью цифровых подписей
+description: Узнайте, как подписывать XML-документы с помощью цифровых подписей. Используйте классы в пространстве имен System. Security. Cryptography. XML в .NET.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - XML signing
 - signing XML
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
-ms.openlocfilehash: 81fa5e4c503f26dc13758090f845fd8387287084
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 97bd23182ed54b899b76dbf43e179fe0c94b011d
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277184"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84598571"
 ---
 # <a name="how-to-sign-xml-documents-with-digital-signatures"></a>Практическое руководство. Подписание XML-документов с помощью цифровых подписей
 Можно использовать классы в пространстве имен <xref:System.Security.Cryptography.Xml> для подписания XML-документа или его части при помощи цифровой подписи.  Цифровые подписи XML (XMLDSIG) позволяют убедиться, что данные не были изменены после подписания.  Дополнительные сведения о стандарте XMLDSIG см. в разделе рекомендации по [синтаксису XML-подписи](https://www.w3.org/TR/xmldsig-core/)консорциум W3C (W3C) и обработке.  
@@ -116,7 +117,7 @@ ms.locfileid: "84277184"
   
  Не следует внедрять закрытый ключ непосредственно в исходный код.  Встроенные ключи можно легко считывать из сборки с помощью [Ildasm. exe (ДИЗАССЕМБЛЕР IL)](../../framework/tools/ildasm-exe-il-disassembler.md) или путем открытия сборки в текстовом редакторе, например в блокноте.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.Security.Cryptography.Xml>
 - [Практическое руководство. Проверка цифровых подписей XML-документов](how-to-verify-the-digital-signatures-of-xml-documents.md)

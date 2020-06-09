@@ -2,19 +2,19 @@
 title: Практическое руководство. Как создать службу, принимающую произвольные данные, с использованием модели программирования WCF REST
 ms.date: 03/30/2017
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
-ms.openlocfilehash: a1c30491f6c5b0a91f93a6f26417f9dc2b996a48
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: d908651f7815c102b45ea106f5bec4c07d869950
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64614798"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84601339"
 ---
 # <a name="how-to-create-a-service-that-accepts-arbitrary-data-using-the-wcf-rest-programming-model"></a>Практическое руководство. Как создать службу, принимающую произвольные данные, с использованием модели программирования WCF REST
-Иногда разработчики должны полностью управлять тем, как данные возвращаются из операции службы. Это происходит, когда операция службы должна возвращать данные в формате, не поддерживаемых byWCF. В этом разделе рассматривается использование модели программирования WCF REST для создания службы, получающей произвольные данные.  
+Иногда разработчики должны полностью управлять тем, как данные возвращаются из операции службы. Это происходит, когда операция службы должна возвращать данные в формате, не поддерживаемом Бивкф. В этом разделе обсуждается использование модели программирования WCF RESTFUL для создания службы, которая получает произвольные данные.  
   
 ### <a name="to-implement-the-service-contract"></a>Реализация контракта службы  
   
-1. Определите контракт службы. Операция, получающая произвольные данные, должна иметь параметр <xref:System.IO.Stream>. Это должен быть единственный параметр, передаваемый в теле запроса. Описанная в этом примере операция также принимает параметр filename. Этот параметр передается в URL-адресе запроса. Чтобы указать, что параметр передается в URL-адресе, можно задать шаблон <xref:System.UriTemplate> в атрибуте <xref:System.ServiceModel.Web.WebInvokeAttribute>. В этом случае URI, используемый для вызова этого метода, оканчивается на «UploadFile/Some-Filename». Часть шаблона URI «{filename}» указывает, что параметр операции filename передается в URI, который используется для вызова операции.  
+1. Определите контракт службы. Операция, получающая произвольные данные, должна иметь параметр <xref:System.IO.Stream>. Это должен быть единственный параметр, передаваемый в теле запроса. Описанная в этом примере операция также принимает параметр filename. Этот параметр передается в URL-адресе запроса. Чтобы указать, что параметр передается в URL-адресе, можно задать шаблон <xref:System.UriTemplate> в атрибуте <xref:System.ServiceModel.Web.WebInvokeAttribute>. В этом случае URI, используемый для вызова этого метода, заканчивается на "UploadFile/some". Часть "{filename}" шаблона URI указывает, что параметр filename для операции передается в URI, используемом для вызова операции.  
   
     ```csharp  
      [ServiceContract]  
@@ -193,8 +193,8 @@ namespace ReceiveRawData
   
 - При компиляции этого кода задайте ссылки на файлы System.ServiceModel.dll и System.ServiceModel.Web.dll.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [UriTemplate и UriTemplateTable](../../../../docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md)
-- [Модель веб-программирования HTTP WCF](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
-- [Общие сведения о модели веб-программирования HTTP WCF](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
+- [UriTemplate и UriTemplateTable](uritemplate-and-uritemplatetable.md)
+- [Модель веб-программирования HTTP WCF](wcf-web-http-programming-model.md)
+- [Общие сведения о модели программирования WCF Web HTTP](wcf-web-http-programming-model-overview.md)

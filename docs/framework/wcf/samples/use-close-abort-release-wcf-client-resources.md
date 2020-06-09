@@ -3,16 +3,16 @@ title: Использование Close и Abort для освобождения
 description: Метод Dispose может завершиться ошибкой и создавать исключения при сбое сети. Это может вызвать нежелательное поведение. Вместо этого используйте Close и Abort для освобождения ресурсов клиента в случае сбоя сети.
 ms.date: 11/12/2018
 ms.assetid: aff82a8d-933d-4bdc-b0c2-c2f7527204fb
-ms.openlocfilehash: 38861252a470f71a6fa88554e289344e2918d710
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: b338b760f461d7b773f43dd1f5e6dbce98f9e15a
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715335"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599923"
 ---
 # <a name="close-and-abort-release-resources-safely-when-network-connections-have-dropped"></a>Безопасное закрытие и прерывание ресурсов освобождения при удалении сетевых подключений
 
-В этом примере демонстрируется использование методов `Close` и `Abort` для очистки ресурсов при использовании типизированного клиента. Инструкция `using` вызывает исключения, если сетевое подключение не является надежным. Этот образец основан на [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md) , который реализует службу калькулятора. В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.
+В этом примере демонстрируется `Close` использование `Abort` методов и для очистки ресурсов при использовании типизированного клиента. `using`Инструкция вызывает исключения, если сетевое подключение не является надежным. Этот образец основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора. В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.
 
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.
@@ -46,7 +46,7 @@ using (CalculatorClient client = new CalculatorClient())
 
 Поскольку метод `Dispose`() происходит в блоке "finally", исключение `ApplicationException` никогда не видно за пределами блока "using", если метод `Dispose`() выполняется с ошибкой. Если внешний код должен знать, когда происходит исключение `ApplicationException`, конструкция "using" может стать причиной возникновения проблем, маскируя это исключение.
 
-Наконец, в этом образце показано, как правильно выполнить очистку, если исключения происходят в `DemonstrateCleanupWithExceptions`. При этом используется блок try/catch для сообщения об ошибках и вызова метода `Abort`. Дополнительные сведения о перехвате исключений из клиентских вызовов см. в примере [ожидаемых исключений](../../../../docs/framework/wcf/samples/expected-exceptions.md) .
+Наконец, в этом образце показано, как правильно выполнить очистку, если исключения происходят в `DemonstrateCleanupWithExceptions`. При этом используется блок try/catch для сообщения об ошибках и вызова метода `Abort`. Дополнительные сведения о перехвате исключений из клиентских вызовов см. в примере [ожидаемых исключений](expected-exceptions.md) .
 
 ```csharp
 try
@@ -105,17 +105,17 @@ Press <ENTER> to terminate client.
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
 
-1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\UsingUsing`

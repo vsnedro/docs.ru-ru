@@ -2,12 +2,12 @@
 title: Объекты обнаружения Find и FindCriteria
 ms.date: 03/30/2017
 ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
-ms.openlocfilehash: da4c3c4a1d765e4f91b03f4f8fc1a73c3fea1535
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: 1d6a0e3fcca45c3fe57aab84b0f2b6b86fabb404
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75964835"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599182"
 ---
 # <a name="discovery-find-and-findcriteria"></a>Объекты обнаружения Find и FindCriteria
 
@@ -31,7 +31,7 @@ ms.locfileid: "75964835"
 
   - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> выполняет базовое сравнение строк с учетом регистра.
 
-  - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> совпадения по сегментам, разделенным символом "/". Поиск `http://contoso/building1` соответствует службе с областью `http://contoso/building/floor1`. Обратите внимание, что он не соответствует `http://contoso/building100`, поскольку последние два сегмента не совпадают.
+  - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType>совпадения по сегментам, разделенным символом "/". Поиск `http://contoso/building1` соответствует службе с областью действия `http://contoso/building/floor1` . Обратите внимание, что он не соответствует, `http://contoso/building100` поскольку последние два сегмента не совпадают.
 
   - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType> сопоставляет области по сегментам с помощью URL-адреса LDAP.
 
@@ -68,9 +68,9 @@ FindResponse findResponse = discoveryClient.Find(findCriteria);
 Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endpoints.Count)
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения об обнаружении WCF](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [Использование клиентского канала обнаружения](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)
-- [Обнаружение с помощью областей](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)
-- [Основы](../../../../docs/framework/wcf/samples/basic-sample.md)
+- [Общие сведения об обнаружении WCF](wcf-discovery-overview.md)
+- [Использование клиентского канала обнаружения](using-the-discovery-client-channel.md)
+- [Обнаружение с помощью областей](../samples/discovery-with-scopes-sample.md)
+- [Basic](../samples/basic-sample.md) (обычная)

@@ -2,15 +2,15 @@
 title: Страница справки веб-службы HTTP WCF
 ms.date: 03/30/2017
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
-ms.openlocfilehash: 8d798c8080bf1afee87305cd00a27db2ece7e970
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: ef42457dea8bfe12a3e5054c5eacdf5a2964fdc7
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73975921"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600170"
 ---
 # <a name="wcf-web-http-service-help-page"></a>Страница справки веб-службы HTTP WCF
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] предоставляет автоматическую справочную страницу для службы WCF WEB HTTP. На этой странице справки приводится описание каждой операции, форматов запроса и ответа, а также схем. По умолчанию эта функциональная возможность отключена. Когда пользователь переходит к веб-службе HTTP WCF и добавляет "/Help" в конец URL-адреса, например `http://localhost:8000/Customers/Help`, отображается страница справки, подобная приведенной ниже.  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] предоставляет автоматическую справочную страницу для службы WCF WEB HTTP. На этой странице справки приводится описание каждой операции, форматов запроса и ответа, а также схем. По умолчанию эта функциональная возможность отключена. При просмотре пользователем веб-службы HTTP WCF и добавлении "/Help" в конец URL-адреса, например `http://localhost:8000/Customers/Help` , отображается страница справки, подобная приведенной ниже.  
   
  ![Откроется браузер с открытой страницей справки WCF.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page.gif)  
   
@@ -240,4 +240,4 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
 </xs:schema>  
 ```  
   
- Дополнительные сведения о схеме сериализации контракта данных см. в разделе [Справочник по схеме контракта данных](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).
+ Дополнительные сведения о схеме сериализации контракта данных см. в разделе [Справочник по схеме контракта данных](data-contract-schema-reference.md).

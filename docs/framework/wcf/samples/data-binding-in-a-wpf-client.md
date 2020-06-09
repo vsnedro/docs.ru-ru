@@ -2,15 +2,15 @@
 title: Привязка данных в клиенте Windows Presentation Foundation
 ms.date: 03/30/2017
 ms.assetid: bb8c8293-5973-4aef-9b07-afeff5d3293c
-ms.openlocfilehash: 7bc389056872841905336dcf658a07223906bf82
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fe7b1934fa2abfa8d2f812caca2363c1cc603d1a
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183822"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602613"
 ---
 # <a name="data-binding-in-a-windows-presentation-foundation-client"></a>Привязка данных в клиенте Windows Presentation Foundation
-Этот образец демонстрирует использование привязки данных в клиенте Windows Presentation Foundation (WPF). В образце используется служба Windows Communication Foundation (WCF), которая случайным образом генерирует множество альбомов для возвращения клиенту. Каждый альбом имеет имя, цену и список дорожек в альбоме. Каждая дорожка в альбоме имеет имя и длительность. Информация, возвращенная службой, автоматически привязывается к пользовательскому интерфейсу (Пользовательскому интерфейсу), предоставленному клиентом Windows Presentation Foundation (WPF).  
+Этот образец демонстрирует использование привязки данных в клиенте Windows Presentation Foundation (WPF). В примере используется служба Windows Communication Foundation (WCF), которая случайным образом создает массив альбомов для возврата клиенту. Каждый альбом имеет имя, цену и список дорожек в альбоме. Каждая дорожка в альбоме имеет имя и длительность. Сведения, возвращаемые службой, автоматически привязываются к пользовательскому интерфейсу, предоставленному клиентом Windows Presentation Foundation (WPF).  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
@@ -67,17 +67,17 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/running-the-samples.md)  
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DataBinding\WPFDataBinding`  

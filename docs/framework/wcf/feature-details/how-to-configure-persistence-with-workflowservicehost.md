@@ -2,19 +2,19 @@
 title: Практическое руководство. Как настроить сохраняемость с помощью WorkflowServiceHost
 ms.date: 03/30/2017
 ms.assetid: e31cd4df-13a3-4a9a-9be8-5243e0055356
-ms.openlocfilehash: 4bfa66a895ae9af9cb87ff110dc82c8a8a922b49
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 4ed9c76f091e75cf6ba7658f0314d2e21bbe962e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463839"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599117"
 ---
 # <a name="how-to-configure-persistence-with-workflowservicehost"></a>Практическое руководство. Как настроить сохраняемость с помощью WorkflowServiceHost
-В данном разделе описывается способ настройки функции хранилища экземпляров рабочих процессов SQL для включения сохраняемости рабочих процессов, размещенных в <xref:System.ServiceModel.Activities.WorkflowServiceHost>, с помощью файла конфигурации. Перед использованием возможности хранилища экземпляров рабочих процессов SQL необходимо создать базу данных SQL, которая используется для хранения экземпляров рабочих процессов. Для получения дополнительной информации [см.](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)  
+В данном разделе описывается способ настройки функции хранилища экземпляров рабочих процессов SQL для включения сохраняемости рабочих процессов, размещенных в <xref:System.ServiceModel.Activities.WorkflowServiceHost>, с помощью файла конфигурации. Перед использованием возможности хранилища экземпляров рабочих процессов SQL необходимо создать базу данных SQL, которая используется для хранения экземпляров рабочих процессов. Дополнительные сведения см. [в разделе инструкции. Включение сохраняемости SQL для рабочих процессов и служб рабочих](../../windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)процессов.  
   
 ### <a name="to-configure-the-sql-workflow-instance-store-in-configuration"></a>Настройка хранилища экземпляров рабочих процессов SQL в конфигурации  
   
-1. Свойства хранилища экземпляров рабочих процессов SQL можно настроить с помощью объекта <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> - поведения службы, позволяющего менять параметры с помощью конфигурации XML. Следующий пример конфигурации показывает, как настроить хранилище экземпляров `sqlWorkflowInstanceStore` рабочего процесса с помощью элемента <> поведения в файле конфигурации.  
+1. Свойства хранилища экземпляров рабочих процессов SQL можно настроить с помощью объекта <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> - поведения службы, позволяющего менять параметры с помощью конфигурации XML. В следующем примере конфигурации показано, как настроить хранилище экземпляров рабочих процессов SQL с помощью `sqlWorkflowInstanceStore` элемента поведения <> в файле конфигурации.  
   
     ```xml  
     <serviceBehaviors>  
@@ -31,10 +31,10 @@ ms.locfileid: "81463839"
     </serviceBehaviors>  
     ```  
   
-     Для получения более подробной информации о том, как настроить хранилище экземпляров рабочего процесса, [см.](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md) Для получения более подробной информации `sqlWorkflowInstanceStore` об отдельных настройках для элемента <>>, [см.](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md) Фабрика приложений Windows Server имеет собственное хранилище сохраняемости. Для получения дополнительной информации, см [Windows Server App Ткань Настойчивость](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10)).  
+     Дополнительные сведения о настройке хранилища экземпляров рабочих процессов SQL см. [в разделе инструкции. Включение сохраняемости SQL для рабочих процессов и служб рабочих](../../windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)процессов. Дополнительные сведения об отдельных параметрах `sqlWorkflowInstanceStore` элемента поведения <> см. в разделе [хранилище экземпляров рабочих процессов SQL](../../windows-workflow-foundation/sql-workflow-instance-store.md). Фабрика приложений Windows Server имеет собственное хранилище сохраняемости. Дополнительные сведения см. в статье [сохраняемость в Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10)).  
   
     > [!NOTE]
-    > В предыдущем примере конфигурации используется упрощенная конфигурация. Для получения дополнительной информации [см.](../../../../docs/framework/wcf/simplified-configuration.md)  
+    > В предыдущем примере конфигурации используется упрощенная конфигурация. Дополнительные сведения см. в разделе [упрощенная конфигурация](../simplified-configuration.md) .  
   
 ### <a name="to-configure-the-sql-workflow-instance-store-in-code"></a>Настройка хранилища экземпляров рабочих процессов SQL в коде  
   
@@ -52,15 +52,15 @@ ms.locfileid: "81463839"
     });  
     ```  
   
-     Для получения более подробной информации о том, как настроить хранилище экземпляров рабочего процесса, [см.](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md) Для получения более подробной информации об отдельных настройках для элемента <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> поведения можно ознакомиться на см. [SQL Workflow Instance Store](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md) Фабрика приложений Windows Server имеет собственное хранилище сохраняемости. Для получения дополнительной информации, см [Windows Server App Ткань Настойчивость](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10)).  
+     Дополнительные сведения о настройке хранилища экземпляров рабочих процессов SQL см. [в разделе инструкции. Включение сохраняемости SQL для рабочих процессов и служб рабочих](../../windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md)процессов. Дополнительные сведения об отдельных параметрах <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> элемента Behavior см. в разделе [хранилище экземпляров рабочих процессов SQL](../../windows-workflow-foundation/sql-workflow-instance-store.md). Фабрика приложений Windows Server имеет собственное хранилище сохраняемости. Дополнительные сведения см. в статье [сохраняемость в Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10)).  
   
     > [!NOTE]
-    > В предыдущем примере конфигурации используется упрощенная конфигурация. Для получения дополнительной информации [см.](../../../../docs/framework/wcf/simplified-configuration.md)  
+    > В предыдущем примере конфигурации используется упрощенная конфигурация. Дополнительные сведения см. в разделе [упрощенная конфигурация](../simplified-configuration.md) .  
   
-     Например, как настроить настойчивость программно [см., как: Включить сохранение для рабочих процессов и служб рабочего процесса.](../../../../docs/framework/windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md)  
+     Пример настройки сохраняемости программным способом см. в разделе [Включение сохраняемости для рабочих процессов и служб рабочих](../../windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md)процессов.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Службы рабочего процесса](../../../../docs/framework/wcf/feature-details/workflow-services.md)
-- [Сохраняемость рабочего процесса](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)
+- [Службы рабочего процесса](workflow-services.md)
+- [Сохраняемость рабочего процесса](../../windows-workflow-foundation/workflow-persistence.md)
 - [Сохраняемость Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10))

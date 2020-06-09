@@ -6,17 +6,17 @@ helpviewer_keywords:
 - security glossary [WCF]
 - security terms [WCF]
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
-ms.openlocfilehash: 6751513b72f732bd7392de11a203467a9ead1bce
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: a07d7c6da71f4195cb1641ae8ac7585b4158ed63
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76743343"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600975"
 ---
 # <a name="wcf-security-terminology"></a>Терминология WCF в сфере безопасности
 Не все пользователи знакомы с терминологией, которая используется при обсуждении вопросов безопасности. В данном разделе кратко объясняются некоторые термины, относящиеся к безопасности, однако его целью не является исчерпывающее объяснение каждого термина.  
   
- Дополнительные сведения об терминах, используемых в документации по Windows Communication Foundation (WCF), см. в разделе [Основные понятия Windows Communication Foundation](../../../../docs/framework/wcf/fundamental-concepts.md).  
+ Дополнительные сведения об терминах, используемых в документации по Windows Communication Foundation (WCF), см. в разделе [Основные понятия Windows Communication Foundation](../fundamental-concepts.md).  
   
  список управления доступом (ACL)  
  Список мер по обеспечению безопасности, применяемый к объекту. (Объект может быть файлом, процессом, событием или любым другим, имеющим дескриптор безопасности.) Запись в ACL является записью управления доступом (ACE). Существует два типа списков ACL: на уровне пользователя и на уровне системы.  
@@ -56,7 +56,7 @@ ms.locfileid: "76743343"
  цифровая сигнатура  
  Данные, связывающие личность отправителя с передаваемой информацией. Цифровая сигнатура может включаться в сообщение, файл или другой блок информации, представленной в цифровом виде, либо передаваться отдельно. Цифровые сигнатуры используются в средах открытых ключей и предоставляют возможность проверки подлинности и целостности данных.  
   
- кодировка  
+ encoding  
  Процесс преобразования данных в поток битов. Кодирование является частью процесса сериализации, преобразующего данные в поток единиц и нулей.  
   
  пара ключей обмена  
@@ -181,8 +181,8 @@ ms.locfileid: "76743343"
  X.509  
  Международный стандарт сертификатов, определяющий их обязательные части.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Основные понятия Windows Communication Foundation](../../../../docs/framework/wcf/fundamental-concepts.md)
-- [Основные понятия безопасности](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [Основные понятия Windows Communication Foundation](../fundamental-concepts.md)
+- [Основные понятия безопасности](security-concepts.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

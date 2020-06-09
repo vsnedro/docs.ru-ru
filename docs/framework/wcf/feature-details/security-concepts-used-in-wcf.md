@@ -2,12 +2,12 @@
 title: Основные понятия безопасности, используемые в WCF
 ms.date: 03/30/2017
 ms.assetid: 3b9dfcf5-4bf1-4f35-9070-723171c823a1
-ms.openlocfilehash: faf7b44c0ff1b207a7b017163ad2b032f26199b8
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: f852ba4e1100103289bc5fd879b19ebd40443b8d
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76743880"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595184"
 ---
 # <a name="security-concepts-used-in-wcf"></a>Основные понятия безопасности, используемые в WCF
 Безопасность Windows Communication Foundation (WCF) построена на основе концепций, уже используемых и развернутых в различных инфраструктурах безопасности.  
@@ -31,7 +31,7 @@ ms.locfileid: "76743880"
  Сертификаты X.509 являются основной формой учетных данных, используемой в приложениях безопасности. Дополнительные сведения о сертификатах X. 509 см. в разделе [Сертификаты открытого ключа x. 509](/windows/win32/seccertenroll/about-x-509-public-key-certificates). Сертификаты X.509 хранятся в хранилище сертификатов. На компьютере под управлением Windows имеется несколько типов хранилищ сертификатов, каждое из которых используется в разных целях. Дополнительные сведения о различных хранилищах см. в разделе [хранилища сертификатов](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757138(v=ws.10)).  
   
 ## <a name="web-services-security-specifications"></a>Спецификации безопасности веб-служб  
- Определяемые системой привязки поддерживают множество часто используемых спецификаций обеспечения безопасности веб-служб. Полный список привязок, предоставляемых системой, и поддерживаемых им характеристик веб-служб см. в статье [Протоколы веб-служб, поддерживаемые системными привязками взаимодействия](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md) .  
+ Определяемые системой привязки поддерживают множество часто используемых спецификаций обеспечения безопасности веб-служб. Полный список привязок, предоставляемых системой, и поддерживаемых им характеристик веб-служб см. в статье [Протоколы веб-служб, поддерживаемые системными привязками взаимодействия](web-services-protocols-supported-by-system-provided-interoperability-bindings.md) .  
   
 ## <a name="access-control-mechanisms"></a>Механизмы управления доступом  
  WCF предоставляет несколько способов управления доступом к службе или операции. Среди них  
@@ -46,9 +46,9 @@ ms.locfileid: "76743880"
   
 5. Модель удостоверения  
   
- Дополнительные сведения об этих разделах см. в разделе [механизмы управления доступом](../../../../docs/framework/wcf/feature-details/access-control-mechanisms.md) .  
+ Дополнительные сведения об этих разделах см. в разделе [механизмы управления доступом](access-control-mechanisms.md) .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения о безопасности для служб R SQL Server](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

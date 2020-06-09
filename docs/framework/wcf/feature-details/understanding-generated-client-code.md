@@ -5,15 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c3f6e4b0-1131-4c94-aa39-a197c5c2f2ca
-ms.openlocfilehash: 6bc921355e54023ead3a308a7877ab609f868221
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: f04b67ae13307fb3c2a2981204526880f55d58f1
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69968625"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595067"
 ---
 # <a name="understanding-generated-client-code"></a>Основные сведения о созданном коде клиента
-[ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) создает код клиента и файл конфигурации клиентского приложения для использования при сборке клиентских приложений. В этом разделе содержатся примеры созданного кода для стандартных сценариев контрактов служб. Дополнительные сведения о создании клиентского приложения с помощью созданного кода см. в разделе [Общие сведения о клиенте WCF](../../../../docs/framework/wcf/wcf-client-overview.md).  
+[ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) создает код клиента и файл конфигурации клиентского приложения для использования при сборке клиентских приложений. В этом разделе содержатся примеры созданного кода для стандартных сценариев контрактов служб. Дополнительные сведения о создании клиентского приложения с помощью созданного кода см. в разделе [Общие сведения о клиенте WCF](../wcf-client-overview.md).  
   
 ## <a name="overview"></a>Обзор  
  Если вы используете Visual Studio для создания типов клиентов Windows Communication Foundation (WCF) для проекта, обычно не нужно изучать созданный код клиента. Если используемая среда разработки не выполняет аналогичные службы, для создания кода клиента, а также для последующего использования этого кода для разработки клиентского приложения можно использовать такое средство, как Svcutil.exe.  
@@ -39,14 +39,14 @@ ms.locfileid: "69968625"
   
  [!code-csharp[C_GeneratedCodeFiles#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#12)]  
   
- Вы можете использовать созданный интерфейс контракта службы вместе с <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> классом для создания объекта канала WCF, с помощью которого будут вызываться операции службы. Дополнительные сведения см. в разделе [Практическое руководство. Используйте ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md).  
+ Вы можете использовать созданный интерфейс контракта службы вместе с <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> классом для создания объекта канала WCF, с помощью которого будут вызываться операции службы. Дополнительные сведения см. [в разделе инструкции. Использование ChannelFactory](how-to-use-the-channelfactory.md).  
   
 ### <a name="finding-wcf-client-classes"></a>Поиск классов клиента WCF  
- Чтобы найти клиентский класс WCF, реализующий контракт службы, который вы хотите использовать, найдите расширение <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>, где параметр типа — это интерфейс контракта службы, который вы ранее находили и расширяет этот интерфейс. Следующий пример кода иллюстрирует класс <xref:System.ServiceModel.ClientBase%601> типа `ISampleService`.  
+ Чтобы найти клиентский класс WCF, реализующий контракт службы, который вы хотите использовать, найдите расширение <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType> , где параметр типа — это интерфейс контракта службы, который вы ранее находили и расширяет этот интерфейс. Следующий пример кода иллюстрирует класс <xref:System.ServiceModel.ClientBase%601> типа `ISampleService`.  
   
  [!code-csharp[C_GeneratedCodeFiles#14](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#14)]  
   
- Этот клиентский класс WCF можно использовать, создав новый экземпляр и вызывая методы, которые он реализует. Эти методы вызывают операцию службы, для взаимодействия с которой они разработаны и сконфигурированы. Дополнительные сведения см. в разделе [Общие сведения о клиенте WCF](../../../../docs/framework/wcf/wcf-client-overview.md).  
+ Этот клиентский класс WCF можно использовать, создав новый экземпляр и вызывая методы, которые он реализует. Эти методы вызывают операцию службы, для взаимодействия с которой они разработаны и сконфигурированы. Дополнительные сведения см. в разделе [Общие сведения о клиенте WCF](../wcf-client-overview.md).  
   
 > [!NOTE]
 > При создании средством SvcUtil.exe класса клиента WCF к классу клиента добавляется <xref:System.Diagnostics.DebuggerStepThroughAttribute> для предотвращения пошагового перебора элементов класса клиента WCF отладчиками.  
@@ -60,10 +60,10 @@ ms.locfileid: "69968625"
   
  [!code-csharp[C_GeneratedCodeFiles#30](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#30)]  
   
- В этом случае тип данных представляет собой тип сведений, вызванный конкретным исключением со стороны клиента <xref:System.ServiceModel.FaultException%601> , где параметром типа сведений является `microsoft.wcf.documentation.SampleFault`. Дополнительные сведения о типах данных см. [в разделе указание передача данных в контрактах служб](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md). Дополнительные сведения об обработке исключений в клиентах см. в разделе [Отправка и получение ошибок](../../../../docs/framework/wcf/sending-and-receiving-faults.md).  
+ В этом случае тип данных представляет собой тип сведений, вызванный конкретным исключением со стороны клиента <xref:System.ServiceModel.FaultException%601> , где параметром типа сведений является `microsoft.wcf.documentation.SampleFault`. Дополнительные сведения о типах данных см. [в разделе указание передача данных в контрактах служб](specifying-data-transfer-in-service-contracts.md). Дополнительные сведения об обработке исключений в клиентах см. в разделе [Отправка и получение ошибок](../sending-and-receiving-faults.md).  
   
 ### <a name="finding-callback-contracts-for-duplex-services"></a>Поиск контрактов обратного вызова для дуплексных служб  
- Если определяется местоположение контракта службы, для которого интерфейс контракта задает значение свойства <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A?displayProperty=nameWithType> , то этот контракт задает дуплексный контракт. Дуплексные контракты требуют, чтобы клиентское приложение создавало класс обратного вызова, реализующий контракт обратного вызова, и передавало экземпляр этого класса в <xref:System.ServiceModel.DuplexClientBase%601?displayProperty=nameWithType> или <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=nameWithType> , которые используются для общения со службой. Дополнительные сведения о дуплексных клиентах см [. в разделе как Доступ к службам с помощью](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)дуплексного контракта.  
+ Если определяется местоположение контракта службы, для которого интерфейс контракта задает значение свойства <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A?displayProperty=nameWithType> , то этот контракт задает дуплексный контракт. Дуплексные контракты требуют, чтобы клиентское приложение создавало класс обратного вызова, реализующий контракт обратного вызова, и передавало экземпляр этого класса в <xref:System.ServiceModel.DuplexClientBase%601?displayProperty=nameWithType> или <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=nameWithType> , которые используются для общения со службой. Дополнительные сведения о дуплексных клиентах см. [в разделе руководство. доступ к службам с помощью дуплексного контракта](how-to-access-services-with-a-duplex-contract.md).  
   
  Следующий контракт задает контракт обратного вызова типа `SampleDuplexHelloCallback`.  
   
@@ -80,6 +80,6 @@ ms.locfileid: "69968625"
   
  [!code-csharp[C_GeneratedCodeFiles#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#13)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения о клиентах WCF](../../../../docs/framework/wcf/wcf-client-overview.md)
+- [Общие сведения о клиентах WCF](../wcf-client-overview.md)

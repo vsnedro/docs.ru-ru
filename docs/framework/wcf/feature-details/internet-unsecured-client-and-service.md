@@ -5,27 +5,27 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-ms.openlocfilehash: 7eb640576bc00bc767ba16f8dc4a5d5952a479c6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0b02d1efc98f02390555861871d280f9800ced1e
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184729"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84598883"
 ---
 # <a name="internet-unsecured-client-and-service"></a>Незащищенные интернет-клиент и служба
-На следующей иллюстрации показан пример публичного, незащищенного клиента и сервиса Windows Communication Foundation (WCF):  
+На следующем рисунке показан пример общедоступного, незащищенного Windows Communication Foundation (WCF) клиента и службы.  
   
- ![Скриншот, на который показан незащищенный интернет-сценарий](./media/internet-unsecured-client-and-service/public-unsecured-internet.gif)  
+ ![Снимок экрана, на котором показан незащищенный Интернет](./media/internet-unsecured-client-and-service/public-unsecured-internet.gif)  
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|None|  
-|Транспортировка|HTTP|  
-|Привязка|<xref:System.ServiceModel.BasicHttpBinding>в коде, [ \<или basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) элементом в конфигурации.|  
-|Совместимость|С существующими службами и клиентами веб-служб|  
-|Аутентификация|None|  
-|Целостность|None|  
-|Конфиденциальность|None|  
+|Режим безопасности|Нет|  
+|Транспорт|HTTP|  
+|Привязка|<xref:System.ServiceModel.BasicHttpBinding>в коде или в [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) элементе конфигурации.|  
+|Взаимодействие|С существующими службами и клиентами веб-служб|  
+|Аутентификация|Нет|  
+|Целостность|Нет|  
+|Конфиденциальность|Нет|  
   
 ## <a name="service"></a>Служба  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
@@ -67,18 +67,18 @@ ms.locfileid: "79184729"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### <a name="code"></a>Код  
- Следующий код показывает основного клиента WCF, который получает доступ к незащищенной конечной точке.  
+ В следующем коде показан базовый клиент WCF, обращающийся к незащищенной конечной точке.  
   
  [!code-csharp[C_UnsecuredClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_unsecuredclient/cs/source.cs#1)]
  [!code-vb[C_UnsecuredClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_unsecuredclient/vb/source.vb#1)]  
@@ -109,8 +109,8 @@ ms.locfileid: "79184729"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Типовые сценарии безопасности](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
-- [Обзор безопасности](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Типовые сценарии безопасности](common-security-scenarios.md)
+- [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

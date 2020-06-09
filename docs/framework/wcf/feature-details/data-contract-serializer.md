@@ -6,24 +6,24 @@ helpviewer_keywords:
 - WCF, data
 - DataContractSerializer
 ms.assetid: 3d64837e-0a0c-4cc8-90ff-a5c6f313c63a
-ms.openlocfilehash: b1c773fbe90e7a45ea2a2718f9bde0aa9e9b67d6
-ms.sourcegitcommit: c7a7e1468bf0fa7f7065de951d60dfc8d5ba89f5
+ms.openlocfilehash: a898419a9bb1ecbd0b156f0b749da70e1b5b903f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65592566"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84593559"
 ---
 # <a name="data-contract-serializer"></a>Сериализатор контракта данных
-В инфраструктуре Windows Communication Foundation (WCF) используются <xref:System.Runtime.Serialization.DataContractSerializer> класс в качестве сериализатора по умолчанию. В подразделах этого раздела представлены дополнительные сведения об использовании этого класса в качестве автономного сериализатора.  
+Инфраструктура Windows Communication Foundation (WCF) использует класс в <xref:System.Runtime.Serialization.DataContractSerializer> качестве сериализатора по умолчанию. В подразделах этого раздела представлены дополнительные сведения об использовании этого класса в качестве автономного сериализатора.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Сериализация и десериализация](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md)  
+ [Сериализация и десериализация](serialization-and-deserialization.md)  
  Подробное описание использования класса <xref:System.Runtime.Serialization.DataContractSerializer> для сериализации графов объектов и десериализации документов XML в объекты.  
   
- [Импорт и экспорт схемы](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
- Здесь объясняется, как создавать схему языка определения схемы XML из классов .NET Framework или создание кода из документа схемы XSD.  
+ [Импорт и экспорт схемы](schema-import-and-export.md)  
+ Объясняет, как создать схему языка определения схемы XML (XSD) из .NET Framework класса или создать код из документа схемы XSD.  
   
-## <a name="reference"></a>Ссылка  
+## <a name="reference"></a>Справочник  
  <xref:System.Runtime.Serialization.DataContractSerializer>  
   
  <xref:System.Runtime.Serialization.NetDataContractSerializer>  
@@ -33,11 +33,11 @@ ms.locfileid: "65592566"
  <xref:System.Runtime.Serialization.DataMemberAttribute>  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Использование контрактов данных](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Использование контрактов данных](using-data-contracts.md)  
   
- [Передача данных и сериализация](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)  
+ [Передача данных и сериализация](data-transfer-and-serialization.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Справочник по схеме контрактов данных](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
-- [Задание передачи данных в контрактах служб](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- [Справочник по схеме контрактов данных](data-contract-schema-reference.md)
+- [Задание передачи данных в контрактах служб](specifying-data-transfer-in-service-contracts.md)

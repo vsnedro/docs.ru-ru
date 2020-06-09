@@ -8,29 +8,29 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 98e82101-4cff-4bb8-a220-f7abed3556e5
-ms.openlocfilehash: 39c54c5d91c38e43fd7d0b1205537948e84a0782
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 1cfcca524e5dd2b0c1560eb7600795766e2db1d6
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64587534"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84598961"
 ---
 # <a name="how-to-create-a-security-token-service"></a>Практическое руководство. Создание службы маркеров безопасности
 Служба маркеров безопасности реализует протокол, определенный в спецификации WS-Trust. Данный протокол определяет форматы сообщения и шаблоны обмена сообщениями для выпуска, обновления, отмены и проверки маркеров безопасности. Данная служба маркеров безопасности дает одну или несколько из данных возможностей. В данном разделе рассматривается наиболее общий сценарий: реализация выпуска маркера.  
   
 ## <a name="issuing-tokens"></a>Выпуск маркеров  
- WS-Trust определяет форматы сообщения на основе элемента схемы `RequestSecurityToken` языка определения схемы XML (XSD) и элемента схемы XSD `RequestSecurityTokenResponse` для выпуска маркера. Кроме того, WS-Trust определяет связанные универсальные коды ресурса (URI). Действия, связанным с `RequestSecurityToken` сообщение `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue`. Действия, связанным с `RequestSecurityTokenResponse` сообщение `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue`.  
+ WS-Trust определяет форматы сообщения на основе элемента схемы `RequestSecurityToken` языка определения схемы XML (XSD) и элемента схемы XSD `RequestSecurityTokenResponse` для выпуска маркера. Кроме того, WS-Trust определяет связанные универсальные коды ресурса (URI). С сообщением связан универсальный код ресурса (URI) действия `RequestSecurityToken` `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue` . С сообщением связан универсальный код ресурса (URI) действия `RequestSecurityTokenResponse` `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue` .  
   
 ### <a name="request-message-structure"></a>Структура сообщения с запросом  
  Структура сообщения с запросом на выпуск обычно состоит из следующих элементов.  
   
-- Запрос введите URI со значением `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue`.
+- Универсальный код ресурса (URI) типа запроса со значением `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue` .
   
-- Универсальный код ресурса (URI) типа маркера. Для маркеров Security Assertions Markup Language (SAML) 1.1 Этот URI значение `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`.  
+- Универсальный код ресурса (URI) типа маркера. Для маркеров безопасности токенов SAML 1,1 значение этого URI равно `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1` .  
   
 - Значение размера ключа, указывающее количество битов в ключе, связанное с выпущенным маркером.  
   
-- Универсальный код ресурса (URI) типа ключа. Для симметричных ключей, этот URI значение `http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey`.  
+- Универсальный код ресурса (URI) типа ключа. Для симметричных ключей значение этого URI равно `http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey` .  
   
  Кроме того, может присутствовать несколько других элементов.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "64587534"
  [!code-csharp[c_CreateSTS#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#4)]
  [!code-vb[c_CreateSTS#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#4)]  
   
- Дополнительные сведения см. в разделе [пример федерации](../../../../docs/framework/wcf/samples/federation-sample.md).  
+ Дополнительные сведения см. в разделе [Пример Федерации](../samples/federation-sample.md).  
   
 ## <a name="creating-response-messages"></a>Создание ответных сообщений  
  После обработки службой маркеров безопасности запроса на выпуск и создания для выпуска маркера и ключа проверки должно быть создано ответное сообщение, включающее, по крайней мере, запрошенный маркер, маркер проверки и ссылки выпущенного маркера. Выпущенный маркер обычно является маркером <xref:System.IdentityModel.Tokens.SamlSecurityToken>, созданным из <xref:System.IdentityModel.Tokens.SamlAssertion>, как показано в следующем примере.  
@@ -111,7 +111,7 @@ ms.locfileid: "64587534"
  [!code-csharp[c_CreateSTS#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#6)]
  [!code-vb[c_CreateSTS#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#6)]  
   
- Дополнительные сведения о том, как построить токен проверки, когда клиент и служба маркеров безопасности предоставляют материал ключа для общего ключа см. в разделе [пример федерации](../../../../docs/framework/wcf/samples/federation-sample.md).  
+ Дополнительные сведения о создании маркера подтверждения, когда клиент и служба маркеров безопасности предоставляют ключевой материал для общего ключа, см. в разделе [Пример Федерации](../samples/federation-sample.md).  
   
  Ссылки выпущенного ключа создаются путем создания экземпляров класса <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>.  
   
@@ -121,9 +121,9 @@ ms.locfileid: "64587534"
  После этого различные значения сериализуются в ответное сообщение, возвращаемое клиенту.  
   
 ## <a name="example"></a>Пример  
- Полный код для службы маркеров безопасности см. в разделе [пример федерации](../../../../docs/framework/wcf/samples/federation-sample.md).  
+ Полный код для службы маркеров безопасности см. в разделе [Пример Федерации](../samples/federation-sample.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.IdentityModel.Tokens.SigningCredentials>
 - <xref:System.IdentityModel.Tokens.SecurityKey>
@@ -132,4 +132,4 @@ ms.locfileid: "64587534"
 - <xref:System.IdentityModel.Tokens.SamlAssertion>
 - <xref:System.ServiceModel.Security.Tokens.BinarySecretSecurityToken>
 - <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>
-- [Пример федерации](../../../../docs/framework/wcf/samples/federation-sample.md)
+- [Пример федерации](../samples/federation-sample.md)

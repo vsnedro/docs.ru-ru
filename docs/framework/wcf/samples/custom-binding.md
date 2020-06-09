@@ -2,25 +2,25 @@
 title: Пользовательская привязка
 ms.date: 03/30/2017
 ms.assetid: 3c9537ea-9708-4ebc-b861-219f2e2db53d
-ms.openlocfilehash: f28aa83aa22a87f76e955d6b4eb7cfa9f6d7fcdd
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b00df1c57e1ff9dd39a14be1c61024f439536142
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62003149"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84592571"
 ---
 # <a name="custom-binding"></a>Пользовательская привязка
 Этот раздел содержит образцы, которые демонстрируют использование атрибутов пользовательской привязки элемента конечной точки.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Императивные пользовательские привязки](../../../../docs/framework/wcf/samples/custom-binding-imperative.md)  
- Показано, как писать императивный код для определения и использования пользовательских привязок, без использования файла конфигурации или клиент WCF создан.  
+ [Императивные пользовательские привязки](custom-binding-imperative.md)  
+ Демонстрируется написание императивного кода для определения и использования пользовательских привязок без использования файла конфигурации или клиента, созданного WCF.  
   
- [Транспорт и кодировка пользовательской привязки](../../../../docs/framework/wcf/samples/custom-binding-transport-and-encoding.md)  
+ [Транспорт и кодировка пользовательской привязки](custom-binding-transport-and-encoding.md)  
  Демонстрирует, как настроить пользовательскую привязку с различными элементами транспорта и кодирования сообщений.  
   
- [Надежный сеанс с использованием пользовательской привязки](../../../../docs/framework/wcf/samples/custom-binding-reliable-session.md)  
+ [Надежный сеанс с использованием пользовательской привязки](custom-binding-reliable-session.md)  
  Демонстрирует, как настроить пользовательскую привязку с различными элементами транспорта и кодирования сообщений, особенно включая надежные сеансы.  
   
- [Надежный сеанс по протоколу HTTPS с использованием пользовательской привязки](../../../../docs/framework/wcf/samples/custom-binding-reliable-session-over-https.md)  
+ [Надежный сеанс по протоколу HTTPS с использованием пользовательской привязки](custom-binding-reliable-session-over-https.md)  
  Демонстрирует использование безопасности транспорта SSL с надежными сеансами.

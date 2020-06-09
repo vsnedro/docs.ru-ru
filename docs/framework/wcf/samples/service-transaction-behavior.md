@@ -4,16 +4,16 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Service Transaction Behavior Sample [Windows Communication Foundation]
 ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
-ms.openlocfilehash: 38ad03d64d95e0653fba8018c59c62db9a698096
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 0be5bf0dbe6416febb898fb5150c5a516c8b0969
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715112"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84591531"
 ---
 # <a name="service-transaction-behavior"></a>Транзакционное поведение службы
 
-В этом образце показано использование координируемой клиентом транзакции и параметры ServiceBehaviorAttribute и OperationBehaviorAttribute, управляющие поведением транзакции службы. Этот пример основан на [Начало работы](../../../../docs/framework/wcf/samples/getting-started-sample.md) , который реализует службу калькулятора, но расширена для обслуживания журнала сервера выполненных операций в таблице базы данных и общей суммы с отслеживанием состояния для операций калькулятора. Операции записи в таблицу журнала сервера зависят от результата координируемой клиентом транзакции - если транзакция клиента не была завершена, транзакция веб-службы подтверждает, что обновления базы данных не будут зафиксированы.
+В этом образце показано использование координируемой клиентом транзакции и параметры ServiceBehaviorAttribute и OperationBehaviorAttribute, управляющие поведением транзакции службы. Этот пример основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора, но расширена для обслуживания журнала сервера выполненных операций в таблице базы данных и общей суммы с отслеживанием состояния для операций калькулятора. Операции записи в таблицу журнала сервера зависят от результата координируемой клиентом транзакции - если транзакция клиента не была завершена, транзакция веб-службы подтверждает, что обновления базы данных не будут зафиксированы.
 
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.
@@ -101,7 +101,7 @@ client.Close();
 
   - Свойство `ReleaseServiceInstanceOnTransactionComplete` определяет, используется ли экземпляр службы повторно по завершении транзакции. При установке для него значения `false` служба использует один и тот же экземпляр службы для разных запросов операций. Это требуется для определения нарастающего итога. Если свойство имеет значение `true`, после каждого завершенного действия создается новый экземпляр.
 
-  - Свойство `TransactionAutoCompleteOnSessionClose` определяет, завершаются ли ожидающие обработки транзакции при завершении сеанса. Если задать для него значение `false`, то отдельные операции должны либо задать для свойства <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete?displayProperty=nameWithType> значение `true`, либо явно требовать вызова метода <xref:System.ServiceModel.OperationContext.SetTransactionComplete?displayProperty=nameWithType> для завершения транзакций. В этом образце продемонстрированы оба подхода.
+  - Свойство `TransactionAutoCompleteOnSessionClose` определяет, завершаются ли ожидающие обработки транзакции при завершении сеанса. Если задать для него значение `false` , то отдельные операции должны либо задать <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete?displayProperty=nameWithType> свойство равным, `true` либо явно требовать вызова <xref:System.ServiceModel.OperationContext.SetTransactionComplete?displayProperty=nameWithType> метода для завершения транзакций. В этом образце продемонстрированы оба подхода.
 
 - В атрибуте `ServiceContractAttribute`.
 
@@ -209,11 +209,11 @@ Creating new service instance...
 
 1. Убедитесь, что установлен SQL Server 2005 Express Edition или SQL Server 2005. В файле службы App.config может быть задано значение `connectionString` базы данных либо взаимодействие с базой данных может быть отключено (значение appSettings `usingSql` равно `false`).
 
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md).
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
-При запуске примера на нескольких компьютерах необходимо настроить Microsoft координатор распределенных транзакций (MSDTC) для включения потока сетевых транзакций и использовать средство WsatConfig. exe для включения сети транзакций Windows Communication Foundation (WCF). технической.
+При запуске примера на нескольких компьютерах необходимо настроить Microsoft координатор распределенных транзакций (MSDTC) для включения потока сетевых транзакций и использовать средство WsatConfig. exe, чтобы включить поддержку сети транзакций Windows Communication Foundation (WCF).
 
 ### <a name="to-configure-the-microsoft-distributed-transaction-coordinator-msdtc-to-support-running-the-sample-across-machines"></a>Настройка координатора распределенных транзакций (Майкрософт) на поддержку выполнения образца на нескольких компьютерах
 
@@ -262,6 +262,6 @@ Creating new service instance...
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Transactions`

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: af183fa02ea3ec98f316979198624351d9b25f21
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: 04d1f753e5788460404942a21a29e1612f674e90
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75963369"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84593572"
 ---
 # <a name="data-contract-schema-reference"></a>Справочник по схеме контрактов данных
 
@@ -17,7 +17,7 @@ ms.locfileid: "75963369"
 
 ## <a name="datacontractserializer-mappings"></a>DataContractSerializer - сопоставления
 
-`DataContractSerializer` сопоставляет типы CLR с XSD при экспорте метаданных из службы Windows Communication Foundation (WCF) с помощью конечной точки метаданных или [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). Дополнительные сведения см. в разделе [сериализатор контрактов данных](../../../../docs/framework/wcf/feature-details/data-contract-serializer.md).
+`DataContractSerializer`Сопоставляет типы CLR с XSD при экспорте метаданных из службы Windows Communication Foundation (WCF) с помощью конечной точки метаданных или [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Дополнительные сведения см. в разделе [сериализатор контрактов данных](data-contract-serializer.md).
 
 `DataContractSerializer` также сопоставляет типы XSD типам среды CLR, когда для доступа к документам WSDL или XSD и создания контрактов данных для служб или клиентов используется Svcutil.exe.
 
@@ -27,9 +27,9 @@ ms.locfileid: "75963369"
 
 `DataContractSerializer` обеспечивает следующие уровни поддержки для данной функции схемы XML:
 
-- **Поддерживается**. Существует явное сопоставление этой функции типам и (или) атрибутам CLR с помощью `DataContractSerializer`.
+- **поддерживается**. Существует явное сопоставление этой функции типам и (или) атрибутам CLR с помощью `DataContractSerializer`.
 
-- **Пропускается**. Эта функция используется в схемах, импортируемых `DataContractSerializer`, но не влияет на создание кода.
+- **Игнорируется**. Эта функция используется в схемах, импортируемых `DataContractSerializer`, но не влияет на создание кода.
 
 - **Запрещено**. `DataContractSerializer` не поддерживает импорт схемы с использованием данной функции. Например, при доступе Svcutil.exe к WSDL посредством схемы, использующей данную функцию, доступ осуществляется с помощью <xref:System.Xml.Serialization.XmlSerializer> . Это выполняется по умолчанию.
 
@@ -41,53 +41,53 @@ ms.locfileid: "75963369"
 
 - Любые заметки (за исключением описанных в данном документе) игнорируются.
 
-### <a name="xsschema-attributes"></a>\<xs: schema >: Attributes
+### <a name="xsschema-attributes"></a>\<xs:schema>: атрибуты
 
 |Атрибут|DataContract|
 |---------------|------------------|
-|`attributeFormDefault`|Пропускается.|
-|`blockDefault`|Пропускается.|
-|`elementFormDefault`|Должен иметь полное имя. Для того чтобы схема поддерживалась `DataContractSerializer`, все элементы должны иметь полное имя. Это можно сделать, задав для xs:schema/@elementFormDefault значение "квалифицировано" или установив для xs:element/@form значение "квалифицировано" для каждого отдельного объявления элемента.|
-|`finalDefault`|Пропускается.|
-|`Id`|Пропускается.|
-|`targetNamespace`|Поддерживается и сопоставляется пространству имен контракта данных. Если данный атрибут не определен, используется пустое пространство имен. Не может быть зарезервированным `http://schemas.microsoft.com/2003/10/Serialization/`пространства имен.|
-|`version`|Пропускается.|
+|`attributeFormDefault`|Не обрабатывается.|
+|`blockDefault`|Не обрабатывается.|
+|`elementFormDefault`|Должен иметь полное имя. Для того чтобы схема поддерживалась `DataContractSerializer`, все элементы должны иметь полное имя. Это можно сделать, задав для параметра значение " xs:schema/@elementFormDefault полное" или задав xs:element/@form для каждого объявления отдельного элемента значение "квалифицировано".|
+|`finalDefault`|Не обрабатывается.|
+|`Id`|Не обрабатывается.|
+|`targetNamespace`|Поддерживается и сопоставляется пространству имен контракта данных. Если данный атрибут не определен, используется пустое пространство имен. Не может быть зарезервированным пространством имен `http://schemas.microsoft.com/2003/10/Serialization/` .|
+|`version`|Не обрабатывается.|
 
-### <a name="xsschema-contents"></a>\<xs: schema >: содержимое
+### <a name="xsschema-contents"></a>\<xs:schema>: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`include`|Поддерживается. `DataContractSerializer` поддерживает xs:include и xs:import. Однако при загрузке метаданных из локального файла средство Svcutil.exe ограничивает следование ссылкам `xs:include/@schemaLocation` и `xs:import/@location` . В этом случае список файлов схемы должен передаваться по нештатному механизму, а не посредством `include` ; документы схемы, переданные посредством `include`, не учитываются.|
 |`redefine`|Запрещено. Использование `xs:redefine` запрещено `DataContractSerializer` по соображениям безопасности: для `x:redefine` требуется следовать `schemaLocation` . В некоторых случаях Svcutil.exe, использующее DataContract, ограничивает применение `schemaLocation`.|
 |`import`|Поддерживается. `DataContractSerializer` поддерживает `xs:include` и `xs:import`. Однако при загрузке метаданных из локального файла средство Svcutil.exe ограничивает следование ссылкам `xs:include/@schemaLocation` и `xs:import/@location` . В этом случае список файлов схемы должен передаваться по нештатному механизму, а не посредством `include` ; документы схемы, переданные посредством `include`, не учитываются.|
 |`simpleType`|Поддерживается. См. раздел `xs:simpleType` .|
 |`complexType`|Поддерживается, сопоставляется контрактам данных. См. раздел `xs:complexType` .|
-|`group`|Пропускается. `DataContractSerializer` не поддерживает использование `xs:group`, `xs:attributeGroup`и `xs:attribute`. Эти объявления игнорируются как дочерние элементы `xs:schema`, но ссылки на них невозможны из `complexType` или других поддерживаемых конструкторов.|
-|`attributeGroup`|Пропускается. `DataContractSerializer` не поддерживает использование `xs:group`, `xs:attributeGroup`и `xs:attribute`. Эти объявления игнорируются как дочерние элементы `xs:schema`, но ссылки на них невозможны из `complexType` или других поддерживаемых конструкторов.|
+|`group`|Не обрабатывается. `DataContractSerializer` не поддерживает использование `xs:group`, `xs:attributeGroup`и `xs:attribute`. Эти объявления игнорируются как дочерние элементы `xs:schema`, но ссылки на них невозможны из `complexType` или других поддерживаемых конструкторов.|
+|`attributeGroup`|Не обрабатывается. `DataContractSerializer` не поддерживает использование `xs:group`, `xs:attributeGroup`и `xs:attribute`. Эти объявления игнорируются как дочерние элементы `xs:schema`, но ссылки на них невозможны из `complexType` или других поддерживаемых конструкторов.|
 |`element`|Поддерживается. См. «Объявление глобального элемента».|
-|`attribute`|Пропускается. `DataContractSerializer` не поддерживает использование `xs:group`, `xs:attributeGroup`и `xs:attribute`. Эти объявления игнорируются как дочерние элементы `xs:schema`, но ссылки на них невозможны из `complexType` или других поддерживаемых конструкторов.|
-|`notation`|Пропускается.|
+|`attribute`|Не обрабатывается. `DataContractSerializer` не поддерживает использование `xs:group`, `xs:attributeGroup`и `xs:attribute`. Эти объявления игнорируются как дочерние элементы `xs:schema`, но ссылки на них невозможны из `complexType` или других поддерживаемых конструкторов.|
+|`notation`|Не обрабатывается.|
 
-## <a name="complex-types--xscomplextype"></a>Сложные типы — \<xs: complexType >
+## <a name="complex-types--xscomplextype"></a>Сложные типы – \<xs:complexType>
 
 ### <a name="general-information"></a>Общие сведения
 
-Каждый сложный тип \<xs: complexType > сопоставляется с контрактом данных.
+Каждый сложный тип \<xs:complexType> сопоставляется с контрактом данных.
 
-### <a name="xscomplextype-attributes"></a>\<xs: complexType >: Attributes
+### <a name="xscomplextype-attributes"></a>\<xs:complexType>: атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
 |`abstract`|По умолчанию должен иметь значение false.|
 |`block`|Запрещено.|
-|`final`|Пропускается.|
-|`id`|Пропускается.|
+|`final`|Не обрабатывается.|
+|`id`|Не обрабатывается.|
 |`mixed`|По умолчанию должен иметь значение false.|
 |`name`|Поддерживается и сопоставляется имени контракта данных. Если в имени имеются точки, выполняется попытка сопоставить тип внутреннему типу. Например, сложный тип с именем `A.B` сопоставляется контракту данных, который является внутренним типом для типа с именем контракта данных `A`, но только в том случае, если данный контракт данных существует. Может существовать более одного уровня вложения: например, `A.B.C` может быть внутренним типом, но только при условии, что и `A` , и `A.B` существуют.|
 
-### <a name="xscomplextype-contents"></a>\<xs: complexType >: содержимое
+### <a name="xscomplextype-contents"></a>\<xs:complexType>: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`simpleContent`|Расширения запрещены.<br /><br /> Ограничение разрешено только из `anySimpleType`.|
 |`complexContent`|Поддерживается. См. «Наследование».|
@@ -96,21 +96,21 @@ ms.locfileid: "75963369"
 |`choice`|Запрещено|
 |`sequence`|Поддерживается, сопоставляется членам данных контракта данных.|
 |`attribute`|Запрещено, даже если use="prohibited" (существует одно исключение). Только необязательные атрибуты из стандартного пространства имен сериализации поддерживаются. Они не сопоставляются членам данных в модели программирования контракта данных. В настоящее время только один подобный атрибут имеет значение; он рассматривается в разделе ISerializable. Другие атрибуты игнорируются.|
-|`attributeGroup`|Запрещено. В выпуске WCF v1 `DataContractSerializer` не учитывает наличие `attributeGroup` внутри `xs:complexType`.|
+|`attributeGroup`|Запрещено. В выпуске WCF v1 не `DataContractSerializer` учитывает присутствие `attributeGroup` внутри `xs:complexType` .|
 |`anyAttribute`|Запрещено.|
 |(пусто)|Сопоставляется с контрактом данных, не имеющем элементов данных.|
 
-### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs: Sequence > в сложном типе: атрибуты
+### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence>в сложном типе: атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 |`maxOccurs`|По умолчанию должен иметь значение 1.|
 |`minOccurs`|По умолчанию должен иметь значение 1.|
 
-### <a name="xssequence-in-a-complex-type-contents"></a>\<xs: Sequence > в сложном типе: содержимое
+### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence>в сложном типе: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`element`|Каждый экземпляр сопоставляется с элементом данных.|
 |`group`|Запрещено.|
@@ -119,7 +119,7 @@ ms.locfileid: "75963369"
 |`any`|Запрещено.|
 |(пусто)|Сопоставляется с контрактом данных, не имеющем элементов данных.|
 
-## <a name="elements--xselement"></a>Elements — \<xs: element >
+## <a name="elements--xselement"></a>Элементы – \<xs:element>
 
 ### <a name="general-information"></a>Общие сведения
 
@@ -131,23 +131,23 @@ ms.locfileid: "75963369"
 
 - Он может использоваться в `<xs:schema>` в качестве объявления глобального элемента.
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs: element > с maxOccurs = 1 в \<xs: Sequence > (элементы данных)
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs:element>с maxOccurs = 1 в \<xs:sequence> (элементы данных)
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
 |`ref`|Запрещено.|
 |`name`|Поддерживается, сопоставляется с именем элемента данных.|
 |`type`|Поддерживается, сопоставляется типу члена данных. Дополнительные сведения см. в разделе «Сопоставление тип-примитив». Если не задан (и элемент не содержит анонимный тип), предполагается `xs:anyType` .|
-|`block`|Пропускается.|
+|`block`|Не обрабатывается.|
 |`default`|Запрещено.|
 |`fixed`|Запрещено.|
 |`form`|Должен иметь полное имя. Этот атрибут может быть задан через `elementFormDefault` в `xs:schema`.|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 |`maxOccurs`|1|
 |`minOccurs`|Сопоставляется со свойством <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> элемента данных (`IsRequired` имеет значение true, когда `minOccurs` имеет значение 1).|
 |`nillable`|Влияет на сопоставление типов. См. "Сопоставление тип-примитив".|
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs: element > с maxOccurs > 1 в \<xs: Sequence > (Collections)
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs:element>с maxOccurs>1 в \<xs:sequence> коллекции (коллекций)
 
 - Сопоставляется <xref:System.Runtime.Serialization.CollectionDataContractAttribute>.
 
@@ -163,15 +163,15 @@ ms.locfileid: "75963369"
 
 Правила для атрибутов `ref`, `block`, `default`, `fixed`, `form`и `id` те же, что и в случае типов, не являющихся коллекциями. Другие атрибуты приведены в следующей таблице.
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
 |`name`|Поддерживается, сопоставляется свойству <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> в атрибуте `CollectionDataContractAttribute` .|
 |`type`|Поддерживается, сопоставляется типу, хранящемуся в коллекции.|
 |`maxOccurs`|Больше, чем 1 или unbounded. Для схемы контроллера домена следует использовать unbounded.|
-|`minOccurs`|Пропускается.|
+|`minOccurs`|Не обрабатывается.|
 |`nillable`|Влияет на сопоставление типов. Этот атрибут игнорируется в случае коллекций-словарей.|
 
-### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs: element > в объявлении глобального элемента \<xs: schema >
+### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs:element>в \<xs:schema> объявлении глобального элемента
 
 - Объявление глобального элемента, имеющего то же имя и пространство имен, что и тип в схеме, или определяющего анонимный тип внутри себя, означает связь с типом.
 
@@ -181,57 +181,57 @@ ms.locfileid: "75963369"
 
 - Импорт схемы: связанные объявления глобальных элементов не требуются и игнорируются, если они соответствуют следующим правилам (если только они не определяют типы).
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
 |`abstract`|Должен иметь значение false для связанных объявлений глобальных элементов.|
 |`block`|Запрещено в связанных объявлениях глобальных элементов.|
 |`default`|Запрещено в связанных объявлениях глобальных элементов.|
 |`final`|Должен иметь значение false для связанных объявлений глобальных элементов.|
 |`fixed`|Запрещено в связанных объявлениях глобальных элементов.|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 |`name`|Поддерживается. См. определение связанных объявлений глобальных элементов.|
 |`nillable`|Должен иметь значение true для связанных объявлений глобальных элементов.|
 |`substitutionGroup`|Запрещено в связанных объявлениях глобальных элементов.|
 |`type`|Поддерживается и должен соответствовать связанному типу связанных объявлений глобальных элементов (если только элемент не содержит анонимный тип).|
 
-### <a name="xselement-contents"></a>\<xs: element >: содержимое
+### <a name="xselement-contents"></a>\<xs:element>: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`simpleType`|Поддерживается.*|
 |`complexType`|Поддерживается.*|
-|`unique`|Пропускается.|
-|`key`|Пропускается.|
-|`keyref`|Пропускается.|
+|`unique`|Не обрабатывается.|
+|`key`|Не обрабатывается.|
+|`keyref`|Не обрабатывается.|
 |(пусто)|Поддерживается.|
 
-\* при использовании сопоставления `simpleType` и `complexType,` для анонимных типов такое же, как и для неанонимных типов, за исключением того, что нет анонимных контрактов данных, поэтому создается именованный контракт данных с созданным именем, производным от имени элемента. Ниже перечислены правила для анонимных типов.
+\*При использовании `simpleType` сопоставления и `complexType,` для анонимных типов такая же, как и для неанонимных типов, за исключением того, что нет анонимных контрактов данных, поэтому создается именованный контракт данных с созданным именем, производным от имени элемента. Ниже перечислены правила для анонимных типов.
 
-- Сведения о реализации WCF: Если имя `xs:element` не содержит точек, то анонимный тип сопоставляется внутреннему типу внешнего типа контракта данных. Если имя содержит точки, итоговый тип контракта данных является независимым (не внутренним типом).
+- Сведения о реализации WCF: Если `xs:element` имя не содержит точек, то анонимный тип сопоставляется внутреннему типу внешнего типа контракта данных. Если имя содержит точки, итоговый тип контракта данных является независимым (не внутренним типом).
 
 - Создаваемое имя контракта данных внутреннего типа - это имя контракта данных внешнего типа, за которым следует точка, имя элемента и строка Type.
 
 - Если контракт данных с таким именем уже существует, уникальное имя создается путем добавления "1", "2", "3" и т. д., пока не будет создано уникальное имя.
 
-## <a name="simple-types---xssimpletype"></a>Простые типы — \<xs: simpleType >
+## <a name="simple-types---xssimpletype"></a>Простые типы - \<xs:simpleType>
 
-### <a name="xssimpletype-attributes"></a>\<xs: simpleType >: Attributes
+### <a name="xssimpletype-attributes"></a>\<xs:simpleType>: атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
-|`final`|Пропускается.|
-|`id`|Пропускается.|
+|`final`|Не обрабатывается.|
+|`id`|Не обрабатывается.|
 |`name`|Поддерживается, сопоставляется имени контракта данных.|
 
-### <a name="xssimpletype-contents"></a>\<xs: simpleType >: содержимое
+### <a name="xssimpletype-contents"></a>\<xs:simpleType>: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`restriction`|Поддерживается. Сопоставляется контрактам данных перечислений. Если этот атрибут не соответствует шаблону перечисления, он игнорируется. См. раздел «Ограничения `xs:simpleType` ».|
 |`list`|Поддерживается. Сопоставляется контрактам данных перечислений флагов. См. раздел "Списки `xs:simpleType` ".|
 |`union`|Запрещено.|
 
-### <a name="xsrestriction"></a>\<xs: restriction >
+### \<xs:restriction>
 
 - Ограничения сложных типов поддерживаются только для base="`xs:anyType`".
 
@@ -239,52 +239,52 @@ ms.locfileid: "75963369"
 
 - Все другие ограничения простых типов сопоставляются типам, которые они ограничивают. Например, ограничение `xs:int` сопоставляется с целым числом так же, как и `xs:int` . Дополнительные сведения о сопоставлении типов-примитивов см. в разделе Сопоставление типов и примитивов.
 
-### <a name="xsrestriction-attributes"></a>\<xs: restriction >: Attributes
+### <a name="xsrestriction-attributes"></a>\<xs:restriction>: атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
 |`base`|Должен быть поддерживаемым простым типом или `xs:anyType`.|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 
-### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs: restriction > для всех остальных случаев: содержимое
+### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs:restriction>для всех остальных случаев: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`simpleType`|Если существует, должен быть образован от поддерживаемого примитивного типа.|
-|`minExclusive`|Пропускается.|
-|`minInclusive`|Пропускается.|
-|`maxExclusive`|Пропускается.|
-|`maxInclusive`|Пропускается.|
-|`totalDigits`|Пропускается.|
-|`fractionDigits`|Пропускается.|
-|`length`|Пропускается.|
-|`minLength`|Пропускается.|
-|`maxLength`|Пропускается.|
-|`enumeration`|Пропускается.|
-|`whiteSpace`|Пропускается.|
-|`pattern`|Пропускается.|
+|`minExclusive`|Не обрабатывается.|
+|`minInclusive`|Не обрабатывается.|
+|`maxExclusive`|Не обрабатывается.|
+|`maxInclusive`|Не обрабатывается.|
+|`totalDigits`|Не обрабатывается.|
+|`fractionDigits`|Не обрабатывается.|
+|`length`|Не обрабатывается.|
+|`minLength`|Не обрабатывается.|
+|`maxLength`|Не обрабатывается.|
+|`enumeration`|Не обрабатывается.|
+|`whiteSpace`|Не обрабатывается.|
+|`pattern`|Не обрабатывается.|
 |(пусто)|Поддерживается.|
 
 ## <a name="enumeration"></a>Перечисление
 
-### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs: ограничение > для перечислений: атрибуты
+### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs:restriction>для перечислений: атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
 |`base`|Если существует, должен быть `xs:string`.|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 
-### <a name="xsrestriction-for-enumerations-contents"></a>\<xs: ограничение > для перечислений: содержимое
+### <a name="xsrestriction-for-enumerations-contents"></a>\<xs:restriction>для перечислений: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`simpleType`|Если существует, должен быть ограничением перечисления, поддерживаемым контрактом данных (этот раздел).|
-|`minExclusive`|Пропускается.|
-|`minInclusive`|Пропускается.|
-|`maxExclusive`|Пропускается.|
-|`maxInclusive`|Пропускается.|
-|`totalDigits`|Пропускается.|
-|`fractionDigits`|Пропускается.|
+|`minExclusive`|Не обрабатывается.|
+|`minInclusive`|Не обрабатывается.|
+|`maxExclusive`|Не обрабатывается.|
+|`maxInclusive`|Не обрабатывается.|
+|`totalDigits`|Не обрабатывается.|
+|`fractionDigits`|Не обрабатывается.|
 |`length`|Запрещено.|
 |`minLength`|Запрещено.|
 |`maxLength`|Запрещено.|
@@ -331,20 +331,20 @@ public enum MyEnum
 </xs:simpleType>
 ```
 
-### <a name="xslist"></a>\<xs:list>
+### \<xs:list>
 
 `DataContractSerializer` сопоставляет типы перечисления, отмеченные `System.FlagsAttribute` , `xs:list` , образованному из `xs:string`. Никакие другие виды `xs:list` не поддерживаются.
 
-### <a name="xslist-attributes"></a>\<xs: List >: Attributes
+### <a name="xslist-attributes"></a>\<xs:list>: атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
 |`itemType`|Запрещено.|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 
-### <a name="xslist-contents"></a>\<xs: List >: содержимое
+### <a name="xslist-contents"></a>\<xs:list>: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`simpleType`|Должен быть ограничением из `xs:string` , использующей аспект `xs:enumeration` .|
 
@@ -439,28 +439,28 @@ public class Employee : Person
 </xs:complexType>
 ```
 
-### <a name="xscomplexcontent-attributes"></a>\<xs: complexContent >: Attributes
+### <a name="xscomplexcontent-attributes"></a>\<xs:complexContent>: атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 |`mixed`|Должен иметь значение false.|
 
-### <a name="xscomplexcontent-contents"></a>\<xs: complexContent >: содержимое
+### <a name="xscomplexcontent-contents"></a>\<xs:complexContent>: содержимое
 
-|Содержание|Схема|
+|Содержимое|схема|
 |--------------|------------|
 |`restriction`|Запрещено, за исключением случая, когда base="`xs:anyType`". Последнее эквивалентно помещению содержимого `xs:restriction` прямо под контейнер `xs:complexContent`.|
 |`extension`|Поддерживается. Сопоставляется наследованию контракта данных.|
 
-### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs: Extension > в \<xs: complexContent >: Attributes
+### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs:extension>в \<xs:complexContent> : атрибуты
 
-|Атрибут|Схема|
+|Атрибут|схема|
 |---------------|------------|
-|`id`|Пропускается.|
+|`id`|Не обрабатывается.|
 |`base`|Поддерживается. Сопоставляется базовому типу контракта данных, от которого наследует этот тип.|
 
-### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs: Extension > в \<xs: complexContent >: содержимое
+### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs:extension>в \<xs:complexContent> : содержимое
 
 Применяются те же правила, что и для содержимого `<xs:complexType>` .
 
@@ -493,7 +493,7 @@ public class Employee : Person
 |`gDay`|<xref:System.String>.|
 |`gMonth`|<xref:System.String>.|
 |`boolean`|<xref:System.Boolean>|
-|`base64Binary`|Массив<xref:System.Byte> .|
+|`base64Binary`|Массив <xref:System.Byte>.|
 |`hexBinary`|<xref:System.String>.|
 |`float`|<xref:System.Single>.|
 |`double`|<xref:System.Double>.|
@@ -529,7 +529,7 @@ public class Employee : Person
 
 ## <a name="iserializable-types-mapping"></a>Сопоставление типов ISerializable
 
-В .NET Framework версии 1,0 <xref:System.Runtime.Serialization.ISerializable> было представлено как общий механизм сериализации объектов для сохранения или обмена данными. Существует множество типов .NET Framework, которые реализуют `ISerializable` и могут передаваться между приложениями. <xref:System.Runtime.Serialization.DataContractSerializer> поддерживает классы `ISerializable` . `DataContractSerializer` сопоставляет типы схемы реализации `ISerializable` , отличающиеся только полным именем типа (QName) и фактически являющиеся коллекциями свойств. Например, `DataContractSerializer` сопоставляет <xref:System.Exception> со следующим типом XSD в пространстве имен `http://schemas.datacontract.org/2004/07/System`.
+В .NET Framework версии 1,0 <xref:System.Runtime.Serialization.ISerializable> было представлено как общий механизм сериализации объектов для сохранения или обмена данными. Существует множество типов .NET Framework, которые реализуют `ISerializable` и могут передаваться между приложениями. <xref:System.Runtime.Serialization.DataContractSerializer> поддерживает классы `ISerializable` . `DataContractSerializer` сопоставляет типы схемы реализации `ISerializable` , отличающиеся только полным именем типа (QName) и фактически являющиеся коллекциями свойств. Например, объект `DataContractSerializer` сопоставляется со <xref:System.Exception> следующим типом XSD в `http://schemas.datacontract.org/2004/07/System` пространстве имен.
 
 ```xml
 <xs:complexType name="Exception">
@@ -541,7 +541,7 @@ public class Employee : Person
 </xs:complexType>
 ```
 
-Необязательный атрибут `ser:FactoryType` , объявленный в схеме сериализации контракта данных ссылается на класс фабрики, который может выполнить десериализацию типа. Класс фабрики может входить в коллекцию известных типов используемого экземпляра `DataContractSerializer` . Дополнительные сведения об известных типах см. в разделе [Data Contract известные типы](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).
+Необязательный атрибут `ser:FactoryType` , объявленный в схеме сериализации контракта данных ссылается на класс фабрики, который может выполнить десериализацию типа. Класс фабрики может входить в коллекцию известных типов используемого экземпляра `DataContractSerializer` . Дополнительные сведения об известных типах см. в разделе [Data Contract известные типы](data-contract-known-types.md).
 
 ## <a name="datacontract-serialization-schema"></a>DataContract - схема сериализации
 
@@ -690,10 +690,10 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
 </xs:schema>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>
-- [Использование контрактов данных](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Использование контрактов данных](using-data-contracts.md)

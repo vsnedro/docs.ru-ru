@@ -2,18 +2,18 @@
 title: Диагностика транзакционных приложений
 ms.date: 03/30/2017
 ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
-ms.openlocfilehash: 9a4f064d903092b04f8885fb00b56e18c9cfeb74
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: fb3a83083e876cf697621ba70dcf7dd67636f83a
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64751115"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599221"
 ---
 # <a name="diagnosing-transactional-applications"></a>Диагностика транзакционных приложений
-В этом разделе описывается использование Windows Communication Foundation (WCF) и управлению с помощью функции диагностики для устранения неполадок транзакционного приложения.  
+В этом разделе описывается использование компонента управления и диагностики Windows Communication Foundation (WCF) для устранения неполадок в транзакционном приложении.  
   
 ## <a name="performance-counters"></a>Счетчики производительности  
- WCF предоставляет стандартный набор счетчиков производительности для измерения производительности транзакционного приложения. Дополнительные сведения см. в разделе [Счетчики производительности](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md).  
+ WCF предоставляет стандартный набор счетчиков производительности для измерения производительности транзакционного приложения. Дополнительные сведения см. в статье [Performance Counters](../diagnostics/performance-counters/index.md).  
   
  Счетчики производительности группируются по трем различным уровням области действия: служба, конечная точка и операция, как описано в приведенных далее таблицах.  
   
@@ -45,42 +45,42 @@ ms.locfileid: "64751115"
 |Количество поступивших транзакций в секунду|Количество транзакций в операциях для данной конечной точки за каждую секунду. Значение этого счетчика увеличивается каждый раз, когда в сообщении, отправленном на эту конечную точку, содержится транзакция.|  
   
 ## <a name="windows-management-instrumentation"></a>Инструментарий управления Windows (WMI)  
- WCF предоставляет данные проверки службы во время выполнения с помощью поставщика WCF инструментария управления Windows (WMI). Дополнительные сведения о доступе к данным WMI см. в разделе [с помощью Windows Management Instrumentation для диагностики](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
+ WCF предоставляет данные проверки службы во время выполнения с помощью поставщика инструментарий управления Windows (WMI) WCF (WMI). Дополнительные сведения о доступе к данным WMI см. [в разделе использование инструментарий управления Windows (WMI) для диагностики](../diagnostics/wmi/index.md).  
   
  Ряд свойств WMI только для чтения показывает применяемые в службе параметры транзакции. В приведенных ниже таблицах перечислены эти параметры.  
   
  В службе атрибут `ServiceBehaviorAttribute` имеет следующие свойства.  
   
-|name|Тип|Описание|  
+|Имя|Тип|Описание|  
 |----------|----------|-----------------|  
-|ReleaseServiceInstanceOnTransactionComplete|Boolean|Указывает, производится ли повторное использование объекта службы после завершения текущей транзакции.|  
-|TransactionAutoCompleteOnSessionClose|Boolean|Указывает, завершаются ли ожидающие транзакции при закрытии текущего сеанса.|  
+|ReleaseServiceInstanceOnTransactionComplete|Логическое|Указывает, производится ли повторное использование объекта службы после завершения текущей транзакции.|  
+|TransactionAutoCompleteOnSessionClose|Логическое|Указывает, завершаются ли ожидающие транзакции при закрытии текущего сеанса.|  
 |TransactionIsolationLevel|Строка, содержащая допустимое значение перечисления <xref:System.Transactions.IsolationLevel>.|Задает уровень изоляции транзакции, поддерживаемый этой службой.|  
 |TransactionTimeout|<xref:System.DateTime>|Задает период времени, в течение которого транзакция должна быть завершена.|  
   
  Атрибут `ServiceTimeoutsBehavior` имеет следующее свойство.  
   
-|name|Тип|Описание|  
+|Имя|Тип|Описание|  
 |----------|----------|-----------------|  
 |TransactionTimeout|<xref:System.DateTime>|Задает период времени, в течение которого транзакция должна быть завершена.|  
   
  В привязке атрибут `TransactionFlowBindingElement` имеет следующие свойства.  
   
-|name|Тип|Описание|  
+|Имя|Тип|Описание|  
 |----------|----------|-----------------|  
 |TransactionProtocol|Строка, содержащая допустимое значение типа <xref:System.ServiceModel.TransactionProtocol>.|Указывает протокол транзакций, используемый при передаче транзакций.|  
-|TransactionFlow|Boolean|Задает, включен ли входящий поток транзакций.|  
+|TransactionFlow|Логическое|Задает, включен ли входящий поток транзакций.|  
   
  В операции атрибут `OperationBehaviorAttribute` имеет следующие свойства.  
   
-|name|Тип|Описание|  
+|Имя|Тип|Описание|  
 |----------|----------|-----------------|  
-|TransactionAutoComplete|Boolean|Указывает, следует ли автоматически фиксировать текущую транзакцию при отсутствии необработанных исключений.|  
-|TransactionScopeRequired|Boolean|Указывает, требует ли операция транзакции.|  
+|TransactionAutoComplete|Логическое|Указывает, следует ли автоматически фиксировать текущую транзакцию при отсутствии необработанных исключений.|  
+|TransactionScopeRequired|Логическое|Указывает, требует ли операция транзакции.|  
   
  В операции атрибут `TransactionFlowAttribute` имеет следующие свойства.  
   
-|name|Тип|Описание|  
+|Имя|Тип|Описание|  
 |----------|----------|-----------------|  
 |TransactionFlowOption|Строка, содержащая допустимое значение перечисления <xref:System.ServiceModel.TransactionFlowOption>.|Задает область, к которой требуется поток транзакций.|  
   
@@ -89,11 +89,11 @@ ms.locfileid: "64751115"
   
 - Стандартная трассировка WCF  
   
-     Трассировка этого типа является таким же, как трассировка любого приложения WCF. Для получения дополнительной информации см. [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
+     Этот тип трассировки аналогичен трассировке любого приложения WCF. Для получения дополнительной информации см. [Configuring Tracing](../diagnostics/tracing/configuring-tracing.md).  
   
 - Трассировка WS-AtomicTransaction  
   
-     WS-AtomicTransaction трассировку можно включить с помощью [служебную программу настройки WS-AtomicTransaction (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md). Такая трассировка позволяет контролировать состояние транзакций и участников внутри системы. Чтобы включить также и трассировку модели службы, можно задать для ключа реестра `HKLM\SOFTWARE\Microsoft\WSAT\3.0\ServiceModelDiagnosticTracing` допустимое значение перечисления <xref:System.Diagnostics.SourceLevels>. Вы можете включить ведение журнала так же, как другие приложения WCF сообщений.  
+     Трассировку WS-AtomicTransaction можно включить с помощью [служебной программы настройки WS-AtomicTransaction (WsatConfig. exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md). Такая трассировка позволяет контролировать состояние транзакций и участников внутри системы. Чтобы включить также и трассировку модели службы, можно задать для ключа реестра `HKLM\SOFTWARE\Microsoft\WSAT\3.0\ServiceModelDiagnosticTracing` допустимое значение перечисления <xref:System.Diagnostics.SourceLevels>. Ведение журнала сообщений можно включить точно так же, как и другие приложения WCF.  
   
 - Трассировка `System.Transactions`  
   
@@ -118,10 +118,10 @@ ms.locfileid: "64751115"
     </configuration>  
     ```  
   
-     Это также позволяет трассировки WCF, а также использует WCF <xref:System.Transactions> инфраструктуры.  
+     Это также обеспечивает трассировку WCF, так как WCF также использует <xref:System.Transactions> инфраструктуру.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Администрирование и диагностика](../../../../docs/framework/wcf/diagnostics/index.md)
-- [Настройка трассировки](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
-- [Служебная программа конфигурации WS-AtomicTransaction (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+- [Администрирование и диагностика](../diagnostics/index.md)
+- [Настройка трассировки](../diagnostics/tracing/configuring-tracing.md)
+- [Программа конфигурации WS-AtomicTransaction (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
