@@ -1,17 +1,21 @@
 ---
-title: ''
+title: Как сериализировать и десериализировать JSON с помощью C# для .NET
 description: Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода.
-ms.date: ''
+ms.date: 05/13/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
-helpviewer_keywords: []
-ms.openlocfilehash: f1a5da448b08f9b4f1cf3fa6cba67fb376b00a6f
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+helpviewer_keywords:
+- JSON serialization
+- serializing objects
+- serialization
+- objects, serializing
+ms.openlocfilehash: 7ad2721f12c5d14b61b35ecf7696ff0d6a6f27da
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83702270"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84289516"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET
 
@@ -380,46 +384,10 @@ using System.Text.Json.Serialization;
 Ниже приведен пример объекта для сериализации и вывода JSON.
 
 |Свойство. |Значение  |
-|---
-title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
------|--- title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
------| | Date    | 8/1/2019 12:00:00 AM -07:00| | TemperatureCelsius| 25 | | Summary| null|
+|---------|---------|
+| Дата    | 01.08.2019 г. 00:00:00 – 7:00|
+| TemperatureCelsius| 25 |
+| Сводка| null|
 
 ```json
 {
@@ -672,65 +640,13 @@ ms.date: no-loc:
 При десериализации показанного ранее JSON в этот тип данных дополнительные данные становятся парами "ключ-значение" свойства `ExtensionData`:
 
 |Свойство. |Значение  |Примечания  |
-|---
-title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
------|--- title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
------|--- title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
--
-title: description: "Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода."
-ms.date: no-loc:
-- 'System.Text.Json'
-- 'Newtonsoft.Json' helpviewer_keywords:
-- 
-- 
-- 
-- 
-
------| | Date    | 8/1/2019 12:00:00 AM -07:00|| | TemperatureCelsius| 0 | Несовпадение с учетом регистра (`temperatureCelsius` в коде JSON), поэтому свойство не задано. | | Summary | Hot || | ExtensionData | temperatureCelsius: 25 |Так как регистр не совпадает, это свойство JSON является лишним и становится парой "ключ-значение" в словаре.| || DatesAvailable:<br>  01.08.2019 г. 00:00:00 – 7:00<br>8/2/2019 12:00:00 AM -07:00 |Лишнее свойство из кода JSON преобразуется в пару "ключ-значение" с массивом в качестве объекта значения.| | |SummaryWords:<br>Здорово<br>Ветрено<br>Humid |Лишнее свойство из кода JSON преобразуется в пару "ключ-значение" с массивом в качестве объекта значения.|
+|---------|---------|---------|
+| Дата    | 01.08.2019 г. 00:00:00 – 7:00||
+| TemperatureCelsius| 0 | Несовпадение с учетом регистра (`temperatureCelsius` в коде JSON), поэтому свойство не задано. |
+| Сводка | Горячий ||
+| ExtensionData | temperatureCelsius: 25 |Так как регистр не совпадает, это свойство JSON является лишним и становится парой "ключ-значение" в словаре.|
+|| DatesAvailable:<br>  01.08.2019 г. 00:00:00 – 7:00<br>02.08.2019 г. 00:00:00 – 7:00 |Дополнительное свойство из кода JSON преобразуется в пару "ключ-значение" с массивом в качестве объекта значения.|
+| |SummaryWords:<br>Здорово<br>Ветрено<br>Влажно |Дополнительное свойство из кода JSON преобразуется в пару "ключ-значение" с массивом в качестве объекта значения.|
 
 Когда целевой объект сериализуется, пары "ключ-значение" данных расширения становятся свойствами JSON точно так же, как они были во входящем коде JSON:
 

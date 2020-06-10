@@ -5,18 +5,18 @@ helpviewer_keywords:
 - custom log listeners
 - My.Application.Log object, custom log listeners
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
-ms.openlocfilehash: 7b611e93119dc66a9404cf271ea201676d7b5318
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5a140607a4fe7e1e13de54e8d56cab53e52aaa2a
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74353614"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84398270"
 ---
 # <a name="walkthrough-creating-custom-log-listeners-visual-basic"></a>Пошаговое руководство. Создание пользовательских прослушивателей журнала (Visual Basic)
 
 В этом пошаговом руководстве демонстрируется создание пользовательского прослушивателя журнала и его настройка на прослушивание выходных данных объекта `My.Application.Log`.
 
-## <a name="getting-started"></a>Приступая к работе
+## <a name="getting-started"></a>Начало работы
 
 Прослушиватели журналов должны наследовать от класса <xref:System.Diagnostics.TraceListener>.
 
@@ -43,9 +43,9 @@ ms.locfileid: "74353614"
 
 2. Откройте вкладку **Подписывание**.
 
-3. Выберите поле **Подписать сборку**.
+3. Выберите поле **Подписать сборку** .
 
-4. В раскрывающемся списке **Выберите файл ключа строгого имени** щелкните **\<Новый...>**.
+4. В раскрывающемся списке **Выбор файла ключа строгого имени** выберите **\<New>** .
 
      Откроется диалоговое окно **Создание ключа строгого имени**.
 
@@ -63,7 +63,7 @@ ms.locfileid: "74353614"
 
 Тип со строгим именем имеет следующий формат:
 
-\<имя типа>, \<имя сборки>, \<номер версии>, \<язык>, \<строгое имя>
+\<type name>, \<assembly name>, \<version number>, \<culture>, \<strong name>
 
 #### <a name="to-determine-the-strong-name-of-the-listener"></a>Определение строгого имени прослушивателя
 
@@ -107,10 +107,10 @@ ms.locfileid: "74353614"
 
      Изменить значение `SimpleLogStrongName` на строгое имя прослушивателя.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
-- [Работа с журналами приложения](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
-- [Практическое руководство. Запись в журнал сведений об исключениях](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)
-- [Практическое руководство. Запись сообщений в журнал](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)
-- [Пошаговое руководство. Изменение места записи сведений для My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
+- [Работа с журналами приложения](working-with-application-logs.md)
+- [Практическое руководство. Исплючения журналов](how-to-log-exceptions.md)
+- [Практическое руководство. Запись сообщений в журнал](how-to-write-log-messages.md)
+- [Пошаговое руководство: Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md)

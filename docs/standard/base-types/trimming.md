@@ -1,5 +1,6 @@
 ---
 title: Сокращение и удаление символов из строк в .NET
+description: Научитесь удалять пробелы в начале или конце строки, а также удалять любое количество пробелов или символов из указанной позиции в строке в .NET.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -15,17 +16,17 @@ helpviewer_keywords:
 - TrimStart method
 - removing characters
 ms.assetid: ab248dab-70d4-4413-81c6-542d153fd195
-ms.openlocfilehash: bdbe267bb178e90c0008422e6543a23178c2c4d8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 630fe6b51d151d1f1384f2e3cde62750c303d883
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159992"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84446897"
 ---
 # <a name="trimming-and-removing-characters-from-strings-in-net"></a>Сокращение и удаление символов из строк в .NET
 При разборе предложения на отдельные слова может оказаться, что в начале или в конце некоторых слов стоят пробелы. В этом случае можно воспользоваться методами сокращения в классе **System.String**, чтобы удалить любое количество пробелов или других символов из указанной позиции в строке. В таблице ниже описаны доступны методы сокращения.  
   
-|Имя метода|Использование|  
+|Имя метода|Использовать|  
 |-----------------|---------|  
 |<xref:System.String.Trim%2A?displayProperty=nameWithType>|Удаление пробелов или знаков, указанных в массиве знаков, из начала и конца строки.|  
 |<xref:System.String.TrimEnd%2A?displayProperty=nameWithType>|Удаление символов, указанных в массиве символов, в конце строки.|  
@@ -77,7 +78,7 @@ ms.locfileid: "78159992"
   
  Этот код выводит на консоль значение `World!`.  
   
-## <a name="remove"></a>Remove
+## <a name="remove"></a>Удалить
 
  Метод <xref:System.String.Remove%2A?displayProperty=nameWithType> удаляет указанное количество знаков, начиная с указанного места в существующей строке. Этот метод подразумевает, что отсчет индекса начинается с нуля.  
   
@@ -87,13 +88,13 @@ ms.locfileid: "78159992"
  [!code-csharp[Conceptual.String.BasicOps#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#21)]
  [!code-vb[Conceptual.String.BasicOps#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#21)]  
   
-## <a name="replace"></a>Заменить
+## <a name="replace"></a>Замените
 
  Чтобы удалить из строки указанный символ или подстроку, можно вызвать метод <xref:System.String.Replace%28System.String%2CSystem.String%29?displayProperty=nameWithType> и указать пустую строку (<xref:System.String.Empty?displayProperty=nameWithType>) в качестве замены. В следующем примере удаляются все запятые из строки.  
   
  [!code-csharp[Conceptual.String.BasicOps#23](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/replace1.cs#23)]
  [!code-vb[Conceptual.String.BasicOps#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/replace1.vb#23)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Базовые операции со строками в .NET Framework](../../../docs/standard/base-types/basic-string-operations.md)
+- [Базовые операции со строками в .NET Framework](basic-string-operations.md)

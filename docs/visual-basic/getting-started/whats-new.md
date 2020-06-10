@@ -8,12 +8,12 @@ helpviewer_keywords:
 - what's new [Visual Basic]
 - Visual Basic, what's new
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-ms.openlocfilehash: 3ab468f6c68429a3a5cb8706152288afae520df3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a9bac04a7839796229a2e1c61771ca32573f8fcd
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79187139"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84374516"
 ---
 # <a name="whats-new-for-visual-basic"></a>Новые возможности Visual Basic
 
@@ -210,7 +210,7 @@ Dim number As Integer = &H_C305_F860
 
 Можно получить неполное имя строки типа или элемента для использования в сообщении об ошибке, не выполняя жесткого программирования строки.  Это позволяет сохранить правильный код при рефакторинге.  Эта возможность также полезна для прикрепления связей MVC контроллера model-view-controller и инициирования событий изменения свойств.
 
-[Интерполяция строк](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
+[Интерполяция строк](../programming-guide/language-features/strings/interpolated-strings.md)
 
 Для создания строк можно использовать выражения интерполяции строк.  Интерполированное строковое выражение выглядит как шаблонная строка, которая содержит выражения.  Интерполированную строку проще понять с точки зрения аргументов, чем [составное форматирование](../../standard/base-types/composite-formatting.md).
 
@@ -218,7 +218,7 @@ Dim number As Integer = &H_C305_F860
 
 Прежде чем осуществлять доступ к элементу (`?.`) или выполнять операцию с индексом (`?[]`), можно протестировать значение null в очень простой синтаксической конструкции.  Эти операторы позволяют писать меньше кода для проверок значений null, особенно если речь идет о внедрении в структуры данных.  Если левый операнд или объектная ссылка имеет значение null, операция также возвращает значение null.
 
-[Многострочные строковые литералы](../../visual-basic/programming-guide/language-features/strings/string-basics.md)
+[Многострочные строковые литералы](../programming-guide/language-features/strings/string-basics.md)
 
 Строковые литералы могут содержать последовательности новых строк.  Прежний обходной путь, связанный с использованием `<xml><![CDATA[...text with newlines...]]></xml>.Value`, больше не потребуется.
 
@@ -238,11 +238,11 @@ Dim number As Integer = &H_C305_F860
 
 С помощью свойства readwrite можно реализовать свойства интерфейса readonly. Интерфейс гарантирует минимальную функциональность и не препятствует функционированию реализующего класса, который разрешает задавать значения для свойства.
 
-[TypeOf \<выражение> IsNot \<тип>](../../visual-basic/language-reference/operators/typeof-operator.md)
+[TypeOf \<expr> IsNot \<type>](../language-reference/operators/typeof-operator.md)
 
 Для удобства чтения кода `TypeOf` теперь можно использовать с `IsNot`.
 
-[#Disable Warning \<ИД> и #Enable Warning \<ИД>](../../visual-basic/language-reference/directives/index.md)
+[#Disable Warning \<ID> и #Enable Warning \<ID>](../language-reference/directives/index.md)
 
 Можно отключить и включить конкретные предупреждения для областей в исходном файле.
 
@@ -250,15 +250,15 @@ Dim number As Integer = &H_C305_F860
 
 При написании комментариев к документу разработчик получает доступ к интеллектуальному редактору и поддержку при сборке, что позволяет проверять названия параметров, грамотно обрабатывать `crefs` (универсальные типы, операторы и т. д.), выделение цветом и рефакторинг.
 
-[Определения частичных модулей и интерфейсов](../../visual-basic/language-reference/modifiers/partial.md)
+[Определения частичных модулей и интерфейсов](../language-reference/modifiers/partial.md)
 
 Помимо классов и структур можно также объявлять частичные модули и интерфейсы.
 
-[Директивы #Region внутри основной части метода](../../visual-basic/language-reference/directives/region-directive.md)
+[Директивы #Region внутри основной части метода](../language-reference/directives/region-directive.md)
 
 Разделители #Region... #End Region можно поместить в любом месте файла, внутри функций и даже в основной части функции.
 
-[Определения переопределений являются неявными перегрузками](../../visual-basic/language-reference/modifiers/overrides.md)
+[Определения переопределений являются неявными перегрузками](../language-reference/modifiers/overrides.md)
 
 Если добавить в определение модификатор `Overrides`, компилятор неявно добавляет `Overloads`, чтобы в общих случаях можно было вводить меньше кода.
 

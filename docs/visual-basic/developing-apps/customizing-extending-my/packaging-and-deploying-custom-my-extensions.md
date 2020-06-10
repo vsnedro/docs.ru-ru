@@ -6,12 +6,12 @@ helpviewer_keywords:
 - My namespace
 - My namespace [Visual Basic], extending
 ms.assetid: fd89c54b-0290-4c50-95a3-ff17d4487a21
-ms.openlocfilehash: a2e2a6705fb3d8d4424d46d96bbf49b41e1414af
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 6d2cc2b01b04b30bd3b1a4371352ded20ea8664b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74330263"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84411757"
 ---
 # <a name="package-and-deploy-custom-my-extensions-visual-basic"></a>Упаковка и развертывание пользовательских расширений пространства имен My (Visual Basic)
 
@@ -29,7 +29,7 @@ Visual Basic позволяет легко развернуть пользова
 
 ## <a name="create-a-my-namespace-extension"></a>Создание расширения пространства имен My
 
-Первым шагом при создании пакета развертывания для настраиваемого расширения `My` будет создание расширения в формате одного файла кода. Дополнительные сведения и рекомендации по созданию настраиваемого расширения `My` см. в статье [Расширение пространства имен My в Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md).
+Первым шагом при создании пакета развертывания для настраиваемого расширения `My` будет создание расширения в формате одного файла кода. Дополнительные сведения и рекомендации по созданию настраиваемого расширения `My` см. в статье [Расширение пространства имен My в Visual Basic](extending-the-my-namespace.md).
 
 ## <a name="export-a-my-namespace-extension-as-an-item-template"></a>Экспорт расширения пространства имен My в виде шаблона элемента
 
@@ -64,7 +64,7 @@ Visual Basic позволяет легко развернуть пользова
 |`Version`|Обязательный. Номер версии для шаблона элемента.|
 |`AssemblyFullName`|Необязательный элемент. Имя сборки. Когда в проект добавляется ссылка на эту сборку, пользователю будет предложено добавить расширение `My` из этого шаблона элемента.|
 
-### <a name="add-the-customdatasignature-element-to-the-vstemplate-file"></a>Добавление элемента \<CustomDataSignature> в VSTEMPLATE-файл.
+### <a name="add-the-customdatasignature-element-to-the-vstemplate-file"></a>Добавление элемента \<CustomDataSignature> в VSTEMPLATE-файл
 
 Чтобы указать, что шаблон элемента Visual Studio является расширением пространства имен `My`, необходимо изменить VSTEMPLATE-файл для этого шаблона элемента. Добавьте элемент `<CustomDataSignature>` к элементу `<TemplateData>`. Этот элемент `<CustomDataSignature>` должен содержать текст `Microsoft.VisualBasic.MyExtension`, как показано в следующем примере.
 
@@ -99,11 +99,11 @@ Visual Basic позволяет легко развернуть пользова
 
 ## <a name="install-the-template"></a>Установка шаблона
 
-Чтобы установить шаблон, достаточно скопировать сжатую папку (*ZIP-файл*) в папку шаблонов элементов Visual Basic. По умолчанию шаблоны элементов пользователя находятся в каталоге *%USERPROFILE%\Documents\Visual Studio \<версия\>\Templates\ItemTemplates\Visual Basic*. Либо можно опубликовать шаблон в формате файла для Visual Studio Installer (*VSI-файла*).
+Чтобы установить шаблон, достаточно скопировать сжатую папку (*ZIP-файл*) в папку шаблонов элементов Visual Basic. По умолчанию шаблоны элементов пользователя находятся в каталоге *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates\Visual Basic*. Либо можно опубликовать шаблон в формате файла для Visual Studio Installer (*VSI-файла*).
 
 ## <a name="see-also"></a>См. также
 
-- [Расширение пространства имен My в Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md)
-- [Расширение модели приложения Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)
-- [Настройка доступа к объектам через My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
+- [Расширение пространства имен My в Visual Basic](extending-the-my-namespace.md)
+- [Расширение модели приложения Visual Basic](extending-the-visual-basic-application-model.md)
+- [Настройка доступа к объектам через My](customizing-which-objects-are-available-in-my.md)
 - [Страница "Мои расширения", конструктор проектов](/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)

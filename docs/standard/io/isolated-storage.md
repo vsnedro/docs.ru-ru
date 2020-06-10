@@ -18,12 +18,12 @@ helpviewer_keywords:
 - data storage using isolated storage, options
 - isolation
 ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
-ms.openlocfilehash: ed784bafda2aed829f2e97d7e7e8b2716c48c7ba
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f98af970c8827623298fb43cd0653bdaafb20dd3
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75706586"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84278886"
 ---
 # <a name="isolated-storage"></a>Изолированное хранилище
 <a name="top"></a> Если речь идет о классических приложениях, изолированное хранилище — это механизм хранения данных, обеспечивающий изоляцию и безопасность путем определения стандартизованных способов сопоставления кода с сохраненными данными. Стандартизация также имеет и другие преимущества. Администраторы могут использовать инструменты управления изолированным хранением для конфигурирования пространства хранения файлов, установки политики безопасности и удаления неиспользуемых данных. При изолированном хранении нет необходимости указывать уникальные пути для безопасного размещения кода в файловой системе, и данные защищены от других приложений, имеющих доступ только к изолированному хранению. Нет необходимости в аппаратно закодированной информации, указывающей место размещения области хранения данных приложения.
@@ -47,9 +47,9 @@ ms.locfileid: "75706586"
 
 - [Сценарии изолированного хранилища](#scenarios_for_isolated_storage)
 
-- [См. также](#related_topics)
+- [Связанные разделы](#related_topics)
 
-- [Ссылка](#reference)
+- [Ссылки](#reference)
 
 <a name="data_compartments_and_stores"></a>
 
@@ -113,10 +113,10 @@ ms.locfileid: "75706586"
 
 |Операционная система|Местоположение в файловой системе|
 |----------------------|-----------------------------|
-|Windows 2000, Windows XP, Windows Server 2003 (обновление Windows NT 4.0)|Перемещаемые хранилища =<br /><br /> \<КОРНЕВОЙ КАТАЛОГ СИСТЕМЫ>\Profiles\\<имя пользователя\>\Application Data<br /><br /> Неперемещаемые хранилища =<br /><br /> \<КОРНЕВОЙ КАТАЛОГ СИСТЕМЫ>\Profiles\\<имя пользователя\>\Local Settings\Application Data|
-|Windows 2000 — чистая установка (и обновление с Windows 98 и Windows NT 3.51)|Перемещаемые хранилища =<br /><br /> \<СИСТЕМНЫЙ ДИСК>\Documents and Settings\\<имя пользователя\>\Application Data<br /><br /> Неперемещаемые хранилища =<br /><br /> \<СИСТЕМНЫЙ ДИСК>\Documents and Settings\\<имя пользователя\>\Local Settings\Application Data|
-|Windows XP, Windows Server 2003 — чистая установка (или обновление с Windows 2000 и Windows 98)|Перемещаемые хранилища =<br /><br /> \<СИСТЕМНЫЙ ДИСК>\Documents and Settings\\<имя пользователя\>\Application Data<br /><br /> Неперемещаемые хранилища =<br /><br /> \<СИСТЕМНЫЙ ДИСК>\Documents and Settings\\<имя пользователя\>\Local Settings\Application Data|
-|Windows 8, Windows 7, Windows Server 2008, Windows Vista|Перемещаемые хранилища =<br /><br /> \<СИСТЕМНЫЙ ДИСК>\Users\\<имя пользователя\>\AppData\Roaming<br /><br /> Неперемещаемые хранилища =<br /><br /> \<СИСТЕМНЫЙ ДИСК>\Users\\<имя пользователя\>\AppData\Local|
+|Windows 2000, Windows XP, Windows Server 2003 (обновление Windows NT 4.0)|Перемещаемые хранилища =<br /><br /> \<SYSTEMROOT>\Profiles\\<user\>\Application Data<br /><br /> Неперемещаемые хранилища =<br /><br /> \<SYSTEMROOT>\Profiles\\<user\>\Local Settings\Application Data|
+|Windows 2000 — чистая установка (и обновление с Windows 98 и Windows NT 3.51)|Перемещаемые хранилища =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Application Data<br /><br /> Неперемещаемые хранилища =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Local Settings\Application Data|
+|Windows XP, Windows Server 2003 — чистая установка (или обновление с Windows 2000 и Windows 98)|Перемещаемые хранилища =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Application Data<br /><br /> Неперемещаемые хранилища =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Local Settings\Application Data|
+|Windows 8, Windows 7, Windows Server 2008, Windows Vista|Перемещаемые хранилища =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Roaming<br /><br /> Неперемещаемые хранилища =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Local|
 
 <a name="isolated_storage_tasks"></a>
 
@@ -132,7 +132,7 @@ ms.locfileid: "75706586"
 
 Классы, предназначенные для работы с изолированными хранилищами, позволяют создавать, перечислять и удалять изолированные хранилища. Доступ к методам, используемым для выполнения этих действий, осуществляется с помощью объекта <xref:System.IO.IsolatedStorage.IsolatedStorageFile> . Для выполнения некоторых операций необходимо разрешение <xref:System.Security.Permissions.IsolatedStorageFilePermission> , обеспечивающее право администрирования изолированного хранилища. Для доступа к некоторым файлам и каталогам также могут потребоваться права операционной системы.
 
-Несколько примеров распространенных задач, связанных с изолированным хранилищем, см. в практических руководствах, перечисленных в разделе [Связанные разделы](#related_topics).
+Несколько примеров, демонстрирующих часто встречающиеся задачи изолированного хранения см. в практических руководствах, перечисленных в разделе [Связанные разделы](#related_topics).
 
 <a name="scenarios_for_isolated_storage"></a>
 
@@ -162,22 +162,22 @@ ms.locfileid: "75706586"
 
 ## <a name="related-topics"></a>См. также
 
-|Название|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
-|[Типы изоляции](../../../docs/standard/io/types-of-isolation.md)|Описание различных типов изоляции.|
-|[Практическое руководство. Получение хранилищ для изолированного хранения](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)|Пример использования класса <xref:System.IO.IsolatedStorage.IsolatedStorageFile> для получения хранилища, изолированного по пользователю и сборке.|
-|[Практическое руководство. Перечисление хранилищ для изолированного хранилища](../../../docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md)|Пример использования метода <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> для вычисления общего размера всех изолированных хранилищ пользователя.|
-|[Практическое руководство. Удаление хранилищ из области изолированного хранения](../../../docs/standard/io/how-to-delete-stores-in-isolated-storage.md)|Пример использования метода <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> для удаления изолированных хранилищ двумя разными способами.|
-|[Практическое руководство. Предупреждение о нехватке места при изолированном хранении](../../../docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Пример измерения оставшегося свободного места в изолированном хранилище.|
-|[Практическое руководство. Создание файлов и каталогов в изолированном хранилище](../../../docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|Ряд примеров создания файлов и каталогов в изолированном хранилище.|
-|[Практическое руководство. Поиск существующих файлов и каталогов в изолированном хранилище](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|Пример считывания структуры каталогов и файлов в изолированном хранилище.|
-|[Практическое руководство. Считывание из файлов и запись в файлы в изолированном хранилище](../../../docs/standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|Содержит пример записи строки в файл изолированного хранилища и его чтения.|
-|[Практическое руководство. Удаление файлов и каталогов из изолированного хранилища](../../../docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|Пример удаления файлов и каталогов в изолированном хранилище.|
-|[Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)|Описание способов выполнения синхронного и асинхронного доступа к файлам и доступа к данным потока.|
+|[Типы изоляции](types-of-isolation.md)|Описание различных типов изоляции.|
+|[Практическое руководство. Получение хранилищ для изолированного хранения](how-to-obtain-stores-for-isolated-storage.md)|Пример использования класса <xref:System.IO.IsolatedStorage.IsolatedStorageFile> для получения хранилища, изолированного по пользователю и сборке.|
+|[Практическое руководство. Перечисление хранилищ для изолированного хранилища](how-to-enumerate-stores-for-isolated-storage.md)|Пример использования метода <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> для вычисления общего размера всех изолированных хранилищ пользователя.|
+|[Практическое руководство. Удаление хранилищ из области изолированного хранения](how-to-delete-stores-in-isolated-storage.md)|Пример использования метода <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> для удаления изолированных хранилищ двумя разными способами.|
+|[Практическое руководство. Предупреждение о нехватке места при изолированном хранении](how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Пример измерения оставшегося свободного места в изолированном хранилище.|
+|[Практическое руководство. Создание файлов и каталогов в изолированном хранилище](how-to-create-files-and-directories-in-isolated-storage.md)|Ряд примеров создания файлов и каталогов в изолированном хранилище.|
+|[Практическое руководство. Поиск существующих файлов и каталогов в изолированном хранилище](how-to-find-existing-files-and-directories-in-isolated-storage.md)|Пример считывания структуры каталогов и файлов в изолированном хранилище.|
+|[Практическое руководство. Считывание из файлов и запись в файлы в изолированном хранилище](how-to-read-and-write-to-files-in-isolated-storage.md)|Содержит пример записи строки в файл изолированного хранилища и его чтения.|
+|[Практическое руководство. Удаление файлов и каталогов из изолированного хранилища](how-to-delete-files-and-directories-in-isolated-storage.md)|Пример удаления файлов и каталогов в изолированном хранилище.|
+|[Файловый и потоковый ввод-вывод](index.md)|Описание способов выполнения синхронного и асинхронного доступа к файлам и доступа к данным потока.|
 
 <a name="reference"></a>
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Ссылки
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorage?displayProperty=nameWithType>
 

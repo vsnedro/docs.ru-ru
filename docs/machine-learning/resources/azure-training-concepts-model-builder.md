@@ -2,15 +2,15 @@
 title: Обучающие ресурсы Azure по построителям моделей
 description: Руководство по ресурсам для службы "Машинное обучение Azure"
 ms.topic: reference
-ms.date: 02/27/2020
+ms.date: 06/01/2020
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: a19e13955d0eaea344109eb817f3a3959c3dd883
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d9eb5560ef33f8f80dbe53e17087c606a8697378
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79185823"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289477"
 ---
 # <a name="model-builder-azure-training-resources"></a>Обучающие ресурсы Azure по построителям моделей
 
@@ -49,6 +49,10 @@ ms.locfileid: "79185823"
     | Standard_NC24   | 24 | 224 | 1440 | 4 | 48 | 64 | 4 |
 
     Дополнительные сведения о типах вычислений, оптимизированных для GPU, см. в [документации по виртуальным машинам Linux серии NC](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json).
+- Приоритет вычислений
+
+  - Вычисления с низким приоритетом: подходят для задач с меньшим временем выполнения. Могут подвергаться воздействию прерываний и недостатка доступности. Обычно обходятся дешевле, так как используют преимущества избыточной емкости в Azure.
+  - Выделенные вычисления: подходят для задач с любым временем выполнения, но особенно для долго выполняющихся заданий. Не подвержены воздействию прерываний или недостатка доступности. Обычно обходятся дороже, так как для таких задач резервируется выделенный набор вычислительных ресурсов в Azure.
 
 ## <a name="training"></a>Обучение
 

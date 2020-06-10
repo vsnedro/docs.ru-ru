@@ -1,5 +1,6 @@
 ---
 title: Строки стандартных форматов даты и времени
+description: Узнайте, как использовать строку стандартного формата даты и времени для определения текстового представления значения даты и времени в .NET.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - formatting [.NET Framework], time
 - date and time strings
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-ms.openlocfilehash: d6bde74441334a4454865c1fdb890a4e859bc072
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 5db9088a6b0d75ae5293b9be35346c4c2ddf81c6
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83440906"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84447229"
 ---
 # <a name="standard-date-and-time-format-strings"></a>Строки стандартных форматов даты и времени
 
-Строка стандартного формата даты и времени использует один описатель формата для определения текстового представления значения даты и времени. Любая строка формата даты и времени, содержащая более одного символа, включая пробелы, интерпретируется как строка настраиваемого формата даты и времени. Дополнительные сведения см. в статье [Строки настраиваемых форматов даты и времени](../../../docs/standard/base-types/custom-date-and-time-format-strings.md). Строку стандартного или пользовательского формата можно использовать двумя способами:
+Строка стандартного формата даты и времени использует один описатель формата для определения текстового представления значения даты и времени. Любая строка формата даты и времени, содержащая более одного символа, включая пробелы, интерпретируется как строка настраиваемого формата даты и времени. Дополнительные сведения см. в статье [Строки настраиваемых форматов даты и времени](custom-date-and-time-format-strings.md). Строку стандартного или пользовательского формата можно использовать двумя способами:
 
 - Для определения строки, являющейся результатом операции форматирования.
 
@@ -450,7 +451,7 @@ ms.locfileid: "83440906"
 
 - <xref:System.DateTime?displayProperty=nameWithType>
 - <xref:System.DateTimeOffset?displayProperty=nameWithType>
-- [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
-- [Строки настраиваемых форматов даты и времени](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+- [Типы форматирования](formatting-types.md)
+- [Строки настраиваемых форматов даты и времени](custom-date-and-time-format-strings.md)
 - [Пример: служебная программа форматирования .NET Core WinForms (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
 - [Пример: служебная программа форматирования .NET Core WinForms (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - serialization, guidelines
 - binary serialization, guidelines
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
-ms.openlocfilehash: af0b857e98ffbe0ff9f12108174b79f873c2b38f
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: eb11f0b8ddd34df7c6970c275d4b83cb95f59a53
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378387"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84287497"
 ---
 # <a name="serialization-guidelines"></a>Правила сериализации
 В настоящем документе перечислены рекомендации, которые следует учитывать при разработке сериализуемого API.  
@@ -92,7 +92,7 @@ ms.locfileid: "83378387"
      [!code-csharp[SerializationGuidelines#5](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#5)]
      [!code-vb[SerializationGuidelines#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#5)]  
   
-     Дополнительные сведения о создании контрактов данных, обладающих прямой совместимостью, см. в разделе [Контракты данных, совместимые с любыми будущими изменениями](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+     Дополнительные сведения о создании контрактов данных, обладающих прямой совместимостью, см. в разделе [Контракты данных, совместимые с любыми будущими изменениями](../../framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 #### <a name="supporting-xml-serialization"></a>Поддержка XML-сериализации  
  Сериализация контрактов данных является основной (задаваемой по умолчанию) технологией сериализации в .NET Framework, однако существуют сценарии сериализации, которые эта технология не поддерживает. Например, она не обеспечивает полный контроль над формой XML-кода, создаваемого или используемого сериализатором. Если необходим столь высокий уровень контроля, используйте *XML-сериализацию*, разработав типы для поддержки этой технологии сериализации.  
@@ -140,10 +140,10 @@ ms.locfileid: "83378387"
   
 ## <a name="see-also"></a>См. также
 
-- [Использование контрактов данных](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
-- [Сериализатор контракта данных](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)
-- [Типы, поддерживаемые сериализатором контракта данных](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [Использование контрактов данных](../../framework/wcf/feature-details/using-data-contracts.md)
+- [Сериализатор контракта данных](../../framework/wcf/feature-details/data-contract-serializer.md)
+- [Типы, поддерживаемые сериализатором контракта данных](../../framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
 - [Двоичная сериализация](binary-serialization.md)
 - [Удаленное взаимодействие .NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
 - [Сериализация XML и SOAP](xml-and-soap-serialization.md)
-- [Безопасность и сериализация](../../../docs/framework/misc/security-and-serialization.md)
+- [Безопасность и сериализация](../../framework/misc/security-and-serialization.md)

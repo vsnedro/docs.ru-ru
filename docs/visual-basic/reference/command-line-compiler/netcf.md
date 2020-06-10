@@ -9,12 +9,12 @@ helpviewer_keywords:
 - netcf compiler option [Visual Basic]
 - /netcf compiler option [Visual Basic]
 ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
-ms.openlocfilehash: 7f14ce07a2928f4dbffd3aa57f8cdd514b75694c
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 16fb6b3b63c848ea6c09cc18b0fcc488670f0926
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75716712"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84397479"
 ---
 # <a name="-netcf"></a>-netcf
 
@@ -30,14 +30,14 @@ ms.locfileid: "75716712"
 
 Параметр `-netcf` указывает компилятору Visual Basic, что нужно нацеливать сборку на .NET Compact Framework вместо полной версии .NET Framework. Все функции языка, которые присутствуют только в полной версии .NET Framework, при этом отключаются.
 
-Параметр `-netcf` предназначен для использования с [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md). Параметр `-netcf` позволяет отключить те же функции языка, которые отсутствуют в файлах с нацеливанием на `-sdkpath`.
+Параметр `-netcf` предназначен для использования с [-sdkpath](sdkpath.md). Параметр `-netcf` позволяет отключить те же функции языка, которые отсутствуют в файлах с нацеливанием на `-sdkpath`.
 
 > [!NOTE]
 > Параметр `-netcf` недоступен в среде разработки Visual Studio. Он доступен только при компиляции из командной строки. Параметр `-netcf` задается, когда загружается проект устройства Visual Basic.
 
 Параметр `-netcf` изменяет следующие функции языка:
 
-- Блокируется ключевое слово [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md), которое завершает выполнение программы. Следующая программа будет успешно скомпилирована и выполнена без `-netcf`, но возвратит ошибку во время компиляции с параметром `-netcf`.
+- Блокируется ключевое слово [End \<keyword>Statement](../../language-reference/statements/end-keyword-statement.md), которое завершает выполнение программы. Следующая программа будет успешно скомпилирована и выполнена без `-netcf`, но возвратит ошибку во время компиляции с параметром `-netcf`.
 
   [!code-vb[VbVbalrCompiler#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/netcf.vb#34)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "75716712"
 
   [!code-vb[VbVbalrCompiler#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionStrictOff.vb#35)]
 
-- Блокируются модификаторы [Auto](../../../visual-basic/language-reference/modifiers/auto.md), [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md) и [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md). Синтаксис [инструкции Declare](../../../visual-basic/language-reference/statements/declare-statement.md) изменяется на `Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`. В следующем коде показано влияние параметра `-netcf` на процесс компиляции.
+- Блокируются модификаторы [Auto](../../language-reference/modifiers/auto.md), [Ansi](../../language-reference/modifiers/ansi.md) и [Unicode](../../language-reference/modifiers/unicode.md). Синтаксис [инструкции Declare](../../language-reference/statements/declare-statement.md) изменяется на `Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`. В следующем коде показано влияние параметра `-netcf` на процесс компиляции.
 
   [!code-vb[VbVbalrCompiler#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionStrictOff.vb#36)]
 
@@ -93,6 +93,6 @@ vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactF
 
 ## <a name="see-also"></a>См. также
 
-- [Компилятор Visual Basic с интерфейсом командной строки](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Примеры командных строк компиляции](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)
+- [Компилятор Visual Basic с интерфейсом командной строки](index.md)
+- [Примеры командных строк компиляции](sample-compilation-command-lines.md)
+- [-sdkpath](sdkpath.md)

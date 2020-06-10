@@ -3,12 +3,12 @@ title: Разрешение внешних таблиц стилей XSLT и д�
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
-ms.openlocfilehash: 504519532d9a6988209cf04fd6b6196796f929f8
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 8e7f66d67f2520b47c30307a98ed2f3fb08455df
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710301"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84291478"
 ---
 # <a name="resolving-external-xslt-style-sheets-and-documents"></a>Разрешение внешних таблиц стилей XSLT и документов
 В некоторых случаях в процессе преобразования может потребоваться разрешение внешних ресурсов.  
@@ -43,15 +43,15 @@ ms.locfileid: "75710301"
   
 ## <a name="see-also"></a>См. также
 
-- [XSLT-преобразования с помощью класса XslTransform](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)
-- [Реализация классом XslTransform XSLT-процессора](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
-- [Результаты вывода XslTransform](../../../../docs/standard/data/xml/outputs-from-an-xsltransform.md)
-- [XSLT-преобразования над различными хранилищами](../../../../docs/standard/data/xml/xslt-transformations-over-different-stores.md)
-- [XsltArgumentList для параметров таблицы стилей и объектов расширения](../../../../docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md)
-- [Создание скриптов таблиц стилей XSLT с помощью \<msxsl:script>](../../../../docs/standard/data/xml/xslt-stylesheet-scripting-using-msxsl-script.md)
-- [Поддержка функции msxsl:node-set()](../../../../docs/standard/data/xml/support-for-the-msxsl-node-set-function.md)
-- [XPathNavigator в преобразованиях](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)
-- [XPathNodeIterator в преобразованиях](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)
-- [Ввод XPathDocument в XslTransform](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)
-- [Ввод XmlDataDocument в XslTransform](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)
-- [Ввод XmlDocument в XslTransform](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)
+- [XSLT-преобразования с помощью класса XslTransform](xslt-transformations-with-the-xsltransform-class.md)
+- [Реализация классом XslTransform XSLT-процессора](xsltransform-class-implements-the-xslt-processor.md)
+- [Результаты вывода XslTransform](outputs-from-an-xsltransform.md)
+- [XSLT-преобразования над различными хранилищами](xslt-transformations-over-different-stores.md)
+- [XsltArgumentList для параметров таблицы стилей и объектов расширения](xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md)
+- [Использование скриптов таблиц стилей XSLT\<msxsl:script>](xslt-stylesheet-scripting-using-msxsl-script.md)
+- [Поддержка функции msxsl:node-set()](support-for-the-msxsl-node-set-function.md)
+- [XPathNavigator в преобразованиях](xpathnavigator-in-transformations.md)
+- [XPathNodeIterator в преобразованиях](xpathnodeiterator-in-transformations.md)
+- [Ввод XPathDocument в XslTransform](xpathdocument-input-to-xsltransform.md)
+- [Ввод XmlDataDocument в XslTransform](xmldatadocument-input-to-xsltransform.md)
+- [Ввод XmlDocument в XslTransform](xmldocument-input-to-xsltransform.md)

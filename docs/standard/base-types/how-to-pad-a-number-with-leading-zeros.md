@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Добавление к числу начальных нулей.
+title: Практическое руководство. Дополнение числа начальными нулями
+description: Узнайте, как дополнить число начальными нулями. Добавляйте начальные нули к целым числам или числовым значениям до указанной общей длины или добавляйте определенное число начальных нулей.
 ms.date: 02/25/2019
 ms.technology: dotnet-standard
 dev_langs:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - number formatting [.NET Framework]
 - numbers [.NET Framework], format strings
 ms.assetid: 0b2c2cb5-c580-4891-8d81-cb632f5ec384
-ms.openlocfilehash: bc3c4b75c484274c214141d8fbfcf8ac592b0b99
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6ef0ddb37f1bc73254aa639d7c018ec6a01abd9b
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73131977"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84447190"
 ---
-# <a name="how-to-pad-a-number-with-leading-zeros"></a>Практическое руководство. Добавление к числу начальных нулей.
+# <a name="how-to-pad-a-number-with-leading-zeros"></a>Практическое руководство. Дополнение числа начальными нулями
 
-К целому числу можно добавить начальные нули, используя [строку стандартного числового формата](../../../docs/standard/base-types/standard-numeric-format-strings.md) "D" с описателем точности. С помощью [строки настраиваемого числового формата](../../../docs/standard/base-types/custom-numeric-format-strings.md) начальные нули можно добавлять как к целым числам, так и к числам с плавающей запятой. В этой статье показано, как использовать оба метода для дополнения числа начальными нулями.
+К целому числу можно добавить начальные нули, используя [строку стандартного числового формата](standard-numeric-format-strings.md) "D" с описателем точности. С помощью [строки настраиваемого числового формата](custom-numeric-format-strings.md) начальные нули можно добавлять как к целым числам, так и к числам с плавающей запятой. В этой статье показано, как использовать оба метода для дополнения числа начальными нулями.
 
 ## <a name="to-pad-an-integer-with-leading-zeros-to-a-specific-length"></a>Дополнение целого числа начальными нулями до определенной длины
 
@@ -32,7 +33,7 @@ ms.locfileid: "73131977"
 
     - Для отображения целого числа в виде шестнадцатеричного значения вызовите его метод `ToString(String)` и передайте строку "X*n*" в качестве значения параметра format, где *n* представляет минимальную длину строки.
 
-Также можно использовать строку формата в интерполированной строке в [C# ](../../csharp/language-reference/tokens/interpolated.md) и [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) или вызвать метод, например <xref:System.String.Format%2A?displayProperty=nameWithType> или <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, который использует [составное форматирование](../../../docs/standard/base-types/composite-formatting.md).
+Также можно использовать строку формата в интерполированной строке в [C# ](../../csharp/language-reference/tokens/interpolated.md) и [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) или вызвать метод, например <xref:System.String.Format%2A?displayProperty=nameWithType> или <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, который использует [составное форматирование](composite-formatting.md).
 
 Следующий пример форматирует несколько целых значений с добавлением начальных нулей, чтобы общая длина форматированного числа составляла по крайней мере 8 символов.
 
@@ -100,8 +101,8 @@ ms.locfileid: "73131977"
 [!code-csharp[Formatting.HowTo.PadNumber#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.PadNumber/cs/Pad1.cs#4)]
 [!code-vb[Formatting.HowTo.PadNumber#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.PadNumber/vb/Pad1.vb#4)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Строки настраиваемых числовых форматов](../../../docs/standard/base-types/custom-numeric-format-strings.md)
-- [Строки стандартных числовых форматов](../../../docs/standard/base-types/standard-numeric-format-strings.md)
-- [Составное форматирование](../../../docs/standard/base-types/composite-formatting.md)
+- [Строки настраиваемых числовых форматов](custom-numeric-format-strings.md)
+- [Строки стандартных числовых форматов](standard-numeric-format-strings.md)
+- [Составное форматирование](composite-formatting.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - serialization, examples
 - serialization, attributes
 ms.assetid: 47d4c39d-30e1-4c7b-8a2e-301325390647
-ms.openlocfilehash: 4fc7667a2123a106b995a1ea3a31da4551ca650e
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 79c5541b4c384e91fbec8c8f1b2130887e79a252
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83375965"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84289685"
 ---
 # <a name="controlling-xml-serialization-using-attributes"></a>Управление сериализацией XML с использованием атрибутов
 
@@ -30,7 +30,7 @@ ms.locfileid: "83375965"
 > [!NOTE]
 > Если сгенерированные XML должны удовлетворять требованиям раздела 5 [Протокола SOAP 1.1](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/) консорциума World Wide Web (W3C), используйте атрибуты, указанные в статье [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md).
 
-По умолчанию имя элемента XML определяется классом или именем члена. Как показано в следующем примере, в простом классе с именем `Book` полю с именем `ISBN` будет присвоен тег элемента XML \<ISBN>.
+По умолчанию имя элемента XML определяется классом или именем члена. Как показано в следующем примере, в простом классе с именем `Book` поле с именем `ISBN` будет создавать тег элемента XML \<ISBN>.
 
 ```vb
 Public Class Book
@@ -67,7 +67,7 @@ public class TaxRates {
 }
 ```
 
-Дополнительные сведения об атрибутах см. в разделе [Атрибуты](../../../docs/standard/attributes/index.md). Список атрибутов, которые управляют сериализацией XML, см. в разделе [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md).
+Дополнительные сведения об атрибутах см. в разделе [Атрибуты](../attributes/index.md). Список атрибутов, которые управляют сериализацией XML, см. в разделе [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md).
 
 ## <a name="controlling-array-serialization"></a>Управление сериализацией массивов
 

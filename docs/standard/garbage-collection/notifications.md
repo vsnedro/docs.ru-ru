@@ -9,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - garbage collection, notifications
 ms.assetid: e12d8e74-31e3-4035-a87d-f3e66f0a9b89
-ms.openlocfilehash: d5646c4969c95350ab4cd63b16f6f99ffba3a4ec
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 389e851782edb82578c216951be440070b92723c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73131536"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84286006"
 ---
 # <a name="garbage-collection-notifications"></a>Уведомления о сборке мусора
 В некоторых случаях полная сборка мусора (сборка объектов поколения 2) средой CLR может отрицательно сказаться на производительности. Это может стать проблемой, особенно для серверов, которые обрабатывают большие объемы запросов. Длительный процесс сборки может привести к потере запросов из-за превышения времени ожидания. Чтобы предотвратить запуск полной сборки мусора в критически важные периоды, вы можете настроить уведомления о ее приближении. Это позволит принять меры и перенести нагрузку на другой экземпляр сервера. Также вы можете самостоятельно запустить сборку мусора на экземплярах сервера, которые в текущий момент не применяются для обработки запросов.  
@@ -22,7 +22,7 @@ ms.locfileid: "73131536"
  Метод <xref:System.GC.RegisterForFullGCNotification%2A> позволяет зарегистрироваться для получения уведомлений о приближении полной сборки мусора. Вы получите два уведомления: при приближении полной сборки мусора и по ее завершении.  
   
 > [!WARNING]
-> Только блокировка сборки мусора создает уведомления. Если включен элемент конфигурации [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md), при фоновой сборке мусора уведомления не создаются.  
+> Только блокировка сборки мусора создает уведомления. Если включен элемент конфигурации [\<gcConcurrent>](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md), при фоновой сборке мусора уведомления не создаются.  
   
  Чтобы определить, когда было создано уведомление, используйте методы <xref:System.GC.WaitForFullGCApproach%2A> и <xref:System.GC.WaitForFullGCComplete%2A>. Как правило, они вызываются в цикле `while`, чтобы постоянно получать перечисление <xref:System.GCNotificationStatus> с информацией о состоянии уведомления. Если вы получите значение <xref:System.GCNotificationStatus.Succeeded>, можете выполнить следующие действия:  
   
@@ -122,4 +122,4 @@ ms.locfileid: "73131536"
   
 ## <a name="see-also"></a>См. также
 
-- [Сборка мусора](../../../docs/standard/garbage-collection/index.md)
+- [Сборка мусора](index.md)

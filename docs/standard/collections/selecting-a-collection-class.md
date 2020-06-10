@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Collections classes
 - grouping data in collections, selecting collection class
 ms.assetid: ba049f9a-ce87-4cc4-b319-3f75c8ddac8a
-ms.openlocfilehash: d79f1ca0d264a5a17306bb66f285b6fbe6b4e7ca
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.openlocfilehash: 62f4f768753637043ab91219cfb63c741a194b96
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728488"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287930"
 ---
 # <a name="selecting-a-collection-class"></a>Выбор класса коллекции
 
@@ -34,9 +34,9 @@ ms.locfileid: "82728488"
 
 - Нужен ли доступ к элементам в определенном порядке (FIFO, LIFO) или в произвольным порядке?
 
-  - Класс <xref:System.Collections.Queue>, а также универсальные классы <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601> и <xref:System.Collections.Immutable.ImmutableQueue%601> предоставляют доступ по методу FIFO. Дополнительные сведения см. в разделе [Преимущества использования потокобезопасных коллекций](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).
+  - Класс <xref:System.Collections.Queue>, а также универсальные классы <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601> и <xref:System.Collections.Immutable.ImmutableQueue%601> предоставляют доступ по методу FIFO. Дополнительные сведения см. в разделе [Преимущества использования потокобезопасных коллекций](thread-safe/when-to-use-a-thread-safe-collection.md).
 
-  - Класс <xref:System.Collections.Stack>, а также универсальные классы <xref:System.Collections.Generic.Stack%601>, <xref:System.Collections.Concurrent.ConcurrentStack%601> и <xref:System.Collections.Immutable.ImmutableStack%601> предоставляют доступ по методу LIFO. Дополнительные сведения см. в разделе [Преимущества использования потокобезопасных коллекций](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).
+  - Класс <xref:System.Collections.Stack>, а также универсальные классы <xref:System.Collections.Generic.Stack%601>, <xref:System.Collections.Concurrent.ConcurrentStack%601> и <xref:System.Collections.Immutable.ImmutableStack%601> предоставляют доступ по методу LIFO. Дополнительные сведения см. в разделе [Преимущества использования потокобезопасных коллекций](thread-safe/when-to-use-a-thread-safe-collection.md).
 
   - Универсальный класс <xref:System.Collections.Generic.LinkedList%601> предоставляет последовательный доступ от начала к концу списка или наоборот.
 
@@ -68,7 +68,7 @@ ms.locfileid: "82728488"
 
 - Требуются ли быстрый поиск и получение данных?
 
-  - <xref:System.Collections.Specialized.ListDictionary> быстрее, чем <xref:System.Collections.Hashtable>, для небольших коллекций (10 элементов или меньше). Универсальный класс <xref:System.Collections.Generic.Dictionary%602> обеспечивает более быстрый поиск, чем универсальный класс <xref:System.Collections.Generic.SortedDictionary%602>. Многопоточной реализацией является <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> обеспечивает быструю многопоточную вставку для неупорядоченных данных. Дополнительные сведения об обоих многопоточных типах см. в разделе [Преимущества использования потокобезопасных коллекций](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).
+  - <xref:System.Collections.Specialized.ListDictionary> быстрее, чем <xref:System.Collections.Hashtable>, для небольших коллекций (10 элементов или меньше). Универсальный класс <xref:System.Collections.Generic.Dictionary%602> обеспечивает более быстрый поиск, чем универсальный класс <xref:System.Collections.Generic.SortedDictionary%602>. Многопоточной реализацией является <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> обеспечивает быструю многопоточную вставку для неупорядоченных данных. Дополнительные сведения об обоих многопоточных типах см. в разделе [Преимущества использования потокобезопасных коллекций](thread-safe/when-to-use-a-thread-safe-collection.md).
 
 - Требуются ли вам коллекции, принимающие только строки?
 
@@ -80,11 +80,11 @@ ms.locfileid: "82728488"
 
 Язык LINQ to Objects позволяет использовать запросы LINQ для доступа к объектам в памяти при условии, что тип объекта реализует интерфейс <xref:System.Collections.IEnumerable> или <xref:System.Collections.Generic.IEnumerable%601>. Запросы LINQ обеспечивают общий шаблон для доступа к данным, обычно являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, а также предоставляют возможности фильтрации, сортировки и группировки. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md) и [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md).
 
-Язык PLINQ предоставляет параллельную реализацию языка LINQ to Objects, которая может обеспечить более быстрое выполнение запросов во многих сценариях за счет более эффективного использования многоядерных компьютеров. Дополнительные сведения см. в разделе [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).
+Язык PLINQ предоставляет параллельную реализацию языка LINQ to Objects, которая может обеспечить более быстрое выполнение запросов во многих сценариях за счет более эффективного использования многоядерных компьютеров. Дополнительные сведения см. в разделе [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).
 
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Collections>
 - <xref:System.Collections.Specialized>
 - <xref:System.Collections.Generic>
-- [Потокобезопасные коллекции](../../../docs/standard/collections/thread-safe/index.md)
+- [Потокобезопасные коллекции](thread-safe/index.md)

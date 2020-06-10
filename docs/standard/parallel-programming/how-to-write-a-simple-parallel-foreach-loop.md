@@ -1,5 +1,6 @@
 ---
 title: Создание простой параллельной программы с использованием Parallel.ForEach
+description: В этой статье описывается, как включить параллелизм данных в .NET. Напишите цикл Parallel.ForEach для любого источника данных IEnumerable или IEnumerable<T>.
 ms.date: 02/14/2019
 ms.technology: dotnet-standard
 dev_langs:
@@ -9,19 +10,19 @@ helpviewer_keywords:
 - foreach, parallel version
 - parallel programming, foreach
 ms.assetid: cb5fab92-1c19-499e-ae91-8b7525dd875f
-ms.openlocfilehash: 0300f8900cd18159ba3a2170cfba96f302f282a0
-ms.sourcegitcommit: 961ec21c22d2f1d55c9cc8a7edf2ade1d1fd92e3
+ms.openlocfilehash: 59c8710a8e3fc878b2ceded8595f7f3319d4c953
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80588139"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84447203"
 ---
 # <a name="how-to-write-a-simple-parallelforeach-loop"></a>Практическое руководство. написание простого цикла Parallel.ForEach
 
 В этом примере показано, как использовать цикл <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> для включения параллелизма данных в любом источнике данных <xref:System.Collections.IEnumerable?displayProperty=nameWithType> или <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>.
 
 > [!NOTE]
-> В этой документации для определения делегатов в PLINQ используются лямбда-выражения. Если вы не знакомы с лямбда-выражениями в C# или Visual Basic, см. раздел [Лямбда-выражения в PLINQ и TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).
+> В этой документации для определения делегатов в PLINQ используются лямбда-выражения. Если вы не знакомы с лямбда-выражениями в C# или Visual Basic, см. раздел [Лямбда-выражения в PLINQ и TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 ## <a name="example"></a>Пример
 
@@ -32,14 +33,14 @@ ms.locfileid: "80588139"
 
 Цикл <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> действует как цикл <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType>. Цикл разделяет исходную коллекцию на секции и распределяет задачи по нескольким потокам с учетом доступной среды системы. Чем больше в системе процессоров, тем быстрее выполняются параллельные методы. Для некоторых исходных коллекций, в зависимости от размера источника и типа выполняемых работ, последовательный цикл может оказаться быстрее. Дополнительные сведения о производительности см. в статье [Потенциальные ошибки, связанные с параллелизмом данных и задач](potential-pitfalls-in-data-and-task-parallelism.md).
 
-Дополнительные сведения о параллельных циклах см. в статье [Практическое руководство. Написание простого цикла Parallel.For](../../../docs/standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md).
+Дополнительные сведения о параллельных циклах см. в статье [Практическое руководство. Написание простого цикла Parallel.For](how-to-write-a-simple-parallel-for-loop.md).
 
 Чтобы применить <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> для неуниверсальной коллекции, вы можете преобразовать ее в универсальную коллекцию с помощью метода расширения <xref:System.Linq.Enumerable.Cast%2A?displayProperty=nameWithType>, как показано в следующем примере.
 
 [!code-csharp[TPL_Parallel#07](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/nongeneric.cs#07)]
 [!code-vb[TPL_Parallel#07](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/nongeneric.vb#07)]
 
-Также вы можете использовать Parallel LINQ (PLINQ) для параллельной обработки источников данных <xref:System.Collections.Generic.IEnumerable%601>. PLINQ позволяет применять декларативный синтаксис запроса для описания поведения цикла. Дополнительные сведения см. в разделе [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).
+Также вы можете использовать Parallel LINQ (PLINQ) для параллельной обработки источников данных <xref:System.Collections.Generic.IEnumerable%601>. PLINQ позволяет применять декларативный синтаксис запроса для описания поведения цикла. Дополнительные сведения см. в разделе [Parallel LINQ (PLINQ)](introduction-to-plinq.md).
 
 ## <a name="compile-and-run-the-code"></a>Скомпилируйте и запустите код.
 
@@ -63,6 +64,6 @@ ms.locfileid: "80588139"
 
 ## <a name="see-also"></a>См. также
 
-- [Параллелизм данных](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Параллельное программирование](../../../docs/standard/parallel-programming/index.md)
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
+- [Параллелизм данных](data-parallelism-task-parallel-library.md)
+- [Параллельное программирование](index.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

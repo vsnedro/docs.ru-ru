@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
-ms.openlocfilehash: 4ad505749625e22a09406549329179990b81c140
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 8507c4b323f97279c3054b76aaf8d52f14f0d4ad
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794394"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84289139"
 ---
 # <a name="mapping-the-object-hierarchy-to-xml-data"></a>Сопоставление объектной иерархии с XML-данными
 Когда XML-документ находится в памяти, его концептуальным представлением является дерево. В распоряжении программиста имеется объектная иерархия для доступа к узлам этого дерева. Следующий пример показывает, как XML-содержимое становится узлами.  
@@ -30,7 +30,7 @@ ms.locfileid: "82794394"
   
  Входные данные представлены в памяти следующим деревом узлов с назначенным свойством типа узлов:  
   
- ![пример дерева узлов](../../../../docs/standard/data/xml/media/simple-xml.gif "Simple_XML")  
+ ![пример дерева узлов](media/simple-xml.gif "Simple_XML")  
 Представление дерева узлов book и title  
   
  Элемент `book` становится объектом **XmlElement`title`, следующий элемент**  также становится объектом **XmlElement**, а элемент content становится объектом **XmlText**. Методы и свойства объекта **XmlElement** отличаются от методов и свойств, доступных для объекта **XmlText**. Поэтому очень важно знать, какой тип узла получает XML, так как тип узла определяет действия, которые можно выполнить.  
@@ -187,8 +187,8 @@ public class Sample
 |Входные данные|Вывод|Проверка типа узла|  
 |-----------|------------|--------------------|  
 |\<?xml version="1.0"?>|\<?xml version='1.0'?>|XmlNodeType.XmlDeclaration|  
-|\<!-- Это пример XML-документа -->|\<!-- Это пример XML-документа -->|XmlNodeType.Comment|  
-|\<!DOCTYPE Items [\<!ENTITY number "123">]>|\<!DOCTYPE Items [\<!ENTITY number "123">]>|XmlNodeType.DocumentType|  
+|\<!-- This is a sample XML document -->|\<!--This is a sample XML document -->|XmlNodeType.Comment|  
+|\<!DOCTYPE Items [\<!ENTITY number "123">]>|\<!DOCTYPE Items [\<!ENTITY number "123">]|XmlNodeType.DocumentType|  
 |\<Items>|\<Items>|XmlNodeType.Element|  
 |\<Item>|\<Item>|XmlNodeType.Element|  
 |Проверка с помощью сущности: &number;|Проверка с помощью сущности: 123|XmlNodeType.Text|  
@@ -206,7 +206,7 @@ public class Sample
 |\<Item>|\<Item>|XmlNodeType.Element|  
 |Проверка с помощью сущности char: &\#65;|Проверка с помощью сущности char: А|XmlNodeType.Text|  
 |\</Item>|\</Item>|XmlNodeType.EndElement|  
-|\<!-- В этом элементе 14 элементов типа char.-->|\<-- В этом элементе 14 элементов типа char.-->|XmlNodeType.Comment|  
+|\<!-- Fourteen chars in this element.-->|\<--Fourteen chars in this element.-->|XmlNodeType.Comment|  
 |\<Item>|\<Item>|XmlNodeType.Element|  
 |1234567890ABCD|1234567890ABCD|XmlNodeType.Text|  
 |\</Item>|\</Item>|XmlNodeType.EndElement|  
@@ -214,10 +214,10 @@ public class Sample
   
  Необходимо знать, какой тип узла назначен, так как от типа узла зависят допустимые типы действий и типы свойств, которые можно установить и получить.  
   
- Управление созданием узлов для пробелов при загрузке данных в модель DOM осуществляется флагом **PreserveWhitespace**. Дополнительные сведения см. в руководстве по [обработке незначимых и значимых пробелов при загрузке модели DOM](../../../../docs/standard/data/xml/white-space-and-significant-white-space-handling-when-loading-the-dom.md).  
+ Управление созданием узлов для пробелов при загрузке данных в модель DOM осуществляется флагом **PreserveWhitespace**. Дополнительные сведения см. в руководстве по [обработке незначимых и значимых пробелов при загрузке модели DOM](white-space-and-significant-white-space-handling-when-loading-the-dom.md).  
   
- Чтобы добавить новые узлы в модель DOM, воспользуйтесь руководством [Вставка узлов в XML-документ](../../../../docs/standard/data/xml/inserting-nodes-into-an-xml-document.md). Чтобы удалить узлы из модели DOM, изучите статью [Удаление узлов, содержимого и значений из XML-документа](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md). Чтобы изменить узлы в модели DOM, см. статью [Изменение узлов, содержимого и значений в XML-документе](../../../../docs/standard/data/xml/modifying-nodes-content-and-values-in-an-xml-document.md).  
+ Чтобы добавить новые узлы в модель DOM, воспользуйтесь руководством [Вставка узлов в XML-документ](inserting-nodes-into-an-xml-document.md). Чтобы удалить узлы из модели DOM, изучите статью [Удаление узлов, содержимого и значений из XML-документа](removing-nodes-content-and-values-from-an-xml-document.md). Чтобы изменить узлы в модели DOM, см. статью [Изменение узлов, содержимого и значений в XML-документе](modifying-nodes-content-and-values-in-an-xml-document.md).  
   
 ## <a name="see-also"></a>См. также
 
-- [Модель объектов документов XML (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [Модель объектов документов XML (DOM)](xml-document-object-model-dom.md)

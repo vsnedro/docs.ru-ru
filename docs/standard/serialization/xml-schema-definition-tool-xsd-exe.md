@@ -3,12 +3,12 @@ title: XML Schema Definition Tool (Xsd.exe)
 description: Инструмент создания XML-сериализатора создает сборку XML-сериализации для типов в указанной сборке, улучшающую производительность XmlSerializer при запуске.
 ms.date: 03/30/2017
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
-ms.openlocfilehash: 9b2be0b0b267973bd25ffd021dec18a7b9bcadec
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 0275ecfebd427feb104013024654d4a0bc98748a
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83380056"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "84288983"
 ---
 # <a name="xml-schema-definition-tool-xsdexe"></a>XML Schema Definition Tool (Xsd.exe)
 
@@ -32,7 +32,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 ```
   
 > [!TIP]
-> Для нормальной работы инструментов .NET Framework необходимо правильно настроить переменные среды `Path`, `Include` и `Lib`. Эти переменные устанавливаются с помощью программы SDKVars.bat, расположенной в каталоге \<SDK>\v2.0\Bin. Программу SDKVars.bat следует выполнять в каждой командной оболочке.
+> Для нормальной работы инструментов .NET Framework необходимо правильно настроить переменные среды `Path`, `Include` и `Lib`. Эти переменные устанавливаются с помощью программы SDKVars.bat, которая находится в каталоге \<SDK>\v2.0\Bin. Программу SDKVars.bat следует выполнять в каждой командной оболочке.
 
 ## <a name="argument"></a>Аргумент
 
@@ -63,7 +63,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 |------------|-----------------|
 |**/e\[lement\]:** _элемент_|Определяет элемент в схеме, для которого создается код. По умолчанию все элементы имеют тип. Этот аргумент можно задать несколько раз.|
 |**/enableDataBinding**|Реализует интерфейс <xref:System.ComponentModel.INotifyPropertyChanged> для всех созданных типов для обеспечения привязки данных. Краткая форма: `/edb`.|
-|**/enableLinqDataSet**|(Сокращенная форма: `/eld`.) Указывает, что созданный набор данных можно запросить с помощью LINQ to DataSet. Этот параметр используется только при указании параметра /dataset. Дополнительные сведения см. в разделах [Общие сведения о LINQ to DataSet](../../../docs/framework/data/adonet/linq-to-dataset-overview.md) и [Запрос к типизированным объектам DataSet](../../../docs/framework/data/adonet/querying-typed-datasets.md). Общие сведения об использовании LINQ см. в разделе [LINQ — C#](../../csharp/programming-guide/concepts/linq/index.md) или [LINQ — Visual Basic](../../visual-basic/programming-guide/concepts/linq/index.md).|
+|**/enableLinqDataSet**|(Сокращенная форма: `/eld`.) Указывает, что созданный набор данных можно запросить с помощью LINQ to DataSet. Этот параметр используется только при указании параметра /dataset. Дополнительные сведения см. в разделах [Общие сведения о LINQ to DataSet](../../framework/data/adonet/linq-to-dataset-overview.md) и [Запрос к типизированным объектам DataSet](../../framework/data/adonet/querying-typed-datasets.md). Общие сведения об использовании LINQ см. в разделе [LINQ — C#](../../csharp/programming-guide/concepts/linq/index.md) или [LINQ — Visual Basic](../../visual-basic/programming-guide/concepts/linq/index.md).|
 |**/f\[ields\]**|Создает поля вместо свойств. По умолчанию создаются свойства.|
 |**/l\[anguage\]:** _язык_|Задает используемый язык программирования. Доступный выбор: `CS` (C#, по умолчанию), `VB` (Visual Basic), `JS` (JScript) или `VJS` (Visual J#). Также можно указать полное имя класса, реализующего <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|
 |**/n\[amespace\]:** _пространство_имен_|Определяет пространство имен среды выполнения для создаваемых типов. Пространство имен по умолчанию — `Schemas`.|
@@ -233,9 +233,9 @@ xsd myAssembly.dll
 
 - <xref:System.Data.DataSet>
 - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-- [Инструменты](../../../docs/framework/tools/index.md)
-- [Командные строки](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
-- [Общие сведения о LINQ to DataSet](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)
-- [Запрос к типизированным объектам DataSet](../../../docs/framework/data/adonet/querying-typed-datasets.md)
+- [Инструменты](../../framework/tools/index.md)
+- [Командные строки](../../framework/tools/developer-command-prompt-for-vs.md)
+- [Общие сведения о LINQ to DataSet](../../framework/data/adonet/linq-to-dataset-overview.md)
+- [Запрос к типизированным объектам DataSet](../../framework/data/adonet/querying-typed-datasets.md)
 - [Встроенный язык запросов LINQ (C#)](../../csharp/programming-guide/concepts/linq/index.md)
 - [Встроенный язык запросов LINQ (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)

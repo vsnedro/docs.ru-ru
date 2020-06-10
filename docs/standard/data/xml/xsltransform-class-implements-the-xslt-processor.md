@@ -6,17 +6,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 88373fe2-4a6b-44f9-8a62-8a3e348e3a46
-ms.openlocfilehash: 73a432db9a3fcb6587184e27e6dfe9ba49010e92
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: eec5d6588d907e2d12b588ab3bfe743d6d1eaff9
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75709612"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84281613"
 ---
 # <a name="xsltransform-class-implements-the-xslt-processor"></a>Реализация классом XslTransform XSLT-процессора
 
 > [!NOTE]
-> Класс <xref:System.Xml.Xsl.XslTransform> явлется устаревшим в версии .NET Framework 2.0. Можно выполнять XSLT-преобразование, используя класс <xref:System.Xml.Xsl.XslCompiledTransform>. См. дополнительные сведения об [использовании класса XslCompiledTransform](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) и [миграции из класса XslTransform](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md).
+> Класс <xref:System.Xml.Xsl.XslTransform> явлется устаревшим в версии .NET Framework 2.0. Можно выполнять XSLT-преобразование, используя класс <xref:System.Xml.Xsl.XslCompiledTransform>. См. дополнительные сведения об [использовании класса XslCompiledTransform](using-the-xslcompiledtransform-class.md) и [миграции из класса XslTransform](migrating-from-the-xsltransform-class.md).
 
 Класс <xref:System.Xml.Xsl.XslTransform> является XSLT-процессором, реализующим рекомендации по XSL-преобразованиям (XSLT) версии 1.0. Метод <xref:System.Xml.Xsl.XslTransform.Load%2A> находит и считывает таблицы стилей, а метод <xref:System.Xml.Xsl.XslTransform.Transform%2A> преобразует исходный документ. В качестве исходного документа для метода <xref:System.Xml.XPath.IXPathNavigable> может служить любое хранилище, реализующее интерфейс <xref:System.Xml.Xsl.XslTransform>. Платформа .NET Framework в настоящее время реализует интерфейс <xref:System.Xml.XPath.IXPathNavigable> в классах <xref:System.Xml.XmlDocument><xref:System.Xml.XmlDataDocument> и <xref:System.Xml.XPath.XPathDocument>, поэтому все они могут использоваться в качестве источника документов для преобразования.
 
@@ -76,9 +76,9 @@ public void Load(XPathNavigator, XmlResolver, Evidence);
 
 Если URI или свидетельство отсутствуют, то свидетельство таблицы стилей считается полностью доверенным. Не загружайте таблицы стилей из ненадежных источников и не добавляйте ненадежные объекты расширения в объект <xref:System.Xml.Xsl.XsltArgumentList>.
 
-Дополнительные сведения об уровнях безопасности и свидетельстве, а также об их влиянии на работу со скриптами, вы найдете в статье [о скриптах для таблиц стилей XSLT с использованием \<msxsl:script>](../../../../docs/standard/data/xml/xslt-stylesheet-scripting-using-msxsl-script.md). Сведения об уровнях безопасности и свидетельстве, а также об их влиянии на объекты расширения см. в статье [XsltArgumentList для параметров таблицы стилей и объектов расширения](../../../../docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md).
+Дополнительные сведения об уровнях безопасности и свидетельстве, а также об их влиянии на работу со скриптами см. в разделе [Использование скриптов для таблиц стилей XSLT\<msxsl:script>](xslt-stylesheet-scripting-using-msxsl-script.md). Сведения об уровнях безопасности и свидетельстве, а также об их влиянии на объекты расширения см. в статье [XsltArgumentList для параметров таблицы стилей и объектов расширения](xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md).
 
-Сведения об уровнях безопасности и свидетельстве, а также об их влиянии на функцию `document()` см. в статье [Разрешение внешних таблиц стилей XSLT и документов](../../../../docs/standard/data/xml/resolving-external-xslt-style-sheets-and-documents.md).
+Сведения об уровнях безопасности и свидетельстве, а также об их влиянии на функцию `document()` см. в статье [Разрешение внешних таблиц стилей XSLT и документов](resolving-external-xslt-style-sheets-and-documents.md).
 
 Таблицу стилей можно предоставить с рядом входных параметров. Таблица стилей может также вызывать функции в объектах расширения. Как параметры, так и объекты расширения предоставляются таблице стилей с помощью объекта <xref:System.Xml.Xsl.XsltArgumentList>. Дополнительные сведения о веб-службе <xref:System.Xml.Xsl.XsltArgumentList> см. в разделе <xref:System.Xml.Xsl.XsltArgumentList>.
 
@@ -238,9 +238,9 @@ print_root.xsl
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Xsl.XslTransform>
-- [XSLT-преобразования с помощью класса XslTransform](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)
-- [XPathNavigator в преобразованиях](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)
-- [XPathNodeIterator в преобразованиях](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)
-- [Ввод XPathDocument в XslTransform](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)
-- [Ввод XmlDataDocument в XslTransform](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)
-- [Ввод XmlDocument в XslTransform](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)
+- [XSLT-преобразования с помощью класса XslTransform](xslt-transformations-with-the-xsltransform-class.md)
+- [XPathNavigator в преобразованиях](xpathnavigator-in-transformations.md)
+- [XPathNodeIterator в преобразованиях](xpathnodeiterator-in-transformations.md)
+- [Ввод XPathDocument в XslTransform](xpathdocument-input-to-xsltransform.md)
+- [Ввод XmlDataDocument в XslTransform](xmldatadocument-input-to-xsltransform.md)
+- [Ввод XmlDocument в XslTransform](xmldocument-input-to-xsltransform.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - pattern-matching with regular expressions, compilation
 - regular expressions, engines
 ms.assetid: 182ec76d-5a01-4d73-996c-0b0d14fcea18
-ms.openlocfilehash: b89f7f88233ecdab25ba2a74647aafeb4d8b74af
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 54f14a4f31bef00dd222686cc523935b2d9dd5fa
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80344191"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84279042"
 ---
 # <a name="compilation-and-reuse-in-regular-expressions"></a>Компиляция и многократное использование в регулярных выражениях
 Производительность приложений, активно использующих регулярные выражения, можно оптимизировать, если понимать, каким образом обработчик регулярных выражений компилирует выражения и как кэшируются регулярные выражения. В этом разделе описаны и компиляция, и кэширование.  
@@ -44,4 +44,4 @@ ms.locfileid: "80344191"
   
 ## <a name="see-also"></a>См. также
 
-- [Регулярные выражения .NET](../../../docs/standard/base-types/regular-expressions.md)
+- [Регулярные выражения .NET](regular-expressions.md)

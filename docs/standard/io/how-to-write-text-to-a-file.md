@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Запись текста в файл
+description: Изучите способы записи или добавления текста в файл для приложения .NET. Используйте методы из классов StreamWriter или File для синхронной или асинхронной записи текста.
 ms.date: 01/04/2019
 ms.technology: dotnet-standard
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - streams, writing text to files
 - data streams, writing text to files
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
-ms.openlocfilehash: ba1c1815f0e49c02d1f0ee3c48ba01b7c2f5e727
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 52d3d07f4ffdbdc6510425a65fc173d36e674d06
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78160252"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84447216"
 ---
 # <a name="how-to-write-text-to-a-file"></a>Практическое руководство. Запись текста в файл
 В этом разделе показаны различные способы записи текста в файл для приложения .NET.
@@ -67,8 +68,8 @@ ms.locfileid: "78160252"
 - <xref:System.IO.StreamWriter>
 - <xref:System.IO.Path>
 - <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>
-- [Практическое руководство. Перечисление каталогов и файлов](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
-- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)
-- [Практическое руководство. Открытие файла журнала и добавление в него данных](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
-- [Практическое руководство. Чтение текста из файла](../../../docs/standard/io/how-to-read-text-from-a-file.md)
-- [Файловый и потоковый ввод-вывод](../../../docs/standard/io/index.md)
+- [Практическое руководство. Перечисление каталогов и файлов](how-to-enumerate-directories-and-files.md)
+- [Практическое руководство. Считывание данных из нового файла и запись в этот файл](how-to-read-and-write-to-a-newly-created-data-file.md)
+- [Практическое руководство. Открытие файла журнала и добавление в него данных](how-to-open-and-append-to-a-log-file.md)
+- [Практическое руководство. Чтение текста из файла](how-to-read-text-from-a-file.md)
+- [Файловый и потоковый ввод-вывод](index.md)

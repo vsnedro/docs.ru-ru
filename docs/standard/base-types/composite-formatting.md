@@ -1,5 +1,6 @@
 ---
 title: Составное форматирование
+description: Сведения о составном форматировании .NET, которое принимает в качестве входных данных список объектов и строку составного формата, содержащую фиксированный текст с индексированными заполнителями.
 ms.date: 10/26/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - composite formatting
 - objects [.NET Framework], formatting multiple objects
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
-ms.openlocfilehash: b1ec8cfc0f8c6e660d716c51bf3c3387b73a278f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 36197b382c449a2570e1d5530f307c4e66b0d983
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79398481"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84447268"
 ---
 # <a name="composite-formatting"></a>Составное форматирование
 
@@ -81,17 +82,17 @@ ms.locfileid: "79398481"
  [!code-vb[Formatting.Composite#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/alignment1.vb#8)]  
   
 ### <a name="format-string-component"></a>Компонент строки формата  
- Необязательный компонент *formatString* — это строка формата, соответствующая типу форматируемого объекта. Если соответствующий объект является объектом <xref:System.DateTime>, используется строка стандартного или настраиваемого формата чисел, а если соответствующий объект является значением перечисления, используется [строка формата перечисления](../../../docs/standard/base-types/enumeration-format-strings.md). Если компонент *formatString* не задан, то для числовых значений, значений даты и времени, а также перечислений используется общий формат ("G"). При использовании компонента *formatString* необходимо двоеточие.  
+ Необязательный компонент *formatString* — это строка формата, соответствующая типу форматируемого объекта. Если соответствующий объект является объектом <xref:System.DateTime>, используется строка стандартного или настраиваемого формата чисел, а если соответствующий объект является значением перечисления, используется [строка формата перечисления](enumeration-format-strings.md). Если компонент *formatString* не задан, то для числовых значений, значений даты и времени, а также перечислений используется общий формат ("G"). При использовании компонента *formatString* необходимо двоеточие.  
   
  В следующей таблице перечислены типы и категории типов в библиотеке классов .NET Framework, которые поддерживают предопределенный набор строк формата, а также ссылки на разделы, в которых перечисляются поддерживаемые строки формата. Обратите внимание, что форматирование строк — это расширяемый механизм, который позволяет определять новые строки формата для всех существующих типов, а также определять набор строк формата, поддерживаемых прикладным типом. Подробнее см. в разделах, посвященных интерфейсам <xref:System.IFormattable> и <xref:System.ICustomFormatter>.  
   
 |Тип или категория типов|См.|  
 |---------------------------|---------|  
-|Типы даты и времени (<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[Строки стандартных форматов даты и времени](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)<br /><br /> [Строки настраиваемых форматов даты и времени](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|  
-|Типы перечисления (все типы, производные от <xref:System.Enum?displayProperty=nameWithType>)|[Строки форматов перечисления](../../../docs/standard/base-types/enumeration-format-strings.md)|  
-|Числовые типы (<xref:System.Numerics.BigInteger>, <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>)|[Строки стандартных числовых форматов](../../../docs/standard/base-types/standard-numeric-format-strings.md)<br /><br /> [Строки настраиваемых числовых форматов](../../../docs/standard/base-types/custom-numeric-format-strings.md)|  
+|Типы даты и времени (<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[Строки стандартных форматов даты и времени](standard-date-and-time-format-strings.md)<br /><br /> [Строки настраиваемых форматов даты и времени](custom-date-and-time-format-strings.md)|  
+|Типы перечисления (все типы, производные от <xref:System.Enum?displayProperty=nameWithType>)|[Строки форматов перечисления](enumeration-format-strings.md)|  
+|Числовые типы (<xref:System.Numerics.BigInteger>, <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>)|[Строки стандартных числовых форматов](standard-numeric-format-strings.md)<br /><br /> [Строки настраиваемых числовых форматов](custom-numeric-format-strings.md)|  
 |<xref:System.Guid>|<xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType>|  
-|<xref:System.TimeSpan>|[Строки стандартного формата TimeSpan](../../../docs/standard/base-types/standard-timespan-format-strings.md)<br /><br /> [Строки настраиваемого формата TimeSpan](../../../docs/standard/base-types/custom-timespan-format-strings.md)|  
+|<xref:System.TimeSpan>|[Строки стандартного формата TimeSpan](standard-timespan-format-strings.md)<br /><br /> [Строки настраиваемого формата TimeSpan](custom-timespan-format-strings.md)|  
   
 ### <a name="escaping-braces"></a>Оформление фигурных скобок  
  Начало и конец элемента форматирования обозначаются соответственно открывающей и закрывающей фигурной скобкой. Это означает, что для вывода открывающих и закрывающих фигурных скобок необходимо использовать escape-последовательности. Для вывода открывающей или закрывающей фигурной скобки в фиксированном тексте следует поставить две открывающие или, соответственно, закрывающие фигурные скобки подряд ("{{" или "}}"). Фигурные скобки в элементе форматирования интерпретируются последовательно в порядке их обнаружения. Интерпретация вложенных скобок не поддерживается.  
@@ -163,11 +164,11 @@ ms.locfileid: "79398481"
 - <xref:System.String.Format%2A?displayProperty=nameWithType>
 - [Интерполяция строк (C#)](../../csharp/language-reference/tokens/interpolated.md)
 - [Интерполяция строк (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
-- [Типы форматирования](../../../docs/standard/base-types/formatting-types.md)
-- [Строки стандартных числовых форматов](../../../docs/standard/base-types/standard-numeric-format-strings.md)
-- [Строки настраиваемых числовых форматов](../../../docs/standard/base-types/custom-numeric-format-strings.md)
-- [Строки стандартных форматов даты и времени](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
-- [Строки настраиваемых форматов даты и времени](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
-- [Строки стандартного формата TimeSpan](../../../docs/standard/base-types/standard-timespan-format-strings.md)
-- [Строки настраиваемого формата TimeSpan](../../../docs/standard/base-types/custom-timespan-format-strings.md)
-- [Строки форматов перечисления](../../../docs/standard/base-types/enumeration-format-strings.md)
+- [Типы форматирования](formatting-types.md)
+- [Строки стандартных числовых форматов](standard-numeric-format-strings.md)
+- [Строки настраиваемых числовых форматов](custom-numeric-format-strings.md)
+- [Строки стандартных форматов даты и времени](standard-date-and-time-format-strings.md)
+- [Строки настраиваемых форматов даты и времени](custom-date-and-time-format-strings.md)
+- [Строки стандартного формата TimeSpan](standard-timespan-format-strings.md)
+- [Строки настраиваемого формата TimeSpan](custom-timespan-format-strings.md)
+- [Строки форматов перечисления](enumeration-format-strings.md)

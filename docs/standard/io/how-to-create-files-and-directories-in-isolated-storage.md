@@ -14,12 +14,12 @@ helpviewer_keywords:
 - stores, creating files and directories
 - storing data using isolated storage, creating files and directories
 ms.assetid: 2ca4d2a4-809b-4f00-bc08-bf4a64d3a5c3
-ms.openlocfilehash: 83e8c800dc74d9689f1bfdb506a6b454e87b36ca
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d5e086e77ab6309fa0757ef32b620e0fdbc1f627
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75707874"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84413045"
 ---
 # <a name="how-to-create-files-and-directories-in-isolated-storage"></a>Практическое руководство. Создание файлов и каталогов в изолированном хранилище
 Получив изолированное хранилище, в нем можно создавать файлы и папки для хранения данных. В хранилище имена файлов и каталогов указываются относительно корня виртуальной файловой системы.  
@@ -29,6 +29,8 @@ ms.locfileid: "75707874"
  Для создания файла используется метод <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile%2A?displayProperty=nameWithType>.  
   
  В изолированных хранилищах на операционной системе Windows регистр в именах файлов и каталогов не учитывается. Таким образом, если попытаться создать файл с именем `ThisFile.txt` и еще один файл с именем `THISFILE.TXT`, будет создан только один файл. Имя файла отображается в том регистре, который был указан при создании файла.  
+
+ Создание файла изолированного хранилища приведет к возникновению исключения <xref:System.IO.IsolatedStorage.IsolatedStorageException>, если путь содержит несуществующий каталог.
   
 ## <a name="example"></a>Пример  
  В примере кода ниже показано, как создавать файлы и каталоги в изолированном хранилище.  
@@ -36,8 +38,8 @@ ms.locfileid: "75707874"
  [!code-csharp[Conceptual.IsolatedStorage#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source.cs#1)]
  [!code-vb[Conceptual.IsolatedStorage#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>
-- [Изолированное хранилище](../../../docs/standard/io/isolated-storage.md)
+- [Изолированное хранилище](isolated-storage.md)
