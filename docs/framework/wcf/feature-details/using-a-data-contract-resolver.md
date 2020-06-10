@@ -2,15 +2,15 @@
 title: Использование арбитра контрактов данных
 ms.date: 03/30/2017
 ms.assetid: 2e68a16c-36f0-4df4-b763-32021bff2b89
-ms.openlocfilehash: d9082d2979cf9bd0837635af567d69ef34c2e312
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 20abd4d928fc51eb359949ecbb216615e9659b7f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73975973"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595028"
 ---
 # <a name="using-a-data-contract-resolver"></a>Использование арбитра контрактов данных
-Арбитр контрактов данных позволяет динамически настраивать известные типы. Известные типы необходимы для сериализации или десериализации типов, не предусмотренных контрактом данных. Дополнительные сведения об известных типах см. в разделе [Data Contract известные типы](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md). Известные типы обычно задаются статически. Это означает, что при реализации операции необходимо знать все типы, которые могут быть переданы операции. Существуют сценарии, в которых это не так, и важно иметь возможность динамического задания типов.  
+Арбитр контрактов данных позволяет динамически настраивать известные типы. Известные типы необходимы для сериализации или десериализации типов, не предусмотренных контрактом данных. Дополнительные сведения об известных типах см. в разделе [Data Contract известные типы](data-contract-known-types.md). Известные типы обычно задаются статически. Это означает, что при реализации операции необходимо знать все типы, которые могут быть переданы операции. Существуют сценарии, в которых это не так, и важно иметь возможность динамического задания типов.  
   
 ## <a name="creating-a-data-contract-resolver"></a>Создание арбитра контрактов данных  
  Создание арбитра контрактов данных включает реализацию двух методов: <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> и <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A>. Эти методы реализуют обратные вызовы, используемые при сериализации и десериализации соответственно. Метод <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> вызывается при сериализации, принимает тип контракта данных и сопоставляет его с именем `xsi:type` и пространством имен. Метод <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A> вызывается при десериализации, принимает имя `xsi:type` и пространство имен и сопоставляется с типом контракта данных. Оба метода содержат параметр `knownTypeResolver`, который позволяет использовать в реализации арбитр известного типа по умолчанию.  
@@ -85,10 +85,10 @@ if (serializerBehavior == null)
 SerializerBehavior.DataContractResolver = new MyCustomerResolver();  
 ```  
   
- Сопоставитель контрактов данных можно задать декларативно, реализовав атрибут, применяемый к службе.  Дополнительные сведения см. в примере [кновнассембляттрибуте](../../../../docs/framework/wcf/samples/knownassemblyattribute.md) . В этом примере реализуется атрибут с именем «Кновнассембли», который добавляет пользовательский сопоставитель контракта данных к поведению службы.  
+ Сопоставитель контрактов данных можно задать декларативно, реализовав атрибут, применяемый к службе.  Дополнительные сведения см. в примере [кновнассембляттрибуте](../samples/knownassemblyattribute.md) . В этом примере реализуется атрибут с именем «Кновнассембли», который добавляет пользовательский сопоставитель контракта данных к поведению службы.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Известные типы контрактов данных](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
-- [Пример DataContractSerializer](../../../../docs/framework/wcf/samples/datacontractserializer-sample.md)
-- [Атрибут KnownAssemblyAttribute](../../../../docs/framework/wcf/samples/knownassemblyattribute.md)
+- [Известные типы контрактов данных](data-contract-known-types.md)
+- [Пример DataContractSerializer](../samples/datacontractserializer-sample.md)
+- [Атрибут KnownAssemblyAttribute](../samples/knownassemblyattribute.md)

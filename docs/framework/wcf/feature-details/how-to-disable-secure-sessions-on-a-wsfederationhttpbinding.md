@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 675fa143-6a4e-4be3-8afc-673334ab55ec
-ms.openlocfilehash: 810c5b127a34fb0a35e8fd2d83ff59e00aca0ba1
-ms.sourcegitcommit: a97ecb94437362b21fffc5eb3c38b6c0b4368999
+ms.openlocfilehash: df057d64feb89d1e43b938b36cb48f2f103b17d0
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68972052"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595392"
 ---
 # <a name="how-to-disable-secure-sessions-on-a-wsfederationhttpbinding"></a>Практическое руководство. Порядок отключения безопасных сеансов в WSFederationHttpBinding
 
@@ -44,6 +44,6 @@ ms.locfileid: "68972052"
 
 - Чтобы скомпилировать этот пример кода, создайте проект, ссылающийся на сборку System.ServiceModel.dll.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Привязки и безопасность](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+- [Привязки и безопасность](bindings-and-security.md)

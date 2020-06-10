@@ -2,12 +2,12 @@
 title: Сериализуемые типы
 ms.date: 03/30/2017
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
-ms.openlocfilehash: 0913d523e93505934b1cf231284e356baba5ded3
-ms.sourcegitcommit: c7a7e1468bf0fa7f7065de951d60dfc8d5ba89f5
+ms.openlocfilehash: e65fcb93c5c36bb289b825cef58b3adc6f5155f5
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65591670"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84586108"
 ---
 # <a name="serializable-types"></a>Сериализуемые типы
 По умолчанию <xref:System.Runtime.Serialization.DataContractSerializer> сериализует все открытые типы. Все открытые свойства чтения/записи и поля типа сериализуются.  
@@ -36,12 +36,12 @@ ms.locfileid: "65591670"
 - Чтобы исключить из процесса сериализации открытые члены, свойства или поля, применяйте к таким членам атрибут <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>.  
   
 ## <a name="inheritance"></a>Наследование  
- Неотмеченные типы (типы без атрибута <xref:System.Runtime.Serialization.DataContractAttribute>) могут наследоваться от типов, имеющих этот атрибут. В то же время обратное невозможно: типы с атрибутом от неотмеченных типов наследоваться не могут. Это правило применяется главным образом для обеспечения обратной совместимости с кодом, написанным в более ранних версиях .NET Framework.  
+ Неотмеченные типы (типы без атрибута <xref:System.Runtime.Serialization.DataContractAttribute>) могут наследоваться от типов, имеющих этот атрибут. В то же время обратное невозможно: типы с атрибутом от неотмеченных типов наследоваться не могут. Это правило применяется в первую очередь для обеспечения обратной совместимости с кодом, написанным в более ранних версиях .NET Framework.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [Типы, поддерживаемые сериализатором контракта данных](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [Типы, поддерживаемые сериализатором контракта данных](types-supported-by-the-data-contract-serializer.md)

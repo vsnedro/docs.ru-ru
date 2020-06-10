@@ -2,12 +2,12 @@
 title: Размещение в приложении службы Windows
 ms.date: 03/30/2017
 ms.assetid: f4199998-27f3-4dd9-aee4-0a4addfa9f24
-ms.openlocfilehash: a07aade4619b644dadd1d5acdcb5252b305b94d0
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: ba49d123508ceb8da677d1e9c67721e4f86aa7c3
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75964489"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84597336"
 ---
 # <a name="hosting-in-a-windows-service-application"></a>Размещение в приложении службы Windows
 Службы Windows (ранее называвшиеся службами Windows NT) обеспечивают модель процессов, особенно подходящую для приложений, которые должны существовать в длительно исполняемом файле и не отображают никакой формы пользовательского интерфейса. Временем существования процессов приложений служб Windows управляет диспетчер служб, который позволяет запускать, останавливать и приостанавливать приложения служб Windows. Можно настроить автоматический запуск процесса службы Windows при запуске компьютера, сделав его подходящей средой размещения для приложений Always on. Дополнительные сведения о приложениях служб Windows см. в разделе [приложения службы Windows](https://go.microsoft.com/fwlink/?LinkId=89450).  
@@ -30,17 +30,17 @@ ms.locfileid: "75964489"
   
     - Переопределите <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29>, чтобы открыть один или несколько экземпляров <xref:System.ServiceModel.ServiceHost>. Одно приложение службы Windows может размещать несколько служб WCF, запускаемых и останавливаемых в качестве группы.  
   
-    - Переопределите <xref:System.ServiceProcess.ServiceBase.OnStop%2A>, чтобы вызвать <xref:System.ServiceModel.Channels.CommunicationObject.Closed> в <xref:System.ServiceModel.ServiceHost> любых запущенных службах WCF, которые были запущены во время <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29>.  
+    - Переопределите <xref:System.ServiceProcess.ServiceBase.OnStop%2A> для вызова <xref:System.ServiceModel.Channels.CommunicationObject.Closed> на <xref:System.ServiceModel.ServiceHost> всех запущенных службах WCF, которые были запущены во время <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> .  
   
     - Подпишитесь на событие <xref:System.ServiceModel.Channels.CommunicationObject.Faulted> приложения <xref:System.ServiceModel.ServiceHost> и используйте класс <xref:System.ServiceProcess.ServiceController>, чтобы завершить работу приложения службы Windows в случае ошибки.  
   
      Приложения служб Windows, в которых размещаются службы WCF, развертываются и управляются так же, как приложения служб Windows, которые не используют WCF.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
 - <xref:System.ServiceProcess>
-- [Пошаговое руководство. Создание приложения служб Windows в конструкторе компонентов](https://go.microsoft.com/fwlink/?LinkId=94875)
-- [Практическое руководство. Размещение службы WCF в управляемой службе Windows](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)
-- [Узел службы Windows](../../../../docs/framework/wcf/samples/windows-service-host.md)
+- [Пошаговое руководство: Создание приложения служб Windows в конструкторе компонентов](https://go.microsoft.com/fwlink/?LinkId=94875)
+- [Практическое руководство. Размещение службы WCF в управляемой службе Windows](how-to-host-a-wcf-service-in-a-managed-windows-service.md)
+- [Узел службы Windows](../samples/windows-service-host.md)
 - [Программная архитектура приложений служб](https://go.microsoft.com/fwlink/?LinkId=94876)
 - [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

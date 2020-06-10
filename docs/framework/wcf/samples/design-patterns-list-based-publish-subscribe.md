@@ -2,20 +2,20 @@
 title: 'Шаблоны разработки: публикация-подписка на основе списка'
 ms.date: 03/30/2017
 ms.assetid: f4257abc-12df-4736-a03b-0731becf0fd4
-ms.openlocfilehash: 7342b3702338d5cd1fcc27d80e4e70cee019cc22
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5aaea5b0def544f8b3e963d71e269592b9b40784
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144764"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84592350"
 ---
 # <a name="design-patterns-list-based-publish-subscribe"></a>Шаблоны разработки: публикация-подписка на основе списка
-Этот пример иллюстрирует шаблон Publish-Subscribe, реализованный в виде программы Windows Communication Foundation (WCF).  
+В этом примере показан шаблон публикации-подписки на основе списка, реализованный как программа Windows Communication Foundation (WCF).  
   
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
   
- Шаблон проектирования на основе списка Publish-Subscribe описан в публикации Microsoft Patterns & Practices, [Integration Patterns.](https://docs.microsoft.com/previous-versions/msp-n-p/ff647309(v=pandp.10)) Шаблон публикации-подписки передает информацию коллекции получателей, подписавшихся на информационный раздел. Шаблон публикации-подписки на основе списка поддерживает список подписчиков. Если имеется информация для обмена, копия отправляется каждому подписчику в списке. В этом образце демонстрируется динамический шаблон публикации-подписки на основе списка, в котором клиенты могут подписываться или отказываться от подписки так часто, как требуется.  
+ Шаблон проектирования публикации и подписки на основе списка описан в статье шаблоны Microsoft Patterns & методики публикации, [Шаблоны интеграции](https://docs.microsoft.com/previous-versions/msp-n-p/ff647309(v=pandp.10)). Шаблон публикации-подписки передает информацию коллекции получателей, подписавшихся на информационный раздел. Шаблон публикации-подписки на основе списка поддерживает список подписчиков. Если имеется информация для обмена, копия отправляется каждому подписчику в списке. В этом образце демонстрируется динамический шаблон публикации-подписки на основе списка, в котором клиенты могут подписываться или отказываться от подписки так часто, как требуется.  
   
  Образец шаблона публикации-подписки на основе списка состоит из клиента, службы и программы источника данных. Одновременно могут выполняться несколько клиентов и несколько программ источника данных. Клиенты подписываются на службу, получают уведомления и отказываются от подписки. Программы источника данных отправляют информацию службе для обмена со всеми текущими подписчиками.  
   
@@ -112,25 +112,25 @@ public class PriceChangeEventArgs : EventArgs
   
 ### <a name="to-set-up-and-build-the-sample"></a>Настройка и сборка образца  
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 ### <a name="to-run-the-sample-on-the-same-machine"></a>Запуск образца на том же компьютере  
   
-1. Проверьте, что вы можете получить доступ к `http://localhost/servicemodelsamples/service.svc`службе с помощью браузера, введя следующий адрес: . Должна отобразиться страница подтверждения.  
+1. Проверьте, что доступ к службе можно получить с помощью браузера, введя следующий адрес: `http://localhost/servicemodelsamples/service.svc` . Должна отобразиться страница подтверждения.  
   
-2. Выполнить Client.exe из\\«клиент-бин », из-под папки, конкретной языка. Действия клиента отображаются в окне консоли клиента. Запустите несколько клиентов.  
+2. Запустите программу Client. exe из \client\bin\ \\ в папке для конкретного языка. Действия клиента отображаются в окне консоли клиента. Запустите несколько клиентов.  
   
-3. Выполнить Datasource.exe из файла «Datasource»bin,\\из-под папки, конкретной для языка. Действия источника данных отображаются в окне консоли. После того, как источник данных отправляет информацию службе, она должна быть передана каждому клиенту.  
+3. Запустите файл DataSource. exe из \датасаурце\бин \\ в папке для конкретного языка. Действия источника данных отображаются в окне консоли. После того, как источник данных отправляет информацию службе, она должна быть передана каждому клиенту.  
   
-4. Если клиент, источник данных и программы обслуживания не [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))могут общаться, см.  
+4. Если клиент, источник данных и служебные программы не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### <a name="to-run-the-sample-across-machines"></a>Выполнение примера на нескольких компьютерах  
   
 1. Настройка компьютера службы.  
   
-    1. На компьютере службы создайте виртуальный каталог с именем ServiceModelSamples. Пакетный файл Setupvroot.bat из [одноразовой настройки для образцов Фонда связи Windows](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) можно использовать для создания дискового каталога и виртуального каталога.  
+    1. На компьютере службы создайте виртуальный каталог с именем ServiceModelSamples. Пакетный файл Setupvroot. bat из [процедуры однократной настройки для примеров Windows Communication Foundation](one-time-setup-procedure-for-the-wcf-samples.md) можно использовать для создания каталога диска и виртуального каталога.  
   
     2. Скопируйте файлы программы службы из каталога %SystemDrive%\Inetpub\wwwroot\servicemodelsamples в виртуальный каталог ServiceModelSamples на компьютере службы. Не забудьте включить файлы в каталог \bin.  
   
@@ -157,6 +157,6 @@ public class PriceChangeEventArgs : EventArgs
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DesignPatterns/ListBasedPublishSubscribe`  

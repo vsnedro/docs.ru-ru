@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8e37363b-4dad-4fb6-907f-73c30fac1d9a
-ms.openlocfilehash: 698a5134683341fedf2a37f7d6383770e14c232c
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: dbd51abbc30b1010f7c4f206aad9a773eca0a714
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75964802"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84593182"
 ---
 # <a name="how-to-host-a-wcf-service-in-a-managed-windows-service"></a>Практическое руководство. Размещение службы WCF в управляемой службе Windows
 
@@ -18,7 +18,7 @@ ms.locfileid: "75964802"
 
 Службами Windows можно управлять при помощи Microsoft.ManagementConsole.SnapIn в консоли управления (MMC) и можно настроить их автоматический запуск при загрузке системы. Этот вариант размещения состоит из регистрации домена приложения (AppDomain), в котором размещена служба WCF, в качестве управляемой службы Windows, чтобы время существования процесса службы управлялось диспетчером управления службами (SCM) для служб Windows.
 
-Код службы включает в себя реализацию службы контракта службы, класс службы Windows и класс установщика. Класс реализации службы, `CalculatorService`, является службой WCF. Класс `CalculatorWindowsService` является службой Windows. Чтобы считаться службой Windows, этот класс наследует от класса `ServiceBase` и реализует методы `OnStart` и `OnStop`. В методе `OnStart` создается объект <xref:System.ServiceModel.ServiceHost> для типа `CalculatorService` и открывается. В методе `OnStop` служба останавливается и освобождается. Ведущее приложение также отвечает за предоставление базового адреса для узла службы, настроенного в параметрах приложения. Класс установщика, унаследованный от класса <xref:System.Configuration.Install.Installer>, позволяет выполнить установку программы как службы Windows с помощью Installutil.exe.
+Код службы включает в себя реализацию службы контракта службы, класс службы Windows и класс установщика. Класс реализации службы, `CalculatorService` , — это служба WCF. Класс `CalculatorWindowsService` является службой Windows. Чтобы считаться службой Windows, этот класс наследует от класса `ServiceBase` и реализует методы `OnStart` и `OnStop`. В методе `OnStart` создается объект <xref:System.ServiceModel.ServiceHost> для типа `CalculatorService` и открывается. В методе `OnStop` служба останавливается и освобождается. Ведущее приложение также отвечает за предоставление базового адреса для узла службы, настроенного в параметрах приложения. Класс установщика, унаследованный от класса <xref:System.Configuration.Install.Installer>, позволяет выполнить установку программы как службы Windows с помощью Installutil.exe.
 
 ## <a name="construct-the-service-and-provide-the-hosting-code"></a>Создание службы и предоставление кода размещения
 
@@ -26,7 +26,7 @@ ms.locfileid: "75964802"
 
 2. Измените имя файла Program.cs на Service.cs.
 
-3. Измените пространство имен на `Microsoft.ServiceModel.Samples`.
+3. Измените пространство имен на `Microsoft.ServiceModel.Samples` .
 
 4. Добавьте ссылки на следующие сборки:
 
@@ -112,7 +112,7 @@ ms.locfileid: "75964802"
 
      Щелкните правой кнопкой мыши файл App. config в **Обозреватель решений** и выберите пункт **свойства**. В разделе **Копировать в выходной каталог** выберите **Копировать, если новее**.
 
-     В этом примере конечные точки явно задаются в файле конфигурации. Если в службу не добавлена ни одна конечная точка, то среда выполнения добавляет конечные точки по умолчанию. В этом примере, поскольку для службы параметр <xref:System.ServiceModel.Description.ServiceMetadataBehavior> установлен в значение `true`, в ней также будет включена публикация метаданных. Дополнительные сведения о конечных точках по умолчанию, привязках и режимах работы см. в разделах [Упрощенная конфигурация](../../../../docs/framework/wcf/simplified-configuration.md) и [Упрощенная конфигурация служб WCF](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).
+     В этом примере конечные точки явно задаются в файле конфигурации. Если в службу не добавлена ни одна конечная точка, то среда выполнения добавляет конечные точки по умолчанию. В этом примере, поскольку для службы параметр <xref:System.ServiceModel.Description.ServiceMetadataBehavior> установлен в значение `true`, в ней также будет включена публикация метаданных. Дополнительные сведения о конечных точках по умолчанию, привязках и режимах работы см. в разделах [Упрощенная конфигурация](../simplified-configuration.md) и [Упрощенная конфигурация служб WCF](../samples/simplified-configuration-for-wcf-services.md).
 
 ## <a name="install-and-run-the-service"></a>Установка и запуск службы
 
@@ -133,9 +133,9 @@ ms.locfileid: "75964802"
 
 Как и в случае резидентного размещения, среда размещения службы Windows требует, чтобы код размещения являлся частью приложения. Служба реализуется как консольное приложение и содержит собственный код размещения. В других средах размещения, таких как служба активации Windows (WAS), размещающих в IIS, писать код размещения необязательно.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>Дополнительно
 
-- [Упрощенная конфигурация](../../../../docs/framework/wcf/simplified-configuration.md)
-- [Размещение в управляемом приложении](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)
-- [Размещение служб](../../../../docs/framework/wcf/hosting-services.md)
+- [Упрощенная конфигурация](../simplified-configuration.md)
+- [Размещение в управляемом приложении](hosting-in-a-managed-application.md)
+- [Размещение служб](../hosting-services.md)
 - [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

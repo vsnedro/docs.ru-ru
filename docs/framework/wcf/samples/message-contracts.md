@@ -2,28 +2,28 @@
 title: Контракты сообщений
 ms.date: 03/30/2017
 ms.assetid: e3df7c11-c653-4796-be47-26b09c35b691
-ms.openlocfilehash: 5483c75bfe7f72b2c6155d978c006fc2050c1e2e
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 5467ee9ff807bca79330054c30ad424ea479a6a3
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61756368"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84591687"
 ---
 # <a name="message-contracts"></a>Контракты сообщений
-Этот раздел содержит образцы, которые демонстрируют контракты сообщений в Windows Communication Foundation (WCF).  
+Этот раздел содержит примеры, демонстрирующие контракты сообщений в Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Контракт сообщения по умолчанию](../../../../docs/framework/wcf/samples/default-message-contract.md)  
+ [Контракт сообщения по умолчанию](default-message-contract.md)  
  Показывает службу, где пользовательское сообщение, определенное пользователем, передается в операции службы и из них.  
   
- Нетипизированный запрос ответ  
+ Нетипизированный запрос-ответ  
  Показано, как определять контракты операций, использующие класс Message.  
   
- [Сообщения без оболочки](../../../../docs/framework/wcf/samples/unwrapped-messages.md)  
+ [Сообщения без оболочки](unwrapped-messages.md)  
  Показаны сообщения без оболочки. По умолчанию текст сообщения форматируется так, чтобы параметры, которые передаются операциям службы, находились в оболочке.  
   
- [Установка свойств Use и Style](../../../../docs/framework/wcf/samples/setting-the-use-and-style-properties.md)  
+ [Установка свойств Use и Style](setting-the-use-and-style-properties.md)  
  Показывает, как использовать свойства Use и Style классов <xref:System.ServiceModel.XmlSerializerFormatAttribute> и <xref:System.ServiceModel.DataContractFormatAttribute>.  
   
- [Пример XmlReader](../../../../docs/framework/wcf/samples/xmlreader-sample.md)  
+ [Пример XmlReader](xmlreader-sample.md)  
  Демонстрирует обработку текста сообщения с помощью <xref:System.Xml.XmlReader>.

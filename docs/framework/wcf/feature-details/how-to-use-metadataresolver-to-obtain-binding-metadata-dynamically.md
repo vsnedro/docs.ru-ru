@@ -2,12 +2,12 @@
 title: Практическое руководство. Использование MetadataResolver для динамического получения метаданных привязки
 ms.date: 03/30/2017
 ms.assetid: 56ffcb99-fff0-4479-aca0-e3909009f605
-ms.openlocfilehash: dfa36c81bbeb70c1dd981ff91b4efb6d7c423a5c
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: 98fe4977f270b008c51039af19261ca86b8d6642
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70991622"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84601131"
 ---
 # <a name="how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically"></a>Практическое руководство. Использование MetadataResolver для динамического получения метаданных привязки
 В этом разделе показано, как использовать класс <xref:System.ServiceModel.Description.MetadataResolver> для динамического получения метаданных привязки.  
@@ -45,6 +45,6 @@ ms.locfileid: "70991622"
     }  
     ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Метаданные](../../../../docs/framework/wcf/feature-details/metadata.md)
+- [Метаданные](metadata.md)

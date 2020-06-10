@@ -2,19 +2,19 @@
 title: Практическое руководство. Развертывание приложения интеграции COM+
 ms.date: 03/30/2017
 ms.assetid: 2e5a0510-db3c-4988-a09c-696285836650
-ms.openlocfilehash: fcf525943e6e453253c6f4d3bcfa8a1a08df6909
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b4ae7f730296d54debc1cf2971b61e5700503430
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61778330"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84595431"
 ---
 # <a name="how-to-deploy-a-com-integration-application"></a>Практическое руководство. Развертывание приложения интеграции COM+
 Написанное приложение интеграции COM+ может понадобиться развернуть на другом компьютере. В этом разделе описывается перенос приложения COM+ с одного компьютера на другой.  
   
 ### <a name="moving-a-com-hosted-integration-app"></a>Перенос размещенного в COM+ приложения интеграции  
   
-1. Убедитесь, что на обоих компьютерах установлен продукт WCF.  
+1. Убедитесь, что WCF установлена на обоих компьютерах.  
   
 2. Экспортируйте приложение с компьютера A.  
   
@@ -28,7 +28,7 @@ ms.locfileid: "61778330"
   
 ### <a name="moving-a-web-hosted-integration-application"></a>Перенос размещенного на веб-сервере приложения интеграции  
   
-1. Убедитесь, что на обоих компьютерах установлен продукт WCF.  
+1. Убедитесь, что WCF установлена на обоих компьютерах.  
   
 2. Экспортируйте приложение с компьютера A.  
   
@@ -38,8 +38,8 @@ ms.locfileid: "61778330"
   
 5. Скопируйте файл .SVC (имя_компонента.svc) и файл Web.config из виртуального корневого каталога на компьютере A в только что созданный виртуальный корневой каталог на компьютере B.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
-- [Общие сведения об интеграции с приложениями COM+](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)
-- [Практическое руководство. Настройка параметров службы COM +](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
-- [Практическое руководство. Используйте средство настройки модели служб COM +](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md)
+- [Общие сведения об интеграции с приложениями COM+](integrating-with-com-plus-applications-overview.md)
+- [Практическое руководство. Настройка параметров службы COM+](how-to-configure-com-service-settings.md)
+- [Практическое руководство. Использование программы командной строки настройки модели служб COM+](how-to-use-the-com-service-model-configuration-tool.md)
