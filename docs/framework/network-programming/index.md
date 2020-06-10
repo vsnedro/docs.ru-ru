@@ -1,5 +1,6 @@
 ---
 title: Сетевое программирование в .NET Framework
+description: Используйте эти ресурсы для интеграции в ваши приложения многоуровневой, расширяемой и управляемой реализации служб Интернета, предоставляемой .NET Framework.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Networking
@@ -7,17 +8,17 @@ helpviewer_keywords:
 - Internet, .NET Framework Internet services
 - Network Resources
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
-ms.openlocfilehash: 1e7f0123ab07fd4e83eea957b72bf79eeeecef2b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 117fce887a04def7f9b3f7654a8e9e675ea462d2
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74204697"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502409"
 ---
 # <a name="network-programming-in-the-net-framework"></a>Сетевое программирование в .NET Framework
 Microsoft .NET Framework обеспечивает многоуровневую, расширяемую и управляемую реализацию служб Интернета, которую можно легко и быстро интегрировать в приложения. В сетевых приложениях можно использовать подключаемые протоколы, которые позволяют автоматически применять новые протоколы Интернета, или управляемую реализацию интерфейса сокетов Windows, дающую возможность работать с сетью на уровне сокетов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Введение в подключаемые протоколы](introducing-pluggable-protocols.md)  
  Описание способов доступа к интернет-ресурсу вне зависимости от используемого протокола доступа  
@@ -126,7 +127,7 @@ Microsoft .NET Framework обеспечивает многоуровневую, 
  Предоставляет управляемую реализацию интерфейса WebSocket для разработчиков.  
   
  <xref:System.Uri?displayProperty=nameWithType>  
- Предоставляет объектное представление универсального идентификатора ресурсов (URI) и обеспечивает простой доступ к его частям.  
+ Обеспечивает объектное представление универсального кода ресурсов (URI), а также простой доступ к его частям.  
   
  <xref:System.Security.Authentication.ExtendedProtection?displayProperty=nameWithType>  
  Обеспечивает поддержку аутентификации за счет расширенной защиты приложений.  
@@ -134,7 +135,7 @@ Microsoft .NET Framework обеспечивает многоуровневую, 
  <xref:System.Security.Authentication.ExtendedProtection.Configuration?displayProperty=nameWithType>  
  Обеспечивает поддержку настройки аутентификации с помощью расширенной защиты приложений.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Рекомендации по использованию протокола TLS с .NET Framework](tls.md)
 - [Практические руководства по сетевому программированию](network-programming-how-to-topics.md)

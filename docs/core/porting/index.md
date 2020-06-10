@@ -3,12 +3,12 @@ title: Перенос кода из .NET Framework в .NET Core
 description: Общие сведения о процессе переноса и инструментах, которые могут оказаться полезными при переносе проектов .NET Framework в .NET Core.
 author: cartermp
 ms.date: 10/22/2019
-ms.openlocfilehash: c6797a5b3a97ddd01f86498d896e859baf8997be
-ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
+ms.openlocfilehash: 74fe4519e41a07bc78a4dc346f8d1b52b5c7d092
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82158293"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502773"
 ---
 # <a name="overview-of-porting-from-net-framework-to-net-core"></a>Общие сведения о переносе кода в .NET Core из .NET Framework
 
@@ -39,6 +39,9 @@ ms.locfileid: "82158293"
 
 - [Схемы зависимостей в Visual Studio](/visualstudio/modeling/create-layer-diagrams-from-your-code) могут создавать направленный граф кода в решении.
 - Запустите `msbuild _SolutionPath_ /t:GenerateRestoreGraphFile /p:RestoreGraphOutputPath=graph.dg.json`, чтобы создать документ JSON, включающий список ссылок проекта.
+- Запустите [анализатор переносимости .NET](../../standard/analyzers/portability-analyzer.md) с параметром `-r DGML`, чтобы получить схему зависимостей сборок. Дополнительные сведения см. [здесь](../../standard/analyzers/portability-analyzer.md#solution-wide-view).
+
+После получения сведений о зависимостях можно использовать эти сведения для продвижения по дереву зависимостей, начиная с листовых узлов, путем выполнения действий, описанных в следующем разделе.
 
 ## <a name="per-project-steps"></a>Действия для каждого проекта
 

@@ -51,7 +51,7 @@ public class Book
 // <ISBN>1234567890</ISBN>.
 ```
 
-Поведение по умолчанию можно изменить, если элементу следует присвоить новое имя. В следующем примере кода показано, как это можно сделать с помощью атрибута, задав свойство <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A><xref:System.Xml.Serialization.XmlElementAttribute>.
+Поведение по умолчанию можно изменить, если элементу следует присвоить новое имя. В следующем примере кода показано, как это можно сделать с помощью атрибута, задав свойство <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> <xref:System.Xml.Serialization.XmlElementAttribute>.
 
 ```vb
 Public Class TaxRates
@@ -71,7 +71,7 @@ public class TaxRates {
 
 ## <a name="controlling-array-serialization"></a>Управление сериализацией массивов
 
-Атрибуты <xref:System.Xml.Serialization.XmlArrayAttribute> и <xref:System.Xml.Serialization.XmlArrayItemAttribute> предназначены для управления сериализацией массивов. С помощью этих атрибутов можно управлять именем элемента, пространством имен и типом данных схемы XML (XSD) (согласно документу "Схема XML, часть 2: типы данных" консорциума World Wide Web (www.w3.org)). Также можно указать типы, которые можно включить в массив.
+Атрибуты <xref:System.Xml.Serialization.XmlArrayAttribute> и <xref:System.Xml.Serialization.XmlArrayItemAttribute> предназначены для управления сериализацией массивов. С помощью этих атрибутов можно управлять именем элемента, пространством имен и типом данных схемы XML (XSD) (согласно документу "Схема XML, часть 2: типы данных" консорциума World Wide Web [www.w3.org]. Также можно указать типы, которые можно включить в массив.
 
 <xref:System.Xml.Serialization.XmlArrayAttribute> определяет свойства включающего элемента XML, который создается при сериализации массива. Например, по умолчанию при сериализации массива ниже будет создан элемент XML с именем `Employees`. Элемент `Employees` будет содержать серию элементов, названную в соответствии с типом массива `Employee`.
 
