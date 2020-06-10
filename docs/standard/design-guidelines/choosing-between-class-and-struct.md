@@ -1,5 +1,6 @@
 ---
 title: Выбор между классом и структурой
+description: Узнайте, как определить, следует ли проектировать тип как класс или спроектировать тип как структуру. Узнайте, как ссылочные типы и типы значений отличаются в .NET.
 ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - classes [.NET Framework], vs. structures
 - type design guidelines, classes
 ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
-ms.openlocfilehash: 4b4a619214fe6ba49f21a88cd132dcb3f2704608
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 9d757e77292c1226fbe2328cce082033ae8f7003
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84280365"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662606"
 ---
 # <a name="choosing-between-class-and-struct"></a>Выбор между классом и структурой
 Одним из основных решений по проектированию каждого разработчика инфраструктуры является необходимость разрабатывать тип как класс (ссылочный тип) или как структура (тип значения). Чтобы сделать это, важно понимать различия в поведении ссылочных типов и типов значений.
