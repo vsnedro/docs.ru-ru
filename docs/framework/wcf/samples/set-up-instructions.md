@@ -5,40 +5,40 @@ helpviewer_keywords:
 - WCF Samples [WCF], setup
 - Windows Communication Foundation Samples [WCF], setup
 ms.assetid: 0be7d232-485b-4f6d-9ed0-b4243c907376
-ms.openlocfilehash: fc68759e3057b6a1fd2a2ca4e0bffe81cea5f095
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 4a5a0558a26e938fb06a19f498e541f4d3611bf3
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61967652"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84584159"
 ---
 # <a name="set-up-instructions"></a>Инструкции по установке
-Этот набор разделов описывается, как настроить службы, которые требуются для запуска службы Windows Communication Foundation (WCF).  
+В этом наборе разделов описывается настройка служб, необходимых для запуска службы Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Процедура однократной настройки образцов Windows Communication Foundation](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md)  
- Описание действий по настройке образцов WCF.  
+ [Процедура однократной настройки образцов Windows Communication Foundation](one-time-setup-procedure-for-the-wcf-samples.md)  
+ В этой статье описаны действия по настройке примеров WCF.  
   
- [Инструкции по настройке брандмауэра](../../../../docs/framework/wcf/samples/firewall-instructions.md)  
- Описаны шаги, необходимые для настройки брандмауэра Windows, разрешающее функционирования служб WCF.  
+ [Инструкции брандмауэра](firewall-instructions.md)  
+ Описание действий, необходимых для настройки брандмауэра Windows, чтобы разрешить функционирование служб WCF.  
   
- [Инструкции по размещению в службах IIS](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md)  
+ [Инструкции по размещению в службах IIS](internet-information-service-hosting-instructions.md)  
  Описание действий по настройке служб IIS.  
   
- [Инструкции по установке сертификата сервера в службах IIS](../../../../docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md)  
+ [Инструкции по установке сертификата сервера в службах IIS](iis-server-certificate-installation-instructions.md)  
  Описание процесса установки сертификатов сервера для служб IIS.  
   
- [Инструкции по настройке виртуальных каталогов](../../../../docs/framework/wcf/samples/virtual-directory-setup-instructions.md)  
+ [Инструкции по настройке виртуальных каталогов](virtual-directory-setup-instructions.md)  
  Описание действий по созданию виртуального каталога.  
   
- [Построение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/building-the-samples.md)  
- Описание действий для создания образцов WCF.  
+ [Построение примеров Windows Communication Foundation](building-the-samples.md)  
+ Описываются шаги для создания примеров WCF.  
   
- [Выполнение примеров Windows Communication Foundation](../../../../docs/framework/wcf/samples/running-the-samples.md)  
- Описаны шаги для запуска образцов WCF на одном компьютере или нескольких компьютерах.  
+ [Выполнение примеров Windows Communication Foundation](running-the-samples.md)  
+ Описание действий по запуску примеров WCF на одном и том же компьютере и на разных компьютерах.  
   
- [Установка системы очередей сообщений (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  
+ [Установка системы очередей сообщений (MSMQ)](installing-message-queuing-msmq.md)  
  Описание действий по установке очереди сообщений.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Советы по устранению неполадок для образцов WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))
+ [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))
