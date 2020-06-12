@@ -95,13 +95,13 @@ items:
             displayName: 'tutorials, visual studio code, vs code'
           - name: Публикация приложения
             href: tutorials/publishing-with-visual-studio-code.md
-            displayName: 'tutorials, visual studio, vs'
+            displayName: 'tutorials, visual studio code, vs code'
           - name: Создание библиотеки
             href: tutorials/library-with-visual-studio-code.md
-            displayName: 'tutorials, visual studio, vs'
+            displayName: 'tutorials, visual studio code, vs code'
           - name: Модульное тестирование библиотеки
             href: tutorials/testing-library-with-visual-studio-code.md
-            displayName: 'tutorials, visual studio, vs'
+            displayName: 'tutorials, visual studio code, vs code'
           - name: Установка и использование пакета
             href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
             displayName: 'tutorials, cli'
@@ -111,13 +111,25 @@ items:
       - name: Использование Visual Studio для Mac
         items:
           - name: Создание консольного приложения
-            href: tutorials/using-on-mac-vs.md
-            displayName: tutorials
-          - name: Создание и модульное тестирование библиотеки
-            href: tutorials/using-on-mac-vs-full-solution.md
-            displayName: tutorials
+            href: tutorials/with-visual-studio-mac.md
+            displayName: 'tutorials, visual studio for mac, vs for mac, cli'
+          - name: Отладка приложения
+            href: tutorials/debugging-with-visual-studio-mac.md
+            displayName: 'tutorials, visual studio for mac, vs for mac'
+          - name: Публикация приложения
+            href: tutorials/publishing-with-visual-studio-mac.md
+            displayName: 'tutorials, visual studio for mac, vs for mac'
+          - name: Создание библиотеки
+            href: tutorials/library-with-visual-studio-mac.md
+            displayName: 'tutorials, visual studio for mac, vs for mac'
+          - name: Модульное тестирование библиотеки
+            href: tutorials/testing-library-with-visual-studio-mac.md
+            displayName: 'tutorials, visual studio for mac, vs for mac'
           - name: Установка и использование пакета
             href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+            displayName: 'tutorials, visual studio for mac, vs for mac'
+          - name: Создание и публикация пакета
+            href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
             displayName: tutorials
       - name: Дополнительные разделы
         items:
