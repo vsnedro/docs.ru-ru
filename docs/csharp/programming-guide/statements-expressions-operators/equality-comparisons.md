@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - object equality [C#]
 ms.assetid: 10b865ea-4e7b-4127-9242-c9b8f57d9f04
-ms.openlocfilehash: f09d9891f79eda44c428d5509e341a54ad3a3eee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 46d6881955252b21de6a92e25d65d1f76c8ec06c
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79157108"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241920"
 ---
 # <a name="equality-comparisons-c-programming-guide"></a>Проверка равенства (руководство по программированию на C#)
 
@@ -48,15 +48,15 @@ if (b == a)
 
  Проверка равенства значений с плавающей запятой ([double](../../language-reference/builtin-types/floating-point-numeric-types.md) и [float](../../language-reference/builtin-types/floating-point-numeric-types.md)) представляет проблему из-за неточности арифметических операций с плавающей запятой на двоичных компьютерах. Дополнительные сведения можно найти в заметках в разделе <xref:System.Double?displayProperty=nameWithType>.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Название|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Проверка на равенство ссылок (идентичность)](./how-to-test-for-reference-equality-identity.md)|Описание процедуры проверки равенства ссылок двух переменных.|  
 |[Определение равенства значений для типа](./how-to-define-value-equality-for-a-type.md)|Описание предоставления пользовательского определения равенства значений для типа.|  
-|[Руководство по программированию на C#](../index.md)|Ссылки на подробные сведения о важных элементах языка C#, а также об элементах, доступных в этом языке благодаря .NET Framework.|  
+|[Руководство по программированию на C#](../index.md)|Ссылки на подробные сведения о важных элементах языка C#, а также об элементах, доступных в этом языке благодаря .NET.|  
 |[Типы](../types/index.md)|Сведения о системе типов C# и ссылки на дополнительные сведения.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)

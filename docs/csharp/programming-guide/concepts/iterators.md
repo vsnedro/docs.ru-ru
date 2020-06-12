@@ -2,12 +2,12 @@
 title: Итерации по коллекциям в C#
 ms.date: 08/14/2018
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
-ms.openlocfilehash: aceedd11466c75cedad3c67224c3a5595b4cabfa
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 15b77fd11c0ff606119425ec7aae8e7127315e82
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77626274"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84240698"
 ---
 # <a name="iterators-c"></a>Итераторы (C#)
 
@@ -350,7 +350,7 @@ public class Stack<T> : IEnumerable<T>
 
 - Изменение последовательности списков после первой итерации цикла `foreach`.
 
-- Если необходимо избежать полной загрузки большого списка перед первой итерацией цикла `foreach`. Пример: при постраничной загрузке пакета строк таблицы. Другой пример — метод <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>, реализующий итераторы в .NET Framework.
+- Если необходимо избежать полной загрузки большого списка перед первой итерацией цикла `foreach`. Пример: при постраничной загрузке пакета строк таблицы. Другой пример — метод <xref:System.IO.DirectoryInfo.EnumerateFiles%2A>, реализующий итераторы в .NET.
 
 - Инкапсулирование построения списка в итераторе. В методе итератора можно построить список, а затем выдавать каждый результат в цикле.
 

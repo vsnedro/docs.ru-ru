@@ -8,12 +8,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: e4ef8c12f3e52faa7cf09058a98abae65b0dcfce
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 745fb2af332afa278c78ec9baeea7230fe725c02
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84005121"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241502"
 ---
 # <a name="tutorial-publish-a-net-core-console-application-with-visual-studio"></a>Учебник. Публикация консольного приложения .NET Core в Visual Studio
 
@@ -59,25 +59,25 @@ ms.locfileid: "84005121"
 
    Как показано на рисунке, опубликованные выходные данные включают следующие файлы:
 
-      * *HelloWorld.deps.json*
+   * *HelloWorld.deps.json*
 
-         Это файл зависимостей среды выполнения приложения. Он определяет библиотеки и компоненты .NET Core (включая библиотеку DLL, содержащую приложение), необходимые для запуска приложения. Дополнительные сведения см. в разделе [Runtime Configuration Files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md) (Файлы конфигурации среды выполнения).
+      Это файл зависимостей среды выполнения приложения. Он определяет библиотеки и компоненты .NET Core (включая библиотеку DLL, содержащую приложение), необходимые для запуска приложения. Дополнительные сведения см. в разделе [Runtime Configuration Files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md) (Файлы конфигурации среды выполнения).
 
-      * *HelloWorld.dll*
+   * *HelloWorld.dll*
 
-         Это версия [зависимого от платформы развертывания](../deploying/deploy-with-cli.md#framework-dependent-deployment) приложения. Чтобы выполнить эту библиотеку динамической компоновки, введите `dotnet HelloWorld.dll` в командной строке.
+      Это версия [зависимого от платформы развертывания](../deploying/deploy-with-cli.md#framework-dependent-deployment) приложения. Чтобы выполнить эту библиотеку динамической компоновки, введите `dotnet HelloWorld.dll` в командной строке. Этот метод запуска приложения работает на любой платформе, где установлена среда выполнения .NET Core.
 
-      * *HelloWorld.exe*
+   * *HelloWorld.exe*
 
-         Это версия [исполняемого, зависящего от платформы файла](../deploying/deploy-with-cli.md#framework-dependent-executable) приложения. Чтобы запустить его, введите `HelloWorld.exe` в командной строке.
+      Это версия [исполняемого, зависящего от платформы файла](../deploying/deploy-with-cli.md#framework-dependent-executable) приложения. Чтобы запустить его, введите `HelloWorld.exe` в командной строке. Файл зависит от операционной системы.
 
-      * *HelloWorld.pdb* (необязателен для развертывания)
+   * *HelloWorld.pdb* (необязателен для развертывания)
 
-         Это файл отладочных символов. Этот файл не нужно распространять вместе с приложением, но желательно сохранить его на случай, если придется выполнять отладку опубликованной версии приложения.
+      Это файл отладочных символов. Этот файл не нужно распространять вместе с приложением, но желательно сохранить его на случай, если придется выполнять отладку опубликованной версии приложения.
 
-      * *HelloWorld.runtimeconfig.json*
+   * *HelloWorld.runtimeconfig.json*
 
-         Это файл конфигурации среды выполнения для приложения. Он определяет версию платформы .NET Core, для которой предназначено приложение. Кроме того, в него можно добавить параметры конфигурации. Дополнительные сведения см. в статье [Параметры конфигурации среды выполнения .NET Core](../run-time-config/index.md#runtimeconfigjson).
+      Это файл конфигурации среды выполнения для приложения. Он определяет версию платформы .NET Core, для которой предназначено приложение. Кроме того, в него можно добавить параметры конфигурации. Дополнительные сведения см. в статье [Параметры конфигурации среды выполнения .NET Core](../run-time-config/index.md#runtimeconfigjson).
 
 ## <a name="run-the-published-app"></a>Запуск опубликованного приложения
 
@@ -91,13 +91,13 @@ ms.locfileid: "84005121"
 
 1. Запустите приложение с помощью исполняемого файла:
 
-   1. Введите `HelloWorld.exe` и нажмите клавишу ВВОД.
+   1. Введите `HelloWorld.exe` и нажмите клавишу <kbd>ВВОД</kbd>.
 
    1. В ответ на запрос введите имя и нажмите любую клавишу, чтобы выйти.
 
 1. Запустите приложение с помощью команды `dotnet`:
 
-   1. Введите `dotnet HelloWorld.dll` и нажмите клавишу ВВОД.
+   1. Введите `dotnet HelloWorld.dll` и нажмите клавишу <kbd>ВВОД</kbd>.
 
    1. В ответ на запрос введите имя и нажмите любую клавишу, чтобы выйти.
 

@@ -3,18 +3,18 @@ title: Использование dotnet-svcutil.xmlserializer
 description: Узнайте, как использовать пакет NuGet `dotnet-svcutil.xmlserializer`, чтобы предварительно генерировать сборку сериализации для проектов .NET Core.
 author: huanwu
 ms.date: 11/27/2018
-ms.openlocfilehash: 4811647c294118cb160d25805e7d3ada97f071f9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 14bb2e8a85ec35f08b0a83b9734a64d751074f1b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75344901"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84284329"
 ---
 # <a name="using-dotnet-svcutilxmlserializer-on-net-core"></a>Использование dotnet-svcutil.xmlserializer в .NET Core
 
 Пакет NuGet `dotnet-svcutil.xmlserializer` может предварительно генерировать сборку сериализации для проектов .NET Core. Он предварительно генерирует код сериализации C# для типов в клиентском приложении, которые используются в контракте службы WCF и которые можно сериализовать с помощью XmlSerializer. Это улучшает начальную производительность сериализации XML при сериализации или десериализации объектов этих типов.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 * [пакет SDK для .NET Core 2.1](https://dotnet.microsoft.com/download) или более поздней версии;
 * Любой редактор кода
@@ -98,4 +98,4 @@ ms.locfileid: "75344901"
 
 6. Выполните сборку приложения с помощью команды `dotnet build`. Если все пройдет успешно, в папке выходных данных генерируется сборка с именем *MyWCFClient.XmlSerializers.dll*. В выходных данных сборки будут отображаться предупреждения, если создание сборки средством завершилось сбоем.
 
-7. Например, перейдя к `http://localhost:2561/Service1.svc` в браузере, запустите службу WCF. Затем запустите клиентское приложение,которое будет автоматически загружать и использовать предварительно созданные сериализаторы в среде выполнения.
+7. Например, перейдя к `http://localhost:2561/Service1.svc` в браузере, запустите службу WCF. Затем запустите клиентское приложение, которое будет автоматически загружать и использовать предварительно созданные сериализаторы во время выполнения.

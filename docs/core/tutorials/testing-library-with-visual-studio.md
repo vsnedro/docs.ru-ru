@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 79b680022484bb9222b66c3df76bdd5a06de8117
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 48ada77b8422030fd93aa29df1df50a3ae5104fe
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84005015"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84283511"
 ---
 # <a name="tutorial-test-a-net-standard-library-with-net-core-in-visual-studio"></a>Учебник. Тестирование библиотеки .NET Standard с помощью .NET Core в Visual Studio
 
@@ -109,8 +109,8 @@ ms.locfileid: "84005015"
 
 1. В окне кода *UnitTest1.cs* или *UnitTest1.vb* замените отображаемый код на следующий текст:
 
-   [!code-csharp[Test#1](~/samples/snippets/csharp/getting_started/with_visual_studio_2017/testlib1.cs)]
-   [!code-vb[Test#1](~/samples/snippets/core/tutorials/vb-library-with-visual-studio/testlib.vb)]
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/UnitTest1.cs":::
+   :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibraryTest/UnitTest1.vb":::
 
    Тест на символы верхнего регистра в методе `TestStartsWithUpper` включает заглавную греческую букву "альфа" (U+0391) и заглавную кириллическую букву "М" (U+041C). Тест на символы нижнего регистра в методе `TestDoesNotStartWithUpper` включает строчную греческую букву "альфа" (U+03B1) и строчную кириллическую букву "г" (U+0433).
 
@@ -135,7 +135,7 @@ ms.locfileid: "84005015"
 
 ## <a name="handle-test-failures"></a>Обработка сбоев теста
 
-Тестовый запуск прошел без ошибок, а теперь давайте немного изменим его, чтобы один из методов теста завершался сбоем:
+Выполняя разработку на основе тестирования (TDD), вы сначала пишете тесты, и они завершаются сбоем при первом запуске. Затем вы добавляете код в приложение, и тест успешно выполняется. В этом случае тест был создан после написания кода приложения для его проверки, поэтому тест был пройден. Чтобы проверить, завершается ли тест ошибкой, как и ожидается, добавьте недопустимое значение во входные данные теста.
 
 1. Измените массив `words` в методе `TestDoesNotStartWithUpper`, включив в него строку "Error". Сохранять файл не требуется, поскольку при сборке решения для выполнения тестов Visual Studio автоматически сохраняет открытые файлы.
 

@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: b427954fe0026e6ac96d3bbce2b70b5c44e884e0
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 1190ecb75e83c9930c60726e7cd83203b11928cb
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84005379"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84283940"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -134,7 +134,7 @@ dotnet test -h|--help
 
 - **`-s|--settings <SETTINGS_FILE>`**
 
-  Файл `.runsettings`, который необходимо использовать для проведения тестов. Обратите внимание, что элемент `TargetPlatform` (x86|x64) не влияет на `dotnet test`. Чтобы запускать тесты для x86, установите версию .NET Core x86. Разрядность *dotnet.exe* в пути будет использоваться для выполнения тестов. Дополнительные сведения см. в следующих ресурсах:
+  Файл `.runsettings`, который необходимо использовать для проведения тестов. Элемент `TargetPlatform` (x86|x64) не влияет на `dotnet test`. Чтобы запускать тесты для x86, установите версию .NET Core x86. Разрядность *dotnet.exe* в пути будет использоваться для выполнения тестов. Дополнительные сведения см. в следующих ресурсах:
 
   - [Настройка модульных тестов с помощью файла `.runsettings`.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
   - [Настройка тестового запуска](https://github.com/Microsoft/vstest-docs/blob/master/docs/configure.md)

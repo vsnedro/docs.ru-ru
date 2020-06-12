@@ -3,16 +3,16 @@ title: Организация и тестирование проектов с п
 description: В этом учебнике объясняется, как упорядочить и протестировать проекты .NET Core из командной строки.
 author: cartermp
 ms.date: 09/10/2018
-ms.openlocfilehash: 0d61e0fc004cfcb6d78c49475c7b7f0f523aad2c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 58c78c0f11ab1b275e4e4d05bf1da32562333c91
+ms.sourcegitcommit: 0a798a7e9680e2d0a5a81a3eaa203870ea782883
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78239915"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84325949"
 ---
 # <a name="organizing-and-testing-projects-with-the-net-core-cli"></a>Организация и тестирование проектов с помощью .NET Core CLI
 
-В этом руководстве мы продолжаем разрабатывать приложение, описанное в статье [Начало работы с .NET Core в Windows, Linux и Mac OS с помощью командной строки](cli-create-console-app.md), и переходим от простых консольных приложений к более сложным и структурированным приложениям. В этом руководстве будет описано, как упорядочить код с помощью папок и расширить консольное приложение с помощью платформы тестирования [xUnit](https://xunit.github.io/).
+Это руководство служит продолжением документа [Учебник. Создание консольного приложения с помощью .NET Core в Visual Studio Code](with-visual-studio-code.md), и с его помощью мы переходим от создания простых консольных приложений к разработке более сложных и структурированных приложений. В этом руководстве будет описано, как упорядочить код с помощью папок и расширить консольное приложение с помощью платформы тестирования [xUnit](https://xunit.github.io/).
 
 ## <a name="using-folders-to-organize-code"></a>Упорядочение кода с помощью папок
 

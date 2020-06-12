@@ -1,65 +1,58 @@
 ---
 title: Руководство по программированию на C#. Одномерные массивы
-ms.date: 07/20/2015
+ms.date: 06/03/2020
 helpviewer_keywords:
 - single-dimensional arrays [C#]
 - arrays [C#], single-dimensional
 ms.assetid: 2cec1196-1de0-49d2-baf2-c607c33310e8
-ms.openlocfilehash: bd4ab53a9cb53e5cf636601bff5ac64a10a310a6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e189253eedc21fa2d51e16407f04b034610bb57b
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79170355"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84410248"
 ---
 # <a name="single-dimensional-arrays-c-programming-guide"></a>Одномерные массивы (Руководство по программированию на C#)
 
-Вы можете объявить одномерный массив, содержащий пять целых чисел, как показано в следующем примере:  
-  
- [!code-csharp[csProgGuideArrays#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#4)]  
-  
- Этот массив содержит элементы с `array[0]` по `array[4]`. С помощью оператора [new](../../language-reference/operators/new-operator.md) можно создать массив и инициализировать его элементы, используя значения по умолчанию. В этом примере при инициализации всем элементам массива присваиваются нулевые значения.  
-  
- Таким же образом можно объявить массив, в котором хранятся строковые элементы. Пример:  
-  
- [!code-csharp[csProgGuideArrays#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#5)]  
-  
+Для создания одномерного массива используется оператор [new](../../language-reference/operators/new-operator.md) и указывается тип элементов массива и число элементов. В следующем примере показано объявление массива, содержащего пять целых чисел:
+
+:::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="IntDeclaration":::
+
+Этот массив содержит элементы с `array[0]` по `array[4]`. Элементы массива элементы инициализируются до значения по умолчанию для типа элемента. Для целых чисел это `0`.
+
+Массивы могут хранить любой указанный тип элемента. Например, в следующем примере приводится объявление массива строк:
+
+:::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="StringDeclaration":::
+
 ## <a name="array-initialization"></a>Инициализация массива
 
- Массив можно инициализировать при объявлении. В этом случае не требуется спецификатор длины, поскольку он уже задан по числу элементов в списке инициализации. Пример:  
-  
- [!code-csharp[csProgGuideArrays#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#6)]  
-  
- Массив строк можно инициализировать таким же образом. Ниже приведено объявление массива строк, где каждый элемент массива инициализируется с использованием названия дня:  
+Элементы массива можно инициализировать при объявлении. В этом случае не требуется спецификатор длины, поскольку он уже задан по числу элементов в списке инициализации. Пример:
 
- ```csharp
- string[] weekDays = new string[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
- ```
+:::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="IntInitialization":::
+
+Ниже приведено объявление массива строк, где каждый элемент массива инициализируется с использованием названия дня:
+
+:::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="StringInitialization":::
   
- Если массив инициализируется при объявлении, вы можете использовать следующие сочетания клавиш:  
-  
- [!code-csharp[csProgGuideArrays#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#8)]  
-  
- Переменную массива можно объявить без инициализации, однако при присвоении массива этой переменной необходимо использовать оператор `new`. Пример:  
-  
- [!code-csharp[csProgGuideArrays#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#9)]  
-  
- В C# 3.0 представлены неявно типизированные массивы. Дополнительные сведения см. в разделе [Неявно типизированные массивы](./implicitly-typed-arrays.md).  
-  
+Если массив инициализируется при объявлении, можно не использовать выражение `new` и тип массива, как показано в следующем коде. Такой массив называется [неявно типизированным](implicitly-typed-arrays.md):
+
+:::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="ShorthandInitialization":::
+
+Переменную массива можно объявить без ее создания, но при присвоении нового массива этой переменной необходимо использовать оператор `new`. Пример:
+
+:::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="DeclareAllocate":::
+
 ## <a name="value-type-and-reference-type-arrays"></a>Массивы типов значений и ссылочных типов
 
- Рассмотрим следующее объявление массива:  
+Рассмотрим следующее объявление массива:  
+
+:::code language="csharp" source="snippets/SingleDimensionArrays.cs" id="FinalInstantiation":::
+
+Результат этого оператора зависит от того, является ли `SomeType` типом значения или ссылочным типом. Если это тип значения, оператор создает массив из 10 элементов, каждый из которых имеет тип `SomeType`. Если `SomeType` является ссылочным типом, этот оператор создает массив из 10 элементов, каждый из которых инициализируется с использованием ссылки NULL. В обоих случаях элементы инициализируются до значения по умолчанию для типа элемента. См. дополнительные сведения о [типах значений](../../language-reference/builtin-types/value-types.md) и [ссылочных типах](../../language-reference/keywords/reference-types.md).
   
- [!code-csharp[csProgGuideArrays#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#10)]  
-  
- Результат этого оператора зависит от того, является ли `SomeType` типом значения или ссылочным типом. Если это тип значения, оператор создает массив из 10 элементов, каждый из которых имеет тип `SomeType`. Если `SomeType` является ссылочным типом, этот оператор создает массив из 10 элементов, каждый из которых инициализируется с использованием ссылки NULL.  
-  
-См. дополнительные сведения о [типах значений](../../language-reference/builtin-types/value-types.md) и [ссылочных типах](../../language-reference/keywords/reference-types.md).
-  
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Array>
-- [Руководство по программированию на C#](../index.md)
 - [Массивы](./index.md)
 - [Многомерные массивы](./multidimensional-arrays.md)
 - [Массивы массивов](./jagged-arrays.md)

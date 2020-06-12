@@ -2,12 +2,12 @@
 title: Обработка повторного входа в асинхронных приложениях (C#)
 ms.date: 07/20/2015
 ms.assetid: 47c5075e-c448-45ce-9155-ed4e7e98c677
-ms.openlocfilehash: d46a87ed2200dc92b8e3d23be80306a31a01e501
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: e03e0f6ecd8e74dd8518f84ec03c76c1ef5b9ee6
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738307"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241816"
 ---
 # <a name="handling-reentrancy-in-async-apps-c"></a>Обработка повторного входа в асинхронных приложениях (C#)
 
@@ -536,7 +536,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
     TOTAL bytes returned:  915908
     ```
 
-- Задача `pendingWork` имеет значение NULL при запуске метода `FinishOneGroupAsync` только для группы A, которая запускается первой. Группа A еще не завершила выражение await, когда она достигает метода `FinishOneGroupAsync`. Таким образом, управление не возвращается `AccessTheWebAsync`, а первое присваивание задаче `pendingWork` не возникает.
+- Задача `pendingWork` имеет значение NULL при запуске метода `FinishOneGroupAsync` только для группы A, которая запускается первой. Группа A еще не завершила выражение await, когда она достигнет метода `FinishOneGroupAsync`. Таким образом, управление не возвращается `AccessTheWebAsync`, а первое присваивание задаче `pendingWork` не возникает.
 
 - Следующие две строки всегда отображаются в выходных данных вместе. Код не прерывается нигде между запуском операции группы в обработчике `StartButton_Click` и назначением задачи для группы в `pendingWork`.
 
@@ -584,13 +584,13 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
 
 4. В списке типов проектов выберите **Приложение WPF**.
 
-5. Присвойте проекту имя `WebsiteDownloadWPF`, выберите .NET Framework версии 4.6 или более поздней, а затем нажмите кнопку **ОК**.
+5. Присвойте проекту имя `WebsiteDownloadWPF`, выберите .NET Framework версии 4.6 или более поздней, а затем нажмите кнопку **ОК**.
 
      В **обозревателе решений** появится новый проект.
 
 6. В редакторе кода Visual Studio перейдите на вкладку **MainWindow.xaml** .
 
-     Если вкладка не отображается, откройте контекстное меню для MainWindow.xaml в **обозревателе решений** и выберите пункт **Просмотреть код**.
+     Если вкладка не отображается, откройте контекстное меню для MainWindow.xaml в **Обозревателе решений**и выберите пункт **Просмотреть код**.
 
 7. Замените код в представлении **XAML** файла MainWindow.xaml на следующий.
 

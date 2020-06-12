@@ -12,12 +12,12 @@ helpviewer_keywords:
 - case statement [C#]
 - default keyword [C#]
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-ms.openlocfilehash: 49b3836f17e91ae8de10d68e97fd662aae80d1ff
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: a4e6f8e43c2ec8c867af9f78bd83b435b78c73d5
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249322"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84446767"
 ---
 # <a name="switch-c-reference"></a>switch (справочник по C#)
 
@@ -61,7 +61,7 @@ ms.locfileid: "80249322"
 
 [!code-csharp[switch#2](~/samples/snippets/csharp/language-reference/keywords/switch/switch2.cs#1)]
 
-Выполняет только раздел switch в операторе switch. C# не позволяет продолжить выполнение следующего раздела switch после выполнения предыдущего. Поэтому, например, следующий код вызовет ошибку компиляции CS0163: "Управление не может передаваться вниз от одной метки case (\<метка case>) к другой".
+Выполняет только раздел switch в операторе switch. C# не позволяет продолжить выполнение следующего раздела switch после выполнения предыдущего. Поэтому, например, следующий код вызовет ошибку компиляции CS0163: "Управление не может передаваться вниз от одной метки case к другой (\<case label>)".
 
 ```csharp
 switch (caseSwitch)
@@ -108,7 +108,7 @@ switch (caseSwitch)
 
 Метка case `default` может отображаться в операторе `switch` в любом порядке. Она всегда оценивается после оценки всех меток `case`, независимо от их порядка.
 
-## <a name="pattern-matching-with-the-switch-statement"></a>Сопоставление шаблонов <a name="pattern" /> с оператором `switch`
+## <a name="pattern-matching-with-the-switch-statement"></a><a name="pattern"></a> Сопоставление шаблонов с оператором `switch`
 
 Каждый оператор `case` определяет шаблон, который в случае совпадения с выражением соответствия вызывает выполнение входящего в него раздела switch. Шаблон константы поддерживают все версии C#. Остальные шаблоны поддерживаются начиная с C# 7.0.
 

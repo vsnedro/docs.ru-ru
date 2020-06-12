@@ -12,14 +12,14 @@ helpviewer_keywords:
 - cross-references [C#], tags
 - <seealso> C# XML tag
 ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
-ms.openlocfilehash: e24d5910ab21f01aebb5a32ce7646cf56886a81a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1b801ac1b5a0a59d97ccc35ec78930d99223e846
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77093465"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287224"
 ---
-# <a name="seealso-c-programming-guide"></a>Руководство по программированию на C#. \<seealso>
+# <a name="seealso-c-programming-guide"></a>\<seealso> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,17 +35,17 @@ ms.locfileid: "77093465"
 
   Сведения о создании ссылки cref на универсальный тип см. в статье об [атрибуте cref](./cref-attribute.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Кроме того, с помощью тега \<seealso> можно указать текст, который должен отображаться в разделе "См. также". Тег [\<see>](./see.md) позволяет задать ссылку из текста.
+С помощью тега `<seealso>` можно указать текст, который должен отображаться в разделе "См. также". Тег [\<see>](./see.md) позволяет задать ссылку из текста.
 
 Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
 
 ## <a name="example"></a>Пример
 
-В разделе [\<summary>](./summary.md) можно найти пример использования тега \<seealso>.
+См. [\<summary>](./summary.md) с примером использования \<seealso>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)

@@ -3,12 +3,12 @@ title: Средство удаления
 description: Обзор средства удаления .NET Core — интерактивного средства, позволяющего управлять очисткой пакетов SDK и сред выполнения .NET Core.
 author: sfoslund
 ms.date: 05/27/2020
-ms.openlocfilehash: 1ad31cd42d8f8f87e3501b422fc4298c643e2067
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 4e70fd3438b582bd5a0d6a52d7e58ed5e07f8811
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144517"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84446910"
 ---
 # <a name="net-core-uninstall-tool"></a>Средство удаления .NET Core
 
@@ -157,11 +157,11 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
   Удаляет все пакеты SDK и среды выполнения .NET Core.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Удаляет только пакеты SDK и среды .NET Core, версия которых вышла раньше, чем указанная. Указанная версия не удаляется.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Удаляет все пакеты SDK и среды выполнения .NET Core, за исключением указанных версий.
 
@@ -227,11 +227,11 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
   Удаляет все пакеты SDK и среды выполнения .NET Core.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Удаляет пакеты SDK и среды выполнения .NET Core, версия которых вышла ранее, чем указанная. Указанная версия не будет удалена.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Удаляет пакеты SDK и среды выполнения .NET Core, за исключением указанных версий.
 
@@ -337,11 +337,11 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
   Удаляет все пакеты SDK и среды выполнения .NET Core.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Удаляет только пакеты SDK и среды .NET Core, версия которых вышла раньше, чем указанная. Указанная версия не удаляется.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Удаляет все пакеты SDK и среды выполнения .NET Core, за исключением указанных версий.
 
@@ -367,7 +367,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 * **`--hosting-bundle`**
 
-  Удаляет только среду выполнения и пакеты размещения .NET Core.
+  Удаляет только пакеты размещения .NET Core.
 
 * **`--major-minor <MAJOR_MINOR>`**
 
@@ -409,11 +409,11 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
   Удаляет все пакеты SDK и среды выполнения .NET Core.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Удаляет пакеты SDK и среды выполнения .NET Core, версия которых вышла ранее, чем указанная. Указанная версия не будет удалена.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Удаляет пакеты SDK и среды выполнения .NET Core, за исключением указанных версий.
 

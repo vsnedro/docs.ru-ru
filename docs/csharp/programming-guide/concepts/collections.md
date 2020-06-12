@@ -2,12 +2,12 @@
 title: Коллекции (C#)
 ms.date: 07/20/2015
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
-ms.openlocfilehash: 30aa3e34f362f34fc601f90ee61613acd6e4bc68
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: ecab30d50be58f810246e58e637b331d492e4a47
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84201133"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241400"
 ---
 # <a name="collections-c"></a>Коллекции (C#)
 
@@ -182,7 +182,7 @@ public class Galaxy
 
 ## <a name="kinds-of-collections"></a>Виды коллекций
 
-Многие типовые коллекции предоставляются платформой .NET Framework. Каждый тип коллекции предназначен для определенной цели.
+Многие типовые коллекции предоставляются платформой .NET. Каждый тип коллекции предназначен для определенной цели.
 
 В этом разделе описываются следующие часто используемые классы коллекций:
 
@@ -214,7 +214,7 @@ public class Galaxy
 
 ### <a name="systemcollectionsconcurrent-classes"></a>Классы System.Collections.Concurrent
 
-В .NET Framework 4 или более поздней версии коллекции пространства имен <xref:System.Collections.Concurrent> предоставляют эффективные потокобезопасные операции для доступа к элементам коллекции из нескольких потоков.
+В .NET Framework 4 или более поздних версиях коллекции пространства имен <xref:System.Collections.Concurrent> предоставляют эффективные потокобезопасные операции для доступа к элементам коллекции из нескольких потоков.
 
 Классы пространства имен <xref:System.Collections.Concurrent> следует использовать вместо соответствующих типов пространств имен <xref:System.Collections.Generic?displayProperty=nameWithType> и <xref:System.Collections?displayProperty=nameWithType>, если несколько потоков параллельно обращаются к такой коллекции. Дополнительные сведения см. в статьях [Потокобезопасные коллекции](../../../standard/collections/thread-safe/index.md) и <xref:System.Collections.Concurrent>.
 
@@ -482,7 +482,7 @@ public class Car : IComparable<Car>
 
 Вы можете определить коллекцию, реализовав интерфейс <xref:System.Collections.Generic.IEnumerable%601> или <xref:System.Collections.IEnumerable>.
 
-Хотя можно определить настраиваемую коллекцию, обычно лучше использовать коллекции, входящие в .NET Framework, которые описаны в подразделе [Виды коллекций](#BKMK_KindsOfCollections) ранее в этом разделе.
+Хотя можно определить настраиваемую коллекцию, обычно лучше использовать коллекции, входящие в .NET, которые описаны в разделе [Виды коллекций](#BKMK_KindsOfCollections) ранее в этой статье.
 
 В приведенном ниже примере определяется настраиваемый класс коллекции с именем `AllColors`. Этот класс реализует интерфейс <xref:System.Collections.IEnumerable>, который требует реализации метода <xref:System.Collections.IEnumerable.GetEnumerator%2A>.
 

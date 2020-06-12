@@ -1,15 +1,15 @@
 ---
 title: Справочник по C#. Оператор using
-ms.date: 04/07/2020
+ms.date: 05/29/2020
 helpviewer_keywords:
 - using statement [C#]
 ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3
-ms.openlocfilehash: 3c479faeeb66865b8c368edba881429a7cb956ec
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.openlocfilehash: b889d2fcbdf854dbe8948744810f9b74e9f0dac2
+ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82199681"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84307050"
 ---
 # <a name="using-statement-c-reference"></a>Оператор using (справочник по C#)
 
@@ -29,7 +29,7 @@ ms.locfileid: "82199681"
 
 <xref:System.IO.File> и <xref:System.Drawing.Font> представляют собой примеры управляемых типов, которые обращаются к неуправляемым ресурсам (в данном случае это обработчики файлов и контексты устройств). Существуют и многие другие виды неуправляемых ресурсов и типов библиотек классов, которые их инкапсулируют. Все эти типы должны реализовывать интерфейс <xref:System.IDisposable> или интерфейс <xref:System.IAsyncDisposable>.
 
-Когда время существования объекта `IDisposable` ограничено одним методом, необходимо объявить его и создать его экземпляр в операторе `using`. Оператор `using` правильно вызывает метод <xref:System.IDisposable.Dispose%2A> для объектов, а также (если он используется, как показано выше) становится причиной выхода объекта из области действия, как только вызывается метод <xref:System.IDisposable.Dispose%2A>. В блоке `using` объект доступен только для чтения, и изменить или переназначить его невозможно. Если объект реализует `IAsyncDisposable` вместо `IDisposable`, то инструкция `using` вызывает <xref:System.IAsyncDisposable.DisposeAsync%2A> и `awaits`, возвращенный <xref:System.Threading.Tasks.Task>.
+Когда время существования объекта `IDisposable` ограничено одним методом, необходимо объявить его и создать его экземпляр в операторе `using`. Оператор `using` правильно вызывает метод <xref:System.IDisposable.Dispose%2A> для объектов, а также (если он используется, как показано выше) становится причиной выхода объекта из области действия, как только вызывается метод <xref:System.IDisposable.Dispose%2A>. В блоке `using` объект доступен только для чтения, и изменить или переназначить его невозможно. Если объект реализует `IAsyncDisposable` вместо `IDisposable`, то инструкция `using` вызывает <xref:System.IAsyncDisposable.DisposeAsync%2A> и `awaits`, возвращенный <xref:System.Threading.Tasks.ValueTask>. Дополнительные сведения о <xref:System.IAsyncDisposable> см. в статье [Реализация метода DisposeAsync](../../../standard/garbage-collection/implementing-disposeasync.md).
 
 Использование инструкции `using` обеспечивает вызов <xref:System.IDisposable.Dispose%2A> (или <xref:System.IAsyncDisposable.DisposeAsync%2A>), даже если в блоке `using` возникает исключение. Тот же результат можно получить, поместив объект в блок `try`, а затем вызвав <xref:System.IDisposable.Dispose%2A> (или <xref:System.IAsyncDisposable.DisposeAsync%2A>) в блоке `finally`; фактически компилятор переводит инструкцию `using` именно так. Во время компиляции представленный выше код разворачивается в следующий (обратите внимание на дополнительные фигурные скобки, создающие ограниченную область действия для объекта):
 

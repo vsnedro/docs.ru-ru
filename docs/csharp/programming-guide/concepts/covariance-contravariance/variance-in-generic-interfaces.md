@@ -2,12 +2,12 @@
 title: Вариативность в универсальных интерфейсах (C#)
 ms.date: 06/06/2019
 ms.assetid: 4828a8f9-48c0-4128-9749-7fcd6bf19a06
-ms.openlocfilehash: 2020ea54734724de775192a1a438413a73003d17
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ea5d3d35bc9ee438263707efd16829b6217a1968
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169666"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241335"
 ---
 # <a name="variance-in-generic-interfaces-c"></a>Вариативность в универсальных интерфейсах (C#)
 
@@ -42,7 +42,7 @@ IEnumerable<String> strings = new List<String>();
 IEnumerable<Object> objects = strings;
 ```
 
-В более ранних версиях .NET Framework этот код приводил к ошибке компиляции в C#, если в Visual Basic было включено `Option Strict`. Но теперь можно использовать `strings` вместо `objects`, как показано в предыдущем примере, поскольку интерфейс <xref:System.Collections.Generic.IEnumerable%601> является ковариантным.
+В более ранних версиях .NET Framework этот код приводил к ошибке компиляции в C#, если в Visual Basic был включен оператор `Option Strict`. Но теперь можно использовать `strings` вместо `objects`, как показано в предыдущем примере, поскольку интерфейс <xref:System.Collections.Generic.IEnumerable%601> является ковариантным.
 
 Контравариантность позволяет методу иметь типы аргументов, степень наследования которых меньше, чем указано в параметре универсального типа интерфейса. Чтобы продемонстрировать функцию контравариантности, предположим, что создан класса `BaseComparer` для сравнения экземпляров класса `BaseClass`. Класс `BaseComparer` реализует интерфейс `IEqualityComparer<BaseClass>`. Поскольку теперь интерфейс <xref:System.Collections.Generic.IEqualityComparer%601> является контравариантным, для сравнения экземпляров классов, наследующих класс `BaseClass`, можно использовать класс `BaseComparer`. Это показано в следующем примере кода.
 
@@ -98,7 +98,7 @@ IEnumerable<int> integers = new List<int>();
 IEnumerable<Object> listObjects = new List<String>();
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование вариативности в интерфейсах для универсальных коллекций (C#)](./using-variance-in-interfaces-for-generic-collections.md)
 - [Создание вариантных универсальных интерфейсов (C#)](./creating-variant-generic-interfaces.md)

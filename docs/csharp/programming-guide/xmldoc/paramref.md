@@ -8,14 +8,14 @@ helpviewer_keywords:
 - <paramref> C# XML tag
 - paramref C# XML tag
 ms.assetid: 756c24c1-f591-40e8-a838-559761539b0b
-ms.openlocfilehash: 12df257271369dc7f0a5c066b712a8d8e6c38761
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f3b521d24c8b4677a05b0b145cb36c31b2793f2
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76793406"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287315"
 ---
-# <a name="paramref-c-programming-guide"></a>Руководство по программированию на C#. \<paramref>
+# <a name="paramref-c-programming-guide"></a>\<paramref> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,9 +29,9 @@ ms.locfileid: "76793406"
 
   Имя параметра, на который указывается ссылка. Имя заключается в двойные кавычки (" ").
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Тег \<paramref> позволяет указать, что слово в комментариях к коду, например в блоке \<summary> или \<remarks>, ссылается на параметр. В XML-файл такое слово может выделяться особым образом, например курсивом или полужирным шрифтом.
+Тег `<paramref>` позволяет указать, что слово в комментариях к коду, например в блоке `<summary>` или `<remarks>`, ссылается на параметр. В XML-файл такое слово может выделяться особым образом, например курсивом или полужирным шрифтом.
 
 Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
 
@@ -39,7 +39,7 @@ ms.locfileid: "76793406"
 
 [!code-csharp[csProgGuideDocComments#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#7)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)

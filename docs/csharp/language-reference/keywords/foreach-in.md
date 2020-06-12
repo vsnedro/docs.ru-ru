@@ -1,6 +1,6 @@
 ---
 title: Оператор foreach в C#
-ms.date: 05/17/2019
+ms.date: 06/03/2020
 f1_keywords:
 - foreach
 - foreach_CSharpKeyword
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - foreach statement [C#]
 - in keyword [C#]
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
-ms.openlocfilehash: 188d909fd33b14755d9b121953b1fa434ecf536d
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: 1645a246c9feee2a92c0d4e4bbeda47f0afde7d9
+ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738818"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84401892"
 ---
 # <a name="foreach-in-c-reference"></a>foreach, in (справочник по C#)
 
@@ -22,6 +22,18 @@ ms.locfileid: "81738818"
 
 - включает открытый метод `GetEnumerator` без параметров со следующим типом возвращаемого значения: класс, структура или тип интерфейса;
 - тип возвращаемого значения метода `GetEnumerator` должен содержать открытое свойство `Current` и открытый метод `MoveNext` без параметров с типом возвращаемого значения <xref:System.Boolean>.
+
+В большинстве случаев `foreach` выполняет итерацию по выражению `IEnumerable<T>`, в котором каждый элемент имеет тип `T`. Однако элементы могут быть любого типа, который имеет явное или неявное преобразование из типа свойства `Current`. Если свойство `Current` возвращает `SomeType`, тип элементов может быть следующим:
+
+- базовые классы класса `SomeType`;
+- интерфейсы, реализованные с помощью класса `SomeType`.
+
+Кроме того, если `SomeType` является `class` или `interface`, а не `sealed`, то тип элементов может включать:
+
+- любой тип, производный от `SomeType`;
+- любой произвольный интерфейс. Разрешен любой интерфейс, так как он может быть реализован классом, производным от `SomeType` или реализующим этот класс.
+
+Переменную итерации можно объявить с помощью любого типа, который соответствует предыдущим правилам. Если для преобразования из `SomeType` в тип переменной итерации требуется явное приведение, эта операция может вызвать исключение <xref:System.InvalidCastException> при сбое преобразования.
 
 Начиная с версии C# 7.3, если свойство перечислителя `Current` возвращает [ссылочное возвращаемое значение](ref.md#reference-return-values) (`ref T`, где `T` — это тип элемента коллекции), вы можете объявить переменную итерации с модификатором `ref` или `ref readonly`.
 
@@ -37,19 +49,19 @@ ms.locfileid: "81738818"
 
 В следующем примере показано использование оператора `foreach` с экземпляром типа <xref:System.Collections.Generic.List%601>, который реализует интерфейс <xref:System.Collections.Generic.IEnumerable%601>:
 
-[!code-csharp-interactive[list example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#1)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="1" interactive="try-dotnet-method" :::
 
 В следующем примере показано использование оператора `foreach` с экземпляром типа <xref:System.Span%601?displayProperty=nameWithType>, который не реализует интерфейс:
 
-[!code-csharp[span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#2)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="2" :::
 
 В следующем примере с помощью переменной итерации `ref` устанавливается значение каждого элемента в массиве stackalloc. В версии `ref readonly` выполняется перебор коллекции для печати всех значений. В объявлении `readonly` используется неявное объявление локальной переменной. Неявные объявления переменных могут использоваться с объявлениями `ref` или `ref readonly`, так же как и явно типизированные объявления переменных.
 
-[!code-csharp[ref span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#RefSpan)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="RefSpan" :::
 
 В следующем примере используется `await foreach` для выполнения итерации коллекции с асинхронным созданием каждого элемента:
 
-[!code-csharp[ref span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#AwaitForeach)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="AwaitForeach"  :::
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 

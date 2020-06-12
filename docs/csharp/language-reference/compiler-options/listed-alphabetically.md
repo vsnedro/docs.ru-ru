@@ -1,18 +1,18 @@
 ---
 title: Параметры компилятора C# в алфавитном порядке
-ms.date: 05/15/2018
+ms.date: 06/04/2020
 helpviewer_keywords:
 - compiler options [C#], listed alphabetically
 - C# language, compiler options listed alphabetically
 - Visual C# compiler, options listed alphabetically
 - Visual C#, compiler options listed alphabetically
 ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092
-ms.openlocfilehash: d6d471cd27f35de6325a130e6c909d13cb1dcc85
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9765d13191f862a2e92bb00aa66a92c3a64ac303
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73972743"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84446943"
 ---
 # <a name="c-compiler-options-listed-alphabetically"></a>Параметры компилятора C# в алфавитном порядке
 
@@ -29,7 +29,7 @@ ms.locfileid: "73972743"
 |[-baseaddress](baseaddress-compiler-option.md)|Задает базовый адрес библиотеки для сборки.|
 |[-bugreport](bugreport-compiler-option.md)|Создает файл отчета об ошибках. Этот файл будет отправляться вместе со сведениями о сбое, если использовать параметр с -errorreport:prompt или -errorreport:send.|
 |[/checked](checked-compiler-option.md)|Указывает компилятору создавать проверки переполнения.|
-|-checksumalgorithm:\<алгоритм>|Указывает алгоритм для расчета контрольной суммы исходного файла, хранящегося в PDB.  Допустимые значения: SHA256 (по умолчанию) или SHA1.<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256. |
+|-checksumalgorithm:\<alg>|Указывает алгоритм для расчета контрольной суммы исходного файла, хранящегося в PDB.  Допустимые значения: SHA256 (по умолчанию) или SHA1.<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256. |
 |[-codepage](codepage-compiler-option.md)|Указывает кодовую страницу, используемую при открытии исходных файлов.|
 |[-debug](debug-compiler-option.md)|Выдает сведения об отладке.|
 |[-define](define-compiler-option.md)|Определяет символы условной компиляции|
@@ -37,9 +37,9 @@ ms.locfileid: "73972743"
 |[-deterministic](deterministic-compiler-option.md)|Указывает компилятору на необходимость вывода сборки, чье двоичное содержимое идентично в разных компиляциях, если входные данные идентичны.|
 |[-doc](doc-compiler-option.md)|Задает создаваемый XML-файл документации.|
 |-embed|Внедрение всех исходных файлов в PDB-файл.|
-|-embed:\<список_файлов>|Внедрение определенных файлов в PDB-файл.|
+|-embed:\<file list>|Внедрение определенных файлов в PDB-файл.|
 |-errorendlocation|Выходные строка и столбец конечного расположения каждой ошибки.|
-|-errorlog:\<файл>|Укажите файл для записи данных диагностики компилятора и анализатора в журнал.|
+|-errorlog:\<file>|Укажите файл для записи данных диагностики компилятора и анализатора в журнал.|
 |[-errorreport](errorreport-compiler-option.md)|Указывает способ обработки внутренних ошибок компилятора: prompt, send или none. Значение по умолчанию — none.|
 |[-filealign](filealign-compiler-option.md)|Указывает выравнивание для разделов выходного файла.|
 |[/fullpaths](fullpaths-compiler-option.md)|Указывает компилятору создавать полные пути.|
@@ -48,18 +48,19 @@ ms.locfileid: "73972743"
 |-incremental|Включает инкрементную компиляцию [устарело].|
 |[-keycontainer](keycontainer-compiler-option.md)|Задает контейнер ключа для строгого имени.|
 |[-keyfile](keyfile-compiler-option.md)|Задает файл ключа для строгого имени.|
-|[-langversion:\<строка>](langversion-compiler-option.md)|Укажите версию языка: по умолчанию, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3 или последняя версия |
+|[-langversion:\<string>](langversion-compiler-option.md)|Укажите версию языка: по умолчанию, ISO-1, ISO-2, 3, 4, 5, 6, 7, 7.1, 7.2, 7.3 или последняя версия |
 |[/lib](lib-compiler-option.md)|Задает дополнительные каталоги для поиска ссылок.|
 |[-link](link-compiler-option.md)|Делает сведения о типах COM в указанных сборках доступными для проекта.|
 |[-linkresource](linkresource-compiler-option.md)|Включает указанные файлы ресурсов в эту сборку.|
 |[-main](main-compiler-option.md)|Задает тип, содержащий точку входа (все другие возможные точки входа игнорируются).|
 |[-moduleassemblyname](moduleassemblyname-compiler-option.md)|Указывает сборку, к неоткрытым типам которой может обращаться .netmodule.|
-|-modulename:\<строка>|Укажите имя исходного модуля.|
+|-modulename:\<string>|Укажите имя исходного модуля.|
 |[-noconfig](noconfig-compiler-option.md)|Указывает, что компилятор не должен автоматически включать файл CSC.RSP.|
 |[-nologo](nologo-compiler-option.md)|Запрещает отображение сообщения компилятора об авторских правах.|
 |[-nostdlib](nostdlib-compiler-option.md)|Указывает компилятору не ссылаться на стандартную библиотеку (mscorlib.dll).|
 |[-nowarn](nowarn-compiler-option.md)|Отключает определенные предупреждающие сообщения.|
 |[-nowin32manifest](nowin32manifest-compiler-option.md)|Указывает компилятору не внедрять манифест приложения в исполняемый файл.|
+|[-nullable](nullable-compiler-option.md)|Указывает параметр контекста, допускающий значение NULL.|
 |[-optimize](optimize-compiler-option.md)|Включает или отключает оптимизацию.|
 |[-out](out-compiler-option.md)|Задает имя выходного файла (по умолчанию это базовое имя файла с классом main или имя первого файла).|
 |-parallel[+&#124;-]|Указывает, следует ли использовать параллельную сборку (+).|
@@ -74,7 +75,7 @@ ms.locfileid: "73972743"
 |[/refonly](refonly-compiler-option.md)|Создание ссылочной сборки вместо основной.|
 |-reportanalyzer|Включение в отчет дополнительных сведений об анализаторе, включая время выполнения.|
 |[-resource](resource-compiler-option.md)|Внедряет указанный ресурс.|
-|-ruleset:\<файл>|Укажите файл набора правил, который отключает определенные диагностики.|
+|-ruleset:\<file>|Укажите файл набора правил, который отключает определенные диагностики.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Задает минимальную версию подсистемы, которую может использовать исполняемый файл.|
 |[-target](target-compiler-option.md)|Задает формат выходного файла, используя один из четырех параметров: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |[/unsafe](unsafe-compiler-option.md)|Разрешает небезопасный ([unsafe](../keywords/unsafe.md)) код.|
@@ -91,4 +92,4 @@ ms.locfileid: "73972743"
 - [Параметры компилятора C# ](index.md)
 - [Параметры компилятора C#, упорядоченные по категориям](listed-by-category.md)
 - [Практическое руководство. Настройка переменных среды для командной строки Visual Studio](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
-- [Элемент \<compiler>](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)
+- [\<compiler> Элемент](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

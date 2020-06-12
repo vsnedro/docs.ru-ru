@@ -8,14 +8,14 @@ helpviewer_keywords:
 - <example> C# XML tag
 - example C# XML tag
 ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
-ms.openlocfilehash: 615eccbc427b6a5bbbed061acd0c8b0b9be7f46c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e8d26f82562cc5140662f5b32ea9fedf5481d8f8
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76789818"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287400"
 ---
-# <a name="example-c-programming-guide"></a>Руководство по программированию на C#. \<example>
+# <a name="example-c-programming-guide"></a>\<example> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,9 +29,9 @@ ms.locfileid: "76789818"
 
   Описание примера кода.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Тег \<example> позволяет указать пример использования метода или другого элемента библиотеки. Вместе с ним часто применяется тег [\<code>](./code.md).
+Тег `<example>` позволяет указать пример использования метода или другого элемента библиотеки. Вместе с ним часто применяется тег [\<code>](./code.md).
 
 Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
 
@@ -39,7 +39,7 @@ ms.locfileid: "76789818"
 
 [!code-csharp[csProgGuideDocComments#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#3)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)

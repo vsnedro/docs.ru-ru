@@ -8,14 +8,14 @@ helpviewer_keywords:
 - <exception> C# XML tag
 - exception C# XML tag
 ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
-ms.openlocfilehash: 14318ac0b0cdf781d0488eecaf934879017d91f6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fb193c586456497ee60aad941d56241ad7c6b63a
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76789801"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287398"
 ---
-# <a name="exception-c-programming-guide"></a>Руководство по программированию на C#. \<exception>
+# <a name="exception-c-programming-guide"></a>\<exception> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,9 +35,9 @@ ms.locfileid: "76789801"
 
   Описание исключения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Тег \<exception> служит для указания возможных исключений. Этот тег может применяться к определениям методов, свойств, событий и индексаторов.
+Тег `<exception>` служит для указания возможных исключений. Этот тег может применяться к определениям методов, свойств, событий и индексаторов.
 
 Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
 
@@ -47,7 +47,7 @@ ms.locfileid: "76789801"
 
 [!code-csharp[csProgGuideDocComments#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#4)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Рекомендуемые теги для комментариев документации](recommended-tags-for-documentation-comments.md)

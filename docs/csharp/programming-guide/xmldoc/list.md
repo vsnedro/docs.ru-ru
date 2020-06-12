@@ -12,14 +12,14 @@ helpviewer_keywords:
 - <item> C# XML tag
 - <list> C# XML tag
 ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
-ms.openlocfilehash: cb289b26e9bc12d561892c421fb40da18d8c3513
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 78eec992671dab1aa59717a007a8e3a2662f6e87
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76789750"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287341"
 ---
-# <a name="list-c-programming-guide"></a>Руководство по программированию на C#. \<list>
+# <a name="list-c-programming-guide"></a>\<list> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,13 +46,13 @@ ms.locfileid: "76789750"
 
   Либо элемент маркированного или нумерованного списка, либо определение `term`.
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Блок \<listheader> используется для определения строки заголовка в таблице или списке определений. При определении таблицы необходимо ввести данные для термина в заголовке.
+Блок `<listheader>` используется для определения строки заголовка в таблице или списке определений. При определении таблицы необходимо ввести данные для термина в заголовке.
 
-Каждый элемент в списке указывается в блоке \<item>. При создании списка определений необходимо указать одновременно `term` и `description`. Тем не менее для таблицы, маркированного или нумерованного списка достаточно ввести только `description`.
+Каждый элемент в списке указывается в блоке `<item>`. При создании списка определений необходимо указать одновременно `term` и `description`. Тем не менее для таблицы, маркированного или нумерованного списка достаточно ввести только `description`.
 
-Число блоков \<item> в списке или таблице не ограничено.
+Число блоков `<item>` в списке или таблице не ограничено.
 
 Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
 
@@ -60,7 +60,7 @@ ms.locfileid: "76789750"
 
 [!code-csharp[csProgGuideDocComments#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#6)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)

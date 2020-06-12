@@ -2,12 +2,12 @@
 title: Общие сведения о LINQ to XML (C#)
 ms.date: 10/30/2018
 ms.assetid: 716b94d3-0091-4de1-8e05-41bc069fa9dd
-ms.openlocfilehash: 334788a50832b8fe42ecc9a3272dd71f2f2af4ee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dd41d8607ef3f2e6e6be9a1f3964ef0ae937e2ac
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168419"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84241842"
 ---
 # <a name="linq-to-xml-overview-c"></a>Общие сведения о LINQ to XML (C#)
 
@@ -25,7 +25,7 @@ XML широко используется для форматирования д
 
 ## <a name="what-is-linq-to-xml"></a>Что такое LINQ to XML?
 
-[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] — это выполняющийся в памяти интерфейс программирования XML с поддержкой LINQ, который позволяет работать с XML из языков программирования .NET Framework.
+[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] — это оснащенный средствами LINQ и встроенный в память программный интерфейс XML, позволяющий работать с XML-файлами изнутри языков программирования .NET.
 
 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] подобен модели DOM в том отношении, что загружает XML-документ в память. К такому документу можно направить запрос, его можно изменить, а после изменения его можно сохранить в файле или сериализовать и передать через Интернет. Но между [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] и моделью DOM существуют отличия: Интерфейс реализует облегченную и более простую в работе модель объектов; кроме того, в нем используются преимущества языковых возможностей, реализованные в C#.
 

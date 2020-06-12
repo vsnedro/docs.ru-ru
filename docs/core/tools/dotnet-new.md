@@ -2,12 +2,12 @@
 title: Команда dotnet new
 description: Команда dotnet new создает проекты .NET Core на основе указанного шаблона.
 ms.date: 04/10/2020
-ms.openlocfilehash: 1544f519f2a5f6a1a6e042c1db720eff45f5d98c
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 39301ad95761848b60b45cb5c18ede937f70c32c
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442245"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84283979"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -75,6 +75,7 @@ dotnet new -h|--help
 | MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Веб/ASP.NET                           | 2.0        |
 | MVC ViewStart                                | `viewstart`                     | [C#]         | Веб/ASP.NET                           | 2.0        |
 | Серверное приложение Blazor                            | [blazorserver](#blazorserver)   | [C#]         | Веб/Blazor                            | 3.0        |
+| Приложение WebAssembly Blazor                       | `blazorwasm`                    | [C#]         | Веб/Blazor/WebAssembly                            | 3.1.300    |
 | Пустой ASP.NET Core                           | [web](#web)                     | [C#], F#     | Веб/пусто                             | 1.0        |
 | Веб-приложение ASP.NET Core (Model-View-Controller) | [mvc](#web-options)             | [C#], F#     | Веб/MVC                               | 1.0        |
 | Веб-приложение ASP.NET Core                         | [webapp, razor](#web-options)   | [C#]         | Веб/MVC и Razor Pages                   | 2.2, 2.0   |
@@ -148,7 +149,7 @@ dotnet new -h|--help
   Если вы не указываете параметр в этой опции, команда перечисляет установленные шаблоны и подробные сведения о них.
 
   > [!NOTE]
-  > Чтобы удалить шаблон с помощью `PATH`, вам необходимо указать полный путь. Например, *C:/Users/\<ПОЛЬЗОВАТЕЛЬ>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* будет работать, а *./GarciaSoftware.ConsoleTemplate.CSharp* — нет.
+  > Чтобы удалить шаблон с помощью `PATH`, вам необходимо указать полный путь. Например, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* будет работать, а *./GarciaSoftware.ConsoleTemplate.CSharp* — нет.
   > Путь к шаблону не должен содержать конечную косую черту закрытия каталога.
 
 - **`--update-apply`**

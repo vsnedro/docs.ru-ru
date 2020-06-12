@@ -1,19 +1,19 @@
 ---
-title: Руководство по программированию на C#. Публикация событий, соответствующих рекомендациям .NET Framework
+title: Руководство по программированию на C#. Публикация событий, соответствующих рекомендациям .NET
 ms.date: 05/26/2020
 helpviewer_keywords:
 - events [C#], implementation guidelines
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
-ms.openlocfilehash: 137e52b80703491a4528a3eddc7fa12f9dce6f52
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: df2f643f867b93b74d04d8fbd673df545c28938e
+ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144803"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84240750"
 ---
-# <a name="how-to-publish-events-that-conform-to-net-framework-guidelines-c-programming-guide"></a>Руководство по программированию на C#. Публикация событий, соответствующих рекомендациям .NET Framework
+# <a name="how-to-publish-events-that-conform-to-net-guidelines-c-programming-guide"></a>Публикация событий, соответствующих рекомендациям .NET (руководство по программированию на C#)
 
-Следующая процедура показывает, как добавлять события, которые соответствуют стандартному шаблону .NET Framework для классов и структур. Все события в библиотеке классов .NET Framework основаны на делегате <xref:System.EventHandler>, который определен следующим образом:
+Следующая процедура демонстрирует добавление событий, которые соответствуют стандартному шаблону .NET для классов и структур. Все события в библиотеке классов .NET Framework основаны на делегате <xref:System.EventHandler>, который определен следующим образом:
 
 ```csharp
 public delegate void EventHandler(object sender, EventArgs e);
@@ -22,11 +22,11 @@ public delegate void EventHandler(object sender, EventArgs e);
 > [!NOTE]
 > В .NET Framework 2.0 представлена универсальная версия этого делегата, <xref:System.EventHandler%601>. В следующих примерах демонстрируется использование обеих версий.
 
-Хотя события в определяемых классах могут быть основаны на действительном типе делегата, даже на делегатах, возвращающих значение, обычно рекомендуется основывать события на шаблоне .NET Framework с помощью <xref:System.EventHandler>, как показано в следующем примере.
+Хотя события в определяемых классах могут быть основаны на любом допустимом типе делегата, даже на делегатах, возвращающих значение, обычно рекомендуется основывать события на шаблоне .NET с помощью <xref:System.EventHandler>, как показано в следующем примере.
 
 Имя `EventHandler` может привести к путанице, так как на самом деле этот делегат не обрабатывает событие. Делегат <xref:System.EventHandler> и универсальный делегат <xref:System.EventHandler%601> являются типами делегатов. Метод или лямбда-выражение, сигнатура которого соответствует определению делегата, является *обработчиком событий* и будет вызываться при возникновении события.
 
-### <a name="to-publish-events-based-on-the-eventhandler-pattern"></a>Публикация событий, основанных на шаблоне EventHandler
+## <a name="publish-events-based-on-the-eventhandler-pattern"></a>Публикация событий, основанных на шаблоне EventHandler
 
 1. (Пропустите этот шаг и перейдите к шагу 3a, если не нужно отправлять пользовательские данные с определенным событием.) Объявите класс для пользовательских данных в области, видимой для классов Publisher и Subscriber. Затем добавьте необходимые члены для хранения пользовательских данных о событиях. В этом примере возвращается простая строка.
 

@@ -10,14 +10,14 @@ helpviewer_keywords:
 - c C# XML tag
 - <c> C# XML tag
 ms.assetid: aad5b16e-a29e-445e-bd0d-eea0b138d7b2
-ms.openlocfilehash: d5b28ee6db52d191f8454592d792ac0a1e1dc73b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a09bcd069e2f85f4a21736cb218c42c0e481d70b
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76793455"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287471"
 ---
-# <a name="c-c-programming-guide"></a>Руководство по программированию на C#. \<c>
+# <a name="c-c-programming-guide"></a>\<c> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,9 +31,9 @@ ms.locfileid: "76793455"
 
   Текст, который нужно указать в качестве кода.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-С помощью тега \<c> можно указать, что текст в описании необходимо пометить как код. Чтобы определить несколько строк в качестве кода, используйте тег [\<code>](./code.md).
+С помощью тега `<c>` можно указать, что текст в описании необходимо пометить как код. Чтобы определить несколько строк в качестве кода, используйте тег [\<code>](./code.md).
 
 Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).
 
@@ -41,7 +41,7 @@ ms.locfileid: "76793455"
 
 [!code-csharp[csProgGuideDocComments#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#2)]
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)

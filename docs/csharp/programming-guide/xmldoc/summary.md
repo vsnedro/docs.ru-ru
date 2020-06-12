@@ -8,14 +8,14 @@ helpviewer_keywords:
 - <summary> C# XML tag
 - summary C# XML tag
 ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
-ms.openlocfilehash: 1ae3c17bef69a52b4d5852e09284929dc328bf8a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e1a8c9d61e61eae7ba6bf7f0c1b9d2a8dc8a4171
+ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76789675"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84287211"
 ---
-# <a name="summary-c-programming-guide"></a>Руководство по программированию на C#. \<summary>
+# <a name="summary-c-programming-guide"></a>\<summary> (руководство по программированию на C#)
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,11 +29,11 @@ ms.locfileid: "76789675"
 
   Сводка объекта.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Тег \<summary> следует использовать для описания типа или члена типа. Чтобы добавить дополнительную информацию в описание типа, используйте [\<remarks>](./remarks.md). Чтобы включить средства документации, такие как [DocFX](https://dotnet.github.io/docfx/) и [Sandcastle](https://github.com/EWSoftware/SHFB), для создания внутренних гиперссылок на страницы документации для элементов кода, используйте атрибут [cref](./cref-attribute.md).
+Тег `<summary>` следует использовать для описания типа или элемента типа. Чтобы добавить дополнительную информацию в описание типа, используйте [\<remarks>](./remarks.md). Чтобы включить средства документации, такие как [DocFX](https://dotnet.github.io/docfx/) и [Sandcastle](https://github.com/EWSoftware/SHFB), для создания внутренних гиперссылок на страницы документации для элементов кода, используйте атрибут [cref](./cref-attribute.md).
 
-Текст в теге \<summary> является единственным источником сведений о типе для технологии IntelliSense и также отображается в окне обозревателя объектов.
+Текст в теге `<summary>` является единственным источником сведений о типе для технологии IntelliSense и также отображается в окне обозревателя объектов.
 
 Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md). Для создания окончательной документации на основе сгенерированного компилятором файла можно создать пользовательское средство или применить такие средства, как [DocFX](https://dotnet.github.io/docfx/) или [Sandcastle](https://github.com/EWSoftware/SHFB).
 
@@ -98,7 +98,7 @@ ms.locfileid: "76789675"
 </doc>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)

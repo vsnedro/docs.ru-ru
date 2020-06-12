@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 52b9caf2d5b3d44c0c6349501dafc371541fdd70
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: b1fb9647091cecb80b9c2f04ec9b6bb156eb39ba
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396355"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84466840"
 ---
 ### <a name="pubternal-apis-removed"></a>Удалены API-интерфейсы Pubternal
 
@@ -22,7 +22,7 @@ ms.locfileid: "83396355"
 
 #### <a name="new-behavior"></a>Новое поведение
 
-Затронутые API-интерфейсы помечаются модификатором доступа [internal(~/docs/csharp/language-reference/keywords/internal.md) и больше не могут использоваться в коде за пределами этой сборки.
+Затронутые API-интерфейсы помечаются модификатором доступа [internal](/dotnet/csharp/language-reference/keywords/internal) и больше не могут использоваться в коде за пределами этой сборки.
 
 #### <a name="reason-for-change"></a>Причина изменения
 

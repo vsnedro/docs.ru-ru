@@ -3,12 +3,12 @@ title: Ссылочные типы, допускающие значение null
 description: В этой статье представлен обзор ссылочных типов, допускающих значение NULL, добавленных в C# 8.0. Вы узнаете, как эта функция обеспечивает безопасность от исключений, связанных со ссылочными типами, допускающими значение NULL, в новых и существующих проектах.
 ms.technology: csharp-null-safety
 ms.date: 04/21/2020
-ms.openlocfilehash: 589118ffaa9ad39f000e3e5adf2896d114f68dd3
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: 6d068760805a21e41712a4f70735bef41ce2052f
+ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82101984"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "84446676"
 ---
 # <a name="nullable-reference-types"></a>Ссылочные типы, допускающие значение null
 
@@ -130,3 +130,4 @@ name!.Length;
 - [Ссылочные типы, допускающие значение NULL. Черновик спецификации](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md)
 - [Учебник "Введение в ссылки, допускающие значения NULL"](tutorials/nullable-reference-types.md)
 - [Перенос существующей базы кода на ссылки, допускающие значение NULL](tutorials/upgrade-to-nullable-references.md)
+- [-nullable (параметр компилятора C#)](language-reference/compiler-options/nullable-compiler-option.md)
