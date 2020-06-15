@@ -87,7 +87,7 @@ ms.locfileid: "84246658"
 
 1. <span data-ttu-id="90e6a-147">В **обозревателе** щелкните правой кнопкой мыши папку *publish* (в macOS нажмите сочетание клавиш <kbd>CTRL</kbd>+щелчок) и выберите **Открыть в терминале**.</span><span class="sxs-lookup"><span data-stu-id="90e6a-147">In **Explorer**, right-click the *publish* folder (or <kbd>Ctrl</kbd>+click on macOS), and select **Open in Terminal**.</span></span>
 
-   :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Контекстное меню с командой "Открыть в терминале"":::
+   :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Контекстное меню с командой Открыть в терминале":::
 
 1. <span data-ttu-id="90e6a-149">В Windows или Linux запустите приложение с помощью исполняемого файла.</span><span class="sxs-lookup"><span data-stu-id="90e6a-149">On Windows or Linux, run the app by using the executable.</span></span>
 
