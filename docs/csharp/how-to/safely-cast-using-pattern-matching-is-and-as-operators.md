@@ -6,12 +6,12 @@ helpviewer_keywords:
 - cast operators [C#], as and is operators
 - as operator [C#]
 - is operator [C#]
-ms.openlocfilehash: 9f5690e6840098f94360dba89f09fb23b258b782
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: f10ce837057cc61b84130f237a13af708849dfc5
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739049"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662970"
 ---
 # <a name="how-to-safely-cast-by-using-pattern-matching-and-the-is-and-as-operators"></a>Практическое руководство. Безопасное приведение с помощью сопоставления шаблонов, а также операторов is и as
 
@@ -19,13 +19,13 @@ ms.locfileid: "81739049"
 
 В следующем примере показано, как использовать сопоставление шаблонов `is`:
 
-[!code-csharp[Pattern matching is statement](../../../samples/snippets/csharp/how-to/safelycast/patternmatching/Program.cs#PatternMatchingIs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/how-to/safelycast/patternmatching/Program.cs" id="PatternMatchingIs":::
 
 В предыдущем примере показано несколько возможностей синтаксиса сопоставления шаблонов. Оператор `if (a is Mammal m)` объединяет проверку с назначением инициализации. Назначение происходит, только если проверка пройдет успешно. Переменная `m` действует только во внедренном операторе `if`, где она назначена. Вы не сможете получить доступ к `m` позже в этом же методе. В предыдущем примере также показано, как использовать [ оператора`as`](../language-reference/operators/type-testing-and-cast.md#as-operator) для преобразования объекта в указанный тип.
 
 Вы можете использовать тот же синтаксис для проверки наличия значения у [типа значений, допускающего значение NULL](../language-reference/builtin-types/nullable-value-types.md), как показано в следующем примере:
 
-[!code-csharp[Pattern matching with nullable types](../../../samples/snippets/csharp/how-to/safelycast/nullablepatternmatching/Program.cs#PatternMatchingNullable)]
+:::code language="csharp" source="../../../samples/snippets/csharp/how-to/safelycast/nullablepatternmatching/Program.cs" id="PatternMatchingNullable":::
 
 В предыдущем примере показаны другие возможности сопоставления шаблонов для использования с преобразованиями. Вы можете проверить переменную для шаблона со значением NULL путем проверки конкретно значения `null`. Если значение переменной в среде выполнения равно `null`, оператор `is`, проверяющий тип, всегда возвращает `false`. Оператор сопоставления шаблонов `is` не принимает тип, допускающий значение NULL, например `int?` или `Nullable<int>`, но вы можете выполнить проверку для любого другого типа значения. Шаблоны `is` из предыдущего примера не ограничиваются типами значений, допускающими значение NULL. Эти шаблоны можно также использовать для проверки того, имеет ли переменная ссылочного типа значение или она равна `null`.
 
@@ -33,8 +33,6 @@ ms.locfileid: "81739049"
 
 Если вы хотите проверить, принадлежит ли переменная определенному типу, но не хотите назначать новую переменную, используйте операторы `is` и `as` для ссылочных типов и значений типов, допускающих значение NULL. Ниже показано, как использовать операторы `is` и `as`, которые были частью языка C# до того, как было введено сопоставление шаблонов для проверки принадлежности переменной к определенному типу.
 
-[!code-csharp[testing variable types with the is and as statements](../../../samples/snippets/csharp/how-to/safelycast/asandis/Program.cs#IsAndAs)]
+:::code language="csharp" source="../../../samples/snippets/csharp/how-to/safelycast/asandis/Program.cs" id="IsAndAs":::
 
 Как видно при сравнении этого кода с кодом сопоставления шаблонов, синтаксис сопоставления шаблонов предоставляет более надежные функции, поскольку сочетает в себе проверку и назначение в одном операторе. Используйте синтаксис сопоставления шаблонов во всех подходящих случаях.
-
-Вы можете оценить эти примеры, просмотрев код в нашем [репозитории GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/safelycast). Или можете загрузить образцы [в ZIP-файле](../../../samples/snippets/csharp/how-to/safelycast.zip).

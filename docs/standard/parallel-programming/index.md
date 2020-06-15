@@ -1,16 +1,17 @@
 ---
 title: Параллельное программирование в .NET
+description: Узнайте о параллельном программировании в .NET Для упрощения разработки .NET используйте среду выполнения .NET, типы библиотек классов и средства диагностики.
 ms.date: 09/12/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - parallel programming
 ms.assetid: 4d83c690-ad2d-489e-a2e0-b85b898a672d
-ms.openlocfilehash: 7adc37374876ebe4dd47e30afa06b5199f34dad5
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 02087cf58720388c64d8aba5424db0b54828219a
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290698"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84661969"
 ---
 # <a name="parallel-programming-in-net"></a>Параллельное программирование в .NET
 

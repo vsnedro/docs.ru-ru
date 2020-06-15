@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C# language, polymorphism
 - polymorphism [C#]
 ms.assetid: 086af969-29a5-4ce8-a993-0b7d53839dab
-ms.openlocfilehash: 58980bd0d70d8a778cdb208f56d31ee8465871a4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 65f5c882ec4d7f8cbcc7ec7bf535091febfba64d
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79170173"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662658"
 ---
 # <a name="polymorphism-c-programming-guide"></a>Полиморфизм (Руководство по программированию на C#)
 
@@ -50,7 +50,7 @@ ms.locfileid: "79170173"
 
 Поля не могут быть виртуальными. Виртуальными могут быть только методы, свойства, события и индексаторы. Когда производный класс переопределяет виртуальный член, он вызывается даже в то случае, если доступ к экземпляру этого класса осуществляется в качестве экземпляра базового класса. Примером является следующий код:
 
-[!code-csharp[Virtual overview example](~/samples/snippets/csharp/objectoriented/Inheritance.cs#VirtualMethods)]
+[!code-csharp[Virtual overview example](~/samples/snippets/csharp/objectoriented/Inheritance.cs#SnippetTestVirtualMethods)]
 
 Виртуальные методы и свойства позволяют производным классам расширять базовый класс без необходимости использовать реализацию базового класса метода. Дополнительные сведения см. в разделе [Управление версиями с помощью ключевых слов Override и New](./versioning-with-the-override-and-new-keywords.md). Еще одну возможность определения метода или набора методов, реализация которых оставлена производным классам, дает интерфейс. Дополнительные сведения см. в разделе [Интерфейсы](../interfaces/index.md).
 
