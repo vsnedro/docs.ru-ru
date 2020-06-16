@@ -1,5 +1,6 @@
 ---
 title: Кроссплатформенная разработка с переносной библиотекой классов
+description: Быстрое и простое создание кросс-платформенных приложений и библиотек для платформ Майкрософт с помощью типа проекта переносимой библиотеки классов в .NET.
 ms.date: 09/17/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - targeting multiple platforms
 - multiple platforms, targeting
 ms.assetid: c31e1663-c164-4e65-b66d-d3aa8750a154
-ms.openlocfilehash: 033c9bc6e506d0ae2b9f20fedb72d1b7f29e434b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: be1a49f7da7ce98f9e5e3ff8d927ce5230bfa8d8
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288918"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769149"
 ---
 # <a name="cross-platform-development-with-the-portable-class-library"></a>Кросс-платформенная разработка с помощью переносимой библиотеки классов
 
@@ -82,7 +83,7 @@ ms.locfileid: "84288918"
 
 Дополнительные сведения о развертывании .NET Framework приложений см. в статье [Deployment Guide for Developers](../../framework/deployment/deployment-guide-for-developers.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Использование переносимой библиотеки классов с MVVM](using-portable-class-library-with-model-view-view-model.md)
 - [Ресурсы приложений для библиотек, предназначенных для нескольких платформ](app-resources-for-libraries-that-target-multiple-platforms.md)

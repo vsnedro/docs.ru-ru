@@ -1,5 +1,6 @@
 ---
 title: Соглашения о написании прописными буквами
+description: Применение соглашений о капитализации для идентификаторов, составных слов и общих терминов. Узнайте, как работает чувствительность к регистру в .NET.
 ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - case sensitivity, capitalization conventions
 - names [.NET Framework], capitalization
 ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
-ms.openlocfilehash: 10d628700a9cbf0e842416878ec2c7febfa3d6f5
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4903dc587d84ef36bfaa641cfbda59484266c23c
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84280404"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84767797"
 ---
 # <a name="capitalization-conventions"></a>Соглашения о написании прописными буквами
 Рекомендации в этой главе посвящены созданию простого метода использования, который при единообразном применении делает идентификаторы для типов, членов и параметров простыми для чтения.
@@ -50,11 +51,11 @@ ms.locfileid: "84280404"
 |Идентификатор|Регистр|Пример|
 |----------------|------------|-------------|
 |Пространство имен|Pascal|`namespace System.Security { ... }`|
-|Type|Pascal|`public class StreamReader { ... }`|
+|Тип|Pascal|`public class StreamReader { ... }`|
 |Интерфейс|Pascal|`public interface IEnumerable { ... }`|
 |Метод|Pascal|`public class Object {` <br />  `public virtual string ToString();` <br /> `}`|
 |Свойство.|Pascal|`public class String {` <br />  `public int Length { get; }` <br /> `}`|
-|Событие|Pascal|`public class Process {` <br />  `public event EventHandler Exited;` <br /> `}`|
+|событие|Pascal|`public class Process {` <br />  `public event EventHandler Exited;` <br /> `}`|
 |Поле|Pascal|`public class MessageQueue {` <br />  `public static readonly TimeSpan` <br /> `InfiniteTimeout;` <br /> `}` <br /> `public struct UInt32 {` <br />  `public const Min = 0;` <br /> `}`|
 |Значение перечисления|Pascal|`public enum FileMode {` <br />  `Append,` <br />  `...` <br /> `}`|
 |Параметр|"верблюжий" стиль.|`public class Convert {` <br />  `public static int ToInt32(string value);` <br /> `}`|
@@ -103,7 +104,7 @@ ms.locfileid: "84280404"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по именованию](naming-guidelines.md)

@@ -1,5 +1,6 @@
 ---
 title: Взаимное преобразование структур DateTime и DateTimeOffset
+description: Преобразование между значениями DateTimeOffset и значениями DateTime в .NET. Структура DateTimeOffset предоставляет больше сведений о часовом поясе, чем структура DateTime.
 ms.date: 04/10/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - Date data type, converting
 - local time conversions
 ms.assetid: b605ff97-0c45-4c24-833f-4c6a3e8be64c
-ms.openlocfilehash: 7607d1d9dfc4f8f286262952599f96e4872db9c9
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: cf55db7c22ad2495bdbeb3202fcefb89bae42d69
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84278224"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768681"
 ---
 # <a name="converting-between-datetime-and-datetimeoffset"></a>Взаимное преобразование структур DateTime и DateTimeOffset
 
@@ -127,6 +128,6 @@ ms.locfileid: "84278224"
 
 - Предполагается, что значение даты и времени, смещение для которого равно смещению местного часового пояса, представляет местный часовой пояс. Поскольку значения даты и времени не связаны со своими исходными часовыми поясами, то это может не выполняться. Значение даты и времени может быть создано в другом часовом поясе с тем же самым смещением.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Даты, время и часовые пояса](index.md)

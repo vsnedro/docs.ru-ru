@@ -1,5 +1,6 @@
 ---
 title: Разработка перечислений
+description: Разработка для перечислений, которые являются специальным видом типа значения. Простые перечисления содержат небольшие закрытые наборы вариантов выбора. Флаговые перечисления поддерживают побитовые операции с перечисляемыми значениями.
 ms.date: 10/22/2008
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - class library design guidelines [.NET Framework], enumerations
 - flags enumerations
 ms.assetid: dd53c952-9d9a-4736-86ff-9540e815d545
-ms.openlocfilehash: efdfcda95a67941f0fde5f7a96467af7dd374396
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 40a9faf53dc8a03674cd59074244c15cd304bdd2
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84280144"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768541"
 ---
 # <a name="enum-design"></a>Разработка перечислений
 
@@ -100,7 +101,7 @@ ms.locfileid: "84280144"
 
 *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Рекомендации по проектированию типов](type.md)
 - [Рекомендации по проектированию платформы](index.md)

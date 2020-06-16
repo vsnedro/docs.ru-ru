@@ -1,5 +1,6 @@
 ---
 title: Объекты Principal и Identity
+description: Ознакомьтесь с объектами Identity, которые представляют пользователей в .NET. Также ознакомьтесь с основными объектами, которые инкапсулируют объект Identity & роли.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - security [.NET Framework], principals
 - WindowsPrincipal objects
 ms.assetid: aa5930ad-f3d7-40aa-b6f6-c6edcd5c64f7
-ms.openlocfilehash: cece51370fb269121e776e865275cd464c1af095
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5fd3f1c80f22c1ebe7b2c10653ee137f00321de8
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291231"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768850"
 ---
 # <a name="principal-and-identity-objects"></a>Объекты Principal и Identity
 Управляемый код может обнаружить удостоверение или роль участника с помощью <xref:System.Security.Principal.IPrincipal> объекта, который содержит ссылку на <xref:System.Security.Principal.IIdentity> объект. Может быть полезно сравнить объекты Identity и Principal с привычными понятиями, такими как учетные записи пользователей и групп. В большинстве сетевых сред учетные записи пользователей представляют пользователей или программы, а учетные записи групп — определенные категории пользователей и предоставленные им права. Аналогичным образом, объекты Identity в .NET Framework представляют собой пользователей, а роли — членства и контексты безопасности. В .NET Framework объект Principal инкапсулирует объект Identity и роль. Приложения .NET Framework предоставляют права объекту Principal на основании его идентификатора, но чаще на основании его участия в роли.  
@@ -40,7 +41,7 @@ ms.locfileid: "84291231"
   
  При передаче объекта **Principal** через домены приложений, но в рамках одного процесса (и, следовательно, на том же компьютере), инфраструктура удаленного взаимодействия копирует ссылку на объект **Principal**, связанный с контекстом вызывающей функции, в вызываемую функцию.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Практическое руководство. Создание объекта WindowsPrincipal](how-to-create-a-windowsprincipal-object.md)
 - [Практическое руководство. Создание объектов GenericPrincipal и GenericIdentity](how-to-create-genericprincipal-and-genericidentity-objects.md)
