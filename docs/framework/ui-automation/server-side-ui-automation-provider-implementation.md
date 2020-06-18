@@ -1,17 +1,18 @@
 ---
 title: Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера
+description: Узнайте, как реализовать поставщик автоматизации пользовательского интерфейса на стороне сервера для пользовательского элемента управления в .NET. Реализация для WPF и элементов, отличных от WPF, отличается.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - server-side UI Automation provider implementation
 - UI Automation, server-side provider implementation
 - provider implementation, UI Automation
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
-ms.openlocfilehash: 8a52d84f7152b9cb431ad0aa97c88b143463be2d
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: ea1b5e668e29d854233d4dde4c0e6152d591da97
+ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76789614"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84903900"
 ---
 # <a name="server-side-ui-automation-provider-implementation"></a>Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера
 
@@ -20,11 +21,11 @@ ms.locfileid: "76789614"
 
 В этом разделе описывается реализация серверного поставщика автоматизации пользовательского интерфейса для пользовательского элемента управления.
 
-Реализация для элементов Windows Presentation Foundation (WPF) и элементов, отличных от WPF (например, разработанных для Windows Forms), является принципиально отличающимся. Элементы WPF обеспечивают поддержку [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] через класс, производный от <xref:System.Windows.Automation.Peers.AutomationPeer>. Элементы, не являющиеся элементами WPF, обеспечивают поддержку через реализации интерфейсов поставщиков.
+Реализация для элементов Windows Presentation Foundation (WPF) и элементов, отличных от WPF (например, разработанных для Windows Forms), является принципиально отличающимся. Элементы WPF обеспечивают поддержку [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] через класс, производный от <xref:System.Windows.Automation.Peers.AutomationPeer> . Элементы, не являющиеся элементами WPF, обеспечивают поддержку через реализации интерфейсов поставщиков.
 
 <a name="Security_Considerations"></a>
 
-## <a name="security-considerations"></a>Вопросы безопасности
+## <a name="security-considerations"></a>Соображения безопасности
 
 Поставщики должны быть написаны так, чтобы они могли работать в среде с частичным доверием. Поскольку библиотека UIAutomationClient.dll не настроена для запуска в режиме частичного доверия, код поставщика не должен ссылаться эту сборку. Если это происходит, код может выполняться в среде с полным доверием, но в среде с частичным доверием произойдет сбой.
 
@@ -77,7 +78,7 @@ ms.locfileid: "76789614"
 
 Для взаимодействия с [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]элемент управления должен реализовать следующие основные функциональные области:
 
-|Функция|Реализация|
+|Функциональность|Реализация|
 |-------------------|--------------------|
 |Предоставление поставщика для [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|В ответ на сообщение WM_GETOBJECT, отправленное окну элемента управления, возвращается объект, реализующий <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> (или производный интерфейс). Для фрагментов это должен быть поставщик для корневого фрагмента.|
 |Указание значений свойств|Реализуйте <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A> для предоставления или переопределения значений.|
@@ -115,9 +116,9 @@ ms.locfileid: "76789614"
 - <xref:System.Windows.Automation.AutomationElementIdentifiers.RuntimeIdProperty>
 
 > [!NOTE]
-> Простой элемент <xref:System.Windows.Automation.AutomationElementIdentifiers.RuntimeIdProperty> или корневой элемент фрагмента, размещенного в окне, извлекается из окна. Однако элементам фрагмента ниже корневого элемента (например, элементы списка в поле со списком) необходимо предоставлять собственные идентификаторы. Для получения дополнительной информации см. <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A>.
+> Простой элемент <xref:System.Windows.Automation.AutomationElementIdentifiers.RuntimeIdProperty> или корневой элемент фрагмента, размещенного в окне, извлекается из окна. Однако элементам фрагмента ниже корневого элемента (например, элементы списка в поле со списком) необходимо предоставлять собственные идентификаторы. Дополнительные сведения см. в разделе <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A>.
 >
-> <xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty> должны возвращаться для поставщиков, размещенных в элементе управления Windows Forms. В этом случае поставщику окна по умолчанию может не удастся получить правильное значение.
+> <xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>Должен возвращаться для поставщиков, размещенных в элементе управления Windows Forms. В этом случае поставщику окна по умолчанию может не удастся получить правильное значение.
 >
 > <xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty> обычно предоставляется поставщиком главного окна. Например, если пользовательский элемент управления является производным от <xref:System.Windows.Forms.Control>, имя будет производным от свойства `Text` элемента управления.
 
@@ -142,7 +143,7 @@ ms.locfileid: "76789614"
 |Метод|Описание|
 |------------|-----------------|
 |<xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A>|Это статическое свойство указывает, подписано ли какое-либо клиентское приложение на события [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|
-|<xref:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents>|Реализация поставщика этого интерфейса в корневом элементе фрагмента позволяет ему знать, когда клиенты регистрируют и отменяют регистрацию обработчиков событий для событий фрагмента.|
+|<xref:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents>|Реализация поставщика этого интерфейса в корневом элементе фрагмента позволяет ему знать, когда клиенты регистрируют и отменяют регистрацию обработчиков событий для событий в фрагменте.|
 
 <a name="Non_WPF_Provider_Navigation"></a>
 
@@ -189,11 +190,11 @@ ms.locfileid: "76789614"
 
 Для этого поставщик корневого элемента фрагмента главной панели предоставляет набор дочерних элементов, представляющих зоны. У каждой зоны один поставщик, который может предоставлять свойства и шаблоны. В своей реализации <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A>поставщик зоны возвращает поставщика окна по умолчанию для HWND элемента управления, который он получает путем вызова <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>, передавая дескриптор окна элемента управления. Наконец, поставщик корневого элемента фрагмента главной панели реализует интерфейс <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride> и в своей реализации <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd%2A> возвращает соответствующий внешний поставщик для элемента управления, размещенного в указанном HWND.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о поставщиках автоматизации пользовательского интерфейса](ui-automation-providers-overview.md)
-- [Предоставление серверного поставщика автоматизации пользовательского интерфейса](expose-a-server-side-ui-automation-provider.md)
+- [Представление поставщика автоматизации пользовательского интерфейса со стороны сервера](expose-a-server-side-ui-automation-provider.md)
 - [Возврат свойств от поставщика автоматизации пользовательского интерфейса](return-properties-from-a-ui-automation-provider.md)
 - [Вызов событий из поставщика автоматизации пользовательского интерфейса](raise-events-from-a-ui-automation-provider.md)
 - [Включение навигации в поставщике фрагментов автоматизации пользовательского интерфейса](enable-navigation-in-a-ui-automation-fragment-provider.md)
-- [Поддержка шаблонов элементов управления в поставщике автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
+- [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)

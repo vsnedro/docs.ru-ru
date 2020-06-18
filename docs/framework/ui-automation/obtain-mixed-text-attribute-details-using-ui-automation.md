@@ -1,16 +1,17 @@
 ---
 title: Получение сведений об атрибутах смешанного текста с помощью модели автоматизации пользовательского интерфейса
+description: Получите сведения об атрибутах смешанного текста с помощью классов автоматизации пользовательского интерфейса в пространстве имен System. Windows. Automation API .NET.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d0e4c005-abd1-42bb-92a4-5faf87097311
-ms.openlocfilehash: 9f2cba1f602cedf3a13bd909b4dc2f1a7b4ab972
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 111d110be9365c4a58f2bd2b033c1ff4e3a6a95d
+ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74443119"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84903861"
 ---
 # <a name="obtain-mixed-text-attribute-details-using-ui-automation"></a>Получение сведений об атрибутах смешанного текста с помощью модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -26,11 +27,11 @@ ms.locfileid: "74443119"
   
  Шаблон элемента управления <xref:System.Windows.Automation.TextPattern> в сочетании с классом <xref:System.Windows.Automation.Text.TextPatternRange> поддерживает базовые текстовые атрибуты, свойства и методы. Для функциональности элемента управления, не поддерживаемой <xref:System.Windows.Automation.TextPattern> или <xref:System.Windows.Automation.Text.TextPatternRange>, класс <xref:System.Windows.Automation.AutomationElement> предоставляет клиенту автоматизации пользовательского интерфейса методы для доступа к соответствующей собственной объектной модели.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Общие сведения об объекте TextPattern модели автоматизации пользовательского интерфейса](ui-automation-textpattern-overview.md)
+- [Общие сведения о TextPattern модели автоматизации пользовательского интерфейса](ui-automation-textpattern-overview.md)
 - [Добавление содержимого в текстовое поле с помощью модели автоматизации пользовательского интерфейса](add-content-to-a-text-box-using-ui-automation.md)
 - [Поиск и выделение текста с помощью модели автоматизации пользовательского интерфейса](find-and-highlight-text-using-ui-automation.md)
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
-- [Получение атрибутов текста с помощью модели автоматизации пользовательского интерфейса](obtain-text-attributes-using-ui-automation.md)
+- [Получение атрибутов текста с помощью UI Automation](obtain-text-attributes-using-ui-automation.md)

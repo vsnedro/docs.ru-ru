@@ -1,16 +1,17 @@
 ---
 title: Автоматическое масштабирование
+description: Узнайте, как автоматическое масштабирование позволяет форме и ее элементам управления, созданным на одном компьютере, отображаться соответствующим образом на другом компьютере.
 ms.date: 06/15/2017
 helpviewer_keywords:
 - scalability [Windows Forms], automatic in Windows Forms
 - Windows Forms, automatic scaling
 ms.assetid: 68fad25b-afbc-44bd-8e1b-966fc43507a4
-ms.openlocfilehash: 96dbbb5ed20027e25f1bde89748710766ec06506
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 93d6b9097c85d7fa7ca88b405ee3d3654e51304b
+ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76732372"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84903692"
 ---
 # <a name="automatic-scaling-in-windows-forms"></a>Автоматическое масштабирование в Windows Forms
 
@@ -40,13 +41,13 @@ ms.locfileid: "76732372"
 
 Этого механизма было достаточно для большинства целей, но он имел ряд ограничений.
 
-- Так как свойство <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A> представляет размер шрифта базовой линии как целочисленные значения, возникают ошибки округления, которые становятся очевидными, когда форма переключается с помощью нескольких разрешений.
+- Так как <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A> свойство представляет базовый размер шрифта как целочисленные значения, возникают ошибки округления, которые становятся очевидными, когда форма циклически проходит несколько разрешений.
 
 - Автоматическое масштабирование было реализовано только в классе <xref:System.Windows.Forms.Form>, но не в классе <xref:System.Windows.Forms.ContainerControl>. В результате пользовательский элемент управления масштабировался корректно, только если он был разработан с тем же разрешением, что и форма, и был помещен в форму во время разработки.
 
 - Несколько разработчиков могли параллельно разрабатывать формы и их дочерние элементы управления, только если разрешение экрана на их компьютерах совпадало. Аналогичным образом наследование форм зависело от разрешения родительской формы.
 
-- Он несовместим с новыми диспетчерами макетов, появившимися в .NET Framework версии 2,0, например <xref:System.Windows.Forms.FlowLayoutPanel> и <xref:System.Windows.Forms.TableLayoutPanel>.
+- Он несовместим с новыми диспетчерами макетов, появившимися в .NET Framework версии 2,0, например <xref:System.Windows.Forms.FlowLayoutPanel> и <xref:System.Windows.Forms.TableLayoutPanel> .
 
 - Он не поддерживал масштабирование непосредственно на основе разрешения экрана, необходимого для обеспечения совместимости с .NET Compact Framework.
 
