@@ -1,6 +1,7 @@
 ---
-title: Сделать поток-безопасные вызовы для элементов управления
+title: Осуществление потокобезопасных вызовов элементов управления
 ms.date: 02/19/2019
+description: Узнайте, как реализовать многопоточность в приложении путем вызова элементов управления между потоками потокобезопасным способом.
 dev_langs:
 - csharp
 - vb
@@ -15,22 +16,22 @@ helpviewer_keywords:
 - threading [Windows Forms], cross-thread calls
 - controls [Windows Forms], multithreading
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
-ms.openlocfilehash: 365b1acb693b9ff2be603a3e659ed8d846a7696a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b5f4de7bd3d8d89de98dbe27e2dbf360763670d0
+ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79142008"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84904186"
 ---
-# <a name="how-to-make-thread-safe-calls-to-windows-forms-controls"></a>Как: Делать вызовы для безопасности потоков на элементы управления Windows Forms
+# <a name="how-to-make-thread-safe-calls-to-windows-forms-controls"></a>Пошаговое руководство. Осуществление потокобезопасных вызовов элементов управления Windows Forms
 
-Многопоточность может повысить производительность приложений Windows Forms, но доступ к элементам управления Windows Forms по своей сути не является безопасным для потоков. Многопоточность может подвергнуть код очень серьезным и сложным ошибкам. Два или более потоков, манипулирующих управлением, могут привести управление к несогласованному состоянию и привести к расовым условиям, взаимоблокировкам и замораживаниям или зависаниям. Если вы реализуете многопоточность в приложении, обязательно вызовите элементы управления поперечным потоком безопасным способом. Для получения дополнительной информации [см.](../../../standard/threading/managed-threading-best-practices.md)
+Многопоточность может повысить производительность Windows Forms приложений, но доступ к элементам управления Windows Forms не является потокобезопасным. Многопоточность может представлять код для очень серьезных и сложных ошибок. Два или более потока, управляющих элементом управления, могут привести к нестабильному состоянию и вызвать условия гонки, взаимоблокировки, зависания или фиксации. При реализации многопоточности в приложении следует обязательно вызывать элементы управления между потоками потокобезопасным образом. Дополнительные сведения см. в разделе рекомендации по [управляемому потоку](../../../standard/threading/managed-threading-best-practices.md).
 
-Существует два способа безопасного вызова управления формами Windows из потока, который не создал этот элемент управления. Метод можно <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> использовать для вызова делегата, созданного в основном потоке, который, в свою очередь, вызывает элемент управления. Или можно реализовать <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>модель, управляемую событиями, чтобы отделить работу, проделанную в фоновом потоке, от отчетности о результатах.
+Существует два способа безопасного вызова элемента управления Windows Forms из потока, который не был создан этим элементом управления. Метод можно использовать <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> для вызова делегата, созданного в основном потоке, который, в свою очередь, вызывает элемент управления. Или можно реализовать <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> , который использует модель, управляемую событиями, для разделения работы, выполненной в фоновом потоке, от создания отчетов о результатах.
 
-## <a name="unsafe-cross-thread-calls"></a>Небезопасные перекрестные вызовы
+## <a name="unsafe-cross-thread-calls"></a>Ненадежные вызовы между потоками
 
-Небезопасно вызывать элемент управления непосредственно из потока, который его не создал. Следующий фрагмент кода иллюстрирует небезопасный вызов <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> в элемент управления. Обработчик `Button1_Click` событий `WriteTextUnsafe` создает новый поток, который <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> устанавливает свойство основного потока напрямую.
+Вызвать элемент управления напрямую из потока, который не создал его, неважно. В следующем фрагменте кода показан незащищенный вызов <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> элемента управления. `Button1_Click`Обработчик событий создает новый `WriteTextUnsafe` поток, который устанавливает свойство основного потока <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> напрямую.
 
 ```csharp
 private void Button1_Click(object sender, EventArgs e)
@@ -55,37 +56,37 @@ Private Sub WriteTextUnsafe()
 End Sub
 ```
 
-Отладка Visual Studio обнаруживает эти небезопасные <xref:System.InvalidOperationException> вызовы потока, повышая с сообщением, **Кросс-поток операции не действительны. Элемент управления "" доступ из потока, кроме потока, на** который он был создан. Всегда <xref:System.InvalidOperationException> происходит для небезопасных перекрестных потоков вызовов во время отладки Visual Studio, и может произойти во время выполнения приложения. Вы должны исправить проблему, но вы можете отключить <xref:System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls%2A?displayProperty=nameWithType> исключение, `false`установив свойство.
+Отладчик Visual Studio обнаруживает эти ненадежные вызовы потоков путем вызова исключения <xref:System.InvalidOperationException> с сообщением, **недопустимой операцией между потоками. Доступ к элементу управления "" осуществляется из потока, отличного от потока, в котором он был создан.** <xref:System.InvalidOperationException>Всегда происходит для ненадежных межпотоковых вызовов во время отладки Visual Studio и может возникнуть во время выполнения приложения. Проблему следует устранить, но можно отключить исключение, задав <xref:System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls%2A?displayProperty=nameWithType> для свойства значение `false` .
 
-## <a name="safe-cross-thread-calls"></a>Безопасные перекрестные вызовы
+## <a name="safe-cross-thread-calls"></a>Надежные вызовы между потоками
 
-Следующие примеры кода демонстрируют два способа безопасного вызова управления формами Windows из потока, который не создал его:
+В следующих примерах кода демонстрируются два способа безопасного вызова элемента управления Windows Forms из потока, который не создал его.
 
-1. Метод, <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> который вызывает делегата из основного потока для вызова элемента управления.
-2. Компонент, <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> который предлагает модель, управляемую событиями.
+1. <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName>Метод, который вызывает делегат из основного потока для вызова элемента управления.
+2. <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>Компонент, который предоставляет модель, управляемую событиями.
 
-В обоих примерах фоновый поток спит в течение одной секунды, чтобы имитировать работу, проделанную в этом потоке.
+В обоих примерах фоновый поток заждет одну секунду для имитации работы, выполняемой в этом потоке.
 
-Вы можете создавать и запускать эти примеры в виде приложений .NET Framework из командной строки C- или Visual Basic. Для получения дополнительной информации см. [здание Командной строки с csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) или [Build из командной строки (Visual Basic).](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)
+Вы можете собрать и запустить эти примеры как .NET Framework приложения из командной строки C# или Visual Basic. Дополнительные сведения см. в разделе [Построение из командной строки с помощью csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) или [Сборка из командной строки (Visual Basic)](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).
 
-Начиная с .NET Core 3.0, вы также можете создавать и запускать примеры приложений Windows .NET Core из папки с названием папки .NET Core Windows Forms * \<>.csproj* project file.
+Начиная с .NET Core 3,0, можно также создавать и запускать примеры как приложения Windows .NET Core из папки с файлом проекта .NET Core Windows Forms * \<folder name> . csproj* .
 
-## <a name="example-use-the-invoke-method-with-a-delegate"></a>Пример: Используйте метод Invoke с делегатом
+## <a name="example-use-the-invoke-method-with-a-delegate"></a>Пример. использование метода Invoke с делегатом
 
-В следующем примере показан шаблон для обеспечения безопасных вызовов потоков для управления формами Windows. Он запрашивает <xref:System.Windows.Forms.Control.InvokeRequired%2A?displayProperty=fullName> свойство, которое сравнивает идентификатор потока элемента управления с идентификатором вызывающего потока. Если иикты потока одинаковы, он вызывает элемент управления напрямую. Если иикты потока отличаются, <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=nameWithType> он вызывает метод с делегатом из основного потока, что делает фактический вызов к управлению.
+В следующем примере показан шаблон для обеспечения потокобезопасных вызовов элемента управления Windows Forms. Он запрашивает <xref:System.Windows.Forms.Control.InvokeRequired%2A?displayProperty=fullName> свойство, которое СРАВНИВАЕТ идентификатор потока создаваемого элемента управления с идентификатором вызывающего потока. Если идентификаторы потоков совпадают, он вызывает элемент управления напрямую. Если идентификаторы потоков отличаются, он вызывает <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=nameWithType> метод с делегатом из основного потока, который выполняет фактический вызов элемента управления.
 
-Позволяет `SafeCallDelegate` установить <xref:System.Windows.Forms.TextBox> свойство <xref:System.Windows.Forms.TextBox.Text%2A> элемента управления. Запросы `WriteTextSafe` метода <xref:System.Windows.Forms.Control.InvokeRequired%2A>. При <xref:System.Windows.Forms.Control.InvokeRequired%2A> `true` `WriteTextSafe` возврате, `SafeCallDelegate` передает <xref:System.Windows.Forms.Control.Invoke%2A> метод, чтобы сделать фактический вызов к элементу управления. Если <xref:System.Windows.Forms.Control.InvokeRequired%2A> `false` `WriteTextSafe` возвращается, <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> устанавливает непосредственно. Обработчик `Button1_Click` событий создает новый `WriteTextSafe` поток и запускает метод.
+`SafeCallDelegate`Позволяет задать <xref:System.Windows.Forms.TextBox> свойство элемента управления <xref:System.Windows.Forms.TextBox.Text%2A> . `WriteTextSafe`Метод запрашивает <xref:System.Windows.Forms.Control.InvokeRequired%2A> . Если <xref:System.Windows.Forms.Control.InvokeRequired%2A> возвращает `true` , `WriteTextSafe` передает в `SafeCallDelegate` метод, <xref:System.Windows.Forms.Control.Invoke%2A> чтобы выполнить фактический вызов элемента управления. Если <xref:System.Windows.Forms.Control.InvokeRequired%2A> возвращает `false` , `WriteTextSafe` задает <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> непосредственно. `Button1_Click`Обработчик событий создает новый поток и выполняет `WriteTextSafe` метод.
 
  [!code-csharp[ThreadSafeCalls#1](~/samples/snippets/winforms/thread-safe/example1/cs/Form1.cs)]
  [!code-vb[ThreadSafeCalls#1](~/samples/snippets/winforms/thread-safe/example1/vb/Form1.vb)]  
 
-## <a name="example-use-a-backgroundworker-event-handler"></a>Пример: Используйте обработчик событий BackgroundWorker
+## <a name="example-use-a-backgroundworker-event-handler"></a>Пример. использование обработчика событий BackgroundWorker
 
-Простой способ реализации многопоточности — это <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> компонент, в котором используется модель, управляемая событиями. Фоновый поток <xref:System.ComponentModel.BackgroundWorker.DoWork?displayProperty=nameWithType> запускает событие, которое не взаимодействует с основным потоком. Основной поток <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=nameWithType> запускает <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=nameWithType> обработчики событий, которые могут вызывать элементы управления основного потока.
+Простой способ реализации многопоточности заключается в использовании <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> компонента, использующего модель, управляемую событиями. Фоновый поток запускает <xref:System.ComponentModel.BackgroundWorker.DoWork?displayProperty=nameWithType> событие, которое не взаимодействует с основным потоком. Главный поток запускает <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=nameWithType> <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=nameWithType> обработчики событий и, которые могут вызывать элементы управления основного потока.
 
-Чтобы сделать вызов с <xref:System.ComponentModel.BackgroundWorker>безопасностью потока с помощью, создайте метод в <xref:System.ComponentModel.BackgroundWorker.DoWork> фоновом потоке для сработки и свяжите его с событием. Создайте другой метод в основном потоке, чтобы сообщить о <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> результатах фоновой работы и связать его с событием или событием. Чтобы запустить фоновый <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A?displayProperty=nameWithType>поток, позвоните .
+Чтобы сделать потокобезопасный вызов с помощью <xref:System.ComponentModel.BackgroundWorker> , создайте метод в фоновом потоке, чтобы выполнить работу, и привяжите его к <xref:System.ComponentModel.BackgroundWorker.DoWork> событию. Создайте другой метод в основном потоке, чтобы сообщить результаты фоновой работы и привязать его к <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> событию или. Чтобы запустить фоновый поток, вызовите <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A?displayProperty=nameWithType> .
 
-В примере <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> используется обработчик событий для установки <xref:System.Windows.Forms.TextBox> свойства элемента <xref:System.Windows.Forms.TextBox.Text%2A> управления. Например, с <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> помощью <xref:System.ComponentModel.BackgroundWorker>события см.
+В примере с помощью <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> обработчика событий задается <xref:System.Windows.Forms.TextBox> свойство элемента управления <xref:System.Windows.Forms.TextBox.Text%2A> . Пример использования <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> события см. в разделе <xref:System.ComponentModel.BackgroundWorker> .
 
  [!code-csharp[ThreadSafeCalls#2](~/samples/snippets/winforms/thread-safe/example2/cs/Form1.cs)]
  [!code-vb[ThreadSafeCalls#2](~/samples/snippets/winforms/thread-safe/example2/vb/Form1.vb)]  
@@ -93,6 +94,6 @@ End Sub
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ComponentModel.BackgroundWorker>
-- [Как: Выполнить операцию в фоновом режиме](how-to-run-an-operation-in-the-background.md)
-- [Как: Реализация формы, используюейейейую фоновая операция](how-to-implement-a-form-that-uses-a-background-operation.md)
-- [Разработка пользовательских элементов управления формами Windows с помощью рамочной программы .NET](developing-custom-windows-forms-controls.md)
+- [Как выполнить операцию в фоновом режиме](how-to-run-an-operation-in-the-background.md)
+- [Как реализовать форму, использующую фоновую операцию](how-to-implement-a-form-that-uses-a-background-operation.md)
+- [Разработка пользовательских элементов управления Windows Forms с помощью .NET Framework](developing-custom-windows-forms-controls.md)

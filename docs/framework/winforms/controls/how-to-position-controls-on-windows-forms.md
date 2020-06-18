@@ -1,5 +1,6 @@
 ---
 title: Размещение элементов управления
+description: Узнайте, как использовать конструктор Windows Forms в Visual Studio или свойство Location для размещения элементов управления.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -18,16 +19,16 @@ ms.assetid: 4693977e-34a4-4f19-8221-68c3120c2b2b
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 144a0021c74f0fb5afec1d511315168fb28528e9
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 0aa3faade71e0f7e0a9d5e676327a80747524b8c
+ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76735914"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84904303"
 ---
 # <a name="how-to-position-controls-on-windows-forms"></a>Как располагать элементы управления на Windows Forms
 
-Чтобы разместить элементы управления, используйте конструктор Windows Forms в Visual Studio или укажите свойство <xref:System.Windows.Forms.Control.Location%2A>.
+Чтобы разместить элементы управления, используйте конструктор Windows Forms в Visual Studio или укажите <xref:System.Windows.Forms.Control.Location%2A> свойство.
 
 ## <a name="position-a-control-on-the-design-surface-of-the-windows-forms-designer"></a>Размещение элемента управления в области конструктора конструктор Windows Forms
 
@@ -40,16 +41,16 @@ ms.locfileid: "76735914"
 
 1. В Visual Studio выберите элемент управления, который требуется разместить.
 
-2. В окне **Свойства** введите значения для свойства <xref:System.Windows.Forms.Control.Location%2A>, разделенные запятыми, чтобы разместить элемент управления в контейнере.
+2. В окне **Свойства** введите значения для <xref:System.Windows.Forms.Control.Location%2A> свойства, разделенные запятыми, чтобы разместить элемент управления в контейнере.
 
    Первое число (X) — это расстояние от левой границы контейнера; второе число (Y) — это расстояние от верхней границы области контейнера, измеряемое в пикселях.
 
    > [!NOTE]
-   > Можно развернуть свойство <xref:System.Windows.Forms.Control.Location%2A>, чтобы ввести значения **X** и **Y** по отдельности.
+   > Можно развернуть свойство, <xref:System.Windows.Forms.Control.Location%2A> чтобы ввести значения **X** и **Y** по отдельности.
 
 ## <a name="position-a-control-programmatically"></a>Размещение элемента управления программным способом
 
-1. Присвойте свойству <xref:System.Windows.Forms.Control.Location%2A> элемента управления значение <xref:System.Drawing.Point>.
+1. Присвойте <xref:System.Windows.Forms.Control.Location%2A> свойству элемента управления значение <xref:System.Drawing.Point> .
 
     ```vb
     Button1.Location = New Point(100, 100)
@@ -63,7 +64,7 @@ ms.locfileid: "76735914"
     button1->Location = Point(100, 100);
     ```
 
-2. Измените координату X расположения элемента управления с помощью подсвойства <xref:System.Windows.Forms.Control.Left%2A>.
+2. Измените координату X расположения элемента управления с помощью <xref:System.Windows.Forms.Control.Left%2A> подсвойства.
 
     ```vb
     Button1.Left = 300
@@ -79,7 +80,7 @@ ms.locfileid: "76735914"
 
 ## <a name="increment-a-controls-location-programmatically"></a>Программное увеличение расположения элемента управления
 
-Задайте подсвойство <xref:System.Windows.Forms.Control.Left%2A>, чтобы увеличить координату X элемента управления.
+Задайте <xref:System.Windows.Forms.Control.Left%2A> подсвойство, чтобы увеличить координату X элемента управления.
 
 ```vb
 Button1.Left += 200
@@ -94,7 +95,7 @@ button1->Left += 200;
 ```
 
 > [!NOTE]
-> Используйте свойство <xref:System.Windows.Forms.Control.Location%2A>, чтобы одновременно задать координаты X и Y элемента управления. Чтобы задать расположение по отдельности, используйте подсвойство <xref:System.Windows.Forms.Control.Left%2A> (**X**) или <xref:System.Windows.Forms.Control.Top%2A> (**Y**) элемента управления. Не пытайтесь неявно задать координаты X и Y структуры <xref:System.Drawing.Point>, представляющей расположение кнопки, так как эта структура содержит копию координат кнопки.
+> Используйте <xref:System.Windows.Forms.Control.Location%2A> свойство, чтобы одновременно задать координаты X и Y элемента управления. Чтобы задать расположение по отдельности, используйте <xref:System.Windows.Forms.Control.Left%2A> подсвойство (**X**) или <xref:System.Windows.Forms.Control.Top%2A> (**Y**) элемента управления. Не пытайтесь неявно задать координаты X и Y <xref:System.Drawing.Point> структуры, представляющей расположение кнопки, так как эта структура содержит копию координат кнопки.
 
 ## <a name="see-also"></a>См. также раздел
 
@@ -103,6 +104,6 @@ button1->Left += 200;
 - [Пошаговое руководство. Упорядочение элементов управления в формах Windows Forms с помощью элемента TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 - [Пошаговое руководство. Упорядочение элементов управления в формах Windows Forms с помощью элемента FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
 - [Создание меток и назначение сочетаний клавиш для элементов управления Windows Forms](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
-- [Элементы управления для использования в Windows Forms](controls-to-use-on-windows-forms.md)
+- [Элементы управления для использования в формах Windows Forms](controls-to-use-on-windows-forms.md)
 - [Функциональная классификация элементов управления Windows Forms](windows-forms-controls-by-function.md)
-- [Как задать расположение экрана Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/52aha046(v=vs.100))
+- [Практическое руководство. Установка расположения форм Windows Forms на экране](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/52aha046(v=vs.100))

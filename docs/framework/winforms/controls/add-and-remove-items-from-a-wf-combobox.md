@@ -1,6 +1,7 @@
 ---
 title: Добавление и удаление элементов из элемента управления ComboBox, ListBox или CheckedListBox
 ms.date: 03/30/2017
+description: Узнайте, как добавлять и удалять элементы управления ComboBox, ListBox и CheckedListBox Windows Forms просто и без привязки данных.
 dev_langs:
 - csharp
 - vb
@@ -14,19 +15,19 @@ helpviewer_keywords:
 - combo boxes [Windows Forms], removing items
 - CheckedListBox control [Windows Forms], adding and removing items
 ms.assetid: 7224c8d2-4118-443e-ae1e-d7c17d1e69ee
-ms.openlocfilehash: 3a83d98af42386b566b4af7bc11ff383dea8fd6b
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: f3701257bbe410bf03c4c21700705e87b581bf2e
+ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76746304"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84904446"
 ---
 # <a name="how-to-add-and-remove-items-from-a-windows-forms-combobox-listbox-or-checkedlistbox-control"></a>Практическое руководство. Добавление и удаление элементов, отображаемых в элементах управления ComboBox, ListBox и CheckedListBox в Windows Forms
-Элементы могут быть добавлены в Windows Forms поле со списком, списком или списком флажков различными способами, поскольку эти элементы управления могут быть привязаны к различным источникам данных. Однако в этом разделе демонстрируется простейший метод и не требуется привязка данных. Отображаемые элементы обычно являются строками. Однако можно использовать любой объект. Текст, отображаемый в элементе управления, является значением, возвращаемым методом `ToString` объекта.  
+Элементы могут быть добавлены в Windows Forms поле со списком, списком или списком флажков различными способами, поскольку эти элементы управления могут быть привязаны к различным источникам данных. Однако в этом разделе демонстрируется простейший метод и не требуется привязка данных. Отображаемые элементы обычно являются строками. Однако можно использовать любой объект. Текст, отображаемый в элементе управления, является значением, возвращаемым `ToString` методом объекта.  
   
 ### <a name="to-add-items"></a>Добавление элементов  
   
-1. Добавьте строку или объект в список с помощью метода `Add` класса `ObjectCollection`. Ссылка на коллекцию осуществляется с помощью свойства `Items`:  
+1. Добавьте строку или объект в список с помощью `Add` метода `ObjectCollection` класса. Ссылка на коллекцию осуществляется с помощью `Items` Свойства:  
   
     ```vb  
     ComboBox1.Items.Add("Tokyo")  
@@ -40,9 +41,9 @@ ms.locfileid: "76746304"
     comboBox1->Items->Add("Tokyo");  
     ```  
   
-     - или -  
+     - или  
   
-2. Вставьте строку или объект в нужную точку списка с помощью метода `Insert`:  
+2. Вставьте строку или объект в нужную точку списка с помощью `Insert` метода:  
   
     ```vb  
     CheckedListBox1.Items.Insert(0, "Copenhagen")  
@@ -56,9 +57,9 @@ ms.locfileid: "76746304"
     checkedListBox1->Items->Insert(0, "Copenhagen");  
     ```  
   
-     - или -  
+     - или  
   
-3. Присвойте `Items` коллекции весь массив:  
+3. Назначьте весь массив `Items` коллекции:  
   
     ```vb  
     Dim ItemObject(9) As System.Object  
@@ -89,9 +90,9 @@ ms.locfileid: "76746304"
   
 ### <a name="to-remove-an-item"></a>Удаление элемента  
   
-1. Вызовите метод `Remove` или `RemoveAt`, чтобы удалить элементы.  
+1. Вызовите `Remove` метод или, `RemoveAt` чтобы удалить элементы.  
   
-     `Remove` имеет один аргумент, указывающий удаляемый элемент.`RemoveAt` Удаляет элемент с указанным номером индекса.  
+     `Remove`содержит один аргумент, указывающий удаляемый элемент.`RemoveAt` Удаляет элемент с указанным номером индекса.  
   
     ```vb  
     ' To remove item with index 0:  
@@ -122,7 +123,7 @@ ms.locfileid: "76746304"
   
 ### <a name="to-remove-all-items"></a>Удаление всех элементов  
   
-1. Вызовите метод `Clear`, чтобы удалить все элементы из коллекции:  
+1. Вызовите `Clear` метод, чтобы удалить все элементы из коллекции:  
   
     ```vb  
     ListBox1.Items.Clear()  
