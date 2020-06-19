@@ -1,5 +1,6 @@
 ---
-title: Структура EXCEPINFO (stdole)
+title: Структура ЕКСЦЕПИНФО (стдоле)
+description: Получите справочные сведения о структуре ЕКСЦЕПИНФО в .NET. Структура находится в пространстве имен стдоле и сборке стдоле.
 ms.date: 03/28/2019
 topic_type:
 - apiref
@@ -9,21 +10,21 @@ api_location:
 - stdole.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 258ce5e63c9095e5a451d807d588f31512f5e5fd
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 714ce7e371045dfc6387030d6a7b6b020fa96684
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61675290"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989527"
 ---
-# <a name="excepinfo-structure"></a><span data-ttu-id="3923a-102">Структура EXCEPINFO</span><span class="sxs-lookup"><span data-stu-id="3923a-102">EXCEPINFO Structure</span></span>
+# <a name="excepinfo-structure"></a><span data-ttu-id="405b7-104">Структура EXCEPINFO</span><span class="sxs-lookup"><span data-stu-id="405b7-104">EXCEPINFO Structure</span></span>
 
 ```csharp
 public struct EXCEPINFO
 ```
 
-## <a name="requirements"></a><span data-ttu-id="3923a-103">Требования</span><span class="sxs-lookup"><span data-stu-id="3923a-103">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="405b7-105">Требования</span><span class="sxs-lookup"><span data-stu-id="405b7-105">Requirements</span></span>
 
-<span data-ttu-id="3923a-104">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="3923a-104">**Namespace:** `stdole`</span></span>
+<span data-ttu-id="405b7-106">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="405b7-106">**Namespace:** `stdole`</span></span>
 
-<span data-ttu-id="3923a-105">**Сборка:** stdole (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="3923a-105">**Assembly:** stdole (in stdole.dll)</span></span>
+<span data-ttu-id="405b7-107">**Сборка:** стдоле (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="405b7-107">**Assembly:** stdole (in stdole.dll)</span></span>

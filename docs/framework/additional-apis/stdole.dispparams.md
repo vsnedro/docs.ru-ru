@@ -1,5 +1,6 @@
 ---
-title: Структуры DISPPARAMS (stdole)
+title: Структура DISPPARAMS (стдоле)
+description: Получите справочные сведения о структуре DISPPARAMS в .NET. Структура находится в пространстве имен стдоле и сборке стдоле.
 ms.date: 03/16/2019
 topic_type:
 - apiref
@@ -9,21 +10,21 @@ api_location:
 - stdole.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 3f424dffae8c8f40bd87ab3d46a6645a31aa7fcb
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8b07d400649fda2af2035fa6a23d2a45d9b0a095
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61706108"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989557"
 ---
-# <a name="dispparams-structure"></a><span data-ttu-id="55901-102">Структура DISPPARAMS</span><span class="sxs-lookup"><span data-stu-id="55901-102">DISPPARAMS Structure</span></span>
+# <a name="dispparams-structure"></a><span data-ttu-id="ee240-104">Структура DISPPARAMS</span><span class="sxs-lookup"><span data-stu-id="ee240-104">DISPPARAMS Structure</span></span>
 
 ```csharp
 public struct DISPPARAMS
 ```
 
-## <a name="requirements"></a><span data-ttu-id="55901-103">Требования</span><span class="sxs-lookup"><span data-stu-id="55901-103">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="ee240-105">Требования</span><span class="sxs-lookup"><span data-stu-id="ee240-105">Requirements</span></span>
 
-<span data-ttu-id="55901-104">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="55901-104">**Namespace:** `stdole`</span></span>
+<span data-ttu-id="ee240-106">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="ee240-106">**Namespace:** `stdole`</span></span>
 
-<span data-ttu-id="55901-105">**Сборка:** stdole (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="55901-105">**Assembly:** stdole (in stdole.dll)</span></span>
+<span data-ttu-id="ee240-107">**Сборка:** стдоле (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="ee240-107">**Assembly:** stdole (in stdole.dll)</span></span>
