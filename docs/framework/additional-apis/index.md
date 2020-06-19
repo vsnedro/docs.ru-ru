@@ -1,6 +1,7 @@
 ---
 title: Дополнительные библиотеки классов и интерфейсы API
-ms.date: 11/19/2019
+description: Изучите дополнительные библиотеки классов и API-интерфейсы в .NET, включая проекты с внешними интерфейсами (OOB), библиотеки для конкретных платформ и частные интерфейсы API.
+ms.date: 06/12/2020
 helpviewer_keywords:
 - Additional class libraries
 - Additional managed libraries
@@ -8,22 +9,22 @@ helpviewer_keywords:
 - out-of-band releases
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
 ms.topic: conceptual
-ms.openlocfilehash: abf7fd20988ebaaaf1a40ccc168c636fd0dacc1d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0b888d2f0e80685ba993682b2f3067cf8aee15bc
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155912"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989735"
 ---
 # <a name="additional-class-libraries-and-apis"></a>Дополнительные библиотеки классов и интерфейсы API
 
-Рамочная программа .NET постоянно развивается. Для улучшения кросс-платформенной разработки и раннего внедрения новых функциональных возможностей новые функции выходят из группы (OOB). В этом разделе перечислены внештатные проекты, для которых мы предоставляем документацию.  
-  
-Кроме того, некоторые библиотеки предназначены для конкретных платформ или реализаций .NET Framework. Например, <xref:System.Text.CodePagesEncodingProvider> класс делает кодовые коды кодовыми кодами доступными для приложений UWP, разработанных с помощью рамочной программы .NET. В этой статье эти библиотеки перечислены тоже.  
-  
+В этой статье перечислены .NET Framework интерфейсы API, которые были освобождены с помощью аппаратного контроллера управления, нацелены на определенную платформу или являются частными или внутренними типами.
+
 ## <a name="oob-projects"></a>Внештатные проекты
-  
-| Проект | Описание |  
+
+Чтобы улучшить разработку на разных платформах и впервые добавить новые функции, некоторые .NET Framework функции были выпущены с использованием аппаратного контроллера управления (OOB).
+
+| Project | Описание |  
 | ------- | ----------- |  
 | <xref:System.Collections.Immutable> | Предоставляет потокобезопасные коллекции, содержимое которых никогда не меняется. |
 | <xref:System.Net.Http.WinHttpHandler> | Предоставляет обработчик сообщений для <xref:System.Net.Http.HttpClient> на основе интерфейса WinHTTP ОС Windows. |
@@ -31,65 +32,77 @@ ms.locfileid: "79155912"
 | <xref:System.Threading.Tasks.Dataflow> | Библиотека потоков данных TPL предоставляет компоненты потока данных, позволяющие повысить надежность приложений с поддержкой параллелизма. |  
 
 ## <a name="platform-specific-libraries"></a>Библиотеки для конкретных платформ
+
+Некоторые библиотеки предназначены для конкретных платформ. Например, <xref:System.Text.CodePagesEncodingProvider> класс делает кодировки кодовых страниц доступными для приложений UWP, разработанных с помощью .NET Framework.
   
-| Проект | Описание |  
+| Project | Описание |  
 | ------- | ----------- |  
-| <xref:System.Text.CodePagesEncodingProvider> | Расширяет <xref:System.Text.EncodingProvider> класс, чтобы сделать кодкодирование страницкода доступным для приложений, ориентированных на платформу Universal Windows. |  
+| <xref:System.Text.CodePagesEncodingProvider> | Расширяет <xref:System.Text.EncodingProvider> класс, чтобы сделать кодировки кодовых страниц доступными для приложений, предназначенных для универсальная платформа Windows. |  
   
 ## <a name="private-apis"></a>Частные интерфейсы API  
 
-Эти API-интерфейсы используются для поддержки инфраструктуры продукта и не предназначены для использования непосредственно в коде.  
+Эти API поддерживают инфраструктуру продукта и не предназначены для использования непосредственно из кода.  
   
-* [Microsoft.SqlServer.Server.SmiOrderProperty.Item собственности](microsoft.sqlserver.server.smiorderproperty.item.md)
-* [Метод System.Exception.PrepForRemoting](system.exception.prepforremoting.md)
-* [Недвижимость System.Data.SqlTypes.SqlChars.Stream](system.data.sqltypes.sqlchars.stream.md)
-* [Строитель System.Data.SqlTypes.SqlStreamChars](system.data.sqltypes.sqlstreamchars.-ctor.md)
-* [System.Data.SqlTypes.SqlStreamChars.CanSeek Property](system.data.sqltypes.sqlstreamchars.canseek.md)
-* [System.Data.SqlTypes.SqlStreamChars.IsNull Property](system.data.sqltypes.sqlstreamchars.isnull.md)
-* [System.Data.SqlTypes.SqlStreamChars.Length Property](system.data.sqltypes.sqlstreamchars.length.md)
-* [Метод System.Data.SqlTypes.SqlStreamChars.Close](system.data.sqltypes.sqlstreamchars.close.md)
-* [Метод System.Data.SqlTypes.SqlStreamChars.Dispose](system.data.sqltypes.sqlstreamchars.dispose.md)
-* [Метод System.Data.SqlTypes.SqlStreamChars.Flush](system.data.sqltypes.sqlstreamchars.flush.md)
-* [Метод System.Data.SqlTypes.SqlStreamChars.Read](system.data.sqltypes.sqlstreamchars.read.md)
-* [Метод System.Data.SqlTypes.SqlStreamChars.Seek](system.data.sqltypes.sqlstreamchars.seek.md)
-* [Метод System.Data.SqlTypes.SqlStreamChars.SetМетод](system.data.sqltypes.sqlstreamchars.setlength.md)
-* [Метод System.Data.SqlTypes.SqlStreamChars.Write](system.data.sqltypes.sqlstreamchars.write.md)
-* [Метод System.IO.Memorystream.InternalgetOriginandAndLength Метод](system.io.memorystream.internalgetoriginandlength.md)
-* [Класс Подключения System.Net.](connection.md)
-* [System.Net.Connection.m\_WriteList Поле](m_writelist.md)
-* [Класс System.Net.ConnectionGroup](connectiongroup.md)
-* [System.Net.ConnectionGroup.m\_ConnectionList Field](m_connectionlist.md)
-* [Недвижимость System.Net.ConnectStream.Connection](system.net.connectstream.connection.md)
-* [Класс System.Net.CoreResponseData](coreresponsedata.md)
-* [System.Net.CoreResponseData.m\_ResponseHeaders Field](coreresponsedata_m_responseheaders.md)
-* [System.Net.CoreResponseData.m\_StatusCode Field](coreresponsedata_m_statuscode.md)
-* [System.net.httpwebRequest. \_АвтоРенаправляет поле](_autoredirects.md)
-* [System.net.httpwebRequest. \_Поле CoreResponse](httpwebrequest__coreresponse.md)
-* [System.net.httpwebRequest. \_Поле httpResponse](_httpresponse.md)
-* [Недвижимость System.Net.PooledStream.NetworkStream](system.net.pooledstream.networkstream.md)
-* [Класс System.Net.RtcState](system.net.rtcstate.md)
-* [System.Net.ServicePoint.m\_ConnectionGroupList Поле](m_connectiongrouplist.md)
-* [System.Net.ServicePointManager.s\_ServicePointTable Поле](s_servicepointtable.md)
-* [System.Net.TlsStream.m_Worker Поле](system.net.tlsstream.m_worker.md)
-* [Недвижимость System.Net.Security.Sslstate.SslProtocol](system.net.security.sslstate.sslprotocol.md)
-* [Метод System.ServiceModel.channels.message.BodyTostring](system.servicemodel.channels.message.bodytostring.md)
-* [Метод System.ServiceModel.Channels.Message.WriteStartHeaders](system.servicemodel.channels.message.writestartheaders.md)
-* [System.Windows.Diagnostics.VisualDiagnostics.s\_является DebuggerCheckDisabledForTestPurposes Поле](s-isdebuggercheckdisabledfortestpurposes-field.md)
-* [Класс System.Windows.Forms.Design.DataMemberFieldEditor Класс](datamemberfieldeditor-class.md)
-* [System.Windows.Forms.Design.DataMemberListEditor Класс](datamemberlisteditor-class.md)
-* [Метод System.Xml.XmlReader.CreateSqlReader](system.xml.xmlreader.createsqlreader.md)
-* [Adodb. Интерфейс подключения](adodb.connection.md)
-* [Adodb. EventReason Enum](adodb.eventreasonenum.md)
-* [Adodb. EventStatus Enum](adodb.eventstatusenum.md)
-* [stdole. Структура DISPPARAMS](stdole.dispparams.md)
-* [stdole. Структура EXCEPINFO](stdole.excepinfo.md)
-* [stdole. IFont.Name недвижимость](stdole.ifont.name.md)
-* [stdole. Интерфейс IFontDisp](stdole.ifontdisp.md)
-* [stdole. Недвижимость IPicture.Handle](stdole.ipicture.handle.md)
-* [stdole. Недвижимость IPictureDisp.Handle](stdole.ipicturedisp.handle.md)
-* [stdole. Интерфейс StdFont](stdole.stdfont.md)
-* [stdole. Интерфейс StdPicture](stdole.stdpicture.md)
+* [Свойство Microsoft. SqlServer. Server. Смиордерпроперти. Item](microsoft.sqlserver.server.smiorderproperty.item.md)
+* [Метод System. Exception. Препфорремотинг](system.exception.prepforremoting.md)
+* [Свойство System. Data. SqlTypes. SqlChars. Stream](system.data.sqltypes.sqlchars.stream.md)
+* [Конструктор System. Data. SqlTypes. Склстреамчарс](system.data.sqltypes.sqlstreamchars.-ctor.md)
+* [Свойство System. Data. SqlTypes. Склстреамчарс. CanSeek](system.data.sqltypes.sqlstreamchars.canseek.md)
+* [Свойство System. Data. SqlTypes. Склстреамчарс. IsNull](system.data.sqltypes.sqlstreamchars.isnull.md)
+* [Свойство System. Data. SqlTypes. Склстреамчарс. length](system.data.sqltypes.sqlstreamchars.length.md)
+* [Метод System. Data. SqlTypes. Склстреамчарс. Close](system.data.sqltypes.sqlstreamchars.close.md)
+* [Метод System. Data. SqlTypes. Склстреамчарс. Dispose](system.data.sqltypes.sqlstreamchars.dispose.md)
+* [Метод System. Data. SqlTypes. Склстреамчарс. Flush](system.data.sqltypes.sqlstreamchars.flush.md)
+* [Метод System. Data. SqlTypes. Склстреамчарс. Read](system.data.sqltypes.sqlstreamchars.read.md)
+* [Метод System. Data. SqlTypes. Склстреамчарс. Seek](system.data.sqltypes.sqlstreamchars.seek.md)
+* [Метод System. Data. SqlTypes. Склстреамчарс. SetLength](system.data.sqltypes.sqlstreamchars.setlength.md)
+* [Метод System. Data. SqlTypes. Склстреамчарс. Write](system.data.sqltypes.sqlstreamchars.write.md)
+* [Метод System. IO. MemoryStream. Интерналжеторигинандленгс](system.io.memorystream.internalgetoriginandlength.md)
+* [Класс System .NET. Комнетос](system.net.comnetos.md)
+* [Класс System .NET. Connection](connection.md)
+* [Поле системы .NET. Connection. m \_ врителист](m_writelist.md)
+* [Класс System .NET. Коннектионграуп](connectiongroup.md)
+* [System .NET. Коннектионграуп. m \_ коннектионлист, поле](m_connectionlist.md)
+* [Свойство System .NET. Коннектстреам. Connection](system.net.connectstream.connection.md)
+* [Класс System .NET. Коререспонседата](coreresponsedata.md)
+* [System .NET. Коререспонседата. m \_ ResponseHeaders, поле](coreresponsedata_m_responseheaders.md)
+* [Поле StatusCode System .NET. Коререспонседата. m \_](coreresponsedata_m_statuscode.md)
+* [Класс System .NET. Ексцептионхелпер](system.net.exceptionhelper.md)
+* [Класс System .NET. Хттпстатусдескриптион](system.net.httpstatusdescription.md)
+* [System .NET. HttpWebRequest. \_ Поле перенаправлений](_autoredirects.md)
+* [System .NET. HttpWebRequest. \_ Поле Коререспонсе](httpwebrequest__coreresponse.md)
+* [System .NET. HttpWebRequest. \_ Поле HttpResponse](_httpresponse.md)
+* [Класс System .NET. Logging](system.net.logging.md)
+* [Класс System .NET. mail. Маиладдресспарсер](system.net.mail.mailaddressparser.md)
+* [Класс System .NET. mail. Куотедпаирреадер](system.net.mail.quotedpairreader.md)
+* [Класс System .NET. MIME. Маилбнфхелпер](system.net.mime.mailbnfhelper.md)
+* [Свойство System .NET. Пуледстреам. NetworkStream](system.net.pooledstream.networkstream.md)
+* [Класс System .NET. Рткстате](system.net.rtcstate.md)
+* [Свойство System .NET. Security. Сслстате. Сслпротокол](system.net.security.sslstate.sslprotocol.md)
+* [System .NET. ServicePoint. m \_ коннектионграуплист, поле](m_connectiongrouplist.md)
+* [System .NET. ServicePointManager. Клосеконнектионграупс, метод](system.net.servicepointmanager.closeconnectiongroups.md)
+* [Поле System .NET. ServicePointManager. s \_ сервицепоинттабле](s_servicepointtable.md)
+* [Поле System .NET. Тлсстреам. m_Worker](system.net.tlsstream.m_worker.md)
+* [Класс System .NET. Унсафенклнативемесодс](system.net.unsafenclnativemethods.md)
+* [System .NET. Вебхеадерколлектион. Аддинтернал, метод](system.net.webheadercollection.addinternal.md)
+* [Метод System. ServiceModel. Channels. Message. Бодитостринг](system.servicemodel.channels.message.bodytostring.md)
+* [Метод System. ServiceModel. Channels. Message. Вритестарсеадерс](system.servicemodel.channels.message.writestartheaders.md)
+* [System. Windows. Diagnostics. Висуалдиагностикс. s \_ исдебугжерчеккдисабледфортестпурпосес, поле](s-isdebuggercheckdisabledfortestpurposes-field.md)
+* [Класс System. Windows. Forms. Design. DataMemberFieldEditor](datamemberfieldeditor-class.md)
+* [Класс System. Windows. Forms. Design. DataMemberListEditor](datamemberlisteditor-class.md)
+* [МетодSystem.Xml.XmlReader. Креатесклреадер](system.xml.xmlreader.createsqlreader.md)
+* [ADODB. Интерфейс подключения](adodb.connection.md)
+* [ADODB. Перечисление Евентреасон](adodb.eventreasonenum.md)
+* [ADODB. Перечисление Евентстатус](adodb.eventstatusenum.md)
+* [стдоле. Структура DISPPARAMS](stdole.dispparams.md)
+* [стдоле. Структура ЕКСЦЕПИНФО](stdole.excepinfo.md)
+* [стдоле. IFont.Name, свойство](stdole.ifont.name.md)
+* [стдоле. Интерфейс IFontDisp](stdole.ifontdisp.md)
+* [стдоле. Ипиктуре. Handle, свойство](stdole.ipicture.handle.md)
+* [стдоле. Ипиктуредисп. Handle, свойство](stdole.ipicturedisp.handle.md)
+* [стдоле. Интерфейс Стдфонт](stdole.stdfont.md)
+* [стдоле. Интерфейс Стдпиктуре](stdole.stdpicture.md)
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-* [.NET Framework и отдельные выпуски](../get-started/the-net-framework-and-out-of-band-releases.md)
+* [.NET Framework и внештатные выпуски](../get-started/the-net-framework-and-out-of-band-releases.md)

@@ -1,5 +1,6 @@
 ---
-title: Перечисление EventReason (adodb)
+title: Перечисление Евентреасон (ADODB)
+description: Получение сведений о перечислении Евентреасон в .NET. Это перечисление находится в пространстве имен ADODB и сборке ADODB (в библиотеке adodb.dll).
 ms.date: 03/28/2019
 topic_type:
 - apiref
@@ -9,29 +10,29 @@ api_location:
 - adodb.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 0d02fb683335cf0db7d73d9d3ea545e65ca384a9
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: bbb616625777e0193af4da10770502da904f401a
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61675472"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989890"
 ---
-# <a name="eventreason-enumeration"></a>EventReason Enumeration
+# <a name="eventreason-enumeration"></a>Перечисление Евентреасон
 
 ```csharp
 [GuidAttribute("00000531-0000-0010-8000-00AA006D2EA4")]
 public enum EventReasonEnum
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
-| Имя члена  | Описание  |
+| Имя участника  | Описание  |
 |---|---|
-|adRsnAddNew  |   |
+|адрснадднев  |   |
 |adRsnDelete  |   |
 |adRsnUpdate  |   |
 |adRsnUndoUpdate  |   |
-|adRsnUndoAddNew  |   |
+|адрснундоадднев  |   |
 |adRsnUndoDelete  |   |
 |adRsnRequery  |   |
 |adRsnResynch  |   |
@@ -46,4 +47,4 @@ public enum EventReasonEnum
 
 **Пространство имен:** `adodb`
 
-**Сборка:** adodb (в adodb.dll)
+**Сборка:** ADODB (в adodb.dll)

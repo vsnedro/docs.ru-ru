@@ -1,5 +1,6 @@
 ---
-title: ServicePointManager.s_ServicePointTable Field
+title: Поле ServicePointManager. s_ServicePointTable
+description: Прочитайте о поле ServicePointManager. s_ServicePointTable в .NET. Это поле хэш-таблицы содержит активные HTTP-соединения (Сервицепоинтс) в домене приложения.
 ms.date: 05/01/2017
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
-ms.openlocfilehash: 6a56ecd6fc85005f5987c3c2ad0d1680ca63c398
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9462ae10125dd37706f786a1f2cef78e62fbabcc
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155821"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989549"
 ---
-# <a name="servicepointmanagers_servicepointtable-field"></a>ServicePointManager.s\_ServicePointTable поле
+# <a name="servicepointmanagers_servicepointtable-field"></a>ServicePointManager. s \_ Сервицепоинттабле поле
 
-`ServicePointManager.s_ServicePointTable`является, <xref:System.Collections.Hashtable> который содержит список активных соединений HTTP (s)<xref:System.Net.ServicePoint>в . <xref:System.AppDomain>
+`ServicePointManager.s_ServicePointTable`значение типа <xref:System.Collections.Hashtable> , содержащее список активных HTTP-соединений <xref:System.Net.ServicePoint> в <xref:System.AppDomain> .
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -28,14 +29,14 @@ private static Hashtable s_ServicePointTable
 ```
 
 > [!WARNING]
-> Поле `ServicePointManager.s_ServicePointTable` является частным и не предназначено для использования непосредственно в коде.
+> `ServicePointManager.s_ServicePointTable`Поле является закрытым и не предназначено для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого поля в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого поля в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.

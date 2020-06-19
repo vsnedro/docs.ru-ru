@@ -1,5 +1,6 @@
 ---
 title: Класс ConnectionGroup
+description: Ознакомьтесь с классом Коннектионграуп, который группирует соединения в контексте ServicePoint и используется для сохранения контекста сетевых ресурсов в .NET.
 ms.date: 05/01/2017
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 25c08217-fdeb-44b9-9cd6-1b4955d6e602
-ms.openlocfilehash: 8ebc97112d2044efca85520ee942ed0f587529ee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7121713b26880f2490b40d59d92d431a567519b3
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79156159"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989813"
 ---
 # <a name="connectiongroup-class"></a>Класс ConnectionGroup
 
-Класс `ConnectionGroup` группирует список соединений в контексте <xref:System.Net.ServicePoint> и используется для поддержания контекста для сетевых ресурсов (например, прокси и отдельных клиентов).
+`ConnectionGroup`Класс группирует список соединений в <xref:System.Net.ServicePoint> контексте и используется для сохранения контекста сетевых ресурсов (например, для прокси-серверов и отдельных клиентов).
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -28,14 +29,14 @@ internal class ConnectionGroup
 ```
 
 > [!WARNING]
-> Класс `ConnectionGroup` является внутренним и не предназначен для использования непосредственно в коде.
+> `ConnectionGroup`Класс является внутренним и не предназначен для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого класса в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого класса в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.

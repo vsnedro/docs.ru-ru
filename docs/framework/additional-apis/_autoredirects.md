@@ -1,5 +1,6 @@
 ---
-title: HttpWebRequest._AutoRedirects поле
+title: HttpWebRequest. _AutoRedirects поле
+description: Прочитайте о поле HttpWebRequest. _AutoRedirects в .NET. Это поле представляет собой значение Int32, отражающее количество перенаправлений, сделанных для веб-запроса HTTP.
 ms.date: 05/01/2017
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: bd58e91c-4e35-4866-9d55-75ff58c3ed73
-ms.openlocfilehash: ff4b9b430bdb9ebc82a945012dcb53ed83b1e48f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 62c765a26424a5c0a96f291aae0a6ccdf0546d46
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79156302"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989977"
 ---
-# <a name="httpwebrequest_autoredirects-field"></a>HttpWebRequest. \_АвтоРенаправляет поле
+# <a name="httpwebrequest_autoredirects-field"></a>HttpWebRequest. \_ Поле перенаправлений
 
-`HttpWebRequest._AutoRedirects`является <xref:System.Int32> то, что отражает количество перенаправлений, сделанных для этого <xref:System.Net.HttpWebRequest>.
+`HttpWebRequest._AutoRedirects`значение параметра <xref:System.Int32> , отражающее количество перенаправлений, выполненных для данного объекта <xref:System.Net.HttpWebRequest> .
 
 ## <a name="syntax"></a>Синтаксис  
   
@@ -28,14 +29,14 @@ private int _AutoRedirects
 ```
 
 > [!WARNING]
-> Поле `HttpWebRequest._AutoRedirects` является внутренним и не предназначено для использования непосредственно в коде.
+> `HttpWebRequest._AutoRedirects`Поле является внутренним и не предназначено для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого поля в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого поля в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.

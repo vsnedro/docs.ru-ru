@@ -1,5 +1,6 @@
 ---
-title: HttpWebRequest._CoreResponse поле
+title: HttpWebRequest. _CoreResponse поле
+description: Прочитайте о поле HttpWebRequest. _CoreResponse в .NET. Это поле является объектом Коререспонседата или Exception, содержащим результат синтаксического анализа ответа HTTP.
 ms.date: 01/29/2018
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 author: stevewhims
-ms.openlocfilehash: b275f3eece96ac8a9ae3fb0ebd030c8d79e21fc1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5093ec7ed2c3b94931dcd622ae9ccdb42feffa18
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155925"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989754"
 ---
-# <a name="httpwebrequest_coreresponse-field"></a>HttpWebRequest. \_Поле CoreResponse
+# <a name="httpwebrequest_coreresponse-field"></a>HttpWebRequest. \_ Поле Коререспонсе
 
-`HttpWebRequest._CoreResponse`— объект (либо [CoreResponseData,](coreresponsedata.md) либо <xref:System.Exception>), содержащий результат анализа ответов HTTP.
+`HttpWebRequest._CoreResponse`— Это объект ( [коререспонседата](coreresponsedata.md) или <xref:System.Exception> ), содержащий результат синтаксического анализа ответа HTTP.
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -28,14 +29,14 @@ private object _CoreResponse
 ```
 
 > [!WARNING]
-> Этот API не предназначен для использования непосредственно в коде. Вместо этого следует <xref:System.Diagnostics.DiagnosticSource> использовать сетевой код. Смотрите [руководство DiagnosticSource пользователя](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
+> Этот API не предназначен для непосредственного использования в коде. Вместо этого следует использовать <xref:System.Diagnostics.DiagnosticSource> для подключения сетевого кода. Ознакомьтесь с [руководством пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого класса в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого класса в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.

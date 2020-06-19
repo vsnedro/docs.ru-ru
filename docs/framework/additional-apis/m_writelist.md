@@ -1,5 +1,6 @@
 ---
-title: Поле connection.m_WriteList
+title: Поле Connection. m_WriteList
+description: Получение сведений о поле Connection. m_WriteList в .NET. Это поле ArrayList содержит объекты HttpWebRequest, которые помещаются в очередь для отправки по протоколу HTTP.
 ms.date: 05/01/2017
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 235503c1-1d01-4f59-895f-ae2cf15b3345
-ms.openlocfilehash: 6c60831ddf23ce8ac9afcf244383d24732c3ef8b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a627cb062036e3ab098c2d6e97f9a77ebfa75a33
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155841"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989600"
 ---
-# <a name="connectionm_writelist-field"></a>Connection.m\_WriteList поле
+# <a name="connectionm_writelist-field"></a>Поле Connection. m \_ врителист
 
-`Connection.m_WriteList`является <xref:System.Collections.ArrayList> объектом, <xref:System.Net.HttpWebRequest> которые стоят в очереди для отправки по HTTP.
+`Connection.m_WriteList`— Это объект, находящихся в <xref:System.Collections.ArrayList> <xref:System.Net.HttpWebRequest> очереди на отправку по протоколу HTTP.
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -28,14 +29,14 @@ private ArrayList m_WriteList
 ```
 
 > [!WARNING]
-> Поле `Connection.m_WriteList` является частным и не предназначено для использования непосредственно в коде.
+> `Connection.m_WriteList`Поле является закрытым и не предназначено для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого поля в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого поля в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.

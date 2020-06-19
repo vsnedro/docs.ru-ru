@@ -1,5 +1,6 @@
 ---
-title: Интерфейс подключения (adodb)
+title: Интерфейс соединения (ADODB)
+description: См. справочные сведения о интерфейсе подключения в .NET. Этот интерфейс находится в пространстве имен ADODB и сборке ADODB (в библиотеке adodb.dll).
 ms.date: 03/28/2019
 topic_type:
 - apiref
@@ -9,12 +10,12 @@ api_location:
 - adodb.dll
 api_type:
 - Assembly
-ms.openlocfilehash: cb80fb7071398e07e1d86aa920fae1895ea34081
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e1889715b6cd11746056558b76e21f6226d4161f
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79156211"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989943"
 ---
 # <a name="connection-interface"></a>Интерфейс Connection
 
@@ -26,6 +27,6 @@ public interface Connection : _Connection,
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**`adodb`
+**Пространство имен:** `adodb`
 
-**Сборка:** adodb (в adodb.dll)
+**Сборка:** ADODB (в adodb.dll)

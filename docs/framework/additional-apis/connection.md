@@ -1,5 +1,6 @@
 ---
-title: Класс подключения (System.Net)
+title: Класс Connection (System.Net)
+description: Сведения о классе Connection в .NET. Этот класс выполняет синтаксический анализ ответов сервера, запросов очереди и конвейерных запросов. Он находится в пространстве имен System.NET.
 ms.date: 05/01/2017
 ms.technology: dotnet-networking
 topic_type:
@@ -11,16 +12,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
-ms.openlocfilehash: dc0a594f7ae2bb9fc1883ec7ef672805bbc08778
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cb28724ed782fc5395dc74e9c59249ebdea44ddf
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79156185"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989829"
 ---
 # <a name="connection-class"></a>Класс Connection
 
-Класс `Connection` разбирает ответы сервера, запросы очередей и конвейерные запросы.
+`Connection`Класс анализирует ответы сервера, запросы очереди и конвейерные запросы.
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -29,14 +30,14 @@ internal class Connection : PooledStream
 ```
 
 > [!WARNING]
-> Класс `Connection` является внутренним и не предназначен для использования непосредственно в коде.
+> `Connection`Класс является внутренним и не предназначен для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого класса в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого класса в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.

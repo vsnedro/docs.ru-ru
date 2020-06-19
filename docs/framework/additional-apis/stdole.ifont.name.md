@@ -1,5 +1,6 @@
 ---
-title: Свойство IFont.Name (stdole)
+title: Свойство IFont.Name (стдоле)
+description: Получите справочные сведения о свойстве IFont.Name в .NET. Это свойство, доступное для чтения и записи, находится в пространстве имен стдоле и сборке стдоле.
 ms.date: 02/22/2019
 topic_type:
 - apiref
@@ -11,12 +12,12 @@ api_location:
 - stdole.dll
 api_type:
 - Assembly
-ms.openlocfilehash: b74992174d244845e1db2b283d962f2b87071c91
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: bdc773956c15554b0700d78dcdc833d8111da896
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65634428"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989501"
 ---
 # <a name="ifontname-property"></a>Свойство IFont.Name
 
@@ -32,4 +33,4 @@ string Name { get; set; }
 
 **Пространство имен:** `stdole`
 
-**Сборка:** stdole (в stdole.dll)
+**Сборка:** стдоле (в stdole.dll)

@@ -1,5 +1,6 @@
 ---
-title: CoreResponseData.m_StatusCode Поле
+title: Поле Коререспонседата. m_StatusCode
+description: Прочитайте о поле Коререспонседата. m_StatusCode в .NET. Поле является типом HttpStatusCode, который содержит состояние HTTP-ответа.
 ms.date: 01/29/2018
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 author: stevewhims
-ms.openlocfilehash: dfed9a748e959f0f751408566c7cbb4d2fa13e3c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 05950290bde96511432941ce679e663126878663
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79156077"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989773"
 ---
-# <a name="coreresponsedatam_statuscode-field"></a>CoreResponseData.m\_StatusCode Field
+# <a name="coreresponsedatam_statuscode-field"></a>Коререспонседата. m, \_ поле StatusCode
 
-`CoreResponseData.m_StatusCode`<xref:System.Net.HttpStatusCode> содержащей статус ответа.
+`CoreResponseData.m_StatusCode`параметр <xref:System.Net.HttpStatusCode> содержит состояние ответа.
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -28,14 +29,14 @@ public HttpStatusCode m_StatusCode
 ```
 
 > [!WARNING]
-> Этот API не предназначен для использования непосредственно в коде. Вместо этого следует <xref:System.Diagnostics.DiagnosticSource> использовать сетевой код. Смотрите [руководство DiagnosticSource пользователя](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
+> Этот API не предназначен для непосредственного использования в коде. Вместо этого следует использовать <xref:System.Diagnostics.DiagnosticSource> для подключения сетевого кода. Ознакомьтесь с [руководством пользователя DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого класса в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого класса в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.

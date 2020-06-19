@@ -1,5 +1,6 @@
 ---
-title: СоединениеГруппа.m_ConnectionList Поле
+title: Поле Коннектионграуп. m_ConnectionList
+description: Сведения о поле Коннектионграуп. m_ConnectionList в .NET, которое содержит объекты подключения, которые обслуживают один и тот же URI и совместно используют значения для других свойств.
 ms.date: 05/01/2017
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 186083cf-8dff-4600-a2ab-6fed4b4de6af
-ms.openlocfilehash: 8eb6f215c36e214f7095eeba90bf0aed66dfcea0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 478b2441c062e8df6f4e718bd66d7af329f20f12
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155854"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84989727"
 ---
-# <a name="connectiongroupm_connectionlist-field"></a>ConnectionGroup.m\_ConnectionList Поле
+# <a name="connectiongroupm_connectionlist-field"></a>Поле коннектионлист Коннектионграуп. m \_
 
-`ConnectionGroup.m_ConnectionList`является <xref:System.Collections.ArrayList> объектом соединения, который обслуживает те же URI и имеют те же значения для некоторых других свойств, таких как истечение срока действия и аутентификация.
+`ConnectionGroup.m_ConnectionList`— Это объект <xref:System.Collections.ArrayList> соединения, который обслуживает один и тот же URI и использует одни и те же значения для некоторых других свойств, таких как срок действия и проверка подлинности.
 
 ## <a name="syntax"></a>Синтаксис
   
@@ -28,14 +29,14 @@ private ArrayList m_ConnectionList
 ```
 
 > [!WARNING]
-> Поле `ConnectionGroup.m_ConnectionList` является частным и не предназначено для использования непосредственно в коде.
+> `ConnectionGroup.m_ConnectionList`Поле является закрытым и не предназначено для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого поля в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого поля в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Net>
+**Пространство имен:** <xref:System.Net>
 
 **Сборка:** Система (в System.dll)
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**.NET Framework версии:** Доступно с 2,0.
