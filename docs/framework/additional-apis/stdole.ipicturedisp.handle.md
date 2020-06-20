@@ -1,5 +1,6 @@
 ---
-title: Свойство IPictureDisp.Handle (stdole)
+title: Свойство Ипиктуредисп. Handle (стдоле)
+description: Прочитайте о свойстве Ипиктуредисп. Handle в .NET. Это свойство находится в пространстве имен стдоле и сборке стдоле (в библиотеке stdole.dll).
 ms.date: 02/22/2019
 topic_type:
 - apiref
@@ -10,12 +11,12 @@ api_location:
 - stdole.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 27a081b0faee348d8ff2064aa473fef315ee5d1c
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: c75cb2b28801924987d42fe442fee492245fe809
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65634411"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105310"
 ---
 # <a name="ipicturedisphandle-property"></a>Свойство IPictureDisp.Handle
 
@@ -31,4 +32,4 @@ int Handle { get; }
 
 **Пространство имен:** `stdole`
 
-**Сборка:** stdole (в stdole.dll)
+**Сборка:** стдоле (в stdole.dll)

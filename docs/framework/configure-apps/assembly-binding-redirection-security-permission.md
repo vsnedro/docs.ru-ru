@@ -1,16 +1,17 @@
 ---
 title: Разрешение безопасности перенаправления привязки сборок
+description: Сведения о разрешениях безопасности, необходимых для явного перенаправления привязки сборок в файле конфигурации приложения в .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - side-by-side execution, assembly binding redirection
 - assemblies [.NET Framework], binding redirection
 ms.assetid: 24a5cdff-7ed9-4195-93f3-edf6899019fc
-ms.openlocfilehash: b59689e78f901637674c0a1df28ed74411e8e7c7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a8596bcac4efb0aea07efcfde6726d8bbf148c24
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "69921378"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105095"
 ---
 # <a name="assembly-binding-redirection-security-permission"></a>Разрешение безопасности перенаправления привязки сборок
 Для явного перенаправления привязки сборки в файле конфигурации приложения необходимо разрешение безопасности. Это относится к перенаправлению как сборок платформы .NET Framework, так и сторонних сборок. Разрешение предоставляется путем установки <xref:System.Security.Permissions.SecurityPermissionFlag> флага для <xref:System.Security.Permissions.SecurityPermission> . По умолчанию управляемые сборки не имеют разрешений.  
@@ -28,9 +29,9 @@ ms.locfileid: "69921378"
 |Зона Интернета|**OFF**|  
 |Недоверенные зоны|**OFF**|  
   
- Администратор может изменить эти параметры безопасности для поддержки или ограничения конкретных сценариев на определенном компьютере. Нет средств для изменения значения флага **BindingRedirects** по умолчанию; Администратор должен вручную изменить файл Security. config на компьютере пользователя.  
+ Администратор может изменить эти параметры безопасности для поддержки или ограничения конкретных сценариев на определенном компьютере. Нет средств для изменения значения флага **BindingRedirects** по умолчанию; Администратор должен вручную изменить файл Security.config на компьютере пользователя.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Файлы политики издателя и параллельное выполнение](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/06d2bae3(v=vs.100))
 - [Практическое руководство. Включение и отключение автоматического перенаправления привязки](how-to-enable-and-disable-automatic-binding-redirection.md)

@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Поиск сборок с помощью DEVPATH
+description: Проверьте, правильно ли работает общая сборка с множеством приложений в .NET, используя файл конфигурации компьютера XML и переменную среды DEVPATH.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - DEVPATH
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - locating assemblies
 - assemblies [.NET Framework], location
 ms.assetid: 44d2eadf-7eec-443c-a2ac-d601fd919e17
-ms.openlocfilehash: 6fa864f814d6a9ce04f2bce92c61cd0075ab5145
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 50b61eedddabd660b1834565a61738f460ae9ff9
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "69912999"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105374"
 ---
 # <a name="how-to-locate-assemblies-by-using-devpath"></a>Практическое руководство. Поиск сборок с помощью DEVPATH
 Разработчикам может потребоваться убедиться, что создаваемая ими общая сборка работает правильно с несколькими приложениями. Вместо постоянного размещения сборки в глобальном кэше сборок во время цикла разработки разработчик может создать переменную среды DEVPATH, которая указывает на выходной каталог сборки для сборки.  
@@ -43,6 +44,6 @@ ms.locfileid: "69912999"
 > [!NOTE]
 > Используйте этот параметр только во время разработки. Среда выполнения не проверяет версии сборок со строгими именами, найденных в DEVPATH. Он просто использует первую найденную сборку.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка приложений с использованием файлов конфигурации](index.md)

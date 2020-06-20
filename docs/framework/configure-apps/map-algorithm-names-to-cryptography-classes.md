@@ -1,5 +1,6 @@
 ---
 title: Отображение имен алгоритмов на криптографические классы
+description: Сопоставьте имена алгоритмов с криптографическими классами в .NET. Разработчик имеет четыре варианта создания криптографического объекта.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - mapping algorithm names
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - cryptographic algorithms
 - names [.NET Framework], algorithm mapping
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
-ms.openlocfilehash: 513000169504473aa6dd46feaca214f58502ffd0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5a1d7acdd34182dd82f4dce66d136c4ef4de6e95
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "69912866"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105349"
 ---
 # <a name="mapping-algorithm-names-to-cryptography-classes"></a>Отображение имен алгоритмов на криптографические классы
 Существует четыре способа, с помощью которых разработчик может создать криптографический объект, используя Windows SDK:  
@@ -32,7 +33,7 @@ ms.locfileid: "69912866"
  Если не имеет значения, какой алгоритм хэширования используется, разработчик может вызвать <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> метод, который возвращает объект, реализующий преобразование хэширования.  
   
 ## <a name="mapping-algorithm-names-in-configuration-files"></a>Сопоставление имен алгоритмов в файлах конфигурации  
- По умолчанию среда выполнения возвращает <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> объект для всех четырех сценариев. Однако администратор компьютера может изменить тип объекта, возвращаемый методами в двух последних сценариях. Для этого необходимо связать понятное имя алгоритма с классом, который вы хотите использовать в файле конфигурации компьютера (Machine. config).  
+ По умолчанию среда выполнения возвращает <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> объект для всех четырех сценариев. Однако администратор компьютера может изменить тип объекта, возвращаемый методами в двух последних сценариях. Для этого необходимо связать понятное имя алгоритма с классом, который вы хотите использовать в файле конфигурации компьютера (Machine.config).  
   
  В следующем примере показано, как настроить среду выполнения таким образом, чтобы **система System. Security. Cryptography. SHA1. Create**, **System. Security. CryptoConfig. CREATEFROMNAME ("SHA1")** и **System. Security. Cryptography. HashAlgorithm. Create** возвращали `MySHA1HashClass` объект.  
   
@@ -67,7 +68,7 @@ ms.locfileid: "69912866"
   
  Список имен по умолчанию и классов, с которыми они сопоставляются, см. в разделе <xref:System.Security.Cryptography.CryptoConfig> .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Службы шифрования](../../standard/security/cryptographic-services.md)
 - [Настройка криптографических классов](configure-cryptography-classes.md)

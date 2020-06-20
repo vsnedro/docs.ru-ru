@@ -1,5 +1,6 @@
 ---
-title: XpsDocumentWriter._WritingCompleted Event (System.Windows.Xps)
+title: Событие XpsDocumentWriter. _WritingCompleted (System. Windows. XPS)
+description: Изучите событие XpsDocumentWriter. _WritingCompleted, которое происходит при завершении операции записи для XPS-документа в .NET.
 ms.date: 10/17/2017
 api_location:
 - system.printing.dll
@@ -11,14 +12,14 @@ api_type:
 - Assembly
 topic_type:
 - apiref
-ms.openlocfilehash: 0c233965638217ad5b25b9792fe07fb4d73dbe18
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3926630cafa2fea4e499e86d7c8b8eb707b8fd95
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155626"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105192"
 ---
-# <a name="xpsdocumentwriter_writingcompleted-event"></a>XpsDocumentWriter. \_НаписаниеЗавершенное событие
+# <a name="xpsdocumentwriter_writingcompleted-event"></a>XpsDocumentWriter. \_ Событие Вритингкомплетед
 
 Происходит, когда операция записи завершается.
 
@@ -30,8 +31,8 @@ internal event WritingCompletedEventHandler _WritingCompleted
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Windows.Xps>
+**Пространство имен:** <xref:System.Windows.Xps>
 
-**Сборка:** System.Printing (в системе.printing.dll)
+**Сборка:** System. Printing (в system.printing.dll)
 
-**Рамочные версии .NET:** Доступно с 3.0
+**.NET Framework версии:** Доступно с 3,0

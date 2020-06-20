@@ -1,5 +1,6 @@
 ---
-title: Свойство IPicture.Handle (stdole)
+title: Свойство Ипиктуре. Handle (стдоле)
+description: Получите справочные сведения о свойстве Ипиктуре. Handle в .NET. Это свойство получает маркер изображения, управляемого в этом объекте изображения.
 ms.date: 02/22/2019
 topic_type:
 - apiref
@@ -10,16 +11,16 @@ api_location:
 - stdole.dll
 api_type:
 - Assembly
-ms.openlocfilehash: e65be9cbccbe4e52b81b2eba7a473720eb966e83
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: 85c8f2c3fcdbecd69bc9b3dc9c13f4ccea41038b
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65634440"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105333"
 ---
 # <a name="ipicturehandle-property"></a>Свойство IPicture.Handle
 
-Получает дескриптор для изображения, управление ими осуществляется в этот объект изображения в указанном расположении.
+Возвращает маркер изображения, управляемого в этом объекте изображения, в указанное расположение.
 
 ```csharp
 int Handle { get; }
@@ -33,4 +34,4 @@ int Handle { get; }
 
 **Пространство имен:** `stdole`
 
-**Сборка:** stdole (в stdole.dll)
+**Сборка:** стдоле (в stdole.dll)

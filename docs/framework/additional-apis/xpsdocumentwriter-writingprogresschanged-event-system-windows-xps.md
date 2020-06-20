@@ -1,5 +1,6 @@
 ---
-title: XpsDocumentWriter._WritingProgressChanged Event (System.Windows.Xps)
+title: Событие XpsDocumentWriter. _WritingProgressChanged (System. Windows. XPS)
+description: Ознакомьтесь с событием XpsDocumentWriter. _WritingProgressChanged, которое происходит, когда модуль записи документов в формате XPS обновляет ход выполнения в .NET.
 ms.date: 10/17/2017
 api_location:
 - system.printing.dll
@@ -11,14 +12,14 @@ api_type:
 - Assembly
 topic_type:
 - apiref
-ms.openlocfilehash: 4d61a11ec6546ed4e1b0011d541f10fec4f86b68
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a54f1fbc04d7f1ada6bf893f2e8bfb9d98d372df
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155587"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105058"
 ---
-# <a name="xpsdocumentwriter_writingprogresschanged-event"></a>XpsDocumentWriter. \_WritingProgressChanged Событие
+# <a name="xpsdocumentwriter_writingprogresschanged-event"></a>XpsDocumentWriter. \_ Событие Вритингпрогрессчанжед
 
 Происходит, когда <xref:System.Windows.Xps.XpsDocumentWriter> обновляет ход выполнения.
 
@@ -30,8 +31,8 @@ internal event WritingProgressChangedEventHandler _WritingProgressChanged
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Windows.Xps>
+**Пространство имен:** <xref:System.Windows.Xps>
 
-**Сборка:** System.Printing (в системе.printing.dll)
+**Сборка:** System. Printing (в system.printing.dll)
 
-**Рамочные версии .NET:** Доступно с 3.0
+**.NET Framework версии:** Доступно с 3,0
