@@ -1,5 +1,6 @@
 ---
-title: Метод XpsDocumentWriter.raise__WritingProgressChanged (System.Windows.Xps)
+title: Метод XpsDocumentWriter. raise__WritingProgressChanged (System. Windows. XPS)
+description: Изучите метод XpsDocumentWriter. raise__WritingProgressChanged, который вызывает событие Вритингпрогрессчанжед для документа XPS в .NET.
 ms.date: 12/12/2007
 api_location:
 - system.printing.dll
@@ -9,36 +10,36 @@ api_type:
 - Assembly
 topic_type:
 - apiref
-ms.openlocfilehash: cceabb2b4b1fad68fdda44fea8172cb21319b4bc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1e012c0900a83e1adbf0ceaddeb91792598b4377
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155639"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105215"
 ---
-# <a name="xpsdocumentwriterraise__writingprogresschanged-method"></a><span data-ttu-id="66ae0-102">XpsDocumentWriter.raise\_\_WritingProgressChanged Метод</span><span class="sxs-lookup"><span data-stu-id="66ae0-102">XpsDocumentWriter.raise\_\_WritingProgressChanged Method</span></span>
+# <a name="xpsdocumentwriterraise__writingprogresschanged-method"></a><span data-ttu-id="e0569-103">XpsDocumentWriter. raise \_ \_ Вритингпрогрессчанжед, метод</span><span class="sxs-lookup"><span data-stu-id="e0569-103">XpsDocumentWriter.raise\_\_WritingProgressChanged Method</span></span>
 
-<span data-ttu-id="66ae0-103">Вызывает событие <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged>.</span><span class="sxs-lookup"><span data-stu-id="66ae0-103">Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged> event.</span></span>
+<span data-ttu-id="e0569-104">Вызывает событие <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged>.</span><span class="sxs-lookup"><span data-stu-id="e0569-104">Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged> event.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="66ae0-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="66ae0-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e0569-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e0569-105">Syntax</span></span>
 
 ```csharp
 public void raise__WritingProgressChanged (object value0,
   System.Windows.Documents.Serialization.WritingProgressChangedEventArgs value1);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="66ae0-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="66ae0-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="e0569-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="e0569-106">Parameters</span></span>
 
-- <span data-ttu-id="66ae0-106">`value0` <xref:System.Object></span><span class="sxs-lookup"><span data-stu-id="66ae0-106">`value0` <xref:System.Object></span></span>  
-  <span data-ttu-id="66ae0-107">Источник события.</span><span class="sxs-lookup"><span data-stu-id="66ae0-107">The source of the event.</span></span>
+- <span data-ttu-id="e0569-107">`value0` <xref:System.Object></span><span class="sxs-lookup"><span data-stu-id="e0569-107">`value0` <xref:System.Object></span></span>  
+  <span data-ttu-id="e0569-108">Источник события.</span><span class="sxs-lookup"><span data-stu-id="e0569-108">The source of the event.</span></span>
 
-- <span data-ttu-id="66ae0-108">`value1`  <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs></span><span class="sxs-lookup"><span data-stu-id="66ae0-108">`value1`  <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs></span></span>  
-  <span data-ttu-id="66ae0-109">Данные события.</span><span class="sxs-lookup"><span data-stu-id="66ae0-109">The event data.</span></span>
+- <span data-ttu-id="e0569-109">`value1`  <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs></span><span class="sxs-lookup"><span data-stu-id="e0569-109">`value1`  <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs></span></span>  
+  <span data-ttu-id="e0569-110">Данные события.</span><span class="sxs-lookup"><span data-stu-id="e0569-110">The event data.</span></span>
   
-## <a name="requirements"></a><span data-ttu-id="66ae0-110">Требования</span><span class="sxs-lookup"><span data-stu-id="66ae0-110">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="e0569-111">Требования</span><span class="sxs-lookup"><span data-stu-id="e0569-111">Requirements</span></span>
 
-<span data-ttu-id="66ae0-111">**Пространство имен:**<xref:System.Windows.Xps></span><span class="sxs-lookup"><span data-stu-id="66ae0-111">**Namespace:** <xref:System.Windows.Xps></span></span>
+<span data-ttu-id="e0569-112">**Пространство имен:** <xref:System.Windows.Xps></span><span class="sxs-lookup"><span data-stu-id="e0569-112">**Namespace:** <xref:System.Windows.Xps></span></span>
 
-<span data-ttu-id="66ae0-112">**Сборка:** System.Printing (в системе.printing.dll)</span><span class="sxs-lookup"><span data-stu-id="66ae0-112">**Assembly:** System.Printing (in system.printing.dll)</span></span>
+<span data-ttu-id="e0569-113">**Сборка:** System. Printing (в system.printing.dll)</span><span class="sxs-lookup"><span data-stu-id="e0569-113">**Assembly:** System.Printing (in system.printing.dll)</span></span>
 
-<span data-ttu-id="66ae0-113">**Рамочные версии .NET:** 3.0</span><span class="sxs-lookup"><span data-stu-id="66ae0-113">**.NET Framework versions:** 3.0</span></span>
+<span data-ttu-id="e0569-114">**.NET Framework версии:** 3,0</span><span class="sxs-lookup"><span data-stu-id="e0569-114">**.NET Framework versions:** 3.0</span></span>

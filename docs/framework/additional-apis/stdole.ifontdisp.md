@@ -1,5 +1,6 @@
 ---
-title: Интерфейс IFontDisp (stdole)
+title: Интерфейс IFontDisp (стдоле)
+description: См. справочные сведения о интерфейсе IFontDisp в .NET. Этот интерфейс находится в пространстве имен стдоле и сборке стдоле (в библиотеке stdole.dll).
 ms.date: 03/28/2019
 topic_type:
 - apiref
@@ -9,14 +10,14 @@ api_location:
 - stdole.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 82d487b599401188f42d6a4dc6856030d5a2eef6
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f2e955997c66dc4db0de804ee6eded02735a3276
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61675264"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105323"
 ---
-# <a name="ipicturefont-interface"></a><span data-ttu-id="3bade-102">Интерфейс IPictureFont</span><span class="sxs-lookup"><span data-stu-id="3bade-102">IPictureFont Interface</span></span>
+# <a name="ifontdisp-interface"></a><span data-ttu-id="df265-104">Интерфейс IFontDisp</span><span class="sxs-lookup"><span data-stu-id="df265-104">IFontDisp Interface</span></span>
 
 ```csharp
 [GuidAttribute("BEF6E003-A874-101A-8BBA-00AA00300CAB")]
@@ -24,8 +25,8 @@ ms.locfileid: "61675264"
 public interface IFontDisp
 ```
 
-## <a name="requirements"></a><span data-ttu-id="3bade-103">Требования</span><span class="sxs-lookup"><span data-stu-id="3bade-103">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="df265-105">Требования</span><span class="sxs-lookup"><span data-stu-id="df265-105">Requirements</span></span>
 
-<span data-ttu-id="3bade-104">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="3bade-104">**Namespace:** `stdole`</span></span>
+<span data-ttu-id="df265-106">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="df265-106">**Namespace:** `stdole`</span></span>
 
-<span data-ttu-id="3bade-105">**Сборка:** stdole (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="3bade-105">**Assembly:** stdole (in stdole.dll)</span></span>
+<span data-ttu-id="df265-107">**Сборка:** стдоле (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="df265-107">**Assembly:** stdole (in stdole.dll)</span></span>

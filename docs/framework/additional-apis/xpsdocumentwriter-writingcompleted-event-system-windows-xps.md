@@ -1,5 +1,6 @@
 ---
-title: XpsDocumentWriter._WritingCompleted Event (System.Windows.Xps)
+title: Событие XpsDocumentWriter. _WritingCompleted (System. Windows. XPS)
+description: Изучите событие XpsDocumentWriter. _WritingCompleted, которое происходит при завершении операции записи для XPS-документа в .NET.
 ms.date: 10/17/2017
 api_location:
 - system.printing.dll
@@ -11,27 +12,27 @@ api_type:
 - Assembly
 topic_type:
 - apiref
-ms.openlocfilehash: 0c233965638217ad5b25b9792fe07fb4d73dbe18
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3926630cafa2fea4e499e86d7c8b8eb707b8fd95
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155626"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105192"
 ---
-# <a name="xpsdocumentwriter_writingcompleted-event"></a><span data-ttu-id="0a61d-102">XpsDocumentWriter. \_НаписаниеЗавершенное событие</span><span class="sxs-lookup"><span data-stu-id="0a61d-102">XpsDocumentWriter.\_WritingCompleted Event</span></span>
+# <a name="xpsdocumentwriter_writingcompleted-event"></a><span data-ttu-id="23836-103">XpsDocumentWriter. \_ Событие Вритингкомплетед</span><span class="sxs-lookup"><span data-stu-id="23836-103">XpsDocumentWriter.\_WritingCompleted Event</span></span>
 
-<span data-ttu-id="0a61d-103">Происходит, когда операция записи завершается.</span><span class="sxs-lookup"><span data-stu-id="0a61d-103">Occurs when a write operation finishes.</span></span>
+<span data-ttu-id="23836-104">Происходит, когда операция записи завершается.</span><span class="sxs-lookup"><span data-stu-id="23836-104">Occurs when a write operation finishes.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0a61d-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="0a61d-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="23836-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="23836-105">Syntax</span></span>
 
 ``` csharp
 internal event WritingCompletedEventHandler _WritingCompleted
 ```
 
-## <a name="requirements"></a><span data-ttu-id="0a61d-105">Требования</span><span class="sxs-lookup"><span data-stu-id="0a61d-105">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="23836-106">Требования</span><span class="sxs-lookup"><span data-stu-id="23836-106">Requirements</span></span>
 
-<span data-ttu-id="0a61d-106">**Пространство имен:**<xref:System.Windows.Xps></span><span class="sxs-lookup"><span data-stu-id="0a61d-106">**Namespace:** <xref:System.Windows.Xps></span></span>
+<span data-ttu-id="23836-107">**Пространство имен:** <xref:System.Windows.Xps></span><span class="sxs-lookup"><span data-stu-id="23836-107">**Namespace:** <xref:System.Windows.Xps></span></span>
 
-<span data-ttu-id="0a61d-107">**Сборка:** System.Printing (в системе.printing.dll)</span><span class="sxs-lookup"><span data-stu-id="0a61d-107">**Assembly:** System.Printing (in system.printing.dll)</span></span>
+<span data-ttu-id="23836-108">**Сборка:** System. Printing (в system.printing.dll)</span><span class="sxs-lookup"><span data-stu-id="23836-108">**Assembly:** System.Printing (in system.printing.dll)</span></span>
 
-<span data-ttu-id="0a61d-108">**Рамочные версии .NET:** Доступно с 3.0</span><span class="sxs-lookup"><span data-stu-id="0a61d-108">**.NET Framework versions:** Available since 3.0</span></span>
+<span data-ttu-id="23836-109">**.NET Framework версии:** Доступно с 3,0</span><span class="sxs-lookup"><span data-stu-id="23836-109">**.NET Framework versions:** Available since 3.0</span></span>

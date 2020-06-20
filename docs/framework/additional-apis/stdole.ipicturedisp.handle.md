@@ -1,5 +1,6 @@
 ---
-title: Свойство IPictureDisp.Handle (stdole)
+title: Свойство Ипиктуредисп. Handle (стдоле)
+description: Прочитайте о свойстве Ипиктуредисп. Handle в .NET. Это свойство находится в пространстве имен стдоле и сборке стдоле (в библиотеке stdole.dll).
 ms.date: 02/22/2019
 topic_type:
 - apiref
@@ -10,25 +11,25 @@ api_location:
 - stdole.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 27a081b0faee348d8ff2064aa473fef315ee5d1c
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: c75cb2b28801924987d42fe442fee492245fe809
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65634411"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85105310"
 ---
-# <a name="ipicturedisphandle-property"></a><span data-ttu-id="c9b59-102">Свойство IPictureDisp.Handle</span><span class="sxs-lookup"><span data-stu-id="c9b59-102">IPictureDisp.Handle Property</span></span>
+# <a name="ipicturedisphandle-property"></a><span data-ttu-id="b2983-104">Свойство IPictureDisp.Handle</span><span class="sxs-lookup"><span data-stu-id="b2983-104">IPictureDisp.Handle Property</span></span>
 
 ```csharp
 int Handle { get; }
 ```
 
-## <a name="property-value"></a><span data-ttu-id="c9b59-103">Значение свойства</span><span class="sxs-lookup"><span data-stu-id="c9b59-103">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="b2983-105">Значение свойства</span><span class="sxs-lookup"><span data-stu-id="b2983-105">Property value</span></span>
 
 <xref:System.Int32>\
 
-## <a name="requirements"></a><span data-ttu-id="c9b59-104">Требования</span><span class="sxs-lookup"><span data-stu-id="c9b59-104">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="b2983-106">Требования</span><span class="sxs-lookup"><span data-stu-id="b2983-106">Requirements</span></span>
 
-<span data-ttu-id="c9b59-105">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="c9b59-105">**Namespace:** `stdole`</span></span>
+<span data-ttu-id="b2983-107">**Пространство имен:** `stdole`</span><span class="sxs-lookup"><span data-stu-id="b2983-107">**Namespace:** `stdole`</span></span>
 
-<span data-ttu-id="c9b59-106">**Сборка:** stdole (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="c9b59-106">**Assembly:** stdole (in stdole.dll)</span></span>
+<span data-ttu-id="b2983-108">**Сборка:** стдоле (в stdole.dll)</span><span class="sxs-lookup"><span data-stu-id="b2983-108">**Assembly:** stdole (in stdole.dll)</span></span>
