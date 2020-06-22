@@ -6,12 +6,12 @@ helpviewer_keywords:
 - extension methods [C#]
 - methods [C#], extension
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-ms.openlocfilehash: 5db2797870b6c2e1998f17f1d8e4df8aa3f95c9e
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: 0f9c0f053e531a44640084a35dc5d8e844ee0b46
+ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241413"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84803191"
 ---
 # <a name="extension-methods-c-programming-guide"></a>Методы расширения (Руководство по программированию в C#)
 
@@ -80,7 +80,7 @@ using System.Linq;
 
 При использовании многослойной архитектуры или другой многослойной модели приложения обычно используется набор сущностей предметной области или объектов передачи данных, которые можно использовать для обмена данными между границами приложений. Обычно эти объекты содержат только минимальные функциональные возможности (или вовсе их не содержат), применимые ко всем слоям приложения. Методы расширения можно использовать, чтобы добавить функциональные возможности для каждого конкретного слоя приложения без загрузки объекта с помощью методов, которые не нужны или не требуются для других слоев.
 
-```aspx-csharp
+```csharp
 public class DomainEntity
 {
     public int Id { get; set; }

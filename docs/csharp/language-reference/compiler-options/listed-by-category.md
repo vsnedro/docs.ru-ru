@@ -6,12 +6,12 @@ helpviewer_keywords:
 - compiler options [C#], listed by category
 - Visual C#, compiler options listed by category
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
-ms.openlocfilehash: ffa5372678362e47eb59d8b041da55c79bf8475d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 1e78b920eb6a1eae870a425b91711ac9d87b6530
+ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84447047"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84811685"
 ---
 # <a name="c-compiler-options-listed-by-category"></a>Параметры компилятора C#, упорядоченные по категориям
 
@@ -107,7 +107,7 @@ ms.locfileid: "84447047"
 |[/unsafe](unsafe-compiler-option.md)|Разрешает компиляцию кода, использующего ключевое слово [unsafe](../keywords/unsafe.md).|
 |[-utf8output](utf8output-compiler-option.md)|Отображает выходные данные компилятора в кодировке UTF-8.|
 |-parallel[+&#124;-]|Указывает, следует ли использовать параллельную сборку (+).|
-|-checksumalgorithm:\<alg>|Указывает алгоритм для расчета контрольной суммы файла источника, хранящегося в PDB.  Допустимые значения: SHA1 (по умолчанию) или SHA256.<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|
+|-checksumalgorithm:\<alg>|Указывает алгоритм для расчета контрольной суммы файла источника, хранящегося в PDB.  Допустимые значения: SHA256 (по умолчанию) или SHA1.<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|
 
 ## <a name="obsolete-options"></a>Устаревшие параметры
 
