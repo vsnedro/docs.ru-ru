@@ -29,6 +29,8 @@ items:
             href: install/linux.md
           - name: Ubuntu
             href: install/linux-ubuntu.md
+          - name: Alpine
+            href: install/linux-alpine.md
           - name: CentOS
             href: install/linux-centos.md
           - name: Debian
@@ -429,6 +431,8 @@ items:
         href: testing/selective-unit-tests.md
       - name: Порядок модульных тестов
         href: testing/order-unit-tests.md
+      - name: "Объем протестированного кода\_— модульный тест"
+        href: testing/unit-testing-code-coverage.md
       - name: Модульное тестирование публикуемых выходных данных
         href: testing/unit-testing-published-output.md
       - name: Live Unit Testing в проектах .NET Core с использованием Visual Studio
