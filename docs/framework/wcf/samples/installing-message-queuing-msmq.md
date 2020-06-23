@@ -1,67 +1,68 @@
 ---
 title: Установка системы очередей сообщений (MSMQ)
+description: Узнайте, как установить очередь сообщений 4,0 и очередь сообщений 3,0 для использования с примерами WFC в рамках одноразовой процедуры настройки.
 ms.date: 03/30/2017
 ms.assetid: 7ddcd497-3e04-427e-bc04-3610ad98b01e
-ms.openlocfilehash: 1bf79ed5dbcb9f2ace903260cc440e77df3aef09
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0d0cb87b40b1cb11eb7692c2fa1e890ec815b13d
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592298"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244469"
 ---
-# <a name="installing-message-queuing-msmq"></a><span data-ttu-id="b8069-102">Установка системы очередей сообщений (MSMQ)</span><span class="sxs-lookup"><span data-stu-id="b8069-102">Installing Message Queuing (MSMQ)</span></span>
-<span data-ttu-id="b8069-103">В процедурах ниже показана методика установки очереди сообщений 4.0 и очереди сообщений 3.0.</span><span class="sxs-lookup"><span data-stu-id="b8069-103">The following procedures show how to install Message Queuing 4.0 and Message Queuing 3.0.</span></span>  
+# <a name="installing-message-queuing-msmq"></a><span data-ttu-id="e7933-103">Установка системы очередей сообщений (MSMQ)</span><span class="sxs-lookup"><span data-stu-id="e7933-103">Installing Message Queuing (MSMQ)</span></span>
+<span data-ttu-id="e7933-104">В процедурах ниже показана методика установки очереди сообщений 4.0 и очереди сообщений 3.0.</span><span class="sxs-lookup"><span data-stu-id="e7933-104">The following procedures show how to install Message Queuing 4.0 and Message Queuing 3.0.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="b8069-104">Служба очереди сообщений 4,0 недоступна в Windows XP и Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="b8069-104">Message Queuing 4.0 is not available in Windows XP and Windows Server 2003.</span></span>  
+> <span data-ttu-id="e7933-105">Служба очереди сообщений 4,0 недоступна в Windows XP и Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="e7933-105">Message Queuing 4.0 is not available in Windows XP and Windows Server 2003.</span></span>  
   
-#### <a name="to-install-message-queuing-40-on-windows-server-2008-or-windows-server-2008-r2"></a><span data-ttu-id="b8069-105">Установка Message Queuing 4.0 в Windows Server 2008 или Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="b8069-105">To install Message Queuing 4.0 on Windows Server 2008 or Windows Server 2008 R2</span></span>  
+#### <a name="to-install-message-queuing-40-on-windows-server-2008-or-windows-server-2008-r2"></a><span data-ttu-id="e7933-106">Установка Message Queuing 4.0 в Windows Server 2008 или Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="e7933-106">To install Message Queuing 4.0 on Windows Server 2008 or Windows Server 2008 R2</span></span>  
   
-1. <span data-ttu-id="b8069-106">В диспетчер сервера щелкните **компоненты**.</span><span class="sxs-lookup"><span data-stu-id="b8069-106">In Server Manager, click **Features**.</span></span>  
+1. <span data-ttu-id="e7933-107">В диспетчер сервера щелкните **компоненты**.</span><span class="sxs-lookup"><span data-stu-id="e7933-107">In Server Manager, click **Features**.</span></span>  
   
-2. <span data-ttu-id="b8069-107">В области справа в разделе **Сводка компонентов**щелкните **Добавить компоненты**.</span><span class="sxs-lookup"><span data-stu-id="b8069-107">In the right-hand pane under **Features Summary**, click **Add Features**.</span></span>  
+2. <span data-ttu-id="e7933-108">В области справа в разделе **Сводка компонентов**щелкните **Добавить компоненты**.</span><span class="sxs-lookup"><span data-stu-id="e7933-108">In the right-hand pane under **Features Summary**, click **Add Features**.</span></span>  
   
-3. <span data-ttu-id="b8069-108">В открывшемся окне разверните **очередь сообщений**.</span><span class="sxs-lookup"><span data-stu-id="b8069-108">In the resulting window, expand **Message Queuing**.</span></span>  
+3. <span data-ttu-id="e7933-109">В открывшемся окне разверните **очередь сообщений**.</span><span class="sxs-lookup"><span data-stu-id="e7933-109">In the resulting window, expand **Message Queuing**.</span></span>  
   
-4. <span data-ttu-id="b8069-109">Разверните узел **службы очередей сообщений**.</span><span class="sxs-lookup"><span data-stu-id="b8069-109">Expand **Message Queuing Services**.</span></span>  
+4. <span data-ttu-id="e7933-110">Разверните узел **службы очередей сообщений**.</span><span class="sxs-lookup"><span data-stu-id="e7933-110">Expand **Message Queuing Services**.</span></span>  
   
-5. <span data-ttu-id="b8069-110">Щелкните **Интеграция служб каталогов** (для компьютеров, присоединенных к домену), а затем щелкните **Поддержка HTTP**.</span><span class="sxs-lookup"><span data-stu-id="b8069-110">Click **Directory Services Integration** (for computers joined to a Domain), then click **HTTP Support**.</span></span>  
+5. <span data-ttu-id="e7933-111">Щелкните **Интеграция служб каталогов** (для компьютеров, присоединенных к домену), а затем щелкните **Поддержка HTTP**.</span><span class="sxs-lookup"><span data-stu-id="e7933-111">Click **Directory Services Integration** (for computers joined to a Domain), then click **HTTP Support**.</span></span>  
   
-6. <span data-ttu-id="b8069-111">Нажмите кнопку **Далее**, а затем — **установить**.</span><span class="sxs-lookup"><span data-stu-id="b8069-111">Click **Next**,then click **Install**.</span></span>  
+6. <span data-ttu-id="e7933-112">Нажмите кнопку **Далее**, а затем — **установить**.</span><span class="sxs-lookup"><span data-stu-id="e7933-112">Click **Next**,then click **Install**.</span></span>  
   
-#### <a name="to-install-message-queuing-40-on-windows-7-or-windows-vista"></a><span data-ttu-id="b8069-112">Установка очереди сообщений 4.0 в Windows 7 или Windows Vista</span><span class="sxs-lookup"><span data-stu-id="b8069-112">To install Message Queuing 4.0 on Windows 7 or Windows Vista</span></span>  
+#### <a name="to-install-message-queuing-40-on-windows-7-or-windows-vista"></a><span data-ttu-id="e7933-113">Установка очереди сообщений 4.0 в Windows 7 или Windows Vista</span><span class="sxs-lookup"><span data-stu-id="e7933-113">To install Message Queuing 4.0 on Windows 7 or Windows Vista</span></span>  
   
-1. <span data-ttu-id="b8069-113">Откройте **Панель управления**.</span><span class="sxs-lookup"><span data-stu-id="b8069-113">Open **Control Panel**.</span></span>  
+1. <span data-ttu-id="e7933-114">Откройте **Панель управления**.</span><span class="sxs-lookup"><span data-stu-id="e7933-114">Open **Control Panel**.</span></span>  
   
-2. <span data-ttu-id="b8069-114">Щелкните **программы** , а затем в разделе **программы и компоненты**щелкните **Включение и отключение компонентов Windows**.</span><span class="sxs-lookup"><span data-stu-id="b8069-114">Click **Programs** and then, under **Programs and Features**, click **Turn Windows Features on and off**.</span></span>  
+2. <span data-ttu-id="e7933-115">Щелкните **программы** , а затем в разделе **программы и компоненты**щелкните **Включение и отключение компонентов Windows**.</span><span class="sxs-lookup"><span data-stu-id="e7933-115">Click **Programs** and then, under **Programs and Features**, click **Turn Windows Features on and off**.</span></span>  
   
-3. <span data-ttu-id="b8069-115">Разверните сервер очереди сообщений Microsoft (MSMQ), разверните ядро сервера очереди сообщений Microsoft (MSMQ) и затем отметьте флажками установку следующих возможностей очереди сообщений:</span><span class="sxs-lookup"><span data-stu-id="b8069-115">Expand Microsoft Message Queue (MSMQ) Server, expand Microsoft Message Queue (MSMQ) Server Core, and then select the check boxes for the following Message Queuing features to install:</span></span>  
+3. <span data-ttu-id="e7933-116">Разверните сервер очереди сообщений Microsoft (MSMQ), разверните ядро сервера очереди сообщений Microsoft (MSMQ) и затем отметьте флажками установку следующих возможностей очереди сообщений:</span><span class="sxs-lookup"><span data-stu-id="e7933-116">Expand Microsoft Message Queue (MSMQ) Server, expand Microsoft Message Queue (MSMQ) Server Core, and then select the check boxes for the following Message Queuing features to install:</span></span>  
   
-    - <span data-ttu-id="b8069-116">MSMQ Доменные службы Active Directory (для компьютеров, подключенных к домену).</span><span class="sxs-lookup"><span data-stu-id="b8069-116">MSMQ Active Directory Domain Services Integration (for computers joined to a Domain).</span></span>  
+    - <span data-ttu-id="e7933-117">MSMQ Доменные службы Active Directory (для компьютеров, подключенных к домену).</span><span class="sxs-lookup"><span data-stu-id="e7933-117">MSMQ Active Directory Domain Services Integration (for computers joined to a Domain).</span></span>  
   
-    - <span data-ttu-id="b8069-117">Поддержка MSMQ HTTP.</span><span class="sxs-lookup"><span data-stu-id="b8069-117">MSMQ HTTP Support.</span></span>  
+    - <span data-ttu-id="e7933-118">Поддержка MSMQ HTTP.</span><span class="sxs-lookup"><span data-stu-id="e7933-118">MSMQ HTTP Support.</span></span>  
   
-4. <span data-ttu-id="b8069-118">Нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="b8069-118">Click **OK**.</span></span>  
+4. <span data-ttu-id="e7933-119">Нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="e7933-119">Click **OK**.</span></span>  
   
-5. <span data-ttu-id="b8069-119">Если появится запрос на перезагрузку компьютера, нажмите кнопку **ОК** , чтобы завершить установку.</span><span class="sxs-lookup"><span data-stu-id="b8069-119">If you are prompted to restart the computer, click **OK** to complete the installation.</span></span>  
+5. <span data-ttu-id="e7933-120">Если появится запрос на перезагрузку компьютера, нажмите кнопку **ОК** , чтобы завершить установку.</span><span class="sxs-lookup"><span data-stu-id="e7933-120">If you are prompted to restart the computer, click **OK** to complete the installation.</span></span>  
   
-#### <a name="to-install-message-queuing-30-on-windows-xp-and-windows-server-2003"></a><span data-ttu-id="b8069-120">Установка Message Queuing 3.0 в Windows XP или Windows Server 2003</span><span class="sxs-lookup"><span data-stu-id="b8069-120">To install Message Queuing 3.0 on Windows XP and Windows Server 2003</span></span>  
+#### <a name="to-install-message-queuing-30-on-windows-xp-and-windows-server-2003"></a><span data-ttu-id="e7933-121">Установка Message Queuing 3.0 в Windows XP или Windows Server 2003</span><span class="sxs-lookup"><span data-stu-id="e7933-121">To install Message Queuing 3.0 on Windows XP and Windows Server 2003</span></span>  
   
-1. <span data-ttu-id="b8069-121">Откройте **Панель управления**.</span><span class="sxs-lookup"><span data-stu-id="b8069-121">Open **Control Panel**.</span></span>  
+1. <span data-ttu-id="e7933-122">Откройте **Панель управления**.</span><span class="sxs-lookup"><span data-stu-id="e7933-122">Open **Control Panel**.</span></span>  
   
-2. <span data-ttu-id="b8069-122">Щелкните **Добавить удалить программы** , а затем — **Добавить компоненты Windows**.</span><span class="sxs-lookup"><span data-stu-id="b8069-122">Click **Add Remove Programs** and then click **Add Windows Components**.</span></span>  
+2. <span data-ttu-id="e7933-123">Щелкните **Добавить удалить программы** , а затем — **Добавить компоненты Windows**.</span><span class="sxs-lookup"><span data-stu-id="e7933-123">Click **Add Remove Programs** and then click **Add Windows Components**.</span></span>  
   
-3. <span data-ttu-id="b8069-123">Выберите очередь сообщений и щелкните **сведения**.</span><span class="sxs-lookup"><span data-stu-id="b8069-123">Select Message Queuing and click **Details**.</span></span>  
+3. <span data-ttu-id="e7933-124">Выберите очередь сообщений и щелкните **сведения**.</span><span class="sxs-lookup"><span data-stu-id="e7933-124">Select Message Queuing and click **Details**.</span></span>  
   
     > [!NOTE]
-    > <span data-ttu-id="b8069-124">Если вы используете Windows Server 2003, выберите сервер приложений для доступа к очереди сообщений.</span><span class="sxs-lookup"><span data-stu-id="b8069-124">If you are running Windows Server 2003, select Application Server to access Message Queuing.</span></span>  
+    > <span data-ttu-id="e7933-125">Если вы используете Windows Server 2003, выберите сервер приложений для доступа к очереди сообщений.</span><span class="sxs-lookup"><span data-stu-id="e7933-125">If you are running Windows Server 2003, select Application Server to access Message Queuing.</span></span>  
   
-4. <span data-ttu-id="b8069-125">Удостоверьтесь, что на странице сведений выбрана функция поддержки MSMQ HTTP.</span><span class="sxs-lookup"><span data-stu-id="b8069-125">Ensure that the option MSMQ HTTP Support is selected on the details page.</span></span>  
+4. <span data-ttu-id="e7933-126">Удостоверьтесь, что на странице сведений выбрана функция поддержки MSMQ HTTP.</span><span class="sxs-lookup"><span data-stu-id="e7933-126">Ensure that the option MSMQ HTTP Support is selected on the details page.</span></span>  
   
-5. <span data-ttu-id="b8069-126">Нажмите кнопку **ОК** , чтобы закрыть страницу сведения, а затем нажмите кнопку **Далее**.</span><span class="sxs-lookup"><span data-stu-id="b8069-126">Click **OK** to exit the details page, and then click **Next**.</span></span> <span data-ttu-id="b8069-127">Выполните установку.</span><span class="sxs-lookup"><span data-stu-id="b8069-127">Complete the installation.</span></span>  
+5. <span data-ttu-id="e7933-127">Нажмите кнопку **ОК** , чтобы закрыть страницу сведения, а затем нажмите кнопку **Далее**.</span><span class="sxs-lookup"><span data-stu-id="e7933-127">Click **OK** to exit the details page, and then click **Next**.</span></span> <span data-ttu-id="e7933-128">Выполните установку.</span><span class="sxs-lookup"><span data-stu-id="e7933-128">Complete the installation.</span></span>  
   
-6. <span data-ttu-id="b8069-128">Если появится запрос на перезагрузку компьютера, нажмите кнопку **ОК** , чтобы завершить установку.</span><span class="sxs-lookup"><span data-stu-id="b8069-128">If you are prompted to restart the computer, click **OK** to complete the installation.</span></span>  
+6. <span data-ttu-id="e7933-129">Если появится запрос на перезагрузку компьютера, нажмите кнопку **ОК** , чтобы завершить установку.</span><span class="sxs-lookup"><span data-stu-id="e7933-129">If you are prompted to restart the computer, click **OK** to complete the installation.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="b8069-129">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="b8069-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e7933-130">См. также</span><span class="sxs-lookup"><span data-stu-id="e7933-130">See also</span></span>
 
-- [<span data-ttu-id="b8069-130">Инструкции по установке</span><span class="sxs-lookup"><span data-stu-id="b8069-130">Set-Up Instructions</span></span>](set-up-instructions.md)
+- [<span data-ttu-id="e7933-131">Инструкции по установке</span><span class="sxs-lookup"><span data-stu-id="e7933-131">Set-Up Instructions</span></span>](set-up-instructions.md)
