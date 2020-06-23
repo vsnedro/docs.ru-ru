@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Настройка порта с использованием SSL-сертификата
+description: Узнайте, как настроить порт с помощью сертификата X. 509, необходимого для автономной службы WCF с классом WSHttpBinding, используя безопасность транспорта.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-ms.openlocfilehash: 30b24c4ff06cc7249d3ddb6d95549a574e313f52
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0eccdf916dae7b886cbc4e6563e6dfe17039c321
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579622"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247186"
 ---
 # <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>Практическое руководство. Настройка порта с использованием SSL-сертификата
 
@@ -22,22 +23,22 @@ ms.locfileid: "84579622"
   
  Выбор средства для настройки порта зависит от операционной системы компьютера.  
   
- Если вы используете Windows Server 2003, используйте средство HttpCfg. exe. В Windows Server 2003 это средство установлено. Дополнительные сведения см. в разделе [Общие сведения об HttpCfg](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). В [документации по средствам поддержки Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) описывается синтаксис средства Httpcfg. exe.  
+ Если вы используете Windows Server 2003, используйте средство HttpCfg.exe. В Windows Server 2003 это средство установлено. Дополнительные сведения см. в разделе [Общие сведения об HttpCfg](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). В [документации по средствам поддержки Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) описывается синтаксис средства Httpcfg.exe.  
   
- Если вы используете Windows Vista, используйте уже установленное средство Netsh. exe.
+ Если вы используете Windows Vista, используйте уже установленное средство Netsh.exe.
   
 > [!NOTE]
 > Для изменения сертификатов, хранящихся на компьютере, требуются права администратора.  
   
 ## <a name="determine-how-ports-are-configured"></a>Определение настроек портов  
   
-1. В Windows Server 2003 или Windows XP используйте средство HttpCfg. exe для просмотра текущей конфигурации порта с помощью **запроса** и коммутаторов **SSL** , как показано в следующем примере.  
+1. В Windows Server 2003 или Windows XP используйте средство HttpCfg.exe для просмотра текущей конфигурации порта с помощью **запроса** и коммутаторов **SSL** , как показано в следующем примере.  
   
     ```console
     httpcfg query ssl  
     ```  
   
-2. В Windows Vista используйте средство Netsh. exe для просмотра текущей конфигурации порта, как показано в следующем примере.  
+2. В Windows Vista используйте средство Netsh.exe для просмотра текущей конфигурации порта, как показано в следующем примере.  
   
     ```console  
     netsh http show sslcert  
@@ -55,7 +56,7 @@ ms.locfileid: "84579622"
   
 ## <a name="bind-an-ssl-certificate-to-a-port-number"></a>Привязка SSL-сертификата к номеру порта  
   
-1. В Windows Server 2003 или Windows XP используйте средство HttpCfg. exe в режиме Set в хранилище SSL (SSL), чтобы привязать сертификат к номеру порта. Это средство использует отпечаток для идентификации сертификата, как показано в следующем примере.  
+1. В Windows Server 2003 или Windows XP используйте средство HttpCfg.exe в хранилище SSL (SSL) для привязки сертификата к номеру порта. Это средство использует отпечаток для идентификации сертификата, как показано в следующем примере.  
   
     ```console  
     httpcfg set ssl -i 0.0.0.0:8012 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6  
@@ -65,7 +66,7 @@ ms.locfileid: "84579622"
   
     - Параметр **-h** указывает отпечаток сертификата.  
   
-2. В Windows Vista используйте средство Netsh. exe, как показано в следующем примере.  
+2. В Windows Vista используйте средство Netsh.exe, как показано в следующем примере.  
   
     ```console  
     netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}
@@ -73,13 +74,13 @@ ms.locfileid: "84579622"
   
     - Параметр **certhash** указывает отпечаток сертификата.  
   
-    - Параметр **иппорт** указывает IP-адрес и порт, а также функции, аналогичные параметру **-i** , описанному в средстве HttpCfg. exe.  
+    - Параметр **иппорт** указывает IP-адрес и порт, а также функции, аналогичные параметру **-i** в описании средства Httpcfg.exe.  
   
     - Параметр **AppID** — это идентификатор GUID, который можно использовать для поиска приложения-владельца.  
   
 ## <a name="bind-an-ssl-certificate-to-a-port-number-and-support-client-certificates"></a>Привязка SSL-сертификата к номеру порта и поддержка клиентских сертификатов  
   
-1. В Windows Server 2003 или Windows XP для поддержки клиентов, которые проходят проверку подлинности с помощью сертификатов X. 509 на транспортном уровне, выполните предыдущую процедуру, но передайте дополнительный параметр командной строки в HttpCfg. exe, как показано в следующем примере.  
+1. В Windows Server 2003 или Windows XP для поддержки клиентов, которые проходят проверку подлинности с помощью сертификатов X. 509 на транспортном уровне, выполните описанную выше процедуру, но передайте дополнительный параметр командной строки в HttpCfg.exe, как показано в следующем примере.  
   
     ```console  
     httpcfg set ssl -i 0.0.0.0:8012 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6 -f 2  
@@ -101,13 +102,13 @@ ms.locfileid: "84579622"
     httpcfg query ssl>myMachinePorts.txt  
     ```
   
-2. В Windows Server 2003 или Windows XP используйте средство HttpCfg. exe с ключевыми словами **Delete** и **SSL** . Используйте параметр **-i** , чтобы указать значение `IP` : `port` Number, и параметр **-h** , чтобы указать отпечаток.  
+2. В Windows Server 2003 или Windows XP используйте средство HttpCfg.exe с ключевыми словами **Delete** и **SSL** . Используйте параметр **-i** , чтобы указать значение `IP` : `port` Number, и параметр **-h** , чтобы указать отпечаток.  
   
     ```console  
     httpcfg delete ssl -i 0.0.0.0:8005 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6  
     ```  
   
-3. В Windows Vista используйте средство Netsh. exe, как показано в следующем примере.  
+3. В Windows Vista используйте средство Netsh.exe, как показано в следующем примере.  
   
     ```console  
     Netsh http delete sslcert ipport=0.0.0.0:8005  
@@ -120,6 +121,6 @@ ms.locfileid: "84579622"
  [!code-csharp[c_WsHttpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wshttpservice/cs/source.cs#3)]
  [!code-vb[c_WsHttpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#3)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Безопасность транспорта HTTP](http-transport-security.md)

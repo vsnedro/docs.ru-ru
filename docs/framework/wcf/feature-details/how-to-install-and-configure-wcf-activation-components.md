@@ -1,15 +1,16 @@
 ---
 title: Практическое руководство. Установка и настройка компонентов активации WCF
+description: Узнайте, как настроить службу активации процессов Windows (WAS) в Windows Vista для размещения служб WCF, не взаимодействующих по протоколу HTTP.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - HTTP activation [WCF]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
-ms.openlocfilehash: f7a846b076691394cb855e4978e890cdcac76eb2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 84a0dcc4fed28ebd7a536bdabfcdc389be6072d8
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597037"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246887"
 ---
 # <a name="how-to-install-and-configure-wcf-activation-components"></a>Практическое руководство. Установка и настройка компонентов активации WCF
 
@@ -35,7 +36,7 @@ ms.locfileid: "84597037"
 
 ## <a name="to-configure-the-was-to-support-tcp-activation"></a>Настройка WAS на поддержку протокола TCP
 
-1. Для поддержки активации по net.tcp веб-узел по умолчанию необходимо сначала привязать к порту net.tcp. Это можно сделать с помощью Appcmd. exe, который устанавливается вместе с набором средств управления IIS 7,0. В окне командной строки с правами администратора выполните следующую команду.
+1. Для поддержки активации по net.tcp веб-узел по умолчанию необходимо сначала привязать к порту net.tcp. Это можно сделать с помощью Appcmd.exe, который устанавливается вместе с набором средств управления IIS 7,0. В окне командной строки с правами администратора выполните следующую команду.
 
     ```console
     %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']
@@ -101,7 +102,7 @@ ms.locfileid: "84597037"
     > [!NOTE]
     > Эта команда представляет собой одну строку текста.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Активация TCP](../samples/tcp-activation.md)
 - [Активация MSMQ](../samples/msmq-activation.md)

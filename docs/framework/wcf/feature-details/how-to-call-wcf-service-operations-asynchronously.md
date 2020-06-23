@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Асинхронный вызов операций службы WCF
+description: Узнайте, как создать клиент WCF, который может асинхронно обращаться к операции службы с помощью модели асинхронного вызова на основе событий.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0face17f-43ca-417b-9b33-737c0fc360df
-ms.openlocfilehash: 400ed8e5ee8b236e9d0f843f27b7c2112ec28861
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: aa31f64473111800f4cd01907a0446c94f368456
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601261"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247238"
 ---
 # <a name="how-to-call-wcf-service-operations-asynchronously"></a>Практическое руководство. Асинхронный вызов операций службы WCF
 
@@ -23,7 +24,7 @@ ms.locfileid: "84601261"
   
 #### <a name="to-call-wcf-service-operations-asynchronously"></a>Асинхронный вызов операций службы WCF  
   
-1. Запустите средство [служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) вместе с `/async` `/tcv:Version35` параметрами команды и, как показано в следующей команде.  
+1. Запустите средство [служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) вместе с `/async` `/tcv:Version35` параметрами команды и, как показано в следующей команде.  
   
     ```console
     svcutil /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost:8000/servicemodelsamples/service/mex /a /tcv:Version35  
@@ -31,17 +32,17 @@ ms.locfileid: "84601261"
   
      В дополнение к синхронным и стандартным асинхронным операциям на основе делегата, клиентский класс WCF, содержащий:  
   
-    - Две `operationName` > `Async` операции <для использования с методом асинхронного вызова на основе событий. Пример.  
+    - Две `operationName` > `Async` операции <для использования с методом асинхронного вызова на основе событий. Пример:  
   
          [!code-csharp[EventAsync#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/generatedclient.cs#1)]
          [!code-vb[EventAsync#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/generatedclient.vb#1)]  
   
-    - Операции завершенных событий в форме <`operationName` > `Completed` для использования с асинхронным вызовом на основе событий. Пример.  
+    - Операции завершенных событий в форме <`operationName` > `Completed` для использования с асинхронным вызовом на основе событий. Пример:  
   
          [!code-csharp[EventAsync#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/generatedclient.cs#2)]
          [!code-vb[EventAsync#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/generatedclient.vb#2)]  
   
-    - <xref:System.EventArgs?displayProperty=nameWithType>типы для каждой операции (формы <`operationName` > `CompletedEventArgs` ) для использования с методом асинхронного вызова на основе событий. Пример.  
+    - <xref:System.EventArgs?displayProperty=nameWithType>типы для каждой операции (формы <`operationName` > `CompletedEventArgs` ) для использования с методом асинхронного вызова на основе событий. Пример:  
   
          [!code-csharp[EventAsync#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/generatedclient.cs#3)]
          [!code-vb[EventAsync#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/generatedclient.vb#3)]  
@@ -64,6 +65,6 @@ ms.locfileid: "84601261"
  [!code-csharp[EventAsync#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/eventasync/cs/client.cs#6)]
  [!code-vb[EventAsync#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/eventasync/vb/client.vb#6)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Асинхронная реализация операции службы](../how-to-implement-an-asynchronous-service-operation.md)

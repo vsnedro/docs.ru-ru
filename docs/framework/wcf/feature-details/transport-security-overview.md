@@ -1,16 +1,17 @@
 ---
 title: Общие сведения о безопасности транспорта
+description: Узнайте о основных механизмах безопасности транспорта в привязках, предоставляемых системой WCF. Эти механизмы безопасности зависят от используемой привязки и транспорта.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
-ms.openlocfilehash: 5c6b6389122b32ed8db701020a8c13ba17225867
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6302a949e8d0a041446b75dd3769b8ba2d1fc2b5
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585692"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244833"
 ---
 # <a name="transport-security-overview"></a>Общие сведения о безопасности транспорта
 Механизмы безопасности транспорта в Windows Communication Foundation (WCF) зависят от используемой привязки и транспорта. Например, при использовании класса <xref:System.ServiceModel.WSHttpBinding> транспортом является протокол HTTP и в качестве основного механизма защиты транспорта применяется протокол SSL через HTTP, обычно называемый HTTPS. В этом разделе обсуждаются основные механизмы безопасности транспорта, используемые в привязках, предоставляемых системой WCF.  
@@ -82,7 +83,7 @@ ms.locfileid: "84585692"
  [!code-csharp[c_ProgrammingSecurity#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#12)]
  [!code-vb[c_ProgrammingSecurity#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#12)]  
   
-#### <a name="client"></a>Клиент  
+#### <a name="client"></a>клиент  
  На клиенте следует задать сертификат с помощью метода <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> класса <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>.  
   
 > [!NOTE]
@@ -120,6 +121,6 @@ ms.locfileid: "84585692"
 ## <a name="msmqintegrationbinding-and-netmsmqbinding"></a>MsmqIntegrationBinding и NetMsmqBinding  
  Полное обсуждение безопасности транспорта с помощью очереди сообщений (прежнее название — MSMQ) см. в разделе [Защита сообщений с использованием защиты транспорта](securing-messages-using-transport-security.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Программирование безопасности WCF](programming-wcf-security.md)

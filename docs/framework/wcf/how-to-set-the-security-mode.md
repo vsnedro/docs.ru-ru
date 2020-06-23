@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Задание режима безопасности
+description: 'Узнайте, как задать три стандартных режима безопасности WCF для большинства предварительно заданных привязок: транспорт, сообщение и TransportWithMessageCredential.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: 6e01dd9f-b5dd-4474-b24c-06e124de4ff7
-ms.openlocfilehash: 9b9e25cbafb6387b4584a21fd642d80bc41cd8dc
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 2f834e1930b7676592f6cbc29a577424d75ebc01
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320898"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244547"
 ---
 # <a name="how-to-set-the-security-mode"></a>Практическое руководство. Задание режима безопасности
 
@@ -76,9 +77,9 @@ ms.locfileid: "72320898"
 
 ### <a name="to-set-the-mode-and-clientcredentialtype-property-in-configuration"></a>Задание режима и свойства ClientCredentialType в конфигурации
 
-1. Добавьте соответствующий элемент привязки в [\<привязки >](../configure-apps/file-schema/wcf/bindings.md) элемента файла конфигурации. В следующем примере добавляется элемент [\<wsHttpBinding >](../configure-apps/file-schema/wcf/wshttpbinding.md) .
+1. Добавьте соответствующий элемент привязки в [\<bindings>](../configure-apps/file-schema/wcf/bindings.md) элемент файла конфигурации. В следующем примере добавляется [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) элемент.
 
-2. Добавьте элемент `<binding>` и задайте для его атрибута `name` соответствующее значение.
+2. Добавьте `<binding>` элемент и присвойте его `name` атрибуту соответствующее значение.
 
 3. Добавьте элемент `<security>` и присвойте атрибуту `mode` значение `Message`, `Transport` или `TransportWithMessageCredential`.
 
@@ -116,14 +117,14 @@ ms.locfileid: "72320898"
 
 Дополнительные сведения см. [в разделе как использовать безопасность транспорта и учетные данные сообщений](./feature-details/how-to-use-transport-security-and-message-credentials.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Настройка порта с использованием SSL-сертификата](./feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
 - [Практическое руководство. Использование средств обеспечения безопасности транспорта и учетных данных сообщения](./feature-details/how-to-use-transport-security-and-message-credentials.md)
 - [Безопасность транспорта](./feature-details/transport-security.md)
 - [Безопасность сообщений](./feature-details/message-security-in-wcf.md)
-- [Общие сведения о безопасности](./feature-details/security-overview.md)
+- [Обзор безопасности](./feature-details/security-overview.md)
 - [Привязки, предоставляемые системой](system-provided-bindings.md)
-- [\<> безопасности](../configure-apps/file-schema/wcf/security-of-wshttpbinding.md)
-- [\<> безопасности](../configure-apps/file-schema/wcf/security-of-basichttpbinding.md)
-- [\<> безопасности](../configure-apps/file-schema/wcf/security-of-nettcpbinding.md)
+- [\<security>](../configure-apps/file-schema/wcf/security-of-wshttpbinding.md)
+- [\<security>](../configure-apps/file-schema/wcf/security-of-basichttpbinding.md)
+- [\<security>](../configure-apps/file-schema/wcf/security-of-nettcpbinding.md)

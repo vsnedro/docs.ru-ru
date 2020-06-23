@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Защита службы с использованием учетных данных Windows
+description: Узнайте, как включить защиту транспорта для службы WCF, которая находится в домене Windows и вызывается клиентами в том же домене.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - WCF, security
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
-ms.openlocfilehash: d02e697b23b6c745a59f3c9c37dd9c565f2f710e
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 8ef164e1475bfd5f047a99426a2bed43a7aa7353
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320921"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244638"
 ---
 # <a name="how-to-secure-a-service-with-windows-credentials"></a>Практическое руководство. Защита службы с использованием учетных данных Windows
 
@@ -53,11 +54,11 @@ ms.locfileid: "72320921"
 
 1. Вставьте код этой процедуры после кода предыдущей процедуры
 
-2. Создайте переменную <xref:System.Type> с именем `contractType` и присвойте ей тип интерфейса (`ICalculator`). При использовании Visual Basic используйте оператор `GetType`. При использовании C#используйте ключевое слово `typeof`.
+2. Создайте переменную <xref:System.Type> с именем `contractType` и присвойте ей тип интерфейса (`ICalculator`). При использовании Visual Basic используйте `GetType` оператор. при использовании C# используйте `typeof` ключевое слово.
 
 3. Создайте вторую переменную <xref:System.Type> с именем `serviceType` и присвойте ей тип реализованного контракта (`Calculator`).
 
-4. Создайте экземпляр класса <xref:System.Uri> с именем `baseAddress` с базовым адресом службы. Базовый адрес должен иметь схему, которая сочетается с транспортом. В этом случае схема транспорта — HTTP, а адрес включает специальный универсальный код ресурса (URI) "localhost" и номер порта (8036), а также адрес базовой конечной точки ("serviceModelSamples/): `http://localhost:8036/serviceModelSamples/`.
+4. Создайте экземпляр класса <xref:System.Uri> с именем `baseAddress` с базовым адресом службы. Базовый адрес должен иметь схему, которая сочетается с транспортом. В этом случае схема транспорта — HTTP, а адрес включает специальный универсальный код ресурса (URI) "localhost" и номер порта (8036), а также адрес базовой конечной точки ("serviceModelSamples/): `http://localhost:8036/serviceModelSamples/` .
 
 5. Создайте экземпляр класса <xref:System.ServiceModel.ServiceHost> с переменными `serviceType` и `baseAddress`.
 
@@ -70,7 +71,7 @@ ms.locfileid: "72320921"
 
 ### <a name="using-the-binding-in-a-client"></a>Использование привязки в клиенте
 
-Эта процедура показывает, как создать прокси, взаимодействующий со службой. Прокси-сервер создается с помощью [служебной программы метаданных ServiceModel (Svcutil. exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) , которая использует метаданные службы для создания учетной записи-посредника.
+Эта процедура показывает, как создать прокси, взаимодействующий со службой. Прокси-сервер создается с помощью [служебной программы метаданных ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) , которая использует метаданные службы для создания учетной записи-посредника.
 
 Эта процедура также создает экземпляр класса <xref:System.ServiceModel.WSHttpBinding> для взаимодействия со службой, а затем вызывает службу.
 
@@ -78,7 +79,7 @@ ms.locfileid: "72320921"
 
 #### <a name="to-use-a-binding-in-a-client-with-code"></a>Использование привязки в клиенте с кодом
 
-1. Используйте средство SvcUtil.exe, чтобы создать код прокси из метаданных службы. Дополнительные сведения см. [в разделе инструкции. Создание клиента](how-to-create-a-wcf-client.md). Созданный код прокси-сервера наследуется от класса <xref:System.ServiceModel.ClientBase%601>, который гарантирует, что каждый клиент имеет необходимые конструкторы, методы и свойства для взаимодействия со службой WCF. В данном примере созданный код включает класс `CalculatorClient`, который реализует интерфейс `ICalculator`, тем самым обеспечивая совместимость с кодом службы.
+1. Используйте средство SvcUtil.exe, чтобы создать код прокси из метаданных службы. Дополнительные сведения см. [в разделе инструкции. Создание клиента](how-to-create-a-wcf-client.md). Созданный код прокси-сервера наследуется от <xref:System.ServiceModel.ClientBase%601> класса, который гарантирует, что каждый клиент имеет необходимые конструкторы, методы и свойства для взаимодействия со службой WCF. В данном примере созданный код включает класс `CalculatorClient`, который реализует интерфейс `ICalculator`, тем самым обеспечивая совместимость с кодом службы.
 
 2. Код этой процедуры вставляется в начало метода `Main` программы клиента.
 
@@ -106,13 +107,13 @@ ms.locfileid: "72320921"
 
 #### <a name="to-enable-transfer-security-on-a-service-in-a-windows-domain-using-configuration"></a>Включение безопасности передачи в службе в домене Windows с использованием конфигурации
 
-1. Добавьте элемент [\<wsHttpBinding >](../configure-apps/file-schema/wcf/wshttpbinding.md) в раздел [\<привязки >](../configure-apps/file-schema/wcf/bindings.md) элемента файла конфигурации.
+1. Добавьте [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) элемент в [\<bindings>](../configure-apps/file-schema/wcf/bindings.md) раздел element файла конфигурации.
 
-2. Добавьте элемент >`binding`< в элемент <`WSHttpBinding`> и задайте для атрибута `configurationName` значение, соответствующее приложению.
+2. Добавьте `binding` элемент> <в `WSHttpBinding` элемент <> и присвойте `configurationName` атрибуту значение, соответствующее приложению.
 
-3. Добавьте элемент >`security`< и задайте для атрибута `mode` значение Message.
+3. Добавьте `security` элемент> <и присвойте `mode` атрибуту значение Message.
 
-4. Добавьте элемент >`message`< и задайте для атрибута `clientCredentialType` значение Windows.
+4. Добавьте `message` элемент> <и присвойте `clientCredentialType` атрибуту значение Windows.
 
 5. В файле конфигурации службы замените раздел `<bindings>` с помощью следующего кода. Если у вас еще нет файла конфигурации службы, см. раздел [Использование привязок для настройки служб и клиентов](using-bindings-to-configure-services-and-clients.md).
 
@@ -136,7 +137,7 @@ ms.locfileid: "72320921"
 
 1. Используйте средство SvcUtil.exe, чтобы создать код прокси и файл конфигурации из метаданных службы. Дополнительные сведения см. [в разделе инструкции. Создание клиента](how-to-create-a-wcf-client.md).
 
-2. Замените [привязку\<>](../configure-apps/file-schema/wcf/bindings.md) раздел созданного файла конфигурации на код конфигурации из предыдущего раздела.
+2. Замените [\<bindings>](../configure-apps/file-schema/wcf/bindings.md) раздел созданного файла конфигурации кодом конфигурации из предыдущего раздела.
 
 3. Процедурный код вставлен в начало метода `Main` программы клиента.
 
@@ -155,10 +156,10 @@ ms.locfileid: "72320921"
 [!code-csharp[c_SecureWindowsClient#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsclient/cs/secureclient.cs#0)]
 [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.WSHttpBinding>
-- [Служебная программа для метаданных ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
 - [Практическое руководство. Создание клиента](how-to-create-a-wcf-client.md)
 - [Защита служб](securing-services.md)
-- [Общие сведения о безопасности](./feature-details/security-overview.md)
+- [Обзор безопасности](./feature-details/security-overview.md)

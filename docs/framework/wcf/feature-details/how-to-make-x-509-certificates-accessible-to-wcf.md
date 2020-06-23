@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Предоставление доступа к сертификатам X.509 для WCF
+description: Узнайте, как сделать сертификат X. 509 доступным для WCF. Код приложения должен указывать имя и расположение хранилища сертификатов. Возможны и другие требования.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - certificates [WCF], making X.509 certificates accessible to WCF
 - X.509 certificates [WCF], making accessible to WCF
 ms.assetid: a54e407c-c2b5-4319-a648-60e43413664b
-ms.openlocfilehash: e4f1aae021c4be49847b3b6dcd14b5a0a237c899
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5cc1118640bcf1262d88cb8cdb39939ae315cae3
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597050"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246874"
 ---
 # <a name="how-to-make-x509-certificates-accessible-to-wcf"></a>Практическое руководство. Предоставление доступа к сертификатам X.509 для WCF
 Чтобы сделать сертификат X. 509 доступным для Windows Communication Foundation (WCF), код приложения должен указать имя и расположение хранилища сертификатов. В некоторых случаях идентификатор процесса должен иметь доступ к файлу, который содержит закрытый ключ, связанный с сертификатом X.509. Чтобы получить закрытый ключ, связанный с сертификатом X. 509 в хранилище сертификатов, WCF должен иметь разрешение на это. По умолчанию доступ к закрытому ключу сертификата имеют только владелец и системная учетная запись.  
@@ -62,7 +63,7 @@ ms.locfileid: "84597050"
         |Служба, размещенная в IIS 6,0 (Windows Server 2003) или IIS 7,0 (Windows Vista).|СЕТЕВАЯ СЛУЖБА|  
         |Служба, размещенная в IIS 5. X (Windows XP).|Управляется с помощью элемента `<processModel>` в файле Machine.config. По умолчанию используется учетная запись ASPNET.|  
   
-    5. Предоставьте доступ на чтение к файлу, содержащему закрытый ключ, для учетной записи, от имени которой выполняется WCF, используя такой инструмент, как icacls. exe.  
+    5. Предоставьте доступ на чтение к файлу, содержащему закрытый ключ, для учетной записи, под которой выполняется WCF, с помощью такого средства, как icacls.exe.  
   
          В следующем примере кода изменяется список управления доступом на уровне пользователей (DACL) для указанного файла, чтобы предоставить учетной записи сетевой службы доступ на чтение (: R) к файлу.  
   
@@ -70,7 +71,7 @@ ms.locfileid: "84597050"
         icacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /grant "NETWORK SERVICE":R  
         ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [FindPrivateKey](../samples/findprivatekey.md)
 - [Практическое руководство. Получение отпечатка сертификата](how-to-retrieve-the-thumbprint-of-a-certificate.md)

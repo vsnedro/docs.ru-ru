@@ -1,15 +1,16 @@
 ---
 title: Безопасность транспорта с проверкой подлинности с использованием сертификатов
+description: Узнайте, как WFC использует сертификаты для проверки подлинности сервера и клиента при использовании безопасности транспорта.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
-ms.openlocfilehash: 47322cbcddf9f33101bbfbeaa07a3fab74b9d26a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3da1202a5ad3b953470b50dd5924b2ab45f301eb
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84576022"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244782"
 ---
 # <a name="transport-security-with-certificate-authentication"></a>Безопасность транспорта с проверкой подлинности с использованием сертификатов
 
@@ -23,12 +24,12 @@ ms.locfileid: "84576022"
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Транспорт|  
-|Взаимодействие|С существующими службами и клиентами веб-служб.|  
+|Режим безопасности|Транспортировка|  
+|Совместимость|С существующими службами и клиентами веб-служб.|  
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да (с использованием SSL-сертификата)<br /><br /> Да (с использованием сертификата X.509)|  
 |Целостность данных|Да|  
 |Конфиденциальность данных|Да|  
-|Транспорт|HTTPS|  
+|Транспортировка|HTTPS|  
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="configure-the-service"></a>Настройка службы  
@@ -138,7 +139,7 @@ cc.Close();
 <startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

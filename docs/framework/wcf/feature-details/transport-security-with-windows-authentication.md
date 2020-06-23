@@ -1,16 +1,17 @@
 ---
 title: Безопасность транспорта с проверкой подлинности Windows
+description: Ознакомьтесь с этим сценарием, в котором показан клиент или служба WCF, защищенные системой безопасности Windows. В этом примере служба интрасети отображает сведения о персонале.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
-ms.openlocfilehash: 6703da4f97cba38ee0dc334d3010ca509d1fb3ef
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b6134d4cbdff0c1adea704a7f3aaff7e40fd75ec
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598701"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244768"
 ---
 # <a name="transport-security-with-windows-authentication"></a>Безопасность транспорта с проверкой подлинности Windows
 В следующем сценарии показан клиент Windows Communication Foundation (WCF) и служба, защищенная системой безопасности Windows. Дополнительные сведения о программировании см. [в разделе как защитить службу с помощью учетных данных Windows](../how-to-secure-a-service-with-windows-credentials.md).  
@@ -21,12 +22,12 @@ ms.locfileid: "84598701"
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Транспорт|  
-|Взаимодействие|Только WCF|  
+|Режим безопасности|Транспортировка|  
+|Совместимость|Только WCF|  
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да (при помощи встроенной проверки подлинности Windows)<br /><br /> Да (при помощи встроенной проверки подлинности Windows)|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
-|Транспорт|NET.TCP|  
+|Транспортировка|NET.TCP|  
 |Привязка|<xref:System.ServiceModel.NetTcpBinding>|  
   
 ## <a name="service"></a>Служба  
@@ -42,7 +43,7 @@ ms.locfileid: "84598701"
  [!code-csharp[C_SecurityScenarios#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#3)]
  [!code-vb[C_SecurityScenarios#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#3)]  
   
-### <a name="configuration"></a>Конфигурация  
+### <a name="configuration"></a>Параметр Configuration  
  Вместо кода для настройки конечной точки службы можно использовать следующую конфигурацию.  
   
 ```xml  
@@ -73,12 +74,12 @@ ms.locfileid: "84598701"
 </configuration>  
 ```  
   
-## <a name="client"></a>Клиент  
+## <a name="client"></a>клиент  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -89,7 +90,7 @@ ms.locfileid: "84598701"
  [!code-csharp[C_SecurityScenarios#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#4)]
  [!code-vb[C_SecurityScenarios#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#4)]  
   
-### <a name="configuration"></a>Конфигурация  
+### <a name="configuration"></a>Параметр Configuration  
  Вместо кода для создания клиента можно использовать следующую конфигурацию.  
   
 ```xml  
@@ -117,7 +118,7 @@ ms.locfileid: "84598701"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
 - [Практическое руководство. Защита службы с использованием учетных данных Windows](../how-to-secure-a-service-with-windows-credentials.md)
