@@ -1,5 +1,6 @@
 ---
 title: <system.serviceModel>
+description: Сведения об элементах конфигурации WCF ServiceModel, которые позволяют настроить службу WCF и клиентские приложения.
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#system.ServiceModel
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <system.serviceModel> element
 - system.serviceModel element
 ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
-ms.openlocfilehash: 2125ce00b0e23f2e93ff251549f9c1276892b16b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 567cbd2cc07ee82e795daa067b9034b2b8dc1974
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399443"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85243962"
 ---
 # \<system.serviceModel>
 Этот раздел конфигурации содержит все элементы конфигурации Windows Communication Foundation (WCF) ServiceModel.  
@@ -58,7 +59,7 @@ ms.locfileid: "70399443"
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Нет  
+ Отсутствуют  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -84,7 +85,7 @@ ms.locfileid: "70399443"
 |-------------|-----------------|  
 |\<configuration>|Корневой элемент для всех элементов конфигурации в файле конфигурации .NET.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
  WCF не добавляет элементы в разделы конфигурации других продуктов.  
   
  Службы WCF определяются в `services` разделе файла конфигурации. Сборка может содержать любое число служб. Для каждой службы используется собственный раздел конфигурации `service`. Этот раздел и его содержимое определяют контракт, поведение и конечные точки конкретной службы.  

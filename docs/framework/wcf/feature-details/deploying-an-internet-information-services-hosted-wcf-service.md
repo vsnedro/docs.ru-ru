@@ -1,13 +1,14 @@
 ---
 title: Развертывание службы WCF, размещенной в IIS
+description: Сведения о задачах, необходимых для разработки и развертывания службы WCF, размещенной в службах IIS, начиная с проверки установки компонента.
 ms.date: 03/30/2017
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
-ms.openlocfilehash: 826a8798ada8f04173b047dc27829c384f79e2b8
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 886fd9b8d8cf3059b1fd8679c5dd89ee015f2adf
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599247"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245097"
 ---
 # <a name="deploying-an-internet-information-services-hosted-wcf-service"></a>Развертывание службы WCF, размещенной в IIS
 
@@ -35,7 +36,7 @@ ms.locfileid: "84599247"
 
 Процесс установки .NET Framework автоматически регистрирует WCF в службах IIS, если службы IIS уже имеются на компьютере. Если службы IIS установлены после .NET Framework, для регистрации WCF в IIS и ASP.NET требуется дополнительный шаг. Это можно выполнить указанным ниже способом в зависимости от операционной системы.
 
-- Windows 7 и Windows Server 2003. Используйте средство [регистрации ServiceModel (ServiceModelReg. exe)](../servicemodelreg-exe.md) для регистрации WCF в службах IIS. Чтобы использовать это средство, введите **ServiceModelReg. exe/i/x** в [Командная строка разработчика для Visual Studio](../../tools/developer-command-prompt-for-vs.md).
+- Windows 7 и Windows Server 2003. Используйте средство [регистрации ServiceModel (ServiceModelReg.exe)](../servicemodelreg-exe.md) для регистрации WCF в службах IIS. Чтобы использовать это средство, введите **ServiceModelReg.exe/i/x** в [Командная строка разработчика для Visual Studio](../../tools/developer-command-prompt-for-vs.md).
 
 - Windows 7. Наконец, необходимо убедиться, что ASP.NET настроен для использования .NET Framework версии 4 или более поздней. Это можно сделать, запустив средство ASPNET_Regiis с `–i` параметром. Дополнительные сведения см. в разделе [ASP.NET IIS Registration Tool](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 
@@ -75,7 +76,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
 
 ## <a name="configure-the-wcf-service"></a>Настройка службы WCF
 
-Службы WCF, размещенные в IIS, хранят свою конфигурацию в файле Web. config приложения. Службы, размещенные в IIS, используют те же элементы конфигурации и синтаксис, что и службы WCF, размещенные за пределами служб IIS. Однако для среды размещения IIS присущи следующие ограничения.
+Службы WCF, размещенные в IIS, хранят свою конфигурацию в файле Web.config приложений. Службы, размещенные в IIS, используют те же элементы конфигурации и синтаксис, что и службы WCF, размещенные за пределами служб IIS. Однако для среды размещения IIS присущи следующие ограничения.
 
 - Базовые адреса размещенных в IIS служб.
 
@@ -109,7 +110,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
 
 Например, конечная точка WCF, настроенная для использования дайджест-проверки подлинности HTTP, должна находиться в виртуальном каталоге IIS, который также настроен для поддержки дайджест-проверки подлинности HTTP. Непарные сочетания параметров IIS и параметров конечной точки WCF приводят к ошибке во время активации службы.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Размещение в службах IIS](hosting-in-internet-information-services.md)
 - [Рекомендации по размещению в службах IIS](internet-information-services-hosting-best-practices.md)

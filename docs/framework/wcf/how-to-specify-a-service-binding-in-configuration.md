@@ -1,25 +1,26 @@
 ---
 title: Практическое руководство. Задание привязки службы в конфигурации
+description: Узнайте, как настроить конечную точку для службы WCF в файле конфигурации. Контракт определяется для службы и реализуется в классе.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 885037f7-1c2b-4d7a-90d9-06b89be172f2
-ms.openlocfilehash: 245fe50ed5a80c51163652defb642cebefd55dbd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 92d0834091a1f243df6be214f606fbf0093dca54
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184021"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244560"
 ---
 # <a name="how-to-specify-a-service-binding-in-configuration"></a>Практическое руководство. Задание привязки службы в конфигурации
-В этом примере контракт `ICalculator` определен для базовой службы калькулятора, служба реализуется в классе `CalculatorService`, а затем ее конечная точка настраивается в файле Web.config с указанием того, что служба использует класс <xref:System.ServiceModel.BasicHttpBinding>. Для описания того, как настроить эту службу с помощью кода, а не конфигурации, [см.](how-to-specify-a-service-binding-in-code.md)  
+В этом примере контракт `ICalculator` определен для базовой службы калькулятора, служба реализуется в классе `CalculatorService`, а затем ее конечная точка настраивается в файле Web.config с указанием того, что служба использует класс <xref:System.ServiceModel.BasicHttpBinding>. Описание настройки этой службы с помощью кода вместо конфигурации см. в разделе [инструкции. Указание привязки службы в коде](how-to-specify-a-service-binding-in-code.md).  
   
  В большинстве случаев рекомендуется указывать привязку и адрес декларативно в конфигурации, а не принудительно в коде. Как правило, определять конечные точки в коде непрактично, поскольку привязки и адреса для развернутой службы чаще всего отличаются от привязок и адресов, используемых в процессе разработки службы. В общем случае, если не указывать привязку и адрес в коде, их можно изменять без повторной компиляции или повторного развертывания приложения.  
   
- Все следующие шаги конфигурации могут быть предприняты с помощью [инструмента редактора конфигурации (SvcConfigEditor.exe).](configuration-editor-tool-svcconfigeditor-exe.md)  
+ Все описанные ниже действия по настройке можно выполнить с помощью [средства редактора конфигурации (SvcConfigEditor.exe)](configuration-editor-tool-svcconfigeditor-exe.md).  
   
- Для исходной копии этого примера см. [BasicBinding](./samples/basicbinding.md).  
+ Исходный экземпляр этого примера см. в разделе [басикбиндинг](./samples/basicbinding.md).  
   
 ## <a name="to-specify-the-basichttpbinding-to-use-to-configure-the-service"></a>Указание привязки BasicHttpBinding, используемой для настройки службы  
   
@@ -82,7 +83,7 @@ ms.locfileid: "79184021"
   
 ## <a name="to-modify-the-default-values-of-the-binding-properties"></a>Изменение значений по умолчанию для свойств привязки  
   
-1. Чтобы изменить одно из значений <xref:System.ServiceModel.WSHttpBinding>свойств по умолчанию, `<binding name="Binding1">` создайте новое имя связывающей конфигурации - в элементе [ \<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) и установите новые значения для атрибутов привязки в этом связывающем элементе. Например, чтобы изменить значения по умолчанию для времени ожидания при открытии и закрытии с 1 минуты на 2 минуты, добавьте следующие строки в файл конфигурации.  
+1. Чтобы изменить одно из значений свойств по умолчанию <xref:System.ServiceModel.WSHttpBinding> , создайте новое имя конфигурации привязки в `<binding name="Binding1">` [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) элементе и задайте новые значения для атрибутов привязки в этом элементе привязки. Например, чтобы изменить значения по умолчанию для времени ожидания при открытии и закрытии с 1 минуты на 2 минуты, добавьте следующие строки в файл конфигурации.  
   
     ```xml  
     <wsHttpBinding>  
@@ -93,7 +94,7 @@ ms.locfileid: "79184021"
     </wsHttpBinding>  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование привязок для настройки служб и клиентов](using-bindings-to-configure-services-and-clients.md)
-- [Указание адреса конечной точки](specifying-an-endpoint-address.md)
+- [Задание адреса конечной точки](specifying-an-endpoint-address.md)

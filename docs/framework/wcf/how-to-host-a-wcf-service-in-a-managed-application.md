@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Размещение службы WCF в управляемом приложении
+description: Сведения о размещении службы WCF внутри управляемого приложения путем создания саморазмещенной службы и ее тестирования.
 ms.date: 09/17/2018
 dev_langs:
 - csharp
 - vb
 ms.assetid: 5eb29db0-b6dc-4e77-8c68-0a62f79d743b
-ms.openlocfilehash: e3adcad6ba70aa64b797325cd45a043301d7e680
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 7d1d61b683f60a6c643d2a2f03d367a6ae6c6c15
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320980"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246172"
 ---
 # <a name="how-to-host-a-wcf-service-in-a-managed-app"></a>Как разместить службу WCF в управляемом приложении
 
@@ -28,9 +29,9 @@ ms.locfileid: "72320980"
 
 1. Создайте новое консольное приложение:
 
-   1. Откройте Visual Studio и выберите в меню **файл** пункт **создать** **проект**  > .
+   1. Откройте Visual Studio и выберите **New**  >  в меню **файл** пункт создать**проект** .
 
-   2. В списке **Установленные шаблоны** выберите элемент **визуальный C#**  или **Visual Basic**, а затем выберите **Рабочий стол Windows**.
+   2. В списке **Установленные шаблоны** выберите **Visual C#** или **Visual Basic**, а затем выберите **Рабочий стол Windows**.
 
    3. Выберите шаблон **консольное приложение** . Введите `SelfHost` в поле **имя** и нажмите кнопку **ОК**.
 
@@ -65,16 +66,16 @@ ms.locfileid: "72320980"
     > [!NOTE]
     > В этом примере используются конечные точки по умолчанию, и для данной службы не требуется файл конфигурации. Если конечные точки не настроены, то среда выполнения создает одну конечную точку для каждого базового адреса в каждом контракте службы, реализованном в службе. Дополнительные сведения о конечных точках по умолчанию см. в разделе [упрощенная конфигурация](simplified-configuration.md) и [упрощенная конфигурация для служб WCF](./samples/simplified-configuration-for-wcf-services.md).
 
-7. Нажмите клавиши **Ctrl**+**SHIFT**+**B** , чтобы создать решение.
+7. Нажмите клавиши **CTRL** + **SHIFT** + **B** , чтобы построить решение.
 
-## <a name="test-the-service"></a>Проверка службы
+## <a name="test-the-service"></a>Тестирование службы
 
-1. Нажмите клавиши **Ctrl**+**F5** , чтобы запустить службу.
+1. Нажмите клавиши **CTRL** + **F5** , чтобы запустить службу.
 
 2. Откройте **тестовый клиент WCF**.
 
     > [!TIP]
-    > Чтобы открыть **тестовый клиент WCF**, откройте Командная строка разработчика для Visual Studio и выполните **клиент WcfTestClient. exe**.
+    > Чтобы открыть **тестовый клиент WCF**, откройте Командная строка разработчика для Visual Studio и выполните **WcfTestClient.exe**.
 
 3. Выберите **Добавить службу** в меню **файл** .
 
@@ -104,6 +105,6 @@ ms.locfileid: "72320980"
 - [Размещение служб](hosting-services.md)
 - [Практическое руководство. Определение контракта службы](how-to-define-a-wcf-service-contract.md)
 - [Практическое руководство. Реализация контракта службы](how-to-implement-a-wcf-contract.md)
-- [Служебная программа для метаданных ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
 - [Использование привязок для настройки служб и клиентов](using-bindings-to-configure-services-and-clients.md)
 - [Привязки, предоставляемые системой](system-provided-bindings.md)

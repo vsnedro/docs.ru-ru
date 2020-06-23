@@ -1,5 +1,6 @@
 ---
 title: Обращение к службам с использованием клиента WCF
+description: Узнайте, как создать прокси клиента WCF для службы WCF. Клиентское приложение использует клиентский прокси для взаимодействия со службой.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - clients [WCF], consuming services
 ms.assetid: d780af9f-73c5-42db-9e52-077a5e4de7fe
-ms.openlocfilehash: 462d9a3923009f0124c2b90b6fa86dfa9869a3c5
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 25446a89a0b5657d32d77e2d0d57f58f36bed71b
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72316533"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245548"
 ---
 # <a name="accessing-services-using-a-wcf-client"></a>Обращение к службам с использованием клиента WCF
 
@@ -26,10 +27,10 @@ ms.locfileid: "72316533"
 
 3. Создайте экземпляр клиентского прокси-класса WCF.
 
-Прокси-сервер клиента WCF можно создать вручную с помощью служебной программы метаданных модели службы (SvcUtil. exe). Дополнительные сведения см. в разделе [средство служебной программы метаданных ServiceModel (Svcutil. exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). Клиентский прокси-сервер WCF также может быть создан в Visual Studio с помощью функции **Добавление ссылки на службу** . Для создания клиентского прокси-класса WCF любым методом выбранная служба должна быть запущена. Если служба размещается резидентно, то необходимо запустить узел. Если служба размещена на веб-сервере IIS/WAS, то больше ничего делать не нужно.
+Клиентский прокси-сервер WCF может быть создан вручную с помощью служебной программы метаданных модели службы (SvcUtil.exe) Дополнительные сведения см. в разделе [средство служебной программы метаданных ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). Клиентский прокси-сервер WCF также может быть создан в Visual Studio с помощью функции **Добавление ссылки на службу** . Для создания клиентского прокси-класса WCF любым методом выбранная служба должна быть запущена. Если служба размещается резидентно, то необходимо запустить узел. Если служба размещена на веб-сервере IIS/WAS, то больше ничего делать не нужно.
 
 ## <a name="servicemodel-metadata-utility-tool"></a>Средство ServiceModel Metadata Utility Tool
- [Средство служебной программы метаданных ServiceModel (Svcutil. exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) — это программа командной строки для создания кода из метаданных. Ниже приведен пример базовой команды Svcutil.exe.
+ [Средство служебной программы метаданных ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) — это программа командной строки для создания кода из метаданных. Ниже приведен пример базовой команды Svcutil.exe.
 
 ```console
 Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
@@ -56,7 +57,7 @@ Svcutil.exe <file1 [,file2]>
 
 ## <a name="add-service-reference-in-visual-studio"></a>Функция «Добавить ссылку на службу» в Visual Studio
 
- После запуска службы щелкните правой кнопкой мыши проект, который будет содержать прокси клиента WCF, и выберите пункт **Добавить** **ссылку на службу** > . В **диалоговом окне Добавление ссылки на службу**введите URL-адрес службы, которую необходимо вызвать, и нажмите кнопку **Go (переход** ). В диалоговом окне отобразится список доступных служб по указанному адресу. Дважды щелкните службу, чтобы просмотреть доступные контракты и операции, укажите пространство имен для созданного кода и нажмите кнопку **ОК** .
+ После запуска службы щелкните правой кнопкой мыши проект, который будет содержать прокси клиента WCF, и выберите пункт **Добавить**  >  **ссылку на службу**. В **диалоговом окне Добавление ссылки на службу**введите URL-адрес службы, которую необходимо вызвать, и нажмите кнопку **Go (переход** ). В диалоговом окне отобразится список доступных служб по указанному адресу. Дважды щелкните службу, чтобы просмотреть доступные контракты и операции, укажите пространство имен для созданного кода и нажмите кнопку **ОК** .
 
 ## <a name="example"></a>Пример
  В следующем примере кода показан созданный контракт службы.
@@ -191,9 +192,9 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 - [Практическое руководство. Создание клиента](how-to-create-a-wcf-client.md)
 - [Практическое руководство. Доступ к службам с дуплексным контрактом](./feature-details/how-to-access-services-with-a-duplex-contract.md)
 - [Практическое руководство. Асинхронный вызов операций службы](./feature-details/how-to-call-wcf-service-operations-asynchronously.md)
-- [Практическое руководство. Доступ к службам с односторонним контрактом и контрактом типа "запрос-ответ"](./feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [Практическое руководство. Доступ к службам с односторонним контрактом и контрактом типа "запрос — ответ"](./feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
 - [Практическое руководство. Доступ к службе WSE 3.0](./feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
 - [Основные сведения о созданном коде клиента](./feature-details/understanding-generated-client-code.md)
 - [Практическое руководство. Сокращение времени запуска клиентских приложений WCF с использованием XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
-- [Указание поведения клиента во время выполнения](specifying-client-run-time-behavior.md)
-- [Настройка поведения клиентов](configuring-client-behaviors.md)
+- [Задание поведения клиента во время выполнения](specifying-client-run-time-behavior.md)
+- [Настройка поведений клиентов](configuring-client-behaviors.md)

@@ -1,19 +1,20 @@
 ---
 title: Рекомендуемые параметры для трассировки и ведения журналов сообщений
+description: Сведения о рекомендуемых параметрах трассировки и ведения журнала сообщений для различных операционных сред в WCF.
 ms.date: 03/30/2017
 ms.assetid: c6aca6e8-704e-4779-a9ef-50c46850249e
-ms.openlocfilehash: 9d2586570a3f590735c2a8e1ca176580886c8d92
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 71067a4d6f4cec65a148a8162c40e44d82b85784
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84578920"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245333"
 ---
 # <a name="recommended-settings-for-tracing-and-message-logging"></a>Рекомендуемые параметры для трассировки и ведения журналов сообщений
 Этот раздел содержит описание рекомендуемых параметров трассировки и регистрации сообщений для различных операционных сред.  
   
 ## <a name="recommended-settings-for-a-production-environment"></a>Параметры, рекомендуемые для рабочей среды  
- В рабочей среде, если используются источники трассировки WCF, рекомендуется в `switchValue` задать значение Warning. При использовании источника трассировки WCF `System.ServiceModel` рекомендуется задать в атрибуте `switchValue` значение `Warning`, а в атрибуте `propagateActivity` - значение `true`. При использовании источника трассировки, определенного пользователем, рекомендуется присвоить атрибуту `switchValue` значение `Warning, ActivityTracing`. Это можно сделать вручную с помощью [средства редактора конфигурации (SvcConfigEditor. exe)](../../configuration-editor-tool-svcconfigeditor-exe.md). Если в работе не ожидается резкого подъема производительности, во всех перечисленных выше случаях атрибуту `switchValue` можно присвоить значение `Information`, при котором генерируется достаточно большое количество данных трассировки. Следующий пример иллюстрирует задание описанных рекомендуемых параметров.  
+ В рабочей среде, если используются источники трассировки WCF, рекомендуется в `switchValue` задать значение Warning. При использовании источника трассировки WCF `System.ServiceModel` рекомендуется задать в атрибуте `switchValue` значение `Warning`, а в атрибуте `propagateActivity` - значение `true`. При использовании источника трассировки, определенного пользователем, рекомендуется присвоить атрибуту `switchValue` значение `Warning, ActivityTracing`. Это можно сделать вручную с помощью [средства редактора конфигурации (SvcConfigEditor.exe)](../../configuration-editor-tool-svcconfigeditor-exe.md). Если в работе не ожидается резкого подъема производительности, во всех перечисленных выше случаях атрибуту `switchValue` можно присвоить значение `Information`, при котором генерируется достаточно большое количество данных трассировки. Следующий пример иллюстрирует задание описанных рекомендуемых параметров.  
   
 ```xml  
 <configuration>  
@@ -112,6 +113,6 @@ logman start mytrace -pf logman.providers -o test.etl –ets
 logman stop mytrace -ets  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Использование инструментарий управления Windows (WMI) для диагностики](../wmi/index.md)

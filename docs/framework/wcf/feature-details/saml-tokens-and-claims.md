@@ -1,5 +1,6 @@
 ---
 title: Утверждения и маркеры SAML
+description: Узнайте, как WFC использует маркеры SAML для выполнения инструкций, которые являются наборами утверждений, сделанных одной сущностью для другой сущности.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - issued tokens
 - SAML token
 ms.assetid: 930b6e34-9eab-4e95-826c-4e06659bb977
-ms.openlocfilehash: 6220365d5c43299a75d1e0fa8e46a7392b0ccaa2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c054e594af69def96879852a5145675b3123614a
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84590375"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244950"
 ---
 # <a name="saml-tokens-and-claims"></a>Утверждения и маркеры SAML
 *Маркеры* безопасности (SAML) — это XML-представления утверждений. По умолчанию маркеры SAML Windows Communication Foundation (WCF) используются в сценариях федеративной безопасности — это *выдается токены*.  
@@ -31,7 +32,7 @@ ms.locfileid: "84590375"
 4. Подпись маркера SAML указывает проверяющей стороне, что маркер выдан службой маркеров безопасности. Подпись сообщения, созданная при помощи ключа проверки, указывает проверяющей стороне, что маркер был выдан клиенту.  
   
 ## <a name="from-claims-to-samlattributes"></a>От Claims к SamlAttributes  
- В WCF инструкции в маркерах SAML моделируются как <xref:System.IdentityModel.Tokens.SamlAttribute> объекты, которые могут быть заполнены непосредственно из <xref:System.IdentityModel.Claims.Claim> объектов, если <xref:System.IdentityModel.Claims.Claim> объект имеет <xref:System.IdentityModel.Claims.Claim.Right%2A> свойство класса <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> и <xref:System.IdentityModel.Claims.Claim.Resource%2A> свойство имеет тип <xref:System.String> . Пример.  
+ В WCF инструкции в маркерах SAML моделируются как <xref:System.IdentityModel.Tokens.SamlAttribute> объекты, которые могут быть заполнены непосредственно из <xref:System.IdentityModel.Claims.Claim> объектов, если <xref:System.IdentityModel.Claims.Claim> объект имеет <xref:System.IdentityModel.Claims.Claim.Right%2A> свойство класса <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> и <xref:System.IdentityModel.Claims.Claim.Resource%2A> свойство имеет тип <xref:System.String> . Пример:  
   
  [!code-csharp[c_CreateSTS#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#8)]
  [!code-vb[c_CreateSTS#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#8)]  
@@ -42,7 +43,7 @@ ms.locfileid: "84590375"
 ## <a name="from-samlattributes-to-claims"></a>От SamlAttributes к Claims  
  Различные операторы в маркере SAML преобразуются в объекты <xref:System.IdentityModel.Policy.IAuthorizationPolicy>, которые помещаются в класс <xref:System.IdentityModel.Policy.AuthorizationContext>, когда в сообщении содержатся маркеры SAML. Утверждения от каждого оператора SAML возвращаются свойством <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> класса <xref:System.IdentityModel.Policy.AuthorizationContext> и могут быть проверены на необходимость проверки подлинности и авторизации пользователя.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Policy.AuthorizationContext>
 - <xref:System.IdentityModel.Policy.IAuthorizationPolicy>

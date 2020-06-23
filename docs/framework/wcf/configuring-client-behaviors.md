@@ -1,19 +1,20 @@
 ---
 title: Настройка поведений клиентов
+description: 'Узнайте о двух способах настройки поведения WCF: в файле конфигурации приложения или программным способом из вызывающего приложения.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: df5b32fa-e73b-4e8e-b66f-357c748e0173
-ms.openlocfilehash: ca466af71f62ef72e021753b132afdc847f75d76
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 4b83862221cf249455478c3ade159a3101062f3e
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320691"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245444"
 ---
 # <a name="configuring-client-behaviors"></a>Настройка поведений клиентов
-Windows Communication Foundation (WCF) настраивает поведение двумя способами: либо путем обращения к конфигурациям поведения, которые определены в разделе `<behavior>` файла конфигурации клиентского приложения, либо программными средствами в вызывающем приложении. В этом разделе описываются оба подхода.  
+Windows Communication Foundation (WCF) настраивает поведение двумя способами: либо путем обращения к конфигурациям поведения, которые определены в `<behavior>` разделе файла конфигурации клиентского приложения, либо программными средствами в вызывающем приложении. В этом разделе описываются оба подхода.  
   
  При использовании файла конфигурации конфигурация поведения представляет собой именованную коллекцию параметров конфигурации. Имя каждой из конфигураций поведения должно быть уникальным. Эта строка используется в атрибуте `behaviorConfiguration` конфигурации конечной точки, чтобы связать конечную точку с поведением.  
   
@@ -43,7 +44,7 @@ Windows Communication Foundation (WCF) настраивает поведение
 ```  
   
 ## <a name="using-behaviors-programmatically"></a>Управление поведениями программным образом  
- Можно также настроить или вставить поведение программным путем, найдя соответствующее свойство `Behaviors` в клиентском объекте Windows Communication Foundation (WCF) или объекте фабрики канала клиента перед открытием клиента.  
+ Можно также настроить или вставить поведение программным путем, найдя соответствующее `Behaviors` свойство в клиентском объекте Windows Communication Foundation (WCF) или объекте фабрики канала клиента перед открытием клиента.  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показано, как программным образом вставить поведение, обратившись к свойству <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> объекта <xref:System.ServiceModel.Description.ServiceEndpoint>, возвращаемого свойством <xref:System.ServiceModel.ChannelFactory.Endpoint%2A> до создания объекта канала.  
@@ -51,6 +52,6 @@ Windows Communication Foundation (WCF) настраивает поведение
  [!code-csharp[ChannelFactoryBehaviors#10](../../../samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]
  [!code-vb[ChannelFactoryBehaviors#10](../../../samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [\<поведений >](../configure-apps/file-schema/wcf/behaviors.md)
+- [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md)

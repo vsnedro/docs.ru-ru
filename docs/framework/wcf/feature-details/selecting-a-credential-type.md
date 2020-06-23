@@ -1,13 +1,14 @@
 ---
 title: Выбор типа учетных данных
+description: Узнайте об учетных данных, способах их использования в WCF и о том, как выбрать правильные учетные данные для приложения, чтобы установить затребованное удостоверение или возможности.
 ms.date: 03/30/2017
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
-ms.openlocfilehash: 7bcc5f407077b32d85b7f1e5f7ddbc5aba4b80c1
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7a8a6880e5fc3982bb7f470c34a77c771c26effd
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586199"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244924"
 ---
 # <a name="selecting-a-credential-type"></a>Выбор типа учетных данных
 *Учетные данные* — это Windows Communication Foundation данных (WCF), которые используются для установления затребованного удостоверения или возможностей. Например, паспорт - это документ, выданный властями, в котором содержатся учетные данные, подтверждающие гражданство страны или региона. В WCF учетные данные могут принимать множество форм, таких как маркеры имени пользователя и сертификаты X. 509. В этом разделе обсуждаются учетные данные, способы их использования в WCF и выбор правильных учетных данных для приложения.  
@@ -97,7 +98,7 @@ ms.locfileid: "84586199"
   
  Дополнительные сведения об учетных данных и безопасных сеансах см. в статье [вопросы безопасности для защищенных сеансов](security-considerations-for-secure-sessions.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>
 - <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A?displayProperty=nameWithType>

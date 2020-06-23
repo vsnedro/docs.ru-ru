@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Асинхронная реализация операции службы
+description: Сведения о структуре асинхронной операции службы в WFC. Операция службы может быть реализована асинхронно или синхронно.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4e5d2ea5-d8f8-4712-bd18-ea3c5461702c
-ms.openlocfilehash: fd7a1399dd575ad1a4b6c95e0e0510670eb13b51
-ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
+ms.openlocfilehash: 5f890bd5124e2353cecee37d163b7f2c65b87fde
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74802293"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244626"
 ---
 # <a name="how-to-implement-an-asynchronous-service-operation"></a>Практическое руководство. Асинхронная реализация операции службы
 В приложениях Windows Communication Foundation (WCF) операция службы может быть реализована асинхронно или синхронно без указания клиенту способа его вызова. Например, асинхронные операции службы могут вызываться синхронно, а синхронные операции службы могут вызываться асинхронно. Пример асинхронного вызова операции в клиентском приложении см. [в разделе как вызывать операции службы асинхронно](./feature-details/how-to-call-wcf-service-operations-asynchronously.md). Дополнительные сведения о синхронных и асинхронных операциях см. в разделе [Разработка контрактов служб](designing-service-contracts.md) и [синхронных и асинхронных операций](synchronous-and-asynchronous-operations.md). В этом разделе описывается базовая структура асинхронной операции службы, код не завершен. Полный пример обеих сторон службы и клиента см. в разделе [асинхронный](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms751505(v=vs.100)).  
@@ -38,14 +39,14 @@ ms.locfileid: "74802293"
   
     2. Асинхронной операцией `BeginSampleMethod`.  
   
-    3. Асинхронная `BeginServiceAsyncMethod`/`EndServiceAsyncMethod`ная пара операций.  
+    3. Пара асинхронных `BeginServiceAsyncMethod` / `EndServiceAsyncMethod` операций.  
   
 2. Реализацией службы с использованием объекта <xref:System.IAsyncResult?displayProperty=nameWithType>.  
   
  [!code-csharp[C_SyncAsyncClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#1)]
  [!code-vb[C_SyncAsyncClient#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#1)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Разработка контрактов службы](designing-service-contracts.md)
+- [Создание контрактов служб](designing-service-contracts.md)
 - [Синхронные и асинхронные операции](synchronous-and-asynchronous-operations.md)

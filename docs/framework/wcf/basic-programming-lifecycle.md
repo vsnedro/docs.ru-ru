@@ -1,15 +1,16 @@
 ---
 title: Базовый жизненный цикл программирования
+description: Сведения о задачах для создания приложения WCF. WCF позволяет приложениям взаимодействовать на одном компьютере, в сетях или на разных платформах приложений.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - service creation [WCF]
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76
-ms.openlocfilehash: fe578ba3c655c9c9ea8398b9b2e4d4f974153c8e
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: c672827fff780fd263f5355520bb6ccf02bb902e
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320818"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245535"
 ---
 # <a name="basic-programming-lifecycle"></a>Базовый жизненный цикл программирования
 Windows Communication Foundation (WCF) позволяет приложениям взаимодействовать независимо от того, находятся ли они на одном компьютере, через Интернет или на разных платформах приложений. В этом разделе описаны задачи, необходимые для создания приложения WCF. Рабочий пример приложения см. в [руководстве по начало работы](getting-started-tutorial.md).  
