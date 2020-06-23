@@ -464,16 +464,22 @@
       href: additional-apis/index.md
     - name: Microsoft.SqlServer.Server
       items:
-        - name: SmiOrderProperty.Item
-          href: additional-apis/microsoft.sqlserver.server.smiorderproperty.item.md
+        - name: Класс SmiOrderProperty
+          items:
+            - name: Свойство Item
+              href: additional-apis/microsoft.sqlserver.server.smiorderproperty.item.md
     - name: Система
       items:
-        - name: Метод Exception.PrepForRemoting
-          href: additional-apis/system.exception.prepforremoting.md
+        - name: Exception - класс
+          items:
+            - name: Метод PrepForRemoting
+              href: additional-apis/system.exception.prepforremoting.md
     - name: System.Data.SqlTypes
       items:
-        - name: Свойство SqlChars.Stream
-          href: additional-apis/system.data.sqltypes.sqlchars.stream.md
+        - name: Класс SqlChars
+          items:
+            - name: Свойство Stream
+              href: additional-apis/system.data.sqltypes.sqlchars.stream.md
         - name: Класс SqlStreamChars
           items:
             - name: Конструктор SqlStreamChars
@@ -500,10 +506,14 @@
               href: additional-apis/system.data.sqltypes.sqlstreamchars.write.md
     - name: System.IO
       items:
-        - name: Метод MemoryStream.InternalGetOriginAndLength
-          href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
+        - name: Класс MemoryStream
+          items:
+            - name: Метод InternalGetOriginAndLength
+              href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
     - name: System.Net
       items:
+        - name: Класс ComNetOS
+          href: additional-apis/system.net.comnetos.md
         - name: Класс Connection
           href: additional-apis/connection.md
           items:
@@ -514,8 +524,10 @@
           items:
             - name: Поле m_ConnectionList
               href: additional-apis/m_connectionlist.md
-        - name: Свойство ConnectStream.Connection
-          href: additional-apis/system.net.connectstream.connection.md
+        - name: Класс ConnectStream
+          items:
+            - name: Свойство Connection
+              href: additional-apis/system.net.connectstream.connection.md
         - name: Класс CoreResponseData
           href: additional-apis/coreresponsedata.md
           items:
@@ -523,6 +535,10 @@
               href: additional-apis/coreresponsedata_m_responseheaders.md
             - name: Поле m_StatusCode
               href: additional-apis/coreresponsedata_m_statuscode.md
+        - name: Класс ExceptionHelper
+          href: additional-apis/system.net.exceptionhelper.md
+        - name: Класс HttpStatusDescription
+          href: additional-apis/system.net.httpstatusdescription.md
         - name: Класс HttpWebRequest
           items:
             - name: Поле _AutoRedirects
@@ -531,22 +547,46 @@
               href: additional-apis/httpwebrequest__coreresponse.md
             - name: Поле _HttpResponse
               href: additional-apis/_httpresponse.md
-        - name: Свойство PooledStream.NetworkStream
-          href: additional-apis/system.net.pooledstream.networkstream.md
+        - name: Класс Logging
+          href: additional-apis/system.net.logging.md
+        - name: Класс MailAddressParser
+          href: additional-apis/system.net.mail.mailaddressparser.md
+        - name: Класс MailBnfHelper
+          href: additional-apis/system.net.mime.mailbnfhelper.md
+        - name: Класс PooledStream
+          items:
+            - name: Свойство NetworkStream
+              href: additional-apis/system.net.pooledstream.networkstream.md
+        - name: Класс QuotedPairReader
+          href: additional-apis/system.net.mail.quotedpairreader.md
         - name: Класс RtcState
           href: additional-apis/system.net.rtcstate.md
         - name: Класс ServicePoint
           items:
             - name: Поле m_ConnectionGroupList
               href: additional-apis/m_connectiongrouplist.md
+        - name: Класс ServicePointManager
+          items:
+            - name: Метод CloseConnectionGroups
+              href: additional-apis/system.net.servicepointmanager.closeconnectiongroups.md
             - name: Поле s_ServicePointTable
               href: additional-apis/s_servicepointtable.md
-        - name: Поле TlsStream.m_Worker
-          href: additional-apis/system.net.tlsstream.m_worker.md
+        - name: Класс TlsStream
+          items:
+            - name: Поле m_Worker
+              href: additional-apis/system.net.tlsstream.m_worker.md
+        - name: Класс UnsafeNclNativeMethods
+          href: additional-apis/system.net.unsafenclnativemethods.md
+        - name: Класс WebHeaderCollection
+          items:
+            - name: Метод AddInternal
+              href: additional-apis/system.net.webheadercollection.addinternal.md
     - name: System.Net.Security
       items:
-        - name: Свойство SslState.SslProtocol
-          href: additional-apis/system.net.security.sslstate.sslprotocol.md
+        - name: Класс SslState
+          items:
+            - name: Свойство SslProtocol
+              href: additional-apis/system.net.security.sslstate.sslprotocol.md
     - name: System.ServiceModel.Channels
       items:
         - name: Класс Message
@@ -557,8 +597,10 @@
               href: additional-apis/system.servicemodel.channels.message.writestartheaders.md
     - name: System.Windows.Diagnostics
       items:
-        - name: VisualDiagnostics.s_isDebuggerCheckDisabledForTestPurposes
-          href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
+        - name: Класс VisualDiagnostics
+          items:
+            - name: Поле s_isDebuggerCheckDisabledForTestPurposes
+              href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
     - name: System.Windows.Forms.Design
       items:
         - name: Класс DataMemberFieldEditor
@@ -567,7 +609,7 @@
           href: additional-apis/datamemberlisteditor-class.md
     - name: System.Windows.Xps
       items:
-        - name: XpsDocumentWriter
+        - name: Класс XpsDocumentWriter
           items:
             - name: Метод raise__WritingCancelled
               href: additional-apis/xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
@@ -585,8 +627,10 @@
               href: additional-apis/xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
     - name: System.Xml
       items:
-        - name: Метод XmlReader.CreateSqlReader
-          href: additional-apis/system.xml.xmlreader.createsqlreader.md
+        - name: Класс XmlReader
+          items:
+            - name: Метод CreateSqlReader
+              href: additional-apis/system.xml.xmlreader.createsqlreader.md
     - name: Пространство имен adodb
       items:
         - name: Интерфейс Connection
@@ -601,16 +645,22 @@
           href: additional-apis/stdole.dispparams.md
         - name: Структура EXCEPINFO
           href: additional-apis/stdole.excepinfo.md
-        - name: Свойство IFont.Name
-          href: additional-apis/stdole.ifont.name.md
+        - name: Класс IFont
+          items:
+            - name: Name - свойство
+              href: additional-apis/stdole.ifont.name.md
         - name: Интерфейс IFontDisp
           href: additional-apis/stdole.ifontdisp.md
-        - name: Свойство IPicture.Handle
-          href: additional-apis/stdole.ipicture.handle.md
+        - name: Класс IPicture
+          items:
+            - name: Свойство Handle
+              href: additional-apis/stdole.ipicture.handle.md
         - name: Интерфейс IPictureDisp
           href: additional-apis/stdole.ipicturedisp.md
-        - name: Свойство IPictureDisp.Handle
-          href: additional-apis/stdole.ipicturedisp.handle.md
+        - name: Класс IPictureDisp
+          items:
+            - name: Свойство Handle
+              href: additional-apis/stdole.ipicturedisp.handle.md
         - name: Интерфейс StdFont
           href: additional-apis/stdole.stdfont.md
         - name: Интерфейс StdPicture
