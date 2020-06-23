@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Использование средств обеспечения безопасности транспорта и учетных данных сообщения
+description: Узнайте, как реализовать защиту транспорта с помощью учетных данных сообщений, что обеспечивает лучшее из режимов транспорта и безопасности сообщений в WCF.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - TransportWithMessageCredentials
 ms.assetid: 6cc35346-c37a-4859-b82b-946c0ba6e68f
-ms.openlocfilehash: f49c0eb46141081b91100a5ae1869cbcf556e353
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f632a4389eafc155cedcae94707c9418b6696f2c
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579388"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246653"
 ---
 # <a name="how-to-use-transport-security-and-message-credentials"></a>Практическое руководство. Использование средств обеспечения безопасности транспорта и учетных данных сообщения
 Защита службы с помощью транспорта и учетных данных сообщений использует оптимальные режимы безопасности транспорта и сообщений в Windows Communication Foundation (WCF). В общих словах, TLS обеспечивает целостность и конфиденциальность, а MLS предоставляет различные учетные данные, которые невозможно использовать в строгих механизмах обеспечения безопасности транспорта. В этом разделе приведены основные этапы реализации транспорта с учетными данными сообщения с помощью привязок <xref:System.ServiceModel.WSHttpBinding> и <xref:System.ServiceModel.NetTcpBinding>. Дополнительные сведения о настройке режима безопасности см. в разделе [инструкции. Установка режима безопасности](../how-to-set-the-security-mode.md).  
@@ -160,7 +161,7 @@ ms.locfileid: "84579388"
     </bindings>  
     ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Задание режима безопасности](../how-to-set-the-security-mode.md)
 - [Защита служб](../securing-services.md)

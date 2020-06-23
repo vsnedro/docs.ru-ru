@@ -1,18 +1,19 @@
 ---
 title: Упрощенная конфигурация служб WCF
+description: Узнайте, как реализовать и настроить типичную службу и клиент с помощью WCF. Служба взаимодействует с помощью конечной точки, указанной в файле конфигурации.
 ms.date: 03/30/2017
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
-ms.openlocfilehash: 61720fff957bfe7a13da1d7498487342b2ee234c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 46a0c878b29de34219413a508799ddaddf507dd8
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84584107"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246224"
 ---
 # <a name="simplified-configuration-for-wcf-services"></a>Упрощенная конфигурация служб WCF
 В этом примере показано, как реализовать и настроить типичную службу и клиент с помощью Windows Communication Foundation (WCF). Этот образец является основой для всех остальных базовых образцов технологий.  
   
- Эта служба, которая предоставляет конечную точку для взаимодействия со службой, использует упрощенную конфигурацию в .NET Framework 4. До .NET Framework 4 конечная точка обычно определяется в файле конфигурации (Web. config), как показано в следующем примере кода конфигурации.  
+ Эта служба, которая предоставляет конечную точку для взаимодействия со службой, использует упрощенную конфигурацию в .NET Framework 4. До .NET Framework 4 конечная точка обычно определяется в файле конфигурации (Web.config), как показано в следующем примере кода конфигурации.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -78,7 +79,7 @@ ms.locfileid: "84584107"
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigSimplificationIn40`  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Образцы управления AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383405(v=azure.10))
 - [Упрощенная конфигурация](../simplified-configuration.md)

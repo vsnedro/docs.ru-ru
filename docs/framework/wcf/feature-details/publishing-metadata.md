@@ -1,15 +1,16 @@
 ---
 title: Публикация метаданных
+description: Узнайте, как службы WCF публикуют метаданные путем публикации одной или нескольких конечных точек метаданных, делая их доступными с помощью стандартных протоколов.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], publishing
 ms.assetid: 3a56831a-cabc-45c0-bd02-12e2e9bd7313
-ms.openlocfilehash: 456eecde88fec182d3234c20a4f01971fd045bb8
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2aa6d877db4e5b09b4c594e6e87b63fb6c04703b
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596764"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244963"
 ---
 # <a name="publishing-metadata"></a>Публикация метаданных
 Службы Windows Communication Foundation (WCF) публикуют метаданные путем публикации одной или нескольких конечных точек метаданных. Публикация метаданных службы позволяет получать доступ к метаданным с использованием стандартных протоколов, таких как WS-MetadataExchange (MEX) и запросы HTTP/GET. Конечные точки метаданных аналогичны другим конечным точкам служб в том, что они имеют адрес, привязку и контракт и могут быть добавлены в узел службы посредством конфигурации или принудительного кода.  
@@ -22,7 +23,7 @@ ms.locfileid: "84596764"
  Поведение службы <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType> добавляет в узел службы экземпляр <xref:System.ServiceModel.Description.ServiceMetadataExtension> в качестве расширения. Расширение <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> обеспечивает реализацию протоколов публикации метаданных. Расширение <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> также можно использовать для получения метаданных службы во время выполнения, обратившись к свойству <xref:System.ServiceModel.Description.ServiceMetadataExtension.Metadata%2A?displayProperty=nameWithType>.  
   
 ### <a name="mex-metadata-endpoints"></a>Конечные точки метаданных MEX  
- Чтобы добавить конечные точки метаданных, использующие протокол MEX, следует добавить в основное приложение службы конечные точки службы, которые используют контракт службы `IMetadataExchange`. WCF включает <xref:System.ServiceModel.Description.IMetadataExchange> интерфейс с этим именем контракта службы, который можно использовать как часть модели программирования WCF. Конечные точки WS-MetadataExchange или службы обмена метаданными могут использовать одну из четырех привязок по умолчанию, которые статические методы фабрики предоставляют <xref:System.ServiceModel.Description.MetadataExchangeBindings> классу для сопоставления с привязками по умолчанию, используемыми средствами WCF, такими как Svcutil. exe. Настраивать конечные точки метаданных MEX также можно с помощью пользовательской привязки.  
+ Чтобы добавить конечные точки метаданных, использующие протокол MEX, следует добавить в основное приложение службы конечные точки службы, которые используют контракт службы `IMetadataExchange`. WCF включает <xref:System.ServiceModel.Description.IMetadataExchange> интерфейс с этим именем контракта службы, который можно использовать как часть модели программирования WCF. Конечные точки WS-MetadataExchange или службы обмена метаданными могут использовать одну из четырех привязок по умолчанию, которые статические методы фабрики предоставляют <xref:System.ServiceModel.Description.MetadataExchangeBindings> классу для сопоставления с привязками по умолчанию, используемыми средствами WCF, такими как Svcutil.exe. Настраивать конечные точки метаданных MEX также можно с помощью пользовательской привязки.  
   
 ### <a name="http-get-metadata-endpoints"></a>Конечные точки метаданных HTTP GET  
  Чтобы добавить конечную точку метаданных в службу, которая отвечает на запросы HTTP/GET, следует задать свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> в поведении <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType> значение `true`. Кроме того, можно настроить конечную точку метаданных, которая использует протокол HTTPS, задав свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> в поведении <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=nameWithType> значение `true`.  

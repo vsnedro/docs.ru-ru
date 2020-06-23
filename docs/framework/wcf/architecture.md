@@ -1,17 +1,18 @@
 ---
 title: Архитектура Windows Communication Foundation
+description: Узнайте о основных уровнях архитектуры Windows Communication Foundation, включая контракты, среду выполнения службы, Обмен сообщениями и активацию &.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Communication Foundation [WCF], architecture
 - WCF [WCF], architecture
 - architecture [WCF]
 ms.assetid: a3bcb0a1-56ea-4ba6-9736-d260d90dade5
-ms.openlocfilehash: f34a05a436dd021f0d1fcc05f3a12a058123acdc
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: a07d5c4be2e36b8123e39a0a04d841797e34212b
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320835"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245574"
 ---
 # <a name="windows-communication-foundation-architecture"></a>Архитектура Windows Communication Foundation
 На следующем рисунке показаны основные уровни архитектуры Windows Communication Foundation (WCF).  
@@ -47,5 +48,5 @@ ms.locfileid: "72320835"
   
 ## <a name="see-also"></a>См. также
 
-- [Что такое Windows Communication Foundation](whats-wcf.md)
-- [Основные понятия Windows Communication Foundation](fundamental-concepts.md)
+- [Что такое Windows Communication Foundation](whats-wcf.md)
+- [Основные понятия Windows Communication Foundation](fundamental-concepts.md)

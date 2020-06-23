@@ -1,16 +1,17 @@
 ---
 title: Безопасность транспорта с анонимным клиентом
+description: Ознакомьтесь с этим сценарием WCF, который использует безопасность транспорта для проверки подлинности сервера с помощью сертификата, которому доверяет клиент. Проверка подлинности клиента не выполнена.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
-ms.openlocfilehash: c3e44c87dfa70ac3a7acc5a83ac596efc22b6155
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 08cfb8c1a5581f17a251224430018764bed80b0f
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75344755"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245015"
 ---
 # <a name="transport-security-with-an-anonymous-client"></a>Безопасность транспорта с анонимным клиентом
 
@@ -20,19 +21,19 @@ ms.locfileid: "75344755"
 
 Дополнительные сведения об использовании сертификата со службой см. в разделе [Работа с](working-with-certificates.md) сертификатами и [инструкции. Настройка порта с помощью SSL-сертификата](how-to-configure-a-port-with-an-ssl-certificate.md).
 
-![Использование безопасности передачи с анонимным клиентом](./media/8fa2e931-0cfb-4aaa-9272-91d652b85d8d.gif)
+![Использование безопасности транспорта с анонимным клиентом](./media/8fa2e931-0cfb-4aaa-9272-91d652b85d8d.gif)
 
 |Характеристика|Описание|
 |--------------------|-----------------|
-|Режим безопасности|Transport|
-|Взаимодействие|С существующими веб-службами и клиентами|
+|Режим безопасности|Транспортировка|
+|Совместимость|С существующими веб-службами и клиентами|
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да<br /><br /> Уровень приложения (без поддержки WCF)|
 |Целостность|Да|
 |Конфиденциальность|Да|
-|Transport|HTTPS|
+|Транспортировка|HTTPS|
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|
 
-## <a name="service"></a>Service
+## <a name="service"></a>Служба
 
 Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.
 
@@ -47,7 +48,7 @@ ms.locfileid: "75344755"
 [!code-csharp[c_SecurityScenarios#5](~/samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#5)]
 [!code-vb[c_SecurityScenarios#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#5)]
 
-### <a name="configuration"></a>Конфигурация
+### <a name="configuration"></a>Параметр Configuration
 
 В следующем коде настраивается та же конечная точка с использованием конфигурации. Проверка подлинности клиента не выполняется никаким механизмом и, следовательно, клиент является анонимным.
 
@@ -78,13 +79,13 @@ ms.locfileid: "75344755"
 </configuration>
 ```
 
-## <a name="client"></a>Клиент
+## <a name="client"></a>клиент
 
 Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.
 
 - Создайте автономный клиент, используя код (и код клиента).
 
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Например:
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:
 
      [!code-csharp[C_SecurityScenarios#0](~/samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]
@@ -94,7 +95,7 @@ ms.locfileid: "75344755"
 [!code-csharp[c_SecurityScenarios#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#6)]
 [!code-vb[c_SecurityScenarios#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#6)]
 
-### <a name="configuration"></a>Конфигурация
+### <a name="configuration"></a>Параметр Configuration
 
 Вместо кода для настройки службы можно использовать следующую конфигурацию.
 
@@ -121,9 +122,9 @@ ms.locfileid: "75344755"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Общие сведения о безопасности](security-overview.md)
+- [Обзор безопасности](security-overview.md)
 - [Безопасность транспорта WS](../samples/ws-transport-security.md)
 - [Общие сведения о безопасности транспорта](transport-security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

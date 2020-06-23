@@ -1,16 +1,17 @@
 ---
 title: Использование класса сообщений
+description: Сведения о классе Message, который является фундаментальным для WCF. Необходимо программировать с помощью класса Message напрямую только в некоторых сложных сценариях.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d1d62bfb-2aa3-4170-b6f8-c93d3afdbbed
-ms.openlocfilehash: 142578ef76a70fed27dc0137378b59e228cd25c9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f806e257cfd3ccc5118a5783e2eda48eef4ba0bf
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585653"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246497"
 ---
 # <a name="using-the-message-class"></a>Использование класса сообщений
 <xref:System.ServiceModel.Channels.Message>Класс является фундаментальным для Windows Communication Foundation (WCF). Все взаимодействие между клиентами и службами в конечном итоге приводит к отправке и получению экземпляров класса <xref:System.ServiceModel.Channels.Message>.  
@@ -94,7 +95,7 @@ ms.locfileid: "84585653"
  [!code-csharp[C_UsingTheMessageClass#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_usingthemessageclass/cs/source.cs#5)]
  [!code-vb[C_UsingTheMessageClass#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#5)]  
   
- Два дополнительных вспомогательных метода записывают определенные теги начального элемента SOAP. Эти методы не осуществляют доступ к телу сообщения, поэтому они не изменяют состояние сообщения. Сюда входит следующее.  
+ Два дополнительных вспомогательных метода записывают определенные теги начального элемента SOAP. Эти методы не осуществляют доступ к телу сообщения, поэтому они не изменяют состояние сообщения. К ним относятся следующие объекты.  
   
 - <xref:System.ServiceModel.Channels.Message.WriteStartBody%2A> записывает начальный элемент тела, например `<soap:Body>`.  
   

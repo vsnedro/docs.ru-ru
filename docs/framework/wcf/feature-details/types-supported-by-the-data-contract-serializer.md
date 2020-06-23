@@ -1,15 +1,16 @@
 ---
 title: Типы, поддерживаемые сериализатором контракта данных
+description: См. полный список типов, поддерживаемых сериализатором контрактов данных WCF для сериализации и десериализации.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - serialization [WCF], supported types
 ms.assetid: 7381b200-437a-4506-9556-d77bf1bc3f34
-ms.openlocfilehash: 15c3cda8329682fcbaa36609647ec49de7eb3c37
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ef9d2e61ab7121c97bd474bb151fee32907b1dac
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595106"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246536"
 ---
 # <a name="types-supported-by-the-data-contract-serializer"></a>Типы, поддерживаемые сериализатором контракта данных
 
@@ -70,7 +71,7 @@ Windows Communication Foundation (WCF) использует в <xref:System.Runt
 
 - Тип <xref:System.DBNull> обрабатывается особым образом. Это одноэлементный тип, и при десериализации десериализатор соблюдает одноэлементное ограничение и указывает все ссылки `DBNull` на одноэлементный экземпляр. Поскольку тип `DBNull` сериализуется, ему требуется разрешение <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> .
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Типы XML и ADO.NET в контрактах данных](xml-and-ado-net-types-in-data-contracts.md)
 - [Использование контрактов данных](using-data-contracts.md)

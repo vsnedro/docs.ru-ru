@@ -1,5 +1,6 @@
 ---
 title: Программирование безопасности WCF
+description: Узнайте, как создать безопасное приложение WCF, включая проверку подлинности, конфиденциальность и целостность.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - message security [WCF], programming overview
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
-ms.openlocfilehash: 2b3c96e91c0d6f01fa30b3b617449e7d4a148933
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 8e77c667dd8904c10bbab88e1413690677cef53b
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596777"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244989"
 ---
 # <a name="programming-wcf-security"></a>Программирование безопасности WCF
 В этом разделе описываются фундаментальные задачи программирования, используемые для создания безопасного Windows Communication Foundation (WCF) приложения. В этом разделе рассматриваются только проверка подлинности, конфиденциальность и целостность, называемая *безопасностью перемещения*. В этом разделе не рассматривается авторизация (Управление доступом к ресурсам или службам). сведения об авторизации см. в разделе [авторизация](authorization-in-wcf.md).  

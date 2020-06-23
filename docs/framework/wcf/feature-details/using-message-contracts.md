@@ -1,5 +1,6 @@
 ---
 title: Использование контрактов сообщений
+description: Узнайте, как использовать атрибуты контракта сообщения для создания контракта сообщения, указывающего структуру сообщения SOAP, в WFC.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - message contracts [WCF]
 ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249
-ms.openlocfilehash: 1b102b97c62df0bb8b031ded0f9165a11f8a8911
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0a75298b50df74ddf15904af43a0eb62c5ba8496
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600274"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85244716"
 ---
 # <a name="using-message-contracts"></a>Использование контрактов сообщений
 Как правило, при создании приложений Windows Communication Foundation (WCF) разработчики обращают внимание на структуры данных и проблемы сериализации и не должны беспокоиться о структуре сообщений, в которых эти данные переносятся. Для таких приложений создание контрактов данных для параметров или возвращаемых значений представляет собой достаточно простую задачу. (Дополнительные сведения см. [в разделе указание передача данных в контрактах служб](specifying-data-transfer-in-service-contracts.md).)  
@@ -213,7 +214,7 @@ public class BankingDepositLog
 ## <a name="signing-and-encrypting-parts-of-the-message"></a>Подписывание и шифрование частей сообщения  
  В контракте сообщения может быть указано, следует ли снабжать заголовки и/или тело сообщения цифровыми подписями и шифровать.  
   
- Это можно сделать, задав свойство <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> атрибутов <xref:System.ServiceModel.MessageHeaderAttribute> и <xref:System.ServiceModel.MessageBodyMemberAttribute>. Это свойство является перечислением типа <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> и может принимать значения <xref:System.Net.Security.ProtectionLevel.None> (без шифрования или подписи), <xref:System.Net.Security.ProtectionLevel.Sign> (только цифровая подпись) или <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (и шифрование, и цифровая подпись). Значение по умолчанию — <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
+ Это можно сделать, задав свойство <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> атрибутов <xref:System.ServiceModel.MessageHeaderAttribute> и <xref:System.ServiceModel.MessageBodyMemberAttribute>. Это свойство является перечислением типа <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> и может принимать значения <xref:System.Net.Security.ProtectionLevel.None> (без шифрования или подписи), <xref:System.Net.Security.ProtectionLevel.Sign> (только цифровая подпись) или <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (и шифрование, и цифровая подпись). Значение по умолчанию — <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  Чтобы эти возможности безопасности работали, необходимо надлежащим образом настроить привязку и расширения функциональности. При использовании этих возможностей безопасности без надлежащей настройки (например, при попытке подписать сообщение без предоставления учетных данных) во время проверки будет вызвано исключение.  
   

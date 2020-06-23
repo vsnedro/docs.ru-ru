@@ -1,5 +1,6 @@
 ---
 title: Работа с сертификатами
+description: Дополнительные сведения о функциях цифровых сертификатов X. 509 и их использовании в WCF. Ресурсы в этой статье помогут вам объяснить эти концепции.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: e61437efd87c30758c36d642bb9269ad2966c951
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 8090e84b33e2a6f442d387c7012e6ccdc2900dd1
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600118"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246406"
 ---
 # <a name="working-with-certificates"></a>Работа с сертификатами
 
@@ -188,7 +189,7 @@ ms.locfileid: "84600118"
 
 В первом выпуске WCF сопоставление выполняется без обращения к политике домена. Поэтому более старые приложения, которые работали при использовании первого выпуска, могут не работать, если включено сопоставление и сертификат X.509 не удовлетворяет требованиям политики домена.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Channels>
 - <xref:System.ServiceModel.Security>

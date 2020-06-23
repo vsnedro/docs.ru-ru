@@ -1,13 +1,14 @@
 ---
 title: Инспекторы сообщений
+description: Узнайте, как реализовать и настроить инспекторы сообщений клиента и службы WCF, которые предоставляют механизм проверки сообщений.
 ms.date: 03/30/2017
 ms.assetid: 9bd1f305-ad03-4dd7-971f-fa1014b97c9b
-ms.openlocfilehash: 1a5519e815a6714e087a77c69e943a3a8c65db68
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 20abb655a58f9dce4a967ade9b51db90eed2375b
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585082"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246213"
 ---
 # <a name="message-inspectors"></a>Инспекторы сообщений
 В этом образце демонстрируется, как реализовать и настроить инспекторы сообщений клиента и службы.  

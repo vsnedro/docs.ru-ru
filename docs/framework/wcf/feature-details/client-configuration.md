@@ -1,13 +1,14 @@
 ---
 title: Конфигурация клиента
+description: Узнайте, как использовать конфигурацию клиента WCF для указания адреса, привязки, поведения и контракта для конечной точки, которая используется для подключения к службе.
 ms.date: 03/30/2017
 ms.assetid: 5da5bd3b-65d9-43b7-91b9-cc9e989b1350
-ms.openlocfilehash: 2d17438095e65ccf922061c03e406bab35b07c5d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c3e3d4904bad39e951e8ba69013ac95894130489
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593663"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245379"
 ---
 # <a name="client-configuration"></a>Конфигурация клиента
 Можно использовать конфигурацию клиента Windows Communication Foundation (WCF) для указания адреса, привязки, поведения и контракта, свойств "ABC" клиентской конечной точки, которые клиенты используют для подключения к конечным точкам службы. [\<client>](../../configure-apps/file-schema/wcf/client.md)Элемент содержит [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-of-client.md) элемент, атрибуты которого используются для настройки конечной точки ABCs. Эти атрибуты обсуждаются в разделе [Настройка конечных точек](#configuring-endpoints) .  
@@ -15,7 +16,7 @@ ms.locfileid: "84593663"
  [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-of-client.md)Элемент также содержит [\<metadata>](../../configure-apps/file-schema/wcf/metadata.md) элемент, который используется для задания параметров импорта и экспорта метаданных, [\<headers>](../../configure-apps/file-schema/wcf/headers.md) элемента, содержащего коллекцию настраиваемых заголовков адресов, и [\<identity>](../../configure-apps/file-schema/wcf/identity.md) элемента, который обеспечивает проверку подлинности конечной точки другими конечными точками, которые обмениваются сообщениями. [\<headers>](../../configure-apps/file-schema/wcf/headers.md)Элементы и [\<identity>](../../configure-apps/file-schema/wcf/identity.md) являются частью <xref:System.ServiceModel.EndpointAddress> и обсуждаются в статье [адреса](endpoint-addresses.md) . Ссылки на разделы, в которых объясняется использование расширений метаданных, приведены в разделе [Настройка метаданных](#configuring-metadata) .  
   
 ## <a name="configuring-endpoints"></a>Настройка конечных точек  
- Конфигурация клиента позволяет клиенту указывать одну или несколько конечных точек, каждый из которых имеет собственное имя, адрес и контракт, при этом каждый из них ссылается на [\<bindings>](../../configure-apps/file-schema/wcf/bindings.md) элементы и [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) в конфигурации клиента, используемые для настройки этой конечной точки. Файл конфигурации клиента должен называться "App. config", так как это имя, которое требуется среде выполнения WCF. В следующем примере показан файл конфигурации клиента.  
+ Конфигурация клиента позволяет клиенту указывать одну или несколько конечных точек, каждый из которых имеет собственное имя, адрес и контракт, при этом каждый из них ссылается на [\<bindings>](../../configure-apps/file-schema/wcf/bindings.md) элементы и [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) в конфигурации клиента, используемые для настройки этой конечной точки. Файл конфигурации клиента должен называться "App.config", так как это имя, которое требуется среде выполнения WCF. В следующем примере показан файл конфигурации клиента.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -93,7 +94,7 @@ ms.locfileid: "84593663"
 ### <a name="configuring-metadata"></a>Настройка метаданных  
  [\<metadata>](../../configure-apps/file-schema/wcf/metadata.md)Элемент используется для указания параметров, используемых для регистрации расширений импорта метаданных. Дополнительные сведения о расширении системы метаданных см. в разделе [расширение системы метаданных](../extending/extending-the-metadata-system.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Конечные точки: адреса, привязки и контракты](endpoints-addresses-bindings-and-contracts.md)
 - [Настройка поведений клиентов](../configuring-client-behaviors.md)

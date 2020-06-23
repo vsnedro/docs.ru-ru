@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Как настраивать протокол SSL в службе WCF, размещенной в IIS
+description: Узнайте, как настроить службу WCF, размещенную в IIS, для использования безопасности транспорта HTTP, для которой требуется сертификат, зарегистрированный в службах IIS.
 ms.date: 03/30/2017
 ms.assetid: df2fe31f-a4bb-4024-92ca-b74ba055e038
-ms.openlocfilehash: fb3e87021c3dce1172250f33fd302916920af74d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 8dc4692863d93e407a122c0ba93ae38323b8b213
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597232"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245262"
 ---
 # <a name="how-to-configure-an-iis-hosted-wcf-service-with-ssl"></a>Практическое руководство. Как настраивать протокол SSL в службе WCF, размещенной в IIS
 В этом разделе описано, как настроить размещенную в IIS службу WCF для использования безопасности транспорта HTTP. Для безопасности транспорта HTTP требуется, чтобы SSL-сертификат был зарегистрирован в службах IIS. Если SSL-сертификат не установлен, для создания тестового сертификата можно использовать службы IIS. Затем необходимо добавить SSL-привязку для проекта веб-сайта и установить свойства проверки подлинности веб-сайта. Наконец, необходимо настроить службу WCF на использование протокола HTTPS.  
@@ -144,7 +145,7 @@ ms.locfileid: "84597232"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Размещение в службах IIS](hosting-in-internet-information-services.md)
 - [Инструкции по размещению в службах IIS](../samples/internet-information-service-hosting-instructions.md)
