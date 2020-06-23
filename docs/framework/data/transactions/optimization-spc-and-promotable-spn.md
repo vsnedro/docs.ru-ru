@@ -1,13 +1,14 @@
 ---
 title: Оптимизация производительности с помощью механизмов уведомления об однофазной фиксации и повышаемого однофазного присоединения
+description: Оптимизируйте производительность с помощью однофазного уведомления о фиксации и продвижения с одним этапом. Сведения о инфраструктуре System. Transactions в .NET.
 ms.date: 03/30/2017
 ms.assetid: 57beaf1a-fb4d-441a-ab1d-bc0c14ce7899
-ms.openlocfilehash: f486315b8a8c90e6616ca95fb6be4b2ae3719b7e
-ms.sourcegitcommit: 2d792961ed48f235cf413d6031576373c3050918
+ms.openlocfilehash: 89ce82e673340c93254983c078f78a2501129383
+ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70205896"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85141982"
 ---
 # <a name="optimization-using-single-phase-commit-and-promotable-single-phase-notification"></a>Оптимизация производительности с помощью механизмов уведомления об однофазной фиксации и повышаемого однофазного присоединения
 
@@ -58,13 +59,13 @@ ms.locfileid: "70205896"
 
 ## <a name="single-phase-commit-optimization"></a>Оптимизация однофазной фиксации
 
-Протокол однофазной фиксации наиболее эффективен при использовании во время выполнения, поскольку все изменения производятся без какой-либо явной координации. Чтобы использовать данную оптимизацию, необходимо реализовать диспетчер ресурсов с помощью интерфейса <xref:System.Transactions.ISinglePhaseNotification> и зачислить его в транзакцию с помощью метода <xref:System.Transactions.Transaction.EnlistDurable%2A> или <xref:System.Transactions.Transaction.EnlistVolatile%2A>. В частности, параметр *енлистментоптионс* должен равняться <xref:System.Transactions.EnlistmentOptions.None> значению, чтобы обеспечить выполнение одного этапа фиксации.
+Протокол однофазной фиксации наиболее эффективен при использовании во время выполнения, поскольку все изменения производятся без какой-либо явной координации. Чтобы использовать данную оптимизацию, необходимо реализовать диспетчер ресурсов с помощью интерфейса <xref:System.Transactions.ISinglePhaseNotification> и зачислить его в транзакцию с помощью метода <xref:System.Transactions.Transaction.EnlistDurable%2A> или <xref:System.Transactions.Transaction.EnlistVolatile%2A>. В частности, параметр *енлистментоптионс* должен равняться значению, <xref:System.Transactions.EnlistmentOptions.None> чтобы обеспечить выполнение одного этапа фиксации.
 
 Интерфейс <xref:System.Transactions.ISinglePhaseNotification> наследуется от интерфейса <xref:System.Transactions.IEnlistmentNotification>, поэтому если реализованный диспетчер ресурсов не подходит для однофазной фиксации, он, тем не менее, может получать уведомления о двухфазной фиксации. Если реализованный диспетчер ресурсов получает уведомление <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> от диспетчера транзакций, он должен попытаться выполнить действия, необходимые для фиксации транзакции, и сообщить диспетчеру транзакций о необходимости фиксации или отката транзакции путем вызова метода <xref:System.Transactions.SinglePhaseEnlistment.Committed%2A>, <xref:System.Transactions.SinglePhaseEnlistment.Aborted%2A> или <xref:System.Transactions.SinglePhaseEnlistment.InDoubt%2A> параметра <xref:System.Transactions.SinglePhaseEnlistment>. Ответ <xref:System.Transactions.Enlistment.Done%2A>, переданный зачисленному ресурсу на данном этапе, подразумевает семантику ReadOnly. Поэтому не следует передавать ответ <xref:System.Transactions.Enlistment.Done%2A> в дополнение к вызову любого из других методов.
 
 При наличии только одного переменного прикрепления и отсутствия устойчивого прикрепления, постоянное прикрепление получает уведомление SPC. Если существуют переменные прикрепления и только один устойчивый связующий объект, то временные прикрепления получают 2PC. После этого зачисленный устойчивый ресурс получает уведомление об однофазной фиксации (SPC).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Зачисление ресурсов в транзакцию в качестве участников](enlisting-resources-as-participants-in-a-transaction.md)
 - [Однофазная и многофазная фиксация транзакции](committing-a-transaction-in-single-phase-and-multi-phase.md)

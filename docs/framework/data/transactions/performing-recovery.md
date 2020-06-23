@@ -1,13 +1,14 @@
 ---
 title: Выполнение восстановления
+description: Выполните восстановление в .NET. Диспетчер ресурсов помогает разрешать прикрепления устойчивых транзакций путем повторного прикрепления участника транзакции после сбоя ресурса.
 ms.date: 03/30/2017
 ms.assetid: 6dd17bf6-ba42-460a-a44b-8046f52b10d0
-ms.openlocfilehash: fe0e096c31b2ef62a1bc50d40c87f2e12c87343f
-ms.sourcegitcommit: 2d792961ed48f235cf413d6031576373c3050918
+ms.openlocfilehash: bb00d2f574cc2651b733f3308cf2ffc6b430cc31
+ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70205882"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85141969"
 ---
 # <a name="performing-recovery"></a>Выполнение восстановления
 Диспетчер ресурсов обеспечивает разрешение зачислений устойчивых ресурсов в транзакции, повторно зачисляя участника транзакции после сбоя ресурса.  

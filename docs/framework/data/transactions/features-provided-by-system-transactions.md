@@ -1,19 +1,20 @@
 ---
 title: Функциональные возможности, предоставляемые пространством имен System.Transactions
+description: Изучите функции, предоставляемые пространством имен System. Transactions в .NET для создания собственного приложения транзакций и диспетчера ресурсов.
 ms.date: 03/30/2017
 ms.assetid: e458cef9-63b5-4401-b448-1536dcd9d9e5
-ms.openlocfilehash: c3ef924edf34ae19be9eace85aaee5340025de7d
-ms.sourcegitcommit: 2d792961ed48f235cf413d6031576373c3050918
+ms.openlocfilehash: 0278e9248305572c6156c6500f1fe51a8b3f3338
+ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70205958"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85141866"
 ---
 # <a name="features-provided-by-systemtransactions"></a>Функциональные возможности, предоставляемые пространством имен System.Transactions
 В этом разделе описывается, как можно использовать функциональные возможности, предоставляемые пространством имен <xref:System.Transactions>, для создания собственного транзакционного приложения и диспетчера ресурсов. В частности, в этом разделе показано, как создавать транзакции и участвовать в транзакциях (локальных и распределенных) с одним или несколькими участниками.  
   
 ## <a name="overview-of-systemtransactions"></a>Общие сведения о пространстве имен System.Transactions  
- Инфраструктура, предоставляемая классами в пространстве имен <xref:System.Transactions>, делает программирование транзакций простым и эффективным, поддерживая транзакции, инициируемые в SQL Server, ADO.NET, MSMQ и координаторе распределенных транзакций (Майкрософт) (MSDTC). Пространство имен <xref:System.Transactions> предоставляет как модель явного программирования, основанную на классе <xref:System.Transactions.Transaction>, так и модель неявного программирования, в которой используется класс <xref:System.Transactions.TransactionScope>, и транзакции автоматически управляются инфраструктурой. Дополнительные сведения о создании транзакционного приложения с помощью этих двух моделей см. в разделе Написание [транзакционного приложения](writing-a-transactional-application.md).  
+ Инфраструктура, предоставляемая классами в пространстве имен <xref:System.Transactions>, делает программирование транзакций простым и эффективным, поддерживая транзакции, инициируемые в SQL Server, ADO.NET, MSMQ и координаторе распределенных транзакций (Майкрософт) (MSDTC). Пространство имен <xref:System.Transactions> предоставляет как модель явного программирования, основанную на классе <xref:System.Transactions.Transaction>, так и модель неявного программирования, в которой используется класс <xref:System.Transactions.TransactionScope>, и транзакции автоматически управляются инфраструктурой. Дополнительные сведения о создании транзакционного приложения с помощью этих двух моделей см. в разделе [написание транзакционного приложения](writing-a-transactional-application.md).  
   
  Пространство имен <xref:System.Transactions> также предоставляет типы для реализации диспетчера ресурсов. Диспетчер ресурсов управляет устойчивыми или неустойчивыми данными, используемыми в транзакции, и работает совместно с диспетчером транзакций для предоставления приложения, гарантирующего атомарность и изоляцию. Диспетчер транзакций, предоставляемый инфраструктурой <xref:System.Transactions>, поддерживает транзакции, которые охватывают несколько неустойчивых ресурсов или один устойчивый ресурс. Дополнительные сведения о реализации диспетчера ресурсов см. в разделе [реализация диспетчер ресурсов](implementing-a-resource-manager.md).  
   
@@ -28,9 +29,9 @@ ms.locfileid: "70205958"
 ## <a name="in-this-section"></a>Содержание раздела  
   
 ### <a name="writing-a-transactional-application"></a>Создание транзакционного приложения  
- Пространство имен <xref:System.Transactions> предоставляет две модели для создания транзакционных приложений. [Реализация неявной транзакции с использованием области транзакций](implementing-an-implicit-transaction-using-transaction-scope.md) описывает <xref:System.Transactions> , как пространство имен поддерживает создание <xref:System.Transactions.TransactionScope> неявных транзакций с помощью класса.  
+ Пространство имен <xref:System.Transactions> предоставляет две модели для создания транзакционных приложений. [Реализация неявной транзакции с использованием области транзакций](implementing-an-implicit-transaction-using-transaction-scope.md) описывает, как <xref:System.Transactions> пространство имен поддерживает создание неявных транзакций с помощью <xref:System.Transactions.TransactionScope> класса.  
   
- [Реализация явной транзакции с помощью CommittableTransaction](implementing-an-explicit-transaction-using-committabletransaction.md) описывает, <xref:System.Transactions> как пространство имен поддерживает создание <xref:System.Transactions.CommittableTransaction> явных транзакций с помощью класса.  
+ [Реализация явной транзакции с помощью CommittableTransaction](implementing-an-explicit-transaction-using-committabletransaction.md) описывает, как <xref:System.Transactions> пространство имен поддерживает создание явных транзакций с помощью <xref:System.Transactions.CommittableTransaction> класса.  
   
  Дополнительные разделы, посвященные написанию транзакционного приложения, см. [в разделе Написание транзакционного приложения](writing-a-transactional-application.md).  
   
