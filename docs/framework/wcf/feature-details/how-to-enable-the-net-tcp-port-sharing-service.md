@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Включение службы совместного использования портов Net.TCP
+description: Узнайте, как настроить службу общего доступа к портам TCP с помощью MMC для включения NET. TCP, который по умолчанию отключен.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - port sharing [WCF]
 - activation services [WCF]
 ms.assetid: c9175af4-c27c-4765-bf45-b8f7528a7282
-ms.openlocfilehash: 8b305b98d620636328866bce848411f395053485
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0292559e3befde7f0b00b36aa10a2d9615daf049
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593156"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247004"
 ---
 # <a name="how-to-enable-the-nettcp-port-sharing-service"></a>Практическое руководство. Включение службы совместного использования портов Net.TCP
 Windows Communication Foundation (WCF) использует службу Windows, называемую службой совместного использования портов net. TCP, чтобы упростить совместное использование портов TCP в нескольких процессах. Эта служба устанавливается как часть WCF, но служба не включена по умолчанию в качестве меры предосторожности, поэтому ее необходимо включить вручную перед первым использованием. В настоящем разделе описывается настройка службы совместного использования портов Net.TCP с помощью оснастки консоли управления (MMC).  

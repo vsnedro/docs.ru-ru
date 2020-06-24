@@ -1,5 +1,6 @@
 ---
 title: Известные типы контрактов данных
+description: Узнайте, как модель контракта данных использует класс KnownTypeAttribute для указания типов, включаемых во время десериализации в WCF.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - KnownTypeAttribute [WCF]
 - KnownTypes [WCF]
 ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
-ms.openlocfilehash: b7d78def4d656dea59af5400c7ed7deeef28cd0c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 52b0caaaac976893dcf5ef5c228ccc4f53bdbe9e
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597453"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247485"
 ---
 # <a name="data-contract-known-types"></a>Известные типы контрактов данных
 Класс <xref:System.Runtime.Serialization.KnownTypeAttribute> позволяет заранее задавать типы, которые следует рассматривать при десериализации. Рабочий пример см. в разделе [Known Types](../samples/known-types.md) .  
@@ -167,7 +168,7 @@ ms.locfileid: "84597453"
   
  В приведенном выше файле конфигурации объявлено, что тип контракта данных `MyCompany.Library.Shape` должен содержать известный тип `MyCompany.Library.Circle` .  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.KnownTypeAttribute>
 - <xref:System.Collections.Hashtable>

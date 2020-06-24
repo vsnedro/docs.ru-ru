@@ -1,21 +1,22 @@
 ---
 title: Практическое руководство. Использование Svcutil.exe для загрузки документов метаданных
+description: Узнайте, как использовать Svcutil.exe для скачивания метаданных из выполняющихся служб и сохранения метаданных в локальные файлы.
 ms.date: 03/30/2017
 ms.assetid: 15524274-3167-4627-b722-d6cedb9fa8c6
-ms.openlocfilehash: c04b63fa4963a5df0f910da8702643a6484a4edd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 42df55fe7bbae6d8c977263e05053d8a8fa87aff
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596933"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246770"
 ---
 # <a name="how-to-use-svcutilexe-to-download-metadata-documents"></a>Практическое руководство. Использование Svcutil.exe для загрузки документов метаданных
-Средство Svcutil.exe позволяет загружать метаданные из выполняющихся служб и сохранять эти метаданные в локальных файлах. Для схем URL-адресов HTTP и HTTPS Svcutil. exe пытается получить метаданные с помощью WS-MetadataExchange и [обнаружения веб-службы XML](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/fxx6cfx2(v=vs.100)). Для всех остальных URL-схем средство Svcutil.exe использует только протокол WS-MetadataExchange.  
+Средство Svcutil.exe позволяет загружать метаданные из выполняющихся служб и сохранять эти метаданные в локальных файлах. Для схем URL-адресов HTTP и HTTPS Svcutil.exe пытается получить метаданные с помощью WS-MetadataExchange и [обнаружения веб-службы XML](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/fxx6cfx2(v=vs.100)). Для всех остальных URL-схем средство Svcutil.exe использует только протокол WS-MetadataExchange.  
   
  По умолчанию средство Svcutil.exe использует привязки, определенные в классе <xref:System.ServiceModel.Description.MetadataExchangeBindings>. Чтобы настроить привязку, используемую для протокола WS-MetadataExchange, необходимо в файле конфигурации Svcutil.exe (svcutil.exe.config) настроить конечную точку клиента, которая бы использовала контракт `IMetadataExchange` и имя которой совпадало бы со схемой универсального кода ресурса (URI) адреса конечной точки метаданных.  
   
 > [!CAUTION]
-> При запуске программы Svcutil. exe для получения метаданных для службы, которая предоставляет два разных контракта службы, каждая из которых содержит операцию с одним и тем же именем, программа Svcutil. exe выводит сообщение об ошибке "не удается получить метаданные из...." Например, если у вас есть служба, которая предоставляет контракт службы с именем `ICarService` , в котором есть операция `Get(Car c)` и та же служба предоставляет контракт службы с именем `IBookService` , который имеет операцию `Get(Book b)` . Для обхода этой проблемы выполните одно из следующих действий.
+> При запуске Svcutil.exe для получения метаданных для службы, которая предоставляет два разных контракта службы, каждая из которых содержит операцию с одним и тем же именем, Svcutil.exe выводит сообщение об ошибке "не удается получить метаданные из...." Например, если у вас есть служба, которая предоставляет контракт службы с именем `ICarService` , в котором есть операция `Get(Car c)` и та же служба предоставляет контракт службы с именем `IBookService` , который имеет операцию `Get(Book b)` . Для обхода этой проблемы выполните одно из следующих действий.
 >
 > - Переименуйте одну из операций.
 > - Задайте другое имя в свойстве <xref:System.ServiceModel.OperationContractAttribute.Name%2A>.
@@ -37,7 +38,7 @@ ms.locfileid: "84596933"
   
 3. Аргумент <`url`>указывает URL-адрес конечной точки службы, предоставляющей метаданные, или документ метаданных, размещенный в сети. Аргумент <`epr`> указывает путь к XML-файлу, содержащему WS-Addressing `EndpointAddress` для конечной точки службы, которая поддерживает WS-MetadataExchange.  
   
- Дополнительные сведения об использовании этого средства для скачивания метаданных см. в разделе [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ Дополнительные сведения об использовании этого средства для скачивания метаданных см. в разделе [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ## <a name="example"></a>Пример  
  Следующая команда позволяет загрузить документы с метаданными из выполняющейся службы.  
@@ -46,6 +47,6 @@ ms.locfileid: "84596933"
 svcutil /t:metadata http://service/metadataEndpoint  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Предоставление контрактов SOAP- и веб-клиентам
+description: Сведения о том, как сделать конечную точку сервера WFC доступной для клиентов SOAP и не-SOAP. По умолчанию конечные точки доступны только для клиентов SOAP.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: bb765a48-12f2-430d-a54d-6f0c20f2a23a
-ms.openlocfilehash: fa02260976c710401a05cce3d723cc0f66804c6e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b1bdb7af51e0e2795c36865058fbeb34a716e3e2
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593137"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246978"
 ---
 # <a name="how-to-expose-a-contract-to-soap-and-web-clients"></a>Практическое руководство. Предоставление контрактов SOAP- и веб-клиентам
 
@@ -102,7 +103,7 @@ ms.locfileid: "84593137"
 
  При компиляции Service.cs обращается к файлам System.ServiceModel.dll и System.ServiceModel.Web.dll.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.WebHttpBinding>
 - <xref:System.ServiceModel.Web.WebGetAttribute>

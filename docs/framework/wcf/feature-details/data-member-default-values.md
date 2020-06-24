@@ -1,5 +1,6 @@
 ---
 title: Значения членов данных по умолчанию
+description: Сведения о том, как опустить элемент данных из сериализованных данных, если он имеет .NET Framework значение по умолчанию. WCF может повысить производительность, не применяя сериализацию по умолчанию.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - data members [WCF], default values
 - data members [WCF]
 ms.assetid: 53a3b505-4b27-444b-b079-0eb84a97cfd8
-ms.openlocfilehash: e4eaaec880ecfcff24d9d5b4e8347a84738e070b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 97946a6b7da14efdcb5229b4cc5d0799eb8d7723
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593488"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247381"
 ---
 # <a name="data-member-default-values"></a>Значения членов данных по умолчанию
 В .NET Framework типы имеют концепцию *значений по умолчанию*. Например, любой ссылочный тип имеет значение по умолчанию `null`, а значением по умолчанию для целого типа является ноль. Иногда требуется исключить член данных из сериализованных данных, если для него задано значение по умолчанию. Так как этот член имеет значение по умолчанию, нет необходимости сериализовывать фактическое значение; это повышает производительность.  

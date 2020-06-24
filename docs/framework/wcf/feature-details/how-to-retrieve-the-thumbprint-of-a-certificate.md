@@ -1,15 +1,16 @@
 ---
 title: Практическое руководство. Получение отпечатка сертификата
+description: Узнайте, как указать утверждения, обнаруженные в сертификате X. 509, который необходим при разработке приложения WCF, использующего сертификаты для проверки подлинности.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - certificates [WCF], retrieving thumbprint
 ms.assetid: da3101aa-78cd-4c34-9652-d1f24777eeab
-ms.openlocfilehash: f59fad86287e89b0a573a6e3ee8420f384b0bc3b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 87c696323af442021af267f0d8c523418e2234f7
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601209"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246783"
 ---
 # <a name="how-to-retrieve-the-thumbprint-of-a-certificate"></a>Практическое руководство. Получение отпечатка сертификата
 При написании приложения Windows Communication Foundation (WCF), использующего сертификат X. 509 для проверки подлинности, часто бывает необходимо указать утверждения, найденные в сертификате. Например, при использовании перечисления <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> в методе <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> необходимо указать утверждение отпечатка. Чтобы найти значение утверждения, необходимо выполнить два действия. Сначала необходимо открыть оснастку сертификатов консоли управления (MMC). (См. раздел [как просмотреть сертификаты с помощью оснастки MMC](how-to-view-certificates-with-the-mmc-snap-in.md).) Во-вторых, как описано здесь, найдите подходящий сертификат и скопируйте его отпечаток (или другие значения утверждений).  
@@ -38,7 +39,7 @@ ms.locfileid: "84601209"
   
 9. Скопируйте шестнадцатеричные значения из текстового поля. Если этот отпечаток используется в коде `X509FindType`, удалите пробелы между шестнадцатеричными значениями. Например, отпечаток "a9 09 50 2d d8 2a e4 14 33 e6 f8 38 86 b0 0d 42 77 a3 2a 7b" необходимо задавать в коде в виде "a909502dd82ae41433e6f83886b00d4277a32a7b".  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A>

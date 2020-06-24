@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Создание временных сертификатов для использования во время разработки
+description: Узнайте, как использовать командлет PowerShell для создания двух временных сертификатов X. 509 для использования при разработке защищенной службы или клиента WCF.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - certificates [WCF], creating temporary certificates
 - temporary certificates [WCF]
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
-ms.openlocfilehash: 9e01ccb29ad017a2657ab08b54d7f01ef4564481
-ms.sourcegitcommit: c01c18755bb7b0f82c7232314ccf7955ea7834db
+ms.openlocfilehash: 0a21548386639a9f6a8c8572e5d7928ffdb270d6
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75964541"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247043"
 ---
 # <a name="how-to-create-temporary-certificates-for-use-during-development"></a>Практическое руководство. Создание временных сертификатов для использования во время разработки
 
@@ -31,7 +32,7 @@ ms.locfileid: "75964541"
 $rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
 ```
 
-Необходимо экспортировать сертификат в PFX-файл, чтобы его можно было импортировать в нужное место на более позднем этапе. При экспорте сертификата с закрытым ключом требуется пароль для его защиты. Пароль сохраняется в `SecureString` и с помощью командлета [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) Экспортируйте сертификат с соответствующим закрытым ключом в PFX-файл. Мы также сохраняем только открытый сертификат в файле CRT с помощью командлета [Export-Certificate](/powershell/module/pkiclient/export-certificate) .
+Необходимо экспортировать сертификат в PFX-файл, чтобы его можно было импортировать в нужное место на более позднем этапе. При экспорте сертификата с закрытым ключом требуется пароль для его защиты. Мы сохраняем пароль в и с `SecureString` помощью командлета [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) Экспортируйте сертификат с соответствующим закрытым ключом в PFX-файл. Мы также сохраняем только открытый сертификат в файле CRT с помощью командлета [Export-Certificate](/powershell/module/pkiclient/export-certificate) .
 
 ```powershell
 [System.Security.SecureString]$rootcertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
@@ -42,7 +43,7 @@ Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
 
 ## <a name="to-create-a-new-certificate-signed-by-a-root-authority-certificate"></a>Создание нового сертификата, подписанного сертификатом корневого центра
 
-Следующая команда создает сертификат, подписанный `RootCA` с именем субъекта "Сигнедбирутка" с помощью закрытого ключа издателя.
+Следующая команда создает сертификат, подписанный с помощью `RootCA` имени субъекта "сигнедбирутка", с помощью закрытого ключа издателя.
 
 ```powershell
 $testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "SignedByRootCA" -KeyExportPolicy Exportable -KeyLength 2048 -KeyUsage DigitalSignature,KeyEncipherment -Signer $rootCert
@@ -62,7 +63,7 @@ Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 
 ### <a name="to-install-a-self-signed-certificate-in-the-trusted-root-certification-authorities"></a>Установка самозаверяющего сертификата в хранилище «Доверенные корневые центры сертификации»
 
-1. Откройте оснастку сертификата. (Дополнительные сведения см. в разделе [Практическое руководство. Просмотр сертификатов с помощью оснастки консоли MMC](how-to-view-certificates-with-the-mmc-snap-in.md).)
+1. Откройте оснастку сертификата. Дополнительные сведения см. в разделе [Практическое руководство. Просмотр сертификатов с помощью оснастки MMC](how-to-view-certificates-with-the-mmc-snap-in.md).
 
 2. Откройте папку, чтобы сохранить сертификат: **Локальный компьютер** либо **Текущий пользователь**.
 
@@ -112,8 +113,8 @@ Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 
 Не забудьте удалить любые временные сертификаты корневого центра из папки **Доверенные корневые центры сертификации** и папки **Личное** , щелкнув правой кнопкой мыши сертификат и выбрав **Удалить**.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Работа с сертификатами](working-with-certificates.md)
 - [Практическое руководство. Просмотр сертификатов с помощью оснастки консоли MMC](how-to-view-certificates-with-the-mmc-snap-in.md)
-- [Securing Services and Clients](securing-services-and-clients.md)
+- [Защита служб и клиентов](securing-services-and-clients.md)

@@ -1,17 +1,18 @@
 ---
 title: Практическое руководство. Использование поставщика членства ASP.NET
+description: Узнайте, как поставщик членства ASP.NET поддерживает веб-сайты, позволяющие пользователям создавать имя пользователя и пароль для доступа без учетной записи домена Windows.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF and ASP.NET
 - WCF, authorization
 - WCF, security
 ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
-ms.openlocfilehash: 840e4a5d365f2adbaf335c1061a580665a39824d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6d527993dcf1fc5d5cd39bf22c3e772baf60e62f
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595327"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246731"
 ---
 # <a name="how-to-use-the-aspnet-membership-provider"></a>Практическое руководство. Использование поставщика членства ASP.NET
 
@@ -28,7 +29,7 @@ ms.locfileid: "84595327"
 
 ### <a name="to-configure-the-membership-provider"></a>Настройка поставщика членства
 
-1. В файле Web. config в `system.web` элементе < > Создайте `membership` элемент > <.
+1. В файле Web.config в `system.web` элементе <> создайте `membership` элемент <>.
 
 2. В элементе `<membership>`.
 
@@ -156,7 +157,7 @@ ms.locfileid: "84595327"
 </configuration>
 ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Использование поставщика ролей ASP.NET со службой](how-to-use-the-aspnet-role-provider-with-a-service.md)
 - [Поставщик членства и ролей](../samples/membership-and-role-provider.md)

@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Публикация метаданных для службы с использованием файла конфигурации
+description: Узнайте, как опубликовать метаданные для службы WCF с помощью файла конфигурации. Публикация позволяет клиентам получать метаданные с помощью запроса GET или HTTP/GET.
 ms.date: 03/30/2017
 ms.assetid: f061443f-92df-4824-b36a-609c4cd14a17
-ms.openlocfilehash: 976e1e0bb2c6479f7599165a1c6fe83bae4e17c1
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d5d425be7f02a204476c4f6e81441aca9ea39fcc
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596985"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246822"
 ---
 # <a name="how-to-publish-metadata-for-a-service-using-a-configuration-file"></a>Практическое руководство. Публикация метаданных для службы с использованием файла конфигурации
 Это один из двух инструкций, демонстрирующих публикацию метаданных для службы Windows Communication Foundation (WCF). Существуют два способа указать, как служба должна публиковать метаданные: с помощью файла конфигурации и с помощью кода. В этом разделе показано, как публиковать метаданные для службы с помощью файла конфигурации.  
@@ -253,7 +254,7 @@ namespace Metadata.Samples
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
 - [Практическое руководство. Размещение службы WCF в управляемом приложении](../how-to-host-a-wcf-service-in-a-managed-application.md)

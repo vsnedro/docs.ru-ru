@@ -1,16 +1,17 @@
 ---
 title: Аутентификация в WCF
+description: Узнайте о некоторых механизмах WCF, обеспечивающих проверку подлинности, таких как проверка подлинности Windows, сертификаты X. 509, а также имя пользователя и пароль.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - authentication [WCF]
 - security [WCF], authentication
 ms.assetid: 9254d873-843d-4c6e-bea4-8184ac3e44f4
-ms.openlocfilehash: b513c9713bd2c04e125915d1a0a87c86ce249666
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4c3348cfb84b8571dc1f24b774ffcd691aaa5001
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597648"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247524"
 ---
 # <a name="authentication-in-wcf"></a>Аутентификация в WCF
 В следующих разделах представлен ряд различных механизмов в Windows Communication Foundation (WCF), которые обеспечивают проверку подлинности, например, проверка подлинности Windows, сертификаты X. 509, а также имя пользователя и пароль.  
@@ -37,7 +38,7 @@ ms.locfileid: "84597648"
 ## <a name="related-sections"></a>Связанные разделы  
  [Типовые сценарии безопасности](common-security-scenarios.md)  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
 - [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

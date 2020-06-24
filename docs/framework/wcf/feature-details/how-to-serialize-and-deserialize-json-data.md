@@ -1,22 +1,23 @@
 ---
 title: Как использовать DataContractJsonSerializer
+description: Узнайте, как сериализовать объекты типа .NET в данные в кодировке JSON и затем десериализовать эти данные обратно в экземпляры типов .NET.
 ms.date: 03/25/2019
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
-ms.openlocfilehash: 3cf8cc52587a64e7273ab9e0de0b1751d00827cf
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+ms.openlocfilehash: 4ffa0e9dec0a677a38d244b4a0da476d91852da5
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75901217"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85246809"
 ---
 # <a name="how-to-use-datacontractjsonserializer"></a>Как использовать DataContractJsonSerializer
 
 > [!NOTE]
-> Эта статья посвящена <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. В большинстве сценариев, в которых участвует сериализация и десериализация JSON, мы рекомендуем использовать интерфейсы API в [пространстве имен System. Text. JSON](../../../standard/serialization/system-text-json-overview.md).
+> Эта статья посвящена <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> . В большинстве сценариев, в которых участвует сериализация и десериализация JSON, мы рекомендуем использовать API в [System.Text.Jsпространства имен](../../../standard/serialization/system-text-json-overview.md).
 
 JSON - эффективный формат кодирования данных, обеспечивающий быстрый обмен небольшими объемами данных между клиентскими браузерами и веб-службами с поддержкой AJAX.
 
-В этой статье показано, как сериализовать объекты типа .NET в данные в кодировке JSON, а затем десериализовать данные в формате JSON обратно в экземпляры типов .NET. В этом примере используется контракт данных для демонстрации сериализации и десериализации определяемого пользователем типа `Person` и используется <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.
+В этой статье показано, как сериализовать объекты типа .NET в данные в кодировке JSON, а затем десериализовать данные в формате JSON обратно в экземпляры типов .NET. В этом примере используется контракт данных для демонстрации сериализации и десериализации определяемого пользователем `Person` типа и использования <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> .
 
 Как правило, сериализация и десериализация JSON автоматически обрабатываются Windows Communication Foundation (WCF) при использовании типов контрактов данных в операциях службы, которые доступны через конечные точки с поддержкой AJAX. Однако в некоторых случаях может потребоваться непосредственная работа с данными JSON.
 
@@ -51,7 +52,7 @@ JSON - эффективный формат кодирования данных, 
     p.age = 42;
     ```
 
-2. Сериализует объект `Person` в поток памяти с помощью <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.
+2. Сериализует `Person` объект в поток памяти с помощью <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> .
 
     ```csharp
     var stream1 = new MemoryStream();
@@ -139,6 +140,6 @@ public class TestDuplicateDataDerived : TestDuplicateDataBase
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Сериализация JSON в .NET](../../../standard/serialization/system-text-json-overview.md)

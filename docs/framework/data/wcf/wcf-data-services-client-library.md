@@ -1,22 +1,23 @@
 ---
 title: Библиотека клиентов служб данных WCF
+description: Узнайте, как использовать клиентские библиотеки WCF Data Services для доступа к данным и их изменения из клиентского приложения .NET Framework.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, client library
 - DataServiceQuery class, about DataServiceQuery class
 - DataServiceContext class, about DataServiceContext class
 ms.assetid: 21075e50-8917-413e-a8ea-35a0f6e65aa5
-ms.openlocfilehash: 556482e3e43460016162dfbdd9b31f9a68c0af46
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+ms.openlocfilehash: 58d038d5c2ac4973c2b41f4d49c1746f48f2a2fb
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75900876"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85247744"
 ---
 # <a name="wcf-data-services-client-library"></a>Библиотека клиентов служб данных WCF
 Любое приложение может взаимодействовать со службой данных на основе Open Data Protocol (OData), если она может отправить HTTP-запрос и обработать канал OData, возвращаемый службой данных. Такое взаимодействие позволяет получать доступ к службам на основе OData из широкого спектра веб-приложений. WCF Data Services включает клиентские библиотеки, обеспечивающие более широкие возможности программирования при использовании веб-каналов OData из .NET Framework или приложений на основе Silverlight.  
   
- Клиентская библиотека содержит два основных класса: <xref:System.Data.Services.Client.DataServiceContext> и <xref:System.Data.Services.Client.DataServiceQuery%601>. Класс <xref:System.Data.Services.Client.DataServiceContext> инкапсулирует операции, поддерживающие работу с конкретной службой данных. Несмотря на то, что службы OData не имеют состояния, контекст не имеет. Таким образом, можно использовать класс <xref:System.Data.Services.Client.DataServiceContext> для поддержания состояния на клиенте между взаимодействием со службой данных для поддержки таких функций, как управление изменениями. Этот класс также управляет идентификаторами и отслеживает изменения. Класс <xref:System.Data.Services.Client.DataServiceQuery%601> представляет запрос к определенному набору сущностей.  
+ Клиентская библиотека содержит два основных класса: <xref:System.Data.Services.Client.DataServiceContext> и <xref:System.Data.Services.Client.DataServiceQuery%601>. Класс <xref:System.Data.Services.Client.DataServiceContext> инкапсулирует операции, поддерживающие работу с конкретной службой данных. Несмотря на то, что службы OData не имеют состояния, контекст не имеет. Таким образом, класс можно использовать <xref:System.Data.Services.Client.DataServiceContext> для поддержания состояния на стороне клиента между взаимодействием со службой данных для поддержки таких функций, как управление изменениями. Этот класс также управляет идентификаторами и отслеживает изменения. Класс <xref:System.Data.Services.Client.DataServiceQuery%601> представляет запрос к определенному набору сущностей.  
   
  Этот раздел описывает использование клиентских библиотек для доступа и изменения данных из клиентского приложения .NET Framework. Дополнительные сведения об использовании клиентской библиотеки WCF Data Services с приложением на основе Silverlight см. в разделе [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v%3dvs.95)). Доступны другие клиентские библиотеки, позволяющие использовать канал OData в приложениях других типов. Дополнительные сведения о пакете OData SDK см. в разделе [пример кода для ODATA SDK](https://www.odata.org/ecosystem/#sdk).
   
@@ -51,7 +52,7 @@ ms.locfileid: "75900876"
  [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md)  
  Описывает доступ к двоичным данным, возвращенным службой данных в виде потока данных, и их изменение.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Определение служб данных WCF](defining-wcf-data-services.md)
 - [Начало работы](getting-started-with-wcf-data-services.md)
