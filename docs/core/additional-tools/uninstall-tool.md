@@ -3,12 +3,12 @@ title: Средство удаления
 description: Обзор средства удаления .NET Core — интерактивного средства, позволяющего управлять очисткой пакетов SDK и сред выполнения .NET Core.
 author: sfoslund
 ms.date: 05/27/2020
-ms.openlocfilehash: 4e70fd3438b582bd5a0d6a52d7e58ed5e07f8811
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: dcfa12a3ec5fe0e8a29c5897ee4c71bfc7352eda
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446910"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84590803"
 ---
 # <a name="net-core-uninstall-tool"></a>Средство удаления .NET Core
 
@@ -27,7 +27,7 @@ ms.locfileid: "84446910"
 
 ## <a name="install-the-tool"></a>Установка средства
 
-Средство удаления .NET Core можно скачать по [этой ссылке](https://aka.ms/dotnet-core-uninstall-tool), а его исходный код доступен в репозитории GitHub [dotnet/cli-lab](https://github.com/dotnet/cli-lab).
+Средство удаления .NET Core можно скачать на [странице со списком выпусков средства](https://aka.ms/dotnet-core-uninstall-tool), а его исходный код доступен в репозитории GitHub [dotnet/cli-lab](https://github.com/dotnet/cli-lab).
 
 > [!NOTE]
 > Для удаления пакетов SDK и сред выполнения .NET Core средству требуются повышенные права. Следовательно, его нужно устанавливать в защищенном от записи каталоге, например *C:\Program Files* в ОС Windows или */usr/local/bin* в macOS. Ознакомьтесь также со статьей [Повышенные права доступа для команд dotnet](../tools/elevated-access.md). Дополнительные сведения см. в [подробных инструкциях по установке](https://aka.ms/dotnet-core-uninstall-tool).

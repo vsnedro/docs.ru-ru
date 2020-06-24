@@ -12,12 +12,12 @@ helpviewer_keywords:
 - case statement [C#]
 - default keyword [C#]
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-ms.openlocfilehash: a4e6f8e43c2ec8c867af9f78bd83b435b78c73d5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9335399be2d4909a02fecbf2959c6f5608664732
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446767"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84493673"
 ---
 # <a name="switch-c-reference"></a>switch (справочник по C#)
 
@@ -86,7 +86,7 @@ switch (caseSwitch)
 
 Каждая метка case указывает на шаблон для сравнения с выражением сопоставления (переменная `caseSwitch` в предыдущем примере). Если они совпадают, управление передается разделу switch, который содержит **первую** соответствующую метку case. Если с выражением соответствия не совпадает ни один шаблон метки case, управление передается разделу с меткой case `default` при условии, что такой раздел существует. Если метки case `default` нет, никакие операторы ни в одном из разделов switch не выполняются, а оператор `switch` теряет управление.
 
-Дополнительные сведения об операторе `switch` и сопоставлении шаблонов см. в разделе [Сопоставление шаблонов с оператором `switch`](#pattern).
+Дополнительные сведения об операторе `switch` и сопоставлении шаблонов см. в разделе [Сопоставление шаблонов с оператором `switch`](#pattern-matching with-the-switch-statement).
 
 Так как C# 6 поддерживает только шаблон констант и не допускает повтор постоянных значений, метки case определяют взаимоисключающие значения. При этом выражению сопоставления может соответствовать только один шаблон. В связи с этим порядок отображения операторов `case` не имеет значения.
 
@@ -100,7 +100,7 @@ switch (caseSwitch)
 
 - изменив порядок разделов switch;
 
-- используя [предложение when](#when) в метке `case`.
+- используя [предложение when](#the-case-statement-and-the-when-clause) в метке `case`.
 
 ## <a name="the-default-case"></a>Метка case `default`
 
@@ -108,7 +108,7 @@ switch (caseSwitch)
 
 Метка case `default` может отображаться в операторе `switch` в любом порядке. Она всегда оценивается после оценки всех меток `case`, независимо от их порядка.
 
-## <a name="pattern-matching-with-the-switch-statement"></a><a name="pattern"></a> Сопоставление шаблонов с оператором `switch`
+## <a name="pattern-matching-with-the-switch-statement"></a>Сопоставление шаблонов с инструкцией `switch`
 
 Каждый оператор `case` определяет шаблон, который в случае совпадения с выражением соответствия вызывает выполнение входящего в него раздела switch. Шаблон константы поддерживают все версии C#. Остальные шаблоны поддерживаются начиная с C# 7.0.
 
@@ -185,7 +185,7 @@ case null:
 
 [!code-csharp[type-pattern2#1](~/samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
 
-## <a name="the-case-statement-and-the-when-clause"></a><a name="when" /> Оператор `case` и предложение `when`
+## <a name="the-case-statement-and-the-when-clause"></a>Оператор `case` и предложение `when`
 
 Начиная с C# 7.0 операторы case необязательно должны быть взаимоисключающими. В связи с этим можно добавить предложение `when`, определяющее дополнительное условие, которому должен соответствовать оператор case, чтобы иметь значение true. Предложение `when` может быть любым выражением, возвращающим логическое значение.
 

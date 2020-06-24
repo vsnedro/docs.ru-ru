@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f1fc70075ef09a4f036c69788342c07ee51d72ce
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: aab7d8538c875e35c832acc2a6c64beb84d4fb47
+ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83702487"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84702453"
 ---
 ### <a name="winforms-methods-now-throw-argumentexception"></a>Теперь методы WinForms вызывают исключение ArgumentException
 
@@ -19,12 +19,13 @@ ms.locfileid: "83702487"
 В следующей таблице перечислены затронутые методы и параметры:
 
 | Метод | Имя параметра | Условие | Добавлено в версии |
-|-|-|-|
+|-|-|-|-|
 | <xref:System.Windows.Forms.TabControl.GetToolTipText(System.Object)?displayProperty=fullName> | `item` | Аргумент не является аргументом типа <xref:System.Windows.Forms.TabPage>. | 5.0 Предварительная версия 1 |
+| <xref:System.Windows.Forms.DataFormats.GetFormat(System.String)?displayProperty=fullName> | `format` | Аргумент содержит `null`, <xref:System.String.Empty?displayProperty=nameWithType> или пробел. | 5.0, предварительная версия 5 |
 
 #### <a name="version-introduced"></a>Представленная версия
 
-Предварительная версия 1 .NET 5.0
+.NET 5.0
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
@@ -38,11 +39,13 @@ Windows Forms
 #### <a name="affected-apis"></a>Затронутые API
 
 - <xref:System.Windows.Forms.TabControl.GetToolTipText(System.Object)?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataFormats.GetFormat(System.String)?displayProperty=fullName>
 
 <!-- 
 
 #### Affected APIs
 
 - `M:System.Windows.Forms.TabControl.GetToolTipText(System.Object)`
+- `M:System.Windows.Forms.DataFormats.GetFormat(System.String)`
 
 -->

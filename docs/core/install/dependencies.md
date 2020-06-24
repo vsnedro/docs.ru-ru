@@ -3,14 +3,14 @@ title: Зависимости пакета SDK для .NET Core и среды в
 description: Сведения о предварительных требованиях к операционной системе и архитектуре ЦП для установки пакета SDK для .NET Core и среды выполнения .NET Core в Windows, Linux и macOS.
 author: leecow
 ms.author: leecow
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: 280aa1431686ff99257580bb024a84b1e57f85c0
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 81f6ab436428d71f71d9fd0f560bd2b0512a519b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895489"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84590764"
 ---
 # <a name="net-core-dependencies-and-requirements"></a>Зависимости и требования для .NET Core
 
@@ -120,7 +120,7 @@ ms.locfileid: "82895489"
 >
 > \- или -
 >
-> Библиотека *hostfxr.dll* найдена, но при ее загрузке из *C:\\\<путь_к_приложению>\\hostfxr.dll* произошел сбой.
+> Библиотека *hostfxr.dll* найдена, но при ее загрузке из *C:\\\<path_to_app>\\hostfxr.dll* произошел сбой.
 
 ::: zone-end
 

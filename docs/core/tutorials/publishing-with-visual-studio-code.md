@@ -1,15 +1,15 @@
 ---
-title: Публикация приложения Hello World .NET Core в Visual Studio Code
+title: Публикация консольного приложения .NET Core с помощью Visual Studio Code
 description: При публикации создается набор файлов, которые необходимы для запуска приложения .NET Core.
-ms.date: 05/28/2020
-ms.openlocfilehash: b49b12bf41e3ea7be8dbc459eb7d9b1fbef25790
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.date: 06/08/2020
+ms.openlocfilehash: 442d08c9b016407327ba30db0aae78b5cf6b6fe3
+ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84246658"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84701454"
 ---
-# <a name="tutorial-publish-a-net-core-console-application-with-visual-studio-code"></a>Учебник. Публикация консольного приложения .NET Core в Visual Studio Code
+# <a name="tutorial-publish-a-net-core-console-application-using-visual-studio-code"></a>Учебник. Публикация консольного приложения .NET Core с помощью Visual Studio Code
 
 В этом руководстве показано, как опубликовать консольное приложение, чтобы его могли запускать другие пользователи. При публикации создается набор файлов, которые необходимы для запуска приложения. Чтобы развернуть файлы, скопируйте их на целевой компьютер.
 
@@ -21,7 +21,7 @@ ms.locfileid: "84246658"
 
 ## <a name="publish-the-app"></a>Публикация приложения
 
-1. Откройте Visual Studio Code.
+1. Запустите Visual Studio Code.
 
 1. Откройте папку проекта *HelloWorld*, созданного в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
 
@@ -85,7 +85,7 @@ ms.locfileid: "84246658"
 
 ## <a name="run-the-published-app"></a>Запуск опубликованного приложения
 
-1. В **обозревателе** щелкните правой кнопкой мыши папку *publish* (в macOS нажмите сочетание клавиш <kbd>CTRL</kbd>+щелчок) и выберите **Открыть в терминале**.
+1. В **обозревателе** щелкните правой кнопкой мыши папку *publish* (в macOS нажмите <kbd>CTRL</kbd>+щелчок) и выберите **Открыть в терминале**.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Контекстное меню с командой "Открыть в терминале"":::
 
@@ -109,10 +109,7 @@ ms.locfileid: "84246658"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом руководстве вы опубликовали консольное приложение. Сведения о создании библиотек см. в статье [Разработка библиотек с помощью .NET Core CLI](libraries.md).
-
-<!--In the next tutorial, you create a class library.
+В этом руководстве вы опубликовали консольное приложение. Далее вы создадите библиотеку классов.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md)
--->
+> [Создание библиотеки .NET Standard в Visual Studio для Mac](library-with-visual-studio-mac.md)

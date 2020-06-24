@@ -3,12 +3,12 @@ title: Практическое руководство. Изменение со�
 ms.date: 02/26/2018
 helpviewer_keywords:
 - strings [C#], modifying
-ms.openlocfilehash: 8e9bbe76c689d3c3f9f238ca9dd95cc7fcf98b18
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: a32665b67cfa73aa7d4753a1427c6955827e1b86
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389512"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84663009"
 ---
 # <a name="how-to-modify-string-contents-in-c"></a>Практическое руководство. Изменение содержимого строки в C\#
 
@@ -22,13 +22,13 @@ ms.locfileid: "81389512"
 
 Следующий код создает новую строку, заменяя существующий текст.
 
-[!code-csharp-interactive[replace creates a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#1)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet1":::
 
 В коде выше демонстрируется *неизменяемое* свойство строк. В примере видно, что исходная строка `source` не изменяется. Метод <xref:System.String.Replace%2A?displayProperty=nameWithType> создает новый объект `string`, содержащий изменения.
 
 Метод <xref:System.String.Replace%2A> может заменять строки или отдельные символы. В обоих случаях заменяется каждое вхождение искомого текста.  В следующем примере все символы ' ' заменяются на '\_':
 
-[!code-csharp-interactive[replace characters](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#2)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet2":::
 
 Исходная строка не изменяется. Возвращается новая строка с заменой.
 
@@ -36,13 +36,13 @@ ms.locfileid: "81389512"
 
 Используйте методы <xref:System.String.Trim%2A?displayProperty=nameWithType>, <xref:System.String.TrimStart%2A?displayProperty=nameWithType> и <xref:System.String.TrimEnd%2A?displayProperty=nameWithType> для удаления всех начальных или конечных пробелов.  В приведенном ниже коде показан пример каждого метода. Исходная строка не изменяется. Эти методы возвращают новую строку с измененным содержимым.
 
-[!code-csharp-interactive[trim white space](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#3)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet3":::
 
 ## <a name="remove-text"></a>Удаление текста
 
 Вы можете удалять из строки текст с помощью метода <xref:System.String.Remove%2A?displayProperty=nameWithType>. Этот метод удаляет определенное число символов, начиная с указанного индекса. В следующем примере показано, как использовать <xref:System.String.IndexOf%2A?displayProperty=nameWithType> с <xref:System.String.Remove%2A> для удаления текста из строки:
 
-[!code-csharp-interactive[remove text](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#4)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet4":::
 
 ## <a name="replace-matching-patterns"></a>Замена совпадающих шаблонов
 
@@ -50,7 +50,7 @@ ms.locfileid: "81389512"
 
 Регулярные выражения наиболее эффективны при поиске и замене текста, который соответствует шаблону, а не известного текста. Дополнительные сведения см. в [практическом руководстве по поиску строк](search-strings.md). Шаблон поиска "the\s" ищет слово "the", за которым следует пробел. Эта часть шаблона гарантирует пропуск слова "there" в исходной строке. Дополнительные сведения об элементах языка регулярных выражений см. в разделе [Элементы языка регулярных выражений — краткий справочник](../../standard/base-types/regular-expression-language-quick-reference.md).
 
-[!code-csharp-interactive[replace creates a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#5)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet5":::
 
 Метод <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> возвращает неизменяемую строку с содержимым в объекте <xref:System.Text.StringBuilder>.
 
@@ -60,17 +60,15 @@ ms.locfileid: "81389512"
 
 В примере ниже показано, как заменить набор символов в строке. Сначала используется метод <xref:System.String.ToCharArray?displayProperty=nameWithType> для создания массива символов. Для поиска начального индекса слова "fox" используется метод <xref:System.String.IndexOf%2A>. Следующие три символа заменяются другим словом. Наконец, из обновленного массива символов создается новая строка.
 
-[!code-csharp-interactive[replace creates a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#6)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet6":::
 
 ## <a name="programmatically-build-up-string-content"></a>Программная сборка содержимого строки
 
 Поскольку строки являются неизменяемыми, в предыдущих примерах создаются временные строки или массивы символов. В высокопроизводительных сценариях, возможно, будет целесообразным избежать этих распределений куч. .NET Core предоставляет метод <xref:System.String.Create%2A?displayProperty=nameWithType>, позволяющий программно заполнять символьное содержимое строки с помощью обратного вызова, избегая промежуточного распределения строк.
 
-[!code-csharp[using string.Create to programmatically build the string content for a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#7)]
+:::code language="csharp" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet7":::
 
 Вы можете изменить строку в фиксированном блоке с использованием ненадежного кода, но **крайне** не рекомендует изменять содержимое строки после ее создания. Такая попытка приведет к непредсказуемым последствиям. Например, если кто-то развернет строку, имеющую то же содержимое, что и ваша строка, он получит копию вашей строки и наверняка не будет рассчитывать на то, что вы изменяете его строку.
-
-Вы можете оценить эти примеры, просмотрев код в нашем [репозитории GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Или можете загрузить образцы [в ZIP-файле](../../../samples/snippets/csharp/how-to/strings.zip).
 
 ## <a name="see-also"></a>См. также
 

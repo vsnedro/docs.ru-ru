@@ -3,15 +3,15 @@ title: Установка среды выполнения .NET Core в Windows, 
 description: Сведения об установке .NET Core в Windows, Linux и macOS. Узнайте о зависимостях, необходимых для запуска приложений .NET Core.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 05/04/2020
 ms.custom: updateeachrelease
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: ca55b8fab4aa9ca9f7e308cce57181e2c7e89f4b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c079e1856cdd370a278efc6fdfb4953059b6f2ba
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79397965"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596297"
 ---
 # <a name="install-the-net-core-runtime"></a>Установка среды выполнения .NET Core
 
@@ -53,36 +53,9 @@ export PATH=$PATH:$HOME/dotnet
 
 ::: zone pivot="os-linux"
 
-## <a name="install-with-a-package-manager"></a>Установка с помощью диспетчера пакетов
+## <a name="install-on-linux"></a>Установка на Linux
 
-Вы можете установить среду выполнения .NET Core с помощью множества стандартных диспетчеров пакетов Linux. Дополнительные сведения см. в статье [Диспетчер пакетов Linux — установка .NET Core](linux-package-managers.md).
-
-Установка с помощью диспетчера пакетов поддерживается только в архитектуре x64. Если вы устанавливаете среду выполнения .NET Core с другой архитектурой, например ARM, следуйте инструкциям на странице [Загрузка и установка вручную](#download-and-manually-install). См. сведения о поддерживаемых архитектурах в описании [зависимостей и требований .NET Core](dependencies.md).
-
-## <a name="download-and-manually-install"></a>Скачивание и установка вручную
-
-Чтобы извлечь среду выполнения и сделать команды .NET Core CLI доступными в терминале, сначала [скачайте](#all-net-core-downloads) двоичный выпуск .NET Core. Затем откройте терминал и выполните приведенные ниже команды.
-
-```bash
-mkdir -p $HOME/dotnet && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C $HOME/dotnet
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
-
-> [!TIP]
-> Приведенные выше команды `export` сделают команды .NET Core CLI доступными только для сеанса терминала, в котором производился запуск.
->
-> Вы можете изменить профиль оболочки, чтобы добавить команды окончательно. Существует несколько различных оболочек, доступных для Linux, и каждая из них имеет свой профиль. Пример:
->
-> - **Оболочка Bash**: *~/.bash_profile*, *~/.bashrc*
-> - **Оболочка Korn**: *~/.kshrc* или *.profile*
-> - **Оболочка Z**: *~/.zshrc* или *.zprofile*
->
-> Измените соответствующий исходный файл оболочки и добавьте `:$HOME/dotnet` в конец существующего оператора `PATH`. Если оператор `PATH` не указан, добавьте новую строку с `export PATH=$PATH:$HOME/dotnet`.
->
-> Кроме того, добавьте `export DOTNET_ROOT=$HOME/dotnet` в конец файла.
-
-Такой подход позволяет устанавливать разные версии в отдельные расположения и выбирать, какие из них следует использовать для каждого приложения.
+Скоро эта статья будет удалена. Вместо нее доступна статья [Установка .NET Core на Linux](linux.md).
 
 ::: zone-end
 
@@ -105,7 +78,7 @@ dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 
 Чтобы извлечь среду выполнения и сделать команды .NET Core CLI доступными в терминале, сначала [скачайте](#all-net-core-downloads) двоичный выпуск .NET Core. Затем создайте каталог в котором будете выполнять установку, например `%USERPROFILE%\dotnet`. Наконец, извлеките скачанный ZIP-файл в этот каталог.
 
-По умолчанию команды и приложения .NET Core CLI не будут использовать .NET Core, установленный таким образом. Необходимо явно выбрать его использование. Для этого измените переменные среды, с которыми запускается приложение:
+По умолчанию команды и приложения .NET Core CLI не будут использовать платформу .NET Core, установленную таким образом. Вам нужно выбрать ее явно. Для этого измените переменные среды, с которыми запускается приложение:
 
 ```console
 set DOTNET_ROOT=%USERPROFILE%\dotnet

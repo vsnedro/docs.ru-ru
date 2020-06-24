@@ -2,12 +2,12 @@
 title: Критические изменения в Windows Forms
 description: Список критических изменений в Windows Forms для .NET Core.
 ms.date: 01/08/2020
-ms.openlocfilehash: 75d369c7fb999da81a50fe46716e125c3840eb7a
-ms.sourcegitcommit: c2c1269a81ffdcfc8675bcd9a8505b1a11ffb271
+ms.openlocfilehash: bd87e438ecf9930bfcd5377f9a3799d5f3693f49
+ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82158441"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "84702472"
 ---
 # <a name="breaking-changes-in-windows-forms"></a>Критические изменения в Windows Forms
 
@@ -20,6 +20,7 @@ ms.locfileid: "82158441"
 | [Удалены элементы управления строкой состояния](#removed-status-bar-controls) | 5.0 |
 | [Теперь методы WinForms вызывают исключение ArgumentException](#winforms-methods-now-throw-argumentexception) | 5.0 |
 | [Теперь методы WinForms вызывают исключение ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5.0 |
+| [Теперь свойства WinForms вызывают исключение ArgumentOutOfRangeException](#winforms-properties-now-throw-argumentoutofrangeexception) | 5.0 |
 | [Удаленные элементы управления](#removed-controls) | 3.1 |
 | [При отображении подсказки не возникает событие CellFormatting](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
 | [Шрифт Control.DefaultFont изменен на Segoe UI 9 пт](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
@@ -47,6 +48,10 @@ ms.locfileid: "82158441"
 ***
 
 [!INCLUDE [null-args-cause-argumentnullexception](../../../includes/core-changes/windowsforms/5.0/null-args-cause-argumentnullexception.md)]
+
+***
+
+[!INCLUDE [invalid-args-cause-argumentoutofrangeexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentoutofrangeexception.md)]
 
 ***
 

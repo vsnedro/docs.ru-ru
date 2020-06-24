@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [C#], searching with String methods
 - strings [C#], searching with regular expressions
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
-ms.openlocfilehash: f3e6d95eb4a01d48fac5b5e2c951b9c346206004
-ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
+ms.openlocfilehash: f5fd61452d6f83bd035b5c6930bd09673c0ded23
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "81121496"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662957"
 ---
 # <a name="how-to-search-strings"></a>Практическое руководство. Поиск по строкам
 
@@ -25,32 +25,32 @@ ms.locfileid: "81121496"
 
 Методы <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType> и <xref:System.String.EndsWith%2A?displayProperty=nameWithType> выполняют поиск определенного текста в строке. В следующем примере показано использование каждого из этих методов, а также случаи поиска без учета регистра:
 
-[!code-csharp-interactive[search strings using methods](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#1)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs" id="Snippet1":::
 
 В предыдущем примере показано важное правило использования этих методов. По умолчанию поиск выполняется **с учетом регистра**. Для выполнения поиска без учета регистра используйте значение перечисления <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>.
 
 ## <a name="where-does-the-sought-text-occur-in-a-string"></a>Где искомый текст находится в строке?
 
 Методы <xref:System.String.IndexOf%2A> и <xref:System.String.LastIndexOf%2A> также ищут текст в строках. Эти методы возвращают расположение текста, поиск которого выполняется. Если текст не найден, возвращается `-1`. В следующем примере происходит поиск первого и последнего вхождения слова "methods" и отображение текста, находящегося между ними.
-  
-[!code-csharp-interactive[search strings for indices](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#2)]
+
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs" id="Snippet2":::
 
 ## <a name="finding-specific-text-using-regular-expressions"></a>Поиск определенного текста с помощью регулярных выражений
 
 Класс <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> можно использовать для поиска строк. Такой поиск может отличаться по сложности от самых простых до очень сложных текстовых шаблонов.
 
-В следующем примере кода выполняется поиск слов "the" и "their" в предложении без учета регистра. Статический метод <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> выполняет поиск. В метод передается строка и шаблон поиска. В нашем примере третий аргумент задает поиск без учета регистра. Для получения дополнительной информации см. <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.  
+В следующем примере кода выполняется поиск слов "the" и "their" в предложении без учета регистра. Статический метод <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> выполняет поиск. В метод передается строка и шаблон поиска. В нашем примере третий аргумент задает поиск без учета регистра. Для получения дополнительной информации см. <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.
 
 Шаблон поиска описывает текст для поиска. Следующая таблица описывает каждый элемент шаблона поиска. (В таблице ниже используется одинарный символ `\`, который в строке на языке C# необходимо экранировать как `\\`.)
 
-| pattern  | Значение     |
-| -------- |-------------|
-| мыши      | соответствует тексту "the" |
-| (eir)?   | Соответствует 0 или 1 вхождению "eir" |
-| \s       | Соответствует пробелу.    |
-  
-[!code-csharp-interactive[Search using regular expressions](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#3)]
-  
+| Шаблон  | Значение                          |
+|----------|----------------------------------|
+| `the`    | соответствует тексту "the"             |
+| `(eir)?` | Соответствует 0 или 1 вхождению "eir" |
+| `\s`     | Соответствует пробелу.    |
+
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs" id="Snippet3":::
+
 > [!TIP]
 > Методы `string` обычно удобнее при поиске точного совпадения со строкой. Регулярные выражения больше подходят при поиске определенных шаблонов в исходной строке.
 
@@ -58,21 +58,19 @@ ms.locfileid: "81121496"
 
 В следующем коде реализуется проверка формата каждой строки в массиве с использованием регулярных выражений. По условиям проверки каждая строка должна иметь формат номера телефона: три группы цифр, разделенных дефисами. Первые две группы содержат по три цифры, и третья группа состоит из четырех цифр. Шаблон поиска использует регулярное выражение `^\\d{3}-\\d{3}-\\d{4}$`. Дополнительные сведения см. в разделе [Элементы языка регулярных выражений. Краткий справочник](../../standard/base-types/regular-expression-language-quick-reference.md).
 
-| pattern  | Значение                             |
-| -------- |-------------------------------------|
-| ^        | соответствует началу строки |
-| \d{3}    | соответствует в точности 3 цифрам  |
-| -        | соответствует символу "–"           |
-| \d{3}    | соответствует в точности 3 цифрам  |
-| -        | соответствует символу "–"           |
-| \d{4}    | соответствует в точности 4 цифрам  |
-| $        | соответствует концу строки       |
+| Шаблон | Значение                             |
+|---------|-------------------------------------|
+| `^`     | соответствует началу строки |
+| `\d{3}` | соответствует в точности 3 цифрам  |
+| `-`     | соответствует символу "–"           |
+| `\d{3}` | соответствует в точности 3 цифрам  |
+| `-`     | соответствует символу "–"           |
+| `\d{4}` | соответствует в точности 4 цифрам  |
+| `$`     | соответствует концу строки       |
 
-[!code-csharp-interactive[csProgGuideStrings#4](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#4)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs" id="Snippet4":::
 
 Один шаблон поиска соответствует множеству допустимых строк. Регулярные выражения больше подходят для поиска или проверки соответствия шаблону, а не для поиска отдельной строки текста.
-
-Вы можете оценить эти примеры, просмотрев код в нашем [репозитории GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Или можете загрузить образцы [в ZIP-файле](../../../samples/snippets/csharp/how-to/strings.zip).
 
 ## <a name="see-also"></a>См. также
 
