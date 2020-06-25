@@ -2,20 +2,20 @@
 title: Команда dotnet msbuild
 description: Команда dotnet msbuild обеспечивает доступ к командной строке MSBuild.
 ms.date: 02/14/2020
-ms.openlocfilehash: 88e85868e2d7de564b2e4c90ce6e78bde4cb350e
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 9739fe782e17db3955db087ca1781ad4280cd491
+ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463626"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84803172"
 ---
 # <a name="dotnet-msbuild"></a>dotnet msbuild
 
 **Эта статья относится к следующему:** ✔️ пакет SDK для .NET Core 2.x и более поздних версий
 
-## <a name="name"></a>Имя
+## <a name="name"></a>name
 
-`dotnet msbuild` — собирает проект и все его зависимости.
+`dotnet msbuild` — собирает проект и все его зависимости. Примечание. При наличии нескольких файлов может потребоваться указать решение или файл проекта.
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -25,13 +25,13 @@ dotnet msbuild <MSBUILD_ARGUMENTS>
 dotnet msbuild -h
 ```
 
-## <a name="description"></a>Описание:
+## <a name="description"></a>Описание
 
 Команда `dotnet msbuild` предоставляет доступ к полнофункциональной системе MSBuild.
 
 Команда имеет точно такие же возможности, как и существующий клиент с интерфейсом командной строки MSBuild только для проектов в стиле SDK. Все параметры одинаковы. Дополнительные сведения о доступных параметрах см. в [справочнике по командной строке MSBuild](/visualstudio/msbuild/msbuild-command-line-reference).
 
-Команда [dotnet build](dotnet-build.md) эквивалентна `dotnet msbuild -restore -target:Build`. Обычно для сборки проектов используется команда [dotnet build](dotnet-build.md). Так как команда `dotnet msbuild` всегда запускает целевой объект сборки, вы можете использовать ее, если не хотите выполнять сборку проекта. Например, если вам нужно запустить конкретный целевой объект, не выполняя сборку проекта, используйте `dotnet msbuild` и укажите целевой объект.
+Команда [dotnet build](dotnet-build.md) эквивалентна `dotnet msbuild -restore`. Если вы не хотите выполнять сборку проекта и у вас есть определенный целевой объект, используйте `dotnet build` или `dotnet msbuild` и укажите целевой объект.
 
 ## <a name="examples"></a>Примеры
 
@@ -57,4 +57,5 @@ dotnet msbuild -h
 
   ```dotnetcli
   dotnet msbuild -preprocess
+  dotnet msbuild -preprocess:<fileName>.xml
   ```

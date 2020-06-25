@@ -1,5 +1,6 @@
 ---
 title: Обзор среды CLR — .NET Framework
+description: Приступая к работе со средой CLR, средой выполнения .NET. Среда CLR выполняет код и предоставляет службы для упрощения процесса разработки.
 ms.date: 04/02/2019
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - code, runtime functionality
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 ms.custom: updateeachrelease
-ms.openlocfilehash: 74421f79c18f32e121d51c47f3eb32f3c2ed71fd
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: ef455ac1c49c1f457d0fa432db91b5375c045840
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289250"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769214"
 ---
 # <a name="common-language-runtime-clr-overview"></a>Обзор среды CLR
 
@@ -64,9 +65,9 @@ ms.locfileid: "84289250"
 
 Номер версии платформы .NET Framework не всегда соответствует номеру версии среды CLR, которую он содержит. Список версий .NET Framework и соответствующих версий среды CLR см. в разделе [Версии и зависимости платформы .NET Framework](../framework/migration-guide/versions-and-dependencies.md). Выпуски .NET Core имеют одну версию продукта, т. е. не существует отдельной версии среды CLR. Список версий .NET Core см. в разделе [Загрузка .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>См. также
 
-|Название|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Процесс управляемого выполнения](managed-execution-process.md)|Описание шагов, необходимых для использования преимуществ общеязыковой среды выполнения.|
 |[Автоматическое управление памятью](automatic-memory-management.md)|Описание выделения и освобождения памяти сборщиком мусора.|

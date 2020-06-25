@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: cbe9e7cce1722efb808c68ee49bb9012be6dcff7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 911d10917c2262c0bd32ef30d48da0f85ac39a39
+ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594456"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84803159"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -175,7 +175,7 @@ dotnet test -h|--help
   dotnet test --logger trx
   ```
 
-- Выполнение тестов в проекте в текущем каталоге и создание файла с объемом протестированного кода (после установки [Coverlet](https://github.com/tonerdo/coverlet/blob/master/README.md)):
+- Выполнение тестов в проекте в текущем каталоге и создание файла с объемом протестированного кода (после установки интеграции сборщиков [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md)):
 
   ```dotnetcli
   dotnet test --collect:"XPlat Code Coverage"
