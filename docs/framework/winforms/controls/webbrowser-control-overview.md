@@ -1,5 +1,6 @@
 ---
 title: Общие сведения об элементе управления WebBrowser
+description: Узнайте, как использовать элемент управления WebBrowser для прозрачного объединения веб-элементов управления с элементами управления Windows Forms в одном приложении.
 ms.date: 03/30/2017
 f1_keywords:
 - WebBrowser
@@ -7,38 +8,38 @@ helpviewer_keywords:
 - WebBrowser control [Windows Forms], about
 - Web pages [Windows Forms], displaying in applications
 ms.assetid: 6e3e1cc2-9c48-4136-9659-e99e4e60b7e9
-ms.openlocfilehash: c75d0b348a2f3dd678f2bfb235bce2e4e227c4b6
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 6a0548bb0f5905d8f848ab13fb82d32b50caa891
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61792136"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325738"
 ---
 # <a name="webbrowser-control-overview"></a>Общие сведения об элементе управления WebBrowser
-<xref:System.Windows.Forms.WebBrowser> Управления предоставляет управляемую оболочку для элемента управления WebBrowser ActiveX. Управляемая оболочка позволяет отображать веб-страницы в клиентских приложениях Windows Forms. Можно использовать <xref:System.Windows.Forms.WebBrowser> управления дублировать возможности просмотра веб-обозревателя в приложении. также можно отключить функциональные возможности Internet Explorer по умолчанию и использовать элемент управления в качестве простого средства просмотра документа HTML. Можно также использовать элемент управления для добавления элементов интерфейса пользователя на основе DHTML в форму и скрыть тот факт, что они размещаются в <xref:System.Windows.Forms.WebBrowser> элемента управления. Такой подход позволяет без проблем Сочетайте веб-элементов управления с помощью элементов управления Windows Forms в одном приложении.  
+<xref:System.Windows.Forms.WebBrowser>Элемент управления предоставляет управляемую оболочку для элемента управления ActiveX WebBrowser. Управляемая оболочка позволяет отображать веб-страницы в клиентских приложениях Windows Forms. Элемент управления можно использовать <xref:System.Windows.Forms.WebBrowser> для дублирования функций веб-обзора Internet Explorer в приложении или отключения функций Internet Explorer по умолчанию и использования элемента управления в качестве простого средства просмотра HTML-документов. Кроме того, элемент управления можно использовать для добавления в форму элементов пользовательского интерфейса на основе DHTML и скрытия того факта, что они размещаются в <xref:System.Windows.Forms.WebBrowser> элементе управления. Такой подход позволяет легко объединять веб-элементы управления с Windows Forms элементами управления в одном приложении.  
   
 ## <a name="frequently-used-properties-methods-and-events"></a>Часто используемые свойства, методы и события  
- <xref:System.Windows.Forms.WebBrowser> Элемент управления имеет несколько свойств, методов и событий, которые можно использовать для реализации элементов управления в Internet Explorer. Например, можно использовать `Navigate` метод, чтобы реализовать адресную строку и `GoBack`, `GoForward`, `Stop`, и `Refresh` методы для реализации кнопки навигации на панели инструментов. Можно обрабатывать `Navigated` событием, обновляют адресной строке со значением `Url` свойство и заголовок со значением `DocumentTitle` свойство.  
+ <xref:System.Windows.Forms.WebBrowser>Элемент управления имеет несколько свойств, методов и событий, которые можно использовать для реализации элементов управления, найденных в Internet Explorer. Например, можно использовать `Navigate` метод для реализации адресной строки, а также методы,, `GoBack` `GoForward` `Stop` и `Refresh` для реализации кнопок навигации на панели инструментов. Можно `Navigated` выполнить обработку события, чтобы обновить адресную строку со значением свойства и заголовком `Url` со значением `DocumentTitle` Свойства.  
   
- Если вы хотите создать свои собственные содержимое страницы в приложении, можно задать `DocumentText` свойства. Если вы знакомы с HTML объектная модель документов (DOM), можно управлять содержимое текущей веб-страницы через `Document` свойство. Это свойство можно хранить и изменять документы в памяти, а не переходить между файлами.  
+ Если вы хотите создать собственное содержимое страницы в приложении, можно задать `DocumentText` свойство. Если вы знакомы с моделью DOM HTML, можно также управлять содержимым текущей веб-страницы с помощью `Document` Свойства. С помощью этого свойства можно хранить и изменять документы в памяти, а не перемещаться между файлами.  
   
- `Document` Свойство также позволяет вызова методов, реализованных в веб-страницы, код из кода клиентского приложения сценария. Чтобы получить доступ к коду клиентского приложения из кода сценария, задайте `ObjectForScripting` свойство. Объект, который вы укажите может осуществляться в код скрипта в виде `window.external` объекта.  
+ `Document`Свойство также позволяет вызывать методы, реализованные в коде скрипта веб-страницы, из кода клиентского приложения. Чтобы получить доступ к коду клиентского приложения из кода скрипта, задайте `ObjectForScripting` свойство. Доступ к указанному объекту можно получить с помощью кода скрипта в качестве `window.external` объекта.  
   
-|name|Описание|  
+|Название|Описание|  
 |----------|-----------------|  
-|Свойство <xref:System.Windows.Forms.WebBrowser.Document%2A>|Возвращает объект, который предоставляет управляемый доступ HTML объектной модели документа (DOM) текущего веб-страницы.|  
-|Событие<xref:System.Windows.Forms.WebBrowser.DocumentCompleted> |Происходит по завершении загрузки веб-страницы.|  
-|Свойство <xref:System.Windows.Forms.WebBrowser.DocumentText%2A>|Возвращает или задает HTML-содержимое текущей веб-страницы.|  
-|Свойство <xref:System.Windows.Forms.WebBrowser.DocumentTitle%2A>|Получает заголовок текущей страницы.|  
-|Метод <xref:System.Windows.Forms.WebBrowser.GoBack%2A>|Переход на предыдущую страницу в журнале.|  
-|Метод <xref:System.Windows.Forms.WebBrowser.GoForward%2A>|Переходит на следующую страницу в журнале.|  
-|Метод <xref:System.Windows.Forms.WebBrowser.Navigate%2A>|Выполняет переход к указанному URL-АДРЕСУ.|  
-|Событие<xref:System.Windows.Forms.WebBrowser.Navigating> |Происходит перед выполнением перехода, что позволяет отменить действие.|  
-|Свойство <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A>|Возвращает или задает объект, который веб-страницы код сценария можно использовать для взаимодействия с приложением.|  
-|Метод <xref:System.Windows.Forms.WebBrowser.Print%2A>|Печать текущей страницы.|  
-|Метод <xref:System.Windows.Forms.WebBrowser.Refresh%2A>|Перезагружает текущий веб-страницы.|  
-|Метод <xref:System.Windows.Forms.WebBrowser.Stop%2A>|Прерывает текущую операцию перехода и останавливает динамической страницы элементы, такие как звуки и анимации.|  
-|Свойство <xref:System.Windows.Forms.WebBrowser.Url%2A>|Возвращает или задает URL-адрес текущей веб-страницы. Задание этого свойства переходит элемент управления на новый URL-адрес.|  
+|Свойство<xref:System.Windows.Forms.WebBrowser.Document%2A>|Возвращает объект, предоставляющий управляемый доступ к объектной модели документа HTML текущей веб-страницы.|  
+|Событие<xref:System.Windows.Forms.WebBrowser.DocumentCompleted>|Происходит при завершении загрузки веб-страницы.|  
+|Свойство<xref:System.Windows.Forms.WebBrowser.DocumentText%2A>|Возвращает или задает содержимое HTML текущей веб-страницы.|  
+|Свойство<xref:System.Windows.Forms.WebBrowser.DocumentTitle%2A>|Возвращает заголовок текущей веб-страницы.|  
+|Метод <xref:System.Windows.Forms.WebBrowser.GoBack%2A>|Переход к предыдущей странице в журнале.|  
+|Метод <xref:System.Windows.Forms.WebBrowser.GoForward%2A>|Переход к следующей странице в журнале.|  
+|Метод <xref:System.Windows.Forms.WebBrowser.Navigate%2A>|Переход по указанному URL-адресу.|  
+|Событие<xref:System.Windows.Forms.WebBrowser.Navigating>|Происходит перед началом навигации, что позволяет отменить действие.|  
+|Свойство<xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A>|Возвращает или задает объект, который может использоваться кодом скрипта веб-страницы для взаимодействия с приложением.|  
+|Метод <xref:System.Windows.Forms.WebBrowser.Print%2A>|Выводит текущую веб-страницу.|  
+|Метод <xref:System.Windows.Forms.WebBrowser.Refresh%2A>|Перезагружает текущую веб-страницу.|  
+|Метод <xref:System.Windows.Forms.WebBrowser.Stop%2A>|Останавливает текущую навигацию и останавливает динамические элементы страницы, такие как звуки и анимация.|  
+|Свойство<xref:System.Windows.Forms.WebBrowser.Url%2A>|Возвращает или задает URL-адрес текущей веб-страницы. При установке этого свойства элемент управления перемещается на новый URL-адрес.|  
   
 ## <a name="see-also"></a>См. также
 
@@ -53,9 +54,9 @@ ms.locfileid: "61792136"
 - <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs>
 - <xref:System.Windows.Forms.WebBrowserReadyState>
 - <xref:System.Windows.Forms.WebBrowserRefreshOption>
-- [Практическое руководство. Перейдите на URL-адрес с элементом управления WebBrowser](how-to-navigate-to-a-url-with-the-webbrowser-control.md)
-- [Практическое руководство. Печать с элементом управления WebBrowser](how-to-print-with-a-webbrowser-control.md)
+- [Практическое руководство. Переход по заданному URL с помощью элемента управления WebBrowser](how-to-navigate-to-a-url-with-the-webbrowser-control.md)
+- [Практическое руководство. Печать с использованием элемента управления WebBrowser](how-to-print-with-a-webbrowser-control.md)
 - [Практическое руководство. Добавление функциональности веб-браузера в приложения Windows Forms](how-to-add-web-browser-capabilities-to-a-windows-forms-application.md)
-- [Практическое руководство. Создание средства просмотра HTML-документ в приложении Windows Forms](how-to-create-an-html-document-viewer-in-a-windows-forms-application.md)
+- [Практическое руководство. Создание средства просмотра HTML-документов в приложении Windows Forms](how-to-create-an-html-document-viewer-in-a-windows-forms-application.md)
 - [Практическое руководство. Реализация двунаправленного взаимодействия между кодом DHTML и клиентским кодом приложений](implement-two-way-com-between-dhtml-and-client.md)
 - [Безопасность элемента управления WebBrowser](webbrowser-security.md)

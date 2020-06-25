@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Определение всплывающих подсказок для элементов управления в Windows Forms во время разработки
+description: Узнайте, как устанавливать подсказки для элементов управления программным способом или в конструктор Windows Forms в Visual Studio.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,20 +10,20 @@ helpviewer_keywords:
 - tooltips [Windows Forms], for controls
 - examples [Windows Forms], tooltips
 ms.assetid: c4b60637-4c0a-44c2-a103-f66dff887936
-ms.openlocfilehash: 0d6725fc1a00826870e6400bffce63a1788e802c
-ms.sourcegitcommit: 0d0a6e96737dfe24d3257b7c94f25d9500f383ea
+ms.openlocfilehash: 15134b38d11de30d0e6a2f998f6ea266affc40d7
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65211689"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325977"
 ---
-# <a name="how-to-set-tooltips-for-controls-on-a-windows-form-at-design-time"></a>Практическое руководство. Определение всплывающих подсказок для элементов управления формы Windows во время разработки
+# <a name="how-to-set-tooltips-for-controls-on-a-windows-form-at-design-time"></a>Как задать подсказки для элементов управления в форме Windows во время разработки
 
-Можно задать <xref:System.Windows.Forms.ToolTip> строку в коде или в конструкторе Windows Forms в Visual Studio. Дополнительные сведения о <xref:System.Windows.Forms.ToolTip> компонента, см. в разделе [Общие сведения о компоненте ToolTip](tooltip-component-overview-windows-forms.md).
+Строку можно задать <xref:System.Windows.Forms.ToolTip> в коде или в конструктор Windows Forms в Visual Studio. Дополнительные сведения о <xref:System.Windows.Forms.ToolTip> компоненте см. в разделе [Общие сведения о компоненте ToolTip](tooltip-component-overview-windows-forms.md).
 
-## <a name="set-a-tooltip-programmatically"></a>Для задания подсказки программным способом
+## <a name="set-a-tooltip-programmatically"></a>Программное задание подсказки
 
-1. Добавьте элемент управления, который будет отображаться объект ToolTip.
+1. Добавьте элемент управления, который будет отображать подсказку.
 
 2. Используйте <xref:System.Windows.Forms.ToolTip.SetToolTip%2A> метод <xref:System.Windows.Forms.ToolTip> компонента.
 
@@ -41,15 +42,15 @@ ms.locfileid: "65211689"
     toolTip1->SetToolTip(button1, "Save changes");
     ```
 
-## <a name="set-a-tooltip-in-the-designer"></a>Для задания подсказки в конструкторе
+## <a name="set-a-tooltip-in-the-designer"></a>Задание подсказки в конструкторе
 
-1. В Visual Studio добавьте <xref:System.Windows.Forms.ToolTip> в форму компонент.
+1. В Visual Studio добавьте компонент в <xref:System.Windows.Forms.ToolTip> форму.
 
-2. Выберите элемент управления, который будет отображаться объект ToolTip, или добавьте его в форму.
+2. Выберите элемент управления, который будет отображать подсказку, или добавьте его в форму.
 
-3. В **свойства** окне **во всплывающей подсказке над ToolTip1** значение соответствующую строку текста.
+3. В окне " **Свойства** " установите **подсказку для значения ToolTip1** в соответствующую строку текста.
 
-### <a name="to-remove-a-tooltip-programmatically"></a>Чтобы удалить подсказки программными средствами
+### <a name="to-remove-a-tooltip-programmatically"></a>Удаление подсказки программными средствами
 
 1. Используйте <xref:System.Windows.Forms.ToolTip.SetToolTip%2A> метод <xref:System.Windows.Forms.ToolTip> компонента.
 
@@ -68,11 +69,11 @@ ms.locfileid: "65211689"
     toolTip1->SetToolTip(button1, NULL);
     ```
 
-## <a name="remove-a-tooltip-in-the-designer"></a>Удалить подсказки в конструкторе
+## <a name="remove-a-tooltip-in-the-designer"></a>Удаление подсказки в конструкторе
 
-1. В Visual Studio выберите элемент управления, который отображает подсказку.
+1. В Visual Studio выберите элемент управления, отображающий подсказку.
 
-2. В **свойства** окно, удалите текст в **во всплывающей подсказке над ToolTip1**.
+2. В окне **Свойства** удалите текст из **подсказки в ToolTip1**.
 
 ## <a name="see-also"></a>См. также
 

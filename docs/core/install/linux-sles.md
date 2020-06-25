@@ -4,12 +4,12 @@ description: Здесь приводятся различные способы �
 author: thraka
 ms.author: adegeo
 ms.date: 06/04/2020
-ms.openlocfilehash: b2eab6a0305d492e37e1b33d02be43ca41d42b6f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9816e1f0253be58dc04c1302f334a7ea0b810810
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602792"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768406"
 ---
 # <a name="install-net-core-sdk-or-net-core-runtime-on-sles"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в SLES
 
@@ -30,7 +30,7 @@ ms.locfileid: "84602792"
 | ✔️ [15](#sles-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
 | ✔️ [12 SP2](#sles-12-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
 
-Следующие версии .NET Core больше не поддерживаются (но остаются доступными для скачивания):
+Следующие версии .NET Core больше не поддерживаются (но остаются доступными для скачивания):
 
 - 3.0
 - 2.2
@@ -76,10 +76,6 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## <a name="snap"></a>Snap-пакеты
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## <a name="dependencies"></a>Зависимости
 
 [!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
@@ -94,4 +90,4 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET Core в Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET Core в Visual Studio Code](../tutorials/with-visual-studio-code.md)

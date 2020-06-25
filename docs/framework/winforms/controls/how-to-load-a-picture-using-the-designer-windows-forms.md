@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Загрузка изображения с помощью конструктора
+description: Сведения об использовании элемента управления Windows Forms PictureBox для загрузки и отображения изображения в форме во время разработки.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - picture formats
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - forms [Windows Forms], displaying images
 - PictureBox control [Windows Forms], adding pictures
 ms.assetid: 4dc7b973-afb1-4276-8322-20825af96655
-ms.openlocfilehash: 12b90d561a18fcffaafb9c45b7fa6be6dd060215
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: a05ffe19412fc7a4e3e02f01336d89cce39fac8a
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76736327"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325602"
 ---
 # <a name="how-to-load-a-picture-using-the-designer-windows-forms"></a>Практическое руководство. Загрузка изображения с помощью конструктора (Windows Form)
 
-С помощью элемента управления Windows Forms <xref:System.Windows.Forms.PictureBox> можно загружать и отображать изображение в форме во время разработки, присвоив свойству <xref:System.Windows.Forms.PictureBox.Image%2A> допустимое изображение. В следующей таблице приведены допустимые типы файлов.
+С помощью <xref:System.Windows.Forms.PictureBox> элемента управления Windows Forms можно загружать и отображать изображение в форме во время разработки, присвоив <xref:System.Windows.Forms.PictureBox.Image%2A> свойству допустимое изображение. В следующей таблице приведены допустимые типы файлов.
 
-|Тип|Расширение имени файла|
+|Type|Расширение имени файла|
 |---|---|
 |Bitmap|BMP|
 |Значок|ICO|
@@ -29,9 +30,9 @@ ms.locfileid: "76736327"
 
 ## <a name="to-display-a-picture-at-design-time"></a>Отображение рисунка во время разработки
 
-1. Нарисуйте элемент управления <xref:System.Windows.Forms.PictureBox> в форме.
+1. Рисование <xref:System.Windows.Forms.PictureBox> элемента управления в форме.
 
-2. В окне **Свойства** выберите свойство <xref:System.Windows.Forms.PictureBox.Image%2A>, а затем нажмите кнопку с многоточием, чтобы открыть диалоговое окно **Открытие** .
+2. В окне **Свойства** выберите <xref:System.Windows.Forms.PictureBox.Image%2A> свойство, а затем нажмите кнопку с многоточием, чтобы открыть диалоговое окно **Открытие** .
 
 3. Если вы ищете конкретный тип файла (например, GIF-файлы), выберите его в поле **файлы типа** .
 
@@ -39,9 +40,9 @@ ms.locfileid: "76736327"
 
 ## <a name="to-clear-the-picture-at-design-time"></a>Очистка рисунка во время разработки
 
-1. В окне **Свойства** выберите свойство <xref:System.Windows.Forms.PictureBox.Image%2A>. Щелкните правой кнопкой мыши маленький эскиз изображения, который отображается слева от имени объекта Image, и выберите команду **сбросить**.
+1. В окне **Свойства** выберите <xref:System.Windows.Forms.PictureBox.Image%2A> свойство. Щелкните правой кнопкой мыши маленький эскиз изображения, который отображается слева от имени объекта Image, и выберите команду **сбросить**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Forms.PictureBox>
 - [Общие сведения об элементе управления PictureBox](picturebox-control-overview-windows-forms.md)

@@ -1,18 +1,19 @@
 ---
-title: Как Создание нового параметра во время разработки
+title: 'Как выполнить: Создание нового параметра во время разработки'
+description: Узнайте, как создать новый параметр Windows Forms во время разработки с помощью конструктора параметров в Visual Studio.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - application settings [Windows Forms], design time
 - application settings [Windows Forms], creating
 ms.assetid: c5d60a66-6507-462f-a81f-e3bc0a804e16
-ms.openlocfilehash: 35a7cd8cc1daaf76a25977751ddc9ec0709e5947
-ms.sourcegitcommit: cf9515122fce716bcfb6618ba366e39b5a2eb81e
+ms.openlocfilehash: ce37b42191999e29de2f2f7f7e7abfa0ec3f4d47
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69037904"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325850"
 ---
-# <a name="how-to-create-a-new-setting-at-design-time"></a>Как Создать новый параметр во время разработки
+# <a name="how-to-create-a-new-setting-at-design-time"></a>Как создать новый параметр во время разработки
 
 Новый параметр можно создать во время разработки с помощью конструктора параметров в Visual Studio. Конструктор параметров — это интерфейс в стиле сетки, позволяющий создавать новые параметры и задавать свойства этих параметров. Для новых параметров необходимо указать имя, значение, тип и область. После создания параметра он доступен в коде.
 
@@ -40,4 +41,4 @@ ms.locfileid: "69037904"
 
 - [Использование параметров приложения и параметров пользователя](using-application-settings-and-user-settings.md)
 - [Общие сведения о параметрах приложений](application-settings-overview.md)
-- [Практическое руководство. Изменение значения существующего параметра во время разработки](how-to-change-the-value-of-an-existing-setting-at-design-time.md)
+- [Как выполнить: Изменение значения существующего параметра во время разработки](how-to-change-the-value-of-an-existing-setting-at-design-time.md)

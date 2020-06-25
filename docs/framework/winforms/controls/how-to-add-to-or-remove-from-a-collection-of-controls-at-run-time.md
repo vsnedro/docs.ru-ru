@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Добавление или удаление элемента в коллекции элементов управления во время выполнения
+description: Узнайте, как добавлять элементы управления и удалять элементы управления из любого элемента управления контейнера в формах, таких как панель или элемент управления GroupBox, или даже саму форму.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,15 +13,15 @@ helpviewer_keywords:
 - run time [Windows Forms], adding controls
 - controls [Windows Forms], removing using collections
 ms.assetid: 771bf895-3d5f-469b-a324-3528f343657e
-ms.openlocfilehash: 369946581847b4bdcf8bc658aeb94b14c529061c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6c3f2d1f42b130de4d808871265b50510cfb8f47
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182291"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325863"
 ---
 # <a name="how-to-add-to-or-remove-from-a-collection-of-controls-at-run-time"></a>Практическое руководство. Добавление или удаление элемента в коллекции элементов управления во время выполнения
-Общие задачи в разработке приложений — добавление элементов управления и удаление <xref:System.Windows.Forms.Panel> <xref:System.Windows.Forms.GroupBox> элементов управления любым и снимаемым элементом управления на формах (например, элемент управления или даже сама форма). Во время разработки элементы управления можно перетаскивать непосредственно на панель или в группу. Во время выполнения эти элементы управления поддерживают коллекцию `Controls`, которая отслеживает размещенные в них элементы управления.  
+Распространенные задачи при разработке приложений — это добавление элементов управления и удаление элементов управления из любого контейнера в формах (например, <xref:System.Windows.Forms.Panel> или <xref:System.Windows.Forms.GroupBox> , или даже самой формы). Во время разработки элементы управления можно перетаскивать непосредственно на панель или в группу. Во время выполнения эти элементы управления поддерживают коллекцию `Controls`, которая отслеживает размещенные в них элементы управления.  
   
 > [!NOTE]
 > Следующий пример кода применяется к любому элементу управления, который поддерживает внутри себя коллекцию элементов управления.  
@@ -33,7 +34,7 @@ ms.locfileid: "79182291"
   
 3. Добавьте этот элемент управления в коллекцию `Controls` родительского элемента управления.  
   
-     Следующий пример кода показывает, как <xref:System.Windows.Forms.Button> создать экземпляр элемента управления. Для этого требуется <xref:System.Windows.Forms.Panel> форма с управлением и что метод `NewPanelButton_Click`обработки событий для создаваемых кнопки, уже существует.  
+     В следующем примере кода показано, как создать экземпляр <xref:System.Windows.Forms.Button> элемента управления. Для этого требуется форма с <xref:System.Windows.Forms.Panel> элементом управления и метод обработки событий для создаваемой кнопки, `NewPanelButton_Click` уже существует.  
   
     ```vb  
     Public NewPanelButton As New Button()  
@@ -66,7 +67,7 @@ ms.locfileid: "79182291"
   
 ### <a name="to-remove-controls-from-a-collection-programmatically"></a>Программное удаление элементов управления из коллекции  
   
-1. Удалите обработчик событий из события. В Visual Basic используйте ключевое слово [заявление Удаления;](../../../visual-basic/language-reference/statements/removehandler-statement.md) в СЗ используйте [оператор -'](../../../csharp/language-reference/operators/subtraction-operator.md).  
+1. Удалите обработчик событий из события. В Visual Basic используйте ключевое слово [оператора RemoveHandler](../../../visual-basic/language-reference/statements/removehandler-statement.md) . в C# используйте [оператор-=](../../../csharp/language-reference/operators/subtraction-operator.md).  
   
 2. Используйте метод `Remove` для удаления требуемого элемента управления из коллекции `Controls` панели.  
   
@@ -100,7 +101,7 @@ ms.locfileid: "79182291"
     }  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Forms.Panel>
 - [Элемент управления Panel](panel-control-windows-forms.md)

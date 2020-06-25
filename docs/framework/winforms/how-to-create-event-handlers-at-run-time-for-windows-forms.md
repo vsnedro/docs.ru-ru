@@ -1,5 +1,6 @@
 ---
 title: Как создавать обработчики событий во время выполнения
+description: Узнайте, как создать обработчик событий во время выполнения с помощью конструктор Windows Forms в Visual Studio. Это действие позволяет подключать обработчики событий во время выполнения.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - examples [Windows Forms], event handling
 - Button control [Windows Forms], event handlers
 ms.assetid: 2e7c9e1a-61fe-444d-8113-3c5bacf1c8cb
-ms.openlocfilehash: 0b496a3da77c5bcf7a08c435edba468a7c5809cb
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 857076c46377b3276154d9b193d4bbe51841828f
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76739506"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325801"
 ---
 # <a name="how-to-create-event-handlers-at-run-time-for-windows-forms"></a>Практическое руководство. Создание обработчиков событий для Windows Forms во время выполнения
 
@@ -29,7 +30,7 @@ ms.locfileid: "76739506"
 
 2. Добавьте метод в форму с сигнатурой метода для события, которое будет необходимо обрабатывать.
 
-     Например, при обработке события <xref:System.Windows.Forms.Control.Click> элемента управления <xref:System.Windows.Forms.Button> необходимо создать метод, подобный следующему:
+     Например, при обработке <xref:System.Windows.Forms.Control.Click> события <xref:System.Windows.Forms.Button> элемента управления необходимо создать метод, подобный следующему:
 
     ```vb
     Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs)
@@ -57,7 +58,7 @@ ms.locfileid: "76739506"
 
 4. Определите форму или элемент управления, для которого необходимо создать обработчик событий.
 
-5. В методе внутри класса формы добавьте код, в соответствии с которым обработчик событий будет обрабатывать событие. Например, следующий код указывает обработчик событий `button1_Click` обрабатывающий событие <xref:System.Windows.Forms.Control.Click> элемента управления <xref:System.Windows.Forms.Button>:
+5. В методе внутри класса формы добавьте код, в соответствии с которым обработчик событий будет обрабатывать событие. Например, следующий код указывает обработчик событий `button1_Click` , обрабатывающий <xref:System.Windows.Forms.Control.Click> событие <xref:System.Windows.Forms.Button> элемента управления:
 
     ```vb
     AddHandler Button1.Click, AddressOf Button1_Click
@@ -71,9 +72,9 @@ ms.locfileid: "76739506"
     button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
     ```
 
-     Метод <xref:System.ComponentModel.EventHandlerList.AddHandler%2A>, показанный в приведенном выше коде Visual Basic, устанавливает обработчик событий щелчка для кнопки.
+     <xref:System.ComponentModel.EventHandlerList.AddHandler%2A>Метод, показанный в приведенном выше коде Visual Basic, устанавливает обработчик событий нажатия для кнопки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание обработчиков событий в Windows Forms](creating-event-handlers-in-windows-forms.md)
 - [Общие сведения об обработчиках событий](event-handlers-overview-windows-forms.md)

@@ -1,5 +1,6 @@
 ---
 title: Поддержка высокого разрешения
+description: Узнайте о поддержке в Windows Forms для распространенных сценариев высокого и динамического DPI. Также Узнайте, как настроить приложения Windows Forms для поддержки высокого DPI.
 ms.date: 05/16/2017
 helpviewer_keywords:
 - High DPI in Windows Forms
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - Windows Forms layout
 - Windows Forms dynamic resizing
 ms.assetid: 075ea4c3-900c-4f8a-9dd2-13ea6804346b
-ms.openlocfilehash: a5c3125475c2de2cf83a3d97e356b26c0acdde99
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: a9e0766307095da447c772de5a3065c18b7b7154
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76741897"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325652"
 ---
 # <a name="high-dpi-support-in-windows-forms"></a>Поддержка высокого DPI в Windows Forms
 
-Начиная с .NET Framework 4,7 Windows Forms включает улучшения для распространенных сценариев высокого и динамического DPI. К ним относятся следующие объекты.
+Начиная с .NET Framework 4,7 Windows Forms включает улучшения для распространенных сценариев высокого и динамического DPI. Сюда входит следующее.
 
-- Улучшения в масштабировании и компоновке нескольких элементов управления Windows Forms, таких как <xref:System.Windows.Forms.MonthCalendar> элемент управления и элемент управления <xref:System.Windows.Forms.CheckedListBox>.
+- Улучшения в масштабировании и компоновке ряда элементов управления Windows Forms, таких как <xref:System.Windows.Forms.MonthCalendar> элемент управления и <xref:System.Windows.Forms.CheckedListBox> элемент управления.
 
 - Масштабирование с одним проходом.  В .NET Framework 4,6 и более ранних версиях масштабирование выполнялось с помощью нескольких проходов, что привело к увеличению количества элементов управления, чем требовалось.
 
@@ -45,9 +46,9 @@ ms.locfileid: "76741897"
   </compatibility>
   ```
 
-- Включение отслеживания DPI для каждого монитора в файле *app. config* .
+- Включение отслеживания DPI для каждого монитора в файле *app.config* .
 
-  В Windows Forms введен новый элемент [`<System.Windows.Forms.ApplicationConfigurationSection>`](../configure-apps/file-schema/winforms/index.md) для поддержки новых функций и настроек, добавленных начиная с .NET Framework 4,7. Чтобы воспользоваться преимуществами новых функций, поддерживающих высокое разрешение, добавьте в файл конфигурации приложения следующее:
+  Windows Forms появился новый [`<System.Windows.Forms.ApplicationConfigurationSection>`](../configure-apps/file-schema/winforms/index.md) элемент для поддержки новых функций и настроек, добавленных начиная с .NET Framework 4,7. Чтобы воспользоваться преимуществами новых функций, поддерживающих высокое разрешение, добавьте в файл конфигурации приложения следующее:
 
   ```xml
   <System.Windows.Forms.ApplicationConfigurationSection>
@@ -56,9 +57,9 @@ ms.locfileid: "76741897"
   ```
 
   > [!IMPORTANT]
-  > В предыдущих версиях .NET Framework использовался манифест для добавления поддержки высокого DPI. Этот подход больше не рекомендуется, так как он переопределяет параметры, определенные в файле App. config.
+  > В предыдущих версиях .NET Framework использовался манифест для добавления поддержки высокого DPI. Этот подход больше не рекомендуется, так как он переопределяет параметры, определенные для файла app.config.
 
-- Вызовите статический метод <xref:System.Windows.Forms.Application.EnableVisualStyles%2A>.
+- Вызовите статический <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> метод.
 
   Это должен быть первый вызов метода в точке входа приложения. Пример:
 
@@ -73,7 +74,7 @@ ms.locfileid: "76741897"
 
 ## <a name="opting-out-of-individual-high-dpi-features"></a>Отказ от отдельных функций высокого разрешения
 
-При установке значения `DpiAwareness` `PerMonitorV2` включаются все функции обеспечения высокого DPI, поддерживаемые версиями .NET Framework, начиная с .NET Framework 4,7. Как правило, это подходит для большинства Windows Forms приложений. Однако вы можете отказаться от одной или нескольких отдельных функций. Наиболее важной причиной этого является то, что существующий код приложения уже обрабатывает эту функцию.  Например, если приложение обрабатывает автоматическое масштабирование, может потребоваться отключить функцию автоматического изменения размера следующим образом:
+Установка `DpiAwareness` значения `PerMonitorV2` включает все возможности поддержки высокого DPI, поддерживаемые .NET Framework версиями, начиная с .NET Framework 4,7. Как правило, это подходит для большинства Windows Forms приложений. Однако вы можете отказаться от одной или нескольких отдельных функций. Наиболее важной причиной этого является то, что существующий код приложения уже обрабатывает эту функцию.  Например, если приложение обрабатывает автоматическое масштабирование, может потребоваться отключить функцию автоматического изменения размера следующим образом:
 
 ```xml
 <System.Windows.Forms.ApplicationConfigurationSection>
@@ -88,13 +89,13 @@ ms.locfileid: "76741897"
 
 Начиная с .NET Framework 4,7, три новых события позволяют программно управлять изменениями динамического DPI:
 
-- <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, которая возникает, когда настройка DPI для элемента управления изменяется программным способом после события изменения DPI для родительского элемента управления или формы.
-- <xref:System.Windows.Forms.Control.DpiChangedBeforeParent>, которая возникает, когда значение DPI для элемента управления изменяется программным способом перед событием изменения DPI для родительского элемента управления или формы.
+- <xref:System.Windows.Forms.Control.DpiChangedAfterParent>, которая возникает, когда значение DPI для элемента управления изменяется программным способом после события изменения DPI для родительского элемента управления или формы.
+- <xref:System.Windows.Forms.Control.DpiChangedBeforeParent>, которая возникает, когда значение DPI для элемента управления изменяется программным способом до возникновения события изменения DPI для родительского элемента управления или формы.
 - <xref:System.Windows.Forms.Form.DpiChanged>, которая возникает при изменении параметра DPI на устройстве отображения, на котором в данный момент отображается форма.
 
 ## <a name="new-helper-methods-and-properties"></a>Новые вспомогательные методы и свойства
 
-В .NET Framework 4,7 также добавляется ряд новых вспомогательных методов и свойств, которые предоставляют сведения о масштабировании DPI и позволяют выполнять масштабирование DPI. К ним относятся следующие объекты.
+В .NET Framework 4,7 также добавляется ряд новых вспомогательных методов и свойств, которые предоставляют сведения о масштабировании DPI и позволяют выполнять масштабирование DPI. Сюда входит следующее.
 
 - <xref:System.Windows.Forms.Control.LogicalToDeviceUnits%2A>, который преобразует значение из логического устройства в пиксел.
 
@@ -128,7 +129,7 @@ Console.WriteLine(Environment.OSVersion.Version.CompareTo(OsMinVersion));
 Console.WriteLine(AppDomain.CurrentDomain.SetupInformation.TargetFrameworkName);
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Windows Forms добавить элемент конфигурации](../configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md)
 - [Настройка размера и масштаба формы Windows Forms](adjusting-the-size-and-scale-of-windows-forms.md)

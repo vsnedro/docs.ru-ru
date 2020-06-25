@@ -1,5 +1,6 @@
 ---
 title: Привязка данных
+description: Узнайте, как использовать привязку данных в Windows Forms для отображения и внесения изменений в данные из источника данных в элементах управления в форме.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data [Windows Forms]
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - data [Windows Forms], architecture
 - Windows Forms controls, data binding
 ms.assetid: c3826d8e-ea25-4ad4-a669-45bfb19192aa
-ms.openlocfilehash: 68871db848ab46b88865e668f27f09972e8debcf
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 3dfce24147caf9b138916ca8dc3b7a9010439f58
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76734608"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325549"
 ---
 # <a name="windows-forms-data-binding"></a>Привязка данных Windows Forms
 Привязка данных в Windows Forms дает возможность отображать и изменять информацию из источника данных в элементах управления в форме. В Windows Forms можно выполнить привязку не только к традиционным источникам данных, но и к практически к любой структуре, содержащий данные.  
   
-## <a name="in-this-section"></a>в этом разделе  
- [Привязка данных и Windows Forms](data-binding-and-windows-forms.md)  
+## <a name="in-this-section"></a>В этом разделе  
+ [Связывание данных и Windows Forms](data-binding-and-windows-forms.md)  
  Общие сведения о привязке данных в Windows Forms.  
   
  [Источники данных, поддерживаемые Windows Forms](data-sources-supported-by-windows-forms.md)  
@@ -30,7 +31,7 @@ ms.locfileid: "76734608"
  [Практическое руководство. Навигация по набору данных, отображаемых в форме Windows Forms](how-to-navigate-data-in-windows-forms.md)  
  Показано, как перемещаться по элементам в источнике данных.  
   
- [Уведомления об изменениях в привязке данных Windows Forms](change-notification-in-windows-forms-data-binding.md)  
+ [Получение уведомления об изменении данных, связанных с элементом управления, в Windows Forms](change-notification-in-windows-forms-data-binding.md)  
  Описывает различные типы уведомлений об изменении для привязки данных Windows Forms.  
   
  [Практическое руководство. Реализация интерфейса INotifyPropertyChanged](how-to-implement-the-inotifypropertychanged-interface.md)  
@@ -60,7 +61,7 @@ ms.locfileid: "76734608"
  <xref:System.Windows.Forms.BindingSource?displayProperty=nameWithType>  
  Описывает класс, инкапсулирующий источник данных для привязки к элементам управления.  
   
-## <a name="related-sections"></a>См. также  
+## <a name="related-sections"></a>Связанные разделы  
  [Компонент BindingSource](./controls/bindingsource-component.md)  
  Содержит список разделов, описывающих использование компонента <xref:System.Windows.Forms.BindingSource>.  
   

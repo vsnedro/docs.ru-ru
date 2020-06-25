@@ -6,12 +6,12 @@ ms.author: adegeo
 ms.date: 05/04/2020
 ms.custom: updateeachrelease
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: f8e5cc134d4132c83544effa7f1937f2a2c8d012
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9b170765740600641f96056adc08ff0b69a03338
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596310"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768318"
 ---
 # <a name="install-the-net-core-sdk"></a>Установка пакета SDK для .NET Core
 
@@ -124,6 +124,8 @@ Visual Studio для Mac устанавливает пакет SDK для .NET C
 
 ::: zone-end
 
+::: zone pivot="os-windows,os-macos"
+
 ## <a name="install-alongside-visual-studio-code"></a>Установка вместе с Visual Studio Code
 
 Visual Studio Code — это эффективный и облегченный редактор исходного кода, который работает на компьютере. Visual Studio Code доступен для Windows, macOS и Linux.
@@ -133,6 +135,8 @@ Visual Studio Code — это эффективный и облегченный 
 01. [Скачайте и установите Visual Studio Code](https://code.visualstudio.com/Download).
 01. [Скачайте и установите пакет SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
 01. [Установите расширение C# из Marketplace для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
+
+::: zone-end
 
 ::: zone pivot="os-windows"
 
@@ -148,7 +152,7 @@ dotnet-install.ps1 -Channel Current
 
 ::: zone-end
 
-::: zone pivot="os-linux,os-macos"
+::: zone pivot="os-macos"
 
 ## <a name="install-with-bash-automation"></a>Установка с помощью функции автоматизации Bash
 
