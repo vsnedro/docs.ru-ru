@@ -63,11 +63,11 @@ ms.locfileid: "84713487"
 
    В окне **Интерпретация** отображается новое значение переменной строки и свойства значения <xref:System.DateTime>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/immediate-window.png" alt-text="Окно "Интерпретация" в Visual Studio":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/immediate-window.png" alt-text="Окно Интерпретация в Visual Studio":::
 
    В окне **Локальные** отображаются значения переменных, которые определены в текущем выполняемом методе. Значения переменных, которые вы только что изменили, обновляются в окне **Локальные**.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Окно "Локальные" в Visual Studio":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Окно Локальные в Visual Studio":::
 
 1. Чтобы продолжить отладку, нажмите клавиши <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>Command</kbd>+<kbd>ВВОД</kbd>).
 

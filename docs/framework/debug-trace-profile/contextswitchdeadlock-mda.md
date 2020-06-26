@@ -1,5 +1,6 @@
 ---
 title: contextSwitchDeadlock MDA
+description: Ознакомьтесь с помощником по отладке управляемого кода (MDA) Контекстсвитчдеадлокк в .NET, который активируется при обнаружении взаимоблокировки во время переключения контекста COM.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - deadlocks [.NET Framework]
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - message pumping
 - context switching deadlocks
 ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
-ms.openlocfilehash: e3fc4a2cb35cdcc713ba0ef362071083af08a27b
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 52db4f2c88bac4e8cac621cca989fa10acb43f94
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217558"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85416022"
 ---
 # <a name="contextswitchdeadlock-mda"></a>contextSwitchDeadlock MDA
 
@@ -60,7 +61,7 @@ ms.locfileid: "77217558"
 
 Сообщение с описанием текущего контекста и целевого контекста.
 
-## <a name="configuration"></a>Конфигурация
+## <a name="configuration"></a>Параметр Configuration
 
 ```xml
 <mdaConfig>
@@ -70,8 +71,8 @@ ms.locfileid: "77217558"
 </mdaConfig>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Маршалинг взаимодействия](../interop/interop-marshaling.md)

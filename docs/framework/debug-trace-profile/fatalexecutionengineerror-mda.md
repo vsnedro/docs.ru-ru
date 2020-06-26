@@ -1,5 +1,6 @@
 ---
 title: Помощник по отладке управляемого кода fatalExecutionEngineError
+description: Ознакомьтесь с помощником по отладке управляемого кода (MDA) Фаталексекутионенгиниррор в .NET, который может активироваться из-за непредвиденного завершения процесса.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - corrupted CLR
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - FatalExecutionEngineError MDA
 - managed debugging assistants (MDAs), fatal errors
 ms.assetid: 8b559e44-2393-4e4e-8160-7558d37a4a89
-ms.openlocfilehash: e25c9ef6ec43089f1d85479d1afe301232ed1d4f
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 0806d2eaa1752c88bebd03304fbe5c8094416a48
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217492"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415931"
 ---
 # <a name="fatalexecutionengineerror-mda"></a>Помощник по отладке управляемого кода fatalExecutionEngineError
 Помощник по отладке управляемого кода `fatalExecutionEngineError` (MDA) активируется при обнаружении неустранимой ошибки в общеязыковой среде выполнения (CLR). В этом случае процесс завершается.  
@@ -61,7 +62,7 @@ ms.locfileid: "77217492"
 ## <a name="output"></a>Вывод  
  Адрес функции среды CLR, которая стала причиной неустранимой ошибки, идентификатор потока, в котором произошла ошибка, а также код самой ошибки.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -71,8 +72,8 @@ ms.locfileid: "77217492"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>
 - <xref:System.Runtime.ConstrainedExecution.Cer>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

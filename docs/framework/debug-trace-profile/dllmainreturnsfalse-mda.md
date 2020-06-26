@@ -1,5 +1,6 @@
 ---
 title: Помощник по отладке управляемого кода dllMainReturnsFalse
+description: Ознакомьтесь с помощником по отладке управляемого кода Дллмаинретурнсфалсе в .NET. Этот MDA активируется при сбое инициализации DLL.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - managed debugging assistants (MDAs), DllMain returns false
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - DllMain function
 - MDAs (managed debugging assistants), DllMain returns false
 ms.assetid: e2abdd04-f571-4b97-8c16-2221b8588429
-ms.openlocfilehash: 0b413521e0a2dc06c2ff0be642f080eaf541202f
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 21d5e37d6823876e07cf5b2cbb881c1cf8b47b11
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77216445"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85416061"
 ---
 # <a name="dllmainreturnsfalse-mda"></a>Помощник по отладке управляемого кода dllMainReturnsFalse
 Помощник по отладке управляемого кода `dllMainReturnsFalse` (MDA) активируется в том случае, если управляемая функция `DllMain` в пользовательской сборке вызывается с причиной DLL_PROCESS_ATTACH и возвращает значение FALSE.  
@@ -32,7 +33,7 @@ ms.locfileid: "77216445"
 ## <a name="output"></a>Вывод  
  Сообщение, указывающее, что функция `DllMain` была вызвана с причиной DLL_PROCESS_ATTACH и вернула значение FALSE. Обратите внимание, что этот помощник по отладке кода вызывается только в том случае, если в управляемом коде реализована функция `DllMain`.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -42,6 +43,6 @@ ms.locfileid: "77216445"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

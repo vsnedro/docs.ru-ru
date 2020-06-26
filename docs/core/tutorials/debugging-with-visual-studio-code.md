@@ -67,7 +67,7 @@ ms.locfileid: "84702131"
 
 1. Откройте окно отладки, щелкнув значок "Отладка" в меню слева.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Открытие вкладки "Отладка" в Visual Studio Code":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Открытие вкладки Отладка в Visual Studio Code":::
 
 1. Щелкните зеленую стрелку в верхней части панели рядом с элементом **.NET Core Launch (console)** (Запуск .NET Core (консоль)). Еще один способ запуска программы в режиме отладки — выбрать в меню параметры **Запуск** > **Начать отладку**.
 
@@ -75,13 +75,13 @@ ms.locfileid: "84702131"
 
 1. Выберите вкладку **Терминал**, чтобы отобразить запрос "What is your name?" (Как вас зовут?), который появляется перед ожиданием ответа.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal.png" alt-text="Выбор вкладки "Терминал"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal.png" alt-text="Выбор вкладки Терминал":::
 
 1. Введите строку в окне **Терминал** в ответ на запрос имени, а затем нажмите клавишу <kbd>ВВОД</kbd>.
 
    Выполнение программы остановится, когда будет достигнута точка останова, то есть перед выполнением метода `Console.WriteLine`. В окне **Локальные** окна **Переменные** отображаются значения переменных, которые определены в текущем выполняемом методе.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Достижение точки останова, отображение окна "Локальные"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Достижение точки останова, отображение окна Локальные":::
 
 ## <a name="use-the-debug-console"></a>Использование консоли отладки
 
@@ -143,7 +143,7 @@ ms.locfileid: "84702131"
    name == String.Empty
    ```
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/expression-in-debug-console.png" alt-text="Значение true в окне "Консоль отладки" после выполнения оператора":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/expression-in-debug-console.png" alt-text="Значение true в окне Консоль отладки после выполнения оператора":::
 
 1. Нажмите кнопку **Продолжить** на панели инструментов, чтобы возобновить выполнение программы.
 
@@ -167,7 +167,7 @@ Visual Studio Code позволяет выполнять программу по
 
 1. Выберите **Запуск** > **Шаг с заходом** или нажмите клавишу <kbd>F11</kbd>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Кнопка "Шаг с заходом"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Кнопка Шаг с заходом":::
 
    Будет выделена следующая строка.
 
@@ -197,7 +197,7 @@ Visual Studio Code позволяет выполнять программу по
 
 1. Выберите **Запуск** > **Шаг с выходом** или нажмите клавиши <kbd>SHIFT</kbd>+<kbd>F11</kbd>.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Кнопка "Шаг с выходом"":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Кнопка Шаг с выходом":::
 
 1. Выберите вкладку **Терминал**.
 

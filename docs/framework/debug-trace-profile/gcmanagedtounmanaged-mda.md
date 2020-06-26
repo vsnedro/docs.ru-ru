@@ -1,5 +1,6 @@
 ---
 title: gcManagedToUnmanaged MDA
+description: Ознакомьтесь с помощником по отладке управляемого кода Гкманажедтаунманажед. Этот MDA может быть активирован из-за преждевременной сборки мусора во время перехода в неуправляемый код.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - MDAs (managed debugging assistants), garbage collection
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - threading [.NET Framework], managed debugging assistants
 - garbage collection, run-time errors
 ms.assetid: 7417f837-805e-4fed-a430-ca919c8421dc
-ms.openlocfilehash: f7e6334e20a6e0db1d52307a833de0ecd0d74cc4
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 76c621a1f2bb780d38228f2a84d4c77441774770
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217479"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415918"
 ---
 # <a name="gcmanagedtounmanaged-mda"></a>gcManagedToUnmanaged MDA
 Помощник по отладке управляемого кода (MDA) `gcManagedToUnmanaged` вызывает сбор мусора каждый раз, когда поток переходит из управляемого в неуправляемый код.  
@@ -37,7 +38,7 @@ ms.locfileid: "77217479"
 ## <a name="output"></a>Вывод  
  Данный MDA не дает результатов.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -47,9 +48,9 @@ ms.locfileid: "77217479"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Маршалинг взаимодействия](../interop/interop-marshaling.md)
 - [gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)

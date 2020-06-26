@@ -1,5 +1,6 @@
 ---
 title: Помощник по отладке управляемого кода dirtyCastAndCallOnInterface
+description: Ознакомьтесь с помощником по отладке управляемого кода Диртикастандкаллонинтерфаце, который вызывается, когда вызовы vtable с ранней привязкой выполняются для интерфейсов класса с поздним связыванием.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - managed debugging assistants (MDAs), early bound calls AutoDispatch
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - MDAs (managed debugging assistants), early bound calls AutoDispatch
 - EarlyBoundCallOnAutorDispatchClassInteface MDA
 ms.assetid: aa388ed3-7e3d-48ea-a0b5-c47ae19cec38
-ms.openlocfilehash: 6e4f0074958e8a6a8ca322968e9c29e89481c0c8
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 2ed5589909915a261a22c48490e469ae52659c8c
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77216519"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85416074"
 ---
 # <a name="dirtycastandcalloninterface-mda"></a>Помощник по отладке управляемого кода dirtyCastAndCallOnInterface
 Помощник по отладке управляемого кода (MDA) `dirtyCastAndCallOnInterface` активируется при попытке выполнения вызова с ранним связыванием посредством виртуальной таблицы в интерфейсе класса, который был отмечен как интерфейс только позднего связывания.  
@@ -37,7 +38,7 @@ ms.locfileid: "77216519"
 ## <a name="output"></a>Вывод  
  Имя метода или имя поля, доступного для вызова с ранним связыванием.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -47,7 +48,7 @@ ms.locfileid: "77216519"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

@@ -39,7 +39,7 @@ ms.locfileid: "84713421"
 
 1. В узле **Многоплатформенность** диалогового окна **Создание проекта** выберите **Библиотека**, а затем — шаблон **Библиотека .NET Standard** и нажмите кнопку **Далее**.
 
-   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="Диалоговое окно "Новый проект"":::
+   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="Диалоговое окно Новый проект":::
 
 1. В диалоговом окне **Configure your new .NET Standard Library** (Настройка новой библиотеки .NET Standard) выберите ".NET Standard 2.1", а затем нажмите кнопку **Далее**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "84713421"
 
 1. Присвойте проекту имя StringLibrary, а решению — ClassLibraryProjects. Оставьте флажок **Создайте каталог проекта в каталоге решения** установленным. Выберите **Создать**.
 
-   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project-options.png" alt-text="Параметры диалогового окна "Создание проекта" Visual Studio для Mac":::
+   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project-options.png" alt-text="Параметры диалогового окна Создание проекта Visual Studio для Mac":::
 
 1. В главном меню выберите **Вид** > **Панели** > **Решение** и щелкните значок закрепления, чтобы панель была открытой.
 
@@ -61,13 +61,13 @@ ms.locfileid: "84713421"
 
 1. Выберите **Ошибки** в нижней части окна интегрированной среды разработки, чтобы открыть панель **Ошибки**. Нажмите кнопку **Выходные данные сборки**.
 
-   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-error-button.png" alt-text="Нижнее поле окна интегрированной среды разработки Visual Studio для Mac с кнопкой "Ошибки"":::
+   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-error-button.png" alt-text="Нижнее поле окна интегрированной среды разработки Visual Studio для Mac с кнопкой Ошибки":::
 
 1. Выберите в меню **Сборка** > **Собрать все**.
 
    Выполняется сборка решения. На панели выходных данных отображается сообщение об успешной сборке.
 
-   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-build-panel.png" alt-text="Область выходных данных Visual Studio для Mac на панели "Ошибки" c сообщением об успешной сборке":::
+   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-build-panel.png" alt-text="Область выходных данных Visual Studio для Mac на панели Ошибки c сообщением об успешной сборке":::
 
 ## <a name="add-a-console-app-to-the-solution"></a>Добавление консольного приложения в решение
 

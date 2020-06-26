@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Добавление операторов трассировки в код приложения
+description: Сведения о добавлении операторов трассировки в код приложения в .NET. Методы, наиболее часто используемые для трассировки, — это методы для записи выходных данных в прослушиватели.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - trace switches, conditional writes based on switches
 - WriteIf method
 ms.assetid: f3a93fa7-1717-467d-aaff-393e5c9828b4
-ms.openlocfilehash: 9903a0357d1d8ceade21b590fd54c8cab517f134
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0c75a8775649aabe73b02187c4604d2eb3a8435b
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174749"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415892"
 ---
 # <a name="how-to-add-trace-statements-to-application-code"></a>Практическое руководство. Добавление операторов трассировки в код приложения
 Методы, наиболее часто используемые для отслеживания, — это методы для записи выходных данных в прослушиватели: **Write**, **WriteIf**, **WriteLine**, **WriteLineIf**, **Assert** и **Fail**. Эти методы можно разделить на две категории: **Write**, **WriteLine** и **Fail** выдают выходные данные безусловно, в то время как методы **WriteIf**, **WriteLineIf** и **Assert** тестируют условие Boolean и выполняют или не выполняют запись в зависимости от значения условия. **WriteIf** и **WriteLineIf** выдают выходные данные, если условие равно `true`, а **Assert** выдает выходные данные, если условие равно `false`.  
@@ -67,7 +68,7 @@ ms.locfileid: "79174749"
   
 ### <a name="to-verify-that-certain-conditions-exist-either-before-or-after-you-execute-a-method"></a>Проверка наличия определенного условия до или после выполнения метода  
   
-1. Вызовите метод <xref:System.Diagnostics.Trace.Assert%2A> .  
+1. Вызовите метод <xref:System.Diagnostics.Trace.Assert%2A>.  
   
     ```vb  
     Dim i As Integer = 4  
@@ -82,13 +83,13 @@ ms.locfileid: "79174749"
     > [!NOTE]
     > Оператор **Assert** можно использовать и для отладки, и для трассировки. В этом примере стек вызовов выводится в любой прослушиватель в коллекции **Listeners**. Дополнительные сведения см. в разделах [Утверждения в управляемом коде](/visualstudio/debugger/assertions-in-managed-code) и <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.Debug.WriteIf%2A?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Debug.WriteLineIf%2A?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Trace.WriteIf%2A?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Trace.WriteLineIf%2A?displayProperty=nameWithType>
-- [Трассировка и оборудование приложений](tracing-and-instrumenting-applications.md)
+- [Трассировка и инструментирование приложений](tracing-and-instrumenting-applications.md)
 - [Практическое руководство. Создание, инициализация и настройка переключателей трассировки](how-to-create-initialize-and-configure-trace-switches.md)
 - [Переключатели трассировки](trace-switches.md)
 - [Прослушиватели трассировки](trace-listeners.md)

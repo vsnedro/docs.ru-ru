@@ -1,5 +1,6 @@
 ---
 title: Повышение эффективности отладки с помощью атрибутов просмотра отладчика
+description: Приступая к работе с атрибутами отображения отладчика в .NET, что позволяет разработчику типа также указывать, как будет выглядеть тип при отображении в отладчике.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - display attributes for debugger
 - DebuggerBrowsableAttribute attribute
 ms.assetid: 72bb7aa9-459b-42c4-9163-9312fab4c410
-ms.openlocfilehash: ca118bffb045a0e7e3a5084916a0ff8020ebda90
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: f266bf7278f472c51dd355df5ba04a123cbd7df0
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77216489"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415970"
 ---
 # <a name="enhancing-debugging-with-the-debugger-display-attributes"></a>Повышение эффективности отладки с помощью атрибутов просмотра отладчика
 
-С помощью атрибутов просмотра отладчика разработчик типа может определить параметры отображения типа в отладчике, что позволяет лучше описать его поведение во время выполнения. Кроме того, пользователи, не знакомые с соответствующим исходным кодом, могут применить на уровне сборки атрибуты просмотра отладчика, предоставляющие свойство `Target`. Атрибут <xref:System.Diagnostics.DebuggerDisplayAttribute> определяет, как тип или член отображается в окнах переменных отладчика. Атрибут <xref:System.Diagnostics.DebuggerBrowsableAttribute> определяет, отображается ли поле или свойство в окнах переменных отладчика, и каким образом это реализуется. Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и меняет способ отображения типа в окнах отладчика. При просмотре переменной, имеющей прокси-сервер, или замены типа прокси-сервер заменяет исходный тип в окне отображения отладчика. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.  
+С помощью атрибутов просмотра отладчика разработчик типа может определить параметры отображения типа в отладчике, что позволяет лучше описать его поведение во время выполнения. Кроме того, пользователи, не знакомые с соответствующим исходным кодом, могут применить на уровне сборки атрибуты просмотра отладчика, предоставляющие свойство `Target`. Атрибут <xref:System.Diagnostics.DebuggerDisplayAttribute> определяет, как тип или член отображается в окнах переменных отладчика. Атрибут <xref:System.Diagnostics.DebuggerBrowsableAttribute> определяет, отображается ли поле или свойство в окнах переменных отладчика, и каким образом это реализуется. Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> указывает прокси (заменяющий тип) для типа и меняет способ отображения типа в окнах отладчика. При просмотре переменной, у которой есть прокси (заменяющий тип), прокси заменяет исходный тип в окне просмотра отладчика. Окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются.  
   
 ## <a name="using-the-debuggerdisplayattribute"></a>Использование атрибута DebuggerDisplayAttribute  
 
@@ -45,7 +46,7 @@ class MyHashtable
 
 - <xref:System.Diagnostics.DebuggerBrowsableState.Never> указывает, что член не отображается в окне данных.  Например, если применить это значение к полю <xref:System.Diagnostics.DebuggerBrowsableAttribute>, это поле будет удалено из иерархии и не будет отображаться при развертывании включающего типа путем нажатия кнопки плюса (+) для экземпляра типа.
 
-- <xref:System.Diagnostics.DebuggerBrowsableState.Collapsed> указывает, что член отображается, но по умолчанию не развернут.  Это поведение по умолчанию.
+- <xref:System.Diagnostics.DebuggerBrowsableState.Collapsed> указывает, что член отображается, но по умолчанию не развернут.  Это поведение установлено по умолчанию.
 
 - <xref:System.Diagnostics.DebuggerBrowsableState.RootHidden> указывает, что сам член не отображается, однако если это массив или коллекция, то выводятся составляющие его объекты.
 
@@ -95,7 +96,7 @@ class MyHashtable : Hashtable
 
 ### <a name="description"></a>Описание
 
-Следующий пример кода можно просмотреть в Visual Studio, чтобы просмотреть результаты применения атрибутов <xref:System.Diagnostics.DebuggerDisplayAttribute>, <xref:System.Diagnostics.DebuggerBrowsableAttribute>и <xref:System.Diagnostics.DebuggerTypeProxyAttribute>.
+Следующий пример кода можно просмотреть в Visual Studio, чтобы просмотреть результаты применения <xref:System.Diagnostics.DebuggerDisplayAttribute> <xref:System.Diagnostics.DebuggerBrowsableAttribute> атрибутов, и <xref:System.Diagnostics.DebuggerTypeProxyAttribute> .
 
 ### <a name="code"></a>Код
 
@@ -103,7 +104,7 @@ class MyHashtable : Hashtable
 [!code-csharp[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/CS/program.cs#1)]
 [!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#1)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.DebuggerDisplayAttribute>
 - <xref:System.Diagnostics.DebuggerBrowsableAttribute>

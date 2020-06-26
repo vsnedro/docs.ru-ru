@@ -1,5 +1,6 @@
 ---
 title: callbackOnCollectedDelegate MDA
+description: Ознакомьтесь с помощником по отладке управляемого кода (MDA) Каллбакконколлектедделегате в .NET, который вызывается, если обратный вызов происходит после того, как делегат уничтожается.
 ms.date: 03/30/2017
 dev_langs:
 - cpp
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - garbage collection, run-time errors
 - delegates [.NET Framework], garbage collection
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
-ms.openlocfilehash: d4ca777fa5b41433eec227762fe315f22ab33cf6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 32f02a4e65455f11f3bfa9260caae8b4e48f494e
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174229"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85416035"
 ---
 # <a name="callbackoncollecteddelegate-mda"></a>callbackOnCollectedDelegate MDA
 Управляемый помощник по отладке (MDA) `callbackOnCollectedDelegate` активируется, если делегат маршалируется из управляемого в неуправляемый код как указатель функции, и обратный вызов помещается в данный указатель функции после сбора мусора делегата.  
@@ -42,10 +43,10 @@ ms.locfileid: "79174229"
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
  Если делегаты маршалируются как указатели функций, среда выполнения выделяет преобразователя, который осуществляет переход от неуправляемого указателя к управляемому. Этот преобразователь — то, что неуправляемый код фактически вызывает перед финальным вызовом управляемого делегата. Без включения MDA `callbackOnCollectedDelegate` неуправляемый код маршалинга удаляется после сбора делегата. С включением MDA `callbackOnCollectedDelegate` неуправляемый код маршалинга не удаляется немедленно после сбора делегата. Вместо этого последние 1000 экземпляров хранятся по умолчанию и изменяются, чтобы активировать MDA при вызове. Преобразователь в конечном счете удаляется после сбора не менее чем 1001 маршалированного делегата.  
   
-## <a name="output"></a>Выходные данные  
+## <a name="output"></a>Вывод  
  MDA сообщает имя типа собранного делегата до попытки обратного вызова в его неуправляемом указателе функции.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
  В следующем примере показаны параметры конфигурации приложения. В нем устанавливается число преобразователей, которые сохраняются MDA, равное 1500. Значение `listSize` по умолчанию — 1000; минимальное значение — 50; максимальное значение — 2000.  
   
 ```xml  
@@ -109,9 +110,9 @@ public class Entry
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Маршалинг взаимодействия](../interop/interop-marshaling.md)
 - [gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)

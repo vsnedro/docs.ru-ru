@@ -1,5 +1,6 @@
 ---
 title: Помощник по отладке управляемого кода asynchronousThreadAbort
+description: Узнайте, как активируется помощник по отладке управляемого кода Асинчронауссреадаборт (MDA), когда поток пытается перевести асинхронное прерывание в другой поток.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - asynchronous thread aborts
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - threading [.NET Framework], managed debugging assistants
 - MDAs (managed debugging assistants), asynchronous thread aborts
 ms.assetid: 9ebe40b2-d703-421e-8660-984acc42bfe0
-ms.openlocfilehash: d0c78e6d52ae4a5b3a24e0bb4278b2e8a1b98751
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 469372d57d9c21198353d171fec16458691eb25d
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217578"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415671"
 ---
 # <a name="asynchronousthreadabort-mda"></a>Помощник по отладке управляемого кода asynchronousThreadAbort
 Помощник по отладке управляемого кода (MDA) `asynchronousThreadAbort` активируется в том случае, если поток пытается выполнить асинхронное прерывание в другом потоке. При вызове синхронных прерываний потока помощник `asynchronousThreadAbort` не активируется.
@@ -43,7 +44,7 @@ ms.locfileid: "77217578"
 ## <a name="output"></a>Вывод
  В отчете этого помощника указывается идентификатор потока, выполнившего прерывание, а также идентификатор целевого потока для операции прерывания. Они никогда не совпадают, поскольку область применения ограничивается асинхронными прерываниями.
 
-## <a name="configuration"></a>Конфигурация
+## <a name="configuration"></a>Параметр Configuration
 
 ```xml
 <mdaConfig>
@@ -68,7 +69,7 @@ void FireMda()
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Thread>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

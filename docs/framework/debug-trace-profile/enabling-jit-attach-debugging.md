@@ -1,16 +1,17 @@
 ---
 title: Включение отладки с JIT-присоединением (трассировка событий Windows)
+description: Включить отладку JIT-подключения для подключения отладчика к процессу при возникновении ошибок. Он может вызываться определенными методами или функциями.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - JIT-attach debugging
 - debugging [.NET Framework], JIT-attach debugging
 ms.assetid: f91fc5f7-de5a-4f23-b6ac-f450e63c662e
-ms.openlocfilehash: 7adf1316a36d781439d364746fa11795a7fe165a
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: d1190c51a9cc6b5322ec832e0d35bc01dc855b12
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217536"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85416048"
 ---
 # <a name="enabling-jit-attach-debugging"></a>Включение отладки с JIT-присоединением (трассировка событий Windows)
 Отладка с JIT-присоединением предусматривает присоединение отладчика к процессу при возникновении ошибок. Также этот процесс может запускаться посредством определенных методов или функций.  
@@ -33,7 +34,7 @@ ms.locfileid: "77217536"
   
  Перед .NET Framework 4 в .NET Framework предоставлены отдельные разделы реестра для управления поведением отладчиков машинного и управляемого кода. Начиная с .NET Framework 4, управление консолидируется в одном разделе реестра: HKEY_LOCAL_MACHINE \Софтваре\микрософт\виндовс Нт\куррент Версион\аедебуг. Значения этого раздела определяют, будет ли вызываться отладчик, а также будет ли в случае его вызова отображаться диалоговое окно для взаимодействия с пользователем. Сведения об установке этого раздела реестра см. в разделе [Настройка автоматической отладки](/windows/win32/debug/configuring-automatic-debugging).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Отладка, трассировка и профилирование](index.md)
 - [Упрощение отладки образов](making-an-image-easier-to-debug.md)
