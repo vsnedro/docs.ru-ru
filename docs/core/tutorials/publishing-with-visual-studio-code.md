@@ -87,7 +87,7 @@ ms.locfileid: "84701454"
 
 1. В **обозревателе** щелкните правой кнопкой мыши папку *publish* (в macOS нажмите <kbd>CTRL</kbd>+щелчок) и выберите **Открыть в терминале**.
 
-   :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Контекстное меню с командой "Открыть в терминале"":::
+   :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Контекстное меню с командой Открыть в терминале":::
 
 1. В Windows или Linux запустите приложение с помощью исполняемого файла.
 

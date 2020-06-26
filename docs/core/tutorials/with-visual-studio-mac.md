@@ -35,7 +35,7 @@ ms.locfileid: "84811667"
 
 1. Выберите **Создать** в окне запуска.
 
-   :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="Кнопка "Создать" на экране запуска Visual Studio для Mac":::
+   :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="Кнопка Создать на экране запуска Visual Studio для Mac":::
 
 1. В узле **Web and Console** (Интернет и Консоль) диалогового окна **Создание проекта** выберите **Приложение**. Выберите шаблон **Консольное приложение** и нажмите кнопку **Далее**.
 

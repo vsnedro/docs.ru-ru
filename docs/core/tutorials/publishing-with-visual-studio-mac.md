@@ -29,11 +29,11 @@ ms.locfileid: "84713355"
 
 1. В главном меню выберите **Сборка** > **Опубликовать в папке…**
 
-   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-context-menu.png" alt-text="Контекстное меню "Опубликовать" в Visual Studio":::
+   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-context-menu.png" alt-text="Контекстное меню Опубликовать в Visual Studio":::
 
 1. В диалоговом окне **Опубликовать в папке** выберите **Опубликовать**.
 
-   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-to-folder-dialog.png" alt-text="Диалоговое окно "Опубликовать в папке" в Visual Studio":::
+   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-to-folder-dialog.png" alt-text="Диалоговое окно Опубликовать в папке в Visual Studio":::
 
    Откроется папка публикации с созданными файлами.
 

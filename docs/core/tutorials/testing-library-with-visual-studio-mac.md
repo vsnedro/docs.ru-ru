@@ -29,11 +29,11 @@ ms.locfileid: "84713307"
 
 1. В узле **Web and Console** (Интернет и консоль) диалогового окна **Создание проекта** выберите **Тесты**. Выберите **Проект MSTest** и нажмите кнопку **Далее**.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Создание тестового проекта в диалоговом окне "Создание проекта" Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
 
 1. Выберите **.NET Core 3.1**. Назовите новый проект StringLibraryTest и выберите **Создать**.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Диалоговое окно "Создание проекта" Visual Studio для Mac с именем проекта":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Диалоговое окно Создание проекта Visual Studio для Mac с именем проекта":::
 
    Visual Studio создает файл класса, используя следующий код:
 
@@ -69,7 +69,7 @@ ms.locfileid: "84713307"
 
 1. В диалоговом окне **Ссылки** выберите проект **StringLibrary**. Нажмите кнопку **ОК**.
 
-      :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-edit-references.png" alt-text="Диалоговое окно "Изменение ссылок" Visual Studio для Mac":::
+      :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-edit-references.png" alt-text="Диалоговое окно Изменение ссылок Visual Studio для Mac":::
 
 ## <a name="add-and-run-unit-test-methods"></a>Добавление и выполнение методов модульного теста
 
@@ -102,7 +102,7 @@ ms.locfileid: "84713307"
 
 1. В строке меню выберите **Файл** > **Сохранить как**. В диалоговом окне проверьте, что поле **Кодировка** имеет значение **Юникод (UTF-8)** .
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/save-file-as-dialog.png" alt-text="Диалоговое окно "Сохранить файл как" в Visual Studio":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/save-file-as-dialog.png" alt-text="Диалоговое окно Сохранить файл как в Visual Studio":::
 
 1. Когда вам предложат заменить существующий файл, выберите **Заменить**.
 
@@ -112,7 +112,7 @@ ms.locfileid: "84713307"
 
 1. Щелкните значок **Закрепить**, чтобы панель не закрывалась.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png" alt-text="Значок закрепления на панели "Модульные тесты" в Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png" alt-text="Значок закрепления на панели Модульные тесты в Visual Studio для Mac":::
 
 1. Нажмите кнопку **Запустить все**.
 
@@ -135,13 +135,13 @@ ms.locfileid: "84713307"
 
    В этот раз в окне **Обозреватель тестов** будет указано, что два теста выполнены успешно, а третий завершился ошибкой.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/failed-test-window.png" alt-text="Окно "Обозреватель тестов" с тестами, которые завершились ошибкой":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/failed-test-window.png" alt-text="Окно Обозреватель тестов с тестами, которые завершились ошибкой":::
 
 1. Щелкните непройденный тест `TestDoesNotStartWithUpper` при нажатой клавише <kbd>CTRL</kbd> и в контекстном меню выберите **Показать панель результатов**.
 
    На панели **Результаты** появится сообщение, созданное методом утверждения: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Из-за этого сбоя строки в массиве, расположенные после слова "Error", не проверялись.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-failure.png" alt-text="Окно "Обозреватель тестов" с сообщением о том, что утверждение IsFalse ошибочно":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-failure.png" alt-text="Окно Обозреватель тестов с сообщением о том, что утверждение IsFalse ошибочно":::
 
 1. Удалите строку "Error", которую вы добавили на шаге 1. Еще раз запустите тест. Теперь тесты будут пройдены.
 
