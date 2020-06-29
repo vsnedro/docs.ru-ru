@@ -1,15 +1,15 @@
 ---
 title: Установка .NET Core в CentOS — .NET Core
 description: Здесь приводятся различные способы установки пакета SDK для .NET Core и среды выполнения .NET Core в CentOS.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
-ms.openlocfilehash: 743bd4ce47fdecef512f9605d8ec5503eb6da9ba
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9f4de70b4989be1d162f384518a015816a3e75a9
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602882"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85324900"
 ---
 # <a name="install-net-core-sdk-or-net-core-runtime-on-centos"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в CentOS
 

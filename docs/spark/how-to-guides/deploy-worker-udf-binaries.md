@@ -4,12 +4,12 @@ description: Узнайте, как развернуть рабочую роль
 ms.date: 01/21/2019
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: f373ccee398149adcadeac91f02d9896214706b0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 042f336431a1c8cad7d94cf10cbe64b72ddfce5b
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79187594"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596465"
 ---
 # <a name="deploy-net-for-apache-spark-worker-and-user-defined-function-binaries"></a>Развертывание рабочей роли и двоичных файлов пользовательских функций .NET для Apache Spark
 
@@ -79,4 +79,4 @@ hdfs://<path to your files>/mySparkApp.zip mySparkApp
 ## <a name="next-steps"></a>Следующие шаги
 
 * [Начало работы с .NET для Apache Spark](../tutorials/get-started.md)
-* [Отладка приложения .NET для Apache Spark в Windows](../how-to-guides/debug.md)
+* [Отладка приложения .NET для Apache Spark в Windows](debug.md)

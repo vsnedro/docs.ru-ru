@@ -10,12 +10,12 @@ dev_langs:
 - csharp
 helpviewer_keywords:
 - encoding, understanding
-ms.openlocfilehash: 1b6ec6a7275408d4a8061c0de92cdf6e82dd533a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 85349e1e1c4eca4dd3ef7980f48350a4145fca24
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288047"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599871"
 ---
 # <a name="character-encoding-in-net"></a>Кодировка символов в .NET
 
@@ -250,7 +250,7 @@ API, который принимает `char` и предполагает, чт�
 
 * Экземпляр string "á" выглядит так же, как "á", но представлен двумя скалярными значениями и содержит два экземпляра `char`.
 
-  * `U+0065 LATIN SMALL LETTER A`
+  * `U+0061 LATIN SMALL LETTER A`
   * `U+0301 COMBINING ACUTE ACCENT`
 
 * Наконец, экземпляр string "`👩🏽‍🚒`" представлен четырьмя скалярными значениями и содержит семь экземпляров `char`.

@@ -5,12 +5,12 @@ ms.date: 10/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, mlnet-tooling
-ms.openlocfilehash: 23de2d06090f4c1eaa2c79178ba4c346698d45e1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 64e366b3c66427ccd2810324abeb880f6cb9ebc1
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78849163"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602210"
 ---
 # <a name="load-training-data-into-model-builder"></a>Загрузка данных для обучения в построитель моделей
 
@@ -109,6 +109,6 @@ ms.locfileid: "78849163"
 В этих руководствах вы найдете процедуры, позволяющие создать приложения машинного обучения с помощью построителя моделей:
 
 - [Прогнозирование цен с помощью регрессии](../tutorials/predict-prices-with-model-builder.md)
-- [Анализ тональности в веб-приложении с использованием двоичной классификации](../tutorials/sentiment-analysis-model-builder.md )
+- [Анализ тональности в веб-приложении с использованием двоичной классификации](../tutorials/sentiment-analysis-model-builder.md)
 
 Если вы обучаете модель с помощью кода, узнайте, как [загружать данные с помощью API-интерфейса ML.NET](load-data-ml-net.md).

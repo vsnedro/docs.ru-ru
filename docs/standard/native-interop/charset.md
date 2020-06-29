@@ -2,12 +2,12 @@
 title: Кодировки и маршалинг — .NET
 description: Узнайте, как различные значения кодировок влияют на то, как .NET маршалирует данные в машинный код.
 ms.date: 01/18/2019
-ms.openlocfilehash: 4be4bd5a968eb5c0d6959a0f378ee1223ed906ed
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 39566593aa38bacfa41b44a8af8cc2dfb294d766
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75706391"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85416113"
 ---
 # <a name="charsets-and-marshaling"></a>Кодировки и маршалинг
 
@@ -17,8 +17,8 @@ ms.locfileid: "75706391"
 
 | Значение`CharSet` | Windows            | .NET Core 2.2 и более ранние версии в Unix | .NET Core 3.0 и более поздние версии, Mono в Unix |
 |-----------------|--------------------|-----------------------------------|------------------------------------------|
-| Ansi            | `char` (системная [кодовая страница Windows (ANSI)](/windows/win32/intl/code-pages) по умолчанию)      | `char` (UTF-8)                    | `char` (UTF-8)                           |
-| Юникод         | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char16_t` (UTF-16)                      |
-| Авто            | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char` (UTF-8)                           |
+| `Ansi`          | `char` (системная [кодовая страница Windows (ANSI)](/windows/win32/intl/code-pages) по умолчанию)      | `char` (UTF-8)                    | `char` (UTF-8)                           |
+| `Unicode`       | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char16_t` (UTF-16)                      |
+| `Auto`          | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char` (UTF-8)                           |
 
 Вы должны понимать, какое представление ожидает ваше собственное представление при выборе кодировки.

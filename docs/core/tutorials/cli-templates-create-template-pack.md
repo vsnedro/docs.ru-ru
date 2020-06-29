@@ -1,16 +1,16 @@
 ---
 title: Создание пакета шаблонов для команды dotnet new
 description: Узнайте, как создать файл CSPROJ, с помощью которого выполняется сборка пакета шаблонов для команды dotnet new.
-author: thraka
+author: adegeo
 ms.date: 12/10/2019
 ms.topic: tutorial
 ms.author: adegeo
-ms.openlocfilehash: 5bc926861dd6a501d7c2d24bd5f7c4116cc78b2c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 25264fff42c47f5bb660f68f85dbb123b5b2608c
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77503488"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85324340"
 ---
 # <a name="tutorial-create-a-template-pack"></a>Учебник. Создание пакета шаблонов
 

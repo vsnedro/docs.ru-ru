@@ -3,15 +3,15 @@ title: Новые возможности .NET Core 3.1
 description: Дополнительные сведения о новых возможностях .NET Core 3.1.
 dev_langs:
 - csharp
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 12/04/2019
-ms.openlocfilehash: b52615a3fb288a6ca0622deb83f4db3c8e3587fb
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: 2373b21e92c6ca68aac33684a9bd0912a2e642b3
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607910"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85324270"
 ---
 # <a name="whats-new-in-net-core-31"></a>Новые возможности .NET Core 3.1
 

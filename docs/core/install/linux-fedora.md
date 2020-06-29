@@ -1,15 +1,15 @@
 ---
 title: Установка .NET Core в Fedora — .NET Core
 description: Здесь приводятся различные способы установки пакета SDK для .NET Core и среды выполнения .NET Core в Fedora.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
-ms.openlocfilehash: 52aa9409ec876e0d1eaef22fb739046941fda897
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c9774ff347382a6fe0be1ac1dcb78a74242ec999
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602840"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85324787"
 ---
 # <a name="install-net-core-sdk-or-net-core-runtime-on-fedora"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в Fedora
 

@@ -5,12 +5,12 @@ ms.date: 10/01/2018
 helpviewer_keywords:
 - Memory&lt;T&gt; and Span&lt;T&gt; best practices
 - using Memory&lt;T&gt; and Span&lt;T&gt;
-ms.openlocfilehash: cb9075a12bb8d842cd8e937e74f8869c910fc0ab
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: d9a50fa18e027b6df7415438e1a5584003f7a094
+ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84201943"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85245600"
 ---
 # <a name="memoryt-and-spant-usage-guidelines"></a>Рекомендации по использованию структур Memory\<T> и Span\<T>
 
@@ -121,7 +121,7 @@ class Program
 
 В некоторых случаях вам придется использовать параметр <xref:System.Memory%601> вместо параметра <xref:System.Span%601> даже в случае полной синхронизации. Может оказаться так, что API, от которого вы зависите, принимает только аргументы <xref:System.Memory%601>. Это нормально, но следует учитывать компромиссы, связанные с синхронным использованием <xref:System.Memory%601>.
 
-<a name="rule-2" />
+<a name="rule-2"></a>
 
 **Правило 2. Используйте ReadOnlySpan\<T> или ReadOnlyMemory\<T>, если буфер должен быть доступен только для чтения.**
 
