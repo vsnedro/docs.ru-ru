@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Использование словаря ресурсов области определения приложения
+description: Узнайте, как определить и использовать словарь настраиваемых ресурсов области приложения в Windows Presentation Foundation (WPF).
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,20 +10,20 @@ helpviewer_keywords:
 - resource dictionaries [WPF], application-scope
 - application-scope resource dictionaries
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
-ms.openlocfilehash: 5bfb3ed0304598a5acf4b7682bf4a4169c5153d1
-ms.sourcegitcommit: 944ddc52b7f2632f30c668815f92b378efd38eea
+ms.openlocfilehash: 9d117dea6c554339b4b462b9bf37b80da2dc477f
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73459793"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85613713"
 ---
 # <a name="how-to-use-an-application-scope-resource-dictionary"></a>Практическое руководство. Использование словаря ресурсов области определения приложения
 В этом примере показано, как определить и использовать пользовательский словарь ресурсов области определения приложения.  
   
 ## <a name="example"></a>Пример  
- <xref:System.Windows.Application> предоставляет хранилище области приложения для общих ресурсов: <xref:System.Windows.Application.Resources%2A>. По умолчанию свойство <xref:System.Windows.Application.Resources%2A> инициализируется экземпляром типа <xref:System.Windows.ResourceDictionary>. Этот экземпляр используется при получении и установке свойств области действия приложения с помощью <xref:System.Windows.Application.Resources%2A>. Дополнительные сведения см. [в разделе как получить и задать ресурс области приложения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348547(v=vs.100)).
+ <xref:System.Windows.Application>предоставляет хранилище области приложения для общих ресурсов: <xref:System.Windows.Application.Resources%2A> . По умолчанию <xref:System.Windows.Application.Resources%2A> свойство инициализируется экземпляром <xref:System.Windows.ResourceDictionary> типа. Этот экземпляр используется при получении и установке свойств области действия приложения с помощью <xref:System.Windows.Application.Resources%2A> . Дополнительные сведения см. [в разделе как получить и задать ресурс области приложения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348547(v=vs.100)).
   
- При наличии нескольких ресурсов, которые вы задаете с помощью <xref:System.Windows.Application.Resources%2A>, вместо этого можно использовать настраиваемый словарь ресурсов для хранения этих ресурсов и установки <xref:System.Windows.Application.Resources%2A>. Ниже показано, как объявить пользовательский словарь ресурсов с помощью XAML.
+ При наличии нескольких ресурсов, которые вы задаете с помощью <xref:System.Windows.Application.Resources%2A> , вместо этого можно использовать настраиваемый словарь ресурсов для хранения этих ресурсов и задать <xref:System.Windows.Application.Resources%2A> вместо него. Ниже показано, как объявить пользовательский словарь ресурсов с помощью XAML.
   
  [!code-xaml[HOWTOResourceDictionaries#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/MyResourceDictionary.xaml#1)]  
   
@@ -39,7 +40,7 @@ ms.locfileid: "73459793"
  [!code-csharp[HOWTOResourceDictionaries#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/MainWindow.xaml.cs#3)]
  [!code-vb[HOWTOResourceDictionaries#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HowToResourceDictionaries/VB/MainWindow.xaml.vb#3)]  
   
- При использовании <xref:System.Windows.Application.Resources%2A>следует учитывать два фактора. Во-первых, *ключ* словаря является объектом, поэтому при установке и получении значения свойства необходимо использовать точно такой же экземпляр объекта. (Обратите внимание, что при использовании строки ключ учитывает регистр.) Во-вторых, *значение* словаря является объектом, поэтому необходимо преобразовать значение в нужный тип при получении значения свойства.  
+ При использовании следует учитывать два аспекта <xref:System.Windows.Application.Resources%2A> . Во-первых, *ключ* словаря является объектом, поэтому при установке и получении значения свойства необходимо использовать точно такой же экземпляр объекта. (Обратите внимание, что при использовании строки ключ учитывает регистр.) Во-вторых, *значение* словаря является объектом, поэтому необходимо преобразовать значение в нужный тип при получении значения свойства.  
   
 ## <a name="see-also"></a>См. также
 
