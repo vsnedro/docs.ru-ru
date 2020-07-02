@@ -1,17 +1,18 @@
 ---
 title: Начало работы
+description: Создавайте клиентские приложения для настольных систем с помощью платформы пользовательского интерфейса Windows Presentation Foundation (WPF), подмножества .NET Framework.
 ms.date: 01/26/2018
 helpviewer_keywords:
 - getting started [WPF]
 - introduction [WPF]
 - WPF [WPF], getting started
 ms.assetid: 04f91da8-708c-46c7-8172-f1695ec847cd
-ms.openlocfilehash: 68e0be41acd1206ccad34dcbb478c6e628ad9f04
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: 2977831bf17ac11a67f71037d26e4f4665131721
+ms.sourcegitcommit: b6a1869f97a37f11a68c90afde1a520a6887dcbc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81646407"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853848"
 ---
 # <a name="get-started-wpf"></a>Начало работы (WPF)
 
@@ -21,14 +22,14 @@ Windows Presentation Foundation (WPF) — это платформа польз�
   
 |||  
 |-|-|  
-|Необходимо перейти непосредственно к…|[Пошаговое руководство. Создание классического приложения WPF](walkthrough-my-first-wpf-desktop-application.md)|  
+|Необходимо перейти непосредственно к…|[Пошаговое руководство: My first WPF desktop application](walkthrough-my-first-wpf-desktop-application.md) (Пошаговое руководство. Создание классического приложения WPF)|  
 |Как проектировать пользовательский интерфейс приложения?|[Проектирование XAML в Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)|  
 |Не знакомы с .NET?|[Общие сведения о платформе .NET Framework](../../get-started/overview.md)<br /><br /> [Начало работы с Visual C# и Visual Basic](/visualstudio/ide/quickstart-visual-basic-console)|  
-|Дополнительные сведения о WPF...|[Введение в WPF в Visual Studio](introduction-to-wpf-in-vs.md)<br /><br /> [Обзор XAML (WPF)](../../../desktop-wpf/fundamentals/xaml.md)<br /><br /> [Элементы управления](../controls/index.md)<br /><br /> [Обзор связывания данных](../../../desktop-wpf/data/data-binding-overview.md)|  
+|Дополнительные сведения о WPF...|[Введение в WPF в Visual Studio](introduction-to-wpf-in-vs.md)<br /><br /> [Обзор XAML (WPF)](../../../desktop-wpf/fundamentals/xaml.md)<br /><br /> [Элементы управления](../controls/index.md)<br /><br /> [Общие сведения о привязке данных](../../../desktop-wpf/data/data-binding-overview.md)|  
 |Вы разработчик Windows Forms?|[Элементы управления Windows Forms и эквивалентные элементы управления WPF](../advanced/windows-forms-controls-and-equivalent-wpf-controls.md)<br /><br /> [Взаимодействие WPF и Windows Forms](../advanced/wpf-and-windows-forms-interoperation.md)|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
-- [Классная библиотека](../class-library-wpf.md)
-- [Разработка приложений](../app-development/index.md)
+- [Библиотека классов](../class-library-wpf.md)
+- [Разработка приложения](../app-development/index.md)
 - [Центр разработчиков .NET Framework](https://dotnet.microsoft.com)

@@ -1,5 +1,6 @@
 ---
-title: Формы и базовый обзор рисунка
+title: Общие сведения о фигурах и базовом рисовании
+description: Улучшите пользовательский интерфейс с помощью готовых к использованию фигур и нескольких уровней служб отрисовки в Windows Presentation Foundation (WPF).
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,33 +13,33 @@ helpviewer_keywords:
 - vectors [WPF], drawing
 - Shape objects [WPF]
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
-ms.openlocfilehash: 44104bec478f1fbb10acc0e591af43ea95fecdc5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 41d8f2b87232740c8945bd6a6099aa86dbe77bc6
+ms.sourcegitcommit: b6a1869f97a37f11a68c90afde1a520a6887dcbc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79141332"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853691"
 ---
 # <a name="shapes-and-basic-drawing-in-wpf-overview"></a>Обзор фигур и базовых средств рисования в приложении WPF
-Эта тема дает обзор того, <xref:System.Windows.Shapes.Shape> как рисовать с объектами. A <xref:System.Windows.Shapes.Shape> — это <xref:System.Windows.UIElement> тип, позволяющий нарисовать фигуру на экране. Поскольку они являются <xref:System.Windows.Shapes.Shape> элементами uI, объекты могут использоваться внутри <xref:System.Windows.Controls.Panel> элементов и большинства элементов управления.  
+В этом разделе приводятся общие сведения о том, как рисовать с помощью <xref:System.Windows.Shapes.Shape> объектов. <xref:System.Windows.Shapes.Shape>— Это тип <xref:System.Windows.UIElement> , который позволяет нарисовать форму на экране. Поскольку они являются элементами пользовательского интерфейса, <xref:System.Windows.Shapes.Shape> объекты могут использоваться внутри <xref:System.Windows.Controls.Panel> элементов и большинства элементов управления.  
   
- [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] предоставляет несколько уровней доступа к службам для работы с графикой и службам рендеринга. В верхнем <xref:System.Windows.Shapes.Shape> слое объекты просты в использовании и предоставляют множество полезных функций, таких как компоновка и участие в системе [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] событий.  
+ [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] предоставляет несколько уровней доступа к службам для работы с графикой и службам рендеринга. На верхнем уровне <xref:System.Windows.Shapes.Shape> объекты просты в использовании и предоставляют множество полезных функций, таких как макет и участие в [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] системе событий.  
 
 <a name="shapes"></a>
 ## <a name="shape-objects"></a>Объекты фигур  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]предоставляет ряд готовых к <xref:System.Windows.Shapes.Shape> использованию объектов.  Все объекты <xref:System.Windows.Shapes.Shape> формы наследуют сяизм от класса. Доступные объекты <xref:System.Windows.Shapes.Path>формы <xref:System.Windows.Shapes.Polygon> <xref:System.Windows.Shapes.Polyline>включают, <xref:System.Windows.Shapes.Rectangle> <xref:System.Windows.Shapes.Ellipse> <xref:System.Windows.Shapes.Line>, , , и . <xref:System.Windows.Shapes.Shape>объекты имеют следующие общие свойства.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]предоставляет ряд готовых к использованию <xref:System.Windows.Shapes.Shape> объектов.  Все объекты Shape наследуются от <xref:System.Windows.Shapes.Shape> класса. Доступные объекты фигур: <xref:System.Windows.Shapes.Ellipse> , <xref:System.Windows.Shapes.Line> , <xref:System.Windows.Shapes.Path> , <xref:System.Windows.Shapes.Polygon> , <xref:System.Windows.Shapes.Polyline> и <xref:System.Windows.Shapes.Rectangle> . <xref:System.Windows.Shapes.Shape>объекты имеют следующие общие свойства.  
   
-- <xref:System.Windows.Shapes.Shape.Stroke%2A>: Описывает, как окрашен контур формы.  
+- <xref:System.Windows.Shapes.Shape.Stroke%2A>: Описывает рисование контура фигуры.  
   
 - <xref:System.Windows.Shapes.Shape.StrokeThickness%2A>: Описывает толщину контура фигуры.  
   
-- <xref:System.Windows.Shapes.Shape.Fill%2A>: Описывает, как окрашен интерьер формы.  
+- <xref:System.Windows.Shapes.Shape.Fill%2A>: Описывает, как рисуется внутренняя часть фигуры.  
   
 - Свойства данных, определяющие координаты и вершины, измеряются в аппаратно-независимых пикселях.  
   
- Потому что <xref:System.Windows.UIElement>они вытекают из, формы объектов могут быть использованы внутри панелей и большинство элементов управления. Панель <xref:System.Windows.Controls.Canvas> является особенно хорошим выбором для создания сложных чертежей, поскольку она поддерживает абсолютное позиционирование своих детских объектов.  
+ Так как они являются производными от <xref:System.Windows.UIElement> , объекты Shape можно использовать внутри панелей и большинства элементов управления. <xref:System.Windows.Controls.Canvas>Панель является особенно хорошим выбором для создания сложных рисунков, так как она поддерживает абсолютное позиционирование дочерних объектов.  
   
- Класс <xref:System.Windows.Shapes.Line> позволяет провести линию между двумя точками. В следующем примере показано несколько способов указания координат линии и свойств штриха.  
+ <xref:System.Windows.Shapes.Line>Класс позволяет нарисовать линию между двумя точками. В следующем примере показано несколько способов указания координат линии и свойств штриха.  
   
  [!code-xaml[drawingwithshapeelements#LineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/lineexample.xaml#lineexample1)]  
   
@@ -46,34 +47,34 @@ ms.locfileid: "79141332"
  [!code-csharp[shapesprocedural#ShapesProceduralLine](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralline)]
  [!code-vb[shapesprocedural#ShapesProceduralLine](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralline)]  
   
- Следующее изображение показывает <xref:System.Windows.Shapes.Line>отображенные .  
+ На следующем рисунке показан отображаемый объект <xref:System.Windows.Shapes.Line> .  
   
  ![Иллюстрация линии](./media/shape-ovw-line2.gif "shape_ovw_line2")  
   
- Хотя <xref:System.Windows.Shapes.Line> класс предоставляет <xref:System.Windows.Shapes.Shape.Fill%2A> свойство, установка не имеет <xref:System.Windows.Shapes.Line> никакого эффекта, поскольку не имеет области.  
+ Несмотря на то <xref:System.Windows.Shapes.Line> , что класс предоставляет <xref:System.Windows.Shapes.Shape.Fill%2A> свойство, его установка не имеет результата, поскольку не <xref:System.Windows.Shapes.Line> имеет области.  
   
- Другой распространенной <xref:System.Windows.Shapes.Ellipse>формой является .  Создайте, <xref:System.Windows.Shapes.Ellipse> определив <xref:System.Windows.FrameworkElement.Width%2A> <xref:System.Windows.FrameworkElement.Height%2A> свойства и свойства фигуры. Чтобы нарисовать круг, <xref:System.Windows.FrameworkElement.Width%2A> <xref:System.Windows.FrameworkElement.Height%2A> укажите, <xref:System.Windows.Shapes.Ellipse> чьи и значения равны.  
+ Другой распространенной фигурой является <xref:System.Windows.Shapes.Ellipse> .  Создайте <xref:System.Windows.Shapes.Ellipse> , определив <xref:System.Windows.FrameworkElement.Width%2A> свойства фигуры и <xref:System.Windows.FrameworkElement.Height%2A> . Чтобы нарисовать круг, укажите, <xref:System.Windows.Shapes.Ellipse> <xref:System.Windows.FrameworkElement.Width%2A> значения и <xref:System.Windows.FrameworkElement.Height%2A> равны.  
   
  [!code-xaml[ShapeOverviews#ShapesOVW1](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapeOverviews/CS/Window1.xaml#shapesovw1)]  
   
  [!code-csharp[brushesmiscsnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/SetBackgroundColorOfShapeExample.cs#setbackgroundcolorofshapecodeexamplewholepage)]
  [!code-vb[brushesmiscsnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/setbackgroundcolorofshapeexample.vb#setbackgroundcolorofshapecodeexamplewholepage)]  
   
- На следующем изображении показан пример <xref:System.Windows.Shapes.Ellipse>отрисованных.  
+ На следующем рисунке показан пример отображаемого объекта <xref:System.Windows.Shapes.Ellipse> .  
   
  ![Иллюстрация эллипса](./media/shape-ovw-ellipse2.png "shape_ovw_ellipse2")  
   
 <a name="paths"></a>
 ## <a name="using-paths-and-geometries"></a>Использование путей и геометрических фигур  
- Класс <xref:System.Windows.Shapes.Path> позволяет рисовать кривые и сложные формы. Эти кривые и формы <xref:System.Windows.Media.Geometry> описаны с помощью объектов. Чтобы использовать <xref:System.Windows.Shapes.Path>, вы <xref:System.Windows.Media.Geometry> создаете и <xref:System.Windows.Shapes.Path> использовать его <xref:System.Windows.Shapes.Path.Data%2A> для установки свойства объекта.  
+ <xref:System.Windows.Shapes.Path>Класс позволяет рисовать кривые и сложные фигуры. Эти кривые и фигуры описываются с помощью <xref:System.Windows.Media.Geometry> объектов. Чтобы использовать <xref:System.Windows.Shapes.Path> , создайте <xref:System.Windows.Media.Geometry> и используйте его для задания <xref:System.Windows.Shapes.Path> <xref:System.Windows.Shapes.Path.Data%2A> свойства объекта.  
   
- Есть множество объектов <xref:System.Windows.Media.Geometry> на выбор. В <xref:System.Windows.Media.LineGeometry> <xref:System.Windows.Media.RectangleGeometry>, <xref:System.Windows.Media.EllipseGeometry> и классы описывают относительно простые формы. Для создания более сложных форм или <xref:System.Windows.Media.PathGeometry>кривых используйте .  
+ Существует множество <xref:System.Windows.Media.Geometry> объектов для выбора. <xref:System.Windows.Media.LineGeometry>Классы, <xref:System.Windows.Media.RectangleGeometry> и <xref:System.Windows.Media.EllipseGeometry> описывают относительно простые фигуры. Чтобы создать более сложные фигуры или создать кривые, используйте <xref:System.Windows.Media.PathGeometry> .  
   
 <a name="pathgeometry"></a>
 ### <a name="pathgeometry-and-pathsegments"></a>Классы PathGeometry и PathSegment  
- <xref:System.Windows.Media.PathGeometry>объекты состоят из одного <xref:System.Windows.Media.PathFigure> или нескольких объектов; каждая из них <xref:System.Windows.Media.PathFigure> представляет собой различную «фигуру» или форму. Каждый из них <xref:System.Windows.Media.PathFigure> сам <xref:System.Windows.Media.PathSegment> состоит из одного или нескольких объектов, каждый из которых представляет собой связанную часть фигуры или формы. Типы сегментов <xref:System.Windows.Media.LineSegment>включают <xref:System.Windows.Media.BezierSegment>в <xref:System.Windows.Media.ArcSegment>себя следующие: , , и .  
+ <xref:System.Windows.Media.PathGeometry>объекты состоят из одного или нескольких <xref:System.Windows.Media.PathFigure> объектов; каждый из них <xref:System.Windows.Media.PathFigure> представляет отдельную фигуру или форму. Каждый из них <xref:System.Windows.Media.PathFigure> состоит из одного или нескольких <xref:System.Windows.Media.PathSegment> объектов, каждый из которых представляет собой подключенную часть рисунка или фигуры. Типы сегментов включают следующие: <xref:System.Windows.Media.LineSegment> , <xref:System.Windows.Media.BezierSegment> и <xref:System.Windows.Media.ArcSegment> .  
   
- В следующем примере <xref:System.Windows.Shapes.Path> используется для рисования квадратной кривой Безье.  
+ В следующем примере <xref:System.Windows.Shapes.Path> используется для отрисовки кривой Безье квадратичных кривых.  
   
  [!code-xaml[geometrysample#34](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#34)]  
   
@@ -81,30 +82,30 @@ ms.locfileid: "79141332"
   
  ![Иллюстрация пути](./media/shape-ovw-path2.gif "shape_ovw_path2")  
   
- Для получения <xref:System.Windows.Media.PathGeometry> дополнительной информации о других <xref:System.Windows.Media.Geometry> классах, см. [Geometry Overview](geometry-overview.md)  
+ Дополнительные сведения о <xref:System.Windows.Media.PathGeometry> и других <xref:System.Windows.Media.Geometry> классах см. в разделе [Общие сведения о геометрии](geometry-overview.md).  
   
 <a name="pathdatastring"></a>
 ### <a name="xaml-abbreviated-syntax"></a>Сокращенный синтаксис XAML  
- В [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], вы также можете использовать специальный сокращенный <xref:System.Windows.Shapes.Path>синтаксис для описания . В следующем примере сокращенный синтаксис используется для рисования сложной фигуры.  
+ В [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] можно также использовать специальный сокращенный синтаксис для описания <xref:System.Windows.Shapes.Path> . В следующем примере сокращенный синтаксис используется для рисования сложной фигуры.  
   
 ```xaml  
       <Path Stroke="DarkGoldenRod" StrokeThickness="3"
 Data="M 100,200 C 100,25 400,350 400,175 H 280" />  
 ```  
   
- Следующее изображение показывает <xref:System.Windows.Shapes.Path>отображенные .  
+ На следующем рисунке показан отображаемый объект <xref:System.Windows.Shapes.Path> .  
   
  ![Иллюстрация пути](./media/shape-ovw-path.PNG "shape_ovw_path")  
   
- Строка <xref:System.Windows.Shapes.Path.Data%2A> атрибута начинается с команды "moveto", указанной M, которая устанавливает отправную <xref:System.Windows.Controls.Canvas>точку для пути в системе координат . <xref:System.Windows.Shapes.Path>параметры данных чувствительны к случаям. Столица M указывает абсолютное местоположение для новой текущей точки. Строчная буква m указывала бы относительные координаты. Первый сегмент представляет собой кубическую кривую Безье, которая начинается в точке (100, 200) и заканчивается в точке (400, 175). Эта кривая нарисована с помощью двух контрольных точек (100, 25) и (400, 350). Этот сегмент указан командой C <xref:System.Windows.Shapes.Path.Data%2A> в строке атрибута. Опять же, заглавная буква C указывает абсолютный путь; строчная буква c указывает относительный путь.  
+ <xref:System.Windows.Shapes.Path.Data%2A>Строка атрибута начинается с команды "MoveTo", обозначенной буквой M, которая устанавливает начальную точку для пути в системе координат <xref:System.Windows.Controls.Canvas> . <xref:System.Windows.Shapes.Path>в параметрах данных учитывается регистр. Прописная M указывает на абсолютное расположение новой текущей точки. Строчная буква m указывала бы относительные координаты. Первый сегмент представляет собой кубическую кривую Безье, которая начинается в точке (100, 200) и заканчивается в точке (400, 175). Эта кривая нарисована с помощью двух контрольных точек (100, 25) и (400, 350). Этот сегмент обозначается командой C в <xref:System.Windows.Shapes.Path.Data%2A> строке атрибута. Опять же, заглавная буква C указывает абсолютный путь; строчная буква c указывает относительный путь.  
   
- Второй сегмент начинается с команды lineto H, которая рисует горизонтальную линию от предыдущей точки пути (400, 175) до новой точки (280, 175). Поскольку это горизонтальная команда "lineto", *x*указанное значение является x-координацией.  
+ Второй сегмент начинается с команды lineto H, которая рисует горизонтальную линию от предыдущей точки пути (400, 175) до новой точки (280, 175). Так как это команда по горизонтали "lineto", указанное значение является координатой *x*.  
   
- Для полного синтаксиса <xref:System.Windows.Shapes.Path.Data%2A> пути см. ссылку и [создайте форму с помощью траектории.](how-to-create-a-shape-by-using-a-pathgeometry.md)  
+ Полный синтаксис пути см <xref:System.Windows.Shapes.Path.Data%2A> . в справочнике и [создании фигуры с помощью PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md).  
   
 <a name="fillpaint"></a>
 ## <a name="painting-shapes"></a>Заполнение фигур  
- <xref:System.Windows.Media.Brush>объекты используются для рисования формы <xref:System.Windows.Shapes.Shape.Stroke%2A> и <xref:System.Windows.Shapes.Shape.Fill%2A>. В следующем примере <xref:System.Windows.Shapes.Ellipse> указаны штрих и заливка. Обратите внимание, что значения свойств кисти могут задаваться только в формате ключевого слова или шестнадцатеричного значения цвета. Для получения дополнительной информации о доступных <xref:System.Windows.Media.Colors> ключевых <xref:System.Windows.Media> словах цвета см.  
+ <xref:System.Windows.Media.Brush>объекты используются для заполнения фигур <xref:System.Windows.Shapes.Shape.Stroke%2A> и <xref:System.Windows.Shapes.Shape.Fill%2A> . В следующем примере задаются штрих и Fill элемента <xref:System.Windows.Shapes.Ellipse> . Обратите внимание, что значения свойств кисти могут задаваться только в формате ключевого слова или шестнадцатеричного значения цвета. Дополнительные сведения о доступных цветовых ключевых словах см <xref:System.Windows.Media.Colors> . в разделе Свойства класса в <xref:System.Windows.Media> пространстве имен.  
   
 ```xaml
 <Canvas Background="LightGray">
@@ -119,11 +120,11 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
 </Canvas>  
 ```  
   
- Следующее изображение показывает <xref:System.Windows.Shapes.Ellipse>отображенные .  
+ На следующем рисунке показан отображаемый объект <xref:System.Windows.Shapes.Ellipse> .  
   
  ![Эллипс](./media/shape-ovw-ellipsefill.PNG "shape_ovw_ellipsefill")  
   
- Кроме того, можно использовать синтаксис элемента <xref:System.Windows.Media.SolidColorBrush> свойств для явного создания объекта для рисования формы твердым цветом.  
+ Кроме того, можно использовать синтаксис элемента свойства для явного создания <xref:System.Windows.Media.SolidColorBrush> объекта, чтобы закрасить фигуру сплошным цветом.  
   
 ```xaml
 <!-- This polygon shape uses pre-defined color values for its Stroke and  
@@ -146,25 +147,25 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  ![Иллюстрация SolidColorBrush](./media/shape-ovw-solidcolorbrush.PNG "shape_ovw_solidcolorbrush")  
   
- Для заполнения фигуры также можно использовать штриховку, градиенты, изображения, шаблоны и многое другое. Для получения дополнительной информации смотрите [картина с твердыми цветами и градиентами Обзор](painting-with-solid-colors-and-gradients-overview.md).  
+ Для заполнения фигуры также можно использовать штриховку, градиенты, изображения, шаблоны и многое другое. Дополнительные сведения см. в разделе [Общие сведения о рисовании с помощью сплошных цветов и градиентов](painting-with-solid-colors-and-gradients-overview.md).  
   
 <a name="stretchableshapessection"></a>
 ## <a name="stretchable-shapes"></a>Растягиваемые фигуры  
- В <xref:System.Windows.Shapes.Line> <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon> <xref:System.Windows.Shapes.Polyline>, <xref:System.Windows.Shapes.Rectangle> и классы <xref:System.Windows.Shapes.Shape.Stretch%2A> все имеют свойство. Это свойство определяет, как содержимое <xref:System.Windows.Shapes.Shape> объекта (форма, подаваемый) растягивается для заполнения пространства макета <xref:System.Windows.Shapes.Shape> объекта. Пространство <xref:System.Windows.Shapes.Shape> компоновки объекта — <xref:System.Windows.Shapes.Shape> это количество пространства, выделенное системой <xref:System.Windows.FrameworkElement.Width%2A> <xref:System.Windows.FrameworkElement.Height%2A> компоновки, из-за явных и настроек или из-за его <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> настроек. Дополнительную информацию о макете можно [Layout](../advanced/layout.md) узнать в Фонде презентации Windows, см.  
+ <xref:System.Windows.Shapes.Line> <xref:System.Windows.Shapes.Path> <xref:System.Windows.Shapes.Polygon> Все классы,,, <xref:System.Windows.Shapes.Polyline> и <xref:System.Windows.Shapes.Rectangle> имеют <xref:System.Windows.Shapes.Shape.Stretch%2A> свойство. Это свойство определяет, как <xref:System.Windows.Shapes.Shape> содержимое объекта (рисуемая фигура) растягивается для заполнения <xref:System.Windows.Shapes.Shape> пространства макета объекта. <xref:System.Windows.Shapes.Shape>Пространство макета объекта — это объем пространства, <xref:System.Windows.Shapes.Shape> выделенного системой макета, из-за явной <xref:System.Windows.FrameworkElement.Width%2A> <xref:System.Windows.FrameworkElement.Height%2A> настройки, или из-за <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> параметров и. Дополнительные сведения о макете в Windows Presentation Foundation см. в разделе Общие сведения о [макете](../advanced/layout.md) .  
   
  Свойство Stretch принимает одно из следующих значений.  
   
 - <xref:System.Windows.Media.Stretch.None>: <xref:System.Windows.Shapes.Shape> Содержимое объекта не растягивается.  
   
-- <xref:System.Windows.Media.Stretch.Fill>: <xref:System.Windows.Shapes.Shape> Содержимое объекта растягивается, чтобы заполнить его пространство макета.  Пропорции не сохраняются.  
+- <xref:System.Windows.Media.Stretch.Fill>: <xref:System.Windows.Shapes.Shape> Содержимое объекта растягивается для заполнения пространства макета.  Пропорции не сохраняются.  
   
-- <xref:System.Windows.Media.Stretch.Uniform>: <xref:System.Windows.Shapes.Shape> Содержимое объекта растягивается как можно больше, чтобы заполнить его пространство макета, сохраняя при этом его исходное соотношение сторон.  
+- <xref:System.Windows.Media.Stretch.Uniform>: <xref:System.Windows.Shapes.Shape> Содержимое объекта растягивается настолько, насколько возможно, для заполнения пространства макета с сохранением исходного пропорций.  
   
-- <xref:System.Windows.Media.Stretch.UniformToFill>: <xref:System.Windows.Shapes.Shape> Содержимое объекта растягивается, чтобы полностью заполнить его пространство макета, сохраняя при этом исходное соотношение сторон.  
+- <xref:System.Windows.Media.Stretch.UniformToFill>: <xref:System.Windows.Shapes.Shape> Содержимое объекта растягивается для полного заполнения пространства макета с сохранением исходного пропорций.  
   
- Обратите внимание, <xref:System.Windows.Shapes.Shape> что при растяжении содержимого объекта контур <xref:System.Windows.Shapes.Shape> объекта покрашивается после растяжения.  
+ Обратите внимание, что при <xref:System.Windows.Shapes.Shape> растяжении содержимого объекта <xref:System.Windows.Shapes.Shape> контур объекта закрашивается после растяжения.  
   
- В следующем примере <xref:System.Windows.Shapes.Polygon> используется для рисования очень небольшого треугольника от (0,0) до (0,1) до (1,1). Объект <xref:System.Windows.Shapes.Polygon> <xref:System.Windows.FrameworkElement.Width%2A> и <xref:System.Windows.FrameworkElement.Height%2A> установлены до 100, и его свойство растяжения установлен для заполнения. В результате содержимое <xref:System.Windows.Shapes.Polygon> объекта (треугольник) растягивается, чтобы заполнить большее пространство.  
+ В следующем примере <xref:System.Windows.Shapes.Polygon> используется для рисования очень маленького треугольника с (0, 0) до (1, 1). <xref:System.Windows.Shapes.Polygon>Объект и имеет <xref:System.Windows.FrameworkElement.Width%2A> <xref:System.Windows.FrameworkElement.Height%2A> значение 100, а свойство Stretch имеет значение Fill. В результате <xref:System.Windows.Shapes.Polygon> содержимое объекта (треугольник) растягивается для заполнения большего пространства.  
   
 ```xaml
 <Polygon  
@@ -195,11 +196,11 @@ myPolygon.StrokeThickness = 2;
 
 <a name="transforms"></a>
 ## <a name="transforming-shapes"></a>Преобразование фигур  
- Класс <xref:System.Windows.Media.Transform> предоставляет средства для преобразования форм в двумерной плоскости.  Различные типы преобразования<xref:System.Windows.Media.RotateTransform>включают всебяи (), масштаб (,<xref:System.Windows.Media.ScaleTransform>перекос (),<xref:System.Windows.Media.SkewTransform>и перевод ().<xref:System.Windows.Media.TranslateTransform>  
+ <xref:System.Windows.Media.Transform>Класс предоставляет средства для преобразования фигур в двумерной плоскости.  К различным типам преобразований относятся вращение ( <xref:System.Windows.Media.RotateTransform> ), Scale ( <xref:System.Windows.Media.ScaleTransform> ), асимметрия ( <xref:System.Windows.Media.SkewTransform> ) и Translation ( <xref:System.Windows.Media.TranslateTransform> ).  
   
- Распространенным преобразованием фигуры является поворот.  Чтобы повернуть форму, <xref:System.Windows.Media.RotateTransform> создать и <xref:System.Windows.Media.RotateTransform.Angle%2A>указать ее . 45 <xref:System.Windows.Media.RotateTransform.Angle%2A> вращает элемент на 45 градусов по часовой стрелке; угол 90 вращает элемент на 90 градусов по часовой стрелке; и так далее. Установите <xref:System.Windows.Media.RotateTransform.CenterX%2A> <xref:System.Windows.Media.RotateTransform.CenterY%2A> свойства и свойства, если вы хотите контролировать точку, о которой элемент вращается. Эти значения свойств выражаются в системе координат преобразуемого элемента. <xref:System.Windows.Media.RotateTransform.CenterX%2A>и <xref:System.Windows.Media.RotateTransform.CenterY%2A> имеют значения по умолчанию в ноль. Наконец, <xref:System.Windows.Media.RotateTransform> примените элемент. Если вы не хотите, чтобы преобразование повлияло <xref:System.Windows.UIElement.RenderTransform%2A> на макет, установите свойство формы.  
+ Распространенным преобразованием фигуры является поворот.  Чтобы повернуть фигуру, создайте <xref:System.Windows.Media.RotateTransform> и укажите ее <xref:System.Windows.Media.RotateTransform.Angle%2A> . Значение, <xref:System.Windows.Media.RotateTransform.Angle%2A> равное 45, поворачивает элемент на 45 градусов по часовой стрелке; угол 90 поворачивает элемент на 90 градусов по часовой стрелке и т. д. Задайте <xref:System.Windows.Media.RotateTransform.CenterX%2A> Свойства и, <xref:System.Windows.Media.RotateTransform.CenterY%2A> Если требуется управлять точкой, вокруг которой поворачивается элемент. Эти значения свойств выражаются в системе координат преобразуемого элемента. <xref:System.Windows.Media.RotateTransform.CenterX%2A>и <xref:System.Windows.Media.RotateTransform.CenterY%2A> имеют нулевые значения по умолчанию. Наконец, примените <xref:System.Windows.Media.RotateTransform> к элементу. Если вы не хотите, чтобы преобразование влияло на макет, установите <xref:System.Windows.UIElement.RenderTransform%2A> свойство фигуры.  
   
- В следующем примере <xref:System.Windows.Media.RotateTransform> используется для вращения формы на 45 градусов в левом верхнем углу формы (0,0).  
+ В следующем примере <xref:System.Windows.Media.RotateTransform> используется для поворота фигуры 45 градусов относительно левого верхнего угла фигуры (0, 0).  
   
  [!code-xaml[transformssample#14](~/samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/RotateTransformExample.xaml#14)]  
   
@@ -211,12 +212,12 @@ myPolygon.StrokeThickness = 2;
   
  ![Повороты на 45 градусов с разными центральными точками](./media/wcpsdk-graphicsmm-rotatetransform45degrees.gif "wcpsdk_graphicsmm_rotatetransform45degrees")  
   
- В предыдущих примерах к каждому объекту фигуры применяется одно преобразование. Чтобы применить несколько преобразований к форме (или <xref:System.Windows.Media.TransformGroup>любому другому элементу uI), используйте .  
+ В предыдущих примерах к каждому объекту фигуры применяется одно преобразование. Чтобы применить несколько преобразований к фигуре (или любому другому элементу пользовательского интерфейса), используйте <xref:System.Windows.Media.TransformGroup> .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - [Двумерная графика и изображения](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
 - [Общие сведения о закраске сплошным цветом и градиентом](painting-with-solid-colors-and-gradients-overview.md)
-- [Общие сведения о геометрических фигурах](geometry-overview.md)
-- [Пошаговое руководство. Создание первого классического приложения WPF](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
+- [Общие сведения о классе Geometry](geometry-overview.md)
+- [Пошаговое руководство: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) (Пошаговое руководство. Создание классического приложения WPF)
 - [Общие сведения об эффектах анимации](animation-overview.md)
