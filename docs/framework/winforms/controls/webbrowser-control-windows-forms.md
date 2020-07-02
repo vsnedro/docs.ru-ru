@@ -1,29 +1,30 @@
 ---
 title: Элемент управления WebBrowser
+description: Узнайте о том, как элемент управления WebBrowser Windows Forms размещает веб-страницы и предоставляет возможности для поиска в приложении.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WebBrowser control [Windows Forms]
 - Web pages [Windows Forms], hosting in applications
 - Web pages [Windows Forms], Windows Forms controls
 ms.assetid: 12667861-5b5b-46bc-8fb5-675e25264c9f
-ms.openlocfilehash: b2dc9d124623d8018356c147c34ac6bc8da82209
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 3961a4071929a1688b3f9c1e9b2d30835b487f89
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76739996"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619680"
 ---
 # <a name="webbrowser-control-windows-forms"></a>Общие сведения об элементе управления WebBrowser (Windows Forms)
-Элемент управления Windows Forms `WebBrowser` размещает веб-страницы и обеспечивает возможности веб-обзора для приложения.  
+`WebBrowser`Элемент управления Windows Forms размещает веб-страницы и предоставляет возможности для обзора в приложении.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
  [Общие сведения об элементе управления WebBrowser](webbrowser-control-overview.md)  
  Описание элемента управления, его основных возможностей и свойств.  
   
  [Безопасность элемента управления WebBrowser](webbrowser-security.md)  
  Описание проблем безопасности, связанных с элементом управления.  
   
- [Практическое руководство. Переход по заданному URL-адресу с помощью элемента управления WebBrowser](how-to-navigate-to-a-url-with-the-webbrowser-control.md)  
+ [Практическое руководство. Переход по заданному URL с помощью элемента управления WebBrowser](how-to-navigate-to-a-url-with-the-webbrowser-control.md)  
  Демонстрирует использование элемента управления для перехода по определенному URL-адресу.  
   
  [Практическое руководство. Печать с использованием элемента управления WebBrowser](how-to-print-with-a-webbrowser-control.md)  
@@ -39,7 +40,7 @@ ms.locfileid: "76739996"
  Описывает, как настроить двустороннюю связь между кодом приложения и DHTML на веб-странице, размещенной в элементе управления.  
   
  [Использование управляемой объектной модели HTML-документов](using-the-managed-html-document-object-model.md)  
- Содержит разделы, в которых описывается управление или создание HTML-страниц, размещенных в элементе управления <xref:System.Windows.Forms.WebBrowser>.  
+ Содержит разделы, описывающие способ управления или создания HTML-страниц, размещенных в <xref:System.Windows.Forms.WebBrowser> элементе управления.  
   
 ## <a name="reference"></a>Справочник  
  Класс <xref:System.Windows.Forms.WebBrowser>  
@@ -78,6 +79,6 @@ ms.locfileid: "76739996"
  <xref:System.Windows.Forms.WebBrowserRefreshOption>  
  Описывает это перечисление и все его значения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Элементы управления для использования в Windows Forms](controls-to-use-on-windows-forms.md)
+- [Элементы управления для использования в формах Windows Forms](controls-to-use-on-windows-forms.md)

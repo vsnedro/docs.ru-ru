@@ -1,5 +1,6 @@
 ---
 title: Добавление и удаление вкладок с помощью элемента TabControl
+description: Узнайте, как добавлять и удалять вкладки с Windows Forms элементом управления TabControl, который содержит два элемента управления TabPage. Доступ к этим вкладкам осуществляется через свойство Табпажес.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,19 +13,19 @@ helpviewer_keywords:
 - tabs [Windows Forms], adding to pages
 - tab pages
 ms.assetid: 66d4dfca-41e8-44e3-9c80-fb7ac4cb1619
-ms.openlocfilehash: 8292d8441f9b47334b98736cf3282c846673dbb4
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 7e67d0bbc13bd7d9c8835dc6fb9b9c5c9333b8bf
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76732715"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618081"
 ---
 # <a name="how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol"></a>Практическое руководство. Добавление и удаление вкладок с помощью элемента управления TabControl в Windows Forms
-По умолчанию элемент управления <xref:System.Windows.Forms.TabControl> содержит два элемента управления <xref:System.Windows.Forms.TabPage>. Доступ к этим вкладкам можно получить с помощью свойства <xref:System.Windows.Forms.TabControl.TabPages%2A>.  
+По умолчанию <xref:System.Windows.Forms.TabControl> элемент управления содержит два элемента <xref:System.Windows.Forms.TabPage> управления. Доступ к этим вкладкам можно получить с помощью <xref:System.Windows.Forms.TabControl.TabPages%2A> Свойства.  
   
 ### <a name="to-add-a-tab-programmatically"></a>Добавление вкладки программными средствами  
   
-- Используйте метод <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> свойства <xref:System.Windows.Forms.TabControl.TabPages%2A>.  
+- Используйте <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> метод <xref:System.Windows.Forms.TabControl.TabPages%2A> Свойства.  
   
     ```vb  
     Dim myTabPage As New TabPage()  
@@ -47,11 +48,11 @@ ms.locfileid: "76732715"
   
 ### <a name="to-remove-a-tab-programmatically"></a>Удаление вкладки программным способом  
   
-- Чтобы удалить выбранные вкладки, используйте метод <xref:System.Windows.Forms.TabControl.TabPageCollection.Remove%2A> свойства <xref:System.Windows.Forms.TabControl.TabPages%2A>.  
+- Чтобы удалить выбранные вкладки, используйте <xref:System.Windows.Forms.TabControl.TabPageCollection.Remove%2A> метод <xref:System.Windows.Forms.TabControl.TabPages%2A> Свойства.  
   
      -или-  
   
-- Чтобы удалить все вкладки, используйте метод <xref:System.Windows.Forms.TabControl.TabPageCollection.Clear%2A> свойства <xref:System.Windows.Forms.TabControl.TabPages%2A>.  
+- Чтобы удалить все вкладки, используйте <xref:System.Windows.Forms.TabControl.TabPageCollection.Clear%2A> метод <xref:System.Windows.Forms.TabControl.TabPages%2A> Свойства.  
   
     ```vb  
     ' Removes the selected tab:  
@@ -74,7 +75,7 @@ ms.locfileid: "76732715"
     tabControl1->TabPages->Clear();  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об элементе управления TabControl](tabcontrol-control-overview-windows-forms.md)
 - [Практическое руководство. Добавление элемента управления на вкладку](how-to-add-a-control-to-a-tab-page.md)

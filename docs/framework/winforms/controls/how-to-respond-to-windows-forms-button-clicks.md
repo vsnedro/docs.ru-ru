@@ -1,5 +1,6 @@
 ---
 title: Реагирование на нажатия кнопок
+description: Узнайте, как реагировать на нажатия кнопок Windows Forms. Самый простой способ использования элемента управления "кнопка Windows Forms" — запуск некоторого кода при нажатии кнопки.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -15,23 +16,23 @@ helpviewer_keywords:
 - examples [Windows Forms], controls
 - Click event [Windows Forms], responding to
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
-ms.openlocfilehash: dd6cf75a316257c86a23b44a818422336c12aa67
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 5c458d56dbd6f1cab8e88bdbb86ede958367e5c4
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76735713"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619732"
 ---
 # <a name="how-to-respond-to-windows-forms-button-clicks"></a>Практическое руководство. Обработка события нажатия кнопки в Windows Forms
-Наиболее базовым использованием элемента управления Windows Forms <xref:System.Windows.Forms.Button> является выполнение некоторого кода при нажатии кнопки.  
+Самым простым использованием <xref:System.Windows.Forms.Button> элемента управления Windows Forms является выполнение некоторого кода при нажатии кнопки.  
   
- При щелчке элемента управления <xref:System.Windows.Forms.Button> также создается ряд других событий, таких как <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseDown>и события <xref:System.Windows.Forms.Control.MouseUp>. Если вы планируете присоединить обработчики событий для этих связанных событий, убедитесь, что их действия не конфликтуют. Например, если нажать кнопку, чтобы очистить сведения, введенные пользователем в текстовое поле, при наведении указателя мыши на кнопку не должно отображаться всплывающая подсказка с несуществующими сведениями.  
+ При щелчке <xref:System.Windows.Forms.Button> элемента управления также создается ряд других событий, таких как <xref:System.Windows.Forms.Control.MouseEnter> события, <xref:System.Windows.Forms.Control.MouseDown> и <xref:System.Windows.Forms.Control.MouseUp> . Если вы планируете присоединить обработчики событий для этих связанных событий, убедитесь, что их действия не конфликтуют. Например, если нажать кнопку, чтобы очистить сведения, введенные пользователем в текстовое поле, при наведении указателя мыши на кнопку не должно отображаться всплывающая подсказка с несуществующими сведениями.  
   
- Если пользователь пытается дважды щелкнуть элемент управления <xref:System.Windows.Forms.Button>, каждый щелчок будет обрабатываться отдельно. то есть элемент управления не поддерживает событие двойного щелчка.  
+ Если пользователь пытается дважды щелкнуть <xref:System.Windows.Forms.Button> элемент управления, каждый щелчок будет обрабатываться отдельно, то есть элемент управления не поддерживает событие двойного щелчка.  
   
 ### <a name="to-respond-to-a-button-click"></a>Реагирование на нажатие кнопки  
   
-- В `Click` кнопки <xref:System.EventHandler> записать код для выполнения. `Button1_Click` должны быть привязаны к элементу управления. Дополнительные сведения см. [в разделе инструкции. Создание обработчиков событий во время выполнения для Windows Forms](../how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
+- В этой кнопке `Click` <xref:System.EventHandler> напишите код для выполнения. `Button1_Click`должен быть привязан к элементу управления. Дополнительные сведения см. [в разделе инструкции. Создание обработчиков событий во время выполнения для Windows Forms](../how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
@@ -55,7 +56,7 @@ ms.locfileid: "76735713"
        }  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об элементе управления Button](button-control-overview-windows-forms.md)
 - [Способы активации элемента управления Button в Windows Forms](ways-to-select-a-windows-forms-button-control.md)

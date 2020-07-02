@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Установка уровня сжатия JPEG
+description: Узнайте, как настроить качество изображения JPEG, изменив его уровень сжатия Windows Forms.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - images [Windows Forms], changing encoder parameters
 - JPEG images [Windows Forms], setting quality level
 ms.assetid: 4b9a74e3-9504-43c1-9f28-ace651d0772e
-ms.openlocfilehash: 1b325c0cb8fe9da4b198d19164c73af9b1609973
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 1f6a96e8a05fff40eb08da0ce318faa86a06cc3a
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64626135"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618718"
 ---
 # <a name="how-to-set-jpeg-compression-level"></a>Практическое руководство. Установка уровня сжатия JPEG
-Вам может потребоваться изменить параметры изображения при сохранении на диск, чтобы уменьшить размер файла или повысить качество изображения. Качество изображения в формате JPEG можно настроить, изменив уровень сжатия. Чтобы указать уровень сжатия при сохранении изображения в формате JPEG, необходимо создать <xref:System.Drawing.Imaging.EncoderParameters> объект и передать его в <xref:System.Drawing.Image.Save%2A> метод <xref:System.Drawing.Image> класса. Инициализировать <xref:System.Drawing.Imaging.EncoderParameters> объекта, чтобы он включал массив, который состоит из одной <xref:System.Drawing.Imaging.EncoderParameter>. При создании <xref:System.Drawing.Imaging.EncoderParameter>, укажите <xref:System.Drawing.Imaging.Encoder.Quality> кодировщик и нужный уровень сжатия.  
+Вам может потребоваться изменить параметры изображения при сохранении на диск, чтобы уменьшить размер файла или повысить качество изображения. Качество изображения в формате JPEG можно настроить, изменив уровень сжатия. Чтобы указать уровень сжатия при сохранении изображения в формате JPEG, необходимо создать <xref:System.Drawing.Imaging.EncoderParameters> объект и передать его <xref:System.Drawing.Image.Save%2A> методу <xref:System.Drawing.Image> класса. Инициализируйте <xref:System.Drawing.Imaging.EncoderParameters> объект, чтобы он состоять из одного массива <xref:System.Drawing.Imaging.EncoderParameter> . При создании <xref:System.Drawing.Imaging.EncoderParameter> укажите <xref:System.Drawing.Imaging.Encoder.Quality> кодировщик и требуемый уровень сжатия.  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода создается <xref:System.Drawing.Imaging.EncoderParameter> и сохраняет три изображения JPEG. Каждое изображение JPEG сохраняется с разным уровнем качества, изменив `long` значение, передаваемое <xref:System.Drawing.Imaging.EncoderParameter> конструктор. Уровень качества 0 соответствует максимальному сжатию, а уровень качества 100 — минимальному сжатию.  
+ В следующем примере кода создается <xref:System.Drawing.Imaging.EncoderParameter> объект и сохраняются три изображения JPEG. Каждый рисунок JPEG сохраняется с другим уровнем качества, изменяя значение, `long` передаваемое <xref:System.Drawing.Imaging.EncoderParameter> конструктору. Уровень качества 0 соответствует максимальному сжатию, а уровень качества 100 — минимальному сжатию.  
   
 ```csharp  
 private void VaryQualityLevel()  
@@ -125,12 +126,12 @@ End Function
   
 - приложение Windows Forms;  
   
-- Объект <xref:System.Windows.Forms.PaintEventArgs>, который является параметром <xref:System.Windows.Forms.PaintEventHandler>.  
+- Объект <xref:System.Windows.Forms.PaintEventArgs> , являющийся параметром <xref:System.Windows.Forms.PaintEventHandler> .  
   
 - файл изображения с именем `TestPhoto.jpg`, расположенный в папке **C:\\**.  
   
 ## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Определение параметров, поддерживаемых кодировщиком](how-to-determine-the-parameters-supported-by-an-encoder.md)
-- [Типы растровых изображений](types-of-bitmaps.md)
+- [Типы точечных рисунков](types-of-bitmaps.md)
 - [Применение кодировщиков и декодеров изображений в управляемом GDI+](using-image-encoders-and-decoders-in-managed-gdi.md)

@@ -1,5 +1,6 @@
 ---
 title: Графика и рисование
+description: Сведения об объектах графики, пера, кисти и цветах, а также о том, как выполнять такие задачи, как Рисование фигур, Рисование текста или отображение изображений в Windows Forms.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - graphics [Windows Forms]
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - GDI+, using in managed code
 - drawing [Windows Forms]
 ms.assetid: 362532c5-1a06-4257-bdc8-723461009ede
-ms.openlocfilehash: 10ad18d38c84f6e447601ab6c8bf1a953dabb7cf
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 58d8cde6aa102225cf9e3c342efe37218c818307
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76746399"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618406"
 ---
 # <a name="graphics-and-drawing-in-windows-forms"></a>Объекты Graphics и Drawing в Windows Forms
 Среда CLR использует расширенную реализацию Windows интерфейс графических устройств (GDI) с именем GDI+. С помощью GDI+ можно создавать графики, рисовать текст и манипулировать графическими изображениями как объектами. Интерфейс GDI+ обеспечивает производительность и простоту использования. GDI+ можно использовать для отрисовки графических изображений на Windows Forms и элементы управления. Хотя вы не можете использовать GDI+ непосредственно в веб-формах, можно отображать графические изображения с помощью серверного веб-элемента управления Image.  
@@ -21,7 +22,7 @@ ms.locfileid: "76746399"
   
  Если вы хотите немедленно приступить к работе, см. статью [Приступая к программированию графики](getting-started-with-graphics-programming.md). Она содержит разделы, посвященные использованию кода для рисования линий, фигур, текста и других элементов в формах Windows Forms.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
  [Общие сведения о графике](graphics-overview-windows-forms.md)  
  Общие сведения об управляемых классах, связанных с графикой.  
   
@@ -47,6 +48,6 @@ ms.locfileid: "76746399"
  <xref:System.Drawing.Printing>  
  Функции печати.  
   
-## <a name="related-sections"></a>См. также  
+## <a name="related-sections"></a>Связанные разделы  
  [Рисование и отрисовка пользовательского элемента управления](../controls/custom-control-painting-and-rendering.md)  
  Подробные сведения о способах написания кода для рисования элементов управления.

@@ -1,25 +1,26 @@
 ---
 title: Разработка пользовательских элементов управления
+description: Сведения о элементах управления Windows Form. В частности, вы научитесь объединять существующие элементы управления, расширять существующие элементы управления и создавать собственные пользовательские элементы управления.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - custom controls [Windows Forms], developing using code
 - Control class [Windows Forms], Windows Forms
 ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
-ms.openlocfilehash: 9dbc1c4530b3a0f4e579ca67c7ae88c1685222ea
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 12013496c9650489fdd7512206317000fc0ec78c
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76745998"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618380"
 ---
 # <a name="developing-custom-windows-forms-controls-with-the-net-framework"></a>Разработка пользовательских элементов управления Windows Forms в .NET Framework
 Элементы управления Windows Forms — это многократно используемые компоненты, которые инкапсулируют функциональность пользовательского интерфейса и используются в клиентских приложениях Windows. Windows Forms предоставляет не только множество готовых к использованию элементов управления, но и инфраструктуру для разработки собственных элементов управления. Вы можете объединять существующие элементы управления, расширять существующие или создавать пользовательские элементы управления. В этом разделе приводятся дополнительные сведения и образцы, которые помогут вам в разработке элементов управления Windows Forms.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
  [Общие сведения об использовании элементов управления в формах Windows Forms](overview-of-using-controls-in-windows-forms.md)  
  Освещены главные особенности использования элементов управления в приложениях Windows Forms.  
   
- [Разновидности пользовательских элементов управления](varieties-of-custom-controls.md)  
+ [Создание собственных элементов управления](varieties-of-custom-controls.md)  
  Описываются различные типы пользовательских элементов управления, которые можно создать с помощью пространства имен <xref:System.Windows.Forms?displayProperty=nameWithType>.  
   
  [Основы разработки элементов управления форм Windows Forms](windows-forms-control-development-basics.md)  
@@ -50,7 +51,7 @@ ms.locfileid: "76745998"
  <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>  
  Описывает данный класс и предоставляет ссылки на все его члены.  
   
-## <a name="related-sections"></a>См. также  
+## <a name="related-sections"></a>Связанные разделы  
  [Атрибуты времени разработки для компонентов](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/tk67c2t8(v=vs.120))  
  Перечислены атрибуты метаданных, которые нужно применить к компонентам и элементам управления, чтобы они корректно отображались в режиме разработки в визуальных конструкторах.  
   

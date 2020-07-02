@@ -8,12 +8,12 @@ helpviewer_keywords:
 - callback methods
 - callbacks
 ms.assetid: 48b55c60-495f-4089-9396-97f9122bba7c
-ms.openlocfilehash: ad7774fd197db80ce84b3b8a5baa4e9ee06b6cef
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4000944c3b913f71bc18462cea9062e9237ae53f
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289802"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619537"
 ---
 # <a name="events-and-callbacks"></a>События и обратные вызовы
 Обратные вызовы — это точки расширения, позволяющие платформе выполнять обратный вызов пользовательского кода через делегат. Эти делегаты обычно передаются в платформу с помощью параметра метода.
@@ -38,7 +38,7 @@ ms.locfileid: "84289802"
 
  ✔️ понять, что, вызвав делегат, вы выполняете произвольный код, который может иметь безопасность, правильность и последствия совместимости.
 
- *Части © 2005, 2009 Корпорация Майкрософт. Все права защищены.*
+ *Части &copy; 2005, 2009 Корпорация Майкрософт. Все права защищены.*
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
