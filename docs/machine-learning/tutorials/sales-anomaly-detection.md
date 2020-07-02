@@ -1,15 +1,15 @@
 ---
 title: Учебник. Обнаружение аномалий в данных о продажах товаров
 description: Узнайте, как создать приложение для обнаружения аномалий в данных о продажах товаров. В этом руководстве в Visual Studio 2019 с помощью C# создается консольное приложение .NET Core.
-ms.date: 11/15/2019
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-ms.openlocfilehash: 2fc9c552f5a00d59ea2fddcbcfcbd240cf2fc83c
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: b744b2597abceb91d2c36f596b79fb75c2492563
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84201995"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803291"
 ---
 # <a name="tutorial-detect-anomalies-in-product-sales-with-mlnet"></a>Учебник. Обнаружение аномалий в данных о продажах товаров с помощью ML.NET
 
@@ -43,6 +43,8 @@ ms.locfileid: "84201995"
 2. Создайте каталог с именем *Data* в проекте, чтобы сохранять файлы набора данных.
 
 3. Установите **пакет NuGet для Microsoft.ML**:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     В обозревателе решений щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**. Выберите nuget.org в качестве источника пакета, откройте вкладку "Обзор", выполните поиск по запросу **Microsoft.ML** и нажмите кнопку **Установить**. Нажмите кнопку **ОК** в диалоговом окне **Предварительный просмотр изменений**, а затем нажмите кнопку **Принимаю** в диалоговом окне **Принятие условий лицензионного соглашения**, если вы согласны с указанными условиями лицензионного соглашения для выбранных пакетов. Повторите эти действия для пакета **Microsoft.ML.TimeSeries**.
 

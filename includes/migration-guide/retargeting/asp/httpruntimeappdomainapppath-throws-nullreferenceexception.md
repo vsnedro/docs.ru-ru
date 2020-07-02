@@ -1,18 +1,30 @@
 ---
-ms.openlocfilehash: e7154919d6a09a04e650d5546feb2ae6c6cc912f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 986b647047aaa4a185c1403e96e499ae587bea98
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "67859197"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85617547"
 ---
 ### <a name="httpruntimeappdomainapppath-throws-a-nullreferenceexception"></a>HttpRuntime.AppDomainAppPath создает исключение NullReferenceException
 
-|   |   |
-|---|---|
-|Подробнее|В платформе .NET Framework 4.6.2 среда выполнения создает исключение <code>T:System.NullReferenceException</code> при получении значения <code>P:System.Web.HttpRuntime.AppDomainAppPath</code>, которое содержит нуль-символы. В .NET Framework 4.6.1 и более ранних версий среда выполнения создает исключение <code>T:System.ArgumentNullException</code>.|
-|Предложение|В ответ на это изменение можно выполнить одно из следующих действий:<ul><li>обрабатывайте <code>T:System.NullReferenceException</code>, если приложение работает на платформе .NET Framework 4.6.2;</li><li>обновите систему до версии .NET Framework 4.7, в которой восстановлено прежнее поведение, то есть создается исключение <code>T:System.ArgumentNullException</code>.</li></ul>|
-|Область|Пограничный случай|
-|Version|4.6.2|
-|Type|Изменение целевой платформы|
-|Затронутые API|<ul><li><xref:System.Web.HttpRuntime.AppDomainAppPath?displayProperty=nameWithType></li></ul>|
+#### <a name="details"></a>Подробнее
+
+В платформе .NET Framework 4.6.2 среда выполнения создает исключение `T:System.NullReferenceException` при получении значения `P:System.Web.HttpRuntime.AppDomainAppPath`, которое содержит нуль-символы. В .NET Framework 4.6.1 и более ранних версий среда выполнения создает исключение `T:System.ArgumentNullException`.
+
+#### <a name="suggestion"></a>Предложение
+
+В ответ на это изменение можно выполнить одно из следующих действий:
+
+- обрабатывайте `T:System.NullReferenceException`, если приложение работает на платформе .NET Framework 4.6.2;
+- обновите систему до версии .NET Framework 4.7, в которой восстановлено прежнее поведение, то есть создается исключение `T:System.ArgumentNullException`.
+
+| name    | Значение       |
+|:--------|:------------|
+| Область   | Пограничный случай        |
+| Version | 4.6.2       |
+| Type    | Изменение целевой платформы |
+
+#### <a name="affected-apis"></a>Затронутые API
+
+- <xref:System.Web.HttpRuntime.AppDomainAppPath?displayProperty=nameWithType>

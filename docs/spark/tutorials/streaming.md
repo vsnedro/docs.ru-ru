@@ -3,14 +3,14 @@ title: Руководство. Структурированная потоков
 description: Узнайте, как с помощью .NET для Apache Spark выполнять структурированную потоковую передачу Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 12/04/2019
+ms.date: 06/25/2020
 ms.topic: tutorial
-ms.openlocfilehash: 125ef834da8e42c99c8080a3d5414a7927ce7636
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5420fe081db1704d7af647e8c88826c1bcf614d9
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79186516"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85617847"
 ---
 # <a name="tutorial-structured-streaming-with-net-for-apache-spark"></a>Учебник. Структурированная потоковая передача с помощью .NET для Apache Spark
 
@@ -23,6 +23,8 @@ ms.locfileid: "79186516"
 > * создать и выполнить приложение .NET для Apache Spark;
 > * создать поток данных с помощью netcat;
 > * применить пользовательские функции и SparkSQL для анализа потоковых данных.
+
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
 

@@ -1,18 +1,37 @@
 ---
-ms.openlocfilehash: c10d617e07ca2fa0239298d449d93cf833b83fce
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: b88f7d4a17f885b687d99ab9410a56039e176080
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81275445"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85614640"
 ---
 ### <a name="calls-to-claimsidentity-constructors"></a>Вызовы к конструкторам ClaimsIdentity
 
-|   |   |
-|---|---|
-|Подробнее|Начиная с .NET Framework 4.6.2 конструкторы <xref:System.Security.Claims.ClaimsIdentity> с параметром <xref:System.Security.Principal.IIdentity?displayProperty=name> иначе задают свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=name>. Если аргумент <xref:System.Security.Principal.IIdentity?displayProperty=name> является объектом <xref:System.Security.Claims.ClaimsIdentity>, а свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=name> этого объекта <xref:System.Security.Claims.ClaimsIdentity> не равно <code>null</code>, свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=name> присоединяется с помощью метода <xref:System.Security.Claims.ClaimsIdentity.Clone>. В Framework 4.6.1 и более ранних версиях свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=name> прикреплено как существующая ссылка. В результате этого изменения, начиная с .NET Framework 4.6.2, свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=name> нового объекта <xref:System.Security.Claims.ClaimsIdentity> не равно свойству <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=name> аргумента конструктора <xref:System.Security.Principal.IIdentity?displayProperty=name>. В .NET Framework 4.6.1 и более ранних версиях они равны.|
-|Предложение|Если такое поведение нежелательно, можно восстановить прежнее поведение, задав переключателю <code>Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity</code> в файле конфигурации приложения значение <code>true</code>. Для этого требуется добавить следующую информацию в раздел <code>&lt;runtime&gt;</code> файла web.config:<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>|
-|Область|Пограничный случай|
-|Version|4.6.2|
-|Type|Изменение целевой платформы|
-|Затронутые API|<ul><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity)></li><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})></li><li><xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)></li></ul>|
+#### <a name="details"></a>Подробнее
+
+Начиная с .NET Framework 4.6.2 конструкторы <xref:System.Security.Claims.ClaimsIdentity> с параметром <xref:System.Security.Principal.IIdentity?displayProperty=fullName> иначе задают свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=fullName>. Если аргумент <xref:System.Security.Principal.IIdentity?displayProperty=fullName> является объектом <xref:System.Security.Claims.ClaimsIdentity>, а свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=fullName> этого объекта <xref:System.Security.Claims.ClaimsIdentity> не равно `null`, свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=fullName> присоединяется с помощью метода <xref:System.Security.Claims.ClaimsIdentity.Clone>. В Framework 4.6.1 и более ранних версиях свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=fullName> прикреплено как существующая ссылка. В результате этого изменения, начиная с .NET Framework 4.6.2, свойство <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=fullName> нового объекта <xref:System.Security.Claims.ClaimsIdentity> не равно свойству <xref:System.Security.Claims.ClaimsIdentity.Actor?displayProperty=fullName> аргумента конструктора <xref:System.Security.Principal.IIdentity?displayProperty=fullName>. В .NET Framework 4.6.1 и более ранних версиях они равны.
+
+#### <a name="suggestion"></a>Предложение
+
+Если такое поведение нежелательно, можно восстановить прежнее поведение, задав переключателю `Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity` в файле конфигурации приложения значение `true`. Для этого требуется добавить следующую информацию в раздел `<runtime>` файла web.config:
+
+```xml
+<configuration>
+  <runtime>
+    <AppContextSwitchOverrides value="Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity=true" />
+  </runtime>
+</configuration>
+```
+
+| name    | Значение       |
+|:--------|:------------|
+| Область   | Пограничный случай        |
+| Version | 4.6.2       |
+| Type    | Изменение целевой платформы |
+
+#### <a name="affected-apis"></a>Затронутые API
+
+- <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity)>
+- <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})>
+- <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Security.Principal.IIdentity,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.String,System.String,System.String)>

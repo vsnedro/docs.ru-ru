@@ -1,19 +1,21 @@
 ---
 title: Отправка задания .NET для Apache Spark в Databricks
 description: Узнайте, как отправить задание .NET для Apache Spark в Databricks с помощью spark-submit и действия "Указание файла JAR".
-ms.date: 05/11/2020
+ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: a158110854f80921740954403a8fd51b30cbcb12
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: bebd170a689d8ae56aa6c55486d70354da2437ea
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379651"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85617773"
 ---
 # <a name="submit-a-net-for-apache-spark-job-to-databricks"></a>Отправка задания .NET для Apache Spark в Databricks
 
 Вы можете запустить .NET для заданий Apache Spark в кластерах Databricks, но это не будет доступным готовым решением. Есть два способа развертывания задания .NET для Apache Spark в Databricks: с помощью команды `spark-submit` и действия "Указание файла JAR".
+
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="deploy-using-spark-submit"></a>Развертывание с помощью spark-submit
 

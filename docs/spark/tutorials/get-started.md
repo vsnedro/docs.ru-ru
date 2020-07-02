@@ -1,15 +1,15 @@
 ---
 title: Начало работы с .NET для Apache Spark
 description: Узнайте, как запустить приложение .NET для Apache Spark, используя .NET Core на Windows, macOS и Ubuntu.
-ms.date: 01/31/2020
+ms.date: 06/25/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 7375c385245a05d7dc29d5df89d875bf6cb4141a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: be150bcef0029f69136e21c35791c863220af244
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79187544"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85617656"
 ---
 # <a name="tutorial-get-started-with-net-for-apache-spark"></a>Учебник. Начало работы с .NET для Apache Spark
 
@@ -22,6 +22,8 @@ ms.locfileid: "79187544"
 > * подготовить среду под .NET для Apache Spark;
 > * написать свое первое приложение .NET для Apache Spark;
 > * скомпилировать и запустить простое приложение .NET для Apache Spark.
+
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="prepare-your-environment"></a>Подготовка среды
 

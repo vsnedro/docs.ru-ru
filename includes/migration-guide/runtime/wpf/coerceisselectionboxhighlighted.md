@@ -1,18 +1,27 @@
 ---
-ms.openlocfilehash: d9e1cd8d346a48fafc89367bddf923167a620889
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4c8e597310ec0b02edbf993709f931a6093b6285
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "67857491"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621823"
 ---
 ### <a name="coerceisselectionboxhighlighted"></a>CoerceIsSelectionBoxHighlighted
 
-|   |   |
-|---|---|
-|Подробнее|Некоторые последовательности действий, в которых используются <xref:System.Windows.Controls.ComboBox?displayProperty=name> и соответствующий источник данных, могут привести к исключению <xref:System.NullReferenceException?displayProperty=name>.|
-|Предложение|По возможности выполните обновление до .NET Framework 4.6.2.|
-|Область|Дополнительный номер|
+#### <a name="details"></a>Подробнее
+
+Некоторые последовательности действий, в которых используются <xref:System.Windows.Controls.ComboBox?displayProperty=fullName> и соответствующий источник данных, могут привести к исключению <xref:System.NullReferenceException?displayProperty=fullName>.
+
+#### <a name="suggestion"></a>Предложение
+
+По возможности выполните обновление до .NET Framework 4.6.2.
+
+| name    | Значение       |
+|:--------|:------------|
+| Область   |Дополнительный номер|
 |Version|4.6|
-|Type|Параметры выполнения|
-|Затронутые API|<ul><li><xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=nameWithType></li></ul>|
+|Type|Среда выполнения
+
+#### <a name="affected-apis"></a>Затронутые API
+
+-<xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=nameWithType></li></ul>|

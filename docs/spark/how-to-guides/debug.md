@@ -1,19 +1,21 @@
 ---
 title: Отладка приложения .NET для Apache Spark в Windows
 description: Узнайте, как отлаживать приложения .NET для Apache Spark в Windows.
-ms.date: 01/29/2020
+ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: dac6aed1f7faba7f07b722a6dac0da930ab9ec66
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9209d5bdec6dd85f6d21a502fb07204effef1934
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79185811"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85617760"
 ---
 # <a name="debug-a-net-for-apache-spark-application"></a>Отладка приложения .NET для Apache Spark
 
 Это практическое руководство содержит сведения о том, как отлаживать приложения .NET для Apache Spark в Windows.
+
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="debug-your-application"></a>Отладка приложения
 
@@ -81,7 +83,7 @@ spark-submit \
 
 После выполнения команды подключите отладчик к выполняющемуся процессу с помощью [Intellij](https://www.jetbrains.com/help/idea/attaching-to-local-process.html).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * [Начало работы с .NET для Apache Spark](../tutorials/get-started.md)
 * [Развертывание приложения .NET для Apache Spark в Azure HDInsight](../tutorials/hdinsight-deployment.md)

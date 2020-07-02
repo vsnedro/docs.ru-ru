@@ -1,7 +1,7 @@
 ---
 title: Рекомендации по использованию регулярных выражений в .NET
 description: Узнайте, как создавать эффективные регулярные выражения в .NET.
-ms.date: 03/30/2017
+ms.date: 06/30/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -10,18 +10,20 @@ helpviewer_keywords:
 - .NET Framework regular expressions, best practices
 - regular expressions, best practices
 ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
-ms.openlocfilehash: ecfe0cca59b50da9231709dbd9a2de9b56391d4f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 30d4a8f6ddc4ae1f83f5c0802e872661cbe6c6f1
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291062"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85802933"
 ---
 # <a name="best-practices-for-regular-expressions-in-net"></a>Рекомендации по использованию регулярных выражений в .NET
 
 Обработчик регулярных выражений в .NET — мощное средство, обрабатывающее текст на основе совпадения шаблонов, а не сравнивающее непосредственно текст. В большинстве случаев сопоставление шаблонов выполняется быстро и эффективно. Однако в некоторых случаях обработчик регулярных выражений может работать очень медленно. В крайних случаях он даже может перестать отвечать, обрабатывая относительно небольшой объем входной информации в течение часов или даже дней.
 
 В этом разделе приведены некоторые рекомендации для разработчиков по обеспечению оптимальной производительности регулярных выражений.
+
+[!INCLUDE [regex](../../../includes/regex.md)]
 
 ## <a name="consider-the-input-source"></a>Учет источника входных данных
 

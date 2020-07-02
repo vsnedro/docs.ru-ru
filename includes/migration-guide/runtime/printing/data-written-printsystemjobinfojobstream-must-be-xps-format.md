@@ -1,18 +1,27 @@
 ---
-ms.openlocfilehash: 74f00821f2304664729faa8de2f0163c6611f513
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: a007022bf32ffe76861f6f9016a7edace17b0f61
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "66379571"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85620643"
 ---
 ### <a name="data-written-to-printsystemjobinfojobstream-must-be-in-xps-format"></a>Данные, записанные в PrintSystemJobInfo.JobStream, должны иметь формат XPS
 
-|   |   |
-|---|---|
-|Подробные сведения|Свойство <xref:System.Printing.PrintSystemJobInfo.JobStream> предоставляет поток задания печати. Пользователь может отправить необработанные данные в компоненты печати базовой операционной системы путем записи в этот поток. Начиная с .NET Framework 4.5 в Windows 8 и более поздних версиях операционной системы Windows данные, которые записываются в этот поток, должны быть в формате XPS, как поток пакета.|
-|Предложение|Для вывода содержимого печати выполните одно из следующих действий.<ul><li>Используйте класс <xref:System.Windows.Xps.XpsDocumentWriter> класса для вывода содержимого печати. Это рекомендуемый вариант.</li><li>Убедитесь, что данные, отправляемые в поток, возвращенный свойством <xref:System.Printing.PrintSystemJobInfo.JobStream>, находятся в формате XPS, как поток пакета.</li></ul>|
-|Область|Дополнительный номер|
-|Версия|4.5|
-|Тип|Среда выполнения|
-|Затронутые API|<ul><li><xref:System.Printing.PrintSystemJobInfo.JobStream?displayProperty=nameWithType></li></ul>|
+#### <a name="details"></a>Подробнее
+
+Свойство <xref:System.Printing.PrintSystemJobInfo.JobStream> предоставляет поток задания печати. Пользователь может отправить необработанные данные в компоненты печати базовой операционной системы путем записи в этот поток. Начиная с .NET Framework 4.5 в Windows 8 и более поздних версиях операционной системы Windows данные, которые записываются в этот поток, должны быть в формате XPS, как поток пакета.
+
+#### <a name="suggestion"></a>Предложение
+
+Для вывода содержимого печати выполните одно из следующих действий.<ul><li>Используйте класс <xref:System.Windows.Xps.XpsDocumentWriter> класса для вывода содержимого печати. Это рекомендуемый вариант.</li><li>Убедитесь, что данные, отправляемые в поток, возвращенный свойством <xref:System.Printing.PrintSystemJobInfo.JobStream>, находятся в формате XPS, как поток пакета.</li></ul>
+
+| name    | Значение       |
+|:--------|:------------|
+| Область   |Дополнительный номер|
+|Version|4.5|
+|Type|Среда выполнения
+
+#### <a name="affected-apis"></a>Затронутые API
+
+-<xref:System.Printing.PrintSystemJobInfo.JobStream?displayProperty=nameWithType></li></ul>|

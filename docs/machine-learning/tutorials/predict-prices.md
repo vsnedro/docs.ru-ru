@@ -1,15 +1,15 @@
 ---
 title: Учебник. Прогнозирование цен с помощью регрессии
 description: В этом учебнике описано, как с помощью ML.NET создать модель регрессии для прогнозирования цен, в частности платы за проезд в такси по Нью-Йорку.
-ms.date: 09/30/2019
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-ms.openlocfilehash: 91429383341cf718d38e636bd1d71dc25d30d20d
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: 0a8ab9ca07d2d83f41b40a3f5782e8e7e201976f
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607975"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803239"
 ---
 # <a name="tutorial-predict-prices-using-regression-with-mlnet"></a>Учебник. Прогнозирование цен с помощью регрессии с ML.NET
 
@@ -36,6 +36,8 @@ ms.locfileid: "81607975"
 1. Создайте каталог с именем *Data* в проекте для хранения набора данных и файлов модели.
 
 1. Установите пакет NuGet для **Microsoft.ML**:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     В **обозревателе решений** щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**. Выберите в качестве источника пакета "nuget.org", откройте вкладку **Обзор**, найдите **Microsoft.ML**, выберите пакет в списке и нажмите кнопку **Установить**. Нажмите кнопку **ОК** в диалоговом окне **Предварительный просмотр изменений**, а затем нажмите кнопку **Принимаю** в диалоговом окне **Принятие условий лицензионного соглашения**, если вы согласны с указанными условиями лицензионного соглашения для выбранных пакетов. Сделайте то же самое для пакета **Microsoft.ML.FastTree** в NuGet.
 

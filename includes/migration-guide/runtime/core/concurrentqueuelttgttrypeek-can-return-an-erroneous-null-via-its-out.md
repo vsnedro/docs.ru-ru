@@ -1,18 +1,27 @@
 ---
-ms.openlocfilehash: a93fbbd787aa50f080337a6170cf8f56d0d24e31
-ms.sourcegitcommit: 0be8a279af6d8a43e03141e349d3efd5d35f8767
+ms.openlocfilehash: 02a15f6b9c02002b60c568b9e1d871af49744092
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59804913"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85622145"
 ---
-### <a name="concurrentqueuettrypeek-can-return-an-erroneous-null-via-its-out-parameter"></a>ConcurrentQueue\<T>.TryPeek может возвращать ошибочные значения NULL в выходном параметре
+### <a name="concurrentqueuelttgttrypeek-can-return-an-erroneous-null-via-its-out-parameter"></a>ConcurrentQueue&lt;T&gt;.TryPeek может возвращать ошибочные значения NULL в выходном параметре
 
-|   |   |
-|---|---|
-|Подробные сведения|В некоторых сценариях с несколькими потоками <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=name> может возвращать значение true, но заполнять выходной параметр значением NULL (вместо правильного значения).|
-|Предложение|Эта проблема решена в EntityFramework 4.5.1. Чтобы устранить проблему, выполните обновление до этой версии платформы.|
-|Область|Значительно|
-|Версия|4.5|
-|Тип|Среда выполнения|
-|Затронутые API|<ul><li><xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=nameWithType></li></ul>|
+#### <a name="details"></a>Подробнее
+
+В некоторых сценариях с несколькими потоками <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=fullName> может возвращать значение true, но заполнять выходной параметр значением NULL (вместо правильного значения).
+
+#### <a name="suggestion"></a>Предложение
+
+Эта проблема решена в EntityFramework 4.5.1. Чтобы устранить проблему, выполните обновление до этой версии платформы.
+
+| name    | Значение       |
+|:--------|:------------|
+| Область   |Значительно|
+|Version|4.5|
+|Type|Среда выполнения
+
+#### <a name="affected-apis"></a>Затронутые API
+
+-<xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=nameWithType></li></ul>|

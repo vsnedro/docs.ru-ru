@@ -2,15 +2,15 @@
 title: Учебник. Создание приложения для рекомендации фильмов — матричная факторизация
 description: В этом руководстве показано, как построить приложение для рекомендации фильмов с помощью ML.NET в консольном проекте .NET Core. Используется C# и Visual Studio 2019.
 author: briacht
-ms.date: 09/30/2019
+ms.date: 06/30/2020
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
-ms.openlocfilehash: a1d7ef6226580fd3172b5714f9d7358298ba6668
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: 5445a255d32f824b1e451c828f1d46b3e1c16001
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81608001"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803382"
 ---
 # <a name="tutorial-build-a-movie-recommender-using-matrix-factorization-with-mlnet"></a>Учебник. Создание приложения для рекомендации фильмов с использованием матричной факторизации и ML.NET
 
@@ -55,6 +55,8 @@ ms.locfileid: "81608001"
     В **обозревателе решений** щелкните проект правой кнопкой мыши и выберите **Добавить** > **Новая папка**. Введите имя папки Data и нажмите клавишу "ВВОД".
 
 3. Установите пакеты NuGet **Microsoft.ML** и **Microsoft.ML.Recommender**:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     В **обозревателе решений** щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**. Выберите в качестве источника пакета "nuget.org", откройте вкладку **Обзор**, найдите **Microsoft.ML**, выберите пакет в списке и нажмите кнопку **Установить**. Нажмите кнопку **ОК** в диалоговом окне **Предварительный просмотр изменений**, а затем нажмите кнопку **Принимаю** в диалоговом окне **Принятие условий лицензионного соглашения**, если вы согласны с указанными условиями лицензионного соглашения для выбранных пакетов. Повторите эти действия для пакета **Microsoft.ML.Recommender**.
 
