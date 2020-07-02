@@ -1,5 +1,6 @@
 ---
 title: openGenericCERCall MDA
+description: См. раздел помощник по отладке управляемого кода Опенженерикцеркалл, который может активироваться, если код CER не выполняется при прерывании потока или при выгрузке домена приложения.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - MDAs (managed debugging assistants), CER calls
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - managed debugging assistants (MDAs), CER calls
 - generics [.NET Framework], open generic CER calls
 ms.assetid: da3e4ff3-2e67-4668-9720-fa776c97407e
-ms.openlocfilehash: 7492a4c0547680a6ace85a5f7c98567770f5575a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4df33b0cdf9759edec47f02b3feb671d03284ec8
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181784"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803941"
 ---
 # <a name="opengenericcercall-mda"></a>openGenericCERCall MDA
 
@@ -29,7 +30,7 @@ ms.locfileid: "79181784"
 
 Во время JIT-компиляции создание экземпляра типа ссылки на объект носит исключительно репрезентативный характер, поскольку полученный код будет общим, а каждая переменная типа ссылки на объект может быть любого типа ссылки на объект. Это позволяет предотвратить заблаговременную подготовку некоторых ресурсов времени выполнения.
 
-В частности, методы с переменными универсального типа могут отложенным образом выделять ресурсы в фоновом режиме. Это записи универсального словаря. Например, для `List<T> list = new List<T>();` оператора, где `T` является общей переменной типа, время выполнения должно быть изношено и, `List<Object>, List<String>`возможно, создать точное мгновенное во время выполнения, например, и так далее. Этот процесс может завершаться сбоем по целому ряду причин, которые разработчик не может контролировать, например из-за нехватки памяти.
+В частности, методы с переменными универсального типа могут отложенным образом выделять ресурсы в фоновом режиме. Это записи универсального словаря. Например, для инструкции, `List<T> list = new List<T>();` где `T` является переменной универсального типа, среда выполнения должна выполнять поиск и, возможно, создать точное создание экземпляра во время выполнения, например, `List<Object>, List<String>` и т. д. Этот процесс может завершаться сбоем по целому ряду причин, которые разработчик не может контролировать, например из-за нехватки памяти.
 
 Этот помощник по отладке управляемого кода следует активировать только во время JIT-компиляции, а не при создании точного экземпляра.
 
@@ -43,9 +44,9 @@ ms.locfileid: "79181784"
 
 Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.
 
-## <a name="output"></a>Выходные данные
+## <a name="output"></a>Вывод
 
-Ниже приводится пример вывода из этого MDA:
+Ниже приведен пример выходных данных из этого помощника по отладке управляемого кода.
   
  ```output
  Method 'GenericMethodWithCer', which contains at least one constrained execution region, cannot be prepared automatically since it has one or more unbound generic type parameters.
@@ -54,7 +55,7 @@ ms.locfileid: "79181784"
  declaringType name="OpenGenericCERCall"
  ```
 
-## <a name="configuration"></a>Конфигурация
+## <a name="configuration"></a>Параметр Configuration
 
 ```xml
 <mdaConfig>
@@ -110,8 +111,8 @@ class MyClass
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>
 - <xref:System.Runtime.ConstrainedExecution>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
