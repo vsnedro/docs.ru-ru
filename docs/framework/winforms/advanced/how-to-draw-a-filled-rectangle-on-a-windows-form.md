@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Рисование заполненного прямоугольника в Windows Forms
+description: Узнайте, как программным путем нарисовать закрашенный прямоугольник в форме Windows. Также Узнайте о компиляции кода.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,15 +13,15 @@ helpviewer_keywords:
 - rectangles [Windows Forms], drawing
 - drawing rectangles
 ms.assetid: d656a93c-987d-4809-aafd-493fe17450f0
-ms.openlocfilehash: e551eacf0924c9bffa802fb5d2ba8bae7c1c3a98
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 0ad8ec97000e29b2194a9eda713aa43d5557b44c
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62004306"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621643"
 ---
 # <a name="how-to-draw-a-filled-rectangle-on-a-windows-form"></a>Практическое руководство. Рисование заполненного прямоугольника в Windows Forms
-В этом примере рисование заполненного прямоугольника в форме.  
+В этом примере на форме рисуется закрашенный прямоугольник.  
   
 ## <a name="example"></a>Пример  
  [!code-cpp[System.Drawing.ConceptualHowTos#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/cpp/form1.cpp#2)]
@@ -28,10 +29,10 @@ ms.locfileid: "62004306"
  [!code-vb[System.Drawing.ConceptualHowTos#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/VB/form1.vb#2)]  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
- Этот метод нельзя вызывать <xref:System.Windows.Forms.Form.Load> обработчик событий. Если скрыта другой формой или изменении размера формы, рисунок перерисовываться не будет. Чтобы сделать автоматическую перерисовку, нужно переопределить <xref:System.Windows.Forms.Control.OnPaint%2A> метод.  
+ Этот метод нельзя вызвать в <xref:System.Windows.Forms.Form.Load> обработчике событий. Нарисованное содержимое не будет перерисовано при изменении размера формы или его скрытии другой формой. Чтобы сделать содержимое автоматически перерисовкой, необходимо переопределить <xref:System.Windows.Forms.Control.OnPaint%2A> метод.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
- Следует всегда вызывать <xref:System.IDisposable.Dispose%2A> на любые объекты, которые потребляют системные ресурсы, такие как <xref:System.Drawing.Brush> и <xref:System.Drawing.Graphics> объектов.  
+ Всегда следует вызывать <xref:System.IDisposable.Dispose%2A> для всех объектов, использующих системные ресурсы, например <xref:System.Drawing.Brush> <xref:System.Drawing.Graphics> объекты и.  
   
 ## <a name="see-also"></a>См. также
 

@@ -1,5 +1,6 @@
 ---
 title: Переключатели трассировки
+description: Изучите параметры трассировки, которые позволяют включать, отключать и фильтровать выходные данные трассировки. .NET предоставляет классы BooleanSwitch, TraceSwitch и SourceSwitch.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - trace switches
 - trace switches, creating custom
 ms.assetid: 8ab913aa-f400-4406-9436-f45bc6e54fbe
-ms.openlocfilehash: a8ce4ee5de4d330b88e98e85cce4b6547e969613
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 29de46afa2a96dd7011cec40f4f76e7bfb8ee454
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181721"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803540"
 ---
 # <a name="trace-switches"></a>Переключатели трассировки
 Переключатели трассировки позволяют включать, отключать и фильтровать выходные данные трассировки. Они являются объектами, которые существуют в коде и могут настраиваться извне с помощью файла конфигурации. В .NET Framework существует три типа переключателей трассировки: класс <xref:System.Diagnostics.BooleanSwitch> , класс <xref:System.Diagnostics.TraceSwitch> и класс <xref:System.Diagnostics.SourceSwitch> . Класс <xref:System.Diagnostics.BooleanSwitch> действует как переключатель, включая или отключая различные операторы трассировки. Классы <xref:System.Diagnostics.TraceSwitch> и <xref:System.Diagnostics.SourceSwitch> позволяют включать переключатель трассировки для определенного уровня трассировки, чтобы отображались сообщения <xref:System.Diagnostics.Trace> или <xref:System.Diagnostics.TraceSource> , заданные для данного уровня и всех уровней ниже него. Если этот переключатель отключить, то сообщения трассировки не будут отображаться. Все эти классы являются производными от абстрактного (**MustInherit**) класса **Switch**, как и следует переключателям, разработанным пользователями.  
@@ -47,7 +48,7 @@ ms.locfileid: "79181721"
   
 |Перечисляемое значение|Целочисленное значение|Тип отображаемого сообщения (или записываемого в указанный целевой объект)|  
 |----------------------|-------------------|---------------------------------------------------------------------------|  
-|Выкл.|0|None|  
+|Выключено|0|Отсутствуют|  
 |Error|1|Только сообщения об ошибках|  
 |Предупреждение|2|Предупреждающие сообщения и сообщения об ошибках|  
 |Сведения|3|Информационные сообщения, предупреждения и сообщения об ошибках|  
@@ -81,8 +82,8 @@ MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());
 ## <a name="developer-defined-switches"></a>Переключатели, определяемые разработчиком  
  Помимо предоставления **BooleanSwitch** и **TraceSwitch**вы можете определить свои собственные переключатели путем наследования от класса **Switch** и переопределения методов базового класса настраиваемыми методами. Дополнительные сведения о создании определенных разработчиками переключателей см. в описании класса <xref:System.Diagnostics.Switch> в справочнике по .NET Framework.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Прослушиватели трассировки](trace-listeners.md)
 - [Практическое руководство. Добавление операторов трассировки в код приложения](how-to-add-trace-statements-to-application-code.md)
-- [Трассировка и оборудование приложений](tracing-and-instrumenting-applications.md)
+- [Трассировка и инструментирование приложений](tracing-and-instrumenting-applications.md)

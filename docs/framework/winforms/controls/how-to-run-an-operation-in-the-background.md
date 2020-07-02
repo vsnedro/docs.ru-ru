@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Фоновое выполнение операции
+description: Узнайте, как использовать класс BackgroundWorker для выполнения длительной операции Windows Forms в фоновом режиме.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - threading [Windows Forms], background operations
 - background operations
 ms.assetid: 5b56e2aa-dc05-444f-930c-2d7b23f9ad5b
-ms.openlocfilehash: 77f75a7eb1d7cc536df7110ef55727fbdf789f23
-ms.sourcegitcommit: c7a7e1468bf0fa7f7065de951d60dfc8d5ba89f5
+ms.openlocfilehash: 6b2a97f5acf1e906dfe141aee62e99a4e50dca9f
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65591610"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621578"
 ---
 # <a name="how-to-run-an-operation-in-the-background"></a>Практическое руководство. Фоновое выполнение операции
 Если какая-либо операция будет выполняться в течение долгого времени и при этом требуется не допустить задержек в работе пользовательского интерфейса, можно использовать класс <xref:System.ComponentModel.BackgroundWorker> для выполнения операции в другом потоке.  
@@ -27,7 +28,7 @@ ms.locfileid: "65591610"
   
  В Visual Studio предусмотрена расширенная поддержка данной задачи.  
   
- Также см. в разделе [Пошаговое руководство: Выполнение операции в фоновом режиме](walkthrough-running-an-operation-in-the-background.md).  
+ См. также раздел [Пошаговое руководство. Фоновое выполнение операции](walkthrough-running-an-operation-in-the-background.md).  
   
 ## <a name="example"></a>Пример  
  [!code-csharp[System.ComponentModel.BackgroundWorker.Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.Example/CS/Form1.cs#1)]

@@ -1,5 +1,6 @@
 ---
 title: Помощник по отладке управляемого кода raceOnRCWCleanup
+description: Ознакомьтесь с помощником по отладке управляемого кода Рацеонрквклеануп (MDA), который активируется, если RCW используется в другом потоке или в стеке освобождения потоков в .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - RCW
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - RaceOnRCWCleanup MDA
 - runtime callable wrappers
 ms.assetid: bee1e9b1-50a8-4c89-9cd9-7dd6b2458187
-ms.openlocfilehash: edf1fe3ee5be631f7f3c42f4a6cdb17f1be722cf
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: e86ef96bebb648c7927ae5fec8b68fc4429b268b
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77216194"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803655"
 ---
 # <a name="raceonrcwcleanup-mda"></a>Помощник по отладке управляемого кода raceOnRCWCleanup
 Помощник по отладке управляемого кода (MDA) `raceOnRCWCleanup` активируется, когда среда CLR обнаруживает, что используется [вызываемая оболочка времени выполнения](../../standard/native-interop/runtime-callable-wrapper.md) (RCW), когда выполняется вызов освобождения с помощью команды, такой как метод <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>.  
@@ -34,7 +35,7 @@ ms.locfileid: "77216194"
 ## <a name="output"></a>Вывод  
  Сообщение, описывающее ошибку.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -44,8 +45,8 @@ ms.locfileid: "77216194"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Маршалинг взаимодействия](../interop/interop-marshaling.md)

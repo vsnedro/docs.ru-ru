@@ -1,5 +1,6 @@
 ---
 title: pInvokeStackImbalance MDA
+description: Ознакомьтесь с MDA Пинвокестаккимбаланце, который может быть активирован во время нарушения прав доступа или повреждения памяти при вызове или после вызова неуправляемого кода.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - signatures, platform invoke
@@ -10,21 +11,21 @@ helpviewer_keywords:
 - PInvokeStackImbalance MDA
 - managed debugging assistants (MDAs), platform invoke
 ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
-ms.openlocfilehash: c789e8cb409bd4c59c91d6b646efe428afe7c86d
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 89afd3fce3f2a8bffe88d45991ceeb59fc5e5b76
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217245"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803668"
 ---
 # <a name="pinvokestackimbalance-mda"></a>PInvokeStackImbalance MDA
 
-Помощник по отладке управляемого кода (MDA) `PInvokeStackImbalance` активируется, когда среда CLR обнаруживает, что глубина стека после вызова неуправляемого кода не соответствует ожидаемой глубине стека, учитывая соглашение о вызовах, указанное в атрибуте <xref:System.Runtime.InteropServices.DllImportAttribute>, и объявление параметров в управляемой сигнатуре.
+`PInvokeStackImbalance`Помощник по отладке управляемого кода (MDA) активируется, когда среда CLR обнаруживает, что глубина стека после вызова неуправляемого кода не совпадает с ожидаемой глубиной стека, учитывая соглашение о вызовах, указанное в <xref:System.Runtime.InteropServices.DllImportAttribute> атрибуте, и объявление параметров в управляемой сигнатуре.
 
 MDA `PInvokeStackImbalance` реализован только для 32-разрядных платформ x86.
 
 > [!NOTE]
-> По умолчанию `PInvokeStackImbalance` MDA отключен. В Visual Studio 2017 и более поздних версиях `PInvokeStackImbalance` MDA отображается в списке **помощники по отладке управляемого** кода в диалоговом окне **параметры исключений** (которое отображается при выборе параметра **Отладка** > **Windows** > **параметры исключения**). Однако установка или снятие флажка **прерывать при возникновении** не включает и не отключает MDA. Он только определяет, создает ли Visual Studio исключение при активации MDA.
+> По `PInvokeStackImbalance` умолчанию MDA отключен. В Visual Studio 2017 и более поздних версиях `PInvokeStackImbalance` MDA отображается в списке **помощники по отладке управляемого** кода в диалоговом окне **параметры исключений** (которое отображается при выборе параметра **Отладка**  >  **Windows**  >  **параметров исключений**Windows). Однако установка или снятие флажка **прерывать при возникновении** не включает и не отключает MDA. Он только определяет, создает ли Visual Studio исключение при активации MDA.
 
 ## <a name="symptoms"></a>Симптомы
 
@@ -48,7 +49,7 @@ MDA `PInvokeStackImbalance` реализован только для 32-разр
 
 **Вызов функции PInvoke "SampleMethod" не сбалансирован стек. Скорее всего, это связано с тем, что управляемая сигнатура PInvoke не соответствует неуправляемой сигнатуре целевого объекта. Убедитесь, что соглашение о вызовах и параметры сигнатуры PInvoke соответствуют целевой неуправляемой подписи.**
 
-## <a name="configuration"></a>Конфигурация
+## <a name="configuration"></a>Параметр Configuration
 
 ```xml
 <mdaConfig>
@@ -58,8 +59,8 @@ MDA `PInvokeStackImbalance` реализован только для 32-разр
 </mdaConfig>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Маршалинг взаимодействия](../interop/interop-marshaling.md)

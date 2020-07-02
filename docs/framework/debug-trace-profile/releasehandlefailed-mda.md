@@ -1,5 +1,6 @@
 ---
 title: releaseHandleFailed MDA
+description: Ознакомьтесь с помощником по отладке управляемого кода releaseHandleFailed (MDA), который может быть активирован из-за утечки ресурсов или памяти в .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - managed debugging assistants (MDAs), handles
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SafeHandle class, run-time errors
 - MDAs (managed debugging assistants), handles
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
-ms.openlocfilehash: 268acb01a6777315829378e6fd8c06c46d3136d2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 167a304b4571aa35f758a2054caf6ae1c60a3c60
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181751"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803642"
 ---
 # <a name="releasehandlefailed-mda"></a>releaseHandleFailed MDA
 Помощник по отладке управляемого кода (MDA) `releaseHandleFailed` активируется для уведомления разработчиков, когда метод <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> класса, производного от <xref:System.Runtime.InteropServices.SafeHandle> или <xref:System.Runtime.InteropServices.CriticalHandle>, возвращает значение `false`.  
@@ -50,7 +51,7 @@ ms.locfileid: "79181751"
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
  Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.  
   
-## <a name="output"></a>Выходные данные  
+## <a name="output"></a>Вывод  
  Сообщение, указывающее, что <xref:System.Runtime.InteropServices.SafeHandle> или <xref:System.Runtime.InteropServices.CriticalHandle> не удалось должным образом освободить дескриптор. Пример:  
   
 ```output
@@ -61,7 +62,7 @@ another means (such as extracting the handle using DangerousGetHandle
 and closing it directly or building another SafeHandle around it."  
 ```  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -88,8 +89,8 @@ bool ReleaseHandle()
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Маршалинг взаимодействия](../interop/interop-marshaling.md)

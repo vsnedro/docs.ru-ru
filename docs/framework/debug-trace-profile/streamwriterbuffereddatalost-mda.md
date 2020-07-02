@@ -1,5 +1,6 @@
 ---
 title: streamWriterBufferedDataLost MDA
+description: Ознакомьтесь с помощником по отладке управляемого кода Стреамвритербуффереддаталост (MDA), который может активироваться, если StreamWriter не записывает последние 1 – 4 КБ данных в файл.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - StreamWriter class, data buffering problems
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - data buffering problems
 - streamWriterBufferedDataLost MDA
 ms.assetid: 6e5c07be-bc5b-437a-8398-8779e23126ab
-ms.openlocfilehash: 18b2a5a95756ed125d26b2846c0b1ddc320463ea
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0c10ea6bb9dc0aaafa2ac1798696579af7592895
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181742"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803486"
 ---
 # <a name="streamwriterbuffereddatalost-mda"></a>streamWriterBufferedDataLost MDA
 Помощник по отладке управляемого кода (MDA) `streamWriterBufferedDataLost` активируется при записи в <xref:System.IO.StreamWriter>, если методы <xref:System.IO.StreamWriter.Flush%2A> или <xref:System.IO.StreamWriter.Close%2A> после этого не вызываются до уничтожения экземпляра <xref:System.IO.StreamWriter>. Если этот помощник по отладке управляемого кода включен, среда выполнения определяет, существуют ли до сих пор какие-либо буферизованные данные в <xref:System.IO.StreamWriter>. Если буферизованные данные существуют, помощник по отладке управляемого кода активируется. Вызов методов <xref:System.GC.Collect%2A> и <xref:System.GC.WaitForPendingFinalizers%2A> может принудительно вызвать методы завершения. В противном случае методы завершения будут выполняться в произвольные моменты времени и, возможно, вовсе не в момент завершения работы процесса. Выполнение методов завершения явным образом, когда данный помощник по отладке управляемого кода включен, способствует более надежному воспроизведению проблемы такого типа.  
@@ -89,10 +90,10 @@ static WriteToFile()
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
  Этот MDA не оказывает никакого влияния на среду выполнения.  
   
-## <a name="output"></a>Выходные данные  
+## <a name="output"></a>Вывод  
  Сообщение о том, что произошло данное нарушение.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -102,7 +103,7 @@ static WriteToFile()
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IO.StreamWriter>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

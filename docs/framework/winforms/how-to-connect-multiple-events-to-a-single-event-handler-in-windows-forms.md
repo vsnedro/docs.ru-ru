@@ -1,5 +1,6 @@
 ---
 title: Как подключить несколько событий к одному обработчику событий
+description: Узнайте, как подключить несколько событий к одному обработчику событий в Windows Forms с помощью представления событий окно свойств в C#.
 ms.date: 03/30/2017
 dev_langs:
 - vb
@@ -10,15 +11,15 @@ helpviewer_keywords:
 - Windows Forms controls, events
 - menu items [Windows Forms], multicasting event-handling methods
 ms.assetid: 5a20749a-41b5-4acc-8eb1-9e5040b0a2c4
-ms.openlocfilehash: 0591291522ab1da04fef90bf1c0a73cf33ba0518
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: cca85c223b46d9a82dbc3e34e3377fb83c075959
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76739604"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621890"
 ---
-# <a name="how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms"></a>Практическое руководство. Подключение несколько событий к одному обработчику в Windows Forms
-В структуре приложения может оказаться необходимым использовать один обработчик событий для нескольких событий или несколько событий выполняют одну и ту же процедуру. Например, зачастую очень мощная временная заставка для того, чтобы команда меню вызывала то же самое событие, что и кнопка в форме, если они предоставляют те же функциональные возможности. Это можно сделать с помощью представления событий окно свойств в C# или с `Handles` помощью раскрывающихся списков **имя класса** и **имя метода** в Visual Basic редакторе кода.  
+# <a name="how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms"></a>Практическое руководство. Подключение нескольких событий к одному обработчику в Windows Forms
+В структуре приложения может оказаться необходимым использовать один обработчик событий для нескольких событий или несколько событий выполняют одну и ту же процедуру. Например, зачастую очень мощная временная заставка для того, чтобы команда меню вызывала то же самое событие, что и кнопка в форме, если они предоставляют те же функциональные возможности. Это можно сделать с помощью представления событий окно свойств в C# или с помощью раскрывающихся `Handles` списков **имя класса** и **имя метода** в Visual Basic редакторе кода.  
   
 ### <a name="to-connect-multiple-events-to-a-single-event-handler-in-visual-basic"></a>Подключение нескольких событий к одному обработчику событий в Visual Basic  
   
@@ -28,7 +29,7 @@ ms.locfileid: "76739604"
   
 3. В раскрывающемся списке **имя метода** выберите одно из событий, которое должен обработать обработчик событий.  
   
-4. Редактор кода вставляет соответствующий обработчик событий и размещает точку вставки в методе. В приведенном ниже примере это событие <xref:System.Windows.Forms.Control.Click> для элемента управления <xref:System.Windows.Forms.Button>.  
+4. Редактор кода вставляет соответствующий обработчик событий и размещает точку вставки в методе. В приведенном ниже примере это <xref:System.Windows.Forms.Control.Click> событие для <xref:System.Windows.Forms.Button> элемента управления.  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
@@ -36,7 +37,7 @@ ms.locfileid: "76739604"
     End Sub  
     ```  
   
-5. Добавьте другие события, которые вы хотите обработать, в предложение `Handles`.  
+5. Добавьте другие события, которые вы хотите обработать в `Handles` предложении.  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click, Button2.Click  
@@ -46,7 +47,7 @@ ms.locfileid: "76739604"
   
 6. Добавьте соответствующий код в обработчик событий.  
   
-### <a name="to-connect-multiple-events-to-a-single-event-handler-in-c"></a>Подключение нескольких событий к одному обработчику событий в C\#
+### <a name="to-connect-multiple-events-to-a-single-event-handler-in-c"></a>Подключение нескольких событий к одному обработчику событий на языке C\#
   
 1. Выберите элемент управления, к которому необходимо подключить обработчик событий.  
   
@@ -60,7 +61,7 @@ ms.locfileid: "76739604"
   
      Код будет добавлен в форму для привязки события к существующему обработчику событий.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание обработчиков событий в Windows Forms](creating-event-handlers-in-windows-forms.md)
 - [Общие сведения об обработчиках событий](event-handlers-overview-windows-forms.md)

@@ -1,5 +1,6 @@
 ---
 title: Режим заполнения столбца в элементе управления DataGridView
+description: Сведения о том, как элемент управления Windows Forms DataGridView в режиме заполнения столбца автоматически изменяет размер своих столбцов таким образом, чтобы они заполнили ширину доступной области отображения.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - DataGridView control [Windows Forms], column fill mode
 - data grids [Windows Forms], column fill mode
 ms.assetid: b4ef7411-ebf4-4e26-bb33-aecec90de80c
-ms.openlocfilehash: 43b8915efe303b6f56cd4adf5fdbd69f51b0b754
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 766a58954250d78ce6e44404730332b3158e1fad
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76736876"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85622826"
 ---
 # <a name="column-fill-mode-in-the-windows-forms-datagridview-control"></a>Установка режимов заполнения для столбцов элемента управления DataGridView в Windows Forms
 В режиме заполнения столбцов элемент управления <xref:System.Windows.Forms.DataGridView> автоматически изменяет размер своих столбцов, чтобы они полностью заполняли доступную область отображения по ширине. Элемент управления не отображает горизонтальную полосу прокрутки, за исключением случаев, когда необходимо сохранить ширину каждого столбца равной или большей, чем значение его свойства <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A>.  
@@ -33,7 +34,7 @@ ms.locfileid: "76736876"
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Описание  
  Поведение размеров столбцов для различных сценариев можно настроить, используя соответствующие значения для свойств <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A>, <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A>, <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> и <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A>.  
   
  В следующем примере кода можно поэкспериментировать с различными значениями для свойств <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A>, <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> и <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> различных столбцов. В этом примере элемент управления <xref:System.Windows.Forms.DataGridView> привязан к собственной коллекции <xref:System.Windows.Forms.DataGridView.Columns%2A>, а один столбец связан с каждым из свойств <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A>, <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A>, <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A>, <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> и <xref:System.Windows.Forms.DataGridViewColumn.Width%2A>. Каждый из столбцов также представлен строкой в элементе управления, и изменение значений в строке приведет к обновлению свойства соответствующего столбца, чтобы можно было увидеть взаимодействие значений.  
@@ -43,7 +44,7 @@ ms.locfileid: "76736876"
  [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#00](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#00)]  
   
 ### <a name="comments"></a>Комментарии  
- Использование демонстрационного приложения.  
+ Использование этого демонстрационного приложения.  
   
 - Измените размер формы. Обратите внимание, как изменяется ширина столбцов и одновременно сохраняются пропорции, указанные значениями свойства <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A>.  
   
@@ -60,7 +61,7 @@ ms.locfileid: "76736876"
   
 - ссылки на сборки System, System.Drawing и System.Windows.Forms.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A?displayProperty=nameWithType>

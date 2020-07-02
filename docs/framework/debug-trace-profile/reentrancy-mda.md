@@ -1,5 +1,6 @@
 ---
 title: MDA с возможностью повторного входа
+description: Ознакомьтесь с помощником по отладке управляемого кода (MDA), который может быть активирован, если куча объектов повреждена или возникли другие серьезные ошибки при переходе от машинного кода к управляемому.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - unmanaged code, debugging
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - managed code, debugging
 - native debugging, MDAs
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
-ms.openlocfilehash: 5cbe8e843ad72785010240f3db30b1d344c80650
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f666e505b8382b0bec8dcfdb34c775850e46c429
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181768"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803109"
 ---
 # <a name="reentrancy-mda"></a>MDA с возможностью повторного входа
 Помощник по отладке управляемого кода `reentrancy` (MDA) активируется при попытке выполнить переход из машинного кода в управляемый в тех случаях, когда ранее не был выполнен упорядоченный переход из управляемого кода в машинный.  
@@ -43,7 +44,7 @@ ms.locfileid: "79181768"
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
  Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.  
   
-## <a name="output"></a>Выходные данные  
+## <a name="output"></a>Вывод  
  Помощник по отладке управляемого кода сообщает о попытке недопустимого повторного входа.  Проверьте стек потока, чтобы понять, почему это происходит и как решить проблему. Далее приводится образец вывода.  
   
 ```output
@@ -54,7 +55,7 @@ low-level native extensibility points. Managed Debugging Assistant
 ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.  
 ```  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -102,6 +103,6 @@ public class Reenter
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
