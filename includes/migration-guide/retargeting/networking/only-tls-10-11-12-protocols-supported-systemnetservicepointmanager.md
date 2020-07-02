@@ -1,18 +1,37 @@
 ---
-ms.openlocfilehash: 5b531dc23feb311a797823dfa2a4d853859f9e18
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 87dc93ece10eaedbfbabddb5f857d0bcd12e05c4
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "68235578"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85615761"
 ---
-### <a name="only-tls-10-11-and-12-protocols-supported-in-systemnetservicepointmanager-and-systemnetsecuritysslstream"></a><span data-ttu-id="bfdb3-101">В System.Net.ServicePointManager и System.Net.Security.SslStream поддерживаются только протоколы Tls 1.0, 1.1 и 1.2</span><span class="sxs-lookup"><span data-stu-id="bfdb3-101">Only Tls 1.0, 1.1 and 1.2 protocols supported in System.Net.ServicePointManager and System.Net.Security.SslStream</span></span>
+### <a name="only-tls-10-11-and-12-protocols-supported-in-systemnetservicepointmanager-and-systemnetsecuritysslstream"></a><span data-ttu-id="3be18-101">В System.Net.ServicePointManager и System.Net.Security.SslStream поддерживаются только протоколы Tls 1.0, 1.1 и 1.2</span><span class="sxs-lookup"><span data-stu-id="3be18-101">Only Tls 1.0, 1.1 and 1.2 protocols supported in System.Net.ServicePointManager and System.Net.Security.SslStream</span></span>
 
-|   |   |
-|---|---|
-|<span data-ttu-id="bfdb3-102">Подробнее</span><span class="sxs-lookup"><span data-stu-id="bfdb3-102">Details</span></span>|<span data-ttu-id="bfdb3-103">Начиная с версии .NET Framework 4.6, классы <xref:System.Net.ServicePointManager> и <xref:System.Net.Security.SslStream> могут использовать только один из трех протоколов: Tls1.0, Tls1.1 или Tls1.2.</span><span class="sxs-lookup"><span data-stu-id="bfdb3-103">Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager> and <xref:System.Net.Security.SslStream> classes are only allowed to use one of the following three protocols: Tls1.0, Tls1.1, or Tls1.2.</span></span> <span data-ttu-id="bfdb3-104">Протокол SSL 3.0 и шифрование RC4 не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="bfdb3-104">The SSL3.0 protocol and RC4 cipher are not supported.</span></span>|
-|<span data-ttu-id="bfdb3-105">Предложение</span><span class="sxs-lookup"><span data-stu-id="bfdb3-105">Suggestion</span></span>|<span data-ttu-id="bfdb3-106">Рекомендуется обновить приложения на стороне сервера для использования Tls1.0, Tls1.1 или Tls1.2.</span><span class="sxs-lookup"><span data-stu-id="bfdb3-106">The recommended mitigation is to upgrade the sever-side app to Tls1.0, Tls1.1, or Tls1.2.</span></span> <span data-ttu-id="bfdb3-107">Если это невозможно, или если клиентские приложения не работают, можно использовать класс <xref:System.AppContext?displayProperty=name>, чтобы отказаться от этой функции одним из двух способов.</span><span class="sxs-lookup"><span data-stu-id="bfdb3-107">If this is not feasible, or if client apps are broken, the <xref:System.AppContext?displayProperty=name> class can be used to opt out of this feature in either of two ways:</span></span><ol><li><span data-ttu-id="bfdb3-108">Путем программной установки параметров совместимости в <xref:System.AppContext?displayProperty=name>, как описано [здесь](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).</span><span class="sxs-lookup"><span data-stu-id="bfdb3-108">By programmatically setting compat switches on the <xref:System.AppContext?displayProperty=name>, as explained [here](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).</span></span></li><li><span data-ttu-id="bfdb3-109">путем добавления следующей строки в раздел <code>&lt;runtime&gt;</code> файла app.config:</span><span class="sxs-lookup"><span data-stu-id="bfdb3-109">By adding the following line to the <code>&lt;runtime&gt;</code> section of the app.config file:</span></span></li></ol><pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.System.Net.DontEnableSchUseStrongCrypto=true&quot;/&gt;&#13;&#10;</code></pre>|
-|<span data-ttu-id="bfdb3-110">Область</span><span class="sxs-lookup"><span data-stu-id="bfdb3-110">Scope</span></span>|<span data-ttu-id="bfdb3-111">Дополнительный номер</span><span class="sxs-lookup"><span data-stu-id="bfdb3-111">Minor</span></span>|
-|<span data-ttu-id="bfdb3-112">Version</span><span class="sxs-lookup"><span data-stu-id="bfdb3-112">Version</span></span>|<span data-ttu-id="bfdb3-113">4.6</span><span class="sxs-lookup"><span data-stu-id="bfdb3-113">4.6</span></span>|
-|<span data-ttu-id="bfdb3-114">Type</span><span class="sxs-lookup"><span data-stu-id="bfdb3-114">Type</span></span>|<span data-ttu-id="bfdb3-115">Изменение целевой платформы</span><span class="sxs-lookup"><span data-stu-id="bfdb3-115">Retargeting</span></span>|
-|<span data-ttu-id="bfdb3-116">Затронутые API</span><span class="sxs-lookup"><span data-stu-id="bfdb3-116">Affected APIs</span></span>|<ul><li><xref:System.Net.SecurityProtocolType.Ssl3?displayProperty=nameWithType></li><li><xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType></li><li><xref:System.Security.Authentication.SslProtocols.Ssl2?displayProperty=nameWithType></li><li><xref:System.Security.Authentication.SslProtocols.Ssl3?displayProperty=nameWithType></li></ul>|
+#### <a name="details"></a><span data-ttu-id="3be18-102">Подробнее</span><span class="sxs-lookup"><span data-stu-id="3be18-102">Details</span></span>
+
+<span data-ttu-id="3be18-103">Начиная с версии .NET Framework 4.6, классы <xref:System.Net.ServicePointManager> и <xref:System.Net.Security.SslStream> могут использовать только один из трех протоколов: Tls1.0, Tls1.1 или Tls1.2.</span><span class="sxs-lookup"><span data-stu-id="3be18-103">Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager> and <xref:System.Net.Security.SslStream> classes are only allowed to use one of the following three protocols: Tls1.0, Tls1.1, or Tls1.2.</span></span> <span data-ttu-id="3be18-104">Протокол SSL 3.0 и шифрование RC4 не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="3be18-104">The SSL3.0 protocol and RC4 cipher are not supported.</span></span>
+
+#### <a name="suggestion"></a><span data-ttu-id="3be18-105">Предложение</span><span class="sxs-lookup"><span data-stu-id="3be18-105">Suggestion</span></span>
+
+<span data-ttu-id="3be18-106">Рекомендуется обновить приложения на стороне сервера для использования Tls1.0, Tls1.1 или Tls1.2.</span><span class="sxs-lookup"><span data-stu-id="3be18-106">The recommended mitigation is to upgrade the sever-side app to Tls1.0, Tls1.1, or Tls1.2.</span></span> <span data-ttu-id="3be18-107">Если это невозможно, или если клиентские приложения не работают, можно использовать класс <xref:System.AppContext?displayProperty=fullName>, чтобы отказаться от этой функции одним из двух способов.</span><span class="sxs-lookup"><span data-stu-id="3be18-107">If this is not feasible, or if client apps are broken, the <xref:System.AppContext?displayProperty=fullName> class can be used to opt out of this feature in either of two ways:</span></span>
+
+- <span data-ttu-id="3be18-108">Путем программной установки параметров совместимости в <xref:System.AppContext?displayProperty=fullName>, как описано [здесь](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).</span><span class="sxs-lookup"><span data-stu-id="3be18-108">By programmatically setting compat switches on the <xref:System.AppContext?displayProperty=fullName>, as explained [here](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).</span></span>
+- <span data-ttu-id="3be18-109">путем добавления следующей строки в раздел `<runtime>` файла app.config:</span><span class="sxs-lookup"><span data-stu-id="3be18-109">By adding the following line to the `<runtime>` section of the app.config file:</span></span>
+
+```xml
+<AppContextSwitchOverrides value="Switch.System.Net.DontEnableSchUseStrongCrypto=true"/>
+```
+
+| <span data-ttu-id="3be18-110">name</span><span class="sxs-lookup"><span data-stu-id="3be18-110">Name</span></span>    | <span data-ttu-id="3be18-111">Значение</span><span class="sxs-lookup"><span data-stu-id="3be18-111">Value</span></span>       |
+|:--------|:------------|
+| <span data-ttu-id="3be18-112">Область</span><span class="sxs-lookup"><span data-stu-id="3be18-112">Scope</span></span>   | <span data-ttu-id="3be18-113">Дополнительный номер</span><span class="sxs-lookup"><span data-stu-id="3be18-113">Minor</span></span>       |
+| <span data-ttu-id="3be18-114">Version</span><span class="sxs-lookup"><span data-stu-id="3be18-114">Version</span></span> | <span data-ttu-id="3be18-115">4.6</span><span class="sxs-lookup"><span data-stu-id="3be18-115">4.6</span></span>         |
+| <span data-ttu-id="3be18-116">Type</span><span class="sxs-lookup"><span data-stu-id="3be18-116">Type</span></span>    | <span data-ttu-id="3be18-117">Изменение целевой платформы</span><span class="sxs-lookup"><span data-stu-id="3be18-117">Retargeting</span></span> |
+
+#### <a name="affected-apis"></a><span data-ttu-id="3be18-118">Затронутые API</span><span class="sxs-lookup"><span data-stu-id="3be18-118">Affected APIs</span></span>
+
+- <xref:System.Net.SecurityProtocolType.Ssl3?displayProperty=nameWithType>
+- <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>
+- <xref:System.Security.Authentication.SslProtocols.Ssl2?displayProperty=nameWithType>
+- <xref:System.Security.Authentication.SslProtocols.Ssl3?displayProperty=nameWithType>

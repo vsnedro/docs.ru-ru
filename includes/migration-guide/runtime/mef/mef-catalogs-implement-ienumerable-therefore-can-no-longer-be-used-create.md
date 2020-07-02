@@ -1,17 +1,23 @@
 ---
-ms.openlocfilehash: 4cc91e7c6054fdb8e96cecf7120df5b9f25de56c
-ms.sourcegitcommit: 0be8a279af6d8a43e03141e349d3efd5d35f8767
+ms.openlocfilehash: 598df2121b480d411dac9c5571772a4a8d22b5ff
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59804968"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85620636"
 ---
-### <a name="mef-catalogs-implement-ienumerable-and-therefore-can-no-longer-be-used-to-create-a-serializer"></a><span data-ttu-id="a832c-101">Каталоги MEF реализуют IEnumerable и поэтому больше не могут использоваться для создания сериализатора</span><span class="sxs-lookup"><span data-stu-id="a832c-101">MEF catalogs implement IEnumerable and therefore can no longer be used to create a serializer</span></span>
+### <a name="mef-catalogs-implement-ienumerable-and-therefore-can-no-longer-be-used-to-create-a-serializer"></a><span data-ttu-id="49fa4-101">Каталоги MEF реализуют IEnumerable и поэтому больше не могут использоваться для создания сериализатора</span><span class="sxs-lookup"><span data-stu-id="49fa4-101">MEF catalogs implement IEnumerable and therefore can no longer be used to create a serializer</span></span>
 
-|   |   |
-|---|---|
-|<span data-ttu-id="a832c-102">Подробные сведения</span><span class="sxs-lookup"><span data-stu-id="a832c-102">Details</span></span>|<span data-ttu-id="a832c-103">Начиная с .NET Framework 4.5 каталоги MEF реализуют IEnumerable и поэтому больше не могут использоваться для создания сериализатора (объекта <xref:System.Xml.Serialization.XmlSerializer?displayProperty=name>).</span><span class="sxs-lookup"><span data-stu-id="a832c-103">Starting with the .NET Framework 4.5, MEF catalogs implement IEnumerable and therefore can no longer be used to create a serializer (<xref:System.Xml.Serialization.XmlSerializer?displayProperty=name> object).</span></span> <span data-ttu-id="a832c-104">При попытке сериализации каталога MEF происходит вызов исключения.</span><span class="sxs-lookup"><span data-stu-id="a832c-104">Trying to serialize a MEF catalog throws an exception.</span></span>|
-|<span data-ttu-id="a832c-105">Предложение</span><span class="sxs-lookup"><span data-stu-id="a832c-105">Suggestion</span></span>|<span data-ttu-id="a832c-106">Больше не следует использовать MEF для создания сериализатора.</span><span class="sxs-lookup"><span data-stu-id="a832c-106">Can no longer use MEF to create a serializer</span></span>|
-|<span data-ttu-id="a832c-107">Область</span><span class="sxs-lookup"><span data-stu-id="a832c-107">Scope</span></span>|<span data-ttu-id="a832c-108">Значительно</span><span class="sxs-lookup"><span data-stu-id="a832c-108">Major</span></span>|
-|<span data-ttu-id="a832c-109">Версия</span><span class="sxs-lookup"><span data-stu-id="a832c-109">Version</span></span>|<span data-ttu-id="a832c-110">4.5</span><span class="sxs-lookup"><span data-stu-id="a832c-110">4.5</span></span>|
-|<span data-ttu-id="a832c-111">Тип</span><span class="sxs-lookup"><span data-stu-id="a832c-111">Type</span></span>|<span data-ttu-id="a832c-112">Среда выполнения</span><span class="sxs-lookup"><span data-stu-id="a832c-112">Runtime</span></span>|
+#### <a name="details"></a><span data-ttu-id="49fa4-102">Подробнее</span><span class="sxs-lookup"><span data-stu-id="49fa4-102">Details</span></span>
+
+<span data-ttu-id="49fa4-103">Начиная с .NET Framework 4.5 каталоги MEF реализуют IEnumerable и поэтому больше не могут использоваться для создания сериализатора (объекта <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>).</span><span class="sxs-lookup"><span data-stu-id="49fa4-103">Starting with the .NET Framework 4.5, MEF catalogs implement IEnumerable and therefore can no longer be used to create a serializer (<xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> object).</span></span> <span data-ttu-id="49fa4-104">При попытке сериализации каталога MEF происходит вызов исключения.</span><span class="sxs-lookup"><span data-stu-id="49fa4-104">Trying to serialize a MEF catalog throws an exception.</span></span>
+
+#### <a name="suggestion"></a><span data-ttu-id="49fa4-105">Предложение</span><span class="sxs-lookup"><span data-stu-id="49fa4-105">Suggestion</span></span>
+
+<span data-ttu-id="49fa4-106">Больше не следует использовать MEF для создания сериализатора.</span><span class="sxs-lookup"><span data-stu-id="49fa4-106">Can no longer use MEF to create a serializer</span></span>
+
+| <span data-ttu-id="49fa4-107">name</span><span class="sxs-lookup"><span data-stu-id="49fa4-107">Name</span></span>    | <span data-ttu-id="49fa4-108">Значение</span><span class="sxs-lookup"><span data-stu-id="49fa4-108">Value</span></span>       |
+|:--------|:------------|
+| <span data-ttu-id="49fa4-109">Область</span><span class="sxs-lookup"><span data-stu-id="49fa4-109">Scope</span></span>   |<span data-ttu-id="49fa4-110">Значительно</span><span class="sxs-lookup"><span data-stu-id="49fa4-110">Major</span></span>|
+|<span data-ttu-id="49fa4-111">Version</span><span class="sxs-lookup"><span data-stu-id="49fa4-111">Version</span></span>|<span data-ttu-id="49fa4-112">4.5</span><span class="sxs-lookup"><span data-stu-id="49fa4-112">4.5</span></span>|
+|<span data-ttu-id="49fa4-113">Type</span><span class="sxs-lookup"><span data-stu-id="49fa4-113">Type</span></span>|<span data-ttu-id="49fa4-114">Среда выполнения</span><span class="sxs-lookup"><span data-stu-id="49fa4-114">Runtime</span></span>|

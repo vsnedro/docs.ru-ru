@@ -1,17 +1,23 @@
 ---
-ms.openlocfilehash: 6cc1c65a95238e758f99090794f5e50b830d9667
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: beaac7b14535335a665add4fa056a60793879753
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "66379651"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85620673"
 ---
-### <a name="systemactivities-is-now-aptca"></a><span data-ttu-id="d9b83-101">System.Activities теперь является атрибутом APTCA</span><span class="sxs-lookup"><span data-stu-id="d9b83-101">System.Activities is now APTCA</span></span>
+### <a name="systemactivities-is-now-aptca"></a><span data-ttu-id="a9b35-101">System.Activities теперь является атрибутом APTCA</span><span class="sxs-lookup"><span data-stu-id="a9b35-101">System.Activities is now APTCA</span></span>
 
-|   |   |
-|---|---|
-|<span data-ttu-id="d9b83-102">Подробные сведения</span><span class="sxs-lookup"><span data-stu-id="d9b83-102">Details</span></span>|<span data-ttu-id="d9b83-103">Сборка помечена атрибутом <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=name>.</span><span class="sxs-lookup"><span data-stu-id="d9b83-103">The assembly is marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=name> attribute.</span></span>|
-|<span data-ttu-id="d9b83-104">Предложение</span><span class="sxs-lookup"><span data-stu-id="d9b83-104">Suggestion</span></span>|<span data-ttu-id="d9b83-105">Производные классы не могут быть помечены атрибутом <xref:System.Security.SecurityCriticalAttribute?displayProperty=name>.</span><span class="sxs-lookup"><span data-stu-id="d9b83-105">Derived classes cannot be marked with the <xref:System.Security.SecurityCriticalAttribute?displayProperty=name>.</span></span> <span data-ttu-id="d9b83-106">Раньше производные типы должны были быть помечены атрибутом <xref:System.Security.SecurityCriticalAttribute?displayProperty=name>.</span><span class="sxs-lookup"><span data-stu-id="d9b83-106">Previously, derived types had to be marked with the <xref:System.Security.SecurityCriticalAttribute?displayProperty=name>.</span></span> <span data-ttu-id="d9b83-107">Однако это изменение не должно иметь никаких реальных последствий.</span><span class="sxs-lookup"><span data-stu-id="d9b83-107">However, this change should have no real impact.</span></span>|
-|<span data-ttu-id="d9b83-108">Область</span><span class="sxs-lookup"><span data-stu-id="d9b83-108">Scope</span></span>|<span data-ttu-id="d9b83-109">Пограничный случай</span><span class="sxs-lookup"><span data-stu-id="d9b83-109">Edge</span></span>|
-|<span data-ttu-id="d9b83-110">Версия</span><span class="sxs-lookup"><span data-stu-id="d9b83-110">Version</span></span>|<span data-ttu-id="d9b83-111">4.5</span><span class="sxs-lookup"><span data-stu-id="d9b83-111">4.5</span></span>|
-|<span data-ttu-id="d9b83-112">Тип</span><span class="sxs-lookup"><span data-stu-id="d9b83-112">Type</span></span>|<span data-ttu-id="d9b83-113">Среда выполнения</span><span class="sxs-lookup"><span data-stu-id="d9b83-113">Runtime</span></span>|
+#### <a name="details"></a><span data-ttu-id="a9b35-102">Подробнее</span><span class="sxs-lookup"><span data-stu-id="a9b35-102">Details</span></span>
+
+<span data-ttu-id="a9b35-103">Сборка помечена атрибутом <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>.</span><span class="sxs-lookup"><span data-stu-id="a9b35-103">The assembly is marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attribute.</span></span>
+
+#### <a name="suggestion"></a><span data-ttu-id="a9b35-104">Предложение</span><span class="sxs-lookup"><span data-stu-id="a9b35-104">Suggestion</span></span>
+
+<span data-ttu-id="a9b35-105">Производные классы не могут быть помечены атрибутом <xref:System.Security.SecurityCriticalAttribute?displayProperty=fullName>.</span><span class="sxs-lookup"><span data-stu-id="a9b35-105">Derived classes cannot be marked with the <xref:System.Security.SecurityCriticalAttribute?displayProperty=fullName>.</span></span> <span data-ttu-id="a9b35-106">Раньше производные типы должны были быть помечены атрибутом <xref:System.Security.SecurityCriticalAttribute?displayProperty=fullName>.</span><span class="sxs-lookup"><span data-stu-id="a9b35-106">Previously, derived types had to be marked with the <xref:System.Security.SecurityCriticalAttribute?displayProperty=fullName>.</span></span> <span data-ttu-id="a9b35-107">Однако это изменение не должно иметь никаких реальных последствий.</span><span class="sxs-lookup"><span data-stu-id="a9b35-107">However, this change should have no real impact.</span></span>
+
+| <span data-ttu-id="a9b35-108">name</span><span class="sxs-lookup"><span data-stu-id="a9b35-108">Name</span></span>    | <span data-ttu-id="a9b35-109">Значение</span><span class="sxs-lookup"><span data-stu-id="a9b35-109">Value</span></span>       |
+|:--------|:------------|
+| <span data-ttu-id="a9b35-110">Область</span><span class="sxs-lookup"><span data-stu-id="a9b35-110">Scope</span></span>   |<span data-ttu-id="a9b35-111">Пограничный случай</span><span class="sxs-lookup"><span data-stu-id="a9b35-111">Edge</span></span>|
+|<span data-ttu-id="a9b35-112">Version</span><span class="sxs-lookup"><span data-stu-id="a9b35-112">Version</span></span>|<span data-ttu-id="a9b35-113">4.5</span><span class="sxs-lookup"><span data-stu-id="a9b35-113">4.5</span></span>|
+|<span data-ttu-id="a9b35-114">Type</span><span class="sxs-lookup"><span data-stu-id="a9b35-114">Type</span></span>|<span data-ttu-id="a9b35-115">Среда выполнения</span><span class="sxs-lookup"><span data-stu-id="a9b35-115">Runtime</span></span>|
