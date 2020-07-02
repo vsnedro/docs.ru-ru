@@ -1,13 +1,13 @@
 ---
 title: Управление версиями среды выполнения пакета SDK для .NET Core
 description: В этой статье описано, как осуществляется управление версиями среды выполнения и пакета SDK для .NET Core.
-ms.date: 07/26/2018
-ms.openlocfilehash: f166a6dfc1c9127eb629365efd628855489a60cb
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.date: 06/24/2020
+ms.openlocfilehash: 5e315f49227f3c2ea40652a30fabbf566bdfe495
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81644397"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619758"
 ---
 # <a name="overview-of-how-net-core-is-versioned"></a>Общие сведения об управлении версиями в .NET Core
 
@@ -103,6 +103,9 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 | 2.1       | до 2.0     |
 | 2.2       | до 2.0     |
 | 3.0       | до 2.1     |
+| 3.1       | до 2.1     |
+
+Вы можете просмотреть [интерактивную таблицу](https://dotnet.microsoft.com/platform/dotnet-standard#versions), где представлены версии .NET Standard и их соответствие реализациям .NET.
 
 ## <a name="see-also"></a>См. также
 

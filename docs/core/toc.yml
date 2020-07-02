@@ -8,22 +8,12 @@ items:
   - name: Установка
     items:
       - name: Обзор
-        href: install/index.md
-      - name: Установка пакета SDK
-        href: install/sdk.md
-      - name: Установка среды выполнения
-        href: install/runtime.md
-      - name: Поддерживаемые ОС и зависимости
-        href: install/dependencies.md
-      - name: "Удаление устаревших сред выполнения и\_пакетов SDK"
-        href: install/remove-runtime-sdk-versions.md
-      - name: Управление шаблонами .NET
-        href: install/templates.md
-      - name: Проблемы с подтверждением подлинности в macOS
-        href: install/macos-notarization-issues.md
-      - name: Проверка версий .NET Core
-        href: install/how-to-detect-installed-versions.md
-      - name: Linux
+        href: install/index.yml
+      - name: Установка в Windows
+        href: install/windows.md
+      - name: Установка в macOS
+        href: install/macos.md
+      - name: Установка на Linux
         items:
           - name: Обзор
             href: install/linux.md
@@ -43,6 +33,14 @@ items:
             href: install/linux-rhel.md
           - name: SLES
             href: install/linux-sles.md
+      - name: "Удаление устаревших сред выполнения и\_пакетов SDK"
+        href: install/remove-runtime-sdk-versions.md
+      - name: Управление шаблонами .NET
+        href: install/templates.md
+      - name: Проблемы с подтверждением подлинности в macOS
+        href: install/macos-notarization-issues.md
+      - name: Проверка версий .NET Core
+        href: install/how-to-detect-installed-versions.md
       - name: Установка локализованной версии IntelliSense
         href: install/localized-intellisense.md
   - name: Начало работы

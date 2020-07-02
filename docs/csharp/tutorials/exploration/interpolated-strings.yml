@@ -90,7 +90,7 @@ items:
     ```
 
 
-    Задайте строку формата, указав ее после интерполированного выражения через точку с запятой. "d" — это [стандартная строка формата для даты и времени](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier), представляющая краткий формат. "C2" — это [стандартная строка числового формата](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier), представляющая число в виде денежной единицы с точностью два знака после запятой.
+    Задайте строку формата, указав ее после интерполированного выражения через двоеточие. "d" — это [стандартная строка формата для даты и времени](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier), представляющая краткий формат. "C2" — это [стандартная строка числового формата](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier), представляющая число в виде денежной единицы с точностью два знака после запятой.
 
 
     Некоторые типы в библиотеках .NET поддерживают предопределенный набор строк формата. К ним относятся все числовые типы, а также типы даты и времени. Полный список типов, поддерживающих строки формата, см. в разделе [Строки формата и типы библиотек классов .NET](../../../standard/base-types/formatting-types.md#format-strings-and-net-types) статьи [Типы форматирования в .NET](../../../standard/base-types/formatting-types.md).

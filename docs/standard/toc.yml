@@ -639,6 +639,8 @@
       items:
         - name: Выбор между классом и структурой
           href: design-guidelines/choosing-between-class-and-struct.md
+        - name: Выбор между анонимными типами и кортежами
+          href: design-guidelines/choosing-between-anonymous-and-tuple.md
         - name: Разработка абстрактных классов
           href: design-guidelines/abstract-class.md
         - name: Разработка статических классов

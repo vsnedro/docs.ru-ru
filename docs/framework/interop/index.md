@@ -1,5 +1,6 @@
 ---
 title: Взаимодействие с неуправляемым кодом
+description: Обзор взаимодействия с неуправляемым кодом. Среда CLR скрывает от клиентов и серверов различия между объектными моделями для компонентов .NET и неуправляемого кода.
 ms.date: 01/17/2018
 helpviewer_keywords:
 - unmanaged code, interoperation
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - interoperation with unmanaged code, about interoperation
 - components [.NET Framework], interoperation with unmanaged code
 ms.assetid: ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258
-ms.openlocfilehash: 12183f390a5178f038c6dd2122a72a33e31ae0ee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1cebd75907fd202715cb337593186d248107bdbb
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73457967"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621877"
 ---
 # <a name="interoperating-with-unmanaged-code"></a>Взаимодействие с неуправляемым кодом
 
