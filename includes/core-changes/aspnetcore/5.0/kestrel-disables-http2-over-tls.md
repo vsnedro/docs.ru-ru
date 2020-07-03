@@ -1,0 +1,77 @@
+---
+ms.openlocfilehash: 92210f6becb5a5a43893ee0fd51ef51e2ddd7f8d
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325250"
+---
+### <a name="kestrel-http2-disabled-over-tls-on-incompatible-windows-versions"></a><span data-ttu-id="98a70-101">Kestrel. HTTP/2 по TLS отключен в несовместимых версиях Windows</span><span class="sxs-lookup"><span data-stu-id="98a70-101">Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions</span></span>
+
+<span data-ttu-id="98a70-102">Чтобы включить HTTP/2 по TLS в Windows, необходимо выполнить два условия:</span><span class="sxs-lookup"><span data-stu-id="98a70-102">To enable HTTP/2 over Transport Layer Security (TLS) on Windows, two requirements need to be met:</span></span>
+
+- <span data-ttu-id="98a70-103">поддержка согласования протокола уровня приложений доступна, начиная с Windows 8.1 и Windows Server 2012 R2;</span><span class="sxs-lookup"><span data-stu-id="98a70-103">Application-Layer Protocol Negotiation (ALPN) support, which is available starting with Windows 8.1 and Windows Server 2012 R2.</span></span>
+- <span data-ttu-id="98a70-104">набор шифров, совместимых с HTTP/2, доступен, начиная с Windows 10 и Windows Server 2016.</span><span class="sxs-lookup"><span data-stu-id="98a70-104">A set of ciphers compatible with HTTP/2, which is available starting with Windows 10 and Windows Server 2016.</span></span>
+
+<span data-ttu-id="98a70-105">Таким образом, поведение Kestrel при настройке HTTP/2 по протоколу TLS изменилось следующим образом:</span><span class="sxs-lookup"><span data-stu-id="98a70-105">As such, Kestrel's behavior when HTTP/2 over TLS is configured has changed to:</span></span>
+
+- <span data-ttu-id="98a70-106">Переход на использование более ранней версии `Http1` и регистрация сообщения в журнале на уровне `Information`, если [ListenOptions.HttpProtocols](/dotnet/api/microsoft.aspnetcore.server.kestrel.core.httpprotocols) имеет значение `Http1AndHttp2`.</span><span class="sxs-lookup"><span data-stu-id="98a70-106">Downgrade to `Http1` and log a message at the `Information` level when [ListenOptions.HttpProtocols](/dotnet/api/microsoft.aspnetcore.server.kestrel.core.httpprotocols) is set to `Http1AndHttp2`.</span></span> <span data-ttu-id="98a70-107">Значение `Http1AndHttp2` является значением по умолчанию для свойства `ListenOptions.HttpProtocols`.</span><span class="sxs-lookup"><span data-stu-id="98a70-107">`Http1AndHttp2` is the default value for `ListenOptions.HttpProtocols`.</span></span>
+- <span data-ttu-id="98a70-108">Выводится `NotSupportedException`, если `ListenOptions.HttpProtocols` имеет значение `Http2`.</span><span class="sxs-lookup"><span data-stu-id="98a70-108">Throw a `NotSupportedException` when `ListenOptions.HttpProtocols` is set to `Http2`.</span></span>
+
+<span data-ttu-id="98a70-109">Обсуждение этого вопроса см. на странице [dotnet/aspnetcore#23068](https://github.com/dotnet/aspnetcore/issues/23068).</span><span class="sxs-lookup"><span data-stu-id="98a70-109">For discussion, see issue [dotnet/aspnetcore#23068](https://github.com/dotnet/aspnetcore/issues/23068).</span></span>
+
+#### <a name="version-introduced"></a><span data-ttu-id="98a70-110">Представленная версия</span><span class="sxs-lookup"><span data-stu-id="98a70-110">Version introduced</span></span>
+
+<span data-ttu-id="98a70-111">ASP.NET Core 5.0 (предварительная версия 7)</span><span class="sxs-lookup"><span data-stu-id="98a70-111">ASP.NET Core 5.0 Preview 7</span></span>
+
+#### <a name="old-behavior"></a><span data-ttu-id="98a70-112">Старое поведение</span><span class="sxs-lookup"><span data-stu-id="98a70-112">Old behavior</span></span>
+
+<span data-ttu-id="98a70-113">В следующей таблице показано поведение при настройке HTTP/2 по TLS.</span><span class="sxs-lookup"><span data-stu-id="98a70-113">The following table outlines the behavior when HTTP/2 over TLS is configured.</span></span>
+
+| <span data-ttu-id="98a70-114">Протоколы</span><span class="sxs-lookup"><span data-stu-id="98a70-114">Protocols</span></span> | <span data-ttu-id="98a70-115">Windows 7,</span><span class="sxs-lookup"><span data-stu-id="98a70-115">Windows 7,</span></span><br /><span data-ttu-id="98a70-116">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="98a70-116">Windows Server 2008 R2,</span></span><br /><span data-ttu-id="98a70-117">или более ранней версии</span><span class="sxs-lookup"><span data-stu-id="98a70-117">or earlier</span></span> | <span data-ttu-id="98a70-118">Windows 8,</span><span class="sxs-lookup"><span data-stu-id="98a70-118">Windows 8,</span></span><br /><span data-ttu-id="98a70-119">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="98a70-119">Windows Server 2012</span></span> | <span data-ttu-id="98a70-120">Windows 8.1,</span><span class="sxs-lookup"><span data-stu-id="98a70-120">Windows 8.1,</span></span><br /><span data-ttu-id="98a70-121">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="98a70-121">Windows Server 2012 R2</span></span> | <span data-ttu-id="98a70-122">Windows 10,</span><span class="sxs-lookup"><span data-stu-id="98a70-122">Windows 10,</span></span><br /><span data-ttu-id="98a70-123">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="98a70-123">Windows Server 2016,</span></span><br /><span data-ttu-id="98a70-124">или более поздней версии</span><span class="sxs-lookup"><span data-stu-id="98a70-124">or newer</span></span> |
+|---------------|-----------------------------------------------|--------------------------------|-------------------------------------|------------------------------------------|
+| `Http2`         | <span data-ttu-id="98a70-125">Выводится `NotSupportedException`</span><span class="sxs-lookup"><span data-stu-id="98a70-125">Throw `NotSupportedException`</span></span>                   | <span data-ttu-id="98a70-126">Ошибка при подтверждении соединения по TLS</span><span class="sxs-lookup"><span data-stu-id="98a70-126">Error during TLS handshake</span></span>     | <span data-ttu-id="98a70-127">Ошибка при подтверждении соединения по TLS &ast;</span><span class="sxs-lookup"><span data-stu-id="98a70-127">Error during TLS handshake &ast;</span></span>     | <span data-ttu-id="98a70-128">Без ошибок</span><span class="sxs-lookup"><span data-stu-id="98a70-128">No error</span></span> |
+| `Http1AndHttp2` | <span data-ttu-id="98a70-129">Переход на использование более ранней версии `Http1`</span><span class="sxs-lookup"><span data-stu-id="98a70-129">Downgrade to `Http1`</span></span>                    | <span data-ttu-id="98a70-130">Переход на использование более ранней версии `Http1`</span><span class="sxs-lookup"><span data-stu-id="98a70-130">Downgrade to `Http1`</span></span>     | <span data-ttu-id="98a70-131">Ошибка при подтверждении соединения по TLS &ast;</span><span class="sxs-lookup"><span data-stu-id="98a70-131">Error during TLS handshake &ast;</span></span>     | <span data-ttu-id="98a70-132">Без ошибок</span><span class="sxs-lookup"><span data-stu-id="98a70-132">No error</span></span> |
+
+<span data-ttu-id="98a70-133">&ast; Настройте совместимые комплекты шифров, чтобы включить эти сценарии.</span><span class="sxs-lookup"><span data-stu-id="98a70-133">&ast; Configure compatible cipher suites to enable these scenarios.</span></span>
+
+#### <a name="new-behavior"></a><span data-ttu-id="98a70-134">Новое поведение</span><span class="sxs-lookup"><span data-stu-id="98a70-134">New behavior</span></span>
+
+<span data-ttu-id="98a70-135">В следующей таблице показано поведение при настройке HTTP/2 по TLS.</span><span class="sxs-lookup"><span data-stu-id="98a70-135">The following table outlines the behavior when HTTP/2 over TLS is configured.</span></span>
+
+| <span data-ttu-id="98a70-136">Протоколы</span><span class="sxs-lookup"><span data-stu-id="98a70-136">Protocols</span></span> | <span data-ttu-id="98a70-137">Windows 7,</span><span class="sxs-lookup"><span data-stu-id="98a70-137">Windows 7,</span></span><br /><span data-ttu-id="98a70-138">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="98a70-138">Windows Server 2008 R2,</span></span><br /><span data-ttu-id="98a70-139">или более ранней версии</span><span class="sxs-lookup"><span data-stu-id="98a70-139">or earlier</span></span> | <span data-ttu-id="98a70-140">Windows 8,</span><span class="sxs-lookup"><span data-stu-id="98a70-140">Windows 8,</span></span><br /><span data-ttu-id="98a70-141">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="98a70-141">Windows Server 2012</span></span> | <span data-ttu-id="98a70-142">Windows 8.1,</span><span class="sxs-lookup"><span data-stu-id="98a70-142">Windows 8.1,</span></span><br /><span data-ttu-id="98a70-143">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="98a70-143">Windows Server 2012 R2</span></span> | <span data-ttu-id="98a70-144">Windows 10,</span><span class="sxs-lookup"><span data-stu-id="98a70-144">Windows 10,</span></span><br /><span data-ttu-id="98a70-145">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="98a70-145">Windows Server 2016,</span></span><br /><span data-ttu-id="98a70-146">или более поздней версии</span><span class="sxs-lookup"><span data-stu-id="98a70-146">or newer</span></span> |
+|---------------|-----------------------------------------------|--------------------------------|-------------------------------------|------------------------------------------|
+| `Http2`         | <span data-ttu-id="98a70-147">Выводится `NotSupportedException`</span><span class="sxs-lookup"><span data-stu-id="98a70-147">Throw `NotSupportedException`</span></span>                   | <span data-ttu-id="98a70-148">Выводится `NotSupportedException`</span><span class="sxs-lookup"><span data-stu-id="98a70-148">Throw `NotSupportedException`</span></span>     | <span data-ttu-id="98a70-149">Выводится `NotSupportedException` &ast;&ast;</span><span class="sxs-lookup"><span data-stu-id="98a70-149">Throw `NotSupportedException` &ast;&ast;</span></span>     | <span data-ttu-id="98a70-150">Без ошибок</span><span class="sxs-lookup"><span data-stu-id="98a70-150">No error</span></span> |
+| `Http1AndHttp2` | <span data-ttu-id="98a70-151">Переход на использование более ранней версии `Http1`</span><span class="sxs-lookup"><span data-stu-id="98a70-151">Downgrade to `Http1`</span></span>                    | <span data-ttu-id="98a70-152">Переход на использование более ранней версии `Http1`</span><span class="sxs-lookup"><span data-stu-id="98a70-152">Downgrade to `Http1`</span></span>     | <span data-ttu-id="98a70-153">Переход на использование более ранней версии `Http1` &ast;&ast;</span><span class="sxs-lookup"><span data-stu-id="98a70-153">Downgrade to `Http1` &ast;&ast;</span></span>     | <span data-ttu-id="98a70-154">Без ошибок</span><span class="sxs-lookup"><span data-stu-id="98a70-154">No error</span></span> |
+
+<span data-ttu-id="98a70-155">&ast;&ast; Настройте совместимые комплекты шифров и задайте для параметра контекста приложения `Microsoft.AspNetCore.Server.Kestrel.EnableWindows81Http2` значение `true`, чтобы включить эти сценарии.</span><span class="sxs-lookup"><span data-stu-id="98a70-155">&ast;&ast; Configure compatible cipher suites and set the app context switch `Microsoft.AspNetCore.Server.Kestrel.EnableWindows81Http2` to `true` to enable these scenarios.</span></span>
+
+#### <a name="reason-for-change"></a><span data-ttu-id="98a70-156">Причина изменения</span><span class="sxs-lookup"><span data-stu-id="98a70-156">Reason for change</span></span>
+
+<span data-ttu-id="98a70-157">Это изменение гарантирует, что ошибки совместимости для HTTP/2 по TLS в более старых версиях Windows отображаются как можно раньше и точнее.</span><span class="sxs-lookup"><span data-stu-id="98a70-157">This change ensures compatibility errors for HTTP/2 over TLS on older Windows versions are surfaced as early and as clearly as possible.</span></span>
+
+#### <a name="recommended-action"></a><span data-ttu-id="98a70-158">Рекомендованное действие</span><span class="sxs-lookup"><span data-stu-id="98a70-158">Recommended action</span></span>
+
+<span data-ttu-id="98a70-159">Необходимо обеспечить отключение HTTP/2 по TLS в несовместимых версиях Windows.</span><span class="sxs-lookup"><span data-stu-id="98a70-159">Ensure HTTP/2 over TLS is disabled on incompatible Windows versions.</span></span> <span data-ttu-id="98a70-160">Windows 8.1 и Windows Server 2012 R2 несовместимы, так как по умолчанию в них отсутствуют необходимые шифры.</span><span class="sxs-lookup"><span data-stu-id="98a70-160">Windows 8.1 and Windows Server 2012 R2 are incompatible since they lack the necessary ciphers by default.</span></span> <span data-ttu-id="98a70-161">Однако можно обновить параметры конфигурации компьютера для использования шифров, совместимых с HTTP/2.</span><span class="sxs-lookup"><span data-stu-id="98a70-161">However, it's possible to update the Computer Configuration settings to use HTTP/2 compatible ciphers.</span></span> <span data-ttu-id="98a70-162">Дополнительные сведения см. в разделе [Комплекты шифров TLS в Windows 8.1](/windows/win32/secauthn/tls-cipher-suites-in-windows-8-1).</span><span class="sxs-lookup"><span data-stu-id="98a70-162">For more information, see [TLS cipher suites in Windows 8.1](/windows/win32/secauthn/tls-cipher-suites-in-windows-8-1).</span></span> <span data-ttu-id="98a70-163">После настройки необходимо включить HTTP/2 по TLS в Kestrel путем настройки параметра контекста приложения `Microsoft.AspNetCore.Server.Kestrel.EnableWindows81Http2`.</span><span class="sxs-lookup"><span data-stu-id="98a70-163">Once configured, HTTP/2 over TLS on Kestrel must be enabled by setting the app context switch `Microsoft.AspNetCore.Server.Kestrel.EnableWindows81Http2`.</span></span> <span data-ttu-id="98a70-164">Пример:</span><span class="sxs-lookup"><span data-stu-id="98a70-164">For example:</span></span>
+
+```csharp
+AppContext.SetSwitch("Microsoft.AspNetCore.Server.Kestrel.EnableWindows81Http2", true);
+```
+
+<span data-ttu-id="98a70-165">Основная поддержка не изменилась.</span><span class="sxs-lookup"><span data-stu-id="98a70-165">No underlying support has changed.</span></span> <span data-ttu-id="98a70-166">Например, HTTP/2 по TLS никогда не поддерживался в Windows 8 и Windows Server 2012.</span><span class="sxs-lookup"><span data-stu-id="98a70-166">For example, HTTP/2 over TLS has never worked on Windows 8 or Windows Server 2012.</span></span> <span data-ttu-id="98a70-167">В результате этого изменения меняется представление ошибок в этих неподдерживаемых сценариях.</span><span class="sxs-lookup"><span data-stu-id="98a70-167">This change modifies how errors in these unsupported scenarios are presented.</span></span>
+
+#### <a name="category"></a><span data-ttu-id="98a70-168">Категория</span><span class="sxs-lookup"><span data-stu-id="98a70-168">Category</span></span>
+
+<span data-ttu-id="98a70-169">ASP.NET Core</span><span class="sxs-lookup"><span data-stu-id="98a70-169">ASP.NET Core</span></span>
+
+#### <a name="affected-apis"></a><span data-ttu-id="98a70-170">Затронутые API</span><span class="sxs-lookup"><span data-stu-id="98a70-170">Affected APIs</span></span>
+
+<span data-ttu-id="98a70-171">Отсутствуют</span><span class="sxs-lookup"><span data-stu-id="98a70-171">None</span></span>
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis
+
+-->

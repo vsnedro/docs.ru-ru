@@ -1,5 +1,6 @@
 ---
 title: Интерпретация сетевой трассировки
+description: Узнайте, как использовать трассировку для захвата вызовов, которые приложение выполняет для различных элементов класса System.Net в .NET Framework.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - TraceMode attribute
@@ -9,24 +10,24 @@ helpviewer_keywords:
 - text, network tracing output
 - includehex
 ms.assetid: ad22b4b8-00af-4778-9cca-cb609ce1f8ff
-ms.openlocfilehash: fd617e152b1e86cc71dd8e3cc8a01f1d2f52c30a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7a17e4ba14d8c5fe136667c4eb5bc5b2fd7a8242
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047893"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502370"
 ---
-# <a name="interpreting-network-tracing"></a><span data-ttu-id="69ab0-102">Интерпретация сетевой трассировки</span><span class="sxs-lookup"><span data-stu-id="69ab0-102">Interpreting Network Tracing</span></span>
-<span data-ttu-id="69ab0-103">Если включена трассировка сети, ее можно использовать для записи вызовов, осуществляемых приложением к различным членам класса <xref:System.Net>.</span><span class="sxs-lookup"><span data-stu-id="69ab0-103">When network tracing is enabled, you can use tracing to capture calls your application makes to various <xref:System.Net> class members.</span></span> <span data-ttu-id="69ab0-104">Выходные данные этих вызовов могут быть аналогичны приведенным далее.</span><span class="sxs-lookup"><span data-stu-id="69ab0-104">The output from these calls may be similar to the following examples.</span></span>  
+# <a name="interpreting-network-tracing"></a><span data-ttu-id="f8e0a-103">Интерпретация сетевой трассировки</span><span class="sxs-lookup"><span data-stu-id="f8e0a-103">Interpreting Network Tracing</span></span>
+<span data-ttu-id="f8e0a-104">Если включена трассировка сети, ее можно использовать для записи вызовов, осуществляемых приложением к различным членам класса <xref:System.Net>.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-104">When network tracing is enabled, you can use tracing to capture calls your application makes to various <xref:System.Net> class members.</span></span> <span data-ttu-id="f8e0a-105">Выходные данные этих вызовов могут быть аналогичны приведенным далее.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-105">The output from these calls may be similar to the following examples.</span></span>  
   
 ```output
 [588]   (4357)   Entering Socket#33574638::Send()  
 [588]   (4387)   Exiting Socket#33574638::Send()-> 61#61
 ```  
   
- <span data-ttu-id="69ab0-105">В приведенном выше примере [588] — уникальный идентификатор текущего потока.</span><span class="sxs-lookup"><span data-stu-id="69ab0-105">In the preceding example, [588] is the current thread's unique identifier.</span></span> <span data-ttu-id="69ab0-106">(4357) и (4387) — метки времени, обозначающие количество миллисекунд, прошедших с момента запуска приложения.</span><span class="sxs-lookup"><span data-stu-id="69ab0-106">(4357) and (4387) are timestamps denoting the number of milliseconds that have elapsed since the application started.</span></span> <span data-ttu-id="69ab0-107">Данные, которые идут за меткой времени, указывают на приложение, начинающее и завершающее метод **Socket.Send**.</span><span class="sxs-lookup"><span data-stu-id="69ab0-107">The data following the timestamp shows the application entering and exiting the method **Socket.Send**.</span></span> <span data-ttu-id="69ab0-108">Объект, выполняющий метод **Send**, имеет уникальный идентификатор 33574638.</span><span class="sxs-lookup"><span data-stu-id="69ab0-108">The object executing the **Send** method has 33574638 as its unique identifier.</span></span> <span data-ttu-id="69ab0-109">Трассировка завершения метода содержит возвращаемое значение (61 в предыдущем примере).</span><span class="sxs-lookup"><span data-stu-id="69ab0-109">The method exit trace includes the return value (61 in the preceding example).</span></span>  
+ <span data-ttu-id="f8e0a-106">В приведенном выше примере [588] — уникальный идентификатор текущего потока.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-106">In the preceding example, [588] is the current thread's unique identifier.</span></span> <span data-ttu-id="f8e0a-107">(4357) и (4387) — метки времени, обозначающие количество миллисекунд, прошедших с момента запуска приложения.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-107">(4357) and (4387) are timestamps denoting the number of milliseconds that have elapsed since the application started.</span></span> <span data-ttu-id="f8e0a-108">Данные, которые идут за меткой времени, указывают на приложение, начинающее и завершающее метод **Socket.Send**.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-108">The data following the timestamp shows the application entering and exiting the method **Socket.Send**.</span></span> <span data-ttu-id="f8e0a-109">Объект, выполняющий метод **Send**, имеет уникальный идентификатор 33574638.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-109">The object executing the **Send** method has 33574638 as its unique identifier.</span></span> <span data-ttu-id="f8e0a-110">Трассировка завершения метода содержит возвращаемое значение (61 в предыдущем примере).</span><span class="sxs-lookup"><span data-stu-id="f8e0a-110">The method exit trace includes the return value (61 in the preceding example).</span></span>  
   
- <span data-ttu-id="69ab0-110">Сетевая трассировка может записывать сетевой трафик, отправленный из приложения или полученный им с помощью протоколов уровня приложения, таких как HTTP.</span><span class="sxs-lookup"><span data-stu-id="69ab0-110">Network traces can capture network traffic that is sent from or received by your application using application-level protocols such as Hypertext Transfer Protocol (HTTP).</span></span> <span data-ttu-id="69ab0-111">Эти данные могут захватываться как текст и шестнадцатеричные данные.</span><span class="sxs-lookup"><span data-stu-id="69ab0-111">This data can be captured as text and, optionally, hexadecimal data.</span></span> <span data-ttu-id="69ab0-112">Шестнадцатеричные данные доступны при указании **includehex** в качестве значения атрибута **tracemode**.</span><span class="sxs-lookup"><span data-stu-id="69ab0-112">Hexadecimal data is available when you specify **includehex** as the value of the **tracemode** attribute.</span></span> <span data-ttu-id="69ab0-113">(Подробные сведения об этом атрибуте см. в разделе [Практическое руководство. Настройка трассировки сети](how-to-configure-network-tracing.md).) Следующий пример трассировки был создан с помощью **includehex**.</span><span class="sxs-lookup"><span data-stu-id="69ab0-113">(For detailed information about this attribute, see [How to: Configure Network Tracing](how-to-configure-network-tracing.md).) The following example trace was generated using **includehex**.</span></span>  
+ <span data-ttu-id="f8e0a-111">Сетевая трассировка может записывать сетевой трафик, отправленный из приложения или полученный им с помощью протоколов уровня приложения, таких как HTTP.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-111">Network traces can capture network traffic that is sent from or received by your application using application-level protocols such as Hypertext Transfer Protocol (HTTP).</span></span> <span data-ttu-id="f8e0a-112">Эти данные могут захватываться как текст и шестнадцатеричные данные.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-112">This data can be captured as text and, optionally, hexadecimal data.</span></span> <span data-ttu-id="f8e0a-113">Шестнадцатеричные данные доступны при указании **includehex** в качестве значения атрибута **tracemode**.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-113">Hexadecimal data is available when you specify **includehex** as the value of the **tracemode** attribute.</span></span> <span data-ttu-id="f8e0a-114">(Подробные сведения об этом атрибуте см. в разделе [Практическое руководство. Настройка трассировки сети](how-to-configure-network-tracing.md).) Следующий пример трассировки был создан с помощью **includehex**.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-114">(For detailed information about this attribute, see [How to: Configure Network Tracing](how-to-configure-network-tracing.md).) The following example trace was generated using **includehex**.</span></span>  
   
  `[1692]   (1142)   00000000 : 47 45 54 20 2F 77 70 61-64 2E 64 61 74 20 48 54 : GET /wpad.dat HT`  
   
@@ -36,7 +37,7 @@ ms.locfileid: "71047893"
   
  `[1692]   (1142)   00000030 : 6F 6E 3A 20 43 6C 6F 73-65 0D 0A 0D 0A     : on: Close....`  
   
- <span data-ttu-id="69ab0-114">Чтобы опустить шестнадцатеричные данные, укажите **protocolonly** в качестве значения атрибута **tracemode**.</span><span class="sxs-lookup"><span data-stu-id="69ab0-114">To omit hexadecimal data, specify **protocolonly** as the value for the **tracemode** attribute.</span></span> <span data-ttu-id="69ab0-115">В следующем примере показана трассировка с указанным значением **protocolonly**.</span><span class="sxs-lookup"><span data-stu-id="69ab0-115">The following example shows the trace when **protocolonly** is specified.</span></span>  
+ <span data-ttu-id="f8e0a-115">Чтобы опустить шестнадцатеричные данные, укажите **protocolonly** в качестве значения атрибута **tracemode**.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-115">To omit hexadecimal data, specify **protocolonly** as the value for the **tracemode** attribute.</span></span> <span data-ttu-id="f8e0a-116">В следующем примере показана трассировка с указанным значением **protocolonly**.</span><span class="sxs-lookup"><span data-stu-id="f8e0a-116">The following example shows the trace when **protocolonly** is specified.</span></span>  
   
  `[2444]   (594)   Data from ConnectStream#33574638::WriteHeaders<<GET /wpad.dat HTTP/1.1`  
   
@@ -44,8 +45,8 @@ ms.locfileid: "71047893"
   
  `Connection: Close`  
   
-## <a name="see-also"></a><span data-ttu-id="69ab0-116">См. также</span><span class="sxs-lookup"><span data-stu-id="69ab0-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f8e0a-117">См. также</span><span class="sxs-lookup"><span data-stu-id="f8e0a-117">See also</span></span>
 
-- [<span data-ttu-id="69ab0-117">Включение трассировки сети</span><span class="sxs-lookup"><span data-stu-id="69ab0-117">Enabling Network Tracing</span></span>](enabling-network-tracing.md)
-- [<span data-ttu-id="69ab0-118">Практическое руководство. Настройка трассировки сети</span><span class="sxs-lookup"><span data-stu-id="69ab0-118">How to: Configure Network Tracing</span></span>](how-to-configure-network-tracing.md)
-- [<span data-ttu-id="69ab0-119">Трассировка сети в .NET Framework</span><span class="sxs-lookup"><span data-stu-id="69ab0-119">Network Tracing in the .NET Framework</span></span>](network-tracing.md)
+- [<span data-ttu-id="f8e0a-118">Включение трассировки сети</span><span class="sxs-lookup"><span data-stu-id="f8e0a-118">Enabling Network Tracing</span></span>](enabling-network-tracing.md)
+- [<span data-ttu-id="f8e0a-119">Практическое руководство. Настройка трассировки сети</span><span class="sxs-lookup"><span data-stu-id="f8e0a-119">How to: Configure Network Tracing</span></span>](how-to-configure-network-tracing.md)
+- [<span data-ttu-id="f8e0a-120">Трассировка сети в .NET Framework</span><span class="sxs-lookup"><span data-stu-id="f8e0a-120">Network Tracing in the .NET Framework</span></span>](network-tracing.md)

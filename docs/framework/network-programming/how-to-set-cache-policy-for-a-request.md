@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Задание политики кэширования для запроса
+description: Узнайте, как настроить политику кэширования для запроса в .NET Framework. Эта политика кэширования позволяет использовать ресурсы из кэша на срок до одного дня.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,18 +8,18 @@ dev_langs:
 helpviewer_keywords:
 - request cache policies
 ms.assetid: 39c15e40-586b-4ac9-9cce-146f74b7e545
-ms.openlocfilehash: 4ad74d69391da0e815faf9c278f2d9bea03937d4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 248cbdd0921564898c5d3459cffa304793e85584
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180770"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502435"
 ---
-# <a name="how-to-set-cache-policy-for-a-request"></a><span data-ttu-id="02a42-102">Практическое руководство. Задание политики кэширования для запроса</span><span class="sxs-lookup"><span data-stu-id="02a42-102">How to: Set Cache Policy for a Request</span></span>
-<span data-ttu-id="02a42-103">В следующем примере показана установка политики кэширования для запроса.</span><span class="sxs-lookup"><span data-stu-id="02a42-103">The following example demonstrates setting a cache policy for a request.</span></span> <span data-ttu-id="02a42-104">В качестве входных данных для этого примера используется URI, например `http://www.contoso.com/`.</span><span class="sxs-lookup"><span data-stu-id="02a42-104">The example input is a URI such as `http://www.contoso.com/`.</span></span>  
+# <a name="how-to-set-cache-policy-for-a-request"></a><span data-ttu-id="2fede-104">Практическое руководство. Задание политики кэширования для запроса</span><span class="sxs-lookup"><span data-stu-id="2fede-104">How to: Set Cache Policy for a Request</span></span>
+<span data-ttu-id="2fede-105">В следующем примере показана установка политики кэширования для запроса.</span><span class="sxs-lookup"><span data-stu-id="2fede-105">The following example demonstrates setting a cache policy for a request.</span></span> <span data-ttu-id="2fede-106">В качестве входных данных для этого примера используется URI, например `http://www.contoso.com/`.</span><span class="sxs-lookup"><span data-stu-id="2fede-106">The example input is a URI such as `http://www.contoso.com/`.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="02a42-105">Пример</span><span class="sxs-lookup"><span data-stu-id="02a42-105">Example</span></span>  
- <span data-ttu-id="02a42-106">В следующем примере кода создается политика кэширования, которая разрешает использовать запрашиваемый ресурс из кэша, если ресурс находился в кэше не более одного дня.</span><span class="sxs-lookup"><span data-stu-id="02a42-106">The following code example creates a cache policy that allows the requested resource to be used from the cache if it has not been in the cache for longer than one day.</span></span> <span data-ttu-id="02a42-107">В примере выводится сообщение, которое указывает, использовался ли ресурс из кэша, например `"The response was retrieved from the cache : False."`, а затем выводится название ресурса.</span><span class="sxs-lookup"><span data-stu-id="02a42-107">The example displays a message that indicates whether the resource was used from the cache—for example, `"The response was retrieved from the cache : False."`—and then displays the resource.</span></span> <span data-ttu-id="02a42-108">Для выполнения запроса может использоваться любой кэш между клиентом и сервером.</span><span class="sxs-lookup"><span data-stu-id="02a42-108">A request can be fulfilled by any cache between the client and server.</span></span>  
+## <a name="example"></a><span data-ttu-id="2fede-107">Пример</span><span class="sxs-lookup"><span data-stu-id="2fede-107">Example</span></span>  
+ <span data-ttu-id="2fede-108">В следующем примере кода создается политика кэширования, которая разрешает использовать запрашиваемый ресурс из кэша, если ресурс находился в кэше не более одного дня.</span><span class="sxs-lookup"><span data-stu-id="2fede-108">The following code example creates a cache policy that allows the requested resource to be used from the cache if it has not been in the cache for longer than one day.</span></span> <span data-ttu-id="2fede-109">В примере выводится сообщение, которое указывает, использовался ли ресурс из кэша, например `"The response was retrieved from the cache : False."`, а затем выводится название ресурса.</span><span class="sxs-lookup"><span data-stu-id="2fede-109">The example displays a message that indicates whether the resource was used from the cache—for example, `"The response was retrieved from the cache : False."`—and then displays the resource.</span></span> <span data-ttu-id="2fede-110">Для выполнения запроса может использоваться любой кэш между клиентом и сервером.</span><span class="sxs-lookup"><span data-stu-id="2fede-110">A request can be fulfilled by any cache between the client and server.</span></span>  
   
 ```csharp  
 using System;  
@@ -105,10 +106,10 @@ Namespace Examples.System.Net.Cache
 End Namespace  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="02a42-109">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="02a42-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2fede-111">См. также</span><span class="sxs-lookup"><span data-stu-id="2fede-111">See also</span></span>
 
-- [<span data-ttu-id="02a42-110">Управление кэшем для сетевых приложений</span><span class="sxs-lookup"><span data-stu-id="02a42-110">Cache Management for Network Applications</span></span>](cache-management-for-network-applications.md)
-- [<span data-ttu-id="02a42-111">Политика кэша</span><span class="sxs-lookup"><span data-stu-id="02a42-111">Cache Policy</span></span>](cache-policy.md)
-- [<span data-ttu-id="02a42-112">Политики кэша на основе расположения</span><span class="sxs-lookup"><span data-stu-id="02a42-112">Location-Based Cache Policies</span></span>](location-based-cache-policies.md)
-- [<span data-ttu-id="02a42-113">Политики кэша на основе времени</span><span class="sxs-lookup"><span data-stu-id="02a42-113">Time-Based Cache Policies</span></span>](time-based-cache-policies.md)
-- [<span data-ttu-id="02a42-114">Элемент \<requestCaching> (параметры сети)</span><span class="sxs-lookup"><span data-stu-id="02a42-114">\<requestCaching> Element (Network Settings)</span></span>](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+- [<span data-ttu-id="2fede-112">Управление кэшем для сетевых приложений</span><span class="sxs-lookup"><span data-stu-id="2fede-112">Cache Management for Network Applications</span></span>](cache-management-for-network-applications.md)
+- [<span data-ttu-id="2fede-113">Политика кэша</span><span class="sxs-lookup"><span data-stu-id="2fede-113">Cache Policy</span></span>](cache-policy.md)
+- [<span data-ttu-id="2fede-114">Политики кэша на основе расположения</span><span class="sxs-lookup"><span data-stu-id="2fede-114">Location-Based Cache Policies</span></span>](location-based-cache-policies.md)
+- [<span data-ttu-id="2fede-115">Политики кэша на основе времени</span><span class="sxs-lookup"><span data-stu-id="2fede-115">Time-Based Cache Policies</span></span>](time-based-cache-policies.md)
+- [<span data-ttu-id="2fede-116">Элемент \<requestCaching> (параметры сети)</span><span class="sxs-lookup"><span data-stu-id="2fede-116">\<requestCaching> Element (Network Settings)</span></span>](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)
