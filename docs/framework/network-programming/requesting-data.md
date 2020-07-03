@@ -1,5 +1,6 @@
 ---
 title: Запрос данных
+description: Узнайте, как благодаря подключаемым протоколам можно разрабатывать приложения, использующие единый интерфейс для извлечения данных из нескольких протоколов.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - receiving data, about receiving data
 - Internet, requesting data
 ms.assetid: df6f1e1d-6f2a-45dd-8141-4a85c3dafe1d
-ms.openlocfilehash: 1f367caf7656a83597b6262a5746686df15d33b4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 19350d685a81d56657ca0a117d61b50ae24fab6a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047318"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502188"
 ---
 # <a name="requesting-data"></a>Запрос данных
 Для разработки современных интернет-приложений, выполняющихся в распределенной операционной среде, требуется простой и эффективный способ извлечения данных из ресурсов любого типа. Благодаря подключаемым протоколам можно разрабатывать приложения, использующие единый интерфейс для извлечения данных из нескольких интернет-протоколов.  
@@ -52,7 +53,7 @@ Dim sr As StreamReader
 sr = New StreamReader(resp.GetResponseStream(), Encoding.ASCII)  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сетевое программирование в .NET Framework](index.md)
 - [Практическое руководство. Запрос веб-страницы и получение результатов в виде потока](how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md)

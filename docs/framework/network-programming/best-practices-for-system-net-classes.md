@@ -1,5 +1,6 @@
 ---
 title: Рекомендации по использованию классов System.Net
+description: Следуйте этим рекомендациям по использованию классов, содержащихся в System.Net, при программировании в .NET Framework.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - sending data, best practices
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - best practices, data requests
 - receiving data, best practices
 ms.assetid: 716decc6-5952-47b7-9c5a-ba6fc5698684
-ms.openlocfilehash: c7324dcbc27c95c7d799592700d46c195e7d952b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 583fa5e57c7c4d60252dddfd425596e7acad7c0d
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71048894"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502682"
 ---
 # <a name="best-practices-for-systemnet-classes"></a>Рекомендации по использованию классов System.Net
 В этом разделе приводятся рекомендации по наиболее эффективному использованию классов, содержащихся в <xref:System.Net>:  
@@ -32,6 +33,6 @@ ms.locfileid: "71048894"
   
 - При доступе к узлам, требующим ввода учетных данных, используйте класс <xref:System.Net.CredentialCache> для создания кэша учетных данных вместо того, чтобы предоставлять их с каждым запросом. Класс **CredentialCache** выполняет поиск соответствующих запросу учетных данных в кэше, освобождая вас от необходимости создавать и предоставлять учетные данные на основе URL.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сетевое программирование в .NET Framework](index.md)

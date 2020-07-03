@@ -1,5 +1,6 @@
 ---
 title: Безопасность в сетевом программировании — .NET Framework
+description: Узнайте о популярных способах проверки подлинности приложений, а также о разрешениях для доступа к коду, которые поддерживаются в классах пространства имен System.Net в .NET Framework.
 ms.date: 03/14/2018
 helpviewer_keywords:
 - sending data, Internet security
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - security [.NET Framework], Internet
 - permissions [.NET Framework], Internet
 ms.assetid: afb07899-2707-49ab-a57f-e0caf20d0171
-ms.openlocfilehash: bbe30292e474c9cb5956d96fbbae4d78d464d603
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 546e7223ba4af3029a798fb3edfb503c07e1ab4a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80989237"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502175"
 ---
 # <a name="security-in-network-programming"></a>Безопасность в сетевом программировании
 

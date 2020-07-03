@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Создание домена приложения
+description: Узнайте о том, как создать домен приложения в .NET. Вы можете создать домен приложения, чтобы загрузить сборки и управлять ими лично, или создать сборку для выполнения кода.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - application domains, creating
 ms.assetid: ba1fa43e-49f5-47d9-bd7f-3024af16f4ba
-ms.openlocfilehash: 83bf0ad96b352ed5c015723dd89aee7913d2a88e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8e44e682f64854dbc0181b26f6ed3fa2905b7814
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119885"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104802"
 ---
 # <a name="how-to-create-an-application-domain"></a>Практическое руководство. Создание домена приложения
 Хост-приложение CLR автоматически создает домены приложений в нужный момент. Но можно создать собственные домены приложений и загрузить их в те сборки, которыми требуется управлять отдельно. Кроме того, домены приложений можно создать из доменов, выполняющих код.  

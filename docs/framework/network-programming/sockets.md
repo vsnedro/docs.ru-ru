@@ -1,5 +1,6 @@
 ---
 title: сокеты
+description: Узнайте о классе .NET Framework Socket, который представляет собой версию служб сокетов на основе управляемого кода, предоставляемую API Winsock32.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - application protocols, sockets
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - protocols, sockets
 - Internet, sockets
 ms.assetid: 10d22735-bd37-42c1-a2be-c1932f979a7d
-ms.openlocfilehash: cffad6b4677a880bd63f5ae0232c639f7a262c59
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b44409a0fafc770625be55881ccef3b57045acef
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047257"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502136"
 ---
 # <a name="sockets"></a>сокеты
 Пространство имен <xref:System.Net.Sockets> содержит управляемую реализацию интерфейса Windows Sockets. Все остальные классы для доступа к сети в пространстве имен <xref:System.Net> основываются на этой реализации сокетов.  
@@ -29,7 +30,7 @@ ms.locfileid: "71047257"
   
  Класс **Socket** поддерживает два основных режима: синхронный и асинхронный. В синхронном режиме при вызове функций, выполняющих сетевые операции (например, <xref:System.Net.Sockets.Socket.Send%2A> и <xref:System.Net.Sockets.Socket.Receive%2A>), ожидается завершение операций, прежде чем управление возвращается вызывающей программе. В асинхронном режиме вызовы возвращаются немедленно.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Создание сокета](how-to-create-a-socket.md)
 

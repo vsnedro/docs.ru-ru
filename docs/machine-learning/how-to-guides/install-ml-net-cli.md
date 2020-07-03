@@ -1,14 +1,14 @@
 ---
 title: Установка средства ML.NET CLI
 description: Узнайте, как установить, обновить, удалить средство ML.NET CLI, или вернутся к его предыдущей версии.
-ms.date: 12/18/2019
+ms.date: 06/08/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 9f678c7117d32bf817139951db7eef2c3d0f5eb2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 13203246411deadf3ab13a5eba0d2c8e6e9027c5
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78848643"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84602275"
 ---
 # <a name="how-to-install-the-mlnet-command-line-interface-cli-tool"></a>Установка средства ML.NET CLI
 
@@ -21,13 +21,13 @@ ML.NET CLI создает качественные модели ML.NET и ис�
 
 ## <a name="pre-requisites"></a>Предварительные требования
 
-- [Пакет SDK для .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
-- (Необязательно) [Visual Studio 2017 или 2019](https://visualstudio.microsoft.com/vs/)
+- (Необязательно) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 
 Вы можете запускать проекты, написанные на C#, из Visual Studio по нажатию кнопки `F5` или с помощью `dotnet run` (.NET Core CLI).
 
-Примечание. Если после установки [пакета SDK для .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2)`dotnet tool` команда не работает, выйдите из Windows и снова войдите в систему.
+Примечание. Если после установки пакета SDK для .NET Core команда `dotnet tool` не работает, выйдите из Windows и снова войдите в систему.
 
 ## <a name="install"></a>Установка
 
@@ -54,7 +54,7 @@ Tool 'mlnet' (version 'X.X.X') was successfully installed.
 mlnet
 ```
 
-Вы увидите справку для команд, доступных для средства mlnet, например для команды auto-train.
+Вы увидите справку для команд, доступных для средства mlnet, например для команды classification.
 
 ## <a name="install-a-specific-release-version"></a>Установка конкретного выпуска
 

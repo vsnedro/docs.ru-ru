@@ -1,5 +1,6 @@
 ---
 title: Трассировка сети в .NET Framework
+description: Узнайте о трассировке сети в .NET Framework для доступа к сведениям о вызовах методов и о сетевом трафике управляемого приложения.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - debugging [.NET Framework], network tracing
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - output, network tracing
 - method invocations
 ms.assetid: e993b7c3-087f-45d8-9c02-9dded936d804
-ms.openlocfilehash: afb9c3a04258b543e373b6973e576f71f90d7003
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 172f8ce4a50fe9294ee34cf65c0a39eb2f29badc
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047594"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502253"
 ---
 # <a name="network-tracing-in-the-net-framework"></a>Трассировка сети в .NET Framework
 Трассировка сети в .NET Framework предоставляет доступ к сведениям о вызовах методов и о сетевом трафике, созданном управляемым приложением. Эта возможность полезна для отладки приложений на стадии разработки, а также для анализа развернутых приложений. Выходные данные трассировки сети можно настраивать с целью поддержки различных сценариев использования во время разработки и в производственной среде.  
@@ -35,7 +36,7 @@ ms.locfileid: "71047594"
 > [!NOTE]
 > Данный член генерирует сведения трассировки, если в приложении включена трассировка сети. Дополнительные сведения о трассировке см. в разделе "Трассировка сети".  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Включение трассировки сети](enabling-network-tracing.md)
 - [Практическое руководство. Настройка трассировки сети](how-to-configure-network-tracing.md)

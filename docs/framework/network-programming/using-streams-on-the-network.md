@@ -1,5 +1,6 @@
 ---
 title: Использование потоков в сети
+description: Сетевые ресурсы представлены в .NET Framework как потоки. Класс NetworkStream реализует класс Stream для использования с сетевыми ресурсами.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - Internet, streams
 - streams
 ms.assetid: 02b05fba-7235-45ce-94e5-060436ee0875
-ms.openlocfilehash: 7d5a2e3eec9b49731a09f6eb41a8d8500a59b45c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f8d35b43c9b46a77bfd0c78f7d0118093b6fe824
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180623"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501980"
 ---
 # <a name="using-streams-on-the-network"></a>Использование потоков в сети
 Сетевые ресурсы представлены в .NET Framework как потоки. Если рассматривать потоки в целом, платформа .NET Framework предоставляет указанные ниже возможности.  
@@ -102,7 +103,7 @@ Dim sr As _
 sr.Close()  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Запрос данных с помощью класса WebRequest](how-to-request-data-using-the-webrequest-class.md)
 - [Запрос данных](requesting-data.md)

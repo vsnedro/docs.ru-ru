@@ -1,5 +1,6 @@
 ---
 title: HTTP
+description: Узнайте о полной поддержке HTTP, которая доступна в .NET Framework посредством классов HttpWebRequest и HttpWebResponse.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - protocols, HTTP
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - HTTP, about HTTP
 - HttpWebRequest class, sending and receiving data
 ms.assetid: 985fe5d8-eb71-4024-b361-41fbdc1618d8
-ms.openlocfilehash: c8c799a50e5d63bbf411c338eb9e93f85a942bb0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ffb7a5d027ef7691d03caf0ac45d4a3dd9bdb652
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71048011"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502422"
 ---
 # <a name="http"></a>HTTP
 Платформа .NET предоставляет полную поддержку протокола HTTP, на который приходит большая часть интернет-трафика, с помощью классов <xref:System.Net.HttpWebRequest> и <xref:System.Net.HttpWebResponse>. Эти классы, производные от <xref:System.Net.WebRequest> и <xref:System.Net.WebResponse>, возвращаются по умолчанию всякий раз, когда статический метод <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> обнаруживает URI, начинающийся с "http" или "https". В большинстве случаев классы **WebRequest** и **WebResponse** предоставляют все необходимое для выполнения запроса, но если вам необходим доступ к возможностям HTTP-протокола, представленным в виде свойств, можно выполнить приведение этих классов к **HttpWebRequest** или **HttpWebResponse**.  
@@ -31,8 +32,8 @@ ms.locfileid: "71048011"
   
  Приложения получают ошибки протокола HTTP, перехватывая <xref:System.Net.WebException> со свойством <xref:System.Net.WebException.Status%2A>, установленным в значение <xref:System.Net.WebExceptionStatus>. Свойство <xref:System.Net.WebException.Response%2A> означает фактическую обнаруженную ошибку HTTP и содержит объект **WebResponse**, отправленный сервером.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Доступ к Интернету через прокси-сервер](accessing-the-internet-through-a-proxy.md)
 - [Использование протоколов приложений](using-application-protocols.md)
-- [Практическое руководство. Доступ к свойствам, относящимся с HTTP](how-to-access-http-specific-properties.md)
+- [Практическое руководство. Доступ к свойствам, относящимся к HTTP](how-to-access-http-specific-properties.md)

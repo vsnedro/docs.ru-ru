@@ -1,5 +1,6 @@
 ---
 title: Обработка ошибок
+description: Узнайте об исключениях системы и веб-исключениях, создаваемых WebRequest и WebResponse. Используйте свойство Status, чтобы понять, в чем проблема, и устранить ее.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - ConnectionClosed enumeration member
 - SecureChannelFailure enumeration member
 ms.assetid: 657141cd-5cf5-4fdb-a4b2-4c040eba84b5
-ms.openlocfilehash: f5be5d8e14d7aa2d98009fc10c9cce314e745ed1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 786b2bd8bc4d1b394bcfe920053b2f4f55d1cdea
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180869"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502578"
 ---
 # <a name="handling-errors"></a>Обработка ошибок
 
@@ -46,7 +47,7 @@ ms.locfileid: "79180869"
   
 В следующей таблице описаны возможные значения свойства **Status**.  
   
-|Status|Описание:|  
+|Status|Описание|  
 |------------|-----------------|  
 |ConnectFailure|Не удалось связаться с удаленной службой на транспортном уровне.|  
 |ConnectionClosed|Соединение было преждевременно закрыто.|  
@@ -58,7 +59,7 @@ ms.locfileid: "79180869"
 |SecureChannelFailure|Произошла ошибка в защищенном канале связи.|  
 |SendFailure|Не удалось отправить полный запрос на удаленный сервер.|  
 |ServerProtocolViolation|Ответ от сервера не является допустимым ответом HTTP.|  
-|Успешно|Ошибки не обнаружены.|  
+|Success|Ошибки не обнаружены.|  
 |Время ожидания|В течение заданного для запроса времени ожидания не был получен ответ.|  
 |TrustFailure|Не удалось проверить сертификат сервера.|  
 |MessageLengthLimitExceeded|Получено сообщение, которое превышает ограничение, заданное при отправке запроса или получении ответа от сервера.|  
@@ -168,7 +169,7 @@ End Try
   
 Если возникает исключение **SocketException**, класс **SocketException** присваивает свойству <xref:System.Net.Sockets.SocketException.ErrorCode%2A> значение, отражающее последнюю ошибку сокета операционной системы. Дополнительные сведения о кодах ошибок сокета см. в документации по кодам ошибок API Winsock 2.0 на веб-сайте MSDN.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обработка и создание исключений в .NET](../../standard/exceptions/index.md)
 - [Запрос данных](requesting-data.md)

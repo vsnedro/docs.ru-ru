@@ -2,12 +2,12 @@
 title: Создание настраиваемых атрибутов (C#)
 ms.date: 07/20/2015
 ms.assetid: 500e1977-c6de-462d-abce-78a0eb1eda22
-ms.openlocfilehash: ec959723c339a13a40fd62388421ceacb736dfca
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 3a70b738b376e52482e63f2eb9cc4d7bb62a9b35
+ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389561"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85141622"
 ---
 # <a name="creating-custom-attributes-c"></a>Создание настраиваемых атрибутов (C#)
 Собственные настраиваемые атрибуты можно создать, определив класс атрибута, то есть класс, прямо или косвенно наследующий от <xref:System.Attribute>, который упрощает задание определений атрибутов в метаданных. Предположим, что требуется пометить тип тегом с именем программиста, который его разработал. Вы можете определить класс настраиваемых атрибутов `Author`:  
@@ -16,12 +16,12 @@ ms.locfileid: "81389561"
 [System.AttributeUsage(System.AttributeTargets.Class |  
                        System.AttributeTargets.Struct)  
 ]  
-public class Author : System.Attribute  
+public class AuthorAttribute : System.Attribute  
 {  
     private string name;  
     public double version;  
   
-    public Author(string name)  
+    public AuthorAttribute(string name)  
     {  
         this.name = name;  
         version = 1.0;  
@@ -29,7 +29,7 @@ public class Author : System.Attribute
 }  
 ```  
   
- Имя класса — это имя атрибута, `Author`. Он является производным от `System.Attribute`, поэтому это класс настраиваемых атрибутов. Параметры конструктора являются позиционными параметрами настраиваемого атрибута. В этом примере `name` является позиционным параметром. Все открытые поля или свойства, доступные для чтения и записи, являются именованными параметрами. В этом случае `version` — единственный именованный параметр. Обратите внимание на использование атрибута `AttributeUsage`, делающего атрибут `Author` допустимым только для класса и объявлений `struct`.  
+ Имя класса `AuthorAttribute` является именем атрибута, `Author` плюс суффикс `Attribute`. Он является производным от `System.Attribute`, поэтому это класс настраиваемых атрибутов. Параметры конструктора являются позиционными параметрами настраиваемого атрибута. В этом примере `name` является позиционным параметром. Все открытые поля или свойства, доступные для чтения и записи, являются именованными параметрами. В этом случае `version` — единственный именованный параметр. Обратите внимание на использование атрибута `AttributeUsage`, делающего атрибут `Author` допустимым только для класса и объявлений `struct`.  
   
  Этот атрибут можно использовать следующим образом:  
   
@@ -48,7 +48,7 @@ class SampleClass
                        System.AttributeTargets.Struct,  
                        AllowMultiple = true)  // multiuse attribute  
 ]  
-public class Author : System.Attribute  
+public class AuthorAttribute : System.Attribute  
 ```  
   
  В следующем примере кода несколько атрибутов одного типа применяются к классу.  

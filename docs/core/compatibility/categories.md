@@ -1,24 +1,24 @@
 ---
-title: Категории критических изменений
-description: Узнайте о том, как классифицируются критические изменения в .NET Core.
+title: Совместимость
+description: Узнайте об изменениях в коде, которые могут повлиять на совместимость в .NET.
 ms.date: 06/10/2019
-ms.openlocfilehash: b273ebbb82da803cde66ea34760aa1779c6c1ca5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1cf14b7ff4143367653bd1c305cc1dda6711f980
+ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77093049"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415697"
 ---
-# <a name="breaking-change-categories"></a>Категории критических изменений
+# <a name="how-code-changes-can-affect-compatibility"></a>Влияние изменений кода на совместимость
 
-*Совместимость* — это возможность компилировать или выполнять код в версии реализации .NET, отличной от той, в которой код был изначально разработан. Изменение может повлиять на совместимость шестью различными способами. [Отдельные виды изменений](index.md), которые учитываются при оценке совместимости, относятся к следующим категориям:
+*Совместимость* — это возможность компилировать или выполнять код в версии реализации .NET, отличной от той, в которой код был изначально разработан. [Конкретное изменение](index.md) может повлиять на совместимость шестью различными способами:
 
-- [Изменение поведения](#behavioral-change)
-- [Совместимость на уровне двоичного кода](#binary-compatibility)
-- [Совместимость исходного кода](#source-compatibility)
-- [Совместимость во время разработки](#design-time-compatibility)
-- [Обратная совместимость](#backwards-compatibility)
-- [Прямая совместимость](#forward-compatibility) (не является целью в .NET Core).
+- [изменение поведения;](#behavioral-change)
+- [совместимость на уровне двоичного кода;](#binary-compatibility)
+- [совместимость исходного кода;](#source-compatibility)
+- [совместимость во время разработки;](#design-time-compatibility)
+- [обратная совместимость;](#backwards-compatibility)
+- [прямая совместимость](#forward-compatibility) (не является целью в .NET Core).
 
 ## <a name="behavioral-change"></a>Изменение поведения
 
@@ -52,6 +52,6 @@ ms.locfileid: "77093049"
 
 Поддержка прямой совместимости не является целью в .NET Core.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оценка критических изменений в .NET Core](index.md)

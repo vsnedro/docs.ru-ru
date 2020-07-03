@@ -2,15 +2,15 @@
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
 description: В этой статье приведен список критических изменений в ASP.NET Core.
-ms.date: 06/11/2020
+ms.date: 06/23/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: a6ddf97f907a1cba57e51d6fd516d1f94272f725
-ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
+ms.openlocfilehash: cf6b2eb46504c12aa670ccfc68531598dd9705a3
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84803277"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325456"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
@@ -45,15 +45,18 @@ ASP.NET Core предоставляет функции разработки ве
 - [HTTP. Изменения в инфраструктуре текста ответа](#http-response-body-infrastructure-changes)
 - [HTTP. Внесены изменения в некоторые значения по умолчанию для параметра SameSite для файлов cookie](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP. Синхронный ввод-вывода отключен по умолчанию](#http-synchronous-io-disabled-in-all-servers)
+- [HttpSys: Повторное согласование сертификата клиента по умолчанию отключено](#httpsys-client-certificate-renegotiation-disabled-by-default)
 - [Удостоверение. Удалена перегрузка метода AddDefaultUI](#identity-adddefaultui-method-overload-removed)
 - [Удостоверение. Изменена версия начальной загрузки пользовательского интерфейса](#identity-default-bootstrap-version-of-ui-changed)
 - [Удостоверение. SignInAsync создает исключение для удостоверения, не прошедшего проверку подлинности](#identity-signinasync-throws-exception-for-unauthenticated-identity)
 - [Удостоверение. Конструктор SignInManager принимает новый параметр](#identity-signinmanager-constructor-accepts-new-parameter)
 - [Удостоверение. Пользовательский интерфейс использует функцию статических веб-ресурсов](#identity-ui-uses-static-web-assets-feature)
+- [IIS: строки запросов ПО промежуточного слоя UrlRewrite сохраняются](#iis-urlrewrite-middleware-query-strings-are-preserved)
 - [Kestrel. Обнаружение изменений конфигурации во время выполнения включено по умолчанию](#kestrel-configuration-changes-at-run-time-detected-by-default)
 - [Kestrel. Удалены адаптеры подключений](#kestrel-connection-adapters-removed)
 - [Kestrel. Изменены поддерживаемые версии протокола TLS по умолчанию](#kestrel-default-supported-tls-protocol-versions-changed)
 - [Kestrel. Удалена пустая сборка HTTPS](#kestrel-empty-https-assembly-removed)
+- [Kestrel. HTTP/2 по TLS отключен в несовместимых версиях Windows](#kestrel-http2-disabled-over-tls-on-incompatible-windows-versions)
 - [Kestrel. Заголовки трейлеров запросов перемещены в новую коллекцию](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel. Внесены изменения в слой абстракции транспорта](#kestrel-transport-abstractions-removed-and-made-public)
 - [Локализация. Интерфейсы API отмечены как устаревшие](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
@@ -100,10 +103,22 @@ ASP.NET Core предоставляет функции разработки ве
 
 ***
 
+[!INCLUDE[HttpSys: Client certificate renegotiation disabled by default](~/includes/core-changes/aspnetcore/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md)]
+
+***
+
+[!INCLUDE[IIS: UrlRewrite middleware query strings are preserved](~/includes/core-changes/aspnetcore/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md)]
+
+***
+
 [!INCLUDE[Kestrel: Configuration changes at run time detected by default](~/includes/core-changes/aspnetcore/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md)]
 
 ***
 [!INCLUDE[Kestrel: Default supported TLS protocol versions changed](~/includes/core-changes/aspnetcore/5.0/kestrel-default-supported-tls-protocol-versions-changed.md)]
+
+***
+
+[!INCLUDE[Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](~/includes/core-changes/aspnetcore/5.0/kestrel-disables-http2-over-tls.md)]
 
 ***
 

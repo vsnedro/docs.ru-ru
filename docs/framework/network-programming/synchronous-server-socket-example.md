@@ -1,5 +1,6 @@
 ---
 title: Пример синхронного сокета сервера
+description: В этом примере программа .NET Framework создает сервер, который принимает подключения от клиентов с помощью синхронного сокета. Программа принимает и отправляет эхо-запрос к строке.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - sockets, code examples
 - sockets, synchronous server sockets
 ms.assetid: 5916c764-879f-4716-99fb-1d21c6237f1c
-ms.openlocfilehash: e8924051a7087ac26793722457f934e58a75f23d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0e2fb91dc493b2da4c68a98ac8a62494e78a9fd1
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180665"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502110"
 ---
 # <a name="synchronous-server-socket-example"></a>Пример синхронного сокета сервера
 Приведенная ниже программа создает сервер, который принимает запросы на соединение от клиентов. Сервер создается с использованием синхронного сокета, поэтому выполнение серверного приложения приостанавливается, пока оно ожидает подключения от клиента. Приложение получает строку от клиента, выводит ее в консоли, а затем отправляет строку обратно клиенту. В строке, полученной от клиента, конец сообщения должен быть помечен строкой "\<EOF>".  
@@ -155,7 +156,7 @@ public class SynchronousSocketListener {
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пример синхронного сокета клиента](synchronous-client-socket-example.md)
 - [Использование синхронного сокета сервера](using-a-synchronous-server-socket.md)

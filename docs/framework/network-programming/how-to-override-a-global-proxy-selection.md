@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Переопределение глобальных прокси-серверов
+description: Следуйте инструкциям в приведенном ниже примере, чтобы переопределить выбор глобального прокси-сервера путем отправки запроса на URL-адрес. При этом выделенный фрагмент переопределяется с помощью прокси-сервера.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0da481a9-b414-4230-beb0-e3ceba882fe5
-ms.openlocfilehash: 44845fb67aac4ff9ab9dda8cf4934153c8c4f23c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 91f64775e2f401be9b740fe9e4c41e1087eb9617
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71048262"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502513"
 ---
 # <a name="how-to-override-a-global-proxy-selection"></a>Практическое руководство. Переопределение глобальных прокси-серверов
 В этом примере класс **WebRequest** отправляется на веб-сайт `www.contoso.com`, который переопределяет глобальные прокси-серверы прокси-сервером с именем `alternateproxy` на порту 80.  
@@ -32,7 +33,7 @@ req.Proxy = New WebProxy("http://alternateproxy:80/")
   
 - Директива [`using`](../../csharp/language-reference/keywords/using-directive.md) для пространства имен **System.Net**.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование протоколов приложений](using-application-protocols.md)
 - [Доступ к Интернету через прокси-сервер](accessing-the-internet-through-a-proxy.md)

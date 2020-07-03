@@ -1,5 +1,6 @@
 ---
 title: Использование асинхронных сокетов клиента
+description: В этом примере показано использование асинхронного сокета клиента. Асинхронная модель программирования .NET Framework позволяет приложению продолжать работу во время обработки соединения.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - Internet, sockets
 - client sockets
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
-ms.openlocfilehash: 748745ca6799005dccdbfcbcc37a8c2a38f2a88e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9cf46e9519bcecf4d7a20ff99b86fa5f66af2087
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180648"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502045"
 ---
 # <a name="using-an-asynchronous-client-socket"></a>Использование асинхронных сокетов клиента
 Асинхронный сокет клиента не приостанавливает работу приложения на то время, пока выполняются сетевые операции. Вместо этого он использует стандартную модель асинхронного программирования .NET Framework для обработки операций сетевого подключения в одном потоке, пока приложение продолжает работу в изначальном потоке. Асинхронные сокеты подходят для приложений, которые интенсивно используют сеть или не могут ждать, пока сетевые операции завершатся.  

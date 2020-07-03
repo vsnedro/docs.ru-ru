@@ -1,5 +1,6 @@
 ---
 title: Веб-разрешения и разрешения сокетов
+description: Узнайте, как классы WebPermission и SocketPermission обеспечивают безопасность в Интернете при использовании пространства имен System.Net в .NET Framework.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Networking
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - security [.NET Framework], Internet
 - positions [.NET Framework], granting
 ms.assetid: d51ad8cb-03ae-4a51-bfcd-cfcf6b98afa9
-ms.openlocfilehash: d1b993acbf20eac244e596075c3f826bba3211a1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 08ae360e8097f7281631da2a3f9846994dfbf5b6
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71046867"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84501902"
 ---
 # <a name="web-and-socket-permissions"></a>Веб-разрешения и разрешения сокетов
 Безопасность приложений, использующих пространство имен <xref:System.Net>, в Интернете обеспечивается классами <xref:System.Net.WebPermission> и <xref:System.Net.SocketPermission>. Класс **WebPermission** определяет право приложения на запрос данных из универсального кода ресурса (URI) или предоставления кода URI в Интернете. Класс **SocketPermission** определяет право приложения на использование <xref:System.Net.Sockets.Socket> для приема данных через локальный порт или на связь с удаленными устройствами с помощью транспортного протокола по другому адресу в соответствии с узлом, номером порта и транспортным протоколом сокета.  
@@ -33,7 +34,7 @@ ms.locfileid: "71046867"
   
  Для экземпляров **WebPermission** разрешение на прием означает, что приложение может экспортировать код URI, контролируемый экземпляром **WebPermission**, во внешнюю сеть. Разрешение на подключение означает, что приложение может получать доступ к этому коду URI (удаленному или локальному).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Security](../../standard/security/index.md)
+- [Безопасность](../../standard/security/index.md)
 - [Безопасность в сетевом программировании](security-in-network-programming.md)

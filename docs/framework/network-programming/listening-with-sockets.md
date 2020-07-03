@@ -1,5 +1,6 @@
 ---
 title: прослушивание с помощью сокетов
+description: Узнайте, как создать удаленную службу, в рамках которой сокет сервера открывает порт в сети и ожидает подключения клиента к этому порту.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - listening with sockets
 - Internet, sockets
 ms.assetid: 40e426cc-13db-4371-95eb-f7388bd23ebf
-ms.openlocfilehash: cf8316ede6888b99a8b0c87cfa3426b33be18b7f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0b6de67772bae397373e307ec02ce69a71b0542e
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180743"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502318"
 ---
 # <a name="listening-with-sockets"></a>прослушивание с помощью сокетов
 Сокеты прослушивателя и сервера открывают порт в сети и ожидают, когда клиент подключится к этому порту. В этом примере показано, как создать удаленную службу для сети TCP/IP (хотя существуют и другие семейства сетевых адресов и протоколов).  
@@ -59,7 +60,7 @@ listener.Listen(100);
   
  Метод **Listen** принимает один параметр, который определяет максимальное количество ожидающих подключений для сокета **Socket**. При превышении этого количества клиенту возвращается ошибка "Сервер занят". В данном случае в очередь на подключение размещается до 100 клиентов. 101 клиенту возвращается ответ "Сервер занят".  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование синхронного сокета сервера](using-a-synchronous-server-socket.md)
 - [Использование асинхронных сокетов сервера](using-an-asynchronous-server-socket.md)

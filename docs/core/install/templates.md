@@ -1,19 +1,19 @@
 ---
 title: Установка шаблонов SDK и управление ими — .NET Core
 description: Сведения об установке шаблонов .NET Core в Windows, Linux и macOS.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 04/24/2020
 zone_pivot_groups: operating-systems-set-one
 no-loc:
 - dotnet new
 - dotnet nuget add source
-ms.openlocfilehash: 0a3c8655d55bf63de1e91337ce3a2ac399b07d0f
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.openlocfilehash: 09acae1409eb0492be10bd3a61b14da5be57c6c7
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200603"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85324498"
 ---
 # <a name="manage-net-project-and-item-templates"></a>Создание шаблонов проектов и элементов .NET
 
@@ -29,7 +29,7 @@ ms.locfileid: "82200603"
 
 Шаблоны .NET CLI передаются в [NuGet](https://www.nuget.org/) для широкого распространения. Шаблоны также можно установить из частного веб-канала. Вместо отправки шаблона в веб-канал NuGet файлы шаблонов *nupkg* можно распространять и устанавливать вручную, как описано в разделе [Локальный пакет NuGet](#local-nuget-package).
 
-Дополнительные сведения о настройке каналов NuGet см. в разделе [dotnet nuget add source](../tools/dotnet-nuget-add-source.md).
+Для получения дополнительных сведений о настройке веб-каналов NuGet см. [dotnet nuget add source](../tools/dotnet-nuget-add-source.md).
 
 Чтобы установить пакет шаблона из веб-канала NuGet по умолчанию, используйте команду `dotnet new -i {package-id}`:
 

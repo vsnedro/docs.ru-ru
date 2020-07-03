@@ -1,5 +1,6 @@
 ---
 title: протокол IP версии 6
+description: Узнайте о протоколе IPv6 и его отличиях от IPv4. Приложения .NET Framework поддерживают протокол IPv6, но для этого может потребоваться специальная настройка конфигурации.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - IPv6, improvements
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Internet Protocol version 6, improvements
 - Internet Protocol version 6
 ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
-ms.openlocfilehash: 367db4fa4e585d6066009dbd1afacb154829319a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dd8b0b26e449fba7479d2678aff25ed49e721a90
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047879"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502396"
 ---
 # <a name="internet-protocol-version-6"></a>протокол IP версии 6
 Протокол IP версии 6 (IPv6) — это новый набор стандартных протоколов для сетевого уровня Интернета. IPv6 позволяет устранить множество проблем текущей версии набора интернет-протоколов (известного как IPv4), связанных с нехваткой адресов, безопасностью, автоматической настройкой, расширяемостью и т. д. IPv6 расширяет возможности Интернета для активации новых видов приложений, включая приложения для одноранговой сети и мобильных устройств. Ниже приведены основные проблемы текущего протокола IPv4.  
@@ -57,7 +58,7 @@ ms.locfileid: "71047879"
   
  Сведения, относящиеся к IP версии 6, можно также найти в [этом разделе](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379498%28v=ws.10%29).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пример сокетов IPv6](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms180981%28v=vs.85%29)
 - [Примеры сетевого программирования](network-programming-samples.md)

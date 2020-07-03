@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Настройка трассировки сети
+description: Узнайте, как настроить трассировку сети в файле конфигурации компьютера или приложения. Файл конфигурации приложения имеет приоритет.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - formatting [.NET Framework], network tracing
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - application configuration files, network tracing
 - sockets, trace output
 ms.assetid: 5ef9fe4b-8d3d-490e-9259-1d014b2181af
-ms.openlocfilehash: 06132509860b16d1e22cfdf7e3226c968d16b7cf
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b089746e9838c591ed5ccc9ac9aaeedb217de9a9
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73040646"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502565"
 ---
 # <a name="how-to-configure-network-tracing"></a>Практическое руководство. Настройка трассировки сети
 

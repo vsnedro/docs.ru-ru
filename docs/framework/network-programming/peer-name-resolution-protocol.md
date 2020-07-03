@@ -1,13 +1,14 @@
 ---
 title: Протокол PNRP
+description: Узнайте о протоколе PNRP, безопасной, масштабируемой и динамической регистрации имен, а также о протоколе разрешения имен.
 ms.date: 03/30/2017
 ms.assetid: 11940511-c124-4d91-ae31-d4ed6e81ee58
-ms.openlocfilehash: c8b7b2190349323bf212d816a77f5f7810f6ca2c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 72eb63c2c90f398c515d77cd2b2d693237e533a5
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74428225"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502227"
 ---
 # <a name="peer-name-resolution-protocol"></a>Протокол PNRP
 В одноранговых средах одноранговые узлы используют определенные системы разрешения имен для определения сетевого расположения (адреса, протоколы и порты) друг друга на основе имен и идентификаторов других типов. Раньше разрешение имен одноранговых узлов было затруднено из-за временного характера подключений, а также других недостатков службы доменных имен (DNS).  
@@ -46,7 +47,7 @@ ms.locfileid: "74428225"
   
 - <xref:System.Net.PeerToPeer.PeerNameResolver>. Определяет процесс разрешения имени однорангового узла в его сетевые конечные точки, включая синхронные и асинхронные методы разрешения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.PeerResolvers>
 - <xref:System.Net.PeerToPeer>

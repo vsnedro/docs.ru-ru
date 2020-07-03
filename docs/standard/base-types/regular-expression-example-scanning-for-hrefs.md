@@ -1,7 +1,7 @@
 ---
 title: 'Пример регулярных выражений: Поиск ссылок HREF'
 description: Вы можете изучить пример регулярных выражений в .NET. В этом примере показан поиск в строке входных данных и вывод всех значений атрибута href, а также их позиций.
-ms.date: 03/30/2017
+ms.date: 06/30/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -14,17 +14,19 @@ helpviewer_keywords:
 - regular expressions [.NET Framework], examples
 - pattern-matching with regular expressions, examples
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
-ms.openlocfilehash: 36273901ac9afb762ac70ee5d6dcd80ff0ede11d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7bcc2a4242bfaed3e3340347a30e97e7e4060794
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84583496"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85802860"
 ---
 # <a name="regular-expression-example-scanning-for-hrefs"></a>Пример регулярных выражений: Поиск ссылок HREF
 В следующем примере показаны поиск и вывод всех значений href="...", а также их позиций в строке.  
-  
-## <a name="the-regex-object"></a>Объект Regex  
+
+[!INCLUDE [regex](../../../includes/regex.md)]
+
+## <a name="the-regex-object"></a>Объект Regex
  Поскольку метод `DumpHRefs` может быть вызван из пользовательского кода несколько раз, он использует метод `static` (`Shared` в Visual Basic) <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. Это позволяет обработчику регулярных выражений кэшировать регулярное выражение и избежать дополнительной нагрузки, связанной с созданием объекта <xref:System.Text.RegularExpressions.Regex> при каждом вызове метода. Затем объект <xref:System.Text.RegularExpressions.Match> выполняет итерацию по всем совпадениям в строке.  
   
  [!code-csharp[RegularExpressions.Examples.HREF#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.HREF/cs/example.cs#1)]

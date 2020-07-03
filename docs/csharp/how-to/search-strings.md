@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [C#], searching with String methods
 - strings [C#], searching with regular expressions
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
-ms.openlocfilehash: f5fd61452d6f83bd035b5c6930bd09673c0ded23
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 34f9f2df11f9b7c51fcec2f8475a50ccf4c5e220
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662957"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85324128"
 ---
 # <a name="how-to-search-strings"></a>Практическое руководство. Поиск по строкам
 
@@ -23,11 +23,11 @@ ms.locfileid: "84662957"
 
 ## <a name="does-a-string-contain-text"></a>Содержит ли строка текст?
 
-Методы <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType> и <xref:System.String.EndsWith%2A?displayProperty=nameWithType> выполняют поиск определенного текста в строке. В следующем примере показано использование каждого из этих методов, а также случаи поиска без учета регистра:
+Методы <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType> и <xref:System.String.EndsWith%2A?displayProperty=nameWithType> выполняют поиск определенного текста в строке. В следующем примере показано использование каждого из этих методов, а также сценарии поиска без учета регистра:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs" id="Snippet1":::
 
-В предыдущем примере показано важное правило использования этих методов. По умолчанию поиск выполняется **с учетом регистра**. Для выполнения поиска без учета регистра используйте значение перечисления <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>.
+В предыдущем примере показано важное правило использования этих методов. По умолчанию поиск выполняется **с учетом регистра**. Чтобы выполнить поиск без учета регистра, используйте значение перечисления <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType>.
 
 ## <a name="where-does-the-sought-text-occur-in-a-string"></a>Где искомый текст находится в строке?
 
@@ -41,7 +41,7 @@ ms.locfileid: "84662957"
 
 В следующем примере кода выполняется поиск слов "the" и "their" в предложении без учета регистра. Статический метод <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> выполняет поиск. В метод передается строка и шаблон поиска. В нашем примере третий аргумент задает поиск без учета регистра. Для получения дополнительной информации см. <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.
 
-Шаблон поиска описывает текст для поиска. Следующая таблица описывает каждый элемент шаблона поиска. (В таблице ниже используется одинарный символ `\`, который в строке на языке C# необходимо экранировать как `\\`.)
+Шаблон поиска описывает текст для поиска. Следующая таблица описывает каждый элемент шаблона поиска. (В таблице ниже используется один `\`, который в строке C# необходимо экранировать как `\\`).
 
 | Шаблон  | Значение                          |
 |----------|----------------------------------|

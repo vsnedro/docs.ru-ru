@@ -1,5 +1,6 @@
 ---
 title: Пример асинхронного сокета сервера
+description: В этом примере программа .NET Framework создает сервер, который принимает подключения от клиентов с помощью асинхронного сокета. Программа принимает и отправляет эхо-запрос к строке.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - sockets, code examples
 - asynchronous server sockets
 ms.assetid: 13624cd3-f5c5-4950-8cda-31273b1fa6d1
-ms.openlocfilehash: 8a9a3cb26968c548aa971bac548313a459c2fdf6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 089de8ce9629e30cb6e4458c0f9a4613c9674a21
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180909"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502721"
 ---
 # <a name="asynchronous-server-socket-example"></a>Пример асинхронного сокета сервера
 Приведенная ниже программа создает сервер, который принимает запросы на соединение от клиентов. Сервер создается с использованием асинхронного сокета, поэтому выполнение серверного приложения не приостанавливается, пока оно ожидает подключения от клиента. Приложение получает строку от клиента, выводит ее в консоли, а затем отправляет строку обратно клиенту. В строке, полученной от клиента, конец сообщения должен быть помечен строкой "\<EOF>".  
@@ -289,7 +290,7 @@ public class AsynchronousSocketListener {
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Примеры асинхронных сокетов клиента](asynchronous-client-socket-example.md)
 - [Использование асинхронных сокетов сервера](using-an-asynchronous-server-socket.md)

@@ -1,17 +1,18 @@
 ---
 title: Выполнение приложений интранета с полным доверием
+description: Запустите приложения интрасети с полным доверием, используя .NET 3.5 SP1. Приложения и их сборки библиотек можно запускать как сборки с полным доверием из сетевой папки.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - full trust, running intranet applications in
 - intranet applications, running in full trust
 - running intranet applications in full trust
 ms.assetid: ee13c0a8-ab02-49f7-b8fb-9eab16c6c4f0
-ms.openlocfilehash: 33b025fa62343277fc96fc7771587e95f556e7a6
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: f4fb3b61e434154b1c7252377c234aeff49f0227
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81645448"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104599"
 ---
 # <a name="running-intranet-applications-in-full-trust"></a>Выполнение приложений интранета с полным доверием
 

@@ -1,5 +1,6 @@
 ---
 title: Настройка прокси-сервера
+description: Узнайте, как настроить адаптивные и статические прокси-серверы. Конфигурация прокси-сервера обрабатывает клиентские запросы для ресурсов.
 ms.date: 06/18/2018
 helpviewer_keywords:
 - Networking
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - network, proxy configuration
 - proxies, configuring
 ms.assetid: 353c0a8b-4cee-44f6-8e65-60e286743df9
-ms.openlocfilehash: 1fbfe25b90e810ff96924a2341582ff3f5ee5e5d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4d62f5736e9aa469be49d101e85851bc01b7c159
+ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047355"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85141609"
 ---
 # <a name="proxy-configuration"></a>Настройка прокси-сервера
 Прокси-сервер обрабатывает клиентские запросы на ресурсы. Прокси-сервер может возвращать запрошенный ресурс из своего кэша или пересылать запрос на сервер, на котором находится данный ресурс. Прокси-серверы могут повышать производительность сети, благодаря уменьшению числа запросов, отправляемых на удаленные серверы. Прокси-серверы также можно использовать для ограничения доступа к ресурсам.  
@@ -53,7 +54,7 @@ ms.locfileid: "71047355"
   
  Ниже указаны параметры конфигурации для статического прокси-сервера.  
   
-|Параметр атрибута, свойства или файла конфигурации|Описание:|  
+|Параметр атрибута, свойства или файла конфигурации|Описание|  
 |--------------------------------------------------------|-----------------|  
 |`proxyaddress` или <xref:System.Net.WebProxy.Address>|Адрес используемого прокси-сервера.|  
 |`bypassonlocal` или <xref:System.Net.WebProxy.BypassProxyOnLocal>|Определяет, выполняется ли обход прокси-сервера для локальных адресов.|  
@@ -66,7 +67,7 @@ ms.locfileid: "71047355"
 <system.net>  
     <defaultProxy>  
         <proxy  proxyaddress="http://proxy.contoso.com:3128"  
-                bypassonlocal="true"  
+                bypassonlocal="True"  
         />  
         <bypasslist>  
             <add address="[a-z]+.blueyonderairlines.com$" />  
@@ -75,7 +76,7 @@ ms.locfileid: "71047355"
 </system.net>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.WebProxy>
 - <xref:System.Net.GlobalProxySelection>

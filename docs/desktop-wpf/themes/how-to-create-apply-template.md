@@ -1,7 +1,7 @@
 ---
 title: Создание шаблона в WPF — рабочий стол .NET
 description: Узнайте, как создать шаблон элемента управления и ссылаться на него в Windows Presentation Foundation и .NET Core.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 11/15/2019
 no-loc:
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - skinning controls [WPF]
 - controls [WPF], appearance specified by state
 - templates [WPF], custom for existing controls
-ms.openlocfilehash: c901864d387b8de976bbfa9a9b3c14a7d5a0b4d8
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: c372659676b450cde789c96e45c7ec5de2aea194
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "81432542"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325723"
 ---
 # <a name="create-a-template-for-a-control"></a>Создание шаблона элемента управления
 
@@ -55,13 +55,13 @@ ms.locfileid: "81432542"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Создайте новое приложение WPF и в окне *MainWindow.xaml* (или другом окне по вашему выбору) установите следующие свойства элемента **\<Window>** .
+Создайте новое приложение WPF и в окне *MainWindow.xaml* (или другом окне по вашему выбору) установите следующие свойства элемента **\<Window>** :
 
 |     |     |
 | --- | --- |
-| **[!OP.NO-LOC(Title)]**         | `Template Intro Sample` |
-| **[!OP.NO-LOC(SizeToContent)]** | `WidthAndHeight` |
-| **[!OP.NO-LOC(MinWidth)]**      | `250` |
+| **Title**         | `Template Intro Sample` |
+| **SizeToContent** | `WidthAndHeight` |
+| **MinWidth**      | `250` |
 
 В качестве содержимого элемента **\<Window>** задайте следующий код XAML:
 
@@ -83,7 +83,7 @@ ms.locfileid: "81432542"
 
 [!code-xaml[WindowResStart](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window2.xaml#WindowResStart)]
 
-Создайте новый шаблон **\<ControlTemplate>** со следующими заданными свойствами:
+Создайте новый **\<ControlTemplate>** со следующими свойствами:
 
 |     |     |
 | --- | --- |
@@ -104,7 +104,7 @@ ms.locfileid: "81432542"
 
 ### <a name="ellipse"></a>Ellipse
 
-Обратите внимание, что свойства **:::no-loc text="Fill":::** и **:::no-loc text="Stroke":::** элемента **\<Ellipse>** привязаны к свойствам <xref:System.Windows.Controls.Control.Foreground> и <xref:System.Windows.Controls.Control.Background> элемента управления.
+Обратите внимание, что свойства **:::no-loc text="Fill":::** и **:::no-loc text="Stroke":::** элемента **\<Ellipse>** связаны со свойствами <xref:System.Windows.Controls.Control.Foreground> и <xref:System.Windows.Controls.Control.Background>.
 
 ### <a name="contentpresenter"></a>ContentPresenter
 
@@ -120,7 +120,7 @@ ms.locfileid: "81432542"
 </Button>
 ```
 
-В обоих приведенных выше примерах текст и флажок задаются как свойство [Button.Content](xref:System.Windows.Controls.ContentControl.Content). Все, что задано в качестве содержимого, может быть представлено через **\<ContentPresenter >** , что и делает шаблон.
+В обоих приведенных выше примерах текст и флажок задаются как свойство [Button.Content](xref:System.Windows.Controls.ContentControl.Content). Данные, указываемые в качестве содержимого, могут быть представлены с помощью **\<ContentPresenter>**  — именно эту задачу выполняет шаблон.
 
 Если <xref:System.Windows.Controls.ControlTemplate> применяется к типу <xref:System.Windows.Controls.ContentControl>, такому как `Button`, выполняется поиск <xref:System.Windows.Controls.ContentPresenter> в дереве элементов. Если `ContentPresenter` обнаруживается, шаблон автоматически привязывает свойство <xref:System.Windows.Controls.ContentControl.Content> элемента управления к элементу `ContentPresenter`.
 
@@ -138,7 +138,7 @@ ms.locfileid: "81432542"
 
 ![Окно WPF с одной овальной кнопкой](media/create-apply-template/styled-button.png)
 
-Вы, конечно, заметили, что кнопка не круглая, а вытянутая. Это стиль работы элемента **\<Ellipse>**  — он всегда растягивается, чтобы заполнить доступное пространство. Сделайте кнопку круглой, задав в свойствах **:::no-loc text="width":::** и **:::no-loc text="height":::** одно и то же значение:
+Вы, конечно, заметили, что кнопка не круглая, а вытянутая. Именно так работает элемент **\<Ellipse>**  — он всегда растягивается, чтобы заполнить доступное пространство. Сделайте кнопку круглой, задав в свойствах **:::no-loc text="width":::** и **:::no-loc text="height":::** одно и то же значение:
 
 [!code-xaml[StyledButtonSize](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window3.xaml#StyledButtonSize)]
 
@@ -150,7 +150,7 @@ ms.locfileid: "81432542"
 
 В системах динамических событий и свойств, предоставляемых WPF, можно отслеживать значение конкретного свойства, а затем при необходимости изменять стиль шаблона. В данном примере вы будете отслеживать свойство <xref:System.Windows.UIElement.IsMouseOver> кнопки. Задайте новый цвет для элемента **\<Ellipse>** , который должен отображаться, когда указатель мыши наводится на элемент управления. Триггер такого типа называется *PropertyTrigger*.
 
-Чтобы это работало, необходимо добавить в **\<Ellipse>** имя, на которое можно ссылаться. Задайте имя **backgroundElement**.
+Чтобы этот триггер сработал, необходимо добавить в **\<Ellipse>** имя, на которое можно ссылаться. Задайте имя **backgroundElement**.
 
 [!code-xaml[EllipseName](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml#EllipseName)]
 
@@ -158,7 +158,7 @@ ms.locfileid: "81432542"
 
 [!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml?name=ControlTemplate&highlight=6-10)]
 
-Затем добавьте в **\<Trigger>** метод **\<Setter>** , который изменяет цвет в свойстве **Fill** элемента **\<Ellipse>** на новый цвет.
+Затем добавьте в **\<Setter>** метод **\<Trigger>** , который изменяет цвет в свойстве **Fill** элемента **\<Ellipse>** на новый цвет.
 
 [!code-xaml[MouseOver](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window5.xaml#MouseOver)]
 
@@ -174,11 +174,11 @@ ms.locfileid: "81432542"
 
 [!code-xaml[CleanTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window5.xaml#CleanTemplate)]
 
-Затем в разделе **\<Grid>** шаблона элемента управления добавьте элемент **\<VisualStateManager.VisualStateGroups>** с **\<VisualStateGroup>** для `CommonStates`. Определите два состояния — `Normal` и `MouseOver`.
+Затем необходимо добавить в корень шаблона элемента управления **\<Grid>** элемент **\<VisualStateManager.VisualStateGroups>** со значением **\<VisualStateGroup>** для `CommonStates`. Определите два состояния — `Normal` и `MouseOver`.
 
 [!code-xaml[VisualState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#VisualState)]
 
-Все анимации, определенные в **\<VisualState >** , применяются при активации соответствующего состояния. Создайте анимации для каждого состояния. Анимации помещаются в элемент **\<Storyboard>** . Дополнительные сведения о раскадровках см. в разделе [Общие сведения о раскадровках](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
+Все анимации, определенные в **\<VisualState>** , применяются при активации соответствующего состояния. Создайте анимации для каждого состояния. Анимации помещаются в элемент **\<Storyboard>** . Дополнительные сведения о раскадровках см. в статье [Общие сведения о Storyboard](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 
 - Норм.
 
@@ -192,11 +192,11 @@ ms.locfileid: "81432542"
 
   [!code-xaml[MouseOverState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#MouseOverState)]
 
-Теперь **\<ControlTemplate>** должен выглядеть следующим образом.
+**\<ControlTemplate>** будет иметь следующий вид.
 
 [!code-xaml[FinalTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window7.xaml#FinalTemplate)]
 
-Запустите проект. Обратите внимание, что при наведении мыши на кнопку изменение цвета **\<Ellipse>** анимируется.
+Запустите проект. Обратите внимание, что при наведении мыши на кнопку цвет **\<Ellipse>** анимируется.
 
 ![При наведении мыши на кнопку WPF цвет заливки изменяется](media/create-apply-template/mouse-move-over-button-visualstate.gif)
 

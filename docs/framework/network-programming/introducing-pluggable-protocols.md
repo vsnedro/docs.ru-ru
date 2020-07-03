@@ -1,5 +1,6 @@
 ---
 title: Введение в подключаемые протоколы
+description: Узнайте о подключаемых протоколах, которые поддерживают разработку приложений, использующих ресурсы Интернета, независимо от данных протокола, используемого ресурсами.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data requests, pluggable protocols
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - server identifiers
 - scheme identifiers
 ms.assetid: 4b48e22d-e4e5-48f0-be80-d549bda97415
-ms.openlocfilehash: 72b47b8159f9f6f0dc3a19c5cbf94335507d9e7d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0bc2d0d005e50b04aff360866a146f6fe6b0ea02
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047865"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502357"
 ---
 # <a name="introducing-pluggable-protocols"></a>Введение в подключаемые протоколы
 Microsoft .NET Framework обеспечивает многоуровневую, расширяемую и управляемую реализацию служб Интернета, которую можно легко и быстро интегрировать в приложения. Классы доступа к Интернету в пространствах имен <xref:System.Net> и <xref:System.Net.Sockets> можно использовать для реализации веб-приложений и интернет-приложений.  
@@ -66,7 +67,7 @@ Microsoft .NET Framework обеспечивает многоуровневую, 
   
  Разработчикам, знакомым с интерфейсом сокетов Windows, или пользователям, которым требуется управление, предоставляемое программированием на уровне сокетов, окажутся полезны классы **System.Net.Sockets**. Классы **System.Net.Sockets** являются точкой перехода из управляемого кода в машинный код в раках классов **System.Net**. В большинстве случаев классы **System.Net.Sockets** выполняют маршалинг данных в свои 32-разрядные аналоги Windows, а также обрабатывают все необходимые проверки безопасности.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Программирование подключаемых протоколов](programming-pluggable-protocols.md)
 - [Сетевое программирование в .NET Framework](index.md)

@@ -1,5 +1,6 @@
 ---
 title: Аутентификация в Интернете
+description: Узнайте о различных механизмах проверки подлинности клиента, поддерживаемых классами System.Net для приложений в .NET Framework.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - authentication [.NET Framework], classes
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - NetworkCredential class, about NetworkCredential class
 - client authentication, classes for authentication
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
-ms.openlocfilehash: 3e0b5cd58270cec758db5d4dad6f3ad48962921a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a1f0829aa0e9e4bcc68168b73443578c3a34310b
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047920"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502383"
 ---
 # <a name="internet-authentication"></a>Аутентификация в Интернете
 Классы <xref:System.Net> поддерживают ряд механизмов проверки подлинности клиентов, включая стандартные методы проверки подлинности в Интернете: базовая проверка подлинности, дайджест-проверка подлинности, проверка подлинности согласованием, проверка подлинности NTLM, проверка подлинности Kerberos, а также создаваемые пользовательские методы.  
@@ -39,7 +40,7 @@ ms.locfileid: "71047920"
   
  Некоторые схемы проверки могут проверять пользователя без выполнения запроса на доступ к ресурсу. Приложение может сэкономить время за счет предварительной проверки подлинности пользователя на доступ к ресурсу, устраняя по меньшей мере один цикл обращения к серверу. Или оно может провести проверку подлинности во время запуска программы для более оперативного реагирования на запросы пользователя позднее. Схемы проверки подлинности, которые могут использовать предварительную проверку подлинности, задают для свойства <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> значение **true**.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обычная и дайджест-проверка подлинности](basic-and-digest-authentication.md)
 - [Проверка подлинности NTLM и Kerberos](ntlm-and-kerberos-authentication.md)
