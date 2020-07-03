@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Удаление сборки из глобального кэша сборок
+description: Сведения об удалении сборки из глобального кэша сборок в .NET с помощью средства глобального кэша сборок (Gacutil.exe) или установщика Windows.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - assemblies [.NET Framework], global assembly cache
@@ -11,47 +12,47 @@ helpviewer_keywords:
 - Global Assembly Cache tool
 - GAC (global assembly cache), removing assemblies
 ms.assetid: acdcc588-b458-436d-876c-726de68244c1
-ms.openlocfilehash: c7d85222f35a61154e3eec70d8c9dad2ca6a32f3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e3a596ea6029ded190c33032e96b601de9d4012d
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119855"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104765"
 ---
-# <a name="how-to-remove-an-assembly-from-the-global-assembly-cache"></a><span data-ttu-id="3a82d-102">Практическое руководство. Удаление сборки из глобального кэша сборок</span><span class="sxs-lookup"><span data-stu-id="3a82d-102">How to: Remove an Assembly from the Global Assembly Cache</span></span>
+# <a name="how-to-remove-an-assembly-from-the-global-assembly-cache"></a><span data-ttu-id="ee5aa-103">Практическое руководство. Удаление сборки из глобального кэша сборок</span><span class="sxs-lookup"><span data-stu-id="ee5aa-103">How to: Remove an Assembly from the Global Assembly Cache</span></span>
 
-<span data-ttu-id="3a82d-103">Существует два способа удаления сборки из глобального кэша сборок.</span><span class="sxs-lookup"><span data-stu-id="3a82d-103">There are two ways to remove an assembly from the global assembly cache (GAC):</span></span>
+<span data-ttu-id="ee5aa-104">Существует два способа удаления сборки из глобального кэша сборок.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-104">There are two ways to remove an assembly from the global assembly cache (GAC):</span></span>
 
-- <span data-ttu-id="3a82d-104">С помощью [средства глобального кэша сборок (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md).</span><span class="sxs-lookup"><span data-stu-id="3a82d-104">By using the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md).</span></span> <span data-ttu-id="3a82d-105">Этот вариант можно использовать для удаления сборок, помещенных в глобальный кэш сборок во время разработки и тестирования.</span><span class="sxs-lookup"><span data-stu-id="3a82d-105">You can use this option to uninstall assemblies that you've placed in the GAC during development and testing.</span></span>
+- <span data-ttu-id="ee5aa-105">С помощью [средства глобального кэша сборок (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md).</span><span class="sxs-lookup"><span data-stu-id="ee5aa-105">By using the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md).</span></span> <span data-ttu-id="ee5aa-106">Этот вариант можно использовать для удаления сборок, помещенных в глобальный кэш сборок во время разработки и тестирования.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-106">You can use this option to uninstall assemblies that you've placed in the GAC during development and testing.</span></span>
 
-- <span data-ttu-id="3a82d-106">С помощью [установщика Windows](/windows/desktop/Msi/windows-installer-portal).</span><span class="sxs-lookup"><span data-stu-id="3a82d-106">By using [Windows Installer](/windows/desktop/Msi/windows-installer-portal).</span></span> <span data-ttu-id="3a82d-107">Этот вариант следует использовать для удаления сборок при тестировании пакетов установки и для рабочих систем.</span><span class="sxs-lookup"><span data-stu-id="3a82d-107">You should use this option to uninstall assemblies when testing installation packages and for production systems.</span></span>
+- <span data-ttu-id="ee5aa-107">С помощью [установщика Windows](/windows/desktop/Msi/windows-installer-portal).</span><span class="sxs-lookup"><span data-stu-id="ee5aa-107">By using [Windows Installer](/windows/desktop/Msi/windows-installer-portal).</span></span> <span data-ttu-id="ee5aa-108">Этот вариант следует использовать для удаления сборок при тестировании пакетов установки и для рабочих систем.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-108">You should use this option to uninstall assemblies when testing installation packages and for production systems.</span></span>
 
-## <a name="removing-an-assembly-with-gacutilexe"></a><span data-ttu-id="3a82d-108">Удаление сборки с помощью Gacutil.exe</span><span class="sxs-lookup"><span data-stu-id="3a82d-108">Removing an assembly with Gacutil.exe</span></span>
+## <a name="removing-an-assembly-with-gacutilexe"></a><span data-ttu-id="ee5aa-109">Удаление сборки с помощью Gacutil.exe</span><span class="sxs-lookup"><span data-stu-id="ee5aa-109">Removing an assembly with Gacutil.exe</span></span>
 
-<span data-ttu-id="3a82d-109">В командной строке введите следующую команду:</span><span class="sxs-lookup"><span data-stu-id="3a82d-109">At the command prompt, type the following command:</span></span>
+<span data-ttu-id="ee5aa-110">В командной строке введите следующую команду:</span><span class="sxs-lookup"><span data-stu-id="ee5aa-110">At the command prompt, type the following command:</span></span>
 
-<span data-ttu-id="3a82d-110">**gacutil –u** \<*имя сборки*></span><span class="sxs-lookup"><span data-stu-id="3a82d-110">**gacutil –u** \<*assembly name*></span></span>
+<span data-ttu-id="ee5aa-111">**gacutil –u** \<*assembly name*></span><span class="sxs-lookup"><span data-stu-id="ee5aa-111">**gacutil –u** \<*assembly name*></span></span>
 
-<span data-ttu-id="3a82d-111">В этой команде *имя_сборки* представляет собой имя сборки, удаляемой из глобального кэша сборок.</span><span class="sxs-lookup"><span data-stu-id="3a82d-111">In this command, *assembly name* is the name of the assembly to remove from the global assembly cache.</span></span>
+<span data-ttu-id="ee5aa-112">В этой команде *имя_сборки* представляет собой имя сборки, удаляемой из глобального кэша сборок.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-112">In this command, *assembly name* is the name of the assembly to remove from the global assembly cache.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="3a82d-112">Не следует использовать Gacutil.exe для удаления сборок в рабочих системах, так как есть вероятность того, что некоторым приложениям эта сборка все еще нужна.</span><span class="sxs-lookup"><span data-stu-id="3a82d-112">You should not use Gacutil.exe to remove assemblies on production systems because of the possibility that the assembly may still be required by some application.</span></span> <span data-ttu-id="3a82d-113">Вместо этого следует использовать установщик Windows, который ведет счетчик ссылок для каждой сборки, устанавливаемой в глобальном кэше сборок.</span><span class="sxs-lookup"><span data-stu-id="3a82d-113">Instead, you should use the Windows Installer, which maintains a reference count for each assembly it installs in the GAC.</span></span>
+> <span data-ttu-id="ee5aa-113">Не следует использовать Gacutil.exe для удаления сборок в рабочих системах, так как есть вероятность того, что некоторым приложениям эта сборка все еще нужна.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-113">You should not use Gacutil.exe to remove assemblies on production systems because of the possibility that the assembly may still be required by some application.</span></span> <span data-ttu-id="ee5aa-114">Вместо этого следует использовать установщик Windows, который ведет счетчик ссылок для каждой сборки, устанавливаемой в глобальном кэше сборок.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-114">Instead, you should use the Windows Installer, which maintains a reference count for each assembly it installs in the GAC.</span></span>
 
-<span data-ttu-id="3a82d-114">В примере ниже из глобального кэша сборок удаляется сборка с именем `hello.dll`.</span><span class="sxs-lookup"><span data-stu-id="3a82d-114">The following example removes an assembly named `hello.dll` from the global assembly cache:</span></span>
+<span data-ttu-id="ee5aa-115">В примере ниже из глобального кэша сборок удаляется сборка с именем `hello.dll`.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-115">The following example removes an assembly named `hello.dll` from the global assembly cache:</span></span>
 
 ```console
 gacutil -u hello
 ```
 
-## <a name="removing-an-assembly-with-windows-installer"></a><span data-ttu-id="3a82d-115">Удаление сборки с помощью установщика Windows</span><span class="sxs-lookup"><span data-stu-id="3a82d-115">Removing an assembly with Windows Installer</span></span>
+## <a name="removing-an-assembly-with-windows-installer"></a><span data-ttu-id="ee5aa-116">Удаление сборки с помощью установщика Windows</span><span class="sxs-lookup"><span data-stu-id="ee5aa-116">Removing an assembly with Windows Installer</span></span>
 
-<span data-ttu-id="3a82d-116">В разделе **Программы и компоненты** на **панели управления** выберите приложение, которое нужно удалить.</span><span class="sxs-lookup"><span data-stu-id="3a82d-116">From the **Programs and Features** app in **Control Panel**, select the app that you want to uninstall.</span></span> <span data-ttu-id="3a82d-117">Если пакет установки разместил сборки в глобальном кэше сборок, установщик Windows удалит их, если они не используются другим приложением.</span><span class="sxs-lookup"><span data-stu-id="3a82d-117">If the installation package placed assemblies in the GAC, Windows Installer will remove them if they are not used by another application.</span></span>
+<span data-ttu-id="ee5aa-117">В разделе **Программы и компоненты** на **панели управления** выберите приложение, которое нужно удалить.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-117">From the **Programs and Features** app in **Control Panel**, select the app that you want to uninstall.</span></span> <span data-ttu-id="ee5aa-118">Если пакет установки разместил сборки в глобальном кэше сборок, установщик Windows удалит их, если они не используются другим приложением.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-118">If the installation package placed assemblies in the GAC, Windows Installer will remove them if they are not used by another application.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3a82d-118">Установщик Windows ведет счетчик ссылок для сборок, установленных в глобальном кэше сборок.</span><span class="sxs-lookup"><span data-stu-id="3a82d-118">Windows Installer maintains a reference count for assemblies installed in the GAC.</span></span> <span data-ttu-id="3a82d-119">Сборка удаляется из глобального кэша сборок только в том случае, если число ссылок на нее достигает нуля, то есть если она не используется ни одним приложением, установленным с помощью пакета установщика Windows.</span><span class="sxs-lookup"><span data-stu-id="3a82d-119">An assembly is removed from the GAC only when its reference count reaches zero, which indicates that it is not used by any application installed by a Windows Installer package.</span></span>
+> <span data-ttu-id="ee5aa-119">Установщик Windows ведет счетчик ссылок для сборок, установленных в глобальном кэше сборок.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-119">Windows Installer maintains a reference count for assemblies installed in the GAC.</span></span> <span data-ttu-id="ee5aa-120">Сборка удаляется из глобального кэша сборок только в том случае, если число ссылок на нее достигает нуля, то есть если она не используется ни одним приложением, установленным с помощью пакета установщика Windows.</span><span class="sxs-lookup"><span data-stu-id="ee5aa-120">An assembly is removed from the GAC only when its reference count reaches zero, which indicates that it is not used by any application installed by a Windows Installer package.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3a82d-120">См. также</span><span class="sxs-lookup"><span data-stu-id="3a82d-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ee5aa-121">См. также</span><span class="sxs-lookup"><span data-stu-id="ee5aa-121">See also</span></span>
 
-- [<span data-ttu-id="3a82d-121">Работа со сборками и глобальным кэшем сборок</span><span class="sxs-lookup"><span data-stu-id="3a82d-121">Working with Assemblies and the Global Assembly Cache</span></span>](working-with-assemblies-and-the-gac.md)
-- [<span data-ttu-id="3a82d-122">Практическое руководство. Установка сборки в глобальный кэш сборок</span><span class="sxs-lookup"><span data-stu-id="3a82d-122">How to: Install an Assembly into the Global Assembly Cache</span></span>](install-assembly-into-gac.md)
-- [<span data-ttu-id="3a82d-123">Gacutil.exe (программа глобального кэша сборок)</span><span class="sxs-lookup"><span data-stu-id="3a82d-123">Gacutil.exe (Global Assembly Cache Tool)</span></span>](../tools/gacutil-exe-gac-tool.md)
+- [<span data-ttu-id="ee5aa-122">Работа со сборками и глобальным кэшем сборок</span><span class="sxs-lookup"><span data-stu-id="ee5aa-122">Working with Assemblies and the Global Assembly Cache</span></span>](working-with-assemblies-and-the-gac.md)
+- [<span data-ttu-id="ee5aa-123">Практическое руководство. Установка сборки в глобальный кэш сборок</span><span class="sxs-lookup"><span data-stu-id="ee5aa-123">How to: Install an Assembly into the Global Assembly Cache</span></span>](install-assembly-into-gac.md)
+- [<span data-ttu-id="ee5aa-124">Gacutil.exe (программа глобального кэша сборок)</span><span class="sxs-lookup"><span data-stu-id="ee5aa-124">Gacutil.exe (Global Assembly Cache Tool)</span></span>](../tools/gacutil-exe-gac-tool.md)

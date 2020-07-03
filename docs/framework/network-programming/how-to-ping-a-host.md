@@ -1,20 +1,21 @@
 ---
 title: Практическое руководство. Проверка связи с узлом
+description: Образец кода, демонстрирующий проверку связи с удаленным узлом в .NET Framework. Для данного примера требуются ссылки на пространство имен System.Net.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Ping
 ms.assetid: bbf20f5b-eca1-4661-af04-cb8837f9af05
-ms.openlocfilehash: 09ae830bbef078b94bd28e654d93c10cde6108fd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ac62f58eea41419de2d5651269154d9abb757aba
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180785"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502500"
 ---
-# <a name="how-to-ping-a-host"></a><span data-ttu-id="509d5-102">Практическое руководство. Проверка связи с узлом</span><span class="sxs-lookup"><span data-stu-id="509d5-102">How to: Ping a Host</span></span>
-<span data-ttu-id="509d5-103">В этом примере показано, как проверить связь с удаленным узлом.</span><span class="sxs-lookup"><span data-stu-id="509d5-103">This sample shows how to ping a remote host.</span></span>  
+# <a name="how-to-ping-a-host"></a><span data-ttu-id="afd33-104">Практическое руководство. Проверка связи с узлом</span><span class="sxs-lookup"><span data-stu-id="afd33-104">How to: Ping a Host</span></span>
+<span data-ttu-id="afd33-105">В этом примере показано, как проверить связь с удаленным узлом.</span><span class="sxs-lookup"><span data-stu-id="afd33-105">This sample shows how to ping a remote host.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="509d5-104">Пример</span><span class="sxs-lookup"><span data-stu-id="509d5-104">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="afd33-106">Пример</span><span class="sxs-lookup"><span data-stu-id="afd33-106">Example</span></span>  
   
 ```csharp
 using System;  
@@ -120,7 +121,7 @@ namespace Examples.System.Net.NetworkInformation.PingTest
 }  
 ```  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="509d5-105">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="509d5-105">Compiling the Code</span></span>  
- <span data-ttu-id="509d5-106">Для этого примера требуются:</span><span class="sxs-lookup"><span data-stu-id="509d5-106">This example requires:</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="afd33-107">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="afd33-107">Compiling the Code</span></span>  
+ <span data-ttu-id="afd33-108">Для этого примера требуются:</span><span class="sxs-lookup"><span data-stu-id="afd33-108">This example requires:</span></span>  
   
-- <span data-ttu-id="509d5-107">Ссылки на пространство имен **System.Net**.</span><span class="sxs-lookup"><span data-stu-id="509d5-107">References to the **System.Net** namespace.</span></span>
+- <span data-ttu-id="afd33-109">Ссылки на пространство имен **System.Net**.</span><span class="sxs-lookup"><span data-stu-id="afd33-109">References to the **System.Net** namespace.</span></span>

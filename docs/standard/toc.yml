@@ -46,6 +46,8 @@
           href: base-types/type-conversion.md
         - name: Таблицы преобразования типов
           href: base-types/conversion-tables.md
+        - name: Выбор между анонимными типами и кортежами
+          href: base-types/choosing-between-anonymous-and-tuple.md
         - name: 'Форматирование чисел, дат и других типов'
           items:
             - name: Обзор
@@ -639,8 +641,6 @@
       items:
         - name: Выбор между классом и структурой
           href: design-guidelines/choosing-between-class-and-struct.md
-        - name: Выбор между анонимными типами и кортежами
-          href: design-guidelines/choosing-between-anonymous-and-tuple.md
         - name: Разработка абстрактных классов
           href: design-guidelines/abstract-class.md
         - name: Разработка статических классов
