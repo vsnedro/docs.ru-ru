@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Получение уведомлений о первом этапе обработки исключений
+description: Получение уведомлений о первом этапе обработки исключений в .NET с использованием события FirstChanceException класса AppDomain до того, как общеязыковая среда выполнения начнет поиск обработчиков событий.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - first-chance exception notifications
 - exceptions, first chance notifications
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
-ms.openlocfilehash: da60dfca424f7c10e810b5e083ff7fa63a688218
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e8b5ae5fb69c7befd329316aee11523f79d73fcd
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119864"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104738"
 ---
 # <a name="how-to-receive-first-chance-exception-notifications"></a>Практическое руководство. Получение уведомлений о первом этапе обработки исключений
 Событие <xref:System.AppDomain.FirstChanceException> класса <xref:System.AppDomain> позволяет получать уведомления о порождении исключений до того, как среда CLR начнет искать обработчики исключений.

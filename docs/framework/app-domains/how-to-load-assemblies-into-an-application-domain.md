@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Загрузка сборок в домен приложения
+description: Сведения о загрузке сборок в домен приложения .NET. Рекомендуется использовать статический (или общий) метод Load класса System.Reflection.Assembly.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - application domains, loading assemblies
 - loading assemblies
 ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
-ms.openlocfilehash: c560e2c5858de67442ccbcd18c8f92b142cc178d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c91c70625b79002e9297755dfdfac8aa6e283208
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119893"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104750"
 ---
 # <a name="how-to-load-assemblies-into-an-application-domain"></a>Практическое руководство. Загрузка сборок в домен приложения
 Существует несколько способов загрузки сборки в домен приложения. Рекомендуется использовать метод <xref:System.Reflection.Assembly.Load%2A>`static` (`Shared` в Visual Basic) класса <xref:System.Reflection.Assembly?displayProperty=nameWithType>. Другими способами загрузки сборок являются:  

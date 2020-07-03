@@ -1,5 +1,6 @@
 ---
 title: Преобразование типов в .NET Framework
+description: Сведения о преобразовании типов в .NET, которое создает значение в новом типе, эквивалентное значению старого типа, однако может не сохранять удостоверение оригинала.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - Implicit operator
 - data types [.NET Framework], converting
 ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
-ms.openlocfilehash: 33b8c49033c901917e674879048558799f484194
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 11345081610459dbf053d846aa04369301010732
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291660"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769227"
 ---
 # <a name="type-conversion-in-the-net-framework"></a>Преобразование типов в .NET Framework
 Каждое значение имеет соответствующий тип, который определяет атрибуты, такие как объем памяти, выделяемой значению, диапазон возможных значений и доступные элементы. Многие значения можно выразить несколькими типами. Например, число 4 можно выразить как целое число или как число с плавающей запятой. Преобразование типа создает значение нового типа, эквивалентное значению старого типа, но при этом не обязательно сохраняется идентичность (или точные значения) первоначального объекта.  

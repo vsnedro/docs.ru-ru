@@ -1,5 +1,6 @@
 ---
 title: Примеры асинхронных сокетов клиента
+description: В этом примере .NET Framework создает клиент, который подключается к серверу, используя синхронный сокет. Эта программа отправляет строковое значение и отображает отклик.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - sockets, code examples
 - sockets, asynchronous client sockets
 ms.assetid: d4ac53a0-b50b-4232-9726-d47d25fcc38a
-ms.openlocfilehash: 9cf8ffff1b219614cd57b56af48d72c03ac63dda
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c0bcf4becf8193f3bd6bc728dc6d7e96276dddf2
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180918"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502734"
 ---
 # <a name="asynchronous-client-socket-example"></a>Примеры асинхронных сокетов клиента
 Приведенная ниже программа создает клиент, который подключается к серверу. Клиент создается с использованием асинхронного сокета, поэтому выполнение клиентского приложения не приостанавливается до тех пор, пока сервер возвращает ответ. Приложение отправляет строку на сервер, а затем выводит возвращенную им строку в консоли.  
@@ -321,7 +322,7 @@ public class AsynchronousClient {
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пример асинхронного сокета сервера](asynchronous-server-socket-example.md)
 - [Использование синхронного сокета сервера](using-a-synchronous-server-socket.md)

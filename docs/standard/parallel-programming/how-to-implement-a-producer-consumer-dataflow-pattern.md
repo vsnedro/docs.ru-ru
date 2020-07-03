@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Реализация шаблона потока данных "производитель-получатель"
+title: Практическое руководство. Реализация шаблона потока данных "производитель-потребитель"
+description: Узнайте, как реализовать шаблон потока данных "производитель — получатель" с помощью библиотеки потоков данных TPL в .NET.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - producer-consumer patterns, implementing [TPL]
 ms.assetid: 47a1d38c-fe9c-44aa-bd15-937bd5659b0b
-ms.openlocfilehash: 491f3912998e56fe768d21da82ff68cb64f6d6c8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: e9ed8f84f1daca64fa60d8aed18aa2d9be1380e0
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289529"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768928"
 ---
 # <a name="how-to-implement-a-producer-consumer-dataflow-pattern"></a>Практическое руководство. Реализация шаблона потока данных "производитель-получатель"
 В этом документе описан способ использования библиотеки потоков данных TPL для реализации шаблона "производитель-получатель". В этом шаблоне *производитель* отправляет сообщения в блок сообщений, а *потребитель* считывает сообщения из этого блока.  
@@ -38,6 +39,6 @@ ms.locfileid: "84289529"
   
  Метод <xref:System.Threading.Tasks.Dataflow.IReceivableSourceBlock%601.TryReceive%2A> возвращает `False`, когда нет доступных данных. Когда несколько потребителей должны использовать блок источника параллельно, этот механизм гарантирует, что данные все еще будут доступны после вызова <xref:System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync%2A>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Поток данных](dataflow-task-parallel-library.md)

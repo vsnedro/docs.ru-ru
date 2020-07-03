@@ -1,17 +1,18 @@
 ---
 title: Использование потоков и работа с потоками
+description: Сведения об использовании потоков и работе с потоками в .NET для написания приложений, способных одновременно выполнять несколько операций (многопоточность).
 ms.date: 08/08/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - threading [.NET Framework], about threading
 - managed threading
 ms.assetid: 9b5ec2cd-121b-4d49-b075-222cf26f2344
-ms.openlocfilehash: 14159ff9a6ca39108aec14b0ad46004e95fa3cf2
-ms.sourcegitcommit: 961ec21c22d2f1d55c9cc8a7edf2ade1d1fd92e3
+ms.openlocfilehash: c092994818c9105a555acaf63ceba4b8e99bcada
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80588431"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84663035"
 ---
 # <a name="using-threads-and-threading"></a>Использование потоков и работа с потоками
 
@@ -44,7 +45,7 @@ ms.locfileid: "80588431"
 
 В приведенной ниже таблице показаны некоторые свойства <xref:System.Threading.Thread>.  
   
-|Свойство|Описание:|  
+|Свойство.|Описание|  
 |--------------|-----------|  
 |<xref:System.Threading.Thread.IsAlive%2A>|Возвращает `true`, если поток был запущен и не был завершен нормально либо был прерван.|  
 |<xref:System.Threading.Thread.IsBackground%2A>|Возвращает или задает логическое значение, которое указывает, является ли поток фоновым потоком. Фоновые потоки отличаются от основных потоков лишь тем, что они не влияют на завершение процесса. Когда обработка всех основных потоков закончена, общеязыковая среда выполнения завершает процесс, применяя метод <xref:System.Threading.Thread.Abort%2A> к тем фоновым потокам, которые еще продолжают существовать. См. дополнительные сведения об [основных и фоновых потоках](foreground-and-background-threads.md).|  
@@ -52,7 +53,7 @@ ms.locfileid: "80588431"
 |<xref:System.Threading.Thread.Priority%2A>|Возвращает или задает значение <xref:System.Threading.ThreadPriority>, которое используется операционной системой для установки приоритетов потоков. Дополнительные сведения см. в разделе [Планирование потоков](scheduling-threads.md) и в справочнике по <xref:System.Threading.ThreadPriority>.|  
 |<xref:System.Threading.Thread.ThreadState%2A>|Возвращает значение <xref:System.Threading.ThreadState>, содержащее текущие состояния потока.|  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Thread?displayProperty=nameWithType>
 - [Потоки и работа с потоками](threads-and-threading.md)

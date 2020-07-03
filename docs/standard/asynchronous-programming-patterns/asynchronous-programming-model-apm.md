@@ -1,5 +1,6 @@
 ---
 title: Асинхронная модель программирования (APM)
+description: Сведения о модели асинхронного программирования (APM) в .NET. Сведения о том, как начать и завершить асинхронную операцию.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -11,25 +12,25 @@ helpviewer_keywords:
 - stopping asynchronous operations
 - asynchronous programming, beginning operations
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
-ms.openlocfilehash: 96ad18e613d68ee97f4e5666afe77febadc6f991
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5ab5d15d24aac80ef4a31c039f7af9dacce4a8d8
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289984"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769188"
 ---
 # <a name="asynchronous-programming-model-apm"></a>Асинхронная модель программирования (APM)
 Асинхронная операция, использующая шаблон разработки <xref:System.IAsyncResult>, реализуется в виде двух методов с именами `BeginOperationName` и `EndOperationName`, которые соответственно начинают и завершают асинхронную операцию *OperationName*. Например, класс <xref:System.IO.FileStream> предоставляет методы <xref:System.IO.FileStream.BeginRead%2A> и <xref:System.IO.FileStream.EndRead%2A> для асинхронного считывания байтов из файла. Эти методы реализуют асинхронную версию метода <xref:System.IO.FileStream.Read%2A> .  
   
 > [!NOTE]
-> Начиная с версии .NET Framework 4 библиотека параллельных задач предоставляет новую модель для асинхронного и параллельного программирования. Дополнительные сведения см. в разделах [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md) и [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md).)  
+> Начиная с версии .NET Framework 4 библиотека параллельных задач предоставляет новую модель для асинхронного и параллельного программирования. Дополнительные сведения см. в разделах [Библиотека параллельных задач (TPL)](../parallel-programming/task-parallel-library-tpl.md) и [Асинхронный шаблон, основанный на задачах (TAP)](task-based-asynchronous-pattern-tap.md).)  
   
  После вызова метода `BeginOperationName` приложение может продолжить выполнение инструкций в вызывающем потоке, пока асинхронная операция выполняется в другом потоке. Для каждого вызова метода `BeginOperationName` приложение должно вызывать метод `EndOperationName`, получающий результаты операции.  
   
 ## <a name="beginning-an-asynchronous-operation"></a>Начало асинхронной операции  
  Метод `BeginOperationName` начинает асинхронную операцию *OperationName* и возвращает объект, реализующий интерфейс <xref:System.IAsyncResult>. В объектах<xref:System.IAsyncResult> хранятся сведения об асинхронных операциях. В таблице ниже приведены сведения об асинхронной операции.  
   
-|Участник|Описание:|  
+|Член|Описание|  
 |------------|-----------------|  
 |<xref:System.IAsyncResult.AsyncState%2A>|Относящийся к необязательному приложению объект, содержащий сведения об асинхронной операции.|  
 |<xref:System.IAsyncResult.AsyncWaitHandle%2A>|Объект <xref:System.Threading.WaitHandle> , который можно использовать, чтобы заблокировать выполнение приложения до завершения асинхронной операции.|  
@@ -63,7 +64,7 @@ ms.locfileid: "84289984"
   
 - Используйте делегат <xref:System.AsyncCallback> для указания метода, который должен вызываться при завершении операции. Пример, демонстрирующий этот способ, см. в разделе [Использование делегата AsyncCallback для завершения асинхронной операции](using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md)
 - [Асинхронный вызов синхронных методов](calling-synchronous-methods-asynchronously.md)

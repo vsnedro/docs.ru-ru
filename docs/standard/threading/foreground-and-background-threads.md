@@ -1,5 +1,6 @@
 ---
 title: Основные и фоновые потоки
+description: Вы можете определить или изменить то, является ли поток фоновым или основным, с помощью свойства Thread.IsBackground в .NET.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - foreground threads
 - background threads
 ms.assetid: cfe0d632-dd35-47e0-91ad-f742a444005e
-ms.openlocfilehash: 5e7ec9e2c2a5ba3de1b4518cea15eb5f512640d3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 6cb7a92851728e16f4a317d6c24d072acee72a94
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84279689"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769045"
 ---
 # <a name="foreground-and-background-threads"></a>Основные и фоновые потоки
 Управляемый поток может быть основным или фоновым. Фоновые потоки отличаются от основных только в одном аспекте: фоновый поток не поддерживает работу управляемой среды выполнения. После того, как в управляемом процессе (где управляемой сборкой является файл EXE) остановятся все основные потоки, система принудительно останавливает все фоновые потоки и завершает работу процесса.  
@@ -30,7 +31,7 @@ ms.locfileid: "84279689"
   
  Если у вас есть поток, который отслеживает некоторое действие, например подключение через сокет, установите для его свойства <xref:System.Threading.Thread.IsBackground%2A> значение `true`, чтобы этот поток не мешал завершить процесс.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Thread.IsBackground%2A?displayProperty=nameWithType>
 - <xref:System.Threading.Thread>

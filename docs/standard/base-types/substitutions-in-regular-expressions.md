@@ -1,5 +1,6 @@
 ---
 title: Подстановки в регулярных выражениях
+description: Вы можете использовать подстановки для замены соответствующего текста с помощью регулярных выражений в .NET. Подстановки — это языковые элементы, которые распознаются только в шаблонах замены.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - constructs, substitutions
 - substitutions
 ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
-ms.openlocfilehash: 6e5773c220dccd4d139b4f85e19b55048a64e7ef
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: ab2ed6ff87f2d50d0f518ac64188bf8b5c98351c
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288008"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768109"
 ---
 # <a name="substitutions-in-regular-expressions"></a>Подстановки в регулярных выражениях
 Подстановки — это языковые элементы, которые распознаются только в шаблонах замены. Они используют шаблон регулярного выражения для определения всего текста или его части, предназначенной для замены совпадающего текста во входной строке. Шаблон замены может включать одну или несколько подстановок вместе с литеральными символами. Для перегруженных версий метода <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> , имеющих параметр `replacement` , и для метода <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> предоставляются шаблоны замены. Эти методы заменяют совпавший шаблон шаблоном, определенным параметром `replacement` .  

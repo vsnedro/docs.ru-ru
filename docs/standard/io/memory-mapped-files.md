@@ -1,5 +1,6 @@
 ---
 title: Сопоставленные в памяти файлы
+description: Вы можете ознакомиться с отображенными в памяти файлами в .NET, которые хранят содержимое файлов в виртуальной памяти, и разрешить приложениям изменять этот файл путем непосредственной записи в память.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - memory-mapped files
 - inter-process communication
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
-ms.openlocfilehash: 1a8c087449ed623e93f8c8ea467200f5e3e7e70f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: db63c15357b0670c55b1174b91b02e2f49a0c4c1
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84278796"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84661983"
 ---
 # <a name="memory-mapped-files"></a>Сопоставленные в памяти файлы
 Отображаемый в память файл содержит содержимое файла в виртуальной памяти. Отображение файла в области памяти позволяет приложению, содержащему несколько процессов, взаимодействовать с файлом путем чтения этой памяти и записи в нее. Начиная с версии .NET Framework 4, вы можете использовать управляемый код для доступа к отображенным в память файлам тем же способом, что и собственные функции Windows. Описание этого механизма можно найти на странице [Managing Memory-Mapped File](https://docs.microsoft.com/previous-versions/ms810613(v=msdn.10)) (Управление отображенными в память файлами).  
@@ -52,14 +53,14 @@ ms.locfileid: "84278796"
 |Задача|Применимые методы или свойства|  
 |----------|----------------------------------|  
 |Получение объекта <xref:System.IO.MemoryMappedFiles.MemoryMappedFile>, который представляет постоянный файл, отображенный в память из файла на диске.|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A?displayProperty=nameWithType>.|  
-|Получение объекта <xref:System.IO.MemoryMappedFiles.MemoryMappedFile>, который представляет непостоянный файл, отображенный в память из файла на диске.|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A?displayProperty=nameWithType>.<br /><br /> — или —<br /><br /> Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A?displayProperty=nameWithType>.|  
+|Получение объекта <xref:System.IO.MemoryMappedFiles.MemoryMappedFile>, который представляет непостоянный файл, отображенный в память из файла на диске.|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A?displayProperty=nameWithType>.<br /><br /> -или-<br /><br /> Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A?displayProperty=nameWithType>.|  
 |Получение объекта <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> для уже существующего отображенного в память файла (постоянного или непостоянного).|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting%2A?displayProperty=nameWithType>.|  
 |Получение объекта <xref:System.IO.UnmanagedMemoryStream> для представления последовательного доступа для отображенного в память файла.|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream%2A?displayProperty=nameWithType>.|  
 |Получение объекта <xref:System.IO.UnmanagedMemoryAccessor> для представления произвольного доступа для отображенного в память файла.|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor%2A?displayProperty=nameWithType>.|  
-|Получение объекта <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle> для использования с неуправляемым кодом.|Свойство <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.SafeMemoryMappedFileHandle%2A?displayProperty=nameWithType>.<br /><br /> — или —<br /><br /> Свойство <xref:System.IO.MemoryMappedFiles.MemoryMappedViewAccessor.SafeMemoryMappedViewHandle%2A?displayProperty=nameWithType>.<br /><br /> — или —<br /><br /> Свойство <xref:System.IO.MemoryMappedFiles.MemoryMappedViewStream.SafeMemoryMappedViewHandle%2A?displayProperty=nameWithType>.|  
-|Задержка распределения памяти до момента, когда будет создано представление (только для непостоянных файлов).<br /><br /> (Чтобы определить текущий размер системной страницы, используйте свойство <xref:System.Environment.SystemPageSize%2A?displayProperty=nameWithType>.)|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> со значением <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages?displayProperty=nameWithType>.<br /><br /> — или —<br /><br /> Методы <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A>, которые принимают в качестве параметра перечисление <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions>.|  
+|Получение объекта <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle> для использования с неуправляемым кодом.|Свойство <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.SafeMemoryMappedFileHandle%2A?displayProperty=nameWithType>.<br /><br /> -или-<br /><br /> Свойство <xref:System.IO.MemoryMappedFiles.MemoryMappedViewAccessor.SafeMemoryMappedViewHandle%2A?displayProperty=nameWithType>.<br /><br /> -или-<br /><br /> Свойство <xref:System.IO.MemoryMappedFiles.MemoryMappedViewStream.SafeMemoryMappedViewHandle%2A?displayProperty=nameWithType>.|  
+|Задержка распределения памяти до момента, когда будет создано представление (только для непостоянных файлов).<br /><br /> (Чтобы определить текущий размер системной страницы, используйте свойство <xref:System.Environment.SystemPageSize%2A?displayProperty=nameWithType>.)|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> со значением <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages?displayProperty=nameWithType>.<br /><br /> -или-<br /><br /> Методы <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A>, которые принимают в качестве параметра перечисление <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions>.|  
   
-### <a name="security"></a>безопасность  
+### <a name="security"></a>Безопасность  
  При создании отображенного в память файла вы можете применить к нему права доступа. Для этого используйте следующие методы, которые принимают в качестве параметра перечисление <xref:System.IO.MemoryMappedFiles.MemoryMappedFileAccess>:  
   
 - <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A?displayProperty=nameWithType>  
@@ -145,6 +146,6 @@ Process C says: True
  [!code-csharp[System.IO.MemoryMappedFiles_IPC_B#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/cs/program.cs#1)]
  [!code-vb[System.IO.MemoryMappedFiles_IPC_B#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.memorymappedfiles_ipc_b/vb/program.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Файловый и потоковый ввод-вывод](index.md)

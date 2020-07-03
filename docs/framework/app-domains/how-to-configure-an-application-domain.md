@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Настройка домена приложения
+description: Настройка домена приложения в .NET. Сведения о настройке нового домена приложения среде CLR можно предоставить с помощью класса AppDomainSetup.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - application domains, configuring
 - ApplicationBase property
 ms.assetid: 07ea8438-7a34-49f0-a7e8-3d6ff7e4a482
-ms.openlocfilehash: ca28984fa4a328e33d8d9bf79641cc451160f5ea
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 27afcf161bec74143fafb5dceb20597de73e23d4
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119907"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104856"
 ---
 # <a name="how-to-configure-an-application-domain"></a>Практическое руководство. Настройка домена приложения
 Сведения о настройке нового домена приложения среде CLR можно предоставить с помощью класса <xref:System.AppDomainSetup>. При создании собственных доменов приложений наиболее важным свойством является <xref:System.AppDomainSetup.ApplicationBase%2A>. Другие свойства **AppDomainSetup** используются главным образом узлами среды выполнения для настройки определенного домена приложения.  

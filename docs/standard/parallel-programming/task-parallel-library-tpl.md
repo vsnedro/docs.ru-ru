@@ -1,5 +1,6 @@
 ---
 title: Библиотека параллельных задач (TPL)
+description: Вы можете изучить библиотеку параллельных задач (TPL) — набор общедоступных типов и интерфейсов API, упрощающий процесс добавления параллелизма в приложения .NET.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - .NET, parallel programming in
 - Parallel Programming
 ms.assetid: b8f99f43-9104-45fd-9bff-385a20488a23
-ms.openlocfilehash: 45c9f43e67b66b00758afa0659897971aef317c2
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 42768d99e7f3a15751ccf4c980edb9373666d49f
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84284979"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768605"
 ---
 # <a name="task-parallel-library-tpl"></a>Библиотека параллельных задач (TPL)
 Библиотека параллельных задач (TPL) представляет собой набор открытых типов и API-интерфейсов в пространствах имен <xref:System.Threading?displayProperty=nameWithType> и <xref:System.Threading.Tasks?displayProperty=nameWithType>. Цель TPL — повышение производительности труда разработчиков за счет упрощения процедуры добавления параллелизма в приложения. TPL динамически масштабирует степень параллелизма для наиболее эффективного использования всех доступных процессоров. Кроме того, в библиотеке параллельных задач осуществляется секционирование работы, планирование потоков в пуле <xref:System.Threading.ThreadPool>, поддержка отмены, управление состоянием и выполняются другие низкоуровневые задачи. Используя библиотеку параллельных задач, можно повысить производительность кода, сосредоточившись на работе, для которой предназначена программа.  

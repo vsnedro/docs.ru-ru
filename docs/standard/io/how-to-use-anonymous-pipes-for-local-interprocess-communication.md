@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Использование анонимных каналов для локального взаимодействия между процессами
+description: Узнайте, как использовать анонимные каналы для локального взаимодействия между процессами на локальном компьютере в .NET. Анонимные каналы требуют меньше ресурсов, чем именованные.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - one-way communication [.NET Framework]
 - local computer communication [.NET Framework], pipes
 ms.assetid: e7773c77-c646-4a01-8a96-a003d59fc4c9
-ms.openlocfilehash: 9962471697888041e98e38dd5f7feaecc306894d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 090a25aea4f280fc2ad00cf7777a501c475dfc66
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291790"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594807"
 ---
 # <a name="how-to-use-anonymous-pipes-for-local-interprocess-communication"></a>Практическое руководство. Использование анонимных каналов для локального взаимодействия между процессами
 Анонимные каналы обеспечивают межпроцессное взаимодействие на локальном компьютере. Они предоставляют меньше возможностей, чем именованные каналы, но требуют меньше ресурсов. С помощью анонимных каналов вы можете легко организовать межпроцессное взаимодействие на локальном компьютере. Анонимные каналы не подходят для обмена данными по сети.  
@@ -45,7 +46,7 @@ ms.locfileid: "84291790"
  [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs#01)]
  [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb#01)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Каналы](pipe-operations.md)
 - [Практическое руководство. Использование именованных каналов для сетевого взаимодействия между процессами](how-to-use-named-pipes-for-network-interprocess-communication.md)

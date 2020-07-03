@@ -1,5 +1,6 @@
 ---
 title: Реализация асинхронной модели, основанной на событиях
+description: Узнайте, как реализовать асинхронную модель, основанную на событиях (EAP) в .NET. EAP — это стандартный способ упаковки класса, имеющего асинхронные возможности.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -17,22 +18,22 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
-ms.openlocfilehash: 484050b45b5da72386e9ac29805d7faf0ca9cbd6
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: e36ae21e1e03c8c5c688b7446f660ab1bb666a94
+ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289386"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84904381"
 ---
 # <a name="implementing-the-event-based-asynchronous-pattern"></a>Реализация асинхронной модели, основанной на событиях
 
-Если вы создаете класс и некоторые операции этого класса могут привести к значительным задержкам, подумайте о том, чтобы реализовать асинхронные функции для этого класса с помощью [асинхронной модели на основе событий](event-based-asynchronous-pattern-overview.md).
+Если вы создаете класс и некоторые его операции могут привести к значительным задержкам, подумайте о том, чтобы реализовать для этого класса асинхронные функции с помощью [асинхронной модели на основе событий](event-based-asynchronous-pattern-overview.md).
 
 Асинхронная модель на основе событий предоставляет стандартизированный способ упаковки класса, в котором есть асинхронные функции. Если вы реализуете класс с помощью вспомогательных классов, таких как <xref:System.ComponentModel.AsyncOperationManager>, то ваш класс будет работать правильно в любой модели приложения, включая ASP.NET, консольные приложения и приложения Windows Forms.
 
-Пример реализации асинхронной модели на основе событий см. в разделе [Практическое руководство. Реализация компонента, поддерживающего асинхронную модель на основе событий](component-that-supports-the-event-based-asynchronous-pattern.md).
+Пример, реализующий асинхронную модель на основе событий, см. в разделе [Практическое руководство. Реализация компонента, поддерживающего асинхронную модель на основе событий](component-that-supports-the-event-based-asynchronous-pattern.md).
 
-Для простых асинхронных операций компонент <xref:System.ComponentModel.BackgroundWorker> может оказаться подходящим вариантом. Дополнительные сведения о <xref:System.ComponentModel.BackgroundWorker> см. в статье [Практическое руководство. Фоновое выполнение операции](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md).
+Для простых асинхронных операций компонент <xref:System.ComponentModel.BackgroundWorker> может оказаться подходящим вариантом. Дополнительные сведения об использовании <xref:System.ComponentModel.BackgroundWorker> см. в разделе [Практическое руководство. Фоновое выполнение операции](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md).
 
 Ниже перечислены функции асинхронной модели на основе событий, описанные в этом разделе.
 
@@ -257,7 +258,7 @@ public class MethodNameCompletedEventArgs : System.ComponentModel.AsyncCompleted
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ComponentModel.ProgressChangedEventArgs>
 - <xref:System.ComponentModel.AsyncCompletedEventArgs>

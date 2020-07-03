@@ -7,16 +7,16 @@ helpviewer_keywords:
 - rapid application development (RAD), My.Forms
 - rapid application development (RAD), My.WebServices
 ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79
-ms.openlocfilehash: 847724450ee2bc8bc591371f71171e8ba4ed9337
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 141f2f5f98499498d3c6732f7ae8d0abe6259ed9
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411744"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84990240"
 ---
 # <a name="default-object-instances-provided-by-myforms-and-mywebservices-visual-basic"></a>Экземпляры объектов, которые My.Forms и My.WebServices предоставляют по умолчанию (Visual Basic)
 
-Объекты [My.Forms](../../language-reference/objects/my-forms-object.md) и [My.WebServices](../../language-reference/objects/my-webservices-object.md) предоставляют доступ к формам, источникам данных и веб-службам XML, используемым вашим приложением. Для этого они предоставляют коллекций *экземпляров по умолчанию* каждого из этих объектов.  
+Объекты [My.Forms](../../language-reference/objects/my-forms-object.md) и [My.WebServices](../../language-reference/objects/my-webservices-object.md) предоставляют доступ к формам, источникам данных и веб-службам XML, используемым вашим приложением. Для этого они используют коллекции *экземпляров по умолчанию* каждого из этих объектов.  
   
 ## <a name="default-instances"></a>Экземпляры по умолчанию  
 

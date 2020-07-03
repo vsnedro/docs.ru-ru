@@ -1,5 +1,6 @@
 ---
 title: Основы управляемых потоков
+description: См. ссылки на другие статьи об управляемых потоках, охватывающие такие темы, как исключения, синхронизация данных, основные и фоновые потоки, локальное хранилище и многое другое.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - threading [.NET Framework], about threading
 - managed threading
 ms.assetid: b2944911-0e8f-427d-a8bb-077550618935
-ms.openlocfilehash: 4d2a96619fd1c48c79b5590efdb52c307d29710c
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d4a4ceabf29bd0f6f537e59ba477f9da686b1ef5
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291010"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769097"
 ---
 # <a name="managed-threading-basics"></a>Основы управляемых потоков
 
@@ -24,7 +25,7 @@ ms.locfileid: "84291010"
 > [!NOTE]
 > На платформе .NET Framework 4, библиотека параллельных задач и PLINQ предоставляют интерфейсы API для поддержки параллелизма задач и данных в многопоточных программах. Дополнительные сведения см. в разделе [Параллельное программирование](../parallel-programming/index.md).  
   
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
  [Потоки и работа с потоками](threads-and-threading.md)  
  Преимущества и недостатки использования нескольких потоков, а также описание сценариев, в которых целесообразно создавать потоки или использовать пул потоков.  

@@ -1,5 +1,6 @@
 ---
 title: Написание настраиваемых атрибутов
+description: Разработка настраиваемых атрибутов в .NET. Настраиваемые атрибуты — это классы, прямо или косвенно наследуемые от System.Attribute.
 ms.date: 07/17/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - Inherited property
 - attribute classes, declaring
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
-ms.openlocfilehash: d05df02bfc75e9aeb2c583a831bcee8b7b971206
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 3cae8de9b76aa9953b21ad2e23ad003e97555aa9
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84276170"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768486"
 ---
 # <a name="writing-custom-attributes"></a>Написание настраиваемых атрибутов
-Чтобы создавать собственные атрибуты, совсем не обязательно в совершенстве овладевать множеством новых понятий. Если вы знакомы с объектно-ориентированным программированием и знаете, как создавать классы, вы уже обладаете почти всеми нужными знаниями. Настраиваемые атрибуты — это традиционные классы, прямо или косвенно наследующие от <xref:System.Attribute?displayProperty=nameWithType>. Подобно традиционным классам настраиваемые атрибуты содержат методы, хранящие и извлекающие данные.  
+Чтобы создавать собственные атрибуты, совсем не обязательно в совершенстве овладевать множеством новых понятий. Если вы знакомы с объектно-ориентированным программированием и знаете, как создавать классы, вы уже обладаете почти всеми нужными знаниями. Настраиваемые атрибуты, в сущности, представляют собой традиционные классы, прямо или косвенно наследующие от <xref:System.Attribute?displayProperty=nameWithType>. Подобно традиционным классам настраиваемые атрибуты содержат методы, хранящие и извлекающие данные.  
   
  Ниже приведены основные этапы правильно выстроенного процесса разработки классов настраиваемых атрибутов.  
   
@@ -45,7 +46,7 @@ ms.locfileid: "84276170"
  [!code-csharp[Conceptual.Attributes.Usage#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#5)]
  [!code-vb[Conceptual.Attributes.Usage#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#5)]  
   
- В <xref:System.AttributeUsageAttribute> есть три члена, которые важны для создания настраиваемых атрибутов: [AttributeTargets](#attributetargets-member), [Inherited](#inherited-property)и [AllowMultiple](#allowmultiple-property).  
+ В <xref:System.AttributeUsageAttribute> есть три члена, которые важны для создания настраиваемых атрибутов: [AttributeTargets](#attributetargets-member), [Inherited](#inherited-property) и [AllowMultiple](#allowmultiple-property).  
   
 ### <a name="attributetargets-member"></a>Член AttributeTargets  
  В предыдущем примере использовался элемент <xref:System.AttributeTargets.All?displayProperty=nameWithType>, указывающий, что этот атрибут может применяться ко всем элементам программы. Можно также задать <xref:System.AttributeTargets.Class?displayProperty=nameWithType>, чтобы атрибут применялся только к классам, или <xref:System.AttributeTargets.Method?displayProperty=nameWithType>, чтобы атрибут применялся только к методам. Подобным образом с помощью настраиваемых атрибутов можно выделить любые элементы программы с целью их последующего описания.  
@@ -131,14 +132,14 @@ ms.locfileid: "84276170"
  [!code-csharp[Conceptual.Attributes.Usage#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#16)]
  [!code-vb[Conceptual.Attributes.Usage#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#16)]  
   
-## <a name="custom-attribute-example"></a>Пример настраиваемого атрибута  
+## <a name="custom-attribute-example"></a>пример настраиваемого атрибута  
  В этом разделе используются приведенные выше сведения и демонстрируется пример создания простого атрибута, содержащего данные об авторе раздела кода. Атрибут в этом примере хранит имя и уровень программиста, а также данные об изменениях, внесенных в код. Для хранения текущих сохраняемых значений в нем используются три закрытые переменные. Каждая переменная представлена открытым свойством, которое возвращает и задает значения. Наконец, в примере определяется конструктор с двумя обязательными параметрами.  
   
  [!code-cpp[Conceptual.Attributes.Usage#4](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#4)]
  [!code-csharp[Conceptual.Attributes.Usage#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#4)]
  [!code-vb[Conceptual.Attributes.Usage#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#4)]  
   
- Этот атрибут можно применять с помощью полного имени `DeveloperAttribute` или сокращенного имени `Developer` одним из следующих способов.  
+ Этот атрибут можно применять с помощью полного имени `DeveloperAttribute`или сокращенного имени `Developer`одним из следующих способов.  
   
  [!code-cpp[Conceptual.Attributes.Usage#12](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#12)]
  [!code-csharp[Conceptual.Attributes.Usage#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source2.cs#12)]
@@ -146,7 +147,7 @@ ms.locfileid: "84276170"
   
  В первом примере этот атрибут применяется только с обязательными именованными параметрами, а во втором примере атрибут применяется и с обязательными, и с необязательными параметрами.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Attribute?displayProperty=nameWithType>
 - <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>

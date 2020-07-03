@@ -1,5 +1,6 @@
 ---
 title: Заполнение строк в .NET
+description: Сведения о том, как заполнять строки в .NET. Используйте методы String.PadLeft и String.PadRight для добавления символов в начале или конце строки, чтобы достигнуть указанной общей длины.
 ms.date: 03/15/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - PadLeft method
 - padding strings
 ms.assetid: 84a9f142-3244-4c90-ba02-21af9bbaff71
-ms.openlocfilehash: 83d4b348c4de537d9a71363d34898a50a6a74cb3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5bf7023a3429e932a44ad0a0bd3409012f77cbf9
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290400"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84594534"
 ---
 # <a name="padding-strings-in-net"></a>Заполнение строк в .NET
 
 Перечисленные ниже методы класса <xref:System.String> позволяют создать новую строку, состоящей из исходной строки, и дополнить ее указанными символами с начала или с конца до указанной общей длины. Символом заполнения может быть пробел или указанный знак. Итоговая строка выравнивается по правому или левому краю. Если длина исходной строки уже больше или равна требуемой общей длины, методы заполнения возвращают исходную строку без изменений. Дополнительные сведения см. в разделах **Возвращаемые значения** описания двух перегрузок методов <xref:System.String.PadLeft%2A?displayProperty=nameWithType> и <xref:System.String.PadRight%2A?displayProperty=nameWithType>.
   
-|Имя метода|Использование|  
+|Имя метода|Использовать|  
 |-----------------|---------|  
 |<xref:System.String.PadLeft%2A?displayProperty=nameWithType>|Дополняет строку до указанной общей длины знаками с начала.|  
 |<xref:System.String.PadRight%2A?displayProperty=nameWithType>|Дополняет строку до указанной общей длины знаками с конца.|  
@@ -47,6 +48,6 @@ ms.locfileid: "84290400"
  [!code-csharp[Conceptual.String.BasicOps#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/padding.cs#4)]
  [!code-vb[Conceptual.String.BasicOps#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/padding.vb#4)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Базовые операции со строками в .NET Framework](basic-string-operations.md)

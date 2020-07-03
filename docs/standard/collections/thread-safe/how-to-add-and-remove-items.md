@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Добавление элементов в коллекцию ConcurrentDictionary и их удаление из этой коллекции
+title: Добавление элементов в коллекцию ConcurrentDictionary и их удаление из этой коллекции
+description: Пример добавления, извлечения, обновления и удаления элементов класса коллекции ConcurrentDictionary<TKey,TValue> в .NET.
 ms.date: 05/04/2020
 ms.technology: dotnet-standard
 dev_langs:
@@ -8,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - thread-safe collections, concurrent dictionary
 ms.assetid: 81b64b95-13f7-4532-9249-ab532f629598
-ms.openlocfilehash: 6c093e907e43f9f2b978624a986dfe5d8a49869f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 0bfc17d93ea3088a7b2e4209e25003856770b9e7
+ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287904"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85325958"
 ---
 # <a name="how-to-add-and-remove-items-from-a-concurrentdictionary"></a>Практическое руководство. Добавление элементов в коллекцию ConcurrentDictionary и их удаление из этой коллекции
 
@@ -36,7 +37,7 @@ ms.locfileid: "84287904"
 
 Класс <xref:System.Collections.Concurrent.ConcurrentDictionary%602> предназначен для многопоточных сценариев. Необязательно использовать блокировки в коде для добавления или удаления элементов из коллекции. Однако всегда есть возможность для одного потока получить значение, а для другого потока немедленно обновить коллекцию, передавая тому же ключу новое значение.
 
-Кроме того, несмотря на то, что все методы <xref:System.Collections.Concurrent.ConcurrentDictionary%602> потокобезопасны, не все методы атомарны, например <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> и <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A>. Пользовательский делегат, передаваемый этим методам, вызывается вне внутренней блокировки словаря (это необходимо для того, чтобы предотвратить блокировку всех потоков неизвестным кодом). Поэтому может произойти следующая последовательность событий:
+Кроме того, несмотря на то, что все методы <xref:System.Collections.Concurrent.ConcurrentDictionary%602> потокобезопасны, не все методы атомарны, например <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> и <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A>. Чтобы предотвратить блокировку всех потоков неизвестным кодом, пользовательский делегат, передаваемый этим методам, вызывается вне внутренней блокировки словаря. Поэтому может произойти следующая последовательность событий.
 
 1. _Поток threadA_ вызывает <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A>, не находит элемент и создает элемент для добавления, вызывая делегат `valueFactory`.
 

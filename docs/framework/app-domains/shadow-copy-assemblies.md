@@ -1,17 +1,18 @@
 ---
 title: Теневое копирование сборок
+description: Сведения о теневом копировании сборок в .NET, которое позволяет обновлять используемые в домене приложения сборки без выгрузки домена приложения.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - assemblies [.NET Framework], shadow copying
 - application domains, shadow copying assemblies
 - shadow copying assemblies
 ms.assetid: de8b8759-fca7-4260-896b-5a4973157672
-ms.openlocfilehash: 9fc8a4aeeeca40f71ed9114a9db40b9a56e5fe6b
-ms.sourcegitcommit: 81ad1f09b93f3b3e6706a7f2e4ddf50ef229ea3d
+ms.openlocfilehash: a7ff72763dd26dbc50cd37e070c2d25ababa00f3
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74204562"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104561"
 ---
 # <a name="shadow-copying-assemblies"></a>Теневое копирование сборок
 
@@ -74,7 +75,7 @@ ms.locfileid: "74204562"
 
 Начиная с .NET Framework 4 при запуске по умолчанию происходит прямое сравнение даты и времени файла каждой сборки в каталоге приложения с датой и временем копии файла в каталоге теневого копирования. Если сборка была обновлена, она копируется с использованием той же процедуры, что и в более ранних версиях .NET Framework; в противном случае загружается копия из каталога теневого копирования.
 
-Повышение итоговой производительности является наибольшим для приложений, сборки которых меняются нечасто, а изменения обычно появляются в небольшом подмножестве сборок. Если большинство сборок приложения меняется часто, новое поведение по умолчанию может явиться причиной снижения производительности. Можно восстановить поведение при запуске предыдущих версий .NET Framework, добавив [элемент \<shadowCopyVerifyByTimestamp>](../configure-apps/file-schema/runtime/shadowcopyverifybytimestamp-element.md) в файл конфигурации с логическим значением `enabled="false"`.
+Повышение итоговой производительности является наибольшим для приложений, сборки которых меняются нечасто, а изменения обычно появляются в небольшом подмножестве сборок. Если большинство сборок приложения меняется часто, новое поведение по умолчанию может явиться причиной снижения производительности. Можно восстановить поведение при запуске предыдущих версий .NET Framework, добавив в файл конфигурации [элемент \<shadowCopyVerifyByTimestamp>](../configure-apps/file-schema/runtime/shadowcopyverifybytimestamp-element.md) с логическим значением `enabled="false"`.
 
 <a name="ObsoleteMethods"></a>
 
@@ -88,4 +89,4 @@ ms.locfileid: "74204562"
 - <xref:System.AppDomainSetup.CachePath%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=nameWithType>
-- [Элемент \<shadowCopyVerifyByTimeStamp>](../configure-apps/file-schema/runtime/shadowcopyverifybytimestamp-element.md)
+- [\<shadowCopyVerifyByTimestamp> Элемент](../configure-apps/file-schema/runtime/shadowcopyverifybytimestamp-element.md)

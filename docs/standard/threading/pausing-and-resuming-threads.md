@@ -1,5 +1,6 @@
 ---
 title: Приостановка и прерывание потоков
+description: Узнайте, как приостанавливать и прерывать выполнение потоков в .NET. Узнайте, как использовать такие методы, как Thread.Sleep и Thread.Interrupt, а также такие исключения, как ThreadInterruptedException.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - threading [.NET Framework], pausing
 - pausing threads
 ms.assetid: 9fce4859-a19d-4506-b082-7dd0792688ca
-ms.openlocfilehash: 369631603791d90c51244c1dc9907b9d8ec17364
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f7f414ec716bac5f1e840c5e8a0946024e059fb6
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291166"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769123"
 ---
 # <a name="pausing-and-interrupting-threads"></a>Приостановка и прерывание потоков
 
@@ -47,7 +48,7 @@ ms.locfileid: "84291166"
   
 - <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> выводит поток из состояния ожидания, в котором он может находиться, и приводит к созданию исключения <xref:System.Threading.ThreadAbortException> в этом потоке. Подробнее см. в разделе [Уничтожение потоков](destroying-threads.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Thread>
 - <xref:System.Threading.ThreadInterruptedException>

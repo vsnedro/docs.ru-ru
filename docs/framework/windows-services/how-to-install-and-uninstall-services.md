@@ -12,12 +12,12 @@ helpviewer_keywords:
 - installutil.exe tool
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 author: ghogen
-ms.openlocfilehash: 8937ef8b4007253b06444e59b292395084e4df2f
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: 259b353edc269a77a51e790544018481a53af188
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607923"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596362"
 ---
 # <a name="how-to-install-and-uninstall-windows-services"></a>Практическое руководство. Установка и удаление служб Windows
 
@@ -26,7 +26,7 @@ ms.locfileid: "81607923"
 > [!WARNING]
 > Если вы хотите удалить службу на своем компьютере, не выполняйте процедуру, описанную в этой статье. Вместо этого определите, какая программа (или программный пакет) установила эту службу, а затем выберите **Приложения** в параметрах, чтобы удалить эту программу. Следует отметить, что многие службы являются составной частью ОС Windows. Если их удалить, это может привести к нестабильной работе системы.
 
-Чтобы использовать процедуру, описанную в этой статье, сначала необходимо добавить установщик службы в свою службу Windows. Дополнительные сведения см. в разделе [Пошаговое руководство: создание диспетчера служб Windows](../windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md).
+Чтобы использовать процедуру, описанную в этой статье, сначала необходимо добавить установщик службы в свою службу Windows. Дополнительные сведения см. в разделе [Пошаговое руководство: создание диспетчера служб Windows](walkthrough-creating-a-windows-service-application-in-the-component-designer.md).
 
 Проекты служб Windows нельзя запускать непосредственно из среды разработки Visual Studio путем нажатия клавиши F5. Перед запуском проекта необходимо установить службу в проекте.
 
@@ -35,7 +35,7 @@ ms.locfileid: "81607923"
 
 ### <a name="install-your-service-manually-using-installutilexe-utility"></a>Установка службы вручную с помощью служебной программы InstallUtil.exe
 
-1. В меню **Пуск** выберите каталог **Visual Studio \<*версия*>** , а затем выберите **Командная строка разработчика для VS \<*версия*>** .
+1. В меню **Пуск** выберите каталог **Visual Studio \<*version*>** и затем **Командная строка разработчика для VS \<*version*>** .
 
      Появится командная строка разработчика для Visual Studio.
 
@@ -55,7 +55,7 @@ ms.locfileid: "81607923"
 
 ### <a name="uninstall-your-service-manually-using-installutilexe-utility"></a>Удаление службы вручную с помощью служебной программы InstallUtil.exe
 
-1. В меню **Пуск** выберите каталог **Visual Studio \<*версия*>** , а затем выберите **Командная строка разработчика для VS \<*версия*>** .
+1. В меню **Пуск** выберите каталог **Visual Studio \<*version*>** и затем **Командная строка разработчика для VS \<*version*>** .
 
      Появится командная строка разработчика для Visual Studio.
 
@@ -97,7 +97,7 @@ ms.locfileid: "81607923"
 
 ## <a name="see-also"></a>См. также
 
-- [Знакомство с приложениями служб Windows](../windows-services/introduction-to-windows-service-applications.md)
-- [Практическое руководство. Создание служб Windows](../windows-services/how-to-create-windows-services.md)
-- [Практическое руководство. Добавление установщиков в приложение-службу](../windows-services/how-to-add-installers-to-your-service-application.md)
+- [Знакомство с приложениями служб Windows](introduction-to-windows-service-applications.md)
+- [Практическое руководство. Создание служб Windows](how-to-create-windows-services.md)
+- [Практическое руководство. Добавление установщиков в приложение-службу](how-to-add-installers-to-your-service-application.md)
 - [Installutil.exe (установщик)](../tools/installutil-exe-installer-tool.md)

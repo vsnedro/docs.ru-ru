@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Написание цикла Parallel.ForEach c локальными переменными раздела
+description: См. пример написания цикла Parallel.ForEach c локальными переменными раздела в .NET.
 ms.date: 06/26/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -8,18 +9,18 @@ dev_langs:
 helpviewer_keywords:
 - parallel foreach loop, how to use local state
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
-ms.openlocfilehash: eff176f7c3ae5cae4c450047214d8e9e20a6e66d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f598955fb2d6800f81bce050bdf474fc63bfb554
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290750"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84599780"
 ---
 # <a name="how-to-write-a-parallelforeach-loop-with-partition-local-variables"></a>Практическое руководство. Написание цикла Parallel.ForEach c локальными переменными раздела
 
 В следующем примере описывается порядок написания метода <xref:System.Threading.Tasks.Parallel.ForEach%2A>, использующего локальные переменные раздела. Когда выполняется цикл <xref:System.Threading.Tasks.Parallel.ForEach%2A>, он делит свою исходную коллекцию на несколько разделов. Каждый раздел содержит свою копию локальной переменной раздела. Локальная переменная раздела аналогична [локальной переменной потока](xref:System.Threading.ThreadLocal%601), однако допускает выполнение нескольких разделов в одном потоке.
 
-Код и параметры в примере в значительной степени напоминают соответствующий метод <xref:System.Threading.Tasks.Parallel.For%2A>. См. дополнительные сведения о [написании цикла Parallel.For с локальными переменными потока](how-to-write-a-parallel-for-loop-with-thread-local-variables.md).
+Код и параметры в примере в значительной степени напоминают соответствующий метод <xref:System.Threading.Tasks.Parallel.For%2A>. Дополнительные сведения см. в разделе [Практическое руководство. Написание цикла Parallel.For и локальными переменными потока](how-to-write-a-parallel-for-loop-with-thread-local-variables.md).
 
 Чтобы использовать локальную переменную раздела в цикле <xref:System.Threading.Tasks.Parallel.ForEach%2A>, следует вызвать одну из перегрузок метода, принимающую два параметра типа. Первый параметр типа `TSource` указывает тип исходного элемента, а второй параметр типа `TLocal` указывает тип локальной переменной раздела.
 
@@ -48,7 +49,7 @@ ms.locfileid: "84290750"
 [!code-csharp[TPL_Parallel#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/foreachthreadlocal.cs#04)]
 [!code-vb[TPL_Parallel#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/foreachthreadlocal.vb#04)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параллелизм данных](data-parallelism-task-parallel-library.md)
 - [Практическое руководство. Написание цикла Parallel.For и локальными переменными потока](how-to-write-a-parallel-for-loop-with-thread-local-variables.md)

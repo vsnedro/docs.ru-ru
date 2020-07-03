@@ -1,17 +1,18 @@
 ---
 title: Выбор узлов с помощью XPath-навигации
+description: Сведения о том, как выбрать XML-узлы в .NET. Вы можете применять методы модели DOM, позволяющие использовать навигацию языка XPath для запроса данных в модели DOM.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8e4450dc-56b3-472b-b467-32f5694f83ad
-ms.openlocfilehash: 85f3ae9ec9f3b4d0949a893dd1e59fbbda139066
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: aa8b6d93e25d974a0e1b53ae8be9868f6bf64be6
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291465"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662515"
 ---
 # <a name="select-nodes-using-xpath-navigation"></a>Выбор узлов с помощью XPath-навигации
 Модель DOM содержит методы, позволяющие использовать навигацию языка XPath для запроса данных в модели DOM. Язык XPath используется для поиска конкретного одиночного узла или всех узлов, соответствующих некоторым условиям.  

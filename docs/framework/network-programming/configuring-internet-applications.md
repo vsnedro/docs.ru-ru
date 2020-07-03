@@ -1,5 +1,6 @@
 ---
 title: Настройка веб-приложений
+description: Сведения об использовании элемента <system.Net> для настройки интернет-приложений в .NET Framework. Эта статья содержит пример кода.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - downloading Internet resources, default proxy
@@ -21,17 +22,17 @@ helpviewer_keywords:
 - network resources, configuring Internet applications
 - Internet, default proxy
 ms.assetid: bb707c72-eed2-4a82-8800-c9e68df2fd4f
-ms.openlocfilehash: ee4dc87383153ae4e8df0a3bed7cce5220e65405
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 760a4ac7cec9abeabfc372c3be5bd3860a6fb03a
+ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71048632"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "84502643"
 ---
 # <a name="configuring-internet-applications"></a>Настройка веб-приложений
-[Элемент \<system.Net> (сетевые параметры)](../configure-apps/file-schema/network/system-net-element-network-settings.md) содержит сведения о конфигурации сети для приложений. С помощью [элемента \<system.Net> (сетевые параметры)](../configure-apps/file-schema/network/system-net-element-network-settings.md) можно задавать прокси-серверы, устанавливать параметры управления подключениями и включать в приложение пользовательские модули проверки подлинности и запросов.  
+[Элемент конфигурации \<system.Net> (параметры сети)](../configure-apps/file-schema/network/system-net-element-network-settings.md) содержит сведения о конфигурации сети для приложений. С помощью [элемента \<system.Net> (параметры сети)](../configure-apps/file-schema/network/system-net-element-network-settings.md) можно задавать прокси-серверы, устанавливать параметры управления подключениями и включать в приложение пользовательские модули проверки подлинности и запросов.  
   
- [Элемент \<defaultProxy> (сетевые параметры)](../configure-apps/file-schema/network/defaultproxy-element-network-settings.md) определяет прокси-сервер, который возвращается классом `GlobalProxySelection`. Любой объект <xref:System.Net.HttpWebRequest>, для которого не установлено свойство <xref:System.Net.HttpWebRequest.Proxy%2A>, использует прокси-сервер по умолчанию. Помимо настройки адреса прокси-сервера можно создать список адресов серверов, которые не будут использовать прокси-сервер. Кроме того, можно запретить использование прокси-сервера локальным адресам.  
+ [Элемент \<defaultProxy> (параметры сети)](../configure-apps/file-schema/network/defaultproxy-element-network-settings.md) определяет прокси-сервер, который возвращается классом `GlobalProxySelection`. Любой объект <xref:System.Net.HttpWebRequest>, для которого не установлено свойство <xref:System.Net.HttpWebRequest.Proxy%2A>, использует прокси-сервер по умолчанию. Помимо настройки адреса прокси-сервера можно создать список адресов серверов, которые не будут использовать прокси-сервер. Кроме того, можно запретить использование прокси-сервера локальным адресам.  
   
  Важно отметить, что параметры Microsoft Internet Explorer объединены с параметрами конфигурации, причем последние имеют приоритет.  
   
@@ -54,7 +55,7 @@ ms.locfileid: "71048632"
 </configuration>  
 ```  
   
- [Элемент \<connectionManagement> (сетевые параметры)](../configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) задает число постоянных подключений, которые могут устанавливаться к конкретному серверу или ко всем остальным серверам. В следующем примере показано приложение, которое использует два постоянных подключения к серверу `www.contoso.com`, четыре постоянных подключения к серверу с IP-адресом 192.168.1.2, а также одно постоянное подключение ко всем остальным серверам.  
+ [Элемент \<connectionManagement> (параметры сети)](../configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) задает число постоянных подключений, которые могут устанавливаться к конкретному серверу или ко всем остальным серверам. В следующем примере показано приложение, которое использует два постоянных подключения к серверу `www.contoso.com`, четыре постоянных подключения к серверу с IP-адресом 192.168.1.2, а также одно постоянное подключение ко всем остальным серверам.  
   
 ```xml  
 <configuration>  
@@ -68,7 +69,7 @@ ms.locfileid: "71048632"
 </configuration>  
 ```  
   
- Для настройки пользовательских модулей проверки подлинности используется [элемент \<authenticationModules> (сетевые параметры)](../configure-apps/file-schema/network/authenticationmodules-element-network-settings.md). Пользовательские модули проверки подлинности должны реализовывать интерфейс <xref:System.Net.IAuthenticationModule>.  
+ Для настройки пользовательских модулей проверки подлинности используется [элемент \<authenticationModules> (параметры сети)](../configure-apps/file-schema/network/authenticationmodules-element-network-settings.md). Пользовательские модули проверки подлинности должны реализовывать интерфейс <xref:System.Net.IAuthenticationModule>.  
   
  В следующем примере выполняется настройка пользовательского модуля проверки подлинности.  
   
@@ -82,7 +83,7 @@ ms.locfileid: "71048632"
 </configuration>  
 ```  
   
- С помощью [элемента \<webRequestModules> (сетевые параметры)](../configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) можно настроить приложение для работы с пользовательскими модулями определенного протокола, которые позволяют запрашивать данные из интернет-ресурсов. Указанные модули должны реализовывать интерфейс <xref:System.Net.IWebRequestCreate>. Вы можете переопределить установленные по умолчанию модули запросов HTTP, HTTPS и файлов, указав в файле конфигурации собственный модуль, как показано в следующем примере.  
+ С помощью [элемента \<webRequestModules> (параметры сети)](../configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) можно настроить приложение для работы с пользовательскими модулями определенного протокола, которые позволяют запрашивать данные из интернет-ресурсов. Указанные модули должны реализовывать интерфейс <xref:System.Net.IWebRequestCreate>. Вы можете переопределить установленные по умолчанию модули запросов HTTP, HTTPS и файлов, указав в файле конфигурации собственный модуль, как показано в следующем примере.  
   
 ```xml  
 <configuration>  
@@ -97,8 +98,8 @@ ms.locfileid: "71048632"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сетевое программирование в .NET Framework](index.md)
 - [Схема параметров сети](../configure-apps/file-schema/network/index.md)
-- [Элемент \<system.Net> (сетевые параметры)](../configure-apps/file-schema/network/system-net-element-network-settings.md)
+- [Элемент \<system.Net> (параметры сети)](../configure-apps/file-schema/network/system-net-element-network-settings.md)

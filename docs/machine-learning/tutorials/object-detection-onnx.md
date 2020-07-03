@@ -6,12 +6,12 @@ ms.author: luquinta
 ms.date: 01/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 199245aa0017d9232e3c9889c7845c3b9ec9877b
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: b4f6457c4fab8549b3efec2e25f7c23213698414
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144751"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84767784"
 ---
 # <a name="tutorial-detect-objects-using-onnx-in-mlnet"></a>Учебник. Обнаружение объектов с помощью ONNX в ML.NET
 
@@ -94,7 +94,7 @@ Open Neural Network Exchange (ONNX) — это формат с открытым 
     - Выберите nuget.org в качестве источника пакета, откройте вкладку "Обзор" и выполните поиск **Microsoft.ML**.
     - Нажмите кнопку **Установить**.
     - Нажмите кнопку **ОК** в диалоговом окне **Предварительный просмотр изменений**, а затем нажмите кнопку **Принимаю** в диалоговом окне **Принятие условий лицензионного соглашения**, если вы согласны с указанными условиями лицензионного соглашения для выбранных пакетов.
-    - Повторите эти шаги для пакетов **Microsoft.ML.ImageAnalytics** и **Microsoft.ML.OnnxTransformer**.
+    - Повторите эти шаги для пакетов **Microsoft.ML.ImageAnalytics**, **Microsoft.ML.OnnxTransformer** и **Microsoft.ML.OnnxRuntime**.
 
 ### <a name="prepare-your-data-and-pre-trained-model"></a>Подготовка данных и предварительно обученной модели
 

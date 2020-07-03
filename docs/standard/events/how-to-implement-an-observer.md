@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Реализация объекта Observer
+title: Практическое руководство. Реализация наблюдателя
+description: Реализация наблюдателя в .NET. Конструктивный шаблон наблюдателя подразумевает разделение ролей наблюдателя, который регистрируется для получения уведомлений, и поставщика.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -9,15 +10,15 @@ helpviewer_keywords:
 - observers [.NET Framework], observer design pattern
 - observer design pattern [.NET Framework], implementing observers
 ms.assetid: 8ecfa9f5-b500-473d-bcf0-5652ffb1e53d
-ms.openlocfilehash: 969b83bcd11159509a2cc1ed843836679ffd1705
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 43236ead15be0777f4284ba553a2f2f5e09d0a73
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289724"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768999"
 ---
-# <a name="how-to-implement-an-observer"></a>Практическое руководство. Реализация объекта Observer
-Шаблон разработки наблюдателя подразумевает разделение ролей наблюдателя, который регистрируется для получения уведомлений, и поставщика, который отслеживает данные и отправляет уведомления одному или нескольким наблюдателям. В этой статье объясняется, как создать наблюдатель. Создание наблюдателя рассматривается в связанной статье [Практическое руководство. Реализация поставщика](how-to-implement-a-provider.md).  
+# <a name="how-to-implement-an-observer"></a>Практическое руководство. Реализация наблюдателя
+Шаблон разработки наблюдателя подразумевает разделение ролей наблюдателя, который регистрируется для получения уведомлений, и поставщика, который отслеживает данные и отправляет уведомления одному или нескольким наблюдателям. В этой статье объясняется, как создать наблюдатель. Создание поставщика рассматривается в связанной статье [Практическое руководство. Реализация поставщика](how-to-implement-a-provider.md).  
   
 ### <a name="to-create-an-observer"></a>Создание наблюдателя  
   
@@ -47,7 +48,7 @@ ms.locfileid: "84289724"
  [!code-csharp[Conceptual.ObserverDesign.HowTo#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/observer.cs#12)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/observer.vb#12)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IObserver%601>
 - [Шаблон разработки наблюдателя](observer-design-pattern.md)

@@ -1,5 +1,6 @@
 ---
 title: Использование обслуживаемых компонентов с глобальным кэшем сборок
+description: Использование обслуживаемых компонентов (компоненты управляемого кода COM+) с глобальным кэшем сборок в .NET. Узнайте о том, могут ли среда CLR и службы COM+ обрабатывать компоненты, не входящие в глобальный кэш сборок.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - assemblies [.NET Framework], global assembly cache
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - serviced components, global assembly cache
 - global assembly cache, serviced components
 ms.assetid: 3423e5d9-234c-4571-8161-e35f6d130128
-ms.openlocfilehash: 99627cb14088f037c58bfa1eec72bd4f88d06011
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 6b7371865b7b1cedda0ee03b2cc28c74b5c3da0b
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119770"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104469"
 ---
 # <a name="using-serviced-components-with-the-global-assembly-cache"></a>Использование обслуживаемых компонентов с глобальным кэшем сборок
 Обслуживаемые компоненты (компоненты управляемого кода COM+) следует помещать в глобальный кэш сборок. В некоторых ситуациях среда CLR и службы COM+ могут обрабатывать обслуживаемые компоненты, не входящие в глобальный кэш сборок; в других сценариях это невозможно. Это иллюстрируется в следующих примерах.  

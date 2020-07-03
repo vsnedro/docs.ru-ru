@@ -1,5 +1,6 @@
 ---
 title: Обзор асинхронной модели, основанной на событиях
+description: Обзор асинхронных моделей на основе событий (EAP) в .NET, которые предоставляют преимущества многопоточных приложений и скрывают некоторые сложности в проектировании.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: 792aa8da-918b-458e-b154-9836b97735f3
-ms.openlocfilehash: f4aac5afbb13cafa7bb0e9c1eb6bbd92ac41bf8c
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 18fbdb29e5a1fb02601dea00964538144c07122c
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289425"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768863"
 ---
 # <a name="event-based-asynchronous-pattern-overview"></a>Обзор асинхронной модели, основанной на событиях
 Приложениям, выполняющим множество задач одновременно и при этом активно реагирующим на действия пользователя, часто требуется структура, использующая несколько потоков. Пространство имен <xref:System.Threading> предоставляет все необходимые средства для создания высокопроизводительных многопоточных приложений, однако для эффективного использования этих средств требуется значительный опыт в области многопоточной программной инженерии. Для относительно простых многопоточных приложений компонент <xref:System.ComponentModel.BackgroundWorker> предоставляет прямолинейное решение. Для более сложных асинхронных приложений рекомендуется реализовать класс, который соответствует асинхронной модели на основе событий.  
@@ -131,7 +132,7 @@ public class AsyncExample
   
  Некоторые классы могут предоставлять добавочные результаты по мере выполнения асинхронных операций. Эти результаты будут сохранены в классе, который является производным от <xref:System.ComponentModel.ProgressChangedEventArgs>, и будут иметь вид свойств в производном классе. Вы можете получить доступ к этим результатам в обработчике событий для события `ProgressChanged` точно так же, как стали бы получать доступ к свойству <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A>. Если имеется несколько ожидающих асинхронных операций, вы можете использовать свойство <xref:System.ComponentModel.ProgressChangedEventArgs.UserState%2A>, чтобы определить, какая операция выдает добавочные результаты.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ComponentModel.ProgressChangedEventArgs>
 - <xref:System.ComponentModel.BackgroundWorker>

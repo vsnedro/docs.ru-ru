@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Обработка нескольких событий с помощью их свойств
+title: Практическое руководство. Обработка множества событий с помощью их свойств
+description: Сведения о том, как обрабатывать множество событий с помощью их свойств. Определение коллекций делегатов, ключей событий и свойств событий. Реализация методов доступа для добавления и удаления.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - event handling [.NET Framework], with multiple events
 - events [.NET Framework], multiple
 ms.assetid: 30047cba-e2fd-41c6-b9ca-2ad7a49003db
-ms.openlocfilehash: c5be541c1a40c5d16a0502e76adef24f6a41cc89
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5b528aa2145ba703ce605ce22ae7d643f1e5b8d0
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288476"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84769019"
 ---
 # <a name="how-to-handle-multiple-events-using-event-properties"></a>Практическое руководство. Обработка нескольких событий с помощью их свойств
 Чтобы использовать свойства событий, следует определить свойства событий в классе, который вызывает события, а затем задать делегаты для свойств событий в классах, обрабатывающих события. Для реализации нескольких свойств событий в классе класс должен хранить и обслуживать внутри себя делегата, определенного для каждого события. Типичная стратегия заключается в реализации коллекции делегатов, которая индексируется по ключу события.  
@@ -45,7 +46,7 @@ ms.locfileid: "84288476"
  [!code-csharp[Conceptual.Events.Other#31](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.events.other/cs/example3.cs#31)]
  [!code-vb[Conceptual.Events.Other#31](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.events.other/vb/example3.vb#31)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>
 - [События](index.md)

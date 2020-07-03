@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Выгрузка домена приложения
+description: Сведения о том, как с помощью метода AppDomain.Unload выполнить выгрузку домена приложения в .NET для его корректного завершения.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - application domains, unloading
 - unloading application domains
 ms.assetid: f356116d-e415-4f7c-a332-6e6a60227192
-ms.openlocfilehash: 4d5f98229c3a9da69a350ae325cd42e8deb6b7bc
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b64a9553f63aa4a8deb57f23a97fa464edd64fee
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119850"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104667"
 ---
 # <a name="how-to-unload-an-application-domain"></a>Практическое руководство. Выгрузка домена приложения
 После завершения использования домена приложения выгрузите его с помощью метода <xref:System.AppDomain.Unload%2A?displayProperty=nameWithType>. Метод **Unload** безопасно завершает работу указанного домена приложения. В процессе выгрузки новые потоки не могут получить доступ к домену приложения, и освобождаются все структуры данных, определяемые доменом приложения.  

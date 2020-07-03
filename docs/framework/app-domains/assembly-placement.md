@@ -1,5 +1,6 @@
 ---
 title: Размещение сборок
+description: Общие рекомендации по размещению сборок .NET в каталогах (например, в глобальном кэше сборок, в папке приложения или в ее вложенной папке).
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <codeBase> element
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - assemblies [.NET Framework], placement
 - assemblies [.NET Framework], location
 ms.assetid: ff8d48bc-f606-484f-9fe1-d0af264269fb
-ms.openlocfilehash: 5eb7b5c35bb40d5a58390ccbd4619cbed4e06c52
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 3106f6f01229057725cbc2e8e689a4e2247f95e6
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73119956"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104967"
 ---
 # <a name="assembly-placement"></a>Размещение сборок
 Для большинства приложений .NET Framework сборки, составляющие приложение, располагаются в папке приложения, во вложенной папке этой папки или в глобальном кэше сборок (если сборка является совместно используемой). С помощью [элемента \<codeBase>](../configure-apps/file-schema/runtime/codebase-element.md) в файле конфигурации можно изменить место, где среда CLR будет искать сборки. Если у сборки нет строгого имени, то расположение, которое указывается с помощью [элемента \<codeBase>](../configure-apps/file-schema/runtime/codebase-element.md), ограничивается папкой приложения или вложенной папкой этой папки. Если у сборки есть строгое имя, то [элемент \<codeBase>](../configure-apps/file-schema/runtime/codebase-element.md) может указывать любое расположение на компьютере или в сети.  

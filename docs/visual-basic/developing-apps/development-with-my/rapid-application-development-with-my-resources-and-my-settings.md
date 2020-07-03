@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rapid application development (RAD), My.Settings
 - My.Resources object [Visual Basic], developing applications
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
-ms.openlocfilehash: 6c53d11a3830a5a8a2cb898728bed8694a226686
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fd1ec25582e919b84235502f5921edfbc6e1dade
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411672"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84990204"
 ---
 # <a name="rapid-application-development-with-myresources-and-mysettings-visual-basic"></a>Быстрая разработка приложений с использованием My.Resources и My.Settings (Visual Basic)
 
@@ -24,7 +24,7 @@ ms.locfileid: "84411672"
   
  [!code-vb[VbVbcnMy#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMy/VB/Class1.vb#7)]  
   
- Объект `My.Resources` предоставляет только глобальные ресурсы. Он не предоставляет доступ к файлам ресурсов, связанным с формами. Вам нужно получить доступ к ресурсам формы из формы.  
+ Объект `My.Resources` предоставляет только глобальные ресурсы. Он не предоставляет доступ к файлам ресурсов, связанным с формами. Обращайтесь к ресурсам формы из самой формы.  
   
  Аналогичным образом объект `My.Settings` предоставляет доступ к параметрам приложения, позволяя динамически сохранять и извлекать параметры свойств и другие сведения для приложения. См. сведения о [My.Resources Object](../../language-reference/objects/my-resources-object.md) и [My.Settings Object](../../language-reference/objects/my-settings-object.md).  
   

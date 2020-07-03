@@ -1,5 +1,6 @@
 ---
 title: Общие сведения о коллекции BlockingCollection
+description: Сведения о BlockingCollection<T>, потокобезопасном классе коллекции в .NET. Этот класс обеспечивает такие возможности, как параллельное добавление и извлечение элементов из нескольких потоков.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -8,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - BlockingCollection, overview
 ms.assetid: 987ea3d7-0ad5-4238-8b64-331ce4eb3f0b
-ms.openlocfilehash: 708ab9dc8df2ee3128036ffc71e9abc51a56e33b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: fc11f6c28a551e56d3bac4c5be9c08a396c0c6b1
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287917"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600806"
 ---
 # <a name="blockingcollection-overview"></a>Общие сведения о коллекции BlockingCollection
 <xref:System.Collections.Concurrent.BlockingCollection%601> — это потокобезопасный класс коллекции, обеспечивающий следующие возможности:  
@@ -46,7 +47,7 @@ ms.locfileid: "84287917"
  [!code-csharp[CDS_BlockingCollection#04](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds_blockingcollection/cs/blockingcollection.cs#04)]
  [!code-vb[CDS_BlockingCollection#04](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_blockingcollection/vb/introsnippetsbc.vb#04)]  
   
- Полный пример см. в разделе [Практическое руководство. Добавление и удаление отдельных элементов коллекции BlockingCollection](how-to-add-and-take-items.md).  
+ Полный пример см. в подразделе [Практическое руководство. Добавление и удаление отдельных элементов коллекции BlockingCollection](how-to-add-and-take-items.md).  
   
 ## <a name="timed-blocking-operations"></a>Операции с временной блокировкой  
  При использовании операций <xref:System.Collections.Concurrent.BlockingCollection%601.TryAdd%2A> и <xref:System.Collections.Concurrent.BlockingCollection%601.TryTake%2A> ограниченных коллекций, использующих временную блокировку, метод предпринимает попытку добавления или удаления элемента. Если элемент доступен, то он заносится в указанную по ссылке переменную, после чего метод возвращает значение true. Если по прошествии определенного времени ожидания элемент так и не удается извлечь, метод возвращает значение false. После этого поток может перейти к другой полезной работе, прежде чем повторить попытку обращения к коллекции. Пример доступа с временной блокировкой см. во втором примере из раздела [Практическое руководство. Добавление и удаление отдельных элементов коллекции BlockingCollection](how-to-add-and-take-items.md).  
@@ -57,7 +58,7 @@ ms.locfileid: "84287917"
  [!code-csharp[CDS_BlockingCollection#05](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds_blockingcollection/cs/blockingcollection.cs#05)]
  [!code-vb[CDS_BlockingCollection#05](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_blockingcollection/vb/introsnippetsbc.vb#05)]  
   
- Пример добавления поддержки отмены см. во втором примере из статьи [Практическое руководство. Добавление и удаление отдельных элементов коллекции BlockingCollection](how-to-add-and-take-items.md).  
+ Пример добавления поддержки отмены см. во втором примере из раздела [Практическое руководство. Добавление и удаление отдельных элементов коллекции BlockingCollection](how-to-add-and-take-items.md).  
   
 ## <a name="specifying-the-collection-type"></a>Указание типа коллекции  
  При создании класса <xref:System.Collections.Concurrent.BlockingCollection%601> можно указать не только ограничиваемую емкость, но и тип используемой коллекции. Например, можно задать объект <xref:System.Collections.Concurrent.ConcurrentQueue%601> для использования принципа "первым поступил — первым обслужен" или объект <xref:System.Collections.Concurrent.ConcurrentStack%601> для использования принципа "последним поступил — первым обслужен". Использовать можно любой класс коллекции, реализующий интерфейс <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>. Тип коллекции, используемый в классе <xref:System.Collections.Concurrent.BlockingCollection%601> по умолчанию — это <xref:System.Collections.Concurrent.ConcurrentQueue%601>. В следующем примере кода показано, как создать строковую коллекцию <xref:System.Collections.Concurrent.BlockingCollection%601> емкостью в 1000 элементов, которая использует класс <xref:System.Collections.Concurrent.ConcurrentBag%601>:  
@@ -70,7 +71,7 @@ Dim bc = New BlockingCollection(Of String)(New ConcurrentBag(Of String()), 1000)
 BlockingCollection<string> bc = new BlockingCollection<string>(new ConcurrentBag<string>(), 1000 );  
 ```  
   
- Дополнительные сведения см. в статье [Практическое руководство. Добавление функций границы и блокировки в коллекцию](how-to-add-bounding-and-blocking.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Добавление функций границы и блокировки в коллекцию](how-to-add-bounding-and-blocking.md).  
   
 ## <a name="ienumerable-support"></a>Поддержка интерфейса IEnumerable  
  <xref:System.Collections.Concurrent.BlockingCollection%601> предоставляет метод <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumerable%2A>, позволяющий потребителям использовать оператор `foreach` (`For Each` в Visual Basic) для удаления элементов коллекции до тех пор, пока коллекция не будет исчерпана (то есть достигнет состояния, в котором коллекция пуста и новые элементы не будут добавляться). Дополнительные сведения см. в разделе [Практическое руководство. Использование оператора ForEach для удаления элементов в коллекции BlockingCollection](how-to-use-foreach-to-remove.md).  
@@ -78,7 +79,7 @@ BlockingCollection<string> bc = new BlockingCollection<string>(new ConcurrentBag
 ## <a name="using-many-blockingcollections-as-one"></a>Использование нескольких коллекций BlockingCollection в качестве одной коллекции  
  В сценариях, где потребителю необходимо одновременно извлекать элементы из нескольких коллекций, можно создавать массивы <xref:System.Collections.Concurrent.BlockingCollection%601> и использовать такие статические методы, как <xref:System.Collections.Concurrent.BlockingCollection%601.TakeFromAny%2A> и <xref:System.Collections.Concurrent.BlockingCollection%601.AddToAny%2A>, позволяющие добавлять и извлекать элементы любой коллекции в массиве. Если одна из коллекций заблокирована, метод немедленно переходит к другой, пока не найдет коллекцию, способную выполнить операцию. Дополнительные сведения см. в разделе [Практическое руководство. Использование массивов для блокировки коллекций в конвейере](how-to-use-arrays-of-blockingcollections.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
 - [Коллекции и структуры данных](../index.md)

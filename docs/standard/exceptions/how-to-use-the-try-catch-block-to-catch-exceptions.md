@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Использование пробного блока и блока перехвата для перехвата исключений
+title: Практическое руководство. использование блока try/catch для перехвата исключений
+description: Включайте в блок try операторы, которые могут создавать исключение. Помещайте операторы для обработки исключений в один блок catch или несколько.
 ms.date: 02/06/2019
 ms.technology: dotnet-standard
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - try/catch blocks
 - catch blocks
 ms.assetid: a3ce6dfd-1f64-471b-8ad8-8cfaf406275d
-ms.openlocfilehash: 5a9218d394b76e897f4263708a10f1bc895ad4e1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 60ed213ea777fe35873fd1e67555b7506e3ca587
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75708470"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768915"
 ---
 # <a name="how-to-use-the-trycatch-block-to-catch-exceptions"></a>Использование блока try/catch для перехвата исключений
 
@@ -36,7 +37,7 @@ ms.locfileid: "75708470"
 > [!NOTE]
 > Большая часть кода может создавать исключения, и некоторые исключения, например <xref:System.OutOfMemoryException>, могут вызываться самой средой CLR в любое время. Приложениям не требуется обрабатывать эти исключения, но вы должны помнить об этом при написании библиотек, предназначенных для других пользователей. Рекомендации о том, когда следует помещать код в блок `try`, см. в разделе [о лучших методиках обработки исключений](best-practices-for-exceptions.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Исключения](index.md)
 - [Обработка ошибок ввода-вывода в .NET](../io/handling-io-errors.md)

@@ -14,15 +14,16 @@ helpviewer_keywords:
 - stores, creating files and directories
 - storing data using isolated storage, creating files and directories
 ms.assetid: 2ca4d2a4-809b-4f00-bc08-bf4a64d3a5c3
-ms.openlocfilehash: d5e086e77ab6309fa0757ef32b620e0fdbc1f627
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b9ae108d9416bb834fc230fde1e62b929c21eb20
+ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413045"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84990164"
 ---
 # <a name="how-to-create-files-and-directories-in-isolated-storage"></a>Практическое руководство. Создание файлов и каталогов в изолированном хранилище
-Получив изолированное хранилище, в нем можно создавать файлы и папки для хранения данных. В хранилище имена файлов и каталогов указываются относительно корня виртуальной файловой системы.  
+
+После того как вы получите изолированное хранилище, в нем можно создавать файлы и папки для хранения данных. В хранилище имена файлов и каталогов указываются относительно корня виртуальной файловой системы.  
   
  Чтобы создать каталог, используйте экземпляр метода <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A?displayProperty=nameWithType>. Если вы укажете подкаталог в несуществующем каталоге, создаются оба этих каталога. Если вы укажете уже существующий каталог, метод сразу завершает работу, не создавая каталог и не вызывая исключений. Но если вы укажете в имени каталога недопустимые символы, создастся исключение <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
   

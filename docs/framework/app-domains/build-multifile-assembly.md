@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Создание многофайловой сборки
+description: Образец кода, демонстрирующий пошаговый процесс построения (создания) многофайловой сборки в .NET.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - assemblies [.NET Framework], multifile
@@ -17,12 +18,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
-ms.openlocfilehash: 0f8c6d57425657e321d80f9edffa20f27bc28770
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: a4c298284950ba2989bb73e6d3383b3c4024e6e7
+ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74429566"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85104948"
 ---
 # <a name="how-to-build-a-multifile-assembly"></a>Практическое руководство. Создание многофайловой сборки
 
@@ -209,7 +210,7 @@ ms.locfileid: "74429566"
 
     В командной строке введите следующую команду:
 
-    **al** \<*имя модуля*> \<*имя модуля*> … **/main:** \<*имя метода*>  **/out:** \<*имя файла*>  **/target:** \<*тип файла сборки*>
+    **al** \<*module name*> \<*module name*> … **/main:** \<*method name*> **/out:** \<*file name*> **/target:** \<*assembly file type*>
 
     В этой команде в аргументах *имя модуля* задаются имена всех модулей, которые будут включены в сборку. В параметре **/main:** указывается имя метода, являющегося точкой входа сборки. В параметре **/out:** задается имя выходного файла, содержащего метаданные сборки. В параметре **/target:** указывается, что сборка является исполняемым файлом консольного приложения (*EXE*), исполняемым файлом Windows (*WIN*) или же файлом библиотеки (*LIB*).
 

@@ -1,5 +1,6 @@
 ---
 title: Использование класса StringBuilder в .NET
+description: Сведения о том, как использовать класс StringBuilder в .NET. Этот класс можно использовать, чтобы изменить строку без создания нового объекта.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - Insert method
 - strings [.NET Framework], StringBuilder object
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
-ms.openlocfilehash: a8116013cc20ead3be13763ce72999d2c608dbce
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 83d4b9327b55c511e2a46486e519e3cd0c77b1a3
+ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289269"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84803227"
 ---
 # <a name="using-the-stringbuilder-class-in-net"></a>Использование класса StringBuilder в .NET
 Объект <xref:System.String> является неизменяемым. Каждый раз при использовании одного из методов в классе <xref:System.String?displayProperty=nameWithType> вы создаете объект строки в памяти, для которого требуется выделение нового пространства. В случаях, когда необходимо выполнять повторяющиеся изменения строки, издержки, связанные с созданием объекта <xref:System.String>, могут оказаться значительными. Чтобы изменять строку без создания нового объекта, можно использовать класс <xref:System.Text.StringBuilder?displayProperty=nameWithType>. Например, использование класса <xref:System.Text.StringBuilder> может повысить производительность при соединении большого количества строк в цикле.  
@@ -66,7 +67,7 @@ ms.locfileid: "84289269"
 |<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|Заменяет отформатированным текстом описатель формата, переданный в строке.|  
 |<xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType>|Вставляет строку или объект в указанный индекс текущего объекта **StringBuilder**.|  
 |<xref:System.Text.StringBuilder.Remove%2A?displayProperty=nameWithType>|Удаляет указанное количество символов из текущего объекта **StringBuilder**.|  
-|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Заменяет указанный символ в указанном индексе.|  
+|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Замещает все вхождения указанного символа или строки в текущем **StringBuilder** на другой указанный символ или строку.|  
   
 ### <a name="append"></a>Добавить  
  Метод **Append** позволяет добавить текст или строковое представление объекта к концу строки, представленной текущим объектом **StringBuilder**. Следующий пример инициализирует **StringBuilder** с текстом Hello World, а затем добавляет текст в конец объекта. Пространство выделяется автоматически при необходимости.  

@@ -1,5 +1,6 @@
 ---
 title: Шаблон разработки Observer
+description: Сведения о конструктивном шаблоне Observer в .NET. Этот шаблон позволяет подписчику регистрироваться у поставщика и получать от него уведомления.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - IObservable(Of T) interface
 - observer design pattern [.NET Framework]
 ms.assetid: 3680171f-f522-453c-aa4a-54f755a78f88
-ms.openlocfilehash: 5794cd1ec9b63a6e151b35c28e09e29f86dcfac6
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4edcd2645b28095f4bd18f4918b9afa5c893bd39
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291270"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662736"
 ---
 # <a name="observer-design-pattern"></a>Шаблон разработки Observer
 
@@ -91,8 +92,8 @@ ms.locfileid: "84291270"
 
 ## <a name="related-topics"></a>См. также
 
-|Название|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Рекомендации по шаблону разработки Observer](observer-design-pattern-best-practices.md)|Рекомендации по разработке приложений, реализующих шаблон разработки наблюдателя.|
 |[Практическое руководство. Реализация поставщика](how-to-implement-a-provider.md)|Пошаговая реализация поставщика для приложения контроля температуры.|
-|[Практическое руководство. Реализация объекта Observer](how-to-implement-an-observer.md)|Пошаговая реализация наблюдателя для приложения контроля температуры.|
+|[Практическое руководство. Реализация наблюдателя](how-to-implement-an-observer.md)|Пошаговая реализация наблюдателя для приложения контроля температуры.|

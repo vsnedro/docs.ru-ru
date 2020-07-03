@@ -1,5 +1,6 @@
 ---
 title: Синтаксический анализ числовых строк в .NET
+description: Сведения о синтаксическом анализе числовых строк в .NET. Вы можете узнать, как выполнять анализ с помощью поставщиков формата, значений перечисления NumberStyles и цифр Юникода.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - enumerations [.NET Framework], parsing strings
 - base types, parsing strings
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
-ms.openlocfilehash: 000419e63e86607cd76728ae6e15ac6cd67b87f4
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b184bad10b816c1eae798302337b5c901732ad7f
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277652"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84589543"
 ---
 # <a name="parsing-numeric-strings-in-net"></a>Синтаксический анализ числовых строк в .NET
 Все числовые типы имеют два статических метода синтаксического анализа — `Parse` и `TryParse`, которые можно использовать для преобразования строкового представления числа в числовой тип. Эти методы позволяют анализировать строки, которые были созданы с помощью строк формата, описанных в разделах [Строки стандартных числовых форматов](standard-numeric-format-strings.md) и [Строки настраиваемых числовых форматов](custom-numeric-format-strings.md). По умолчанию методы `Parse` и `TryParse` могут успешно преобразовывать строки, содержащие целые десятичные числа, только в целочисленные значения. Они могут успешно преобразовывать строки, содержащие целые и дробные десятичные числа, разделители групп и десятичные разделители, в значения с плавающей запятой. Если операцию выполнить не удалось, метод `Parse` создает исключение, а метод `TryParse` возвращает значение `false`.  
@@ -81,8 +82,8 @@ ms.locfileid: "84277652"
  [!code-csharp[Parsing.Numbers#3](../../../samples/snippets/csharp/VS_Snippets_CLR/parsing.numbers/cs/unicode1.cs#3)]
  [!code-vb[Parsing.Numbers#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/parsing.numbers/vb/unicode1.vb#3)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Globalization.NumberStyles>
-- [Анализ строк в .NET Framework](parsing-strings.md)
+- [Анализ строк в .NET](parsing-strings.md)
 - [Типы форматирования](formatting-types.md)

@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Создание конвейера потока данных
+description: Создайте конвейер потока данных, который представляет собой цепочку компонентов, или блоков потока данных. Блок потока данных выполняет конкретную задачу в рамках более крупной цели.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, creating dataflow pipeline
 ms.assetid: 69308f82-aa22-4ac5-833d-e748533b58e8
-ms.openlocfilehash: cfe3296815dc344b0d9d1f7bad1ab4a130380e2b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7fe12b63b04d403334e4b64a421b105550467ca4
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84284615"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84767875"
 ---
 # <a name="walkthrough-creating-a-dataflow-pipeline"></a>Пошаговое руководство. Создание конвейера потока данных
 Чтобы получать сообщения из блоков источника, можно использовать методы <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Receive%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive%2A?displayProperty=nameWithType> или же объединить блоки сообщений в *конвейер потока данных*. Конвейер потока данных — это цепочка компонентов, или *блоков потока данных*, каждый из которых выполняет конкретную задачу в рамках более крупной цели. Каждый блок потока данных в конвейере потока данных выполняет работу, когда получает сообщение от другого блока потока данных. Можно сравнить это с линией сборки автомобилей. Как при продвижении автомобиля по сборочной линии одна станция собирает раму, следующая — устанавливает двигатель и так далее. Так как при этом можно собирать одновременно много автомобилей, линия сборки обеспечивает большую производительность, чем полная сборка автомобилей по одному.

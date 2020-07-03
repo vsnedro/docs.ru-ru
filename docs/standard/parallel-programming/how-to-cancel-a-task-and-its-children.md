@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Отмена задачи и ее дочерних элементов
+description: 'Ознакомьтесь с примерами отмены задач и их дочерних элементов в .NET. В примерах рассматриваются различные этапы: от создания задачи с возможностью отмены до получения уведомления о том, что задача была отменена.'
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -8,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, how to cancel
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
-ms.openlocfilehash: ca6b5f10840d935aa45cb660da86685d1c90554b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 66daf00680b65aace1ce6367761e3ed81596d33b
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290036"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662684"
 ---
 # <a name="how-to-cancel-a-task-and-its-children"></a>Практическое руководство. Отмена задачи и ее дочерних элементов
 В следующих примерах показано выполнение таких задач:  
@@ -36,7 +37,7 @@ ms.locfileid: "84290036"
   
  Класс <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> полностью интегрирован с моделью отмены, основанной на типах <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType> и <xref:System.Threading.CancellationToken?displayProperty=nameWithType>. Дополнительные сведения см. в статьях [Отмена в управляемых потоках](../threading/cancellation-in-managed-threads.md) и [Отмена задач](task-cancellation.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType>
 - <xref:System.Threading.CancellationToken?displayProperty=nameWithType>

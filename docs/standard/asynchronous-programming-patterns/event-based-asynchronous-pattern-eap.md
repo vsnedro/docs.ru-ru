@@ -1,5 +1,6 @@
 ---
 title: Асинхронная модель на основе событий (EAP)
+description: См. ссылки на статьи, посвященные асинхронной модели на основе событий (EAP) в .NET, в том числе с информацией о реализации, рекомендациях, реализации клиента EAP и многом другом.
 ms.date: 07/23/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - asynchronous programming, design patterns
 - asynchronous programming
 ms.assetid: c6baed9f-2a25-4728-9a9a-53b7b14840cf
-ms.openlocfilehash: 604e7a944579a284004817009b06c11b268d5daf
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 03b4d914d72b96b882c774565654c022b145b5f2
+ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289438"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84768876"
 ---
 # <a name="event-based-asynchronous-pattern-eap"></a>Асинхронная модель на основе событий (EAP)
 
@@ -21,7 +22,7 @@ ms.locfileid: "84289438"
 > [!NOTE]
 > Начиная с версии .NET Framework 4 библиотека параллельных задач предоставляет новую модель для асинхронного и параллельного программирования. Дополнительные сведения см. в разделах [Библиотека параллельных задач (TPL)](../parallel-programming/task-parallel-library-tpl.md) и [Асинхронная модель на основе задач (TAP)](task-based-asynchronous-pattern-tap.md).
   
-## <a name="in-this-section"></a>Содержание
+## <a name="in-this-section"></a>В этом разделе
 
  [Обзор асинхронной модели, основанной на событиях](event-based-asynchronous-pattern-overview.md)  
  Описывает, как асинхронная модель на основе событий позволяет использовать преимущества многопоточных приложений и устраняет многие сложности, присущие многопоточности.  
@@ -63,7 +64,7 @@ ms.locfileid: "84289438"
  [Работа с потоками](../threading/index.md)  
  Описывает многопоточные функциональные возможности в .NET.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Рекомендации по работе с потоками](../threading/managed-threading-best-practices.md)
 - [События](../events/index.md)

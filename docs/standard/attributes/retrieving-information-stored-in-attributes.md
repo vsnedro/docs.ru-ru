@@ -1,5 +1,6 @@
 ---
 title: Извлечение информации, сохраненной в атрибуте
+description: Узнайте, как извлекать сведения, хранящиеся в атрибутах, например для экземпляра атрибута, нескольких экземпляров в одной области или нескольких экземпляров в разных областях.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - multiple attribute instances
 - attributes [.NET Framework], retrieving
 ms.assetid: 37dfe4e3-7da0-48b6-a3d9-398981524e1c
-ms.openlocfilehash: fc8dcb38471d80d01d1f87993783af3d24868506
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: cf147a0ae6833039247c4c0878996973cc3db545
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84276139"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84661865"
 ---
 # <a name="retrieving-information-stored-in-attributes"></a>Извлечение информации, сохраненной в атрибуте
 Извлечение пользовательских атрибутов не представляет никакой сложности. Сначала объявите экземпляр атрибута, который вам нужно получить. Затем вызовите метод <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>, чтобы инициализировать новый атрибут тем значением, которое вы хотите получить. После инициализации нового атрибута обращайтесь к его свойствам, чтобы получить значения.  
   
 > [!IMPORTANT]
-> В этой статье объясняется, как можно получить настраиваемые атрибуты для кода, загруженного в контекст выполнения. Чтобы получить атрибуты для кода, загруженного в контекст только для отражения, необходимо использовать класс <xref:System.Reflection.CustomAttributeData>, как показано в статье о [загрузке сборок в контекст, предназначенный только для отражения](../../framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
+> В этой статье объясняется, как можно получить настраиваемые атрибуты для кода, загруженного в контекст выполнения. Чтобы получить атрибуты для кода, загруженного в контекст только для отражения, необходимо использовать класс <xref:System.Reflection.CustomAttributeData>, как показано в статье [Практическое руководство. Загрузка сборок в контекст, предназначенный только для отражения](../../framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
   
  В этом разделе описываются следующие способы извлечения атрибутов.  
   
@@ -82,7 +83,7 @@ The attribute was not found.
   
  Вы можете использовать члены класса <xref:System.Type>, чтобы получить отдельные методы и члены переданного класса. Этот пример первым делом опрашивает объект **Type**, чтобы получить данные об атрибуте на уровне класса. После этого он выполняет <xref:System.Type.GetMethods%2A?displayProperty=nameWithType>, чтобы поместить экземпляры всех методов в массив объектов <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> и получить данные об атрибуте на уровне методов. Вы также можете использовать метод <xref:System.Type.GetProperties%2A?displayProperty=nameWithType>, чтобы найти атрибуты на уровне свойств, или метод <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType>, чтобы найти атрибуты на уровне конструктора.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Type?displayProperty=nameWithType>
 - <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>

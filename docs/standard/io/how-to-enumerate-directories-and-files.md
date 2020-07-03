@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Перечисление каталогов и файлов
+description: Сведения о перечислении каталогов и файлов с помощью перечислимых коллекций, которые могут обеспечить более высокую производительность, чем массивы в .NET.
 ms.date: 12/27/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -8,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - I/O [.NET Framework], enumerating directories and files
 ms.assetid: 86b69a08-3bfa-4e5f-b4e1-3b7cb8478215
-ms.openlocfilehash: bcb10426175c1f2cabeec6d8d4f8d2ed74e5e3b4
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 276668f4a3eee89610a81b1256820770d1f72dc3
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291881"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662580"
 ---
 # <a name="how-to-enumerate-directories-and-files"></a>Практическое руководство. Перечисление каталогов и файлов
 Перечислимые коллекции дают более высокую производительность, чем массивы, если вы работаете с большими коллекциями файлов и каталогов. Чтобы перечислить каталоги и файлы, вы можете применить методы, которые возвращают перечисляемую коллекцию имен каталогов или файлов, либо их объекты <xref:System.IO.DirectoryInfo>, <xref:System.IO.FileInfo> или <xref:System.IO.FileSystemInfo>.  

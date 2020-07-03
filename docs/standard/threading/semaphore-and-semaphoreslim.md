@@ -1,5 +1,6 @@
 ---
 title: Классы Semaphore и SemaphoreSlim
+description: Сведения о классах Semaphore и SemaphoreSlim. Класс Semaphore является тонкой оболочкой вокруг объекта семафора Win32. Класс SemaphoreSlim является быстрым и простым семафором.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SemaphoreSlim class, about SemaphoreSlim class
 - threading [.NET Framework], Semaphore class
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
-ms.openlocfilehash: 9a18a6517548bb402e1e3b9ac02e95aae32a8f4a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 21f0d7e3fb446a7b750c45cfe8ef3f087a77888a
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291140"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84600455"
 ---
 # <a name="semaphore-and-semaphoreslim"></a>Классы Semaphore и SemaphoreSlim
 <xref:System.Threading.Semaphore?displayProperty=nameWithType> Класс представляет собой именованный (общесистемный) или локальный семафор. Он является тонкой оболочкой вокруг объекта семафора Win32. Семафоры Win32 являются семафорами счета, которые могут быть использованы для управления доступом к пулу ресурсов.  
@@ -44,7 +45,7 @@ ms.locfileid: "84291140"
   
  Используйте безопасность управления доступом для защиты объекта <xref:System.Threading.Semaphore>, представляющего именованный семафор, предпочтительнее с помощью конструктора, который определяет объект <xref:System.Security.AccessControl.SemaphoreSecurity?displayProperty=nameWithType>. Также можно применить безопасность управления доступом с помощью метода <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=nameWithType>, однако это оставит брешь в защите между временем создания семафора и временем, когда он будет защищен. Защита семафоров с помощью безопасности управления доступом способствует предотвращению атак злоумышленников, но не решает проблемы непреднамеренного конфликта имен.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Semaphore>
 - <xref:System.Threading.SemaphoreSlim>

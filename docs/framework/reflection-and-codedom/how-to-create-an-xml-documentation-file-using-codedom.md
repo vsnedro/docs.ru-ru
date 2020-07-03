@@ -9,17 +9,18 @@ helpviewer_keywords:
 - XML documentation, creating using CodeDOM
 - Code Document Object Model, generating XML documentation
 ms.assetid: e3b80484-36b9-41dd-9d21-a2f9a36381dc
-ms.openlocfilehash: a0ccb469a43c3a21a76eaf24fa7ce7b490dd5c4a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b9e11a51048733dbfc42ff9f575e18effc80db07
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180512"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596250"
 ---
 # <a name="how-to-create-an-xml-documentation-file-using-codedom"></a>Практическое руководство. Создание XML-файла документации с использованием CodeDOM
+
 CodeDOM можно использовать для создания кода, создающего XML-документацию. Этот процесс предполагает создание графа CodeDOM, содержащего комментарии XML-документации, создание кода, а также компиляцию созданного кода с параметром компилятора, при выборе которого в итоге создается XML-документация.  
   
-### <a name="to-create-a-codedom-graph-that-contains-xml-documentation-comments"></a>Создание графа CodeDOM, содержащего комментарии XML-документации  
+## <a name="create-a-codedom-graph"></a>Создание графа CodeDOM
   
 1. Создайте объект <xref:System.CodeDom.CodeCompileUnit>, содержащий граф CodeDOM для примера приложения.  
   
@@ -28,27 +29,28 @@ CodeDOM можно использовать для создания кода, с
      [!code-csharp[CodeDomHelloWorldSample#4](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#4)]
      [!code-vb[CodeDomHelloWorldSample#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#4)]  
   
-### <a name="to-generate-the-code-from-the-codecompileunit"></a>Создание кода на основе объекта CodeCompileUnit  
+### <a name="generate-the-code-from-the-codecompileunit"></a>Создание кода на основе объекта CodeCompileUnit
   
 1. С помощью метода <xref:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit%2A> создайте код и исходный файл для компиляции.  
   
      [!code-csharp[CodeDomHelloWorldSample#5](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#5)]
      [!code-vb[CodeDomHelloWorldSample#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#5)]  
   
-### <a name="to-compile-the-code-and-generate-the-documentation-file"></a>Компиляция кода и создание файла документации  
+### <a name="compile-the-code-and-generate-the-documentation-file"></a>Компиляция кода и создание файла документации
   
 1. Добавьте параметр компилятора **/doc** в свойство <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A> объекта <xref:System.CodeDom.Compiler.CompilerParameters> и передайте объект в метод <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile%2A>, чтобы создать файл XML-документации при компиляции кода.  
   
      [!code-csharp[CodeDomHelloWorldSample#6](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#6)]
      [!code-vb[CodeDomHelloWorldSample#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#6)]  
   
-## <a name="example"></a>Пример  
- В следующем примере кода создается граф CodeDOM с комментариями документации, на основе этого графа создается файл кода, этот файл компилируется, а затем создается сопоставленный файл XML-документации.  
+## <a name="example"></a>Пример
+
+В следующем примере кода создается граф CodeDOM с комментариями документации, на основе этого графа создается файл кода, этот файл компилируется, а затем создается сопоставленный файл XML-документации.  
   
  [!code-csharp[CodeDomHelloWorldSample#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomHelloWorldSample/cs/program.cs#1)]
  [!code-vb[CodeDomHelloWorldSample#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomHelloWorldSample/vb/program.vb#1)]  
   
- В этом примере в файле HelloWorldDoc.xml создается следующая XML-документация.  
+ В этом примере в файле *HelloWorldDoc.xml* создается следующая XML-документация.  
   
 ```xml  
 <?xml version="1.0" ?>
@@ -60,8 +62,8 @@ CodeDOM можно использовать для создания кода, с
     <member name="T:Samples.Class1">  
       <summary>  
         Create a Hello World application.
-        <seealso cref="M:Samples.Class1.Main" />
-      </summary>  
+      </summary>
+      <seealso cref="M:Samples.Class1.Main" />
     </member>  
     <member name="M:Samples.Class1.Main">  
       <summary>  
@@ -73,12 +75,12 @@ CodeDOM можно использовать для создания кода, с
 </doc>  
 ```  
   
-## <a name="compiling-the-code"></a>Компиляция кода  
+## <a name="compile-permissions"></a>Разрешения на компиляцию
   
-- Для выполнения этого кода должно быть установлено разрешение `FullTrust`.  
+Для выполнения этого кода должно быть установлено разрешение `FullTrust`.
   
 ## <a name="see-also"></a>См. также
 
-- [Документирование кода с помощью XML](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
+- [Документирование кода с помощью XML (Visual Basic)](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
 - [Комментарии XML-документации](../../csharp/programming-guide/xmldoc/index.md)
-- [Документация XML](/cpp/ide/xml-documentation-visual-cpp)
+- [XML-документация (C++)](/cpp/ide/xml-documentation-visual-cpp)

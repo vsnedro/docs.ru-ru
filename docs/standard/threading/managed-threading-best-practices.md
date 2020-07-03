@@ -1,5 +1,6 @@
 ---
 title: Рекомендации по работе с потоками
+description: Ознакомьтесь с рекомендациями по работе с управляемыми потоками в .NET. Реализуйте сложные ситуации, такие как координация работы нескольких потоков или обработка потоков, вызывающих блокировку.
 ms.date: 10/15/2018
 ms.technology: dotnet-standard
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - threading [.NET Framework], best practices
 - managed threading
 ms.assetid: e51988e7-7f4b-4646-a06d-1416cee8d557
-ms.openlocfilehash: 30d746d739654ecad2b485b9d69cfe300caca2ff
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: fa0af1461ba568583127316934b9d55577dd4c5a
+ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291192"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84662827"
 ---
 # <a name="managed-threading-best-practices"></a>Рекомендации по работе с потоками
 Многопоточность требует тщательного программирования. Большинство задач можно упростить, поместив запросы на выполнение в очередь по потокам пулов потоков. В этом разделе рассматриваются более сложные ситуации, такие как координация работы нескольких потоков или обработка потоков, вызывающих блокировку.  

@@ -1,5 +1,6 @@
 ---
 title: Создание новых строк в .NET
+description: Сведения о создании строк с помощью присваивания, конструкторов классов или методов System.String, объединяющих несколько строк, массивов строк или объектов в .NET.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - strings [.NET Framework], creating
 - Insert method
 ms.assetid: 06fdf123-2fac-4459-8904-eb48ab908a30
-ms.openlocfilehash: a5dfe6429ac135202874f0524a252a7af900bd8d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b44d0f8e1717ead72e28f0be644644961d1482b6
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84279016"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84596452"
 ---
 # <a name="creating-new-strings-in-net"></a>Создание новых строк в .NET
 .NET Framework позволяет создавать строки с помощью простой операции присваивания, а также перегружать конструктор класса для создания строк с помощью различных параметров. Кроме того, .NET Framework предоставляет в классе <xref:System.String?displayProperty=nameWithType> несколько методов для создания строковых объектов путем объединения строк, массивов строк или объектов.  
@@ -32,7 +33,7 @@ ms.locfileid: "84279016"
 ## <a name="methods-that-return-strings"></a>Методы, возвращающие строки  
  В следующей таблице перечислено несколько полезных методов, которые возвращают строковые объекты.  
   
-|Имя метода|Использование|  
+|Имя метода|Использовать|  
 |-----------------|---------|  
 |<xref:System.String.Format%2A?displayProperty=nameWithType>|Создание форматированной строки из набора объектов ввода.|  
 |<xref:System.String.Concat%2A?displayProperty=nameWithType>|Создание строк из двух или более строк.|  
@@ -64,7 +65,7 @@ ms.locfileid: "84279016"
  [!code-csharp[Strings.Creating#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs/Example.cs#3)]
  [!code-vb[Strings.Creating#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#3)]  
   
-### <a name="insert"></a>Вставить  
+### <a name="insert"></a>Insert  
  Метод **String.Insert** создает новую строку, вставляя предоставленную строку в указанную позицию в другой строке. Этот метод использует отсчитываемый от нуля индекс. В следующем примере строка вставляется в пятую позицию индекса `MyString`, и создается новая строка с этим значением.  
   
  [!code-csharp[Strings.Creating#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs/Example.cs#4)]
@@ -78,7 +79,7 @@ ms.locfileid: "84279016"
  [!code-csharp[Strings.Creating#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs/Example.cs#5)]
  [!code-vb[Strings.Creating#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#5)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Базовые операции со строками в .NET Framework](basic-string-operations.md)
 - [Составное форматирование](composite-formatting.md)
