@@ -1,7 +1,7 @@
 ---
-title: Регулярные выражения в .NET Framework
+title: Регулярные выражения в .NET
 description: Использование регулярных выражений для поиска определенных шаблонов символов, проверки текста, работы с подстроками и добавления извлеченных строк в коллекцию в .NET.
-ms.date: 03/30/2017
+ms.date: 06/30/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -21,12 +21,12 @@ helpviewer_keywords:
 - .NET Framework regular expressions
 - strings [.NET Framework], regular expressions
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
-ms.openlocfilehash: d9505cdfb57faf586c714aa7dd537210959f50d8
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: f57199c2ddf6569020554e74b6e70801844da641
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768837"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85802901"
 ---
 # <a name="net-regular-expressions"></a>Регулярные выражения .NET
 
@@ -67,6 +67,8 @@ ms.locfileid: "84768837"
 ## <a name="regular-expression-examples"></a>Примеры регулярных выражений
 
 Класс <xref:System.String> содержит ряд методов для поиска и замены строк, которые можно использовать для поиска строковых литералов в длинных строках. Регулярные выражения максимально полезны, если требуется найти одну из нескольких подстрок в длинной строке или определить шаблоны в строке, как показано в следующих примерах.
+
+[!INCLUDE [regex](../../../includes/regex.md)]
 
 > [!TIP]
 > Пространство имен <xref:System.Web.RegularExpressions> содержит несколько объектов регулярных выражений, которые реализуют предопределенные шаблоны регулярных выражений для анализа строк из документов HTML, XML и ASP.NET. Например, класс <xref:System.Web.RegularExpressions.TagRegex> определяет в строке открывающие теги, а класс <xref:System.Web.RegularExpressions.CommentRegex> определяет в строке комментарии ASP.NET.

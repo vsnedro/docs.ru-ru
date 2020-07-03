@@ -1,7 +1,7 @@
 ---
 title: Практическое руководство. Исключение недопустимых символов из строки
 description: Вы можете ознакомиться с примером, в котором показано, как удалить потенциально опасные символы из строки с помощью статического метода Regex.Replace.
-ms.date: 03/30/2017
+ms.date: 06/30/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -17,16 +17,18 @@ helpviewer_keywords:
 - Replace method
 - validating user input
 ms.assetid: b4319c8a-9032-4129-a9d5-6f6fc28e7f32
-ms.openlocfilehash: f9d671587d174a1eb2bb6a5dac24bdd0220be3dd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5e0cd423df7fce03cdefb3da7bc192f3045e8f9c
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600832"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803993"
 ---
 # <a name="how-to-strip-invalid-characters-from-a-string"></a>Практическое руководство. Исключение недопустимых символов из строки
 В следующем примере используется статический метод <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> для исключения недопустимых символов из строки.  
-  
+
+[!INCLUDE [regex](../../../includes/regex.md)]
+
 ## <a name="example"></a>Пример  
  Определенный в этом примере метод `CleanInput` используется для удаления потенциально опасных символов, введенных в текстовое поле пользователем. В данном случае `CleanInput` возвращает строку после удаления всех знаков, не являющихся буквенно-цифровыми, за исключением символов @, "-" (дефис) и "." (точка). Однако шаблон регулярного выражения можно изменить таким образом, чтобы исключались все символы, которые не должны входить во входную строку.  
   

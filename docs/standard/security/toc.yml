@@ -19,8 +19,11 @@
         - name: Олицетворение и возвращение
           href: impersonating-and-reverting.md
     - name: Модель криптографии
-      href: cryptography-model.md
       items:
+        - name: Обзор
+          href: cryptography-model.md
+        - name: Кроссплатформенное шифрование
+          href: cross-platform-cryptography.md
         - name: службы шифрования
           href: cryptographic-services.md
         - name: Создание ключей для шифрования и расшифровки

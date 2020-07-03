@@ -3,15 +3,15 @@ title: Учебник. Обнаружение объектов с помощью
 description: В этом учебнике показано, как использовать предварительно обученную модель глубокого обучения ONNX в ML.NET для обнаружения объектов в изображениях.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 01/30/2020
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: b4f6457c4fab8549b3efec2e25f7c23213698414
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: 4759a661646b08ea6a93cab030a19af2cfeaca16
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84767784"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803408"
 ---
 # <a name="tutorial-detect-objects-using-onnx-in-mlnet"></a>Учебник. Обнаружение объектов с помощью ONNX в ML.NET
 
@@ -89,6 +89,8 @@ Open Neural Network Exchange (ONNX) — это формат с открытым 
 1. Создайте **консольное приложение .NET Core** с именем ObjectDetection.
 
 1. Установите **пакет NuGet для Microsoft.ML**:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     - В обозревателе решений щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**.
     - Выберите nuget.org в качестве источника пакета, откройте вкладку "Обзор" и выполните поиск **Microsoft.ML**.

@@ -1,5 +1,6 @@
 ---
-title: 'Пример регулярных выражений: поиск ссылок HREF'
+title: 'Пример регулярных выражений: Поиск ссылок HREF'
+description: Вы можете изучить пример регулярных выражений в .NET. В этом примере показан поиск в строке входных данных и вывод всех значений атрибута href, а также их позиций.
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - regular expressions [.NET Framework], examples
 - pattern-matching with regular expressions, examples
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
-ms.openlocfilehash: 47364aef49bb0f43b79b805e2adf305c549d7340
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 36273901ac9afb762ac70ee5d6dcd80ff0ede11d
+ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84276165"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84583496"
 ---
 # <a name="regular-expression-example-scanning-for-hrefs"></a>Пример регулярных выражений: Поиск ссылок HREF
 В следующем примере показаны поиск и вывод всех значений href="...", а также их позиций в строке.  
