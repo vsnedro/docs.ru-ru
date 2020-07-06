@@ -1,5 +1,6 @@
 ---
 title: Развертывание .NET Framework и приложений
+description: Начало развертывания .NET с приложением. Платформа .NET предоставляет изолированные приложения, частные компоненты по умолчанию, общий доступ к управляемому коду, а также многие другие возможности.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - deploying applications [.NET Framework], packaging
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - .NET Framework, deploying
 - .NET Framework application deployment
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
-ms.openlocfilehash: b1ba9810b4b0d5a1688318db1093a9ce9bdf8fda
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cce888c962c9ab83c13cce4040eb9ba50270972d
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75716466"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803507"
 ---
 # <a name="deploying-the-net-framework-and-applications"></a>Развертывание .NET Framework и приложений
 
@@ -30,9 +31,9 @@ ms.locfileid: "75716466"
 
   - Тип установщика:
 
-    - [Web installer](../install/guide-for-developers.md#to-install-or-download-the-net-framework-redistributable)
+    - [веб-установщик](../install/guide-for-developers.md#to-install-or-download-the-net-framework-redistributable);
 
-    - [Offline installer](../install/guide-for-developers.md#to-install-or-download-the-net-framework-redistributable)
+    - [автономный установщик](../install/guide-for-developers.md#to-install-or-download-the-net-framework-redistributable).
 
   - Режимы установки:
 
@@ -62,7 +63,7 @@ ms.locfileid: "75716466"
 
   - [Руководство администратора](guide-for-administrators.md).
 
-**Обслуживание**.
+**Обслуживание**
 
 - См. общие сведения в [блоге по .NET Framework](https://devblogs.microsoft.com/dotnet/).
 
@@ -134,7 +135,7 @@ ms.locfileid: "75716466"
 
      В этом случае вы создаете MSI-файлы для использования с установщиком Windows или пакет приложения для использования с другими установщиками.
 
-### <a name="distribution"></a>Distribution
+### <a name="distribution"></a>Распределение
 
 Платформа .NET Framework предоставляет следующие варианты распространения приложений.
 
@@ -158,7 +159,7 @@ ms.locfileid: "75716466"
 
 ## <a name="related-topics"></a>См. также
 
-|Название|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Обнаружение сборок в среде выполнения](how-the-runtime-locates-assemblies.md)|Описывается то, как среда CLR определяет, какую сборку следует использовать для выполнения запроса привязки.|
 |[Рекомендации для загрузки сборок](best-practices-for-assembly-loading.md)|Описывается, как избежать проблем с идентификацией типов, которые могут привести к возникновению исключений <xref:System.InvalidCastException> и <xref:System.MissingMethodException> и других ошибок.|
@@ -169,8 +170,8 @@ ms.locfileid: "75716466"
 |[Публикация приложений ClickOnce](/visualstudio/deployment/publishing-clickonce-applications)|Описывается, как упаковать приложение Windows Forms и развернуть его на клиентских компьютерах в сети с помощью технологии ClickOnce.|
 |[Упаковка и развертывание ресурсов](../resources/packaging-and-deploying-resources-in-desktop-apps.md)|Описывается модель "звезда", которую платформа .NET Framework использует для упаковки и развертывания ресурсов; рассматриваются соглашения об именовании ресурсов, процесс перехода на резервные ресурсы и альтернативные способы упаковки.|
 |[Развертывание приложения взаимодействия](../interop/deploying-an-interop-application.md)|Описывается поставка и установка приложений взаимодействия, которые обычно включают клиентскую сборку .NET Framework, одну или несколько сборок взаимодействия (представляющих различные библиотеки типов COM) и один или несколько зарегистрированных COM-компонентов.|
-|[Практическое руководство. Получение хода выполнения установщика .NET Framework 4.5](how-to-get-progress-from-the-dotnet-installer.md)|Описывается автоматический запуск и отслеживание процесса установки .NET Framework с выводом собственного представления хода выполнения установки.|
+|[Практическое руководство. Получение хода выполнения установщика .NET Framework 4.5](how-to-get-progress-from-the-dotnet-installer.md)|Описывается автоматический запуск и отслеживание процесса установки .NET Framework с выводом собственного представления хода выполнения установки.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по разработке](../development-guide.md)
