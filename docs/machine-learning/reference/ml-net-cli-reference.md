@@ -3,12 +3,12 @@ title: Справочник по командам интерфейса кома�
 description: Обзор, примеры и справочник по командам auto-train в программе командной строки ML.NET.
 ms.date: 06/03/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 397f6fda8554024624b3ef630856dc8eca9696b2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4c6cb1346c16f6162077d3414140d693de9e0d8c
+ms.sourcegitcommit: 182c7b6c079ebcc0e1898dfd9e921b9ef472ea2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594547"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85946945"
 ---
 # <a name="the-mlnet-cli-command-reference"></a>Справочник по командам интерфейса командной строки ML.NET
 
@@ -309,7 +309,7 @@ mlnet classification
 
 ## <a name="output-path"></a>Путь для создаваемых файлов
 
-`--output-path | -o` (строка)
+`--output | -o` (строка)
 
 Корневое расположение или папка для размещения созданных выходных данных. Значением по умолчанию является текущий каталог.
 

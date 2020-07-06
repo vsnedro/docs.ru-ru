@@ -10,12 +10,12 @@ helpviewer_keywords:
 - catch keyword [C#]
 - try-catch statement [C#]
 ms.assetid: cb5503c7-bfa1-4610-8fc2-ddcd2e84c438
-ms.openlocfilehash: 3d4315a09869b77b4ae8cbb43646f9a96280b678
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4715a27a94ac86c5e4955c0e8be95c6ee4a28507
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79173475"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619706"
 ---
 # <a name="try-catch-c-reference"></a>try-catch (Справочник по C#)
 
@@ -141,7 +141,7 @@ static void Main()
 
 ## <a name="example"></a>Пример
 
-В следующем примере блок `try` содержит вызов метода `ProcessString`, который может вызвать исключение. Предложение `catch` содержит обработчик исключений, который просто отображает сообщение на экране. Когда оператор `throw` вызывается из `MyMethod`, система осуществляет поиск оператора `catch` и отображает сообщение `Exception caught`.
+В следующем примере блок `try` содержит вызов метода `ProcessString`, который может вызвать исключение. Предложение `catch` содержит обработчик исключений, который просто отображает сообщение на экране. Когда оператор `throw` вызывается из `ProcessString`, система осуществляет поиск оператора `catch` и отображает сообщение `Exception caught`.
 
 [!code-csharp[csrefKeywordsExceptions#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsExceptions/CS/csrefKeywordsExceptions.cs#2)]
 
