@@ -1,0 +1,198 @@
+### YamlMime:Hub
+title: Azure для разработчиков .NET
+summary: Сведения, необходимые для использования .NET в Azure
+brand: dotnet
+metadata:
+  title: Azure для разработчиков .NET
+  description: Примеры, учебники и другие обучающие материалы по использованию .NET в Azure
+  ms.topic: hub-page
+  ms.prod: azure-dotnet
+  ms.date: 03/04/2020
+  ms.openlocfilehash: d1fc6298f5a1aa03ba3df3f99c38245a3165b5be
+  ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 04/29/2020
+  ms.locfileid: "85840338"
+highlightedContent:
+  items:
+  - itemType: quickstart
+    title: Развертывание веб-приложения ASP.NET
+    url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
+  - itemType: quickstart
+    title: Создание бессерверной функции
+    url: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
+  - itemType: quickstart
+    title: ASP.NET Core и Docker
+    url: https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2019
+  - itemType: learn
+    title: Основные понятия Azure
+    url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
+  - itemType: tutorial
+    title: Развертывание приложения .NET с помощью Azure DevOps
+    url: https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
+  - itemType: tutorial
+    title: Полная сквозная проверка подлинности стека в службе приложений
+    url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-auth-aad
+  - itemType: learn
+    title: Защита пользовательских API с помощью Microsoft Identity
+    url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
+  - itemType: download
+    title: Пример кода
+    url: https://docs.microsoft.com/samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
+conceptualContent:
+  items:
+  - title: Создание веб-приложений
+    links:
+    - itemType: learn
+      text: Размещение веб-приложения в Службе приложений Azure
+      url: https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service/
+    - itemType: tutorial
+      text: Веб-приложение ASP.NET со службой приложений Azure и базой данных SQL Azure
+      url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
+    - itemType: tutorial
+      text: Управляемое удостоверение для ASP.NET и Базы данных SQL Azure
+      url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-connect-msi
+    - itemType: tutorial
+      text: Веб-API с поддержкой CORS в Службе приложений Azure
+      url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-rest-api
+    - itemType: learn
+      text: Публикация API-интерфейсов и управление ими с помощью службы управления API Azure
+      url: https://docs.microsoft.com/learn/modules/publish-manage-apis-with-azure-api-management/
+  - title: Создание полностью облачных приложений
+    links:
+    - itemType: quickstart
+      text: Запуск и отладка микрослужбы в Kubernetes
+      url: https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio
+    - itemType: tutorial
+      text: Использование средств Visual Studio для контейнеров с приложением ASP.NET Core
+      url: https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2019
+    - itemType: tutorial
+      text: Развертывание и отладка нескольких контейнеров в AKS
+      url: https://docs.microsoft.com/azure/dev-spaces/multi-service-netcore-visualstudio
+    - itemType: tutorial
+      text: Динамическая конфигурация и флаги компонентов с использованием конфигурации приложения Azure
+      url: https://docs.microsoft.com/azure/azure-app-configuration/use-feature-flags-dotnet-core
+    - itemType: how-to-guide
+      text: Развертывание приложения .NET Core в реестре контейнеров Azure
+      url: https://docs.microsoft.com/en-us/visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+  - title: Работа с хранилищем и данными
+    links:
+    - itemType: learn
+      text: Разработка и настройка приложения ASP.NET, обращающегося к базе данных SQL Azure
+      url: https://docs.microsoft.com/learn/modules/develop-app-that-queries-azure-sql/
+    - itemType: learn
+      text: Создание приложения .NET Core для Azure Cosmos DB в Visual Studio Code
+      url: https://docs.microsoft.com/learn/modules/build-cosmos-db-app-with-vscode/
+    - itemType: learn
+      text: Хранение данных приложения в хранилище больших двоичных объектов Azure
+      url: https://docs.microsoft.com/learn/modules/store-app-data-with-azure-blob-storage/
+    - itemType: tutorial
+      text: Создание веб-приложения ASP.NET с использованием API Azure Cosmos DB SQL
+      url: https://docs.microsoft.com/azure/cosmos-db/sql-api-dotnet-application
+    - itemType: quickstart
+      text: Выполнение запросов к Azure PostgreSQL с помощью .NET
+      url: https://docs.microsoft.com/azure/postgresql/connect-csharp
+  - title: Проверка подлинности и безопасность
+    links:
+    - itemType: overview
+      text: Платформа удостоверений Майкрософт (Azure AD)
+      url: https://docs.microsoft.com/azure/active-directory/develop/
+    - itemType: tutorial
+      text: Использование Azure Key Vault с ASP.NET Core
+      url: https://docs.microsoft.com/azure/key-vault/tutorial-net-create-vault-azure-web-app
+    - itemType: tutorial
+      text: Интеграция Azure AD B2C с веб-API
+      url: https://docs.microsoft.com/azure/active-directory-b2c/tutorial-single-page-app-webapi
+    - itemType: tutorial
+      text: Реализация входа в веб-приложение ASP.NET с использованием учетной записи Майкрософт.
+      url: https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-asp-webapp
+  - title: Миграция
+    links:
+    - itemType: concept
+      text: Выбор размещения в Azure
+      url: ./migration/choose.md
+    - itemType: how-to-guide
+      text: Перенос веб-приложения или службы .NET в Службу приложений Azure
+      url: ./migration/app-service.md
+    - itemType: how-to-guide
+      text: Перенос приложения ASP.NET на виртуальную машину Azure
+      url: ./migration/vm.md
+    - itemType: how-to-guide
+      text: Перенос базы данных SQL Server в Azure
+      url: ./migration/sql.md
+  - title: Бесплатные обучающие ресурсы по .NET и Azure
+    links:
+    - itemType: learn
+      text: Microsoft Learn
+      url: https://docs.microsoft.com/learn/
+    - itemType: video
+      text: Pluralsight. Разработка с помощью .NET и C# в Azure
+      url: https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
+    - itemType: video
+      text: Серия видеоматериалов о .NET (101)
+      url: https://dot.net/videos
+  - title: Руководства по архитектуре .NET
+    links:
+    - itemType: overview
+      text: Введение в Azure и .NET
+      url: intro.md
+    - itemType: learn
+      text: Разработка современных приложений в Azure
+      url: https://docs.microsoft.com/learn/paths/architect-modern-apps/
+    - itemType: architecture
+      text: 'Микрослужбы .NET: Архитектура контейнерных приложений .NET'
+      url: https://docs.microsoft.com/dotnet/architecture/microservices/
+    - itemType: architecture
+      text: Разработка современных веб-приложений с помощью ASP.NET Core и Azure
+      url: https://docs.microsoft.com/dotnet/architecture/modern-web-apps-azure/
+    - itemType: architecture
+      text: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
+      url: https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/
+    - itemType: architecture
+      text: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows
+      url: https://docs.microsoft.com/dotnet/architecture/modernize-with-azure-containers/
+    footerLink:
+      url: https://docs.microsoft.com/dotnet/architecture/
+      text: Показать больше
+tools:
+  title: Azure SDK для .NET
+  items:
+  - imageSrc: https://www.nuget.org/Content/gallery/img/default-package-icon.svg
+    title: Пакеты NuGet
+    url: https://www.nuget.org/packages?q=windowsazureofficial
+  - imageSrc: https://docs.microsoft.com/en-us/media/common/i_reference.svg
+    title: Документация
+    url: ./sdk/index.yml
+  - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
+    title: Инструменты
+    url: ./sdk/tools.md
+additionalContent:
+  sections:
+  - title: Ресурсы сообщества по .NET и Azure
+    items:
+    - title: .NET
+      links:
+      - text: Документация по .NET
+        url: https://docs.microsoft.com/dotnet
+      - text: Документация по ASP.NET
+        url: https://docs.microsoft.com/aspnet
+    - title: Веб-трансляции и передачи
+      links:
+      - text: Azure, пятница
+        url: https://azure.microsoft.com/resources/videos/azure-friday/
+      - text: Передача, посвященная полностью облачным решениям
+        url: https://channel9.msdn.com/Shows/The-Cloud-Native-Show
+      - text: На платформе .NET
+        url: https://channel9.msdn.com/Shows/On-NET
+      - text: Рабочее совещание сообщества ASP.NET
+        url: https://dotnet.microsoft.com/platform/community/standup
+    - title: Открытый исходный код
+      links:
+      - text: Azure SDK для .NET
+        url: https://github.com/Azure/azure-sdk-for-net
+      - text: Веб-сайт Microsoft Identity
+        url: https://github.com/AzureAD/microsoft-identity-web
+      - text: Платформа .NET
+        url: https://github.com/dotnet/
+  footer: Участие в разработке документации по .NET. Ознакомьтесь с нашим [руководством для соавторов](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute).
