@@ -4,14 +4,19 @@ description: Сведения о том, какие дистрибутивы Lin
 author: adegeo
 ms.author: adegeo
 ms.date: 06/01/2020
-ms.openlocfilehash: 22c07c5a8263dd6059f415cb4d9e2915811351b0
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
-ms.translationtype: HT
+ms.openlocfilehash: 06a90d7fecfe9f25d26caccb2fe3aedec0176f64
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324638"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803096"
 ---
 # <a name="install-net-core-on-linux"></a>Установка .NET Core на Linux
+
+> [!div class="op_single_selector"]
+>
+> - [Установка в Windows](windows.md)
+> - [Установка в macOS](macos.md)
+> - [Установка на Linux](linux.md)
 
 Платформа .NET Core доступна в различных дистрибутивах Linux. Для большинства платформ и дистрибутивов Linux разработчики каждый год публикуют основной выпуск. В большей части таких выпусков есть диспетчер пакетов, который используется для установки .NET Core. В этой статье приведены сведения о поддержке и об используемом диспетчере пакетов.
 
@@ -174,3 +179,9 @@ Ubuntu использует APT (Advanced Package Tool) в качестве ди
 | ✔️ [16.04 (LTS)](linux-ubuntu.md#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
 
 Дополнительные сведения см. в статье об [установке .NET Core в Ubuntu](linux-ubuntu.md).
+
+## <a name="next-steps"></a>Следующие шаги
+
+- [Проверка того, установлена ли платформа .NET Core](how-to-detect-installed-versions.md?pivots=os-linux).
+- [Учебник. Создание приложения с помощью Visual Studio Code](../tutorials/with-visual-studio-code.md).
+- [Учебник. Контейнеризация приложения .NET Core](../docker/build-container.md).

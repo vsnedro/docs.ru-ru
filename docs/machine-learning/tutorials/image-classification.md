@@ -1,15 +1,14 @@
 ---
 title: Учебник. Модель классификации изображений ML.NET из TensorFlow
 description: Узнайте, как передавать знания из существующей модели TensorFlow в новую модель классификации изображений ML.NET. Модель TensorFlow была обучена для классификации изображений по тысячам категорий. Модель ML.NET использует передачу обучения, чтобы классифицировать изображения по меньшему количеству более широких категорий.
-ms.date: 01/30/2020
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-ms.openlocfilehash: ae6094d5acd4d26482f3690e174d82bbf1807266
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
-ms.translationtype: HT
+ms.openlocfilehash: 38fa349e743da54a21aeb65b76a0273a17c3fae7
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144439"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85804006"
 ---
 # <a name="tutorial-generate-an-mlnet-image-classification-model-from-a-pre-trained-tensorflow-model"></a>Учебник. Создание модели классификации изображений ML.NET на основе предварительно обученной модели TensorFlow
 
@@ -122,12 +121,14 @@ toaster2.png    appliance
 
 1. Установите **пакет NuGet для Microsoft.ML**:
 
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
+
     * В обозревателе решений щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**.
     * Выберите nuget.org в качестве источника пакета, откройте вкладку "Обзор" и выполните поиск **Microsoft.ML**.
-    * Щелкните раскрывающийся список **Версия**, выберите пакет **1.4.0** и нажмите кнопку **Установить**.
+    * Нажмите кнопку **Установить**.
     * Нажмите кнопку **ОК** в диалоговом окне **Предварительный просмотр изменений**.
     * Нажмите кнопку **Принимаю** в диалоговом окне **Принятие условий лицензионного соглашения**, если вы согласны с условиями лицензионного соглашения для указанных пакетов.
-    * Повторите эти шаги для пакетов **Microsoft.ML.ImageAnalytics v1.4.0**, **SciSharp.TensorFlow.Redist v1.15.0** и **Microsoft.ML.TensorFlow v1.4.0**.
+    * Повторите эти шаги для пакетов **Microsoft.ML.ImageAnalytics**, **SciSharp.TensorFlow.Redist** и **Microsoft.ML.TensorFlow**.
 
 ### <a name="download-assets"></a>Скачивание ресурсов
 

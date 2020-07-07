@@ -1,5 +1,6 @@
 ---
 title: Компиляция проекта, использующего взаимодействие
+description: Проекты, использующие COM-взаимодействие, компилируются так же, как и любые другие управляемые проекты, если они содержат ссылки на одну или несколько сборок с импортированными типами COM.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - interoperation with unmanaged code, compiling
@@ -9,12 +10,11 @@ helpviewer_keywords:
 - interoperation with unmanaged code, exposing COM components
 - COM interop, exposing COM components
 ms.assetid: 6fcf6588-5e25-41af-b4ae-780974f2c3df
-ms.openlocfilehash: 32102910ae674a97e941e1346a1898585f503527
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: HT
+ms.openlocfilehash: a8dfbeb88d0057eb3c9047b4435f021750ed86d2
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73123675"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85620863"
 ---
 # <a name="compiling-an-interop-project"></a>Компиляция проекта, использующего взаимодействие
 

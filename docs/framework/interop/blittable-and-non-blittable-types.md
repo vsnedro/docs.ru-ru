@@ -1,16 +1,16 @@
 ---
 title: Преобразуемые и непреобразуемые типы
+description: Узнайте, что представляют собой преобразуемые и непреобразуемые типы. Преобразуемые типы данных одинаково представлены в управляемой и неуправляемой памяти и не требуют специальной обработки.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - interop marshaling, blittable types
 - blittable types, interop marshaling
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
-ms.openlocfilehash: 816b854120f09efef69bd8ceb2d3650e5a8e7af0
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: HT
+ms.openlocfilehash: 68f4197a2710b6825c83bbc51daaf8f6b5a2c81f
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73123737"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621539"
 ---
 # <a name="blittable-and-non-blittable-types"></a>Преобразуемые и непреобразуемые типы
 Большинство типов данных имеют общее представление как в управляемой, так и в неуправляемой памяти и не требуют специальной обработки со стороны маршалера взаимодействия. Такие типы называются *непреобразуемыми*, поскольку при их передаче между управляемым и неуправляемым кодом не требуется преобразование.  

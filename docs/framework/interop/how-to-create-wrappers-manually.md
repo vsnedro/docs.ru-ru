@@ -1,15 +1,15 @@
 ---
 title: Практическое руководство. Создание оболочек вручную
+description: Создавайте оболочки типов COM вручную. Используйте существующий IDL-файл или библиотеку типов либо создайте управляемые объявления и экспортируйте сборку в библиотеку типов.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - wrappers, creating manually
 ms.assetid: cc2a70d8-6a58-4071-a8cf-ce28c018c09b
-ms.openlocfilehash: a7818a1c08d8538acfacb22dc270d7ef23a7a582
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: e562a7e963ff744bf9193821d54dd898db521464
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181431"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619589"
 ---
 # <a name="how-to-create-wrappers-manually"></a>Практическое руководство. Создание оболочек вручную
 Если вы решили объявлять типы COM в управляемом исходном коде вручную, лучше всего начать с существующего файла языка IDL или библиотеки типов. Если у вас нет файла IDL или вы не можете создать файл библиотеки типов, можно имитировать типы COM, создав управляемые объявления и экспортировав получившуюся сборку в библиотеку типов.  

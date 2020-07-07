@@ -1,13 +1,13 @@
 ---
 title: .NET Framework и внештатные выпуски
+description: Сведения о .NET и внештатных выпусках. Новые функции выходят в виде внештатных выпусков (OOB) для улучшения кроссплатформенной разработки или добавления новых функциональных возможностей.
 ms.date: 10/10/2018
 ms.assetid: 721f10fa-3189-4124-a00d-56ddabd889b3
-ms.openlocfilehash: 058bc1a5180060d3c3c6ba4ead1f074a14336b53
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: 9653696f46279e0c23418f92030d64839cc20518
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79181565"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618770"
 ---
 # <a name="net-framework-and-out-of-band-releases"></a>.NET Framework и внештатные выпуски
 

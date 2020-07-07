@@ -1,26 +1,38 @@
 ---
-ms.openlocfilehash: e7d35045892c62f759aad5067962ac5c15a9fb8b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
-ms.translationtype: HT
+ms.openlocfilehash: ea2883912907843e4b6d65db5ba186af43f27aaa
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602702"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85805393"
 ---
 
-Как пакет SDK для .NET Core, так и среду выполнения .NET Core можно установить вручную после скачивания. При установке пакета SDK для .NET Core не нужно устанавливать соответствующую среду выполнения. Сначала скачайте двоичный выпуск пакета SDK или среды выполнения с одного из следующих сайтов:
+<!-- Note, this content is copied in ../macos.md. Any fixes should be applied there too, though content may be different -->
+
+В качестве альтернативы диспетчерам пакетов можно скачать и вручную установить пакет SDK и среду выполнения. Ручная установка как правило выполняется в рамках тестирования непрерывной интеграции или в неподдерживаемом дистрибутиве Linux. В большинстве случаев разработчикам и пользователям рекомендуется использовать диспетчер пакетов.
+
+При установке пакета SDK для .NET Core не нужно устанавливать соответствующую среду выполнения. Сначала скачайте **двоичный** выпуск пакета SDK или среды выполнения с одного из следующих сайтов:
 
 - ✔️ [Предварительные версии скачиваемых файлов .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [Скачиваемые файлы .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ❌ [Скачиваемые файлы .NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- ❌ [Скачиваемые файлы .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - ✔️ [Скачиваемые файлы .NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1)
+- [Все скачиваемые файлы для .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 Извлеките скачанный файл и используйте команду `export`, чтобы задать переменные, используемые .NET Core, а затем проверьте включение .NET Core в переменную PATH.
 
-Чтобы извлечь среду выполнения и сделать команды .NET Core CLI доступными в терминале, сначала скачайте двоичный выпуск .NET Core. Затем откройте терминал и выполните следующие команды в каталоге с сохраненным файлом.
+Чтобы извлечь среду выполнения и сделать команды .NET Core CLI доступными в терминале, сначала скачайте двоичный выпуск .NET Core. Затем откройте терминал и выполните следующие команды в каталоге с сохраненным файлом. Имя файла архива может отличаться в зависимости от скачанных файлов.
+
+**Извлеките среду выполнения, используя следующую команду**:
 
 ```bash
 mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C "$HOME/dotnet"
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
+**Извлеките пакет SDK, используя следующую команду**:
+
+```bash
+mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-3.1.301-linux-x64.tar.gz -C "$HOME/dotnet"
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```

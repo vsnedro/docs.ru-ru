@@ -1,15 +1,14 @@
 ---
 title: Учебник. Анализ тональности отзывов с помощью модели TensorFlow
 description: В этом руководстве показано, как классифицировать тональность комментариев на веб-сайте с помощью предварительно обученной модели TensorFlow. Двоичный классификатор тональности — это консольное приложение на C#, разработанное с помощью Visual Studio.
-ms.date: 11/15/2019
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 688c5b83cef8f21eef8fa24521a85449a9cfbd48
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: 9c1e45f183bd5edc488e4f37bea648566d124c65
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78241121"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803265"
 ---
 # <a name="tutorial-analyze-sentiment-of-movie-reviews-using-a-pre-trained-tensorflow-model-in-mlnet"></a>Учебник. Анализ тональности отзывов о фильмах с помощью предварительно обученной модели TensorFlow в ML.NET
 
@@ -40,7 +39,9 @@ ms.locfileid: "78241121"
 
 3. Установите **пакет NuGet для Microsoft.ML**:
 
-    В обозревателе решений щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**. Выберите nuget.org в качестве источника пакета, а затем выберите вкладку **Обзор**. Найдите **Microsoft.ML**, выберите пакет и нажмите кнопку **Установить**. Продолжите установку, соглашаясь с условиями лицензии для выбранного пакета. Повторите эти действия для пакетов **Microsoft.ML.TensorFlow** и **SciSharp.TensorFlow.Redist**.
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
+
+    В обозревателе решений щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**. Выберите nuget.org в качестве источника пакета, а затем выберите вкладку **Обзор**. Найдите **Microsoft.ML**, выберите пакет и нажмите кнопку **Установить**. Продолжите установку, соглашаясь с условиями лицензии для выбранного пакета. Повторите эти действия для пакетов **Microsoft.ML.TensorFlow**, **Microsoft.ML.SampleUtils** и **SciSharp.TensorFlow.Redist**.
 
 ### <a name="add-the-tensorflow-model-to-the-project"></a>Добавление модели TensorFlow в проект
 

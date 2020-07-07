@@ -1,16 +1,16 @@
 ---
 title: Внутрипроцессное параллельное выполнение
+description: Используйте внутрипроцессное параллельное размещение для запуска нескольких версий среды CLR в одном процессе .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - in-process side-by-side execution
 - side-by-side execution, in-process
 ms.assetid: 18019342-a810-4986-8ec2-b933a17c2267
-ms.openlocfilehash: 5ca2f03576946a23b3133bbe7532d46c4ad758ab
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: 078f2eaada8fac57138bef22d46218ef2ccda835
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79181667"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85622605"
 ---
 # <a name="in-process-side-by-side-execution"></a>Внутрипроцессное параллельное выполнение
 Начиная с .NET Framework 4, разработчики могут использовать внутрипроцессное параллельное размещение для запуска нескольких версий среды CLR в одном процессе. Управляемые COM-компоненты по умолчанию выполняются в той версии платформы .NET Framework, в которой они были созданы, вне зависимости от загруженной для процесса версии .NET Framework.  
@@ -173,5 +173,5 @@ int _tmain(int argc, _TCHAR* argv[])
   
 ## <a name="see-also"></a>См. также
 
-- [Элемент \<startup>](../configure-apps/file-schema/startup/startup-element.md)
-- [\<Поддерживаемый элемент среды выполнения](../configure-apps/file-schema/startup/supportedruntime-element.md)
+- [\<startup> Элемент](../configure-apps/file-schema/startup/startup-element.md)
+- [\<supportedRuntime> Элемент](../configure-apps/file-schema/startup/supportedruntime-element.md)

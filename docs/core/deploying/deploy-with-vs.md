@@ -6,12 +6,11 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 0fb21b09fbf97f9c9ac2bf2982c391b87e2debc1
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
-ms.translationtype: HT
+ms.openlocfilehash: 7a4ffd5b1b58e6ea7fd46c676e139b77a126aa2b
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614361"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803031"
 ---
 # <a name="deploy-net-core-apps-with-visual-studio"></a>Развертывание приложений .NET Core с помощью Visual Studio
 
@@ -98,7 +97,7 @@ ms.locfileid: "83614361"
 
    Чтобы включить инвариантный режим, щелкните правой кнопкой мыши проект (не решение) в **обозревателе решений** и выберите **Изменить SCD.csproj** или **Изменить SCD.vbproj**. Затем добавьте следующие выделенные строки в файл:
 
-   [!code-xml[globalization-invariant-mode](./snippets/deploy-with-vs/xml/invariant.csproj?highlight=6-8)]
+   [!code-xml[globalization-invariant-mode](./snippets/deploy-with-vs/xml/invariant.csproj?highlight=7-9)]
 
 1. Создание отладочной сборки приложения.
 
@@ -192,7 +191,7 @@ ms.locfileid: "83614361"
 
 1. Выберите расположение, где Visual Studio опубликует приложение.
 
-   Если вы публикуете приложение только на одной платформе, можно принять значение по умолчанию в текстовом поле **Выбрать папку**. Вы опубликуете зависимое от платформы развертывание приложения в каталоге *\<каталог-проекта>\bin\Release\netcoreapp2.1\publish*.
+   Если вы публикуете приложение только на одной платформе, можно принять значение по умолчанию в текстовом поле **Выбрать папку**. Вы опубликуете зависимое от платформы развертывание приложения в каталоге *\<project-directory>\bin\Release\netcoreapp2.1\publish*.
 
    Если публикация выполняется для нескольких платформ, добавьте строку, которая указывает целевую платформу. Например, если добавить строку "linux" в путь к файлу, Visual Studio опубликует развертывание приложения, зависимое от платформы, в каталоге *\<project-directory>\bin\Release\netcoreapp2.1\publish\linux*.
 

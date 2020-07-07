@@ -6,12 +6,11 @@ ms.author: adegeo
 ms.date: 12/04/2019
 ms.custom: updateeachrelease
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: cc4d9c6a366cd0e5da4c3446536c93efdc9f5503
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
-ms.translationtype: HT
+ms.openlocfilehash: 96db0d707cefed791d9c2c01a6615e9af5168cc5
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324822"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85802992"
 ---
 # <a name="how-to-check-that-net-core-is-already-installed"></a>Проверка того, установлена ли платформа .NET Core
 
@@ -19,7 +18,7 @@ ms.locfileid: "85324822"
 
 При установке пакета SDK устанавливается и соответствующая среда выполнения.
 
-Если любая команда из этой статьи завершается ошибкой, среда выполнения или пакет SDK не установлены. Дополнительные сведения см. в статье [Скачивание и установка .NET Core](index.md).
+Если любая команда из этой статьи завершается ошибкой, среда выполнения или пакет SDK не установлены. Дополнительные сведения см. в статьях, посвященных установке в [Windows](windows.md), [macOS](macos.md) или [Linux](linux.md).
 
 ## <a name="check-sdk-versions"></a>Проверка версий пакета SDK
 

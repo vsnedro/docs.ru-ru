@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Сопоставление значений HRESULT и исключений
+description: Узнайте, как сопоставлять значения HRESULT, возвращаемые методами COM, с исключениями, которые создаются методами .NET. Среда выполнения поддерживает переход между COM и .NET.
 ms.date: 03/30/2017
 dev_langs:
 - cpp
@@ -11,12 +12,11 @@ helpviewer_keywords:
 - COM interop, HRESULTs
 - COM interop, exceptions
 ms.assetid: 610b364b-2761-429d-9c4a-afbc3e66f1b9
-ms.openlocfilehash: e186228d1dc9a42ddfe92428f7dfad29a5789095
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: 827e79bdefcde7ae94567e5341ade76097dc8eaa
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181395"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619108"
 ---
 # <a name="how-to-map-hresults-and-exceptions"></a>Практическое руководство. Сопоставление значений HRESULT и исключений
 Методы COM сообщают об ошибках, возвращая значения HRESULT. Методы .NET в этом случае вызывают исключения. Среда выполнения обеспечивает сопоставление этих двух элементов. Каждый класс платформы .NET Framework сопоставляется со значением HRESULT.  

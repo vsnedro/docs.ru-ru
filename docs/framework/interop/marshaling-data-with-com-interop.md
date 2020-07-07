@@ -1,15 +1,15 @@
 ---
 title: Маршалинг с помощью COM- взаимодействия
+description: См. статьи, посвященные маршалингу данных с помощью COM-взаимодействия. Инструменты Tlbimp.exe и Tlbexp.exe выполняют преобразование между библиотекой типов COM и сборкой взаимодействия.
 ms.date: 09/07/2017
 helpviewer_keywords:
 - COM interop, data marshaling
 - marshaling data, COM interop
-ms.openlocfilehash: ae41713d5349321725599c0c38d7c6fc515c374b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: eedfb60a75e2fe5fafdaa786dbb54adddf28400e
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181369"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621513"
 ---
 # <a name="marshaling-data-with-com-interop"></a>Маршалинг с помощью COM- взаимодействия
 COM-взаимодействие обеспечивает поддержку как для использования COM-объектов из управляемого кода, так и для предоставления доступа к управляемым объектам для COM. Поддержка маршалинга данных в COM и обратно достаточно полная и почти всегда обеспечивает правильное поведение маршалинга.  

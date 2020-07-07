@@ -1,5 +1,6 @@
 ---
 title: Маршалинг классов, структур и объединений
+description: Узнайте, как маршалировать классы, структуры и объединения. Просмотрите примеры маршалирования классов, структур с вложенными структурами, массивами структур и объединений.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -18,12 +19,11 @@ helpviewer_keywords:
 - data marshaling, platform invoke
 - marshaling, platform invoke
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
-ms.openlocfilehash: 708ed6a232950cb69796f105f6f198749ed53a24
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
-ms.translationtype: HT
+ms.openlocfilehash: 5e616b5bb513939cadd8fe5c72675ba0b6e070a3
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200019"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621526"
 ---
 # <a name="marshaling-classes-structures-and-unions"></a>Маршалинг классов, структур и объединений
 
@@ -339,7 +339,7 @@ typedef struct _SYSTEMTIME {
 [!code-csharp[Conceptual.Interop.Marshaling#25](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/systime.cs#25)]
 [!code-vb[Conceptual.Interop.Marshaling#25](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/systime.vb#25)]
 
-## <a name="outarrayofstructs-sample"></a>Пример OutArrayOfStructs 
+## <a name="outarrayofstructs-sample"></a>Пример OutArrayOfStructs
 
 В этом примере показано, как передать в неуправляемую функцию массив структур, содержащий целочисленные значения и строки, в виде параметров Out.
 

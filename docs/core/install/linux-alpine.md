@@ -4,12 +4,11 @@ description: Здесь приводятся различные способы �
 author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
-ms.openlocfilehash: 92753933cbcedae28867b66293d1044f700d7baa
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
-ms.translationtype: HT
+ms.openlocfilehash: 0efe3bbacbe573b77eae8818ea29b5a3867e4570
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324836"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619524"
 ---
 # <a name="install-net-core-sdk-or-net-core-runtime-on-alpine"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в Alpine
 
@@ -21,7 +20,7 @@ ms.locfileid: "85324836"
 
 ## <a name="supported-distributions"></a>Поддерживаемые дистрибутивы
 
-В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET Core и версий Alpine, в которых они поддерживаются. Эти версии поддерживаются до того же времени, что и версия [.NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или [Alpine](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
+В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET Core и версий Alpine, в которых они поддерживаются. Эти версии поддерживаются до окончания поддержки версии [.NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) либо до окончания жизненного цикла версии [Alpine](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
 
 - Значок ✔️ означает, что версия Alpine или .NET Core поддерживается.
 - Значок ❌ означает, что версия Alpine или версия .NET Core в таком выпуске Alpine не поддерживается.
@@ -47,12 +46,11 @@ ms.locfileid: "85324836"
 
 - icu-libs
 - krb5-libs
+- libgcc
 - libintl
 - libssl 1.1 (Alpine версии 3.9 или более поздней)
-- libssl 1.0 (Alpine версии 3.8)
+- libssl1.0 (Alpine версии 3.8 или более ранней)
 - libstdc++
-- lttng-ust
-- numactl (необязательно)
 - zlib
 
 ## <a name="scripted-install"></a>Установка с помощью сценария

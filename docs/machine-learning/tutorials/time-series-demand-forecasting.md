@@ -1,17 +1,16 @@
 ---
 title: Учебник. Прогнозирование спроса на прокат велосипедов (временные ряды)
 description: В этом руководстве показано, как прогнозировать спрос для службы проката велосипедов с помощью одномерного анализа временных рядов и библиотеки ML.NET.
-ms.date: 11/07/2019
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: bceb32f4ea22ade6d3b49b3a99d7ec48a7ba168d
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
-ms.translationtype: HT
+ms.openlocfilehash: 4ea002b690de877fd6f955c05eb8235f46e0a870
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607406"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803224"
 ---
 # <a name="tutorial-forecast-bike-rental-service-demand-with-time-series-analysis-and-mlnet"></a>Учебник. Прогнозирование спроса для службы проката велосипедов с помощью анализа временных рядов и ML.NET
 
@@ -46,13 +45,16 @@ ms.locfileid: "81607406"
 ## <a name="create-console-application"></a>Создание консольного приложения
 
 1. Создайте **консольное приложение .NET Core на C#** с именем BikeDemandForecasting.
-1. Установите пакет NuGet для **Microsoft.ML** версии **1.4.0**
+1. Установите пакет NuGet **Microsoft.ML**.
+
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
+
     1. В обозревателе решений щелкните проект правой кнопкой мыши и выберите **Управление пакетами NuGet**.
     1. Выберите nuget.org в качестве источника пакета, щелкните вкладку **Обзор** и найдите **Microsoft.ML**.
     1. Установите флажок **Включить предварительные версии**.
     1. Нажмите кнопку **Установить**.
     1. Нажмите кнопку **ОК** в диалоговом окне **Предварительный просмотр изменений**. Затем нажмите кнопку **Принимаю** в диалоговом окне "Принятие условий лицензионного соглашения", если вы согласны с условиями лицензионного соглашения для выбранных пакетов.
-    1. Повторите эти действия для **System.Data.SqlClient** версии **4.7.0** и **Microsoft.ML.TimeSeries** версии **1.4.0**.
+    1. Повторите эти действия для **System.Data.SqlClient** и **Microsoft.ML.TimeSeries**.
 
 ### <a name="prepare-and-understand-the-data"></a>Подготовка и анализ данных
 

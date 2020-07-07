@@ -1,17 +1,17 @@
 ---
 title: Маршалинг взаимодействия
+description: Начните использовать маршалинг взаимодействия, который позволяет определить, как данные передаются в аргументах и возвращаемых значениях методов между управляемой и неуправляемой памятью во время вызовов.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - marshaling, COM interop
 - interop marshaling
 - interop marshaling, about interop marshaling
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
-ms.openlocfilehash: 70514811a9d236dc485f64fc34297cdb057a1512
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: HT
+ms.openlocfilehash: ca733d59abc4ca3d9d470b054ee9e34b5084ae38
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73124274"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618978"
 ---
 # <a name="interop-marshaling"></a>Маршалинг взаимодействия
 

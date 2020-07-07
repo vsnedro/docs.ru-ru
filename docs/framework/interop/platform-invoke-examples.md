@@ -1,5 +1,6 @@
 ---
 title: Примеры вызовов неуправляемого кода
+description: Ознакомьтесь с примером вызова неуправляемого кода, в котором показано, как определить и вызвать функцию MessageBox в User32.dll.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,12 +14,11 @@ helpviewer_keywords:
 - interoperation with unmanaged code, platform invoke
 - DLL functions
 ms.assetid: 15926806-f0b7-487e-93a6-4e9367ec689f
-ms.openlocfilehash: 358d1ce662d56b8c31124f4b3264ec25a0f94586
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: 97b0720b8954bc24a4058e6a03c32d32bd9e3180
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181320"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85620811"
 ---
 # <a name="platform-invoke-examples"></a>Примеры вызовов неуправляемого кода
 В следующих примерах демонстрируется, как определить и вызвать функцию **MessageBox** в User32.dll, передав в качестве аргумента простую строку. В этом примере полю <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> присваивается значение **Автоматически**, благодаря чему целевая платформа определяет ширину символа и параметры маршалинга строк.  

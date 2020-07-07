@@ -1,5 +1,6 @@
 ---
 title: Рекомендации для загрузки сборок
+description: Изучите рекомендации по загрузке сборок в .NET. Узнайте, как избежать проблем с идентификацией типов, которые могут привести к недопустимым приведениям, отсутствующим методам и другим исключениям.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - assemblies,binding
@@ -12,12 +13,11 @@ helpviewer_keywords:
 - LoadWithPartialName method
 - load-from context
 ms.assetid: 68d1c539-6a47-4614-ab59-4b071c9d4b4c
-ms.openlocfilehash: 7575c40edf47e977335bcc34fcd9e49debab0980
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: 8ee5243258ea1b853b4690b79ec032c46d1b3777
+ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79181700"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85803511"
 ---
 # <a name="best-practices-for-assembly-loading"></a>Рекомендации для загрузки сборок
 В этой статье рассматриваются способы избежания проблем с идентификацией типов, способных привести к исключениям <xref:System.InvalidCastException>, <xref:System.MissingMethodException> и другим ошибкам. В статье рассматриваются следующие рекомендации:  
@@ -162,7 +162,7 @@ ms.locfileid: "79181700"
   
  Обратите внимание, что для загрузки таких сборок можно использовать метод <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>. Так как они теперь расположены в пути поиска, они будут загружены в контексте загрузки по умолчанию, а не в контексте, из которого ведется загрузка. Тем не менее рекомендуется перейти к использованию метода <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> и полных отображаемых имен сборок, чтобы гарантировать, что всегда используются только правильные их версии.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>

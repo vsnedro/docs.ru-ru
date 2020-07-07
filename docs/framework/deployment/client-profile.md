@@ -1,5 +1,6 @@
 ---
 title: .NET Framework (клиентский профиль)
+description: Прочтите сведения о клиентском профиле .NET, который предоставлялся в виде подмножества .NET в версии 4 и более ранних выпусках .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WPF [.NET Framework Client Profile]
@@ -9,12 +10,11 @@ helpviewer_keywords:
 - profile [.NET Framework Client Profile]
 - .NET Framework Client Profile
 ms.assetid: f0219919-1f02-4588-8704-327a62fd91f1
-ms.openlocfilehash: 32fc29500a8a2e95b52ba16847020cdb390caceb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: 9678e49cd5f3c37f59c1e5a0eda668e5602fbcb5
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75716576"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85621747"
 ---
 # <a name="net-framework-client-profile"></a>.NET Framework (клиентский профиль)
 Клиентский профиль .NET — это подмножество платформы .NET Framework, которое предоставлялось с .NET Framework 4 и более ранними версиями и было оптимизировано для клиентских приложений. .NET Framework — это платформа разработки для Windows, Windows Phone и Microsoft Azure, которая включает в себя управляемую среду выполнения приложений и библиотеку классов .NET Framework. В .NET Framework 4 и более ранних версиях предоставлялось два варианта развертывания: полная платформа .NET Framework и клиентский профиль. Клиентский профиль позволял ускорить развертывание и уменьшить установочные пакеты приложений по сравнению с полной платформой .NET Framework.  
@@ -25,7 +25,7 @@ ms.locfileid: "75716576"
   
  При установке .NET Framework 4.5 клиентский профиль платформы .NET Framework 4 обновляется до полной версии платформы .NET Framework. Сведения об установке .NET Framework 4.5 см. в разделе [Установка .NET Framework для разработчиков](../install/guide-for-developers.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Клиентский профиль .NET Framework (.NET Framework 4)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc656912%28v=vs.100%29)
 - [Обзор настройки для различных версий в Visual Studio](/visualstudio/ide/visual-studio-multi-targeting-overview)

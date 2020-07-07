@@ -1,17 +1,17 @@
 ---
 title: Уменьшение числа перезагрузок при установке платформы .NET Framework 4.5
+description: Узнайте, как сократить число перезапусков системы во время установки .NET 4.5. Если во время установки .NET 4.5 используется приложение на основе .NET 4, может потребоваться перезагрузка.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - .NET Framework, reducing system restarts
 - installing .NET Framework
 - installation [.NET Framework]
 ms.assetid: 7aa8cb72-dee9-4716-ac54-b17b9ae8218f
-ms.openlocfilehash: 6261a883e7b99b7fd38da2a17ab4820c81552506
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: HT
+ms.openlocfilehash: bfde0c2f7297c048ba70062918e2281afbccf391
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75716428"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618211"
 ---
 # <a name="reducing-system-restarts-during-net-framework-45-installations"></a>Уменьшение числа перезагрузок при установке платформы .NET Framework 4.5
 Установщик .NET Framework 4.5 использует [Диспетчер перезагрузки](/windows/win32/rstmgr/about-restart-manager) для предотвращения перезагрузки системы во время установки, если это возможно. Если программа установки устанавливает платформу .NET Framework, она может взаимодействовать с диспетчером перезапуска, чтобы воспользоваться преимуществами этой функции. Дополнительные сведения см. в разделе [Практическое руководство. Получение хода выполнения установщика .NET Framework 4.5](how-to-get-progress-from-the-dotnet-installer.md).  
@@ -31,8 +31,8 @@ ms.locfileid: "75716428"
   
  При использовании цепочечного установщика, если не требуется предоставлять собственное окно сообщения для завершения приложений, можно использовать параметры `/showrmui` и `/passive` в командной строке при добавлении платформы .NET Framework в процесс установки. При использовании этих параметров вместе установщик отображает окно сообщения для закрытия приложений, чтобы избежать перезапуска системы. Это диалоговое окно работает в пассивном режиме так же, как и при полном пользовательском интерфейсе. Полный набор параметров командной строки для распространяемого пакета .NET Framework см. в разделе [Руководство по развертыванию для разработчиков](deployment-guide-for-developers.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Развертывание](index.md)
 - [Руководство по развертыванию для разработчиков](deployment-guide-for-developers.md)
-- [Практическое руководство. Получение хода выполнения установщика .NET Framework 4.5](how-to-get-progress-from-the-dotnet-installer.md)
+- [Практическое руководство. Получение хода выполнения установщика .NET Framework 4.5](how-to-get-progress-from-the-dotnet-installer.md)

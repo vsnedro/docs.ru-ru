@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Создание ссылки на типы .NET из COM
+description: Создание ссылки на типы .NET из COM. Клиенты VB могут просматривать объекты .NET в обозревателе объектов, но клиенты C++ должны ссылаться на TLB-файл с помощью директивы \#import.
 ms.date: 03/30/2017
 dev_langs:
 - cpp
@@ -12,12 +13,11 @@ helpviewer_keywords:
 - type libraries
 - COM interop, importing type library
 ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
-ms.openlocfilehash: 0223cb25b933cc84af49aa86d90259fdf1fd3efc
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
-ms.translationtype: HT
+ms.openlocfilehash: f8d052c7b9bac9c4bab61ab1950e9e89a7c73912
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73124177"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85618965"
 ---
 # <a name="how-to-reference-net-types-from-com"></a>Практическое руководство. Создание ссылки на типы .NET из COM
 С точки зрения кода клиента и сервера различия между COM и .NET Framework практически незаметны. Клиенты Microsoft Visual Basic могут просматривать объект .NET в обозревателе объектов, который позволяет просмотреть методы, синтаксис, свойства и поля объекта точно так же, как если бы это был объект COM.  

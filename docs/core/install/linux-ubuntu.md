@@ -4,12 +4,11 @@ description: Здесь приводятся различные способы �
 author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
-ms.openlocfilehash: eef724138f2b908bf8601a509d298a06e55fb13e
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
-ms.translationtype: HT
+ms.openlocfilehash: ed4f5b914d03cfb072ee4ba168c67262e0d40c08
+ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324745"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85619433"
 ---
 # <a name="install-net-core-sdk-or-net-core-runtime-on-ubuntu"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в Ubuntu
 
@@ -201,16 +200,17 @@ sudo apt-get update; \
 
 Если для установки используется диспетчер пакетов, эти библиотеки устанавливаются автоматически. Но если вы устанавливаете .NET Core вручную или публикуете автономное приложение, вам потребуется установить эти библиотеки:
 
-- liblttng-ust0
-- libcurl3 (для 14.x и 16.x)
-- libcurl4 (для 18.x)
-- libssl1.0.0
-- libkrb5-3
-- zlib1g
+- libc6
+- libgcc1
+- libgssapi-krb5-2
 - libicu52 (для 14.x)
 - libicu55 (для 16.x)
-- libicu57 (для 17.x)
 - libicu60 (для 18.x)
+- libicu66 (для 20.x)
+- libssl1.0.0 (для 14.x, 16.x)
+- libssl1.1 (для 18.x, 20.x)
+- libstdc++6
+- zlib1g
 
 Для приложений .NET Core, использующих сборку *System.Drawing.Common*, необходима также следующая зависимость:
 
