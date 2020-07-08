@@ -1,5 +1,6 @@
 ---
 title: Помощник по отладке управляемого кода loadFromContext
+description: Изучите помощник по отладке управляемого кода (MDA) Лоадфромконтекст в .NET, который активируется, если сборка загружается в контекст LoadFrom.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - MDAs (managed debugging assistants), LoadFrom context
@@ -7,12 +8,11 @@ helpviewer_keywords:
 - LoadFrom context
 - LoadFromContext MDA
 ms.assetid: a9b14db1-d3a9-4150-a767-dcf3aea0071a
-ms.openlocfilehash: d0090a0272d1c3b6175b351175689df1e1e4fdbd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
-ms.translationtype: MT
+ms.openlocfilehash: 8d55268f2b2106dde4e488a6f0271fd3b17349da
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181806"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86051653"
 ---
 # <a name="loadfromcontext-mda"></a>Помощник по отладке управляемого кода loadFromContext
 Помощник по отладке управляемого кода (MDA) `loadFromContext` активируется при загрузке сборки в контекст `LoadFrom`. Эта ситуация может возникнуть в результате вызова метода <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> или других аналогичных методов.  
@@ -20,7 +20,7 @@ ms.locfileid: "79181806"
 ## <a name="symptoms"></a>Симптомы  
  Использование некоторых методов загрузчика может привести к загрузке сборок в контекст `LoadFrom`. Использование этого контекста может привести к неожиданному поведению при сериализации, приведении типов и разрешении зависимостей. Чтобы избежать этих проблем, рекомендуется загружать сборки в контекст `Load`. Без этого помощника по отладке управляемого кода определить, в какой контекст загружена сборка, трудно.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
  Как правило, при использовании пути за пределами контекста `Load`, например глобального кэша сборок или свойства <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=nameWithType>, сборка загружается в контекст `LoadFrom`.  
   
 ## <a name="resolution"></a>Решение  
@@ -40,7 +40,7 @@ ms.locfileid: "79181806"
 ## <a name="output"></a>Выходные данные  
  Помощник по отладке управляемого кода сообщает, что сборка была загружена в контекст `LoadFrom`. В выводе указаны простое имя сборки и путь к ней. В выводе также указаны рекомендации, позволяющие избежать использования контекста `LoadFrom`.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -70,6 +70,6 @@ namespace ConsoleApplication1
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

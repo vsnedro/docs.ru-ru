@@ -6,12 +6,11 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
-ms.openlocfilehash: 63549b85f7bcdd4f246005401694db8827248038
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
-ms.translationtype: MT
+ms.openlocfilehash: 2ba0ae7adedc3bf0e0ca0cb92b4205edc968a5d8
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246913"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86052017"
 ---
 # <a name="how-to-host-a-wcf-service-in-iis"></a>Практическое руководство. Размещение службы WCF в IIS
 В этом разделе описаны основные шаги, необходимые для создания службы Windows Communication Foundation (WCF), размещенной в службы IIS (IIS). Предполагается, что читатель знаком со службами IIS и может использовать средство управления IIS для создания приложений служб IIS и управления такими приложениями. Дополнительные сведения о службах IIS см. в разделе [службы IIS](https://www.iis.net/). Служба WCF, работающая в среде IIS, обладает всеми преимуществами функций IIS, таких как перезапуск процессов, выключение в режиме простоя, мониторинг работоспособности процессов и активация на основе сообщений. Для реализации этого варианта размещения требуется правильно настроить службу IIS, но не требуется включать в приложение код размещения. Размещение в службах IIS возможно только при использовании транспорта HTTP.  
@@ -28,7 +27,7 @@ ms.locfileid: "85246913"
   
 3. Создайте в каталоге приложения новый файл с именем «service.svc». Измените этот файл, добавив следующий @ServiceHost элемент.  
   
-   ```
+   ```aspx-csharp
    <%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService"%>
    ```  
   

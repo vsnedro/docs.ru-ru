@@ -2,12 +2,11 @@
 title: Практическое руководство. Размещение службы WCF в WAS
 ms.date: 03/30/2017
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
-ms.openlocfilehash: 1e338440b3a630840230df838e46579e3725bb60
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
-ms.translationtype: MT
+ms.openlocfilehash: 40460baeb136345f2532ec6ad5035bd5d3a40254
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593117"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86051991"
 ---
 # <a name="how-to-host-a-wcf-service-in-was"></a>Практическое руководство. Размещение службы WCF в WAS
 В этом разделе описаны основные шаги, необходимые для создания службы активации процессов Windows (также известной как WAS), размещенной Windows Communication Foundation служб (WCF). WAS является службой активации нового процесса, представляющей собой обобщение возможностей Internet Information Services (IIS), которые работают с транспортными протоколами, отличными от HTTP. WCF использует интерфейс адаптера прослушивателя для передачи запросов на активацию, полученных через протоколы, отличные от HTTP, которые поддерживаются WCF, такие как TCP, именованные каналы и очередь сообщений.  
@@ -66,7 +65,7 @@ ms.locfileid: "84593117"
   
 4. Создайте файл Service.svc, содержащий следующий код.  
   
-   ```
+   ```aspx-csharp
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
   
@@ -74,7 +73,7 @@ ms.locfileid: "84593117"
   
 ### <a name="to-create-a-client-to-use-the-service"></a>Создание клиента для использования службы  
   
-1. Используйте [служебную программу метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) из командной строки для создания кода из метаданных службы.  
+1. Используйте [служебную программу метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) из командной строки, чтобы создать код из метаданных службы.  
   
     ```console
     Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
@@ -98,7 +97,7 @@ ms.locfileid: "84593117"
   
 6. Скомпилируйте и запустите клиент.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Активация TCP](../samples/tcp-activation.md)
 - [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

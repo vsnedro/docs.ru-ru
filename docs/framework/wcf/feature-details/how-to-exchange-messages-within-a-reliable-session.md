@@ -2,12 +2,11 @@
 title: Практическое руководство. Обмен сообщениями в рамках надежного сеанса
 ms.date: 03/30/2017
 ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea
-ms.openlocfilehash: 5b01ddfd95db2f7e88f9481265c348f4f16fbbee
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
-ms.translationtype: MT
+ms.openlocfilehash: 39dd6636f80b107ced1caac29869c6c66e67e21e
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579480"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86052043"
 ---
 # <a name="how-to-exchange-messages-within-a-reliable-session"></a>Практическое руководство. Обмен сообщениями в рамках надежного сеанса
 
@@ -27,13 +26,13 @@ ms.locfileid: "84579480"
 
    [!code-csharp[c_HowTo_UseReliableSession#1122](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/service.cs#1122)]
 
-1. Создайте файл *Web. config* , чтобы настроить конечную точку для `CalculatorService` , в которой <xref:System.ServiceModel.WSHttpBinding> включена служба с включенным надежным сеансом и упорядоченная доставка требуемых сообщений.
+1. Создайте файл *Web.config* , чтобы настроить конечную точку для `CalculatorService` , в которой <xref:System.ServiceModel.WSHttpBinding> включена функция with надежный сеанс и упорядоченная доставка сообщений.
 
    [!code-xml[c_HowTo_UseReliableSession#2111](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/common/web.config#2111)]
 
 1. Создайте файл *Service. svc* , содержащий строку:
 
-   ```
+   ```aspx-csharp
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
 
@@ -41,7 +40,7 @@ ms.locfileid: "84579480"
 
 ### <a name="configure-the-client-with-a-wshttpbinding-to-use-a-reliable-session"></a>Настройка клиента с помощью WSHttpBinding для использования надежного сеанса
 
-1. Используйте [средство служебной программы метаданных ServiceModel (*Svcutil. exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) из командной строки для создания кода из метаданных службы.
+1. Используйте [служебную программу метаданных ServiceModel (*Svcutil.exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) из командной строки, чтобы создать код из метаданных службы:
 
    ```console
    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
@@ -55,7 +54,7 @@ ms.locfileid: "84579480"
 
    [!code-csharp[C_HowTo_UseReliableSession#1222](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/client.cs#1222)]
 
-1. *Svcutil. exe* также создает конфигурацию для клиента, использующего <xref:System.ServiceModel.WSHttpBinding> класс. Назовите файл конфигурации *app. config* при использовании Visual Studio.
+1. *Svcutil.exe* также создает конфигурацию для клиента, использующего <xref:System.ServiceModel.WSHttpBinding> класс. Присвойте файлу конфигурации имя *App.config* при использовании Visual Studio.
 
    [!code-xml[C_HowTo_UseReliableSession#2211](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/common/app.config#2211)]
 
@@ -67,7 +66,7 @@ ms.locfileid: "84579480"
 
 ## <a name="example"></a>Пример
 
-Некоторые привязки, предоставляемые системой, по умолчанию поддерживают надежные сеансы. Сюда входит следующее.
+Некоторые привязки, предоставляемые системой, по умолчанию поддерживают надежные сеансы. К ним относятся следующие объекты.
 
 - <xref:System.ServiceModel.WSDualHttpBinding>
 
@@ -77,6 +76,6 @@ ms.locfileid: "84579480"
 
 Пример создания пользовательской привязки, поддерживающей надежные сеансы, см. [в разделе как создать настраиваемую привязку надежного сеанса с помощью протокола HTTPS](how-to-create-a-custom-reliable-session-binding-with-https.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Надежные сеансы](reliable-sessions.md)

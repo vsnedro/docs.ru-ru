@@ -6,12 +6,11 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 885037f7-1c2b-4d7a-90d9-06b89be172f2
-ms.openlocfilehash: 92d0834091a1f243df6be214f606fbf0093dca54
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
-ms.translationtype: MT
+ms.openlocfilehash: 3b9dd12f2a28ae2d420e82013459613cee8140f1
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244560"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86051952"
 ---
 # <a name="how-to-specify-a-service-binding-in-configuration"></a>Практическое руководство. Задание привязки службы в конфигурации
 В этом примере контракт `ICalculator` определен для базовой службы калькулятора, служба реализуется в классе `CalculatorService`, а затем ее конечная точка настраивается в файле Web.config с указанием того, что служба использует класс <xref:System.ServiceModel.BasicHttpBinding>. Описание настройки этой службы с помощью кода вместо конфигурации см. в разделе [инструкции. Указание привязки службы в коде](how-to-specify-a-service-binding-in-code.md).  
@@ -77,7 +76,7 @@ ms.locfileid: "85244560"
   
 4. Создайте файл Service.svc, содержащий следующую строку, и поместите его в виртуальный каталог IIS.  
   
-    ```  
+    ```aspx-csharp
     <%@ServiceHost language=c# Service="CalculatorService" %>
     ```  
   
