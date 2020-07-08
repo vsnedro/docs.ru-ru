@@ -1,5 +1,6 @@
 ---
 title: invalidOverlappedToPinvoke MDA
+description: Ознакомьтесь с помощником по отладке управляемого кода (MDA) Инвалидоверлаппедтопинвоке в .NET, который может быть активирован при сбое или повреждении неустранимой кучи.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - overlapped pointers
@@ -9,12 +10,11 @@ helpviewer_keywords:
 - MDAs (managed debugging assistants), overlapped pointers
 - pointers, overlapped
 ms.assetid: 28876047-58bd-4fed-9452-c7da346d67c0
-ms.openlocfilehash: 1f557cc370d5c6121b0ad9a4528bd75dcb70a93c
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
-ms.translationtype: MT
+ms.openlocfilehash: 162efd55bf636cf2e8698706bd011379f2f6f11f
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77216281"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86051705"
 ---
 # <a name="invalidoverlappedtopinvoke-mda"></a>invalidOverlappedToPinvoke MDA
 Помощник по отладке управляемого кода (MDA) `invalidOverlappedToPinvoke` активируется, когда перекрытый указатель, который не был создан в куче сбора мусора, передается конкретным функциям Win32.  
@@ -25,12 +25,12 @@ ms.locfileid: "77216281"
 ## <a name="symptoms"></a>Симптомы  
  Сбои или необъяснимые повреждения кучи.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
  Перекрытый указатель, который не был создан в куче сборки мусора, передается конкретным функциям операционной системы.  
   
  В следующей таблице приведены функции, отслеживаемые данным MDA.  
   
-|Модуль|Компонент|  
+|Module|Функция|  
 |------------|--------------|  
 |HttpApi.dll|`HttpReceiveHttpRequest`|  
 |IpHlpApi.dll|`NotifyAddrChange`|  
@@ -55,12 +55,12 @@ ms.locfileid: "77216281"
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
  Этот помощник отладки управляемого кода не оказывал никакого влияния на среду CLR.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
  Ниже представлен пример выходных данных этого MDA.  
   
  `An overlapped pointer (0x00ea3430) that was not allocated on the GC heap was passed via Pinvoke to the Win32 function 'WriteFile' in module 'KERNEL32.DLL'. If the AppDomain is shut down, this can cause heap corruption when the async I/O completes. The best solution is to pass a NativeOverlapped structure retrieved from a call to System.Threading.Overlapped.Pack(). If the AppDomain exits, the CLR will keep this structure alive and pinned until the I/O completes.`  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -70,8 +70,8 @@ ms.locfileid: "77216281"
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Маршалинг взаимодействия](../interop/interop-marshaling.md)

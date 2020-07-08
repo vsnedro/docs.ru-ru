@@ -1,5 +1,6 @@
 ---
 title: memberInfoCacheCreation MDA
+description: Изучите помощник по отладке управляемого кода (MDA) Мемберинфокачекреатион в .NET, который активируется при создании кэша MemberInfo.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - member info cache creation
@@ -10,12 +11,11 @@ helpviewer_keywords:
 - managed debugging assistants (MDAs), cache
 - MemberInfo cache
 ms.assetid: 5abdad23-1335-4744-8acb-934002c0b6fe
-ms.openlocfilehash: e5dbc769bd634afae06582ee614addafd611fad9
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
-ms.translationtype: MT
+ms.openlocfilehash: c48be7ac8632b8072981be01e01997ee8c34b6b3
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217317"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86051146"
 ---
 # <a name="memberinfocachecreation-mda"></a>memberInfoCacheCreation MDA
 Помощник по отладке управляемого кода (MDA) `memberInfoCacheCreation` запускается при создании кэша <xref:System.Reflection.MemberInfo>. Это явный признак программы, в которой используются ресурсоемкие функции отражения.  
@@ -23,7 +23,7 @@ ms.locfileid: "77217317"
 ## <a name="symptoms"></a>Симптомы  
  Рабочий набор программы увеличивается, так как в программе используются ресурсоемкие функции отражения.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
  Операции отражения, которые включают объекты <xref:System.Reflection.MemberInfo>, считаются ресурсоемкими, так как они должны считывать метаданные, которые хранятся на "холодных" страницах. Обычно эти операции означают, что в программе используется какой-либо сценарий позднего связывания.  
   
 ## <a name="resolution"></a>Решение  
@@ -34,10 +34,10 @@ ms.locfileid: "77217317"
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
  Этот помощник по отладке управляемого кода запускается каждый раз при создании кэша <xref:System.Reflection.MemberInfo>. Влияние на производительность незначительно.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
  Помощник по отладке управляемого кода выводит сообщение о создании кэша <xref:System.Reflection.MemberInfo>. Используйте отладчик, чтобы получить трассировку стека, в которой будет показано, где в программе используется отражение.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
   
 ```xml  
 <mdaConfig>  
@@ -62,7 +62,7 @@ public class Exe
 }  
 ```  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:System.Reflection.MemberInfo>
-- [Диагностика ошибок посредством помощников по отладке управляемого кода](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

@@ -2,12 +2,11 @@
 title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
-ms.openlocfilehash: fdd6d83836c4ef31a4d7c8e68cb0cc050ac6bea4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
-ms.translationtype: MT
+ms.openlocfilehash: cb425d9f4dadd97e93946a2b4cd9d059ea8504ce
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "76787802"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86051367"
 ---
 # <a name="servicehost"></a>\@ServiceHost
 
@@ -15,7 +14,7 @@ ms.locfileid: "76787802"
 
 ## <a name="syntax"></a>Синтаксис
 
-```xml
+```aspx-csharp
 <% @ServiceHost
 Service = "Service, ServiceNamespace"
 Factory = "Factory, FactoryNamespace"
@@ -47,7 +46,7 @@ CodeBehind = "CodeBehind"
 
 Указывает исходный файл, который реализует веб-службу XML, если класс, реализующий веб-службу XML, не находится в том же файле и не был скомпилирован в сборку и помещен в каталог *\bin* .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Объект, <xref:System.ServiceModel.ServiceHost> используемый для размещения службы, является точкой расширения в модели программирования Windows Communication Foundation (WCF). Для создания узла службы <xref:System.ServiceModel.ServiceHost> используется шаблон фабрики, поскольку он, возможно, имеет полиморфный тип, экземпляр которого среда размещения не должна создавать явно.
 
@@ -63,7 +62,7 @@ CodeBehind = "CodeBehind"
 
 Например, чтобы включить конечную точку с поддержкой AJAX для `MyService` , укажите <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> для значения `Factory` атрибута, а не по умолчанию <xref:System.ServiceModel.Activation.ServiceHostFactory> в `@ServiceHost` директиве, как показано в следующем примере:
 
-```xml
+```aspx-csharp
 <% @ServiceHost
 Service="MyService"
 Language="C#"
