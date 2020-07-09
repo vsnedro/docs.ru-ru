@@ -60,7 +60,7 @@
           href: architect-microservice-container-applications/resilient-high-availability-microservices.md
         - name: Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности
           href: architect-microservice-container-applications/scalable-available-multi-container-microservice-applications.md
-    - name: "Процесс разработки для приложений на основе\_Docker"
+    - name: Процесс разработки для приложений на основе Docker
       href: docker-application-development-process/index.md
       items:
         - name: "Рабочий процесс разработки для приложений\_Docker"
@@ -118,7 +118,7 @@
         - name: Проектирование уровня сохраняемости инфраструктуры
           href: microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design.md
         - name: "Реализация уровня сохраняемости инфраструктуры с помощью Entity Framework\_Core"
-          href: microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core.md
+          href: microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implementation-entity-framework-core.md
         - name: "Использование баз данных\_NoSQL в качестве инфраструктуры сохраняемости"
           href: microservice-ddd-cqrs-patterns/nosql-database-persistence-infrastructure.md
         - name: Разработка веб-API и уровня приложений для микрослужб
@@ -144,7 +144,7 @@
           href: implement-resilient-applications/implement-circuit-breaker-pattern.md
         - name: Мониторинг работоспособности
           href: implement-resilient-applications/monitor-app-health.md
-    - name: "Обеспечение безопасности микрослужб и веб-приложений\_.NET"
+    - name: Обеспечение безопасности веб-приложений и микрослужб .NET
       href: secure-net-microservices-web-applications/index.md
       items:
         - name: Об авторизации в веб-приложениях и микрослужбах .NET
