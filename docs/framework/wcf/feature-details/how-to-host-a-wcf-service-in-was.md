@@ -4,6 +4,7 @@ ms.date: 03/30/2017
 ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
 ms.openlocfilehash: 40460baeb136345f2532ec6ad5035bd5d3a40254
 ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "86051991"
@@ -97,7 +98,7 @@ ms.locfileid: "86051991"
   
 6. Скомпилируйте и запустите клиент.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Активация TCP](../samples/tcp-activation.md)
 - [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

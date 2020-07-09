@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: a9b14db1-d3a9-4150-a767-dcf3aea0071a
 ms.openlocfilehash: 8d55268f2b2106dde4e488a6f0271fd3b17349da
 ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "86051653"
@@ -20,7 +21,7 @@ ms.locfileid: "86051653"
 ## <a name="symptoms"></a>Симптомы  
  Использование некоторых методов загрузчика может привести к загрузке сборок в контекст `LoadFrom`. Использование этого контекста может привести к неожиданному поведению при сериализации, приведении типов и разрешении зависимостей. Чтобы избежать этих проблем, рекомендуется загружать сборки в контекст `Load`. Без этого помощника по отладке управляемого кода определить, в какой контекст загружена сборка, трудно.  
   
-## <a name="cause"></a>Причина:  
+## <a name="cause"></a>Причина  
  Как правило, при использовании пути за пределами контекста `Load`, например глобального кэша сборок или свойства <xref:System.AppDomainSetup.ApplicationBase%2A?displayProperty=nameWithType>, сборка загружается в контекст `LoadFrom`.  
   
 ## <a name="resolution"></a>Решение  
@@ -70,6 +71,6 @@ namespace ConsoleApplication1
 }  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Диагностика ошибок посредством управляемых помощников по отладке](diagnosing-errors-with-managed-debugging-assistants.md)

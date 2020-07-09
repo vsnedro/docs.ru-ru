@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: 885037f7-1c2b-4d7a-90d9-06b89be172f2
 ms.openlocfilehash: 3b9dd12f2a28ae2d420e82013459613cee8140f1
 ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "86051952"
@@ -93,7 +94,7 @@ ms.locfileid: "86051952"
     </wsHttpBinding>  
     ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Использование привязок для настройки служб и клиентов](using-bindings-to-configure-services-and-clients.md)
 - [Задание адреса конечной точки](specifying-an-endpoint-address.md)
