@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C# language, strings
 - strings [C#]
 ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
-ms.openlocfilehash: dd76450c2a6a1726d630285f652d252c5f66183f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7bf5cba51a2e72d3a648f795f018220a452e51f5
+ms.sourcegitcommit: 67cf756b033c6173a1bbd1cbd5aef1fccac99e34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75711913"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86226599"
 ---
 # <a name="strings-c-programming-guide"></a>Строки (Руководство по программированию на C#)
 Строка — это объект типа <xref:System.String>, значением которого является текст. Внутри программы текст хранится в виде упорядоченной коллекции объектов <xref:System.Char> только для чтения. В конце строки C# нет нуль-символов. Поэтому строка C# может содержать любое число внедренных нуль-символов ('\0'). Свойство <xref:System.String.Length%2A> строки соответствует числу содержащихся в ней объектов `Char`, но не числу символов Юникода. Для доступа к отдельным кодовым точкам Юникода в строке используйте объект <xref:System.Globalization.StringInfo>.  
@@ -92,7 +92,7 @@ ms.locfileid: "75711913"
 ## <a name="substrings"></a>Подстроки  
  Подстрока — это последовательность символов, содержащихся в строке. Используйте метод <xref:System.String.Substring%2A>, чтобы создать новую строку из части исходной строки. Одно вхождение подстроки или несколько можно найти с помощью метода <xref:System.String.IndexOf%2A>. Используйте метод <xref:System.String.Replace%2A>, чтобы заменить все вхождения указанной подстроки новой строкой. Как и метод <xref:System.String.Substring%2A>, метод <xref:System.String.Replace%2A> фактически возвращает новую строку и не изменяет исходную строку. См. дополнительные сведения о [поиске строк](../../how-to/search-strings.md) и [изменении содержимого строк](../../how-to/modify-string-contents.md).
   
- [!code-csharp[csProgGuideStrings#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#9)]  
+ [!code-csharp[csProgGuideStrings#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#7)]  
   
 ## <a name="accessing-individual-characters"></a>Доступ к отдельным символам  
  Используя нотацию массива со значением индекса, можно получить доступ только для чтения к отдельным символам, как показано в следующем примере:  
