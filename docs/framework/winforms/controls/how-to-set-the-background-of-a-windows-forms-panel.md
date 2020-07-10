@@ -1,5 +1,6 @@
 ---
 title: Установка фона панели
+description: Узнайте, как задать цвет фона и фоновое изображение панели Windows Forms с помощью конструктора.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,19 +12,19 @@ helpviewer_keywords:
 - Panel control [Windows Forms], background
 - colors [Windows Forms], Windows Forms Panel controls
 ms.assetid: 096cbd8d-45cc-47b8-b1ef-a27f60ea8be0
-ms.openlocfilehash: 36e552475334c25b9d5a6fafb82155c6ebcba266
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 109ff6184de9c79d1576207bbeb29ad939670b6f
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182098"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86173384"
 ---
 # <a name="how-to-set-the-background-of-a-windows-forms-panel"></a>Практическое руководство. Установка фона панели Windows Forms
-Элемент управления <xref:System.Windows.Forms.Panel> Формами Windows может отображать как цвет фона, так и фоновое изображение. Свойство <xref:System.Windows.Forms.Control.BackColor%2A> устанавливает цвет фона для содержащихся элементов управления, таких как метки и радиокнопки. Если <xref:System.Windows.Forms.Control.BackgroundImage%2A> свойство не установлено, <xref:System.Windows.Forms.Control.BackColor%2A> выбор заполняет всю панель. Если <xref:System.Windows.Forms.Control.BackgroundImage%2A> свойство установлено, изображение будет отображаться за содержащимися элементами управления.  
+<xref:System.Windows.Forms.Panel>Элемент управления Windows Forms может отображать как цвет фона, так и фоновое изображение. <xref:System.Windows.Forms.Control.BackColor%2A>Свойство задает цвет фона для вложенных элементов управления, таких как метки и переключатели. Если <xref:System.Windows.Forms.Control.BackgroundImage%2A> свойство не задано, <xref:System.Windows.Forms.Control.BackColor%2A> Выделенная область будет заполнена всей панелью. Если <xref:System.Windows.Forms.Control.BackgroundImage%2A> свойство задано, изображение будет отображаться позади вложенных элементов управления.  
   
-### <a name="to-set-the-background-programmatically"></a>Для программного набора фона  
+### <a name="to-set-the-background-programmatically"></a>Установка фонового рисунка программным способом  
   
-1. Установите свойство <xref:System.Windows.Forms.Control.BackColor%2A> панели на значение <xref:System.Drawing.Color?displayProperty=nameWithType>типа.  
+1. Задайте <xref:System.Windows.Forms.Control.BackColor%2A> для свойства панели значение типа <xref:System.Drawing.Color?displayProperty=nameWithType> .  
   
     ```vb  
     Panel1.BackColor = Color.AliceBlue  
@@ -37,7 +38,7 @@ ms.locfileid: "79182098"
     panel1->BackColor = Color::AliceBlue;  
     ```  
   
-2. Установите свойство <xref:System.Windows.Forms.Control.BackgroundImage%2A> панели <xref:System.Drawing.Image.FromFile%2A> методом <xref:System.Drawing.Image?displayProperty=nameWithType> класса.  
+2. Задайте <xref:System.Windows.Forms.Control.BackgroundImage%2A> свойство панели с помощью <xref:System.Drawing.Image.FromFile%2A> метода <xref:System.Drawing.Image?displayProperty=nameWithType> класса.  
   
     ```vb  
     ' You should replace the bolded image

@@ -1,5 +1,6 @@
 ---
 title: Поля и заполнение в элементах управления
+description: Узнайте, как добавлять поля и дополнения в элементы управления формы Windows с помощью свойств Margin и Padding.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Padding property [Windows Forms]
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Windows Forms, layout
 - Margin property [Windows Forms]
 ms.assetid: 3781b5a1-3085-4072-bed0-44670c23ffdc
-ms.openlocfilehash: 02cabccd0d51a3501a8aafb8733a5273deef6c49
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 4279f39bb4f89fbda8be472f49c8e60853abcac6
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76728574"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174488"
 ---
 # <a name="margin-and-padding-in-windows-forms-controls"></a>Поля и заполнение в элементах управления Windows Forms
 Точное расположение элементов управления на форме является важным для многих приложений. Пространство имен <xref:System.Windows.Forms?displayProperty=nameWithType> предоставляет множество возможностей компоновки для решения этой задачи. Свойства <xref:System.Windows.Forms.Control.Margin%2A> и <xref:System.Windows.Forms.Control.Padding%2A> — одни из наиболее важных.  
@@ -23,7 +24,7 @@ ms.locfileid: "76728574"
   
  На рисунке ниже демонстрируется значение свойств <xref:System.Windows.Forms.Control.Padding%2A> и <xref:System.Windows.Forms.Control.Margin%2A> элемента управления.  
   
- ![Заполнение и маржа для элементов управления Windows Forms](./media/vs-winformpadmargin.gif "VS_WinFormPadMargin")  
+ ![Поля и заполнение для элементов управления Windows Forms](./media/vs-winformpadmargin.gif "VS_WinFormPadMargin")  
   
  Эта возможность поддерживается во время разработки в Visual Studio. См. также раздел [Пошаговое руководство. размещение элементов управления Windows Forms с заполнением, полями и свойством AutoSize](windows-forms-controls-padding-autosize.md).  
   

@@ -1,5 +1,6 @@
 ---
 title: События мыши
+description: Узнайте, как получить расположение указателя мыши из событий мыши и понять порядок, в котором события щелчка мыши вызываются в элементах управления Windows Forms.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - MouseLeave event [Windows Forms]
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - mouse [Windows Forms], events
 - MouseUp event
 ms.assetid: 8cf0070d-793b-4876-b09e-d20d28280fab
-ms.openlocfilehash: 4909f56fc3935848fd18bc35c1cb56b5407a24c8
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 640448109961ea5fdf3600ef9e72d7d10e8c9e49
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76740973"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174384"
 ---
 # <a name="mouse-events-in-windows-forms"></a>События мыши в формах Windows Forms
 

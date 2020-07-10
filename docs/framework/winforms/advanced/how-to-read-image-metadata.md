@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Чтение метаданных изображения
+desription: Learn how to read the Windows Forms PropertyItems property of an Image object to retrieve all the metadata from a file.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,28 +9,28 @@ helpviewer_keywords:
 - metadata [Windows Forms], property item
 - metadata [Windows Forms], reading image
 ms.assetid: 72ec0b31-0be7-444a-9575-1dbcb864e0be
-ms.openlocfilehash: e2b56175e625281a920c390e5feb4238e3cb7f44
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 814cb17feba1e1e3a42b2bc403b0b4c828caf90e
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182521"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174670"
 ---
 # <a name="how-to-read-image-metadata"></a>Практическое руководство. Чтение метаданных изображения
 
-Некоторые файлы изображений содержат метаданные, которые можно прочитать для определения особенностей изображения. Например, цифровая фотография может содержать метаданные, которые можно прочитать, чтобы определить модель камеры, используемой для захвата изображения. С помощью GDI можно читать существующие метаданные, а также писать новые метаданные в файлы изображений.
+Некоторые файлы изображений содержат метаданные, которые можно прочитать, чтобы определить характеристики изображения. Например, цифровая фотография может содержать метаданные, которые можно прочитать для определения марки и модели камеры, используемой для записи образа. С помощью GDI+ можно считывать существующие метаданные, а также записывать новые метаданные в файлы изображений.
 
-GDI хранит отдельный фрагмент метаданных <xref:System.Drawing.Imaging.PropertyItem> в объекте. Вы можете <xref:System.Drawing.Image.PropertyItems%2A> прочитать <xref:System.Drawing.Image> свойство объекта для извлечения всех метаданных из файла. Свойство <xref:System.Drawing.Image.PropertyItems%2A> возвращает массив <xref:System.Drawing.Imaging.PropertyItem> объектов.
+GDI+ сохраняет отдельный элемент метаданных в <xref:System.Drawing.Imaging.PropertyItem> объекте. <xref:System.Drawing.Image.PropertyItems%2A> <xref:System.Drawing.Image> Чтобы получить все метаданные из файла, можно прочитать свойство объекта. <xref:System.Drawing.Image.PropertyItems%2A>Свойство возвращает массив <xref:System.Drawing.Imaging.PropertyItem> объектов.
 
-Объект <xref:System.Drawing.Imaging.PropertyItem> имеет следующие четыре `Id` `Value`свойства: , , `Len`и `Type`.
+<xref:System.Drawing.Imaging.PropertyItem>Объект имеет следующие четыре свойства: `Id` , `Value` , `Len` и `Type` .
 
 ## <a name="id"></a>Идентификатор
 
-Тег, идентифицирующие элемент метаданных. Некоторые значения, которым можно <xref:System.Drawing.Imaging.PropertyItem.Id%2A> присвоить, отображаются в следующей таблице:
+Тег, определяющий элемент метаданных. Некоторые значения, которые могут быть назначены, <xref:System.Drawing.Imaging.PropertyItem.Id%2A> показаны в следующей таблице:
 
-|Гексадецимальная ценность|Описание|
+|Шестнадцатеричное значение|Описание|
 |-----------------------|-----------------|
-|0x0320<br /><br /> 0x010F<br /><br /> 0x0110<br /><br /> 0x9003<br /><br /> 0x829A<br /><br /> 0x5090<br /><br /> 0x5091|Название изображения<br /><br /> Производитель оборудования<br /><br /> Модель оборудования<br /><br /> ExifDTOriginal<br /><br /> Время экспозиции Exif<br /><br /> Таблица luminance<br /><br /> Хроминас стол|
+|0x0320<br /><br /> 0x010F<br /><br /> 0x0110<br /><br /> 0x9003<br /><br /> 0x829A<br /><br /> 0x5090<br /><br /> 0x5091|Название образа<br /><br /> Производитель оборудования<br /><br /> Модель оборудования<br /><br /> ексифдторигинал<br /><br /> Время экспозиции EXIF<br /><br /> Таблица освещенности<br /><br /> Таблица чроминанце|
 
 ## <a name="value"></a>Значение
 
@@ -37,33 +38,33 @@ GDI хранит отдельный фрагмент метаданных <xref:
 
 ## <a name="len"></a>Len
 
-Длина (в байтах) массива значений, <xref:System.Drawing.Imaging.PropertyItem.Value%2A> на которые указывает свойство.
+Длина (в байтах) массива значений, на который указывает <xref:System.Drawing.Imaging.PropertyItem.Value%2A> свойство.
 
 ## <a name="type"></a>Тип
 
-Тип данных значений в массиве, `Value` на который указывает свойство. Форматы, указанные `Type` значениями свойств, отображаются в следующей таблице:
+Тип данных значений в массиве, на который указывает `Value` свойство. Форматы, указанные `Type` значениями свойств, показаны в следующей таблице.
 
 |Числовое значение|Описание|
 |-------------------|-----------------|
-|1|`Byte`;|
-|2|Массив объектов, кодированных `Byte` как ASCII|
-|3|16-битный ряд|
-|4|32-битный ряд|
-|5|Массив из `Byte` двух объектов, представляющих рациональное число|
+|1|Выполнение команды `Byte`|
+|2|Массив `Byte` объектов, закодированных как ASCII|
+|3|16-разрядное целое число|
+|4|32-разрядное целое число|
+|5|Массив из двух `Byte` объектов, представляющих рациональное число|
 |6|Не используется|
-|7|Не определено.|
+|7|Не определено|
 |8|Не используется|
 |9|`SLong`|
 |10|`SRational`|
 
 ## <a name="example"></a>Пример
   
-Следующий пример кода читает и отображает семь фрагментов `FakePhoto.jpg`метаданных в файле. Второй (индекс 1) элемент свойства <xref:System.Drawing.Imaging.PropertyItem.Id%2A> в списке имеет 0x010F (производитель оборудования) и <xref:System.Drawing.Imaging.PropertyItem.Type%2A> 2 (ASCII-кодированный байт массив). Пример кода отображает значение этого элемента свойства.
+Следующий пример кода считывает и отображает семь элементов метаданных в файле `FakePhoto.jpg` . Второй элемент свойства (index 1) в списке имеет <xref:System.Drawing.Imaging.PropertyItem.Id%2A> 0x010F (производитель оборудования) и <xref:System.Drawing.Imaging.PropertyItem.Type%2A> 2 (массив байтов в кодировке ASCII). В примере кода отображается значение этого элемента свойства.
 
 [!code-csharp[System.Drawing.WorkingWithImages#51](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#51)]
 [!code-vb[System.Drawing.WorkingWithImages#51](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#51)]
 
-Код производит выход, аналогичный следующим:
+Код выводит примерно следующий результат:
 
 ```output
  Property Item 0
@@ -127,9 +128,9 @@ GDI хранит отдельный фрагмент метаданных <xref:
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 
-Предыдущий пример предназначен для использования с формами Windows, и он требует, <xref:System.Windows.Forms.PaintEventArgs> `e`который является параметром <xref:System.Windows.Forms.Control.Paint> обработчика событий. Обвязайте <xref:System.Windows.Forms.Control.Paint> событие формы и вставьте этот код в обработчик события краски. Необходимо заменить `FakePhoto.jpg` имя изображения и траекторию, действительную в вашей системе, и импортировать пространство `System.Drawing.Imaging` имен.
+Предыдущий пример предназначен для использования с Windows Forms и требует <xref:System.Windows.Forms.PaintEventArgs> `e` , что является параметром <xref:System.Windows.Forms.Control.Paint> обработчика событий. Обработайте <xref:System.Windows.Forms.Control.Paint> событие формы и вставьте этот код в обработчик событий Paint. Необходимо заменить на `FakePhoto.jpg` имя образа и путь, допустимые в системе, и импортировать `System.Drawing.Imaging` пространство имен.
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Изображения, Bitmaps и Метафайлы](images-bitmaps-and-metafiles.md)
+- [Работа с растровыми и векторными изображениями с использованием классов Image, Bitmap и Metafile](images-bitmaps-and-metafiles.md)
 - [Работа с растровыми и векторными изображениями](working-with-images-bitmaps-icons-and-metafiles.md)

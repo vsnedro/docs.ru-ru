@@ -1,5 +1,6 @@
 ---
 title: Приложения с интерфейсом MDI
+description: Узнайте, как Windows Forms приложения с многодокументным интерфейсом (MDI) позволяют одновременно отображать несколько документов, при этом каждый документ отображается в отдельном окне.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - forms [Windows Forms], MDI
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - Windows Forms, MDI applications
 - MDI
 ms.assetid: 599faf75-13cf-49cc-ad3c-255545e5cb97
-ms.openlocfilehash: 23e0275d5e6b081ec02d669a78e8695453360637
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 0912a989ac1710d72c9db1cceb0e695f0ca85dee
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69956549"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174657"
 ---
 # <a name="multiple-document-interface-mdi-applications"></a>Приложения с интерфейсом MDI
 Приложения с многодокументным интерфейсом (MDI) позволяют отображать несколько документов одновременно, при этом каждый документ отображается в отдельном окне. Приложения MDI часто имеют пункт меню «окно» с подменю для переключения между окнами или документами.  
   
 > [!NOTE]
-> Существуют различия в поведении между формами MDI и окнами однодокументного интерфейса (SDI) в Windows Forms. `Opacity` Свойство не влияет на внешний вид дочерних форм MDI. Кроме того, <xref:System.Windows.Forms.Form.CenterToParent%2A> метод не влияет на поведение дочерних форм MDI.  
+> Существуют различия в поведении между формами MDI и окнами однодокументного интерфейса (SDI) в Windows Forms. `Opacity`Свойство не влияет на внешний вид дочерних форм MDI. Кроме того, <xref:System.Windows.Forms.Form.CenterToParent%2A> метод не влияет на поведение дочерних форм MDI.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Создание родительских MDI-форм](how-to-create-mdi-parent-forms.md)  
@@ -33,5 +34,5 @@ ms.locfileid: "69956549"
  [Практическое руководство. Отправка данных в активную дочернюю MDI-форму](how-to-send-data-to-the-active-mdi-child.md)  
  Инструкции по переносу сведений в активное дочернее окно.  
   
- [Практическое руководство. Расположить дочерние формы MDI](how-to-arrange-mdi-child-forms.md)  
+ [Практическое руководство. Упорядочение дочерних MDI-форм](how-to-arrange-mdi-child-forms.md)  
  Инструкции по мозаичному разбиению, каскаду или упорядочению дочерних окон приложения MDI.

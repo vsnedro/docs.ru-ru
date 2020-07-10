@@ -1,29 +1,30 @@
 ---
 title: Практическое руководство. Создание родительских MDI-форм
+description: Сведения о создании родительской формы MDI программным путем и с помощью конструктор Windows Forms.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - parent forms
 - MDI [Windows Forms], creating forms
 ms.assetid: 12c71221-2377-4bb6-b10b-7b4b300fd462
-ms.openlocfilehash: 2aa4261d6354f744f000f36a87e70a39f5c004ea
-ms.sourcegitcommit: 0d0a6e96737dfe24d3257b7c94f25d9500f383ea
+ms.openlocfilehash: d387837a565ca247f62828c19f353990b35117c7
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65211376"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174709"
 ---
 # <a name="how-to-create-mdi-parent-forms"></a>Практическое руководство. Создание родительских MDI-форм
 
 > [!IMPORTANT]
-> В этом разделе используется элемент управления <xref:System.Windows.Forms.MainMenu>, который был заменен на элемент управления <xref:System.Windows.Forms.MenuStrip>. Элемент управления <xref:System.Windows.Forms.MainMenu> сохраняется для обеспечения обратной совместимости и использования в будущем. Сведения о создании MDI родительской формы с помощью <xref:System.Windows.Forms.MenuStrip>, см. в разделе [как: Создание списка в окне интерфейса MDI с помощью MenuStrip](../controls/how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md).
+> В этом разделе используется элемент управления <xref:System.Windows.Forms.MainMenu>, который был заменен на элемент управления <xref:System.Windows.Forms.MenuStrip>. Элемент управления <xref:System.Windows.Forms.MainMenu> сохраняется для обеспечения обратной совместимости и использования в будущем. Сведения о создании родительской MDI-формы с помощью см <xref:System.Windows.Forms.MenuStrip> . [в разделе как создать список окон MDI с помощью MenuStrip](../controls/how-to-create-an-mdi-window-list-with-menustrip-windows-forms.md).
 
 Базой для приложения многодокументного интерфейса (MDI) является родительская MDI-форма. Это форма, содержащая дочерние MDI-окна, которые являются вложенными окнами, когда пользователи взаимодействуют с MDI-приложением. Создание родительской MDI-формы представляет собой несложный процесс, как с помощью конструктора Windows Forms, так и на программном уровне.
 
-## <a name="create-an-mdi-parent-form-at-design-time"></a>Создание родительской MDI-формы во время разработки
+## <a name="create-an-mdi-parent-form-at-design-time"></a>Создание родительской формы MDI во время разработки
 
 1. Создайте проект приложения Windows в Visual Studio.
 
-2. В **свойства** окне <xref:System.Windows.Forms.Form.IsMdiContainer%2A> свойства **true**.
+2. В окне **Свойства** присвойте <xref:System.Windows.Forms.Form.IsMdiContainer%2A> свойству значение **true**.
 
      При этом форма назначается в качестве MDI-контейнера для дочерних окон.
 
@@ -34,12 +35,12 @@ ms.locfileid: "65211376"
 
      Первое меню будет создавать и скрывать пункты меню во время выполнения, а второе меню будет отслеживать открытые дочерние MDI-окна. На этом этапе вы создали родительское MDI-окно.
 
-4. Нажмите клавишу **F5** для запуска приложения. Сведения о создании дочерних MDI-окон, действующих в родительской MDI-формы, см. в разделе [как: Создание дочерних MDI-форм](how-to-create-mdi-child-forms.md).
+4. Нажмите клавишу **F5** для запуска приложения. Подробнее о создании дочерних MDI-окон, работающих в родительской MDI-форме, см. в разделе [Практическое руководство. Создание дочерних MDI-форм](how-to-create-mdi-child-forms.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Приложения с интерфейсом MDI](multiple-document-interface-mdi-applications.md)
-- [Практическое руководство. Создание дочерних MDI-форм](how-to-create-mdi-child-forms.md)
-- [Практическое руководство. Определить активную дочернюю форму MDI](how-to-determine-the-active-mdi-child.md)
-- [Практическое руководство. Отправки данных в активную дочернюю форму MDI](how-to-send-data-to-the-active-mdi-child.md)
-- [Практическое руководство. Упорядочение дочерних форм MDI](how-to-arrange-mdi-child-forms.md)
+- [Практическое руководство. Создание дочерних форм MDI](how-to-create-mdi-child-forms.md)
+- [Практическое руководство. Определение активной дочерней MDI-формы](how-to-determine-the-active-mdi-child.md)
+- [Практическое руководство. Отправка данных в активную дочернюю MDI-форму](how-to-send-data-to-the-active-mdi-child.md)
+- [Практическое руководство. Упорядочение дочерних MDI-форм](how-to-arrange-mdi-child-forms.md)

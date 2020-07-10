@@ -1,5 +1,6 @@
 ---
 title: Отображение данных в элементе управления DataGridView
+description: Узнайте, как использовать элемент управления Windows Forms DataGridView для отображения данных из различных внешних источников данных.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data [Windows Forms], displaying in tabular format
@@ -7,21 +8,21 @@ helpviewer_keywords:
 - displaying data [Windows Forms], data grids
 - DataGridView control [Windows Forms], displaying data
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
-ms.openlocfilehash: d02362895d75df3735d19554bd44bb8ac443c6c2
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: a0f3e6627290521b8c10477c31459f1486e79162
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76745870"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174579"
 ---
 # <a name="displaying-data-in-the-windows-forms-datagridview-control"></a>Отображение данных с помощью элемента управления DataGridView в Windows Forms
-Элемент управления `DataGridView` используется для вывода данных из различных внешних источников данных. Кроме того, можно добавить строки и столбцы в элемент управления и вручную заполнить его данными.  
+`DataGridView`Элемент управления используется для вывода данных из различных внешних источников данных. Кроме того, можно добавить строки и столбцы в элемент управления и вручную заполнить его данными.  
   
  При привязке элемента управления к источнику данных столбцы можно создавать автоматически на основе схемы источника данных. Если эти столбцы не отображаются так, как нужно, их можно скрыть, удалить или изменить. Можно также добавить несвязанные столбцы, чтобы отобразить дополнительные данные, которые не поступают из источника данных.  
   
- Кроме того, можно отобразить данные с помощью стандартных форматов (например, формата валюты) или настроить форматирование отображения для представления данных, но вам потребуется (например, изменить цвет фона для отрицательных чисел или заменить строковые значения). с соответствующими образами).  
+ Кроме того, можно отобразить данные с помощью стандартных форматов (например, формата валюты) или настроить форматирование отображения для представления данных, но вам потребуется (например, изменить цвет фона для отрицательных чисел или заменить строковые значения соответствующими изображениями).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
  [Режимы отображения данных в элементе управления DataGridView в Windows Forms](data-display-modes-in-the-windows-forms-datagridview-control.md)  
  Описывает параметры заполнения элемента управления данными.  
   
@@ -32,7 +33,7 @@ ms.locfileid: "76745870"
  Описывает, как вручную заполнить элемент управления данными.  
   
  [Практическое руководство. Привязка данных к элементу управления DataGridView в Windows Forms](how-to-bind-data-to-the-windows-forms-datagridview-control.md)  
- Описывает, как заполнить элемент управления данными, привязывая его к `BindingSource`, который содержит сведения, извлеченные из базы данных.  
+ Описывает, как заполнить элемент управления данными, привязывая его к `BindingSource` , который содержит сведения, извлеченные из базы данных.  
   
  [Практическое руководство. Автоматическое создание столбцов связанного с данными элемента управления DataGridView в Windows Forms](autogenerate-columns-in-a-data-bound-wf-datagridview-control.md)  
  Описывает автоматическое создание столбцов на основе привязанного источника данных.  
@@ -52,23 +53,23 @@ ms.locfileid: "76745870"
  [Практическое руководство. Доступ к связанным объектам в строках DataGridView в Windows Forms](how-to-access-objects-bound-to-windows-forms-datagridview-rows.md)  
  Описывает, как получить объект, привязанный к определенной строке элемента управления.  
   
- [Пример. Создание главного и подчиненного представлений данных с использованием двух элементов управления DataGridView в Windows Forms](creating-a-master-detail-form-using-two-datagridviews.md)  
+ [Пошаговое руководство. Создание главного и подчиненного представлений данных с использованием двух элементов управления DataGridView в Windows Forms](creating-a-master-detail-form-using-two-datagridviews.md)  
  Описывает, как отобразить данные из двух связанных таблиц базы данных, чтобы значения, отображаемые в одном `DataGridView` элементе управления, зависели от текущей выбранной строки в другом элементе управления.  
   
  [Практическое руководство. Настройка форматирования данных элемента управления DataGridView в Windows Forms](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md)  
- Описывает обработку события <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> для изменения внешнего вида ячеек в зависимости от их значений.  
+ Описывает обработку <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> события для изменения внешнего вида ячеек в зависимости от их значений.  
   
-## <a name="reference"></a>Справочник  
+## <a name="reference"></a>Ссылка  
  <xref:System.Windows.Forms.DataGridView>  
  Справочная документация по элементу управления <xref:System.Windows.Forms.DataGridView>.  
   
  <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>  
- Содержит справочную документацию по свойству <xref:System.Windows.Forms.DataGridView.DataSource%2A>.  
+ Содержит справочную документацию по <xref:System.Windows.Forms.DataGridView.DataSource%2A> свойству.  
   
  <xref:System.Windows.Forms.BindingSource>  
  Содержит справочную документацию по компоненту <xref:System.Windows.Forms.BindingSource>.  
   
-## <a name="related-sections"></a>См. также  
+## <a name="related-sections"></a>Связанные разделы  
  [Ввод данных с помощью элемента управления DataGridView в Windows Forms](data-entry-in-the-windows-forms-datagridview-control.md)  
  Разделы, в которых описывается изменение способов добавления и изменения данных в элементе управления.  
   
