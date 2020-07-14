@@ -1,5 +1,6 @@
 ---
 title: Опасные разрешения и администрирование политик
+description: См. ссылки на различные опасные разрешения в .NET. Эти разрешения должны быть предоставлены только доверенному коду и только при необходимости.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - permissions [.NET Framework], policy administration
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - secure coding, dangerous permissions
 - permissions [.NET Framework], dangerous
 ms.assetid: 1929e854-23a0-4bb1-94be-e8aa3b609e32
-ms.openlocfilehash: 15d28ff7d11b5d15ce44d9ab1f56548256850ff8
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: ba3d47dc445e4b368f57d59d735fc331f5d6de81
+ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81645762"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86281619"
 ---
 # <a name="dangerous-permissions-and-policy-administration"></a>Опасные разрешения и администрирование политик
 Некоторые из защищенных операций, для которых .NET Framework предоставляет разрешения, потенциально могут позволить обойти систему безопасности. Эти небезопасные разрешения должны предоставляться только надежному коду и только в случае необходимости. Обычно невозможно защититься от вредоносного кода, который получил эти разрешения.  
   
 > [!NOTE]
-> В рамках .NET Framework 4 произошли важные изменения в модели безопасности и терминологии .NET Framework. Для получения дополнительной информации об этих изменениях [см.](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)  
+> В .NET Framework 4 были внесены важные изменения в модель и терминологию безопасности .NET Framework. Дополнительные сведения об этих изменениях см. в разделе [изменения в системе безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).  
   
  Небезопасные разрешения приведены в следующей таблице.  
   

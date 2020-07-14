@@ -4,12 +4,12 @@ description: Сведения о деконструкции кортежей и 
 ms.technology: csharp-fundamentals
 ms.date: 11/23/2017
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
-ms.openlocfilehash: d238f6f520653befb1464377094b93e34dde0eca
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 8defd75a7cdff3490d2b0a6097ec2a898576e113
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463129"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174170"
 ---
 # <a name="deconstructing-tuples-and-other-types"></a>Деконструкция кортежей и других типов
 
@@ -106,4 +106,4 @@ C# не предоставляет встроенную поддержку дл�
 ## <a name="see-also"></a>См. также
 
 - [Операции удаления](discards.md)
-- [Кортежи](tuples.md)
+- [Типы кортежей](language-reference/builtin-types/value-tuples.md)

@@ -2,14 +2,17 @@
 title: Обзор .NET Core
 description: Сведения о характеристиках и компоновке .NET Core, а также ее сравнение с другими реализациями .NET.
 ms.date: 03/26/2020
-ms.openlocfilehash: e57451968ed8c4d5457acea084d3c6c9f998b8da
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: d5ef79fe5a8fbb56beae77edd01830fe6561fa51
+ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144530"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86100734"
 ---
 # <a name="net-core-overview"></a>Обзор .NET Core
+
+> [!div class="button"]
+> [Загрузить .NET Core](https://dotnet.microsoft.com/download)
 
 .NET Core обладает следующими характеристиками:
 

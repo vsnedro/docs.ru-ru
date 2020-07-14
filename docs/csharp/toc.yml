@@ -1,24 +1,24 @@
-- name: 'Документация по C#'
+- name: Документация по C#
   href: index.yml
 - name: Начало работы
   items:
     - name: Обзор
       displayName: get started
       href: getting-started/index.md
-    - name: 'Введение в язык C# и платформу .NET Framework'
+    - name: Введение в язык C# и платформу .NET Framework
       href: getting-started/introduction-to-the-csharp-language-and-the-net-framework.md
 - name: Учебники
   items:
     - name: Обзор
       displayName: tutorials
       href: tutorials/index.md
-    - name: 'Введение в программирование на C#'
+    - name: Введение в программирование на C#
       items:
         - name: Выберите первый урок
           href: tutorials/intro-to-csharp/index.md
         - name: 'Здравствуй, мир'
           href: tutorials/intro-to-csharp/hello-world.yml
-        - name: 'Числа в C#'
+        - name: Числа в C#
           href: tutorials/intro-to-csharp/numbers-in-csharp.yml
         - name: Ветви и циклы
           href: tutorials/intro-to-csharp/branches-and-loops.yml
@@ -28,7 +28,7 @@
           items:
             - name: Настройка среды
               href: tutorials/intro-to-csharp/local-environment.md
-            - name: 'Числа в C#'
+            - name: Числа в C#
               href: tutorials/intro-to-csharp/numbers-in-csharp-local.md
             - name: Ветви и циклы
               href: tutorials/intro-to-csharp/branches-and-loops-local.md
@@ -62,13 +62,13 @@
       href: tutorials/console-teleprompter.md
     - name: Клиент REST
       href: tutorials/console-webapiclient.md
-    - name: 'Наследование в C# и .NET'
+    - name: Наследование в C# и .NET
       href: tutorials/inheritance.md
     - name: Работа с LINQ
       href: tutorials/working-with-linq.md
     - name: Использование атрибутов
       href: tutorials/attributes.md
-- name: 'Обзор языка C#'
+- name: Обзор языка C#
   items:
     - name: Вступление
       href: tour-of-csharp/index.md
@@ -90,9 +90,9 @@
       href: tour-of-csharp/delegates.md
     - name: Атрибуты
       href: tour-of-csharp/attributes.md
-- name: 'Новые возможности C#'
+- name: Новые возможности C#
   items:
-    - name: 'C# 8.0'
+    - name: C# 8.0
       displayName: what's new
       href: whats-new/csharp-8.md
     - name: "C#\_7.3"
@@ -101,21 +101,21 @@
       href: whats-new/csharp-7-2.md
     - name: "C#\_7.1"
       href: whats-new/csharp-7-1.md
-    - name: 'C# 7.0'
+    - name: C# 7.0
       href: whats-new/csharp-7.md
-    - name: 'C# 6'
+    - name: C# 6
       href: whats-new/csharp-6.md
     - name: Критические изменения в компиляторе
       href: whats-new/breaking-changes.md
-    - name: 'Журнал версий C#'
+    - name: Журнал версий C#
       href: whats-new/csharp-version-history.md
     - name: Связи между языком и платформой
       href: whats-new/relationships-between-language-and-library.md
     - name: Соображения относительно версии и обновления
       href: whats-new/version-update-considerations.md
-- name: 'Основные понятия C#'
+- name: Основные понятия C#
   items:
-    - name: 'Система типов C#'
+    - name: Система типов C#
       href: programming-guide/types/index.md
     - name: 'Ссылочные типы, допускающие значение null'
       href: nullable-references.md
@@ -127,8 +127,6 @@
       href: basic-types.md
     - name: Классы
       href: programming-guide/classes-and-structs/classes.md
-    - name: Кортежи
-      href: tuples.md
     - name: Деконструкция кортежей и других типов
       href: deconstruct.md
     - name: Интерфейсы
@@ -171,9 +169,9 @@
           href: linq/index.md
         - name: Основы выражения запроса
           href: linq/query-expression-basics.md
-        - name: 'LINQ в C#'
+        - name: LINQ в C#
           href: linq/linq-in-csharp.md
-        - name: 'Создание запросов LINQ на языке C#'
+        - name: Создание запросов LINQ на языке C#
           href: linq/write-linq-queries.md
         - name: Запрос коллекции объектов
           href: linq/query-a-collection-of-objects.md
@@ -237,7 +235,7 @@
       href: codedoc.md
     - name: Управление версиями
       href: versioning.md
-- name: 'Статьи с практическими инструкциями по C#'
+- name: Статьи с практическими инструкциями по C#
   items:
     - name: Индекс статьи
       displayName: how to's
@@ -289,15 +287,15 @@
       href: programming-guide/index.md
     - name: "Структура программы\_C#"
       items:
-        - name: 'Структура программы C#'
+        - name: Структура программы C#
           href: programming-guide/inside-a-program/index.md
         - name: Hello World — Создаем первую программу
           href: programming-guide/inside-a-program/hello-world-your-first-program.md
-        - name: 'Общая структура программы C#'
+        - name: Общая структура программы C#
           href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
         - name: Имена идентификаторов
           href: programming-guide/inside-a-program/identifier-names.md
-        - name: 'Соглашения о написании кода на C#'
+        - name: Соглашения о написании кода на C#
           href: programming-guide/inside-a-program/coding-conventions.md
     - name: Main() и аргументы командной строки
       items:
@@ -402,7 +400,7 @@
             - name: Обзор
               displayName: LINQ overview
               href: programming-guide/concepts/linq/index.md
-            - name: 'Приступая к работе с LINQ в C#'
+            - name: Приступая к работе с LINQ в C#
               items:
                 - name: Введение в запросы LINQ
                   href: programming-guide/concepts/linq/introduction-to-linq-queries.md
@@ -418,7 +416,7 @@
                   href: programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md
                 - name: 'Возможности C#, поддерживающие LINQ'
                   href: programming-guide/concepts/linq/features-that-support-linq.md
-                - name: 'Пошаговое руководство. Написание запросов на C# (LINQ)'
+                - name: Пошаговое руководство. Написание запросов на C# (LINQ)
                   href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
             - name: Общие сведения о стандартных операторах запроса
               items:
@@ -544,7 +542,7 @@
                       items:
                         - name: Функциональное сборка (LINQ to XML)
                           href: programming-guide/concepts/linq/functional-construction-linq-to-xml.md
-                        - name: 'Создание деревьев XML в C# (LINQ to XML)'
+                        - name: Создание деревьев XML в C# (LINQ to XML)
                           href: programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2.md
                         - name: Анализ XML
                           items:
@@ -574,7 +572,7 @@
                           href: programming-guide/concepts/linq/how-to-create-a-document-with-namespaces-linq-to-xml.md
                         - name: Практическое руководство. Управление префиксами пространств имен (LINQ to XML)
                           href: programming-guide/concepts/linq/how-to-control-namespace-prefixes-linq-to-xml.md
-                        - name: 'Области пространств имен по умолчанию в C#'
+                        - name: Области пространств имен по умолчанию в C#
                           href: programming-guide/concepts/linq/scope-of-default-namespaces.md
                         - name: Практическое руководство. Создание запросов к XML в пространствах имен
                           href: programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md
@@ -860,7 +858,7 @@
           href: programming-guide/concepts/object-oriented-programming.md
         - name: Отражение
           href: programming-guide/concepts/reflection.md
-        - name: 'Сериализация (C#)'
+        - name: Сериализация (C#)
           items:
             - name: Обзор
               displayName: serialization
@@ -914,7 +912,7 @@
           href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
         - name: Использование типа dynamic
           href: programming-guide/types/using-type-dynamic.md
-        - name: 'Пошаговое руководство. Создание и использование динамических объектов (C# и Visual Basic)'
+        - name: Пошаговое руководство. Создание и использование динамических объектов (C# и Visual Basic)
           href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
     - name: Классы и структуры
       items:
@@ -954,7 +952,7 @@
               href: programming-guide/classes-and-structs/constants.md
             - name: Определение абстрактных свойств
               href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
-            - name: 'Определение констант в C#'
+            - name: Определение констант в C#
               href: programming-guide/classes-and-structs/how-to-define-constants.md
         - name: Свойства
           items:
@@ -1054,7 +1052,7 @@
           href: programming-guide/delegates/using-delegates.md
         - name: Делегаты с именованными методами и Анонимные методы
           href: programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md
-        - name: 'Практическое руководство. Объединение делегатов (многоадресные делегаты) (руководство по программированию на C#)'
+        - name: Практическое руководство. Объединение делегатов (многоадресные делегаты) (руководство по программированию на C#)
           href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
         - name: 'Практическое руководство. Объявление, создание и использование делегата'
           href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
@@ -1128,7 +1126,7 @@
           href: programming-guide/generics/generics-and-arrays.md
         - name: Универсальные делегаты
           href: programming-guide/generics/generic-delegates.md
-        - name: 'Различия между шаблонами языка C++ и универсальными шаблонами языка C#'
+        - name: Различия между шаблонами языка C++ и универсальными шаблонами языка C#
           href: programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md
         - name: Универсальные типы во время выполнения
           href: programming-guide/generics/generics-in-the-run-time.md
@@ -1264,13 +1262,13 @@
           href: programming-guide/interop/index.md
         - name: Общие сведения о взаимодействии
           href: programming-guide/interop/interoperability-overview.md
-        - name: 'Практическое руководство. Доступ к объектам взаимодействия Office с помощью функций языка C#'
+        - name: Практическое руководство. Доступ к объектам взаимодействия Office с помощью функций языка C#
           href: programming-guide/interop/how-to-access-office-onterop-objects.md
         - name: Практическое руководство. Использование индексированных свойств в программировании COM-взаимодействия
           href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
         - name: Практическое руководство. Использование вызова неуправляемого кода для воспроизведения WAV-файла
           href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
-        - name: 'Пошаговое руководство. Программирование для Office (C# и Visual Basic)'
+        - name: Пошаговое руководство. Программирование для Office (C# и Visual Basic)
           href: programming-guide/interop/walkthrough-office-programming.md
         - name: Пример COM-класса
           href: programming-guide/interop/example-com-class.md
@@ -1281,7 +1279,7 @@
       href: language-reference/index.md
     - name: Настройка версии языка
       href: language-reference/configure-language-version.md
-    - name: 'Ключевые слова в C#'
+    - name: Ключевые слова в C#
       items:
         - name: Обзор
           displayName: keywords
@@ -1313,6 +1311,9 @@
                 - name: Типы структур
                   href: language-reference/builtin-types/struct.md
                   displayName: 'struct type, readonly struct, ref struct, readonly ref struct'
+                - name: Типы кортежей
+                  href: language-reference/builtin-types/value-tuples.md
+                  displayName: 'value tuples, ValueTuple'
                 - name: 'Типы значений, допускающие значение NULL'
                   href: language-reference/builtin-types/nullable-value-types.md
                   displayName: '? token, ? symbol'
@@ -1556,7 +1557,7 @@
               href: language-reference/keywords/by.md
             - name: in
               href: language-reference/keywords/in.md
-    - name: 'Операторы и выражения C#'
+    - name: Операторы и выражения C#
       items:
         - name: Обзор
           href: language-reference/operators/index.md
@@ -1639,7 +1640,7 @@
           href: language-reference/operators/true-false-operators.md
         - name: Перегрузка операторов
           href: language-reference/operators/operator-overloading.md
-    - name: 'Специальные символы C#'
+    - name: Специальные символы C#
       items:
         - name: Обзор
           displayName: special characters
@@ -1695,7 +1696,7 @@
           href: language-reference/preprocessor-directives/preprocessor-pragma-warning.md
         - name: '#pragma checksum'
           href: language-reference/preprocessor-directives/preprocessor-pragma-checksum.md
-    - name: 'Параметры компилятора C#'
+    - name: Параметры компилятора C#
       items:
         - name: Обзор
           displayName: compiler options
@@ -1706,7 +1707,7 @@
           href: language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md
         - name: 'Параметры компилятора C#, упорядоченные по категориям'
           href: language-reference/compiler-options/listed-by-category.md
-        - name: 'Параметры компилятора C# в алфавитном порядке'
+        - name: Параметры компилятора C# в алфавитном порядке
           href: language-reference/compiler-options/listed-alphabetically.md
           items:
             - name: '@'
@@ -1826,7 +1827,7 @@
               href: language-reference/compiler-options/win32manifest-compiler-option.md
             - name: '-win32res'
               href: language-reference/compiler-options/win32res-compiler-option.md
-    - name: 'Ошибки компилятора C#'
+    - name: Ошибки компилятора C#
       href: language-reference/compiler-messages/index.md
     - name: "Предварительная спецификация C#\_6.0"
       href: language-reference/specification/

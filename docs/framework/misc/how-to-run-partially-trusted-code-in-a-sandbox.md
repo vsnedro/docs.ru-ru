@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Выполнение не вполне безопасного кода в изолированной среде
+description: Узнайте, как запустить частично доверенный код в песочнице в .NET. Класс AppDomain является эффективным средством изолирования управляемых приложений.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - partially trusted code
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - restricted security environment
 - code security, sandboxing
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
-ms.openlocfilehash: b2f5a72e747f6c71743a7b22fe9f1962ac2f6b53
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f186f1d901b51dd4c61ba6b22197465a41f2c44
+ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181180"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86282038"
 ---
 # <a name="how-to-run-partially-trusted-code-in-a-sandbox"></a>Практическое руководство. Выполнение не вполне безопасного кода в изолированной среде
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -114,7 +115,7 @@ AppDomain.CreateDomain( string friendlyName,
   
     - Во-первых, можно использовать базу кода, указывающую на расположение, которое не содержит вашу сборку.  
   
-    - Во-вторых, при работе в режиме полного доверия (<xref:System.Security.CodeAccessPermission.Assert%2A>) можно использовать для создания экземпляра критически важного класса метод <xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=nameWithType>. (Это происходит всякий раз, когда ваша сборка не имеет маркировки прозрачности и загружается как полностью доверенные.) Поэтому вы должны быть осторожны, чтобы создать только код, который вы доверяете с этой функцией, и мы рекомендуем создавать только экземпляры полностью доверенных классов в новом домене приложения.  
+    - Во-вторых, при работе в режиме полного доверия (<xref:System.Security.CodeAccessPermission.Assert%2A>) можно использовать для создания экземпляра критически важного класса метод <xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=nameWithType>. (Это происходит каждый раз, когда сборка не содержит метки прозрачности и загружается как полностью доверенная.) Поэтому необходимо быть осторожным при создании только кода, которому вы доверяете этой функции, и мы рекомендуем создавать только экземпляры полностью доверенных классов в новом домене приложения.  
   
     ```csharp
     ObjectHandle handle = Activator.CreateInstanceFrom(  

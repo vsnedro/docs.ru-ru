@@ -1,16 +1,17 @@
 ---
 title: Совместимость политики разграничения доступа кода и ее миграция
+description: Ознакомьтесь со сводкой и ссылками на раздел о совместимости и миграции политик управления доступом для кода в .NET 4.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - policy migration, compatibility
 - CLR policy migration
 ms.assetid: 19cb4d39-e38a-4262-b507-458915303115
-ms.openlocfilehash: 949739b3336a9182eef583cc405e60e09d7ec09d
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: e5affd9d16635fa28342b5b7390a083185975f2b
+ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77217150"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86281736"
 ---
 # <a name="code-access-security-policy-compatibility-and-migration"></a>Совместимость политики разграничения доступа кода и ее миграция
 
@@ -24,9 +25,9 @@ ms.locfileid: "77217150"
 
    \- или -
 
-- Использование [элемента конфигурации\<NetFx40_LegacySecurityPolicy >](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) для выбора устаревшей политики РАЗГРАНИЧЕНИЯ доступа кода.
+- Использование [ \<NetFx40_LegacySecurityPolicy> элемента конфигурации](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) для выбора устаревшей политики разграничения доступа кода.
 
-В этом разделе содержатся следующие подразделы:
+В этом разделе содержатся следующие подразделы.
 
 - [Явное использование](#explicit_use)
 
@@ -36,7 +37,7 @@ ms.locfileid: "77217150"
 
 - [Миграция: замена устаревших вызовов](#migration)
 
-- [Совместимость. использование устаревшей политики CAS](#compatibility)
+- [Совместимость: использование политики разграничения доступа кода прежних версий](#compatibility)
 
 <a name="explicit_use"></a>
 
@@ -72,7 +73,7 @@ ms.locfileid: "77217150"
 
 Несколько перегруженных методов загрузки сборки вызывают ошибки из-за неявного использования политики разграничения доступа кода. Эти перегруженные методы принимают параметр <xref:System.Security.Policy.Evidence>, разрешающий политику разграничения доступа кода, и предоставляют сборке набор разрешений.
 
-Ниже приведены некоторые примеры. Устаревшие перегрузки — это перегрузки, принимающие в качестве параметра <xref:System.Security.Policy.Evidence>.
+Рассмотрим некоторые примеры. Устаревшие перегрузки — это перегрузки, принимающие в качестве параметра <xref:System.Security.Policy.Evidence>.
 
 - <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType>
 
@@ -124,15 +125,15 @@ ms.locfileid: "77217150"
 
 ### <a name="application-domain-sandboxing"></a>Изолирование домена приложения
 
-Метод <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType>, как правило, используется для изолирования сборок в домене приложений. .NET Framework 4 предоставляет члены, которые не используют <xref:System.Security.Policy.PolicyLevel> для этой цели. Дополнительные сведения см. [в разделе инструкции. Запуск частично доверенного кода в песочнице](how-to-run-partially-trusted-code-in-a-sandbox.md).
+Метод <xref:System.AppDomain.SetAppDomainPolicy%2A?displayProperty=nameWithType>, как правило, используется для изолирования сборок в домене приложений. .NET Framework 4 предоставляет члены, которые не должны использоваться <xref:System.Security.Policy.PolicyLevel> для этой цели. Дополнительные сведения см. [в разделе инструкции. Запуск частично доверенного кода в песочнице](how-to-run-partially-trusted-code-in-a-sandbox.md).
 
 ### <a name="determining-a-safe-or-reasonable-permission-set-for-partially-trusted-code"></a>Определение безопасного или приемлемого набора разрешений для частично доверенного кода
 
-Основным приложениям часто требуется определить разрешения, подходящие для изоляции кода, запускаемого из этих приложений. Прежде чем приступить к работе с .NET Framework 4, политика CAS предоставила способ сделать это с помощью метода <xref:System.Security.SecurityManager.ResolvePolicy%2A?displayProperty=nameWithType>. В качестве замены .NET Framework 4 предоставляет метод <xref:System.Security.SecurityManager.GetStandardSandbox%2A?displayProperty=nameWithType>, который возвращает надежный стандартный набор разрешений для предоставленного свидетельства.
+Основным приложениям часто требуется определить разрешения, подходящие для изоляции кода, запускаемого из этих приложений. Прежде чем приступить к работе с .NET Framework 4, политика CAS предоставила способ сделать это с помощью <xref:System.Security.SecurityManager.ResolvePolicy%2A?displayProperty=nameWithType> метода. В качестве замены .NET Framework 4 предоставляет <xref:System.Security.SecurityManager.GetStandardSandbox%2A?displayProperty=nameWithType> метод, который возвращает надежный стандартный набор разрешений для предоставленного свидетельства.
 
 ### <a name="non-sandboxing-scenarios-overloads-for-assembly-loads"></a>Сценарии без использования "песочницы": перегруженные методы для загрузки сборок
 
-Перегруженные методы загрузки сборок применяются, если вместо изоляции сборки в "песочнице" необходимо использовать параметры, которые недоступны иначе. Начиная с .NET Framework 4, перегрузки загрузки сборок, не требующие <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> объекта в качестве параметра, например <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.String%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Configuration.Assemblies.AssemblyHashAlgorithm%29?displayProperty=nameWithType>, следует включить этот сценарий.
+Перегруженные методы загрузки сборок применяются, если вместо изоляции сборки в "песочнице" необходимо использовать параметры, которые недоступны иначе. Начиная с .NET Framework 4, перегрузки загрузки сборок, не требующие объекта в <xref:System.Security.Policy.Evidence?displayProperty=nameWithType> качестве параметра, следует <xref:System.AppDomain.ExecuteAssembly%28System.String%2CSystem.String%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Configuration.Assemblies.AssemblyHashAlgorithm%29?displayProperty=nameWithType> включить этот сценарий.
 
 Чтобы поместить сборку в изолированную среду, воспользуйтесь перегрузкой <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType>.
 
@@ -140,7 +141,7 @@ ms.locfileid: "77217150"
 
 ## <a name="compatibility-using-the-cas-policy-legacy-option"></a>Совместимость: использование политики разграничения доступа кода прежних версий
 
-[Элемент конфигурации\<NetFx40_LegacySecurityPolicy >](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) позволяет указать, что процесс или библиотека использует устаревшую политику РАЗГРАНИЧЕНИЯ доступа кода. При включении этого элемента политика и перегруженные объекты свидетельств будут работать как в предыдущих версиях платформы.
+[ \<NetFx40_LegacySecurityPolicy> Элемент Configuration](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) позволяет указать, что процесс или библиотека использует устаревшую политику разграничения доступа кода. При включении этого элемента политика и перегруженные объекты свидетельств будут работать как в предыдущих версиях платформы.
 
 > [!NOTE]
 > Поведение политики разграничения доступа кода определяется для каждой версии среды выполнения, поэтому изменение этой политики для одной версии среды выполнения не повлияет на ее поведение в других версиях.
@@ -153,7 +154,7 @@ ms.locfileid: "77217150"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Выполнение не вполне безопасного кода в изолированной среде](how-to-run-partially-trusted-code-in-a-sandbox.md)
 - [Правила написания безопасного кода](../../standard/security/secure-coding-guidelines.md)

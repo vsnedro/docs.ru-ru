@@ -2,12 +2,12 @@
 title: Проектирование проверок на уровне модели предметной области
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Ключевые понятия проверок на уровне модели предметной области.
 ms.date: 10/08/2018
-ms.openlocfilehash: d2efc5f3b3267c4573409952791c6e883a01aae2
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 94df2d6441581fbbae479da2524d6ffce2037d68
+ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988509"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86100916"
 ---
 # <a name="design-validations-in-the-domain-model-layer"></a>Проектирование проверок на уровне модели предметной области
 
@@ -53,7 +53,7 @@ public void SetAddress(string line1, string line2,
 
 ### <a name="use-validation-attributes-in-the-model-based-on-data-annotations"></a>Использование атрибутов проверки в модели на основе заметок к данным
 
-Заметки к данным, например атрибуты Required или MaxLength, можно использовать для настройки свойств полей базы данных EF Core, как подробно описывается в разделе [Сопоставление таблиц](infrastructure-persistence-layer-implemenation-entity-framework-core.md#table-mapping), но [они больше не работают для проверки сущностей в EF Core](https://github.com/dotnet/efcore/issues/3680) (как и метод <xref:System.ComponentModel.DataAnnotations.IValidatableObject.Validate%2A?displayProperty=nameWithType>), как это было с версии EF 4.x в .NET Framework.
+Заметки к данным, например атрибуты Required или MaxLength, можно использовать для настройки свойств полей базы данных EF Core, как подробно описывается в разделе [Сопоставление таблиц](infrastructure-persistence-layer-implementation-entity-framework-core.md#table-mapping), но [они больше не работают для проверки сущностей в EF Core](https://github.com/dotnet/efcore/issues/3680) (как и метод <xref:System.ComponentModel.DataAnnotations.IValidatableObject.Validate%2A?displayProperty=nameWithType>), как это было с версии EF 4.x в .NET Framework.
 
 Заметки к данным и интерфейс <xref:System.ComponentModel.DataAnnotations.IValidatableObject> по-прежнему можно использовать для проверки модели во время привязки модели, до вызова действий контроллера, как обычно, но эта модель должна быть моделью представления или DTO, а это задача MVC или API, а не модели предметной области.
 

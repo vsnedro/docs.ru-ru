@@ -3,40 +3,40 @@ title: Перенос базы данных SQL Server в Azure
 description: Узнайте, как перенести базу данных SQL Server из локальной среды в Azure.
 ms.topic: how-to
 ms.date: 05/27/2020
-ms.openlocfilehash: ed5d6ef9395dca14d8e0ecba82d3fc18cb3d629a
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: 5f191cafbff3823d04e1dbd1fdf81e1157e20999
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241452"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174287"
 ---
 # <a name="migrate-a-sql-server-database-to-azure"></a>Перенос базы данных SQL Server в Azure
 
 В этой статье представлен краткий обзор двух вариантов миграции базы данных SQL Server в Azure. В Azure доступны три основных варианта переноса рабочей базы данных SQL Server. В этой статье рассматриваются следующие два варианта.
 
-1. [SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview). Экземпляр SQL Server, установленный и размещенный на виртуальной машине в Azure. Также называется "инфраструктура как услуга" (IaaS).
-2. [База данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview). Полностью управляемая служба базы данных SQL в Azure. Также называется "платформа как услуга" (PaaS).
+1. [SQL Server на виртуальных машинах Azure](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview). Экземпляр SQL Server, установленный и размещенный на виртуальной машине в Azure. Также называется "инфраструктура как услуга" (IaaS).
+2. [База данных SQL Azure](/azure/sql-database/sql-database-technical-overview). Полностью управляемая служба базы данных SQL в Azure. Также называется "платформа как услуга" (PaaS).
 
-Оба варианта имеют свои преимущества и недостатки, которые вы должны оценить перед переносом. Третий вариант — [управляемые экземпляры базы данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
+Оба варианта имеют свои преимущества и недостатки, которые вы должны оценить перед переносом. Третий вариант — [управляемые экземпляры базы данных SQL Azure](/azure/sql-database/sql-database-managed-instance).
 
 ## <a name="get-started"></a>Начало работы
 
 В зависимости от службы, которую вы используете, вам пригодятся следующие руководства по миграции:
 
-* [Миграция базы данных SQL Server в экземпляр SQL Server на виртуальной машине Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
-* [Перенос базы данных SQL Server в Базу данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-migrate-your-sql-server-database)
+* [Миграция базы данных SQL Server в экземпляр SQL Server на виртуальной машине Azure](/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
+* [Перенос базы данных SQL Server в Базу данных SQL Azure](/azure/sql-database/sql-database-migrate-your-sql-server-database)
 
 Следующие статьи содержат основные принципы работы виртуальных машин:
 
-* [Высокий уровень доступности и аварийное восстановление для SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr)
-* [Рекомендации по оптимизации производительности SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
-* [Шаблоны приложений и стратегии разработки для SQL Server на виртуальных машинах Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-app-patterns-dev-strategies)
+* [Высокий уровень доступности и аварийное восстановление для SQL Server на виртуальных машинах Azure](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr)
+* [Рекомендации по оптимизации производительности SQL Server на виртуальных машинах Azure](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
+* [Шаблоны приложений и стратегии разработки для SQL Server на виртуальных машинах Azure](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-app-patterns-dev-strategies)
 
 Следующие статьи содержат дополнительные сведения о Базе данных SQL Azure.
 
-* [Создание серверов Базы данных SQL Azure и баз данных SQL Azure и управление ими](https://docs.microsoft.com/azure/sql-database/sql-database-servers-databases)
-* [Единицы транзакций базы данных (DTU) и единицы транзакций эластичной базы данных (eDTU)](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu)
-* [Ограничения ресурсов Базы данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits)
+* [Создание серверов Базы данных SQL Azure и баз данных SQL Azure и управление ими](/azure/sql-database/sql-database-servers-databases)
+* [Единицы транзакций базы данных (DTU) и единицы транзакций эластичной базы данных (eDTU)](/azure/sql-database/sql-database-what-is-a-dtu)
+* [Ограничения ресурсов Базы данных SQL Azure](/azure/sql-database/sql-database-resource-limits)
 
 ## <a name="choosing-iaas-or-paas"></a>Выбор IaaS или PaaS
 
@@ -59,12 +59,12 @@ ms.locfileid: "84241452"
 | Сценарий | SQL Server на виртуальных машинах Azure | База данных SQL Azure |
 |----------|-------------------------|--------------------|
 | Миграция | Требуются минимальные изменения в базе данных. | Могут потребоваться изменения в базе данных, если [помощник по миграции данных](https://www.microsoft.com/download/details.aspx?id=53595) определил, что вы используете недоступные в Azure SQL компоненты. Или при наличии других зависимостей, например локально установленных исполняемых файлов.|
-| Управление доступностью, восстановлением и обновлениями | Доступность и восстановление настраиваются вручную. Обновления можно автоматизировать с помощью [масштабируемых наборов виртуальных машин](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade). | Автоматическое управление. |
+| Управление доступностью, восстановлением и обновлениями | Доступность и восстановление настраиваются вручную. Обновления можно автоматизировать с помощью [масштабируемых наборов виртуальных машин](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade). | Автоматическое управление. |
 | Конфигурация базовой операционной системы | Настройка вручную. | Автоматическое управление. |
 | Управление размером базы данных | Поддерживается до 256 ТБ хранилища на экземпляр SQL Server. | Поддерживается 8 ТБ хранилища, прежде чем понадобится горизонтальное секционирование. |
-| Управление затратами | Необходимо управлять затратами на лицензию SQL Server, лицензию Windows Server и виртуальную машину (с учетом ядер, ОЗУ и объема хранилища). | Необходимо управлять затратами на обслуживание (на основе [единиц eDTU или DTU](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu), объема хранилища и количества баз данных, если используется эластичный пул). Необходимо контролировать стоимость всех соглашений об уровне обслуживания. |
+| Управление затратами | Необходимо управлять затратами на лицензию SQL Server, лицензию Windows Server и виртуальную машину (с учетом ядер, ОЗУ и объема хранилища). | Необходимо управлять затратами на обслуживание (на основе [единиц eDTU или DTU](/azure/sql-database/sql-database-what-is-a-dtu), объема хранилища и количества баз данных, если используется эластичный пул). Необходимо контролировать стоимость всех соглашений об уровне обслуживания. |
 
-Дополнительные сведения о различиях между этими двумя вариантами см. в разделе [Выбор правильного варианта развертывания в SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
+Дополнительные сведения о различиях между этими двумя вариантами см. в разделе [Выбор правильного варианта развертывания в SQL Azure](/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
 
 ## <a name="faq"></a>часто задаваемые вопросы
 

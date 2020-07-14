@@ -2,12 +2,12 @@
 title: Проектирование уровня сохраняемости инфраструктуры
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Шаблон репозитория при проектировании уровня сохраняемости инфраструктуры.
 ms.date: 10/08/2018
-ms.openlocfilehash: 1b2665e81ade60affa84563121c04bca08537f07
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 3c18582eb5db61a61b366c06f361d297e698b39a
+ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988483"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86100851"
 ---
 # <a name="design-the-infrastructure-persistence-layer"></a>Проектирование уровня сохраняемости инфраструктуры
 
@@ -129,4 +129,4 @@ public interface IRepository<T> where T : IAggregateRoot
 
 >[!div class="step-by-step"]
 >[Назад](domain-events-design-implementation.md)
->[Вперед](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+>[Вперед](infrastructure-persistence-layer-implementation-entity-framework-core.md)

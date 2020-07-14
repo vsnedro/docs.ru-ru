@@ -2,12 +2,12 @@
 title: Связь между языковыми компонентами и библиотеками типов | Документы Майкрософт
 description: Языковые компоненты часто используют типы библиотек для реализации. Изучите эту связь.
 ms.date: 07/20/2017
-ms.openlocfilehash: dfae7972af0a251a92700d7d33bd6f971eb1870e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: abf15385da3756c35db2df822cc2e11e9edf5758
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "61706030"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174105"
 ---
 # <a name="relationships-between-language-features-and-library-types"></a>Связи между языковыми компонентами и типами библиотек
 
@@ -21,7 +21,7 @@ ms.locfileid: "61706030"
 
 Эта первая версия была простой: компилятор и стандартная библиотека поставлялись вместе, и для каждого из них была только одна версия.
 
-В последующих версиях C# в число зависимостей иногда добавлялись новые типы или члены. Примеры: <xref:System.Runtime.CompilerServices.INotifyCompletion>, <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> и <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>. В C# 7.0 этот процесс продолжается путем добавления зависимости от <xref:System.ValueTuple> для реализации [кортежей](../tuples.md).
+В последующих версиях C# в число зависимостей иногда добавлялись новые типы или члены. Примеры: <xref:System.Runtime.CompilerServices.INotifyCompletion>, <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> и <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>. В C# 7.0 этот процесс продолжается путем добавления зависимости от <xref:System.ValueTuple> для реализации [кортежей](../language-reference/builtin-types/value-tuples.md).
 
 Группа разработчиков языка стремится минимизировать контактную зону типов и членов, необходимых в совместимой стандартной библиотеке. Эта задача уравновешивается потребностью в простой структуре, когда новые функции библиотек легко внедряются в язык. В будущих версиях C# появятся функции, требующие новых типов и членов в стандартной библиотеке. Важно понять, как управлять этими зависимостями в своей работе.
 
