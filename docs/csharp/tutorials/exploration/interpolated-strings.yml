@@ -9,12 +9,12 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
-  ms.openlocfilehash: 7736a2a26b37d8fbfac98328f94ce3c9a25be181
-  ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+  ms.openlocfilehash: a82fe645524e526d0373a4e4733c2fef9ca7c14f
+  ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/06/2020
-  ms.locfileid: "82860993"
+  ms.lasthandoff: 07/09/2020
+  ms.locfileid: "86174118"
 items:
 - durationInMinutes: 2
   content: >
@@ -53,7 +53,7 @@ items:
     В предыдущем шаге вы использовали интерполяцию строк для вставки одной строки внутрь другой. При этом интерполированное выражение, включенное в выражение интерполированной строки, может относиться к любому типу данных. Давайте включим в интерполированную строку значения разных типов данных.
 
 
-    В следующем примере мы сначала определяем [кортеж](../../tuples.md) с членами `Name`, `Price` и `perPackage`. Запустите приведенный ниже код в интерактивном окне.
+    В следующем примере мы сначала определяем [кортеж](../../language-reference/builtin-types/value-tuples.md) с членами `Name`, `Price` и `perPackage`. Запустите приведенный ниже код в интерактивном окне.
 
 
     ```csharp
