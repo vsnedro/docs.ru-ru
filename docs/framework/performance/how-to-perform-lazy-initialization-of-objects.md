@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Неактивная инициализация объектов
+description: См. инструкции по выполнению отложенной инициализации объектов с помощью класса System. Lazy <T> . Отложенная инициализация означает, что объекты не создаются, если они никогда не нужны.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,18 +8,18 @@ dev_langs:
 helpviewer_keywords:
 - lazy initialization in .NET, how to perform
 ms.assetid: 8cd68620-dcc3-4f20-8835-c728a6820e71
-ms.openlocfilehash: d89d19a7a3edb57dcd6c0e37e6688701da8b3713
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dbee0d8a5c3075ad7429feb92b87a566fdd35454
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180596"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309733"
 ---
-# <a name="how-to-perform-lazy-initialization-of-objects"></a><span data-ttu-id="733c7-102">Практическое руководство. Неактивная инициализация объектов</span><span class="sxs-lookup"><span data-stu-id="733c7-102">How to: Perform Lazy Initialization of Objects</span></span>
-<span data-ttu-id="733c7-103">Класс <xref:System.Lazy%601?displayProperty=nameWithType> упрощает выполнение отложенной инициализации и создание экземпляров объектов.</span><span class="sxs-lookup"><span data-stu-id="733c7-103">The <xref:System.Lazy%601?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects.</span></span> <span data-ttu-id="733c7-104">Если объекты не требуются, то при отложенной инициализации их можно не создавать или отложить их инициализацию до первого обращения к ним.</span><span class="sxs-lookup"><span data-stu-id="733c7-104">By initializing objects in a lazy manner, you can avoid having to create them at all if they are never needed, or you can postpone their initialization until they are first accessed.</span></span> <span data-ttu-id="733c7-105">Дополнительные сведения см. в статье [Отложенная инициализация](lazy-initialization.md).</span><span class="sxs-lookup"><span data-stu-id="733c7-105">For more information, see [Lazy Initialization](lazy-initialization.md).</span></span>  
+# <a name="how-to-perform-lazy-initialization-of-objects"></a><span data-ttu-id="aa113-104">Практическое руководство. Неактивная инициализация объектов</span><span class="sxs-lookup"><span data-stu-id="aa113-104">How to: Perform Lazy Initialization of Objects</span></span>
+<span data-ttu-id="aa113-105">Класс <xref:System.Lazy%601?displayProperty=nameWithType> упрощает выполнение отложенной инициализации и создание экземпляров объектов.</span><span class="sxs-lookup"><span data-stu-id="aa113-105">The <xref:System.Lazy%601?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects.</span></span> <span data-ttu-id="aa113-106">Если объекты не требуются, то при отложенной инициализации их можно не создавать или отложить их инициализацию до первого обращения к ним.</span><span class="sxs-lookup"><span data-stu-id="aa113-106">By initializing objects in a lazy manner, you can avoid having to create them at all if they are never needed, or you can postpone their initialization until they are first accessed.</span></span> <span data-ttu-id="aa113-107">Дополнительные сведения см. в статье [Отложенная инициализация](lazy-initialization.md).</span><span class="sxs-lookup"><span data-stu-id="aa113-107">For more information, see [Lazy Initialization](lazy-initialization.md).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="733c7-106">Пример</span><span class="sxs-lookup"><span data-stu-id="733c7-106">Example</span></span>  
- <span data-ttu-id="733c7-107">В следующем примере показано, как инициализировать значение с <xref:System.Lazy%601>.</span><span class="sxs-lookup"><span data-stu-id="733c7-107">The following example shows how to initialize a value with <xref:System.Lazy%601>.</span></span> <span data-ttu-id="733c7-108">Предположим, что отложенная переменная может не потребоваться, в зависимости от какого-либо другого кода, задающего переменной `someCondition` значение true или false.</span><span class="sxs-lookup"><span data-stu-id="733c7-108">Assume that the lazy variable might not be needed, depending on some other code that sets the `someCondition` variable to true or false.</span></span>  
+## <a name="example"></a><span data-ttu-id="aa113-108">Пример</span><span class="sxs-lookup"><span data-stu-id="aa113-108">Example</span></span>  
+ <span data-ttu-id="aa113-109">В следующем примере показано, как инициализировать значение с <xref:System.Lazy%601>.</span><span class="sxs-lookup"><span data-stu-id="aa113-109">The following example shows how to initialize a value with <xref:System.Lazy%601>.</span></span> <span data-ttu-id="aa113-110">Предположим, что отложенная переменная может не потребоваться, в зависимости от какого-либо другого кода, задающего переменной `someCondition` значение true или false.</span><span class="sxs-lookup"><span data-stu-id="aa113-110">Assume that the lazy variable might not be needed, depending on some other code that sets the `someCondition` variable to true or false.</span></span>  
   
 ```vb  
 Dim someCondition As Boolean = False  
@@ -68,13 +69,13 @@ End Sub
   }  
 ```  
   
-## <a name="example"></a><span data-ttu-id="733c7-109">Пример</span><span class="sxs-lookup"><span data-stu-id="733c7-109">Example</span></span>  
- <span data-ttu-id="733c7-110">В следующем примере показано, как использовать класс <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> для инициализации типа, видимого только текущему экземпляру объекта в текущем потоке.</span><span class="sxs-lookup"><span data-stu-id="733c7-110">The following example shows how to use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to initialize a type that is visible only to the current object instance on the current thread.</span></span>  
+## <a name="example"></a><span data-ttu-id="aa113-111">Пример</span><span class="sxs-lookup"><span data-stu-id="aa113-111">Example</span></span>  
+ <span data-ttu-id="aa113-112">В следующем примере показано, как использовать класс <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> для инициализации типа, видимого только текущему экземпляру объекта в текущем потоке.</span><span class="sxs-lookup"><span data-stu-id="aa113-112">The following example shows how to use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to initialize a type that is visible only to the current object instance on the current thread.</span></span>  
   
  [!code-csharp[CDS#13](../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/cds2.cs#13)]
  [!code-vb[CDS#13](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/lazyhowto.vb#13)]  
   
-## <a name="see-also"></a><span data-ttu-id="733c7-111">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="733c7-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aa113-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="aa113-113">See also</span></span>
 
 - <xref:System.Threading.LazyInitializer?displayProperty=nameWithType>
-- [<span data-ttu-id="733c7-112">Отложенная инициализация</span><span class="sxs-lookup"><span data-stu-id="733c7-112">Lazy Initialization</span></span>](lazy-initialization.md)
+- [<span data-ttu-id="aa113-114">Отложенная инициализация</span><span class="sxs-lookup"><span data-stu-id="aa113-114">Lazy Initialization</span></span>](lazy-initialization.md)
