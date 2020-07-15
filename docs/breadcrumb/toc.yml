@@ -435,11 +435,11 @@
             - name: 'привязка данных,'
               tocHref: /dotnet/desktop-wpf/data
               topicHref: /dotnet/desktop-wpf/data/index
-        - name: 'Руководство по языку C#'
+        - name: Руководство по языку C#
           tocHref: /dotnet/csharp/
           topicHref: /dotnet/csharp/index
           items:
-            - name: 'Знакомство с C#'
+            - name: Знакомство с C#
               tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
               topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
             - name: Начало работы
@@ -580,7 +580,7 @@
                 - name: "Предложения для языка\_C# версии\_8.0"
                   tocHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/
                   topicHref: /dotnet/csharp/language-reference/proposals/csharp-8.0/index
-        - name: 'Руководство по языку F#'
+        - name: Руководство по языку F#
           tocHref: /dotnet/fsharp/
           topicHref: /dotnet/fsharp/index
         - name: Руководство по Visual Basic
@@ -699,6 +699,6 @@
           tocHref: /dotnet/azure/
           topicHref: /dotnet/azure/index
           items:
-            - name: Azure SDK для .NET
-              tocHref: /dotnet/azure/sdk/
-              topicHref: /dotnet/azure/sdk/index
+            - name: Azure для разработчиков .NET
+              tocHref: /dotnet/azure/
+              topicHref: /dotnet/azure/index

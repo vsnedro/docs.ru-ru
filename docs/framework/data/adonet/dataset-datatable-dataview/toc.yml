@@ -1,6 +1,8 @@
 - name: 'Наборы данных, таблицы данных и объекты DataView'
   href: index.md
   items:
+    - name: Руководство по безопасности
+      href: security-guidance.md
     - name: Создание набора данных
       href: creating-a-dataset.md
     - name: Добавление новой таблицы данных в набор данных
