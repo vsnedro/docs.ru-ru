@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Неактивная инициализация объектов
+description: См. инструкции по выполнению отложенной инициализации объектов с помощью класса System. Lazy <T> . Отложенная инициализация означает, что объекты не создаются, если они никогда не нужны.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - lazy initialization in .NET, how to perform
 ms.assetid: 8cd68620-dcc3-4f20-8835-c728a6820e71
-ms.openlocfilehash: d89d19a7a3edb57dcd6c0e37e6688701da8b3713
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dbee0d8a5c3075ad7429feb92b87a566fdd35454
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180596"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309733"
 ---
 # <a name="how-to-perform-lazy-initialization-of-objects"></a>Практическое руководство. Неактивная инициализация объектов
 Класс <xref:System.Lazy%601?displayProperty=nameWithType> упрощает выполнение отложенной инициализации и создание экземпляров объектов. Если объекты не требуются, то при отложенной инициализации их можно не создавать или отложить их инициализацию до первого обращения к ним. Дополнительные сведения см. в статье [Отложенная инициализация](lazy-initialization.md).  

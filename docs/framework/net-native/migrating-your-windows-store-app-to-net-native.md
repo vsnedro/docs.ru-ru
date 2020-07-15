@@ -2,12 +2,12 @@
 title: Миграция приложения для магазина Windows в машинный код .NET
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: 987669fc51eeaf7e3bdef3e91a2f1ce23164a055
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5e5c655d0e8d6f1730f27d35525692e110b3c80c
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "81389706"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309200"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Перенос приложения из Магазина Windows в .NET Native
 
@@ -58,7 +58,7 @@ ms.locfileid: "81389706"
 > [!NOTE]
 > При переносе приложения в .NET Native необходимо тщательно протестировать все динамические пути к коду.
 
-Конфигурация по умолчанию для .NET Native достаточна для большинства разработчиков, но некоторым разработчикам может потребоваться точная настройка конфигурации с помощью файла директив среды выполнения (. Rd. XML). Кроме того, в некоторых случаях компилятору .NET Native не удается определить, какие метаданные должны быть доступны для отражения, и полагаются на указания, особенно в следующих случаях:
+Конфигурация по умолчанию для .NET Native достаточна для большинства разработчиков, но некоторым разработчикам может потребоваться точная настройка конфигурации с помощью файла директив среды выполнения (.rd.xml). Кроме того, в некоторых случаях компилятору .NET Native не удается определить, какие метаданные должны быть доступны для отражения, и полагаются на указания, особенно в следующих случаях:
 
 - Некоторые конструкции, такие как <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> и <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> не удается определить статически.
 
@@ -79,7 +79,7 @@ ms.locfileid: "81389706"
 
 - Отражение закрытых типов и членов в библиотеке классов платформы .NET Framework не поддерживается. Тем не менее, можно выполнить отражение на собственных закрытых типах и членах, а также типах и членах библиотек сторонних поставщиков.
 
-- Свойство <xref:System.Reflection.ParameterInfo.HasDefaultValue%2A?displayProperty=nameWithType> корректно возвращает `false` для объекта <xref:System.Reflection.ParameterInfo> , который представляет возвращаемое значение. В приложениях .NET для магазина Windows, будет возвращено значение `true`. Промежуточный язык (IL) не поддерживает это непосредственно, и интерпретация выполняется языком.
+- Свойство <xref:System.Reflection.ParameterInfo.HasDefaultValue%2A?displayProperty=nameWithType> корректно возвращает `false` для объекта <xref:System.Reflection.ParameterInfo> , который представляет возвращаемое значение. В приложениях .NET для магазина Windows, будет возвращено значение `true`. Промежуточный язык (IL) не поддерживает это напрямую, и интерпретация остается в языке.
 
 - Открытые члены на структурах <xref:System.RuntimeFieldHandle> и <xref:System.RuntimeMethodHandle> не поддерживаются. Эти типы поддерживаются только для LINQ, деревьев выражений и инициализации статического массива.
 
@@ -278,7 +278,7 @@ ms.locfileid: "81389706"
 
 - Делегаты
 
-- Строки (Юникод, Ansi и HSTRING)
+- Строки (Юникод, ANSI и HSTRING)
 
 - Структуры (`byref` и `byval`)
 
@@ -661,7 +661,7 @@ Visual Basic в настоящее время не поддерживается 
 
 Включение .NET Native в библиотеке модульных тестов для проекта приложений Магазина Windows не поддерживается и приводит к сбою сборки проекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Начало работы](getting-started-with-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

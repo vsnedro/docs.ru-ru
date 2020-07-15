@@ -1,17 +1,18 @@
 ---
 title: События трассировки событий Windows в среде CLR
+description: 'См. статьи о событиях трассировки событий среды CLR для Windows (ETW). Существует два поставщика событий: поставщик среды выполнения и поставщик очистки.'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - CLR ETW events
 - ETW, common language runtime
 - ETW, CLR events
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
-ms.openlocfilehash: e879dcf385acbc522c0a3573cfa374550ea23333
-ms.sourcegitcommit: f38e527623883b92010cf4760246203073e12898
+ms.openlocfilehash: 22a2f027462d67d5a933972a7420c5f0e38353e5
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77504123"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309837"
 ---
 # <a name="clr-etw-events"></a>События трассировки событий Windows в среде CLR
 В этом разделе описываются события трассировки событий Windows (ETW). С каждым событием связаны ключевое слово и уровень, которые описываются в разделе [Ключевые слова и уровни среды CLR (трассировка событий Windows)](clr-etw-keywords-and-levels.md). В среде CLR предусмотрены два поставщика событий:  
@@ -29,7 +30,7 @@ ms.locfileid: "77504123"
  [Событие ExceptionThrown_V1](exception-thrown-v1-etw-event.md)  
  Захватывает информацию о сгенерированных исключениях.  
   
- [События конфликтов](contention-etw-events.md)  
+ [События состязания](contention-etw-events.md)  
  Захватывают информацию о конкуренции за блокировки мониторинга или неуправляемые блокировки, используемые исполняющей средой.  
   
  [События пула потоков](thread-pool-etw-events.md)  
@@ -59,10 +60,10 @@ ms.locfileid: "77504123"
  [События стека](stack-etw-event.md)  
  Захватывают информацию, которая используется совместно с другими событиями для генерации трассировок стека после возникновения какого-либо события.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Усовершенствованные отладка и настройка производительности с помощью приложения ETW](https://docs.microsoft.com/archive/msdn-magazine/2007/april/event-tracing-improve-debugging-and-performance-tuning-with-etw)
 - [Контроль ведения журнала .NET Framework](controlling-logging.md)
-- [Поставщики трассировки событий Windows в среде CLR](clr-etw-providers.md)
+- [Поставщики ETW среды CLR](clr-etw-providers.md)
 - [Ключевые слова и уровни среды CLR (трассировка событий Windows)](clr-etw-keywords-and-levels.md)
 - [События в среде CLR (трассировка событий Windows)](etw-events-in-the-common-language-runtime.md)

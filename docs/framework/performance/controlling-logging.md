@@ -1,15 +1,16 @@
 ---
 title: Контроль ведения журнала .NET Framework
+description: Используйте средство трассировки событий для Windows (ETW) для управления ведением журнала .NET и записи событий среды CLR. Используйте такие средства, как logman, Tracerpt и XPerf.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - CLR ETW events, logging
 ms.assetid: ce13088e-3095-4f0e-9f6b-fad30bbd3d41
-ms.openlocfilehash: e7d7d6e60b2f582a579f5811225f4027c37c7876
-ms.sourcegitcommit: f38e527623883b92010cf4760246203073e12898
+ms.openlocfilehash: 45d9244eb11b914fd203f24057e1b65c6bef18c2
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77504102"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309590"
 ---
 # <a name="controlling-net-framework-logging"></a>Контроль ведения журнала .NET Framework
 
@@ -27,7 +28,7 @@ Provider                                 GUID
 .NET Common Language Runtime    {E13C0D23-CCBC-4E12-931B-D9CC2EEE27E4}.
 ```
 
-Если поставщик среды CLR не указан, его можно установить в Windows Vista и операционных системах более поздних версий с помощью программы командной строки Windows [Wevtutil](/windows-server/administration/windows-commands/wevtutil). Откройте окно командной строки с правами администратора. Измените каталог подсказки на папку .NET Framework 4 (%WINDIR%\Microsoft.NET\Framework [64] \v4.\<.NET version > \). Эта папка содержит файл CLR-ETW.man. Чтобы установить поставщик среды CLR, в командной строке введите следующую команду:
+Если поставщик среды CLR не указан, его можно установить в Windows Vista и операционных системах более поздних версий с помощью программы командной строки Windows [Wevtutil](/windows-server/administration/windows-commands/wevtutil). Откройте окно командной строки с правами администратора. Измените каталог подсказки на папку .NET Framework 4 (%WINDIR%\Microsoft.NET\Framework [64] \v4. \<.NET version> \ ). Эта папка содержит файл CLR-ETW.man. Чтобы установить поставщик среды CLR, в командной строке введите следующую команду:
 
 `wevtutil im CLR-ETW.man`
 
@@ -49,7 +50,7 @@ Provider                                 GUID
 
      `logman start clrevents -p {e13c0d23-ccbc-4e12-931b-d9cc2eee27e4} 0x1CCBD 0x5 -ets -ct perf`
 
-     где:
+     Здесь:
 
     - Параметр `-p` задает GUID поставщика.
 
@@ -109,7 +110,7 @@ Provider                                 GUID
 
      Эта команда XPerf помещает события в дамп в виде файла с разделителями-запятыми (CSV-файл), который впоследствии можно просмотреть. Поскольку у разных событий поля разные, этот CSV-файл содержит несколько строк заголовков, расположенных перед данными. Первое поле каждой строки является типом события с указанием заголовка, который должен использоваться для определения остальных полей.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Набор средств производительности Windows](/windows-hardware/test/wpt/)
+- [Набор средств для оценки производительности Windows](/windows-hardware/test/wpt/)
 - [События в среде CLR (трассировка событий Windows)](etw-events-in-the-common-language-runtime.md)

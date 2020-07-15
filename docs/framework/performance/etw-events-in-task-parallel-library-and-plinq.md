@@ -1,19 +1,20 @@
 ---
 title: События трассировки событий Windows в библиотеке параллельных задач и PLINQ
+description: Ознакомьтесь с событиями ETW в библиотеке параллельных задач и PLINQ. Используйте эти события для профилирования и устранения неполадок в приложениях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - tasks, ETW events
 ms.assetid: 87a9cff5-d86f-4e44-a06e-d12764d0dce2
-ms.openlocfilehash: 61429babf7378b9d271ffd60a6228ae4bfe7a5e5
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: a1a068b7ba94d5e5be4fd90d6adb48b0d25a8b9e
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81644251"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309642"
 ---
 # <a name="etw-events-in-task-parallel-library-and-plinq"></a>События трассировки событий Windows в библиотеке параллельных задач и PLINQ
 
-Библиотека параллельных задач и PLINQ создают события трассировки событий Windows (ETW), которые можно использовать для профилирования и устранения неполадок в приложениях с помощью таких средств, как Windows Performance Analyzer. Однако в большинстве сценариев лучший способ профилировать параллельный код приложения — использовать в [изобразительный параллелизм](/visualstudio/profiling/concurrency-visualizer) в Visual Studio.
+Библиотека параллельных задач и PLINQ создают события трассировки событий Windows (ETW), которые можно использовать для профилирования и устранения неполадок в приложениях с помощью таких средств, как Windows Performance Analyzer. Однако в большинстве случаев лучшим способом профилирования параллельного кода приложения является использование [визуализатора параллелизма](/visualstudio/profiling/concurrency-visualizer) в Visual Studio.
 
 ## <a name="task-parallel-library-etw-events"></a>События трассировки событий Windows в библиотеке параллельных задач (TPL)
 
