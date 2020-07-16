@@ -3,12 +3,12 @@ title: Набор данных и руководство по безопасно
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: c6b32afeadccc3fd22d6611d282840233280440f
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.openlocfilehash: f78b52ede4ec76599d761e5188f39c3e9dae2a4f
+ms.sourcegitcommit: 98548968e89739a37625e72ddbd535fe1e11121e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86382471"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86405296"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Набор данных и руководство по безопасности DataTable
 
@@ -195,7 +195,8 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 
 Дополнительные сведения о `TraceSource` и см `TraceListener` . в документе [практические руководства. использование TraceSource и фильтров с прослушивателями трассировки](/dotnet/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners).
 
-**Примечание**. Запуск приложения в режиме аудита недоступен в .NET Core или .NET 5,0 и более поздних версиях.
+> [!NOTE]
+> Запуск приложения в режиме аудита недоступен в .NET Core или .NET 5,0 и более поздних версиях.
 
 <a name="ratr"></a>
 
@@ -207,7 +208,7 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 * Доступные параметры зависят от платформы, для которой предназначено приложение.
 
 > [!WARNING]
-> Удаление всех ограничений типа может вызвать брешь в системе безопасности внутри приложения. При использовании этого механизма убедитесь, что приложение не **использует** `DataSet` или `DataTable` для чтения недоверенных входных данных. Дополнительные сведения см. в статье [CVE-2020-1147](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-1147) и следующем разделе [безопасность с учетом ненадежных входов](#swr).
+> Удаление всех ограничений типа может вызвать брешь в системе безопасности внутри приложения. При использовании этого механизма убедитесь, что приложение не **использует** `DataSet` или `DataTable` для чтения недоверенных входных данных. Дополнительные сведения см. в статье [CVE-2020-1147](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1147) и следующем разделе [безопасность с учетом ненадежных входов](#swr).
 
 #### <a name="through-appcontext-configuration-net-framework-46---48-net-core-21-and-later-net-50-and-later"></a>Через AppContext Configuration (.NET Framework 4,6-4,8, .NET Core 2,1 и более поздних версий, .NET 5,0 и более поздние версии)
 
@@ -463,7 +464,8 @@ public class MyClass
 
 Десериализация `DataSet` или `DataTable` таким образом из ненадежного BLOB-объекта JSON небезопасно. Этот шаблон уязвим для атак типа "отказ в обслуживании". Такая атака может привести к сбою приложения или отрисовывать его, не реагируя на запросы.
 
-**Примечание**. Корпорация Майкрософт не гарантирует или не поддерживает реализацию сторонних библиотек, таких как _Newtonsoft.Js_. Эти сведения предоставляются для полноты и являются точными на момент написания этой статьи.
+> [!NOTE]
+> Корпорация Майкрософт не гарантирует или не поддерживает реализацию сторонних библиотек, таких как _Newtonsoft.Js_. Эти сведения предоставляются для полноты и являются точными на момент написания этой статьи.
 
 ## <a name="deserialize-a-dataset-or-datatable-via-binaryformatter"></a>Десериализация набора данных или DataTable через BinaryFormatter
 
