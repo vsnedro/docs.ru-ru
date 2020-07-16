@@ -4,12 +4,12 @@ ms.date: 03/19/2020
 helpviewer_keywords:
 - parameters [C#], out
 - out parameters [C#]
-ms.openlocfilehash: 57308992268e1285cfeb82b28e2abf213e7a831b
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.openlocfilehash: 30946c85d2b64ead3f42e03da61108fa5b367779
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805869"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174813"
 ---
 # <a name="out-parameter-modifier-c-reference"></a>Модификатор параметров out (справочник по C#)
 
@@ -56,7 +56,7 @@ class CS0663_Example
 
 ## <a name="declaring-out-parameters"></a>Объявление параметров `out`
 
-Объявление метода с аргументами `out` — стандартное решение для возвращения нескольких значений. Начиная с версии C# 7.0, вы можете использовать [кортежи](../../tuples.md) для таких сценариев. В следующем примере используется `out` для возвращения трех переменных с помощью вызова одного метода. Третьему аргументу присвоено значение NULL. Это позволяет методам возвращать значения по желанию.  
+Объявление метода с аргументами `out` — стандартное решение для возвращения нескольких значений. Начиная с версии C# 7.0, вы можете использовать [кортежи значений](../builtin-types/value-tuples.md) для таких сценариев. В следующем примере используется `out` для возвращения трех переменных с помощью вызова одного метода. Третьему аргументу присвоено значение NULL. Это позволяет методам возвращать значения по желанию.  
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 

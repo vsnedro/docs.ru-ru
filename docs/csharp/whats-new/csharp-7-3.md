@@ -2,12 +2,12 @@
 title: Что нового в C# 7.3
 description: Обзор новых возможностей в C# 7.3
 ms.date: 05/16/2018
-ms.openlocfilehash: ba4cea302d91b395e88940d087fcaed306920840
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cd8f554516fb5078d9d2ed1eec787f36e8f4c7a7
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74204559"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174761"
 ---
 # <a name="whats-new-in-c-73"></a>Что нового в C# 7.3
 
@@ -39,7 +39,7 @@ ms.locfileid: "74204559"
 1. Установите глобальное средство [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup).
 1. Клонируйте репозиторий [dotnet/try-samples](https://github.com/dotnet/try-samples).
 1. Для репозитория *try-samples* установите в качестве текущего каталога подкаталог *csharp7*.
-1. Выполните `dotnet try`.
+1. Запустите `dotnet try`.
 
 ## <a name="enabling-more-efficient-safe-code"></a>Повышение эффективности безопасного кода
 
@@ -141,7 +141,7 @@ Span<int> arr = stackalloc [] {1, 2, 3};
 
 ### <a name="tuples-support--and-"></a>Поддержка `==` и `!=` для кортежей
 
-Типы кортежей в C# теперь поддерживают `==` и `!=`. Дополнительные сведения см. в разделе о [равенстве](../tuples.md#equality-and-tuples) в статье о [кортежах](../tuples.md).
+Типы кортежей в C# теперь поддерживают `==` и `!=`. Дополнительные сведения см. в разделе [Равенство кортежей](../language-reference/builtin-types/value-tuples.md#tuple-equality) статьи [Типы кортежей](../language-reference/builtin-types/value-tuples.md).
 
 ### <a name="attach-attributes-to-the-backing-fields-for-auto-implemented-properties"></a>Подключение атрибутов к резервным полям для автоматически реализуемых свойств
 

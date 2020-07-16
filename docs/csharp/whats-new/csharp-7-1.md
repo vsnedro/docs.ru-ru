@@ -2,12 +2,12 @@
 title: Новые возможности C# 7.1
 description: Обзор новых возможностей в C# 7.1.
 ms.date: 04/09/2019
-ms.openlocfilehash: 5d2d6f51b6422f5b4db5c6bd275b5ffce1f695f8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fe6e49eb01e24a27bc7970900c05150378ab194a
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398355"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174774"
 ---
 # <a name="whats-new-in-c-71"></a>Новые возможности C# 7.1
 
@@ -28,14 +28,14 @@ C# 7.1 — это первая доработанная версия для C#. 
 
 Наконец, у компилятора есть два параметра `-refout` и `-refonly`, которые управляют [созданием базовой сборки](#reference-assembly-generation).
 
-Чтобы использовать новые возможности доработанной версии, [настройте версию языка компилятора](../language-reference/configure-language-version.md) и выберите версию.
+Чтобы использовать новые возможности доработанного выпуска, [настройте версию языка компилятора](../language-reference/configure-language-version.md), выбрав необходимую.
 
 В оставшейся части этой статьи представлены общие сведения об этих функциях. Каждая функция сопровождается обоснованием. Вы изучите синтаксис Эти функции можно изучить в своей среде с помощью глобального средства `dotnet try`:
 
 1. Установите глобальное средство [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup).
 1. Клонируйте репозиторий [dotnet/try-samples](https://github.com/dotnet/try-samples).
 1. Для репозитория *try-samples* установите в качестве текущего каталога подкаталог *csharp7*.
-1. Выполните `dotnet try`.
+1. Запустите `dotnet try`.
 
 ## <a name="async-main"></a>Async main
 
@@ -106,7 +106,7 @@ string label = "Colors used in the map";
 var pair = (count, label); // element names are "count" and "label"
 ```
 
-См. подробнее об этой функции в описании [кортежей](../tuples.md).
+Дополнительные сведения об этой функции см. в статье [Типы кортежей](../language-reference/builtin-types/value-tuples.md).
 
 ## <a name="pattern-matching-on-generic-type-parameters"></a>Сопоставление шаблонов в параметрах универсального типа
 

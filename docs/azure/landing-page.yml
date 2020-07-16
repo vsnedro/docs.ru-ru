@@ -1,0 +1,223 @@
+### YamlMime:Landing
+title: Azure для разработчиков .NET
+summary: Начните разрабатывать приложения для облачной среды, используя эти руководства и средства для разработчиков .NET. .NET ❤ Azure
+metadata:
+  title: Azure для разработчиков .NET
+  description: Документация, примеры и ссылки для разработки с использованием .NET и Azure.
+  ms.date: 06/12/2020
+  ms.topic: landing-page
+  ms.collection: collection
+  ms.technology: azure
+  ms.service: multiple
+  ms.prod: azure-dotnet
+  ms.openlocfilehash: a7b9b909e500979750d57cc6047153123cd192e5
+  ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 07/09/2020
+  ms.locfileid: "86174861"
+landingContent:
+- title: Начало работы с .NET в Azure
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Введение в Azure и .NET
+      url: intro.md
+  - linkListType: get-started
+    links:
+    - text: Средства для разработчиков .NET
+      url: tools.md
+    - text: Проверка подлинности приложения
+      url: authentication.md
+    - text: Ведение журнала
+      url: logging.md
+    - text: Пример для пакета SDK
+      url: /samples/dotnet/samples/azure-identity-resource-management-storage/
+  - linkListType: learn
+    links:
+    - text: Основные понятия Azure
+      url: /learn/paths/azure-fundamentals/
+  - linkListType: download
+    links:
+    - text: Пример кода
+      url: /samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
+  - linkListType: reference
+    links:
+    - text: Справочник по библиотекам Azure для API .NET
+      url: /dotnet/api/overview/azure/?view=azure-dotnet
+- title: Создание веб-приложений
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Служба приложений
+      url: /azure/app-service/overview
+    - text: Проверка
+      url: /azure/azure-functions/functions-overview
+  - linkListType: quickstart
+    links:
+    - text: Развертывание веб-приложения ASP.NET
+      url: /azure/app-service/app-service-web-get-started-dotnet
+    - text: Создание бессерверной функции
+      url: /azure/azure-functions/functions-create-your-first-function-visual-studio
+  - linkListType: learn
+    links:
+    - text: Размещение веб-приложения с помощью Службы приложений Azure
+      url: /learn/modules/host-a-web-app-with-azure-app-service/
+    - text: Разработка, тестирование и развертывание Функции Azure с помощью Visual Studio
+      url: /learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
+    - text: Публикация API-интерфейсов и управление ими с помощью службы управления API Azure
+      url: /learn/modules/publish-manage-apis-with-azure-api-management/
+  - linkListType: tutorial
+    links:
+    - text: Веб-приложение ASP.NET со службой приложений Azure и базой данных SQL Azure
+      url: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
+    - text: Управляемое удостоверение для ASP.NET и Базы данных SQL Azure
+      url: /azure/app-service/app-service-web-tutorial-connect-msi
+    - text: Веб-API с поддержкой CORS в Службе приложений Azure
+      url: /azure/app-service/app-service-web-tutorial-rest-api
+- title: Создание полностью облачных приложений
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Запуск и отладка микрослужбы в Kubernetes
+      url: /azure/dev-spaces/quickstart-netcore-visualstudio
+  - linkListType: learn
+    links:
+    - text: Создание и развертывание ориентированной на облако микрослужбы ASP.NET Core
+      url: /learn/modules/microservices-aspnet-core/
+  - linkListType: how-to-guide
+    links:
+    - text: Развертывание приложения .NET Core в реестре контейнеров Azure
+      url: /visualstudio/containers/hosting-web-apps-in-docker
+  - linkListType: tutorial
+    links:
+    - text: Использование средств Visual Studio для контейнеров с приложением ASP.NET Core
+      url: /visualstudio/containers/container-tools
+    - text: Развертывание и отладка нескольких контейнеров в AKS
+      url: /azure/dev-spaces/multi-service-netcore-visualstudio
+    - text: Динамическая конфигурация и флаги компонентов с использованием конфигурации приложения Azure
+      url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
+- title: Проверка подлинности и безопасность
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Платформа удостоверений Майкрософт (Azure AD)
+      url: /azure/active-directory/develop/
+  - linkListType: learn
+    links:
+    - text: Защита приложения с помощью OpenID Connect и Azure AD
+      url: /learn/modules/secure-app-with-oidc-and-azure-ad/
+    - text: Защита пользовательских API с помощью Microsoft Identity
+      url: /learn/modules/identity-secure-custom-api/
+    - text: Защита веб-приложения ASP.NET Core с помощью ASP.NET Identity Framework
+      url: /learn/modules/secure-aspnet-core-identity/
+  - linkListType: tutorial
+    links:
+    - text: Реализация входа в веб-приложение ASP.NET с использованием учетной записи Майкрософт.
+      url: /azure/active-directory/develop/tutorial-v2-asp-webapp
+    - text: Использование Azure Key Vault с ASP.NET Core
+      url: /azure/key-vault/tutorial-net-create-vault-azure-web-app
+    - text: Интеграция Azure AD B2C с веб-API
+      url: /azure/active-directory-b2c/tutorial-single-page-app-webapi
+  - linkListType: reference
+    links:
+    - text: Клиентская библиотека Azure Identity для .NET
+      url: /dotnet/api/overview/azure/identity-readme?view=azure-dotnet
+- title: Работа с хранилищем и данными
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Выбор подходящего хранилища данных
+      url: /azure/architecture/guide/technology-choices/data-store-overview
+  - linkListType: quickstart
+    links:
+    - text: Использование .NET для отправки запросов к Базе данных SQL Azure или Управляемому экземпляру SQL Azure
+      url: /azure/azure-sql/database/connect-query-dotnet-core
+    - text: Выполнение запросов к Azure PostgreSQL с помощью .NET
+      url: /azure/postgresql/connect-csharp
+  - linkListType: learn
+    links:
+    - text: Разработка и настройка приложения ASP.NET, обращающегося к базе данных SQL Azure
+      url: /learn/modules/develop-app-that-queries-azure-sql/
+    - text: Создание приложения .NET Core для Azure Cosmos DB в Visual Studio Code
+      url: /learn/modules/build-cosmos-db-app-with-vscode/
+    - text: Хранение данных приложения в хранилище больших двоичных объектов Azure
+      url: /learn/modules/store-app-data-with-azure-blob-storage/
+    - text: Хранение и извлечение реляционных данных с помощью Entity Framework Core
+      url: /learn/modules/persist-data-ef-core/
+  - linkListType: tutorial
+    links:
+    - text: Подключение и отправка запросов к Базе данных Azure для PostgreSQL
+      url: /azure/postgresql/connect-csharp
+- title: Обмен сообщениями в Azure
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Хранение сообщений с использованием очередей Azure
+      url: /azure/storage/queues/storage-queues-introduction
+    - text: Обмен сообщениями между приложениями с помощью Служебной шины Azure
+      url: /azure/service-bus-messaging
+    - text: Потоковая передача больших данных с помощью Центров событий
+      url: /azure/event-hubs/event-hubs-about
+    - text: Создание приложений на основе событий с помощью Сетки событий
+      url: /azure/event-grid/overview
+  - linkListType: quickstart
+    links:
+    - text: Использование Хранилища очередей Azure
+      url: /azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet
+    - text: Использование очередей Служебной шины Azure
+      url: /azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
+    - text: Прием данных в режиме реального времени через Центры событий Azure
+      url: /azure/event-hubs/event-hubs-dotnet-standard-getstarted-send
+    - text: Перенаправление пользовательских событий с помощью службы "Сетка событий"
+      url: /azure/event-grid/custom-event-quickstart
+- title: Диагностика и мониторинг
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Azure Monitor
+      url: /azure/azure-monitor/overview
+  - linkListType: learn
+    links:
+    - text: Запись и просмотр времени загрузки страниц в веб-приложении Azure
+      url: /learn/modules/capture-page-load-times-application-insights/
+  - linkListType: how-to-guide
+    links:
+    - text: Устранение неполадок ASP.NET Core в Службе приложений Azure и IIS
+      url: /aspnet/core/test/troubleshoot-azure-iis
+    - text: Application Insights и .NET Core ILogger
+      url: /azure/azure-monitor/app/ilogger
+    - text: Application Insights для приложений Worker Service
+      url: /azure/azure-monitor/app/worker-service
+    - text: Устранение неполадок приложения в Cлужбе приложений Azure с помощью Visual Studio
+      url: /azure/app-service/troubleshoot-dotnet-visual-studio
+- title: Миграция
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Выбор размещения в Azure
+      url: ./migration/choose.md
+  - linkListType: how-to-guide
+    links:
+    - text: Перенос веб-приложения или службы .NET в Службу приложений Azure
+      url: ./migration/app-service.md
+    - text: Перенос приложения ASP.NET на виртуальную машину Azure
+      url: ./migration/vm.md
+    - text: Перенос базы данных SQL Server в Azure
+      url: ./migration/sql.md
+- title: Руководства по архитектуре .NET
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Разработка современных приложений в Azure
+      url: /learn/paths/architect-modern-apps/
+  - linkListType: architecture
+    links:
+    - text: 'Микрослужбы .NET: Архитектура контейнерных приложений .NET'
+      url: /dotnet/architecture/microservices/
+    - text: Разработка современных веб-приложений с помощью ASP.NET Core и Azure
+      url: /dotnet/architecture/modern-web-apps-azure/
+    - text: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
+      url: /dotnet/architecture/containerized-lifecycle/
+    - text: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows
+      url: /dotnet/architecture/modernize-with-azure-containers/

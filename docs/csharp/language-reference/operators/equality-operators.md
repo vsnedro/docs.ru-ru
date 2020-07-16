@@ -15,12 +15,12 @@ helpviewer_keywords:
 - inequality operator [C#]
 - not equals operator [C#]
 - '!= operator [C#]'
-ms.openlocfilehash: 7dd3e544dc03fb94577892b42aecd1a15a6621ac
-ms.sourcegitcommit: 267d092663aba36b6b2ea853034470aea493bfae
+ms.openlocfilehash: 011ef8b570a0bbbc38ec71df4286c3b08c3109da
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80110923"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174787"
 ---
 # <a name="equality-operators-c-reference"></a>Операторы равенства (справочник по C#)
 
@@ -43,7 +43,7 @@ ms.locfileid: "80110923"
 
 По умолчанию пользовательские типы [struct](../builtin-types/struct.md) не поддерживают оператор `==`. Чтобы поддерживать оператор `==`, пользовательская структура должна [перегружать](operator-overloading.md) его.
 
-Начиная с версии C# 7.3 операторы `==` и `!=` поддерживаются [кортежами](../../tuples.md) C#. Дополнительные сведения см. в разделе [Равенство и кортежи](../../tuples.md#equality-and-tuples) статьи [Типы кортежей в C#](../../tuples.md).
+Начиная с версии C# 7.3 операторы `==` и `!=` поддерживаются [кортежами](../builtin-types/value-tuples.md) C#. Дополнительные сведения см. в разделе [Равенство кортежей](../builtin-types/value-tuples.md#tuple-equality) статьи [Типы кортежей](../builtin-types/value-tuples.md).
 
 ### <a name="reference-types-equality"></a>Равенство ссылочных типов
 

@@ -1,13 +1,13 @@
 ---
 title: Публикация консольного приложения .NET Core с помощью Visual Studio Code
 description: При публикации создается набор файлов, которые необходимы для запуска приложения .NET Core.
-ms.date: 06/08/2020
-ms.openlocfilehash: 442d08c9b016407327ba30db0aae78b5cf6b6fe3
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.date: 07/04/2020
+ms.openlocfilehash: 8fd9975e8a88704b9dea45b40127c8dc03f7d09f
+ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84701454"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86051887"
 ---
 # <a name="tutorial-publish-a-net-core-console-application-using-visual-studio-code"></a>Учебник. Публикация консольного приложения .NET Core с помощью Visual Studio Code
 
@@ -112,4 +112,4 @@ ms.locfileid: "84701454"
 В этом руководстве вы опубликовали консольное приложение. Далее вы создадите библиотеку классов.
 
 > [!div class="nextstepaction"]
-> [Создание библиотеки .NET Standard в Visual Studio для Mac](library-with-visual-studio-mac.md)
+> [Создание библиотеки .NET Standard в Visual Studio Code](library-with-visual-studio-code.md)

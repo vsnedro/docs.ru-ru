@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet tool update
 description: Команда dotnet tool update обновляет указанное средство .NET Core на вашем компьютере.
-ms.date: 02/14/2020
-ms.openlocfilehash: 6176846dbe8e2a91d9c6959dede15718d8f983b2
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.date: 07/08/2020
+ms.openlocfilehash: 7c4bde44ac9964828074baeb1a697ba64ed17887
+ms.sourcegitcommit: 67cf756b033c6173a1bbd1cbd5aef1fccac99e34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463303"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86226625"
 ---
 # <a name="dotnet-tool-update"></a>dotnet tool update
 
@@ -20,17 +20,24 @@ ms.locfileid: "81463303"
 ## <a name="synopsis"></a>Краткий обзор
 
 ```dotnetcli
-dotnet tool update <PACKAGE_NAME> -g|--global
+dotnet tool update <PACKAGE_ID> -g|--global
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
-dotnet tool update <PACKAGE_NAME> --tool-path <PATH>
+dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
-dotnet tool update <PACKAGE_NAME>
+dotnet tool update <PACKAGE_ID> --local
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--tool-manifest <PATH>]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update -h|--help
 ```
@@ -41,13 +48,13 @@ dotnet tool update -h|--help
 
 * Чтобы обновить глобальное средство, установленное в расположении по умолчанию, используйте параметр `--global`
 * Чтобы обновить глобальное средство, установленное в пользовательском расположении, используйте параметр `--tool-path`.
-* Чтобы обновить локальный инструмент, пропустите параметры `--global` и `--tool-path`.
+* Чтобы обновить локальное средство, используйте параметр `--local`.
 
 **Локальные средства доступны в пакете SDK для .NET Core, начиная с версии 3.0.**
 
 ## <a name="arguments"></a>Аргументы
 
-- **`PACKAGE_NAME`**
+- **`PACKAGE_ID`**
 
   Имя или идентификатор пакета NuGet, который содержит глобальное средство .NET Core, которое вы хотите обновить. Найти имя пакета можно с помощью команды [dotnet tool list](dotnet-tool-list.md).
 
@@ -61,9 +68,41 @@ dotnet tool update -h|--help
 
   Файл конфигурации NuGet (*nuget.config*), который будет использоваться.
 
+- **`--disable-parallel`**
+
+  Блокирует параллельное восстановление множества проектов.
+
 - **`--framework <FRAMEWORK>`**
 
   Указывает [требуемую версию .NET Framework](../../standard/frameworks.md) для обновления средства.
+
+- **`--ignore-failed-sources`**
+
+  Обрабатывать сбои источников пакетов как предупреждения.
+
+- **`--interactive`**
+
+  Позволяет остановить команду и дождаться, пока пользователь введет данные или выполнит действие (например, завершит проверку подлинности).
+
+- **`--local`**
+
+  Обновляет средство и манифест локального средства. Не может использоваться вместе с параметром `--global`.
+
+- **`--no-cache`**
+
+  Запрещает кэширование пакетов и HTTP-запросов.
+
+- **`--tool-manifest <PATH>`**
+
+  Путь к файлу манифеста.
+
+- **`--tool-path <PATH>`**
+
+  Указывает место установки глобального средства. Путь может быть абсолютным или относительным. Не может использоваться вместе с параметром `--global`. Пропуск `--global` и `--tool-path` означает, что обновляемое средство является локальным.
+
+- **`--version <VERSION>`**
+
+  Диапазон версий пакета средства для обновления. Нельзя использовать для перехода на более ранние версии, необходимо сначала `uninstall` новые версии.
 
 - **`-g|--global`**
 
@@ -72,10 +111,6 @@ dotnet tool update -h|--help
 - **`-h|--help`**
 
   Выводит краткую справку по команде.
-
-- **`--tool-path <PATH>`**
-
-  Указывает место установки глобального средства. Путь может быть абсолютным или относительным. Не может использоваться вместе с параметром `--global`. Пропуск `--global` и `--tool-path` означает, что обновляемое средство является локальным.
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -99,8 +134,17 @@ dotnet tool update -h|--help
 
   Обновляет локальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/), установленное для текущего каталога.
 
+- **`dotnet tool update -g dotnetsay --version 2.0.*`**
+
+  Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/) до последней версии исправления с основным номером версии `2` и дополнительным номером версии `0`.
+
+- **`dotnet tool update -g dotnetsay --version (2.0.*,2.1.4)`**
+
+  Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/) до самой низкой версии в указанном диапазоне `(> 2.0.0 && < 2.1.4)`. Будет установлена версия `2.1.0`. Дополнительные сведения о семантических диапазонах версий см. в разделе [Диапазоны версий пакетов NuGet](/nuget/concepts/package-versioning#version-ranges).
+
 ## <a name="see-also"></a>См. также
 
 - [Средства .NET Core](global-tools.md)
+- [Семантическое управление версиями](https://semver.org)
 - [Учебник. Установка и использование глобального средства .NET Core с помощью интерфейса командной строки .NET Core](global-tools-how-to-use.md)
 - [Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core](local-tools-how-to-use.md)

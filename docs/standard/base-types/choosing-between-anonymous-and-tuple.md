@@ -1,13 +1,16 @@
 ---
 title: Выбор между анонимными типами и кортежами
 description: Сведения о том, как сделать выбор между анонимными типами и кортежами.
+author: IEvangelist
+ms.author: dapine
 ms.date: 07/01/2020
 ms.technology: dotnet-standard
-ms.openlocfilehash: 24ab770d709b9f3968f4c7fe4b01eb0729dbd751
-ms.sourcegitcommit: b6a1869f97a37f11a68c90afde1a520a6887dcbc
+ms.openlocfilehash: 9c186133a639faf187c89d872856d860a20f5a2d
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853989"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174222"
 ---
 # <a name="choosing-between-anonymous-and-tuple-types"></a>Выбор между анонимными типами и кортежами
 
@@ -87,12 +90,7 @@ foreach (var (formatted, ticks) in
 }
 ```
 
-Поддержка кортежей на уровне языка в C# реализуется с использованием типа <xref:System.ValueTuple> и следующей семантики:
-
-- [Назначение кортежей](../../csharp/tuples.md#assignment-and-tuples)
-- [Деконструирование кортежей](../../csharp/deconstruct.md) (не ограничивается кортежами)
-- [Проверки равенства кортежей](../../csharp/tuples.md#equality-and-tuples)
-- [Инициализаторы проекций кортежа](../../csharp/tuples.md#tuple-projection-initializers)
+Дополнительные сведения о кортежах см. в статьях [Типы кортежей (справочник по C#)](../../csharp/language-reference/builtin-types/value-tuples.md) или [Кортежи (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md).
 
 И все же приведенные выше примеры эквивалентны с функциональной точки зрения и незначительно различаются в контексте применимости и базовой реализации.
 
@@ -102,7 +100,7 @@ foreach (var (formatted, ticks) in
 
 ### <a name="key-differences"></a>Основные отличия
 
-| name                     | Модификатор доступа | Type     | Имя пользовательского свойства | Поддержка деконструирования | Поддержка деревьев выражений |
+| name                     | Модификатор доступа | Type     | Имя пользовательского элемента | Поддержка деконструирования | Поддержка деревьев выражений |
 |--------------------------|-----------------|----------|----------------------|------------------------|-------------------------|
 | Анонимные типы          | `internal`      | `class`  | ✔️                   | ❌                     | ✔️                     |
 | <xref:System.Tuple>      | `public`        | `class`  | ❌                   | ❌                     | ✔️                     |
@@ -124,5 +122,6 @@ foreach (var (formatted, ticks) in
 
 - [Анонимные типы](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 - [Деревья выражений](../../csharp/expression-trees.md)
-- [Типы кортежей](../../csharp/tuples.md)
+- [Типы кортежей (справочник по C#)](../../csharp/language-reference/builtin-types/value-tuples.md)
+- [Кортежи (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md)
 - [Правила разработки типов](../design-guidelines/type.md)

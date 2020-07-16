@@ -1,13 +1,13 @@
 ---
 title: Начало работы с Azure и .NET
 description: Необходимые основные сведения об Azure и .NET.
-ms.date: 03/15/2020
-ms.openlocfilehash: d57d1d50852c9d7fff099554bd64c48c15129bb4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.date: 06/20/2020
+ms.openlocfilehash: c64de800f47035b22cc62b6d08cb7b71246984a7
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446396"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174326"
 ---
 # <a name="introduction-to-azure-and-net"></a>Введение в Azure и .NET
 
@@ -17,7 +17,7 @@ ms.locfileid: "84446396"
 
 **Учетная запись Azure.** Это учетные данные, используемые для входа в службы Azure, такие как [портал Azure](https://portal.azure.com) или [Cloud Shell](https://shell.azure.com). Если у вас нет учетной записи Azure, можете [создать ее бесплатно](https://azure.microsoft.com/free/dotnet/).
 
-**Подписка Azure**: это план выставления счетов, в соответствии с которым создаются ресурсы Azure. Подписки могут быть как индивидуальными, так и корпоративными (которыми управляет организация). Учетная запись Azure может быть связана с несколькими подписками. Если подписок несколько, при создании ресурсов необходимо обращать внимание на то, выбрана ли требуемая подписка. Дополнительные сведения см. в разделе [Сведения об учетных записях, подписках и выставлении счетов](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).
+**Подписка Azure**: это план выставления счетов, в соответствии с которым создаются ресурсы Azure. Подписки могут быть как индивидуальными, так и корпоративными (которыми управляет организация). Учетная запись Azure может быть связана с несколькими подписками. Если подписок несколько, при создании ресурсов необходимо обращать внимание на то, выбрана ли требуемая подписка. Дополнительные сведения см. в разделе [Сведения об учетных записях, подписках и выставлении счетов](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).
 
 > [!TIP]
 > Если у вас есть подписка Visual Studio, вы можете ежемесячно получать деньги на счет в Azure, [активировав такую возможность](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).
@@ -27,6 +27,8 @@ ms.locfileid: "84446396"
 **Размещение**. Чтобы выполнить код в Azure, его нужно разместить в службе, поддерживающей выполнение кода, предоставленного пользователем.
 
 **Управляемые службы**. Некоторые службы Azure предназначены для работы с данными и информацией, предоставляемыми пользователем. Например, пользователь помещает свои файлы в хранилище BLOB-объектов Azure, а Azure обеспечивает возможность чтения, записи и хранения этих файлов.
+
+**Пакет Azure SDK для .NET**. Иногда называется **библиотеками Azure для .NET**. Вместе они называются устанавливаемыми в проект [пакетами NuGet](https://www.nuget.org/profiles/azure-sdk), которые предоставляют различные функции и возможности взаимодействия со службами Azure. В эти пакеты также входят библиотеки управления, используемые для подготовки и администрирования ресурсов.
 
 ## <a name="choosing-a-hosting-option"></a>Выбор варианта размещения
 
@@ -40,42 +42,50 @@ ms.locfileid: "84446396"
 
 Как правило, чем лучше приложение подходит для работы по модели FaaS и PaaS, тем ощутимей будут преимущества от его запуска в облаке. Ниже представлена сводка по трем основным вариантам размещения в Azure и предпосылки для их использования.
 
-* [Служба приложений Azure](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is). Если вам нужно разместить веб-приложение или службу, сначала оцените возможности Службы приложений. Сведения о начале работы с этой службой и размещении приложений ASP.NET, WCF и ASP.NET Core см. в статье [Создание веб-приложения ASP.NET Core в Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet).
+* [Служба приложений Azure](/azure/app-service/app-service-value-prop-what-is). Если вам нужно разместить веб-приложение или службу, сначала оцените возможности Службы приложений. Сведения о начале работы с этой службой и размещении приложений ASP.NET, WCF и ASP.NET Core см. в статье [Создание веб-приложения ASP.NET Core в Azure](/azure/app-service/app-service-web-get-started-dotnet).
 
-* [Функции Azure](https://docs.microsoft.com/azure/azure-functions/functions-overview). Эта служба подходит для рабочих процессов на основе событий. В числе таких процессов — ответы на вызовы веб-перехватчиков и таймеров, обработка элементов в очереди или хранилище BLOB-объектов. Сведения о начале работы со службой "Функции Azure" см. в статье [Создание первой функции с помощью Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).
+* [Функции Azure](/azure/azure-functions/functions-overview). Эта служба подходит для рабочих процессов на основе событий. В числе таких процессов — ответы на вызовы веб-перехватчиков и таймеров, обработка элементов в очереди или хранилище BLOB-объектов. Сведения о начале работы со службой "Функции Azure" см. в статье [Создание первой функции с помощью Visual Studio](/azure/azure-functions/functions-create-your-first-function-visual-studio).
 
-* [Виртуальные машины Azure](https://docs.microsoft.com/azure/virtual-machines/). Если Служба приложений не соответствует требованиям к размещению существующего приложения из-за определенных зависимостей, начните с размещения на Виртуальных машинах. Сведения о том, как приступить к работе и разместить приложения ASP.NET и WCF на Виртуальных машинах Azure, см. в [соответствующем разделе](https://tutorials.visualstudio.com/aspnet-vm/intro).
+* [Виртуальные машины Azure](/azure/virtual-machines/). Если Служба приложений не соответствует требованиям к размещению существующего приложения из-за определенных зависимостей, начните с размещения на Виртуальных машинах. Сведения о том, как приступить к работе и разместить приложения ASP.NET и WCF на Виртуальных машинах Azure, см. в [соответствующем разделе](https://tutorials.visualstudio.com/aspnet-vm/intro).
 
 > [!TIP]
-> Дополнительные сведения о выборе службы см. в статье [Выбор службы вычислений для приложения](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
+> Дополнительные сведения о выборе службы см. в статье [Выбор службы вычислений для приложения](/azure/architecture/guide/technology-choices/compute-decision-tree).
 
 ## <a name="choose-a-data-storage-service"></a>Выбор службы хранения данных
 
 В Azure представлено несколько служб хранения данных, учитывающих различные требования. Разработчики .NET чаще всего используют следующие службы хранения данных:
 
-* [База данных SQL Azure](https://docs.microsoft.com/azure/sql-database/). Если вы планируете перенести в облако приложение, которое использует SQL Server, вполне естественно будет начать с Базы данных SQL Azure. Чтобы начать работу, см. статью [Руководство. Создание приложения ASP.NET в Azure с подключением к базе данных SQL](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).
+* [База данных SQL Azure](/azure/sql-database/). Если вы планируете перенести в облако приложение, которое использует SQL Server, вполне естественно будет начать с Базы данных SQL Azure. Чтобы начать работу, см. статью [Руководство. Создание приложения ASP.NET в Azure с подключением к базе данных SQL](/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).
 
-* [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/). Azure Cosmos DB — это современная база данных, предназначенная специально для облака. Разрабатывая новое приложение, которое еще не зависит от базы данных определенного типа, обязательно изучите возможности Azure Cosmos DB. Azure Cosmos DB подходит для новых мобильных, игровых и веб-приложений, а также приложений для Интернета вещей, для которых важны автоматическое масштабирование, прогнозируемая производительность, малое время отклика и возможность выполнения запросов к данным без определения схем. Чтобы начать работу, см. [краткое руководство по Создание веб-приложения .NET с помощью Azure Cosmos DB, API SQL и портала Azure](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).
+* [Azure Cosmos DB](/azure/cosmos-db/). Azure Cosmos DB — это современная база данных, предназначенная специально для облака. Разрабатывая новое приложение, которое еще не зависит от базы данных определенного типа, обязательно изучите возможности Azure Cosmos DB. Azure Cosmos DB подходит для новых мобильных, игровых и веб-приложений, а также приложений для Интернета вещей, для которых важны автоматическое масштабирование, прогнозируемая производительность, малое время отклика и возможность выполнения запросов к данным без определения схем. Чтобы начать работу, см. [краткое руководство по Создание веб-приложения .NET с помощью Azure Cosmos DB, API SQL и портала Azure](/azure/cosmos-db/create-sql-api-dotnet).
 
-* [Хранилище BLOB-объектов Azure](https://docs.microsoft.com/azure/storage/). Эта служба оптимизирована для хранения и извлечения больших двоичных объектов, таких как изображения, файлы и потоки. Хранилища объектов позволяют управлять чрезвычайно большими объемами неструктурированных данных. Чтобы начать работу, см. [краткое руководство по Использование библиотеки хранилища BLOB-объектов Azure версии 12 для .NET](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet).
+* [Хранилище BLOB-объектов Azure](/azure/storage/). Эта служба оптимизирована для хранения и извлечения больших двоичных объектов, таких как изображения, файлы и потоки. Хранилища объектов позволяют управлять чрезвычайно большими объемами неструктурированных данных. Чтобы начать работу, см. [краткое руководство по Использование библиотеки хранилища BLOB-объектов Azure версии 12 для .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 > [!TIP]
-> Дополнительные сведения см. в статье [Выбор правильного хранилища данных](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
+> Дополнительные сведения см. в статье [Выбор правильного хранилища данных](/azure/architecture/guide/technology-choices/data-store-overview).
 
 ## <a name="connect-to-azure-services"></a>Подключение к службам Azure
 
 При использовании Visual Studio можно добавить в проекты поддержку определенных служб Azure. Диалог **Подключенные службы** в Visual Studio предоставляет простой способ добавления необходимых ссылок, кода для подключения и параметров конфигурации в проекты. Изначально поддерживаются некоторые часто используемые службы Azure, среди которых [служба хранилища](/azure/vs-azure-tools-connected-services-storage), аутентификация [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service), [Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service) и [Cognitive Services](/azure/cognitive-services/), например [Компьютерное зрение](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service). Дополнительные службы, в том числе предоставляемые другими компаниями, доступны в виде расширений в [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance).
 
+## <a name="using-the-azure-sdk-for-net"></a>Использование пакета Azure SDK для .NET
+
+Если вы используете пакет Azure SDK для .NET для доступа к ресурсам Azure или управления ими, обратите внимание на следующие моменты.
+
+* **Аутентификация**. Многие библиотеки в пакете SDK используют общую инфраструктуру проверки подлинности, в то время как некоторые библиотеки используют механизмы проверки подлинности, характерные для используемой службы. Дополнительные сведения см. в статье по [проверке подлинности в Azure с помощью пакета SDK для .NET](authentication.md).
+* **Ведение журналов.** Если поддерживается, клиентские библиотеки включают возможность ведения журнала операций клиентской библиотеки. Дополнительные сведения см. в статье [Ведение журнала с помощью пакета Azure SDK для .NET](logging.md).
+* **REST API.** Пакет Azure SDK для .NET является абстракцией на основе [Azure REST API](/rest/api/azure/). При необходимости REST API Azure можно использовать вместо пакета Azure SDK для .NET или вместе с ним.
+
 ## <a name="diagnosing-problems-in-the-cloud"></a>Диагностика проблем в облаке
 После развертывания в Azure может оказаться, что приложение не работает, хотя оно было работоспособным в среде разработки. Два следующих варианта послужат хорошей отправной точкой для диагностики проблемы.
 
-* **Удаленная отладка в Visual Studio**. Большинство вычислительных служб Azure (в том числе и описанные в этом документе) поддерживают удаленную отладку с помощью Visual Studio и получение журналов. Чтобы изучить возможности Visual Studio по работе с приложениями, откройте окно инструментов Cloud Explorer, введя "Cloud Explorer" в панели быстрого запуска Visual Studio (расположена в правом верхнем углу), и найдите приложение в дереве. Дополнительные сведения см. в разделе [Удаленная отладка веб-приложений](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).
+* **Удаленная отладка в Visual Studio**. Большинство вычислительных служб Azure (в том числе и описанные в этом документе) поддерживают удаленную отладку с помощью Visual Studio и получение журналов. Чтобы изучить возможности Visual Studio по работе с приложениями, откройте окно инструментов Cloud Explorer, введя "Cloud Explorer" в панели быстрого запуска Visual Studio (расположена в правом верхнем углу), и найдите приложение в дереве. Дополнительные сведения см. в разделе [Удаленная отладка веб-приложений](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).
 
-* **Application Insights**. [Application Insights](https://docs.microsoft.com/azure/application-insights/) — это полноценное решение для мониторинга производительности приложений (APM), которое автоматически собирает данные диагностики, телеметрии и производительности приложений. Сведения о том, как начать сбор диагностических данных приложений, см. в статье [Запуск мониторинга веб-приложения ASP.NET](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal).
+* **Application Insights**. [Application Insights](/azure/application-insights/) — это полноценное решение для мониторинга производительности приложений (APM), которое автоматически собирает данные диагностики, телеметрии и производительности приложений. Сведения о том, как начать сбор диагностических данных приложений, см. в статье [Запуск мониторинга веб-приложения ASP.NET](/azure/application-insights/quick-monitor-portal).
 
 ## <a name="next-steps"></a>Следующие шаги
 
-* [Создание веб-приложения ASP.NET Core в Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
-* [Аутентификация в пакете Azure SDK для .NET](./sdk/authentication.md)
+* [Создание веб-приложения ASP.NET Core в Azure](/azure/app-service/app-service-web-get-started-dotnet)
+* [Аутентификация в пакете Azure SDK для .NET](authentication.md)
 * [Diagnosing Errors on your Cloud Apps](https://devblogs.microsoft.com/aspnet/diagnosing-errors-on-your-cloud-apps/) (Диагностика ошибок в облачных приложениях)
 * Скачайте бесплатно электронную книгу [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook) (Краткое руководство по началу работы с Azure для разработчиков .NET)

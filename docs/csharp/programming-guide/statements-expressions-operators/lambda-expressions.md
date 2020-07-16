@@ -8,12 +8,12 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: b86fe4fd91b395498926512650490f8d3a0383a1
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: ffda4ad93451d6991aeb20ed01511f16fd3e512b
+ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83761841"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86174157"
 ---
 # <a name="lambda-expressions-c-programming-guide"></a>Лямбда-выражения (руководство по программированию на C#)
 
@@ -141,7 +141,7 @@ public partial class Form1 : Form
 
 ## <a name="lambda-expressions-and-tuples"></a>Лямбда-выражения и кортежи
 
-В C# 7.0 представлена встроенная поддержка [кортежей](../../tuples.md). Кортеж можно ввести в качестве аргумента лямбда-выражения, и лямбда-выражение также может возвращать кортеж. В некоторых случаях компилятор C# использует определение типа для определения типов компонентов кортежа.
+В C# 7.0 представлена встроенная поддержка [кортежей](../../language-reference/builtin-types/value-tuples.md). Кортеж можно ввести в качестве аргумента лямбда-выражения, и лямбда-выражение также может возвращать кортеж. В некоторых случаях компилятор C# использует определение типа для определения типов компонентов кортежа.
 
 Кортеж определяется путем заключения в скобки списка его компонентов с разделителями-запятыми. В следующем примере кортеж с тремя компонентами используется для передачи последовательности чисел в лямбда-выражение. Оно удваивает каждое значение и возвращает кортеж с тремя компонентами, содержащий результат операций умножения.
 
@@ -151,7 +151,7 @@ public partial class Form1 : Form
 
 [!code-csharp-interactive[lambda and named tuples](~/samples/snippets/csharp/programming-guide/lambda-expressions/LambdasAndTuples.cs#WithComponentName)]
 
-См. дополнительные сведения о [типах кортежей в C#](../../tuples.md).
+Дополнительные сведения о кортежах в C# см. в статье [Типы кортежей](../../language-reference/builtin-types/value-tuples.md).
 
 ## <a name="lambdas-with-the-standard-query-operators"></a>Лямбда-выражения со стандартными операторами запросов
 

@@ -3,12 +3,12 @@ title: Телеметрия пакета SDK для .NET Core
 description: Сведения о функциях телеметрии пакета SDK для .NET Core, позволяющих собирать сведения об использовании для анализа, а также о собираемых данных и способе отключения этих функций.
 author: KathleenDollard
 ms.date: 08/27/2019
-ms.openlocfilehash: a79b791abc99331ff39f5e281ee0fdc62b258989
-ms.sourcegitcommit: 2514f4e3655081dcfe1b22470c0c28500f952c42
+ms.openlocfilehash: 0917dae23588ccd1809252aaf484c397e84561c7
+ms.sourcegitcommit: 67cf756b033c6173a1bbd1cbd5aef1fccac99e34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507286"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86226573"
 ---
 # <a name="net-core-sdk-telemetry"></a>Телеметрия пакета SDK для .NET Core
 
@@ -52,7 +52,7 @@ Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemet
 
 Функция телеметрии не собирает персональные данные, например имена пользователей и их адреса электронной почты. Она не проверяет код и не извлекает данные уровня проекта, например имя, репозиторий или автора. Данные отправляются по защищенному протоколу на серверы Майкрософт с помощью технологии [Azure Monitor](https://azure.microsoft.com/services/monitor/), хранятся в режиме ограниченного доступа и используются в защищенных системах [хранилища Azure](https://azure.microsoft.com/services/storage/) с соблюдением строгих мер безопасности.
 
-Мы заботимся о вашей конфиденциальности. Если у вас есть подозрения, что функция телеметрии собирает конфиденциальные данные или что мы обрабатываем данные небезопасным либо неподобающим образом, отправьте сообщение о проблеме в репозитории [dotnet/cli](https://github.com/dotnet/cli/issues) или по адресу [dotnet@microsoft.com](mailto:dotnet@microsoft.com) для изучения.
+Мы заботимся о вашей конфиденциальности. Если у вас есть подозрения, что функция телеметрии собирает конфиденциальные данные или что мы обрабатываем данные небезопасным либо неподобающим образом, отправьте сообщение о проблеме в репозитории [dotnet/sdk](https://github.com/dotnet/sdk/issues) или по адресу [dotnet@microsoft.com](mailto:dotnet@microsoft.com) для изучения.
 
 Функция телеметрии собирает следующие данные:
 
@@ -139,4 +139,4 @@ at Microsoft.DotNet.Cli.Program.Main(String[] args)
 ## <a name="see-also"></a>См. также
 
 - [Телеметрия .NET Core CLI, данные за 2 кв 2019 г.](https://dotnet.microsoft.com/platform/telemetry/dotnet-core-cli-2019q2)
-- [Справочные материалы по телеметрии (репозиторий dotnet/cli)](https://github.com/dotnet/cli/tree/master/src/dotnet/Telemetry)
+- [Справочные материалы по телеметрии (репозиторий dotnet/sdk)](https://github.com/dotnet/sdk/tree/master/src/Cli/dotnet/Telemetry)
