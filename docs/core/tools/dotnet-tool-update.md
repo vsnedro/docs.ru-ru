@@ -1,106 +1,150 @@
 ---
 title: Команда dotnet tool update
 description: Команда dotnet tool update обновляет указанное средство .NET Core на вашем компьютере.
-ms.date: 02/14/2020
-ms.openlocfilehash: 6176846dbe8e2a91d9c6959dede15718d8f983b2
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.date: 07/08/2020
+ms.openlocfilehash: 7c4bde44ac9964828074baeb1a697ba64ed17887
+ms.sourcegitcommit: 67cf756b033c6173a1bbd1cbd5aef1fccac99e34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463303"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86226625"
 ---
-# <a name="dotnet-tool-update"></a><span data-ttu-id="ee7b2-103">dotnet tool update</span><span class="sxs-lookup"><span data-stu-id="ee7b2-103">dotnet tool update</span></span>
+# <a name="dotnet-tool-update"></a><span data-ttu-id="d96df-103">dotnet tool update</span><span class="sxs-lookup"><span data-stu-id="d96df-103">dotnet tool update</span></span>
 
-<span data-ttu-id="ee7b2-104">**Эта статья относится к следующему.** ✔️ SDK для .NET Core 2.1 и более поздних версий</span><span class="sxs-lookup"><span data-stu-id="ee7b2-104">**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions</span></span>
+<span data-ttu-id="d96df-104">**Эта статья относится к следующему.** ✔️ SDK для .NET Core 2.1 и более поздних версий</span><span class="sxs-lookup"><span data-stu-id="d96df-104">**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions</span></span>
 
-## <a name="name"></a><span data-ttu-id="ee7b2-105">name</span><span class="sxs-lookup"><span data-stu-id="ee7b2-105">Name</span></span>
+## <a name="name"></a><span data-ttu-id="d96df-105">name</span><span class="sxs-lookup"><span data-stu-id="d96df-105">Name</span></span>
 
-<span data-ttu-id="ee7b2-106">`dotnet tool update` обновляет указанное [средство .NET Core](global-tools.md) на компьютер.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-106">`dotnet tool update` - Updates the specified [.NET Core tool](global-tools.md) on your machine.</span></span>
+<span data-ttu-id="d96df-106">`dotnet tool update` обновляет указанное [средство .NET Core](global-tools.md) на компьютер.</span><span class="sxs-lookup"><span data-stu-id="d96df-106">`dotnet tool update` - Updates the specified [.NET Core tool](global-tools.md) on your machine.</span></span>
 
-## <a name="synopsis"></a><span data-ttu-id="ee7b2-107">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="ee7b2-107">Synopsis</span></span>
+## <a name="synopsis"></a><span data-ttu-id="d96df-107">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="d96df-107">Synopsis</span></span>
 
 ```dotnetcli
-dotnet tool update <PACKAGE_NAME> -g|--global
+dotnet tool update <PACKAGE_ID> -g|--global
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
-dotnet tool update <PACKAGE_NAME> --tool-path <PATH>
+dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
-dotnet tool update <PACKAGE_NAME>
+dotnet tool update <PACKAGE_ID> --local
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--tool-manifest <PATH>]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update -h|--help
 ```
 
-## <a name="description"></a><span data-ttu-id="ee7b2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="ee7b2-108">Description</span></span>
+## <a name="description"></a><span data-ttu-id="d96df-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d96df-108">Description</span></span>
 
-<span data-ttu-id="ee7b2-109">Команда `dotnet tool update` предоставляет способ обновления средства .NET Core на компьютере до последней стабильной версии пакета.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-109">The `dotnet tool update` command provides a way for you to update .NET Core tools on your machine to the latest stable version of the package.</span></span> <span data-ttu-id="ee7b2-110">Команда удаляет и повторно устанавливает средство, эффективно обновляя его.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-110">The command uninstalls and reinstalls a tool, effectively updating it.</span></span> <span data-ttu-id="ee7b2-111">Чтобы использовать команду, необходимо указать один из следующих параметров:</span><span class="sxs-lookup"><span data-stu-id="ee7b2-111">To use the command, you specify one of the following options:</span></span>
+<span data-ttu-id="d96df-109">Команда `dotnet tool update` предоставляет способ обновления средства .NET Core на компьютере до последней стабильной версии пакета.</span><span class="sxs-lookup"><span data-stu-id="d96df-109">The `dotnet tool update` command provides a way for you to update .NET Core tools on your machine to the latest stable version of the package.</span></span> <span data-ttu-id="d96df-110">Команда удаляет и повторно устанавливает средство, эффективно обновляя его.</span><span class="sxs-lookup"><span data-stu-id="d96df-110">The command uninstalls and reinstalls a tool, effectively updating it.</span></span> <span data-ttu-id="d96df-111">Чтобы использовать команду, необходимо указать один из следующих параметров:</span><span class="sxs-lookup"><span data-stu-id="d96df-111">To use the command, you specify one of the following options:</span></span>
 
-* <span data-ttu-id="ee7b2-112">Чтобы обновить глобальное средство, установленное в расположении по умолчанию, используйте параметр `--global`</span><span class="sxs-lookup"><span data-stu-id="ee7b2-112">To update a global tool that was installed in the default location, use the `--global` option</span></span>
-* <span data-ttu-id="ee7b2-113">Чтобы обновить глобальное средство, установленное в пользовательском расположении, используйте параметр `--tool-path`.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-113">To update a global tool that was installed in a custom location, use the `--tool-path` option.</span></span>
-* <span data-ttu-id="ee7b2-114">Чтобы обновить локальный инструмент, пропустите параметры `--global` и `--tool-path`.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-114">To update a local tool, omit the `--global` and `--tool-path` options.</span></span>
+* <span data-ttu-id="d96df-112">Чтобы обновить глобальное средство, установленное в расположении по умолчанию, используйте параметр `--global`</span><span class="sxs-lookup"><span data-stu-id="d96df-112">To update a global tool that was installed in the default location, use the `--global` option</span></span>
+* <span data-ttu-id="d96df-113">Чтобы обновить глобальное средство, установленное в пользовательском расположении, используйте параметр `--tool-path`.</span><span class="sxs-lookup"><span data-stu-id="d96df-113">To update a global tool that was installed in a custom location, use the `--tool-path` option.</span></span>
+* <span data-ttu-id="d96df-114">Чтобы обновить локальное средство, используйте параметр `--local`.</span><span class="sxs-lookup"><span data-stu-id="d96df-114">To update a local tool, use the `--local` option.</span></span>
 
-<span data-ttu-id="ee7b2-115">**Локальные средства доступны в пакете SDK для .NET Core, начиная с версии 3.0.**</span><span class="sxs-lookup"><span data-stu-id="ee7b2-115">**Local tools are available starting with .NET Core SDK 3.0.**</span></span>
+<span data-ttu-id="d96df-115">**Локальные средства доступны в пакете SDK для .NET Core, начиная с версии 3.0.**</span><span class="sxs-lookup"><span data-stu-id="d96df-115">**Local tools are available starting with .NET Core SDK 3.0.**</span></span>
 
-## <a name="arguments"></a><span data-ttu-id="ee7b2-116">Аргументы</span><span class="sxs-lookup"><span data-stu-id="ee7b2-116">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="d96df-116">Аргументы</span><span class="sxs-lookup"><span data-stu-id="d96df-116">Arguments</span></span>
 
-- **`PACKAGE_NAME`**
+- **`PACKAGE_ID`**
 
-  <span data-ttu-id="ee7b2-117">Имя или идентификатор пакета NuGet, который содержит глобальное средство .NET Core, которое вы хотите обновить.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-117">Name/ID of the NuGet package that contains the .NET Core global tool to update.</span></span> <span data-ttu-id="ee7b2-118">Найти имя пакета можно с помощью команды [dotnet tool list](dotnet-tool-list.md).</span><span class="sxs-lookup"><span data-stu-id="ee7b2-118">You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.</span></span>
+  <span data-ttu-id="d96df-117">Имя или идентификатор пакета NuGet, который содержит глобальное средство .NET Core, которое вы хотите обновить.</span><span class="sxs-lookup"><span data-stu-id="d96df-117">Name/ID of the NuGet package that contains the .NET Core global tool to update.</span></span> <span data-ttu-id="d96df-118">Найти имя пакета можно с помощью команды [dotnet tool list](dotnet-tool-list.md).</span><span class="sxs-lookup"><span data-stu-id="d96df-118">You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.</span></span>
 
-## <a name="options"></a><span data-ttu-id="ee7b2-119">Параметры</span><span class="sxs-lookup"><span data-stu-id="ee7b2-119">Options</span></span>
+## <a name="options"></a><span data-ttu-id="d96df-119">Параметры</span><span class="sxs-lookup"><span data-stu-id="d96df-119">Options</span></span>
 
 - **`--add-source <SOURCE>`**
 
-  <span data-ttu-id="ee7b2-120">Добавляет дополнительный источник пакета NuGet для использования во время установки.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-120">Adds an additional NuGet package source to use during installation.</span></span>
+  <span data-ttu-id="d96df-120">Добавляет дополнительный источник пакета NuGet для использования во время установки.</span><span class="sxs-lookup"><span data-stu-id="d96df-120">Adds an additional NuGet package source to use during installation.</span></span>
 
 - **`--configfile <FILE>`**
 
-  <span data-ttu-id="ee7b2-121">Файл конфигурации NuGet (*nuget.config*), который будет использоваться.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-121">The NuGet configuration (*nuget.config*) file to use.</span></span>
+  <span data-ttu-id="d96df-121">Файл конфигурации NuGet (*nuget.config*), который будет использоваться.</span><span class="sxs-lookup"><span data-stu-id="d96df-121">The NuGet configuration (*nuget.config*) file to use.</span></span>
+
+- **`--disable-parallel`**
+
+  <span data-ttu-id="d96df-122">Блокирует параллельное восстановление множества проектов.</span><span class="sxs-lookup"><span data-stu-id="d96df-122">Prevent restoring multiple projects in parallel.</span></span>
 
 - **`--framework <FRAMEWORK>`**
 
-  <span data-ttu-id="ee7b2-122">Указывает [требуемую версию .NET Framework](../../standard/frameworks.md) для обновления средства.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-122">Specifies the [target framework](../../standard/frameworks.md) to update the tool for.</span></span>
+  <span data-ttu-id="d96df-123">Указывает [требуемую версию .NET Framework](../../standard/frameworks.md) для обновления средства.</span><span class="sxs-lookup"><span data-stu-id="d96df-123">Specifies the [target framework](../../standard/frameworks.md) to update the tool for.</span></span>
 
-- **`-g|--global`**
+- **`--ignore-failed-sources`**
 
-  <span data-ttu-id="ee7b2-123">Указывает, что обновление предназначено для средства уровня пользователя.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-123">Specifies that the update is for a user-wide tool.</span></span> <span data-ttu-id="ee7b2-124">Не может использоваться вместе с параметром `--tool-path`.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-124">Can't be combined with the `--tool-path` option.</span></span> <span data-ttu-id="ee7b2-125">Пропуск `--global` и `--tool-path` означает, что обновляемое средство является локальным.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-125">Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.</span></span>
+  <span data-ttu-id="d96df-124">Обрабатывать сбои источников пакетов как предупреждения.</span><span class="sxs-lookup"><span data-stu-id="d96df-124">Treat package source failures as warnings.</span></span>
 
-- **`-h|--help`**
+- **`--interactive`**
 
-  <span data-ttu-id="ee7b2-126">Выводит краткую справку по команде.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-126">Prints out a short help for the command.</span></span>
+  <span data-ttu-id="d96df-125">Позволяет остановить команду и дождаться, пока пользователь введет данные или выполнит действие (например, завершит проверку подлинности).</span><span class="sxs-lookup"><span data-stu-id="d96df-125">Allows the command to stop and wait for user input or action (for example to complete authentication).</span></span>
+
+- **`--local`**
+
+  <span data-ttu-id="d96df-126">Обновляет средство и манифест локального средства.</span><span class="sxs-lookup"><span data-stu-id="d96df-126">Update the tool and the local tool manifest.</span></span> <span data-ttu-id="d96df-127">Не может использоваться вместе с параметром `--global`.</span><span class="sxs-lookup"><span data-stu-id="d96df-127">Can't be combined with the `--global` option.</span></span>
+
+- **`--no-cache`**
+
+  <span data-ttu-id="d96df-128">Запрещает кэширование пакетов и HTTP-запросов.</span><span class="sxs-lookup"><span data-stu-id="d96df-128">Do not cache packages and HTTP requests.</span></span>
+
+- **`--tool-manifest <PATH>`**
+
+  <span data-ttu-id="d96df-129">Путь к файлу манифеста.</span><span class="sxs-lookup"><span data-stu-id="d96df-129">Path to the manifest file.</span></span>
 
 - **`--tool-path <PATH>`**
 
-  <span data-ttu-id="ee7b2-127">Указывает место установки глобального средства.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-127">Specifies the location where the global tool is installed.</span></span> <span data-ttu-id="ee7b2-128">Путь может быть абсолютным или относительным.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-128">PATH can be absolute or relative.</span></span> <span data-ttu-id="ee7b2-129">Не может использоваться вместе с параметром `--global`.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-129">Can't be combined with the `--global` option.</span></span> <span data-ttu-id="ee7b2-130">Пропуск `--global` и `--tool-path` означает, что обновляемое средство является локальным.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-130">Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.</span></span>
+  <span data-ttu-id="d96df-130">Указывает место установки глобального средства.</span><span class="sxs-lookup"><span data-stu-id="d96df-130">Specifies the location where the global tool is installed.</span></span> <span data-ttu-id="d96df-131">Путь может быть абсолютным или относительным.</span><span class="sxs-lookup"><span data-stu-id="d96df-131">PATH can be absolute or relative.</span></span> <span data-ttu-id="d96df-132">Не может использоваться вместе с параметром `--global`.</span><span class="sxs-lookup"><span data-stu-id="d96df-132">Can't be combined with the `--global` option.</span></span> <span data-ttu-id="d96df-133">Пропуск `--global` и `--tool-path` означает, что обновляемое средство является локальным.</span><span class="sxs-lookup"><span data-stu-id="d96df-133">Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.</span></span>
+
+- **`--version <VERSION>`**
+
+  <span data-ttu-id="d96df-134">Диапазон версий пакета средства для обновления.</span><span class="sxs-lookup"><span data-stu-id="d96df-134">The version range of the tool package to update to.</span></span> <span data-ttu-id="d96df-135">Нельзя использовать для перехода на более ранние версии, необходимо сначала `uninstall` новые версии.</span><span class="sxs-lookup"><span data-stu-id="d96df-135">This cannot be used to downgrade versions, you must `uninstall` newer versions first.</span></span>
+
+- **`-g|--global`**
+
+  <span data-ttu-id="d96df-136">Указывает, что обновление предназначено для средства уровня пользователя.</span><span class="sxs-lookup"><span data-stu-id="d96df-136">Specifies that the update is for a user-wide tool.</span></span> <span data-ttu-id="d96df-137">Не может использоваться вместе с параметром `--tool-path`.</span><span class="sxs-lookup"><span data-stu-id="d96df-137">Can't be combined with the `--tool-path` option.</span></span> <span data-ttu-id="d96df-138">Пропуск `--global` и `--tool-path` означает, что обновляемое средство является локальным.</span><span class="sxs-lookup"><span data-stu-id="d96df-138">Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.</span></span>
+
+- **`-h|--help`**
+
+  <span data-ttu-id="d96df-139">Выводит краткую справку по команде.</span><span class="sxs-lookup"><span data-stu-id="d96df-139">Prints out a short help for the command.</span></span>
 
 - **`-v|--verbosity <LEVEL>`**
 
-  <span data-ttu-id="ee7b2-131">Задает уровень детализации команды.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-131">Sets the verbosity level of the command.</span></span> <span data-ttu-id="ee7b2-132">Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-132">Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.</span></span>
+  <span data-ttu-id="d96df-140">Задает уровень детализации команды.</span><span class="sxs-lookup"><span data-stu-id="d96df-140">Sets the verbosity level of the command.</span></span> <span data-ttu-id="d96df-141">Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`.</span><span class="sxs-lookup"><span data-stu-id="d96df-141">Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ee7b2-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="ee7b2-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d96df-142">Примеры</span><span class="sxs-lookup"><span data-stu-id="d96df-142">Examples</span></span>
 
 - **`dotnet tool update -g dotnetsay`**
 
-  <span data-ttu-id="ee7b2-134">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/).</span><span class="sxs-lookup"><span data-stu-id="ee7b2-134">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool.</span></span>
+  <span data-ttu-id="d96df-143">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/).</span><span class="sxs-lookup"><span data-stu-id="d96df-143">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool.</span></span>
 
 - **`dotnet tool update dotnetsay --tool-path c:\global-tools`**
 
-  <span data-ttu-id="ee7b2-135">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/), расположенное в определенном каталоге Windows.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-135">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Windows directory.</span></span>
+  <span data-ttu-id="d96df-144">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/), расположенное в определенном каталоге Windows.</span><span class="sxs-lookup"><span data-stu-id="d96df-144">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Windows directory.</span></span>
 
 - **`dotnet tool update dotnetsay --tool-path ~/bin`**
 
-  <span data-ttu-id="ee7b2-136">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/), расположенное в определенном каталоге Linux/macOS.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-136">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Linux/macOS directory.</span></span>
+  <span data-ttu-id="d96df-145">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/), расположенное в определенном каталоге Linux/macOS.</span><span class="sxs-lookup"><span data-stu-id="d96df-145">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Linux/macOS directory.</span></span>
 
 - **`dotnet tool update dotnetsay`**
 
-  <span data-ttu-id="ee7b2-137">Обновляет локальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/), установленное для текущего каталога.</span><span class="sxs-lookup"><span data-stu-id="ee7b2-137">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current directory.</span></span>
+  <span data-ttu-id="d96df-146">Обновляет локальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/), установленное для текущего каталога.</span><span class="sxs-lookup"><span data-stu-id="d96df-146">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current directory.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ee7b2-138">См. также</span><span class="sxs-lookup"><span data-stu-id="ee7b2-138">See also</span></span>
+- **`dotnet tool update -g dotnetsay --version 2.0.*`**
 
-- [<span data-ttu-id="ee7b2-139">Средства .NET Core</span><span class="sxs-lookup"><span data-stu-id="ee7b2-139">.NET Core tools</span></span>](global-tools.md)
-- [<span data-ttu-id="ee7b2-140">Учебник. Установка и использование глобального средства .NET Core с помощью интерфейса командной строки .NET Core</span><span class="sxs-lookup"><span data-stu-id="ee7b2-140">Tutorial: Install and use a .NET Core global tool using the .NET Core CLI</span></span>](global-tools-how-to-use.md)
-- [<span data-ttu-id="ee7b2-141">Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core</span><span class="sxs-lookup"><span data-stu-id="ee7b2-141">Tutorial: Install and use a .NET Core local tool using the .NET Core CLI</span></span>](local-tools-how-to-use.md)
+  <span data-ttu-id="d96df-147">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/) до последней версии исправления с основным номером версии `2` и дополнительным номером версии `0`.</span><span class="sxs-lookup"><span data-stu-id="d96df-147">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest patch version, with a major version of `2`, and a minor version of `0`.</span></span>
+
+- **`dotnet tool update -g dotnetsay --version (2.0.*,2.1.4)`**
+
+  <span data-ttu-id="d96df-148">Обновляет глобальное средство [dotnetsay](https://www.nuget.org/packages/dotnetsay/) до самой низкой версии в указанном диапазоне `(> 2.0.0 && < 2.1.4)`. Будет установлена версия `2.1.0`.</span><span class="sxs-lookup"><span data-stu-id="d96df-148">Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest version within the specified range `(> 2.0.0 && < 2.1.4)`, version `2.1.0` would be installed.</span></span> <span data-ttu-id="d96df-149">Дополнительные сведения о семантических диапазонах версий см. в разделе [Диапазоны версий пакетов NuGet](/nuget/concepts/package-versioning#version-ranges).</span><span class="sxs-lookup"><span data-stu-id="d96df-149">For more information on semantic versioning ranges, see [NuGet packaging version ranges](/nuget/concepts/package-versioning#version-ranges).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="d96df-150">См. также</span><span class="sxs-lookup"><span data-stu-id="d96df-150">See also</span></span>
+
+- [<span data-ttu-id="d96df-151">Средства .NET Core</span><span class="sxs-lookup"><span data-stu-id="d96df-151">.NET Core tools</span></span>](global-tools.md)
+- [<span data-ttu-id="d96df-152">Семантическое управление версиями</span><span class="sxs-lookup"><span data-stu-id="d96df-152">Semantic versioning</span></span>](https://semver.org)
+- [<span data-ttu-id="d96df-153">Учебник. Установка и использование глобального средства .NET Core с помощью интерфейса командной строки .NET Core</span><span class="sxs-lookup"><span data-stu-id="d96df-153">Tutorial: Install and use a .NET Core global tool using the .NET Core CLI</span></span>](global-tools-how-to-use.md)
+- [<span data-ttu-id="d96df-154">Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core</span><span class="sxs-lookup"><span data-stu-id="d96df-154">Tutorial: Install and use a .NET Core local tool using the .NET Core CLI</span></span>](local-tools-how-to-use.md)
