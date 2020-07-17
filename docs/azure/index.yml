@@ -8,12 +8,12 @@ metadata:
   ms.topic: hub-page
   ms.prod: azure-dotnet
   ms.date: 03/04/2020
-  ms.openlocfilehash: b31d52e3b061dc29a83f3f3ec3e702974a10e854
-  ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+  ms.openlocfilehash: c92263407ab15bd78ec323bb417d2d9f37dd77bc
+  ms.sourcegitcommit: d4f7ba08f2a45a9dbef53be597eed6d4a9410f29
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/09/2020
-  ms.locfileid: "86174333"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86401957"
 highlightedContent:
   items:
   - itemType: overview
@@ -87,9 +87,15 @@ conceptualContent:
       url: /visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
   - title: Создание мобильных приложений
     links:
+    - itemType: learn
+      text: Использование служб REST из Azure в приложениях Xamarin
+      url: /learn/modules/consume-rest-services/
     - itemType: quickstart
       text: Создание приложения Xamarin.Forms с помощью пакета SDK для .NET и API Azure Cosmos DB для MongoDB
       url: /azure/cosmos-db/create-mongodb-xamarin
+    - itemType: quickstart
+      text: Использование клиентской библиотеки Хранилища BLOB-объектов Azure с Xamarin.Forms
+      url: /azure/storage/blobs/storage-quickstart-blobs-xamarin
     - itemType: tutorial
       text: Отправка push-уведомлений в приложения Xamarin.Forms с помощью ASP.NET Core и Центров уведомлений Azure
       url: /azure/notification-hubs/notification-hubs-backend-service-xamarin-forms
@@ -261,4 +267,4 @@ additionalContent:
         url: https://github.com/AzureAD/microsoft-identity-web
       - text: Платформа .NET
         url: https://github.com/dotnet/
-  footer: Участие в разработке документации по .NET. Ознакомьтесь с нашим [руководством для соавторов](/contribute/dotnet/dotnet-contribute).
+  footer: Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute).
