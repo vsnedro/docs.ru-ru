@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Visual C#, getting started
 - getting started, Visual C#
 ms.date: 04/05/2019
-ms.openlocfilehash: aff810aa7ba533682f9976fbb59ef4d7ec43ca58
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: baa21908b85130f8a0dd992b10cdc95c6e42912e
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75713922"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86415913"
 ---
 # <a name="get-started-with-c"></a>Начало работы с C\#
 
@@ -30,7 +30,7 @@ ms.locfileid: "75713922"
 
 - [Создание библиотеки классов с помощью C# и .NET Standard в Visual Studio](../../core/tutorials/library-with-visual-studio.md)
 
-   Библиотека классов позволяет определять типы и члены типов, которые можно вызвать из любого приложения. В этой статье вы создадите библиотеку классов с единственным методом, который определяет, начинается ли строка с символа верхнего регистра. Когда вы закончите создавать библиотеку, можно разработать [модульный тест](../../core/tutorials/testing-library-with-visual-studio.md) и убедиться, что все работает как надо, а затем библиотеку можно сделать доступной для [приложений, в которых ее нужно использовать](../../core/tutorials/consuming-library-with-visual-studio.md).
+   Библиотека классов позволяет определять типы и члены типов, которые можно вызвать из любого приложения. В этой статье вы создадите библиотеку классов с единственным методом, который определяет, начинается ли строка с символа верхнего регистра. Когда вы закончите создавать библиотеку, можно разработать [модульный тест](../../core/tutorials/testing-library-with-visual-studio.md) и убедиться, что все работает как надо, а затем библиотеку можно сделать доступной для [приложений, в которых ее нужно использовать](/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 - [Начало работы с C# и Visual Studio Code](../../core/tutorials/with-visual-studio-code.md)
 
@@ -52,6 +52,6 @@ ms.locfileid: "75713922"
 
     Приведены ссылки на пошаговые руководства по написанию программ, использующих C#, и дано краткое описание каждого пошагового руководства.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Разработка на C# в Visual Studio](/visualstudio/get-started/csharp/)

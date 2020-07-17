@@ -136,7 +136,7 @@
               href: variables-and-arguments.md
             - name: Выражения
               href: expressions.md
-            - name: 'Выражения C#'
+            - name: Выражения C#
               href: csharp-expressions.md
             - name: Свойства и Аргументы
               href: properties-vs-arguments.md

@@ -21,13 +21,13 @@
               href: walkthrough-manipulating-data-visual-basic.md
             - name: Пошаговое руководство. Применение только хранимых процедур (Visual Basic)
               href: walkthrough-using-only-stored-procedures-visual-basic.md
-            - name: 'Пошаговое руководство. Простая модель объектов и простой запрос (C#)'
+            - name: Пошаговое руководство. Простая модель объектов и простой запрос (C#)
               href: walkthrough-simple-object-model-and-query-csharp.md
-            - name: 'Пошаговое руководство. Запросы по связям (C#)'
+            - name: Пошаговое руководство. Запросы по связям (C#)
               href: walkthrough-querying-across-relationships-csharp.md
-            - name: 'Пошаговое руководство. Обработка данных (C#)'
+            - name: Пошаговое руководство. Обработка данных (C#)
               href: walkthrough-manipulating-data-csharp.md
-            - name: 'Пошаговое руководство. Применение только хранимых процедур (C#)'
+            - name: Пошаговое руководство. Применение только хранимых процедур (C#)
               href: walkthrough-using-only-stored-procedures-csharp.md
     - name: Руководство по программированию
       href: programming-guide.md
@@ -35,7 +35,7 @@
         - name: Создание модели объектов
           href: creating-the-object-model.md
           items:
-            - name: 'Практическое руководство. Как создать модель объектов на языке Visual Basic или C#'
+            - name: Практическое руководство. Как создать модель объектов на языке Visual Basic или C#
               href: how-to-generate-the-object-model-in-visual-basic-or-csharp.md
             - name: Практическое руководство. Как создать модель объектов в виде внешнего файла
               href: how-to-generate-the-object-model-as-an-external-file.md
