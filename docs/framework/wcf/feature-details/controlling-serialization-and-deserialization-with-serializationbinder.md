@@ -1,15 +1,19 @@
 ---
 title: Управление сериализацией и десериализацией с помощью SerializationBinder
-ms.date: 03/30/2017
+ms.date: 07/14/2020
 ms.assetid: ba8dcecf-acc7-467c-939d-021bbac797d4
-ms.openlocfilehash: 1101a3caf2a033b4dbbc5f45737f187c58adbef2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5a7d0bf2aabfcdf789a77cf0fcfeb26357575806
+ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595574"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86444486"
 ---
 # <a name="controlling-serialization-and-deserialization-with-serializationbinder"></a>Управление сериализацией и десериализацией с помощью SerializationBinder
+
+> [!WARNING]
+> <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>не является безопасным и ***не*** может быть обеспечена безопасным. Дополнительные сведения см. в разделе [BinaryFormatter Security Guide](../../../standard/serialization/binaryformatter-security-guide.md).
+
 При сериализации модуль форматирования передает сведения, необходимые для создания экземпляра объекта правильных типа и версии. Эти сведения обычно содержат полное имя типа и имя сборки объекта. По умолчанию с помощью этих сведений операция десериализации создает экземпляр такого же объекта. Некоторым пользователям может понадобиться возможность выбирать классы для сериализации и десериализации, поскольку исходный класс может отсутствовать на компьютере, где выполняется десериализация, быть перемещенным в другую сборку либо на сервере и клиенте могут требоваться разные версии класса. Дополнительные сведения см. в разделе [Использование связывателя сериализации](../samples/usage-of-serialization-binder.md).  
   
 > [!WARNING]

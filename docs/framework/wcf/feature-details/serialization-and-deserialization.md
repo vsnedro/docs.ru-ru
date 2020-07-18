@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3d71814c-bda7-424b-85b7-15084ff9377a
-ms.openlocfilehash: 3927c17a2548a094a63ffd95ff8a3701403de281
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: b770543eb09ed2edc1a028561e0cf41e74fab1cc
+ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244911"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86444499"
 ---
 # <a name="serialization-and-deserialization"></a>Сериализация и десериализация
 Windows Communication Foundation (WCF) включает новый механизм сериализации <xref:System.Runtime.Serialization.DataContractSerializer> . <xref:System.Runtime.Serialization.DataContractSerializer>Преобразование между объектами .NET Framework и XML в обоих направлениях. В данном разделе объясняется, как работает сериализатор.  
@@ -20,7 +20,13 @@ Windows Communication Foundation (WCF) включает новый механи�
   
  При десериализации XML-кода сериализатор использует классы <xref:System.Xml.XmlReader> и <xref:System.Xml.XmlWriter> . Он также поддерживает классы и, позволяющие <xref:System.Xml.XmlDictionaryReader> <xref:System.Xml.XmlDictionaryWriter> создавать оптимизированные XML-данные в некоторых случаях, например при использовании ДВОИЧНОГО XML-формата WCF.  
   
- В состав WCF также входит вспомогательный сериализатор, <xref:System.Runtime.Serialization.NetDataContractSerializer> . Объект <xref:System.Runtime.Serialization.NetDataContractSerializer> аналогичен <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> сериализаторам и, так как он также выдает имена типов .NET Framework как часть сериализованных данных. Он применяется при совместном использовании одних и тех же типов на концах сериализации и десериализации. Оба сериализатора ( <xref:System.Runtime.Serialization.DataContractSerializer> и <xref:System.Runtime.Serialization.NetDataContractSerializer> ) являются производными от общего базового класса <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
+ В состав WCF также входит вспомогательный сериализатор, <xref:System.Runtime.Serialization.NetDataContractSerializer> . <xref:System.Runtime.Serialization.NetDataContractSerializer>:
+
+* ***Не*** является безопасным. Дополнительные сведения см. в разделе [BinaryFormatter Security Guide](/dotnet/standard/serialization/binaryformatter-security-guide).
+* Аналогичен <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> сериализаторам и, так как он также выдает имена типов .NET Framework как часть сериализованных данных.
+* Используется, если для сериализации используются одни и те же типы, а десериализация завершается.
+
+ <xref:System.Runtime.Serialization.DataContractSerializer>И <xref:System.Runtime.Serialization.NetDataContractSerializer> , и являются производными от общего базового класса, <xref:System.Runtime.Serialization.XmlObjectSerializer> .  
   
 > [!WARNING]
 > Класс <xref:System.Runtime.Serialization.DataContractSerializer> сериализует строки, содержащие управляющие символы с шестнадцатеричным значением меньше 20 в виде сущностей XML. Это может вызвать проблемы с клиентом, отличным от WCF, при отправке таких данных в службу WCF.  
