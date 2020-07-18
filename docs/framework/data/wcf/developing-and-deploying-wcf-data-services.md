@@ -7,12 +7,12 @@ helpviewer_keywords:
 - deploying [WCF Data Services
 - developing applications [WCF Data Services]
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
-ms.openlocfilehash: 1dc9f3d261738a6dff0339c094c7aba5e32680ee
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.openlocfilehash: 7519dce8ed17bc623173f30222296ffaa42b4341
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200058"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86416073"
 ---
 # <a name="develop-and-deploy-wcf-data-services"></a>Разработка и развертывание WCF Data Services
 
@@ -32,7 +32,7 @@ ms.locfileid: "82200058"
 
 3. **Настройка службы данных**
 
-     По умолчанию WCF Data Services отключает доступ к ресурсам, предоставляемым контейнером сущностей. <xref:System.Data.Services.DataServiceConfiguration> Интерфейс позволяет настроить доступ к ресурсам и операциям службы, указать поддерживаемую версию OData и определить другие поведения на уровне службы, например поведение пакетной обработки или максимальное число сущностей, которые могут быть возвращены в одном канале ответа. Дополнительные сведения см. [в разделе Настройка службы данных](configuring-the-data-service-wcf-data-services.md).
+     По умолчанию WCF Data Services отключает доступ к ресурсам, предоставляемым контейнером сущностей. <xref:System.Data.Services.DataServiceConfiguration>Интерфейс позволяет настроить доступ к ресурсам и операциям службы, указать поддерживаемую версию OData и определить другие поведения на уровне службы, например поведение пакетной обработки или максимальное число сущностей, которые могут быть возвращены в одном канале ответа. Дополнительные сведения см. [в разделе Настройка службы данных](configuring-the-data-service-wcf-data-services.md).
 
 В этой статье в основном рассматривается разработка и развертывание служб данных с помощью Visual Studio. Сведения о гибкости, обеспечиваемой WCF Data Services для предоставления данных в виде веб-каналов OData, см. в разделе [определение WCF Data Services](defining-wcf-data-services.md).
 
@@ -63,14 +63,14 @@ ms.locfileid: "82200058"
 
     - Этот сервер не может работать с фрагментированными потоками HTTP, которые по умолчанию отправляются клиентом WCF Data Services при доступе к большим двоичным данным из службы данных. Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md).
 
-    - На этом сервере возникли проблемы с обработкой символа period (`.`) в URL-адресе, хотя этот символ поддерживается WCF Data Services в значениях ключа.
+    - На этом сервере возникли проблемы с обработкой символа period ( `.` ) в URL-адресе, хотя этот символ поддерживается WCF Data Services в значениях ключа.
 
     > [!TIP]
     > Несмотря на то, что можно использовать Visual Studio Development Server для тестирования служб данных во время разработки, их следует протестировать снова после развертывания на веб-сервере, на котором работают службы IIS.
 
 3. **Среда разработки Azure**
 
-     Инструменты Azure для Visual Studio включают в себя интегрированный набор средств для разработки служб Azure в Visual Studio. С помощью этих средств можно разработать службу данных, которая может быть развернута в Azure, а также проверить службу данных на локальном компьютере перед развертыванием. Используйте эти средства при разработке службы данных, работающей на платформе Azure, с помощью Visual Studio. Сведения об установке средств см. в статье [средства Azure для Visual Studio 2015](../../../azure/sdk/vs2015-install.md). Дополнительные сведения о разработке службы данных, работающей в Azure, см. в разделе Публикация [службы OData в Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     Инструменты Azure для Visual Studio включают в себя интегрированный набор средств для разработки служб Azure в Visual Studio. С помощью этих средств можно разработать службу данных, которая может быть развернута в Azure, а также проверить службу данных на локальном компьютере перед развертыванием. Используйте эти средства при разработке службы данных, работающей на платформе Azure, с помощью Visual Studio. Сведения об установке средств см. в статье [средства Azure для Visual Studio 2015](../../../azure/vs2015-install.md). Дополнительные сведения о разработке службы данных, работающей в Azure, см. в разделе Публикация [службы OData в Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### <a name="development-tips"></a>Советы по разработке
 
@@ -115,7 +115,7 @@ ms.locfileid: "82200058"
 
 - **Azure**
 
-     Вы можете развернуть службу данных в Azure с помощью [инструментов Azure для Visual Studio](../../../azure/sdk/vs2015-install.md). Дополнительные сведения о развертывании службы данных в Azure см. [в статье Развертывание службы OData в Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     Вы можете развернуть службу данных в Azure с помощью [инструментов Azure для Visual Studio](../../../azure/vs2015-install.md). Дополнительные сведения о развертывании службы данных в Azure см. [в статье Развертывание службы OData в Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### <a name="deployment-considerations"></a>Требования к развертыванию
 
@@ -125,7 +125,7 @@ ms.locfileid: "82200058"
 
 - Поскольку WCF Data Services включает базовую реализацию WCF, можно использовать Windows Server AppFabric для мониторинга службы данных, развернутой в службах IIS, работающих на Windows Server. Дополнительные сведения об использовании Windows Server AppFabric для мониторинга службы данных см. в подразделе " [Отслеживание после WCF Data Services с помощью Windows Server AppFabric](https://docs.microsoft.com/archive/blogs/rjacobs/tracking-wcf-data-services-with-windows-server-appfabric)".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительно
 
 - [Размещение службы данных](hosting-the-data-service-wcf-data-services.md)
 - [Защита служб WCF Data Services](securing-wcf-data-services.md)

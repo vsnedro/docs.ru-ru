@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
-ms.openlocfilehash: 2c8924ee3374489dded7e819ecde8e4d9da750bb
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.openlocfilehash: e6dc32274cc3b0d7ec9d66a837a422c87fb2468b
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374390"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86416206"
 ---
 # <a name="consume-a-dataset-from-an-xml-web-service"></a>Использование набора данных из веб-службы XML
 
@@ -19,7 +19,7 @@ ms.locfileid: "86374390"
  В следующем примере показано, как создать веб-службу XML и клиент, которые используют **набор данных** для передачи реляционных данных (включая измененные данные) и разрешения всех обновлений обратно в исходный источник данных.  
   
 > [!NOTE]
-> Передача `DataSet` или `DataTable` экземпляры в рамках вызовов веб-службы XML не являются безопасными, если входные данные не являются доверенными. Дополнительные сведения см. в [статье Руководство по безопасности наборов данных и DataTable](/dotnet/framework/data/adonet/dataset-datatable-dataview/security-guidance).
+> Передача `DataSet` или `DataTable` экземпляры в рамках вызовов веб-службы XML не являются безопасными, если входные данные не являются доверенными. Дополнительные сведения см. в [статье Руководство по безопасности наборов данных и DataTable](security-guidance.md).
 > Также рекомендуется всегда учитывать последствия безопасности при создании веб-службы XML. Сведения о защите веб-службы XML см. в разделе [Защита веб-служб XML, созданных с помощью ASP.NET](/previous-versions/dotnet/netframework-4.0/w67h0dw7(v=vs.100)).  
   
 ## <a name="create-an-xml-web-service"></a>Создание веб-службы XML
@@ -263,7 +263,7 @@ ms.locfileid: "86374390"
     csc client.cs -r:sample.dll -r:System.dll -r:System.Data.dll -r:System.Xml.dll -r:System.Web.Services.dll  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>Дополнительно
 
 - [ADO.NET](../index.md)
 - [Наборы данных, таблицы данных и объекты DataView](index.md)

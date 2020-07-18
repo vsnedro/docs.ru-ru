@@ -3,12 +3,12 @@ title: Набор данных и руководство по безопасно
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: f78b52ede4ec76599d761e5188f39c3e9dae2a4f
-ms.sourcegitcommit: 98548968e89739a37625e72ddbd535fe1e11121e
+ms.openlocfilehash: 2fbac625ae0049fc4c363977dc1d3fbcfb376025
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405296"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86416204"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Набор данных и руководство по безопасности DataTable
 
@@ -193,7 +193,7 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 </configuration>
 ```
 
-Дополнительные сведения о `TraceSource` и см `TraceListener` . в документе [практические руководства. использование TraceSource и фильтров с прослушивателями трассировки](/dotnet/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners).
+Дополнительные сведения о `TraceSource` и см `TraceListener` . в документе [практические руководства. использование TraceSource и фильтров с прослушивателями трассировки](../../../debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners.md).
 
 > [!NOTE]
 > Запуск приложения в режиме аудита недоступен в .NET Core или .NET 5,0 и более поздних версиях.
@@ -236,7 +236,7 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 </configuration>
 ```
 
-Дополнительные сведения см. в описании [\<AppContextSwitchOverrides>](/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) элемента.
+Дополнительные сведения см. в описании [\<AppContextSwitchOverrides>](../../../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) элемента.
 
 В .NET Core, .NET 5 и ASP.NET Core этот параметр управляется _runtimeconfig.jsв_, как показано в следующем примере JSON:
 
@@ -308,7 +308,7 @@ DataSet customers = new DataSet();
 adapter.Fill(customers, "Customers");
 ```
 
-(Приведенный выше пример кода является частью более крупного примера, найденного при [заполнении набора данных из DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).)
+(Приведенный выше пример кода является частью более крупного примера, найденного при [заполнении набора данных из DataAdapter](../populating-a-dataset-from-a-dataadapter.md).)
 
 > Большинство приложений могут упростить и предположить, что их уровень базы данных является доверенным. Тем не менее, если вы в привычке [моделирования угроз](https://www.microsoft.com/securityengineering/sdl/threatmodeling) для приложений, модель угроз может считать, что между приложением (клиентом) и уровнем базы данных (сервер) есть граница доверия. Использование [взаимной проверки подлинности](/sql/relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections) или [проверки подлинности AAD](/azure/azure-sql/database/authentication-aad-overview) между клиентом и сервером является одним из способов помочь в устранении рисков, связанных с этим. Оставшаяся часть этого раздела посвящена возможному результату подключения клиента к серверу, который не является доверенным.
 
@@ -487,4 +487,4 @@ public class MyClass
 * Предоставляет [обширную экосистему](/ef/core/providers/) поставщиков баз данных, облегчающих проецирование запросов к базам данных с помощью объектных моделей Entity Framework.
 * Предлагает встроенные средства защиты при десериализации данных из ненадежных источников.
 
-Для приложений, использующих `.aspx` конечные точки SOAP, рассмотрите возможность изменения этих конечных точек для использования [WCF](/dotnet/framework/wcf/). WCF — это наиболее полнофункциональная замена `.asmx` веб-служб. Конечные точки WCF [могут быть предоставлены через SOAP](/dotnet/framework/wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients) для совместимости с существующими вызывающими объектами.
+Для приложений, использующих `.aspx` конечные точки SOAP, рассмотрите возможность изменения этих конечных точек для использования [WCF](/dotnet/framework/wcf/). WCF — это наиболее полнофункциональная замена `.asmx` веб-служб. Конечные точки WCF [могут быть предоставлены через SOAP](../../../wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) для совместимости с существующими вызывающими объектами.
