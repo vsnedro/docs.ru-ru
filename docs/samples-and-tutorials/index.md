@@ -4,12 +4,12 @@ description: Сведения о примерах и руководствах д
 author: BillWagner
 ms.author: wiwagn
 ms.date: 04/11/2017
-ms.openlocfilehash: 44ce0d740502686db1801db428a2f79c2250f8c0
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: 367b2cbea24ac0da634051bf815c319f3679f79b
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82507433"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417333"
 ---
 # <a name="net-samples-and-tutorials"></a>Примеры и руководства .NET
 
@@ -87,9 +87,9 @@ ms.locfileid: "82507433"
 
 В этом руководстве показано, как создать простое консольное приложение .NET Core с помощью Visual Studio для Mac.
 
-**[Создание полноценного решения .NET Core на базе macOS с помощью Visual Studio для Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
+**[Создание библиотеки .NET Standard в macOS с помощью Visual Studio для Mac](../core/tutorials/library-with-visual-studio-mac.md)**
 
-Этот учебник описывает, как выполнить сборку полноценного решения .NET Core, включающего многоразовую библиотеку и модульное тестирование.
+В этом руководстве показано, как создать библиотеку .NET Standard с помощью Visual Studio для Mac.
 
 **[Создание приложения .NET Core, поддерживающего подключаемые модули](../core/tutorials/creating-app-with-plugin-support.md)**
 

@@ -3,12 +3,12 @@ title: Интерфейс командной строки .NET Core
 titleSuffix: ''
 description: Общие сведения о .NET Core CLI и его функциях.
 ms.date: 02/13/2020
-ms.openlocfilehash: ac5988bacbef41326f2501a2cff6c3f5aa0be798
-ms.sourcegitcommit: 267d092663aba36b6b2ea853034470aea493bfae
+ms.openlocfilehash: f92151c85b4816fef1859e84ad94945445db1854
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80110845"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86415962"
 ---
 # <a name="net-core-cli-overview"></a>Обзор .NET Core CLI
 
@@ -16,7 +16,7 @@ ms.locfileid: "80110845"
 
 Интерфейс командной строки (CLI) .NET Core — это новая базовая кроссплатформенная цепочка инструментов для разработки, компиляции, запуска и публикации приложений .NET Core.
 
-.NET Core CLI входит в [пакет SDK для .NET Core](../sdk.md). Дополнительные сведения об установке пакета SDK для .NET Core см. [здесь](../install/sdk.md).
+.NET Core CLI входит в [пакет SDK для .NET Core](../sdk.md). Дополнительные сведения об установке пакета SDK для .NET Core см. в статье [Установка .NET Core в Windows](../install/windows.md).
 
 ## <a name="cli-commands"></a>Команды CLI
 
@@ -104,4 +104,4 @@ dotnet build
 ## <a name="see-also"></a>См. также
 
 - [Репозиторий GitHub dotnet/sdk](https://github.com/dotnet/sdk/)
-- [Руководство по установке .NET Core](../install/sdk.md)
+- [Руководство по установке .NET Core](../install/windows.md)

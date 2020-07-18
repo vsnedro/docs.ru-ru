@@ -5,12 +5,12 @@ helpviewer_keywords:
 - interfaces [C#]
 - C# language, interfaces
 ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
-ms.openlocfilehash: 5e39279183f7e3745c9373df246d14d69d5ff99b
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.openlocfilehash: 50f2c5fc3570b6d66ed83206660caf4bd02f1f5b
+ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805903"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86441340"
 ---
 # <a name="interfaces-c-programming-guide"></a>Интерфейсы (Руководство по программированию в C#)
 
@@ -50,7 +50,7 @@ ms.locfileid: "80805903"
 
 Интерфейс имеет следующие свойства.
 
-- Интерфейс обычно подобен абстрактному базовому классу, имеющему только абстрактные члены. Любой класс (или структура), реализующий интерфейс, должен реализовывать все его члены. При необходимости интерфейс может определять реализации по умолчанию для некоторых или для всех его членов.
+- Интерфейс обычно подобен абстрактному базовому классу, имеющему только абстрактные члены. Любой класс (или структура), реализующий интерфейс, должен реализовывать все его члены. При необходимости интерфейс может определять реализации по умолчанию для некоторых или для всех его членов. Дополнительные сведения см. в статье о [методах интерфейса по умолчанию](../../tutorials/default-interface-methods-versions.md).
 - Невозможно создать экземпляр интерфейса напрямую. Его члены реализуются любым классом (или структурой), реализующим интерфейс.
 - Класс или структура может реализовывать несколько интерфейсов. Класс может наследовать базовому классу и также реализовывать один или несколько интерфейсов.
 
@@ -61,12 +61,13 @@ ms.locfileid: "80805903"
 - [Практическое руководство. Реализация событий интерфейса](../events/how-to-implement-interface-events.md)
 - [Классы и структуры](../classes-and-structs/index.md)  
 - [Наследование](../classes-and-structs/inheritance.md)  
+- [Интерфейсы](../../language-reference/keywords/interface.md)
 - [Методы](../classes-and-structs/methods.md)  
 - [Полиморфизм](../classes-and-structs/polymorphism.md)  
 - [Абстрактные и запечатанные классы и члены классов](../classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
 - [Свойства](../classes-and-structs/properties.md)  
 - [События](../events/index.md)  
-- [Индексаторы](../indexers/index.md)  
+- [Индексаторы](../indexers/index.md)
   
 ## <a name="see-also"></a>См. также
 
