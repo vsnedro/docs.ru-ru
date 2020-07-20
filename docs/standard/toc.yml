@@ -744,6 +744,8 @@
         - name: Обзор
           href: serialization/binary-serialization.md
           displayName: binary serialization
+        - name: Руководство по безопасности BinaryFormatter
+          href: serialization/binaryformatter-security-guide.md
         - name: Концепции сериализации
           href: serialization/serialization-concepts.md
         - name: Базовая сериализация
