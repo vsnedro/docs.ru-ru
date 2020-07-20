@@ -2,12 +2,12 @@
 title: Скрипты dotnet-install
 description: Сведения о скриптах dotnet-install, которые служат для установки пакета SDK для .NET Core и общей среды выполнения
 ms.date: 04/30/2020
-ms.openlocfilehash: d03877d76212f7b22de0a1075cf50fc75bd104b6
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: cecfbb86c4a2863161d3df7c78201fa8057abfe5
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324424"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86415932"
 ---
 # <a name="dotnet-install-scripts-reference"></a>Справка по скриптам dotnet-install
 
@@ -82,7 +82,7 @@ dotnet-install.sh --help
 
 По умолчанию скрипт добавляет место установки в переменную $PATH для текущего сеанса. Переопределите это поведение по умолчанию, указав аргумент `-NoPath|--no-path`. Скрипт не задает переменную среды `DOTNET_ROOT`.
 
-Перед запуском скрипта установите все необходимые [зависимости](../install/dependencies.md).
+Перед запуском скрипта установите все необходимые [зависимости](../install/windows.md#dependencies).
 
 Вы можете установить конкретную версию с помощью аргумента `-Version|--version`. Версию следует указывать в виде номера из трех частей, например `2.1.0`. Если версия не указана, скрипт устанавливает версию `latest`.
 

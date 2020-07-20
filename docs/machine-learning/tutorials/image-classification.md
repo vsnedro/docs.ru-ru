@@ -4,11 +4,12 @@ description: Узнайте, как передавать знания из су�
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-ms.openlocfilehash: 38fa349e743da54a21aeb65b76a0273a17c3fae7
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: a4c671816dce1fe2abdf77f81da0f27236136536
+ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85804006"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86282116"
 ---
 # <a name="tutorial-generate-an-mlnet-image-classification-model-from-a-pre-trained-tensorflow-model"></a>Учебник. Создание модели классификации изображений ML.NET на основе предварительно обученной модели TensorFlow
 
@@ -148,15 +149,15 @@ toaster2.png    appliance
 
 1. Добавьте следующие новые операторы `using` в начало файла *Program.cs*:
 
-    [!code-csharp[AddUsings](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#AddUsings)]
+    [!code-csharp[AddUsings](./snippets/image-classification/csharp/Program.cs#AddUsings)]
 
 1. Добавьте следующий код в строке справа выше метода `Main` для указания пути к ресурсу:
 
-    [!code-csharp[DeclareGlobalVariables](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#DeclareGlobalVariables)]
+    [!code-csharp[DeclareGlobalVariables](./snippets/image-classification/csharp/Program.cs#DeclareGlobalVariables)]
 
 1. Создайте классы для входных данных и прогнозов.
 
-    [!code-csharp[DeclareImageData](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#DeclareImageData)]
+    [!code-csharp[DeclareImageData](./snippets/image-classification/csharp/Program.cs#DeclareImageData)]
 
     `ImageData` является классом входных данных изображения и имеет следующие поля <xref:System.String>:
 
@@ -165,7 +166,7 @@ toaster2.png    appliance
 
 1. Добавьте новый класс в свой проект для `ImagePrediction`:
 
-    [!code-csharp[DeclareImagePrediction](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#DeclareImagePrediction)]
+    [!code-csharp[DeclareImagePrediction](./snippets/image-classification/csharp/Program.cs#DeclareImagePrediction)]
 
     `ImagePrediction` является классом прогноза изображения и имеет следующие поля:
 
@@ -178,7 +179,7 @@ toaster2.png    appliance
 
 1. Инициализируйте переменную `mlContext` с использованием нового экземпляра `MLContext`.  Замените строку `Console.WriteLine("Hello World!")` в методе `Main` следующим кодом:
 
-    [!code-csharp[CreateMLContext](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#CreateMLContext)]
+    [!code-csharp[CreateMLContext](./snippets/image-classification/csharp/Program.cs#CreateMLContext)]
 
     [Класс MLContext](xref:Microsoft.ML.MLContext) является отправной точкой для любых операций ML.NET. В результате инициализации класса `mlContext` создается среда ML.NET, которая может использоваться всеми объектами в рамках процесса создания модели. По существу он аналогичен классу `DBContext` в Entity Framework.
 
@@ -186,7 +187,7 @@ toaster2.png    appliance
 
 1. Модель Inception имеет несколько параметров, которые необходимо передать. Создайте структуру, чтобы сопоставить значения параметров с понятными именами, с помощью следующего кода сразу после метода `Main()`:
 
-    [!code-csharp[InceptionSettings](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#InceptionSettings)]
+    [!code-csharp[InceptionSettings](./snippets/image-classification/csharp/Program.cs#InceptionSettings)]
 
 ### <a name="create-a-display-utility-method"></a>Создание служебного метода для отображения данных
 
@@ -203,7 +204,7 @@ toaster2.png    appliance
 
 1. Заполните текст метода `DisplayResults`:
 
-    [!code-csharp[DisplayPredictions](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#DisplayPredictions)]
+    [!code-csharp[DisplayPredictions](./snippets/image-classification/csharp/Program.cs#DisplayPredictions)]
 
 ### <a name="create-a-tsv-file-utility-method"></a>Создание служебного метода для TSV-файла
 
@@ -218,7 +219,7 @@ toaster2.png    appliance
 
 1. Заполните текст метода `ReadFromTsv`:
 
-    [!code-csharp[ReadFromTsv](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#ReadFromTsv)]
+    [!code-csharp[ReadFromTsv](./snippets/image-classification/csharp/Program.cs#ReadFromTsv)]
 
     Указанный ниже код анализирует файл `tags.tsv`, после чего добавляет путь к файлу к имени файла изображения для свойства `ImagePath` и загружает его и `Label` в объект `ImageData`.
 
@@ -235,11 +236,11 @@ toaster2.png    appliance
 
 1. Создайте объект `ImageData`, который хранит абсолютный путь и имя файла изображения для одного значения `ImagePath`. Добавьте такой код в следующие строки в методе `ClassifySingleImage()`:
 
-    [!code-csharp[LoadImageData](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#LoadImageData)]
+    [!code-csharp[LoadImageData](./snippets/image-classification/csharp/Program.cs#LoadImageData)]
 
 1. Создайте один прогноз, добавив следующий код в виде следующей строки в методе `ClassifySingleImage`:
 
-    [!code-csharp[PredictSingle](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#PredictSingle)]
+    [!code-csharp[PredictSingle](./snippets/image-classification/csharp/Program.cs#PredictSingle)]
 
     Чтобы получить прогноз, используйте метод [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A). Класс [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) представляет собой удобный API, позволяющий осуществить прогнозирование на основе единственного экземпляра данных. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) не является потокобезопасным. Допустимо использовать в средах прототипов или средах с одним потоком. Для улучшенной производительности и потокобезопасности в рабочей среде используйте службу `PredictionEnginePool`, которая создает [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) объектов [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) для использования во всем приложении. См. руководство по [использованию `PredictionEnginePool` в веб-API ASP.NET Core](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
 
@@ -248,7 +249,7 @@ toaster2.png    appliance
 
 1. Отобразите результат прогнозирования с помощью следующей строки кода в методе `ClassifySingleImage()`:
 
-   [!code-csharp[DisplayPrediction](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#DisplayPrediction)]
+   [!code-csharp[DisplayPrediction](./snippets/image-classification/csharp/Program.cs#DisplayPrediction)]
 
 ## <a name="construct-the-mlnet-model-pipeline"></a>Создание конвейера модели ML.NET
 
@@ -269,13 +270,13 @@ toaster2.png    appliance
 
 1. Добавьте средства оценки для загрузки, изменения размера и извлечения пикселей из данных изображения:
 
-    [!code-csharp[ImageTransforms](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#ImageTransforms)]
+    [!code-csharp[ImageTransforms](./snippets/image-classification/csharp/Program.cs#ImageTransforms)]
 
     Данные изображения должны обрабатываться в формате, который требуется модели TensorFlow. В этом случае изображения загружаются в память, преобразуются в соответствующий размер, а пиксели извлекаются в числовой вектор.
 
 1. Добавьте средство оценки, чтобы загрузить модель TensorFlow и оценить ее:
 
-    [!code-csharp[ScoreTensorFlowModel](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#ScoreTensorFlowModel)]
+    [!code-csharp[ScoreTensorFlowModel](./snippets/image-classification/csharp/Program.cs#ScoreTensorFlowModel)]
 
     Этот этап конвейера загружает модель TensorFlow в память, а затем обрабатывает вектор значений пикселей через сеть модели TensorFlow. Применение входных данных к модели глубокого обучения и формирование выходных данных с помощью модели называется **оценкой**. При полном использовании модели оценка делает вывод или прогноз.
 
@@ -285,29 +286,29 @@ toaster2.png    appliance
 
 1. Добавьте средство оценки, чтобы сопоставлять строковые метки в данных для обучения с целочисленными значениями ключа:
 
-    [!code-csharp[MapValueToKey](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#MapValueToKey)]
+    [!code-csharp[MapValueToKey](./snippets/image-classification/csharp/Program.cs#MapValueToKey)]
 
     Для обучающего алгоритма ML.NET, добавляемого далее, метки должны быть в формате `key`, а не в виде произвольных строк. Ключ — это число, которое содержит сопоставление по принципу "один к одному" со строковым значением.
 
 1. Добавьте алгоритм обучения ML.NET:
 
-    [!code-csharp[AddTrainer](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#AddTrainer)]
+    [!code-csharp[AddTrainer](./snippets/image-classification/csharp/Program.cs#AddTrainer)]
 
 1. Добавьте средство оценки для преобразования значения прогнозируемого ключа обратно в строку:
 
-    [!code-csharp[MapKeyToValue](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#MapKeyToValue)]
+    [!code-csharp[MapKeyToValue](./snippets/image-classification/csharp/Program.cs#MapKeyToValue)]
 
 ## <a name="train-the-model"></a>Обучение модели
 
 1. Загрузите данные для обучения с использованием оболочки [LoadFromTextFile](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile(Microsoft.ML.DataOperationsCatalog,System.String,Microsoft.ML.Data.TextLoader.Options)). Добавьте в следующую строку метода `GenerateModel()` приведенный ниже код:
 
-    [!code-csharp[LoadData](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#LoadData "Load the data")]
+    [!code-csharp[LoadData](./snippets/image-classification/csharp/Program.cs#LoadData "Load the data")]
 
     Данные в ML.NET представлены [классом IDataView](xref:Microsoft.ML.IDataView). `IDataView` позволяет гибко и полно описывать табличные данные (числовые и текстовые). Данные можно загружать в объект `IDataView` из текстового файла или в режиме реального времени (например, из базы данных SQL или файлов журнала).
 
 1. Обучите модель сна основе данных, загруженных ранее:
 
-    [!code-csharp[TrainModel](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#TrainModel)]
+    [!code-csharp[TrainModel](./snippets/image-classification/csharp/Program.cs#TrainModel)]
 
     Метод `Fit()` обучает модель путем применения набора данных для обучения к конвейеру.
 
@@ -315,13 +316,13 @@ toaster2.png    appliance
 
 1. Загрузите и преобразуйте проверочные данные, добавив приведенный ниже код в следующую строку метода `GenerateModel`:
 
-    [!code-csharp[LoadAndTransformTestData](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#LoadAndTransformTestData "Load and transform test data")]
+    [!code-csharp[LoadAndTransformTestData](./snippets/image-classification/csharp/Program.cs#LoadAndTransformTestData "Load and transform test data")]
 
     Есть несколько примеров изображений, которые можно использовать для оценки модели. Как и данные для обучения, их нужно загрузить в `IDataView`, чтобы модель могла их преобразовать.
 
 1. Добавьте следующий код в метод `GenerateModel()` для оценки модели:
 
-    [!code-csharp[Evaluate](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#Evaluate)]
+    [!code-csharp[Evaluate](./snippets/image-classification/csharp/Program.cs#Evaluate)]
 
     Получив прогноз, с помощью метода [Evaluate()](xref:Microsoft.ML.RecommendationCatalog.Evaluate%2A) вы сможете:
 
@@ -332,7 +333,7 @@ toaster2.png    appliance
 
     Используйте следующий код для отображения метрик, передачи результатов и выполнения действий по ним:
 
-    [!code-csharp[DisplayMetrics](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#DisplayMetrics)]
+    [!code-csharp[DisplayMetrics](./snippets/image-classification/csharp/Program.cs#DisplayMetrics)]
 
     Для классификации изображений выполняется оценка следующих метрик:
 
@@ -341,17 +342,17 @@ toaster2.png    appliance
 
 1. Добавьте следующий код, чтобы возвращать обученную модель:
 
-    [!code-csharp[SaveModel](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#ReturnModel)]
+    [!code-csharp[SaveModel](./snippets/image-classification/csharp/Program.cs#ReturnModel)]
 
 ## <a name="run-the-application"></a>Запуск приложения
 
 1. Добавьте вызов `GenerateModel` в метод `Main` после создания класса MLContext:
 
-    [!code-csharp[CallGenerateModel](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#CallGenerateModel)]
+    [!code-csharp[CallGenerateModel](./snippets/image-classification/csharp/Program.cs#CallGenerateModel)]
 
 1. Добавьте такой вызов в метод `ClassifySingleImage()` в виде следующей строки кода в методе `Main`:
 
-    [!code-csharp[CallClassifySingleImage](../../../samples/snippets/machine-learning/TransferLearningTF/csharp/Program.cs#CallClassifySingleImage)]
+    [!code-csharp[CallClassifySingleImage](./snippets/image-classification/csharp/Program.cs#CallClassifySingleImage)]
 
 1. Запустите консольное приложение (CTRL+F5). Результаты выполнения должны выглядеть примерно так, как указано ниже.  Кроме того, могут выводиться предупреждения или сообщения об обработке, но для удобства здесь мы убрали их.
 

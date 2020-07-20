@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9af0bed8a779e1173f552e095f99ad7bf5123f14
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7ccd309c14b73af16487850d1785ecf9b0bb2d97
+ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "65639127"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86459364"
 ---
 > [!WARNING]
-> Двоичная сериализация может быть опасной. Никогда не выполняйте десериализацию данных из ненадежного источника и не пересылайте сериализируемые данные круговым путем через системы, которыми вы не управляете.
+> Двоичная сериализация может быть опасной. Дополнительные сведения см. в разделе [BinaryFormatter Security Guide](../docs/standard/serialization/binaryformatter-security-guide.md).

@@ -4,12 +4,12 @@ ms.date: 08/02/2017
 helpviewer_keywords:
 - Main method [C#], return values
 ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
-ms.openlocfilehash: 7061b6c1988da9f6dfac115ee555a914531df863
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.openlocfilehash: a3e29903448c3eb5e0b7dda027677d1785a445e7
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805923"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86416290"
 ---
 # <a name="main-return-values-c-programming-guide"></a>Значения, возвращаемые методом Main() (Руководство по программированию на C#)
 
@@ -25,7 +25,7 @@ ms.locfileid: "80805923"
 
 ## <a name="example"></a>Пример
 
-В этом примере используются программы командной строки [.NET Core](../../../core/index.yml). Если вы не знакомы с программами командной строки .NET Core, можете обратиться к [этой статье по началу работы](../../../core/tutorials/cli-create-console-app.md).
+В этом примере используются программы командной строки [.NET Core](../../../core/index.yml). Если вы не знакомы с программами командной строки .NET Core, можете обратиться к [этой статье по началу работы](../../../core/tutorials/with-visual-studio-code.md).
 
 Измените метод `Main` в файле *program.cs* следующим образом:
 

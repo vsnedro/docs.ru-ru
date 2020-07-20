@@ -2,12 +2,12 @@
 title: Отладка консольного приложения .NET Core с помощью Visual Studio для Mac
 description: Узнайте, как выполнить отладку консольного приложения .NET Core с помощью Visual Studio для Mac.
 ms.date: 06/08/2020
-ms.openlocfilehash: 4941605923a9897d481aca4ec31408ab62e873f3
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: 7e2a25266fab40b5ef1d0a38b8bbf06a6843746b
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84713487"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86416016"
 ---
 # <a name="tutorial-debug-a-net-core-console-application-using-visual-studio-for-mac"></a>Учебник. Отладка консольного приложения .NET Core с помощью Visual Studio для Mac
 
@@ -15,7 +15,7 @@ ms.locfileid: "84713487"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом учебнике используется консольное приложение, созданное по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](using-on-mac-vs.md).
+- В этом учебнике используется консольное приложение, созданное по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](with-visual-studio-mac.md).
 
 ## <a name="use-debug-build-configuration"></a>Использование конфигурации отладочной сборки
 
@@ -27,7 +27,7 @@ ms.locfileid: "84713487"
 
 1. Запустите Visual Studio для Mac.
 
-1. Откройте проект, созданный по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](using-on-mac-vs.md).
+1. Откройте проект, созданный по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](with-visual-studio-mac.md).
 
    Используемая конфигурация сборки отображается на панели инструментов. На следующем изображении панели инструментов показано, что служба Visual Studio настроена для компиляции отладочной версии приложения:
 

@@ -5,12 +5,12 @@ author: pkulikov
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-ms.openlocfilehash: 0cc42a196589a7ffe77300c9f2cd9cb28229a0a9
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 8ee8b177dc9cc89c4f54956b8c0a274b1d093ece
+ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803980"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86282090"
 ---
 # <a name="tutorial-categorize-iris-flowers-using-k-means-clustering-with-mlnet"></a>Учебник. Категоризация цветов ириса с использованием кластеризации k-средних в ML.NET
 
@@ -77,11 +77,11 @@ ms.locfileid: "85803980"
 1. В диалоговом окне **Добавление нового элемента** выберите **Класс** и измените значение поля **Имя** на *IrisData.cs*. Теперь нажмите кнопку **Добавить**.
 1. Добавьте следующую директиву `using` в новый файл:
 
-   [!code-csharp[Add necessary usings](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/IrisData.cs#Usings)]
+   [!code-csharp[Add necessary usings](./snippets/iris-clustering/csharp/IrisData.cs#Usings)]
 
 Удалите из файла *IrisData.cs* существующее определение класса и добавьте следующий код, который определяет классы `IrisData` и `ClusterPrediction`:
 
-[!code-csharp[Define data classes](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/IrisData.cs#ClassDefinitions)]
+[!code-csharp[Define data classes](./snippets/iris-clustering/csharp/IrisData.cs#ClassDefinitions)]
 
 Класс `IrisData` содержит входные данные и определения для каждого признака в наборе данных. Используйте атрибут [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute), чтобы указать индексы исходных столбцов в файле набора данных.
 
@@ -102,21 +102,21 @@ ms.locfileid: "85803980"
 
 Добавьте прямо перед методом `Main` следующий код, чтобы указать эти пути.
 
-[!code-csharp[Initialize paths](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#Paths)]
+[!code-csharp[Initialize paths](./snippets/iris-clustering/csharp/Program.cs#Paths)]
 
 Чтобы этот код компилировался, добавьте следующие директивы `using` вверху файла *Program.cs*.
 
-[!code-csharp[Add usings for paths](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#UsingsForPaths)]
+[!code-csharp[Add usings for paths](./snippets/iris-clustering/csharp/Program.cs#UsingsForPaths)]
 
 ## <a name="create-ml-context"></a>Создание контекста машинного обучения ML
 
 Добавьте дополнительные директивы `using` в начало файла *Program.cs*.
 
-[!code-csharp[Add Microsoft.ML usings](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#MLUsings)]
+[!code-csharp[Add Microsoft.ML usings](./snippets/iris-clustering/csharp/Program.cs#MLUsings)]
 
 В методе `Main` замените строку `Console.WriteLine("Hello World!");` следующим кодом:
 
-[!code-csharp[Create ML context](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#CreateContext)]
+[!code-csharp[Create ML context](./snippets/iris-clustering/csharp/Program.cs#CreateContext)]
 
 Класс <xref:Microsoft.ML.MLContext?displayProperty=nameWithType> представляет среду машинного обучения и предоставляет механизмы для ведения журнала и точек входа для загрузки данных, обучения модели, прогнозирования и других задач. Концептуально это сопоставимо с использованием `DbContext` в Entity Framework.
 
@@ -124,7 +124,7 @@ ms.locfileid: "85803980"
 
 Добавьте следующий код к методу `Main`, чтобы настроить способ загрузки данных:
 
-[!code-csharp[Create text loader](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#CreateDataView)]
+[!code-csharp[Create text loader](./snippets/iris-clustering/csharp/Program.cs#CreateDataView)]
 
 Универсальный [метод расширения `MLContext.Data.LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%60%601%28Microsoft.ML.DataOperationsCatalog,System.String,System.Char,System.Boolean,System.Boolean,System.Boolean,System.Boolean%29) выводит схему набора данных на основе предоставленного типа `IrisData` и возвращает интерфейс <xref:Microsoft.ML.IDataView>, который можно использовать в качестве входных данных для преобразования.
 
@@ -137,7 +137,7 @@ ms.locfileid: "85803980"
 
 Добавьте следующий код в метод `Main`:
 
-[!code-csharp[Create pipeline](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#CreatePipeline)]
+[!code-csharp[Create pipeline](./snippets/iris-clustering/csharp/Program.cs#CreatePipeline)]
 
 В этом коде указано, что набор данных нужно разделить на три кластера.
 
@@ -145,19 +145,19 @@ ms.locfileid: "85803980"
 
 Выполнив действия в предыдущих разделах, вы подготовили конвейер для обучения, но пока ничего не было сделано. Добавьте следующую строку к методу `Main`, чтобы выполнить загрузку данных и обучение модели:
 
-[!code-csharp[Train the model](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#TrainModel)]
+[!code-csharp[Train the model](./snippets/iris-clustering/csharp/Program.cs#TrainModel)]
 
 ### <a name="save-the-model"></a>Сохранение модели
 
 На этом этапе у вас есть модель, которую можно интегрировать с любыми существующими или новыми приложениями .NET. Чтобы сохранить модель в ZIP-файл, добавьте к методу `Main` следующий код:
 
-[!code-csharp[Save the model](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#SaveModel)]
+[!code-csharp[Save the model](./snippets/iris-clustering/csharp/Program.cs#SaveModel)]
 
 ## <a name="use-the-model-for-predictions"></a>Использование модели для прогнозирования
 
 Чтобы получить прогноз, используйте класс <xref:Microsoft.ML.PredictionEngine%602>, который принимает экземпляры входного типа через конвейер преобразователя и создает экземпляры выходного типа. Добавьте следующую строку к методу `Main` для создания экземпляра этого класса:
 
-[!code-csharp[Create predictor](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#Predictor)]
+[!code-csharp[Create predictor](./snippets/iris-clustering/csharp/Program.cs#Predictor)]
 
 Класс [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) представляет собой удобный API, позволяющий осуществить прогнозирование на основе единственного экземпляра данных. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) не является потокобезопасным. Допустимо использовать в средах прототипов или средах с одним потоком. Для улучшенной производительности и потокобезопасности в рабочей среде используйте службу `PredictionEnginePool`, которая создает [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) объектов [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) для использования во всем приложении. См. руководство по [использованию `PredictionEnginePool` в веб-API ASP.NET Core](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
 
@@ -170,15 +170,15 @@ ms.locfileid: "85803980"
 1. В диалоговом окне **Добавление нового элемента** выберите **Класс** и измените значение поля **Имя** на *TestIrisData.cs*. Теперь нажмите кнопку **Добавить**.
 1. Измените класс, чтобы он был статическим, как показано в следующем примере:
 
-   [!code-csharp[Make class static](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/TestIrisData.cs#Static)]
+   [!code-csharp[Make class static](./snippets/iris-clustering/csharp/TestIrisData.cs#Static)]
 
 В этом руководстве представлен один экземпляр данных ирисов в этом классе. Вы можете добавить другие сценарии и поэкспериментировать с этой моделью. Добавьте в класс `TestIrisData` следующий код:
 
-[!code-csharp[Test data](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/TestIrisData.cs#TestData)]
+[!code-csharp[Test data](./snippets/iris-clustering/csharp/TestIrisData.cs#TestData)]
 
 Чтобы узнать, к какому кластеру принадлежит указанный элемент, вернитесь к файлу *Program.cs* и добавьте следующий код в метод `Main`:
 
-[!code-csharp[Predict and output results](~/samples/snippets/machine-learning/IrisFlowerClustering/csharp/Program.cs#PredictionExample)]
+[!code-csharp[Predict and output results](./snippets/iris-clustering/csharp/Program.cs#PredictionExample)]
 
 Запустите программу, чтобы узнать, какой кластер содержит указанный экземпляр данных и квадрат расстояния от этого экземпляра до центроидов кластера. Результаты выполнения должны выглядеть примерно так:
 
