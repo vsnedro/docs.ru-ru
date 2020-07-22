@@ -9,65 +9,65 @@ helpviewer_keywords:
 - templates [WPF], ComboBox
 - parts [WPF], ComboBox
 ms.assetid: b0662fa1-16d7-4320-b26b-c1804e565a44
-ms.openlocfilehash: 887698bdaebf7bc5ddac8997167589d9fbd3dd4d
-ms.sourcegitcommit: 42ed59871db1f29a32b3d8e7abeb20e6eceeda7c
+ms.openlocfilehash: af7f8a544af5e9892a8f3f059048bbfd113d2491
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74960380"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865363"
 ---
 # <a name="combobox-styles-and-templates"></a>Стили и шаблоны элемента ComboBox
-В этом разделе описываются стили и шаблоны для элемента управления <xref:System.Windows.Controls.ComboBox>. Можно изменить <xref:System.Windows.Controls.ControlTemplate> по умолчанию, чтобы обеспечить уникальность внешнего вида элемента управления. Дополнительные сведения см. в разделе [Создание шаблона для элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
+В этом разделе описываются стили и шаблоны для <xref:System.Windows.Controls.ComboBox> элемента управления. Можно изменить значение по умолчанию, <xref:System.Windows.Controls.ControlTemplate> чтобы обеспечить уникальность внешнего вида элемента управления. Дополнительные сведения см. в разделе [Создание шаблона для элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
 ## <a name="combobox-parts"></a>Части поля со списком  
- В следующей таблице перечислены именованные части для элемента управления <xref:System.Windows.Controls.ComboBox>.  
+ В следующей таблице перечислены именованные части <xref:System.Windows.Controls.ComboBox> элемента управления.  
   
 |Часть|Тип|Описание|  
 |-|-|-|  
-|PART_EditableTextBox|<xref:System.Windows.Controls.TextBox>|Содержит текст <xref:System.Windows.Controls.ComboBox>.|  
+|PART_EditableTextBox|<xref:System.Windows.Controls.TextBox>|Содержит текст <xref:System.Windows.Controls.ComboBox> .|  
 |PART_Popup|<xref:System.Windows.Controls.Primitives.Popup>|Раскрывающийся список, содержащий элементы в поле со списком.|  
   
- При создании <xref:System.Windows.Controls.ControlTemplate> для <xref:System.Windows.Controls.ComboBox>шаблон может содержать <xref:System.Windows.Controls.ItemsPresenter> в пределах <xref:System.Windows.Controls.ScrollViewer>. (<xref:System.Windows.Controls.ItemsPresenter> отображает каждый элемент в <xref:System.Windows.Controls.ComboBox>; <xref:System.Windows.Controls.ScrollViewer> включает прокрутку в элементе управления).  Если <xref:System.Windows.Controls.ItemsPresenter> не является прямым дочерним элементом <xref:System.Windows.Controls.ScrollViewer>, необходимо присвоить <xref:System.Windows.Controls.ItemsPresenter> имя, `ItemsPresenter`.  
+ При создании <xref:System.Windows.Controls.ControlTemplate> для в <xref:System.Windows.Controls.ComboBox> шаблон может содержать <xref:System.Windows.Controls.ItemsPresenter> в <xref:System.Windows.Controls.ScrollViewer> . ( <xref:System.Windows.Controls.ItemsPresenter> Отображает каждый элемент в <xref:System.Windows.Controls.ComboBox> ; <xref:System.Windows.Controls.ScrollViewer> включает прокрутку в элементе управления).  Если объект не <xref:System.Windows.Controls.ItemsPresenter> является прямым дочерним элементом объекта <xref:System.Windows.Controls.ScrollViewer> , необходимо присвоить ему <xref:System.Windows.Controls.ItemsPresenter> имя `ItemsPresenter` .  
   
 ## <a name="combobox-states"></a>Состояния ComboBox  
- В следующей таблице перечислены состояния для элемента управления <xref:System.Windows.Controls.ComboBox>.  
+ В следующей таблице перечислены состояния для <xref:System.Windows.Controls.ComboBox> элемента управления.  
   
 |Имя VisualState|Имя VisualStateGroup|Описание|  
 |-|-|-|  
-|Нормальный|CommonStates|Состояние по умолчанию.|  
-|Отключено.|CommonStates|Элемент управления отключен.|  
-|MouseOver|CommonStates|Указатель мыши находится над элементом управления <xref:System.Windows.Controls.ComboBox>.|  
+|Норм.|CommonStates|Состояние по умолчанию.|  
+|Отключено|CommonStates|Элемент управления отключен.|  
+|MouseOver|CommonStates|Указатель мыши находится над <xref:System.Windows.Controls.ComboBox> элементом управления.|  
 |Focused|FocusStates|Элемент управления имеет фокус.|  
 |Без фокуса ввода|FocusStates|Элемент управления не имеет фокуса.|  
 |фокуседдропдовн|FocusStates|Раскрывающийся список для <xref:System.Windows.Controls.ComboBox> имеет фокус.|  
-|Допустимо|ValidationStates|Элемент управления использует класс <xref:System.Windows.Controls.Validation>, а <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенным свойством является `false`.|  
-|InvalidFocused|ValidationStates|Присоединенное <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> свойство имеет `true` элемент управления имеет фокус.|  
-|InvalidUnfocused|ValidationStates|Присоединенное <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> свойство имеет `true` элемент управления не имеет фокуса.|  
+|Допустимо|ValidationStates|Элемент управления использует <xref:System.Windows.Controls.Validation> класс, а <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенное свойство — `false` .|  
+|InvalidFocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType>Присоединенное свойство имеет значение `true` , а элемент управления имеет фокус.|  
+|InvalidUnfocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType>Присоединенное свойство имеет значение `true` , а элемент управления не имеет фокуса.|  
 |Editable|едитстатес|Значение свойства <xref:System.Windows.Controls.ComboBox.IsEditable%2A> — `true`.|  
 |Недоступными|едитстатес|Значение свойства <xref:System.Windows.Controls.ComboBox.IsEditable%2A> — `false`.|  
   
 ## <a name="comboboxitem-parts"></a>Комбобокситем части  
- Элемент управления <xref:System.Windows.Controls.ComboBoxItem> не имеет именованных частей.  
+ <xref:System.Windows.Controls.ComboBoxItem>Элемент управления не имеет именованных частей.  
   
 ## <a name="comboboxitem-states"></a>Состояния Комбобокситем  
- В следующей таблице перечислены состояния для элемента управления <xref:System.Windows.Controls.ComboBoxItem>.  
+ В следующей таблице перечислены состояния для <xref:System.Windows.Controls.ComboBoxItem> элемента управления.  
   
 |Имя VisualState|Имя VisualStateGroup|Описание|  
 |-|-|-|  
-|Нормальный|CommonStates|Состояние по умолчанию.|  
-|Отключено.|CommonStates|Элемент управления отключен.|  
-|MouseOver|CommonStates|Указатель мыши находится над элементом управления <xref:System.Windows.Controls.ComboBoxItem>.|  
+|Норм.|CommonStates|Состояние по умолчанию.|  
+|Отключено|CommonStates|Элемент управления отключен.|  
+|MouseOver|CommonStates|Указатель мыши находится над <xref:System.Windows.Controls.ComboBoxItem> элементом управления.|  
 |Focused|FocusStates|Элемент управления имеет фокус.|  
 |Без фокуса ввода|FocusStates|Элемент управления не имеет фокуса.|  
-|Выбранные|SelectionStates|Элемент выбран в данный момент.|  
+|Выбрано|SelectionStates|Элемент выбран в данный момент.|  
 |Unselected|SelectionStates|Элемент не выбран.|  
 |SelectedUnfocused|SelectionStates|Элемент выбран, но не имеет фокуса.|  
-|Допустимо|ValidationStates|Элемент управления использует класс <xref:System.Windows.Controls.Validation>, а <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенным свойством является `false`.|  
-|InvalidFocused|ValidationStates|Присоединенное <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> свойство имеет `true` элемент управления имеет фокус.|  
-|InvalidUnfocused|ValidationStates|Присоединенное <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> свойство имеет `true` элемент управления не имеет фокуса.|  
+|Допустимо|ValidationStates|Элемент управления использует <xref:System.Windows.Controls.Validation> класс, а <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенное свойство — `false` .|  
+|InvalidFocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType>Присоединенное свойство имеет значение `true` , а элемент управления имеет фокус.|  
+|InvalidUnfocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType>Присоединенное свойство имеет значение `true` , а элемент управления не имеет фокуса.|  
   
 ## <a name="combobox-controltemplate-example"></a>Пример поля ControlTemplate ComboBox  
- В следующем примере показано, как определить <xref:System.Windows.Controls.ControlTemplate> для элемента управления <xref:System.Windows.Controls.ComboBox> и связанных типов.  
+ В следующем примере показано, как определить <xref:System.Windows.Controls.ControlTemplate> для <xref:System.Windows.Controls.ComboBox> элемента управления и связанных с ним типов.  
   
  [!code-xaml[ControlTemplateExamples#ComboBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/combobox.xaml#combobox)]  
   
@@ -77,11 +77,11 @@ ms.locfileid: "74960380"
   
  Полный пример см. в разделе [Пример задания стиля с помощью ControlTemplates](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Стили и шаблоны элемента управления](control-styles-and-templates.md)
+- [Стили и шаблоны элемента Control](control-styles-and-templates.md)
 - [Настройка элементов управления](control-customization.md)
 - [Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
-- [Создание шаблона для элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md)
+- [Создание шаблона элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md)
