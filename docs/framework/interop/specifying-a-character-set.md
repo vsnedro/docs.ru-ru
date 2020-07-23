@@ -1,5 +1,6 @@
 ---
 title: Определение кодировки
+description: Сведения о том, как указать набор символов, использующий обычную (ANSI) или двухбайтовую (Юникод) кодировку. Можно также настроить автоматический выбор во время выполнения.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,14 +11,15 @@ helpviewer_keywords:
 - attribute fields in platform invoke, CharSet
 - CharSet field
 ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
-ms.openlocfilehash: 0db1cd8d75b45f6d718168793c873e5867028269
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 789753742d8714e481f038e323407cbab0499f6c
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125178"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309798"
 ---
-# <a name="specifying-a-character-set"></a>Определение кодировки
+# <a name="specify-a-character-set"></a>Определение кодировки
+
 Поле <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> управляет маршалингом строк и определяет, каким образом при вызове неуправляемого кода будут обнаруживаться имена функций в библиотеке DLL. В этом разделе описываются оба механизма.  
   
  Некоторые API экспортируют две версии функций, которые принимают строковые аргументы: обычные (ANSI) и двухбайтовые (Юникод). Например, API Windows включает следующие имена точек входа для функции **MessageBox**:  
@@ -61,11 +63,12 @@ ms.locfileid: "73125178"
   
 - При вызове неуправляемого кода во время выполнения осуществляется выбор между форматами ANSI и Юникода в соответствии с целевой платформой.  
   
-## <a name="specifying-a-character-set-in-visual-basic"></a>Определение кодировки в Visual Basic  
- В следующем примере функция **MessageBox** объявляется три раза с разными кодировками. В Visual Basic можно указать поведение кодировки, добавив ключевое слово **Ansi**, **Unicode** или **Auto** в оператор объявления.  
-  
- Если опустить ключевое слово кодировки, как показано в первом операторе объявления, в поле <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> по умолчанию будет задана кодировка ANSI. Во втором и третьем операторе в этом примере кодировка задается явно с использованием ключевого слова.  
-  
+## <a name="specify-a-character-set-in-visual-basic"></a>Определение кодировки в Visual Basic
+
+В Visual Basic можно указать поведение кодировки, добавив ключевое слово `Ansi`, `Unicode` или `Auto` в операторе объявления. Если опустить ключевое слово кодировки, в поле <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> по умолчанию будет задана кодировка ANSI.
+
+В следующем примере функция **MessageBox** объявляется три раза с разными кодировками. В первом операторе ключевое слово кодировки опущено, в связи с чем по умолчанию устанавливается кодировка ANSI. Во втором и третьем операторе кодировка задается явно с использованием ключевого слова.
+
 ```vb
 Friend Class NativeMethods
     Friend Declare Function MessageBoxA Lib "user32.dll" (
@@ -88,8 +91,9 @@ Friend Class NativeMethods
 End Class
 ```
   
-## <a name="specifying-a-character-set-in-c-and-c"></a>Определение кодировки в C# и C++  
- Поле <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> определяет базовую кодировку как ANSI или Юникод. Кодировка определяет порядок маршалинга строковых аргументов в метод. Чтобы указать кодировку, используйте одну из следующих форм:  
+## <a name="specify-a-character-set-in-c-and-c"></a>Определение кодировки в C# и C++
+
+Поле <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> определяет базовую кодировку как ANSI или Юникод. Кодировка определяет порядок маршалинга строковых аргументов в метод. Чтобы указать кодировку, используйте одну из следующих форм:  
   
 ```csharp
 [DllImport("DllName", CharSet = CharSet.Ansi)]

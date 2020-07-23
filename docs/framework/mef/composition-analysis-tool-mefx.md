@@ -1,17 +1,18 @@
 ---
 title: Средство анализа композиции (Mefx)
+description: Сведения о средстве анализа композиции (Mefx), которое анализирует файлы DLL и EXE, содержащие части Managed Extensibility Framework (MEF), в .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Composition Analysis Tool [MEF]
 - MEF, Composition Analysis Tool
 - Mefx [MEF], Composition Analysis Tool
 ms.assetid: c48a7f93-83bb-4a06-aea0-d8e7bd1502ad
-ms.openlocfilehash: 7d0acf16ace5aad60b32b7139a58a258fb080ee0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: abb1459afc5aeb2d39ee553c62fe382bb7af58d5
+ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79181299"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86281281"
 ---
 # <a name="composition-analysis-tool-mefx"></a>Средство анализа композиции (Mefx)
 Средство анализа композиции (Mefx) — это приложение командной строки, анализирующее файлы библиотеки (.dll) и приложений (.exe) с частями Managed Extensibility Framework (MEF). Основное назначение Mefx — предоставить разработчикам способ диагностики ошибок композиции в приложениях MEF, не добавляя громоздкий код трассировки в само приложение. Это средство также помогает понять части из сторонней библиотеки. В этом разделе описывается использование Mefx, содержится справочная информация по его синтаксису.  

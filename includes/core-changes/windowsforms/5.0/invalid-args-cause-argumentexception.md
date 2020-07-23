@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: aab7d8538c875e35c832acc2a6c64beb84d4fb47
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: 9f6703c77e17ac9376aee944b891f4635dc7632e
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84702453"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309165"
 ---
 ### <a name="winforms-methods-now-throw-argumentexception"></a>Теперь методы WinForms вызывают исключение ArgumentException
 
@@ -15,13 +15,6 @@ ms.locfileid: "84702453"
 Ранее передача аргументов непредвиденного или неверного типа в определенные методы Windows Forms приводила к неопределенному состоянию. Начиная с .NET 5.0 эти методы теперь вызывают <xref:System.ArgumentException> при передаче недопустимых аргументов.
 
 Вызов <xref:System.ArgumentException> соответствует поведению среды выполнения .NET. Это также улучшает процесс отладки, четко указывая, какой аргумент недопустим.
-
-В следующей таблице перечислены затронутые методы и параметры:
-
-| Метод | Имя параметра | Условие | Добавлено в версии |
-|-|-|-|-|
-| <xref:System.Windows.Forms.TabControl.GetToolTipText(System.Object)?displayProperty=fullName> | `item` | Аргумент не является аргументом типа <xref:System.Windows.Forms.TabPage>. | 5.0 Предварительная версия 1 |
-| <xref:System.Windows.Forms.DataFormats.GetFormat(System.String)?displayProperty=fullName> | `format` | Аргумент содержит `null`, <xref:System.String.Empty?displayProperty=nameWithType> или пробел. | 5.0, предварительная версия 5 |
 
 #### <a name="version-introduced"></a>Представленная версия
 
@@ -38,8 +31,13 @@ Windows Forms
 
 #### <a name="affected-apis"></a>Затронутые API
 
-- <xref:System.Windows.Forms.TabControl.GetToolTipText(System.Object)?displayProperty=fullName>
-- <xref:System.Windows.Forms.DataFormats.GetFormat(System.String)?displayProperty=fullName>
+В следующей таблице перечислены затронутые методы и параметры:
+
+| Метод | Имя параметра | Условие | Добавлено в версии |
+|-|-|-|-|
+| <xref:System.Windows.Forms.TabControl.GetToolTipText(System.Object)?displayProperty=fullName> | `item` | Аргумент не является аргументом типа <xref:System.Windows.Forms.TabPage>. | Предварительная версия 1 |
+| <xref:System.Windows.Forms.DataFormats.GetFormat(System.String)?displayProperty=fullName> | `format` | Аргумент содержит `null`, <xref:System.String.Empty?displayProperty=nameWithType> или пробел. | Предварительная версия 5 |
+| <xref:System.Windows.Forms.InputLanguageChangedEventArgs.%23ctor(System.Globalization.CultureInfo,System.Byte)> | `culture` | Не удается извлечь `InputLanguage` для заданных языка и региональных параметров. | Предварительная версия 7 |
 
 <!-- 
 
@@ -47,5 +45,6 @@ Windows Forms
 
 - `M:System.Windows.Forms.TabControl.GetToolTipText(System.Object)`
 - `M:System.Windows.Forms.DataFormats.GetFormat(System.String)`
+- `M:System.Windows.Forms.InputLanguageChangedEventArgs.%23ctor(System.Globalization.CultureInfo,System.Byte)`
 
 -->

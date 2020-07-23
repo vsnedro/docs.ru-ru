@@ -5,12 +5,12 @@ author: adegeo
 ms.author: adegeo
 ms.date: 12/03/2019
 ms.custom: vs-dotnet
-ms.openlocfilehash: 5cfd9925f4ee93ef4ebe15ebf16febdfb98aaa9a
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: ddbee0764897b511cac0c4142354ba995d94a2b6
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85325014"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86416062"
 ---
 # <a name="get-started-with-net-core"></a>Начало работы с .NET Core
 
@@ -75,7 +75,7 @@ Hello World!
 - [Начало работы с .NET Core в macOS с помощью Visual Studio Code](./tutorials/using-on-macos.md)
 - [Начало работы с .NET Core с помощью командной строки.](./tutorials/cli-create-console-app.md)
 - [Начало работы с .NET Core в macOS с помощью Visual Studio для Mac](./tutorials/using-on-mac-vs.md)
-- [Создание полноценного решения .NET Core на базе macOS с помощью Visual Studio для Mac](./tutorials/using-on-mac-vs-full-solution.md)
+- [Создание библиотеки .NET Standard в macOS с помощью Visual Studio для Mac](tutorials/library-with-visual-studio-mac.md)
 
 |   |   |
 |---|---|

@@ -2,12 +2,12 @@
 title: Новые возможности в C# 8.0. Руководство по языку C#
 description: Обзор новых функций, доступных в C# 8.0.
 ms.date: 04/07/2020
-ms.openlocfilehash: b4a9a1be0b0b60b0abda0b1f031dc648d831b46a
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 14df381e17fe89bd862f97522c7efd814857e71e
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174735"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86309408"
 ---
 # <a name="whats-new-in-c-80"></a>Новые возможности C# 8.0
 
@@ -398,7 +398,7 @@ await foreach (var number in GenerateSequence())
 
 ## <a name="asynchronous-disposable"></a>Асинхронные высвобождаемые типы
 
-Начиная с C# 8.0 язык поддерживает асинхронные освобождаемые типы, реализующие интерфейс <xref:System.IAsyncDisposable?displayProperty=nameWithType>. Операнд выражения `using` может реализовывать <xref:System.IDisposable> или <xref:System.IAsyncDisposable>. В случае `IAsyncDisposable` компилятор создает код для `await`, возвращенного <xref:System.Threading.Tasks.Task> из <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType>. Дополнительные сведения см. в описании [инструкции `using`](../language-reference/keywords/using-statement.md).
+Начиная с C# 8.0 язык поддерживает асинхронные освобождаемые типы, реализующие интерфейс <xref:System.IAsyncDisposable?displayProperty=nameWithType>. Для работы с асинхронно освобождаемым объектами используется инструкция `await using`. Дополнительные сведения см. в статье [Реализация метода DisposeAsync](../../standard/garbage-collection/implementing-disposeasync.md).
 
 ## <a name="indices-and-ranges"></a>Индексы и диапазоны
 

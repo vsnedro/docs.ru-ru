@@ -1,18 +1,18 @@
 ---
 title: Настройка маршалинга структур — .NET
-description: Из этой статьи вы узнаете, как настроить способ, с помощью которого .NET маршалирует ваши структуры в собственное представление.
+description: Из этой статьи вы узнаете, как настроить способ, с помощью которого .NET маршалирует структуры в собственное представление.
 ms.date: 01/18/2019
 dev_langs:
 - csharp
 - cpp
-ms.openlocfilehash: 8248ca589f41967a9112ba61c09599b337814de7
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: c82e0099c44b8033cad241d69bdd284243711a50
+ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84003897"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86374537"
 ---
-# <a name="customizing-structure-marshaling"></a>Настройка маршалинга структур
+# <a name="customize-structure-marshaling"></a>Настройка маршалинга структур
 
 Иногда стандартные правила маршалинга структур не совсем подходят. В средах выполнения .NET предусмотрены точки расширения, которые позволяют настроить макет структуры и способ маршалинга полей.
 
@@ -264,7 +264,7 @@ struct BString
 };
 ```
 
-Если используется API на базе WinRT, возможно, потребуется маршалировать строку как `HSTRING`.  Вы можете маршалировать строку как `HSTRING`, используя значение <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType>.
+Если используется API на базе WinRT, возможно, потребуется маршалировать строку как `HSTRING`. Вы можете маршалировать строку как `HSTRING`, используя значение <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType>.
 
 ```csharp
 public struct HString
@@ -317,7 +317,7 @@ struct DefaultString
 
 ## <a name="customizing-decimal-field-marshaling"></a>Настройка маршалинга полей десятичных чисел
 
-Если вы работаете в системе Windows, то некоторые API могут использовать собственную структуру [`CY` или `CURRENCY`](/windows/win32/api/wtypes/ns-wtypes-cy~r1). По умолчанию тип .NET `decimal` маршалируется в собственную структуру [`DECIMAL`](/windows/win32/api/wtypes/ns-wtypes-decimal~r1). Но можно использовать атрибут <xref:System.Runtime.InteropServices.MarshalAsAttribute> со значением <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType>, чтобы маршалер преобразовывал значение `decimal` в собственное значение `CY`.
+Если вы работаете в системе Windows, то некоторые API могут использовать собственную структуру [`CY` или `CURRENCY`](/windows/win32/api/wtypes/ns-wtypes-cy-r1). По умолчанию тип .NET `decimal` маршалируется в собственную структуру [`DECIMAL`](/windows/win32/api/wtypes/ns-wtypes-decimal-r1). Но можно использовать атрибут <xref:System.Runtime.InteropServices.MarshalAsAttribute> со значением <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType>, чтобы маршалер преобразовывал значение `decimal` в собственное значение `CY`.
 
 ```csharp
 public struct Currency
@@ -334,7 +334,7 @@ struct Currency
 };
 ```
 
-## <a name="marshaling-systemobjects"></a>Маршалинг `System.Object`
+## <a name="marshal-systemobject"></a>Маршалинг `System.Object`
 
 В системе Windows можно маршалировать поля типа `object` в машинный код. Эти поля можно маршалировать в один из трех типов:
 

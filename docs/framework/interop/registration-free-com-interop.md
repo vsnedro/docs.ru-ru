@@ -1,5 +1,6 @@
 ---
 title: COM-взаимодействие без регистрации
+description: Применение COM-взаимодействия без регистрации для активации компонента без использования реестра Windows для хранения сведений о сборке.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - assemblies [.NET Framework], interop
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - object activation
 - registration-free COM interop, about registration-free COM interop
 ms.assetid: 90f308b9-82dc-414a-bce1-77e0155e56bd
-ms.openlocfilehash: f73bb2ac9e1b942c08f83507589b534d7e67748d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c6a4dfc54152ade6136e4292bbd1c4522553d491
+ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73124961"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86281606"
 ---
 # <a name="registration-free-com-interop"></a>COM-взаимодействие без регистрации
 COM-взаимодействие без регистрации активирует компонент, не используя реестр Windows для хранения сведений о сборке. Вместо регистрации компонента на компьютере во время развертывания необходимо в режиме разработки создать файлы манифеста в стиле Win32, содержащие информацию о привязке и активации. Именно эти файлы манифеста, а не ключи реестра, управляют активацией объекта.  

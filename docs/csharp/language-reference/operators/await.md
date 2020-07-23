@@ -1,18 +1,18 @@
 ---
 title: Оператор await — справочник по C#
-ms.date: 11/08/2019
+ms.date: 07/13/2020
 f1_keywords:
 - await_CSharpKeyword
 helpviewer_keywords:
 - await keyword [C#]
 - await [C#]
 ms.assetid: 50725c24-ac76-4ca7-bca1-dd57642ffedb
-ms.openlocfilehash: 83ee51fcbcc5911c688e30542cefb1c56578a578
-ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
+ms.openlocfilehash: 76c6b24c1cd061585c7a6964d30bc81cc5fc5975
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82141027"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308849"
 ---
 # <a name="await-operator-c-reference"></a>Оператор await (справочник по C#)
 
@@ -31,11 +31,17 @@ ms.locfileid: "82141027"
 
 Операнд оператора `await` обычно имеет один из следующих типов .NET: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask> или <xref:System.Threading.Tasks.ValueTask%601>. Однако любое ожидаемое выражение может быть операндом оператора `await`. Дополнительные сведения см. в разделе об [ожидаемых выражениях](~/_csharplang/spec/expressions.md#awaitable-expressions) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
-Начиная с версии C# 8.0, вы можете использовать инструкцию `await foreach` для работы с асинхронным потоком данных. Дополнительные сведения см. в статье [Инструкция `foreach`](../keywords/foreach-in.md) и в разделе [Асинхронные потоки](../../whats-new/csharp-8.md#asynchronous-streams) статьи [Новые возможности в C# 8.0](../../whats-new/csharp-8.md).
-
 Тип выражения `await t` является `TResult`, если тип выражения `t` является <xref:System.Threading.Tasks.Task%601> или <xref:System.Threading.Tasks.ValueTask%601>. Если тип `t` является <xref:System.Threading.Tasks.Task> или <xref:System.Threading.Tasks.ValueTask>, тип `await t` является `void`. В обоих случаях, если `t` вызывает исключение, `await t` воспроизводит это исключение. Дополнительные сведения об обработке исключений см. в разделе [Исключения в асинхронных методах](../keywords/try-catch.md#exceptions-in-async-methods) в статье о [try-catch](../keywords/try-catch.md).
 
 Ключевые слова `async` и `await` доступны, начиная с версии C# 5.
+
+## <a name="asynchronous-streams-and-disposables"></a>Асинхронные потоки и освобождаемые объекты
+
+Начиная с версии C# 8.0 вы можете работать с асинхронными потоками и освобождаемыми объектами.
+
+Вы можете использовать инструкцию `await foreach` для работы с асинхронным потоком данных. Дополнительные сведения см. в статье [Инструкция `foreach`](../keywords/foreach-in.md) и в разделе [Асинхронные потоки](../../whats-new/csharp-8.md#asynchronous-streams) статьи [Новые возможности в C# 8.0](../../whats-new/csharp-8.md).
+
+Инструкция `await using` используется для работы с асинхронно освобождаемым объектом, то есть с объектом типа, который реализует интерфейс <xref:System.IAsyncDisposable>. Дополнительные сведения см. в разделе [Использование асинхронных освобождаемых объектов](../../../standard/garbage-collection/implementing-disposeasync.md#using-async-disposable) статьи [Реализация метода DisposeAsync](../../../standard/garbage-collection/implementing-disposeasync.md).
 
 ## <a name="await-operator-in-the-main-method"></a>Оператор await в методе Main
 

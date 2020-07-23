@@ -2,16 +2,16 @@
 title: Создание библиотеки классов .NET Standard с помощью Visual Studio для Mac
 description: Сведения о создании библиотеки классов .NET Standard с помощью Visual Studio для Mac.
 ms.date: 06/08/2020
-ms.openlocfilehash: 3a107fff2fd6aef5e06d9af3eac334fbf5688fa5
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: 8e1e4ca3bc1b12d889b847d80318f3d6cd1bbe46
+ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84713421"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86416009"
 ---
 # <a name="tutorial-create-a-net-standard-library-using-visual-studio-for-mac"></a>Учебник. Создание библиотеки .NET Standard с помощью Visual Studio для Mac
 
-В этом учебнике вы создадите простую библиотеку классов с одним методом для обработки строк. Вы реализуете его как [метод расширения](../../csharp/programming-guide/classes-and-structs/extension-methods.md), чтобы вызывать его так же, как любой член класса <xref:System.String>.
+В этом учебнике вы создадите библиотеку классов с одним методом для обработки строк. Вы реализуете его как [метод расширения](../../csharp/programming-guide/classes-and-structs/extension-methods.md), чтобы вызывать его так же, как любой член класса <xref:System.String>.
 
 *Библиотека классов* определяет типы и методы, которые могут быть вызваны из любого приложения. Библиотеку классов, предназначенную для .NET Standard 2.1, может использовать приложение для любой реализации .NET, которая поддерживает версию .NET Standard 2.1. Когда вы завершите создание библиотеки классов, можете распространить ее как независимый компонент или включить в состав одного или нескольких пакетов приложения.
 

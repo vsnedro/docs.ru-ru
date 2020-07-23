@@ -4,11 +4,12 @@ description: Сведения о версиях macOS, в которых воз�
 author: adegeo
 ms.author: adegeo
 ms.date: 06/25/2020
-ms.openlocfilehash: bb1a0fa24e2f6e8850cbe59378793ff846f04ba9
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 2900d98dbd30c51f689cdce37ea273ccc4f598b5
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85804461"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308927"
 ---
 # <a name="install-net-core-on-macos"></a>Установка .NET Core в macOS
 
@@ -22,7 +23,8 @@ ms.locfileid: "85804461"
 
 .NET Core 3.1 является последней версией.
 
-[Скачать .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Загрузить .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="supported-releases"></a>Поддерживаемые выпуски
 
@@ -58,13 +60,15 @@ ms.locfileid: "85804461"
 *Среда выполнения .NET Core*\
 Простейшая среда выполнения, в состав которой не входят какие-либо другие среды выполнения. Чтобы обеспечить максимальный уровень совместимости с приложениями .NET Core, настоятельно рекомендуется устанавливать *среду выполнения ASP.NET Core*.
 
-[Скачать среду выполнения .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Скачать среду выполнения .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="sdk-information"></a>Сведения о пакете SDK
 
 Пакет SDK используется для создания и публикации приложений и библиотек .NET Core. При установке пакета SDK также устанавливаются обе [среды выполнения](#runtime-information): ASP.NET Core и .NET Core.
 
-[Скачать пакет SDK для .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Скачать пакет SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="dependencies"></a>Зависимости
 

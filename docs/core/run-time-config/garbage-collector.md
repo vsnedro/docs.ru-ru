@@ -1,14 +1,14 @@
 ---
 title: Параметры конфигурации сборщика мусора
 description: Сведения о параметрах времени выполнения, определяющих, как сборщик мусора управляет памятью для приложений .NET Core.
-ms.date: 01/09/2020
+ms.date: 07/10/2020
 ms.topic: reference
-ms.openlocfilehash: 0ce2f70204463c1525ef7d29de21ddf5384d0238
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 6ae5b7447fb0df4978ea9dcaa5e76fcc7a6cc4ca
+ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202098"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86441415"
 ---
 # <a name="run-time-configuration-options-for-garbage-collection"></a>Параметры конфигурации времени выполнения для сборки мусора
 
@@ -240,6 +240,7 @@ ms.locfileid: "84202098"
 
 - Указывает максимальный размер фиксации в байтах для кучи сборки мусора и учета сборки мусора.
 - Этот параметр применим только к 64-разрядным компьютерам.
+- Если настроены [ограничения для отдельных куч объектов](#per-object-heap-limits), этот параметр игнорируется.
 - Значение по умолчанию, которое применяется только в определенных случаях, превышает 20 МБ или 75 % предельного объема памяти в контейнере. Значение по умолчанию применяется, если:
 
   - процесс выполняется в контейнере с заданным предельным объемом памяти;
@@ -271,6 +272,7 @@ ms.locfileid: "84202098"
 - Если также задан параметр [System.GC.HeapHardLimit](#systemgcheaphardlimitcomplus_gcheaphardlimit), этот параметр игнорируется.
 - Этот параметр применим только к 64-разрядным компьютерам.
 - Если процесс выполняется в контейнере с заданным предельным объемом памяти, процентная доля вычисляется как процент от этого объема памяти.
+- Если настроены [ограничения для отдельных куч объектов](#per-object-heap-limits), этот параметр игнорируется.
 - Значение по умолчанию, которое применяется только в определенных случаях, не превышает 20 МБ или 75 % предельного объема памяти в контейнере. Значение по умолчанию применяется, если:
 
   - процесс выполняется в контейнере с заданным предельным объемом памяти;
@@ -295,6 +297,40 @@ ms.locfileid: "84202098"
 
 > [!TIP]
 > Если вы задаете параметр в *runtimeconfig.json*, укажите десятичное значение. Если вы задаете параметр в виде переменной среды, укажите шестнадцатеричное значение. Например, чтобы ограничить использование кучи значением 30 %, для JSON-файла нужно указать 30, а для переменной среды — 0x1E или 1E.
+
+### <a name="per-object-heap-limits"></a>Ограничения для отдельных куч объектов
+
+Вы можете настраивать допустимый объем использования кучи в ходе сборки мусора для отдельных куч объектов. Это можно сделать для кучи больших (LOH), малых (SOH) и закрепленных (POH) объектов.
+
+#### <a name="complus_gcheaphardlimitsoh-complus_gcheaphardlimitloh-complus_gcheaphardlimitpoh"></a>COMPLUS_GCHeapHardLimitSOH, COMPLUS_GCHeapHardLimitLOH, COMPLUS_GCHeapHardLimitPOH
+
+- Если задано значение любого из этих параметров (`COMPLUS_GCHeapHardLimitSOH`, `COMPLUS_GCHeapHardLimitLOH` или `COMPLUS_GCHeapHardLimitPOH`), также необходимо указать значения `COMPLUS_GCHeapHardLimitSOH` и `COMPLUS_GCHeapHardLimitLOH`. Если этого не сделать, во время выполнения произойдет сбой инициализации.
+- Значение по умолчанию для `COMPLUS_GCHeapHardLimitPOH` равно 0. Параметры `COMPLUS_GCHeapHardLimitSOH` и `COMPLUS_GCHeapHardLimitLOH` не имеют значений по умолчанию.
+
+| | Имя параметра | Значения | Представленная версия |
+| - | - | - | - |
+| **Переменная среды** | `COMPLUS_GCHeapHardLimitSOH` | *Шестнадцатеричное значение* | .NET 5.0 |
+| **Переменная среды** | `COMPLUS_GCHeapHardLimitLOH` | *Шестнадцатеричное значение* | .NET 5.0 |
+| **Переменная среды** | `COMPLUS_GCHeapHardLimitPOH` | *Шестнадцатеричное значение* | .NET 5.0 |
+
+> [!TIP]
+> Если вы задаете параметр в виде переменной среды, укажите шестнадцатеричное значение. Например, чтобы указать для куч жесткое ограничение в 200 мебибайт (МиБ), необходимо использовать значение 0xC800000 или C800000.
+
+#### <a name="complus_gcheaphardlimitsohpercent-complus_gcheaphardlimitlohpercent-complus_gcheaphardlimitpohpercent"></a>COMPLUS_GCHeapHardLimitSOHPercent, COMPLUS_GCHeapHardLimitLOHPercent, COMPLUS_GCHeapHardLimitPOHPercent
+
+- Если задано значение любого из этих параметров (`COMPLUS_GCHeapHardLimitSOHPercent`, `COMPLUS_GCHeapHardLimitLOHPercent` или `COMPLUS_GCHeapHardLimitPOHPercent`), также необходимо указать значения `COMPLUS_GCHeapHardLimitSOHPercent` и `COMPLUS_GCHeapHardLimitLOHPercent`. Если этого не сделать, во время выполнения произойдет сбой инициализации.
+- Эти параметры игнорируются, если заданы значения параметров `COMPLUS_GCHeapHardLimitSOH`, `COMPLUS_GCHeapHardLimitLOH` и `COMPLUS_GCHeapHardLimitPOH`.
+- Значение 1 означает, что при сборке мусора используется 1 % от общего объема физической памяти для соответствующей кучи объектов.
+- Задаваемое значение должно быть больше нуля и меньше 100. Кроме того, сумма всех трех процентных значений должна быть меньше 100. В противном случае во время выполнения произойдет сбой инициализации.
+
+| | Имя параметра | Значения | Представленная версия |
+| - | - | - | - |
+| **Переменная среды** | `COMPLUS_GCHeapHardLimitSOHPercent` | *Шестнадцатеричное значение* | .NET 5.0 |
+| **Переменная среды** | `COMPLUS_GCHeapHardLimitLOHPercent` | *Шестнадцатеричное значение* | .NET 5.0 |
+| **Переменная среды** | `COMPLUS_GCHeapHardLimitPOHPercent` | *Шестнадцатеричное значение* | .NET 5.0 |
+
+> [!TIP]
+> Если вы задаете параметр в виде переменной среды, укажите шестнадцатеричное значение. Например, чтобы задать ограничение на использование кучи в 30 %, необходимо использовать значение 0x1E или 1E.
 
 ### <a name="systemgcretainvmcomplus_gcretainvm"></a>System.GC.RetainVM/COMPlus_GCRetainVM
 
