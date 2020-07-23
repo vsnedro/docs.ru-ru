@@ -4,11 +4,12 @@ description: Сведения о версиях Windows, в которых во�
 author: adegeo
 ms.author: adegeo
 ms.date: 06/22/2020
-ms.openlocfilehash: e26494de7e9246b241cb965d8d735a781aab5478
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 97f67d00b3eb4dafc55256aea51f4295bb0ef06a
+ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85804464"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308953"
 ---
 # <a name="install-net-core-on-windows"></a>Установка .NET Core в Windows
 
@@ -22,7 +23,8 @@ ms.locfileid: "85804464"
 
 .NET Core 3.1 является последней версией.
 
-[Скачать .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Загрузить .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="supported-releases"></a>Поддерживаемые выпуски
 
@@ -70,13 +72,15 @@ ms.locfileid: "85804464"
 *Среда выполнения .NET Core*\
 Простейшая среда выполнения, в состав которой не входят какие-либо другие среды выполнения. Чтобы обеспечить максимальный уровень совместимости с приложениями .NET Core, настоятельно рекомендуется устанавливать *среду выполнения ASP.NET Core* и *среду выполнения для классических приложений*.
 
-[Скачать среду выполнения .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Скачать среду выполнения .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="sdk-information"></a>Сведения о пакете SDK
 
 Пакет SDK используется для создания и публикации приложений и библиотек .NET Core. При установке пакета SDK также устанавливаются все три [среды выполнения](#runtime-information): ASP.NET Core, среда выполнения для классических приложений и .NET Core.
 
-[Скачать пакет SDK для .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Скачать пакет SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="dependencies"></a>Зависимости
 
@@ -217,7 +221,8 @@ dotnet-install.ps1 -Channel Current
 
 Visual Studio может установить последнюю пакета SDK для .NET Core и среды выполнения .NET Core.
 
-- [Скачайте Visual Studio.](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+> [!div class="button"]
+> [Скачайте Visual Studio.](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 ### <a name="select-a-workload"></a>Выбор рабочей нагрузки
 

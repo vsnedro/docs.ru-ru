@@ -2,12 +2,12 @@
 title: Мониторинг служб контейнерных приложений
 description: Сведения об основных аспектах, связанных с мониторингом контейнерных архитектур
 ms.date: 02/15/2019
-ms.openlocfilehash: e14553d510751d8a75020a1b6beb9fd7bc29596e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e41df53ad94784436442c3cf7defed3fab510455
+ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "68673461"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86374446"
 ---
 # <a name="monitor-containerized-application-services"></a>Мониторинг служб контейнерных приложений
 
@@ -47,7 +47,7 @@ ms.locfileid: "68673461"
   - Шифрование данных при передаче и во время хранения.
   - Защита от несанкционированного доступа на основе многофакторной проверки подлинности.
 
-- **Локальные ресурсы**. Используйте [согласованное гибридное облако](https://azure.microsoft.com/resources/truly-consistent-hybrid-cloud-with-microsoft-azure/).
+- **Локальные ресурсы**. Используйте [гибридные облачные решения](https://azure.microsoft.com/solutions/hybrid-cloud-app/).
 
 >[!div class="step-by-step"]
 >[Назад](manage-production-docker-environments.md)
