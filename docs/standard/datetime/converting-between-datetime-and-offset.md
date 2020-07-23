@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Date data type, converting
 - local time conversions
 ms.assetid: b605ff97-0c45-4c24-833f-4c6a3e8be64c
-ms.openlocfilehash: cf55db7c22ad2495bdbeb3202fcefb89bae42d69
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: 86f2c982d7f87e83102933d1de73d6e13086dc87
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768681"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86924907"
 ---
 # <a name="converting-between-datetime-and-datetimeoffset"></a>Взаимное преобразование структур DateTime и DateTimeOffset
 
@@ -105,7 +105,7 @@ ms.locfileid: "84768681"
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#10](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#10)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#10)]
 
-При извлечении <xref:System.DateTime> значения с помощью <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=nameWithType> свойства `get` метод доступа свойства сначала преобразует <xref:System.DateTimeOffset> значение в формат UTC, а затем преобразует его в местное время, вызвав <xref:System.DateTimeOffset.ToLocalTime%2A> метод. Это означает, что можно извлечь значение из свойства, <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=nameWithType> чтобы выполнить преобразование часового пояса одновременно с выполнением преобразования типов. Это также означает, что при выполнении преобразования применяются правила коррекции местного часового пояса. В следующем коде показано использование <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=nameWithType> свойства для выполнения преобразования типа и часового пояса.
+При извлечении <xref:System.DateTime> значения с помощью <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=nameWithType> свойства `get` метод доступа свойства сначала преобразует <xref:System.DateTimeOffset> значение в формат UTC, а затем преобразует его в местное время, вызвав <xref:System.DateTimeOffset.ToLocalTime%2A> метод. Это означает, что можно извлечь значение из свойства, <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=nameWithType> чтобы выполнить преобразование часового пояса одновременно с выполнением преобразования типов. Это также означает, что при выполнении преобразования применяются правила коррекции местного часового пояса. В следующем коде показано использование <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=nameWithType> свойства для выполнения преобразования типа и часового пояса. Пример выходных данных — для компьютера, для которого задано тихоокеанское время (США и Канада). В ноябре используется тихоокеанское стандартное время (UTC-8), а в июне — летнее время (UTC-7).
 
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#11](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#11)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#11)]
@@ -128,6 +128,6 @@ ms.locfileid: "84768681"
 
 - Предполагается, что значение даты и времени, смещение для которого равно смещению местного часового пояса, представляет местный часовой пояс. Поскольку значения даты и времени не связаны со своими исходными часовыми поясами, то это может не выполняться. Значение даты и времени может быть создано в другом часовом поясе с тем же самым смещением.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Даты, время и часовые пояса](index.md)

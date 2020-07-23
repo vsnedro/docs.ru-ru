@@ -1,16 +1,17 @@
 ---
 title: Общие сведения о дереве модели автоматизации пользовательского интерфейса
+description: Ознакомьтесь с обзором деревьев модели автоматизации пользовательского интерфейса. Сведения о различных представлениях дерева модели автоматизации пользовательского интерфейса, таких как представление RAW, представление элемента управления и представление содержимого.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - automation tree
 - UI Automation, tree
 ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
-ms.openlocfilehash: a0b888e8ecc80e3739c583931a86da3cdb7242d1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0ffe4b4e6157f5bff3284d6978e0ec28641cf72d
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179453"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86924556"
 ---
 # <a name="ui-automation-tree-overview"></a>Общие сведения о дереве модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -18,7 +19,7 @@ ms.locfileid: "79179453"
   
  Продукты и скрипты тестов специальных возможностей выполняют навигацию по дереву [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] для сбора сведений о [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] и его элементах.  
   
- Внутри [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] дерева есть корневой элемент (),<xref:System.Windows.Automation.AutomationElement.RootElement%2A>который представляет текущий рабочий стол и элементы детского ребенка представляют окна приложений. Каждый из этих дочерних элементов может содержать элементы, представляющие части [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], такие как меню, кнопки, панели инструментов и списки. В свою очередь эти элементы тоже могут содержать элементы, такие как элементы списка.  
+ В [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] дереве находится корневой элемент ( <xref:System.Windows.Automation.AutomationElement.RootElement%2A> ), представляющий текущий рабочий стол, чьи дочерние элементы представляют окна приложения. Каждый из этих дочерних элементов может содержать элементы, представляющие части [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], такие как меню, кнопки, панели инструментов и списки. В свою очередь эти элементы тоже могут содержать элементы, такие как элементы списка.  
   
  Дерево [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] не является фиксированной структурой и редко отображается полностью, так как оно может содержать тысячи элементов. Его части создаются по необходимости, и дерево может претерпевать изменения при добавлении, перемещении или удалении элементов.  
   
@@ -36,7 +37,7 @@ ms.locfileid: "79179453"
   
 <a name="uiautomation_raw_view"></a>
 ### <a name="raw-view"></a>Базовое представление  
- Базовое представление дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] — это полное дерево объектов <xref:System.Windows.Automation.AutomationElement>, для которого корнем является рабочий стол. Базовое представление точно следует собственной программной структуре приложения и таким образом является наиболее подробным доступным представлением. Оно также является основой, на которой строятся другие представления дерева. Поскольку это представление зависит [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] от базовой платформы, необработанное представление [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] кнопки будет иметь другой необработанный вид, чем кнопка Win32.  
+ Базовое представление дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] — это полное дерево объектов <xref:System.Windows.Automation.AutomationElement>, для которого корнем является рабочий стол. Базовое представление точно следует собственной программной структуре приложения и таким образом является наиболее подробным доступным представлением. Оно также является основой, на которой строятся другие представления дерева. Поскольку это представление зависит от базовой [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] платформы, необработанное представление [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] кнопки будет иметь разное представление RAW, чем кнопка Win32.  
   
  Базовое представление можно получить путем поиска элементов без указания свойств или с помощью <xref:System.Windows.Automation.TreeWalker.RawViewWalker> для навигации по дереву.  
   

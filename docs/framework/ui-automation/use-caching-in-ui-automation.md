@@ -1,5 +1,6 @@
 ---
 title: Использование кэширования в модели автоматизации пользовательского интерфейса
+description: См. раздел Использование кэширования в модели автоматизации пользовательского интерфейса. Ознакомьтесь с процедурами активации запроса кэша, кэширования свойств AutomationElement и получения кэшированных шаблонов.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - caching, UI Automation
 - UI Automation, caching
 ms.assetid: ec722dff-6009-4279-b86a-e18d3fa94ebf
-ms.openlocfilehash: 679192b611a423e095ee9acc956d247364940edf
-ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
+ms.openlocfilehash: 8dff9db77e39dc66a16b6a7b395c76a3c768d48e
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74800806"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86924491"
 ---
 # <a name="use-caching-in-ui-automation"></a>Использование кэширования в модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -33,9 +34,9 @@ ms.locfileid: "74800806"
   
 5. Задайте для свойства <xref:System.Windows.Automation.CacheRequest.AutomationElementMode%2A> значение <xref:System.Windows.Automation.AutomationElementMode.None> , если хотите повысить эффективность, не получая полную ссылку на объекты. (Это сделает невозможным получение текущих значений из этих объектов.)  
   
-6. Активируйте запрос с помощью <xref:System.Windows.Automation.CacheRequest.Activate%2A> в блоке `using` (`Using` в Microsoft Visual Basic .NET).  
+6. Активируйте запрос с помощью <xref:System.Windows.Automation.CacheRequest.Activate%2A> внутри `using` блока ( `Using` в Microsoft Visual Basic .NET).  
   
- После получения объекта <xref:System.Windows.Automation.AutomationElement> или подписки на события деактивируйте запрос с помощью <xref:System.Windows.Automation.CacheRequest.Pop%2A> (если использовался <xref:System.Windows.Automation.CacheRequest.Push%2A> ) или удалив объект, созданный <xref:System.Windows.Automation.CacheRequest.Activate%2A>. (Используйте <xref:System.Windows.Automation.CacheRequest.Activate%2A> в блоке `using` (`Using` в Microsoft Visual Basic .NET).  
+ После получения объекта <xref:System.Windows.Automation.AutomationElement> или подписки на события деактивируйте запрос с помощью <xref:System.Windows.Automation.CacheRequest.Pop%2A> (если использовался <xref:System.Windows.Automation.CacheRequest.Push%2A> ) или удалив объект, созданный <xref:System.Windows.Automation.CacheRequest.Activate%2A>. (Используйте <xref:System.Windows.Automation.CacheRequest.Activate%2A> в `using` блоке ( `Using` в Microsoft Visual Basic .NET).  
   
 ### <a name="cache-automationelement-properties"></a>Кэширование свойств AutomationElement  
   
@@ -63,6 +64,6 @@ ms.locfileid: "74800806"
  [!code-csharp[UIAClient_snip#108](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#108)]
  [!code-vb[UIAClient_snip#108](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#108)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Кэширование в клиентах автоматизации пользовательского интерфейса](caching-in-ui-automation-clients.md)
