@@ -2,12 +2,12 @@
 title: Публикация приложений
 description: Дополнительные сведения о публикации приложения .NET Core. .NET Core может публиковать приложения для конкретной платформы или кроссплатформенные приложения. Приложение можно опубликовать как автономное или как зависимое от среды выполнения. Каждый режим влияет на то, как пользователь запускает приложение.
 ms.date: 04/01/2020
-ms.openlocfilehash: a4e5f9fe048d40c751f582bd49732cb903202db4
-ms.sourcegitcommit: 45cced471d59d5dac3f0c92abc9d4849716098a2
+ms.openlocfilehash: 201363ad314373ec3be44eb8496f92a8e0c8e418
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "80665542"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164936"
 ---
 # <a name="net-core-application-publishing-overview"></a>Общие сведения о публикации приложений .NET Core
 
@@ -152,6 +152,5 @@ dotnet publish -r win-x64
 
 - [Развертывание приложений .NET Core с помощью .NET Core CLI.](deploy-with-cli.md)
 - [Развертывание приложений .NET Core с помощью Visual Studio.](deploy-with-vs.md)
-- [Пакеты, метапакеты и платформы.](../packages.md)
 - [Каталог идентификаторов сред выполнения (RID) в .NET Core.](../rid-catalog.md)
 - [Выбор версии .NET Core для использования.](../versions/selection.md)
