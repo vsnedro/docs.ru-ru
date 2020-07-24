@@ -1,14 +1,14 @@
 ---
 title: Общие сведения о средствах диагностики в .NET Core
 description: Общие сведения о средствах и методах диагностики приложений .NET Core.
-ms.date: 12/17/2019
+ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: 0a78ec6c88f5323104277cddea4480a5e13b4e41
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dc64c03ee9c8cee6a5b3c5cc089b4a1a2c27f84a
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79397578"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86924786"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Общие сведения о средствах диагностики в .NET Core
 
@@ -47,3 +47,11 @@ ms.locfileid: "79397578"
 ### <a name="debug-a-memory-leak"></a>Отладка утечек памяти
 
 [Учебник. Отладка утечек памяти](debug-memory-leak.md) содержит пошаговые инструкции по поиску утечек памяти. Средство [dotnet-counters](dotnet-counters.md) позволяет подтвердить наличие утечки, а средство [dotnet-dump](dotnet-dump.md) используется для ее диагностики.
+
+### <a name="debug-high-cpu-usage"></a>Отладка высокой загрузки ЦП
+
+В [руководстве по отладке высокой загрузки ЦП](debug-highcpu.md) приводятся пошаговые инструкции по изучению высокой загрузки ЦП. Для подтверждения высокой загрузки ЦП используется средство [dotnet-counters](dotnet-counters.md). Затем вы узнаете, как использовать [служебную программу трассировки для анализа производительности (`dotnet-trace`)](dotnet-trace.md) или `perf` для Linux, чтобы получить и просмотреть профиль загрузки ЦП.
+
+### <a name="debug-deadlock"></a>Отладка взаимоблокировки
+
+В [руководстве по отладке взаимоблокировки](debug-deadlock.md) показано, как использовать средство [dotnet-dump](dotnet-dump.md) для изучения потоков и блокировок.
