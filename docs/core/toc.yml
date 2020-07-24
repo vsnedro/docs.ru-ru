@@ -304,6 +304,10 @@ items:
         items:
           - name: Отладка утечек памяти
             href: diagnostics/debug-memory-leak.md
+          - name: "Отладка высокой загрузки\_ЦП"
+            href: diagnostics/debug-highcpu.md
+          - name: Отладка взаимоблокировки
+            href: diagnostics/debug-deadlock.md
   - name: Дополнительные инструменты .NET Core
     items:
       - name: Обзор
