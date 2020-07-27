@@ -1,5 +1,6 @@
 ---
 title: Общие сведения о перетаскивании
+description: Сведения о поддержке перетаскивания в приложениях Windows Presentation Foundation, которые позволяют пользователям перетаскивать объекты в область пользовательского интерфейса.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - drag-and-drop [WPF], events
 - drop targets [WPF], drag-and-drop
 ms.assetid: 1a5b27b0-0ac5-4cdf-86c0-86ac0271fa64
-ms.openlocfilehash: dd42af77300a7a93bbcbfa4c8f1fc365fc3f5da1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 63384e79d8a198e4cc9507ca3266c484c0506e2c
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185989"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168074"
 ---
 # <a name="drag-and-drop-overview"></a>Общие сведения о перетаскивании
 В этой статье приведены общие сведения о поддержке перетаскивания в приложениях [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. Перетаскиванием обычно называют метод передачи данных, который реализуется с помощью мыши (или другого указывающего устройства) для выбора одного или нескольких объектов и перетаскивания их в цель перетаскивания в [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)].  
@@ -28,9 +29,9 @@ ms.locfileid: "79185989"
   
  Можно перетаскивать совершенно произвольные типы и количества объектов. Например, в качестве наиболее распространенных объектов перетаскивания можно назвать файлы, папки, выбранное содержимое.  
   
- Конкретные действия, выполняемые во время операции перетаскивания, зависят от приложения и часто определяются контекстом.  Например, перетаскивание выделения файлов из одной папки в другую на том же устройстве хранения перемещает файлы по умолчанию, в то время как перетаскивание файлов из универсальной конвенции именования (UNC) в локальную папку копирует файлы по умолчанию.  
+ Конкретные действия, выполняемые во время операции перетаскивания, зависят от приложения и часто определяются контекстом.  Например, перетаскивание выбранных файлов из одной папки в другую на одном устройстве хранения перемещает файлы по умолчанию, тогда как при перетаскивании файлов из общего ресурса UNC в локальную папку файлы копируются по умолчанию.  
   
- В средствах перетаскивания, предоставляемых [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], предусмотрена высокая гибкость и возможность настройки с целью поддержки различных сценариев перетаскивания.  Перетаскивание поддерживает управление объектами в рамках одного приложения или в разных приложениях. Перетаскивание и [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] падение между приложениями и другими приложениями Windows также полностью поддерживается.  
+ В средствах перетаскивания, предоставляемых [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], предусмотрена высокая гибкость и возможность настройки с целью поддержки различных сценариев перетаскивания.  Перетаскивание поддерживает управление объектами в рамках одного приложения или в разных приложениях. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]Также полностью поддерживаются перетаскивание между приложениями и другими приложениями Windows.  
   
  В [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] любые элементы <xref:System.Windows.UIElement> или <xref:System.Windows.ContentElement> могут участвовать в операциях перетаскивания. События и методы, необходимые для операций перетаскивания, определяются в классе <xref:System.Windows.DragDrop>. Классы <xref:System.Windows.UIElement> и <xref:System.Windows.ContentElement> содержат псевдонимы для вложенных событий <xref:System.Windows.DragDrop>, чтобы эти события отображались в списке членов класса, когда <xref:System.Windows.UIElement> или <xref:System.Windows.ContentElement> наследуется как базовый элемент. Обработчики событий, связанные с этими событиями, присоединяются к основному вложенному событию <xref:System.Windows.DragDrop> и получают один и тот же экземпляр данных события. Дополнительные сведения см. в описании события <xref:System.Windows.UIElement.Drop?displayProperty=nameWithType>.  
   
@@ -185,7 +186,7 @@ ms.locfileid: "79185989"
   
 2. <xref:System.Windows.DragDrop.DragOver>  
   
-3. <xref:System.Windows.DragDrop.DragLeave> либо <xref:System.Windows.DragDrop.Drop>  
+3. <xref:System.Windows.DragDrop.DragLeave> или <xref:System.Windows.DragDrop.Drop>  
   
  Событие <xref:System.Windows.DragDrop.DragEnter> возникает, когда данные перетаскиваются в границы цели перетаскивания. Обычно вы обрабатываете это событие, чтобы обеспечить предварительный просмотр эффектов операции перетаскивания, если это требуется для вашего приложения. Не устанавливайте свойство <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> в событии <xref:System.Windows.DragDrop.DragEnter>, так как оно будет переопределено в событии <xref:System.Windows.DragDrop.DragOver>.  
   
@@ -219,5 +220,5 @@ ms.locfileid: "79185989"
 
 - <xref:System.Windows.Clipboard>
 - [Пошаговое руководство. Включение перетаскивания для пользовательского элемента управления](walkthrough-enabling-drag-and-drop-on-a-user-control.md)
-- [Как-к темам](drag-and-drop-how-to-topics.md)
-- [Перетащите и падение](drag-and-drop.md)
+- [Практические руководства](drag-and-drop-how-to-topics.md)
+- [Перетаскивание](drag-and-drop.md)

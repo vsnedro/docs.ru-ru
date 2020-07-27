@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления GridItem модели автоматизации пользовательского интерфейса
+description: Сведения о правилах и соглашениях для реализации шаблона элемента управления Гридитемпаттерн для элементов сетки в модели автоматизации пользовательского интерфейса. См. раздел обязательные элементы для Игридитемпровидер.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, GridItem
 - UI Automation GridItem control pattern
 - GridItem control pattern
 ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
-ms.openlocfilehash: d561587e6bb98ba857b27ba89b4c1a45ba964ffd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e0a0c616f3f0cf9bc091e4fbb496d71ab8550bd3
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180189"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165819"
 ---
 # <a name="implementing-the-ui-automation-griditem-control-pattern"></a>Реализация шаблона элемента управления GridItem модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -53,9 +54,9 @@ ms.locfileid: "79180189"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Реализация шаблона элемента управления сеткой автоматизации пользовательского интерфейса](implementing-the-ui-automation-grid-control-pattern.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

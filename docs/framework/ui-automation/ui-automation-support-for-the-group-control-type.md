@@ -1,17 +1,18 @@
 ---
 title: Поддержка автоматизации пользовательского интерфейса для типа элемента управления Group
+description: Получение сведений о поддержке модели автоматизации пользовательского интерфейса для типа элемента управления Group. Сведения о требуемой древовидной структуре, свойствах, шаблонах элементов управления и событиях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, Group control type
 - Group control type
 - control types, Group
 ms.assetid: 18e01bab-01f8-4567-b867-88dce9c4a435
-ms.openlocfilehash: 3044461d6d8cd157c06c48f236e1c13005774d00
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8d635e33cf192a388dea65cf614b250e93f6703f
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179746"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167917"
 ---
 # <a name="ui-automation-support-for-the-group-control-type"></a>Поддержка автоматизации пользовательского интерфейса для типа элемента управления Group
 > [!NOTE]
@@ -21,7 +22,7 @@ ms.locfileid: "79179746"
   
  Элемент управления "Группа" представляет узел в иерархии. Типа элемента управления Group создает разделение в дереве [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , чтобы элементы, сгруппированные вместе, имели логическое деление в дереве [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .  
   
- В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Group. Требования [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] применяются ко всем [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]групповым элементам управления, будь то, Win32 или Windows Forms.  
+ В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Group. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]Требования применяются ко всем элементам управления "Группа", будь это [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] , Win32 или Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
 ## <a name="required-ui-automation-tree-structure"></a>Требуемая древовидная структура модели автоматизации пользовательского интерфейса  
@@ -29,9 +30,9 @@ ms.locfileid: "79179746"
   
 |Представление элемента управления|Представление содержимого|  
 |------------------|------------------|  
-|Группа<br /><br /> - 0 или много элементов управления|Группа<br /><br /> - 0 или много элементов управления|  
+|Группа<br /><br /> -0 или многие элементы управления|Группа<br /><br /> -0 или многие элементы управления|  
   
- Обычно групповые элементы управления будут иметь [поддержку автоматизации UI для типа управления ListItem,](ui-automation-support-for-the-listitem-control-type.md) [поддержку автоматизации UI для типа управления TreeItem](ui-automation-support-for-the-treeitem-control-type.md)или [поддержку автоматизации UI для типов управления DataItem Type,](ui-automation-support-for-the-dataitem-control-type.md) найденных под ними в подтри. Так как "Группа" представляет собой универсальный контейнер, под элементом управления "Группа" в дереве может находиться любой тип элемента управления.  
+ Обычно элементы управления "Группа" будут иметь [поддержку автоматизации пользовательского интерфейса для типа элемента управления ListItem](ui-automation-support-for-the-listitem-control-type.md), [поддержку модели автоматизации пользовательского интерфейса для типа](ui-automation-support-for-the-treeitem-control-type.md)элемента управления TreeItem или [поддержку модели автоматизации пользовательского интерфейса для](ui-automation-support-for-the-dataitem-control-type.md) типов элементов управления DataItem, найденных под ними в поддереве. Так как "Группа" представляет собой универсальный контейнер, под элементом управления "Группа" в дереве может находиться любой тип элемента управления.  
   
 <a name="Required_UI_Automation_Properties"></a>
 ## <a name="required-ui-automation-properties"></a>Требуемые свойства модели автоматизации пользовательского интерфейса  
@@ -64,13 +65,13 @@ ms.locfileid: "79179746"
   
 |Событие[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Поддержка|Примечания|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Обязательно|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Требуется|None|  
 |Событие изменения свойства<xref:System.Windows.Automation.ExpandCollapsePatternIdentifiers.ExpandCollapseStateProperty>|Зависит|None|  
 |Событие изменения свойства<xref:System.Windows.Automation.TogglePatternIdentifiers.ToggleStateProperty>|Зависит|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Обязательно|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Требуется|None|  
   
 ## <a name="see-also"></a>См. также раздел
 

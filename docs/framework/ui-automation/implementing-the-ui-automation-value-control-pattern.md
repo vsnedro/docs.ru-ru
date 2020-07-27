@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления Value модели автоматизации пользовательского интерфейса
+description: Ознакомьтесь с правилами и соглашениями по реализации шаблона элемента управления Value в модели автоматизации пользовательского интерфейса. Знание обязательных членов для интерфейса Ивалуепровидер.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, Value
 - UI Automation, Value control pattern
 - Value control pattern
 ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
-ms.openlocfilehash: eb77f26bbe3546a3f90804c3648f8547fb6abad0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a15c0b50996e2c0dfdc937bc9565d5f9ba20c992
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180091"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168207"
 ---
 # <a name="implementing-the-ui-automation-value-control-pattern"></a>Реализация шаблона элемента управления Value модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -36,7 +37,7 @@ ms.locfileid: "79180091"
   
 - <xref:System.Windows.Automation.Provider.IValueProvider> не поддерживает извлечение сведений о форматировании или значений подстроки. Реализуйте <xref:System.Windows.Automation.Provider.ITextProvider> в этих сценариях.  
   
-- <xref:System.Windows.Automation.Provider.IValueProvider>должны быть реализованы с помощью элементов управления, таких как управление **выбором Color Picker** от Microsoft Word (иллюстрированный ниже), который поддерживает строку отображение между значением цвета (например, "желтый") и эквивалентной внутренней структурой RGB.  
+- <xref:System.Windows.Automation.Provider.IValueProvider>должен быть реализован элементами управления, такими как элемент управления выбора **цвета** из Microsoft Word (как показано ниже), который поддерживает строковое сопоставление между значением цвета (например, "желтый") и эквивалентной внутренней структурой RGB.  
   
  ![Палитра с отмеченным желтым цветом.](./media/uia-valuepattern-colorpicker.png "UIA_ValuePattern_ColorPicker")  
 Пример сопоставления строки настройки цвета  
@@ -59,15 +60,15 @@ ms.locfileid: "79180091"
   
 |Тип исключения|Условие|  
 |--------------------|---------------|  
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> - Если информация, связанная с локальной информацией, передается в элемент управления в неправильном формате, например неправильно отформатированная дата.|  
-|<xref:System.ArgumentException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> - Если новое значение не может быть преобразовано из строки в формат, который распознает элемент управления.|  
-|<xref:System.Windows.Automation.ElementNotEnabledException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> - При попытке манипулировать элементом управления, который не включен.|  
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> — Если сведения, зависящие от языкового стандарта, передаются в элемент управления в неправильном формате, например в неправильном формате даты.|  
+|<xref:System.ArgumentException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> — Если новое значение не может быть преобразовано из строки в формат, распознаваемый элементом управления.|  
+|<xref:System.Windows.Automation.ElementNotEnabledException>|<xref:System.Windows.Automation.ValuePattern.SetValue%2A><br /><br /> — При попытке управлять элементом управления, который не включен.|  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
-- [Образец текста ValuePattern Вставить](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Пример вставки текста ValuePattern](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

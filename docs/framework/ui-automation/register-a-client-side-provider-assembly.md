@@ -1,5 +1,6 @@
 ---
 title: Регистрация сборки поставщика на стороне клиента
+description: Ознакомьтесь с примером, в котором показано, как зарегистрировать библиотеку DLL, содержащую поставщики автоматизации пользовательского интерфейса на стороне клиента.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - UI Automation, registering provider assemblies
 - provider assemblies, registering
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
-ms.openlocfilehash: 72e1349eee90bbe5078fec037b5f29c51c84b8ec
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 034a109bb69c08883c0943b7b6ef69a397a8e7e1
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74438451"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168133"
 ---
 # <a name="register-a-client-side-provider-assembly"></a>Регистрация сборки поставщика на стороне клиента
 > [!NOTE]
@@ -29,6 +30,6 @@ ms.locfileid: "74438451"
  [!code-csharp[UIAClientSideProvider_snip#102](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClientSideProvider_snip/CSharp/CSClientProgram.cs#102)]
  [!code-vb[UIAClientSideProvider_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClientSideProvider_snip/visualbasic/csclientprogram.vb#102)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Создание поставщика автоматизации пользовательского интерфейса на стороне клиента](create-a-client-side-ui-automation-provider.md)
+- [Создание поставщика модели автоматизации пользовательского интерфейса на стороне клиента](create-a-client-side-ui-automation-provider.md)

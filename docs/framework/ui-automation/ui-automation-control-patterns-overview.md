@@ -1,16 +1,17 @@
 ---
 title: Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса
+description: См. Обзор шаблонов элементов управления модели автоматизации пользовательского интерфейса. Шаблоны элементов управления позволяют классифицировать и предоставлять функциональные возможности элемента управления независимо от типа или внешнего вида.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns
 - UI Automation, control patterns
 ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
-ms.openlocfilehash: f62631a15dd348b6f6ea27a82d7b45aab92ceed2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d0df24de4f8a877405dfecb6b0d245ff1caf0418
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179949"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163891"
 ---
 # <a name="ui-automation-control-patterns-overview"></a>Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -33,7 +34,7 @@ ms.locfileid: "79179949"
   
 - Свойства и события предоставляют сведения о функциональности шаблона элемента управления, а также сведения о состоянии элемента управления.  
   
- Шаблоны управления [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] относятся к тем, как интерфейсы относятся к объектам компонентной модели объектов (COM). В модели COM вы можете запросить у объекта сведения о поддерживаемых им интерфейсах, а затем использовать эти интерфейсы, чтобы получить доступ к функциональности. В [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]клиенты автоматизации пользовательского интерфейса могут запрашивать у элемента управления, какие шаблоны элементов управления он поддерживает, а затем взаимодействовать с этим элементом управления посредством свойств, методов, событий и структур, предоставляемых поддерживаемыми шаблонами этого элемента управления. Например, для многострочного поля ввода поставщики автоматизации пользовательского интерфейса реализуют <xref:System.Windows.Automation.Provider.IScrollProvider>. Если клиенту известно, что <xref:System.Windows.Automation.AutomationElement> поддерживает шаблон элемента управления <xref:System.Windows.Automation.ScrollPattern> , он может использовать свойства, методы и события, предоставляемые данным шаблоном элемента управления, для работы с этим элементом управления или получения доступа к сведениям о нем.  
+ Шаблоны элементов управления связаны с [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] объектами модели COM. В модели COM вы можете запросить у объекта сведения о поддерживаемых им интерфейсах, а затем использовать эти интерфейсы, чтобы получить доступ к функциональности. В [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]клиенты автоматизации пользовательского интерфейса могут запрашивать у элемента управления, какие шаблоны элементов управления он поддерживает, а затем взаимодействовать с этим элементом управления посредством свойств, методов, событий и структур, предоставляемых поддерживаемыми шаблонами этого элемента управления. Например, для многострочного поля ввода поставщики автоматизации пользовательского интерфейса реализуют <xref:System.Windows.Automation.Provider.IScrollProvider>. Если клиенту известно, что <xref:System.Windows.Automation.AutomationElement> поддерживает шаблон элемента управления <xref:System.Windows.Automation.ScrollPattern> , он может использовать свойства, методы и события, предоставляемые данным шаблоном элемента управления, для работы с этим элементом управления или получения доступа к сведениям о нем.  
   
 <a name="uiautomation_control_pattern_client_provider"></a>
 ## <a name="ui-automation-providers-and-clients"></a>Поставщики и клиенты автоматизации пользовательского интерфейса  
@@ -41,7 +42,7 @@ ms.locfileid: "79179949"
   
  Клиенты автоматизации пользовательского интерфейса получают доступ к методам и свойствам классов шаблонов элементов управления [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] и используют их для получения сведений о [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]или для работы с [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. Эти классы шаблонов элементов управления находятся в пространстве имен <xref:System.Windows.Automation> (например, в <xref:System.Windows.Automation.InvokePattern> или в <xref:System.Windows.Automation.SelectionPattern>).  
   
- Клиенты <xref:System.Windows.Automation.AutomationElement> используют методы <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType>(например, или ) или общие средства выполнения [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] языка (CLR) для доступа к свойствам по шаблону. Каждый класс шаблона управления имеет <xref:System.Windows.Automation.InvokePattern.Pattern?displayProperty=nameWithType> полевой элемент (например, <xref:System.Windows.Automation.SelectionPattern.Pattern?displayProperty=nameWithType>или), который определяет <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> этот шаблон управления и <xref:System.Windows.Automation.AutomationElement>может передаваться в качестве параметра или для извлечения этого шаблона для .  
+ Клиенты используют <xref:System.Windows.Automation.AutomationElement> методы (например, <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> или <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> ) или способы доступа среды CLR для доступа к [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] свойствам в шаблоне. Каждый класс шаблона элемента управления имеет элемент Field (например, <xref:System.Windows.Automation.InvokePattern.Pattern?displayProperty=nameWithType> или <xref:System.Windows.Automation.SelectionPattern.Pattern?displayProperty=nameWithType> ), который определяет шаблон элемента управления и может быть передан в качестве параметра в <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> или <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> для получения этого шаблона для <xref:System.Windows.Automation.AutomationElement> .  
   
 <a name="uiautomation_control_patterns_dynamic"></a>
 ## <a name="dynamic-control-patterns"></a>Динамические шаблоны элементов управления  
@@ -55,8 +56,8 @@ ms.locfileid: "79179949"
 |---------------------------|------------------------|-----------------|  
 |<xref:System.Windows.Automation.DockPattern>|<xref:System.Windows.Automation.Provider.IDockProvider>|Используется для элементов управления, которые могут быть закреплены в контейнере закрепления. Например, это могут быть панели инструментов или палитры инструментов.|  
 |<xref:System.Windows.Automation.ExpandCollapsePattern>|<xref:System.Windows.Automation.Provider.IExpandCollapseProvider>|Используется для элементов управления, которые можно разворачивать и сворачивать. Например, это могут быть пункты меню в приложении, такие как меню **Файл** .|  
-|<xref:System.Windows.Automation.GridPattern>|<xref:System.Windows.Automation.Provider.IGridProvider>|Используется для элементов управления, которые поддерживают функциональные возможности сетки, такие как изменение размера и перемещение в указанную ячейку. Например, большой вид значка в Windows Explorer или простые таблицы без заголовков в Microsoft Word.|  
-|<xref:System.Windows.Automation.GridItemPattern>|<xref:System.Windows.Automation.Provider.IGridItemProvider>|Используется для элементов управления, имеющих ячейки в сетках. Отдельные ячейки должны поддерживать шаблон GridItem. Например, каждая ячейка в представлении деталей Microsoft Windows Explorer.|  
+|<xref:System.Windows.Automation.GridPattern>|<xref:System.Windows.Automation.Provider.IGridProvider>|Используется для элементов управления, которые поддерживают функциональные возможности сетки, такие как изменение размера и перемещение в указанную ячейку. Например, представление крупных значков в проводнике Windows или простых таблиц без заголовков в Microsoft Word.|  
+|<xref:System.Windows.Automation.GridItemPattern>|<xref:System.Windows.Automation.Provider.IGridItemProvider>|Используется для элементов управления, имеющих ячейки в сетках. Отдельные ячейки должны поддерживать шаблон GridItem. Например, каждая ячейка в подробном представлении проводника Microsoft Windows.|  
 |<xref:System.Windows.Automation.InvokePattern>|<xref:System.Windows.Automation.Provider.IInvokeProvider>|Используется для элементов управления, которые могут быть вызваны, таких как кнопки.|  
 |<xref:System.Windows.Automation.MultipleViewPattern>|<xref:System.Windows.Automation.Provider.IMultipleViewProvider>|Используется для элементов управления, которые могут переключаться между несколькими представлениями одного и того же набора сведений, данных или дочерних элементов. Например, это может быть элемент управления представления списка, где данные доступны в виде эскизов, плиток, значков, списка или подробных представлений.|  
 |<xref:System.Windows.Automation.RangeValuePattern>|<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Используется для элементов управления, имеющих диапазон значений, которые могут быть применены к элементу управления. Например, элемент управления "Счетчик", содержащий годы, может иметь диапазон от 1900 до 2010, а другой элемент управления "Счетчик", представляющий месяцы, имеет диапазон от 1 до 12.|  
@@ -70,7 +71,7 @@ ms.locfileid: "79179949"
 |<xref:System.Windows.Automation.TogglePattern>|<xref:System.Windows.Automation.Provider.IToggleProvider>|Используется для элементов управления, в которых можно переключать состояние. Например, это могут быть флажки и элементы меню с флажками.|  
 |<xref:System.Windows.Automation.TransformPattern>|<xref:System.Windows.Automation.Provider.ITransformProvider>|Используется для элементов управления с возможностью изменения размера, перемещения и вращения. Обычно шаблон элемента управления Transform используется в конструкторах, формах, графических редакторах и графических приложениях.|  
 |<xref:System.Windows.Automation.ValuePattern>|<xref:System.Windows.Automation.Provider.IValueProvider>|Позволяет клиентам получать или задавать значения для элементов управления, которые не поддерживают диапазон значений. Например, это может быть элемент управления "Выбор даты и времени".|  
-|<xref:System.Windows.Automation.WindowPattern>|<xref:System.Windows.Automation.Provider.IWindowProvider>|Предоставляет информацию, касающуюся окон, основной концепции операционной системы Microsoft Windows. Примерами элементов управления являются окна верхнего уровня (Microsoft Word, Microsoft Windows Explorer и т.д.), детскими окнами с несколькими документами (MDI) и диалогами.|  
+|<xref:System.Windows.Automation.WindowPattern>|<xref:System.Windows.Automation.Provider.IWindowProvider>|Предоставляет информацию, касающуюся окон, основной концепции операционной системы Microsoft Windows. Примерами элементов управления, являющихся окнами, являются окна приложений верхнего уровня (Microsoft Word, Microsoft Windows Explorer и т. д.), дочерние окна многодокументного интерфейса (MDI) и диалоговые окна.|  
   
 ## <a name="see-also"></a>См. также раздел
 

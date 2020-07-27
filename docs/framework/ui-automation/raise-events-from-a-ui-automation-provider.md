@@ -1,16 +1,17 @@
 ---
 title: Вызов событий из поставщика автоматизации пользовательского интерфейса
+description: См. пример, показывающий, как вызвать событие из поставщика автоматизации пользовательского интерфейса. Он вызывает событие автоматизации пользовательского интерфейса в реализации пользовательского элемента управления "Кнопка".
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, raising events
 - raising UI Automation events
 ms.assetid: 9fe2f01b-f7d8-49a8-a185-d4472b9976c0
-ms.openlocfilehash: 1a940cbb99ac068dad6c366520a544035270da3e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 75af4d05172e2417d44f76beab486de5eb3a4ba7
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446874"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168107"
 ---
 # <a name="raise-events-from-a-ui-automation-provider"></a>Вызов событий из поставщика автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -25,6 +26,6 @@ ms.locfileid: "74446874"
   
  [!code-csharp[UIAProvider_snip#150](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAProvider_snip/CSharp/FragmentRoot.cs#150)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о поставщиках автоматизации пользовательского интерфейса](ui-automation-providers-overview.md)

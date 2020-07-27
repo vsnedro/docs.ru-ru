@@ -1,5 +1,6 @@
 ---
 title: Общие сведения о системе команд
+description: Сведения о командах, механизм ввода в Windows Presentation Foundation, который обеспечивает обработку ввода на более семантическом уровне, чем ввод устройства.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - commanding [WPF]
 - CommandManager [WPF]
 ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
-ms.openlocfilehash: 3477e6a9eda40edeadaab9cd6d3de2f016250fc8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f7d12fbf0de9b1546f15061ab7eb1318378bbbb
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79186212"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168126"
 ---
 # <a name="commanding-overview"></a>Общие сведения о системе команд
 Система команд <a name="introduction"></a> представляет собой механизм ввода в [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], обеспечивающий обработку входных данных на более семантическом уровне по сравнению с вводом устройств. Примеры команд включают операции **Копировать**, **Вырезать** и **Вставить**, доступные во многих приложениях.  
@@ -173,9 +174,9 @@ ms.locfileid: "79186212"
 ## <a name="command-library"></a>Библиотека команд  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] предоставляет набор стандартных команд.  Библиотека команд включает следующие классы: <xref:System.Windows.Input.ApplicationCommands>, <xref:System.Windows.Input.NavigationCommands>, <xref:System.Windows.Input.MediaCommands>, <xref:System.Windows.Documents.EditingCommands> и <xref:System.Windows.Input.ComponentCommands>.  Эти классы предоставляют команды, такие как <xref:System.Windows.Input.ApplicationCommands.Cut%2A>, <xref:System.Windows.Input.NavigationCommands.BrowseBack%2A> и <xref:System.Windows.Input.NavigationCommands.BrowseForward%2A>, <xref:System.Windows.Input.MediaCommands.Play%2A>, <xref:System.Windows.Input.MediaCommands.Stop%2A> и <xref:System.Windows.Input.MediaCommands.Pause%2A>.  
   
- Многие из этих команд содержат набор привязок ввода по умолчанию.  Например, если вы укажете, что приложение обрабатывает команду копий, вы автоматически получаете привязку клавиатуры "CTRL-C", вы также получаете привязки для других устройств ввода, таких как жесты пера планшетного ПК и речевой информации.  
+ Многие из этих команд содержат набор привязок ввода по умолчанию.  Например, если вы укажете, что приложение обрабатывает команду копирования, вы автоматически получаете привязку клавиатуры "CTRL + C", а также получаете привязки для других устройств ввода, таких как жесты пера планшетного ПК и речевые сведения.  
   
- При ссылке на команды в различных библиотеках команд с помощью [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], обычно можно опустить имя класса библиотеки, который предоставляет статическое свойство команды. Как правило, имена команд задаются однозначно в виде строк и существуют типы владельца, которые обеспечивает логическую группировку команд, однако они не являются необходимыми для устранения неоднозначности. Например, можно указать `Command="Cut"` вместо более подробной команды `Command="ApplicationCommands.Cut"`. Это удобный механизм, встроенный [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] в процессор для команд (точнее, это поведение <xref:System.Windows.Input.ICommand>преобразователя типа, который [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] процессор ссылается во время загрузки).  
+ При ссылке на команды в различных библиотеках команд с помощью [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], обычно можно опустить имя класса библиотеки, который предоставляет статическое свойство команды. Как правило, имена команд задаются однозначно в виде строк и существуют типы владельца, которые обеспечивает логическую группировку команд, однако они не являются необходимыми для устранения неоднозначности. Например, можно указать `Command="Cut"` вместо более подробной команды `Command="ApplicationCommands.Cut"`. Это удобный механизм, встроенный в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] процессор для команд (точнее, это поведение преобразователя типов <xref:System.Windows.Input.ICommand> , которое [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] указывает процессор во время загрузки).  
   
 <a name="creating_commands"></a>
 ## <a name="creating-custom-commands"></a>Создание настраиваемых команд  

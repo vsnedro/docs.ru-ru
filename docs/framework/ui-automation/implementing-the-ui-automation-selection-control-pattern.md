@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления модели автоматизации пользовательского интерфейса "Выделение"
+description: Ознакомьтесь с правилами и соглашениями по реализации шаблона элемента управления Selection в модели автоматизации пользовательского интерфейса. См. раздел обязательные элементы для интерфейса Иселектионпровидер.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Selection control pattern
 - UI Automation, Selection control pattern
 - control patterns, Selection
 ms.assetid: 449c3068-a5d6-4f66-84c6-1bcc7dd4d209
-ms.openlocfilehash: 083a4bb56fe76c1d65015ffabf741d7e1953d2ff
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d3854a401ae6179be4e4e75d86964108d83b0ccf
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180121"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163583"
 ---
 # <a name="implementing-the-ui-automation-selection-control-pattern"></a>Реализация шаблона элемента управления модели автоматизации пользовательского интерфейса "Выделение"
 > [!NOTE]
@@ -29,12 +30,12 @@ ms.locfileid: "79180121"
   
 - Элементы управления, имеющие минимальный, максимальный и непрерывный диапазон, такие как элемент управления "Ползунок" для элемента **Объем** , должны реализовывать <xref:System.Windows.Automation.Provider.IRangeValueProvider> вместо <xref:System.Windows.Automation.Provider.ISelectionProvider>.  
   
-- Элементы управления одним выбором, <xref:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot>которые управляют элементами управления детьми, которые реализуются, такие как ползунок <xref:System.Windows.Automation.Provider.ISelectionProvider>разрешения **экрана** в диалоговом поле Display **Properties** или элемент управления выбора Color **Picker** от Microsoft Word (иллюстрированный ниже), должен реализовать; их дети должны <xref:System.Windows.Automation.Provider.IRawElementProviderFragment> <xref:System.Windows.Automation.Provider.ISelectionItemProvider>осуществлять как и .  
+- Элементы управления с одним выбором, которые управляют дочерними элементами управления, которые реализуют <xref:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot> , такие как ползунок **разрешения экрана** в диалоговом окне **свойства отображения** или элемент управления выбора **цвета** из Microsoft Word (как показано ниже), должны реализовываться <xref:System.Windows.Automation.Provider.ISelectionProvider> ; их дочерние элементы должны реализовывать <xref:System.Windows.Automation.Provider.IRawElementProviderFragment> и <xref:System.Windows.Automation.Provider.ISelectionItemProvider> .  
   
  ![Палитра с отмеченным желтым цветом.](./media/uia-valuepattern-colorpicker.png "UIA_ValuePattern_ColorPicker")  
 Пример сопоставления строки настройки цвета  
   
-- Меню не поддерживают <xref:System.Windows.Automation.SelectionPattern>. Если вы работаете с пунктами меню, которые включают как графику, так и текст (например, элементы <xref:System.Windows.Automation.Provider.IToggleProvider> **Preview Pane** в меню **View** в Microsoft Outlook) и должны передать состояние, следует реализовать.  
+- Меню не поддерживают <xref:System.Windows.Automation.SelectionPattern>. Если вы работаете с элементами меню, включающими как график, так и текст (например, элементы **области просмотра** в меню **вид** в Microsoft Outlook) и должны передать состояние, следует реализовать <xref:System.Windows.Automation.Provider.IToggleProvider> .  
   
 <a name="Required_Members_for_ISelectionProvider"></a>
 ## <a name="required-members-for-iselectionprovider"></a>Обязательные члены для ISelectionProvider  
@@ -60,9 +61,9 @@ ms.locfileid: "79180121"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Реализация шаблона элемента управления SelectionItem автоматизации пользовательского интерфейса](implementing-the-ui-automation-selectionitem-control-pattern.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

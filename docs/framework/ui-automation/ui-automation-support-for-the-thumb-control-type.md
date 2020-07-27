@@ -1,17 +1,18 @@
 ---
 title: Поддержка автоматизации пользовательского интерфейса для элемента управления типа Thumb
+description: Получение сведений о поддержке модели автоматизации пользовательского интерфейса для типа элемента управления Thumb. Сведения о требуемой древовидной структуре, свойствах, шаблонах элементов управления и событиях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control types, Thumb
 - UI Automation, Thumb control type
 - Thumb control type
 ms.assetid: 13636338-e320-4355-b071-ede20a3fb1de
-ms.openlocfilehash: 7b5b549052a5f2199a700acf4181fe5e0572240d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4a5aca4786fea2f4f258b6dde998287ea123b940
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179505"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168399"
 ---
 # <a name="ui-automation-support-for-the-thumb-control-type"></a>Поддержка автоматизации пользовательского интерфейса для элемента управления типа Thumb
 > [!NOTE]
@@ -21,7 +22,7 @@ ms.locfileid: "79179505"
   
  Элементы управления "Бегунок" предоставляют функциональность, позволяющую перемещать (или перетаскивать) элемент управления, например кнопка полосы прокрутки, или изменять его размер, например мини-приложение для изменения размера окна. Элемент управления "Бегунок" может также быть реализован в виде перемещаемых границ панелей. Обратите внимание, что он не предоставляет функциональность перетаскивания и вставки. Бегунок может получать фокус мыши, но обычно не может получать фокус клавиатуры. Разработчик элемента управления должен реализовать его так, чтобы он действовал соответствующим образом (поддерживал перетаскивание или изменение размера).  
   
- В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Thumb. Требования [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] применяются ко всем [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]элементам управления большого пальца, будь то, Win32, или Windows Forms.  
+ В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Thumb. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]Требования применяются ко всем элементам управления "бегунок", будь это [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] , Win32 или Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
 ## <a name="required-ui-automation-tree-structure"></a>Требуемая древовидная структура модели автоматизации пользовательского интерфейса  
@@ -29,13 +30,13 @@ ms.locfileid: "79179505"
   
 |Представление элемента управления|Представление содержимого|  
 |------------------|------------------|  
-|Бегунок|- Не применимо|  
+|Бегунок|— Неприменимо|  
   
  Бегунки никогда не появляются в представлении содержимого, так как они предназначены только для управления с помощью мыши. Их функции предоставляются через другой шаблон элемента управления, такой как Scroll, Transform или RangeValue, поддерживаемый в контейнере Thumb.  
   
 <a name="Required_UI_Automation_Properties"></a>
 ## <a name="required-ui-automation-properties"></a>Требуемые свойства модели автоматизации пользовательского интерфейса  
- В следующей таблице перечислены свойства [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , значения или определения которых особенно актуальны для элементов управления "Бегунок". Для получения [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] дополнительной информации о свойствах [см.](ui-automation-properties-for-clients.md)  
+ В следующей таблице перечислены свойства [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , значения или определения которых особенно актуальны для элементов управления "Бегунок". Дополнительные сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] свойствах см. в разделе [Свойства модели автоматизации пользовательского интерфейса для клиентов](ui-automation-properties-for-clients.md).  
   
 |Свойство[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|Значение|Примечания|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
@@ -56,7 +57,7 @@ ms.locfileid: "79179505"
   
 |Шаблон элемента управления/свойство шаблона|Поддержка/значение|Примечания|  
 |---------------------------------------|--------------------|-----------|  
-|<xref:System.Windows.Automation.Provider.ITransformProvider>|Обязательно|Разрешает перемещение бегунка на экране.|  
+|<xref:System.Windows.Automation.Provider.ITransformProvider>|Требуется|Разрешает перемещение бегунка на экране.|  
   
 <a name="Required_UI_Automation_Events"></a>
 ## <a name="required-ui-automation-events"></a>Необходимые события модели автоматизации пользовательского интерфейса  
@@ -64,11 +65,11 @@ ms.locfileid: "79179505"
   
 |Событие[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Поддержка|Примечания|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Обязательно|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Требуется|None|  
   
 ## <a name="see-also"></a>См. также раздел
 

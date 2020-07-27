@@ -1,5 +1,6 @@
 ---
 title: Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса
+description: Узнайте, как реализовать поддержку шаблонов элементов управления в поставщике автоматизации пользовательского интерфейса, чтобы клиентские приложения могли управлять элементами управления и получать от них данные.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - control patterns, supporting in UI Automation provider
 - UI Automation, supporting control patterns in provider
 ms.assetid: 0d635c35-ffa8-4dc8-bbc9-12fcd5445776
-ms.openlocfilehash: 1200ebd42884220d2611729b87f4bf51e7a903a1
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 82300499520be6b820b361ebdeb56bbf3716afab
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446830"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163503"
 ---
 # <a name="support-control-patterns-in-a-ui-automation-provider"></a>Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса
 
@@ -37,12 +38,12 @@ ms.locfileid: "74446830"
 
 ## <a name="example"></a>Пример
 
-В следующем примере показана реализация метода <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A> , который возвращает класс, реализующий <xref:System.Windows.Automation.Provider.ISelectionProvider>. Большинство элементов управления "список" также поддерживают другие шаблоны, но в этом примере для всех других идентификаторов шаблонов возвращается пустая ссылка (`Nothing` в Microsoft Visual Basic .NET).
+В следующем примере показана реализация метода <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A> , который возвращает класс, реализующий <xref:System.Windows.Automation.Provider.ISelectionProvider>. Большинство элементов управления "список" также поддерживают другие шаблоны, но в этом примере `Nothing` для всех других идентификаторов шаблонов возвращается пустая ссылка (в Microsoft Visual Basic .NET).
 
 [!code-csharp[UIAFragmentProvider_snip#120](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#120)]
 [!code-vb[UIAFragmentProvider_snip#120](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#120)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о поставщиках автоматизации пользовательского интерфейса](ui-automation-providers-overview.md)
 - [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](server-side-ui-automation-provider-implementation.md)

@@ -2,12 +2,12 @@
 title: Команда dotnet restore
 description: Вы узнаете, как восстановить зависимости и связанные с проектом средства при помощи команды dotnet restore.
 ms.date: 02/27/2020
-ms.openlocfilehash: 276fad896a6a8a647ed05a9de8c582d463d9ab8f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 7b456e28505a07c03936c9006c8631848fd4672c
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84005325"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925480"
 ---
 # <a name="dotnet-restore"></a>dotnet restore
 
@@ -164,7 +164,7 @@ dotnet restore -h|--help
 - Восстановление зависимостей и средств для проекта `app1` по указанному пути:
 
   ```dotnetcli
-  dotnet restore ~/projects/app1/app1.csproj
+  dotnet restore ./projects/app1/app1.csproj
   ```
 
 - Восстановление зависимостей и средств для проекта в текущем каталоге с использованием пути к файлу, заданного в качестве источника:

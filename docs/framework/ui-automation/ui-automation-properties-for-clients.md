@@ -1,5 +1,6 @@
 ---
 title: Свойства автоматизации пользовательского интерфейса для клиентов
+description: Ознакомьтесь с обзором свойств модели автоматизации пользовательского интерфейса, которые доступны клиентским приложениям модели автоматизации пользовательского интерфейса.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - properties, UI Automation clients
 - UI Automation, client properties
 ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
-ms.openlocfilehash: 3ef1e7c6e21f30c5bdea096003f192c38059ab2e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: fe78d7da154d79a5f66ee6c190b199065675841f
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74441359"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163126"
 ---
 # <a name="ui-automation-properties-for-clients"></a>Свойства автоматизации пользовательского интерфейса для клиентов
 > [!NOTE]
@@ -30,12 +31,12 @@ ms.locfileid: "74441359"
  Для повышения производительности значения свойств и шаблоны элементов управления могут кэшироваться при получении объектов <xref:System.Windows.Automation.AutomationElement> . Дополнительные сведения см. [в разделе Кэширование в клиентах автоматизации пользовательского интерфейса](caching-in-ui-automation-clients.md).  
   
 ## <a name="property-ids"></a>Идентификаторы свойств  
- Идентификаторы свойств — это уникальные постоянные значения, инкапсулированные в <xref:System.Windows.Automation.AutomationProperty>ных объектах. Клиентские приложения модели автоматизации пользовательского интерфейса получают эти идентификаторы из класса <xref:System.Windows.Automation.AutomationElement> или из соответствующего класса шаблона элемента управления, например <xref:System.Windows.Automation.ScrollPattern>. Поставщики автоматизации пользовательского интерфейса получают их из <xref:System.Windows.Automation.AutomationElementIdentifiers> или из одного из классов идентификаторов шаблонов элементов управления, такого как <xref:System.Windows.Automation.ScrollPatternIdentifiers>.  
+ Идентификаторы свойств (ID) являются уникальными, постоянными значениями, инкапсулированными в <xref:System.Windows.Automation.AutomationProperty> объектах. Клиентские приложения модели автоматизации пользовательского интерфейса получают эти идентификаторы из <xref:System.Windows.Automation.AutomationElement> класса или из соответствующего класса шаблона элемента управления, например <xref:System.Windows.Automation.ScrollPattern> . Поставщики автоматизации пользовательского интерфейса получают их из <xref:System.Windows.Automation.AutomationElementIdentifiers> или из одного из классов идентификаторов шаблонов элементов управления, такого как <xref:System.Windows.Automation.ScrollPatternIdentifiers>.  
   
  Числовой <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> объекта <xref:System.Windows.Automation.AutomationProperty> используется поставщиками для идентификации свойств, которые запрашиваются в методе <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A?displayProperty=nameWithType> . В общем случае клиентским приложениям не требуется проверять <xref:System.Windows.Automation.AutomationIdentifier.Id%2A>. <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> используется только для целей отладки и диагностики.  
   
 ## <a name="property-conditions"></a>Условия свойств  
- Идентификаторы свойств используются при конструировании <xref:System.Windows.Automation.PropertyCondition> объектов, используемых для поиска объектов <xref:System.Windows.Automation.AutomationElement>. Например, может потребоваться найти <xref:System.Windows.Automation.AutomationElement> с определенным именем или все включенные элементы управления. Каждое <xref:System.Windows.Automation.PropertyCondition> определяет идентификатор <xref:System.Windows.Automation.AutomationProperty> и значение, которому свойство должно соответствовать.  
+ Идентификаторы свойств используются при построении <xref:System.Windows.Automation.PropertyCondition> объектов, используемых для поиска <xref:System.Windows.Automation.AutomationElement> объектов. Например, может потребоваться найти <xref:System.Windows.Automation.AutomationElement> с определенным именем или все включенные элементы управления. Каждое <xref:System.Windows.Automation.PropertyCondition> определяет идентификатор <xref:System.Windows.Automation.AutomationProperty> и значение, которому свойство должно соответствовать.  
   
  Дополнительные сведения см. в следующих справочных разделах.  
   
@@ -97,7 +98,7 @@ ms.locfileid: "74441359"
 |<xref:System.Windows.Automation.AutomationElement.FocusedElement%2A>|(Статическое свойство) <xref:System.Windows.Automation.AutomationElement> , имеющий фокус ввода.|  
 |<xref:System.Windows.Automation.AutomationElement.RootElement%2A>|(Статическое свойство) Корневой <xref:System.Windows.Automation.AutomationElement>, имеющий фокус ввода.|  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Кэширование в клиентах автоматизации пользовательского интерфейса](caching-in-ui-automation-clients.md)
 - [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](server-side-ui-automation-provider-implementation.md)

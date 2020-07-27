@@ -1,5 +1,6 @@
 ---
 title: Проход по тексту при помощи модели автоматизации пользовательского интерфейса
+description: См. Пример прохода по текстовому содержимому документа с помощью Microsoft UI Automation в Текстунит инкрементах.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - text, traversing
 - traversing text
 ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
-ms.openlocfilehash: 71df7c8f9dde388ffc4445389e105a4ad686539f
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 0b4269d043fd6cd0cc5da9825714aab4ead701f9
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74441874"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168095"
 ---
 # <a name="traverse-text-using-ui-automation"></a>Проход по тексту при помощи модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -37,9 +38,9 @@ ms.locfileid: "74441874"
   
  Любой метод, использующий <xref:System.Windows.Automation.Text.TextUnit> , будет откладываться для следующего наибольшего <xref:System.Windows.Automation.Text.TextUnit> , поддерживаемого если указанный <xref:System.Windows.Automation.Text.TextUnit> не поддерживается элементом управления.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-- [Общие сведения об объекте TextPattern модели автоматизации пользовательского интерфейса](ui-automation-textpattern-overview.md)
+- [Общие сведения о TextPattern модели автоматизации пользовательского интерфейса](ui-automation-textpattern-overview.md)
 - [Добавление содержимого в текстовое поле с помощью модели автоматизации пользовательского интерфейса](add-content-to-a-text-box-using-ui-automation.md)
 - [Поиск и выделение текста с помощью модели автоматизации пользовательского интерфейса](find-and-highlight-text-using-ui-automation.md)
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)

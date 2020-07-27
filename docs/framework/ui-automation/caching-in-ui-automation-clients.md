@@ -1,16 +1,17 @@
 ---
 title: Кэширование в клиентах автоматизации пользовательского интерфейса
+description: Получение сведений о кэшировании в клиентах автоматизации пользовательского интерфейса в .NET. Кэширование определяется как предварительная выборка данных.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation caching in clients
 - caching, UI Automation clients
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
-ms.openlocfilehash: 186ed77594aadab9e3f49ef30e559e159aee1b60
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4fbb4acabebea54015b11cefdf8a37c7e2dc93f5
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180278"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168251"
 ---
 # <a name="caching-in-ui-automation-clients"></a>Кэширование в клиентах автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -20,7 +21,7 @@ ms.locfileid: "79180278"
   
  В [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]кэширование означает предварительное получение данных. Затем к этим данным можно осуществлять доступ без дальнейшего взаимодействия между процессами. Кэширование обычно используется клиентскими приложениями модели автоматизации пользовательского интерфейса для массового извлечения свойств и шаблонов элементов управления. Затем по мере необходимости информация извлекается из кэша. Приложение периодически обновляет кэш, обычно в ответ на события, указывающие на изменение чего-нибудь в [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] .  
   
- Преимущества кэширования наиболее заметны с помощью элементов управления Windows Presentation Foundation (WPF) и пользовательских элементов управления, которые имеют поставщиков автоматизации пользовательского капитала на стороне сервера. При доступе к поставщикам клиентской стороны, таким как поставщики по умолчанию для элементов управления Win32, выгода меньше.  
+ Преимущества кэширования наиболее заметны при использовании элементов управления Windows Presentation Foundation (WPF) и пользовательских элементов управления с поставщиками автоматизации пользовательского интерфейса на стороне сервера. Существует меньше преимуществ при доступе к поставщикам на стороне клиента, таким как поставщики по умолчанию для элементов управления Win32.  
   
  Кэширование происходит, когда приложение активирует <xref:System.Windows.Automation.CacheRequest> , а затем использует какой-либо метод или свойство для возврата <xref:System.Windows.Automation.AutomationElement>; например <xref:System.Windows.Automation.AutomationElement.FindFirst%2A>, <xref:System.Windows.Automation.AutomationElement.FindAll%2A>. Исключением являются методы класса <xref:System.Windows.Automation.TreeWalker> ; кэширование выполняется только в том случае, если указан <xref:System.Windows.Automation.CacheRequest> как параметр (например, <xref:System.Windows.Automation.TreeWalker.GetFirstChild%28System.Windows.Automation.AutomationElement%2CSystem.Windows.Automation.CacheRequest%29?displayProperty=nameWithType>.  
   
@@ -56,7 +57,7 @@ ms.locfileid: "79180278"
 ## <a name="activating-the-cacherequest"></a>Активация CacheRequest  
  Кэширование выполняется, только когда объекты <xref:System.Windows.Automation.AutomationElement> извлекаются при активном <xref:System.Windows.Automation.CacheRequest> для текущего потока. Существует два способа активации <xref:System.Windows.Automation.CacheRequest>.  
   
- Обычно вызывается метод <xref:System.Windows.Automation.CacheRequest.Activate%2A>. Этот метод возвращает объект, реализующий <xref:System.IDisposable>. Запрос остается активным, пока объект <xref:System.IDisposable> существует. Самый простой способ контролировать срок службы объекта — `using` приложить вызов `Using` к блоку (C) или (Visual Basic). Это гарантирует, что запрос будет извлекаться из стека, даже если возникнет исключение.  
+ Обычно вызывается метод <xref:System.Windows.Automation.CacheRequest.Activate%2A>. Этот метод возвращает объект, реализующий <xref:System.IDisposable>. Запрос остается активным, пока объект <xref:System.IDisposable> существует. Самый простой способ управления временем существования объекта заключается в заключении вызова в `using` блок (C#) или `Using` (Visual Basic). Это гарантирует, что запрос будет извлекаться из стека, даже если возникнет исключение.  
   
  Другим способом, который подходит, когда требуется вкладывать запросы кэширования, является вызов метода <xref:System.Windows.Automation.CacheRequest.Push%2A>. Этот вызов помещает запрос в стек и активирует его. Запрос остается активным, пока он не будет удален из стека методом <xref:System.Windows.Automation.CacheRequest.Pop%2A>. Запрос становится временно неактивным, если другой запрос помещается в стек; активен только верхний запрос в стеке.  
   
@@ -105,4 +106,4 @@ ms.locfileid: "79180278"
 
 - [События модели автоматизации пользовательского интерфейса для клиентов](ui-automation-events-for-clients.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)
-- [Пример FetchTimer](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))
+- [Пример Фетчтимер](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))

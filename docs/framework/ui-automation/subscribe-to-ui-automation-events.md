@@ -1,5 +1,6 @@
 ---
 title: Подписка на события модели автоматизации пользовательского интерфейса
+description: См. раздел как подписываться на события, вызванные поставщиками автоматизации пользовательского интерфейса. В примере кода регистрируется обработчик событий для события, возникающего при вызове элемента управления.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - events, subscribing to
 - listening for events
 ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
-ms.openlocfilehash: a5effd1d7a3cfaba5e068087b3008903e58b6739
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 8f456702657c70837c6137e3e60335110361bcd9
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74432989"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163537"
 ---
 # <a name="subscribe-to-ui-automation-events"></a>Подписка на события модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -35,9 +36,9 @@ ms.locfileid: "74432989"
  [!code-csharp[UIAClient_snip#102](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#102)]
  [!code-vb[UIAClient_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#102)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>
-- [Общие сведения о событиях модели автоматизации пользовательского интерфейса](ui-automation-events-overview.md)
+- [Обзор событий автоматизации пользовательского интерфейса](ui-automation-events-overview.md)

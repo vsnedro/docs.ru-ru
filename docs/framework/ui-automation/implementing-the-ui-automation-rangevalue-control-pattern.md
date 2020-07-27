@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления RangeValue автоматизации пользовательского интерфейса
+description: Ознакомьтесь с правилами и соглашениями по реализации шаблона элемента управления RangeValue в модели автоматизации пользовательского интерфейса. См. раздел обязательные элементы для интерфейса IRangeValueProvider.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, Range Value
 - Range Value control pattern
 - UI Automation, Range Value control pattern
 ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
-ms.openlocfilehash: 847a8aae3fd0c3d6965c910d19a4cec11cd2a3b7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ccb6aeb5f8451975d7e2e9649bbb82c0c3ae23d5
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180183"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164083"
 ---
 # <a name="implementing-the-ui-automation-rangevalue-control-pattern"></a>Реализация шаблона элемента управления RangeValue автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -29,7 +30,7 @@ ms.locfileid: "79180183"
   
 - Элементы управления, имеющие неоднозначные значения диапазона, такие как индикаторы выполнения или ползунки, должны нормализовать эти значения.  
   
- ![Панель прогресса.](./media/uia-rangevaluepattern-progress-bar.PNG "UIA_RangeValuePattern_Progress_Bar")  
+ ![Индикатор выполнения.](./media/uia-rangevaluepattern-progress-bar.PNG "UIA_RangeValuePattern_Progress_Bar")  
 Пример индикатора выполнения, где значение имеет тип Integer, а минимальное и максимальное значения свойства нормализованы до 0 и 100 соответственно  
   
 <a name="Required_Members_for_the_IRangeValueProvider"></a>
@@ -57,8 +58,8 @@ ms.locfileid: "79180183"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

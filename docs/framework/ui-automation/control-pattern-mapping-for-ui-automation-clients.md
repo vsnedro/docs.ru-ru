@@ -1,16 +1,17 @@
 ---
 title: Сопоставление шаблона элемента управления для клиентов автоматизации пользовательского интерфейса
+description: Просмотр таблицы сопоставления шаблонов элементов управления для клиентов автоматизации пользовательского интерфейса. Действия для определенных типов элементов управления могут поддерживаться, условно поддерживаться или не поддерживаться.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, for UI Automation clients
 - UI Automation, clients, control patterns for
 ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
-ms.openlocfilehash: 689e649343c93d0670c6870098a09f61097f4fb4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7673ce4ac88cc36a7c35e2e946a31d23b2ce6eca
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180231"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164190"
 ---
 # <a name="control-pattern-mapping-for-ui-automation-clients"></a>Сопоставление шаблона элемента управления для клиентов автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -35,17 +36,17 @@ ms.locfileid: "79180231"
 |Тип элемента управления|Поддерживается|Условно поддерживается|Не поддерживается|  
 |------------------|---------------|-------------------------|-------------------|  
 |Кнопка|None|Invoke, Toggle, Expand Collapse|None|  
-|Календарь|Grid, Table|Selection, Scroll|Значение|  
-|Флажок|Toggle|None|None|  
+|"Календарь"|Grid, Table|Selection, Scroll|Значение|  
+|Флажок|Переключение|None|None|  
 |Combo Box|Развернуть свернуть|Selection, Value|Scroll|  
-|Сетка данных|Сетка|Scroll, Selection, Table|None|  
+|Сетка данных|Grid|Scroll, Selection, Table|None|  
 |Data Item|Selection Item|Expand Collapse, Grid Item, Scroll Item, Table, Toggle, Value|None|  
-|Документ|текст|Scroll, Value|None|  
+|Документ|Text|Scroll, Value|None|  
 |Изменить|None|Text, Range Value, Value|None|  
 |Группа|None|Развернуть свернуть|None|  
 |Заголовок|None|Преобразование|None|  
 |элемент заголовка|None|Transform, Invoke|None|  
-|Hyperlink|Invoke|Значение|None|  
+|Гиперссылка|Invoke|Значение|None|  
 |Образ —|None|Grid Item, Table Item|Invoke, Selection Item|  
 |Список|None|Grid, Multiple View, Scroll, Selection|Таблица|  
 |List Item|Selection Item|Expand Collapse, Grid Item, Invoke, Scroll Item, Toggle, Value|None|  
@@ -54,24 +55,24 @@ ms.locfileid: "79180231"
 |Menu Item|None|Expand Collapse, Invoke, Selection Item, Toggle|None|  
 |Панель|None|Dock Scroll, Transform|Окно|  
 |Progress Bar|None|Range Value, Value|None|  
-|Radio Button|Selection Item|None|Toggle|  
+|Radio Button|Selection Item|None|Переключение|  
 |Scroll Bar|None|Range Value|Scroll|  
-|Разделитель|None|None|None|  
+|Separator|None|None|None|  
 |Ползунок|None|Range Value, Selection, Value|None|  
 |Spinner|None|Range Value, Selection, Value|None|  
 |Разворачивающаяся кнопка|Invoke, Expand Collapse|None|None|  
-|Строка состояния|None|Сетка|None|  
-|Вкладка|Выбор|Scroll|None|  
+|Status Bar|None|Grid|None|  
+|Вкладка|Выбранное|Scroll|None|  
 |Tab Item|Selection Item|None|Invoke|  
 |Таблица|Grid, Grid Item, Table, Table Item|None|None|  
-|текст|None|Grid Item, Table Item, Text|Значение|  
+|Text|None|Grid Item, Table Item, Text|Значение|  
 |Бегунок|Преобразование|None|None|  
 |Title Bar|None|None|None|  
 |Tool Bar|None|Dock, Expand Collapse, Transform|None|  
 |Tool Tip|None|Text, Window|None|  
 |Дерево|None|Scroll, Selection|None|  
 |Tree Item|Развернуть свернуть|Invoke, Scroll Item, Selection Item, Toggle|None|  
-|Окно|Transform, Window|Закрепить|None|  
+|Окно|Transform, Window|Панель закрепления|None|  
   
 > [!NOTE]
 > Если тип элемента управления не имеет поддерживаемых шаблонов элементов управления в списке, но имеет один или несколько условно поддерживаемых шаблонов элементов управления, то один из этих условных шаблонов элементов управления будет поддерживаться все время.  

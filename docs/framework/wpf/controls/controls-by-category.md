@@ -1,15 +1,16 @@
 ---
 title: Категории элементов управления
+description: Проверка Windows Presentation Foundation элементов управления, сгруппированных по категориям, которые позволяют выбрать соответствующий элемент управления, сравнивая аналогичные элементы управления.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - controls [WPF], listed by category
 ms.assetid: f8a1f78e-d9fa-4367-9ec6-f084577e83bb
-ms.openlocfilehash: 5958793015d409678b67cdc7eedcb4289f5e885c
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: 226e037dc26f817b96a5aa869565f08ee6ff6574
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75636215"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166288"
 ---
 # <a name="controls-by-category"></a>Категории элементов управления
 Элементы управления Windows Presentation Foundation (WPF) можно логически сгруппировать в несколько категорий. Эти категории можно использовать для выбора соответствующего элемента управления для сценария, что поможет увидеть, какие элементы управления имеют схожие шаблоны использования или функциональные возможности.  
@@ -56,7 +57,7 @@ ms.locfileid: "75636215"
 - <xref:System.Windows.Controls.WrapPanel>  
   
 ## <a name="buttons"></a>Кнопки  
- Кнопки являются одним из основных элементов управления пользовательского интерфейса. Приложения обычно выполняют определенную задачу в <xref:System.Windows.Controls.Primitives.ButtonBase.Click> событие, когда пользователь щелкает их.  
+ Кнопки являются одним из основных элементов управления пользовательского интерфейса. Приложения обычно выполняют некоторую задачу в случае, <xref:System.Windows.Controls.Primitives.ButtonBase.Click> когда пользователь щелкает их.  
   
 - <xref:System.Windows.Controls.Button>  
   
@@ -100,7 +101,7 @@ ms.locfileid: "75636215"
   
 - <xref:System.Windows.Controls.Slider>  
   
-## <a name="navigation"></a>Навигация в  
+## <a name="navigation"></a>Навигация  
  Элементы управления навигацией расширяют возможности навигации приложения, создавая внешний вид конечных фреймов или вкладок приложения.  
   
 - <xref:System.Windows.Controls.Frame>  
@@ -122,7 +123,7 @@ ms.locfileid: "75636215"
   
 - <xref:Microsoft.Win32.SaveFileDialog>  
   
-## <a name="user-information"></a>Сведения о пользователе  
+## <a name="user-information"></a>Информация о пользователе  
  Элементы управления информацией пользователя предоставляют контекстную обратную связь или уточняют пользовательский интерфейс приложения. Пользователь обычно не может взаимодействовать с этими элементами управления.  
   
 - <xref:System.Windows.Controls.AccessText>  
@@ -152,7 +153,7 @@ ms.locfileid: "75636215"
   
 - <xref:System.Windows.Controls.StickyNoteControl>  
   
-## <a name="input"></a>Input  
+## <a name="input"></a>Входные данные  
  Элементы управления вводом позволяют пользователю вводить текст и другое содержимое.  
   
 - <xref:System.Windows.Controls.TextBox>  
@@ -161,7 +162,7 @@ ms.locfileid: "75636215"
   
 - <xref:System.Windows.Controls.PasswordBox>  
   
-## <a name="media"></a>Носитель  
+## <a name="media"></a>Мультимедиа  
  В состав WPF входит интегрированная поддержка размещения аудио и видеосодержимого, а также [кодеки] для большинства популярных форматов изображений.  
   
 - <xref:System.Windows.Controls.Image>  
@@ -177,6 +178,6 @@ ms.locfileid: "75636215"
   
 - <xref:System.Windows.Controls.InkPresenter>  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Библиотека элементов управления](control-library.md)

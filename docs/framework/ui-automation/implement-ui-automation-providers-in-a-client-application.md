@@ -1,5 +1,6 @@
 ---
 title: Реализация поставщиков UI Automation в в приложении клиента
+description: См. Пример реализации поставщика автоматизации пользовательского интерфейса на стороне клиента в приложении. Обратите внимание, что это редкий сценарий.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - client-side UI Automation provider, implementation within applications
 - UI Automation, implementing client-side provider within application
 ms.assetid: f325f0d8-1715-41ea-85ca-45b82ffea8bc
-ms.openlocfilehash: 09b33b78ef8f0b62ef4f1e24c56faae783f1e8dc
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: c604b68021886abdf06360bfb8afefe3640c12fe
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74435480"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164120"
 ---
 # <a name="implement-ui-automation-providers-in-a-client-application"></a>Реализация поставщиков UI Automation в в приложении клиента
 > [!NOTE]
@@ -29,9 +30,9 @@ ms.locfileid: "74435480"
  [!code-csharp[UIAClientSideProvider_snip#201](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClientSideProvider_snip/CSharp/ClientImplementationProgram.cs#201)]
  [!code-vb[UIAClientSideProvider_snip#201](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClientSideProvider_snip/visualbasic/clientimplementationprogram.vb#201)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о поставщиках автоматизации пользовательского интерфейса](ui-automation-providers-overview.md)
 - [Регистрация сборки поставщика на стороне клиента](register-a-client-side-provider-assembly.md)
-- [Создание поставщика автоматизации пользовательского интерфейса на стороне клиента](create-a-client-side-ui-automation-provider.md)
+- [Создание поставщика модели автоматизации пользовательского интерфейса на стороне клиента](create-a-client-side-ui-automation-provider.md)
 - [Реализация клиентского поставщика автоматизации пользовательского интерфейса](client-side-ui-automation-provider-implementation.md)

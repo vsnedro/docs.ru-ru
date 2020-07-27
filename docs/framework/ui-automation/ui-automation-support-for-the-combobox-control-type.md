@@ -1,17 +1,18 @@
 ---
 title: Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления ComboBox
+description: Получение сведений о поддержке модели автоматизации пользовательского интерфейса для типа элемента управления ComboBox. Сведения о требуемой древовидной структуре, свойствах, шаблонах элементов управления и событиях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control types, Combo Box
 - UI Automation, Combo Box control type
 - ComboBox controls
 ms.assetid: bb321126-4770-41da-983a-67b7b89d45dd
-ms.openlocfilehash: 2b1629adcc9e23294daa0512070089cc72ab5810
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c708de791056969e281ad1bc223e2a2233fa170b
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179793"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166101"
 ---
 # <a name="ui-automation-support-for-the-combobox-control-type"></a>Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления ComboBox
 > [!NOTE]
@@ -21,7 +22,7 @@ ms.locfileid: "79179793"
   
  Поле со списком представляет собой список, объединенный со статическим элементом управления или элементом управления "Поле ввода", который отображает выбранный элемент в списке поля со списком. Часть списка этого элемента управления отображается все время или появляется только при нажатии пользователем стрелки раскрывающегося списка (являющейся кнопкой) рядом с элементом управления. Если поле выбора является элементом управления "Поле ввода", пользователь может ввести сведения, которых нет в списке; в противном случае пользователь может только выбирать элементы в списке.  
   
- В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления ComboBox. Требования [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] применяются ко всем элементам [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]управления комбо-коробкой, будь то, Win32 или Windows Forms.  
+ В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления ComboBox. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]Требования применяются ко всем элементам управления "поле со списком", будь это [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] , Win32 или Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
 ## <a name="required-ui-automation-tree-structure"></a>Требуемая древовидная структура модели автоматизации пользовательского интерфейса  
@@ -29,7 +30,7 @@ ms.locfileid: "79179793"
   
 |Представление элемента управления|Представление содержимого|  
 |------------------|------------------|  
-|ComboBox<br /><br /> - Отодвить (0 или 1)<br />- Список (1)<br />- Пункт списка (ребенок списка; 0 к много)<br />- Кнопка (1)|ComboBox<br /><br /> - Пункт списка (0 к много)|  
+|ComboBox<br /><br /> -Edit (0 или 1)<br />-List (1)<br />— Элемент списка (дочерний объект списка; 0 – несколько)<br />Кнопка (1)|ComboBox<br /><br /> — Элемент списка (от 0 до многих)|  
   
  Элемент представления "Поле ввода" в представлении элемента управления для поля со списком необходим только в том случае, если в поле со списком можно добавлять какие-либо введенные данные, как в случае поля со списком в диалоговом окне "Выполнить".  
   
@@ -68,12 +69,12 @@ ms.locfileid: "79179793"
   
 |Событие[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Поддержка|Примечания|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.ExpandCollapsePatternIdentifiers.ExpandCollapseStateProperty>|Обязательно|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.ExpandCollapsePatternIdentifiers.ExpandCollapseStateProperty>|Требуется|None|  
 |Событие изменения свойства<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty>|Зависит|Если элемент управления поддерживает шаблон Value, то он должен поддерживать данное событие.|  
   
 ## <a name="see-also"></a>См. также раздел

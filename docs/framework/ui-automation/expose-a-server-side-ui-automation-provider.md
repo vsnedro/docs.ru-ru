@@ -1,5 +1,6 @@
 ---
 title: Представление поставщика автоматизации пользовательского интерфейса со стороны сервера
+description: Просмотрите пример, в котором показано, как предоставить поставщик автоматизации пользовательского интерфейса на стороне сервера, размещенный в окне System. Windows. Forms. Control.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - UI Automation, server-side provider, exposing
 - server-side UI Automation provider, exposing
 ms.assetid: 55d419c0-2201-4101-90c9-2888df4dbb47
-ms.openlocfilehash: 49dcae6ccaf749bae8d8a90af850034bb9bd37fb
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 66380c31da45b23d24b14154aea9770c6369aaf2
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74433622"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168449"
 ---
 # <a name="expose-a-server-side-ui-automation-provider"></a>Представление поставщика автоматизации пользовательского интерфейса со стороны сервера
 > [!NOTE]
@@ -28,7 +29,7 @@ ms.locfileid: "74433622"
  [!code-csharp[UIAFragmentProvider_snip#116](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#116)]
  [!code-vb[UIAFragmentProvider_snip#116](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#116)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о поставщиках автоматизации пользовательского интерфейса](ui-automation-providers-overview.md)
 - [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](server-side-ui-automation-provider-implementation.md)

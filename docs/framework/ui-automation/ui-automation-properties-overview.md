@@ -1,16 +1,17 @@
 ---
 title: Общие сведения о свойствах автоматизированного пользовательского интерфейса
+description: Ознакомьтесь с широким обзором свойств автоматизации пользовательского интерфейса Майкрософт. Сведения об идентификаторах свойств, свойствах по категориям, локализации, свойствам и событиям.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, properties
 - properties, UI Automation
 ms.assetid: a6c31d7b-b33e-49b3-b5c1-31a345f9b7c8
-ms.openlocfilehash: 8a44fd89017002ae51d9b15a22bac97668d0ff90
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 17d780c059530be8c91890302ea4066de2d4aa73
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179871"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163212"
 ---
 # <a name="ui-automation-properties-overview"></a>Общие сведения о свойствах автоматизированного пользовательского интерфейса
 > [!NOTE]
@@ -26,11 +27,11 @@ ms.locfileid: "79179871"
   
 <a name="Property_Identifiers"></a>
 ## <a name="property-identifiers"></a>Идентификаторы свойств  
- Каждое свойство определяется номером и именем. Имена свойств используются только для отладки и диагностики. Поставщики используют числовые идолы для идентификации входящих запросов свойств. Однако клиентские приложения используют для идентификации свойств, которые им требуется получить, только ссылку <xref:System.Windows.Automation.AutomationProperty>, которая включает номер и имя.  
+ Каждое свойство определяется номером и именем. Имена свойств используются только для отладки и диагностики. Поставщики используют числовые идентификаторы для идентификации входящих запросов свойств. Однако клиентские приложения используют для идентификации свойств, которые им требуется получить, только ссылку <xref:System.Windows.Automation.AutomationProperty>, которая включает номер и имя.  
   
  Объекты<xref:System.Windows.Automation.AutomationProperty> , представляющие конкретные свойства, доступны как поля в различных классах. По соображениям безопасности поставщики автоматизации пользовательского интерфейса получают эти объекты из отдельного набора классов, содержащихся в Uiautomationtypes.dll.  
   
- В следующей таблице классифицируются свойства <xref:System.Windows.Automation.AutomationProperty>по классам, содержащим итоговые иудиции.  
+ В следующей таблице перечислены свойства классов, содержащих <xref:System.Windows.Automation.AutomationProperty> идентификаторы.  
   
 |Виды свойств|Клиенты получают идентификаторы из|Поставщики получают идентификаторы из|  
 |-------------------------|--------------------------|----------------------------|  
@@ -53,7 +54,7 @@ ms.locfileid: "79179871"
   
 <a name="Properties_by_Category"></a>
 ## <a name="properties-by-category"></a>Свойства, упорядоченные по категориям  
- Следующие таблицы классифицируют свойства, идентифицированные в исследуемые <xref:System.Windows.Automation.AutomationElement> <xref:System.Windows.Automation.AutomationElementIdentifiers>ими Эти свойства являются общими для всех элементов управления. Почти все из них, скорее всего, будут статическими во время существования приложения поставщика; большинство динамических свойств связано с шаблонами элементов управления.  
+ В следующих таблицах указаны свойства, идентификаторы которых находятся в <xref:System.Windows.Automation.AutomationElement> и <xref:System.Windows.Automation.AutomationElementIdentifiers> . Эти свойства являются общими для всех элементов управления. Почти все из них, скорее всего, будут статическими во время существования приложения поставщика; большинство динамических свойств связано с шаблонами элементов управления.  
   
  В столбце **Доступ к свойству** перечислены другие методы доступа для каждого свойства, в дополнение к <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> и <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>. Дополнительные сведения о получении свойств в клиентском приложении см. в разделе [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
@@ -65,7 +66,7 @@ ms.locfileid: "79179871"
 |Идентификатор свойства|Доступ к свойству|  
 |-------------------------|---------------------|  
 |<xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle%2A>|  
-|<xref:System.Windows.Automation.AutomationElement.CultureProperty>|Недоступно|  
+|<xref:System.Windows.Automation.AutomationElement.CultureProperty>|н/д|  
 |<xref:System.Windows.Automation.AutomationElement.HelpTextProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsOffscreen%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.OrientationProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Orientation%2A>|  
@@ -80,7 +81,7 @@ ms.locfileid: "79179871"
 |<xref:System.Windows.Automation.AutomationElement.ItemTypeProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemType%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.LocalizedControlTypeProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.LocalizedControlType%2A>|  
   
-### <a name="identification"></a>Идентификация  
+### <a name="identification"></a>Определение  
   
 |Идентификатор свойства|Доступ к свойству|  
 |-------------------------|---------------------|  
@@ -127,7 +128,7 @@ ms.locfileid: "79179871"
 |<xref:System.Windows.Automation.AutomationElement.IsValuePatternAvailableProperty>|<xref:System.Windows.Automation.AutomationElement.GetSupportedPatterns%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.IsWindowPatternAvailableProperty>|<xref:System.Windows.Automation.AutomationElement.GetSupportedPatterns%2A>|  
   
-### <a name="miscellaneous"></a>Разное  
+### <a name="miscellaneous"></a>Прочее  
   
 |Идентификатор свойства|Доступ к свойству|  
 |-------------------------|---------------------|  
@@ -164,6 +165,6 @@ ms.locfileid: "79179871"
 - [Кэширование в клиентах автоматизации пользовательского интерфейса](caching-in-ui-automation-clients.md)
 - [Свойства автоматизации пользовательского интерфейса для клиентов](ui-automation-properties-for-clients.md)
 - [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](server-side-ui-automation-provider-implementation.md)
-- [Нахождение элемента модели автоматизации пользовательского интерфейса в зависимости от состояния свойства](find-a-ui-automation-element-based-on-a-property-condition.md)
+- [Нахождение Элемента Автоматизации Пользовательского Интерфейса в Зависимости от Состояния Свойства](find-a-ui-automation-element-based-on-a-property-condition.md)
 - [Возврат свойств от поставщика автоматизации пользовательского интерфейса](return-properties-from-a-ui-automation-provider.md)
 - [Вызов событий из поставщика автоматизации пользовательского интерфейса](raise-events-from-a-ui-automation-provider.md)

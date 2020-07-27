@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления модели автоматизации пользовательского интерфейса Invoke
+description: Ознакомьтесь с правилами и соглашениями для реализации шаблона элемента управления Invoke в модели автоматизации пользовательского интерфейса. См. раздел обязательные элементы для интерфейса IInvokeProvider.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, Invoke control pattern
 - control patterns, Invoke
 - Invoke control pattern
 ms.assetid: e5b1e239-49f8-468e-bfec-1fba02ec9ac4
-ms.openlocfilehash: 30ae83aa4b73f36afce1251387598ef9b61816d8
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: b464b3ab5cd2b0789798f8b865b946c5eae017eb
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74435158"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166170"
 ---
 # <a name="implementing-the-ui-automation-invoke-control-pattern"></a>Реализация шаблона элемента управления модели автоматизации пользовательского интерфейса Invoke
 
@@ -51,7 +52,7 @@ ms.locfileid: "74435158"
 
 - Элемент может исчезнуть из дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] сразу после вызова. В результате запрос информации из элемента, предоставленного обратным вызовом события, может завершиться неудачно. В качестве обходного решения рекомендуется выполнять предварительное кэширование информации.
 
-- Элементы управления могут реализовывать множество шаблонов элементов управления. Например, элемент управления цвет заливки на панели инструментов Microsoft Excel реализует как <xref:System.Windows.Automation.InvokePattern>, так и шаблоны элементов управления <xref:System.Windows.Automation.ExpandCollapsePattern>. <xref:System.Windows.Automation.ExpandCollapsePattern> предоставляет меню, а <xref:System.Windows.Automation.InvokePattern> заполняет активный выделенный фрагмент выбранным цветом.
+- Элементы управления могут реализовывать множество шаблонов элементов управления. Например, элемент управления цвет заливки на панели инструментов Microsoft Excel реализует <xref:System.Windows.Automation.InvokePattern> и <xref:System.Windows.Automation.ExpandCollapsePattern> шаблоны элементов управления, и. <xref:System.Windows.Automation.ExpandCollapsePattern> предоставляет меню, а <xref:System.Windows.Automation.InvokePattern> заполняет активный выделенный фрагмент выбранным цветом.
 
 <a name="Required_Members_for_the_IValueProvider_Interface"></a>
 
@@ -61,7 +62,7 @@ ms.locfileid: "74435158"
 
 |Обязательные члены|Тип члена|Примечания|
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A>|метод|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A> является асинхронным вызовом и должен возвращаться немедленно без блокировки.<br /><br /> Это особенно важно для элементов управления, которые при вызове прямо или косвенно запускают модальное диалоговое окно. Любой клиент автоматизации пользовательского интерфейса, инициировавший это событие, будет оставаться заблокированным до закрытия модального диалогового окна.|
+|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A>|method|<xref:System.Windows.Automation.Provider.IInvokeProvider.Invoke%2A> является асинхронным вызовом и должен возвращаться немедленно без блокировки.<br /><br /> Это особенно важно для элементов управления, которые при вызове прямо или косвенно запускают модальное диалоговое окно. Любой клиент автоматизации пользовательского интерфейса, инициировавший это событие, будет оставаться заблокированным до закрытия модального диалогового окна.|
 
 <a name="Exceptions"></a>
 
@@ -73,10 +74,10 @@ ms.locfileid: "74435158"
 |--------------------|---------------|
 |<xref:System.Windows.Automation.ElementNotEnabledException>|Если элемент управления не включен.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
-- [Поддержка шаблонов элементов управления в поставщике автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
+- [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Вызов элемента управления с помощью модели автоматизации пользовательского интерфейса](invoke-a-control-using-ui-automation.md)
 - [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)

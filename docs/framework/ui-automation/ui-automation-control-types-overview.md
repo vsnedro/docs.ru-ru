@@ -1,16 +1,17 @@
 ---
 title: Общие сведения о типах элементов управления автоматизации пользовательского интерфейса
+description: Ознакомьтесь с обзором типов элементов управления модели автоматизации пользовательского интерфейса, которые представляют собой хорошо известные идентификаторы, которые можно использовать для указания типа элемента управления, представляемого элементом.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, control types
 - control types, UI Automation
 ms.assetid: 75159ef8-bd43-4d13-acb7-1f1fe9253160
-ms.openlocfilehash: 643c89e8f6c5e34aa1fb3c5c7c6c750c72046277
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 204e950fca74c4f7bd2c13dc8a8891152954c071
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179935"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166139"
 ---
 # <a name="ui-automation-control-types-overview"></a>Общие сведения о типах элементов управления автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -40,7 +41,7 @@ ms.locfileid: "79179935"
   
 - [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления Calendar](ui-automation-support-for-the-calendar-control-type.md)  
   
-- [Поддержка модели автоматизированного пользовательского интерфейса для типа элемента управления CheckBox](ui-automation-support-for-the-checkbox-control-type.md)  
+- [Поддержка модели автоматизированного пользовательского интерфейса для элемента управления CheckBox](ui-automation-support-for-the-checkbox-control-type.md)  
   
 - [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления ComboBox](ui-automation-support-for-the-combobox-control-type.md)  
   
@@ -52,13 +53,13 @@ ms.locfileid: "79179935"
   
 - [Поддержка автоматизации пользовательского интерфейса для типа элемента управления "Поле вода"](ui-automation-support-for-the-edit-control-type.md)  
   
-- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления Group](ui-automation-support-for-the-group-control-type.md)  
+- [Поддержка автоматизации пользовательского интерфейса для типа элемента управления Group](ui-automation-support-for-the-group-control-type.md)  
   
-- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления Header](ui-automation-support-for-the-header-control-type.md)  
+- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления "Заголовок"](ui-automation-support-for-the-header-control-type.md)  
   
 - [Поддержка модели автоматизации пользовательского интерфейса типа элемента управления HeaderItem](ui-automation-support-for-the-headeritem-control-type.md)  
   
-- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления типа Hyperlink](ui-automation-support-for-the-hyperlink-control-type.md)  
+- [Поддержка автоматизированного пользовательского интерфейса для элемента управления типа Hyperlink](ui-automation-support-for-the-hyperlink-control-type.md)  
   
 - [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления изображения](ui-automation-support-for-the-image-control-type.md)  
   
@@ -78,19 +79,19 @@ ms.locfileid: "79179935"
   
 - [Поддержка автоматизации пользовательского интерфейса для элемента управления типа RadioButton](ui-automation-support-for-the-radiobutton-control-type.md)  
   
-- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления ScrollBar](ui-automation-support-for-the-scrollbar-control-type.md)  
+- [Поддержка автоматизации пользовательского интерфейса для типа элемента управления ScrollBar](ui-automation-support-for-the-scrollbar-control-type.md)  
   
 - [Поддержка автоматизации пользовательского интерфейса для элемента управления Separator](ui-automation-support-for-the-separator-control-type.md)  
   
 - [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления ползунка](ui-automation-support-for-the-slider-control-type.md)  
   
-- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления Spinner](ui-automation-support-for-the-spinner-control-type.md)  
+- [Поддержка Автоматизации Пользовательского Интерфейса для типа элемента управления "Счетчик"](ui-automation-support-for-the-spinner-control-type.md)  
   
 - [Поддержка автоматизации пользовательского интерфейса для типа элемента управления SplitButton](ui-automation-support-for-the-splitbutton-control-type.md)  
   
 - [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления StatusBar](ui-automation-support-for-the-statusbar-control-type.md)  
   
-- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления Tab](ui-automation-support-for-the-tab-control-type.md)  
+- [Поддержка UI Automation для типа элемента управления Tab](ui-automation-support-for-the-tab-control-type.md)  
   
 - [Поддержка автоматизации пользовательского интерфейса для типа элемента управления TabItem](ui-automation-support-for-the-tabitem-control-type.md)  
   
@@ -100,7 +101,7 @@ ms.locfileid: "79179935"
   
 - [Поддержка автоматизации пользовательского интерфейса для элемента управления типа Thumb](ui-automation-support-for-the-thumb-control-type.md)  
   
-- [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления TitleBar](ui-automation-support-for-the-titlebar-control-type.md)  
+- [Поддержка Автоматизации Пользовательского Интерфейса для Элементов Управления Типа "Заголовок Окна"](ui-automation-support-for-the-titlebar-control-type.md)  
   
 - [Поддержка автоматизации пользовательского интерфейса для типа элемента управления ToolBar](ui-automation-support-for-the-toolbar-control-type.md)  
   

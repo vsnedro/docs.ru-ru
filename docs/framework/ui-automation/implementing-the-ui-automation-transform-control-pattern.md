@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления преобразованиями модели автоматизации пользовательского интерфейса
+description: Ознакомьтесь с правилами и соглашениями для реализации шаблона элемента управления Transform в модели автоматизации пользовательского интерфейса. Знание обязательных членов для интерфейса Итрансформпровидер.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, Transform
 - Transform control pattern
 - UI Automation, Transform control pattern
 ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
-ms.openlocfilehash: 5643bc85972ea33cc31b1a83ecf7615dbb275bc2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: da11ce4cf9da10c0ebb990f9439b0bbe3621c561
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180051"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168211"
 ---
 # <a name="implementing-the-ui-automation-transform-control-pattern"></a>Реализация шаблона элемента управления преобразованиями модели автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -54,14 +55,14 @@ ms.locfileid: "79180051"
   
 |Тип исключения|Условие|  
 |--------------------|---------------|  
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Move%2A><br /><br /> - Если <xref:System.Windows.Automation.TransformPatternIdentifiers.CanMoveProperty> это ложно.|  
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Resize%2A><br /><br /> - Если <xref:System.Windows.Automation.TransformPatternIdentifiers.CanResizeProperty> это ложно.|  
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate%2A><br /><br /> - Если <xref:System.Windows.Automation.TransformPatternIdentifiers.CanRotateProperty> это ложно.|  
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Move%2A><br /><br /> — Если <xref:System.Windows.Automation.TransformPatternIdentifiers.CanMoveProperty> имеет значение false.|  
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Resize%2A><br /><br /> — Если <xref:System.Windows.Automation.TransformPatternIdentifiers.CanResizeProperty> имеет значение false.|  
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.ITransformProvider.Rotate%2A><br /><br /> — Если <xref:System.Windows.Automation.TransformPatternIdentifiers.CanRotateProperty> имеет значение false.|  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

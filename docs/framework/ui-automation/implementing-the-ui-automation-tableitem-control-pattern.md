@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления TableItem автоматизированного пользовательского интерфейса
+description: Ознакомьтесь с правилами и соглашениями для реализации шаблона элемента управления TableItem в модели автоматизации пользовательского интерфейса. Знание обязательных членов для интерфейса Итаблеитемпровидер.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, Table Item
 - UI Automation, Table Item control pattern
 - TableItem control pattern
 ms.assetid: ac178408-1485-436f-8d3e-eee3bf80cb24
-ms.openlocfilehash: f35b491c31e8725eac0025dfd6815079d0ea9b79
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3d6d31fe0e041fbba147df14d290a775188755f2
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180076"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163519"
 ---
 # <a name="implementing-the-ui-automation-tableitem-control-pattern"></a>Реализация шаблона элемента управления TableItem автоматизированного пользовательского интерфейса
 > [!NOTE]
@@ -24,7 +25,7 @@ ms.locfileid: "79180076"
 <a name="Implementation_Guidelines_and_Conventions"></a>
 ## <a name="implementation-guidelines-and-conventions"></a>Правила и соглашения реализации  
   
-- Для функциональности связанных [Implementing the UI Automation GridItem Control Pattern](implementing-the-ui-automation-griditem-control-pattern.md)элементов сетки см.  
+- Сведения о связанных функциях элементов сетки см. [в разделе Реализация шаблона элемента управления GridItem модели автоматизации пользовательского интерфейса](implementing-the-ui-automation-griditem-control-pattern.md).  
   
 <a name="Required_Members_for_ITableItemProvider"></a>
 ## <a name="required-members-for-itableitemprovider"></a>Обязательные члены для ITableItemProvider  
@@ -42,10 +43,10 @@ ms.locfileid: "79180076"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Реализация шаблона элемента управления таблицы автоматизации пользовательского интерфейса](implementing-the-ui-automation-table-control-pattern.md)
 - [Реализация шаблона элемента управления GridItem модели автоматизации пользовательского интерфейса](implementing-the-ui-automation-griditem-control-pattern.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

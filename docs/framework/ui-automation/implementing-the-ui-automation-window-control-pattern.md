@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления Window автоматизированного пользовательского интерфейса
+description: Ознакомьтесь с правилами и соглашениями по реализации шаблона элемента управления Window в модели автоматизации пользовательского интерфейса. Знание обязательных членов для интерфейса IWindowProvider.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, Window
 - UI Automation, Window control pattern
 - Window control pattern
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
-ms.openlocfilehash: dd677ca9f610d463acc7c69f99767bd7b8781589
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e1d7429f86896947a10b73965caa7d771f54490b
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180032"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168193"
 ---
 # <a name="implementing-the-ui-automation-window-control-pattern"></a>Реализация шаблона элемента управления Window автоматизированного пользовательского интерфейса
 > [!NOTE]
@@ -19,7 +20,7 @@ ms.locfileid: "79180032"
   
  В этом разделе приводятся рекомендации и соглашения для реализации <xref:System.Windows.Automation.Provider.IWindowProvider>, включая сведения о свойствах, методах и событиях <xref:System.Windows.Automation.WindowPattern> . Ссылки на дополнительные материалы перечислены в конце раздела.  
   
- Шаблон <xref:System.Windows.Automation.WindowPattern> управления используется для поддержки элементов управления, которые обеспечивают фундаментальную функциональность на основе окон в традиционном графическом пользовательском интерфейсе (GUI). Примеры элементов управления, которые должны реализовать этот шаблон управления, включают окна приложений верхнего уровня, детские окна интерфейса с несколькими документами (MDI), изменяемые элементы управления сплит-панелью, модальные диалоги и окна помощи шара.  
+ <xref:System.Windows.Automation.WindowPattern>Шаблон элемента управления используется для поддержки элементов управления, которые предоставляют фундаментальные функции на основе окна в традиционном графическом интерфейсе пользователя. Примеры элементов управления, которые должны реализовывать этот шаблон элемента управления, включают в себя окна приложений верхнего уровня, дочерние окна многодокументного интерфейса (MDI), элементы управления "область разделения" с изменяемыми размерами, модальные диалоговые окна и окна справки.  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
 ## <a name="implementation-guidelines-and-conventions"></a>Правила и соглашения реализации  
@@ -60,13 +61,13 @@ ms.locfileid: "79180032"
   
 |Тип исключения|Условие|  
 |--------------------|---------------|  
-|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IWindowProvider.SetVisualState%2A><br /><br /> - Если элемент управления не поддерживает запрашиваемый поведение.|  
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A><br /><br /> - Когда параметр не является действительным номером.|  
+|<xref:System.InvalidOperationException>|<xref:System.Windows.Automation.Provider.IWindowProvider.SetVisualState%2A><br /><br /> — Если элемент управления не поддерживает запрошенное поведение.|  
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A><br /><br /> — Если параметр не является допустимым числом.|  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

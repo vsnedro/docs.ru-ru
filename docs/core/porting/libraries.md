@@ -3,18 +3,18 @@ title: Перенос библиотек в .NET Core
 description: Узнайте, как перенести проекты библиотеки из .NET Framework в .NET Core.
 author: cartermp
 ms.date: 12/07/2018
-ms.openlocfilehash: 68fe36e543d949dc76bdb0c19ef3482936ad9e79
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ac9da2f850bf1e4e36367ad2154849a0c7efd535
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79397911"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164283"
 ---
 # <a name="port-net-framework-libraries-to-net-core"></a>Перенос библиотек .NET Framework в .NET Core
 
 Узнайте, как перенести код библиотеки .NET Framework в .NET Core, чтобы выполнять его на разных платформах и расширить диапазон использующих его приложений.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 В этой статье предполагается, что вы:
 
@@ -26,9 +26,6 @@ ms.locfileid: "79397911"
 
 [.NET Standard](../../standard/net-standard.md)\
 В этой статье рассматривается официальная спецификация API-интерфейсов .NET, которые должны быть доступны во всех реализациях .NET.
-
-[Пакеты, метапакеты и платформы](../packages.md)\
-Из этой статьи вы узнаете, как .NET Core определяет и использует пакеты и как пакеты поддерживают выполнение кода во множестве реализаций .NET.
 
 [Разработка библиотек с помощью кроссплатформенных средств](../tutorials/libraries.md)\
 В этой статье показано, как создавать библиотеки с помощью .NET Core CLI.
@@ -130,7 +127,7 @@ ms.locfileid: "79397911"
 
 Двигаясь от базовых объектов библиотеки к более высоким уровням и тестируя каждый из них требуемым образом, вы обеспечиваете систематичность переноса и изоляцию проблем, относящихся к отдельным уровням кода.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 >[!div class="nextstepaction"]
 >[Организация проектов для .NET Core](project-structure.md)

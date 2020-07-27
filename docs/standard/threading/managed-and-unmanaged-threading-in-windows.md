@@ -9,12 +9,12 @@ helpviewer_keywords:
 - threads and fibers [.NET]
 - managed threading
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
-ms.openlocfilehash: 6ab0cc7c1ec2f7bbc633ac966dd18ab3ea7a395b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: de823297540d5ce3740a26614dbb9a82881decf3
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73127547"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86924387"
 ---
 # <a name="managed-and-unmanaged-threading-in-windows"></a>Управляемые и неуправляемые потоки в Windows
 
@@ -23,9 +23,6 @@ ms.locfileid: "73127547"
  Когда неуправляемый поток входит в среду выполнения, например, посредством вызываемой оболочки COM, система проверяет локальное хранилище потока данного потока для поиска внутреннего управляемого объекта <xref:System.Threading.Thread> . Если он найден, среда выполнения уже оповещена об этом потоке. Если найти объект не удается, среда выполнения создает новый объект <xref:System.Threading.Thread> и устанавливает его в локальном хранилище потока данного потока.  
   
  При использовании управляемых потоков <xref:System.Threading.Thread.GetHashCode%2A?displayProperty=nameWithType> является стабильным средством идентификации управляемого потока. В течение времени существования вашего потока он не будет конфликтовать со значением из любого другого потока независимо от того, из какого домена приложения вы получили это значение.  
-  
-> [!NOTE]
-> **ThreadId** операционной системы не имеет фиксированного отношения с управляемым потоком, так как неуправляемый узел может управлять отношением между управляемым и неуправляемым потоками. В частности, более сложный узел может использовать Fiber API, чтобы спланировать нескольких управляемых потоков для одного потока операционной системы или перемещать управляемый поток по разным потокам операционной системы.  
   
 ## <a name="mapping-from-win32-threading-to-managed-threading"></a>Сопоставление потоков Win32 с управляемыми потоками
 
@@ -65,13 +62,13 @@ ms.locfileid: "73127547"
   
 ## <a name="blocking-issues"></a>Блокирующие проблемы  
 
-Если поток выполняет неуправляемый вызов для операционной системы, которая заблокировала этот поток в неуправляемом коде, среда выполнения не берет на себя управление им для <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> или <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. В случае с <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>среда выполнения помечает поток как **Abort** и берет управление, когда он повторно входит в управляемый код. Вместо неуправляемой блокировки рекомендуется использовать управляемую блокировку. <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType>,<xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType>, <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType>, <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType>, <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=nameWithType>и др. реагируют на <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> и <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. Кроме того, если ваш поток находится в однопотоковом подразделении, все эти операции управляемой блокировки будут корректно выдавать сообщения в ваше подразделение, пока поток находится в заблокированном состоянии.  
+Если поток выполняет неуправляемый вызов для операционной системы, которая заблокировала этот поток в неуправляемом коде, среда выполнения не берет на себя управление им для <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> или <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. В случае с <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>среда выполнения помечает поток как **Abort** и берет управление, когда он повторно входит в управляемый код. Вместо неуправляемой блокировки рекомендуется использовать управляемую блокировку. <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType>,<xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType>, <xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType>, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType>, <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType>, <xref:System.GC.WaitForPendingFinalizers%2A?displayProperty=nameWithType> и др. реагируют на <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType> и <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. Кроме того, если ваш поток находится в однопотоковом подразделении, все эти операции управляемой блокировки будут корректно выдавать сообщения в ваше подразделение, пока поток находится в заблокированном состоянии.  
 
 ## <a name="threads-and-fibers"></a>Потоки и волокна
 
 Потоковая модель .NET не поддерживает [волокна](/windows/desktop/procthread/fibers). Не следует вызывать неуправляемые функции, которые реализуется с использованием волокон. Такие вызовы могут привести к сбою среды выполнения .NET.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>
 - <xref:System.Threading.ThreadState>

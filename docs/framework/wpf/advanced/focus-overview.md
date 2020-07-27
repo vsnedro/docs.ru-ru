@@ -1,5 +1,6 @@
 ---
 title: Общие сведения о фокусе
+description: 'Узнайте о двух основных понятиях в Windows Presentation Foundation, относящихся к фокусу: фокус клавиатуры и логический фокус.'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,59 +9,59 @@ helpviewer_keywords:
 - applications [WPF], focus
 - focus in applications [WPF]
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
-ms.openlocfilehash: de788ec3f0628ff2f7c422c76c73ff7985424113
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 71aeb577cccd2c3b16df1c5a3cb772dd1f5479e2
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79186670"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165108"
 ---
 # <a name="focus-overview"></a>Общие сведения о фокусе
 Существует два основных понятия, относящихся к фокусу в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]: фокус клавиатуры и логический фокус.  Фокус клавиатуры ссылается на элемент, получающий ввод с клавиатуры, а логический фокус ссылается на элемент в области фокуса, имеющий фокус.  Эти понятия подробно освещаются в этом обзоре.  Важно понимать разницу между этими понятиями, чтобы создавать сложные приложения с несколькими областями, в которых можно получить фокус.  
   
- Основными классами, участвующими в <xref:System.Windows.Input.Keyboard> управлении <xref:System.Windows.Input.FocusManager> фокусами, являются класс, <xref:System.Windows.UIElement> класс <xref:System.Windows.ContentElement>и классы базовых элементов, такие как и .  Дополнительные сведения о базовых элементах см. в разделе [Общие сведения о базовых элементах](base-elements-overview.md).  
+ Основными классами, участвующими в управлении фокусом, являются <xref:System.Windows.Input.Keyboard> класс, <xref:System.Windows.Input.FocusManager> класс и классы базовых элементов, такие как <xref:System.Windows.UIElement> и <xref:System.Windows.ContentElement> .  Дополнительные сведения о базовых элементах см. в разделе [Общие сведения о базовых элементах](base-elements-overview.md).  
   
- Класс <xref:System.Windows.Input.Keyboard> связан в первую очередь <xref:System.Windows.Input.FocusManager> с клавиатурой фокус и касается в первую очередь с логическим фокусом, но это не является абсолютным различием.  Элемент, имеющий фокус клавиатуры, также будет иметь логический фокус, но элемент, имеющий логический фокус, не обязательно будет иметь фокус клавиатуры.  Это очевидно, когда <xref:System.Windows.Input.Keyboard> вы используете класс, чтобы установить элемент, который имеет фокус клавиатуры, потому что он также устанавливает логический фокус на элементе.  
+ <xref:System.Windows.Input.Keyboard>Класс имеет дело в основном с фокусом клавиатуры, и в <xref:System.Windows.Input.FocusManager> основном он касается логического фокуса, но это не абсолютное отличие.  Элемент, имеющий фокус клавиатуры, также будет иметь логический фокус, но элемент, имеющий логический фокус, не обязательно будет иметь фокус клавиатуры.  Это очевидно при использовании <xref:System.Windows.Input.Keyboard> класса для задания элемента с фокусом клавиатуры, для этого также устанавливается логический фокус на элемент.  
 
 <a name="Keyboard_Focus"></a>
 ## <a name="keyboard-focus"></a>Фокус клавиатуры  
- Фокус клавиатуры относится к элементу, получающему ввод с клавиатуры.  На всем рабочем столе может быть только один элемент, в котором находится фокус клавиатуры.  В [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], элемент, который имеет <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> клавиатуру фокус будет установлен на `true`.  Статическое <xref:System.Windows.Input.Keyboard.FocusedElement%2A> свойство <xref:System.Windows.Input.Keyboard> в классе получает элемент, который в настоящее время имеет фокус клавиатуры.  
+ Фокус клавиатуры относится к элементу, получающему ввод с клавиатуры.  На всем рабочем столе может быть только один элемент, в котором находится фокус клавиатуры.  В [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] элемент, имеющий фокус клавиатуры, будет иметь <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> значение `true` .  Статическое свойство <xref:System.Windows.Input.Keyboard.FocusedElement%2A> <xref:System.Windows.Input.Keyboard> класса получает элемент, который в данный момент имеет фокус клавиатуры.  
   
- Для того, чтобы элемент получил <xref:System.Windows.UIElement.Focusable%2A> фокус <xref:System.Windows.UIElement.IsVisible%2A> клавиатуры, и свойства на `true`базовых элементах должны быть установлены.  Некоторые классы, <xref:System.Windows.Controls.Panel> такие как <xref:System.Windows.UIElement.Focusable%2A> базовый `false` класс, установлены по умолчанию; поэтому, вы <xref:System.Windows.UIElement.Focusable%2A> должны `true` установить, если вы хотите такой элемент, чтобы иметь возможность получить клавиатуру фокус.  
+ Чтобы элемент мог получить фокус клавиатуры, <xref:System.Windows.UIElement.Focusable%2A> <xref:System.Windows.UIElement.IsVisible%2A> Свойства и базовых элементов должны иметь значение `true` .  Некоторые классы, например <xref:System.Windows.Controls.Panel> базовый класс, по <xref:System.Windows.UIElement.Focusable%2A> умолчанию имеют значение, `false` поэтому необходимо задать значение, если необходимо, чтобы <xref:System.Windows.UIElement.Focusable%2A> `true` такой элемент мог получить фокус клавиатуры.  
   
- Фокус клавиатуры можно получить с помощью взаимодействия пользователя с [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], например перехода к элементу или щелчка мышью определенных элементов.  Клавиатура фокус также может быть получена <xref:System.Windows.Input.Keyboard.Focus%2A> программно <xref:System.Windows.Input.Keyboard> с помощью метода на класс.  Метод <xref:System.Windows.Input.Keyboard.Focus%2A> пытается придать заданную клавиатуру элемента фокусировку.  Возвращаемый элемент — это элемент, имеющий фокус клавиатуры, который может отличаться от запрошенного, если старый или новый объект фокуса блокирует запрос.  
+ Фокус клавиатуры можно получить с помощью взаимодействия пользователя с [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], например перехода к элементу или щелчка мышью определенных элементов.  Фокус клавиатуры можно также получить программно с помощью <xref:System.Windows.Input.Keyboard.Focus%2A> метода <xref:System.Windows.Input.Keyboard> класса.  <xref:System.Windows.Input.Keyboard.Focus%2A>Метод пытается присвоить заданному элементу фокус клавиатуры.  Возвращаемый элемент — это элемент, имеющий фокус клавиатуры, который может отличаться от запрошенного, если старый или новый объект фокуса блокирует запрос.  
   
- В следующем примере <xref:System.Windows.Input.Keyboard.Focus%2A> используется метод для <xref:System.Windows.Controls.Button>настройки фокусировки клавиатуры на .  
+ В следующем примере используется <xref:System.Windows.Input.Keyboard.Focus%2A> метод для установки фокуса клавиатуры на <xref:System.Windows.Controls.Button> .  
   
  [!code-csharp[focussample#FocusSampleSetFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplesetfocus)]
  [!code-vb[focussample#FocusSampleSetFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplesetfocus)]  
   
- Свойство <xref:System.Windows.UIElement.IsKeyboardFocused%2A> в классах базовых элементов получает значение, указывающее, имеет ли элемент фокус клавиатуры.  Свойство <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> на базовых классах элементов получает значение, указывающее, имеет ли элемент или любой из его визуальных элементов ребенка фокус клавиатуру.  
+ <xref:System.Windows.UIElement.IsKeyboardFocused%2A>Свойство в классах базовых элементов получает значение, указывающее, имеет ли элемент фокус клавиатуры.  <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A>Свойство в классах базовых элементов получает значение, указывающее, имеет ли элемент фокус клавиатуры у элемента или одного из его визуальных дочерних элементов.  
   
- При настройке первоначального фокуса при запуске приложения элемент для получения фокуса должен находиться в визуальном древе исходного окна, загруженного приложением, а элемент должен иметь <xref:System.Windows.UIElement.Focusable%2A> и <xref:System.Windows.UIElement.IsVisible%2A> устанавливаться на. `true`  Рекомендуемое место для установки <xref:System.Windows.FrameworkElement.Loaded> первоначального фокуса находится в обработчике событий.  Обратный <xref:System.Windows.Threading.Dispatcher> вызов также может <xref:System.Windows.Threading.Dispatcher.Invoke%2A> быть <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>использован по телефону или .  
+ При установке начального фокуса при запуске приложения элемент для получения фокуса должен находиться в визуальном дереве исходного окна, загруженного приложением, а элемент должен иметь <xref:System.Windows.UIElement.Focusable%2A> и иметь <xref:System.Windows.UIElement.IsVisible%2A> значение `true` .  Рекомендуемое место для установки начального фокуса находится в <xref:System.Windows.FrameworkElement.Loaded> обработчике событий.  <xref:System.Windows.Threading.Dispatcher>Обратный вызов может также использоваться путем вызова метода <xref:System.Windows.Threading.Dispatcher.Invoke%2A> или <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> .  
   
 <a name="Logical_Focus"></a>
 ## <a name="logical-focus"></a>Логический фокус  
- Логическое внимание <xref:System.Windows.Input.FocusManager.FocusedElement%2A?displayProperty=nameWithType> относится к области фокусировки.  Область фокусировки — это элемент, который отслеживает <xref:System.Windows.Input.FocusManager.FocusedElement%2A> область охвата.  Когда фокус клавиатуры покидает область фокуса, элемент с фокусом теряет фокус клавиатуры, но сохраняет логический фокус.  При возвращении фокуса клавиатуры в область фокуса элемент с логическим фокусом получит фокус клавиатуры.  Это позволяет переносить фокус клавиатуры между несколькими областями фокуса, но гарантирует, что элемент с фокусом в области фокуса останется элементом с фокусом клавиатуры, когда фокус вернется в эту область.  
+ Логический фокус относится к элементу <xref:System.Windows.Input.FocusManager.FocusedElement%2A?displayProperty=nameWithType> в области фокуса.  Область фокуса — это элемент, который отслеживает в <xref:System.Windows.Input.FocusManager.FocusedElement%2A> пределах его области.  Когда фокус клавиатуры покидает область фокуса, элемент с фокусом теряет фокус клавиатуры, но сохраняет логический фокус.  При возвращении фокуса клавиатуры в область фокуса элемент с логическим фокусом получит фокус клавиатуры.  Это позволяет переносить фокус клавиатуры между несколькими областями фокуса, но гарантирует, что элемент с фокусом в области фокуса останется элементом с фокусом клавиатуры, когда фокус вернется в эту область.  
   
  В приложении может быть несколько элементов, имеющих логический фокус, но в отдельной области фокуса может быть только один элемент, имеющий логический фокус.  
   
  Элемент, имеющий фокус клавиатуры, имеет логический фокус для области фокуса, которой он принадлежит.  
   
- Элемент может быть превращен [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] в область фокусировки, установив <xref:System.Windows.Input.FocusManager> прилагаемое свойство <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> к `true`.  В коде элемент можно превратить в область <xref:System.Windows.Input.FocusManager.SetIsFocusScope%2A>фокусировки, вызывая .  
+ Элемент можно превратить в область фокуса в [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] , установив <xref:System.Windows.Input.FocusManager> для присоединенного свойства значение <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> `true` .  В коде элемент можно превратить в область фокуса путем вызова <xref:System.Windows.Input.FocusManager.SetIsFocusScope%2A> .  
   
- Следующий пример <xref:System.Windows.Controls.StackPanel> делает область фокусировки, установив <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> прилагаемое свойство.  
+ В следующем примере выполняется преобразование <xref:System.Windows.Controls.StackPanel> в область фокуса путем установки <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> присоединенного свойства.  
   
  [!code-xaml[MarkupSnippets#MarkupIsFocusScopeXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupisfocusscopexaml)]  
   
  [!code-csharp[FocusSnippets#FocusSetIsFocusScope](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSnippets/CSharp/Window1.xaml.cs#focussetisfocusscope)]
  [!code-vb[FocusSnippets#FocusSetIsFocusScope](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSnippets/visualbasic/window1.xaml.vb#focussetisfocusscope)]  
   
- <xref:System.Windows.Input.FocusManager.GetFocusScope%2A>возвращает область фокусировки для указанного элемента.  
+ <xref:System.Windows.Input.FocusManager.GetFocusScope%2A>Возвращает область фокуса для указанного элемента.  
   
- Классы, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] в которых фокус <xref:System.Windows.Window>областей по умолчанию, <xref:System.Windows.Controls.MenuItem> <xref:System.Windows.Controls.ToolBar>и <xref:System.Windows.Controls.ContextMenu>.  
+ Классы, в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] которых находятся области фокуса по умолчанию: <xref:System.Windows.Window> , <xref:System.Windows.Controls.MenuItem> , <xref:System.Windows.Controls.ToolBar> и <xref:System.Windows.Controls.ContextMenu> .  
   
- <xref:System.Windows.Input.FocusManager.GetFocusedElement%2A>получает сфокусированный элемент для заданной области фокусировки.  <xref:System.Windows.Input.FocusManager.SetFocusedElement%2A>устанавливает сфокусированный элемент в заданной области фокусировки.  <xref:System.Windows.Input.FocusManager.SetFocusedElement%2A>обычно используется для установки исходного сфокусированного элемента.  
+ <xref:System.Windows.Input.FocusManager.GetFocusedElement%2A>Возвращает элемент с фокусом для указанной области фокуса.  <xref:System.Windows.Input.FocusManager.SetFocusedElement%2A>Задает элемент с фокусом в заданной области фокуса.  <xref:System.Windows.Input.FocusManager.SetFocusedElement%2A>обычно используется для установки начального элемента с упором.  
   
  В следующем примере элемент с фокусом задается в области фокуса и возвращает элемент с фокусом для области фокуса.  
   
@@ -69,11 +70,11 @@ ms.locfileid: "79186670"
   
 <a name="Keyboard_Navigation"></a>
 ## <a name="keyboard-navigation"></a>Навигация с помощью клавиатуры  
- Класс <xref:System.Windows.Input.KeyboardNavigation> отвечает за реализацию навигации фокусировки клавиатуры по умолчанию при нажатии одного из клавиш навигации.  Клавиши навигации: TAB, SHIFT+TAB, CTRL+TAB, CTRL+SHIFT+TAB, стрелка вверх, стрелка вниз, стрелка влево и стрелка вправо.  
+ <xref:System.Windows.Input.KeyboardNavigation>Класс отвечает за реализацию навигации фокуса клавиатуры по умолчанию при нажатии одной из клавиш навигации.  Клавиши навигации: TAB, SHIFT+TAB, CTRL+TAB, CTRL+SHIFT+TAB, стрелка вверх, стрелка вниз, стрелка влево и стрелка вправо.  
   
- Навигационное поведение навигационного контейнера может быть <xref:System.Windows.Input.KeyboardNavigation> изменено путем настройки прилагаемых свойств <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> <xref:System.Windows.Input.KeyboardNavigation.ControlTabNavigation%2A>и. <xref:System.Windows.Input.KeyboardNavigation.DirectionalNavigation%2A>  Эти свойства типа <xref:System.Windows.Input.KeyboardNavigationMode> и возможные <xref:System.Windows.Input.KeyboardNavigationMode.Continue> <xref:System.Windows.Input.KeyboardNavigationMode.Local>значения, <xref:System.Windows.Input.KeyboardNavigationMode.Contained> <xref:System.Windows.Input.KeyboardNavigationMode.Cycle>, <xref:System.Windows.Input.KeyboardNavigationMode.Once>, <xref:System.Windows.Input.KeyboardNavigationMode.None>и .  Значение по <xref:System.Windows.Input.KeyboardNavigationMode.Continue>умолчанию, что означает, что элемент не является навигационным контейнером.  
+ Поведение навигации контейнера навигации можно изменить, задав вложенные <xref:System.Windows.Input.KeyboardNavigation> свойства, <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> <xref:System.Windows.Input.KeyboardNavigation.ControlTabNavigation%2A> и <xref:System.Windows.Input.KeyboardNavigation.DirectionalNavigation%2A> .  Эти свойства имеют тип, <xref:System.Windows.Input.KeyboardNavigationMode> а возможные значения: <xref:System.Windows.Input.KeyboardNavigationMode.Continue> , <xref:System.Windows.Input.KeyboardNavigationMode.Local> ,, <xref:System.Windows.Input.KeyboardNavigationMode.Contained> , <xref:System.Windows.Input.KeyboardNavigationMode.Cycle> <xref:System.Windows.Input.KeyboardNavigationMode.Once> и <xref:System.Windows.Input.KeyboardNavigationMode.None> .  Значение по умолчанию — <xref:System.Windows.Input.KeyboardNavigationMode.Continue> , то есть элемент не является контейнером навигации.  
   
- Следующий пример <xref:System.Windows.Controls.Menu> создает с <xref:System.Windows.Controls.MenuItem> рядом объектов.  Прилагаемое <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> свойство <xref:System.Windows.Input.KeyboardNavigationMode.Cycle> устанавливается на <xref:System.Windows.Controls.Menu>.  При изменении фокусировки с <xref:System.Windows.Controls.Menu>помощью ключа вкладки в фокусе будет перемещаться от каждого элемента, а при том, как последний элемент будет достигнут, фокус вернется к первому элементу.  
+ В следующем примере создается объект <xref:System.Windows.Controls.Menu> с несколькими <xref:System.Windows.Controls.MenuItem> объектами.  <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A>Присоединенное свойство устанавливается в значение <xref:System.Windows.Input.KeyboardNavigationMode.Cycle> On <xref:System.Windows.Controls.Menu> .  Когда фокус изменяется с помощью клавиши TAB в <xref:System.Windows.Controls.Menu> , фокус перемещается с каждого элемента, а при достижении последнего элемента фокус вернется к первому элементу.  
   
  [!code-xaml[MarkupSnippets#MarkupKeyboardNavigationTabNavigationXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupkeyboardnavigationtabnavigationxaml)]  
   
@@ -82,38 +83,38 @@ ms.locfileid: "79186670"
   
 <a name="Manipulating_Focus_Programmatically"></a>
 ## <a name="navigating-focus-programmatically"></a>Перемещение фокуса программными средствами  
- Дополнительные API для <xref:System.Windows.UIElement.MoveFocus%2A> работы с фокусом и <xref:System.Windows.UIElement.PredictFocus%2A>.  
+ Дополнительным API для работы с фокусом являются <xref:System.Windows.UIElement.MoveFocus%2A> и <xref:System.Windows.UIElement.PredictFocus%2A> .  
   
- <xref:System.Windows.FrameworkElement.MoveFocus%2A>изменения фокусировки на следующий элемент приложения.  A <xref:System.Windows.Input.TraversalRequest> используется для указания направления.   <xref:System.Windows.Input.FocusNavigationDirection> Пройдено <xref:System.Windows.UIElement.MoveFocus%2A> еде для того чтобы обупознавать различные фокусы направлений можно перенести, such <xref:System.Windows.Input.FocusNavigationDirection.First>as, <xref:System.Windows.Input.FocusNavigationDirection.Last> <xref:System.Windows.Input.FocusNavigationDirection.Up> и <xref:System.Windows.Input.FocusNavigationDirection.Down>.  
+ <xref:System.Windows.FrameworkElement.MoveFocus%2A>изменяет фокус на следующий элемент в приложении.  <xref:System.Windows.Input.TraversalRequest>Для указания направления используется.   <xref:System.Windows.Input.FocusNavigationDirection>Переданный метод <xref:System.Windows.UIElement.MoveFocus%2A> задает различные направления, на которые может перемещаться фокус, <xref:System.Windows.Input.FocusNavigationDirection.First> например <xref:System.Windows.Input.FocusNavigationDirection.Last> , <xref:System.Windows.Input.FocusNavigationDirection.Up> и <xref:System.Windows.Input.FocusNavigationDirection.Down> .  
   
- Следующий пример <xref:System.Windows.FrameworkElement.MoveFocus%2A> используется для изменения сфокусированного элемента.  
+ В следующем примере метод используется <xref:System.Windows.FrameworkElement.MoveFocus%2A> для изменения элемента с элементом «Focus».  
   
  [!code-csharp[focussample#FocusSampleMoveFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplemovefocus)]
  [!code-vb[focussample#FocusSampleMoveFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplemovefocus)]  
   
- <xref:System.Windows.FrameworkElement.PredictFocus%2A>возвращает объект, который получил бы фокус, если фокус был изменен.  В настоящее <xref:System.Windows.Input.FocusNavigationDirection.Down> <xref:System.Windows.Input.FocusNavigationDirection.Left>время <xref:System.Windows.Input.FocusNavigationDirection.Right> только <xref:System.Windows.Input.FocusNavigationDirection.Up>, <xref:System.Windows.FrameworkElement.PredictFocus%2A>, , и поддерживаются .  
+ <xref:System.Windows.FrameworkElement.PredictFocus%2A>Возвращает объект, который получит фокус, если фокус был изменен.  В настоящее время <xref:System.Windows.Input.FocusNavigationDirection.Up> поддерживаются только,, <xref:System.Windows.Input.FocusNavigationDirection.Down> <xref:System.Windows.Input.FocusNavigationDirection.Left> и <xref:System.Windows.Input.FocusNavigationDirection.Right> <xref:System.Windows.FrameworkElement.PredictFocus%2A> .  
   
 <a name="Focus_Events"></a>
 ## <a name="focus-events"></a>События фокуса  
- События, связанные с <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> клавиатурой фокус, и , и <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus>. <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>  События определяются как прилагаемые события в <xref:System.Windows.Input.Keyboard> классе, но более легко доступны как эквивалентные маршрутизированные события в классах базовых элементов.  Дополнительные сведения о событиях см. в разделе [Общие сведения о перенаправленных событиях](routed-events-overview.md).  
+ События, связанные с фокусом клавиатуры: <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> , <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> и <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> , <xref:System.Windows.Input.Keyboard.LostKeyboardFocus> .  События определяются как вложенные события в <xref:System.Windows.Input.Keyboard> классе, но более легко доступны в качестве эквивалентных перенаправленных событий в классах базовых элементов.  Дополнительные сведения о событиях см. в разделе [Общие сведения о перенаправленных событиях](routed-events-overview.md).  
   
- <xref:System.Windows.Input.Keyboard.GotKeyboardFocus>поднимается, когда элемент получает фокус клавиатуры.  <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>поднимается, когда элемент теряет фокус клавиатуры.  Если <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> событие или <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocusEvent> событие обработано <xref:System.Windows.RoutedEventArgs.Handled%2A> и `true`настроено на, то фокус не изменится.  
+ <xref:System.Windows.Input.Keyboard.GotKeyboardFocus>вызывается, когда элемент получает фокус клавиатуры.  <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>вызывается, когда элемент теряет фокус клавиатуры.  Если <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> событие или <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocusEvent> событие обрабатывается и <xref:System.Windows.RoutedEventArgs.Handled%2A> имеет значение `true` , фокус не изменится.  
   
- Следующий пример <xref:System.Windows.UIElement.GotKeyboardFocus> прикрепляет и <xref:System.Windows.UIElement.LostKeyboardFocus> <xref:System.Windows.Controls.TextBox>обработчики событий к .  
+ В следующем примере присоединяются <xref:System.Windows.UIElement.GotKeyboardFocus> и <xref:System.Windows.UIElement.LostKeyboardFocus> обработчики событий к <xref:System.Windows.Controls.TextBox> .  
   
  [!code-xaml[keyboardsample#KeyboardSampleXAMLHandlerHookup](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml#keyboardsamplexamlhandlerhookup)]  
   
- Когда <xref:System.Windows.Controls.TextBox> получает фокус клавиатуры, <xref:System.Windows.Controls.Control.Background%2A> свойство <xref:System.Windows.Controls.TextBox> изменяется на <xref:System.Windows.Media.Brushes.LightBlue%2A>.  
+ Когда <xref:System.Windows.Controls.TextBox> получает фокус клавиатуры, <xref:System.Windows.Controls.Control.Background%2A> свойство объекта <xref:System.Windows.Controls.TextBox> изменяется на <xref:System.Windows.Media.Brushes.LightBlue%2A> .  
   
  [!code-csharp[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplegotfocus)]
  [!code-vb[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplegotfocus)]  
   
- Когда <xref:System.Windows.Controls.TextBox> теряет фокус клавиатуры, <xref:System.Windows.Controls.Control.Background%2A> <xref:System.Windows.Controls.TextBox> свойство изменено назад к белому цвету.  
+ Когда <xref:System.Windows.Controls.TextBox> фокус клавиатуры теряется, <xref:System.Windows.Controls.Control.Background%2A> свойство объекта <xref:System.Windows.Controls.TextBox> изменяется обратно на белый.  
   
  [!code-csharp[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplelostfocus)]
  [!code-vb[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplelostfocus)]  
   
- События, связанные с <xref:System.Windows.UIElement.GotFocus> <xref:System.Windows.UIElement.LostFocus>логическим фокусом и .  Эти события определяются <xref:System.Windows.Input.FocusManager> на как прикрепленные <xref:System.Windows.Input.FocusManager> события, но не разоблачают обертки событий CLR.  <xref:System.Windows.UIElement>и <xref:System.Windows.ContentElement> разоблачить эти события более удобно.  
+ Событиями, связанными с логическим фокусом, являются <xref:System.Windows.UIElement.GotFocus> и <xref:System.Windows.UIElement.LostFocus> .  Эти события определяются в <xref:System.Windows.Input.FocusManager> присоединенных событиях, но не <xref:System.Windows.Input.FocusManager> предоставляют оболочки событий CLR.  <xref:System.Windows.UIElement>и <xref:System.Windows.ContentElement> предоставляют более удобный доступ к этим событиям.  
   
 ## <a name="see-also"></a>См. также раздел
 

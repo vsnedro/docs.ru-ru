@@ -2,12 +2,12 @@
 title: Дополнения к формату CSPROJ для .NET Core
 description: Различия между существующими файлами и файлами CSPROJ .NET Core
 ms.date: 04/08/2019
-ms.openlocfilehash: fadc6de43f522129970e48bc72914cf187fe3f82
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: 619f6121d9d476726c3d422e50737ff3d622f444
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607710"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164921"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>Дополнения к формату CSPROJ для .NET Core
 
@@ -15,7 +15,7 @@ ms.locfileid: "81607710"
 
 ## <a name="implicit-package-references"></a>Неявные ссылки на пакет
 
-Теперь неявные ссылки на метапакеты указываются в зависимости от целевой платформы, указанной в свойстве `<TargetFramework>` или `<TargetFrameworks>` файла проекта. Если свойство `<TargetFramework>` указано, свойство `<TargetFrameworks>` игнорируется независимо от порядка. Дополнительную информацию см. в статье [Пакеты, метапакеты и платформы](../packages.md).
+Теперь неявные ссылки на метапакеты указываются в зависимости от целевой платформы, указанной в свойстве `<TargetFramework>` или `<TargetFrameworks>` файла проекта. Если свойство `<TargetFramework>` указано, свойство `<TargetFrameworks>` игнорируется независимо от порядка.
 
 ```xml
  <PropertyGroup>

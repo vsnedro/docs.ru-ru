@@ -1,17 +1,18 @@
 ---
 title: Поддержка автоматизации пользовательского интерфейса для элемента управления типа RadioButton
+description: Получение сведений о поддержке модели автоматизации пользовательского интерфейса для типа элемента управления RadioButton. Сведения о требуемой древовидной структуре, свойствах, шаблонах элементов управления и событиях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control types, Radio Button
 - UI Automation, Radio Button control type
 - RadioButton control type
 ms.assetid: 87170464-7857-41f1-bcf7-bb41be31cb53
-ms.openlocfilehash: 741f2ef27ece7e9bfd10646b4c0ff1b6367a1261
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d0ecf6bd65b1a0008577e927939617af11043daa
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179669"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165990"
 ---
 # <a name="ui-automation-support-for-the-radiobutton-control-type"></a>Поддержка автоматизации пользовательского интерфейса для элемента управления типа RadioButton
 > [!NOTE]
@@ -21,7 +22,7 @@ ms.locfileid: "79179669"
   
  Переключатель состоит из круглой кнопки и определяемого приложением текста (метки), значка или растрового изображения, указывающего выбор, который может сделать пользователь, нажав кнопку. Обычно в приложениях переключатели объединяются в группу, чтобы пользователь мог выбирать из набора связанных, но взаимоисключающих вариантов. Например, приложение может представлять группу переключателей, из которых пользователь может выбрать вариант форматирования текста, выделенного в клиентской области текста. Пользователь может выбрать выравнивание по левому краю, по правому краю или по центру, выбрав соответствующий переключатель. Обычно пользователь может за один раз выбрать только один вариант в наборе переключателей.  
   
- В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления RadioButton. Требования [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] применяются ко всем [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]элементам управления списком, будь то, Win32 или Windows Forms.  
+ В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления RadioButton. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]Требования применяются ко всем элементам управления "список", будь это [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] , Win32 или Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
 ## <a name="required-ui-automation-tree-structure"></a>Требуемая древовидная структура модели автоматизации пользовательского интерфейса  
@@ -35,7 +36,7 @@ ms.locfileid: "79179669"
   
 <a name="Required_UI_Automation_Properties"></a>
 ## <a name="required-ui-automation-properties"></a>Требуемые свойства модели автоматизации пользовательского интерфейса  
- В следующей таблице перечислены свойства [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , значения или определения которых особенно актуальны для типа элемента управления RadioButton. Для получения [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] дополнительной информации о свойствах [см.](ui-automation-properties-for-clients.md)  
+ В следующей таблице перечислены свойства [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , значения или определения которых особенно актуальны для типа элемента управления RadioButton. Дополнительные сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] свойствах см. в разделе [Свойства модели автоматизации пользовательского интерфейса для клиентов](ui-automation-properties-for-clients.md).  
   
 |Свойство[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|Значение|Примечания|  
 |------------------------------------------------------------------------------------|-----------|-----------|  
@@ -57,7 +58,7 @@ ms.locfileid: "79179669"
 |Шаблон элемента управления/свойство шаблона элемента управления|Поддержка/значение|Примечания|  
 |-----------------------------------------------|--------------------|-----------|  
 |<xref:System.Windows.Automation.Provider.ISelectionItemProvider>|Да|Все элементы управления "Переключатель" должны поддерживать шаблон Selection Item, чтобы их можно было выбирать.|  
-|<xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer%2A>|См. примечания.|Свойство `SelectionContainerProperty` всегда должно быть заполненным, чтобы клиент автоматизации пользовательского интерфейса мог определить, какие еще переключатели в указанном контексте связаны друг с другом.  Для версии радиокнопки Win32 это свойство не будет поддерживаться, поскольку невозможно получить эту информацию из этой устаревшей платформы.|  
+|<xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer%2A>|См. примечания.|Свойство `SelectionContainerProperty` всегда должно быть заполненным, чтобы клиент автоматизации пользовательского интерфейса мог определить, какие еще переключатели в указанном контексте связаны друг с другом.  Для версии, установленной в Win32 переключателя, это свойство не будет поддерживаться, так как невозможно получить эти сведения из устаревшей платформы.|  
 |<xref:System.Windows.Automation.Provider.IToggleProvider>|Никогда|Переключатель не может циклически проходить свое состояние после его установки.  Этот шаблон никогда не должен поддерживаться переключателем.|  
   
 <a name="Required_UI_Automation_Events"></a>
@@ -66,14 +67,14 @@ ms.locfileid: "79179669"
   
 |Событие[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Поддержка|Примечания|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
-|<xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent>|Обязательно|None|  
-|<xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent>|Обязательно|None|  
+|<xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent>|Требуется|None|  
+|<xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent>|Требуется|None|  
 |Событие изменения свойства<xref:System.Windows.Automation.TogglePatternIdentifiers.ToggleStateProperty>|Никогда|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Обязательно|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Требуется|None|  
   
 ## <a name="see-also"></a>См. также раздел
 

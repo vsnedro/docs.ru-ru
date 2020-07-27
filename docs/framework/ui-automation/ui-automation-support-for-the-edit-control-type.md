@@ -1,19 +1,20 @@
 ---
-title: Поддержка автоматизации пользовательского интерфейса для типа элемента управления Edit
+title: Поддержка автоматизации пользовательского интерфейса для типа элемента управления "Поле вода"
+description: Получение сведений о поддержке модели автоматизации пользовательского интерфейса для типа элемента управления Edit. Сведения о требуемой древовидной структуре, свойствах, шаблонах элементов управления и событиях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control types, Edit
 - Edit control type
 - UI Automation, Edit control type
 ms.assetid: 6db9d231-c0a0-4e17-910e-ac80357f774f
-ms.openlocfilehash: cdbb400d438231689fe35c4bff2bd2946b6bed80
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 6c404786d58cfcb4cc7dabd982eea33694b7cd0b
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76789497"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167947"
 ---
-# <a name="ui-automation-support-for-the-edit-control-type"></a>Поддержка автоматизации пользовательского интерфейса для типа элемента управления Edit
+# <a name="ui-automation-support-for-the-edit-control-type"></a>Поддержка автоматизации пользовательского интерфейса для типа элемента управления "Поле вода"
 
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).
@@ -22,7 +23,7 @@ ms.locfileid: "76789497"
 
 С помощью элементов управления "Поле ввода" пользователи могут просматривать и изменять простую строку текста без широкой поддержки форматирования.
 
-В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Edit. Требования к [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] применяются ко всем элементам управления "поле ввода", будь то [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32 или Windows Forms.
+В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Edit. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]Требования применяются ко всем элементам управления "поле ввода", будь это [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] , Win32 или Windows Forms.
 
 <a name="Required_UI_Automation_Tree_Structure"></a>
 
@@ -30,9 +31,9 @@ ms.locfileid: "76789497"
 
 В следующей таблице описывается представление элемента управления и представление содержимого дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , которое относится к элементам управления "Поле ввода" и описывает, что может содержаться в каждом представлении. Дополнительные сведения о дереве [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] см. в разделе [UI Automation Tree Overview](ui-automation-tree-overview.md).
 
-|Представление элемента управления|Представление контента|
+|Представление элемента управления|Представление содержимого|
 |------------------|------------------|
-|Edit|Edit|
+|Изменить|Изменить|
 
 Элементы управления, которые реализуют тип элемента управления Edit, всегда имеют нулевые полосы прокрутки в представлении элемента управления дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , так как это однострочный элемент управления. В некоторых макетах одна строка текста может переноситься. Тип элемента управления Edit лучше всего подходит для хранения небольших объемов редактируемого или выбираемого текста.
 
@@ -42,7 +43,7 @@ ms.locfileid: "76789497"
 
 В следующей таблице перечислены свойства [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , значения или определения которых особенно актуальны для элементов управления "Поле ввода". Дополнительные сведения о свойствах [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] см. в разделе [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).
 
-|Свойство[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|{2&gt;Value&lt;2}|Примечания|
+|Свойство[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|Значение|Примечания|
 |------------------------------------------------------------------------------------|-----------|-----------|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|См. примечания.|Значение этого свойства должно быть уникальным среди всех элементов управления в приложении.|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|См. примечания.|Внешний прямоугольник, содержащий весь элемент управления.|
@@ -50,10 +51,10 @@ ms.locfileid: "76789497"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|См. примечания.|Если элемент управления может получать фокус клавиатуры, он должен поддерживать это свойство.|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|См. примечания.|Имя элемента управления "Поле ввода" обычно создается из статического текста метки. Если статическая текстовая метка не предусмотрена, разработчик приложения должен предоставить значение для свойства `Name` . Значение свойства `Name` никогда не должно быть текстовым содержимым элемента управления "Поле ввода".|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LabeledByProperty>|См. примечания.|Если статическая текстовая метка связана с элементом управления, то данное свойство должно предоставлять ссылку на этот элемент управления. Если элемент управления "Текст" является подкомпонентом другого элемента управления, он не будет иметь набор свойств `LabeledBy` .|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|Edit|Это значение является одинаковым для всех инфраструктур [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] .|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|Изменить|Это значение является одинаковым для всех инфраструктур [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] .|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LocalizedControlTypeProperty>|"поле ввода"|Локализованная строка, соответствующая типу элемента управления Edit.|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|Да|Элемент управления "Поле ввода" всегда включается в представление содержимого дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|Да|Элемент управления "Поле ввода" всегда включается в представление элемента управления дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|Элемент управления "Поле ввода" всегда включается в представление содержимого дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|Элемент управления "Поле ввода" всегда включается в представление элемента управления дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .|
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsPasswordProperty>|См. примечания.|Должно быть задано значение true во всех элементах управления "Поле ввода", содержащих пароли. Если элемент управления "Поле ввода" содержит пароль, то это свойство может использоваться средством чтения с экрана для определения, должны ли считываться нажатия клавиш по мере нажатия их пользователем.|
 
 <a name="Required_UI_Automation_Control_Patterns"></a>
@@ -64,11 +65,11 @@ ms.locfileid: "76789497"
 
 |Шаблон элемента управления/свойство шаблона элемента управления|Поддержка/значение|Примечания|
 |-----------------------------------------------|--------------------|-----------|
-|<xref:System.Windows.Automation.Provider.ITextProvider>|Зависит от обстоятельств|Элементы управления "Поле ввода" должны поддерживать шаблон элемента управления Text, поскольку клиентам всегда должна быть доступна подробная текстовая информация.|
-|<xref:System.Windows.Automation.Provider.IValueProvider>|Зависит от обстоятельств|Все элементы управления "Поле ввода", которые принимают строку, должны предоставлять шаблон Value.|
+|<xref:System.Windows.Automation.Provider.ITextProvider>|Зависит|Элементы управления "Поле ввода" должны поддерживать шаблон элемента управления Text, поскольку клиентам всегда должна быть доступна подробная текстовая информация.|
+|<xref:System.Windows.Automation.Provider.IValueProvider>|Зависит|Все элементы управления "Поле ввода", которые принимают строку, должны предоставлять шаблон Value.|
 |<xref:System.Windows.Automation.Provider.IValueProvider.IsReadOnly%2A>|См. примечания.|Это свойство должно быть установлено, чтобы указать, может ли элемент управления иметь значение, заданное программными средствами, его может изменять пользователь.|
 |<xref:System.Windows.Automation.Provider.IValueProvider.Value%2A>|См. примечания.|Это свойство будет возвращать текстовое содержимое элемента управления "Поле ввода". Если `IsPasswordProperty` имеет значение `true`, это свойство должно создавать `InvalidOperationException` по запросу.|
-|<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Зависит от обстоятельств|Все элементы управления "Поле ввода", принимающие числовой диапазон, должны предоставлять шаблон элемента управления Range Value.|
+|<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Зависит|Все элементы управления "Поле ввода", принимающие числовой диапазон, должны предоставлять шаблон элемента управления Range Value.|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider.Minimum%2A>|См. примечания.|Это свойство должно быть наименьшим значением, которое может быть присвоено содержимому элемента управления "Поле ввода".|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider.Maximum%2A>|См. примечания.|Это свойство должно быть наибольшим значением, которое может быть присвоено содержимому элемента управления "Поле ввода".|
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider.SmallChange%2A>|См. примечания.|Это свойство должно указывать количество десятичных разрядов, которое может быть в значении. Если поле ввода принимает только целые значения, `SmallChangeProperty` должно иметь значение 1. Если поле ввода принимает значения в диапазоне от 1.0 до 2.0, то `SmallChangeProperty` должно иметь значение 0.1. Если поле ввода принимает значения в диапазоне от 1.00 до 2.00, то `SmallChangeProperty` должно иметь значение 0.001.|
@@ -83,25 +84,25 @@ ms.locfileid: "76789497"
 
 |Событие[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Поддержка|Примечания|
 |---------------------------------------------------------------------------------|-------------|-----------|
-|<xref:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent>|Обязательное|Нет|
-|<xref:System.Windows.Automation.TextPatternIdentifiers.TextSelectionChangedEvent>|Обязательное|Нет|
-|<xref:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent>|Обязательное|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Обязательное|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Обязательное|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Обязательное|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|Обязательное|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty>|Зависит от обстоятельств|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty>|Никогда.|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalScrollPercentProperty>|Никогда.|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalViewSizeProperty>|Никогда.|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalScrollPercentProperty>|Никогда.|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty>|Никогда.|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalViewSizeProperty>|Никогда.|Нет|
-|Событие изменения свойства<xref:System.Windows.Automation.RangeValuePatternIdentifiers.ValueProperty>|Зависит от обстоятельств|Если элемент управления поддерживает шаблон элемента управления Range Value, то он должен поддерживать данное событие.|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Обязательное|Нет|
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Обязательное|Нет|
+|<xref:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent>|Требуется|None|
+|<xref:System.Windows.Automation.TextPatternIdentifiers.TextSelectionChangedEvent>|Требуется|None|
+|<xref:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent>|Требуется|None|
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Требуется|None|
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Требуется|None|
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Требуется|None|
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|Требуется|None|
+|Событие изменения свойства<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty>|Зависит|None|
+|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontallyScrollableProperty>|Никогда|None|
+|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalScrollPercentProperty>|Никогда|None|
+|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.HorizontalViewSizeProperty>|Никогда|None|
+|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalScrollPercentProperty>|Никогда|None|
+|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticallyScrollableProperty>|Никогда|None|
+|Событие изменения свойства<xref:System.Windows.Automation.ScrollPatternIdentifiers.VerticalViewSizeProperty>|Никогда|None|
+|Событие изменения свойства<xref:System.Windows.Automation.RangeValuePatternIdentifiers.ValueProperty>|Зависит|Если элемент управления поддерживает шаблон элемента управления Range Value, то он должен поддерживать данное событие.|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Требуется|None|
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Требуется|None|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Windows.Automation.ControlType.Edit>
 - [Общие сведения о типах элементов управления автоматизации пользовательского интерфейса](ui-automation-control-types-overview.md)

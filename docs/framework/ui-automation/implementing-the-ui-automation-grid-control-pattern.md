@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления сеткой автоматизации пользовательского интерфейса
+description: Общие сведения о правилах и соглашениях по реализации шаблона элемента управления Grid GridPattern в модели автоматизации пользовательского интерфейса. Узнайте, как реализовать интерфейс IGridProvider.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - control patterns, grid
 - grid control pattern
 - UI Automation, grid control pattern
 ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
-ms.openlocfilehash: 04f3ee1e01054df6a13ab2391e14a6a7f7274bb9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c7aae8e8070c989c4b36e0581aa5f48f51416f97
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180217"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165871"
 ---
 # <a name="implementing-the-ui-automation-grid-control-pattern"></a>Реализация шаблона элемента управления сеткой автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -60,14 +61,14 @@ ms.locfileid: "79180217"
   
 |Тип исключения|Условие|  
 |--------------------|---------------|  
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> - Если запрашиваемые координаты строки больше, чем <xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A> координаты <xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A>столбца больше, чем .|  
-|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> - Если любой из запрошенных строк или координат столбца меньше нуля.|  
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> — Если запрошенная координата строки больше, чем, <xref:System.Windows.Automation.Provider.IGridProvider.RowCount%2A> или значение координаты столбца больше, чем <xref:System.Windows.Automation.Provider.IGridProvider.ColumnCount%2A> .|  
+|<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IGridProvider.GetItem%2A><br /><br /> — Если любая из запрошенных координат строки или столбца меньше нуля.|  
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Реализация шаблона элемента управления GridItem модели автоматизации пользовательского интерфейса](implementing-the-ui-automation-griditem-control-pattern.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

@@ -1,5 +1,6 @@
 ---
 title: Стили и шаблоны элемента ComboBox
+description: Сведения о стилях и шаблонах для элемента управления ComboBox Windows Presentation Foundation. Измените ControlTemplate, чтобы присвоить элементу управления уникальный внешний вид.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - ComboBox [WPF], styles and templates
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - templates [WPF], ComboBox
 - parts [WPF], ComboBox
 ms.assetid: b0662fa1-16d7-4320-b26b-c1804e565a44
-ms.openlocfilehash: af7f8a544af5e9892a8f3f059048bbfd113d2491
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 5e929bafeaf849b4b5682a17ca51cb0aab963613
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865363"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165916"
 ---
 # <a name="combobox-styles-and-templates"></a>Стили и шаблоны элемента ComboBox
 В этом разделе описываются стили и шаблоны для <xref:System.Windows.Controls.ComboBox> элемента управления. Можно изменить значение по умолчанию, <xref:System.Windows.Controls.ControlTemplate> чтобы обеспечить уникальность внешнего вида элемента управления. Дополнительные сведения см. в разделе [Создание шаблона для элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md).  

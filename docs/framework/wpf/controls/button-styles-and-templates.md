@@ -1,5 +1,6 @@
 ---
 title: Стили и шаблоны элемента Button
+description: Сведения о стилях и шаблонах для элемента управления "Кнопка" Windows Presentation Foundation. Измените ControlTemplate, чтобы присвоить элементу управления уникальный внешний вид.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - states [WPF], Button
@@ -9,36 +10,36 @@ helpviewer_keywords:
 - templates [WPF], Button
 - ControlTemplate [WPF], Button
 ms.assetid: e223c759-f8c4-4717-acfb-b1e40bdf5f3b
-ms.openlocfilehash: ef9f85848ebdda9dc4ae15d0f54847eacd46e24d
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 11509adeef397f26eb040e6e98d0edb333b2515f
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74283579"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166260"
 ---
 # <a name="button-styles-and-templates"></a>Стили и шаблоны элемента Button
-В этом разделе описываются стили и шаблоны для элемента управления <xref:System.Windows.Controls.Button>. Можно изменить <xref:System.Windows.Controls.ControlTemplate> по умолчанию, чтобы обеспечить уникальность внешнего вида элемента управления. Дополнительные сведения см. в разделе [Создание шаблона для элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
+В этом разделе описываются стили и шаблоны для <xref:System.Windows.Controls.Button> элемента управления. Можно изменить значение по умолчанию, <xref:System.Windows.Controls.ControlTemplate> чтобы обеспечить уникальность внешнего вида элемента управления. Дополнительные сведения см. в разделе [Создание шаблона для элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
 ## <a name="button-parts"></a>Части кнопки  
- Элемент управления <xref:System.Windows.Controls.Button> не имеет именованных частей.  
+ <xref:System.Windows.Controls.Button>Элемент управления не имеет именованных частей.  
   
 ## <a name="button-states"></a>Состояния кнопок  
- В следующей таблице перечислены визуальные состояния для элемента управления <xref:System.Windows.Controls.Button>.  
+ В следующей таблице перечислены визуальные состояния <xref:System.Windows.Controls.Button> элемента управления.  
   
 |Имя VisualState|Имя VisualStateGroup|Описание|  
 |-|-|-|  
-|Нормальный|CommonStates|Состояние по умолчанию.|  
+|Норм.|CommonStates|Состояние по умолчанию.|  
 |MouseOver|CommonStates|Указатель мыши расположен в элементе управления.|  
 |Нажато|CommonStates|Элемент управления нажат.|  
-|Отключено.|CommonStates|Элемент управления отключен.|  
+|Отключено|CommonStates|Элемент управления отключен.|  
 |Focused|FocusStates|Элемент управления имеет фокус.|  
 |Без фокуса ввода|FocusStates|Элемент управления не имеет фокуса.|  
-|Valid|ValidationStates|Элемент управления использует класс <xref:System.Windows.Controls.Validation>, а <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенным свойством является `false`.|  
-|InvalidFocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенным свойством является `true`, а элемент управления имеет фокус.|  
-|InvalidUnfocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенным свойством является `true`, а элемент управления не имеет фокуса.|  
+|Допустимо|ValidationStates|Элемент управления использует <xref:System.Windows.Controls.Validation> класс, а <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> присоединенное свойство — `false` .|  
+|InvalidFocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType>Присоединенное свойство имеет значение `true` , а элемент управления имеет фокус.|  
+|InvalidUnfocused|ValidationStates|<xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType>Присоединенное свойство имеет значение `true` , а элемент управления не имеет фокуса.|  
   
 ## <a name="button-controltemplate-example"></a>Пример ControlTemplate для кнопки  
- В следующем примере показано, как определить <xref:System.Windows.Controls.ControlTemplate> для элемента управления <xref:System.Windows.Controls.Button>.  
+ В следующем примере показано, как определить <xref:System.Windows.Controls.ControlTemplate> для <xref:System.Windows.Controls.Button> элемента управления.  
   
  [!code-xaml[ControlTemplateExamples#Button](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/button.xaml#button)]  
   
@@ -48,11 +49,11 @@ ms.locfileid: "74283579"
   
  Полный пример см. в разделе [Пример задания стиля с помощью ControlTemplates](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Стили и шаблоны элемента управления](control-styles-and-templates.md)
+- [Стили и шаблоны элемента Control](control-styles-and-templates.md)
 - [Настройка элементов управления](control-customization.md)
 - [Стилизация и использование шаблонов](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
-- [Создание шаблона для элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md)
+- [Создание шаблона элемента управления](../../../desktop-wpf/themes/how-to-create-apply-template.md)

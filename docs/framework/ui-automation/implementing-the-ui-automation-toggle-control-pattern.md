@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элементов управления модели автоматизации пользовательского интерфейса Toggle
+description: Ознакомьтесь с правилами и соглашениями по реализации шаблона элемента управления Toggle в модели автоматизации пользовательского интерфейса. Знание обязательных членов для интерфейса IToggleProvider.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Toggle control pattern
 - control patterns, Toggle
 - UI Automation, Toggle control pattern
 ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
-ms.openlocfilehash: 5f64842d31d46af3d648b9b570d1cfb210e2910a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f9ae850a560101582b5f1a461de19f260ef59798
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180067"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168037"
 ---
 # <a name="implementing-the-ui-automation-toggle-control-pattern"></a>Реализация шаблона элементов управления модели автоматизации пользовательского интерфейса Toggle
 > [!NOTE]
@@ -50,9 +51,9 @@ ms.locfileid: "79180067"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Получение состояния флажка с использованием автоматизации пользовательского интерфейса](get-the-toggle-state-of-a-check-box-using-ui-automation.md)
-- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)

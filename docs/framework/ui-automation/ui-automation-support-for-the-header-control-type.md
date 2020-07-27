@@ -1,17 +1,18 @@
 ---
 title: Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления "Заголовок"
+description: Получение сведений о поддержке модели автоматизации пользовательского интерфейса для типа элемента управления "заголовок". Сведения о требуемой древовидной структуре, свойствах, шаблонах элементов управления и событиях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, Header control type
 - Header control type
 - control types, Header
 ms.assetid: d2e48891-2dbe-409e-8655-2f753908e29b
-ms.openlocfilehash: be812fd9063674cc82d62a8c0207e27f3543be3a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4e4744ee6f8c9dbccb36c7ffac6b75561402b3a0
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179769"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167898"
 ---
 # <a name="ui-automation-support-for-the-header-control-type"></a>Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления "Заголовок"
 > [!NOTE]
@@ -21,7 +22,7 @@ ms.locfileid: "79179769"
   
  Элемент управления "Заголовок" предоставляет визуальный контейнер для меток строк или столбцов данных.  
   
- В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Header. Требования [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] применяются ко всем элементам [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]управления заголовком, будь то, Win32 или Windows Forms.  
+ В следующих разделах описывается необходимая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления Header. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]Требования применяются ко всем элементам управления "заголовок", будь это [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] , Win32 или Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
 ## <a name="required-ui-automation-tree-structure"></a>Требуемая древовидная структура модели автоматизации пользовательского интерфейса  
@@ -29,7 +30,7 @@ ms.locfileid: "79179769"
   
 |Представление элемента управления|Представление содержимого|  
 |------------------|------------------|  
-|Заголовок<br /><br /> - HeaderItem (1 или более)|None|  
+|Заголовок<br /><br /> -HeaderItem (1 или более)|None|  
   
  Элементы управления "Заголовок" всегда имеют 1 или более дочерних элементов в представлении элемента управления дерева [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]  
   
@@ -67,11 +68,11 @@ ms.locfileid: "79179769"
   
 |Событие[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Поддержка|Примечания|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElement.IsEnabledProperty>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElement.StructureChangedEvent>|Обязательно|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElement.IsEnabledProperty>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElement.StructureChangedEvent>|Требуется|None|  
   
 ## <a name="see-also"></a>См. также раздел
 

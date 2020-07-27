@@ -1,5 +1,6 @@
 ---
 title: Общие сведения об объектах TextPattern и Embedded
+description: Ознакомьтесь с обзором того, как модель автоматизации пользовательского интерфейса предоставляет внедренные объекты или дочерние элементы в текстовом документе или контейнере с помощью TextPattern и Текстпаттернранже.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, TextPattern class
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - accessing embedded objects
 - embedded objects, UI Automation
 ms.assetid: 93fdfbb9-0025-4b72-8ca0-0714adbb70d5
-ms.openlocfilehash: 7a3338a08d06320acdc2acb0647bc91541448d7d
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 0a06fb72b280fc61faeb12f6f2c3a05d957ec7b9
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84201071"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163555"
 ---
 # <a name="textpattern-and-embedded-objects-overview"></a>Общие сведения об объектах TextPattern и Embedded
 > [!NOTE]
@@ -98,7 +99,7 @@ ms.locfileid: "84201071"
 |<xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> с параметрами (TextUnit.Word, 1).|Перемещает занимаемый диапазон текста к "http", так как текст гиперссылки состоит из отдельных слов. В этом случае гиперссылка не рассматривается как один объект.<br /><br /> URL-адрес {[http]} внедрен в текст.|  
   
 <a name="Image"></a>
-### <a name="image"></a>Изображение  
+### <a name="image"></a>Образ —  
  **Пример 1. Текстовый диапазон, содержащий внедренное изображение**  
   
  {Пример образа ![внедренного](./media/uia-textpattern-embedded-objects-overview-imageexample.PNG "UIA_TextPattern_Embedded_Objects_Overview_ImageExample") образа внедрен в текст}.  
@@ -148,7 +149,7 @@ ms.locfileid: "84201071"
 |<xref:System.Windows.Automation.GridPattern.GetItem%2A> с параметрами (1,1).|Возвращает <xref:System.Windows.Automation.AutomationElement> , представляющий содержимое ячейки таблицы. В этом случае элемент — это текстовый элемент управления.|  
 |<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> , где <xref:System.Windows.Automation.AutomationElement> — это объект, возвращаемый предыдущим методом `GetItem` .|Возвращает "Y".|  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Windows.Automation.TextPattern>
 - <xref:System.Windows.Automation.Text.TextPatternRange>

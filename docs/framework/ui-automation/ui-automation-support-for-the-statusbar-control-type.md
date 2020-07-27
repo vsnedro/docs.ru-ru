@@ -1,17 +1,18 @@
 ---
 title: Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления StatusBar
+description: Получение сведений о поддержке модели автоматизации пользовательского интерфейса для типа элемента управления StatusBar. Сведения о требуемой древовидной структуре, свойствах, шаблонах элементов управления и событиях.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - StatusBar control type
 - UI Automation, Status Bar control type
 - control types, Status Bar
 ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
-ms.openlocfilehash: 0251eac3dff5f4b5a1ce0f7211c65fd0248b8891
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b199193ff4ee0fb9e22457cf19b15db189702e05
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179564"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163790"
 ---
 # <a name="ui-automation-support-for-the-statusbar-control-type"></a>Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления StatusBar
 > [!NOTE]
@@ -21,7 +22,7 @@ ms.locfileid: "79179564"
   
  Элемент управления "Строка состояния" отображает сведения об объекте, который просматривается в окне приложения, сведения о компонентах этого объекта или контекстную информацию, относящуюся к работе объекта внутри приложения.  
   
- В следующих разделах описывается требуемая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления StatusBar. Требования [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] применяются ко всем элементам [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]управления элементами безопасности, будь то, Win32 или Windows Forms.  
+ В следующих разделах описывается требуемая древовидная структура [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , свойства, шаблоны элементов управления и события для типа элемента управления StatusBar. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]Требования применяются ко всем элементам управления "строка состояния", будь это [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] , Win32 или Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
 ## <a name="required-ui-automation-tree-structure"></a>Требуемая древовидная структура модели автоматизации пользовательского интерфейса  
@@ -29,7 +30,7 @@ ms.locfileid: "79179564"
   
 |Представление элемента управления|Представление содержимого|  
 |------------------|------------------|  
-|StatusBar<br /><br /> - Отодвить (0 или более)<br />- Прогресс Бар (0 или много)<br />- Изображение (0 или много)<br />- Кнопка (0 или много)|StatusBar<br /><br /> - Отодвить (0 или более)<br />- ПрогрессБар (0 или много)<br />- Изображение (0 или много)<br />- Кнопка (0 или много)|  
+|StatusBar<br /><br /> -Edit (0 или более)<br />— Индикатор выполнения (0 или несколько)<br />-Image (0 или несколько)<br />-Кнопка (0 или несколько)|StatusBar<br /><br /> -Edit (0 или более)<br />-ProgressBar (0 или многие)<br />-Image (0 или несколько)<br />-Кнопка (0 или несколько)|  
   
 <a name="Required_UI_Automation_Properties"></a>
 ## <a name="required-ui-automation-properties"></a>Требуемые свойства модели автоматизации пользовательского интерфейса  
@@ -66,11 +67,11 @@ ms.locfileid: "79179564"
   
 |Событие[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Поддержка|Примечания|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Обязательно|None|  
-|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Обязательно|None|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Обязательно|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsOffscreenProperty>|Требуется|None|  
+|Событие изменения свойства<xref:System.Windows.Automation.AutomationElementIdentifiers.IsEnabledProperty>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Требуется|None|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Требуется|None|  
   
 ## <a name="see-also"></a>См. также раздел
 
