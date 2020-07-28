@@ -1,5 +1,6 @@
 ---
 title: Обзор событий автоматизации пользовательского интерфейса
+description: См. Обзор уведомления о событиях в службе автоматизации пользовательского интерфейса Майкрософт. Проверьте типы событий, идентификаторы событий модели автоматизации пользовательского интерфейса и аргументы событий автоматизации пользовательского интерфейса.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, providers
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - providers, UI Automation
 - UI Automation, clients
 ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
-ms.openlocfilehash: 495e7d29c814164f4235d18569477b856cb09045
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f51a31a433986822a9dba22bf8f17ade00bbb76
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179898"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87168103"
 ---
 # <a name="ui-automation-events-overview"></a>Обзор событий автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -66,7 +67,7 @@ ms.locfileid: "79179898"
 ## <a name="ui-automation-event-arguments"></a>Аргументы событий автоматизации пользовательского интерфейса  
  Следующие классы инкапсулируют аргументы событий.  
   
-|Class|Описание|  
+|Класс|Описание|  
 |-----------|-----------------|  
 |<xref:System.Windows.Automation.AsyncContentLoadedEventArgs>|Содержит сведения об асинхронной загрузке содержимого, включая процент завершения загрузки.|  
 |<xref:System.Windows.Automation.AutomationEventArgs>|Содержит сведения о простом событии, не требующем дополнительных данных.|  
@@ -81,7 +82,7 @@ ms.locfileid: "79179898"
   
  Список идентификаторов событий см. в разделе [UI Automation Events for Clients](ui-automation-events-for-clients.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [События модели автоматизации пользовательского интерфейса для клиентов](ui-automation-events-for-clients.md)
 - [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](server-side-ui-automation-provider-implementation.md)

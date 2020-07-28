@@ -1,5 +1,6 @@
 ---
 title: Пошаговое руководство. Отображение данных из базы данных SQL Server в элементе управления DataGrid
+description: Узнайте, как получать данные из базы данных SQL Server и отображать их в элементе управления Windows Presentation Foundation DataGrid с помощью этого пошагового руководства.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - DataGrid [WPF], displaying data from SQL Server
 - controls [WPF], DataGrid
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
-ms.openlocfilehash: 1398d8408a0b85d6603d638312e92ba35c5e77d3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cc41979c869021c9c363f3f68ce590d4702e068c
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591037"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167556"
 ---
 # <a name="walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control"></a>Пошаговое руководство. Отображение данных из SQL Server базы данных в элементе управления DataGrid
 
@@ -23,7 +24,7 @@ ms.locfileid: "84591037"
 
 Для выполнения этого пошагового руководства требуются следующие компоненты:
 
-- приведенному.
+- Visual Studio.
 
 - Доступ к выполняющемуся экземпляру SQL Server или SQL Server Express, к которому присоединен образец базы данных AdventureWorks. Базу данных AdventureWorks можно загрузить с сайта [GitHub](https://github.com/Microsoft/sql-server-samples/releases).
 
@@ -47,7 +48,7 @@ ms.locfileid: "84591037"
 
 6. На экране Выбор подключения к данным укажите подключение к базе данных AdventureWorksLT2008. Дополнительные сведения см. в разделе [диалоговое окно "Выбор подключения к данным"](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399244(v=vs.100)).
 
-    Убедитесь, что указано имя `AdventureWorksLT2008Entities` и что флажок **сохранить параметры подключения сущности в App. config** установлен, а затем нажмите кнопку **Далее**.
+    Убедитесь, что имя имеет значение, `AdventureWorksLT2008Entities` а флажок **сохранить параметры подключения сущности в App.Config как** установлен, а затем нажмите кнопку **Далее**.
 
 7. На экране Выбор объектов базы данных разверните узел таблицы и выберите таблицы **Product** и **ProductCategory** .
 
@@ -97,6 +98,6 @@ ms.locfileid: "84591037"
 
      ![DataGrid с данными из базы данных SQL](./media/datagrid-sql-ef-step7.png "DataGrid_SQL_EF_Step7")
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Controls.DataGrid>

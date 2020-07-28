@@ -1,16 +1,17 @@
 ---
 title: Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов
+description: Ознакомьтесь с обзором шаблонов элементов управления для клиентов автоматизации пользовательского интерфейса. Используйте шаблоны элементов управления для доступа к информации о пользовательском интерфейсе.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, control patterns for clients
 - control patterns, UI Automation clients
 ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
-ms.openlocfilehash: 1ee0df5b133f08ec3cf6ba617c80c480e207ddf6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f2def328228a30ace6d0edc0661d6e79f237d6f4
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179962"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87163869"
 ---
 # <a name="ui-automation-control-patterns-for-clients"></a>Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов
 > [!NOTE]
@@ -34,23 +35,23 @@ ms.locfileid: "79179962"
   
 <a name="uiautomation_properties_on_control_patterns"></a>
 ## <a name="retrieving-properties-on-control-patterns"></a>Получение свойств в шаблонах элементов управления  
- Клиенты могут получать значения свойств в шаблонах элементов управления, вызывая <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> или <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> и преобразуя возвращаемый объекта в соответствующий тип. Для получения [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] дополнительной информации о свойствах [см.](ui-automation-properties-for-clients.md)  
+ Клиенты могут получать значения свойств в шаблонах элементов управления, вызывая <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> или <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> и преобразуя возвращаемый объекта в соответствующий тип. Дополнительные сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] свойствах см. в разделе [Свойства модели автоматизации пользовательского интерфейса для клиентов](ui-automation-properties-for-clients.md).  
   
- В дополнение `GetPropertyValue` к методам значения свойств могут быть извлечены через общие языковые пережиты [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] времени выполнения (CLR) для доступа к свойствам по шаблону.  
+ В дополнение к `GetPropertyValue` методам, значения свойств можно получить с помощью методов доступа среды CLR для доступа к [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] свойствам в шаблоне.  
   
 <a name="uiautomation_with_variable_patterns"></a>
 ## <a name="controls-with-variable-patterns"></a>Элементы управления с переменными шаблонами  
- Некоторые типы элементов управления поддерживают различные шаблоны в зависимости от их состояния или способа использования элемента управления. Примерами элементов управления, которые могут иметь переменные шаблоны, являются представления списков (эскизы, плитки, значки, список, детали), Microsoft Excel Charts (Pie, Line, Bar, Cell Value с формулой), область документов Microsoft Word (Normal, Web Layout, Outline, Print Layout, Print Предварительный просмотр), и Microsoft Windows Media Player скины.  
+ Некоторые типы элементов управления поддерживают различные шаблоны в зависимости от их состояния или способа использования элемента управления. Примерами элементов управления, которые могут иметь шаблоны переменных, являются представления списка (эскизы, плитки, значки, список, сведения), диаграммы Microsoft Excel (круговые, линейные, линейчатые, значения ячеек с формулами), область документа Microsoft Word (обычная, веб-макет, структура, макет печати, предварительный просмотр) и обложки проигрывателя Windows Media.  
   
  Элементы управления, реализующие настраиваемые типы элементов управления, могут содержать любой набор шаблонов элементов управления, необходимых для представления их возможностей.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Шаблоны модели автоматизации пользовательского интерфейса](ui-automation-control-patterns.md)
 - [Шаблон текста модели автоматизации пользовательского интерфейса](ui-automation-text-pattern.md)
 - [Вызов элемента управления с помощью модели автоматизации пользовательского интерфейса](invoke-a-control-using-ui-automation.md)
 - [Получение состояния флажка с использованием автоматизации пользовательского интерфейса](get-the-toggle-state-of-a-check-box-using-ui-automation.md)
 - [Сопоставление шаблона элемента управления для клиентов автоматизации пользовательского интерфейса](control-pattern-mapping-for-ui-automation-clients.md)
-- [TextPattern Вставить образец текста](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText)
+- [Пример вставки текста TextPattern](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText)
 - [Пример поиска и выбора TextPattern](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FindText)
-- [Вызватьшаблон, ExpandCollapsePattern, и TogglePattern Образец](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InvokePattern)
+- [Пример InvokePattern, ExpandCollapsePattern и Тогглепаттерн](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InvokePattern)

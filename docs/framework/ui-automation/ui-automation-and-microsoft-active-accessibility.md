@@ -1,5 +1,6 @@
 ---
 title: Модель автоматизации пользовательского интерфейса и Microsoft Active Accessibility
+description: Изучите различия между автоматизацией пользовательского интерфейса и Microsoft Active Accessibility, предыдущим решением для обеспечения доступности приложений.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Active Accessibility
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - UI Automation, Microsoft Active Accessibility
 - Active Accessibility, UI Automation compared to
 ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
-ms.openlocfilehash: 9aa975cf3c6e60fbcc759adbf5a991930bff36d6
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 0685a3f89a6578433641aaf78717f4ff377ff2f9
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144790"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164064"
 ---
 # <a name="ui-automation-and-microsoft-active-accessibility"></a>Модель автоматизации пользовательского интерфейса и Microsoft Active Accessibility
 > [!NOTE]
@@ -71,13 +72,13 @@ Active Accessibility основан на модели COM с поддержко�
 |Роль Active Accessibility|Тип элемента управления[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------|  
 |ROLE_SYSTEM_PUSHBUTTON|Кнопка|  
-|ROLE_SYSTEM_CLIENT|Календарь|  
+|ROLE_SYSTEM_CLIENT|"Календарь"|  
 |ROLE_SYSTEM_CHECKBUTTON|Флажок|  
-|ROLE_SYSTEM_COMBOBOX|Поле со списком|  
+|ROLE_SYSTEM_COMBOBOX|поле со списком;|  
 |ROLE_SYSTEM_CLIENT|Особые настройки|  
 |ROLE_SYSTEM_LIST|Сетка данных|  
 |ROLE_SYSTEM_LISTITEM|Элемент данных|  
-|ROLE_SYSTEM_DOCUMENT|Document|  
+|ROLE_SYSTEM_DOCUMENT|Документ|  
 |ROLE_SYSTEM_TEXT|Изменить|  
 |ROLE_SYSTEM_GROUPING|Группа|  
 |ROLE_SYSTEM_LIST|Заголовок|  
@@ -92,7 +93,7 @@ Active Accessibility основан на модели COM с поддержко�
 |ROLE_SYSTEM_PANE|Панель|  
 |ROLE_SYSTEM_PROGRESSBAR|Индикатор выполнения|  
 |ROLE_SYSTEM_RADIOBUTTON|Переключатель|  
-|ROLE_SYSTEM_SCROLLBAR|Полоса прокрутки|  
+|ROLE_SYSTEM_SCROLLBAR|полоса прокрутки;|  
 |ROLE_SYSTEM_SEPARATOR|Separator|  
 |ROLE_SYSTEM_SLIDER|Ползунок|  
 |ROLE_SYSTEM_SPINBUTTON|Spinner|  
@@ -101,7 +102,7 @@ Active Accessibility основан на модели COM с поддержко�
 |ROLE_SYSTEM_PAGETABLIST|Вкладка|  
 |ROLE_SYSTEM_PAGETAB|Элемент вкладки|  
 |ROLE_SYSTEM_TABLE|Таблица|  
-|ROLE_SYSTEM_STATICTEXT|Текст|  
+|ROLE_SYSTEM_STATICTEXT|Text|  
 |ROLE_SYSTEM_INDICATOR|Бегунок|  
 |ROLE_SYSTEM_TITLEBAR|Заголовок окна|  
 |ROLE_SYSTEM_TOOLBAR|Панель инструментов|  
@@ -124,7 +125,7 @@ Active Accessibility основан на модели COM с поддержко�
   
  В следующей таблице показано соответствие свойств в этих двух моделях.  
   
-|Метод доступа к свойству Active Accessibility|Идентификатор свойства[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Примечания|  
+|Метод доступа к свойству Active Accessibility|Идентификатор свойства[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Remarks|  
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-------------|  
 |`get_accKeyboardShortcut`|<xref:System.Windows.Automation.AutomationElement.AccessKeyProperty> или <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>|Если заданы оба свойства,`AccessKeyProperty` имеет более высокий приоритет.|  
 |`get_accName`|<xref:System.Windows.Automation.AutomationElement.NameProperty>||  
@@ -137,30 +138,30 @@ Active Accessibility основан на модели COM с поддержко�
   
  В следующей таблице показано, какие [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] свойства соответствуют константам состояния Active Accessibility.  
   
-|Состояние Active Accessibility|Свойство[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Вызывает изменение состояния?|  
+|Состояние Active Accessibility|Свойство [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Вызывает изменение состояния?|  
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------|  
 |STATE_SYSTEM_CHECKED|Для флажка — <xref:System.Windows.Automation.TogglePattern.ToggleStateProperty><br /><br /> Для переключателя — <xref:System.Windows.Automation.SelectionItemPattern.IsSelectedProperty>|Y|  
 |STATE_SYSTEM_COLLAPSED|<xref:System.Windows.Automation.ExpandCollapsePattern.ExpandCollapsePatternInformation.ExpandCollapseState%2A> = <xref:System.Windows.Automation.ExpandCollapseState.Collapsed>|Y|  
 |STATE_SYSTEM_EXPANDED|<xref:System.Windows.Automation.ExpandCollapsePattern.ExpandCollapsePatternInformation.ExpandCollapseState%2A> = <xref:System.Windows.Automation.ExpandCollapseState.Expanded> или <xref:System.Windows.Automation.ExpandCollapseState.PartiallyExpanded>|Y|  
-|STATE_SYSTEM_FOCUSABLE|<xref:System.Windows.Automation.AutomationElement.IsKeyboardFocusableProperty>|Нет|  
-|STATE_SYSTEM_FOCUSED|<xref:System.Windows.Automation.AutomationElement.HasKeyboardFocusProperty>|Нет|  
-|STATE_SYSTEM_HASPOPUP|<xref:System.Windows.Automation.ExpandCollapsePattern> для пунктов меню|Нет|  
-|STATE_SYSTEM_INVISIBLE|<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty> = True и <xref:System.Windows.Automation.AutomationElement.GetClickablePoint%2A> вызывает <xref:System.Windows.Automation.NoClickablePointException>|Нет|  
-|STATE_SYSTEM_LINKED|<xref:System.Windows.Automation.AutomationElement.ControlTypeProperty> =<br /><br /> <xref:System.Windows.Automation.ControlType.Hyperlink>|Нет|  
-|STATE_SYSTEM_MIXED|<xref:System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState%2A> = <xref:System.Windows.Automation.ToggleState.Indeterminate>|Нет|  
-|STATE_SYSTEM_MOVEABLE|<xref:System.Windows.Automation.TransformPattern.CanMoveProperty>|Нет|  
-|STATE_SYSTEM_MUTLISELECTABLE|<xref:System.Windows.Automation.SelectionPattern.CanSelectMultipleProperty>|Нет|  
-|STATE_SYSTEM_OFFSCREEN|<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty> = True|Нет|  
-|STATE_SYSTEM_PROTECTED|<xref:System.Windows.Automation.AutomationElement.IsPasswordProperty>|Нет|  
-|STATE_SYSTEM_READONLY|<xref:System.Windows.Automation.RangeValuePattern.IsReadOnlyProperty?displayProperty=nameWithType> и <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty?displayProperty=nameWithType>|Нет|  
-|STATE_SYSTEM_SELECTABLE|<xref:System.Windows.Automation.SelectionItemPattern> поддерживается.|Нет|  
-|STATE_SYSTEM_SELECTED|<xref:System.Windows.Automation.SelectionItemPattern.IsSelectedProperty>|Нет|  
-|STATE_SYSTEM_SIZEABLE|<xref:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanResize%2A>|Нет|  
+|STATE_SYSTEM_FOCUSABLE|<xref:System.Windows.Automation.AutomationElement.IsKeyboardFocusableProperty>|N|  
+|STATE_SYSTEM_FOCUSED|<xref:System.Windows.Automation.AutomationElement.HasKeyboardFocusProperty>|N|  
+|STATE_SYSTEM_HASPOPUP|<xref:System.Windows.Automation.ExpandCollapsePattern> для пунктов меню|N|  
+|STATE_SYSTEM_INVISIBLE|<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty> = True и <xref:System.Windows.Automation.AutomationElement.GetClickablePoint%2A> вызывает <xref:System.Windows.Automation.NoClickablePointException>|N|  
+|STATE_SYSTEM_LINKED|<xref:System.Windows.Automation.AutomationElement.ControlTypeProperty> =<br /><br /> <xref:System.Windows.Automation.ControlType.Hyperlink>|N|  
+|STATE_SYSTEM_MIXED|<xref:System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState%2A> = <xref:System.Windows.Automation.ToggleState.Indeterminate>|N|  
+|STATE_SYSTEM_MOVEABLE|<xref:System.Windows.Automation.TransformPattern.CanMoveProperty>|N|  
+|STATE_SYSTEM_MUTLISELECTABLE|<xref:System.Windows.Automation.SelectionPattern.CanSelectMultipleProperty>|N|  
+|STATE_SYSTEM_OFFSCREEN|<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty> = True|N|  
+|STATE_SYSTEM_PROTECTED|<xref:System.Windows.Automation.AutomationElement.IsPasswordProperty>|N|  
+|STATE_SYSTEM_READONLY|<xref:System.Windows.Automation.RangeValuePattern.IsReadOnlyProperty?displayProperty=nameWithType> и <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty?displayProperty=nameWithType>|N|  
+|STATE_SYSTEM_SELECTABLE|<xref:System.Windows.Automation.SelectionItemPattern> поддерживается.|N|  
+|STATE_SYSTEM_SELECTED|<xref:System.Windows.Automation.SelectionItemPattern.IsSelectedProperty>|N|  
+|STATE_SYSTEM_SIZEABLE|<xref:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanResize%2A>|N|  
 |STATE_SYSTEM_UNAVAILABLE|<xref:System.Windows.Automation.AutomationElement.IsEnabledProperty>|Y|  
   
  Следующие состояния либо не были реализованы большинством серверов Active Accessibility управления, либо не имеют эквивалента в [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .  
   
-|Состояние Active Accessibility|Примечания|  
+|Состояние Active Accessibility|Remarks|  
 |-----------------------------------------------------------------------|-------------|  
 |STATE_SYSTEM_BUSY|Недоступно в [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
 |STATE_SYSTEM_DEFAULT|Недоступно в [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|  
@@ -191,7 +192,7 @@ Active Accessibility основан на модели COM с поддержко�
 |EVENT_OBJECT_ACCELERATORCHANGE|Изменение свойства<xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>|  
 |EVENT_OBJECT_CONTENTSCROLLED|Изменение свойства или  в связанных полосах прокрутки|  
 |EVENT_OBJECT_CREATE|<xref:System.Windows.Automation.AutomationElement.StructureChangedEvent>|  
-|EVENT_OBJECT_DEFACTIONCHANGE|Нет эквивалента|  
+|EVENT_OBJECT_DEFACTIONCHANGE|Эквивалент отсутствует|  
 |EVENT_OBJECT_DESCRIPTIONCHANGE|Нет точного эквивалента; возможно, изменение свойства <xref:System.Windows.Automation.AutomationElement.HelpTextProperty> или <xref:System.Windows.Automation.AutomationElement.LocalizedControlTypeProperty>|  
 |EVENT_OBJECT_DESTROY|<xref:System.Windows.Automation.AutomationElement.StructureChangedEvent>|  
 |EVENT_OBJECT_FOCUS|<xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent>|  
@@ -204,19 +205,19 @@ Active Accessibility основан на модели COM с поддержко�
 |EVENT_OBJECT_SELECTION|<xref:System.Windows.Automation.SelectionItemPattern.ElementSelectedEvent>|  
 |EVENT_OBJECT_SELECTIONADD|<xref:System.Windows.Automation.SelectionItemPattern.ElementAddedToSelectionEvent>|  
 |EVENT_OBJECT_SELECTIONREMOVE|<xref:System.Windows.Automation.SelectionItemPattern.ElementRemovedFromSelectionEvent>|  
-|EVENT_OBJECT_SELECTIONWITHIN|Нет эквивалента|  
+|EVENT_OBJECT_SELECTIONWITHIN|Эквивалент отсутствует|  
 |EVENT_OBJECT_SHOW|<xref:System.Windows.Automation.AutomationElement.StructureChangedEvent>|  
 |EVENT_OBJECT_STATECHANGE|Различные события изменения свойств|  
 |EVENT_OBJECT_VALUECHANGE|Изменены<xref:System.Windows.Automation.RangeValuePattern.ValueProperty?displayProperty=nameWithType> и <xref:System.Windows.Automation.ValuePattern.ValueProperty?displayProperty=nameWithType> .|  
-|EVENT_SYSTEM_ALERT|Нет эквивалента|  
-|EVENT_SYSTEM_CAPTUREEND|Нет эквивалента|  
-|EVENT_SYSTEM_CAPTURESTART|Нет эквивалента|  
-|EVENT_SYSTEM_CONTEXTHELPEND|Нет эквивалента|  
-|EVENT_SYSTEM_CONTEXTHELPSTART|Нет эквивалента|  
+|EVENT_SYSTEM_ALERT|Эквивалент отсутствует|  
+|EVENT_SYSTEM_CAPTUREEND|Эквивалент отсутствует|  
+|EVENT_SYSTEM_CAPTURESTART|Эквивалент отсутствует|  
+|EVENT_SYSTEM_CONTEXTHELPEND|Эквивалент отсутствует|  
+|EVENT_SYSTEM_CONTEXTHELPSTART|Эквивалент отсутствует|  
 |EVENT_SYSTEM_DIALOGEND|<xref:System.Windows.Automation.WindowPattern.WindowClosedEvent>|  
 |EVENT_SYSTEM_DIALOGSTART|<xref:System.Windows.Automation.WindowPattern.WindowOpenedEvent>|  
-|EVENT_SYSTEM_DRAGDROPEND|Нет эквивалента|  
-|EVENT_SYSTEM_DRAGDROPSTART|Нет эквивалента|  
+|EVENT_SYSTEM_DRAGDROPEND|Эквивалент отсутствует|  
+|EVENT_SYSTEM_DRAGDROPSTART|Эквивалент отсутствует|  
 |EVENT_SYSTEM_FOREGROUND|<xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent>|  
 |EVENT_SYSTEM_MENUEND|<xref:System.Windows.Automation.AutomationElement.MenuClosedEvent>|  
 |EVENT_SYSTEM_MENUPOPUPEND|<xref:System.Windows.Automation.AutomationElement.MenuClosedEvent>|  
@@ -228,20 +229,20 @@ Active Accessibility основан на модели COM с поддержко�
 |EVENT_SYSTEM_MOVESIZESTART|Изменение свойства<xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>|  
 |EVENT_SYSTEM_SCROLLINGEND|Изменение свойства или |  
 |EVENT_SYSTEM_SCROLLINGSTART|Изменение свойства или |  
-|EVENT_SYSTEM_SOUND|Нет эквивалента|  
+|EVENT_SYSTEM_SOUND|Эквивалент отсутствует|  
 |EVENT_SYSTEM_SWITCHEND|Нет эквивалента, но событие <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> сигнализирует, что новое приложение получило фокус|  
-|EVENT_SYSTEM_SWITCHSTART|Нет эквивалента|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.MultipleViewPattern.CurrentViewProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.HorizontallyScrollableProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.VerticallyScrollableProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.HorizontalScrollPercentProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.VerticalScrollPercentProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.HorizontalViewSizeProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.VerticalViewSizeProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.TogglePattern.ToggleStateProperty>|  
-|Нет эквивалента|Изменение свойства<xref:System.Windows.Automation.WindowPattern.WindowVisualStateProperty>|  
-|Нет эквивалента|Событие<xref:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent>|  
-|Нет эквивалента|<xref:System.Windows.Automation.AutomationElement.ToolTipOpenedEvent>|  
+|EVENT_SYSTEM_SWITCHSTART|Эквивалент отсутствует|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.MultipleViewPattern.CurrentViewProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.HorizontallyScrollableProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.VerticallyScrollableProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.HorizontalScrollPercentProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.VerticalScrollPercentProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.HorizontalViewSizeProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.ScrollPattern.VerticalViewSizeProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.TogglePattern.ToggleStateProperty>|  
+|Эквивалент отсутствует|Изменение свойства<xref:System.Windows.Automation.WindowPattern.WindowVisualStateProperty>|  
+|Эквивалент отсутствует|Событие<xref:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent>|  
+|Эквивалент отсутствует|<xref:System.Windows.Automation.AutomationElement.ToolTipOpenedEvent>|  
   
 <a name="Security_compare"></a>
 ## <a name="security"></a>Безопасность  
@@ -249,6 +250,6 @@ Active Accessibility основан на модели COM с поддержко�
   
  В модели [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] устранена необходимость вызова поставщиками кода другого поставщика. Основная служба [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] выполняет все необходимое агрегирование.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основы модели автоматизации пользовательского интерфейса](index.md)

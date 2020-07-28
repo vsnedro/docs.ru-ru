@@ -1,17 +1,18 @@
 ---
 title: Реализация шаблона элемента управления ExpandCollapse модели автоматизации пользовательского интерфейса
+description: Ознакомьтесь с правилами и соглашениями по реализации для шаблона элемента управления ExpandCollapse в модели автоматизации пользовательского интерфейса. Узнайте, как реализовать Иекспандколлапсепровидер.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UI Automation, ExpandCollapse control pattern
 - ExpandCollapse control pattern
 - control patterns, ExpandCollapse
 ms.assetid: 1dbabb8c-0d68-47c1-a35e-1c01cb01af26
-ms.openlocfilehash: 073ff0727fc6aab1189f73a254aa95da60820cc3
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 525b57816071ba2d879036676201a0506d1a29db
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447146"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165860"
 ---
 # <a name="implementing-the-ui-automation-expandcollapse-control-pattern"></a>Реализация шаблона элемента управления ExpandCollapse модели автоматизации пользовательского интерфейса
 
@@ -53,7 +54,7 @@ ms.locfileid: "74447146"
 
 Следующие свойства и методы обязательны для реализации <xref:System.Windows.Automation.Provider.IExpandCollapseProvider>.
 
-|Обязательные члены|Тип элемента|Примечания|
+|Обязательные члены|Тип члена|Примечания|
 |----------------------|-----------------|-----------|
 |<xref:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState%2A>|Свойство|Нет|
 |<xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A>|Метод|Нет|
@@ -70,11 +71,11 @@ ms.locfileid: "74447146"
 |--------------------|---------------|
 |<xref:System.InvalidOperationException>|Вызывается <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> или <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A> , когда <xref:System.Windows.Automation.ExpandCollapseState> = <xref:System.Windows.Automation.ExpandCollapseState.LeafNode>.|
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
-- [Поддержка шаблонов элементов управления в поставщике автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
+- [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
-- [Навигация между элементами модели автоматизации пользовательского интерфейса с помощью TreeWalker](navigate-among-ui-automation-elements-with-treewalker.md)
+- [Навигация между элементами автоматизированного пользовательского интерфейса с помощью TreeWalker](navigate-among-ui-automation-elements-with-treewalker.md)
 - [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)
