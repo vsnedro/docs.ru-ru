@@ -1,5 +1,6 @@
 ---
 title: Инструменты .NET Framework
+description: Ознакомьтесь с перечнем .NET-инструментов, которые упрощают создание, развертывание и управление приложениями и компонентами, предназначенными для .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - command line, .NET Framework tools
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - tools [.NET Framework]
 - running .NET Framework tools
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
-ms.openlocfilehash: 60a9cb241f289cacc7437174f112114e843aca47
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: 0a5cbcd4fa60b819d3ab07a4f221e77ca106c321
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81645566"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166855"
 ---
 # <a name="net-framework-tools"></a>Инструменты .NET Framework
 
@@ -36,7 +37,7 @@ ms.locfileid: "81645566"
 Преобразует определения типов для элемента управления ActiveX из библиотеки типов COM в элемент управления Windows Forms.
 
 - [Caspol.exe (средство настройки политики управления доступом для кода)](caspol-exe-code-access-security-policy-tool.md)  
-Позволяют просматривать и настраивать политику безопасности на уровне политики компьютера, пользователя и предприятия. В .NET Framework 4 и более поздних версиях это средство не влияет на политику управления доступом для кода, если только для элемента [\<legacyCasPolicy>](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) не задано значение `true`. Дополнительные сведения см. в разделе [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
+Позволяют просматривать и настраивать политику безопасности на уровне политики компьютера, пользователя и предприятия. На платформе .NET Framework 4 и в более поздних версиях этот инструмент не затрагивает политику управления доступом для кода (CAS), если только для [элемента \<legacyCasPolicy>](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) не задано значение `true`. Дополнительные сведения см. в разделе [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
 
 - [Cert2spc.exe (средство проверки сертификата издателя программного обеспечения)](cert2spc-exe-software-publisher-certificate-test-tool.md)  
 Создает сертификат издателя программного обеспечения (SPC) из одного или более сертификатов X.509. Этот инструмент предназначен только для тестирования.
