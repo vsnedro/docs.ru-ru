@@ -1,13 +1,14 @@
 ---
 title: Деревья выражений (C#)
+description: Сведения о деревьях выражений. Узнайте, как компилировать и запускать код, представляемый этими структурами данных, в которых каждый узел является выражением.
 ms.date: 07/20/2015
 ms.assetid: 7d0ac21a-6d90-4e2e-8903-528cb78615b7
-ms.openlocfilehash: c260e649e7bd285a6bd07b5a1cd7fc1a7f75b82a
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: 2fa8577dd945650edebf84459de10c0c3bd04225
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241556"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105582"
 ---
 # <a name="expression-trees-c"></a>Деревья выражений (C#)
 Деревья выражений представляют код в виде древовидной структуры, где каждый узел является выражением, например, вызовом метода или двоичной операцией, такой как `x < y`.  

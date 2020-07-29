@@ -2,12 +2,12 @@
 title: Команда dotnet build
 description: Команда dotnet build выполняет сборку проекта и всех его зависимостей.
 ms.date: 02/14/2020
-ms.openlocfilehash: 5375df61dbf8e9b4db8772b0e2767e9bca0bb254
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 6f33b449301f40949ff5dfe4077564344a9de8ec
+ms.sourcegitcommit: c8c3e1c63a00b7d27f76f5e50ee6469e6bdc8987
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83840914"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87251170"
 ---
 # <a name="dotnet-build"></a>dotnet build
 
@@ -23,7 +23,7 @@ ms.locfileid: "83840914"
 dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive] [--no-dependencies]
     [--no-incremental] [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -121,7 +121,7 @@ dotnet build -h|--help
 
   Указывает целевую среду выполнения. Список идентификаторов сред выполнения (RID) см. в [каталоге RID](../rid-catalog.md).
 
-- **`-s|--source <SOURCE>`**
+- **`--source <SOURCE>`**
 
   URI источника пакета NuGet для использования во время операции восстановления.
 
