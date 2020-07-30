@@ -3,12 +3,12 @@ title: Свойства MSBuild для Microsoft.NET.Sdk
 description: Справочник по свойствам и элементам MSBuild, распознаваемым пакетом SDK для .NET Core.
 ms.date: 02/14/2020
 ms.topic: reference
-ms.openlocfilehash: cda56b3e23592a341d9fe672fc1f1530adcdab49
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 115c4f32e856dee64abe0c607b8ee595a65692e6
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83206111"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164377"
 ---
 # <a name="msbuild-reference-for-net-core-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET Core
 
@@ -25,7 +25,7 @@ ms.locfileid: "83206111"
 
 ### <a name="targetframework"></a>TargetFramework
 
-Свойство `TargetFramework` указывает версию целевой платформы для приложения, которая неявно ссылается на [метапакет](../packages.md#metapackages). Список допустимых моникеров целевой платформы см. в статье [Целевые платформы в проектах в стиле SDK](../../standard/frameworks.md#supported-target-framework-versions).
+Свойство `TargetFramework` определяет версию целевой платформы для приложения. Список допустимых моникеров целевой платформы см. в статье [Целевые платформы в проектах в стиле SDK](../../standard/frameworks.md#supported-target-framework-versions).
 
 ```xml
 <PropertyGroup>
@@ -55,7 +55,7 @@ ms.locfileid: "83206111"
 > [!NOTE]
 > Это свойство применяется только к проектам, использующим `netstandard1.x`. Он не применяется к проектам, использующим `netstandard2.x`.
 
-Используйте свойство `NetStandardImplicitPackageVersion`, если требуется указать версию платформы ниже версии [метапакета](../packages.md#metapackages). Файл проекта, приведенный в следующем примере, предназначен для `netstandard1.3`, но использует `NETStandard.Library` версии 1.6.0.
+Используйте свойство `NetStandardImplicitPackageVersion`, если вам нужно указать версию платформы ниже версии метапакета. Файл проекта, приведенный в следующем примере, предназначен для `netstandard1.3`, но использует `NETStandard.Library` версии 1.6.0.
 
 ```xml
 <PropertyGroup>
@@ -292,7 +292,7 @@ ms.locfileid: "83206111"
 
 ### <a name="packagereference"></a>PackageReference
 
-Элемент `PackageReference` определяет ссылку на пакет NuGet. Например, может потребоваться сослаться на один пакет, а не на [метапакет](../packages.md#metapackages).
+Элемент `PackageReference` определяет ссылку на пакет NuGet.
 
 Атрибут `Include` указывает идентификатор пакета. Атрибут `Version` указывает версию или диапазон версий. Сведения о том, как указать минимальную версию, максимальную версию, диапазон или точное соответствие, см. в разделе [Диапазоны версий](/nuget/concepts/package-versioning#version-ranges). Вы также можете добавить в ссылку на проект следующие метаданные: `IncludeAssets`, `ExcludeAssets` и `PrivateAssets`.
 

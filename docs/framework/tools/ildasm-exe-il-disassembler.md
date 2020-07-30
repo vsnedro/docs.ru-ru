@@ -1,5 +1,6 @@
 ---
 title: Ildasm.exe (дизассемблер IL)
+description: Используйте Ildasm.exe, дизассемблер промежуточного языка (IL), который принимает переносимый исполняемый файл (PE-файл), содержащий код на промежуточном языке, и создает на его основе текстовый файл для Ilasm.exe.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - PE files, MSIL Disassembler
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - text files produced by MSIL Disassembler
 - disassembling file for MSIL Assembler input
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
-ms.openlocfilehash: f23f8c48a31dffa7d350c872aed7505da7a36861
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6f2611488e7f653783cab833ad47131978bf74aa
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73105062"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166841"
 ---
 # <a name="ildasmexe-il-disassembler"></a>Ildasm.exe (дизассемблер IL)
 
@@ -153,7 +154,7 @@ ildasm MyFile.exe /output:MyFile.il
 ildasm MyFile.exe /text
 ```
 
-Если файл `MyApp.exe` содержит внедренные управляемые и неуправляемые ресурсы, при выполнении следующей команды будет создано четыре файла: *MyApp.il*, *MyApp.res*, *Icons.resources* и *Message.resources*:
+Если файл `MyApp.exe` содержит внедренные управляемые и неуправляемые ресурсы, при выполнении следующей команды будет создано четыре файла: *MyApp.il*, *MyApp.res*, *Icons.resources* и *Message.resources*.
 
 ```console
 ildasm MyApp.exe /output:MyApp.il

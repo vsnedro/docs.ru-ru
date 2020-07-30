@@ -1,5 +1,6 @@
 ---
 title: Gacutil.exe (программа глобального кэша сборок)
+description: См. сведения о Gacutil.exe, инструменте глобального кэша сборок. Этот инструмент позволяет просматривать и использовать глобальный кэш сборок и кэш загрузки.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - assemblies [.NET Framework], global assembly cache
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - global assembly cache, Gacutil.exe
 - Global Assembly Cache tool
 ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
-ms.openlocfilehash: 87f3cb799ba4e406906759e1facd19d00c8bdace
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1fe79a09aa99c9d91d8223e7642408a56da20dfe
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73107505"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166941"
 ---
 # <a name="gacutilexe-global-assembly-cache-tool"></a>Gacutil.exe (программа глобального кэша сборок)
 
@@ -46,7 +47,7 @@ gacutil [options] [assemblyName | assemblyPath | assemblyListFile]
 |*assemblyPath*|Имя файла, содержащего манифест сборки.|
 |*assemblyListFile*|Путь к текстовому файлу ANSI, в котором перечислены устанавливаемые или удаляемые сборки. Чтобы использовать текстовый файл для установки сборок, укажите путь к каждой сборке в отдельной строке файла. Программа интерпретирует относительные пути относительно расположения *assemblyListFile*. Чтобы использовать текстовый файл для удаления сборок, укажите в нем полное имя каждой сборки в отдельной строке. Примеры содержимого списка *assemblyListFile* приведены ниже в этом разделе.|
 
-|Параметр|Описание|
+|Параметр|Описание:|
 |------------|-----------------|
 |**/cdl**|Удаляет содержимое кэша загрузки.|
 |**/f**|Чтобы принудительно переустановить сборку, укажите этот параметр с ключом **/i** или **/il**. Если сборка с этим именем уже существует в глобальном кэше сборок, она будет перезаписана.|
@@ -108,7 +109,7 @@ myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 > - AssemblyInfo — 31–48 символов или больше, включая:
 >   - Framework — 5 символов (например, `v4.0_`)
 >   - AssemblyVersion — 8–24 символа (например, `9.0.1000.0_`)
->   - AssemblyLanguage — 1–8 символов (например, `de_`, `sr-Cyrl_`);
+>   - AssemblyLanguage — 1–8 символов (например, `de_`, `sr-Cyrl_`)
 >   - PublicKey — 17 символов (например, `31bf3856ad364e35\`)
 > - DllFileName — до 91+4 символа (например, `<AssemblyName>.dll`).
 

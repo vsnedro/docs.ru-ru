@@ -2,12 +2,12 @@
 title: Команда dotnet publish
 description: Команда dotnet publish публикует решение или проект .NET Core в каталоге.
 ms.date: 02/24/2020
-ms.openlocfilehash: 61cfcf06586f3ac66526de69a17b8aef3cf0c795
-ms.sourcegitcommit: 63bb83322814f5e5e5c5b69939b14a3139a6ca7e
+ms.openlocfilehash: 59fdbfa875dad13963ae198acc6a31b537279dfe
+ms.sourcegitcommit: c8c3e1c63a00b7d27f76f5e50ee6469e6bdc8987
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85365587"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87251183"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -54,8 +54,10 @@ dotnet publish -h|--help
 Команда `dotnet publish` принимает параметры MSBuild, например `-p` для задания свойств или `-l` для определения средства ведения журнала. Например, можно задать свойство MSBuild, используя формат: `-p:<NAME>=<VALUE>`. Кроме того, задать связанные с публикацией свойства можно, сославшись на файл *PUBXML*, например:
 
 ```dotnetcli
-dotnet publish -p:PublishProfile=Properties\PublishProfiles\FolderProfile.pubxml
+dotnet publish -p:PublishProfile=FolderProfile
 ```
+
+В предыдущем примере используется файл *FolderProfile.pubxml*, расположенный в папке *\<project_folder>/Properties/PublishProfiles*. Если указать путь и расширение файла при определении свойства `PublishProfile`, эти сведения будут игнорироваться. По умолчанию MSBuild выполняет поиск в папке *Properties/PublishProfiles* по расширению файла *pubxml*. Чтобы указать путь и имя файла, включая расширение, определите свойство `PublishProfileFullPath` вместо свойства `PublishProfile`.
 
 Дополнительные сведения см. в следующих ресурсах:
 

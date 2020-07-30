@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: 911d10917c2262c0bd32ef30d48da0f85ac39a39
-ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
+ms.openlocfilehash: 9b1e190579902dda71547b01f31dd5adcc22fe9c
+ms.sourcegitcommit: c8c3e1c63a00b7d27f76f5e50ee6469e6bdc8987
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84803159"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87251196"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -21,14 +21,17 @@ ms.locfileid: "84803159"
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
-    [-a|--test-adapter-path <PATH_TO_ADAPTER>] [--blame]
+    [-a|--test-adapter-path <ADAPTER_PATH>] [--blame] [--blame-crash]
+    [--blame-crash-dump-type <DUMP_TYPE>] [--blame-crash-collect-always]
+    [--blame-hang] [--blame-hang-dump-type <DUMP_TYPE>]
+    [--blame-hang-timeout <TIMESPAN>]
     [-c|--configuration <CONFIGURATION>]
-    [--collect <DATA_COLLECTOR_FRIENDLY_NAME>]
-    [-d|--diag <PATH_TO_DIAGNOSTICS_FILE>] [-f|--framework <FRAMEWORK>]
+    [--collect <DATA_COLLECTOR_NAME>]
+    [-d|--diag <LOG_FILE>] [-f|--framework <FRAMEWORK>]
     [--filter <EXPRESSION>] [--interactive]
-    [-l|--logger <LOGGER_URI/FRIENDLY_NAME>] [--no-build]
+    [-l|--logger <LOGGER>] [--no-build]
     [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--results-directory <PATH>] [--runtime <RUNTIME_IDENTIFIER>]
+    [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
     [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
 
@@ -64,7 +67,7 @@ dotnet test -h|--help
 
 ## <a name="options"></a>Параметры
 
-- **`-a|--test-adapter-path <PATH_TO_ADAPTER>`**
+- **`-a|--test-adapter-path <ADAPTER_PATH>`**
 
   Путь к каталогу для поиска дополнительных адаптеров теста. Проверяются только *DLL*-файлы с суффиксом `.TestAdapter.dll`. Если не указано, выполняется поиск по каталогу тестового *DLL*.
 
@@ -72,11 +75,42 @@ dotnet test -h|--help
 
   Выполнение тестов в режиме обвинения. Этот параметр полезен при изоляции проблемных тестов, которые приводят к аварийному завершению хоста для тестов. При обнаружении сбоя он создает файл последовательности в `TestResults/<Guid>/<Guid>_Sequence.xml`, который фиксирует порядок тестов, выполненных до сбоя.
 
+- **`--blame-crash`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
+
+  Выполняет тесты в режиме обвинения и собирает аварийный дамп при непредвиденном завершении процесса хоста для тестов. Эта возможность поддерживается только в Windows. Каталог, содержащий файлы *procdump.exe* и *procdump64.exe*, должен быть включен в переменную среды PATH или PROCDUMP_PATH. [Скачать средства.](https://docs.microsoft.com/sysinternals/downloads/procdump) Подразумевает `--blame`.
+
+- **`--blame-crash-dump-type <DUMP_TYPE>`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
+
+  Тип собираемого аварийного дампа. Подразумевает `--blame-crash`.
+
+- **`--blame-crash-collect-always`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
+
+  Собирает аварийный дамп при ожидаемом и непредвиденном завершении процесса хоста для тестов.
+
+- **`--blame-hang`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
+
+  Выполняет тесты в режиме обвинения и собирает дамп зависания при превышении тестом заданного времени ожидания.
+
+- **`--blame-hang-dump-type <DUMP_TYPE>`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
+
+  Тип собираемого аварийного дампа: `full`, `mini` или `none`. Если указан тип `none`, процесс хоста для тестов завершается по истечении времени ожидания, но дамп не собирается. Подразумевает `--blame-hang`.
+
+- **`--blame-hang-timeout <TIMESPAN>`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
+
+  Время ожидания каждого теста, после которого дамп зависания активируется и процесс хоста для тестов завершается. Значение времени ожидания указывается в одном из следующих форматов:
+  
+  - 1,5 ч
+  - 90 мин
+  - 5400 с
+  - 5 400 000 мс
+
+  Если единица измерения не указана (например, 5 400 000), предполагается, что значение указано в миллисекундах. При использовании вместе с тестами, управляемыми данными, поведение времени ожидания зависит от используемого адаптера теста. Для xUnit и NUnit время ожидания обновляется после каждого тестового случая. Для MSTest время ожидания используется для всех тестовых случаев. Эта возможность поддерживается в Windows с netcoreapp 2.1 и более поздних версий, а также в Linux с netcoreapp 3.1 и более поздних версий. macOS не поддерживается.
+
 - **`-c|--configuration <CONFIGURATION>`**
 
   Определяет конфигурацию сборки. Значение по умолчанию — `Debug`, но конфигурация проекта может переопределить этот параметр SDK по умолчанию.
 
-- **`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
+- **`--collect <DATA_COLLECTOR_NAME>`**
 
   Включает сборщик данных для тестового запуска. Дополнительные сведения см. в разделе [Мониторинг и анализ тестового запуска](https://aka.ms/vstest-collect).
   
@@ -84,7 +118,7 @@ dotnet test -h|--help
 
   В Windows объем протестированного кода можно получить с помощью параметра `--collect "Code Coverage"`. Этот параметр создает файл *COVERAGE*, который можно открыть в Visual Studio 2019 Enterprise. Дополнительные сведения см. в статьях [Использование объема протестированного кода](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) и [Настройка анализа объема протестированного кода](/visualstudio/test/customizing-code-coverage-analysis).
 
-- **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
+- **`-d|--diag <LOG_FILE>`**
 
   Включает режим диагностики для платформы тестирования и записывает диагностические сообщения в указанный файл и в файлы рядом с ним. Процесс, который заносит сообщения в журнал, определяет, какие файлы создаются, например `*.host_<date>.txt` для журнала тестового узла и `*.datacollector_<date>.txt` для журнала сборщика данных.
 
@@ -104,7 +138,7 @@ dotnet test -h|--help
 
   Позволяет команде остановиться и дождаться, пока пользователь выполнит действие или введет данные. Например, чтобы завершить проверку подлинности. Доступно, начиная с пакета SDK для .NET Core 3.0.
 
-- **`-l|--logger <LOGGER_URI/FRIENDLY_NAME>`**
+- **`-l|--logger <LOGGER>`**
 
   Указывает средство ведения журнала для результатов тестирования. В отличие от MSBuild, dotnet test не принимает аббревиатуры: вместо `-l "console;v=d"` используйте `-l "console;verbosity=detailed"`.
 
@@ -124,7 +158,7 @@ dotnet test -h|--help
 
   Каталог, в котором выполняется поиск двоичных файлов для выполнения. Если значение не указано, путь по умолчанию — `./bin/<configuration>/<framework>/`.  Для проектов с несколькими целевыми платформами (с помощью свойства `TargetFrameworks`) необходимо также определить `--framework` при указании этого параметра. `dotnet test` всегда запускает тесты из выходного каталога. Для использования ресурсов тестирования в выходном каталоге можно использовать <xref:System.AppDomain.BaseDirectory%2A?displayProperty=nameWithType>.
 
-- **`-r|--results-directory <PATH>`**
+- **`-r|--results-directory <RESULTS_DIR>`**
 
   Каталог для сохранения результатов тестов. Если указанный каталог не существует, он создается. По умолчанию используется `TestResults` в каталоге, содержащем файл проекта.
 
@@ -141,7 +175,7 @@ dotnet test -h|--help
 
 - **`-t|--list-tests`**
 
-  Отображение списка всех обнаруженных тестов в текущем проекте.
+  Вывод списка обнаруженных тестов вместо выполнения тестов.
 
 - **`-v|--verbosity <LEVEL>`**
 
