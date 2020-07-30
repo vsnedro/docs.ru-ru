@@ -1,22 +1,23 @@
 ---
 title: Структура программы C#
+description: Используйте эти ресурсы для понимания общей структуры программы C#, включая стандартный пример Hello, World!
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, about C# program
 - Visual C#, program structure
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
-ms.openlocfilehash: a180dc30c7fab11e5b939682244dbb90eb7615eb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ecf526d77fcf9df83fa832c57de0e1921d27e3f3
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "69589265"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303352"
 ---
 # <a name="inside-a-c-program"></a>Структура программы C#
 
 В этом разделе описывается общая структура программы на C# и приводится стандартный пример Hello, World!
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 - [Hello World — создаем первую программу](hello-world-your-first-program.md)
 
@@ -40,6 +41,6 @@ ms.locfileid: "69589265"
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
