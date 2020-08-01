@@ -2,12 +2,12 @@
 title: Рекурсивные функции. Ключевое слово rec
 description: 'Узнайте, как ключевое слово F # REC используется с ключевым словом let для определения рекурсивной функции.'
 ms.date: 05/16/2016
-ms.openlocfilehash: c9a3b7dc27f4ed86948a08b7783d7e8e8b60e57f
-ms.sourcegitcommit: 32f0d6f4c01ddc6ca78767c3a30e3305f8cd032c
+ms.openlocfilehash: c2374f90b4585327c6f5208a3d6bca75a23d0cbb
+ms.sourcegitcommit: 7499bdb428d63ed0e19e97f54d3d576c41598659
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87426980"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87455652"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>Рекурсивные функции. Ключевое слово rec
 
@@ -43,7 +43,7 @@ function2-body
 
 ## <a name="tail-recursion"></a>Заключительная рекурсия
 
-Для некоторых рекурсивных функций необходимо выполнить рефакторинг более "чистого" определения до первого [рекурсивного](https://cs.stackexchange.com/questions/6230/what-is-tail-recursion). Это предотвращает лишнихные перевычисления. Например, предыдущий генератор чисел Фибоначчи можно перезаписывать следующим образом:
+Для некоторых рекурсивных функций необходимо выполнить рефакторинг более "чистого" определения до первого [рекурсивного](https://cs.stackexchange.com/questions/6230/what-is-tail-recursion). Это предотвращает ненужные вычисления. Например, предыдущий генератор чисел Фибоначчи можно перезаписывать следующим образом:
 
 ```fsharp
 let fib n =
