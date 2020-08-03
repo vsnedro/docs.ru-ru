@@ -2,12 +2,12 @@
 title: Команда dotnet tool restore
 description: Команда dotnet tool restore устанавливает на компьютере локальные средства .NET Core, которые доступны для текущего каталога.
 ms.date: 02/14/2020
-ms.openlocfilehash: a518c2d45bbe9522bddfed4bbef61b30f1ad634b
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: ceef3274ec9d337f8c51009d5a8c27e808b14035
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463333"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302676"
 ---
 # <a name="dotnet-tool-restore"></a>dotnet tool restore
 
@@ -20,7 +20,7 @@ ms.locfileid: "81463333"
 ## <a name="synopsis"></a>Краткий обзор
 
 ```dotnetcli
-dotnet tool restore <PACKAGE_NAME>
+dotnet tool restore
     [--configfile <FILE>] [--add-source <SOURCE>]
     [tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
     [--ignore-failed-sources] [--no-cache] [--interactive]
@@ -32,12 +32,6 @@ dotnet tool restore -h|--help
 ## <a name="description"></a>Описание
 
 Команда `dotnet tool restore` находит файл манифеста средства, который доступен для текущего каталога, и устанавливает перечисленные в нем средства. Сведения о файлах манифеста см. в разделе [Установка локального средства](global-tools.md#install-a-local-tool) и [Вызов локального средства](global-tools.md#invoke-a-local-tool).
-
-## <a name="arguments"></a>Аргументы
-
-- **`PACKAGE_NAME`**
-
-Имя или идентификатор пакета NuGet, который содержит устанавливаемое средство .NET Core.
 
 ## <a name="options"></a>Параметры
 
