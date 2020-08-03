@@ -1,21 +1,22 @@
 ---
 title: Создание XML из CSV-файлов (C#)
+description: Узнайте, как использовать LINQ и LINQ to XML в C# для создания XML-документа из CSV-файла. Запрос использует предложение let, чтобы разбить каждую строку на массив полей.
 ms.date: 07/20/2015
 ms.assetid: 57b9ccde-f983-4a21-ae61-70ecede30307
-ms.openlocfilehash: 643c05cb440165c4461c3e9c80e69701241ab8d1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2fc9954a51fc1f2979c6cce13805ed15cdb88741
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635812"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105179"
 ---
-# <a name="how-to-generate-xml-from-csv-files-c"></a><span data-ttu-id="68c2a-102">Создание XML из CSV-файлов (C#)</span><span class="sxs-lookup"><span data-stu-id="68c2a-102">How to generate XML from CSV files (C#)</span></span>
-<span data-ttu-id="68c2a-103">В этом примере показано, как использовать LINQ и [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] для создания XML-документа из файла с разделителями-запятыми (.csv).</span><span class="sxs-lookup"><span data-stu-id="68c2a-103">This example shows how to use Language-Integrated Query (LINQ) and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.</span></span>  
+# <a name="how-to-generate-xml-from-csv-files-c"></a><span data-ttu-id="56ad9-104">Создание XML из CSV-файлов (C#)</span><span class="sxs-lookup"><span data-stu-id="56ad9-104">How to generate XML from CSV files (C#)</span></span>
+<span data-ttu-id="56ad9-105">В этом примере показано, как использовать LINQ и [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] для создания XML-документа из файла с разделителями-запятыми (.csv).</span><span class="sxs-lookup"><span data-stu-id="56ad9-105">This example shows how to use Language-Integrated Query (LINQ) and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="68c2a-104">Пример</span><span class="sxs-lookup"><span data-stu-id="68c2a-104">Example</span></span>  
- <span data-ttu-id="68c2a-105">В следующем коде выполняется запрос LINQ к массиву строк.</span><span class="sxs-lookup"><span data-stu-id="68c2a-105">The following code performs a LINQ query on an array of strings.</span></span>  
+## <a name="example"></a><span data-ttu-id="56ad9-106">Пример</span><span class="sxs-lookup"><span data-stu-id="56ad9-106">Example</span></span>  
+ <span data-ttu-id="56ad9-107">В следующем коде выполняется запрос LINQ к массиву строк.</span><span class="sxs-lookup"><span data-stu-id="56ad9-107">The following code performs a LINQ query on an array of strings.</span></span>  
   
- <span data-ttu-id="68c2a-106">Запрос использует предложение `let`, чтобы разбить каждую строку на массив полей.</span><span class="sxs-lookup"><span data-stu-id="68c2a-106">The query uses the `let` clause to split each string into an array of fields.</span></span>  
+ <span data-ttu-id="56ad9-108">Запрос использует предложение `let`, чтобы разбить каждую строку на массив полей.</span><span class="sxs-lookup"><span data-stu-id="56ad9-108">The query uses the `let` clause to split each string into an array of fields.</span></span>  
   
 ```csharp  
 // Create the text file.  
@@ -48,7 +49,7 @@ XElement cust = new XElement("Root",
 Console.WriteLine(cust);  
 ```  
   
- <span data-ttu-id="68c2a-107">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="68c2a-107">This code produces the following output:</span></span>  
+ <span data-ttu-id="56ad9-109">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="56ad9-109">This code produces the following output:</span></span>  
   
 ```xml  
 <Root>  

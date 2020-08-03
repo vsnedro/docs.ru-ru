@@ -1,28 +1,29 @@
 ---
 title: Перечисление всех узлов в дереве (C#)
+description: Узнайте, как в C# вывести список всех узлов в дереве путем выполнения выражения XPath с помощью LINQ to XML. Можно узнать, как метод или свойство влияют на дерево.
 ms.date: 07/20/2015
 ms.assetid: 3e934371-f4c6-458b-9f6b-f9061b596f5b
-ms.openlocfilehash: e1b37c1d0801f2924e6811e630094524331a0d86
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 28400712154138fa474665a796b77572b095fe13
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75345870"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104973"
 ---
-# <a name="how-to-list-all-nodes-in-a-tree-c"></a><span data-ttu-id="9b6a1-102">Перечисление всех узлов в дереве (C#)</span><span class="sxs-lookup"><span data-stu-id="9b6a1-102">How to list all nodes in a tree (C#)</span></span>
+# <a name="how-to-list-all-nodes-in-a-tree-c"></a><span data-ttu-id="26a26-104">Перечисление всех узлов в дереве (C#)</span><span class="sxs-lookup"><span data-stu-id="26a26-104">How to list all nodes in a tree (C#)</span></span>
 
-<span data-ttu-id="9b6a1-103">Иногда нужно вывести список всех узлов дерева.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-103">Sometimes it is helpful to list all nodes in a tree.</span></span> <span data-ttu-id="9b6a1-104">Это полезно, если требуется узнать, как метод или свойство повлияли на дерево.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-104">This can be useful when learning exactly how a method or property affects the tree.</span></span> <span data-ttu-id="9b6a1-105">Одним из подходов для вывода списка всех узлов в текстовом формате является создание выражения XPath, которое точно определяет каждый конкретный узел дерева.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-105">One approach to listing all nodes in a textual form is to generate an XPath expression that exactly and specifically identifies any node in the tree.</span></span>
+<span data-ttu-id="26a26-105">Иногда нужно вывести список всех узлов дерева.</span><span class="sxs-lookup"><span data-stu-id="26a26-105">Sometimes it is helpful to list all nodes in a tree.</span></span> <span data-ttu-id="26a26-106">Это полезно, если требуется узнать, как метод или свойство повлияли на дерево.</span><span class="sxs-lookup"><span data-stu-id="26a26-106">This can be useful when learning exactly how a method or property affects the tree.</span></span> <span data-ttu-id="26a26-107">Одним из подходов для вывода списка всех узлов в текстовом формате является создание выражения XPath, которое точно определяет каждый конкретный узел дерева.</span><span class="sxs-lookup"><span data-stu-id="26a26-107">One approach to listing all nodes in a textual form is to generate an XPath expression that exactly and specifically identifies any node in the tree.</span></span>
 
-<span data-ttu-id="9b6a1-106">Не слишком удобно выполнять выражения XPath с помощью [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].</span><span class="sxs-lookup"><span data-stu-id="9b6a1-106">It is not particularly helpful to execute XPath expressions using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].</span></span> <span data-ttu-id="9b6a1-107">Выражения XPath имеют более низкую производительность, чем запросы [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], к тому же запросы [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] являются более мощными.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-107">XPath expressions have poorer performance than [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries, and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries are much more powerful.</span></span> <span data-ttu-id="9b6a1-108">Однако для определения узлов в XML-дереве выражения XPath подходят хорошо.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-108">However, as a way to identify nodes in the XML tree, XPath works well.</span></span>
+<span data-ttu-id="26a26-108">Не слишком удобно выполнять выражения XPath с помощью [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].</span><span class="sxs-lookup"><span data-stu-id="26a26-108">It is not particularly helpful to execute XPath expressions using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].</span></span> <span data-ttu-id="26a26-109">Выражения XPath имеют более низкую производительность, чем запросы [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], к тому же запросы [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] являются более мощными.</span><span class="sxs-lookup"><span data-stu-id="26a26-109">XPath expressions have poorer performance than [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries, and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries are much more powerful.</span></span> <span data-ttu-id="26a26-110">Однако для определения узлов в XML-дереве выражения XPath подходят хорошо.</span><span class="sxs-lookup"><span data-stu-id="26a26-110">However, as a way to identify nodes in the XML tree, XPath works well.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9b6a1-109">Пример</span><span class="sxs-lookup"><span data-stu-id="9b6a1-109">Example</span></span>
- <span data-ttu-id="9b6a1-110">В этом примере показана функция с именем `GetXPath`, создающая конкретное выражение XPath для каждого узла XML-дерева.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-110">This example shows a function named `GetXPath` that generates a specific XPath expression for any node in the XML tree.</span></span> <span data-ttu-id="9b6a1-111">Она формирует соответствующие выражения XPath, даже если узлы находятся в пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-111">It generates appropriate XPath expressions even when nodes are in a namespace.</span></span> <span data-ttu-id="9b6a1-112">Выражения XPath создаются с помощью префиксов пространства имен.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-112">The XPath expressions are generated by using namespace prefixes.</span></span>
+## <a name="example"></a><span data-ttu-id="26a26-111">Пример</span><span class="sxs-lookup"><span data-stu-id="26a26-111">Example</span></span>
+ <span data-ttu-id="26a26-112">В этом примере показана функция с именем `GetXPath`, создающая конкретное выражение XPath для каждого узла XML-дерева.</span><span class="sxs-lookup"><span data-stu-id="26a26-112">This example shows a function named `GetXPath` that generates a specific XPath expression for any node in the XML tree.</span></span> <span data-ttu-id="26a26-113">Она формирует соответствующие выражения XPath, даже если узлы находятся в пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="26a26-113">It generates appropriate XPath expressions even when nodes are in a namespace.</span></span> <span data-ttu-id="26a26-114">Выражения XPath создаются с помощью префиксов пространства имен.</span><span class="sxs-lookup"><span data-stu-id="26a26-114">The XPath expressions are generated by using namespace prefixes.</span></span>
 
- <span data-ttu-id="9b6a1-113">Затем пример создает небольшое XML-дерево, содержащее несколько типов узлов.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-113">The example then creates a small XML tree that contains an example of several types of nodes.</span></span> <span data-ttu-id="9b6a1-114">После этого он проходит по узлам-потомкам и выводит выражение XPath для каждого узла.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-114">It then iterates through the descendant nodes and prints the XPath expression for each node.</span></span>
+ <span data-ttu-id="26a26-115">Затем пример создает небольшое XML-дерево, содержащее несколько типов узлов.</span><span class="sxs-lookup"><span data-stu-id="26a26-115">The example then creates a small XML tree that contains an example of several types of nodes.</span></span> <span data-ttu-id="26a26-116">После этого он проходит по узлам-потомкам и выводит выражение XPath для каждого узла.</span><span class="sxs-lookup"><span data-stu-id="26a26-116">It then iterates through the descendant nodes and prints the XPath expression for each node.</span></span>
 
- <span data-ttu-id="9b6a1-115">Обратите внимание, что XML-декларация не является узлом дерева.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-115">You will notice that the XML declaration is not a node in the tree.</span></span>
+ <span data-ttu-id="26a26-117">Обратите внимание, что XML-декларация не является узлом дерева.</span><span class="sxs-lookup"><span data-stu-id="26a26-117">You will notice that the XML declaration is not a node in the tree.</span></span>
 
- <span data-ttu-id="9b6a1-116">Следующий XML-файл содержит несколько типов узлов.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-116">The following is an XML file that contains several types of nodes:</span></span>
+ <span data-ttu-id="26a26-118">Следующий XML-файл содержит несколько типов узлов.</span><span class="sxs-lookup"><span data-stu-id="26a26-118">The following is an XML file that contains several types of nodes:</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -38,7 +39,7 @@ ms.locfileid: "75345870"
 </Root>
 ```
 
- <span data-ttu-id="9b6a1-117">Ниже приводится список узлов в XML-дереве, представленном в виде выражений XPath.</span><span class="sxs-lookup"><span data-stu-id="9b6a1-117">The following is the list of nodes in the above XML tree, expressed as XPath expressions:</span></span>
+ <span data-ttu-id="26a26-119">Ниже приводится список узлов в XML-дереве, представленном в виде выражений XPath.</span><span class="sxs-lookup"><span data-stu-id="26a26-119">The following is the list of nodes in the above XML tree, expressed as XPath expressions:</span></span>
 
 ```text
 /processing-instruction()
@@ -316,7 +317,7 @@ class Program
 }
 ```
 
- <span data-ttu-id="9b6a1-118">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="9b6a1-118">This example produces the following output:</span></span>
+ <span data-ttu-id="26a26-120">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="26a26-120">This example produces the following output:</span></span>
 
 ```output
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>

@@ -1,21 +1,22 @@
 ---
 title: Пример, выводящий части документа в формате Office Open XML (C#)
+description: Узнайте, как открывать документ Office Open XML и как обращаться к частям этого документа с помощью LINQ в C#. В этом примере выводятся часть, содержащая сам документ, и часть, содержащая стиль документа.
 ms.date: 07/20/2015
 ms.assetid: 6cd37055-89b4-42e8-bf27-5a29717e35f3
-ms.openlocfilehash: be4c0ba2ce2a007fa6e19a65d7d86854d85851c4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c5755ad8e8772195c056b0c1c896c914b1a63a55
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "66486001"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103910"
 ---
-# <a name="example-that-outputs-office-open-xml-document-parts-c"></a><span data-ttu-id="d1a20-102">Пример, выводящий части документа в формате Office Open XML (C#)</span><span class="sxs-lookup"><span data-stu-id="d1a20-102">Example that Outputs Office Open XML Document Parts (C#)</span></span>
-<span data-ttu-id="d1a20-103">В этом разделе разъясняется, как открывать документ Office Open XML и как обращаться к частям этого документа.</span><span class="sxs-lookup"><span data-stu-id="d1a20-103">This topic shows how to open an Office Open XML document and access parts within it.</span></span>  
+# <a name="example-that-outputs-office-open-xml-document-parts-c"></a><span data-ttu-id="800ce-104">Пример, выводящий части документа в формате Office Open XML (C#)</span><span class="sxs-lookup"><span data-stu-id="800ce-104">Example that Outputs Office Open XML Document Parts (C#)</span></span>
+<span data-ttu-id="800ce-105">В этом разделе разъясняется, как открывать документ Office Open XML и как обращаться к частям этого документа.</span><span class="sxs-lookup"><span data-stu-id="800ce-105">This topic shows how to open an Office Open XML document and access parts within it.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="d1a20-104">Пример</span><span class="sxs-lookup"><span data-stu-id="d1a20-104">Example</span></span>  
- <span data-ttu-id="d1a20-105">В следующем примере открывается документ Office Open XML, после чего часть, содержащая сам документ, и часть, содержащая стиль, выводятся на консоль.</span><span class="sxs-lookup"><span data-stu-id="d1a20-105">The following example opens an Office Open XML document, and prints the document part and the style part to the console.</span></span>  
+## <a name="example"></a><span data-ttu-id="800ce-106">Пример</span><span class="sxs-lookup"><span data-stu-id="800ce-106">Example</span></span>  
+ <span data-ttu-id="800ce-107">В следующем примере открывается документ Office Open XML, после чего часть, содержащая сам документ, и часть, содержащая стиль, выводятся на консоль.</span><span class="sxs-lookup"><span data-stu-id="800ce-107">The following example opens an Office Open XML document, and prints the document part and the style part to the console.</span></span>  
   
- <span data-ttu-id="d1a20-106">В этом примере используются классы из сборки WindowsBase.</span><span class="sxs-lookup"><span data-stu-id="d1a20-106">This example uses classes from the WindowsBase assembly.</span></span> <span data-ttu-id="d1a20-107">Используются типы из пространства имен <xref:System.IO.Packaging?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="d1a20-107">It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.</span></span>  
+ <span data-ttu-id="800ce-108">В этом примере используются классы из сборки WindowsBase.</span><span class="sxs-lookup"><span data-stu-id="800ce-108">This example uses classes from the WindowsBase assembly.</span></span> <span data-ttu-id="800ce-109">Используются типы из пространства имен <xref:System.IO.Packaging?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="800ce-109">It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.</span></span>  
   
 ```csharp  
 const string fileName = "SampleDoc.docx";  
