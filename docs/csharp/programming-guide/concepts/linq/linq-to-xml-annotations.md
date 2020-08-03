@@ -1,13 +1,14 @@
 ---
-title: Примечания LINQ to XML3
+title: Примечания LINQ to XML
+description: Узнайте, как использовать заметки в LINQ to XML для ассоциации любого произвольного объекта любого произвольного типа с любым XML-компонентом XML-дерева.
 ms.date: 07/20/2015
 ms.assetid: 54e7b9d0-07f5-488f-9065-b6e6b870f810
-ms.openlocfilehash: 5f1940be2fc126ff9e9c7a4cb37e5cc7fc95d3c3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e7da666139c10b26de37816693202d96498f52d8
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "66689940"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165579"
 ---
 # <a name="linq-to-xml-annotations"></a>Примечания LINQ to XML
 
@@ -21,7 +22,7 @@ ms.locfileid: "66689940"
 
 При работе с заметками можно использовать следующие методы.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |<xref:System.Xml.Linq.XObject.AddAnnotation%2A>|Добавляет объект к списку заметок <xref:System.Xml.Linq.XObject>.|
 |<xref:System.Xml.Linq.XObject.Annotation%2A>|Извлекает первый объект заметки указанного типа из <xref:System.Xml.Linq.XObject>.|

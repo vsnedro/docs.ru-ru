@@ -1,5 +1,6 @@
 ---
 title: Ilasm.exe (ассемблер IL)
+description: Начните работу с Ilasm.exe, ассемблером IL. Это средство создает переносимый исполняемый файл (PE) из файла промежуточного языка (IL).
 ms.date: 03/30/2017
 helpviewer_keywords:
 - MSIL generators
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Ilasm.exe
 - verifying MSIL performance
 ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
-ms.openlocfilehash: cb995e78e534048043886070536ef0dd0a45c057
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1a85b3bf9509ffba6c2331d14196a6bef2bfa080
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73105092"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166974"
 ---
 # <a name="ilasmexe-il-assembler"></a>Ilasm.exe (ассемблер IL)
 
@@ -38,7 +39,7 @@ ilasm [options] filename [[options]filename...]
 | -------- | ----------- |
 |`filename`|Имя исходного файла с расширением IL. В этом файле содержатся директивы объявления метаданных и символические инструкции IL. Программа *Ilasm.exe* может создать один PE-файл из нескольких исходных файлов, для чего следует указать несколько аргументов исходных файлов. **Примечание.** Убедитесь, что последняя строка кода в исходном IL-файле имеет либо конечный пробел, либо символ конца строки.|
 
-| Параметр | Описание |
+| Параметр | Описание: |
 | ------ | ----------- |
 |**/32bitpreferred**|Создает предпочтительно 32-разрядный образ (PE32).|
 |**/alignment:** `integer`|Параметр `integer` задает значение "FileAlignment" в необязательном заголовке NT. Если в файле указана IL-директива ALIGNMENT, этот параметр ее переопределяет.|

@@ -1,5 +1,6 @@
 ---
 title: Улучшения специальных возможностей в .NET Framework
+description: Узнайте об улучшениях специальных возможностей в .NET, начиная с .NET Framework 4.7.1. Специальные возможности позволяют приложению предоставлять надлежащую функциональность пользователям технологий с поддержкой специальных возможностей.
 ms.custom: updateeachrelease
 ms.date: 04/18/2019
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 - vb
 helpviewer_keywords:
 - what's new [.NET Framework]
-ms.openlocfilehash: 8a85614e441ba6e5782cbbbf5fe12432c053a101
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 593591ca340cc130a3a6d1daa015a849b8eca0f8
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244157"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925843"
 ---
 # <a name="whats-new-in-accessibility-in-the-net-framework"></a>Улучшения специальных возможностей в .NET Framework
 

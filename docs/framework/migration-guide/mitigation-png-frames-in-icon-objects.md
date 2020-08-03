@@ -1,13 +1,14 @@
 ---
 title: Устранение рисков. Кадры PNG в объектах Icon
+description: Узнайте, как настроить поведение кадров PNG в объектах значков, если новое поведение, включенное в .NET Framework 4.6 и более поздние версии, нежелательно.
 ms.date: 03/30/2017
 ms.assetid: ca87fefb-7144-4b4e-8832-5a939adbb4b2
-ms.openlocfilehash: 713e6a0fa615ac748134fac501e5142a65e434f1
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: b7ba2951a38ee2d1c7a9b1fc45c5a81d24986a85
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80248899"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475441"
 ---
 # <a name="mitigation-png-frames-in-icon-objects"></a>Устранение рисков. Кадры PNG в объектах Icon
 начиная с версии .NET Framework 4.6 метод <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> успешно преобразует значки с кадрами PNG в объекты <xref:System.Drawing.Bitmap> .  

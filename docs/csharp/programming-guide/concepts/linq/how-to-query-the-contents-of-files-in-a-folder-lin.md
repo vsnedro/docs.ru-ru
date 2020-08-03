@@ -1,13 +1,14 @@
 ---
 title: Как запросить содержимое текстовых файлов в папке (LINQ) (C#)
+description: Узнайте, как использовать LINQ в C#, чтобы запросить все файлы в указанном дереве каталогов, открыть каждый файл и проверить его содержимое.
 ms.date: 07/20/2015
 ms.assetid: f5b4dce7-1a34-4eb4-9bf1-60d5bdda264c
-ms.openlocfilehash: 998fddd3f59ee64df9adcee1acc720d82861c3d9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 216edc2ee6fc43fd06a3c89b1b6b73f693f752f8
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168743"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104271"
 ---
 # <a name="how-to-query-the-contents-of-text-files-in-a-folder-linq-c"></a>Как запросить содержимое текстовых файлов в папке (LINQ) (C#)
 В этом примере показано, как запросить все файлы в указанном дереве каталогов, открыть каждый файл и проверить его содержимое. Этот способ позволяет создать индексы для содержимого дерева каталогов или обратить их порядок. В этом примере выполняется простой поиск строки. Более сложные типы сопоставления шаблонов можно выполнять с помощью регулярных выражений. Дополнительные сведения см. в разделе [Практическое руководство. Объединение запросов LINQ с помощью регулярных выражений (C#)](./how-to-combine-linq-queries-with-regular-expressions.md).  
@@ -73,7 +74,7 @@ class QueryContents
 ## <a name="compiling-the-code"></a>Компиляция кода  
 Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)
 - [LINQ to Objects (C#)](./linq-to-objects.md)

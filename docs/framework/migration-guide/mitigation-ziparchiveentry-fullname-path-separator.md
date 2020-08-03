@@ -1,5 +1,6 @@
 ---
 title: Устранение рисков. Разделитель пути ZipArchiveEntry.FullName
+description: Узнайте, какие изменения претерпел разделитель пути для свойства ZipArchiveEntry.FullName, начиная с приложений, предназначенных для .NET Framework 4.6.1.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - application compatibility
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - .NET Framework 4.6.1 retargeting changes
 - retargeting changes
 ms.assetid: 8d575722-4fb6-49a2-8a06-f72d62dc3766
-ms.openlocfilehash: 3f6c7f258fd5dbf01db4d79b73b88ddd7484f9b2
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: 8cd6362038ce0548681f3d3b44724f3ef9ff62cb
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82102623"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475298"
 ---
 # <a name="mitigation-ziparchiveentryfullname-path-separator"></a>Устранение рисков. Разделитель пути ZipArchiveEntry.FullName
 
@@ -35,7 +36,7 @@ ms.locfileid: "82102623"
 </runtime>  
 ```  
   
- Кроме того, в приложениях, предназначенных для предыдущих версий .NET Framework, но выполняемых в .NET Framework 4.6.1 и более поздних версиях, можно включить такое поведение, добавив параметр конфигурации в раздел [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) файла конфигурации приложения. Ниже показаны как раздел `<runtime>`, так и параметр включения функции.  
+ Кроме того, в приложениях, предназначенных для предыдущих версий .NET Framework, но выполняемых в .NET Framework 4.6.1 и более поздних версиях, можно включить такое поведение, добавив параметр конфигурации в раздел [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) файла конфигурации приложения. Ниже показаны как раздел `<runtime>`, так и параметр включения функции.  
   
 ```xml  
 <runtime>  

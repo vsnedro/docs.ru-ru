@@ -4,12 +4,12 @@ description: Сведения об использовании собираемо
 author: janvorli
 ms.author: janvorli
 ms.date: 02/05/2019
-ms.openlocfilehash: 267c2209556b66ab3541c9c79c99d7eceb2024da
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9d1f604816dcbd7a84a3692b3cfd24481532789a
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159745"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865350"
 ---
 # <a name="how-to-use-and-debug-assembly-unloadability-in-net-core"></a>Использование и отладка сборок с возможностью выгрузки в .NET Core
 
@@ -30,7 +30,7 @@ ms.locfileid: "78159745"
 
 ### <a name="create-a-collectible-assemblyloadcontext"></a>Создание собираемого AssemblyLoadContext
 
-Необходимо получить класс от <xref:System.Runtime.Loader.AssemblyLoadContext> и перегрузить его метод <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType>. Этот метод разрешает ссылки на все сборки, которые являются зависимостями загруженных в `AssemblyLoadContext` сборок.
+Необходимо получить класс от <xref:System.Runtime.Loader.AssemblyLoadContext> и переопределить его метод <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType>. Этот метод разрешает ссылки на все сборки, которые являются зависимостями загруженных в `AssemblyLoadContext` сборок.
 
 Следующий код является примером простейшего пользовательского `AssemblyLoadContext`:
 

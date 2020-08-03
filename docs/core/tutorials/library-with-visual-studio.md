@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: ef9c62b0378e1064d8cfd90a8c59aed74ea312b2
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: 69259b1d47a8e30945c578db10c6d697c81fa261
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84701569"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164406"
 ---
 # <a name="tutorial-create-a-net-standard-library-using-visual-studio"></a>Учебник. Создание библиотеки .NET Standard с помощью Visual Studio
 
@@ -111,7 +111,7 @@ ms.locfileid: "84701569"
 
    ![Контекстное меню проекта с пунктом "Назначить запускаемым проектом" в Visual Studio](media/library-with-visual-studio/set-startup-project-context-menu.png)
 
-1. Нажмите клавиши <kbd>SHIFT</kbd>+<kbd>F5</kbd>, чтобы скомпилировать и запустить программу без отладки.
+1. Нажмите клавиши <kbd>CTRL</kbd>+<kbd>F5</kbd>, чтобы скомпилировать и запустить программу без отладки.
 
    ![Панель инструментов проекта в Visual Studio c кнопкой отладки](media/library-with-visual-studio/visual-studio-project-toolbar.png)
 

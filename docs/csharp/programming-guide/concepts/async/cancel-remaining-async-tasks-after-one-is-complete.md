@@ -1,13 +1,14 @@
 ---
 title: Отмена оставшихся асинхронных задач после завершения одной из них (C#)
+description: Используйте метод Task.WhenAny вместе с параметром CancellationToken в C#, чтобы отменить все оставшиеся задачи после выполнения одной задачи в этом примере.
 ms.date: 07/20/2015
 ms.assetid: d3cebc74-c392-497b-b1e6-62a262eabe05
-ms.openlocfilehash: e829254c1cd47da16b14aa9c2c90312a97b4b581
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6de60c8faa93752961e3703a042885a71972cc4a
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169978"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925285"
 ---
 # <a name="cancel-remaining-async-tasks-after-one-is-complete-c"></a>Отмена оставшихся асинхронных задач после завершения одной из них (C#)
 Используя метод <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> вместе с <xref:System.Threading.CancellationToken>, можно отменить все оставшиеся задачи после выполнения отдельной задачи. Метод `WhenAny` принимает аргумент, который представляет собой коллекцию задач. Метод запускает все задачи и возвращает одну задачу. Одна задача считается завершенной, когда завершена любая задача в коллекции.  
@@ -18,7 +19,7 @@ ms.locfileid: "79169978"
 > Для выполнения примеров необходимо, чтобы на компьютере были установлены Visual Studio 2012 или более поздняя версия и .NET Framework 4.5 или более поздняя версия.  
   
 ## <a name="downloading-the-example"></a>Загрузка примера  
- Вы можете скачать весь проект Windows Presentation Foundation (WPF) со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea), а затем выполнить необходимые действия.  
+ Скачать полный проект Windows Presentation Foundation (WPF) можно со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea). Затем выполните следующие шаги.  
   
 1. Распакуйте загруженный файл, а затем запустите Visual Studio.  
   
@@ -107,7 +108,7 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
  Обратите внимание на то, что необходимо добавить ссылку для <xref:System.Net.Http>.  
   
- Можно загрузить проект со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
+ Вы можете скачать проект из статьи [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
 ```csharp  
 using System;  
@@ -257,9 +258,9 @@ namespace CancelAfterOneTask
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
 - [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md) (Тонкая настройка асинхронного приложения в C#)
-- [Асинхронное программирование с использованием ключевых слов Async и Await (C#)](./index.md)
-- [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)
+- [Асинхронное программирование с использованием ключевых слов async и await (C#)](./index.md)
+- [Пример использования Async. Настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

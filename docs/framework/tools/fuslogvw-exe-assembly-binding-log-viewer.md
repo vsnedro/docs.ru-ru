@@ -1,5 +1,6 @@
 ---
 title: Fuslogvw.exe (средство просмотра журнала привязки сборок)
+description: Используйте Fuslogvw.exe, средство просмотра журнала привязки сборок. Это средство выводит подробные сведения о привязке сборок, помогающие определить причину, по которой .NET не находит сборку во время выполнения.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - failed assembly binds
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - locating assemblies
 - Assembly Binding Log Viewer
 ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
-ms.openlocfilehash: 2f0018dca6e5add2c5bc531103a4078307a8c8c6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 949f9cf98d5eb4e100be9837be120038f085cc40
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73129846"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167124"
 ---
 # <a name="fuslogvwexe-assembly-binding-log-viewer"></a>Fuslogvw.exe (средство просмотра журнала привязки сборок)
 

@@ -1,17 +1,18 @@
 ---
 title: Изменения среды выполнения и целевой платформы (.NET Framework)
+description: Узнайте о совместимости приложений в .NET Framework и о том, какое влияние на нее оказывают среда выполнения и изменения целевой платформы при переходе на другую версию.
 ms.date: 10/29/2019
 helpviewer_keywords:
 - application compatibility
 - .NET Framework application compatibility
 - .NET Framework changes
 ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
-ms.openlocfilehash: c46f781d495b87a4f24e77935df7c4814c8567ae
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 26f36dd34c6c5ecae8fc5ab373ff60d9e56f8245
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73196697"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475493"
 ---
 # <a name="application-compatibility-in-the-net-framework"></a>Совместимость приложений в .NET Framework
 
@@ -62,7 +63,7 @@ ms.locfileid: "73196697"
 **Transparent (Прозрачный)** \
 Изменение не оказывает особого влияния на разработчика или пользователя приложения. При этом вносить изменения в приложения не требуется.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Версии и зависимости](versions-and-dependencies.md)
 - [Новые возможности](../whats-new/index.md)

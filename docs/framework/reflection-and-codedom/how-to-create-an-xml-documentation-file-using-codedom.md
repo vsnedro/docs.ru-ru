@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Создание XML-файла документации с использованием CodeDOM
+description: В этом подробном примере показано, как создать код, формирующий XML-файл документации, с помощью Code Document Object Model (CodeDOM).
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - XML documentation, creating using CodeDOM
 - Code Document Object Model, generating XML documentation
 ms.assetid: e3b80484-36b9-41dd-9d21-a2f9a36381dc
-ms.openlocfilehash: b9e11a51048733dbfc42ff9f575e18effc80db07
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f905b996910c6cfbc62378cc4cd6bb8c0e0e6fd4
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596250"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865155"
 ---
 # <a name="how-to-create-an-xml-documentation-file-using-codedom"></a>Практическое руководство. Создание XML-файла документации с использованием CodeDOM
 

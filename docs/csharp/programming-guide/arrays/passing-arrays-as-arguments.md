@@ -1,15 +1,16 @@
 ---
 title: Руководство по программированию на C#. Передача массивов в качестве аргументов
+description: В C# массивы можно передавать в качестве аргументов в параметры метода. Поскольку массивы представляют собой ссылочные типы, метод может изменять значения элементов.
 ms.date: 07/05/2018
 helpviewer_keywords:
 - arrays [C#], passing as arguments
 ms.assetid: f3a0971e-c87c-4a1f-8262-bc0a3b712772
-ms.openlocfilehash: 2e53008910a9062ada25680eb4b8e54a225fd226
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 68f174421e56e2cf082fe670f93c4f6627d7c17b
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705695"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86474635"
 ---
 # <a name="passing-arrays-as-arguments-c-programming-guide"></a>Передача массивов в качестве аргументов (руководство по программированию на C#)
 
@@ -55,7 +56,7 @@ ms.locfileid: "75705695"
 
 [!code-csharp[csProgGuideArrays#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#31)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Массивы](index.md)

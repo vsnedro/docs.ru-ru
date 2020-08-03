@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Возобновление работы службы Windows (Visual Basic)
+description: Узнайте, как использовать компонент ServiceController для возобновления работы службы Windows (например, службы администрирования IIS) на локальном компьютере с Visual Basic.
 ms.date: 03/30/2017
 dev_langs:
 - vb
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - pausing Windows Service applications
 ms.assetid: e5d13760-4c83-4b0d-abef-39852677cd7a
 author: ghogen
-ms.openlocfilehash: a10e05b0460608a9e67ee4527adf80be3d47438e
-ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
+ms.openlocfilehash: 2a04e330ea7dc37552053b2a7915909c011727f8
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71053637"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925791"
 ---
 # <a name="how-to-continue-a-windows-service-visual-basic"></a>Практическое руководство. Возобновление выполнения службы Windows (Visual Basic)
 В этом примере для возобновления работы службы администрирования IIS на локальном компьютере используется компонент <xref:System.ServiceProcess.ServiceController>.  

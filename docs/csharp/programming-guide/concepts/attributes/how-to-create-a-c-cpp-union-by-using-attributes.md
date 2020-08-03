@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Создание объединения C/C++ с помощью атрибутов (C#)
+description: Узнайте, как с помощью атрибутов можно настраивать расположение структур в памяти в C#. В этом примере реализуется эквивалент объединения из C/C++.
 ms.date: 07/20/2015
 ms.assetid: 85f35e56-26e0-4d31-9f3a-89bd4005e71a
-ms.openlocfilehash: ff8ce560444581a28b257820573224f89a274cd9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 766a070105441630dfd8fecf7b9f68fa6818fe50
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141572"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925076"
 ---
 # <a name="how-to-create-a-cc-union-by-using-attributes-c"></a>Практическое руководство. Создание объединения C/C++ с помощью атрибутов (C#)
 
@@ -69,7 +70,7 @@ struct TestExplicit
 
 Два целочисленных поля `i1` и `i2` используют те же адреса памяти, что и `lg`. Такое управление расположением структуры полезно при использовании вызова неуправляемого кода.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>

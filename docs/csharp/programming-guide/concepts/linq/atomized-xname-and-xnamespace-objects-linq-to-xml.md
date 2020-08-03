@@ -1,13 +1,14 @@
 ---
 title: Атомарные объекты XName и XNamespace (LINQ to XML) (C#)
+description: Узнайте об атомарных объектах XName и XNamespace, а также о том, как они способствуют повышению производительности при выполнении запросов.
 ms.date: 07/20/2015
 ms.assetid: a5b21433-b49d-415c-b00e-bcbfb0d267d7
-ms.openlocfilehash: bc5066440d87f5485ae9099d7a7f4f5e9e66b4ec
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 305a233adab5c860b5f9509ae25ccc5d633e7957
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70204272"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104284"
 ---
 # <a name="atomized-xname-and-xnamespace-objects-linq-to-xml-c"></a>Атомарные объекты XName и XNamespace (LINQ to XML) (C#)
 Объекты <xref:System.Xml.Linq.XName> и <xref:System.Xml.Linq.XNamespace> являются *атомарными*; иными словами, если они имеют идентичное полное имя, они ссылаются на один и тот же объект. Это способствует повышению производительности при выполнении запросов: при сравнении двух атомарных имен для проверки их равенства соответствующий промежуточный язык должен определить, ссылаются ли они на один и тот же объект. Эта операция используется в промежуточном коде вместо более длительной операции сравнения строк.  

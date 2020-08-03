@@ -2,12 +2,12 @@
 title: Команда dotnet add package
 description: Команду dotnet list package удобно использовать для получения списка ссылок на пакеты для проекта или решения.
 ms.date: 02/14/2020
-ms.openlocfilehash: 12d64600d178ea8cf490a0d6917e67bd3d8c6d21
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 7157e56860936d10aa322854a589ae89e2bc0826
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463666"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87164753"
 ---
 # <a name="dotnet-list-package"></a>dotnet list package
 
@@ -21,6 +21,7 @@ ms.locfileid: "81463666"
 
 ```dotnetcli
 dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
+    [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>]
@@ -78,6 +79,10 @@ Project 'HelloPlugin' has the following package references
 
   Источники NuGet, используемые при поиске более новых версий пакетов. Требует указать параметр `--outdated`.
 
+- **`--deprecated`**
+
+  Отображает нерекомендуемые пакеты.
+
 - **`--framework <FRAMEWORK>`**
 
   Отображает только пакеты для указанной [целевой платформы](../../standard/frameworks.md). Чтобы указать несколько платформ, задайте параметр несколько раз. Например, `--framework netcoreapp2.2 --framework netstandard2.0`.
@@ -88,15 +93,15 @@ Project 'HelloPlugin' has the following package references
 
 - **`--highest-minor`**
 
-  Учитывает только пакеты с соответствующим номером основной версии при поиске более новых версий пакетов. Требует указать параметр `--outdated`.
+  Учитывает только пакеты с соответствующим номером основной версии при поиске более новых версий пакетов. Требует указать параметр `--outdated` или `--deprecated`.
 
 - **`--highest-patch`**
 
-  Учитывает только пакеты с соответствующими номерами основной и дополнительной версий при поиске более новых версий пакетов. Требует указать параметр `--outdated`.
+  Учитывает только пакеты с соответствующими номерами основной и дополнительной версий при поиске более новых версий пакетов. Требует указать параметр `--outdated` или `--deprecated`.
 
 - **`--include-prerelease`**
 
-  Учитывает пакеты с предварительными версиями при поиске более новых версий пакетов. Требует указать параметр `--outdated`.
+  Учитывает пакеты с предварительными версиями при поиске более новых версий пакетов. Требует указать параметр `--outdated` или `--deprecated`.
 
 - **`--include-transitive`**
 
@@ -112,7 +117,7 @@ Project 'HelloPlugin' has the following package references
 
 - **`-s|--source <SOURCE>`**
 
-  Источники NuGet, используемые при поиске более новых версий пакетов. Требует указать параметр `--outdated`.
+  Источники NuGet, используемые при поиске более новых версий пакетов. Требует указать параметр `--outdated` или `--deprecated`.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,13 +1,14 @@
 ---
 title: Отладка деревьев выражений в Visual Studio (C#)
+description: Изучите свойство DebugView в Visual Studio. Узнайте, как использовать это свойство для анализа структуры и содержимого деревьев выражений.
 ms.date: 07/20/2015
 ms.assetid: 1369fa25-0fbd-4b92-98d0-8df79c49c27a
-ms.openlocfilehash: 4c522f2c24cff037ff33d400c8bdfa7500fd4c32
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 5d62a5e6fa5ce537a1ea8b316e7322eb976200c0
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614384"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105649"
 ---
 # <a name="debugging-expression-trees-in-visual-studio-c"></a>Отладка деревьев выражений в Visual Studio (C#)
 При отладке приложений можно анализировать структуру и содержимое деревьев выражений. Чтобы получить краткий обзор структуры дерева выражения, вы можете использовать свойство `DebugView`, которое представляет деревья выражений, [используя специальный синтаксис](debugview-syntax.md). (Обратите внимание, что `DebugView` доступен только в режиме отладки.)  

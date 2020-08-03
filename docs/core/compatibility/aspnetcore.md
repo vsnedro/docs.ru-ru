@@ -2,15 +2,15 @@
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
 description: В этой статье приведен список критических изменений в ASP.NET Core.
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: ca9e615e88964e1c37e9c0b721bca8c34bf671ac
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 7a07df5194d5dc220b61d55a4457d90881ac9ddf
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174397"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86474830"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
@@ -26,8 +26,10 @@ ASP.NET Core предоставляет функции разработки ве
 - [Авторизация. Перегрузка AddAuthorization перемещена в другую сборку](#authorization-addauthorization-overload-moved-to-different-assembly)
 - [Авторизация. IAllowAnonymous удален из AuthorizationFilterContext.Filters](#authorization-iallowanonymous-removed-from-authorizationfiltercontextfilters)
 - [Авторизация. Для реализаций IAuthorizationPolicyProvider требуется новый метод](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
+- [Авторизация. Для маршрутизации конечных точек используется ресурс HttpContext](#authorization-resource-in-endpoint-routing-is-httpcontext)
 - [Общие сведения Пакеты интеграции Azure с префиксом Майкрософт удалены](#azure-microsoft-prefixed-azure-integration-packages-removed)
 - [Blazor. Незначащие пробелы удалены из компонентов во время компиляции](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
+- [Blazor. Изменена целевая платформа для пакетов NuGet](#blazor-target-framework-of-nuget-packages-changed)
 - [Кэширование. Удалено свойство CompactOnMemoryPressure](#caching-compactonmemorypressure-property-removed)
 - [Кэширование. Microsoft.Extensions.Caching.SqlServer использует новый пакет SqlClient](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Кэширование. Типы ResponseCaching pubternal теперь стали внутренними](#caching-responsecaching-pubternal-types-changed-to-internal)
@@ -58,10 +60,12 @@ ASP.NET Core предоставляет функции разработки ве
 - [Kestrel. Изменены поддерживаемые версии протокола TLS по умолчанию](#kestrel-default-supported-tls-protocol-versions-changed)
 - [Kestrel. Удалена пустая сборка HTTPS](#kestrel-empty-https-assembly-removed)
 - [Kestrel. HTTP/2 по TLS отключен в несовместимых версиях Windows](#kestrel-http2-disabled-over-tls-on-incompatible-windows-versions)
+- [Kestrel. Транспорт Libuv помечен как устаревший](#kestrel-libuv-transport-marked-as-obsolete)
 - [Kestrel. Заголовки трейлеров запросов перемещены в новую коллекцию](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel. Внесены изменения в слой абстракции транспорта](#kestrel-transport-abstractions-removed-and-made-public)
 - [Локализация. Интерфейсы API отмечены как устаревшие](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
 - [Локализация. Удалены API-интерфейсы Pubternal](#localization-pubternal-apis-removed)
+- [Локализация. Из ПО промежуточного слоя локализации запроса удален устаревший конструктор](#localization-obsolete-constructor-removed-in-request-localization-middleware)
 - [Локализация. Удален класс ResourceManagerWithCultureStringLocalizer и элемент интерфейса WithCulture](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Ведение журнала. Класс DebugLogger стал внутренним](#logging-debuglogger-class-made-internal)
 - [MVC. Удален асинхронный суффикс действия контроллера](#mvc-async-suffix-trimmed-from-controller-action-names)
@@ -70,6 +74,8 @@ ASP.NET Core предоставляет функции разработки ве
 - [MVC. Типы теперь стали внутренними](#mvc-pubternal-types-changed-to-internal)
 - [MVC. Удалена оболочка совместимости веб-интерфейса API](#mvc-web-api-compatibility-shim-removed)
 - [Razor. Компиляция среды выполнения перемещена в пакет](#razor-runtime-compilation-moved-to-a-package)
+- [Безопасность. Удалена кодировка имен файлов cookie](#security-cookie-name-encoding-removed)
+- [Безопасность. Обновлены версии пакета NuGet IdentityModel](#security-identitymodel-nuget-package-versions-updated)
 - [Состояние сеанса. Удалены устаревшие API](#session-state-obsolete-apis-removed)
 - [Общая платформа. Из Microsoft.AspNetCore.App удалена сборка](#shared-framework-assemblies-removed-from-microsoftaspnetcoreapp)
 - [Общая платформа. Удален Microsoft.AspNetCore.All](#shared-framework-removed-microsoftaspnetcoreall)
@@ -88,11 +94,19 @@ ASP.NET Core предоставляет функции разработки ве
 
 ## <a name="aspnet-core-50"></a>ASP.NET Core 5.0
 
+[!INCLUDE[Authorization: Resource in endpoint routing is HttpContext](~/includes/core-changes/aspnetcore/5.0/authorization-resource-in-endpoint-routing.md)]
+
+***
+
 [!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
 
 ***
 
 [!INCLUDE[Blazor: Insignificant whitespace trimmed from components at compile time](~/includes/core-changes/aspnetcore/5.0/blazor-components-trim-insignificant-whitespace.md)]
+
+***
+
+[!INCLUDE[Blazor: Target framework of NuGet packages changed](~/includes/core-changes/aspnetcore/5.0/blazor-packages-target-framework-changed.md)]
 
 ***
 
@@ -127,11 +141,27 @@ ASP.NET Core предоставляет функции разработки ве
 
 ***
 
+[!INCLUDE[Kestrel: Libuv transport marked as obsolete](~/includes/core-changes/aspnetcore/5.0/kestrel-libuv-transport-obsolete.md)]
+
+***
+
 [!INCLUDE[Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
 
 ***
 
+[!INCLUDE[Localization: Obsolete constructor removed in request localization middleware](~/includes/core-changes/aspnetcore/5.0/localization-requestlocalizationmiddleware-constructor-removed.md)]
+
+***
+
 [!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
+
+***
+
+[!INCLUDE[Security: Cookie name encoding removed](~/includes/core-changes/aspnetcore/5.0/security-cookie-name-encoding-removed.md)]
+
+***
+
+[!INCLUDE[Security: IdentityModel NuGet package versions updated](~/includes/core-changes/aspnetcore/5.0/security-identitymodel-nuget-package-versions-updated.md)]
 
 ***
 

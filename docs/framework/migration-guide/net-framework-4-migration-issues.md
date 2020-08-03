@@ -1,16 +1,17 @@
 ---
 title: Проблемы при переходе на .NET Framework 4
+description: Узнайте о проблемах при переходе между .NET Framework 3.5 с пакетом обновления 1 (SP1) и .NET Framework 4, в том числе об исправлениях и изменениях для соответствия стандартам и обеспечения безопасности.
 ms.date: 05/02/2017
 helpviewer_keywords:
 - .NET Framework 4, migration
 - application compatibility
 ms.assetid: df478548-8c05-4de2-8ba7-adcdbe1c2a60
-ms.openlocfilehash: 8e83859733f021afbe074a7b4818b155d74efdff
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: bbb9a3803986c922fd1ef04a87cd1e230fc3d623
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420465"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475285"
 ---
 # <a name="net-framework-4-migration-issues"></a>Проблемы при переходе на .NET Framework 4
 

@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Сравнение содержимого двух папок (LINQ) (C#)
+description: В этом примере демонстрируются три способа сравнения двух списков файлов с помощью запросов LINQ в C#. Адаптируйте эти способы для сравнения последовательностей объектов любого типа.
 ms.date: 07/20/2015
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
-ms.openlocfilehash: 44dc97d6d48bed5e8b4d0376838e4dada2e8300c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3cdac57d3d746aa2290c51d1263a7d42dc3463e0
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169406"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105337"
 ---
 # <a name="how-to-compare-the-contents-of-two-folders-linq-c"></a>Практическое руководство. Сравнение содержимого двух папок (LINQ) (C#)
 В этом примере демонстрируются три способа сравнения двух списков файлов:  
@@ -128,7 +129,7 @@ namespace QueryCompareTwoDirs
 ## <a name="compiling-the-code"></a>Компиляция кода  
  Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to Objects (C#)](./linq-to-objects.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

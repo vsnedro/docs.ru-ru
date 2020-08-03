@@ -1,21 +1,22 @@
 ---
 title: Clrver.exe (средство проверки версий среды CLR)
+description: Изучите Clrver.exe, средство проверки версий среды CLR. Это средство выводит отчет обо всех установленных на компьютере версиях среды CLR.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Clrver.exe
 - CLR Version tool
 ms.assetid: cbc2ee86-bdc8-4a65-a8f1-ba23bce3a699
-ms.openlocfilehash: bfc612ef5455e1b4a03d15fd99a8a1873d2c7c08
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e914034819418df00438c454e209e6c86779ba3c
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75715801"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167275"
 ---
 # <a name="clrverexe-clr-version-tool"></a>Clrver.exe (средство проверки версий среды CLR)
 Программа версий среды CLR (Clrver.exe) выводит отчет обо всех установленных версиях среды CLR на компьютере.  
   
- Это средство автоматически устанавливается с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
   
  В командной строке введите следующее.  
   
@@ -27,13 +28,13 @@ clrver [option]
   
 ## <a name="options"></a>Параметры  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |------------|-----------------|  
 |`-all`|Отображает все процессы на компьютере, которые используют среду CLR.|  
 |*pid*|Отображает версии среды CLR, используемой процессом с указанным идентификатором процесса (PID).|  
 |`-?`|Отображает синтаксис команд и параметров программы.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Если программа Clrver.exe вызывается без параметров, отображаются все установленные версии среды CLR. Если указан PID для другого пользователя, для получения сведений о версии необходимо иметь права администратора.  
   
 > [!NOTE]
@@ -54,7 +55,7 @@ clrver [option]
   
  `Clrver -all`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Инструменты](index.md)
 - [Командные строки](developer-command-prompt-for-vs.md)

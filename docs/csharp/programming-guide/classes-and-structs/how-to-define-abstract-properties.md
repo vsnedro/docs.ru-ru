@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Определение абстрактных свойств (руководство по программированию на C#)
+description: Узнайте, как определять абстрактные свойства в C#. Объявление абстрактного свойства означает, что класс поддерживает свойство. Методы доступа реализуются в производных классах.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - properties [C#], abstract
 - abstract properties [C#]
 ms.assetid: 672a90eb-47b9-4ae0-9914-af53852fddcb
-ms.openlocfilehash: c46f36133b68a550a17cf882844fd2481eee8851
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4db71721495857c634e8090b986704d8a592b4e2
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705617"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864401"
 ---
 # <a name="how-to-define-abstract-properties-c-programming-guide"></a>Практическое руководство. Определение абстрактных свойств (руководство по программированию на C#)
 В следующем примере показано, как определять [абстрактные](../../language-reference/keywords/abstract.md) свойства. В объявлении абстрактного свойства не предоставляется реализация методов доступа к свойству. В нем объявляется, что класс поддерживает свойства, однако реализация методов доступа к ним передается в производные классы. В следующем примере показано, как реализовать абстрактные свойства, наследуемые от базового класса.  
@@ -52,7 +53,7 @@ ms.locfileid: "75705617"
   
  [!code-csharp[csProgGuideInheritance#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#3)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Классы и структуры](./index.md)

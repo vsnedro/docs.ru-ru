@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Подсчет вхождений слова в строке (LINQ) (C#)
+description: В этом примере показано, как с помощью запроса LINQ в C# определить, сколько раз то или иное слово встречается в строке. В нем используется метод Split для создания массива символов.
 ms.date: 07/20/2015
 ms.assetid: f8e6f546-7c14-4aa1-8a75-e8d09f3b8ccd
-ms.openlocfilehash: 9c3ac2e0d44d52e437586a4d105a022f75c1dc54
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1621e776510e366aa779f1d45468be34b3dec373
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169329"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103371"
 ---
 # <a name="how-to-count-occurrences-of-a-word-in-a-string-linq-c"></a>Практическое руководство. Подсчет вхождений слова в строке (LINQ) (C#)
 В этом примере показано, как с помощью запроса LINQ определить, сколько раз то или иное слово встречается в строке. Обратите внимание на то, что для этого сначала вызывается метод <xref:System.String.Split%2A>, который создает массив слов. Использование метода <xref:System.String.Split%2A> связано с определенным снижением производительности. Если для строки выполняется только подсчет слов, рекомендуется вместо него использовать метод <xref:System.Text.RegularExpressions.Regex.Matches%2A> или <xref:System.String.IndexOf%2A>. Если же производительность не критична или вы уже разбили предложение, чтобы выполнить с ним другие типы запросов, имеет смысл подсчитать слова или фразы с помощью LINQ.  
@@ -57,6 +58,6 @@ class CountWords
 ## <a name="compiling-the-code"></a>Компиляция кода  
  Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (C#)](./linq-and-strings.md)

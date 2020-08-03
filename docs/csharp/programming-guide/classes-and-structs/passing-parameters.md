@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Передача параметров
+description: В C# аргументы могут передаваться параметрам по значению или по ссылке. Изменения в аргументе, переданном по ссылке, сохраняются. Для передачи параметра по ссылке используйте ключевые слова ref или out.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - parameters [C#], passing
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - methods [C#], passing parameters
 - C# language, method parameters
 ms.assetid: a5c3003f-7441-4710-b8b1-c79de77e0b77
-ms.openlocfilehash: 60ac7a8d982e7788f07debce114896859385c8e2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 875a42aacf3d7aa4124684aefafdcb07ff4c87d6
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705474"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864739"
 ---
 # <a name="passing-parameters-c-programming-guide"></a>Передача параметров (Руководство по программированию в C#)
 В C# аргументы могут передаваться параметрам либо по значению, либо по ссылке. Передача по ссылке позволяет изменять и сохранять измененные значения параметров членов функций, методов, свойств, индексаторов, операторов и конструкторов в вызывающей среде. Чтобы передать параметр по ссылке, намереваясь изменить значение, используйте ключевое слово `ref` или `out`. Чтобы передать по ссылке, намереваясь предотвратить копирование, но не изменение значения, используйте модификатор `in`. Для простоты в этих примерах используется только ключевое слово `ref`. Дополнительные сведения о различиях между ключевыми словами `in`, `ref` и `out` см. в разделах [in](../../language-reference/keywords/in-parameter-modifier.md), [ref](../../language-reference/keywords/ref.md), [out](../../language-reference/keywords/out-parameter-modifier.md).  
@@ -32,7 +33,7 @@ ms.locfileid: "75705474"
 
 Дополнительные сведения см. в разделе [Список аргументов](~/_csharplang/spec/expressions.md#argument-lists) в [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction). Спецификация языка является предписывающим источником информации о синтаксисе и использовании языка C#.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Методы](./methods.md)

@@ -1,13 +1,14 @@
 ---
 title: Пример отложенного выполнения (C#)
+description: Узнайте, как отложенное выполнение и отложенное вычисление влияют на запросы LINQ to XML в C#.
 ms.date: 07/20/2015
 ms.assetid: 50f4fbac-81fe-4f26-aedf-506e21419b19
-ms.openlocfilehash: 0816594ad016f19af4c97198160b4bafb9b4b8b4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 65ba4cc150f2fc9d8f44aee352987ea0eeaab0a5
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70204131"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103960"
 ---
 # <a name="deferred-execution-example-c"></a>Пример отложенного выполнения (C#)
 В данном разделе показано влияние отложенного выполнения и отложенного вычисления на запросы LINQ to XML.  
@@ -63,6 +64,6 @@ Main: str GHI
   
 - [Пример связывания запросов (C#)](./chaining-queries-example.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Учебник. Объединение запросов в цепочки (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

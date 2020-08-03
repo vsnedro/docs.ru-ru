@@ -2,12 +2,12 @@
 title: Реализация шлюзов API с помощью Ocelot
 description: Узнайте, как реализовывать шлюзы API с помощью Ocelot и как использовать Ocelot в среде на базе контейнеров.
 ms.date: 03/02/2020
-ms.openlocfilehash: 28b9ca22d232baf3545d71b876cecf72fea05c92
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f103c1e394a3f829489b61fd17af749798b02f70
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78846950"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864102"
 ---
 # <a name="implement-api-gateways-with-ocelot"></a>Реализация шлюзов API с помощью Ocelot
 
@@ -84,7 +84,7 @@ public async Task<IActionResult> GetItemById(int id)
 
 HTTP-запрос в итоге запустит такой код C#, который получает доступ к базе данных микрослужбы и выполняет какое-либо необходимое действие.
 
-Если говорить об URL-адресе микрослужбы, при развертывании контейнеров на локальном компьютере разработки (локальном узле Docker) каждый контейнер микрослужбы всегда имеет внутренний порт (обычно это порт 80), указанный в файле Dockerfile, как показано ниже.
+Если говорить об URL-адресе микрослужбы, при развертывании контейнеров на локальном компьютере разработки (локальном узле Docker) каждый контейнер микрослужбы всегда имеет внутренний порт (обычно это порт 80), указанный в файле Dockerfile, как показано ниже.
 
 ```Dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base

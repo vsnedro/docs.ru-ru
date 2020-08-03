@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Подключение делегата с помощью отражения
+description: Узнайте, как подключить делегата с помощью отражения в .NET. Подключите существующий метод к событию посредством получения всех необходимых типов через отражение.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - reflection, adding event-handler delegates
 - delegates [.NET Framework], adding event handlers with reflection
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
-ms.openlocfilehash: d748d9f8bdd0b4d831880548d4aceb1c77a0b0c4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b5d93efd278a53a4e6382f2321918e58ead55899
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180504"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865090"
 ---
 # <a name="how-to-hook-up-a-delegate-using-reflection"></a>Практическое руководство. Подключение делегата с помощью отражения
 При использовании отражения для загрузки и запуска сборок невозможно использовать функциональные возможности языка, такие как оператор C# `+=` или [оператор AddHandler](../../visual-basic/language-reference/statements/addhandler-statement.md) в Visual Basic. В следующих процедурах показано, как подключить существующий метод к событию посредством получения всех необходимых типов через отражение и как создать динамический метод с помощью порожденного отражения и подключить этот метод к событию.  

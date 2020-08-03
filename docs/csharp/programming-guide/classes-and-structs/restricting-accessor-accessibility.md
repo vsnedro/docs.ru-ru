@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Ограничение доступности методов доступа
+description: Методы доступа get и set свойства в C# по умолчанию имеют такие же уровни видимости или доступа, что и свойство, которому они принадлежат. Доступ можно ограничить.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - read-only properties [C#]
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - asymmetric accessor accessibility [C#]
 - indexers [C#], read-only
 ms.assetid: 6e655798-e112-4301-a680-6310a6e012e1
-ms.openlocfilehash: a332fef814f0c81914eb7b8c308de68f719fbaac
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 18fd1d58dc6125b5180118b2e0d3edc885a4b971
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75714696"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86863972"
 ---
 # <a name="restricting-accessor-accessibility-c-programming-guide"></a>Ограничение доступности методов доступа (Руководство по программированию на C#)
 Выражения [get](../../language-reference/keywords/get.md) и [set](../../language-reference/keywords/set.md) свойства или индексатора называются *методами доступа*. По умолчанию они имеют такие же уровни видимости или доступа, что и свойство или индексатор, которым они принадлежат. Дополнительные сведения см. в разделе [Уровни доступа](../../language-reference/keywords/accessibility-levels.md). Тем не менее в некоторых случаях рекомендуется ограничить уровни доступа для этих методов. Как правило, в этом случае ограничивается уровень доступа для метода `set`, тогда как метод `get` остается общедоступным. Пример:  
@@ -63,7 +64,7 @@ ms.locfileid: "75714696"
   
  `Name and ID in the derived class: John, John123`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Свойства](./properties.md)

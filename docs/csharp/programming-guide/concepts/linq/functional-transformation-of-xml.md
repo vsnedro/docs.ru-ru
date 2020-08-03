@@ -1,13 +1,14 @@
 ---
 title: Функциональное преобразование XML (C#)
+description: Узнайте, как изменить XML-документы с помощью чисто функционального преобразования в C#, и поймите его отличия от процедурного подхода.
 ms.date: 07/20/2015
 ms.assetid: 0ccb9251-38d7-44e3-9b84-1b5fe25e4b59
-ms.openlocfilehash: 83ecd97f9319027dc50f346abf7a9888b5c23862
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4ccc6859f3663eb3760c7faeaf115a5e88a2278a
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75336798"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103672"
 ---
 # <a name="functional-transformation-of-xml-c"></a>Функциональное преобразование XML (C#)
 В этом разделе описан подход с использованием чисто функционального преобразования для изменения XML-документов и производится сравнение его с процедурным подходом.  

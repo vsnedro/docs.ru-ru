@@ -1,5 +1,6 @@
 ---
 title: Aximp.exe (программа импорта элементов ActiveX форм Windows)
+description: Ознакомьтесь с Aximp.exe, программой импорта элементов ActiveX Windows Forms. Это средство преобразует определения типов в библиотеке типов COM для элемента управления ActiveX в Windows Forms.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - ActiveX controls, hosting in Windows Forms
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Aximp.exe
 - Windows Forms ActiveX Control Importer
 ms.assetid: 482c0d83-7144-4497-b626-87d2351b78d0
-ms.openlocfilehash: 6d58d1df81780c3033eab7c1ac3e860adeb374b1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d4fd6762195078963b43392178996a61f90feb94
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180431"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167342"
 ---
 # <a name="aximpexe-windows-forms-activex-control-importer"></a>Aximp.exe (программа импорта элементов ActiveX форм Windows)
 Программа для импорта элементов управления ActiveX преобразует определения типов в библиотеке типов COM для элемента управления ActiveX в элемент управления Windows Forms.  
@@ -22,7 +23,7 @@ ms.locfileid: "79180431"
   
  Чтобы разместить элемент управления ActiveX, необходимо создать элемент управления-оболочку, производный от <xref:System.Windows.Forms.AxHost>. Этот элемент управления-оболочка содержит экземпляр базового элемента управления ActiveX. Оболочка может взаимодействовать с элементом управления ActiveX, но выглядит как элемент управления Windows Forms. Созданный элемент управления размещает элемент управления ActiveX и представляет его свойства, методы и события как свои собственные.  
   
- Это средство автоматически устанавливается с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
   
  В командной строке введите следующее.  
   
@@ -34,9 +35,9 @@ aximp [options]{file.dll | file.ocx}
   
 ## <a name="remarks"></a>Remarks  
   
-|Аргумент|Описание:|  
+|Аргумент|Описание|  
 |--------------|-----------------|  
-|*файл*|Имя исходного файла, содержащего преобразуемый элемент управления ActiveX. Аргумент файла должен иметь расширение DLL или OCX.|  
+|*file*|Имя исходного файла, содержащего преобразуемый элемент управления ActiveX. Аргумент файла должен иметь расширение DLL или OCX.|  
   
 |Параметр|Описание:|  
 |------------|-----------------|  
@@ -57,7 +58,7 @@ aximp [options]{file.dll | file.ocx}
   
  Прокси среды CLR для типов COM: *progid*.dll  
   
- Прокси Windows Forms для элементов управления ActiveX (где Ax означает ActiveX): Ax*progid*.dll  
+ Прокси Windows Forms для элементов управления ActiveX (Ax обозначает ActiveX): Ax*progid*.dll  
   
 > [!NOTE]
 > Если имя члена элемента управления ActiveX совпадает с именем, заданным в .NET Framework, к имени члена при создании производного класса AxHost программа Aximp.exe добавит префикс "Ctl". Например, если элемент управления ActiveX содержит член с именем "Layout", в производном классе "AxHost" он будет переименован в "CtlLayout", так как в .NET Framework задано событие "Layout".  
@@ -77,7 +78,7 @@ aximp [options]{file.dll | file.ocx}
 aximp c:\systemroot\system32\msdxm.ocx  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Инструменты](index.md)
 - [Ildasm.exe (дизассемблер IL)](ildasm-exe-il-disassembler.md)

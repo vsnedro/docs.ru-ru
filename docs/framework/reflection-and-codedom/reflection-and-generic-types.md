@@ -1,5 +1,6 @@
 ---
 title: Отражение и универсальные типы
+description: Начните работать с отражением и универсальными типами в .NET. В отличие от обычного типа универсальный тип связан с набором параметров типа или аргументов типа.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - types, generic
 - type parameters
 ms.assetid: f7180fc5-dd41-42d4-8a8e-1b34288e06de
-ms.openlocfilehash: 4894b5cc64dca431c8d05b638847dd6cb7017bde
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dd0dda92dc4473e05c59072973076cbb06bcaa06
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180493"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865298"
 ---
 # <a name="reflection-and-generic-types"></a>Отражение и универсальные типы
 С точки зрения отражения различие между универсальным типом и обычным заключается в том, что с универсальным типом связан набор параметров типа (если это определение универсального типа) или аргументов типа (если это сконструированный тип). Универсальный метод отличается от обычного тем же.  

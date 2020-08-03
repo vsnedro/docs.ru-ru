@@ -9,15 +9,15 @@ helpviewer_keywords:
 - assemblies [C#], compiling
 - -target compiler options [C#]
 ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
-ms.openlocfilehash: ea5481810e629d911c4d5aba62e60c98d0783f34
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: 80cec001b27000e71b74f380a0f33e30602c01af
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81644359"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86473914"
 ---
 # <a name="-target-c-compiler-options"></a>-target (параметры компилятора C#)
-Параметр компилятора **-target** можно задать в одной из четырех форм:  
+Параметр компилятора **-target** можно задать в одной из следующих форм:  
   
  [/target:appcontainerexe](./target-appcontainerexe-compiler-option.md)  
  Создание EXE-файла для приложений Магазина Windows 8.x.  

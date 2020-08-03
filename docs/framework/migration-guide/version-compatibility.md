@@ -1,5 +1,6 @@
 ---
 title: Совместимость версий в .NET Framework
+description: Узнайте о совместимости между версиями .NET Framework, включая обратную совместимость и параллельное выполнение.
 ms.custom: updateeachrelease
 ms.date: 04/02/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - .NET Framework, compatibility with earlier versions
 - .NET Framework versions, compatibility
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
-ms.openlocfilehash: c3bc92b89a46fc947b4d7e67644930374eeab2e4
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: dfdc5a977b69af8aa3a0d33ed8b833745cf6bf11
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82796006"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475506"
 ---
 # <a name="version-compatibility"></a>Совместимость версий
 
@@ -59,7 +60,7 @@ ms.locfileid: "82796006"
 
 - Если вы перекомпилируете существующий исходный код для запуска в платформе .NET Framework 4.5 (или ее доработанных выпусках) или разрабатываете новую версию приложения или компонента для запуска в .NET Framework 4.5 или ее доработанных выпусках на основе существующей базы исходного кода, просмотрите раздел [Что устарело в библиотеке классов](../whats-new/whats-obsolete.md) на предмет устаревших типов и членов и используйте описанный обходной путь. (Скомпилированный ранее код будет продолжать работать с типами и членами, которые отмечены как устаревшие.)
 
-- Если обнаруживается, что изменение в .NET Framework 4.5 нарушило работу приложения, обратитесь к разделу [Схема параметров среды выполнения](../configure-apps/file-schema/runtime/index.md) и, в частности, к подразделу [Элемент \<AppContextSwitchOverrides>](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md), чтобы определить, можно ли использовать параметры среды выполнения в файле конфигурации приложения для восстановления предыдущего поведения.
+- Если обнаруживается, что изменение в .NET Framework 4.5 нарушило работу приложения, обратитесь к разделу [Схема параметров среды выполнения](../configure-apps/file-schema/runtime/index.md) и, в частности, к подразделу [Элемент \<AppContextSwitchOverrides>](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md), чтобы определить, можно ли использовать параметры среды выполнения в файле конфигурации приложения для восстановления предыдущего поведения.
 
 - Если у вас возникла незадокументированная проблема, откройте проблему на [веб-сайте сообщества разработчиков .NET](https://developercommunity.visualstudio.com/spaces/61/index.html) или в [репозитории GitHub Microsoft/dotnet](https://github.com/microsoft/dotnet/issues).
 

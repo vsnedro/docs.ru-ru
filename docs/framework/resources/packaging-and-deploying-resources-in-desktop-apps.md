@@ -1,5 +1,6 @@
 ---
 title: Упаковка и развертывание ресурсов в приложениях .NET
+description: Упаковывайте и развертывайте ресурсы в приложениях .NET с помощью основной сборки (центра) и вспомогательных сборок (лучей). Луч содержит локализованные ресурсы, но не код.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - localizing resources
 - neutral cultures
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
-ms.openlocfilehash: d64e3b5201e34541fdafa5724b0c7e8c3f6c0c0d
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 7b06ca4444b75f0a7002323b32732dd4f855f692
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81243054"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87166192"
 ---
 # <a name="packaging-and-deploying-resources-in-net-apps"></a>Упаковка и развертывание ресурсов в приложениях .NET
 

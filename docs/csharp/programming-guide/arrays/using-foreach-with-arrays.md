@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Использование оператора foreach с массивами
+description: Оператор foreach в C# выполняет итерацию по элементам массива. Для одномерных массивов оператор foreach обрабатывает элементы в порядке возрастания индекса.
 ms.date: 05/23/2018
 helpviewer_keywords:
 - arrays [C#], foreach
 - foreach statement [C#], using with arrays
 ms.assetid: 5f2da2a9-1f56-4de5-94cc-e07f4f7a0244
-ms.openlocfilehash: bb121b0f5d990ef6e596b34a45606e2abde6811a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d924a3ef3351cbb30b809a1542f35314ee721852
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705682"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86474544"
 ---
 # <a name="using-foreach-with-arrays-c-programming-guide"></a>Использование оператора foreach с массивами (Руководство по программированию на C#)
 
@@ -26,7 +27,7 @@ ms.locfileid: "75705682"
 
 Тем не менее для управления порядком обрабатываемых элементов в многомерных массивах можно использовать вложенный цикл [for](../../language-reference/keywords/for.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Array>
 - [Руководство по программированию на C#](../index.md)

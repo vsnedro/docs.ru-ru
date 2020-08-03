@@ -1,5 +1,6 @@
 ---
 title: Устранение рисков. Устранение рисков. Поддержка сенсорного управления и пера на основе указателя
+description: Узнайте о последствиях включения дополнительного стека сенсорного управления и пера WPF для приложений WPF, предназначенных для .NET Framework 4.7.
 ms.date: 04/07/2017
 helpviewer_keywords:
 - retargeting changes
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - WPF retargeting changes
 - WPF pointer-based touch and stylus stack
 ms.assetid: f99126b5-c396-48f9-8233-8f36b4c9e717
-ms.openlocfilehash: 023c38f66611bd0022699d3f62d90c3923585012
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d0c0effeaa727c615dddc3b92cdd34aafde65705
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "77094479"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475428"
 ---
-# <a name="mitigation-pointer-based-touch-and-stylus-support"></a>Устранение рисков. Устранение рисков. Поддержка сенсорного управления и пера на основе указателя
+# <a name="mitigation-pointer-based-touch-and-stylus-support"></a>Устранение рисков. Поддержка сенсорного управления и пера на основе указателя
 
 В приложениях WPF, предназначенных для .NET Framework 4.7 и выполняемых в Windows, начиная с версии Windows 10 Creators Update, можно включить дополнительный стек сенсорного управления и пера WPF на основе `WM_POINTER`.
 
@@ -52,6 +53,6 @@ ms.locfileid: "77094479"
 
 Удаление этой записи или присвоение ей значения `false` отключает данный дополнительный стек.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Совместимость приложений](application-compatibility.md)

@@ -1,13 +1,14 @@
 ---
 title: Выполнение запроса к ArrayList с помощью LINQ (C#)
+description: В этом примере выполнение запроса к ArrayList в C# осуществляется с помощью LINQ. Необходимо объявить тип переменной диапазона, чтобы отразить тип объектов в коллекции.
 ms.date: 07/20/2015
 ms.assetid: 2bfb471c-6e9a-4e60-bd83-4a1778abde11
-ms.openlocfilehash: fa185ba3793b628b0d65e1f513a70ec68f6f2425
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5c251e17de062a4578f06fc1a40ea3ede9f3ab67
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168938"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104609"
 ---
 # <a name="how-to-query-an-arraylist-with-linq-c"></a>Выполнение запроса к ArrayList с помощью LINQ (C#)
 При использовании LINQ для запросов к неуниверсальным коллекциям <xref:System.Collections.IEnumerable>, таким как <xref:System.Collections.ArrayList>, необходимо явно объявить тип переменной диапазона, чтобы отразить конкретный тип объектов в коллекции. Например, если у вас есть список <xref:System.Collections.ArrayList> объектов `Student`, [предложение from](../../../language-reference/keywords/from-clause.md) должно иметь следующий вид:  
@@ -83,6 +84,6 @@ namespace NonGenericLINQ
 */  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to Objects (C#)](./linq-to-objects.md)

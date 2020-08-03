@@ -1,5 +1,6 @@
 ---
 title: Учебник. Создание приложения службы Windows
+description: Из этого учебника вы узнаете, как создать в Visual Studio приложение службы Windows, которое записывает сообщения в журнал событий. Добавляйте компоненты, задавайте состояние, добавляйте установщики и выполняйте другие действия.
 ms.date: 03/27/2019
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Windows service applications, creating
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: ghogen
-ms.openlocfilehash: e5ff40d8413acf64e7a8a129a7b268f58780d591
-ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
+ms.openlocfilehash: 487a974af2280a02b83fe685324c9464df705585
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71053481"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925635"
 ---
 # <a name="tutorial-create-a-windows-service-app"></a>Учебник. Создание приложения службы Windows
 

@@ -1,17 +1,18 @@
 ---
 title: Практическое руководство. Использование именованных и необязательных аргументов в программировании приложений Office (руководство по программированию на C#)
+description: Узнайте, как использовать именованные и необязательные аргументы для упрощения доступа к COM-интерфейсам, таким как API-интерфейсы автоматизации Microsoft Office.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - named and optional arguments [C#], Office programming
 - optional arguments [C#], Office programming
 - named arguments [C#], Office programming
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
-ms.openlocfilehash: 36b5c8b49404606c8240d24953c3677d5612d30e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7e24331d37e8fdbe2bc66a2d9f73a5f6a7242af9
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75714875"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864349"
 ---
 # <a name="how-to-use-named-and-optional-arguments-in-office-programming-c-programming-guide"></a>Практическое руководство. Использование именованных и необязательных аргументов в программировании приложений Office (руководство по программированию на C#)
 
@@ -25,7 +26,7 @@ ms.locfileid: "75714875"
 
 ## <a name="to-create-a-new-console-application"></a>Создание нового проекта консольного приложения
 
-1. Запустите среду Visual Studio.
+1. Запустите Visual Studio.
 
 2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
 
@@ -107,6 +108,6 @@ ms.locfileid: "75714875"
 
  [!code-csharp[csProgGuideNamedAndOptional#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/wordprogram.cs#12)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Именованные и необязательные аргументы](./named-and-optional-arguments.md)

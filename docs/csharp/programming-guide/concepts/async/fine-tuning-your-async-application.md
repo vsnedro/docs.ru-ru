@@ -1,13 +1,14 @@
 ---
 title: Настройка асинхронного приложения (C#)
+description: В этих примерах C# для точной настройки асинхронных приложений используются CancellationToken и важные методы Task, такие как Task.WhenAll и Task.WhenAny.
 ms.date: 07/20/2015
 ms.assetid: 97696eb9-81fc-4940-9655-84daa8eb4d5c
-ms.openlocfilehash: cff50e62ff62b70e97e7ea6e03714326d774e407
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 46457f889a78932e306d2bd21dca666625d744eb
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73970240"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925323"
 ---
 # <a name="fine-tuning-your-async-application-c"></a>Настройка асинхронного приложения (C#)
 Методы и свойства, доступные при использовании типа <xref:System.Threading.Tasks.Task>, позволяют сделать приложение более точным и гибким. В подразделах этого раздела приводятся примеры, в которых используются <xref:System.Threading.CancellationToken> и важные методы `Task`, такие как <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>.  
@@ -41,6 +42,6 @@ ms.locfileid: "73970240"
   
  Скачать полный проект Windows Presentation Foundation (WPF) можно со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Асинхронное программирование с использованием ключевых слов Async и Await (C#)](./index.md)
+- [Асинхронное программирование с использованием ключевых слов async и await (C#)](./index.md)

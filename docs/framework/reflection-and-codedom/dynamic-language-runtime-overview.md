@@ -1,5 +1,6 @@
 ---
 title: Общие сведения о среде DLR | Документация Майкрософт
+description: Ознакомьтесь с обзором среды DLR в .NET. Среда DLR представляет собой среду выполнения, которая добавляет набор служб для динамических языков в среду CLR.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - dynamic language runtime
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - DLR
 - IronRuby
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
-ms.openlocfilehash: a38ed15769d1186ef78733d68d9d8b51b3eb262d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 2272bc60af35e3cdec3e1a71bbc6516565b4ec6e
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446908"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475155"
 ---
 # <a name="dynamic-language-runtime-overview"></a>Общие сведения о среде DLR
 

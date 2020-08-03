@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Параллельное выполнение нескольких веб-запросов с использованием Async и Await (C#)
+description: Узнайте, как отделить создание задачи от использования оператора await в C#, а не применять его при создании задачи.
 ms.date: 07/20/2015
 ms.assetid: 19745899-f97a-4499-a7c7-e813d1447580
-ms.openlocfilehash: 0cfc1d6d1d59dc74fcf5990abb0a9d980a83d7b0
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: 899dfd9165d199a67a5178bb351081ee544b231f
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241803"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925167"
 ---
 # <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-c"></a>Практическое руководство. Параллельное выполнение нескольких веб-запросов с использованием Async и Await (C#)
 В асинхронном методе задачи запускаются в момент создания. Оператор [await](../../../language-reference/operators/await.md) применяется к задаче в той точке в методе, где обработка не может продолжаться до завершения задачи. Часто задачи ожидаются в момент создания, как показано в следующем примере.  

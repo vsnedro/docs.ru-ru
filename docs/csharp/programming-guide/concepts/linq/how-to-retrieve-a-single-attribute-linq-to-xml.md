@@ -1,13 +1,14 @@
 ---
 title: Извлечение одного атрибута (LINQ to XML) (C#)
+description: Узнайте, как использовать LINQ to XML для получения одного атрибута элемента C# при условии, что известно имя атрибута.
 ms.date: 07/20/2015
 ms.assetid: 1b6b07b9-933f-47e9-874e-e790cab49dc5
-ms.openlocfilehash: 830a7be24702b6037ac62471060fbe49d8ded598
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4efcae5324ad5a2e4664e68e35e15ec2053daece
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168717"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103429"
 ---
 # <a name="how-to-retrieve-a-single-attribute-linq-to-xml-c"></a>Извлечение одного атрибута (LINQ to XML) (C#)
 В этом разделе приведены объяснения способа получения одного атрибута элемента при условии, что название атрибута известно. Это полезно для составления выражений запросов, при которых требуется найти элемент с определенным атрибутом.  
@@ -97,6 +98,6 @@ home
 work  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оси LINQ to XML (C#)](./linq-to-xml-axes-overview.md)

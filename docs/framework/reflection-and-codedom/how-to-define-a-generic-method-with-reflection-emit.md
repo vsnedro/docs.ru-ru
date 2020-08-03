@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Определение универсального метода с порождаемым отражением
+description: Определите универсальный метод с порождаемым отражением. В первом примере показано, как создать универсальный метод с двумя параметрами типа. Во втором примере показано, как выпустить основную часть метода.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - reflection emit, generic methods
 - generics [.NET Framework], dynamic types
 ms.assetid: 93892fa4-90b3-4ec4-b147-4bec9880de2b
-ms.openlocfilehash: d16f6728b01583fe3ffb8d892522f3892444c537
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 3b85fb480e5862daa3b2800f75392adbe92348f2
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73130178"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865142"
 ---
 # <a name="how-to-define-a-generic-method-with-reflection-emit"></a>Практическое руководство. Определение универсального метода с порождаемым отражением
 

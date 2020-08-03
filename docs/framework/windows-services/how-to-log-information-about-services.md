@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Запись сведений о службах в журнал
+description: Узнайте, как записывать сведения о службах в журнал. Задайте свойство AutoLog, чтобы проект службы Windows взаимодействовал с журналом событий приложения.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - logs, service applications
 ms.assetid: c0d8140f-c055-4d8e-a2e0-37358a550116
 author: ghogen
-ms.openlocfilehash: 3c974d5a98f8056e45899b109878e5a28ab2938e
-ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
+ms.openlocfilehash: 6ebce5464dc25ba4101b3898ee791714f8efc5d6
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71053605"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925752"
 ---
 # <a name="how-to-log-information-about-services"></a>Практическое руководство. Запись сведений о службах в журнал
 По умолчанию все проекты служб Windows могут взаимодействовать с журналом событий приложения и записывать в него сведения и исключения. Чтобы указать, что эта функциональность должна быть в вашем приложении, можно использовать свойство <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> . По умолчанию ведение журнала включено для любой службы, созданной с помощью шаблона проекта службы Windows. Можно использовать статическую форму класса <xref:System.Diagnostics.EventLog> для записи сведений в журнал, и тогда не потребуется создавать экземпляр компонента <xref:System.Diagnostics.EventLog> или вручную регистрировать источник.  

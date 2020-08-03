@@ -1,13 +1,14 @@
 ---
 title: Группирование данных (C#)
+description: При группировании данные объединяются в группы элементов, имеющие общий атрибут. Узнайте о методах стандартных операторов запросов в LINQ в C#, которые группируют элементы данных.
 ms.date: 07/20/2015
 ms.assetid: e414e9e4-343a-4e6e-858f-4a30c5e64492
-ms.openlocfilehash: 7ef3d3c9097d7a9478605565518ac8975feb9fe2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5e1bca1d360b0f44a081cf2770118a0551629b5b
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635747"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103683"
 ---
 # <a name="grouping-data-c"></a>Группирование данных (C#)
 Группированием называют операцию объединения данных в группы таким образом, чтобы у элементов в каждой группе был общий атрибут.  
@@ -20,7 +21,7 @@ ms.locfileid: "75635747"
   
 ## <a name="methods"></a>Методы  
   
-|Имя метода|Описание:|Синтаксис выражения запроса C#|Дополнительные сведения|  
+|Имя метода|Описание|Синтаксис выражения запроса C#|Дополнительные сведения|  
 |-----------------|-----------------|---------------------------------|----------------------|  
 |GroupBy|Группирует элементы с общим атрибутом. Каждая группа представлена объектом <xref:System.Linq.IGrouping%602>.|`group … by`<br /><br /> -или-<br /><br /> `group … by … into …`|<xref:System.Linq.Enumerable.GroupBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupBy%2A?displayProperty=nameWithType>|  
 |ToLookup|Вставляет элементы в <xref:System.Linq.Lookup%602> (словарь "один ко многим") в зависимости от функции выбора ключа.|Не применяется|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|  
@@ -59,7 +60,7 @@ foreach (var group in query)
 */  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (C#)](./standard-query-operators-overview.md)

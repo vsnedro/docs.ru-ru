@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Управление префиксами пространств имен (C#) (LINQ to XML)
+description: Узнайте, как управлять префиксами пространств имен при сериализации дерева XML в LINQ to XML в C#. В некоторых ситуациях требуется управлять префиксами пространств имен.
 ms.date: 07/20/2015
 ms.assetid: 64de5186-b81a-4ddd-8327-8693df59a01b
-ms.openlocfilehash: 9f43c0804d8c830fa75f1e1390cb578c5f5d5106
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b0c5cbfa7488f3a7105595830ef6765e6bfb1f12
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141381"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105307"
 ---
 # <a name="how-to-control-namespace-prefixes-c-linq-to-xml"></a>Практическое руководство. Управление префиксами пространств имен (C#) (LINQ to XML)
 В этом разделе описывается управление префиксами пространств имен при сериализации дерева XML.  
@@ -54,6 +55,6 @@ Console.WriteLine(root);
 </aw:Root>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор пространств имен (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md)

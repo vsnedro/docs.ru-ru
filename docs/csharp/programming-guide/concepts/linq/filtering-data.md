@@ -1,13 +1,14 @@
 ---
 title: Фильтрация данных (C#)
+description: Фильтрация, также известная как выборка, позволяет ограничивать результаты на основе условия. Узнайте о методах стандартных операторов запросов в LINQ в C#, которые выполняют фильтрацию.
 ms.date: 07/20/2015
 ms.assetid: fbaece0d-0f23-47f7-89c5-f3ea8db692b6
-ms.openlocfilehash: 74399244990f8ff2deaa1d10576ea94a57c16bee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f9f6d691da73b566e5135f6692c87ba3a8978005
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75346996"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103927"
 ---
 # <a name="filtering-data-c"></a>Фильтрация данных (C#)
 Фильтрация — это операция по ограничению значений в результирующем наборе только элементами, соответствующими указанному условию. Это также называется выборкой.  
@@ -20,7 +21,7 @@ ms.locfileid: "75346996"
   
 ## <a name="methods"></a>Методы  
   
-|Имя метода|Описание:|Синтаксис выражения запроса C#|Дополнительные сведения|  
+|Имя метода|Описание|Синтаксис выражения запроса C#|Дополнительные сведения|  
 |-----------------|-----------------|---------------------------------|----------------------|  
 |OfType|Выбирает значения в зависимости от возможности приведения их к указанному типу.|Не применяется|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|  
 |Where|Выбирает значения, основанные на функции предиката.|`where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=nameWithType>|  
@@ -45,7 +46,7 @@ foreach (string str in query)
 */  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (C#)](./standard-query-operators-overview.md)

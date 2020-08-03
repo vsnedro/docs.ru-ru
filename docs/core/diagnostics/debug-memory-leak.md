@@ -3,16 +3,16 @@ title: Учебник по выполнению отладки утечки па
 description: Узнайте, как выполнить отладку утечки памяти в .NET Core.
 ms.topic: tutorial
 ms.date: 04/20/2020
-ms.openlocfilehash: d47992bab9dab64cf7f88ff679eef407dd891b5a
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.openlocfilehash: ff684f9b9402cb8b7b648e792a1d37ddcc96b399
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82021358"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86924894"
 ---
-# <a name="tutorial-debug-a-memory-leak-in-net-core"></a>Учебник. Отладка утечки памяти в .NET Core
+# <a name="debug-a-memory-leak-in-net-core"></a>Отладка утечки памяти в .NET Core
 
-**Эта статья относится к следующему.** ✔️ SDK для .NET Core 3.0 и более поздних версий
+**Эта статья относится к:** ✔️ пакету SDK для .NET Core 3.1 и более поздних версий
 
 В этом учебнике демонстрируются инструменты, позволяющие проанализировать утечку памяти в .NET Core.
 
@@ -30,7 +30,7 @@ ms.locfileid: "82021358"
 
 В этом учебнике используется:
 
-- [Пакет SDK для .NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии.
+- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии.
 - [dotnet-trace](dotnet-trace.md) для отображения списка процессов.
 - [dotnet-counters](dotnet-counters.md) для проверки использования управляемой памяти.
 - [dotnet-dump](dotnet-dump.md) для сбора и анализа файла дампа.
@@ -102,7 +102,7 @@ Press p to pause, r to resume, q to quit.
 
 Как видите, сразу после запуска объем управляемой динамической памяти составляет 4 МБ.
 
-Теперь перейдите по URL-адресу `http://localhost:5000/api/diagscenario/memleak/20000`.
+Теперь перейдите по URL-адресу `https://localhost:5001/api/diagscenario/memleak/20000`.
 
 Обратите внимание, что объем использования памяти увеличился до 30 МБ.
 
@@ -133,7 +133,7 @@ Complete
 
 После сбора дампа у вас должно быть достаточно данных для диагностики неисправного процесса. Если неисправный процесс запущен на рабочем сервере, это удачный момент для выполнения краткосрочного исправления проблем путем перезапуска процесса.
 
-Вы уже завершили работу с [примером целевого объекта отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) в рамках этого учебника и можете закрыть этот объект. Перейдите к терминалу, с которого запущен сервер, и нажмите клавиши `Control-C`.
+Вы уже завершили работу с [примером целевого объекта отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) в рамках этого учебника и можете закрыть этот объект. Перейдите к терминалу, с которого запущен сервер, и нажмите клавиши <kbd>CTRL+C</kbd>.
 
 ### <a name="analyze-the-core-dump"></a>Анализ основного дампа
 
@@ -232,14 +232,14 @@ Found 2 roots.
 
 Вы также можете удалить созданный файл дампа.
 
+## <a name="see-also"></a>См. также
+
+- [dotnet-trace](dotnet-trace.md) для отображения списка процессов
+- [dotnet-counters](dotnet-counters.md) для проверки использования управляемой памяти
+- [dotnet-dump](dotnet-dump.md) для сбора и анализа файла дампа
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+
 ## <a name="next-steps"></a>Следующие шаги
 
-Поздравляем с завершением этого учебника!
-
-Мы все еще публикуем дополнительные диагностические учебники. С черновыми версиями можно ознакомиться в репозитории [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial).
-
-В этом учебнике были рассмотрены основные инструменты диагностики .NET. Дополнительные сведения о расширенном использовании см. в следующей справочной документации:
-
-* [dotnet-trace](dotnet-trace.md) для отображения списка процессов.
-* [dotnet-counters](dotnet-counters.md) для проверки использования управляемой памяти.
-* [dotnet-dump](dotnet-dump.md) для сбора и анализа файла дампа.
+> [!div class="nextstepaction"]
+> [Отладка высокой загрузки ЦП в .NET Core](debug-highcpu.md)

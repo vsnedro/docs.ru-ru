@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Объединение запросов LINQ с помощью регулярных выражений (C#)
+description: В этом примере показано использование класса Regex в C# для создания регулярного выражения для сопоставлений в текстовых строках.
 ms.date: 07/20/2015
 ms.assetid: 6b003b65-20a4-4ca2-929e-2ee3f215aecc
-ms.openlocfilehash: 104e63adb9c07a75077b92654afd791b6c82d8de
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: af63d096e3c2f19ed557180d82d606989a016120
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169433"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105349"
 ---
 # <a name="how-to-combine-linq-queries-with-regular-expressions-c"></a>Практическое руководство. Объединение запросов LINQ с помощью регулярных выражений (C#)
 В этом примере показано, как использовать класс <xref:System.Text.RegularExpressions.Regex> при создании регулярного выражения для более сложных сопоставлений в текстовых строках. Запрос LINQ упрощает фильтрацию именно тех файлов, которые требуется найти с помощью регулярного выражения, и формирование результатов.  
@@ -98,7 +99,7 @@ class QueryWithRegEx
 ## <a name="compiling-the-code"></a>Компиляция кода  
  Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (C#)](./linq-and-strings.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

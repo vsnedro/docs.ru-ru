@@ -1,23 +1,24 @@
 ---
 title: Руководство по программированию на C#. Использование ключевых слов Override и New
+description: Используйте ключевые слова new и override в C#, чтобы указать, как взаимодействуют методы с одинаковыми именами в базовом и производном классах.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - override keyword [C#]
 - new keyword [C#]
 - polymorphism [C#], using override and new [C#]
 ms.assetid: 323db184-b136-46fc-8839-007886e7e8b0
-ms.openlocfilehash: 493c6c5f5bf47c6b2cd140ac0f6922f91ca4252b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 732a37c08b4c7bb998a7cc5dcfbd00d4e706b06c
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79170264"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864544"
 ---
 # <a name="knowing-when-to-use-override-and-new-keywords-c-programming-guide"></a>Использование ключевых слов "Override" и "New" (Руководство по программированию в C#)
 
 В C# метод в производном классе может иметь то же имя, что и метод в базовом классе. Можно задать способ взаимодействия методов, воспользовавшись ключевыми словами [new](../../language-reference/keywords/new-modifier.md) и [override](../../language-reference/keywords/override.md). Модификатор `override`*расширяет* метод `virtual` базового класса, а модификатор `new`*скрывает* доступный метод базового класса. Эта разница показана в примере в этой статье.  
   
- В консольном приложении объявите два класса — `BaseClass` и `DerivedClass`. Тип `DerivedClass` наследуется от типа `BaseClass`.  
+ В консольном приложении объявите два класса — `BaseClass` и `DerivedClass`. Тип`DerivedClass` наследуется от типа `BaseClass`.  
   
 ```csharp  
 class BaseClass  
@@ -134,7 +135,7 @@ public virtual void Method1()
 }  
 ```  
   
- Запустите проект снова. Обратите особое внимание на последние две строки следующих выходных данных.  
+ Снова запустите проект. Обратите особое внимание на последние две строки следующих выходных данных.  
   
 ```csharp  
 // Output:  
@@ -542,7 +543,7 @@ namespace OverrideAndNew2
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Классы и структуры](./index.md)

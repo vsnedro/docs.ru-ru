@@ -1,5 +1,6 @@
 ---
 title: Программная архитектура приложений служб
+description: Ознакомьтесь с программной архитектурой приложений служб. В основе приложений служб Windows лежит класс, наследуемый от класса System.ServiceProcess.ServiceBase.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Windows Service applications, states
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
 author: ghogen
-ms.openlocfilehash: 1c197b487f1cb7596f507f663fe3f1fb83857cbd
-ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
+ms.openlocfilehash: c59ccc5a8b2f11fda9c4734487092c1aabb74908
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71053489"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925583"
 ---
 # <a name="service-application-programming-architecture"></a>Программная архитектура приложений служб
 В основе приложений-служб Windows лежит класс, наследуемый от класса <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>. Вы можете переопределить методы из этого класса и определить функции для них, чтобы настроить поведение службы.  

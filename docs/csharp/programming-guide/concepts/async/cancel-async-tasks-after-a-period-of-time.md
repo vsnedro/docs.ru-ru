@@ -1,13 +1,14 @@
 ---
 title: Отмена асинхронных задач после определенного периода времени (C#)
+description: В этом примере используйте метод CancellationTokenSource.CancelAfter в C#, чтобы запланировать отмену всех связанных задач, не завершенных в течение установленного времени.
 ms.date: 07/20/2015
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
-ms.openlocfilehash: 110c4700d0d2afc87f9144bf258cdd4991f107f4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f32af1d893c60ac17648f60fa3aa90adaa0383e8
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70204338"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925296"
 ---
 # <a name="cancel-async-tasks-after-a-period-of-time-c"></a>Отмена асинхронных задач после определенного периода времени (C#)
 
@@ -20,7 +21,7 @@ ms.locfileid: "70204338"
 
 ## <a name="download-the-example"></a>Скачивание примера
 
-Вы можете скачать весь проект Windows Presentation Foundation (WPF) со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea), а затем выполнить необходимые действия.
+Скачать полный проект Windows Presentation Foundation (WPF) можно со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea). Затем выполните следующие шаги.
 
 1. Распакуйте загруженный файл, а затем запустите Visual Studio.
 
@@ -92,7 +93,7 @@ Downloads canceled.
 
 Обратите внимание на то, что необходимо добавить ссылку для <xref:System.Net.Http>.
 
-Можно загрузить проект со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
+Вы можете скачать проект из статьи [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
 
 ```csharp
 using System;
@@ -215,10 +216,10 @@ namespace CancelAfterTime
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Асинхронное программирование с использованием ключевых слов Async и Await (C#)](./index.md)
-- [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md) (Пошаговое руководство. Обращение к веб-сайтам с помощью async и await в C#)
+- [Асинхронное программирование с использованием ключевых слов async и await (C#)](./index.md)
+- [Пошаговое руководство: Доступ к Интернету с помощью модификатора Async и оператора Await в C#](./walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Отмена асинхронной задачи или списка задач в C#](./cancel-an-async-task-or-a-list-of-tasks.md)
 - [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md) (Тонкая настройка асинхронного приложения в C#)
-- [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)
+- [Пример использования Async. Настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

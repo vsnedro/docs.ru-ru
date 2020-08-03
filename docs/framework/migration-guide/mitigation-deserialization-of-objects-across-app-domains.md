@@ -1,15 +1,16 @@
 ---
 title: 'Устранение рисков: десериализация объектов между доменами приложений'
+description: Узнайте, как диагностировать и устранить проблему, когда при попытке выполнить десериализацию объектов в логическом контексте вызова между доменами приложения возникает исключение.
 ms.date: 03/30/2017
 ms.assetid: 30c2d66c-04a8-41a5-ad31-646b937f61b5
-ms.openlocfilehash: e2d90a77cab699646bd31eaa162d1bd1744fd51b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 20ea0f2f0b49000b7d1993adb583a803d9f5be6c
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73457923"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475246"
 ---
-# <a name="mitigation-deserialization-of-objects-across-app-domains"></a>Устранение рисков: десериализация объектов между доменами приложений
+# <a name="mitigation-deserialization-of-objects-across-app-domains"></a>Устранение рисков. Десериализация объектов между доменами приложений
 В некоторых случаях, когда приложение использует два или большее количество доменов с разными базовыми папками приложения, при попытке выполнить десериализацию объектов в логическом контексте вызова между доменами приложения возникнет исключение.  
   
 ## <a name="diagnosing-the-issue"></a>Диагностика проблемы  
@@ -35,7 +36,7 @@ ms.locfileid: "73457923"
   
 6. Поскольку типы логическом контексте вызова не могут быть разрешены в домене приложений по умолчанию, возникает исключение.  
   
-## <a name="mitigation"></a>Меры по снижению риска  
+## <a name="mitigation"></a>Устранение рисков  
  Чтобы устранить эту проблему, выполните следующие действия.  
   
 1. При возникновении исключения найдите вызов `get_Evidence` в стеке вызовов. Может возникать любое исключение из подмножества исключений, включая <xref:System.IO.FileNotFoundException> и <xref:System.Runtime.Serialization.SerializationException>.  
@@ -46,6 +47,6 @@ ms.locfileid: "73457923"
     System.Configuration.ConfigurationManager.GetSection("system.xml/xmlReader");  
     ```
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Совместимость приложений](application-compatibility.md)

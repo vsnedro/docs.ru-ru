@@ -1,5 +1,6 @@
 ---
 title: Основные операции запросов LINQ (C#)
+description: Ознакомьтесь с выражениями запросов LINQ и некоторыми операциями, выполняемыми в запросе.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - orderby clause [LINQ in C#]
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - join clause [LINQ in C#]
 - group clause [LINQ in C#]
 ms.assetid: a7ea3421-1cf4-4df7-832a-aa22fe6379e9
-ms.openlocfilehash: 91c038303c1ad7c2530964d3102aae49090c4c2a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d9653be8b67ef4d971c157b8dd8d82b2ae3c2287
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635942"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105532"
 ---
 # <a name="basic-linq-query-operations-c"></a>Основные операции запросов LINQ (C#)
 В этом разделе содержится краткое описание выражений запроса LINQ и некоторые типичные операции, выполняемые в запросе. Более подробные сведения приводятся в следующих разделах:  
@@ -31,7 +32,7 @@ ms.locfileid: "75635942"
   
  [Общие сведения о стандартных операторах запроса (C#)](./standard-query-operators-overview.md)  
   
- [Пошаговое руководство. Написание запросов на C#](./walkthrough-writing-queries-linq.md)  
+ [Пошаговое руководство: Написание запросов на C#](./walkthrough-writing-queries-linq.md)  
   
 > [!NOTE]
 > Если вы уже знакомы с языком запросов, таким как SQL или XQuery, можно пропустить большую часть этого раздела. Чтобы изучить порядок предложений в выражениях запроса LINQ, прочитайте о "предложении `from`" в следующем разделе.  
@@ -99,9 +100,9 @@ from order in Customer.Orders...
 ## <a name="selecting-projections"></a>Выбор (проецирование)  
  Предложение `select` создает результаты запроса и задает форму или тип каждого возвращаемого элемента. Например, можно указать, будут ли результаты состоять из полных объектов `Customer`, только из одного члена, подмножества членов или некоторых совершенно других типов, на основе вычислений или создания новых объектов. Когда предложение `select` создает что-либо отличное от копии исходного элемента, операция называется *проекцией*. Использование проекций для преобразования данных является эффективной возможностью выражений запросов LINQ. Дополнительные сведения см. в разделах [Преобразования данных с помощью LINQ (C#)](./data-transformations-with-linq.md) и [Предложение select](../../../language-reference/keywords/select-clause.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Выражения запросов LINQ](../../../linq/index.md)
-- [Пошаговое руководство. Написание запросов на C#](./walkthrough-writing-queries-linq.md)
+- [Пошаговое руководство: Написание запросов на C#](./walkthrough-writing-queries-linq.md)
 - [Ключевые слова запроса (LINQ)](../../../language-reference/keywords/query-keywords.md)
 - [Анонимные типы](../../classes-and-structs/anonymous-types.md)

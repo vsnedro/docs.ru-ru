@@ -1,13 +1,14 @@
 ---
 title: Как запросить предложения с указанным набором слов (LINQ) (C#)
+description: Узнайте, как использовать LINQ в C# для поиска в текстовом файле предложений, содержащих совпадения для каждого набора слов, который может быть заполнен во время выполнения.
 ms.date: 07/20/2015
 ms.assetid: 0724b429-4b87-4d26-a7b1-409358f3fc20
-ms.openlocfilehash: df279f57d9965d796397cbcf7a0f3ba05bf9e5c1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c334c7948f19fb857709ff04a83e1dae56fc69da
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168860"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104521"
 ---
 # <a name="how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq-c"></a>Как запросить предложения с указанным набором слов (LINQ) (C#)
 В этом примере показан поиск предложений, содержащих совпадения для каждого из указанного набора слов в текстовом файле. Хотя массив терминов для поиска в этом примере жестко закодирован, его можно заполнять динамически во время выполнения. В этом примере запрос возвращает предложения, которые содержат слова "Historically", "data" и "integrated".  
@@ -69,6 +70,6 @@ Historically, the world of data and the world of objects have not been well inte
 ## <a name="compiling-the-code"></a>Компиляция кода  
 Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (C#)](./linq-and-strings.md)

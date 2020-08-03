@@ -1,13 +1,14 @@
 ---
 title: Операции агрегирования (C#)
+description: Узнайте о методах выполнения операции агрегирования. Статистическая операция вычисляет одно значение по коллекции значений.
 ms.date: 07/20/2015
 ms.assetid: 6fc035e5-7639-48b8-bc7f-b093dd31b039
-ms.openlocfilehash: ea32becbb7ad0d3944eaea7b1b5448342ed438a5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3d5a52249520478571db2fcfd7aa5d10fb013565
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75347551"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104308"
 ---
 # <a name="aggregation-operations-c"></a>Операции агрегирования (C#)
 Статистическая операция вычисляет одно значение по коллекции значений. Например, статистической обработкой является вычисление средней дневной температуры с использованием значений дневной температуры за месяц.  
@@ -20,17 +21,17 @@ ms.locfileid: "75347551"
   
 ## <a name="methods"></a>Методы  
   
-|Имя метода|Описание:|Синтаксис выражения запроса C#|Дополнительные сведения|  
+|Имя метода|Описание|Синтаксис выражения запроса C#|Дополнительные сведения|  
 |-----------------|-----------------|---------------------------------|----------------------|  
-|Aggregate|Выполняет пользовательскую операцию агрегирования со значениями коллекции.|Не применяется|<xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Aggregate%2A?displayProperty=nameWithType>|  
-|Среднее значение|Вычисляет среднее значение коллекции значений.|Не применяется|<xref:System.Linq.Enumerable.Average%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Average%2A?displayProperty=nameWithType>|  
+|Статистическое выражение|Выполняет пользовательскую операцию агрегирования со значениями коллекции.|Не применяется|<xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Aggregate%2A?displayProperty=nameWithType>|  
+|Метод Average|Вычисляет среднее значение коллекции значений.|Не применяется|<xref:System.Linq.Enumerable.Average%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Average%2A?displayProperty=nameWithType>|  
 |Count|Подсчитывает число элементов в коллекции (при необходимости только те элементы, которые удовлетворяют функции предиката).|Не применяется|<xref:System.Linq.Enumerable.Count%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Count%2A?displayProperty=nameWithType>|  
 |LongCount|Подсчитывает число элементов в большой коллекции (при необходимости только те элементы, которые удовлетворяют функции предиката).|Не применяется|<xref:System.Linq.Enumerable.LongCount%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.LongCount%2A?displayProperty=nameWithType>|  
-|Max|Определяет максимальное значение в коллекции.|Не применяется|<xref:System.Linq.Enumerable.Max%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Max%2A?displayProperty=nameWithType>|  
-|Мин.|Определяет минимальное значение в коллекции.|Не применяется|<xref:System.Linq.Enumerable.Min%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Min%2A?displayProperty=nameWithType>|  
+|Максимум|Определяет максимальное значение в коллекции.|Не применяется|<xref:System.Linq.Enumerable.Max%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Max%2A?displayProperty=nameWithType>|  
+|Минимум|Определяет минимальное значение в коллекции.|Не применяется|<xref:System.Linq.Enumerable.Min%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Min%2A?displayProperty=nameWithType>|  
 |Sum|Вычисляет сумму значений в коллекции.|Не применяется|<xref:System.Linq.Enumerable.Sum%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Sum%2A?displayProperty=nameWithType>|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (C#)](./standard-query-operators-overview.md)

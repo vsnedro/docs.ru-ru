@@ -1,5 +1,6 @@
 ---
 title: Cert2spc.exe (средство проверки сертификата издателя программного обеспечения)
+description: Используйте Cert2spc.exe, средство проверки сертификата издателя программного обеспечения. Это средство создает сертификат издателя программного обеспечения (SPC) из одного или более сертификатов X.509.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - SPC
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - Cert2spc.exe
 - certificates, Software Publisher's Certificate
 ms.assetid: be434d7d-9c0d-46e7-8392-58a9b542d11d
-ms.openlocfilehash: 809b7d0383f172a5fbcb2ac4ac3ffb96ff0b8e20
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2eb6339aa6f5d23a5b87986410cbeaac2dac2bec
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73129884"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87167317"
 ---
 # <a name="cert2spcexe-software-publisher-certificate-test-tool"></a>Cert2spc.exe (средство проверки сертификата издателя программного обеспечения)
 Программа для проверки сертификата издателя программного обеспечения служит для создания сертификата издателя программного обеспечения (SPC) из одного или нескольких сертификатов X.509. Программа Cert2spc.exe используется только для тестирования. Действительный сертификат SPC можно получить в центрах сертификации, таких как VeriSign и Thawte. Дополнительные сведения о создании сертификатов X.509 см. в разделе [Makecert.exe (средство создания сертификатов)](/windows/desktop/SecCrypto/makecert).  
   
- Это средство автоматически устанавливается с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
   
  В командной строке введите следующее.  
   
@@ -30,13 +31,13 @@ cert2spc cert1.cer | crl1.crl [... certN.cer | crlN.crl] outputSPCfile.spc
   
 ## <a name="parameters"></a>Параметры  
   
-|Аргумент|Описание:|  
+|Аргумент|Описание|  
 |--------------|-----------------|  
 |`certN.cer`|Имя сертификата X.509, включаемого в SPC-файл. Можно указать несколько имен, разделенных пробелами.|  
 |`crlN.crl`|Имя списка отзыва сертификатов для включения в SPC-файл. Можно указать несколько имен, разделенных пробелами.|  
 |`outputSPCfile.spc`|Имя объекта PKCS #7, который будет содержать сертификаты X.509.|  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |------------|-----------------|  
 |**/?**|Отображает синтаксис команд и параметров программы.|  
   
@@ -53,7 +54,7 @@ cert2spc myCertificate.cer mySPCFile.spc
 cert2spc oneCertificate.cer twoCertificate.cer mySPCFile.spc  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Инструменты](index.md)
 - [Makecert.exe (средство создания сертификатов)](/windows/desktop/SecCrypto/makecert)

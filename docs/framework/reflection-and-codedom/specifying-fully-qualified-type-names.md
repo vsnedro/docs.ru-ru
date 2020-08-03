@@ -1,5 +1,6 @@
 ---
 title: Указание полных имен типов
+description: Для выполнения операций отражения следует использовать полные имена типов, которые состоят из спецификаций имен сборок, спецификаций пространств имен и имен типов.
 ms.date: 02/21/2019
 helpviewer_keywords:
 - names [.NET Framework], fully qualified type names
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - special characters
 - IDENTIFIER
 ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
-ms.openlocfilehash: 707c71482196d789ed9a88db34af048ec57734fb
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ff33b6abd31a82c6b80aa794564c5c48648cde63
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73130035"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865233"
 ---
 # <a name="specifying-fully-qualified-type-names"></a>Определение полных имен типов
 

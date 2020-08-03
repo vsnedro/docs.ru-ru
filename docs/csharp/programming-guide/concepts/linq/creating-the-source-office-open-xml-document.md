@@ -1,13 +1,14 @@
 ---
 title: Создание исходного документа в формате Office Open XML (C#)
+description: Создайте документ Office Open XML WordprocessingML для использования в учебниках по C#. Для работы с этой статьей требуется Microsoft Office.
 ms.date: 07/20/2015
 ms.assetid: 653c8cdb-73be-4dc2-927f-924cfb4ed9ed
-ms.openlocfilehash: d6c4d8866bba58e86735099a62041894a9faa9b1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e6d6908ee6560218793454f3871705e74095f543
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70204155"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103989"
 ---
 # <a name="creating-the-source-office-open-xml-document-c"></a>Создание исходного документа в формате Office Open XML (C#)
 

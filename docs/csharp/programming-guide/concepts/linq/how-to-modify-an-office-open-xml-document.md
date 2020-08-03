@@ -1,13 +1,14 @@
 ---
 title: Изменение документа в формате Office Open XML (C#)
+description: Узнайте, как открыть документ Office Open XML, изменить его и сохранить. В этом примере C# используются классы, находящиеся в сборке WindowsBase.
 ms.date: 07/20/2015
 ms.assetid: 467d489c-2b1b-453b-a757-8ac180e82a96
-ms.openlocfilehash: 620530b14513356dc9bb5d942e8db7691a03880d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1155851696a0a6ed651c5f84290a3879e73276db
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75345843"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104824"
 ---
 # <a name="how-to-modify-an-office-open-xml-document-c"></a>Изменение документа в формате Office Open XML (C#)
 В этом разделе представлен пример, в котором открывается документ Office Open XML, затем он изменяется и сохраняется.  

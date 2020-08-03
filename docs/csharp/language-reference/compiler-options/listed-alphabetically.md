@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C# compiler, options listed alphabetically
 - Visual C#, compiler options listed alphabetically
 ms.assetid: 43535ea0-ca47-4a15-b528-615087a86092
-ms.openlocfilehash: 9765d13191f862a2e92bb00aa66a92c3a64ac303
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: eb3a591ba7b58e187eb03e65a3da6dfb47c9475c
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446943"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86473985"
 ---
 # <a name="c-compiler-options-listed-alphabetically"></a>Параметры компилятора C# в алфавитном порядке
 
@@ -77,7 +77,7 @@ ms.locfileid: "84446943"
 |[-resource](resource-compiler-option.md)|Внедряет указанный ресурс.|
 |-ruleset:\<file>|Укажите файл набора правил, который отключает определенные диагностики.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Задает минимальную версию подсистемы, которую может использовать исполняемый файл.|
-|[-target](target-compiler-option.md)|Задает формат выходного файла, используя один из четырех параметров: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), [-target:winmdobj](target-winmdobj-compiler-option.md).|
+|[-target](target-compiler-option.md)|Задает формат выходного файла, используя один из следующих параметров: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |[/unsafe](unsafe-compiler-option.md)|Разрешает небезопасный ([unsafe](../keywords/unsafe.md)) код.|
 |[-utf8output](utf8output-compiler-option.md)|Выводит сообщения компилятора в кодировке UTF-8.|
 |-version|Отображение номера версии компилятора и выход.|

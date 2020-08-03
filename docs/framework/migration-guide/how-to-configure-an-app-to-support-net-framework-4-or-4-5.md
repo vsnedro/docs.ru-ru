@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Настройка приложения для включения поддержки .NET Framework версии 4 и выше
+description: Используйте прилагаемый пример, чтобы узнать, как настроить классическое приложение для поддержки .NET Framework 4 или более поздних версий.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - configuring apps to support .NET Framework
 - .NET Framework, configuring apps
 ms.assetid: 63c6b9a8-0088-4077-9aa3-521ab7290f79
-ms.openlocfilehash: 30fb1da8d758b0e8996b4fcdebbb7fbf545a46c1
-ms.sourcegitcommit: b75a45f0cfe012b71b45dd9bf723adf32369d40c
+ms.openlocfilehash: 58d71cb7fac7a3c2bef975c99cfab1ca730fb6eb
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80228748"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475467"
 ---
 # <a name="how-to-configure-an-app-to-support-net-framework-4-or-later-versions"></a>Практическое руководство. Настройка приложения для включения поддержки .NET Framework версии 4 и выше
 
@@ -20,7 +21,7 @@ ms.locfileid: "80228748"
 
 - Файл конфигурации.
 
-     Если файл конфигурации приложения содержит записи [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md), в которых указана одна или несколько версий платформы .NET Framework, и одна из этих версий присутствует на компьютере пользователя, приложение запускается в этой версии. Записи [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) в файле конфигурации считываются в порядке следования, и используется первая указанная версия платформы .NET Framework, которая есть на компьютере пользователя. (Для версии 1.0 используется [элемент \<requiredRuntime>](../configure-apps/file-schema/startup/requiredruntime-element.md)).
+     Если файл конфигурации приложения содержит записи [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md), в которых указана одна или несколько версий платформы .NET Framework, и одна из этих версий присутствует на компьютере пользователя, приложение запускается в этой версии. Записи [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) в файле конфигурации считываются в порядке следования, и используется первая указанная версия платформы .NET Framework, которая есть на компьютере пользователя. (Для версии 1.0 используйте [элемент \<requiredRuntime>](../configure-apps/file-schema/startup/requiredruntime-element.md).)
 
 - Скомпилированная версия.
 
@@ -28,7 +29,7 @@ ms.locfileid: "80228748"
 
 - Последняя установленная версия.
 
-     Если версия .NET Framework, для которой было собрано приложение, отсутствует, и в файле конфигурации не указана версия в [элементе \<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md), приложение пытается запуститься в последней версии .NET Framework, присутствующей на компьютере пользователя.
+     Если версия .NET Framework, для которой было собрано приложение, отсутствует и в файле конфигурации не указана версия в [элементе \<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md), то приложение пытается запуститься в последней версии .NET Framework, присутствующей на компьютере пользователя.
 
      Однако приложения .NET Framework 1.0, 1.1, 2.0, 3.0 и 3.5 не запускаются автоматически в .NET Framework 4 или более поздних версиях, и в некоторых случаях пользователь может получить сообщение об ошибке, и ему будет предложено установить .NET Framework 3.5. Поведение активации может также зависеть от операционной системы пользователя, потому что в состав разных версий Windows входят разные версии .NET Framework. Если приложение поддерживает и .NET Framework 3.5, и .NET Framework 4 или более поздние версии, рекомендуется указывать это путем включения в файл конфигурации нескольких записей во избежание ошибок инициализации .NET Framework. Дополнительные сведения см. в статье [Версии и зависимости платформы .NET Framework](versions-and-dependencies.md).
 
@@ -55,7 +56,7 @@ ms.locfileid: "80228748"
     </configuration>
     ```
 
-     где *\<version>* указывает версию среды CLR, соответствующей версии платформы .NET Framework, которую поддерживает приложение. Можно использовать следующие строки:
+     где *\<version>* задает версию среды CLR, соответствующую версии платформы .NET Framework, которую поддерживает приложение. Можно использовать следующие строки:
 
     - .NET Framework 1.0: "v1.0.3705"
 

@@ -1,13 +1,14 @@
 ---
 title: Нахождение разности множеств между двумя списками (LINQ) (C#)
+description: Узнайте, как использовать LINQ в C# для сравнения двух списков строк и вывода тех строк, которые содержатся в только в одном из этих списков.
 ms.date: 07/20/2015
 ms.assetid: 8e8945f0-4aba-439d-8d5d-c8d1eeef4e71
-ms.openlocfilehash: 03fae5451ee395487e73ed7c38d465c3f891e0f7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 24509488d91f9861ee9bf84277238bea7031e5f6
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169185"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105087"
 ---
 # <a name="how-to-find-the-set-difference-between-two-lists-linq-c"></a>Нахождение разности множеств между двумя списками (LINQ) (C#)
 В этом примере показано, как использовать LINQ для сравнения двух списков строк и вывода тех строк, которые содержатся в файле names1.txt, но не в файле names2.txt.  
@@ -57,6 +58,6 @@ class CompareLists
 ## <a name="compiling-the-code"></a>Компиляция кода  
  Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (C#)](./linq-and-strings.md)

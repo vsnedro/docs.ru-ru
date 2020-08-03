@@ -1,17 +1,18 @@
 ---
 title: Руководство по программированию на C#. Использование свойств
+description: В этих примерах показано использование свойств в C#. Узнайте, как методы доступа get и set реализуют доступ на чтение и запись, и ознакомьтесь с использованием свойств.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - set accessor [C#]
 - get accessor [C#]
 - properties [C#], about properties
 ms.assetid: f7f67b05-0983-4cdb-96af-1855d24c967c
-ms.openlocfilehash: d873f626b660bb6bd94710add4543e21e11823d6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 51ca0a37022c99bfbd9d61f2cc47f529d535e72a
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77452023"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864661"
 ---
 # <a name="using-properties-c-programming-guide"></a>Использование свойств (Руководство по программированию в C#)
 
@@ -63,7 +64,7 @@ ms.locfileid: "77452023"
 
 Использование имени явного параметра (`value`) для объявления локальной переменной в методе доступа `set` является ошибкой.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Свойства могут быть помечены как `public`, `private`, `protected`, `internal`, `protected internal` или `private protected`. Эти модификаторы доступа определяют, каким образом пользователи класса смогут получать доступ к свойству. Методы доступа `get` и `set` для одного свойства могут иметь разные модификаторы доступа. Например, метод доступа `get` может иметь модификатор `public`, разрешающий доступ из-за пределов типа только для чтения, а метод доступа `set` — модификатор `private` или `protected`. Дополнительные сведения см. в статье [Модификаторы доступа](./access-modifiers.md).
 
@@ -106,7 +107,7 @@ ms.locfileid: "77452023"
 
 [!code-csharp[csProgGuideProperties#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#6)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Свойства](properties.md)

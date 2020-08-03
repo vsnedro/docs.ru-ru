@@ -1,13 +1,14 @@
 ---
 title: Как запросить самый большой файл или файлы в дереве папок (LINQ) (C#)
+description: В этом примере C# показано пять запросов LINQ, связанных с размером файла в байтах. Их можно изменить, чтобы запросить другое свойство объекта FileInfo.
 ms.date: 07/20/2015
 ms.assetid: 20c8a917-0552-4514-b489-0b8b6a4c3b4c
-ms.openlocfilehash: ed7d610bd292be4062db89f3c94af280e851141f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c06c6017d6fd1efd6412729c5df63a2b819908a6
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168769"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104374"
 ---
 # <a name="how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq-c"></a>Как запросить самый большой файл или файлы в дереве папок (LINQ) (C#)
 В этом примере показано пять запросов, связанных с размером файла в байтах.  
@@ -145,7 +146,7 @@ class QueryBySize
 ## <a name="compiling-the-code"></a>Компиляция кода  
 Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to Objects (C#)](./linq-to-objects.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

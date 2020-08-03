@@ -1,20 +1,21 @@
 ---
 title: Поиск стиля абзаца по умолчанию (C#)
+description: Узнайте, как обрабатывать документ WordprocessingML с помощью LINQ в C#. В этом примере выполняется поиск стиля абзацев по умолчанию в документе.
 ms.date: 07/20/2015
 ms.assetid: be102177-8ab0-444a-b671-7023e555ffdb
-ms.openlocfilehash: 8cc1f1b9df208b0b180e5fe4a50922b5ee46b480
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e18bbbdbd5b2627c9ff4c3c3eedd84d7cb166a62
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169536"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103822"
 ---
 # <a name="finding-the-default-paragraph-style-c"></a>Поиск стиля абзаца по умолчанию (C#)
 Первая задача в учебнике "Обработка информации в документе WordprocessingML" заключается в поиске стиля абзацев по умолчанию в документе.  
   
 ## <a name="example"></a>Пример  
   
-### <a name="description"></a>Описание:  
+### <a name="description"></a>Описание  
  В следующем примере открывается документ Office Open XML WordprocessingML, осуществляется поиск секций с документом и стилями в пакете, а затем выполняется запрос, который находит имя стиля по умолчанию. Сведения о пакетах документов Office Open XML и частях, из которых они состоят, см. в разделе [Сведения о документах WordprocessingML в формате Office Open XML (C#)](./wordprocessingml-document-with-styles.md).  
   
  Этот запрос находит узел с именем `w:style`, который имеет атрибут `w:type` со значением «paragraph», а также имеет атрибут `w:default` со значением «1». Так как XML-узел с этими атрибутами будет только один, запрос использует оператор <xref:System.Linq.Enumerable.First%2A?displayProperty=nameWithType>, чтобы преобразовать коллекцию в один элемент. Затем он возвращает значение атрибута `w:styleId`.  
@@ -83,7 +84,7 @@ Console.WriteLine("The default style is: {0}", defaultStyle);
 The default style is: Normal  
 ```  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Следующие шаги  
  В следующем примере будет создан похожий запрос, который ищет все абзацы в документе и их стили:  
   
 - [Извлечение абзацев и стилей (C#)](./retrieving-the-paragraphs-and-their-styles.md)  

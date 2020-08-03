@@ -1,13 +1,14 @@
 ---
 title: Операции объединения (C#)
+description: Изучите операции объединения и методы стандартных операторов запроса, которые выполняют объединение в LINQ в C#.
 ms.date: 07/20/2015
 ms.assetid: 890ee104-c590-457e-8a7f-b2b5da0fb417
-ms.openlocfilehash: f02e323e673e46f4e7ba4a6005c86b7f9050f8ef
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: aadfd2d9cf8b70130c0f67aa299e42982f144c38
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141521"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105509"
 ---
 # <a name="concatenation-operations-c"></a>Операции объединения (C#)
 Объединением называют операцию добавления одной последовательности к другой.  
@@ -20,11 +21,11 @@ ms.locfileid: "74141521"
   
 ## <a name="methods"></a>Методы  
   
-|Имя метода|Описание:|Синтаксис выражения запроса C#|Дополнительные сведения|  
+|Имя метода|Описание|Синтаксис выражения запроса C#|Дополнительные сведения|  
 |-----------------|-----------------|---------------------------------|----------------------|  
 |Concat|Объединяет две последовательности в одну.|Не применяется|<xref:System.Linq.Enumerable.Concat%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Concat%2A?displayProperty=nameWithType>|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (C#)](./standard-query-operators-overview.md)

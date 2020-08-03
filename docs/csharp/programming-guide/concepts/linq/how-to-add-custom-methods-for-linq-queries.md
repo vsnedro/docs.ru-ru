@@ -1,19 +1,20 @@
 ---
 title: Практическое руководство. Добавление настраиваемых методов для запросов LINQ (C#)
+description: Узнайте, как в C# расширить набор методов, которые можно использовать для запросов LINQ путем добавления методов расширения в интерфейс IEnumerable<T>.
 ms.date: 07/20/2015
 ms.assetid: 1a500f60-2e10-49fb-8b2a-d8d08e4817cb
-ms.openlocfilehash: e3f8ba8810d06a2e79093e6022ad6e79f3599468
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: fac0eb4e14eb3bb36313232a7d7fa3060c0ac171
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84447034"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103606"
 ---
 # <a name="how-to-add-custom-methods-for-linq-queries-c"></a>Практическое руководство. Добавление настраиваемых методов для запросов LINQ (C#)
 
 Вы можете расширить набор методов, которые можно использовать для запросов LINQ, путем добавления методов расширения в интерфейс <xref:System.Collections.Generic.IEnumerable%601>. Например, помимо стандартных операций вычисления среднего или максимального значения, можно создать настраиваемый метод агрегирования для вычисления одного значения на основе последовательности значений. Также можно создать метод, который работает как настраиваемый фильтр или особое преобразование данных для последовательности значений и возвращает новую последовательность. Примерами таких методов являются <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A> и <xref:System.Linq.Enumerable.Reverse%2A>.
 
-При расширении интерфейса <xref:System.Collections.Generic.IEnumerable%601> настраиваемые методы можно применять к любой перечислимой коллекции. Дополнительные сведения см. в статье [Методы расширения](../../classes-and-structs/extension-methods.md).
+При расширении интерфейса <xref:System.Collections.Generic.IEnumerable%601> настраиваемые методы можно применять к любой перечислимой коллекции. Дополнительные сведения см. в разделе [Методы расширения](../../classes-and-structs/extension-methods.md).
 
 ## <a name="adding-an-aggregate-method"></a>Использование метода агрегирования
 
@@ -216,7 +217,7 @@ foreach (var element in query)
 */
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [Методы расширения](../../classes-and-structs/extension-methods.md)

@@ -1,5 +1,6 @@
 ---
 title: Преобразования данных с помощью LINQ (C#)
+description: Узнайте, как использовать запросы LINQ в C# для преобразования данных. Можно изменить последовательность путем сортировки и группировки и создать новые типы с помощью предложения SELECT.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - LINQ [C#], data transformations
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - data sources [LINQ in C#], data transformations
 - data transformations [LINQ in C#]
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
-ms.openlocfilehash: d20f5d826620ad8654ddf1e9471ecc894b2c0391
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6844cf2aa589f7516a9e40bc604c5f907ec6d311
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408527"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104024"
 ---
 # <a name="data-transformations-with-linq-c"></a>Преобразования данных с помощью LINQ (C#)
 LINQ используется не только для получения данных. Это эффективный инструмент для их преобразования. С помощью запросов LINQ можно использовать исходную последовательность в качестве входных данных и изменять ее разными способами для создания новой выходной последовательности. Можно изменить саму последовательность, не изменяя элементы, с помощью сортировки и группировки. Но самой интересной функцией запросов LINQ можно назвать возможность создания новых типов. Это выполняется в предложении [select](../../../language-reference/keywords/select-clause.md). Например, можно выполнить следующие задачи.  

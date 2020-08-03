@@ -1,5 +1,6 @@
 ---
 title: Вопросы безопасности в порождаемом отражении
+description: Изучите вопросы безопасности в порождаемом отражении, которое осуществляется через динамические сборки или динамические методы, подключенные к существующим сборкам или анонимно размещенные.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - partially trusted code
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - emitting dynamic assemblies,partial trust scenarios
 - dynamic assemblies, security
 ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
-ms.openlocfilehash: d1b6994f7ee9efa9f6472deffb2f3d869606e182
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: d0ca26a1d0964c935137b0a30a5d7c78f93c597b
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81644201"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865246"
 ---
 # <a name="security-issues-in-reflection-emit"></a>Вопросы безопасности в порождаемом отражении
 Платформа .NET Framework предоставляет три способа создания промежуточного языка Майкрософт (MSIL), каждый из которых имеет собственные вопросы безопасности:  

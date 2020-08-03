@@ -1,15 +1,16 @@
 ---
 title: Руководство по программированию на C#. Массивы как объекты
+description: В C# массивы представляют собой объекты массива абстрактного базового типа. Можно использовать свойства и другие члены класса массива, например свойство Length.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - arrays [C#], as objects
 ms.assetid: f76d4403-bd0a-42a0-9bc8-694c55b2c926
-ms.openlocfilehash: d8b929eccf9be259874d03dd93f49a49798bb349
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 984def3ef74b07d7099fae6cae6d6f8ce7e03e12
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75715090"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86474726"
 ---
 # <a name="arrays-as-objects-c-programming-guide"></a>Массивы как объекты (Руководство по программированию на C#)
 
@@ -25,7 +26,7 @@ ms.locfileid: "75715090"
 
 [!code-csharp[csProgGuideArrays#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#2)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Массивы](./index.md)

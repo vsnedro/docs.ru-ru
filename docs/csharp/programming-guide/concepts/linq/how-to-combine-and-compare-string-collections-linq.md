@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Объединение и сравнение коллекций строк (LINQ) (C#)
+description: В этом примере показано объединение файлов, содержащих строки текста. Узнайте, как выполнить простое сцепление, объединение и пересечение в наборах строк в LINQ в C#.
 ms.date: 07/20/2015
 ms.assetid: 25926e5b-fde2-4dc1-86a0-16ead7aa13d2
-ms.openlocfilehash: f73a31e109933a4b6dd0078934d89d3bb770de5c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bfbdb9a0a3d531b56578b242c91596d9e41b6cd6
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169458"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105356"
 ---
 # <a name="how-to-combine-and-compare-string-collections-linq-c"></a>Практическое руководство. Объединение и сравнение коллекций строк (LINQ) (C#)
 В этом примере показано объединение файлов, содержащих строки текста, и последующая сортировка результатов. В частности, показано выполнение простого сцепления, объединения и пересечения в двух наборах строк текста.  
@@ -171,7 +172,7 @@ class MergeStrings
 ## <a name="compiling-the-code"></a>Компиляция кода  
  Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (C#)](./linq-and-strings.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

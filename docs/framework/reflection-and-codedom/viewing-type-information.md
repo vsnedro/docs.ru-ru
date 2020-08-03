@@ -1,5 +1,6 @@
 ---
 title: Просмотр сведений о типах
+description: Просматривайте сведения о типах с помощью System.Type, который является основным для отражения в .NET. Получайте сведения о MemberInfo, MethodInfo, FieldInfo и PropertyInfo.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - viewing type information
 - reflection, viewing type information
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
-ms.openlocfilehash: bf119ff547df59cd369d688fd81ab058893614f2
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: cd74021e1f1a79626e171db13def98e546cd51df
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73130015"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865207"
 ---
 # <a name="viewing-type-information"></a>Просмотр сведений о типах
 Класс <xref:System.Type?displayProperty=nameWithType> является центральной частью отражения. Среда CLR создает объект **Type** для загруженного типа, когда он запрашивается отражением. Используя методы, поля, свойства и вложенные классы объекта **Type**, можно получить полные сведения об этом типе.  

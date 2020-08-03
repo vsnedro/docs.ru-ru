@@ -1,13 +1,14 @@
 ---
 title: Общие сведения о классах LINQ to XML (C#)
+description: В этой статье приводится список классов LINQ to XML в C# в пространстве имен System.Xml.Linq с кратким описанием каждого из них.
 ms.date: 07/20/2015
 ms.assetid: bf666100-5392-4968-97f4-f6b9d3287d7b
-ms.openlocfilehash: 55be666fc0db0becb12ec8b525e7fc443536e1df
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 34508f86792cdc7589569b8f12584ffc4379a5fb
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69591886"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165431"
 ---
 # <a name="linq-to-xml-classes-overview-c"></a>Общие сведения о классах LINQ to XML (C#)
 В этом разделе приведен список классов [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] в пространстве имен <xref:System.Xml.Linq> с кратким описанием каждого из них.  
@@ -86,6 +87,6 @@ ms.locfileid: "69591886"
 ### <a name="xtext-class"></a>Класс XText  
  Класс <xref:System.Xml.Linq.XText> представляет текстовый узел. В большинстве случаев использование этого класса не требуется. Этот класс главным образом используется для смешанного содержимого.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о программировании LINQ to XML (C#)](./linq-to-xml-overview.md)

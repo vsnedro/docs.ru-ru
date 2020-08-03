@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Назначение службам контекста безопасности
+description: Назначайте службам контекста безопасности. Службы, выполняемые в контексте системной учетной записи по умолчанию, и вошедший в систему пользователь имеют разные права доступа к системным ресурсам.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Service applications, security
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - ServiceInstaller class, security context
 ms.assetid: 02187c7b-dbf2-45f2-96c2-e11010225a22
 author: ghogen
-ms.openlocfilehash: dd2a9c4485e151d4cb1c9d5ae3a95a69fcc416d4
-ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
+ms.openlocfilehash: 4ed531cb520a781fd38f8bf5491da6948901a1d5
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71053582"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925739"
 ---
 # <a name="how-to-specify-the-security-context-for-services"></a>Практическое руководство. Назначение службам контекста безопасности
 По умолчанию службы работают в контексте безопасности, отличном от того, в котором работает вошедший в систему пользователь. Службы работают в контексте стандартной системной учетной записи с именем `LocalSystem`. Она дает им другие права на доступ к системным ресурсам (не такие, как у пользователя). Эту ситуацию можно изменить, указав другую учетную запись пользователя, под которой будет работать служба.  

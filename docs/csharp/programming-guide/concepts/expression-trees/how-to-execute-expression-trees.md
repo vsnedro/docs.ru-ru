@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Выполнение деревьев выражений (C#)
+description: Узнайте, как выполнить дерево выражения, чтобы вернуть значение или выполнить действие, например вызов метода.
 ms.date: 07/20/2015
 ms.assetid: b8c40db5-2464-4bb9-9001-8c2bc7f006c5
-ms.openlocfilehash: e7d408ea154572dc8b45d2e67bca3f05837868d2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9e306da545ba6c6275f36b8f6dd4e98bb91ed54e
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73969882"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105623"
 ---
 # <a name="how-to-execute-expression-trees-c"></a>Практическое руководство. Выполнение деревьев выражений (C#)
 В этом разделе показано, как выполнить дерево выражения. В результате выполнения дерева выражения может возвращаться значение или просто выполняться действие, такое как вызов метода.  
@@ -46,7 +47,7 @@ Console.WriteLine(result);
   
 - Включите пространство имен System.Linq.Expressions.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Деревья выражений (C#)](./index.md)
 - [Изменение деревьев выражений (C#)](./how-to-modify-expression-trees.md)

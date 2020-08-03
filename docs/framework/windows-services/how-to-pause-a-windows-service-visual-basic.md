@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Приостановка работы службы Windows (Visual Basic)
+description: Узнайте, как использовать компонент ServiceController для приостановки службы Windows (например, службы администрирования IIS) на локальном компьютере с Visual Basic.
 ms.date: 03/30/2017
 dev_langs:
 - vb
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - pausing Windows Service applications
 ms.assetid: eddb9409-942b-46b6-a2ce-fbd4c65f2790
 author: ghogen
-ms.openlocfilehash: 166eda4a9348188fa6e5048fd3ce41645cde4816
-ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
+ms.openlocfilehash: 628cc2e896f7f8a289e52674b721c4aef605854c
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71053594"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925570"
 ---
 # <a name="how-to-pause-a-windows-service-visual-basic"></a>Практическое руководство. Приостановка выполнения службы Windows (Visual Basic)
 В этом примере для приостановки работы службы администрирования IIS на локальном компьютере используется компонент <xref:System.ServiceProcess.ServiceController>.  

@@ -1,13 +1,14 @@
 ---
 title: Группировка файлов по расширению (LINQ) (C#)
+description: Узнайте, как использовать LINQ для выполнения расширенного группирования и сортировки списков файлов или папок в C#. В примере показано, как разбить на страницы выходные данные в окне консоли.
 ms.date: 07/20/2015
 ms.assetid: 21a98320-a5a1-4981-82d8-6a637e7d9018
-ms.openlocfilehash: 2ee1fa1291f5845c818395dfe038ec5894adc863
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6113392170063cac1fd89017efaf0c7dad3ba34b
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169159"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105030"
 ---
 # <a name="how-to-group-files-by-extension-linq-c"></a>Группировка файлов по расширению (LINQ) (C#)
 В этом примере показано, как можно использовать LINQ для выполнения расширенного группирования и сортировки списков файлов или папок. Кроме того, здесь показывается, как разбить на страницы выходные данные в окне консоли с помощью методов <xref:System.Linq.Enumerable.Skip%2A> и <xref:System.Linq.Enumerable.Take%2A>.  
@@ -107,7 +108,7 @@ class GroupByExtension
 ## <a name="compiling-the-code"></a>Компиляция кода  
  Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to Objects (C#)](./linq-to-objects.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

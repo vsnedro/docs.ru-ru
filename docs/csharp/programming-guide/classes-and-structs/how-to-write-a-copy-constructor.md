@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Создание конструктора копий (руководство по программированию на C#)
+description: Узнайте, как создать конструктор копий в C#, который принимает экземпляр класса и возвращает новый экземпляр со значениями входных данных.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# Language, copy constructor
 - copy constructor [C#]
 ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
-ms.openlocfilehash: aa6feb1b07f491a90a78684e254910d387b9bccd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: beb2fcfaa36303eeaabd5278cf5e7a128282270e
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75714843"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864232"
 ---
 # <a name="how-to-write-a-copy-constructor-c-programming-guide"></a>Практическое руководство. Создание конструктора копий (руководство по программированию на C#)
 В C# не предусмотрен конструктор копии для объектов, однако его можно написать самостоятельно.  

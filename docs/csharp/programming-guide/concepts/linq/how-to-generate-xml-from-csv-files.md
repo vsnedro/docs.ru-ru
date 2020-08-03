@@ -1,13 +1,14 @@
 ---
 title: Создание XML из CSV-файлов (C#)
+description: Узнайте, как использовать LINQ и LINQ to XML в C# для создания XML-документа из CSV-файла. Запрос использует предложение let, чтобы разбить каждую строку на массив полей.
 ms.date: 07/20/2015
 ms.assetid: 57b9ccde-f983-4a21-ae61-70ecede30307
-ms.openlocfilehash: 643c05cb440165c4461c3e9c80e69701241ab8d1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2fc9954a51fc1f2979c6cce13805ed15cdb88741
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635812"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105179"
 ---
 # <a name="how-to-generate-xml-from-csv-files-c"></a>Создание XML из CSV-файлов (C#)
 В этом примере показано, как использовать LINQ и [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] для создания XML-документа из файла с разделителями-запятыми (.csv).  

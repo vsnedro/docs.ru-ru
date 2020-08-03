@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Константы
+description: Константы в C# — это литеральные значения, которые известны во время компиляции и не изменяются после компиляции программы. Константами могут быть только встроенные типы C#.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, constants
 - constants [C#]
 ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
-ms.openlocfilehash: 85f6684617b893bdd85eb5b530aa2481941fbc5d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dd42dcd62bb46898c20f14cdc893b8f5801894f2
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77093556"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86474986"
 ---
 # <a name="constants-c-programming-guide"></a>Константы (Руководство по программированию на C#)
 Константы — это постоянные значения, которые известны во время компиляции и не изменяются во время выполнения программы. Константы должны объявляться с модификатором [const](../../language-reference/keywords/const.md). Только [встроенные типы](../../language-reference/builtin-types/built-in-types.md) C# (за исключением <xref:System.Object?displayProperty=nameWithType>) могут быть объявлены как `const`. Пользовательские типы, включая классы, структуры и массивы, не могут объявляться как `const`. Модификатор [readonly](../../language-reference/keywords/readonly.md) позволяет создать класс, структуру или массив, которые инициализируются один раз (например, в конструкторе), и впоследствии изменить их нельзя.  
@@ -36,7 +37,7 @@ ms.locfileid: "77093556"
   
  [!code-csharp[csProgGuideObjects#66](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#66)]  
   
- Константы могут иметь пометку [public](../../language-reference/keywords/public.md), [private](../../language-reference/keywords/private.md), [protected](../../language-reference/keywords/protected.md), [internal](../../language-reference/keywords/internal.md), [protected internal](../../language-reference/keywords/protected-internal.md) или [private protected](../../language-reference/keywords/private-protected.md). Эти модификаторы доступа определяют, каким образом пользователи класса смогут получать доступ к константе. Дополнительные сведения см. в статье [Модификаторы доступа](./access-modifiers.md).  
+ Константы могут иметь пометку [public](../../language-reference/keywords/public.md), [private](../../language-reference/keywords/private.md), [protected](../../language-reference/keywords/protected.md), [internal](../../language-reference/keywords/internal.md), [protected internal](../../language-reference/keywords/protected-internal.md) или [private protected](../../language-reference/keywords/private-protected.md). Эти модификаторы доступа определяют, каким образом пользователи класса смогут получать доступ к константе. Дополнительные сведения см. в разделе [Модификаторы доступа](./access-modifiers.md).  
   
  Доступ к константам осуществляется так, как если бы они были [статическими](../../language-reference/keywords/static.md) полями, поскольку значение константы одинаково для всех экземпляров типа. Для их объявления используйте ключевое слово `static`. Выражения, которые не относятся к классу, определяющему константу, должны включать имя класса, период и имя константы для доступа к этой константе. Пример:  
   
@@ -45,11 +46,11 @@ ms.locfileid: "77093556"
 ## <a name="c-language-specification"></a>Спецификация языка C#  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Классы и структуры](./index.md)
 - [Свойства](./properties.md)
 - [Типы](../types/index.md)
 - [readonly](../../language-reference/keywords/readonly.md)
-- [Неизменность в C#, часть 1. Виды неизменности](https://docs.microsoft.com/archive/blogs/ericlippert/immutability-in-c-part-one-kinds-of-immutability)
+- [Immutability in C# Part One: Kinds of Immutability](https://docs.microsoft.com/archive/blogs/ericlippert/immutability-in-c-part-one-kinds-of-immutability) (Неизменность в C#, часть 1. Виды неизменности)

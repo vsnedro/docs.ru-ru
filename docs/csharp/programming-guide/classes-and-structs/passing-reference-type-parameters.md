@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Передача параметров ссылочного типа
+description: При передаче параметра ссылочного типа по значению в C# могут измениться данные в упоминаемом объекте, но не значение самой ссылки.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - method parameters [C#], reference types
 - parameters [C#], reference
 ms.assetid: 9e6eb65c-942e-48ab-920a-b7ba9df4ea20
-ms.openlocfilehash: 6fa0e60fafabaa9fb04cdc5d5bf3f9e29490e84f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 64a4735eded7a468549862b3221b4fbd0966e64d
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75714717"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864713"
 ---
 # <a name="passing-reference-type-parameters-c-programming-guide"></a>Передача параметров ссылочного типа (Руководство по программированию в C#)
 Переменная [ссылочного типа](../../language-reference/keywords/reference-types.md) содержит не сами данные, а ссылку на них. При передаче параметра ссылочного типа по значению можно изменять данные, относящиеся к объекту, на который указывает ссылка, например, значение члена класса. Тем не менее вы не можете изменить значение самой ссылки. Например, вы не можете использовать одну и ту же ссылку, чтобы выделить память для нового объекта и сохранить его вне этого метода. Для этого необходимо передать параметр с использованием ключевого слова [ref](../../language-reference/keywords/ref.md) или [out](../../language-reference/keywords/out-parameter-modifier.md). В следующих примерах мы для простоты используем `ref`.  
@@ -38,7 +39,7 @@ ms.locfileid: "75714717"
   
  Дополнительные сведения о строках см. в [этом разделе](../../language-reference/builtin-types/reference-types.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Передача параметров](./passing-parameters.md)

@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Реализация облегченного класса с автоматически реализуемыми свойствами (руководство по программированию на C#)
+description: Узнайте, как создать неизменяемый упрощенный класс в C#, который инкапсулирует автоматически реализуемые свойства. Существует два подхода к реализации.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - auto-implemented properties [C#]
 - properties [C#], auto-implemented
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-ms.openlocfilehash: 6d121f6be768d41d22ea01d871662913b2daae2b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: de9034772bad1f28e27abe01595309dd84ddc3e7
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79170277"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864570"
 ---
 # <a name="how-to-implement-a-lightweight-class-with-auto-implemented-properties-c-programming-guide"></a>Практическое руководство. Реализация облегченного класса с автоматически реализуемыми свойствами (руководство по программированию на C#)
 
@@ -145,7 +146,7 @@ public class Program
 
 Компилятор создает резервные поля для каждого автоматически реализуемого свойства. Эти поля недоступны непосредственно из исходного кода.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Свойства](./properties.md)
 - [struct](../../language-reference/builtin-types/struct.md)

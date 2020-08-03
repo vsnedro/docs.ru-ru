@@ -1,13 +1,14 @@
 ---
 title: Преобразование типов данных (C#)
+description: Методы преобразования изменяют тип входных объектов. Ознакомьтесь с операциями преобразования в запросах LINQ в C#, такими как Enumerable.AsEnumerable и Enumerable.OfType.
 ms.date: 07/20/2015
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
-ms.openlocfilehash: 328c790a1a360907c91f69b3b6330b0b25eb414b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3291690f9aaee945ca7feb04ebbc676db2612894
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75347200"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105486"
 ---
 # <a name="converting-data-types-c"></a>Преобразование типов данных (C#)
 Методы преобразования изменяют тип входных объектов.
@@ -25,7 +26,7 @@ ms.locfileid: "75347200"
 
  Методы преобразования в этой таблице, имена которых начинаются с "As", изменяют статический тип исходной коллекции, но не выполняют перечисление. Методы, имена которых начинаются с "To", перечисляют исходную коллекцию и помещают элементы в соответствующий тип коллекции.
 
-|Имя метода|Описание:|Синтаксис выражения запроса C#|Дополнительные сведения|
+|Имя метода|Описание|Синтаксис выражения запроса C#|Дополнительные сведения|
 |-----------------|-----------------|---------------------------------|----------------------|
 |AsEnumerable|Возвращает входное значение, типизированное как <xref:System.Collections.Generic.IEnumerable%601>.|Не применяется|<xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType>|
 |AsQueryable|Преобразует <xref:System.Collections.IEnumerable> (универсальный шаблон) в <xref:System.Linq.IQueryable> (универсальный шаблон).|Не применяется|<xref:System.Linq.Queryable.AsQueryable%2A?displayProperty=nameWithType>|
@@ -75,7 +76,7 @@ static void Cast()
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (C#)](./standard-query-operators-overview.md)

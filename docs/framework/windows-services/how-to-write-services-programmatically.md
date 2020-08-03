@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Создание службы программным способом
+description: Узнайте, как создать службу программным способом, самостоятельно настроив наследование и другие элементы инфраструктуры.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Windows Service applications, creating
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
 author: ghogen
-ms.openlocfilehash: 5637d569ad5261bff6865af4ab2ed8b7631d2d38
-ms.sourcegitcommit: 289e06e904b72f34ac717dbcc5074239b977e707
+ms.openlocfilehash: 9693e3d387f38319519ab04211d8219fe1e5dda1
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71053561"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925713"
 ---
 # <a name="how-to-write-services-programmatically"></a>Практическое руководство. Создание службы программным способом
 Если вы решили не использовать шаблон проекта "Служба Windows", для создания собственной службы вам придется настроить наследование и другие элементы инфраструктуры самостоятельно. Создавая службу программным способом, вам необходимо выполнить несколько действий, которые в случае с шаблоном выполняются автоматически.  

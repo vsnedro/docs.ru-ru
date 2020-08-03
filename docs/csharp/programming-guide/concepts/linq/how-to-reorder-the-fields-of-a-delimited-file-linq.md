@@ -1,13 +1,14 @@
 ---
 title: Как изменить порядок полей файла с разделителями (LINQ) (C#)
+description: Узнайте, как изменить порядок полей в CSV-файле в LINQ в C#. В этом примере показано изменение порядка столбцов, объединение в столбцы и сортировка строк по значению столбца.
 ms.date: 07/20/2015
 ms.assetid: 4e62d82c-61b7-4f18-b9a1-86723746d7d2
-ms.openlocfilehash: 6bc502ff12a908edf43f9ff7f5f63f98c3ff29c4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3ebc56b418d2732a296896a19d770136a56e2fbb
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75347658"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103410"
 ---
 # <a name="how-to-reorder-the-fields-of-a-delimited-file-linq-c"></a>Как изменить порядок полей файла с разделителями (LINQ) (C#)
 CSV-файл — это текстовый файл, который часто используется для хранения данных электронных таблиц или других табличных данных, представленных строками и столбцами. Использование метода <xref:System.String.Split%2A> для разделения полей упрощает создание запросов к CSV-файлам и управление ими с помощью LINQ. Фактически та же технология может использоваться для изменения порядка частей любой структурированной строки текста, а не только CSV-файлов.  
@@ -78,7 +79,7 @@ class CSVFiles
 ## <a name="compiling-the-code"></a>Компиляция кода  
 Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (C#)](./linq-and-strings.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

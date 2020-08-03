@@ -1,13 +1,14 @@
 ---
 title: Пример, выводящий части документа в формате Office Open XML (C#)
+description: Узнайте, как открывать документ Office Open XML и как обращаться к частям этого документа с помощью LINQ в C#. В этом примере выводятся часть, содержащая сам документ, и часть, содержащая стиль документа.
 ms.date: 07/20/2015
 ms.assetid: 6cd37055-89b4-42e8-bf27-5a29717e35f3
-ms.openlocfilehash: be4c0ba2ce2a007fa6e19a65d7d86854d85851c4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c5755ad8e8772195c056b0c1c896c914b1a63a55
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "66486001"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103910"
 ---
 # <a name="example-that-outputs-office-open-xml-document-parts-c"></a>Пример, выводящий части документа в формате Office Open XML (C#)
 В этом разделе разъясняется, как открывать документ Office Open XML и как обращаться к частям этого документа.  

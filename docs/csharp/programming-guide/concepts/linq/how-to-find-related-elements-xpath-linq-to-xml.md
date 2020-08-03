@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Поиск связанных элементов (XPath-LINQ to XML) (C#)
+description: В этом примере C# сравниваются способы получения элемента по атрибуту, на который ссылается значение другого элемента, в XPath и LINQ to XML.
 ms.date: 07/20/2015
 ms.assetid: 41b386ee-562d-4841-bd6b-e44a7eb69f26
-ms.openlocfilehash: f74c338019c0451ab5e3ac0d8da10392ae5601ed
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4423e7d719d39e71bcbcc9e88d052c6aff4ffb05
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169237"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105251"
 ---
 # <a name="how-to-find-related-elements-xpath-linq-to-xml-c"></a>Практическое руководство. Поиск связанных элементов (XPath-LINQ to XML) (C#)
 В этом разделе показано, как возвращать элемент, выбирая атрибут, обращение к которому осуществляется с помощью значения другого элемента.  
@@ -21,7 +22,7 @@ ms.locfileid: "79169237"
   
  Обратите внимание, что индексирование в списках .NET начинается с нуля. Индексирование в коллекции узлов в предикате XPath начинается с единицы. Данное различие находит отражение в следующем примере.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Клиенты и заказы (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Заказчики и заказы (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
 ```csharp  
 XDocument co = XDocument.Load("CustomersOrders.xml");  

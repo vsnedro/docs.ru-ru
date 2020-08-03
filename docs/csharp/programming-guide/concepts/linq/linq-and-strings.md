@@ -1,13 +1,14 @@
 ---
 title: LINQ и строки (C#)
+description: LINQ позволяет запрашивать и преобразовывать строки и коллекции строк. Запросы LINQ можно комбинировать с традиционными строковыми функциями и регулярными выражениями C#.
 ms.date: 07/20/2015
 ms.assetid: dbe2d657-b3f3-487e-b645-21fb2d71cd7b
-ms.openlocfilehash: b805bc7318b8c5fe70ab1c060d1058a6bbc4f177
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c515a0c56ad6473f93c6339540e4ed0245bb5bd2
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635539"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165608"
 ---
 # <a name="linq-and-strings-c"></a>LINQ и строки (C#)
 
@@ -72,7 +73,7 @@ LINQ можно использовать для запроса и преобра
   
   Показывает, как выполнять математические расчеты на основе текстовых данных в CSV-файлах.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ (C#)](index.md)
 - [Создание кода XML из CSV-файлов](how-to-generate-xml-from-csv-files.md)

@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Перехват ошибок анализа (C#)
+description: В этом примере LINQ to XML в C# показано обнаружение неправильно сформированного или недопустимого кода XML. LINQ to XML использует XmlReader, который вызывает исключение при обнаружении неправильно сформированного или недопустимого кода XML.
 ms.date: 07/20/2015
 ms.assetid: bfb612d4-5605-48ef-8c93-915cf9d5dcfb
-ms.openlocfilehash: 1a05037892061dec85e7837472e8ec13e076724b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0a891097322ef6acce062ea927692b01cc425e6c
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141480"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87105407"
 ---
 # <a name="how-to-catch-parsing-errors-c"></a>Практическое руководство. Перехват ошибок анализа (C#)
 В этом разделе показано, как обнаружить код XML, имеющий неправильный формат или не прошедший проверку правильности.  

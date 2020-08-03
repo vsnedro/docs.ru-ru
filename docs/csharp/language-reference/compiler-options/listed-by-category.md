@@ -6,12 +6,12 @@ helpviewer_keywords:
 - compiler options [C#], listed by category
 - Visual C#, compiler options listed by category
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
-ms.openlocfilehash: 1e78b920eb6a1eae870a425b91711ac9d87b6530
-ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
+ms.openlocfilehash: f216534140b6e207ac110bb54b3e4f93a8ac6b70
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84811685"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86474024"
 ---
 # <a name="c-compiler-options-listed-by-category"></a>Параметры компилятора C#, упорядоченные по категориям
 
@@ -37,7 +37,7 @@ ms.locfileid: "84811685"
 |[/preferreduilang](preferreduilang-compiler-option.md)|Укажите язык для выходных данных компилятора.|
 |[/refout](refout-compiler-option.md)|Создание ссылочной сборки в дополнение к основной.|
 |[/refonly](refonly-compiler-option.md)|Создание ссылочной сборки вместо основной.|
-|[-target](target-compiler-option.md)|Задает формат выходного файла, используя один из пяти параметров: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md) или [-target:winmdobj](target-winmdobj-compiler-option.md).|
+|[-target](target-compiler-option.md)|Задает формат выходного файла, используя один из следующих параметров: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md) или [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |-modulename:\<string>|Укажите имя исходного модуля.|
 
 ## <a name="net-framework-assemblies"></a>Сборки .NET Framework

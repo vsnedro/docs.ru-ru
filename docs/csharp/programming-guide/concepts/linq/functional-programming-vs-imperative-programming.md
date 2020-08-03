@@ -1,13 +1,14 @@
 ---
 title: Сравнение функционального и Императивное программирование (C#)
+description: В этой статье сравнивается функциональное программирование в C# с процедурным программированием. Функциональное программирование обеспечивает неизменность с помощью чистых функций.
 ms.date: 07/20/2015
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
-ms.openlocfilehash: a163a62912ed2a44d6ea8cad5bc536f03343f15c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bc421d654e532293b522dab9d43920d0fffd7b92
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69594312"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103741"
 ---
 # <a name="functional-programming-vs-imperative-programming-c"></a>Сравнение функционального и Императивное программирование (C#)
 В этом разделе сравнивается и противопоставляется функциональное программирование с традиционным императивным (процедурным) программированием.  

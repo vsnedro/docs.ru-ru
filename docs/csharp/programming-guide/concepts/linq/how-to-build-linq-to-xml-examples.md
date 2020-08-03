@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Сборка примеров LINQ to XML (C#)
+description: Укажите соответствующие директивы using, необходимые для компиляции C#, чтобы запустить предоставленные фрагменты кода и примеры LINQ to XML.
 ms.date: 07/20/2015
 ms.assetid: e5d18fa1-2704-48fe-a44b-1564f97c9e9c
-ms.openlocfilehash: 289a13daed7e3c871156bf50c6fa04c113c0cd13
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f54944dcb68e1fd7d00f37c9c5381f345efc820e
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141457"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87103587"
 ---
 # <a name="how-to-build-linq-to-xml-examples-c"></a>Практическое руководство. Сборка примеров LINQ to XML (C#)
 В разных фрагментах кода и примерах, приведенных в этой документации, используются классы и типы из различных пространств имен. При компиляции кода C# необходимо указывать соответствующие директивы `using`.  
@@ -34,6 +35,6 @@ using System.Reflection;
 using System.IO.Packaging;  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о программировании LINQ to XML (C#)](./linq-to-xml-overview.md)

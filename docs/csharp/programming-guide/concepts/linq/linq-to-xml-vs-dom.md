@@ -1,13 +1,14 @@
 ---
 title: LINQ to XML или модель DOM (C#)
+description: Узнайте о некоторых основных различиях между LINQ to XML и программным интерфейсом API XML, а именно моделью DOM консорциума W3C.
 ms.date: 07/20/2015
 ms.assetid: 51c0e3d2-c047-4e6a-a423-d61a882400b7
-ms.openlocfilehash: 92d0da494829d57517d52fe93a3cbcf1398fdbe4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f5fc3fd7869079d47d7c9031e3668afeed7a117b
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168393"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165336"
 ---
 # <a name="linq-to-xml-vs-dom-c"></a>LINQ to XML или модель DOM (C#)
 В этом разделе описываются некоторые основные различия между [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] и текущим преобладающим программным интерфейсом API XML, а именно моделью DOM консорциума W3C.  

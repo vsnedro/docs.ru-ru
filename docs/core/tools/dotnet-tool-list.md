@@ -2,12 +2,12 @@
 title: Команда dotnet tool list
 description: Команда dotnet tool list выводит список средств .NET Core, установленных на компьютере.
 ms.date: 02/14/2020
-ms.openlocfilehash: 7ca894ab0f5daf0118ff92fb39e0118b952b3d83
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: 4035c5be233232e53c6d7150485f737108c1e18d
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768278"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925466"
 ---
 # <a name="dotnet-tool-list"></a>dotnet tool list
 
@@ -37,7 +37,7 @@ dotnet tool list -h|--help
 
 * Чтобы получить список глобальных средств, установленных в расположении по умолчанию, используйте параметр `--global`.
 * Чтобы получить список глобальных средств, установленных в настраиваемом расположении, используйте параметр `--tool-path`.
-* Для перечисления локальных средств — локальное средство. Используйте параметр `--local` или опустите параметры `--global`, `--tool-path` и `--local`.
+* Чтобы получить список локальных средств, используйте параметр `--local` или опустите параметры `--global`, `--tool-path` и `--local`.
 
 **Локальные средства доступны в пакете SDK для .NET Core, начиная с версии 3.0.**
 

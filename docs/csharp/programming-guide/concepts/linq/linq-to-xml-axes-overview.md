@@ -1,13 +1,14 @@
 ---
 title: Общие сведения об осях LINQ to XML (C#)
+description: Узнайте о методах осей в C#, также называемых осями. Можно запросить XML-дерево в LINQ для поиска элементов и атрибутов и извлечения их значений с помощью осей.
 ms.date: 07/20/2015
 ms.assetid: 516792fb-461d-40a8-8a50-9993a51258fc
-ms.openlocfilehash: c8b64731925f37d54bded62fae4ccae9933ffbe9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bbda844e8cb2e3b1ff116fd834c6ab1fdd20c1f8
+ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635526"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87165444"
 ---
 # <a name="linq-to-xml-axes-overview-c"></a>Общие сведения об осях LINQ to XML (C#)
 После создания XML-дерева или загрузки XML-документа в XML-дерево можно опросить его для поиска элементов и атрибутов и извлечения их значений. Коллекции получают с помощью *методов оси*, называемых также *осями*. Некоторые оси являются методами в классах <xref:System.Xml.Linq.XElement> и <xref:System.Xml.Linq.XDocument>, которые возвращают коллекции <xref:System.Collections.Generic.IEnumerable%601>. Некоторые оси являются методами расширений в классе <xref:System.Xml.Linq.Extensions>. Оси, которые реализованы как методы расширений, работают с коллекциями и возвращают коллекции.  
@@ -23,7 +24,7 @@ ms.locfileid: "75635526"
 ## <a name="methods-for-retrieving-a-collection-of-elements"></a>Методы получения коллекции элементов  
  Ниже приведена сводка методов класса <xref:System.Xml.Linq.XElement> (а также его базовых классов), которые можно вызвать в экземпляре <xref:System.Xml.Linq.XElement>, чтобы вернуть коллекцию элементов.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XNode.Ancestors%2A?displayProperty=nameWithType>|Возвращает коллекцию <xref:System.Collections.Generic.IEnumerable%601> предков экземпляра <xref:System.Xml.Linq.XElement>. Перегрузка возвращает коллекцию <xref:System.Collections.Generic.IEnumerable%601> предков экземпляра <xref:System.Xml.Linq.XElement>, имеющих указанный атрибут <xref:System.Xml.Linq.XName>.|  
 |<xref:System.Xml.Linq.XContainer.Descendants%2A?displayProperty=nameWithType>|Возвращает коллекцию <xref:System.Collections.Generic.IEnumerable%601> потомков экземпляра <xref:System.Xml.Linq.XElement>. Перегрузка возвращает коллекцию <xref:System.Collections.Generic.IEnumerable%601> потомков экземпляра <xref:System.Xml.Linq.XElement>, имеющих указанный атрибут <xref:System.Xml.Linq.XName>.|  
@@ -36,24 +37,24 @@ ms.locfileid: "75635526"
 ## <a name="method-for-retrieving-a-single-element"></a>Метод получения одного элемента  
  Следующий метод позволяет получить один дочерний элемент из объекта <xref:System.Xml.Linq.XElement>.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=nameWithType>|Возвращает первый дочерний элемент объекта <xref:System.Xml.Linq.XElement>, имеющий указанный атрибут <xref:System.Xml.Linq.XName>.|  
   
 ## <a name="method-for-retrieving-a-collection-of-attributes"></a>Метод получения коллекции атрибутов  
  Следующий метод позволяет получить атрибуты из объекта <xref:System.Xml.Linq.XElement>.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>|Возвращает коллекцию <xref:System.Collections.Generic.IEnumerable%601> всех атрибутов <xref:System.Xml.Linq.XAttribute>.|  
   
 ## <a name="method-for-retrieving-a-single-attribute"></a>Метод получения одного атрибута  
  Следующий метод позволяет получить один атрибут из объекта <xref:System.Xml.Linq.XElement>.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>|Возвращает атрибут <xref:System.Xml.Linq.XAttribute>, имеющий указанный атрибут <xref:System.Xml.Linq.XName>.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оси LINQ to XML (C#)](linq-to-xml-axes-overview.md)

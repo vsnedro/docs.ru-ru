@@ -1,13 +1,14 @@
 ---
 title: Как запросить файлы с указанными атрибутами или именем (C#)
+description: Узнайте, как использовать LINQ в C# для поиска файлов с указанным расширением имени файла в дереве каталогов и как обнаружить самый новый или самый старый файл.
 ms.date: 07/20/2015
 ms.assetid: 560e3879-b0b3-4549-ad02-0a53aff2f83c
-ms.openlocfilehash: fc6456f159887b7ad109e8ad48f0f79999d53e09
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9820b96e19d805b792e18ff242e64dfb6cf4a606
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168873"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104497"
 ---
 # <a name="how-to-query-for-files-with-a-specified-attribute-or-name-c"></a>Как запросить файлы с указанными атрибутами или именем (C#)
 В этом примере показано, как обнаружить все файлы с указанным расширением (например, TXT) в заданном дереве каталогов. Кроме того, он показывает, как обнаружить самый новый или самый старый файл в дереве, используя время создания.  
@@ -66,7 +67,7 @@ class FindFileByExtension
 ## <a name="compiling-the-code"></a>Компиляция кода  
   Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to Objects (C#)](./linq-to-objects.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

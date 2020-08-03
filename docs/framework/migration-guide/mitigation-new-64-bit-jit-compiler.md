@@ -1,20 +1,21 @@
 ---
 title: Устранение рисков. Новый 64-разрядный JIT-компилятор
+description: Узнайте о новом 64-разрядном JIT-компиляторе, входящем в .NET Framework 4.6, и непредвиденном поведении или исключениях, которые могут возникать во время компиляции.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - JIT compiler, 64-bit
 - JIT compilation, 64-bit
 - RyuJIT compiler
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
-ms.openlocfilehash: 883aaf032bde632b08f965d3450cfbea4feb8e65
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f059cbdd3b2a66ac8a668b7b8a80d9ad1551fa64
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79181259"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475233"
 ---
 # <a name="mitigation-new-64-bit-jit-compiler"></a>Устранение рисков. Новый 64-разрядный JIT-компилятор
-Начиная с .NET Framework 4.6 среда выполнения включает в себя новый 64-разрядный JIT-компилятор. Это изменение не влияет на компиляцию с помощью 32-разрядного JIT-компилятора.  
+Начиная с .NET Framework 4.6, среда выполнения включает в себя новый 64-разрядный JIT-компилятор. Это изменение не влияет на компиляцию с помощью 32-разрядного JIT-компилятора.  
   
 ## <a name="unexpected-behavior-or-exceptions"></a>Непредвиденное поведение или исключения  
  В некоторых случаях компиляция с помощью нового 64-разрядного JIT-компилятора приводит к исключению среды выполнения или к поведению, которое не наблюдается при выполнении кода, скомпилированного старым 64-разрядным JIT-компилятором. Известные различия включают в себя следующее.  
@@ -67,7 +68,7 @@ ms.locfileid: "79181259"
   
  Можно также сообщить нам об обнаруженной проблеме, обратившись в службу [Microsoft Connect](https://connect.microsoft.com/VisualStudio).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Совместимость приложений](application-compatibility.md)
-- [Элемент \<useLegacyJit>](../configure-apps/file-schema/runtime/uselegacyjit-element.md)
+- [\<useLegacyJit> Элемент](../configure-apps/file-schema/runtime/uselegacyjit-element.md)

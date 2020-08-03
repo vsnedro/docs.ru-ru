@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Передача параметров типа значения
+description: При передаче переменной типа значения в метод по значению в C# никакие изменения не влияют на исходные данные. Чтобы изменить значение, необходимо выполнить передачу по ссылке.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - method parameters [C#], value types
 - parameters [C#], value
 ms.assetid: 193ab86f-5f9b-4359-ac29-7cdf8afad3a6
-ms.openlocfilehash: 13982254922d72337feeb502d2c84ebb42cf27bb
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 84829722cfb0b7ce71aff36f27a7c97cfa07ad5e
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84004560"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864700"
 ---
 # <a name="passing-value-type-parameters-c-programming-guide"></a>Передача параметров типа значения (Руководство по программированию в C#)
 Переменная [типа значения](../../language-reference/builtin-types/value-types.md) напрямую содержит данные, в отличие от переменной [ссылочного типа](../../language-reference/keywords/reference-types.md), которая содержит только ссылку на данные. Передавая в метод переменную типа значения, вы передаете ему копию этой переменной. Любые изменения параметра, которые происходят внутри метода, не влияют на исходные данные, хранимые в переменной. Если вы хотите, чтобы вызываемый метод изменял значение аргумента, его необходимо передать по ссылке с помощью ключевых слов [ref](../../language-reference/keywords/ref.md) или [out](../../language-reference/keywords/out-parameter-modifier.md). Можно также использовать ключевое слово [in](../../language-reference/keywords/in-parameter-modifier.md) для передачи параметра значения по ссылке, чтобы избежать копирования и гарантировать неизменность значения. В следующих примерах мы для простоты используем `ref`.  

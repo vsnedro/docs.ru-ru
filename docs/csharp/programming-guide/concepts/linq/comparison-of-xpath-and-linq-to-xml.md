@@ -1,16 +1,17 @@
 ---
 title: Сравнительные характеристики XPath и LINQ to XML
+description: Узнайте о сходствах и различиях функциональных возможностей XPath и LINQ to XML в C#. Для запроса XML-дерева можно использовать и то и другое.
 ms.date: 07/20/2015
 dev_langs:
 - csharp
 - vb
 ms.assetid: 87d361b1-daa9-4fd4-a53a-cbfa40111ad3
-ms.openlocfilehash: e9bf192a2075653802f0c5a8b4e44ff0ceacb975
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e2f34903b20a53dea6e5ff4858d4fadaebd9c37a
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "66487540"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104005"
 ---
 # <a name="comparison-of-xpath-and-linq-to-xml"></a>Сравнительные характеристики XPath и LINQ to XML
 XPath и LINQ to XML имеют некоторые сходные функциональные возможности. И то и другое можно использовать, чтобы запрашивать XML-дерево для возвращения таких результатов, как коллекция элементов, коллекция атрибутов, коллекция узлов или значение элемента или атрибута. Однако между ними также есть некоторые различия.  

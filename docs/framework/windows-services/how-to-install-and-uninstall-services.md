@@ -1,5 +1,6 @@
 ---
 title: Практическое руководство. Установка и удаление служб Windows
+description: Узнайте, как устанавливать и удалять службы Windows. Если вы разрабатываете службу Windows с помощью .NET, можно использовать программу InstallUtil.exe или PowerShell.
 ms.date: 02/05/2019
 helpviewer_keywords:
 - Windows Service applications, deploying
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - installutil.exe tool
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 author: ghogen
-ms.openlocfilehash: 259b353edc269a77a51e790544018481a53af188
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5597043bb1c5af05f5f3633cba6ee6e6de1c52c1
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596362"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925609"
 ---
 # <a name="how-to-install-and-uninstall-windows-services"></a>Практическое руководство. Установка и удаление служб Windows
 

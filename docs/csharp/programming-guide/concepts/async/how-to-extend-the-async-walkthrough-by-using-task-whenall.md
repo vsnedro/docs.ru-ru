@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Расширение пошагового руководства по асинхронным процедурам с использованием метода Task.WhenAll (C#)
+description: Узнайте, как повысить производительность асинхронного решения в C# с помощью метода Task.WhenAll. Этот метод асинхронно ожидает завершения нескольких асинхронных операций.
 ms.date: 07/20/2015
 ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
-ms.openlocfilehash: afd7dda4e876b7faa54ae4a8e62d640d2b9aaf07
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 275f4aeca854f8938642dbea40bf7fd9dc5362d9
+ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73970023"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86925219"
 ---
 # <a name="how-to-extend-the-async-walkthrough-by-using-taskwhenall-c"></a>Практическое руководство. Расширение пошагового руководства по асинхронным процедурам с использованием метода Task.WhenAll (C#)
 
@@ -18,13 +19,13 @@ ms.locfileid: "73970023"
 Метод `Task.WhenAll` можно применить к коллекции задач. Метод `WhenAll`, примененный к коллекции, возвращает одну задачу, которая остается незавершенной до тех пор, пока не будет выполнена каждая задача из коллекции. Как видим, задачи выполняются параллельно, однако дополнительные потоки не создаются. Задачи могут выполняться в любом порядке.
 
 > [!IMPORTANT]
-> Следующие процедуры описывают расширения для асинхронных приложений, разработка которых описывается в статье [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await](./walkthrough-accessing-the-web-by-using-async-and-await.md). Вы можете разработать приложения, выполнив пошаговое руководство или скачав код на странице [Примеры кода от разработчиков](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
+> Следующие процедуры описывают расширения для асинхронных приложений, разработка которых описывается в статье [Пошаговое руководство. Доступ к Интернету с помощью модификатора Async и оператора Await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md). Вы можете разработать приложения, выполнив пошаговое руководство или скачав код на странице [Примеры кода от разработчиков](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
 >
 > Для выполнения этого примера на компьютере должна быть установлена среда Visual Studio 2012 или более поздней версии.
 
 ### <a name="to-add-taskwhenall-to-your-geturlcontentsasync-solution"></a>Добавление метода Task.WhenAll в решение GetURLContentsAsync
 
-1. Добавьте метод `ProcessURLAsync` в первое приложение, которое разрабатывается в статье [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await](./walkthrough-accessing-the-web-by-using-async-and-await.md).
+1. Добавьте метод `ProcessURLAsync` в первое приложение, которое разрабатывается в статье [Пошаговое руководство. Доступ к Интернету с помощью модификатора Async и оператора Await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md).
 
     - Если вы скачали код со страницы [Примеры кода от разработчиков](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), откройте проект AsyncWalkthrough, а затем добавьте `ProcessURLAsync` в файл MainWindow.xaml.cs.
 
@@ -96,7 +97,7 @@ ms.locfileid: "73970023"
 
 ### <a name="to-add-taskwhenall-to-the-httpclientgetbytearrayasync-solution"></a>Добавление метода Task.WhenAll в решение HttpClient.GetByteArrayAsync
 
-1. Добавьте следующую версию метода `ProcessURLAsync` во второе приложение, которое разрабатывается в статье [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await](./walkthrough-accessing-the-web-by-using-async-and-await.md).
+1. Добавьте следующую версию метода `ProcessURLAsync` во второе приложение, которое разрабатывается в статье [Пошаговое руководство. Доступ к Интернету с помощью модификатора Async и оператора Await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md).
 
     - Если вы скачали код со страницы [Примеры кода от разработчиков](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), откройте проект AsyncWalkthrough_HttpClient, а затем добавьте `ProcessURLAsync` в файл MainWindow.xaml.cs.
 
@@ -171,7 +172,7 @@ ms.locfileid: "73970023"
 
 ### <a name="to-test-the-taskwhenall-solutions"></a>Тестирование решений Task.WhenAll
 
-- Для любого из решений нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Запуск**. Полученный вывод должен напоминать вывод из асинхронных решений в статье [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md). Тем не менее обратите внимание, что веб-сайты каждый раз отображаются в другом порядке.
+- Для любого из решений нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Запуск**. Полученный вывод должен напоминать вывод из асинхронных решений в статье [Пошаговое руководство. Доступ к Интернету с помощью модификатора Async и оператора Await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md). Тем не менее обратите внимание, что веб-сайты каждый раз отображаются в другом порядке.
 
 ## <a name="example"></a>Пример
 
@@ -437,7 +438,7 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>
-- [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md) (Пошаговое руководство. Обращение к веб-сайтам с помощью async и await в C#)
+- [Пошаговое руководство: Доступ к Интернету с помощью модификатора Async и оператора Await в C#](./walkthrough-accessing-the-web-by-using-async-and-await.md)

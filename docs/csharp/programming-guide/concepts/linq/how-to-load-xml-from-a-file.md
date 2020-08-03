@@ -1,13 +1,14 @@
 ---
 title: Загрузка XML-кода из файла (C#)
+description: Узнайте, как загрузить XML-код из URI с помощью метода XElement.Load в C#. В этом примере показана загрузка XML-файла и вывод XML-дерева на консоль.
 ms.date: 07/20/2015
 ms.assetid: 3ed38487-8028-4209-9872-c8dce0ed4dfe
-ms.openlocfilehash: 635b338bbaf9c15779bccab4d4c824037858b338
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 29de914139d1e9abcda2097addca9219d44d2696
+ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79169056"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87104953"
 ---
 # <a name="how-to-load-xml-from-a-file-c"></a>Загрузка XML-кода из файла (C#)
 В этом разделе показана загрузка XML из URI с помощью метода <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>.  

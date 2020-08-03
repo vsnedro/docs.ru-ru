@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Массивы массивов
+description: Массив массивов в C# — это массив, элементы которого являются массивами различных измерений и размеров. Узнайте, как объявлять и инициализировать массивы массивов, а также получать доступ к ним.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - jagged arrays [C#]
 - arrays [C#], jagged
 ms.assetid: 537c65a6-0e0a-4a00-a2b8-086f38519c70
-ms.openlocfilehash: 56013f0143d5efcb31a476909cb6e92504ff0dbc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 40da9fbda34aef4e69ebf2ae20485e883b79f871
+ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705708"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86474687"
 ---
 # <a name="jagged-arrays-c-programming-guide"></a>Массивы массивов (Руководство по программированию на C#)
 
@@ -64,7 +65,7 @@ ms.locfileid: "75705708"
   
  [!code-csharp[csProgGuideArrays#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#18)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Array>
 - [Руководство по программированию на C#](../index.md)

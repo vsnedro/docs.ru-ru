@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Закрытые конструкторы
+description: Закрытый конструктор — это особый конструктор экземпляров в C#, используемый для ограничения способа создания объекта. Он может использоваться с фабричными методами или другими идиомами конструирования.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, private constructors
 - private constructors [C#]
 ms.assetid: 29eeaa7d-8d81-453c-94b9-0e2800172621
-ms.openlocfilehash: 2f8b93fbeb7c2996f3e2683fe86f159fbfa61a92
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a6b86ccb870da0262bcbc516e176e00d17724f9f
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705448"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86864063"
 ---
 # <a name="private-constructors-c-programming-guide"></a>Закрытые конструкторы (Руководство по программированию на C#)
 Закрытый конструктор — это особый конструктор экземпляров. Обычно он используется в классах, содержащих только статические элементы. Если в классе один или несколько закрытых конструкторов и ни одного открытого конструктора, то прочие классы (за исключением вложенных классов) не смогут создавать экземпляры этого класса. Пример:  
@@ -34,7 +35,7 @@ ms.locfileid: "75705448"
 
 Дополнительные сведения см. в разделе [Закрытые конструкторы](~/_csharplang/spec/classes.md#private-constructors) в [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction). Спецификация языка является предписывающим источником информации о синтаксисе и использовании языка C#.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Классы и структуры](./index.md)

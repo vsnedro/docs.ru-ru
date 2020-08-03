@@ -11,12 +11,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: fe370b34d311816a815f3b2d419751ac7871f013
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 78a47b01cc8fba4cb45a686adad901784552c1c1
+ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "83703578"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865337"
 ---
 # <a name="how-to-migrate-from-newtonsoftjson-to-systemtextjson"></a>Миграция из Newtonsoft.Json в System.Text.Json
 
@@ -318,11 +318,27 @@ The JSON value could not be converted to System.String.
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter.cs)]
 
-Зарегистрируйте этот пользовательский преобразователь, [используя атрибут для класса POCO](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) или [добавив преобразователь](system-text-json-converters-how-to.md#registration-sample---converters-collection) в коллекцию <xref:System.Text.Json.JsonSerializerOptions.Converters>.
+Зарегистрируйте этот пользовательский преобразователь, [добавив его](system-text-json-converters-how-to.md#registration-sample---converters-collection) в коллекцию <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType>.
 
-Если вы следуете этому шаблону, не передавайте объект options при рекурсивном вызове <xref:System.Text.Json.JsonSerializer.Serialize%2A> или <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. Объект options содержит коллекцию <xref:System.Text.Json.JsonSerializerOptions.Converters%2A>. Если передать его в `Serialize` или `Deserialize`, пользовательский преобразователь вызывает сам себя и делает бесконечный цикл, который приводит к исключению переполнения стека. Если параметры по умолчанию нецелесообразны, создайте новый экземпляр параметров с нужными настройками. Этот подход отнимет много времени, так как каждый новый экземпляр кэшируется независимо.
+Для использования этого шаблона рекурсивного вызова преобразователя необходимо зарегистрировать преобразователь с помощью <xref:System.Text.Json.JsonSerializerOptions>, а не с помощью атрибута. При регистрации с помощью атрибута пользовательский преобразователь рекурсивно вызывает сам себя. Результатом является бесконечный цикл, который заканчивается исключением переполнения стека.
 
-Предыдущий код преобразователя является упрощенным примером. Если необходимо обрабатывать атрибуты (например, [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) или различные параметры (например, пользовательские кодировщики)), потребуется дополнительная логика. Кроме того, пример кода не обрабатывает свойства, для которых в конструкторе задано значение по умолчанию. И этот подход не различает следующие сценарии:
+При регистрации преобразователя с помощью объекта options следует избегать бесконечного цикла, поэтому не передавайте объект options при рекурсивном вызове <xref:System.Text.Json.JsonSerializer.Serialize%2A> или <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. Объект options содержит коллекцию <xref:System.Text.Json.JsonSerializerOptions.Converters%2A>. Если передать его в `Serialize` или `Deserialize`, пользовательский преобразователь вызывает сам себя и делает бесконечный цикл, который приводит к исключению переполнения стека. Если параметры по умолчанию нецелесообразны, создайте новый экземпляр параметров с нужными настройками. Этот подход отнимет много времени, так как каждый новый экземпляр кэшируется независимо.
+
+Существует альтернативный шаблон, который может использовать регистрацию `JsonConverterAttribute` в классе, подлежащем преобразованию. В таком случае код преобразователя вызывает `Serialize` или `Deserialize` для класса, производного от класса, который требуется преобразовать. К производному классу не применен `JsonConverterAttribute`. В следующем примере этого варианта:
+
+* `WeatherForecastWithRequiredPropertyConverterAttribute` — класс, который подлежит десериализации и к которому применен `JsonConverterAttribute`;
+* `WeatherForecastWithoutRequiredPropertyConverterAttribute` — производный класс без атрибута преобразователя.
+* Код в преобразователе вызывает `Serialize`и `Deserialize` в `WeatherForecastWithoutRequiredPropertyConverterAttribute`, чтобы избежать бесконечного цикла. Этот подход к сериализации приводит к снижению производительности, так как создается дополнительный объект и копируются значения свойств.
+
+Ниже приведены типы `WeatherForecast*`.
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithReqPptyConverterAttr)]
+
+Ниже приведен преобразователь.
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration.cs)]
+
+Если необходимо обрабатывать атрибуты (например, [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) или различные параметры (например, пользовательские кодировщики)), преобразователю свойств потребуется дополнительная логика. Кроме того, пример кода не обрабатывает свойства, для которых в конструкторе задано значение по умолчанию. И этот подход не различает следующие сценарии:
 
 * В JSON отсутствует свойство.
 * Свойство для типа, не допускающего значения NULL, содержится в JSON, но значение является значением по умолчанию для типа, например ноль для `int`.
@@ -391,7 +407,7 @@ The JSON value could not be converted to System.String.
 Если вы используете пользовательский преобразователь, как в предыдущем примере:
 
 * Код `OnDeserializing` не имеет доступа к новому экземпляру POCO. Чтобы управлять новым экземпляром POCO в начале десериализации, вставьте этот код в конструктор POCO.
-* Не передавайте объект options при рекурсивном вызове `Serialize` или `Deserialize`. Объект options содержит коллекцию `Converters`. Если передать его в `Serialize` или `Deserialize`, будет использован преобразователь, создающий бесконечный цикл, который приводит к исключению переполнения стека.
+* Избегайте бесконечного цикла, регистрируя преобразователь с помощью объекта options и не передавая объект options при рекурсивном вызове `Serialize` или `Deserialize`. Дополнительные сведения см. в разделе [Обязательные свойства](#required-properties), приведенном выше в этой статье.
 
 ### <a name="public-and-non-public-fields"></a>Открытые и не открытые поля
 
@@ -654,7 +670,7 @@ doc.WriteTo(writer);
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
 <!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
-* [Обзор System.Text.Json](system-text-json-overview.md)
+* [Общие сведения о System.Text.Json](system-text-json-overview.md)
 * [Как использовать System.Text.Json](system-text-json-how-to.md)
 * [Практическое руководство. Написание настраиваемых преобразователей](system-text-json-converters-how-to.md)
 * [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md)
