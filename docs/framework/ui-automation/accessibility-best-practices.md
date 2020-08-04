@@ -1,22 +1,23 @@
 ---
 title: Рекомендации по специальным возможностям
+description: Ознакомьтесь с рекомендациями по специальным возможностям в .NET. Изучите программный доступ, параметры пользователя, визуальный дизайн пользовательского интерфейса, навигацию и интерфейсы мультимодальный.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - best practices for accessibility
 - accessibility, best practices for
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-ms.openlocfilehash: c6f0f31260ffae43e59703ef53dd7ef30a73320b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 725bb0c60972e2d0dc6089b4370dd7e3e436e444
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79180301"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517065"
 ---
 # <a name="accessibility-best-practices"></a>Рекомендации по специальным возможностям
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
- Внедрение следующих передовых методов управления или приложений улучшит их доступность для людей, которые используют вспомогательные технологические устройства. Многие из этих рекомендаций касаются правильности проекта [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] . Каждая рекомендация содержит сведения о реализации для элементов управления или приложений [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] . Во многих случаях работа для удовлетворения этих рекомендаций уже выполнена для элементов управления [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] .  
+ Реализация следующих рекомендаций в элементах управления или приложениях повысит их доступность для пользователей, использующих вспомогательные технологические устройства. Многие из этих рекомендаций касаются правильности проекта [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] . Каждая рекомендация содержит сведения о реализации для элементов управления или приложений [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] . Во многих случаях работа для удовлетворения этих рекомендаций уже выполнена для элементов управления [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] .  
   
 <a name="Programmatic_Access"></a>
 ## <a name="programmatic-access"></a>Программный доступ  
@@ -24,19 +25,19 @@ ms.locfileid: "79180301"
   
 <a name="Enable_Programmatic_Access_to_all_UI_Elements_and_Text"></a>
 ### <a name="enable-programmatic-access-to-all-ui-elements-and-text"></a>Включение программного доступа ко всем элементам и тексту пользовательского интерфейса  
- Элементы пользовательского интерфейса (UI) должны включать программный доступ. Если [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] — это стандартный элемент управления [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] , то поддержка программного доступа уже включена в этот элемент управления. Если это пользовательский элемент управления, т. е. элемент управления, являющийся подклассом стандартного элемента управления или элемента управления Control, то вы должны проверить в реализации <xref:System.Windows.Automation.Peers.AutomationPeer> области, которые, возможно, необходимо изменить.  
+ Элементы ПОЛЬЗОВАТЕЛЬСКОГО интерфейса должны включать программный доступ. Если [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] — это стандартный элемент управления [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] , то поддержка программного доступа уже включена в этот элемент управления. Если это пользовательский элемент управления, т. е. элемент управления, являющийся подклассом стандартного элемента управления или элемента управления Control, то вы должны проверить в реализации <xref:System.Windows.Automation.Peers.AutomationPeer> области, которые, возможно, необходимо изменить.  
   
- Следуя этой наилучшей практике позволяет поставщикам вспомогательных технологий [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]выявлять и манипулировать элементами вашего продукта.  
+ Эта рекомендация позволяет поставщикам вспомогательных технологий обнаруживать и манипулировать элементами продукта [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] .  
   
 <a name="Place_Names__Titles_and_Descriptions_on_UI_Objects_"></a>
 ### <a name="place-names-titles-and-descriptions-on-ui-objects-frames-and-pages"></a>Поместите имена, заголовки и описания в объекты пользовательского интерфейса, фреймы и страницы  
- Вспомогательные технологии, особенно средства чтения с экрана, используют заголовок, чтобы определить расположение фрейма, объекта или страницы в схеме навигации. Следовательно, заголовок должен быть максимально содержательным. Например, заголовок веб-страницы «Веб-страница Майкрософт» бесполезен, если пользователь углубился в некую конкретную область. Описательное название важно для пользователей с нарушением зрения, которые зависят от средств чтения с экрана. Аналогичным образом, <xref:System.Windows.Automation.AutomationProperties.NameProperty> для <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] управления, и имеют важное значение для вспомогательных устройств технологии.  
+ Вспомогательные технологии, особенно средства чтения с экрана, используют заголовок, чтобы определить расположение фрейма, объекта или страницы в схеме навигации. Следовательно, заголовок должен быть максимально содержательным. Например, заголовок веб-страницы «Веб-страница Майкрософт» бесполезен, если пользователь углубился в некую конкретную область. Описательное название важно для пользователей с нарушением зрения, которые зависят от средств чтения с экрана. Аналогично, для [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] элементов управления <xref:System.Windows.Automation.AutomationProperties.NameProperty> и <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> важен для вспомогательных устройств.  
   
- Следуя этой наилучшей практике позволяет вспомогательные [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] технологии для выявления и манипулирования в образцовых элементов управления и приложений.  
+ Эта рекомендация позволяет технологическим технологиям обнаруживать и обрабатывать [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] образцы элементов управления и приложений.  
   
 <a name="Ensure_Programmatic_Events_are_Triggered_by_all_UI"></a>
 ### <a name="ensure-programmatic-events-are-triggered-by-all-ui-activities"></a>Обеспечение инициации программных событий всеми действиями в пользовательском интерфейсе  
- Следуя этой наилучшей практике позволяет вспомогательные [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] технологии, чтобы прослушать изменения в и уведомить пользователя об этих изменениях.  
+ Использование этой рекомендации позволяет технологическим технологиям прослушивать изменения в [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] и уведомлять пользователя об этих изменениях.  
   
 <a name="User_Settings"></a>
 ## <a name="user-settings"></a>Параметры пользователя  
@@ -50,7 +51,7 @@ ms.locfileid: "79180301"
   
 <a name="Visual_UI_Design"></a>
 ## <a name="visual-ui-design"></a>Визуальная структура пользовательского интерфейса  
- Рекомендации в этом разделе гарантируют, что элементы управления или приложения эффективно используют цвет и изображения и могут быть использованы вспомогательными технологиями.  
+ Рекомендации в этом разделе гарантируют, что элементы управления и приложения используют цвета и изображения эффективно и могут использоваться специальными технологиями.  
   
 <a name="Don_t_Hard_Code_Colors"></a>
 ### <a name="dont-hard-code-colors"></a>Не используйте жестко закодированные цвета  
@@ -66,10 +67,10 @@ ms.locfileid: "79180301"
   
 <a name="Ensure_all_UI_Correctly_Scales_by_any_DPI_Setting"></a>
 ### <a name="ensure-all-ui-correctly-scales-by-any-dpi-setting"></a>Обеспечение правильного масштабирования всего пользовательского интерфейса при любом значении DPI  
- Убедитесь, [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] что все могут правильно масштабироваться любыми точками на дюйм (dpi) настройки. Кроме того, [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] убедитесь, что элементы вписываются в экран 1024 х 768 с 120 точек на дюйм (dpi).  
+ Убедитесь, что все [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] могут правильно масштабироваться в соответствии с параметром точек на дюйм (DPI). Кроме того, убедитесь, что [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] элементы помещаются на экране 1024 x 768 с 120 точек на дюйм (DPI).  
   
 <a name="Navigation"></a>
-## <a name="navigation"></a>Навигации  
+## <a name="navigation"></a>Навигация  
  Рекомендации в этом разделе предназначены для того, чтобы обеспечить разрешение навигации для элементов управления и приложений.  
   
 <a name="Provide_Keyboard_Interface_for_all_UI_Elements"></a>
@@ -128,9 +129,9 @@ ms.locfileid: "79180301"
   
 <a name="Use_Standard_Input_APIs_with_Devices_Independent"></a>
 ### <a name="use-standard-input-apis-with-device-independent-calls"></a>Используйте стандартные API ввода с аппаратно-независимыми вызовами  
- Устройства-независимые вызовы обеспечивают равенство функций клавиатуры и мыши, обеспечивая при этом вспомогательную технологию необходимой информацией [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]о .  
+ Аппаратно-независимые вызовы гарантируют равенство функций клавиатуры и мыши, а также предоставляют вспомогательные технологии с необходимыми сведениями о [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Automation.Peers>
 - [Пример пользовательского элемента управления NumericUpDown с темой и поддержкой модели автоматизации пользовательского интерфейса](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771573(v=vs.90))

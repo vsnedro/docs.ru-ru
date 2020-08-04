@@ -1,5 +1,6 @@
 ---
 title: Доступ ко внедренным объектам с помощью автоматизации пользовательского интерфейса
+description: Узнайте, как получить доступ к внедренным объектам с помощью модели автоматизации пользовательского интерфейса в содержимом элемента управления Text. Внедренные объекты считаются дочерними по отношению к поставщику текста модели автоматизации пользовательского интерфейса.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - accessing embedded objects
 - UI Automation, accessing embedded objects
 ms.assetid: a5b513ec-7fa6-4460-869f-c18ff04f7cf2
-ms.openlocfilehash: 75c63360eab2cde95698bdaded5c5249a3ca89fd
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 031d9c90318eec59ad2b77d611e0ed0d5a3ae719
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447267"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87516974"
 ---
 # <a name="access-embedded-objects-using-ui-automation"></a>Доступ ко внедренным объектам с помощью автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -27,7 +28,7 @@ ms.locfileid: "74447267"
   
  Внедренные объекты считаются дочерними элементами поставщика текста [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] . Это позволяет предоставлять их через ту же древовидную структуру модели автоматизации пользовательского интерфейса, что и все остальные элементы [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] . Функциональные возможности в свою очередь предоставляются с помощью шаблонов элементов управления, которые обычно требуются типом элемента управления внедренных объектов (например, поскольку гиперссылки основаны на тексте, они будут поддерживать <xref:System.Windows.Automation.TextPattern>).  
   
- ![Внедренные объекты в текстовом контейнере.](./media/uia-textpattern-embeddedobjects.PNG "UIA_TextPattern_EmbeddedObjects")  
+ ![Объекты, вставленные в текстовый контейнер.](./media/uia-textpattern-embeddedobjects.PNG "UIA_TextPattern_EmbeddedObjects")  
 Пример документа с текстовым содержимым ("знаете ли вы?" ...) и два внедренных объекта (изображение компании Whale и текстовой гиперссылки), используемые в качестве целевого объекта для примеров кода.  
   
 ## <a name="example"></a>Пример  
@@ -54,7 +55,7 @@ ms.locfileid: "74447267"
   
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения об объекте TextPattern модели автоматизации пользовательского интерфейса](ui-automation-textpattern-overview.md)
+- [Общие сведения о TextPattern модели автоматизации пользовательского интерфейса](ui-automation-textpattern-overview.md)
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Добавление содержимого в текстовое поле с помощью модели автоматизации пользовательского интерфейса](add-content-to-a-text-box-using-ui-automation.md)
