@@ -1,25 +1,26 @@
 ---
 title: Руководство по программированию на C#. Файловая система и реестр
+description: Ссылки на статьи, которые демонстрируют, как выполнять базовые операции с файлами, папками и реестром с помощью C# и .NET.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - file system [C#]
 - registry [C#]
 - files [C#]
 ms.assetid: 0f2511cf-2b02-4b41-b001-b1754677c38f
-ms.openlocfilehash: f160df456f1a3437e11de2d3660d158ae4d4bb67
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9e25058f5fb8ae49196c070dd426123e61a55e46
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75900567"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301636"
 ---
 # <a name="file-system-and-the-registry-c-programming-guide"></a>Файловая система и реестр (руководство по программированию на C#)
 
 Перечисленные здесь статьи демонстрируют, как выполнять различные базовые операции с файлами, папками и реестром с помощью C# и .NET.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
-|**Title**|**Описание**|
+|**Заголовок**|**Описание**|
 |---------------|---------------------|
 |[Практическое руководство. Перебор дерева папок](how-to-iterate-through-a-directory-tree.md)|Демонстрирует ручной перебор дерева каталогов.|
 |[Практическое руководство. Получение сведений о файлах, папках и дисках](how-to-get-information-about-files-folders-and-drives.md)|Демонстрирует, как получить сведения о файлах, папках и дисках, например время создания и размер.|

@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Пространства имен
+description: Сведения о работе с пространствами имен при программировании на C#. В этой статье приводятся общие сведения о свойствах пространств имен, а также ссылки на дополнительные ресурсы.
 ms.date: 08/21/2018
 helpviewer_keywords:
 - C# language, namespaces
 - namespaces [C#]
 ms.assetid: b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a
-ms.openlocfilehash: 21452e259596c9ab10b3d653ec1d8fb90fad131d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fca2c641520bd9cd19a48bff2119a6f09c3713ea
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75937614"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87382104"
 ---
 # <a name="namespaces-c-programming-guide"></a>Пространства имен (Руководство по программированию в C#)
 
@@ -45,11 +46,11 @@ ms.locfileid: "75937614"
 
 Дополнительные сведения см. в статье [Пространства имен](~/_csharplang/spec/namespaces.md) в разделе [Предварительная спецификация C# 6.0](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Использование пространств имен](using-namespaces.md)
 - [Практическое руководство. Использование пространства имен My](how-to-use-the-my-namespace.md)
 - [Имена идентификаторов](../inside-a-program/identifier-names.md)
 - [Директива using](../../language-reference/keywords/using-directive.md)
-- [Оператор ::](../../language-reference/operators/namespace-alias-qualifier.md)
+- [:: Оператор](../../language-reference/operators/namespace-alias-qualifier.md)

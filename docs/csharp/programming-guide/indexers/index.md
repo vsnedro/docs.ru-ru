@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Индексаторы
+description: Индексаторы в C# позволяют индексировать экземпляры класса или структуры так же, как и массивы. Вы можете задать или получить индексированное значение, не указывая тип или член экземпляра.
 ms.date: 03/10/2017
 f1_keywords:
 - cs.indexers
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - indexers [C#]
 - C# language, indexers
 ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
-ms.openlocfilehash: 539b2861e975c0c758c43c8a5d4cca86e3d2bb2c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 07e0ae4294373817e10bb79920c73ec1e275d169
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79167548"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303118"
 ---
 # <a name="indexers-c-programming-guide"></a>Индексаторы (Руководство по программированию в C#)
 
@@ -53,7 +54,7 @@ ms.locfileid: "79167548"
   
 - Индексаторы могут иметь более одного формального параметра, например при доступе к двумерному массиву.  
   
-## <a name="related-sections"></a><a name="BKMK_RelatedSections"></a> См. также  
+## <a name="related-sections"></a><a name="BKMK_RelatedSections"></a> Связанные разделы  
   
 - [Использование индексаторов](./using-indexers.md)  
   
@@ -67,7 +68,7 @@ ms.locfileid: "79167548"
 
 Дополнительные сведения см. в разделе [Индексаторы](~/_csharplang/spec/classes.md#indexers) в [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction). Спецификация языка является предписывающим источником информации о синтаксисе и использовании языка C#.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Свойства](../classes-and-structs/properties.md)

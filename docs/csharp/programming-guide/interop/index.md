@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Взаимодействие
+description: Возможность взаимодействия обеспечивает поддержку неуправляемого кода наряду с кодом, который выполняется в общеязыковой среде выполнения. Дополнительные сведения о параметрах взаимодействия можно найти в приведенных ниже ресурсах.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - COM interop
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - platform invoke, accessing APIs with C#
 - C# language, interoperability
 ms.assetid: 238bb95a-e962-4026-bbd5-197055bdb8ee
-ms.openlocfilehash: e53465066cf27a5f46c66ac73ee242370be23395
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: d85eb51107d50e023270fcbe1ef6e08a7788ae78
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84242011"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302975"
 ---
 # <a name="interoperability-c-programming-guide"></a>Взаимодействие (Руководство по программированию в C#)
 

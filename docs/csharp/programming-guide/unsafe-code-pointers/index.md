@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Небезопасный код и указатели
+Description: Сведения о небезопасном коде и указателях. C# не поддерживает указатели, однако позволяет с помощью ключевого слова unsafe задать небезопасный контекст, в котором использование указателей возможно.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - security [C#], type safety
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - C# language, pointers
 - pointers [C#], about pointers
 ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
-ms.openlocfilehash: 013af4e55c8fc396bbc92058d7fb454484f3263e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5684a97ed6f7b6632d8fe3d52747d9187c4b8cbc
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75711835"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381779"
 ---
 # <a name="unsafe-code-and-pointers-c-programming-guide"></a>Руководство по программированию на C#. Небезопасный код и указатели
 
@@ -50,7 +51,7 @@ ms.locfileid: "75711835"
 
 Дополнительные сведения см. в разделе [Небезопасный код](~/_csharplang/spec/unsafe-code.md) в [Спецификации языка C#](~/_csharplang/spec/introduction.md).
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [unsafe](../../language-reference/keywords/unsafe.md)

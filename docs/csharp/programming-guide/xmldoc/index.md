@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Комментарии XML-документации
+description: Сведения о комментариях XML-документации. Вы можете создавать документацию для кода, включив XML-элементы в специальные поля комментариев.
 ms.date: 07/20/2015
 f1_keywords:
 - cs.xml
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - C# language, XML code comments
 - XML documentation comments [C#]
 ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
-ms.openlocfilehash: f5a507bc35b0cc0a679fd055bfc255bb3cb9a090
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fbdeb53331d9fc63d24a3322ea13863d7c0a3630
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76789786"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381883"
 ---
 # <a name="xml-documentation-comments-c-programming-guide"></a>Руководство по программированию на C#. Комментарии XML-документации
 
@@ -36,7 +37,7 @@ public class MyClass {}
 > [!NOTE]
 > Комментарии XML-документации не являются метаданными. Они не включаются в скомпилированную сборку, и поэтому не доступны посредством отражения.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)
 
@@ -56,6 +57,6 @@ public class MyClass {}
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)

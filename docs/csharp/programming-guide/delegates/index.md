@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Делегаты
+description: Делегат в C# — это тип, который представляет ссылки на методы со списком параметров и типом возвращаемого значения. Делегаты используются для передачи методов в качестве аргументов к другим методам.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, delegates
 - delegates [C#]
 ms.assetid: 97de039b-c76b-4b9c-a27d-8c1e1c8d93da
-ms.openlocfilehash: c0f28716926d4c9d74cde58fd00e27d1fdfa7ce1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 94e7c130bd5d8e136d03ccdbaed643bc1a47d112
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75705370"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302169"
 ---
 # <a name="delegates-c-programming-guide"></a>Делегаты (Руководство по программированию на C#)
 [Делегат](../../language-reference/builtin-types/reference-types.md) — это тип, который представляет ссылки на методы с определенным списком параметров и типом возвращаемого значения. При создании экземпляра делегата этот экземпляр можно связать с любым методом с совместимой сигнатурой и типом возвращаемого значения. Метод можно вызвать (активировать) с помощью экземпляра делегата.  
