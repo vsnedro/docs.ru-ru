@@ -1,27 +1,33 @@
 ---
 title: Практическое руководство. Создание объекта WindowsPrincipal
-ms.date: 03/30/2017
+ms.date: 07/15/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - WindowsPrincipal objects, creating
-- security [.NET Framework], creating a WindowsPrincipal object
-- security [.NET Framework], principals
+- security [.NET], creating a WindowsPrincipal object
+- security [.NET], principals
 - principal objects, creating
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
-ms.openlocfilehash: 6064c98c4e1e5153f4e0de4849de196228972a89
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d99d63dc766f37e7cc30888d2e77657595f909af
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84284433"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87557038"
 ---
 # <a name="how-to-create-a-windowsprincipal-object"></a>Практическое руководство. Создание объекта WindowsPrincipal
+
+> [!NOTE]
+> Эта статья относится к Windows.
+>
+> Сведения о ASP.NET Core см. в разделе [ASP.NET Core Security](/aspnet/core/security/).
+
 Существует два способа создания объекта <xref:System.Security.Principal.WindowsPrincipal> в зависимости от того, должен ли код выполнять проверку на основании ролей многократно или всего один раз.  
   
- Если код должен многократно выполнять проверку на основе ролей, первая из следующих процедур создает меньше служебных данных. Если коду требуется выполнять проверку на основе ролей только один раз, можно создать объект <xref:System.Security.Principal.WindowsPrincipal> при помощи второй из приведенных ниже процедур.  
+Если код должен многократно выполнять проверку на основе ролей, первая из следующих процедур создает меньше служебных данных. Если коду требуется выполнять проверку на основе ролей только один раз, можно создать объект <xref:System.Security.Principal.WindowsPrincipal> при помощи второй из приведенных ниже процедур.  
   
 ### <a name="to-create-a-windowsprincipal-object-for-repeated-validation"></a>Создание объекта WindowsPrincipal для повторяющейся проверки  
   
@@ -75,6 +81,7 @@ ms.locfileid: "84284433"
   
 3. После создания объекта субъекта можно использовать один из нескольких методов для его проверки.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объекты Principal и Identity](principal-and-identity-objects.md)
+- [Безопасность ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/)

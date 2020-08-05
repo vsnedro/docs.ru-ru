@@ -1,43 +1,46 @@
 ---
 title: Практическое руководство. Шифрование XML-элементов с помощью сертификатов X.509
-ms.date: 03/30/2017
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- encryption [.NET Framework], X.509 certificates
-- cryptography [.NET Framework], X.509 certificates
+- encryption [.NET], X.509 certificates
+- cryptography [.NET], X.509 certificates
 - System.Security.Cryptography.EncryptedXml class
 - XML encryption
 - System.Security.Cryptography.X509Certificate2 class
 - X.509 certificates
 - certificates, X.509 certificates
 ms.assetid: 761f1c66-631c-47af-aa86-ad9c50cfa453
-ms.openlocfilehash: 9cdd8e52be11eeba86ec406510f40f1a08809ff8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: c978bea7336e64d6622aca4d21c7ef3317d73957
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277223"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87555725"
 ---
 # <a name="how-to-encrypt-xml-elements-with-x509-certificates"></a>Практическое руководство. Шифрование XML-элементов с помощью сертификатов X.509
+
 Классы можно использовать в пространстве имен <xref:System.Security.Cryptography.Xml> для шифрования элемента XML-документа.  Шифрование XML-данных — это стандартный способ обмена зашифрованными XML-данными и их хранения, позволяющий не беспокоиться о том, что эти данные могут быть прочитаны.  Дополнительные сведения о стандарте шифрования XML см. в спецификации консорциум W3C (W3C) для XML-шифрования, расположенного по адресу <https://www.w3.org/TR/xmldsig-core/> .  
   
  При помощи шифрования XML-данных можно заменить любой XML-элемент или документ элементом <`EncryptedData`>, содержащим зашифрованные XML-данные. Элемент <`EncryptedData`> может включать в себя вложенные элементы, содержащие сведения о ключах и процессах, использованных при шифровании.  Шифрование XML-данных позволяет документу содержать несколько зашифрованных элементов, а также позволяет шифровать элемент несколько раз.  В примере кода в данной процедуре показано создание элемента <`EncryptedData`> наряду с несколькими вложенными элементами, которые можно использовать позже при расшифровке.  
   
- Этот пример выполняет шифрование XML-элемента с использованием двух ключей. Он создает тестовый сертификат X.509 при помощи [инструмента для создания сертификатов (Makecert.exe)](/windows/desktop/SecCrypto/makecert) и сохраняет этот сертификат в хранилище сертификатов. Затем пример программным образом получает сертификат и использует его для шифрования XML-элемента при помощи метода <xref:System.Security.Cryptography.Xml.EncryptedXml.Encrypt%2A>. На внутреннем уровне метод <xref:System.Security.Cryptography.Xml.EncryptedXml.Encrypt%2A> создает отдельный сеансовый ключ и использует его для шифрования XML-документа. Этот метод шифрует сеансовый ключ и сохраняет его вместе с зашифрованным XML-элементом в новом элементе <`EncryptedData`>.  
+Этот пример выполняет шифрование XML-элемента с использованием двух ключей. Пример программно извлекает сертификат и использует его для шифрования XML-элемента с помощью <xref:System.Security.Cryptography.Xml.EncryptedXml.Encrypt%2A> метода. На внутреннем уровне метод <xref:System.Security.Cryptography.Xml.EncryptedXml.Encrypt%2A> создает отдельный сеансовый ключ и использует его для шифрования XML-документа. Этот метод шифрует сеансовый ключ и сохраняет его вместе с зашифрованным XML-элементом в новом элементе <`EncryptedData`>.  
+
+Чтобы расшифровать XML-элемент, вызовите <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> метод, который автоматически извлекает сертификат X. 509 из хранилища и выполняет необходимую расшифровку.  Дополнительные сведения о способах расшифровки XML-элемента, зашифрованного при использовании этой процедуры, см. в разделе [Практическое руководство. Расшифровка XML-элементов при помощи сертификатов X.509](how-to-decrypt-xml-elements-with-x-509-certificates.md).  
   
- Для расшифровки XML-элемента просто вызовите метод <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A>, который автоматически извлекает сертификат X.509 из хранилища сертификатов и выполняет необходимую расшифровку.  Дополнительные сведения о способах расшифровки XML-элемента, зашифрованного при использовании этой процедуры, см. в разделе [Практическое руководство. Расшифровка XML-элементов при помощи сертификатов X.509](how-to-decrypt-xml-elements-with-x-509-certificates.md).  
-  
- Этот пример подходит в ситуациях, когда нескольким приложениям нужен общий доступ к зашифрованным данным или когда приложению требуется сохранять зашифрованные данные между запусками.  
+Этот пример подходит в ситуациях, когда нескольким приложениям нужен общий доступ к зашифрованным данным или когда приложению требуется сохранять зашифрованные данные между запусками.  
   
 ### <a name="to-encrypt-an-xml-element-with-an-x509-certificate"></a>Шифрование XML-элемента с использованием сертификата X.509  
-  
-1. Используйте [инструмент для создания сертификатов (Makecert.exe)](/windows/desktop/SecCrypto/makecert), чтобы создать тестовый сертификат X.509 и поместить его в хранилище локального пользователя. Необходимо создать ключ обмена и сделать его экспортируемым. Выполните следующую команду:  
+
+Чтобы выполнить этот пример, необходимо создать тестовый сертификат и сохранить его в хранилище сертификатов. Инструкции для этой задачи предоставляются только для [средства создания сертификатов Windows (Makecert.exe)](/windows/desktop/SecCrypto/makecert).
+
+1. Используйте [Makecert.exe](/windows/desktop/SecCrypto/makecert) , чтобы создать тестовый сертификат X. 509 и поместить его в локальное хранилище пользователей. Необходимо создать ключ обмена и сделать его экспортируемым. Выполните следующую команду:  
   
     ```console  
-    makecert -r -pe -n "CN=XML_ENC_TEST_CERT" -b 01/01/2005 -e 01/01/2010 -sky exchange -ss my  
+    makecert -r -pe -n "CN=XML_ENC_TEST_CERT" -b 01/01/2020 -e 01/01/2025 -sky exchange -ss my  
     ```  
   
 2. Создайте объект <xref:System.Security.Cryptography.X509Certificates.X509Store> и инициализируйте его, чтобы открыть хранилище текущего пользователя.  
@@ -107,14 +110,21 @@ ms.locfileid: "84277223"
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
   
-- Чтобы скомпилировать этот пример, необходимо включить ссылку на `System.Security.dll`.  
+- В проекте, предназначенном для .NET Framework, включите ссылку на `System.Security.dll` .
+
+- В проекте, ориентированном на .NET Core или .NET 5, установите пакет NuGet [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Включите следующие пространства имен: <xref:System.Xml>, <xref:System.Security.Cryptography> и <xref:System.Security.Cryptography.Xml>.  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
- Используемый в этом примере сертификат X.509 предназначен исключительно для тестирования.  Приложения должны использовать сертификат X.509, созданный доверенным центром сертификации или сервером сертификатов Microsoft Windows.  
+## <a name="net-security"></a>Безопасность .NET
   
-## <a name="see-also"></a>См. также
+Используемый в этом примере сертификат X.509 предназначен исключительно для тестирования.  Приложения должны использовать сертификат X. 509, созданный доверенным центром сертификации.  
+  
+## <a name="see-also"></a>См. также раздел
 
+- [Модель криптографии](cryptography-model.md)
+- [службы шифрования](cryptographic-services.md)
+- [Кросс-платформенная криптография](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [Практическое руководство. Дешифровка XML-элементов с помощью сертификатов X.509](how-to-decrypt-xml-elements-with-x-509-certificates.md)
+- [ASP.NET Core Защита данных](/aspnet/core/security/data-protection/introduction)

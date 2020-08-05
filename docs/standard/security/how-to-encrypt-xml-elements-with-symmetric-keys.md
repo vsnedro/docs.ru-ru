@@ -1,30 +1,30 @@
 ---
 title: Практическое руководство. Шифрование XML-элементов с помощью симметричного ключа
-ms.date: 03/30/2017
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - AES algorithm
-- cryptography [.NET Framework], symmetric keys
-- encryption [.NET Framework], symmetric keys
+- cryptography [.NET], symmetric keys
+- encryption [.NET], symmetric keys
 - symmetric keys
 - System.Security.Cryptography.EncryptedXml class
-- System.Security.Cryptography.RijndaelManaged class
+- System.Security.Cryptography.Aes class
 - XML encryption
 - Advanced Encryption Standard algorithm
-- Rijndael
 ms.assetid: d8461a44-aa2c-4ef4-b3e4-ab7cbaaee1b5
-ms.openlocfilehash: 1ad75b7f36130a9f3acad97f724406650a7fdb68
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: dd69ec6a5317f7f6f800cd225d920a1934c77a0c
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277327"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87555817"
 ---
 # <a name="how-to-encrypt-xml-elements-with-symmetric-keys"></a>Практическое руководство. Шифрование XML-элементов с помощью симметричного ключа
-Классы можно использовать в пространстве имен <xref:System.Security.Cryptography.Xml> для шифрования элемента XML-документа.  Шифрование XML-данных позволяет хранить или передавать важные XML-данные, не беспокоясь о том, что они могут быть прочитаны.  Эта процедура шифрует XML-элемент с помощью алгоритма AES (AES), также известного как Rijndael.  
+
+Классы можно использовать в пространстве имен <xref:System.Security.Cryptography.Xml> для шифрования элемента XML-документа.  Шифрование XML-данных позволяет хранить или передавать важные XML-данные, не беспокоясь о том, что они могут быть прочитаны.  Эта процедура шифрует XML-элемент с помощью алгоритма AES (AES).  
   
  Дополнительные сведения о расшифровке XML-элемента, который был зашифрован с помощью этой процедуры, см. [в разделе как расшифровывать XML-элементы с симметричными ключами](how-to-decrypt-xml-elements-with-symmetric-keys.md).  
   
@@ -34,7 +34,7 @@ ms.locfileid: "84277327"
   
 ### <a name="to-encrypt-an-xml-element-with-a-symmetric-key"></a>Шифрование XML-элемента при помощи симметричного ключа  
   
-1. Создайте симметричный ключ, используя класс <xref:System.Security.Cryptography.RijndaelManaged>.  Этот ключ будет использоваться для шифрования XML-элемента.  
+1. Создайте симметричный ключ, используя класс <xref:System.Security.Cryptography.Aes>.  Этот ключ будет использоваться для шифрования XML-элемента.  
   
      [!code-csharp[HowToEncryptXMLElementSymmetric#2](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/cs/sample.cs#2)]
      [!code-vb[HowToEncryptXMLElementSymmetric#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb/sample.vb#2)]  
@@ -90,16 +90,23 @@ ms.locfileid: "84277327"
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
   
-- Чтобы скомпилировать этот пример, необходимо включить ссылку на `System.Security.dll`.  
+- В проекте, предназначенном для .NET Framework, включите ссылку на `System.Security.dll` .
+
+- В проекте, ориентированном на .NET Core или .NET 5, установите пакет NuGet [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Включите следующие пространства имен: <xref:System.Xml>, <xref:System.Security.Cryptography> и <xref:System.Security.Cryptography.Xml>.  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
- Никогда не храните криптографический ключ в формате обычного текста и не передавайте этот ключ в таком формате между компьютерами.  Вместо этого для хранения криптографических ключей используйте безопасный контейнер ключей.  
-  
- После завершения работы с криптографическим ключом очистите его из памяти, установив для каждого байта нулевое значение или вызвав метод <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> управляемого класса шифрования.  
-  
-## <a name="see-also"></a>См. также
+## <a name="net-security"></a>Безопасность .NET
 
+Никогда не храните криптографический ключ в формате обычного текста и не передавайте этот ключ в таком формате между компьютерами.  Вместо этого для хранения криптографических ключей используйте безопасный контейнер ключей.  
+  
+После завершения работы с криптографическим ключом очистите его из памяти, установив для каждого байта нулевое значение или вызвав метод <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> управляемого класса шифрования.  
+  
+## <a name="see-also"></a>См. также раздел
+
+- [Криптографическая модель](cryptography-model.md) — описывает, как криптография реализуется в библиотеке базовых классов.
+- [службы шифрования](cryptographic-services.md)
+- [Кросс-платформенная криптография](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [Практическое руководство. Расшифровка XML-элементов с помощью симметричных ключей](how-to-decrypt-xml-elements-with-symmetric-keys.md)
+- [ASP.NET Core Защита данных](/aspnet/core/security/data-protection/introduction)

@@ -1,39 +1,39 @@
 ---
 title: Практическое руководство. Шифрование XML-элементов с помощью асимметричных ключей
-ms.date: 03/30/2017
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- cryptography [.NET Framework], asymmetric keys
+- cryptography [.NET], asymmetric keys
 - AES algorithm
-- System.Security.Cryptography.RSACryptoServiceProvider class
-- asymmetric keys [.NET Framework]
+- System.Security.Cryptography.RSA class
+- asymmetric keys [.NET]
 - System.Security.Cryptography.EncryptedXml class
 - XML encryption
 - key containers
 - Advanced Encryption Standard algorithm
-- Rijndael
-- encryption [.NET Framework], asymmetric keys
+- encryption [.NET], asymmetric keys
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-ms.openlocfilehash: 475446f6206676e93ea72d16e01bcf1067c24e86
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 1c824b00a1df920108cfcd8c4590b680020cdf3e
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277379"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87555791"
 ---
 # <a name="how-to-encrypt-xml-elements-with-asymmetric-keys"></a>Практическое руководство. Шифрование XML-элементов с помощью асимметричных ключей
+
 Классы можно использовать в пространстве имен <xref:System.Security.Cryptography.Xml> для шифрования элемента XML-документа.  Шифрование XML-данных — это стандартный способ обмена зашифрованными XML-данными и их хранения, позволяющий не беспокоиться о том, что эти данные могут быть прочитаны.  Дополнительные сведения о стандарте шифрования XML см. в спецификации консорциум W3C (W3C) для XML-шифрования, расположенного по адресу <https://www.w3.org/TR/xmldsig-core/> .  
   
  При помощи шифрования XML-данных можно заменить любой XML-элемент или документ элементом <`EncryptedData`>, содержащим зашифрованные XML-данные.  Элемент <`EncryptedData`> может также содержать вложенные элементы, содержащие сведения о ключах и процессах, используемых при шифровании.  Шифрование XML-данных позволяет документу содержать несколько зашифрованных элементов, а также позволяет шифровать элемент несколько раз.  В примере кода в этой процедуре показано, как создать `EncryptedData` элемент> <вместе с несколькими другими вложенными элементами, которые можно использовать позже во время расшифровки.  
   
- Этот пример выполняет шифрование XML-элемента с использованием двух ключей.  Он создает пару из открытого и закрытого ключей RSA и сохраняет ее в безопасном контейнере ключей.  Затем пример создает отдельный сеансовый ключ при помощи алгоритма AES, также известного как алгоритм Rijndael.  Пример использует сеансовый ключ AES для шифрования XML-документа,а затем использует открытый ключ RSA для шифрования сеансового ключа AES.  Наконец, в этом примере зашифрованный ключ сеанса AES и зашифрованные XML-данные сохраняются в XML-документе в новом `EncryptedData` элементе <>.  
+ Этот пример выполняет шифрование XML-элемента с использованием двух ключей.  Он создает пару из открытого и закрытого ключей RSA и сохраняет ее в безопасном контейнере ключей.  Затем в примере создается отдельный сеансовый ключ с использованием алгоритма AES (AES).  Пример использует сеансовый ключ AES для шифрования XML-документа,а затем использует открытый ключ RSA для шифрования сеансового ключа AES.  Наконец, в этом примере зашифрованный ключ сеанса AES и зашифрованные XML-данные сохраняются в XML-документе в новом `EncryptedData` элементе <>.  
   
  Чтобы расшифровать XML-элемент, необходимо извлечь из контейнера ключей закрытый ключ RSA, использовать его для расшифровки сеансового ключа и затем использовать сеансовый ключ для расшифровки документа.  Дополнительные сведения о расшифровке XML-элемента, который был зашифрован с помощью этой процедуры, см. [в разделе как расшифровывать XML-элементы с помощью асимметричных ключей](how-to-decrypt-xml-elements-with-asymmetric-keys.md).  
   
- Этот пример подходит в ситуациях, когда нескольким приложениям нужен общий доступ к зашифрованным данным или когда приложению требуется сохранять зашифрованные данные между запусками.  
+ Этот пример подходит в ситуациях, когда нескольким приложениям нужен общий доступ к зашифрованным данным или когда приложению требуется сохранять зашифрованные данные между запусками.
   
 ### <a name="to-encrypt-an-xml-element-with-an-asymmetric-key"></a>Шифрование XML-элемента с использованием асимметричного ключа  
   
@@ -57,7 +57,7 @@ ms.locfileid: "84277379"
      [!code-csharp[HowToEncryptXMLElementAsymmetric#5](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs/sample.cs#5)]
      [!code-vb[HowToEncryptXMLElementAsymmetric#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#5)]  
   
-5. Создайте новый сеансовый ключ при помощи класса <xref:System.Security.Cryptography.RijndaelManaged>.  Этот ключ будет использоваться для шифрования XML-элемента, а затем будет зашифрован и помещен в XML-документ.  
+5. Создайте новый сеансовый ключ при помощи класса <xref:System.Security.Cryptography.Aes>.  Этот ключ будет использоваться для шифрования XML-элемента, а затем будет зашифрован и помещен в XML-документ.  
   
      [!code-csharp[HowToEncryptXMLElementAsymmetric#6](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs/sample.cs#6)]
      [!code-vb[HowToEncryptXMLElementAsymmetric#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#6)]  
@@ -129,18 +129,24 @@ ms.locfileid: "84277379"
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
   
-- Чтобы скомпилировать этот пример, необходимо включить ссылку на `System.Security.dll`.  
+- В проекте, предназначенном для .NET Framework, включите ссылку на `System.Security.dll` .
+
+- В проекте, ориентированном на .NET Core или .NET 5, установите пакет NuGet [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Включите следующие пространства имен: <xref:System.Xml>, <xref:System.Security.Cryptography> и <xref:System.Security.Cryptography.Xml>.  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
- Никогда не храните симметричный криптографический ключ в формате обычного текста и не передавайте этот симметричный ключ в таком формате между компьютерами.  Кроме того, не следует хранить или передавать закрытый ключ из пары асимметричных ключей в виде обычного текста.  Дополнительные сведения о симметричных и асимметричных криптографических ключах см. в разделе [Создание ключей для шифрования и расшифровки](generating-keys-for-encryption-and-decryption.md).  
-  
- Не следует внедрять ключ непосредственно в исходный код.  Встроенные ключи можно легко считывать из сборки с помощью [Ildasm. exe (ДИЗАССЕМБЛЕР IL)](../../framework/tools/ildasm-exe-il-disassembler.md) или путем открытия сборки в текстовом редакторе, например в блокноте.  
-  
- После завершения работы с криптографическим ключом очистите его из памяти, установив для каждого байта нулевое значение или вызвав метод <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> управляемого класса шифрования.  Иногда криптографические ключи можно считывать из памяти отладчиком или с жесткого диска, если область памяти выгружается на диск.  
-  
-## <a name="see-also"></a>См. также
+## <a name="net-security"></a>Безопасность .NET
 
-- <xref:System.Security.Cryptography.Xml>
+Никогда не храните симметричный криптографический ключ в формате обычного текста и не передавайте этот симметричный ключ в таком формате между компьютерами.  Кроме того, не следует хранить или передавать закрытый ключ из пары асимметричных ключей в виде обычного текста.  Дополнительные сведения о симметричных и асимметричных криптографических ключах см. в разделе [Создание ключей для шифрования и расшифровки](generating-keys-for-encryption-and-decryption.md).  
+  
+Не следует внедрять ключ непосредственно в исходный код.  Внедренные ключи можно легко считывать из сборки с помощью [Ildasm.exe (IL)](../../framework/tools/ildasm-exe-il-disassembler.md) или путем открытия сборки в текстовом редакторе, например в блокноте.  
+  
+После завершения работы с криптографическим ключом очистите его из памяти, установив для каждого байта нулевое значение или вызвав метод <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> управляемого класса шифрования.  Иногда криптографические ключи можно считывать из памяти отладчиком или с жесткого диска, если область памяти выгружается на диск.  
+  
+## <a name="see-also"></a>См. также раздел
+
+- [Модель криптографии](cryptography-model.md)
+- [службы шифрования](cryptographic-services.md)
+- [Кросс-платформенная криптография](cross-platform-cryptography.md)- <xref:System.Security.Cryptography.Xml>
 - [Практическое руководство. Расшифровка XML-элементов с помощью асимметричных ключей](how-to-decrypt-xml-elements-with-asymmetric-keys.md)
+- [ASP.NET Core Защита данных](/aspnet/core/security/data-protection/introduction)

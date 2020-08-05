@@ -4,19 +4,20 @@ description: Объявите данные о состоянии как закр
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
-- security [.NET Framework], state data
+- security [.NET], state data
 - code security, state data
 - secure coding, state data
 - state data security
 ms.assetid: 12671309-2877-43fe-a3df-6863507e712d
-ms.openlocfilehash: b7fcb520fe6fa28cc098c4e1cbb56ce7da759c11
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 73bd0ace28e5b9661cc86d6749ceef9aa4c9ac92
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291049"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87557129"
 ---
 # <a name="securing-state-data"></a>Обеспечение безопасности данных
+
 Приложения, работающие с конфиденциальными данными или принимающие любые решения по организации безопасности, должны сохранять эти данные под своим непосредственным управлением и не должны позволять потенциально вредоносному коду напрямую получать доступ к данным. Лучшим способом защиты данных в памяти является объявление этих данных как закрытых или внутренних переменных (с областью, ограниченной той же сборкой). Однако не следует забывать, что даже к этим данным применяются права доступа.  
   
 - С помощью механизмов отражения код с высоким доверием, способный ссылаться на ваш объект, может получать и устанавливать закрытые члены.  
@@ -27,6 +28,7 @@ ms.locfileid: "84291049"
   
  Убедитесь, что ни один из ваших собственных методов или свойств не предоставляет непреднамеренно эти значения.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Правила написания безопасного кода](secure-coding-guidelines.md)
+- [Безопасность ASP.NET Core](/aspnet/core/security/)

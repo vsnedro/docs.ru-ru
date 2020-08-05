@@ -1,56 +1,60 @@
 ---
-title: Модель криптографии .NET Framework
+title: Модель шифрования .NET
 description: Ознакомьтесь с реализациями обычных криптографических алгоритмов в .NET. Изучение расширяемой криптографической модели наследования объектов, проектирования потоков & конфигурации.
-ms.date: 03/30/2017
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
+dev_langs:
+- csharp
+- vb
 helpviewer_keywords:
-- cryptography [.NET Framework], model
-- encryption [.NET Framework], model
+- cryptography [.NET], model
+- encryption [.NET], model
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-ms.openlocfilehash: 11af4c15c8b291df898a3c2416faa15875eab70b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0b3e07238bf0932572c222f7b947cfa7ae0221a9
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596323"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87556999"
 ---
-# <a name="net-framework-cryptography-model"></a>Модель криптографии .NET Framework
+# <a name="net-cryptography-model"></a>Модель шифрования .NET
 
-Платформа .NET Framework предоставляет реализации многих стандартных алгоритмов шифрования. Эти алгоритмы просты в использовании и имеют максимально безопасные свойства по умолчанию. Кроме того, криптографическая модель наследования объектов, поточно-ориентированная структура и конфигурация платформы .NET Framework являются чрезвычайно расширяемыми.
+.NET предоставляет реализации многих стандартных криптографических алгоритмов, и модель шифрования .NET является расширяемой.
 
 ## <a name="object-inheritance"></a>Наследование объектов
 
-Система безопасности .NET Framework реализует расширяемую модель наследования производных классов. Иерархия имеет представленный ниже вид.
+Система криптографии .NET реализует расширяемый шаблон наследования производного класса. Иерархия имеет представленный ниже вид.
 
-- Класс типа алгоритма, например <xref:System.Security.Cryptography.SymmetricAlgorithm>, <xref:System.Security.Cryptography.AsymmetricAlgorithm> или <xref:System.Security.Cryptography.HashAlgorithm>. Этот уровень является абстрактным.
+- Класс типа алгоритма, например <xref:System.Security.Cryptography.SymmetricAlgorithm> , <xref:System.Security.Cryptography.AsymmetricAlgorithm> или <xref:System.Security.Cryptography.HashAlgorithm> . Этот уровень является абстрактным.
 
-- Класс алгоритма, наследующий от класса типа алгоритма, например <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.RC2> или <xref:System.Security.Cryptography.ECDiffieHellman>. Этот уровень является абстрактным.
+- Класс алгоритма, наследующий от класса типа алгоритма, например <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.RSA> или <xref:System.Security.Cryptography.ECDiffieHellman>. Этот уровень является абстрактным.
 
 - Реализация класса алгоритма, наследующего от класса алгоритма, например <xref:System.Security.Cryptography.AesManaged>, <xref:System.Security.Cryptography.RC2CryptoServiceProvider> или <xref:System.Security.Cryptography.ECDiffieHellmanCng>. Этот уровень полностью реализован.
 
-При помощи этой системы производных классов можно легко добавить новый алгоритм или новую реализацию существующего алгоритма. Например, чтобы создать новый алгоритм открытого ключа, можно наследовать от класса <xref:System.Security.Cryptography.AsymmetricAlgorithm>. Чтобы создать новую реализацию определенного алгоритма, можно создать неабстрактный производный класс этого алгоритма.
+Этот шаблон производных классов позволяет добавить новый алгоритм или новую реализацию существующего алгоритма. Например, чтобы создать новый алгоритм открытого ключа, можно наследовать от класса <xref:System.Security.Cryptography.AsymmetricAlgorithm>. Чтобы создать новую реализацию определенного алгоритма, можно создать неабстрактный производный класс этого алгоритма.
 
-## <a name="how-algorithms-are-implemented-in-the-net-framework"></a>Реализация алгоритмов в платформе .NET Framework
+## <a name="how-algorithms-are-implemented-in-net"></a>Реализация алгоритмов в .NET
 
-В качестве примера различных реализаций, доступных для алгоритма, рассмотрим симметричные алгоритмы. Основой для всех симметричных алгоритмов является <xref:System.Security.Cryptography.SymmetricAlgorithm>, который наследуется следующими алгоритмами:
+В качестве примера различных реализаций, доступных для алгоритма, рассмотрим симметричные алгоритмы. Основой для всех симметричных алгоритмов является <xref:System.Security.Cryptography.SymmetricAlgorithm> , которая наследуется <xref:System.Security.Cryptography.Aes> , <xref:System.Security.Cryptography.TripleDES> и другие, которые больше не рекомендуются.
 
-* <xref:System.Security.Cryptography.Aes>
-* <xref:System.Security.Cryptography.DES>
-* <xref:System.Security.Cryptography.RC2>
-* <xref:System.Security.Cryptography.Rijndael>
-* <xref:System.Security.Cryptography.TripleDES>
+<xref:System.Security.Cryptography.Aes>наследуется <xref:System.Security.Cryptography.AesCryptoServiceProvider> , <xref:System.Security.Cryptography.AesCng> и <xref:System.Security.Cryptography.AesManaged> .
 
-<xref:System.Security.Cryptography.Aes> наследуется двумя классами: <xref:System.Security.Cryptography.AesCryptoServiceProvider> и <xref:System.Security.Cryptography.AesManaged>. Класс <xref:System.Security.Cryptography.AesCryptoServiceProvider> является оболочкой реализации CAPI (Windows Cryptography API) для AES, тогда как класс <xref:System.Security.Cryptography.AesManaged> написан полностью в управляемом коде. Имеется также и третий тип реализации — CNG (Cryptography Next Generation), который дополняет реализацию в управляемом коде и реализацию CAPI. Примером алгоритма CNG является <xref:System.Security.Cryptography.ECDiffieHellmanCng>. Алгоритмы CNG доступны в Windows Vista и более поздних версий.
+В .NET Framework в Windows:
 
-Можно выбрать ту реализацию, которая подходит вам лучше всего. Управляемые реализации доступны на всех платформах, поддерживающих .NET Framework. Реализации CAPI доступны в более старых операционных системах и больше не разрабатываются. CNG — это последняя реализация, в которой будет создаваться новая разработка. Однако реализации в управляемом коде не сертифицированы по федеральным стандартам на обработку информации (FIPS) и могут работать медленнее, чем классы-оболочки.
+* `*CryptoServiceProvider`классы алгоритмов, такие как <xref:System.Security.Cryptography.AesCryptoServiceProvider> , являются оболочками для реализации алгоритма с помощью API шифрования Windows (CAPI).
+* `*Cng`классы алгоритмов, такие как, <xref:System.Security.Cryptography.ECDiffieHellmanCng> являются оболочками для реализации Windows криптографии следующего поколения (CNG).
+* `*Managed`классы, такие как <xref:System.Security.Cryptography.AesManaged> , полностью записываются в управляемом коде. `*Managed`реализации не сертифицированы Федеральным стандартом обработки информации (FIPS) и могут быть медленнее, чем `*CryptoServiceProvider` классы- `*Cng` оболочки.
 
-## <a name="stream-design"></a>Поточно-ориентированный подход
+В .NET Core и .NET 5 и более поздних версиях все классы реализации ( `*CryptoServiceProvider` , `*Managed` и `*Cng` ) являются оболочками для алгоритмов операционной системы (ОС). Если алгоритмы ОС сертифицированы по стандарту FIPS, .NET использует алгоритмы, сертифицированные FIPS. Дополнительные сведения см. в статье [кросс-платформенное шифрование](cross-platform-cryptography.md).
 
-Среда CLR использует поточно-ориентированный подход для реализации симметричных алгоритмов и алгоритмов хэширования. Основа такого подхода — класс <xref:System.Security.Cryptography.CryptoStream>, производный от класса <xref:System.IO.Stream>. Основанные на потоках криптографические объекты поддерживают единый стандартный интерфейс (`CryptoStream`) для обработки той части объекта, которая отвечает за передачу данных. Поскольку все объекты построены на базе стандартного интерфейса, можно связывать друг с другом несколько объектов (таких как хэш-объект и объект шифрования), а также выполнять несколько операций с данными без использования промежуточного хранилища. Потоковая модель также позволяет создавать объекты из объектов меньшего размера. Например, объединенный алгоритм шифрования и хэширования можно просмотреть как единый объект потока, хотя этот объект может состоять из набора объектов потока.
+В большинстве случаев нет необходимости напрямую ссылаться на класс реализации алгоритма, например `AesCryptoServiceProvider` . Обычно нужные методы и свойства находятся в классе базового алгоритма, например `Aes` . Создайте экземпляр класса реализации по умолчанию, используя фабричный метод в классе базового алгоритма и обратитесь к классу базового алгоритма. Например, см. выделенную строку кода в следующем примере:
+
+:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="16":::
+:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="12":::
 
 ## <a name="cryptographic-configuration"></a>Криптографическая конфигурация
 
-Криптографическая конфигурация позволяет разрешить определенную реализацию алгоритма до имени алгоритма, что обеспечивает расширяемость криптографических классов .NET Framework. Вы можете добавить свою собственную аппаратную или программную реализацию алгоритма и сопоставить ее с необходимым именем алгоритма. Если алгоритм не задан в файле конфигурации, используются параметры по умолчанию. Дополнительные сведения о конфигурации криптографии см. в разделе [Настройка криптографических классов](../../framework/configure-apps/configure-cryptography-classes.md).
+Конфигурация криптографии позволяет разрешать определенную реализацию алгоритма в имя алгоритма, обеспечивая расширяемость классов шифрования .NET. Вы можете добавить свою собственную аппаратную или программную реализацию алгоритма и сопоставить ее с необходимым именем алгоритма. Если алгоритм не задан в файле конфигурации, используются параметры по умолчанию.
 
 ## <a name="choosing-an-algorithm"></a>Выбор алгоритма
 
@@ -70,11 +74,12 @@ ms.locfileid: "84596323"
   - <xref:System.Security.Cryptography.ECDiffieHellman>
   - <xref:System.Security.Cryptography.RSA>
 - Генерация случайных чисел:
-  - <xref:System.Security.Cryptography.RNGCryptoServiceProvider>
+  - <xref:System.Security.Cryptography.RandomNumberGenerator.Create%2A?displayProperty=nameWithType>
 - Формирование ключа из пароля:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes>
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
-- [Службы шифрования](cryptographic-services.md)
-- [Примененные протоколы шифрования, алгоритмы и исходный код в C, Брюс Шнайера](https://www.schneier.com/books/applied_cryptography/)
+- [службы шифрования](cryptographic-services.md)
+- [Кросс-платформенная криптография](cross-platform-cryptography.md)
+- [ASP.NET Core Защита данных](/aspnet/core/security/data-protection/introduction)
