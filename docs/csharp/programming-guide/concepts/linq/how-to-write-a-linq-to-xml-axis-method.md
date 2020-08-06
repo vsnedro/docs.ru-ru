@@ -1,22 +1,23 @@
 ---
 title: Написание метода оси LINQ to XML (C#)
+description: Сведения о написании метода оси LINQ to XML. Методы оси XML используются для получения коллекций из XML-дерева.
 ms.date: 07/20/2015
 ms.assetid: 50aef06b-1d22-4718-a18a-21237e26d7c1
-ms.openlocfilehash: bf1542471f44115bd787e7be6c8ffb836a842a4f
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 76469e767a6a54813770498488460e3e92897770
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662450"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303209"
 ---
-# <a name="how-to-write-a-linq-to-xml-axis-method-c"></a><span data-ttu-id="80437-102">Написание метода оси LINQ to XML (C#)</span><span class="sxs-lookup"><span data-stu-id="80437-102">How to write a LINQ to XML axis method (C#)</span></span>
+# <a name="how-to-write-a-linq-to-xml-axis-method-c"></a><span data-ttu-id="c7ad0-104">Написание метода оси LINQ to XML (C#)</span><span class="sxs-lookup"><span data-stu-id="c7ad0-104">How to write a LINQ to XML axis method (C#)</span></span>
 
-<span data-ttu-id="80437-103">[Метод оси](linq-to-xml-axes-overview.md) в XML извлекает коллекцию XML-элементов из XML-документа или предка.</span><span class="sxs-lookup"><span data-stu-id="80437-103">An XML [axis method](linq-to-xml-axes-overview.md) retrieves a collection of XML elements from an XML document or ancestor element.</span></span> <span data-ttu-id="80437-104">Можно написать свои собственные методы оси для получения коллекций из XML-дерева.</span><span class="sxs-lookup"><span data-stu-id="80437-104">You can write your own axis methods to retrieve collections from an XML tree.</span></span> <span data-ttu-id="80437-105">Один из лучших способов выполнения этого состоит в написании метода расширения, возвращающего коллекцию элементов или атрибутов.</span><span class="sxs-lookup"><span data-stu-id="80437-105">One of the best ways to do this is to write an extension method that returns a collection of elements or attributes.</span></span> <span data-ttu-id="80437-106">Метод расширения можно написать для возврата указанных поднаборов элементов или атрибутов с учетом требований приложения.</span><span class="sxs-lookup"><span data-stu-id="80437-106">You can write your extension method to return specific subsets of elements or attributes, based on the requirements of your application.</span></span>  
+<span data-ttu-id="c7ad0-105">[Метод оси](linq-to-xml-axes-overview.md) в XML извлекает коллекцию XML-элементов из XML-документа или предка.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-105">An XML [axis method](linq-to-xml-axes-overview.md) retrieves a collection of XML elements from an XML document or ancestor element.</span></span> <span data-ttu-id="c7ad0-106">Можно написать свои собственные методы оси для получения коллекций из XML-дерева.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-106">You can write your own axis methods to retrieve collections from an XML tree.</span></span> <span data-ttu-id="c7ad0-107">Один из лучших способов выполнения этого состоит в написании метода расширения, возвращающего коллекцию элементов или атрибутов.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-107">One of the best ways to do this is to write an extension method that returns a collection of elements or attributes.</span></span> <span data-ttu-id="c7ad0-108">Метод расширения можно написать для возврата указанных поднаборов элементов или атрибутов с учетом требований приложения.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-108">You can write your extension method to return specific subsets of elements or attributes, based on the requirements of your application.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="80437-107">Пример</span><span class="sxs-lookup"><span data-stu-id="80437-107">Example</span></span>  
- <span data-ttu-id="80437-108">В следующем примере используются два метода расширения.</span><span class="sxs-lookup"><span data-stu-id="80437-108">The following example uses two extension methods.</span></span> <span data-ttu-id="80437-109">Первый метод расширения, `GetXPath`, действует применительно к <xref:System.Xml.Linq.XObject> и возвращает выражение XPath, которое после его вычисления возвращает узел или атрибут.</span><span class="sxs-lookup"><span data-stu-id="80437-109">The first extension method, `GetXPath`, operates on <xref:System.Xml.Linq.XObject>, and returns an XPath expression that when evaluated will return the node or attribute.</span></span> <span data-ttu-id="80437-110">Второй метод расширения, `Find`, применяется к <xref:System.Xml.Linq.XElement>.</span><span class="sxs-lookup"><span data-stu-id="80437-110">The second extension method, `Find`, operates on <xref:System.Xml.Linq.XElement>.</span></span> <span data-ttu-id="80437-111">Он возвращает коллекцию объектов <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>, содержащих некоторый указанный текст.</span><span class="sxs-lookup"><span data-stu-id="80437-111">It returns a collection of <xref:System.Xml.Linq.XAttribute> objects and <xref:System.Xml.Linq.XElement> objects that contain some specified text.</span></span>  
+## <a name="example"></a><span data-ttu-id="c7ad0-109">Пример</span><span class="sxs-lookup"><span data-stu-id="c7ad0-109">Example</span></span>  
+ <span data-ttu-id="c7ad0-110">В следующем примере используются два метода расширения.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-110">The following example uses two extension methods.</span></span> <span data-ttu-id="c7ad0-111">Первый метод расширения, `GetXPath`, действует применительно к <xref:System.Xml.Linq.XObject> и возвращает выражение XPath, которое после его вычисления возвращает узел или атрибут.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-111">The first extension method, `GetXPath`, operates on <xref:System.Xml.Linq.XObject>, and returns an XPath expression that when evaluated will return the node or attribute.</span></span> <span data-ttu-id="c7ad0-112">Второй метод расширения, `Find`, применяется к <xref:System.Xml.Linq.XElement>.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-112">The second extension method, `Find`, operates on <xref:System.Xml.Linq.XElement>.</span></span> <span data-ttu-id="c7ad0-113">Он возвращает коллекцию объектов <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>, содержащих некоторый указанный текст.</span><span class="sxs-lookup"><span data-stu-id="c7ad0-113">It returns a collection of <xref:System.Xml.Linq.XAttribute> objects and <xref:System.Xml.Linq.XElement> objects that contain some specified text.</span></span>  
   
- <span data-ttu-id="80437-112">В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="80437-112">This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span></span>  
+ <span data-ttu-id="c7ad0-114">В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="c7ad0-114">This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span></span>  
   
 ```csharp  
 public static class MyExtensions  
@@ -279,7 +280,7 @@ class Program
 }  
 ```  
   
- <span data-ttu-id="80437-113">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="80437-113">This code produces the following output:</span></span>  
+ <span data-ttu-id="c7ad0-115">Этот код выводит следующие результаты:</span><span class="sxs-lookup"><span data-stu-id="c7ad0-115">This code produces the following output:</span></span>  
   
 ```output  
 /PurchaseOrders/PurchaseOrder[1]/@OrderDate  

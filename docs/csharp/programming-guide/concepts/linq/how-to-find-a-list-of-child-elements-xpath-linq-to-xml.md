@@ -1,23 +1,24 @@
 ---
 title: Практическое руководство. Поиск списка дочерних элементов (XPath-LINQ to XML) (C#)
+description: Узнайте, как найти список дочерних элементов с помощью выражения XPath. Ознакомьтесь с примером кода, который находит все дочерние элементы определенного элемента.
 ms.date: 07/20/2015
 ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
-ms.openlocfilehash: 2b6f6031441e7d1bd015e25a8debad7dd7f3b261
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a3025aca7fb1055acd55e5ce98914d8359ebe4b7
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141226"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301727"
 ---
-# <a name="how-to-find-a-list-of-child-elements-xpath-linq-to-xml-c"></a><span data-ttu-id="bb9e7-102">Практическое руководство. Поиск списка дочерних элементов (XPath-LINQ to XML) (C#)</span><span class="sxs-lookup"><span data-stu-id="bb9e7-102">How to find a list of child elements (XPath-LINQ to XML) (C#)</span></span>
-<span data-ttu-id="bb9e7-103">В этом разделе проводится сравнение оси дочерних элементов XPath с осью [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A>.</span><span class="sxs-lookup"><span data-stu-id="bb9e7-103">This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.</span></span>  
+# <a name="how-to-find-a-list-of-child-elements-xpath-linq-to-xml-c"></a><span data-ttu-id="d0c9d-104">Практическое руководство. Поиск списка дочерних элементов (XPath-LINQ to XML) (C#)</span><span class="sxs-lookup"><span data-stu-id="d0c9d-104">How to find a list of child elements (XPath-LINQ to XML) (C#)</span></span>
+<span data-ttu-id="d0c9d-105">В этом разделе проводится сравнение оси дочерних элементов XPath с осью [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A>.</span><span class="sxs-lookup"><span data-stu-id="d0c9d-105">This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.</span></span>  
   
- <span data-ttu-id="bb9e7-104">Выражение XPath: `./*`.</span><span class="sxs-lookup"><span data-stu-id="bb9e7-104">The XPath expression is: `./*`</span></span>  
+ <span data-ttu-id="d0c9d-106">Выражение XPath: `./*`.</span><span class="sxs-lookup"><span data-stu-id="d0c9d-106">The XPath expression is: `./*`</span></span>  
   
-## <a name="example"></a><span data-ttu-id="bb9e7-105">Пример</span><span class="sxs-lookup"><span data-stu-id="bb9e7-105">Example</span></span>  
- <span data-ttu-id="bb9e7-106">В этом примере осуществляется поиск всех дочерних элементов элемента `Address`.</span><span class="sxs-lookup"><span data-stu-id="bb9e7-106">This example finds all of the child elements of the `Address` element.</span></span>  
+## <a name="example"></a><span data-ttu-id="d0c9d-107">Пример</span><span class="sxs-lookup"><span data-stu-id="d0c9d-107">Example</span></span>  
+ <span data-ttu-id="d0c9d-108">В этом примере осуществляется поиск всех дочерних элементов элемента `Address`.</span><span class="sxs-lookup"><span data-stu-id="d0c9d-108">This example finds all of the child elements of the `Address` element.</span></span>  
   
- <span data-ttu-id="bb9e7-107">В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="bb9e7-107">This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span></span>  
+ <span data-ttu-id="d0c9d-109">В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="d0c9d-109">This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).</span></span>  
   
 ```csharp  
 XDocument cpo = XDocument.Load("PurchaseOrders.xml");  
@@ -38,7 +39,7 @@ foreach (XElement el in list1)
     Console.WriteLine(el);  
 ```  
   
- <span data-ttu-id="bb9e7-108">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="bb9e7-108">This example produces the following output:</span></span>  
+ <span data-ttu-id="d0c9d-110">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="d0c9d-110">This example produces the following output:</span></span>  
   
 ```output  
 Results are identical  

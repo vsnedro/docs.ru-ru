@@ -1,5 +1,6 @@
 ---
 title: <code> - C# programming guide
+description: Сведения о <code> tag. This tag is used to indicate multiple lines of code, while <c> marks single-line text in a description as code. в XML.
 ms.date: 07/20/2015
 f1_keywords:
 - code
@@ -8,38 +9,38 @@ helpviewer_keywords:
 - code XML tag
 - <code> C# XML tag
 ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
-ms.openlocfilehash: 52d4b6caa0ea9e1a2d0212398f86374bc8af0402
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f1f4cd930a876c8eca13de5f015e2b42b928d6f1
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287445"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87382013"
 ---
-# <a name="code-c-programming-guide"></a><span data-ttu-id="beaa2-101">\<code> (руководство по программированию на C#)</span><span class="sxs-lookup"><span data-stu-id="beaa2-101">\<code> (C# programming guide)</span></span>
+# <a name="code-c-programming-guide"></a><span data-ttu-id="c16ee-102">\<code> (руководство по программированию на C#)</span><span class="sxs-lookup"><span data-stu-id="c16ee-102">\<code> (C# programming guide)</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="beaa2-102">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="beaa2-102">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c16ee-103">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c16ee-103">Syntax</span></span>
 
 ```xml
 <code>content</code>
 ```
 
-## <a name="parameters"></a><span data-ttu-id="beaa2-103">Параметры</span><span class="sxs-lookup"><span data-stu-id="beaa2-103">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c16ee-104">Параметры</span><span class="sxs-lookup"><span data-stu-id="c16ee-104">Parameters</span></span>
 
 - `content`
 
-  <span data-ttu-id="beaa2-104">Текст, который необходимо пометить как код.</span><span class="sxs-lookup"><span data-stu-id="beaa2-104">The text you want marked as code.</span></span>
+  <span data-ttu-id="c16ee-105">Текст, который необходимо пометить как код.</span><span class="sxs-lookup"><span data-stu-id="c16ee-105">The text you want marked as code.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="beaa2-105">Примечания</span><span class="sxs-lookup"><span data-stu-id="beaa2-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c16ee-106">Примечания</span><span class="sxs-lookup"><span data-stu-id="c16ee-106">Remarks</span></span>
 
-<span data-ttu-id="beaa2-106">Тег `<code>` используется для указания нескольких строк кода.</span><span class="sxs-lookup"><span data-stu-id="beaa2-106">The `<code>` tag is used to indicate multiple lines of code.</span></span> <span data-ttu-id="beaa2-107">С помощью тега [\<c>](./code-inline.md) можно указать, что однострочный текст в описании необходимо пометить как код.</span><span class="sxs-lookup"><span data-stu-id="beaa2-107">Use [\<c>](./code-inline.md) to indicate that single-line text within a description should be marked as code.</span></span>
+<span data-ttu-id="c16ee-107">Тег `<code>` используется для указания нескольких строк кода.</span><span class="sxs-lookup"><span data-stu-id="c16ee-107">The `<code>` tag is used to indicate multiple lines of code.</span></span> <span data-ttu-id="c16ee-108">С помощью тега [\<c>](./code-inline.md) можно указать, что однострочный текст в описании необходимо пометить как код.</span><span class="sxs-lookup"><span data-stu-id="c16ee-108">Use [\<c>](./code-inline.md) to indicate that single-line text within a description should be marked as code.</span></span>
 
-<span data-ttu-id="beaa2-108">Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).</span><span class="sxs-lookup"><span data-stu-id="beaa2-108">Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.</span></span>
+<span data-ttu-id="c16ee-109">Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../language-reference/compiler-options/doc-compiler-option.md).</span><span class="sxs-lookup"><span data-stu-id="c16ee-109">Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.</span></span>
 
-## <a name="example"></a><span data-ttu-id="beaa2-109">Пример</span><span class="sxs-lookup"><span data-stu-id="beaa2-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c16ee-110">Пример</span><span class="sxs-lookup"><span data-stu-id="c16ee-110">Example</span></span>
 
-<span data-ttu-id="beaa2-110">Пример использования тега `<code>` см. в статье [\<example>](./example.md).</span><span class="sxs-lookup"><span data-stu-id="beaa2-110">See the [\<example>](./example.md) article for an example of how to use the `<code>` tag.</span></span>
+<span data-ttu-id="c16ee-111">Пример использования тега `<code>` см. в статье [\<example>](./example.md).</span><span class="sxs-lookup"><span data-stu-id="c16ee-111">See the [\<example>](./example.md) article for an example of how to use the `<code>` tag.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="beaa2-111">См. также</span><span class="sxs-lookup"><span data-stu-id="beaa2-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c16ee-112">См. также</span><span class="sxs-lookup"><span data-stu-id="c16ee-112">See also</span></span>
 
-- [<span data-ttu-id="beaa2-112">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="beaa2-112">C# programming guide</span></span>](../index.md)
-- [<span data-ttu-id="beaa2-113">Рекомендуемые теги для комментариев документации</span><span class="sxs-lookup"><span data-stu-id="beaa2-113">Recommended tags for documentation comments</span></span>](./recommended-tags-for-documentation-comments.md)
+- [<span data-ttu-id="c16ee-113">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="c16ee-113">C# programming guide</span></span>](../index.md)
+- [<span data-ttu-id="c16ee-114">Рекомендуемые теги для комментариев документации</span><span class="sxs-lookup"><span data-stu-id="c16ee-114">Recommended tags for documentation comments</span></span>](./recommended-tags-for-documentation-comments.md)

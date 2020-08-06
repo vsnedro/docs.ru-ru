@@ -1,18 +1,19 @@
 ---
 title: Пример XML-файла. Конфигурация тестирования в пространстве имен
+description: Этот XML-файл используется в различных примерах в документации по LINQ to XML. Это тестовый файл конфигурации. XML располагается в пространстве имен.
 ms.date: 07/20/2015
 ms.assetid: e75ad1bc-5636-4623-9a34-a286a8c485d6
-ms.openlocfilehash: ed25a8608977070e0db5f4cdee8a44a3c347cc8e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e08bc476eda39b6e9ff3e2958a49a0d9e5dc303a
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168006"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302481"
 ---
-# <a name="sample-xml-file-test-configuration-in-a-namespace"></a><span data-ttu-id="431ac-102">Пример XML-файла. Конфигурация тестирования в пространстве имен</span><span class="sxs-lookup"><span data-stu-id="431ac-102">Sample XML File: Test Configuration in a Namespace</span></span>
-<span data-ttu-id="431ac-103">Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].</span><span class="sxs-lookup"><span data-stu-id="431ac-103">The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.</span></span> <span data-ttu-id="431ac-104">Это тестовый файл конфигурации.</span><span class="sxs-lookup"><span data-stu-id="431ac-104">This is a test configuration file.</span></span> <span data-ttu-id="431ac-105">XML располагается в пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="431ac-105">The XML is in a namespace.</span></span>  
+# <a name="sample-xml-file-test-configuration-in-a-namespace"></a><span data-ttu-id="05f36-105">Пример XML-файла: конфигурация тестирования в пространстве имен</span><span class="sxs-lookup"><span data-stu-id="05f36-105">Sample XML File: Test Configuration in a Namespace</span></span>
+<span data-ttu-id="05f36-106">Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].</span><span class="sxs-lookup"><span data-stu-id="05f36-106">The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.</span></span> <span data-ttu-id="05f36-107">Это тестовый файл конфигурации.</span><span class="sxs-lookup"><span data-stu-id="05f36-107">This is a test configuration file.</span></span> <span data-ttu-id="05f36-108">XML располагается в пространстве имен.</span><span class="sxs-lookup"><span data-stu-id="05f36-108">The XML is in a namespace.</span></span>  
   
-## <a name="testconfiginnamespacexml"></a><span data-ttu-id="431ac-106">TestConfigInNamespace.xml</span><span class="sxs-lookup"><span data-stu-id="431ac-106">TestConfigInNamespace.xml</span></span>  
+## <a name="testconfiginnamespacexml"></a><span data-ttu-id="05f36-109">TestConfigInNamespace.xml</span><span class="sxs-lookup"><span data-stu-id="05f36-109">TestConfigInNamespace.xml</span></span>  
   
 ```xml  
 <?xml version="1.0"?>  
