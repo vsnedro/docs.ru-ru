@@ -17,14 +17,15 @@ helpviewer_keywords:
 - permissions [.NET Framework], overriding security checks
 - permissions [.NET Framework], assertions
 ms.assetid: 1e40f4d3-fb7d-4f19-b334-b6076d469ea9
-ms.openlocfilehash: 096e0375a94c92a835cccb4d1b3297783b4120e9
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 573b84f991e795c2513f213ddb52999fef51c454
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309811"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855675"
 ---
 # <a name="using-the-assert-method"></a>Использование метода Assert
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  <xref:System.Security.CodeAccessPermission.Assert%2A> представляет собой метод, который может вызываться для классов разрешений доступа к коду и для класса <xref:System.Security.PermissionSet>. Можно использовать **Assert** , чтобы позволить коду (и нисходящим вызывающим объектам) выполнять действия, которые код имеет разрешение, но его вызывающие объекты могут не иметь разрешения на выполнение. Утверждение безопасности изменяет нормальный ход процесса, которому следует среда выполнения при проверке безопасности. Когда вы утверждаете разрешение, система безопасности не проверяет вызывающие объекты кода на наличие утвержденного разрешения.  

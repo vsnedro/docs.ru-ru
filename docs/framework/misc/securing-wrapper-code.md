@@ -8,14 +8,15 @@ helpviewer_keywords:
 - secure coding, wrapper code
 - code security, wrapper code
 ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
-ms.openlocfilehash: 4338b3d0ab306501ea252407f386bdf89d191d6d
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: f448cbf55f3ad992ba9dcc53d5be70b364038744
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309382"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855755"
 ---
 # <a name="securing-wrapper-code"></a>Безопасность кода программы-оболочки
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Код программы-оболочки, особенно когда она имеет более высокий уровень доверия, чем код, который ее использует, может открыть уникальный набор уязвимостей системы безопасности. Все, что делается от имени вызывающего объекта, когда его ограниченные разрешения не включаются в соответствующую проверку безопасности, является потенциальной уязвимостью и может быть использовано злоумышленником.  

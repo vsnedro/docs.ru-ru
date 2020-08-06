@@ -1,6 +1,8 @@
 ---
 title: Выравнивание нескольких элементов управления
 ms.date: 03/30/2017
+f1_keywords:
+- Designer_Microsoft.VisualStudio.Windows.Forms.Design.DocumentDesigner
 helpviewer_keywords:
 - forms [Windows Forms], aligning controls
 - Windows Forms, aligning controls
@@ -10,12 +12,12 @@ ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5593c20e0e00e646949bf7357ecd126cbd1271f4
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 4bde1926b89fe553ec9eda29ca5dfc1f3373af52
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76747192"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855625"
 ---
 # <a name="how-to-align-multiple-controls-on-windows-forms"></a>Практическое руководство. Выравнивание нескольких элементов управления в формах Windows Forms
 
@@ -32,8 +34,8 @@ ms.locfileid: "76747192"
 ## <a name="see-also"></a>См. также раздел
 
 - [Элементы управления Windows Forms](index.md)
-- [Практическое руководство. Добавление элементов управления в формы Windows Forms](how-to-add-controls-to-windows-forms.md)
-- [Элементы управления для использования в Windows Forms](controls-to-use-on-windows-forms.md)
+- [Практическое руководство. Добавление элементов управления в Windows Forms](how-to-add-controls-to-windows-forms.md)
+- [Элементы управления для использования в формах Windows Forms](controls-to-use-on-windows-forms.md)
 - [Функциональная классификация элементов управления Windows Forms](windows-forms-controls-by-function.md)
 - [Пример. Упорядочение элементов управления в формах Windows Forms с помощью линий привязки](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Пошаговое руководство. Упорядочение элементов управления в формах Windows Forms с помощью элемента TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)

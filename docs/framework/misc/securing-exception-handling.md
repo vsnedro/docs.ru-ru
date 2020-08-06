@@ -10,14 +10,17 @@ helpviewer_keywords:
 - secure coding, exception handling
 - exception handling, security
 ms.assetid: 1f3da743-9742-47ff-96e6-d0dd1e9e1c19
-ms.openlocfilehash: 73597f83d7236cd48a18a891c987b4f5d7e1723d
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: c7643bb34da0cbcbd267fc90e6294bc0b565985e
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309044"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855781"
 ---
 # <a name="securing-exception-handling"></a>Безопасность обработки исключений
+
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
+
 В Visual C++ и Visual Basic выражение фильтра, расположенное дальше вверх по стеку, выполняется перед любой `finally` инструкцией. Блок **catch** , связанный с этим фильтром, выполняется после `finally` инструкции. Дополнительные сведения см. [в разделе Использование исключений с пользовательской фильтрацией](../../standard/exceptions/using-user-filtered-exception-handlers.md). В этом разделе рассматриваются аспекты безопасности в этом порядке. Рассмотрим следующий пример псевдокода, демонстрирующий порядок выполнения инструкций и инструкций фильтра `finally` .  
   
 ```cpp  

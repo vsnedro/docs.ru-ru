@@ -16,14 +16,15 @@ helpviewer_keywords:
 - user authentication, code access security
 - code access security
 ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
-ms.openlocfilehash: 3c125e6c57ce7da459c03fc7d51fc9311fdc8e3b
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 49d55ffde3dcb88720f47af6f9702013d8a7f1ee
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309018"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855872"
 ---
 # <a name="code-access-security"></a>Управление доступом для кода
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Современные, в высокой степени взаимосвязанные компьютерные системы часто подвержены воздействию кода из разных, иногда неизвестных источников. Код можно вложить в электронную почту, содержащуюся в документах или скачать через Интернет. К сожалению, многие пользователи уже на собственном опыте испытали действие небезопасного кода, включая вирусы и черви, который может повреждать и уничтожать данные, приводя к потере времени и денег.  
@@ -66,7 +67,7 @@ ms.locfileid: "86309018"
 |-----------|-----------------|  
 |[Основы управления доступом для кода](code-access-security-basics.md)|Описывается управление доступом для кода и распространенные способы его использования.|  
 |[Прозрачный с точки зрения безопасности код, уровень 2](security-transparent-code-level-2.md)|Описывает модель прозрачности безопасности в .NET Framework 4.|  
-|[Использование библиотек из частично доверенного кода](using-libraries-from-partially-trusted-code.md)|Описывается, как предоставить доступ к библиотекам и использовать их из неуправляемого код.|  
+|[Использование библиотек из не вполне надежного кода](using-libraries-from-partially-trusted-code.md)|Описывается, как предоставить доступ к библиотекам и использовать их из неуправляемого код.|  
 |[Основные понятия безопасности](../../standard/security/key-security-concepts.md)|Обзор многих ключевых терминов и принципов, используемых в системе безопасности .NET Framework.|  
 |[Безопасность на основе ролей](../../standard/security/role-based-security.md)|Описывается использование безопасности на основе ролей.|  
 |[службы шифрования](../../standard/security/cryptographic-services.md)|Описывается использование шифрования в приложениях.|

@@ -9,14 +9,17 @@ helpviewer_keywords:
 - secure coding, dangerous permissions
 - permissions [.NET Framework], dangerous
 ms.assetid: 1929e854-23a0-4bb1-94be-e8aa3b609e32
-ms.openlocfilehash: ba3d47dc445e4b368f57d59d735fc331f5d6de81
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 1d3fb53775a4d88f9372b582189a38e18376761a
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281619"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855820"
 ---
 # <a name="dangerous-permissions-and-policy-administration"></a>Опасные разрешения и администрирование политик
+
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
+
 Некоторые из защищенных операций, для которых .NET Framework предоставляет разрешения, потенциально могут позволить обойти систему безопасности. Эти небезопасные разрешения должны предоставляться только надежному коду и только в случае необходимости. Обычно невозможно защититься от вредоносного кода, который получил эти разрешения.  
   
 > [!NOTE]
