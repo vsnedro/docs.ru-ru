@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Фильтрация по атрибуту (XPath-LINQ to XML) (C#)
+description: Сведения о фильтрации потомков с определенным именем и значением атрибута для XPath и LINQ to XML.
 ms.date: 07/20/2015
 ms.assetid: 208d6256-1bd7-4237-b2c9-909f26dfd0e2
-ms.openlocfilehash: ab2cd439f4dd1454de4fa565658ef5dac14b8c22
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 80c43b8485314c6a711b574b5d6c23b56533833d
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141272"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302897"
 ---
 # <a name="how-to-filter-on-an-attribute-xpath-linq-to-xml-c"></a>Практическое руководство. Фильтрация по атрибуту (XPath-LINQ to XML) (C#)
 В этом разделе показано, как получать элементы-потомки с указанным именем и атрибут с заданным значением.  
@@ -19,7 +20,7 @@ ms.locfileid: "74141272"
 ## <a name="example"></a>Пример  
  В этом примере обнаруживаются все элементы-потомки с именем `Address` и с атрибутом `Type`, имеющим значение «Доставка».  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  

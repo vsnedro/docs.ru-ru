@@ -11,14 +11,14 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 78a47b01cc8fba4cb45a686adad901784552c1c1
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: fbd3c8062892f106ec17d0fef86d5ad7f1207d20
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865337"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303482"
 ---
-# <a name="how-to-migrate-from-newtonsoftjson-to-systemtextjson"></a>Миграция из Newtonsoft.Json в System.Text.Json
+# <a name="how-to-migrate-from-no-locnewtonsoftjson-to-no-locsystemtextjson"></a>Миграция из Newtonsoft.Json в System.Text.Json
 
 В этой статье описывается миграция из [Newtonsoft.Json](https://www.newtonsoft.com/json) в <xref:System.Text.Json>.
 
@@ -34,7 +34,7 @@ ms.locfileid: "86865337"
 
 Большая часть этой статьи посвящена использованию API <xref:System.Text.Json.JsonSerializer>, но также содержит рекомендации по использованию <xref:System.Text.Json.JsonDocument> (который представляет модель DOM), <xref:System.Text.Json.Utf8JsonReader> и типов <xref:System.Text.Json.Utf8JsonWriter>.
 
-## <a name="table-of-differences-between-newtonsoftjson-and-systemtextjson"></a>Таблица различий между Newtonsoft.Json и System.Text.Json
+## <a name="table-of-differences-between-no-locnewtonsoftjson-and-no-locsystemtextjson"></a>Таблица различий между Newtonsoft.Json и System.Text.Json
 
 В следующей таблице перечислены функции `Newtonsoft.Json` и эквиваленты `System.Text.Json`. Эквиваленты делятся на следующие категории:
 
@@ -83,7 +83,7 @@ ms.locfileid: "86865337"
 
 Это неполный список функций `Newtonsoft.Json`. В список входят многие сценарии, которые были запрошены в [проблемах GitHub](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) или записях [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json). Если вы реализуете обходной путь для одного из перечисленных здесь сценариев, для которого в настоящее время нет примера кода, и если вы хотите поделиться своим решением, нажмите **Эта страница** в разделе **Отзывы** (в нижней части этой страницы). Это позволит создать проблему в репозитории GitHub в этой документации и указать ее в разделе **Отзывы** на этой странице.
 
-## <a name="differences-in-default-jsonserializer-behavior-compared-to-newtonsoftjson"></a>Различия в поведении JsonSerializer по умолчанию по сравнению с Newtonsoft.Json
+## <a name="differences-in-default-jsonserializer-behavior-compared-to-no-locnewtonsoftjson"></a>Различия в поведении JsonSerializer по умолчанию по сравнению с Newtonsoft.Json
 
 <xref:System.Text.Json> по умолчанию является строгим и избегает двусмысленностей со стороны вызывающего объекта, подчеркивая детерминированное поведение. Библиотека преднамеренно разработана таким образом для повышения производительности и безопасности. `Newtonsoft.Json` по умолчанию является гибким. Это фундаментальное различие в проектировании обуславливает многие из следующих различий в поведении по умолчанию.
 
@@ -402,12 +402,14 @@ The JSON value could not be converted to System.String.
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastCallbacksConverter.cs)]
 
-Зарегистрируйте этот пользовательский преобразователь, [используя атрибут для класса](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) или [добавив преобразователь](system-text-json-converters-how-to.md#registration-sample---converters-collection) в коллекцию <xref:System.Text.Json.JsonSerializerOptions.Converters>.
+Зарегистрируйте этот пользовательский преобразователь, [добавив его](system-text-json-converters-how-to.md#registration-sample---converters-collection) в коллекцию <xref:System.Text.Json.JsonSerializerOptions.Converters>.
 
 Если вы используете пользовательский преобразователь, как в предыдущем примере:
 
 * Код `OnDeserializing` не имеет доступа к новому экземпляру POCO. Чтобы управлять новым экземпляром POCO в начале десериализации, вставьте этот код в конструктор POCO.
-* Избегайте бесконечного цикла, регистрируя преобразователь с помощью объекта options и не передавая объект options при рекурсивном вызове `Serialize` или `Deserialize`. Дополнительные сведения см. в разделе [Обязательные свойства](#required-properties), приведенном выше в этой статье.
+* Избегайте бесконечного цикла, регистрируя преобразователь с помощью объекта options и не передавая объект options при рекурсивном вызове `Serialize` или `Deserialize`.
+
+Дополнительные сведения о пользовательских преобразователях, которые рекурсивно вызывают `Serialize` или `Deserialize`, см. в разделе [Обязательные свойства](#required-properties) ранее в этой статье.
 
 ### <a name="public-and-non-public-fields"></a>Открытые и не открытые поля
 

@@ -1,6 +1,7 @@
 ---
-title: Операторы C# — справочник по C#
-ms.date: 04/28/2020
+title: Операторы и выражения C# — справочник по C#
+description: Сведения об операторах и выражениях C#, приоритете и ассоциативности операторов
+ms.date: 08/04/2020
 f1_keywords:
 - cs.operators
 helpviewer_keywords:
@@ -9,18 +10,52 @@ helpviewer_keywords:
 - operator associativity [C#]
 - expressions [C#]
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
-ms.openlocfilehash: 96bb97690f8954cce2cc75cad921e21985972798
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 19b5683a7cd334e1203c57fa90d275b659eac873
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87301779"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87556557"
 ---
-# <a name="c-operators-c-reference"></a>Операторы C# (справочник по C#)
+# <a name="c-operators-and-expressions-c-reference"></a>Операторы и выражения C# (справочник по C#)
 
-C# предоставляет ряд операторов, поддерживаемых встроенными типами. Например [арифметические операторы](arithmetic-operators.md) выполняют арифметические операции с числовыми операндами, а [логические операторы](boolean-logical-operators.md) выполняют логические операции с операндами [bool](../builtin-types/bool.md). Большинство операторов могут быть [перегружены](operator-overloading.md). С помощью перегрузки операторов можно указать поведение оператора для операндов определяемого пользователем типа.
+C# предоставляет ряд операторов. Многие из них поддерживаются [встроенными типами](../builtin-types/built-in-types.md) и позволяют выполнять базовые операции со значениями этих типов. В число этих операторов входят следующие группы:
 
-В [выражении](../../programming-guide/statements-expressions-operators/expressions.md) приоритет и ассоциативность операторов определяют порядок выполнения операций. Порядок вычисления, определяемый приоритетом и ассоциативностью операторов, можно изменить с помощью скобок.
+- [Арифметические операторы](arithmetic-operators.md), выполняющие арифметические операции с числовыми операндами.
+- [Операторы сравнения](comparison-operators.md), сравнивающие числовые операнды.
+- [Логические операторы](boolean-logical-operators.md), выполняющие логические операции с операндами [`bool`](../builtin-types/bool.md).
+- [Битовые операторы и операторы сдвига](bitwise-and-shift-operators.md) выполняют битовые операции или операции сдвига с операндами целочисленных типов.
+- [Операторы равенства](equality-operators.md) проверяют равенство или неравенство своих операндов.
+
+Как правило, можно выполнить [перегрузку](operator-overloading.md) этих операторов, то есть указать поведение оператора для операндов определяемого пользователем типа.
+
+Простейшими выражениями C# являются литералы (например, [целые](../builtin-types/integral-numeric-types.md#integer-literals) и [реальные](../builtin-types/floating-point-numeric-types.md#real-literals) числа) и имена переменных. Их можно объединить в сложные выражения с помощью операторов. [Приоритет](#operator-precedence) и [ассоциативность](#operator-associativity) операторов определяют порядок выполнения операций в выражении. Порядок вычисления, определяемый приоритетом и ассоциативностью операторов, можно изменить с помощью скобок.
+
+В следующем коде примеры выражений находятся в правой части назначений:
+
+[!code-csharp[expression examples](snippets/Overview.cs#Expressions)]
+
+Как правило, выражение выдает результат и может быть заключено в другое выражение. Вызов метода [`void`](../builtin-types/void.md) является примером выражения, которое дает результат. Его можно использовать только в качестве [оператора](../../programming-guide/statements-expressions-operators/statements.md), как показано в следующем примере:
+
+```csharp
+Console.WriteLine("Hello, world!");
+```
+
+Ниже приведены некоторые другие виды выражений, доступные в C#:
+
+- [Выражения интерполированных строк](../tokens/interpolated.md), которые предоставляют удобный синтаксис для создания форматированных строк:
+
+  [!code-csharp-interactive[interpolated string](snippets/Overview.cs#InterpolatedString)]
+
+- [Лямбда-выражения](../../programming-guide/statements-expressions-operators/lambda-expressions.md), позволяющие создавать анонимные функции:
+
+  [!code-csharp-interactive[lambda expression](snippets/Overview.cs#Lambda)]
+
+- [Выражения запроса](../keywords/query-keywords.md), позволяющие использовать возможности запросов непосредственно в C#:
+
+  [!code-csharp-interactive[query expression](snippets/Overview.cs#Query)]
+
+[Определение тела выражения](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) можно использовать, чтобы предоставить краткое определение для метода, конструктора, свойства, индексатора или метода завершения.
 
 ## <a name="operator-precedence"></a>Приоритет операторов
 
@@ -90,9 +125,13 @@ Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
-Дополнительные сведения см. в разделе [Операторы](~/_csharplang/spec/expressions.md#operators) статьи [Спецификация языка C#](~/_csharplang/spec/introduction.md).
+Дополнительные сведения см. в следующих разделах статьи [Спецификация языка C#](~/_csharplang/spec/introduction.md):
+
+- [Выражения](~/_csharplang/spec/expressions.md)
+- [Инструкции](~/_csharplang/spec/expressions.md#operators)
 
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Выражения](../../programming-guide/statements-expressions-operators/expressions.md)
+- [Перегрузка операторов](operator-overloading.md)
+- [Деревья выражений](../../programming-guide/concepts/expression-trees/index.md)

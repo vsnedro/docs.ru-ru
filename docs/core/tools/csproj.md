@@ -2,12 +2,12 @@
 title: Дополнения к формату CSPROJ для .NET Core
 description: Различия между существующими файлами и файлами CSPROJ .NET Core
 ms.date: 04/08/2019
-ms.openlocfilehash: ea57b66d9a2e5cb69fe82e9a4bcf68625af546fd
-ms.sourcegitcommit: c8c3e1c63a00b7d27f76f5e50ee6469e6bdc8987
+ms.openlocfilehash: a0cbead27e52af3114d9c44fd19c966e665a2850
+ms.sourcegitcommit: 32f0d6f4c01ddc6ca78767c3a30e3305f8cd032c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87251209"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87427012"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>Дополнения к формату CSPROJ для .NET Core
 
@@ -342,9 +342,9 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 
 URL-адрес лицензии, применимой к пакету. (_Отмечено как нерекомендуемое начиная с Visual Studio версии 15.9.4, пакета SDK для .NET 2.1.502 и 2.2.101._ )
 
-### <a name="packageiconurl"></a>PackageIconUrl
+### <a name="packageicon"></a>PackageIcon
 
-URL-адрес для изображения размером 64x64 с прозрачным фоном, используемого в качестве значка для пакета при отображении пользовательского интерфейса.
+Путь к образу в пакете, используемому в качестве значка пакета. Подробнее о [метаданных `icon`](/nuget/reference/nuspec#icon). [Элемент PackageIconUrl объявлен устаревшим](/nuget/reference/msbuild-targets#packageiconurl). Вместо него следует использовать PackageIcon.
 
 ### <a name="packagereleasenotes"></a>PackageReleaseNotes
 

@@ -3,12 +3,12 @@ title: Средства .NET Core
 description: Установка, использование, обновление и удаление средств .NET Core. Содержит сведения о глобальных средствах, средствах пути к средству и локальных средствах.
 author: KathleenDollard
 ms.date: 02/12/2020
-ms.openlocfilehash: 583dbb461543d1efb7328d55f6ecce4a99afcaca
-ms.sourcegitcommit: 67cf756b033c6173a1bbd1cbd5aef1fccac99e34
+ms.openlocfilehash: 75bdedcbc3ebe9c23477795415076d160ab9a642
+ms.sourcegitcommit: 7499bdb428d63ed0e19e97f54d3d576c41598659
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86226612"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87455719"
 ---
 # <a name="how-to-manage-net-core-tools"></a>Управление средствами .NET Core
 
@@ -37,11 +37,11 @@ ms.locfileid: "86226612"
 
 В настоящее время в .NET Core отсутствует функция поиска средств. Ниже приведены некоторые способы поиска средств.
 
+* Выполните поиск на веб-сайте [NuGet](https://www.nuget.org), используя фильтр .NET tool (Инструмент .NET) из категории Package type (Тип пакета). Дополнительные сведения см. в разделе [Поиск и выбор пакетов](/nuget/consume-packages/finding-and-choosing-packages).
 * См. список средств в репозитории GitHub [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools).
 * Используйте для поиска средств .NET [ToolGet](https://www.toolget.net/).
 * См. исходный код для средств, созданных командой разработчиков ASP.NET Core в [каталоге средств репозитория GitHub dotnet/aspnetcore](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
 * Дополнительные сведения о средствах диагностики см. в разделе [Глобальные средства диагностики dotnet в .NET Core](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
-* Найдите веб-сайт [NuGet](https://www.nuget.org). Однако у сайта NuGet еще нет функции, которая позволяет искать только пакеты средств.
 
 ## <a name="check-the-author-and-statistics"></a>Проверка автора и статистики
 
