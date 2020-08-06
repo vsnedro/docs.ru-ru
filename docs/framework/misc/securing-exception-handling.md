@@ -10,15 +10,18 @@ helpviewer_keywords:
 - secure coding, exception handling
 - exception handling, security
 ms.assetid: 1f3da743-9742-47ff-96e6-d0dd1e9e1c19
-ms.openlocfilehash: 73597f83d7236cd48a18a891c987b4f5d7e1723d
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: c7643bb34da0cbcbd267fc90e6294bc0b565985e
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309044"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855781"
 ---
-# <a name="securing-exception-handling"></a><span data-ttu-id="72f90-104">Безопасность обработки исключений</span><span class="sxs-lookup"><span data-stu-id="72f90-104">Securing Exception Handling</span></span>
-<span data-ttu-id="72f90-105">В Visual C++ и Visual Basic выражение фильтра, расположенное дальше вверх по стеку, выполняется перед любой `finally` инструкцией.</span><span class="sxs-lookup"><span data-stu-id="72f90-105">In Visual C++ and Visual Basic, a filter expression further up the stack runs before any `finally` statement.</span></span> <span data-ttu-id="72f90-106">Блок **catch** , связанный с этим фильтром, выполняется после `finally` инструкции.</span><span class="sxs-lookup"><span data-stu-id="72f90-106">The **catch** block associated with that filter runs after the `finally` statement.</span></span> <span data-ttu-id="72f90-107">Дополнительные сведения см. [в разделе Использование исключений с пользовательской фильтрацией](../../standard/exceptions/using-user-filtered-exception-handlers.md).</span><span class="sxs-lookup"><span data-stu-id="72f90-107">For more information, see [Using User-Filtered Exceptions](../../standard/exceptions/using-user-filtered-exception-handlers.md).</span></span> <span data-ttu-id="72f90-108">В этом разделе рассматриваются аспекты безопасности в этом порядке.</span><span class="sxs-lookup"><span data-stu-id="72f90-108">This section examines the security implications of this order.</span></span> <span data-ttu-id="72f90-109">Рассмотрим следующий пример псевдокода, демонстрирующий порядок выполнения инструкций и инструкций фильтра `finally` .</span><span class="sxs-lookup"><span data-stu-id="72f90-109">Consider the following pseudocode example that illustrates the order in which filter statements and `finally` statements run.</span></span>  
+# <a name="securing-exception-handling"></a><span data-ttu-id="1923b-104">Безопасность обработки исключений</span><span class="sxs-lookup"><span data-stu-id="1923b-104">Securing Exception Handling</span></span>
+
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
+
+<span data-ttu-id="1923b-105">В Visual C++ и Visual Basic выражение фильтра, расположенное дальше вверх по стеку, выполняется перед любой `finally` инструкцией.</span><span class="sxs-lookup"><span data-stu-id="1923b-105">In Visual C++ and Visual Basic, a filter expression further up the stack runs before any `finally` statement.</span></span> <span data-ttu-id="1923b-106">Блок **catch** , связанный с этим фильтром, выполняется после `finally` инструкции.</span><span class="sxs-lookup"><span data-stu-id="1923b-106">The **catch** block associated with that filter runs after the `finally` statement.</span></span> <span data-ttu-id="1923b-107">Дополнительные сведения см. [в разделе Использование исключений с пользовательской фильтрацией](../../standard/exceptions/using-user-filtered-exception-handlers.md).</span><span class="sxs-lookup"><span data-stu-id="1923b-107">For more information, see [Using User-Filtered Exceptions](../../standard/exceptions/using-user-filtered-exception-handlers.md).</span></span> <span data-ttu-id="1923b-108">В этом разделе рассматриваются аспекты безопасности в этом порядке.</span><span class="sxs-lookup"><span data-stu-id="1923b-108">This section examines the security implications of this order.</span></span> <span data-ttu-id="1923b-109">Рассмотрим следующий пример псевдокода, демонстрирующий порядок выполнения инструкций и инструкций фильтра `finally` .</span><span class="sxs-lookup"><span data-stu-id="1923b-109">Consider the following pseudocode example that illustrates the order in which filter statements and `finally` statements run.</span></span>  
   
 ```cpp  
 void Main()
@@ -50,7 +53,7 @@ void Sub()
 }
 ```  
   
- <span data-ttu-id="72f90-110">Этот код выводит следующие фрагменты кода.</span><span class="sxs-lookup"><span data-stu-id="72f90-110">This code prints the following.</span></span>  
+ <span data-ttu-id="1923b-110">Этот код выводит следующие фрагменты кода.</span><span class="sxs-lookup"><span data-stu-id="1923b-110">This code prints the following.</span></span>  
   
 ```output
 Throw  
@@ -59,7 +62,7 @@ Finally
 Catch  
 ```  
   
- <span data-ttu-id="72f90-111">Фильтр выполняется перед `finally` инструкцией, поэтому проблемы безопасности могут быть введены любым, что вносит изменения в состояние, когда выполнение другого кода может воспользоваться преимуществами.</span><span class="sxs-lookup"><span data-stu-id="72f90-111">The filter runs before the `finally` statement, so security issues can be introduced by anything that makes a state change where execution of other code could take advantage.</span></span> <span data-ttu-id="72f90-112">Пример:</span><span class="sxs-lookup"><span data-stu-id="72f90-112">For example:</span></span>  
+ <span data-ttu-id="1923b-111">Фильтр выполняется перед `finally` инструкцией, поэтому проблемы безопасности могут быть введены любым, что вносит изменения в состояние, когда выполнение другого кода может воспользоваться преимуществами.</span><span class="sxs-lookup"><span data-stu-id="1923b-111">The filter runs before the `finally` statement, so security issues can be introduced by anything that makes a state change where execution of other code could take advantage.</span></span> <span data-ttu-id="1923b-112">Пример:</span><span class="sxs-lookup"><span data-stu-id="1923b-112">For example:</span></span>  
   
 ```cpp  
 try
@@ -78,7 +81,7 @@ finally
 }  
 ```  
   
- <span data-ttu-id="72f90-113">Этот псевдокод позволяет использовать фильтр выше в стеке для выполнения произвольного кода.</span><span class="sxs-lookup"><span data-stu-id="72f90-113">This pseudocode allows a filter higher up the stack to run arbitrary code.</span></span> <span data-ttu-id="72f90-114">Другие примеры операций, которые будут иметь подобный результат, — это временное олицетворение другого удостоверения, установка внутреннего флага, который обходит некоторую проверку безопасности, или изменение языка и региональных параметров, связанных с потоком.</span><span class="sxs-lookup"><span data-stu-id="72f90-114">Other examples of operations that would have a similar effect are temporary impersonation of another identity, setting an internal flag that bypasses some security check, or changing the culture associated with the thread.</span></span> <span data-ttu-id="72f90-115">Рекомендуемым решением является ввод обработчика исключений для изоляции изменений кода от блоков фильтра вызывающих объектов.</span><span class="sxs-lookup"><span data-stu-id="72f90-115">The recommended solution is to introduce an exception handler to isolate the code's changes to thread state from callers' filter blocks.</span></span> <span data-ttu-id="72f90-116">Однако важно правильно ввести обработчик исключений, иначе эта проблема не будет исправлена.</span><span class="sxs-lookup"><span data-stu-id="72f90-116">However, it's important to properly introduce the exception handler or this problem won't be fixed.</span></span> <span data-ttu-id="72f90-117">В следующем примере переключается язык и региональные параметры пользовательского интерфейса, но любой тип изменения состояния потока может быть аналогичным.</span><span class="sxs-lookup"><span data-stu-id="72f90-117">The following example switches the UI culture, but any kind of thread state change could be similarly exposed.</span></span>  
+ <span data-ttu-id="1923b-113">Этот псевдокод позволяет использовать фильтр выше в стеке для выполнения произвольного кода.</span><span class="sxs-lookup"><span data-stu-id="1923b-113">This pseudocode allows a filter higher up the stack to run arbitrary code.</span></span> <span data-ttu-id="1923b-114">Другие примеры операций, которые будут иметь подобный результат, — это временное олицетворение другого удостоверения, установка внутреннего флага, который обходит некоторую проверку безопасности, или изменение языка и региональных параметров, связанных с потоком.</span><span class="sxs-lookup"><span data-stu-id="1923b-114">Other examples of operations that would have a similar effect are temporary impersonation of another identity, setting an internal flag that bypasses some security check, or changing the culture associated with the thread.</span></span> <span data-ttu-id="1923b-115">Рекомендуемым решением является ввод обработчика исключений для изоляции изменений кода от блоков фильтра вызывающих объектов.</span><span class="sxs-lookup"><span data-stu-id="1923b-115">The recommended solution is to introduce an exception handler to isolate the code's changes to thread state from callers' filter blocks.</span></span> <span data-ttu-id="1923b-116">Однако важно правильно ввести обработчик исключений, иначе эта проблема не будет исправлена.</span><span class="sxs-lookup"><span data-stu-id="1923b-116">However, it's important to properly introduce the exception handler or this problem won't be fixed.</span></span> <span data-ttu-id="1923b-117">В следующем примере переключается язык и региональные параметры пользовательского интерфейса, но любой тип изменения состояния потока может быть аналогичным.</span><span class="sxs-lookup"><span data-stu-id="1923b-117">The following example switches the UI culture, but any kind of thread state change could be similarly exposed.</span></span>  
   
 ```cpp  
 YourObject.YourMethod()  
@@ -115,7 +118,7 @@ Thread.CurrentThread.CurrentUICulture)
 End Class  
 ```  
   
- <span data-ttu-id="72f90-118">Правильным исправлением в этом случае является заключение существующего блока **try** / **finally** в блок **try** / **catch** .</span><span class="sxs-lookup"><span data-stu-id="72f90-118">The correct fix in this case is to wrap the existing **try**/**finally** block in a **try**/**catch** block.</span></span> <span data-ttu-id="72f90-119">Простое внедрение предложения **catch-throw** в существующий блок **try** / **finally** не устраняет проблему, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="72f90-119">Simply introducing a **catch-throw** clause into the existing **try**/**finally** block does not fix the problem, as shown in the following example.</span></span>  
+ <span data-ttu-id="1923b-118">Правильным исправлением в этом случае является заключение существующего блока **try** / **finally** в блок **try** / **catch** .</span><span class="sxs-lookup"><span data-stu-id="1923b-118">The correct fix in this case is to wrap the existing **try**/**finally** block in a **try**/**catch** block.</span></span> <span data-ttu-id="1923b-119">Простое внедрение предложения **catch-throw** в существующий блок **try** / **finally** не устраняет проблему, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="1923b-119">Simply introducing a **catch-throw** clause into the existing **try**/**finally** block does not fix the problem, as shown in the following example.</span></span>  
   
 ```cpp  
 YourObject.YourMethod()  
@@ -135,9 +138,9 @@ YourObject.YourMethod()
 }  
 ```  
   
- <span data-ttu-id="72f90-120">Это не решает проблему, так как `finally` инструкция не выполнялась до `FilterFunc` управления доступом.</span><span class="sxs-lookup"><span data-stu-id="72f90-120">This does not fix the problem because the `finally` statement has not run before the `FilterFunc` gets control.</span></span>  
+ <span data-ttu-id="1923b-120">Это не решает проблему, так как `finally` инструкция не выполнялась до `FilterFunc` управления доступом.</span><span class="sxs-lookup"><span data-stu-id="1923b-120">This does not fix the problem because the `finally` statement has not run before the `FilterFunc` gets control.</span></span>  
   
- <span data-ttu-id="72f90-121">Следующий пример устраняет проблему, гарантируя, что `finally` предложение выполнялось до того, как будет предложено исключение в блоках фильтра исключений вызывающих объектов.</span><span class="sxs-lookup"><span data-stu-id="72f90-121">The following example fixes the problem by ensuring that the `finally` clause has executed before offering an exception up the callers' exception filter blocks.</span></span>  
+ <span data-ttu-id="1923b-121">Следующий пример устраняет проблему, гарантируя, что `finally` предложение выполнялось до того, как будет предложено исключение в блоках фильтра исключений вызывающих объектов.</span><span class="sxs-lookup"><span data-stu-id="1923b-121">The following example fixes the problem by ensuring that the `finally` clause has executed before offering an exception up the callers' exception filter blocks.</span></span>  
   
 ```cpp  
 YourObject.YourMethod()  
@@ -159,6 +162,6 @@ YourObject.YourMethod()
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="72f90-122">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="72f90-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1923b-122">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="1923b-122">See also</span></span>
 
-- [<span data-ttu-id="72f90-123">Правила написания безопасного кода</span><span class="sxs-lookup"><span data-stu-id="72f90-123">Secure Coding Guidelines</span></span>](../../standard/security/secure-coding-guidelines.md)
+- [<span data-ttu-id="1923b-123">Правила написания безопасного кода</span><span class="sxs-lookup"><span data-stu-id="1923b-123">Secure Coding Guidelines</span></span>](../../standard/security/secure-coding-guidelines.md)
