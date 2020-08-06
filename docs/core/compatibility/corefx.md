@@ -1,13 +1,13 @@
 ---
 title: Критические изменения в библиотеке базовых классов
 description: В этой статье приведен список критических изменений в основных библиотеках .NET.
-ms.date: 09/20/2019
-ms.openlocfilehash: 64510809a1cf69ea0e4c4816eb2df54233e8eceb
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.date: 07/27/2020
+ms.openlocfilehash: 558aa1d76831cd15e2028c17d2b0b2e82f64ef9a
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281316"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517335"
 ---
 # <a name="core-net-libraries-breaking-changes"></a>Критические изменения в основных библиотеках .NET
 
@@ -17,6 +17,9 @@ ms.locfileid: "86281316"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps) | 5.0 |
+| [Пути к коду в кодировке UTF-7 устарели](#utf-7-code-paths-are-obsolete) | 5.0 |
+| [Vector\<T> всегда вызывает исключение NotSupportedException для неподдерживаемых типов](#vectort-always-throws-notsupportedexception-for-unsupported-types) | 5.0 |
 | [По умолчанию ActivityIdFormat имеет значение W3C](#default-activityidformat-is-w3c) | 5.0 |
 | [Изменение в поведении для Vector2.Lerp и Vector4.Lerp](#behavior-change-for-vector2lerp-and-vector4lerp) | 5.0 |
 | [Методы SSE и SSE2 CompareGreaterThan корректно обрабатывают входные данные, которые не являются числом](#sse-and-sse2-comparegreaterthan-methods-properly-handle-nan-inputs) | 5.0 |
@@ -30,7 +33,6 @@ ms.locfileid: "86281316"
 | [Замена неправильно сформированных последовательностей байтов в кодировке UTF-8 в соответствии с правилами Юникода](#replacing-ill-formed-utf-8-byte-sequences-follows-unicode-guidelines) | 3.0 |
 | [Класс TypeDescriptionProviderAttribute перенесен в другую сборку](#typedescriptionproviderattribute-moved-to-another-assembly) | 3.0 |
 | [ZipArchiveEntry больше не обрабатывает архивы с несогласованными размерами записей](#ziparchiveentry-no-longer-handles-archives-with-inconsistent-entry-sizes) | 3.0 |
-| [Тип исключения сериализатора JSON изменен с JsonException на NotSupportedException](#json-serializer-exception-type-changed-from-jsonexception-to-notsupportedexception) | 3.0 |
 | [Внесены изменения в семантику (string)null в Utf8JsonWriter](#change-in-semantics-of-stringnull-in-utf8jsonwriter) | 3.0 |
 | [Методы JsonEncodedText.Encode содержат дополнительный аргумент JavaScriptEncoder](#jsonencodedtextencode-methods-have-an-additional-javascriptencoder-argument) | 3.0 |
 | [Изменена подпись JsonFactoryConverter.CreateConverter](#jsonfactoryconvertercreateconverter-signature-changed) | 3.0 |
@@ -45,6 +47,18 @@ ms.locfileid: "86281316"
 | [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
+
+***
+
+[!INCLUDE [utf-7-code-paths-obsolete](../../../includes/core-changes/corefx/5.0/utf-7-code-paths-obsolete.md)]
+
+***
+
+[!INCLUDE [vectort-throws-notsupportedexception](../../../includes/core-changes/corefx/5.0/vectort-throws-notsupportedexception.md)]
+
+***
 
 [!INCLUDE [default-activityidformat-changed](../../../includes/core-changes/corefx/5.0/default-activityidformat-changed.md)]
 
@@ -97,10 +111,6 @@ ms.locfileid: "86281316"
 ***
 
 [!INCLUDE[ZipArchiveEntry no longer handles archives with inconsistent entry sizes](~/includes/core-changes/corefx/3.0/ziparchiveentry-and-inconsistent-entry-sizes.md)]
-
-***
-
-[!INCLUDE[JSON serializer exception type changed from JsonException to NotSupportedException](~/includes/core-changes/corefx/3.0/serializer-throws-notsupportedexception.md)]
 
 ***
 

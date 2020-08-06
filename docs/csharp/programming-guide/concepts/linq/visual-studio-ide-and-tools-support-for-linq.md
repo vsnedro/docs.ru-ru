@@ -1,13 +1,14 @@
 ---
 title: Интегрированная среда разработки Visual Studio и поддержка средств для LINQ (C#)
+description: Сведения об инструментах Visual Studio, поддерживающих разработку приложений LINQ, таких как реляционный конструктор объектов, средство командной строки SQLMetal, редактор кода с поддержкой LINQ и отладчик.
 ms.date: 07/20/2015
 ms.assetid: c1f6cfdf-c96f-417f-acc8-4a049772ead3
-ms.openlocfilehash: a42d6711e34564f03aaf07c295bc682965513619
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cd0c936624b4d5329cb2eb0f1cdd5215bbc96f23
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69590917"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302247"
 ---
 # <a name="visual-studio-ide-and-tools-support-for-linq-c"></a>Интегрированная среда разработки Visual Studio и поддержка средств для LINQ (C#)
 Интегрированная среда разработки Visual Studio (IDE) предоставляет следующие возможности, поддерживающие разработку приложений LINQ.  
@@ -24,6 +25,6 @@ ms.locfileid: "69590917"
 ## <a name="visual-studio-debugger-support"></a>Поддержка отладчика Visual Studio  
  Отладчик Visual Studio поддерживает отладку выражений запросов. Дополнительные сведения см. в разделе [Отладка LINQ](/visualstudio/debugger/debugging-linq).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ (C#)](./index.md)

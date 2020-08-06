@@ -1,13 +1,14 @@
 ---
 title: Сериализация с помощью объявления XML (C#)
+description: Сведения о конфигурациях в C#, в которых формируется XML-декларация при сериализации в файл, TextWriter и XmlWriter.
 ms.date: 07/20/2015
 ms.assetid: c237fa4a-a042-40fd-886f-17b54c66bb75
-ms.openlocfilehash: 4533d69f2b0bee68b4adee6e18fe28dde18078ae
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7e91b61f037d28149f7c2355f4233dc319b54627
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "66483479"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302364"
 ---
 # <a name="serializing-with-an-xml-declaration-c"></a>Сериализация с помощью объявления XML (C#)
 В этом разделе описывается, как указывать, должна ли при сериализации формироваться XML-декларация.  
@@ -61,6 +62,6 @@ Console.WriteLine(sb.ToString());
 <Root><Child>child content</Child></Root>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сериализация XML-деревьев (C#)](serializing-to-files-textwriters-and-xmlwriters.md)

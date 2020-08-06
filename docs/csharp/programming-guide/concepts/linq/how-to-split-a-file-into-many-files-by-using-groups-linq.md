@@ -1,13 +1,14 @@
 ---
 title: Разделение файла на несколько файлов с помощью групп (LINQ) (C#)
+description: Узнайте, как разделить файл на несколько файлов с помощью групп. Изучите пример кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 ms.assetid: 8179b91c-d778-4e57-884f-77fe5a8e4e40
-ms.openlocfilehash: 654b444c26f2868c4e2b0e2893a639ebc6cacabf
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1db16a48db257069eca83127c0b1fed7e49f19d6
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168574"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301064"
 ---
 # <a name="how-to-split-a-file-into-many-files-by-using-groups-linq-c"></a>Разделение файла на несколько файлов с помощью групп (LINQ) (C#)
 В этом примере показан один из способов объединения содержимого двух файлов и последующего создания набора новых файлов, данные в котором будут организованы иначе.  
@@ -128,7 +129,7 @@ class SplitWithGroups
 
 Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (C#)](./linq-and-strings.md)
 - [LINQ и каталоги файлов (C#)](./linq-and-file-directories.md)

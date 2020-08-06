@@ -1,13 +1,14 @@
 ---
 title: Сохранение пробелов при загрузке и анализе XML
+description: Сведения об управлении обработкой пробелов при загрузке или анализе XML и поведении методов, заполняющих XML-деревья.
 ms.date: 07/20/2015
 ms.assetid: f3ff58c4-55aa-4fcd-b933-e3a2ee6e706c
-ms.openlocfilehash: d015c21813df2224356bb49212fe282fa5372d03
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3c044937d38f9f89ebc114af3eddbf5116c392ad
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69591552"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302845"
 ---
 # <a name="preserving-white-space-while-loading-or-parsing-xml"></a>Сохранение пробелов при загрузке и анализе XML
 В этой статье показан способ управления тем, как обрабатываются пробелы в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  

@@ -1,5 +1,6 @@
 ---
 title: Winres.exe (редактор для локализации ресурсов Windows)
+description: Сведения об использовании редактора для локализации ресурсов Windows (Winres.exe). Эта программа визуальной разметки используется при локализации ресурсов пользовательского интерфейса Windows Forms.
 ms.date: 08/15/2018
 helpviewer_keywords:
 - Winres.exe
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - resx files
 - .resx files
 ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
-ms.openlocfilehash: 2cfb2d9874b34eef78fe462e0270fd70307a9f61
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8393eb44246ed1bbc0e4e6acc84ad7bd57041ec0
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75715710"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87516909"
 ---
 # <a name="winresexe-windows-resource-localization-editor"></a>Winres.exe (редактор для локализации ресурсов Windows)
 
@@ -33,15 +34,15 @@ winres /?
 
 ## <a name="arguments"></a>Аргументы
 
-|Аргумент|Описание:|
+|Аргумент|Описание|
 |--------------|-----------------|
 |`resourceFile`|Файл ресурсов, который требуется локализовать. Это должен быть файл ресурсов Windows Forms с расширением RESX или RESOURCES, созданный с помощью конструктора Visual Studio. Программа Winres.exe не может открывать универсальные RESX-файлы и RESOURCES-файлы.|
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |------------|-----------------|
 |**/?**|Отображает синтаксис команд и параметров программы.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Состояние элементов пользовательского интерфейса формы в проекте Windows Forms обычно хранится в файлах ресурсов — файлах на основе XML с расширением RESX или соответствующих им скомпилированных двоичных версиях с расширением RESOURCES. Программа Winres.exe предоставляет ограниченные возможности редактирования файлов обоих типов вне среды разработки Visual Studio. В частности, она поддерживает следующие виды операций редактирования.
 
@@ -90,12 +91,12 @@ winres /?
 
 |Visual Studio|.NET Framework|Winres.exe|
 |-------------------|--------------------|----------------|
-|Visual Studio .NET 2002|1,0|1,0|
-|Visual Studio .NET 2003|1,1|1,1|
+|Visual Studio .NET 2002|1.0|1.0|
+|Visual Studio .NET 2003|1.1|1.1|
 |Visual Studio 2005|2.0|2.0|
 |Visual Studio 2008|3.0 и 3.5|3.0 и 3.5|
-|Visual Studio 2010|4.0|4.0|
-|Visual Studio 2017|4.6|4.6|
+|Visual Studio 2010|4,0|4,0|
+|Visual Studio 2017|4.6|4.6|
 
 > [!NOTE]
 > Режим VSFM обладает преимуществом в плане совместимости с Visual Studio, но поскольку в этом режиме в файле ресурсов хранятся только измененные значения, для программы Winres.exe требуется, чтобы в каталоге текущего файла ресурсов располагались и его родительские файлы. Например, при редактировании немецкоязычного файла ресурсов `TestApp.de-DE.resources` необходимо наличие файла ресурсов по умолчанию `TestApp.resx`, а также, возможно, не зависящего от языка файла ресурсов `TestApp.de.resources`.
@@ -135,7 +136,7 @@ winres /?
 
    Программа сохранит файл, используя правила присвоения имен, которые среда выполнения требует применять к локализованным файлам ресурсов. Например, при локализации файла `TestApp.resources` на немецкий язык (Германия) этот файл будет сохранен как `TestApp.de-DE.resources`. При локализации файла `TestApp.resx` на немецкий язык (Германия) файл сохраняется как `TestApp.de-DE.resx`. Подробнее о соглашениях об именовании ресурсов см. в разделе [Упаковка и развертывание ресурсов](../resources/packaging-and-deploying-resources-in-desktop-apps.md). Список предварительно определенных названий языков, используемых средой выполнения, см. в разделе о классе <xref:System.Globalization.CultureInfo>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ComponentModel.LocalizableAttribute>
 - <xref:System.Globalization.CultureInfo>

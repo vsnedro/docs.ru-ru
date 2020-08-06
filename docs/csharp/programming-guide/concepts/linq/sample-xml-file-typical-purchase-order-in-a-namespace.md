@@ -1,15 +1,16 @@
 ---
 title: Пример XML-файла. Стандартный заказ на покупку в пространстве имен
+description: Этот XML-файл используется в различных примерах в документации по LINQ to XML. Файл представляет собой типичный заказ на покупку. XML располагается в пространстве имен.
 ms.date: 07/20/2015
 ms.assetid: 84dc3339-ea32-4ccc-9af6-ab38ddfecced
-ms.openlocfilehash: 001a12210c2252d9718425d0d4013bdbdf25b996
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 698fb8711ad86e2739f1d8485747d3c56eb71d46
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79167968"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302455"
 ---
-# <a name="sample-xml-file-typical-purchase-order-in-a-namespace"></a>Пример XML-файла. Стандартный заказ на покупку в пространстве имен
+# <a name="sample-xml-file-typical-purchase-order-in-a-namespace"></a>Пример XML-файла: типичный заказ на покупку в пространстве имен
 Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. Этот файл представляет собой типичный заказ на покупку. XML располагается в пространстве имен.  
   
 ## <a name="purchaseorderinnamespacexml"></a>PurchaseOrderInNamespace.xml  

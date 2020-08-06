@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Использование указателей для копирования массива байтов
+description: Сведения об использовании указателей для копирования массива байтов. Изучите пример кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 04/20/2018
 helpviewer_keywords:
 - byte arrays [C#]
 - arrays [C#], byte
 - pointers [C#], to copy bytes
-ms.openlocfilehash: 8c1afc06fb567a923d604ad53dc26f94178a8d60
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 70ab1441d25ea69afb2244bd94bd404a3e32838d
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397419"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381792"
 ---
 # <a name="how-to-use-pointers-to-copy-an-array-of-bytes-c-programming-guide"></a>Руководство по программированию на C#. Использование указателей для копирования массива байтов
 
@@ -24,7 +25,7 @@ ms.locfileid: "84397419"
 
 [!code-csharp[Struct with embedded inline array](snippets/FixedKeywordExamples.cs#8)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Небезопасный код и указатели](index.md)

@@ -1,13 +1,14 @@
 ---
 title: Запись данных объекта в XML-файл (C#)
+description: Этот пример C# записывает объект из класса в XML-файл с использованием класса XmlSerializer. Узнайте, как скомпилировать код.
 ms.date: 07/20/2015
 ms.assetid: 7681eb98-703d-4005-a369-26a7bca0f894
-ms.openlocfilehash: 6f18ae194d2ed70f633665a29772622319ea9493
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: c88a85f8bc65a195f404dab6aa39675bac7e4f84
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241998"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303131"
 ---
 # <a name="how-to-write-object-data-to-an-xml-file-c"></a>Запись данных объекта в XML-файл (C#)
 Показывает, как записать объект из класса в XML-файл с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.  

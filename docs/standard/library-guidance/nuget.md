@@ -2,12 +2,12 @@
 title: NuGet и библиотеки .NET
 description: Практические рекомендации по упаковке библиотек .NET с помощью NuGet.
 ms.date: 01/15/2019
-ms.openlocfilehash: f1e8d39fe2988f11ce7fd351a4d6bee6d322f2b5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d9f8d7cc4402a87e1429791b57a0306b318dfbe4
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79398535"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87382117"
 ---
 # <a name="nuget"></a>NuGet
 
@@ -52,7 +52,7 @@ NuGet — это диспетчер пакетов для экосистемы .
 | `Description`                      | `description`              | Подробное описание пакета для отображения в пользовательском интерфейсе.             |
 | `Authors`                          | `authors`                  | Разделенный запятыми список авторов пакета, обозначенных именами профилей на сайте nuget.org.             |
 | `PackageTags`                      | `tags`                     | Разделенный пробелами список тегов и ключевых слов для описания пакета. Теги используются при поиске пакетов.             |
-| `PackageIconUrl`                   | `iconUrl`                  | URL-адрес изображения, которое будет использоваться как значок для пакета. Это должен быть URL-адрес (HTTPS), указывающий на изображение размером 64×64 с прозрачным фоном.             |
+| `PackageIcon`                   | `icon`                  | Путь к образу в пакете, используемому в качестве значка пакета. Подробнее о [метаданных `icon`](/nuget/reference/nuspec#icon). |
 | `PackageProjectUrl`                | `projectUrl`               | URL-адрес домашней страницы или репозитория проекта.             |
 | `PackageLicenseExpression`         | `license`                  | [Идентификатор SPDX](https://spdx.org/licenses/) лицензии проекта. Идентификатор могут использовать только лицензии, утвержденные OSI и FSF. Другие лицензии должны использовать `PackageLicenseFile`. Подробнее о [метаданных `license`](/nuget/reference/nuspec#license). |
 

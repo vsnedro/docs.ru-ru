@@ -1,15 +1,16 @@
 ---
 title: Руководство по программированию на C#. Использование индексаторов
+description: Сведения об объявлении и использовании индексатора для класса, структуры или интерфейса при программировании на C#. Эта статья содержит пример кода.
 ms.date: 07/15/2020
 helpviewer_keywords:
 - indexers [C#], about indexers
 ms.assetid: df70e1a2-3ce3-4aba-ad80-4b2f3538699f
-ms.openlocfilehash: e742e4dd5ea92ec3baf37c915e024e713022b7b6
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.openlocfilehash: a8a9e05c1d2e44841177a924c6ff51c6c9e6a05a
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86416241"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301870"
 ---
 # <a name="using-indexers-c-programming-guide"></a>Использование индексаторов. Руководство по программированию на C#
 

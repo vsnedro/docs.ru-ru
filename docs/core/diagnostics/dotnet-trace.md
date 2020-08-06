@@ -2,12 +2,12 @@
 title: Программа dotnet-trace — .NET Core
 description: Установка и использование программы командной строки dotnet-trace.
 ms.date: 11/21/2019
-ms.openlocfilehash: 6dd968dc49522229dca02c0dc6f3de898026dd82
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 25178a0e59ce9edb69d15ee761c1b9e56aa5eb3a
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924855"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517312"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>Программа анализа производительности dotnet-trace
 
@@ -38,13 +38,13 @@ dotnet-trace [-h, --help] [--version] <command>
 
 ## <a name="options"></a>Параметры
 
-- **`--version`**
-
-  Отображение версии служебной программы dotnet-trace.
-
 - **`-h|--help`**
 
   Отображение справки в командной строке.
+
+- **`--version`**
+
+  Отображение версии служебной программы dotnet-trace.
 
 ## <a name="commands"></a>Команды
 
@@ -62,23 +62,45 @@ dotnet-trace [-h, --help] [--version] <command>
 ### <a name="synopsis"></a>Краткий обзор
 
 ```console
-dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output]
-    [--providers] [--profile <profile-name>] [--format]
+dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
+    [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
+    [-n, --name <name>]  [-o|--output <trace-file-path>] [-p|--process-id <pid>]
+    [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
 ```
 
 ### <a name="options"></a>Параметры
-
-- **`-p|--process-id <PID>`**
-
-  Процесс, для которого нужна трассировка.
 
 - **`--buffersize <size>`**
 
   Задает размер кольцевого буфера в памяти (в мегабайтах). По умолчанию используется значение 256 МБ.
 
+- **`--clreventlevel <clreventlevel>`**
+
+  Уровень детализации создаваемых событий среды выполнения.
+
+- **`--clrevents <clrevents>`**
+
+  Список вызываемых событий среды выполнения.
+
+- **`--format {Chromium|NetTrace|Speedscope}`**
+
+  Задает формат выходных данных для преобразования файла трассировки. Значение по умолчанию — `NetTrace`.
+
+- **`-n, --name <name>`**
+
+  Имя процесса, из которого нужно получить трассировку.
+
 - **`-o|--output <trace-file-path>`**
 
   Выходной путь для собранных данных трассировки. Если это значение не указано, по умолчанию используется `trace.nettrace`.
+
+- **`-p|--process-id <PID>`**
+
+  Идентификатор процесса, из которого нужно получить трассировку.
+
+- **`--profile <profile-name>`**
+
+  Заранее определенный именованный набор конфигураций поставщиков, который позволяет кратко указывать типичные сценарии трассировки.
 
 - **`--providers <list-of-comma-separated-providers>`**
 
@@ -90,14 +112,6 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
   - `Provider` имеет формат `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`;
   - `KeyValueArgs` имеет формат `[key1=value1][;key2=value2]`.
 
-- **`--profile <profile-name>`**
-
-  Заранее определенный именованный набор конфигураций поставщиков, который позволяет кратко указывать типичные сценарии трассировки.
-
-- **`--format {NetTrace|Speedscope}`**
-
-  Задает формат выходных данных для преобразования файла трассировки. Значение по умолчанию — `NetTrace`.
-
 ## <a name="dotnet-trace-convert"></a>dotnet-trace convert
 
 Преобразует трассировки `nettrace` в альтернативные форматы для использования с другими средствами анализа трассировок.
@@ -105,7 +119,7 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
 ### <a name="synopsis"></a>Краткий обзор
 
 ```console
-dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
+dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [-o|--output <output-filename>]
 ```
 
 ### <a name="arguments"></a>Аргументы
@@ -116,7 +130,7 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
 ### <a name="options"></a>Параметры
 
-- **`--format <NetTrace|Speedscope>`**
+- **`--format <Chromium|NetTrace|Speedscope>`**
 
   Задает формат выходных данных для преобразования файла трассировки.
 
@@ -126,7 +140,7 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
 ## <a name="dotnet-trace-ps"></a>dotnet-trace ps
 
-Список процессов dotnet, к которым можно присоединиться.
+ Список процессов dotnet, из которых можно получить трассировку.
 
 ### <a name="synopsis"></a>Краткий обзор
 

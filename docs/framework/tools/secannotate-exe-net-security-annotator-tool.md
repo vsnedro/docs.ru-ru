@@ -1,23 +1,24 @@
 ---
 title: SecAnnotate.exe (средство создания заметок безопасности .NET)
+description: Используйте SecAnnotate.exe, средство создания заметок безопасности .NET. Идентифицируйте части SecurityCritical и SecuritySafeCritical в одной сборке или нескольких сборках.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - SecAnnotate.exe
 - Security Annotator tool
 ms.assetid: 8104d208-7813-4a1d-8a75-58f9a7bcb8c9
-ms.openlocfilehash: ffc275c588775fb79da276be904ada90a5a31bad
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 440ad39f1afb54ad517bc73f05d1e60748b7b520
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75937929"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517221"
 ---
 # <a name="secannotateexe-net-security-annotator-tool"></a>SecAnnotate.exe (средство создания заметок безопасности .NET)
 Средство создания заметок безопасности .NET Security Annotator (SecAnnotate.exe) — это приложение командной строки, определяющее части `SecurityCritical` и `SecuritySafeCritical` одной или нескольких сборок.  
   
  Расширение Visual Studio [Security Annotator](https://marketplace.visualstudio.com/items?itemName=sheldonb.SecurityAnnotator) обеспечивает графический пользовательский интерфейс для программы SecAnnotate.exe и позволяет запускать эту программу из Visual Studio.  
   
- Это средство автоматически устанавливается с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
+ Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
   
  В командной строке введите следующий текст, где *параметры* описаны в следующем разделе, а *сборки* состоят из одного имени сборок или нескольких, разделенных пробелами.  
   
@@ -29,7 +30,7 @@ SecAnnotate.exe [parameters] [assemblies]
   
 ## <a name="parameters"></a>Параметры  
   
-|Параметр|Описание:|  
+|Параметр|Описание|  
 |------------|-----------------|  
 |`/a`<br /><br /> or<br /><br /> `/showstatistics`|Показывает статистику использования прозрачности в анализируемых сборках.|  
 |`/d:` *каталог*<br /><br /> or<br /><br /> `/referencedir:` *каталог*|Указывает каталог для поиска зависимых сборок во время создания заметок.|  
@@ -47,7 +48,7 @@ SecAnnotate.exe [parameters] [assemblies]
 |`/x`<br /><br /> or<br /><br /> `/verbose`|Задает подробный вывод при создании заметок.|  
 |`/y:` *каталог*<br /><br /> or<br /><br /> `/symbolpath:` *каталог*|Включает указанный каталог при поиске файлов символов во время аннотирования.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Параметры и сборки также могут предоставляться в файле ответов, указанном в командной строке с префиксом в виде знака \@ . Каждая строка в файле ответов должна содержать один параметр или имя сборки.  
   
  Дополнительные сведения о .NET Security Annotator см. в записи [Использование SecAnnotate для анализа сборок на наличие нарушений прозрачности](https://docs.microsoft.com/archive/blogs/shawnfa/using-secannotate-to-analyze-your-assemblies-for-transparency-violations-an-example) в блоге .NET Security.  

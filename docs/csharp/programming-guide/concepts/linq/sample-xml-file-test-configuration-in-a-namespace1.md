@@ -1,15 +1,16 @@
 ---
 title: Пример XML-файла. Конфигурация тестирования в пространстве имен
+description: Этот XML-файл используется в различных примерах в документации по LINQ to XML. Это тестовый файл конфигурации. XML располагается в пространстве имен.
 ms.date: 07/20/2015
 ms.assetid: e75ad1bc-5636-4623-9a34-a286a8c485d6
-ms.openlocfilehash: ed25a8608977070e0db5f4cdee8a44a3c347cc8e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e08bc476eda39b6e9ff3e2958a49a0d9e5dc303a
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168006"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302481"
 ---
-# <a name="sample-xml-file-test-configuration-in-a-namespace"></a>Пример XML-файла. Конфигурация тестирования в пространстве имен
+# <a name="sample-xml-file-test-configuration-in-a-namespace"></a>Пример XML-файла: конфигурация тестирования в пространстве имен
 Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. Это тестовый файл конфигурации. XML располагается в пространстве имен.  
   
 ## <a name="testconfiginnamespacexml"></a>TestConfigInNamespace.xml  

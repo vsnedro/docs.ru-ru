@@ -1,15 +1,16 @@
 ---
 title: Пример XML-файла. Конфигурация тестирования (LINQ to XML)
+description: Этот XML-файл используется в различных примерах в документации по LINQ to XML. Это тестовый файл конфигурации.
 ms.date: 07/20/2015
 ms.assetid: 45bfb509-c1d4-4b4f-9690-1cb0c9816516
-ms.openlocfilehash: 713e0b69ea896d9f4198ae68f1a3a258d74f24f4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 14402a4d7988e767464a53a159bcb25661dc82f8
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "66487232"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302468"
 ---
-# <a name="sample-xml-file-test-configuration-linq-to-xml"></a>Пример XML-файла. Конфигурация тестирования (LINQ to XML)
+# <a name="sample-xml-file-test-configuration-linq-to-xml"></a>Пример XML-файла: конфигурация тестирования (LINQ to XML)
 Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. Это тестовый файл конфигурации.  
   
 ## <a name="testconfigxml"></a>TestConfig.xml  

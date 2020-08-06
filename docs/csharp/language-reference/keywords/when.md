@@ -7,23 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - when keyword [C#]
 ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea
-ms.openlocfilehash: 6a61c42ba2d01e84ffae376bf95c99877437be85
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2b041ca3a821f45dd63ce3f6bee7a920eb495651
+ms.sourcegitcommit: 32f0d6f4c01ddc6ca78767c3a30e3305f8cd032c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75712836"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87426999"
 ---
 # <a name="when-c-reference"></a>when (справочник по C#)
 
-Для того чтобы указать условие фильтра в двух контекстах, можно использовать контекстно-зависимое ключевое слово `when`.
+Для того чтобы указать условие фильтра в следующих контекстах, можно использовать контекстно-зависимое ключевое слово `when`.
 
 - В операторе `catch` блока [try/catch](try-catch.md) или [try/catch/finally](try-catch-finally.md).
 - В метке `case` оператора [switch](switch.md).
+- В [выражении `switch`](../operators/switch-expression.md).
 
 ## <a name="when-in-a-catch-statement"></a>`when` в операторе `catch`
 
-Начиная с C# версии 6, `when` можно использовать в операторе `catch`, чтобы задать условие, которое должно быть истинным для выполнения обработчика определенного исключения. Синтаксис:
+Начиная с C# версии 6, `when` можно использовать в операторе `catch`, чтобы задать условие, которое должно быть истинным для выполнения обработчика определенного исключения. Он имеет следующий синтаксис:
 
 ```csharp
 catch (ExceptionType [e]) when (expr)
@@ -37,7 +38,7 @@ catch (ExceptionType [e]) when (expr)
 
 ## <a name="when-in-a-switch-statement"></a>`when` в операторе `switch`
 
-Начиная с версии C# 7.0 метки `case` больше не должны быть взаимоисключающими, а порядок отображения меток `case` в операторе `switch` может определять, какие блоки switch должны быть выполнены. Ключевое слово `when` позволяет задать условие фильтра, при котором соответствующая метка case будет иметь значение true, только если условие фильтра также имеет значение true. Синтаксис:
+Начиная с версии C# 7.0 метки `case` больше не должны быть взаимоисключающими, а порядок отображения меток `case` в операторе `switch` может определять, какие блоки switch должны быть выполнены. Ключевое слово `when` позволяет задать условие фильтра, при котором соответствующая метка case будет иметь значение true, только если условие фильтра также имеет значение true. Он имеет следующий синтаксис:
 
 ```csharp
 case (expr) when (when-condition):
@@ -49,7 +50,7 @@ case (expr) when (when-condition):
 
 [!code-csharp[when-with-case#1](~/samples/snippets/csharp/language-reference/keywords/when/when.cs#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор switch](switch.md)
 - [Оператор try-catch](try-catch.md)

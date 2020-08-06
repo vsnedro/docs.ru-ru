@@ -1,5 +1,6 @@
 ---
 title: Mgmtclassgen.exe (генератор строго типизированных классов управления)
+description: Узнайте о Mgmtclassgen.exe, генераторе строго типизированных классов управления. Это средство позволяет быстро создать управляемый класс с ранней привязкой для класса WMI.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Mgmtclassgen.exe
 - early-bound managed classes
 ms.assetid: 02ce6699-49b5-4a0b-b0d5-1003c491232e
-ms.openlocfilehash: d6de28694a1fdcd22cc2baa8cff66387c601414c
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 89facd4369dad6168e46febd3e34d7f7c235faf0
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84201864"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517299"
 ---
 # <a name="mgmtclassgenexe-management-strongly-typed-class-generator"></a>Mgmtclassgen.exe (генератор строго типизированных классов управления)
 Генератор классов управления со строгим типом позволяет быстро создавать управляемые классы с ранней привязкой для указанного класса инструментария управления Windows (WMI). Создаваемый класс упрощает код, необходимый для доступа к экземпляру класса WMI.  

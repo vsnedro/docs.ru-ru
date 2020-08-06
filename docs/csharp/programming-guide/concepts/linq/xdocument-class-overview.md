@@ -1,13 +1,14 @@
 ---
 title: Общие сведения о классе XDocument (C#)
+description: Класс XDocument в C# содержит сведения, необходимые для использования допустимого XML-документа, включая XML-декларацию, инструкции по обработке и комментарии.
 ms.date: 07/20/2015
 ms.assetid: 63305603-ab54-49fc-84e4-f76eecc59549
-ms.openlocfilehash: de49dc071d22dd77dddea29ca114663261e3edda
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6d522cef25e99e4a5ea54e644855c8dfa7a05f4a
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69590846"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302195"
 ---
 # <a name="xdocument-class-overview-c"></a>Общие сведения о классе XDocument (C#)
 В этом разделе представлен класс <xref:System.Xml.Linq.XDocument>.  
@@ -17,7 +18,7 @@ ms.locfileid: "69590846"
   
  Отметим, что, если требуются только конкретные функции, обеспечиваемые классом <xref:System.Xml.Linq.XDocument>, необходимо создавать только объекты <xref:System.Xml.Linq.XDocument>. Во многих случаях пользователь может работать непосредственно с <xref:System.Xml.Linq.XElement>. Непосредственная работа с <xref:System.Xml.Linq.XElement> реализует более простую модель программирования.  
   
- <xref:System.Xml.Linq.XDocument> является производным от <xref:System.Xml.Linq.XContainer>. Поэтому он может содержать дочерние узлы. Однако объекты <xref:System.Xml.Linq.XDocument> могут иметь только по одному дочернему узлу <xref:System.Xml.Linq.XElement>. Это обстоятельство отражает стандарт XML, согласно которому в XML-документе может содержаться лишь один корневой элемент.  
+ Интерфейс <xref:System.Xml.Linq.XDocument> является производным от интерфейса <xref:System.Xml.Linq.XContainer>. Поэтому он может содержать дочерние узлы. Однако объекты <xref:System.Xml.Linq.XDocument> могут иметь только по одному дочернему узлу <xref:System.Xml.Linq.XElement>. Это обстоятельство отражает стандарт XML, согласно которому в XML-документе может содержаться лишь один корневой элемент.  
   
 ## <a name="components-of-xdocument"></a>Компоненты XDocument  
  Документ <xref:System.Xml.Linq.XDocument> может включать в себя следующие элементы:  
@@ -86,6 +87,6 @@ d.Save("test.xml");
 <!--This is another comment.-->  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о программировании LINQ to XML (C#)](./linq-to-xml-overview.md)

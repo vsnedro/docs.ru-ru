@@ -1,16 +1,17 @@
 ---
 title: Рефакторинг с использованием чистых функций (C#)
+description: Узнайте, как выполнить рефакторинг кода с помощью чистой функции. Изучите примеры кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 ms.assetid: a3416a45-9e12-4e4a-9747-897f06eef510
-ms.openlocfilehash: f264a0028ed265a5a4fbe1dc32f430c648724c20
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a3f0084d9de27f3f215cc3ba527ada93f7a3d61a
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70253081"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87300115"
 ---
 # <a name="refactoring-using-a-pure-function-c"></a>Рефакторинг с использованием чистых функций (C#)
-В приведенном ниже примере выполняется оптимизация кода предыдущего примера [Рефакторинг с использованием метода расширения (C#)](./refactoring-using-an-extension-method.md) для использования чистой функции. При этом код, предназначенный для поиска текста абзаца, перемещен в чисто статический метод `ParagraphText`.  
+В следующем примере выполняется оптимизация кода предыдущего примера ([Рефакторинг с использованием метода расширения (C#)](./refactoring-using-an-extension-method.md)) для использования чистой функции. При этом код, предназначенный для поиска текста абзаца, перемещен в чисто статический метод `ParagraphText`.  
   
 ## <a name="example"></a>Пример  
  В данном примере обрабатывается документ WordprocessingML, из которого извлекаются узлы абзацев. Также идентифицируется стиль каждого абзаца. Этот пример основан на предыдущих примерах данного учебника. Оптимизированный код поясняется в комментариях кода ниже.  
@@ -174,13 +175,13 @@ StyleName:Normal ><
 StyleName:Code >Hello World<  
 ```  
   
-### <a name="next-steps"></a>Next Steps  
+### <a name="next-steps"></a>Следующие шаги  
  В следующем примере показано, как выполнить проекцию XML в другую форму:  
   
 - [Проецирование XML в другую форму (C#)](./projecting-xml-in-a-different-shape.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Учебник. Управление содержимым в документе WordprocessingML (C#)](./shape-of-wordprocessingml-documents.md)
+- [Учебник. Обработка содержимого документа WordprocessingML (C#)](./shape-of-wordprocessingml-documents.md)
 - [Рефакторинг с использованием метода расширения (C#)](./refactoring-using-an-extension-method.md)
 - [Рефакторинг в чистые функции (C#)](./refactoring-into-pure-functions.md)

@@ -1,13 +1,14 @@
 ---
 title: Создание запросов со сложной фильтрацией (C#)
+description: Сведения о написании запросов LINQ to XML с комплексной фильтрацией. Изучите примеры кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 ms.assetid: 4065d901-cf89-4e47-8bf9-abb65acfb003
-ms.openlocfilehash: bc85d7f1e5c5305407ad22f3ada908523313d964
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5d2c1aafc210b35d4d6b1f1b2d74b11966d90c80
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168522"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303430"
 ---
 # <a name="how-to-write-queries-with-complex-filtering-c"></a>Создание запросов со сложной фильтрацией (C#)
 Иногда возникает необходимость в написании запросов LINQ to XML с комплексной фильтрацией. Например, может потребоваться найти все элементы, имеющие дочерние элементы с определенным именем и значением. В этом разделе приводится пример написания запроса с комплексной фильтрацией.  
@@ -15,7 +16,7 @@ ms.locfileid: "79168522"
 ## <a name="example"></a>Пример  
  В этом примере показано, как найти все элементы `PurchaseOrder`, имеющие дочерний элемент `Address` с атрибутом `Type`, равным «Доставка», и дочерним элементом `State`, равным «NY». В нем используется вложенный запрос в предложении `Where`, а оператор `Any` возвращает значение `true`, если коллекция содержит элементы. Сведения об использовании синтаксиса запросов на основе методов см. в разделе [Синтаксис запросов и синтаксис методов в LINQ](./query-syntax-and-method-syntax-in-linq.md).  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Несколько заказов на покупку (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
  Дополнительные сведения об операторе `Any` см. в разделе [Операции, использующие квантификаторы (C#)](./quantifier-operations.md).  
   
@@ -69,7 +70,7 @@ foreach (XElement el in purchaseOrders)
 99505  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>

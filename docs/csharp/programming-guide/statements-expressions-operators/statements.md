@@ -1,22 +1,23 @@
 ---
 title: Операторы. Руководство по программированию на C#
+description: Сведения о работе с инструкциями при программировании на C#. Ознакомьтесь со списком типов инструкций, а также примерами кода и дополнительными ресурсами.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - statements [C#], about statements
 - C# language, statements
 ms.assetid: 901bcde7-87de-4e15-833c-f9cfd40c8ce3
-ms.openlocfilehash: d50b50bb291d0d087015ea5bd075ae90ced66ff5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b941e46f959167f78f1366a3863aca4240810013
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75711939"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381766"
 ---
 # <a name="statements-c-programming-guide"></a>Инструкции (Руководство по программированию на C#)
 
 Действия программы выражаются в инструкциях. В общие действия включено объявление переменных, присвоение значений, вызов методов, проход по коллекциям и ветвление на один или другой блок кода, в зависимости от заданного условия. Порядок выполнения инструкций в программе называется потоком управления или потоком выполнения. Поток управления может отличаться при каждом запуске программы, в зависимости от реакции программы на входные данные, которые она получает во время выполнения.
 
-Оператор может состоять из одной строки кода, которая заканчивается точкой с запятой, или из ряда однострочных операторов в блоке. Блок инструкций заключен в скобки {} и может содержать вложенные блоки. В следующем коде показаны два примера однострочных инструкций и блок многострочных инструкций:
+Инструкция может состоять из одной строки кода, которая заканчивается точкой с запятой, или из ряда однострочных инструкций в блоке. Блок инструкций заключен в скобки {} и может содержать вложенные блоки. В следующем коде показаны два примера однострочных инструкций и блок многострочных инструкций:
 
 [!code-csharp[csProgGuideStatements#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#1)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "75711939"
 |[Инструкции выражений](expressions.md)|Инструкции выражений, вычисляющие значение, должны сохранить его в переменной. Дополнительные сведения см. в разделе [Инструкции выражений](#expression-statements).|
 |Операторы выбора|Инструкции выбора позволяют ветвление на разные разделы кода, в зависимости от одного или нескольких заданных условий. Дополнительные сведения см. в следующих разделах: <ul><li>[if](../../language-reference/keywords/if-else.md)</li><li>[else](../../language-reference/keywords/if-else.md)</li><li>[switch](../../language-reference/keywords/switch.md)</li><li>[case](../../language-reference/keywords/switch.md)</li></ul>|
 |Операторы итерации|Инструкции итерации позволяют просмотр коллекций как массивов или многократное выполнение того же набора инструкций до выполнения заданного условия. Дополнительные сведения см. в следующих разделах: <ul><li>[do](../../language-reference/keywords/do.md)</li><li>[for](../../language-reference/keywords/for.md)</li><li>[foreach](../../language-reference/keywords/foreach-in.md)</li><li>[in](../../language-reference/keywords/foreach-in.md)</li><li>[while](../../language-reference/keywords/while.md)</li></ul>|
-|Операторы перехода|Инструкции перехода передают управление другому разделу кода. Дополнительные сведения см. в следующих разделах: <ul><li>[break](../../language-reference/keywords/break.md)</li><li>[continue](../../language-reference/keywords/continue.md)</li><li>[значение по умолчанию](../../language-reference/keywords/switch.md)</li><li>[goto](../../language-reference/keywords/goto.md)</li><li>[return](../../language-reference/keywords/return.md)</li><li>[yield](../../language-reference/keywords/yield.md)</li></ul>|
+|Операторы перехода|Инструкции перехода передают управление другому разделу кода. Дополнительные сведения см. в следующих разделах: <ul><li>[break](../../language-reference/keywords/break.md)</li><li>[continue](../../language-reference/keywords/continue.md)</li><li>[default](../../language-reference/keywords/switch.md)</li><li>[goto](../../language-reference/keywords/goto.md)</li><li>[return](../../language-reference/keywords/return.md)</li><li>[yield](../../language-reference/keywords/yield.md)</li></ul>|
 |Операторы обработки исключений|Инструкции обработки исключений позволяют аккуратно выполнить восстановление после исключительных условий, возникающих во время выполнения. Дополнительные сведения см. в следующих разделах: <ul><li>[throw](../../language-reference/keywords/throw.md)</li><li>[try-catch](../../language-reference/keywords/try-catch.md)</li><li>[try-finally](../../language-reference/keywords/try-finally.md)</li><li>[try-catch-finally](../../language-reference/keywords/try-catch-finally.md)</li></ul>|
 |[Инструкции checked и unchecked](../../language-reference/keywords/checked-and-unchecked.md)|Инструкции checked и unchecked позволяют указать, позволено ли числовым операциям вызывать переполнение, когда результат сохраняется в переменной, которая слишком мала для хранения результирующего значения. Дополнительные сведения см. в разделах [checked](../../language-reference/keywords/checked.md) и [unchecked](../../language-reference/keywords/unchecked.md).|
 |Инструкция `await`|Если пометить метод с помощью модификатора [async](../../language-reference/keywords/async.md), можно использовать в этом методе инструкцию [await](../../language-reference/operators/await.md). Когда управление достигает выражения `await` в асинхронном методе, управление возвращается вызывающему объекту, и выполнение метода приостанавливается до завершения выполнения ожидающей задачи. После завершения задачи можно возобновить выполнение в методе.<br /><br /> Простой пример см. в подразделе "Асинхронные методы" раздела [Методы](../classes-and-structs/methods.md). Дополнительные сведения см. в разделе [Асинхронное программирование с использованием ключевых слов async и await](../concepts/async/index.md).|
@@ -80,7 +81,7 @@ ms.locfileid: "75711939"
 
 ## <a name="unreachable-statements"></a>Недостижимые инструкции
 
-Если компилятор определяет, что поток управления ни при каких обстоятельствах не сможет достичь определенной инструкции, то он выдаст предупреждение CS0162, как показано в следующем примере:
+Если компилятор определяет, что поток управления ни при каких обстоятельствах не сможет достичь определенного оператора, то он выдаст предупреждение CS0162, как показано в следующем примере:
 
 [!code-csharp[csProgGuideStatements#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#22)]
 
@@ -88,7 +89,7 @@ ms.locfileid: "75711939"
 
 Дополнительные сведения см. в разделе [Операторы](~/_csharplang/spec/statements.md) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Ключевые слова операторов](../../language-reference/keywords/statement-keywords.md)  

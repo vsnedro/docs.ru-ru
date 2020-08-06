@@ -1,5 +1,6 @@
 ---
 title: <para> Руководство по программированию на C#.
+description: Сведения о теге <para> в XML. Этот тег позволяет добавить структуру к тексту в другом теге, например <summary>, <remarks>или <returns>.
 ms.date: 07/20/2015
 f1_keywords:
 - <para>
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <para> C# XML tag
 - para C# XML tag
 ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
-ms.openlocfilehash: d1fe81b1752d066c6b2e1ffe27f0c43fc4068edf
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 146078bcb556b4085724ddcdac561ea868ab0481
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287302"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381857"
 ---
 # <a name="para-c-programming-guide"></a>\<para> (руководство по программированию на C#)
 

@@ -1,17 +1,18 @@
 ---
 title: Руководство по программированию на C#. Использование индексированных свойств в программировании COM-взаимодействия
+description: Сведения о том, как индексированные свойства оптимизируют использование свойств COM с параметрами при программировании на C#.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - indexed properties [C#]
 - Office programming [C#], indexed properties
 - properties [C#], indexed
 ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
-ms.openlocfilehash: 864e2274f0e0e79b4843e0bb67b5c4384eac8588
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: abd785864bd79d455024cb4501c76a21b349aa91
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75712069"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303014"
 ---
 # <a name="how-to-use-indexed-properties-in-com-interop-programming-c-programming-guide"></a>Руководство по программированию на C#. Использование индексированных свойств в программировании COM-взаимодействия
 *Индексированные свойства* делают использование свойств COM с параметрами при программировании на C# более удобным. Индексированные свойства используются совместно с другими компонентами, представленными в Visual C#, например [именованными и необязательными аргументами](../classes-and-structs/named-and-optional-arguments.md), новым типом ([dynamic](../../language-reference/builtin-types/reference-types.md)) и [внедренными сведениями о типах](../../../standard/assembly/embed-types-visual-studio.md) для расширения возможностей программирования для Microsoft Office.  
@@ -42,11 +43,11 @@ ms.locfileid: "75712069"
   
  [!code-csharp[csProgGuideIndexedProperties#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/program.cs#5)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Именованные и необязательные аргументы](../classes-and-structs/named-and-optional-arguments.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Использование типа dynamic](../types/using-type-dynamic.md)
 - [Использование именованных и необязательных аргументов в программировании приложений Office](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
 - [Практическое руководство. Доступ к объектам взаимодействия Office с помощью функций языка C#](./how-to-access-office-onterop-objects.md)
-- [Walkthrough: Office Programming](./walkthrough-office-programming.md) (Пошаговое руководство. Программирование приложений Office)
+- [Пошаговое руководство: Программирование для Office](./walkthrough-office-programming.md)

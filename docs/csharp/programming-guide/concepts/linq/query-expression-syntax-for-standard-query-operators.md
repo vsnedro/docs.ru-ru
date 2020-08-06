@@ -1,13 +1,14 @@
 ---
 title: Синтаксис выражений запроса для стандартных операторов запроса (C#)
+description: Сведения о синтаксисе выражений запроса для стандартных операторов запроса. Просмотрите список стандартных операторов запроса с эквивалентными предложениями выражений запросов.
 ms.date: 07/20/2015
 ms.assetid: e1e17ef2-68ff-4c26-b6e2-015668227fa5
-ms.openlocfilehash: dac63ae165b88924cb0e91336571173f764569ee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b43d2095ee7d059be6f834b576ca0e6ab0a87585
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69591426"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87299127"
 ---
 # <a name="query-expression-syntax-for-standard-query-operators-c"></a>Синтаксис выражений запроса для стандартных операторов запроса (C#)
 Некоторые из наиболее часто используемых стандартных операторов запросов имеют представление в виде ключевых слов в синтаксисе языка C#, что позволяет вызывать их как часть *выражения запроса*. Выражение запроса является более удобочитаемой формой задания запроса, чем его *основанный на методах* эквивалент. Предложения выражений запросов преобразуются в вызовы методов запросов во время компиляции.  
@@ -29,7 +30,7 @@ ms.locfileid: "69591426"
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby …, … descending`<br /><br /> (Дополнительные сведения см. в разделе [Предложение orderby](../../../language-reference/keywords/orderby-clause.md).)|  
 |<xref:System.Linq.Enumerable.Where%2A>|`where`<br /><br /> (Дополнительные сведения см. в разделе [Предложение where](../../../language-reference/keywords/where-clause.md).)|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>

@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Как определить равенства значений для типа
+description: Сведения об определении равенства значений для типа. Изучите примеры кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - overriding Equals method [C#]
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - value equality [C#]
 - equivalence [C#]
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-ms.openlocfilehash: 140be18698a40be8f394b31fcd42b97d6685cb98
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cf4449618c2b57f21855354f2250d41a403b4d57
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79157095"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381649"
 ---
 # <a name="how-to-define-value-equality-for-a-type-c-programming-guide"></a>Руководство по программированию на C#. Как определить равенства значений для типа
 
@@ -39,11 +40,11 @@ ms.locfileid: "79157095"
   
 2. Реализуйте интерфейс <xref:System.IEquatable%601?displayProperty=nameWithType>, предоставив метод `Equals` для конкретного типа. Именно на этом этапе происходит фактическое сравнение значений. Например, функцию равенства можно определить путем сравнения только одного из двух полей в типе. Не вызывайте исключения из `Equals`. Только для классов: этот метод должен проверять только те поля, которые объявлены в классе. Он должен вызывать метод `base.Equals` для проверки полей в базовом классе. (Не делайте этого, если тип наследуется напрямую от <xref:System.Object>, поскольку реализация <xref:System.Object> для <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> выполняет проверку равенства ссылок.)  
   
-3. Рекомендуется (хотя это и не обязательно) перегрузить операторы [==](../../language-reference/operators/equality-operators.md#equality-operator-) и [!=](../../language-reference/operators/equality-operators.md#inequality-operator-).  
+3. Необязательно, но рекомендуется: перегрузите операторы [==](../../language-reference/operators/equality-operators.md#equality-operator-) и [!=](../../language-reference/operators/equality-operators.md#inequality-operator-).  
   
 4. Переопределите <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> таким образом, чтобы два объекта с равными значениями создавали одинаковый хэш-код.  
   
-5. Необязательно. Для поддержки определений "больше" и "меньше" реализуйте для типа интерфейс <xref:System.IComparable%601>, а также перегрузите операторы [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) и [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-).  
+5. Необязательные: Для поддержки определений "больше" и "меньше" реализуйте для типа интерфейс <xref:System.IComparable%601>, а также перегрузите операторы [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) и [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-).  
   
  В первом из приведенных ниже примеров показана реализация класса. Во втором примере показана реализация структуры.  
 
@@ -67,7 +68,7 @@ ms.locfileid: "79157095"
   
  Операторы [==](../../language-reference/operators/equality-operators.md#equality-operator-) и [!=](../../language-reference/operators/equality-operators.md#inequality-operator-) нельзя применять к структурам, если только они не были явным образом перегружены для конкретной структуры.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сравнения на равенство](equality-comparisons.md)
 - [Руководство по программированию на C#](../index.md)

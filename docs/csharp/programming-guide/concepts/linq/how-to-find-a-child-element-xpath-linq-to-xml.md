@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Поиск дочернего элемента (XPath-LINQ to XML) (C#)
+description: Сведения о поиске дочернего элемента путем сравнения оси дочерних элементов XPath с методом Element (LINQ to XML).
 ms.date: 07/20/2015
 ms.assetid: 4fa6182d-6196-4ed1-9c9e-82949ff89c71
-ms.openlocfilehash: 37ce6c9d91d4edf2576ccddabd1d7f14a96b0a33
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 57d1a4e636e3443512020129a76cc2de7bb3f244
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141235"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301740"
 ---
 # <a name="how-to-find-a-child-element-xpath-linq-to-xml-c"></a>Практическое руководство. Поиск дочернего элемента (XPath-LINQ to XML) (C#)
 В этом разделе сравнивается ось дочерних элементов XPath с методом [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Element%2A>.  

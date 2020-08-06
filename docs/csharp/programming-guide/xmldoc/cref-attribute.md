@@ -1,15 +1,16 @@
 ---
 title: Руководство по программированию на C#. Атрибут cref
+description: Узнайте об атрибуте cref. Атрибут cref означает ссылку на код. Он указывает, что текст внутри тега представляет собой элемент кода.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - cref [C#]
 ms.assetid: 66a6b0e5-b961-4504-a461-3a4cf481fc8b
-ms.openlocfilehash: b06d0c9d447124dec7d8cf3c0cbbfd0daca78fe3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 31fa1a3f182d7b72a1dfbe1ce47386f87fbbff75
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79157017"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87382000"
 ---
 # <a name="cref-attribute-c-programming-guide"></a>Руководство по программированию на C#. Атрибут cref
 
@@ -82,7 +83,7 @@ ms.locfileid: "79157017"
 </doc>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Комментарии XML-документации](./index.md)
 - [Рекомендуемые теги для комментариев документации](./recommended-tags-for-documentation-comments.md)

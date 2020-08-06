@@ -1,13 +1,14 @@
 ---
 title: Извлечение текста абзацев (C#)
+description: Узнайте, как использовать запросы LINQ для получения текста каждого абзаца в документе WordprocessingML в виде строки в C#. В этом примере используются цепочки запросов.
 ms.date: 07/20/2015
 ms.assetid: 127d635e-e559-408f-90c8-2bb621ca50ac
-ms.openlocfilehash: 7c47420045def3fe973169e01143646c0f60a8eb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 58a07ab848307c886927815e4e49e90806f61346
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79168249"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302598"
 ---
 # <a name="retrieving-the-text-of-the-paragraphs-c"></a>Извлечение текста абзацев (C#)
 Этот пример основан на предыдущем примере [Извлечение абзацев и стилей (C#)](./retrieving-the-paragraphs-and-their-styles.md). В этом примере текст каждого абзаца получается в строку.  
@@ -137,12 +138,12 @@ StyleName:Normal ><
 StyleName:Code >Hello World<  
 ```  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Следующие шаги  
  В следующем примере показано, как использовать метод расширений вместо <xref:System.Linq.Enumerable.Aggregate%2A>, чтобы объединить несколько строк в одну.  
   
 - [Рефакторинг с использованием метода расширения (C#)](./refactoring-using-an-extension-method.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Учебник. Управление содержимым в документе WordprocessingML (C#)](shape-of-wordprocessingml-documents.md)
+- [Учебник. Обработка содержимого документа WordprocessingML (C#)](shape-of-wordprocessingml-documents.md)
 - [Отложенное выполнение и отложенное вычисление в LINQ to XML (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

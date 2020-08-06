@@ -1,15 +1,16 @@
 ---
 title: Руководство по программированию на C#. Элементы, воплощающие выражения
+description: Сведения об элементах, воплощающих выражение. Изучите примеры кода, в которых используется определение тела выражения для свойств, конструкторов, методов завершения и т. д.
 ms.date: 02/06/2019
 helpviewer_keywords:
 - expression-bodied members[C#]
 - C# language, expresion-bodied members
-ms.openlocfilehash: f212bb707d3dd2d4a7cc917d335a83cff01ed0cf
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e68e96e4aa3ff6a64590459a7197da1833e1a275
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75711991"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381662"
 ---
 # <a name="expression-bodied-members-c-programming-guide"></a>Члены, воплощающие выражения (руководство по программированию на C#)
 
@@ -23,7 +24,7 @@ member => expression;
 
 В C# 6 была представлена поддержка для определений тела выражений для методов и свойств только для чтения. В C# 7.0 эта поддержка была расширена. Определения тела выражений можно использовать с членами типа, указанными в следующей таблице.
 
-|Участник  |Поддерживается как... |
+|Член  |Поддерживается как... |
 |---------|---------|
 |[Метод](#methods)  |C# 6 |
 |[Свойство только для чтения](#read-only-properties)   |C# 6  |

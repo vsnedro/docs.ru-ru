@@ -1,13 +1,14 @@
 ---
 title: Извлечение абзацев из документа в формате Office Open XML (C#)
+description: Узнайте, как получить коллекцию абзацев из документа Office Open XML. Ознакомьтесь с примером, в котором используется метод расширения StringConcatenate.
 ms.date: 07/20/2015
 ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
-ms.openlocfilehash: 241bacc730f205bf501c1ab1ab47f6fda4c15d64
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 64678b39d9d0bfb23574a09998248c8e33ec01d6
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75347462"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301597"
 ---
 # <a name="how-to-retrieve-paragraphs-from-an-office-open-xml-document-c"></a>Извлечение абзацев из документа в формате Office Open XML (C#)
 В этом разделе представлен пример, открывающий документ Office Open XML и получающий коллекцию всех абзацев документа.  

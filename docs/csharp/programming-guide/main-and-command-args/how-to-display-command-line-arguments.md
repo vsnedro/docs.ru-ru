@@ -1,20 +1,21 @@
 ---
 title: Руководство по программированию на C#. Отображение аргументов командной строки
+description: Узнайте, как отобразить аргументы командной строки. Изучите пример кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - command-line arguments [C#], displaying
 ms.assetid: b8479f2d-9e05-4d38-82da-2e61246e5437
-ms.openlocfilehash: 210dad71220572535a0325fac925b0453b0d4e03
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1ac5dc5a5f4e974c9202d2ce23f61071494e1977
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75712030"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381818"
 ---
 # <a name="how-to-display-command-line-arguments-c-programming-guide"></a>Руководство по программированию на C#. Отображение аргументов командной строки
 Аргументы, предоставляемые исполняемому файлу в командной строке, доступны через необязательный параметр для `Main`. Аргументы предоставляются в форме массива строк. Каждый элемент массива содержит один аргумент. Пробелы между аргументами удаляются. Например, рассмотрим следующие вызовы из командной строки вымышленного исполняемого файла:  
   
-|Ввод в командной строке|Массив строк, передаваемых в метод Main|  
+|Входные данные в командной строке|Массив строк, передаваемых в метод Main|  
 |----------------------------|-------------------------------------|  
 |**executable.exe a b c**|"a"<br /><br /> "b"<br /><br /> "c"|  
 |**executable.exe one two**|"one"<br /><br /> "two"|  
@@ -28,7 +29,7 @@ ms.locfileid: "75712030"
   
  [!code-csharp[csProgGuideMain#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#9)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
 - [Сборка из командной строки с помощью csc.exe](../../language-reference/compiler-options/command-line-building-with-csc-exe.md)

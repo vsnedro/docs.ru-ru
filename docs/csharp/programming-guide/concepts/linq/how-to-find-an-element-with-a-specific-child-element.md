@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Поиск элементов с определенным дочерним элементом (C#)
+description: Узнайте, как найти элемент с определенным дочерним элементом. Изучите примеры кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
-ms.openlocfilehash: 0536b1b92d4d7fc18b5d406bbcd24aefc6a840c6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1d02f3d3af0a3711a5361941727e2e0b6c8bbdc9
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141145"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301714"
 ---
 # <a name="how-to-find-an-element-with-a-specific-child-element-c"></a>Практическое руководство. Поиск элементов с определенным дочерним элементом (C#)
 В этом разделе показан определенный элемент, имеющий дочерний элемент с заданным значением.  
@@ -57,7 +58,7 @@ foreach (XElement el in tests)
 0006  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>

@@ -1,5 +1,6 @@
 ---
 title: Tlbimp.exe (программа экспорта библиотек типов)
+description: Используйте Tlbimp.exe, программу экспорта библиотек типов. Это средство преобразует определения типов, содержащиеся в библиотеке типов COM, в эквивалентные определения сборки среды CLR.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - type libraries [.NET Framework], importing
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - type libraries
 - converting type definitions
 ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
-ms.openlocfilehash: d942378888b06049022188c75456f438d4b187e3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f1e50336e6c159ae56b393098868e4b8f5310b49
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79180245"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517000"
 ---
 # <a name="tlbimpexe-type-library-importer"></a>Tlbimp.exe (программа экспорта библиотек типов)
 Программа импорта библиотек типов преобразует определения типов, содержащиеся в библиотеке типов COM, в эквивалентные определения сборки среды CLR. Tlbimp.exe выводит двоичный файл (сборку), содержащий метаданные среды выполнения для типов, определенных в исходной библиотеке типов. Этот файл можно просмотреть с помощью таких средств, как [Ildasm.exe](ildasm-exe-il-disassembler.md).  
@@ -36,7 +37,7 @@ tlbimp tlbFile [options]
 |--------------|-----------------|  
 |*tlbFile*|Имя любого файла, содержащего библиотеку типов COM.|  
   
-|Параметр|Описание|  
+|Параметр|Описание:|  
 |------------|-----------------|  
 |**/asmversion:** *versionnumber*|Задает номер версии создаваемой сборки. Аргумент *номер_версии* задается в формате *главная.вспомогательная.сборка.редакция*.|  
 |**/company:** `companyinformation`|Добавляет сведения об организации в выходную сборку.|  

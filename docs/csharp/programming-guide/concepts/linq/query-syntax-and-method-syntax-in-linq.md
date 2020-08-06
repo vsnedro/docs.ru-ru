@@ -1,16 +1,17 @@
 ---
 title: Синтаксис запросов и синтаксис методов в LINQ (C#)
+description: Сведения о синтаксисе запросов и методов в LINQ. Это относится к методам расширения стандартных операторов запросов и лямбда-выражениям.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - LINQ [C#], query syntax vs. method syntax
 - queries [LINQ in C#], syntax comparisons
 ms.assetid: eedd6dd9-fec2-428c-9581-5b8783810ded
-ms.openlocfilehash: 17280daaf98010245bbd019652a2a46d7f66ab59
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1765a15347aeedb9cc5fa6784abdfad6fafe4016
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635500"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87300765"
 ---
 # <a name="query-syntax-and-method-syntax-in-linq-c"></a>Синтаксис запросов и синтаксис методов в LINQ (C#)
 Большинство запросов в вводной документации к LINQ написано с использованием декларативного синтаксиса запросов LINQ. Однако синтаксис запроса должен быть преобразован в вызовы методов для среды CLR .NET, когда код компилируется. Эти вызовы метода вызывают стандартные операторы запросов, которые имеют такие имена, как `Where`, `Select`, `GroupBy`, `Join`, `Max` и `Average`. Вместо синтаксиса запросов для их вызова можно использовать синтаксис методов.  

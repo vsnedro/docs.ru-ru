@@ -1,13 +1,14 @@
 ---
 title: Сериализация с использованием XmlSerializer (C#)
+description: Сведения о сериализации объектов с использованием XmlSerializer. Ознакомьтесь с примером, в котором показано создание объектов, их сериализация в поток памяти и десериализация из него.
 ms.date: 07/20/2015
 ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
-ms.openlocfilehash: 0ec19e964471382c6f10f07d6d4bb25f88fd532f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 29c8c7170af8a24292892862dc89cfe101d24f15
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75347398"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301519"
 ---
 # <a name="how-to-serialize-using-xmlserializer-c"></a>Сериализация с использованием XmlSerializer (C#)
 Этот раздел показывает пример сериализации и десериализации с помощью <xref:System.Xml.Serialization.XmlSerializer>.  

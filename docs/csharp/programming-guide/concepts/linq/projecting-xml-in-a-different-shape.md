@@ -1,13 +1,14 @@
 ---
 title: Проецирование XML в другую форму (C#)
+description: Узнайте, как проецировать XML в форме, отличной от формы исходного кода XML. Просмотрите пример кода, в котором используются классы из сборки WindowsBase.
 ms.date: 07/20/2015
 ms.assetid: 4cb6b14a-32dc-4a2a-813e-bf9368fa8d86
-ms.openlocfilehash: 1377df1ce7f54bc9a0f58836d7df5e5b7b54a69a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 492c0671b6a81f7e6b8d5f93698f84b88b14bd23
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69591531"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87299101"
 ---
 # <a name="projecting-xml-in-a-different-shape-c"></a>Проецирование XML в другую форму (C#)
 В этом разделе показан пример проецированного XML, который находится в форме, отличной от исходного XML.  
@@ -230,7 +231,7 @@ class Program
 </Root>  
 ```  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Следующие шаги  
  В следующем примере составлен запрос на выявление всего текста в документе Word:  
   
 - [Поиск текста в документах Word (C#)](./finding-text-in-word-documents.md)  

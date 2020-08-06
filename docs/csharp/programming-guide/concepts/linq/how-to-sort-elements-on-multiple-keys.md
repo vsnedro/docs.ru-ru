@@ -1,13 +1,14 @@
 ---
 title: Сортировка элементов по множеству ключей (C#)
+description: Сведения о сортировке элементов по множеству ключей. Изучите примеры сортировки элементов с использованием примеров XML-документов.
 ms.date: 07/20/2015
 ms.assetid: 3b2760b6-d607-4ac7-b784-5c6524e2a0e0
-ms.openlocfilehash: ddfeab4bf9b67231296ca90df1244a3b8a441440
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 486aac38a27cf064553894a548722a54c58c21b6
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75347384"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301506"
 ---
 # <a name="how-to-sort-elements-on-multiple-keys-c"></a>Сортировка элементов по множеству ключей (C#)
 
@@ -17,7 +18,7 @@ ms.locfileid: "75347384"
 
 В этом примере результаты упорядочиваются вначале по почтовому коду доставки, а затем по дате заказа.
 
-В этом примере используется следующий XML-документ: [Пример XML-файла. Клиенты и заказы (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).
+В этом примере используется следующий XML-документ: [Пример XML-файла. Заказчики и заказы (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).
 
 ```csharp
 XElement co = XElement.Load("CustomersOrders.xml");
@@ -67,7 +68,7 @@ CustomerID:LAZYK EmployeeID:8 ShipPostalCode:99362 OrderDate:5/22/1997
 
 Следующий пример демонстрирует тот же запрос XML, что и в пространстве имен. Дополнительные сведения см. в статье [Обзор пространств имен DFS (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).
 
-В этом примере используется следующий XML-документ: [Пример XML-файла. Клиенты и заказы в пространстве имен](./sample-xml-file-customers-and-orders-in-a-namespace.md).
+В этом примере используется следующий XML-документ: [Пример XML-файла. Заказчики и заказы в пространстве имен](./sample-xml-file-customers-and-orders-in-a-namespace.md).
 
 ```csharp
 XElement co = XElement.Load("CustomersOrdersInNamespace.xml");

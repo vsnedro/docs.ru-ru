@@ -1,13 +1,14 @@
 ---
 title: Извлечение поверхностного значения элемента (C#)
+description: Сведения о том, как получить неглубокое значение элемента. Неглубокое значение предназначено только для конкретного элемента.
 ms.date: 07/20/2015
 ms.assetid: 924a2699-72f6-4be1-aaa6-de62f8ec73b9
-ms.openlocfilehash: b9b69b5a18106f82d13cb54208c2362f8239711e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 597859e5b66606aa0cff9c1a475e79e6b66c39fc
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75347451"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301584"
 ---
 # <a name="how-to-retrieve-the-shallow-value-of-an-element-c"></a>Извлечение поверхностного значения элемента (C#)
 В этом разделе показано, как получить неглубокое значение элемента. Неглубокое значение - это значение только конкретного элемента, в отличие от глубокого значения, которое содержит значения всех элементов-потомков, объединенные в одной строке.  
@@ -79,6 +80,6 @@ Column  Name="CustomerId"   =Customer.CustomerId
 Column  Name="Name"         =Customer.Name  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оси LINQ to XML (C#)](./linq-to-xml-axes-overview.md)

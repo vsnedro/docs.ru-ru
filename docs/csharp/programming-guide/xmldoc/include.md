@@ -1,5 +1,6 @@
 ---
 title: <include> Руководство по программированию на C#.
+description: Сведения о теге <include> XML. Этот тег позволяет указать ссылку на комментарии в другом файле, которые описывают типы и элементы вашего исходного кода.
 ms.date: 07/20/2015
 f1_keywords:
 - include
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <include> C# XML tag
 - include C# XML tag
 ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
-ms.openlocfilehash: bf41019c775fed25afe4bdb9453a8e52f44856b5
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 15a99444d464594cc91a7c8805c564c703c3b608
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287354"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381909"
 ---
 # <a name="include-c-programming-guide"></a>\<include> (руководство по программированию на C#)
 
@@ -75,7 +76,7 @@ The summary for this other type.
 
 ## <a name="program-output"></a>Выходные данные программы
 
-При компиляции классов Test и Test2 с использованием следующей команды в командной строке создаются следующие выходные данные: `-doc:DocFileName.xml.` В Visual Studio параметр "Комментарии XML-документа" задается в области построения конструктора проектов. При обнаружении тега `<include>` компилятор C# выполняет поиск комментариев документации в файле *xml_include_tag.doc* вместо текущего файла исходного кода. После этого компилятор создает файл *DocFileName.xml*, который будет использоваться средствами для работы с документацией, такими как [DocFX](https://dotnet.github.io/docfx/) и [Sandcastle](https://github.com/EWSoftware/SHFB), для подготовки окончательной версии документации.  
+При компиляции классов Test и Test2 с использованием следующей команды в командной строке создаются следующие выходные данные: `-doc:DocFileName.xml.` В Visual Studio параметр "Комментарии XML-документа" задается в области построения конструктора проектов. При обнаружении тега `<include>` компилятор C# выполняет поиск комментариев документации в файле *xml_include_tag.doc* вместо текущего файла исходного кода. После этого компилятор создает файл *DocFileName.xml*, который будет использоваться средствами для работы с документацией, такими как [Sandcastle](https://github.com/EWSoftware/SHFB), для подготовки окончательной версии документации.  
   
 ```xml
 <?xml version="1.0"?>

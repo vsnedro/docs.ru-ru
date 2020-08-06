@@ -1,5 +1,6 @@
 ---
 title: <summary> Руководство по программированию на C#.
+description: Сведения о теге <summary> в XML, который используется для описания типа или элемента типа. Изучите примеры кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 f1_keywords:
 - <summary>
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <summary> C# XML tag
 - summary C# XML tag
 ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
-ms.openlocfilehash: f6984c60e6a7132e94c5c91837535484b12f93c5
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f9243e598aaf0c12dd48b48045f461b4b307c18f
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84590622"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87380609"
 ---
 # <a name="summary-c-programming-guide"></a>\<summary> (руководство по программированию на C#)
 

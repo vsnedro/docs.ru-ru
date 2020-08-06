@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Использование типа dynamic
+description: Сведения об использовании типа dynamic. Тип dynamic является статическим, но динамические объекты обходят статическую проверку типов.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - dynamic [C#], about dynamic type
 - dynamic type [C#]
 ms.assetid: 3828989d-c967-4a51-b948-857ebc8fdf26
-ms.openlocfilehash: 24d48605e560038d70f1818611f339a94ecc2bba
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: 9904f0452feca388704067b1fd5432f74d0df86b
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241972"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381584"
 ---
 # <a name="using-type-dynamic-c-programming-guide"></a>Использование типа dynamic (руководство по программированию на C#)
 

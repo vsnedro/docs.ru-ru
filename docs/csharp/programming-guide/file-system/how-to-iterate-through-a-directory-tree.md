@@ -1,16 +1,17 @@
 ---
 title: Руководство по программированию на C#. Выполнение итерации по дереву папок
+description: Узнайте, как выполнить итерацию по дереву папок. Получите доступ к каждому файлу в каждом вложенном каталоге в указанной корневой папке.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - iterating through folders [C#]
 - file iteration [C#]
 ms.assetid: c4be4a75-6b1b-46a7-9d38-bab353091ed7
-ms.openlocfilehash: 24a6225527becb0b896017616e2661ab8247c74c
-ms.sourcegitcommit: a241301495a84cc8c64fe972330d16edd619868b
+ms.openlocfilehash: c49a9d1eaea9d4d8967b105d753f2a611d80e795
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84241608"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301987"
 ---
 # <a name="how-to-iterate-through-a-directory-tree-c-programming-guide"></a>Руководство по программированию на C#. Выполнение итерации по дереву папок
 Под фразой "обход дерева каталогов" подразумевается доступ к каждому файлу в каждом вложенном подкаталоге в заданной корневой папке на любую глубину. Необязательно открывать каждый файл. Можно просто извлечь имя файла или подкаталога в виде значения `string` или получить дополнительную информацию в форме объекта <xref:System.IO.FileInfo?displayProperty=nameWithType> или <xref:System.IO.DirectoryInfo?displayProperty=nameWithType>.  

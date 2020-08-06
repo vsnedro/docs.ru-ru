@@ -1,17 +1,18 @@
 ---
 title: Пошаговые руководства по C#
+description: Ознакомьтесь с пошаговыми инструкциями для распространенных сценариев. Эти руководства по C# предоставляют начальные сведения о продукте или определенной функциональной области.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - walkthroughs [C#]
 - walkthroughs [Visual Studio], Visual C#
 - Visual C#, walkthroughs
 ms.assetid: 2d07b972-ef69-4676-9aef-e1784728e1ff
-ms.openlocfilehash: f563e5ed1b14831f9fea6575ced0f7a95d9157fc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 746fe35e6d6d4a75f363ccb82ae8dc6106854d8d
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77626364"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381896"
 ---
 # <a name="c-walkthroughs"></a>Пошаговые руководства по C#
 

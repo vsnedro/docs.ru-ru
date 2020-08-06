@@ -1,5 +1,6 @@
 ---
 title: Руководство по программированию на C#. Реализация пользовательских методов доступа к событиям
+description: Сведения о реализации пользовательских методов доступа к событиям. Изучите пример кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - accessors [C#], event accessors
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - events [C#], remove accessor
 - remove accessor [C#]
 ms.assetid: bf903abf-03a4-4f7b-ab6b-b7e59bc2ee1e
-ms.openlocfilehash: 34e816799f472e8945962e334b9a90b2582e0393
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4094aa1fedbceb68790b484608b3ea0ebc1e5cf6
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705357"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302143"
 ---
 # <a name="how-to-implement-custom-event-accessors-c-programming-guide"></a>Руководство по программированию на C#. Реализация пользовательских методов доступа к событиям
 Событие представляет собой особый вид многоадресного делегата, который можно вызвать только из класса, где он объявлен. В клиентском коде создается подписка на событие. Для этого предоставляется ссылка на метод, который должен вызываться при возникновении этого события. Эти методы добавляются в список вызова делегата с помощью методов доступа к событиям, которые схожи с методами доступа к свойствам и отличаются только именами (`add` и `remove`). В большинстве случаев реализовывать настраиваемые методы доступа к событиям не требуется. Если в коде отсутствуют настраиваемые методы доступа к событиям, компилятор добавляет их автоматически. Тем не менее в некоторых случаях требуется реализовать настраиваемое поведение. Один из таких сценариев показан в руководстве по [реализации событий интерфейса](./how-to-implement-interface-events.md).
@@ -23,7 +24,7 @@ ms.locfileid: "75705357"
   
 [!code-csharp[IDrawingObject.OnDraw](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#IDrawingObjectOnDraw)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [События](./index.md)
 - [event](../../language-reference/keywords/event.md)

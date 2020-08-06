@@ -1,13 +1,14 @@
 ---
 title: Создание запросов к XML в пространствах имен (C#)
+description: Сведения о создании запросов к XML в пространствах имен. В таких запросах необходимо использовать объекты XName с правильно заданным пространством имен.
 ms.date: 07/20/2015
 ms.assetid: 7c54df81-15e4-4091-8c81-a87637029130
-ms.openlocfilehash: a8b8d55daaad1ae00e43fed897080ed7a62fafab
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 64eb9df1cde3b434a11e2e5410aab96993dc0fa1
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75337374"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303183"
 ---
 # <a name="how-to-write-queries-on-xml-in-namespaces-c"></a>Создание запросов к XML в пространствах имен (C#)
 Для записи XML-запросов в пространстве имен необходимо использовать объекты <xref:System.Xml.Linq.XName> с правильно заданным пространством имен.  
@@ -76,6 +77,6 @@ foreach (XElement el in c1)
 3  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обзор пространств имен (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md)

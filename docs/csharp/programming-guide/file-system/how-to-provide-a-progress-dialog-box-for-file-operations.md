@@ -1,15 +1,16 @@
 ---
 title: Руководство по программированию на C#. Отображение диалогового окна хода выполнения для операций с файлами
+description: Узнайте, как реализовать диалоговое окно хода выполнения для операций с файлами с помощью метода CopyFile (String, String, UIOption).
 ms.date: 07/20/2015
 helpviewer_keywords:
 - progress dialog [C#]
 ms.assetid: 01b71fe7-8178-4dc8-aeb1-12053be7b51c
-ms.openlocfilehash: 30ab84054d26f5b32a3f042a8d35d5ef1211d928
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2ea18d924b47fc10412d37479f1b09f7eef7ad3b
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75705136"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301974"
 ---
 # <a name="how-to-provide-a-progress-dialog-box-for-file-operations-c-programming-guide"></a>Руководство по программированию на C#. Отображение диалогового окна хода выполнения для операций с файлами
 Вы можете предоставить стандартное диалоговое окно, в котором будет отображаться ход выполнения операций с файлами в Windows, при использовании метода <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%28System.String%2CSystem.String%2CMicrosoft.VisualBasic.FileIO.UIOption%29> из пространства имен <xref:Microsoft.VisualBasic?displayProperty=nameWithType>.  
@@ -31,6 +32,6 @@ ms.locfileid: "75705136"
   
  [!code-csharp[csFilesandFolders#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#11)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Файловая система и реестр (руководство по программированию на C#)](./index.md)

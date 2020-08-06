@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Поиск всех узлов в пространстве имен (C#)
+description: Сведения о поиске всех узлов в пространстве имен с помощью фильтров по каждому элементу или атрибуту.
 ms.date: 07/20/2015
 ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
-ms.openlocfilehash: 408f4207798720428d0dd3821d33fd3edf2f897e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bf739480c6b4e2c53d5c430d47ff833e8995f6a4
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141181"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303313"
 ---
 # <a name="how-to-find-all-nodes-in-a-namespace-c"></a>Практическое руководство. Поиск всех узлов в пространстве имен (C#)
 Для поиска всех узлов в отдельном пространстве имен можно применить к нему фильтр по каждому элементу или атрибуту.  
@@ -46,7 +47,7 @@ Nodes in the http://www.adventure-works.com namespace
 ## <a name="example"></a>Пример  
  Для доступа к XML-файлу применяется следующий запрос, содержащий заказы на покупку в двух разных пространствах имен. В запросе создается новое дерево с элементами одного из пространств имен.  
   
- В этом примере используется следующий XML-документ: [Пример XML-файла. Объединенные заказы на покупку](./sample-xml-file-consolidated-purchase-orders.md).  
+ В этом примере используется следующий XML-документ: [Пример XML-файла. Консолидированные заказы на покупку](./sample-xml-file-consolidated-purchase-orders.md).  
   
 ```csharp  
 XDocument cpo = XDocument.Load("ConsolidatedPurchaseOrders.xml");  

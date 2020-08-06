@@ -1,13 +1,14 @@
 ---
 title: Как получить значение атрибута (LINQ to XML) (C#)
+description: Сведения об извлечении значений атрибута. Изучите примеры кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 ms.assetid: 817bbe89-5979-4234-bf0c-46f63692ac8c
-ms.openlocfilehash: 212ad3bb3097e7e2c76da8f165011b181f329d4c
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: 5ee6995a54829b6d992e2982e6a6effcabf76470
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249198"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301558"
 ---
 # <a name="how-to-retrieve-the-value-of-an-attribute-linq-to-xml-c"></a>Как получить значение атрибута (LINQ to XML) (C#)
 В этом разделе показано получение значений атрибутов. Существует два основных способа. Можно привести <xref:System.Xml.Linq.XAttribute> к требуемому типу, после этого оператор явного преобразования преобразует содержимое элемента или атрибута в указанный тип. Иначе можно использовать свойство <xref:System.Xml.Linq.XAttribute.Value%2A>. Однако приведение, как правило, является лучшим подходом. В частности, упрощается написание кода, обеспечивающего получение значения атрибута, который может существовать или не существовать, после приведения атрибута к типу значения, допускающему значение NULL. Примеры использования этой технологии см. в руководстве по [извлечению значений элемента (LINQ to XML) (C#)](./how-to-retrieve-the-value-of-an-element-linq-to-xml.md).  

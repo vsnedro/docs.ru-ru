@@ -1,5 +1,6 @@
 ---
 title: Ngen.exe (генератор образов в машинном коде)
+description: Узнайте о Ngen.exe, генераторе образов в машинном коде. Повысьте производительность управляемого приложения, создавая образы в машинном код и выполняя установку в локальный кэш образов в машинном коде.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - BypassNGenAttribute
 - System.Runtime.BypassNGenAttribute
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-ms.openlocfilehash: 297bc3f9182e76523eda4d4be3112f4d1d7e3fee
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ae86aed773a9a13f102b1ad111cac5a3ee563508
+ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75741794"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87517273"
 ---
 # <a name="ngenexe-native-image-generator"></a>Ngen.exe (генератор образов в машинном коде)
 
@@ -126,7 +127,7 @@ ngen /? | /help
 
 ## <a name="options"></a>Параметры
 
-|Параметр|Описание|
+|Параметр|Описание:|
 |------------|-----------------|
 |`/nologo`|Отключает загрузочный баннер корпорации Майкрософт при запуске.|
 |`/silent`|Отключает отображение сообщений об успешно выполненных операциях.|
@@ -566,7 +567,7 @@ ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
 
 |Имя задачи|32-разрядный компьютер|64-разрядный компьютер|
 |---------------|----------------------|----------------------|
-|NET Framework NGEN v4.0.30319|Да|Да|
+|NET Framework NGEN v4.0.30319|да|да|
 |NET Framework NGEN v4.0.30319 64|Нет|Да|
 
 Задача образов в машинном коде доступна в .NET Framework 4.5 и более поздних версий при выполнении в ОС Windows 8 или более поздних версий. В более ранних версиях Windows платформа .NET Framework использует [службу образов в машинном коде](#native-image-service).

@@ -1,13 +1,14 @@
 ---
 title: Практическое руководство. Поиск списка дочерних элементов (XPath-LINQ to XML) (C#)
+description: Узнайте, как найти список дочерних элементов с помощью выражения XPath. Ознакомьтесь с примером кода, который находит все дочерние элементы определенного элемента.
 ms.date: 07/20/2015
 ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
-ms.openlocfilehash: 2b6f6031441e7d1bd015e25a8debad7dd7f3b261
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a3025aca7fb1055acd55e5ce98914d8359ebe4b7
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141226"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87301727"
 ---
 # <a name="how-to-find-a-list-of-child-elements-xpath-linq-to-xml-c"></a>Практическое руководство. Поиск списка дочерних элементов (XPath-LINQ to XML) (C#)
 В этом разделе проводится сравнение оси дочерних элементов XPath с осью [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A>.  

@@ -1,18 +1,19 @@
 ---
 title: Пример XML-файла. Клиенты и заказы в пространстве имен (LINQ to XML)
+description: Этот XML-файл используется в различных примерах в документации по LINQ to XML. Файл содержит сведения о заказчиках и заказах.
 ms.date: 07/20/2015
 ms.assetid: d6d1c9ea-be74-4e6d-bfdd-d4bcc2d301cf
-ms.openlocfilehash: 01c1719bd67bbaf0d46dc6e3c23b5031afd271f8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0143fa373ee1ad6acecfe99e1a786d5cc90c2eb2
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75346500"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302559"
 ---
-# <a name="sample-xml-file-customers-and-orders-linq-to-xml"></a>Пример XML-файла. Клиенты и заказы в пространстве имен (LINQ to XML)
+# <a name="sample-xml-file-customers-and-orders-linq-to-xml"></a>Пример XML-файла: заказчики и заказы (LINQ to XML)
 Следующий XML-файл используется в различных примерах в документации [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. Этот файл содержит сведения о заказчиках и заказах.  
   
- Раздел [Пример XSD-файла. Клиенты и заказы](./sample-xsd-file-customers-and-orders1.md) содержит XSD, с помощью которого можно проверить этот документ. Здесь используются функции XSD `xs:key` и `xs:keyref` для установления того, что атрибут `CustomerID` элемента `Customer` является ключом, а также для установления связи между элементом `CustomerID` каждого из элементов `Order` и атрибутом `CustomerID` каждого из элементов `Customer`.  
+ Раздел [Пример XSD-файла. Заказчики и заказы](./sample-xsd-file-customers-and-orders1.md) содержит XSD-файл, с помощью которого можно проверить этот документ. Здесь используются функции XSD `xs:key` и `xs:keyref` для установления того, что атрибут `CustomerID` элемента `Customer` является ключом, а также для установления связи между элементом `CustomerID` каждого из элементов `Order` и атрибутом `CustomerID` каждого из элементов `Customer`.  
   
  Пример написания запросов LINQ с использованием преимущества такой связи в предложении `Join` см. в статье [Практическое руководство. Объединение двух коллекций (LINQ to XML) (C#)](./how-to-join-two-collections-linq-to-xml.md).  
   

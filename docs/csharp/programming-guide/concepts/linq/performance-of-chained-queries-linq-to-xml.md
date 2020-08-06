@@ -1,13 +1,14 @@
 ---
 title: Производительность связанных запросов (LINQ to XML) (C#)
+description: Сведения о производительности связанных запросов. Цепочкой запросов называется запрос, использующий в качестве источника другой запрос.
 ms.date: 07/20/2015
 ms.assetid: b2f1d715-8946-4dc0-8d56-fb3d1bba54a6
-ms.openlocfilehash: 7deff9205e6535877efabd85257baa5b3906f41a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1e9173e85845dd085f4d7bf6deec7eb498acd7f3
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70253127"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302858"
 ---
 # <a name="performance-of-chained-queries-linq-to-xml-c"></a>Производительность связанных запросов (LINQ to XML) (C#)
 
@@ -55,4 +56,4 @@ foreach (var i in query2)
 
 Дополнительные сведения об итерациях см. в разделе [yield](../../../language-reference/keywords/yield.md).
 
-Более подробные сведения об объединении запросов в цепочки см. в разделе [Учебное руководство. Связывание запросов](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).
+Более подробные сведения об объединении запросов в цепочки см. в разделе [Учебник. Объединение запросов в цепочки](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).

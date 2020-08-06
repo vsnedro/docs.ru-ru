@@ -1,17 +1,18 @@
 ---
 title: Руководство по программированию на C#. Обработка исключений с помощью блока try-catch
+description: Сведения об обработке исключений с помощью блока try-catch. Изучите пример кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - exception handling [C#], try/catch blocks
 - exceptions [C#], try/catch blocks
 - try/catch blocks [C#]
 ms.assetid: ca8e3773-980e-4767-8633-7408540e9818
-ms.openlocfilehash: a07958c2738f020a831400df43f217e6e1b9e876
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 357aebe042bc5b6e761b3c1bad258021441de22c
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87165134"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302000"
 ---
 # <a name="how-to-handle-an-exception-using-trycatch-c-programming-guide"></a>Руководство по программированию на C#. Обработка исключений с помощью блока try-catch
 Блок [try-catch-](../../language-reference/keywords/try-catch.md) предназначен для перехвата и обработки исключений, происходящих в исполняемом коде. Некоторые исключения могут обрабатываться в блоке `catch`, и проблема решается без повторного создания исключения. Но в большинстве случаев на этом этапе можно только проверить, что создано подходящее исключение.  

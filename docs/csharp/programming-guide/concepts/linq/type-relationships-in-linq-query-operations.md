@@ -1,5 +1,6 @@
 ---
 title: Отношения между типами в операциях запросов LINQ (C#)
+description: Узнайте, как связаны друг с другом типы переменных в запросе LINQ. Операции запросов LINQ строго типизированы в источнике данных, в самом запросе и при его выполнении.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - inferring type information [LINQ in C#]
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - data transformations [LINQ in C#]
 - LINQ [C#], type relationships
 ms.assetid: 99118938-d47c-4d7e-bb22-2657a9f95268
-ms.openlocfilehash: 41853e6858fae9e8d449aeed95a6a84f343d5874
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 20f0b37a156e3b3f9c63f14cb83d678d26f685ee
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75635617"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302286"
 ---
 # <a name="type-relationships-in-linq-query-operations-c"></a>Отношения между типами в операциях запросов LINQ (C#)
 Для эффективного написания запросов следует понимать, как типы переменных связаны друг с другом в полной операции запроса. В таком случае вам будет проще работать с примерами LINQ и примерами кода в документации. Более того, можно будет представить, что происходит в фоновом режиме при неявном типизировании переменных с помощью `var`.  

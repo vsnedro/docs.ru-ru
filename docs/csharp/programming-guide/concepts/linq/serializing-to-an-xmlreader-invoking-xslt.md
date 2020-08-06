@@ -1,13 +1,14 @@
 ---
 title: Сериализация в XmlReader (вызов XSLT) (C#)
+description: Узнайте, как использовать CreateReader для создания XmlReader в C#. Модуль, считывающий из XmlReader, считывает узлы XML-дерева и обрабатывает их.
 ms.date: 07/20/2015
 ms.assetid: 4cc3ee03-ef4c-429b-a408-fedd10b728cd
-ms.openlocfilehash: b079fe05fa8c230f644e011dcb62ec54f55cae60
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: aa5a232c74c5314cb7f1cf03c2a8875ca1cd04df
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "66487189"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87302416"
 ---
 # <a name="serializing-to-an-xmlreader-invoking-xslt-c"></a>Сериализация в XmlReader (вызов XSLT) (C#)
 При использовании средств взаимодействия <xref:System.Xml?displayProperty=nameWithType>, реализованных в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], можно применять <xref:System.Xml.Linq.XNode.CreateReader%2A> для создания <xref:System.Xml.XmlReader>. Модуль, считывающий из этого <xref:System.Xml.XmlReader>, считывает узлы XML-дерева и обрабатывает их соответствующим образом.  
@@ -59,6 +60,6 @@ Console.WriteLine(newTree);
 </Root>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сериализация XML-деревьев (C#)](serializing-to-files-textwriters-and-xmlwriters.md)

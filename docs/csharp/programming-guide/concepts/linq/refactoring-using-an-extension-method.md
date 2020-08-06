@@ -1,13 +1,14 @@
 ---
 title: Рефакторинг с использованием метода расширения (C#)
+description: Сведения о рефакторинге кода с использованием метода расширения. Изучите примеры кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 ms.assetid: c5fc123d-af10-4a2f-b8e4-db921efb2639
-ms.openlocfilehash: 8546c2cb834107cf2e099af40f9a7df4d5858b4b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e786f0e1514156535fd6a6033e37ed8879e99709
+ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70253098"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87381948"
 ---
 # <a name="refactoring-using-an-extension-method-c"></a>Рефакторинг с использованием метода расширения (C#)
 Этот пример основан на предыдущем примере, [Извлечение текста абзацев (C#)](./retrieving-the-text-of-the-paragraphs.md), и в нем применяется оптимизация кода объединения строк с помощью чистой функции, которая реализуется в виде метода расширения.  
@@ -241,12 +242,12 @@ StyleName:Code >Hello World<
   
  Обратите внимание, что данная оптимизация кода является вариантом оптимизации кода в чистую функцию. В следующем разделе принципы разбиения на чистые функции рассматриваются более подробно.  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Следующие шаги  
  В следующем примере показано, как обеспечить оптимизацию данного кода другим способом, с использованием чистых функций:  
   
-- [Рефакторинг с использованием чистых функций (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-a-pure-function.md)  
+- [Рефакторинг с использованием чистых функций (C#)](./refactoring-using-a-pure-function.md)
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Учебник. Управление содержимым в документе WordprocessingML (C#)](./shape-of-wordprocessingml-documents.md)
+- [Учебник. Обработка содержимого документа WordprocessingML (C#)](./shape-of-wordprocessingml-documents.md)
 - [Рефакторинг в чистые функции (C#)](./refactoring-into-pure-functions.md)
