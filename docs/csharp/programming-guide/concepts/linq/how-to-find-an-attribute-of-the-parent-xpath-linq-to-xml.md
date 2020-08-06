@@ -1,27 +1,28 @@
 ---
 title: Практическое руководство. Поиск атрибута родительского элемента (XPath-LINQ to XML) (C#)
+description: Узнайте, как найти атрибут родительского элемента. Ознакомьтесь с примером кода, в котором используется XML-документ.
 ms.date: 07/20/2015
 ms.assetid: dbef9d89-a5c4-431f-80cc-7a2ebf323f86
-ms.openlocfilehash: bfe7554a5c767adde5e7170c8e1ea0537155f6df
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 03344bb66f617970d9598c91366eb7d69514397a
+ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74141175"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87303300"
 ---
-# <a name="how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml-c"></a><span data-ttu-id="b38e8-102">Практическое руководство. Поиск атрибута родительского элемента (XPath-LINQ to XML) (C#)</span><span class="sxs-lookup"><span data-stu-id="b38e8-102">How to find an attribute of the parent (XPath-LINQ to XML) (C#)</span></span>
+# <a name="how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml-c"></a><span data-ttu-id="2831c-104">Практическое руководство. Поиск атрибута родительского элемента (XPath-LINQ to XML) (C#)</span><span class="sxs-lookup"><span data-stu-id="2831c-104">How to find an attribute of the parent (XPath-LINQ to XML) (C#)</span></span>
 
-<span data-ttu-id="b38e8-103">Данный раздел показывает способ перехода к родительскому элементу и нахождения его атрибута.</span><span class="sxs-lookup"><span data-stu-id="b38e8-103">This topic shows how to navigate to the parent element and find an attribute of it.</span></span>
+<span data-ttu-id="2831c-105">Данный раздел показывает способ перехода к родительскому элементу и нахождения его атрибута.</span><span class="sxs-lookup"><span data-stu-id="2831c-105">This topic shows how to navigate to the parent element and find an attribute of it.</span></span>
 
-<span data-ttu-id="b38e8-104">Выражение XPath:</span><span class="sxs-lookup"><span data-stu-id="b38e8-104">The XPath expression is:</span></span>
+<span data-ttu-id="2831c-106">Выражение XPath:</span><span class="sxs-lookup"><span data-stu-id="2831c-106">The XPath expression is:</span></span>
 
 `../@id`
 
-## <a name="example"></a><span data-ttu-id="b38e8-105">Пример</span><span class="sxs-lookup"><span data-stu-id="b38e8-105">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2831c-107">Пример</span><span class="sxs-lookup"><span data-stu-id="2831c-107">Example</span></span>
 
-<span data-ttu-id="b38e8-106">Сначала в данном примере осуществляется поиск элемента `Author`.</span><span class="sxs-lookup"><span data-stu-id="b38e8-106">This example first finds an `Author` element.</span></span> <span data-ttu-id="b38e8-107">Затем в нем осуществляется поиск атрибута `id` родительского элемента.</span><span class="sxs-lookup"><span data-stu-id="b38e8-107">It then finds the `id` attribute of the parent element.</span></span>
+<span data-ttu-id="2831c-108">Сначала в данном примере осуществляется поиск элемента `Author`.</span><span class="sxs-lookup"><span data-stu-id="2831c-108">This example first finds an `Author` element.</span></span> <span data-ttu-id="2831c-109">Затем в нем осуществляется поиск атрибута `id` родительского элемента.</span><span class="sxs-lookup"><span data-stu-id="2831c-109">It then finds the `id` attribute of the parent element.</span></span>
 
-<span data-ttu-id="b38e8-108">В этом примере используется следующий XML-документ: [Пример XML-файла. Книги (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="b38e8-108">This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).</span></span>
+<span data-ttu-id="2831c-110">В этом примере используется следующий XML-документ: [Пример XML-файла. Книги (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).</span><span class="sxs-lookup"><span data-stu-id="2831c-110">This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).</span></span>
 
 ```csharp
 XDocument books = XDocument.Load("Books.xml");
@@ -48,7 +49,7 @@ else
 Console.WriteLine(att1);
 ```
 
-<span data-ttu-id="b38e8-109">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="b38e8-109">This example produces the following output:</span></span>
+<span data-ttu-id="2831c-111">В этом примере выводятся следующие данные:</span><span class="sxs-lookup"><span data-stu-id="2831c-111">This example produces the following output:</span></span>
 
 ```output
 Results are identical
