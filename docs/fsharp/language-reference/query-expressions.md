@@ -2,19 +2,18 @@
 title: Выражения запросов
 description: 'Сведения о поддержке выражений запросов для LINQ на языке программирования F #.'
 ms.date: 05/16/2016
-ms.openlocfilehash: bbd15352aa89bd1891b409177921a675784a0227
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: c6f33a58bc959745a5f83bdcfe378a4dbbe577c5
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419191"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855040"
 ---
 # <a name="query-expressions"></a>Выражения запросов
 
-> [!NOTE]
-> Ссылки на справочник по API в этой статье ведут на сайт MSDN.  Работа над справочником по API docs.microsoft.com не завершена.
-
 Выражения запросов позволяют запрашивать источник данных и размещать данные в нужной форме. Выражения запросов обеспечивают поддержку LINQ в F #.
+> [!NOTE]
+> Справочник по API docs.microsoft.com для F # не завершен. Если вы столкнулись с неработающими ссылками, используйте [документацию по основной библиотеке F #](https://fsharp.github.io/fsharp-core-docs/) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -84,7 +83,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 <table style="width:100%">
   <tr>
     <th>Оператор</th>
-    <th>Описание</th>
+    <th>Описание:</th>
   </tr>
   <tr>
   <td><code>contains</code></td>
@@ -2437,8 +2436,8 @@ module Queries2 = begin
 end
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
-- [Справочник по языку F #](index.md)
+- [Справочник по языку F#](index.md)
 - [Класс LINQ. QueryBuilder](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)
 - [Выражения вычисления](Computation-Expressions.md)
