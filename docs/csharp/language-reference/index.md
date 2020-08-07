@@ -1,6 +1,8 @@
 ---
 title: Справочник по C#
 ms.date: 02/14/2017
+f1_keywords:
+- _CSharpKeyword
 helpviewer_keywords:
 - Visual C#, language reference
 - language reference [C#]
@@ -8,18 +10,18 @@ helpviewer_keywords:
 - C# language, reference
 - reference, C# language
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
-ms.openlocfilehash: 4875e53327e24c4b5983a4a3b79b5beced368725
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bed8f430793a8d8544cf0bbb5ea765490945bfc0
+ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74428616"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87855339"
 ---
 # <a name="c-reference"></a>Справочник по C#
 
 Этот раздел содержит подробные справочные сведения о ключевых словах, операторах, специальных символах, директивах препроцессора, параметрах компилятора и ошибках и предупреждениях компилятора в среде C#.  
   
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
  [Ключевые слова в C#](./keywords/index.md)  
  Ссылки на сведения о ключевых словах и синтаксисе языка C#.  
@@ -27,7 +29,7 @@ ms.locfileid: "74428616"
  [Операторы в C#](./operators/index.md)  
  Ссылки на сведения об операторах и синтаксисе языка C#.  
 
- [Специальные символы C#](./tokens/index.md)  
+ [Специальные символы в C#](./tokens/index.md)  
  Предоставляет ссылки на сведения о специальных контекстные символов в C# и их использовании.  
 
  [Директивы препроцессора C#](./preprocessor-directives/index.md)  
