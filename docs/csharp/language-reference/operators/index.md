@@ -10,12 +10,12 @@ helpviewer_keywords:
 - operator associativity [C#]
 - expressions [C#]
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
-ms.openlocfilehash: 19b5683a7cd334e1203c57fa90d275b659eac873
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 9ada39a2144e5565a76a25df0f83424710ad939f
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87556557"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916816"
 ---
 # <a name="c-operators-and-expressions-c-reference"></a>Операторы и выражения C# (справочник по C#)
 
@@ -33,7 +33,7 @@ C# предоставляет ряд операторов. Многие из н�
 
 В следующем коде примеры выражений находятся в правой части назначений:
 
-[!code-csharp[expression examples](snippets/Overview.cs#Expressions)]
+[!code-csharp[expression examples](snippets/shared/Overview.cs#Expressions)]
 
 Как правило, выражение выдает результат и может быть заключено в другое выражение. Вызов метода [`void`](../builtin-types/void.md) является примером выражения, которое дает результат. Его можно использовать только в качестве [оператора](../../programming-guide/statements-expressions-operators/statements.md), как показано в следующем примере:
 
@@ -45,15 +45,15 @@ Console.WriteLine("Hello, world!");
 
 - [Выражения интерполированных строк](../tokens/interpolated.md), которые предоставляют удобный синтаксис для создания форматированных строк:
 
-  [!code-csharp-interactive[interpolated string](snippets/Overview.cs#InterpolatedString)]
+  [!code-csharp-interactive[interpolated string](snippets/shared/Overview.cs#InterpolatedString)]
 
 - [Лямбда-выражения](../../programming-guide/statements-expressions-operators/lambda-expressions.md), позволяющие создавать анонимные функции:
 
-  [!code-csharp-interactive[lambda expression](snippets/Overview.cs#Lambda)]
+  [!code-csharp-interactive[lambda expression](snippets/shared/Overview.cs#Lambda)]
 
 - [Выражения запроса](../keywords/query-keywords.md), позволяющие использовать возможности запросов непосредственно в C#:
 
-  [!code-csharp-interactive[query expression](snippets/Overview.cs#Query)]
+  [!code-csharp-interactive[query expression](snippets/shared/Overview.cs#Query)]
 
 [Определение тела выражения](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) можно использовать, чтобы предоставить краткое определение для метода, конструктора, свойства, индексатора или метода завершения.
 
