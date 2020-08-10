@@ -10,12 +10,12 @@ metadata:
   author: natke
   ms.author: nakersha
   ms.date: 10/30/2019
-  ms.openlocfilehash: 05d357af2088321524841bfc05f94f816f1bc306
-  ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+  ms.openlocfilehash: da93d48dc36123f8821be37c8c0546b84ab29712
+  ms.sourcegitcommit: 09bad6ec0cbf18be7cd7f62e77286d305a18b607
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/15/2020
-  ms.locfileid: "73423944"
+  ms.lasthandoff: 08/05/2020
+  ms.locfileid: "87795493"
 landingContent:
 - title: Основы ML.NET
   linkLists:
@@ -31,17 +31,17 @@ landingContent:
     links:
     - text: Задачи и алгоритмы машинного обучения
       url: resources/tasks.md
-    - text: Выбор алгоритма
+    - text: Как выбрать алгоритм
       url: how-to-choose-an-ml-net-algorithm.md
 - title: 10-минутное руководство по началу работы
   linkLists:
   - linkListType: quickstart
     links:
-    - text: Настройка построителя моделей в Visual Studio
-      url: how-to-guides/install-model-builder.md
-    - text: Начало работы с API-интерфейсом ML.NET
+    - text: Приступая к работе с API-интерфейсом ML.NET (code-first)
       url: https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro
-    - text: Установка CLI на Mac OS, Windows или Linux
+    - text: Настройка построителя моделей в Visual Studio (минимальное написание кода)
+      url: how-to-guides/install-model-builder.md
+    - text: Установка CLI в macOS, Windows или Linux (минимальное написание кода)
       url: how-to-guides/install-ml-net-cli.md
 - title: Учебники
   linkLists:
