@@ -1,21 +1,21 @@
-- name: 'Документация по F#'
+- name: Документация по F#
   href: index.yml
 - name: "Что такое\_F#"
   href: what-is-fsharp.md
 - name: Начало работы
   href: get-started/index.md
   items:
-    - name: 'Установка F#'
+    - name: Установка F#
       href: get-started/install-fsharp.md
-    - name: 'F# в Visual Studio'
+    - name: F# в Visual Studio
       href: get-started/get-started-visual-studio.md
-    - name: 'F# в Visual Studio Code'
+    - name: F# в Visual Studio Code
       href: get-started/get-started-vscode.md
-    - name: 'F# с .NET Core CLI'
+    - name: F# с .NET Core CLI
       href: get-started/get-started-command-line.md
-    - name: 'F# в Visual Studio для Mac'
+    - name: F# в Visual Studio для Mac
       href: get-started/get-started-with-visual-studio-for-mac.md
-- name: 'Обзор языка F#'
+- name: Обзор языка F#
   href: tour.md
 - name: Учебники
   items:
@@ -37,9 +37,9 @@
           href: tutorials/type-providers/type-provider-security.md
         - name: Устранение неполадок поставщиков типов
           href: tutorials/type-providers/troubleshooting-type-providers.md
-    - name: 'F# Interactive'
+    - name: F# Interactive
       href: tutorials/fsharp-interactive/index.md
-- name: 'Новые возможности F#'
+- name: Новые возможности F#
   items:
     - name: "F#\_4.7"
       href: whats-new/fsharp-47.md
@@ -47,7 +47,7 @@
       href: whats-new/fsharp-46.md
     - name: "F#\_4.5"
       href: whats-new/fsharp-45.md
-- name: 'Справочник по языку F#'
+- name: Справочник по языку F#
   href: language-reference/index.md
   items:
     - name: Справочные сведения о ключевых словах
@@ -87,7 +87,7 @@
           href: language-reference/values/null-values.md
     - name: Литералы
       href: language-reference/literals.md
-    - name: 'Типы языка F#'
+    - name: Типы языка F#
       href: language-reference/fsharp-types.md
     - name: Вывод типа
       href: language-reference/type-inference.md
@@ -99,7 +99,7 @@
       href: language-reference/strings.md
     - name: Кортежи
       href: language-reference/tuples.md
-    - name: 'Типы коллекций F#'
+    - name: Типы коллекций F#
       href: language-reference/fsharp-collection-types.md
     - name: Списки
       href: language-reference/lists.md
@@ -226,6 +226,8 @@
       href: language-reference/signature-files.md
     - name: Единицы измерения
       href: language-reference/units-of-measure.md
+    - name: Форматирование обычного текста
+      href: language-reference/plaintext-formatting.md
     - name: Документация XML
       href: language-reference/xml-documentation.md
     - name: Отложенные выражения
@@ -248,7 +250,7 @@
       href: language-reference/compiler-directives.md
     - name: Параметры компилятора
       href: language-reference/compiler-options.md
-    - name: 'Параметры F# Interactive'
+    - name: Параметры F# Interactive
       href: language-reference/fsharp-interactive-options.md
     - name: 'Идентификаторы Source Line, File и Path'
       href: language-reference/source-line-file-path-identifiers.md
@@ -258,14 +260,14 @@
       href: language-reference/verbose-syntax.md
     - name: 'Ошибки и предупреждения, касающиеся компилятора'
       href: language-reference/compiler-messages/index.md
-- name: 'Руководство по стилю для F#'
+- name: Руководство по стилю для F#
   href: style-guide/index.md
   items:
-    - name: 'Рекомендации по форматированию кода F#'
+    - name: Рекомендации по форматированию кода F#
       href: style-guide/formatting.md
-    - name: 'Соглашения о написании кода на F#'
+    - name: Соглашения о написании кода на F#
       href: style-guide/conventions.md
-    - name: 'Рекомендации по проектированию компонентов F#'
+    - name: Рекомендации по проектированию компонентов F#
       href: style-guide/component-design-guidelines.md
 - name: "Использование языка\_F# в Azure"
   href: using-fsharp-on-azure/index.md
@@ -278,5 +280,5 @@
       href: using-fsharp-on-azure/queue-storage.md
     - name: "Начало работы с хранилищем таблиц Azure с помощью языка\_F#"
       href: using-fsharp-on-azure/table-storage.md
-    - name: 'Управление пакетами для зависимостей F# в Azure'
+    - name: Управление пакетами для зависимостей F# в Azure
       href: using-fsharp-on-azure/package-management.md
