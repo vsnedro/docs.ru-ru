@@ -1,13 +1,13 @@
 ---
 title: Управление рабочими средами Docker
 description: Сведения о ключевых аспектах управления рабочей средой на базе контейнеров.
-ms.date: 02/15/2019
-ms.openlocfilehash: 26e7a3319afe593d75e2384d023c901a389245dc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 08/06/2020
+ms.openlocfilehash: 11880a523d6ff79c9646fd1e174f380779d00dcc
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "71834507"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87914936"
 ---
 # <a name="manage-production-docker-environments"></a>Управление рабочими средами Docker
 

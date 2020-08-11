@@ -19,12 +19,12 @@ helpviewer_keywords:
 - <= operator [C#]
 - greater than or equal to operator [C#]
 - '>= operator [C#]'
-ms.openlocfilehash: eda039d950e4be13d9c041c8bb95b6ea773b83f6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 9fa739d8b5461d4043f3ae51f5d14949a95c68e5
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83207230"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916886"
 ---
 # <a name="comparison-operators-c-reference"></a>Операторы сравнения (справочник по C#)
 
@@ -43,25 +43,25 @@ ms.locfileid: "83207230"
 
 Оператор `<` возвращает `true`, если его левый операнд меньше правого. В противном случае возвращается `false`:
 
-[!code-csharp-interactive[less than example](snippets/ComparisonOperators.cs#Less)]
+[!code-csharp-interactive[less than example](snippets/shared/ComparisonOperators.cs#Less)]
 
 ## <a name="greater-than-operator-"></a>Оператор "больше чем" >
 
 Оператор `>` возвращает `true`, если его левый операнд больше правого. В противном случае возвращается `false`:
 
-[!code-csharp-interactive[greater than example](snippets/ComparisonOperators.cs#Greater)]
+[!code-csharp-interactive[greater than example](snippets/shared/ComparisonOperators.cs#Greater)]
 
 ## <a name="less-than-or-equal-operator-"></a>Оператор "меньше или равно" \<=
 
 Оператор `<=` возвращает `true`, если его левый операнд меньше правого или равен ему. В противном случае возвращается `false`:
 
-[!code-csharp-interactive[less than or equal example](snippets/ComparisonOperators.cs#LessOrEqual)]
+[!code-csharp-interactive[less than or equal example](snippets/shared/ComparisonOperators.cs#LessOrEqual)]
 
 ## <a name="greater-than-or-equal-operator-"></a>Оператор "больше или равно" >=
 
 Оператор `>=` возвращает `true`, если его левый операнд больше правого или равен ему. В противном случае возвращается `false`:
 
-[!code-csharp-interactive[greater than or equal example](snippets/ComparisonOperators.cs#GreaterOrEqual)]
+[!code-csharp-interactive[greater than or equal example](snippets/shared/ComparisonOperators.cs#GreaterOrEqual)]
 
 ## <a name="operator-overloadability"></a>Возможность перегрузки оператора
 
@@ -76,6 +76,6 @@ ms.locfileid: "83207230"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - <xref:System.IComparable%601?displayProperty=nameWithType>
 - [Операторы равенства](equality-operators.md)

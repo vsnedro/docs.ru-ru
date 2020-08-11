@@ -6,12 +6,12 @@ helpviewer_keywords:
 - statements [C#], about statements
 - C# language, statements
 ms.assetid: 901bcde7-87de-4e15-833c-f9cfd40c8ce3
-ms.openlocfilehash: b941e46f959167f78f1366a3863aca4240810013
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 3f8ac88525c44f9572f4f647145ad251537aba57
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381766"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87556752"
 ---
 # <a name="statements-c-programming-guide"></a>Инструкции (Руководство по программированию на C#)
 
@@ -28,7 +28,7 @@ ms.locfileid: "87381766"
 |Категория|Ключевые слова / примечания C#|
 |--------------|---------------------------|
 |[Инструкции объявления](#declaration-statements)|Инструкция объявления представляет новую переменную или константу. Объявление переменной может при необходимости присвоить значение переменной. В объявлении константы необходимо назначение.|
-|[Инструкции выражений](expressions.md)|Инструкции выражений, вычисляющие значение, должны сохранить его в переменной. Дополнительные сведения см. в разделе [Инструкции выражений](#expression-statements).|
+|[Инструкции выражений](#expression-statements)|Инструкции выражений, вычисляющие значение, должны сохранить его в переменной.|
 |Операторы выбора|Инструкции выбора позволяют ветвление на разные разделы кода, в зависимости от одного или нескольких заданных условий. Дополнительные сведения см. в следующих разделах: <ul><li>[if](../../language-reference/keywords/if-else.md)</li><li>[else](../../language-reference/keywords/if-else.md)</li><li>[switch](../../language-reference/keywords/switch.md)</li><li>[case](../../language-reference/keywords/switch.md)</li></ul>|
 |Операторы итерации|Инструкции итерации позволяют просмотр коллекций как массивов или многократное выполнение того же набора инструкций до выполнения заданного условия. Дополнительные сведения см. в следующих разделах: <ul><li>[do](../../language-reference/keywords/do.md)</li><li>[for](../../language-reference/keywords/for.md)</li><li>[foreach](../../language-reference/keywords/foreach-in.md)</li><li>[in](../../language-reference/keywords/foreach-in.md)</li><li>[while](../../language-reference/keywords/while.md)</li></ul>|
 |Операторы перехода|Инструкции перехода передают управление другому разделу кода. Дополнительные сведения см. в следующих разделах: <ul><li>[break](../../language-reference/keywords/break.md)</li><li>[continue](../../language-reference/keywords/continue.md)</li><li>[default](../../language-reference/keywords/switch.md)</li><li>[goto](../../language-reference/keywords/goto.md)</li><li>[return](../../language-reference/keywords/return.md)</li><li>[yield](../../language-reference/keywords/yield.md)</li></ul>|
@@ -92,5 +92,5 @@ ms.locfileid: "87381766"
 ## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на C#](../index.md)
-- [Ключевые слова операторов](../../language-reference/keywords/statement-keywords.md)  
-- [Выражения](expressions.md)  
+- [Ключевые слова операторов](../../language-reference/keywords/statement-keywords.md)
+- [Операторы и выражения C#](../../language-reference/operators/index.md)

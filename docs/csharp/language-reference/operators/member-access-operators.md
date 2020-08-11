@@ -32,12 +32,12 @@ helpviewer_keywords:
 - hat operator [C#]
 - .. operator [C#]
 - range operator [C#]
-ms.openlocfilehash: 59e01b17d78032714803629d503a92ba86a20fdc
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 688a1fcff84a6e8f2fa31533a2bc459bf8c8717a
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83394643"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916795"
 ---
 # <a name="member-access-operators-and-expressions-c-reference"></a>Операторы и выражения для доступа к элементам (справочник по C#)
 
@@ -56,17 +56,17 @@ ms.locfileid: "83394643"
 
 - Используйте `.` для обращения к пространству имен, вложенному в другое пространство имен, как показано в следующем примере [директивы `using`](../keywords/using-directive.md).
 
-  [!code-csharp[nested namespaces](snippets/MemberAccessOperators.cs#NestedNamespace)]
+  [!code-csharp[nested namespaces](snippets/shared/MemberAccessOperators.cs#NestedNamespace)]
 
 - Используйте `.` для создания *полного имени* для обращения к типу в пределах пространства имен, как показано в следующем коде:
 
-  [!code-csharp[qualified name](snippets/MemberAccessOperators.cs#QualifiedName)]
+  [!code-csharp[qualified name](snippets/shared/MemberAccessOperators.cs#QualifiedName)]
 
   Используйте [директиву `using`](../keywords/using-directive.md), чтобы сделать использование полных имен необязательным.
 
 - Используйте `.` для обращения к [членам типов](../../programming-guide/classes-and-structs/index.md#members) (статическим и нестатическим), как показано в следующем коде:
 
-  [!code-csharp-interactive[type members](snippets/MemberAccessOperators.cs#TypeMemberAccess)]
+  [!code-csharp-interactive[type members](snippets/shared/MemberAccessOperators.cs#TypeMemberAccess)]
 
 Можно также использовать `.` для вызова [метода расширения](../../programming-guide/classes-and-structs/extension-methods.md).
 
@@ -78,7 +78,7 @@ ms.locfileid: "83394643"
 
 В приведенном ниже примере показано, как получить доступ к элементам массива.
 
-[!code-csharp-interactive[array access](snippets/MemberAccessOperators.cs#Arrays)]
+[!code-csharp-interactive[array access](snippets/shared/MemberAccessOperators.cs#Arrays)]
 
 Если индекс массива выходит за границы соответствующего измерения массива, возникает исключение <xref:System.IndexOutOfRangeException>.
 
@@ -90,7 +90,7 @@ ms.locfileid: "83394643"
 
 В приведенном ниже примере используется тип .NET <xref:System.Collections.Generic.Dictionary%602> для получения доступа к индексатору:
 
-[!code-csharp-interactive[indexer access](snippets/MemberAccessOperators.cs#Indexers)]
+[!code-csharp-interactive[indexer access](snippets/shared/MemberAccessOperators.cs#Indexers)]
 
 Индексаторы позволяют индексировать экземпляры определяемого пользователем типа аналогично индексации массива. В отличие от индексов массива, которые должны быть целым числом, параметры индексатора могут быть объявлены любым типом.
 
@@ -126,13 +126,13 @@ A?.B?[C];
 
 В следующем примере иллюстрируется использование операторов `?.` и `?[]`.
 
-[!code-csharp-interactive[null-conditional operators](snippets/MemberAccessOperators.cs#NullConditional)]
+[!code-csharp-interactive[null-conditional operators](snippets/shared/MemberAccessOperators.cs#NullConditional)]
 
 В предыдущем примере также используется [оператор объединения со значением NULL `??`](null-coalescing-operator.md), чтобы указать альтернативное выражение для вычисления в случае, если результат выполнения условной операции NULL — это `null`.
 
 Если `a.x` или `a[x]` является типом `T`, не допускающим значение NULL, `a?.x` или `a?[x]` является соответствующим [типом `T?`, допускающим значение NULL](../builtin-types/nullable-value-types.md). Если требуется выражение типа `T`, примените оператор объединения со значением NULL `??` к условному выражению NULL, как показано в следующем примере:
 
-[!code-csharp-interactive[null-conditional with null-coalescing](snippets/MemberAccessOperators.cs#NullConditionalWithNullCoalescing)]
+[!code-csharp-interactive[null-conditional with null-coalescing](snippets/shared/MemberAccessOperators.cs#NullConditionalWithNullCoalescing)]
 
 Если в предыдущем примере оператор `??` не используется, `numbers?.Length < 2` вычисляется как `false`, если `numbers` имеет значение `null`.
 
@@ -167,7 +167,7 @@ if (handler != null)
 
 Приведенный ниже пример демонстрирует вызов делегата и метода с аргументами или без них.
 
-[!code-csharp-interactive[invocation with ()](snippets/MemberAccessOperators.cs#Invocation)]
+[!code-csharp-interactive[invocation with ()](snippets/shared/MemberAccessOperators.cs#Invocation)]
 
 Круглые скобки также можно использовать при вызове [конструктора](../../programming-guide/classes-and-structs/constructors.md) с оператором [`new`](new-operator.md).
 
@@ -181,7 +181,7 @@ if (handler != null)
 
 Оператор `^`, доступный в C# 8.0 и последующих версиях, определяет расположение элемента от конца последовательности. Для последовательности длины `length``^n` указывает на элемент с `length - n` смещения от начала последовательности. Например, `^1` указывает на последний элемент последовательности, а `^length` — на первый элемент последовательности.
 
-[!code-csharp[index from end](snippets/MemberAccessOperators.cs#IndexFromEnd)]
+[!code-csharp[index from end](snippets/shared/MemberAccessOperators.cs#IndexFromEnd)]
 
 В предыдущем примере выражение `^e` имеет тип <xref:System.Index?displayProperty=nameWithType>. В выражении `^e` результат `e` должен быть неявно преобразован в `int`.
 
@@ -191,7 +191,7 @@ if (handler != null)
 
 Оператор диапазона `..`, доступный в C# 8.0 и последующих версиях, определяет начало и конец диапазона индексов в качестве своих операндов. Левый операнд является *инклюзивным* началом диапазона. Правый операнд является *эксклюзивным* концом диапазона. Любой из операндов может быть индексом от начала или конца последовательности, как показано в следующем примере:
 
-[!code-csharp[range examples](snippets/MemberAccessOperators.cs#Ranges)]
+[!code-csharp[range examples](snippets/shared/MemberAccessOperators.cs#Ranges)]
 
 В предыдущем примере выражение `a..b` имеет тип <xref:System.Range?displayProperty=nameWithType>. В выражении `a..b` результаты `a` и `b` должны быть неявно преобразованы в `int` или <xref:System.Index>.
 
@@ -201,7 +201,7 @@ if (handler != null)
 - `..b` — это эквивалент `0..b`
 - `..` — это эквивалент `0..^0`
 
-[!code-csharp[ranges with omitted operands](snippets/MemberAccessOperators.cs#RangesOptional)]
+[!code-csharp[ranges with omitted operands](snippets/shared/MemberAccessOperators.cs#RangesOptional)]
 
 См. сведения в [руководстве по диапазонам и индексам](../../tutorials/ranges-indexes.md).
 
@@ -223,6 +223,6 @@ if (handler != null)
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Оператор ?? (оператор объединения со значением NULL)](null-coalescing-operator.md)
 - [Оператор ::](namespace-alias-qualifier.md)

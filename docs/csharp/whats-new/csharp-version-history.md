@@ -3,12 +3,12 @@ title: История языка C# (руководство по C#)
 description: На что был похож этот язык в ранних версиях и во что он превратился сейчас?
 author: erikdietrich
 ms.date: 04/08/2020
-ms.openlocfilehash: ed9555bcef1c71964937c2bc18fedbc7da94f0db
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: 96d6e07d5553d65e95144a0cede7cab86b4c5ef7
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738156"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87556857"
 ---
 # <a name="the-history-of-c"></a>История языка C\#
 
@@ -42,7 +42,7 @@ ms.locfileid: "81738156"
 - [События](../events-overview.md)
 - [Свойства](../properties.md)
 - [Делегаты](../delegates-overview.md)
-- [Выражения](../programming-guide/statements-expressions-operators/expressions.md)
+- [Операторы и выражения](../language-reference/operators/index.md)
 - [Операторы](../programming-guide/statements-expressions-operators/statements.md)
 - [Атрибуты](../programming-guide/concepts/attributes/index.md)
 

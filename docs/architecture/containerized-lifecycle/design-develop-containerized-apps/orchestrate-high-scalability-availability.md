@@ -1,13 +1,13 @@
 ---
 title: Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности
 description: Реальные рабочие приложения должны развертываться с оркестраторами, которые управляют работоспособностью, рабочими нагрузками и жизненным циклом всех контейнеров.
-ms.date: 02/15/2019
-ms.openlocfilehash: 459a445258a8d66834814f7b084fd969d005ff45
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.date: 08/06/2020
+ms.openlocfilehash: 61c66e1f3835df543cbc9ba23d9c098ad52c90cd
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374485"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87915477"
 ---
 # <a name="orchestrating-microservices-and-multi-container-applications-for-high-scalability-and-availability"></a>Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности
 
@@ -62,7 +62,7 @@ Docker CLI позволяет управлять одним контейнеро
 
 ## <a name="development-environment-for-kubernetes"></a>Среда разработки для Kubernetes
 
-Что касается среды разработки, [которую компания Docker анонсировала в июле 2018 г.](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/), Kubernetes также можно запускать на одном компьютере разработки (Windows 10 или macOS), просто установив [Docker Desktop](https://www.docker.com/community-edition). Позднее можно развернуть ее в облаке (AKS) для дальнейшего тестирования интеграции, как показано на рис. 4-8.
+Что касается среды разработки, [которую компания Docker анонсировала в июле 2018 г.](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/), Kubernetes также можно запускать на одном компьютере разработки (Windows 10 или macOS), просто установив [Docker Desktop](https://www.docker.com/products/docker-desktop). Позднее можно развернуть ее в облаке (AKS) для дальнейшего тестирования интеграции, как показано на рис. 4-8.
 
 ![Схема, показывающая Kubernetes на компьютере разработчика и развернутым в AKS.](./media/orchestrate-high-scalability-availability/kubernetes-development-environment.png)
 

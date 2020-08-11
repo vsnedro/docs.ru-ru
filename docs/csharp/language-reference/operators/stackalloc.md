@@ -5,12 +5,12 @@ f1_keywords:
 - stackalloc_CSharpKeyword
 helpviewer_keywords:
 - stackalloc expression [C#]
-ms.openlocfilehash: 2e99ce8b1e44dfa040c1acac799a3a55b375bd91
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.openlocfilehash: 4f20f3262b77cc2fe16480e53d13960e68d230b5
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79546605"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916669"
 ---
 # <a name="stackalloc-expression-c-reference"></a>выражение stackalloc (справочник по C#)
 
@@ -20,24 +20,24 @@ ms.locfileid: "79546605"
 
 - Начиная с версии C# 7.2, <xref:System.Span%601?displayProperty=nameWithType> или <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, как показано в следующем примере:
 
-  [!code-csharp[stackalloc span](snippets/StackallocOperator.cs#AssignToSpan)]
+  [!code-csharp[stackalloc span](snippets/shared/StackallocOperator.cs#AssignToSpan)]
 
   Нет необходимости использовать [небезопасный](../keywords/unsafe.md) контекст при назначении выделенного в стеке блока памяти переменной <xref:System.Span%601> или <xref:System.ReadOnlySpan%601>.
 
   При работе с такими типами вы можете использовать выражение `stackalloc` в [условном](conditional-operator.md) выражении или выражении присваивания, как показано в следующем примере:
 
-  [!code-csharp[stackalloc expression](snippets/StackallocOperator.cs#AsExpression)]
+  [!code-csharp[stackalloc expression](snippets/shared/StackallocOperator.cs#AsExpression)]
 
   Начиная с версии C# 8.0, можно использовать выражение `stackalloc` внутри других выражений, если разрешена переменная <xref:System.Span%601> или <xref:System.ReadOnlySpan%601>, как показано в следующем примере:
 
-  [!code-csharp[stackalloc in nested expressions](snippets/StackallocOperator.cs#Nested)]
+  [!code-csharp[stackalloc in nested expressions](snippets/shared/StackallocOperator.cs#Nested)]
 
   > [!NOTE]
   > Мы рекомендуем везде, где это возможно, использовать для работы с выделенной в стеке памятью типы <xref:System.Span%601> или <xref:System.ReadOnlySpan%601>.
 
 - [Тип указателя](../../programming-guide/unsafe-code-pointers/pointer-types.md), как показано в следующем примере.
 
-  [!code-csharp[stackalloc pointer](snippets/StackallocOperator.cs#AssignToPointer)]
+  [!code-csharp[stackalloc pointer](snippets/shared/StackallocOperator.cs#AssignToPointer)]
 
   Как демонстрирует пример выше, при работе с типами указателей необходимо использовать контекст `unsafe`.
 
@@ -47,7 +47,7 @@ ms.locfileid: "79546605"
 
 - Ограничьте объем памяти, выделенный `stackalloc`:
 
-  [!code-csharp[limit stackalloc](snippets/StackallocOperator.cs#LimitStackalloc)]
+  [!code-csharp[limit stackalloc](snippets/shared/StackallocOperator.cs#LimitStackalloc)]
 
   Поскольку объем доступной памяти на стеке зависит от среды, в которой выполняется код, при определении фактического предельного значения следует использовать консервативное значение.
 
@@ -57,7 +57,7 @@ ms.locfileid: "79546605"
 
 Начиная с версии C# 7.3, вы можете использовать синтаксис инициализатора массива, чтобы определить содержимое для только что выделенной памяти. В следующем примере показано несколько способов сделать это:
 
-[!code-csharp[stackalloc initialization](snippets/StackallocOperator.cs#StackallocInit)]
+[!code-csharp[stackalloc initialization](snippets/shared/StackallocOperator.cs#StackallocInit)]
 
 В выражении `stackalloc T[E]` `T` должен иметь [неуправляемый тип](../builtin-types/unmanaged-types.md), а `E` — неотрицательное значение [int](../builtin-types/integral-numeric-types.md).
 
@@ -72,7 +72,7 @@ ms.locfileid: "79546605"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Операторы, связанные с указателем](pointer-related-operators.md)
 - [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Типы, связанные с памятью и диапазонами](../../../standard/memory-and-spans/index.md)

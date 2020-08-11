@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - null-forgiving operator [C#]
 - '! operator [C#]'
-ms.openlocfilehash: 2a8db2882968dbcbe6a8868ab6fe1c128c94a41f
-ms.sourcegitcommit: e09dbff13f0b21b569a101f3b3c5efa174aec204
+ms.openlocfilehash: 5d8dcba5eb794d4d64f58e23a3ad952ef8055aeb
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82624882"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916749"
 ---
 # <a name="-null-forgiving-operator-c-reference"></a>!  — оператор (допускающий значение NULL) (справочник по C#)
 
@@ -28,23 +28,23 @@ ms.locfileid: "82624882"
 
 Один из вариантов использования оператора, допускающего значение NULL, — тестирование логики проверки аргументов. Например, рассмотрим следующий класс.
 
-[!code-csharp[Person class](snippets/NullForgivingOperator.cs#PersonClass)]
+[!code-csharp[Person class](snippets/shared/NullForgivingOperator.cs#PersonClass)]
 
 С помощью [платформы тестирования MSTest](../../../core/testing/unit-testing-with-mstest.md) можно создать следующий тест для логики проверки в конструкторе:
 
-[!code-csharp[Person test](snippets/NullForgivingOperator.cs#TestPerson)]
+[!code-csharp[Person test](snippets/shared/NullForgivingOperator.cs#TestPerson)]
 
 Без оператора, допускающего значение NULL, компилятор создает следующее предупреждение для предыдущего кода: `Warning CS8625: Cannot convert null literal to non-nullable reference type`. Используя оператор, допускающий значение NULL, вы сообщаете компилятору, что передача `null` ожидается и что о ней не нужно предупреждать.
 
 Можно также использовать оператор, допускающий значение NULL, если вы точно знаете, что выражение не может быть `null`, но компилятор не распознает это. В следующем примере, если метод `IsValid` возвращает `true`, его аргумент не является `null`, и вы можете безопасно отменить его ссылку:
 
-[!code-csharp[Use null-forgiving operator](snippets/NullForgivingOperator.cs#UseNullForgiving)]
+[!code-csharp[Use null-forgiving operator](snippets/shared/NullForgivingOperator.cs#UseNullForgiving)]
 
 Без оператора, допускающего значение NULL, компилятор создает следующее предупреждение для кода `p.Name`: `Warning CS8602: Dereference of a possibly null reference`.
 
 Если вы можете изменить метод `IsValid`, можно использовать атрибут [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute), чтобы сообщить компилятору, что аргумент метода `IsValid` не может быть `null`, когда метод возвращает `true`:
 
-[!code-csharp[Use an attribute](snippets/NullForgivingOperator.cs#UseAttribute)]
+[!code-csharp[Use an attribute](snippets/shared/NullForgivingOperator.cs#UseAttribute)]
 
 В предыдущем примере не нужно использовать оператор, допускающий значение NULL, поскольку компилятор содержит достаточно информации, чтобы определить, что `p` не может быть `null` внутри `if`. См. сведения об атрибутах, позволяющих указать дополнительную информацию о состоянии NULL для переменной, в руководстве по [включению в API атрибутов для определения ожидаемых значений NULL](../attributes/nullable-analysis.md).
 
@@ -55,5 +55,5 @@ ms.locfileid: "82624882"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Учебник. Разработка с использованием ссылочных типов, допускающих значение NULL](../../tutorials/nullable-reference-types.md)

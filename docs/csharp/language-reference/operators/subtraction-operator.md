@@ -12,12 +12,12 @@ helpviewer_keywords:
 - event unsubscription [C#]
 - -= operator [C#]
 ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
-ms.openlocfilehash: 2017aade92e8d7ad2af7101a107122fa8d7b9e27
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a00957c8d36a96b5ee23b9e5a309b6139b33fd36
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78847655"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916686"
 ---
 # <a name="--and---operators-c-reference"></a>Операторы - и -= (справочник по C#)
 
@@ -31,17 +31,17 @@ ms.locfileid: "78847655"
 
 - Если оба операнда не равны NULL и список вызовов правого операнда является соответствующим подчиненным списком списка вызовов левого операнда, результатом операции является новый список вызовов, который получается путем удаления записей правого операнда из списка вызовов левого операнда. Если список правого операнда соответствует нескольким смежным подчиненным спискам в списке левого операнда, удаляется только крайний правый совпадающий подсписок. Если удаление приводит к пустому списку, возвращается `null`.
 
-  [!code-csharp-interactive[delegate removal](snippets/SubtractionOperator.cs#DelegateRemoval)]
+  [!code-csharp-interactive[delegate removal](snippets/shared/SubtractionOperator.cs#DelegateRemoval)]
 
 - Если список вызовов правого операнда не является соответствующим смежным подчиненным списком списка вызовов левого операнда, результатом операции является левый операнд. Так, удаление делегата, который не является частью многоадресного делегата, ни к чему не приводит и многоадресный делегат никак не меняется.
 
-  [!code-csharp-interactive[delegate removal with no effect](snippets/SubtractionOperator.cs#DelegateRemovalNoChange)]
+  [!code-csharp-interactive[delegate removal with no effect](snippets/shared/SubtractionOperator.cs#DelegateRemovalNoChange)]
 
   В предыдущем примере также показано, что во время удаления делегата сравниваются его экземпляры. Например, делегаты, созданные в результате оценки идентичных [лямбда-выражений](../../programming-guide/statements-expressions-operators/lambda-expressions.md) не будут равны. Дополнительные сведения о равенстве делегатов см. в разделе об [операторах равенства делегатов](~/_csharplang/spec/expressions.md#delegate-equality-operators) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
 - Если левый операнд имеет значение `null`, результатом операции является `null`. Если правый операнд имеет значение `null`, результатом операции является левый операнд.
 
-  [!code-csharp-interactive[delegate removal and null](snippets/SubtractionOperator.cs#DelegateRemovalAndNull)]
+  [!code-csharp-interactive[delegate removal and null](snippets/shared/SubtractionOperator.cs#DelegateRemovalAndNull)]
 
 Объединить делегаты можно с помощью [оператора `+`](addition-operator.md#delegate-combination).
 
@@ -65,7 +65,7 @@ x = x - y
 
 В следующем примере иллюстрируется использование оператора `-=`.
 
-[!code-csharp-interactive[-= examples](snippets/SubtractionOperator.cs#SubtractAndAssign)]
+[!code-csharp-interactive[-= examples](snippets/shared/SubtractionOperator.cs#SubtractAndAssign)]
 
 Можно также использовать оператор `-=`, который позволяет указать метод обработчика событий для удаления при отмене подписки на [событие](../keywords/event.md). Дополнительные сведения см. в разделе [Практическое руководство. Подписка и отмена подписки на события](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -80,7 +80,7 @@ x = x - y
 ## <a name="see-also"></a>См. также раздел
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [События](../../programming-guide/events/index.md)
 - [Арифметические операторы](arithmetic-operators.md)
 - [Операторы + и +=](addition-operator.md)

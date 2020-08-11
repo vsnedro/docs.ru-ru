@@ -7,30 +7,30 @@ f1_keywords:
 helpviewer_keywords:
 - nameof expression [C#]
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
-ms.openlocfilehash: d71acf0cf7d5cdcfa5310455af2120fa1f82d567
-ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+ms.openlocfilehash: b00c5f6f97d27290fb3773dcbb422bf9fb4c425b
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82135923"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916776"
 ---
 # <a name="nameof-expression-c-reference"></a>Выражение nameof (справочник по C#)
 
 Выражение `nameof` создает имя, тип или элемент переменной в качестве строковой константы:
 
-[!code-csharp-interactive[nameof expression](snippets/NameOfOperator.cs#Examples)]
+[!code-csharp-interactive[nameof expression](snippets/shared/NameOfOperator.cs#Examples)]
 
 Как показано в предыдущем примере, при использовании типа и пространства имен созданное имя обычно не является [полным](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
 
 Если используются [буквальные идентификаторы](../tokens/verbatim.md), символ `@` не является частью имени, как показано в следующем примере.
 
-[!code-csharp-interactive[nameof verbatim](snippets/NameOfOperator.cs#Verbatim)]
+[!code-csharp-interactive[nameof verbatim](snippets/shared/NameOfOperator.cs#Verbatim)]
 
 Значение выражения `nameof` вычисляется во время компиляции, и это не влияет на время выполнения.
 
 С помощью выражения `nameof` можно сделать код проверки аргументов более удобным:
 
-[!code-csharp[nameof and argument check](snippets/NameOfOperator.cs#ExceptionMessage)]
+[!code-csharp[nameof and argument check](snippets/shared/NameOfOperator.cs#ExceptionMessage)]
 
 Выражение `nameof` доступно в C# версии 6 и выше.
 
@@ -41,4 +41,4 @@ ms.locfileid: "82135923"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)

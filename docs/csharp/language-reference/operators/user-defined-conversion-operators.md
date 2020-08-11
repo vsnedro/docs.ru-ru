@@ -5,17 +5,19 @@ ms.date: 07/09/2019
 f1_keywords:
 - explicit_CSharpKeyword
 - implicit_CSharpKeyword
+- explicit
+- implicit
 helpviewer_keywords:
 - explicit keyword [C#]
 - implicit keyword [C#]
 - conversion operator [C#]
 - user-defined conversion [C#]
-ms.openlocfilehash: b59fc27be31f1a38e2a6c3cabd82598933b5ed53
-ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
+ms.openlocfilehash: a0eb11d55ad9e9cccde1704ba4c5ae8acb609989
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "81121401"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916640"
 ---
 # <a name="user-defined-conversion-operators-c-reference"></a>Операторы пользовательского преобразования (справочник по C#)
 
@@ -25,11 +27,11 @@ ms.locfileid: "81121401"
 
 Пользовательские преобразования не рассматриваются операторами [is](type-testing-and-cast.md#is-operator) и [as](type-testing-and-cast.md#as-operator). Используйте [выражение приведения](type-testing-and-cast.md#cast-expression) для вызова явного пользовательского преобразования.
 
-Используйте ключевые слова `operator` и `implicit` или `explicit` для определения неявного или явного преобразования соответственно. Тип, который определяет преобразование, должен быть типом источника или целевого объекта этого преобразования. Преобразование между двумя пользовательскими типами можно определить одним из двух типов.
+Используйте ключевые слова `operator` и `implicit` или `explicit` для определения явного или неявного преобразования соответственно. Тип, который определяет преобразование, должен быть типом источника или целевого объекта этого преобразования. Преобразование между двумя пользовательскими типами можно определить одним из двух типов.
 
 Следующий пример иллюстрирует, как определить неявное и явное преобразования:
 
-[!code-csharp[implicit an explicit conversions](snippets/UserDefinedConversions.cs)]
+[!code-csharp[implicit an explicit conversions](snippets/shared/UserDefinedConversions.cs)]
 
 Можно также использовать ключевое слово `operator` для перегрузки предопределенного оператора C#. Для получения дополнительной информации см. раздел [Перегрузка операторов](operator-overloading.md).
 
@@ -45,7 +47,7 @@ ms.locfileid: "81121401"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Перегрузка операторов](operator-overloading.md)
 - [Операторы приведения и тестирования типов](type-testing-and-cast.md)
 - [Приведение и преобразование типов](../../programming-guide/types/casting-and-type-conversions.md)

@@ -1,13 +1,13 @@
 ---
 title: Действия в рабочем процессе внешнего цикла DevOps для приложения Docker
 description: Сведения об этапах, относящихся к "внешнему циклу" рабочего процесса DevOps
-ms.date: 02/15/2019
-ms.openlocfilehash: 44bd73bf88a743e5350e422d3ea000ca075f7383
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.date: 08/06/2020
+ms.openlocfilehash: 5515c204b09cecba323540572c6769c65c6c93ab
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "82021300"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87915271"
 ---
 # <a name="steps-in-the-outer-loop-devops-workflow-for-a-docker-application"></a>Действия в рабочем процессе внешнего цикла DevOps для приложения Docker
 

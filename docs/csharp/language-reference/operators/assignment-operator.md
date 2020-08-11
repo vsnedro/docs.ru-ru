@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - = operator [C#]
 ms.assetid: d802a6d5-32f0-42b8-b180-12f5a081bfc1
-ms.openlocfilehash: 420b41f586a6980d40cf1171eef00dad37bf5abf
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7b4f3b3f4d6b697903461f08435552f2df36bfe4
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398061"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916931"
 ---
 # <a name="assignment-operators-c-reference"></a>Справочник по C#. Операторы присваивания
 
@@ -31,13 +31,13 @@ a = (b = c)
 
 В следующем примере показано использование оператора присваивания с локальной переменной, свойством и элементом индексатора в качестве левого операнда:
 
-[!code-csharp-interactive[simple assignment](snippets/AssignmentOperator.cs#Simple)]
+[!code-csharp-interactive[simple assignment](snippets/shared/AssignmentOperator.cs#Simple)]
 
 ## <a name="ref-assignment-operator"></a>Ссылочный оператор присваивания
 
 Начиная с C# 7.3, вы можете использовать ссылочный оператор присваивания `= ref`, чтобы переназначить [ссылочную локальную переменную](../keywords/ref.md#ref-locals) или [ссылочную локальную переменную только для чтения](../keywords/ref.md#ref-readonly-locals). В следующем примере иллюстрируется использование ссылочного оператора присваивания:
 
-[!code-csharp[ref assignment operator](snippets/AssignmentOperator.cs#RefAssignment)]
+[!code-csharp[ref assignment operator](snippets/shared/AssignmentOperator.cs#RefAssignment)]
 
 При использовании ссылочного оператора присваивания тип левого и правого операндов должен быть одинаковым.
 
@@ -78,5 +78,5 @@ x = x op y
 ## <a name="see-also"></a>См. также раздел
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Ключевое слово ref](../keywords/ref.md)

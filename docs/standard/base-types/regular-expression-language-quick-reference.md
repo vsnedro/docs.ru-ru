@@ -15,12 +15,12 @@ helpviewer_keywords:
 - cheat sheet
 - .NET Framework regular expressions, language elements
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
-ms.openlocfilehash: a2fc2c56eeb29f5e89dc0b9f94636408ff10700f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4788c84be76a5cc9a9a6327fcd054e08db4d1872
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446370"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87556804"
 ---
 # <a name="regular-expression-language---quick-reference"></a>Элементы языка регулярных выражений — краткий справочник
 
@@ -94,8 +94,8 @@ ms.locfileid: "84446370"
 |Конструкция группирования|Описание|Шаблон|Число соответствий|
 |------------------------|-----------------|-------------|-------------|
 |`(` *subexpression* `)`|Захватывает соответствующую часть выражения и назначает ей порядковый номер, отсчитываемый от единицы.|`(\w)\1`|`"ee"` в `"deep"`|
-|`(?<` *name* `>` *subexpression* `)`|Выделяет соответствующую часть выражения в именованную группу.|`(?<double>\w)\k<double>`|`"ee"` в `"deep"`|
-|`(?<` *name1* `-` *name2* `>` *subexpression* `)`|Задает сбалансированное определение группы. Дополнительные сведения см. в разделе "Сбалансированное определение группы" статьи [Конструкции группирования](grouping-constructs-in-regular-expressions.md).|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|`"((1-3)*(3-1))"` в `"3+2^((1-3)*(3-1))"`|
+|`(?<` *name* `>` *subexpression* `)`<br /> or <br />`(?'` *name* `'` *subexpression* `)`|Выделяет соответствующую часть выражения в именованную группу.|`(?<double>\w)\k<double>`|`"ee"` в `"deep"`|
+|`(?<` *name1* `-` *name2* `>` *subexpression* `)` <br /> or <br /> `(?'` *name1* `-` *name2* `'` *subexpression* `)`|Задает сбалансированное определение группы. Дополнительные сведения см. в разделе "Сбалансированное определение группы" статьи [Конструкции группирования](grouping-constructs-in-regular-expressions.md).|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|`"((1-3)*(3-1))"` в `"3+2^((1-3)*(3-1))"`|
 |`(?:` *subexpression* `)`|Определяет невыделяемую группу.|`Write(?:Line)?`|`"WriteLine"` в `"Console.WriteLine()"`<br /><br /> `"Write"` в `"Console.Write(value)"`|
 |`(?imnsx-imnsx:` *subexpression* `)`|Применяет или отключает указанные параметры в *части выражения*. Для получения дополнительной информации см. [Параметры регулярных выражений](regular-expression-options.md).|`A\d{2}(?i:\w+)\b`|`"A12xl"`, `"A12XL"` в `"A12xl A12XL a12xl"`|
 |`(?=` *subexpression* `)`|Утверждение положительного просмотра вперед нулевой ширины.|`\w+(?=\.)`|`"is"`, `"ran"` и `"out"` в `"He is. The dog ran. The sun is out."`|

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - inequality operator [C#]
 - not equals operator [C#]
 - '!= operator [C#]'
-ms.openlocfilehash: 011ef8b570a0bbbc38ec71df4286c3b08c3109da
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 47e550226cdef31c82b30348d779207200f32b90
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174787"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916827"
 ---
 # <a name="equality-operators-c-reference"></a>Операторы равенства (справочник по C#)
 
@@ -34,7 +34,7 @@ ms.locfileid: "86174787"
 
 Операнды [встроенных типов значений](../builtin-types/value-types.md#built-in-value-types) равны, если равны их значения.
 
-[!code-csharp-interactive[value types equality](snippets/EqualityOperators.cs#ValueTypesEquality)]
+[!code-csharp-interactive[value types equality](snippets/shared/EqualityOperators.cs#ValueTypesEquality)]
 
 > [!NOTE]
 > У операторов `==`, [`<`, `>`, `<=` и `>=`](comparison-operators.md), если какой-то из операндов не является числом (<xref:System.Double.NaN?displayProperty=nameWithType> или <xref:System.Single.NaN?displayProperty=nameWithType>), результатом операции является `false`. Это означает, что значение `NaN` не больше, не меньше и не равно любому другому значению `double` (или `float`), включая `NaN`. Дополнительные сведения и примеры см. в справочных статьях по <xref:System.Double.NaN?displayProperty=nameWithType> или <xref:System.Single.NaN?displayProperty=nameWithType>.
@@ -49,7 +49,7 @@ ms.locfileid: "86174787"
 
 По умолчанию два операнда ссылочного типа являются равными, если они ссылаются на один и тот же объект:
 
-[!code-csharp[reference type equality](snippets/EqualityOperators.cs#ReferenceTypesEquality)]
+[!code-csharp[reference type equality](snippets/shared/EqualityOperators.cs#ReferenceTypesEquality)]
 
 Как показано в примере, определяемые пользователем ссылочные типы поддерживают оператор `==` по умолчанию. Однако ссылочный тип может перегружать оператор `==`. Если ссылочный тип перегружает оператор `==`, воспользуйтесь методом <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>, чтобы проверить, что две ссылки этого типа указывают на один и тот же объект.
 
@@ -57,7 +57,7 @@ ms.locfileid: "86174787"
 
 Два операнда [string](../builtin-types/reference-types.md#the-string-type) равны, если они оба имеют значение `null` или оба экземпляра строки имеют одинаковую длину и идентичные символы в каждой позиции символа.
 
-[!code-csharp-interactive[string equality](snippets/EqualityOperators.cs#StringEquality)]
+[!code-csharp-interactive[string equality](snippets/shared/EqualityOperators.cs#StringEquality)]
 
 Это порядковое сравнение, учитывающее регистр. Дополнительные сведения о том, как сравнивать строки, см. в статье [Сравнение строк в C#](../../how-to/compare-strings.md).
 
@@ -65,13 +65,13 @@ ms.locfileid: "86174787"
 
 Два операнда [delegate](../../programming-guide/delegates/index.md) одного типа среды выполнения равны, если оба из них имеют значение `null` или их списки вызовов имеют одинаковую длину и содержат одинаковые записи в каждой позиции:
 
-[!code-csharp-interactive[delegate equality](snippets/EqualityOperators.cs#DelegateEquality)]
+[!code-csharp-interactive[delegate equality](snippets/shared/EqualityOperators.cs#DelegateEquality)]
 
 Подробные сведения см. в разделе [Delegate equality operators](~/_csharplang/spec/expressions.md#delegate-equality-operators) (Операторы равенства делегатов) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
 Делегаты, созданные в результате оценки семантически идентичных [лямбда-выражений](../../programming-guide/statements-expressions-operators/lambda-expressions.md) не будут равны, как показано в примере ниже:
 
-[!code-csharp-interactive[from identical lambdas](snippets/EqualityOperators.cs#IdenticalLambdas)]
+[!code-csharp-interactive[from identical lambdas](snippets/shared/EqualityOperators.cs#IdenticalLambdas)]
 
 ## <a name="inequality-operator-"></a>Оператор неравенства !=
 
@@ -79,7 +79,7 @@ ms.locfileid: "86174787"
 
 В следующем примере иллюстрируется использование оператора `!=`.
 
-[!code-csharp-interactive[non-equality examples](snippets/EqualityOperators.cs#NonEquality)]
+[!code-csharp-interactive[non-equality examples](snippets/shared/EqualityOperators.cs#NonEquality)]
 
 ## <a name="operator-overloadability"></a>Возможность перегрузки оператора
 
@@ -92,7 +92,7 @@ ms.locfileid: "86174787"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - <xref:System.IEquatable%601?displayProperty=nameWithType>
 - <xref:System.Object.Equals%2A?displayProperty=nameWithType>
 - <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>

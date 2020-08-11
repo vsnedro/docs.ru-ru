@@ -10,6 +10,8 @@ f1_keywords:
 - '&_CSharpKeyword'
 - ^_CSharpKeyword
 - '|_CSharpKeyword'
+- <<=_CSharpKeyword
+- '>>=_CSharpKeyword'
 helpviewer_keywords:
 - bitwise logical operators [C#]
 - shift operators [C#]
@@ -29,12 +31,12 @@ helpviewer_keywords:
 - ^ operator [C#]
 - bitwise logical OR operator [C#]
 - '| operator [C#]'
-ms.openlocfilehash: 54198368672e0c9324210a232c7851b5a90402cb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 99181855fdf8e937676e44e8b347510f9405aa3d
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79398073"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916905"
 ---
 # <a name="bitwise-and-shift-operators-c-reference"></a>Побитовые операторы и операторы сдвига (справочник по C#)
 
@@ -54,7 +56,7 @@ ms.locfileid: "79398073"
 
 Оператор `~` создает побитовое дополнение своего операнда путем инвертирования каждого бита:
 
-[!code-csharp-interactive[bitwise NOT](snippets/BitwiseAndShiftOperators.cs#BitwiseComplement)]
+[!code-csharp-interactive[bitwise NOT](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseComplement)]
 
 Можно также использовать символ `~` для объявления методов завершения. Дополнительные сведения см. в разделе [Методы завершения](../../programming-guide/classes-and-structs/destructors.md).
 
@@ -64,11 +66,11 @@ ms.locfileid: "79398073"
 
 Операция сдвига влево отбрасывает старшие биты, которые находятся за пределами диапазона типа результата, и задает позиции пустых битов низкого порядка, равные нулю, как показано в следующем примере:
 
-[!code-csharp-interactive[left shift](snippets/BitwiseAndShiftOperators.cs#LeftShift)]
+[!code-csharp-interactive[left shift](snippets/shared/BitwiseAndShiftOperators.cs#LeftShift)]
 
 Поскольку операторы сдвига определены только для типов `int`, `uint`, `long` и `ulong`, результат операции всегда содержит по крайней мере 32 бита. Если левый операнд имеет другой целочисленный тип (`sbyte`, `byte`, `short`, `ushort` или `char`), его значение преобразуется в тип `int`, как показано в следующем примере:
 
-[!code-csharp-interactive[left shift with promotion](snippets/BitwiseAndShiftOperators.cs#LeftShiftPromoted)]
+[!code-csharp-interactive[left shift with promotion](snippets/shared/BitwiseAndShiftOperators.cs#LeftShiftPromoted)]
 
 Сведения о том, как правый операнд оператора `<<` определяет величину сдвига, см. в разделе [Величина смещения операторов сдвига](#shift-count-of-the-shift-operators).
 
@@ -78,25 +80,25 @@ ms.locfileid: "79398073"
 
 Операция сдвига вправо удаляет младшие разряды, как показано в следующем примере:
 
-[!code-csharp-interactive[right shift](snippets/BitwiseAndShiftOperators.cs#RightShift)]
+[!code-csharp-interactive[right shift](snippets/shared/BitwiseAndShiftOperators.cs#RightShift)]
 
 Позиции пустых битов высокого порядка задаются с учетом типа левого операнда следующим образом:
 
 - Если левый операнд имеет тип `int` или `long`, оператор сдвига вправо выполняет *арифметический* сдвиг, то есть значение наиболее значимого бита (знаковый бит) левого операнда переносится в пустые битовые позиции высокого разряда. То есть для пустых битовых позиций высокого порядка задается ноль, если левый операнд неотрицательный, и единица, если он отрицательный.
 
-  [!code-csharp-interactive[arithmetic right shift](snippets/BitwiseAndShiftOperators.cs#ArithmeticRightShift)]
+  [!code-csharp-interactive[arithmetic right shift](snippets/shared/BitwiseAndShiftOperators.cs#ArithmeticRightShift)]
 
 - Если левый операнд имеет тип `uint` или `ulong`, оператор сдвига вправо выполняет *логический* сдвиг, то есть пустым битовым позициям высокого порядка всегда присваивается нулевое значение.
 
-  [!code-csharp-interactive[logical right shift](snippets/BitwiseAndShiftOperators.cs#LogicalRightShift)]
+  [!code-csharp-interactive[logical right shift](snippets/shared/BitwiseAndShiftOperators.cs#LogicalRightShift)]
 
 Сведения о том, как правый операнд оператора `>>` определяет величину сдвига, см. в разделе [Величина смещения операторов сдвига](#shift-count-of-the-shift-operators).
 
-## <a name="logical-and-operator-"></a> Оператор логического И &amp;
+## <a name="logical-and-operator-amp"></a><a name="logical-and-operator-"></a> Оператор логического И &amp;
 
 Оператор `&` вычисляет побитовое логическое И своих операндов:
 
-[!code-csharp-interactive[bitwise AND](snippets/BitwiseAndShiftOperators.cs#BitwiseAnd)]
+[!code-csharp-interactive[bitwise AND](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseAnd)]
 
 Для операндов типа `bool` оператор `&` вычисляет [логическое И](boolean-logical-operators.md#logical-and-operator-) по своим операндам. Унарный оператор `&` является оператором [AddressOf](pointer-related-operators.md#address-of-operator-).
 
@@ -104,7 +106,7 @@ ms.locfileid: "79398073"
 
 Оператор `^` вычисляет побитовое логическое исключающее ИЛИ, также известное как побитовое логическое XOR, своих операндов:
 
-[!code-csharp-interactive[bitwise XOR](snippets/BitwiseAndShiftOperators.cs#BitwiseXor)]
+[!code-csharp-interactive[bitwise XOR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseXor)]
 
 Для операндов типа `bool` оператор `^` вычисляет [логическое исключающее ИЛИ](boolean-logical-operators.md#logical-exclusive-or-operator-) по своим операндам.
 
@@ -112,7 +114,7 @@ ms.locfileid: "79398073"
 
 Оператор `|` вычисляет побитовое логическое ИЛИ своих операндов:
 
-[!code-csharp-interactive[bitwise OR](snippets/BitwiseAndShiftOperators.cs#BitwiseOr)]
+[!code-csharp-interactive[bitwise OR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseOr)]
 
 Для операндов типа `bool` оператор `|` вычисляет [логическое ИЛИ](boolean-logical-operators.md#logical-or-operator-) по своим операндам.
 
@@ -134,11 +136,11 @@ x = x op y
 
 В следующем примере показано использование составного присваивания с побитовыми операторами и операторами сдвига:
 
-[!code-csharp-interactive[compound assignment](snippets/BitwiseAndShiftOperators.cs#CompoundAssignment)]
+[!code-csharp-interactive[compound assignment](snippets/shared/BitwiseAndShiftOperators.cs#CompoundAssignment)]
 
 Из-за [восходящих приведений](~/_csharplang/spec/expressions.md#numeric-promotions) результат операции `op` может быть невозможно неявно преобразовать в тип `T` из `x`. В этом случае, если `op` является предопределенным оператором, и результат операции является явно преобразуемым в тип `T``x`, выражение составного присваивания формы `x op= y` эквивалентно `x = (T)(x op y)`, за исключением того, что `x` вычисляется только один раз. В следующем примере продемонстрировано такое поведение.
 
-[!code-csharp-interactive[compound assignment with cast](snippets/BitwiseAndShiftOperators.cs#CompoundAssignmentWithCast)]
+[!code-csharp-interactive[compound assignment with cast](snippets/shared/BitwiseAndShiftOperators.cs#CompoundAssignmentWithCast)]
 
 ## <a name="operator-precedence"></a>Приоритет операторов
 
@@ -152,7 +154,7 @@ x = x op y
 
 Порядок вычисления, определяемый приоритетом операторов, можно изменить с помощью скобок (`()`).
 
-[!code-csharp-interactive[operator precedence](snippets/BitwiseAndShiftOperators.cs#Precedence)]
+[!code-csharp-interactive[operator precedence](snippets/shared/BitwiseAndShiftOperators.cs#Precedence)]
 
 Полный список операторов C#, упорядоченный по уровню приоритета, можно найти в разделе [Приоритет операторов](index.md#operator-precedence) статьи [Операторы C#](index.md).
 
@@ -168,7 +170,7 @@ x = x op y
 
 В следующем примере продемонстрировано такое поведение.
 
-[!code-csharp-interactive[shift count example](snippets/BitwiseAndShiftOperators.cs#ShiftCount)]
+[!code-csharp-interactive[shift count example](snippets/shared/BitwiseAndShiftOperators.cs#ShiftCount)]
 
 > [!NOTE]
 > Как показано в предыдущем примере, результат операции сдвига может быть ненулевым, даже если значение правого операнда больше числа битов в левом операнде.
@@ -198,5 +200,5 @@ x = x op y
 ## <a name="see-also"></a>См. также раздел
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Логические операторы](boolean-logical-operators.md)

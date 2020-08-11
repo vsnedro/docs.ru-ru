@@ -5,12 +5,12 @@ helpviewer_keywords:
 - false operator [C#]
 - true operator [C#]
 ms.assetid: 81a888fd-011e-4589-b242-6c261fea505e
-ms.openlocfilehash: 5ccd08a348478902bbbac36e99acf7ffc1fc814b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 15342c3d9cd66195639e38265875a7ed4008dd51
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78846224"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916626"
 ---
 # <a name="true-and-false-operators-c-reference"></a>Операторы true и false (справочник по C#)
 
@@ -31,7 +31,7 @@ ms.locfileid: "78846224"
 
 В следующем примере представлен тип, который определяет операторы `true` и `false`. Этот тип также перегружает логический оператор И `&` таким образом, что оператор `&&` может быть вычислен для операндов этого типа.
 
-[!code-csharp[true and false operators example](snippets/TrueFalseOperators.cs)]
+[!code-csharp[true and false operators example](snippets/shared/TrueFalseOperators.cs)]
 
 Обратите внимание на поведение сокращенного вычисления оператора `&&`. Когда метод `GetFuelLaunchStatus` возвращает `LaunchStatus.Red`, правый операнд оператора `&&` не вычисляется. Это обусловлено тем, что `LaunchStatus.Red` имеет значение false. Результат логического оператора И не зависит от значения правого операнда. Выходные данные примера могут быть следующими:
 
@@ -43,4 +43,4 @@ Wait!
 ## <a name="see-also"></a>См. также раздел
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)

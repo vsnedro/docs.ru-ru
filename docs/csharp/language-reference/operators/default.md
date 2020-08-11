@@ -7,12 +7,12 @@ f1_keywords:
 - default
 helpviewer_keywords:
 - default keyword [C#]
-ms.openlocfilehash: 2adfd8d24066e9dad50c3c18407d3ade71b4b68e
-ms.sourcegitcommit: 2514f4e3655081dcfe1b22470c0c28500f952c42
+ms.openlocfilehash: f03971efa87bf03967c79512e44d22134dd80c17
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507182"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916865"
 ---
 # <a name="default-value-expressions-c-reference"></a>Выражения default value (справочник по C#)
 
@@ -24,7 +24,7 @@ ms.locfileid: "79507182"
 
 Оператор `default` принимает в качестве аргумента имя типа или параметр типа, как показано в следующем примере:
 
-[!code-csharp-interactive[default of T](snippets/DefaultOperator.cs#WithOperand)]
+[!code-csharp-interactive[default of T](snippets/shared/DefaultOperator.cs#WithOperand)]
 
 ## <a name="default-literal"></a>Литерал default
 
@@ -37,7 +37,7 @@ ms.locfileid: "79507182"
 
 Ниже приведен пример применения литерала `default`.
 
-[!code-csharp-interactive[default literal](snippets/DefaultOperator.cs#DefaultLiteral)]
+[!code-csharp-interactive[default literal](snippets/shared/DefaultOperator.cs#DefaultLiteral)]
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
@@ -48,6 +48,6 @@ ms.locfileid: "79507182"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Значения по умолчанию типов C#](../builtin-types/default-values.md)
 - [Универсальные шаблоны в .NET](../../../standard/generics/index.md)

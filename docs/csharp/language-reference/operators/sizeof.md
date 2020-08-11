@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof keyword [C#]
 ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
-ms.openlocfilehash: a9e80ecb3288479a2ca81b43c9d088809ed5f2f0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 327183ccdf79cb8e15cd15aa3cffb044120808f8
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78847291"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916700"
 ---
 # <a name="sizeof-operator-c-reference"></a>Справочник по C#. Оператор sizeof
 
@@ -40,7 +40,7 @@ ms.locfileid: "78847291"
 
 В следующем примере иллюстрируется использование оператора `sizeof`.
 
-[!code-csharp[sizeof examples](snippets/SizeOfOperator.cs)]
+[!code-csharp[sizeof examples](snippets/shared/SizeOfOperator.cs)]
 
 Оператор `sizeof` возвращает число байт, выделяемых средой CLR в управляемой памяти. Для типов [структуры](../builtin-types/struct.md) в это значение входит любое заполнение, как показано в предыдущем примере. Результат использования оператора `sizeof` может отличаться от результата работы метода <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType>, который возвращает размер типа в *неуправляемой* памяти.
 
@@ -51,7 +51,7 @@ ms.locfileid: "78847291"
 ## <a name="see-also"></a>См. также раздел
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Операторы, связанные с указателем](pointer-related-operators.md)
 - [Типы указателей](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Типы, связанные с памятью и диапазонами](../../../standard/memory-and-spans/index.md)

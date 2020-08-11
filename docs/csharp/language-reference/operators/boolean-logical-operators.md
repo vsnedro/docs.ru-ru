@@ -10,6 +10,9 @@ f1_keywords:
 - '|_CSharpKeyword'
 - '&&_CSharpKeyword'
 - '||_CSharpKeyword'
+- '|=_CSharpKeyword'
+- ^=_CSharpKeyword
+- '&=_CSharpKeyword'
 helpviewer_keywords:
 - logical operators [C#]
 - short-circuiting operators [C#]
@@ -32,11 +35,12 @@ helpviewer_keywords:
 - conditional OR operator [C#]
 - short-circuiting OR operator [C#]
 - '|| operator [C#]'
-ms.openlocfilehash: a19c804c624153ef608885bc6493537302275765
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 00b1523029ed6562fda6947415029cd3b7a9b405
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618198"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916892"
 ---
 # <a name="boolean-logical-operators-c-reference"></a>Логические операторы (справочник по C#)
 
@@ -52,7 +56,7 @@ ms.locfileid: "85618198"
 
 Унарный префиксный оператор `!` выполняет логическое отрицание операнда, возвращая `true`, если операнд имеет значение `false`, и `false`, если операнд имеет значение `true`.
 
-[!code-csharp-interactive[logical negation](snippets/BooleanLogicalOperators.cs#Negation)]
+[!code-csharp-interactive[logical negation](snippets/shared/BooleanLogicalOperators.cs#Negation)]
 
 Начиная с версии C# 8.0, унарный постфиксный оператор `!`[допускает значение NULL](null-forgiving.md).
 
@@ -64,7 +68,7 @@ ms.locfileid: "85618198"
 
 В следующем примере правый операнд оператора `&` является вызовом метода, который выполняется независимо от значения левого операнда:
 
-[!code-csharp-interactive[logical AND](snippets/BooleanLogicalOperators.cs#And)]
+[!code-csharp-interactive[logical AND](snippets/shared/BooleanLogicalOperators.cs#And)]
 
 [Условный оператор логического И](#conditional-logical-and-operator-) `&&` также вычисляет логическое И для своих операндов, но не вычисляет правый операнд, если левый операнд имеет значение `false`.
 
@@ -74,7 +78,7 @@ ms.locfileid: "85618198"
 
 Оператор `^` вычисляет логическое исключение ИЛИ для всех своих операндов, возвращая `true` для `x ^ y`, если `x` имеет значение `true` и `y` имеет значение `false` или `x` имеет значение `false` и `y` имеет значение `true`. В противном случае результат будет `false`. То есть для операндов `bool` оператор `^` возвращает тот же результат, что и [оператор неравенства](equality-operators.md#inequality-operator-) `!=`.
 
-[!code-csharp-interactive[logical exclusive OR](snippets/BooleanLogicalOperators.cs#Xor)]
+[!code-csharp-interactive[logical exclusive OR](snippets/shared/BooleanLogicalOperators.cs#Xor)]
 
 Для операндов [целочисленных типов](../builtin-types/integral-numeric-types.md) оператор `^` вычисляет [побитовое исключающее ИЛИ](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) своих операндов.
 
@@ -86,7 +90,7 @@ ms.locfileid: "85618198"
 
 В следующем примере правый операнд оператора `|` является вызовом метода, который выполняется независимо от значения левого операнда:
 
-[!code-csharp-interactive[logical OR](snippets/BooleanLogicalOperators.cs#Or)]
+[!code-csharp-interactive[logical OR](snippets/shared/BooleanLogicalOperators.cs#Or)]
 
 [Условный оператор логического ИЛИ](#conditional-logical-or-operator-) `||` также вычисляет логическое ИЛИ для своих операндов, но не вычисляет правый операнд, если левый операнд имеет значение `true`.
 
@@ -98,7 +102,7 @@ ms.locfileid: "85618198"
 
 В следующем примере правый операнд оператора `&&` является вызовом метода, который не выполняется, если левый операнд имеет значение `false`:
 
-[!code-csharp-interactive[conditional logical AND](snippets/BooleanLogicalOperators.cs#ConditionalAnd)]
+[!code-csharp-interactive[conditional logical AND](snippets/shared/BooleanLogicalOperators.cs#ConditionalAnd)]
 
 [Оператор логического И](#logical-and-operator-) `&` также вычисляет логическое И для своих операндов, но он всегда вычисляет оба операнда.
 
@@ -108,7 +112,7 @@ ms.locfileid: "85618198"
 
 В следующем примере правый операнд оператора `||` является вызовом метода, который не выполняется, если левый операнд имеет значение `true`:
 
-[!code-csharp-interactive[conditional logical OR](snippets/BooleanLogicalOperators.cs#ConditionalOr)]
+[!code-csharp-interactive[conditional logical OR](snippets/shared/BooleanLogicalOperators.cs#ConditionalOr)]
 
 [Оператор логического ИЛИ](#logical-or-operator-) `|` также вычисляет логическое ИЛИ для своих операндов, но всегда вычисляет оба операнда.
 
@@ -138,7 +142,7 @@ ms.locfileid: "85618198"
 
 Вы также можете также использовать операторы `!` и `^` с операндами `bool?`, как показано в следующем примере:
 
-[!code-csharp-interactive[lifted negation and xor](snippets/BooleanLogicalOperators.cs#WithNullableBoolean)]
+[!code-csharp-interactive[lifted negation and xor](snippets/shared/BooleanLogicalOperators.cs#WithNullableBoolean)]
 
 Условные логические операторы `&&` и `||` не поддерживают операнды типа `bool?`.
 
@@ -160,7 +164,7 @@ x = x op y
 
 Операторы `&`, `|` и `^` поддерживают составное присваивание, как показано в следующем примере:
 
-[!code-csharp-interactive[compound assignment](snippets/BooleanLogicalOperators.cs#CompoundAssignment)]
+[!code-csharp-interactive[compound assignment](snippets/shared/BooleanLogicalOperators.cs#CompoundAssignment)]
 
 > [!NOTE]
 > Условные логические операторы `&&` и `||` не поддерживают составное присваивание.
@@ -178,7 +182,7 @@ x = x op y
 
 Порядок вычисления, определяемый приоритетом операторов, можно изменить с помощью скобок (`()`).
 
-[!code-csharp-interactive[operator precedence](snippets/BooleanLogicalOperators.cs#Precedence)]
+[!code-csharp-interactive[operator precedence](snippets/shared/BooleanLogicalOperators.cs#Precedence)]
 
 Полный список операторов C#, упорядоченный по уровню приоритета, можно найти в разделе [Приоритет операторов](index.md#operator-precedence) статьи [Операторы C#](index.md).
 
@@ -200,5 +204,5 @@ x = x op y
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Побитовые операторы и операторы сдвига](bitwise-and-shift-operators.md)

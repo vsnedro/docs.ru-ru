@@ -13,12 +13,12 @@ helpviewer_keywords:
 - event subscription [C#]
 - += operator [C#]
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
-ms.openlocfilehash: 18364d80b8117fd4074c2c4231eac07c76829bb3
-ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+ms.openlocfilehash: f1db0054ad2411bfe23f10b64bc2727a71ad7463
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82135741"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916961"
 ---
 # <a name="-and--operators-c-reference"></a>Операторы + и +=. Справочник по C#
 
@@ -30,17 +30,17 @@ ms.locfileid: "82135741"
 
 Если один или оба операнда имеют тип [string](../builtin-types/reference-types.md#the-string-type), оператор `+` сцепляет строковые представления этих операндов (строковое представление `null` является пустой строкой):
 
-[!code-csharp-interactive[string concatenation](snippets/AdditionOperator.cs#AddStrings)]
+[!code-csharp-interactive[string concatenation](snippets/shared/AdditionOperator.cs#AddStrings)]
 
 В C#, начиная с версии 6, реализован более удобный способ форматирования строк, который называется [интерполяция строк](../tokens/interpolated.md):
 
-[!code-csharp-interactive[string interpolation](snippets/AdditionOperator.cs#UseStringInterpolation)]
+[!code-csharp-interactive[string interpolation](snippets/shared/AdditionOperator.cs#UseStringInterpolation)]
 
 ## <a name="delegate-combination"></a>Объединение делегатов
 
 Для операндов того же типа [delegate](../builtin-types/reference-types.md#the-delegate-type) оператор `+` возвращает новый экземпляр делегата, при вызове которого вызывается сначала левый, а затем правый операнд. Если какой-либо из операндов имеет значение `null`, оператор `+` возвращает значение другого операнда (это тоже может быть `null`). Следующий пример демонстрирует объединение делегатов с помощью оператора `+`:
 
-[!code-csharp-interactive[delegate combination](snippets/AdditionOperator.cs#AddDelegates)]
+[!code-csharp-interactive[delegate combination](snippets/shared/AdditionOperator.cs#AddDelegates)]
 
 Для удаления делегатов используйте [оператор `-`](subtraction-operator.md#delegate-removal).
 
@@ -64,7 +64,7 @@ x = x + y
 
 В следующем примере иллюстрируется использование оператора `+=`.
 
-[!code-csharp-interactive[+= examples](snippets/AdditionOperator.cs#AddAndAssign)]
+[!code-csharp-interactive[+= examples](snippets/shared/AdditionOperator.cs#AddAndAssign)]
 
 Можно также использовать оператор `+=`, который позволяет указать метод обработчика событий при подписке на [событие](../keywords/event.md). Дополнительные сведения см. в разделе [Практическое руководство. Подписка и отмена подписки на события](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -79,7 +79,7 @@ x = x + y
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Сцепка нескольких строк](../../how-to/concatenate-multiple-strings.md)
 - [События](../../programming-guide/events/index.md)
 - [Арифметические операторы](arithmetic-operators.md)

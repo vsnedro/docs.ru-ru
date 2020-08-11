@@ -1,13 +1,13 @@
 ---
 title: Путь к современным приложениям на основе контейнеров
 description: Следует понимать, что Docker, контейнеры и архитектура микрослужб не являются универсальным решением. Здесь вы найдете несколько ссылок, которые помогут вам принять решение.
-ms.date: 11/23/2018
-ms.openlocfilehash: 0bc1adcd89c19b512032ee8fdf1a6e28cea96ee8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 08/06/2020
+ms.openlocfilehash: 7c18bc2ce1face4a5419305a48a16f23fcdc2735
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72770706"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87914980"
 ---
 # <a name="road-to-modern-applications-based-on-containers"></a>Путь к современным приложениям на основе контейнеров
 

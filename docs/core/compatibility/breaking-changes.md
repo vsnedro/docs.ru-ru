@@ -2,12 +2,12 @@
 title: Критические изменения
 description: Сведения о критических изменениях в каждой версии .NET Core.
 ms.date: 11/27/2019
-ms.openlocfilehash: bc7faae3b00d412aa8d50fe181a26873232a0939
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: 550553ef14cd0635fbe4a5346c457a41264a4b82
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415736"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916268"
 ---
 # <a name="breaking-change-selectors"></a>Средства выбора критических изменений
 
@@ -17,13 +17,31 @@ ms.locfileid: "85415736"
 
 Выберите текущую целевую версию .NET, а затем версию .NET Core, на которую вы хотите перейти:
 
-[!INCLUDE[versionselector](~/includes/core-changes/versionselector.md)]
+> [!div class="op_multi_selector" title1="Из целевой версии" title2="В перенесенную версию"]
+>
+> - [(3.1 | 5.0)](3.1-5.0.md)
+> - [(3.0 | 3.1)](3.0-3.1.md)
+> - [(2.2 | 3.1)](2.2-3.1.md)
+> - [(2.2 | 3.0)](2.2-3.0.md)
+> - [(2.0 | 2.1)](2.0-2.1.md)
+> - [(.NET Framework | .NET Core)](fx-core.md)
 
 ## <a name="by-technology-area"></a>По области технологий
 
 Выберите интересующую вас область технологий .NET Core. Отдельные изменения упорядочены по версии .NET Core.
 
-[!INCLUDE[categoryselector](~/includes/core-changes/categoryselector.md)]
+> [!div class="op_single_selector"]
+>
+> - [ASP.NET Core](aspnetcore.md)
+> - [Основные библиотеки .NET](corefx.md)
+> - [Шифрование](cryptography.md)
+> - [EF Core](/ef/core/what-is-new/ef-core-3.0/breaking-changes)
+> - [Глобализация](globalization.md)
+> - [Interop](interop.md)
+> - [Сеть](networking.md)
+> - [Сериализация](serialization.md)
+> - [Visual Basic](visualbasic.md)
+> - [Windows Forms](winforms.md)
 
 ## <a name="github-issues-and-announcements"></a>Вопросы и объявления GitHub
 

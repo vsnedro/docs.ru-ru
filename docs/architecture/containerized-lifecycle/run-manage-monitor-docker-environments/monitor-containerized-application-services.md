@@ -1,13 +1,13 @@
 ---
 title: Мониторинг служб контейнерных приложений
 description: Сведения об основных аспектах, связанных с мониторингом контейнерных архитектур
-ms.date: 02/15/2019
-ms.openlocfilehash: e41df53ad94784436442c3cf7defed3fab510455
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.date: 08/06/2020
+ms.openlocfilehash: 5fcb5065d02018ab3c2d3ad71cf507bd43b53446
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374446"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87914940"
 ---
 # <a name="monitor-containerized-application-services"></a>Мониторинг служб контейнерных приложений
 
