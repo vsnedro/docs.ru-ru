@@ -2,12 +2,12 @@
 title: Форматирование обычного текста
 description: 'Узнайте, как использовать printf и другое форматирование в виде обычного текста в приложениях и скриптах F #.'
 ms.date: 07/22/2020
-ms.openlocfilehash: 6b14633e074961757d0f0cd258d1b1667f5fd8ee
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: 90a861736dae69dfbc199a19e24f587c42404737
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87854923"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063787"
 ---
 # <a name="plain-text-formatting"></a>Форматирование обычного текста
 
@@ -85,6 +85,7 @@ stdin(3,25): error FS0001: The type 'string' does not match the type 'int'
 | `%A` | любое значение  |   Форматирование с использованием [структурированного форматирования обычного текста](plaintext-formatting.md) с параметрами макета по умолчанию |
 | `%a` | любое значение  |   Требуется два аргумента: функция форматирования, принимающая параметр контекста и значение, и конкретное значение для печати |
 | `%t` | любое значение  |   Требуется один аргумент: функция форматирования, принимающая параметр контекста, который либо выводит, либо возвращает соответствующий текст. |
+| `%%` | (нет)  |   Не требует аргументов и выводит обычный знак процента:`%` |
 
 Базовые целочисленные типы: `byte` ( `System.Byte` ), `sbyte` ( `System.SByte` ), `int16` ( `System.Int16` ), `uint16` ( `System.UInt16` ), `int32` ( `System.Int32` ), `uint32` ( `System.UInt32` ), `int64` ( `System.Int64` ), `uint64` (), () `System.UInt64` `nativeint` `System.IntPtr` и `unativeint` ( `System.UIntPtr` ).
 Базовые типы с плавающей запятой: `float` ( `System.Double` ) и `float32` ( `System.Single` ).
@@ -324,7 +325,7 @@ printfn "%A" r
 
 ### <a name="customize-plain-text-formatting-with-structuredformatdisplay"></a>Настроить форматирование обычного текста с помощью`StructuredFormatDisplay`
 
-При использовании `%A` спецификатора `StructuredFormatDisplay` учитывается присутствие атрибута в объявлениях типов.  Это можно использовать для указания замещающего текста и свойства для вывода значения. Пример:
+При использовании `%A` спецификатора `StructuredFormatDisplay` учитывается присутствие атрибута в объявлениях типов.  Это можно использовать для указания замещающего текста и свойства для вывода значения. Пример.
 
 ```fsharp
 [<StructuredFormatDisplay("Counts({Clicks})")>]

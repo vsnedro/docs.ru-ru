@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c1a78fa8-9f0c-40bc-a372-5575a48708fe
-ms.openlocfilehash: 829e7dce4801508a8311f7bcbfeccbc36184cffc
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: eee04959493914018904b61b0e5a289f172f2f18
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286641"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063722"
 ---
 # <a name="queries-in-linq-to-dataset"></a>Запросы в LINQ to DataSet
 Запрос представляет собой выражение, извлекающее данные из источника данных. Запросы обычно выражаются на специализированном языке запросов, например SQL для реляционных баз данных и XQuery для XML. Поэтому разработчикам приходится учить новый язык запросов для каждого типа источника данных и формата данных, для которых выполняется запрос. Интегрированный в язык запрос (LINQ) предлагает упрощенную согласованную модель работы с данными для различных типов источников данных и различных форматов данных. Запросы LINQ всегда работают с программируемыми объектами.  
@@ -40,7 +40,7 @@ ms.locfileid: "84286641"
  [!code-vb[DP LINQ to DataSet Examples#SelectSimple1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#selectsimple1)]  
   
 ### <a name="method-based-query-syntax"></a>Синтаксис запросов, основанных на методе  
- Другой способ формулировки LINQ to DataSet запросов — использование запросов на основе методов. Он представляет собой последовательность непосредственных вызовов методов операторов LINQ, передающих лямбда-выражения в качестве параметров. Дополнительные сведения см. в разделе [Лямбда-выражения](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+ Другой способ формулировки LINQ to DataSet запросов — использование запросов на основе методов. Он представляет собой последовательность непосредственных вызовов методов операторов LINQ, передающих лямбда-выражения в качестве параметров. Дополнительные сведения см. в разделе [Лямбда-выражения](../../../csharp/language-reference/operators/lambda-expressions.md).  
   
  В следующем примере выражение <xref:System.Linq.Enumerable.Select%2A> используется для возврата всех строк из таблицы `Product` и вывода названий продуктов.  
   
@@ -60,7 +60,7 @@ ms.locfileid: "84286641"
  [!code-csharp[DP LINQ to DataSet Examples#ToArray2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#toarray2)]
  [!code-vb[DP LINQ to DataSet Examples#ToArray2](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#toarray2)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство по программированию](programming-guide-linq-to-dataset.md)
 - [Запросы к DataSet](querying-datasets-linq-to-dataset.md)

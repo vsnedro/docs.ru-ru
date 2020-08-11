@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 8b1c9ab25299fcbafca6aba7b13217713a941ce8
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 4a9f5d50ad78b2b0bef0ece3c4fce47d2925aca5
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475194"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063761"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>Разработка больших, быстро реагирующих приложений .NET Framework
 
@@ -51,7 +51,7 @@ ms.locfileid: "86475194"
 ## <a name="common-allocations-and-examples"></a>Распространенные выделения и примеры  
  Примеры выражение в этом разделе имеют скрытые выделения, которые кажутся незначительными. Однако если крупное приложение выполняет эти выражения достаточно большое число раз, они могут вызвать выделение сотен мегабайт и даже нескольких гигабайт памяти. Например, минутные тесты, имитирующие ввод кода разработчиком в редакторе, выделили гигабайты памяти и вынудили группу по обеспечению производительности сосредоточить усилия на сценариях ввода.
   
-### <a name="boxing"></a>Упаковка-преобразование  
+### <a name="boxing"></a>Упаковка  
  [Упаковка-преобразование](../../csharp/programming-guide/types/boxing-and-unboxing.md) происходит, когда типы значения, которые обычно находятся в стеке или структурах данных, упаковываются в объект. То есть вы выделяете объект для хранения данных, а затем возвращаете указатель на этот объект. Платформа .NET Framework иногда выполняет упаковку-преобразование значений в связи с сигнатурой метода или типом выделения хранилища. Упаковка типа значения в объект приводит к выделению памяти. Многие операции упаковки-преобразования могут приводить к выделению мегабайт и гигабайт памяти в приложении, что увеличит объем сборки мусора. Платформа .NET Framework и компиляторы языков стараются по возможности не использовать упаковку-преобразование, но иногда оно возникает в самый неожиданный момент.
   
  Чтобы просмотреть упаковку-преобразование в PerfView, откройте трассировку и просмотрите "GC Heap Alloc Stacks" (Стеки выделения кучи сборки мусора) под именем процесса вашего приложения (помните, что PerfView включает в отчет все процессы). Если в выделениях видны такие типы, как <xref:System.Int32?displayProperty=nameWithType> и <xref:System.Char?displayProperty=nameWithType>, значит, вы выполняете упаковку-преобразование типов значения. При выборе одного из этих типов отображаются стеки и функции, в которые выполнено упаковка-преобразование.
@@ -306,7 +306,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- В первой строке [лямбда-выражение](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [удерживает](https://docs.microsoft.com/archive/blogs/ericlippert/what-are-closures) локальную переменную `name`. Это означает, что в дополнение к выделению объекта для [делегата](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type), содержащегося в `predicate`, код выделяет статический класс для среды, которая перехватывает значение `name`. Компилятор формирует код, аналогичный следующему:  
+ В первой строке [лямбда-выражение](../../csharp/language-reference/operators/lambda-expressions.md) `s => s.Name == name` [удерживает](https://docs.microsoft.com/archive/blogs/ericlippert/what-are-closures) локальную переменную `name`. Это означает, что в дополнение к выделению объекта для [делегата](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type), содержащегося в `predicate`, код выделяет статический класс для среды, которая перехватывает значение `name`. Компилятор формирует код, аналогичный следующему:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  

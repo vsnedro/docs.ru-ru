@@ -3,12 +3,12 @@ title: Разработка рабочих процессов, действий 
 description: Определение рабочего процесса Workflow Foundation — это дерево настроенных объектов действий. Используйте код для создания определений рабочих процессов, действий и выражений.
 ms.date: 03/30/2017
 ms.assetid: cefc9cfc-2882-4eb9-8c94-7a6da957f2b2
-ms.openlocfilehash: d8b4cb8b85d3ea3759d58e15df823a72146772e8
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: d169049c47c154858a2e653b5f286fa6b66ba44d
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421557"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063800"
 ---
 # <a name="authoring-workflows-activities-and-expressions-using-imperative-code"></a>Разработка рабочих процессов, действий и выражений с помощью императивного кода
 Определение рабочего процесса представляет собой дерево настроенных объектов действий. Это дерево действий можно определить многими способами, включая редактирование XAML вручную и использование конструктора рабочих процессов для создания XAML. Но использование XAML не является обязательным. Определения рабочих процессов могут быть также созданы вручную. В этом разделе представлены общие сведения о создании определений, действий и выражений рабочего процесса с помощью кода. Примеры работы с рабочими процессами XAML с помощью кода см. [в разделе Сериализация рабочих процессов и действий в XAML и обратно](serializing-workflows-and-activities-to-and-from-xaml.md).  
@@ -62,7 +62,7 @@ new Assign<int>
   
  [!code-csharp[CFX_WorkflowApplicationExample#52](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#52)]  
   
- Дополнительные сведения о лямбда-выражениях см. в разделе [лямбда-выражения (руководство по программированию на C#)](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) или [лямбда-выражения (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
+ Дополнительные сведения о лямбда-выражениях см. в разделе [лямбда-выражения (Справочник по C#)](../../csharp/language-reference/operators/lambda-expressions.md) или [лямбда-выражения (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
  Лямбда-выражения не могут быть сериализованы в формат XAML. При попытке сериализовать рабочий процесс лямбда-выражениями возникает исключение <xref:System.Activities.Expressions.LambdaSerializationException> со следующим сообщением: «Этот рабочий процесс содержит указанные в коде лямбда-выражения. Эти выражения XAML-несериализуемы. Чтобы сделать рабочий процесс XAML-сериализуемым, используйте или VisualBasicValue/VisualBasicReference, или ExpressionServices.Convert(lambda). При этом лямбда-выражения будут преобразованы в действия выражений». Чтобы обеспечить совместимость этого выражения с XAML, используйте <xref:System.Activities.Expressions.ExpressionServices> и <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>, как показано в следующем примере.  
   
