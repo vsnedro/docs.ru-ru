@@ -1,7 +1,7 @@
 ---
 title: Дополнительные библиотеки классов и интерфейсы API
 description: Изучите дополнительные библиотеки классов и API-интерфейсы в .NET, включая проекты с внешними интерфейсами (OOB), библиотеки для конкретных платформ и частные интерфейсы API.
-ms.date: 06/12/2020
+ms.date: 08/11/2020
 helpviewer_keywords:
 - Additional class libraries
 - Additional managed libraries
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - out-of-band releases
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
 ms.topic: conceptual
-ms.openlocfilehash: 0b888d2f0e80685ba993682b2f3067cf8aee15bc
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: c6404df5d4f0be381bc0a9c1924fcf82cf078306
+ms.sourcegitcommit: 70d6a7e4f7187cbfa332f0f8be76566f7828cfcd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84989735"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88075479"
 ---
 # <a name="additional-class-libraries-and-apis"></a>Дополнительные библиотеки классов и интерфейсы API
 
@@ -24,7 +24,7 @@ ms.locfileid: "84989735"
 
 Чтобы улучшить разработку на разных платформах и впервые добавить новые функции, некоторые .NET Framework функции были выпущены с использованием аппаратного контроллера управления (OOB).
 
-| Project | Описание |  
+| Проект | Описание |  
 | ------- | ----------- |  
 | <xref:System.Collections.Immutable> | Предоставляет потокобезопасные коллекции, содержимое которых никогда не меняется. |
 | <xref:System.Net.Http.WinHttpHandler> | Предоставляет обработчик сообщений для <xref:System.Net.Http.HttpClient> на основе интерфейса WinHTTP ОС Windows. |
@@ -35,7 +35,7 @@ ms.locfileid: "84989735"
 
 Некоторые библиотеки предназначены для конкретных платформ. Например, <xref:System.Text.CodePagesEncodingProvider> класс делает кодировки кодовых страниц доступными для приложений UWP, разработанных с помощью .NET Framework.
   
-| Project | Описание |  
+| Проект | Описание |  
 | ------- | ----------- |  
 | <xref:System.Text.CodePagesEncodingProvider> | Расширяет <xref:System.Text.EncodingProvider> класс, чтобы сделать кодировки кодовых страниц доступными для приложений, предназначенных для универсальная платформа Windows. |  
   
@@ -87,6 +87,7 @@ ms.locfileid: "84989735"
 * [System .NET. Вебхеадерколлектион. Аддинтернал, метод](system.net.webheadercollection.addinternal.md)
 * [Метод System. ServiceModel. Channels. Message. Бодитостринг](system.servicemodel.channels.message.bodytostring.md)
 * [Метод System. ServiceModel. Channels. Message. Вритестарсеадерс](system.servicemodel.channels.message.writestartheaders.md)
+* [Класс System. Web. Compilation. Контролбуилдеринтерцептор](controlbuilderinterceptor-class.md)
 * [System. Windows. Diagnostics. Висуалдиагностикс. s \_ исдебугжерчеккдисабледфортестпурпосес, поле](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [Класс System. Windows. Forms. Design. DataMemberFieldEditor](datamemberfieldeditor-class.md)
 * [Класс System. Windows. Forms. Design. DataMemberListEditor](datamemberlisteditor-class.md)
