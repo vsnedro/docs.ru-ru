@@ -82,3 +82,35 @@
           href: ../../../../_csharplang/proposals/csharp-8.0/readonly-instance-members.md
         - name: Вложенная функция stackalloc
           href: ../../../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
+    - name: "Предложения по спецификации C#\_9.0"
+      items:
+        - name: Записи
+          href: ../../../../_csharplang/proposals/csharp-9.0/records.md
+        - name: Инструкции верхнего уровня
+          href: ../../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
+        - name: Улучшения сопоставления шаблонов
+          href: ../../../../_csharplang/proposals/csharp-9.0/patterns3.md
+        - name: Методы задания только инициализации
+          href: ../../../../_csharplang/proposals/csharp-9.0/init.md
+        - name: Новые выражения целевого типа
+          href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-new.md
+        - name: Инициализаторы модулей
+          href: ../../../../_csharplang/proposals/csharp-9.0/module-initializers.md
+        - name: Расширение разделяемых методов
+          href: ../../../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
+        - name: Статические анонимные функции
+          href: ../../../../_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
+        - name: Условное выражение целевого типа
+          href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
+        - name: Ковариантные возвращаемые типы
+          href: ../../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
+        - name: Параметры удаления лямбда-выражения
+          href: ../../../../_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
+        - name: Атрибуты локальных функций
+          href: ../../../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
+        - name: Целые числа собственного размера
+          href: ../../../../_csharplang/proposals/csharp-9.0/native-integers.md
+        - name: Указатели функций
+          href: ../../../../_csharplang/proposals/csharp-9.0/function-pointers.md
+        - name: Отменяет создание флага localsinit
+          href: ../../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md

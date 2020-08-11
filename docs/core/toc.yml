@@ -290,6 +290,8 @@ items:
         href: diagnostics/index.md
       - name: Управляемые отладчики
         href: diagnostics/managed-debuggers.md
+      - name: Счетчики событий
+        href: diagnostics/event-counters.md
       - name: Ведение журнала и трассировка
         href: diagnostics/logging-tracing.md
       - name: Глобальные средства .NET Core CLI
@@ -302,6 +304,8 @@ items:
             href: diagnostics/dotnet-trace.md
       - name: Учебники по диагностике .NET Core
         items:
+          - name: Получение метрик производительности с помощью EventCounters
+            href: diagnostics/event-counter-perf.md
           - name: Отладка утечек памяти
             href: diagnostics/debug-memory-leak.md
           - name: "Отладка высокой загрузки\_ЦП"

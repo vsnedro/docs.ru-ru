@@ -1,31 +1,89 @@
 ---
-title: Общие сведения о контейнерах и Docker
-description: Общий обзор основных преимуществ использования Docker.
-ms.date: 02/15/2019
-ms.openlocfilehash: 9ac08a64cd2465b4b88a266c1ec0925f37680bf9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+title: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
+description: Общий обзор процесса разработки и развертывания контейнерных приложений с помощью Docker, а также платформы и средств Microsoft.
+ms.date: 07/30/2020
+ms.openlocfilehash: d8055315b25f73d7b0b355026ab6b2c4767f9d89
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73738130"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87915152"
 ---
-# <a name="introduction-to-containers-and-docker"></a><span data-ttu-id="1f587-103">Общие сведения о контейнерах и Docker</span><span class="sxs-lookup"><span data-stu-id="1f587-103">Introduction to containers and Docker</span></span>
+# <a name="containerized-docker-application-lifecycle-with-microsoft-platform-and-tools"></a><span data-ttu-id="40af4-103">Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт</span><span class="sxs-lookup"><span data-stu-id="40af4-103">Containerized Docker Application Lifecycle with Microsoft Platform and Tools</span></span>
 
-<span data-ttu-id="1f587-104">*Контейнеризация — это подход к разработке программного обеспечения, при котором приложение или служба, их зависимости и конфигурация (абстрактные файлы манифеста развертывания) упаковываются вместе в образ контейнера. Контейнерное приложение можно тестировать как единое целое и развертывать как экземпляр образа контейнера в операционной системе (ОС) узла.*</span><span class="sxs-lookup"><span data-stu-id="1f587-104">*Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You then can test the containerized application as a unit and deploy it as a container image instance to the host operating system (OS).*</span></span>
+![Обложка книги](./media/devops-book-cover-large-we.png)
 
-<span data-ttu-id="1f587-105">Так же как обычные контейнеры позволяют перевозить любые грузы на корабле, поезде или грузовике, программные контейнеры выступают в качестве стандартных модулей для развертывания программного обеспечения, которые могут содержать различный код и зависимости.</span><span class="sxs-lookup"><span data-stu-id="1f587-105">Just as shipping containers allow goods to be transported by ship, train, or truck regardless of the cargo inside, software containers act as a standard unit of software deployment that can contain different code and dependencies.</span></span> <span data-ttu-id="1f587-106">Контейнеризация программного обеспечения позволяет разработчикам и ИТ-специалистам развертывать его в разных средах без каких-либо изменений или с минимальными изменениями.</span><span class="sxs-lookup"><span data-stu-id="1f587-106">Containerizing software this way enables developers and IT professionals to deploy them across environments with little or no modification.</span></span>
+<span data-ttu-id="40af4-105">**ВЫПУСК 3.1** — обновлен до ASP.NET Core 3.1</span><span class="sxs-lookup"><span data-stu-id="40af4-105">**EDITION v3.1** - Updated to ASP.NET Core 3.1</span></span>
 
-<span data-ttu-id="1f587-107">Контейнеры также изолируют приложения друг от друга в общей операционной системе.</span><span class="sxs-lookup"><span data-stu-id="1f587-107">Containers also isolate applications from each other on a shared OS.</span></span> <span data-ttu-id="1f587-108">Контейнерные приложения выполняются на основе узла контейнеров, который в свою очередь работает в операционной системе (Linux или Windows).</span><span class="sxs-lookup"><span data-stu-id="1f587-108">Containerized applications run on top of a container host that in turn runs on the OS (Linux or Windows).</span></span> <span data-ttu-id="1f587-109">Поэтому контейнеры требуют гораздо меньше ресурсов, чем образы виртуальных машин.</span><span class="sxs-lookup"><span data-stu-id="1f587-109">Containers therefore have a much smaller footprint than virtual machine (VM) images.</span></span>
+<span data-ttu-id="40af4-106">В этом руководстве приводится общее описание процесса разработки и развертывания контейнерных приложений ASP.NET Core с помощью Docker с использованием платформы и средств Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="40af4-106">This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools.</span></span> <span data-ttu-id="40af4-107">В этом руководстве представлено общее описание Azure DevOps для реализации конвейеров CI/CD, а также реестра контейнеров Azure (ACR) и Службы Azure Kubernetes (AKS) для развертывания.</span><span class="sxs-lookup"><span data-stu-id="40af4-107">The guide includes a high-level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR), and Azure Kubernetes Services AKS for deployment.</span></span>
 
-<span data-ttu-id="1f587-110">Каждый контейнер может вмещать целое веб-приложение или службу, как показано на рис. 1-1.</span><span class="sxs-lookup"><span data-stu-id="1f587-110">Each container can run a whole web application or a service, as shown in Figure 1-1.</span></span> <span data-ttu-id="1f587-111">В этом примере узел Docker — это узел контейнеров, а App1, App2, Svc1 и Svc2 — контейнерные приложения или службы.</span><span class="sxs-lookup"><span data-stu-id="1f587-111">In this example, Docker host is a container host, and App1, App2, Svc1, and Svc2 are containerized applications or services.</span></span>
+<span data-ttu-id="40af4-108">Подробные сведения о разработке см. в руководстве [Микрослужбы .NET: архитектура для контейнерных приложений .NET](https://docs.microsoft.com/dotnet/architecture/microservices/) и связанном с ним примере приложения [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).</span><span class="sxs-lookup"><span data-stu-id="40af4-108">For low-level, development-related details you can see the [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/architecture/microservices/) guide and it related reference application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).</span></span>
 
-![Схема, на которой показаны четыре контейнера, запущенные на виртуальной машине или сервере.](./media/index/multiple-containers-single-host.png)
+## <a name="send-us-your-feedback"></a><span data-ttu-id="40af4-109">Отправьте нам свой отзыв.</span><span class="sxs-lookup"><span data-stu-id="40af4-109">Send us your feedback!</span></span>
 
-<span data-ttu-id="1f587-113">**Рис. 1-1**.</span><span class="sxs-lookup"><span data-stu-id="1f587-113">**Figure 1-1**.</span></span> <span data-ttu-id="1f587-114">Несколько контейнеров на одном узле</span><span class="sxs-lookup"><span data-stu-id="1f587-114">Multiple containers running on a container host</span></span>
+<span data-ttu-id="40af4-110">Мы создали это руководство, чтобы помочь вам разобраться в архитектуре контейнерных приложений и микрослужб в .NET.</span><span class="sxs-lookup"><span data-stu-id="40af4-110">We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET.</span></span> <span data-ttu-id="40af4-111">Руководство и связанный с ним пример приложения будут развиваться, поэтому мы будем рады вашим отзывам!</span><span class="sxs-lookup"><span data-stu-id="40af4-111">The guide and related reference application will be evolving, so we welcome your feedback!</span></span> <span data-ttu-id="40af4-112">Если у вас есть замечания касательно того, как можно улучшить это руководство, направляйте ваши отзывы по адресу <https://aka.ms/ebookfeedback>.</span><span class="sxs-lookup"><span data-stu-id="40af4-112">If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.</span></span>
 
-<span data-ttu-id="1f587-115">Еще одним преимуществом контейнеризации является масштабируемость.</span><span class="sxs-lookup"><span data-stu-id="1f587-115">Another benefit you can derive from containerization is scalability.</span></span> <span data-ttu-id="1f587-116">Вы можете быстро осуществлять горизонтальное масштабирование, создавая контейнеры для краткосрочных задач.</span><span class="sxs-lookup"><span data-stu-id="1f587-116">You can scale out quickly by creating new containers for short-term tasks.</span></span> <span data-ttu-id="1f587-117">С точки зрения приложения, создание экземпляра образа (контейнера) аналогично созданию экземпляра процесса, например для службы или веб-приложения.</span><span class="sxs-lookup"><span data-stu-id="1f587-117">From an application point of view, instantiating an image (creating a container) is similar to instantiating a process like a service or web app.</span></span> <span data-ttu-id="1f587-118">Но для обеспечения надежности при запуске нескольких экземпляров одного образа на нескольких серверах обычно желательно, чтобы контейнеры (экземпляры образа) выполнялись на разных серверах или виртуальных машинах в разных доменах сбоя.</span><span class="sxs-lookup"><span data-stu-id="1f587-118">For reliability, however, when you run multiple instances of the same image across multiple host servers, you typically want each container (image instance) to run in a different host server or VM in different fault domains.</span></span>
+## <a name="credits"></a><span data-ttu-id="40af4-113">Благодарности</span><span class="sxs-lookup"><span data-stu-id="40af4-113">Credits</span></span>
 
-<span data-ttu-id="1f587-119">Иными словами, контейнеры предоставляют такие преимущества, как изоляция, переносимость, гибкость, масштабируемость и контроль, на протяжении всего жизненного цикла приложения.</span><span class="sxs-lookup"><span data-stu-id="1f587-119">In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the entire application lifecycle workflow.</span></span> <span data-ttu-id="1f587-120">Самым важным преимуществом является изоляция среды разработки от рабочей среды.</span><span class="sxs-lookup"><span data-stu-id="1f587-120">The most important benefit is the environment isolation provided between Dev and Ops.</span></span>
+<span data-ttu-id="40af4-114">Автор:</span><span class="sxs-lookup"><span data-stu-id="40af4-114">Author:</span></span>
+
+> <span data-ttu-id="40af4-115">**Сезар де ла Торре (Cesar de la Torre)** , старший руководитель проекта, команда разработки .NET, корпорация Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="40af4-115">**Cesar de la Torre**, Sr. PM, .NET product team, Microsoft Corp.</span></span>
+
+<span data-ttu-id="40af4-116">Редактор по приобретениям:</span><span class="sxs-lookup"><span data-stu-id="40af4-116">Acquisitions Editor:</span></span>
+
+> <span data-ttu-id="40af4-117">**Джанин Патрик (Janine Patrick)**</span><span class="sxs-lookup"><span data-stu-id="40af4-117">**Janine Patrick**</span></span>
+
+<span data-ttu-id="40af4-118">Редактор по разработкам:</span><span class="sxs-lookup"><span data-stu-id="40af4-118">Developmental Editor:</span></span>
+
+> <span data-ttu-id="40af4-119">**Боб Рассел (Bob Russell)** , специалист по решениям в корпорации Майкрософт</span><span class="sxs-lookup"><span data-stu-id="40af4-119">**Bob Russell**, Solutions Professional at Microsoft</span></span>
+>
+> [<span data-ttu-id="40af4-120">**Octal Publishing, Inc.** </span><span class="sxs-lookup"><span data-stu-id="40af4-120">**Octal Publishing, Inc.**</span></span>](http://www.octalpub.com/)
+
+<span data-ttu-id="40af4-121">Редакционная колонка:</span><span class="sxs-lookup"><span data-stu-id="40af4-121">Editorial Production:</span></span>
+
+> [<span data-ttu-id="40af4-122">Дайэнн Рассел (Dianne Russell)</span><span class="sxs-lookup"><span data-stu-id="40af4-122">Dianne Russell</span></span>](http://www.octalpub.com/)
+>
+> <span data-ttu-id="40af4-123">**Octal Publishing, Inc.**</span><span class="sxs-lookup"><span data-stu-id="40af4-123">**Octal Publishing, Inc.**</span></span>
+
+<span data-ttu-id="40af4-124">Выпускающий редактор:</span><span class="sxs-lookup"><span data-stu-id="40af4-124">Copyeditor:</span></span>
+
+> <span data-ttu-id="40af4-125">**Боб Рассел (Bob Russell)** , специалист по решениям в корпорации Майкрософт</span><span class="sxs-lookup"><span data-stu-id="40af4-125">**Bob Russell**, Solutions Professional at Microsoft</span></span>
+
+<span data-ttu-id="40af4-126">Участники и рецензенты:</span><span class="sxs-lookup"><span data-stu-id="40af4-126">Participants and reviewers:</span></span>
+
+> <span data-ttu-id="40af4-127">**Ниш Анил (Nish Anil)** , старший менеджер программ, команда .NET, корпорация Майкрософт</span><span class="sxs-lookup"><span data-stu-id="40af4-127">**Nish Anil**, Sr. Program Manager, .NET team, Microsoft</span></span>
+>
+> <span data-ttu-id="40af4-128">**Мигель Велосо** (Miguel Veloso), инженер по разработке программного обеспечения в Plain Concepts</span><span class="sxs-lookup"><span data-stu-id="40af4-128">**Miguel Veloso**, Software Development Engineer at Plain Concepts</span></span>
+>
+> <span data-ttu-id="40af4-129">**Самит Гош (Sumit Ghosh)** , главный консультант в Neudesic</span><span class="sxs-lookup"><span data-stu-id="40af4-129">**Sumit Ghosh**, Principal Consultant at Neudesic</span></span>
+
+## <a name="copyright"></a><span data-ttu-id="40af4-130">Copyright</span><span class="sxs-lookup"><span data-stu-id="40af4-130">Copyright</span></span>
+
+<span data-ttu-id="40af4-131">ИЗДАТЕЛЬ</span><span class="sxs-lookup"><span data-stu-id="40af4-131">PUBLISHED BY</span></span>
+
+<span data-ttu-id="40af4-132">Подразделение Microsoft Developer Division, команды разработки .NET и Visual Studio</span><span class="sxs-lookup"><span data-stu-id="40af4-132">Microsoft Developer Division, .NET and Visual Studio product teams</span></span>
+
+<span data-ttu-id="40af4-133">Подразделение корпорации Майкрософт</span><span class="sxs-lookup"><span data-stu-id="40af4-133">A division of Microsoft Corporation</span></span>
+
+<span data-ttu-id="40af4-134">One Microsoft Way</span><span class="sxs-lookup"><span data-stu-id="40af4-134">One Microsoft Way</span></span>
+
+<span data-ttu-id="40af4-135">Redmond, Washington 98052-6399</span><span class="sxs-lookup"><span data-stu-id="40af4-135">Redmond, Washington 98052-6399</span></span>
+
+<span data-ttu-id="40af4-136">&copy; Корпорация Майкрософт (Microsoft Corporation), 2020.</span><span class="sxs-lookup"><span data-stu-id="40af4-136">Copyright &copy; 2020 by Microsoft Corporation</span></span>
+
+<span data-ttu-id="40af4-137">Все права защищены.</span><span class="sxs-lookup"><span data-stu-id="40af4-137">All rights reserved.</span></span> <span data-ttu-id="40af4-138">Запрещается полное или частичное воспроизведение или передача настоящей книги в любом виде или любыми средствами без письменного разрешения издателя.</span><span class="sxs-lookup"><span data-stu-id="40af4-138">No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.</span></span>
+
+<span data-ttu-id="40af4-139">Эта книга предоставляется на условиях "как есть" и выражает взгляды и мнения автора.</span><span class="sxs-lookup"><span data-stu-id="40af4-139">This book is provided "as-is" and expresses the author's views and opinions.</span></span> <span data-ttu-id="40af4-140">Взгляды, мнения и сведения, содержащиеся в этой книге, включая URL-адреса и другие ссылки на веб-сайты, могут изменяться без уведомления.</span><span class="sxs-lookup"><span data-stu-id="40af4-140">The views, opinions and information expressed in this book, including URL and other Internet website references, may change without notice.</span></span>
+
+<span data-ttu-id="40af4-141">Некоторые приведенные в книге примеры служат только для иллюстрации и являются вымышленными.</span><span class="sxs-lookup"><span data-stu-id="40af4-141">Some examples depicted herein are provided for illustration only and are fictitious.</span></span> <span data-ttu-id="40af4-142">Все совпадения с реальными наименованиями, людьми и любыми другими предметами являются непреднамеренными и случайными.</span><span class="sxs-lookup"><span data-stu-id="40af4-142">No real association or connection is intended or should be inferred.</span></span>
+
+<span data-ttu-id="40af4-143">Microsoft и товарные знаки, перечисленные на странице "Товарные знаки" на сайте <https://www.microsoft.com>, являются товарными знаками группы компаний Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="40af4-143">Microsoft and the trademarks listed at <https://www.microsoft.com> on the "Trademarks" webpage are trademarks of the Microsoft group of companies.</span></span>
+
+<span data-ttu-id="40af4-144">Mac и macOS являются товарными знаками Apple Inc.</span><span class="sxs-lookup"><span data-stu-id="40af4-144">Mac and macOS are trademarks of Apple Inc.</span></span>
+
+<span data-ttu-id="40af4-145">Логотип Docker с изображением кита является зарегистрированным товарным знаком Docker, Inc. Используется с разрешения.</span><span class="sxs-lookup"><span data-stu-id="40af4-145">The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.</span></span>
+
+<span data-ttu-id="40af4-146">Все другие наименования и логотипы являются собственностью своих законных владельцев.</span><span class="sxs-lookup"><span data-stu-id="40af4-146">All other marks and logos are property of their respective owners.</span></span>
 
 >[!div class="step-by-step"]
->[<span data-ttu-id="1f587-121">Вперед</span><span class="sxs-lookup"><span data-stu-id="1f587-121">Next</span></span>](what-is-docker.md)
+>[<span data-ttu-id="40af4-147">Вперед</span><span class="sxs-lookup"><span data-stu-id="40af4-147">Next</span></span>](introduction-to-containers-and-docker.md)
