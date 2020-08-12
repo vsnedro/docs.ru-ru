@@ -3,12 +3,12 @@ title: Деревья выражений (C#)
 description: Сведения о деревьях выражений. Узнайте, как компилировать и запускать код, представляемый этими структурами данных, в которых каждый узел является выражением.
 ms.date: 07/20/2015
 ms.assetid: 7d0ac21a-6d90-4e2e-8903-528cb78615b7
-ms.openlocfilehash: 2fa8577dd945650edebf84459de10c0c3bd04225
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: a5c84673f0b45b92be18b955a6d1e7268bb73c26
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105582"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063319"
 ---
 # <a name="expression-trees-c"></a>Деревья выражений (C#)
 Деревья выражений представляют код в виде древовидной структуры, где каждый узел является выражением, например, вызовом метода или двоичной операцией, такой как `x < y`.  
@@ -22,7 +22,7 @@ ms.locfileid: "87105582"
 ## <a name="creating-expression-trees-from-lambda-expressions"></a>Создание деревьев выражений на основе лямбда-выражений  
  Когда лямбда-выражение назначается переменной с типом <xref:System.Linq.Expressions.Expression%601>, компилятор выдает код для создания дерева выражений, представляющего лямбда-выражение.  
   
- Компилятор C# может создавать деревья выражений только на основе лямбда-выражений (или однострочных лямбда-функций). Они не могут анализировать лямбды операторов (или многострочные лямбды). Дополнительные сведения о лямбда-выражениях на C# см. в разделе [Лямбда-выражения](../../statements-expressions-operators/lambda-expressions.md).  
+ Компилятор C# может создавать деревья выражений только на основе лямбда-выражений (или однострочных лямбда-функций). Они не могут анализировать лямбды операторов (или многострочные лямбды). Дополнительные сведения о лямбда-выражениях на C# см. в разделе [Лямбда-выражения](../../../language-reference/operators/lambda-expressions.md).  
   
  В следующем примере кода демонстрируется способ применения компилятора C# для создания дерева выражений, представляющего лямбда-выражение `num => num < 5`.  
   
@@ -153,6 +153,6 @@ Console.WriteLine(expr.Compile()(4));
 - <xref:System.Linq.Expressions>
 - [Выполнение деревьев выражений (C#)](./how-to-execute-expression-trees.md)
 - [Изменение деревьев выражений (C#)](./how-to-modify-expression-trees.md)
-- [Лямбда-выражения](../../statements-expressions-operators/lambda-expressions.md)
+- [Лямбда-выражения](../../../language-reference/operators/lambda-expressions.md)
 - [Общие сведения о среде DLR](../../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md)
 - [Основные понятия программирования (C#)](../index.md)
