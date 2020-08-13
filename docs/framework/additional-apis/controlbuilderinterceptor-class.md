@@ -1,5 +1,5 @@
 ---
-title: Класс Контролбуилдеринтерцептор
+title: Класс ControlBuilderInterceptor
 ms.date: 08/11/2020
 api_name:
 - System.Web.Compilation.ControlBuilderInterceptor
@@ -9,14 +9,14 @@ api_type:
 - Assembly
 topic_type:
 - apiref
-ms.openlocfilehash: 312d977f832d262b1bebc6638280b67b133babdf
-ms.sourcegitcommit: 70d6a7e4f7187cbfa332f0f8be76566f7828cfcd
+ms.openlocfilehash: 0cd7409deb9cb84783cfa70600999fa4b2a2d2e2
+ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88084410"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88187994"
 ---
-# <a name="controlbuilderinterceptor-class"></a>Класс Контролбуилдеринтерцептор
+# <a name="controlbuilderinterceptor-class"></a>Класс ControlBuilderInterceptor
 
 `ControlBuilderInterceptor`Класс позволяет настраивать или контролировать процесс компиляции.
 
@@ -31,7 +31,7 @@ internal class ControlBuilderInterceptor
 >
 > Как описано в разделе "Примечания", наличие этого типа можно проверить, чтобы определить, существует ли поддержка типа перехватчика. Корпорация Майкрософт не поддерживает никакой другой использования этого класса в рабочем приложении при любых обстоятельствах.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 В .NET Framework 2,0 и .NET Framework 3,5 в обновлении за [август 2020](https://portal.msrc.microsoft.com/security-guidance/releasenotedetail/2020-Aug) добавлена поддержка использования типа перехватчика для настройки или управления процессом компиляции. Можно определить, существует ли эта поддержка, с помощью <xref:System.Type.GetType?displayProperty=nameWithType> для проверки существования `ControlBuilderInterceptor` типа, как показано в следующем коде.
 
@@ -57,8 +57,9 @@ Type type = Type.GetType("System.Web.Compilation.ControlBuilderInterceptor, Syst
          value="Fabrikam.Interceptor, Fabrikam, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2b3831f2f2b744f7" />
   </appSettings>
 </configuration>
+```
 
-To retrieve the assembly-qualified name of a type, use the <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType> property, as demonstrated in the following code.
+Чтобы получить имя типа с указанием сборки, используйте <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType> свойство, как показано в следующем коде.
 
 ```csharp
 string assemblyQualifiedName = typeof(Fabrikam.Interceptor).AssemblyQualifiedName;
