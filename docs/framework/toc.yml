@@ -595,6 +595,10 @@
               href: additional-apis/system.servicemodel.channels.message.bodytostring.md
             - name: Метод WriteStartHeaders
               href: additional-apis/system.servicemodel.channels.message.writestartheaders.md
+    - name: System.Web.Compilation
+      items:
+        - name: Класс ControlBuilderInterceptor
+          href: additional-apis/controlbuilderinterceptor-class.md
     - name: System.Windows.Diagnostics
       items:
         - name: Класс VisualDiagnostics
