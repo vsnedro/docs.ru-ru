@@ -3,12 +3,12 @@ title: Команда dotnet nuget push
 description: Команда dotnet nuget push отправляет пакет на сервер и публикует его.
 author: karann-msft
 ms.date: 02/14/2020
-ms.openlocfilehash: 608cd05d94dd6b5cdc53d582cfaa0407f011ff37
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 50a4a542c2d192bfbd927845489d04fd1b6c6cf3
+ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86925518"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87555127"
 ---
 # <a name="dotnet-nuget-push"></a>dotnet nuget push
 
@@ -133,23 +133,26 @@ dotnet nuget push -h|--help
 - Отправляет все файлы *NUPKG* из текущего каталога в источник push-уведомлений по умолчанию:
 
   ```dotnetcli
-  dotnet nuget push *.nupkg
+  dotnet nuget push "*.nupkg"
   ```
 
   > [!NOTE]
   > Если эта команда не работает, возможно, это связано с ошибкой, которая существовала в более старых версиях пакета SDK (пакет SDK для .NET Core 2.1 и более ранних версий).
-  > Чтобы устранить эту проблему, обновите версию пакета SDK или выполните следующую команду: `dotnet nuget push **/*.nupkg`
+  > Чтобы устранить эту проблему, обновите версию пакета SDK или выполните следующую команду: `dotnet nuget push "**/*.nupkg"`
+  
+  > [!NOTE]
+  > Закрывающие кавычки необходимы для оболочек, таких как bash, выполняющих файл глобализации. Дополнительные сведения см. на странице [NuGet/Home#4393](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120).
 
 - Принудительно отправляет все файлы *NUPKG*, даже если сервер HTTP(S) возвращает код состояния 409 Conflict (конфликт):
 
   ```dotnetcli
-  dotnet nuget push *.nupkg --skip-duplicate
+  dotnet nuget push "*.nupkg" --skip-duplicate
   ```
 
 - Отправляет все файлы *NUPKG* из текущего каталога в каталог локального веб-канала:
 
   ```dotnetcli
-  dotnet nuget push *.nupkg -s c:\mydir
+  dotnet nuget push "*.nupkg" -s c:\mydir
   ```
 
   Эта команда не сохраняет пакеты в иерархическую структуру папок, что рекомендуется для оптимизации производительности. Дополнительные сведения см. в разделе [Локальные веб-каналы](/nuget/hosting-packages/local-feeds).  

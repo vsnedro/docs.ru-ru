@@ -3,18 +3,18 @@ title: Общие сведения о проверке подлинности в
 description: Описание различных способов проверки подлинности с помощью пакета Azure SDK для .NET.
 ms.date: 06/19/2020
 ms.custom: azure-sdk-dotnet
-ms.openlocfilehash: 727842b34faa37558220a3035ac5228fae196201
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: e588499a789fc5e7da7eb51009f97090ca75e562
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87301623"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916605"
 ---
 # <a name="authenticate-with-the-azure-sdk-for-net"></a>Проверка подлинности с помощью пакета Azure SDK для .NET
 
 ## <a name="recommended-azureidentity"></a>Рекомендация: Azure.Identity
 
-Новейшие пакеты в пакете Azure SDK для .NET используют для проверки подлинности общий пакет `Azure.Identity`. Именно этот пакет `Azure.Identity` является рекомендуемым по сравнению с другими механизмами проверки подлинности, описанными далее в этом документе. Идентификаторы пакетов, поддерживающие учетные данные, предоставленные `Azure.Identity`, начинаются с *Azure.* [Дополнительные сведения см. на странице последних выпусков в пакете Azure SDK для .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net).
+Новейшие пакеты в пакете Azure SDK для .NET используют для проверки подлинности общий пакет `Azure.Identity`. Именно этот пакет `Azure.Identity` является рекомендуемым по сравнению с другими механизмами проверки подлинности, описанными далее в этом документе. Идентификаторы пакетов, поддерживающие учетные данные, предоставленные `Azure.Identity`, создаются поверх `Azure.Core` и начинаются с *Azure*. [См. список пакетов](packages.md), в котором представлены сведения об инвентаризации пакетов, использующих `Azure.Core`.
 
 Полные инструкции по использованию `Azure.Identity` в проекте см. в документации по [клиенту Azure Identity для .NET](/dotnet/api/overview/azure/identity-readme).
 

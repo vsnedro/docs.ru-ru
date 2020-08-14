@@ -1,13 +1,13 @@
 ---
 title: Проектирование приложений Docker
 description: Здесь приведена ссылка на подробное руководство по архитектуре микрослужб, так как эта тема не описана в данном руководстве подробно.
-ms.date: 02/15/2019
-ms.openlocfilehash: b8a08658ec6c3df3e1aed596a0240223768dd647
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.date: 08/06/2020
+ms.openlocfilehash: b63d4344abb358a393587bdacf91f6091b531af0
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738464"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87915975"
 ---
 # <a name="design-docker-applications"></a>Проектирование приложений Docker
 

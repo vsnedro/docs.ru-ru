@@ -1,70 +1,64 @@
 ---
 title: Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности
 description: Сведения о развертывании приложения с помощью службы Azure Kubernetes.
-ms.date: 02/15/2019
-ms.openlocfilehash: 0aa2f83fbf8f9a8815d65730002943cca748643d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 08/06/2020
+ms.openlocfilehash: b4deb9906e0fece7fb611b6988df576e8b07fe46
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "71182372"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916137"
 ---
 # <a name="deploy-to-azure-kubernetes-service-aks"></a>Развертывание в службе Azure Kubernetes (AKS)
 
-Взаимодействовать со службой AKS можно с помощью предпочтительной клиентской операционной системы. В этой статье показано, как это можно делать с помощью Microsoft Windows и встроенной версии Ubuntu Linux в Windows с использованием команд Bash.
-
-Предварительные требования для использования AKS:
-
-- Компьютер разработки с Linux или Mac
-- Компьютер разработки Windows
-  - Включенный режим разработчика в Windows
-  - Подсистема Windows для Linux
-- Интерфейс Azure CLI, установленный в [Windows, Mac или Linux](https://docs.microsoft.com/cli/azure/install-azure-cli)
-
-> [!NOTE]
-> На следующих страницах можно найти полную информацию об этих компонентах:
->
-> Azure CLI: <https://docs.microsoft.com/cli/azure/index>
->
-> Подсистема Windows для Linux: <https://docs.microsoft.com/windows/wsl/about>
+Вы можете взаимодействовать с AKS, используя предпочитаемую клиентскую операционную систему (Windows, macOS или Linux) с установленным интерфейсом командной строки Azure (Azure CLI). Дополнительные сведения см. в разделах [Документация по Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) и [Руководство по установке](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) для доступных сред.
 
 ## <a name="create-the-aks-environment-in-azure"></a>Создание среды AKS в Azure
 
 Создать среду AKS можно несколькими способами. Это можно сделать с помощью команд Azure CLI или портала Azure.
 
-Здесь можно ознакомиться с рядом примеров использования Azure CLI для создания кластера и просмотра результатов на портале Azure. На компьютере разработки также должны быть установлены Kubectl и Docker.  
+Здесь можно ознакомиться с рядом примеров использования Azure CLI для создания кластера и просмотра результатов на портале Azure. На компьютере разработки также должны быть установлены Kubectl и Docker.
 
 ## <a name="create-the-aks-cluster"></a>Создание кластера AKS
 
-Создайте кластер AKS с помощью следующей команды:
+Создайте кластер AKS с помощью этой команды (должна существовать группа ресурсов):
 
 ```console
-az aks create --resource-group MSSampleResourceGroup --name MSSampleClusterK801 --agent-count 1 --generate-ssh-keys --location westus2
+az aks create --resource-group explore-docker-aks-rg --name explore-docker-aks --node-vm-size Standard_B2s --node-count 1 --generate-ssh-keys --location westeurope
 ```
 
-Когда задание завершится, созданную службу AKS можно увидеть на портале Azure:
+> [!NOTE]
+> Значений параметров `--node-vm-size` и `--node-count` достаточно для примера приложения или приложения-разработчика.
 
-Группа ресурсов:
+По завершении задания по созданию отобразится следующее:
 
-![Группа ресурсов Azure AKS в браузере.](media/aks-resource-group-view.png)
+- Кластер AKS, созданный в начальной группе ресурсов
+- Новая связанная группа ресурсов, содержащая ресурсы, связанные с кластером AKS, как показано на следующих изображениях.
+
+Исходная группа ресурсов с кластером AKS:
+
+![Группа ресурсов AKS в браузере.](media/deploy-azure-kubernetes-service/aks-cluster-view.png)
 
 **Рис. 4-17**. Группа ресурсов AKS в Azure.
 
-Кластер AKS:
+Группа ресурсов кластера AKS:
 
-![Группа ресурсов AKS в браузере.](media/aks-cluster-view.png)
+![Группа ресурсов Azure AKS в браузере.](media/deploy-azure-kubernetes-service/aks-resource-group-view.png)
 
 **Рис. 4-18**. Служба AKS в Azure.
 
-Созданный узел можно также просмотреть с помощью `Azure-CLI` и `Kubectl`.
+> [!IMPORTANT]
+> Как правило, изменять ресурсы в группе ресурсов кластера AKS не требуется. Например, при удалении кластера AKS также удаляется и группа ресурсов.
+
+Созданный узел можно также просмотреть с помощью `Azure CLI` и `Kubectl`.
 
 Сначала получите учетные данные:
 
 ```console
-az aks get-credentials --resource-group MSSampleK8ClusterRG --name MSSampleK8Cluster
+az aks get-credentials --resource-group explore-docker-aks-rg --name explore-docker-aks
 ```
 
-![Выходные данные указанной выше команды в консоли: Произведено слияние MsSampleK8Cluster в качестве текущего контекста в /root/.kube/config.](media/get-credentials-command-result.png)
+![Выходные данные указанной выше команды в консоли: Объединено "explore-docker-aks" в качестве текущего контекста в /home/miguel/.kube/config.](media/deploy-azure-kubernetes-service/get-credentials-command-result.png)
 
 **Рис. 4-19**. Результат команды `aks get-credentials`.
 
@@ -74,10 +68,10 @@ az aks get-credentials --resource-group MSSampleK8ClusterRG --name MSSampleK8Clu
 kubectl get nodes
 ```
 
-![Выходные данные указанной выше команды в консоли: Список узлов с состоянием, возрастом (временем выполнения) и версией](media/kubectl-get-nodes-command-result.png)
+![Выходные данные указанной выше команды в консоли: Список узлов с состоянием, возрастом (временем выполнения) и версией](media/deploy-azure-kubernetes-service/kubectl-get-nodes-command-result.png)
 
 **Рис. 4-20**. Результат команды `kubectl get nodes`.
 
->[!div class="step-by-step"]
->[Назад](orchestrate-high-scalability-availability.md)
->[Вперед](docker-apps-development-environment.md)
+> [!div class="step-by-step"]
+> [Назад](orchestrate-high-scalability-availability.md)
+> [Вперед](docker-apps-development-environment.md)

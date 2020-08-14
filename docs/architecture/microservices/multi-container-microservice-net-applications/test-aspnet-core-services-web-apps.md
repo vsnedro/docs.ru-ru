@@ -1,13 +1,13 @@
 ---
 title: Тестирование служб и веб-приложений ASP.NET Core
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Архитектура тестирования служб и веб-приложений ASP.NET Core в контейнерах.
-ms.date: 01/30/2020
-ms.openlocfilehash: f66d6184d913405c9372904f8072dda1dbfbe6ac
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.date: 08/07/2020
+ms.openlocfilehash: a27b3b8d392c5e1a7d1961307e6de95659cd823e
+ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988236"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "88024606"
 ---
 # <a name="testing-aspnet-core-services-and-web-apps"></a>Тестирование служб и веб-приложений ASP.NET Core
 
@@ -198,11 +198,11 @@ docker-compose -f docker-compose-test.yml -f docker-compose-test.override.yml up
 
 ### <a name="additional-resources"></a>Дополнительные ресурсы
 
-- **Файл сведений тестов** в репозитории eShopOnContainers на сайте GitHub \
-    <https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test>
+- **Модульное и интеграционное тестирование** в eShopOnContainers \
+    <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Unit-and-integration-testing>
 
-- **Файл сведений нагрузочных тестов** в репозитории eShopOnContainers на сайте GitHub \
-    <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/>
+- **Нагрузочное тестирование** в eShopOnContainers \
+    <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Load-testing>
 
 > [!div class="step-by-step"]
 > [Назад](subscribe-events.md)

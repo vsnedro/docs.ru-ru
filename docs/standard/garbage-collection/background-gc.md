@@ -5,18 +5,18 @@ ms.date: 04/21/2020
 helpviewer_keywords:
 - garbage collection, background
 - background garbage collection
-ms.openlocfilehash: 780503288d3474cd99a595bdbd52c3a5abba5308
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: bf88c14b2aeed94a548b6116749fa8669576afe1
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990237"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916995"
 ---
 # <a name="background-garbage-collection"></a>Фоновая сборка мусора
 
 При фоновой сборке мусора сборка эфемерных поколений (0 и 1) выполняется по мере надобности, в ходе выполнения сборки поколения 2. Фоновая сборка мусора выполняется в одном или нескольких выделенных потоках в зависимости от того, является ли она фоновой или серверной и применяется только к коллекциям поколения 2.
 
-Фоновая сборка мусора включена по умолчанию. Ее можно включить или отключить с помощью параметра конфигурации [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) в приложениях .NET Framework или параметра [System.GC.Concurrent](../../core/run-time-config/garbage-collector.md#systemgcconcurrentcomplus_gcconcurrent) в приложениях .NET Core.
+Фоновая сборка мусора включена по умолчанию. Ее можно включить или отключить с помощью параметра конфигурации [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) в приложениях .NET Framework или параметра [System.GC.Concurrent](../../core/run-time-config/garbage-collector.md#background-gc) в приложениях .NET Core и .NET 5 и более поздних версий.
 
 > [!NOTE]
 > Фоновая сборка мусора заменяет [параллельную сборку мусора](#concurrent-garbage-collection) и доступна в .NET Framework 4 и более поздних версиях. В .NET Framework 4 она поддерживается только для сборки мусора на *рабочих станциях*. Начиная с .NET Framework 4.5 фоновая сборка мусора доступна для сборки мусора как на *рабочих станциях*, так и на *серверах*

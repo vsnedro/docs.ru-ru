@@ -1,13 +1,13 @@
 ---
 title: Среда разработки приложений Docker
 description: Ознакомьтесь с наиболее важными средствами разработки, поддерживающими жизненный цикл разработки Docker.
-ms.date: 04/16/2020
-ms.openlocfilehash: b1df16db88fa85f794407c989f5428030c4cddf7
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.date: 08/06/2020
+ms.openlocfilehash: 07b42b2bd05ab16ba0fbf61863b050ee2c9e242b
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83394887"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916036"
 ---
 # <a name="development-environment-for-docker-apps"></a>Среда разработки приложений Docker
 
@@ -26,7 +26,7 @@ ms.locfileid: "83394887"
 
 ### <a name="visual-studio-with-docker-tools-windows-development-machine"></a>Visual Studio со средствами Docker (компьютер Windows для разработки)
 
-Мы рекомендуем использовать Visual Studio 2019 с включенными встроенными средствами Docker. С помощью Visual Studio вы можете разрабатывать, запускать и проверять приложения непосредственно в выбранной среде Docker. Нажмите клавишу F5 для отладки приложения (на основе одного контейнера или нескольких) непосредственно в узле Docker или клавиши CTRL+F5 для редактирования и обновления приложения без повторной сборки контейнера. Это самый простой и эффективный способ разработки в Windows контейнеров Docker для Linux или Windows.
+Рекомендуется использовать Visual Studio 2019 с включенными встроенными средствами Docker. С помощью Visual Studio вы можете разрабатывать, запускать и проверять приложения непосредственно в выбранной среде Docker. Нажмите клавишу F5 для отладки приложения (на основе одного контейнера или нескольких) непосредственно в узле Docker или клавиши CTRL+F5 для редактирования и обновления приложения без повторной сборки контейнера. Это самый простой и эффективный способ разработки в Windows контейнеров Docker для Linux или Windows.
 
 ### <a name="visual-studio-for-mac-mac-development-machine"></a>Visual Studio для Mac (компьютер Mac для разработки)
 

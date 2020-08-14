@@ -3,12 +3,12 @@ title: Свойства MSBuild для Microsoft.NET.Sdk
 description: Справочник по свойствам и элементам MSBuild, распознаваемым пакетом SDK для .NET Core.
 ms.date: 02/14/2020
 ms.topic: reference
-ms.openlocfilehash: 115c4f32e856dee64abe0c607b8ee595a65692e6
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 7980369b87d606d3876fe043e929a65da1d0d92b
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164377"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916250"
 ---
 # <a name="msbuild-reference-for-net-core-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET Core
 
@@ -182,7 +182,7 @@ ms.locfileid: "87164377"
 
 ### <a name="concurrentgarbagecollection"></a>ConcurrentGarbageCollection
 
-Свойство `ConcurrentGarbageCollection` указывает, включена ли [фоновая (параллельная) сборка мусора](../../standard/garbage-collection/background-gc.md). Задайте значение `false`, чтобы отключить фоновую сборку мусора. Дополнительные сведения см. в разделе [System.GC.Concurrent/COMPlus_gcConcurrent](../run-time-config/garbage-collector.md#systemgcconcurrentcomplus_gcconcurrent).
+Свойство `ConcurrentGarbageCollection` указывает, включена ли [фоновая (параллельная) сборка мусора](../../standard/garbage-collection/background-gc.md). Задайте значение `false`, чтобы отключить фоновую сборку мусора. Дополнительные сведения см. в разделе [Сборка мусора в фоновом режиме](../run-time-config/garbage-collector.md#background-gc).
 
 ```xml
 <PropertyGroup>
@@ -202,7 +202,7 @@ ms.locfileid: "87164377"
 
 ### <a name="retainvmgarbagecollection"></a>RetainVMGarbageCollection
 
-Свойство `RetainVMGarbageCollection` настраивает сборщик мусора для помещения удаленных сегментов памяти в список ожидания для будущего использования или освобождения. Значение `true` указывает сборщику мусора разместить сегменты в списке ожидания. Дополнительные сведения см. в разделе [System.GC.RetainVM/COMPlus_GCRetainVM](../run-time-config/garbage-collector.md#systemgcretainvmcomplus_gcretainvm).
+Свойство `RetainVMGarbageCollection` настраивает сборщик мусора для помещения удаленных сегментов памяти в список ожидания для будущего использования или освобождения. Значение `true` указывает сборщику мусора разместить сегменты в списке ожидания. Дополнительные сведения см. в разделе [Сохранение виртуальной машины](../run-time-config/garbage-collector.md#retain-vm).
 
 ```xml
 <PropertyGroup>
@@ -212,7 +212,7 @@ ms.locfileid: "87164377"
 
 ### <a name="servergarbagecollection"></a>ServerGarbageCollection
 
-Свойство `ServerGarbageCollection` указывает, использует ли приложение [сборку мусора рабочей станции или сборку мусора сервера](../../standard/garbage-collection/workstation-server-gc.md). Задайте значение `true`, чтобы использовать сборку мусора сервера. Дополнительные сведения см. в разделе [System.GC.Server/COMPlus_gcServer](../run-time-config/garbage-collector.md#systemgcservercomplus_gcserver).
+Свойство `ServerGarbageCollection` указывает, использует ли приложение [сборку мусора рабочей станции или сборку мусора сервера](../../standard/garbage-collection/workstation-server-gc.md). Задайте значение `true`, чтобы использовать сборку мусора сервера. Дополнительные сведения см. в разделе [Рабочая станция и сервер](../run-time-config/garbage-collector.md#workstation-vs-server).
 
 ```xml
 <PropertyGroup>

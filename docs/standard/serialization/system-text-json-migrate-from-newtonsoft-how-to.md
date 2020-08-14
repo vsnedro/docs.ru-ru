@@ -11,12 +11,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: fbd3c8062892f106ec17d0fef86d5ad7f1207d20
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 4390f46492ada4b15d187be4c43a4f7865f64a80
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87303482"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916970"
 ---
 # <a name="how-to-migrate-from-no-locnewtonsoftjson-to-no-locsystemtextjson"></a>Миграция из Newtonsoft.Json в System.Text.Json
 
@@ -91,7 +91,7 @@ ms.locfileid: "87303482"
 
 Во время десериализации `Newtonsoft.Json` выполняет сопоставление имени свойства без учета регистра по умолчанию. <xref:System.Text.Json> по умолчанию учитывает регистр, что обеспечивает более высокую производительность, так как соответствие является точным. Сведения о том, как выполнять сопоставление без учета регистра, см. в разделе [Сопоставление свойств без учета регистра](system-text-json-how-to.md#case-insensitive-property-matching).
 
-Если вы используете `System.Text.Json` косвенно с помощью ASP.NET Core, вам не нужно ничего делать для получения поведения, аналогичного `Newtonsoft.Json`. ASP.NET Core задает параметры для [имен свойств в "верблюжьем" стиле](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) и сопоставления без учета регистра при использовании `System.Text.Json`.
+Если вы используете `System.Text.Json` косвенно с помощью ASP.NET Core, вам не нужно ничего делать для получения поведения, аналогичного `Newtonsoft.Json`. ASP.NET Core задает параметры для [имен свойств в "верблюжьем" стиле](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) и сопоставления без учета регистра при использовании `System.Text.Json`. Значения по умолчанию задаются в [классе JsonOptions](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L22-L28).
 
 ### <a name="minimal-character-escaping"></a>Минимальное экранирование символов
 
@@ -128,6 +128,8 @@ ms.locfileid: "87303482"
 ### <a name="maximum-depth"></a>Максимальная глубина
 
 `Newtonsoft.Json` по умолчанию не имеет максимального предела глубины. Для <xref:System.Text.Json> существует ограничение по умолчанию 64, которое можно настроить, задав <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
+
+Если вы используете `System.Text.Json` опосредованно через ASP.NET Core, максимальный предел глубины по умолчанию составляет 32. Значение по умолчанию будет таким же, как для привязки модели, и задаваться в [классе JsonOptions](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L17-L20).
 
 ### <a name="json-strings-property-names-and-string-values"></a>Строки JSON (имена свойств и строковые значения)
 

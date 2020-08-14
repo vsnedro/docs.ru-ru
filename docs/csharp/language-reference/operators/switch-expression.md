@@ -2,12 +2,12 @@
 title: Выражение switch в справочнике по C#
 description: Узнайте, как использовать выражение switch в C# для сопоставления шаблонов и других самоанализов данных.
 ms.date: 03/19/2020
-ms.openlocfilehash: f53cbe873c841271f64496e4e5ff1f11750c7b8a
-ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
+ms.openlocfilehash: 2249afc1ff1cc81e9ad423d910ebb95df8c787d4
+ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82140668"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87916655"
 ---
 # <a name="switch-expression-c-reference"></a>Выражение switch (справочник по C#)
 
@@ -17,7 +17,7 @@ ms.locfileid: "82140668"
 
 Выражение `switch` предоставляет в контексте выражения семантику, аналогичную `switch`. Оно предоставляет краткий синтаксис, когда ветви switch возвращают значение. В следующем примере показана структура выражения switch. Оно преобразует значения из `enum`, представляя визуальные направления в интерактивном сопоставлении с соответствующим направлением кардинала:
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetBasicStructure":::
+:::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="SnippetBasicStructure":::
 
 В предыдущем примере показаны основные элементы выражения switch:
 
@@ -30,21 +30,21 @@ ms.locfileid: "82140668"
 
 ## <a name="patterns-and-case-guards"></a>Шаблоны и условия использования
 
-В выражениях switch поддерживаются многие шаблоны. В предыдущем примере использовался *шаблон значения*. *Шаблон значения* сравнивает выражение диапазона со значением. Это значение должно быть константой времени компиляции. *Шаблон типа* сравнивает выражение диапазона с известным типом. В следующем примере из последовательности извлекается третий элемент. В нем используются различные методы, основанные на типе последовательности:
+В выражениях switch поддерживаются многие шаблоны. В предыдущем примере использовался *шаблон константы*. *Шаблон константы* сравнивает выражение диапазона со значением. Это значение должно быть константой времени компиляции. *Шаблон типа* сравнивает выражение диапазона с известным типом. В следующем примере из последовательности извлекается третий элемент. В нем используются различные методы, основанные на типе последовательности:
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetTypePattern":::
+:::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="SnippetTypePattern":::
 
 Шаблоны могут быть рекурсивными, где шаблон проверяет тип, и если этот тип соответствует, шаблон соответствует одному или нескольким значениям свойств в выражении диапазона. Для расширения предыдущего примера можно использовать рекурсивные шаблоны. Вы добавляете ветви выражения switch для массивов, которые содержат менее 3 элементов. Рекурсивные шаблоны показаны в примере ниже.
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetRecursivePattern":::
+:::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="SnippetRecursivePattern":::
 
 Рекурсивные шаблоны могут проверять свойства выражения диапазона, но не могут выполнять произвольный код. Чтобы обеспечить аналогичные проверки для других типов последовательностей, можно использовать *условие регистра* указанное в предложении `when`.
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetGuardCase":::
+:::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="SnippetGuardCase":::
 
 Наконец, для перехвата аргументов можно добавить шаблоны `_` и `null`, которые не обрабатываются ни одной ветвью выражения switch. Это делает выражения switch *исчерпывающими*, что означает, что будет обрабатываться любое возможное значение выражения диапазона. В следующем примере добавляются такие ветви выражения:
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetExhaustive":::
+:::code language="csharp" source="snippets/shared/SwitchExpressions.cs" id="SnippetExhaustive":::
 
 В предыдущем примере добавляется шаблон `null`, а шаблон типа `IEnumerable<T>` меняется на шаблон `_`. В качестве ветви выражения switch шаблон `null` содержит проверку значения null. Выражение для этой ветви создает исключение <xref:System.ArgumentNullException>. Шаблон `_` соответствует всем входным данным, которые не совпали с предыдущими ветвями. Он должен появиться после проверки `null`, иначе он будет совпадать с входными файлами `null`.
 
@@ -53,5 +53,5 @@ ms.locfileid: "82140668"
 ## <a name="see-also"></a>См. также
 
 - [справочник по C#](../index.md)
-- [Операторы в C#](index.md)
+- [Операторы и выражения C#](index.md)
 - [Сопоставление шаблонов](../../pattern-matching.md)

@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 3c8fc7c4702b786c05e14397dc36d994c77e114d
-ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
+ms.openlocfilehash: fbe0b3491260e787c08b98b320b19408f2c897eb
+ms.sourcegitcommit: 09bad6ec0cbf18be7cd7f62e77286d305a18b607
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84811651"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87795389"
 ---
 # <a name="tutorial-create-a-net-core-console-application-using-visual-studio"></a>Учебник. Создание консольного приложения .NET Core в Visual Studio
 
@@ -79,7 +79,7 @@ End Module
 
 ## <a name="run-the-app"></a>Запуск приложения
 
-1. Нажмите клавиши <kbd>SHIFT</kbd>+<kbd>F5</kbd>, чтобы запустить программу без отладки.
+1. Нажмите клавиши <kbd>CTRL</kbd>+<kbd>F5</kbd>, чтобы запустить программу без отладки.
 
    Откроется окно консоли с текстом "Hello World!" на экране и информацией об отладке Visual Studio.
 
@@ -102,7 +102,7 @@ End Module
 
    Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке. Значение выражения вставляется в строку вместо выражения. Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).
 
-1. Нажмите клавиши <kbd>SHIFT</kbd>+<kbd>F5</kbd>, чтобы запустить программу без отладки.
+1. Нажмите клавиши <kbd>CTRL</kbd>+<kbd>F5</kbd>, чтобы запустить программу без отладки.
 
 1. В ответ на приглашение в командной строке введите имя и нажмите клавишу <kbd>ВВОД</kbd>.
 
