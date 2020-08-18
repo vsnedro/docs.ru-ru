@@ -7,12 +7,12 @@ helpviewer_keywords:
 - await keyword [C#]
 - await [C#]
 ms.assetid: 50725c24-ac76-4ca7-bca1-dd57642ffedb
-ms.openlocfilehash: 20fc492e45b2d248602de59682e752026d421e06
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 1941174d7e8d1676d11a13fa3ee6c7b84fe3952c
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916918"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063241"
 ---
 # <a name="await-operator-c-reference"></a>Оператор await (справочник по C#)
 
@@ -27,7 +27,7 @@ ms.locfileid: "87916918"
 > [!NOTE]
 > Общие сведения об асинхронном программировании см. в разделе [Асинхронное программирование с использованием ключевых слов async и await](../../programming-guide/concepts/async/index.md). Асинхронное программирование `async` и `await` следует [асинхронной модели, основанной на задачах](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
-Оператор `await` можно использовать только в методе, [лямбда-выражении](../../programming-guide/statements-expressions-operators/lambda-expressions.md) или в [анонимном методе](delegate-operator.md), изменяемом ключевым словом [async](../keywords/async.md). В асинхронном методе нельзя использовать оператор `await` в теле синхронной функции, внутри блока [инструкции lock](../keywords/lock-statement.md) и в [ненадежном](../keywords/unsafe.md) контексте.
+Оператор `await` можно использовать только в методе, [лямбда-выражении](lambda-expressions.md) или в [анонимном методе](delegate-operator.md), изменяемом ключевым словом [async](../keywords/async.md). В асинхронном методе нельзя использовать оператор `await` в теле синхронной функции, внутри блока [инструкции lock](../keywords/lock-statement.md) и в [ненадежном](../keywords/unsafe.md) контексте.
 
 Операнд оператора `await` обычно имеет один из следующих типов .NET: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask> или <xref:System.Threading.Tasks.ValueTask%601>. Однако любое ожидаемое выражение может быть операндом оператора `await`. Дополнительные сведения см. в разделе об [ожидаемых выражениях](~/_csharplang/spec/expressions.md#awaitable-expressions) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 

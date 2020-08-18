@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - delegates [C#], declaring and instantiating
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
-ms.openlocfilehash: 8d4c8424b07a9bccc9112ca9e635a78b9e1a3366
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: b741b3bc9c03faaa5fa2c01bd8f70d4be9b099c2
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87300219"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063670"
 ---
 # <a name="how-to-declare-instantiate-and-use-a-delegate-c-programming-guide"></a>Руководство по программированию на C#. Объявление, создание экземпляра и использование делегата
 В C# 1.0 и более поздних версий делегаты можно объявлять так, как показано в следующем примере.  
@@ -31,7 +31,7 @@ ms.locfileid: "87300219"
   
  [!code-csharp[csProgGuideDelegates#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#31)]  
   
- Дополнительные сведения см. в разделе [Лямбда-выражения](../statements-expressions-operators/lambda-expressions.md).  
+ Дополнительные сведения см. в разделе [Лямбда-выражения](../../language-reference/operators/lambda-expressions.md).  
   
  Следующий пример демонстрирует объявление, создание экземпляра и использование делегата. Класс `BookDB` инкапсулирует базу данных книжного магазина, в которой хранится информация о книгах. Он предоставляет метод `ProcessPaperbackBooks`, который находит в базе данных все книги в мягкой обложке и вызывает делегат для каждой из них. Используется тип `delegate` с именем `ProcessBookDelegate`. Класс `Test` использует этот класс для печати заголовков и средней цены книг в мягкой обложке.  
   

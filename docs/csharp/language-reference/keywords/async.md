@@ -8,16 +8,16 @@ helpviewer_keywords:
 - async method [C#]
 - async [C#]
 ms.assetid: 16f14f09-b2ce-42c7-a875-e4eca5d50674
-ms.openlocfilehash: 89133339a75c70e3ac86d627065e78d555bff71d
-ms.sourcegitcommit: 2514f4e3655081dcfe1b22470c0c28500f952c42
+ms.openlocfilehash: 279ea2f9875681401c9c7acab922d9e4424e6827
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79507208"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88062539"
 ---
 # <a name="async-c-reference"></a>async (справочник по C#)
 
-Модификатор `async` позволяет указать, что метод, [лямбда-выражение](../../programming-guide/statements-expressions-operators/lambda-expressions.md) или [анонимный метод](../operators/delegate-operator.md) является асинхронным. Если этот модификатор используется в методе или выражении, они называются *асинхронными методами*. Ниже приводится пример асинхронного метода с именем `ExampleMethodAsync`:
+Модификатор `async` позволяет указать, что метод, [лямбда-выражение](../operators/lambda-expressions.md) или [анонимный метод](../operators/delegate-operator.md) является асинхронным. Если этот модификатор используется в методе или выражении, они называются *асинхронными методами*. Ниже приводится пример асинхронного метода с именем `ExampleMethodAsync`:
   
 ```csharp  
 public async Task<int> ExampleMethodAsync()  

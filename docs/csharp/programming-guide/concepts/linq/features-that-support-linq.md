@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - LINQ [C#], features supporting LINQ
 ms.assetid: 524b0078-ebfd-45a7-b390-f2ceb9d84797
-ms.openlocfilehash: f72b82180d794086dcea9f11a7a057dc26ab0b26
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 13254c69193e04ffcf11e3e23f1deb460063a6c1
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105427"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063696"
 ---
 # <a name="c-features-that-support-linq"></a>Возможности C#, поддерживающие LINQ
 
@@ -97,7 +97,7 @@ select new {name = cust.Name, phone = cust.Phone};
 
 - [Анонимные функции](../../statements-expressions-operators/anonymous-functions.md)
 
-- [Лямбда-выражения](../../statements-expressions-operators/lambda-expressions.md)
+- [Лямбда-выражения](../../../language-reference/operators/lambda-expressions.md)
 
 - [Деревья выражений (C#)](../expression-trees/index.md)
 

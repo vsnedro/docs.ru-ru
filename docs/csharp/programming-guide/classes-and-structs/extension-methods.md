@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extension methods [C#]
 - methods [C#], extension
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-ms.openlocfilehash: e57447c89749451862bbb80047ed74135a0eb752
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 116087ac1aab57f2869b05f436801c7861c56eca
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474817"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063709"
 ---
 # <a name="extension-methods-c-programming-guide"></a>Методы расширения (Руководство по программированию в C#)
 
@@ -22,7 +22,7 @@ ms.locfileid: "86474817"
 
 ### <a name="orderby-example"></a>Пример OrderBy
 
-В следующем примере показано, как вызывать метод стандартного оператора запроса `OrderBy` для массива целых чисел. Выражение в скобках называется лямбда-выражением. Многие стандартные операторы запроса принимают лямбда-выражения в качестве параметров, но это необязательно для методов расширения. Дополнительные сведения см. в разделе [Лямбда-выражения](../statements-expressions-operators/lambda-expressions.md).
+В следующем примере показано, как вызывать метод стандартного оператора запроса `OrderBy` для массива целых чисел. Выражение в скобках называется лямбда-выражением. Многие стандартные операторы запроса принимают лямбда-выражения в качестве параметров, но это необязательно для методов расширения. Дополнительные сведения см. в разделе [Лямбда-выражения](../../language-reference/operators/lambda-expressions.md).
 
 [!code-csharp[csProgGuideExtensionMethods#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExtensionMethods/cs/extensionmethods.cs#3)]
 
@@ -121,7 +121,7 @@ static class DomainEntityExtensions
 
 - [Руководство по программированию на C#](../index.md)
 - [Parallel Programming Samples (Образцы параллельного программирования, включают множество примеров методов расширения)](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel)
-- [Лямбда-выражения](../statements-expressions-operators/lambda-expressions.md)
+- [Лямбда-выражения](../../language-reference/operators/lambda-expressions.md)
 - [Общие сведения о стандартных операторах запроса](../concepts/linq/standard-query-operators-overview.md)
 - [Conversion Rules for Instance Parameters and their Impact (Правила преобразования для параметров экземпляра и их влияние)](https://docs.microsoft.com/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
 - [Extension Methods Interoperability between Languages (Взаимодействие между языками с помощью методов расширения)](https://docs.microsoft.com/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)

@@ -3,12 +3,12 @@ title: Основные принципы и терминология (функц
 description: Возможности функционального программирования упрощают преобразование XML. Изучите основные понятия и терминологию чисто функциональных преобразований в C#.
 ms.date: 07/20/2015
 ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
-ms.openlocfilehash: ee972b376f0d0898b7681049b9641b43780ed353
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: ca05a914f6156730e773d1effebfc72626b16507
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87103985"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063280"
 ---
 # <a name="concepts-and-terminology-functional-transformation-c"></a>Основные принципы и терминология (функциональное преобразование) (C#)
 
@@ -55,7 +55,7 @@ ms.locfileid: "87103985"
 лямбда-выражение \
 По сути это встроенная анонимная функция, которая может использоваться, когда тип делегата неизвестен. Это упрощенное значение лямбда-выражений, однако оно достаточно для целей данного учебника.
 
-Дополнительные сведения см. в разделе [Лямбда-выражения](../../statements-expressions-operators/lambda-expressions.md).
+Дополнительные сведения см. в разделе [Лямбда-выражения](../../../language-reference/operators/lambda-expressions.md).
 
 коллекция \
 Структурированный набор данных обычно стандартного типа. Для обеспечения совместимости с LINQ коллекция должна реализовывать интерфейс <xref:System.Collections.IEnumerable> или интерфейс <xref:System.Linq.IQueryable> (или один из их основных прототипов <xref:System.Collections.Generic.IEnumerator%601> или <xref:System.Linq.IQueryable%601>).

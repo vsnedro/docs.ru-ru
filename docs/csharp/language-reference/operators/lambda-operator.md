@@ -7,12 +7,12 @@ helpviewer_keywords:
 - lambda operator [C#]
 - => operator [C#]
 - lambda expressions [C#], => operator
-ms.openlocfilehash: b72b058c1709e7a643a70233cc3289d5d9165ca4
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 30e1a3546f83a0a1ba5b1363238878868e94ab93
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916798"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063137"
 ---
 # <a name="-operator-c-reference"></a>Оператор => (справочник по C#)
 
@@ -20,7 +20,7 @@ ms.locfileid: "87916798"
 
 ## <a name="lambda-operator"></a>Лямбда-оператор
 
-В [лямбда-выражениях](../../programming-guide/statements-expressions-operators/lambda-expressions.md) лямбда-оператор `=>` используется для отделения входных параметров с левой стороны от тела лямбда-выражения с правой стороны.
+В [лямбда-выражениях](lambda-expressions.md) лямбда-оператор `=>` используется для отделения входных параметров с левой стороны от тела лямбда-выражения с правой стороны.
 
 В следующих примерах используется функция [LINQ](../../programming-guide/concepts/linq/index.md) с синтаксисом метода для демонстрации применения лямбда-выражений:
 
@@ -34,7 +34,7 @@ ms.locfileid: "87916798"
 
 [!code-csharp-interactive[without input variables](snippets/shared/LambdaOperator.cs#WithoutInput)]
 
-Дополнительные сведения см. в разделе [Лямбда-выражения](../../programming-guide/statements-expressions-operators/lambda-expressions.md).
+Дополнительные сведения см. в разделе [Лямбда-выражения](lambda-expressions.md).
 
 ## <a name="expression-body-definition"></a>Определения тела выражения
 

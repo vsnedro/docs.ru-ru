@@ -8,12 +8,12 @@ helpviewer_keywords:
 - struct type [C#]
 - structure type [C#]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: dbe9b47625589de834b7a8021640885ca0920b96
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: 515b8d9adc1359581625f0d822e254d2c1df3b58
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "82021275"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88062500"
 ---
 # <a name="structure-types-c-reference"></a>Типы структур (справочник по C#)
 
@@ -111,7 +111,7 @@ ms.locfileid: "82021275"
 - Структура `ref` не может реализовывать интерфейсы.
 - Структура `ref` не может быть упакована в <xref:System.ValueType?displayProperty=nameWithType> или <xref:System.Object?displayProperty=nameWithType>.
 - Структура `ref` не может быть аргументом типа.
-- Переменная структуры `ref` не может быть зафиксирована [лямбда-выражением](../../programming-guide/statements-expressions-operators/lambda-expressions.md) или [локальной функцией](../../programming-guide/classes-and-structs/local-functions.md).
+- Переменная структуры `ref` не может быть зафиксирована [лямбда-выражением](../operators/lambda-expressions.md) или [локальной функцией](../../programming-guide/classes-and-structs/local-functions.md).
 - Переменную структуры `ref` нельзя использовать в методе [`async`](../keywords/async.md). Однако переменные структуры `ref` можно использовать в синхронных методах, например в тех, которые возвращают <xref:System.Threading.Tasks.Task> или <xref:System.Threading.Tasks.Task%601>.
 - Переменную структуры `ref` нельзя использовать в [итераторах](../../iterators.md).
 

@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Сведения о пакетах SDK для проектов .NET Core.
 ms.date: 02/02/2020
 ms.topic: conceptual
-ms.openlocfilehash: 9db62ab7774e3dd71412fa346d78ae0c62a2f81f
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 873c06007307c5892c4828f987486b4dd98dc9ae
+ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803045"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88187918"
 ---
 # <a name="net-core-project-sdks"></a>Пакеты SDK для проектов .NET Core
 
@@ -22,7 +22,7 @@ ms.locfileid: "85803045"
 | ID | Описание | Репозиторий|
 | - | - | - |
 | `Microsoft.NET.Sdk` | Пакет SDK для .NET Core | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Web` | [Веб-пакет SDK](/aspnet/core/razor-pages/web-sdk) для .NET Core | <https://github.com/aspnet/websdk> |
+| `Microsoft.NET.Sdk.Web` | [Веб-пакет SDK](/aspnet/core/razor-pages/web-sdk) для .NET Core | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | [Пакет SDK для Razor](/aspnet/core/razor-pages/sdk) в .NET Core |
 | `Microsoft.NET.Sdk.Worker` | Пакет SDK для службы рабочей роли в .NET Core |
 | `Microsoft.NET.Sdk.WindowsDesktop` | Пакет SDK для WinForms и WPF в .NET Core |

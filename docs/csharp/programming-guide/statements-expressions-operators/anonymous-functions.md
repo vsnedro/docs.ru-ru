@@ -7,18 +7,18 @@ helpviewer_keywords:
 - anonymous functions [C#]
 - anonymous methods [C#]
 ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365
-ms.openlocfilehash: ae8bda3c68542637b1430587ca4a537980c028bc
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 1fde7d535054f09d55018a010468776622ebfba7
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381675"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063267"
 ---
 # <a name="anonymous-functions-c-programming-guide"></a>Руководство по программированию на C#. Анонимные функции
 
 Анонимная функция — это "встроенный" оператор или выражение, которое может использоваться, когда тип делегата неизвестен. Ее можно использовать для инициализации именованного делегата или передать вместо типа именованного делегата в качестве параметра метода.
 
-Для создания анонимной функции можно использовать [лямбда-выражение](lambda-expressions.md) или [анонимный метод](../../language-reference/operators/delegate-operator.md). Мы советуем использовать лямбда-выражения, так как это более лаконичный способ написания встроенного кода. В отличие от анонимных методов некоторые типы лямбда-выражений можно преобразовывать в типы дерева выражений.
+Для создания анонимной функции можно использовать [лямбда-выражение](../../language-reference/operators/lambda-expressions.md) или [анонимный метод](../../language-reference/operators/delegate-operator.md). Мы советуем использовать лямбда-выражения, так как это более лаконичный способ написания встроенного кода. В отличие от анонимных методов некоторые типы лямбда-выражений можно преобразовывать в типы дерева выражений.
 
 ## <a name="the-evolution-of-delegates-in-c"></a>Эволюция делегатов в C\#
 
@@ -35,6 +35,6 @@ ms.locfileid: "87381675"
 ## <a name="see-also"></a>См. также
 
 - [Инструкции, выражения и операторы](./index.md)
-- [Лямбда-выражения](./lambda-expressions.md)
+- [Лямбда-выражения](../../language-reference/operators/lambda-expressions.md)
 - [Делегаты](../delegates/index.md)
 - [Деревья выражений (C#)](../concepts/expression-trees/index.md)
