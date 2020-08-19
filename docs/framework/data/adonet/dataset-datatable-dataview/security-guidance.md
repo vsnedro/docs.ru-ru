@@ -3,12 +3,12 @@ title: Набор данных и руководство по безопасно
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: 2fbac625ae0049fc4c363977dc1d3fbcfb376025
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.openlocfilehash: f0fa43c467cc7866e69115acb5f807e6487fda7a
+ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86416204"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88608525"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Набор данных и руководство по безопасности DataTable
 
@@ -16,7 +16,7 @@ ms.locfileid: "86416204"
 
 * .NET Framework (все версии)
 * .NET Core и более поздние версии
-* .NET 5,0 и более поздние версии
+* .NET 5.0 и более поздней версии
 
 Типы [DataSet](/dotnet/api/system.data.dataset) и [DataTable](/dotnet/api/system.data.datatable) являются устаревшими компонентами .NET, которые позволяют представлять наборы данных как управляемые объекты. Эти компоненты появились в .NET 1,0 как часть исходной [инфраструктуры ADO.NET](/dotnet/framework/data/adonet/dataset-datatable-dataview/). Их цель — предоставить управляемое представление по реляционному набору данных, чтобы отказаться от того, является ли базовый источник данных XML, SQL или другой технологией.
 
@@ -29,7 +29,7 @@ ms.locfileid: "86416204"
 * Примитивы и примитивные эквиваленты: `bool` , `char` , `sbyte` , `byte` , `short` , `ushort` , `int` , `uint` ,,, `long` `ulong` `float` `double` `decimal` `DateTime` `DateTimeOffset` `TimeSpan` `string` `Guid` `SqlBinary` `SqlBoolean` `SqlByte` `SqlBytes` `SqlChars` `SqlDateTime` `SqlDecimal` `SqlDouble` `SqlGuid` `SqlInt16` `SqlInt32` `SqlInt64` `SqlMoney` `SqlSingle` `SqlString` ,,,,,,,,,,,,,,,,,,,,,, и.
 * Часто используемые не примитивы: `Type` , `Uri` и `BigInteger` .
 * Часто используемые типы _System. Drawing_ : `Color` , `Point` , `PointF` , `Rectangle` , `RectangleF` , `Size` и `SizeF` .
-* `Enum`типов.
+* `Enum` типов.
 * Массивы и списки приведенных выше типов.
 
 Если входящие XML-данные содержат объект, тип которого отсутствует в этом списке:
@@ -252,7 +252,7 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 
 Дополнительные сведения см. в разделе ["параметры конфигурации среды выполнения .NET Core"](/dotnet/core/run-time-config/).
 
-`AllowArbitraryDataSetTypeInstantiation`также можно задать программно с помощью [AppContext. сетсвитч](/dotnet/api/system.appcontext.setswitch) вместо файла конфигурации, как показано в следующем коде:
+`AllowArbitraryDataSetTypeInstantiation` также можно задать программно с помощью [AppContext. сетсвитч](/dotnet/api/system.appcontext.setswitch) вместо файла конфигурации, как показано в следующем коде:
 
 ```cs
 // Warning: setting the following switch can introduce a security problem.
@@ -289,7 +289,7 @@ AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation"
 * `DataSet.ReadXml`Метод или `DataTable.ReadXml` используется для чтения XML-файла, содержащего сведения о столбцах и строках.
 * `DataSet`Экземпляр или `DataTable` сериализуется как часть ASP.NET (SOAP) веб-служб или КОНЕЧНОЙ точки WCF.
 * Сериализатор, такой как `XmlSerializer` , используется для десериализации `DataSet` `DataTable` экземпляра или из потока XML.
-* Сериализатор, такой как `JsonConvert` , используется для десериализации `DataSet` `DataTable` экземпляра или из потока JSON. `JsonConvert`— Это метод в популярном [Newtonsoft.Jsе](https://www.newtonsoft.com/json) стороннего производителя для библиотеки.
+* Сериализатор, такой как `JsonConvert` , используется для десериализации `DataSet` `DataTable` экземпляра или из потока JSON. `JsonConvert` — Это метод в популярном [Newtonsoft.Jsе](https://www.newtonsoft.com/json) стороннего производителя для библиотеки.
 * Сериализатор, такой как `BinaryFormatter` , используется для десериализации `DataSet` `DataTable` экземпляра или из потока необработанных байтов.
 
 В этом документе обсуждаются вопросы безопасности в предыдущих сценариях.
@@ -330,7 +330,7 @@ adapter.Fill(customers, "Customers");
 
 Реализации `DataSet.ReadXml` и `DataTable.ReadXml` изначально были созданы до того, как уязвимые места сериализации были хорошо понятными категориями угроз. В результате код не соответствует текущим рекомендациям по обеспечению безопасности. Эти API-интерфейсы можно использовать в качестве векторов, чтобы злоумышленники могли совершать атаки через DoS в отношении приложений. Эти атаки могут привести к невозможности отклика веб-службы или вызвать непредвиденное завершение процесса. Платформа не обеспечивает устранение рисков для этих категорий атак, и .NET считает это поведение «по разработке».
 
-.NET выпускает обновления для системы безопасности, чтобы устранить некоторые проблемы, такие как раскрытие информации или удаленное выполнение кода в `DataSet.ReadXml` и `DataTable.ReadXml` . Обновления для системы безопасности .NET могут не обеспечивать полную защиту от этих категорий угроз. Потребители должны оценивать отдельные сценарии и рассматривают их потенциальные угрозы.
+.NET выпускает обновления для системы безопасности, чтобы устранить некоторые проблемы, такие как раскрытие информации или удаленное выполнение кода в `DataSet.ReadXml` и `DataTable.ReadXml` . Обновления для системы безопасности .NET могут не обеспечивать полную защиту от этих категорий угроз. Мы рекомендуем всем потребителям проанализировать особенности конкретных сценариев применения и оценить их уязвимость в отношении этих рисков.
 
 Потребители должны учитывать, что обновления безопасности этих API могут повлиять на совместимость приложений в некоторых ситуациях. Кроме того, существует вероятность того, что в этих API будет обнаружена романская уязвимость, для которой .NET не может фактически публиковать обновление для системы безопасности.
 
@@ -488,3 +488,28 @@ public class MyClass
 * Предлагает встроенные средства защиты при десериализации данных из ненадежных источников.
 
 Для приложений, использующих `.aspx` конечные точки SOAP, рассмотрите возможность изменения этих конечных точек для использования [WCF](/dotnet/framework/wcf/). WCF — это наиболее полнофункциональная замена `.asmx` веб-служб. Конечные точки WCF [могут быть предоставлены через SOAP](../../../wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) для совместимости с существующими вызывающими объектами.
+
+## <a name="code-analyzers"></a>Анализаторы кода
+
+Правила безопасности анализатора кода, которые выполняются при компиляции исходного кода, могут помочь найти уязвимости, связанные с этой проблемой безопасности, в C# и Visual Basicном коде. Microsoft. CodeAnalysis. Фкскопанализерс — это пакет NuGet анализаторов кода, который распространяется на [NuGet.org](https://www.nuget.org/).
+
+Обзор анализаторов кода см. в разделе [Обзор анализаторов исходного кода](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview).
+
+Включите следующие правила Microsoft. CodeAnalysis. Фкскопанализерс:
+
+- [CA2350](https://docs.microsoft.com/visualstudio/code-quality/ca2350): не используйте DataTable. ReadXml () с ненадежными данными
+- [CA2351](https://docs.microsoft.com/visualstudio/code-quality/ca2351): не используйте DataSet. ReadXml () с ненадежными данными
+- [CA2352](https://docs.microsoft.com/visualstudio/code-quality/ca2352): ненадежный набор данных или DataTable в сериализуемых типах может быть уязвим для атак удаленного выполнения кода
+- [CA2353](https://docs.microsoft.com/visualstudio/code-quality/ca2353): ненадежный набор данных или DataTable в типе Serializable
+- [CA2354](https://docs.microsoft.com/visualstudio/code-quality/ca2354): ненадежный набор данных или DataTable в графе десериализованных объектов может быть уязвим для атак удаленного выполнения кода
+- [CA2355](https://docs.microsoft.com/visualstudio/code-quality/ca2355): обнаружен ненадежный набор данных или тип DataTable в графе несериализуемых объектов
+- [CA2356](https://docs.microsoft.com/visualstudio/code-quality/ca2356): ненадежный набор данных или тип DataTable в графе веб-десериализуемых объектов
+- [CA2361](https://docs.microsoft.com/visualstudio/code-quality/ca2361): Убедитесь, что автоматически сформированный класс содержит DataSet. ReadXml () не используется с ненадежными данными
+- [CA2362](https://docs.microsoft.com/visualstudio/code-quality/ca2362): ненадежный набор данных или DataTable в автоматически созданном сериализуемым типе может быть уязвим для атак удаленного выполнения кода
+
+Дополнительные сведения о настройке правил см. в статье [использование анализаторов кода](https://docs.microsoft.com/visualstudio/code-quality/use-roslyn-analyzers).
+
+Новые правила безопасности доступны в следующих пакетах NuGet:
+
+- Microsoft. CodeAnalysis. Фкскопанализерс 3.3.0: для Visual Studio 2019 версии 16,3 или более поздней.
+- Microsoft. CodeAnalysis. Фкскопанализерс 2.9.11: для Visual Studio 2017 версии 15,9 или более поздней.
