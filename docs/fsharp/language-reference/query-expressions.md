@@ -1,19 +1,17 @@
 ---
 title: Выражения запросов
 description: 'Сведения о поддержке выражений запросов для LINQ на языке программирования F #.'
-ms.date: 05/16/2016
-ms.openlocfilehash: c6f33a58bc959745a5f83bdcfe378a4dbbe577c5
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.date: 08/15/2020
+ms.openlocfilehash: afcc6e92818b1648a210ad9cfc3f1dcfa46037b5
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855040"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88559067"
 ---
 # <a name="query-expressions"></a>Выражения запросов
 
 Выражения запросов позволяют запрашивать источник данных и размещать данные в нужной форме. Выражения запросов обеспечивают поддержку LINQ в F #.
-> [!NOTE]
-> Справочник по API docs.microsoft.com для F # не завершен. Если вы столкнулись с неработающими ссылками, используйте [документацию по основной библиотеке F #](https://fsharp.github.io/fsharp-core-docs/) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,9 +43,9 @@ query1
 |> Seq.iter (fun customer -> printfn "Company: %s Contact: %s" customer.CompanyName customer.ContactName)
 ```
 
-В предыдущем примере кода выражение запроса заключено в фигурные скобки. Значение кода в выражении — возвращает каждого клиента в таблице Customers в базе данных в результатах запроса. Выражения запроса возвращают тип, который реализует <xref:System.Linq.IQueryable%601> и <xref:System.Collections.Generic.IEnumerable%601> , и поэтому их можно перебирать с помощью [модуля seq](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) , как показано в примере.
+В предыдущем примере кода выражение запроса заключено в фигурные скобки. Значение кода в выражении — возвращает каждого клиента в таблице Customers в базе данных в результатах запроса. Выражения запроса возвращают тип, который реализует <xref:System.Linq.IQueryable%601> и <xref:System.Collections.Generic.IEnumerable%601> , и поэтому их можно перебирать с помощью [модуля seq](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) , как показано в примере.
 
-Каждый тип вычислительного выражения строится на основе класса построителя. Класс построителя для выражения вычисления запроса имеет значение `QueryBuilder` . Дополнительные сведения см. в разделе [выражения вычислений](computation-expressions.md) и [класс LINQ. QueryBuilder](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d).
+Каждый тип вычислительного выражения строится на основе класса построителя. Класс построителя для выражения вычисления запроса имеет значение `QueryBuilder` . Дополнительные сведения см. в разделе [выражения вычисления](computation-expressions.md) и [класс QueryBuilder](hhttps://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html).
 
 ## <a name="query-operators"></a>Операторы запроса
 
@@ -55,7 +53,7 @@ query1
 
 В выражениях запросов допускаются только выражения, которые могут быть преобразованы в SQL. Например, при использовании оператора запроса в выражениях не допускаются вызовы функций `where` .
 
-В таблице 1 показаны доступные операторы запросов. Кроме того, см. раздел Table2, в котором сравниваются SQL запросы и эквивалентные выражения запросов F # далее в этом разделе. Некоторые поставщики типов не поддерживают некоторые операторы запросов. В частности, поставщик типов OData ограничен в операторах запросов, которые он поддерживает, из-за ограничений в OData. Дополнительные сведения см. в разделе [ODataService Type Provider (F #)](https://msdn.microsoft.com/library/bac609dd-9d12-4bf9-a662-24bdf4faa43e).
+В таблице 1 показаны доступные операторы запросов. Кроме того, см. раздел Table2, в котором сравниваются SQL запросы и эквивалентные выражения запросов F # далее в этом разделе. Некоторые поставщики типов не поддерживают некоторые операторы запросов. В частности, поставщик типов OData ограничен в операторах запросов, которые он поддерживает, из-за ограничений в OData.
 
 В этой таблице предполагается, что база данных имеет следующий вид:
 
@@ -83,7 +81,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 <table style="width:100%">
   <tr>
     <th>Оператор</th>
-    <th>Описание:</th>
+    <th>Описание</th>
   </tr>
   <tr>
   <td><code>contains</code></td>
@@ -682,7 +680,7 @@ query {
 </code></pre>
 
 </td></tr><tr><td>
-<code>IN</code>набор указанных значений<br/>
+<code>IN</code> набор указанных значений<br/>
 
 <pre><code class="lang-sql">SELECT *
 FROM Student
@@ -723,7 +721,7 @@ query {
 </code></pre>
 
 </td></tr><tr><td>
-<code>LIKE</code>с набором совпадений шаблона.<br/>
+<code>LIKE</code> с набором совпадений шаблона.<br/>
 
 <pre><code class="lang-sql">-- '[abc]%' matches strings where the first character is
 -- 'a', 'b', 'c', 'A', 'B', or 'C'
@@ -740,7 +738,7 @@ WHERE Student.Name LIKE '[abc]%'
 </code></pre>
 
 </td></tr><tr><td>
-<code>LIKE</code>с шаблоном исключения Set.<br/>
+<code>LIKE</code> с шаблоном исключения Set.<br/>
 
 <pre><code class="lang-sql">-- '[^abc]%' matches strings where the first character is
 -- not 'a', 'b', 'c', 'A', 'B', or 'C'
@@ -759,7 +757,7 @@ query {
 </code></pre>
 
 </td></tr><tr><td>
-<code>LIKE</code>в одном поле, но выберите другое поле.<br/>
+<code>LIKE</code> в одном поле, но выберите другое поле.<br/>
 
 <pre><code class="lang-sql">SELECT StudentID AS ID FROM Student
 WHERE Student.Name LIKE '[^abc]%'
@@ -809,7 +807,7 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td><code>LEFT JOIN</code>с двумя таблицами.<br/>
+</td></tr><tr><td><code>LEFT JOIN</code> с двумя таблицами.<br/>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 LEFT JOIN CourseSelection
@@ -911,7 +909,7 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td><code>OR</code>с упорядочением<br/>
+</td></tr><tr><td><code>OR</code> с упорядочением<br/>
 
 <pre><code class="lang-sql">SELECT * FROM Student
 WHERE Student.Age = 12 OR Student.Age = 13
@@ -951,7 +949,7 @@ query {
 }
 </code></pre>
 
-</td></tr><tr><td><code>UNION</code>двух запросов.<br/>
+</td></tr><tr><td><code>UNION</code> двух запросов.<br/>
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable no-space-in-emphasis -->
@@ -1006,7 +1004,7 @@ let query2 =
 query1.Intersect(query2)
 </code></pre>
 
-</td></tr><tr><td><code>CASE</code>выполняет.<br/>
+</td></tr><tr><td><code>CASE</code> выполняет.<br/>
 
 <pre><code class="lang-sql">SELECT student.StudentID,
 CASE Student.Age
@@ -2439,5 +2437,5 @@ end
 ## <a name="see-also"></a>См. также
 
 - [Справочник по языку F#](index.md)
-- [Класс LINQ. QueryBuilder](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)
+- [Класс QueryBuilder](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html)
 - [Выражения вычисления](Computation-Expressions.md)

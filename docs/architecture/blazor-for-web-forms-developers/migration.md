@@ -7,12 +7,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 09/19/2019
-ms.openlocfilehash: ca3d8747b02602c89aec187ea0826e658fb0cbc4
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: ba6dbfdf9a4fa9973dfe84cf5d58f1300f5d0cb4
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267806"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88557546"
 ---
 # <a name="migrate-from-aspnet-web-forms-to-no-locblazor"></a>Переход с веб-форм ASP.NET на Blazor
 
@@ -559,10 +559,6 @@ namespace eShopLegacyWebForms.Catalog
 ```
 
 `EditForm`Контекст включает поддержку проверки и может быть заключен во входные данные. Заметки к данным являются обычным способом добавления проверки. Такая поддержка проверки может быть добавлена через `DataAnnotationsValidator` компонент. Дополнительные сведения об этом механизме см. в разделе [ASP.NET Core Blazor Forms and Validation](/aspnet/core/blazor/forms-validation).
-
-## <a name="migrate-built-in-web-forms-controls"></a>Миграция встроенных элементов управления веб-форм
-
-*Это содержимое скоро появится.*
 
 ## <a name="migrate-configuration"></a>Миграция конфигурации
 

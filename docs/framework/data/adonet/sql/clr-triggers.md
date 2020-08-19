@@ -2,22 +2,19 @@
 title: Триггеры CLR
 ms.date: 03/30/2017
 ms.assetid: defe379c-30c7-487f-9abd-9c5e12ff49be
-ms.openlocfilehash: d4d203968207885f7dddc423d68adb445a5a0943
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 1f454dd59b8e3df90f53ca89d0953c14c40364c3
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70794305"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88559080"
 ---
-# <a name="clr-triggers"></a>Триггеры CLR
-Триггер представляет собой специальный тип хранимой процедуры, которая запускается автоматически при возникновении определенного языкового события. Благодаря интеграции Microsoft SQL Server со средой CLR инфраструктуры .NET Framework обеспечивается возможность использовать любой язык .NET Framework для создания триггеров CLR.  
+# <a name="clr-triggers"></a>триггеры CLR
+
+Триггером называют хранимую процедуру особого типа, которая автоматически выполняется при возникновении языкового события. Благодаря интеграции Microsoft SQL Server со средой CLR инфраструктуры .NET Framework обеспечивается возможность использовать любой язык .NET Framework для создания триггеров CLR.  
   
- Дополнительные сведения см. в документации по [SQL Server](/sql) версии SQL Server, которую вы используете.
+Дополнительные сведения см. в разделе [Создание триггеров CLR](/sql/relational-databases/triggers/create-clr-triggers).
   
- **Документация по SQL Server**
-  
-1. [Триггеры CLR](/sql/database-engine/dev-guide/clr-triggers)
-  
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

@@ -1,13 +1,13 @@
 ---
 title: Рекурсивные функции. Ключевое слово rec
 description: 'Узнайте, как ключевое слово F # REC используется с ключевым словом let для определения рекурсивной функции.'
-ms.date: 05/16/2016
-ms.openlocfilehash: c2374f90b4585327c6f5208a3d6bca75a23d0cbb
-ms.sourcegitcommit: 7499bdb428d63ed0e19e97f54d3d576c41598659
+ms.date: 08/12/2020
+ms.openlocfilehash: 389357bd13cef39b1d07972c1a3167320b61612b
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87455652"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558716"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>Рекурсивные функции. Ключевое слово rec
 
@@ -18,28 +18,44 @@ ms.locfileid: "87455652"
 ```fsharp
 // Recursive function:
 let rec function-nameparameter-list =
-function-body
+    function-body
 
 // Mutually recursive functions:
 let rec function1-nameparameter-list =
-function1-body
+    function1-body
+
 and function2-nameparameter-list =
-function2-body
+    function2-body
 ...
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Рекурсивные функции — функции, которые вызывают сами себя, определяются явно на языке F #. Это делает определяемый идентификатор доступным в области действия функции.
+Рекурсивные функции — функции, которые вызывают сами себя, явным образом определяются на языке F # с помощью `rec` ключевого слова. `rec`Ключевое слово делает имя `let` привязки доступным в ее тексте.
 
-В следующем примере кода показана рекурсивная функция, которая выполняет вычисление *n*-<sup>го</sup> числа Фибоначчи с помощью математического определения.
+В следующем примере показана рекурсивная функция, которая выполняет вычисление *n*-<sup>го</sup> числа Фибоначчи с помощью математического определения.
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet4001.fs)]
+```fsharp
+let fib n =
+    match n with
+    | 0 | 1 -> 1
+    | n -> fib (n-1) + fib (n-2)
+```
 
 > [!NOTE]
 > На практике код, подобный предыдущему примеру, не является идеальным, поскольку он унецессарили повторно выполняет вычисление значений, которые уже были вычислены. Это обусловлено тем, что не является рекурсивным, что объясняется далее в этой статье.
 
-Методы неявно являются рекурсивными в пределах типа; нет необходимости добавлять `rec` ключевое слово. Привязки let в классах не являются неявно рекурсивными.
+Методы неявно являются рекурсивными в пределах типа, в котором они определены, то есть нет необходимости добавлять `rec` ключевое слово. Пример:
+
+```fsharp
+type MyClass() =
+    member this.Fib(n) =
+        match n with
+        | 0 | 1 -> 1
+        | n -> this.Fib(n-1) + this.Fib(n-2)
+```
+
+Однако привязки let в классах не являются неявно рекурсивными. `let`Для функций с привязкой требуется `rec` ключевое слово.
 
 ## <a name="tail-recursion"></a>Заключительная рекурсия
 
@@ -75,6 +91,14 @@ let fib n =
 В следующем примере показаны две взаимно рекурсивные функции.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet4002.fs)]
+
+## <a name="recursive-values"></a>Рекурсивные значения
+
+Можно также определить значение с `let` привязкой, которое будет рекурсивно. Это иногда делается для ведения журнала. С помощью F # 5 и `nameof` функции можно сделать следующее:
+
+```fsharp
+let rec nameDoubles = nameof nameDoubles + nameof nameDoubles
+```
 
 ## <a name="see-also"></a>См. также
 

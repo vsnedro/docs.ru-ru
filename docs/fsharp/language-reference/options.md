@@ -1,27 +1,27 @@
 ---
 title: Параметры
-description: Узнайте, как использовать F# типы параметров, если фактическое значение для именованного значения или переменной может не существовать.
-ms.date: 05/16/2016
-ms.openlocfilehash: 9326cf04f53adac7422c09a49a59c4eecd49486d
-ms.sourcegitcommit: f20dd18dbcf2275513281f5d9ad7ece6a62644b4
+description: 'Узнайте, как использовать типы параметров F #, если фактическое значение для именованного значения или переменной может не существовать.'
+ms.date: 08/13/2020
+ms.openlocfilehash: 0618590c10f6ecac51a23483ca0ab6cd66f2df4f
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68627349"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88557572"
 ---
 # <a name="options"></a>Параметры
 
-Тип параметра в F# используется, если фактическое значение для именованного значения или переменной может не существовать. Параметр имеет базовый тип и может содержать значение этого типа или не может иметь значения.
+Тип параметра в F # используется, если фактическое значение для именованного значения или переменной может не существовать. Параметр имеет базовый тип и может содержать значение этого типа или не может иметь значения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 В следующем коде показана функция, которая создает тип параметра.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1404.fs)]
 
-Как видите, создается `a` `Some(a)` значение, если входные данные больше 0.  `None` В противном случае создается.
+Как видите, создается значение, если входные данные `a` больше 0 `Some(a)` .  В противном случае `None` создается.
 
-Значение `None` используется, если параметр не имеет фактического значения. В противном случае `Some( ... )` выражение дает параметру значение. Значения `Some` `true` и `None` полезны при сопоставлении шаблонов, как в следующей функции `exists`, которая возвращает, если параметр имеет значение, а `false` если нет.
+Значение `None` используется, если параметр не имеет фактического значения. В противном случае выражение `Some( ... )` дает параметру значение. Значения `Some` и `None` полезны при сопоставлении шаблонов, как в следующей функции `exists` , которая возвращает, `true` Если параметр имеет значение, а `false` Если нет.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1401.fs)]
 
@@ -31,17 +31,17 @@ ms.locfileid: "68627349"
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1403.fs)]
 
-В приведенном выше коде рекурсивный поиск по списку выполняется рекурсивно. Функция `tryFindMatch` принимает функцию `pred` предиката, которая возвращает логическое значение, и список для поиска. Если найден элемент, удовлетворяющий предикату, рекурсия завершается, а функция возвращает значение в виде параметра в выражении `Some(head)`. Рекурсия завершается при сопоставлении пустого списка. В этот момент значение `head` не было найдено и `None` возвращается.
+В приведенном выше коде рекурсивный поиск по списку выполняется рекурсивно. Функция `tryFindMatch` принимает функцию предиката `pred` , которая возвращает логическое значение, и список для поиска. Если найден элемент, удовлетворяющий предикату, рекурсия завершается, а функция возвращает значение в виде параметра в выражении `Some(head)` . Рекурсия завершается при сопоставлении пустого списка. В этот момент значение `head` не было найдено и `None` возвращается.
 
-Многие F# библиотечные функции, которые выполняют поиск в коллекции значений, которые могут или не существовать, `option` возвращают тип. По соглашению эти функции начинаются с `try` префикса, [`Seq.tryFindIndex`](https://msdn.microsoft.com/library/c357b221-edf6-4f68-bf40-82a3156d945a)например.
+Многие функции библиотеки F #, которые выполняют поиск в коллекции значений, которые могут быть или не существуют, возвращают `option` тип. По соглашению эти функции начинаются с `try` префикса, например [`Seq.tryFindIndex`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#tryFindIndex) .
 
 Параметры также могут быть полезны, если значение может не существовать, например, если возможно, что при попытке создания значения возникнет исключение. Это показано в следующем примере кода.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1402.fs)]
 
-Функция в предыдущем примере имеет тип `string -> File option` , `File` так как она возвращает объект, если файл открыт успешно, и `None` если возникает исключение. `openFile` В зависимости от ситуации может не подходить к перехвату исключения, а не разрешать его распространение.
+`openFile`Функция в предыдущем примере имеет тип `string -> File option` , так как она возвращает `File` объект, если файл открыт успешно, и `None` Если возникает исключение. В зависимости от ситуации может не подходить к перехвату исключения, а не разрешать его распространение.
 
-Кроме того, по-прежнему можно передать `null` или значение, равное NULL `Some` , в случае параметра. Обычно это следует избегать, и обычно это происходит в обычной F# программе, но возможно из-за природы ссылочных типов в .NET.
+Кроме того, по-прежнему можно передать `null` или значение, равное NULL, в `Some` случае параметра. Обычно это следует избегать, и обычно это выполняется в обычной программе программирования на F #, но это возможно из-за природы ссылочных типов в .NET.
 
 ## <a name="option-properties-and-methods"></a>Свойства и методы параметров
 
@@ -49,25 +49,25 @@ ms.locfileid: "68627349"
 
 |Свойство или метод|Тип|Описание|
 |------------------|----|-----------|
-|[None](https://msdn.microsoft.com/library/83ef260a-aa33-4e6f-aee6-b9bf0a461476)|`'T option`|Статическое свойство, которое позволяет создать значение параметра, имеющее `None` значение.|
-|[Не задано](https://msdn.microsoft.com/library/f08532ca-1716-4f60-ae59-8ef6256df234)|`bool`|Возвращает `true` , если параметр `None` имеет значение.|
-|[Часть](https://msdn.microsoft.com/library/c5088d51-c5d7-425f-a77f-12c379bb356f)|`bool`|Возвращает `true` , если параметр имеет значение, не `None`равное.|
-|[Некоторых](https://msdn.microsoft.com/library/12f048d2-e293-4596-accb-de036ecd63fc)|`'T option`|Статический член, создающий параметр, который имеет значение, не `None`равное.|
-|[Значение](https://msdn.microsoft.com/library/c79f68e8-11fd-45b1-a053-e8fc38b56df7)|`'T`|Возвращает базовое значение или создает исключение, `System.NullReferenceException` если значение равно. `None`|
+|[None](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#None)|`'T option`|Статическое свойство, которое позволяет создать значение параметра, имеющее `None` значение.|
+|[Не задано](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#IsNone)|`bool`|Возвращает, `true` Если параметр имеет `None` значение.|
+|[Часть](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#IsSome)|`bool`|Возвращает `true` , если параметр имеет значение, не равное `None` .|
+|[Некоторых](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#Some)|`'T option`|Статический член, создающий параметр, который имеет значение, не равное `None` .|
+|[Значение](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpoption-1.html#Value)|`'T`|Возвращает базовое значение или создает исключение, `System.NullReferenceException` Если значение равно `None` .|
 
 ## <a name="option-module"></a>Модуль параметров
 
-Существует модуль, [параметр](https://msdn.microsoft.com/library/e615e4d3-bbbb-49ba-addc-6061ea2e2f4c), содержащий полезные функции, которые выполняют операции с параметрами. Некоторые функции позволяют повторить функциональность свойств, но они полезны в контекстах, где требуется функция. [Option. some](https://msdn.microsoft.com/library/41ad0857-5672-4326-84b5-c33dc43dcf79) и [Option. None](https://msdn.microsoft.com/library/73db6a53-15e7-40a6-94f9-a0049e5f4819) являются функциями модуля, которые проверяют, содержит ли параметр значение. [Параметр. Get](https://msdn.microsoft.com/library/803e9fcb-6edd-4910-808c-25f08cbc55ea) получает значение, если таковое имеется. Если значение отсутствует, вызывается исключение `System.ArgumentException`.
+Существует модуль, [параметр](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html), содержащий полезные функции, которые выполняют операции с параметрами. Некоторые функции позволяют повторить функциональность свойств, но они полезны в контекстах, где требуется функция. [Option. some](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#isSome) и [Option. None](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#isNone) являются функциями модуля, которые проверяют, содержит ли параметр значение. [Параметр. Get](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#get) получает значение, если таковое имеется. Если значение отсутствует, вызывается исключение `System.ArgumentException` .
 
-Функция [Option. Bind](https://msdn.microsoft.com/library/c3406192-24ac-49b5-bc3b-8f805187f1c0) выполняет функцию для значения, если имеется значение. Функция должна принимать ровно один аргумент, и ее тип параметра должен быть типом параметра. Возвращаемое значение функции является другим типом параметра.
+Функция [Option. Bind](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#bind) выполняет функцию для значения, если имеется значение. Функция должна принимать ровно один аргумент, и ее тип параметра должен быть типом параметра. Возвращаемое значение функции является другим типом параметра.
 
-Модуль Option также включает функции, которые соответствуют функциям, доступным для списков, массивов, последовательностей и других типов коллекций. К этим функциям [`Option.iter`](https://msdn.microsoft.com/library/83389eef-3dff-4074-b4cc-f69581c25191)относятся [`Option.forall`](https://msdn.microsoft.com/library/ba884586-5eae-49c5-9e36-05481c1c3428) [`Option.map`](https://msdn.microsoft.com/library/91a20385-7e73-40c2-9adc-635e86d6a622), [`Option.exists`](https://msdn.microsoft.com/library/a606d2d4-fddc-4eab-ab37-c6138fb7ad99), [,`Option.foldBack`](https://msdn.microsoft.com/library/a882fbaf-c019-46f0-b4f5-b8c2b8b90ffb), [,`Option.fold`](https://msdn.microsoft.com/library/af896794-3d53-406c-9411-316cd5c33ad8)и [.`Option.count`](https://msdn.microsoft.com/library/2dac83a9-684e-4d0f-b50e-ff722a8bb876) Эти функции позволяют использовать параметры как коллекцию с нулевым или одним элементом. Дополнительные сведения и примеры см. в обсуждении функций сбора в [списках](lists.md).
+Модуль Option также включает функции, которые соответствуют функциям, доступным для списков, массивов, последовательностей и других типов коллекций. К этим функциям относятся [`Option.map`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#map) ,,,, [`Option.iter`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#iter) [`Option.forall`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#forall) [`Option.exists`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#exists) [`Option.foldBack`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#foldBack) , [`Option.fold`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#fold) и [`Option.count`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#count) . Эти функции позволяют использовать параметры как коллекцию с нулевым или одним элементом. Дополнительные сведения и примеры см. в обсуждении функций сбора в [списках](lists.md).
 
 ## <a name="converting-to-other-types"></a>Преобразование в другие типы
 
-Параметры можно преобразовать в списки или массивы. При преобразовании параметра в любую из этих структур данных Результирующая структура данных не может содержать ни одного элемента. Чтобы преобразовать параметр в массив, используйте [`Option.toArray`](https://msdn.microsoft.com/library/c8044873-ba17-4b52-8231-eb1a28318c64). Чтобы преобразовать параметр в список, используйте [`Option.toList`](https://msdn.microsoft.com/library/5f1af295-9fa9-40ad-b4a1-3578d94d44e1).
+Параметры можно преобразовать в списки или массивы. При преобразовании параметра в любую из этих структур данных Результирующая структура данных не может содержать ни одного элемента. Чтобы преобразовать параметр в массив, используйте [`Option.toArray`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#toArray) . Чтобы преобразовать параметр в список, используйте [`Option.toList`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#toList) .
 
 ## <a name="see-also"></a>См. также
 
 - [Справочник по языку F#](index.md)
-- [Типы языка F#](fsharp-types.md)
+- [Типы языка F#](fsharp-types.md)

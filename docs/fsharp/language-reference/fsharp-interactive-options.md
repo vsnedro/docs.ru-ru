@@ -1,13 +1,13 @@
 ---
 title: Интерактивные параметры
 description: Сведения о параметрах командной строки, поддерживаемых F# Interactive, fsi.exe.
-ms.date: 07/22/2020
-ms.openlocfilehash: abddd1fd990be18ede139ab26ffe80513ba6e0dd
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.date: 08/15/2020
+ms.openlocfilehash: da2251c1d2e57090ed926e501cebf3c53ac58052
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855352"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558612"
 ---
 # <a name="f-interactive-options"></a>Параметры F# Interactive
 
@@ -29,7 +29,7 @@ dotnet fsi [options] [ script-file [arguments] ]
 
 Когда списки отображаются в аргументах параметров F# Interactive, элементы списка разделяются точкой с запятой ( `;` ).
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |------|-----------|
 |**--**|Используется для указания F# Interactive рассматривать оставшиеся аргументы как аргументы командной строки для программы или скрипта F #, доступ к которым можно получить в коде с помощью списка **FSI. CommandLineArgs**.|
 |**--checked**[ **+**&#124;**-** ]|То же, что и параметр компилятора **fsc.exe** . Дополнительные сведения см. в разделе [Параметры компилятора](compiler-options.md).|
@@ -44,7 +44,7 @@ dotnet fsi [options] [ script-file [arguments] ]
 |**--GUI**[ **+**&#124;**-** ]|Включает или отключает цикл обработки событий Windows Forms. По умолчанию этот параметр включен.|
 |**--Справка**<br /><br />**-?**|Используется для вывода синтаксиса командной строки и краткого описания каждого параметра.|
 |**--lib: &lt; Папка-список&gt;**<br /><br />**-I: &lt; Папка-список&gt;**|То же, что и параметр компилятора **fsc.exe** . Дополнительные сведения см. в разделе [Параметры компилятора](compiler-options.md).|
-|**--Load: &lt; имя файла&gt;**|Компилирует заданный исходный код при запуске и загружает скомпилированные конструкции F # в сеанс. Если целевой источник содержит директивы скрипта, такие как **#use** или **#load**, необходимо использовать параметр **--use** или **#use** вместо **--Load** или **#load**.|
+|**--Load: &lt; имя файла&gt;**|Компилирует заданный исходный код при запуске и загружает скомпилированные конструкции F # в сеанс.|
 |**--млкомпатибилити**|То же, что и параметр компилятора **fsc.exe** . Дополнительные сведения см. в разделе [Параметры компилятора](compiler-options.md).|
 |**--.NET Framework**|То же, что и параметр компилятора **fsc.exe** . Дополнительные сведения см. в разделе [параметры компилятора](compiler-options.md) .|
 |**--Эмблема**|То же, что и параметр компилятора **fsc.exe** . Дополнительные сведения см. в разделе [Параметры компилятора](compiler-options.md).|
@@ -97,7 +97,7 @@ fsi.ShowIEnumerable <- false // Control whether sequence values are expanded by 
 fsi.ShowDeclarationValues <- false // Control whether values are shown for declaration outputs
 ```
 
-### <a name="customize-with-addprinter-and-addprinttransformer"></a>Настройка с помощью `AddPrinter` и`AddPrintTransformer`
+### <a name="customize-with-addprinter-and-addprinttransformer"></a>Настройка с помощью `AddPrinter` и `AddPrintTransformer`
 
 Печать в F# Interactive выходных данных может быть настроена с помощью `fsi.AddPrinter` и `fsi.AddPrintTransformer` .
 Первая функция предоставляет текст для замены печати объекта. Вторая функция возвращает суррогатный объект для вывода вместо этого. Например, рассмотрим следующий код F #:
@@ -126,7 +126,7 @@ val newYearsDay1999 : DateAndLabel = { Date = 1999-01-01T00:00:00
                                        Label = "New Year" }
 ```
 
-`fsi.AddPrintTransformer`можно использовать, чтобы предоставить суррогатный объект для печати:
+`fsi.AddPrintTransformer` можно использовать, чтобы предоставить суррогатный объект для печати:
 
 ```fsharp
 type MyList(values: int list) =
@@ -163,6 +163,6 @@ val y : string = ["quack"; "quack"; "quack"]
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----|-----------|
 |[Параметры компилятора](compiler-options.md)|Описывает параметры командной строки, доступные для компилятора F # **fsc.exe**.|

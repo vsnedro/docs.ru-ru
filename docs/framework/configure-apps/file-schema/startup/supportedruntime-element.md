@@ -1,7 +1,6 @@
 ---
-title: <supportedRuntime>Элемент Configuration — .NET
+title: <supportedRuntime> Элемент Configuration — .NET
 ms.date: 04/02/2019
-ms.custom: updateeachrelease
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/supportedRuntime
@@ -9,12 +8,12 @@ helpviewer_keywords:
 - supportedRuntime element
 - <supportedRuntime> element
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
-ms.openlocfilehash: ecbe73593e5b8b87909499f6fff7e865e29b1ec8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: cc221c71b68c21b61b5fa27e0972b9e9156dbc3b
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "82796045"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558677"
 ---
 # <a name="supportedruntime-element"></a>Элемент \<supportedRuntime>
 
@@ -37,7 +36,7 @@ ms.locfileid: "82796045"
 |**version**|Необязательный атрибут.<br /><br /> Строковое значение, задающее версию среды CLR, которая поддерживается данным приложением. Допустимые значения `version` атрибута см. в разделе ["значения версии среды выполнения"](#version) . **Примечание.**  С помощью .NET Framework 3,5 значение "*версия среды выполнения*" принимает форму " *основной*". *дополнительный номер*. *Сборка*. Начиная с .NET Framework 4, требуются только основной и дополнительный номера версии (т. е. "v 4.0" вместо "v 4.0.30319"). Рекомендуется использовать более короткие строки.|
 |**sku**|Необязательный атрибут.<br /><br /> Строковое значение, которое указывает единицу складского хранения (SKU), которая, в свою очередь, указывает выпуск .NET Framework, поддерживаемый этим приложением.<br /><br /> Начиная с .NET Framework 4.0, рекомендуется использовать атрибут `sku`.  Если он присутствует, он указывает целевую версию .NET Framework приложения.<br /><br /> Допустимые значения атрибута SKU см. в разделе [значения номера SKU](#sku) .|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если **\<supportedRuntime>** элемент отсутствует в файле конфигурации приложения, используется версия среды выполнения, используемая для построения приложения.
 
@@ -62,13 +61,13 @@ ms.locfileid: "82796045"
 |Версия платформы .NET Framework|Атрибут `version`|
 |----------------------------|-------------------------|
 |1.0|"v1.0.3705"|
-|1.1|"v1.1.4322"|
+|1,1|"v1.1.4322"|
 |2.0|"v2.0.50727"|
 |3.0|"v2.0.50727"|
-|3.5|"v2.0.50727"|
+|3,5|"v2.0.50727"|
 |4.0 — 4.8|"v4.0"|
 
-## <a name="sku-id-values"></a><a name="sku"></a>значения "ИД SKU"
+## <a name="sku-id-values"></a><a name="sku"></a> значения "ИД SKU"
 
 `sku`Атрибут использует моникер целевой платформы (TFM) для указания версии .NET Framework, для которой предназначено приложение, и требует выполнения. В следующей таблице перечислены допустимые значения, поддерживаемые `sku` атрибутом, начиная с .NET Framework 4.
 
@@ -85,7 +84,7 @@ ms.locfileid: "82796045"
 |4.5.|".NETFramework,Version=v4.5"|
 |4.5.1|".NETFramework,Version=v4.5.1"|
 |4.5.2|".NETFramework,Version=v4.5.2"|
-|4.6|".NETFramework,Version=v4.6"|
+|4,6|".NETFramework,Version=v4.6"|
 |4.6.1|".NETFramework,Version=v4.6.1"|
 |4.6.2|". NETFramework, Version = v 4.6.2 "|
 |4.7|". NETFramework, Version = v 4.7|
@@ -109,7 +108,7 @@ ms.locfileid: "82796045"
 
 Этот элемент может использоваться в файле конфигурации приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров запуска](index.md)
 - [Схема файла конфигурации](../index.md)
