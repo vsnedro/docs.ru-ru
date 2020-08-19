@@ -2,12 +2,12 @@
 title: Критические изменения в библиотеке базовых классов
 description: В этой статье приведен список критических изменений в основных библиотеках .NET.
 ms.date: 07/27/2020
-ms.openlocfilehash: 0667d975ce5bba5692fe5d179341235bd3c61790
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: c8eb5ec7d2bb1879a38a18337463230c7b731d29
+ms.sourcegitcommit: d3c09791297f0edc468a4849a5f11ef62e0e90fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024708"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88137490"
 ---
 # <a name="core-net-libraries-breaking-changes"></a>Критические изменения в основных библиотеках .NET
 
@@ -17,6 +17,7 @@ ms.locfileid: "88024708"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Увеличена сложность LINQ OrderBy.First{OrDefault}](#complexity-of-linq-orderbyfirstordefault-increased) | 5.0 |
 | [IntPtr и UIntPtr реализуют IFormattable](#intptr-and-uintptr-implement-iformattable) | 5.0 |
 | [PrincipalPermissionAttribute устарел и является ошибочным](#principalpermissionattribute-is-obsolete-as-error) | 5.0 |
 | [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps) | 5.0 |
@@ -45,6 +46,10 @@ ms.locfileid: "88024708"
 | [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [orderby-firstordefault-complexity-increase](../../../includes/core-changes/corefx/5.0/orderby-firstordefault-complexity-increase.md)]
+
+***
 
 [!INCLUDE [intptr-uintptr-implement-iformattable](../../../includes/core-changes/corefx/5.0/intptr-uintptr-implement-iformattable.md)]
 

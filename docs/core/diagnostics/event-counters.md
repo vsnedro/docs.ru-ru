@@ -2,12 +2,12 @@
 title: Счетчики событий в .NET Core
 description: В этой статье вы узнаете, что такое счетчики событий и как их реализовать и использовать.
 ms.date: 08/07/2020
-ms.openlocfilehash: 68868ff8b4e1393fc3b23af2bc8eef239ac56975
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: fc2f945e3de732a81b9ce3fd82eff10e455cae87
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024970"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88062968"
 ---
 # <a name="eventcounters-in-net-core"></a>Счетчики событий в .NET Core
 
@@ -177,7 +177,9 @@ dotnet-trace collect --process-id <pid> Sample.EventCounter.Minimal:0:0:EventCou
 
 #### <a name="dotnet-monitor"></a>dotnet-monitor
 
-`dotnet-monitor` — это экспериментальное средство, упрощающее доступ к диагностическим сведениям в процессе .NET. Дополнительные сведения см. в статье [Знакомство с экспериментальным средством dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor).
+`dotnet-monitor` — экспериментальное средство, упрощающее доступ к диагностическим сведениям в процессе .NET. Оно представляет собой расширенную версию всех средств диагностики. Наряду с трассировкой оно может отслеживать метрики и собирать дампы памяти и дампы сборки мусора. Оно распространяется как в виде средства командной строки, так и в виде образа Docker. Оно предоставляет REST API, а сбор артефактов диагностики осуществляется с помощью вызовов REST.
+
+Дополнительные сведения см. в статье [Знакомство с экспериментальным средством dotnet-monitor](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor).
 
 ### <a name="consume-in-proc"></a>Использование внутри процесса
 
