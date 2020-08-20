@@ -2,12 +2,12 @@
 title: Типы коллекций
 description: 'Узнайте о типах коллекций F # и их отличиях от типов коллекций .NET.'
 ms.date: 08/14/2020
-ms.openlocfilehash: 197ba754d632051b5a0bf9c8364d45a1fb932f48
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: 394f6bbaf58e7e8607abc3a0c20bbc2b1c9c3c8d
+ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267286"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88656909"
 ---
 # <a name="f-collection-types"></a>Типы коллекций F#
 
@@ -21,11 +21,11 @@ ms.locfileid: "88267286"
 
 |Тип|Описание|Связанные ссылки|
 |----|-----------|-------------|
-|[Список](https://msdn.microsoft.com/library/c627b668-477b-4409-91ed-06d7f1b3e4a7)|Упорядоченная, неизменяемая серия элементов одного и того же типа. Реализуется как связанный список.|[Списки](lists.md)<br /><br />[Модуль List](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788)|
-|[массив](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1).|Изменяемая коллекция последовательных элементов данных с фиксированным размером, начинающимся с нуля, которые имеют одинаковый тип.|[Массивы](arrays.md)<br /><br />[Модуль Array](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1)<br /><br />[Модуль Array2D](https://msdn.microsoft.com/library/ae1a9746-7817-4430-bcdb-a79c2411bbd3)<br /><br />[Модуль Array3D](https://msdn.microsoft.com/library/c8355e2d-add8-48a4-8aa6-1c57ae74c560)|
-|[порядк](https://msdn.microsoft.com/library/2f0c87c6-8a0d-4d33-92a6-10d1d037ce75)|Логический ряд элементов одного типа. Последовательности особенно полезны при наличии большой упорядоченной коллекции данных, но не обязательно должны использовать все элементы. Отдельные элементы последовательности вычисляются только по мере необходимости, поэтому последовательность может выполняться лучше, чем список, если не все элементы используются. Последовательности представлены `seq<'T>` типом, который является псевдонимом для `IEnumerable<T>` . Таким образом, любой тип .NET Framework, который реализуется, `System.Collections.Generic.IEnumerable<'T>` можно использовать в качестве последовательности.|[Последовательности](sequences.md)<br /><br />[Seq, модуль](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684)|
-|[Схема](https://msdn.microsoft.com/library/975316ea-55e3-4987-9994-90897ad45664)|Неизменяемый словарь элементов. Доступ к элементам осуществляется по ключу.|[Модуль Map](https://msdn.microsoft.com/library/bfe61ead-f16c-416f-af98-56dbcbe23e4f)|
-|[Set](https://msdn.microsoft.com/library/50cebdce-0cd7-4c5c-8ebc-f3a9e90b38d8)|Неизменяемый набор, основанный на двоичных деревьях, где сравнение — это функция структурного сравнения F #, которая потенциально использует реализации `System.IComparable` интерфейса для значений ключей.|[Задать модуль](https://msdn.microsoft.com/library/61efa732-d55d-4c32-993f-628e2f98e6a0)|
+|[Список](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharplist-1.html)|Упорядоченная, неизменяемая серия элементов одного и того же типа. Реализуется как связанный список.|[Списки](lists.md)<br /><br />[Модуль List](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html)|
+|[массив](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-array-1.html).|Изменяемая коллекция последовательных элементов данных с фиксированным размером, начинающимся с нуля, которые имеют одинаковый тип.|[Массивы](arrays.md)<br /><br />[Модуль Array](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html)<br /><br />[Модуль Array2D](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-array2dmodule.html)<br /><br />[Модуль Array3D](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-array3dmodule.html)|
+|[порядк](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seq-1.html)|Логический ряд элементов одного типа. Последовательности особенно полезны при наличии большой упорядоченной коллекции данных, но не обязательно должны использовать все элементы. Отдельные элементы последовательности вычисляются только по мере необходимости, поэтому последовательность может выполняться лучше, чем список, если не все элементы используются. Последовательности представлены `seq<'T>` типом, который является псевдонимом для `IEnumerable<T>` . Таким образом, любой тип .NET Framework, который реализуется, `System.Collections.Generic.IEnumerable<'T>` можно использовать в качестве последовательности.|[Последовательности](sequences.md)<br /><br />[Seq, модуль](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html)|
+|[Схема](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpmap-2.html)|Неизменяемый словарь элементов. Доступ к элементам осуществляется по ключу.|[Модуль Map](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-mapmodule.html)|
+|[Set](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpset-1.html)|Неизменяемый набор, основанный на двоичных деревьях, где сравнение — это функция структурного сравнения F #, которая потенциально использует реализации `System.IComparable` интерфейса для значений ключей.|[Задать модуль](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-setmodule.html)|
 
 ### <a name="table-of-functions"></a>Таблица функций
 
@@ -90,10 +90,10 @@ ms.locfileid: "88267286"
 |map3|-|O (N)|-|-|-|Создает коллекцию, элементы которой являются результатами применения заданной функции к соответствующим элементам трех коллекций одновременно.|
 |действует|O (N)|O (N)|O (N)|-|-|Создает массив, элементы которого являются результатами применения заданной функции к каждому элементу массива. Целочисленный индекс, передаваемый функции, указывает индекс преобразуемого элемента.|
 |mapi2|O (N)|O (N)|-|-|-|Выполняет сборку коллекции, элементы которой являются результатами применения заданной функции к соответствующим элементам двух коллекций попарно, также передавая индекс элементов. Длина двух входных массивов должна быть одинаковой.|
-|max|O (N)|O (N)|O (N)|-|-|Возвращает наибольший элемент в коллекции по сравнению с использованием оператора [Max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) .|
+|макс.|O (N)|O (N)|O (N)|-|-|Возвращает наибольший элемент в коллекции по сравнению с использованием оператора [Max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) .|
 |максби|O (N)|O (N)|O (N)|-|-|Возвращает наибольший элемент в коллекции, по сравнению с использованием параметра [Max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) в результатах функции.|
 |макселемент|-|-|-|-|O (log (N))|Возвращает наибольший элемент в наборе согласно упорядочению, используемому для набора.|
-|Min|O (N)|O (N)|O (N)|-|-|Возвращает элемент наименьшего уровня в коллекции по сравнению с использованием оператора [min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed) .|
+|мин.|O (N)|O (N)|O (N)|-|-|Возвращает элемент наименьшего уровня в коллекции по сравнению с использованием оператора [min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed) .|
 |минби|O (N)|O (N)|O (N)|-|-|Возвращает элемент наименьшего уровня в коллекции по сравнению с использованием оператора [min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed) в результатах функции.|
 |минелемент|-|-|-|-|O (log (N))|Возвращает нижний элемент в наборе согласно упорядочению, используемому для набора.|
 |офаррай|-|O (N)|O(1)|O (N)|O (N)|Создает коллекцию, содержащую те же элементы, что и заданный массив.|
@@ -144,7 +144,7 @@ ms.locfileid: "88267286"
 |zip|O (N)|O (N)|O (N)|-|-|Объединяет две коллекции в список пар. Два списка должны иметь одинаковую длину.|
 |zip3|O (N)|O (N)|O (N)|-|-|Объединяет три коллекции в список Тройн. Списки должны иметь одинаковую длину.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Типы языка F#](fsharp-types.md)
 - [Справочник по языку F#](index.md)
