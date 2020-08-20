@@ -7,18 +7,16 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 09/11/2019
-ms.openlocfilehash: 779eb47d9796c61df9939d0e7de287443870576e
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 1c869cce6ab8a0ab7c4b83817fe1afc3d6a4a7fd
+ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86173254"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88267478"
 ---
-# <a name="blazor-for-aspnet-web-forms-developers"></a>Blazor для разработчиков ASP.NET Web Forms
+# <a name="no-locblazor-for-aspnet-web-forms-developers"></a>Blazor для разработчиков ASP.NET Web Forms
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
-![Снимок экрана, на котором показана обложка электронной книги, посвященной бессерверным приложениям](./media/index/blazor-for-web-forms-developers-cover.png)
+![Снимок экрана, на котором показана обложка электронной книги, посвященной бессерверным приложениям](./media/index/blazor-for-aspnet-web-forms-developers.png)
 
 > Можно загрузить по ссылке: <https://aka.ms/blazor-ebook>
 
@@ -32,7 +30,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-© Корпорация Майкрософт (Microsoft Corporation), 2019.
+© Корпорация Майкрософт (Microsoft Corporation), 2020 г.
 
 Все права защищены. Запрещается полное или частичное воспроизведение или передача настоящей книги в любом виде или любыми средствами без письменного разрешения издателя.
 
@@ -55,6 +53,8 @@ Mac и macOS являются товарными знаками Apple Inc.
 > **[Тейлор Саусвик (Taylor Southwick)](https://github.com/twsouthwick)** , старший инженер по программному обеспечению в корпорации Майкрософт.
 
 > **[Скотт Эдди (Scott Addie)](https://github.com/scottaddie)** , старший разработчик содержимого в корпорации Майкрософт.
+
+> **[Стив Смит (Steve "ardalis" Smith)](https://ardalis.com)** , преподаватель и разработчик архитектуры программного обеспечения, Ardalis Services LLC
 
 ## <a name="introduction"></a>Вступление
 

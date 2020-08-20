@@ -1,17 +1,21 @@
 ---
 title: Справочник по языку
 description: В этом справочнике по функциям языка F# можно найти сведения о токенах, концепциях, типах, выражениях языка и о конструкциях, поддерживаемых компилятором.
-ms.date: 05/16/2016
-ms.openlocfilehash: 43272c6684c8fc763e8f99611901f35695f48981
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.date: 08/13/2020
+ms.openlocfilehash: 02711489c214c1fcdb2da80f30bff63d67769c17
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87854962"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558157"
 ---
 # <a name="f-language-reference"></a>Справочник по языку F#
 
 Эта статья представляет собой справочник по языку программирования F#, который поддерживает несколько парадигм и предназначен для платформы .NET. Язык F# поддерживает функциональные, объектно-ориентированные и императивные модели программирования.
+
+## <a name="f-core-library-api-reference"></a>Справочник по API библиотеки F# Core
+
+[Справочник по API библиотеки F# Core (FSharp.Core)](https://fsharp.github.io/fsharp-core-docs/) содержит справочные материалы по всем пространствам имен, модулям, типам и функциям библиотеки F# Core.
 
 ## <a name="f-tokens"></a>Токены F#
 
