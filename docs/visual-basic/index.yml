@@ -7,12 +7,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 08/13/2020
   ms.custom: contperfq1
-  ms.openlocfilehash: 507ee5cfc579a75231bf49b1db0d28ec32927ecd
-  ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+  ms.openlocfilehash: dff262ba8646427baa0021dbe4b3f859d22459cd
+  ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "88268157"
+  ms.lasthandoff: 08/18/2020
+  ms.locfileid: "88559210"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -22,15 +22,15 @@ landingContent:
       url: https://dotnet.microsoft.com/download
   - linkListType: get-started
     links:
-    - text: Создание приложения Hello World
-      url: ../core/tutorials/vb-with-visual-studio.md
-    - text: Создание библиотеки классов
-      url: ../core/tutorials/vb-library-with-visual-studio.md
+    - text: Создание консольного приложения .NET Core в Visual Studio
+      url: ../core/tutorials/with-visual-studio.md
+    - text: Создание библиотеки .NET Standard с помощью Visual Studio
+      url: ../core/tutorials/library-with-visual-studio.md
     - text: Пошаговые руководства
       url: walkthroughs.md
     - text: Дополнительные ресурсы
       url: getting-started/additional-resources.md
-- title: Базовый
+- title: Основы
   linkLists:
   - linkListType: overview
     links:
