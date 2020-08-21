@@ -15,12 +15,12 @@ helpviewer_keywords:
 - quantifiers
 - lazy quantifiers
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
-ms.openlocfilehash: 2fc47a834f8f5b18021aa4f321345b8d7e4e8459
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 3ffdd481ac001b4e1bd229c6f5fa0bf285b508b2
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662892"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063813"
 ---
 # <a name="quantifiers-in-regular-expressions"></a>кванторы в регулярных выражениях
 Квантификаторы определяют количество экземпляров символа, группы или класса символов, которое должно присутствовать во входных данных, чтобы было зафиксировано совпадение.  В приведенной ниже таблице перечислены квантификаторы, поддерживаемые платформой .NET.  
@@ -48,7 +48,7 @@ ms.locfileid: "84662892"
 ### <a name="match-zero-or-more-times-"></a>Совпадение ноль или несколько раз: *  
  Квалификатор `*` выделяет предыдущий элемент, повторяющийся ноль или более раз. Это свойство эквивалентно квантификатору `{0,}`. `*` — жадный квантификатор, ленивым эквивалентом которого является квантификатор `*?`.  
   
- В следующем примере показано, как использовать это регулярное выражение. Пять из девяти чисел в исходной строке соответствуют заданному шаблону, четыре числа (`95`, `929`, `9219` и `9919`) — нет.  
+ В следующем примере показано, как использовать это регулярное выражение. Пять из девяти чисел в исходной строке соответствуют заданному шаблону, а четыре числа (`95`, `929`, `9219` и `9919`) — нет.  
   
  [!code-csharp[RegularExpressions.Quantifiers#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#1)]
  [!code-vb[RegularExpressions.Quantifiers#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#1)]  

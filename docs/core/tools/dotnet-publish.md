@@ -2,12 +2,12 @@
 title: Команда dotnet publish
 description: Команда dotnet publish публикует решение или проект .NET Core в каталоге.
 ms.date: 02/24/2020
-ms.openlocfilehash: 59fdbfa875dad13963ae198acc6a31b537279dfe
-ms.sourcegitcommit: c8c3e1c63a00b7d27f76f5e50ee6469e6bdc8987
+ms.openlocfilehash: 4ff49452e4d941b3e06ad511507b1dc429ab459f
+ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87251183"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88187979"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -51,7 +51,9 @@ dotnet publish -h|--help
 
 Команда `dotnet publish` вызывает метод MSBuild, который, в свою очередь, вызывает целевой объект `Publish`. Все параметры, передаваемые в `dotnet publish`, передаются далее в MSBuild. Параметры `-c` и `-o` сопоставляются со свойствами MSBuild `Configuration` и `PublishDir` соответственно.
 
-Команда `dotnet publish` принимает параметры MSBuild, например `-p` для задания свойств или `-l` для определения средства ведения журнала. Например, можно задать свойство MSBuild, используя формат: `-p:<NAME>=<VALUE>`. Кроме того, задать связанные с публикацией свойства можно, сославшись на файл *PUBXML*, например:
+Команда `dotnet publish` принимает параметры MSBuild, например `-p` для задания свойств или `-l` для определения средства ведения журнала. Например, можно задать свойство MSBuild, используя формат: `-p:<NAME>=<VALUE>`.
+
+Кроме того, задать связанные с публикацией свойства можно, сославшись на файл *PUBXML* (появившийся в пакете SDK для .NET Core 3.1). Например:
 
 ```dotnetcli
 dotnet publish -p:PublishProfile=FolderProfile

@@ -1,17 +1,17 @@
 ---
 title: Реализация фоновых задач в микрослужбах с помощью IHostedService и класса BackgroundService
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Новые варианты использования IHostedService и BackgroundService для реализации фоновых задач в микрослужбах .NET Core.
-ms.date: 01/30/2020
-ms.openlocfilehash: fd26d0444312d3525ad95b2273f28a6ceaa27911
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.date: 08/14/2020
+ms.openlocfilehash: 4ab215f2196cd2e66b116465c3a582a9846c8066
+ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988340"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88268001"
 ---
 # <a name="implement-background-tasks-in-microservices-with-ihostedservice-and-the-backgroundservice-class"></a>Реализация фоновых задач в микрослужбах с помощью IHostedService и класса BackgroundService
 
-Рано или поздно вам может потребоваться реализовать фоновые задачи и запланированные задания в приложении на основе микрослужб или приложении любого другого типа. Разница при использовании архитектуры микрослужб в том, что вы можете реализовать отдельный процесс или контейнер для размещения таких фоновых задач, чтобы затем масштабировать его по мере необходимости, или даже обеспечить выполнение единственного экземпляра этого процесса или контейнера микрослужбы.
+Фоновые задачи и запланированные задания обычно требуется использовать в любом приложении независимо от того, строится ли оно на основе архитектуры микрослужб. Разница при использовании архитектуры микрослужб в том, что вы можете реализовать фоновую задачу в отдельном процессе или контейнере, чтобы затем масштабировать его по мере необходимости.
 
 Если посмотреть шире, в .NET Core такие задачи называются *размещенными службами*, так как они представляют собой службы или логику, размещаемые в узле, приложении или микрослужбе. Обратите внимание на то, что в этом случае под размещенной службой понимается просто класс с логикой фоновой задачи.
 
@@ -68,29 +68,7 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
 ## <a name="the-ihostedservice-interface"></a>Интерфейс IHostedService
 
-При регистрации интерфейса `IHostedService` платформа .NET Core вызывает методы `StartAsync()` и `StopAsync()` типа `IHostedService` во время запуска и остановки приложения соответственно. В частности, метод запуска вызывается после запуска сервера и активации `IApplicationLifetime.ApplicationStarted`.
-
-Определение интерфейса `IHostedService` в .NET Core выглядит следующим образом.
-
-```csharp
-namespace Microsoft.Extensions.Hosting
-{
-    //
-    // Summary:
-    //     Defines methods for objects that are managed by the host.
-    public interface IHostedService
-    {
-        //
-        // Summary:
-        // Triggered when the application host is ready to start the service.
-        Task StartAsync(CancellationToken cancellationToken);
-        //
-        // Summary:
-        // Triggered when the application host is performing a graceful shutdown.
-        Task StopAsync(CancellationToken cancellationToken);
-    }
-}
-```
+При регистрации интерфейса `IHostedService` платформа .NET Core вызывает методы `StartAsync()` и `StopAsync()` типа `IHostedService` во время запуска и остановки приложения соответственно. Дополнительные сведения см. в разделе [Интерфейс IHostedService](https://docs.microsoft.com/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-3.1&tabs=visual-studio#ihostedservice-interface).
 
 Как было показано ранее, вы можете создать несколько реализаций IHostedService и зарегистрировать их в методе `ConfigureService()` в контейнере внедрения зависимостей. Все эти размещенные службы будут запускаться и останавливаться вместе с приложением или микрослужбой.
 

@@ -2,12 +2,12 @@
 title: Мониторинг работоспособности
 description: Изучите один из способов реализации мониторинга работоспособности.
 ms.date: 03/02/2020
-ms.openlocfilehash: 88354ae0ae59dbfbe40dbe1b25320f8f93d042ce
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 3e3e8ec41de1469f0c397d8d80d224dd2f7a2bd2
+ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988860"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88267897"
 ---
 # <a name="health-monitoring"></a>Мониторинг работоспособности
 
@@ -195,7 +195,6 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
     Predicate = _ => true,
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
-}
 ```
 
 ### <a name="query-your-microservices-to-report-about-their-health-status"></a>Отправка запроса состояния работоспособности у микрослужб
@@ -220,7 +219,7 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 
 **Рис. 8-9**. Пример отчета о проверке работоспособности в eShopOnContainers
 
-Таким образом, эта служба наблюдения запрашивает конечную точку "/hc" каждой микрослужбы. При этом будут выполнены все проверки работоспособности, определенные в этой конечной точке, и возвращено общее состояние работоспособности в зависимости от результатов этих проверок. HealthChecksUI удобно использовать с несколькими записями конфигурации и двумя строками кода, которые нужно добавить в Startup.cs службы наблюдения.
+Таким образом, эта служба наблюдения запрашивает конечную точку "/hc" каждой микрослужбы. При этом будут выполнены все проверки работоспособности, определенные в этой конечной точке, и возвращено общее состояние работоспособности в зависимости от результатов этих проверок. HealthChecksUI удобно использовать с несколькими записями конфигурации и двумя строками кода, которые нужно добавить в *Startup.cs* службы наблюдения.
 
 Пример файла конфигурации для пользовательского интерфейса проверки работоспособности:
 
@@ -242,7 +241,7 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 }
 ```
 
-Файл Startup.cs, который добавляет HealthChecksUI:
+Файл *Startup.cs*, который добавляет HealthChecksUI:
 
 ```csharp
 // Startup.cs from WebStatus(Watch Dog) service
@@ -257,7 +256,7 @@ public void ConfigureServices(IServiceCollection services)
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
     //…
-    app.UseHealthChecksUI(config=> config.UIPath = "/hc-ui");
+    app.UseHealthChecksUI(config => config.UIPath = "/hc-ui");
     //…
 }
 ```

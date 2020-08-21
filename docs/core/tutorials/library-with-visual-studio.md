@@ -1,29 +1,29 @@
 ---
 title: Создание библиотеки классов .NET Standard с помощью Visual Studio
 description: Сведения о создании библиотеки классов .NET Standard с помощью Visual Studio.
-ms.date: 06/08/2020
+ms.date: 08/07/2020
 dev_langs:
 - csharp
 - vb
-ms.custom: vs-dotnet
-ms.openlocfilehash: 69259b1d47a8e30945c578db10c6d697c81fa261
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.custom: vs-dotnet,contperfq1
+ms.openlocfilehash: 595e93d8d8d22478c6770ddd4f70a0214653f5b9
+ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164406"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88187946"
 ---
 # <a name="tutorial-create-a-net-standard-library-using-visual-studio"></a>Учебник. Создание библиотеки .NET Standard с помощью Visual Studio
 
-В этом руководстве вы создадите простую служебную библиотеку с одним методом для обработки строк. Вы реализуете его как [метод расширения](../../csharp/programming-guide/classes-and-structs/extension-methods.md), чтобы вызывать его так же, как любой член класса <xref:System.String>.
+В этом учебнике вы создадите простую библиотеку классов с одним методом для обработки строк.
 
-*Библиотека классов* определяет типы и методы, которые могут быть вызваны из любого приложения. Библиотеку классов, предназначенную для .NET Standard 2.0, можно вызывать из любой реализации .NET, которая поддерживает эту версию .NET Standard. Когда вы завершите создание библиотеки классов, можете распространить ее как независимый компонент или включить в состав одного или нескольких пакетов приложения.
+*Библиотека классов* определяет типы и методы, которые могут быть вызваны из любого приложения. Библиотеку классов, предназначенную для .NET Standard 2.0, можно вызывать из любой реализации .NET, которая поддерживает эту версию .NET Standard.
+
+Когда вы завершите создание библиотеки классов, можете распространить ее как пакет NuGet или включить как компонент в состав приложения, в котором она используется.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [Visual Studio 2019 версии 16.6 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**. Пакет SDK для .NET Core 3.1 устанавливается автоматически при выборе этой рабочей нагрузки.
-
-  Дополнительные сведения см. в разделе [Установка с помощью Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) статьи [Установка пакета SDK для .NET Core](../install/sdk.md?pivots=os-windows).
 
 ## <a name="create-a-solution"></a>Создание решения
 
@@ -67,6 +67,8 @@ ms.locfileid: "87164406"
    :::code language="vb" source="./snippets/library-with-visual-studio/vb/StringLibrary/Class1.vb":::
 
    Библиотека классов `UtilityLibraries.StringLibrary` содержит метод `StartsWithUpper`, который возвращает значение <xref:System.Boolean>, указывающее, является ли первым символом текущего экземпляра строки символ верхнего регистра. Символы верхнего регистра определяются по стандарту Юникод. Метод <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> возвращает `true`, если символ является символом верхнего регистра.
+
+   Метод `StartsWithUpper` реализуется как [метод расширения](../../csharp/programming-guide/classes-and-structs/extension-methods.md), чтобы вызывать его можно было так же, как любой член класса <xref:System.String>.
 
 1. В строке меню выберите **Сборка** > **Собрать решение**, чтобы убедиться, что проект компилируется без ошибок.
 
@@ -126,7 +128,17 @@ ms.locfileid: "87164406"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом руководстве вы создали решение, добавили проект библиотеки и добавили проект консольного приложения, использующего библиотеку. В следующем руководстве вы добавите в решение проект модульного теста.
+В этом руководстве вы создали библиотеку классов. В следующем руководстве вы узнаете, как выполнять модульное тестирование библиотеки классов.
 
 > [!div class="nextstepaction"]
-> [Тестирование библиотеки .NET Standard с помощью .NET Core и Visual Studio](testing-library-with-visual-studio.md)
+> [Модульное тестирование библиотеки .NET Standard с помощью Visual Studio](testing-library-with-visual-studio.md)
+
+Вы также можете пропустить автоматическое модульное тестирование и узнать, как можно распространить библиотеку, создав пакет NuGet:
+
+> [!div class="nextstepaction"]
+> [Создание и публикация пакета с помощью Visual Studio](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+
+Либо узнайте, как опубликовать консольное приложение. При публикации консольного приложения из решения, созданного в этом руководстве, библиотека классов публикуется вместе с ним в виде файла *DLL*.
+
+> [!div class="nextstepaction"]
+> [Публикация консольного приложения .NET Core с помощью Visual Studio](publishing-with-visual-studio.md)

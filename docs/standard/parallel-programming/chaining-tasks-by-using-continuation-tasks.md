@@ -9,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, continuations
 ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
-ms.openlocfilehash: 132518b9d8d22efecfcf3ed14e8b5969aa768cd4
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: d42d244e644bf3ee1f45b25a71d60bbb2ef8e590
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024593"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88063839"
 ---
 # <a name="chaining-tasks-using-continuation-tasks"></a>Создание цепочки задач с помощью задач продолжения
 
@@ -52,7 +52,7 @@ ms.locfileid: "88024593"
 
 Можно также создать продолжение, которое будет выполняться после завершения всей группы задач или какой-либо из них. Чтобы выполнить продолжение после завершения всех предшествующих задач, вызовите статический (`Shared` в Visual Basic) метод <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> или экземпляр метода <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=nameWithType> . Чтобы выполнить продолжение после завершения какой-либо из предшествующих задач, вызовите статический (`Shared` в Visual Basic) метод <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> или экземпляр метода <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A?displayProperty=nameWithType> .
 
-Обратите внимание, что вызовы в перегрузки <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> не блокируют вызывающий поток. Тем не менее обычно вызываются все методы, кроме <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task.WhenAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=nameWithType> для извлечения возвращаемого свойства <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType>, которое не блокирует вызывающий поток.
+Вызовы перегрузок <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> не блокируют вызывающий поток. Тем не менее обычно вызываются все методы, кроме <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task.WhenAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=nameWithType> для извлечения возвращаемого свойства <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType>, которое не блокирует вызывающий поток.
 
 В следующем примере вызывается метод <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=nameWithType> для создания задачи продолжения, которая отражает результаты десяти своих предшествующих задач. Каждой предшествующей задаче соответствует значение индекса в диапазоне от 1 до 10. Если предшествующие задачи завершаются успешно (их свойство <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> имеет значение <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>), то свойство <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> продолжения представляет собой массив значений <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> , возвращенных каждой предшествующей задачей. В этом примере они добавляются для вычисления суммы квадратов всех чисел от 1 до 10.
 

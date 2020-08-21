@@ -3,12 +3,12 @@ title: Упаковка дистрибутивов .NET Core
 description: Узнайте, как создавать пакеты .NET Core, присваивать им имена и управлять их версиями для распространения.
 author: tmds
 ms.date: 10/09/2019
-ms.openlocfilehash: a345aeded29b3058c6c56abbff439ea26cbc7afb
-ms.sourcegitcommit: cdf5084648bf5e77970cbfeaa23f1cab3e6e234e
+ms.openlocfilehash: 3324a6a151fc6dc46a8f13ea17c89da99d108d82
+ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "81386642"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88062890"
 ---
 # <a name="net-core-distribution-packaging"></a>Упаковка дистрибутивов .NET Core
 
@@ -69,7 +69,7 @@ ms.locfileid: "81386642"
 
 - (2) **host/fxr/\<fxr version>** содержит логику разрешений платформы, используемую основным приложением. Основное приложение использует новейшую установленную версию hostfxr. Hostfxr отвечает за выбор необходимой среды выполнения при запуске приложения .NET Core. Например, приложение, созданное для среды выполнения .NET Core 2.0.0, использует версию 2.0.5, если версия 2.0.0 недоступна. Аналогично hostfxr выбирает соответствующую версию SDK во время разработки.
 
-- (3) **sdk/\<версия пакета sdk>** Пакет SDK (или "инструментарий") — это набор управляемых инструментов, которые используются для написания кода и сборки библиотек и приложений .NET Core. Пакет SDK содержит .NET Core CLI, компиляторы языков с управляемым кодом, MSBuild, а также соответствующие задачи и целевые объекты сборки, NuGet, новые шаблоны проектов и т. д.
+- (3) **sdk/\<sdk version>** пакет SDK (также называется инструментарием) — это набор управляемых средств, которые используются для написания кода и сборки библиотек и приложений .NET Core. Пакет SDK содержит .NET Core CLI, компиляторы языков с управляемым кодом, MSBuild, а также соответствующие задачи и целевые объекты сборки, NuGet, новые шаблоны проектов и т. д.
 
 - (4) **sdk/NuGetFallbackFolder** содержит кэш пакетов NuGet, которые пакет SDK использует во время операции восстановления, например при выполнении `dotnet restore` или `dotnet build`. Эта папка используется только в версиях, предшествующих .NET Core 3.0. Ее невозможно создать из источника, так как она содержит предварительно созданные двоичные ресурсы из `nuget.org`.
 
@@ -111,57 +111,57 @@ ms.locfileid: "81386642"
 Далее перечислены рекомендуемые пакеты.
 
 - `dotnet-sdk-[major].[minor]` — устанавливает новейшую версию пакета SDK для конкретной среды выполнения
-  - **Версия:** \<версия среды выполнения>
+  - **Версия:** \<sdk version>
   - **Пример:** dotnet-sdk-2.1
   - **Содержит:** (3),(4)
   - **Зависимости:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
 
 - `aspnetcore-runtime-[major].[minor]` — устанавливает конкретную среду выполнения ASP.NET Core
-  - **Версия:** \<версия среды выполнения aspnetcore>
+  - **Версия:** \<aspnetcore runtime version>
   - **Пример:** aspnetcore-runtime-2.1
   - **Содержит:** (6)
   - **Зависимости:** `dotnet-runtime-[major].[minor]`
 
 - `dotnet-runtime-deps-[major].[minor]` _(Необязательно)_  — устанавливает зависимости для запуска автономных приложений
-  - **Версия:** \<версия среды выполнения>
+  - **Версия:** \<runtime version>
   - **Пример:** dotnet-runtime-deps-2.1
   - **Зависимости:** _зависимости, зависящие от распределения_
 
 - `dotnet-runtime-[major].[minor]` — устанавливает конкретную среду выполнения
-  - **Версия:** \<версия среды выполнения>
+  - **Версия:** \<runtime version>
   - **Пример:** dotnet-runtime-2.1
   - **Содержит:** (5)
   - **Зависимости:** `dotnet-hostfxr-[major].[minor]`, `dotnet-runtime-deps-[major].[minor]`
 
 - `dotnet-hostfxr-[major].[minor]` — зависимость
-  - **Версия:** \<версия среды выполнения>
+  - **Версия:** \<runtime version>
   - **Пример:** dotnet-hostfxr-3.0
   - **Содержит:** (2)
   - **Зависимости:** `dotnet-host`
 
 - `dotnet-host` — зависимость
-  - **Версия:** \<версия среды выполнения>
+  - **Версия:** \<runtime version>
   - **Пример:** dotnet-host
   - **Содержит:** (1),(8),(9),(10),(16)
 
 - `dotnet-apphost-pack-[major].[minor]` — зависимость
-  - **Версия:** \<версия среды выполнения>
+  - **Версия:** \<runtime version>
   - **Содержит:** (13)
 
 - `dotnet-targeting-pack-[major].[minor]` — нацеливание на непоследнюю среду выполнения
-  - **Версия:** \<версия среды выполнения>
+  - **Версия:** \<runtime version>
   - **Содержит:** (12)
 
 - `aspnetcore-targeting-pack-[major].[minor]` — нацеливание на непоследнюю среду выполнения
-  - **Версия:** \<версия среды выполнения aspnetcore>
+  - **Версия:** \<aspnetcore runtime version>
   - **Содержит:** (11)
 
 - `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]` — нацеливание на версию netstandard
-  - **Версия:** \<версия пакета SDK>
+  - **Версия:** \<sdk version>
   - **Содержит:** (15)
 
 - `dotnet-templates-[major].[minor]`
-  - **Версия:** \<версия пакета SDK>
+  - **Версия:** \<sdk version>
   - **Содержит:** (15)
 
 Для использования `dotnet-runtime-deps-[major].[minor]` необходимо понимать _зависимости для конкретных дистрибутивов_. Так как система сборки дистрибутива может наследовать этот пакет автоматически, он является необязательным. В этом случае эти зависимости добавляются прямо в пакет `dotnet-runtime-[major].[minor]`.

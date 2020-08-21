@@ -6,12 +6,12 @@ ms.date: 01/17/2020
 helpviewer_keywords:
 - versions, .NET Framework
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
-ms.openlocfilehash: df44786dfd0a384ae2498a94d14b029612450fee
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: df7acc788943e9655dbbb03ffaaa88ff22b81ad2
+ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475480"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88187904"
 ---
 # <a name="net-framework-versions-and-dependencies"></a>Версии и зависимости платформы .NET Framework
 
@@ -31,8 +31,9 @@ ms.locfileid: "86475480"
 
 В следующей таблице приводится краткий обзор истории версий .NET Framework и сопоставление каждой версии с Visual Studio, Windows и Windows Server. Visual Studio поддерживает работу с различными версиями, поэтому вы не ограничены только указанной версией платформы .NET Framework.
 
-- Значок галочки ✔️ обозначает версии ОС, на которых установлена .NET Framework и нужно ли ее включить [в панели управления](../install/dotnet-35-windows-10.md) (для Windows) или с помощью диспетчера сервера (для Windows Server).
-- Значок знака плюс ➕ обозначает версии ОС, на которых .NET Framework предварительно не установлена, но может быть установлена.
+- Флажок ✔️ обозначает версии ОС, на которых платформа .NET Framework установлена по умолчанию.
+- Значок знака плюс  обозначает версии ОС, на которых .NET Framework предварительно не установлена, но может быть установлена.
+- Звездочка **\*** обозначает версии ОС, на которых платформу .NET Framework (предварительно установленную либо нет) нужно включить в [панели управления](../install/dotnet-35-windows-10.md) или (для Windows Server) с помощью диспетчера сервера.
 
 | | |
 | - | - |
@@ -50,8 +51,8 @@ ms.locfileid: "86475480"
 |||
 |-|-|
 |**Версия среды CLR**|4|
-|**Версии Windows**|✔️ 10, обновление за май 2019 г.<br/>➕ 10, обновление за октябрь 2018 г. (версия 1809)<br/>➕ 10, обновление за апрель 2018 г. (версия 1803)<br/>➕ 10 Fall Creators Update (версия 1709)<br/>➕ 10 Creators Update (версия 1703)<br/>➕ 10, юбилейное обновление (версия 1607)<br/>➕ 8.1<br/>➕7|
-|**Версии Windows Server**|➕ Windows Server 2019<br/>➕ Windows Server, версия 1809<br/>➕ Windows Server, версия 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 с пакетом обновления 1 (SP1)|
+|**Версии Windows**|✔️ 10, обновление за май 2019 г.<br/> 10, обновление за октябрь 2018 г. (версия 1809)<br/> 10, обновление за апрель 2018 г. (версия 1803)<br/> 10 Fall Creators Update (версия 1709)<br/> 10 Creators Update (версия 1703)<br/> 10, юбилейное обновление (версия 1607)<br/> 8.1<br/>7|
+|**Версии Windows Server**| Windows Server 2019<br/> Windows Server, версия 1809<br/> Windows Server, версия 1803<br/> 2016<br/> 2012 R2<br/> 2012<br/> 2008 R2 с пакетом обновления 1 (SP1)|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br/>- 528040 (обновление Windows 10 за май 2019 г.)<br/>– 528049 (все остальные версии ОС)<br/>(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-472"></a>.NET Framework 4.7.2
@@ -64,8 +65,8 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|4|
 |**Включено в версию Visual Studio**|2019<sup>1</sup>|
-|**Версии Windows**|✓ 10, обновление за октябрь 2018 г. (версия 1809)<br/>✓ 10, обновление за апрель 2018 г. (версия 1803)<br/>➕ 10 Fall Creators Update (версия 1709)<br/>➕ 10 Creators Update (версия 1703)<br/>➕ 10, юбилейное обновление (версия 1607)<br/>➕ 8.1<br/>➕7|
-|**Версии Windows Server**|✔️ Windows Server 2019<br/>✔️ Windows Server, версия 1809<br/>✔️ Windows Server, версия 1803<br/>➕ Windows Server, версия 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 с пакетом обновления 1 (SP1)|
+|**Версии Windows**|✓ 10, обновление за октябрь 2018 г. (версия 1809)<br/>✓ 10, обновление за апрель 2018 г. (версия 1803)<br/> 10 Fall Creators Update (версия 1709)<br/> 10 Creators Update (версия 1703)<br/> 10, юбилейное обновление (версия 1607)<br/> 8.1<br/>7|
+|**Версии Windows Server**|✔️ Windows Server 2019<br/>✔️ Windows Server, версия 1809<br/>✔️ Windows Server, версия 1803<br/> Windows Server, версия 1709<br/> 2016<br/> 2012 R2<br/> 2012<br/> 2008 R2 с пакетом обновления 1 (SP1)|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br/>– 461814 (обновление Windows 10 за октябрь 2018 г.)<br/>– 461808 (обновление Windows за 10 апреля 2018 г. и Windows Server, версия 1803)<br/>— 461814 (все остальные версии ОС)<br/>(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 <sup>1</sup> — требуется установить **разработку классических приложений .NET**, **ASP.NET и веб-разработку**, **разработку Azure**, **разработку для Office или SharePoint**, **разработку мобильных приложений с помощью .NET**или рабочие нагрузки **Кроссплатформенная разработка .NET Core**.
@@ -79,8 +80,8 @@ ms.locfileid: "86475480"
 |||
 |-|-|
 |**Версия среды CLR**|4|
-|**Версии Windows**|✔️ 10 Fall Creators Update (версия 1709)<br/>➕ 10 Creators Update (версия 1703)<br/>➕ 10, юбилейное обновление (версия 1607)<br/>➕ 8.1<br/>➕7|
-|**Версии Windows Server**|➕ Windows Server, версия 1803<br/>✔️ Windows Server, версия 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 с пакетом обновления 1 (SP1)|
+|**Версии Windows**|✔️ 10 Fall Creators Update (версия 1709)<br/> 10 Creators Update (версия 1703)<br/> 10, юбилейное обновление (версия 1607)<br/> 8.1<br/>7|
+|**Версии Windows Server**| Windows Server, версия 1803<br/>✔️ Windows Server, версия 1709<br/> 2016<br/> 2012 R2<br/> 2012<br/> 2008 R2 с пакетом обновления 1 (SP1)|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br/>– 461308 (обновление Windows 10 Creators Update и Windows Server, версия 1709)<br/>— 461310 (все остальные версии ОС)<br/>(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-47"></a>.NET Framework 4.7
@@ -91,8 +92,8 @@ ms.locfileid: "86475480"
 |||
 |-|-|
 |**Версия среды CLR**|4|
-|**Версии Windows**|✔️ 10 Creators Update (версия 1703)<br/>➕ 10, юбилейное обновление (версия 1607)<br/>➕ 8.1<br/>➕7|
-|**Версии Windows Server**|➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 с пакетом обновления 1 (SP1)|
+|**Версии Windows**|✔️ 10 Creators Update (версия 1703)<br/> 10, юбилейное обновление (версия 1607)<br/> 8.1<br/>7|
+|**Версии Windows Server**| 2016<br/> 2012 R2<br/> 2012<br/> 2008 R2 с пакетом обновления 1 (SP1)|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br/>– 460798 (обновление Windows 10 Creators Update)<br/>– 460805 (все другие версии ОС)<br/>(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-462"></a>.NET Framework 4.6.2
@@ -103,8 +104,8 @@ ms.locfileid: "86475480"
 |||
 |-|-|
 |**Версия среды CLR**|4|
-|**Версии Windows**|✔️ 10, юбилейное обновление (версия 1607)<br/>➕️ 10, ноябрьское обновление (версия 1511)<br/>➕ 10<br/>➕ 8.1<br />➕ 7|
-|**Версии Windows Server**|✔️ 2016<br /><br/>➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 с пакетом обновления 1 (SP1)|
+|**Версии Windows**|✔️ 10, юбилейное обновление (версия 1607)<br/>️ 10, ноябрьское обновление (версия 1511)<br/> 10<br/> 8.1<br /> 7|
+|**Версии Windows Server**|✔️ 2016<br /><br/> 2012 R2<br /> 2012<br /> 2008 R2 с пакетом обновления 1 (SP1)|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br /><br/>– 394802 (юбилейное обновление Windows 10 и Windows Server 2016)<br/>– 394806 (все остальные версии ОС)<br /><br/>(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-461"></a>.NET Framework 4.6.1
@@ -116,8 +117,8 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|4|
 |**Включено в версию Visual Studio**|2017<sup>1</sup>|
-|**Версии Windows**|✔️ 10, ноябрьское обновление (версия 1511)<br/>➕ 10<br />➕ 8.1<br />➕ 8<br />➕ 7|
-|**Версии Windows Server**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 с пакетом обновления 1 (SP1)|
+|**Версии Windows**|✔️ 10, ноябрьское обновление (версия 1511)<br/> 10<br /> 8.1<br /> 8<br /> 7|
+|**Версии Windows Server**| 2012 R2<br /> 2012<br /> 2008 R2 с пакетом обновления 1 (SP1)|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br /><br/>– 394254 (ноябрьское обновление Windows 10)<br />– 394271 (все остальные версии ОС)<br /><br/>(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 <sup>1</sup> — требуется установить **разработку классических приложений .NET**, **ASP.NET и веб-разработку**, **разработку Azure**, **разработку для Office или SharePoint**, **разработку мобильных приложений с помощью .NET**или рабочие нагрузки **Кроссплатформенная разработка .NET Core**.
@@ -131,8 +132,8 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|4|
 |**Включено в версию Visual Studio**|2015|
-|**Версии Windows**|✔️ 10<br /><br />➕ 8.1<br />➕ 8<br />➕ 7<br />➕ Vista|
-|**Версии Windows Server**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 с пакетом обновления 1 (SP1)<br />➕ 2008 SP2|
+|**Версии Windows**|✔️ 10<br /><br /> 8.1<br /> 8<br /> 7<br /> Vista|
+|**Версии Windows Server**| 2012 R2<br /> 2012<br /> 2008 R2 с пакетом обновления 1 (SP1)<br /> 2008 SP2|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br /><br />– 393295 (Windows 10)<br />– 393297 (все остальные версии ОС)<br /><br />(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-452"></a>.NET Framework 4.5.2
@@ -143,8 +144,8 @@ ms.locfileid: "86475480"
 |||
 |-|-|
 |**Версия среды CLR**|4|
-|**Версии Windows**|➕ 8.1<br />➕ 8<br />➕ 7<br />➕ Vista|
-|**Версии Windows Server**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 с пакетом обновления 1 (SP1)<br />➕ 2008 SP2|
+|**Версии Windows**| 8.1<br /> 8<br /> 7<br /> Vista|
+|**Версии Windows Server**| 2012 R2<br /> 2012<br /> 2008 R2 с пакетом обновления 1 (SP1)<br /> 2008 SP2|
 |**Определение установленной версии .NET**|Используйте DWORD 379893 `Release`<br /><br />(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-451"></a>.NET Framework 4.5.1
@@ -156,8 +157,8 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|4|
 |**Включено в версию Visual Studio**|2013|
-|**Версии Windows**|✔️ 8.1<br /><br />➕ 8<br />➕ 7<br />➕ Vista|
-|**Версии Windows Server**|✔️ 2012 R2<br /><br />➕ 2012<br />➕ 2008 R2 с пакетом обновления 1 (SP1)<br />➕ 2008 SP2|
+|**Версии Windows**|✔️ 8.1<br /><br /> 8<br /> 7<br /> Vista|
+|**Версии Windows Server**|✔️ 2012 R2<br /><br /> 2012<br /> 2008 R2 с пакетом обновления 1 (SP1)<br /> 2008 SP2|
 |**Определение установленной версии .NET**|Используйте DWORD `Release`:<br /><br />– 378675 (Windows 8.1)<br />– 378758 (все остальные)<br /><br />(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-45"></a>.NET Framework 4,5
@@ -169,8 +170,8 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|4|
 |**Включено в версию Visual Studio**|2012|
-|**Версии Windows**|✔️ 8<br />➕ 7<br />➕ Vista|
-|**Версии Windows Server**|✔️ 2012<br />➕ 2008 R2 с пакетом обновления 1 (SP1)<br />➕ 2008 SP2|
+|**Версии Windows**|✔️ 8<br /> 7<br /> Vista|
+|**Версии Windows Server**|✔️ 2012<br /> 2008 R2 с пакетом обновления 1 (SP1)<br /> 2008 SP2|
 |**Определение установленной версии .NET**|Используйте DWORD 378389 `Release`<br /><br />(См. [инструкции](how-to-determine-which-versions-are-installed.md))|
 
 ### <a name="net-framework-4"></a>.NET Framework 4
@@ -181,8 +182,8 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|4|
 |**Включено в версию Visual Studio**|2010|
-|**Версии Windows**|➕ 7<br />➕ Vista|
-|**Версии Windows Server**|➕ 2008 R2 с пакетом обновления 1 (SP1)<br />➕ 2008 SP2<br />➕ 2003|
+|**Версии Windows**| 7<br /> Vista|
+|**Версии Windows Server**| 2008 R2 с пакетом обновления 1 (SP1)<br /> 2008 SP2<br /> 2003|
 |**Определение установленной версии .NET**|См. [инструкции](how-to-determine-which-versions-are-installed.md)|
 
 ### <a name="net-framework-35"></a>.NET Framework 3,5
@@ -202,8 +203,8 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|2.0|
 |**Включено в версию Visual Studio**|2008|
-|**Версии Windows**|✔️ 10\*<br/>✔️ 8.1\*<br />✔️ 8\*<br />✔️ 7<br /><br />➕ Vista|
-|**Версии Windows Server**|➕ Windows Server, версия 1803\*<br/>➕ Windows Server, версия 1709\*<br/>➕ 2016\*<br/>➕ 2012 R2\*<br />➕ 2012\*<br /><br />✔️2008 R2 с пакетом обновления 1 (SP1)\*<br /><br/>➕ 2008 SP2<br />➕ 2003|
+|**Версии Windows**|✔️ 10\*<br/>✔️ 8.1\*<br />✔️ 8\*<br />✔️ 7<br /><br /> Vista|
+|**Версии Windows Server**| Windows Server, версия 1803\*<br/> Windows Server, версия 1709\*<br/> 2016\*<br/> 2012 R2\*<br /> 2012\*<br /><br />✔️2008 R2 с пакетом обновления 1 (SP1)\*<br /><br/> 2008 SP2<br /> 2003|
 |**Определение установленной версии .NET**|См. [инструкции](how-to-determine-which-versions-are-installed.md)|
 
 ### <a name="net-framework-30"></a>.NET Framework 3.0
@@ -219,7 +220,7 @@ ms.locfileid: "86475480"
 |-|-|
 |**Версия среды CLR**|2.0|
 |**Версии Windows**|✔️ Vista|
-|**Версии Windows Server**|✔️ 2008 R2 с пакетом обновления 1 (SP1)*<br />✔️ 2008 SP2\*<br /><br />➕ 2003|
+|**Версии Windows Server**|✔️ 2008 R2 с пакетом обновления 1 (SP1)*<br />✔️ 2008 SP2\*<br /><br /> 2003|
 |**Определение установленной версии .NET**|Ознакомьтесь с [инструкциями](how-to-determine-which-versions-are-installed.md).|
 
 ### <a name="net-framework-20"></a>.NET Framework 2.0
