@@ -3,16 +3,16 @@ title: Обеспечение безопасности веб-приложени
 description: Безопасность микрослужб и веб-приложений .NET — узнайте о способах проверки подлинности в веб-приложениях ASP.NET Core.
 author: mjrousos
 ms.date: 08/07/2020
-ms.openlocfilehash: 9ce62039374f2256cd9adbddbb850aa4135af9f4
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: 1dcdb5d2987360ac583fa700a387d977f498d1d9
+ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024619"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88608094"
 ---
 # <a name="make-secure-net-microservices-and-web-applications"></a>Обеспечение безопасности микрослужб и веб-приложений .NET
 
-Существует так много аспектов безопасности микрослужб и веб-приложений, что эта тема может легко занять несколько книг, поэтому в этом разделе вы сосредоточитесь на проверке подлинности, авторизации и секретах приложений.
+Безопасность микрослужб и веб-приложений — это очень обширная тема, для полного рассмотрения которой может потребоваться несколько книг, подобной этой. Поэтому в этом разделе мы уделим основное внимание аутентификации, авторизации и секретам приложений.
 
 ## <a name="implement-authentication-in-net-microservices-and-web-applications"></a>Внедрение проверки подлинности в микрослужбы и веб-приложения .NET
 
