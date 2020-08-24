@@ -4,12 +4,12 @@ description: Узнайте, как разместить среду выполн
 author: mjrousos
 ms.topic: how-to
 ms.date: 12/21/2018
-ms.openlocfilehash: 2324b61bcffb686a455fcfd154284a2b78aa746b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 3b24ade694e25040d77e411bead3f454e9d5cdef
+ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84283498"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88656180"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>Написание пользовательского хост-приложения NET Core для управления средой выполнения .NET из машинного кода
 
@@ -34,7 +34,7 @@ ms.locfileid: "84283498"
 
 ## <a name="sample-hosts"></a>Примеры основного приложения
 
-[Пример основного приложения](https://github.com/dotnet/samples/tree/master/core/hosting), в котором демонстрируются описанные в учебнике ниже действия, доступны в репозитории dotnet/samples на сайте GitHub. Комментарии в примерах четко соответствуют пронумерованным шагам в этих учебниках. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+[Пример основного приложения](https://github.com/dotnet/samples/tree/master/core/hosting), в котором демонстрируются описанные в учебнике ниже действия, доступны в репозитории dotnet/samples на сайте GitHub. Комментарии в примерах четко соответствуют пронумерованным шагам в этих учебниках. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 Помните, что пример основного приложения предназначен для учебных целей, поэтому в нем реализована минимальная проверка ошибок, а удобочитаемость поставлена выше эффективности.
 

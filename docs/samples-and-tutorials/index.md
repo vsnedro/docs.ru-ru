@@ -3,17 +3,17 @@ title: Примеры и руководства .NET
 description: Сведения о примерах и руководствах для .NET Core, ASP.NET Core и языке C#, которые помогут вам изучить платформу .NET.
 author: BillWagner
 ms.author: wiwagn
-ms.date: 04/11/2017
-ms.openlocfilehash: 367b2cbea24ac0da634051bf815c319f3679f79b
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.date: 08/19/2020
+ms.openlocfilehash: 587365aae1c2069c3e94ad0452da9c31dc6e89f0
+ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86417333"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88656961"
 ---
 # <a name="net-samples-and-tutorials"></a>Примеры и руководства .NET
 
-Документация по .NET содержит набор примеров и руководств, которые помогают изучить .NET. Из этой статьи вы узнаете, как находить, просматривать и скачивать примеры и руководства для .NET Core, ASP.NET Core и C#. Ресурсы, посвященные языку программирования F#, доступны на [сайте F# Foundation](https://fsharp.org/learn.html). Если вы хотите изучать язык C# в интерактивном редакторе кода, ознакомьтесь с этим [интерактивным руководством](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1), а затем переходите к [следующему](../csharp/tutorials/intro-to-csharp/index.md). Инструкции по просмотру и скачиванию примеров кода см. в разделе [Просмотр и скачивание примеров](#viewing-and-downloading-samples).
+Документация по .NET содержит набор примеров и руководств, которые помогают изучить .NET. Из этой статьи вы узнаете, как находить, просматривать и скачивать примеры и руководства для .NET Core, ASP.NET Core и C#. Ресурсы, посвященные языку программирования F#, доступны на [сайте F# Foundation](https://fsharp.org/learn/). Если вы хотите изучать язык C# в интерактивном редакторе кода, ознакомьтесь с этим [интерактивным руководством](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1), а затем переходите к [следующему](../csharp/tutorials/intro-to-csharp/index.md). Инструкции по просмотру и скачиванию примеров кода см. в разделе [Просмотр и скачивание примеров](#view-and-download-samples).
 
 ## <a name="net-core"></a>.NET Core
 
@@ -25,9 +25,9 @@ ms.locfileid: "86417333"
 
 ### <a name="tutorials"></a>Учебники
 
-**[Написание консольных приложений .NET Core с помощью .NET Core CLI: пошаговое руководство](../core/tutorials/cli-create-console-app.md)**
+**[Учебник. Создание консольного приложения .NET Core в Visual Studio Code](../core/tutorials/with-visual-studio-code.md)**
 
-В этом руководстве показано, как с помощью средств интерфейса командной строки в .NET Core создавать кроссплатформенные консольные приложения. Мы начнем с самого простого консольного приложения, а затем охватим несколько проектов, включая тестирование. Пошаговое добавление функций позволит наращивать знания в ходе работы. [Готовый пример](https://github.com/dotnet/samples/tree/master/core/console-apps) доступен в репозитории dotnet/samples на сайте GitHub.
+В этом учебнике показано, как создать и запустить консольное приложение .NET Core с помощью Visual Studio Code и .NET Core CLI. Задачи проекта, такие как создание, компиляция и запуск проекта, выполняются с помощью .NET Core CLI,
 
 **[Написание библиотек с помощью кроссплатформенных средств](../core/tutorials/libraries.md)**
 
@@ -83,7 +83,7 @@ ms.locfileid: "86417333"
 
 В этом учебнике демонстрируется множество функций LINQ и элементы языка, которые их поддерживают. [Готовый пример](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-linq) доступен в репозитории dotnet/samples на сайте GitHub.
 
-**[Начало работы с .NET Core в macOS с помощью Visual Studio для Mac](../core/tutorials/using-on-mac-vs.md)**
+**[Учебник. Создание консольного приложения .NET Core с помощью Visual Studio для Mac](../core/tutorials/with-visual-studio-mac.md)**
 
 В этом руководстве показано, как создать простое консольное приложение .NET Core с помощью Visual Studio для Mac.
 
@@ -101,13 +101,13 @@ ms.locfileid: "86417333"
 
 В этом руководстве показано, как развернуть существующее приложение ASP.NET MVC в контейнер Windows Docker. [Готовый пример](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) доступен в репозитории dotnet/samples на сайте GitHub.
 
-## <a name="viewing-and-downloading-samples"></a>Просмотр и скачивание примеров
+## <a name="view-and-download-samples"></a>Просмотр и скачивание примеров
 
 Во многих статьях показан исходный код и примеры, которые можно просмотреть и скачать на сайте GitHub. Чтобы просмотреть пример, просто перейдите по ссылке на него. Чтобы скачать код, выполните следующие действия:
 
 1. Скачайте репозиторий, содержащий пример кода, выполнив одну из следующих процедур:
    * Загрузите ZIP-файл репозитория на свой компьютер. Распакуйте архив.
-   * Создайте [ответвление](https://help.github.com/articles/fork-a-repo/) репозитория и [клонируйте](https://help.github.com/articles/cloning-a-repository/) его на свой компьютер. Создание и клонирование ответвления позволяет участвовать в работе над документами путем сохранения изменений в ответвлении с последующим созданием запроса на включение внесенных изменений в официальный репозиторий docs. Дополнительные сведения см. в руководствах по участию в работе над документацией [.NET](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute) и [ASP.NET Core](https://github.com/aspnet/AspNetCore.Docs/blob/master/CONTRIBUTING.md).
+   * Создайте [ответвление](https://help.github.com/articles/fork-a-repo/) репозитория и [клонируйте](https://help.github.com/articles/cloning-a-repository/) его на свой компьютер. Создание и клонирование ответвления позволяет участвовать в работе над документами путем сохранения изменений в ответвлении с последующим созданием запроса на включение внесенных изменений в официальный репозиторий docs. Дополнительные сведения см. в руководствах по участию в работе над документацией [.NET](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute) и [ASP.NET Core](https://github.com/dotnet/AspNetCore.Docs/blob/master/CONTRIBUTING.md).
    * Клонируйте репозиторий локально. Если вы клонируете репозиторий docs непосредственно на свой компьютер, вы не сможете сохранять изменения напрямую в официальном репозитории и, соответственно, не сможете участвовать в работе над документацией в дальнейшем. Чтобы сохранить возможность последующего участия в работе над документацией, используйте описанную выше процедуру ответвления и клонирования.
 1. Откройте в репозитории папку с примером. Относительный путь к папке с примером отображается в адресной строке браузера при переходе по ссылке на пример.
 1. Запустить пример можно несколькими способами:

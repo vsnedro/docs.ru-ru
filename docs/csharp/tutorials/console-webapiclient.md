@@ -3,12 +3,12 @@ title: Создание клиента REST с использованием .NET
 description: Это руководство раскроет для вас некоторые возможности .NET Core и языка C#.
 ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: 1d1d1bec8c6602e4fe34fa3ce243423290412736
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 8db87440bb6e0995b1cc2c97b0d28995170ada8c
+ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84004859"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88656948"
 ---
 # <a name="rest-client"></a>Клиент REST
 
@@ -25,7 +25,7 @@ ms.locfileid: "84004859"
 
 В этом руководстве описано множество функций. Давайте начнем поочередно разбирать их.
 
-Если вы хотите поработать с [примером окончательного кода](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) в этом разделе, вы можете его загрузить. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+Если вы хотите поработать с [примером окончательного кода](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) в этом разделе, вы можете его загрузить. Инструкции по загрузке см. в разделе [Просмотр и скачивание примеров](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

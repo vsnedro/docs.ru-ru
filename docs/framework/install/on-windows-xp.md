@@ -1,14 +1,13 @@
 ---
 title: Установка платформы .NET Framework в Windows XP
 description: Сведения об установке платформы .NET Framework в Windows XP.
-ms.custom: updateeachrelease
 ms.date: 04/18/2019
-ms.openlocfilehash: 8d05c8c9cf961d3902b1d1287be5b1c2c73d349e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b39e47327672031e21cd560cddd65b2544a079fa
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75716302"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558521"
 ---
 # <a name="install-the-net-framework-on-windows-xp-and-windows-server-2003"></a>Установка .NET Framework в Windows XP и Windows Server 2003
 

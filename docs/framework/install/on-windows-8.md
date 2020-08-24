@@ -1,14 +1,13 @@
 ---
 title: Установка платформы .NET Framework в Windows 8
-ms.custom: updateeachrelease
 description: Сведения об установке платформы .NET Framework в Windows 8
 ms.date: 04/18/2019
-ms.openlocfilehash: 1db8ac9837821eb7111b9d0015787509bc27b398
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cf95a670055008b61930657c066a5dd6650452ee
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76966001"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558586"
 ---
 # <a name="install-the-net-framework-on-windows-8-and-windows-server-2012"></a>Установка .NET Framework в Windows 8 и Windows Server 2012
 

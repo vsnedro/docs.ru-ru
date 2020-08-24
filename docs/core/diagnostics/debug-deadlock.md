@@ -3,12 +3,12 @@ title: Отладка взаимоблокировки в .NET Core
 description: Руководство по отладке проблемы блокировки в .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: 247521176297254180d794d4d4fc850f30e343b0
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 6f060e1ae801eb4eacbbd1fb67110f827c37f597
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86926368"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88557884"
 ---
 # <a name="debug-a-deadlock-in-net-core"></a>Отладка взаимоблокировки в .NET Core
 
@@ -51,7 +51,7 @@ dotnet-trace ps
 
 Запишите ИД процесса, отображаемый в выходных данных команды. Наш ИД процесса — `4807`, но ваш будет другим. Перейдите по следующему URL-адресу, который является конечной точкой API на примере сайта:
 
-[https://localhost:5001/api/diagscenario/deadlock](https://localhost:5001/api/diagscenario/deadlock)
+`https://localhost:5001/api/diagscenario/deadlock`
 
 Запрос API к сайту зависает и не отвечает. Пусть запрос выполняется около 10–15 секунд Затем создайте основной дамп с помощью следующей команды:
 

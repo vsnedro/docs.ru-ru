@@ -5,12 +5,12 @@ description: В этой статье приведен список критич
 ms.date: 07/17/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 7a07df5194d5dc220b61d55a4457d90881ac9ddf
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 1506e0aa27778d44497252231028689259f48896
+ms.sourcegitcommit: ef86c24c418439b8bb5e3e7d64bbdbe5e11c3e9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474830"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88720245"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
@@ -28,6 +28,7 @@ ASP.NET Core предоставляет функции разработки ве
 - [Авторизация. Для реализаций IAuthorizationPolicyProvider требуется новый метод](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
 - [Авторизация. Для маршрутизации конечных точек используется ресурс HttpContext](#authorization-resource-in-endpoint-routing-is-httpcontext)
 - [Общие сведения Пакеты интеграции Azure с префиксом Майкрософт удалены](#azure-microsoft-prefixed-azure-integration-packages-removed)
+- [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
 - [Blazor. Незначащие пробелы удалены из компонентов во время компиляции](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
 - [Blazor. Изменена целевая платформа для пакетов NuGet](#blazor-target-framework-of-nuget-packages-changed)
 - [Кэширование. Удалено свойство CompactOnMemoryPressure](#caching-compactonmemorypressure-property-removed)
@@ -99,6 +100,10 @@ ASP.NET Core предоставляет функции разработки ве
 ***
 
 [!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
+
+***
+
+[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
 
 ***
 
