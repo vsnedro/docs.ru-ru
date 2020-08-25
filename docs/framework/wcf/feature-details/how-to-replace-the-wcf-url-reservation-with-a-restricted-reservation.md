@@ -2,12 +2,12 @@
 title: Практическое руководство. Как заменить URL-резервирование WCF на ограниченное резервирование
 ms.date: 03/30/2017
 ms.assetid: 2754d223-79fc-4e2b-a6ce-989889f2abfa
-ms.openlocfilehash: 780a2c7fe240ed624ff106e8157661f8b76b32bd
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: a7025636bb1ca2ef250d7d25634bda961f2db09d
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202364"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88811617"
 ---
 # <a name="how-to-replace-the-wcf-url-reservation-with-a-restricted-reservation"></a>Практическое руководство. Как заменить URL-резервирование WCF на ограниченное резервирование
 
@@ -17,7 +17,7 @@ ms.locfileid: "84202364"
   
 В Windows Vista или Windows Server 2008 можно просмотреть все резервирования URL-адресов HTTP из командной строки с повышенными привилегиями, введя `netsh http show urlacl` . В следующем примере показано, как должно выглядеть резервирование URL-адреса WCF:
 
-```
+```output
 Reserved URL : http://+:80/Temporary_Listen_Addresses/  
         User: \Everyone  
             Listen: Yes  

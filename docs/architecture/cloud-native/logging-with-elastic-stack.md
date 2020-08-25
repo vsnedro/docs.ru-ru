@@ -2,12 +2,12 @@
 title: Ведение журналов с использованием эластичного стека
 description: Ведение журналов с помощью эластичного стека, Logstash и Kibana
 ms.date: 05/13/2020
-ms.openlocfilehash: e886141fa691b75b882b5d67eae4ceb242e8089f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 32d9d0dae175d8d45d48b56d17f133b4cc432363
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613854"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88811175"
 ---
 # <a name="logging-with-elastic-stack"></a>Ведение журналов с использованием эластичного стека
 
@@ -81,7 +81,7 @@ output {
 
 Запрос, выполняющий поиск первых 10 страниц, посещенных `jill@example.com` , отображается на рис. 7-9.
 
-```
+```json
 "query": {
     "match": {
       "user": "jill@example.com"

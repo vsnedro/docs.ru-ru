@@ -7,15 +7,15 @@ helpviewer_keywords:
 - international user interface [WPF], XAML
 - globalization [WPF]
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
-ms.openlocfilehash: 95c0368889dfa4e69b5e40b32ea19ba845aa5c30
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 2d7cf73e37fe8c4bbdbef3d356f1dbb8903815f3
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76747054"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88812332"
 ---
 # <a name="globalization-for-wpf"></a>Глобализация для WPF
-В этом разделе рассматриваются проблемы, которые следует учитывать при написании [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] приложений для глобального рынка. Элементы программирования глобализации определяются в .NET в пространстве имен <xref:System.Globalization>.
+В этом разделе рассматриваются проблемы, которые следует учитывать при написании [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] приложений для глобального рынка. Элементы программирования глобализации определяются в .NET в <xref:System.Globalization> пространстве имен.
 
 <a name="xaml_globalization"></a>
 ## <a name="xaml-globalization"></a>Глобализация XAML
@@ -25,19 +25,19 @@ ms.locfileid: "76747054"
 ### <a name="character-references"></a>Ссылки символов
 Ссылка на символ предоставляет единицу кода UTF16 конкретного символа Юникода, который он представляет, в десятичном или шестнадцатеричном виде. В следующем примере показана ссылка на десятичный символ для КОПТСКИЙ ПРОПИСной буквы по или Ϩ:
 
-```
+```xaml
 &#1000;
 ```
 
 В следующем примере показана ссылка на шестнадцатеричный символ. Обратите внимание, что в начале шестнадцатеричного числа имеется **x** .
 
-```
+```xaml
 &#x3E8;
 ```
 
 <a name="encoding"></a>
 ### <a name="encoding"></a>Кодирование
- В [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] поддерживается кодировка ASCII, Юникод UTF-16 и UTF-8. Оператор Encoding находится в начале [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] документа. Если атрибут кодировки и порядок байтов отсутствуют, по умолчанию в средстве синтаксического анализа используется кодировка UTF-8. Предпочтительные кодировки: UTF-8 и UTF-16. UTF-7 не поддерживается. В следующем примере показано, как задать кодировку UTF-8 в файле [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].
+ Кодировка, поддерживаемая, [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] — это ASCII, Юникод UTF-16 и UTF-8. Оператор Encoding находится в начале [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] документа. Если атрибут кодировки и порядок байтов отсутствуют, по умолчанию в средстве синтаксического анализа используется кодировка UTF-8. Предпочтительные кодировки: UTF-8 и UTF-16. UTF-7 не поддерживается. В следующем примере показано, как задать кодировку UTF-8 в [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] файле.
 
 ```xaml
 ?xml encoding="UTF-8"?
@@ -45,11 +45,11 @@ ms.locfileid: "76747054"
 
 <a name="lang_attrib"></a>
 ### <a name="language-attribute"></a>Атрибут Language
- [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] использует [XML: lang](../../../desktop-wpf/xaml-services/xml-language-handling.md) для представления атрибута language элемента.  Чтобы воспользоваться преимуществами класса <xref:System.Globalization.CultureInfo>, значение атрибута language должно быть одним из имен языка и региональных параметров, предопределенных <xref:System.Globalization.CultureInfo>. [xml:lang](../../../desktop-wpf/xaml-services/xml-language-handling.md) наследуется в дереве элементов (правилами XML, не обязательно из-за наследования свойства зависимости), и его значение по умолчанию — пустая строка, если оно не назначено явно.
+ [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] использует [XML: lang](../../../desktop-wpf/xaml-services/xml-language-handling.md) для представления атрибута language элемента.  Чтобы воспользоваться преимуществами <xref:System.Globalization.CultureInfo> класса, значение атрибута language должно быть одним из имен языка и региональных параметров, предопределенных <xref:System.Globalization.CultureInfo> . [xml:lang](../../../desktop-wpf/xaml-services/xml-language-handling.md) наследуется в дереве элементов (правилами XML, не обязательно из-за наследования свойства зависимости), и его значение по умолчанию — пустая строка, если оно не назначено явно.
 
  Атрибут языка полезно использовать для задания диалектов. Например, французский язык имеет разные написание, словарь и произношение во Франции, Квебеке, Бельгии и Швейцарии. Кроме того, на китайском, японском и корейском языках кодовые точки в Юникоде, но идеографические фигуры отличаются и используют совершенно разные шрифты.
 
- В следующем примере [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] используется атрибут языка `fr-CA`, чтобы указать канадскую французскую.
+ В следующем [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] примере используется `fr-CA` атрибут Language для указания канадского французского языка.
 
 ```xaml
 <TextBlock xml:lang="fr-CA">Découvrir la France</TextBlock>
@@ -57,7 +57,7 @@ ms.locfileid: "76747054"
 
 <a name="unicode"></a>
 ### <a name="unicode"></a>Юникод
- [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] поддерживает все функции Юникода, включая суррогаты. Если кодировка может быть сопоставлена с Юникодом, она поддерживается. Например, GB18030 представляет определенные символы, которые сопоставляются расширениям A и B и парам суррогатов китайского, японского и корейского. Следовательно, этот набор символов полностью поддерживается. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложение может использовать <xref:System.Globalization.StringInfo> для управления строками, не зная, есть ли у них суррогатные пары или самостоятельные символы.
+ [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] поддерживает все функции Юникода, включая суррогаты. Если кодировка может быть сопоставлена с Юникодом, она поддерживается. Например, GB18030 представляет определенные символы, которые сопоставляются расширениям A и B и парам суррогатов китайского, японского и корейского. Следовательно, этот набор символов полностью поддерживается. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]Приложение может использовать <xref:System.Globalization.StringInfo> для работы со строками, не зная, есть ли у них суррогатные пары или самостоятельные символы.
 
 <a name="design_intl_ui_with_xaml"></a>
 ## <a name="designing-an-international-user-interface-with-xaml"></a>Проектирование международного интерфейса пользователя с XAML
@@ -65,7 +65,7 @@ ms.locfileid: "76747054"
 
 <a name="intl_text"></a>
 ### <a name="international-text"></a>Международный текст
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] включает встроенную обработку для всех поддерживаемых Microsoft .NET платформ системы записи.
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] включает встроенную обработку для всех платформ Microsoft .NET, поддерживаемых системой записи.
 
  В настоящее время поддерживаются следующие скрипты.
 
@@ -111,7 +111,7 @@ ms.locfileid: "76747054"
 
 - Тибетский
 
- \* В этом выпуске отображение и изменение текста на тайском языке поддерживается; а разбиение по словам — нет.
+ * В этом выпуске отображение и изменение текста на тайском языке поддерживается; а разбиение по словам — нет.
 
  В настоящее время не поддерживаются следующие скрипты.
 
@@ -131,7 +131,7 @@ ms.locfileid: "76747054"
 
 <a name="intl_layout"></a>
 ### <a name="international-layout"></a>Международный макет
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] предоставляет очень удобный способ поддержки горизонтальных, двунаправленных и вертикальных макетов. В платформе Presentation Framework свойство <xref:System.Windows.FrameworkElement.FlowDirection%2A> можно использовать для определения макета. Ниже перечислены шаблоны направления текста:
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] предоставляет очень удобный способ поддержки горизонтальных, двунаправленных и вертикальных макетов. В среде Presentation Framework <xref:System.Windows.FrameworkElement.FlowDirection%2A> свойство можно использовать для определения макета. Ниже перечислены шаблоны направления текста:
 
 - *LeftToRight* — горизонтальная разметка для латиницы, восточноазиатских языков и т. д.
 
@@ -143,20 +143,20 @@ ms.locfileid: "76747054"
 
 <a name="mui"></a>
 ### <a name="multilingual-user-interface"></a>Многоязыковой интерфейс пользователя
- Многоязыковой интерфейс пользователя (MUI) — это поддержка Майкрософт для переключения пользовательских интерфейсов с одного языка на другой. Приложение [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] использует модель сборки для поддержки многоязыкового интерфейса пользователя. Одно приложение содержит независимые от языка сборки, а также зависимые от языка сборки вспомогательных ресурсов. Точкой входа является управляемый EXE-файл в основной сборке.  загрузчик ресурсов [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] использует преимущества диспетчера ресурсов платформы для поддержки поиска и отката ресурсов. Многоязыковые вспомогательные сборки работают с одной и той же основной сборкой. Загружаемая сборка ресурса зависит от <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> текущего потока.
+ Многоязыковой интерфейс пользователя (MUI) — это поддержка Майкрософт для переключения пользовательских интерфейсов с одного языка на другой. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]Приложение использует модель сборки для поддержки многоязыкового интерфейса пользователя. Одно приложение содержит независимые от языка сборки, а также зависимые от языка сборки вспомогательных ресурсов. Точкой входа является управляемый EXE-файл в основной сборке.  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] загрузчик ресурсов использует преимущества диспетчера ресурсов платформы для поддержки поиска и отката ресурсов. Многоязыковые вспомогательные сборки работают с одной и той же основной сборкой. Загружаемая сборка ресурса зависит от <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> текущего потока.
 
 <a name="localizable_ui"></a>
 ### <a name="localizable-user-interface"></a>Локализуемый пользовательский интерфейс
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения используют [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] для определения их [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] позволяет разработчикам задавать иерархию объектов с набором свойств и определенной логикой. Основное использование [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] заключается в разработке [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложений, но его можно использовать для указания иерархии любых объектов среды CLR. Большинство разработчиков используют [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], чтобы указать [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] приложения и использовать язык программирования, например, C# чтобы реагировать на взаимодействие с пользователем.
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения используют [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] для определения их [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] . [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] позволяет разработчикам задавать иерархию объектов с набором свойств и определенной логикой. Основное использование [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] — Разработка [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложений, но его можно использовать для указания иерархии любых объектов среды CLR. Большинство разработчиков используют [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] для указания своего приложения [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] и используют язык программирования, такой как C#, для реагирования на взаимодействие с пользователем.
 
- С точки зрения ресурсов, файл [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], предназначенный для описания зависящего от языка [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], является элементом ресурса, поэтому его окончательный формат распространения должен быть локализован для поддержки международных языков. Поскольку [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] не может управлять событиями многих [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] приложения содержат блоки кода для выполнения этих задач. Дополнительные сведения см. в разделе [Общие сведения о XAML (WPF)](../../../desktop-wpf/fundamentals/xaml.md). Код вырезается и компилируется в разные двоичные файлы, когда [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] файл размечена в форме BAML XAML. Форма BAML файлов XAML, изображения и другие типы управляемых объектов ресурсов внедряются во вспомогательную сборку ресурсов, которая может быть локализована на другие языки, или в основную сборку, если локализация не требуется.
+ С точки зрения ресурсов, [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] файл, предназначенный для описания зависимого от языка [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] элемента, является элементом ресурса, поэтому его окончательный формат распространения должен быть локализован для поддержки международных языков. Поскольку [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] не может управлять событиями, многие [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] приложения содержат блоки кода для выполнения этой задачи. Дополнительные сведения см. в разделе [Общие сведения о XAML (WPF)](../../../desktop-wpf/fundamentals/xaml.md). Код вырезается и компилируется в разные двоичные файлы, когда файл разбивается [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] на форму BAML XAML. Форма BAML файлов XAML, изображения и другие типы управляемых объектов ресурсов внедряются во вспомогательную сборку ресурсов, которая может быть локализована на другие языки, или в основную сборку, если локализация не требуется.
 
 > [!NOTE]
 > [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения поддерживают все ресурсы Фрамеворкклр, включая таблицы строк, изображения и т. д.
 
 <a name="building_localizable_apps"></a>
 ### <a name="building-localizable-applications"></a>Разработка локализуемых приложений
- Локализация означает адаптацию [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] к различным языкам и региональным параметрам. Чтобы сделать приложение [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] локализуемых, разработчики должны собрать все локализуемые ресурсы в сборку ресурсов. Сборка ресурсов локализуется на разные языки, и для загрузки кода программной части используется API управления ресурсами. Одним из файлов, необходимых для [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения, является файл проекта (proj). Все ресурсы, используемые в приложении, необходимо включить в файл проекта. В следующем примере из CSPROJ-файла показано, как это сделать.
+ Локализация означает адаптации к [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] различным культурам. Чтобы сделать [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложение локализуемых, разработчики должны собрать все локализуемые ресурсы в сборку ресурсов. Сборка ресурсов локализуется на разные языки, и для загрузки кода программной части используется API управления ресурсами. Одним из файлов, необходимых для [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] приложения, является файл проекта (proj). Все ресурсы, используемые в приложении, необходимо включить в файл проекта. В следующем примере из CSPROJ-файла показано, как это сделать.
 
 ```xml
 <Resource Include="data\picture1.jpg"/>
@@ -171,13 +171,13 @@ ms.locfileid: "76747054"
 ## <a name="using-clickonce-with-localized-applications"></a>Использование ClickOnce с локализованными приложениями
  ClickOnce — это новая технология развертывания Windows Forms, которая будет поставляться в Visual Studio 2005. Она позволяет устанавливать и обновлять веб-приложения. При локализации приложения, которое было развернуто с помощью ClickOnce, просмотреть его можно только на локализованном языке и с соответствующими региональными параметрами. Например, если развернутое приложение локализовано на японский язык, его можно просмотреть только на японском языке Microsoft Windows, а не на английском. Это представляет проблему, поскольку это распространенный сценарий для японского пользователя запускать английскую версию Windows.
 
- Чтобы решить эту проблему, можно задать резервный атрибут нейтрального языка. Разработчик приложения может при необходимости удалить ресурсы из основной сборки и указать, что ресурсы можно найти во вспомогательной сборке, соответствующей определенной культуре. Для управления этим процессом используйте <xref:System.Resources.NeutralResourcesLanguageAttribute>. Конструктор класса <xref:System.Resources.NeutralResourcesLanguageAttribute> имеет две сигнатуры, которые принимают параметр <xref:System.Resources.UltimateResourceFallbackLocation>, чтобы указать расположение, в которое <xref:System.Resources.ResourceManager> должен извлекать резервные ресурсы: основную или вспомогательную сборку. В следующем примере показано использование атрибута. Для конечного расположения резервной копии код приводит к тому, что <xref:System.Resources.ResourceManager> ищет ресурсы в подкаталоге «de» каталога выполняемой в данный момент сборки.
+ Чтобы решить эту проблему, можно задать резервный атрибут нейтрального языка. Разработчик приложения может при необходимости удалить ресурсы из основной сборки и указать, что ресурсы можно найти во вспомогательной сборке, соответствующей определенной культуре. Для управления этим процессом используйте <xref:System.Resources.NeutralResourcesLanguageAttribute> . Конструктор <xref:System.Resources.NeutralResourcesLanguageAttribute> класса имеет две сигнатуры, один из которых принимает параметр, <xref:System.Resources.UltimateResourceFallbackLocation> чтобы указать расположение, куда <xref:System.Resources.ResourceManager> должны извлекаться резервные ресурсы: основная или вспомогательная сборка. В следующем примере показано использование атрибута. Для окончательного резервного расположения код вызывает <xref:System.Resources.ResourceManager> Поиск ресурсов в подкаталоге "de" каталога выполняемой в данный момент сборки.
 
 ```csharp
 [assembly: NeutralResourcesLanguageAttribute(
     "de" , UltimateResourceFallbackLocation.Satellite)]
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о глобализации и локализации WPF](wpf-globalization-and-localization-overview.md)

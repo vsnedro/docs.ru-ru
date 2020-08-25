@@ -3,12 +3,12 @@ title: Набор данных и руководство по безопасно
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: f0fa43c467cc7866e69115acb5f807e6487fda7a
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 24c8a830f8638bc2d9dd20c2384c8230a682d817
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608525"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88812241"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Набор данных и руководство по безопасности DataTable
 
@@ -34,7 +34,14 @@ ms.locfileid: "88608525"
 
 Если входящие XML-данные содержат объект, тип которого отсутствует в этом списке:
 
-* Возникает исключение.
+* Исключение создается со следующим сообщением и трассировкой стека.  
+Сообщение об ошибке:  
+System. InvalidOperationException: тип " \<Type Name\> , версия = \<n.n.n.n\> , Culture = \<culture\> , PublicKeyToken = \<token value\> " не допускается здесь. [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227)Дополнительные сведения см. в разделе.  
+Трассировка стека:  
+в System. Data. Типелимитер. Енсуретипеисалловед (тип Type, Типелимитер Каптуредлимитер)  
+в System. Data. DataColumn. Упдатеколумнтипе (тип Type, StorageType typeCode)  
+в System. Data. DataColumn. set_DataType (значение типа)  
+
 * Операция десериализации завершается ошибкой.
 
 При загрузке XML в существующий `DataSet` экземпляр или `DataTable` можно учитывать существующие определения столбцов. Если таблица уже содержит определение столбца пользовательского типа, этот тип временно добавляется в список разрешений на время выполнения операции десериализации XML.

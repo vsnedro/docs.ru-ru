@@ -2,18 +2,18 @@
 title: <baseAddressPrefixFilters>
 ms.date: 03/30/2017
 ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
-ms.openlocfilehash: 0673507b72690c3a5c7dcc35442c05e378dba43c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 635e4f02f4d286b63c4f4845563ba1953d23592a
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153039"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88811903"
 ---
 # \<baseAddressPrefixFilters>
 Представляет коллекцию элементов конфигурации, задающих сквозные фильтры, которые предоставляют механизм для выбора соответствующих привязок службы IIS (IIS) при размещении приложения Windows Communication Foundation (WCF) в службах IIS.  
   
 > [!WARNING]
-> \<baseAddressPrefixFilters>не распознает "localhost"; Вместо этого используйте полное имя компьютера.  
+> \<baseAddressPrefixFilters> не распознает "localhost"; Вместо этого используйте полное имя компьютера.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -48,7 +48,7 @@ ms.locfileid: "79153039"
 |-------------|-----------------|  
 |[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Определяет, какой тип среда размещения служб создает для конкретного транспорта.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
  Префиксный фильтр предоставляет способ для общих поставщиков услуг размещения задать, какие URI должны использоваться службой. Это дает возможность общим узлам размещать несколько приложений с разными базовыми адресами для одной схемы на одном узле.  
   
  Веб-узлы IIS являются контейнерами виртуальных приложений, содержащими виртуальные каталоги. Доступ к приложению на узле можно осуществлять через одну или несколько привязок службы IIS. Привязки IIS предоставляют два блока данных: протокол привязки и данные привязки. Протокол привязки (например, HTTP) определяет схему, посредством которой осуществляется связь, а данные привязки (например, IP-адрес, порт, заголовок узла) содержат сведения, используемые для доступа к узлу.  
@@ -57,7 +57,7 @@ ms.locfileid: "79153039"
   
  Например, сайт может содержать следующие базовые адреса:
   
-```
+```http
 http://testl.fabrikam.com/Service.svc  
 http://test2.fabrikam.com/Service.svc  
 ```  
