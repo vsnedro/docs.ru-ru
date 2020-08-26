@@ -77,38 +77,17 @@
               href: sqlclient-for-ef-types.md
             - name: Известные проблемы SqlClient для Entity Framework
               href: known-issues-in-sqlclient-for-entity-framework.md
-    - name: Создание поставщика данных Entity Framework
-      href: writing-an-ef-data-provider.md
+    - name: Вопросы разработки и развертывания
+      href: development-and-deployment-considerations.md
       items:
-        - name: Создание SQL
-          href: sql-generation.md
-          items:
-            - name: Форма деревьев команд
-              href: the-shape-of-the-command-trees.md
-            - name: Создание кода SQL из деревьев команд. Рекомендации
-              href: generating-sql-from-command-trees-best-practices.md
-            - name: Создание кода SQL в образце поставщика
-              href: sql-generation-in-the-sample-provider.md
-              items:
-                - name: Архитектура и разработка
-                  href: architecture-and-design.md
-                - name: Пошаговое руководство. Создание SQL
-                  href: walkthrough-sql-generation.md
-        - name: Создание кода SQL для изменения данных
-          href: modification-sql-generation.md
-        - name: Спецификация манифеста поставщика
-          href: provider-manifest-specification.md
-- name: Вопросы разработки и развертывания
-  href: development-and-deployment-considerations.md
-  items:
-    - name: Вопросы безопасности
-      href: security-considerations.md
-    - name: Особенности производительности
-      href: performance-considerations.md
-    - name: Вопросы миграции
-      href: migration-considerations.md
-    - name: Требования к развертыванию
-      href: deployment-considerations.md
+        - name: Вопросы безопасности
+          href: security-considerations.md
+        - name: Особенности производительности
+          href: performance-considerations.md
+        - name: Вопросы миграции
+          href: migration-considerations.md
+        - name: Требования к развертыванию
+          href: deployment-considerations.md
 - name: Ресурсы Entity Framework
   href: resources.md
 - name: Терминология платформы Entity Framework
