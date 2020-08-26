@@ -368,6 +368,13 @@ items:
         href: run-time-config/networking.md
       - name: Параметры потоков
         href: run-time-config/threading.md
+  - name: Анализ кода
+    items:
+      - name: Обзор
+        href: ../fundamentals/productivity/code-analysis.md
+        displayName: 'code analysis, analyzers'
+      - name: Настройка правил
+        href: ../fundamentals/productivity/configure-code-analysis-rules.md
   - name: Миграция
     items:
       - name: "Переход с ASP.NET Core\_2.0 на\_2.1"
