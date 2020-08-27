@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d85fb8df7afdc5f4c3faecebcd24d11677798bc9
-ms.sourcegitcommit: 63bb83322814f5e5e5c5b69939b14a3139a6ca7e
+ms.openlocfilehash: a635e2ed6a735b5234c92fd8f5ffa1685fe9373e
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85365623"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558190"
 ---
 ### <a name="microsoftdotnetplatformabstractions-package-removed"></a>Удален пакет Microsoft.DotNet.PlatformAbstractions
 
@@ -39,7 +39,7 @@ ms.locfileid: "85365623"
   | `RuntimeEnvironment.OperatingSystemVersion` | <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType> и <xref:System.Environment.OSVersion?displayProperty=nameWithType> |
 
   > [!NOTE]
-  > Большинство сценариев использования `RuntimeEnvironment.OperatingSystem` и `RuntimeEnvironment.OperatingSystemVersion` ориентированы на отображение, например на отображение для пользователя, ведение журнала и телеметрических данных. Не рекомендуется принимать решения по среде выполнения, основываясь на версии операционной системы (ОС). <xref:System.Environment.OSVersion?displayProperty=nameWithType> теперь возвращает верную версию для операционных систем Windows и macOS. Однако в отношении большинства дистрибутивов Unix "версия ОС" не является однозначным понятием. Например, она может указывать на версию ядра Linux или версию дистрибутива. Для большинства платформ Unix <xref:System.Environment.OSVersion?displayProperty=nameWithType> и <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType> возвращают версию, которая возвращается `uname`. Сведения об имени и версии дистрибутива Linux приведены в файле */etc/os-release*.
+  > Большинство сценариев использования `RuntimeEnvironment.OperatingSystem` и `RuntimeEnvironment.OperatingSystemVersion` ориентированы на отображение, например на отображение для пользователя, ведение журнала и телеметрических данных. Не рекомендуется принимать решения по среде выполнения, основываясь на версии операционной системы (ОС). <xref:System.Environment.OSVersion?displayProperty=nameWithType> теперь [возвращает верную версию](../../../../docs/core/compatibility/corefx.md#environmentosversion-returns-the-correct-operating-system-version) для операционных систем Windows и macOS. Однако в отношении большинства дистрибутивов Unix "версия ОС" не является однозначным понятием. Например, она может указывать на версию ядра Linux или версию дистрибутива. Для большинства платформ Unix <xref:System.Environment.OSVersion?displayProperty=nameWithType> и <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType> возвращают версию, которая возвращается `uname`. Сведения об имени и версии дистрибутива Linux приведены в файле */etc/os-release*.
 
 #### <a name="category"></a>Категория
 

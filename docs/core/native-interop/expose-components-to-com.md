@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 21271167-fe7f-46ba-a81f-a6812ea649d4
 author: jkoritzinsky
 ms.author: jekoritz
-ms.openlocfilehash: 17d85b9e9734fae0bb69f94da8c08669216ab0ae
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 346776ebae3a6077fd39f26d5bd19d599d163db2
+ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81242872"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88608338"
 ---
 # <a name="exposing-net-core-components-to-com"></a>Предоставление доступа к компонентам .NET Core для COM
 
@@ -93,6 +93,6 @@ ms.locfileid: "81242872"
 
 В отличие от .NET Framework, в .NET Core создание библиотеки типов COM (TLB) из сборки .NET Core не поддерживается. Нужно вручную написать файл IDL или заголовок C/C++ для собственных объявлений COM-интерфейсов.
 
-[Автономные развертывания](../deploying/index.md#publish-self-contained) COM-компонентов не поддерживаются. Поддерживаются только [зависящие от среды выполнения развертывания](../deploying/index.md#publish-runtime-dependent) COM-компонентов.
+[Автономные развертывания](../deploying/index.md#publish-self-contained) COM-компонентов не поддерживаются. Поддерживаются только [зависящие от платформы развертывания](../deploying/index.md#publish-framework-dependent) COM-компонентов.
 
 Кроме того, загрузка как .NET Framework, так и .NET Core в один и тот же процесс имеет ограничения диагностического характера. Основное ограничение — отладка управляемых компонентов, так как невозможно одновременно выполнить отладку .NET Framework и .NET Core. Кроме того, два экземпляра среды выполнения не используют управляемые сборки совместно. Это означает, что невозможно совместно использовать фактические типы .NET в двух средах выполнения, вместо этого все взаимодействия должны быть ограничены предоставленными контрактами COM-интерфейса.

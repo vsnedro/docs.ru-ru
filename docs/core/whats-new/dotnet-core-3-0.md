@@ -6,12 +6,12 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
-ms.openlocfilehash: 9f553e9af16be0891f208832c5daa444a1b736e2
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: bf712e88d96a5c2c80c3ff50283d44e9c7717abb
+ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281515"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88608219"
 ---
 # <a name="whats-new-in-net-core-30"></a>Новые возможности .NET Core 3.0
 
@@ -54,7 +54,7 @@ ms.locfileid: "86281515"
 
 ### <a name="default-executables"></a>Исполняемые файлы по умолчанию
 
-.NET Core теперь по умолчанию собирает [исполняемые файлы, зависимые от среды выполнения](../deploying/index.md#publish-runtime-dependent). Такое поведение ново для приложений, которые используют глобально установленную версию .NET Core. Раньше исполняемые файлы создавались только в [автономных развертываниях](../deploying/index.md#publish-self-contained).
+.NET Core теперь по умолчанию собирает [исполняемые файлы, зависимые от платформы](../deploying/index.md#publish-framework-dependent). Такое поведение ново для приложений, которые используют глобально установленную версию .NET Core. Раньше исполняемые файлы создавались только в [автономных развертываниях](../deploying/index.md#publish-self-contained).
 
 Во время выполнения команды `dotnet build` или `dotnet publish` создается исполняемый файл (называемый **appHost**), который соответствует среде и платформе используемого пакета SDK. Предполагается, что с этими исполняемыми файлами можно выполнять те же действия, что и с другими исполняемыми файлами в машинном коде, например:
 
@@ -69,7 +69,7 @@ ms.locfileid: "86281515"
 
 Если параметр appHost включен, .NET Core создает собственный исполняемый файл Mach-O, когда вы выполняете сборку или публикацию. Приложение выполняется в контексте appHost при запуске из исходного кода с помощью команды `dotnet run` или путем непосредственного запуска исполняемого файла Mach-O.
 
-Без appHost пользователь может запустить приложение, [зависящее от среды выполнения](../deploying/index.md#publish-runtime-dependent), только одним способом — с помощью команды `dotnet <filename.dll>`. AppHost всегда создается при публикации приложения в [автономном виде](../deploying/index.md#publish-self-contained).
+Без appHost пользователь может запустить приложение, [зависящее от платформы](../deploying/index.md#publish-framework-dependent), только одним способом — с помощью команды `dotnet <filename.dll>`. AppHost всегда создается при публикации приложения в [автономном виде](../deploying/index.md#publish-self-contained).
 
 Можно либо настроить appHost на уровне проекта, либо переключить использование appHost для определенной команды `dotnet` с помощью параметра `-p:UseAppHost`:
 

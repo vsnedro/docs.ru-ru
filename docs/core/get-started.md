@@ -5,18 +5,18 @@ author: adegeo
 ms.author: adegeo
 ms.date: 12/03/2019
 ms.custom: vs-dotnet
-ms.openlocfilehash: ddbee0764897b511cac0c4142354ba995d94a2b6
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.openlocfilehash: 56eebc0fc5bad6f57d93358cbbef389d6355d66b
+ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86416062"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88656694"
 ---
 # <a name="get-started-with-net-core"></a>Начало работы с .NET Core
 
 В этой статье представлены сведения по началу работы с .NET Core. .NET Core можно установить в Windows, Linux и macOS. Вы можете писать код в любом текстовом редакторе, а также создавать кроссплатформенные библиотеки и приложения.
 
-Если вы не знаете, что такое .NET Core и как это связано с другими технологиями .NET, начните с обзора [Что такое .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet). Простыми словами, .NET Core — это кроссплатформенная реализация .NET с открытым исходным кодом.
+Если вы не знаете, что такое .NET Core и как это связано с другими технологиями .NET, начните с обзора [Что такое .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet). Простыми словами, .NET Core — это кроссплатформенная реализация .NET с открытым исходным кодом.
 
 ## <a name="create-an-application"></a>Создание приложения
 
@@ -35,7 +35,7 @@ dotnet run --project sample1
 Hello World!
 ```
 
-Поздравляем! Вы создали простое приложение .NET Core. Вы также можете использовать [Visual Studio Code](./tutorials/with-visual-studio-code.md), [Visual Studio](./tutorials/with-visual-studio.md) (только для Windows) или [Visual Studio для Mac](./tutorials/using-on-mac-vs.md) (только для macOS), чтобы создать приложение .NET Core.
+Поздравляем! Вы создали простое приложение .NET Core. Вы также можете использовать [Visual Studio Code](./tutorials/with-visual-studio-code.md), [Visual Studio](./tutorials/with-visual-studio.md) (только для Windows) или [Visual Studio для Mac](tutorials/with-visual-studio-mac.md) (только для macOS), чтобы создать приложение .NET Core.
 
 ## <a name="tutorials"></a>Учебники
 
@@ -47,7 +47,7 @@ Hello World!
 
 - [Создание первого консольного приложения .NET Core в Visual Studio 2019](./tutorials/with-visual-studio.md)
 - [Создание библиотеки классов с помощью .NET Standard в Visual Studio](./tutorials/library-with-visual-studio.md)
-- [Начало работы с .NET Core с использованием .NET Core CLI](./tutorials/cli-create-console-app.md)
+- [Учебник. Создание консольного приложения .NET Core в Visual Studio Code](tutorials/with-visual-studio-code.md)
 
 |   |   |
 |---|---|
@@ -60,7 +60,7 @@ Hello World!
 
 Начало работы с разработкой приложений .NET Core, используя следующие пошаговые руководства.
 
-- [Начало работы с .NET Core с помощью командной строки.](./tutorials/cli-create-console-app.md)
+- [Учебник. Создание консольного приложения .NET Core в Visual Studio Code](tutorials/with-visual-studio-code.md)
 
 |   |   |
 |---|---|
@@ -72,9 +72,8 @@ Hello World!
 
 Начало работы с разработкой приложений .NET Core, используя следующие пошаговые руководства.
 
-- [Начало работы с .NET Core в macOS с помощью Visual Studio Code](./tutorials/using-on-macos.md)
-- [Начало работы с .NET Core с помощью командной строки.](./tutorials/cli-create-console-app.md)
-- [Начало работы с .NET Core в macOS с помощью Visual Studio для Mac](./tutorials/using-on-mac-vs.md)
+- [Учебник. Создание консольного приложения .NET Core в Visual Studio Code](tutorials/with-visual-studio-code.md)
+- [Учебник. Создание консольного приложения .NET Core с помощью Visual Studio для Mac](tutorials/with-visual-studio-mac.md)
 - [Создание библиотеки .NET Standard в macOS с помощью Visual Studio для Mac](tutorials/library-with-visual-studio-mac.md)
 
 |   |   |

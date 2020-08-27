@@ -2,12 +2,12 @@
 title: Критические изменения в области шифрования
 description: Список критических изменений в области шифрования в .NET Core.
 ms.date: 04/22/2020
-ms.openlocfilehash: 34098027c4cbe5e5fb31a22d981af706e07cb7da
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: f7d580938fb7620728b8ff7f67412c9f5bbbb6c3
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87556034"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88558011"
 ---
 # <a name="cryptography-breaking-changes"></a>Критические изменения в области шифрования
 
@@ -15,11 +15,18 @@ ms.locfileid: "87556034"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Класс System.Security.Cryptography.Oid функционально доступен только для инициализации](#systemsecuritycryptographyoid-is-functionally-init-only) | 5,0 |
 | [Синтаксис BEGIN TRUSTED CERTIFICATE больше не поддерживается в Linux](#begin-trusted-certificate-syntax-no-longer-supported-for-root-certificates-on-linux) | 3.0 |
 | [Для EnvelopedCms по умолчанию используется шифрование AES-256](#envelopedcms-defaults-to-aes-256-encryption) | 3.0 |
 | [Увеличен минимальный размер создаваемых ключей RSAOpenSsl](#minimum-size-for-rsaopenssl-key-generation-has-increased) | 3.0 |
 | [Для .NET Core 3.0 более предпочтительным является использование OpenSSL 1.1.x вместо OpenSSL 1.0.x](#net-core-30-prefers-openssl-11x-to-openssl-10x) | 3.0 |
 | [Логический параметр SignedCms.ComputeSignature учитывается](#boolean-parameter-of-signedcmscomputesignature-is-respected) | 2.1 |
+
+## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [cryptography-oid-init-only](../../../includes/core-changes/cryptography/5.0/cryptography-oid-init-only.md)]
+
+***
 
 ## <a name="net-core-30"></a>.NET Core 3.0
 

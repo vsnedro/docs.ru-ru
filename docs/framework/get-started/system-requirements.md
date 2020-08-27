@@ -1,7 +1,6 @@
 ---
 title: Требования к системе для .NET Framework
 description: Определите требования к оборудованию, операционной системе и программному обеспечению для установки .NET Framework 4.5 и более поздних версий.
-ms.custom: updateeachrelease
 ms.date: 04/18/2019
 helpviewer_keywords:
 - software requirements
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - operating systems supported
 - hardware requirements
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
-ms.openlocfilehash: 571075f7d0f330cf88ac9618376876b4f72e75ed
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 92cc95f80d18251314db8d953520732841b0274c
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389477"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88557338"
 ---
 # <a name="net-framework-system-requirements"></a>Требования к системе для .NET Framework
 
@@ -54,6 +53,8 @@ ms.locfileid: "81389477"
 
 | Операционная система | Поддерживаемые выпуски | Предустановлена с операционной системой | Может устанавливаться отдельно |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Обновление Windows 10 за май 2020 г.<br/> (версия 2004) | 32- и 64-разрядные версии | .NET Framework 4.8 | -- |
+| Обновление Windows 10 за ноябрь 2019 г.<br/> (версия 1909) | 32- и 64-разрядные версии | .NET Framework 4.8 | -- |
 | Обновления Windows 10 за май 2019 г.<br/> (версия 1903) | 32- и 64-разрядные версии | .NET Framework 4.8 | -- |
 | Обновление Windows 10 за октябрь 2018 г.<br/> (версия 1809) | 32- и 64-разрядные версии | .NET Framework 4.7.2 | .NET Framework 4.8 |
 | Обновление Windows 10 за апрель 2018 г.<br/> (версия 1803) | 32- и 64-разрядные версии | .NET Framework 4.7.2 |.NET Framework 4.8|

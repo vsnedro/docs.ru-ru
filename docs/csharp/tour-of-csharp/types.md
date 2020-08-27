@@ -2,12 +2,12 @@
 title: Определение типов и их элементов — обзор C#
 description: Типы — это стандартные блоки, из которых состоят программы. Узнайте, как создавать классы, структуры, интерфейсы и многое другое в C#.
 ms.date: 08/06/2020
-ms.openlocfilehash: 69d6f0fe1e11f287fb5e385761fc210a61929d10
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: efd353fe8c1e6a57952bcb2586a05ad38ecd52b9
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88068493"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88559119"
 ---
 # <a name="types-and-members"></a>Типы и элементы
 

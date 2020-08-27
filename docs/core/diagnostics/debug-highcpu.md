@@ -3,12 +3,12 @@ title: Отладка высокой загрузки ЦП в .NET Core
 description: Руководство по отладке высокой загрузки ЦП в .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: e69585d0eb6f04bf37d0c023a1956be62c2a1cf3
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 93076bbce3baf3a219b25c927d2aba3d2d57456f
+ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86926367"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88557806"
 ---
 # <a name="debug-high-cpu-usage-in-net-core"></a>Отладка высокой загрузки ЦП в .NET Core
 
@@ -85,7 +85,7 @@ Press p to pause, r to resume, q to quit.
 
 Сразу же после запуска веб-приложения ЦП совсем не используется и его загрузка отображается как равная `0%`. Перейдите по маршруту `api/diagscenario/highcpu`, используя `60000` в качестве параметра маршрута:
 
-[https://localhost:5001/api/diagscenario/highcpu/60000](https://localhost:5001/api/diagscenario/highcpu/60000)
+`https://localhost:5001/api/diagscenario/highcpu/60000`
 
 Теперь выполните команду [dotnet-counters](dotnet-counters.md) повторно. Чтобы отслеживать только `cpu-usage`, укажите `System.Runtime[cpu-usage]` как часть команды.
 
@@ -127,7 +127,7 @@ export COMPlus_PerfMapEnabled=1
 dotnet run
 ```
 
-Повторно запустите конечную точку API (<https://localhost:5001/api/diagscenario/highcpu/60000>) с высокой загрузкой ЦП. Пока она выполняется в рамках 1-минутного запроса, запустите команду `perf` с ИД процесса:
+Повторно запустите конечную точку API (`https://localhost:5001/api/diagscenario/highcpu/60000`) с высокой загрузкой ЦП. Пока она выполняется в рамках 1-минутного запроса, запустите команду `perf` с ИД процесса:
 
 ```bash
 sudo perf record -p 2266 -g
@@ -152,7 +152,7 @@ sudo perf script | FlameGraph/stackcollapse-perf.pl | FlameGraph/flamegraph.pl >
 
 ### <a name="windows"></a>[Windows](#tab/windows)
 
-В Windows в качестве профилировщика можно использовать средство [dotnet-trace](dotnet-trace.md). Используя предыдущий [пример целевого объекта отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), снова запустите конечную точку с высокой загрузкой ЦП (<https://localhost:5001/api/diagscenario/highcpu/60000>). Пока она выполняется в рамках 1-минутного запроса, запустите команду `collect`, как показано ниже:
+В Windows в качестве профилировщика можно использовать средство [dotnet-trace](dotnet-trace.md). Используя предыдущий [пример целевого объекта отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), снова запустите конечную точку с высокой загрузкой ЦП (`https://localhost:5001/api/diagscenario/highcpu/60000`). Пока она выполняется в рамках 1-минутного запроса, запустите команду `collect`, как показано ниже:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler
