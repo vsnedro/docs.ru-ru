@@ -3,7 +3,6 @@ title: Руководство по программированию на C#. Mai
 description: Сведения о методе Main() и аргументах командной строки. Метод Main является точкой входа для исполняемой программы.
 ms.date: 08/02/2017
 f1_keywords:
-- CS5001
 - main_CSharpKeyword
 - Main
 helpviewer_keywords:
@@ -13,12 +12,12 @@ helpviewer_keywords:
 - command line [C#], arguments
 - command-line arguments [C#], Main method
 ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
-ms.openlocfilehash: 95ec9d3dfebe4721d4b1822939f925aa37b9e9c4
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 611b0c8818f8f800cf1cf5c0f6b2789882939b7b
+ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87382078"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88957542"
 ---
 # <a name="main-and-command-line-arguments-c-programming-guide"></a>Main() и аргументы командной строки (Руководство по программированию на C#)
 
