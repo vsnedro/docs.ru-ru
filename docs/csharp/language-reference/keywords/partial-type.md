@@ -1,4 +1,5 @@
 ---
+description: Разделяемый тип. Справочник по C#
 title: Разделяемый тип. Справочник по C#
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - partial types [C#]
 ms.assetid: 27320743-a22e-4c7b-b0b3-53afe3607334
-ms.openlocfilehash: 551145b9cdf5fa24f3ae365665e8ff06cf5e9307
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8ae98805eea7231e3a15cb74e636313e796796a2
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75715207"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89117991"
 ---
 # <a name="partial-type-c-reference"></a>разделяемый тип (справочник по C#)
 
@@ -28,13 +29,13 @@ ms.locfileid: "75715207"
 
 ## <a name="remarks"></a>Remarks
 
-Разделение типа класса, структуры или интерфейса на несколько файлов может пригодиться при работе с крупными проектами или с автоматически созданным кодом, например предоставляемым [конструктором Windows Forms](../../../framework/winforms/controls/developing-windows-forms-controls-at-design-time.md). Разделяемый тип может содержать [разделяемый метод](partial-method.md). Дополнительные сведения см. в статье [Разделяемые классы и методы](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
+Разделение типа класса, структуры или интерфейса на несколько файлов может пригодиться при работе с крупными проектами или с автоматически созданным кодом, например предоставляемым [конструктором Windows Forms](../../../framework/winforms/controls/developing-windows-forms-controls-at-design-time.md). Разделяемый тип может содержать [разделяемый метод](partial-method.md). Дополнительные сведения см. в разделе [Разделяемые классы и методы](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

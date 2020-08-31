@@ -4,12 +4,12 @@ description: Из этого руководства вы узнаете, как 
 ms.date: 04/27/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: c5e6648539af45f3ce615bfc183e6f95a62b085a
-ms.sourcegitcommit: 5988e9a29cedb8757320817deda3c08c6f44a6aa
+ms.openlocfilehash: 99bbc67096d98622ca5c0dc83d8b1be44a9995e5
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82200032"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88810551"
 ---
 # <a name="tutorial-containerize-a-net-core-app"></a>Учебник. Контейнеризация приложения .NET Core
 
@@ -73,7 +73,7 @@ Hello World!
 > [!TIP]
 > Если вы используете Visual Studio Code, в предыдущем сеансе терминала введите следующую команду:
 >
-> ```
+> ```console
 > code .
 > ```
 >

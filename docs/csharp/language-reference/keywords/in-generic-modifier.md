@@ -1,15 +1,16 @@
 ---
+description: Справочник по C#. Универсальный модификатор in
 title: Справочник по C#. Универсальный модификатор in
 ms.date: 07/20/2015
 helpviewer_keywords:
 - contravariance, in keyword [C#]
 - in keyword [C#]
-ms.openlocfilehash: 57da13f6dc6719166b9051afeb2532ba5fbeff3a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: feae17be7bdf29f6bc90e8c85b3878d4714699f4
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713485"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89118459"
 ---
 # <a name="in-generic-modifier-c-reference"></a>in (универсальный модификатор) (Справочник по C#)
 
@@ -19,7 +20,7 @@ ms.locfileid: "75713485"
 
 Тип может быть объявлен контравариантным в универсальном интерфейсе или делегате, только если он определяет тип параметров метода, но не тип значения, возвращаемого методом. Параметры `In`, `ref` и `out` должны быть инвариантными, то есть не являться ковариантными или контравариантными.
 
-Интерфейс с параметром контравариантного типа позволяет своим методам принимать аргументы производных типов, степень наследования у которых меньше, чем у параметра типа интерфейса. Например, в интерфейсе <xref:System.Collections.Generic.IComparer%601> тип T является контравариантным, поэтому можно присвоить объект типа `IComparer<Person>` объекту типа `IComparer<Employee>` без применения каких-либо специальных методов преобразования, если `Employee` наследует `Person`.
+Интерфейс с параметром контравариантного типа позволяет своим методам принимать аргументы производных типов, степень наследования у которых меньше, чем у параметра типа интерфейса. Например, в интерфейсе <xref:System.Collections.Generic.IComparer%601> тип T является ковариантным, поэтому можно присвоить объект типа `IComparer<Person>` объекту типа `IComparer<Employee>` без применения каких-либо специальных методов преобразования, если `Employee` наследует `Person`.
 
 Контравариантный делегат может быть назначен другому делегату того же типа, но с производным параметром универсального типа меньшей степени.
 
@@ -41,7 +42,7 @@ ms.locfileid: "75713485"
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [out](out-generic-modifier.md)
 - [Ковариация и контрвариантность](../../programming-guide/concepts/covariance-contravariance/index.md)

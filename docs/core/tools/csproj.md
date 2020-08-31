@@ -3,12 +3,12 @@ title: Дополнения к формату CSPROJ для .NET Core
 description: Различия между существующими файлами и файлами CSPROJ .NET Core
 ms.topic: reference
 ms.date: 04/08/2019
-ms.openlocfilehash: 82174b2976abda2337a4a9b5a5a5e1f60a1094fb
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 7760dc095fa894b1f356c939eb030e675f58a876
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608329"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88810889"
 ---
 # <a name="additions-to-the-csproj-format-for-net-core"></a>Дополнения к формату CSPROJ для .NET Core
 
@@ -20,13 +20,13 @@ ms.locfileid: "88608329"
 
 ```xml
  <PropertyGroup>
-   <TargetFramework>netcoreapp2.1</TargetFramework>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
  </PropertyGroup>
  ```
 
  ```xml
  <PropertyGroup>
-   <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
+   <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
  </PropertyGroup>
  ```
 
@@ -116,11 +116,15 @@ ms.locfileid: "88608329"
 
 Хотя эти изменения csproj значительно упростили файлы проекта, возможно, вы захотите просмотреть полностью развернутый пакет в представлении MSBuild после включения пакета SDK и его целевых объектов. Выполните предварительную обработку проекта, [включив](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) в команду [`dotnet msbuild`](dotnet-msbuild.md) параметр `/pp`. Это позволит просмотреть сведения об импортированных файлах, их источниках, вкладе в сборку без фактического создания проекта:
 
-`dotnet msbuild -pp:fullproject.xml`
+```dotnetcli
+dotnet msbuild -pp:fullproject.xml
+```
 
 Если проект имеет несколько требуемых версий .NET Framework, результаты выполнения команды должны касаться только одной из них. Эту версию следует указать в качестве свойства MSBuild:
 
-`dotnet msbuild -p:TargetFramework=netcoreapp2.0 -pp:fullproject.xml`
+```dotnetcli
+dotnet msbuild -p:TargetFramework=netcoreapp3.1 -pp:fullproject.xml
+```
 
 ## <a name="additions"></a>Добавления
 
@@ -218,10 +222,10 @@ ms.locfileid: "88608329"
 </PackageTargetFallback >
 ```
 
-В следующем примере приводятся резервные варианты только для целевого объекта `netcoreapp2.1`:
+В следующем примере приводятся резервные варианты только для целевого объекта `netcoreapp3.1`:
 
 ```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp3.1'">
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```

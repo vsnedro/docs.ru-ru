@@ -2,12 +2,12 @@
 title: Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio Code
 description: Создайте проект модульного теста для библиотеки классов .NET Core. Проверьте правильность работы библиотеки классов .NET Core с помощью модульных тестов.
 ms.date: 06/08/2020
-ms.openlocfilehash: a61fd952eea2dec0d5a9f351d3f3d01c738e8fad
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: b5f394b5dea2bf0b4af6e8b119df3fa0ec113dd3
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84701037"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88811721"
 ---
 # <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio-code"></a>Учебник. Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio Code
 
@@ -112,7 +112,7 @@ ms.locfileid: "84701037"
 
    В выходных данных терминала показано, что все тесты пройдены.
 
-   ```
+   ```output
    Starting test execution, please wait...
 
    A total of 1 test files matched the specified pattern.
@@ -142,7 +142,7 @@ ms.locfileid: "84701037"
 
    В выходных данных терминала показано, что один тест завершается ошибкой, и выдается сообщение об ошибке для непройденного теста. "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Из-за этого сбоя строки в массиве, расположенные после слова "Error", не проверялись.
 
-   ```
+   ```output
    Starting test execution, please wait...
 
    A total of 1 test files matched the specified pattern.
