@@ -1,4 +1,5 @@
 ---
+description: '#undef. Справочник по C#'
 title: '#undef. Справочник по C#'
 ms.date: 06/30/2018
 f1_keywords:
@@ -6,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - '#undef directive [C#]'
 ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513
-ms.openlocfilehash: 21923412aa178c3b86e94a54bd911130e48e4deb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 97f99ab4230585e61fed0e057552b78c7a4c2bb5
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75712446"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89137868"
 ---
-# <a name="undef-c-reference"></a><span data-ttu-id="28df3-102">#undef (Справочник по C#)</span><span class="sxs-lookup"><span data-stu-id="28df3-102">#undef (C# Reference)</span></span>
-<span data-ttu-id="28df3-103">`#undef` позволяет отменить определение символа таким образом, чтобы при использовании этого символа в качестве выражения в директиве [#if](./preprocessor-if.md) возвращалось значение `false`.</span><span class="sxs-lookup"><span data-stu-id="28df3-103">`#undef` lets you undefine a symbol, such that, by using the symbol as the expression in a [#if](./preprocessor-if.md) directive, the expression will evaluate to `false`.</span></span>  
+# <a name="undef-c-reference"></a><span data-ttu-id="1ff94-103">#undef (Справочник по C#)</span><span class="sxs-lookup"><span data-stu-id="1ff94-103">#undef (C# Reference)</span></span>
+<span data-ttu-id="1ff94-104">`#undef` позволяет отменить определение символа таким образом, чтобы при использовании этого символа в качестве выражения в директиве [#if](./preprocessor-if.md) возвращалось значение `false`.</span><span class="sxs-lookup"><span data-stu-id="1ff94-104">`#undef` lets you undefine a symbol, such that, by using the symbol as the expression in a [#if](./preprocessor-if.md) directive, the expression will evaluate to `false`.</span></span>  
   
- <span data-ttu-id="28df3-104">Символ можно определить с помощью директивы [#define](./preprocessor-define.md) или параметра компилятора [-define](../compiler-options/define-compiler-option.md).</span><span class="sxs-lookup"><span data-stu-id="28df3-104">A symbol can be defined either with the [#define](./preprocessor-define.md) directive or the [-define](../compiler-options/define-compiler-option.md) compiler option.</span></span> <span data-ttu-id="28df3-105">Директива `#undef` должна находиться в файле перед использованием любых инструкций, которые также не являются директивами.</span><span class="sxs-lookup"><span data-stu-id="28df3-105">The `#undef` directive must appear in the file before you use any statements that are not also directives.</span></span>  
+ <span data-ttu-id="1ff94-105">Символ можно определить с помощью директивы [#define](./preprocessor-define.md) или параметра компилятора [-define](../compiler-options/define-compiler-option.md).</span><span class="sxs-lookup"><span data-stu-id="1ff94-105">A symbol can be defined either with the [#define](./preprocessor-define.md) directive or the [-define](../compiler-options/define-compiler-option.md) compiler option.</span></span> <span data-ttu-id="1ff94-106">Директива `#undef` должна находиться в файле перед использованием любых инструкций, которые также не являются директивами.</span><span class="sxs-lookup"><span data-stu-id="1ff94-106">The `#undef` directive must appear in the file before you use any statements that are not also directives.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="28df3-106">Пример</span><span class="sxs-lookup"><span data-stu-id="28df3-106">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="1ff94-107">Пример</span><span class="sxs-lookup"><span data-stu-id="1ff94-107">Example</span></span>  
 
 ```csharp
 // preprocessor_undef.cs  
@@ -38,10 +39,10 @@ class MyClass
 }  
 ```
 
-<span data-ttu-id="28df3-107">**DEBUG не определено**</span><span class="sxs-lookup"><span data-stu-id="28df3-107">**DEBUG is not defined**</span></span>
+<span data-ttu-id="1ff94-108">**DEBUG не определено**</span><span class="sxs-lookup"><span data-stu-id="1ff94-108">**DEBUG is not defined**</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="28df3-108">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="28df3-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1ff94-109">См. также</span><span class="sxs-lookup"><span data-stu-id="1ff94-109">See also</span></span>
 
-- [<span data-ttu-id="28df3-109">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="28df3-109">C# Reference</span></span>](../index.md)
-- [<span data-ttu-id="28df3-110">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="28df3-110">C# Programming Guide</span></span>](../../programming-guide/index.md)
-- [<span data-ttu-id="28df3-111">Директивы препроцессора C#</span><span class="sxs-lookup"><span data-stu-id="28df3-111">C# Preprocessor Directives</span></span>](./index.md)
+- [<span data-ttu-id="1ff94-110">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="1ff94-110">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="1ff94-111">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="1ff94-111">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="1ff94-112">Директивы препроцессора C#</span><span class="sxs-lookup"><span data-stu-id="1ff94-112">C# Preprocessor Directives</span></span>](./index.md)
