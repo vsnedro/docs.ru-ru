@@ -1,4 +1,5 @@
 ---
+description: -addmodule (параметры компилятора C#)
 title: -addmodule (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -addmodule compiler option [C#]
 - addmodule compiler option [C#]
 ms.assetid: ed604546-0dc2-4bd4-9a3e-610a8d973e58
-ms.openlocfilehash: 148a63c37cfbc4c60448adccde10947e91e22bb9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bcc615d52aec0a09ebf3913b3ece71f2cbfcbda9
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70970177"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89126129"
 ---
 # <a name="-addmodule-c-compiler-options"></a>-addmodule (параметры компилятора C#)
 Установка этого параметра приводит к добавлению модуля, созданного с помощью параметра target:module для текущей компиляции.  

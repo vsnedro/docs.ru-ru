@@ -1,15 +1,16 @@
 ---
+description: Справочник по C#. Модификаторы доступа
 title: Справочник по C#. Модификаторы доступа
 ms.date: 07/20/2015
 helpviewer_keywords:
 - access modifiers [C#]
 ms.assetid: 61c3fa51-c00f-48cb-9b49-c805dedd62d7
-ms.openlocfilehash: 754949e42771de30cc2dce7e4e610f70ada6dfd4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2ea7a65c23b6a1edee572f6f6ff6c52d14358408
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713847"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89127156"
 ---
 # <a name="access-modifiers-c-reference"></a>Модификаторы доступа (Справочник по C#)
 Модификаторы доступа — это ключевые слова, которые задают объявленный уровень доступности члена или типа. В этом разделе описываются четыре модификатора доступа:  
@@ -21,15 +22,15 @@ ms.locfileid: "75713847"
   
  С помощью этих модификаторов можно задать следующие шесть уровней доступа:  
   
-- [`public`](public.md): неограниченный доступ.  
+- [`public`](public.md): Неограниченный доступ.  
   
-- [`protected`](protected.md): доступ ограничен содержащим классом или типами, которые являются производными от содержащего класса.  
+- [`protected`](protected.md): Доступ ограничен содержащим классом или типами, которые являются производными от содержащего класса.  
   
-- [`internal`](internal.md): доступ ограничен текущей сборкой.  
+- [`internal`](internal.md): Доступ ограничен текущей сборкой.  
   
-- [`protected internal`](protected-internal.md): доступ ограничен текущей сборкой или типами, которые являются производными от содержащего класса.  
+- [`protected internal`](protected-internal.md): Доступ ограничен текущей сборкой или типами, которые являются производными от содержащего класса.  
   
-- [`private`](private.md): доступ ограничен содержащим типом.  
+- [`private`](private.md): Доступ ограничен содержащим типом.  
 
 - [`private protected`](private-protected.md): Доступ ограничен содержащим классом или типами, которые являются производными от содержащего класса в текущей сборке.  
   
@@ -41,7 +42,7 @@ ms.locfileid: "75713847"
   
 - [Ограничения на использование уровней доступности](./restrictions-on-using-accessibility-levels.md): общие сведения об ограничениях на использование объявленных уровней доступности.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

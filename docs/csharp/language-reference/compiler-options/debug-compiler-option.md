@@ -1,4 +1,5 @@
 ---
+description: -debug (параметры компилятора C#)
 title: -debug (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -debug compiler option [C#]
 - /debug compiler option [C#]
 ms.assetid: e2b48c07-01bc-45cc-a52c-92e9085eb969
-ms.openlocfilehash: 8bb2b411dc867b6a43e52058dccf2ac980cf0b1e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 164530a5ec99e7d5b9f34dbcdfb18d80f3102308
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69922502"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125921"
 ---
 # <a name="-debug-c-compiler-options"></a>-debug (параметры компилятора C#)
 При заданном параметре **-debug** компилятор создает отладочную информацию и помещает ее в один или несколько выходных файлов.  
@@ -32,7 +33,7 @@ ms.locfileid: "69922502"
  `full` &#124; `pdbonly`  
  Определяет тип отладочной информации, создаваемой компилятором. Аргумент full, действующий при отсутствии параметра **-debug:pdbonly**, позволяет присоединить отладчик к выполняющейся программе. Задание параметра pdbonly позволяет выполнять отладку исходного кода при запуске программы в отладчике, но при этом ассемблер отображается только при подключении выполняющейся программы к отладчику.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Используйте этот параметр для создания отладочных сборок. Если не задать параметр **-debug**, **-debug+** или **-debug:full**, то отладка выходного файла программы будет невозможна.  
   
  При использовании параметра **-debug:full** нужно учитывать некоторое влияние на скорость и размер оптимизированного кода JIT и незначительное влияние на качество кода с **-debug:full**. Для создания кода выпуска рекомендуется использовать параметр **-debug:pdbonly** либо не использовать PDB.  
@@ -54,7 +55,7 @@ ms.locfileid: "69922502"
   
 4. Измените свойство **Сведения для отладки**.  
   
- Сведения об установке этого параметра компилятора программными средствами см. в разделе <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DebugSymbols%2A>.  
+ Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DebugSymbols%2A>.  
   
 ## <a name="example"></a>Пример  
  Разместите отладочную информацию в выходном файле `app.pdb`.  

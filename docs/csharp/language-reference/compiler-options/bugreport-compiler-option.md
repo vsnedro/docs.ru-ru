@@ -1,4 +1,5 @@
 ---
+description: -bugreport (параметры компилятора C#)
 title: -bugreport (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -bugreport compiler option [C#]
 - bugreport compiler option [C#]
 ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
-ms.openlocfilehash: 0989678be070910c410d71717fe66679e1b70557
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2c358b2dda400f6077ffb5ba1dfc8e6e1127fa52
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69603081"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125999"
 ---
 # <a name="-bugreport-c-compiler-options"></a>-bugreport (параметры компилятора C#)
 Указывает, что отладочную информацию следует поместить в файл для последующего анализа.  

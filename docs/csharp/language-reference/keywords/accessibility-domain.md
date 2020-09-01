@@ -1,15 +1,16 @@
 ---
+description: Справочник по C#. Область доступности
 title: Справочник по C#. Область доступности
 ms.date: 07/20/2015
 helpviewer_keywords:
 - accessibility domain [C#]
 ms.assetid: 8af779c1-275b-44be-a864-9edfbca71bcc
-ms.openlocfilehash: 4a4319b03f3e0d7f9ec721e611b78c124a8a8ee5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2cfc4cc72a79b33276b7d822a2b31eb518dcf784
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713835"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89127065"
 ---
 # <a name="accessibility-domain-c-reference"></a>Область доступности (Справочник по C#)
 Область доступности члена определяет, в каких разделах программы может присутствовать ссылка на этот член. Если член вложен в другой тип, его область доступности определяется как [уровнем доступности](./accessibility-levels.md) самого члена, так и областью доступности типа, непосредственно содержащего вложенный тип.  

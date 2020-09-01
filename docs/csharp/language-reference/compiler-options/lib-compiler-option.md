@@ -1,4 +1,5 @@
 ---
+description: -lib (параметры компилятора C#)
 title: -lib (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -lib compiler option [C#]
 - /lib compiler option [C#]
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
-ms.openlocfilehash: 0c230147be055170ca015f27bd42bb096399405d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e53c54dc446d9fea87a9b7a336a38ffaa31704e9
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69606818"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125453"
 ---
 # <a name="-lib-c-compiler-options"></a>-lib (параметры компилятора C#)
 Параметр **-lib** указывает расположение сборок, на которые ссылается параметр [-reference (параметры компилятора C#)](./reference-compiler-option.md).  
@@ -58,7 +59,7 @@ ms.locfileid: "69606818"
   
 3. Измените содержимое поля со списком.  
   
- Сведения об установке этого параметра компилятора программными средствами см. в разделе <xref:VSLangProj80.ProjectProperties3.ReferencePath%2A>.  
+ Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.ProjectProperties3.ReferencePath%2A>.  
   
 ## <a name="example"></a>Пример  
  Выполните компиляцию файла t2.cs для создания EXE-файла. Компилятор выполнит поиск ссылок на сборку в рабочем каталоге и корневом каталоге диска С.  

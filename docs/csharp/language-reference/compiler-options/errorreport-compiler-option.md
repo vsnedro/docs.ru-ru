@@ -1,4 +1,5 @@
 ---
+description: -errorreport (параметры компилятора C#)
 title: -errorreport (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - errorreport compiler option [C#]
 - /errorreport compiler option [C#]
 ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
-ms.openlocfilehash: 52b58aac5e82d4228dfda9c4d77c1d1c5de3e0cd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5b3143f4da81ac693626778263c277e3a484c45e
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "70253883"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125726"
 ---
 # <a name="-errorreport-c-compiler-options"></a>-errorreport (параметры компилятора C#)
 Этот параметр предоставляет удобный способ для сообщения о внутренней ошибке компилятора C# в корпорацию Майкрософт.
@@ -28,7 +29,7 @@ ms.locfileid: "70253883"
 ```
 
 ## <a name="arguments"></a>Аргументы
- **none**  
+ **Нет**  
  Не будет выполняться сбор отчетов о внутренних ошибках компилятора и их отправка в корпорацию Майкрософт.
 
  **prompt** Запрашивает отправку отчета при получении внутренней ошибки компилятора. **prompt** является параметром по умолчанию при компиляции приложения в среде разработки.
