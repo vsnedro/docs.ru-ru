@@ -1,4 +1,5 @@
 ---
+description: -win32manifest (параметры компилятора C#)
 title: -win32manifest (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - win32manifest compiler option [C#]
 - -win32manifest compiler option [C#]
 ms.assetid: 9460ea1b-6c9f-44b8-8f73-301b30a01de1
-ms.openlocfilehash: 24677b145974af03e6ddcac1b9bab5907ab70c7b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4ce4033323eb938caff1d769198ca69782b470ab
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69924673"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89140832"
 ---
 # <a name="-win32manifest-c-compiler-options"></a>-win32manifest (параметры компилятора C#)
 Параметр **-win32manifest** позволяет указать пользовательский файл манифеста приложения win32manifest для внедрения в переносимый исполняемый файл проекта (PE-файл).  
@@ -66,7 +67,7 @@ ms.locfileid: "69924673"
 </assembly>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры компилятора C# ](./index.md)
 - [-nowin32manifest (параметры компилятора C#)](./nowin32manifest-compiler-option.md)

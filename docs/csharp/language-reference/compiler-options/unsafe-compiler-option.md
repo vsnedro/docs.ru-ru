@@ -1,4 +1,5 @@
 ---
+description: -unsafe (параметры компилятора C#)
 title: -unsafe (параметры компилятора C#)
 ms.date: 04/25/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - -unsafe compiler option [C#]
 - unsafe compiler option [C#]
 - /unsafe compiler option [C#]
-ms.openlocfilehash: 146299fda103567b111c66400c17edf36addd843
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0f6d94dd25a020d96430746c4b5e7aefd0f679da
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "65877992"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89140845"
 ---
 # <a name="-unsafe-c-compiler-options"></a>-unsafe (параметры компилятора C#)
 
