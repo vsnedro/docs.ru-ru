@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Модификатор override
 title: Справочник по C#. Модификатор override
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - override keyword [C#]
 ms.assetid: dd1907a8-acf8-46d3-80b9-c2ca4febada8
-ms.openlocfilehash: acad3aa3b196c184132ad1acdf52b18a799b0896
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 51ca806310214981b7ff24a796fe078d902dca4d
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713252"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89134464"
 ---
 # <a name="override-c-reference"></a>override (Справочник по C#)
 
@@ -46,7 +47,7 @@ ms.locfileid: "75713252"
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

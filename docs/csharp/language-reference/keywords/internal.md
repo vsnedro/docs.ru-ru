@@ -1,4 +1,5 @@
 ---
+description: internal. Справочник по C#
 title: internal. Справочник по C#
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - internal keyword [C#]
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
-ms.openlocfilehash: e5a5ca18828b689241abbb6d80c5adc51efb073c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 14722d66a65eb5f96118acf017dc877e657b2dd9
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79173605"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89134579"
 ---
 # <a name="internal-c-reference"></a>internal (Справочник по C#)
 Ключевое слово `internal` является [модификатором доступа](./access-modifiers.md) для типов и членов типов.
@@ -90,7 +91,7 @@ public class TestAccess
 
 Дополнительные сведения см. в разделе [Объявленная доступность](~/_csharplang/spec/basic-concepts.md#declared-accessibility) в [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction). Спецификация языка является предписывающим источником информации о синтаксисе и использовании языка C#.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

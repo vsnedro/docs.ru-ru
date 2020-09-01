@@ -1,4 +1,5 @@
 ---
+description: ':::no-loc text=interface::: (справочник по C#)'
 title: interface. Справочник по C#
 ms.date: 01/17/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - interface keyword [C#]
 ms.assetid: 7da38e81-4f99-4bc5-b07d-c986b687eeba
-ms.openlocfilehash: 869f1398ae0af3c7379655aa018a9f4aacb934d7
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 24f95e828522f467c519c0c8a7ba9410aa97af4e
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85243975"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89134592"
 ---
 # <a name="no-loc-textinterface-c-reference"></a>:::no-loc text="interface"::: (справочник по C#)
 
@@ -69,7 +70,7 @@ public interface INamed
 
 Дополнительные сведения см. в разделе [Интерфейсы](~/_csharplang/spec/interfaces.md) статьи [Спецификация языка C#](~/_csharplang/spec/introduction.md), а также в спецификации функций для [элементов интерфейса по умолчанию — C# 8.0](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

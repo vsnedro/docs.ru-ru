@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Параметры методов
 title: Справочник по C#. Параметры методов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - method parameters [C#]
 - parameters [C#]
 ms.assetid: 680e39ff-775b-48b0-9f47-4186a5bfc4a1
-ms.openlocfilehash: 2cc7f9178fa5c1a040be9d45ba66fac292bb0e28
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7090bf1c3df65cf1e65942404f883b49612e7521
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713375"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89134410"
 ---
 # <a name="method-parameters-c-reference"></a>Параметры методов (Справочник по C#)
 
@@ -27,7 +28,7 @@ ms.locfileid: "75713375"
   
 - [out](./out-parameter-modifier.md) указывает, что этот параметр передается по ссылке и записывается вызванным методом.
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)
