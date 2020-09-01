@@ -1,4 +1,5 @@
 ---
+description: '#Справочник по C#. Директива препроцессора if'
 title: '#Справочник по C#. Директива препроцессора if'
 ms.date: 10/27/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#if directive [C#]'
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
-ms.openlocfilehash: d047b88f202341a795834809d0b601706c30fcb4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f01db9d7801d4b6f4c273a9cf82806acbb4828bb
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75899856"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89138141"
 ---
 # <a name="if-c-reference"></a>Справочник по C#. #if
 
@@ -37,7 +38,7 @@ ms.locfileid: "75899856"
 
 Символ, определенный с помощью `-define` или `#define`, не конфликтует с одноименной переменной. Соответственно, имя переменной не должно передаваться директиве препроцессора, а символ может использоваться только в директиве препроцессора.
 
-Областью действия символа, создаваемого с помощью #define, будет файл, в котором он определен.
+Символ, создаваемый с помощью `#define`, будет определен в пределах того файл, в котором он определен.
 
 Система сборки также учитывает символы препроцессора, представляющие [целевые платформы](../../../standard/frameworks.md) в проектах в стиле SDK. Они полезны при создании приложений, предназначенных для нескольких реализаций или версий .NET.
 
@@ -89,9 +90,9 @@ public class MyClass
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)
 - [Директивы препроцессора C#](index.md)
-- [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)
+- [Практическое руководство. Условная компиляция с использованием атрибутов Trace и Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).

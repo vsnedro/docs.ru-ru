@@ -1,4 +1,5 @@
 ---
+description: '#Справочник по C#. #pragma checksum'
 title: '#Справочник по C#. #pragma checksum'
 ms.date: 07/20/2015
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '#pragma checksum [C#]'
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2
-ms.openlocfilehash: 1bbb404e1183daa5e68e512e7439b6ae52abd605
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 60c491000337fd50da217e97054e86faccb2e7d7
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75712485"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89137985"
 ---
 # <a name="pragma-checksum-c-reference"></a>#pragma checksum (Справочник по C#)
 Создает контрольные суммы для исходных файлов, чтобы помочь с отладкой страниц ASP.NET.  
@@ -53,7 +54,7 @@ class TestClass
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

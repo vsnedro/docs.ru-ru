@@ -1,4 +1,5 @@
 ---
+description: -win32icon (параметры компилятора C#)
 title: -win32icon (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /win32icon compiler option [C#]
 - -win32icon compiler option [C#]
 ms.assetid: 756d9b6d-ab07-41b7-ba58-5bd88f711138
-ms.openlocfilehash: f3df92d8d0b0135eac1a055afafffa0015fecc2b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 76a54f9011371492bdc15f15c3e40d51082deed3
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69606278"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89138414"
 ---
 # <a name="-win32icon-c-compiler-options"></a>-win32icon (параметры компилятора C#)
 Параметр **-win32icon** вставляет в выходной файл ICO-файл, который придает выходному файлу необходимый вид в проводнике.  
@@ -41,7 +42,7 @@ ms.locfileid: "69606278"
   
 3. Измените свойство **Значок приложения**.  
   
- Сведения об установке этого параметра компилятора программными средствами см. в разделе <xref:VSLangProj80.ProjectProperties3.ApplicationIcon%2A>.  
+ Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.ProjectProperties3.ApplicationIcon%2A>.  
   
 ## <a name="example"></a>Пример  
  Скомпилируйте `in.cs` и присоедините ICO-файл `rf.ico`, чтобы получить файл `in.exe`:  

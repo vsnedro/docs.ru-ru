@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. event
 title: Справочник по C#. event
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - event keyword [C#]
 ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
-ms.openlocfilehash: eb1805ed55921497fea88e6b39989c876ef003d1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5e75fec12390cb694126c5bec684c40caa378915
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713556"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89139103"
 ---
 # <a name="event-c-reference"></a>Справочник по C#. event
 
@@ -34,7 +35,7 @@ ms.locfileid: "75713556"
 
 Следующие ключевые слова применяются к событиям.
 
-|Ключевое слово|Описание:|Дополнительные сведения|
+|Ключевое слово|Описание|Дополнительные сведения|
 |-------------|-----------------|--------------------------|
 |[static](./static.md)|Делает событие доступным для вызывающих объектов в любое время, даже если экземпляр класса не существует.|[Статические классы и члены статических классов](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)|
 |[virtual](./virtual.md)|Позволяет производным классам переопределять поведение события с помощью ключевого слова [override](./override.md).|[Наследование](../../programming-guide/classes-and-structs/inheritance.md)|
@@ -49,7 +50,7 @@ ms.locfileid: "75713556"
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

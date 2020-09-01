@@ -3,12 +3,12 @@ title: Набор данных и руководство по безопасно
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: 24c8a830f8638bc2d9dd20c2384c8230a682d817
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 4fe8a062c762cc70d33243e3443aa9bf55635f98
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812241"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89137621"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Набор данных и руководство по безопасности DataTable
 
@@ -45,6 +45,9 @@ System. InvalidOperationException: тип " \<Type Name\> , версия = \<n.n
 * Операция десериализации завершается ошибкой.
 
 При загрузке XML в существующий `DataSet` экземпляр или `DataTable` можно учитывать существующие определения столбцов. Если таблица уже содержит определение столбца пользовательского типа, этот тип временно добавляется в список разрешений на время выполнения операции десериализации XML.
+
+> [!NOTE]
+> После добавления столбцов в объект `DataTable` `ReadXml` не будет считывать схему из XML, и если схема не совпадает, она также не будет считывать записи, поэтому необходимо будет добавить все столбцы самостоятельно, чтобы использовать этот метод.
 
 ```cs
 XmlReader xmlReader = GetXmlReader();

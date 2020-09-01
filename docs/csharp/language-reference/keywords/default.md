@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Ключевое слово default
 title: Справочник по C#. Ключевое слово default
 ms.date: 08/04/2017
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - default keyword [C#]
 ms.assetid: 14c48aaa-7d35-4058-a1a4-f53353050579
-ms.openlocfilehash: d133b0a6db1105e2cbad569ce96ceafa711b23ac
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 51735b818ba05b7d83c7a391136ef97e9b903021
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713612"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89138245"
 ---
 # <a name="default-c-reference"></a>default (справочник по C#)
 
@@ -21,7 +22,7 @@ ms.locfileid: "75713612"
 - для указания метки по умолчанию в [инструкции `switch`](switch.md);
 - в качестве [оператора или литерала по умолчанию](../operators/default.md) для создания значения по умолчанию для типа.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)
