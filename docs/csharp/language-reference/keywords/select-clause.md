@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Предложение select
 title: Справочник по C#. Предложение select
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - select keyword [C#]
 - select clause [C#]
 ms.assetid: df01e266-5781-4aaa-80c4-67cf28ea093f
-ms.openlocfilehash: 68ea7ad6fc7cf5580dbdd0ae7f012f36566db0dc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d67c99cc841c08a63cc83843a07a46e80199b9d1
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79173514"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89136906"
 ---
 # <a name="select-clause-c-reference"></a>Предложение "select" (справочник по C#)
 
@@ -37,7 +38,7 @@ ms.locfileid: "79173514"
 
 Во время компиляции предложение `select` преобразуется в вызов метода <xref:System.Linq.Enumerable.Select%2A> стандартного оператора запроса.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Ключевые слова запроса (LINQ)](query-keywords.md)

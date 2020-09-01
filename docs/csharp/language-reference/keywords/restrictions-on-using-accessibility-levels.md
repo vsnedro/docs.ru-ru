@@ -1,15 +1,16 @@
 ---
+description: Справочник по C#. Ограничения на использование уровней доступности
 title: Справочник по C#. Ограничения на использование уровней доступности
 ms.date: 07/20/2015
 helpviewer_keywords:
 - access modifiers [C#], accessibility level restrictions
 ms.assetid: 987e2f22-46bf-4fea-80ee-270b9cd01045
-ms.openlocfilehash: 8082dbd7398b6634b68f1dd2887cd55d6798a5d9
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 542e463e41c70f2e8aed5c20dc1294e296a88518
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795161"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89137006"
 ---
 # <a name="restrictions-on-using-accessibility-levels-c-reference"></a>Ограничения на использование уровней доступности (справочник по C#)
 
@@ -107,7 +108,7 @@ public class A
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

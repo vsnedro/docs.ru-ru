@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Ключевое слово readonly
 title: Справочник по C#. Ключевое слово readonly
 ms.date: 04/14/2020
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - readonly keyword [C#]
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
-ms.openlocfilehash: 66a096e8831f72a2216e8ba5dd9866046504624f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b1bab5af18216fcef2162179493dbbb59e3470cf
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84368625"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89137179"
 ---
 # <a name="readonly-c-reference"></a>readonly (Справочник по C#)
 
