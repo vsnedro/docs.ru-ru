@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Оператор continue
 title: Справочник по C#. Оператор continue
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - continue keyword [C#]
 ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0
-ms.openlocfilehash: 83b43b31eacf0ed835ee3d7a919538eb9f1dd1e8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 76578b0ad7e2b969609fbf50df1f9ab7de6e5097
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75713664"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89128443"
 ---
 # <a name="continue-c-reference"></a>continue (Справочник по C#)
 
@@ -28,7 +29,7 @@ ms.locfileid: "75713664"
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)

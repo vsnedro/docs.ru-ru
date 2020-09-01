@@ -1,4 +1,5 @@
 ---
+description: -refout (параметры компилятора C#)
 title: -refout (параметры компилятора C#)
 ms.date: 08/08/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - refout compiler option [C#]
 - /refout compiler option [C#]
 - -refout compiler option [C#]
-ms.openlocfilehash: f48316a1e6f657e3bd0190d269dfe0e875a833d9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 424782e4607fea63130e95ab09a671c75fe1404d
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72771758"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89128718"
 ---
 # <a name="-refout-c-compiler-options"></a>-refout (параметры компилятора C#)
 
@@ -34,7 +35,7 @@ ms.locfileid: "72771758"
 
 Параметры `-refout` и [`-refonly`](refonly-compiler-option.md) являются взаимоисключающими.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры компилятора C# ](./index.md)
 - [Управление свойствами проектов и решений](/visualstudio/ide/managing-project-and-solution-properties)

@@ -1,13 +1,14 @@
 ---
+description: -subsystemversion (параметры компилятора C#)
 title: -subsystemversion (параметры компилятора C#)
 ms.date: 07/20/2015
 ms.assetid: a99fce81-9d92-4813-9874-bee777041445
-ms.openlocfilehash: d76c9424340b4b6f3c211c849b466be55eb79d1e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e8001d8db214123e75fec4e1d1117ef90a9df606
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74802042"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89128599"
 ---
 # <a name="-subsystemversion-c-compiler-options"></a>-subsystemversion (параметры компилятора C#)
 
@@ -30,15 +31,15 @@ ms.locfileid: "74802042"
 
 Нули в начале версии `minor` не изменяют версию, нули в конце — изменяют. Например, 6.1 и 6.01 — одна версия, а 6.10 — другая. Рекомендуется указывать дополнительный номер версии двумя цифрами, чтобы избежать путаницы.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В следующей таблице перечислены распространенные версии подсистем Windows.
 
 |Версия Windows|Версия подсистемы|
 |---------------------|-----------------------|
 |Windows 2000|5.00|
-|Windows XP|5,01|
-|Windows Server 2003|5,02|
+|Windows XP|5.01|
+|Windows Server 2003|5.02|
 |Windows Vista|6.00|
 |Windows 7|6.01|
 |Windows Server 2008|6.01|
@@ -64,6 +65,6 @@ ms.locfileid: "74802042"
 
 Чтобы задать параметр компилятора **-subsystemversion** в Visual Studio, нужно открыть CSPROJ-файл и указать значение для свойства `SubsystemVersion` в XML MSBuild. Этот параметр невозможно задать в интегрированной среде разработки Visual Studio. Дополнительные сведения см. выше в подразделе "Значения по умолчанию" или в разделе [Общие свойства проектов MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры компилятора C# ](./index.md)

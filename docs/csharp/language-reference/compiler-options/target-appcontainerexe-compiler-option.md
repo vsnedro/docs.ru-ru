@@ -1,13 +1,14 @@
 ---
+description: -target:appcontainerexe (параметры компилятора C#)
 title: -target:appcontainerexe (параметры компилятора C#)
 ms.date: 07/20/2015
 ms.assetid: e7e62229-23ea-4e53-bef5-380d951bf95f
-ms.openlocfilehash: 64661e72f9efe190606cadd93558678cb849e8cc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8c3b85c2f5a20788bd311e9bf3b300c32967da77
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74204527"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89128586"
 ---
 # <a name="-targetappcontainerexe-c-compiler-options"></a>-target:appcontainerexe (параметры компилятора C#)
 Если используется параметр компилятора **-target:appcontainerexe**, компилятор создает исполняемый файл Windows (EXE-файл), который должен запускаться в контейнере приложения. Этот параметр аналогичен [-target:winexe](./target-winexe-compiler-option.md), но предназначен для приложений Магазина Windows 8.x.  
