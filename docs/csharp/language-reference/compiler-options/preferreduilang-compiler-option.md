@@ -1,4 +1,5 @@
 ---
+description: -preferreduilang (параметры компилятора C#)
 title: -preferreduilang (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /preferreduilang compiler option [C#]
 - -preferreduilang compiler option [C#]
 ms.assetid: 68b2462f-6778-48d7-8052-62805fe8e02c
-ms.openlocfilehash: 7ebafcf446c9033c93e0c5fa5e11ea2930bd2e1e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f68652e910651ab5c4184376d9eb7729303382d9
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69602557"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89124855"
 ---
 # <a name="-preferreduilang-c-compiler-options"></a>-preferreduilang (параметры компилятора C#)
 С помощью параметра компилятора `-preferreduilang` можно указать язык, на котором компилятор C# отображает выходные данные, например сообщения об ошибках.  

@@ -1,4 +1,5 @@
 ---
+description: -pathmap (параметры компилятора C#)
 title: -pathmap (параметры компилятора C#)
 ms.date: 05/16/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - -pathmap compiler option [C#]
 - pathmap compiler option [C#]
 - /pathmap compiler option [C#]
-ms.openlocfilehash: 48e96d2ec2ccbea83d573c0eb3630b1591c407a9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 707a37c6946cfcaf429552f0aeece6b87f3ad71d
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69606624"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125011"
 ---
 # <a name="-pathmap-c-compiler-options"></a>-pathmap (параметры компилятора C#)
 

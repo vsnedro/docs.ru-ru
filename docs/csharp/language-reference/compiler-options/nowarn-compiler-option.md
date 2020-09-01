@@ -1,4 +1,5 @@
 ---
+description: -nowarn (параметры компилятора C#)
 title: -nowarn (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /nowarn compiler option [C#]
 - -nowarn compiler option [C#]
 ms.assetid: 6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4
-ms.openlocfilehash: fa3079bf1431ba1a16b5a2eef0dd5500fe95909c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ab906912bc4bfab40e459c92a823b915240b8d55
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69606613"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125089"
 ---
 # <a name="-nowarn-c-compiler-options"></a>-nowarn (параметры компилятора C#)
 Параметр **-nowarn** позволяет предотвратить отображение одного или нескольких предупреждений компилятором. Разделяйте предупреждения запятыми.  

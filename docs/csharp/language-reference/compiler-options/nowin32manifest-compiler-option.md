@@ -1,4 +1,5 @@
 ---
+description: -nowin32manifest (параметры компилятора C#)
 title: -nowin32manifest (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -nowin32manifest compiler option [C#]
 - /nowin32manifest compiler option [C#]
 ms.assetid: 6f06365b-b87b-46a2-b187-b3bfeaf4862d
-ms.openlocfilehash: 8820410bfdbce2f9986605f37af4d14957471126
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8514ab5b118e320d456d1b7367fab3b463c3607a
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69602716"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125063"
 ---
 # <a name="-nowin32manifest-c-compiler-options"></a>-nowin32manifest (параметры компилятора C#)
 С помощью параметра **-nowin32manifest** можно указать компилятору не внедрять манифест приложения в исполняемый файл.  
@@ -24,7 +25,7 @@ ms.locfileid: "69602716"
 -nowin32manifest  
 ```  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  При использовании этого параметра приложение будет подлежать виртуализации в Windows Vista, если манифест приложения не будет предоставлен в файле ресурсов Win32 или на более поздних этапах сборки.  
   
  В Visual Studio этот параметр можно задать на странице **Свойство приложения**, выбрав в раскрывающемся списке **Манифест** пункт **Создать приложение без манифеста**. Дополнительные сведения см. в разделе [Страница "Приложение" в конструкторе проектов (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp).  

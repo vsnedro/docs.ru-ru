@@ -1,4 +1,5 @@
 ---
+description: -recurse (параметры компилятора C#)
 title: -recurse (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - recurse compiler option [C#]
 - -recurse compiler option [C#]
 ms.assetid: 4e8212e5-04e3-45b1-8a42-41bc50e683b0
-ms.openlocfilehash: c82e3019e1a1e3ba45a7000312b54b9d7f64a2db
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3edd7e23358bc0569dae6204d519209df1ade290
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69606744"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89124829"
 ---
 # <a name="-recurse-c-compiler-options"></a>-recurse (параметры компилятора C#)
 Параметр -recurse позволяет компилировать файлы исходного кода во всех вложенных каталогах заданного каталога (dir) или каталога проекта.  
@@ -31,7 +32,7 @@ ms.locfileid: "69606744"
  `file`  
  Файлы для поиска. Поддерживаются подстановочные знаки.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Параметр **-recurse** позволяет компилировать файлы исходного кода во всех вложенных каталогах заданного каталога (`dir`) или каталога проекта.  
   
  Чтобы скомпилировать все соответствующие файлы в каталоге проекта, не задавая параметр **-recurse**, можно использовать подстановочные знаки в именах файлов.  

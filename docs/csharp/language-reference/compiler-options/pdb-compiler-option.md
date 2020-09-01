@@ -1,4 +1,5 @@
 ---
+description: -pdb (параметры компилятора C#)
 title: -pdb (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - pdb compiler option [C#]
 - /pdb compiler option [C#]
 ms.assetid: e9d0f96a-5b75-45d6-9765-92538dd5f823
-ms.openlocfilehash: 3081f4716e8cd858d789db6050e635af941aa05c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0dcafd0fd260488922c74a2330b312e80467e779
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69602575"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89124920"
 ---
 # <a name="-pdb-c-compiler-options"></a>-pdb (параметры компилятора C#)
 Параметр компилятора **-pdb** задает имя и расположение файла отладочных символов.  
