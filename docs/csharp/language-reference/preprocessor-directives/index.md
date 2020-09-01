@@ -1,4 +1,5 @@
 ---
+description: Директивы препроцессора C#
 title: Директивы препроцессора C#
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - preprocessor directives [C#]
 - keywords [C#], preprocessor directives
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
-ms.openlocfilehash: f63ba3e0bd89a88ad04b14c2f359a8cde65e8f12
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a7ffca8b39f1bd9f05193bccbb6d90e67fa262c9
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "69608596"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89132369"
 ---
 # <a name="c-preprocessor-directives"></a>Директивы препроцессора C#
 В этом разделе содержатся сведения о следующих директивах препроцессора C#:
@@ -38,7 +39,7 @@ ms.locfileid: "69608596"
 
 Директива препроцессора должна быть единственной инструкцией в строке.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)
