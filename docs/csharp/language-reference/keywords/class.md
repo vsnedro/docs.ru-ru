@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Ключевое слово class
 title: Справочник по C#. Ключевое слово class
 ms.date: 07/18/2017
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - class keyword [C#]
 ms.assetid: b95d8815-de18-4c3f-a8cc-a0a53bdf8690
-ms.openlocfilehash: 500160d3bc9280b866e5f5ba24c5edc623e752c1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 67c9c4be55cce25edf9ecb84b257a8523f193bec
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77673099"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89142119"
 ---
-# <a name="class-c-reference"></a>class (Справочник по C#)
+# <a name="class-c-reference"></a>класс (Справочник по C#)
 
 Классы объявляются с помощью ключевого слова `class`, как показано в следующем примере:
 
@@ -26,14 +27,14 @@ class TestClass
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 В C# допускается только одиночное наследование. Другими словами, класс может наследовать реализацию только от одного базового класса. Однако класс может реализовывать несколько интерфейсов. В таблице ниже приведены примеры наследования класса и реализации интерфейса.
 
 |Наследование|Пример|
 |-----------------|-------------|
-|Отсутствуют|`class ClassA { }`|
-|Single|`class DerivedClass : BaseClass { }`|
+|Нет|`class ClassA { }`|
+|Однонаправленная|`class DerivedClass : BaseClass { }`|
 |Отсутствует, реализует два интерфейса|`class ImplClass : IFace1, IFace2 { }`|
 |Одиночное, реализует один интерфейс|`class ImplDerivedClass : BaseClass, IFace1 { }`|
 
@@ -81,7 +82,7 @@ class TestClass
 
 [!code-csharp[csrefKeywordsTypes#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#5)]
 
-## <a name="comments"></a>Комментарии
+## <a name="comments"></a>Примечания
 
 Обратите внимание, что в предыдущем примере доступ к частным полям (`name` и `age`) возможен только с помощью общих методов класса `Child`. Например, имя ребенка нельзя напечатать из метода `Main` с помощью следующего оператора:
 

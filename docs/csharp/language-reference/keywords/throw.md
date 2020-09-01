@@ -1,4 +1,5 @@
 ---
+description: Справочник по C#. Оператор throw
 title: Справочник по C#. Оператор throw
 ms.date: 03/02/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - throw expression [C#]
 - throw keyword [C#]
 ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
-ms.openlocfilehash: 7ed84e04dae54283e4b5f03be0600c4dbf95b4b4
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 4cad4810b89f976f92ce576917feb2398acce636
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063124"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89142041"
 ---
 # <a name="throw-c-reference"></a>throw (Справочник по C#)
 
@@ -36,7 +37,7 @@ throw [e];
 
 [!code-csharp[csrefKeyword#2](~/samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#2)]
 
-## <a name="re-throwing-an-exception"></a>Повторное создание исключения
+## <a name="re-throwing-an-exception"></a>Повторный вызов исключения
 
 `throw` можно также использовать в блоке `catch` для повторного создания исключения, обрабатываемого в блоке `catch`.  В этом случае оператор `throw` не принимает операнд исключения. Это наиболее полезно, когда метод передает аргумент от вызывающего объекта в другой метод библиотеки, а метод библиотеки создает исключение, которое должно быть передано вызывающему объекту. Например, в следующем примере повторно создается исключение <xref:System.NullReferenceException>, возникающее при попытке получить первый символ неинициализированной строки.
 
@@ -47,7 +48,7 @@ throw [e];
 
 ## <a name="the-throw-expression"></a>Выражение `throw`
 
-Начиная с C# 7.0 `throw` можно использовать в качестве выражения, а также как оператор. Это позволяет вызывать исключения в контекстах, которые ранее не поддерживались. К ним относятся следующие методы.
+Начиная с C# 7.0 `throw` можно использовать в качестве выражения, а также как оператор. Это позволяет вызывать исключения в контекстах, которые ранее не поддерживались. Сюда входит следующее.
 
 - [Условный оператор](../operators/conditional-operator.md). В следующем примере используется исключение `throw` для создания <xref:System.ArgumentException>, если методу передается массив пустых строк. До выхода C# 7.0 эта логика должна была отображаться в операторе `if`/`else`.
 
@@ -65,7 +66,7 @@ throw [e];
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по C#](../index.md)
 - [Руководство по программированию на C#](../../programming-guide/index.md)
