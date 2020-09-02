@@ -9,19 +9,19 @@ helpviewer_keywords:
 - 3D graphics [WPF]
 - graphics [WPF], 3D
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
-ms.openlocfilehash: 51da6a1ed6d5e98b99c64ee23be52f7b2385897f
-ms.sourcegitcommit: b6a1869f97a37f11a68c90afde1a520a6887dcbc
+ms.openlocfilehash: aa4f45ac426c59b829b6be9e63e8f0ed50512661
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853871"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89358925"
 ---
 # <a name="3d-graphics-overview"></a>Обзор трехмерной графики
-<a name="introduction"></a>Трехмерные функции в [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] позволяют разработчикам рисовать, преобразовывать и анимировать трехмерную графику как в разметке, так и в процедурном коде. Разработчики могут комбинировать 2D-и трехмерные графики для создания насыщенных элементов управления, представления сложных иллюстраций данных или улучшения взаимодействия с пользователем интерфейса приложения. Трехмерная поддержка в не [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] предназначена для предоставления полнофункциональной платформы для разработки игр. В этом разделе представлен обзор трехмерных функций в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] графической системе.  
+<a name="introduction"></a> Трехмерные функции в [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] позволяют разработчикам рисовать, преобразовывать и анимировать трехмерную графику как в разметке, так и в процедурном коде. Разработчики могут комбинировать 2D-и трехмерные графики для создания насыщенных элементов управления, представления сложных иллюстраций данных или улучшения взаимодействия с пользователем интерфейса приложения. Трехмерная поддержка в не [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] предназначена для предоставления полнофункциональной платформы для разработки игр. В этом разделе представлен обзор трехмерных функций в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] графической системе.  
 
 <a name="threed_in_2d"></a>
 ## <a name="3d-in-a-2d-container"></a>Трехмерный в двухмерном контейнере  
- содержимое трехмерной графики в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] инкапсулируется в элемент, <xref:System.Windows.Controls.Viewport3D> который может участвовать в структуре двумерного элемента. Графическая система обрабатывает <xref:System.Windows.Controls.Viewport3D> как двумерный визуальный элемент, как и многие другие в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] . <xref:System.Windows.Controls.Viewport3D>функции в виде окна — окна просмотра — трехмерной сцены. Точнее, это поверхность, на которой проецируется трехмерная сцена.  
+ содержимое трехмерной графики в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] инкапсулируется в элемент, <xref:System.Windows.Controls.Viewport3D> который может участвовать в структуре двумерного элемента. Графическая система обрабатывает <xref:System.Windows.Controls.Viewport3D> как двумерный визуальный элемент, как и многие другие в [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] . <xref:System.Windows.Controls.Viewport3D> функции в виде окна — окна просмотра — трехмерной сцены. Точнее, это поверхность, на которой проецируется трехмерная сцена.  
   
  В традиционном двухмерном приложении используйте, <xref:System.Windows.Controls.Viewport3D> как и другой элемент контейнера, например Grid или Canvas.  Несмотря на то, что можно использовать <xref:System.Windows.Controls.Viewport3D> с другими 2D-объектами на одном графе сцены, нельзя сочетать 2D-и трехмерные объекты в <xref:System.Windows.Controls.Viewport3D> .  В этом разделе основное внимание уделяется рисованию трехмерной графики внутри <xref:System.Windows.Controls.Viewport3D> .  
   
@@ -40,12 +40,12 @@ ms.locfileid: "85853871"
   
  Другим способом понять, как трехмерная сцена представлена на двумерной плоскости, является описание сцены в качестве проекции на поверхность просмотра. <xref:System.Windows.Media.Media3D.ProjectionCamera>Позволяет указать различные проекции и их свойства для изменения того, как наблюдатель видит трехмерные модели. <xref:System.Windows.Media.Media3D.PerspectiveCamera>Указывает проекцию, форешортенс сцену.  Иными словами, объект <xref:System.Windows.Media.Media3D.PerspectiveCamera> предоставляет перспективу точки исчезновения.  Можно указать положение камеры в пространстве координат сцены, направление и поле зрения камеры и вектор, определяющий направление "вверх" в сцене. На следующей схеме показана <xref:System.Windows.Media.Media3D.PerspectiveCamera> проекция.  
   
- <xref:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance%2A>Свойства и <xref:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance%2A> <xref:System.Windows.Media.Media3D.ProjectionCamera> ограничивают диапазон проекции камеры. Поскольку камеры могут быть расположены в любом месте сцены, фактически можно расположить камеру внутри модели или очень близко от нее, что усложняет правильное распознавание объекта.  <xref:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance%2A>позволяет указать минимальное расстояние от камеры, после которого объекты не будут нарисованы.  И наоборот, <xref:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance%2A> позволяет указать расстояние от камеры, за которой объекты не будут нарисованы, что гарантирует, что объекты, которые не удается распознать, не будут включаться в сцену.  
+ <xref:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance%2A>Свойства и <xref:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance%2A> <xref:System.Windows.Media.Media3D.ProjectionCamera> ограничивают диапазон проекции камеры. Поскольку камеры могут быть расположены в любом месте сцены, фактически можно расположить камеру внутри модели или очень близко от нее, что усложняет правильное распознавание объекта.  <xref:System.Windows.Media.Media3D.ProjectionCamera.NearPlaneDistance%2A> позволяет указать минимальное расстояние от камеры, после которого объекты не будут нарисованы.  И наоборот, <xref:System.Windows.Media.Media3D.ProjectionCamera.FarPlaneDistance%2A> позволяет указать расстояние от камеры, за которой объекты не будут нарисованы, что гарантирует, что объекты, которые не удается распознать, не будут включаться в сцену.  
   
  ![Настройка камеры](./media/coordsystem-6.png "Курдсистем-6")  
 Позиция камеры  
   
- <xref:System.Windows.Media.Media3D.OrthographicCamera>Задает ортогональную проекцию трехмерной модели для двухмерной визуальной поверхности. Подобно другим камерам, она указывает позицию, направление просмотра и направление "вверх". Однако, в отличие от <xref:System.Windows.Media.Media3D.PerspectiveCamera> , <xref:System.Windows.Media.Media3D.OrthographicCamera> описывает проекцию, которая не включает перспективу ракурс. Иными словами, <xref:System.Windows.Media.Media3D.OrthographicCamera> описывает окно просмотра, стороны которого параллельны, а не один, стороны которого соответствуют точке на камере. На следующем рисунке показана та же модель, которая просматривается с помощью <xref:System.Windows.Media.Media3D.PerspectiveCamera> и <xref:System.Windows.Media.Media3D.OrthographicCamera> .  
+ <xref:System.Windows.Media.Media3D.OrthographicCamera> Задает ортогональную проекцию трехмерной модели для двухмерной визуальной поверхности. Подобно другим камерам, она указывает позицию, направление просмотра и направление "вверх". Однако, в отличие от <xref:System.Windows.Media.Media3D.PerspectiveCamera> , <xref:System.Windows.Media.Media3D.OrthographicCamera> описывает проекцию, которая не включает перспективу ракурс. Иными словами, <xref:System.Windows.Media.Media3D.OrthographicCamera> описывает окно просмотра, стороны которого параллельны, а не один, стороны которого соответствуют точке на камере. На следующем рисунке показана та же модель, которая просматривается с помощью <xref:System.Windows.Media.Media3D.PerspectiveCamera> и <xref:System.Windows.Media.Media3D.OrthographicCamera> .  
   
  ![Ортогональная и перспективная проекции](./media/camera-projections4.png "Camera_projections4")  
 Перспективная и ортогональная проекции  
@@ -58,7 +58,7 @@ ms.locfileid: "85853871"
 <a name="models_meshes"></a>
 ## <a name="model-and-mesh-primitives"></a>Примитивы модели и сетки  
   
- <xref:System.Windows.Media.Media3D.Model3D>является абстрактным базовым классом, представляющим универсальный трехмерный объект. Для создания трехмерной сцены необходимы некоторые объекты для просмотра, а объекты, составляющие граф сцены, являются производными от <xref:System.Windows.Media.Media3D.Model3D> . В настоящее время [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] поддерживает геометрические модели с помощью <xref:System.Windows.Media.Media3D.GeometryModel3D> . <xref:System.Windows.Media.Media3D.GeometryModel3D.Geometry%2A>Свойство этой модели принимает примитив сетки.  
+ <xref:System.Windows.Media.Media3D.Model3D> является абстрактным базовым классом, представляющим универсальный трехмерный объект. Для создания трехмерной сцены необходимы некоторые объекты для просмотра, а объекты, составляющие граф сцены, являются производными от <xref:System.Windows.Media.Media3D.Model3D> . В настоящее время [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] поддерживает геометрические модели с помощью <xref:System.Windows.Media.Media3D.GeometryModel3D> . <xref:System.Windows.Media.Media3D.GeometryModel3D.Geometry%2A>Свойство этой модели принимает примитив сетки.  
   
  Начните построение модели с создания примитива, или сетки. Трехмерный примитив — это коллекция вершин, которые формируют одну трехмерную фигуру. Большинство трехмерных систем предоставляют примитивы, смоделированные на самой простой замкнутой фигуре: треугольник, определяемый тремя вершинами.  Поскольку три точки треугольника лежат в одной плоскости, можно добавлять треугольники для моделирования более сложных фигур, называемых сетками.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "85853871"
   
  Можно продолжить определение модели, указав значения для <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A> <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A> свойств и.  Для отображения поверхности модели графической системе требуются данные о том, какое направление поверхности является лицевым для любого данного треугольника. Система использует эти сведения для вычислений освещения модели: поверхности, обращенные к источнику освещения, отображаются ярче, чем поверхности, расположенные под углом к освещению. Хотя приложение [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] может определить векторы нормали по умолчанию, используя координаты позиции, можно также задавать различные векторы нормали для аппроксимации вида кривых поверхностей.  
   
- <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A>Свойство задает коллекцию объектов <xref:System.Windows.Point> , которые сообщают графической системе о том, как сопоставлять координаты, определяющие, как текстура рисуется на вершинах сетки. <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A>указываются как значения от 0 до 1 включительно.  Как и в <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A> случае со свойством, графическая система может вычислить координаты текстуры по умолчанию, но вы можете задать различные координаты текстуры для управления сопоставлением текстуры, которая включает в себя часть повторяющегося шаблона, например. Дополнительные сведения о координатах текстуры можно найти в последующих разделах или в пакете Managed Direct3D SDK.  
+ <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A>Свойство задает коллекцию объектов <xref:System.Windows.Point> , которые сообщают графической системе о том, как сопоставлять координаты, определяющие, как текстура рисуется на вершинах сетки. <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A> указываются как значения от 0 до 1 включительно.  Как и в <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A> случае со свойством, графическая система может вычислить координаты текстуры по умолчанию, но вы можете задать различные координаты текстуры для управления сопоставлением текстуры, которая включает в себя часть повторяющегося шаблона, например. Дополнительные сведения о координатах текстуры можно найти в последующих разделах или в пакете Managed Direct3D SDK.  
   
  В следующем примере показано создание одной грани модели куба в процедурном коде. Весь куб можно нарисовать как один GeometryModel3D. в этом примере грань куба выводится как отдельная модель для применения отдельных текстур в дальнейшем.  
   
@@ -87,11 +87,11 @@ ms.locfileid: "85853871"
   
  Чтобы определить характеристики поверхности модели, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] использует <xref:System.Windows.Media.Media3D.Material> абстрактный класс. Конкретные подклассы класса Material определяют некоторые характеристики внешнего вида поверхности модели, и каждый из них предоставляет свойство Brush, которому можно передать значение SolidColorBrush, TileBrush или VisualBrush.  
   
-- <xref:System.Windows.Media.Media3D.DiffuseMaterial>Указывает, что кисть будет применена к модели, как будто модель была освещена диффузией. Использование DiffuseMaterial наиболее похоже на использование кистей непосредственно в двумерных моделях; поверхности модели не отображают освещение, как будто блестящие.  
+- <xref:System.Windows.Media.Media3D.DiffuseMaterial> Указывает, что кисть будет применена к модели, как будто модель была освещена диффузией. Использование DiffuseMaterial наиболее похоже на использование кистей непосредственно в двумерных моделях; поверхности модели не отображают освещение, как будто блестящие.  
   
-- <xref:System.Windows.Media.Media3D.SpecularMaterial>Указывает, что кисть будет применена к модели, как будто поверхность модели была жесткой или блестящий, способная отражать основные характеристики. Можно задать степень, до которой текстура предложит это отражающее качество, или «тонкое», указав значение для <xref:System.Windows.Media.Media3D.SpecularMaterial.SpecularPower%2A> Свойства.  
+- <xref:System.Windows.Media.Media3D.SpecularMaterial> Указывает, что кисть будет применена к модели, как будто поверхность модели была жесткой или блестящий, способная отражать основные характеристики. Можно задать степень, до которой текстура предложит это отражающее качество, или «тонкое», указав значение для <xref:System.Windows.Media.Media3D.SpecularMaterial.SpecularPower%2A> Свойства.  
   
-- <xref:System.Windows.Media.Media3D.EmissiveMaterial>позволяет указать, что текстура будет применяться, как если бы модель была выделена относительно цвета кисти. Это не делает модель светящейся; однако это иначе влияет на затенение, чем если бы текстура была создана с помощью класса DiffuseMaterial или SpecularMaterial.  
+- <xref:System.Windows.Media.Media3D.EmissiveMaterial> позволяет указать, что текстура будет применяться, как если бы модель была выделена относительно цвета кисти. Это не делает модель светящейся; однако это иначе влияет на затенение, чем если бы текстура была создана с помощью класса DiffuseMaterial или SpecularMaterial.  
   
  Для повышения производительности <xref:System.Windows.Media.Media3D.GeometryModel3D> обратные стороны (те, которые находятся вне представления, поскольку они находятся на противоположной стороне модели от камеры) исключаются из сцены.  Чтобы указать объект, <xref:System.Windows.Media.Media3D.Material> применяемый к лицевой стороне модели, такой как плоскость, установите <xref:System.Windows.Media.Media3D.GeometryModel3D.BackMaterial%2A> свойство модели.  
   
@@ -100,9 +100,9 @@ ms.locfileid: "85853871"
  В следующих примерах кода показано, как использовать сплошной цвет и рисунок в качестве кистей для трехмерных моделей.  
   
  [!code-xaml[basic3d#Basic3DXAML3DN5](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn5)]  
-  ' [!code-xaml[3doverview#3DOverview3DN9](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/app.xaml#3doverview3dn9)]  
- ' [!code-csharp[3doverview#3DOverview3DN8](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/Window1.xaml.cs#3doverview3dn8)]
-  [!code-vb[3doverview#3DOverview3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn8)]  
+ [!code-xaml[3doverview#3DOverview3DN9](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/app.xaml#3doverview3dn9)]  
+ [!code-csharp[3doverview#3DOverview3DN8](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/Window1.xaml.cs#3doverview3dn8)]  
+ [!code-vb[3doverview#3DOverview3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn8)]  
   
 <a name="lights"></a>
 ## <a name="illuminating-the-scene"></a>Освещение сцены  
@@ -114,7 +114,7 @@ ms.locfileid: "85853871"
   
 - <xref:System.Windows.Media.Media3D.DirectionalLight>: Освещение аналогично удаленному источнику освещения.  Направленный свет имеет определенный объект <xref:System.Windows.Media.Media3D.DirectionalLight.Direction%2A> Vector3D, но не имеет указанного расположения.  
   
-- <xref:System.Windows.Media.Media3D.PointLight>: Освещение, похожее на ближайший источник освещения. Источники света PointLights занимают определенное положение и испускают свет из этого положения. Объекты на сцене освещаются в зависимости от их положения и расстояния относительно источника света. <xref:System.Windows.Media.Media3D.PointLightBase>предоставляет <xref:System.Windows.Media.Media3D.PointLightBase.Range%2A> свойство, которое определяет расстояние, за пределами которого модели не будут освещены светом. PointLight также предоставляет свойства ослабления, которые определяют, как интенсивность освещения уменьшает расстояние. Можно указать константу, линейную или квадратичную интерполяцию затухания источника света.  
+- <xref:System.Windows.Media.Media3D.PointLight>: Освещение, похожее на ближайший источник освещения. Источники света PointLights занимают определенное положение и испускают свет из этого положения. Объекты на сцене освещаются в зависимости от их положения и расстояния относительно источника света. <xref:System.Windows.Media.Media3D.PointLightBase> предоставляет <xref:System.Windows.Media.Media3D.PointLightBase.Range%2A> свойство, которое определяет расстояние, за пределами которого модели не будут освещены светом. PointLight также предоставляет свойства ослабления, которые определяют, как интенсивность освещения уменьшает расстояние. Можно указать константу, линейную или квадратичную интерполяцию затухания источника света.  
   
 - <xref:System.Windows.Media.Media3D.SpotLight>: Наследует от <xref:System.Windows.Media.Media3D.PointLight> . Источники света Spotlight освещают сцену подобно источникам света и также имеют расположение и направление. Они задают освещение в области, заданной в виде конуса, <xref:System.Windows.Media.Media3D.SpotLight.InnerConeAngle%2A> и <xref:System.Windows.Media.Media3D.SpotLight.OuterConeAngle%2A> свойства, указанные в градусах.  
   
@@ -167,7 +167,7 @@ ms.locfileid: "85853871"
   
  [!code-xaml[hostingwpfusercontrolinwf#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Controls.Viewport3D>
 - <xref:System.Windows.Media.Media3D.PerspectiveCamera>
@@ -175,6 +175,6 @@ ms.locfileid: "85853871"
 - <xref:System.Windows.Media.Media3D.Material>
 - [Общие сведения о трехмерных преобразованиях](3-d-transformations-overview.md)
 - [Достижение максимальной производительности WPF 3D](maximize-wpf-3d-performance.md)
-- [Практические руководства](3-d-graphics-how-to-topics.md)
+- [Инструкции](3-d-graphics-how-to-topics.md)
 - [Обзор фигур и базовых средств рисования в приложении WPF](shapes-and-basic-drawing-in-wpf-overview.md)
 - [Рисование с помощью объектов Image, Drawing и Visual](painting-with-images-drawings-and-visuals.md)
