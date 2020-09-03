@@ -1,37 +1,37 @@
 ### YamlMime:Landing
-title: F#по
-summary: Узнайте, как написать любое приложение с помощью F# языка программирования на платформе .NET.
+title: Документация по F#
+summary: Узнайте, как написать любое приложение на языке программирования F# на платформе .NET.
 metadata:
-  title: F#Документация — начало работы, учебники, справочные материалы.
-  description: Знакомство F# с программированием — для F#разработчиков, знакомых с разработчиками и опытными F# специалистами и .NET
+  title: Документация по F#. Начало работы, руководства, справочные материалы.
+  description: Знакомство с программированием на F# — для новичков и опытных разработчиков на F# и .NET
   ms.topic: landing-page
   author: cartermp
   ms.author: phcart
-  ms.date: 11/25/2019
-  ms.openlocfilehash: 113a99d75f77cba56639abf485bf646155f0ff36
-  ms.sourcegitcommit: 79a2d6a07ba4ed08979819666a0ee6927bbf1b01
-  ms.translationtype: MT
+  ms.date: 08/29/2020
+  ms.openlocfilehash: 7d7f9492bcd41975616ddd4d8f552aea5217b2d7
+  ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+  ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/28/2019
-  ms.locfileid: "74569501"
+  ms.lasthandoff: 09/01/2020
+  ms.locfileid: "89271858"
 landingContent:
-- title: Обучение программированиюF#
+- title: Обучение программированию на F#
   linkLists:
   - linkListType: get-started
     links:
-    - text: Что такое F#?
+    - text: Что такое F#
       url: what-is-fsharp.md
     - text: Установка F#
       url: get-started/install-fsharp.md
-    - text: Начало работы с F# Visual Studio
+    - text: Начало работы с C++ в Visual Studio
       url: get-started/get-started-visual-studio.md
     - text: Начало работы с F# в Visual Studio Code
       url: get-started/get-started-vscode.md
   - linkListType: download
     links:
-    - text: Скачивание пакет SDK для .NET Core
+    - text: Скачать пакет SDK .NET Core
       url: https://dotnet.microsoft.com/download
-- title: F#основы
+- title: Основы F#
   linkLists:
   - linkListType: overview
     links:
@@ -51,29 +51,35 @@ landingContent:
       url: style-guide/conventions.md
   - linkListType: tutorial
     links:
-    - text: Асинхронное программирование вF#
+    - text: Асинхронное программирование на F#
       url: tutorials/asynchronous-and-concurrent-programming/async.md
-- title: Новые возможности вF#
+- title: Новые возможности в F#
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Новые возможности в F# 4,7
+    - text: Новые возможности F# 4.7
       url: whats-new/fsharp-47.md
-    - text: Новые возможности в F# 4,6
+    - text: Новые возможности F# 4.6
       url: whats-new/fsharp-46.md
-    - text: Новые возможности в F# 4,5
+    - text: Новые возможности F# 4.5
       url: whats-new/fsharp-45.md
-- title: F#Справочник по языку
+- title: Справочник по языку F#
   linkLists:
   - linkListType: reference
     links:
     - text: Справочник по языку
       url: language-reference/index.md
-    - text: Справочник по ключевым словам
+    - text: Справочные сведения о ключевых словах
       url: language-reference/keyword-reference.md
     - text: Справочник по символам и операторам
       url: language-reference/symbol-and-operator-reference/index.md
     - text: Функции
       url: language-reference/functions/index.md
-    - text: F#типов
+    - text: Типы F#
       url: language-reference/fsharp-types.md
+- title: Справочные материалы по основной библиотеке F#
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Справочные материалы по API FSharp.Core
+      url: https://fsharp.github.io/fsharp-core-docs/
