@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet,contperfq1
-ms.openlocfilehash: 595e93d8d8d22478c6770ddd4f70a0214653f5b9
-ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
+ms.openlocfilehash: 45a44dcd73e1abcc8dfd75cd54da5a2310f027c4
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88187946"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89118264"
 ---
 # <a name="tutorial-create-a-net-standard-library-using-visual-studio"></a>Учебник. Создание библиотеки .NET Standard с помощью Visual Studio
 
@@ -70,7 +70,7 @@ ms.locfileid: "88187946"
 
    Метод `StartsWithUpper` реализуется как [метод расширения](../../csharp/programming-guide/classes-and-structs/extension-methods.md), чтобы вызывать его можно было так же, как любой член класса <xref:System.String>.
 
-1. В строке меню выберите **Сборка** > **Собрать решение**, чтобы убедиться, что проект компилируется без ошибок.
+1. В строке меню выберите **Сборка** > **Собрать решение** или нажмите клавиши <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>B</kbd>, чтобы убедиться, что проект компилируется без ошибок.
 
 ## <a name="add-a-console-app-to-the-solution"></a>Добавление консольного приложения в решение
 

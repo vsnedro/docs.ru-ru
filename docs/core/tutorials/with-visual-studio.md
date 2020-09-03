@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: fbe0b3491260e787c08b98b320b19408f2c897eb
-ms.sourcegitcommit: 09bad6ec0cbf18be7cd7f62e77286d305a18b607
+ms.openlocfilehash: 4cd18aca4396f902268d59867760424d65ddcf6d
+ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87795389"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88867637"
 ---
 # <a name="tutorial-create-a-net-core-console-application-using-visual-studio"></a>Учебник. Создание консольного приложения .NET Core в Visual Studio
 
@@ -96,7 +96,7 @@ End Module
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
    :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="MainMethod":::
 
-   Теперь код выдает строку "What is your name?" (Как вас зовут?) в окно консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date` (`currentDate` в Visual Basic). Наконец, оно отображает эти значения в окне консоли.
+   Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date` (`currentDate` в Visual Basic). Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
 
    `\n` (`vbCrLf` в Visual Basic) представляет собой символ новой строки.
 
@@ -115,4 +115,4 @@ End Module
 В этом руководстве показано, как создать консольное приложение .NET Core. В следующем учебнике описывается отладка приложения.
 
 > [!div class="nextstepaction"]
-> [Отладка консольного приложения .NET Core в Visual Studio](debugging-with-visual-studio.md)
+> [Отладка консольного приложения .NET Core с помощью Visual Studio](debugging-with-visual-studio.md)

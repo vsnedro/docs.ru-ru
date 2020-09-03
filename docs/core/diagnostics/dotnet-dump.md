@@ -2,21 +2,21 @@
 title: dotnet-dump (.NET Core)
 description: Установка и использование программы командной строки dotnet-dump.
 ms.date: 10/14/2019
-ms.openlocfilehash: c78ddb6447021f61f2452c075733b7d33e051ca0
-ms.sourcegitcommit: 2b3b2d684259463ddfc76ad680e5e09fdc1984d2
+ms.openlocfilehash: 5489011538a4a11d60b333f0230a718c88722c97
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80888206"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89140936"
 ---
-# <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Программа для сбора и анализа дампов (`dotnet-dump`)
+# <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Программа для сбора и анализа дампов (dotnet-dump)
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 3.0 и более поздних версий
 
 > [!NOTE]
 > `dotnet-dump` не поддерживается для macOS.
 
-## <a name="installing-dotnet-dump"></a>Установка `dotnet-dump`
+## <a name="install-dotnet-dump"></a>Установка dotnet-dump
 
 Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-dump) `dotnet-dump`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
 
@@ -223,3 +223,8 @@ HResult: 80131604
 > Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies' exception. (Необработанное исключение: System.DllNotFoundException: Не удалось загрузить общую библиотеку libdl.so или одну из ее зависимостей.)
 
 Чтобы обойти эту проблему, установите пакет libc6-dev.
+
+## <a name="see-also"></a>См. также раздел
+
+- [Сбор и анализ блога дампов памяти](https://devblogs.microsoft.com/dotnet/collecting-and-analyzing-memory-dumps/)
+- [Средство анализа кучи (dotnet-gcdump)](dotnet-gcdump.md)

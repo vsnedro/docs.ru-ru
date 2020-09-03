@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 44646a307d230db395b55b9dec5acfd168605940
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: e0033d52ab54259ce5e4ccf2a25bf4e3d4f244de
+ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84701288"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88867559"
 ---
 # <a name="tutorial-publish-a-net-core-console-application-using-visual-studio"></a>Учебник. Публикация консольного приложения .NET Core с помощью Visual Studio
 
@@ -19,13 +19,13 @@ ms.locfileid: "84701288"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом руководстве используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET Core в Visual Studio 2019](with-visual-studio.md).
+- В этом руководстве используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET Core в Visual Studio](with-visual-studio.md).
 
 ## <a name="publish-the-app"></a>Публикация приложения
 
 1. Запустите Visual Studio.
 
-1. Откройте проект *HelloWorld*, созданный по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio](with-visual-studio.md).
+1. Откройте проект *HelloWorld*, созданный по инструкциям из статьи [Создание консольного приложения в Visual Studio](with-visual-studio.md).
 
 1. Убедитесь, что в Visual Studio используется конфигурация сборки Release. При необходимости измените конфигурацию сборки на панели инструментов, указав конфигурацию **Выпуск** вместо конфигурации **Отладка**.
 
@@ -87,7 +87,7 @@ ms.locfileid: "84701288"
 
 1. Откройте командную строку и перейдите к папке *publish*. Для этого введите `cd` и вставьте полный путь. Пример:
 
-   ```
+   ```console
    cd C:\Projects\HelloWorld\bin\Release\netcoreapp3.1\publish\
    ```
 
@@ -112,4 +112,4 @@ ms.locfileid: "84701288"
 В этом руководстве вы опубликовали консольное приложение. Далее вы создадите библиотеку классов.
 
 > [!div class="nextstepaction"]
-> [Создание библиотеки .NET Standard в Visual Studio](library-with-visual-studio.md)
+> [Создание библиотеки .NET Standard с помощью Visual Studio](library-with-visual-studio.md)

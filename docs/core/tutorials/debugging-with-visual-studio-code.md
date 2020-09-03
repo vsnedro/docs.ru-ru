@@ -2,12 +2,12 @@
 title: Отладка консольного приложения .NET Core с помощью Visual Studio Code
 description: Узнайте, как выполнить отладку консольного приложения .NET Core с помощью Visual Studio Code.
 ms.date: 05/26/2020
-ms.openlocfilehash: 40e9b114df1bd12fb05bfb773781d6009d087a06
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: 8e84747256551b633a5bf74b72723ba8d2840d52
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84702131"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89118303"
 ---
 # <a name="tutorial-debug-a-net-core-console-application-using-visual-studio-code"></a>Учебник. Отладка консольного приложения .NET Core с помощью Visual Studio Code
 
@@ -15,7 +15,7 @@ ms.locfileid: "84702131"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом руководстве используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
+- В этом руководстве используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="use-debug-build-configuration"></a>Использование конфигурации отладочной сборки
 
@@ -27,7 +27,7 @@ ms.locfileid: "84702131"
 
 1. Запустите Visual Studio Code.
 
-1. Откройте папку проекта, созданную по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
+1. Откройте папку проекта, созданную по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="set-a-breakpoint"></a>Установка точки останова
 
@@ -35,7 +35,7 @@ ms.locfileid: "84702131"
 
 1. Откройте файл *Program.cs*.
 
-1. Установите *точку останова* в строке, где отображается имя, дата и время, щелкнув в левом поле окна кода. Левое поле находится слева от номеров строк. Или нажмите клавишу <kbd>F9</kbd> либо выберите **Запуск** > **Перейти к следующей точке останова** из меню при выбранной строке кода.
+1. Установите *точку останова* в строке, где отображается имя, дата и время, щелкнув в левом поле окна кода. Левое поле находится слева от номеров строк. Или нажмите клавишу <kbd>F9</kbd> либо выберите в меню пункт **Запуск** > **Перейти к следующей точке останова** при выбранной строке кода.
 
    Красная точка в левом поле обозначает строку с точкой останова Visual Studio Code.
 
@@ -51,13 +51,13 @@ ms.locfileid: "84702131"
 
    От:
 
-   ```
+   ```json
    "console": "internalConsole",
    ```
 
    В:
 
-   ```
+   ```json
    "console": "integratedTerminal",
    ```
 
@@ -69,7 +69,7 @@ ms.locfileid: "84702131"
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Открытие вкладки Отладка в Visual Studio Code":::
 
-1. Щелкните зеленую стрелку в верхней части панели рядом с элементом **.NET Core Launch (console)** (Запуск .NET Core (консоль)). Еще один способ запуска программы в режиме отладки — выбрать в меню параметры **Запуск** > **Начать отладку**.
+1. Щелкните зеленую стрелку в верхней части панели рядом с элементом **.NET Core Launch (console)** (Запуск .NET Core (консоль)). Еще один способ запуска программы в режиме отладки — нажать клавишу <kbd>F5</kbd> или выбрать в меню пункт **Запуск** > **Начать отладку**.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Запуск отладки":::
 
@@ -133,7 +133,7 @@ ms.locfileid: "84702131"
 
 1. Когда на вкладке **Терминал** появится предложение ввести имя, нажмите клавишу <kbd>ВВОД</kbd>.
 
-   Поскольку указанное вами условие соблюдается (`name` имеет значение `null` или <xref:System.String.Empty?displayProperty=nameWithType>), выполнение программы будет остановлено при достижении точки останова, то есть перед выполнением метода `Console.WriteLine`.
+   Так как указанное вами условие соблюдается (`name` имеет значение `null` или <xref:System.String.Empty?displayProperty=nameWithType>), выполнение программы будет остановлено при достижении точки останова, то есть перед выполнением метода `Console.WriteLine`.
 
    В окне **Переменные** указывается, что значение переменной `name` `""`или <xref:System.String.Empty?displayProperty=nameWithType>.
 
@@ -224,4 +224,4 @@ dotnet run --configuration Release
 В этом учебнике вы использовали средства отладки Visual Studio Code. В следующем руководстве вы опубликуете развертываемую версию приложения.
 
 > [!div class="nextstepaction"]
-> [Публикация консольного приложения .NET Core в Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Публикация консольного приложения .NET Core с помощью Visual Studio Code](publishing-with-visual-studio-code.md)

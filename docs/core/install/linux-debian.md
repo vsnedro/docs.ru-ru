@@ -4,11 +4,12 @@ description: Здесь приводятся различные способы �
 author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
-ms.openlocfilehash: 68a3e848b3d80806e875dfb2fb7e2cbf223f8ad5
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: d4a54a8a5354a1430141d2c06d4aa90dbafc3edf
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619498"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89134943"
 ---
 # <a name="install-net-core-sdk-or-net-core-runtime-on-debian"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в Debian
 
@@ -48,7 +49,7 @@ ms.locfileid: "85619498"
 
 ```bash
 wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-dpkg -i packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -98,7 +99,7 @@ sudo apt-get upgrade
 
 В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании APT для установки .NET Core.
 
-### <a name="unable-to-locate"></a>Ошибка обнаружения
+### <a name="unable-to-locate--some-packages-could-not-be-installed"></a>Ошибка обнаружения \\. Не удалось установить некоторые пакеты
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 

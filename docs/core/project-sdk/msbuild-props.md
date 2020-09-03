@@ -3,12 +3,13 @@ title: Свойства MSBuild для Microsoft.NET.Sdk
 description: Справочник по свойствам и элементам MSBuild, распознаваемым пакетом SDK для .NET Core.
 ms.date: 02/14/2020
 ms.topic: reference
-ms.openlocfilehash: 7980369b87d606d3876fe043e929a65da1d0d92b
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.custom: updateeachrelease
+ms.openlocfilehash: 39cbd18121d2b8659b2f5270f39624798f4ebbdc
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916250"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88810528"
 ---
 # <a name="msbuild-reference-for-net-core-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET Core
 
@@ -165,6 +166,50 @@ ms.locfileid: "87916250"
 ```
 
 Дополнительные сведения см. в статье [Управление версиями языка C#](../../csharp/language-reference/configure-language-version.md#override-a-default).
+
+## <a name="code-analysis-properties"></a>Свойства анализа кода
+
+### <a name="analysislevel"></a>AnalysisLevel
+
+Свойство `AnalysisLevel` позволяет указать уровень анализа кода. Например, если требуется доступ к анализаторам кода предварительной версии, задайте для параметра `AnalysisLevel` значение `preview`. Значение по умолчанию — `latest`.
+
+```xml
+<PropertyGroup>
+  <AnalysisLevel>preview</AnalysisLevel>
+</PropertyGroup>
+```
+
+В следующей таблице приведены доступные параметры.
+
+| Значение | Значение |
+|-|-|
+| `latest` | Используются новейшие анализаторы кода, которые были выпущены. Это значение по умолчанию. |
+| `preview` | Используются новейшие анализаторы кода, даже если они находятся на этапе предварительной версии. |
+| `5.0` | Используется набор правил, включенных для выпуска .NET 5.0, даже если доступны новые правила. |
+| `5` | Используется набор правил, включенных для выпуска .NET 5.0, даже если доступны новые правила. |
+
+### <a name="codeanalysistreatwarningsaserrors"></a>CodeAnalysisTreatWarningsAsErrors
+
+Свойство `CodeAnalysisTreatWarningsAsErrors` позволяет настроить, следует ли обрабатывать предупреждения анализа кода как предупреждения и прекращать сборку. Если при построении проектов используется флаг `-warnaserror`, предупреждения [анализа кода .NET](../../fundamentals/productivity/code-analysis.md) также обрабатываются как ошибки. Если вы хотите, чтобы предупреждения компилятора обрабатывались как ошибки, можно задать для свойства MSBuild `CodeAnalysisTreatWarningsAsErrors` значение `false` в файле проекта.
+
+```xml
+<PropertyGroup>
+  <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+</PropertyGroup>
+```
+
+### <a name="enablenetanalyzers"></a>EnableNETAnalyzers
+
+Для проектов, предназначенных для .NET 5.0 или более поздней версии, по умолчанию включен [анализ кода .NET](../../fundamentals/productivity/code-analysis.md). Вы можете включить анализ кода .NET для проектов, предназначенных для более ранних версий .NET, установив для свойства `EnableNETAnalyzers` значение true. Чтобы отключить анализ кода в любом проекте, присвойте этому свойству значение `false`.
+
+```xml
+<PropertyGroup>
+  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+</PropertyGroup>
+```
+
+> [!TIP]
+> Другой способ включить анализ кода .NET для проектов, предназначенных для версий .NET до .NET 5.0, — задать для свойства [AnalysisLevel](#analysislevel) значение `latest`.
 
 ## <a name="run-time-configuration-properties"></a>Свойства конфигурации среды выполнения
 

@@ -1,4 +1,5 @@
 ---
+description: Сведения о встроенном логическом типе в C#
 title: Тип bool. Справочник по C#
 ms.date: 11/26/2019
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - bool data type [C#]
 - Boolean [C#]
 ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2
-ms.openlocfilehash: 4623dc7d6c8c6c437c78aee45f0eeee8a92e3200
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: 23e5bc34f1751b0a706c20dae340920239fcda9d
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87854884"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89126467"
 ---
 # <a name="bool-c-reference"></a>bool (справочник по C#)
 

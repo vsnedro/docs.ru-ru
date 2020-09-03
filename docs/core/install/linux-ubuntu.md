@@ -4,12 +4,12 @@ description: Здесь приводятся различные способы �
 author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
-ms.openlocfilehash: c590bd89b718a5cd31dae9f83049eac910cb4049
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 9694dac719024264edee849044f048970b63b7b7
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86863895"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89132951"
 ---
 # <a name="install-net-core-sdk-or-net-core-runtime-on-ubuntu"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в Ubuntu
 
@@ -173,7 +173,7 @@ sudo apt-get upgrade
 
 В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании APT для установки .NET Core.
 
-### <a name="unable-to-locate"></a>Ошибка обнаружения
+### <a name="unable-to-locate--some-packages-could-not-be-installed"></a>Ошибка обнаружения \\. Не удалось установить некоторые пакеты
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 

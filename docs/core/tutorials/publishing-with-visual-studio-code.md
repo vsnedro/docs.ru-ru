@@ -2,12 +2,12 @@
 title: Публикация консольного приложения .NET Core с помощью Visual Studio Code
 description: При публикации создается набор файлов, которые необходимы для запуска приложения .NET Core.
 ms.date: 07/04/2020
-ms.openlocfilehash: 8fd9975e8a88704b9dea45b40127c8dc03f7d09f
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: a84e66126806e2ab45c14527df1b931fa9980468
+ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051887"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88867650"
 ---
 # <a name="tutorial-publish-a-net-core-console-application-using-visual-studio-code"></a>Учебник. Публикация консольного приложения .NET Core с помощью Visual Studio Code
 
@@ -17,13 +17,13 @@ ms.locfileid: "86051887"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом руководстве используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
+- В этом руководстве используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="publish-the-app"></a>Публикация приложения
 
 1. Запустите Visual Studio Code.
 
-1. Откройте папку проекта *HelloWorld*, созданного в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
+1. Откройте папку проекта *HelloWorld*, созданного в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
 
 1. В главном меню выберите **Вид** > **Терминал**.
 
@@ -39,7 +39,7 @@ ms.locfileid: "86051887"
 
    Результат команды должен быть примерно таким:
 
-   ```
+   ```output
    Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
    Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -112,4 +112,4 @@ ms.locfileid: "86051887"
 В этом руководстве вы опубликовали консольное приложение. Далее вы создадите библиотеку классов.
 
 > [!div class="nextstepaction"]
-> [Создание библиотеки .NET Standard в Visual Studio Code](library-with-visual-studio-code.md)
+> [Создание библиотеки .NET Standard с помощью Visual Studio Code](library-with-visual-studio-code.md)

@@ -2,12 +2,12 @@
 title: Создание консольного приложения .NET Core с помощью Visual Studio для Mac
 description: Узнайте, как создать консольное приложение .NET Core с помощью Visual Studio для Mac.
 ms.date: 06/02/2020
-ms.openlocfilehash: 9cab838eaab2c59d8a0270267514f57acb7c60fb
-ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
+ms.openlocfilehash: 8ffcb05ad85f53180ca1aaefbd2dfc7496946142
+ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84811667"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88867663"
 ---
 # <a name="tutorial-create-a-net-core-console-application-using-visual-studio-for-mac"></a>Учебник. Создание консольного приложения .NET Core с помощью Visual Studio для Mac
 
@@ -86,7 +86,7 @@ namespace HelloWorld
 
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
 
-   Теперь код выдает строку "What is your name?" (Как вас зовут?) в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Наконец, оно отображает эти значения в окне консоли.
+   Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date`. Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
 
    `\n` — это символ новой строки.
 
@@ -105,4 +105,4 @@ namespace HelloWorld
 В этом руководстве показано, как создать консольное приложение .NET Core. В следующем учебнике описывается отладка приложения.
 
 > [!div class="nextstepaction"]
-> [Отладка консольного приложения .NET Core в Visual Studio](debugging-with-visual-studio-mac.md)
+> [Отладка консольного приложения .NET Core с помощью Visual Studio для Mac](debugging-with-visual-studio-mac.md)

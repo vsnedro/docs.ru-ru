@@ -1,27 +1,27 @@
 ---
 title: Реализация метода DisposeAsync
-description: ''
+description: Узнайте, как реализовать методы DisposeAsync и DisposeAsyncCore для выполнения асинхронной очистки ресурсов.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/02/2020
+ms.date: 08/25/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 helpviewer_keywords:
 - DisposeAsync method
 - garbage collection, DisposeAsync method
-ms.openlocfilehash: 0f6370d37703509681dd9fb818af8e7e2f3a1085
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 268cea7584040ad92e2da75e5e03112480cda93c
+ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608085"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89053182"
 ---
 # <a name="implement-a-disposeasync-method"></a>Реализация метода DisposeAsync
 
 Интерфейс <xref:System.IAsyncDisposable?displayProperty=nameWithType> впервые появился в составе C# 8.0. Метод <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> реализуется, когда нужно выполнить очистку ресурса. Для этих целей также [реализуется метод Dispose](implementing-dispose.md). Но одно из ключевых различий заключается в том, что эта реализация позволяет выполнять асинхронные операции очистки. Метод <xref:System.IAsyncDisposable.DisposeAsync> возвращает значение <xref:System.Threading.Tasks.ValueTask>, представляющее асинхронную операцию удаления.
 
-Обычно при реализации интерфейса <xref:System.IAsyncDisposable> классы также будут реализовывать интерфейс <xref:System.IDisposable>. Хороший шаблон реализации интерфейса <xref:System.IAsyncDisposable> должен быть подготовлен либо для синхронного, либо для асинхронного удаления. Все рекомендации по реализации шаблона освобождения относятся к реализации асинхронной операции. В этой статье предполагается, что вы уже знаете, как [реализовать метод Dispose](implementing-dispose.md).
+Обычно при реализации интерфейса <xref:System.IAsyncDisposable> такие классы будут реализовывать интерфейс <xref:System.IDisposable>. Хороший шаблон реализации интерфейса <xref:System.IAsyncDisposable> должен быть подготовлен либо для синхронного, либо для асинхронного удаления. Все рекомендации по реализации шаблона освобождения относятся и к реализации асинхронной операции. В этой статье предполагается, что вы уже знаете, как [реализовать метод Dispose](implementing-dispose.md).
 
 ## <a name="disposeasync-and-disposeasynccore"></a>DisposeAsync() и DisposeAsyncCore()
 
@@ -30,13 +30,11 @@ ms.locfileid: "88608085"
 - Реализация метода <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> с атрибутом `public` без параметров.
 - Метод `protected virtual ValueTask DisposeAsyncCore()` со следующей сигнатурой:
 
-```csharp
-protected virtual ValueTask DisposeAsyncCore()
-{
-}
-```
-
-Метод `DisposeAsyncCore()` имеет атрибут `virtual`, чтобы производные классы могли определять дополнительную очистку в своих переопределениях.
+  ```csharp
+  protected virtual ValueTask DisposeAsyncCore()
+  {
+  }
+  ```
 
 ### <a name="the-disposeasync-method"></a>Метод DisposeAsync()
 
@@ -57,6 +55,13 @@ public async ValueTask DisposeAsync()
 
 > [!NOTE]
 > Основным отличием шаблона асинхронного освобождения от шаблона освобождения является то, что когда из метода <xref:System.IAsyncDisposable.DisposeAsync> выполняется вызов метода перегрузки `Dispose(bool)`, в качестве аргумента передается значение `false`. В то же время при реализации метода <xref:System.IDisposable.Dispose?displayProperty=nameWithType> вместо этого передается значение `true`. Это помогает обеспечить функциональную эквивалентность с шаблоном синхронного освобождения, а также гарантирует, что пути кода метода завершения по-прежнему вызываются. Другими словами, метод `DisposeAsyncCore()` будет освобождать управляемые ресурсы асинхронно, поэтому вы не захотите, чтобы они также освобождались и синхронно. Следовательно, вызывайте `Dispose(false)` вместо `Dispose(true)`.
+
+### <a name="the-disposeasynccore-method"></a>Метод DisposeAsyncCore()
+
+Метод `DisposeAsyncCore()` предназначен для выполнения асинхронной очистки управляемых ресурсов или для каскадных вызовов `DisposeAsync()`. Он инкапсулирует общие асинхронные операции очистки, когда подкласс наследует базовый класс, который является реализацией <xref:System.IAsyncDisposable>. Метод `DisposeAsyncCore()` имеет атрибут `virtual`, чтобы производные классы могли определять дополнительную очистку в своих переопределениях.
+
+> [!TIP]
+> Если реализация <xref:System.IAsyncDisposable> — `sealed`, то метод `DisposeAsyncCore()` не требуется, а асинхронная очистка может выполняться непосредственно в методе <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>.
 
 ## <a name="implement-the-async-dispose-pattern"></a>Реализация шаблона асинхронного освобождения
 

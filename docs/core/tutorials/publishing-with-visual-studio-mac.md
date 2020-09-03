@@ -2,12 +2,12 @@
 title: Публикация консольного приложения .NET Core с помощью Visual Studio для Mac
 description: При публикации создается набор файлов, которые необходимы для запуска приложения .NET Core.
 ms.date: 06/08/2020
-ms.openlocfilehash: 67762481d3a56b8473e643f71b8df909b6e54fc6
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: ec6b867f145ffdea491187de3745149f2cebd8dd
+ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84713355"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88867546"
 ---
 # <a name="tutorial-publish-a-net-core-console-application-using-visual-studio-for-mac"></a>Учебник. Публикация консольного приложения .NET Core с помощью Visual Studio для Mac
 
@@ -15,13 +15,13 @@ ms.locfileid: "84713355"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом учебнике используется консольное приложение, созданное по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](with-visual-studio-mac.md).
+- В этом учебнике используется консольное приложение, созданное по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](with-visual-studio-mac.md).
 
 ## <a name="publish-the-app"></a>Публикация приложения
 
 1. Запустите Visual Studio для Mac.
 
-1. Откройте проект HelloWorld, созданный по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](with-visual-studio-mac.md).
+1. Откройте проект HelloWorld, созданный по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio для Mac](with-visual-studio-mac.md).
 
 1. Убедитесь, что в Visual Studio настроен режим сборки для версии выпуска. При необходимости измените конфигурацию сборки на панели инструментов, указав конфигурацию **Выпуск** вместо конфигурации **Отладка**.
 
@@ -69,7 +69,7 @@ ms.locfileid: "84713355"
 
 1. Откройте терминал и перейдите в папку *publish*. Для этого введите `cd` и вставьте скопированный ранее путь. Пример:
 
-   ```
+   ```console
    cd ~/Projects/HelloWorld/HelloWorld/bin/Release/netcoreapp3.1/publish/
    ```
 
@@ -88,4 +88,4 @@ ms.locfileid: "84713355"
 В этом руководстве вы опубликовали консольное приложение. Далее вы создадите библиотеку классов.
 
 > [!div class="nextstepaction"]
-> [Создание библиотеки .NET Standard в Visual Studio для Mac](library-with-visual-studio-mac.md)
+> [Создание библиотеки .NET Standard с помощью Visual Studio для Mac](library-with-visual-studio-mac.md)

@@ -1,4 +1,5 @@
 ---
+description: -doc (параметры компилятора C#)
 title: -doc (параметры компилятора C#)
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - -doc compiler option [C#]
 - /doc compiler option [C#]
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-ms.openlocfilehash: 01ea71f3de9e30abe25184e38a59f3707b54bd5a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 366bad1029904b3571be0a76d827ff0213d776bb
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73422975"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89125752"
 ---
 # <a name="-doc-c-compiler-options"></a>-doc (параметры компилятора C#)
 Параметр **-doc** позволяет поместить комментарии документации в XML-файл.  
@@ -58,7 +59,7 @@ ms.locfileid: "73422975"
   
 3. Измените свойство **XML-файл документации**.  
   
- Сведения об установке этого параметра компилятора программными средствами см. в разделе <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
+ Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
   
 ## <a name="see-also"></a>См. также раздел
 

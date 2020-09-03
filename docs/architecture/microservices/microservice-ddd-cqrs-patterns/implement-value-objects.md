@@ -1,13 +1,13 @@
 ---
 title: Реализация объектов значений
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Знакомство с возможностями и параметрами для реализации объектов значений с использованием новых функций Entity Framework.
-ms.date: 01/30/2020
-ms.openlocfilehash: 4a8a92a8dabcf09654ecd0e5dea2a7df25d7abf7
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.date: 08/21/2020
+ms.openlocfilehash: 02eed7baaa364c62aa2df599f1d8b0e700dd215f
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805733"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88811123"
 ---
 # <a name="implement-value-objects"></a>Реализация объектов значений
 
@@ -37,7 +37,7 @@ ms.locfileid: "80805733"
 
 ## <a name="value-object-implementation-in-c"></a>Реализация объекта значения в C\#
 
-С точки зрения реализации можно создать базовый класс объекта значения, имеющий основные служебные методы, такие как сравнение, основанное на сравнении всех атрибутов (поскольку объект значения не должен задаваться удостоверением) и других основных характеристик. Следующий пример показывает создание базового класса объекта значения, используемого в микрослужбе заказов из eShopOnContainers.
+С точки зрения реализации можно создать базовый класс объекта значения, имеющий основные служебные методы, такие как сравнение, основанное на сравнении всех атрибутов (поскольку объект значения не должен задаваться удостоверением) и других основных характеристик. Следующий пример показывает создание базового класса объекта значения, используемого в микрослужбе заказов из eShopOnContainers.
 
 ```csharp
 public abstract class ValueObject
@@ -56,7 +56,7 @@ public abstract class ValueObject
         return !(EqualOperator(left, right));
     }
 
-    protected abstract IEnumerable<object> GetAtomicValues();
+    protected abstract IEnumerable<object> GetEqualityComponents();
 
     public override bool Equals(object obj)
     {
@@ -65,31 +65,16 @@ public abstract class ValueObject
             return false;
         }
 
-        ValueObject other = (ValueObject)obj;
-        IEnumerator<object> thisValues = GetAtomicValues().GetEnumerator();
-        IEnumerator<object> otherValues = other.GetAtomicValues().GetEnumerator();
-        while (thisValues.MoveNext() && otherValues.MoveNext())
-        {
-            if (ReferenceEquals(thisValues.Current, null) ^
-                ReferenceEquals(otherValues.Current, null))
-            {
-                return false;
-            }
+        var other = (ValueObject)obj;
 
-            if (thisValues.Current != null &&
-                !thisValues.Current.Equals(otherValues.Current))
-            {
-                return false;
-            }
-        }
-        return !thisValues.MoveNext() && !otherValues.MoveNext();
+        return this.GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
     }
 
     public override int GetHashCode()
     {
-        return GetAtomicValues()
-         .Select(x => x != null ? x.GetHashCode() : 0)
-         .Aggregate((x, y) => x ^ y);
+        return GetEqualityComponents()
+            .Select(x => x != null ? x.GetHashCode() : 0)
+            .Aggregate((x, y) => x ^ y);
     }
     // Other utility methods
 }
@@ -106,7 +91,7 @@ public class Address : ValueObject
     public String Country { get; private set; }
     public String ZipCode { get; private set; }
 
-    private Address() { }
+    public Address() { }
 
     public Address(string street, string city, string state, string country, string zipcode)
     {
@@ -117,7 +102,7 @@ public class Address : ValueObject
         ZipCode = zipcode;
     }
 
-    protected override IEnumerable<object> GetAtomicValues()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         // Using a yield return statement to return each element one at a time
         yield return Street;
@@ -133,7 +118,7 @@ public class Address : ValueObject
 
 Отсутствие поля ИД в классе, используемом Entity Framework (EF), было недопустимым до выпуска EF Core 2.0. Эта возможность помогает реализовывать более эффективные объекты значений без ИД. Именно это пояснение используется в следующем разделе.
 
-Можно возразить, что объекты значений, являясь неизменяемыми, должны быть доступны только для чтения (например, свойства, отвечающие только за получение), и это действительно так. Однако объекты значений обычно сериализируются и десериализируются для прохождения очередей сообщений, а наличие доступа только для чтения не позволяет десериализатору назначать значения, поэтому мы просто оставляем их как `private set`, доступный только для чтения, чего хватает для практического применения.
+Можно возразить, что объекты значений, являясь неизменяемыми, должны быть доступны только для чтения (например, свойства, отвечающие только за получение), и это действительно так. Однако объекты значений обычно сериализируются и десериализируются для прохождения очередей сообщений, а наличие доступа только для чтения не позволяет десериализатору назначать значения, поэтому просто оставляем их как `private set`, доступный только для чтения, чего хватает для практического применения.
 
 ## <a name="how-to-persist-value-objects-in-the-database-with-ef-core-20-and-later"></a>Хранение объектов значений в базе данных в EF Core 2.0 и более поздних версий
 
@@ -180,7 +165,7 @@ void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
 
 - В случае с коллекциями принадлежащих типов — независимый компонент (поддерживается в EF Core 2.2 и более поздних версиях).
 
-Например, в модели домена Ordering в eShopOnContainers объект значения Address, являющийся частью сущности Order, реализован как принадлежащий тип сущности в рамках сущности-владельца, которой является сущность Order. Адрес — это тип, не имеющий определенного в модели домена свойства-удостоверения. Он используется как свойство сущности Order для указания адреса доставки конкретного заказа.
+Например, в модели домена Ordering в eShopOnContainers объект значения Address, являющийся частью сущности Order, реализован как принадлежащий тип сущности в рамках сущности-владельца, которой является сущность Order. `Address` — это тип, не имеющий определенного в модели домена свойства-удостоверения. Он используется как свойство сущности Order для указания адреса доставки конкретного заказа.
 
 По соглашению для принадлежащего типа создается теневой первичный ключ, и этот тип сопоставляется с той же таблицей, что и владелец, с помощью разбиения таблицы. Это позволяет использовать принадлежащие типы аналогично сложным типам в EF6 в традиционном .NET Framework.
 
@@ -295,7 +280,7 @@ public class Address
 
 - Нельзя вызвать `ModelBuilder.Entity<T>()` для собственных типов (в настоящее время намеренно).
 
-- Не поддерживаются необязательные (т. е. допускающие значение NULL) принадлежащие типы, которые сопоставляются с владельцем в одной таблице (т. е. с помощью разделения таблицы). Это обусловлено тем, что сопоставление выполняется для каждого свойства, и у нас нет отдельной граничной метки для комплексного значения Null в целом.
+- Не поддерживаются необязательные (т. е. допускающие значение NULL) принадлежащие типы, которые сопоставляются с владельцем в одной таблице (т. е. с помощью разделения таблицы). Это обусловлено тем, что сопоставление выполняется для каждого свойства и нет отдельной граничной метки для комплексного значения Null в целом.
 
 - Не поддерживается наследование сопоставления для принадлежащих типов, но мы можем сопоставить два конечных типа одной иерархии наследования как два различных принадлежащих типа. EF Core не будет учитывать тот факт, что они являются частью одной иерархии.
 

@@ -1,4 +1,5 @@
 ---
+description: Сведения о типах значений, их видах и встроенных типах в C#
 title: Справочник по C#. Типы значений
 ms.date: 01/22/2020
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - types [C#], value types
 - C# language, value types
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
-ms.openlocfilehash: 0a05b2b0f3f2a8377fdba6144b8aeb12bdee1086
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 7826e71fee235d32655ccfbc9060c3bbb48d76c5
+ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86172955"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89134774"
 ---
 # <a name="value-types-c-reference"></a>Типы значений (справочник по C#)
 
@@ -66,7 +67,7 @@ C# предоставляет следующие встроенные типы �
 - [Простые типы](~/_csharplang/spec/types.md#simple-types)
 - [Переменные](~/_csharplang/spec/variables.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [справочник по C#](../index.md)
 - <xref:System.ValueType?displayProperty=nameWithType>

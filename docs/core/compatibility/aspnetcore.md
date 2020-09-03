@@ -2,21 +2,27 @@
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
 description: В этой статье приведен список критических изменений в ASP.NET Core.
-ms.date: 07/17/2020
+ms.date: 08/25/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 1506e0aa27778d44497252231028689259f48896
-ms.sourcegitcommit: ef86c24c418439b8bb5e3e7d64bbdbe5e11c3e9c
+ms.openlocfilehash: 443494291f4ec58aecd7c8d8ed42cb4086e64095
+ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88720245"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88957734"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
 ASP.NET Core предоставляет функции разработки веб-приложений, используемые .NET Core.
 
-На этой странице описаны следующие критические изменения:
+Выберите одну из следующих ссылок для критических изменений в определенной версии.
+
+* [ASP.NET Core 5.0](#aspnet-core-50)
+* [ASP.NET Core 3.1](#aspnet-core-31)
+* [ASP.NET Core 3.0](#aspnet-core-30)
+
+На этой странице описаны следующие критические изменения в ASP.NET Core версий 3.0, 3.1 и 5.0.
 
 - [Удалены устаревшие API в областях борьбы с фальсификацией, CORS, диагностики, MVC и маршрутизации](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
 - [Проверка подлинности. Использование Google + прекращено](#authentication-google-deprecated-and-replaced)
@@ -69,11 +75,13 @@ ASP.NET Core предоставляет функции разработки ве
 - [Локализация. Из ПО промежуточного слоя локализации запроса удален устаревший конструктор](#localization-obsolete-constructor-removed-in-request-localization-middleware)
 - [Локализация. Удален класс ResourceManagerWithCultureStringLocalizer и элемент интерфейса WithCulture](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Ведение журнала. Класс DebugLogger стал внутренним](#logging-debuglogger-class-made-internal)
+- [ПО промежуточного слоя. Страница ошибок базы данных помечена как устаревшая](#middleware-database-error-page-marked-as-obsolete)
 - [MVC. Удален асинхронный суффикс действия контроллера](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC. JsonResult перемещен в Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
 - [MVC. Использование средства предварительной компиляции прекращено](#mvc-precompilation-tool-deprecated)
 - [MVC. Типы теперь стали внутренними](#mvc-pubternal-types-changed-to-internal)
 - [MVC. Удалена оболочка совместимости веб-интерфейса API](#mvc-web-api-compatibility-shim-removed)
+- [Razor. Удален API RazorTemplateEngine](#razor-razortemplateengine-api-removed)
 - [Razor. Компиляция среды выполнения перемещена в пакет](#razor-runtime-compilation-moved-to-a-package)
 - [Безопасность. Удалена кодировка имен файлов cookie](#security-cookie-name-encoding-removed)
 - [Безопасность. Обновлены версии пакета NuGet IdentityModel](#security-identitymodel-nuget-package-versions-updated)
@@ -159,6 +167,10 @@ ASP.NET Core предоставляет функции разработки ве
 ***
 
 [!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
+
+***
+
+[!INCLUDE[Middleware: Database error page marked as obsolete](~/includes/core-changes/aspnetcore/5.0/middleware-database-error-page-obsolete.md)]
 
 ***
 
@@ -343,6 +355,10 @@ ASP.NET Core предоставляет функции разработки ве
 ***
 
 [!INCLUDE[MVC: Web API compatibility shim removed](~/includes/core-changes/aspnetcore/3.0/mvc-webapi-compat-shim-removed.md)]
+
+***
+
+[!INCLUDE[Razor: RazorTemplatEengine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
 
 ***
 

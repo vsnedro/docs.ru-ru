@@ -3,12 +3,12 @@ title: Общие сведения о проверке подлинности в
 description: Описание различных способов проверки подлинности с помощью пакета Azure SDK для .NET.
 ms.date: 06/19/2020
 ms.custom: azure-sdk-dotnet
-ms.openlocfilehash: e588499a789fc5e7da7eb51009f97090ca75e562
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: bc2fce919d88a528f21df9f561cbe33e1119762a
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916605"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88811383"
 ---
 # <a name="authenticate-with-the-azure-sdk-for-net"></a>Проверка подлинности с помощью пакета Azure SDK для .NET
 
