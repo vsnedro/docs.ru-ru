@@ -1,225 +1,90 @@
 ---
 title: Отмена асинхронных задач после определенного периода времени (C#)
-description: В этом примере используйте метод CancellationTokenSource.CancelAfter в C#, чтобы запланировать отмену всех связанных задач, не завершенных в течение установленного времени.
-ms.date: 07/20/2015
+description: Узнайте, как запланировать отмену всех связанных задач, которые не были завершены в течение определенного периода времени.
+ms.date: 08/19/2020
+ms.topic: tutorial
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
-ms.openlocfilehash: f32af1d893c60ac17648f60fa3aa90adaa0383e8
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: ad9064f8f45a737982ffc35ab4ea2395ddae9016
+ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86925296"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88811422"
 ---
-# <a name="cancel-async-tasks-after-a-period-of-time-c"></a><span data-ttu-id="81fca-103">Отмена асинхронных задач после определенного периода времени (C#)</span><span class="sxs-lookup"><span data-stu-id="81fca-103">Cancel async tasks after a period of time (C#)</span></span>
+# <a name="cancel-async-tasks-after-a-period-of-time-c"></a><span data-ttu-id="756ee-103">Отмена асинхронных задач после определенного периода времени (C#)</span><span class="sxs-lookup"><span data-stu-id="756ee-103">Cancel async tasks after a period of time (C#)</span></span>
 
-<span data-ttu-id="81fca-104">Если не нужно дожидаться, пока завершится выполнение асинхронной операции, ее можно отменить по истечении определенного периода времени с помощью метода <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="81fca-104">You can cancel an asynchronous operation after a period of time by using the  <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType> method if you don't want to wait for the operation to finish.</span></span> <span data-ttu-id="81fca-105">Этот метод планирует отмену всех связанных задач, не завершенных в течение времени, установленного выражением `CancelAfter`.</span><span class="sxs-lookup"><span data-stu-id="81fca-105">This method schedules the cancellation of any associated tasks that aren’t complete within the period of time that’s designated by the `CancelAfter` expression.</span></span>
+<span data-ttu-id="756ee-104">Если не нужно дожидаться, пока завершится выполнение асинхронной операции, ее можно отменить по истечении определенного периода времени с помощью метода <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType>.</span><span class="sxs-lookup"><span data-stu-id="756ee-104">You can cancel an asynchronous operation after a period of time by using the <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType> method if you don't want to wait for the operation to finish.</span></span> <span data-ttu-id="756ee-105">Этот метод планирует отмену всех связанных задач, не завершенных в течение времени, установленного выражением `CancelAfter`.</span><span class="sxs-lookup"><span data-stu-id="756ee-105">This method schedules the cancellation of any associated tasks that aren't complete within the period of time that's designated by the `CancelAfter` expression.</span></span>
 
-<span data-ttu-id="81fca-106">В этом примере добавляется код, составленный в разделе [Отмена асинхронной задачи или списка задач (C#)](./cancel-an-async-task-or-a-list-of-tasks.md), для загрузки списка веб-сайтов и отображения длины содержимого каждого из них.</span><span class="sxs-lookup"><span data-stu-id="81fca-106">This example adds to the code that’s developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.</span></span>
+<span data-ttu-id="756ee-106">В этом примере добавляется код, составленный в разделе [Отмена списка задач (C#)](cancel-an-async-task-or-a-list-of-tasks.md), для загрузки списка веб-сайтов и отображения длины содержимого каждого из них.</span><span class="sxs-lookup"><span data-stu-id="756ee-106">This example adds to the code that's developed in [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="81fca-107">Для выполнения примеров необходимо, чтобы на компьютере были установлены Visual Studio 2012 или более поздняя версия и .NET Framework 4.5 или более поздняя версия.</span><span class="sxs-lookup"><span data-stu-id="81fca-107">To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.</span></span>
+<span data-ttu-id="756ee-107">Темы, рассматриваемые в этом руководстве:</span><span class="sxs-lookup"><span data-stu-id="756ee-107">This tutorial covers:</span></span>
 
-## <a name="download-the-example"></a><span data-ttu-id="81fca-108">Скачивание примера</span><span class="sxs-lookup"><span data-stu-id="81fca-108">Download the example</span></span>
+> [!div class="checklist"]
+>
+> - <span data-ttu-id="756ee-108">Обновление существующего консольного приложения .NET</span><span class="sxs-lookup"><span data-stu-id="756ee-108">Updating an existing .NET console application</span></span>
+> - <span data-ttu-id="756ee-109">Планирование отмены</span><span class="sxs-lookup"><span data-stu-id="756ee-109">Scheduling a cancellation</span></span>
 
-<span data-ttu-id="81fca-109">Скачать полный проект Windows Presentation Foundation (WPF) можно со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea). Затем выполните следующие шаги.</span><span class="sxs-lookup"><span data-stu-id="81fca-109">You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="756ee-110">Предварительные требования</span><span class="sxs-lookup"><span data-stu-id="756ee-110">Prerequisites</span></span>
 
-1. <span data-ttu-id="81fca-110">Распакуйте загруженный файл, а затем запустите Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="81fca-110">Decompress the file that you downloaded, and then start Visual Studio.</span></span>
+<span data-ttu-id="756ee-111">Для работы с данным учебником требуется следующее:</span><span class="sxs-lookup"><span data-stu-id="756ee-111">This tutorial requires the following:</span></span>
 
-2. <span data-ttu-id="81fca-111">В строке меню выберите **Файл** > **Открыть** > **Решение или проект**.</span><span class="sxs-lookup"><span data-stu-id="81fca-111">On the menu bar, choose **File** > **Open** > **Project/Solution**.</span></span>
+- <span data-ttu-id="756ee-112">Предполагается, что вы создали приложение в учебнике [Отмена списка задач (C#)](cancel-an-async-task-or-a-list-of-tasks.md).</span><span class="sxs-lookup"><span data-stu-id="756ee-112">You're expected to have created an application in the [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md) tutorial</span></span>
+- [<span data-ttu-id="756ee-113">Пакет SDK для .NET 5.0 или более поздней версии</span><span class="sxs-lookup"><span data-stu-id="756ee-113">.NET 5.0 or later SDK</span></span>](https://dotnet.microsoft.com/download/dotnet/5.0)
+- <span data-ttu-id="756ee-114">Интегрированная среда разработки (IDE)</span><span class="sxs-lookup"><span data-stu-id="756ee-114">Integrated development environment (IDE)</span></span>
+  - [<span data-ttu-id="756ee-115">Мы рекомендуем Visual Studio, Visual Studio Code или Visual Studio для Mac</span><span class="sxs-lookup"><span data-stu-id="756ee-115">We recommend Visual Studio, Visual Studio Code, or Visual Studio for Mac</span></span>](https://visualstudio.microsoft.com)
 
-3. <span data-ttu-id="81fca-112">В диалоговом окне **Открытие проекта** откройте папку с примером кода, который вы распаковали, а затем откройте файл решения (SLN) для AsyncFineTuningCS.</span><span class="sxs-lookup"><span data-stu-id="81fca-112">In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.</span></span>
+## <a name="update-application-entry-point"></a><span data-ttu-id="756ee-116">Обновление точки входа приложения</span><span class="sxs-lookup"><span data-stu-id="756ee-116">Update application entry point</span></span>
 
-4. <span data-ttu-id="81fca-113">В **обозревателе решений** откройте контекстное меню проекта **CancelAfterTime** и выберите команду **Назначить запускаемым проектом**.</span><span class="sxs-lookup"><span data-stu-id="81fca-113">In **Solution Explorer**, open the shortcut menu for the **CancelAfterTime** project, and then choose **Set as StartUp Project**.</span></span>
-
-5. <span data-ttu-id="81fca-114">Нажмите клавишу **F5**, чтобы запустить проект.</span><span class="sxs-lookup"><span data-stu-id="81fca-114">Choose the **F5** key to run the project.</span></span> <span data-ttu-id="81fca-115">(Или нажмите **CTRL**+**F5**, чтобы запустить проект без отладки).</span><span class="sxs-lookup"><span data-stu-id="81fca-115">(Or, press **Ctrl**+**F5** to run the project without debugging it).</span></span>
-
-6. <span data-ttu-id="81fca-116">Выполните программу несколько раз, чтобы убедиться, что ее выходные данные могут содержать выходные данные по всем веб-сайтам, по некоторым из них или не содержать никакие данные по веб-сайтам.</span><span class="sxs-lookup"><span data-stu-id="81fca-116">Run the program several times to verify that the output might show output for all websites, no websites, or some web sites.</span></span>
-
-<span data-ttu-id="81fca-117">Если вы не хотите скачивать проект, можете просмотреть файл MainWindow.xaml.cs в конце этого раздела.</span><span class="sxs-lookup"><span data-stu-id="81fca-117">If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic.</span></span>
-
-## <a name="build-the-example"></a><span data-ttu-id="81fca-118">Сборка примера</span><span class="sxs-lookup"><span data-stu-id="81fca-118">Build the example</span></span>
-
-<span data-ttu-id="81fca-119">Пример в этом разделе добавляется в проект для отмены списка задач, разработка которого описывается в разделе [Отмена асинхронной задачи или списка задач (C#)](./cancel-an-async-task-or-a-list-of-tasks.md).</span><span class="sxs-lookup"><span data-stu-id="81fca-119">The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks.</span></span> <span data-ttu-id="81fca-120">В примере используется тот же пользовательский интерфейс, хотя кнопка **Отмена** не используется явно.</span><span class="sxs-lookup"><span data-stu-id="81fca-120">The example uses the same UI, although the **Cancel** button isn’t used explicitly.</span></span>
-
-<span data-ttu-id="81fca-121">Для самостоятельной сборки примера шаг за шагом следуйте инструкциям в разделе "Загрузка примера", но выберите в качестве **запускаемого проекта** проект **CancelAfterOneTask**.</span><span class="sxs-lookup"><span data-stu-id="81fca-121">To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**.</span></span> <span data-ttu-id="81fca-122">Добавьте изменения, приведенные в данном разделе, в этот проект.</span><span class="sxs-lookup"><span data-stu-id="81fca-122">Add the changes in this topic to that project.</span></span>
-
-<span data-ttu-id="81fca-123">Чтобы задать максимальный период времени, по истечении которого задачи будут отмечены как отмененные, добавьте вызов `CancelAfter` в `startButton_Click`, как показано в приведенном ниже примере.</span><span class="sxs-lookup"><span data-stu-id="81fca-123">To specify a maximum time before the tasks are marked as canceled, add a call to `CancelAfter` to `startButton_Click`, as the following example shows.</span></span> <span data-ttu-id="81fca-124">Добавления помечены звездочками.</span><span class="sxs-lookup"><span data-stu-id="81fca-124">The addition is marked with asterisks.</span></span>
+<span data-ttu-id="756ee-117">Замените существующий метод `Main` следующим кодом.</span><span class="sxs-lookup"><span data-stu-id="756ee-117">Replace the existing `Main` method with the following:</span></span>
 
 ```csharp
-private async void startButton_Click(object sender, RoutedEventArgs e)
+static async Task Main()
 {
-    // Instantiate the CancellationTokenSource.
-    cts = new CancellationTokenSource();
-
-    resultsTextBox.Clear();
+    Console.WriteLine("Application started.");
 
     try
     {
-        // ***Set up the CancellationTokenSource to cancel after 2.5 seconds. (You
-        // can adjust the time.)
-        cts.CancelAfter(2500);
+        s_cts.CancelAfter(3500);
 
-        await AccessTheWebAsync(cts.Token);
-        resultsTextBox.Text += "\r\nDownloads succeeded.\r\n";
+        await SumPageSizesAsync();
     }
-    catch (OperationCanceledException)
+    catch (TaskCanceledException)
     {
-        resultsTextBox.Text += "\r\nDownloads canceled.\r\n";
-    }
-    catch (Exception)
-    {
-        resultsTextBox.Text += "\r\nDownloads failed.\r\n";
+        Console.WriteLine("\nTasks cancelled: timed out.\n");
     }
 
-    cts = null;
+    Console.WriteLine("Application ending.");
 }
 ```
 
- <span data-ttu-id="81fca-125">Выполните программу несколько раз, чтобы убедиться, что ее выходные данные могут содержать выходные данные по всем веб-сайтам, по некоторым из них или не содержать никакие данные по веб-сайтам.</span><span class="sxs-lookup"><span data-stu-id="81fca-125">Run the program several times to verify that the output might show output for all websites, no websites, or some web sites.</span></span> <span data-ttu-id="81fca-126">Следующие результаты приводятся для примера.</span><span class="sxs-lookup"><span data-stu-id="81fca-126">The following output is a sample.</span></span>
+<span data-ttu-id="756ee-118">Обновленный метод `Main` записывает в консоль несколько инструкций.</span><span class="sxs-lookup"><span data-stu-id="756ee-118">The updated `Main` method writes a few instructional messages to the console.</span></span> <span data-ttu-id="756ee-119">[Попробуйте перехватить](../../../language-reference/keywords/try-catch.md), вызвав <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType>, чтобы запланировать отмену.</span><span class="sxs-lookup"><span data-stu-id="756ee-119">Within the [try catch](../../../language-reference/keywords/try-catch.md), a call to <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> to schedule a cancellation.</span></span> <span data-ttu-id="756ee-120">Эта операция будет сообщать об отмене по истечении определенного периода времени.</span><span class="sxs-lookup"><span data-stu-id="756ee-120">This will signal cancellation after a period of time.</span></span>
 
-```output
-Length of the downloaded string: 35990.
+<span data-ttu-id="756ee-121">Затем ожидается метод `SumPageSizesAsync`.</span><span class="sxs-lookup"><span data-stu-id="756ee-121">Next, the `SumPageSizesAsync` method is awaited.</span></span> <span data-ttu-id="756ee-122">Если обработка всех URL-адресов выполняется быстрее запланированной отмены, приложение завершается.</span><span class="sxs-lookup"><span data-stu-id="756ee-122">If processing all of the URLs occurs faster than the scheduled cancellation, the application ends.</span></span> <span data-ttu-id="756ee-123">Однако если запланированная отмена запускается до обработки всех URL-адресов, создается <xref:System.Threading.Tasks.TaskCanceledException>.</span><span class="sxs-lookup"><span data-stu-id="756ee-123">However, if the scheduled cancellation is triggered before all of the URLs are processed, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown.</span></span>
 
-Length of the downloaded string: 407399.
+### <a name="example-application-output"></a><span data-ttu-id="756ee-124">Пример выходных данных приложения</span><span class="sxs-lookup"><span data-stu-id="756ee-124">Example application output</span></span>
 
-Length of the downloaded string: 226091.
+```console
+Application started.
 
-Downloads canceled.
+https://docs.microsoft.com                                       37,357
+https://docs.microsoft.com/aspnet/core                           85,589
+https://docs.microsoft.com/azure                                398,939
+https://docs.microsoft.com/azure/devops                          73,663
+
+Tasks cancelled: timed out.
+
+Application ending.
 ```
 
-## <a name="complete-example"></a><span data-ttu-id="81fca-127">Полный пример</span><span class="sxs-lookup"><span data-stu-id="81fca-127">Complete example</span></span>
+## <a name="complete-example"></a><span data-ttu-id="756ee-125">Полный пример</span><span class="sxs-lookup"><span data-stu-id="756ee-125">Complete example</span></span>
 
-<span data-ttu-id="81fca-128">Приведенный ниже код — полный текст файла MainWindow.xaml.cs для примера.</span><span class="sxs-lookup"><span data-stu-id="81fca-128">The following code is the complete text of the MainWindow.xaml.cs file for the example.</span></span> <span data-ttu-id="81fca-129">Звездочками помечаются элементы, добавленные для этого примера.</span><span class="sxs-lookup"><span data-stu-id="81fca-129">Asterisks mark the elements that were added for this example.</span></span>
+<span data-ttu-id="756ee-126">Приведенный ниже код — это полный текст файла *Program.cs* для примера.</span><span class="sxs-lookup"><span data-stu-id="756ee-126">The following code is the complete text of the *Program.cs* file for the example.</span></span>
 
-<span data-ttu-id="81fca-130">Обратите внимание на то, что необходимо добавить ссылку для <xref:System.Net.Http>.</span><span class="sxs-lookup"><span data-stu-id="81fca-130">Notice that you must add a reference for <xref:System.Net.Http>.</span></span>
+:::code language="csharp" source="snippets/cancel-tasks/cancel-task-after-period-of-time/Program.cs":::
 
-<span data-ttu-id="81fca-131">Вы можете скачать проект из статьи [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).</span><span class="sxs-lookup"><span data-stu-id="81fca-131">You can download the project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).</span></span>
+## <a name="see-also"></a><span data-ttu-id="756ee-127">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="756ee-127">See also</span></span>
 
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-// Add a using directive and a reference for System.Net.Http.
-using System.Net.Http;
-
-// Add the following using directive.
-using System.Threading;
-
-namespace CancelAfterTime
-{
-    public partial class MainWindow : Window
-    {
-        // Declare a System.Threading.CancellationTokenSource.
-        CancellationTokenSource cts;
-
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private async void startButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Instantiate the CancellationTokenSource.
-            cts = new CancellationTokenSource();
-
-            resultsTextBox.Clear();
-
-            try
-            {
-                // ***Set up the CancellationTokenSource to cancel after 2.5 seconds. (You
-                // can adjust the time.)
-                cts.CancelAfter(2500);
-
-                await AccessTheWebAsync(cts.Token);
-                resultsTextBox.Text += "\r\nDownloads succeeded.\r\n";
-            }
-            catch (OperationCanceledException)
-            {
-                resultsTextBox.Text += "\r\nDownloads canceled.\r\n";
-            }
-            catch (Exception)
-            {
-                resultsTextBox.Text += "\r\nDownloads failed.\r\n";
-            }
-
-            cts = null;
-        }
-
-        // You can still include a Cancel button if you want to.
-        private void cancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (cts != null)
-            {
-                cts.Cancel();
-            }
-        }
-
-        async Task AccessTheWebAsync(CancellationToken ct)
-        {
-            // Declare an HttpClient object.
-            HttpClient client = new HttpClient();
-
-            // Make a list of web addresses.
-            List<string> urlList = SetUpURLList();
-
-            foreach (var url in urlList)
-            {
-                // GetAsync returns a Task<HttpResponseMessage>.
-                // Argument ct carries the message if the Cancel button is chosen.
-                // Note that the Cancel button cancels all remaining downloads.
-                HttpResponseMessage response = await client.GetAsync(url, ct);
-
-                // Retrieve the website contents from the HttpResponseMessage.
-                byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
-
-                resultsTextBox.Text +=
-                    $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
-            }
-        }
-
-        private List<string> SetUpURLList()
-        {
-            List<string> urls = new List<string>
-            {
-                "https://msdn.microsoft.com",
-                "https://msdn.microsoft.com/library/windows/apps/br211380.aspx",
-                "https://msdn.microsoft.com/library/hh290136.aspx",
-                "https://msdn.microsoft.com/library/ee256749.aspx",
-                "https://msdn.microsoft.com/library/ms404677.aspx",
-                "https://msdn.microsoft.com/library/ff730837.aspx"
-            };
-            return urls;
-        }
-    }
-
-    // Sample Output:
-
-    // Length of the downloaded string: 35990.
-
-    // Length of the downloaded string: 407399.
-
-    // Length of the downloaded string: 226091.
-
-    // Downloads canceled.
-}
-```
-
-## <a name="see-also"></a><span data-ttu-id="81fca-132">См. также</span><span class="sxs-lookup"><span data-stu-id="81fca-132">See also</span></span>
-
-- [<span data-ttu-id="81fca-133">Асинхронное программирование с использованием ключевых слов async и await (C#)</span><span class="sxs-lookup"><span data-stu-id="81fca-133">Asynchronous Programming with async and await (C#)</span></span>](./index.md)
-- [<span data-ttu-id="81fca-134">Пошаговое руководство: Доступ к Интернету с помощью модификатора Async и оператора Await в C#</span><span class="sxs-lookup"><span data-stu-id="81fca-134">Walkthrough: Accessing the Web by Using async and await (C#)</span></span>](./walkthrough-accessing-the-web-by-using-async-and-await.md)
-- [<span data-ttu-id="81fca-135">Отмена асинхронной задачи или списка задач в C#</span><span class="sxs-lookup"><span data-stu-id="81fca-135">Cancel an Async Task or a List of Tasks (C#)</span></span>](./cancel-an-async-task-or-a-list-of-tasks.md)
-- <span data-ttu-id="81fca-136">[Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md) (Тонкая настройка асинхронного приложения в C#)</span><span class="sxs-lookup"><span data-stu-id="81fca-136">[Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)</span></span>
-- [<span data-ttu-id="81fca-137">Пример использования Async. Настройка приложения</span><span class="sxs-lookup"><span data-stu-id="81fca-137">Async Sample: Fine Tuning Your Application</span></span>](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)
+- <xref:System.Threading.CancellationToken>
+- <xref:System.Threading.CancellationTokenSource>
+- [<span data-ttu-id="756ee-128">Асинхронное программирование с использованием ключевых слов Async и Await (C#)</span><span class="sxs-lookup"><span data-stu-id="756ee-128">Asynchronous programming with async and await (C#)</span></span>](index.md)
+- [<span data-ttu-id="756ee-129">Отмена списка задач (C#)</span><span class="sxs-lookup"><span data-stu-id="756ee-129">Cancel a list of tasks (C#)</span></span>](cancel-an-async-task-or-a-list-of-tasks.md)
