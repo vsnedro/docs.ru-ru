@@ -1,22 +1,19 @@
 ---
 title: Справочник символов и операторов
 description: Узнайте о символах и операторах, которые используются в языке программирования F#.
-ms.date: 02/11/2019
+ms.date: 08/15/2020
 fl_keywords:
 - '|>_FS'
-ms.openlocfilehash: 4c3af80e8f5a686535b7c09579d29bb3da8591a3
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: 5943352f0a1710ba7a666a79b7871b7269c75a6b
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855403"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359094"
 ---
 # <a name="symbol-and-operator-reference"></a>Справочник по символам и операторам
 
 В этой статье приведена таблица символов и операторов, которые используются в языке F#.
-
-> [!NOTE]
-> Работа над справочником по API docs.microsoft.com для F# не завершена. Если вы обнаружили неработающие ссылки, см. [документацию по основной библиотеке F#](https://fsharp.github.io/fsharp-core-docs/).
 
 ## <a name="table-of-symbols-and-operators"></a>Таблица символов и операторов
 
@@ -76,9 +73,12 @@ ms.locfileid: "87855403"
 |`<>?`|[Операторы, допускающие значение NULL](nullable-operators.md)|<ul><li>Вычисляет значение операции "не равно", если правая часть является типом, допускающим значение NULL.<br /></li></ul>|
 |`<=`|[Арифметические операторы](arithmetic-operators.md)|<ul><li>Возвращает значение `true`, если левая часть меньше или равна правой части; в противном случае возвращает значение `false`.<br /></li></ul>|
 |`<=?`|[Операторы, допускающие значение NULL](nullable-operators.md)|<ul><li>Вычисляет значение операции "меньше или равно", если правая часть является типом, допускающим значение NULL.<br /></li></ul>|
+|<code>&#124;></code>|[Функции](../functions/index.md)|<ul><li>Передает результат левой части в функцию в правой части (оператор прямого конвейера).<br /></li></ul>|
+|<code>&#124;&#124;></code>|[Функция &#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62;](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%3E%20))|<ul><li>Передает кортеж из двух аргументов в левой части в функцию в правой части.<br /></li></ul>|
+|<code>&#124;&#124;&#124;></code>|[Функция &#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62;](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%7C%7C%7C%3E%20))|<ul><li>Передает кортеж из трех аргументов в левой части в функцию в правой части.<br /></li></ul>|
 |<code>&lt;&#124;</code>|[Функции](../functions/index.md)|<ul><li>Передает результат выражения в правой части в функцию левой части (оператор обратного конвейера).<br /></li></ul>|
-|<code>&lt;&#124;&#124;</code>|[Функция Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62;](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-%5bhh-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Передает кортеж из двух аргументов в правой части в функцию в левой части.<br /></li></ul>|
-|<code>&lt;&#124;&#124;&#124;</code>|[Функция Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62;](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-%5bhhh-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Передает кортеж из трех аргументов в правой части в функцию в левой части.<br /></li></ul>|
+|<code>&lt;&#124;&#124;</code>|[Функция &#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62;](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%3C%7C%7C%20))|<ul><li>Передает кортеж из двух аргументов в правой части в функцию в левой части.<br /></li></ul>|
+|<code>&lt;&#124;&#124;&#124;</code>|[Функция &#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62;](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%3C%7C%7C%7C%20))|<ul><li>Передает кортеж из трех аргументов в правой части в функцию в левой части.<br /></li></ul>|
 |`<@...@>`|[Цитирование кода](../code-quotations.md)|<ul><li>Разделяет типизированную цитату кода.<br /></li></ul>|
 |`<@@...@@>`|[Цитирование кода](../code-quotations.md)|<ul><li>Разделяет нетипизированную цитату кода.<br /></li></ul>|
 |`=`|[Арифметические операторы](arithmetic-operators.md)|<ul><li>Возвращает значение `true`, если левая часть равна правой части; в противном случае возвращает значение `false`.<br /></li></ul>|
@@ -108,9 +108,6 @@ ms.locfileid: "87855403"
 |<code>&#124;</code>|[Выражения match](../match-expressions.md)|<ul><li>Разделяет отдельные случаи соответствия, отдельные случаи размеченного объединения и значения перечисления.<br /></li></ul>|
 |<code>&#124;&#124;</code>|[Логические операторы](boolean-operators.md)|<ul><li>Вычисляет значение логической операции ИЛИ.<br /></li></ul>|
 |<code>&#124;&#124;&#124;</code>|[Битовые операторы](bitwise-operators.md)|<ul><li>Вычисляет значение побитовой операции ИЛИ.<br /></li></ul>|
-|<code>&#124;></code>|[Функции](../functions/index.md)|<ul><li>Передает результат левой части в функцию в правой части (оператор прямого конвейера).<br /></li></ul>|
-|<code>&#124;&#124;></code>|[Функция Operators.&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62;](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-hh%5d-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Передает кортеж из двух аргументов в левой части в функцию в правой части.<br /></li></ul>|
-|<code>&#124;&#124;&#124;></code>|[Функция Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62;](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-hhh%5d-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Передает кортеж из трех аргументов в левой части в функцию в правой части.<br /></li></ul>|
 |`~~`|[Перегрузка операторов](../operator-overloading.md)|<ul><li>Используется для объявления перегрузки для оператора унарного отрицания.<br /></li></ul>|
 |`~~~`|[Битовые операторы](bitwise-operators.md)|<ul><li>Вычисляет значение операции побитового НЕ.<br /></li></ul>|
 |`~-`|[Перегрузка операторов](../operator-overloading.md)|<ul><li>Используется для объявления перегрузки для оператора унарного минуса.<br /></li></ul>|

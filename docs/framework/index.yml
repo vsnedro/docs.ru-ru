@@ -11,12 +11,12 @@ metadata:
   helpviewer_keywords:
   - .NET Framework guide
   ms.date: 04/22/2020
-  ms.openlocfilehash: 67e1549395ab5657a5d609b186fc1816211c5af3
-  ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+  ms.openlocfilehash: 47781bbc5b1b1a2f4c0bc44929c5bb29fe3e7978
+  ms.sourcegitcommit: b78018c850590dfc0348301e1748b779c28604cc
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/24/2020
-  ms.locfileid: "82135910"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89379178"
 landingContent:
 - title: Сведения о .NET Framework
   linkLists:
@@ -74,24 +74,16 @@ landingContent:
     links:
     - text: Установка и удаление служб Windows
       url: windows-services/how-to-install-and-uninstall-services.md
-- title: Создание приложений Windows Forms
+- title: Создание классических приложений
   linkLists:
   - linkListType: overview
     links:
-    - text: Общие сведения о Windows Forms
-      url: winforms/index.md
-  - linkListType: tutorial
-    links:
-    - text: Начало работы с конструктором Windows Forms
-      url: /visualstudio/designers/walkthrough-windows-forms-designer
-    - text: Создание приложение Windows Forms из командной строки
-      url: winforms/how-to-create-a-windows-forms-application-from-the-command-line.md
-  - linkListType: how-to-guide
-    links:
-    - text: Добавление и удаление элементов, отображаемых в элементах управления ComboBox, ListBox и CheckedListBox
-      url: winforms/controls/add-and-remove-items-from-a-wf-combobox.md
-    - text: Осуществление потокобезопасных вызовов элементов управления
-      url: winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md
+    - text: Общие сведения о руководстве по классическим приложениям
+      url: /dotnet/desktop/
+    - text: .NET Framework WPF
+      url: wpf/index.md
+    - text: .NET Framework Windows Forms
+      url: /dotnet/desktop/winforms/?view=netframework-4-8
 - title: Создание приложений WPF
   linkLists:
   - linkListType: overview
