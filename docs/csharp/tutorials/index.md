@@ -2,12 +2,12 @@
 title: Учебники по C#
 description: Эти руководства расскажут о возможностях языка C# и научат вас создавать на нем программы.
 ms.date: 10/25/2018
-ms.openlocfilehash: 57d2471ef8ad06eb821a1d1d88210dfbb8dc732e
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 9542f4919c9b1f0363fb8bc27136eb9a7e074913
+ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80345096"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89414827"
 ---
 # <a name="c-tutorials"></a>Учебники по C#
 
@@ -56,7 +56,7 @@ ms.locfileid: "80345096"
 
 ## <a name="general-tutorials"></a>Общие руководства
 
-Следующие руководства позволяют создавать программы на C# с использованием [.NET Core](../../core/index.yml).
+Следующие руководства позволяют создавать программы на C# с использованием [.NET Core](../../core/introduction.md).
 
 * [Консольное приложение](console-teleprompter.md). Демонстрирует консольный ввод-вывод, структуру консольного приложения и модель асинхронного программирования на основе задач.
 * [Клиент REST](console-webapiclient.md). Демонстрирует веб-взаимодействие, сериализацию JSON и объектно ориентированные функции языка C#.

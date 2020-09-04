@@ -6,19 +6,19 @@ helpviewer_keywords:
 - .NET Framework, getting started
 - getting started [.NET Framework]
 ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
-ms.openlocfilehash: 1d6b1fccd9751180ee096531a34b2afb60547072
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 85ba856fd695f264f75a6dab2dca3aded4e5cdc1
+ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557325"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89414972"
 ---
 # <a name="get-started-with-net-framework"></a>Начало работы с .NET Framework
 
 Платформа .NET Framework — это среда выполнения, которая управляет приложениями, предназначенными для .NET Framework. Она состоит из среды CLR, которая предоставляет инструменты управления памятью и другие службы системы, и обширной библиотеки классов, позволяющей программистам использовать устойчивый, надежный код во всех основных областях разработки приложений.
 
 > [!NOTE]
-> Платформа .NET Framework доступна только для систем Windows. Для разработки и запуска приложений в ОС Windows, MacOS и Linux можно использовать платформу [.NET Core](../../core/index.yml).
+> Платформа .NET Framework доступна только для систем Windows. Для разработки и запуска приложений в ОС Windows, MacOS и Linux можно использовать платформу [.NET Core](../../core/introduction.md).
 
 ## <a name="what-is-net-framework"></a>Что такое платформа .NET Framework?
 
@@ -80,7 +80,7 @@ ms.locfileid: "88557325"
 | [.NET Framework и внештатные выпуски](the-net-framework-and-out-of-band-releases.md) | Содержит описание внештатных выпусков платформы .NET Framework и порядка их использования в приложении. |
 | [Требования к системе](system-requirements.md) | Содержит требования к оборудованию и операционной системе для использования платформы .NET Framework. |
 | [.NET Core и открытый исходный код](net-core-and-open-source.md) | Содержит описание связи между .NET Core и .NET Framework и сведения о получении доступа к проектам .NET Core с открытым исходным кодом. |
-| [Документация по .NET Core](../../core/index.yml) | Концептуальная и справочная документация по API для .NET Core. |
+| [Документация по .NET Core](../../core/introduction.md) | Концептуальная и справочная документация по API для .NET Core. |
 | [.NET Standard](../../standard/net-standard.md) | Описывает стандарт .NET Standard, который представляет собой спецификацию с возможностью управления версиями, поддерживаемую отдельными реализациями платформы .NET, что позволяет гарантировать наличие согласованного набора API-интерфейсов на различных платформах.
 
 ## <a name="see-also"></a>См. также
