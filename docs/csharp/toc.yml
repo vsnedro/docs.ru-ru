@@ -230,8 +230,6 @@
       href: how-to/parse-strings-using-split.md
     - name: Объединение строк
       href: how-to/concatenate-multiple-strings.md
-    - name: Преобразование строки в значение типа DateTime
-      href: ../standard/base-types/parsing-datetime.md
     - name: Поиск по строкам
       href: how-to/search-strings.md
     - name: Изменение содержимого строк
