@@ -5,12 +5,12 @@ helpviewer_keywords:
 - get started, Visual Basic
 - Visual Basic, get started
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
-ms.openlocfilehash: f52432bde84ab7c1ec30ff4033ce95c80606636e
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: a56532a33bc0ef0aae73de7f80e533038212c5ec
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81243197"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89495490"
 ---
 # <a name="get-started-with-visual-basic"></a>Начало работы с Visual Basic
 
@@ -24,7 +24,7 @@ ms.locfileid: "81243197"
 
 ## <a name="additional-information"></a>Дополнительные сведения
 
-- [Новые возможности Visual Basic](whats-new.md) В этом разделе перечислены новые возможности для каждой из версий Visual Basic .NET.
+- [Новые возможности Visual Basic](../whats-new/index.md) В этом разделе перечислены новые возможности для каждой из версий Visual Basic .NET.
 
 - [Дополнительные ресурсы для программистов, использующих Visual Basic](additional-resources.md) Список веб-сайтов и групп новостей, которые помогут найти ответы на общие вопросы.
 
