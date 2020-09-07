@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c3c3ed44cf53625c246dfe0408bb861750ecf336
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: c78122a2fe69c78625d6cb7fa9ddf41c49c2e737
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622125"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496106"
 ---
 ### <a name="calling-datagridcommitedit-from-a-celleditending-handler-drops-focus"></a>Вызов метода DataGrid.CommitEdit из обработчика CellEditEnding удаляет фокус
 
@@ -20,8 +20,18 @@ ms.locfileid: "85622125"
 |:--------|:------------|
 | Область   |Пограничный случай|
 |Version|4.5|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Windows.Controls.DataGrid.CommitEdit?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit,System.Boolean)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.DataGrid.CommitEdit?displayProperty=nameWithType>
+- <xref:System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit,System.Boolean)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Controls.DataGrid.CommitEdit`
+- `M:System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit,System.Boolean)`
+
+-->

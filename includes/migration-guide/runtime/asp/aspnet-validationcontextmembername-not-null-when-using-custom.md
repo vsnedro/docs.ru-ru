@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 7002c74594993ac6bf28643ef3271da356190c66
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 904a6abee2b4b2cf2f5727fb70e286c8a1a592c4
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622065"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496867"
 ---
 ### <a name="aspnet-validationcontextmembername-is-not-null-when-using-custom-dataannotationsvalidationattribute"></a>ASP.NET ValidationContext.MemberName не имеет значения NULL при использовании пользовательского DataAnnotations.ValidationAttribute
 
@@ -20,8 +20,16 @@ ms.locfileid: "85622065"
 |:--------|:------------|
 | Область   |Неизвестно|
 |Version|4.8|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType></li></ul>|
+- <xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.ComponentModel.DataAnnotations.ValidationContext.MemberName`
+
+-->

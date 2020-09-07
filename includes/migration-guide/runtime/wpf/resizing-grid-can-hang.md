@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 86169b5c9a20678647153c951550e590a5bce588
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 8dc1b4d94d01813a8124d1340b50fa78a9b157f8
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622279"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496264"
 ---
 ### <a name="resizing-a-grid-can-hang"></a>Изменение размеров сетки может привести к зависанию
 
@@ -16,8 +16,20 @@ ms.locfileid: "85622279"
 
 Выполните обновление до .NET Framework 4.7.1.  Кроме того, если вам не требуется алгоритм выделения версии 4.7, вы можете использовать следующий параметр конфигурации:<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Windows.Controls.Grid.StarDefinitionsCanExceedAvailableSpace=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;</code></pre>
 
-| name    | Значение       |
+| Имя    | Значение       |
 |:--------|:------------|
 | Область   |Пограничный случай|
 |Version|4.7|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

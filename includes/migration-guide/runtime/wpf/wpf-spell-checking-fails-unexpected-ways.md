@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d4f0095bc9fde98087dce528c8154d9c9ac6ddb7
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: d4e60f2a59980263916718ebcc71cc359952c031
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621838"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496717"
 ---
 ### <a name="wpf-spell-checking-fails-in-unexpected-ways"></a>Проверка орфографии WPF завершается сбоем непредвиденным образом
 
@@ -21,3 +21,15 @@ ms.locfileid: "85621838"
 | Область   |Пограничный случай|
 |Version|4.6.1|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

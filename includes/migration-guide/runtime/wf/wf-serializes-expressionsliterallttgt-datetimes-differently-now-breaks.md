@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 87013a04f7ff975e40a3c49c41c1c5acc2374066
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 06424c4fa40343a881356c20003300f65e93efbb
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620678"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496407"
 ---
 ### <a name="wf-serializes-expressionsliterallttgt-datetimes-differently-now-breaks-custom-xaml-parsers"></a>Теперь WF сериализует Expressions.Literal&lt;T&gt; DateTimes по-другому (нарушает работу пользовательских средств синтаксического анализа XAML)
 
@@ -21,3 +21,15 @@ ms.locfileid: "85620678"
 | Область   |Пограничный случай|
 |Version|4.5|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

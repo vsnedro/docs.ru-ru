@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4396ff43a48a23df29c5938b6bd2137d527b4ef5
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 4416a7c09f2d163961fe2fe3d6dfaa8bd5e66f93
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620612"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497792"
 ---
 ### <a name="change-in-behavior-in-data-definition-language-ddl-apis"></a>Изменение поведения API-интерфейсов языка описания данных (DDL)
 
@@ -21,3 +21,15 @@ ms.locfileid: "85620612"
 | Область   |Дополнительный номер|
 |Version|4.5|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

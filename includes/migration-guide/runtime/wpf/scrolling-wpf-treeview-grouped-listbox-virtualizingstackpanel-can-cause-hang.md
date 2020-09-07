@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1be68c2968d0eaa9024007bcf37abf9e44c36f1c
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 31ada197db36be192317e32a37a353d375d9cc65
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622150"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497015"
 ---
 ### <a name="scrolling-a-wpf-treeview-or-grouped-listbox-in-a-virtualizingstackpanel-can-cause-a-hang"></a>Прокрутка TreeView в WPF или сгруппированный ListBox в VirtualizingStackPanel может привести к зависанию
 
@@ -20,8 +20,16 @@ ms.locfileid: "85622150"
 |:--------|:------------|
 | Область   |Значительно|
 |Version|4.5|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)`
+
+-->

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 7ac0cac53ab2fa7657d0ae58f11d9e777631acc9
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1487e32ffca7b4bbebb5edac7efc8961ac05723b
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620691"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496689"
 ---
 ### <a name="accessing-a-wpf-datagrids-selected-items-from-a-handler-of-the-datagrids-unloadingrow-event-can-cause-a-nullreferenceexception"></a>Доступ к выделенным элементам DataGrid WPF из события UnloadingRow DataGrid может привести к исключению NullReferenceException
 
@@ -20,8 +20,18 @@ ms.locfileid: "85620691"
 |:--------|:------------|
 | Область   |Дополнительный номер|
 |Version|4.5|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Windows.Controls.DataGrid.UnloadingRow?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.UnloadingRowDetails?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.DataGrid.UnloadingRow?displayProperty=nameWithType>
+- <xref:System.Windows.Controls.DataGrid.UnloadingRowDetails?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `E:System.Windows.Controls.DataGrid.UnloadingRow`
+- `E:System.Windows.Controls.DataGrid.UnloadingRowDetails`
+
+-->

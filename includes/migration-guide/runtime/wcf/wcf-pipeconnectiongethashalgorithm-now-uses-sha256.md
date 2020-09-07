@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0f87f9e9b87860da97ce96e18104b44ec4327c91
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: d32725b0d3063d3320b73e02039ff567090da932
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621228"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497024"
 ---
 ### <a name="wcf-pipeconnectiongethashalgorithm-now-uses-sha256"></a>WCF PipeConnection.GetHashAlgorithm теперь использует SHA256
 
@@ -21,3 +21,15 @@ ms.locfileid: "85621228"
 | Область   |Дополнительный номер|
 |Версия|4.7.1|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

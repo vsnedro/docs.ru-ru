@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 710d1517397f423fa40cc0c4a26c3499aac6179e
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 972601874d80d82ebae8b79779acfed82e5570cb
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620684"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496563"
 ---
 ### <a name="calling-itemsrefresh-on-a-wpf-listbox-listview-or-datagrid-with-items-selected-can-cause-duplicate-items-to-appear-in-the-element"></a>Вызов Items.Refresh для ListBox, ListView или DataGrid в WPF с выбранным элементом может привести к появлению в элементе повторяющихся записей
 
@@ -24,4 +24,12 @@ ms.locfileid: "85620684"
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Windows.Data.CollectionView.Refresh?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Data.CollectionView.Refresh?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Data.CollectionView.Refresh`
+
+-->

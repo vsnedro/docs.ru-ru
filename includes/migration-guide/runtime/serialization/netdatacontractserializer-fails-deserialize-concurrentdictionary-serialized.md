@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: eef5633ec8566f6d5216b7dca4387766cacb600d
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 6c120f155660863ce5ae3cf5bd81ea858a68ef8d
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620661"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496558"
 ---
 ### <a name="netdatacontractserializer-fails-to-deserialize-a-concurrentdictionary-serialized-with-a-different-net-version"></a>NetDataContractSerializer не удается выполнить десериализацию ConcurrentDictionary, сериализованного с использованием другой версии .NET
 
@@ -20,8 +20,16 @@ ms.locfileid: "85620661"
 |:--------|:------------|
 | Область   |Дополнительный номер|
 |Version|4.5.1|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)`
+
+-->

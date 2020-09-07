@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c20d5fb3d700ba7649e423a79e4598b327c50a00
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 018c99d60dc8926cae2682dc9c035e25fba711e5
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622273"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496112"
 ---
 ### <a name="incorrect-code-generation-when-passing-and-comparing-uint16-values"></a>Некорректное формирование кода при передаче и сравнении значений UInt16
 
@@ -16,8 +16,20 @@ ms.locfileid: "85622273"
 
 Если вы сталкиваетесь с проблемами при сравнении 16-разрядных значений без знака в .NET Framework 4.7, выполните обновление до .NET Framework 4.7.1.
 
-| name    | Значение       |
+| Имя    | Значение       |
 |:--------|:------------|
 | Область   |Пограничный случай|
 |Version|4.7|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

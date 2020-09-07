@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a5c6dda0c1d68468cd95f67716709dd059948c80
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 6a79f04af44f78313c4d5bb5c37dfad252d3024b
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621438"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497762"
 ---
 ### <a name="product-versioning-changes-in-the-net-framework-46-and-later-versions"></a>Изменения в управлении версиями продукта в .NET Framework 4.6 и более поздних версиях
 
@@ -21,3 +21,15 @@ ms.locfileid: "85621438"
 | Область   |Дополнительный номер|
 |Version|4.6|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

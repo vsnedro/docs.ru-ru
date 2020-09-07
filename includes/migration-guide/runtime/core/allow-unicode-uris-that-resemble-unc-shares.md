@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3e8601ba76dfb05e3d70b3af7440bd7e228768d0
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1047f4028697a73741470d1aac8b3aeed37be217
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621168"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496411"
 ---
 ### <a name="allow-unicode-in-uris-that-resemble-unc-shares"></a>Разрешение Юникода в URI, которые напоминают общие папки UNC
 
@@ -20,8 +20,16 @@ ms.locfileid: "85621168"
 |:--------|:------------|
 | Область   |Пограничный случай|
 |Version|4.7.2|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Uri?displayProperty=nameWithType></li></ul>|
+- <xref:System.Uri?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Uri`
+
+-->

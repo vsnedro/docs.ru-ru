@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 06c699281c8890ac65be1d282b72b54774acc280
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 4394e69dafeb6cce2d7719a67bbce396d3bc1086
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620709"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497259"
 ---
 ### <a name="wpf-datatemplate-elements-are-now-visible-to-uia"></a>Элементы WPF DataTemplate теперь отображаются в UIA
 
@@ -20,8 +20,18 @@ ms.locfileid: "85620709"
 |:--------|:------------|
 | Область   |Пограничный случай|
 |Version|4.5|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Windows.DataTemplate.%23ctor></li><li><xref:System.Windows.DataTemplate.%23ctor(System.Object)></li></ul>|
+- <xref:System.Windows.DataTemplate.%23ctor>
+- <xref:System.Windows.DataTemplate.%23ctor(System.Object)>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.DataTemplate.#ctor`
+- `M:System.Windows.DataTemplate.#ctor(System.Object)`
+
+-->

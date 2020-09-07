@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 171b7a3a962f8259e64b88f1ae893e649b5f24bb
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 7bf5f7e8a49acc2918dd0d68a1c54a5c277091b0
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621252"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496664"
 ---
 ### <a name="chained-popups-with-staysopenfalse"></a>Связанные всплывающие окна с StaysOpen=False
 
@@ -16,8 +16,16 @@ ms.locfileid: "85621252"
 |:--------|:------------|
 | Область   |Пограничный случай|
 |Version|4.7.1|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Windows.Controls.Primitives.Popup.StaysOpen?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.Primitives.Popup.StaysOpen?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Windows.Controls.Primitives.Popup.StaysOpen`
+
+-->

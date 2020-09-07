@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a20fad5f9c95e59c14ffd91f4921cf8bfab443cd
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: f389a9e9bcf4ac1777db66731a085d74889c4a98
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621191"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497426"
 ---
 ### <a name="unicode-standard-version-80-categories-now-supported"></a>Теперь поддерживаются категории стандартной версии Юникода 8.0
 
@@ -16,12 +16,24 @@ ms.locfileid: "85621191"
 
 Просмотрите код и удалите или измените логику, зависящую от жестко заданных категорий символов Юникода.
 
-| name    | Значение       |
+| Имя    | Значение       |
 |:--------|:------------|
 | Область   |Дополнительный номер|
 |Version|4.6.2|
-|Type|Среда выполнения
+|Type|Среда выполнения|
 
 #### <a name="affected-apis"></a>Затронутые API
 
--<xref:System.Char.GetUnicodeCategory(System.Char)?displayProperty=nameWithType></li><li><xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)?displayProperty=nameWithType></li><li><xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Char.GetUnicodeCategory(System.Char)?displayProperty=nameWithType>
+- <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)?displayProperty=nameWithType>
+- <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Char.GetUnicodeCategory(System.Char)`
+- `M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)`
+- `M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)`
+
+-->

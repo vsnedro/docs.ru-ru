@@ -350,9 +350,9 @@ items:
           - name: Обзор
             href: develop-client-apps.md
           - name: Windows Presentation Foundation
-            href: wpf/
+            href: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
           - name: Windows Forms
-            href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+            href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
       - name: Разработка сервисноориентированных приложений с помощью WCF
         href: wcf/
       - name: Windows Workflow Foundation

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 77e9d28d79a92cf1523e4ef5779d78394b00ae80
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1907c9b82c9685899d328f67da8001c0fa4fb697
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622085"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497242"
 ---
 ### <a name="net-com-successfully-marshals-byref-safearray-parameters-on-events"></a>.NET COM успешно маршалирует параметры ByRef SafeArray в события
 
@@ -21,3 +21,15 @@ ms.locfileid: "85622085"
 | Область   |Дополнительный номер|
 |Version|4.8|
 |Type|Среда выполнения|
+
+#### <a name="affected-apis"></a>Затронутые API
+
+Невозможно обнаружить с помощью анализа API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->
