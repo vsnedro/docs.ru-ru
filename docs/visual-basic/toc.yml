@@ -1,7 +1,9 @@
 - name: Руководство по Visual Basic
   href: index.yml
 - name: Новые возможности Visual Basic
-  href: getting-started/whats-new.md
+  href: whats-new/index.md
+- name: Критические изменения в компиляторе
+  href: whats-new/breaking-changes.md
 - name: Приступая к работе
   href: getting-started/index.md
   items:
