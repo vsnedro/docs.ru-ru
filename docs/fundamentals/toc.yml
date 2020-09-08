@@ -134,8 +134,10 @@ items:
                 displayName: tutorials
           - name: Другие руководства
             href: ../core/tutorials/index.md
-  - name: Новое
+  - name: Новые возможности
     items:
+      - name: "Эволюция .NET\_Core до версии .NET\_5"
+        href: ../core/dotnet-five.md
       - name: "Новые возможности .NET Core\_3.1"
         href: ../core/whats-new/dotnet-core-3-1.md
       - name: Новые возможности .NET Core 3.0
@@ -332,7 +334,7 @@ items:
                     href: ../core/diagnostics/debug-deadlock.md
           - name: Анализ кода
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: productivity/code-analysis.md
                 displayName: 'code analysis, analyzers'
               - name: Настройка правил
@@ -397,7 +399,7 @@ items:
                 href: ../core/run-time-config/threading.md
       - name: Модели развертывания
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: ../core/deploying/index.md
           - name: Развертывание приложений с помощью Visual Studio
             href: ../core/deploying/deploy-with-vs.md
@@ -407,6 +409,8 @@ items:
             href: ../core/deploying/creating-nuget-packages.md
           - name: Обновление версии среды выполнения автономного развертывания
             href: ../core/deploying/runtime-patch-selection.md
+          - name: Развертывание и выполнение в виде отдельного файла
+            href: ../core/deploying/single-file.md
           - name: Обрезка автономных развертываний и исполняемых файлов
             href: ../core/deploying/trim-self-contained.md
           - name: Хранилище пакетов среды выполнения
