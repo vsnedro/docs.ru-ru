@@ -2,12 +2,12 @@
 title: Статьи с практическими руководствами (руководств по языку C#)
 description: Коллекция советов и кратких конкретных примеров кода
 ms.date: 12/20/2017
-ms.openlocfilehash: 81ef8106add757cf3c83aa7dc130f5474b936461
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 9dd069ff767d65002b78c18b398b700a1f26ebfa
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794706"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465160"
 ---
 # <a name="how-to-c"></a>Практическое руководство (C#)
 
@@ -94,7 +94,7 @@ ms.locfileid: "82794706"
 
 - [Подписка и отмена подписки на события](../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 - [Реализация событий, объявленных в интерфейсах](../programming-guide/events/how-to-implement-interface-events.md).
-- [Соответствие рекомендациям .NET Framework при публикации событий кодом](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
+- [Соответствие рекомендациям .NET при публикации событий кодом.](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)
 - [Создание событий, определенных в базовых классах, из производных классов](../programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md).
 - [Реализация пользовательских методов доступа к событиям](../programming-guide/events/how-to-implement-custom-event-accessors.md).
 
