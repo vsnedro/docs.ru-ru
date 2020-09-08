@@ -3,12 +3,12 @@ title: Добро пожаловать в .NET
 description: Начало работы с семейством технологий .NET
 ms.date: 12/03/2019
 ms.custom: updateeachrelease
-ms.openlocfilehash: 1933714263b98b4a503ced3868570c35feafe8f0
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 7b1c5eceefd1e108eabf17d5cb6f7552af00e0d5
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89415063"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89495151"
 ---
 # <a name="welcome-to-net"></a>Добро пожаловать в .NET
 
@@ -36,7 +36,7 @@ ms.locfileid: "89415063"
 - [Новые возможности .NET Core 3.1](core/whats-new/dotnet-core-3-1.md)
 - [Новые возможности .NET Framework](framework/whats-new/index.md)
 - [Новые возможности C#](csharp/whats-new/index.md)
-- [Новые возможности Visual Basic](visual-basic/getting-started/whats-new.md)
+- [Новые возможности Visual Basic](visual-basic/whats-new/index.md)
 
 ## <a name="documentation"></a>Документация
 
