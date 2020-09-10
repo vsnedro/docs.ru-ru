@@ -2,12 +2,12 @@
 title: Реализация шлюзов API с помощью Ocelot
 description: Узнайте, как реализовывать шлюзы API с помощью Ocelot и как использовать Ocelot в среде на базе контейнеров.
 ms.date: 03/02/2020
-ms.openlocfilehash: f103c1e394a3f829489b61fd17af749798b02f70
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 3611ffa7a163ff632ca854fafb910fcd3e228306
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864102"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89358990"
 ---
 # <a name="implement-api-gateways-with-ocelot"></a>Реализация шлюзов API с помощью Ocelot
 
@@ -15,6 +15,7 @@ ms.locfileid: "86864102"
 > В настоящее время приложение микрослужбы [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) использует функции, предоставляемые [Envoy](https://www.envoyproxy.io/) для реализации шлюза API вместо раннее упоминаемого [Ocelot](https://github.com/ThreeMammals/Ocelot).
 > Мы внесли этот вариант проектирования из-за встроенной поддержки Envoy для протокола WebSocket, необходимого для нового обмена данными между службами gRPC, реализованного в eShopOnContainers.
 > Тем не менее, мы сохранили этот раздел в руководстве, так что вы можете рассматривать Ocelot как простой, совместимый и легкий API шлюз, подходящий для сценариев производственного уровня.
+> Кроме того, последняя версия Ocelot содержит критическое изменение в своей схеме JSON. Рассмотрите возможность использования Ocelot версии 16.0.0 или более ранней, либо используйте ключевые маршруты вместо перенаправления.
 
 ## <a name="architect-and-design-your-api-gateways"></a>Разработка архитектуры и проектирование шлюзов API
 

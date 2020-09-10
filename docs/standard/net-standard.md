@@ -5,12 +5,12 @@ ms.date: 02/13/2020
 ms.technology: dotnet-standard
 ms.custom: updateeachrelease
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-ms.openlocfilehash: b52d69756d85e3e422b798c3ac7d53de3b538b8d
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: e96a03ca55682d3e30bc13fb20a8e443105301fc
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167413"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359315"
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -92,7 +92,7 @@ ms.locfileid: "87167413"
 
 .NET Standard не связывается с какой-либо одной реализацией выполнения .NET и не зависит от схем управления версиями любой из сред выполнения.
 
-API, добавляемые в любую из реализаций (например, .NET Framework, .NET Core и Mono), можно рассматривать как кандидаты для добавления в спецификацию, особенно в том случае, если они носят фундаментальный характер. Новые [версии .NET Standard](https://github.com/dotnet/standard/blob/master/docs/versions.md) создаются на основе выпусков реализаций .NET, что позволяет использовать новые API из библиотеки PCL .NET Standard. Подробнее механизм управления версиями описан в разделе [Управление версиями .NET Core](../core/versions/index.md).
+API, добавляемые в любую из реализаций .NET (например, .NET Framework, .NET Core и Mono), можно рассматривать как кандидаты для добавления в спецификацию, особенно в том случае, если они носят фундаментальный характер. Новые [версии .NET Standard](https://github.com/dotnet/standard/blob/master/docs/versions.md) создаются на основе выпусков реализаций .NET, что позволяет использовать новые API из библиотеки PCL .NET Standard. Подробнее механизм управления версиями описан в разделе [Управление версиями .NET Core](../core/versions/index.md).
 
 Управление версиями .NET Standard имеет важное значение при использовании. Зная версию .NET Standard, вы можете использовать все библиотеки, предназначенные для этой или более ранней версии. Ниже описан рабочий процесс использования библиотек PCL .NET Standard, ориентированных на конкретную версию .NET Standard.
 

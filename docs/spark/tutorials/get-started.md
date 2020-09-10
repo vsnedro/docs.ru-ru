@@ -4,12 +4,12 @@ description: Узнайте, как запустить приложение .NET
 ms.date: 06/25/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: be150bcef0029f69136e21c35791c863220af244
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: d7297b11a2b5b21420fcb2f0f9ae823cb29b88d1
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617656"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359003"
 ---
 # <a name="tutorial-get-started-with-net-for-apache-spark"></a>Учебник. Начало работы с .NET для Apache Spark
 

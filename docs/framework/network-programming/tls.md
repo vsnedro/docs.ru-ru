@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Internet, security
 - security [.NET Framework], Internet
 - permissions [.NET Framework], Internet
-ms.openlocfilehash: d1218e5db2ee4fc0ec044c6e0aa16187390708b0
-ms.sourcegitcommit: 07123a475af89b6da5bb6cc51ea40ab1e8a488f0
+ms.openlocfilehash: 8de15dc033ecda3137f5f3ea37b9e35ac9df7e13
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80134389"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359302"
 ---
 # <a name="transport-layer-security-tls-best-practices-with-the-net-framework"></a>Рекомендации по использованию протокола TLS с .NET Framework
 
@@ -236,7 +236,7 @@ Windows Registry Editor Version 5.00
 
 Вы можете использовать реестр для точного управления протоколами, которые согласовывает клиент или серверное приложение. Приложение подключается к сети по протоколу Schannel, который также называют [Secure Channel](/windows/desktop/SecAuthN/secure-channel). Используя `Schannel`, вы можете настроить поведение приложения.
 
-Для начала перейдите в раздел реестра `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols`. В нем вы можете создать любые подразделы из набора `SSL 2.0`, `SSL 3.0`, `TLS 1.0`, `TLS 1.1` и `TLS 1.2`. В каждом подразделе можно создать подраздел `Client` и (или) `Server`. В подразделах `Client` и `Server` вы можете создать значения DWORD для `DisabledByDefault` (0 или 1) и для `Enabled` (0 или 0xFFFFFFFF).
+Для начала перейдите в раздел реестра `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols`. В нем вы можете создать любые подразделы из набора `SSL 2.0`, `SSL 3.0`, `TLS 1.0`, `TLS 1.1` и `TLS 1.2`. В каждом подразделе можно создать подраздел `Client` и (или) `Server`. В подразделах `Client` и `Server` вы можете создать значения DWORD для `DisabledByDefault` (0 или 1) и для `Enabled` (0 или 1).
 
 ## <a name="the-sch_use_strong_crypto-flag"></a><a name="the-sch_use_strong_crypto-flag"></a>Флаг SCH_USE_STRONG_CRYPTO
 

@@ -2,12 +2,12 @@
 title: Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio Code
 description: Создайте проект модульного теста для библиотеки классов .NET Core. Проверьте правильность работы библиотеки классов .NET Core с помощью модульных тестов.
 ms.date: 06/08/2020
-ms.openlocfilehash: b5f394b5dea2bf0b4af6e8b119df3fa0ec113dd3
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: f49974e1b918424ae5b5d7f3969f52c371e37154
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811721"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359172"
 ---
 # <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio-code"></a>Учебник. Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio Code
 
@@ -23,7 +23,7 @@ ms.locfileid: "88811721"
 
 1. Запустите Visual Studio Code.
 
-1. Откройте решение`ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio](library-with-visual-studio.md).
+1. Откройте решение `ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio Code](library-with-visual-studio-code.md).
 
 1. Создайте проект модульного теста с именем StringLibraryTest.
 
@@ -193,4 +193,4 @@ ms.locfileid: "88811721"
 Библиотеку не нужно распространять как пакет. Ее можно объединить с консольным приложением, где она используется. Чтобы узнать, как опубликовать консольное приложение, ознакомьтесь с предыдущим руководством в этой серии:
 
 > [!div class="nextstepaction"]
-> [Публикация консольного приложения .NET Core в Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Публикация консольного приложения .NET Core с помощью Visual Studio Code](publishing-with-visual-studio-code.md)

@@ -7,12 +7,12 @@ ms.author: adegeo
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 829c93e97990b87e6e568614236de9708ef080d9
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: 3c9615d7d79b5da1c180bb505f5f37b99aeae775
+ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85325752"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89272001"
 ---
 # <a name="data-binding-overview-in-wpf"></a>Общие сведения о привязке данных в WPF
 
@@ -173,12 +173,12 @@ ms.locfileid: "85325752"
 
 Прежде чем перейти к другим возможностям и использованию привязки данных, полезно познакомиться с классом <xref:System.Windows.Data.BindingExpression>. Как было показано в предыдущих разделах, класс <xref:System.Windows.Data.Binding> является классом высокого уровня для объявления привязки. Он предоставляет множество свойств, которые позволяют указать характеристики привязки. Связанный класс <xref:System.Windows.Data.BindingExpression>является базовым объектом, поддерживающим связь между источником и целью. Привязка содержит всю информацию, которая может использоваться совместно в нескольких выражениях привязки. <xref:System.Windows.Data.BindingExpression> — это выражение экземпляра, которое не может быть общим и содержит все сведения об экземпляре <xref:System.Windows.Data.Binding>.
 
-Рассмотрим следующий пример, где `myDataObject` является экземпляром класса `MyData` , `myBinding` является объектом источника <xref:System.Windows.Data.Binding>, а `MyData` — это определенный класс, содержащий строковое свойство с именем `MyDataProperty`. Этот пример связывает текстовое содержимое `myText`, экземпляр <xref:System.Windows.Controls.TextBlock>, с `MyDataProperty`.
+Рассмотрим следующий пример, где `myDataObject` является экземпляром класса `MyData` , `myBinding` является объектом источника <xref:System.Windows.Data.Binding>, а `MyData` — это определенный класс, содержащий строковое свойство с именем `ColorName`. Этот пример связывает текстовое содержимое `myText`, экземпляр <xref:System.Windows.Controls.TextBlock>, с `ColorName`.
 
 [!code-csharp[CodeOnlyBinding](~/samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/ManualBinding.cs#CodeOnlyBinding)]
 [!code-vb[CodeOnlyBinding](~/samples/snippets/desktop-guide/wpf/data-binding-overview/vb/ManualBinding.vb#CodeOnlyBinding)]
 
-Один и тот же объект *myBinding* можно использовать для создания других привязок. Например, объект *myBinding* можно использовать для привязки текстового содержимого флажка к *MyDataProperty*. В этом сценарии будут два экземпляра <xref:System.Windows.Data.BindingExpression>, совместно использующие объект *myBinding*.
+Один и тот же объект *myBinding* можно использовать для создания других привязок. Например, объект *myBinding* можно использовать для привязки текстового содержимого флажка к *ColorName*. В этом сценарии будут два экземпляра <xref:System.Windows.Data.BindingExpression>, совместно использующие объект *myBinding*.
 
 Объект <xref:System.Windows.Data.BindingExpression> возвращается путем вызова <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> для объекта, привязанного к данным. В следующих статьях демонстрируются некоторые случаи использования класса <xref:System.Windows.Data.BindingExpression>.
 

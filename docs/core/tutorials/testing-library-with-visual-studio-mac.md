@@ -2,12 +2,12 @@
 title: Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio для Mac
 description: Создайте проект модульного теста для библиотеки классов .NET Core. Проверьте правильность работы библиотеки классов .NET Core с помощью модульных тестов.
 ms.date: 06/08/2020
-ms.openlocfilehash: a183049623df44cbb8c4abd47ce6e78d91adae12
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: d3c8a5e01d16047949e977f3af6a429970d996d0
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84713307"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359224"
 ---
 # <a name="test-a-net-standard-class-library-with-net-core-using-visual-studio"></a>Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio
 

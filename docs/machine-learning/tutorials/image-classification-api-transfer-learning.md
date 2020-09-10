@@ -6,12 +6,12 @@ ms.author: luquinta
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 593897b31c86e79db2376dde94f3e5c87fdf8289
-ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
+ms.openlocfilehash: a2ebad329f583d35f110c5db053eebfa80ace6e2
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89052827"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359328"
 ---
 # <a name="tutorial-automated-visual-inspection-using-transfer-learning-with-the-mlnet-image-classification-api"></a>Учебник. Автоматизированная визуальная проверка с использованием передачи обучения и API классификации изображений ML.NET
 
@@ -32,7 +32,7 @@ ms.locfileid: "89052827"
 
 ## <a name="image-classification-transfer-learning-sample-overview"></a>Обзор примера с передачей обучения для классификации изображений
 
-Этот пример представляет собой консольное приложение C# .NET Core, которое классифицирует изображения с помощью предварительно обученной модели TensorFlow для глубокого обучения. Код для этого примера можно найти в репозитории [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary) на сайте GitHub.
+Этот пример представляет собой консольное приложение C# .NET Core, которое классифицирует изображения с помощью предварительно обученной модели TensorFlow для глубокого обучения. Код для этого шаблона можно найти в [обозревателе примеров](/samples/dotnet/machinelearning-samples/mlnet-image-classification-transfer-learning/).
 
 ## <a name="understand-the-problem"></a>Определение проблемы
 

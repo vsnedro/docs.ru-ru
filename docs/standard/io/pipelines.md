@@ -1,7 +1,7 @@
 ---
 title: Конвейеры ввода-вывода — .NET
 description: Узнайте, как эффективно использовать конвейеры ввода-вывода в .NET и избежать проблем в коде.
-ms.date: 10/01/2019
+ms.date: 08/27/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - Pipelines
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - I/O [.NET], Pipelines
 author: rick-anderson
 ms.author: riande
-ms.openlocfilehash: 8822e731ae805e83d4072c5bd78dff3fcf9a31a1
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: a24d7f5c22c936cd3fd3fdc51f0f3ace56386574
+ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81462520"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89271988"
 ---
 # <a name="systemiopipelines-in-net"></a>System.IO.Pipelines в .NET
 
@@ -64,7 +64,7 @@ async Task ProcessLinesAsync(NetworkStream stream)
 * Рекомендуется использовать буферные пулы, чтобы избежать повторного выделения памяти.
 * В следующем коде решаются некоторые из этих проблем:
 
-[!code-csharp[](~/samples/snippets/csharp/pipelines/ProcessLinesAsync.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/ProcessLinesAsync.cs" id="snippet":::
 
 Предыдущий код является сложным и не предназначен для устранения всех обнаруженных проблем. Высокая производительность сети обычно означает написание очень сложного кода для повышения производительности. `System.IO.Pipelines` был разработан для упрощения написания этого типа кода.
 
@@ -74,13 +74,13 @@ async Task ProcessLinesAsync(NetworkStream stream)
 
 Класс <xref:System.IO.Pipelines.Pipe> можно использовать для создания пары `PipeWriter/PipeReader`. Все данные, записанные в `PipeWriter`, доступны в `PipeReader`:
 
-[!code-csharp[](~/samples/snippets/csharp/pipelines/Pipe.cs?name=snippet2)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/Pipe.cs" id="snippet2":::
 
 <a name="pbu"></a>
 
 ### <a name="pipe-basic-usage"></a>Основное использование канала
 
-[!code-csharp[](~/samples/snippets/csharp/pipelines/Pipe.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/Pipe.cs" id="snippet":::
 
 Существует два цикла:
 
@@ -128,7 +128,7 @@ async Task ProcessLinesAsync(NetworkStream stream)
 * <xref:System.IO.Pipelines.PipeOptions.PauseWriterThreshold>. Определяет, сколько данных следует буферизовать, прежде чем вызовы к <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> будут приостановлены.
 * <xref:System.IO.Pipelines.PipeOptions.ResumeWriterThreshold>. Определяет, сколько данных средство чтения должно пронаблюдать, прежде чем вызовы к `PipeWriter.FlushAsync` возобновятся.
 
-![Схема с ResumeWriterThreshold и PauseWriterThreshold](./media/pipelines/resume-pause.png)
+![Схема с ResumeWriterThreshold и PauseWriterThreshold](media/pipelines/resume-pause.png)
 
 <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A?displayProperty=nameWithType>.
 
@@ -155,7 +155,7 @@ var pipe = new Pipe(options);
 * используется текущий <xref:System.Threading.SynchronizationContext>.
 * Если `SynchronizationContext` отсутствует, он использует пул потоков для выполнения обратных вызовов.
 
-[!code-csharp[](~/samples/snippets/csharp/pipelines/Program.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/Program.cs" id="snippet":::
 
 [PipeScheduler.ThreadPool](xref:System.IO.Pipelines.PipeScheduler.ThreadPool) — это реализация <xref:System.IO.Pipelines.PipeScheduler>, которая позволяет поместить обратные вызовы в очередь пула потоков. `PipeScheduler.ThreadPool` является параметром по умолчанию и, как правило, лучшим выбором. [PipeScheduler.Inline](xref:System.IO.Pipelines.PipeScheduler.Inline) может привести к непредвиденным последствиям, например к взаимоблокировкам.
 
@@ -191,7 +191,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 Следующий код считывает одно сообщение из `PipeReader` и возвращает его вызывающему объекту.
 
-[!code-csharp[ReadSingleMsg](~/samples/snippets/csharp/pipelines/ReadSingleMsg.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/ReadSingleMsg.cs" id="snippet":::
 
 Предыдущий код:
 
@@ -209,7 +209,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 Следующий код считывает все сообщения из `PipeReader` и вызывает `ProcessMessageAsync` для каждого из них.
 
-[!code-csharp[MyConnection1](~/samples/snippets/csharp/pipelines/MyConnection1.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyConnection1.cs" id="snippet":::
 
 ### <a name="cancellation"></a>Отмена
 
@@ -219,7 +219,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 * Создает исключение <xref:System.OperationCanceledException>, если `CancellationToken` отменяется при ожидании чтения.
 * Поддерживает способ отмены текущей операции чтения с помощью <xref:System.IO.Pipelines.PipeReader.CancelPendingRead%2A?displayProperty=nameWithType>, что позволяет избежать исключения. Вызов `PipeReader.CancelPendingRead` приводит к тому, что текущий или следующий вызов `PipeReader.ReadAsync` возвращает <xref:System.IO.Pipelines.ReadResult> с `IsCanceled` со значением `true`. Это может быть полезно для остановки существующего цикла чтения без сбоев и исключений.
 
-[!code-csharp[MyConnection](~/samples/snippets/csharp/pipelines/MyConnection.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyConnection.cs" id="snippet":::
 
 <a name="gotchas"></a>
 
@@ -245,7 +245,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[DoNotUse#1](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -255,7 +255,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[DoNotUse#2](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet2)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet2":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -263,7 +263,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[DoNotUse#3](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet3)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet3":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -276,7 +276,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[DoNotUse#4](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet4)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet4":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -289,7 +289,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[DoNotUse#5](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet5)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet5":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -299,9 +299,9 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[DoNotUse#Message](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippetMessage)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippetMessage":::
 
-[!code-csharp[DoNotUse#6](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet6)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/DoNotUse.cs" id="snippet6":::
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -309,7 +309,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 <xref:System.IO.Pipelines.PipeWriter> управляет буферами для записи от имени вызывающего объекта. `PipeWriter` реализует [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter%601). `IBufferWriter<byte>` позволяет получить доступ к буферам для выполнения операций записи без дополнительных буферных копий.
 
-[!code-csharp[MyPipeWriter](~/samples/snippets/csharp/pipelines/MyPipeWriter.cs?name=snippet)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyPipeWriter.cs" id="snippet":::
 
 Предыдущий код:
 
@@ -323,7 +323,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 * Копирует существующий буфер в `PipeWriter`.
 * Вызывает `GetSpan`, выполняет `Advance` надлежащим образом и вызывает <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A>.
 
-[!code-csharp[MyPipeWriter#2](~/samples/snippets/csharp/pipelines/MyPipeWriter.cs?name=snippet2)]
+:::code language="csharp" source="~/samples/snippets/csharp/pipelines/MyPipeWriter.cs" id="snippet2":::
 
 ### <a name="cancellation"></a>Отмена
 
@@ -347,4 +347,30 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 ## <a name="streams"></a>Потоки
 
-При чтении или записи потоковых данных данные обычно считываются с помощью десериализатора и записываются с помощью сериализатора. Большая часть API потока чтения и записи имеет параметр `Stream`. Чтобы упростить интеграцию с существующими API, `PipeReader` и `PipeWriter` предоставляют <xref:System.IO.Pipelines.PipeReader.AsStream%2A>.  <xref:System.IO.Pipelines.PipeWriter.AsStream%2A> возвращает реализацию `Stream` на основе `PipeReader` или `PipeWriter`.
+При чтении или записи потоковых данных данные обычно считываются с помощью десериализатора и записываются с помощью сериализатора. Большая часть API потока чтения и записи имеет параметр `Stream`. Чтобы упростить интеграцию с существующими API, `PipeReader` и `PipeWriter` предоставляют <xref:System.IO.Pipelines.PipeReader.AsStream%2A>. <xref:System.IO.Pipelines.PipeWriter.AsStream%2A> возвращает реализацию `Stream` на основе `PipeReader` или `PipeWriter`.
+
+### <a name="stream-example"></a>Примеры потоков
+
+Экземпляры `PipeReader` и `PipeWriter` могут быть созданы с помощью статических методов `Create`, для которых задан объект <xref:System.IO.Stream> и необязательные соответствующие параметры создания.
+
+<xref:System.IO.Pipelines.StreamPipeReaderOptions> позволяют контролировать создание экземпляра `PipeReader` со следующими параметрами:
+
+- <xref:System.IO.Pipelines.StreamPipeReaderOptions.BufferSize?displayProperty=nameWithType> — минимальный размер буфера в байтах, используемый при аренде памяти из пула, и значение по умолчанию `4096`.
+- Флаг <xref:System.IO.Pipelines.StreamPipeReaderOptions.LeaveOpen?displayProperty=nameWithType> определяет, остается ли базовый поток открытым после завершения `PipeReader`, и его значение по умолчанию — `false`.
+- <xref:System.IO.Pipelines.StreamPipeReaderOptions.MinimumReadSize?displayProperty=nameWithType> представляет пороговое значение оставшихся байтов в буфере до выделения нового буфера, и его значение по умолчанию — `1024`.
+- <xref:System.IO.Pipelines.StreamPipeReaderOptions.Pool?displayProperty=nameWithType> — это `MemoryPool<byte>`, используемый при выделении памяти, а значение по умолчанию — `null`.
+
+<xref:System.IO.Pipelines.StreamPipeWriterOptions> позволяют контролировать создание экземпляра `PipeWriter` со следующими параметрами:
+
+- Флаг <xref:System.IO.Pipelines.StreamPipeWriterOptions.LeaveOpen?displayProperty=nameWithType> определяет, остается ли базовый поток открытым после завершения `PipeWriter`, и его значение по умолчанию — `false`.
+- <xref:System.IO.Pipelines.StreamPipeWriterOptions.MinimumBufferSize?displayProperty=nameWithType> представляет минимальный размер буфера, используемый при аренде памяти из <xref:System.IO.Pipelines.StreamPipeWriterOptions.Pool>, и его значение по умолчанию — `4096`.
+- <xref:System.IO.Pipelines.StreamPipeWriterOptions.Pool?displayProperty=nameWithType> — это `MemoryPool<byte>`, используемый при выделении памяти, а значение по умолчанию — `null`.
+
+> [!IMPORTANT]
+> При создании экземпляров `PipeReader` и `PipeWriter` с помощью методов `Create` необходимо учитывать время существования объекта `Stream`. Если требуется доступ к потоку после того, как модуль чтения или записи завершит работу, необходимо установить для флага `LeaveOpen` значение `true` для параметров создания. В противном случае поток будет закрыт.
+
+В следующем коде показано создание экземпляров `PipeReader` и `PipeWriter` с помощью методов `Create` из потока.
+
+:::code language="csharp" source="snippets/pipelines/Program.cs":::
+
+Приложение использует <xref:System.IO.StreamReader> для чтения файла *lorem-ipsum.txt* в виде потока. <xref:System.IO.FileStream> передается в <xref:System.IO.Pipelines.PipeReader.Create%2A?displayProperty=nameWithType>, который создает экземпляр объекта `PipeReader`. Затем консольное приложение передает стандартный выходной поток в <xref:System.IO.Pipelines.PipeWriter.Create%2A?displayProperty=nameWithType> с помощью <xref:System.Console.OpenStandardOutput?displayProperty=nameWithType>. Пример поддерживает [отмену](#cancellation).

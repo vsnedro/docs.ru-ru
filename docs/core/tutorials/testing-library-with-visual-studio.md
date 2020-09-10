@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: f20b089fd22794d5aaeff34502e960fe41a565e1
-ms.sourcegitcommit: 1cbd77da54405ea7dba343ac0334fb03237d25d2
+ms.openlocfilehash: 049f0636b1c2c2df33461714aea5a11810ef00ad
+ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84700973"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89359198"
 ---
 # <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio"></a>Учебник. Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio
 
@@ -207,4 +207,4 @@ ms.locfileid: "84700973"
 Библиотеку не нужно распространять как пакет. Ее можно объединить с консольным приложением, где она используется. Чтобы узнать, как опубликовать консольное приложение, ознакомьтесь с предыдущим руководством в этой серии:
 
 > [!div class="nextstepaction"]
-> [Публикация консольного приложения .NET Core в Visual Studio](publishing-with-visual-studio.md)
+> [Публикация консольного приложения .NET Core с помощью Visual Studio](publishing-with-visual-studio.md)
