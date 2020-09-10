@@ -5,7 +5,7 @@
     - name: Обзор
       displayName: get started
       href: getting-started/index.md
-    - name: Введение в язык C# и платформу .NET Framework
+    - name: Основы работы с языком C# и .NET
       href: getting-started/introduction-to-the-csharp-language-and-the-net-framework.md
 - name: Учебники
   items:
@@ -80,8 +80,10 @@
       href: tour-of-csharp/features.md
 - name: Новые возможности C#
   items:
-    - name: C# 8.0
+    - name: C# 9.0
       displayName: what's new
+      href: whats-new/csharp-9.md
+    - name: C# 8.0
       href: whats-new/csharp-8.md
     - name: "C#\_7.3"
       href: whats-new/csharp-7-3.md
@@ -1066,7 +1068,7 @@
           href: programming-guide/events/index.md
         - name: Практическое руководство. Подписка и отмена подписки на события
           href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
-        - name: 'Практическое руководство. Публикация событий, соответствующих рекомендациям .NET Framework'
+        - name: 'Практическое руководство. Публикация событий, соответствующих рекомендациям .NET'
           href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
         - name: Практическое руководство. Создание событий базового класса в производных классах
           href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
