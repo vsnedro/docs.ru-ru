@@ -5,30 +5,30 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ff226ce3-f6b5-47a1-8d22-dc78b67e07f5
-ms.openlocfilehash: f3e28adc2cf7c24cee9ee344eb78404f01b79793
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 2ec9415f63151443d5008fbce471fabeb89cdb91
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70780720"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656175"
 ---
 # <a name="sqldependency-in-an-aspnet-application"></a>SqlDependency в приложении ASP.NET
-В примере этого раздела показано, как косвенно использовать <xref:System.Data.SqlClient.SqlDependency>, используя объект ASP.NET <xref:System.Web.Caching.SqlCacheDependency>. Объект <xref:System.Web.Caching.SqlCacheDependency> использует <xref:System.Data.SqlClient.SqlDependency> для прослушивания уведомлений и правильного обновления кэша.  
+В приведенном в этом разделе примере показано, как применять <xref:System.Data.SqlClient.SqlDependency> косвенно, используя объект <xref:System.Web.Caching.SqlCacheDependency> ASP.NET. Объект <xref:System.Web.Caching.SqlCacheDependency> использует <xref:System.Data.SqlClient.SqlDependency> для прослушивания уведомлений и корректного обновления кэша.  
   
 > [!NOTE]
 > В примере кода предполагается, что вы включили уведомления о запросах, выполняя скрипты, [включив уведомления о запросах](enabling-query-notifications.md).  
   
 ## <a name="about-the-sample-application"></a>О примере приложения  
- Пример приложения использует одну веб-страницу ASP.NET для вывода сведений о продукте из базы данных **AdventureWorks** SQL Server в <xref:System.Web.UI.WebControls.GridView> элементе управления. При загрузке страницы код записывает текущее время в элемент управления <xref:System.Web.UI.WebControls.Label>. Затем он определяет объект <xref:System.Web.Caching.SqlCacheDependency> и устанавливает свойства на объекте <xref:System.Web.Caching.Cache> для хранения данных кэша до трех минут. Затем код выполняет подключение к базе данных и получает данные. После того, как страница загружена и приложение выполняется, ASP.NET получает данные из кэша. Это можно проверить, убедившись, что время на странице не меняется. Если наблюдаемые данные изменяются, ASP.NET делает кэш недействительным и вновь заполняет элемент управления `GridView` свежими данными, обновляя время, отображаемое в элементе управления `Label`.  
+ В примере приложения используется одна веб-страница ASP.NET для вывода сведений о продуктах из базы данных **AdventureWorks** SQL Server в элемент управления <xref:System.Web.UI.WebControls.GridView>. При загрузке страницы код записывает текущее время в элемент управления <xref:System.Web.UI.WebControls.Label>. Затем он определяет объект <xref:System.Web.Caching.SqlCacheDependency> и задает свойства объекта <xref:System.Web.Caching.Cache> для сохранения данных кэша до трех минут. Затем код подключается к базе данных и получает данные. При загрузке страницы и работе приложения ASP.NET будет получать данные из кэша, которые можно проверить, отметив, что время на странице не меняется. Если наблюдаемые данные изменяются, ASP.NET делает недействительным кэш и повторно заполняет элемент управления `GridView` новыми данными, обновляя время в элементе управления `Label`.  
   
 ## <a name="creating-the-sample-application"></a>Создание примера приложения  
- Для создания и запуска примера приложения выполните следующие шаги.  
+ Чтобы создать и запустить пример приложения, выполните следующие действия:  
   
-1. Создайте новый веб-узел ASP.NET.  
+1. Создание нового веб-сайта ASP.NET.  
   
-2. Добавьте элемент управления <xref:System.Web.UI.WebControls.Label> и <xref:System.Web.UI.WebControls.GridView> на страницу Default.aspx.  
+2. Добавьте <xref:System.Web.UI.WebControls.Label> и элемент управления <xref:System.Web.UI.WebControls.GridView> на страницу Default.aspx.  
   
-3. Откройте модуль класса страницы и добавить следующие директивы:  
+3. Откройте модуль класса страницы и добавьте следующие директивы:  
   
     ```vb  
     Option Strict On  
@@ -47,17 +47,21 @@ ms.locfileid: "70780720"
      [!code-csharp[DataWorks SqlDependency.AspNet#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/CS/Default.aspx.cs#1)]
      [!code-vb[DataWorks SqlDependency.AspNet#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#1)]  
   
-5. Добавьте два вспомогательных метода, `GetConnectionString` и `GetSQL`. В заданной строке соединения используется интегрированная безопасность. Необходимо убедиться, что используемая учетная запись имеет необходимые разрешения базы данных и что образец базы данных, **AdventureWorks**, включает уведомления.
+5. Добавьте два вспомогательных метода: `GetConnectionString` и `GetSQL`. В определенной строке соединения используются интегрированные средства безопасности. Необходимо будет убедиться, что используемая учетная запись обладает необходимыми разрешениями для базы данных, а в образце базы данных **AdventureWorks** включены уведомления.
   
      [!code-csharp[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/CS/Default.aspx.cs#2)]
      [!code-vb[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#2)]  
   
 ### <a name="testing-the-application"></a>Тестирование приложения  
- Приложение кэширует данные, отображаемые на веб-форме, и обновляет их каждые три минуты, если нет никаких действий. Если в базе данных происходит изменение, кэш немедленно обновляется. Запустите приложение из среды Visual Studio, которая загружает страницу в браузер. Отображаемое время обновления кэша указывает, когда кэш обновлялся в последний раз. Подождите три минуты, после чего обновите страницу, в результате чего возникнет событие запроса к серверу. Отметим, что время, отображаемое на странице, изменилось. Если обновить страницу раньше, чем через три минуты, время, отображаемое на странице, останется тем же.  
+ Приложение кэширует данные, отображаемые в веб-форме, и обновляет их каждые три минуты, если нет действий. Если в базе данных происходит изменение, кэш обновляется немедленно. Запустите приложение из Visual Studio, чтобы загрузить страницу в браузер. Отображаемое время обновления кэша указывает, когда кэш был обновлен последний раз. Подождите три минуты, а затем обновите страницу, в результате чего произойдет событие обратной передачи. Обратите внимание, что время, отображаемое на странице, изменилось. Если обновить страницу меньше чем через три минуты, время, отображаемое на странице, останется прежним.  
   
- Теперь обновите данные в базе данных с помощью команды Transact-SQL UPDATE, после чего обновите страницу. Отображаемое время теперь указывает, что кэш был обновлен новыми данными из базы данных. Отметим, что хотя кэш обновлен, время, отображаемое на странице, не изменяется, пока не возникнет событие запроса к серверу.  
-  
-## <a name="see-also"></a>См. также
+ Теперь обновите данные в базе данных, используя команду Transact-SQL UPDATE, и обновите страницу. Отображаемое время теперь указывает, что кэш был обновлен с учетом новых данных из базы данных. Обратите внимание, что хотя кэш обновляется, время на странице не изменяется, пока не произойдет событие обратной передачи.  
 
-- [Уведомления запросов в SQL Server](query-notifications-in-sql-server.md)
+## <a name="distributed-cache-synchronization-using-sql-dependency"></a>Синхронизация распределенного кэша с использованием зависимости SQL
+
+Некоторые из таких распределенных кэшей, как [NCache](https://www.alachisoft.com/ncache) , обеспечивают поддержку синхронизации базы данных SQL и кэша с помощью [зависимости SQL](https://www.alachisoft.com/resources/docs/ncache/prog-guide/sql-dependency.html). Дополнительные сведения и пример реализации исходного кода см. в разделе [Пример использования зависимости SQL для распределенного кэша](https://github.com/Alachisoft/NCache-Samples/tree/master/dotnet/Dependencies/SQLDependency).
+
+## <a name="see-also"></a>См. также раздел
+
+- [Уведомления о запросах в SQL Server](query-notifications-in-sql-server.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)
