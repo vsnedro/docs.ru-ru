@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3e4a5936bbac4e77efc5f7e68b55ddf49bae5d43
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 6af63c0a58a3273aa98fa70f22e3637b481806b4
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614717"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497307"
 ---
 ### <a name="path-colon-checks-are-stricter"></a>Более строгие проверки двоеточий в пути
 
@@ -14,13 +14,15 @@ ms.locfileid: "85614717"
 
 #### <a name="suggestion"></a>Предложение
 
-При передаче универсального кода ресурса (URI) в соответствующий API сначала измените строку, чтобы она содержала допустимый путь.<ul><li>Удалите схему из URL-адресов вручную (например, удалите `file://` из URL-адресов)
+При передаче универсального кода ресурса (URI) в соответствующий API сначала измените строку, чтобы она содержала допустимый путь.
 
-- Передайте универсальный код ресурса (URI) в класс <xref:System.Uri> и используйте <xref:System.Uri.LocalPath>
+- Удалите схему из URL-адресов вручную (например, удалите `file://` из URL-адресов).
 
-Кроме того, вы можете отказаться от новой нормализации путей, установив для переключателя `Switch.System.IO.UseLegacyPathHandling` AppContext значение true.
+- Передайте универсальный код ресурса (URI) в класс <xref:System.Uri> и используйте <xref:System.Uri.LocalPath>.
 
-| name    | Значение       |
+Кроме того, вы можете отказаться от новой нормализации путей, установив для переключателя `Switch.System.IO.UseLegacyPathHandling` AppContext значение `true`.
+
+| Имя    | Значение       |
 |:--------|:------------|
 | Область   | Пограничный случай        |
 | Version | 4.6.2       |

@@ -1,0 +1,350 @@
+- name: LINQ
+  items:
+    - name: Общие сведения о LINQ
+      href: index.md
+    - name: LINQ to XML
+      items:
+        - name: Начало работы
+          items:
+            - name: Общие сведения о LINQ to XML
+              href: linq-xml-overview.md
+            - name: LINQ to XML или DOM
+              href: linq-xml-vs-dom.md
+            - name: LINQ to XML и другие технологии XML
+              href: linq-xml-vs-xml-technologies.md
+        - name: Руководство по программированию
+          items:
+            - name: Общие сведения о программировании на LINQ to XML
+              items:
+                - name: Функциональное и процедурное программирование
+                  href: functional-vs-procedural-programming.md
+                - name: Общие сведения о классах LINQ to XML
+                  href: linq-xml-classes-overview.md
+                - name: Общие сведения о классе XElement
+                  href: xelement-class-overview.md
+                - name: Общие сведения о классе XAttribute
+                  href: xattribute-class-overview.md
+                - name: Общие сведения о классе XDocument
+                  href: xdocument-class-overview.md
+                - name: Практическое руководство. Сборка примеров LINQ to XML
+                  href: build-linq-xml-examples.md
+            - name: Деревья XML
+              items:
+                - name: Функциональная сборка
+                  href: functional-construction.md
+                - name: Создание деревьев XML в C#
+                  href: create-xml-trees.md
+                - name: XML-литералы в Visual Basic
+                  href: xml-literals.md
+                - name: Анализ XML
+                  items:
+                    - name: Практическое руководство. Анализ строки
+                      href: parse-string.md
+                    - name: Практическое руководство. Загрузка XML из файла
+                      href: load-xml-file.md
+                    - name: Сохранение пробелов при загрузке и анализе XML
+                      href: preserve-white-space-loading-parsing-xml.md
+                    - name: Практическое руководство. Перехват ошибок разбора
+                      href: catch-parsing-errors.md
+                    - name: Практическое руководство. Создание дерева из XmlReader
+                      href: create-tree-xmlreader.md
+                    - name: Практическое руководство. Потоковая передача фрагментов XML из XmlReader
+                      href: stream-xml-fragments-xmlreader.md
+                - name: Практическое руководство. Заполнение дерева XML с помощью XmlWriter
+                  href: populate-xml-tree-xmlwriter.md
+                - name: Практическое руководство. Проверка с использованием XSD
+                  href: validate-xsd.md
+                - name: Допустимое содержимое объектов XElement и XDocument
+                  href: valid-content-xelement-xdocument-objects.md
+            - name: Работа с пространствами имен XML
+              items:
+                - name: Обзор пространств имен
+                  href: namespaces-overview.md
+                - name: Практическое руководство. Создание документа с пространствами имен (C#)
+                  href: create-document-namespaces-csharp.md
+                - name: Практическое руководство. Создание документа с пространствами имен (Visual Basic)
+                  href: create-document-namespaces-visual-basic.md
+                - name: Практическое руководство. Управление префиксами пространств имен (C#)
+                  href: control-namespace-prefixes.md
+                - name: Области пространств имен по умолчанию
+                  href: scope-default-namespaces.md
+                - name: Работа с глобальными пространствами имен в Visual Basic
+                  href: work-global-namespaces.md
+                - name: Практическое руководство. Создание запросов к XML в пространствах имен
+                  href: write-queries-xml-namespaces.md
+            - name: Сериализация деревьев XML
+              items:
+                - name: Сохранение пробелов при сериализации
+                  href: preserve-white-space-serializing.md
+                - name: Сериализация с использованием декларации XML
+                  href: serialize-xml-declaration.md
+                - name: Сериализация в файлы и объекты TextWriter и XmlWriter
+                  href: serialize-files-textwriters-xmlwriters.md
+                - name: Сериализация в XmlReader (вызов XSLT)
+                  href: serialize-xmlreader-invoke-xslt.md
+            - name: Оси LINQ to XML
+              items:
+                - name: Общие сведения об осях LINQ to XML
+                  href: linq-xml-axes-overview.md
+                - name: Практическое руководство. Извлечение коллекции элементов
+                  href: retrieve-collection-elements.md
+                - name: Практическое руководство. Извлечение значений элемента
+                  href: retrieve-value-element.md
+                - name: Практическое руководство. Фильтрация по именам элементов
+                  href: filter-element-names.md
+                - name: Практическое руководство. Связанные вызовы метода оси
+                  href: chain-axis-method-calls.md
+                - name: Практическое руководство. Извлечение одного дочернего элемента
+                  href: retrieve-single-child-element.md
+                - name: Практическое руководство. Извлечение коллекции атрибутов
+                  href: retrieve-collection-attributes.md
+                - name: Практическое руководство. Извлечение одного атрибута
+                  href: retrieve-single-attribute.md
+                - name: Практическое руководство. Извлечение значений атрибута
+                  href: retrieve-value-attribute.md
+                - name: Практическое руководство. Извлечение поверхностных значений элемента
+                  href: retrieve-shallow-value-element.md
+                - name: Встроенные в язык оси в Visual Basic
+                  href: language-integrated-axes.md
+            - name: Деревья XML запросов
+              items:
+                - name: Общие сведения о деревьях XML запросов
+                  href: query-xml-trees-overview.md
+                - name: Базовые запросы
+                  items:
+                    - name: Практическое руководство. Поиск элементов с определенным атрибутом
+                      href: find-element-specific-attribute.md
+                    - name: Практическое руководство. Поиск элементов с определенным дочерним элементом
+                      href: find-element-specific-child-element.md
+                    - name: Запрос объекта XElement и запрос XDocument
+                      href: query-xdocument-vs-query-xelement.md
+                    - name: Практическое руководство. Поиск потомков с определенным именем элемента
+                      href: find-descendants-specific-element-name.md
+                    - name: Практическое руководство. Поиск одного потомка с помощью метода потомков
+                      href: find-single-descendant-descendants-method.md
+                    - name: Практическое руководство. Создание запросов со сложной фильтрацией
+                      href: write-queries-complex-filtering.md
+                    - name: Практическое руководство. Фильтрация по необязательным элементам
+                      href: filter-optional-element.md
+                    - name: Практическое руководство. Поиск всех узлов в пространстве имен
+                      href: find-all-nodes-namespace.md
+                    - name: Практическое руководство. Сортировка элементов
+                      href: sort-elements.md
+                    - name: Практическое руководство. Сортировка элементов по множеству ключей
+                      href: sort-elements-multiple-keys.md
+                    - name: Практическое руководство. Вычисление промежуточных значений
+                      href: calculate-intermediate-values.md
+                    - name: 'Практическое руководство. Написание запроса, ищущего элементы на основании контекста'
+                      href: write-query-finds-elements-based-context.md
+                    - name: Практическое руководство. Отладка пустых результирующих наборов запроса
+                      href: debug-empty-query-results-sets.md
+                - name: Проекции и преобразования
+                  items:
+                    - name: Практическое руководство. Работа со словарями с помощью LINQ to XML
+                      href: work-dictionaries-linq-xml.md
+                    - name: Практическое руководство. Преобразование формы дерева XML
+                      href: transform-shape-xml-tree.md
+                    - name: Практическое руководство. Управление типом проекции
+                      href: control-type-projection.md
+                    - name: Практическое руководство. Проецирование нового типа
+                      href: project-new-type.md
+                    - name: Практическое руководство. Проецирование графа объекта
+                      href: project-object-graph.md
+                    - name: Практическое руководство. Проецирование анонимного типа
+                      href: project-anonymous-type.md
+                    - name: Практическое руководство. Создание текстовых файлов из XML
+                      href: generate-text-files-xml.md
+                    - name: Практическое руководство. Создание кода XML из CSV-файлов
+                      href: generate-xml-csv-files.md
+                - name: Дополнительные способы создания запросов
+                  items:
+                    - name: Практическое руководство. Объединение двух коллекций
+                      href: join-two-collections.md
+                    - name: Практическое руководство. Создание иерархии с помощью группировки
+                      href: create-hierarchy-grouping.md
+                    - name: Практическое руководство. Запрос LINQ to XML с использованием XPath
+                      href: query-linq-xml-xpath.md
+                    - name: Практическое руководство. Запись метода оси LINQ to XML
+                      href: write-linq-xml-axis-method.md
+                    - name: Выполнение потоковых преобразований текста в XML (C#)
+                      href: perform-streaming-transformations-text-xml.md
+                    - name: Практическое руководство. Перечисление всех узлов в дереве
+                      href: list-all-nodes-tree.md
+                    - name: Практическое руководство. Извлечение абзацев из документа в формате Office Open XML
+                      href: retrieve-paragraphs-office-open-xml-document.md
+                    - name: Практическое руководство. Изменение документа в формате Office Open XML
+                      href: modify-office-open-xml-document.md
+                    - name: Практическое руководство. Заполнение дерева XML из файловой системы
+                      href: populate-xml-tree-file-system.md
+                - name: LINQ to XML для пользователей XPath
+                  items:
+                    - name: Сравнительные характеристики XPath и LINQ to XML
+                      href: comparison-xpath-linq-xml.md
+                    - name: Поиск дочерних элементов
+                      href: find-child-element.md
+                    - name: Поиск списка дочерних элементов
+                      href: find-list-child-elements.md
+                    - name: Поиск корневого элемента
+                      href: find-root-element.md
+                    - name: Поиск элементов-потомков
+                      href: find-descendant-elements.md
+                    - name: Фильтрация по атрибуту
+                      href: filter-attribute.md
+                    - name: Поиск связанных элементов
+                      href: find-related-elements.md
+                    - name: Поиск элементов в пространстве имен
+                      href: find-elements-namespace.md
+                    - name: Поиск предшествующих элементов того же уровня
+                      href: find-preceding-siblings.md
+                    - name: Поиск потомков дочернего элемента
+                      href: find-descendants-child-element.md
+                    - name: Поиск объединения двух путей расположения
+                      href: find-union-two-location-paths.md
+                    - name: Поиск узлов того же уровня
+                      href: find-sibling-nodes.md
+                    - name: Поиск атрибута родительского элемента
+                      href: find-attribute-parent.md
+                    - name: Поиск атрибутов элементов того же уровня с определенным именем
+                      href: find-attributes-siblings-specific-name.md
+                    - name: Поиск элементов с определенным атрибутом
+                      href: find-elements-specific-attribute.md
+                    - name: Поиск дочерних элементов по положению
+                      href: find-child-elements-based-position.md
+                    - name: Поиск ближайшего предшествующего элемента того же уровня
+                      href: find-immediate-preceding-sibling.md
+                - name: Чистые функциональные преобразования XML
+                  items:
+                    - name: Введение в чистые функциональные преобразования
+                      href: introduction-pure-functional-transformations.md
+                    - name: Основные принципы и терминология (функциональное преобразование)
+                      href: concepts-terminology-functional-transformation.md
+                    - name: Функциональное и императивное программирование
+                      href: functional-vs-imperative-programming.md
+                    - name: Рефакторинг в чистые функции
+                      href: refactor-pure-functions.md
+                    - name: Применимость функциональных преобразований
+                      href: applicability-functional-transformation.md
+                    - name: Функциональное преобразование XML
+                      href: functional-transformation-xml.md
+                    - name: Отложенное исполнение и отложенные вычисления
+                      href: deferred-execution-lazy-evaluation.md
+                    - name: Пример отложенного выполнения
+                      href: deferred-execution-example.md
+                    - name: Учебник. Объединение запросов в цепочку (C#)
+                      items:
+                        - name: Пример цепочки запросов (C#)
+                          href: chain-queries-example.md
+                        - name: Промежуточная материализация (C#)
+                          href: intermediate-materialization.md
+                        - name: Связывание стандартных операторов запросов (C#)
+                          href: chain-standard-query-operators-together.md
+                    - name: Учебник. Обработка содержимого документа WordprocessingML
+                      items:
+                        - name: Форма документов WordprocessingML
+                          href: xml-shape-wordprocessingml-documents.md
+                        - name: Создание исходного документа в формате Office Open XML
+                          href: create-source-office-open-xml-document.md
+                        - name: Поиск стиля абзаца по умолчанию
+                          href: find-default-paragraph-style.md
+                        - name: Извлечение абзацев и стилей
+                          href: retrieve-paragraphs-styles.md
+                        - name: Извлечение текста абзацев
+                          href: retrieve-text-paragraphs.md
+                        - name: Рефакторинг с использованием метода расширения
+                          href: refactor-extension-method.md
+                        - name: Рефакторинг с использованием чистых функций
+                          href: refactor-pure-function.md
+                        - name: Проецирование XML в другую форму
+                          href: project-xml-different-shape.md
+                        - name: Поиск текста в документах Word
+                          href: find-text-word-documents.md
+                        - name: Сведения о документах WordprocessingML в формате Office Open XML
+                          items:
+                            - name: Документ WordprocessingML со стилями
+                              href: wordprocessingml-document-styles.md
+                            - name: Раздел со стилями документа WordprocessingML
+                              href: style-part-wordprocessingml-document.md
+                            - name: 'Пример, выводящий части документа в формате Office Open XML'
+                              href: example-outputs-office-open-xml-document-parts.md
+            - name: Изменение деревьев XML
+              items:
+                - name: Изменение дерева XML в памяти и функциональная сборка
+                  href: in-memory-xml-tree-modification-vs-functional-construction.md
+                - name: 'Добавление элементов, атрибутов и узлов в дерево XML'
+                  href: add-elements-attributes-nodes-xml-tree.md
+                - name: 'Изменение элементов, атрибутов и узлов в дереве XML'
+                  href: modify-elements-attributes-nodes-xml-tree.md
+                - name: 'Удаление элементов, атрибутов и узлов из дерева XML'
+                  href: remove-elements-attributes-nodes-xml-tree.md
+                - name: "Обслуживание пар \"имя\_— значение\""
+                  href: maintain-name-value-pairs.md
+                - name: Практическое руководство. Изменение пространства имен для всего дерева XML
+                  href: change-namespace-entire-xml-tree.md
+            - name: Производительность
+              items:
+                - name: Производительность связанных запросов
+                  href: performance-chained-queries.md
+                - name: Атомарные объекты XName и XNamespace
+                  href: atomized-xname-xnamespace-objects.md
+                - name: Предварительная атомизация объектов XName
+                  href: pre-atomization-xname-objects.md
+                - name: Статические компилированные запросы
+                  href: statically-compiled-queries.md
+            - name: Сложные методы программирования на LINQ to XML
+              items:
+                - name: Примечания LINQ to XML
+                  href: linq-xml-annotations.md
+                - name: События LINQ to XML
+                  href: linq-xml-events.md
+                - name: Программа с узлами
+                  href: program-nodes.md
+                - name: Смешанные ошибки в декларативном и императивном коде
+                  href: mixed-declarative-imperative-code-bugs.md
+                - name: Практическое руководство. Потоковая передача фрагментов XML с доступом к сведениям заголовка
+                  href: stream-xml-fragments-access-header-information.md
+                - name: Практическое руководство. Выполнение потокового преобразования крупных XML-документов
+                  href: perform-streaming-transform-large-xml-documents.md
+                - name: Практическое руководство. Чтение и запись кодированного документа
+                  href: read-write-encoded-document.md
+                - name: Использование XSLT для преобразования дерева XML
+                  href: use-xslt-transform-xml-tree.md
+                - name: Практическое руководство. Использование примечаний для преобразования деревьев LINQ to XML в стиль XSLT
+                  href: use-annotations-transform-linq-xml-trees-xslt-style.md
+                - name: 'Сериализация графов объектов, содержащих объекты XElement'
+                  items:
+                    - name: Практическое руководство. Сериализация с использованием XmlSerializer
+                      href: serialize-xmlserializer.md
+                    - name: Практическое руководство. Сериализация с использованием DataContractSerializer
+                      href: serialize-datacontractserializer.md
+            - name: Безопасность LINQ to XML
+              href: linq-xml-security.md
+            - name: Примеры XML-документов
+              items:
+                - name: 'Пример XML-файла: типичный заказ на покупку'
+                  href: sample-xml-file-typical-purchase-order.md
+                - name: 'Пример XML-файла: типичный заказ на покупку в пространстве имен'
+                  href: sample-xml-file-typical-purchase-order-namespace.md
+                - name: 'Пример XML-файла: несколько заказов на покупку'
+                  href: sample-xml-file-multiple-purchase-orders.md
+                - name: 'Пример XML-файла: несколько заказов на покупку в пространстве имен'
+                  href: sample-xml-file-multiple-purchase-orders-namespace.md
+                - name: 'Пример XML-файла: Проверка конфигурации'
+                  href: sample-xml-file-test-configuration.md
+                - name: 'Пример XML-файла: конфигурация тестирования в пространстве имен'
+                  href: sample-xml-file-test-configuration-namespace.md
+                - name: 'Пример XML-файла: заказчики и заказы'
+                  href: sample-xml-file-customers-orders.md
+                - name: 'Образец XSD-файла: заказчики и заказы'
+                  href: sample-xsd-file-customers-orders.md
+                - name: 'Пример XML-файла: заказчики и заказы в пространстве имен'
+                  href: sample-xml-file-customers-orders-namespace.md
+                - name: 'Пример XML-файла: Числовые данные.'
+                  href: sample-xml-file-numerical-data.md
+                - name: 'Пример XML-файла: числовые данные в пространстве имен'
+                  href: sample-xml-file-numerical-data-namespace.md
+                - name: 'Пример XML-файла: Books'
+                  href: sample-xml-file-books.md
+                - name: 'Пример XML-файла: консолидированные заказы на покупку'
+                  href: sample-xml-file-consolidated-purchase-orders.md
+        - name: Справочник
+          href: reference.md

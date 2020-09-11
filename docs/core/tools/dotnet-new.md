@@ -4,13 +4,13 @@ description: Команда dotnet new создает проекты .NET Core �
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 04/10/2020
-ms.openlocfilehash: ec41b3b79ed5eded7c9124d3e4d95c658ee39580
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.date: 09/01/2020
+ms.openlocfilehash: 70297cfe15732716b9ceacae091abe3c8957fb61
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86173124"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89495477"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -62,15 +62,15 @@ dotnet new -h|--help
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
 | Консольное приложение                          | [Консоль](#console)             | [C#], F#, VB | Общее/консоль                        | 1.0        |
 | Библиотека классов                                | [classlib](#classlib)           | [C#], F#, VB | Общее/библиотека                        | 1.0        |
-| Приложение WPF                              | [wpf](#wpf)                     | [C#]         | Общее/WPF                            | 3.0        |
-| Библиотека классов WPF                            | [wpflib](#wpf)                  | [C#]         | Общее/WPF                            | 3.0        |
-| Библиотека настраиваемых элементов управления WPF                   | [wpfcustomcontrollib](#wpf)     | [C#]         | Общее/WPF                            | 3.0        |
-| Библиотека пользовательских элементов управления WPF                     | [wpfusercontrollib](#wpf)       | [C#]         | Общее/WPF                            | 3.0        |
-| Приложение Windows Forms (WinForms)         | [winforms](#winforms)           | [C#]         | Общее (WinForms)                       | 3.0        |
-| Библиотека классов для Windows Forms (WinForms)       | [winformslib](#winforms)        | [C#]         | Общее (WinForms)                       | 3.0        |
+| Приложение WPF                              | [wpf](#wpf)                     | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Библиотека классов WPF                            | [wpflib](#wpf)                  | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Библиотека настраиваемых элементов управления WPF                   | [wpfcustomcontrollib](#wpf)     | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Библиотека пользовательских элементов управления WPF                     | [wpfusercontrollib](#wpf)       | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Приложение Windows Forms (WinForms)         | [winforms](#winforms)           | [C#], VB     | Общее (WinForms)                       | 3.0 (5.0 для VB)|
+| Библиотека классов для Windows Forms (WinForms)       | [winformslib](#winforms)        | [C#], VB     | Общее (WinForms)                       | 3.0 (5.0 для VB)|
 | Служба Worker Service                               | [рабочая роль](#web-others)           | [C#]         | Общее/Рабочая роль/Веб                     | 3.0        |
 | Проект модульного теста                            | [mstest](#test)                 | [C#], F#, VB | Тест/MSTest                           | 1.0        |
-| Тестовый проект NUnit 3                         | [nunit](#nunit)                  | [C#], F#, VB | Тест/NUnit                            | 2.1.400    |
+| Тестовый проект NUnit 3                         | [nunit](#nunit)                 | [C#], F#, VB | Тест/NUnit                            | 2.1.400    |
 | Элемент теста NUnit 3                            | `nunit-test`                    | [C#], F#, VB | Тест/NUnit                            | 2.2        |
 | Тестовый проект xUnit                           | [xunit](#test)                  | [C#], F#, VB | Тест/xUnit                            | 1.0        |
 | Компонент Razor                              | `razorcomponent`                | [C#]         | Веб/ASP.NET                           | 3.0        |
@@ -78,7 +78,7 @@ dotnet new -h|--help
 | MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Веб/ASP.NET                           | 2.0        |
 | MVC ViewStart                                | `viewstart`                     | [C#]         | Веб/ASP.NET                           | 2.0        |
 | Серверное приложение Blazor                            | [blazorserver](#blazorserver)   | [C#]         | Веб/Blazor                            | 3.0        |
-| Приложение WebAssembly Blazor                       | `blazorwasm`                    | [C#]         | Веб/Blazor/WebAssembly                            | 3.1.300    |
+| Приложение WebAssembly Blazor                       | `blazorwasm`                    | [C#]         | Веб/Blazor/WebAssembly                | 3.1.300    |
 | Пустой ASP.NET Core                           | [web](#web)                     | [C#], F#     | Веб/пусто                             | 1.0        |
 | Веб-приложение ASP.NET Core (Model-View-Controller) | [mvc](#web-options)             | [C#], F#     | Веб/MVC                               | 1.0        |
 | Веб-приложение ASP.NET Core                         | [webapp, razor](#web-options)   | [C#]         | Веб/MVC и Razor Pages                   | 2.2, 2.0   |

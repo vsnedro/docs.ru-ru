@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: dd7d3e445772e4b5ec148576ccd1374d56e251bd
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: f61cf21f9f30662cc8e383bb3aeb5c642f1665b8
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614784"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496276"
 ---
 ### <a name="deadlock-may-result-when-using-reentrant-services"></a>При использовании реентерабельных служб может возникнуть взаимоблокировка
 
@@ -20,7 +20,7 @@ ms.locfileid: "85614784"
 
 Чтобы устранить эту проблему, выполните следующие действия:
 
-- Установите для режима параллелизма службы <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=nameWithType> или &lt;System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType&gt;. Пример:
+- Задайте для режима параллелизма службы значение <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=nameWithType> или <xref:System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType>. Пример:
 
 ```csharp
 [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant)]
