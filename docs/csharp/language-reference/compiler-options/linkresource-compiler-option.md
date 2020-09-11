@@ -12,15 +12,15 @@ helpviewer_keywords:
 - -linkresource compiler option [C#]
 - linkresource compiler option [C#]
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
-ms.openlocfilehash: 162baad57397b6d992dcf8f03f0b3661e0105cb8
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: cd1150f3fa0dd0eca4e9352ce3809e73a15126c7
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125349"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89466109"
 ---
 # <a name="-linkresource-c-compiler-options"></a>-linkresource (параметры компилятора C#)
-Создает в выходном файле ссылку на ресурс платформы .NET Framework. Файл ресурсов не добавляется в выходной файл. Этот параметр отличается от параметра [-resource](./resource-compiler-option.md), который внедряет файл ресурсов в выходной файл.  
+Создает в выходном файле ссылку на ресурс .NET. Файл ресурсов не добавляется в выходной файл. Этот параметр отличается от параметра [-resource](./resource-compiler-option.md), который внедряет файл ресурсов в выходной файл.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -30,7 +30,7 @@ ms.locfileid: "89125349"
   
 ## <a name="arguments"></a>Аргументы  
  `filename`  
- Файл ресурсов .NET Framework, ссылку на который необходимо создать из сборки.  
+ Файл ресурсов .NET, ссылку на который необходимо создать из сборки.  
   
  Среда `identifier` (необязательно)  
  Логическое имя ресурса, используемое для его загрузки. По умолчанию используется имя файла.  
@@ -43,7 +43,7 @@ ms.locfileid: "89125349"
   
  Параметр **-linkresource** требует один из параметров [-target](./target-compiler-option.md), отличный от **-target:module**.  
   
- Если `filename` является файлом ресурсов .NET Framework, созданным, например, с помощью [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) или в среде разработки, то к нему можно обращаться с помощью членов пространства имен <xref:System.Resources>. Для получения дополнительной информации см. <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. Чтобы получить доступ ко всем остальным ресурсам во время выполнения, используйте методы `GetManifestResource` в классе <xref:System.Reflection.Assembly>.  
+ Если `filename` является файлом ресурсов .NET, созданным, например, с помощью [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) или в среде разработки, то к нему можно обращаться с помощью элементов в пространстве имен <xref:System.Resources>. Для получения дополнительной информации см. <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. Чтобы получить доступ ко всем остальным ресурсам во время выполнения, используйте методы `GetManifestResource` в классе <xref:System.Reflection.Assembly>.  
   
  Файл, указанный в параметре `filename`, может иметь любой формат. Например, может потребоваться сделать имеющуюся на компьютере библиотеку DLL частью сборки, поэтому ее можно разместить в глобальном кэше сборок и обеспечить к ней доступ из управляемого кода сборки. Во втором из следующих примеров показывается, как это сделать. Это действие можно также выполнить в компоновщике сборок. В третьем из следующих примеров показывается, как это сделать. Дополнительные сведения см. в разделах [Al.exe (компоновщик сборок)](../../../framework/tools/al-exe-assembly-linker.md) и [Работа со сборками и глобальным кэшем сборок](../../../framework/app-domains/working-with-assemblies-and-the-gac.md).  
   

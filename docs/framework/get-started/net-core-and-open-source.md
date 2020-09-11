@@ -3,15 +3,16 @@ title: Ядро .NET и открытый исходный код
 description: Ознакомьтесь с общими сведениями о .NET Core. Это универсальная, модульная, кроссплатформенная и открытая версия платформы .NET Standard.
 ms.date: 03/30/2017
 ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
-ms.openlocfilehash: 08d30d047c25b3b6d681d72b46b81a0cb21f8e0a
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 4627d4cc1bf45f3a7ad3f269279384b4a303f00d
+ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622761"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89414920"
 ---
 # <a name="net-core-and-open-source"></a>.NET Core и открытый исходный код
 
-В этой статье приводится краткий обзор .NET Core и указываются ресурсы с дополнительными сведениями. Полный список документации по .NET Core см. в [Руководстве по .NET Core](../../core/index.yml).
+В этой статье приводится краткий обзор .NET Core и указываются ресурсы с дополнительными сведениями.
 
 ## <a name="what-is-net-core"></a>Что такое .NET Core?  
 
@@ -46,5 +47,5 @@ ms.locfileid: "85622761"
 ## <a name="see-also"></a>См. также
 
 - [Руководство по .NET — создание программы Hello World за 10 минут](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
-- [Руководство по .NET Core](../../core/index.yml)
+- [Введение в .NET Core](../../core/introduction.md)
 - [Документация по ASP.NET Core](/aspnet/core/)

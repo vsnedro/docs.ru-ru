@@ -3,12 +3,12 @@ title: Работа с коллекциями. Вводное руководст
 description: Это руководство по C# предоставляет для изучения примере коллекции списков.
 ms.date: 10/13/2017
 ms.custom: mvc
-ms.openlocfilehash: c99f5582702120db238de1206de42d964837cdbd
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: e2282df21420630634911e07f4fb3b94f34a792b
+ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396898"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89414687"
 ---
 # <a name="learn-to-manage-data-collections-using-the-generic-list-type"></a>Научитесь управлять коллекциями данных с использованием универсального типа списка
 
@@ -230,4 +230,4 @@ foreach (var item in fibonacciNumbers)
 
 Поздравляем! Вы выполнили задачи в руководстве по спискам. Теперь вы можете выполнить задачи [вводного руководства по классам](introduction-to-classes.md) в своей среде разработки.
 
-Дополнительные сведения о работе с типом `List` см. в [руководстве по .NET](../../../standard/index.yml), посвященному [коллекциям](../../../standard/collections/index.md). Также в нем описаны многие другие типы коллекций.
+Дополнительные сведения о работе с типом `List` см. в статье [Коллекции и структуры данных](../../../standard/collections/index.md). Также в нем описаны многие другие типы коллекций.

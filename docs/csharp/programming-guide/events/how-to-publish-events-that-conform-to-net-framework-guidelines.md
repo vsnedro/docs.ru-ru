@@ -1,20 +1,20 @@
 ---
 title: Руководство по программированию на C#. Публикация событий, соответствующих рекомендациям .NET
-description: Сведения о публикации событий, соответствующих рекомендациям .NET. Все события в библиотеке классов .NET Framework основаны на делегате EventHandler.
+description: Сведения о публикации событий, соответствующих рекомендациям .NET. Все события в библиотеке классов .NET основаны на делегате EventHandler.
 ms.date: 05/26/2020
 helpviewer_keywords:
 - events [C#], implementation guidelines
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
-ms.openlocfilehash: 1b802e236026911b55bafcb3f48d487c43bba174
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 8cc8b0a9fdaeeb6ab6290630c5d78044c2696b9a
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302117"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89466174"
 ---
 # <a name="how-to-publish-events-that-conform-to-net-guidelines-c-programming-guide"></a>Публикация событий, соответствующих рекомендациям .NET (руководство по программированию на C#)
 
-Следующая процедура демонстрирует добавление событий, которые соответствуют стандартному шаблону .NET для классов и структур. Все события в библиотеке классов .NET Framework основаны на делегате <xref:System.EventHandler>, который определен следующим образом:
+Следующая процедура демонстрирует добавление событий, которые соответствуют стандартному шаблону .NET для классов и структур. Все события в библиотеке классов .NET основаны на делегате <xref:System.EventHandler>, который определен следующим образом:
 
 ```csharp
 public delegate void EventHandler(object sender, EventArgs e);

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -link compiler option [C#]
 - link compiler option [C#]
 ms.assetid: 00da70c6-9ea1-43c2-86f2-aa7f26c03475
-ms.openlocfilehash: 0f6927fd240f3f8535478d163be615fc74dad8d2
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 6fd291c49c282713ea56ca20d8d58616d38ec752
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125401"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465719"
 ---
 # <a name="-link-c-compiler-options"></a>-link (параметры компилятора C#)
 Дает компилятору указание сделать всю информацию о типах COM из указанных сборок доступной компилируемому проекту.
@@ -52,7 +52,7 @@ ms.locfileid: "89125401"
 
 - Вызывается поле, свойство, событие или метод, имеющий тип возвращаемого значения или тип параметра из сборки Б.
 
- Как и параметр компилятора [-reference](./reference-compiler-option.md), параметр компилятора `-link` использует файл ответов Csc.rsp, который ссылается на часто используемые сборки .NET Framework. Если вы не хотите, чтобы компилятор использовал файл Csc.rsp, примените параметр компилятора [-noconfig](./noconfig-compiler-option.md).
+ Как и параметр компилятора [-reference](./reference-compiler-option.md), параметр компилятора `-link` использует файл ответов Csc.rsp, который ссылается на часто используемые сборки .NET. Если вы не хотите, чтобы компилятор использовал файл Csc.rsp, примените параметр компилятора [-noconfig](./noconfig-compiler-option.md).
 
  Краткой формой `-link` является `-l`.
 

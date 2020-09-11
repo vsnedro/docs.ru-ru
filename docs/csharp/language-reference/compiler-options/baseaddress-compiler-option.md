@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -baseaddress compiler option [C#]
 - /baseaddress compiler option [C#]
 ms.assetid: ce13c965-dfe4-4433-94f5-63b476e3a608
-ms.openlocfilehash: 42b1891c29457745689542a4c9e0482ec5e918fa
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: f79ee449eafd04906dab49700a1af6441d54cece
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89126012"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89464887"
 ---
 # <a name="-baseaddress-c-compiler-options"></a>-baseaddress (параметры компилятора C#)
 Параметр **-baseaddress** позволяет указать предпочтительный базовый адрес для загрузки библиотеки DLL. Дополнительные сведения о случаях использования этого параметра см. в [блоге Ларри Остермана (Larry Osterman)](https://docs.microsoft.com/archive/blogs/larryosterman/why-should-i-even-bother-to-use-dlls-in-my-system).  
@@ -30,7 +30,7 @@ ms.locfileid: "89126012"
  Базовый адрес для библиотеки DLL. Этот адрес можно задать в десятичном, шестнадцатеричном или восьмеричном формате.  
   
 ## <a name="remarks"></a>Remarks  
- Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR платформы .NET Framework.  
+ Базовый адрес по умолчанию для библиотеки DLL задается в среде выполнения .NET.  
   
  Обратите внимание, что младшее слово этого адреса будет округляться. Например, значение 0x11110001 округляется до 0x11110000.  
   

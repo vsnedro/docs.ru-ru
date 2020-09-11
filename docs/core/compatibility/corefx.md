@@ -2,12 +2,12 @@
 title: Критические изменения в библиотеке базовых классов
 description: В этой статье приведен список критических изменений в основных библиотеках .NET.
 ms.date: 07/27/2020
-ms.openlocfilehash: e0ebc054e0abccfe934b505a727060653fe313cd
-ms.sourcegitcommit: ef86c24c418439b8bb5e3e7d64bbdbe5e11c3e9c
+ms.openlocfilehash: d8d886785ff71f22a3b2da65e973d899cf0371f6
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88720213"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465895"
 ---
 # <a name="core-net-libraries-breaking-changes"></a>Критические изменения в основных библиотеках .NET
 
@@ -17,6 +17,8 @@ ms.locfileid: "88720213"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Устаревшие свойства ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5.0 |
+| [Встроенные проверки IsSupported, поддерживаемые оборудованием, могут отличаться для вложенных типов](#hardware-intrinsic-issupported-checks-may-differ-for-nested-types) | 5.0 |
 | [В ссылочных сборках изменились имена параметров](#parameter-names-changed-in-reference-assemblies) | 5.0 |
 | [В UNIX правильно анализируются пути URI с символами, отличными от ASCII](#uri-paths-with-non-ascii-characters-parse-correctly-on-unix) | 5.0 |
 | [Распознавание URI UNC-путей в UNIX](#uri-recognition-of-unc-paths-on-unix) | 5.0 |
@@ -50,6 +52,14 @@ ms.locfileid: "88720213"
 | [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [obsolete-consoleloggeroptions-properties](../../../includes/core-changes/corefx/5.0/obsolete-consoleloggeroptions-properties.md)]
+
+***
+
+[!INCLUDE [hardware-instrinsics-issupported-checks](../../../includes/core-changes/corefx/5.0/hardware-instrinsics-issupported-checks.md)]
+
+***
 
 [!INCLUDE [reference-assembly-parameter-names](../../../includes/core-changes/corefx/5.0/reference-assembly-parameter-names.md)]
 

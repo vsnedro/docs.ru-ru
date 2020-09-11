@@ -3,12 +3,12 @@ title: Общие сведения о средствах диагностики 
 description: Общие сведения о средствах и методах диагностики приложений .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: ae3b9a1961f331c9cdea786bd5fe06b7bfa10927
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 568f237e131cde18dad7c87ddff2fdd3d4bc5b8b
+ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558118"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89597978"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Общие сведения о средствах диагностики в .NET Core
 
@@ -28,7 +28,11 @@ ms.locfileid: "88558118"
 
 [Модульное тестирование](../testing/index.md) — это ключевой компонент непрерывной интеграции и развертывания высококачественного программного обеспечения. Модульные тесты позволяют сразу же узнать о возникшей проблеме.
 
-## <a name="net-core-dotnet-diagnostic-global-tools"></a>Глобальные средства диагностики dotnet в .NET Core
+## <a name="debug-linux-dumps"></a>Отладка дампов Linux
+
+[Отладка дампов Linux](debug-linux-dumps.md) — узнайте, как собирать и анализировать дампы в Linux.
+
+## <a name="net-core-diagnostic-global-tools"></a>Глобальные средства диагностики в .NET Core
 
 ### <a name="dotnet-counters"></a>dotnet-counters
 
@@ -45,6 +49,14 @@ ms.locfileid: "88558118"
 ### <a name="dotnet-trace"></a>dotnet-trace
 
 .NET Core включает в себя `EventPipe`, с помощью которого предоставляются диагностические данные. Средство [dotnet-trace](dotnet-trace.md) позволяет использовать интересные данные профилирования из приложения, которые могут помочь в сценариях, когда вам нужно найти причину медленной работы приложений.
+
+### <a name="dotnet-symbol"></a>dotnet-symbol
+
+[dotnet-symbol](dotnet-symbol.md) скачивает файлы (символы, DAC/DBI, файлы узлов и т. д.), требуемые для открытия основного дампа или минидампа. Используйте это средство, если для отладки файла дампа, записанного на другом компьютере, требуются символы и модули.
+
+### <a name="dotnet-sos"></a>dotnet-sos
+
+[dotnet-sos](dotnet-sos.md) используется для установки [расширения отладки SOS](https://docs.microsoft.com/dotnet/framework/tools/sos-dll-sos-debugging-extension) в Linux или MacOS (или в Windows при использовании старых средств отладки).
 
 ## <a name="net-core-diagnostics-tutorials"></a>Учебники по диагностике .NET Core
 

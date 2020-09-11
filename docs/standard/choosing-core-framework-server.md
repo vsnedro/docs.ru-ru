@@ -3,12 +3,12 @@ title: Выбор между .NET Core и .NET Framework для серверны
 description: В этом разделе представлены инструкции по принятию решения о том, какая реализация .NET будет использоваться при создании серверного приложения.
 author: cartermp
 ms.date: 04/28/2020
-ms.openlocfilehash: 30157276bce53ed44dca5b660172e5556dab14f8
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: a3c15e8f2198b1bcc4e623a7dc7f5cddca9c83f6
+ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82507446"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89415024"
 ---
 # <a name="net-core-vs-net-framework-for-server-apps"></a>Выбор между .NET Core и .NET Framework для серверных приложений
 
@@ -111,7 +111,7 @@ ms.locfileid: "82507446"
 - [Выбор между ASP.NET и ASP.NET Core](/aspnet/core/choose-aspnet-framework)
 - [ASP.NET Core с целевой платформой .NET Framework](/aspnet/core/introduction-to-aspnet-core#aspnet-core-targeting-net-framework)
 - [Целевые платформы](frameworks.md)
-- [Руководство по .NET Core](../core/index.yml)
+- [Введение в .NET Core](../core/introduction.md)
 - [Перенос кода в .NET Core из .NET Framework](../core/porting/index.md)
 - [Общие сведения о .NET и Docker](../core/docker/introduction.md)
 - [Общие сведения о компонентах .NET](components.md)

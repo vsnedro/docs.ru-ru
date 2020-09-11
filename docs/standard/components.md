@@ -4,12 +4,12 @@ description: Описание ключевых компонентов архит
 author: cartermp
 ms.date: 08/23/2017
 ms.technology: dotnet-standard
-ms.openlocfilehash: 027fdb4cec47550f88f6930a4bbdff4ab5cdfb36
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 2fc8bcea59cd2ba652b88644677f077d62994ca4
+ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80344172"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89414738"
 ---
 # <a name="net-architectural-components"></a>Архитектурные компоненты .NET
 
@@ -38,7 +38,7 @@ ms.locfileid: "80344172"
 
 .NET Core — это кроссплатформенная реализация .NET, предназначенная для обработки обширного ряда серверных и облачных рабочих нагрузок. Это решение работает в Windows, macOS и Linux. Она реализует .NET Standard, а значит, любой код, предназначенный для .NET Standard, может работать на .NET Core. [ASP.NET](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](../framework/winforms/windows-forms-overview.md) и [Windows Presentation Foundation (WPF)](../framework/wpf/index.md) работают на основе .NET Core.
 
-Дополнительные сведения о .NET Core см. в [руководстве по .NET Core](../core/index.yml) и в разделе [Выбор между .NET Core и .NET Framework для серверных приложений](choosing-core-framework-server.md).
+Дополнительные сведения о .NET Core см. в статьях [Введение в .NET Core](../core/introduction.md) и [Выбор между .NET Core и .NET Framework для серверных приложений](choosing-core-framework-server.md).
 
 ### <a name="net-framework"></a>.NET Framework
 
@@ -107,7 +107,7 @@ UWP представляет собой реализацию .NET, котора�
 
 - [Выбор между .NET Core и .NET Framework для серверных приложений](choosing-core-framework-server.md)
 - [.NET Standard](net-standard.md)
-- [Руководство по .NET Core](../core/index.yml)
+- [Введение в .NET Core](../core/introduction.md)
 - [Руководство по .NET Framework](../framework/index.yml)
 - [Руководство по языку C#](../csharp/index.yml)
 - [Руководство по языку F#](../fsharp/index.yml)

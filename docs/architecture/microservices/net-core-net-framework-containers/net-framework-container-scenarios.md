@@ -2,12 +2,12 @@
 title: Выбор .NET Framework для контейнеров Docker
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Выбор .NET Framework для контейнеров Docker
 ms.date: 01/30/2020
-ms.openlocfilehash: 2697ae56eda104a0ee8e7bfcd79d3972943d1f79
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 116ba02878a60487f1af3c2b2e084307fad29618
+ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80344997"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89414426"
 ---
 # <a name="when-to-choose-net-framework-for-docker-containers"></a>Выбор .NET Framework для контейнеров Docker
 
@@ -49,8 +49,8 @@ ms.locfileid: "80344997"
 
 ### <a name="additional-resources"></a>Дополнительные ресурсы
 
-- **Руководство по .NET Core** \
-  [https://docs.microsoft.com/dotnet/core/index](../../../core/index.yml)
+- **Документация по .NET** \
+  [https://docs.microsoft.com/dotnet/fundamentals](../../../fundamentals/index.yml)
 
 - **Перенос кода в .NET Core из .NET Framework** \
   [https://docs.microsoft.com/dotnet/core/porting/index](../../../core/porting/index.md)
