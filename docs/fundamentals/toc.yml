@@ -129,9 +129,6 @@ items:
               - name: Установка и использование пакета
                 href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
                 displayName: 'tutorials, visual studio for mac, vs for mac'
-              - name: Создание и публикация пакета
-                href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
-                displayName: tutorials
           - name: Другие руководства
             href: ../core/tutorials/index.md
   - name: Новые возможности
@@ -308,6 +305,8 @@ items:
                 href: ../core/diagnostics/index.md
               - name: Управляемые отладчики
                 href: ../core/diagnostics/managed-debuggers.md
+              - name: Отладка дампов Linux
+                href: ../core/diagnostics/debug-linux-dumps.md
               - name: Счетчики событий
                 href: ../core/diagnostics/event-counters.md
               - name: Ведение журнала и трассировка
@@ -322,6 +321,10 @@ items:
                     href: ../core/diagnostics/dotnet-gcdump.md
                   - name: dotnet-trace
                     href: ../core/diagnostics/dotnet-trace.md
+                  - name: dotnet-symbol
+                    href: ../core/diagnostics/dotnet-symbol.md
+                  - name: dotnet-sos
+                    href: ../core/diagnostics/dotnet-sos.md
               - name: Учебники по диагностике .NET Core
                 items:
                   - name: Получение метрик производительности с помощью EventCounters
