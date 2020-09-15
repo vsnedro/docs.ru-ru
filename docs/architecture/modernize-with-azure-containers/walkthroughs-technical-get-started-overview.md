@@ -2,12 +2,12 @@
 title: Обзор пошаговых руководств и технических описаний по началу работы
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Обзор пошаговых руководств и технических описаний по началу работы
 ms.date: 04/28/2018
-ms.openlocfilehash: cff418d9b6e931a3082d8a2f8b818e7275139578
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.openlocfilehash: 4db6d449d27dcd4316d61305c8c2a8c2aa0bc65b
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80987873"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89516129"
 ---
 # <a name="walkthroughs-and-technical-get-started-overview"></a>Обзор пошаговых руководств и технических описаний по началу работы
 
@@ -212,7 +212,7 @@ ms.locfileid: "80987873"
 
 Таким образом, использование службы "Экземпляры контейнеров Azure" является очень удобным вариантом для реализации сценариев разработки и тестирования, а также для конвейеров CI/CD.
 
-## <a name="next-steps"></a>Следующие шаги
+### <a name="next-steps"></a>Следующие шаги
 
 Подробно изучите это содержимое в вики-разделе на сайте GitHub:
 
@@ -274,7 +274,7 @@ ms.locfileid: "80987873"
 
 - Проверка работоспособности приложений.
 
-## <a name="next-steps"></a>Следующие шаги
+### <a name="next-steps"></a>Следующие шаги
 
 Подробно изучите это содержимое в вики-разделе на сайте GitHub: <https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
@@ -302,7 +302,7 @@ ms.locfileid: "80987873"
 
 Развертывание в Службе приложений Azure для контейнеров предоставляет преимущества контейнеров в паре с преимуществами PaaS Службы приложений Azure. Службу приложений можно легко масштабировать как по вертикали, так и по горизонтали, а также настроить для автоматического масштабирования в соответствии с изменяющимися потребностями. Обновления можно выполнять с нулевым временем простоя, а также можно легко настроить непрерывное развертывание из реестра.
 
-## <a name="next-steps"></a>Следующие шаги
+### <a name="next-steps"></a>Следующие шаги
 
 Подробно изучите это содержимое в вики-разделе на сайте GitHub: <https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service>
 

@@ -2,12 +2,12 @@
 title: 'Зарезервированные атрибуты C#: статический анализ типов, допускающих значения NULL'
 ms.date: 04/14/2020
 description: Компилятор интерпретирует эти атрибуты для более эффективного статического анализа ссылочных типов, допускающих значения NULL и не допускающих значения NULL.
-ms.openlocfilehash: 33521133a6a01196e6e1ab9c3cdc191a24f1ecf3
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: d2405162ece3df209111de65fdef54f70cc86d45
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82102714"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656316"
 ---
 # <a name="reserved-attributes-contribute-to-the-compilers-null-state-static-analysis"></a>Зарезервированные атрибуты используются для статического анализа состояния NULL компилятора.
 
@@ -57,10 +57,10 @@ bool TryGetMessage(string key, out string message)
 ```csharp
 public string ScreenName
 {
-   get => screenName;
-   set => screenName = value ?? GenerateRandomScreenName();
+   get => _screenName;
+   set => _screenName = value ?? GenerateRandomScreenName();
 }
-private string screenName;
+private string _screenName;
 ```
 
 При компиляции предыдущего кода в контексте, игнорирующем допустимость значения NULL, не возникает никаких проблем. После включения ссылочных типов, допускающих значения NULL, свойство `ScreenName` преобразуется в ссылку, не допускающую значение NULL. Это верно для метода доступа `get`: он никогда не возвращает `null`. Вызывающим объектам не нужно проверять возвращаемое свойство на наличие значения `null`. Но теперь при задании свойству значения `null` создается предупреждение. Чтобы продолжить поддержку этого типа кода, добавьте атрибут <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute?displayProperty=nameWithType> к свойству, как показано в следующем коде.
@@ -69,10 +69,10 @@ private string screenName;
 [AllowNull]
 public string ScreenName
 {
-   get => screenName;
-   set => screenName = value ?? GenerateRandomScreenName();
+   get => _screenName;
+   set => _screenName = value ?? GenerateRandomScreenName();
 }
-private string screenName = GenerateRandomScreenName();
+private string _screenName = GenerateRandomScreenName();
 ```
 
 Чтобы использовать этот и другие атрибуты, описанные в этой статье, может потребоваться добавить директиву `using` для пространства имен <xref:System.Diagnostics.CodeAnalysis>. Атрибут применяется к свойству,а не методу доступа `set`. Атрибут `AllowNull` указывает *предусловия* и применяется только к входным данным. Метод доступа `get` имеет возвращаемое значение, но у него нет входных аргументов. Таким образом, атрибут `AllowNull` применяется только к методу доступа `set`.
@@ -132,14 +132,14 @@ public Customer FindCustomer(string lastName, string firstName)
 По причинам, описанным в разделе [Универсальные определения и допустимость значений NULL](../../nullable-migration-strategies.md#generic-definitions-and-nullability), этот метод не работает с универсальными методами. У вас может быть универсальный метод, который действует по аналогичному шаблону.
 
 ```csharp
-public T Find<T>(IEnumerable<T> sequence, Func<T, bool> match)
+public T Find<T>(IEnumerable<T> sequence, Func<T, bool> predicate)
 ```
 
 Нельзя указать, что возвращаемое значение — `T?`. Если искомый элемент не найден, метод возвращает `null`. Так как вы не можете объявить тип возвращаемого значения `T?`, добавьте заметку `MaybeNull` к значению, возвращаемому методом.
 
 ```csharp
 [return: MaybeNull]
-public T Find<T>(IEnumerable<T> sequence, Func<T, bool> match)
+public T Find<T>(IEnumerable<T> sequence, Func<T, bool> predicate)
 ```
 
 Предыдущий код информирует вызывающие объекты о том, что подразумевается тип, не допускающий значение NULL, но возвращаемое значение на самом деле *может* быть равно NULL.  Используйте атрибут `MaybeNull`, если API должен быть типом, не допускающим значение NULL (как правило, параметром универсального типа), но могут быть случаи, когда возвращается `null`.
@@ -162,7 +162,7 @@ EnsureCapacity<string>(messages, 50);
 После включения ссылочных типов, допускающих значения NULL, необходимо убедиться, что предыдущий код компилируется без вывода предупреждений. Когда метод возвращает значение, аргумент `storage` гарантированно не будет равен NULL. Однако можно вызвать `EnsureCapacity` с пустой ссылкой. Можно сделать `storage` ссылочным типом, допускающим значение NULL, и добавить постусловие `NotNull` в объявление параметра.
 
 ```csharp
-public void EnsureCapacity<T>([NotNull]ref T[]? storage, int size)
+public void EnsureCapacity<T>([NotNull] ref T[]? storage, int size)
 ```
 
 В предыдущем коде показано четкое выражение существующего контракта. Вызывающие объекты могут передавать переменную со значением `null`, но возвращаемое значение гарантированно никогда не будет равно NULL. Атрибут `NotNull` лучше всего подходит для аргументов `ref` и `out`, когда `null` может передаваться в качестве аргумента, но при возврате метода этот аргумент гарантированно не будет равен NULL.
@@ -177,7 +177,7 @@ public void EnsureCapacity<T>([NotNull]ref T[]? storage, int size)
 Вам, скорее всего, известен метод <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType> `string`. Этот метод возвращает `true`, если аргумент имеет значение NULL или является пустой строкой. Вот форма проверки значений NULL. Если метод возвращает `false`, вызывающим объектам не требуется выполнять проверку значений NULL. Чтобы сделать такой метод методом, допускающим значения NULL, необходимо задать для аргумента ссылочный тип, допускающий значение NULL, и добавить атрибут `NotNullWhen`.
 
 ```csharp
-bool IsNullOrEmpty([NotNullWhen(false)]string? value);
+bool IsNullOrEmpty([NotNullWhen(false)] string? value);
 ```
 
 В этом случае компилятор знает, что любой код, в котором возвращаемое значение равно `false`, не должен проходить проверку значений NULL. Добавление атрибута означает, что `IsNullOrEmpty` выполняет необходимую проверку значений NULL: когда он возвращает `false`, входной аргумент не равен `null`.
@@ -246,38 +246,44 @@ string? GetTopLevelDomainFromFullUrl(string? url);
 [DoesNotReturn]
 private void FailFast()
 {
-   throw new InvalidOperationException();
+    throw new InvalidOperationException();
 }
 
 public void SetState(object containedField)
 {
-   if (!isInitialized)
-      FailFast();
+    if (!isInitialized)
+    {
+        FailFast();
+    }
 
-   // unreachable code:
-   this.field = containedField;
+    // unreachable code:
+    _field = containedField;
 }
 ```
 
 Во втором случае добавьте атрибут `DoesNotReturnIf` к логическому параметру метода. Предыдущий пример можно изменить следующим образом.
 
 ```csharp
-private void FailFast([DoesNotReturnIf(false)]bool isValid)
+private void FailFast([DoesNotReturnIf(false)] bool isValid)
 {
-   if (!isValid)
-       throw new InvalidOperationException();
+    if (!isValid)
+    {
+        throw new InvalidOperationException();
+    }
 }
 
 public void SetState(object containedField)
 {
-   FailFast(isInitialized);
+    FailFast(isInitialized);
 
-   // unreachable code when "isInitialized" is false:
-   this.field = containedField;
+    // unreachable code when "isInitialized" is false:
+    _field = containedField;
 }
 ```
 
 ## <a name="summary"></a>Сводка
+
+[!INCLUDE [C# version alert](../../includes/csharp-version-alert.md)]
 
 Добавление ссылочных типов, допускающих значения NULL, предоставляет исходный словарь для описания ожиданий API для переменных, которые могут иметь значение `null`. Дополнительные атрибуты позволяют более подробно описывать состояние NULL для переменных в качестве предусловий и постусловий. Эти атрибуты более четко описывают ожидания и обеспечивают более эффективную работу специалистов, использующих ваши API.
 
