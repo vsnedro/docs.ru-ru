@@ -6,15 +6,15 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "85614741"
 ---
-### <a name="wcf-transport-security-supports-certificates-stored-using-cng"></a><span data-ttu-id="c2667-101">Защита транспорта WCF поддерживает сертификаты, сохраненные с помощью CNG</span><span class="sxs-lookup"><span data-stu-id="c2667-101">WCF transport security supports certificates stored using CNG</span></span>
+### <a name="wcf-transport-security-supports-certificates-stored-using-cng"></a><span data-ttu-id="8201b-101">Защита транспорта WCF поддерживает сертификаты, сохраненные с помощью CNG</span><span class="sxs-lookup"><span data-stu-id="8201b-101">WCF transport security supports certificates stored using CNG</span></span>
 
-#### <a name="details"></a><span data-ttu-id="c2667-102">Подробнее</span><span class="sxs-lookup"><span data-stu-id="c2667-102">Details</span></span>
+#### <a name="details"></a><span data-ttu-id="8201b-102">Подробнее</span><span class="sxs-lookup"><span data-stu-id="8201b-102">Details</span></span>
 
-<span data-ttu-id="c2667-103">Начиная с приложений, предназначенных для .NET Framework 4.6.2, защита транспорта WCF поддерживает сертификаты, сохраненные с использованием библиотеки шифрования Windows (CNG).</span><span class="sxs-lookup"><span data-stu-id="c2667-103">Starting with apps that target the .NET Framework 4.6.2, WCF transport security supports certificates stored using the Windows Cryptography Library (CNG).</span></span> <span data-ttu-id="c2667-104">Эта поддержка ограничивается сертификатами с открытым ключом, длина экспоненты которого не превышает 32 бита.</span><span class="sxs-lookup"><span data-stu-id="c2667-104">This support is limited to certificates with a public key that has an exponent no more than 32 bits in length.</span></span> <span data-ttu-id="c2667-105">Если приложение предназначено для .NET Framework 4.6.2, эта функция включена по умолчанию. В более ранних версиях платформы .NET Framework попытка использовать сертификаты X509 с поставщиком хранилища ключей CSG вызывала исключение.</span><span class="sxs-lookup"><span data-stu-id="c2667-105">When an application targets the .NET Framework 4.6.2, this feature is on by default.In earlier versions of the .NET Framework, the attempt to use X509 certificates with a CSG key storage provider throws an exception.</span></span>
+<span data-ttu-id="8201b-103">Начиная с приложений, предназначенных для .NET Framework 4.6.2, защита транспорта WCF поддерживает сертификаты, сохраненные с использованием библиотеки шифрования Windows (CNG).</span><span class="sxs-lookup"><span data-stu-id="8201b-103">Starting with apps that target the .NET Framework 4.6.2, WCF transport security supports certificates stored using the Windows Cryptography Library (CNG).</span></span> <span data-ttu-id="8201b-104">Эта поддержка ограничивается сертификатами с открытым ключом, длина экспоненты которого не превышает 32 бита.</span><span class="sxs-lookup"><span data-stu-id="8201b-104">This support is limited to certificates with a public key that has an exponent no more than 32 bits in length.</span></span> <span data-ttu-id="8201b-105">Если приложение предназначено для .NET Framework 4.6.2, эта функция включена по умолчанию. В более ранних версиях платформы .NET Framework попытка использовать сертификаты X509 с поставщиком хранилища ключей CSG вызывала исключение.</span><span class="sxs-lookup"><span data-stu-id="8201b-105">When an application targets the .NET Framework 4.6.2, this feature is on by default.In earlier versions of the .NET Framework, the attempt to use X509 certificates with a CSG key storage provider throws an exception.</span></span>
 
-#### <a name="suggestion"></a><span data-ttu-id="c2667-106">Предложение</span><span class="sxs-lookup"><span data-stu-id="c2667-106">Suggestion</span></span>
+#### <a name="suggestion"></a><span data-ttu-id="8201b-106">Предложение</span><span class="sxs-lookup"><span data-stu-id="8201b-106">Suggestion</span></span>
 
-<span data-ttu-id="c2667-107">Для приложений, которые предназначены для .NET Framework 4.6.1 и более ранних версий, но работают в .NET Framework 4.6.2, можно включить поддержку сертификатов CNG, добавив следующую строку в раздел `<runtime>` файла app.config или web.config:</span><span class="sxs-lookup"><span data-stu-id="c2667-107">Apps that target the .NET Framework 4.6.1 and earlier but are running on the .NET Framework 4.6.2 can enable support for CNG certificates by adding the following line to the `<runtime>` section of the app.config or web.config file:</span></span>
+<span data-ttu-id="8201b-107">Для приложений, которые предназначены для .NET Framework 4.6.1 и более ранних версий, но работают в .NET Framework 4.6.2, можно включить поддержку сертификатов CNG, добавив следующую строку в раздел `<runtime>` файла app.config или web.config:</span><span class="sxs-lookup"><span data-stu-id="8201b-107">Apps that target the .NET Framework 4.6.1 and earlier but are running on the .NET Framework 4.6.2 can enable support for CNG certificates by adding the following line to the `<runtime>` section of the app.config or web.config file:</span></span>
 
 ```xml
 <runtime>
@@ -22,7 +22,7 @@ ms.locfileid: "85614741"
 </runtime>
 ```
 
-<span data-ttu-id="c2667-108">Это также можно сделать программно с помощью следующего кода:</span><span class="sxs-lookup"><span data-stu-id="c2667-108">This can also be done programmatically with the following code:</span></span>
+<span data-ttu-id="8201b-108">Это также можно сделать программно с помощью следующего кода:</span><span class="sxs-lookup"><span data-stu-id="8201b-108">This can also be done programmatically with the following code:</span></span>
 
 ```csharp
 private const string DisableCngCertificates = @"Switch.System.ServiceModel.DisableCngCertificate";
@@ -35,10 +35,10 @@ Const DisableCngCertificates As String = "Switch.System.ServiceModel.DisableCngC
 AppContext.SetSwitch(disableCngCertificates, False)
 ```
 
-<span data-ttu-id="c2667-109">Обратите внимание, что из-за этого изменения любой код обработки исключений, который зависит от неудачной попытки инициировать защищенное взаимодействие с сертификатом CNG, больше не будет выполняться.</span><span class="sxs-lookup"><span data-stu-id="c2667-109">Note that, because of this change, any exception handling code that depends on the attempt to initiate secure communication with a CNG certificate to fail will no longer execute.</span></span>
+<span data-ttu-id="8201b-109">Обратите внимание, что из-за этого изменения любой код обработки исключений, который зависит от неудачной попытки инициировать защищенное взаимодействие с сертификатом CNG, больше не будет выполняться.</span><span class="sxs-lookup"><span data-stu-id="8201b-109">Note that, because of this change, any exception handling code that depends on the attempt to initiate secure communication with a CNG certificate to fail will no longer execute.</span></span>
 
-| <span data-ttu-id="c2667-110">name</span><span class="sxs-lookup"><span data-stu-id="c2667-110">Name</span></span>    | <span data-ttu-id="c2667-111">Значение</span><span class="sxs-lookup"><span data-stu-id="c2667-111">Value</span></span>       |
+| <span data-ttu-id="8201b-110">name</span><span class="sxs-lookup"><span data-stu-id="8201b-110">Name</span></span>    | <span data-ttu-id="8201b-111">Значение</span><span class="sxs-lookup"><span data-stu-id="8201b-111">Value</span></span>       |
 |:--------|:------------|
-| <span data-ttu-id="c2667-112">Область</span><span class="sxs-lookup"><span data-stu-id="c2667-112">Scope</span></span>   | <span data-ttu-id="c2667-113">Дополнительный номер</span><span class="sxs-lookup"><span data-stu-id="c2667-113">Minor</span></span>       |
-| <span data-ttu-id="c2667-114">Version</span><span class="sxs-lookup"><span data-stu-id="c2667-114">Version</span></span> | <span data-ttu-id="c2667-115">4.6.2</span><span class="sxs-lookup"><span data-stu-id="c2667-115">4.6.2</span></span>       |
-| <span data-ttu-id="c2667-116">Type</span><span class="sxs-lookup"><span data-stu-id="c2667-116">Type</span></span>    | <span data-ttu-id="c2667-117">Изменение целевой платформы</span><span class="sxs-lookup"><span data-stu-id="c2667-117">Retargeting</span></span> |
+| <span data-ttu-id="8201b-112">Область</span><span class="sxs-lookup"><span data-stu-id="8201b-112">Scope</span></span>   | <span data-ttu-id="8201b-113">Дополнительный номер</span><span class="sxs-lookup"><span data-stu-id="8201b-113">Minor</span></span>       |
+| <span data-ttu-id="8201b-114">Version</span><span class="sxs-lookup"><span data-stu-id="8201b-114">Version</span></span> | <span data-ttu-id="8201b-115">4.6.2</span><span class="sxs-lookup"><span data-stu-id="8201b-115">4.6.2</span></span>       |
+| <span data-ttu-id="8201b-116">Type</span><span class="sxs-lookup"><span data-stu-id="8201b-116">Type</span></span>    | <span data-ttu-id="8201b-117">Изменение целевой платформы</span><span class="sxs-lookup"><span data-stu-id="8201b-117">Retargeting</span></span> |
