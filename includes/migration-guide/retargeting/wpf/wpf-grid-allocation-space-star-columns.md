@@ -6,7 +6,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "85614867"
 ---
-### <a name="wpf-grid-allocation-of-space-to-star-columns"></a>Выделение пространства для *-столбцов в элементе Grid WPF
+### <a name="wpf-grid-allocation-of-space-to-star-columns"></a>Выделение пространства для-столбцов в элементе Grid WPF
 
 #### <a name="details"></a>Подробнее
 
