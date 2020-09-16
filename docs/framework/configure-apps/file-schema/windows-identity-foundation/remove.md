@@ -3,12 +3,12 @@ title: <remove>
 ms.date: 03/30/2017
 ms.assetid: 4058e2f1-7db4-4d1a-84dd-1b52836f2ae6
 author: BrucePerlerMS
-ms.openlocfilehash: cfdfbb3aabde253ad17b221801b20c1ac9a45c2d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7581f581c4b97a07eb4bdeb49eb5ae5ce72c2aa7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70251925"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90535720"
 ---
 # \<remove>
 Удаляет указанный обработчик маркеров безопасности из коллекции обработчиков маркеров.  
@@ -39,10 +39,10 @@ ms.locfileid: "70251925"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|type|Имя типа CLR удаляемого обработчика токенов. Дополнительные сведения об указании `type` атрибута см. в разделе [ссылки на пользовательские типы](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references). Обязательный.|  
+|type|Имя типа CLR удаляемого обработчика токенов. Дополнительные сведения об указании `type` атрибута см. в разделе [ссылки на пользовательские типы](/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references). Обязательный.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

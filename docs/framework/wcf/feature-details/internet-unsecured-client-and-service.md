@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-ms.openlocfilehash: 0b02d1efc98f02390555861871d280f9800ced1e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 017744d692d6fd4183fde3c21e71fcee2f35844e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598883"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90535362"
 ---
 # <a name="internet-unsecured-client-and-service"></a>Незащищенные интернет-клиент и служба
 На следующем рисунке показан пример общедоступного, незащищенного Windows Communication Foundation (WCF) клиента и службы.  
@@ -19,13 +19,13 @@ ms.locfileid: "84598883"
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Нет|  
+|Режим безопасности|None|  
 |Транспорт|HTTP|  
-|Привязка|<xref:System.ServiceModel.BasicHttpBinding>в коде или в [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) элементе конфигурации.|  
-|Взаимодействие|С существующими службами и клиентами веб-служб|  
-|Аутентификация|Нет|  
-|Целостность|Нет|  
-|Конфиденциальность|Нет|  
+|Привязка|<xref:System.ServiceModel.BasicHttpBinding> в коде или в [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) элементе конфигурации.|  
+|Совместимость|С существующими службами и клиентами веб-служб|  
+|Аутентификация|None|  
+|Целостность|None|  
+|Конфиденциальность|None|  
   
 ## <a name="service"></a>Служба  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
@@ -72,7 +72,7 @@ ms.locfileid: "84598883"
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -109,8 +109,8 @@ ms.locfileid: "84598883"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Типовые сценарии безопасности](common-security-scenarios.md)
 - [Обзор безопасности](security-overview.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))
