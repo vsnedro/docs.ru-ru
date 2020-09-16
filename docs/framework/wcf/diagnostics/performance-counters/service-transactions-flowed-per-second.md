@@ -2,12 +2,12 @@
 title: 'Служба: количество поступивших транзакций в секунду'
 ms.date: 03/30/2017
 ms.assetid: ec72eb49-2942-4811-91df-d6e5dad81fd8
-ms.openlocfilehash: e8fbc314321a46fd3539998bd3dd22770086ca37
-ms.sourcegitcommit: 5d769956a04b6d68484dd717077fabc191c21da5
+ms.openlocfilehash: 2ed9f6711c998bbd3f1130b9a91d8ac850821a07
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76164012"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559328"
 ---
 # <a name="service-transactions-flowed-per-second"></a>Служба: количество поступивших транзакций в секунду
 Имя счетчика: Transactions Flowed Per Second.  
@@ -15,6 +15,6 @@ ms.locfileid: "76164012"
 ## <a name="description"></a>Описание  
  Количество транзакций в операциях для данной службы в секунду.  
   
- This counter is of performance counter type [PERF_COUNTER_COUNTER](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), whose value is calculated using the following formula.  
+ Этот счетчик имеет тип счетчика производительности [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), значение которого вычисляется с помощью следующей формулы.  
   
  (N 1 - N 0 ) / ( (D 1 -D 0 ) / F)
