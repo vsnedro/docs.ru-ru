@@ -3,12 +3,12 @@ title: Развертывание службы WCF, размещенной в II
 description: Сведения о задачах, необходимых для разработки и развертывания службы WCF, размещенной в службах IIS, начиная с проверки установки компонента.
 ms.date: 03/30/2017
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
-ms.openlocfilehash: 886fd9b8d8cf3059b1fd8679c5dd89ee015f2adf
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 5d9a0b80cc75baec2325b778cee7daa68531f2d5
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245097"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557571"
 ---
 # <a name="deploying-an-internet-information-services-hosted-wcf-service"></a>Развертывание службы WCF, размещенной в IIS
 
@@ -38,13 +38,13 @@ ms.locfileid: "85245097"
 
 - Windows 7 и Windows Server 2003. Используйте средство [регистрации ServiceModel (ServiceModelReg.exe)](../servicemodelreg-exe.md) для регистрации WCF в службах IIS. Чтобы использовать это средство, введите **ServiceModelReg.exe/i/x** в [Командная строка разработчика для Visual Studio](../../tools/developer-command-prompt-for-vs.md).
 
-- Windows 7. Наконец, необходимо убедиться, что ASP.NET настроен для использования .NET Framework версии 4 или более поздней. Это можно сделать, запустив средство ASPNET_Regiis с `–i` параметром. Дополнительные сведения см. в разделе [ASP.NET IIS Registration Tool](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
+- Windows 7. Наконец, необходимо убедиться, что ASP.NET настроен для использования .NET Framework версии 4 или более поздней. Это можно сделать, запустив средство ASPNET_Regiis с `–i` параметром. Дополнительные сведения см. в разделе [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 
 ## <a name="create-a-new-iis-application-or-reuse-an-existing-aspnet-application"></a>Создание нового приложения служб IIS или повторное использование существующего приложения ASP.NET
 
 Службы WCF, размещенные в IIS, должны находиться внутри приложения IIS. Можно создать новое приложение IIS для размещения служб WCF исключительно. Кроме того, можно развернуть службу WCF в существующем приложении, в котором уже размещено содержимое ASP.NET 2,0 (например, страницы ASPX и веб-службы ASP.NET [ASMX]). Дополнительные сведения об этих параметрах см. в разделах "размещение WCF параллельно с ASP.NET" и "размещение служб WCF в режиме совместимости ASP.NET" в разделе [службы WCF и ASP.NET](wcf-services-and-aspnet.md).
 
-Обратите внимание, что IIS 6,0 и более поздние версии периодически перезапускают изолированное объектно-ориентированное программное приложение. Значение по умолчанию — 1740 минут. Максимальное поддерживаемое значение - 71582 минуты. Этот перезапуск можно отключить. Дополнительные сведения об этом свойстве см. в разделе [PeriodicRestartTime](https://docs.microsoft.com/previous-versions/iis/6.0-sdk/ms525914(v=vs.90)).
+Обратите внимание, что IIS 6,0 и более поздние версии периодически перезапускают изолированное объектно-ориентированное программное приложение. Значение по умолчанию — 1740 минут. Максимальное поддерживаемое значение - 71582 минуты. Этот перезапуск можно отключить. Дополнительные сведения об этом свойстве см. в разделе [PeriodicRestartTime](/previous-versions/iis/6.0-sdk/ms525914(v=vs.90)).
 
 ## <a name="create-an-svc-file-for-the-wcf-service"></a>Создание SVC-файла для службы WCF
 
@@ -72,7 +72,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
 
 - Как некомпилированный код, помещенный непосредственно в SVC файл. Код реализации также можно найти в виде встроенного SVC в файле службы после \@ директивы ServiceHost. Любые изменения во встроенном коде приводят к перезапуску и повторной компиляции приложения при получении следующего запроса.
 
-Дополнительные сведения о модели компиляции ASP.NET 2,0 см. в разделе [Обзор компиляции ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/ms178466(v=vs.100)).
+Дополнительные сведения о модели компиляции ASP.NET 2,0 см. в разделе [Обзор компиляции ASP.NET](/previous-versions/aspnet/ms178466(v=vs.100)).
 
 ## <a name="configure-the-wcf-service"></a>Настройка службы WCF
 
@@ -114,4 +114,4 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
 
 - [Размещение в службах IIS](hosting-in-internet-information-services.md)
 - [Рекомендации по размещению в службах IIS](internet-information-services-hosting-best-practices.md)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

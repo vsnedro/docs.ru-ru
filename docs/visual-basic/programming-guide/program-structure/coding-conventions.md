@@ -6,12 +6,12 @@ helpviewer_keywords:
 - examples [Visual Basic], coding conventions
 - Visual Basic code, conventions
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
-ms.openlocfilehash: 36cd3a927d2fdf197e6b496d9308fc43a555d59b
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: b71c1eeaa136d01c701191f1bb145674efccbc56
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346155"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90551045"
 ---
 # <a name="visual-basic-coding-conventions"></a>Соглашения о написании кода в Visual Basic
 Корпорация Майкрософт разрабатывает образцы и документацию, которые соответствуют рекомендациям, приведенным в этом разделе. Если следовать тем же соглашениям о написании кода, вы можете получить следующие преимущества:  
@@ -67,7 +67,7 @@ ms.locfileid: "74346155"
   
 ## <a name="program-structure"></a>Структура программы  
   
-- При использовании метода `Main` используйте конструкцию по умолчанию для новых консольных приложений и используйте `My` для аргументов командной строки.  
+- При использовании `Main` метода используйте конструкцию по умолчанию для новых консольных приложений и используйте `My` для аргументов командной строки.  
   
      [!code-vb[VbVbalrGuidelines#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#3)]  
   
@@ -75,13 +75,13 @@ ms.locfileid: "74346155"
   
 ### <a name="string-data-type"></a>Тип данных String  
   
-- Для сцепления коротких строк рекомендуется использовать [интерполяцию строк](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/strings/interpolated-strings), как показано в следующем коде.
+- Для сцепления коротких строк рекомендуется использовать [интерполяцию строк](../language-features/strings/interpolated-strings.md), как показано в следующем коде.
   
      ```vb
      MsgBox($"hello{vbCrLf}goodbye")
      ```
   
-- Чтобы добавить строки в циклы, используйте объект <xref:System.Text.StringBuilder>.  
+- Чтобы добавить строки в циклы, используйте <xref:System.Text.StringBuilder> объект.  
   
      [!code-vb[VbVbalrGuidelines#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#5)]  
   
@@ -92,7 +92,7 @@ ms.locfileid: "74346155"
   
 ### <a name="unsigned-data-type"></a>Беззнаковый тип данных  
   
-- Используйте `Integer`, а не неподписанные типы, за исключением тех случаев, когда они необходимы.  
+- Используйте `Integer` вместо неподписанных типов, за исключением тех случаев, когда они необходимы.  
   
 ### <a name="arrays"></a>Массивы  
   
@@ -121,7 +121,7 @@ ms.locfileid: "74346155"
      [!code-vb[VbVbalrGuidelines#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#13)]  
   
 ### <a name="use-the-with-keyword"></a>Использование ключевого слова WITH  
- При выполнении серии вызовов одного объекта рассмотрите возможность использования ключевого слова `With`:  
+ При выполнении серии вызовов одного объекта рассмотрите возможность использования `With` ключевого слова:  
   
  [!code-vb[VbVbalrGuidelines#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#15)]  
   
@@ -129,7 +129,7 @@ ms.locfileid: "74346155"
  Не используйте `On Error Goto`.  
   
 ### <a name="use-the-isnot-keyword"></a>Использование ключевого слова IsNot  
- Вместо `Not...Is Nothing`используйте ключевое слово `IsNot`.  
+ Используйте `IsNot` ключевое слово вместо `Not...Is Nothing` .  
   
 ### <a name="new-keyword"></a>Создать ключевое слово  
   
@@ -147,11 +147,11 @@ ms.locfileid: "74346155"
   
 ### <a name="event-handling"></a>Обработка событий  
   
-- Используйте `Handles`, а не `AddHandler`.  
+- Используйте `Handles` вместо `AddHandler` :  
   
      [!code-vb[VbVbalrGuidelines#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#24)]  
   
-- Используйте `AddressOf`и не создавайте делегата явным образом:  
+- Используйте `AddressOf` и не создавайте делегата явным образом:  
   
      [!code-vb[VbVbalrGuidelines#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#25)]  
   
@@ -159,10 +159,10 @@ ms.locfileid: "74346155"
   
      [!code-vb[VbVbalrGuidelines#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#26)]  
   
-- Не проверяйте, является ли событие `Nothing`ным (null) перед вызовом метода `RaiseEvent`. `RaiseEvent` проверяет наличие `Nothing` перед вызовом события.  
+- Не следует проверять, имеет ли событие `Nothing` значение (null) перед вызовом `RaiseEvent` метода. `RaiseEvent` проверяет `Nothing` перед тем, как он вызывает событие.  
   
 ### <a name="using-shared-members"></a>Использование общих членов  
- Вызывайте `Shared` членов с помощью имени класса, а не из переменной экземпляра.  
+ Вызывайте `Shared` члены с помощью имени класса, а не из переменной экземпляра.  
   
 ### <a name="use-xml-literals"></a>Использовать литералы XML  
  XML-литералы упрощают наиболее распространенные задачи, возникающие при работе с XML (например, Загрузка, запрос и преобразование). При разработке с использованием XML-кода следуйте приведенным ниже рекомендациям.  
@@ -173,7 +173,7 @@ ms.locfileid: "74346155"
   
 - Используйте свойства осей XML для доступа к элементам и атрибутам в XML-документе.  
   
-- Используйте внедренные выражения для включения значений и создания XML на основе существующих значений вместо использования вызовов API, таких как метод `Add`:  
+- Используйте внедренные выражения для включения значений и создания XML на основе существующих значений вместо использования вызовов API, таких как `Add` метод.  
   
      [!code-vb[VbVbalrGuidelines#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#27)]  
   
@@ -195,7 +195,7 @@ ms.locfileid: "74346155"
   
      [!code-vb[VbVbalrGuidelines#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#31)]  
   
-- Выровняйте предложения запроса в операторе `From`:  
+- Выровняйте предложения запроса в `From` операторе:  
   
      [!code-vb[VbVbalrGuidelines#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#32)]  
   
@@ -203,7 +203,7 @@ ms.locfileid: "74346155"
   
      [!code-vb[VbVbalrGuidelines#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#33)]  
   
-- Используйте предложение `Join`, чтобы явно определить операцию объединения вместо использования предложения `Where` для неявного определения операции объединения:  
+- Используйте `Join` предложение для явного определения операции JOIN вместо использования `Where` предложения для неявного определения операции объединения:  
   
      [!code-vb[VbVbalrGuidelines#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#34)]  
   

@@ -2,12 +2,12 @@
 title: <add> из <commonParameters>
 ms.date: 03/30/2017
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
-ms.openlocfilehash: d682acd7fff6bab2c66660a028f8a75b780e21d2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 8328b6d08c1b57ad7a899c8cb489e07037e5af09
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400669"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558165"
 ---
 # <a name="add-of-commonparameters"></a>\<add> из \<commonParameters>
 Определяет пару параметров «имя-значение», которые используются глобально в нескольких службах. Как правило, этот параметр включает строку подключения базы данных, которая может совместно использоваться долговременными службами.  
@@ -39,7 +39,7 @@ ms.locfileid: "70400669"
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |name|Имя параметра, заданного для службы.|  
-|value|Значение параметра, заданного для службы.|  
+|Значение|Значение параметра, заданного для службы.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
@@ -73,7 +73,7 @@ ms.locfileid: "70400669"
   
  Обратите внимание, что `EnableRetries` параметр может быть установлен на глобальном уровне (как показано в разделе *общиепараметры* ) или для отдельных служб, которые поддерживают `EnableRetries` (как показано в разделе *службы* ).  
   
- Дополнительные сведения об использовании файла конфигурации для управления поведением <xref:System.Workflow.Runtime.WorkflowRuntime> объекта Windows Workflow Foundation ведущего приложения см. в разделе [файлы конфигурации рабочего процесса](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
+ Дополнительные сведения об использовании файла конфигурации для управления поведением <xref:System.Workflow.Runtime.WorkflowRuntime> объекта Windows Workflow Foundation ведущего приложения см. в разделе [файлы конфигурации рабочего процесса](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
   
 ## <a name="example"></a>Пример  
   
@@ -93,5 +93,5 @@ ms.locfileid: "70400669"
 - <xref:System.Workflow.Runtime.WorkflowRuntime>
 - <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>
 - <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>
-- [Файлы конфигурации рабочих процессов](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
+- [Файлы конфигурации рабочих процессов](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
 - [\<commonParameters>](commonparameters.md)

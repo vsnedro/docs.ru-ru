@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - HTTP activation [WCF]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
-ms.openlocfilehash: 84a0dcc4fed28ebd7a536bdabfcdc389be6072d8
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 085a69421f0aa7b763bd2222820ced4b4a7e1c81
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246887"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557870"
 ---
 # <a name="how-to-install-and-configure-wcf-activation-components"></a>Практическое руководство. Установка и настройка компонентов активации WCF
 
@@ -107,4 +107,4 @@ ms.locfileid: "85246887"
 - [Активация TCP](../samples/tcp-activation.md)
 - [Активация MSMQ](../samples/msmq-activation.md)
 - [Активация NamedPipe](../samples/namedpipe-activation.md)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

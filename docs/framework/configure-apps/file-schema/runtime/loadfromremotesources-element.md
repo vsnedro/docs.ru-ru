@@ -5,18 +5,18 @@ helpviewer_keywords:
 - loadFromRemoteSources element
 - <loadFromRemoteSources> element
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
-ms.openlocfilehash: a0dcffe378cdd09de0fbd8f0a6ef0635c033fd9c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 48da852bd1e209aed5ed5e75d8e510027a96d6d7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154066"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558013"
 ---
 # <a name="loadfromremotesources-element"></a>Элемент \<loadFromRemoteSources>
 Указывает, должны ли сборки, загруженные из удаленных источников, предоставлять полное доверие в .NET Framework 4 и более поздних версий.
   
 > [!NOTE]
-> Если вы перенаправлялись на эту статью из-за сообщения об ошибке в списке ошибок проекта Visual Studio или ошибки сборки, см. раздел [как использовать сборку из Интернета в Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
+> Если вы перенаправлялись на эту статью из-за сообщения об ошибке в списке ошибок проекта Visual Studio или ошибки сборки, см. раздел [как использовать сборку из Интернета в Visual Studio](/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
@@ -99,7 +99,7 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 
 ## <a name="configuration-file"></a>Файл конфигурации
 
-Этот элемент обычно используется в файле конфигурации приложения, но может использоваться в других файлах конфигурации в зависимости от контекста. Дополнительные сведения см. в статье [более Неявное использование политики CAS: лоадфромремотесаурцес](https://docs.microsoft.com/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources) в блоге по безопасности .NET.  
+Этот элемент обычно используется в файле конфигурации приложения, но может использоваться в других файлах конфигурации в зависимости от контекста. Дополнительные сведения см. в статье [более Неявное использование политики CAS: лоадфромремотесаурцес](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources) в блоге по безопасности .NET.  
 
 ## <a name="example"></a>Пример
 
@@ -115,7 +115,7 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 
 ## <a name="see-also"></a>См. также
 
-- [Более Неявное использование политики CAS: Лоадфромремотесаурцес](https://docs.microsoft.com/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
+- [Более Неявное использование политики CAS: Лоадфромремотесаурцес](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
 - [Практическое руководство. Выполнение не вполне безопасного кода в изолированной среде](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

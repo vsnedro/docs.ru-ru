@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596
 topic_type:
 - apiref
-ms.openlocfilehash: 3593e4d68058a1820f575c92ff9571d43560316a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b0b9c0b7d178557806a9ab2893bff2d34dc408ff
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73133931"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557740"
 ---
 # <a name="iclrsyncmanager-interface"></a>Интерфейс ICLRSyncManager
 Определяет методы, позволяющие узлу получать сведения о запрошенных задачах и обнаруживать взаимоблокировки в своей реализации синхронизации.  
@@ -29,7 +29,7 @@ ms.locfileid: "73133931"
 |Метод|Описание|  
 |------------|-----------------|  
 |[Метод CreateRWLockOwnerIterator](iclrsyncmanager-createrwlockowneriterator-method.md)|Запрашивает, что среда CLR создает итератор для узла, который будет использоваться для определения набора задач, ожидающих блокировки чтения и записи.|  
-|[Метод DeleteRWLockOwnerIterator](iclrsyncmanager-deleterwlockowneriterator-method.md)|Запрашивает уничтожение итератора, созданного с помощью вызова `CreateRWLockOwnerIterator`.|  
+|[Метод DeleteRWLockOwnerIterator](iclrsyncmanager-deleterwlockowneriterator-method.md)|Запрашивает удаление итератора, который был создан при вызове среды CLR `CreateRWLockOwnerIterator` .|  
 |[Метод GetMonitorOwner](iclrsyncmanager-getmonitorowner-method.md)|Возвращает задачу, которая владеет указанным монитором.|  
 |[Метод GetRWLockOwnerNext](iclrsyncmanager-getrwlockownernext-method.md)|Возвращает следующую задачу, ожидающую текущую блокировку модуля чтения-записи.|  
   
@@ -38,13 +38,13 @@ ms.locfileid: "73133931"
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Thread>
 - [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)
-- [Управляемая и неуправляемая работа с потоками](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
+- [Управляемые и неуправляемые потоки](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
 - [Интерфейсы размещения](hosting-interfaces.md)

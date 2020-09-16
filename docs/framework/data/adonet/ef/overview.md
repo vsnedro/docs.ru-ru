@@ -3,12 +3,12 @@ title: Общие сведения об Entity Framework
 description: Entity Framework в ADO.NET поддерживает разработку приложений, ориентированных на данные, которые работают на более высоком уровне абстракции, чем традиционные приложения.
 ms.date: 09/17/2018
 ms.assetid: a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0
-ms.openlocfilehash: 1f1ab5d44c2d6c7e1f54a761dbc706d537664ef6
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: e6b7a605f88aecc76cb182473d9dd9f925a4d5a9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286809"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557987"
 ---
 # <a name="entity-framework-overview"></a>Обзор Entity Framework
 
@@ -48,7 +48,7 @@ Entity Framework использует эти файлы модели и сопо
 
 - LINQ to Entities. Обеспечивает поддержку запросов LINQ для выполнения запросов к типам сущности, которые определены в концептуальной модели. Дополнительные сведения см. в разделе [LINQ to Entities](./language-reference/linq-to-entities.md).
 
-- [!INCLUDE[esql](../../../../../includes/esql-md.md)]. Независимый от хранилища диалект SQL, который работает непосредственно с сущностями в концептуальной модели и поддерживает EDM концепции. [!INCLUDE[esql](../../../../../includes/esql-md.md)]используется как с запросами объектов, так и с запросами, которые выполняются с помощью поставщика EntityClient. Дополнительные сведения см. в разделе [Entity SQL обзор](./language-reference/entity-sql-overview.md).
+- [!INCLUDE[esql](../../../../../includes/esql-md.md)]. Независимый от хранилища диалект SQL, который работает непосредственно с сущностями в концептуальной модели и поддерживает EDM концепции. [!INCLUDE[esql](../../../../../includes/esql-md.md)] используется как с запросами объектов, так и с запросами, которые выполняются с помощью поставщика EntityClient. Дополнительные сведения см. в разделе [Entity SQL обзор](./language-reference/entity-sql-overview.md).
 
 Entity Framework включает поставщик данных EntityClient. Этот поставщик управляет соединениями, преобразует запросы сущностей в запросы, зависящие от источника данных, и возвращает модуль чтения данных, который Entity Framework использует для материализации данных сущности в объекты. Если материализация объектов не требуется, поставщик EntityClient может также использоваться как стандартный поставщик данных ADO.NET, который позволяет приложениям выполнять запросы [!INCLUDE[esql](../../../../../includes/esql-md.md)] и получать предназначенные только для чтения данные, возвращаемые модулем чтения данных. Дополнительные сведения см. [в разделе Поставщик EntityClient для Entity Framework](entityclient-provider-for-the-entity-framework.md).
 
@@ -72,7 +72,7 @@ Entity Framework включает обновленный поставщик да
 
 Дополнительные сведения о Entity Framework см. в следующих статьях:
 
-[Начало работы](getting-started.md) — содержит сведения о том, как быстро начать работу с помощью [краткого руководства](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399182(v=vs.100)), в котором показано, как создать простое приложение Entity Framework.
+[Начало работы](getting-started.md) — содержит сведения о том, как быстро начать работу с помощью [краткого руководства](/previous-versions/dotnet/netframework-4.0/bb399182(v=vs.100)), в котором показано, как создать простое приложение Entity Framework.
 
 [Entity Framework терминология](terminology.md) определяет множество терминов, которые появились EDM и Entity Framework и используются в документации Entity Framework.
 

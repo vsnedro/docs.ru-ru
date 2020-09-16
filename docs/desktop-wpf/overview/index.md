@@ -3,12 +3,12 @@ title: Что такое Windows Presentation Foundation
 description: В этой статье приводятся общие сведения о платформе Windows Presentation Foundation (WPF) в контексте ее применения вместе с .NET Core и предоставляемых функций.
 ms.date: 07/18/2019
 ms.topic: overview
-ms.openlocfilehash: 63b2e431b5ab5fd3875887b8b574a77aa12018a6
-ms.sourcegitcommit: 961ec21c22d2f1d55c9cc8a7edf2ade1d1fd92e3
+ms.openlocfilehash: 37443b692ba840da847b2a21c3220f2c36025c12
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "85840330"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90551866"
 ---
 # <a name="what-is-windows-presentation-foundation"></a>Что такое Windows Presentation Foundation
 
@@ -22,7 +22,7 @@ ms.locfileid: "85840330"
 
 01. Реализация .NET Framework, поддерживаемая в Visual Studio 2019 и Visual Studio 2017.
 
-Это руководство по классическим приложениям ориентировано на .NET Core 3.0 и WPF. Дополнительные сведения о доступной документации по .NET Framework см. в статье [Платформа Windows Presentation Foundation](../../framework/wpf/index.md).
+Это руководство по классическим приложениям ориентировано на .NET Core 3.0 и WPF. Дополнительные сведения о доступной документации по .NET Framework см. в статье [Платформа Windows Presentation Foundation](/dotnet/desktop/wpf/).
 
 ## <a name="xaml"></a>XAML
 
@@ -52,7 +52,7 @@ XAML поддерживает синтаксис для расширений р�
 
 В WPF поддерживаются разные расширения разметки для XAML, например `{Binding}` для привязки данных.
 
-Дополнительные сведения см. в разделе [Расширения разметки и XAML WPF](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
+Дополнительные сведения см. в разделе [Расширения разметки и XAML WPF](/dotnet/desktop/wpf/advanced/markup-extensions-and-wpf-xaml).
 
 ## <a name="property-system"></a>Система свойств
 
@@ -144,6 +144,6 @@ WPF содержит большинство распространенных к�
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Создание приложения WPF.](https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json)
+- [Создание приложения WPF.](/visualstudio/get-started/csharp/tutorial-wpf?bc=%252fdotnet%252fbreadcrumb%252ftoc.json&toc=%252fdotnet%252fdesktop-wpf%252ftoc.json)
 - [Отличия от платформы .NET Framework.](../migration/differences-from-net-framework.md)
 - [Дополнительные сведения о XAML.](../fundamentals/xaml.md)

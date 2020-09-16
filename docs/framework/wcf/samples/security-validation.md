@@ -2,12 +2,12 @@
 title: Проверка безопасности
 ms.date: 03/30/2017
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
-ms.openlocfilehash: 70408976469b1cbcf9c4679bd91d81872ec74ae1
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ec7b7f96c1f6489f677970164f74c176b301f55b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599975"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557389"
 ---
 # <a name="security-validation"></a>Проверка безопасности
 Этот образец показывает, как с помощью пользовательского поведения проверять службы на компьютере на соответствие определенным условиям. В этом образце службы проверяются с помощью пользовательского поведения путем сканирования каждой конечной точки службы и проверки, содержат ли они безопасные элементы привязки. Этот образец основан на [Начало работы](getting-started-sample.md).  
@@ -107,6 +107,6 @@ public void Validate(ServiceDescription serviceDescription,
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ServiceValidation`  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - certificates [WCF], creating temporary certificates
 - temporary certificates [WCF]
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
-ms.openlocfilehash: 0a21548386639a9f6a8c8572e5d7928ffdb270d6
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 0907f7f8a3767db9d83e5deaae1d86141fbee7b0
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247043"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557415"
 ---
 # <a name="how-to-create-temporary-certificates-for-use-during-development"></a>Практическое руководство. Создание временных сертификатов для использования во время разработки
 
@@ -22,7 +22,7 @@ ms.locfileid: "85247043"
 >
 > По умолчанию командлет [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) создает самозаверяющие сертификаты, и эти сертификаты являются небезопасными. Размещение самозаверяющих сертификатов в хранилище доверенных корневых центров сертификации позволяет создать среду разработки, которая более точно имитирует среду развертывания.
 
- Дополнительные сведения о создании и использовании сертификатов см. [в разделе Работа с сертификатами](working-with-certificates.md). Дополнительные сведения об использовании сертификата в качестве учетных данных см. в разделе [Защита служб и клиентов](securing-services-and-clients.md). Руководство по использованию технологии Microsoft Authenticode см. в разделе, посвященном [общим сведениям и учебникам по Authenticode](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85)).
+ Дополнительные сведения о создании и использовании сертификатов см. [в разделе Работа с сертификатами](working-with-certificates.md). Дополнительные сведения об использовании сертификата в качестве учетных данных см. в разделе [Защита служб и клиентов](securing-services-and-clients.md). Руководство по использованию технологии Microsoft Authenticode см. в разделе, посвященном [общим сведениям и учебникам по Authenticode](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85)).
 
 ## <a name="to-create-a-self-signed-root-authority-certificate-and-export-the-private-key"></a>Создание самозаверяющего сертификата корневого центра и экспорт закрытого ключа
 

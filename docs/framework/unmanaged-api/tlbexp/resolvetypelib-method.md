@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 95d2aa0d-8eeb-4a9f-a216-5249f7e2c167
 topic_type:
 - apiref
-ms.openlocfilehash: f0f6fe321f4d38129b6d70ce94a7ea8de8fff6c8
-ms.sourcegitcommit: 7e2128d4a4c45b4274bea3b8e5760d4694569ca1
+ms.openlocfilehash: 65bbae614c8872ab5d78b3855b56ceaf2aad50da
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75935671"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558190"
 ---
 # <a name="resolvetypelib-method"></a>Метод ResolveTypeLib
 Разрешает простое имя библиотеки типов, возвращая полный путь.  
@@ -38,7 +38,7 @@ HRESULT ResolveTypeLib(
   
 ## <a name="parameters"></a>Параметры  
  `bstrSimpleName`  
- окне Значение типа [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) , содержащее простое имя библиотеки типов.  
+ окне Значение типа [BSTR](/previous-versions/windows/desktop/automat/bstr) , содержащее простое имя библиотеки типов.  
   
  `tlbid`  
  окне Идентификатор GUID, назначенный библиотеке типов в реестре.  
@@ -56,12 +56,12 @@ HRESULT ResolveTypeLib(
  окне Флаг [Сискинд](/windows/win32/api/oaidl/ne-oaidl-syskind) , определяющий операционную среду. Распространенные значения: SYS_WIN32 и SYS_WIN64.  
   
  `pbstrResolvedTlbName`  
- заполняет Указатель на [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) , содержащий полный путь к библиотеке типов с именем в параметре `bstrSimpleName`.  
+ заполняет Указатель на [BSTR](/previous-versions/windows/desktop/automat/bstr) , содержащий полный путь к библиотеке типов с именем в `bstrSimpleName` параметре.  
   
-## <a name="remarks"></a>Заметки  
- Метод `ResolveTypeLib` вызывается [функцией LoadTypeLibWithResolver](loadtypelibwithresolver-function.md) во время обработки программы [Tlbexp. exe (программа экспорта библиотек типов)](../../tools/tlbexp-exe-type-library-exporter.md) .  
+## <a name="remarks"></a>Примечания  
+ `ResolveTypeLib`Метод вызывается [функцией LoadTypeLibWithResolver](loadtypelibwithresolver-function.md) во время обработки [Tlbexp.exe (средство экспорта библиотеки типов)](../../tools/tlbexp-exe-type-library-exporter.md) .  
   
- Пользовательские реализации этого интерфейса должны возвращать [строку BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) , содержащую полный путь к библиотеке типов с именем в параметре `bstrSimpleName`.  
+ Пользовательские реализации этого интерфейса должны возвращать [строку BSTR](/previous-versions/windows/desktop/automat/bstr) , содержащую полный путь к библиотеке типов с именем в `bstrSimpleName` параметре.  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -70,9 +70,9 @@ HRESULT ResolveTypeLib(
   
  **Библиотека:** Тлбреф. lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Вспомогательные функции Tlbexp](index.md)
-- [лоадтипелибекс](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+- [лоадтипелибекс](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

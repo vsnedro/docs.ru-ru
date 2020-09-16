@@ -3,12 +3,12 @@ title: Добро пожаловать в .NET
 description: Начало работы с семейством технологий .NET
 ms.date: 12/03/2019
 ms.custom: updateeachrelease
-ms.openlocfilehash: 7b1c5eceefd1e108eabf17d5cb6f7552af00e0d5
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 707f83e912b6bd6999423949412cffba852093a0
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495151"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558078"
 ---
 # <a name="welcome-to-net"></a>Добро пожаловать в .NET
 
@@ -35,7 +35,7 @@ ms.locfileid: "89495151"
 
 - [Новые возможности .NET Core 3.1](core/whats-new/dotnet-core-3-1.md)
 - [Новые возможности .NET Framework](framework/whats-new/index.md)
-- [Новые возможности C#](csharp/whats-new/index.md)
+- [Новые возможности C#](./csharp/whats-new/csharp-9.md)
 - [Новые возможности Visual Basic](visual-basic/whats-new/index.md)
 
 ## <a name="documentation"></a>Документация
@@ -51,7 +51,7 @@ ms.locfileid: "89495151"
 - [.NET для Apache Spark](spark/index.yml)
 - [Архитектура приложений .NET](architecture/index.yml)
 
-Кроме того, можете обратиться к [Справочнику по API .NET](/dotnet/api).
+Кроме того, можете обратиться к [Справочнику по API .NET](../api/index.md).
 
 ## <a name="videos"></a>Видеоролики
 

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 54edefe0-bc38-419b-b486-3d8a0c356f13
-ms.openlocfilehash: b2b71dac58838a826933af570934bf4bbb35e025
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 0f79b97b486bbc3e1150cd6aff8162d37134f62e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70784612"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558000"
 ---
 # <a name="handling-dataset-events"></a>Обработка событий наборов данных
 Объект <xref:System.Data.DataSet> предоставляет три события: <xref:System.ComponentModel.MarshalByValueComponent.Disposed>, <xref:System.Data.DataSet.Initialized>и <xref:System.Data.DataSet.MergeFailed>.  
@@ -48,16 +48,16 @@ private static void DataSetMergeFailed(
  Свойство <xref:System.Data.DataSet.IsInitialized%2A> возвращает значение `true` , если `DataSet` выполнил инициализацию. В противном случае оно возвращает значение `false`. Метод <xref:System.Data.DataSet.BeginInit%2A> , который начинает инициализацию `DataSet`, присваивает свойству <xref:System.Data.DataSet.IsInitialized%2A> значение `false`. Метод <xref:System.Data.DataSet.EndInit%2A> , который заканчивает инициализацию `DataSet`, присваивает свойству значение `true`. Эти методы используются средой разработки Visual Studio для инициализации `DataSet` , которая используется другим компонентом. Они редко используются в коде.  
   
 ## <a name="the-disposed-event"></a>Удаленное событие  
- `DataSet` является производным от класса <xref:System.ComponentModel.MarshalByValueComponent> , который предоставляет и метод <xref:System.ComponentModel.MarshalByValueComponent.Dispose%2A> , и событие <xref:System.ComponentModel.MarshalByValueComponent.Disposed> . <xref:System.ComponentModel.MarshalByValueComponent.Disposed> Событие добавляет обработчик событий для прослушивания ликвидированного события в компоненте. Если требуется выполнить код <xref:System.ComponentModel.MarshalByValueComponent.Disposed> при <xref:System.ComponentModel.MarshalByValueComponent.Dispose%2A> вызове метода, можно использовать событие. `DataSet` <xref:System.ComponentModel.MarshalByValueComponent.Dispose%2A>Освобождает ресурсы, используемые <xref:System.ComponentModel.MarshalByValueComponent>.  
+ `DataSet` является производным от класса <xref:System.ComponentModel.MarshalByValueComponent> , который предоставляет и метод <xref:System.ComponentModel.MarshalByValueComponent.Dispose%2A> , и событие <xref:System.ComponentModel.MarshalByValueComponent.Disposed> . <xref:System.ComponentModel.MarshalByValueComponent.Disposed>Событие добавляет обработчик событий для прослушивания ликвидированного события в компоненте. <xref:System.ComponentModel.MarshalByValueComponent.Disposed> `DataSet` Если требуется выполнить код при вызове метода, можно использовать событие <xref:System.ComponentModel.MarshalByValueComponent.Dispose%2A> . <xref:System.ComponentModel.MarshalByValueComponent.Dispose%2A> Освобождает ресурсы, используемые <xref:System.ComponentModel.MarshalByValueComponent> .  
   
 > [!NOTE]
-> Объекты `DataSet` <xref:System.ComponentModel.MarshalByValueComponent> и `DataTable` наследуются от и поддерживают интерфейс<xref:System.Runtime.Serialization.ISerializable> для удаленного взаимодействия. Это единственные объекты ADO.NET, которые разрешают удаленное взаимодействие. Дополнительные сведения см. в разделе [удаленное взаимодействие .NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100)).  
+> `DataSet`Объекты и `DataTable` наследуются от <xref:System.ComponentModel.MarshalByValueComponent> и поддерживают <xref:System.Runtime.Serialization.ISerializable> интерфейс для удаленного взаимодействия. Это единственные объекты ADO.NET, которые разрешают удаленное взаимодействие. Дополнительные сведения см. в разделе [удаленное взаимодействие .NET](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100)).  
   
- Сведения о других событиях `DataSet`, доступных при работе с, см. в разделе [Обработка событий DataTable](handling-datatable-events.md) и [Обработка событий DataAdapter](../handling-dataadapter-events.md).  
+ Сведения о других событиях, доступных при работе с `DataSet` , см. в разделе [Обработка событий DataTable](handling-datatable-events.md) и [Обработка событий DataAdapter](../handling-dataadapter-events.md).  
   
 ## <a name="see-also"></a>См. также
 
 - [Наборы данных, таблицы данных и объекты DataView](index.md)
-- [Проверка данных](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/t3b36awf(v=vs.120))
+- [Проверка данных](/previous-versions/visualstudio/visual-studio-2013/t3b36awf(v=vs.120))
 - [Извлечение и изменение данных в ADO.NET](../retrieving-and-modifying-data.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

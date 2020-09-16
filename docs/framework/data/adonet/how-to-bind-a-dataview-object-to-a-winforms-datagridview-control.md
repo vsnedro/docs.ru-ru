@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2b73d60a-6049-446a-85a7-3e5a68b183e2
-ms.openlocfilehash: 3a3089073cdc5afb4ee51caca9114b401c740b45
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: cbae5453be485896e27a5039ece20bb3bcec9913
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795003"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556984"
 ---
 # <a name="how-to-bind-a-dataview-object-to-a-windows-forms-datagridview-control"></a>Практическое руководство. Связывание объекта DataView с элементом управления DataGridView в Windows Forms
 Элемент управления <xref:System.Windows.Forms.DataGridView> предоставляет мощный и гибкий способ отображения данных в табличном формате. Элемент управления <xref:System.Windows.Forms.DataGridView> поддерживает стандартную модель привязки данных Windows Forms, поэтому он выполняет привязку к <xref:System.Data.DataView> и другим различным источникам данных. Однако в большинстве случаев выполняется привязка к компоненту <xref:System.Windows.Forms.BindingSource>, управляющему взаимодействием с источником данных.  
   
- Дополнительные сведения об элементе управления <xref:System.Windows.Forms.DataGridView> см. в разделе [Общие сведения о элементе управления DataGridView](../../winforms/controls/datagridview-control-overview-windows-forms.md).  
+ Дополнительные сведения об <xref:System.Windows.Forms.DataGridView> элементе управления см. в разделе [Общие сведения о элементе управления DataGridView](/dotnet/desktop/winforms/controls/datagridview-control-overview-windows-forms).  
   
 ### <a name="to-connect-a-datagridview-control-to-a-dataview"></a>Соединение элемента управления DataGridView с объектом DataView  
   

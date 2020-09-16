@@ -2,21 +2,21 @@
 title: Практическое руководство. Как программно добавить возможность обнаружения к службе и клиенту WCF
 ms.date: 03/30/2017
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
-ms.openlocfilehash: c28815d1d208d3e91785a13d95e03c09c0f02ed9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c1b92568d90734a33a7b36af987fdb7cbbbe5149
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596998"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557831"
 ---
 # <a name="how-to-programmatically-add-discoverability-to-a-wcf-service-and-client"></a>Практическое руководство. Как программно добавить возможность обнаружения к службе и клиенту WCF
-В этом разделе объясняется, как сделать службу Windows Communication Foundation (WCF) обнаруживаемой. Он основан на образце с [самостоятельным размещением](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) .  
+В этом разделе объясняется, как сделать службу Windows Communication Foundation (WCF) обнаруживаемой. Он основан на образце с [самостоятельным размещением](../samples/self-host.md) .  
   
 ### <a name="to-configure-the-existing-self-host-service-sample-for-discovery"></a>Настройка образца службы существующего резидентного размещения для обнаружения  
   
 1. Откройте решение для самостоятельного размещения в Visual Studio 2012. Образец находится в каталоге TechnologySamples\Basic\Service\Hosting\SelfHost.  
   
-2. Добавьте ссылку на проект службы `System.ServiceModel.Discovery.dll`. Может появиться сообщение об ошибке "System. Для ServiceModel. Discovery. dll или одной из его зависимостей требуется более поздняя версия .NET Framework, чем та, которая указана в проекте... " Если вы видите это сообщение, щелкните правой кнопкой мыши проект в обозреватель решений и выберите пункт **Свойства**. В окне **Свойства проекта** убедитесь, что **Целевая платформа** имеет значение [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] .  
+2. Добавьте ссылку на проект службы `System.ServiceModel.Discovery.dll`. Может появиться сообщение об ошибке "System. Для ServiceModel.Discovery.dll или одной из его зависимостей требуется более поздняя версия .NET Framework, чем та, которая указана в проекте... " Если вы видите это сообщение, щелкните правой кнопкой мыши проект в обозреватель решений и выберите пункт **Свойства**. В окне **Свойства проекта** убедитесь, что **Целевая платформа** имеет значение [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] .  
   
 3. Откройте файл Service.cs и добавьте следующую инструкцию `using`.  
   
@@ -124,7 +124,7 @@ ms.locfileid: "84596998"
   
      Этот метод использует для вызова службы калькулятора адрес конечной точки, возвращенной из `FindCalculatorServiceAddress`.  
   
-11. Внутри метода `InvokeCalculatorService` создайте экземпляр класса `CalculatorServiceClient`. Этот класс определяется с помощью примера с [самостоятельным размещением](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) . Он был сформирован с помощью программы Svcutil.exe.  
+11. Внутри метода `InvokeCalculatorService` создайте экземпляр класса `CalculatorServiceClient`. Этот класс определяется с помощью примера с [самостоятельным размещением](../samples/self-host.md) . Он был сформирован с помощью программы Svcutil.exe.  
   
     ```csharp  
     // Create a client  
@@ -220,7 +220,7 @@ ms.locfileid: "84596998"
     ```  
   
 ## <a name="example"></a>Пример  
- Ниже приведен полный листинг кода для данного образца. Поскольку этот код основан на образце с [самостоятельным размещением](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) , отображаются только измененные файлы. Дополнительные сведения о примере с самостоятельным размещением см. в разделе [инструкции по установке](https://docs.microsoft.com/dotnet/framework/wcf/samples/set-up-instructions).  
+ Ниже приведен полный листинг кода для данного образца. Поскольку этот код основан на образце с [самостоятельным размещением](../samples/self-host.md) , отображаются только измененные файлы. Дополнительные сведения о примере с самостоятельным размещением см. в разделе [инструкции по установке](../samples/set-up-instructions.md).  
   
 ```csharp  
 // Service.cs  
@@ -340,7 +340,7 @@ namespace DiscoveryClientApp
 }  
 ```  
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об обнаружении WCF](wcf-discovery-overview.md)
 - [Модель объектов обнаружения WCF](wcf-discovery-object-model.md)
