@@ -3,12 +3,12 @@ title: Запросы в LINQ to Entities
 description: Узнайте о том, как LINQ предлагает простую, согласованную модель для работы с данными различных типов источников данных и форматов с помощью программных объектов.
 ms.date: 03/30/2017
 ms.assetid: c015a609-29eb-4e95-abb1-2ca721c6e2ad
-ms.openlocfilehash: 908a4a601c075e0845ba6d1eeeaa0f4dbaa3b53d
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 5a10aadd3f21086b2b04dc5e77e40f35655f905b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89129145"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554258"
 ---
 # <a name="queries-in-linq-to-entities"></a>Запросы в LINQ to Entities
 Запрос представляет собой выражение, извлекающее данные из источника данных. Запросы обычно выражаются на специализированном языке запросов, например SQL для реляционных баз данных и XQuery для XML. Поэтому разработчикам приходится учить новый язык запросов для каждого типа источника данных и формата данных, для которых выполняется запрос. Интегрированный в язык запрос (LINQ) предлагает упрощенную согласованную модель работы с данными для различных типов источников данных и различных форматов данных. Запросы LINQ всегда работают с программируемыми объектами.  
@@ -71,4 +71,4 @@ ms.locfileid: "89129145"
 - [LINQ to Entities](linq-to-entities.md)
 - [Приступая к работе с LINQ в C#](../../../../../csharp/programming-guide/concepts/linq/index.md)
 - [Приступая к работе с LINQ в Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
-- [Параметры слияния EF и скомпилированные запросы](https://docs.microsoft.com/archive/blogs/dsimmons/ef-merge-options-and-compiled-queries)
+- [Параметры слияния EF и скомпилированные запросы](/archive/blogs/dsimmons/ef-merge-options-and-compiled-queries)

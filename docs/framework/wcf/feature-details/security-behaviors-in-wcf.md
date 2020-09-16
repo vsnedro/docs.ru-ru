@@ -2,12 +2,12 @@
 title: Поведения безопасности в WCF
 ms.date: 03/30/2017
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
-ms.openlocfilehash: b25d476e9c9b4a70834274c6970dad1b056cecb9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1f15a5aec2f5da89e4069deec946cc20b54f414e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595210"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554069"
 ---
 # <a name="security-behaviors-in-wcf"></a>Поведения безопасности в WCF
 В Windows Communication Foundation (WCF) поведение изменяют поведение во время выполнения на уровне службы или на уровне конечной точки. (Дополнительные сведения о поведении в целом см. в разделе [Определение поведения службы во время выполнения](../specifying-service-run-time-behavior.md).) *Поведения безопасности* позволяют управлять учетными данными, проверкой подлинности, авторизацией и журналами аудита. Поведения можно использовать путем программирования или через конфигурацию. В этом разделе основное внимание уделяется настройке следующих поведений, связанных с функциями безопасности:  
@@ -119,7 +119,7 @@ ms.locfileid: "84595210"
  Задает сертификат, используемый для проверки подлинности клиента с помощью этого элемента. Дополнительные сведения см. [в разделе инструкции. Указание значений учетных данных клиента](../how-to-specify-client-credential-values.md).  
   
 #### \<httpDigest>  
- Эта функция должна быть включена с помощью Active Directory в Windows и службах IIS. Дополнительные сведения см. [в статье дайджест-проверка подлинности в IIS 6,0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782661(v=ws.10)).  
+ Эта функция должна быть включена с помощью Active Directory в Windows и службах IIS. Дополнительные сведения см. [в статье дайджест-проверка подлинности в IIS 6,0](/previous-versions/windows/it-pro/windows-server-2003/cc782661(v=ws.10)).  
   
 #### <a name="issuedtoken-element"></a>Элемент \<issuedToken>  
  [\<issuedToken>](../../configure-apps/file-schema/wcf/issuedtoken.md)Содержит элементы, используемые для настройки локального издателя маркеров или поведения, используемые в службе маркеров безопасности. Инструкции по настройке клиента для использования локального издателя см. [в разделе как настроить локальный издатель](how-to-configure-a-local-issuer.md).  
@@ -221,7 +221,7 @@ ms.locfileid: "84595210"
 </behaviors>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Аудит](auditing-security-events.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

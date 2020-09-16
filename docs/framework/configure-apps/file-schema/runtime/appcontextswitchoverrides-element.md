@@ -7,12 +7,12 @@ helpviewer_keywords:
 - configuration switches
 - configuration
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
-ms.openlocfilehash: 394523e81da96d596a00010a393b9a034c0d552f
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 0ead35559a17eb06304e6c251d2fe388ca178a30
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558755"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552288"
 ---
 # <a name="appcontextswitchoverrides-element"></a>Элемент \<AppContextSwitchOverrides>
 
@@ -53,7 +53,7 @@ ms.locfileid: "88558755"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
  Начиная с .NET Framework 4,6, `<AppContextSwitchOverrides>` элемент в файле конфигурации позволяет вызывающим ОБЪЕКТАМ API определить, может ли их приложение использовать преимущества новых функциональных возможностей или сохранить совместимость с предыдущими версиями библиотеки. Например, если поведение API изменилось между двумя версиями библиотеки, `<AppContextSwitchOverrides>` элемент позволяет вызывающим объектам этого API отказаться от нового поведения в версиях библиотеки, поддерживающих новые функциональные возможности. Для приложений, которые вызывают интерфейсы API в .NET Framework, `<AppContextSwitchOverrides>` элемент может также разрешить вызывающим объектам, приложения которых нацелены на более раннюю версию .NET Framework, использовать новые функции, если их приложение выполняется в версии .NET Framework, которая включает эти функции.
 
  `value`Атрибут `<AppContextSwitchOverrides>` элемента состоит из одной строки, состоящей из одной или нескольких пар "имя-значение", разделенных точкой с запятой.  Каждое имя определяет переключатель совместимости, и его соответствующее значение является логическим ( `true` или `false` ), указывающим, задан ли параметр. По умолчанию параметр имеет значение `false` , а библиотеки предоставляют новые функциональные возможности. Они предоставляют только предыдущие функции, если задан параметр (то есть его значение `true` ). Это позволяет библиотекам предоставлять новое поведение для существующего API, одновременно позволяя вызывающим объектам, которые зависят от предыдущего поведения, отказаться от новых функциональных возможностей.
@@ -70,7 +70,7 @@ ms.locfileid: "88558755"
 |`Switch.System.Diagnostics.`<br/>`IgnorePortablePDBsInStackTraces`|Определяет, получают ли трассировкы стека при использовании переносимых PDB, могут включать исходные сведения о файлах и строках. `false` , чтобы включить исходные сведения о файлах и строках. в противном случае — `true` .|.NET Framework 4.7.2|
 |`Switch.System.Drawing.`<br/>`DontSupportPngFramesInIcons`|Определяет, <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> вызывает ли метод исключение, если <xref:System.Drawing.Icon> объект содержит кадры PNG. Дополнительные сведения см. в разделе [Устранение рисков: кадры PNG кадров в объектах Icon](../../../migration-guide/mitigation-png-frames-in-icon-objects.md).|.NET Framework 4.6|
 |`Switch.System.Drawing.Text.`<br/>`DoNotRemoveGdiFontsResourcesFromFontCollection`|Определяет <xref:System.Drawing.Text.PrivateFontCollection?displayProperty=nameWithType> , должны ли объекты правильно удаляться при добавлении в коллекцию <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)?displayProperty=nameWithType> методом. `true` для поддержки устаревшего поведения; `false` Удаление всех объектов частных шрифтов. |.NET Framework 4.7.2|
-|`Switch.System.Drawing.Printing.`<br>`OptimizePrintPreview`|Определяет, оптимизирована ли производительность <xref:System.Windows.Forms.PrintPreviewDialog> для сетевых принтеров. Дополнительные сведения см. в разделе [Общие сведения об элементе управления PrintPreviewDialog](../../../winforms/controls/printpreviewdialog-control-overview-windows-forms.md).|.NET Framework 4.6|
+|`Switch.System.Drawing.Printing.`<br>`OptimizePrintPreview`|Определяет, оптимизирована ли производительность <xref:System.Windows.Forms.PrintPreviewDialog> для сетевых принтеров. Дополнительные сведения см. в разделе [Общие сведения об элементе управления PrintPreviewDialog](/dotnet/desktop/winforms/controls/printpreviewdialog-control-overview-windows-forms).|.NET Framework 4.6|
 |`Switch.System.Globalization.EnforceJapaneseEraYearRanges`|Определяет, применяется ли проверка диапазона лет для Эр в японском календаре. `true` для принудительного применения проверок диапазона лет и `false` их отключения (поведение по умолчанию). Дополнительные сведения см. в разделе [Работа с календарями](../../../../standard/datetime/working-with-calendars.md).|.NET Framework 4.6|
 |`Switch.System.Globalization.EnforceLegacyJapaneseDateParsing`|Определяет, распознается ли только "1" как первый год японской эры в японском календаре в операциях синтаксического анализа. `true` для распознавания только "1"; `false` чтобы распознать значение "1" или ганнен (поведение по умолчанию). Дополнительные сведения см. в разделе [Работа с календарями](../../../../standard/datetime/working-with-calendars.md).|.NET Framework 4.6|
 |`Switch.System.Globalization.FormatJapaneseFirstYearAsANumber`|Определяет, представляется ли первый год японской эры календаря как "1" или Ганнен в операциях форматирования. `true` Чтобы отформатировать первый год эры как "1"; `false` чтобы отформатировать его как ганнен (поведение по умолчанию). Дополнительные сведения см. в разделе [Работа с календарями](../../../../standard/datetime/working-with-calendars.md).|.NET Framework 4.6|
@@ -176,7 +176,7 @@ ms.locfileid: "88558755"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устранение рисков, связанных с новыми возможностями .NET Framework 4.6 и последующих версий](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>

@@ -2,12 +2,12 @@
 title: Поставщик WMI
 ms.date: 03/30/2017
 ms.assetid: 462f0db3-f4a4-4a4b-ac26-41fc25c670a4
-ms.openlocfilehash: a01b4b70d4c497d1efb93bb53a7339f5f7f29ef9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3fc982bcec563d5e4b90ba3b25989859d7d86281
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591050"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552890"
 ---
 # <a name="wmi-provider"></a>Поставщик WMI
 В этом примере показано, как собирать данные из служб Windows Communication Foundation (WCF) во время выполнения с помощью поставщика инструментарий управления Windows (WMI) (WMI), встроенного в WCF. Кроме того, в образце показано, как добавлять в службу пользовательский объект инструментария WMI. В примере активируется поставщик WMI для [Начало работы](getting-started-sample.md) и демонстрируется сбор данных из `ICalculator` службы во время выполнения.  
@@ -131,7 +131,7 @@ cscript EnumerateCustomObjects.js
 4. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
     > [!NOTE]
-    > Если вы установили WCF после установки ASP.NET, может потребоваться выполнить команду "% WINDIR% \ Microsoft. Net\Framework\v3.0\Windows Communication Фаундатион\сервицемоделрег.ЕКСЕ "-r-x предоставляет учетной записи ASPNET разрешение на публикацию объектов WMI.  
+    > Если вы установили WCF после установки ASP.NET, может потребоваться выполнить команду "% WINDIR% \ Microsoft. Net\Framework\v3.0\Windows Communication Foundation\servicemodelreg.exe "-r-x предоставить учетной записи ASPNET разрешение на публикацию объектов WMI.  
   
 5. Для просмотра данных из образцов, доступных через WMI, следует воспользоваться командами: `cscript EnumerateServices.js` или `cscript EnumerateCustomObjects.js`.  
   
@@ -144,6 +144,6 @@ cscript EnumerateCustomObjects.js
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\WMIProvider`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

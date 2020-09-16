@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 01e7d0b8-10f9-45c3-a4c5-53d44dc61eb8
-ms.openlocfilehash: dcb311523c6ec41b62f6e69fe6bc7635b9d49708
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c87583bec908c3465dedf7c542e30ce264cd7b47
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595236"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553783"
 ---
 # <a name="message-security-with-a-windows-client"></a>Безопасность сообщений с клиентом Windows
 В этом сценарии показан клиент Windows Communication Foundation (WCF) и сервер, защищенный режимом безопасности сообщений. Клиент и служба проходят проверку подлинности с использованием учетных данных Windows.  
@@ -20,7 +20,7 @@ ms.locfileid: "84595236"
 |Характеристика|Описание|  
 |--------------------|-----------------|  
 |Режим безопасности|Сообщение|  
-|Взаимодействие|Только WCF|  
+|Совместимость|Только WCF|  
 |Проверка подлинности (сервера)|Взаимная проверка подлинности сервера и клиента|  
 |Проверка подлинности (клиента)|Взаимная проверка подлинности сервера и клиента|  
 |Целостность|Да, используется общий контекст безопасности|  
@@ -77,7 +77,7 @@ ms.locfileid: "84595236"
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -116,7 +116,7 @@ ms.locfileid: "84595236"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

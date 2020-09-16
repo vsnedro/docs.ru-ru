@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
-ms.openlocfilehash: 54df0e253716c970cf23446434d96b104b8e9b03
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 9d12c7c7dcbc3a24cf51ade5481f59715c4c4d88
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287172"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555111"
 ---
 # <a name="adonet-code-examples"></a>Примеры кода ADO.NET
 
@@ -138,7 +138,7 @@ End Class
 ```
 
 ### <a name="typed-objectquery"></a>Типизированный запрос ObjectQuery
-В данном примере кода для возврата данных в виде объектов Categories используется запрос <xref:System.Data.Objects.ObjectQuery%601>. Дополнительные сведения см. в разделе [запросы объектов](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)).
+В данном примере кода для возврата данных в виде объектов Categories используется запрос <xref:System.Data.Objects.ObjectQuery%601>. Дополнительные сведения см. в разделе [запросы объектов](/previous-versions/dotnet/netframework-4.0/bb896241(v=vs.100)).
 
 ```csharp
 using System;
@@ -345,6 +345,6 @@ End Class
 
 - [Общие сведения об ADO.NET](ado-net-overview.md)
 - [Извлечение и изменение данных в ADO.NET](retrieving-and-modifying-data.md)
-- [Создание приложений для работы с данными](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/h0y4a0f6(v=vs.120))
-- [Запросы к модели EDM (задачи Entity Framework)](https://docs.microsoft.com/previous-versions/bb738455(v=vs.90))
-- [Практическое руководство. Выполнение запроса, возвращающего объекты анонимного типа](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738512(v=vs.100))
+- [Создание приложений для работы с данными](/previous-versions/visualstudio/visual-studio-2013/h0y4a0f6(v=vs.120))
+- [Запросы к модели EDM (задачи Entity Framework)](/previous-versions/bb738455(v=vs.90))
+- [Практическое руководство. Выполнение запроса, возвращающего объекты анонимного типа](/previous-versions/dotnet/netframework-4.0/bb738512(v=vs.100))

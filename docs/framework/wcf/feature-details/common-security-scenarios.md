@@ -4,17 +4,17 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], scenarios
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
-ms.openlocfilehash: f36ebdb5ea248ec8134c688f89eb5d0be38dfe38
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cfd29f8cae8ac362a5fa1709864dce4ae11b5af6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579740"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558892"
 ---
 # <a name="common-security-scenarios"></a>Типовые сценарии безопасности
 В подразделах этого раздела рассматривается множество возможных конфигураций безопасности клиентов и служб. Конфигурация зависит от ряда факторов: например, находится ли служба или клиент в интрасети, или чем обеспечивается безопасность - Windows или транспортом (таким как HTTPS).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Незащищенные интернет-клиент и служба](internet-unsecured-client-and-service.md)  
  Пример общедоступных, незащищенных клиента и службы.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "84579740"
   
  [Аудит](auditing-security-events.md)  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Руководство и рекомендации по безопасности](security-guidance-and-best-practices.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

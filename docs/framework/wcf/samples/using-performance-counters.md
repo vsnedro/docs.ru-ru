@@ -2,12 +2,12 @@
 title: Использование счетчиков производительности
 ms.date: 03/30/2017
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
-ms.openlocfilehash: 0b63cdc145ff8806c26b255500bcb2a132e9ef9f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f2b0f39303d000e2e9aab8fc5280f75ab9309c4d
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596504"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553048"
 ---
 # <a name="using-performance-counters"></a>Использование счетчиков производительности
 В этом образце показано, как получить доступ к счетчикам производительности Windows Communication Foundation (WCF) и как создавать определяемые пользователем счетчики производительности. Этот образец основан на [Начало работы](getting-started-sample.md).  
@@ -27,7 +27,7 @@ ms.locfileid: "84596504"
 </configuration>  
 ```  
   
- Эту задачу можно также выполнить с помощью [средства редактора конфигурации (SvcConfigEditor. exe)](../configuration-editor-tool-svcconfigeditor-exe.md).  
+ Эту задачу можно также выполнить с помощью [средства редактора конфигурации (SvcConfigEditor.exe)](../configuration-editor-tool-svcconfigeditor-exe.md).  
   
  Если счетчики производительности включены, для службы включается весь набор счетчиков производительности WCF. Платформа .NET Framework автоматически поддерживает данные о производительности на трех уровнях: `ServiceModelService`, `ServiceModelEndpoint` и `ServiceModelOperation`. На каждом из этих уровней имеются счетчики производительности, например "Calls", "Calls per Second" и "Security Calls Not Authorized".  
   
@@ -76,6 +76,6 @@ ms.locfileid: "84596504"
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

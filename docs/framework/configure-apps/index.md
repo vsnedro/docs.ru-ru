@@ -25,12 +25,12 @@ helpviewer_keywords:
 - configuration files [.NET Framework], machine
 - configuration files [.NET Framework], format
 ms.assetid: 86bd26d3-737e-4484-9782-19b17f34cd1f
-ms.openlocfilehash: 444d3700f36a2928b79f40dd5265d6166de762da
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: 92ecc4a430aa3c238a7cd8705dc0cec5a9d0cb11
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85105369"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559295"
 ---
 # <a name="configuring-apps-by-using-configuration-files"></a>Настройка приложений с использованием файлов конфигурации
 Среда .NET Framework предоставляет разработчикам и администраторам возможность управления и гибкой настройки способа выполнения приложений с помощью файлов конфигурации. Файлы конфигурации имеют формат XML, и при необходимости их можно изменять. Администратор может контролировать, к каким из защищенных ресурсов может осуществлять доступ приложение, какие оно будет использовать версии сборок и где расположены удаленные объекты и приложения. Разработчики могут задавать параметры в файлах конфигурации, устраняя необходимость в перекомпиляции приложения при каждом изменении той или иной установки. В этом разделе рассказывается, какие параметры могут быть настроены и для чего может потребоваться настройка приложения.  
@@ -53,7 +53,7 @@ ms.locfileid: "85105369"
 ```  
   
 ## <a name="machine-configuration-files"></a>Файлы конфигурации компьютеров  
- В файле конфигурации компьютера, Machine.config, задаются параметры, влияющие на работу компьютера в целом. Этот файл находится в каталоге %*путь установки среды выполнения*%\Config. В файле Machine.config задаются параметры конфигурации для привязки сборок компьютера, встроенных [каналов удаленного взаимодействия](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkfd3wha(v=vs.100)) и ASP.NET.  
+ В файле конфигурации компьютера, Machine.config, задаются параметры, влияющие на работу компьютера в целом. Этот файл находится в каталоге %*путь установки среды выполнения*%\Config. В файле Machine.config задаются параметры конфигурации для привязки сборок компьютера, встроенных [каналов удаленного взаимодействия](/previous-versions/dotnet/netframework-4.0/dkfd3wha(v=vs.100)) и ASP.NET.  
   
  Система конфигурации сначала просматривает файл конфигурации компьютера для [ **\<appSettings>** элемента](./file-schema/appsettings/index.md) и других разделов конфигурации, которые может определить разработчик. Затем поиск выполняется в файле конфигурации приложения. Для облегчения управления файлом конфигурации компьютера рекомендуется переместить эти параметры в файл конфигурации приложения. Однако размещение параметров в файле конфигурации компьютера упрощает управление системой. Например, при наличии компонентов сторонних производителей, используемых сервером и клиентами, рекомендуется разместить параметры этих компонентов в одном файле. В этом случае следует задавать параметры в файле конфигурации компьютера, чтобы не дублировать параметры в разных файлах.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "85105369"
   
 - Приложение, размещенное в ASP.NET.  
   
-     Дополнительные сведения о файлах конфигурации ASP.NET см. в разделе [Параметры конфигурации ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)).
+     Дополнительные сведения о файлах конфигурации ASP.NET см. в разделе [Параметры конфигурации ASP.NET](/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)).
   
 - Приложение, размещенное в Internet Explorer.  
   
@@ -101,7 +101,7 @@ ms.locfileid: "85105369"
   
 - Файл конфигурации политики пользователя: %USERPROFILE%\Application data\Microsoft\CLR security config\v*xx.xx*\Security.config  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Практическое руководство. Поиск сборок с помощью DEVPATH](how-to-locate-assemblies-by-using-devpath.md)  
  Описание процесса настройки среды выполнения для использования переменной среды DEVPATH при поиске сборок.  
   
@@ -125,7 +125,7 @@ ms.locfileid: "85105369"
 - [Схема файла конфигурации](./file-schema/index.md)
 - [Указание расположения сборки](specify-assembly-location.md)
 - [Перенаправление версий сборки](redirect-assembly-versions.md)
-- [Администрирование веб-сайта ASP.NET](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6hy1xzbw(v=vs.90))
-- [Управление политиками безопасности](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))
+- [Администрирование веб-сайта ASP.NET](/previous-versions/visualstudio/visual-studio-2008/6hy1xzbw(v=vs.90))
+- [Управление политиками безопасности](/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))
 - [Caspol.exe (средство настройки политики управления доступом для кода)](../tools/caspol-exe-code-access-security-policy-tool.md)
 - [Сборки в .NET](../../standard/assembly/index.md)

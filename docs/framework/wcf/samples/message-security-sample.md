@@ -2,12 +2,12 @@
 title: Пример безопасности сообщений
 ms.date: 03/30/2017
 ms.assetid: 82444166-6288-493a-85d4-85f43f134d19
-ms.openlocfilehash: 935695a46e907bf1deeb2e5cb24917ba92b81fe0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 02e758633f810d785c914152cbd4fbe687bea4f9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84584872"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558632"
 ---
 # <a name="message-security-sample"></a>Пример безопасности сообщений
 Данный образец демонстрирует реализацию приложения, в котором используется привязка `basicHttpBinding` и безопасность сообщений. Этот образец основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора.  
@@ -127,7 +127,7 @@ Press <ENTER> to terminate client.
   
 3. Запустите клиентское приложение из \service\bin. Действия клиента отображаются в консольном приложении клиента.  
   
-4. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 5. После завершения работы образца запустите файл Cleanup.bat, чтобы удалить сертификаты. В других образцах обеспечения безопасности используются те же сертификаты.  
   
@@ -143,7 +143,7 @@ Press <ENTER> to terminate client.
   
 5. На сервере выполните команду `setup.bat service`. `setup.bat`При запуске с `service` аргументом создается сертификат службы с полным доменным именем компьютера и экспортируется сертификат службы в файл с именем Service. cer.  
   
-6. Измените файл Service. exe. config, чтобы он отражал новое имя сертификата (в `findValue` атрибуте [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) элемента), совпадающее с полным доменным именем компьютера. Также измените значение базового адреса для указания полного доменного имени компьютера вместо localhost`.`  
+6. Измените Service.exe.config, чтобы отразить новое имя сертификата (в `findValue` атрибуте [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) элемента), совпадающее с полным доменным именем компьютера. Также измените значение базового адреса для указания полного доменного имени компьютера вместо localhost`.`  
   
 7. Скопируйте файл Service.cer из каталога службы в клиентский каталог на клиентском компьютере.  
   
@@ -161,7 +161,7 @@ Press <ENTER> to terminate client.
   
 14. На клиентском компьютере из окна командной строки запустите программу Client.exe.  
   
-    1. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+    1. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### <a name="to-clean-up-after-the-sample"></a>Очистка после образца  
   
@@ -177,4 +177,4 @@ Press <ENTER> to terminate client.
 >
 > Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity`

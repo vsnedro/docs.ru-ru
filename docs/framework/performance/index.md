@@ -6,12 +6,12 @@ helpviewer_keywords:
 - performance [.NET Framework]
 - reliability [.NET Framework]
 ms.assetid: c1676cca-3f1a-41ec-b469-9029566074fc
-ms.openlocfilehash: ee8260056bd87dfc66d96e394f9b93bb9427afd8
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 50ba2f51ea2fb935c2a5db27ad6249e87cb86dc7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309759"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554662"
 ---
 # <a name="net-framework-performance"></a>Производительность .NET Framework
 Если вы хотите создавать приложения, отличающиеся высокой производительностью, вам следует закладывать эту производительность при планировании и проектировании наравне с другими возможностями приложения. Вы можете использовать средства, предоставляемые корпорацией Майкрософт, для измерения уровня производительности приложения и внесения усовершенствований в использование памяти, пропускную способность кода и скорость реагирования. В этом разделе перечислены средства анализа производительности, предоставляемые корпорацией Майкрософт, и приведены ссылки на другие разделы, описывающие аспекты производительности для разных областей разработки.  
@@ -32,8 +32,8 @@ ms.locfileid: "86309759"
 |Инструмент|Описание|  
 |----------|-----------------|  
 |Анализ производительности Visual Studio|Используйте для анализа использования ЦП у приложений .NET Framework, которые будут развернуты на компьютерах под управлением операционной системы Windows.<br /><br /> Это средство доступно в меню **Отладка** Visual Studio после открытия проекта. Для получения дополнительной информации см. статью [об обозревателе производительности](/visualstudio/profiling/performance-explorer). **Примечание.** При разработке приложений для Windows Phone используйте анализ приложений Windows Phone (см. следующую строку).|  
-|Анализ приложения Windows Phone|Используйте для анализа использования ЦП и памяти, скорости передачи данных по сети, скорости реагирования приложения и расхода заряда батареи у своих приложений Windows Phone.<br /><br /> Это средство доступно в меню **Отладка** проекта Windows Phone в Visual Studio после установки [пакета SDK для Windows Phone](https://go.microsoft.com/fwlink/?LinkId=265773). Дополнительные сведения см. в разделе [Профилирование приложений для Windows Phone 8](https://docs.microsoft.com/previous-versions/windows/apps/jj215908(v=vs.105)).|  
-|[PerfView](https://www.microsoft.com/download/details.aspx?id=28567)|Используйте для определения аспектов производительности, связанных с ЦП и памятью. Это средство использует трассировку событий Windows и API профилирования среды CLR для предоставления расширенного анализа памяти и ЦП, а также сведений о сборке мусора и JIT-компиляции. Дополнительные сведения об использовании PerfView см. в руководствах и файлах справки, входящих в состав приложения, в [видеоруководствах на канале Channel 9](https://channel9.msdn.com/Series/PerfView-Tutorial) и в [записях в блоге](https://docs.microsoft.com/archive/blogs/vancem/).<br /><br /> Вопросы, относящиеся к памяти, см. в разделе [Использование PerfView для анализа памяти](https://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-9-NET-Memory-Investigation-Basics-of-GC-Heap-Snapshots).|  
+|Анализ приложения Windows Phone|Используйте для анализа использования ЦП и памяти, скорости передачи данных по сети, скорости реагирования приложения и расхода заряда батареи у своих приложений Windows Phone.<br /><br /> Это средство доступно в меню **Отладка** проекта Windows Phone в Visual Studio после установки [пакета SDK для Windows Phone](https://go.microsoft.com/fwlink/?LinkId=265773). Дополнительные сведения см. в разделе [Профилирование приложений для Windows Phone 8](/previous-versions/windows/apps/jj215908(v=vs.105)).|  
+|[PerfView](https://www.microsoft.com/download/details.aspx?id=28567)|Используйте для определения аспектов производительности, связанных с ЦП и памятью. Это средство использует трассировку событий Windows и API профилирования среды CLR для предоставления расширенного анализа памяти и ЦП, а также сведений о сборке мусора и JIT-компиляции. Дополнительные сведения об использовании PerfView см. в руководствах и файлах справки, входящих в состав приложения, в [видеоруководствах на канале Channel 9](https://channel9.msdn.com/Series/PerfView-Tutorial) и в [записях в блоге](/archive/blogs/vancem/).<br /><br /> Вопросы, относящиеся к памяти, см. в разделе [Использование PerfView для анализа памяти](https://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-9-NET-Memory-Investigation-Basics-of-GC-Heap-Snapshots).|  
 |[Windows Performance Analyzer](https://www.microsoft.com/download/details.aspx?id=30652)|Применяйте для определения общей производительности системы, например, использования памяти и хранилища приложением, когда на одном компьютере выполняется несколько приложений. Это средство доступно в центре загрузки в составе комплекта средств для развертывания и оценки Windows (ADK) для Windows 8. Дополнительные сведения см. в разделе [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer).|
   
 ### <a name="event-tracing-for-windows-etw"></a>Трассировка событий Windows (ETW)  
@@ -45,9 +45,9 @@ ms.locfileid: "86309759"
 |Тип приложения|См.|  
 |--------------|---------|  
 |Приложения .NET Framework для всех платформ|[Сборка мусора и производительность](../../standard/garbage-collection/performance.md)<br /><br /> [Советы по производительности .NET](performance-tips.md)|  
-|Приложения Магазина Windows 8. x, написанные на C++, C# и Visual Basic|[Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh750313%28v=win.10%29)|  
-|Windows Presentation Foundation (WPF)|[WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))|  
-|ASP.NET|[Общие сведения о производительности ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/cc668225(v=vs.100))|  
+|Приложения Магазина Windows 8. x, написанные на C++, C# и Visual Basic|[Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](/previous-versions/windows/apps/hh750313(v=win.10))|  
+|Windows Presentation Foundation (WPF)|[WPF Performance Suite](/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))|  
+|ASP.NET|[Общие сведения о производительности ASP.NET](/previous-versions/aspnet/cc668225(v=vs.100))|  
   
 ## <a name="related-topics"></a>См. также  
   

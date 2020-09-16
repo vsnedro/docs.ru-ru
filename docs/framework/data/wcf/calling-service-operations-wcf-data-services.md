@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1767f3a7-29d2-4834-a763-7d169693fa8b
-ms.openlocfilehash: f1ff707c90e884dc66ab10563dc41ea7789f5cda
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 63c6e903fa811d5c61550d086b4f1ce84973f2bc
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202009"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553627"
 ---
 # <a name="calling-service-operations-wcf-data-services"></a>Вызов операций служб (службы данных WCF)
 Open Data Protocol (OData) определяет операции службы для службы данных. WCF Data Services позволяет определять такие операции в качестве методов в службе данных. Как и для других ресурсов службы данных, для обращения к этим операциям службы используются идентификаторы URI. Операция службы может возвращать коллекции типов сущностей, единственные экземпляры типа сущностей и примитивные типы, такие как integer и string. Операция службы также может также вернуть значение `null` (`Nothing` в Visual Basic). Клиентскую библиотеку WCF Data Services можно использовать для доступа к операциям службы, поддерживающим HTTP-запросы GET. Такого рода операции службы определяются как методы, к которым применен атрибут <xref:System.ServiceModel.Web.WebGetAttribute>. Дополнительные сведения см. в разделе [операции службы](service-operations-wcf-data-services.md).  
   
- Операции службы предоставляются в метаданных, возвращаемых службой данных, которая реализует OData. В метаданных операции службы представлены как элементы `FunctionImport`. При создании строго типизированных <xref:System.Data.Services.Client.DataServiceContext> средства Добавление ссылки на службу и DataSvcUtil. exe игнорируют этот элемент. Вследствие этого нельзя найти метод в контексте, который может быть использован для прямого вызова операции службы. Однако вы по-прежнему можете использовать клиент WCF Data Services для вызова операций службы одним из следующих двух способов:  
+ Операции службы предоставляются в метаданных, возвращаемых службой данных, которая реализует OData. В метаданных операции службы представлены как элементы `FunctionImport`. При создании строго типизированных <xref:System.Data.Services.Client.DataServiceContext> средства Добавление ссылки на службу и DataSvcUtil.exe игнорируют этот элемент. Вследствие этого нельзя найти метод в контексте, который может быть использован для прямого вызова операции службы. Однако вы по-прежнему можете использовать клиент WCF Data Services для вызова операций службы одним из следующих двух способов:  
   
 - Вызов метода <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> на <xref:System.Data.Services.Client.DataServiceContext> с передачей URI операции службы вместе с любыми параметрами. Этот метод используется для вызова любой операции службы GET.  
   
@@ -32,7 +32,7 @@ Open Data Protocol (OData) определяет операции службы д
   
 - Нельзя использовать <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> для вызова операции службы GET, которая возвращает единственный результат, представляющий собой сущность или простой тип, или операции, которой требуется несколько входных параметров. Вместо этого необходимо вызвать метод <xref:System.Data.Services.Client.DataServiceContext.Execute%2A>.  
   
-- Рассмотрите возможность создания метода расширения для строго типизированного <xref:System.Data.Services.Client.DataServiceContext> разделяемого класса, который создается средствами, использующими <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> метод или для вызова операции службы. Это позволяет вызывать операции службы непосредственно из контекста. Дополнительные сведения см. в записи блога, посвященной [операциям службы и клиенту WCF Data Services](https://docs.microsoft.com/archive/blogs/astoriateam/service-operations-and-the-wcf-data-services-client).  
+- Рассмотрите возможность создания метода расширения для строго типизированного <xref:System.Data.Services.Client.DataServiceContext> разделяемого класса, который создается средствами, использующими <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> метод или для вызова операции службы. Это позволяет вызывать операции службы непосредственно из контекста. Дополнительные сведения см. в записи блога, посвященной [операциям службы и клиенту WCF Data Services](/archive/blogs/astoriateam/service-operations-and-the-wcf-data-services-client).  
   
 - При использовании <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> для вызова операции службы клиентская библиотека автоматически преобразует символы, передаваемые в, <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> с помощью процента кодирования зарезервированных символов, таких как амперсанд (&), и экранирование одинарных кавычек в строках. Однако при вызове одного из методов *EXECUTE* для вызова операции службы необходимо помнить, что это экранирование любых переданных пользователем строковых значений. Одиночные кавычки в URI-адресах экранируются как пары одиночных кавычек.  
   
@@ -124,6 +124,6 @@ Open Data Protocol (OData) определяет операции службы д
  [!code-csharp[Astoria Northwind Client#OnAsyncQueryExecutionComplete](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#onasyncqueryexecutioncomplete)]
  [!code-vb[Astoria Northwind Client#OnAsyncQueryExecutionComplete](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#onasyncqueryexecutioncomplete)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)

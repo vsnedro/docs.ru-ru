@@ -2,12 +2,12 @@
 title: Разбивка на страницы (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: ba4f334d-03e5-4a7b-9d42-628f4639b9a2
-ms.openlocfilehash: 25d52734c30e087629be9923a43e720f94c96d04
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 7148d693041968acb543a3d659caf05820f2aff8
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70249578"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553640"
 ---
 # <a name="paging-entity-sql"></a>Разбивка на страницы (Entity SQL)
 Физическое разбиение на страницы может быть выполнено с помощью вложенных предложений [Skip](skip-entity-sql.md) и [Limit](limit-entity-sql.md) в предложении [ORDER BY](order-by-entity-sql.md) . Для детерминированного физического разбиения на страницы необходимо использовать предложения SKIP и LIMIT. Если требуется ограничить количество строк в результате недетерминированным способом, следует использовать [Top](top-entity-sql.md). Предложения TOP и SKIP/LIMIT являются взаимоисключающими.  
@@ -18,9 +18,9 @@ ms.locfileid: "70249578"
 ## <a name="skip-and-limit-overview"></a>Общие сведения о предложениях SKIP и LIMIT  
  Предложения SKIP и LIMIT являются частью предложения ORDER BY. Если в предложении ORDER BY имеется вложенное предложение SKIP, результаты будут отсортированы в соответствии со спецификацией сортировки, а результирующий набор будет включать строку или строки, начиная со строки, следующей непосредственно за значением выражения SKIP. Например, SKIP 5 пропустит первые пять строк и возвратит все, начиная с шестой. Если в предложении ORDER BY имеется подчиненное выражение LIMIT, результаты запроса будут отсортированы в соответствии со спецификацией сортировки, а количество строк в наборе будет ограничено выражением LIMIT. Например, LIMIT 5 ограничит результирующий набор пятью экземплярами строк. Предложения SKIP и LIMIT необязательно использовать вместе: в предложение ORDER BY можно включить только SKIP или только LIMIT. Дополнительные сведения см. в следующих разделах:  
   
-- [SKIP](skip-entity-sql.md)  
+- [СРАЗУ](skip-entity-sql.md)  
   
-- [LIMIT](limit-entity-sql.md)  
+- [Размер](limit-entity-sql.md)  
   
 - [ORDER BY](order-by-entity-sql.md)  
   
@@ -28,4 +28,4 @@ ms.locfileid: "70249578"
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Общие сведения об Entity SQL](entity-sql-overview.md)
-- [Практическое руководство. Страница с результатами запроса](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [Практическое руководство. Разбивка на страницы результатов запроса](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))

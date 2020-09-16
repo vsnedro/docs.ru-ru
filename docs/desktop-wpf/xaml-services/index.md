@@ -6,12 +6,12 @@ helpviewer_keywords:
 - XAML Services in WPF [XAML Services]
 - System.Xaml [XAML Services], conceptual documentation
 ms.assetid: 0e11f386-808c-4eae-9ba6-029ad7ba2211
-ms.openlocfilehash: bfb3efb479668bcd70a3ce87b80253a73c18bb51
-ms.sourcegitcommit: c2d9718996402993cf31541f11e95531bc68bad0
+ms.openlocfilehash: 313cb46813d8c0cfa9f1f317a65d2e21298ecff9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "85840322"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552854"
 ---
 # <a name="xaml-services"></a>Службы XAML
 
@@ -35,7 +35,7 @@ ms.locfileid: "85840322"
 
 - Применение методик `Lookup` или `Invoker` для воздействия на систему типов и принципы оценки резервных типов.
 
-Сведения начального уровня о языке XAML можно найти в статье [Общие сведения о языке XAML (WPF)](../fundamentals/xaml.md). В ней язык XAML рассматривается с точки зрения пользователей, не знакомых с платформой Windows Presentation Foundation (WPF) или использованием разметки и возможностей этого языка. Также для начала работы рекомендуется ознакомиться с материалами, представленными в [спецификации языка XAML](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+Сведения начального уровня о языке XAML можно найти в статье [Общие сведения о языке XAML (WPF)](../fundamentals/xaml.md). В ней язык XAML рассматривается с точки зрения пользователей, не знакомых с платформой Windows Presentation Foundation (WPF) или использованием разметки и возможностей этого языка. Также для начала работы рекомендуется ознакомиться с материалами, представленными в [спецификации языка XAML](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
 ## <a name="net-xaml-services-and-systemxaml-in-the-net-architecture"></a>Службы XAML для .NET и `System.Xaml` в архитектуре .NET
 
