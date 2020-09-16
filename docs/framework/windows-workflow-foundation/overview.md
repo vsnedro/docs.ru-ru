@@ -3,12 +3,12 @@ title: Общие сведения о Windows Workflow
 description: В этой статье описываются рабочие процессы Workflow Foundation, которые представляют собой модели, описывающие реальные процессы.
 ms.date: 03/30/2017
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
-ms.openlocfilehash: ec1a00b37abe2cb842735fb98e1c113a97943758
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: c54e405c5fff013f994f98cbf84fcce4d17d9d4e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421479"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558104"
 ---
 # <a name="windows-workflow-overview"></a>Общие сведения о Windows Workflow
 Рабочий процесс — это набор элементов, которые называются *действиями* , которые хранятся в виде модели, описывающей реальный процесс. Рабочие процессы позволяют описывать порядок выполнения этапов краткосрочных и долгосрочных работ, а также зависимости между этими этапами. Работа проходит по модели от начала и до конца, а действия могут выполняться как людьми, так и системными функциями.  
@@ -42,6 +42,6 @@ ms.locfileid: "83421479"
   
 - Настраиваемое действие, происходящее от абстрактного класса <xref:System.Activities.CodeActivity>. <xref:System.Activities.CodeActivity> может обращаться к возможностям среды выполнения (например, к отслеживанию и свойствам) с помощью <xref:System.Activities.CodeActivityContext>, доступного в качестве параметра метода <xref:System.Activities.CodeActivity.Execute%2A>. Дополнительные сведения об этих функциях времени выполнения см. в разделе [Отслеживание рабочего процесса и](workflow-tracking-and-tracing.md) [Свойства выполнения рабочего процесса](workflow-execution-properties.md).  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
-- [BizTalk Server 2006 или WF? Выбор правильного средства рабочего процесса для проекта](https://docs.microsoft.com/previous-versions/dotnet/articles/cc303238(v=msdn.10))
+- [BizTalk Server 2006 или WF? Выбор правильного средства рабочего процесса для проекта](/previous-versions/dotnet/articles/cc303238(v=msdn.10))

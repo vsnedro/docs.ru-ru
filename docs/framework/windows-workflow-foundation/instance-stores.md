@@ -2,15 +2,15 @@
 title: Хранилища экземпляров
 ms.date: 03/30/2017
 ms.assetid: f2629668-0923-4987-b943-67477131c1e0
-ms.openlocfilehash: 69b50942c36406bd29147d243e0501b8048d56dc
-ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
+ms.openlocfilehash: 26e0c28fe3061306a00e75b0498ef0781b7013c6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74802561"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555800"
 ---
 # <a name="instance-stores"></a>Хранилища экземпляров
-Хранилище экземпляров - это логический контейнер для экземпляров. Здесь хранятся данные и метаданные экземпляра. Хранилище экземпляров не предполагает выделения физического пространства. Хранилище экземпляра может содержать постоянные сведения в базе данных SQL Server или непостоянные сведения о состоянии в памяти. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] поставляется с хранилищем экземпляров рабочего процесса SQL - конкретной реализацией хранилища экземпляров, которая позволяет рабочему процессу хранить данные и метаданные в базе данных SQL Server 2005 или SQL Server 2008. Кроме того, Windows Server App Fabric также предоставляет конкретную реализацию хранилища экземпляров. Дополнительные сведения см. в разделе [хранилище экземпляров Windows Server App Fabric, запросы и поставщики элементов управления](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10)).  
+Хранилище экземпляров - это логический контейнер для экземпляров. Здесь хранятся данные и метаданные экземпляра. Хранилище экземпляров не предполагает выделения физического пространства. Хранилище экземпляра может содержать постоянные сведения в базе данных SQL Server или непостоянные сведения о состоянии в памяти. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] поставляется с хранилищем экземпляров рабочего процесса SQL - конкретной реализацией хранилища экземпляров, которая позволяет рабочему процессу хранить данные и метаданные в базе данных SQL Server 2005 или SQL Server 2008. Кроме того, Windows Server App Fabric также предоставляет конкретную реализацию хранилища экземпляров. Дополнительные сведения см. в разделе [хранилище экземпляров Windows Server App Fabric, запросы и поставщики элементов управления](/previous-versions/appfabric/ff383417(v=azure.10)).  
   
  API сохраняемости - это интерфейс между узлом и хранилищем экземпляров, позволяющим узлу отправлять запросы на команды (например, <xref:System.Activities.DurableInstancing.LoadWorkflowCommand> и <xref:System.Activities.DurableInstancing.SaveWorkflowCommand>) в хранилище экземпляров. Конкретная реализация данного API-интерфейса называется поставщиком сохраняемости. Поставщик сохраняемости получает запросы от узла и изменяет хранилище экземпляров.  
   
@@ -24,8 +24,8 @@ ms.locfileid: "74802561"
   
 1. Получение **InstanceStore** от поставщика сохраняемости.  
 
-2. Получите маркер экземпляра, вызвав метод <xref:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle%2A> в **InstanceStore**.  
+2. Получите маркер экземпляра, вызвав <xref:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle%2A> метод в **InstanceStore**.  
   
-3. Вызывайте команды для обработки экземпляра, вызвав метод <xref:System.Runtime.DurableInstancing.InstanceStore.Execute%2A> для **InstanceStore**.  
+3. Вызывайте команды для обработки экземпляра, вызвав <xref:System.Runtime.DurableInstancing.InstanceStore.Execute%2A> метод в **InstanceStore**.  
   
-4. Изучите <xref:System.Runtime.DurableInstancing.InstanceView>, возвращаемые **InstanceStore. Execute** , чтобы определить результаты выполнения команд.
+4. Проверьте <xref:System.Runtime.DurableInstancing.InstanceView> возвращаемое **InstanceStore.Exeмилые** , чтобы определить результаты выполнения команд.

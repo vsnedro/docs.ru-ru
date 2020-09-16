@@ -45,8 +45,8 @@
       href: how-to-guides/hdinsight-notebook-installation.md
 - name: Справочник
   items:
-    - name: Справочник по интерфейсам API
-      href: 'https://docs.microsoft.com/dotnet/api/?view=spark-dotnet'
+    - name: Справочник по API
+      href: ../../api/index.md?view=spark-dotnet
 - name: Ресурсы
   items:
     - name: Обзор ресурсов

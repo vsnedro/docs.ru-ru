@@ -5,12 +5,12 @@ helpviewer_keywords:
 - strings [Visual Basic], regular expressions
 - strings [Visual Basic], masked edit
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
-ms.openlocfilehash: efda70be0ccdbc1f4b59d548e50f743f6c493b19
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1bb5ac5381dc85f598ef46638fbc8cd1a8643825
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363722"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555748"
 ---
 # <a name="using-regular-expressions-with-the-maskedtextbox-control-in-visual-basic"></a>Использование регулярных выражений в элементе управления MaskedTextBox в Visual Basic
 В этом примере показано, как преобразовать простые регулярные выражения для работы с <xref:System.Windows.Forms.MaskedTextBox> элементом управления.  
@@ -55,9 +55,9 @@ ms.locfileid: "84363722"
 |`(\(\d{3}\)-)?\d{3}-d{4}`|`(999)-000-0000`|США номер телефона, код города (необязательно). Если пользователь не хочет вводить необязательные символы, он может ввести пробелы или поместить указатель мыши непосредственно в позицию маски, представленной первым 0.|  
 |`$\d{6}.00`|`$999,999.00`|Значение валюты в диапазоне от 0 до 999999. Во время выполнения символы валюты, доли секунды и десятичные знаки будут заменены на их эквиваленты, зависящие от языка и региональных параметров.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>
 - <xref:System.Windows.Forms.MaskedTextBox>
 - [Проверка строк в Visual Basic](validating-strings.md)
-- [Элемент управления MaskedTextBox](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+- [Элемент управления MaskedTextBox](/dotnet/desktop/winforms/controls/maskedtextbox-control-windows-forms)

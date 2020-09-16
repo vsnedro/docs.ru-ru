@@ -4,15 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], workflow security
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
-ms.openlocfilehash: 2a9b26f8da7616480f69a6c4580b8d351833c9ee
-ms.sourcegitcommit: 62285ec11fa8e8424bab00511a90760c60e63c95
+ms.openlocfilehash: d2d8556b1ed2ac0a2b030a88d6bfc0ad48ed6f5c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2020
-ms.locfileid: "81646319"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557519"
 ---
 # <a name="workflow-security"></a>Безопасность рабочих процессов
-Фонд рабочего процесса Windows (WF) интегрирован с несколькими различными технологиями, такими как Microsoft S'L Server и Windows Communication Foundation (WCF). В случае неправильной настройки взаимодействие с этими технологиями может вызвать проблемы безопасности в рабочем процессе.
+Windows Workflow Foundation (WF) интегрируется с несколькими различными технологиями, такими как Microsoft SQL Server и Windows Communication Foundation (WCF). В случае неправильной настройки взаимодействие с этими технологиями может вызвать проблемы безопасности в рабочем процессе.
 
 ## <a name="persistence-security-concerns"></a>Вопросы безопасности сохраняемости
 
@@ -38,14 +38,14 @@ ms.locfileid: "81646319"
 
 ## <a name="considerations-for-workflowservicehost"></a>Рекомендации по WorkflowServiceHost
 
-- Конечные точки Windows Communication Foundation (WCF), используемые в рабочих процессах, должны быть защищены. Для получения дополнительной [WCF Security Overview](../wcf/feature-details/security-overview.md)информации см.
+- Конечные точки Windows Communication Foundation (WCF), используемые в рабочих процессах, должны быть защищены. Дополнительные сведения см. в статье [Общие сведения о безопасности WCF](../wcf/feature-details/security-overview.md).
 
-- Авторизацию на уровне узлов можно реализовать с помощью <xref:System.ServiceModel.ServiceAuthorizationManager>. Узнайте, [как: Создайте диспетчер атмераций для](../wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md) службы для получения подробной информации.
+- Авторизацию на уровне узлов можно реализовать с помощью <xref:System.ServiceModel.ServiceAuthorizationManager>. Дополнительные сведения см. [в разделе как создать пользовательский диспетчер авторизации для службы](../wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md) .
 
 - Кроме того, контекст ServiceSecurityContext для входящего сообщения доступен из рабочего процесса посредством доступа к OperationContext.
 
 ## <a name="wf-security-pack-ctp"></a>Пакет безопасности WF CTP
- Предварительный просмотр технологии сообщества Microsoft WF Security Pack (CTP) 1 представляет собой набор мероприятий и их реализацию на основе [Фонда рабочего процесса Windows](index.md) в [.NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w0x726c2(v=vs.100)) (WF 4) и Windows Identity Foundation [(WIF).](https://docs.microsoft.com/previous-versions/dotnet/framework/security/index) Пакет безопасности Microsoft WF CTP 1 содержит действия и их конструкторы, которые демонстрируют простое включение различных сценариев обеспечения безопасности с помощью рабочих процессов, в том числе следующие:
+ CTP-версия 1 представляет собой набор действий и их реализацию на основе [Windows Workflow Foundation](index.md) в [.NET Framework 4](/previous-versions/dotnet/netframework-4.0/w0x726c2(v=vs.100)) (WF 4) и [Windows Identity Foundation (WIF)](/previous-versions/dotnet/framework/security/index). Пакет безопасности Microsoft WF CTP 1 содержит действия и их конструкторы, которые демонстрируют простое включение различных сценариев обеспечения безопасности с помощью рабочих процессов, в том числе следующие:
 
 1. Олицетворение удостоверения клиента в рабочем процессе
 
@@ -55,4 +55,4 @@ ms.locfileid: "81646319"
 
 4. Сквозная передача токена безопасности клиента внутренней службе (делегирование на основе утверждений) с помощью WS-Trust ActAs
 
-Для получения дополнительной информации и загрузки WF Security Pack CTP см.: [WF Security Pack CTP](https://archive.codeplex.com/?p=wf)
+Дополнительные сведения и о скачивании пакета безопасности WF CTP см. в статье [пакет безопасности WF CTP](https://archive.codeplex.com/?p=wf)

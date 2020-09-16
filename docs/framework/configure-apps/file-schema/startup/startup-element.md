@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <startup> element
 - startup element
 ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
-ms.openlocfilehash: e936c069275bfa9f7ac81ef1c6fc6228828182a8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: cd91abb288c1cfb281f17f2fce95d4956908468f
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153739"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550850"
 ---
 # <a name="startup-element"></a>Элемент \<startup>
 
@@ -36,7 +36,7 @@ ms.locfileid: "79153739"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`useLegacyV2RuntimeActivationPolicy`|Необязательный атрибут.<br /><br /> Указывает, следует ли включить политику активации среды выполнения .NET Framework 2,0 или использовать политику активации .NET Framework 4.|
 
@@ -71,7 +71,7 @@ ms.locfileid: "79153739"
  Этот атрибут полезен, если ваше приложение использует пути активации прежних версий, например [функцию CorBindToRuntimeEx](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md), и вы хотите, чтобы эти пути активировали версию 4 среды CLR вместо более ранней версии или если приложение создано с .NET Framework 4, но зависит от сборки в смешанном режиме, построенной с использованием более ранней версии .NET Framework. В этих сценариях задайте для атрибута значение `true` .
 
 > [!NOTE]
-> Установка атрибута `true` предотвращает загрузку среды CLR версии 1,1 или CLR версии 2,0 в один и тот же процесс, фактически отключив внутрипроцессный параллельный компонент (см. раздел [параллельное выполнение для COM-взаимодействия](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))).
+> Установка атрибута `true` предотвращает загрузку среды CLR версии 1,1 или CLR версии 2,0 в один и тот же процесс, фактически отключив внутрипроцессный параллельный компонент (см. раздел [параллельное выполнение для COM-взаимодействия](/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))).
 
 ## <a name="example"></a>Пример
 
@@ -98,5 +98,5 @@ ms.locfileid: "79153739"
 - [Схема параметров запуска](index.md)
 - [Схема файла конфигурации](../index.md)
 - [Практическое руководство. Настройка приложения для включения поддержки .NET Framework версии 4 и выше](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
-- [Параллельное выполнение для COM- взаимодействия](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))
+- [Параллельное выполнение для COM- взаимодействия](/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))
 - [Внутрипроцессное параллельное выполнение](../../../deployment/in-process-side-by-side-execution.md)

@@ -2,12 +2,12 @@
 title: Имя источника, указанное в EventLogSource, зарегистрировано в журнале, отличном от указанного в EventLogName
 ms.date: 07/20/2015
 ms.assetid: 7317e100-098b-408d-86e5-7c74cf8558c7
-ms.openlocfilehash: 226516e48a7f658d2ec95283e0b0d60fa3f856eb
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: da9f1756909d1c37e28f2dde62a7f8a73bb19f37
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64619237"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555644"
 ---
 # <a name="source-name-specified-in-eventlogsource-is-registered-to-a-log-other-than-that-specified-in-eventlogname"></a>Имя источника, указанное в EventLogSource, зарегистрировано в журнале, отличном от указанного в EventLogName
 `EventLog` пытается сослаться на источник, который зарегистрирован в другом журнале. Для добавления записей в журнал событий необходимо задать свойство <xref:System.Diagnostics.EventLog.Source%2A> . Свойство <xref:System.Diagnostics.EventLog.Source%2A> регистрирует компонент в журнале событий в качестве допустимого источника записей. Один источник может быть связан только с одним журналом событий одновременно (и поэтому может добавлять записи только в него).  
@@ -20,7 +20,7 @@ ms.locfileid: "64619237"
   
 ## <a name="see-also"></a>См. также
 
-- [Администрирование журнала событий](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
-- [Ссылки на журнал событий](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/k43k9z2a(v=vs.90))
-- [Практическое руководство. Добавьте приложение в качестве источника записей журнала событий](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/xz73e171(v=vs.90))
-- [Практическое руководство. Удалить источник событий](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/k57466fc(v=vs.90))
+- [Администрирование журналов событий](/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
+- [Ссылки на журнал событий](/previous-versions/visualstudio/visual-studio-2008/k43k9z2a(v=vs.90))
+- [Как добавить приложение в качестве источника записей журнала событий](/previous-versions/visualstudio/visual-studio-2008/xz73e171(v=vs.90))
+- [Как удалить источник события](/previous-versions/visualstudio/visual-studio-2008/k57466fc(v=vs.90))

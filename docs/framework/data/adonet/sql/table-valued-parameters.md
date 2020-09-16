@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 370c16d5-db7b-43e3-945b-ccaab35b739b
-ms.openlocfilehash: 7b1f0a6c416f660f06cea099197ba136f84407f9
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 0d62c8d3c4669673d26f2d5535d7940fce702f66
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286201"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547451"
 ---
 # <a name="table-valued-parameters"></a>Параметры, возвращающие табличные значения
 Параметры, возвращающие табличное значение, упрощают маршалинг нескольких строк данных из клиентского приложения в SQL Server, устраняя потребность в нескольких круговых путях или специальной серверной логике для обработки данных. Параметры, возвращающие табличное значение, можно использовать для инкапсуляции строк данных в клиентском приложении и их отправки на сервер единой параметризованной командой. Входящие строки данных хранятся в переменной таблицы, которой затем можно управлять с помощью Transact-SQL.  
@@ -26,7 +26,7 @@ ms.locfileid: "84286201"
 |Ресурс|Description|  
 |--------------|-----------------|  
 |[Использование параметров, возвращающих табличные значения (компонент Database Engine)](/sql/relational-databases/tables/use-table-valued-parameters-database-engine)|Здесь описывается создание и использование возвращающих табличное значение параметров.|  
-|[Определяемые пользователем типы таблиц](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100))|Описывает использование определяемых пользователем табличных типов для объявления возвращающих табличное значение параметров.|  
+|[Определяемые пользователем типы таблиц](/previous-versions/sql/sql-server-2008/bb522526(v=sql.100))|Описывает использование определяемых пользователем табличных типов для объявления возвращающих табличное значение параметров.|  
   
 ## <a name="passing-multiple-rows-in-previous-versions-of-sql-server"></a>Передача нескольких строк в предыдущие версии SQL Server  
  До появления в SQL Server 2008 параметров, возвращающих табличное значение, были ограниченны возможности передачи нескольких строк данных в хранимую процедуру или параметризованную команду SQL. Разработчик может выбрать один из следующих вариантов передачи нескольких строк на сервер.  
@@ -40,7 +40,7 @@ ms.locfileid: "84286201"
 - Использовать программу `bcp` или объект <xref:System.Data.SqlClient.SqlBulkCopy>, чтобы загрузить в таблицу множество строк данных. Хотя этот метод очень эффективен, он не поддерживает обработку на стороне сервера, если данные не загружены во временную таблицу или табличную переменную.  
   
 ## <a name="creating-table-valued-parameter-types"></a>Создание типов параметров, возвращающих табличное значение  
- Возвращающие табличные значения параметры основываются на строго типизированных табличных структурах, которые определены с помощью инструкций CREATE TYPE языка Transact-SQL. Перед использованием в клиентских приложениях возвращающих табличное значение параметров в SQL Server необходимо создать табличный тип и определить структуру. Дополнительные сведения о создании табличных типов см. в разделе [определяемые пользователем табличные типы](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
+ Возвращающие табличные значения параметры основываются на строго типизированных табличных структурах, которые определены с помощью инструкций CREATE TYPE языка Transact-SQL. Перед использованием в клиентских приложениях возвращающих табличное значение параметров в SQL Server необходимо создать табличный тип и определить структуру. Дополнительные сведения о создании табличных типов см. в разделе [определяемые пользователем табличные типы](/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
   
  Следующая инструкция создает табличный тип с именем CategoryTableType, состоящий из столбцов CategoryID и CategoryName:  
   
@@ -129,7 +129,7 @@ Dim tvpParam As SqlParameter = _
 tvpParam.SqlDbType = SqlDbType.Structured  
 ```  
   
-## <a name="passing-a-table-valued-parameter-to-a-stored-procedure"></a><a name="passing"></a>Передача возвращающего табличное значение параметра в хранимую процедуру  
+## <a name="passing-a-table-valued-parameter-to-a-stored-procedure"></a><a name="passing"></a> Передача возвращающего табличное значение параметра в хранимую процедуру  
  В этом примере демонстрируется передача данных возвращающего табличное значение параметра в хранимую процедуру. Код извлекает добавленные строки в новый объект <xref:System.Data.DataTable> с помощью метода <xref:System.Data.DataTable.GetChanges%2A>. Затем код определяет <xref:System.Data.SqlClient.SqlCommand>, устанавливая для свойства <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> значение <xref:System.Data.CommandType.StoredProcedure>. <xref:System.Data.SqlClient.SqlParameter> заполняется с помощью метода <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A>, а параметру <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> задано значение `Structured`. Затем <xref:System.Data.SqlClient.SqlCommand> выполняется с помощью метода <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>.  
   
 ```csharp  

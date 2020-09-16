@@ -2,12 +2,12 @@
 title: Атрибут KnownAssemblyAttribute
 ms.date: 03/30/2017
 ms.assetid: b3bc7f31-95ff-46e1-8308-d206ec426f6e
-ms.openlocfilehash: 3aacc7c73167771a632bb31164f2c551d60ce8f0
-ms.sourcegitcommit: 59e36e65ac81cdd094a5a84617625b2a0ff3506e
+ms.openlocfilehash: 12f28f44b408dde1ea04d6b84e663206cb4437df
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80345235"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555410"
 ---
 # <a name="knownassemblyattribute"></a>Атрибут KnownAssemblyAttribute
 В этом образце показано, как можно настроить процессы сериализации и десериализации с помощью класса <xref:System.Runtime.Serialization.DataContractResolver>. В этом образце показано, как динамически добавлять известные типы во время сериализации и десериализации.  
@@ -346,27 +346,27 @@ Lists combined:
   
 #### <a name="to-set-up-run-and-build-the-sample"></a>Настройка, выполнение и сборка образца  
   
-1. Право нажмите на решение **KnownAssemblyAttribute** и выберите **Свойства**.  
+1. Щелкните правой кнопкой мыши решение **кновнассембляттрибуте** и выберите пункт **свойства**.  
   
-2. В **общие свойства**, выберите запуск **проекта**, а затем нажмите **Несколько проектов запуска**.  
+2. В окне **Общие свойства**выберите **запускаемый проект**и щелкните **Несколько запускаемых проектов**.  
   
-3. Добавьте действие **«Пуск»** в проекты **Службы** и **Клиента.**  
+3. Добавьте действие **Start** в проекты **службы** и **клиента** .  
   
-4. Нажмите **OK**, и нажмите **F5** для запуска образца.  
+4. Нажмите кнопку **ОК**и нажмите клавишу **F5** , чтобы запустить пример.  
   
 5. Если приложение выполняется неправильно, убедитесь в правильности настройки среды, выполнив следующие шаги.  
   
-6. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](https://docs.microsoft.com/dotnet/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples)  
+6. Убедитесь, что выполнена [однократная настройка процедуры для Windows Communication Foundation примеров](./one-time-setup-procedure-for-the-wcf-samples.md).  
   
-7. Чтобы создать решение, следуйте инструкциям по [созданию образца Windows Communication Foundation.](https://docs.microsoft.com/dotnet/framework/wcf/samples/building-the-samples)  
+7. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примера Windows Communication Foundation](./building-the-samples.md).  
   
-8. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](https://docs.microsoft.com/dotnet/framework/wcf/samples/running-the-samples)  
+8. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](./running-the-samples.md).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\KnownAssemblyAttribute`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\KnownAssemblyAttribute`

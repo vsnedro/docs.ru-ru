@@ -3,12 +3,12 @@ title: Синтаксис LINQ на C#
 description: Знакомство с LINQ для C#.
 ms.date: 11/30/2016
 ms.assetid: 007cc736-f5cf-4919-b99b-0c00ab2814ce
-ms.openlocfilehash: fe408210b30b5f6118dc66b4c8f7057fb6654881
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b39aeffa4871d523679162497a7a4e81cf1293ca
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79397566"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90545960"
 ---
 # <a name="language-integrated-query-linq"></a>Синтаксис LINQ
 
@@ -42,7 +42,7 @@ ms.locfileid: "79397566"
 
 Чтобы получить дополнительные сведения о LINQ, сначала ознакомьтесь с некоторыми основным понятиями в статье [Основы выражения запроса](query-expression-basics.md), а затем переходите к документации по интересующей вас технологии LINQ.
 
-- XML-документы: [LINQ to XML](../programming-guide/concepts/linq/linq-to-xml-overview.md)
+- XML-документы: [LINQ to XML](../../standard/linq/linq-xml-overview.md)
 
 - Платформа ADO.NET Entity Framework: [LINQ to Entities](../../framework/data/adonet/ef/language-reference/linq-to-entities.md)
 

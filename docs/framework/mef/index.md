@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Managed Extensibility Framework, overview
 - MEF, overview
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
-ms.openlocfilehash: 00ed48f2202d4c04039ac264b1fe71474a02432e
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: b743a26dd401e7015c588be2a197551aa891a687
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281255"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555579"
 ---
 # <a name="managed-extensibility-framework-mef"></a>Managed Extensibility Framework (MEF)
 
@@ -62,7 +62,7 @@ MEF является неотъемлемой частью .NET Framework 4 и 
 
 Чтобы узнать о возможностях MEF, проще всего создать простое приложение MEF. В этом примере выполняется создание очень простого калькулятора, который называется SimpleCalculator. SimpleCalculator предназначен для создания консольного приложения, принимающего основные арифметические команды в формате «5 + 3» или «6 - 2» и возвращающего правильные ответы. Благодаря применению MEF, вы сможете добавлять новые операторы без изменения кода приложения.
 
-Чтобы скачать полный исходный код для этого примера, см. раздел [Пример SimpleCalculator (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/simple-calculator-vb/).
+Чтобы скачать полный исходный код для этого примера, см. раздел [Пример SimpleCalculator (Visual Basic)](/samples/dotnet/samples/simple-calculator-vb/).
 
 > [!NOTE]
 > Пример с SimpleCalculator предназначен просто для демонстрации концепции и синтаксиса платформы MEF, а не описания реального сценария для ее использования. Многие приложения, которые будут использовать возможности MEF, являются более сложными, чем SimpleCalculator. Более сложные примеры см. в разделе [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef) в GitHub.
@@ -484,6 +484,6 @@ public class Mod : SimpleCalculator.IOperation
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Чтобы скачать полный исходный код для этого примера, см. раздел [Пример SimpleCalculator (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/simple-calculator-vb/).
+Чтобы скачать полный исходный код для этого примера, см. раздел [Пример SimpleCalculator (Visual Basic)](/samples/dotnet/samples/simple-calculator-vb/).
 
  Дополнительные сведения и примеры кода см. в разделе [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef). Список типов MEF см. в пространстве имен <xref:System.ComponentModel.Composition?displayProperty=nameWithType>.

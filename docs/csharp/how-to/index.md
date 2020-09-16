@@ -2,12 +2,12 @@
 title: Статьи с практическими руководствами (руководств по языку C#)
 description: Коллекция советов и кратких конкретных примеров кода
 ms.date: 12/20/2017
-ms.openlocfilehash: 9dd069ff767d65002b78c18b398b700a1f26ebfa
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 26d3931ff3b4ecfcc052c3ace25a09801f84c505
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465160"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537409"
 ---
 # <a name="how-to-c"></a>Практическое руководство (C#)
 
@@ -106,23 +106,23 @@ LINQ позволяет создавать код для запросов к л�
 - [Использование лямбда-выражений в запросах](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md).
 - [Использование `var` в выражениях запросов](../programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 - [Возвращение поднаборов свойств элементов из запроса](../programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md).
-- [Создание запросов со сложной фильтрацией](../programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md).
-- [Сортировка элементов источника данных](../programming-guide/concepts/linq/how-to-sort-elements.md).
-- [Сортировка элементов по нескольким ключам](../programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md).
-- [Управление типом проекции](../programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md).
+- [Создание запросов со сложной фильтрацией](../../standard/linq/write-queries-complex-filtering.md).
+- [Сортировка элементов источника данных](../../standard/linq/sort-elements.md).
+- [Сортировка элементов по нескольким ключам](../../standard/linq/sort-elements-multiple-keys.md).
+- [Управление типом проекции](../../standard/linq/control-type-projection.md).
 - [Подсчет вхождений значения в исходной последовательности](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
-- [Вычисление промежуточных значений](../programming-guide/concepts/linq/how-to-calculate-intermediate-values.md).
+- [Вычисление промежуточных значений](../../standard/linq/calculate-intermediate-values.md).
 - [Слияние данных из нескольких источников](../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md).
 - [Нахождение разности наборов между двумя последовательностями](../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md).
-- [Отладка пустых результатов запроса](../programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md).
+- [Отладка пустых результатов запроса](../../standard/linq/debug-empty-query-results-sets.md).
 - [Добавление настраиваемых методов в запросы LINQ](../programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md).
 
 ## <a name="multiple-threads-and-async-processing"></a>Несколько потоков и асинхронная обработка
 
 В современных программах часто используются асинхронные операции. Сведения о работе с ними приводятся в следующих статьях.
 
-- [Повышение производительности асинхронных операций с помощью `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
-- [Параллельное выполнение нескольких веб-запросов с помощью `async` и `await`](../programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md).
+- [Повышение производительности асинхронных операций с помощью `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/index.md).
+- [Параллельное выполнение нескольких веб-запросов с помощью `async` и `await`](../programming-guide/concepts/async/index.md).
 - [Использование пула потоков](../../standard/threading/the-managed-thread-pool.md#using-the-thread-pool).
 
 ## <a name="command-line-args-to-your-program"></a>Аргументы командной строки для программы

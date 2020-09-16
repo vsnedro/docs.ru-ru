@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0b121b71-78f8-4ae2-9aa1-0b2e15778e57
-ms.openlocfilehash: 9dde2d7305a1176dadba3802fc5335c0c95bfbbb
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4c1da6041b2343565bdaeb53e586c893bd85c922
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286680"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557909"
 ---
 # <a name="performance-counters-in-adonet"></a>Счетчики производительности в ADO.NET
 В ADO.NET 2.0 появилась расширенная поддержка счетчиков производительности, включая поддержку как <xref:System.Data.SqlClient>, так и <xref:System.Data.OracleClient>. Счетчики производительности <xref:System.Data.SqlClient> предыдущих версий ADO.NET устарели и заменены новыми счетчиками производительности, которые рассматриваются в этом разделе. Счетчики производительности ADO.NET можно использовать для контроля состояния приложения и используемых им ресурсов соединения. Показания счетчиков производительности можно отслеживать с помощью системного монитора Windows или получить к ним доступ программным путем с помощью класса <xref:System.Diagnostics.PerformanceCounter> в пространстве имен <xref:System.Diagnostics>.  
@@ -399,7 +399,7 @@ class Program
 
 - [Подключение к источнику данных](connecting-to-a-data-source.md)
 - [OLE DB, ODBC и объединение подключений в пул в Oracle](ole-db-odbc-and-oracle-connection-pooling.md)
-- [Счетчики производительности для ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/fxk122b4(v=vs.100))
+- [Счетчики производительности для ASP.NET](/previous-versions/aspnet/fxk122b4(v=vs.100))
 - [Профилирование среды выполнения](../../debug-trace-profile/runtime-profiling.md)
-- [Общие сведения о мониторинге пороговых значений производительности](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
+- [Общие сведения о мониторинге пороговых значений производительности](/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
 - [Общие сведения об ADO.NET](ado-net-overview.md)
