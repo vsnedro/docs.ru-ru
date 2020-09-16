@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: ae275793-857d-4102-9095-b4c2a02d57f4
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 2b3be8b42b5046e52074236de01ca312a0a9a361
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: c5e3f692c2bf754ccd35324019246ee905e8c591
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474271"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554649"
 ---
 # <a name="net-performance-tips"></a>Советы по производительности .NET
 Под *производительностью* обычно понимается скорость выполнения программы. В некоторых случаях ее можно увеличить, следуя определенным основным правилам написания исходного кода. В некоторых программах важно тщательно проверить код и с помощью профилировщиков убедиться, что он выполняется максимально быстро. В других случаях такая оптимизация не требуется, поскольку код выполняется достаточно быстро в своем первоначальном виде. В этой статье описываются основные причины снижения производительности и приводятся рекомендации по ее повышению, а также ссылки на разделы с дополнительной информацией. Дополнительные сведения о планировании и измерении производительности см. в разделе [Производительность](index.md)  
@@ -31,19 +31,19 @@ ms.locfileid: "86474271"
   
 ## <a name="other-resources"></a>Другие ресурсы  
   
-- [Повышение производительности управляемого кода](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973852(v=msdn.10))  
+- [Повышение производительности управляемого кода](/previous-versions/dotnet/articles/ms973852(v=msdn.10))  
   
-- [Повышение производительности управляемых приложений: учебник для начинающих](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973858(v=msdn.10))  
+- [Повышение производительности управляемых приложений: учебник для начинающих](/previous-versions/dotnet/articles/ms973858(v=msdn.10))  
   
-- [Общие сведения о сборке мусора и советы по повышению производительности](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973837(v=msdn.10))  
+- [Общие сведения о сборке мусора и советы по повышению производительности](/previous-versions/dotnet/articles/ms973837(v=msdn.10))  
   
-- [Советы и рекомендации по повышению производительности в приложениях .NET](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973839(v=msdn.10))  
+- [Советы и рекомендации по повышению производительности в приложениях .NET](/previous-versions/dotnet/articles/ms973839(v=msdn.10))  
 
-- [Советы по повышению производительности от Рико Мариани](https://docs.microsoft.com/archive/blogs/ricom/)  
+- [Советы по повышению производительности от Рико Мариани](/archive/blogs/ricom/)  
 
-- [Блог Вэнс Моррисон](https://docs.microsoft.com/archive/blogs/vancem/)
+- [Блог Вэнс Моррисон](/archive/blogs/vancem/)
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Производительность](index.md)
 - [Руководство по программированию на Visual Basic](../../visual-basic/programming-guide/index.md)

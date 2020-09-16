@@ -8,12 +8,12 @@ ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 2e8abef547d8cc06d80b8cbf865ec984eb91d330
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 65370a2bd21e2474af4cb070bb8d82a167f10070
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551618"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555000"
 ---
 # <a name="linq-overview"></a>Общие сведения о LINQ
 
@@ -111,7 +111,7 @@ End Function
 
 Написать код для просмотра XML-документа вручную будет намного сложнее.
 
-Поставщики LINQ можно использовать для реализации целого ряда задач, не ограничиваясь только взаимодействием с XML. [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md) является довольно минималистичным инструментом объектно-реляционного сопоставления (ORM) для базы данных сервера MSSQL. Библиотека [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) предоставляет эффективные возможности просмотра документов JSON с помощью LINQ. Кроме того, если библиотека с необходимыми вам функциями отсутствует, можно [написать собственный поставщик LINQ](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
+Поставщики LINQ можно использовать для реализации целого ряда задач, не ограничиваясь только взаимодействием с XML. [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md) является довольно минималистичным инструментом объектно-реляционного сопоставления (ORM) для базы данных сервера MSSQL. Библиотека [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) предоставляет эффективные возможности просмотра документов JSON с помощью LINQ. Кроме того, если библиотека с необходимыми вам функциями отсутствует, можно [написать собственный поставщик LINQ](/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
 ## <a name="reasons-to-use-the-query-syntax"></a>Причины использования синтаксиса запроса
 
@@ -159,7 +159,7 @@ Dim filteredItems = From item In myItems
 
 ## <a name="essential-linq"></a>Важные части LINQ
 
-Полный список примеров LINQ см. на странице [101 LINQ Samples](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/) (101 пример LINQ).
+Полный список примеров LINQ см. на странице [101 LINQ Samples](/samples/dotnet/try-samples/101-linq-samples/) (101 пример LINQ).
 
 Далее приводятся примеры демонстрации некоторых важных частей LINQ. Она не является исчерпывающей, так как LINQ предоставляет больше возможностей, чем показано здесь.
 
@@ -394,6 +394,6 @@ Public Shared GetAllFacebookUserLikesMessage(facebookUsers As IEnumerable(Of Fac
 
 ## <a name="more-resources"></a>Дополнительные ресурсы
 
-* [101 пример по LINQ](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/)
+* [101 пример по LINQ](/samples/dotnet/try-samples/101-linq-samples/)
 * [LINQPad](https://www.linqpad.net/) — среда и механизм запросов к базе данных для C#/F#/Visual Basic
 * [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/) — электронная книга с информацией по реализации LINQ to Objects

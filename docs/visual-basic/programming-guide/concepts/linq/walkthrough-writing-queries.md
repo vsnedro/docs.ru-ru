@@ -7,12 +7,12 @@ helpviewer_keywords:
 - LINQ [Visual Basic], writing queries
 - writing LINQ queries [Visual Basic]
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
-ms.openlocfilehash: 25905d7ac3ca4bb66a22ad1df421b400eaa6b08f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c2abca183f1241cff314a4367c7bd9f1b9f239ea
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413275"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554597"
 ---
 # <a name="walkthrough-writing-queries-in-visual-basic"></a>Пошаговое руководство. Написание запросов в Visual Basic
 
@@ -26,13 +26,13 @@ ms.locfileid: "84413275"
 
 1. Запустите Visual Studio.
 
-2. В меню **Файл** укажите **Создать**, затем нажмите **Проект**.
+2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
 
 3. В списке **Установленные шаблоны** щелкните **Visual Basic**.
 
 4. В списке типов проектов щелкните **консольное приложение**. В поле **имя** введите имя проекта и нажмите кнопку **ОК**.
 
-    Создается проект. По умолчанию он содержит ссылку на библиотеку System. Core. dll. Кроме того, в списке **Импортированные пространства имен** на [странице ссылки в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) содержится <xref:System.Linq?displayProperty=nameWithType> пространство имен.
+    Создается проект. По умолчанию он содержит ссылку на System.Core.dll. Кроме того, в списке **Импортированные пространства имен** на [странице ссылки в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) содержится <xref:System.Linq?displayProperty=nameWithType> пространство имен.
 
 5. На [странице Компиляция в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)убедитесь, что **параметр Infer** имеет значение **On**.
 
@@ -145,11 +145,11 @@ ms.locfileid: "84413275"
 
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 
-- [LINQ to XML](linq-to-xml.md)
+- [LINQ to XML](../../../../standard/linq/linq-xml-overview.md)
 
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ (Visual Basic)](index.md)
 - [Приступая к работе с LINQ в Visual Basic](getting-started-with-linq.md)

@@ -2,25 +2,25 @@
 title: Миграция веб-служб WSE 3.0 на платформу WCF
 ms.date: 03/30/2017
 ms.assetid: 7bc5fff7-a2b2-4dbc-86cc-ecf73653dcdc
-ms.openlocfilehash: ecf27c227b3e39d0c449a1d2ff32dc5bd59c750b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c7feac0a44883e8019acfeaa288752fb051c667f
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598792"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554095"
 ---
 # <a name="migrating-wse-30-web-services-to-wcf"></a>Миграция веб-служб WSE 3.0 на платформу WCF
 Преимущества миграции веб-служб WSE 3,0 на Windows Communication Foundation (WCF) включают улучшенную производительность и поддержку дополнительных транспортов, дополнительных сценариев безопасности и спецификаций WS-*. Веб-служба, перенесенная из WSE 3,0 в WCF, может работать с повышением производительности до 200% до 400%. Дополнительные сведения о транспортах, поддерживаемых WCF, см. [в разделе Выбор транспорта](choosing-a-transport.md). Список сценариев, поддерживаемых WCF, см. в разделе [Общие сценарии безопасности](common-security-scenarios.md). Список спецификаций, поддерживаемых WCF, см. в разделе [Guide взаимодействие протоколов веб-служб](web-services-protocols-interoperability-guide.md).  
   
  В следующих разделах приведены рекомендации по переносу определенной функции веб-службы WSE 3,0 в WCF.  
   
-## <a name="general"></a>Общие  
+## <a name="general"></a>Общие сведения  
  Приложения WSE 3,0 и WCF включают взаимодействие на уровне сети и общий набор терминологии. Приложения WSE 3,0 и WCF поддерживают взаимодействие на уровне сети на основе набора спецификаций WS-*, которые они поддерживают. При разработке приложения WSE 3,0 или WCF существует общий набор терминов, таких как имена готовых утверждений безопасности в WSE и режимы проверки подлинности.  
   
  Несмотря на множество схожих аспектов между моделями программирования WCF и ASP.NET или WSE 3,0, они отличаются. Дополнительные сведения о модели программирования WCF см. в разделе [Базовый жизненный цикл программирования](../basic-programming-lifecycle.md).  
   
 > [!NOTE]
-> Чтобы перенести веб-службу WSE в WCF, можно использовать средство [служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) для создания клиента. Такой клиент содержит интерфейсы и классы, которые можно использовать в качестве отправной точки и для службы WCF. Созданные интерфейсы имеют атрибут <xref:System.ServiceModel.OperationContractAttribute>, применяемый ко всем членам контракта, у которых свойству <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> присвоено значение `*`. Когда клиент WSE вызывает веб-службу с этим параметром, возникает следующее исключение: **Web. Services3. респонсепроцессинжексцептион: WSE910: во время обработки ответного сообщения произошла ошибка, и ошибку можно найти во внутреннем исключении**. Чтобы избежать такой ситуации, присвойте свойству <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> атрибута <xref:System.ServiceModel.OperationContractAttribute> значение, отличное от `null`, например `http://Microsoft.WCF.Documentation/ResponseToOCAMethod`.  
+> Чтобы перенести веб-службу WSE в WCF, можно использовать средство [служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) для создания клиента. Такой клиент содержит интерфейсы и классы, которые можно использовать в качестве отправной точки и для службы WCF. Созданные интерфейсы имеют атрибут <xref:System.ServiceModel.OperationContractAttribute>, применяемый ко всем членам контракта, у которых свойству <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> присвоено значение `*`. Когда клиент WSE вызывает веб-службу с этим параметром, возникает следующее исключение: **Web. Services3. респонсепроцессинжексцептион: WSE910: во время обработки ответного сообщения произошла ошибка, и ошибку можно найти во внутреннем исключении**. Чтобы избежать такой ситуации, присвойте свойству <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> атрибута <xref:System.ServiceModel.OperationContractAttribute> значение, отличное от `null`, например `http://Microsoft.WCF.Documentation/ResponseToOCAMethod`.  
   
 ## <a name="security"></a>Безопасность  
   
@@ -66,7 +66,7 @@ ms.locfileid: "84598792"
  Дополнительные сведения о создании пользовательских привязок в WCF см. в разделе [пользовательские привязки](../extending/custom-bindings.md).  
   
 ### <a name="wse-30-web-services-that-are-secured-using-application-code"></a>Веб-службы WSE 3.0, защищаемые с использованием кода приложения  
- Независимо от того, используется ли WSE 3,0 или WCF, требования безопасности могут быть указаны в коде приложения, а не в конфигурации. В WSE 3.0 для этого создается класс, наследуемый от класса `Policy`, и добавляются требования путем вызова метода `Add`. Дополнительные сведения об указании требований безопасности в коде см. в разделе [как защитить веб-службу без использования файла политики](https://docs.microsoft.com/previous-versions/dotnet/netframework-2.0/aa528763(v=msdn.10)). В WCF для указания требований безопасности в коде создайте экземпляр <xref:System.ServiceModel.Channels.BindingElementCollection> класса и добавьте <xref:System.ServiceModel.Channels.SecurityBindingElement> в него экземпляр <xref:System.ServiceModel.Channels.BindingElementCollection> . Требования утверждений безопасности задаются с использованием статических методов поддержки режима проверки подлинности класса <xref:System.ServiceModel.Channels.SecurityBindingElement>. Дополнительные сведения об указании требований безопасности в коде с помощью WCF см. в разделе [Создание пользовательской привязки с помощью SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md) и [инструкции. Создание SecurityBindingElement для указанного режима проверки подлинности](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md).  
+ Независимо от того, используется ли WSE 3,0 или WCF, требования безопасности могут быть указаны в коде приложения, а не в конфигурации. В WSE 3.0 для этого создается класс, наследуемый от класса `Policy`, и добавляются требования путем вызова метода `Add`. Дополнительные сведения об указании требований безопасности в коде см. в разделе [как защитить веб-службу без использования файла политики](/previous-versions/dotnet/netframework-2.0/aa528763(v=msdn.10)). В WCF для указания требований безопасности в коде создайте экземпляр <xref:System.ServiceModel.Channels.BindingElementCollection> класса и добавьте <xref:System.ServiceModel.Channels.SecurityBindingElement> в него экземпляр <xref:System.ServiceModel.Channels.BindingElementCollection> . Требования утверждений безопасности задаются с использованием статических методов поддержки режима проверки подлинности класса <xref:System.ServiceModel.Channels.SecurityBindingElement>. Дополнительные сведения об указании требований безопасности в коде с помощью WCF см. в разделе [Создание пользовательской привязки с помощью SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md) и [инструкции. Создание SecurityBindingElement для указанного режима проверки подлинности](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md).  
   
 ### <a name="wse-30-custom-policy-assertion"></a>Утверждение пользовательской политики WSE 3.0  
  В WSE 3.0 предусмотрены два типа утверждений пользовательской политики: утверждения, обеспечивающие защиту сообщения SOAP, и утверждения, не обеспечивающие защиту сообщения SOAP. Утверждения политики, которые защищают сообщения SOAP от класса WSE 3,0, `SecurityPolicyAssertion` а концептуальный эквивалент в WCF — это <xref:System.ServiceModel.Channels.SecurityBindingElement> класс.  
@@ -78,7 +78,7 @@ ms.locfileid: "84598792"
  Чтобы преобразовать утверждение пользовательской политики, которое не защищает сообщение SOAP, см. раздел [Фильтрация](filtering.md) и пример [пользовательского перехватчика сообщений](../samples/custom-message-interceptor.md).  
   
 ### <a name="wse-30-custom-security-token"></a>Пользовательский маркер безопасности WSE 3.0  
- Модель программирования WCF для создания пользовательского маркера отличается от WSE 3,0. Дополнительные сведения о создании пользовательского токена в WSE см. в разделе [Создание настраиваемых маркеров безопасности](https://docs.microsoft.com/previous-versions/dotnet/netframework-2.0/aa529304(v=msdn.10)). Дополнительные сведения о создании пользовательского токена в WCF см. в разделе [как создать настраиваемый токен](../extending/how-to-create-a-custom-token.md).  
+ Модель программирования WCF для создания пользовательского маркера отличается от WSE 3,0. Дополнительные сведения о создании пользовательского токена в WSE см. в разделе [Создание настраиваемых маркеров безопасности](/previous-versions/dotnet/netframework-2.0/aa529304(v=msdn.10)). Дополнительные сведения о создании пользовательского токена в WCF см. в разделе [как создать настраиваемый токен](../extending/how-to-create-a-custom-token.md).  
   
 ### <a name="wse-30-custom-token-manager"></a>Пользовательский диспетчер маркеров WSE 3.0  
  Модель программирования для создания пользовательского диспетчера маркеров отличается от модели WCF, отличной от WSE 3,0. Дополнительные сведения о создании настраиваемого диспетчера маркеров и других компонентов, необходимых для настраиваемого маркера безопасности, см. в разделе [как создать настраиваемый токен](../extending/how-to-create-a-custom-token.md).  
@@ -111,7 +111,7 @@ ms.locfileid: "84598792"
   
 ### <a name="wse-30-applications-that-use-the-wse-messaging-api"></a>Приложения WSE 3.0, использующие API обмена сообщениями WSE  
 
- Если для прямого доступа к данным XML, передаваемым между клиентами и веб-службами, используется API обмена сообщениями WSE, приложение можно преобразовать для использования POX (Plain Old XML). Дополнительные сведения о POX см. [в статье взаимодействие с приложениями POX](interoperability-with-pox-applications.md). Дополнительные сведения об API обмена сообщениями WSE см. в разделе [Отправка и получение сообщений SOAP с помощью API обмена сообщениями WSE](https://docs.microsoft.com/previous-versions/dotnet/netframework-2.0/aa529293(v=msdn.10)).  
+ Если для прямого доступа к данным XML, передаваемым между клиентами и веб-службами, используется API обмена сообщениями WSE, приложение можно преобразовать для использования POX (Plain Old XML). Дополнительные сведения о POX см. [в статье взаимодействие с приложениями POX](interoperability-with-pox-applications.md). Дополнительные сведения об API обмена сообщениями WSE см. в разделе [Отправка и получение сообщений SOAP с помощью API обмена сообщениями WSE](/previous-versions/dotnet/netframework-2.0/aa529293(v=msdn.10)).  
   
 ## <a name="transports"></a>Транспорты  
   
@@ -123,7 +123,7 @@ ms.locfileid: "84598792"
 ### <a name="custom-transport"></a>Пользовательский транспорт  
  Эквивалентом пользовательского транспорта WSE 3,0 в WCF является расширение канала. Дополнительные сведения о создании расширения канала см. [в разделе Расширение канального уровня](../extending/extending-the-channel-layer.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Базовый жизненный цикл программирования](../basic-programming-lifecycle.md)
 - [Пользовательские привязки](../extending/custom-bindings.md)

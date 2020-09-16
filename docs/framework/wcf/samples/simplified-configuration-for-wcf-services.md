@@ -3,12 +3,12 @@ title: Упрощенная конфигурация служб WCF
 description: Узнайте, как реализовать и настроить типичную службу и клиент с помощью WCF. Служба взаимодействует с помощью конечной точки, указанной в файле конфигурации.
 ms.date: 03/30/2017
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
-ms.openlocfilehash: 46a0c878b29de34219413a508799ddaddf507dd8
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: dd05754dcfe36cb2e9c28ce20a5927585f85478f
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246224"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554271"
 ---
 # <a name="simplified-configuration-for-wcf-services"></a>Упрощенная конфигурация служб WCF
 В этом примере показано, как реализовать и настроить типичную службу и клиент с помощью Windows Communication Foundation (WCF). Этот образец является основой для всех остальных базовых образцов технологий.  
@@ -81,5 +81,5 @@ ms.locfileid: "85246224"
   
 ## <a name="see-also"></a>См. также
 
-- [Образцы управления AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383405(v=azure.10))
+- [Образцы управления AppFabric](/previous-versions/appfabric/ff383405(v=azure.10))
 - [Упрощенная конфигурация](../simplified-configuration.md)

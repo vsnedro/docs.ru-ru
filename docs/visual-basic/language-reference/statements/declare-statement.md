@@ -27,12 +27,12 @@ helpviewer_keywords:
 - Visual Basic code, Sub procedures
 - Function procedures [Visual Basic], declaring
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.openlocfilehash: 021805508a8a053ccc8fab6f1013109bece4b6f2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8a5802583db53bfd0444ec9df0de9a0b9346d424
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404775"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90545523"
 ---
 # <a name="declare-statement"></a>Declare Statement
 
@@ -55,9 +55,9 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 |Термин|Определение|
 |---|---|
 |`attributelist`|Необязательный элемент. См. [список атрибутов](attribute-list.md).|
-|`accessmodifier`|Необязательный элемент. Может принимать следующие значения:<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />- [Защищенный дружественный](../modifiers/protected-friend.md)<br />- [Частный защищенный](../modifiers/private-protected.md)<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|
+|`accessmodifier`|Необязательный элемент. Может применяться один из перечисленных ниже типов.<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />- [Защищенный дружественный](../modifiers/protected-friend.md)<br />- [Частный защищенный](../modifiers/private-protected.md)<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|
 |`Shadows`|Необязательный элемент. См. раздел [Shadows](../modifiers/shadows.md).|
-|`charsetmodifier`|Необязательный элемент. Указывает набор символов и сведения для поиска файлов. Может принимать следующие значения:<br /><br /> -   [ANSI](../modifiers/ansi.md) (по умолчанию)<br />-   [Юникод](../modifiers/unicode.md)<br />-   [Авто](../modifiers/auto.md)|
+|`charsetmodifier`|Необязательный элемент. Указывает набор символов и сведения для поиска файлов. Может применяться один из перечисленных ниже типов.<br /><br /> -   [ANSI](../modifiers/ansi.md) (по умолчанию)<br />-   [Юникод](../modifiers/unicode.md)<br />-   [Авто](../modifiers/auto.md)|
 |`Sub`|Необязательный, `Sub` но `Function` должен быть либо. Указывает, что внешняя процедура не возвращает значение.|
 |`Function`|Необязательный, `Sub` но `Function` должен быть либо. Указывает, что внешняя процедура возвращает значение.|
 |`name`|Обязательный. Имя этой внешней ссылки. Дополнительные сведения см. в разделе [Имена объявленных элементов](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
@@ -68,7 +68,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 |`parameterlist`|Требуется, если процедура принимает параметры. См. [список параметров](parameter-list.md).|
 |`returntype`|Обязательный, если `Function` указан, а `Option Strict` имеет значение `On` . Тип данных значения, возвращаемого процедурой.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
 Иногда требуется вызвать процедуру, определенную в файле (например, в библиотеке DLL или ресурсе кода) за пределами проекта. При этом компилятор Visual Basic не имеет доступа к информации, которая необходима для корректного вызова процедуры, например, где находится процедура, как она идентифицируется, ее вызывающая последовательность и возвращаемый тип, а также используемая Кодировка строки. `Declare`Инструкция создает ссылку на внешнюю процедуру и предоставляет эту необходимую информацию.
 
@@ -118,9 +118,9 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 
   Аргументы для внешней процедуры передаются точно так же, как указано `parameterlist` в `Declare` инструкции. Не следует учитывать, как параметры были первоначально объявлены во внешнем файле. Аналогично, если имеется возвращаемое значение, используйте его точно так же, как указано `returntype` в `Declare` инструкции.
 
-- **Кодировки.** Можно указать, `charsetmodifier` как Visual Basic должны маршалировать строки при вызове внешней процедуры. `Ansi`Модификатор направляет Visual Basic для маршалирования всех строк в значения ANSI, а `Unicode` модификатор указывает, что необходимо маршалировать все строки в значения Юникода. `Auto`Модификатор направляет Visual Basic для маршалирования строк в соответствии с правилами .NET Framework, основанными на внешней ссылке `name` , или `aliasname` если они заданы. Значение по умолчанию — `Ansi`.
+- **Кодировки.** Можно указать, `charsetmodifier` как Visual Basic должны маршалировать строки при вызове внешней процедуры. `Ansi`Модификатор направляет Visual Basic для маршалирования всех строк в значения ANSI, а `Unicode` модификатор указывает, что необходимо маршалировать все строки в значения Юникода. `Auto`Модификатор направляет Visual Basic для маршалирования строк в соответствии с правилами .NET Framework, основанными на внешней ссылке `name` , или `aliasname` если они заданы. Значение по умолчанию — `Ansi`.
 
-  `charsetmodifier`также указывает, как Visual Basic должен искать внешнюю процедуру во внешнем файле. `Ansi`и `Unicode` обе прямые Visual Basic, чтобы выполнить поиск без изменения имени во время поиска. `Auto`направляет Visual Basic определить базовый набор символов платформы времени выполнения и, возможно, изменить имя внешней процедуры следующим образом:
+  `charsetmodifier` также указывает, как Visual Basic должен искать внешнюю процедуру во внешнем файле. `Ansi` и `Unicode` обе прямые Visual Basic, чтобы выполнить поиск без изменения имени во время поиска. `Auto` направляет Visual Basic определить базовый набор символов платформы времени выполнения и, возможно, изменить имя внешней процедуры следующим образом:
 
   - На платформе ANSI, такой как Windows 95, Windows 98 или Windows Millennium Edition, сначала следует найти внешнюю процедуру без изменения имени. Если это не удается, добавьте "A" в конец имени внешней процедуры и повторите поиск.
 
@@ -129,7 +129,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 - **Механизм.** Visual Basic использует механизм *вызова платформы* .NET Framework (PInvoke) для разрешения и доступа к внешним процедурам. `Declare`Оператор и <xref:System.Runtime.InteropServices.DllImportAttribute> класс используют этот механизм автоматически, и вам не требуется знание PInvoke. Дополнительные сведения см. в разделе [Пошаговое руководство. вызов интерфейсов API Windows](../../programming-guide/com-interop/walkthrough-calling-windows-apis.md).
 
 > [!IMPORTANT]
-> Если внешняя процедура выполняется вне среды CLR, это *неуправляемый код*. При вызове такой процедуры, например, функции Windows API или COM-метода, приложение может представлять угрозу безопасности. Дополнительные сведения см. в разделе [рекомендации по безопасному кодированию для неуправляемого кода](https://docs.microsoft.com/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code).
+> Если внешняя процедура выполняется вне среды CLR, это *неуправляемый код*. При вызове такой процедуры, например, функции Windows API или COM-метода, приложение может представлять угрозу безопасности. Дополнительные сведения см. в разделе [рекомендации по безопасному кодированию для неуправляемого кода](/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code).
 
 ## <a name="example"></a>Пример
 
@@ -145,7 +145,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 
 [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
 - [Оператор Imports (пространство имен .NET и тип)](imports-statement-net-namespace-and-type.md)

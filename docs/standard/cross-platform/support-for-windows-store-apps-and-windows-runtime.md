@@ -9,18 +9,18 @@ helpviewer_keywords:
 - .NET Framework, and Windows Store apps
 - .NET Framework, and Windows Runtime
 ms.assetid: 6fa7d044-ae12-4c54-b8ee-50915607a565
-ms.openlocfilehash: 7ca5a1259f970f2db5400837eb7d20998dd824cb
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2d1b35181f508a616ab264c859119da7512e5f23
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288866"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547575"
 ---
 # <a name="net-framework-support-for-windows-store-apps-and-windows-runtime"></a>Поддержка приложений для Магазина Windows и среды выполнения Windows в .NET Framework
 
 .NET Framework 4,5 поддерживает несколько сценариев разработки программного обеспечения с среда выполнения Windows. Эти способы можно разделить на три категории.
 
-- Разработка приложений для Магазина Windows 8. x с помощью элементов управления XAML, как описано в статье [Путеводитель по приложениям Магазина Windows на C# или Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10)) [, а также](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10)) [Обзор приложений для](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140))магазина Windows.
+- Разработка приложений для Магазина Windows 8. x с помощью элементов управления XAML, как описано в статье [Путеводитель по приложениям Магазина Windows на C# или Visual Basic](/previous-versions/windows/apps/br229583(v=win.10)) [, а также](/previous-versions/windows/apps/br229566(v=win.10)) [Обзор приложений для](/previous-versions/windows/apps/br230302(v=vs.140))магазина Windows.
 
 - Разработка библиотек классов для использования в приложениях Магазина Windows 8. x, создаваемых с помощью .NET Framework.
 
@@ -32,7 +32,7 @@ ms.locfileid: "84288866"
 
 .NET Framework поддерживает три сценария разработки, перечисленных выше, предоставляя .NET для приложений Магазина Windows 8. x и обеспечивая сам среда выполнения Windows.
 
-- [Пространства имен .NET Framework и среда выполнения Windows](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)#net-framework-and-windows-runtime-namespaces) предоставляют упрощенное представление библиотек классов .NET Framework и включают только типы и члены, которые можно использовать для создания приложений Магазина Windows 8. x и компонентов Среда выполнения Windows.
+- [Пространства имен .NET Framework и среда выполнения Windows](/previous-versions/windows/apps/br230302(v=vs.140)#net-framework-and-windows-runtime-namespaces) предоставляют упрощенное представление библиотек классов .NET Framework и включают только типы и члены, которые можно использовать для создания приложений Магазина Windows 8. x и компонентов Среда выполнения Windows.
 
   - При использовании Visual Studio (Visual Studio 2012 или более поздней версии) для разработки приложения для Магазина Windows 8. x или компонента среда выполнения Windows набор ссылочных сборок гарантирует, что будут видны только соответствующие типы и члены.
 
@@ -40,7 +40,7 @@ ms.locfileid: "84288866"
 
   - Функции, которые просто заключают в оболочку API операционной системы, также удаляются, поскольку среда выполнения Windows легко вызывать из управляемого кода.
 
-  Дополнительные сведения о приложениях для магазина .NET для Windows 8. x см. в статье [Общие сведения о приложениях для Магазина Windows в .NET](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)). Сведения о процессе выбора API см. в разделе " [.NET для приложений в стиле Metro](https://devblogs.microsoft.com/dotnet/net-for-metro-style-apps/) " в блоге .NET.
+  Дополнительные сведения о приложениях для магазина .NET для Windows 8. x см. в статье [Общие сведения о приложениях для Магазина Windows в .NET](/previous-versions/windows/apps/br230302(v=vs.140)). Сведения о процессе выбора API см. в разделе " [.NET для приложений в стиле Metro](https://devblogs.microsoft.com/dotnet/net-for-metro-style-apps/) " в блоге .NET.
 
 - [Среда выполнения Windows](/uwp/api/) предоставляет элементы пользовательского интерфейса для создания приложений Магазина Windows 8. x и предоставляет доступ к функциям операционной системы. Как и .NET Framework, среда выполнения Windows содержит метаданные, позволяющие компиляторам C# и Visual Basic использовать среда выполнения Windows, используя библиотеки классов .NET Framework. .NET Framework упрощает использование среда выполнения Windows, скрывая некоторые различия:
 
@@ -110,7 +110,7 @@ ms.locfileid: "84288866"
 
 ### <a name="other-differences"></a>Другие различия
 
-В некоторых случаях .NET Framework типы отображаются в коде, а не среда выполнения Windows типы требуют действия в вашей части. Например, <xref:Windows.Foundation.Uri?displayProperty=nameWithType> класс отображается как <xref:System.Uri?displayProperty=nameWithType> в .NET Frameworkном коде. <xref:System.Uri?displayProperty=nameWithType>разрешает относительный URI, но <xref:Windows.Foundation.Uri?displayProperty=nameWithType> требует абсолютный URI. Поэтому при передаче URI в метод среда выполнения Windows необходимо убедиться, что он является абсолютным. См. раздел [Передача URI в среду выполнения Windows](passing-a-uri-to-the-windows-runtime.md).
+В некоторых случаях .NET Framework типы отображаются в коде, а не среда выполнения Windows типы требуют действия в вашей части. Например, <xref:Windows.Foundation.Uri?displayProperty=nameWithType> класс отображается как <xref:System.Uri?displayProperty=nameWithType> в .NET Frameworkном коде. <xref:System.Uri?displayProperty=nameWithType> разрешает относительный URI, но <xref:Windows.Foundation.Uri?displayProperty=nameWithType> требует абсолютный URI. Поэтому при передаче URI в метод среда выполнения Windows необходимо убедиться, что он является абсолютным. См. раздел [Передача URI в среду выполнения Windows](passing-a-uri-to-the-windows-runtime.md).
 
 <a name="WindowsRuntimeComponents"></a>
 
@@ -157,9 +157,9 @@ ms.locfileid: "84288866"
 
 |Заголовок|Описание|
 |-----------|-----------------|
-|[Общие сведения о платформе .NET для приложений Магазина Windows](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140))|Описание типов .NET Framework и членов, которые можно использовать для создания приложений Магазина Windows 8. x и Windows Рунтимекомпонентс. (В Центре разработки для Windows.)|
-|[Схема создания приложений для Магазина Windows на C# или Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10))|Содержит основные ресурсы, которые помогут приступить к разработке приложений для Магазина Windows 8. x с помощью C# или Visual Basic, включая множество разделов, руководств и рекомендаций. (В Центре разработки для Windows.)|
-|[Инструкции (XAML)](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10))|Содержит основные ресурсы, которые помогут приступить к разработке приложений для Магазина Windows 8. x с помощью C# или Visual Basic, включая множество разделов, руководств и рекомендаций. (В Центре разработки для Windows.)|
+|[Общие сведения о платформе .NET для приложений Магазина Windows](/previous-versions/windows/apps/br230302(v=vs.140))|Описание типов .NET Framework и членов, которые можно использовать для создания приложений Магазина Windows 8. x и Windows Рунтимекомпонентс. (В Центре разработки для Windows.)|
+|[Схема создания приложений для Магазина Windows на C# или Visual Basic](/previous-versions/windows/apps/br229583(v=win.10))|Содержит основные ресурсы, которые помогут приступить к разработке приложений для Магазина Windows 8. x с помощью C# или Visual Basic, включая множество разделов, руководств и рекомендаций. (В Центре разработки для Windows.)|
+|[Инструкции (XAML)](/previous-versions/windows/apps/br229566(v=win.10))|Содержит основные ресурсы, которые помогут приступить к разработке приложений для Магазина Windows 8. x с помощью C# или Visual Basic, включая множество разделов, руководств и рекомендаций. (В Центре разработки для Windows.)|
 |[Создание компонентов среды выполнения Windows в C# и Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic)|Описание процесса создания среда выполнения Windows компонента с помощью .NET Framework, объясняется, как использовать его как часть приложения Магазина Windows 8. x, созданного для Windows с помощью JavaScript, и описывается отладка сочетания с Visual Studio. (В Центре разработки для Windows.)|
 |[Справочные материалы по среде выполнения Windows](/uwp/api/)|Справочная документация по среда выполнения Windows. (В Центре разработки для Windows.)|
 |[Передача URI в среду выполнения Windows](passing-a-uri-to-the-windows-runtime.md)|В этой статье описывается проблема, которая может возникнуть при передаче URI из управляемого кода в среда выполнения Windows и о том, как ее избежать.|

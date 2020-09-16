@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - CLR ETW events, logging
 ms.assetid: ce13088e-3095-4f0e-9f6b-fad30bbd3d41
-ms.openlocfilehash: 45d9244eb11b914fd203f24057e1b65c6bef18c2
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: bce5ea41149dc3b19106031fae202872dd8a8fb5
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309590"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553809"
 ---
 # <a name="controlling-net-framework-logging"></a>Контроль ведения журнала .NET Framework
 
@@ -18,7 +18,7 @@ ms.locfileid: "86309590"
 
 - Программы командной строки [Logman](/windows-server/administration/windows-commands/logman) и [Tracerpt](/windows-server/administration/windows-commands/tracerpt_1), входящие в состав операционной системы Windows.
 
-- Программы [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) в составе [набора средств для оценки производительности Windows](/windows-hardware/test/wpt/). Дополнительные сведения о программе Xperf см. в [блоге, посвященном производительности Windows](https://docs.microsoft.com/archive/blogs/pigscanfly/).
+- Программы [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) в составе [набора средств для оценки производительности Windows](/windows-hardware/test/wpt/). Дополнительные сведения о программе Xperf см. в [блоге, посвященном производительности Windows](/archive/blogs/pigscanfly/).
 
 Для регистрации событий среды CLR на компьютере должен быть установлен поставщик среды CLR. Чтобы проверить, установлен ли этот поставщик, введите в командной строке `logman query providers`. Откроется список поставщиков. В этом списке должна находиться следующая запись для поставщика среды CLR.
 
@@ -50,7 +50,7 @@ Provider                                 GUID
 
      `logman start clrevents -p {e13c0d23-ccbc-4e12-931b-d9cc2eee27e4} 0x1CCBD 0x5 -ets -ct perf`
 
-     Здесь:
+     где:
 
     - Параметр `-p` задает GUID поставщика.
 
@@ -110,7 +110,7 @@ Provider                                 GUID
 
      Эта команда XPerf помещает события в дамп в виде файла с разделителями-запятыми (CSV-файл), который впоследствии можно просмотреть. Поскольку у разных событий поля разные, этот CSV-файл содержит несколько строк заголовков, расположенных перед данными. Первое поле каждой строки является типом события с указанием заголовка, который должен использоваться для определения остальных полей.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Набор средств для оценки производительности Windows](/windows-hardware/test/wpt/)
 - [События в среде CLR (трассировка событий Windows)](etw-events-in-the-common-language-runtime.md)

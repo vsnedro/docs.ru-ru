@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Portable Class Library [.NET Framework], and MVVM
 - MVVM, and Portable Class Library
 ms.assetid: 41a0b9f8-15a2-431a-bc35-e310b2953b03
-ms.openlocfilehash: ff34b295ba443088115d470d8ade0c986ac1d856
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2baa2aaa32c4138eee0932e5c46c2b52482007cd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288853"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547562"
 ---
 # <a name="using-portable-class-library-with-model-view-view-model"></a>Использование переносимой библиотеки классов с шаблоном "модель-представление-модель представления"
 Вы можете использовать .NET Framework [переносимую библиотеку классов](cross-platform-development-with-the-portable-class-library.md) для реализации шаблона модели представления "модель-представление-представление" (MVVM) и совместного использования сборок на нескольких платформах.
@@ -25,7 +25,7 @@ ms.locfileid: "84288853"
 
  ![Показывает переносимую библиотеку классов с MVVM совместной работой сборок на разных платформах.](./media/using-portable-class-library-with-model-view-view-model/mvvm-share-assemblies-across-platforms.png)
 
- В этом разделе не приведены общие сведения о шаблоне MVVM. Он содержит только сведения об использовании переносимой библиотеки классов для реализации MVVM. Дополнительные сведения о MVVM см. в [кратком руководстве по MVVM с использованием библиотеки Prism 5,0 для WPF](https://docs.microsoft.com/previous-versions/msp-n-p/gg430857(v=pandp.40)).
+ В этом разделе не приведены общие сведения о шаблоне MVVM. Он содержит только сведения об использовании переносимой библиотеки классов для реализации MVVM. Дополнительные сведения о MVVM см. в [кратком руководстве по MVVM с использованием библиотеки Prism 5,0 для WPF](/previous-versions/msp-n-p/gg430857(v=pandp.40)).
 
 ## <a name="classes-that-support-mvvm"></a>Классы, поддерживающие MVVM
  Если вы используете .NET Framework 4,5, .NET для приложений Магазина Windows 8. x, Silverlight или Windows Phone 7,5 для проекта переносимой библиотеки классов, для реализации шаблона MVVM доступны следующие классы:
@@ -57,7 +57,7 @@ ms.locfileid: "84288853"
 
  После компиляции модели и проектов модели представления вы ссылаетесь на эти сборки в приложении, которое содержит представление. Если представление взаимодействует только с моделью представления, необходимо ссылаться только на сборку, содержащую модель представления.
 
-### <a name="model"></a>Модель
+### <a name="model"></a>Моделирование
  В следующем примере показан упрощенный класс модели, который может находиться в проекте переносимой библиотеки классов.
 
  [!code-csharp[PortableClassLibraryMVVM#1](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/customer.cs#1)]

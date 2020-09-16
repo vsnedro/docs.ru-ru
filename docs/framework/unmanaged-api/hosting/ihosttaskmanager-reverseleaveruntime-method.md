@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4837d398-16a1-4e32-902c-022cd1aad3ca
 topic_type:
 - apiref
-ms.openlocfilehash: d328afcba9761f686dd38bdb2dd651994faaac2a
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: ea352b189d65e0be6a2bbc81c19a03d1edd8143d
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83841871"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554805"
 ---
 # <a name="ihosttaskmanagerreverseleaveruntime-method"></a>Метод IHostTaskManager::ReverseLeaveRuntime
 Уведомляет узел, что элемент управления выходит из среды CLR и вводит неуправляемую функцию, которая, в свою очередь, вызывается из управляемого кода.  
@@ -33,9 +33,9 @@ HRESULT ReverseLeaveRuntime ();
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`ReverseLeaveRuntime`успешно возвращено.|  
+|S_OK|`ReverseLeaveRuntime` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -51,11 +51,11 @@ HRESULT ReverseLeaveRuntime ();
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Метод CallNeedsHostHook](ihosttaskmanager-callneedshosthook-method.md)
 - [Метод EnterRuntime](ihosttaskmanager-enterruntime-method.md)
@@ -64,4 +64,4 @@ HRESULT ReverseLeaveRuntime ();
 - [Интерфейс IHostTask](ihosttask-interface.md)
 - [Интерфейс IHostTaskManager](ihosttaskmanager-interface.md)
 - [Метод LeaveRuntime](ihosttaskmanager-leaveruntime-method.md)
-- [Более подробное рассмотрение вызова неуправляемого кода](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0h9e9t7d(v=vs.100))
+- [Подробный обзор вызова неуправляемого кода](/previous-versions/dotnet/netframework-4.0/0h9e9t7d(v=vs.100))

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Web services protocols
 - Windows Communication Foundation, Web service protocols
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
-ms.openlocfilehash: 0b901be2d90a70b4a44fdafb5005f9dc7fb9d556
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c468dc3992b61ce09485ed19da1f2edb3c761525
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594911"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547425"
 ---
 # <a name="web-services-protocols-supported-by-system-provided-interoperability-bindings"></a>Протоколы веб-служб, поддерживаемые предоставляемыми системой привязками
 Windows Communication Foundation (WCF) создается для взаимодействия с веб-службами, поддерживающими набор спецификаций, известных как спецификации веб-служб. Чтобы упростить конфигурацию службы для рекомендаций по взаимодействию, WCF вводит три взаимодействующих привязки, предоставляемых системой: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType> , <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType> и <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType> . Для взаимодействия с Организацией в целях улучшения стандартов структурированных информационных стандартов (OASIS) в WCF входит одна взаимодействующая система, предоставляемая системой: <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType> . Для публикации метаданных WCF включает две взаимодействующие привязки, предоставляемые системой: [\<mexHttpBinding>](../../configure-apps/file-schema/wcf/mexhttpbinding.md) и [\<mexHttpsBinding>](../../configure-apps/file-schema/wcf/mexhttpsbinding.md) . В этом разделе перечислены спецификации, поддерживаемые предоставляемыми системой привязками с возможностью взаимодействия.  
@@ -58,7 +58,7 @@ Windows Communication Foundation (WCF) создается для взаимод�
 |Безопасность|WS-Trust|[WS-Trust](http://specs.xmlsoap.org/ws/2005/02/trust/ws-trust.pdf)<br /><br /> Используется в спецификации WS-SecureConversation (см. выше).|  
 |Надежный обмен сообщениями|WS-ReliableMessaging|[WS-ReliableMessaging](http://specs.xmlsoap.org/ws/2005/02/rm/ws-reliablemessaging.pdf)<br /><br /> Используется, когда привязка настроена на использование свойства `reliableSession`.<br /><br /> `<wsHttpBinding>  <binding name="myBinding">    <reliableSession/>   </binding> </wsHttpBinding>`|  
 |Transactions|WS-AtomicTransaction|[WS-AtomicTransaction](http://specs.xmlsoap.org/ws/2004/10/wsat/wsat.pdf)<br /><br /> Используется для обмена данными между диспетчерами транзакций. Клиенты и службы WCF всегда используют локальные диспетчеры транзакций.|  
-|Transactions|WS-Coordination|[WS-Coordination](https://docs.microsoft.com/previous-versions/ms951231(v=msdn.10))<br /><br /> Используется для передачи контекста транзакций, когда атрибуту `flowTransactions` присвоено значение Allowed или Required.<br /><br /> `<wsHttpBinding>   <binding transactionFlow="true"/> </wsHttpBinding>`|  
+|Transactions|WS-Coordination|[WS-Coordination](/previous-versions/ms951231(v=msdn.10))<br /><br /> Используется для передачи контекста транзакций, когда атрибуту `flowTransactions` присвоено значение Allowed или Required.<br /><br /> `<wsHttpBinding>   <binding transactionFlow="true"/> </wsHttpBinding>`|  
   
 ## <a name="wsfederationhttpbinding-and-ws2007federationhttpbinding"></a>wsFederationHttpBinding и ws2007FederationHttpBinding  
  [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)Элементы и [\<ws2007FederationHttpBinding>](../../configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) введены для поддержки федеративных сценариев, когда третья сторона выдает маркер, используемый для проверки подлинности клиента. В дополнение к протоколам, используемым привязкой `wsHttpBinding`, привязка `wsFederationHttpBinding` позволяет использовать следующие спецификации:  
@@ -99,7 +99,7 @@ Windows Communication Foundation (WCF) создается для взаимод�
 |Метаданные|WS-MetadataExchange|[WS-MetadataExchange](http://specs.xmlsoap.org/ws/2004/09/mex/WS-MetadataExchange.pdf)<br /><br /> WCF реализует WS-MetadataExchange для получения схемы XML, WSDL и WS-Policy.|  
   
 ### <a name="mexhttpsbinding"></a>mexHttpsBinding  
- [\<mexHttpsBinding>](../../configure-apps/file-schema/wcf/mexhttpsbinding.md)поддерживает следующие протоколы. Дополнительные сведения об использовании этой привязки см. в разделе [Публикация метаданных](publishing-metadata.md).  
+ [\<mexHttpsBinding>](../../configure-apps/file-schema/wcf/mexhttpsbinding.md) поддерживает следующие протоколы. Дополнительные сведения об использовании этой привязки см. в разделе [Публикация метаданных](publishing-metadata.md).  
   
 |Категория|Протокол|Спецификация и использование|  
 |--------------|--------------|-----------------------------|  
@@ -108,7 +108,7 @@ Windows Communication Foundation (WCF) создается для взаимод�
 |Обмен сообщениями|WS-Addressing 2005/08|[Web Services Addressing 1.0 - Core](https://www.w3.org/TR/ws-addr-core/)<br /><br /> [Web Services Addressing 1.0 - SOAP](https://www.w3.org/TR/ws-addr-soap/)|  
 |Метаданные|WS-MetadataExchange|[WS-MetadataExchange](http://specs.xmlsoap.org/ws/2004/09/mex/WS-MetadataExchange.pdf)<br /><br /> WCF реализует WS-MetadataExchange для получения схемы XML, WSDL и WS-Policy.|  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Привязки, предоставляемые системой](../system-provided-bindings.md)
 - [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md)

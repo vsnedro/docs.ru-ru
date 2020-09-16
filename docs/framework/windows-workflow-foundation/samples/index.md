@@ -3,21 +3,21 @@ title: Образец документации по Windows Workflow (WF)
 description: Вы можете скачать примеры рабочих процессов Windows, чтобы узнать о различных аспектах Windows Workflow Foundation, включая примеры приложений, Basic и сценариев.
 ms.date: 09/24/2018
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
-ms.openlocfilehash: ba2ac23947737480d32f7447ca08cb4d8035a890
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 35e76904e5d6324760a0795b973a460651ef2b76
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421388"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553965"
 ---
 # <a name="windows-workflow-wf-samples"></a>Образцы Windows Workflow (WF)
 
 Вы можете [скачать примеры рабочих процессов Windows](https://www.microsoft.com/download/details.aspx?id=21459) , содержащие инструкции по различным аспектам Windows Workflow Foundation (WF).
 
-В статьях этого раздела описываются некоторые примеры в загружаемом пакете. Полный набор документации, охватывающий все примеры, см. в разделе [.NET Framework 4 примеров WF](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd483375(v%3dvs.100)) .
+В статьях этого раздела описываются некоторые примеры в загружаемом пакете. Полный набор документации, охватывающий все примеры, см. в разделе [.NET Framework 4 примеров WF](/previous-versions/dotnet/netframework-4.0/dd483375(v=vs.100)) .
 
 > [!NOTE]
-> Загружаемые образцы были созданы с помощью Visual Studio 2010 и .NET Framework 4, но совместимы с более поздними версиями Visual Studio и .NET Framework. Дополнительные примеры для Windows Workflow Foundation в [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] можно найти в [статье примеры кода MSDN](https://aka.ms/WF45Samples).
+> Загружаемые образцы были созданы с помощью Visual Studio 2010 и .NET Framework 4, но совместимы с более поздними версиями Visual Studio и .NET Framework. Дополнительные примеры для Windows Workflow Foundation в [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] можно найти в [статье примеры кода MSDN](/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="in-this-section"></a>Содержание раздела
 

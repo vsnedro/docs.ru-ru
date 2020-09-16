@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a16e4a4d-6a5b-45db-8635-19570e4572ae
-ms.openlocfilehash: b790c87cc3ec293c18bf730567f92b490c7c6594
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 0c7c89a9104ac72bf03f2900e7ca474b709be40c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286719"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554466"
 ---
 # <a name="obtaining-a-dbproviderfactory"></a>Получение класса DbProviderFactory
 Процесс получения <xref:System.Data.Common.DbProviderFactory> состоит из передачи сведений о поставщике данных классу <xref:System.Data.Common.DbProviderFactories>. На основе этих сведений метод <xref:System.Data.Common.DbProviderFactories.GetFactory%2A> создает строго типизированную фабрику поставщика. Например, чтобы создать фабрику <xref:System.Data.SqlClient.SqlClientFactory>, можно передать методу `GetFactory` строку с именем поставщика, указанным в формате «System.Data.SqlClient». Другая перегрузка метода `GetFactory` принимает <xref:System.Data.DataRow>. После создания фабрики поставщика можно использовать ее методы для создания дополнительных объектов. К методам фабрики `SqlClientFactory` относятся <xref:System.Data.SqlClient.SqlClientFactory.CreateConnection%2A>, <xref:System.Data.SqlClient.SqlClientFactory.CreateCommand%2A> и <xref:System.Data.SqlClient.SqlClientFactory.CreateDataAdapter%2A>.  
@@ -20,7 +20,7 @@ ms.locfileid: "84286719"
 > Классы .NET Framework <xref:System.Data.OracleClient.OracleClientFactory>, <xref:System.Data.Odbc.OdbcFactory> и <xref:System.Data.OleDb.OleDbFactory> также предоставляют похожие возможности.  
   
 ## <a name="registering-dbproviderfactories"></a>Регистрация фабрик DbProviderFactory  
- Каждый поставщик данных .NET Framework, поддерживающий класс на основе фабрики, регистрирует сведения о конфигурации в разделе **дбпровидерфакториес** файла **Machine. config** на локальном компьютере. В следующем фрагменте файла конфигурации показан синтаксис и формат для <xref:System.Data.SqlClient>.  
+ Каждый поставщик данных .NET Framework, поддерживающий класс на основе фабрики, регистрирует сведения о конфигурации в разделе **дбпровидерфакториес** файла **machine.config** на локальном компьютере. В следующем фрагменте файла конфигурации показан синтаксис и формат для <xref:System.Data.SqlClient>.  
   
 ```xml  
 <system.data>  
@@ -56,7 +56,7 @@ ms.locfileid: "84286719"
  [!code-vb[DataWorks DbProviderFactories#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DbProviderFactories/VB/source.vb#1)]  
   
 ## <a name="using-application-configuration-files-to-store-factory-information"></a>Использование файлов конфигурации приложений для хранения сведений о фабрике  
- Шаблон разработки, используемый для работы с фабриками, предполагает хранение сведений о поставщике и строке подключения в файле конфигурации приложения, например **app. config** для приложения Windows, и **Web. config** для приложения ASP.NET.  
+ Шаблон разработки, используемый для работы с фабриками, влечет за собой хранение сведений о поставщике и строке подключения в файле конфигурации приложения, например **app.config** для приложения Windows, и **web.config** для приложения ASP.NET.  
   
  В следующем фрагменте файла конфигурации демонстрируется, как сохранять две именованные строки соединения «NorthwindSQL» для соединения с базой данных Northwind в SQL Server и «NorthwindAccess» для соединения с базой данных Northwind в Access/Jet. **Инвариантное** имя используется для атрибута **providerName** .  
   
@@ -100,5 +100,5 @@ ms.locfileid: "84286719"
 
 - [DbProviderFactories](dbproviderfactories.md)
 - [Строки подключения](connection-strings.md)
-- [Использование классов конфигурации](https://docs.microsoft.com/previous-versions/aspnet/ms228063(v=vs.100))
+- [Использование классов конфигурации](/previous-versions/aspnet/ms228063(v=vs.100))
 - [Общие сведения об ADO.NET](ado-net-overview.md)

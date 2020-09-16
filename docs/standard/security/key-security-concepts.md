@@ -11,19 +11,19 @@ helpviewer_keywords:
 - permissions [.NET]
 - security [.NET], about security
 ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
-ms.openlocfilehash: 259723b903377f7e79731e1ff79b3d512581102f
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 5dedf6df8e6cf2cf886e68cc132a44abfb201c49
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555271"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554401"
 ---
 # <a name="key-security-concepts"></a>Основные понятия безопасности
 
 > [!NOTE]
 > Эта статья относится к Windows.
 >
-> Дополнительные сведения о ASP.NET Core см. в разделе [Обзор безопасности ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/).
+> Дополнительные сведения о ASP.NET Core см. в разделе [Обзор безопасности ASP.NET Core](/aspnet/core/security/).
 
 .NET предлагает безопасность на основе ролей для решения проблем безопасности в мобильном коде и предоставления поддержки, позволяющей компонентам определять, какие пользователи имеют право выполнять действия.  
   
@@ -75,6 +75,6 @@ ms.locfileid: "87555271"
 
 Авторизация — это процесс определения, разрешено ли участнику выполнять запрошенное действие. Авторизация происходит после проверки подлинности и использует сведения об удостоверении и ролях участника, чтобы определить, к каким ресурсам имеет доступ этот участник. Для реализации авторизации можно использовать безопасность на основе ролей в .NET.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность ASP.NET Core](/aspnet/core/security/)

@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
-ms.openlocfilehash: 2d4c513b7a4b0e111f2b7e7384c6ee4970d5665f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2be58251c767c937e817edf1ba19309f0c62ac33
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287003"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554740"
 ---
 # <a name="net-framework-data-providers"></a>Поставщики данных .NET Framework
 Поставщик данных .NET Framework используется для подключения к базе данных, исполнения команд и получения результатов. Эти результаты обрабатываются непосредственно, помещаются в <xref:System.Data.DataSet> , чтобы по мере необходимости они были доступны для пользователей вместе с данными из нескольких источников, либо распределяются между уровнями. .NET Framework поставщики данных являются облегченными, создавая минимальный уровень между источником данных и кодом, повышая производительность без ущерба для функциональности.  
@@ -25,7 +25,7 @@ ms.locfileid: "84287003"
 |Поставщик данных .NET Framework для ODBC|Для источников данных ODBC. Использует пространство имен <xref:System.Data.Odbc> .|  
 |Поставщик данных .NET Framework для Oracle|Для источников данных Oracle. Поставщик данных .NET Framework для Oracle поддерживает клиентское программное обеспечение Oracle версии 8.1.7 и более поздних версий, а также использует <xref:System.Data.OracleClient> пространство имен.|  
 |EntityClient - поставщик|Предоставляет доступ к данным для приложений модели EDM (Entity Data Model). Использует пространство имен <xref:System.Data.EntityClient> .|  
-|Поставщик данных .NET Framework для SQL Server Compact 4,0.|Предоставляет доступ к данным для Microsoft SQL Server Compact 4,0. Использует пространство имен [System.Data.SqlServerCe](https://docs.microsoft.com/previous-versions/sql/compact/sql-server-compact-4.0/ec4st0e3(v=vs.100)) .|  
+|Поставщик данных .NET Framework для SQL Server Compact 4,0.|Предоставляет доступ к данным для Microsoft SQL Server Compact 4,0. Использует пространство имен [System.Data.SqlServerCe](/previous-versions/sql/compact/sql-server-compact-4.0/ec4st0e3(v=vs.100)) .|  
   
 ## <a name="core-objects-of-net-framework-data-providers"></a>Основные объекты поставщиков данных .NET Framework  
  В следующей таблице приведены четыре основных объекта, которые составляют поставщик данных .NET Framework.  

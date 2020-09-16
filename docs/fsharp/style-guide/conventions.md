@@ -2,12 +2,12 @@
 title: Соглашения о написании кода на F#
 description: 'Ознакомьтесь с общими правилами и идиомами при написании кода на F #.'
 ms.date: 01/15/2020
-ms.openlocfilehash: 748a9c26794f46dcc67fdcfcf21f41847a462a19
-ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
+ms.openlocfilehash: 8c7fedf429ecba6e01b26f37972ffa4eeba6d8af
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89053015"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554030"
 ---
 # <a name="f-coding-conventions"></a>Соглашения о написании кода на F#
 
@@ -209,7 +209,7 @@ let handleWithdrawal amount =
 
 Основные конструкции, доступные в F #, в целях создания исключений следует учитывать в следующем порядке предпочтения:
 
-| Компонент | Синтаксис | Цель |
+| Функция | Синтаксис | Назначение |
 |----------|--------|---------|
 | `nullArg` | `nullArg "argumentName"` | Вызывает объект `System.ArgumentNullException` с указанным именем аргумента. |
 | `invalidArg` | `invalidArg "argumentName" "message"` | Создает объект `System.ArgumentException` с указанным именем аргумента и сообщением. |
@@ -703,7 +703,7 @@ F # обеспечивает полную поддержку объектов и
 
 ## <a name="consider-type-abbreviations-to-shorten-signatures"></a>Рекомендуется использовать сокращения типов для сокращения сигнатур
 
-[Аббревиатуры типов](../language-reference/type-abbreviations.md) — это удобный способ назначения метки другому типу, например сигнатуре функции или более сложному типу. Например, следующий псевдоним назначает метку, необходимую для определения вычислений с помощью [CNTK](https://docs.microsoft.com/cognitive-toolkit/), библиотеки глубокого обучения:
+[Аббревиатуры типов](../language-reference/type-abbreviations.md) — это удобный способ назначения метки другому типу, например сигнатуре функции или более сложному типу. Например, следующий псевдоним назначает метку, необходимую для определения вычислений с помощью [CNTK](/cognitive-toolkit/), библиотеки глубокого обучения:
 
 ```fsharp
 open CNTK

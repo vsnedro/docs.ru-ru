@@ -2,32 +2,32 @@
 title: Примеры
 ms.date: 03/30/2017
 ms.assetid: 3fcc0c4a-b952-4cfe-9e09-0c0cf874ba2c
-ms.openlocfilehash: f76984051fe86f209ee23799df2c533c3f55d6ea
-ms.sourcegitcommit: 515469828d0f040e01bde01df6b8e4eb43630b06
+ms.openlocfilehash: 3580163912953407868ffbb1b990e92380bb24c4
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78848799"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553887"
 ---
 # <a name="samples"></a>Примеры
-В этой теме содержатся ссылки на [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] решения Visual Basic и C,, содержащие пример кода.  
+В этом разделе приводятся ссылки на Visual Basic и решения C#, содержащие [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] пример кода.  
   
 ## <a name="in-this-section"></a>в этом разделе  
- Визуальная базовая версия решения Sample-запросы  
+ Visual Basic версия решения Самплекуериес  
  [Примеры запросов (Visual Basic)](../../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
  Версия C# решения SampleQueries  
- [Примеры запросов](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb397972(v=vs.90))  
+ [Примеры запросов](/previous-versions/visualstudio/visual-studio-2008/bb397972(v=vs.90))  
   
  Для поиска дополнительных примеров кода и приложений [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] выполните следующие действия.  
   
-- Поиск конкретных проблем в документах Майкрософт.  
+- Поиск конкретных проблем на Документация Майкрософт.  
   
-- Участвуйте в [форуме LIN's,](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql)где вы можете подробно обсудить более сложные темы с экспертами.  
+- Примите участие в [форуме LINQ](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), где вы сможете обсуждать более сложные темы подробно с экспертами.  
   
-- Изучите информационный [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] документ, в который подробно описана технология, в комплекте с примерами Visual Basic и c-кода. Для получения дополнительной информации [см.](https://docs.microsoft.com/previous-versions/dotnet/articles/bb425822(v=msdn.10))  
+- Изучите технический документ с описанием [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] технологий, а также примеры кода для Visual Basic и C#. Дополнительные сведения см. в разделе [LINQ to SQL: интегрированный в язык .NET запрос для реляционных данных](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to SQL](index.md)
-- [Пошаговые руководства LINQ to SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb386295(v=vs.90))
+- [Пошаговые руководства LINQ to SQL](/previous-versions/visualstudio/visual-studio-2008/bb386295(v=vs.90))

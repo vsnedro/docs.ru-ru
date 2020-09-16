@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
 topic_type:
 - apiref
-ms.openlocfilehash: 4f05eb2e6ef31cf1993a623c38bb177f7e3c297e
-ms.sourcegitcommit: 7e2128d4a4c45b4274bea3b8e5760d4694569ca1
+ms.openlocfilehash: 4c630f5f7e3dc66ce44f10cd69fcd108226b0250
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75935650"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554336"
 ---
 # <a name="gettypelibinfo-function"></a>Функция GetTypeLibInfo
 Возвращает сведения о указанной библиотеке типов, изучая ее структуру [тлибаттр](/windows/win32/api/oaidl/ns-oaidl-tlibattr) .  
@@ -56,10 +56,10 @@ HRESULT GetTypeLibInfo(
  `pTypeLibMinorVer`  
  заполняет Дополнительный номер версии библиотеки типов. Например, для версии *x. y*дополнительный номер версии — *y*.  
   
-## <a name="remarks"></a>Заметки  
- Функция `GetTypeLibInfo` вызывается программой [Tlbexp. exe (программа экспорта библиотек типов)](../../tools/tlbexp-exe-type-library-exporter.md). Это средство создает библиотеку типов, описывающую типы в сборке среды CLR.  
+## <a name="remarks"></a>Примечания  
+ `GetTypeLibInfo`Функция вызывается [Tlbexp.exe (программа экспорта библиотек типов)](../../tools/tlbexp-exe-type-library-exporter.md). Это средство создает библиотеку типов, описывающую типы в сборке среды CLR.  
   
- Если какой-либо из параметров имеет значение null, функция возвращает `HRESULT` `E_POINTER`. В противном случае она возвращает `S_OK`.  
+ Если какой-либо из параметров имеет значение null, функция возвращает объект `HRESULT` `E_POINTER` . В противном случае возвращается значение `S_OK`.  
   
 ## <a name="requirements"></a>Требования  
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
@@ -68,9 +68,9 @@ HRESULT GetTypeLibInfo(
   
  **Библиотека:** Тлбреф. lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Вспомогательные функции Tlbexp](index.md)
-- [Функция Лоадтипелибекс](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+- [Функция Лоадтипелибекс](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

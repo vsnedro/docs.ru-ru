@@ -7,12 +7,12 @@ helpviewer_keywords:
 - data access [.NET Framework], about .NET Framework data access
 - data [.NET Framework], accessing
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
-ms.openlocfilehash: 654f6f37e40d5df76910a7de7c5de4ffa2787b58
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 0bf02eb56c042361c973d410b1f21e2ef92dd9f9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141840"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553848"
 ---
 # <a name="data-and-modeling-in-net"></a>Данные и моделирование в .NET
 
@@ -40,5 +40,5 @@ ms.locfileid: "85141840"
  [XML-документы и данные](../../standard/data/xml/index.md)  
  Здесь приводится обзор обширного и встроенного набора классов, предназначенных для работы с XML-документами и данными в .NET Framework.  
   
- [Справочник по стандартам XML](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256177(v=vs.100))  
- Справочная информация об основанных на XML стандартах, поддерживаемых корпорацией Майкрософт.  
+ [Справочник по стандартам XML](/previous-versions/dotnet/netframework-4.0/ms256177(v=vs.100))  
+ Справочная информация об основанных на XML стандартах, поддерживаемых корпорацией Майкрософт.

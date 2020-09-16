@@ -2,16 +2,16 @@
 title: Интеграция транзакционных компонентов служб Enterprise Services
 ms.date: 03/30/2017
 ms.assetid: 05dab277-b8b2-48cf-b40c-826be128b175
-ms.openlocfilehash: 1c4fabfadb113c79b216fa10ff80b551ba0f9716
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3fd8876de53be30f18e4fa9d7f4a1cc07ab5e220
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596855"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554108"
 ---
 # <a name="integrating-enterprise-services-transactional-components"></a>Интеграция транзакционных компонентов служб Enterprise Services
 
-Windows Communication Foundation (WCF) предоставляет автоматический механизм интеграции с корпоративными службами (см. раздел [Интеграция с приложениями COM+](integrating-with-com-plus-applications.md)). Однако для разработки служб, которые внутренне используют транзакционные компоненты, размещенные внутри служб Enterprise Services, может потребоваться гибкость. Поскольку функции транзакций WCF основаны на <xref:System.Transactions> инфраструктуре, процесс интеграции корпоративных служб с WCF идентичен тому, что позволяет указывать взаимодействие между <xref:System.Transactions> и службами Enterprise Services, как описано в области [взаимодействия с корпоративными службами и транзакциями com+](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms229974(v=vs.85)).  
+Windows Communication Foundation (WCF) предоставляет автоматический механизм интеграции с корпоративными службами (см. раздел [Интеграция с приложениями COM+](integrating-with-com-plus-applications.md)). Однако для разработки служб, которые внутренне используют транзакционные компоненты, размещенные внутри служб Enterprise Services, может потребоваться гибкость. Поскольку функции транзакций WCF основаны на <xref:System.Transactions> инфраструктуре, процесс интеграции корпоративных служб с WCF идентичен тому, что позволяет указывать взаимодействие между <xref:System.Transactions> и службами Enterprise Services, как описано в области [взаимодействия с корпоративными службами и транзакциями com+](/previous-versions/dotnet/netframework-3.0/ms229974(v=vs.85)).  
   
  Чтобы обеспечить требуемый уровень взаимодействия между входящей поточной транзакцией и транзакцией контекста COM+, реализация службы должна создать экземпляр <xref:System.Transactions.TransactionScope> и использовать соответствующее значение из перечисления <xref:System.Transactions.EnterpriseServicesInteropOption>.  
   
@@ -93,7 +93,7 @@ static void Main()
 }  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интеграция с приложениями COM+](integrating-with-com-plus-applications.md)
 - [Интеграция с приложениями COM](integrating-with-com-applications.md)

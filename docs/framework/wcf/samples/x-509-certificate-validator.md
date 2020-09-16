@@ -2,12 +2,12 @@
 title: Проверяющий элемент управления для сертификатов X.509
 ms.date: 03/30/2017
 ms.assetid: 3b042379-02c4-4395-b927-e57c842fd3e0
-ms.openlocfilehash: 32d99b93ef014967aa04bc70f73fbd2ebcfe2c60
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2d117dda8e6748407b6d58677ec55e4e8e4e4740
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594833"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554245"
 ---
 # <a name="x509-certificate-validator"></a>Проверяющий элемент управления для сертификатов X.509
 
@@ -311,16 +311,16 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 
 #### <a name="to-run-the-sample-on-the-same-computer"></a>Запуск образца на одном компьютере
 
-1. Запустите setup. bat из папки образца установки в командной строке Visual Studio 2012, открытой с правами администратора. При этом устанавливаются все сертификаты, необходимые для выполнения образца.
+1. Запустите Setup.bat из папки примера установки в командной строке Visual Studio 2012, открытой с правами администратора. При этом устанавливаются все сертификаты, необходимые для выполнения образца.
 
     > [!IMPORTANT]
-    > Пакетный файл Setup. bat предназначен для запуска из командной строки Visual Studio 2012. Переменная среды PATH, заданная в командной строке Visual Studio 2012, указывает на каталог, содержащий исполняемые файлы, необходимые для сценария Setup. bat.
+    > Пакетный файл Setup.bat предназначен для запуска из командной строки Visual Studio 2012. Переменная среды PATH, заданная в командной строке Visual Studio 2012, указывает на каталог, содержащий исполняемые файлы, необходимые для скрипта Setup.bat.
 
 2. Запустите программу Service.exe из папки service\bin.
 
 3. Запустите программу Client.exe из каталога \client\bin. Действия клиента отображаются в консольном приложении клиента.
 
-4. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+4. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 #### <a name="to-run-the-sample-across-computers"></a>Запуск образца на нескольких компьютерах
 
@@ -334,7 +334,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 
 5. На сервере запустите `setup.bat service` в Командная строка разработчика для Visual Studio, открытой с правами администратора. `setup.bat`При запуске с `service` аргументом создается сертификат службы с полным доменным именем компьютера и экспортируется сертификат службы в файл с именем Service. cer.
 
-6. Измените файл Service. exe. config, чтобы он отражал новое имя сертификата (в `findValue` атрибуте [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) ), совпадающее с полным доменным именем компьютера. Также измените имя компьютера в \<service> / \<baseAddresses> элементе с localhost на полное имя компьютера службы.
+6. Измените Service.exe.config, чтобы отразить новое имя сертификата (в `findValue` атрибуте в [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) ), совпадающее с полным доменным именем компьютера. Также измените имя компьютера в \<service> / \<baseAddresses> элементе с localhost на полное имя компьютера службы.
 
 7. Скопируйте файл Service.cer из каталога службы в клиентский каталог на клиентском компьютере.
 
@@ -344,13 +344,13 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
 
 10. Скопируйте файл Client.cer из клиентского каталога в каталог службы на сервере.
 
-11. На клиенте запустите Импортсервицецерт. bat в Командная строка разработчика для Visual Studio, открытой с правами администратора. Он импортирует сертификат службы из файла Service.cer в хранилище CurrentUser - TrustedPeople.
+11. На клиенте запустите ImportServiceCert.bat в Командная строка разработчика для Visual Studio, открытой с правами администратора. Он импортирует сертификат службы из файла Service.cer в хранилище CurrentUser - TrustedPeople.
 
-12. На сервере запустите Импортклиентцерт. bat в Командная строка разработчика для Visual Studio, открытой с правами администратора. При этом импортируется сертификат клиента из файла Client.cer в хранилище «LocalMachine - TrustedPeople».
+12. На сервере запустите ImportClientCert.bat в Командная строка разработчика для Visual Studio, открытой с правами администратора. При этом импортируется сертификат клиента из файла Client.cer в хранилище «LocalMachine - TrustedPeople».
 
 13. На сервере запустите из окна командной строки программу Service.exe.
 
-14. На клиентском компьютере из окна командной строки запустите программу Client.exe. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+14. На клиентском компьютере из окна командной строки запустите программу Client.exe. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 #### <a name="to-clean-up-after-the-sample"></a>Очистка после образца
 
