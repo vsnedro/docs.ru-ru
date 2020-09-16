@@ -15,15 +15,15 @@ topic_type:
 - apiref
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 8fc5f1a488826d8adc6aecb8ef122609bebbe813
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1b1d6ad5d465d746f4c1a9400c43613591373322
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79177100"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90546950"
 ---
 # <a name="cor_prf_rejit_flags-enumeration"></a>Перечисление COR_PRF_REJIT_FLAGS
-Содержит значения, указывающие на то, как должен вести себя [API ICorProfilerInfo10::RequestReJITInliners](icorprofilerinfo10-requestrejitwithinliners-method.md) API.  
+Содержит значения, указывающие поведение API [ICorProfilerInfo10:: рекуестрежитвисинлинерс](icorprofilerinfo10-requestrejitwithinliners-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,22 +35,22 @@ typedef enum
 } COR_PRF_REJIT_FLAGS;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Участник|Описание|  
 |------------|-----------------|  
-|`COR_PRF_REJIT_BLOCK_INLINING`| Методы ReJITted будут заблокированы от встроенного в другие методы. |  
-|`COR_PRF_REJIT_INLINING_CALLBACKS`| Получайте `GetFunctionParameters` обратные вызовы для любых методов, которые встраиваем в строку запрошенные методы, которые должны быть reJITted. |  
+|`COR_PRF_REJIT_BLOCK_INLINING`| Методы Режиттед будут заблокированы из встроенных в другие методы. |  
+|`COR_PRF_REJIT_INLINING_CALLBACKS`| Получение `GetFunctionParameters` обратных вызовов для всех методов, которые подставляемые методы режиттед. |  
 
 ## <a name="requirements"></a>Требования  
- **Платформы:** Смотрите [операционные системы, поддерживаемые .NET Core.](../../../core/install/dependencies.md?pivots=os-windows)  
+ **Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+ **.NET Framework версии:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления профилирования](profiling-enumerations.md)

@@ -2,12 +2,12 @@
 title: <messageSenderAuthentication> - элемент
 ms.date: 03/30/2017
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
-ms.openlocfilehash: bab0e50d7feba3ea55d505be07cfa41427a5cbbc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 3693b2b4c6b6cbc3705a25967aedc88e36291407
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397790"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547015"
 ---
 # <a name="messagesenderauthentication-element"></a>Элемент \<messageSenderAuthentication>
 Задает параметры проверки подлинности для одноранговых отправителей сообщений.  
@@ -37,7 +37,7 @@ ms.locfileid: "70397790"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`customCertificateValidatorType`|Тип и сборка, используемые для проверки пользовательского типа. Этот атрибут должен быть задан, когда `certificateValidationMode` имеет значение `Custom`.|  
 |`certificateValidationMode`|Задает один из трех режимов для проверки учетных данных. Если свойству присвоено значение `Custom`, также необходимо указать свойство `customCertificateValidator`.|  
@@ -54,7 +54,7 @@ ms.locfileid: "70397790"
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|Перечисление|Необязательный параметр. Одно из следующих значений: `None`, `PeerTrust`, `ChainTrust`, `PeerOrChainTrust`, `Custom`. Значение по умолчанию — `ChainTrust`. Значение по умолчанию — `ChainTrust`.<br /><br /> Дополнительные сведения см. в разделе [Работа с сертификатами](../../../wcf/feature-details/working-with-certificates.md).|  
+|Перечисление|Необязательный элемент. Одно из следующих значений: `None`, `PeerTrust`, `ChainTrust`, `PeerOrChainTrust`, `Custom`. Значение по умолчанию — `ChainTrust`. Значение по умолчанию — `ChainTrust`.<br /><br /> Дополнительные сведения см. в разделе [Работа с сертификатами](../../../wcf/feature-details/working-with-certificates.md).|  
   
 ## <a name="revocationmode-attribute"></a>Атрибут revocationMode  
   
@@ -109,6 +109,6 @@ ms.locfileid: "70397790"
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
 - [Работа с сертификатами](../../../wcf/feature-details/working-with-certificates.md)
 - [Одноранговая сеть](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Проверка подлинности сообщений для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Пользовательской проверка подлинности для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Проверка подлинности сообщений для однорангового канала](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Пользовательской проверка подлинности для однорангового канала](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Защита приложений одноранговых каналов](../../../wcf/feature-details/securing-peer-channel-applications.md)

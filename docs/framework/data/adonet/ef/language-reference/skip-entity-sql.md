@@ -2,12 +2,12 @@
 title: SKIP (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec
-ms.openlocfilehash: 75140384823588b8f6785de00b0ab3cd17314a3f
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 68f54dc5118e09d78f98c687e8a44def43b45c7d
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319339"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540996"
 ---
 # <a name="skip-entity-sql"></a>SKIP (Entity SQL)
 
@@ -24,7 +24,7 @@ ms.locfileid: "72319339"
 `n` \
 Число элементов, которые нужно пропустить.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 Если в предложении ORDER BY есть вложенное предложение SKIP, то результаты будут отсортированы в соответствии со спецификацией сортировки, а результирующий набор будет включать строку или строки, начиная со строки, следующей непосредственно за значением выражения SKIP. Например, SKIP 5 пропустит первые пять строк и возвратит все, начиная с шестой.
 
@@ -38,11 +38,11 @@ ms.locfileid: "72319339"
 > SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L
 > ```
 
-Запрос [!INCLUDE[esql](../../../../../../includes/esql-md.md)] в статье « [инструкции. Просмотр результатов запроса](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) » использует оператор ORDER BY с ПАРАМЕТРом Skip, чтобы указать порядок сортировки, используемый для объектов, возвращаемых инструкцией SELECT.
+[!INCLUDE[esql](../../../../../../includes/esql-md.md)]Запрос в статье [инструкции по результатам запроса](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) использует оператор ORDER BY с параметром SKIP, чтобы указать порядок сортировки, используемый для объектов, возвращаемых инструкцией SELECT.
 
 ## <a name="see-also"></a>См. также
 
 - [ORDER BY](order-by-entity-sql.md)
-- [Пошаговое руководство. Просмотр результатов запроса](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [Практическое руководство. Разбивка на страницы результатов запроса](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
 - [Разбивка на страницы](paging-entity-sql.md)
-- [TOP](top-entity-sql.md)
+- [Вверх](top-entity-sql.md)

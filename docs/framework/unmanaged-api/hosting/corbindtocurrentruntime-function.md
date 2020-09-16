@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 6105c13e-d9cd-44d2-a95a-924e042830c7
 topic_type:
 - apiref
-ms.openlocfilehash: 4c015d77deb4e6ed3d43074f2903e26b687de84f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9c5d83b5f2ffb06c9fb14f715a3ea7ff12319086
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493569"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547835"
 ---
 # <a name="corbindtocurrentruntime-function"></a>Функция CorBindToCurrentRuntime
 Загружает среду CLR в процесс с использованием сведений о версии, хранящихся в XML-файле. Формат XML-файла моделируется после стандартного файла конфигурации приложения. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../configure-apps/file-schema/index.md).  
   
- Эта функция является устаревшей в .NET Framework 4. См. раздел [Загрузка среды CLR в процесс](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/01918c6x(v=vs.100)).  
+ Эта функция является устаревшей в .NET Framework 4. См. раздел [Загрузка среды CLR в процесс](/previous-versions/dotnet/netframework-4.0/01918c6x(v=vs.100)).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,7 +50,7 @@ HRESULT CorBindToCurrentRuntime (
  окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
- окне `IID`Запрашиваемый интерфейс. Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
+ окне `IID` Запрашиваемый интерфейс. Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
   
  `ppv`  
  заполняет Возвращаемый указатель интерфейса.  
@@ -60,7 +60,7 @@ HRESULT CorBindToCurrentRuntime (
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   

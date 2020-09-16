@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
-ms.openlocfilehash: b6134d4cbdff0c1adea704a7f3aaff7e40fd75ec
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 9b81f2f2fb6352af254146951ed35ad4fdca8caa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244768"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90545211"
 ---
 # <a name="transport-security-with-windows-authentication"></a>Безопасность транспорта с проверкой подлинности Windows
 В следующем сценарии показан клиент Windows Communication Foundation (WCF) и служба, защищенная системой безопасности Windows. Дополнительные сведения о программировании см. [в разделе как защитить службу с помощью учетных данных Windows](../how-to-secure-a-service-with-windows-credentials.md).  
@@ -22,12 +22,12 @@ ms.locfileid: "85244768"
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Транспортировка|  
+|Режим безопасности|Транспорт|  
 |Совместимость|Только WCF|  
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да (при помощи встроенной проверки подлинности Windows)<br /><br /> Да (при помощи встроенной проверки подлинности Windows)|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
-|Транспортировка|NET.TCP|  
+|Транспорт|NET.TCP|  
 |Привязка|<xref:System.ServiceModel.NetTcpBinding>|  
   
 ## <a name="service"></a>Служба  
@@ -43,7 +43,7 @@ ms.locfileid: "85244768"
  [!code-csharp[C_SecurityScenarios#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#3)]
  [!code-vb[C_SecurityScenarios#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#3)]  
   
-### <a name="configuration"></a>Параметр Configuration  
+### <a name="configuration"></a>Конфигурация  
  Вместо кода для настройки конечной точки службы можно использовать следующую конфигурацию.  
   
 ```xml  
@@ -74,7 +74,7 @@ ms.locfileid: "85244768"
 </configuration>  
 ```  
   
-## <a name="client"></a>клиент  
+## <a name="client"></a>Клиент  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономный клиент, используя код (и код клиента).  
@@ -90,7 +90,7 @@ ms.locfileid: "85244768"
  [!code-csharp[C_SecurityScenarios#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#4)]
  [!code-vb[C_SecurityScenarios#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#4)]  
   
-### <a name="configuration"></a>Параметр Configuration  
+### <a name="configuration"></a>Конфигурация  
  Вместо кода для создания клиента можно использовать следующую конфигурацию.  
   
 ```xml  
@@ -122,4 +122,4 @@ ms.locfileid: "85244768"
 
 - [Обзор безопасности](security-overview.md)
 - [Практическое руководство. Защита службы с использованием учетных данных Windows](../how-to-secure-a-service-with-windows-credentials.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

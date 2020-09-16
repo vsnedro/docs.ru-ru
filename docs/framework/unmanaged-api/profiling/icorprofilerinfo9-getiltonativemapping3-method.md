@@ -11,12 +11,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 22fe5608b0a3f86baf80abb3810a512077954ac3
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: 14391a0fe046b44aedca1da2bc42c7d962e1a5e7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77449755"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90541282"
 ---
 # <a name="icorprofilerinfo9getiltonativemapping3-method"></a>Метод ICorProfilerInfo9:: GetILToNativeMapping3
 
@@ -35,11 +35,11 @@ HRESULT GetILToNativeMapping3( [in]  UINT_PTR pNativeCodeStartAddress,
 
 - `pNativeCodeStartAddress`
 
-  \[в] указатель на начало собственной функции.
+  \[in] указатель на начало собственной функции.
 
 - `cMap`
 
-  \[в] максимальный размер массива `map`.
+  \[in] максимальный размер `map` массива.
 
 - `pcMap`
 
@@ -49,20 +49,20 @@ HRESULT GetILToNativeMapping3( [in]  UINT_PTR pNativeCodeStartAddress,
 
   \[out] массив структур [COR_DEBUG_IL_TO_NATIVE_MAP](../debugging/cor-debug-il-to-native-map-structure.md) , каждый из которых задает смещения. После возврата метода `GetILToNativeMapping3` параметр `map` будет содержать все или некоторые из структур `COR_DEBUG_IL_TO_NATIVE_MAP`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если включена многоуровневая компиляция, метод может иметь более одного тела машинного кода. [ICorProfilerInfo9:: жетнативекодестартаддрессес](icorprofilerinfo9-getnativecodestartaddresses-method.md) будет возвращать начальные адреса для всех частей машинного кода.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/dependencies.md?pivots=os-windows).
+**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
 **Библиотека:** CorGuids.lib
 
-**.NET Framework версии:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**.NET Framework версии:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo9](icorprofilerinfo9-interface.md)

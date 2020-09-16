@@ -3,12 +3,12 @@ title: Строки подключения в ADO.NET Entity Framework
 description: Сведения о строках подключения в Entity Framework, содержащих сведения для подключения к поставщику данных ADO.NET и файлов модели и сопоставления.
 ms.date: 10/15/2018
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
-ms.openlocfilehash: 2ae25f5881c033a84d65f5b0b4ed14b4866dbcb3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 36b7724bc8dbb8f427f4bbf748b7b7801adea8db
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286874"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90542761"
 ---
 # <a name="connection-strings-in-the-adonet-entity-framework"></a>Строки подключения в ADO.NET Entity Framework
 
@@ -16,7 +16,7 @@ ms.locfileid: "84286874"
 
 Строка соединения используется поставщиком EntityClient для доступа к метаданным модели и сопоставления, а также для соединения с источником данных. Свойство <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> объекта <xref:System.Data.EntityClient.EntityConnection> позволяет получить доступ к строке соединения или задать ее значение. Класс <xref:System.Data.EntityClient.EntityConnectionStringBuilder> может использоваться для построения или обработки программным путем параметров строки соединения. Дополнительные сведения см. [в разделе инструкции. Создание строки подключения EntityConnection](how-to-build-an-entityconnection-connection-string.md).
 
-[Средства EDM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) создают строку подключения, которая хранится в файле конфигурации приложения. <xref:System.Data.Objects.ObjectContext> автоматически извлекает сведения о соединении при создании запросов объекта. Доступ к соединению <xref:System.Data.EntityClient.EntityConnection>, используемому экземпляром <xref:System.Data.Objects.ObjectContext>, можно получить с помощью свойства <xref:System.Data.Objects.ObjectContext.Connection%2A>. Дополнительные сведения см. в разделе [Управление соединениями и транзакциями](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
+[Средства EDM](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) создают строку подключения, которая хранится в файле конфигурации приложения. <xref:System.Data.Objects.ObjectContext> автоматически извлекает сведения о соединении при создании запросов объекта. Доступ к соединению <xref:System.Data.EntityClient.EntityConnection>, используемому экземпляром <xref:System.Data.Objects.ObjectContext>, можно получить с помощью свойства <xref:System.Data.Objects.ObjectContext.Connection%2A>. Дополнительные сведения см. в разделе [Управление соединениями и транзакциями](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
 
 ## <a name="connection-string-syntax"></a>Синтаксис строки подключения
 
@@ -93,11 +93,11 @@ Metadata=.\
 
 ## <a name="support-for-the-124datadirectory124-substitution-string-and-the-web-application-root-operator-"></a>Поддержка строки подстановки &#124;DataDirectory&#124; и оператора root веб-приложения (~)
 
-`DataDirectory`и оператор ~ используются в <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> составе `Metadata` `Provider Connection String` ключевых слов и. В соединении <xref:System.Data.EntityClient.EntityConnection> параметр `DataDirectory` и оператор ~ передаются <xref:System.Data.Metadata.Edm.MetadataWorkspace> и поставщику хранилища соответственно.
+`DataDirectory` и оператор ~ используются в <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> составе `Metadata` `Provider Connection String` ключевых слов и. В соединении <xref:System.Data.EntityClient.EntityConnection> параметр `DataDirectory` и оператор ~ передаются <xref:System.Data.Metadata.Edm.MetadataWorkspace> и поставщику хранилища соответственно.
 
 |Термин|Описание|
 |----------|-----------------|
-|`&#124;DataDirectory&#124;`|Преобразуется в относительный путь к файлам сопоставлений и метаданных. Это значение определяется с помощью метода `AppDomain.SetData("DataDirectory", objValue)`. `DataDirectory`Строка подстановки должна быть заключена в символы вертикальной черты, и между ее именем и символами вертикального пробела не должно быть пробелов. Имя `DataDirectory` обрабатывается без учета регистра.<br /><br /> Если физический каталог с именем "DataDirectory" должен передаваться как член списка путей метаданных, добавьте пробелы в одну или обе стороны имени. Например, `Metadata="DataDirectory1 &#124; DataDirectory &#124; DataDirectory2"`. Приложение ASP.NET разрешает &#124;&#124; DataDirectory в \<application root> папку "/App_Data".|
+|`&#124;DataDirectory&#124;`|Преобразуется в относительный путь к файлам сопоставлений и метаданных. Это значение определяется с помощью метода `AppDomain.SetData("DataDirectory", objValue)`. `DataDirectory`Строка подстановки должна быть заключена в символы вертикальной черты, и между ее именем и символами вертикального пробела не должно быть пробелов. Имя `DataDirectory` обрабатывается без учета регистра.<br /><br /> Если физический каталог с именем "DataDirectory" должен передаваться как член списка путей метаданных, добавьте пробелы в одну или обе стороны имени. Например: `Metadata="DataDirectory1 &#124; DataDirectory &#124; DataDirectory2"`. Приложение ASP.NET разрешает &#124;&#124; DataDirectory в \<application root> папку "/App_Data".|
 |~|Преобразуется в корневой каталог веб-приложения. Символ ~ в ведущей позиции всегда интерпретируется как оператор определения корневого каталога веб-приложения (~), хотя и может представлять допустимый локальный подкаталог. Для ссылки на локальный подкаталог пользователь должен явно передать `./~`.|
 
 Значение `DataDirectory` и оператор ~ должны быть указаны только в начале пути, поскольку их преобразование в любой другой позиции не происходит. Платформа Entity Framework пытается преобразовать `~/data`, но рассматривает `/data/~` как физический путь.
@@ -112,5 +112,5 @@ Metadata=.\
 
 - [Работа с поставщиками данных](working-with-data-providers.md)
 - [Рекомендации по развертыванию](deployment-considerations.md)
-- [Управление подключениями и транзакциями](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
+- [Управление подключениями и транзакциями](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [Строки подключения](../connection-strings.md)

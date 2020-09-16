@@ -10,12 +10,12 @@ helpviewer_keywords:
 - compiler configuration attributes
 - compiler element
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
-ms.openlocfilehash: 46676f25597f85596598d6f67c98930971cb0447
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 0abbe594754cbd70ec4732a1e7ef98e8e88bf167
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088054"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544756"
 ---
 # <a name="compiler-element"></a>Элемент \<compiler>
 
@@ -44,7 +44,7 @@ ms.locfileid: "74088054"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`compilerOptions`|Необязательный атрибут.<br /><br /> Задает дополнительные зависящие от компилятора аргументы для компиляции. Значения для `compilerOptions` атрибута обычно перечислены в разделе параметров компилятора для компилятора.|
 |`extension`|Обязательный атрибут.<br /><br /> Предоставляет разделенный точками с запятой список расширений имен файлов, используемых исходными файлами для поставщика языка. Например, ".cs".|
@@ -56,15 +56,15 @@ ms.locfileid: "74088054"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[\<providerOption>Дерев](provideroption-element.md)|Указывает атрибуты версии компилятора для поставщика языка.|
+|[\<providerOption> Элемент](provideroption-element.md)|Указывает атрибуты версии компилятора для поставщика языка.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[\<configuration>Дерев](../configuration-element.md)|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
-|[\<system.codedom>Дерев](system-codedom-element.md)|Задает параметры конфигурации компилятора для доступных поставщиков языков.|
-|[\<compilers>Дерев](compilers-element.md)|Контейнер для элементов конфигурации компилятора; содержит ноль или более `<compiler>` элементов.|
+|[\<configuration> Элемент](../configuration-element.md)|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
+|[\<system.codedom> Элемент](system-codedom-element.md)|Задает параметры конфигурации компилятора для доступных поставщиков языков.|
+|[\<compilers> Элемент](compilers-element.md)|Контейнер для элементов конфигурации компилятора; содержит ноль или более `<compiler>` элементов.|
 
 ## <a name="remarks"></a>Примечания
 
@@ -105,6 +105,6 @@ ms.locfileid: "74088054"
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Схема файла конфигурации](../index.md)
-- [\<compilers>Дерев](compilers-element.md)
+- [\<compilers> Элемент](compilers-element.md)
 - [Указание полных имен типов](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)
-- [Элемент compiler для элемента compilers для элемента compilation (схема параметров ASP.NET)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))
+- [Элемент compiler для элемента compilers для элемента compilation (схема параметров ASP.NET)](/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

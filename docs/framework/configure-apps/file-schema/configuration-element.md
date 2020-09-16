@@ -8,12 +8,12 @@ helpviewer_keywords:
 - configuration element
 - container tags, <configuration> element
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
-ms.openlocfilehash: 0e09ec49024b769c516fd97085904781f64b4486
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 8f79981a55d0bc9b1cd522e45f5606fda102c72c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "69921250"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544695"
 ---
 # <a name="configuration-element"></a>Элемент \<configuration>
 
@@ -31,11 +31,11 @@ ms.locfileid: "69921250"
 
 ## <a name="attributes"></a>Атрибуты
 
-Нет
+None
 
 ## <a name="parent-element"></a>Родительский элемент
 
-Нет
+None
 
 ## <a name="child-elements"></a>Дочерние элементы
 
@@ -44,14 +44,14 @@ ms.locfileid: "69921250"
 | [**\<assemblyBinding>**](assemblybinding-element-for-configuration.md) | Определяет политику привязки сборок на уровне конфигурации.|
 | [**\<startup>** Схема параметров](./startup/index.md) | Все элементы в схеме параметров запуска. |
 | [**\<runtime>** Схема параметров](./runtime/index.md) | Все элементы в схеме параметров среды выполнения. |
-| [**\<system.runtime.remoting>** Схема параметров](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/z415cf9a(v=vs.100)) | Все элементы в схеме параметров удаленного взаимодействия. |
+| [**\<system.runtime.remoting>** Схема параметров](/previous-versions/dotnet/netframework-4.0/z415cf9a(v=vs.100)) | Все элементы в схеме параметров удаленного взаимодействия. |
 | [**\<system.Net>** Схема параметров](./network/index.md) | Все элементы в схеме параметров сети. |
 | [**\<cryptographySettings>** Схема параметров](./cryptography/index.md) | Все элементы в схеме параметров шифрования. |
 | [**\<configuration>** Схема разделов](configuration-sections-schema.md) | Все элементы в схеме параметров раздела конфигурации. |
 | [Схема параметров трассировки и отладки](./trace-debug/index.md) | Все элементы в схеме параметров трассировки и отладки. |
-| [Схема параметров конфигурации ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)) | Все элементы в схеме конфигурации ASP.NET, включая элементы для настройки веб-сайтов и приложений ASP.NET. Используется в файлах *Web. config* . |
-| [**\<webServices>** Схема параметров](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100)) | Все элементы в схеме параметров веб-служб. |
-| [Схема веб-параметров](./web/index.md) | Все элементы схемы веб-параметров, в том числе элементы настройки способов работы ASP.NET с ведущими приложениями, такими как службы IIS. Используется в файлах *ASPNET. config* . |
+| [Схема параметров конфигурации ASP.NET](/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)) | Все элементы в схеме конфигурации ASP.NET, включая элементы для настройки веб-сайтов и приложений ASP.NET. Используется в файлах *Web.config* . |
+| [**\<webServices>** Схема параметров](/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100)) | Все элементы в схеме параметров веб-служб. |
+| [Схема веб-параметров](./web/index.md) | Все элементы схемы веб-параметров, в том числе элементы настройки способов работы ASP.NET с ведущими приложениями, такими как службы IIS. Используется в файлах *aspnet.config* . |
 
 ## <a name="remarks"></a>Примечания
 

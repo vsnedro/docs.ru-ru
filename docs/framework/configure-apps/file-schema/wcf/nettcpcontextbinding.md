@@ -2,12 +2,12 @@
 title: <netTcpContextBinding>
 ms.date: 03/30/2017
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
-ms.openlocfilehash: 360cdf76e013d085022f45eba5f8549e11cd68d3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 88b3da6c81d771db255f6c0a4e86984c9ba294fe
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74140700"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90546156"
 ---
 # \<netTcpContextBinding>
 Задает контекст для <xref:System.ServiceModel.NetTcpBinding>, который требует, чтобы уровень защиты был подписан. Механизмом contextExchangeMechanism для привязки NetTcpContextBinding является SOAPHeader.  
@@ -66,10 +66,10 @@ ms.locfileid: "74140700"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |closeTimeout|Значение <xref:System.TimeSpan>, которое задает длительность времени ожидания для завершения операции закрытия. Это значение должно быть больше или равно <xref:System.TimeSpan.Zero>. Значение по умолчанию - 00:01:00.|  
-|contextProtectionLevel|Допустимое значение <xref:System.Net.Security.ProtectionLevel>, которое задает необходимый уровень защиты заголовка SOAP, используемый для распространения данных контекста.  Значение по умолчанию — <xref:System.Net.Security.ProtectionLevel.Sign>.|  
+|contextProtectionLevel|Допустимое значение <xref:System.Net.Security.ProtectionLevel>, которое задает необходимый уровень защиты заголовка SOAP, используемый для распространения данных контекста.  Значение по умолчанию — <xref:System.Net.Security.ProtectionLevel.Sign>.|  
 |hostnameComparisonMode|Задает режим сравнения имен узлов HTTP для анализа универсальных кодов ресурсов (URI). Это атрибут типа <xref:System.ServiceModel.HostNameComparisonMode>, который указывает, используется ли имя узла для доступа к службе при сравнении по универсальному коду ресурсов (URI). Значение по умолчанию — <xref:System.ServiceModel.HostNameComparisonMode.StrongWildcard>, при котором имя узла в найденном соответствии не используется.|  
 |listenBacklog|Положительное целое число, указывающее максимальное число каналов, ожидающих принятия прослушивателем. Соединения сверх этого лимита помещаются в очередь и обрабатываются по мере освобождения ресурсов. Атрибут `connectionTimeout` ограничивает время, в течение которого клиент ожидает установления соединения до создания исключения подключения. Значение по умолчанию равно 10.|  
 |maxBufferPoolSize|Целое число, задающее максимальный размер буферного пула для этой привязки. Значение по умолчанию - 512 * 1024 байт. Многие элементы Windows Communication Foundation (WCF) используют буферы. При создании буферов и их уничтожении после каждого использования расходуется слишком много ресурсов; при сборке мусора для буферов также расходуется слишком много ресурсов. Буферные пулы позволяют брать буфер из пула, использовать его, а затем возвращать обратно, когда он больше не требуется. Это позволяет избежать излишней нагрузки, связанной с созданием и уничтожением буферов.|  
@@ -90,8 +90,8 @@ ms.locfileid: "74140700"
 |Элемент|Описание|  
 |-------------|-----------------|  
 |[\<security>](security-of-nettcpbinding.md)|Определяет параметры безопасности привязки. Это элемент типа <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>.|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Указывает, устанавливаются ли между конечными точками канала надежные сеансы.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<reliableSession>](/previous-versions/ms731375(v=vs.90))|Указывает, устанавливаются ли между конечными точками канала надежные сеансы.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

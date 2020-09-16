@@ -2,12 +2,12 @@
 title: Управление потреблением ресурсов и повышение производительности
 ms.date: 03/30/2017
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
-ms.openlocfilehash: 16d6f29235455ff30e115b7aff3425412bc7ba6a
-ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
+ms.openlocfilehash: 7210f71287a2ec763b67dfa033cd9f4dadf6bd34
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74802257"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543073"
 ---
 # <a name="controlling-resource-consumption-and-improving-performance"></a>Управление потреблением ресурсов и повышение производительности
 В этом разделе описываются различные свойства в различных областях архитектуры Windows Communication Foundation (WCF), которые работают для управления потреблением ресурсов и влияют на метрики производительности.
@@ -41,13 +41,13 @@ ms.locfileid: "74802257"
 > [!NOTE]
 > Предварительно созданный код сериализации может использоваться только в клиентских приложениях, а не в службах.
 
- [Средство служебной программы метаданных ServiceModel (Svcutil. exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) может улучшить производительность при запуске этих приложений, создавая необходимый код сериализации из скомпилированных сборок для приложения. Дополнительные сведения см. в разделе [как улучшить время запуска клиентских приложений WCF с помощью XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md).
+ [Средство служебной программы метаданных ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) может улучшить производительность при запуске этих приложений, создавая необходимый код сериализации из скомпилированных сборок для приложения. Дополнительные сведения см. в разделе [как улучшить время запуска клиентских приложений WCF с помощью XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md).
 
 ## <a name="performance-issues-when-hosting-wcf-services-under-aspnet"></a>Проблемы производительности при размещении служб WCF под ASP.NET
 
-Когда служба WCF размещается под IIS и ASP.NET, параметры конфигурации IIS и ASP.NET могут повлиять на пропускную способность и объем занимаемой службой WCF памяти.  Дополнительные сведения о производительности ASP.NET см. в разделе [улучшение производительности ASP.NET](https://docs.microsoft.com/previous-versions/msp-n-p/ff647787(v=pandp.10)). Есть один параметр, использование которого может иметь непредвиденные последствия. Это <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A>, который является свойством <xref:System.Web.Configuration.ProcessModelSection>. Если приложение имеет фиксированное или небольшое количество клиентов, изменение параметра <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A> на 2 может обеспечить повышение пропускной способности на многопроцессорных компьютерах с близким к 100% использованием ЦП. За такое увеличение производительности приходится платить: оно также влечет за собой повышение использования памяти, что может снизить масштабируемость.
+Когда служба WCF размещается под IIS и ASP.NET, параметры конфигурации IIS и ASP.NET могут повлиять на пропускную способность и объем занимаемой службой WCF памяти.  Дополнительные сведения о производительности ASP.NET см. в разделе [улучшение производительности ASP.NET](/previous-versions/msp-n-p/ff647787(v=pandp.10)). Есть один параметр, использование которого может иметь непредвиденные последствия. Это <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A>, который является свойством <xref:System.Web.Configuration.ProcessModelSection>. Если приложение имеет фиксированное или небольшое количество клиентов, изменение параметра <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A> на 2 может обеспечить повышение пропускной способности на многопроцессорных компьютерах с близким к 100% использованием ЦП. За такое увеличение производительности приходится платить: оно также влечет за собой повышение использования памяти, что может снизить масштабируемость.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Администрирование и диагностика](./diagnostics/index.md)
 - [Большие наборы данных и потоковая передача](./feature-details/large-data-and-streaming.md)

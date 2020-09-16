@@ -6,12 +6,12 @@ helpviewer_keywords:
 - best practices for accessibility
 - accessibility, best practices for
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-ms.openlocfilehash: 2980881bbcd34ca82f6cca7723cf976e0890f463
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 1c01cfe8fdfb285ee5cbc586cc0c549365ef72ee
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557090"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543151"
 ---
 # <a name="accessibility-best-practices"></a>Рекомендации по специальным возможностям
 
@@ -132,8 +132,8 @@ ms.locfileid: "87557090"
 ### <a name="use-standard-input-apis-with-device-independent-calls"></a>Используйте стандартные API ввода с аппаратно-независимыми вызовами  
  Аппаратно-независимые вызовы гарантируют равенство функций клавиатуры и мыши, а также предоставляют вспомогательные технологии с необходимыми сведениями о пользовательском интерфейсе.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Automation.Peers>
-- [Пример пользовательского элемента управления NumericUpDown с темой и поддержкой модели автоматизации пользовательского интерфейса](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771573(v=vs.90))
-- [Рекомендации по проектированию пользовательского интерфейса клавиатуры](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+- [Пример пользовательского элемента управления NumericUpDown с темой и поддержкой модели автоматизации пользовательского интерфейса](/previous-versions/dotnet/netframework-3.5/ms771573(v=vs.90))
+- [Рекомендации по проектированию пользовательского интерфейса клавиатуры](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

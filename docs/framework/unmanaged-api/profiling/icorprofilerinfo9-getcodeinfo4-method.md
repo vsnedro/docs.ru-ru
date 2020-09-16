@@ -11,12 +11,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: f65cebff912adeb7afc34434467cf7be72f9be32
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: ecaff179378eb417393c0a0d17d0a00d3b99e5a4
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77449768"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90541302"
 ---
 # <a name="icorprofilerinfo9getcodeinfo4-method"></a>Метод ICorProfilerInfo9:: GetCodeInfo4
 
@@ -35,11 +35,11 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
 
 - `pNativeCodeStartAddress`
 
-  \[в] указатель на начало собственной функции.
+  \[in] указатель на начало собственной функции.
 
 - `cCodeInfos`
 
-  \[в] размер массива `codeInfos`.
+  \[in] размер `codeInfos` массива.
 
 - `pcCodeInfos`
 
@@ -47,31 +47,31 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
 
 - `codeInfos`
 
-  \[out] предоставленный вызывающим объектом буфер. После возврата метода он содержит массив структур `COR_PRF_CODE_INFO`, каждая из которых описывает блок машинного кода.
+  \[out] буфер, предоставленный вызывающей стороной. После возврата метода он содержит массив структур `COR_PRF_CODE_INFO`, каждая из которых описывает блок машинного кода.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Метод `GetCodeInfo4` аналогичен [GetCodeInfo3](icorprofilerinfo4-getcodeinfo3-method.md), за исключением того, что он может искать информацию о коде для различных версий метода.
+`GetCodeInfo4`Метод аналогичен [GetCodeInfo3](icorprofilerinfo4-getcodeinfo3-method.md), за исключением того, что он может искать информацию о коде для различных версий метода.
 
 > [!NOTE]
-> `GetCodeInfo4` может активировать сборку мусора.
+> `GetCodeInfo4` может запустить сборку мусора.
 
 Расширения сортируются в порядке возрастания смещения общих промежуточного языка (CIL).
 
-После того, как `GetCodeInfo4` возвращает, необходимо убедиться, что буфер `codeInfos` достаточно большой, чтобы вместить все [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) структуры. Для этого сравните значение параметра `cCodeInfos` со значением параметра `cchName`. Если `cCodeInfos` деленная на размер структуры [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) меньше `pcCodeInfos`, выделите больший буфер `codeInfos`, обновите `cCodeInfos` с новым, большим размером и снова вызовите `GetCodeInfo4`.
+После `GetCodeInfo4` возврата необходимо убедиться, что `codeInfos` буфер достаточно велик, чтобы вместить все структуры [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) . Для этого сравните значение параметра `cCodeInfos` со значением параметра `cchName`. При `cCodeInfos` делении на размер структуры [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) меньше `pcCodeInfos` , выделяет буфер большего размера `codeInfos` , обновляет `cCodeInfos` новый, больший размер и вызывается `GetCodeInfo4` снова.
 
-Кроме того, сначала можно вызвать метод `GetCodeInfo4` с буфером `codeInfos` нулевой длины для получения правильного размера буфера. Затем можно присвоить `codeInfos` размеру буфера значение, возвращаемое в `pcCodeInfos`, умноженное на размер [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) структуры, и снова вызвать `GetCodeInfo4`.
+Кроме того, сначала можно вызвать метод `GetCodeInfo4` с буфером `codeInfos` нулевой длины для получения правильного размера буфера. Затем можно присвоить `codeInfos` Размер буфера значению, возвращенному в `pcCodeInfos` , умноженному на размер структуры [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) и вызывать `GetCodeInfo4` повторно.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/dependencies.md?pivots=os-windows).
+**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo9](ICorProfilerInfo9-interface.md)

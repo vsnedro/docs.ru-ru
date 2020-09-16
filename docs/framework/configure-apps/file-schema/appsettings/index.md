@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows Forms, app settings schema
 - configuration schema [.NET Framework], app settings
 ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
-ms.openlocfilehash: 0a3363b35a6fc8bd27753eb034f8a1e95feb5292
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a67689bd9757f7586881fd910ef6103b1dffeab8
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77215431"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550453"
 ---
 # <a name="app-settings-schema"></a>Схема параметров приложения
 
@@ -39,11 +39,11 @@ ms.locfileid: "77215431"
 
 Добавляет пользовательский параметр приложения в виде пары "имя-значение" в коллекцию параметров приложения. Определяет атрибуты для **key** и **value**.
 
-## <a name="clear-element"></a>Элемент \<clear>
+## <a name="clear-element"></a>\<clear> - элемент
 
 Удаляет все ссылки на унаследованные пользовательские параметры приложения и разрешает только ссылки, добавленные **\<add>** элементами после **\<clear>** элемента. Атрибуты не определяются.
 
-## <a name="remove-element"></a>Элемент \<remove>
+## <a name="remove-element"></a>\<remove> - элемент
 
 Удаляет ссылку на унаследованный пользовательский параметр приложения из коллекции параметров приложения. Определяет атрибут для **key**.
 
@@ -70,5 +70,5 @@ ms.locfileid: "77215431"
 
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения о параметрах приложений](../../../winforms/advanced/application-settings-overview.md)
-- [Архитектура параметров приложения](../../../winforms/advanced/application-settings-architecture.md)
+- [Общие сведения о параметрах приложений](/dotnet/desktop/winforms/advanced/application-settings-overview)
+- [Архитектура параметров приложения](/dotnet/desktop/winforms/advanced/application-settings-architecture)

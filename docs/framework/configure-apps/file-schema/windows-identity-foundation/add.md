@@ -3,12 +3,12 @@ title: <add>
 ms.date: 03/30/2017
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
 author: BrucePerlerMS
-ms.openlocfilehash: 83ba51cbbd5100bf7412f9914a270cac88f7faa1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7c2b6bdc62da63905d7ff33a9984808e7b7d114f
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73973805"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544544"
 ---
 # \<add>
 Добавляет указанный обработчик маркеров безопасности в коллекцию обработчиков маркеров.  
@@ -41,7 +41,7 @@ ms.locfileid: "73973805"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|type|Имя типа CLR обработчика токенов, который необходимо добавить. Дополнительные сведения об указании `type` атрибута см. в разделе [ссылки на пользовательские типы](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references).|  
+|type|Имя типа CLR обработчика токенов, который необходимо добавить. Дополнительные сведения об указании `type` атрибута см. в разделе [ссылки на пользовательские типы](/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   

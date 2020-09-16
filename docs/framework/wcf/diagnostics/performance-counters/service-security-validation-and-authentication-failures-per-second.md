@@ -2,12 +2,12 @@
 title: 'Служба: количество сбоев при проверке безопасности и проверке подлинности в секунду'
 ms.date: 03/30/2017
 ms.assetid: 4af18009-e778-490b-9ba6-e76485285830
-ms.openlocfilehash: f3f27100afb7390a68d99421cad6f43d9abaccd5
-ms.sourcegitcommit: 5d769956a04b6d68484dd717077fabc191c21da5
+ms.openlocfilehash: f6dbf7f6da208bde3a9a380d50fd6caf68576f25
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76163869"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90535915"
 ---
 # <a name="service-security-validation-and-authentication-failures-per-second"></a>Служба: количество сбоев при проверке безопасности и проверке подлинности в секунду
 Имя счетчика: Security Validation and Authentication Failures Per Second.  
@@ -29,6 +29,6 @@ ms.locfileid: "76163869"
   
 - Во время подтверждения TLSNEGO/SPNEGO произошли ошибки.  
   
- Этот счетчик имеет тип счетчика производительности [PERF_COUNTER_COUNTER](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), значение которого вычисляется по следующей формуле:  
+ Этот счетчик имеет тип счетчика производительности [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), значение которого вычисляется по следующей формуле:  
   
  (N 1 - N 0 ) / ( (D 1 -D 0 ) / F)

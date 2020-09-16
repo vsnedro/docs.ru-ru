@@ -5,12 +5,12 @@ helpviewer_keywords:
 - WCF security
 - access control [WCF]
 ms.assetid: 9d576122-3f55-4425-9acf-b23d0781e966
-ms.openlocfilehash: 27f2b7d3146199f1c3e9a228202618c992e2a1ea
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bd3156e0fa8ea976d2297ffc0767cd948c9c96b4
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601365"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550486"
 ---
 # <a name="access-control-mechanisms"></a>Механизмы управления доступом
 С помощью Windows Communication Foundation (WCF) можно управлять доступом несколькими способами. В настоящем разделе кратко описываются различные механизмы и приводятся рассуждения о том, когда и какой способ использовать; раздел должен помочь пользователю выбрать правильный механизм использования. Технологии доступа перечислены в порядке сложности. Самым простым является <xref:System.Security.Permissions.PrincipalPermissionAttribute>; самым сложным - модель удостоверения.  
@@ -46,7 +46,7 @@ ms.locfileid: "84601365"
   
  Вы также можете использовать AzMan и поставщик ролей ASP.NET, если у вас уже есть доступ к существующей установке AzMan и вы хотите авторизовать пользователей службы, используя функции комбинации поставщика AzMan/роль.  
   
- Дополнительные сведения о AzMan и поставщике роли ASP.NET см. [в статье как использовать диспетчер авторизации (AzMan) с ASP.NET 2,0](https://docs.microsoft.com/previous-versions/msp-n-p/ff649313(v=pandp.10)). Дополнительные сведения об использовании AzMan и поставщика ролей для служб WCF см. в разделе [руководство. Использование поставщика ролей диспетчера авторизации ASP.NET со службой](how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
+ Дополнительные сведения о AzMan и поставщике роли ASP.NET см. [в статье как использовать диспетчер авторизации (AzMan) с ASP.NET 2,0](/previous-versions/msp-n-p/ff649313(v=pandp.10)). Дополнительные сведения об использовании AzMan и поставщика ролей для служб WCF см. в разделе [руководство. Использование поставщика ролей диспетчера авторизации ASP.NET со службой](how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
   
 ## <a name="identity-model"></a>Модель удостоверения  
  Модель удостоверения представляет собой набор API, которые позволяют управлять требованиями и политиками для авторизации клиентов. При помощи модели удостоверения можно рассматривать каждое требование, содержащееся в учетных данных, которое пользователь использовал для проверки своей подлинности, сравнить требования с набором политик для службы и на основе сравнения разрешить или запретить доступ.  
@@ -57,7 +57,7 @@ ms.locfileid: "84601365"
   
  Дополнительные сведения о модели удостоверений см. [в статье Управление утверждениями и авторизацией с помощью модели удостоверений](managing-claims-and-authorization-with-the-identity-model.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - [Практическое руководство. Ограничение доступа с использованием класса PrincipalPermissionAttribute](../how-to-restrict-access-with-the-principalpermissionattribute-class.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - hosting interfaces [.NET Framework]
 - unmanaged interfaces [.NET Framework], hosting
 ms.assetid: cc64cb05-38da-418e-815a-daac8e8e26e5
-ms.openlocfilehash: d1668f52ff305ec36fb520c7828c822537da0d02
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: b1459bf78276abe0daefd7a7ee814841f3c65dfb
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616103"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550668"
 ---
 # <a name="hosting-interfaces"></a>Интерфейсы размещения
 В этом разделе описываются интерфейсы, которые неуправляемые узлы могут использовать для интеграции среды CLR в свои приложения.  
@@ -43,4 +43,4 @@ ms.locfileid: "83616103"
   
  [Размещение](index.md)  
   
- [Хост-приложения среды выполнения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))
+ [Хост-приложения среды выполнения](/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - streaming data provider [WCF Data Services]
 - WCF Data Services, streams
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
-ms.openlocfilehash: 83f28c50c53281692e1c3c6d55cc55e8d9304ad9
-ms.sourcegitcommit: ed3f926b6cdd372037bbcc214dc8f08a70366390
+ms.openlocfilehash: 9ed728fa8d1d56c835aa27645a28921aa4f641e9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76116597"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544457"
 ---
 # <a name="streaming-provider-wcf-data-services"></a>Потоковый поставщик (службы WCF Data Services)
 
@@ -25,7 +25,7 @@ ms.locfileid: "76116597"
 
 - Запись медиассылки — это сущность, содержащая ссылку на соответствующий поток медиаресурса.
 
-С помощью WCF Data Services вы определяете поток двоичных ресурсов, реализуя поставщик потоковых данных. Реализация поставщика потоковой передачи предоставляет службе данных поток ресурсов мультимедиа, связанный с определенной сущностью в качестве объекта <xref:System.IO.Stream>. Эта реализация позволяет службе данных принимать и возвращать медиаресурсы по протоколу HTTP в виде потоков двоичных данных с указанным типом MIME.
+С помощью WCF Data Services вы определяете поток двоичных ресурсов, реализуя поставщик потоковых данных. Реализация поставщика потоковой передачи предоставляет службе данных поток ресурсов мультимедиа, связанный с определенной сущностью в качестве <xref:System.IO.Stream> объекта. Эта реализация позволяет службе данных принимать и возвращать медиаресурсы по протоколу HTTP в виде потоков двоичных данных с указанным типом MIME.
 
 Настройка службы данных для поддержки потоков двоичных данных состоит из следующих этапов.
 
@@ -39,7 +39,7 @@ ms.locfileid: "76116597"
 
 5. Включите доступ к двоичным ресурсам на сервере или в источнике данных.
 
-Примеры в этом разделе основаны на образце службы Photo Streaming, которая подробно обсуждается в [серии поставщиков потоковой передачи служб данных: реализация поставщика потоковой передачи (часть 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). Исходный код для образца службы данных для передачи фотографий доступен на сайте [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
+Примеры в этом разделе основаны на образце службы Photo Streaming, которая подробно обсуждается в [серии поставщиков потоковой передачи служб данных: реализация поставщика потоковой передачи (часть 1)](/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). Исходный код для образца службы данных для передачи фотографий доступен на сайте [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
 
 ## <a name="defining-a-media-link-entry-in-the-data-model"></a>Определение медиассылки в модели данных
 
@@ -53,13 +53,13 @@ ms.locfileid: "76116597"
 
 Необходимо также добавить пространство имен `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` либо в сущность, либо в корень EDMX- или CSDL-файла, определяющего модель данных.
 
-Пример службы данных, использующей поставщик Entity Framework и предоставляющий ресурс мультимедиа, см. в [серии поставщиков потоковой передачи служб данных. Реализация поставщика потоковой передачи (часть 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1).
+Пример службы данных, использующей поставщик Entity Framework и предоставляющий ресурс мультимедиа, см. в [серии поставщиков потоковой передачи служб данных. Реализация поставщика потоковой передачи (часть 1)](/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1).
 
-**Поставщик отражений**
+**Поставщик отражения**
 
 Чтобы указать, что сущность является медиассылкой, добавьте <xref:System.Data.Services.Common.HasStreamAttribute> к классу, определяющему тип сущности в поставщике отражения.
 
-**Пользовательский поставщик службы данных**
+**Специализированный поставщик службы данных**
 
 При использовании специализированных поставщиков службы данных необходимо реализовать интерфейс <xref:System.Data.Services.Providers.IDataServiceMetadataProvider>, чтобы определить метаданные для службы данных. Дополнительные сведения см. в разделе [пользовательские поставщики служб данных](custom-data-service-providers-wcf-data-services.md). Необходимо указать, что двоичный поток ресурса принадлежит к типу <xref:System.Data.Services.Providers.ResourceType>. Для этого свойству <xref:System.Data.Services.Providers.ResourceType.IsMediaLinkEntry%2A> задается значение `true` применительно к типу <xref:System.Data.Services.Providers.ResourceType>, представляющему тип сущности, которая является записью медиассылки.
 
@@ -67,7 +67,7 @@ ms.locfileid: "76116597"
 
 Для создания потоковой службы данных, которая поддерживает двоичные потоки данных, необходимо реализовать интерфейс <xref:System.Data.Services.Providers.IDataServiceStreamProvider>. Эта реализация позволяет службе данных возвращать клиенту двоичные данные в виде потока и получать двоичные данные в виде потока от клиента. В службе данных экземпляр этого интерфейса создается каждый раз, когда возникает необходимость получить доступ к двоичным данным как к потоку. Интерфейс <xref:System.Data.Services.Providers.IDataServiceStreamProvider> определяет следующие члены.
 
-|Имя элемента|Описание|
+|Имя участника|Описание|
 |-----------------|-----------------|
 |<xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>|Этот метод вызывается службой данных для удаления соответствующего медиаресурса при удалении относящейся к нему медиассылки. При реализации <xref:System.Data.Services.Providers.IDataServiceStreamProvider> этот метод содержит код для удаления медиаресурса, связанного с поставляемой медиассылкой.|
 |<xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>|Этот метод вызывается службой данных для возвращения медиаресурса в виде потока. При реализации <xref:System.Data.Services.Providers.IDataServiceStreamProvider> этот метод содержит код, создающий поток, используемый службой данных для возвращения медиаресурса, связанного с предоставленной медиассылкой.|
@@ -79,7 +79,7 @@ ms.locfileid: "76116597"
 
 ## <a name="creating-the-streaming-data-service"></a>Создание потоковой службы данных
 
-Чтобы предоставить среде выполнения WCF Data Services доступ к реализации <xref:System.Data.Services.Providers.IDataServiceStreamProvider>, создаваемая служба данных также должна реализовывать интерфейс <xref:System.IServiceProvider>. В следующем примере показана реализация метода <xref:System.IServiceProvider.GetService%2A>, который возвращает экземпляр класса `PhotoServiceStreamProvider`, реализующего <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
+Чтобы предоставить среде выполнения WCF Data Services доступ к <xref:System.Data.Services.Providers.IDataServiceStreamProvider> реализации, создаваемая служба данных должна также реализовать <xref:System.IServiceProvider> интерфейс. В следующем примере показана реализация метода <xref:System.IServiceProvider.GetService%2A>, который возвращает экземпляр класса `PhotoServiceStreamProvider`, реализующего <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
 
 [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_service/cs/photodata.svc.cs#photoservicestreamingprovider)]
 [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_service/vb/photodata.svc.vb#photoservicestreamingprovider)]
@@ -91,11 +91,11 @@ ms.locfileid: "76116597"
 При создании службы данных в веб-приложении ASP.NET для предоставления реализации протокола HTTP используется Windows Communication Foundation (WCF). По умолчанию WCF ограничивает размер сообщений HTTP только 65 КБ. Чтобы иметь возможность направлять большие потоки двоичных данных в службу данных и из нее, необходимо также настроить веб-приложение, включив возможность использования больших двоичных файлов и потоков для передачи. Для этого добавьте к элементу `<configuration />` файла Web.config приложения следующее.
 
 > [!NOTE]
-> Необходимо использовать режим передачи <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType>, чтобы обеспечить потоковую передачу двоичных данных в сообщениях запроса и ответа и не помещает их в буфер WCF.
+> Необходимо использовать <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> режим передачи, чтобы обеспечить потоковую передачу двоичных данных в сообщениях запросов и ответов и не помещает их в БУФЕР WCF.
 
 Дополнительные сведения см. в разделе [потоковая передача сообщений](../../wcf/feature-details/streaming-message-transfer.md) и [квоты транспорта](../../wcf/feature-details/transport-quotas.md).
 
-По умолчанию службы IIS (IIS) также ограничивает размер запросов 4 МБ. Чтобы служба данных получала больше 4 МБ при работе в службах IIS, необходимо также задать атрибут `maxRequestLength` [элемента httpRuntime (схема параметров ASP.NET)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) в разделе конфигурации `<system.web />`, как показано в следующем примере:
+По умолчанию службы IIS (IIS) также ограничивает размер запросов 4 МБ. Чтобы служба данных получала больше 4 МБ при работе в службах IIS, необходимо также задать `maxRequestLength` атрибут [элемента httpRuntime (схема параметров ASP.NET)](/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) в `<system.web />` разделе конфигурации, как показано в следующем примере:
 
 ## <a name="using-data-streams-in-a-client-application"></a>Использование потоков данных в клиентском приложении
 
@@ -125,7 +125,7 @@ ms.locfileid: "76116597"
 
 - При реализации методов <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>, <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A> или <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> необходимо использовать значения eTag и Content-Type, предоставляемые в качестве параметров метода. Не устанавливайте заголовки eTag или Content-Type в реализации поставщика <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
 
-- По умолчанию клиент отправляет большие двоичные потоки, используя фрагментированный HTTP Transfer-Encoding. Поскольку ASP.NET Development Server не поддерживает такой тип кодирования, этот веб-сервер нельзя использовать для размещения службы потоковой передачи данных, которая должна принимать большие двоичные потоки. Дополнительные сведения о ASP.NET Development Server см. [в разделе веб-серверы в Visual Studio для веб-проектов ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).
+- По умолчанию клиент отправляет большие двоичные потоки, используя фрагментированный HTTP Transfer-Encoding. Поскольку ASP.NET Development Server не поддерживает такой тип кодирования, этот веб-сервер нельзя использовать для размещения службы потоковой передачи данных, которая должна принимать большие двоичные потоки. Дополнительные сведения о ASP.NET Development Server см. [в разделе веб-серверы в Visual Studio для веб-проектов ASP.NET](/previous-versions/aspnet/58wxa9w5(v=vs.120)).
 
 <a name="versioning"></a>
 
@@ -137,7 +137,7 @@ ms.locfileid: "76116597"
 
 Дополнительные сведения см. в разделе [Управление версиями службы данных](data-service-versioning-wcf-data-services.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Поставщики служб данных](data-services-providers-wcf-data-services.md)
 - [Специализированные поставщики служб данных](custom-data-service-providers-wcf-data-services.md)

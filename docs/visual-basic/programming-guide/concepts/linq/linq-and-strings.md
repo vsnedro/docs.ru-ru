@@ -2,17 +2,17 @@
 title: LINQ и строки
 ms.date: 07/20/2015
 ms.assetid: 75ddb201-d97a-4f98-8cdf-4ad51714529a
-ms.openlocfilehash: 73ce4bf5586f1f9ff4995ea6f425b90744b7e333
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ee2a44175e8546f879473a3af6bf1a2de92d2501
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353287"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90549853"
 ---
 # <a name="linq-and-strings-visual-basic"></a>LINQ и строки (Visual Basic)
 LINQ можно использовать для запроса и преобразования строк и коллекций строк. При этом лучше всего его потенциал раскрывается при работе с частично структурированными данными в текстовых файлах. Запросы LINQ можно комбинировать с традиционными строковыми функциями и регулярными выражениями. Например, используя метод <xref:System.String.Split%2A> или <xref:System.Text.RegularExpressions.Regex.Split%2A>, можно создать массив строк, который затем можно запрашивать или изменять с помощью LINQ. Метод <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> можно использовать в предложении `where` запроса LINQ. Также LINQ можно использовать для запроса или изменения результатов <xref:System.Text.RegularExpressions.MatchCollection>, возвращаемых регулярным выражением.  
   
- Методы, описанные в этом разделе, позволяют преобразовать частично структурированные текстовые данные в XML. Дополнительные сведения см. в разделе [Практическое руководство. Создание кода XML из CSV-файлов](how-to-generate-xml-from-csv-files.md).  
+ Методы, описанные в этом разделе, позволяют преобразовать частично структурированные текстовые данные в XML. Дополнительные сведения см. [в разделе инструкции. Создание XML из CSV-файлов](../../../../standard/linq/generate-xml-csv-files.md).  
   
  Примеры в этом разделе делятся на две категории:  
   
@@ -22,7 +22,7 @@ LINQ можно использовать для запроса и преобра
  [Как подсчитать количество вхождений слова в строке (LINQ) (Visual Basic)](how-to-count-occurrences-of-a-word-in-a-string-linq.md)  
  Показывает, как использовать LINQ для простых запросов текста.  
   
- [Пошаговое руководство. запрос предложений, содержащих указанный набор слов (LINQ) (Visual Basic)](how-to-query-for-sentences-that-contain-a-specified-set-of-words.md)
+ [Практическое руководство. Запрос к предложениям, содержащим указанный набор слов (LINQ) (Visual Basic)](how-to-query-for-sentences-that-contain-a-specified-set-of-words.md)
 
  Показывает, как разбивать текстовые файлы на произвольные фрагменты и выполнять запросы к каждой части.  
   
@@ -38,7 +38,7 @@ LINQ можно использовать для запроса и преобра
  [Как найти разность множеств между двумя списками (LINQ) (Visual Basic)](how-to-find-the-set-difference-between-two-lists-linq.md)  
  Показывает, как найти все строки, которые есть в одном списке, но отсутствуют в другом.  
   
- [Как сортировать или фильтровать текстовые данные по любому слову или полю (LINQ) (Visual Basic)](how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)  
+ [Практическое руководство. Сортировка или фильтрация текстовых данных по любому слову или полю (LINQ) (Visual Basic)](how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)  
  Показывает, как сортировать текстовые строки по какому-либо слову или полю.  
   
  [Как изменить порядок полей файла с разделителями (LINQ) (Visual Basic)](how-to-reorder-the-fields-of-a-delimited-file.md)  
@@ -61,5 +61,5 @@ LINQ можно использовать для запроса и преобра
   
 ## <a name="see-also"></a>См. также
 
-- [Синтаксис LINQ (Visual Basic)](index.md)
-- [Практическое руководство. Создание кода XML из CSV-файлов](how-to-generate-xml-from-csv-files.md)
+- [LINQ (Visual Basic)](index.md)
+- [Как создать XML из CSV-файлов](../../../../standard/linq/generate-xml-csv-files.md)

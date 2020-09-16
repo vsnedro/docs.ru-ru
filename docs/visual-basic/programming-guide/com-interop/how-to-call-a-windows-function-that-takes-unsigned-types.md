@@ -14,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], numeric
 - unsigned types [Visual Basic], using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.openlocfilehash: f30b78a2f0c38f233796e18006c889438dce4c58
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5b78c808de4a16060d37844ad0f17e89fa6f6d84
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396834"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90548082"
 ---
 # <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа (Visual Basic)
 
@@ -76,9 +76,9 @@ ms.locfileid: "84396834"
     > Вызов неуправляемого кода, например программного интерфейса Windows (API), предоставляет ваш код потенциальным угрозам безопасности.
 
     > [!IMPORTANT]
-    > Для вызова API Windows требуется разрешение неуправляемого кода, которое может повлиять на его выполнение в ситуациях частичного доверия. Дополнительные сведения см. в разделе <xref:System.Security.Permissions.SecurityPermission> и [разрешения на доступ к коду](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h846e9b3(v=vs.100)).
+    > Для вызова API Windows требуется разрешение неуправляемого кода, которое может повлиять на его выполнение в ситуациях частичного доверия. Дополнительные сведения см. в разделе <xref:System.Security.Permissions.SecurityPermission> и [разрешения на доступ к коду](/previous-versions/dotnet/netframework-4.0/h846e9b3(v=vs.100)).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы данных](../../language-reference/data-types/index.md)
 - [Тип данных Integer](../../language-reference/data-types/integer-data-type.md)

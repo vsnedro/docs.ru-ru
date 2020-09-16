@@ -2,12 +2,12 @@
 title: Введение в LINQ
 ms.date: 07/20/2015
 ms.assetid: c6339c12-9b2d-433e-961c-0d2b7f0091c2
-ms.openlocfilehash: b0fa27fd81b85eb89712f9e81f42e06505878f86
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 58613281d79769bfb5515f1291feb9b502a1e846
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397562"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90549971"
 ---
 # <a name="introduction-to-linq-visual-basic"></a>Знакомство с LINQ (Visual Basic)
 LINQ (Language-Integrated Query) — это новая возможность, появившаяся в .NET Framework версии 3.5, которая соединяет мир объектов с миром данных.  
@@ -27,12 +27,12 @@ LINQ (Language-Integrated Query) — это новая возможность, 
   
 - Базы данных SQL Server: [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
   
-- XML-документы: [LINQ to XML (Visual Basic)](linq-to-xml.md)  
+- XML-документы: [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md)  
   
 - Наборы данных ADO.NET: [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   
 - Коллекции .NET, файлы, строки и т. д. [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ (Visual Basic)](index.md)

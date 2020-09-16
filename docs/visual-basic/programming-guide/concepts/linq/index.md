@@ -2,17 +2,17 @@
 title: LINQ
 ms.date: 07/20/2015
 ms.assetid: a99371f7-097c-49a0-b62b-0e31c34aad0e
-ms.openlocfilehash: 62b07043bd6148d8ec9aeaaf45ee1adb108d2c6c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 53c4033c4626fd34c3cd8752e74af3f8e9b481c3
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397600"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90549946"
 ---
 # <a name="language-integrated-query-linq-visual-basic"></a>LINQ (Visual Basic)
 LINQ — это набор функций, который предлагает мощные возможности создания запросов для синтаксиса языка Visual Basic. LINQ включает стандартные, легко запоминающиеся шаблоны для выполнения запросов и изменения данных. Эта технология потенциально способна обеспечить поддержку любого типа хранилища данных.  Платформа .NET Framework содержит сборки поставщика LINQ, позволяющие использовать LINQ с коллекциями .NET Framework, базами данных SQL Server, наборами данных ADO.NET Dataset и документами в формате XML.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Знакомство с LINQ (Visual Basic)](introduction-to-linq.md)  
  Общие сведения о доступных для создания приложениях и о проблемах, которые можно решить с помощью запросов LINQ.  
   
@@ -28,7 +28,7 @@ LINQ — это набор функций, который предлагает 
  [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
  Ссылки на разделы по использованию LINQ to Objects для доступа к структурам данных в памяти.  
   
- [LINQ to XML (Visual Basic)](linq-to-xml.md)  
+ [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md)  
  Ссылки на разделы по использованию интерфейса LINQ to XML, который позволяет модифицировать документы в памяти с использованием модели DOM и поддерживает выражения запросов LINQ.  
   
  [LINQ to ADO.NET (Страница портала)](linq-to-adonet-portal-page.md)  

@@ -3,12 +3,12 @@ title: Вызов функций в запросах LINQ to Entities
 description: Используйте эти статьи, чтобы увидеть, как классы Ентитифунктионс и Склфунктионс предоставляют доступ к каноническим и функциям базы данных в составе Entity Framework.
 ms.date: 03/30/2017
 ms.assetid: 12a525a9-727c-4464-a0c7-71a0ef541792
-ms.openlocfilehash: faa6406713592f10e5e7371cd73f29bec4b03b7b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: eb206e9b331da1ae442c1f310e78fec5c6b57e82
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286861"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90546052"
 ---
 # <a name="calling-functions-in-linq-to-entities-queries"></a>Вызов функций в запросах LINQ to Entities
 В подразделах этого раздела описывается вызов функций в запросах LINQ to Entities.  
@@ -25,7 +25,7 @@ ms.locfileid: "84286861"
   
  Дополнительные сведения см. в подразделах этого раздела.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Практическое руководство. Вызов канонических функций](how-to-call-canonical-functions.md)  
   
  [Практическое руководство. Вызов функций базы данных](how-to-call-database-functions.md)  
@@ -40,5 +40,5 @@ ms.locfileid: "84286861"
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)
 - [Канонические функции](canonical-functions.md)
-- [Общие сведения о EDMX-файлах](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
-- [Как определять настраиваемые функции в концептуальной модели](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100))
+- [Общие сведения о EDMX-файлах](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [Как определять настраиваемые функции в концептуальной модели](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100))

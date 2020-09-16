@@ -13,12 +13,12 @@ helpviewer_keywords:
 - converting times
 - local time conversions
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
-ms.openlocfilehash: 7d1984866c5eacdfe21834389b8f0be4caf78fb7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 156c3d8b360d62ba72f9a4447646fafe170ea658
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446845"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547334"
 ---
 # <a name="converting-times-between-time-zones"></a>Преобразование времени из одного часового пояса в другой
 
@@ -26,7 +26,7 @@ ms.locfileid: "84446845"
 
 ## <a name="converting-to-coordinated-universal-time"></a>Преобразование во время в формате UTC
 
-Время в формате UTC — это высокоточный, атомарный стандарт времени. Часовые пояса выражаются как положительные или отрицательные смещения относительно времени в формате UTC. Таким образом, время в формате UTC предоставляет тип времени, свободного от часовых поясов, или нейтрального времени часового пояса. Использование времени в формате UTC рекомендовано, когда важна совместимость даты и времени между компьютерами. (Дополнительные сведения и другие рекомендации по датам и времени см. [в разделе Создание кода рекомендаций с использованием DateTime в .NET Framework](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973825(v=msdn.10)).) Преобразование отдельных часовых поясов в формат UTC упрощает сравнение времени.
+Время в формате UTC — это высокоточный, атомарный стандарт времени. Часовые пояса выражаются как положительные или отрицательные смещения относительно времени в формате UTC. Таким образом, время в формате UTC предоставляет тип времени, свободного от часовых поясов, или нейтрального времени часового пояса. Использование времени в формате UTC рекомендовано, когда важна совместимость даты и времени между компьютерами. (Дополнительные сведения и другие рекомендации по датам и времени см. [в разделе Создание кода рекомендаций с использованием DateTime в .NET Framework](/previous-versions/dotnet/articles/ms973825(v=msdn.10)).) Преобразование отдельных часовых поясов в формат UTC упрощает сравнение времени.
 
 > [!NOTE]
 > Можно также сериализовать <xref:System.DateTimeOffset> структуру для однозначного представления одного момента времени. Поскольку <xref:System.DateTimeOffset> объекты хранят значение даты и времени вместе со смещением от времени в формате UTC, они всегда представляют определенный момент времени в связи с временем в формате UTC.
@@ -119,7 +119,7 @@ ms.locfileid: "84446845"
 [!code-csharp[System.DateTimeOffset.Conceptual.OffsetConversions#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.OffsetConversions/cs/timeconversions2.cs#2)]
 [!code-vb[System.DateTimeOffset.Conceptual.OffsetConversions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.OffsetConversions/vb/TimeConversions2.vb#2)]
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.TimeZoneInfo>
 - [Даты, время и часовые пояса](index.md)

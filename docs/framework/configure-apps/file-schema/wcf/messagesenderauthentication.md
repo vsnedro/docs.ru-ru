@@ -2,12 +2,12 @@
 title: <messageSenderAuthentication>
 ms.date: 03/30/2017
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
-ms.openlocfilehash: c6183a8d27d56c7199b815ccb31b06f983a51b33
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 035f3c95fc876f0d451e6b2146e754cfe0959a85
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398390"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90546989"
 ---
 # \<messageSenderAuthentication>
 Задает параметры проверки подлинности для однорангового сертификата, используемого отправителем сообщения.  
@@ -35,7 +35,7 @@ ms.locfileid: "70398390"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`certificateValidationMode`|Необязательное перечисление. Задает один из пяти режимов для проверки учетных данных. Это атрибут типа <xref:System.ServiceModel.Security.X509CertificateValidationMode>. Если свойству присвоено значение `Custom`, также необходимо указать свойство `customCertificateValidator`.|  
 |`customCertificateValidatorType`|Необязательная строка. Задает тип и сборку, используемые для проверки пользовательского типа. Этот атрибут должен быть задан, когда `certificateValidationMode` имеет значение `Custom`. Это атрибут типа <xref:System.IdentityModel.Selectors.X509CertificateValidator>. Windows Communication Foundation (WCF) предоставляет средство проверки однорангового сертификата по умолчанию, которое проверяет одноранговый сертификат в хранилище доверенных лиц. Он также проверяет цепочку сертификатов вплоть до действительного корня. Можно реализовать пользовательский модуль проверки для задания другого поведения и использовать этот атрибут для указания на пользовательский модуль проверки.|  
@@ -62,6 +62,6 @@ ms.locfileid: "70398390"
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
 - [Работа с сертификатами](../../../wcf/feature-details/working-with-certificates.md)
 - [Одноранговая сеть](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Проверка подлинности сообщений для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Пользовательской проверка подлинности для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Проверка подлинности сообщений для однорангового канала](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Пользовательской проверка подлинности для однорангового канала](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Защита приложений одноранговых каналов](../../../wcf/feature-details/securing-peer-channel-applications.md)

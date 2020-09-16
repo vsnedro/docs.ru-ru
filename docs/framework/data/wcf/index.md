@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Astoria
 - WCF Data Services, getting started
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
-ms.openlocfilehash: ca6b196e8c910f97ead6d1df5b6c0dd6c49c68a4
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: c36967236c40efbf432d554c3f551aea22cfb148
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247756"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90549683"
 ---
 # <a name="wcf-data-services-45"></a>Службы WCF Data Services 4.5
 
@@ -76,17 +76,17 @@ WCF Data Services также включает набор клиентских б
 
 Мне по-прежнему нужны дополнительные сведения...
 
-- [Блог группы служб WCF Data Services](https://docs.microsoft.com/archive/blogs/astoriateam/)
+- [Блог группы служб WCF Data Services](/archive/blogs/astoriateam/)
 
 - [Ресурсы](wcf-data-services-resources.md)
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 [Обзор](wcf-data-services-overview.md)
 
 Содержит общие сведения о функциях и функциях, доступных в WCF Data Services.
 
-[Новые возможности WCF Data Services 5,0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
+[Новые возможности WCF Data Services 5,0](/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
 
 Описание новых функциональных возможностей WCF Data Services и поддержки новых функций OData.
 

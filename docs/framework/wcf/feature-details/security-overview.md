@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - WCF, security
 ms.assetid: f478c80d-792d-4e7a-96bd-a2ff0b6f65f9
-ms.openlocfilehash: 517d80395e09598fcbd067034223dc6ba58cbe2e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e7dd73b755c7aed91a1fd59baaf9d5e090a36768
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600442"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90541465"
 ---
 # <a name="windows-communication-foundation-security-overview"></a>Общие сведения о безопасности Windows Communication Foundation
 Windows Communication Foundation (WCF) — это распределенная платформа программирования на основе сообщений SOAP, а защита сообщений между клиентами и службами необходима для защиты данных. WCF предоставляет гибкую и совместимую платформу для обмена защищенными сообщениями на основе существующей инфраструктуры безопасности и признанных стандартов безопасности сообщений SOAP.  
@@ -97,7 +97,7 @@ Windows Communication Foundation (WCF) — это распределенная �
 ### <a name="auditing"></a>Аудит  
  *Аудит* — это запись событий безопасности в журнал событий Windows. Можно регистрировать такие связанные с безопасностью события, как положительные и отрицательные результаты проверки подлинности. Дополнительные сведения см. в разделе [Audit](auditing-security-events.md). Сведения о программировании см. [в разделе как проводить аудит событий безопасности](how-to-audit-wcf-security-events.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - [Защита служб](../securing-services.md)
@@ -113,4 +113,4 @@ Windows Communication Foundation (WCF) — это распределенная �
 - [Привязки, предоставляемые системой](../system-provided-bindings.md)
 - [Общие сведения о создании конечных точек](../endpoint-creation-overview.md)
 - [Расширение безопасности](../extending/extending-security.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

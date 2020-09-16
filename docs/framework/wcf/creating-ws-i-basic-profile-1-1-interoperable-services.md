@@ -7,15 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - configuration [WCF], interoperable services
 ms.assetid: 91b70a21-8f5c-4679-808c-2ed5fa6b2013
-ms.openlocfilehash: fd7828cccb1a19a17e899525d863021d3670fbdd
-ms.sourcegitcommit: c91110ef6ee3fedb591f3d628dc17739c4a7071e
+ms.openlocfilehash: 5fc29432bdd55daff2d60d641a4cea4925278032
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389741"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543021"
 ---
 # <a name="creating-ws-i-basic-profile-11-interoperable-services"></a>Создание служб, поддерживающих взаимодействие с базовым профилем WS-I 1.1
-Настройка конечная точка службы WCF, которая будет совместима с ASP.NET клиентами Web-сервисов:  
+Чтобы настроить конечную точку службы WCF для взаимодействия с клиентами веб-службы ASP.NET, выполните следующие действия.  
   
 - использовать в качестве типа привязки для конечной точки службы тип <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>;  
   
@@ -29,12 +29,12 @@ ms.locfileid: "81389741"
   
 - Безопасность сообщения управляется значением <xref:System.ServiceModel.BasicHttpBinding.Security%2A?displayProperty=nameWithType> и обеспечивает поддержку WS-Security, совместимую с основным профилем безопасности WS-I версии 1.0. Не изменяйте значение этого свойства по умолчанию - <xref:System.ServiceModel.SecurityMode.Transport?displayProperty=nameWithType> (не использовать WS-Security).  
   
-Чтобы сделать метаданные для службы WCF доступными для ASP.NET, используйте инструменты генерации клиентов Web service: [Web Services Description Language Tool (Wsdl.exe),](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7h3ystb6%28v=vs.100%29)Web Services Discovery Tool [(Disco.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cy2a3ybs%28v=vs.100%29)и функцию **Добавить веб-справку** в Visual Studio. Включить публикацию метаданных. Для получения дополнительной информации [см.](publishing-metadata-endpoints.md)  
+Чтобы сделать метаданные для службы WCF доступными для ASP.NET, используйте средства создания клиентов веб-службы: [средство языка описания веб-служб (Wsdl.exe)](/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100)), [средство обнаружения веб-служб (Disco.exe)](/previous-versions/dotnet/netframework-4.0/cy2a3ybs(v=vs.100))и функцию **Добавить веб-ссылку** в Visual Studio. Включить публикацию метаданных. Дополнительные сведения см. в разделе [Публикация конечных точек метаданных](publishing-metadata-endpoints.md).  
   
 ## <a name="example"></a>Пример  
   
 ### <a name="description"></a>Описание  
- В следующем примере кода показано, как добавить конечную точку WCF, совместимую с клиентами ASP.NET web-сервисов в коде и, в качестве альтернативы, в файл конфигурации.  
+ В следующем примере кода показано, как добавить конечную точку WCF, совместимую с клиентами веб-службы ASP.NET, в коде и, Кроме того, в файле конфигурации.  
   
 ### <a name="code"></a>Код  
  [!code-csharp[C_HowTo-WCFServiceAndASMXClient#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/cs/program.cs#0)]

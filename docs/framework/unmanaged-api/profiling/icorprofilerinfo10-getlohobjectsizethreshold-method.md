@@ -11,12 +11,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 7a0f6f6bea5bc919ebfe9c9acc3b02a31eaa7cd0
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: 280f0a401f87f81e1ef9d4a2c85c06599442b5ec
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452218"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543950"
 ---
 # <a name="icorprofilerinfo10getlohobjectsizethreshold-method"></a>Метод ICorProfilerInfo10:: Жетлохобжектсизесрешолд
 
@@ -34,20 +34,20 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 
   \[out] пороговое значение кучи больших объектов в байтах.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Объекты, превышающие пороговое значение кучи больших объектов, будут выделены в куче больших объектов. Начиная с .NET Core 3,0, порог кучи больших объектов можно настроить, `pThreshold` будет содержать пороговое значение активной кучи больших объектов в байтах.
+Объекты, превышающие пороговое значение кучи больших объектов, будут выделены в куче больших объектов. Начиная с .NET Core 3,0, порог кучи больших объектов можно настроить, он `pThreshold` будет содержать пороговое значение активной кучи больших объектов в байтах.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/dependencies.md?pivots=os-windows).
+**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo10](icorprofilerinfo10-interface.md)

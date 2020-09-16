@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f450f5d4-3547-47ec-9320-2809e6a12634
-ms.openlocfilehash: 591f7db0f6b4e928a991961d3bc7c404f41028bf
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1edbfe2d0d25ea9f2145f879673fc9f0a6ee7f96
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579284"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547197"
 ---
 # <a name="intranet-unsecured-client-and-service"></a>Незащищенные интранет-клиент и служба
 На следующем рисунке показана простая служба Windows Communication Foundation (WCF), разработанная для предоставления информации о защищенной частной сети приложению WCF. Безопасность не требуется, поскольку данные имеют низкую важность, ожидается безопасность сети, или безопасность обеспечивается уровнем, который находится под инфраструктурой WCF.  
@@ -19,13 +19,13 @@ ms.locfileid: "84579284"
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Нет|  
+|Режим безопасности|None|  
 |Транспорт|TCP|  
 |Привязка|<xref:System.ServiceModel.NetTcpBinding>|  
-|Взаимодействие|Только WCF|  
-|Аутентификация|Нет|  
-|Целостность|Нет|  
-|Конфиденциальность|Нет|  
+|Совместимость|Только WCF|  
+|Аутентификация|None|  
+|Целостность|None|  
+|Конфиденциальность|None|  
   
 ## <a name="service"></a>Служба  
  Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
@@ -75,7 +75,7 @@ ms.locfileid: "84579284"
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -112,8 +112,8 @@ ms.locfileid: "84579284"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.NetTcpBinding>
 - [Обзор безопасности](security-overview.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1f5ce46b-e259-4bc9-a0b9-89d06fc9341c
-ms.openlocfilehash: f90906b4c3fc1d1d76977451abfb238bb33fb581
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 29ac26616313ec8bd7661cb92c42f726ec051cd7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595119"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90542891"
 ---
 # <a name="trusted-subsystem"></a>Доверенная подсистема
 Клиент обращается к одной или нескольким веб-службам, распределенным по сети. Веб-службы устроены так, что доступ к дополнительным ресурсам (таким как базы данных или другие веб-службы) инкапсулируется в бизнес-логике веб-службы. Эти ресурсы должны быть защищены от несанкционированного доступа. На следующем рисунке показан процесс доверенной подсистемы.  
@@ -32,13 +32,13 @@ ms.locfileid: "84595119"
 |Характеристика|Описание|  
 |--------------------|-----------------|  
 |Режим безопасности|Сообщение|  
-|Взаимодействие|Только Windows Communication Foundation (WCF).|  
+|Совместимость|Только Windows Communication Foundation (WCF).|  
 |Проверка подлинности (служба)|Служба маркеров безопасности проверяет подлинность клиентов и авторизует их.|  
 |Проверка подлинности (клиент)|Доверенная подсистема проверяет подлинность клиента, а ресурс проверяет подлинность службы доверенной подсистемы.|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
 |Транспорт|HTTP между клиентом и службой доверенной подсистемы.<br /><br /> NET.TCP между службой доверенной подсистемы и ресурсом (внутренней службой).|  
-|Привязка|<xref:System.ServiceModel.WSHttpBinding>перетаскивани<xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
+|Привязка|<xref:System.ServiceModel.WSHttpBinding> перетаскивани <xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
   
 ## <a name="resource-back-end-service"></a>Ресурс (внутренняя служба)  
   
@@ -210,7 +210,7 @@ ms.locfileid: "84595119"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

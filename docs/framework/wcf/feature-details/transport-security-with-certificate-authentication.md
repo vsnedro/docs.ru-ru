@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 dev_langs:
 - csharp
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
-ms.openlocfilehash: 3da1202a5ad3b953470b50dd5924b2ab45f301eb
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 38f7d310be41455dd12460fdfa93d7e624d10c2a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244782"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90545224"
 ---
 # <a name="transport-security-with-certificate-authentication"></a>Безопасность транспорта с проверкой подлинности с использованием сертификатов
 
@@ -24,12 +24,12 @@ ms.locfileid: "85244782"
   
 |Характеристика|Описание|  
 |--------------------|-----------------|  
-|Режим безопасности|Транспортировка|  
+|Режим безопасности|Транспорт|  
 |Совместимость|С существующими службами и клиентами веб-служб.|  
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да (с использованием SSL-сертификата)<br /><br /> Да (с использованием сертификата X.509)|  
 |Целостность данных|Да|  
 |Конфиденциальность данных|Да|  
-|Транспортировка|HTTPS|  
+|Транспорт|HTTPS|  
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="configure-the-service"></a>Настройка службы  
@@ -142,4 +142,4 @@ cc.Close();
 ## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

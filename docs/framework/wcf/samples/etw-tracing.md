@@ -3,12 +3,12 @@ title: Трассировка ETW
 description: В этом примере показано, как реализовать сквозную трассировку (E2E) с помощью трассировки событий для Windows (ETW) и Етвтрацелистенер.
 ms.date: 03/30/2017
 ms.assetid: ac99a063-e2d2-40cc-b659-d23c2f783f92
-ms.openlocfilehash: 210186285ed749a5d1567becd6738939b0bd9d03
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 6e7526ef05d672b550599e3b12a4b083e9130b96
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244430"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547145"
 ---
 # <a name="etw-tracing"></a>Трассировка ETW
 В этом примере показано, как реализовать сквозную трассировку (E2E) с помощью трассировки событий для Windows (трассировка событий Windows) и `ETWTraceListener`, предоставляемого с этим примером. Образец основан на [Начало работы](getting-started-sample.md) и включает трассировку ETW.  
@@ -51,7 +51,7 @@ ms.locfileid: "85244430"
  Перед использованием этого прослушивателя необходимо запустить сеанс трассировки событий Windows. Этот сеанс может быть запущен с помощью программ Logman.exe или Tracelog.exe. В этот образец включен файл SetupETW.bat, поэтому можно настроить сеанс трассировки событий Windows вместе с файлом CleanupETW.bat для закрытия сеанса и завершения выполнения файла журнала.  
   
 > [!NOTE]
-> Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела. Дополнительные сведения об этих средствах см. в разделе<https://go.microsoft.com/fwlink/?LinkId=56580>  
+> Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела. Дополнительные сведения об этих средствах см. в разделе <https://go.microsoft.com/fwlink/?LinkId=56580>  
   
  При использовании ETWTraceListener трассировки заносятся в журнал в двоичных файлах с расширением ETL. Если трассировка ServiceModel включена, все созданные трассировки отображаются в одном и том же файле. Используйте [средство Service Trace Viewer (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) для просмотра файлов журнала ETL и SVCLOG. Средство просмотра создает сквозное представление системы, позволяющее выполнять трассировку сообщения на пути от источника в место назначения и точку потребления.  
   
@@ -109,4 +109,4 @@ logman stop Wcf
   
 ## <a name="see-also"></a>См. также
 
-- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

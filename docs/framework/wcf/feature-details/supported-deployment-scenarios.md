@@ -2,12 +2,12 @@
 title: Поддерживаемые сценарии развертывания
 ms.date: 03/30/2017
 ms.assetid: 3399f208-3504-4c70-a22e-a7c02a8b94a6
-ms.openlocfilehash: 5be9ab3d300da2095a45846d334512382b4067f6
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 299c8f2e29806a123e0a8b6e1e70d8cc13daa7bf
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76743449"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90546254"
 ---
 # <a name="supported-deployment-scenarios"></a>Поддерживаемые сценарии развертывания
 
@@ -27,7 +27,7 @@ WCF поддерживает подмножество функций в прил
 
 ## <a name="partial-trust-on-the-server"></a>Частичное доверие на сервере
 
-Многие коммерческие поставщики услуг размещения веб-приложений ASP.NET требуют, чтобы приложения, запущенные на их серверах, выполнялись в наборе разрешений ASP.NET 2,0 Medium Trust. Службы WCF могут работать в этих средах при условии, что они используют <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WebHttpBinding>или <xref:System.ServiceModel.WSHttpBinding> с безопасностью транспортного уровня.
+Многие коммерческие поставщики услуг размещения веб-приложений ASP.NET требуют, чтобы приложения, запущенные на их серверах, выполнялись в наборе разрешений ASP.NET 2,0 Medium Trust. Службы WCF могут работать в этих средах при условии, что они используют <xref:System.ServiceModel.BasicHttpBinding> , <xref:System.ServiceModel.WebHttpBinding> или, <xref:System.ServiceModel.WSHttpBinding> с защитой транспортного уровня.
 
 Службы WCF, работающие в средах размещения со средним уровнем доверия, также могут действовать как службы среднего уровня путем отправки сообщений на другие серверы в ответ на запросы клиентов. На сервере поддерживаются промежуточные сценарии, если среда размещения предоставила приложению соответствующее разрешение <xref:System.Net.WebPermission> на отправку исходящих запросов на требуемый сервер.
 
@@ -35,17 +35,17 @@ WCF поддерживает подмножество функций в прил
 
 Службы рабочего процесса требуют наличия разрешений полного доверия, их невозможно использовать в частично доверенных приложениях.
 
-Дополнительные сведения см. [в разделе Использование среднего уровня доверия в ASP.NET 2,0](https://docs.microsoft.com/previous-versions/msp-n-p/ff648344(v=pandp.10)).
+Дополнительные сведения см. [в разделе Использование среднего уровня доверия в ASP.NET 2,0](/previous-versions/msp-n-p/ff648344(v=pandp.10)).
 
 ## <a name="partial-trust-on-the-client"></a>Частичное доверие на клиенте
 
 Необходимо предпринять определенные дополнительные меры безопасности при загрузке и запуске кода с ненадежных веб-сайтов Интернета. Как [Развертывание ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment) , так и технология приложения браузера XAML (XBAP) WPF используют частичное доверие для предоставления ограниченных разрешений (зоны Интернета) недоверенному коду.
 
-WCF можно использовать для взаимодействия с удаленными серверами из приложений с частичным доверием, развернутых либо [развертыванием ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment) , либо XBAP. Набор разрешений зоны Интернета включает <xref:System.Net.WebPermission> для исходного узла, который позволяет этим приложениям взаимодействовать с исходным сервером с помощью любой из поддерживаемых привязок WCF, описанных в статье [совместимость функций частичного доверия](partial-trust-feature-compatibility.md).
+WCF можно использовать для взаимодействия с удаленными серверами из приложений с частичным доверием, развернутых либо [развертыванием ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment) , либо XBAP. Набор разрешений зоны Интернета включает в себя <xref:System.Net.WebPermission> Исходный узел, который позволяет этим приложениям взаимодействовать с сервером, на котором они установлены, с помощью любой из поддерживаемых привязок WCF, описанных в статье [совместимость функций частичного доверия](partial-trust-feature-compatibility.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление доступом для кода](../../misc/code-access-security.md)
-- [Общие сведения о приложениях, размещенных в браузере Windows Presentation Foundation](../../wpf/app-development/wpf-xaml-browser-applications-overview.md)
+- [Обзор размещенных в веб-браузере приложений Windows Presentation Foundation](/dotnet/desktop/wpf/app-development/wpf-xaml-browser-applications-overview)
 - [Частичное доверие](partial-trust.md)
-- [ASP.NET уровни доверия и файлы политик](https://docs.microsoft.com/previous-versions/wyts434y(v=vs.140))
+- [ASP.NET уровни доверия и файлы политик](/previous-versions/wyts434y(v=vs.140))
