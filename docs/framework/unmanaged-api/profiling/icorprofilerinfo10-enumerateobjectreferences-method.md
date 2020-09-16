@@ -11,12 +11,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 9aadf9701444d215291b6fc19cc8cd61ca832837
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: a276ecfe65ed9752f39ed68a36e8e17a24255508
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452244"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558320"
 ---
 # <a name="icorprofilerinfo10enumerateobjectreferences-method"></a>Метод ICorProfilerInfo10:: Енумератеобжектреференцес
 
@@ -38,26 +38,26 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
 
 - `callback`
 
-  \[в] функция, которая будет вызываться со ссылками для объекта.
+  \[in] функция, которая будет вызываться со ссылками на объект.
 
 - `clientData`
 
-  \[in] данные, предоставленные профилировщиком, передаются в функцию `callback`.
+  \[in] данные, предоставленные профилировщиком, передаются в `callback` функцию.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Метод `EnumerateObjectReferences` аналогичен [ObjectReferences](icorprofilercallback-objectreferences-method.md), за исключением того, что он просматривает ссылки по запросу для профилировщика вместо предварительного выделения массива для хранения ссылок.
+`EnumerateObjectReferences`Метод аналогичен [ObjectReferences](icorprofilercallback-objectreferences-method.md), за исключением того, что он просматривает ссылки по запросу для профилировщика вместо предварительного выделения массива для хранения ссылок.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/dependencies.md?pivots=os-windows).
+**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo10](icorprofilerinfo10-interface.md)

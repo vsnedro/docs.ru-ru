@@ -2,23 +2,23 @@
 title: Настраиваемое отслеживание
 ms.date: 03/30/2017
 ms.assetid: 2d191c9f-62f4-4c63-92dd-cda917fcf254
-ms.openlocfilehash: 2b100b877bbc8c6d830f09a4a59decffde511511
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 87f72359e16b4268d77148ec16a626c2bac5751c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182839"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557036"
 ---
 # <a name="custom-tracking"></a>Настраиваемое отслеживание
 В данном образце демонстрируется создание настраиваемого участника отслеживания и запись содержимого данных отслеживания в консоль. Помимо этого, в образце демонстрируется создание <xref:System.Activities.Tracking.CustomTrackingRecord> объектов, заполненных определенными пользователем данными. Консольный участник отслеживания фильтрует <xref:System.Activities.Tracking.TrackingRecord> объекты, выпущенные рабочим процессом, используя объект профиля отслеживания, созданный в коде.
 
 ## <a name="sample-details"></a>Подробные сведения об образце
- Фонд рабочего процесса Windows (WF) предоставляет инфраструктуру отслеживания для отслеживания выполнения экземпляра рабочего процесса. Среда выполнения для отслеживания реализует экземпляр рабочего процесса для создания событий, связанных с жизненным циклом рабочего процесса, действиями рабочего процесса и настраиваемыми событиями отслеживания. В следующих сведениях о таблице подробно описаны основные компоненты инфраструктуры отслеживания.
+ Windows Workflow Foundation (WF) предоставляет инфраструктуру отслеживания для отслеживания выполнения экземпляра рабочего процесса. Среда выполнения для отслеживания реализует экземпляр рабочего процесса для создания событий, связанных с жизненным циклом рабочего процесса, действиями рабочего процесса и настраиваемыми событиями отслеживания. В следующих сведениях о таблице подробно описаны основные компоненты инфраструктуры отслеживания.
 
 |Компонент|Описание|
 |---------------|-----------------|
 |Среда выполнения отслеживания|Предоставляет инфраструктуру для передачи записей отслеживания.|
-|Участники отслеживания|Потребляет записи отслеживания. .NET Framework 4 поставляется с участником отслеживания, который записывает записи отслеживания как отслеживание событий для Windows (ETW).|
+|Участники отслеживания|Потребляет записи отслеживания. .NET Framework 4 поставляется с участником отслеживания, который записывает записи отслеживания в качестве события трассировки событий Windows (ETW).|
 |Профиль отслеживания|Механизм фильтрации, который позволяет участнику отслеживания подписаться на подмножество записей отслеживания, передаваемых из экземпляра рабочего процесса.|
 
  Следующая таблица содержит подробные сведения о записях отслеживания, создаваемых средой выполнения рабочего процесса.
@@ -47,7 +47,7 @@ public abstract class TrackingParticipant
 }
 ```
 
- Полный участник отслеживания реализован в файле ConsoleTrackingParticipant.cs. Следующий пример кода <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> — это метод для пользовательского участника отслеживания.
+ Полный участник отслеживания реализуется в файле ConsoleTrackingParticipant.cs. В следующем примере кода показан <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> метод для настраиваемого участника отслеживания.
 
 ```csharp
 protected override void Track(TrackingRecord record, TimeSpan timeout)
@@ -112,7 +112,7 @@ invoker.Extensions.Add(customTrackingParticipant);
 
 - Объекты <xref:System.Activities.Tracking.CustomTrackingRecord> создаются и заполняются определенными пользователем данными, которые, по замыслу пользователя, будут выдаваться вместе с записью.
 
-- Испускается, <xref:System.Activities.Tracking.CustomTrackingRecord> позвонив метод <xref:System.Activities.ActivityContext>трека .
+- <xref:System.Activities.Tracking.CustomTrackingRecord>Выдается путем вызова метода Track объекта <xref:System.Activities.ActivityContext> .
 
  В следующем примере продемонстрировано создание <xref:System.Activities.Tracking.CustomTrackingRecord> объектов в рамках пользовательской операции.
 
@@ -133,7 +133,7 @@ context.Track(customRecord);
 
 #### <a name="to-use-this-sample"></a>Использование этого образца
 
-1. Используя Visual Studio 2010, откройте файл решений CustomTrackingSample.sln.
+1. С помощью Visual Studio 2010 откройте файл решения Кустомтраккингсампле. sln.
 
 2. Для построения решения нажмите CTRL+SHIFT+B.
 
@@ -144,10 +144,10 @@ context.Track(customRecord);
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

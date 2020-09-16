@@ -2,12 +2,12 @@
 title: Указанный журнал событий не существует на этом компьютере.
 ms.date: 07/20/2015
 ms.assetid: 974a23e7-37ea-4de2-b282-4cf46600694f
-ms.openlocfilehash: 4f36b3c1e1d3572f9c4ca185b6aa150c61a93af7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9114e13e34bc9d252f7ac12d8eb4db126aaf01b9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406980"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555631"
 ---
 # <a name="specified-event-log-does-not-exist-on-this-machine"></a>Указанный журнал событий не существует на этом компьютере.
 Выполнена попытка доступа к журналу событий, который не существует на этом компьютере.  
@@ -16,7 +16,7 @@ ms.locfileid: "84406980"
   
 - Убедитесь, что вы указали правильное имя файла и путь.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Администрирование журналов событий](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
+- [Администрирование журналов событий](/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
 - [Практическое руководство. Анализ путей к файлам](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

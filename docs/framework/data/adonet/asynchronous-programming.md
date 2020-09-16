@@ -3,12 +3,12 @@ title: Асинхронное программирование
 description: Сведения об асинхронном программировании в .NET Framework поставщике данных для SQL Server, включая улучшения, появившиеся в .NET Framework 4,5.
 ms.date: 10/18/2018
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
-ms.openlocfilehash: 2e5f48b0818ab9cfabc75ba47c95c8198e0fe7fa
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b8f718e0def2ab0b6953ed121eb916f282562d32
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287107"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558476"
 ---
 # <a name="asynchronous-programming"></a>Асинхронное программирование
 
@@ -39,9 +39,9 @@ ms.locfileid: "84287107"
 
 - [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)
 
-- [Использование новых асинхронных методов SqlDataReader в .NET 4,5 (часть 1)](https://docs.microsoft.com/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5)
+- [Использование новых асинхронных методов SqlDataReader в .NET 4,5 (часть 1)](/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5)
 
-- [Использование новых асинхронных методов SqlDataReader в .NET 4,5 (часть 2)](https://docs.microsoft.com/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples)
+- [Использование новых асинхронных методов SqlDataReader в .NET 4,5 (часть 2)](/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples)
 
 Если пользовательский интерфейс не отвечает или не удается осуществить масштабирование сервера, то, скорее всего, необходимо обеспечить большую поддержку асинхронных средств в коде. Согласно традиционному способу, создание асинхронного кода влечет за собой установку обратного вызова (называемого также продолжением) для представления логики, которая выполняется после завершения асинхронной операции. Это осложняет структуру асинхронного кода по сравнению с синхронным.
 
@@ -182,7 +182,7 @@ class A {
 
 Может потребоваться создать инструмент, который может подключаться к разным базам данных и выполнять запросы. Можно использовать базовую модель поставщика и новую асинхронную функцию.
 
-Для использования распределенных транзакций необходимо включить на сервере MSDTC. Сведения о включении MSDTC см. в статье [Включение MSDTC на веб-сервере](https://docs.microsoft.com/previous-versions/commerce-server/dd327979(v=cs.90)).
+Для использования распределенных транзакций необходимо включить на сервере MSDTC. Сведения о включении MSDTC см. в статье [Включение MSDTC на веб-сервере](/previous-versions/commerce-server/dd327979(v=cs.90)).
 
 ```csharp
 using System;

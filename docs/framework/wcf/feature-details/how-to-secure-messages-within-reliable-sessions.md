@@ -2,12 +2,12 @@
 title: Практическое руководство. Защита сообщений с помощью надежных сеансов
 ms.date: 03/30/2017
 ms.assetid: aee33e50-936f-4486-9ca8-c1520c19a62d
-ms.openlocfilehash: 306d0f96b5163fe5c24d270b4b9a7c1d3f499e7e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cec9356467886be022d05ead55d5cb6ccddcd838
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596959"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558684"
 ---
 # <a name="how-to-secure-messages-within-reliable-sessions"></a>Практическое руководство. Защита сообщений с помощью надежных сеансов
 
@@ -21,7 +21,7 @@ ms.locfileid: "84596959"
 
 1. необходимо задать тип учетных данных клиента, который должен использоваться при проверке подлинности клиента в службе.
 
-В первой задаче важно, чтобы элемент конфигурации конечной точки содержал `bindingConfiguration` атрибут, который ссылается на конфигурацию привязки с именем (в этом примере) `MessageSecurity` . [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md)Элемент Configuration затем ссылается на это имя, чтобы включить надежные сеансы, задав `enabled` атрибуту [**\<reliableSession>**](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90)) элемента значение `true` . Можно потребовать гарантии упорядоченной доставки сообщений в ходе надежного сеанса, присвоив атрибуту `ordered` значение `true`.
+В первой задаче важно, чтобы элемент конфигурации конечной точки содержал `bindingConfiguration` атрибут, который ссылается на конфигурацию привязки с именем (в этом примере) `MessageSecurity` . [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md)Элемент Configuration затем ссылается на это имя, чтобы включить надежные сеансы, задав `enabled` атрибуту [**\<reliableSession>**](/previous-versions/ms731375(v=vs.90)) элемента значение `true` . Можно потребовать гарантии упорядоченной доставки сообщений в ходе надежного сеанса, присвоив атрибуту `ordered` значение `true`.
 
 Исходный экземпляр примера, на котором основана эта процедура конфигурации, см. в разделе [надежный сеанс WS](../samples/ws-reliable-session.md).
 

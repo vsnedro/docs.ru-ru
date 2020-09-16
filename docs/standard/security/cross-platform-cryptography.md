@@ -6,12 +6,12 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - cryptography, cross-platform
 - encryption, cross-platform
-ms.openlocfilehash: 61fd49e53761deac278b770003eb97241b6c2be9
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 7269b32e509039fdd767446bd6e10202b089c094
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557155"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550023"
 ---
 # <a name="cross-platform-cryptography-in-net-core-and-net-5"></a>Кросс-платформенная криптография в .NET Core и .NET 5
 
@@ -100,7 +100,7 @@ ms.locfileid: "87557155"
 
 Библиотеки ОС используются для заполнения и расшифровки. Не все платформы поддерживают одни и те же параметры заполнения:
 
-| Режим заполнения                          | Windows (CNG) | Linux (OpenSSL) | macOS | Windows (CAPI) |
+| Режим заполнения                          | Windows (CNG) | Linux (OpenSSL) | MacOS | Windows (CAPI) |
 |---------------------------------------|---------------|-----------------|-------|----------------|
 | Шифрование PKCS1                      | ✔️           | ✔️              | ✔️   | ✔️             |
 | OAEP-SHA-1                          | ✔️           | ✔️              | ✔️   | ✔️             |
@@ -109,7 +109,7 @@ ms.locfileid: "87557155"
 | Подпись PKCS1 (SHA-2)               | ✔️           | ✔️              | ✔️   | ⚠️\*           |
 | PSS                                   | ✔️           | ✔️              | ✔️   | ❌             |
 
-\*Windows CryptoAPI (CAPI) поддерживает PKCS1 сигнатуру с помощью алгоритма SHA-2. Но отдельный объект RSA может быть загружен в поставщик служб шифрования (CSP), который не поддерживает его.
+\* Windows CryptoAPI (CAPI) поддерживает PKCS1 сигнатуру с помощью алгоритма SHA-2. Но отдельный объект RSA может быть загружен в поставщик служб шифрования (CSP), который не поддерживает его.
 
 #### <a name="rsa-on-windows"></a>RSA в Windows
 
@@ -151,7 +151,7 @@ ms.locfileid: "87557155"
 
 <sup>1</sup> дистрибутивы Linux не поддерживают одни и те же именованные кривые.
 
-<sup>2</sup> поддержка именованных кривых была добавлена в Windows CNG в Windows 10. Дополнительные сведения см. в разделе [CNG с именем эллиптические кривые](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Именованные кривые недоступны в более ранних версиях Windows, за исключением трех кривых в Windows 7.
+<sup>2</sup> поддержка именованных кривых была добавлена в Windows CNG в Windows 10. Дополнительные сведения см. в разделе [CNG с именем эллиптические кривые](/windows/win32/seccng/cng-named-elliptic-curves). Именованные кривые недоступны в более ранних версиях Windows, за исключением трех кривых в Windows 7.
 
 <sup>3</sup> для экспорта с явными параметрами кривой требуется поддержка библиотеки ОС, которая недоступна в macOS или более ранних версиях Windows.
 
@@ -164,7 +164,7 @@ ms.locfileid: "87557155"
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️     | ❌    | ❌    |
 | <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌     | ✔️    | ⚠️\*  |
 
-\*В macOS <xref:System.Security.Cryptography.ECDsaOpenSsl> работает, если в системе установлен OpenSSL, а соответствующий либкрипто dylib можно найти с помощью динамической загрузки библиотеки. Если не удается найти соответствующую библиотеку, будут созданы исключения.
+\* В macOS <xref:System.Security.Cryptography.ECDsaOpenSsl> работает, если в системе установлен OpenSSL, а соответствующий либкрипто dylib можно найти с помощью динамической загрузки библиотеки. Если не удается найти соответствующую библиотеку, будут созданы исключения.
 
 ### <a name="ecdh"></a>ECDH
 
@@ -194,7 +194,7 @@ ms.locfileid: "87557155"
 
 <sup>1</sup> дистрибутивы Linux не поддерживают одни и те же именованные кривые.
 
-<sup>2</sup> поддержка именованных кривых была добавлена в Windows CNG в Windows 10. Дополнительные сведения см. в разделе [CNG с именем эллиптические кривые](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Именованные кривые недоступны в более ранних версиях Windows, за исключением трех кривых в Windows 7.
+<sup>2</sup> поддержка именованных кривых была добавлена в Windows CNG в Windows 10. Дополнительные сведения см. в разделе [CNG с именем эллиптические кривые](/windows/win32/seccng/cng-named-elliptic-curves). Именованные кривые недоступны в более ранних версиях Windows, за исключением трех кривых в Windows 7.
 
 <sup>3</sup> для экспорта с явными параметрами кривой требуется поддержка библиотеки ОС, которая недоступна в macOS или более ранних версиях Windows.
 
@@ -207,7 +207,7 @@ ms.locfileid: "87557155"
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌   |
 | <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️\* |
 
-\*В macOS <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> работает, если установлен OpenSSL и соответствующий либкрипто dylib можно найти с помощью динамической загрузки библиотеки. Если не удается найти соответствующую библиотеку, будут созданы исключения.
+\* В macOS <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> работает, если установлен OpenSSL и соответствующий либкрипто dylib можно найти с помощью динамической загрузки библиотеки. Если не удается найти соответствующую библиотеку, будут созданы исключения.
 
 ### <a name="dsa"></a>DSA
 
@@ -222,7 +222,7 @@ ms.locfileid: "87557155"
 | FIPS 186-2                    | ✔️         | ✔️    | ✔️            | ✔️           |
 | FIPS 186-3 (подписи SHA-2) | ✔️         | ✔️    | ❌            | ❌            |
 
-\*macOS загружает ключи DSA больше 1024 бит, но поведение этих ключей не определено. Они не работают в соответствии с FIPS 186-3.
+\* macOS загружает ключи DSA больше 1024 бит, но поведение этих ключей не определено. Они не работают в соответствии с FIPS 186-3.
 
 #### <a name="dsa-on-windows"></a>DSA в Windows
 
@@ -261,7 +261,7 @@ ms.locfileid: "87557155"
 | Несколько сертификатов, один закрытый ключ       | ✔️     | ✔️    | ✔️   |
 | Несколько сертификатов, несколько закрытых ключей | ✔️     | ⚠️\*  | ✔️   |
 
-\*Доступно в выпусках .NET 5 Preview.
+\* Доступно в выпусках .NET 5 Preview.
 
 ### <a name="write-a-pkcs12pfx"></a>Запись PKCS12/PFX
 
@@ -275,7 +275,7 @@ ms.locfileid: "87557155"
 | Несколько сертификатов, несколько закрытых ключей | ✔️     | ⚠️\*  | ✔️   |
 | Эфемерная Загрузка                            | ✔️     | ✔️    | ⚠️\* |
 
-\*Доступно в выпусках .NET 5 Preview.
+\* Доступно в выпусках .NET 5 Preview.
 
 macOS не может загрузить закрытые ключи сертификата без объекта цепочки ключей, что требует записи на диск. Области цепочки ключей создаются автоматически для загрузки PFX и удаляются, когда они больше не используются. Поскольку <xref:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet?displayProperty=nameWithType> параметр означает, что закрытый ключ не должен записываться на диск, при утверждении этого флага в macOS результат будет иметь значение <xref:System.PlatformNotSupportedException> .
 

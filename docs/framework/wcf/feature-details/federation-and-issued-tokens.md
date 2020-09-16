@@ -6,17 +6,17 @@ helpviewer_keywords:
 - issued tokens [WCF]
 - federation [WCF], issued tokens
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
-ms.openlocfilehash: aeffc1e2a7b61dfd9406b9f06678064533ea61ec
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: dffba51c1bf1aaffbed8725aafc96fd747cb31c6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595509"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559256"
 ---
 # <a name="federation-and-issued-tokens"></a>Федерация и выданные маркеры
 С помощью Windows Communication Foundation (WCF) можно создавать клиенты, которые безопасно обмениваются данными со службами, реализующими спецификации WS-Federation и WS-Trust. В этих спецификациях XML, протокол SOAP и язык WSDL используются для предоставления механизмов, позволяющих производить проверку подлинности и авторизацию в различных областях доверия.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Федерация](federation.md)  
  Общие сведения о федерации.  
   
@@ -65,4 +65,4 @@ ms.locfileid: "84595509"
 
 - [Авторизация](authorization-in-wcf.md)
 - [Пользовательские маркеры](../extending/custom-tokens.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

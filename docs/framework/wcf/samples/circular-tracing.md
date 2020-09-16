@@ -2,12 +2,12 @@
 title: Циклическая трассировка
 ms.date: 03/30/2017
 ms.assetid: 5ff139f9-8806-47bc-8f33-47fe6c436b92
-ms.openlocfilehash: 1759db28cb024afc04d02c4b128f96d73aefdd87
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d9af1f18a507a79c9c287393652e65dcb3372444
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585445"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552523"
 ---
 # <a name="circular-tracing"></a>Циклическая трассировка
 
@@ -22,7 +22,7 @@ ms.locfileid: "84585445"
 
 Реализация прослушивателя трассировки циклического буфера основана на двух файлах, каждый из которых может содержать до половины общего требуемого объема данных журнала трассировки. Прослушиватель создает один файл и производит запись в этот файл до тех пор, пока не будет достигнут предел, равный половине объема данных, после чего переключается на второй файл. После того как прослушивать достигает предела для второго файла, он перезаписывает первый файл, заполняя его новыми трассировками.
 
-Этот прослушиватель является производным от `XmlWriteTraceListener` и позволяет просматривать журналы с помощью [средства Service Trace Viewer (SvcTraceViewer. exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). При просмотре журналов можно легко объединить два файла журнала, одновременно открыв их в средстве Service Trace Viewer. Средство Service Trace Viewer автоматически сортирует трассировки, чтобы они отображались в правильном порядке.
+Этот прослушиватель является производным от `XmlWriteTraceListener` и позволяет просматривать журналы с помощью [средства Service Trace Viewer (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). При просмотре журналов можно легко объединить два файла журнала, одновременно открыв их в средстве Service Trace Viewer. Средство Service Trace Viewer автоматически сортирует трассировки, чтобы они отображались в правильном порядке.
 
 ## <a name="configuration"></a>Конфигурация
 
@@ -62,6 +62,6 @@ ms.locfileid: "84585445"
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\CircularTracing`
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

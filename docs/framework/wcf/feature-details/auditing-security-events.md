@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - auditing security events [WCF]
 ms.assetid: 5633f61c-a3c9-40dd-8070-1c373b66a716
-ms.openlocfilehash: b130ed57ba086535122c8c8795c42863348870d0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5ab10bcc58166d5a38768f988fb18f23088256cc
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597661"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558294"
 ---
 # <a name="auditing-security-events"></a>Аудит событий безопасности
 Приложения, созданные с помощью Windows Communication Foundation (WCF), могут регистрировать события безопасности (успех, сбой или и то, и другое) с помощью функции аудита. События записываются в журнал системных событий Windows, и их можно просматривать при помощи средства просмотра событий.  
@@ -75,7 +75,7 @@ ms.locfileid: "84597661"
   
  Если аудит включен и параметр `auditLogLocation` не задан, для систем, поддерживающих запись в журнал безопасности, по умолчанию используется журнал "Security"; в противном случае используется журнал "Application". Запись в журнал безопасности поддерживают только операционные системы Windows Server 2003 и Windows Vista. Дополнительные сведения см. в подразделе «операционная система» далее в этом разделе.  
   
-## <a name="security-considerations"></a>Соображения безопасности  
+## <a name="security-considerations"></a>Вопросы безопасности  
  Если злоумышленник знает о том, что включен аудит, он может отправить недопустимые сообщения, приводящие к внесению записей аудита в журнал. Если это приводит к заполнению журнала аудита, система аудита дает сбой. Для решения этой проблемы задайте свойству <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> значение `true` и используйте свойства средства «Просмотр событий» для управления поведением аудита.  
   
  События аудита, записываемые в журнал приложений в Windows XP, видимы любому пользователю, прошедшему проверку подлинности.  
@@ -98,7 +98,7 @@ ms.locfileid: "84597661"
 |Управление политикой аудита|Неприменимо.|Помимо конфигурации, журнал безопасности управляется также политикой администратора локальной безопасности (LSA). Необходимо также разрешить категорию "Аудит доступа к объектам".|  
 |Взаимодействие с пользователем по умолчанию|Все авторизованные пользователи могут производить запись в журнал приложения, поэтому для процессов приложения никакие дополнительные шаги, связанные с разрешениями, не требуются.|Процесс приложения (контекст) должен иметь привилегии `SeAuditPrivilege`.|  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>
@@ -107,4 +107,4 @@ ms.locfileid: "84597661"
 - [Практическое руководство. Аудит событий безопасности](how-to-audit-wcf-security-events.md)
 - [\<serviceSecurityAudit>](../../configure-apps/file-schema/wcf/servicesecurityaudit.md)
 - [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

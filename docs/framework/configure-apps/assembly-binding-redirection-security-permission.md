@@ -6,12 +6,12 @@ helpviewer_keywords:
 - side-by-side execution, assembly binding redirection
 - assemblies [.NET Framework], binding redirection
 ms.assetid: 24a5cdff-7ed9-4195-93f3-edf6899019fc
-ms.openlocfilehash: a8596bcac4efb0aea07efcfde6726d8bbf148c24
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: ea2b735b2c98b588903c4393f21c6b743910854a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85105095"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552379"
 ---
 # <a name="assembly-binding-redirection-security-permission"></a>Разрешение безопасности перенаправления привязки сборок
 Для явного перенаправления привязки сборки в файле конфигурации приложения необходимо разрешение безопасности. Это относится к перенаправлению как сборок платформы .NET Framework, так и сторонних сборок. Разрешение предоставляется путем установки <xref:System.Security.Permissions.SecurityPermissionFlag> флага для <xref:System.Security.Permissions.SecurityPermission> . По умолчанию управляемые сборки не имеют разрешений.  
@@ -31,8 +31,8 @@ ms.locfileid: "85105095"
   
  Администратор может изменить эти параметры безопасности для поддержки или ограничения конкретных сценариев на определенном компьютере. Нет средств для изменения значения флага **BindingRedirects** по умолчанию; Администратор должен вручную изменить файл Security.config на компьютере пользователя.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Файлы политики издателя и параллельное выполнение](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/06d2bae3(v=vs.100))
+- [Файлы политики издателя и параллельное выполнение](/previous-versions/dotnet/netframework-4.0/06d2bae3(v=vs.100))
 - [Практическое руководство. Включение и отключение автоматического перенаправления привязки](how-to-enable-and-disable-automatic-binding-redirection.md)
 - [Параллельное выполнение](../deployment/side-by-side-execution.md)

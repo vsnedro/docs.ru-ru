@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, delegates
 - delegates [C#]
 ms.assetid: 97de039b-c76b-4b9c-a27d-8c1e1c8d93da
-ms.openlocfilehash: 2c1be56b67528c17a6cf1d8d8517817ff93b2aa5
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: cf6b90a606d13e3196e3114e84971451a9a322c9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063642"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553575"
 ---
 # <a name="delegates-c-programming-guide"></a>Делегаты (Руководство по программированию на C#)
 [Делегат](../../language-reference/builtin-types/reference-types.md) — это тип, который представляет ссылки на методы с определенным списком параметров и типом возвращаемого значения. При создании экземпляра делегата этот экземпляр можно связать с любым методом с совместимой сигнатурой и типом возвращаемого значения. Метод можно вызвать (активировать) с помощью экземпляра делегата.  
@@ -46,7 +46,7 @@ ms.locfileid: "88063642"
   
 - [Использование делегатов](./using-delegates.md)  
   
-- [Использование делегатов вместо интерфейсов (руководство по программированию на C#)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
+- [Использование делегатов вместо интерфейсов (руководство по программированию на C#)](/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
   
 - [Делегаты с именованными методами и делегаты с анонимными методами](./delegates-with-named-vs-anonymous-methods.md)  
   
@@ -61,9 +61,9 @@ ms.locfileid: "88063642"
 Дополнительные сведения см. в разделе [Делегаты](~/_csharplang/spec/delegates.md) в [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction). Спецификация языка является предписывающим источником информации о синтаксисе и использовании языка C#.
   
 ## <a name="featured-book-chapters"></a>Главы в популярных книгах  
- [Делегаты, события и лямбда-выражения](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29) в [справочном руководстве по C# 3.0, третье издание. Более 250 решений для программистов на C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)  
+ [Делегаты, события и лямбда-выражения](/previous-versions/visualstudio/visual-studio-2008/ff518994(v=orm.10)) в [справочном руководстве по C# 3.0, третье издание. Более 250 решений для программистов на C# 3.0](/previous-versions/visualstudio/visual-studio-2008/ff518995(v=orm.10))  
   
- [Делегаты и события](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652490%28v=orm.10%29) в [изучении C# 3.0. Овладение основными понятиями C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v=orm.10%29)  
+ [Делегаты и события](/previous-versions/visualstudio/visual-studio-2008/ff652490(v=orm.10)) в [изучении C# 3.0. Овладение основными понятиями C# 3.0](/previous-versions/visualstudio/visual-studio-2008/ff652493(v=orm.10))  
   
 ## <a name="see-also"></a>См. также
 

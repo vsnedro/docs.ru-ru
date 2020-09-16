@@ -2,12 +2,12 @@
 title: Отправка сообщений из приложения Windows Communication Foundation в приложение MSMQ
 ms.date: 03/30/2017
 ms.assetid: 78d0d0c9-648e-4d4a-8f0a-14d9cafeead9
-ms.openlocfilehash: 872632dc7d0a8a94f8829ffb3fe8eea2607697c8
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a6e322936740f7d88d30b9a205ac937a807bedc1
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602351"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552931"
 ---
 # <a name="windows-communication-foundation-to-message-queuing"></a>Отправка сообщений из приложения Windows Communication Foundation в приложение MSMQ
 
@@ -131,7 +131,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
  При выполнении образца действия клиента и службы отображаются в окнах консоли как службы, так и клиента. Можно видеть, как служба получает сообщения от клиента. Нажмите клавишу ВВОД в каждом окне консоли, чтобы закрыть службу и клиент. Обратите внимание, что поскольку используется очередь, клиенту и службе не обязательно быть запущенными и работать одновременно. Например, можно запустить клиент, выключить его, а затем запустить службу и все равно получить сообщения клиента.
 
 > [!NOTE]
-> Данный образец требует установки очереди сообщений. См. инструкции по установке в [очереди сообщений](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)).
+> Данный образец требует установки очереди сообщений. См. инструкции по установке в [очереди сообщений](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)).
 
 ## <a name="set-up-build-and-run-the-sample"></a>Настройка, сборка и запуск примера
 
@@ -174,7 +174,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\WcfToMsmq`
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Обмен сообщениями с конечными точками WCF и приложениями очереди сообщений](../feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
-- [служба очередей сообщений](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))
+- [служба очередей сообщений](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

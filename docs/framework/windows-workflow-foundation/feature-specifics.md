@@ -3,12 +3,12 @@ title: Особенности возможностей Windows Workflow Foundati
 description: В этой статье описываются новые функции, которые .NET Framework 4 добавляет в Windows Workflow Foundation и сценарии, в которых эти функции могут быть полезны.
 ms.date: 03/30/2017
 ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
-ms.openlocfilehash: fb490b3dd368710bf2ed98f7c53b7b184fa15b0b
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ae15f3ed536967cb15d1a5913f9ca1eab8a510d9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419958"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554610"
 ---
 # <a name="windows-workflow-foundation-feature-specifics"></a>Особенности возможностей Windows Workflow Foundation
 
@@ -16,7 +16,7 @@ ms.locfileid: "83419958"
 
 ## <a name="messaging-activities"></a>Действия обмена сообщениями
 
-Действия обмена сообщениями ( <xref:System.ServiceModel.Activities.Receive> ,, <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.Send> , <xref:System.ServiceModel.Activities.ReceiveReply> ) используются для отправки и получения сообщений WCF из рабочего процесса. <xref:System.ServiceModel.Activities.Receive><xref:System.ServiceModel.Activities.SendReply>действия и используются для формирования операции службы Windows Communication Foundation (WCF), которая доступна через WSDL так же, как стандартные веб-службы WCF. <xref:System.ServiceModel.Activities.Send>и <xref:System.ServiceModel.Activities.ReceiveReply> используются для использования веб-службы, подобной WCF <xref:System.ServiceModel.ChannelFactory> ; Кроме того, для Workflow Foundation существует **Добавление ссылки на службуный** опыт, создающий предварительно настроенные действия.
+Действия обмена сообщениями ( <xref:System.ServiceModel.Activities.Receive> ,, <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.Send> , <xref:System.ServiceModel.Activities.ReceiveReply> ) используются для отправки и получения сообщений WCF из рабочего процесса. <xref:System.ServiceModel.Activities.Receive><xref:System.ServiceModel.Activities.SendReply>действия и используются для формирования операции службы Windows Communication Foundation (WCF), которая доступна через WSDL так же, как стандартные веб-службы WCF. <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.ReceiveReply> используются для использования веб-службы, подобной WCF <xref:System.ServiceModel.ChannelFactory> ; Кроме того, для Workflow Foundation существует **Добавление ссылки на службуный** опыт, создающий предварительно настроенные действия.
 
 ### <a name="getting-started-with-messaging-activities"></a>Приступая к работе с действиями обмена сообщениями
 
@@ -54,7 +54,7 @@ ms.locfileid: "83419958"
 
 Служба Бестприцефиндер обращается к нескольким службам авиакомпании, чтобы найти лучшую тарифную сумму для конкретного маршрута. Для реализации этого сценария потребуется разместить рабочий процесс в <xref:System.ServiceModel.WorkflowServiceHost> . Она также будет использовать действия сообщений для получения ценового запроса, получения цен от внутренних служб и ответа на запрос цены с максимальной ценой.
 
-## <a name="correlation"></a>Correlation
+## <a name="correlation"></a>Корреляция
 
 Корреляцией называют два следующих явления:
 
@@ -62,7 +62,7 @@ ms.locfileid: "83419958"
 
 - Способ сопоставления порции данных с экземпляром службы.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - Чтобы начать работу с корреляцией, создайте новый проект в Visual Studio. Создайте переменную типа <xref:System.ServiceModel.Activities.CorrelationHandle>.
 
@@ -86,7 +86,7 @@ ms.locfileid: "83419958"
 
 Схема конфигурации WCF является сложной и предоставляет пользователям много сложностей для поиска функций. В мы настроили [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] помощь пользователям WCF по настройке служб с помощью следующих функций:
 
-- Устранена необходимость явной настройки каждой службы отдельно. Если вы не настраиваете какие-либо \< элементы> службы для вашей службы, и ваша служба не определяет программно какую-либо конечную точку, в службу автоматически добавляется набор конечных точек, по одному для каждого базового адреса службы и по контракту, реализованному службой.
+- Устранена необходимость явной настройки каждой службы отдельно. Если вы не настроили какие-либо \<service> элементы для службы, и ваша служба не определяет программно любую конечную точку, в службу будет автоматически добавлен набор конечных точек, по одному для каждого базового адреса службы и по контракту, реализованному службой.
 
 - Позволяет пользователю определять для привязок WCF и поведений значения по умолчанию, которые будут применяться к службам без явно заданной конфигурации.
 
@@ -94,17 +94,17 @@ ms.locfileid: "83419958"
 
 - Наконец, <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> позволяет централизованно управлять конфигурацией клиента WCF, что полезно в сценариях, в которых конфигурация выбирается или изменяется после времени загрузки домена приложения.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
-- [Руководство разработчика WCF 4.0](https://docs.microsoft.com/previous-versions/dotnet/articles/ee354381(v=msdn.10))
+- [Руководство разработчика WCF 4.0](/previous-versions/dotnet/articles/ee354381(v=msdn.10))
 
 - [Производство канала настройки](xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601)
 
 - [Элемент стандартной конечной точки](xref:System.ServiceModel.Configuration.StandardEndpointElement)
 
-- [Улучшения конфигурации службы в .NET Framework 4](https://docs.microsoft.com/archive/blogs/endpoint/service-configuration-improvements-in-net-4)
+- [Улучшения конфигурации службы в .NET Framework 4](/archive/blogs/endpoint/service-configuration-improvements-in-net-4)
 
-- [Распространенная ошибка пользователей в .NET 4: опечатки в имени конфигурации служб WF и WCF](https://docs.microsoft.com/archive/blogs/endpoint/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name)
+- [Распространенная ошибка пользователей в .NET 4: опечатки в имени конфигурации служб WF и WCF](/archive/blogs/endpoint/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name)
 
 ### <a name="simplified-configuration-scenarios"></a>Сценарии упрощенной конфигурации
 
@@ -124,11 +124,11 @@ ms.locfileid: "83419958"
 
 [DataContractResolver](../wcf/samples/datacontractresolver.md) решает эти проблемы в .NET 4,5.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - [Документация по API арбитра контрактов данных](xref:System.Runtime.Serialization.DataContractResolver)
 
-- [Представление арбитра контрактов данных](https://docs.microsoft.com/archive/blogs/youssefm/configuring-known-types-dynamically-introducing-the-datacontractresolver)
+- [Представление арбитра контрактов данных](/archive/blogs/youssefm/configuring-known-types-dynamically-introducing-the-datacontractresolver)
 
 - Примеры:
 
@@ -146,7 +146,7 @@ ms.locfileid: "83419958"
 
 Блок-схема - это распространенный способ визуального представления проблем домена. Это новый стиль потока управления, представляемый в .NET 4. Основная особенность блок-схемы заключается в том, что в определенное время выполняется только одно действие. Блок-схемы могут представлять циклы и альтернативные результаты, но не могут стандартно представлять параллельное выполнение нескольких узлов.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - В Visual Studio 2012 создайте консольное приложение рабочего процесса. В конструкторе рабочих процессов добавьте блок-схему.
 
@@ -192,7 +192,7 @@ ms.locfileid: "83419958"
 
 Процедурные действия предоставляют механизм моделирования последовательного потока управления, используя знакомые программистам концепции. Эти действия включают в себя стандартные конструкции языка программирования и, при необходимости, обеспечивают языковую четность с помощью распространенных процедурных языков, таких как C# и Visual Basic.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - В Visual Studio 2012 создайте консольное приложение рабочего процесса. Добавьте в конструкторе рабочих процессов процедурные действия.
 
@@ -206,7 +206,7 @@ ms.locfileid: "83419958"
 
   - [Конструктор действия Parallel](/visualstudio/workflow-designer/parallel-activity-designer)
 
-  - [\<Конструктор действий ParallelForEach T>](/visualstudio/workflow-designer/parallelforeach-t-activity-designer)
+  - [Конструктор действия ParallelForEach\<T>](/visualstudio/workflow-designer/parallelforeach-t-activity-designer)
 
 ### <a name="procedural-activity-scenarios"></a>Сценарии процедурных действий
 
@@ -218,7 +218,7 @@ ms.locfileid: "83419958"
 
 Действие <xref:System.Activities.Statements.InvokeMethod> позволяет вызывать открытые методы для объектов или типов в области. Оно поддерживает вызов методов экземпляров и статических методов с параметрами или без параметров (включая массивы параметров) и универсальных методов. Оно также позволяет выполнять метод синхронно и асинхронно.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - В Visual Studio 2012 создайте консольное приложение рабочего процесса. Добавьте действие <xref:System.Activities.Statements.InvokeMethod> в конструкторе рабочих процессов и настройте для него метод экземпляра и статический метод.
 
@@ -234,7 +234,7 @@ ms.locfileid: "83419958"
 
 <xref:System.Activities.Statements.TryCatch>Действие предоставляет механизм для перехвата исключений, происходящих во время выполнения набора вложенных операций (аналогично конструкции try/catch в C# и Visual Basic). <xref:System.Activities.Statements.TryCatch> обеспечивает обработку исключений на уровне рабочего процесса. При возникновении необработанного исключения рабочий процесс прерывается и блок finally не выполняется. Такое поведение согласуется с C#.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - В Visual Studio 2012 создайте консольное приложение рабочего процесса. В конструкторе рабочих процессов добавьте действие <xref:System.Activities.Statements.TryCatch>.
 
@@ -250,7 +250,7 @@ ms.locfileid: "83419958"
 
 Действие <xref:System.Activities.Statements.Pick> обеспечивает моделирование потока управления на основе событий в WF. Класс <xref:System.Activities.Statements.Pick> содержит множество ветвей, каждая из которых перед выполнением ожидает наступления конкретного события. В такой конфигурации действие <xref:System.Activities.Statements.Pick> ведет себя подобно <xref:System.Activities.Statements.Switch%601>, в котором действие выполнено только для одного события из набора прослушиваемых событий. Всеми ветвями управляют события, и появившееся событие запускает соответствующую ветвь. Все другие ветви отменяются и прекращают ожидать передачу данных, связанных с событиями.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - В Visual Studio 2012 создайте консольное приложение рабочего процесса. В конструкторе рабочих процессов добавьте действие <xref:System.Activities.Statements.Pick>.
 
@@ -282,13 +282,13 @@ ms.locfileid: "83419958"
 
 4. Динамическое (в памяти) обновление <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601> и конфигурации маршрутизации.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 1. Документация: [Маршрутизация](../wcf/feature-details/routing.md)
 
 2. Примеры: [службы маршрутизации &#91;примеры WCF&#93;](../wcf/samples/routing-services.md)
 
-3. Блог. [правила маршрутизации](https://docs.microsoft.com/archive/blogs/RoutingRules/) .
+3. Блог. [правила маршрутизации](/archive/blogs/RoutingRules/) .
 
 ### <a name="routing-scenarios"></a>Сценарии маршрутизации
 
@@ -316,7 +316,7 @@ ms.locfileid: "83419958"
 
 Более того, сообщения обнаружения не зависят от сетевого протокола; их можно использовать с любым протоколом, поддерживающим требования режима. Например, многоадресные сообщения обнаружения могут отправляться по каналу UDP или любой другой сети, поддерживающей многоадресную передачу сообщений. Эти точки проектирования в сочетании с гибкостью функций позволяют адаптировать обнаружение специально для вашего решения.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 - Документация: [Обнаружение WCF](../wcf/feature-details/wcf-discovery.md)
 
@@ -328,9 +328,9 @@ ms.locfileid: "83419958"
 
 ## <a name="tracking"></a>Отслеживание
 
-Отслеживание рабочих процессов позволяет понять выполнение экземпляра рабочего процесса. События отслеживания выдаются из рабочего процесса на уровне экземпляра рабочего процесса и при выполнении действий в рабочем процессе. Участник отслеживания в рабочем процессе должен быть добавлен к узлу рабочего процесса для подписки на записи отслеживания. Записи отслеживания фильтруются с помощью профиля отслеживания. В .NET Framework предоставляется участник отслеживания ETW (трассировка событий для Windows), а в файле Machine. config устанавливается базовый профиль.
+Отслеживание рабочих процессов позволяет понять выполнение экземпляра рабочего процесса. События отслеживания выдаются из рабочего процесса на уровне экземпляра рабочего процесса и при выполнении действий в рабочем процессе. Участник отслеживания в рабочем процессе должен быть добавлен к узлу рабочего процесса для подписки на записи отслеживания. Записи отслеживания фильтруются с помощью профиля отслеживания. В .NET Framework предоставляется участник отслеживания ETW (Event Tracing для Windows), а в файле machine.config устанавливается базовый профиль.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 1. В Visual Studio 2010 создайте новый проект служебного приложения рабочего процесса WCF. Пара <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply> будет расположена на полотне для запуска.
 
@@ -352,7 +352,7 @@ ms.locfileid: "83419958"
 
 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> - это реализация хранилища экземпляров на основе SQL Server. Хранилище экземпляров служит для хранения состояния запущенного экземпляра вместе со всеми данными, необходимыми для загрузки и возобновления работы экземпляра. Узел службы сохраняет состояние экземпляра в хранилище экземпляров при сохранении рабочего процесса, а также загружает состояние экземпляра при получении сообщения для этого экземпляра или после истечения срока действия действий задержки.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 1. В Visual Studio 2012 создайте рабочий процесс, содержащий неявное или неявное <xref:System.Activities.Statements.Persist> действие. Добавьте поведение <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> на узел службы рабочего процесса. Это можно сделать в коде или в файле конфигурации приложения.
 

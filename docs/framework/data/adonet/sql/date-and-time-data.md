@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6f5ff56a-a57e-49d7-8ae9-bbed697e42e3
-ms.openlocfilehash: 9345e995dcb1179e7d0a86f62737f9fda5889f42
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 43b3349b2a35385dcc49d0866e0695b08eac2d2e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286498"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90551495"
 ---
 # <a name="date-and-time-data"></a>Данные даты и времени
 В SQL Server 2008 появились новые типы данных для обработки сведений о дате и времени. Новые типы данных включают в себя отдельные типы для даты и времени, а также расширенные типы данных с более высоким диапазоном, точностью и поддержкой часовых поясов. Начиная с .NET Framework 3.5 с пакетом обновления 1 (SP1), поставщик данных .NET Framework для SQL Server (<xref:System.Data.SqlClient>) полностью поддерживает все новые возможности ядра СУБД SQL Server 2008. Для использования новых возможностей с SqlClient необходимо установить .NET Framework 3.5 с пакетом обновления 1 (SP1) или более поздней версии.  
@@ -22,7 +22,7 @@ ms.locfileid: "84286498"
   
  **Документация по SQL Server**  
   
-1. [Использование данных даты и времени](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
+1. [Использование данных даты и времени](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
   
 ## <a name="datetime-data-types-introduced-in-sql-server-2008"></a>Типы данных даты и времени и только даты, появившиеся в SQL Server 2008  
  В приведенной ниже таблице описаны новые типы данных даты и времени.  
@@ -47,7 +47,7 @@ ms.locfileid: "84286498"
 > [!NOTE]
 > Формат даты ГДМ не поддерживается при преобразовании из формата строки в `date`, `time`, `datetime2` или `datetimeoffset`.  
   
- Дополнительные сведения о том, как SQL Server интерпретирует данные даты и времени, см. [в разделе Использование данных даты и времени](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
+ Дополнительные сведения о том, как SQL Server интерпретирует данные даты и времени, см. [в разделе Использование данных даты и времени](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
   
 ## <a name="datetime-data-types-and-parameters"></a>Параметры и типы данных даты-времени  
  Для поддержки новых типов данных даты и времени к свойству <xref:System.Data.SqlDbType> были добавлены следующие значения перечисления.  
@@ -78,7 +78,7 @@ ms.locfileid: "84286498"
 |Тип данных SQL Server|Тип платформы .NET Framework|System.Data.SqlDbType|System.Data.DbType|  
 |--------------------------|-------------------------|---------------------------|------------------------|  
 |Дата|System.DateTime|Дата|Дата|  
-|time|System.TimeSpan|Время|Время|  
+|time|System.TimeSpan|время;|время;|  
 |datetime2|System.DateTime|datetime2|datetime2|  
 |datetimeoffset|System.DateTimeOffset|DateTimeOffset|DateTimeOffset|  
 |DATETIME|System.DateTime|Дата и время|Дата и время|  
@@ -87,7 +87,7 @@ ms.locfileid: "84286498"
 ### <a name="sqlparameter-properties"></a>Свойства SqlParameter  
  В приведенной ниже таблице описаны свойства `SqlParameter`, которые относятся к типам данных даты и времени.  
   
-|Свойство.|Описание|  
+|Свойство|Описание|  
 |--------------|-----------------|  
 |<xref:System.Data.SqlClient.SqlParameter.IsNullable%2A>|Возвращает или задает допустимость значений NULL. Во время отправки значения NULL на сервер нужно указать <xref:System.DBNull>, а не `null` (`Nothing` в Visual Basic). Дополнительные сведения об значениях NULL базы данных см. в разделе [Обработка значений NULL](handling-null-values.md).|  
 |<xref:System.Data.SqlClient.SqlParameter.Precision%2A>|Возвращает или задает максимальное количество цифр, используемых для представления значения. Этот параметр не учитывается для типов данных даты и времени.|  
@@ -237,7 +237,7 @@ command.Parameters.AddWithValue( _
 |Раздел|Описание|  
 |-----------|-----------------|  
 |[Типы данных и функции даты и времени (Transact-SQL)](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql)|Приводятся общие сведения обо всех типах данных и функциях даты и времени в языке Transact-SQL.|  
-|[Использование данных даты и времени](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Приводятся сведения и даются примеры использования функций и типов данных даты и времени.|  
+|[Использование данных даты и времени](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Приводятся сведения и даются примеры использования функций и типов данных даты и времени.|  
 |[Типы данных (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)|Описывает системные типы данных в SQL Server.|  
   
 ## <a name="see-also"></a>См. также

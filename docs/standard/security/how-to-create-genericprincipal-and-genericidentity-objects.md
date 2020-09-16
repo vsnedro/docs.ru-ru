@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Creating GenericPrincipal Objects
 - GenericIdentity Objects
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-ms.openlocfilehash: 903d636938c47850951330d7936d95470441607e
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 57ffe3fd2d446b4a7364aa531e785bfb79520a0a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557220"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558216"
 ---
 # <a name="how-to-create-genericprincipal-and-genericidentity-objects"></a>Практическое руководство. Создание объектов GenericPrincipal и GenericIdentity
 
 > [!NOTE]
 > Эта статья относится к Windows.
 >
-> Дополнительные сведения о ASP.NET Core см. в разделе [Обзор безопасности ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/).
+> Дополнительные сведения о ASP.NET Core см. в разделе [Обзор безопасности ASP.NET Core](/aspnet/core/security/).
 
 Класс можно использовать <xref:System.Security.Principal.GenericIdentity> совместно с <xref:System.Security.Principal.GenericPrincipal> классом для создания схемы авторизации, которая существует независимо от домена Windows.
 
@@ -144,7 +144,7 @@ The IsAuthenticated is: True
 Is this a Manager? True
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Security.Principal.GenericIdentity>
 - <xref:System.Security.Principal.GenericPrincipal>

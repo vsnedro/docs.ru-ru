@@ -2,12 +2,12 @@
 title: Неподдерживаемые сценарии
 ms.date: 03/30/2017
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
-ms.openlocfilehash: b643e6df8a877860ce36fc6ee34c4e4ca08ec748
-ms.sourcegitcommit: cdf5084648bf5e77970cbfeaa23f1cab3e6e234e
+ms.openlocfilehash: a3ee91e5232926b4ea7db80db35d9a309ca8105b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921160"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557818"
 ---
 # <a name="unsupported-scenarios"></a>Неподдерживаемые сценарии
 
@@ -20,26 +20,26 @@ ms.locfileid: "76921160"
 
 ### <a name="windows-xp-and-secure-context-token-cookie-enabled"></a>Windows XP и файл cookie токена защищенного контекста включены
 
-WCF не поддерживает олицетворение, и при выполнении следующих условий возникает <xref:System.InvalidOperationException>.
+WCF не поддерживает олицетворение, а <xref:System.InvalidOperationException> исключение возникает, если выполняются следующие условия.
 
 - Операционная система — Windows XP.
 
 - Режим проверки подлинности имеет результатом удостоверение Windows.
 
-- Свойству <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> класса <xref:System.ServiceModel.OperationBehaviorAttribute> присваивается значение <xref:System.ServiceModel.ImpersonationOption.Required>.
+- Свойство <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> объекта <xref:System.ServiceModel.OperationBehaviorAttribute> имеет значение <xref:System.ServiceModel.ImpersonationOption.Required>.
 
 - Создан маркер контекста безопасности с отслеживанием состояния (SCT) (по умолчанию создание отключено).
 
- Маркер SCT с отслеживанием состояния создается только с использованием пользовательской привязки. Дополнительные сведения см. [в разделе инструкции. Создание маркера контекста безопасности для безопасного сеанса](how-to-create-a-security-context-token-for-a-secure-session.md). В коде маркер включается путем создания элемента привязки безопасности (<xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> или <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>) с помощью <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> или метода <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> и установки для параметра `requireCancellation` значения `false`. Параметр относится к кэшированию маркера SCT. Задание значения `false` включает функцию маркера SCT с отслеживанием состояния.
+ Маркер SCT с отслеживанием состояния создается только с использованием пользовательской привязки. Дополнительные сведения см. [в разделе инструкции. Создание маркера контекста безопасности для безопасного сеанса](how-to-create-a-security-context-token-for-a-secure-session.md). В коде маркер включается путем создания элемента привязки безопасности ( <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> или <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> ) с помощью <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> метода или и установки `requireCancellation` для параметра значения `false` . Параметр относится к кэшированию маркера SCT. Задание значения `false` включает функцию маркера SCT с отслеживанием состояния.
 
- Кроме того, в конфигурации маркер включается путем создания <`customBinding`>, добавления <`security`> и присвоения атрибуту `authenticationMode` значения SecureConversation, а `requireSecurityContextCancellation` — `true`.
+ Кроме того, в конфигурации маркер включается путем создания <`customBinding`>, добавления `security` элемента <> и присвоения `authenticationMode` атрибуту значения SecureConversation и `requireSecurityContextCancellation` атрибута `true` .
 
 > [!NOTE]
-> Эти требования зависят от конкретной ситуации. Например, метод <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> создает элемент привязки, который имеет результатом удостоверение Windows, однако не устанавливает маркер SCT. Поэтому его можно использовать с параметром `Required` в Windows XP.
+> Эти требования зависят от конкретной ситуации. Например, метод <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> создает элемент привязки, который имеет результатом удостоверение Windows, однако не устанавливает маркер SCT. Поэтому его можно использовать с `Required` параметром в Windows XP.
 
 ### <a name="possible-aspnet-conflict"></a>Возможный конфликт ASP.NET
 
-WCF и ASP.NET могут включать и отключать олицетворение. Когда ASP.NET размещает приложение WCF, между параметрами конфигурации WCF и ASP.NET может существовать конфликт. В случае конфликта параметру WCF присваивается приоритет, если только свойство <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> не имеет значение <xref:System.ServiceModel.ImpersonationOption.NotAllowed>. в этом случае параметр олицетворения ASP.NET имеет приоритет.
+WCF и ASP.NET могут включать и отключать олицетворение. Когда ASP.NET размещает приложение WCF, между параметрами конфигурации WCF и ASP.NET может существовать конфликт. В случае конфликта параметру WCF присваивается приоритет, если только <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> свойство не имеет значение <xref:System.ServiceModel.ImpersonationOption.NotAllowed> , а в этом случае параметр олицетворения ASP.NET имеет приоритет.
 
 ### <a name="assembly-loads-may-fail-under-impersonation"></a>Загрузка сборок может завершиться ошибкой при олицетворении
 
@@ -80,15 +80,15 @@ WCF не поддерживает хэши SHA-256, совместимые с FI
 
 - Сделайте платформозависимый вызов `p/invoke` функции `CertGetCertificateContextProperty` и проверьте свойство `dwProvType` возвращенного объекта `CertGetCertificateContextProperty`.
 
-- Используйте команду `certutil` из командной строки для запроса сертификатов. Дополнительные сведения см. в [статье certutil Tasks for устранение неполадок сертификатов](https://docs.microsoft.com/previous-versions/orphan-topics/ws.10/cc772619(v=ws.10)).
+- Используйте  `certutil` команду из командной строки для запроса сертификатов. Дополнительные сведения см. в [статье certutil Tasks for устранение неполадок сертификатов](/previous-versions/orphan-topics/ws.10/cc772619(v=ws.10)).
 
 ## <a name="message-security-fails-if-using-aspnet-impersonation-and-aspnet-compatibility-is-required"></a>Не удается установить защиту сообщения, если требуется использовать олицетворение ASP.NET и совместимость ASP.NET
 
 WCF не поддерживает следующие сочетания параметров, так как они могут препятствовать проверке подлинности клиента:
 
-- ASP.NET олицетворение включено. Это можно сделать в файле Web. config, установив атрибут `impersonate` элемента <`identity`> в значение `true`.
+- ASP.NET олицетворение включено. Это можно сделать в файле Web.config, задав `impersonate` атрибуту элемента <> значение `identity` `true` .
 
-- Режим совместимости ASP.NET включается путем установки атрибута `aspNetCompatibilityEnabled` [\<serviceHostingEnvironment >](../../configure-apps/file-schema/wcf/servicehostingenvironment.md) `true`.
+- Режим совместимости ASP.NET включается путем присвоения `aspNetCompatibilityEnabled` атрибуту значения [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md) `true` .
 
 - Используется режим безопасности сообщения.
 
@@ -122,11 +122,11 @@ WCF теряет атрибуты элемента `<wst:Claims>` в шабло�
 
  Для устранения этой проблемы необходимо изменить привязку непосредственно в клиенте после выполнения импорта.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Вопросы безопасности](security-considerations-in-wcf.md)
 - [Раскрытие информации](information-disclosure.md)
-- [Повышение привилегий](elevation-of-privilege.md)
+- [Несанкционированное получение привилегий](elevation-of-privilege.md)
 - [Отказ в обслуживании](denial-of-service.md)
-- [Подделка](tampering.md)
+- [Незаконное изменение](tampering.md)
 - [Атаки с повторением](replay-attacks.md)

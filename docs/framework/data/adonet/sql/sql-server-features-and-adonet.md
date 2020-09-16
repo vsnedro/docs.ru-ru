@@ -3,12 +3,12 @@ title: Возможности SQL Server и ADO.NET
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
-ms.openlocfilehash: 30eb7d7f3f98d3cd3999c74f660986bef887c05d
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: 743e0eb9761cdc58018aab8aaed50a99b197116c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77451828"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552626"
 ---
 # <a name="sql-server-features-and-adonet"></a>Возможности SQL Server и ADO.NET
 В подразделах этого раздела рассматриваются возможности SQL Server, предназначенные для разработки приложений баз данных с использованием ADO.NET.  
@@ -17,39 +17,39 @@ ms.locfileid: "77451828"
   
  **Документация по SQL Server**  
   
-1. [Разработка (ядро СУБД)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb500155(v=sql.100))  
+1. [Разработка (компонент Database Engine)](/previous-versions/sql/sql-server-2008/bb500155(v=sql.100))  
   
 ## <a name="in-this-section"></a>в этом разделе  
  [Перечисление экземпляров SQL Server (ADO.NET)](enumerating-instances-of-sql-server.md)  
  Описание перечисления активных экземпляров SQL Server.  
   
  [Статистика поставщика для SQL Server](provider-statistics-for-sql-server.md)  
- Описывается получение статистики SQL Server во время выполнения.  
+ Сведения о поддержке получения из SQL Server статистики времени выполнения.  
   
- [Пользовательские экземпляры SQL Server Express](sql-server-express-user-instances.md)  
- Описывается поддержка пользовательских экземпляров SQL Server Express.  
+ [SQL Server Express пользовательские экземпляры](sql-server-express-user-instances.md)  
+ В этой статье описывается поддержка пользовательских экземпляров SQL Server Express.  
   
- [Зеркальное отображение баз данных в SQL Server](database-mirroring-in-sql-server.md)  
- Описываются возможности зеркального отображения баз данных.  
+ [Зеркальное отображение базы данных в SQL Server](database-mirroring-in-sql-server.md)  
+ Здесь описываются функции зеркального отображения базы данных.  
   
  [Интеграция среды CLR и SQL Server](sql-server-common-language-runtime-integration.md)  
  Описание доступа к данным из объекта базы данных среды CLR в SQL Server.  
   
- [Уведомления запросов в SQL Server](query-notifications-in-sql-server.md)  
+ [Уведомления о запросах в SQL Server](query-notifications-in-sql-server.md)  
  Описывается способ запроса приложениями .NET Framework уведомлений от SQL Server при изменении данных.  
   
- [Изоляция моментального снимка в SQL Server](snapshot-isolation-in-sql-server.md)  
- Описывается поддержка изоляции моментального снимка, механизма управления версиями строк, разработанного для уменьшения количества блокировок в транзакционных приложениях.  
+ [Изоляция моментальных снимков в SQL Server](snapshot-isolation-in-sql-server.md)  
+ Описание поддержки изоляции для моментальных снимков — механизма управления версиями строк, предназначенного для сокращения блокировок в транзакционных приложениях.  
   
- [Поддержка SqlClient для высокого уровня доступности, аварийного восстановления](sqlclient-support-for-high-availability-disaster-recovery.md)  
- Описывается поддержка SqlClient для высокой доступности, групп аварийного восстановления доступности (AlwaysOn).  
+ [Поддержка SqlClient для обеспечения высокой доступности, аварийного восстановления](sqlclient-support-for-high-availability-disaster-recovery.md)  
+ Сведения о поддержке в SqlClient групп доступности AlwaysOn с высоким уровнем доступности и аварийного восстановления.  
   
  [Поддержка SqlClient для LocalDB](sqlclient-support-for-localdb.md)  
- Описывается поддержка SqlClient для баз данных LocalDB.  
+ Сведения о поддержке в SqlClient баз данных LocalDB  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Операции данных SQL Server Data в ADO.NET](sql-server-data-operations.md)
+- [SQL Serverные операции с данными в ADO.NET](sql-server-data-operations.md)
 - [Извлечение и изменение данных в ADO.NET](../retrieving-and-modifying-data.md)
 - [LINQ to SQL](./linq/index.md)
 - [SQL Server и ADO.NET](index.md)

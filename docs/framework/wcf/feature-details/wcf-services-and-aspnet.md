@@ -3,12 +3,12 @@ title: Службы WCF и ASP.NET
 description: Сведения о размещении служб WCF параллельно с ASP.NET и их размещении в режиме совместимости ASP.NET.
 ms.date: 03/30/2017
 ms.assetid: b980496a-f0b0-4319-8e55-a0f0fa32da70
-ms.openlocfilehash: 1d7401f6a326bc50923123acf803e26ce8238415
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 765a509f94a0a934cdbbf0212cfc1d4053d29f9c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246419"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553321"
 ---
 # <a name="wcf-services-and-aspnet"></a>Службы WCF и ASP.NET
 
@@ -66,7 +66,7 @@ ms.locfileid: "85246419"
 
 - Настраиваемая авторизация URL-адреса: ASP. Правила авторизации URL-адресов сети применяются для запросов WCF, когда служба WCF работает в режиме совместимости ASP.NET.
 
-- <xref:System.Web.HttpModuleCollection>расширяемость. Поскольку службы WCF, работающие в режиме совместимости ASP.NET, полностью участвуют в жизненном цикле HTTP-запроса ASP.NET, любой HTTP-модуль, настроенный в конвейере HTTP, может работать с запросами WCF как до, так и после вызова службы.
+- <xref:System.Web.HttpModuleCollection> расширяемость. Поскольку службы WCF, работающие в режиме совместимости ASP.NET, полностью участвуют в жизненном цикле HTTP-запроса ASP.NET, любой HTTP-модуль, настроенный в конвейере HTTP, может работать с запросами WCF как до, так и после вызова службы.
 
 - Олицетворение ASP.NET. службы WCF выполняются с использованием текущего удостоверения олицетворяемого потока ASP.NET, который может отличаться от удостоверения процесса IIS, если для приложения включено олицетворение ASP.NET. Если ASP.NET олицетворение и олицетворение WCF включены для конкретной операции службы, реализация службы в конечном итоге выполняется с использованием удостоверения, полученного от WCF.
 
@@ -107,4 +107,4 @@ public class CalculatorService : ICalculatorSession
 ## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

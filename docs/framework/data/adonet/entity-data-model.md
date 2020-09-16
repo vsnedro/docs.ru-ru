@@ -3,12 +3,12 @@ title: EDM (модель данных с использованием сущно
 description: EDM описывает структуру данных независимо от их сохраненной формы, которая решает проблемы, связанные с сохранением данных во многих формах.
 ms.date: 03/30/2017
 ms.assetid: 2dda3d5b-4582-4ba0-a91d-fcd7a1498137
-ms.openlocfilehash: c98b1f4559ef297f8b11051940fd91f5f6fa06fd
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d32207e3a9dd35d2d8f8990bcbbd35e38d21d8bb
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286744"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557623"
 ---
 # <a name="entity-data-model"></a>EDM (модель данных с использованием сущностей)
 Модель EDM - это набор основных понятий, которые описывают структуру данных независимо от формы хранения. Модель EDM заимствует свойства модели «сущность-связь», описанной Питером Ченом в 1976 г., более того, она строится на модели «сущность-связь» и расширяет возможности ее традиционного использования.  
@@ -17,7 +17,7 @@ ms.locfileid: "84286744"
   
  `conceptual model` - это специфическое представление структуры данных в виде сущностей и связей, которое обычно определяется на доменном языке DSL, реализующем основные понятия модели EDM. [Язык CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec) — это пример такого доменного языка. Сущности и связи, описанные в концептуальной модели, можно представить в виде абстракций объектов и ассоциаций в приложении. Это позволяет разработчикам сфокусировать внимание на концептуальной модели, не думая о схеме хранения, и писать эффективный и поддерживаемый код. Одновременно разработчики схем хранения могут сфокусировать внимание на эффективности доступа к данным, хранения и масштабируемости.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  В подразделах этого раздела описываются основные понятия модели EDM. Любой специфический язык домена (DSL), реализующий модель EDM, должен включать основные понятия, описанные в данном разделе. Обратите внимание, что [ADO.NET Entity Framework](./ef/index.md) использует язык CSDL для определения концептуальных моделей. Для получения дополнительной информации см. [CSDL Specification](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec).  
   
  [Основные понятия модели EDM](entity-data-model-key-concepts.md)  
@@ -64,6 +64,6 @@ ms.locfileid: "84286744"
   
 ## <a name="see-also"></a>См. также
 
-- [Средства EDM ADO.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
-- [Общие сведения о EDMX-файлах](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [Средства EDM ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
+- [Общие сведения о EDMX-файлах](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Спецификация языка CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

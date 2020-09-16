@@ -2,12 +2,12 @@
 title: <peer> элемента <clientCredentials>
 ms.date: 03/30/2017
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-ms.openlocfilehash: dce7ef64de1e3eb248e3553c97cbce8e9b205b4c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a8144ca7bad5654bf8f77259ea1717442665fc81
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400100"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555462"
 ---
 # <a name="peer-of-clientcredentials-element"></a>\<peer> элемента \<clientCredentials>
 Задает учетные данные, используемые при проверке подлинности одноранговых клиентов.  
@@ -50,8 +50,8 @@ ms.locfileid: "70400100"
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|Задает учетные данные, используемые для проверки подлинности клиента при подключении к службе.|  
   
-## <a name="remarks"></a>Примечания  
- Этот элемент конфигурации задает учетные данные, используемые одноранговым узлом для подтверждения своей подлинности для других узлов в сетке, а также параметры, используемые одноранговым узлом для проверки подлинности других одноранговых узлов. Дополнительные сведения см. в статье [Проверка подлинности сообщений одноранговых каналов](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90)) и [Защита приложений одноранговых каналов](../../../wcf/feature-details/securing-peer-channel-applications.md).  
+## <a name="remarks"></a>Remarks  
+ Этот элемент конфигурации задает учетные данные, используемые одноранговым узлом для подтверждения своей подлинности для других узлов в сетке, а также параметры, используемые одноранговым узлом для проверки подлинности других одноранговых узлов. Дополнительные сведения см. в статье [Проверка подлинности сообщений одноранговых каналов](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90)) и [Защита приложений одноранговых каналов](../../../wcf/feature-details/securing-peer-channel-applications.md).  
   
 ## <a name="see-also"></a>См. также
 
@@ -64,7 +64,7 @@ ms.locfileid: "70400100"
 - <xref:System.ServiceModel.Security.PeerCredential>
 - [Одноранговая сеть](../../../wcf/feature-details/peer-to-peer-networking.md)
 - [Обеспечение безопасности клиентов](../../../wcf/securing-clients.md)
-- [Проверка подлинности сообщений для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Пользовательской проверка подлинности для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Проверка подлинности сообщений для однорангового канала](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Пользовательской проверка подлинности для однорангового канала](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Защита приложений одноранговых каналов](../../../wcf/feature-details/securing-peer-channel-applications.md)
 - [Защита служб и клиентов](../../../wcf/feature-details/securing-services-and-clients.md)

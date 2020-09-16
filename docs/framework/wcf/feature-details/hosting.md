@@ -2,21 +2,21 @@
 title: Hosting2
 ms.date: 03/30/2017
 ms.assetid: 0820c7e5-0b50-4cde-80e7-74e346513002
-ms.openlocfilehash: 72190c23951fbade1a92be559a291190d080532e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0a502093ff40f1a702f5d4d9046d4627eae39e01
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597271"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555787"
 ---
 # <a name="hosting"></a>Hosting
 В подразделах этого раздела описано размещение служб. Служба может размещаться в службы IIS (IIS), службе активации Windows (WAS), Windows Server AppFabric, службе Windows или управляемом приложении — этот вариант часто называется *размещением в собственном расположении*.  
   
  Важно отметить, что при запуске службы или любого расширения от недоверенного узла нарушается безопасность.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Размещение в службах IIS](hosting-in-internet-information-services.md)  
- Описывает, как служба Windows Communication Foundation (WCF) размещается в службы IIS или [Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)).  
+ Описывает, как служба Windows Communication Foundation (WCF) размещается в службы IIS или [Windows Server AppFabric](/previous-versions/appfabric/ff384253(v=azure.10)).  
   
  [Размещение в службе активации процессов Windows](hosting-in-windows-process-activation-service.md)  
  Описывает, как служба WCF размещается службой активации процессов Windows.  
@@ -33,7 +33,7 @@ ms.locfileid: "84597271"
  [Поддержка нескольких привязок узла IIS](supporting-multiple-iis-site-bindings.md)  
  Описывает, как задать несколько базовых адресов службы с помощью одной схемы URI для одного веб-узла.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Размещение служб](../hosting-services.md)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

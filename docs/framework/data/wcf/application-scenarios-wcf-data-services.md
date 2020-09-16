@@ -5,16 +5,16 @@ helpviewer_keywords:
 - WCF Data Services, learn more
 - WCF Data Services, scenarios
 ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
-ms.openlocfilehash: 8eb1e6e2a9338230520ebf3aec1c9ba50aa15ed9
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 842f560df5229fc8a2249e1317cb348b7ed3361a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75346201"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556893"
 ---
 # <a name="application-scenarios-wcf-data-services"></a>Сценарии приложений (службы данных WCF)
 
-WCF Data Services поддерживает основной набор сценариев для предоставления и использования данных в качестве источников данных Open Data Protocol (OData). В этом подразделе описываются разделы, относящиеся к этим сценариям.
+WCF Data Services поддерживает основной набор сценариев для предоставления и использования данных в качестве веб-каналов Open Data Protocol (OData). В этом подразделе описываются разделы, относящиеся к этим сценариям.
 
 Предоставление реляционных данных из базы данных в качестве веб-канала OData.
 
@@ -42,19 +42,19 @@ WCF Data Services поддерживает основной набор сцен�
 
 Использование веб-канала OData в клиентском приложении на основе Silverlight.
 
-- [Службы WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
+- [Службы WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
 
 - [Асинхронные операции](asynchronous-operations-wcf-data-services.md)
 
-- [Как выполнить привязку данных службы данных к элементам управления (клиент Silverlight)](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee681614(v=vs.103))
+- [Привязка данных службы данных к элементам управления (клиент Silverlight)](/previous-versions/dotnet/wcf-data-services/ee681614(v=vs.103))
 
 Использование веб-канала OData в клиентском приложении на основе AJAX.
 
 - [Использование служб данных в клиентском приложении](using-a-data-service-in-a-client-application-wcf-data-services.md)
 
-- [OData: соглашения об URI](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
+- [OData: условные обозначения URI](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
 
-- [OData: формат нотация объектов JavaScript (JSON)](https://www.odata.org/developers/protocols/json-format/)
+- [OData. Формат JSON](https://www.odata.org/developers/protocols/json-format/)
 
 Создайте комплексное решение для данных, использующее OData для обмена данными между клиентом и сервером.
 
@@ -70,11 +70,11 @@ WCF Data Services поддерживает основной набор сцен�
 
 - [Асинхронные операции](asynchronous-operations-wcf-data-services.md)
 
-- [Службы WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
+- [Службы WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
 
 Предоставление и использование канала OData с большими двоичными объектами, которые доступны и изменяются в виде потока.
 
-- [Поставщик потоковых данных](streaming-provider-wcf-data-services.md)
+- [Потоковый поставщик](streaming-provider-wcf-data-services.md)
 
 - [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md)
 
@@ -98,7 +98,7 @@ WCF Data Services поддерживает основной набор сцен�
 
 - [Операции служб](service-operations-wcf-data-services.md)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Краткое руководство](quickstart-wcf-data-services.md)
 - [Ресурсы](wcf-data-services-resources.md)
