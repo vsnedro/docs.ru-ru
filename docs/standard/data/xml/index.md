@@ -3,12 +3,12 @@ title: XML-документы и данные
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 ms.assetid: e695047f-3c0f-4045-8708-5baea91cc380
-ms.openlocfilehash: a752d634141a56df1caa61eb5d375dd2a402832f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 6d2a52567a1fc8bdbbb1d039ac583c889d77d4af
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287692"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540138"
 ---
 # <a name="xml-documents-and-data"></a>XML-документы и данные
 
@@ -24,7 +24,7 @@ ms.locfileid: "84287692"
 
 - <xref:System.Xml.Linq>
 
-Чтобы получить полный список, выполните поиск System.Xml в [браузере API .NET](https://docs.microsoft.com/dotnet/api/?term=system.xml).
+Чтобы получить полный список, выполните поиск System.Xml в [браузере API .NET](../../../../api/index.md?term=system.xml).
 
 Классы из этих пространств имен поддерживают рекомендации W3C. Пример:
 
@@ -38,7 +38,7 @@ ms.locfileid: "84287692"
 
 Классы XML в платформе .NET Framework предоставляют следующие преимущества.
 
-- **Производительность** [LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) и [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md) упрощает программирование с использованием XML и обеспечивает работу с запросами, похожую на работу в SQL.
+- **Производительность** [LINQ to XML (C#)](../../linq/linq-xml-overview.md) и [LINQ to XML (Visual Basic)](../../linq/linq-xml-overview.md) упрощает программирование с использованием XML и обеспечивает работу с запросами, похожую на работу в SQL.
 
 - **Расширяемость** XML-классы в .NET Framework являются расширяемыми, что было достигнуто за счет использования абстрактных базовых классов и виртуальных методов. Например, можно создать класс, производный от класса <xref:System.Xml.XmlUrlResolver>, который будет сохранять поток кэширования на локальном диске.
 
@@ -60,7 +60,7 @@ ms.locfileid: "84287692"
 
 [Варианты обработки XML-данных](xml-processing-options.md) Обсуждаются параметры обработки XML-данных.
 
-[Обработка XML-данных в памяти](processing-xml-data-in-memory.md) Содержит обсуждение трех моделей обработки XML-данных в памяти: [LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) и [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md), класс <xref:System.Xml.XmlDocument> (основанный на модели W3C DOM) и класс <xref:System.Xml.XPath.XPathDocument> (основанный на модели данных XPath).
+[Обработка XML-данных в памяти](processing-xml-data-in-memory.md) Содержит обсуждение трех моделей обработки XML-данных в памяти: [LINQ to XML (C#)](../../linq/linq-xml-overview.md) и [LINQ to XML (Visual Basic)](../../linq/linq-xml-overview.md), класс <xref:System.Xml.XmlDocument> (основанный на модели W3C DOM) и класс <xref:System.Xml.XPath.XPathDocument> (основанный на модели данных XPath).
 
 [Преобразования XSLT](xslt-transformations.md)\
 Описывается, как использовать обработчик XSLT.

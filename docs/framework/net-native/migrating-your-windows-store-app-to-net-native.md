@@ -2,16 +2,16 @@
 title: Миграция приложения для магазина Windows в машинный код .NET
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: 5e5c655d0e8d6f1730f27d35525692e110b3c80c
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: cef985200efaf2ed7488d5e99394a5f01cc38594
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309200"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556932"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Перенос приложения из Магазина Windows в .NET Native
 
-.NET Native обеспечивает статическую компиляцию приложений в магазине Windows или на компьютере разработчика. В отличие от динамической компиляции, выполняемой JIT-компилятором для приложений магазина Windows или [Генератором машинных образов (Ngen.exe)](../tools/ngen-exe-native-image-generator.md) на устройстве. Несмотря на различия, .NET Native пытается обеспечить совместимость с [.NET для приложений Магазина Windows](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29). В большинстве случаев все, что работает с .NET для приложений Магазина Windows, также работает с .NET Native.  Тем не менее в некоторых случаях могут произойти изменения поведения. В этом документе обсуждаются различия между стандартом .NET для приложений Магазина Windows и .NET Native в следующих областях:
+.NET Native обеспечивает статическую компиляцию приложений в магазине Windows или на компьютере разработчика. В отличие от динамической компиляции, выполняемой JIT-компилятором для приложений магазина Windows или [Генератором машинных образов (Ngen.exe)](../tools/ngen-exe-native-image-generator.md) на устройстве. Несмотря на различия, .NET Native пытается обеспечить совместимость с [.NET для приложений Магазина Windows](/previous-versions/windows/apps/br230302(v=vs.140)). В большинстве случаев все, что работает с .NET для приложений Магазина Windows, также работает с .NET Native.  Тем не менее в некоторых случаях могут произойти изменения поведения. В этом документе обсуждаются различия между стандартом .NET для приложений Магазина Windows и .NET Native в следующих областях:
 
 - [Общие различия среды выполнения](#Runtime)
 
@@ -85,7 +85,7 @@ ms.locfileid: "86309200"
 
 - <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties%2A?displayProperty=nameWithType> и <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents%2A?displayProperty=nameWithType> включают скрытые члены в базовых классах и поэтому могут переопределяться без явного переопределения. Это также справедливо для других методов [RuntimeReflectionExtensions.GetRuntime*](xref:System.Reflection.RuntimeReflectionExtensions) .
 
-- <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType>и <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType> не завершаются ошибкой при попытке создать определенные сочетания (например, массив `byref` объектов).
+- <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType> и <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType> не завершаются ошибкой при попытке создать определенные сочетания (например, массив `byref` объектов).
 
 - Нельзя использовать отражение для вызова членов, которые содержат параметры указателя.
 
@@ -225,9 +225,9 @@ ms.locfileid: "86309200"
 - <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType>
 - <xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType>
 
- <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType>поддерживается, но в некоторых сценариях возникает исключение, например, если оно используется с [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) или `byref` Variant.
+ <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> поддерживается, но в некоторых сценариях возникает исключение, например, если оно используется с [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) или `byref` Variant.
 
- Устаревшие API-интерфейсы для поддержки [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) включают:
+ Устаревшие API-интерфейсы для поддержки [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) включают:
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.ClassInterfaceType.AutoDual?displayProperty=fullName>
@@ -324,7 +324,7 @@ ms.locfileid: "86309200"
 
 - Реализация интерфейса <xref:System.Runtime.InteropServices.ICustomQueryInterface?displayProperty=nameWithType> на управляемом типе
 
-- Реализация интерфейса [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) в управляемом типе через атрибут <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType> . Однако нельзя вызывать COM-объекты с помощью `IDispatch` , а управляемый объект не может реализовать `IDispatch` .
+- Реализация интерфейса [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) в управляемом типе через атрибут <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType> . Однако нельзя вызывать COM-объекты с помощью `IDispatch` , а управляемый объект не может реализовать `IDispatch` .
 
 Использование отражения для вызова метода неуправляемого кода не поддерживается. Это ограничение можно обойти путем заключения вызова метода в другой метод, вместо этого используя вызов оболочки.
 
@@ -661,9 +661,9 @@ Visual Basic в настоящее время не поддерживается 
 
 Включение .NET Native в библиотеке модульных тестов для проекта приложений Магазина Windows не поддерживается и приводит к сбою сборки проекта.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Начало работы](getting-started-with-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
-- [Общие сведения о приложениях .NET для Магазина Windows](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)
-- [Поддержка приложений для Магазина Windows и среды выполнения Windows в .NET Framework](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [Общие сведения о приложениях .NET для Магазина Windows](/previous-versions/windows/apps/br230302(v=vs.140))
+- [Поддержка платформы .NET Framework для приложений магазина Windows и среды выполнения Windows](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

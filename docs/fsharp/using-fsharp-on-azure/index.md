@@ -3,12 +3,12 @@ title: Использование языка F# в Azure
 description: Руководство по использованию служб Azure с F#
 author: sylvanc
 ms.date: 07/29/2020
-ms.openlocfilehash: 24ef3fd14a4d0173935fac3e67aadf86110fa6d8
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 0f516b8a3b4fd60eea8facad83a440e33ffd521c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517377"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90548427"
 ---
 # <a name="using-f-on-azure"></a>Использование языка F# в Azure
 
@@ -57,7 +57,7 @@ Azure поддерживает широкий спектр конфигурац�
 
 ## <a name="using-apache-spark-with-f-on-azure-hdinsight-or-azure-databricks"></a>Использование Apache Spark с F# на платформе Azure HDInsight или Azure Databricks
 
-[Apache Spark для Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview) — это платформа обработки с открытым исходным кодом, в которой выполняются крупномасштабные приложения для анализа данных. [Azure Databricks](https://docs.microsoft.com/azure/databricks/scenarios/what-is-azure-databricks) — это платформа аналитики на основе Apache Spark, оптимизированная для платформы облачных служб Microsoft Azure. Azure делает развертывание Apache Spark простым и экономичным. Разрабатывайте приложения Spark на языке F# с помощью [.NET для Apache Spark](../../spark/what-is-apache-spark-dotnet.md), набора привязок .NET для Apache Spark.
+[Apache Spark для Azure HDInsight](/azure/hdinsight/spark/apache-spark-overview) — это платформа обработки с открытым исходным кодом, в которой выполняются крупномасштабные приложения для анализа данных. [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) — это платформа аналитики на основе Apache Spark, оптимизированная для платформы облачных служб Microsoft Azure. Azure делает развертывание Apache Spark простым и экономичным. Разрабатывайте приложения Spark на языке F# с помощью [.NET для Apache Spark](../../spark/what-is-apache-spark-dotnet.md), набора привязок .NET для Apache Spark.
 
 * [Примеры .NET для Apache Spark на языке F#](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
 * [Установка записных книжек .NET Interactive Jupyter на платформе Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
@@ -89,7 +89,7 @@ Azure Cosmos DB можно использовать с F# двумя спосо�
 Концентраторы уведомлений Azure можно использовать с F# двумя способами.
 
 1. Посредством создания Функций Azure на F#, которые отправляют результаты в концентратор уведомлений. См. статью [Триггеры вывода Функций Azure для концентраторов уведомлений](/azure/azure-functions/functions-bindings-notification-hubs).
-2. Посредством [пакета SDK .NET для Azure](https://docs.microsoft.com/archive/blogs/azuremobile/push-notifications-using-notification-hub-and-net-backend). Обратите внимание, что эти примеры написаны на C#.
+2. Посредством [пакета SDK .NET для Azure](/archive/blogs/azuremobile/push-notifications-using-notification-hub-and-net-backend). Обратите внимание, что эти примеры написаны на C#.
 
 ## <a name="implementing-webhooks-on-azure-with-f"></a>Реализация веб-перехватчиков в Azure с помощью F\#
 
@@ -111,7 +111,7 @@ Azure Cosmos DB можно использовать с F# двумя спосо�
 
 ## <a name="deploying-and-managing-azure-resources-with-f-scripts"></a>Развертывание ресурсов Azure и управление ими с помощью скриптов F#
 
-Виртуальные машины Azure можно программно развертывать и контролировать из скриптов F# с помощью API и пакетов Microsoft.Azure.Management. Например, см. статьи [Приступая к работе с библиотеками управления для .NET](https://msdn.microsoft.com/library/dn722415.aspx) и [Использование Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
+Виртуальные машины Azure можно программно развертывать и контролировать из скриптов F# с помощью API и пакетов Microsoft.Azure.Management. Например, см. статьи [Приступая к работе с библиотеками управления для .NET](/previous-versions/azure/dn722415(v=azure.100)) и [Использование Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
 
 Аналогичным образом из скриптов F# можно развернуть и контролировать и другие ресурсы Azure. Например, с помощью скриптов F# вы можете создавать учетные записи хранения, развертывать Облачные службы Azure, создавать экземпляры Azure Cosmos DB и программно управлять Центрами уведомлений Azure.
 

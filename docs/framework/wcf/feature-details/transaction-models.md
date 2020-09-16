@@ -2,12 +2,12 @@
 title: Модели транзакций
 ms.date: 03/30/2017
 ms.assetid: 48a8bc1b-128b-4cf1-a421-8cc73223c340
-ms.openlocfilehash: d6c78a5342bf19d19308352cddc241f436bfcb3a
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 2d3d0631c47506e7bd99d90ed49a1fdc76cc7a59
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76745321"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556828"
 ---
 # <a name="transaction-models"></a>Модели транзакций
 В этом разделе описывается связь между моделями программирования транзакций и компонентами инфраструктуры, предоставляемыми корпорацией Microsoft.  
@@ -31,6 +31,6 @@ ms.locfileid: "76745321"
 ## <a name="msdtc-transactions"></a>Транзакции MSDTC  
  Координатор распределенных транзакций (Майкрософт) (MSDTC) представляет собой диспетчер транзакций, обеспечивающий поддержку распределенных транзакций.  
   
- Дополнительные сведения см. в [справочнике программиста по DTC](https://docs.microsoft.com/previous-versions/windows/desktop/ms686108(v=vs.85)).  
+ Дополнительные сведения см. в [справочнике программиста по DTC](/previous-versions/windows/desktop/ms686108(v=vs.85)).  
   
  В службе или приложении WCF служба MSDTC предоставляет инфраструктуру для координации транзакций, созданных в клиенте или службе.

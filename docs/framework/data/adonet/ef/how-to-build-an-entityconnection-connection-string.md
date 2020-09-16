@@ -5,19 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5bd1a748-3df7-4d0a-a607-14f25e3175e9
-ms.openlocfilehash: f0918950921e620f724fedd8be027ffe0e2d3fa6
-ms.sourcegitcommit: 205b9a204742e9c77256d43ac9d94c3f82909808
+ms.openlocfilehash: 86ba3956797ff603dd944bfc8df1990df8f23001
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70854671"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556438"
 ---
 # <a name="how-to-build-an-entityconnection-connection-string"></a>Практическое руководство. Сборка строки соединения EntityConnection
 В этом разделе содержится пример создания экземпляра <xref:System.Data.EntityClient.EntityConnection>.  
   
 ### <a name="to-run-the-code-in-this-example"></a>Выполнение кода в этом примере  
   
-1. Добавьте [модель AdventureWorks Sales](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) в проект и настройте проект для использования Entity Framework. Дополнительные сведения см. в разделе [Практическое руководство. Используйте мастер](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100))EDM.  
+1. Добавьте [модель AdventureWorks Sales](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) в проект и настройте проект для использования Entity Framework. Дополнительные сведения см. в разделе [инструкции. Использование мастера EDM](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
 2. На странице кода приложения добавьте следующие инструкции `using` (`Imports` в Visual Basic):  
   
@@ -32,5 +32,5 @@ ms.locfileid: "70854671"
   
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Использование EntityConnection с контекстом объекта](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738461(v=vs.100))
+- [Практическое руководство. Использование EntityConnection с контекстом объекта](/previous-versions/dotnet/netframework-4.0/bb738461(v=vs.100))
 - [Поставщик EntityClient для Entity Framework](entityclient-provider-for-the-entity-framework.md)

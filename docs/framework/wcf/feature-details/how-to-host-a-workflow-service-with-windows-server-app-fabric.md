@@ -2,16 +2,16 @@
 title: Практическое руководство. Как разместить службу рабочего процесса с помощью Windows Server App Fabric
 ms.date: 03/30/2017
 ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
-ms.openlocfilehash: 519c76e3e46e01b5e8c696234e39fefbb9f8ad06
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2cf77753a0540e75ae6778065f7fa006729f8d6a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593312"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555989"
 ---
 # <a name="how-to-host-a-workflow-service-with-windows-server-app-fabric"></a>Практическое руководство. Как разместить службу рабочего процесса с помощью Windows Server App Fabric
 
-Размещение служб рабочих процессов в фабрике приложений аналогично их размещению в виртуальном каталоге служб IIS/WAS. Разница состоит лишь в предоставлении фабрикой приложений средств для развертывания, наблюдения и управления службами рабочих процессов. В этом разделе используется служба рабочего процесса, созданная при [создании длительно выполняющейся службы рабочего процесса](creating-a-long-running-workflow-service.md). Указанный раздел содержит пошаговые инструкции по созданию службы рабочих процессов. В этом разделе объясняется, как разместить службу рабочих процессов с помощью фабрики приложений. Дополнительные сведения о Windows Server App Fabric см. в [документации по Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)). Перед выполнением описанных далее шагов убедитесь, что фабрика приложений Windows Server уже установлена.  Для этого откройте службы IIS (inetmgr. exe), щелкните имя сервера в представлении **подключения** , щелкните сайты и выберите **веб-сайт по умолчанию**. В правой части экрана вы увидите раздел **App Fabric**. Если вы не видите этот раздел (он находится на верхней правой панели), значит фабрика приложений не установлена. Дополнительные сведения об установке Windows Server App Fabric см. в статье [Установка Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee790960(v=azure.10)).  
+Размещение служб рабочих процессов в фабрике приложений аналогично их размещению в виртуальном каталоге служб IIS/WAS. Разница состоит лишь в предоставлении фабрикой приложений средств для развертывания, наблюдения и управления службами рабочих процессов. В этом разделе используется служба рабочего процесса, созданная при [создании длительно выполняющейся службы рабочего процесса](creating-a-long-running-workflow-service.md). Указанный раздел содержит пошаговые инструкции по созданию службы рабочих процессов. В этом разделе объясняется, как разместить службу рабочих процессов с помощью фабрики приложений. Дополнительные сведения о Windows Server App Fabric см. в [документации по Windows Server App Fabric](/previous-versions/appfabric/ff384253(v=azure.10)). Перед выполнением описанных далее шагов убедитесь, что фабрика приложений Windows Server уже установлена.  Для этого откройте службы IIS (inetmgr.exe), щелкните имя сервера в представлении **подключения** , щелкните сайты и выберите **веб-сайт по умолчанию**. В правой части экрана вы увидите раздел **App Fabric**. Если вы не видите этот раздел (он находится на верхней правой панели), значит фабрика приложений не установлена. Дополнительные сведения об установке Windows Server App Fabric см. в статье [Установка Windows Server App Fabric](/previous-versions/appfabric/ee790960(v=azure.10)).  
   
 ### <a name="creating-a-simple-workflow-service"></a>Создание простой службы рабочих процессов  
   
@@ -41,37 +41,37 @@ ms.locfileid: "84593312"
   
      ![Вкладка «Наблюдение за конфигурацией фабрики приложения»](media/appfabricconfiguration-monitoring.gif "Аппфабрикконфигуратион — мониторинг")  
   
-     Дополнительные сведения о настройке мониторинга службы рабочих процессов в структуре приложений см. в статье [Настройка мониторинга с помощью App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677384(v=azure.10)).  
+     Дополнительные сведения о настройке мониторинга службы рабочих процессов в структуре приложений см. в статье [Настройка мониторинга с помощью App Fabric](/previous-versions/appfabric/ee677384(v=azure.10)).  
   
 6. Перейдите на вкладку **Сохраняемость рабочего процесса** . Это позволяет настроить приложение для использования поставщика сохраняемости по умолчанию в структуре приложений, как показано на следующем снимке экрана.  
   
      ![Конфигурация структуры приложений &#45; сохраняемость](media/appfabricconfiguration-persistence.gif "Аппфабрикконфигуратион — сохраняемость")  
   
-     Дополнительные сведения о настройке сохраняемости рабочих процессов в структуре приложений Windows Server см. [в статье Настройка сохраняемости рабочих процессов в структуре приложений](https://docs.microsoft.com/previous-versions/appfabric/ee677353(v=azure.10)).  
+     Дополнительные сведения о настройке сохраняемости рабочих процессов в структуре приложений Windows Server см. [в статье Настройка сохраняемости рабочих процессов в структуре приложений](/previous-versions/appfabric/ee677353(v=azure.10)).  
   
 7. Перейдите на вкладку **Управление узлом рабочего процесса** . Это позволяет указать, когда следует выгружать неактивные экземпляры службы рабочего процесса и сохранять их, как показано на следующем снимке экрана.  
   
      ![Управление узлом рабочего процесса конфигурации структуры приложений](media/appfabricconfiguration-management.gif "Аппфабрикконфигуратион — управление")  
   
-     Дополнительные сведения о конфигурации управления узлом рабочих процессов см. [в статье Настройка управления узлами рабочих процессов в App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ff383424(v=azure.10)).  
+     Дополнительные сведения о конфигурации управления узлом рабочих процессов см. [в статье Настройка управления узлами рабочих процессов в App Fabric](/previous-versions/appfabric/ff383424(v=azure.10)).  
   
 8. Перейдите на вкладку **Автозапуск** . Это позволяет указать параметры автоматического запуска для служб рабочего процесса в приложении, как показано на следующем снимке экрана.  
   
      ![Снимок экрана, показывающий конфигурацию запуска автоматического&#45;в структуре приложений.](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-auto-start-configuration.gif)  
   
-     Дополнительные сведения о настройке автоматического запуска см. [в разделе Настройка автоматического запуска с помощью App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677261(v=azure.10)).  
+     Дополнительные сведения о настройке автоматического запуска см. [в разделе Настройка автоматического запуска с помощью App Fabric](/previous-versions/appfabric/ee677261(v=azure.10)).  
   
 9. Перейдите на вкладку **регулирование** . Это позволяет настроить параметры регулирования для службы рабочего процесса, как показано на следующем снимке экрана.  
   
      ![Снимок экрана, на котором показана конфигурация регулирования структуры приложений.](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-throttling-configuration.gif)  
   
-     Дополнительные сведения о настройке регулирования см. [в разделе Настройка регулирования с помощью App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677261(v=azure.10)).  
+     Дополнительные сведения о настройке регулирования см. [в разделе Настройка регулирования с помощью App Fabric](/previous-versions/appfabric/ee677261(v=azure.10)).  
   
 10. Перейдите на вкладку **Безопасность** . Это позволяет настроить параметры безопасности для приложения, как показано на следующем снимке экрана.  
   
      ![Конфигурация безопасности фабрики приложения](media/appfabricconfiguration-security.gif "Аппфабрикконфигуратион — безопасность")  
   
-     Дополнительные сведения о настройке безопасности с помощью Windows Server App Fabric см. [в статье Настройка безопасности с помощью App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677278(v=azure.10)).  
+     Дополнительные сведения о настройке безопасности с помощью Windows Server App Fabric см. [в статье Настройка безопасности с помощью App Fabric](/previous-versions/appfabric/ee677278(v=azure.10)).  
   
 ### <a name="using-windows-server-app-fabric"></a>Использование фабрики приложений Windows Server  
   
@@ -89,11 +89,11 @@ ms.locfileid: "84593312"
   
      ![Снимок экрана, на котором показаны сохраненные сведения об экземпляре рабочего процесса.](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/persisted-workflow-instance-detail.gif)  
   
-     Дополнительные сведения о функциях Windows Server App Fabric и способах их использования см. в статье [функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10)) .  
+     Дополнительные сведения о функциях Windows Server App Fabric и способах их использования см. в статье [функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10)) .  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Создание службы долго выполняющегося рабочего процесса](creating-a-long-running-workflow-service.md)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
-- [Установка Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee790960(v=azure.10))
-- [Документация по Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))
+- [Установка Windows Server App Fabric](/previous-versions/appfabric/ee790960(v=azure.10))
+- [Документация по Windows Server App Fabric](/previous-versions/appfabric/ff384253(v=azure.10))

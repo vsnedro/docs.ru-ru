@@ -4,12 +4,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - String data type [Visual Basic], validation
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
-ms.openlocfilehash: 7b2d6a81f5dc88688a469b96d56a098a2b45c59f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8cb04286e98cf78f0fb66dde92002ee09e2ea0f5
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363691"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556249"
 ---
 # <a name="walkthrough-validating-that-passwords-are-complex-visual-basic"></a>Пошаговое руководство. Проверка паролей на сложность (Visual Basic)
 Этот метод проверяет некоторые характеристики строгого пароля и обновляет строковый параметр, используя сведения о том, какие проверки пароля завершился ошибкой.  
@@ -31,7 +31,7 @@ ms.locfileid: "84363691"
 - Доступ к членам пространства имен <xref:System.Text.RegularExpressions>. Добавьте оператор `Imports`, если в коде не используются полные имена членов. Дополнительные сведения см. в статье [Оператор Imports (пространство имен .NET и тип)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## <a name="security"></a>Безопасность  
- При перемещении пароля по сети необходимо использовать безопасный метод передачи данных. Дополнительные сведения см. в разделе [ASP.NET Web Application Security](https://docs.microsoft.com/previous-versions/aspnet/330a99hc(v=vs.100)).
+ При перемещении пароля по сети необходимо использовать безопасный метод передачи данных. Дополнительные сведения см. в разделе [ASP.NET Web Application Security](/previous-versions/aspnet/330a99hc(v=vs.100)).
   
  Точность функции можно улучшить `ValidatePassword` , добавив дополнительные проверки сложности:  
   
@@ -43,7 +43,7 @@ ms.locfileid: "84363691"
   
 - Не разрешайте пароли, в которых все символы введены из верхней строки клавиатуры.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Text.RegularExpressions.Regex>
-- [Безопасность веб-приложений ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/330a99hc(v=vs.100))
+- [Безопасность веб-приложений ASP.NET](/previous-versions/aspnet/330a99hc(v=vs.100))

@@ -3,12 +3,12 @@ title: Общие сведения о средствах диагностики 
 description: Общие сведения о средствах и методах диагностики приложений .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: 568f237e131cde18dad7c87ddff2fdd3d4bc5b8b
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+ms.openlocfilehash: e97acccbe3bdd577ee600cefb9f1f0528d3c1ac0
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89597978"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538531"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Общие сведения о средствах диагностики в .NET Core
 
@@ -56,7 +56,7 @@ ms.locfileid: "89597978"
 
 ### <a name="dotnet-sos"></a>dotnet-sos
 
-[dotnet-sos](dotnet-sos.md) используется для установки [расширения отладки SOS](https://docs.microsoft.com/dotnet/framework/tools/sos-dll-sos-debugging-extension) в Linux или MacOS (или в Windows при использовании старых средств отладки).
+[dotnet-sos](dotnet-sos.md) используется для установки [расширения отладки SOS](../../framework/tools/sos-dll-sos-debugging-extension.md) в Linux или MacOS (или в Windows при использовании старых средств отладки).
 
 ## <a name="net-core-diagnostics-tutorials"></a>Учебники по диагностике .NET Core
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT [.NET Framework profiling]
 ms.assetid: f2fc441f-d62e-4f72-a011-354ea13c8c59
-ms.openlocfilehash: b4ab5c8f7cdca1303cb4fbbc4fa39db3c5977c15
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: d6cba2ec3e82c07ce60f0f2b2199cc97e31a000b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76867013"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555553"
 ---
 # <a name="corprof_e_unsupported_call_sequence-hresult"></a>CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
 
@@ -31,9 +31,9 @@ CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в .NET Framewor
   
  Многие из идентификаторов, предоставляемых API профилирования, указывают на структуры данных в среде CLR. Многие `ICorProfilerInfo` вызовы просто считывают информацию из этих структур данных и передают их обратно. Однако среда CLR может изменить все эти структуры при ее выполнении и использовать блокировки для этого. Предположим, что среда CLR уже удерживает (или пытается получить) блокировку во время перехвата потоком профилировщика. Если поток повторно вводит среду CLR и пытается выполнить больше блокировок или проверять структуры, которые были в процессе изменения, эти структуры могут находиться в нестабильном состоянии. В таких ситуациях можно легко вызывать взаимоблокировки и нарушения прав доступа.  
   
- Как правило, когда незахватывающий профилировщик выполняет код внутри метода [ICorProfilerCallback](icorprofilercallback-interface.md) и вызывает метод `ICorProfilerInfo` с допустимыми параметрами, он не должен быть взаимоблокировками или получать нарушение прав доступа. Например, код профилировщика, который выполняется внутри метода [ICorProfilerCallback:: класслоадфинишед](icorprofilercallback-classloadfinished-method.md) , может запросить сведения о классе, вызвав метод [ICorProfilerInfo2:: GetClassIDInfo2](icorprofilerinfo2-getclassidinfo2-method.md) . Код может получить CORPROF_E_DATAINCOMPLETE HRESULT, чтобы указать, что информация недоступна. Однако он не будет взаимоблокировками или получить нарушение прав доступа. Эти вызовы в `ICorProfilerInfo` считаются синхронными, так как они создаются из метода `ICorProfilerCallback`.  
+ Как правило, когда незахватывающий профилировщик выполняет код внутри метода [ICorProfilerCallback](icorprofilercallback-interface.md) и вызывает `ICorProfilerInfo` метод с допустимыми параметрами, он не должен быть взаимоблокировками или получать нарушение прав доступа. Например, код профилировщика, который выполняется внутри метода [ICorProfilerCallback:: класслоадфинишед](icorprofilercallback-classloadfinished-method.md) , может запросить сведения о классе, вызвав метод [ICorProfilerInfo2:: GetClassIDInfo2](icorprofilerinfo2-getclassidinfo2-method.md) . Код может получить CORPROF_E_DATAINCOMPLETE HRESULT, чтобы указать, что информация недоступна. Однако он не будет взаимоблокировками или получить нарушение прав доступа. Эти вызовы `ICorProfilerInfo` считаются синхронными, поскольку они выполняются из `ICorProfilerCallback` метода.  
   
- Однако управляемый поток, который выполняет код, не находящиеся в методе `ICorProfilerCallback`, считается асинхронным вызовом. В .NET Framework версии 1 было сложно определить, что может произойти в асинхронном вызове. Вызов может привести к взаимоблокировке, сбою или дать недопустимый ответ. В .NET Framework версии 2,0 появились некоторые простые проверки, которые помогут избежать этой проблемы. В .NET Framework 2,0 при асинхронном вызове ненадежной функции `ICorProfilerInfo` происходит сбой с CORPROF_E_UNSUPPORTED_CALL_SEQUENCE значением HRESULT.  
+ Однако управляемый поток, который выполняет код, не находящиеся в `ICorProfilerCallback` методе, считается асинхронным вызовом. В .NET Framework версии 1 было сложно определить, что может произойти в асинхронном вызове. Вызов может привести к взаимоблокировке, сбою или дать недопустимый ответ. В .NET Framework версии 2,0 появились некоторые простые проверки, которые помогут избежать этой проблемы. В .NET Framework 2,0 при асинхронном вызове ненадежной `ICorProfilerInfo` функции происходит сбой с CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT.  
   
  Как правило, асинхронные вызовы не являются надежными. Однако следующие методы являются надежными и специально поддерживают асинхронные вызовы:  
   
@@ -69,10 +69,10 @@ CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в .NET Framewor
   
 - [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md)  
   
- Дополнительные сведения см. в записи, [зачем CORPROF_E_UNSUPPORTED_CALL_SEQUENCE](https://docs.microsoft.com/archive/blogs/davbr/why-we-have-corprof_e_unsupported_call_sequence) в блоге API профилирования CLR.  
+ Дополнительные сведения см. в записи, [зачем CORPROF_E_UNSUPPORTED_CALL_SEQUENCE](/archive/blogs/davbr/why-we-have-corprof_e_unsupported_call_sequence) в блоге API профилирования CLR.  
   
 ## <a name="triggering-garbage-collections"></a>Запуск сборок мусора  
- В этом сценарии используется профилировщик, работающий в методе обратного вызова (например, один из методов `ICorProfilerCallback`), который запрещает сбор мусора. Если профилировщик пытается вызвать информационный метод (например, метод в интерфейсе `ICorProfilerInfo`), который может запустить сборку мусора, то информационный метод завершается с CORPROF_E_UNSUPPORTED_CALL_SEQUENCE значением HRESULT.  
+ В этом сценарии используется профилировщик, работающий в методе обратного вызова (например, один из `ICorProfilerCallback` методов), который запрещает сбор мусора. Если профилировщик пытается вызвать информационный метод (например, метод в `ICorProfilerInfo` интерфейсе), который может активировать сборку мусора, то информационный метод завершается ошибкой с CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT.  
   
  В следующей таблице показаны методы обратного вызова, запрещающие сборки мусора, и информационные методы, которые могут запускать сборку мусора. Если профилировщик выполняется внутри одного из указанных методов обратного вызова и вызывает один из указанных информационных методов, этот информационный метод завершается с ошибкой CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT.  
   
@@ -80,7 +80,7 @@ CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в .NET Framewor
 |------------------------------------------------------|------------------------------------------------------------|  
 |[ThreadAssignedToOSThread](icorprofilercallback-threadassignedtoosthread-method.md)<br /><br /> [ExceptionUnwindFunctionEnter](icorprofilercallback-exceptionunwindfunctionenter-method.md)<br /><br /> [ексцептионунвиндфунктионлеаве](icorprofilercallback-exceptionunwindfunctionleave-method.md)<br /><br /> [ексцептионунвиндфиналлентер](icorprofilercallback-exceptionunwindfinallyenter-method.md)<br /><br /> [Exceptionunwindfinallyleave-](icorprofilercallback-exceptionunwindfinallyleave-method.md)<br /><br /> [ексцептионкатчерентер](icorprofilercallback-exceptioncatcherenter-method.md)<br /><br /> [рунтимесуспендстартед](icorprofilercallback-runtimesuspendstarted-method.md)<br /><br /> [RuntimeSuspendFinished](icorprofilercallback-runtimesuspendfinished-method.md)<br /><br /> [рунтимесуспендабортед](icorprofilercallback-runtimesuspendaborted-method.md)<br /><br /> [RuntimeThreadSuspended](icorprofilercallback-runtimethreadsuspended-method.md)<br /><br /> [RuntimeThreadResumed](icorprofilercallback-runtimethreadresumed-method.md)<br /><br /> [MovedReferences](icorprofilercallback-movedreferences-method.md)<br /><br /> [ObjectReferences](icorprofilercallback-objectreferences-method.md)<br /><br /> [обжектсаллокатедбикласс](icorprofilercallback-objectsallocatedbyclass-method.md)<br /><br /> [RootReferences2](icorprofilercallback-rootreferences-method.md)<br /><br /> [хандлекреатед](icorprofilercallback2-handlecreated-method.md)<br /><br /> [хандледестройед](icorprofilercallback2-handledestroyed-method.md)<br /><br /> [GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md)<br /><br /> [GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md)|[GetILFunctionBodyAllocator](icorprofilerinfo-getilfunctionbodyallocator-method.md)<br /><br /> [SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md)<br /><br /> [сетилинструментедкодемап](icorprofilerinfo-setilinstrumentedcodemap-method.md)<br /><br /> [ForceGC](icorprofilerinfo-forcegc-method.md)<br /><br /> [жетклассфромтокен](icorprofilerinfo-getclassfromtoken-method.md)<br /><br /> [GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md)<br /><br /> [жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md)<br /><br /> [жетаппдомаининфо](icorprofilerinfo-getappdomaininfo-method.md)<br /><br /> [EnumModules](icorprofilerinfo3-enummodules-method.md)<br /><br /> [рекуестпрофилердетач](icorprofilerinfo3-requestprofilerdetach-method.md)<br /><br /> [жетаппдомаинсконтаинингмодуле](icorprofilerinfo3-getappdomainscontainingmodule-method.md)|  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)
@@ -88,5 +88,5 @@ CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в .NET Framewor
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)
-- [Интерфейсы профилирования](profiling-interfaces.md)
+- [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Профилирование](index.md)

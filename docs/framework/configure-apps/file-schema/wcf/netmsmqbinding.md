@@ -2,12 +2,12 @@
 title: <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: a68b44d7-7799-43a3-9e63-f07c782810a6
-ms.openlocfilehash: 7456c6373c64e07b73e15e7e2bb229dce4032121
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4070b9659b6d3936dec38fc6a30cf7cd673691f5
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74140748"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556171"
 ---
 # \<netMsmqBinding>
 Определяет поставленную в очередь привязку, пригодную для обеспечения связи между компьютерами.  
@@ -65,7 +65,7 @@ ms.locfileid: "74140748"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`closeTimeout`|Значение <xref:System.TimeSpan>, которое задает длительность времени ожидания для завершения операции закрытия. Это значение должно быть больше или равно <xref:System.TimeSpan.Zero>. Значение по умолчанию - 00:01:00.|  
 |`customDeadLetterQueue`|Универсальный код ресурса (URI), который указывает местоположение очереди недоставленных сообщений для каждого приложения, куда помещаются сообщения с истекшим сроком или сообщения, которые не удалось передать или доставить.<br /><br /> Очередью недоставленных сообщений является очередь в диспетчере очередей отправившего приложения для сообщений с истекшим сроком, которые не удалось доставить.<br /><br /> Универсальный код ресурса (URI), определяемый свойством <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A>, должен использовать схему net.msmq.|  
@@ -92,7 +92,7 @@ ms.locfileid: "74140748"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
 |[\<security>](security-of-netmsmqbinding.md)|Определяет параметры безопасности привязки. Это элемент типа <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  

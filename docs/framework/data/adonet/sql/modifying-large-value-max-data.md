@@ -1,16 +1,16 @@
 ---
-title: Изменение данных с большой стоимостью (макс)
+title: Изменение данных с большими значениями (max)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8aca5f00-d80e-4320-81b3-016d0466f7ee
-ms.openlocfilehash: 00a4ae83270bb74e9703faebfc93e26b5c069478
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8a077c56f4de5a88e9c2a6f932c9a8b5ffc6b974
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174281"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556971"
 ---
 # <a name="modifying-large-value-max-data-in-adonet"></a>Изменение данных больших объемов (max) в ADO.NET
 Типы данных LOB — это данные, размер которых превышает максимальный размер строки в 8 килобайт (КБ). SQL Server представляет описатель `max` для типов данных `varchar`, `nvarchar` и `varbinary`, позволяющий сохранять значения размером до 2^32 байт. В столбцах таблицы и переменных Transact-SQL может быть указан тип данных `varchar(max)`, `nvarchar(max)` или `varbinary(max)`. В ADO.NET типы данных `max` можно выбрать с помощью объекта `DataReader`, а также их можно задавать в качестве значений входных и выходных параметров без какой-либо специальной обработки. В случае типов больших значений `varchar` данные могут извлекаться и обновляться постепенно.  
@@ -19,9 +19,9 @@ ms.locfileid: "79174281"
   
  В приведенной ниже таблице указаны ссылки на разделы электронной документации по SQL Server.  
   
- **Документация сервера S'L**  
+ **Документация по SQL Server**  
   
-1. [Использование типов данных большого размера](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
+1. [Использование типов данных большого размера](/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
   
 ## <a name="large-value-type-restrictions"></a>Ограничения для типов данных большого размера  
  Приведенные ниже ограничения применяются к типам данных `max`, которые не существуют для типов данных меньших значений.  
@@ -57,15 +57,15 @@ FROM OPENROWSET
   
  UPDATE  
   
- - * \<объект>*  
+ { *\<object>* }  
   
  SET  
   
- *- column_name* . WRITE *(выражение* @Offset @Length , , )  
+ { *column_name* = {. WRITE ( *выражение* , @Offset , @Length )}  
   
  Метод WRITE указывает, что часть значения *column_name* будет изменена. Выражение является значением, которое будет скопировано в поле *column_name*. Аргумент `@Offset` является начальной точкой записи выражения, а аргумент `@Length` — длиной изменяемой секции в столбце.  
   
-|Если|То|  
+|If|Следующее действие|  
 |--------|----------|  
 |Для выражения задано значение NULL.|Аргумент `@Length` не обрабатывается, а значение в поле *column_name* усекается в соответствии с указанным аргументом `@Offset`.|  
 |`@Offset` равно NULL|Операция обновления добавляет выражение в конец существующего значения *column_name*, и аргумент `@Length` не обрабатывается.|  
@@ -249,9 +249,9 @@ WHERE   DocumentID=@DocumentID
  [!code-csharp[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/CS/source.cs#1)]
  [!code-vb[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/VB/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Двоичные и высокоценные данные сервера S'L](sql-server-binary-and-large-value-data.md)
+- [SQL Server данные в двоичном и больших значениях](sql-server-binary-and-large-value-data.md)
 - [Сопоставления типов данных SQL Server](../sql-server-data-type-mappings.md)
-- [Операции с серверами серверов в ADO.NET](sql-server-data-operations.md)
+- [SQL Serverные операции с данными в ADO.NET](sql-server-data-operations.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
-ms.openlocfilehash: 08cfb8c1a5581f17a251224430018764bed80b0f
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 5e8bcab4cdd8f27e9ea27e66fe4c848ccd35e99c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245015"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556815"
 ---
 # <a name="transport-security-with-an-anonymous-client"></a>Безопасность транспорта с анонимным клиентом
 
@@ -25,12 +25,12 @@ ms.locfileid: "85245015"
 
 |Характеристика|Описание|
 |--------------------|-----------------|
-|Режим безопасности|Транспортировка|
+|Режим безопасности|Транспорт|
 |Совместимость|С существующими веб-службами и клиентами|
 |Проверка подлинности (сервера)<br /><br /> Проверка подлинности (клиента)|Да<br /><br /> Уровень приложения (без поддержки WCF)|
 |Целостность|Да|
 |Конфиденциальность|Да|
-|Транспортировка|HTTPS|
+|Транспорт|HTTPS|
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|
 
 ## <a name="service"></a>Служба
@@ -48,7 +48,7 @@ ms.locfileid: "85245015"
 [!code-csharp[c_SecurityScenarios#5](~/samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#5)]
 [!code-vb[c_SecurityScenarios#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#5)]
 
-### <a name="configuration"></a>Параметр Configuration
+### <a name="configuration"></a>Конфигурация
 
 В следующем коде настраивается та же конечная точка с использованием конфигурации. Проверка подлинности клиента не выполняется никаким механизмом и, следовательно, клиент является анонимным.
 
@@ -79,7 +79,7 @@ ms.locfileid: "85245015"
 </configuration>
 ```
 
-## <a name="client"></a>клиент
+## <a name="client"></a>Клиент
 
 Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.
 
@@ -95,7 +95,7 @@ ms.locfileid: "85245015"
 [!code-csharp[c_SecurityScenarios#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#6)]
 [!code-vb[c_SecurityScenarios#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#6)]
 
-### <a name="configuration"></a>Параметр Configuration
+### <a name="configuration"></a>Конфигурация
 
 Вместо кода для настройки службы можно использовать следующую конфигурацию.
 
@@ -127,4 +127,4 @@ ms.locfileid: "85245015"
 - [Обзор безопасности](security-overview.md)
 - [Безопасность транспорта WS](../samples/ws-transport-security.md)
 - [Общие сведения о безопасности транспорта](transport-security-overview.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

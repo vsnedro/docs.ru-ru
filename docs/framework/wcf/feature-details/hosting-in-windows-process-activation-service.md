@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - hosting services [WCF], WAS
 ms.assetid: d2b9d226-15b7-41fc-8c9a-cb651ac20ecd
-ms.openlocfilehash: 6b0b23c21762009341fd62c029431824dd26d6c3
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 860806fb6406b8ada075b449616f84a360e9ef3a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247264"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555826"
 ---
 # <a name="hosting-in-windows-process-activation-service"></a>Размещение в службе активации процессов Windows
 Служба активации Windows (WAS) управляет активацией и временем жизни рабочих процессов, которые содержат приложения, размещенные в службах Windows Communication Foundation (WCF). Модель процесса WAS обобщает модель процесса IIS 6.0 для HTTP-сервера, удаляя зависимость от HTTP. Это позволяет службам WCF использовать протоколы HTTP и отличные от HTTP, такие как net. TCP, в среде размещения, которая поддерживает активацию на основе сообщений и предлагает возможность размещения большого количества приложений на определенном компьютере.  
@@ -26,7 +26,7 @@ ms.locfileid: "85247264"
 - Централизованные настройка приложений и управление ими.  
   
 - Возможность использования приложениями модели процессов IIS без развертывания полной установки IIS.  
-[Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)) работает с IIS 7,0 и службой активации Windows (WAS), чтобы предоставить обширную среду размещения приложений для служб NET4 WCF и WF. К ее преимуществам относятся управление жизненным циклом, перезапуск процессов, совместное размещение, быстрая защита от сбоев, обработка потерянных процессов, активация по запросу и наблюдение за работоспособностью. Подробные сведения см. в разделе [функции размещения AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10)) и [Основные понятия размещения AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677371(v=azure.10)).  
+[Windows Server AppFabric](/previous-versions/appfabric/ff384253(v=azure.10)) работает с IIS 7,0 и службой активации Windows (WAS), чтобы предоставить обширную среду размещения приложений для служб NET4 WCF и WF. К ее преимуществам относятся управление жизненным циклом, перезапуск процессов, совместное размещение, быстрая защита от сбоев, обработка потерянных процессов, активация по запросу и наблюдение за работоспособностью. Подробные сведения см. в разделе [функции размещения AppFabric](/previous-versions/appfabric/ee677189(v=azure.10)) и [Основные понятия размещения AppFabric](/previous-versions/appfabric/ee677371(v=azure.10)).  
   
 ## <a name="elements-of-the-was-addressing-model"></a>Элементы модели адресации WAS  
  Приложения имеют адреса универсального кода ресурса (URI), представляющие собой единицы кода, временем существования и средой выполнения которых управляет сервер. В одном экземпляре сервера WAS может размещаться много различных приложений. Серверы организуют приложения в группы, называемые *сайтами*. Внутри узла приложения упорядочены иерархически, их расположение отражает структуру URI, выполняющих функцию их внешних адресов.  
@@ -55,4 +55,4 @@ ms.locfileid: "85247264"
 - [Настройка WAS для использования с WCF](configuring-the-wpa--service-for-use-with-wcf.md)
 - [Практическое руководство. Установка и настройка компонентов активации WCF](how-to-install-and-configure-wcf-activation-components.md)
 - [Практическое руководство. Размещение службы WCF в WAS](how-to-host-a-wcf-service-in-was.md)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

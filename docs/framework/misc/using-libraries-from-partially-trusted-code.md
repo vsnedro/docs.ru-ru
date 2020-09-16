@@ -10,19 +10,19 @@ helpviewer_keywords:
 - code access security, partially trusted code
 - APTCA
 ms.assetid: dd66cd4c-b087-415f-9c3e-94e3a1835f74
-ms.openlocfilehash: 38d9c7c7239c849041683525895293a281e3e10f
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: d3c75b4b0ab07efe46ffafbe185a686c7d5a7a45
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855729"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556399"
 ---
 # <a name="using-libraries-from-partially-trusted-code"></a>Использование библиотек из не вполне надежного кода
 
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
 > [!NOTE]
-> В этом разделе рассматривается поведение сборок со строгими именами и применяется только к сборкам [уровня 1](security-transparent-code-level-1.md) . Строгие имена не зависят от [кода, прозрачного для системы безопасности, сборки уровня 2](security-transparent-code-level-2.md) в .NET Framework 4 или более поздней версии. Дополнительные сведения об изменениях в системе безопасности см. в разделе [изменения безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).  
+> В этом разделе рассматривается поведение сборок со строгими именами и применяется только к сборкам [уровня 1](security-transparent-code-level-1.md) . Строгие имена не зависят от [кода, прозрачного для системы безопасности, сборки уровня 2](security-transparent-code-level-2.md) в .NET Framework 4 или более поздней версии. Дополнительные сведения об изменениях в системе безопасности см. в разделе [изменения безопасности](/previous-versions/dotnet/framework/security/security-changes).  
   
  Приложения, которые не получают полное доверие со стороны узла или песочницы, не могут вызывать общие управляемые библиотеки, если только автор библиотеки не разрешил это специально при помощи атрибута <xref:System.Security.AllowPartiallyTrustedCallersAttribute>. Таким образом, авторы приложений должны иметь в виду, что некоторые библиотеки будут им недоступны в контексте частичного доверия. По умолчанию весь код, выполняемый в [песочнице](how-to-run-partially-trusted-code-in-a-sandbox.md) с частичным доверием и не включен в список сборок с полным доверием, является частично доверенным. Если не предполагается, что код будет запускаться в частично доверенном контексте или вызываться кодом с частичным доверием, данный раздел можно игнорировать. Однако при написании кода, который должен взаимодействовать с частично доверенным кодом или работать из частично доверенного контекста, следует учитывать следующие факторы.  
   
@@ -51,6 +51,6 @@ ms.locfileid: "87855729"
 > [!NOTE]
 > Некоторые классы в библиотеке классов .NET Framework не имеют атрибута **AllowPartiallyTrustedCallersAttribute** и не могут вызываться частично доверенным кодом.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление доступом для кода](code-access-security.md)

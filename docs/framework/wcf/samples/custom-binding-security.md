@@ -2,12 +2,12 @@
 title: Безопасность пользовательской привязки
 ms.date: 03/30/2017
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
-ms.openlocfilehash: eb575594cec9ea714578bc104344acc14b00e9df
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ce4cd76a053b9b3611751fe081d0ca710240049d
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592467"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555709"
 ---
 # <a name="custom-binding-security"></a>Безопасность пользовательской привязки
 
@@ -114,16 +114,16 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
 ### <a name="to-run-the-sample-on-the-same-computer"></a>Запуск образца на одном компьютере
 
-1. Откройте окно Командная строка разработчика для Visual Studio с правами администратора и запустите программу Setup. bat из папки примеров установки. При этом устанавливаются все сертификаты, необходимые для выполнения образца.
+1. Откройте окно Командная строка разработчика для Visual Studio с правами администратора и запустите Setup.bat из примера установочной папки. При этом устанавливаются все сертификаты, необходимые для выполнения образца.
 
     > [!NOTE]
-    > Пакетный файл Setup. bat предназначен для запуска из командной строки Visual Studio 2012. Переменная среды PATH, заданная в командной строке Visual Studio 2012, указывает на каталог, содержащий исполняемые файлы, необходимые для сценария Setup. bat.
+    > Пакетный файл Setup.bat предназначен для запуска из командной строки Visual Studio 2012. Переменная среды PATH, заданная в командной строке Visual Studio 2012, указывает на каталог, содержащий исполняемые файлы, необходимые для скрипта Setup.bat.
 
 2. Запустите программу Service.exe из каталога \service\bin.
 
 3. Запустите программу Client.exe из каталога \client\bin. Действия клиента отображаются в консольном приложении клиента.
 
-4. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+4. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 ### <a name="to-run-the-sample-across-computers"></a>Запуск образца на нескольких компьютерах
 
@@ -140,7 +140,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
         > [!NOTE]
         > Пакетный файл Setup.bat предназначен для запуска из командной строки Visual Studio 2010. Необходимо, чтобы переменная среды path указывала на каталог, в котором установлен пакет SDK. Эта переменная среды автоматически устанавливается в командной строке Visual Studio 2010.
 
-    5. Измените [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) содержимое файла Service. exe. config, чтобы оно отражало имя субъекта сертификата, созданного на предыдущем шаге.
+    5. Измените [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) содержимое файла Service.exe.config, чтобы оно отражало имя субъекта сертификата, созданного на предыдущем шаге.
 
     6. Запустите файл Service.exe из командной строки.
 

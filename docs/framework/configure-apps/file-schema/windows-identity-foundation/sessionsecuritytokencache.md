@@ -3,12 +3,12 @@ title: <sessionSecurityTokenCache>
 ms.date: 03/30/2017
 ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507
 author: BrucePerlerMS
-ms.openlocfilehash: a0db10ceb75a470dbf799d717b2059355dd104bb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4169fe307e9ef7c391500a2292fcc247f435caa9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "81646069"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555891"
 ---
 # \<sessionSecurityTokenCache>
 Регистрирует кэш для токенов сеанса с помощью службы или коллекции обработчиков маркеров безопасности.  
@@ -42,7 +42,7 @@ ms.locfileid: "81646069"
 |type|Тип, производный от <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> класса.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -51,7 +51,7 @@ ms.locfileid: "81646069"
 |[\<caches>](caches.md)|Регистрирует кэши, используемые службой или коллекцией обработчиков маркеров безопасности.|  
   
 ## <a name="example"></a>Пример  
- В следующем коде XML показана конфигурация пользовательского кэша для хранения маркеров безопасности сеанса ( <xref:System.IdentityModel.Tokens.SessionSecurityToken> ). Конфигурация берется из `ClaimsAwareWebFarm` примера. Дополнительные сведения об этом образце см. в разделе [Индекс образца кода WIF](https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-code-sample-index).  
+ В следующем коде XML показана конфигурация пользовательского кэша для хранения маркеров безопасности сеанса ( <xref:System.IdentityModel.Tokens.SessionSecurityToken> ). Конфигурация берется из `ClaimsAwareWebFarm` примера. Дополнительные сведения об этом образце см. в разделе [Индекс образца кода WIF](/previous-versions/dotnet/framework/security/wif-code-sample-index).  
   
 ```xml  
 <caches>  

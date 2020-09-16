@@ -5,21 +5,21 @@ helpviewer_keywords:
 - XAML 2009 [XAML Services]
 - XAML [XAML Services], XAML 2009
 ms.assetid: f6bb18d8-c86a-4549-8862-323e6b32a8dd
-ms.openlocfilehash: e58e6757b88958bf8a3547c8a272c2e6298dcecb
-ms.sourcegitcommit: c2d9718996402993cf31541f11e95531bc68bad0
+ms.openlocfilehash: dfa2841d8bc1ed1429372908f0dda97d178c4ac3
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "81432842"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556711"
 ---
 # <a name="xaml-2009-language-features"></a>Возможности языка XAML 2009
-XAML 2009 — это сокращение для новых компонентов языка XAML, которые расширяют существующую спецификацию языка XAML. XAML 2009 содержит ряд новых директив и конструкций. К ним относятся [x:Аргументы Директива](xarguments-directive.md); [x:FactoryMethod Директива](xfactorymethod-directive.md); [x:Ссылка На расширение разметки](xreference-markup-extension.md); [x:TypeАргументы Директива](xtypearguments-directive.md); и встроенные типы для примитивов общего языка (например). `x:Char`
+XAML 2009 — это сокращение для новых компонентов языка XAML, которые расширяют существующую спецификацию языка XAML. XAML 2009 содержит ряд новых директив и конструкций. К ним относятся [Директива x:Arguments](xarguments-directive.md). [Директива x:FactoryMethod](xfactorymethod-directive.md); [расширение разметки x:Reference](xreference-markup-extension.md); [Директива x:TypeArguments](xtypearguments-directive.md); и встроенные типы для общих языковых примитивов (например `x:Char` ,).
 
 ## <a name="xaml-2009-support-in-wpf-and-visual-studio"></a>Поддержка XAML 2009 в WPF и Visual Studio
 
 В WPF можно использовать возможности XAML 2009, но только для кода XAML, не скомпилированного с разметкой WPF. Скомпилированный XAML с разметкой и форма BAML кода XAML пока не поддерживают ключевые слова языка и компоненты XAML 2009.
 
-Обратите внимание, что существующие методы для загрузки свободного XAML в WPF также могут иметь ограничения по безопасности и доступу для типов CLR и системы типов, являющихся более строгими по сравнению со скомпилированным XAML с разметкой. Дополнительные сведения см. в разделе [Безопасность (WPF)](../../framework/wpf/security-wpf.md) или [Стратегия безопасности WPF — безопасность платформы](../../framework/wpf/wpf-security-strategy-platform-security.md).
+Обратите внимание, что существующие методы для загрузки свободного XAML в WPF также могут иметь ограничения по безопасности и доступу для типов CLR и системы типов, являющихся более строгими по сравнению со скомпилированным XAML с разметкой. Дополнительные сведения см. в разделе [Безопасность (WPF)](/dotnet/desktop/wpf/security-wpf) или [Стратегия безопасности WPF — безопасность платформы](/dotnet/desktop/wpf/wpf-security-strategy-platform-security).
 
 В XAML 2009 также реализованы дополнительные функции, изменяющие прежние конструкции XAML 2006 и основные формы разметки.
 

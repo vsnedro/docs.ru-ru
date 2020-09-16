@@ -2,12 +2,12 @@
 title: Расширение трассировки
 ms.date: 03/30/2017
 ms.assetid: 2b971a99-16ec-4949-ad2e-b0c8731a873f
-ms.openlocfilehash: 59bdfeea41bac812840ffe166895050a6cd1ad2d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f2b9deb346077609193ec08c2c01b10a3ad9357b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600520"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556516"
 ---
 # <a name="extend-tracing"></a>Расширить трассировку
 
@@ -31,7 +31,7 @@ ms.locfileid: "84600520"
  Определяемая пользователем трассировка действий позволяет пользователю создавать собственные действия трассировки для группирования трассировок в логические единицы работы, сопоставлять действия посредством передачи и распространения, а также уменьшить затраты на производительность трассировки WCF (например, стоимость дискового пространства в файле журнала).  
   
 ### <a name="add-custom-sources"></a>Добавление пользовательских источников  
- Пользовательские трассировки можно добавлять как в код клиента, так и в код службы. Добавление источников трассировки в файлы конфигурации клиента или службы позволяет записывать и отображать эти пользовательские трассировки в [средстве Service Trace Viewer (SvcTraceViewer. exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). В следующем примере кода показано, как добавить в файл конфигурации пользовательский источник трассировки с именем `ServerCalculatorTraceSource`.  
+ Пользовательские трассировки можно добавлять как в код клиента, так и в код службы. Добавление источников трассировки в файлы конфигурации клиента или службы позволяет записывать и отображать эти пользовательские трассировки в средстве [Service Trace Viewer (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). В следующем примере кода показано, как добавить в файл конфигурации пользовательский источник трассировки с именем `ServerCalculatorTraceSource`.  
   
 ```xml  
 <system.diagnostics>  
@@ -97,6 +97,6 @@ ms.locfileid: "84600520"
   
 3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-- [Образцы наблюдения за AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

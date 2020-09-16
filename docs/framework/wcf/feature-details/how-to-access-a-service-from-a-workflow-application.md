@@ -2,12 +2,12 @@
 title: 'Как выполнить: Получить доступ к службе из приложения рабочего процесса'
 ms.date: 03/30/2017
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad
-ms.openlocfilehash: 2ce79b726b623c2a25bf14065682e685455ca575
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7375dc4f9af2eb0209b83724cd2ac9b9619b56dd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597245"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556880"
 ---
 # <a name="how-to-access-a-service-from-a-workflow-application"></a>Как выполнить: Получить доступ к службе из приложения рабочего процесса
 В этом разделе описывается вызов службы рабочего процесса из консольного приложения рабочего процесса. Это зависит от завершения статьи [Создание службы рабочего процесса с помощью действий обмена сообщениями](how-to-create-a-workflow-service-with-messaging-activities.md) . Хотя в этом разделе описывается вызов службы рабочего процесса из приложения рабочего процесса, одни и те же методы можно использовать для вызова любой службы Windows Communication Foundation (WCF) из приложения рабочего процесса.
@@ -62,8 +62,8 @@ ms.locfileid: "84597245"
 
 12. Используйте сочетание клавиш Ctrl+F5 для запуска службы и клиента. На ASP.NET Development Server размещается служба, Internet Explorer отображает страницу справки WCF, а приложение рабочего процесса клиента запускается в окне консоли и отображает строку, возвращенную службой ("Hello, World").
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Службы рабочего процесса](workflow-services.md)
 - [Практическое руководство. Как создать службу рабочего процесса с помощью действий обмена сообщениями](how-to-create-a-workflow-service-with-messaging-activities.md)
-- [Использование службы WCF из рабочего процесса в веб-проекте](https://docs.microsoft.com/archive/blogs/endpoint/how-to-consume-a-wcf-service-from-a-wf4-workflow)
+- [Использование службы WCF из рабочего процесса в веб-проекте](/archive/blogs/endpoint/how-to-consume-a-wcf-service-from-a-wf4-workflow)

@@ -2,12 +2,12 @@
 title: <peer> из <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
-ms.openlocfilehash: ca97be7b1ab562382895fea4f1d1fc716151b70b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 50db8eb381249c3b880c4b1dd96ec3813d51ce67
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397643"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556119"
 ---
 # <a name="peer-of-servicecredentials"></a>\<peer> из \<serviceCredentials>
 Задает текущие учетные данные для однорангового узла.  
@@ -57,7 +57,7 @@ ms.locfileid: "70397643"
 - <xref:System.ServiceModel.Description.ServiceCredentials.Peer%2A>
 - <xref:System.ServiceModel.Security.PeerCredential>
 - [Одноранговая сеть](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Проверка подлинности сообщений для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Пользовательской проверка подлинности для однорангового канала](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Проверка подлинности сообщений для однорангового канала](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Пользовательской проверка подлинности для однорангового канала](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Защита приложений одноранговых каналов](../../../wcf/feature-details/securing-peer-channel-applications.md)
 - [Защита служб и клиентов](../../../wcf/feature-details/securing-services-and-clients.md)

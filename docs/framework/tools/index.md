@@ -8,12 +8,12 @@ helpviewer_keywords:
 - tools [.NET Framework]
 - running .NET Framework tools
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
-ms.openlocfilehash: 0a5cbcd4fa60b819d3ab07a4f221e77ca106c321
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 96df5a0c8487d3ba344b3aa13ca74b92e428d5aa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87166855"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556685"
 ---
 # <a name="net-framework-tools"></a>Инструменты .NET Framework
 
@@ -37,7 +37,7 @@ ms.locfileid: "87166855"
 Преобразует определения типов для элемента управления ActiveX из библиотеки типов COM в элемент управления Windows Forms.
 
 - [Caspol.exe (средство настройки политики управления доступом для кода)](caspol-exe-code-access-security-policy-tool.md)  
-Позволяют просматривать и настраивать политику безопасности на уровне политики компьютера, пользователя и предприятия. На платформе .NET Framework 4 и в более поздних версиях этот инструмент не затрагивает политику управления доступом для кода (CAS), если только для [элемента \<legacyCasPolicy>](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) не задано значение `true`. Дополнительные сведения см. в разделе [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
+Позволяют просматривать и настраивать политику безопасности на уровне политики компьютера, пользователя и предприятия. На платформе .NET Framework 4 и в более поздних версиях этот инструмент не затрагивает политику управления доступом для кода (CAS), если только для [элемента \<legacyCasPolicy>](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) не задано значение `true`. Дополнительные сведения см. в разделе [Изменения системы безопасности](/previous-versions/dotnet/framework/security/security-changes).
 
 - [Cert2spc.exe (средство проверки сертификата издателя программного обеспечения)](cert2spc-exe-software-publisher-certificate-test-tool.md)  
 Создает сертификат издателя программного обеспечения (SPC) из одного или более сертификатов X.509. Этот инструмент предназначен только для тестирования.
@@ -134,7 +134,7 @@ ms.locfileid: "87166855"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-- [средства WPF](https://docs.microsoft.com/previous-versions/ms742404(v=vs.110))  
+- [средства WPF](/previous-versions/ms742404(v=vs.110))  
 Включает такие инструменты, как средство соответствия isXPS (isXPS.exe) и средства профилирования производительности.
 
 - [Средства Windows Communication Foundation](../wcf/tools.md)  

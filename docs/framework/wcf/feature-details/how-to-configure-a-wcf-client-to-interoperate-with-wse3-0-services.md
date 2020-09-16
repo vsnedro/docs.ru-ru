@@ -5,19 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3dadd7f1-d207-4ea5-a73b-3e8aa44407f8
-ms.openlocfilehash: 7dd50fcc07c6c090042cf87acb4aa5d2b5321a68
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1ebc4e145528c3025b0299ea7e421c248c28cdc0
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579583"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556373"
 ---
 # <a name="how-to-configure-a-wcf-client-to-interoperate-with-wse30-services"></a>Практическое руководство. Настройка клиента WCF для взаимодействия со службами WSE 3.0
 Клиенты Windows Communication Foundation (WCF), совместимые с веб-службами, расширяют возможности 3,0 для служб Microsoft .NET (WSE), когда клиенты WCF настроены для использования версии спецификации WS-Addressing в августе 2004.  
   
 ### <a name="to-configure-a-wcf-client-to-interoperate-with-a-wse-30-web-service"></a>Настройка клиента WCF для взаимодействия с веб-службой WSE 3.0  
   
-1. Запустите [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , чтобы создать клиент WCF для веб-службы WSE 3,0.  
+1. Запустите [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , чтобы создать клиент WCF для веб-службы WSE 3,0.  
   
      Для веб-службы WSE создается клиентский класс WCF.  
   
@@ -25,7 +25,7 @@ ms.locfileid: "84579583"
   
 2. Создайте класс, представляющий привязку, которая может обмениваться данными с веб-службами WSE 3.0.  
   
-     Следующий класс является частью примера [взаимодействия с WSE](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29) .  
+     Следующий класс является частью примера [взаимодействия с WSE](/previous-versions/dotnet/netframework-3.5/ms752257(v=vs.90)) .  
   
     1. Создайте класс, производный от класса <xref:System.ServiceModel.Channels.Binding>.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "84579583"
 [!code-csharp[c_WCFClientToWSEService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wcfclienttowseservice/cs/client.cs#0)]
 [!code-vb[c_WCFClientToWSEService#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#0)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Channels.Binding>
-- [Взаимодействие с WSE](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)
+- [Взаимодействие с WSE](/previous-versions/dotnet/netframework-3.5/ms752257(v=vs.90))

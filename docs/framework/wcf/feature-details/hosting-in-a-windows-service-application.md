@@ -2,12 +2,12 @@
 title: Размещение в приложении службы Windows
 ms.date: 03/30/2017
 ms.assetid: f4199998-27f3-4dd9-aee4-0a4addfa9f24
-ms.openlocfilehash: ba49d123508ceb8da677d1e9c67721e4f86aa7c3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cb952cfcd670a790033fbec70de00a4db2541237
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597336"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555852"
 ---
 # <a name="hosting-in-a-windows-service-application"></a>Размещение в приложении службы Windows
 Службы Windows (ранее называвшиеся службами Windows NT) обеспечивают модель процессов, особенно подходящую для приложений, которые должны существовать в длительно исполняемом файле и не отображают никакой формы пользовательского интерфейса. Временем существования процессов приложений служб Windows управляет диспетчер служб, который позволяет запускать, останавливать и приостанавливать приложения служб Windows. Можно настроить автоматический запуск процесса службы Windows при запуске компьютера, сделав его подходящей средой размещения для приложений Always on. Дополнительные сведения о приложениях служб Windows см. в разделе [приложения службы Windows](https://go.microsoft.com/fwlink/?LinkId=89450).  
@@ -36,11 +36,11 @@ ms.locfileid: "84597336"
   
      Приложения служб Windows, в которых размещаются службы WCF, развертываются и управляются так же, как приложения служб Windows, которые не используют WCF.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceProcess>
 - [Пошаговое руководство: Создание приложения служб Windows в конструкторе компонентов](https://go.microsoft.com/fwlink/?LinkId=94875)
 - [Практическое руководство. Размещение службы WCF в управляемой службе Windows](how-to-host-a-wcf-service-in-a-managed-windows-service.md)
 - [Узел службы Windows](../samples/windows-service-host.md)
 - [Программная архитектура приложений служб](https://go.microsoft.com/fwlink/?LinkId=94876)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

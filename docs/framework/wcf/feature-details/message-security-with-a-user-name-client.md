@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-ms.openlocfilehash: 9447487012cae370d35880e5b780465f9434051b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9bcac0e45d44270d27a4cf04677e967a80e94b90
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602626"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550206"
 ---
 # <a name="message-security-with-a-user-name-client"></a>Безопасность сообщений при использовании клиентом учетных данных пользователя
 На следующем рисунке показана служба Windows Communication Foundation (WCF) и клиент защищены с помощью безопасности на уровне сообщений. Служба проходит проверку подлинности с использованием сертификата X.509. Подлинность клиента проверяется с помощью имени и пароля пользователя.  
@@ -22,7 +22,7 @@ ms.locfileid: "84602626"
 |Характеристика|Описание|  
 |--------------------|-----------------|  
 |Режим безопасности|Сообщение|  
-|Взаимодействие|Только Windows Communication Foundation (WCF)|  
+|Совместимость|Только Windows Communication Foundation (WCF)|  
 |Проверка подлинности (сервера)|Первоначальное согласование возможно только после проверки подлинности сервера|  
 |Проверка подлинности (клиента)|Имя пользователя/пароль|  
 |Целостность|Да, используется общий контекст безопасности|  
@@ -125,10 +125,10 @@ ms.locfileid: "84602626"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
 - [Безопасность сообщений с использованием имени пользователя](../samples/message-security-user-name.md)
 - [Идентификация и проверка подлинности службы](service-identity-and-authentication.md)
 - [\<identity>](../../configure-apps/file-schema/wcf/identity.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

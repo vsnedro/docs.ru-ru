@@ -11,12 +11,12 @@ metadata:
   author: BillWagner
   ms.author: wiwagn
   ms.date: 07/10/2020
-  ms.openlocfilehash: d324cfe43f5558f255746421ebd4d143e7343e81
-  ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+  ms.openlocfilehash: 98de6da2ffd990c5ec99f1a4043b089af712dd6b
+  ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/05/2020
-  ms.locfileid: "89495555"
+  ms.lasthandoff: 09/15/2020
+  ms.locfileid: "90556054"
 highlightedContent:
   items:
   - title: Скачать .NET
@@ -168,11 +168,11 @@ additionalContent:
         text: 'Blazor: Интерактивные клиентские веб-интерфейсы на основе .NET'
     - title: Полностью облачные решения и микрослужбы
       links:
-      - url: /dotnet/azure/
+      - url: ./azure/index.yml
         text: Документация по Azure для .NET
       - url: /azure/storage
         text: Хранилище
-      - url: /dotnet/fsharp/using-fsharp-on-azure/
+      - url: ./fsharp/using-fsharp-on-azure/index.md
         text: Использование языка F# в Azure
       - url: architecture/serverless/index.md
         text: 'Бессерверные приложения: Архитектура, шаблоны и реализация в Azure'
@@ -224,7 +224,7 @@ additionalContent:
       links:
       - url: https://channel9.msdn.com/Shows/On-NET/IoT-support-for-NET-Core
         text: 'На платформе .NET: Сведения о поддержке технологий Интернета вещей в .NET Core'
-      - url: https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0
+      - url: /archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0
         text: Кроссплатформенное программирование решений на основе технологий Интернета вещей с использованием .NET Core 3.0
       - url: https://github.com/dotnet/iot
         text: Библиотеки технологий Интернета вещей .NET Core
@@ -235,19 +235,19 @@ additionalContent:
     items:
     - title: Справочник по API .NET Core
       summary: Справочная документация по API для .NET Core
-      url: https://docs.microsoft.com/dotnet/api/?view=netcore-3.1
+      url: ../api/index.md?view=netcore-3.1
     - title: Справочник по API .NET Framework
       summary: Справочная документация по API для .NET Framework
-      url: https://docs.microsoft.com/dotnet/api/?view=netframework-4.8
+      url: ../api/index.md?view=netframework-4.8
     - title: Справочник по API ASP.NET Core
       summary: Справочная документация по API для ASP.NET Core
-      url: https://docs.microsoft.com/dotnet/api/?view=aspnetcore-3.1
+      url: ../api/index.md?view=aspnetcore-3.1
     - title: Справочник по ML.NET API
       summary: Справочная документация по API для ML.NET
-      url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+      url: ../api/index.md?view=ml-dotnet
     - title: Справочник по API .NET для Apache Spark
       summary: Справочная документация по API для .NET для Apache Spark
-      url: https://docs.microsoft.com/dotnet/api/?view=spark-dotnet
+      url: ../api/index.md?view=spark-dotnet
     - title: Справочник по языку C#
       summary: Справочник и спецификации для языка C#
       url: csharp/language-reference/index.md
@@ -257,4 +257,4 @@ additionalContent:
     - title: Справочник по языку Visual Basic
       summary: Справочник и спецификации для языка Visual Basic
       url: visual-basic/language-reference/index.md
-  footer: Участие в разработке документации по .NET. Ознакомьтесь с нашим [руководством для соавторов](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute).
+  footer: Участие в разработке документации по .NET. Ознакомьтесь с нашим [руководством для соавторов](/contribute/dotnet/dotnet-contribute).

@@ -3,12 +3,12 @@ title: LINQ (C#)
 description: Познакомьтесь с LINQ-запросами и посмотрите полный пример работы с запросом.
 ms.date: 02/02/2017
 ms.assetid: 19dd1782-905b-4a9d-a3e9-618453037fa2
-ms.openlocfilehash: 6c8844c387177ce858b63a52b1f5c7246b570beb
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 967f69e94b0424e208fb675a312ab306d5e11842
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87103417"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556737"
 ---
 # <a name="language-integrated-query-linq"></a>Синтаксис LINQ
 
@@ -41,7 +41,7 @@ ms.locfileid: "87103417"
 
 Чтобы получить дополнительные сведения о LINQ, сначала ознакомьтесь с некоторыми основным понятиями в статье [Основы выражения запроса](../../../linq/query-expression-basics.md), а затем переходите к документации по интересующей вас технологии LINQ.
 
-- XML-документы: [LINQ to XML](linq-to-xml-overview.md)  
+- XML-документы: [LINQ to XML](../../../../standard/linq/linq-xml-overview.md)  
 - Платформа ADO.NET Entity Framework: [LINQ to Entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md)
 - Коллекции, файлы, строки и другие сущности .NET: [LINQ to Objects (C#)](linq-to-objects.md)
 

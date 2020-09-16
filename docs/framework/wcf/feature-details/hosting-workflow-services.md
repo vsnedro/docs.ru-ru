@@ -2,16 +2,16 @@
 title: Размещение службы рабочего процесса
 ms.date: 03/30/2017
 ms.assetid: 2d55217e-8697-4113-94ce-10b60863342e
-ms.openlocfilehash: 908ef7ebb9bfb1e2c49d96e41c0df1d843c0454d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 95d8d8b8ea15ef543471afb19462ccb424e8e39b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597284"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555813"
 ---
 # <a name="hosting-workflow-services"></a>Размещение службы рабочего процесса
 
-Для обработки входящих сообщений служба рабочих процессов должна быть размещена. Службы рабочих процессов используют инфраструктуру обмена сообщениями WCF и поэтому также требуют размещения. Как и службы WCF, службы рабочих процессов могут размещаться в любом управляемом приложении, в службы IIS (IIS) или в службах активации Windows (WAS). Кроме того, службы рабочих процессов могут размещаться в Windows Server App Fabric. Дополнительные сведения о структуре приложений Windows Server см. в [документации по Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)), [функциям размещения AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))и [концепциям размещения AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677371(v=azure.10)). Дополнительные сведения о различных способах размещения служб WCF см. в разделе [службы размещения](../hosting-services.md).
+Для обработки входящих сообщений служба рабочих процессов должна быть размещена. Службы рабочих процессов используют инфраструктуру обмена сообщениями WCF и поэтому также требуют размещения. Как и службы WCF, службы рабочих процессов могут размещаться в любом управляемом приложении, в службы IIS (IIS) или в службах активации Windows (WAS). Кроме того, службы рабочих процессов могут размещаться в Windows Server App Fabric. Дополнительные сведения о структуре приложений Windows Server см. в [документации по Windows Server App Fabric](/previous-versions/appfabric/ff384253(v=azure.10)), [функциям размещения AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))и [концепциям размещения AppFabric](/previous-versions/appfabric/ee677371(v=azure.10)). Дополнительные сведения о различных способах размещения служб WCF см. в разделе [службы размещения](../hosting-services.md).
 
 ## <a name="hosting-in-a-managed-application"></a>Размещение в управляемом приложении
  Размещение службы рабочего процесса в управляемом приложении производится с помощью класса <xref:System.ServiceModel.Activities.WorkflowServiceHost>. Конструктор <xref:System.ServiceModel.Activities.WorkflowServiceHost> позволяет указать одноэлементный экземпляр службы рабочих процессов, определить службу рабочих процессов или действие, которое использует действия обмена сообщениями рабочих процессов. После вызова метода <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> служба переходит в режим ожидания передачи входящих сообщений.
@@ -54,7 +54,7 @@ ms.locfileid: "84597284"
 ## <a name="deployment"></a>Развертывание
  Для облегчения задачи развертывания создается инструмент веб-развертывания. Инструмент позволяет переносить приложения между IIS 6.0 и IIS 7.0, выполнять синхронизацию ферм серверов, а также упаковывать, архивировать и развертывать веб-приложения. Дополнительные сведения см. в разделе [средство MS Deployment Tool](https://go.microsoft.com/fwlink/?LinkId=178690).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Внутренние особенности размещения службы рабочего процесса](workflow-service-host-internals.md)
 - [Настройка WorkflowServiceHost](configuring-workflowservicehost.md)

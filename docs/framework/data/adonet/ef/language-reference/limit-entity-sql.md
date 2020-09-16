@@ -2,12 +2,12 @@
 title: LIMIT (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: c22ffede-0a52-44d1-99b9-4a91e651e1b9
-ms.openlocfilehash: 275b22686c6c932b2a9e4b20973ac07e99d47e14
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 98e44110e604c6d893734869871d72f1d021775d
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319627"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556288"
 ---
 # <a name="limit-entity-sql"></a>LIMIT (Entity SQL)
 Вложенное предложение LIMIT в предложении ORDER BY позволяет проводить физическое разбиение на страницы. Ключевое слово LIMIT не может использоваться отдельно от предложения ORDER BY.  
@@ -39,6 +39,6 @@ ms.locfileid: "72319627"
 ## <a name="see-also"></a>См. также
 
 - [ORDER BY](order-by-entity-sql.md)
-- [Пошаговое руководство. Просмотр результатов запроса](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [Практическое руководство. Разбивка на страницы результатов запроса](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
 - [Разбивка на страницы](paging-entity-sql.md)
-- [TOP](top-entity-sql.md)
+- [Вверх](top-entity-sql.md)

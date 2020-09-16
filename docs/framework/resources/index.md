@@ -12,12 +12,12 @@ helpviewer_keywords:
 - packaging application resources
 - localizing resources
 ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
-ms.openlocfilehash: 105325170389917bfb2022314791aa1ed5923db3
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 3941c912348a652ddcbaea517cf7626c2a8f88e3
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865168"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90535574"
 ---
 # <a name="resources-in-net-apps"></a>Ресурсы в приложениях .NET
 
@@ -25,7 +25,7 @@ ms.locfileid: "86865168"
 
 .NET Framework и .NET Core обеспечивают всестороннюю поддержку для создания и локализации ресурсов. Кроме того, .NET поддерживает простую модель упаковки и развертывания локализованных ресурсов.
 
-Сведения о ресурсах ASP.NET см. в разделе [Общие сведения о ресурсах страниц ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/ms227427(v=vs.100)).
+Сведения о ресурсах ASP.NET см. в разделе [Общие сведения о ресурсах страниц ASP.NET](/previous-versions/aspnet/ms227427(v=vs.100)).
 
 ## <a name="create-and-localize-resources"></a>Создание и локализация ресурсов
 

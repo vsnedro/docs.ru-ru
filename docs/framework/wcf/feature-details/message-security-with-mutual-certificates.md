@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
-ms.openlocfilehash: 44d06762bf66950ea0cc06986c61ecd548ae2e0c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bbe99b133e7edda191d17e9fe8a1dea89d3f0eb7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84576412"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556529"
 ---
 # <a name="message-security-with-mutual-certificates"></a>Безопасность сообщений с использованием взаимных сертификатов
 В следующем сценарии показана служба Windows Communication Foundation (WCF) и клиент защищены с помощью режима безопасности сообщений. Проверка подлинности клиента и службы выполняется с помощью сертификатов.  
@@ -25,7 +25,7 @@ ms.locfileid: "84576412"
 |Характеристика|Описание|  
 |--------------------|-----------------|  
 |Режим безопасности|Сообщение|  
-|Взаимодействие|Да, с клиентами и службами, совместимыми с профилем маркера WS-Security и сертификата X.509.|  
+|Совместимость|Да, с клиентами и службами, совместимыми с профилем маркера WS-Security и сертификата X.509.|  
 |Аутентификация|Взаимная проверка подлинности сервера и клиента.|  
 |Целостность|Да|  
 |Конфиденциальность|Да|  
@@ -95,7 +95,7 @@ ms.locfileid: "84576412"
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
-- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример.  
+- Создайте клиент, который не определяет никаких адресов конечных точек. Вместо этого используйте конструктор клиента, который принимает в качестве аргумента имя конфигурации. Пример:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -158,8 +158,8 @@ ms.locfileid: "84576412"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обзор безопасности](security-overview.md)
-- [Модель безопасности для Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
-- [Как создавать и устанавливать временные сертификаты в WCF для обеспечения безопасности транспорта во время разработки](https://docs.microsoft.com/previous-versions/msp-n-p/ff648498(v=pandp.10))
+- [Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))
+- [Как создавать и устанавливать временные сертификаты в WCF для обеспечения безопасности транспорта во время разработки](/previous-versions/msp-n-p/ff648498(v=pandp.10))

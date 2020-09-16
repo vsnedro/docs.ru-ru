@@ -10,12 +10,12 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-ms.openlocfilehash: 0eccdf916dae7b886cbc4e6563e6dfe17039c321
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 619a893e0973f6691e32446d75f101201a0b6799
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247186"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556386"
 ---
 # <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>Практическое руководство. Настройка порта с использованием SSL-сертификата
 
@@ -23,7 +23,7 @@ ms.locfileid: "85247186"
   
  Выбор средства для настройки порта зависит от операционной системы компьютера.  
   
- Если вы используете Windows Server 2003, используйте средство HttpCfg.exe. В Windows Server 2003 это средство установлено. Дополнительные сведения см. в разделе [Общие сведения об HttpCfg](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). В [документации по средствам поддержки Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) описывается синтаксис средства Httpcfg.exe.  
+ Если вы используете Windows Server 2003, используйте средство HttpCfg.exe. В Windows Server 2003 это средство установлено. Дополнительные сведения см. в разделе [Общие сведения об HttpCfg](/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). В [документации по средствам поддержки Windows](/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) описывается синтаксис средства Httpcfg.exe.  
   
  Если вы используете Windows Vista, используйте уже установленное средство Netsh.exe.
   
