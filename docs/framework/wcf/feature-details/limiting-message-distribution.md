@@ -2,12 +2,12 @@
 title: Ограничение распространения сообщений
 ms.date: 03/30/2017
 ms.assetid: 8b5ec4b8-1ce9-45ef-bb90-2c840456bcc1
-ms.openlocfilehash: 188d7bd365caad7d4cd438744c78ae8e7cd95e7e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e736aba60d7d2b39d1b8eb958a8c72e6e8d55e13
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586316"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555020"
 ---
 # <a name="limiting-message-distribution"></a>Ограничение распространения сообщений
 
@@ -19,7 +19,7 @@ ms.locfileid: "84586316"
 
 Сообщению можно задать количество прыжков, добавив `PeerHopCount` в качестве атрибута применимого свойства или поля при реализации класса сообщения. Можно задать определенное значение числа прыжков перед отправкой сообщения в сетку. Таким образом, при необходимости можно ограничить распределение сообщений по сетке с помощью числа прыжков, потенциально избежав ненужного дублирования сообщения. Эта функция полезна в случаях, когда сетка содержит большое количество избыточных данных, а также при отправке сообщений соседям, находящихся на ближайших узлах или в пределах нескольких прыжков.
 
-- Фрагменты кода и связанные сведения см. в описании [атрибута пирхопкаунт: управление сообщением о распространении сообщений](https://docs.microsoft.com/archive/blogs/peerchan/the-peerhopcount-attribute-controlling-message-distribution) в блоге однорангового канала.
+- Фрагменты кода и связанные сведения см. в описании [атрибута пирхопкаунт: управление сообщением о распространении сообщений](/archive/blogs/peerchan/the-peerhopcount-attribute-controlling-message-distribution) в блоге однорангового канала.
 
 ## <a name="message-propagation-filter"></a>Фильтр распространения сообщений
 
@@ -27,7 +27,7 @@ ms.locfileid: "84586316"
 
 <xref:System.ServiceModel.PeerMessagePropagationFilter> - базовый абстрактный класс с единственной функцией <xref:System.ServiceModel.PeerMessagePropagationFilter.ShouldMessagePropagate%2A>. Первый аргумент при вызове метода передает полную копию сообщения. Никакие изменения, внесенные в сообщение, не влияют на фактическое сообщение. Последний аргумент при вызове метода указывает источник сообщения (`PeerMessageOrigination.Local` или `PeerMessageOrigination.Remote`). Конкретные реализации этого метода должны возвращать константу из перечисления <xref:System.ServiceModel.PeerMessagePropagation>, указывающую, что сообщение необходимо перенаправить локальному приложению (`Local`), удаленным клиентам (`Remote`), и тому и другим (`LocalAndRemote`) или ни тому ни другим (`None`). Этот фильтр можно применить, обратившись к соответствующему объекту `PeerNode` и указав экземпляр производного класса фильтра распространения в свойстве `PeerNode.MessagePropagationFilter`. Прежде чем открыть одноранговый канал, убедитесь, что фильтр подключен.
 
-- Фрагменты кода и связанные сведения см. в разделе [одноранговый канал и мессажепропагатионфилтер](https://docs.microsoft.com/archive/blogs/peerchan/peer-channel-and-messagepropagationfilter) POST в блоге однорангового канала.
+- Фрагменты кода и связанные сведения см. в разделе [одноранговый канал и мессажепропагатионфилтер](/archive/blogs/peerchan/peer-channel-and-messagepropagationfilter) POST в блоге однорангового канала.
 
 ## <a name="contacting-an-individual-node-in-the-mesh"></a>Обращение к одному из узлов сетки
 
@@ -69,6 +69,6 @@ ms.locfileid: "84586316"
 
   - *Низкий*: любое прямое подключение, скорее всего, не требуется.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Создание приложения одноранговых каналов](building-a-peer-channel-application.md)

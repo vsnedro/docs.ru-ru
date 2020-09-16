@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 34d1d971-5e18-4c22-9bf6-d3612e27ea59
-ms.openlocfilehash: 739cb6971209792724a2e939ca4f4821d5879c8c
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: f6e95ce58e055f0c745b781c664309e4ef91ffc6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247795"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554017"
 ---
 # <a name="create-the-data-service"></a>Создание службы данных
 
@@ -53,7 +53,7 @@ ms.locfileid: "85247795"
 
 5. Подключите модель данных к базе данных, выполнив одно из следующих действий, а затем нажмите кнопку **Далее**.
 
-    - Если подключение к базе данных уже не настроено, щелкните **создать подключение** и создайте новое подключение. Дополнительные сведения см. в разделе [How to: Create Connections to SQL Server Databases](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). Этот экземпляр SQL Server должен содержать присоединенный образец базы данных Northwind.
+    - Если подключение к базе данных уже не настроено, щелкните **создать подключение** и создайте новое подключение. Дополнительные сведения см. в разделе [How to: Create Connections to SQL Server Databases](/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). Этот экземпляр SQL Server должен содержать присоединенный образец базы данных Northwind.
 
          \- или -
 
@@ -61,7 +61,7 @@ ms.locfileid: "85247795"
 
 6. На завершающей странице мастера установите флажки для всех таблиц базы данных и снимите флажки для представлений и хранимых процедур.
 
-7. Чтобы завершить работу мастера, нажмите кнопку **Готово** .
+7. Нажмите кнопку **Готово** , чтобы закрыть мастер.
 
 ## <a name="create-the-wcf-data-service"></a>Создание службы данных WCF
 
@@ -104,4 +104,4 @@ ms.locfileid: "85247795"
 
 ## <a name="see-also"></a>См. также
 
-- [Средства EDM ADO.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
+- [Средства EDM ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))

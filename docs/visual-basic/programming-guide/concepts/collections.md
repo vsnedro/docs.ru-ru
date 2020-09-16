@@ -2,12 +2,12 @@
 title: Коллекции
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
-ms.openlocfilehash: f264a0f9ee15707daf4bece5651b9f5f07ebbc39
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 91c6048caf622f21a02032bac31cb2ba5565c54c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400659"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90551071"
 ---
 # <a name="collections-visual-basic"></a>Коллекции (Visual Basic)
 
@@ -95,7 +95,7 @@ Next
 'Output: chinook pink sockeye
 ```
 
-В приведенном ниже примере удаляются элементы из универсального списка. Вместо `For Each` оператора, a [для... ](../../language-reference/statements/for-next-statement.md)Используется оператор Next, который выполняет итерацию в убывающем порядке. Связано это с тем, что в результате работы метода <xref:System.Collections.Generic.List%601.RemoveAt%2A> элементы, следующие за удаленным элементом, получают меньшее значение индекса.
+В приведенном ниже примере удаляются элементы из универсального списка. Вместо `For Each` оператора, a [для... ](../../language-reference/statements/for-next-statement.md) Используется оператор Next, который выполняет итерацию в убывающем порядке. Связано это с тем, что в результате работы метода <xref:System.Collections.Generic.List%601.RemoveAt%2A> элементы, следующие за удаленным элементом, получают меньшее значение индекса.
 
 ```vb
 Dim numbers As New List(Of Integer) From
@@ -224,7 +224,7 @@ End Class
 
 Везде, где это возможно, следует использовать универсальные коллекции в пространстве имен <xref:System.Collections.Generic?displayProperty=nameWithType> или пространстве имен <xref:System.Collections.Concurrent> вместо класса `Collection` в Visual Basic.
 
-Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.Collection>.
+Для получения дополнительной информации см. <xref:Microsoft.VisualBasic.Collection>.
 
 <a name="BKMK_KeyValuePairs"></a>
 
@@ -458,7 +458,7 @@ End Class
 
 ## <a name="defining-a-custom-collection"></a>Определение настраиваемой коллекции
 
-Вы можете определить коллекцию, реализовав интерфейс <xref:System.Collections.Generic.IEnumerable%601> или <xref:System.Collections.IEnumerable>. Дополнительные сведения см. [в разделе Перечисление коллекции](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100)).
+Вы можете определить коллекцию, реализовав интерфейс <xref:System.Collections.Generic.IEnumerable%601> или <xref:System.Collections.IEnumerable>. Дополнительные сведения см. [в разделе Перечисление коллекции](/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100)).
 
 Хотя можно определить настраиваемую коллекцию, обычно лучше использовать коллекции, входящие в .NET Framework, которые описаны в подразделе [Виды коллекций](#kinds-of-collections) ранее в этом разделе.
 

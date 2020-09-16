@@ -2,12 +2,12 @@
 title: Защита приложений
 ms.date: 03/30/2017
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
-ms.openlocfilehash: 1e08bb2386dff5d824d46aba652609ec5a373008
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.openlocfilehash: af184f64b43c2d3dc39f8c0add08940d3b002c24
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374524"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550759"
 ---
 # <a name="securing-adonet-applications"></a>Защита приложений ADO.NET
 
@@ -17,7 +17,7 @@ ms.locfileid: "86374524"
   
 Написание безопасного кода не защищает от брешей в безопасности при работе с неуправляемыми ресурсами, такими как базы данных. Большинство баз данных, таких как SQL Server, имеют свои собственные системы безопасности, повышающие защиту при правильной их реализации. Но даже источник данных с надежной системой безопасности может быть подвержен атакам, если он не будет настроен должным образом.  
   
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержание раздела
 
  [Обзор безопасности](security-overview.md)  
  Предоставляет рекомендации по проектированию безопасных приложений ADO.NET.  
@@ -48,16 +48,16 @@ ms.locfileid: "86374524"
  [Безопасность](../../../standard/security/index.md)  
  Содержит ссылки на статьи с описанием всех аспектов безопасности в .NET.  
   
- [Средства обеспечения безопасности](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
+ [Средства обеспечения безопасности](/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
  Средства .NET Framework для безопасности и администрирования политики безопасности.  
   
- [Ресурсы для создания защищенных приложений](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
+ [Ресурсы для создания защищенных приложений](/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
  Содержит ссылки на статьи, посвященные созданию защищенных приложений.  
   
  [Библиография по вопросам безопасности](/visualstudio/ide/securing-applications)  
  Предоставляет ссылки на внешние ресурсы, доступные в Интернете и в печатной форме.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [ADO.NET](index.md)
 - [Общие сведения об ADO.NET](ado-net-overview.md)

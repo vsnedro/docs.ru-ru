@@ -12,12 +12,12 @@ helpviewer_keywords:
 - deferred execution
 - iteration variables [Visual Basic]
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-ms.openlocfilehash: 273c688d7e9d3fb86d4baece75193ce6d112b62f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 97602b7341636219382b6a405c678bc458ef146a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404918"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556750"
 ---
 # <a name="introduction-to-linq-in-visual-basic"></a>Знакомство с LINQ в Visual Basic
 Языковой интегрированный запрос (LINQ) добавляет возможности запросов в Visual Basic и предоставляет простые и эффективные возможности при работе со всеми типами данных. Вместо отправки запроса в базу данных для обработки или работы с другим синтаксисом запросов для каждого типа искомых данных LINQ вводит запросы в составе языка Visual Basic. Синтаксис запросов не зависит от типа данных.  
@@ -180,7 +180,7 @@ ms.locfileid: "84404918"
  Примеры с пошаговыми инструкциями см. в разделе [как выполнить запрос к базе данных](how-to-query-a-database-by-using-linq.md) и [как вызвать хранимую процедуру](how-to-call-a-stored-procedure-by-using-linq.md).  
   
 ## <a name="visual-basic-features-that-support-linq"></a>Visual Basic функции, поддерживающие LINQ  
- Visual Basic включает другие важные функции, которые делают использование LINQ простым и сокращают объем кода, который необходимо написать для выполнения запросов LINQ. В число этих требований входят следующие:  
+ Visual Basic включает другие важные функции, которые делают использование LINQ простым и сокращают объем кода, который необходимо написать для выполнения запросов LINQ. В их числе можно назвать следующие:  
   
 - **Анонимные типы**, которые позволяют создать новый тип на основе результата запроса.  
   
@@ -221,7 +221,7 @@ ms.locfileid: "84404918"
 |[LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)|Содержит общие сведения, рекомендации по программированию и примеры для LINQ to SQL.|  
 |[LINQ to Objects](../../concepts/linq/linq-to-objects.md)|Содержит общие сведения, рекомендации по программированию и примеры для LINQ to Objects.|  
 |[LINQ to ADO.NET (Страница портала)](../../concepts/linq/linq-to-adonet-portal-page.md)|Содержит ссылки на общие сведения, руководства по программированию и примеры для LINQ to ADO.NET.|  
-|[LINQ to XML](../../concepts/linq/linq-to-xml.md)|Содержит общие сведения, рекомендации по программированию и примеры для LINQ to XML.|  
+|[LINQ to XML](../../../../standard/linq/linq-xml-overview.md)|Содержит общие сведения, рекомендации по программированию и примеры для LINQ to XML.|  
   
 ## <a name="how-to-and-walkthrough-topics"></a>Практические руководства и пошаговые инструкции
  [How to: Query a Database](how-to-query-a-database-by-using-linq.md) (Практическое руководство. Выполнение запросов к базе данных)  
@@ -243,13 +243,13 @@ ms.locfileid: "84404918"
  [Практическое руководство. Назначение хранимых процедур для выполнения обновления, вставки и удаления (реляционный конструктор объектов)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)  
   
 ## <a name="featured-book-chapters"></a>Рекомендуемые главы книги  
- [Глава 17. LINQ](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652502(v=orm.10)) в [программировании Visual Basic 2008](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652504(v=orm.10))  
+ [Глава 17. LINQ](/previous-versions/visualstudio/visual-studio-2008/ff652502(v=orm.10)) в [программировании Visual Basic 2008](/previous-versions/visualstudio/visual-studio-2008/ff652504(v=orm.10))  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Встроенный язык запросов LINQ](../../concepts/linq/index.md)
 - [Overview of LINQ to XML in Visual Basic](../xml/overview-of-linq-to-xml.md) (Общие сведения о LINQ to XML в Visual Basic)
 - [Общие сведения о LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset-overview.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [Средства LINQ to SQL в Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
-- [Методы DataContext (реляционный конструктор R)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Методы DataContext (реляционный конструктор объектов)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

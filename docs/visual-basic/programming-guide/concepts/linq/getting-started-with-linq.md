@@ -8,17 +8,17 @@ helpviewer_keywords:
 - LINQ [Visual Basic]
 - LINQ, Visual Basic
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
-ms.openlocfilehash: 97db059c33e8c5603c2bf54bbcf128612a0d028f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cea6a5973104d34c058a51c404c13d26dd1aab14
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398400"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554388"
 ---
 # <a name="getting-started-with-linq-in-visual-basic"></a>Приступая к работе с LINQ в Visual Basic
 В этом разделе содержатся обзоры, примеры и общие сведения, которые помогут вам понять и использовать Visual Basic и LINQ.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
  [Написание первого запроса LINQ](writing-your-first-linq-query.md)  
  Описывает три этапа написания простого запроса LINQ: получение источника данных, запись запроса и выполнение запроса.  
   
@@ -53,7 +53,7 @@ ms.locfileid: "84398400"
  [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
  Включает в себя набор инструкций по использованию LINQ с коллекциями в памяти.  
   
- [LINQ to XML (Visual Basic)](linq-to-xml.md)  
+ [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md)  
  Ссылки на разделы по использованию интерфейса LINQ to XML, который позволяет модифицировать документы в памяти с использованием модели DOM и поддерживает выражения запросов LINQ.  
   
  [LINQ (Visual Basic)](index.md)  

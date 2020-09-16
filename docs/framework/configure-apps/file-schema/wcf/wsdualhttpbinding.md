@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - wsDualHttpBinding Element
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
-ms.openlocfilehash: 01360ae8288b3cb7374597ad77935f634eb0a519
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 3e32539900893297d2bac232138f9940a8ab100b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74139280"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557649"
 ---
 # \<wsDualHttpBinding>
 Определяет безопасную, надежную привязку с возможностью взаимодействия, которая подходит для дуплексных контрактов службы или связи посредством посредников протокола SOAP.  
@@ -59,7 +59,7 @@ ms.locfileid: "74139280"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |bypassProxyOnLocal|Логическое значение, определяющее, будет ли выполняться обход прокси-сервера для локальных адресов. Значение по умолчанию — `false`.|  
 |clientBaseAddress|Универсальный код ресурса (URI), задающий базовый адрес, который клиент прослушивает для получения сообщений ответа от службы. Если значение задано, для прослушивания используется этот адрес (плюс per-channelGUID). Если значение не задано, базовый адрес клиента создается в соответствии с транспортом. Значение по умолчанию — `null`.|  
@@ -82,8 +82,8 @@ ms.locfileid: "74139280"
 |Элемент|Описание|  
 |-------------|-----------------|  
 |[\<security>](security-of-wsdualhttpbinding.md)|Определяет параметры безопасности привязки. Это элемент типа <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement>.|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Указывает, устанавливаются ли между конечными точками канала надежные сеансы.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<reliableSession>](/previous-versions/ms731375(v=vs.90))|Указывает, устанавливаются ли между конечными точками канала надежные сеансы.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

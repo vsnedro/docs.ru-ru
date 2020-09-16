@@ -2,12 +2,12 @@
 title: Настройка IIS 7.0 для Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: 1050d395-092e-44d3-b4ba-66be3b039ffb
-ms.openlocfilehash: 6343049e2a21b06965a8c7851d891303a49c82b5
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6b0cc48c7a817f71339fb6d7eea35baf1d97b245
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597570"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556659"
 ---
 # <a name="configuring-internet-information-services-70-for-windows-communication-foundation"></a>Настройка IIS 7.0 для Windows Communication Foundation
 
@@ -66,9 +66,9 @@ ms.locfileid: "84597570"
  </system.webServer>
  ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Архитектура активации WAS](was-activation-architecture.md)
 - [Настройка WAS для использования с WCF](configuring-the-wpa--service-for-use-with-wcf.md)
 - [Практическое руководство. Установка и настройка компонентов активации WCF](how-to-install-and-configure-wcf-activation-components.md)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

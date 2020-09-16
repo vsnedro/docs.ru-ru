@@ -3,12 +3,12 @@ title: Новые возможности Windows Workflow Foundation в .NET 4.5
 description: Windows Workflow Foundation в .NET Framework 4,5 содержит множество новых функций, таких как новые действия, возможности конструктора и модели разработки рабочих процессов.
 ms.date: 03/30/2017
 ms.assetid: 195c43a8-e0a8-43d9-aead-d65a9e6751ec
-ms.openlocfilehash: 85555e48929885b6eef7fde6ac0c9017fa403d4d
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: b115a0a5bb5e425e808270d3daf8bb0aeb942b3c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419464"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556620"
 ---
 # <a name="whats-new-in-windows-workflow-foundation-in-net-45"></a>Новые возможности Windows Workflow Foundation в .NET 4.5
 
@@ -22,7 +22,7 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 >
 > **Формат файла несовместим с текущей платформой для нацеливания. Чтобы преобразовать формат файла, необходимо явно сохранить файл. Это сообщение об ошибке будет отправлено после сохранения файла и повторного открытия конструктора.**
 
-## <a name="workflow-versioning"></a><a name="BKMK_Versioning"></a>Управление версиями рабочих процессов
+## <a name="workflow-versioning"></a><a name="BKMK_Versioning"></a> Управление версиями рабочих процессов
 
 В .NET Framework 4,5 появились несколько новых функций управления версиями на основе нового <xref:System.Activities.WorkflowIdentity> класса. <xref:System.Activities.WorkflowIdentity> позволяет авторам приложений рабочего процесса сопоставить сохраненный экземпляр рабочего процесса с его определением.
 
@@ -34,15 +34,15 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 - Для обновления баз данных сохраняемости, созданных с помощью скриптов базы данных .NET Framework 4, предоставляется скрипт базы данных SqlWorkflowInstanceStoreSchemaUpgrade. SQL. Этот сценарий обновляет .NET Framework 4 базы данных сохраняемости для поддержки новых возможностей управления версиями, появившихся в .NET Framework 4,5. Сохраняемые экземпляры рабочих процессов в базе данных получают значения управления версиями по умолчанию и могут участвовать в параллельном выполнении и динамическом обновлении. Дополнительные сведения см. [в статье обновление .NET Framework 4 базы данных сохраняемости для поддержки управления версиями рабочих процессов](using-workflowidentity-and-versioning.md#UpdatingWF4PersistenceDatabases).
 
-## <a name="activities"></a><a name="BKMK_NewActivities"></a>Процедур
+## <a name="activities"></a><a name="BKMK_NewActivities"></a> Процедур
 
 Встроенная библиотека действий содержит новые действия, а также новые функции для существующих действий.
 
-### <a name="nopersist-scope"></a><a name="BKMK_NoPersistScope"></a>Несохраняемая область
+### <a name="nopersist-scope"></a><a name="BKMK_NoPersistScope"></a> Несохраняемая область
 
 <xref:System.Activities.Statements.NoPersistScope> - новое действие контейнера, которое предотвращает сохранение рабочего процесса, когда выполняются дочерние действия NoPersistScope. Это полезно в сценариях, где рабочие процессы не должны сохраняться, например если рабочий процесс использует ресурсы конкретной машины (дескрипторы файлов и т. п.), или во время транзакций базы данных. Раньше для предотвращения сохранения во время выполнения действия требовался пользовательский класс <xref:System.Activities.NativeActivity>, который использовал <xref:System.Activities.NoPersistHandle>.
 
-### <a name="new-flowchart-capabilities"></a><a name="BKMK_NewFlowchartCapabilities"></a>Новые возможности блок-схем
+### <a name="new-flowchart-capabilities"></a><a name="BKMK_NewFlowchartCapabilities"></a> Новые возможности блок-схем
 
 Блок-схемы обновляются для .NET Framework 4,5 и имеют следующие новые возможности:
 
@@ -73,7 +73,7 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
      Если исключения не должны сериализоваться, убедитесь в том, что они используются в <xref:System.Activities.Statements.NoPersistScope>.
 
-4. Создатели действия должны переопределить метод <xref:System.Activities.Activity.CacheMetadata%2A>, чтобы в среде выполнения рабочего процесса отражение не использовалось автоматически для этого типа. Аргументы и дочерние действия не должны иметь значение NULL, а метод <xref:System.Activities.ActivityMetadata.Bind%2A> должен вызываться явным образом. Дополнительные сведения о переопределении см <xref:System.Activities.Activity.CacheMetadata%2A> . в разделе [предоставление данных с помощью CacheMetadata](exposing-data-with-cachemetadata.md). Кроме того, экземпляры аргументов, имеющие тип `internal` или **Private** , должны быть явно созданы в, <xref:System.Activities.Activity.CacheMetadata%2A> чтобы не создавать отражение.
+4. Создатели действия должны переопределить метод <xref:System.Activities.Activity.CacheMetadata%2A>, чтобы в среде выполнения рабочего процесса отражение не использовалось автоматически для этого типа. Аргументы и дочерние действия не должны иметь значение NULL, а метод <xref:System.Activities.ActivityMetadata.Bind%2A> должен вызываться явным образом. Дополнительные сведения о переопределении см <xref:System.Activities.Activity.CacheMetadata%2A> . в разделе [предоставление данных с помощью CacheMetadata](exposing-data-with-cachemetadata.md). Кроме того, экземпляры аргументов, имеющие тип `internal` или **Private** , должны быть явно созданы в,  <xref:System.Activities.Activity.CacheMetadata%2A> чтобы не создавать отражение.
 
 5. Типы не будут использовать <xref:System.Runtime.Serialization.ISerializable> или <xref:System.SerializableAttribute> для сериализации. Типы, которые должны быть сериализованы, должны поддерживать <xref:System.Runtime.Serialization.DataContractSerializer>.
 
@@ -81,11 +81,11 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 7. В режиме частичного уровня доверия выражения не могут компилироваться с помощью <xref:System.Activities.XamlIntegration.TextExpressionCompiler> или размещенного компилятора Visual Basic, но ранее скомпилированные выражения будут работать.
 
-8. Одну сборку, использующую [прозрачность уровня 2](https://aka.ms/Level2Transparency) , нельзя использовать в .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] в режиме полного доверия и [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] в частичном доверии.
+8. Одну сборку, использующую [прозрачность уровня 2](../misc/security-transparent-code-level-2.md) , нельзя использовать в .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] в режиме полного доверия и [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] в частичном доверии.
 
-## <a name="new-designer-capabilities"></a><a name="BKMK_NewDesignerCapabilites"></a>Новые возможности конструктора
+## <a name="new-designer-capabilities"></a><a name="BKMK_NewDesignerCapabilites"></a> Новые возможности конструктора
 
-### <a name="designer-search"></a><a name="BKMK_DesignerSearch"></a>Поиск в конструкторе
+### <a name="designer-search"></a><a name="BKMK_DesignerSearch"></a> Поиск в конструкторе
 
 Чтобы лучше управлять крупными рабочими процессами, поиск в них теперь возможен по ключевому слову. Эта функция доступна только в Visual Studio; Эта функция недоступна в повторно размещенном конструкторе. Возможны два вида поиска.
 
@@ -95,7 +95,7 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 Обратите внимание, что команда «Заменить» не поддерживается.
 
-#### <a name="quick-find"></a><a name="BKMK_QuickFind"></a>Быстрый поиск
+#### <a name="quick-find"></a><a name="BKMK_QuickFind"></a> Быстрый поиск
 
 Ключевые слова, по которым выполняется поиск в рабочих процессах, будут соответствовать следующим элементам конструктора.
 
@@ -109,11 +109,11 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 Быстрый поиск выполняется в дереве конструктора <xref:System.Activities.Presentation.Model.ModelItem>. Быстрый поиск не обнаружит пространства имен, импортированные в определение рабочего процесса.
 
-#### <a name="find-in-files"></a><a name="BKMK_FindInFiles"></a>Найти в файлах
+#### <a name="find-in-files"></a><a name="BKMK_FindInFiles"></a> Найти в файлах
 
 Ключевые слова, по которым выполняется поиск в рабочих процессах, будут соответствовать фактическому содержимому файлов рабочего процесса. Результаты поиска будут показаны на панели представления результатов поиска в Visual Studio. Если дважды щелкнуть элемент в результатах, произойдет переход к действию, содержащему искомый элемент в конструкторе рабочих процессов.
 
-### <a name="delete-context-menu-item-in-variable-and-argument-designer"></a><a name="BKMK_VariableDeleteContextMenu"></a>Удалить пункт контекстного меню в конструкторе переменных и аргументов
+### <a name="delete-context-menu-item-in-variable-and-argument-designer"></a><a name="BKMK_VariableDeleteContextMenu"></a> Удалить пункт контекстного меню в конструкторе переменных и аргументов
 
 В .NET Framework 4 переменные и аргументы можно удалять только в конструкторе с помощью клавиатуры. Начиная с .NET Framework 4,5 переменные и аргументы можно удалить с помощью контекстного меню.
 
@@ -121,7 +121,7 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 ![Контекстное меню конструктора переменных и аргументов](./media/whats-new-in-wf-in-dotnet/designer-context-menu.png)
 
-### <a name="auto-surround-with-sequence"></a><a name="BKMK_AutoSurround"></a>Автоматическое обрамление с последовательностью
+### <a name="auto-surround-with-sequence"></a><a name="BKMK_AutoSurround"></a> Автоматическое обрамление с последовательностью
 
 Поскольку рабочий процесс или некоторые действия с контейнерами (например, <xref:System.Activities.Statements.NoPersistScope>) могут содержать только одно действие с текстом, при добавлении второго действия разработчик должен удалить первое действие, добавить действие <xref:System.Activities.Statements.Sequence>, а затем добавить оба действия в действие последовательности. Начиная с .NET Framework 4,5, при добавлении второго действия в рабочую область конструктора `Sequence` автоматически создается действие, чтобы создать оболочку для обоих действий.
 
@@ -133,7 +133,7 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 ![Автоматически созданная последовательность в теле NoPersistScope.](./media/whats-new-in-wf-in-dotnet/auto-surround-sequence-activity.png)
 
-### <a name="pan-mode"></a><a name="BKMK_PanMode"></a>Режим Pan
+### <a name="pan-mode"></a><a name="BKMK_PanMode"></a> Режим Pan
 
 Для упрощения навигации по большому рабочему процессу в конструкторе можно включить панорамный режим, позволяющий разработчику перетаскивать мышью видимую часть рабочего процесса и не использовать полосы прокрутки. Кнопка для активации панорамного режима находится в правом нижнем углу конструктора.
 
@@ -143,13 +143,13 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 Панорамирование в конструкторе рабочих процессов возможно также с помощью средней кнопки мыши или клавиши пробела.
 
-### <a name="multi-select"></a><a name="BKMK_MultiSelect"></a>Множественный выбор
+### <a name="multi-select"></a><a name="BKMK_MultiSelect"></a> Множественный выбор
 
 Для одновременного выбора нескольких действий можно растянуть вокруг них прямоугольник (если не включен панорамный режим) или последовательно щелкнуть необходимые действия при нажатой клавише CTRL.
 
 Несколько выделенных действий можно перетаскивать внутри конструктора, а также взаимодействовать с ними с помощью контекстного меню.
 
-### <a name="outline-view-of-workflow-items"></a><a name="BKMK_DocumentOutline"></a>представление "Структура" элементов рабочего процесса
+### <a name="outline-view-of-workflow-items"></a><a name="BKMK_DocumentOutline"></a> представление "Структура" элементов рабочего процесса
 
 Для упрощения навигации по иерархическим рабочим процессам компоненты рабочего процесса отображаются в виде древовидной структуры. Представление структуры отображается в представлении « **Структура документа** ». Чтобы открыть это представление, в верхнем меню выберите **вид**, **другие окна**, **Структура документа**или нажмите клавиши CTRL W, U. Щелкнув узел в представлении структуры, можно перейти к соответствующему действию в конструкторе рабочих процессов. Представление структуры будет обновлено с отображением действий, выбранных в конструкторе.
 
@@ -157,7 +157,7 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 ![Снимок экрана: представление структуры с последовательным рабочим процессом в Visual Studio.](./media/whats-new-in-wf-in-dotnet/outline-view-in-workflow-designer.jpg)
 
-### <a name="c-expressions"></a><a name="BKMK_CSharpExpressions"></a>Выражения C#
+### <a name="c-expressions"></a><a name="BKMK_CSharpExpressions"></a> Выражения C#
 
 До .NET Framework 4,5 все выражения в рабочих процессах могут быть написаны только на Visual Basic. В .NET Framework 4,5 выражения Visual Basic используются только для проектов, созданных с помощью Visual Basic. Теперь в проектах Visual C# для выражений используется язык C#. Предоставлен полнофункциональный редактор выражений C# с такими возможностями, как выделение грамматики и технология Intellisense. Проекты рабочих процессов C#, созданные в предыдущих версиях с использованием выражений Visual Basic, будут по-прежнему работать.
 
@@ -165,11 +165,11 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 Дополнительные сведения о выражениях C# см. в разделе [выражения c#](csharp-expressions.md).
 
-### <a name="more-control-of-visibility-of-shell-bar-and-header-items"></a><a name="BKMK_Visibility"></a>Более полное управление видимостью панели оболочки и элементов заголовка
+### <a name="more-control-of-visibility-of-shell-bar-and-header-items"></a><a name="BKMK_Visibility"></a> Более полное управление видимостью панели оболочки и элементов заголовка
 
 В повторно размещенном конструкторе некоторые из стандартных элементов управления пользовательского интерфейса могут не иметь значения для заданного рабочего процесса и могут быть отключены. В .NET Framework 4 Эта настройка поддерживается только в панели оболочки в нижней части конструктора. В .NET Framework 4,5 видимость элементов заголовка оболочки в верхней части конструктора можно изменить, задав <xref:System.Activities.Presentation.View.DesignerView.WorkflowShellHeaderItemsVisibility%2A> соответствующее <xref:System.Activities.Presentation.View.ShellHeaderItemsVisibility> значение.
 
-### <a name="auto-connect-and-auto-insert-in-flowchart-and-state-machine-workflows"></a><a name="BKMK_AutoConnect"></a>Автоматическое подключение и автоматическая вставка в блок-схеме и в рабочих процессах конечного автомата
+### <a name="auto-connect-and-auto-insert-in-flowchart-and-state-machine-workflows"></a><a name="BKMK_AutoConnect"></a> Автоматическое подключение и автоматическая вставка в блок-схеме и в рабочих процессах конечного автомата
 
 В .NET Framework 4 подключения между узлами в рабочем процессе блок-схемы должны быть добавлены вручную. В .NET Framework 4,5, блок-схема и узлы конечного автомата имеют автоматические точки соединения, которые становятся видимыми при перетаскивании действия с панели элементов на поверхность конструктора. При сбросе действия в одной из этих точек автоматически добавляется действие вместе с необходимым соединением.
 
@@ -181,7 +181,7 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 ![Ручка автоматической вставки для перетаскивания действий](./media/whats-new-in-wf-in-dotnet/auto-insert-connecting-line.png)
 
-### <a name="designer-annotations"></a><a name="BKMK_Annotations"></a>Заметки конструктора
+### <a name="designer-annotations"></a><a name="BKMK_Annotations"></a> Заметки конструктора
 
 Для упрощения разработки крупных рабочих процессов конструктор теперь поддерживает добавление заметок, помогающих отслеживать процесс проектирования. Заметки можно добавлять к действиям, состояниям, узлам блок-схемы, переменным и аргументам. На следующем снимке экрана показано контекстное меню, которое используется для добавления заметок к конструктору.
 
@@ -191,37 +191,37 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 В .NET Framework 4 элементы, не являющиеся элементами активности, не поддерживают отладочные точки останова, так как они не были единицами выполнения. Этот выпуск предоставляет механизм для добавления точек останова в объекты <xref:System.Activities.Statements.State>. Если задана точка останова на состоянии <xref:System.Activities.Statements.State>, выполнение прервется, когда произойдет переход в это состояние, прежде чем будут запланированы действия входа в состояние или триггеры.
 
-### <a name="define-and-consume-activitydelegate-objects-in-the-designer"></a><a name="BKMK_ActivityDelegates"></a>Определение и использование объектов ActivityDelegate в конструкторе
+### <a name="define-and-consume-activitydelegate-objects-in-the-designer"></a><a name="BKMK_ActivityDelegates"></a> Определение и использование объектов ActivityDelegate в конструкторе
 
 Действия в .NET Framework 4 использовали <xref:System.Activities.ActivityDelegate> объекты для предоставления точек выполнения, где другие части рабочего процесса могут взаимодействовать с выполнением рабочего процесса, но использование этих точек выполнения обычно требует достаточного объема кода. В этом выпуске разработчики могут определять и использовать делегаты действий с помощью конструктора рабочих процессов. Дополнительные сведения см. в разделе [инструкции. Определение и использование делегатов действий в конструктор рабочих процессов](/visualstudio/workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer).
 
-### <a name="build-time-validation"></a><a name="BKMK_BuildTimeValidation"></a>Проверка во время сборки
+### <a name="build-time-validation"></a><a name="BKMK_BuildTimeValidation"></a> Проверка во время сборки
 
 В .NET Framework 4 ошибки проверки рабочего процесса не учитывались как ошибки сборки во время сборки проекта рабочего процесса. Это значило, что сборка проекта рабочего процесса могло завершиться успешно даже при наличии ошибок проверки рабочего процесса. В .NET Framework 4,5 ошибки проверки рабочего процесса приводят к сбою сборки.
 
-### <a name="design-time-background-validation"></a><a name="BKMK_DesignTimeValidation"></a>Фоновая проверка во время разработки
+### <a name="design-time-background-validation"></a><a name="BKMK_DesignTimeValidation"></a> Фоновая проверка во время разработки
 
 В .NET Framework 4 рабочие процессы проверялись как процесс переднего плана, что потенциально может заблокировать пользовательский интерфейс во время сложных или длительных процессов проверки. Теперь проверка рабочего процесса выполняется в фоновом потоке, поэтому пользовательский интерфейс не блокируется.
 
-### <a name="view-state-located-in-a-separate-location-in-xaml-files"></a><a name="BKMK_ViewState"></a>Состояние представления, расположенное в отдельном месте в файлах XAML
+### <a name="view-state-located-in-a-separate-location-in-xaml-files"></a><a name="BKMK_ViewState"></a> Состояние представления, расположенное в отдельном месте в файлах XAML
 
 В .NET Framework 4 сведения о состоянии представления для рабочего процесса хранятся в файле XAML во многих разных местах. Это неудобно для разработчиков, которым требуется прочитать язык XAML напрямую или написать код для извлечения информации о состоянии просмотра. В .NET Framework 4,5 сведения о состоянии представления в файле XAML сериализуются как отдельный элемент в файле XAML. Разработчики могут легко находить и изменять сведения о состоянии представления действия или полностью удалить состояние представления.
 
-### <a name="expression-extensibility"></a><a name="BKMK_ExpressionExtensibility"></a>Расширяемость выражений
+### <a name="expression-extensibility"></a><a name="BKMK_ExpressionExtensibility"></a> Расширяемость выражений
 
 В .NET Framework 4,5 мы предоставляем разработчикам возможность создавать собственные выражения и функции создания выражений, которые можно подключить к конструктору рабочих процессов.
 
-### <a name="opt-in-for-workflow-45-features-in-rehosted-designer"></a><a name="BKMK_BackwardCompatRehostedDesigner"></a>Согласие на функции рабочего процесса 4,5 в повторно размещенном конструкторе
+### <a name="opt-in-for-workflow-45-features-in-rehosted-designer"></a><a name="BKMK_BackwardCompatRehostedDesigner"></a> Согласие на функции рабочего процесса 4,5 в повторно размещенном конструкторе
 
 Для сохранения обратной совместимости некоторые новые функции, включенные в .NET Framework 4,5, не включены по умолчанию в повторно размещенном конструкторе. Таким образом, работа существующих приложений, использующих повторно размещенный конструктор, не нарушается обновлением до последней версии. Для включения новых возможностей в повторно размещенном конструкторе установите значение <xref:System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName%2A> для параметра «.NET Framework 4.5» или задайте отдельные элементы <xref:System.Activities.Presentation.DesignerConfigurationService>, чтобы включить отдельные возможности.
 
-## <a name="new-workflow-development-models"></a><a name="BKMK_NewWFModels"></a>Новые модели разработки рабочих процессов
+## <a name="new-workflow-development-models"></a><a name="BKMK_NewWFModels"></a> Новые модели разработки рабочих процессов
 
 Помимо блок-схемы и последовательных моделей разработки рабочего процесса, этот выпуск включает рабочие процессы конечного автомата и службы рабочего процесса с первоначальным контрактом.
 
-### <a name="state-machine-workflows"></a><a name="BKMK_StateMachine"></a>Рабочие процессы конечного автомата
+### <a name="state-machine-workflows"></a><a name="BKMK_StateMachine"></a> Рабочие процессы конечного автомата
 
-Рабочие процессы конечного автомата были представлены в составе .NET Framework 4, версии 4.0.1 в [Microsoft .NET Framework 4 платформы с обновлением 1](https://docs.microsoft.com/archive/blogs/endpoint/microsoft-net-framework-4-platform-update-1). Это обновление включило несколько новых классов и действий, которые дали возможность разработчикам создавать рабочие процессы конечного автомата. Эти классы и действия были обновлены для .NET Framework 4,5. Обновления включают следующее:
+Рабочие процессы конечного автомата были представлены в составе .NET Framework 4, версии 4.0.1 в [Microsoft .NET Framework 4 платформы с обновлением 1](/archive/blogs/endpoint/microsoft-net-framework-4-platform-update-1). Это обновление включило несколько новых классов и действий, которые дали возможность разработчикам создавать рабочие процессы конечного автомата. Эти классы и действия были обновлены для .NET Framework 4,5. Обновления включают следующее:
 
 1. Возможность установки точек останова на состояниях
 
@@ -237,6 +237,6 @@ Windows Workflow Foundation (WF) в .NET Framework 4,5 содержит множ
 
 Дополнительные сведения о создании рабочих процессов конечного автомата см. в разделе [рабочие процессы конечного автомата](state-machine-workflows.md).
 
-### <a name="contract-first-workflow-development"></a><a name="BKMK_ContractFirst"></a>Разработка рабочих процессов по контракту
+### <a name="contract-first-workflow-development"></a><a name="BKMK_ContractFirst"></a> Разработка рабочих процессов по контракту
 
 Средство разработки рабочих процессов с контрактом от первого разработчика позволяет разработчику сначала спроектировать контракт в коде, а затем, выполнив несколько щелчков мышью в Visual Studio, автоматически создать шаблон действия на панели элементов, представляющем каждую операцию. Эти действия затем используются для создания рабочего процесса с операциями, указанными в контракте. Конструктор рабочих процессов проверяет службу рабочего процесса для проверки того, что эти операции реализованы, а сигнатура рабочего процесса соответствует сигнатуре контракта. Разработчик также может связать службу рабочего процесса с коллекцией реализованных контрактов. Дополнительные сведения о разработке службы рабочих процессов в зависимости от контракта см. в разделе [как создать службу рабочего процесса, которая использует существующий контракт службы](how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md).

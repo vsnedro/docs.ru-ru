@@ -7,12 +7,12 @@ helpviewer_keywords:
 - application configuration [.NET Framework]
 - assemblies [.NET Framework], specifying location
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
-ms.openlocfilehash: e14bdc12598d0aa6cdd2789b09a04ab8ed134169
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 3b24ff99eee9027d507ef89ca855162f221f826a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141708"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555124"
 ---
 # <a name="specifying-an-assemblys-location"></a>Указание расположения сборки
 Существует два способа указания расположения сборки:  
@@ -21,7 +21,7 @@ ms.locfileid: "85141708"
   
 - С помощью [\<probing>](./file-schema/runtime/probing-element.md) элемента.  
   
- Можно также использовать [средство настройки .NET Framework (Mscorcfg. msc)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/2bc0cxhc(v=vs.100)) , чтобы указать расположения сборок или указать расположения среды CLR для проверки сборок.  
+ Можно также использовать [средство настройки .NET Framework (Mscorcfg. msc)](/previous-versions/dotnet/netframework-4.0/2bc0cxhc(v=vs.100)) , чтобы указать расположения сборок или указать расположения среды CLR для проверки сборок.  
   
 ## <a name="using-the-codebase-element"></a>Использование \<codeBase> элемента  
  Элемент можно использовать **\<codeBase>** только в конфигурации компьютера или в файлах политики издателя, которые также перенаправляют версию сборки. Когда среда выполнения определяет используемую версию сборки, она применяет параметр базы кода из файла, который определяет версию. Если не указано ни одной базы кода, среда выполнения проверяет наличие сборки обычным способом. Дополнительные сведения см. [в разделе Обнаружение сборок в среде выполнения](../deployment/how-the-runtime-locates-assemblies.md).  

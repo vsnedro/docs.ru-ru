@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows Forms Add configuration element
 - configuring Windows Forms applications
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
-ms.openlocfilehash: 26b806f84c3e1bc44e0437a8f8806316b14897b8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: dc1786f1f2dcc7bd01488dd24c6ef454f7e1cfbd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73109665"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557636"
 ---
 # <a name="windows-forms-add-configuration-element"></a>Windows Forms добавить элемент конфигурации
 
@@ -35,7 +35,7 @@ ms.locfileid: "73109665"
 | `key`     | Обязательный атрибут. Предопределенное имя ключа, соответствующее определенной Windows Forms настраиваемой функции. |
 | `value`   | Обязательный атрибут. Значение, присваиваемое параметру `key`. |
 
-### <a name="key-attribute-names-and-associated-values"></a>`key`имена атрибутов и связанные значения
+### <a name="key-attribute-names-and-associated-values"></a>`key` имена атрибутов и связанные значения
 
 | Имя в `key` | Значения | Описание |
 | ---------- | ------ | ----------- |
@@ -65,7 +65,7 @@ ms.locfileid: "73109665"
 
 `<System.Windows.Forms.ApplicationConfigurationSection>`Элемент позволяет добавить один или несколько дочерних `<add>` элементов, каждый из которых определяет конкретный параметр конфигурации.
 
-Общие сведения о поддержке Windows Forms высокого DPI см. [в разделе Поддержка высокого DPI в Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md).
+Общие сведения о поддержке Windows Forms высокого DPI см. [в разделе Поддержка высокого DPI в Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms).
 
 ### <a name="dpiawareness"></a>дпиаваренесс
 
@@ -97,7 +97,7 @@ Windows Forms приложения, работающие под управлен
 
 Как правило, вы отказываетесь от конкретной функции, так как вы решили управлять ею программным способом.
 
-Дополнительные сведения о поддержке высокого DPI в Windows Forms приложениях см. [в разделе Поддержка высокого DPI в Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md).
+Дополнительные сведения о поддержке высокого DPI в Windows Forms приложениях см. [в разделе Поддержка высокого DPI в Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms).
 
 ### <a name="disabledpichangedmessagehandling"></a>дисабледпичанжедмессажехандлинг
 
@@ -110,4 +110,4 @@ Windows Forms приложения, работающие под управлен
 ## <a name="see-also"></a>См. также
 
 - [Раздел конфигурации Windows Forms](index.md)
-- [Поддержка высокого DPI в Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md)
+- [Поддержка высокого DPI в Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms)

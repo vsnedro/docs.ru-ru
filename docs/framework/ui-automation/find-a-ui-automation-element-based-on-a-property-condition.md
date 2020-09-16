@@ -9,12 +9,12 @@ helpviewer_keywords:
 - elements, finding by property conditions
 - UI Automation, finding elements by property conditions
 ms.assetid: 3acaee5a-6ce8-4c3e-81c8-67e59eb74477
-ms.openlocfilehash: 5e5fa4fde9049bd87b2722fa9b7d084d96ff6f42
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 112f38d6bef726f92dbf13da70b88732929175dd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87168439"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557688"
 ---
 # <a name="find-a-ui-automation-element-based-on-a-property-condition"></a>Нахождение Элемента Автоматизации Пользовательского Интерфейса в Зависимости от Состояния Свойства
 > [!NOTE]
@@ -31,8 +31,8 @@ ms.locfileid: "87168439"
  [!code-csharp[InvokePatternApp#1100](../../../samples/snippets/csharp/VS_Snippets_Wpf/InvokePatternApp/CSharp/InvokePatternApp.cs#1100)]
  [!code-vb[InvokePatternApp#1100](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1100)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Пример пункта меню InvokePattern и ExpandCollapsePattern](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90))
+- [Пример пункта меню InvokePattern и ExpandCollapsePattern](/previous-versions/dotnet/netframework-3.5/ms771636(v=vs.90))
 - [Получение элементов автоматизации пользовательского интерфейса](obtaining-ui-automation-elements.md)
 - [Использование свойства AutomationID](use-the-automationid-property.md)

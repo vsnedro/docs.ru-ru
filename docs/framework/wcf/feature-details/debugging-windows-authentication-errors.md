@@ -8,18 +8,18 @@ helpviewer_keywords:
 - WCF, authentication
 - WCF, Windows authentication
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-ms.openlocfilehash: eb3274b98234324bd47aa456feb4845da5a7f3a9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7a896b12f9e877c00688ade176c1e0c730d9591b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599286"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557610"
 ---
 # <a name="debug-windows-authentication-errors"></a>Отладка ошибок проверки подлинности Windows
 
 При использовании в качестве механизма обеспечения безопасности проверки подлинности Windows процессы безопасности обрабатываются интерфейсом поставщика поддержки безопасности SSPI. При возникновении ошибок безопасности на уровне SSPI они выводятся Windows Communication Foundation (WCF). В этом разделе описаны общие принципы и некоторые вопросы, помогающие диагностировать такие ошибки.  
   
- Общие сведения о протоколе Kerberos см. в статье [Описание](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/bb742516(v=technet.10))протокола Kerberos. Общие сведения о SSPI см. в разделе [SSPI](/windows/win32/secauthn/sspi).  
+ Общие сведения о протоколе Kerberos см. в статье [Описание](/previous-versions/windows/it-pro/windows-2000-server/bb742516(v=technet.10))протокола Kerberos. Общие сведения о SSPI см. в разделе [SSPI](/windows/win32/secauthn/sspi).  
   
  Для проверки подлинности Windows в WCF обычно используется поставщик услуг безопасности *Negotiate* , который выполняет взаимную проверку подлинности Kerberos между клиентом и службой. Если протокол Kerberos недоступен, WCF по умолчанию переходит к диспетчеру NT LAN Manager (NTLM). Однако можно настроить WCF для использования только протокола Kerberos (и исключения, если протокол Kerberos недоступен). Можно также настроить WCF для использования ограниченных форм протокола Kerberos.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "84599286"
   
  В сценариях с балансировкой нагрузки, например при использовании веб-ферм или веб-садов, распространена практика определения уникальной учетной записи для каждого из приложений, назначения этой учетной записи имени участника-службы и контроль за тем, чтобы все службы приложения выполнялись от имени этой учетной записи.  
   
- Чтобы получить для учетной записи службы имя участника-службы, нужны права администратора домена Active Directory. Дополнительные сведения см. в статье [техническое дополнение Kerberos для Windows](https://docs.microsoft.com/previous-versions/msp-n-p/ff649429(v=pandp.10)).  
+ Чтобы получить для учетной записи службы имя участника-службы, нужны права администратора домена Active Directory. Дополнительные сведения см. в статье [техническое дополнение Kerberos для Windows](/previous-versions/msp-n-p/ff649429(v=pandp.10)).  
   
 #### <a name="kerberos-protocol-direct-requires-the-service-to-run-under-a-domain-machine-account"></a>Для непосредственного применения протокола Kerberos необходимо, чтобы служба выполнялась от имени учетной записи компьютера домена  
  Такая ситуация возникает, когда свойство `ClientCredentialType` имеет значение `Windows`, а свойство <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> - `false`, как показано в следующем примере кода.  
@@ -145,7 +145,7 @@ ms.locfileid: "84599286"
 #### <a name="developing-and-deploying-with-different-identities"></a>Разработка и развертывание с использованием различных удостоверений  
  В случае разработки приложения на одном компьютере и его развертывания на другом компьютере с использованием для проверки подлинности на каждом из компьютеров учетных записей различных типов работа приложения может различаться. Предположим, приложение разрабатывается на компьютере под управлением Windows XP Professional Edition с использованием режима проверки подлинности `SSPI Negotiated`. Если для проверки подлинности используется учетная запись локального пользователя, будет использоваться протокол NTLM. После разработки приложения служба развертывается на компьютере под управлением Windows Server 2003, где она выполняется от имени учетной записи домена. На этом этапе клиент не сможет проверить подлинность службы, так как он будет использовать Kerberos и контроллер домена.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.Security.WindowsServiceCredential>

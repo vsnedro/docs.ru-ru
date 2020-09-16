@@ -2,12 +2,12 @@
 title: Активация на основе конфигурации в IIS и WAS
 ms.date: 03/30/2017
 ms.assetid: 6a927e1f-b905-4ee5-ad0f-78265da38238
-ms.openlocfilehash: 5e1672f4dd67950178c95d3e043e16072fcd0ef4
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f947a64acdf602d12fcd2319a1b994912ecb331e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593585"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556633"
 ---
 # <a name="configuration-based-activation-in-iis-and-was"></a>Активация на основе конфигурации в IIS и WAS
 
@@ -40,10 +40,10 @@ ms.locfileid: "84593585"
 > - Регистрация в файле конфигурации имеет более высокий приоритет, чем параметры в SVC-файле, XAMLX-файле, XOML-файле и других файлах.
 > - Все символы обратной косой черты «\» в URI, отправляемых в IIS/WAS, автоматически преобразуются в символы косой черты «/». Если добавляемый относительный адрес содержит символ «\», а в IIS отправлен URI, который использует относительный адрес, то символ обратной косой черты преобразуется в символ косой черты и IIS не может сопоставить его с относительным адресом. Службы IIS отправляют сведения трассировки, которые указывают, что соответствие не найдено.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations%2A>
 - [Размещение служб](../hosting-services.md)
 - [Общие сведения о размещении служб рабочих процессов](hosting-workflow-services-overview.md)
 - [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md)
-- [Функции размещения Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Функции размещения Windows Server App Fabric](/previous-versions/appfabric/ee677189(v=azure.10))

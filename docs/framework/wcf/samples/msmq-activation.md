@@ -2,12 +2,12 @@
 title: Активация MSMQ
 ms.date: 03/30/2017
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.openlocfilehash: 0dbd24a612d56c0fe88066f625be2a8369b7df5b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 349eadb8f517993c343e81656204ad25e62ed931
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602548"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555241"
 ---
 # <a name="msmq-activation"></a>Активация MSMQ
 
@@ -347,6 +347,6 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
     sc sidtype netmsmqactivator unrestricted
     ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-- [Образцы размещения и сохраняемости AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))
+- [Образцы размещения и сохраняемости AppFabric](/previous-versions/appfabric/ff383418(v=azure.10))

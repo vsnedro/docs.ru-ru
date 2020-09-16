@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - denial of service [WCF]
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
-ms.openlocfilehash: 1c1778ace6abc332517786f910d0442eeed577c9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 29798a73ec69b7f695068343d9c7b5593eeba4fa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599273"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557584"
 ---
 # <a name="denial-of-service"></a>Отказ в обслуживании
 Если система перегружена так, что не удается обрабатывать сообщения, или сообщения обрабатываются слишком медленно, происходит отказ в обслуживании.  
@@ -44,7 +44,7 @@ ms.locfileid: "84599273"
 ## <a name="auditing-event-log-can-be-filled"></a>Возможно переполнение журнала событий аудита  
  Если злоумышленник знает о том, что включен аудит, он может отправлять недопустимые сообщения, приводящие к внесению записей аудита в журнал. Если это приводит к заполнению журнала аудита, система аудита дает сбой.  
   
- Для решения этой проблемы задайте свойству <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> значение `true` и используйте свойства средства «Просмотр событий» для управления поведением аудита. Дополнительные сведения об использовании Просмотр событий для просмотра журналов событий и управления ими см. в разделе [Просмотр событий](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). Дополнительные сведения см. в разделе [Audit](auditing-security-events.md).  
+ Для решения этой проблемы задайте свойству <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> значение `true` и используйте свойства средства «Просмотр событий» для управления поведением аудита. Дополнительные сведения об использовании Просмотр событий для просмотра журналов событий и управления ими см. в разделе [Просмотр событий](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). Дополнительные сведения см. в разделе [Audit](auditing-security-events.md).  
   
 ## <a name="invalid-implementations-of-iauthorizationpolicy-can-cause-service-to-become-unresponsive"></a>Недопустимые реализации IAuthorizationPolicy могут привести к тому, что служба перестанет отвечать на запросы  
  Вызов <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> метода для неисправной реализации <xref:System.IdentityModel.Policy.IAuthorizationPolicy> интерфейса может привести к тому, что служба перестанет отвечать на запросы.  
@@ -61,7 +61,7 @@ ms.locfileid: "84599273"
   
  Чтобы устранить эту проблемы, сослаться на точный сертификат для использования с более точным условием поиска в [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md) . Например, используйте параметр <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> и задавайте сертификат по его уникальному отпечатку (хэшу).  
   
- Дополнительные сведения о функции автоматической подачи заявок см. в статье [Автоматическая регистрация сертификатов в Windows Server 2003](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc778954(v%3dws.10)).  
+ Дополнительные сведения о функции автоматической подачи заявок см. в статье [Автоматическая регистрация сертификатов в Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc778954(v=ws.10)).  
   
 ## <a name="last-of-multiple-alternative-subject-names-used-for-authorization"></a>Последнее из нескольких альтернативных имен субъекта, используемое для авторизации  
  В редком случае, когда сертификат X.509 содержит несколько альтернативных имен субъектов, и авторизация выполняется с использованием альтернативного имени субъекта, авторизация может завершиться сбоем.  
@@ -79,12 +79,12 @@ ms.locfileid: "84599273"
   
  Чтобы избежать этого, задайте максимальное число активных сеансов и максимальное время существования сеанса с помощью свойства <xref:System.ServiceModel.Channels.SecurityBindingElement> класса <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Вопросы безопасности](security-considerations-in-wcf.md)
 - [Раскрытие информации](information-disclosure.md)
-- [Повышение привилегий](elevation-of-privilege.md)
+- [Несанкционированное получение привилегий](elevation-of-privilege.md)
 - [Отказ в обслуживании](denial-of-service.md)
 - [Атаки с повторением](replay-attacks.md)
-- [незаконное изменение;](tampering.md)
+- [Незаконное изменение](tampering.md)
 - [Неподдерживаемые сценарии](unsupported-scenarios.md)

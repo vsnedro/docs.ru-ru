@@ -2,12 +2,12 @@
 title: Предоставление разрешений уровня строки в SQL Server
 ms.date: 03/30/2017
 ms.assetid: a55aaa12-34ab-41cd-9dec-fd255b29258c
-ms.openlocfilehash: df5fcb4a6c73e12bec2ab17501fdfb02cf672324
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 0b34eaee4b66a2be82049816f0a98b9f53012303
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70782351"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554857"
 ---
 # <a name="granting-row-level-permissions-in-sql-server"></a>Предоставление разрешений уровня строки в SQL Server
 
@@ -23,7 +23,7 @@ ms.locfileid: "70782351"
 
 - Включите фильтрацию на уровне строк следующим образом.
 
-  - Если вы используете SQL Server версии не ниже 2016 или [базу данных SQL Azure](https://docs.microsoft.com/azure/sql-database/), создайте политику безопасности, которая добавляет в таблицу предикат, ограничивающий возвращаемые строки теми, которые соответствуют либо текущему пользователю базы данных (с помощью встроенной функции CURRENT_USER()), либо текущему имени для входа (с помощью встроенной функции SUSER_SNAME()).
+  - Если вы используете SQL Server версии не ниже 2016 или [базу данных SQL Azure](/azure/sql-database/), создайте политику безопасности, которая добавляет в таблицу предикат, ограничивающий возвращаемые строки теми, которые соответствуют либо текущему пользователю базы данных (с помощью встроенной функции CURRENT_USER()), либо текущему имени для входа (с помощью встроенной функции SUSER_SNAME()).
 
       ```sql
       CREATE SCHEMA Security

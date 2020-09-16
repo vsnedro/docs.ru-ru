@@ -17,12 +17,12 @@ helpviewer_keywords:
 - local variables [Visual Basic], declarations
 - scope [Visual Basic], variables
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
-ms.openlocfilehash: 587cb84faa09b686361c255c413ad852780b8971
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e3e2b6173a36490328801afd7fe711f1a003e2ae
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410300"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557480"
 ---
 # <a name="variable-declaration-in-visual-basic"></a>Объявление переменной в Visual Basic
 Переменная объявляется для указания ее имени и характеристик. Оператор объявления для переменных является [оператором Dim](../../../language-reference/statements/dim-statement.md). Его расположение и содержимое определяют характеристики переменной.  
@@ -42,15 +42,15 @@ ms.locfileid: "84410300"
 ## <a name="declaring-data-type"></a>Объявление типа данных  
  Предложение [as](../../../language-reference/statements/as-clause.md) в операторе объявления позволяет определить тип данных или тип объекта объявляемой переменной. Для переменной можно указать любой из следующих типов:  
   
-- Простейший тип данных, например `Boolean` , `Long` или`Decimal`  
+- Простейший тип данных, например `Boolean` , `Long` или `Decimal`  
   
 - Составной тип данных, например массив или структура  
   
 - Тип объекта или класс, определенный либо в приложении, либо в другом приложении  
   
-- Класс .NET Framework, например <xref:System.Windows.Forms.Label> или<xref:System.Windows.Forms.TextBox>  
+- Класс .NET Framework, например <xref:System.Windows.Forms.Label> или <xref:System.Windows.Forms.TextBox>  
   
-- Тип интерфейса, например <xref:System.IComparable> или<xref:System.IDisposable>  
+- Тип интерфейса, например <xref:System.IComparable> или <xref:System.IDisposable>  
   
  В одной инструкции можно объявить несколько переменных без повторения типа данных. В следующих инструкциях переменные `i` , `j` и `k` объявляются как тип `Integer` , и `l` `m` как, и и, `Long` `x` `y` как `Single` :  
   
@@ -61,7 +61,7 @@ Dim l, m As Long, x, y As Single
 ' In the preceding statement, l and m are Long, x and y are Single.  
 ```  
   
- Дополнительные сведения о типах данных см. в разделе [типы данных](../data-types/index.md). Дополнительные сведения об объектах см. в разделе [объекты и классы](../objects-and-classes/index.md) и [программирование с помощью компонентов](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120)).  
+ Дополнительные сведения о типах данных см. в разделе [типы данных](../data-types/index.md). Дополнительные сведения об объектах см. в разделе [объекты и классы](../objects-and-classes/index.md) и [программирование с помощью компонентов](/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120)).  
   
 ## <a name="local-type-inference"></a>Вывод локального типа  
  *Определение типа* используется для определения типов данных локальных переменных, объявленных без `As` предложения. Компилятор выводит тип переменной из типа выражения инициализации. Это позволяет объявлять переменные без явного указания типа. В следующем примере оба типа `num1` и `num2` строго типизированы как целые числа.  
@@ -77,13 +77,13 @@ Dim l, m As Long, x, y As Single
   
  *Уровень доступа* переменной — это область кода, имеющая разрешение на доступ к нему. Это определяется модификатором доступа (например, [открытым](../../../language-reference/modifiers/public.md) или [закрытым](../../../language-reference/modifiers/private.md)), который используется в `Dim` инструкции. Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../declared-elements/access-levels.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Создание новой переменной](how-to-create-a-new-variable.md)
 - [Практическое руководство. Запись данных в переменную и их извлечение из переменной](how-to-move-data-into-and-out-of-a-variable.md)
 - [Типы данных](../../../language-reference/data-types/index.md)
 - [От](../../../language-reference/modifiers/protected.md)
-- [Объявление](../../../language-reference/modifiers/friend.md)
+- [Friend](../../../language-reference/modifiers/friend.md)
 - [Статическое](../../../language-reference/modifiers/static.md)
 - [Характеристики объявленных элементов](../declared-elements/declared-element-characteristics.md)
 - [Вывод локального типа](local-type-inference.md)

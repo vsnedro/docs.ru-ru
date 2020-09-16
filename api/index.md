@@ -8,13 +8,13 @@ quickFilterColumn3: azure-dotnet,ml-dotnet,spark-dotnet
 ms.topic: landing-page
 ms.custom: updateeachrelease
 ms.date: 01/24/2020
-ms.openlocfilehash: b1781d0dddbcb368e0e26bd41f51eeaeeba809e0
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: cf15aaacc853cba386f99205cfe5bf625e8dda21
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86308862"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539922"
 ---
 # <a name="net-api-browser"></a>Браузер API .NET
 
-Вас приветствует обозреватель .NET API — единый магазин для всех API на основе .NET от Майкрософт. Чтобы найти управляемый API-интерфейс, введите поисковый запрос в поле ниже. Дополнительные сведения об обозревателе API см. [в нашей записи блога](https://aka.ms/apibrowser). Если у вас есть комментарии, создайте новую тему в [репозитории MicrosoftDocs/feedback на GitHub](https://github.com/MicrosoftDocs/feedback/issues).
+Вас приветствует обозреватель .NET API — единый магазин для всех API на основе .NET от Майкрософт. Чтобы найти управляемый API-интерфейс, введите поисковый запрос в поле ниже. Дополнительные сведения об обозревателе API см. [в нашей записи блога](/teamblog/announcing-unified-dotnet-experience-on-docs). Если у вас есть комментарии, создайте новую тему в [репозитории MicrosoftDocs/feedback на GitHub](https://github.com/MicrosoftDocs/feedback/issues).

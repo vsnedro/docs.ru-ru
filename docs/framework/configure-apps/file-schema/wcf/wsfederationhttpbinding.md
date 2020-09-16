@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - wsFederationBinding element
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
-ms.openlocfilehash: 0a77c791d55c6009cf59d5a4b15f3b2a63b7ccf9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a57b5ff0b4a8186ffc4c01b5e0824100f265551c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74140476"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557285"
 ---
 # \<wsFederationHttpBinding>
 
@@ -109,7 +109,7 @@ ms.locfileid: "74140476"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |bypassProxyOnLocal|Логическое значение, определяющее, будет ли выполняться обход прокси-сервера для локальных адресов. Значение по умолчанию — `false`.|
 |closeTimeout|Значение <xref:System.TimeSpan>, которое задает длительность времени ожидания для завершения операции закрытия. Это значение должно быть больше или равно <xref:System.TimeSpan.Zero>. Значение по умолчанию - 00:01:00.|
@@ -133,8 +133,8 @@ ms.locfileid: "74140476"
 |Элемент|Описание|
 |-------------|-----------------|
 |[\<security>](security-of-wsfederationhttpbinding.md)|Определяет параметры безопасности сообщения. Это элемент типа <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>.|
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|
-|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Указывает, устанавливаются ли между конечными точками канала надежные сеансы.|
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Определяет ограничения по сложности сообщений SOAP, которые могут обрабатываться конечными точками, настроенными с использованием этой привязки. Это элемент типа <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|
+|[\<reliableSession>](/previous-versions/ms731375(v=vs.90))|Указывает, устанавливаются ли между конечными точками канала надежные сеансы.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
