@@ -6,12 +6,12 @@ helpviewer_keywords:
 - UI Automation caching in clients
 - caching, UI Automation clients
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
-ms.openlocfilehash: 4fbb4acabebea54015b11cefdf8a37c7e2dc93f5
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: cbf7b18d59e468be085f245cc9bb0a595bd41832
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87168251"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540931"
 ---
 # <a name="caching-in-ui-automation-clients"></a>Кэширование в клиентах автоматизации пользовательского интерфейса
 > [!NOTE]
@@ -102,8 +102,8 @@ ms.locfileid: "87168251"
   
  Обновление кэша не изменяет свойства существующих ссылок <xref:System.Windows.Automation.AutomationElement> .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [События модели автоматизации пользовательского интерфейса для клиентов](ui-automation-events-for-clients.md)
 - [Использование кэширования в модели автоматизации пользовательского интерфейса](use-caching-in-ui-automation.md)
-- [Пример Фетчтимер](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))
+- [Пример Фетчтимер](/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))

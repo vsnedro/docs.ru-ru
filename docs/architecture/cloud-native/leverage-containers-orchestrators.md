@@ -2,12 +2,12 @@
 title: Использование контейнеров и оркестраторов
 description: Использование контейнеров DOCKER и orchestration Kubernetes в Azure
 ms.date: 05/31/2020
-ms.openlocfilehash: 25e981e0fb7957e7180be09a19a406eddfe4e51b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f9e8672b742217388bd719262ffdfee63618fd14
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446871"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540547"
 ---
 # <a name="leveraging-containers-and-orchestrators"></a>Использование контейнеров и оркестраторов
 
@@ -183,7 +183,7 @@ Visual Studio поддерживает разработку с помощью DO
 
 Если выбран этот параметр, проект создается с помощью `Dockerfile` в корневом каталоге, который можно использовать для сборки и размещения приложения в контейнере DOCKER. Пример Dockerfile показан на рис. 3 -6. git
 
-```docker
+```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3480bbdb-c442-44a0-b7c6-333354503c52
 topic_type:
 - apiref
-ms.openlocfilehash: 91ef9eaa855ed841bc75bfaeead462f045eb1d8b
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 8e119093800ea0a0119ba25ba38cf2eaf9afe96b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007459"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540866"
 ---
 # <a name="imetadatadispenserexopenscopeonitypeinfo-method"></a>Метод IMetaDataDispenserEx::OpenScopeOnITypeInfo
 Этот метод не реализован. При вызове возвращается E_NOTIMPL.  
@@ -38,7 +38,7 @@ HRESULT OpenScopeOnITypeInfo (
   
 ## <a name="parameters"></a>Параметры  
  `pITI`  
- окне Указатель на интерфейс [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) , предоставляющий сведения о типе, в котором следует открыть область.  
+ окне Указатель на интерфейс [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) , предоставляющий сведения о типе, в котором следует открыть область.  
   
  `dwOpenFlags`  
  окне Флаги режима открытия.  
@@ -54,11 +54,11 @@ HRESULT OpenScopeOnITypeInfo (
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)

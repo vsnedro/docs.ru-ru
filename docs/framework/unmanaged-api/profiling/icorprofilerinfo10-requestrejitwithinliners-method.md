@@ -11,12 +11,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 99b6893854c358720259095bf3c0270cb3676483
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: e3d5a09730cb8e477bd506749017a403acff1696
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452179"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540571"
 ---
 # <a name="icorprofilerinfo10requestrejitwithinliners-method"></a>Метод ICorProfilerInfo10:: Рекуестрежитвисинлинерс
 
@@ -43,26 +43,26 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 - `moduleIds`
 
-  \[в] указывает `moduleId` часть пар (`module`, `methodDef`), определяющих функции для повторной компиляции.
+  \[в] задает `moduleId` часть `module` пар (, `methodDef` ), определяющих функции для повторной компиляции.
 
 - `methodIds`
 
-  \[в] указывает `methodId` часть пар (`module`, `methodDef`), определяющих функции для повторной компиляции.
+  \[в] задает `methodId` часть `module` пар (, `methodDef` ), определяющих функции для повторной компиляции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-[Рекуестрежит](icorprofilerinfo4-requestrejit-method.md) не выполняет отслеживание встроенных методов. Профилировщик ожидал блокировать встраивание или отслеживание встраивания и вызов `RequestReJIT` для всех переходов, чтобы гарантировать, что каждый экземпляр встроенного метода был Режиттед. Это создает проблему с ReJIT при присоединении, так как профилировщик отсутствует для мониторинга встраивания. Этот метод может быть вызван, чтобы гарантировать, что полный набор Режиттед также будет недоступен.
+[Рекуестрежит](icorprofilerinfo4-requestrejit-method.md) не выполняет отслеживание встроенных методов. Профилировщик ожидал блокировать встраивание или отслеживание встраивания, а также вызов `RequestReJIT` всех строк, чтобы гарантировать, что каждый экземпляр встроенного метода был режиттед. Это создает проблему с ReJIT при присоединении, так как профилировщик отсутствует для мониторинга встраивания. Этот метод может быть вызван, чтобы гарантировать, что полный набор Режиттед также будет недоступен.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/dependencies.md?pivots=os-windows).
+**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:** [!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo10](icorprofilerinfo10-interface.md)

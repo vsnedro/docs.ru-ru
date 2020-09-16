@@ -11,12 +11,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 99706fdc3d60a5e1a7f85400c1184d5acc808e42
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: ca1643dfa980fa647164accf6432082428124acb
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77449737"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90541243"
 ---
 # <a name="icorprofilerinfo9getnativecodestartaddresses-method"></a>Метод ICorProfilerInfo9:: Жетнативекодестартаддрессес
 
@@ -36,7 +36,7 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
 
 - `functionId`
 
-  \[в] идентификатор функции, для которой должны возвращаться начальные адреса машинного кода.
+  \[in] идентификатор функции, для которой должны возвращаться начальные адреса машинного кода.
 
 - `reJitId`
 
@@ -44,7 +44,7 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
 
 - `cCodeStartAddresses`
 
-  \[в] максимальный размер массива `codeStartAddresses`.
+  \[in] максимальный размер `codeStartAddresses` массива.
 
 - `pcCodeStartAddresses`
 
@@ -52,22 +52,22 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
 
 - `codeStartAddresses`
 
-  \[out] массив `UINT_PTR`, каждый из которых является начальным адресом для заданной функции в машинном тексте.
+  \[out] массив `UINT_PTR` , каждый из которых является начальным адресом для собственного тела для указанной функции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если включена многоуровневая компиляция, функция может иметь более одного тела машинного кода.
 
 ## <a name="requirements"></a>Требования
 
-**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/dependencies.md?pivots=os-windows).
+**Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).
 
 **Заголовок:** CorProf.idl, CorProf.h
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo9](icorprofilerinfo9-interface.md)

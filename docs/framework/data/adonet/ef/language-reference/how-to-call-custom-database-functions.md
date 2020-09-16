@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 4354e5eb-dd45-469d-97fb-1c495705ee59
-ms.openlocfilehash: f3177ab98382506770c4655c62573da5c1d96c69
-ms.sourcegitcommit: 515469828d0f040e01bde01df6b8e4eb43630b06
+ms.openlocfilehash: 9879803c970b7965bf152c216367b216e201af38
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78848760"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540312"
 ---
 # <a name="how-to-call-custom-database-functions"></a>Практическое руководство. Вызов настраиваемых функций базы данных
 
@@ -24,11 +24,11 @@ ms.locfileid: "78848760"
 
 1. Создайте пользовательскую функцию в базе данных.
 
-     Для получения более подробной информации о создании пользовательских функций в сервере S'L, [см.](/sql/t-sql/statements/create-function-transact-sql)
+     Дополнительные сведения о создании пользовательских функций в SQL Server см. в разделе [CREATE FUNCTION (Transact-SQL)](/sql/t-sql/statements/create-function-transact-sql).
 
 2. Объявите функцию на языке SSDL в EDMX-файле. Имя функции должно совпадать с именем функции, объявленной в базе данных.
 
-     Для получения дополнительной информации [см.](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#function-element-ssdl)
+     Дополнительные сведения см. в разделе [элемент Function (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#function-element-ssdl).
 
 3. Добавьте соответствующий метод к классу в коде приложения и примените <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> к этому методу. Обратите внимание, что параметры атрибута <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> и <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> представляют собой имя пространства имен концептуальной модели и имя функции концептуальной модели соответственно. При разрешении имени функции для LINQ учитывается регистр.
 
@@ -36,7 +36,7 @@ ms.locfileid: "78848760"
 
 ## <a name="example"></a>Пример
 
-В следующем примере показываются процедуры вызова пользовательской функции базы данных из запроса LINQ to Entities. В этом примере используется модель School. Для получения информации о модели школы [Generating the School .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100))см. [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100))
+В следующем примере показываются процедуры вызова пользовательской функции базы данных из запроса LINQ to Entities. В этом примере используется модель School. Сведения о модели School см. в разделе [Создание образца базы данных School](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) и [Создание файла School. EDMX](/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).
 
 Следующий код добавляет функцию `AvgStudentGrade` в образец базы данных.
 
@@ -47,13 +47,13 @@ ms.locfileid: "78848760"
 
 ## <a name="example"></a>Пример
 
-Затем объявите функцию в языке определения схемы хранилища (SSDL) файла *.edmx.* Следующий код декларирует функцию `AvgStudentGrade` в SSDL:
+Затем объявите функцию на языке SSDL для *EDMX* -файла. Следующий код объявляет `AvgStudentGrade` функцию на языке SSDL:
 
 [!code-xml[DP L2E MapToDBFunction#2](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/school.edmx#2)]
 
 ## <a name="example"></a>Пример
 
-Создайте метод и сообразуйте его с функцией, заявленной в SSDL. Метод в следующем классе сопоставляется с функцией, определенной на языке SSDL (выше) с помощью <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. При вызове этого метода в базе данных выполняется соответствующая функция.
+Теперь создайте метод и сопоставьте его с функцией, объявленной в SSDL. Метод в следующем классе сопоставляется с функцией, определенной на языке SSDL (выше) с помощью <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. При вызове этого метода в базе данных выполняется соответствующая функция.
 
 [!code-csharp[DP L2E MapToDBFunction#3](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/program.cs#3)]
 [!code-vb[DP L2E MapToDBFunction#3](~/samples/snippets/visualbasic/VS_Snippets_Data/dp l2e maptodbfunction/vb/module1.vb#3)]
@@ -65,7 +65,7 @@ ms.locfileid: "78848760"
 [!code-csharp[DP L2E MapToDBFunction#4](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/program.cs#4)]
 [!code-vb[DP L2E MapToDBFunction#4](~/samples/snippets/visualbasic/VS_Snippets_Data/dp l2e maptodbfunction/vb/module1.vb#4)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Общие сведения о EDMX-файлах](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [Общие сведения о EDMX-файлах](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)
