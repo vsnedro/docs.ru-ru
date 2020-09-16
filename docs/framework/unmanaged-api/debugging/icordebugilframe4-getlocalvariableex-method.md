@@ -12,12 +12,12 @@ api_type:
 ms.assetid: 0c8676f8-ca0d-4998-b64d-fefac7e38912
 topic_type:
 - apiref
-ms.openlocfilehash: 8d6ef550309ea7f8bae616a5f7e5c41b4f07374a
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 7c43c32e10d8e10b0f843795bbc3f0f3bc20529c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213729"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544249"
 ---
 # <a name="icordebugilframe4getlocalvariableex-method"></a>Метод ICorDebugILFrame4::GetLocalVariableEx
 [Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]  
@@ -44,7 +44,7 @@ HRESULT GetLocalVariableEx(
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет извлеченное значение.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
  Этот метод аналогичен методу [жетлокалвариабле](icordebugilframe-getlocalvariable-method.md) , за исключением того, что он дополнительно получает доступ к переменной, добавленной в инструментарий профилировщика ReJIT. Вызов этого метода со `flags` значением `ILCODE_ORIGINAL_IL` эквивалентен вызову [жетлокалвариабле](icordebugilframe-getlocalvariable-method.md); если метод оснащен дополнительными локальными переменными, доступ к этим переменным невозможен. `ILCODE_REJIT_IL` обеспечивает отладчику доступ к локальным переменным, добавленным в инструментарий ReJIT профилировщика. Если промежуточный язык не инструментирован, метод возвращает значение `E_INVALIDARG`.  
   
 ## <a name="requirements"></a>Требования  
@@ -60,4 +60,4 @@ HRESULT GetLocalVariableEx(
 
 - [Интерфейс ICorDebugILFrame4](icordebugilframe4-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)
-- [ReJIT: руководство](https://docs.microsoft.com/archive/blogs/davbr/rejit-a-how-to-guide)
+- [ReJIT: руководство](/archive/blogs/davbr/rejit-a-how-to-guide)

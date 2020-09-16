@@ -2,12 +2,12 @@
 title: Доверенная фасадная служба
 ms.date: 03/30/2017
 ms.assetid: c34d1a8f-e45e-440b-a201-d143abdbac38
-ms.openlocfilehash: e7aa5e96fb8104c8140a8cebc6be45d2000821aa
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e9459b4cc26ef85adcc59c308d92491fd2d3acba
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591323"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544184"
 ---
 # <a name="trusted-facade-service"></a>Доверенная фасадная служба
 В этом образце сценария показано, как передать сведения об удостоверении вызывающего объекта из одной службы в другую с помощью инфраструктуры безопасности Windows Communication Foundation (WCF).  
@@ -276,7 +276,7 @@ Press <ENTER> to terminate client.
   
 5. Запустите программу Client.exe из каталога \client\bin. Действия клиента отображаются в консольном приложении клиента.  
   
-6. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+6. Если клиент и служба не могут обмениваться данными, см. раздел [Советы по устранению неполадок для примеров WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### <a name="to-clean-up-after-the-sample"></a>Очистка после образца  
   
@@ -289,4 +289,4 @@ Press <ENTER> to terminate client.
 >
 > Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`

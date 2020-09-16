@@ -5,17 +5,17 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6c804e4d-f348-4afd-9f63-d3f0f24bc6a9
-ms.openlocfilehash: 33f26896dd0d4ff08beb4a011fa6bd468cba7207
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 38c43fa509b5259aa94ca416aadb51b405fc5dc7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70250760"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90542402"
 ---
 # <a name="how-to-call-model-defined-functions-in-queries"></a>Практическое руководство. Вызов определенных моделью функций в запросах
 В этом разделе описывается вызов функций, определенных в концептуальной модели, из запросов LINQ to Entities.  
   
- В приведенной ниже процедуре представлен общий обзор вызова определяемой моделью функции из LINQ to Entities запроса. В следующем примере подробно описаны шаги данной процедуры. Для этой процедуры предполагается, что функция была определена в концептуальной модели. Дополнительные сведения см. в разделе [Практическое руководство. Определите пользовательские функции в концептуальной модели](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).  
+ В приведенной ниже процедуре представлен общий обзор вызова определяемой моделью функции из LINQ to Entities запроса. В следующем примере подробно описаны шаги данной процедуры. Для этой процедуры предполагается, что функция была определена в концептуальной модели. Дополнительные сведения см. в разделе [инструкции. Определение пользовательских функций в концептуальной модели](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).  
   
 ### <a name="to-call-a-function-defined-in-the-conceptual-model"></a>Вызов функции, определенной в концептуальной модели  
   
@@ -24,9 +24,9 @@ ms.locfileid: "70250760"
 2. Вызовите функцию в запросе LINQ to Entities.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как вызвать функцию, определенную в концептуальной модели, из запроса LINQ to Entities. В этом примере используется модель School. Сведения о модели School см. в разделе [Создание образца базы данных School](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) и [Создание файла School. EDMX](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).  
+ В следующем примере показано, как вызвать функцию, определенную в концептуальной модели, из запроса LINQ to Entities. В этом примере используется модель School. Сведения о модели School см. в разделе [Создание образца базы данных School](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) и [Создание файла School. EDMX](/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).  
   
- В следующей концептуальной модели функция возвращает сведения о количестве лет, истекших с момента приема инструктора на работу. Дополнительные сведения о добавлении функции в концептуальную модель см. в [разделе как Определите пользовательские функции в концептуальной модели](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).)  
+ В следующей концептуальной модели функция возвращает сведения о количестве лет, истекших с момента приема инструктора на работу. Дополнительные сведения о добавлении функции в концептуальную модель см. в разделе [инструкции. Определение пользовательских функций в концептуальной модели](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).  
   
  [!code-xml[DP ConceptualModelFunctions#1](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp conceptualmodelfunctions/xml/school.edmx#1)]
   
@@ -44,7 +44,7 @@ ms.locfileid: "70250760"
   
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения о файле EDMX](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [Общие сведения о EDMX-файлах](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)
 - [Вызов функций в запросах LINQ to Entities](calling-functions-in-linq-to-entities-queries.md)
-- [Практическое руководство. Вызов определяемых моделью функций в качестве методов объекта](how-to-call-model-defined-functions-as-object-methods.md)
+- [Практическое руководство. Вызов определенных моделью функций как методов объектов](how-to-call-model-defined-functions-as-object-methods.md)

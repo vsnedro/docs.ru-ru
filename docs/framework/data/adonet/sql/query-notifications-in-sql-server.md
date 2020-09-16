@@ -3,12 +3,12 @@ title: Уведомления запросов в SQL Server
 description: Узнайте, как использовать уведомления о запросах для уведомления приложений об изменении данных в SQL Server базе данных, например для обновления отображения приложений.
 ms.date: 03/30/2017
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
-ms.openlocfilehash: 1351c83b6cc5837115321d53e8779c0f364c3099
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 43b496db74f7e6fc9bc9f17d946bf34398b32312
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286227"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543989"
 ---
 # <a name="query-notifications-in-sql-server"></a>Уведомления запросов в SQL Server
 С помощью уведомлений о запросах, построенных на основе инфраструктуры компонента Service Broker, приложения могут получать извещения об изменениях данных. Эта функция особенно полезна для приложений, которые предоставляют кэш данных из базы данных (например, для веб-приложений), и которым требуются уведомления об изменении исходных данных.  
@@ -25,28 +25,28 @@ ms.locfileid: "84286227"
   
  Уведомления можно настроить для инструкций SELECT и EXECUTE. При использовании инструкции EXECUTE SQL Server регистрирует уведомление о выполненной команде, а не саму инструкцию EXECUTE. Команда должна соответствовать требованиям, предъявляемым к инструкции SELECT. Если регистрируемая команда состоит из нескольких инструкций, ядро СУБД создает уведомления для каждой из них.  
   
- Если вы разрабатываете приложение, в котором вам потребуются надежные отправки уведомлений при изменении данных, ознакомьтесь с разделом **планирование эффективной стратегии уведомлений о запросах** и **альтернативных способов уведомления о запросах** в статье [планирование уведомлений](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms187528(v=sql.105)) . Дополнительные сведения об уведомлениях о запросах и SQL Server Service Broker см. по следующим ссылкам на статьи в документации по SQL Server.  
+ Если вы разрабатываете приложение, в котором вам потребуются надежные отправки уведомлений при изменении данных, ознакомьтесь с разделом **планирование эффективной стратегии уведомлений о запросах** и **альтернативных способов уведомления о запросах** в статье [планирование уведомлений](/previous-versions/sql/sql-server-2008-r2/ms187528(v=sql.105)) . Дополнительные сведения об уведомлениях о запросах и SQL Server Service Broker см. по следующим ссылкам на статьи в документации по SQL Server.  
   
  **Документация по SQL Server**  
   
-- [Использование уведомлений запросов](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms175110(v=sql.105))  
+- [Использование уведомлений запросов](/previous-versions/sql/sql-server-2008-r2/ms175110(v=sql.105))  
   
-- [Создание запроса для уведомления](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
+- [Создание запроса для уведомления](/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
   
-- [Разработка (компонент Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522889(v=sql.105))  
+- [Разработка (компонент Service Broker)](/previous-versions/sql/sql-server-2008-r2/bb522889(v=sql.105))  
   
-- [Информационный центр по компоненту Service Broker для разработчиков](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms166100(v=sql.105))  
+- [Информационный центр по компоненту Service Broker для разработчиков](/previous-versions/sql/sql-server-2008-r2/ms166100(v=sql.105))  
   
-- [Руководство разработчика (компонент Service Broker)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
+- [Руководство разработчика (компонент Service Broker)](/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Включение уведомлений запросов](enabling-query-notifications.md)  
+## <a name="in-this-section"></a>в этом разделе  
+ [Включение уведомлений о запросах](enabling-query-notifications.md)  
  Описание использования уведомлений о запросах, включая требования для их включения и использования.  
   
  [SqlDependency в приложении ASP.NET](sqldependency-in-an-aspnet-app.md)  
  Демонстрирует использование уведомлений запросов из приложения ASP.NET.  
   
- [Обнаружение изменений с использованием SqlDependency](detecting-changes-with-sqldependency.md)  
+ [Обнаружение изменений с помощью SqlDependency](detecting-changes-with-sqldependency.md)  
  Сведения об определении отличия результатов запроса от изначально полученных.  
   
  [Выполнение SqlCommand с помощью SqlNotificationRequest](sqlcommand-execution-with-a-sqlnotificationrequest.md)  
