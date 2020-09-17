@@ -148,6 +148,6 @@ context.Track(customRecord);
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))
