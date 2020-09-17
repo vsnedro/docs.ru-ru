@@ -2,12 +2,12 @@
 title: Выражения запросов
 description: 'Сведения о поддержке выражений запросов для LINQ на языке программирования F #.'
 ms.date: 08/15/2020
-ms.openlocfilehash: afcc6e92818b1648a210ad9cfc3f1dcfa46037b5
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: b2380bbc448aca06a40896582f3d4e7f701c6184
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559067"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720482"
 ---
 # <a name="query-expressions"></a>Выражения запросов
 
@@ -45,7 +45,7 @@ query1
 
 В предыдущем примере кода выражение запроса заключено в фигурные скобки. Значение кода в выражении — возвращает каждого клиента в таблице Customers в базе данных в результатах запроса. Выражения запроса возвращают тип, который реализует <xref:System.Linq.IQueryable%601> и <xref:System.Collections.Generic.IEnumerable%601> , и поэтому их можно перебирать с помощью [модуля seq](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) , как показано в примере.
 
-Каждый тип вычислительного выражения строится на основе класса построителя. Класс построителя для выражения вычисления запроса имеет значение `QueryBuilder` . Дополнительные сведения см. в разделе [выражения вычисления](computation-expressions.md) и [класс QueryBuilder](hhttps://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html).
+Каждый тип вычислительного выражения строится на основе класса построителя. Класс построителя для выражения вычисления запроса имеет значение `QueryBuilder` . Дополнительные сведения см. в разделе [выражения вычисления](computation-expressions.md) и [класс QueryBuilder](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html).
 
 ## <a name="query-operators"></a>Операторы запроса
 

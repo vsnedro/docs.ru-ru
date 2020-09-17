@@ -2,12 +2,12 @@
 title: Списки
 description: 'Сведения о списках F #, упорядоченной, неизменяемой последовательности элементов одного и того же типа.'
 ms.date: 08/13/2020
-ms.openlocfilehash: 16d7195039d25cf63630f5cc3be6563b1bf45c44
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 567731eb57b77d60d3dd847630d5676e8d047d09
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559171"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720352"
 ---
 # <a name="lists"></a>Списки
 
@@ -59,12 +59,12 @@ ms.locfileid: "88559171"
 
 Тип списка поддерживает следующие свойства.
 
-|Свойство|Тип|Описание|
+|Свойство|Type|Описание|
 |--------|----|-----------|
-|[Глава](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Head)|`'T`|Первый элемент|
+|[Head](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Head)|`'T`|Первый элемент|
 |[Пустой](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Empty)|`'T list`|Статическое свойство, которое возвращает пустой список соответствующего типа.|
 |[IsEmpty](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#IsEmpty)|`bool`|`true` значение, если список не содержит элементов.|
-|[Item](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Item)|`'T`|Элемент с указанным индексом (начинается с нуля).|
+|[Элемент](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Item)|`'T`|Элемент с указанным индексом (начинается с нуля).|
 |[Длина](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Length)|`int`|Число элементов.|
 |[Tail](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Tail)|`'T list`|Список без первого элемента|
 
@@ -233,13 +233,13 @@ The first even value is at position 8.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet11.fs)]
 
-В результате получается `1.000000`.
+Результат выглядит так: `1.000000`.
 
 В следующем коде показано использование `List.averageBy`.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet12.fs)]
 
-В результате получается `5.5`.
+Результат выглядит так: `5.5`.
 
 ### <a name="lists-and-tuples"></a>Списки и кортежи
 
@@ -265,7 +265,7 @@ The first even value is at position 8.
 
 Соответствующие версии распаковать, [List. unzip](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip) и [List. unzip3](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip3), принимают списки кортежей и возвращаемых списков в кортеже, где первый список содержит все элементы, которые были первыми в каждом кортеже, а второй список содержит второй элемент каждого кортежа и т. д.
 
-В следующем примере кода показано использование [List. unzip](https://msdn.microsoft.com/library/639db80c-41b5-45bb-a6b4-1eaa04d61d21).
+В следующем примере кода показано использование [List. unzip](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip).
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet15.fs)]
 
@@ -276,7 +276,7 @@ The first even value is at position 8.
 [1; 3] [2; 4]
 ```
 
-В следующем примере кода показано использование [List. unzip3](https://msdn.microsoft.com/library/43078c77-32ec-4342-85b3-c31ccf984db4).
+В следующем примере кода показано использование [List. unzip3](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip3).
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet16.fs)]
 

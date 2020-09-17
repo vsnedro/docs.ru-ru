@@ -2,12 +2,12 @@
 title: Асинхронные рабочие потоки
 description: 'Узнайте о поддержке в языке программирования F # для асинхронного выполнения вычислений, которые выполняются без блокировки выполнения другой работы.'
 ms.date: 08/15/2020
-ms.openlocfilehash: ac727fc630f13db01da964131ab39dc242a12cd1
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 14146cc8a643f31831475075212cc06da5f8d6ff
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557715"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720274"
 ---
 # <a name="asynchronous-workflows"></a>Асинхронные рабочие процессы
 
@@ -44,7 +44,7 @@ let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
 
 Метод, выполняющий одну асинхронную задачу и возвращающий результат, называется *асинхронным примитивом*, и они предназначены специально для использования с `let!` . В основной библиотеке F # определены несколько асинхронных примитивов. Два таких метода для веб-приложений определяются в модуле [`FSharp.Control.WebExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html) : [`WebRequest.AsyncGetResponse`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncGetResponse) и [`WebClient.AsyncDownloadString`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncDownloadString) . Оба примитива загружают данные с веб-страницы по указанному URL-адресу. `AsyncGetResponse` создает `System.Net.WebResponse` объект и `AsyncDownloadString` создает строку, ПРЕДСТАВЛЯЮЩУЮ код HTML для веб-страницы.
 
-В модуль включаются несколько примитивов для асинхронных операций ввода-вывода [`FSharp.Control.CommonExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html) . Эти методы расширения `System.IO.Stream` класса являются [`Stream.AsyncRead`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncRead) и [`Stream.AsyncWrite`](hhttps://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncWrite) .
+В модуль включаются несколько примитивов для асинхронных операций ввода-вывода [`FSharp.Control.CommonExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html) . Эти методы расширения `System.IO.Stream` класса являются [`Stream.AsyncRead`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncRead) и [`Stream.AsyncWrite`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncWrite) .
 
 Можно также написать собственные асинхронные примитивы, определив функцию, полный текст которой заключен в блок async.
 
@@ -66,4 +66,4 @@ let! (result2 : byte[])  = stream.AsyncRead(bufferSize)
 
 - [Справочник по языку F#](index.md)
 - [Выражения вычисления](computation-expressions.md)
-- [Класс Control. Async](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.async-class-%5bfsharp%5d)
+- [Класс Control. Async](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html)

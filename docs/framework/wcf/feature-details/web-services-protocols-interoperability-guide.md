@@ -2,16 +2,16 @@
 title: Рекомендации по взаимодействию протоколов веб-служб
 ms.date: 03/30/2017
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
-ms.openlocfilehash: 4169a796311c402a97358de5d52c52562b6ed357
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f35ca629da65af749897d28d28808d06eced7aa8
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553178"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720118"
 ---
 # <a name="web-services-protocols-interoperability-guide"></a>Рекомендации по взаимодействию протоколов веб-служб
 
-Windows Communication Foundation (WCF) реализует ряд протоколов веб-служб. Многие из этих протоколов предусматривают ряд параметров и точек расширяемости, оставляемых на усмотрение реализующего субъекта. В этом разделе содержится список протоколов веб-служб, реализованных в WCF. В остальных подразделах содержатся подробности о реализации каждого поддерживаемого протокола.
+Windows Communication Foundation (WCF) реализует ряд протоколов веб-служб. Многие из этих протоколов предусматривают ряд параметров и точек расширяемости, оставляемых на усмотрение реализующего субъекта. В этой статье представлен список протоколов веб-служб, реализованных в WCF. Другие статьи в этом разделе содержат сведения о реализации для каждого поддерживаемого протокола.
 
 ## <a name="web-services-protocols-implemented-by-wcf"></a>Протоколы веб-служб, реализованные WCF
 
@@ -64,9 +64,9 @@ WCF обеспечивает поддержку протоколов инфра�
 |WSS: X509 Token Profile 1.1|[Web Services Security X.509 Certificate Token Profile 1.1](https://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf)|
 |WSS: Kerberos Token Profile 1.1|[Web Services Security Kerberos Token Profile 1.1](https://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf)|
 |WSS: SAML 1.1 Token Profile 1.1|[Web Services Security SAML Token Profile 1.1](https://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf)|
-|WS-Secure Conversation|[Web Services Secure Conversation Language](https://specs.xmlsoap.org/ws/2005/02/sc/ws-secureconversation.pdf)|
+|WS-Secure Conversation|[Web Services Secure Conversation Language](http://specs.xmlsoap.org/ws/2005/02/sc/ws-secureconversation.pdf)|
 |WS-Trust 1.4|[Web Services Trust Language](https://docs.oasis-open.org/ws-sx/ws-trust/200802)|
-|WS-SecurityPolicy 2005/07|[Web Services Secure Conversation Language](https://specs.xmlsoap.org/ws/2005/02/sc/ws-secureconversation.pdf)<br /><br /> (С учетом списка ошибок, переданных в технический комитет OASIS WS-SX.)<br /><br /> [ws-sx message](https://lists.oasis-open.org/archives/ws-sx/200512/msg00017.html)|
+|WS-SecurityPolicy 2005/07|[Web Services Secure Conversation Language](http://specs.xmlsoap.org/ws/2005/02/sc/ws-secureconversation.pdf)<br /><br /> (С учетом списка ошибок, переданных в технический комитет OASIS WS-SX.)<br /><br /> [ws-sx message](https://lists.oasis-open.org/archives/ws-sx/200512/msg00017.html)|
 |WS-ReliableMessaging 1.1|[Протокол надежного обмена сообщениями, версия 1,1](reliable-messaging-protocol-version-1-1.md)|
 
 Элемент привязки <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> поддерживает спецификации, приведенные в следующей таблице.
@@ -74,7 +74,7 @@ WCF обеспечивает поддержку протоколов инфра�
 |Спецификация/документ|Ссылка|
 |-----------------------------|----------|
 |WS-Coordination|[Web Services Coordination](/previous-versions/ms951231(v=msdn.10))|
-|WS-AtomicTransaction|[Web Services Atomic Transaction](https://specs.xmlsoap.org/ws/2004/10/wsat/wsat.pdf)|
+|WS-AtomicTransaction|[Web Services Atomic Transaction](http://specs.xmlsoap.org/ws/2004/10/wsat/wsat.pdf)|
 
 Классы <xref:System.ServiceModel.Description.MetadataExporter>, <xref:System.ServiceModel.Description.MetadataImporter>, <xref:System.ServiceModel.Description.WsdlExporter>, <xref:System.ServiceModel.Description.WsdlImporter> и <xref:System.ServiceModel.Description.MetadataResolver> обеспечивают поддержку следующих спецификаций метаданных.
 
@@ -90,7 +90,7 @@ WCF обеспечивает поддержку протоколов инфра�
 
 - [WS-PolicyAttachment 1.2](https://www.w3.org/Submission/2006/SUBM-WS-PolicyAttachment-20060425/)
 
-- [WS-MetadataExchange 1.1](https://specs.xmlsoap.org/ws/2004/09/mex/WS-MetadataExchange.pdf)
+- [WS-MetadataExchange 1.1](http://specs.xmlsoap.org/ws/2004/09/mex/WS-MetadataExchange.pdf)
 
 - [WS-Transfer Get для извлечения метаданных](https://www.w3.org/Submission/2006/SUBM-WS-Transfer-20060315/)
 
@@ -102,7 +102,7 @@ WCF обеспечивает поддержку протоколов инфра�
 
 - [Basic Security Profile 1.0 Working Draft](http://www.ws-i.org/Profiles/BasicSecurityProfile-1.0-2006-03-29.html)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Протоколы веб-служб, поддерживаемые предоставляемыми системой привязками](web-services-protocols-supported-by-system-provided-interoperability-bindings.md)
 - [Протоколы обмена сообщениями](messaging-protocols.md)
