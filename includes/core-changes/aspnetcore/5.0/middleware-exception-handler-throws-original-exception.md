@@ -1,0 +1,57 @@
+---
+ms.openlocfilehash: 26e521a86b504824f035ad5d40e4a04d2ea26abc
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022975"
+---
+### <a name="middleware-exception-handler-middleware-throws-original-exception-if-handler-not-found"></a>ПО промежуточного слоя: ПО промежуточного слоя обработчика исключений создает исходное исключение, если обработчик не найден
+
+В версиях, предшествующих ASP.NET Core 5.0, [ПО промежуточного слоя обработчика исключений](xref:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler%2A) выполняет настроенный обработчик исключений при возникновении исключения. Если обработчик исключений, настроенный с помощью <xref:Microsoft.AspNetCore.Builder.ExceptionHandlerOptions.ExceptionHandlingPath>, не найден, создается ответ HTTP 404. Ответ является ошибочным в том, что:
+
+* Ошибка, похоже, вызвана пользователем.
+* Сообщение не отображает тот факт, что на сервере произошло исключение.
+
+Чтобы устранить ошибку, возникшую в ASP.NET Core 5.0, `ExceptionHandlerMiddleware` создает исходное исключение, если не удается найти обработчик исключений. В результате на сервере создается ответ HTTP 500. Ответ будет проще изучить в журналах сервера при отладке возникшей ошибки.
+
+Обсуждение этого вопроса см. на странице GitHub [dotnet/aspnetcore#25288](https://github.com/dotnet/aspnetcore/issues/25288).
+
+#### <a name="version-introduced"></a>Представленная версия
+
+5.0 RC 1
+
+#### <a name="old-behavior"></a>Старое поведение
+
+ПО промежуточного слоя обработчика исключений создает ответ HTTP 404, если не удается найти настроенный обработчик исключений.
+
+#### <a name="new-behavior"></a>Новое поведение
+
+ПО промежуточного слоя обработчика исключений создает исходное исключение, если не удается найти настроенный обработчик исключений.
+
+#### <a name="reason-for-change"></a>Причина изменения
+
+Ошибка HTTP 404 не позволяет понять, что на сервере возникло исключение. Это изменение выдает ошибку HTTP 500, чтобы сделать это очевидным:
+
+* Проблема не вызвана ошибкой пользователя.
+* На сервере обнаружено исключение.
+
+#### <a name="recommended-action"></a>Рекомендованное действие
+
+Изменения в API не требуются. Все существующие приложения будут по прежнему компилироваться и выполняться. Созданное исключение обрабатывается сервером. Например, исключение преобразуется в ответ об ошибке HTTP 500 [Kestrel](/aspnet/core/fundamentals/servers/kestrel) или [HTTP.sys](/aspnet/core/fundamentals/servers/httpsys).
+
+#### <a name="category"></a>Категория
+
+ASP.NET Core
+
+#### <a name="affected-apis"></a>Затронутые API
+
+None
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis
+
+-->

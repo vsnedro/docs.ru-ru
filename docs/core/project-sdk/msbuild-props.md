@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 39cbd18121d2b8659b2f5270f39624798f4ebbdc
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: c1093a0acd5b75ae6478767d690966a30fe84a31
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810528"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656266"
 ---
 # <a name="msbuild-reference-for-net-core-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET Core
 
@@ -26,7 +26,7 @@ ms.locfileid: "88810528"
 
 ### <a name="targetframework"></a>TargetFramework
 
-Свойство `TargetFramework` определяет версию целевой платформы для приложения. Список допустимых моникеров целевой платформы см. в статье [Целевые платформы в проектах в стиле SDK](../../standard/frameworks.md#supported-target-framework-versions).
+Свойство `TargetFramework` определяет версию целевой платформы для приложения. Список допустимых моникеров целевой платформы см. в статье [Целевые платформы в проектах в стиле SDK](../../standard/frameworks.md#supported-target-frameworks).
 
 ```xml
 <PropertyGroup>
@@ -38,7 +38,7 @@ ms.locfileid: "88810528"
 
 ### <a name="targetframeworks"></a>TargetFrameworks
 
-Используйте свойство `TargetFrameworks`, если приложение должно быть предназначено для нескольких платформ. Список допустимых моникеров целевой платформы см. в статье [Целевые платформы в проектах в стиле SDK](../../standard/frameworks.md#supported-target-framework-versions).
+Используйте свойство `TargetFrameworks`, если приложение должно быть предназначено для нескольких платформ. Список допустимых моникеров целевой платформы см. в статье [Целевые платформы в проектах в стиле SDK](../../standard/frameworks.md#supported-target-frameworks).
 
 > [!NOTE]
 > Это свойство игнорируется, если указано свойство `TargetFramework` (в единственном числе).
@@ -188,9 +188,27 @@ ms.locfileid: "88810528"
 | `5.0` | Используется набор правил, включенных для выпуска .NET 5.0, даже если доступны новые правила. |
 | `5` | Используется набор правил, включенных для выпуска .NET 5.0, даже если доступны новые правила. |
 
+### <a name="analysismode"></a>AnalysisMode
+
+Начиная с .NET 5.0 RC2 пакет SDK для .NET поставляется со всеми [правилами качества кода "CA"](/visualstudio/code-quality/code-analysis-for-managed-code-warnings). По умолчанию в качестве предупреждений сборки включены только [некоторые правила](../../fundamentals/productivity/code-analysis.md#enabled-rules). Свойство `AnalysisMode` позволяет настроить набор правил, включенных по умолчанию. Можно либо переключиться на более агрессивный (неявный) режим анализа, либо более консервативный (явный) режим анализа. Например, если вы хотите включить все правила по умолчанию как предупреждения сборки, установите значение `AllEnabledByDefault`.
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+</PropertyGroup>
+```
+
+В следующей таблице приведены доступные параметры.
+
+| Значение | Значение |
+|-|-|
+| `Default` | Режим по умолчанию, при котором определенные правила включаются в виде предупреждений сборки, некоторые правила включаются в качестве предложений интегрированной среды разработки Visual Studio, а остальные отключаются. |
+| `AllEnabledByDefault` | Агрессивный или неявный режим означает, что все правила по умолчанию включены как предупреждения сборки. Вы можете выборочно [отказаться](../../fundamentals/productivity/configure-code-analysis-rules.md) от отдельных правил, чтобы отключить их. |
+| `AllDisabledByDefault` | Консервативный или явный режим означает, что все правила по умолчанию отключены. Можно выборочно [принять](../../fundamentals/productivity/configure-code-analysis-rules.md) отдельные правила, чтобы включить их. |
+
 ### <a name="codeanalysistreatwarningsaserrors"></a>CodeAnalysisTreatWarningsAsErrors
 
-Свойство `CodeAnalysisTreatWarningsAsErrors` позволяет настроить, следует ли обрабатывать предупреждения анализа кода как предупреждения и прекращать сборку. Если при построении проектов используется флаг `-warnaserror`, предупреждения [анализа кода .NET](../../fundamentals/productivity/code-analysis.md) также обрабатываются как ошибки. Если вы хотите, чтобы предупреждения компилятора обрабатывались как ошибки, можно задать для свойства MSBuild `CodeAnalysisTreatWarningsAsErrors` значение `false` в файле проекта.
+Свойство `CodeAnalysisTreatWarningsAsErrors` позволяет настроить, следует ли обрабатывать предупреждения анализа качества кода (CAxxxx) как предупреждения и прекращать сборку. Если при построении проектов используется флаг `-warnaserror`, предупреждения [анализа качества кода .NET](../../fundamentals/productivity/code-analysis.md#code-quality-analysis) также обрабатываются как ошибки. Если вы не хотите, чтобы предупреждения качества кода обрабатывались как ошибки, можно задать для свойства MSBuild `CodeAnalysisTreatWarningsAsErrors` значение `false` в файле проекта.
 
 ```xml
 <PropertyGroup>
@@ -200,7 +218,7 @@ ms.locfileid: "88810528"
 
 ### <a name="enablenetanalyzers"></a>EnableNETAnalyzers
 
-Для проектов, предназначенных для .NET 5.0 или более поздней версии, по умолчанию включен [анализ кода .NET](../../fundamentals/productivity/code-analysis.md). Вы можете включить анализ кода .NET для проектов, предназначенных для более ранних версий .NET, установив для свойства `EnableNETAnalyzers` значение true. Чтобы отключить анализ кода в любом проекте, присвойте этому свойству значение `false`.
+Для проектов, предназначенных для .NET 5.0 или более поздней версии, по умолчанию включен [анализ качества кода .NET](../../fundamentals/productivity/code-analysis.md#code-quality-analysis). Вы можете включить анализ кода .NET для проектов, предназначенных для более ранних версий .NET, установив для свойства `EnableNETAnalyzers` значение `true`. Чтобы отключить анализ кода в любом проекте, присвойте этому свойству значение `false`.
 
 ```xml
 <PropertyGroup>
@@ -210,6 +228,18 @@ ms.locfileid: "88810528"
 
 > [!TIP]
 > Другой способ включить анализ кода .NET для проектов, предназначенных для версий .NET до .NET 5.0, — задать для свойства [AnalysisLevel](#analysislevel) значение `latest`.
+
+### <a name="enforcecodestyleinbuild"></a>EnforceCodeStyleInBuild
+
+[Анализ стиля кода .NET](../../fundamentals/productivity/code-analysis.md#code-style-analysis) по умолчанию отключен при сборке для всех проектов .NET. Можно включить анализ стиля кода для проектов .NET, задав для свойства `EnforceCodeStyleInBuild` значение `true`.
+
+```xml
+<PropertyGroup>
+  <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+</PropertyGroup>
+```
+
+Все правила стиля кода, которые [настроены](../../fundamentals/productivity/code-analysis.md#code-style-analysis) как предупреждения или ошибки, будут выполняться при нарушениях сборки и отчета.
 
 ## <a name="run-time-configuration-properties"></a>Свойства конфигурации среды выполнения
 
@@ -327,7 +357,7 @@ ms.locfileid: "88810528"
 
 Свойство `AssetTargetFallback` позволяет указать дополнительные совместимые версии платформы для ссылок на проекты и пакетов NuGet. Например, если вы указали зависимость пакета с помощью `PackageReference`, но в этом пакете нет ресурсов, совместимых с `TargetFramework` вашего проекта, тогда пригодится свойство `AssetTargetFallback`. Совместимость пакета, на который указывает ссылка, повторно проверяется с помощью каждой целевой платформы, указанной в свойстве `AssetTargetFallback`.
 
-В качестве значения свойства `AssetTargetFallback` можно задать одну [версию целевой платформы](../../standard/frameworks.md#supported-target-framework-versions) или несколько.
+В качестве значения свойства `AssetTargetFallback` можно задать одну [версию целевой платформы](../../standard/frameworks.md#supported-target-frameworks) или несколько.
 
 ```xml
 <PropertyGroup>

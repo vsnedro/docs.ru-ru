@@ -2,15 +2,15 @@
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
 description: В этой статье приведен список критических изменений в ASP.NET Core.
-ms.date: 08/25/2020
+ms.date: 09/09/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 443494291f4ec58aecd7c8d8ed42cb4086e64095
-ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
+ms.openlocfilehash: 2af0cc6721b66b1d07b196e4ba330f8425c14752
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88957734"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022991"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
@@ -76,6 +76,7 @@ ASP.NET Core предоставляет функции разработки ве
 - [Локализация. Удален класс ResourceManagerWithCultureStringLocalizer и элемент интерфейса WithCulture](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Ведение журнала. Класс DebugLogger стал внутренним](#logging-debuglogger-class-made-internal)
 - [ПО промежуточного слоя. Страница ошибок базы данных помечена как устаревшая](#middleware-database-error-page-marked-as-obsolete)
+- [ПО промежуточного слоя. ПО промежуточного слоя обработчика исключений создает исходное исключение, если обработчик не найден](#middleware-exception-handler-middleware-throws-original-exception-if-handler-not-found)
 - [MVC. Удален асинхронный суффикс действия контроллера](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC. JsonResult перемещен в Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
 - [MVC. Использование средства предварительной компиляции прекращено](#mvc-precompilation-tool-deprecated)
@@ -171,6 +172,10 @@ ASP.NET Core предоставляет функции разработки ве
 ***
 
 [!INCLUDE[Middleware: Database error page marked as obsolete](~/includes/core-changes/aspnetcore/5.0/middleware-database-error-page-obsolete.md)]
+
+***
+
+[!INCLUDE[Middleware: Exception Handler Middleware throws original exception if handler not found](~/includes/core-changes/aspnetcore/5.0/middleware-exception-handler-throws-original-exception.md)]
 
 ***
 

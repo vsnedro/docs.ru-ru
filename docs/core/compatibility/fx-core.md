@@ -1,18 +1,18 @@
 ---
 title: Критические изменения, миграция с .NET Framework на .NET Core
 titleSuffix: ''
-description: Список критических изменений, миграция с .NET Framework на .NET Core.
+description: Список критических изменений, миграция с .NET Framework на .NET Core версий 1.0–3.1.
 ms.date: 05/05/2020
-ms.openlocfilehash: e9fa37dba89bbd6c4829614c27cb66206069fa9b
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 5904a359813b6d07bd2a27d882ade4395efe3256
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414463"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656370"
 ---
 # <a name="breaking-changes-for-migration-from-net-framework-to-net-core"></a>Критические изменения для миграции с .NET Framework на .NET Core
 
-Если вы переносите приложение с .NET Framework на .NET Core, критические изменения, перечисленные в этой статье, могут повлиять на работу приложения. Критические изменения сгруппированы по категориям, а в этих категориях — по версии .NET Core, в которых они были представлены.
+Если вы переносите приложение с .NET Framework на .NET Core версий 1.0–3.1, критические изменения, перечисленные в этой статье, могут повлиять на работу приложения. Критические изменения сгруппированы по категориям, а в этих категориях — по версии .NET Core, в которых они были представлены.
 
 > [!NOTE]
 > Эта статья не является исчерпывающим списком критических изменений между .NET Framework и .NET Core. Здесь добавляются самые важные критические изменения, как только мы о них узнаем.
@@ -72,17 +72,10 @@ ms.locfileid: "89414463"
 ## <a name="networking"></a>Сети
 
 - [WebClient.CancelAsync не всегда сразу отменяет запрос](#webclientcancelasync-doesnt-always-cancel-immediately)
-- [Алгоритмы обработки путей класса Cookie приведены в соответствие с RFC 6265](#cookie-path-handling-now-conforms-to-rfc-6265)
 
 ### <a name="net-core-20"></a>.NET Core 2.0;
 
 [!INCLUDE [behavior-change-webclient-cancelasync](../../../includes/core-changes/networking/2.0/behavior-change-webclient-cancelasync.md)]
-
-***
-
-### <a name="net-50"></a>.NET 5.0
-
-[!INCLUDE [cookie-path-conforms-to-rfc6265](../../../includes/core-changes/networking/5.0/cookie-path-conforms-to-rfc6265.md)]
 
 ***
 

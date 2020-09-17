@@ -13,11 +13,12 @@ helpviewer_keywords:
 - LoadWithPartialName method
 - load-from context
 ms.assetid: 68d1c539-6a47-4614-ab59-4b071c9d4b4c
-ms.openlocfilehash: 8ee5243258ea1b853b4690b79ec032c46d1b3777
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 03d2cacea4d2c0e7452240df30350d93ce79282d
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803511"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656149"
 ---
 # <a name="best-practices-for-assembly-loading"></a>Рекомендации для загрузки сборок
 В этой статье рассматриваются способы избежания проблем с идентификацией типов, способных привести к исключениям <xref:System.InvalidCastException>, <xref:System.MissingMethodException> и другим ошибкам. В статье рассматриваются следующие рекомендации:  
@@ -62,7 +63,7 @@ ms.locfileid: "85803511"
   
  Загрузка сборок с помощью метода <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> или другого метода, использующего для загрузки путь, имеет следующие недостатки:  
   
-- Если сборка с тем же идентификатором уже загружена, метод <xref:System.Reflection.Assembly.LoadFrom%2A> возвращает загруженную сборку даже в том случае, если был задан другой путь.  
+- Если сборка с тем же идентификатором уже загружена в контекст выполнения, метод <xref:System.Reflection.Assembly.LoadFrom%2A> возвращает загруженную сборку даже в том случае, если был задан другой путь.  
   
 - Если сборка загружается с использованием метода <xref:System.Reflection.Assembly.LoadFrom%2A>, после чего сборка в контексте загрузки по умолчанию предпринимает попытку загрузить ту же сборку по отображаемому имени, попытка загрузки завершится неудачей. Это может произойти при десериализации сборки.  
   

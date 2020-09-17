@@ -6,12 +6,12 @@ ms.author: wiwagn
 ms.date: 05/22/2017
 ms.technology: dotnet-standard
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-ms.openlocfilehash: 61d4792b1f1b92dd59442ee38810da96c6cf63bd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a44c3692dc9ed9b3de37955191edfb279403f152
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78241147"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89516025"
 ---
 # <a name="tour-of-net"></a>Обзор .NET
 
@@ -115,7 +115,7 @@ ms.locfileid: "78241147"
 
 LINQ — это эффективный набор функций для C# и Visual Basic, которые позволяют писать простой и декларативный код для работы с данными. Данные могут быть представлены разными формами (например, объектами в памяти, содержимым базы данных SQL или XML-документом), но обычно создаваемый код LINQ не отличается для каждого из источников данных.
 
-Для получения дополнительных сведений и ознакомления с примерами см. раздел [Синтаксис LINQ](using-linq.md).
+Дополнительные сведения и примеры см. в статье [Встроенный язык запросов LINQ](./linq/index.md).
 
 ## <a name="native-interoperability"></a>Взаимодействие на уровне машинного кода
 

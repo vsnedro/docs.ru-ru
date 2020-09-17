@@ -2,12 +2,12 @@
 title: Контейнеризация монолитных приложений
 description: Хотя контейнеризация монолитных приложений не пользуется всеми преимуществами архитектуры микрослужб, но имеет важные плюсы при развертывании, которые можно использовать сразу.
 ms.date: 01/30/2020
-ms.openlocfilehash: 0e6f7504a91d2b1a89193471746168fc34f50956
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b26a9b79ec00ba06404a12d62343ea31d67151cb
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77503290"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022887"
 ---
 # <a name="containerizing-monolithic-applications"></a>Контейнеризация монолитных приложений
 

@@ -3,19 +3,19 @@ title: Реализация метода DisposeAsync
 description: Узнайте, как реализовать методы DisposeAsync и DisposeAsyncCore для выполнения асинхронной очистки ресурсов.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/25/2020
+ms.date: 09/10/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 helpviewer_keywords:
 - DisposeAsync method
 - garbage collection, DisposeAsync method
-ms.openlocfilehash: 268cea7584040ad92e2da75e5e03112480cda93c
-ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
+ms.openlocfilehash: 88adf9e484baa0e65e2ff093b4649cf35b8c86dc
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89053182"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022913"
 ---
 # <a name="implement-a-disposeasync-method"></a>Реализация метода DisposeAsync
 
@@ -70,6 +70,18 @@ public async ValueTask DisposeAsync()
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/disposeasync.cs":::
 
 В предшествующем примере используется <xref:System.Text.Json.Utf8JsonWriter>. Дополнительные сведения о `System.Text.Json` см. в статье [Как выполнить миграцию с Newtonsoft.Json на System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
+
+## <a name="implement-both-dispose-and-async-dispose-patterns"></a>Реализация шаблонов освобождения и асинхронного освобождения
+
+Может потребоваться реализовать оба интерфейса <xref:System.IDisposable> и <xref:System.IAsyncDisposable>, особенно если область класса содержит экземпляры этих реализаций. Это гарантирует правильную каскадную очистку вызовов. Ниже приведен пример класса, который реализует оба интерфейса и демонстрирует соответствующие рекомендации по очистке.
+
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/dispose-and-disposeasync.cs":::
+
+Реализации <xref:System.IDisposable.Dispose?displayProperty=nameWithType> и <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> являются простым шаблонным кодом. Методы `Dispose(bool)` и `DisposeAsyncCore()` начинаются с проверки того, что `_disposed` является `true`, и они будут выполняться только при `false`.
+
+В методе перегрузки `Dispose(bool)` экземпляр <xref:System.IDisposable> условно удаляется, если он не `null`. Экземпляр <xref:System.IAsyncDisposable> приводится к типу <xref:System.IDisposable> и, если он не `null`, также удаляется. Затем оба экземпляра назначаются `null`.
+
+В методе `DisposeAsyncCore()` используется один и тот же логический подход. Если экземпляр <xref:System.IAsyncDisposable> не является `null`, то будет ожидаться его вызов `DisposeAsync().ConfigureAwait(false)`. Если экземпляр <xref:System.IDisposable> также является реализацией <xref:System.IAsyncDisposable>, он также освобождается асинхронно. Затем оба экземпляра назначаются `null`.
 
 ## <a name="using-async-disposable"></a>Использование интерфейса асинхронного высвобождения
 

@@ -31,12 +31,12 @@ helpviewer_keywords:
 - ^ operator [C#]
 - bitwise logical OR operator [C#]
 - '| operator [C#]'
-ms.openlocfilehash: 99181855fdf8e937676e44e8b347510f9405aa3d
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 061abc8bc37d166a3683be1d2ad920a083a8ea3b
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916905"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89515947"
 ---
 # <a name="bitwise-and-shift-operators-c-reference"></a>Побитовые операторы и операторы сдвига (справочник по C#)
 
@@ -96,7 +96,7 @@ ms.locfileid: "87916905"
 
 ## <a name="logical-and-operator-amp"></a><a name="logical-and-operator-"></a> Оператор логического И &amp;
 
-Оператор `&` вычисляет побитовое логическое И своих операндов:
+Оператор `&` вычисляет побитовое логическое И целочисленных операндов:
 
 [!code-csharp-interactive[bitwise AND](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseAnd)]
 
@@ -104,7 +104,7 @@ ms.locfileid: "87916905"
 
 ## <a name="logical-exclusive-or-operator-"></a>Оператор логического исключения ИЛИ ^
 
-Оператор `^` вычисляет побитовое логическое исключающее ИЛИ, также известное как побитовое логическое XOR, своих операндов:
+Оператор `^` вычисляет побитовое логическое исключающее ИЛИ, также известное как побитовое логическое XOR, своих целочисленных операндов:
 
 [!code-csharp-interactive[bitwise XOR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseXor)]
 
@@ -112,7 +112,7 @@ ms.locfileid: "87916905"
 
 ## <a name="logical-or-operator-"></a>Оператор логического ИЛИ |
 
-Оператор `|` вычисляет побитовое логическое ИЛИ своих операндов:
+Оператор `|` вычисляет побитовое логическое ИЛИ своих целочисленных операндов:
 
 [!code-csharp-interactive[bitwise OR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseOr)]
 

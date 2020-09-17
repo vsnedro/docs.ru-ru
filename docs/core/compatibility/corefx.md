@@ -2,12 +2,12 @@
 title: Критические изменения в библиотеке базовых классов
 description: В этой статье приведен список критических изменений в основных библиотеках .NET.
 ms.date: 07/27/2020
-ms.openlocfilehash: d8d886785ff71f22a3b2da65e973d899cf0371f6
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: c73909514bc738387a21f5ea68defe49c6a2c839
+ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465895"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598175"
 ---
 # <a name="core-net-libraries-breaking-changes"></a>Критические изменения в основных библиотеках .NET
 
@@ -17,6 +17,7 @@ ms.locfileid: "89465895"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Thread.Abort устарел](#threadabort-is-obsolete) | 5.0 |
 | [Устаревшие свойства ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5.0 |
 | [Встроенные проверки IsSupported, поддерживаемые оборудованием, могут отличаться для вложенных типов](#hardware-intrinsic-issupported-checks-may-differ-for-nested-types) | 5.0 |
 | [В ссылочных сборках изменились имена параметров](#parameter-names-changed-in-reference-assemblies) | 5.0 |
@@ -52,6 +53,10 @@ ms.locfileid: "89465895"
 | [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [thread-abort-obsolete](../../../includes/core-changes/corefx/5.0/thread-abort-obsolete.md)]
+
+***
 
 [!INCLUDE [obsolete-consoleloggeroptions-properties](../../../includes/core-changes/corefx/5.0/obsolete-consoleloggeroptions-properties.md)]
 

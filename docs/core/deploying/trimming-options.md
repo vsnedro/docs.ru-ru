@@ -4,16 +4,16 @@ description: Узнайте, как управлять обрезкой авто
 author: sbomer
 ms.author: svbomer
 ms.date: 08/25/2020
-ms.openlocfilehash: 42e98f9ede004f06221d2df5ecd076500061e37d
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 89bd195a97c2f1bbbba9199fea51c917c4e4836b
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465420"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89515836"
 ---
 # <a name="trimming-options"></a>Параметры обрезки
 
-Следующие свойства и элементы MSBuild влияют на поведение [обрезанных автономных развертываний](trim-self-contained.md). Некоторые параметры упоминают `ILLink`, то есть имя базового инструмента, реализующего обрезку. Дополнительные сведения о программе командной строки `ILLink` см. в разделе [Параметры illink](https://github.com/mono/linker/blob/master/docs/illink-options.md).
+Следующие свойства и элементы MSBuild влияют на поведение [обрезанных автономных развертываний](trim-self-contained.md). Некоторые параметры упоминают `ILLink`, то есть имя базового инструмента, реализующего обрезку. Дополнительные сведения о базовом средстве можно найти в [документации по компоновщику](https://github.com/mono/linker/tree/master/docs).
 
 ## <a name="enable-trimming"></a>Включение обрезки
 
@@ -129,3 +129,37 @@ ms.locfileid: "89465420"
     Удалите символы из обрезанного приложения, включая внедренные PDB-файлы и отдельные PDB. Это относится как к коду приложения, так и к любым зависимостям, которые входят в состав символов.
 
 Пакет SDK также позволяет отключить поддержку отладчика, используя свойство `DebuggerSupport`. Если поддержка отладчика отключена, то при обрезке символы автоматически удаляются (`TrimmerRemoveSymbols` по умолчанию принимает значение true).
+
+## <a name="trimming-framework-library-features"></a>Усечение функций библиотеки инфраструктуры
+
+Несколько функциональных возможностей библиотек платформы поставляются с директивами компоновщика, которые позволяют удалить код для отключенных функций.
+
+- `<DebuggerSupport>false</DebuggerSupport>`
+
+    Удалите код, обеспечивающий лучшую отладку. Это также приведет к [удалению символов](#removing-symbols).
+
+- `<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>`
+
+    Удалите поддержку сериализации BinaryFormatter. Дополнительные сведения см. в разделе [Методы сериализации BinaryFormatter устарели](../compatibility/corefx.md#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps).
+
+- `<EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>`
+
+    Удалите небезопасный код кодировки UTF-7. Дополнительные сведения см. в разделе [Пути к коду в кодировке UTF-7 устарели](../compatibility/corefx.md#utf-7-code-paths-are-obsolete).
+
+- `<EventSourceSupport>false</EventSourceSupport>`
+
+    Удалите код или логику, связанную с EventSource.
+
+- `<HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>`
+
+    Удалите код, связанный с поддержкой диагностики для System.Net.Http.
+
+- `<InvariantGlobalization>true</InvariantGlobalization>`
+
+    Удалите код и данные, связанные с глобализацией. Дополнительные сведения см. в разделе [Инвариантный режим](../run-time-config/globalization.md#invariant-mode).
+
+- `<UseSystemResourceKeys>true</UseSystemResourceKeys>`
+
+    Удалите сообщения об исключениях для сборок `System.*`. При возникновении исключения из сборки `System.*` сообщение будет содержать упрощенный идентификатор ресурса вместо полного сообщения.
+
+ Эти свойства приведут к усечению связанного кода, а также к отключению функций через файл [runtimeconfig](../run-time-config/index.md). Дополнительные сведения об этих свойствах, включая соответствующие параметры runtimeconfig, см. в разделе, посвященном [переключению функций](https://github.com/dotnet/runtime/blob/master/docs/workflow/trimming/feature-switches.md). Некоторые пакеты SDK могут иметь значения по умолчанию для этих свойств.
