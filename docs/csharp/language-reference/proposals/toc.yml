@@ -100,7 +100,7 @@
           href: ../../../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
         - name: Статические анонимные функции
           href: ../../../../_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
-        - name: Условное выражение целевого типа
+        - name: Условное выражение с целевым типом
           href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
         - name: Ковариантные возвращаемые типы
           href: ../../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
