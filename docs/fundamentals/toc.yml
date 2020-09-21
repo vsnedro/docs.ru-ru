@@ -696,11 +696,24 @@ items:
   - name: Расширения Майкрософт
     items:
       - name: Параметр Configuration
-        href: /aspnet/core/fundamentals/configuration/
+        items:
+          - name: Обзор
+            href: ../core/extensions/configuration.md
+            displayName: 'configuration,config,configuration sources,config sources'
+          - name: Поставщики конфигурации
+            href: ../core/extensions/configuration-providers.md
+            displayName: 'configuration providers,config providers'
+          - name: Реализация пользовательского поставщика конфигурации
+            href: ../core/extensions/custom-configuration-provider.md
+            displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
       - name: Внедрение зависимостей
-        href: /aspnet/core/fundamentals/dependency-injection/
+        href: /aspnet/core/fundamentals/dependency-injection
+      - name: Универсальный узел
+        href: /aspnet/core/fundamentals/host/generic-host
       - name: Ведение журнала
-        href: /aspnet/core/fundamentals/logging/
+        href: /aspnet/core/fundamentals/logging
+      - name: Шаблон параметров
+        href: /aspnet/core/fundamentals/configuration/options
   - name: Доступ к данным
     items:
       - name: LINQ

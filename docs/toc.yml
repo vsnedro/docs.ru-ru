@@ -7,8 +7,8 @@ items:
     href: fundamentals/
   - name: Руководство по .NET Framework
     href: framework/
-  - name: "Руководство по классическим приложениям .NET\_— WPF"
-    href: desktop-wpf/
+  - name: Руководство по классическим приложениям .NET
+    href: /dotnet/desktop/
   - name: Руководство по языку C#
     href: csharp/index.yml
   - name: Руководство по языку F#
