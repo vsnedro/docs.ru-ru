@@ -16,11 +16,12 @@ helpviewer_keywords:
 - COM interop, importing type library
 - COM interop, exposing COM components
 ms.assetid: d1898229-cd40-426e-a275-f3eb65fbc79f
-ms.openlocfilehash: e5187e3c2ce533f25a38e93bc3715dd3e2e47c11
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: bc1b921fea5aff086e21c046369f1d461f553bc7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622722"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554688"
 ---
 # <a name="importing-a-type-library-as-an-assembly"></a>Импорт библиотеки типов в виде сборки
 
@@ -30,7 +31,7 @@ ms.locfileid: "85622722"
 
 - Использование сборок взаимодействия только во время разработки. Начиная с версии .NET Framework 4, можно указать компилятору внедрять сведения о типах из сборки взаимодействия в исполняемый файл. Компилятор внедряет только сведения о типе, используемые приложением. Не требуется развертывать сборку взаимодействия с приложением. Это рекомендуемая методика.
 
-- Развертывание сборок взаимодействия. Можно создать стандартную ссылку на сборку взаимодействия. В этом случае сборки взаимодействия должны быть развернуты вместе с приложением. Если вы применяете эту методику и не используете частный COM-компонент, всегда ссылайтесь на основную сборку взаимодействия (PIA), опубликованную автором COM-компонента, который планируется включить в управляемый код. Дополнительные сведения о создании и использовании основных сборок взаимодействия см. в разделе [Основные сборки взаимодействия](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+- Развертывание сборок взаимодействия. Можно создать стандартную ссылку на сборку взаимодействия. В этом случае сборки взаимодействия должны быть развернуты вместе с приложением. Если вы применяете эту методику и не используете частный COM-компонент, всегда ссылайтесь на основную сборку взаимодействия (PIA), опубликованную автором COM-компонента, который планируется включить в управляемый код. Дополнительные сведения о создании и использовании основных сборок взаимодействия см. в разделе [Основные сборки взаимодействия](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 При использовании сборок взаимодействия только во время разработки можно внедрить сведения о типе из основной сборки взаимодействия, опубликованной автором COM-компонента. Однако не требуется развертывать основную сборку взаимодействия с приложением.
 
@@ -66,18 +67,18 @@ ms.locfileid: "85622722"
 
   - ведения о правилах преобразования библиотек типов в сборки.
 
-  Написание настраиваемой оболочки — это сложная процедура. Дополнительные сведения о создании настраиваемой оболочки см. в разделе [Настройка стандартных оболочек](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100)).
+  Написание настраиваемой оболочки — это сложная процедура. Дополнительные сведения о создании настраиваемой оболочки см. в разделе [Настройка стандартных оболочек](/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100)).
 
- Дополнительные сведения процессе импорта COM-взаимодействия см. в разделе [Обзор преобразования библиотек типов в сборки](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100)).
+ Дополнительные сведения процессе импорта COM-взаимодействия см. в разделе [Обзор преобразования библиотек типов в сборки](/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100)).
 
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.TypeLibConverter>
 - [Предоставление COM-компонентов платформе .NET Framework](exposing-com-components.md)
-- [Общие сведения о преобразовании библиотеки типов в сборку](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
+- [Общие сведения о преобразовании библиотеки типов в сборку](/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
 - [Tlbimp.exe (программа экспорта библиотек типов)](../tools/tlbimp-exe-type-library-importer.md)
-- [Customizing Standard Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100)) (Настройка стандартных оболочек)
-- [Using COM Types in Managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)) (Использование COM-типов в управляемом коде)
+- [Customizing Standard Wrappers](/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100)) (Настройка стандартных оболочек)
+- [Using COM Types in Managed Code](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)) (Использование COM-типов в управляемом коде)
 - [Компиляция проекта, использующего взаимодействие](compiling-an-interop-project.md)
 - [Развертывание приложения взаимодействия](deploying-an-interop-application.md)
 - [Практическое руководство. Добавление ссылок на библиотеки типов](how-to-add-references-to-type-libraries.md)

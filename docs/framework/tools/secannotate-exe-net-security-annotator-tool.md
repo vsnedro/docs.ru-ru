@@ -6,12 +6,12 @@ helpviewer_keywords:
 - SecAnnotate.exe
 - Security Annotator tool
 ms.assetid: 8104d208-7813-4a1d-8a75-58f9a7bcb8c9
-ms.openlocfilehash: 440ad39f1afb54ad517bc73f05d1e60748b7b520
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 408a3064b67cae2d75c80881f918c774e05866e6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517221"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558385"
 ---
 # <a name="secannotateexe-net-security-annotator-tool"></a>SecAnnotate.exe (средство создания заметок безопасности .NET)
 Средство создания заметок безопасности .NET Security Annotator (SecAnnotate.exe) — это приложение командной строки, определяющее части `SecurityCritical` и `SecuritySafeCritical` одной или нескольких сборок.  
@@ -51,6 +51,6 @@ SecAnnotate.exe [parameters] [assemblies]
 ## <a name="remarks"></a>Примечания  
  Параметры и сборки также могут предоставляться в файле ответов, указанном в командной строке с префиксом в виде знака \@ . Каждая строка в файле ответов должна содержать один параметр или имя сборки.  
   
- Дополнительные сведения о .NET Security Annotator см. в записи [Использование SecAnnotate для анализа сборок на наличие нарушений прозрачности](https://docs.microsoft.com/archive/blogs/shawnfa/using-secannotate-to-analyze-your-assemblies-for-transparency-violations-an-example) в блоге .NET Security.  
+ Дополнительные сведения о .NET Security Annotator см. в записи [Использование SecAnnotate для анализа сборок на наличие нарушений прозрачности](/archive/blogs/shawnfa/using-secannotate-to-analyze-your-assemblies-for-transparency-violations-an-example) в блоге .NET Security.  
   
 ## <a name="examples"></a>Примеры

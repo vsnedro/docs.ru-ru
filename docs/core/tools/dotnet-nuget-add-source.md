@@ -2,12 +2,12 @@
 title: Команда dotnet nuget add source
 description: Команда dotnet nuget add source добавляет новый источник пакета в файлы конфигурации NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: 319501e026f1c3102006b0be5357f127b8e366a7
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: b847d987de2d88cb3452d32d1bc84232a1e20b6e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463591"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537977"
 ---
 # <a name="dotnet-nuget-add-source"></a>dotnet nuget add source
 
@@ -41,7 +41,7 @@ dotnet nuget add source -h|--help
 
 - **`--configfile <FILE>`**
 
-  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`-n|--name <SOURCE_NAME>`**
 

@@ -2,12 +2,12 @@
 title: Сетевая изоляция для приложений Магазина Windows
 ms.date: 03/30/2017
 ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200
-ms.openlocfilehash: 390a0281f03b08322cc1bee469b601fd5a1547c4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0f9288b53b969838cac64c24d3c9861a0f841aca
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74802163"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558463"
 ---
 # <a name="network-isolation-for-windows-store-apps"></a>Сетевая изоляция для приложений Магазина Windows
 
@@ -25,13 +25,13 @@ ms.locfileid: "74802163"
   
 4. Разверните и запустите приложение, чтобы проверить его с использованием средств сетевой изоляции, предусмотренных для устранения неполадок.  
   
-Дополнительные сведения о средствах настройки сетевых возможностей и изоляции, которые используются для устранения неполадок с сетевой изоляцией, см. в статье [Практическое руководство. Настройка возможностей сетевой изоляции](https://docs.microsoft.com/previous-versions/windows/apps/hh770532(v=win.10)) в документации разработчика для Магазина Windows 8.x.
+Дополнительные сведения о средствах настройки сетевых возможностей и изоляции, которые используются для устранения неполадок с сетевой изоляцией, см. в статье [Практическое руководство. Настройка возможностей сетевой изоляции](/previous-versions/windows/apps/hh770532(v=win.10)) в документации разработчика для Магазина Windows 8.x.
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Соединение с веб-службой](https://docs.microsoft.com/previous-versions/windows/apps/hh761504(v=win.10))
-- [Рекомендации и контрольный список для настройки сетевой изоляции](https://docs.microsoft.com/previous-versions/windows/apps/hh770532(v=win.10))
-- [Краткое руководство. Подключение с помощью HttpClient](https://docs.microsoft.com/previous-versions/windows/apps/hh781239(v=win.10))
-- [Как использовать обработчики HttpClient](https://docs.microsoft.com/previous-versions/windows/apps/hh781241(v=win.10))
-- [Как защитить подключения HttpClient](https://docs.microsoft.com/previous-versions/windows/apps/hh781240(v=win.10))
+- [Соединение с веб-службой](/previous-versions/windows/apps/hh761504(v=win.10))
+- [Рекомендации и контрольный список для настройки сетевой изоляции](/previous-versions/windows/apps/hh770532(v=win.10))
+- [Краткое руководство. Подключение с помощью HttpClient](/previous-versions/windows/apps/hh781239(v=win.10))
+- [Как использовать обработчики HttpClient](/previous-versions/windows/apps/hh781241(v=win.10))
+- [Как защитить подключения HttpClient](/previous-versions/windows/apps/hh781240(v=win.10))
 - [Пример HttpClient](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664)

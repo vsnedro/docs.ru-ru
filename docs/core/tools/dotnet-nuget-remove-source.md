@@ -2,12 +2,12 @@
 title: Команда dotnet nuget remove source
 description: Команда dotnet nuget remove source удаляет существующий источник из файлов конфигурации NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: b259873e1885644b272136fa31414410bdfd9f27
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: b5575c31c0008d6e3e5a2e52906a076614217dd0
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463495"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537898"
 ---
 # <a name="dotnet-nuget-remove-source"></a>dotnet nuget remove source
 
@@ -39,7 +39,7 @@ dotnet nuget remove source -h|--help
 
 - **`--configfile`**
 
-  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 ## <a name="examples"></a>Примеры
 

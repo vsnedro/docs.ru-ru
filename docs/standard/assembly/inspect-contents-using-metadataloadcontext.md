@@ -4,12 +4,12 @@ description: Сведения об использовании MetadataLoadContex
 author: MSDN-WhiteKnight
 ms.date: 03/10/2020
 ms.technology: dotnet-standard
-ms.openlocfilehash: 90c84147c52199afc42a2efc297bc7fe40658ec7
-ms.sourcegitcommit: 839777281a281684a7e2906dccb3acd7f6a32023
+ms.openlocfilehash: 7f90149a98632ea57e8d241a0ccdf4b50264ac5c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82141200"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552028"
 ---
 # <a name="how-to-inspect-assembly-contents-using-metadataloadcontext"></a>Практическое руководство. Проверка содержимого сборки с помощью MetadataLoadContext
 
@@ -41,4 +41,4 @@ API отражения в .NET по умолчанию позволяет раз
 
 ## <a name="example"></a>Пример
 
-Пример полного кода см. на странице примера [Проверка содержимого сборки с помощью MetadataLoadContext](https://docs.microsoft.com/samples/dotnet/samples/inspect-assembly-contents-using-metadataloadcontext/).
+Пример полного кода см. на странице примера [Проверка содержимого сборки с помощью MetadataLoadContext](/samples/dotnet/samples/inspect-assembly-contents-using-metadataloadcontext/).

@@ -2,12 +2,12 @@
 title: Обзор .NET Core
 description: Сведения о характеристиках и компоновке .NET Core, а также ее сравнение с другими реализациями .NET.
 ms.date: 03/26/2020
-ms.openlocfilehash: d5ef79fe5a8fbb56beae77edd01830fe6561fa51
-ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
+ms.openlocfilehash: e99939cf85cc441fd473e4d033e22b1a5d053638
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86100734"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539012"
 ---
 # <a name="net-core-overview"></a>Обзор .NET Core
 
@@ -39,7 +39,7 @@ ms.locfileid: "86100734"
 
 * разработка облачных приложений с помощью [ASP.NET Core](/aspnet/core/);
 * разработка мобильных приложений с помощью [Xamarin](/xamarin);
-* разработка приложений для Интернета вещей с помощью [System.Device.GPIO](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0);
+* разработка приложений для Интернета вещей с помощью [System.Device.GPIO](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0);
 * разработка клиентских приложений Windows с помощью [WPF](../desktop-wpf/overview/index.md) и Windows Forms;
 * машинное обучение с помощью [ML.NET](../machine-learning/index.yml).
 
@@ -64,7 +64,7 @@ ms.locfileid: "86100734"
 
 ### <a name="open-source"></a>Открытый код
 
-[.NET Core](about.md) — это платформа разработки общего назначения с [открытым кодом](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), предназначенная для создания кроссплатформенных приложений. Вы можете создавать приложения .NET Core для Windows, macOS и Linux с поддержкой процессоров x64, x86, ARM32 и ARM64. Вам доступны платформы и API-интерфейсы для создания [облачных](/aspnet/core/) приложений, приложений для [Интернета вещей](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), использования [клиентского интерфейса](../desktop-wpf/overview/index.md) и [машинного обучения](../machine-learning/index.yml).
+[.NET Core](about.md) — это платформа разработки общего назначения с [открытым кодом](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), предназначенная для создания кроссплатформенных приложений. Вы можете создавать приложения .NET Core для Windows, macOS и Linux с поддержкой процессоров x64, x86, ARM32 и ARM64. Вам доступны платформы и API-интерфейсы для создания [облачных](/aspnet/core/) приложений, приложений для [Интернета вещей](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), использования [клиентского интерфейса](../desktop-wpf/overview/index.md) и [машинного обучения](../machine-learning/index.yml).
 
 ## <a name="support"></a>Поддержка
 

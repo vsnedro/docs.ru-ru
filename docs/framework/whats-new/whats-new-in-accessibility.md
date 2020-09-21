@@ -7,12 +7,12 @@ dev_langs:
 - vb
 helpviewer_keywords:
 - what's new [.NET Framework]
-ms.openlocfilehash: df9188c4f7c2af77f5dc87309880a41724254c5c
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: d204bea7f5ec1ed0c25b7b2dedd04d61c7f3e93d
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558963"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679551"
 ---
 # <a name="whats-new-in-accessibility-in-the-net-framework"></a>Улучшения специальных возможностей в .NET Framework
 
@@ -136,7 +136,7 @@ namespace WindowsFormsApplication
 
 **События уведомлений в модели автоматизации пользовательского интерфейса Microsoft Windows**
 
-Событие уведомления модели автоматизации пользовательского интерфейса Microsoft Windows, появившееся в Windows 10 Fall Creators Update, позволяет приложению создавать событие модели автоматизации пользовательского интерфейса, вследствие которого экранный диктор произносит текст, предоставленный с событием, причем соответствующий элемент управления в пользовательском интерфейсе не требуется. В некоторых случаях это очень простой способ радикально улучшить доступность приложения. Он также может быть полезен для уведомления о ходе выполнения длительного процесса. Дополнительные сведения о событиях уведомлений в модели автоматизации пользовательского интерфейса Microsoft Windows см. в записи блога [Can your desktop app leverage the new UI Notification event?](https://docs.microsoft.com/archive/blogs/winuiautomation/can-your-desktop-app-leverage-the-new-uia-notification-event-in-order-to-have-narrator-say-exactly-what-your-customers-need) (Может ли ваше классическое приложение использовать новое событие уведомления пользовательского интерфейса?).
+Событие уведомления модели автоматизации пользовательского интерфейса Microsoft Windows, появившееся в Windows 10 Fall Creators Update, позволяет приложению создавать событие модели автоматизации пользовательского интерфейса, вследствие которого экранный диктор произносит текст, предоставленный с событием, причем соответствующий элемент управления в пользовательском интерфейсе не требуется. В некоторых случаях это очень простой способ радикально улучшить доступность приложения. Он также может быть полезен для уведомления о ходе выполнения длительного процесса. Дополнительные сведения о событиях уведомлений в модели автоматизации пользовательского интерфейса Microsoft Windows см. в записи блога [Can your desktop app leverage the new UI Notification event?](/archive/blogs/winuiautomation/can-your-desktop-app-leverage-the-new-uia-notification-event-in-order-to-have-narrator-say-exactly-what-your-customers-need) (Может ли ваше классическое приложение использовать новое событие уведомления пользовательского интерфейса?).
 
 В следующем примере создается [событие уведомления](xref:System.Windows.Forms.AccessibleObject.RaiseAutomationNotification%2A):
 
@@ -387,7 +387,7 @@ internal class AutoSuggestTextBoxAutomationPeer : TextBoxAutomationPeer
 
 **Изменения элементов управления CheckBox и RadioButton**
 
-В .NET Framework 4.7.1 и более ранних версий элементы управления <xref:System.Windows.Controls.CheckBox?displayProperty=nameWIthType> и <xref:System.Windows.Controls.RadioButton?displayProperty=nameWIthType> WPF имеют несогласованные и (в классической теме и теме высокой контрастности) неправильные визуальные элементы фокуса.  Это происходит в случаях, когда для элементов управления не задано какое-либо содержимое.  Это может затруднять переход между темами и отображение визуального элемента фокуса.
+В .NET Framework 4.7.1 и более ранних версий элементы управления <xref:System.Windows.Controls.CheckBox?displayProperty=nameWithType> и <xref:System.Windows.Controls.RadioButton?displayProperty=nameWithType> WPF имеют несогласованные и (в классической теме и теме высокой контрастности) неправильные визуальные элементы фокуса.  Это происходит в случаях, когда для элементов управления не задано какое-либо содержимое.  Это может затруднять переход между темами и отображение визуального элемента фокуса.
 
 В .NET Framework 4.7.2 эти визуальные элементы стали более согласованными в разных темах и более видимыми в классической и контрастной темах.
 

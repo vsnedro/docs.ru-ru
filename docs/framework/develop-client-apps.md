@@ -14,19 +14,20 @@ helpviewer_keywords:
 - Visual C#, creating applications
 - client/server applications, Windows applications
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
-ms.openlocfilehash: 5920ecfae60274a8a504e4d300e531fd8b512901
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 33d0ca2918e4e3b00e2b09f7a47c538bbe903dba
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619394"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547913"
 ---
 # <a name="develop-client-applications-with-net-framework"></a>Разработка клиентских приложений с использованием .NET Framework
 
 Существует несколько способов разработки приложений Windows с помощью .NET Framework. Вы можете использовать любые из этих средств и платформ.
 
 - [Универсальная платформа Windows (UWP)](/windows/uwp/)
-- [Windows Presentation Foundation (WPF)](./wpf/index.md)
-- [Windows Forms](./winforms/index.md)
+- [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/)
+- [Windows Forms](/dotnet/desktop/winforms/)
 
 В темах этой статьи описаны способы создания приложений Windows с помощью Windows Presentation Foundation и Windows Forms. Но с помощью .NET Framework вы можете создавать и веб-приложения, а также клиентские приложения для компьютеров и устройств, публикуемые в Microsoft Store (приложения универсальной платформы Windows).
 
@@ -35,7 +36,7 @@ ms.locfileid: "85619394"
 [Универсальная платформа Windows](/windows/uwp/)\
 Создание приложений универсальной платформы Windows (UWP) для предоставления пользователям через Microsoft Store.
 
-[.NET API для приложений UWP](/dotnet/api/index?view=dotnet-uwp-10.0)\
+[.NET API для приложений UWP](../../api/index.md?view=dotnet-uwp-10.0)\
 Справочник по типам .NET, которые поддерживают приложения UWP.
   
 [Разработка для множества платформ](../standard/cross-platform/index.md)\
@@ -44,7 +45,7 @@ ms.locfileid: "85619394"
 [Начало работы с веб-страницами ASP.NET](https://dotnet.microsoft.com/apps/aspnet/web-apps)\
 Способы разработки веб-приложений с помощью ASP.NET.
 
-[.NET API для Windows Phone Silverlight](https://docs.microsoft.com/previous-versions/windows/apps/jj207211\(v=vs.105\))\
+[.NET API для Windows Phone Silverlight](/previous-versions/windows/apps/jj207211\(v=vs.105\))\
 Список API-интерфейсов .NET Framework, которые можно использовать для создания приложений с помощью Windows Phone Silverlight.
 
 ## <a name="see-also"></a>См. также

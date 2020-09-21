@@ -8,11 +8,12 @@ helpviewer_keywords:
 - interoperation with unmanaged code, registering assemblies
 - registering assemblies
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
-ms.openlocfilehash: 1b73a79b8167e7f75b8c68f708179e88c575d66a
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 0adae4db393c4c01620ea896c4451c3279272fca
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621903"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559282"
 ---
 # <a name="registering-assemblies-with-com"></a>Регистрация сборок в COM
 С помощью программы командной строки, которая называется [средством регистрации сборок (Regasm.exe)](../tools/regasm-exe-assembly-registration-tool.md), можно регистрировать сборки для использования с моделью COM и отменять их регистрацию. Программа Regasm.exe добавляет сведения о классе в системный реестр, что обеспечивает прозрачное использование класса .NET Framework COM-клиентами. Класс <xref:System.Runtime.InteropServices.RegistrationServices> реализует эквивалентные функциональные возможности.  
@@ -45,5 +46,5 @@ ms.locfileid: "85621903"
 
 - [Предоставление компонентов .NET Framework клиентам COM](exposing-dotnet-components-to-com.md)
 - [Практическое руководство. Создание ссылки на типы .NET из COM](how-to-reference-net-types-from-com.md)
-- [Вызов объекта .NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100))
-- [Развертывание приложения для доступа к COM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100))
+- [Вызов объекта .NET](/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100))
+- [Развертывание приложения для доступа к COM](/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100))

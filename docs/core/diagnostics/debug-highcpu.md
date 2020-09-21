@@ -3,18 +3,18 @@ title: Отладка высокой загрузки ЦП в .NET Core
 description: Руководство по отладке высокой загрузки ЦП в .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: 93076bbce3baf3a219b25c927d2aba3d2d57456f
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 71e0b98f7ad38836c6a20c3e0e75a878fb6525c7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557806"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538713"
 ---
 # <a name="debug-high-cpu-usage-in-net-core"></a>Отладка высокой загрузки ЦП в .NET Core
 
 **Эта статья относится к: ✔️** пакету SDK для .NET Core 3.1 и более поздних версий
 
-В этом руководстве описано, как выполнить отладку в случае чрезмерной загрузки ЦП. Используя предоставленный пример [веб-приложения ASP.NET Core](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) в репозитории исходного кода, можно намеренно вызвать взаимоблокировку. Конечная точка перестанет отвечать на запросы, и в ней будут накапливаться потоки. Вы узнаете, как использовать различные средства для диагностики проблемы в этом сценарии на основе ряда ключевых диагностических данных.
+В этом руководстве описано, как выполнить отладку в случае чрезмерной загрузки ЦП. Используя предоставленный пример [веб-приложения ASP.NET Core](/samples/dotnet/samples/diagnostic-scenarios) в репозитории исходного кода, можно намеренно вызвать взаимоблокировку. Конечная точка перестанет отвечать на запросы, и в ней будут накапливаться потоки. Вы узнаете, как использовать различные средства для диагностики проблемы в этом сценарии на основе ряда ключевых диагностических данных.
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -31,13 +31,13 @@ ms.locfileid: "88557806"
 В этом учебнике используется:
 
 - [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии.
-- [Пример целевого объекта отладки ](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) для активации сценария.
+- [Пример целевого объекта отладки ](/samples/dotnet/samples/diagnostic-scenarios) для активации сценария.
 - [dotnet-trace](dotnet-trace.md) для вывода списка процессов и создания профиля.
 - [dotnet-counters](dotnet-counters.md) для мониторинга загрузки ЦП.
 
 ## <a name="cpu-counters"></a>Счетчики ЦПУ
 
-Прежде чем начать сбор диагностических данных, необходимо воспроизвести условие высокой загрузки ЦП. Запустите [пример приложения](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) из корневого каталога примера с помощью следующей команды:
+Прежде чем начать сбор диагностических данных, необходимо воспроизвести условие высокой загрузки ЦП. Запустите [пример приложения](/samples/dotnet/samples/diagnostic-scenarios) из корневого каталога примера с помощью следующей команды:
 
 ```dotnetcli
 dotnet run
@@ -116,11 +116,11 @@ Press p to pause, r to resume, q to quit.
 
 ### <a name="linux"></a>[Linux](#tab/linux)
 
-Средство `perf` можно использовать для создания профилей приложений .NET Core. Выйдите из предыдущего [примера целевого объекта отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios).
+Средство `perf` можно использовать для создания профилей приложений .NET Core. Выйдите из предыдущего [примера целевого объекта отладки](/samples/dotnet/samples/diagnostic-scenarios).
 
 Задайте переменную среды `COMPlus_PerfMapEnabled`, чтобы приложение .NET Core создало файл `map` в каталоге `/tmp`. `perf` использует этот файл `map` для сопоставления адреса ЦП с функциями, созданными JIT-компилятором, по имени. Дополнительные сведения см. в разделе [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map) (Запись карты производительности).
 
-Запустите [пример целевого объекта отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) в том же сеансе терминала.
+Запустите [пример целевого объекта отладки](/samples/dotnet/samples/diagnostic-scenarios) в том же сеансе терминала.
 
 ```dotnetcli
 export COMPlus_PerfMapEnabled=1
@@ -152,7 +152,7 @@ sudo perf script | FlameGraph/stackcollapse-perf.pl | FlameGraph/flamegraph.pl >
 
 ### <a name="windows"></a>[Windows](#tab/windows)
 
-В Windows в качестве профилировщика можно использовать средство [dotnet-trace](dotnet-trace.md). Используя предыдущий [пример целевого объекта отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), снова запустите конечную точку с высокой загрузкой ЦП (`https://localhost:5001/api/diagscenario/highcpu/60000`). Пока она выполняется в рамках 1-минутного запроса, запустите команду `collect`, как показано ниже:
+В Windows в качестве профилировщика можно использовать средство [dotnet-trace](dotnet-trace.md). Используя предыдущий [пример целевого объекта отладки](/samples/dotnet/samples/diagnostic-scenarios), снова запустите конечную точку с высокой загрузкой ЦП (`https://localhost:5001/api/diagscenario/highcpu/60000`). Пока она выполняется в рамках 1-минутного запроса, запустите команду `collect`, как показано ниже:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler

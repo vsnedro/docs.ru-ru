@@ -27,12 +27,12 @@ helpviewer_keywords:
 - compiling source code, multiple languages
 - CodeDOM, graphs
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
-ms.openlocfilehash: 85654fe961f01ad7b8fb886d59a3de9ab0efe7aa
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 3aad7b2ff047a2d9ad12c23d16773e482a395c10
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474050"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90551201"
 ---
 # <a name="generating-and-compiling-source-code-from-a-codedom-graph"></a>Создание и компиляция исходного кода из графа CodeDOM
 Пространство имен <xref:System.CodeDom.Compiler> предоставляет интерфейсы для создания исходного кода из графов объекта CodeDOM и для управления компиляцией в поддерживаемых компиляторах. Поставщик кода может создавать исходный код на конкретном языке программирования, используя граф CodeDOM. Класс, производный от <xref:System.CodeDom.Compiler.CodeDomProvider>, обычно может предоставлять методы для создания и компиляции кода для языка, поддерживаемого поставщиком.  
@@ -97,4 +97,4 @@ ms.locfileid: "86474050"
 - <xref:System.CodeDom>
 - <xref:System.CodeDom.Compiler>
 - [Динамическое создание и компиляция исходного кода](dynamic-source-code-generation-and-compilation.md)
-- [Краткий справочник по CodeDOM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100))
+- [Краткий справочник по CodeDOM](/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100))

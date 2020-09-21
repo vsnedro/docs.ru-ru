@@ -7,12 +7,12 @@ helpviewer_keywords:
 - members, obsolete in .NET Framework
 - obsolete members [.NET Framework]
 ms.assetid: 0ee25062-4071-4d3c-a552-87a75d3ecd34
-ms.openlocfilehash: c3418675bf69ffaf60d6b16202fc6cb8a112ebab
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: d5981a2ec1e8152e891a4480ea548200be45ecd1
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558937"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558528"
 ---
 # <a name="obsolete-members-in-net-framework"></a>Устаревшие члены в .NET Framework
 
@@ -421,8 +421,8 @@ ms.locfileid: "88558937"
 > |<xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|<xref:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler%2A>|Вызывающим модулям не следует использовать интерфейс <xref:System.CodeDom.Compiler.ICodeCompiler?displayProperty=nameWithType>; взамен рекомендуется использовать методы непосредственно для обработки объекта класса <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>. Классы, производные от класса <xref:System.CodeDom.Compiler.CodeDomProvider>, по-прежнему должны использовать этот интерфейс и исключить это предупреждение, либо также объявить этот метод устаревшим.|
 > |<xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|<xref:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator%2A>|Вызывающим модулям не следует использовать интерфейс <xref:System.CodeDom.Compiler.ICodeGenerator?displayProperty=nameWithType>; взамен рекомендуется использовать методы непосредственно для обработки объекта класса <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>. Классы, производные от класса <xref:System.CodeDom.Compiler.CodeDomProvider>, по-прежнему должны использовать этот интерфейс и исключить это предупреждение, либо также объявить этот метод устаревшим.|
 > |<xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|<xref:System.CodeDom.Compiler.CodeDomProvider.CreateParser%2A>|Вызывающим модулям не следует использовать интерфейс <xref:System.CodeDom.Compiler.ICodeParser?displayProperty=nameWithType>; взамен рекомендуется использовать методы непосредственно для обработки объекта класса <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>. Классы, производные от класса <xref:System.CodeDom.Compiler.CodeDomProvider>, по-прежнему должны использовать этот интерфейс и исключить это предупреждение, либо также объявить этот метод устаревшим.|
-> |<xref:System.CodeDom.Compiler.CompilerParameters?displayProperty=nameWithType>|<xref:System.CodeDom.Compiler.CompilerParameters.Evidence%2A>|Политика разграничения доступа кода устарела и будет удалена в одном из будущих выпусков платформы .NET Framework. Подробнее см. в разделе [Изменения системы безопасности в .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee191568%28v=vs.100%29).|
-> |<xref:System.CodeDom.Compiler.CompilerResults?displayProperty=nameWithType>|<xref:System.CodeDom.Compiler.CompilerResults.Evidence%2A>|Политика разграничения доступа кода устарела и будет удалена в одном из будущих выпусков платформы .NET Framework. Подробнее см. в разделе [Изменения системы безопасности в .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee191568%28v=vs.100%29).|
+> |<xref:System.CodeDom.Compiler.CompilerParameters?displayProperty=nameWithType>|<xref:System.CodeDom.Compiler.CompilerParameters.Evidence%2A>|Политика разграничения доступа кода устарела и будет удалена в одном из будущих выпусков платформы .NET Framework. Подробнее см. в разделе [Изменения системы безопасности в .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee191568(v=vs.100)).|
+> |<xref:System.CodeDom.Compiler.CompilerResults?displayProperty=nameWithType>|<xref:System.CodeDom.Compiler.CompilerResults.Evidence%2A>|Политика разграничения доступа кода устарела и будет удалена в одном из будущих выпусков платформы .NET Framework. Подробнее см. в разделе [Изменения системы безопасности в .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee191568(v=vs.100)).|
 > |<xref:System.Collections.Specialized.NameObjectCollectionBase?displayProperty=nameWithType>|<xref:System.Collections.Specialized.NameObjectCollectionBase.%23ctor%28System.Collections.IHashCodeProvider%2CSystem.Collections.IComparer%29>|Взамен рекомендуется использовать <xref:System.Collections.Specialized.NameObjectCollectionBase.%23ctor%28System.Collections.IEqualityComparer%29>.|
 > |<xref:System.Collections.Specialized.NameObjectCollectionBase?displayProperty=nameWithType>|<xref:System.Collections.Specialized.NameObjectCollectionBase.%23ctor%28System.Int32%2CSystem.Collections.IHashCodeProvider%2CSystem.Collections.IComparer%29>|Взамен рекомендуется использовать <xref:System.Collections.Specialized.NameObjectCollectionBase.%23ctor%28System.Int32%2CSystem.Collections.IEqualityComparer%29>.|
 > |<xref:System.Collections.Specialized.NameValueCollection?displayProperty=nameWithType>|<xref:System.Collections.Specialized.NameValueCollection.%23ctor%28System.Collections.IHashCodeProvider%2CSystem.Collections.IComparer%29>|Взамен рекомендуется использовать <xref:System.Collections.Specialized.NameValueCollection.%23ctor%28System.Collections.IEqualityComparer%29>.|

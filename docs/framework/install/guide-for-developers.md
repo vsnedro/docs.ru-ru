@@ -8,12 +8,12 @@ helpviewer_keywords:
 - installing .NET Framework
 - installation [.NET Framework]
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
-ms.openlocfilehash: d2bb964c3d034ea6913c91922fcff1e62130e0dc
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 4ea1954841696ef28cceca2968e750d9771be038
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558469"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543715"
 ---
 # <a name="install-the-net-framework-for-developers"></a>Установка .NET Framework для разработчиков
 
@@ -138,7 +138,7 @@ ms.locfileid: "88558469"
 
 - Для установки .NET Framework 4.5 и более поздних версий требуются права администратора.
 
-- Распространяемый пакет платформы .NET Framework 4.5 был обновлен 9 октября 2012 г., чтобы устранить проблему, связанную с неправильной отметкой времени в цифровом сертификате, которая вызывала преждевременное истечение срока действия цифровой подписи в файлах, создаваемых и подписываемых Microsoft. Если вы ранее установили распространяемый пакет платформы .NET Framework 4.5 от 16 августа 2012 г., рекомендуем обновить установленную копию до последнего распространяемого пакета, который доступен на [странице скачивания .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/net45). Дополнительные сведения об этой проблеме см. в статье [Советы по безопасности (Майкрософт) (2749655)](https://docs.microsoft.com/security-updates/SecurityAdvisories/2012/2749655) и [статье базы знаний 2770445](https://support.microsoft.com/kb/2770445).
+- Распространяемый пакет платформы .NET Framework 4.5 был обновлен 9 октября 2012 г., чтобы устранить проблему, связанную с неправильной отметкой времени в цифровом сертификате, которая вызывала преждевременное истечение срока действия цифровой подписи в файлах, создаваемых и подписываемых Microsoft. Если вы ранее установили распространяемый пакет платформы .NET Framework 4.5 от 16 августа 2012 г., рекомендуем обновить установленную копию до последнего распространяемого пакета, который доступен на [странице скачивания .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/net45). Дополнительные сведения об этой проблеме см. в статье [Советы по безопасности (Майкрософт) (2749655)](/security-updates/SecurityAdvisories/2012/2749655) и [статье базы знаний 2770445](https://support.microsoft.com/kb/2770445).
 
 ## <a name="to-install-language-packs"></a>Установка языковых пакетов
 

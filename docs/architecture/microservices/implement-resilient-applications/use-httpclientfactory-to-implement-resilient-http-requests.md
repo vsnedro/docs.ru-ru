@@ -2,12 +2,12 @@
 title: Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 description: Узнайте, как использовать интерфейс IHttpClientFactory, доступный в .NET Core, начиная с версии 2.1, для создания экземпляров `HttpClient`, чтобы облегчить их применение в ваших приложениях.
 ms.date: 08/31/2020
-ms.openlocfilehash: 1df5432f215371b60722212cf706c28a4a5bb5f6
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.openlocfilehash: c54965a9bbb700cfb1f14150773c2df45d109c39
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271832"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90678820"
 ---
 # <a name="use-ihttpclientfactory-to-implement-resilient-http-requests"></a>Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 
@@ -65,9 +65,9 @@ ms.locfileid: "89271832"
 
 **Рис. 8-4**. Использование `IHttpClientFactory` с классами типизированных клиентов.
 
-На изображении выше `ClientService` (используется контроллером или в коде клиента) использует объект `HttpClient`, созданный зарегистрированной фабрикой `IHttpClientFactory`. Эта фабрика назначает `HttpMessageHandler` из пула объекту `HttpClient`. `HttpClient` можно настроить с помощью политик Polly при регистрации фабрики `IHttpClientFactory` в контейнере внедрения зависимостей, используя метод расширения <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*>.
+На изображении выше `ClientService` (используется контроллером или в коде клиента) использует объект `HttpClient`, созданный зарегистрированной фабрикой `IHttpClientFactory`. Эта фабрика назначает `HttpMessageHandler` из пула объекту `HttpClient`. `HttpClient` можно настроить с помощью политик Polly при регистрации фабрики `IHttpClientFactory` в контейнере внедрения зависимостей, используя метод расширения <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A>.
 
-Чтобы настроить такую структуру, добавьте <xref:System.Net.Http.IHttpClientFactory> в приложение, установив пакет NuGet `Microsoft.Extensions.Http`, который содержит метод расширения <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> для <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Этот метод расширения регистрирует внутренний класс `DefaultHttpClientFactory`, который будет использоваться как класс-одиночка для интерфейса `IHttpClientFactory`. Он определяет временную конфигурацию для <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. Этот обработчик сообщений (объект <xref:System.Net.Http.HttpMessageHandler>), взятый из пула, используется классом `HttpClient`, который возвращается фабрикой.
+Чтобы настроить такую структуру, добавьте <xref:System.Net.Http.IHttpClientFactory> в приложение, установив пакет NuGet `Microsoft.Extensions.Http`, который содержит метод расширения <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> для <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Этот метод расширения регистрирует внутренний класс `DefaultHttpClientFactory`, который будет использоваться как класс-одиночка для интерфейса `IHttpClientFactory`. Он определяет временную конфигурацию для <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. Этот обработчик сообщений (объект <xref:System.Net.Http.HttpMessageHandler>), взятый из пула, используется классом `HttpClient`, который возвращается фабрикой.
 
 В приведенном далее коде показано, как `AddHttpClient()` может использоваться для регистрации типизированных клиентов (агентов службы), которым нужно использовать `HttpClient`.
 

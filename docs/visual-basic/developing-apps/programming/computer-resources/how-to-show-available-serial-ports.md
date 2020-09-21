@@ -7,12 +7,12 @@ helpviewer_keywords:
 - My.Computer.Ports object
 - ports, serial port availability
 ms.assetid: eaf2ee5a-8103-4e10-a205-ed1d4db120ba
-ms.openlocfilehash: e7a9166f1879ed0850ca893bed307a0318298bbb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b19bdd56311ab7029fb224256d138a0dc0dd8ddc
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401827"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557350"
 ---
 # <a name="how-to-show-available-serial-ports-in-visual-basic"></a>Практическое руководство. Отображение доступных последовательных портов в Visual Basic
 
@@ -24,7 +24,7 @@ ms.locfileid: "84401827"
 
  В этом примере циклически перебираются все строки, которые возвращает свойство `My.Computer.Ports.SerialPortNames`. Эти строки представляют собой имена доступных последовательных портов на компьютере.  
   
- Как правило, пользователь выбирает, какой последовательный порт приложение должно использовать из списка доступных портов. В этом примере имена последовательных портов хранятся в элементе управления <xref:System.Windows.Forms.ListBox>. Дополнительные сведения см. в разделе [Элемент управления ListBox](../../../../framework/winforms/controls/listbox-control-windows-forms.md).  
+ Как правило, пользователь выбирает, какой последовательный порт приложение должно использовать из списка доступных портов. В этом примере имена последовательных портов хранятся в элементе управления <xref:System.Windows.Forms.ListBox>. Дополнительные сведения см. в разделе [Элемент управления ListBox](/dotnet/desktop/winforms/controls/listbox-control-windows-forms).  
   
  [!code-vb[VbVbalrMyComputer#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#45)]  
   

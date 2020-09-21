@@ -8,12 +8,12 @@ helpviewer_keywords:
 - globalization [.NET Framework], best practices
 - international applications [.NET Framework], best practices
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
-ms.openlocfilehash: f0e5ccf999b6aa96b6317b88e25f3cd9d9fbc899
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 9d9f6b3540bb04dd4af154fce2f91a3a7b6395ba
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84279884"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555540"
 ---
 # <a name="best-practices-for-developing-world-ready-applications"></a>Рекомендации по разработке международных приложений
 
@@ -91,7 +91,7 @@ ms.locfileid: "84279884"
 
 4. Следует задать значения для атрибутов requestEncoding, responseEncoding, fileEncoding, culture и uiCulture в следующих трех местах в приложении ASP.NET.
 
-    - В разделе глобализации файла Web.config. Это внешний файл приложения ASP.NET. Дополнительные сведения см. в разделе [\<globalization>Element](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
+    - В разделе глобализации файла Web.config. Это внешний файл приложения ASP.NET. Дополнительные сведения см. в разделе [\<globalization>Element](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
 
     - В директиве страницы. Обратите внимание, что когда приложение находится на странице, файл уже считан. Следовательно, уже поздно задавать атрибуты fileEncoding и requestEncoding. В директиве страницы могут задаваться только атрибуты uiCulture, Culture и responseEncoding.
 

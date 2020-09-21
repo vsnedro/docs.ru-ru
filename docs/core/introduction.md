@@ -4,16 +4,16 @@ description: .NET Core — это модульная высокопроизв�
 author: richlander
 ms.date: 03/26/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: b28ad965e54680e2e1134c389266741ade28084f
-ms.sourcegitcommit: 67cf756b033c6173a1bbd1cbd5aef1fccac99e34
+ms.openlocfilehash: 350fd50bee3403a05d1c19c9a692535613b17498
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86226586"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538280"
 ---
 # <a name="introduction-to-net-core"></a>Введение в .NET Core
 
-[.NET Core](about.md) — это платформа разработки общего назначения с [открытым кодом](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), предназначенная для создания кроссплатформенных приложений. Вы можете создавать приложения .NET Core для Windows, macOS и Linux с поддержкой процессоров x64, x86, ARM32 и ARM64, используя несколько языков программирования. Вам доступны платформы и API-интерфейсы для создания [облачных](/aspnet/core/) приложений, приложений для [Интернета вещей](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), использования [клиентского интерфейса](../desktop-wpf/overview/index.md) и [машинного обучения](/dotnet/machine-learning/).
+[.NET Core](about.md) — это платформа разработки общего назначения с [открытым кодом](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), предназначенная для создания кроссплатформенных приложений. Вы можете создавать приложения .NET Core для Windows, macOS и Linux с поддержкой процессоров x64, x86, ARM32 и ARM64, используя несколько языков программирования. Вам доступны платформы и API-интерфейсы для создания [облачных](/aspnet/core/) приложений, приложений для [Интернета вещей](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), использования [клиентского интерфейса](../desktop-wpf/overview/index.md) и [машинного обучения](../machine-learning/index.yml).
 
 Скачайте [пакет SDK для .NET Core](https://dotnet.microsoft.com/download), чтобы поработать с .NET Core на компьютере. [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/) является последней версией.
 
@@ -22,7 +22,7 @@ ms.locfileid: "86226586"
 .NET Core можно получить следующими способами.
 
 * [Установщики для Windows и macOS](https://dotnet.microsoft.com/download)
-* [Пакеты Linux](https://docs.microsoft.com/dotnet/core/install/linux-package-managers)
+* [Пакеты Linux](./install/linux.md)
 * [Контейнеры Docker](https://hub.docker.com/_/microsoft-dotnet-core/)
 * [ZIP- и TAR-архивы](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * [Скрипты установки](https://dotnet.microsoft.com/download/dotnet-core/scripts)

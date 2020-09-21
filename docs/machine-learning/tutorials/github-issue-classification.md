@@ -4,12 +4,12 @@ description: Узнайте, как использовать ML.NET для сц�
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
-ms.openlocfilehash: 48f5f213802b09168cbc21da1b22e84ec53756fe
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: fa00306e80046097c1269533d3a3ca1e85f10288
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282077"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679499"
 ---
 # <a name="tutorial-categorize-support-issues-using-multiclass-classification-with-mlnet"></a>Учебник. Классификация заявок на поддержку с использованием мультиклассовой классификации с помощью ML.NET
 
@@ -302,7 +302,7 @@ private static void SaveModelAsFile(MLContext mlContext,DataViewSchema trainingD
 }
 ```
 
-Добавьте приведенный ниже код в метод `SaveModelAsFile`. Этот код использует метод [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save*) для сериализации и хранения обученной модели в виде ZIP-файла.
+Добавьте приведенный ниже код в метод `SaveModelAsFile`. Этот код использует метод [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A) для сериализации и хранения обученной модели в виде ZIP-файла.
 
 [!code-csharp[SnippetSaveModel](./snippets/github-issue-classification/csharp/Program.cs#SnippetSaveModel)]
 

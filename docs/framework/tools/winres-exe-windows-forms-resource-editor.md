@@ -12,12 +12,12 @@ helpviewer_keywords:
 - resx files
 - .resx files
 ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
-ms.openlocfilehash: 8393eb44246ed1bbc0e4e6acc84ad7bd57041ec0
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 35d1324d5ea7a72ffd5ea594530d1312e717cd7c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87516909"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543229"
 ---
 # <a name="winresexe-windows-resource-localization-editor"></a>Winres.exe (редактор для локализации ресурсов Windows)
 
@@ -52,7 +52,7 @@ winres /?
 
 - Файл ресурсов определенного языка и региональных параметров можно сохранить в виде файла ресурсов другого языка региональных параметров. Например, файл ресурсов английского языка (США) можно сохранить как файл ресурсов польского языка. Обычно новый файл требует дополнительного редактирования для приведения в соответствие новому языку и региональным параметрам.
 
-Также см. раздел [Иерархическая организация ресурсов для локализации](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/756hydy4(v=vs.110)) или [Иерархическая организация ресурсов для локализации](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)).
+Также см. раздел [Иерархическая организация ресурсов для локализации](/previous-versions/visualstudio/visual-studio-2012/756hydy4(v=vs.110)) или [Иерархическая организация ресурсов для локализации](/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)).
 
 Программа Winres.exe не может преобразовать RESX-файл в соответствующий ему RESOURCES-файл, для этого используется программа Resgen.exe. Дополнительные сведения о программе Resgen.exe см. в разделе [Resgen.exe (генератор файлов ресурсов)](resgen-exe-resource-file-generator.md).
 

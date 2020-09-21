@@ -3,12 +3,12 @@ title: Средства Visual Studio для Docker в Windows
 description: Изучите средства Docker, доступные в Visual Studio 2017 версии 15.7 и более поздних.
 ms.date: 08/06/2020
 ms.custom: vs-dotnet
-ms.openlocfilehash: 74cffaae5885a7079ec774b1e8c68241cddda99a
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: ae20ebf7c3c27d7f2ebe51c33719b82048f86241
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915350"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90678931"
 ---
 # <a name="use-docker-tools-in-visual-studio-on-windows"></a>Использование Средств Docker в Visual Studio для Windows
 
@@ -84,9 +84,9 @@ ms.locfileid: "87915350"
 > [!TIP]
 > Чтобы получить дополнительные сведения о реализации служб и использовании средств Visual Studio для Docker, ознакомьтесь со следующими статьями:
 >
-> Отладка приложений в локальном контейнере Docker: <https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh>
+> Отладка приложений в локальном контейнере Docker: <https://docs.microsoft.com/visualstudio/containers/edit-and-refresh>
 >
-> Развертывание контейнера ASP.NET в реестре контейнеров с использованием Visual Studio: <https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker>
+> Развертывание контейнера ASP.NET в реестре контейнеров с использованием Visual Studio: <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
 
 > [!div class="step-by-step"]
 > [Назад](docker-apps-inner-loop-workflow.md)

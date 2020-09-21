@@ -4,12 +4,12 @@ description: Разработка современных веб-приложен
 author: ardalis
 ms.author: wiwagn
 ms.date: 12/04/2019
-ms.openlocfilehash: 1883662f736361a947cbad440aeefda839265251
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 8497892b88c313cde0a604ad3967507300e5154a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465641"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539247"
 ---
 # <a name="test-aspnet-core-mvc-apps"></a>Тестирование приложений MVC ASP.NET Core
 
@@ -257,7 +257,7 @@ namespace Microsoft.eShopWeb.FunctionalTests.Web
 
 Тесты могут использовать эту пользовательскую фабрику WebApplicationFactory, чтобы с ее помощью создать клиент, а затем делать запросы к приложению, используя этот экземпляр клиента. Приложение заполнится данными, которые можно использовать в утверждениях теста. Следующий тест проверяет, что домашняя страница приложения eShopOnWeb правильно загружается и содержит список продуктов, который был добавлен в приложение при заполнении данными.
 
-```cs
+```csharp
 using Microsoft.eShopWeb.FunctionalTests.Web;
 using System.Net.Http;
 using System.Threading.Tasks;

@@ -4,12 +4,12 @@ description: Узнайте, как установить .NET для Apache Spar
 ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 14babf7a551192b286f309393e3bbff25d4745d5
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 8110b87991e2f0253257faf19f383dec6cbd3853
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617747"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557207"
 ---
 # <a name="install-net-for-apache-spark-on-jupyter-notebooks-on-azure-hdinsight-spark-clusters"></a>Установка .NET для Apache Spark в записных книжках Jupyter в кластерах Spark Azure HDInsight
 
@@ -17,7 +17,7 @@ ms.locfileid: "85617747"
 
 Кластеры Azure HDInsight поставляются с записными книжками Jupyter, поэтому вам нужно лишь настроить их для запуска .NET для Apache Spark. Чтобы использовать .NET для Apache Spark в записных книжках Jupyter, необходимо иметь C# REPL, чтобы построчно выполнить код C# и при необходимости сохранить состояние выполнения. Средство [Try .NET](https://github.com/dotnet/try) интегрировано в качестве официальной версии .NET REPL.
 
-Чтобы включить .NET для Apache Spark через интерфейс записных книжек Jupyter Notebook, необходимо выполнить несколько действий вручную с помощью [Ambari](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-manage-ambari) и отправить [действия скрипта](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) в кластере HDInsight Spark.
+Чтобы включить .NET для Apache Spark через интерфейс записных книжек Jupyter Notebook, необходимо выполнить несколько действий вручную с помощью [Ambari](/azure/hdinsight/hdinsight-hadoop-manage-ambari) и отправить [действия скрипта](/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) в кластере HDInsight Spark.
 
 > [!NOTE]
 > Эта *экспериментальная* функция, и она не поддерживается командой HDInsight Spark.
@@ -26,7 +26,7 @@ ms.locfileid: "85617747"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Создайте кластер [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-apache-spark-cluster-in-hdinsight), если его у вас еще нет.
+Создайте кластер [Azure HDInsight Spark](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-apache-spark-cluster-in-hdinsight), если его у вас еще нет.
 
 1. Перейдите на [портал Azure](https://portal.azure.com) и выберите **Создать ресурс**.
 
@@ -63,9 +63,9 @@ ms.locfileid: "85617747"
 
    Создайте файл **install-interactive-notebook.sh** на локальном компьютере и вставьте содержимое [nstall-interactive-notebook.sh contentss](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh).
 
-   Отправьте скрипт в [универсальный код ресурса (URI)](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions), который доступен из кластера HDInsight. Например, `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`.
+   Отправьте скрипт в [универсальный код ресурса (URI)](/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions), который доступен из кластера HDInsight. Например, `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`.
 
-2. Выполните скрипт `install-interactive-notebook.sh` в кластере с помощью [действий скриптов HDInsight](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
+2. Выполните скрипт `install-interactive-notebook.sh` в кластере с помощью [действий скриптов HDInsight](/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
    Вернитесь к кластеру HDI на портале Azure и выберите **Действия скрипта** из параметров слева. Вы отправляете одно действие скрипта, чтобы развернуть .NET для Apache Spark REPL в кластере HDInsight Spark. Используйте следующие параметры:
 
@@ -158,4 +158,4 @@ ms.locfileid: "85617747"
 ## <a name="next-steps"></a>Следующие шаги
 
 * [Развертывание приложения .NET для Apache Spark в Azure HDInsight](../tutorials/hdinsight-deployment.md)
-* [Документация по HDInsight](https://docs.microsoft.com/azure/hdinsight/)
+* [Документация по HDInsight](/azure/hdinsight/)

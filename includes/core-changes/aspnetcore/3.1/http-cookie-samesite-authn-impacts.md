@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3cc07eef109b9096bc5a5fbcd1ea098a23b2155f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8b6d334677991382d235fd53cd3c98e3a77d650d
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78967972"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539622"
 ---
 ### <a name="http-browser-samesite-changes-impact-authentication"></a>HTTP. Изменения SameSite в браузере влияют на проверку подлинности
 
@@ -26,7 +26,7 @@ ms.locfileid: "78967972"
 
 Продукт ASP.NET Core 3.1 был обновлен, чтобы реализовать новое поведение `SameSite`. Это обновление переопределяет поведение `SameSiteMode.None` для выдачи `SameSite=None` и добавляет новое значение `SameSiteMode.Unspecified`, чтобы опустить атрибут `SameSite`. Все API файлов cookie теперь по умолчанию используют `Unspecified`, хотя некоторые компоненты, использующие файлы cookie, задают более конкретные значения для соответствующих сценариев, таких как корреляция OpenID Connect и файлы cookie nonce.
 
-Сведения о последних переменах в этой области см. в разделе [HTTP. Некоторые значения по умолчанию параметра SameSite для файлов cookie изменены на None](/dotnet/core/compatibility/2.2-3.0#http-some-cookie-samesite-defaults-changed-to-none). В ASP.NET Core 3.0 большинство значений по умолчанию изменились с <xref:Microsoft.AspNetCore.Http.SameSiteMode.Lax?displayProperty=nameWithType> на <xref:Microsoft.AspNetCore.Http.SameSiteMode.None?displayProperty=nameWithType> (однако по-прежнему используется более ранний стандарт).
+Сведения о последних переменах в этой области см. в разделе [HTTP. Некоторые значения по умолчанию параметра SameSite для файлов cookie изменены на None](../../../../docs/core/compatibility/2.2-3.0.md#http-some-cookie-samesite-defaults-changed-to-none). В ASP.NET Core 3.0 большинство значений по умолчанию изменились с <xref:Microsoft.AspNetCore.Http.SameSiteMode.Lax?displayProperty=nameWithType> на <xref:Microsoft.AspNetCore.Http.SameSiteMode.None?displayProperty=nameWithType> (однако по-прежнему используется более ранний стандарт).
 
 #### <a name="reason-for-change"></a>Причина изменения
 

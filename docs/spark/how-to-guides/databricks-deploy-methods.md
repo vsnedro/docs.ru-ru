@@ -4,12 +4,12 @@ description: Узнайте, как отправить задание .NET дл�
 ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: bebd170a689d8ae56aa6c55486d70354da2437ea
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 88dc321a08f805ef8c3bf8d4d01d32dd890548d2
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617773"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557181"
 ---
 # <a name="submit-a-net-for-apache-spark-job-to-databricks"></a>Отправка задания .NET для Apache Spark в Databricks
 
@@ -36,7 +36,7 @@ ms.locfileid: "85617773"
 
 ## <a name="deploy-using-set-jar"></a>Развертывание с помощью действия "Указание файла JAR"
 
-Кроме того, для отправки заданий .NET для Apache Spark в Databricks можно использовать действия [Указание файла JAR](https://docs.microsoft.com/azure/databricks/jobs#--create-a-job) в рабочей области Databricks. Действие *Указание файла JAR* позволяет отправить задание в существующий активный кластер.
+Кроме того, для отправки заданий .NET для Apache Spark в Databricks можно использовать действия [Указание файла JAR](/azure/databricks/jobs#--create-a-job) в рабочей области Databricks. Действие *Указание файла JAR* позволяет отправить задание в существующий активный кластер.
 
 ### <a name="one-time-setup"></a>Однократная настройка
 
@@ -57,7 +57,7 @@ ms.locfileid: "85617773"
 
 1. Убедитесь, что приложение опубликовано, а код приложения не использует `SparkSession.Stop()`.
 
-2. Чтобы передать приложение в кластер Databricks, используйте [Databricks CLI](https://docs.microsoft.com/azure/databricks/dev-tools/databricks-cli). Например, следующая команда отправляет опубликованное приложение в ваш кластер.
+2. Чтобы передать приложение в кластер Databricks, используйте [Databricks CLI](/azure/databricks/dev-tools/databricks-cli). Например, следующая команда отправляет опубликованное приложение в ваш кластер.
 
     ```console
     cd <path-to-your-app-publish-directory>
@@ -86,4 +86,4 @@ ms.locfileid: "85617773"
 
 * [Начало работы с .NET для Apache Spark](../tutorials/get-started.md)
 * [Развертывание приложения .NET для Apache Spark в Databricks](../tutorials/databricks-deployment.md)
-* [Документация по Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/)
+* [Документация по Azure Databricks](/azure/azure-databricks/)

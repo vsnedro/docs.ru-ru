@@ -2,12 +2,12 @@
 title: Команда dotnet nuget enable source
 description: Команда dotnet nuget enable source включает существующий источник в файлах конфигурации NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: 38fb5917361bd7952fef9c31ed897fb81f005155
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: b727844dd7d7cc82476e94a3f0ec4ecc6559d5ed
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463562"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537938"
 ---
 # <a name="dotnet-nuget-enable-source"></a>dotnet nuget enable source
 
@@ -39,7 +39,7 @@ dotnet nuget enable source -h|--help
 
 - **`--configfile <FILE>`**
 
-  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 ## <a name="examples"></a>Примеры
 

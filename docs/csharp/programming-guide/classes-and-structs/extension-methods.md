@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extension methods [C#]
 - methods [C#], extension
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-ms.openlocfilehash: 116087ac1aab57f2869b05f436801c7861c56eca
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 88d6cfd1b5262d4a4fae96cf53271467b5042319
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063709"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90541946"
 ---
 # <a name="extension-methods-c-programming-guide"></a>Методы расширения (Руководство по программированию в C#)
 
@@ -123,7 +123,7 @@ static class DomainEntityExtensions
 - [Parallel Programming Samples (Образцы параллельного программирования, включают множество примеров методов расширения)](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel)
 - [Лямбда-выражения](../../language-reference/operators/lambda-expressions.md)
 - [Общие сведения о стандартных операторах запроса](../concepts/linq/standard-query-operators-overview.md)
-- [Conversion Rules for Instance Parameters and their Impact (Правила преобразования для параметров экземпляра и их влияние)](https://docs.microsoft.com/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
-- [Extension Methods Interoperability between Languages (Взаимодействие между языками с помощью методов расширения)](https://docs.microsoft.com/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)
-- [Extension Methods and Curried Delegates (Методы расширения и каррированные делегаты)](https://docs.microsoft.com/archive/blogs/sreekarc/extension-methods-and-curried-delegates)
-- [Extension method Binding and Error reporting](https://docs.microsoft.com/archive/blogs/sreekarc/extension-method-binding-and-error-reporting)
+- [Conversion Rules for Instance Parameters and their Impact (Правила преобразования для параметров экземпляра и их влияние)](/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
+- [Extension Methods Interoperability between Languages (Взаимодействие между языками с помощью методов расширения)](/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)
+- [Extension Methods and Curried Delegates (Методы расширения и каррированные делегаты)](/archive/blogs/sreekarc/extension-methods-and-curried-delegates)
+- [Extension method Binding and Error reporting](/archive/blogs/sreekarc/extension-method-binding-and-error-reporting)

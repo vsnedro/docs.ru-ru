@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Office programming [C#]
 - Office programming [Visual Basic]
 ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
-ms.openlocfilehash: 76f0e2eccb5d1a59d9aaa3eed11b25dd2dd9cac3
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: eff414411c47ec83177ae6a09de4a96f47af6313
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063007"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558593"
 ---
 # <a name="walkthrough-office-programming-c-and-visual-basic"></a>Пошаговое руководство. Программирование для Office (C# и Visual Basic)
 
@@ -205,7 +205,7 @@ Visual Studio предлагает новые функции C# и Visual Basic,
 - [Лямбда-выражения (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Лямбда-выражения (C#)](../../language-reference/operators/lambda-expressions.md)
 - [Практическое руководство. Использование индексированных свойств в программировании COM-взаимодействия](./how-to-use-indexed-properties-in-com-interop-rogramming.md)
-- [Пошаговое руководство: Внедрение данных о типах из сборок Microsoft Office в Visual Studio (C#)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120))
+- [Пошаговое руководство: Внедрение данных о типах из сборок Microsoft Office в Visual Studio (C#)](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))
 - [Пошаговое руководство: внедрение типов из управляемых сборок](../../../standard/assembly/embed-types-visual-studio.md)
 - [Пошаговое руководство: создание первой надстройки VSTO для Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)
 - [COM-взаимодействие](../../../visual-basic/programming-guide/com-interop/index.md)

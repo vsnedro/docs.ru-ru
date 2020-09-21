@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Internet Protocol version 6, improvements
 - Internet Protocol version 6
 ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
-ms.openlocfilehash: dd8b0b26e449fba7479d2678aff25ed49e721a90
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c2b23705ae309436344513e54d6258e206d69da4
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502396"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90551469"
 ---
 # <a name="internet-protocol-version-6"></a>протокол IP версии 6
 Протокол IP версии 6 (IPv6) — это новый набор стандартных протоколов для сетевого уровня Интернета. IPv6 позволяет устранить множество проблем текущей версии набора интернет-протоколов (известного как IPv4), связанных с нехваткой адресов, безопасностью, автоматической настройкой, расширяемостью и т. д. IPv6 расширяет возможности Интернета для активации новых видов приложений, включая приложения для одноранговой сети и мобильных устройств. Ниже приведены основные проблемы текущего протокола IPv4.  
@@ -56,10 +56,10 @@ ms.locfileid: "84502396"
   
 - RFC 2374, An IPv6 Aggregatable Global Unicast Address Format.  
   
- Сведения, относящиеся к IP версии 6, можно также найти в [этом разделе](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379498%28v=ws.10%29).  
+ Сведения, относящиеся к IP версии 6, можно также найти в [этом разделе](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379498(v=ws.10)).  
   
 ## <a name="see-also"></a>См. также
 
-- [Пример сокетов IPv6](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms180981%28v=vs.85%29)
+- [Пример сокетов IPv6](/previous-versions/dotnet/netframework-3.0/ms180981(v=vs.85))
 - [Примеры сетевого программирования](network-programming-samples.md)
 - [Сокеты](sockets.md)

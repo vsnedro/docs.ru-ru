@@ -2,12 +2,12 @@
 title: Создание библиотеки классов .NET Standard с помощью Visual Studio для Mac
 description: Сведения о создании библиотеки классов .NET Standard с помощью Visual Studio для Mac.
 ms.date: 06/08/2020
-ms.openlocfilehash: 8e1e4ca3bc1b12d889b847d80318f3d6cd1bbe46
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.openlocfilehash: 433f6e0e2d784878c9a1616139b39ec56d695bcf
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86416009"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537643"
 ---
 # <a name="tutorial-create-a-net-standard-library-using-visual-studio-for-mac"></a>Учебник. Создание библиотеки .NET Standard с помощью Visual Studio для Mac
 
@@ -26,7 +26,7 @@ ms.locfileid: "86416009"
 * [Установите Visual Studio для Mac 8.6 или более поздней версии](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Выберите вариант установки .NET Core. Установка Xamarin является необязательным шагом для разработки .NET Core. Дополнительные сведения см. в следующих ресурсах:
 
   * [Учебник. Установка Visual Studio для Mac](/visualstudio/mac/installation).
-  * [Поддерживаемые версии macOS](../install/dependencies.md?pivots=os-macos).
+  * [Поддерживаемые версии macOS](../install/macos.md).
   * [Версии .NET Core, поддерживаемые Visual Studio для Mac](/visualstudio/mac/net-core-support).
 
 ## <a name="create-a-solution-with-a-class-library-project"></a>Создание решения с помощью проекта библиотеки классов

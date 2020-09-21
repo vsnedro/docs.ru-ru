@@ -11,12 +11,12 @@ helpviewer_keywords:
 - generics [.NET Framework], dynamic types
 - reflection emit, generic types
 ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
-ms.openlocfilehash: fe8fb731fd160ab87e5c65debf367a96bc0dea2a
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: bf308b07bf4b2a863b9825e7c8d9f412bdb6d1b8
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865129"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559217"
 ---
 # <a name="how-to-define-a-generic-type-with-reflection-emit"></a>Практическое руководство. Определение универсального типа с порождаемым отражением
 В этом разделе приведено описание способов создания простого универсального типа с двумя параметрами типа, порядка применения ограничений класса, ограничений интерфейса и специальных ограничений параметров типа, создания элементов, использующих параметры типа класса в качестве типов параметров и возвращаемых типов.  
@@ -129,5 +129,5 @@ ms.locfileid: "86865129"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Reflection.Emit.GenericTypeParameterBuilder>
-- [Использование порождаемого отражения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
-- [Сценарии динамических сборок порождаемого отражения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tt9483fk(v=vs.100))
+- [Использование порождаемого отражения](/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
+- [Сценарии динамических сборок порождаемого отражения](/previous-versions/dotnet/netframework-4.0/tt9483fk(v=vs.100))

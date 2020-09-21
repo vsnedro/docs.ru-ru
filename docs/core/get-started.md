@@ -5,12 +5,12 @@ author: adegeo
 ms.author: adegeo
 ms.date: 12/03/2019
 ms.custom: vs-dotnet
-ms.openlocfilehash: 56eebc0fc5bad6f57d93358cbbef389d6355d66b
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 6106f66dfbbe382ee9f61eb8b7bda70ab9b72d0b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656694"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538553"
 ---
 # <a name="get-started-with-net-core"></a>Начало работы с .NET Core
 
@@ -54,7 +54,7 @@ Hello World!
 | ![значок камеры для видеоролика](./media/video-icon.png "Посмотрите видео") | Посмотрите видео о том, [как установить и использовать Visual Studio Code и .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/) на канале Channel 9. |
 | ![значок камеры для видеоролика](./media/video-icon.png "Посмотрите видео") | Просмотрите видео о [.NET Core 101](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) на YouTube. |
 
-Список поддерживаемых версий Windows см. в статье [Зависимости и требования для .NET Core](install/dependencies.md?pivots=os-windows).
+Список поддерживаемых версий Windows см. в статье [Зависимости и требования для .NET Core](./install/windows.md).
 
 # <a name="linux"></a>[Linux](#tab/linux)
 
@@ -66,7 +66,7 @@ Hello World!
 |---|---|
 | ![значок камеры для видеоролика](./media/video-icon.png "Посмотрите видео") | Посмотрите видео о [начале работы с Visual Studio Code с использованием C# и .NET Core в Ubuntu](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu). |
 
-Список поддерживаемых дистрибутивов и версий Linux см. в статье [Зависимости и требования для .NET Core](install/dependencies.md?pivots=os-linux).
+Список поддерживаемых дистрибутивов и версий Linux см. в статье [Зависимости и требования для .NET Core](./install/linux.md).
 
 # <a name="macos"></a>[macOS](#tab/macos)
 
@@ -80,6 +80,6 @@ Hello World!
 |---|---|
 | ![значок камеры для видеоролика](media/video-icon.png "Посмотрите видео") | Посмотрите видео о [начале работы с Visual Studio Code с использованием C# и .NET Core в macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-VSCode-NET-Core-Mac). |
 
-Список поддерживаемых версий OS X и macOS см. в статье [Зависимости и требования для .NET Core](install/dependencies.md?pivots=os-macos).
+Список поддерживаемых версий OS X и macOS см. в статье [Зависимости и требования для .NET Core](./install/macos.md).
 
 ---

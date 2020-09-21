@@ -2,12 +2,12 @@
 title: Скрипты dotnet-install
 description: Сведения о скриптах dotnet-install, которые служат для установки пакета SDK для .NET Core и общей среды выполнения
 ms.date: 04/30/2020
-ms.openlocfilehash: c3aa6549a0b521db7fc19c6ff44665e3c4ba0c5f
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: 8f27b8a7794e84e6e2b288d6cc2ec33ffcb7600f
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024658"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538046"
 ---
 # <a name="dotnet-install-scripts-reference"></a>Справка по скриптам dotnet-install
 
@@ -131,7 +131,7 @@ dotnet-install.sh --help
 
 - **`-NoCdn|--no-cdn`**
 
-  Отключает загрузку из [сети доставки содержимого Microsoft Azure (CDN)](https://docs.microsoft.com/azure/cdn/cdn-overview) и напрямую использует некэшированный веб-канал.
+  Отключает загрузку из [сети доставки содержимого Microsoft Azure (CDN)](/azure/cdn/cdn-overview) и напрямую использует некэшированный веб-канал.
 
 - **`-NoPath|--no-path`**
 

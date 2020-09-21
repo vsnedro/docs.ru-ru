@@ -9,11 +9,12 @@ helpviewer_keywords:
 - registration-free COM interop, configuring .NET-based components
 - activation, registration-free
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
-ms.openlocfilehash: 5263e042bafdb886b313f05751c29de0f5715211
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ad25a79add84e43ba0a8e71a0f48c5ddf65108bd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622202"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554844"
 ---
 # <a name="how-to-configure-net-framework-based-com-components-for-registration-free-activation"></a>Практическое руководство. Настройка COM-компонентов на основе платформы .NET Framework для активации без регистрации
 Активация компонентов на основе платформы .NET Framework без регистрации осуществляется лишь немного сложнее, чем для COM-компонентов. При установке требуются два манифеста:  
@@ -175,6 +176,6 @@ ms.locfileid: "85622202"
 ## <a name="see-also"></a>См. также
 
 - [COM-взаимодействие без регистрации](registration-free-com-interop.md)
-- [Требования для COM-взаимодействия без регистрации](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f8h7012w(v=vs.100))
-- [Настройка COM-компонентов для активации без регистрации](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x65a421a(v=vs.100))
-- [Активация компонентов на основе платформы .NET без регистрации. Пошаговое руководство](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973915(v=msdn.10))
+- [Требования для COM-взаимодействия без регистрации](/previous-versions/dotnet/netframework-4.0/f8h7012w(v=vs.100))
+- [Настройка COM-компонентов для активации без регистрации](/previous-versions/dotnet/netframework-4.0/x65a421a(v=vs.100))
+- [Активация компонентов на основе платформы .NET без регистрации. Пошаговое руководство](/previous-versions/dotnet/articles/ms973915(v=msdn.10))

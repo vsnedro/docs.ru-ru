@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: 2094da7ec94028c112d6683620ac1146a1544dab
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 62a5f56bb7fffc453623a2c3202f288a19110158
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446980"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539515"
 ---
 ### <a name="localization-pubternal-apis-removed"></a>Локализация. Удалены API-интерфейсы Pubternal
 
-Чтобы сохранить порядок в среде общедоступных API на платформе ASP.NET Core, некоторые API локализации :::no-loc text="\"pubternal\""::: были удалены. API :::no-loc text="\"pubternal\""::: имеет модификатор доступа `public` и определен в пространстве имен, предполагающем использование намерения [internal](/dotnet/csharp/language-reference/keywords/internal).
+Чтобы сохранить порядок в среде общедоступных API на платформе ASP.NET Core, некоторые API локализации :::no-loc text="\"pubternal\""::: были удалены. API :::no-loc text="\"pubternal\""::: имеет модификатор доступа `public` и определен в пространстве имен, предполагающем использование намерения [internal](../../../../docs/csharp/language-reference/keywords/internal.md).
 
 Обсуждение этого вопроса см. на странице [dotnet/aspnetcore#22291](https://github.com/dotnet/aspnetcore/issues/22291).
 

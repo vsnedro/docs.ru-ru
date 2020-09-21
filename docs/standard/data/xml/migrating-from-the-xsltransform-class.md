@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 9404d758-679f-4ffb-995d-3d07d817659e
-ms.openlocfilehash: d18cf72f0629d347fb5f55ad7332e6046614c01b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 32fac1b5ab339dd4c71d761cf07fcde99ce1f2fa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282393"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550167"
 ---
 # <a name="migrating-from-the-xsltransform-class"></a>Миграция с класса XslTransform
 
@@ -26,7 +26,7 @@ ms.locfileid: "84282393"
 В класс <xref:System.Xml.Xsl.XslCompiledTransform> внесены и другие улучшения, благодаря которым его быстродействие выше, чем у класса <xref:System.Xml.Xsl.XslTransform>.
 
 > [!NOTE]
-> Хотя класс <xref:System.Xml.Xsl.XslCompiledTransform> имеет более высокий общий уровень производительности, чем класс <xref:System.Xml.Xsl.XslTransform>, метод <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> класса <xref:System.Xml.Xsl.XslCompiledTransform> может выполняться медленнее, чем метод <xref:System.Xml.Xsl.XslTransform.Load%2A> класса <xref:System.Xml.Xsl.XslTransform> при первом вызове преобразования. Причина этого заключается в необходимости компиляции XSLT-файла перед его загрузкой. Дополнительные сведения см. в следующей записи блога: [XslCompiledTransform выполняется медленнее, чем XslTransform?](https://docs.microsoft.com/archive/blogs/antosha/xslcompiledtransform-slower-than-xsltransform)
+> Хотя класс <xref:System.Xml.Xsl.XslCompiledTransform> имеет более высокий общий уровень производительности, чем класс <xref:System.Xml.Xsl.XslTransform>, метод <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> класса <xref:System.Xml.Xsl.XslCompiledTransform> может выполняться медленнее, чем метод <xref:System.Xml.Xsl.XslTransform.Load%2A> класса <xref:System.Xml.Xsl.XslTransform> при первом вызове преобразования. Причина этого заключается в необходимости компиляции XSLT-файла перед его загрузкой. Дополнительные сведения см. в следующей записи блога: [XslCompiledTransform выполняется медленнее, чем XslTransform?](/archive/blogs/antosha/xslcompiledtransform-slower-than-xsltransform)
 
 ## <a name="security"></a>Безопасность
 
@@ -117,11 +117,11 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
 
 Класс <xref:System.Xml.Xsl.XslCompiledTransform> дополнен функциями MSXML. Новые и улучшенные функции описываются в следующем списке.
 
-- msxsl:node-set: класс <xref:System.Xml.Xsl.XslTransform> требует, чтобы аргумент [функции node-set](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256197(v=vs.100)) являлся фрагментом результирующего дерева. Такое требование отсутствует у класса <xref:System.Xml.Xsl.XslCompiledTransform>.
+- msxsl:node-set: класс <xref:System.Xml.Xsl.XslTransform> требует, чтобы аргумент [функции node-set](/previous-versions/dotnet/netframework-4.0/ms256197(v=vs.100)) являлся фрагментом результирующего дерева. Такое требование отсутствует у класса <xref:System.Xml.Xsl.XslCompiledTransform>.
 
 - msxsl:version: эта функция поддерживается в классе <xref:System.Xml.Xsl.XslCompiledTransform>.
 
-- Функции расширения XPath: Теперь поддерживаются функции [ms:string-compare](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256114(v=vs.100)), [ms:utc](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256474(v=vs.100)), [ms:namespace-uri](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256231(v=vs.100)), [ms:local-name](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256055(v=vs.100)), [ms:number](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256155(v=vs.100)), [ms:format-date](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256099(v=vs.100)) и [ms:format-time](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256467(v=vs.100)).
+- Функции расширения XPath: Теперь поддерживаются функции [ms:string-compare](/previous-versions/dotnet/netframework-4.0/ms256114(v=vs.100)), [ms:utc](/previous-versions/dotnet/netframework-4.0/ms256474(v=vs.100)), [ms:namespace-uri](/previous-versions/dotnet/netframework-4.0/ms256231(v=vs.100)), [ms:local-name](/previous-versions/dotnet/netframework-4.0/ms256055(v=vs.100)), [ms:number](/previous-versions/dotnet/netframework-4.0/ms256155(v=vs.100)), [ms:format-date](/previous-versions/dotnet/netframework-4.0/ms256099(v=vs.100)) и [ms:format-time](/previous-versions/dotnet/netframework-4.0/ms256467(v=vs.100)).
 
 - Связанные со схемой функции расширения XPath: эти функции изначально не поддерживаются классом <xref:System.Xml.Xsl.XslCompiledTransform>. Однако их можно реализовать как функции расширения.
 

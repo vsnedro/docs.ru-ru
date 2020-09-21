@@ -3,12 +3,12 @@ title: Пользовательские шаблоны для команды dot
 description: Сведения о пользовательских шаблонах для проектов или файлов .NET любых типов.
 author: adegeo
 ms.date: 05/20/2020
-ms.openlocfilehash: cabe220917e7ff688a2c2d2df56d9bc7f8afdf56
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: 1d2e5ffcb0b279f1686855834c2357827a4dc7d5
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324499"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538099"
 ---
 # <a name="custom-templates-for-dotnet-new"></a>Пользовательские шаблоны для команды dotnet new
 
@@ -96,7 +96,7 @@ dotnet new --list
 
 ## <a name="packing-a-template-into-a-nuget-package-nupkg-file"></a>Упаковка шаблона в пакет NuGet (файл NUPKG)
 
-Пользовательский шаблон упаковывается с помощью команды [dotnet pack](dotnet-pack.md) и файла *.csproj*. Вместо этого можно применить [NuGet](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference) с помощью команды [nuget pack](https://docs.microsoft.com/nuget/tools/cli-ref-pack) и файла *.nuspec*. Но для работы NuGet требуется платформа .NET Framework в ОС Windows или [Mono](https://www.mono-project.com/) в ОС Linux и macOS.
+Пользовательский шаблон упаковывается с помощью команды [dotnet pack](dotnet-pack.md) и файла *.csproj*. Вместо этого можно применить [NuGet](/nuget/tools/nuget-exe-cli-reference) с помощью команды [nuget pack](/nuget/tools/cli-ref-pack) и файла *.nuspec*. Но для работы NuGet требуется платформа .NET Framework в ОС Windows или [Mono](https://www.mono-project.com/) в ОС Linux и macOS.
 
 Этот файл *.csproj* несколько отличается от традиционных файлов *.csproj* в проектах кода. Обратите внимание на следующие параметры.
 

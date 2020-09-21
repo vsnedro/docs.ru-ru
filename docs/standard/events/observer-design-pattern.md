@@ -13,12 +13,12 @@ helpviewer_keywords:
 - IObservable(Of T) interface
 - observer design pattern [.NET Framework]
 ms.assetid: 3680171f-f522-453c-aa4a-54f755a78f88
-ms.openlocfilehash: 4edcd2645b28095f4bd18f4918b9afa5c893bd39
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 80dac36199dd13abeab295d4b53a52615e7ae625
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662736"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559165"
 ---
 # <a name="observer-design-pattern"></a>Шаблон разработки Observer
 
@@ -47,7 +47,7 @@ ms.locfileid: "84662736"
 - Объект, содержащий данные, которые поставщик отправляет своим наблюдателям. Тип этого объекта соответствует параметру универсального типа интерфейсов <xref:System.IObservable%601> и <xref:System.IObserver%601>. Несмотря на то что этот объект может совпадать с реализацией <xref:System.IObservable%601>, чаще всего это отдельный тип.
 
 > [!NOTE]
-> Помимо реализации шаблона разработки наблюдателя, возможно, вас заинтересуют библиотеки, создаваемые с помощью интерфейсов <xref:System.IObservable%601> и <xref:System.IObserver%601>. Например, [Реактивные расширения для .NET (Rx)](https://docs.microsoft.com/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)) — это набор методов расширения и стандартных операторов последовательности LINQ для поддержки асинхронного программирования.
+> Помимо реализации шаблона разработки наблюдателя, возможно, вас заинтересуют библиотеки, создаваемые с помощью интерфейсов <xref:System.IObservable%601> и <xref:System.IObserver%601>. Например, [Реактивные расширения для .NET (Rx)](/previous-versions/dotnet/reactive-extensions/hh242985(v=vs.103)) — это набор методов расширения и стандартных операторов последовательности LINQ для поддержки асинхронного программирования.
 
 ## <a name="implementing-the-pattern"></a>Реализация шаблона
 

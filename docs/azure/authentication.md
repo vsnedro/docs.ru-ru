@@ -3,12 +3,12 @@ title: Общие сведения о проверке подлинности в
 description: Описание различных способов проверки подлинности с помощью пакета Azure SDK для .NET.
 ms.date: 06/19/2020
 ms.custom: azure-sdk-dotnet
-ms.openlocfilehash: bc2fce919d88a528f21df9f561cbe33e1119762a
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: dbae72eb9e80801d7338b210f9664f1c4e318ae0
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811383"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539181"
 ---
 # <a name="authenticate-with-the-azure-sdk-for-net"></a>Проверка подлинности с помощью пакета Azure SDK для .NET
 
@@ -25,7 +25,7 @@ ms.locfileid: "88811383"
 
 ## <a name="access-azure-resources"></a>Оценка ресурсов Azure
 
-Для взаимодействия с ресурсами Azure, например при получении секрета из Key Vault или сохранении BLOB-объекта в хранилище, многим библиотекам служб Azure требуется строка подключения или ключи для проверки подлинности. Например, База данных SQL использует [стандартную строку подключения SQL](https://docs.microsoft.com/azure/azure-sql/database/connect-query-dotnet-core). Строки подключения службы используются в других службах Azure, таких как [Cosmos DB](/azure/cosmos-db/), [Кэш Azure для Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache) и [Служебная шина Azure](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). Эти строки можно получить, воспользовавшись порталом Azure, CLI или PowerShell. Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде.
+Для взаимодействия с ресурсами Azure, например при получении секрета из Key Vault или сохранении BLOB-объекта в хранилище, многим библиотекам служб Azure требуется строка подключения или ключи для проверки подлинности. Например, База данных SQL использует [стандартную строку подключения SQL](/azure/azure-sql/database/connect-query-dotnet-core). Строки подключения службы используются в других службах Azure, таких как [Cosmos DB](/azure/cosmos-db/), [Кэш Azure для Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache) и [Служебная шина Azure](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). Эти строки можно получить, воспользовавшись порталом Azure, CLI или PowerShell. Также с помощью библиотек управления Azure для .NET можно выполнять запросы к ресурсам для создания строк подключения в коде.
 
 Методы использования строки подключения зависят от продукта. [См. документацию по продукту Azure](/azure/?product=featured).
 

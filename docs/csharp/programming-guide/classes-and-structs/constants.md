@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, constants
 - constants [C#]
 ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
-ms.openlocfilehash: 1252e214be03f8a180fadb7667ee59f36a862040
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: e4d7c96cdcfd7751e80703fe4c5a56e66f4c18c6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558430"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555358"
 ---
 # <a name="constants-c-programming-guide"></a>Константы (Руководство по программированию на C#)
 Константы — это постоянные значения, которые известны во время компиляции и не изменяются во время выполнения программы. Константы должны объявляться с модификатором [const](../../language-reference/keywords/const.md). Только [встроенные типы](../../language-reference/builtin-types/built-in-types.md) C# (за исключением <xref:System.Object?displayProperty=nameWithType>) могут быть объявлены как `const`. Пользовательские типы, включая классы, структуры и массивы, не могут объявляться как `const`. Модификатор [readonly](../../language-reference/keywords/readonly.md) позволяет создать класс, структуру или массив, которые инициализируются один раз (например, в конструкторе), и впоследствии изменить их нельзя.  
@@ -53,4 +53,4 @@ ms.locfileid: "88558430"
 - [Свойства](./properties.md)
 - [Типы](../types/index.md)
 - [readonly](../../language-reference/keywords/readonly.md)
-- [Immutability in C# Part One: Kinds of Immutability](https://docs.microsoft.com/archive/blogs/ericlippert/immutability-in-c-part-one-kinds-of-immutability) (Неизменность в C#, часть 1. Виды неизменности)
+- [Immutability in C# Part One: Kinds of Immutability](/archive/blogs/ericlippert/immutability-in-c-part-one-kinds-of-immutability) (Неизменность в C#, часть 1. Виды неизменности)

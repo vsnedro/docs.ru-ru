@@ -7,12 +7,12 @@ helpviewer_keywords:
 - .NET Framework, compatibility with earlier versions
 - .NET Framework versions, compatibility
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
-ms.openlocfilehash: 92cfdc1a2a530f9790a693d0aa1ca5f65ff1af9f
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 824765e1f3ecfd1381f9c5f8b144b7b11aee8f0b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558768"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550388"
 ---
 # <a name="version-compatibility"></a>Совместимость версий
 
@@ -53,9 +53,9 @@ ms.locfileid: "88558768"
 
 - Если приложение предназначено для .NET Framework 3.5, см. также раздел [Проблемы при миграции на .NET Framework 4](net-framework-4-migration-issues.md).
 
-- Если приложение предназначено для .NET Framework 2.0, см. также раздел [Изменения в .NET Framework 3.5 SP1](https://docs.microsoft.com/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
+- Если приложение предназначено для .NET Framework 2.0, см. также раздел [Изменения в .NET Framework 3.5 SP1](/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
 
-- Если приложение предназначено для .NET Framework 1.1, см. также раздел [Изменения в .NET Framework 2.0](https://docs.microsoft.com/previous-versions/aa570326(v=msdn.10)).
+- Если приложение предназначено для .NET Framework 1.1, см. также раздел [Изменения в .NET Framework 2.0](/previous-versions/aa570326(v=msdn.10)).
 
 - Если вы перекомпилируете существующий исходный код для запуска в платформе .NET Framework 4.5 (или ее доработанных выпусках) или разрабатываете новую версию приложения или компонента для запуска в .NET Framework 4.5 или ее доработанных выпусках на основе существующей базы исходного кода, просмотрите раздел [Что устарело в библиотеке классов](../whats-new/whats-obsolete.md) на предмет устаревших типов и членов и используйте описанный обходной путь. (Скомпилированный ранее код будет продолжать работать с типами и членами, которые отмечены как устаревшие.)
 

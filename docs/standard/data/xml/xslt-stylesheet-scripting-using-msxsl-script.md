@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
-ms.openlocfilehash: aef2471a375469f7cd4dff27084b305ef9394d5e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b2fd5ac6f03c0c66c05117a882d53af37e3f8665
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291972"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555937"
 ---
 # <a name="xslt-stylesheet-scripting-using-msxslscript"></a>Использование скриптов таблиц стилей XSLT\<msxsl:script>
 Класс <xref:System.Xml.Xsl.XslTransform> поддерживает внедрение скриптов с помощью элемента `script`.  
@@ -43,7 +43,7 @@ ms.locfileid: "84291972"
   
  Чтобы получить свидетельство из сборки используется метод `this.GetType().Assembly.Evidence`. Чтобы получить свидетельство из универсального идентификатора ресурсов (URI) используется метод `Evidence e = XmlSecureResolver.CreateEvidenceForUrl(stylesheetURI)`.  
   
- При использовании методов <xref:System.Xml.Xsl.XslTransform.Load%2A>, которые принимают объект <xref:System.Xml.XmlResolver>, но не объект `Evidence`, зона безопасности для сборки имеет по умолчанию полный уровень доверия. Дополнительные сведения см. в статьях <xref:System.Security.SecurityZone> и [Именованные наборы разрешений](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
+ При использовании методов <xref:System.Xml.Xsl.XslTransform.Load%2A>, которые принимают объект <xref:System.Xml.XmlResolver>, но не объект `Evidence`, зона безопасности для сборки имеет по умолчанию полный уровень доверия. Дополнительные сведения см. в статьях <xref:System.Security.SecurityZone> и [Именованные наборы разрешений](/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
   
  Функции можно объявлять внутри элемента `msxsl:script`. В следующей таблице показаны пространства имен, поддерживаемые по умолчанию. Можно использовать классы вне перечисленных пространств имен. Однако эти классы должны указываться полными именами.  
   

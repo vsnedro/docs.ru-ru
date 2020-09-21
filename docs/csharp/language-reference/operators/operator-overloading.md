@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - operator keyword [C#]
 - operator overloading [C#]
-ms.openlocfilehash: 4fde25cac21b2cb32efc9282578f32102a0f607f
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 65f417c06886c32da8057ae612043b95c31a31bd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916721"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90536422"
 ---
 # <a name="operator-overloading-c-reference"></a>Перегрузка операторов (справочник по C#)
 
@@ -67,4 +67,4 @@ ms.locfileid: "87916721"
 - [Операторы пользовательского преобразования](user-defined-conversion-operators.md)
 - [Рекомендации по разработке. Перегрузки операторов](../../../standard/design-guidelines/operator-overloads.md)
 - [Рекомендации по разработке. Операторы равенства](../../../standard/design-guidelines/equality-operators.md)
-- [Почему перегруженные операторы всегда являются статическими в C#?](https://docs.microsoft.com/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)
+- [Почему перегруженные операторы всегда являются статическими в C#?](/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)

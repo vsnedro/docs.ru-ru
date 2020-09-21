@@ -38,12 +38,12 @@ helpviewer_keywords:
 - integer value type
 - base types, class library
 ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
-ms.openlocfilehash: 7eb9aa9714dcb920118a6422b9f6c78775bf1a5c
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: cf2137c2ebd2f4901401ed25746febaa440a08f5
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662931"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554766"
 ---
 # <a name="net-class-library-overview"></a>Обзор библиотеки классов .NET
 
@@ -107,7 +107,7 @@ ms.locfileid: "84662931"
   
  В дополнение к базовым типам данных пространство имен <xref:System> содержит более 100 классов — от классов для обработки исключений до классов, которые работают с основными механизмами среды выполнения, такими как домены приложений и сборщик мусора. Пространство имен <xref:System> также содержит много пространств имен второго уровня.  
   
- Дополнительные сведения о пространствах имен см. в библиотеке классов .NET [браузера .NET API](https://docs.microsoft.com/dotnet/api). В справочной документации по API представлены документы по каждому пространству имен, его типам и каждому из элементов.  
+ Дополнительные сведения о пространствах имен см. в библиотеке классов .NET [браузера .NET API](../../api/index.md). В справочной документации по API представлены документы по каждому пространству имен, его типам и каждому из элементов.  
   
 ## <a name="see-also"></a>См. также
 

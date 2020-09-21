@@ -11,12 +11,12 @@ helpviewer_keywords:
 - reflection,partial trust
 - link demands
 ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
-ms.openlocfilehash: 0465cbd5ceb7d4f44bb6d10865fcbd17b8ed7af6
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 9ef2ac4897b3f8c48a0b0f402ab06eb073a5c1fa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865259"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556340"
 ---
 # <a name="security-considerations-for-reflection"></a>Соображения о безопасности для отражения
 
@@ -60,7 +60,7 @@ ms.locfileid: "86865259"
 
 Код приложения, который запускается из командной строки, выполняется с полным доверием. Если код не помечен как прозрачный, он может использовать отражение для доступа к членам, критическим с точки зрения безопасности. При выполнении того же кода с частичным доверием (например, в изолированном домене приложения) уровень доверия сборки определяет, может ли она получить доступ к коду, критическому с точки зрения безопасности: если сборка имеет строгое имя и установлена в глобальном кэше сборок, она является доверенной и может вызывать члены, критические с точки зрения безопасности. Если код не является доверенным, он становится прозрачным даже в том случае, если не был помечен как прозрачный, и не может получить доступ к членам, критическим с точки зрения безопасности.
 
-Подробнее о модели безопасности в .NET Framework 4 см. в разделе [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
+Подробнее о модели безопасности в .NET Framework 4 см. в разделе [Изменения системы безопасности](/previous-versions/dotnet/framework/security/security-changes).
 
 ## <a name="reflection-and-transparency"></a>Отражение и прозрачность
 
@@ -116,7 +116,7 @@ ms.locfileid: "86865259"
 - <xref:System.Security.Permissions.ReflectionPermissionFlag>
 - <xref:System.Security.Permissions.ReflectionPermission>
 - <xref:System.Security.Permissions.SecurityPermission>
-- [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)
+- [Изменения системы безопасности](/previous-versions/dotnet/framework/security/security-changes)
 - [Управление доступом для кода](../misc/code-access-security.md)
 - [Вопросы безопасности в порождении отражения](security-issues-in-reflection-emit.md)
 - [Просмотр сведений о типах](viewing-type-information.md)

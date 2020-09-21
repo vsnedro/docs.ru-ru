@@ -6,12 +6,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: d93bdee8d5a057be0f405fe4334d7edbdc0649ec
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 51041f5a9076ad360a84cc39704aedb50b77d40a
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174410"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679394"
 ---
 # <a name="tutorial-forecast-bike-rental-service-demand-with-time-series-analysis-and-mlnet"></a>Учебник. Прогнозирование спроса для службы проката велосипедов с помощью анализа временных рядов и ML.NET
 
@@ -73,7 +73,7 @@ ms.locfileid: "86174410"
 
 Исходный набор данных сопоставляется с таблицей базы данных в базе данных SQL Server, которая имеет следующую схему.
 
-```SQL
+```sql
 CREATE TABLE [Rentals] (
     [RentalDate] DATE NOT NULL,
     [Year] INT NOT NULL,
@@ -149,7 +149,7 @@ CREATE TABLE [Rentals] (
 
     [!code-csharp [LoadData](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L31)]
 
-1. Набор данных содержит данные за два года. Для обучения используются только данные за первый год, а данные за второй год откладываются для сравнения фактических значений с прогнозом, созданным моделью. Отфильтруйте данные с помощью преобразования [`FilterRowsByColumn`](xref:Microsoft.ML.DataOperationsCatalog.FilterRowsByColumn*).
+1. Набор данных содержит данные за два года. Для обучения используются только данные за первый год, а данные за второй год откладываются для сравнения фактических значений с прогнозом, созданным моделью. Отфильтруйте данные с помощью преобразования [`FilterRowsByColumn`](xref:Microsoft.ML.DataOperationsCatalog.FilterRowsByColumn%2A).
 
     [!code-csharp [SplitData](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L33-L34)]
 
@@ -163,7 +163,7 @@ CREATE TABLE [Rentals] (
 
     `forecastingPipeline` принимает 365 точек данных за первый год и разделяет набор данных временных рядов на выборки за 30-дневные (помесячные) интервалы, как указано в параметре `seriesLength`. Каждая из этих выборок анализируется по еженедельным (7-дневным) периодам. При определении прогнозируемого значения для предстоящих периодов используются значения за предыдущие семь дней. Модель настроена на прогнозирование семи предстоящих периодов, как определено параметром `horizon`. Прогноз является лишь предположением, то есть не всегда будет на 100 % точным. Поэтому нам лучше получить диапазон значений, который определяется верхней и нижней границами для наилучшего и наихудшего сценариев. В нашем примере для определения нижней и верхней границ устанавливается уровень достоверности 95 %. Вы можете увеличить или уменьшить этот уровень достоверности. Чем выше значение уровня достоверности, тем шире диапазон между верхней и нижней границами.
 
-1. Используйте метод [`Fit`](xref:Microsoft.ML.Transforms.TimeSeries.SsaForecastingEstimator.Fit*), чтобы обучить модель и подогнать данные по ранее определенным `forecastingPipeline`.
+1. Используйте метод [`Fit`](xref:Microsoft.ML.Transforms.TimeSeries.SsaForecastingEstimator.Fit%2A), чтобы обучить модель и подогнать данные по ранее определенным `forecastingPipeline`.
 
     [!code-csharp [TrainModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L47)]
 
@@ -180,15 +180,15 @@ CREATE TABLE [Rentals] (
     }
     ```
 
-1. В методе `Evaluate` примените метод [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) с обученной моделью, чтобы спрогнозировать данные на следующий год.
+1. В методе `Evaluate` примените метод [`Transform`](xref:Microsoft.ML.ITransformer.Transform%2A) с обученной моделью, чтобы спрогнозировать данные на следующий год.
 
     [!code-csharp [EvaluateForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L62)]
 
-1. Чтобы получить фактические значения из примера данных, используйте метод [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*).
+1. Чтобы получить фактические значения из примера данных, используйте метод [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A).
 
     [!code-csharp [GetActualRentals](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L65-L67)]
 
-1. Чтобы получить прогнозируемые значения, используйте метод [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*).
+1. Чтобы получить прогнозируемые значения, используйте метод [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A).
 
     [!code-csharp [GetForecastRentals](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L70-L72)]
 
@@ -221,7 +221,7 @@ CREATE TABLE [Rentals] (
 
     [!code-csharp [CreateTimeSeriesEngine](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L51)]
 
-1. Сохраните модель в файл с именем `MLModel.zip`, которое задано ранее определенной переменной `modelPath`. Выполните метод [`Checkpoint`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.CheckPoint*), чтобы сохранить модель.
+1. Сохраните модель в файл с именем `MLModel.zip`, которое задано ранее определенной переменной `modelPath`. Выполните метод [`Checkpoint`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.CheckPoint%2A), чтобы сохранить модель.
 
     [!code-csharp [SaveModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L52)]
 
@@ -236,7 +236,7 @@ CREATE TABLE [Rentals] (
     }
     ```
 
-1. В методе `Forecast` вызовите метод [`Predict`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.Predict*), чтобы получить прогноз по прокату на следующие семь дней.
+1. В методе `Forecast` вызовите метод [`Predict`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.Predict%2A), чтобы получить прогноз по прокату на следующие семь дней.
 
     [!code-csharp [SingleForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L91)]
 

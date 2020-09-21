@@ -9,11 +9,12 @@ helpviewer_keywords:
 - objects, interop marshaling
 - interop marshaling, objects
 ms.assetid: c2ef0284-b061-4e12-b6d3-6a502b9cc558
-ms.openlocfilehash: 7b8f94f4dfd8e8b9e8e04df8de5f8266a8581a92
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 3e07ceef62d97db4206f530aa0859b101fe41a11
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618458"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555098"
 ---
 # <a name="default-marshaling-for-objects"></a>Маршалинг по умолчанию для объектов
 
@@ -323,5 +324,5 @@ mo.SetVariant(new CurrencyWrapper(new Decimal(5.25)));
 
 - [Характеристики маршалинга по умолчанию](default-marshaling-behavior.md)
 - [Преобразуемые и непреобразуемые типы](blittable-and-non-blittable-types.md)
-- [Directional Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100)) (Атрибуты направления)
+- [Directional Attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100)) (Атрибуты направления)
 - [Копирование и закрепление](copying-and-pinning.md)

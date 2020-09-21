@@ -5,12 +5,12 @@ ms.date: 06/25/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to, title-hack-0625
-ms.openlocfilehash: 11df1d5caaa7b7974360d863f85afbff18985e47
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f168653297594a604e6f381947f31cba5376178
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73977092"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679629"
 ---
 # <a name="inspect-intermediate-data-during-processing"></a>Проверка промежуточных данных при обработке
 
@@ -62,7 +62,7 @@ HousingData[] housingData = new HousingData[]
 
 ## <a name="convert-idataview-to-ienumerable"></a>Преобразование IDataView в IEnumerable
 
-Одним из самых быстрых способов проверки [`IDataView`](xref:Microsoft.ML.IDataView) является преобразование в [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601). Чтобы преобразовать [`IDataView`](xref:Microsoft.ML.IDataView) в [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601), используйте метод [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*).
+Одним из самых быстрых способов проверки [`IDataView`](xref:Microsoft.ML.IDataView) является преобразование в [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601). Чтобы преобразовать [`IDataView`](xref:Microsoft.ML.IDataView) в [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601), используйте метод [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A).
 
 Для оптимизации производительности установите для параметра `reuseRowObject` значение `true`. Это приведет к отложенному заполнению одного объекта данными из текущей строки при оценке вместо создания объекта для каждой строки в наборе данных.
 
@@ -81,10 +81,10 @@ foreach (HousingData row in housingDataEnumerable)
 
 ## <a name="accessing-specific-indices-with-ienumerable"></a>Доступ к определенным индексам с помощью IEnumerable
 
-Если вам нужно обратиться лишь к части данных или конкретным индексам, используйте [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) и задайте для параметра `reuseRowObject` значение `false`, чтобы создавать объект для каждой из запрошенных срок в наборе данных. После этого преобразуйте [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) в массив или список.
+Если вам нужно обратиться лишь к части данных или конкретным индексам, используйте [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) и задайте для параметра `reuseRowObject` значение `false`, чтобы создавать объект для каждой из запрошенных срок в наборе данных. После этого преобразуйте [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) в массив или список.
 
 > [!WARNING]
-> Преобразование результата [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) в массив или список загрузит все запрошенные строки [`IDataView`](xref:Microsoft.ML.IDataView) в память, что может негативно повлиять на производительность.
+> Преобразование результата [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) в массив или список загрузит все запрошенные строки [`IDataView`](xref:Microsoft.ML.IDataView) в память, что может негативно повлиять на производительность.
 
 После создания коллекции можно выполнить операции с данными. Приведенный ниже фрагмент кода принимает первые три строки в наборе данных и вычисляет среднюю текущую стоимость.
 
@@ -104,7 +104,7 @@ float averageCurrentPrice = (firstRow.CurrentPrice + secondRow.CurrentPrice + th
 
 ## <a name="inspect-values-in-a-single-column"></a>Проверка значений в одном столбце
 
-В любой момент в процессе создания модели можно обратиться к значениям в отдельном столбце [`IDataView`](xref:Microsoft.ML.IDataView) с использованием метода [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn*). Метод [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn*) возвращает все значения в отдельном столбце как [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601).
+В любой момент в процессе создания модели можно обратиться к значениям в отдельном столбце [`IDataView`](xref:Microsoft.ML.IDataView) с использованием метода [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn%2A). Метод [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn%2A) возвращает все значения в отдельном столбце как [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601).
 
 ```csharp
 IEnumerable<float> sizeColumn = data.GetColumn<float>("Size").ToList();
@@ -112,7 +112,7 @@ IEnumerable<float> sizeColumn = data.GetColumn<float>("Size").ToList();
 
 ## <a name="inspect-idataview-values-one-row-at-a-time"></a>Проверка значений IDataView по одной строке за раз
 
-[`IDataView`](xref:Microsoft.ML.IDataView) вычисляется в отложенном режиме. Для выполнения итераций по строкам [`IDataView`](xref:Microsoft.ML.IDataView) без преобразования в [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601), как показано в предыдущих разделах этого документа, создайте [`DataViewRowCursor`](xref:Microsoft.ML.DataViewRowCursor), используя метод [`GetRowCursor`](xref:Microsoft.ML.IDataView.GetRowCursor*) и передав [DataViewSchema](xref:Microsoft.ML.DataViewSchema) интерфейса [`IDataView`](xref:Microsoft.ML.IDataView) в качестве параметра. Затем для выполнения итерации по строкам используйте метод курсора [`MoveNext`](xref:Microsoft.ML.DataViewRowCursor.MoveNext*) вместе с делегатами [`ValueGetter`](xref:Microsoft.ML.ValueGetter%601), чтобы извлечь соответствующие значения из каждого столбца.
+[`IDataView`](xref:Microsoft.ML.IDataView) вычисляется в отложенном режиме. Для выполнения итераций по строкам [`IDataView`](xref:Microsoft.ML.IDataView) без преобразования в [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601), как показано в предыдущих разделах этого документа, создайте [`DataViewRowCursor`](xref:Microsoft.ML.DataViewRowCursor), используя метод [`GetRowCursor`](xref:Microsoft.ML.IDataView.GetRowCursor%2A) и передав [DataViewSchema](xref:Microsoft.ML.DataViewSchema) интерфейса [`IDataView`](xref:Microsoft.ML.IDataView) в качестве параметра. Затем для выполнения итерации по строкам используйте метод курсора [`MoveNext`](xref:Microsoft.ML.DataViewRowCursor.MoveNext%2A) вместе с делегатами [`ValueGetter`](xref:Microsoft.ML.ValueGetter%601), чтобы извлечь соответствующие значения из каждого столбца.
 
 > [!IMPORTANT]
 > Для повышения производительности векторы в ML.NET используют [`VBuffer`](xref:Microsoft.ML.Data.VBuffer%601) вместо собственных типов коллекции (то есть `Vector`,`float[]`).
@@ -150,7 +150,7 @@ using (DataViewRowCursor cursor = data.GetRowCursor(columns))
 > [!WARNING]
 > Не используйте `Preview` в рабочем коде, потому что он предназначен для отладки и может снизить производительность.
 
-Процесс создания модели является экспериментальным и итеративным. Чтобы просмотреть данные после предварительной обработки или обучения модели машинного обучения на подмножестве данных, используйте метод [`Preview`](xref:Microsoft.ML.DebuggerExtensions.Preview*), возвращающий [`DataDebuggerPreview`](xref:Microsoft.ML.Data.DataDebuggerPreview). Результат представляет собой объект со свойствами `ColumnView` и `RowView`, которые являются [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) и содержат значения в определенном столбце или строке. Укажите число строк, к которым применяется преобразование, с помощью параметра `maxRows`.
+Процесс создания модели является экспериментальным и итеративным. Чтобы просмотреть данные после предварительной обработки или обучения модели машинного обучения на подмножестве данных, используйте метод [`Preview`](xref:Microsoft.ML.DebuggerExtensions.Preview%2A), возвращающий [`DataDebuggerPreview`](xref:Microsoft.ML.Data.DataDebuggerPreview). Результат представляет собой объект со свойствами `ColumnView` и `RowView`, которые являются [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) и содержат значения в определенном столбце или строке. Укажите число строк, к которым применяется преобразование, с помощью параметра `maxRows`.
 
 ![Объект предварительного просмотра отладчика данных](./media/inspect-intermediate-data-ml-net/data-debugger-preview-01.png)
 

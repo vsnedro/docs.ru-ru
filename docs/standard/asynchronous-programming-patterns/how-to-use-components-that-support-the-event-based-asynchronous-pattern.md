@@ -18,19 +18,19 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
-ms.openlocfilehash: e23a9b28cff9428cbc8896515ce71db85c832243
-ms.sourcegitcommit: b78018c850590dfc0348301e1748b779c28604cc
+ms.openlocfilehash: c41a695226068615efca5132985e50503060148b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89379152"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555670"
 ---
 # <a name="how-to-use-components-that-support-the-event-based-asynchronous-pattern"></a>Практическое руководство. Использование компонентов, поддерживающих асинхронную модель, основанную на событиях
 Многие компоненты предоставляют возможность выполнять работу асинхронно. Например, компоненты <xref:System.Media.SoundPlayer> и <xref:System.Windows.Forms.PictureBox> позволяют загружать звуки и изображения в фоновом режиме, не прерывая работу основного потока.  
   
  Чтобы применить асинхронные методы для класса, поддерживающего [асинхронную модель на основе событий](event-based-asynchronous-pattern-overview.md), зачастую достаточно присоединить обработчик события к событию _имя_метода_**Completed** нужного компонента, как для любого другого события. При вызове метода _имя_метода_**Async** приложение будет работать без прерывания, пока не будет создано событие _имя_метода_**Completed**. В обработчике событий вы можете проверить параметр <xref:System.ComponentModel.AsyncCompletedEventArgs>, чтобы определить, была ли асинхронная операция выполнена успешно или отменена.  
   
- Дополнительные сведения об обработчиках событий см. в статье [Обзор обработчиков событий (Windows Forms)](../../framework/winforms/event-handlers-overview-windows-forms.md).  
+ Дополнительные сведения об обработчиках событий см. в статье [Обзор обработчиков событий (Windows Forms)](/dotnet/desktop/winforms/event-handlers-overview-windows-forms).  
   
  Следующая процедура демонстрирует, как использовать возможность асинхронной загрузки изображений в элементе управления <xref:System.Windows.Forms.PictureBox>.  
   
@@ -62,5 +62,5 @@ ms.locfileid: "89379152"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Практическое руководство. Фоновое выполнение операции](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [Практическое руководство. Фоновое выполнение операции](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
 - [Обзор асинхронной модели, основанной на событиях](event-based-asynchronous-pattern-overview.md)

@@ -2,12 +2,12 @@
 title: Каталог идентификаторов сред выполнения (RID) в .NET Core
 description: Сведения об идентификаторах сред выполнения и их использовании в .NET Core.
 ms.date: 02/22/2019
-ms.openlocfilehash: 719c84248b955ec05d7cd9b361c7e5ebea6aa37b
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 096ce8e33a82df3b9de682ed16e10fbe9f07fd03
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414569"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538228"
 ---
 # <a name="net-core-rid-catalog"></a>Каталог идентификаторов сред выполнения (RID) в .NET Core
 
@@ -108,7 +108,7 @@ SDK для .NET Core 2.0 представляет концепцию перен
   - `win10-arm`
   - `win10-arm64`
 
-Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](install/dependencies.md?pivots=os-windows).
+Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](./install/windows.md#dependencies).
 
 ## <a name="linux-rids"></a>Идентификаторы RID для Linux
 
@@ -127,7 +127,7 @@ SDK для .NET Core 2.0 представляет концепцию перен
   - `tizen.4.0.0`
   - `tizen.5.0.0`
 
-Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](install/dependencies.md?pivots=os-linux).
+Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](./install/linux.md).
 
 ## <a name="macos-rids"></a>Относительные идентификаторы macOS
 
@@ -146,7 +146,7 @@ SDK для .NET Core 2.0 представляет концепцию перен
 - macOS 10.14 Mojave (.NET Core 1.1 или более поздние версии):
   - `osx.10.14-x64`
 
-Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](install/dependencies.md?pivots=os-macos).
+Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](./install/macos.md#dependencies).
 
 ## <a name="see-also"></a>См. также
 

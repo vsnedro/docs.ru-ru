@@ -3,18 +3,18 @@ title: LINQ и строки (C#)
 description: LINQ позволяет запрашивать и преобразовывать строки и коллекции строк. Запросы LINQ можно комбинировать с традиционными строковыми функциями и регулярными выражениями C#.
 ms.date: 07/20/2015
 ms.assetid: dbe2d657-b3f3-487e-b645-21fb2d71cd7b
-ms.openlocfilehash: c515a0c56ad6473f93c6339540e4ed0245bb5bd2
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 0500d821335659fa29dd4809513f38dac0a8b193
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87165608"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556724"
 ---
 # <a name="linq-and-strings-c"></a>LINQ и строки (C#)
 
 LINQ можно использовать для запроса и преобразования строк и коллекций строк. При этом лучше всего его потенциал раскрывается при работе с частично структурированными данными в текстовых файлах. Запросы LINQ можно комбинировать с традиционными строковыми функциями и регулярными выражениями. Например, используя метод <xref:System.String.Split%2A?displayProperty=nameWithType> или <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType>, можно создать массив строк, который затем можно запрашивать или изменять с помощью LINQ. Метод <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> можно использовать в предложении `where` запроса LINQ. Также LINQ можно использовать для запроса или изменения результатов <xref:System.Text.RegularExpressions.MatchCollection>, возвращаемых регулярным выражением.
 
-Методы, описанные в этом разделе, позволяют преобразовать частично структурированные текстовые данные в XML. См. сведения в руководстве по [созданию кода XML из CSV-файлов](how-to-generate-xml-from-csv-files.md).
+Методы, описанные в этом разделе, позволяют преобразовать частично структурированные текстовые данные в XML. См. сведения в руководстве по [созданию кода XML из CSV-файлов](../../../../standard/linq/generate-xml-csv-files.md).
 
 Примеры в этом разделе делятся на две категории:
 
@@ -76,4 +76,4 @@ LINQ можно использовать для запроса и преобра
 ## <a name="see-also"></a>См. также
 
 - [LINQ (C#)](index.md)
-- [Создание кода XML из CSV-файлов](how-to-generate-xml-from-csv-files.md)
+- [Создание кода XML из CSV-файлов](../../../../standard/linq/generate-xml-csv-files.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c8e1c91f4fee8aa896b6617c815fe2a4b6d22f2a
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: fa24c664e9f7cf6da78d0703c7ebb52c8ebbec20
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614888"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606162"
 ---
 ### <a name="accessibility-improvements-in-windows-forms-controls"></a>Улучшения специальных возможностей для элементов управления Windows Forms
 
@@ -40,7 +40,7 @@ ms.locfileid: "85614888"
 </configuration>
 ```
 
-В приложениях, предназначенных для .NET Framework 4.7.1 или более поздней версии, где требуется сохранить предыдущие функции специальных возможностей, можно выбрать прежние функции специальных возможностей, явно установив этот переключатель AppContext в значение `true`.<p/>Обзор автоматизации пользовательского интерфейса см. в разделе [Общие сведения об автоматизации пользовательского интерфейса](~/docs/framework/ui-automation/ui-automation-overview.md).<p/>**Добавлена поддержка шаблонов и свойств автоматизации пользовательского интерфейса**<br/>Клиенты специальных возможностей могут использовать новые функции WinForms с помощью общедоступных и описанных шаблонов вызова. Эти шаблоны предназначены не только для WinForms. Например, клиенты специальных возможностей могут вызывать метод QueryInterface для интерфейса IAccessible (MAAS), чтобы получить интерфейс IServiceProvider. Если этот интерфейс доступен, клиенты могут использовать его метод QueryService для запроса интерфейса IAccessibleEx. Дополнительные сведения см. в разделе [Использование интерфейса IAccessibleEx из клиента](https://docs.microsoft.com/windows/desktop/WinAuto/using-iaccessibleex-from-a-client). Начиная с версии .NET Framework 4.7.1 интерфейсы IServiceProvider и [IAccessibleEx](https://docs.microsoft.com/windows/desktop/WinAuto/iaccessibleex) (где применимо) доступны объектам специальных возможностей WinForms.<p/>В .NET Framework 4.7.1 добавлена поддержка следующих шаблонов и свойств автоматизации пользовательского интерфейса:
+В приложениях, предназначенных для .NET Framework 4.7.1 или более поздней версии, где требуется сохранить предыдущие функции специальных возможностей, можно выбрать прежние функции специальных возможностей, явно установив этот переключатель AppContext в значение `true`.<p/>Обзор автоматизации пользовательского интерфейса см. в разделе [Общие сведения об автоматизации пользовательского интерфейса](~/docs/framework/ui-automation/ui-automation-overview.md).<p/>**Добавлена поддержка шаблонов и свойств автоматизации пользовательского интерфейса**<br/>Клиенты специальных возможностей могут использовать новые функции WinForms с помощью общедоступных и описанных шаблонов вызова. Эти шаблоны предназначены не только для WinForms. Например, клиенты специальных возможностей могут вызывать метод QueryInterface для интерфейса IAccessible (MAAS), чтобы получить интерфейс IServiceProvider. Если этот интерфейс доступен, клиенты могут использовать его метод QueryService для запроса интерфейса IAccessibleEx. Дополнительные сведения см. в разделе [Использование интерфейса IAccessibleEx из клиента](/windows/desktop/WinAuto/using-iaccessibleex-from-a-client). Начиная с версии .NET Framework 4.7.1 интерфейсы IServiceProvider и [IAccessibleEx](/windows/desktop/WinAuto/iaccessibleex) (где применимо) доступны объектам специальных возможностей WinForms.<p/>В .NET Framework 4.7.1 добавлена поддержка следующих шаблонов и свойств автоматизации пользовательского интерфейса:
 
 - Элементы управления <xref:System.Windows.Forms.ToolStripSplitButton> и <xref:System.Windows.Forms.ComboBox> поддерживают [шаблон развертывания/свертывания](~/docs/framework/ui-automation/implementing-the-ui-automation-expandcollapse-control-pattern.md).
 - Элемент управления <xref:System.Windows.Forms.ToolStripMenuItem> использует для свойства [ControlType](~/docs/framework/ui-automation/ui-automation-support-for-the-menubar-control-type.md) значение <xref:System.Windows.Automation.ControlType.MenuItem?displayProperty=nameWithType>.
