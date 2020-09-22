@@ -7,17 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - BC42324
 ms.assetid: b5c2c4bd-3b2a-4a73-aaeb-55728eb03b68
-ms.openlocfilehash: aa3e1d6281af22b301a4697b265ed3fbf23e3de4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e7975dc767ae652359c904271d6610be34e4cb80
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373918"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90870241"
 ---
-# <a name="using-the-iteration-variable-in-a-lambda-expression-may-have-unexpected-results"></a><span data-ttu-id="a3711-102">Использование переменной итератора в лямбда-выражении может привести к неожиданным результатам</span><span class="sxs-lookup"><span data-stu-id="a3711-102">Using the iteration variable in a lambda expression may have unexpected results</span></span>
-<span data-ttu-id="a3711-103">Использование переменной итерации в лямбда-выражении может привести к непредвиденным результатам.</span><span class="sxs-lookup"><span data-stu-id="a3711-103">Using the iteration variable in a lambda expression may have unexpected results.</span></span> <span data-ttu-id="a3711-104">Вместо этого создайте локальную переменную в цикле и присвойте ей значение переменной итерации.</span><span class="sxs-lookup"><span data-stu-id="a3711-104">Instead, create a local variable within the loop and assign it the value of the iteration variable.</span></span>  
+# <a name="using-the-iteration-variable-in-a-lambda-expression-may-have-unexpected-results"></a><span data-ttu-id="bc01a-102">Использование переменной итератора в лямбда-выражении может привести к неожиданным результатам</span><span class="sxs-lookup"><span data-stu-id="bc01a-102">Using the iteration variable in a lambda expression may have unexpected results</span></span>
+
+<span data-ttu-id="bc01a-103">Использование переменной итерации в лямбда-выражении может привести к непредвиденным результатам.</span><span class="sxs-lookup"><span data-stu-id="bc01a-103">Using the iteration variable in a lambda expression may have unexpected results.</span></span> <span data-ttu-id="bc01a-104">Вместо этого создайте локальную переменную в цикле и присвойте ей значение переменной итерации.</span><span class="sxs-lookup"><span data-stu-id="bc01a-104">Instead, create a local variable within the loop and assign it the value of the iteration variable.</span></span>  
   
- <span data-ttu-id="a3711-105">Это предупреждение появляется при использовании переменной итерации цикла в лямбда-выражении, объявленном внутри цикла.</span><span class="sxs-lookup"><span data-stu-id="a3711-105">This warning appears when you use a loop iteration variable in a lambda expression that is declared inside the loop.</span></span> <span data-ttu-id="a3711-106">Например, следующий пример приводит к отображению предупреждения.</span><span class="sxs-lookup"><span data-stu-id="a3711-106">For example, the following example causes the warning to appear.</span></span>  
+ <span data-ttu-id="bc01a-105">Это предупреждение появляется при использовании переменной итерации цикла в лямбда-выражении, объявленном внутри цикла.</span><span class="sxs-lookup"><span data-stu-id="bc01a-105">This warning appears when you use a loop iteration variable in a lambda expression that is declared inside the loop.</span></span> <span data-ttu-id="bc01a-106">Например, следующий пример приводит к отображению предупреждения.</span><span class="sxs-lookup"><span data-stu-id="bc01a-106">For example, the following example causes the warning to appear.</span></span>  
   
 ```vb  
 For i As Integer = 1 To 10  
@@ -26,7 +27,7 @@ For i As Integer = 1 To 10
 Next  
 ```  
   
- <span data-ttu-id="a3711-107">В следующем примере показаны непредвиденные результаты, которые могут возникнуть.</span><span class="sxs-lookup"><span data-stu-id="a3711-107">The following example shows the unexpected results that might occur.</span></span>  
+ <span data-ttu-id="bc01a-107">В следующем примере показаны непредвиденные результаты, которые могут возникнуть.</span><span class="sxs-lookup"><span data-stu-id="bc01a-107">The following example shows the unexpected results that might occur.</span></span>  
   
 ```vb  
 Module Module1  
@@ -45,7 +46,7 @@ Module Module1
 End Module  
 ```  
   
- <span data-ttu-id="a3711-108">`For`Цикл создает массив лямбда-выражений, каждый из которых возвращает значение переменной итерации цикла `i` .</span><span class="sxs-lookup"><span data-stu-id="a3711-108">The `For` loop creates an array of lambda expressions, each of which returns the value of the loop iteration variable `i`.</span></span> <span data-ttu-id="a3711-109">При вычислении лямбда-выражений в `For Each` цикле можно ожидать отображения значений 0, 1, 2, 3 и 4, последовательные значения `i` в `For` цикле.</span><span class="sxs-lookup"><span data-stu-id="a3711-109">When the lambda expressions are evaluated in the `For Each` loop, you might expect to see 0, 1, 2, 3, and 4 displayed, the successive values of `i` in the `For` loop.</span></span> <span data-ttu-id="a3711-110">Вместо этого отображается последнее значение, `i` Отображаемое пять раз:</span><span class="sxs-lookup"><span data-stu-id="a3711-110">Instead, you see the final value of `i` displayed five times:</span></span>  
+ <span data-ttu-id="bc01a-108">`For`Цикл создает массив лямбда-выражений, каждый из которых возвращает значение переменной итерации цикла `i` .</span><span class="sxs-lookup"><span data-stu-id="bc01a-108">The `For` loop creates an array of lambda expressions, each of which returns the value of the loop iteration variable `i`.</span></span> <span data-ttu-id="bc01a-109">При вычислении лямбда-выражений в `For Each` цикле можно ожидать отображения значений 0, 1, 2, 3 и 4, последовательные значения `i` в `For` цикле.</span><span class="sxs-lookup"><span data-stu-id="bc01a-109">When the lambda expressions are evaluated in the `For Each` loop, you might expect to see 0, 1, 2, 3, and 4 displayed, the successive values of `i` in the `For` loop.</span></span> <span data-ttu-id="bc01a-110">Вместо этого отображается последнее значение, `i` Отображаемое пять раз:</span><span class="sxs-lookup"><span data-stu-id="bc01a-110">Instead, you see the final value of `i` displayed five times:</span></span>  
   
  `5`  
   
@@ -57,13 +58,13 @@ End Module
   
  `5`  
   
- <span data-ttu-id="a3711-111">По умолчанию данное сообщение является предупреждением.</span><span class="sxs-lookup"><span data-stu-id="a3711-111">By default, this message is a warning.</span></span> <span data-ttu-id="a3711-112">Дополнительные сведения о сокрытии предупреждений и обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).</span><span class="sxs-lookup"><span data-stu-id="a3711-112">For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).</span></span>  
+ <span data-ttu-id="bc01a-111">По умолчанию данное сообщение является предупреждением.</span><span class="sxs-lookup"><span data-stu-id="bc01a-111">By default, this message is a warning.</span></span> <span data-ttu-id="bc01a-112">Дополнительные сведения о сокрытии предупреждений и обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).</span><span class="sxs-lookup"><span data-stu-id="bc01a-112">For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).</span></span>  
   
- <span data-ttu-id="a3711-113">**Идентификатор ошибки:** BC42324</span><span class="sxs-lookup"><span data-stu-id="a3711-113">**Error ID:** BC42324</span></span>  
+ <span data-ttu-id="bc01a-113">**Идентификатор ошибки:** BC42324</span><span class="sxs-lookup"><span data-stu-id="bc01a-113">**Error ID:** BC42324</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="a3711-114">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="a3711-114">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="bc01a-114">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="bc01a-114">To correct this error</span></span>  
   
-- <span data-ttu-id="a3711-115">Присвойте значение переменной итерации локальной переменной и используйте локальную переменную в лямбда-выражении.</span><span class="sxs-lookup"><span data-stu-id="a3711-115">Assign the value of the iteration variable to a local variable, and use the local variable in the lambda expression.</span></span>  
+- <span data-ttu-id="bc01a-115">Присвойте значение переменной итерации локальной переменной и используйте локальную переменную в лямбда-выражении.</span><span class="sxs-lookup"><span data-stu-id="bc01a-115">Assign the value of the iteration variable to a local variable, and use the local variable in the lambda expression.</span></span>  
   
 ```vb  
 Module Module1  
@@ -83,6 +84,6 @@ Module Module1
 End Module  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="a3711-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a3711-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bc01a-116">См. также</span><span class="sxs-lookup"><span data-stu-id="bc01a-116">See also</span></span>
 
-- [<span data-ttu-id="a3711-117">Лямбда-выражения</span><span class="sxs-lookup"><span data-stu-id="a3711-117">Lambda Expressions</span></span>](../../programming-guide/language-features/procedures/lambda-expressions.md)
+- [<span data-ttu-id="bc01a-117">Лямбда-выражения</span><span class="sxs-lookup"><span data-stu-id="bc01a-117">Lambda Expressions</span></span>](../../programming-guide/language-features/procedures/lambda-expressions.md)

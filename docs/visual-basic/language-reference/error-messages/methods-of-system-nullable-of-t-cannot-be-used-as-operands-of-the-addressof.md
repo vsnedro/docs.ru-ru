@@ -7,23 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - BC32126
 ms.assetid: 2325668b-e2ad-40ee-a1ec-30450236c20d
-ms.openlocfilehash: 61c6fe7c33b3292066e653304ded43a863413723
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 421766918c03c2378bbf906f85c5855f44ffbdea
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397224"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873740"
 ---
-# <a name="methods-of-systemnullableof-t-cannot-be-used-as-operands-of-the-addressof-operator"></a><span data-ttu-id="1a6e0-102">Методы System.Nullable(Of T) нельзя использовать в качестве операндов оператора AddressOf</span><span class="sxs-lookup"><span data-stu-id="1a6e0-102">Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator</span></span>
-<span data-ttu-id="1a6e0-103">Оператор использует `AddressOf` оператор с операндом, представляющим процедуру <xref:System.Nullable%601> структуры.</span><span class="sxs-lookup"><span data-stu-id="1a6e0-103">A statement uses the `AddressOf` operator with an operand that represents a procedure of the <xref:System.Nullable%601> structure.</span></span>  
+# <a name="methods-of-systemnullableof-t-cannot-be-used-as-operands-of-the-addressof-operator"></a><span data-ttu-id="5009c-102">Методы System.Nullable(Of T) нельзя использовать в качестве операндов оператора AddressOf</span><span class="sxs-lookup"><span data-stu-id="5009c-102">Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator</span></span>
+
+<span data-ttu-id="5009c-103">Оператор использует `AddressOf` оператор с операндом, представляющим процедуру <xref:System.Nullable%601> структуры.</span><span class="sxs-lookup"><span data-stu-id="5009c-103">A statement uses the `AddressOf` operator with an operand that represents a procedure of the <xref:System.Nullable%601> structure.</span></span>  
   
- <span data-ttu-id="1a6e0-104">**Идентификатор ошибки:** BC32126</span><span class="sxs-lookup"><span data-stu-id="1a6e0-104">**Error ID:** BC32126</span></span>  
+ <span data-ttu-id="5009c-104">**Идентификатор ошибки:** BC32126</span><span class="sxs-lookup"><span data-stu-id="5009c-104">**Error ID:** BC32126</span></span>  
   
-## <a name="to-correct-this-error"></a><span data-ttu-id="1a6e0-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="1a6e0-105">To correct this error</span></span>  
+## <a name="to-correct-this-error"></a><span data-ttu-id="5009c-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="5009c-105">To correct this error</span></span>  
   
-- <span data-ttu-id="1a6e0-106">Замените имя процедуры в `AddressOf` предложении операндом, который не является членом <xref:System.Nullable%601> .</span><span class="sxs-lookup"><span data-stu-id="1a6e0-106">Replace the procedure name in the `AddressOf` clause with an operand that is not a member of <xref:System.Nullable%601>.</span></span>  
+- <span data-ttu-id="5009c-106">Замените имя процедуры в `AddressOf` предложении операндом, который не является членом <xref:System.Nullable%601> .</span><span class="sxs-lookup"><span data-stu-id="5009c-106">Replace the procedure name in the `AddressOf` clause with an operand that is not a member of <xref:System.Nullable%601>.</span></span>  
   
-- <span data-ttu-id="1a6e0-107">Напишите класс, который заключает в оболочку метод <xref:System.Nullable%601> , который требуется использовать.</span><span class="sxs-lookup"><span data-stu-id="1a6e0-107">Write a class that wraps the method of <xref:System.Nullable%601> that you want to use.</span></span> <span data-ttu-id="1a6e0-108">В следующем примере `NullableWrapper` класс определяет новый метод с именем `GetValueOrDefault` .</span><span class="sxs-lookup"><span data-stu-id="1a6e0-108">In the following example, the `NullableWrapper` class defines a new method named `GetValueOrDefault`.</span></span> <span data-ttu-id="1a6e0-109">Поскольку этот новый метод не является членом <xref:System.Nullable%601> , он может быть применен к `nullInstance` экземпляру типа, допускающему значение null, для формирования аргумента для `AddressOf` .</span><span class="sxs-lookup"><span data-stu-id="1a6e0-109">Because this new method is not a member of <xref:System.Nullable%601>, it can be applied to `nullInstance`, an instance of a nullable type, to form an argument for `AddressOf`.</span></span>  
+- <span data-ttu-id="5009c-107">Напишите класс, который заключает в оболочку метод <xref:System.Nullable%601> , который требуется использовать.</span><span class="sxs-lookup"><span data-stu-id="5009c-107">Write a class that wraps the method of <xref:System.Nullable%601> that you want to use.</span></span> <span data-ttu-id="5009c-108">В следующем примере `NullableWrapper` класс определяет новый метод с именем `GetValueOrDefault` .</span><span class="sxs-lookup"><span data-stu-id="5009c-108">In the following example, the `NullableWrapper` class defines a new method named `GetValueOrDefault`.</span></span> <span data-ttu-id="5009c-109">Поскольку этот новый метод не является членом <xref:System.Nullable%601> , он может быть применен к `nullInstance` экземпляру типа, допускающему значение null, для формирования аргумента для `AddressOf` .</span><span class="sxs-lookup"><span data-stu-id="5009c-109">Because this new method is not a member of <xref:System.Nullable%601>, it can be applied to `nullInstance`, an instance of a nullable type, to form an argument for `AddressOf`.</span></span>  
   
 ```vb  
 Module Module1  
@@ -61,9 +62,9 @@ Module Module1
 End Module  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="1a6e0-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="1a6e0-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5009c-110">См. также</span><span class="sxs-lookup"><span data-stu-id="5009c-110">See also</span></span>
 
 - <xref:System.Nullable%601>
-- [<span data-ttu-id="1a6e0-111">Оператор AddressOf</span><span class="sxs-lookup"><span data-stu-id="1a6e0-111">AddressOf Operator</span></span>](../operators/addressof-operator.md)
-- [<span data-ttu-id="1a6e0-112">Типы значений, допускающие значение null</span><span class="sxs-lookup"><span data-stu-id="1a6e0-112">Nullable Value Types</span></span>](../../programming-guide/language-features/data-types/nullable-value-types.md)
-- [<span data-ttu-id="1a6e0-113">Generic Types in Visual Basic</span><span class="sxs-lookup"><span data-stu-id="1a6e0-113">Generic Types in Visual Basic</span></span>](../../programming-guide/language-features/data-types/generic-types.md)
+- [<span data-ttu-id="5009c-111">Оператор AddressOf</span><span class="sxs-lookup"><span data-stu-id="5009c-111">AddressOf Operator</span></span>](../operators/addressof-operator.md)
+- [<span data-ttu-id="5009c-112">Типы значений, допускающие значение NULL</span><span class="sxs-lookup"><span data-stu-id="5009c-112">Nullable Value Types</span></span>](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [<span data-ttu-id="5009c-113">Generic Types in Visual Basic</span><span class="sxs-lookup"><span data-stu-id="5009c-113">Generic Types in Visual Basic</span></span>](../../programming-guide/language-features/data-types/generic-types.md)
