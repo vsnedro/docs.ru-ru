@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30969
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
-ms.openlocfilehash: 4b9f74f0627268752b0ba3c3816fe9d4cc8a231b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ffc6b3c180c86abe272d56d0ecf3042d8181da59
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404827"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90870893"
 ---
 # <a name="reference-required-to-assembly-assemblyidentity-containing-type-typename-but-a-suitable-reference-could-not-be-found-due-to-ambiguity-between-projects-projectname1-and-projectname2"></a>Требуется ссылка на сборку \<assemblyidentity>, содержащую тип \<typename>, но подходящую ссылку не удалось найти из-за неоднозначности между проектами \<projectname1> и \<projectname2>
+
 Выражение использует тип, например класс, структуру, интерфейс, перечисление или делегат, который определен за пределами проекта. Однако имеются ссылки проекта на несколько сборок, определяющих этот тип.  
   
  Названные проекты создают сборки с тем же именем. Поэтому компилятор не может определить, какую сборку следует использовать для типа, к которому осуществляется доступ.  
@@ -29,7 +30,7 @@ ms.locfileid: "84404827"
   
 2. В свойствах проекта добавьте ссылку на файл, содержащий сборку, определяющую используемый тип.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление ссылками в проекте](/visualstudio/ide/managing-references-in-a-project)
 - [References to Declared Elements](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)

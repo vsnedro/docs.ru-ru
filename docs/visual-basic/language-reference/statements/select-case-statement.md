@@ -21,14 +21,15 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Select Case statements
 - Case statement [Visual Basic], Select...Case
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
-ms.openlocfilehash: 3dedd43f920b493a0aca9ce48460b00815e1af5c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 750e765390ad223976b000fe64e656fa2d62a34b
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404243"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90871783"
 ---
 # <a name="selectcase-statement-visual-basic"></a>Оператор Select...Case (Visual Basic)
+
 Выполняет одну из нескольких групп инструкций в зависимости от значения выражения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -52,7 +53,8 @@ End Select
 |`elsestatements`|Необязательный элемент. Одна или несколько следующих инструкций `Case Else` , которые выполняются, если не `testexpression` соответствуют ни одному из предложений в `expressionlist` ни одной из `Case` инструкций.|  
 |`End Select`|Завершает определение `Select` конструкции.... `Case`|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Если `testexpression` соответствует любому `Case` `expressionlist` предложению, инструкции, следующие за этим `Case` оператором, выполняются до следующей `Case` `Case Else` инструкции, или `End Select` . Затем управление передается следующему оператору `End Select` . Если `testexpression` соответствует `expressionlist` предложению в более чем одном `Case` предложении, выполняются только инструкции, следующие за первым совпадением.  
   
  `Case Else`Оператор используется для представления `elsestatements` для запуска, если между `testexpression` `expressionlist` предложением и в других инструкциях не найдено совпадений `Case` . Хотя это и не является обязательным, рекомендуется иметь `Case Else` в конструкции оператор, `Select Case` обрабатывающий непредвиденные `testexpression` значения. Если `Case` `expressionlist` предложение не совпадает `testexpression` и отсутствует `Case Else` оператор, управление передается оператору ниже `End Select` .  
@@ -75,17 +77,18 @@ End Select
   
  Если код в `Case` `Case Else` блоке инструкций или не требует выполнения каких-либо инструкций в блоке, он может выйти из блока с помощью `Exit Select` инструкции. Это немедленно передает управление оператору, приведенному ниже `End Select` .  
   
- `Select Case`конструкции могут быть вложенными. Каждая вложенная `Select Case` конструкция должна иметь соответствующий `End Select` оператор и должна быть полностью заключена в один `Case` `Case Else` блок инструкций или внешней конструкции, `Select Case` внутри которой он вложен.  
+ `Select Case` конструкции могут быть вложенными. Каждая вложенная `Select Case` конструкция должна иметь соответствующий `End Select` оператор и должна быть полностью заключена в один `Case` `Case Else` блок инструкций или внешней конструкции, `Select Case` внутри которой он вложен.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере конструкция используется `Select Case` для записи строки, соответствующей значению переменной `number` . Вторая `Case` инструкция содержит значение, совпадающее с текущим значением `number` , поэтому инструкция, записывающая "между 6 и 8 включительно", выполняется.  
   
  [!code-vb[VbVbalrStatements#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#54)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
-- [End, инструкция](end-statement.md)
+- [Оператор End](end-statement.md)
 - [Оператор If…Then…Else](if-then-else-statement.md)
 - [Оператор Option Compare](option-compare-statement.md)
 - [Оператор Exit](exit-statement.md)

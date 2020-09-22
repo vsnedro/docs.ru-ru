@@ -8,14 +8,15 @@ helpviewer_keywords:
 - BC30420
 - Sub Main error message
 ms.assetid: a006d57d-4dd3-46a7-9026-ca9a31470da7
-ms.openlocfilehash: 2ede68b20fb2066d98ad36ac14e8fcda97f49d88
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 17804ae5d2ed57ed2b270110e49dbaf73ce08d8b
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373944"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90870550"
 ---
 # <a name="sub-main-was-not-found-in-name"></a>В \<name> не найдено объявление Sub Main
+
 `Sub Main` отсутствует или для него указано неверное расположение.  
   
  **Идентификатор ошибки:** BC30420  
@@ -26,7 +27,7 @@ ms.locfileid: "84373944"
   
 2. Укажите расположение объекта запуска проекта в поле **Форма запуска** **конструктора проектов**.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Sub](../statements/sub-statement.md)
 - [Процедура Main в Visual Basic](../../programming-guide/program-structure/main-procedure.md)

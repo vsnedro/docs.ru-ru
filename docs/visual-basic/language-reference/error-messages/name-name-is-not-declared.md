@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30451
 ms.assetid: 765f099b-e21e-47c6-a906-a065444e56b3
-ms.openlocfilehash: 6fa4639b97e4314d8752ae520e94a58a189b7cbb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 76c1ab4fb5f1f8e4c76a06110f4b0f9026cca201
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397172"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90871543"
 ---
 # <a name="name-name-is-not-declared"></a>Имя \<name> не объявлено
+
 Оператор ссылается на программный элемент, но компилятор не может найти элемент с таким же именем.  
   
  **Идентификатор ошибки:** BC30451  
@@ -31,7 +32,7 @@ ms.locfileid: "84397172"
 
 5. Если вы не используете полностью определенный тип или тип и имя члена (например, код ссылается на свойство, как `MethodInfo.Name` вместо `System.Reflection.MethodInfo.Name` ), добавьте [оператор Imports](../statements/imports-statement-net-namespace-and-type.md).
 
-6. Если вы пытаетесь скомпилировать проект в стиле SDK (проект с \* VBPROJ-файлом, который начинается со строки `<Project Sdk="Microsoft.NET.Sdk">` ), а сообщение об ошибке ссылается на тип или член в сборке Microsoft. VisualBasic. dll, настройте приложение для компиляции со ссылкой на библиотеку времени выполнения Visual Basic. По умолчанию подмножество библиотеки внедряется в сборку в проекте в стиле пакета SDK.
+6. Если вы пытаетесь скомпилировать проект в стиле пакета SDK (проект с \* VBPROJ-файлом, который начинается со строки `<Project Sdk="Microsoft.NET.Sdk">` ), а сообщение об ошибке ссылается на тип или член сборки Microsoft.VisualBasic.dll, настройте приложение для компиляции со ссылкой на библиотеку времени выполнения Visual Basic. По умолчанию подмножество библиотеки внедряется в сборку в проекте в стиле пакета SDK.
 
    Например, следующий пример не удается скомпилировать, так как <xref:Microsoft.VisualBasic.CompilerServices.Conversions.ChangeType%2A?displayProperty=fullName> не удается найти метод. Он не внедряется в подмножество Visual Basic среды выполнения, входящей в состав приложения.  
 
@@ -41,7 +42,7 @@ ms.locfileid: "84397172"
 
    [!code-xml[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/vbruntime.vbproj?highlight=6)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сводка по объявлениям и константам](../keywords/declarations-and-constants-summary.md)
 - [Соглашения об именах Visual Basic](../../programming-guide/program-structure/naming-conventions.md)
