@@ -14,14 +14,15 @@ helpviewer_keywords:
 - logical negation
 - operators [Visual Basic], negation
 ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
-ms.openlocfilehash: 56cdeb80a217dbce15921eddd6a43d8d1b049376
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7d0beea16a2ac00be090c6a241f9790a0ba33390
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401463"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874793"
 ---
 # <a name="not-operator-visual-basic"></a>Оператор Not (Visual Basic)
+
 Выполняет логическое отрицание `Boolean` выражения или побитовое отрицание в числовом выражении.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,13 +32,15 @@ result = Not expression
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `result`  
  Обязательный. Произвольное выражение типа `Boolean` или числового типа.  
   
  `expression`  
  Обязательный. Произвольное выражение типа `Boolean` или числового типа.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Для `Boolean` выражений в следующей таблице показано, как `result` определяется.  
   
 |Если `expression` имеет значение |Значение `result` равно|  
@@ -56,12 +59,15 @@ result = Not expression
 > Так как логические и побитовые операторы имеют более низкий приоритет, чем другие арифметические и реляционные операторы, все битовые операции должны быть заключены в круглые скобки, чтобы обеспечить точное выполнение.  
   
 ## <a name="data-types"></a>Типы данных  
+
  Для логического отрицания тип данных результата — `Boolean` . Для побитового отрицания тип данных результата такой же, как и у `expression` . Однако если выражение имеет значение `Decimal` , результатом будет `Long` .  
   
 ## <a name="overloading"></a>Перегрузка  
+
  `Not`Оператор можно *перегрузить*, что означает, что класс или структура может переопределить свое поведение, если его операнд имеет тип этого класса или структуры. Если код использует этот оператор для такого класса или структуры, убедитесь, что вы понимаете его переопределенное поведение. Для получения дополнительной информации см. [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `Not` для выполнения логического отрицания в `Boolean` выражении. Результатом является `Boolean` значение, представляющее обратную величину значения выражения.  
   
  [!code-vb[VbVbalrOperators#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#33)]  
@@ -69,13 +75,14 @@ result = Not expression
  В предыдущем примере создаются результаты `False` и `True` соответственно.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `Not` для выполнения логического отрицания отдельных битов числового выражения. Бит в результирующем шаблоне имеет значение, противоположное соответствующему биту в шаблоне операнда, включая бит знака.  
   
  [!code-vb[VbVbalrOperators#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#34)]  
   
  В предыдущем примере создаются результаты – 11, – 9 и – 7 соответственно.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Логические (побитовые) операторы (Visual Basic)](logical-bitwise-operators.md)
 - [Порядок применения операторов в Visual Basic](operator-precedence.md)

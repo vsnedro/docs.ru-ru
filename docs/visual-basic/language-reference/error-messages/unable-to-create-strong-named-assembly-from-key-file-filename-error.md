@@ -7,22 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC31026
 ms.assetid: 5dd09785-bc10-4ae7-ba24-b795057aca31
-ms.openlocfilehash: df6de037cf7cd5b41ed417a8ebfa6f9586e4ebb4
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: db89f4cbaa7008e59f3698eec0f2603cfc06439e
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61764183"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873570"
 ---
-# <a name="unable-to-create-strong-named-assembly-from-key-file-filename-error"></a>Не удается создать сборку со строгим именем из файла ключа "\<имя_файла >": \<ошибка >
+# <a name="unable-to-create-strong-named-assembly-from-key-file-filename-error"></a>Не удается создать сборку со строгим именем из файла ключа \<filename>: \<error>
+
 Не удалось создать сборку со строгим именем из указанного файла ключа.  
   
  **Идентификатор ошибки:** BC31026  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1. Убедитесь, что указан правильный файл ключа и что он не блокирован другим приложением.  
+1. Убедитесь, что указан правильный файл ключа, и что он не заблокирован другим приложением.  
   
 ## <a name="see-also"></a>См. также
 
-- [Sn.exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md))
+- [Sn.exe (средство Strong Name)](../../../framework/tools/sn-exe-strong-name-tool.md))

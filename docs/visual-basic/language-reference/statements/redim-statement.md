@@ -26,14 +26,15 @@ helpviewer_keywords:
 - declaration statements [Visual Basic]
 - scalar variables [Visual Basic]
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
-ms.openlocfilehash: 82f19762865fdf3c3f32a0349e21e3b97bebd567
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 17bc806f2e92c61f1dd7425de40b1a68f926a583
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404282"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90872026"
 ---
 # <a name="redim-statement-visual-basic"></a>Оператор ReDim (Visual Basic)
+
 Перераспределяет область хранения для переменной массива.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -47,10 +48,11 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
 |Термин|Определение|  
 |----------|----------------|  
 |`Preserve`|Необязательный элемент. Модификатор, используемый для сохранения данных в существующем массиве при изменении размера только последнего измерения.|  
-|`name`|Обязательный. Имя переменной массива. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
-|`boundlist`|Обязательный. Список границ для всех измерений переопределенного массива.|  
+|`name`|Обязательный элемент. Имя переменной массива. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
+|`boundlist`|Обязательный элемент. Список границ для всех измерений переопределенного массива.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Для изменения размера одного или нескольких из уже объявленных измерений массива можно использовать оператор `ReDim`. Если у вас есть большой массив и некоторые из входящих в него элементов больше не требуются, `ReDim` позволяет освободить память, уменьшив размер массива. Если же массив требует дополнительных элементов, `ReDim` может их добавить.  
   
  Оператор `ReDim` предназначен только для массивов. Он не подходит для скалярных величин (переменных, содержащих единственное значение), коллекций или структур. Обратите внимание, что при объявлении переменной типа `Array` у оператора `ReDim` не будет достаточной информации о типе для создания нового массива.  
@@ -79,13 +81,14 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
 ## <a name="behavior"></a>Поведение  
   
-- **Замена массива.** `ReDim`Освобождает существующий массив и создает новый массив с тем же рангом. Новый массив заменяет освобожденный массив в переменной массива.  
+- **Замена массива.** `ReDim` Освобождает существующий массив и создает новый массив с тем же рангом. Новый массив заменяет освобожденный массив в переменной массива.  
   
 - **Инициализация без использования оператора Preserve.** Если не указать `Preserve` , `ReDim` инициализирует элементы нового массива, используя значение по умолчанию для их типа данных.  
   
 - **Инициализация с использованием оператора Preserve.** Если указано `Preserve` , Visual Basic копирует элементы из существующего массива в новый массив.  
   
 ## <a name="example"></a>Пример  
+
  В приведенном ниже примере производится увеличение размера последнего измерения динамического массива без потери существующих данных, а затем уменьшение размера массива с частичной потерей данных. Кроме того, размер массива уменьшается до исходного значения и все элементы массива инициализируются повторно.  
   
  [!code-vb[VbVbalrStatements#52](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#52)]  
@@ -100,7 +103,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  Дополнительные примеры см. в разделе [массивы](../../programming-guide/language-features/arrays/index.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IndexOutOfRangeException>
 - [Оператор Const](const-statement.md)

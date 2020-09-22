@@ -4,14 +4,15 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID52
 ms.assetid: d0e96aea-7621-48f6-a78b-5d37d18aaa4e
-ms.openlocfilehash: 11e866d9a8da7ad1ecc5f788fc31f6ac96d32f2c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d57a9e78e6ae179d3050e5a92399ca731fa16ba7
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409833"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874899"
 ---
 # <a name="bad-file-name-or-number"></a>Недопустимое имя файла или номер
+
 Произошла ошибка при попытке доступа к указанному файлу. Среди возможных причин этой ошибки:  
   
 - Оператор ссылается на файл с именем или номером файла, который не был указан в `FileOpen` инструкции или был указан в `FileOpen` инструкции, но впоследствии был закрыт.  
@@ -28,7 +29,7 @@ ms.locfileid: "84409833"
   
 3. Проверьте имена файлов, чтобы убедиться, что они соответствуют соглашениям об операционной системе.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
 - [Соглашения об именах Visual Basic](../../programming-guide/program-structure/naming-conventions.md)

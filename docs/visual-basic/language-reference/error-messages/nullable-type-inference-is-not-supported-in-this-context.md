@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC36629
 ms.assetid: 0a1e2dbc-d9a4-433d-9306-c5540782b81d
-ms.openlocfilehash: 52e5391fbcf30a4dada4d64a0e810c900ea85806
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f2d3bcdaccfd993da1eebf81ae961f35eb22b294
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409391"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873680"
 ---
 # <a name="nullable-type-inference-is-not-supported-in-this-context"></a>Выведение типа Nullable не поддерживается в данном контексте
+
 Типы значений и структуры могут быть объявлены как допускающие значение null.  
   
 ```vb  
@@ -36,7 +37,7 @@ Dim b As Integer?
   
 - Используйте `As` предложение, чтобы объявить переменную как тип значения, допускающего значение null.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Типы значений, допускающие значение null](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [Типы значений, допускающие значение NULL](../../programming-guide/language-features/data-types/nullable-value-types.md)
 - [Вывод локального типа](../../programming-guide/language-features/variables/local-type-inference.md)

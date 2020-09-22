@@ -4,14 +4,15 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID10
 ms.assetid: de6713a6-51d7-4edb-8515-d5fb544e2091
-ms.openlocfilehash: 4a86460104b6c4d9d6791e60f6f377cec0030425
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 05fb8e2ef788920fd200d79a75eec3d7c252b123
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363037"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873587"
 ---
 # <a name="this-array-is-fixed-or-temporarily-locked-visual-basic"></a>Массив имеет фиксированный размер или временно заблокирован (Visual Basic)
+
 Эта ошибка может быть вызвана следующими причинами.  
   
 - Использование `ReDim` для изменения количества элементов массива фиксированного размера.  
@@ -28,6 +29,6 @@ ms.locfileid: "84363037"
   
 3. Определите, что блокирует и исследует `Variant` его.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Массивы](../../programming-guide/language-features/arrays/index.md)

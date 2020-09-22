@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30106
 ms.assetid: 2c5363e1-62c2-4f5a-b675-c7337aeb363d
-ms.openlocfilehash: 4d8ffd2c4ad0a386053ced0f98503969723c7168
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3fc2744bb471eabd9345994b28fbef3ebc76f00d
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409378"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873663"
 ---
 # <a name="number-of-indices-exceeds-the-number-of-dimensions-of-the-indexed-array"></a>Количество индексов превышает размерность индексированного массива
+
 Число индексов, используемых для доступа к элементу массива, должно быть точно равно рангу массива, то есть числу измерений, объявленных для него.  
   
  **Идентификатор ошибки:** BC30106  
@@ -35,6 +36,6 @@ ms.locfileid: "84409378"
     gameBoard(1, 0) = "O"  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Массивы](../../programming-guide/language-features/arrays/index.md)

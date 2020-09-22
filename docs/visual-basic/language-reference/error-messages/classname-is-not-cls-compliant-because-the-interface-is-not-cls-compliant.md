@@ -7,19 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BC40029
 ms.assetid: 178452f3-5575-4da0-9d6c-53bcddb6a338
-ms.openlocfilehash: 24a0866544cc3cd058672d18c6a7670b0b1bb489
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: a482d14094a3fa86b56ca84af46c45e6093416c5
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64584219"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874624"
 ---
-# <a name="classname-is-not-cls-compliant-because-the-interface-interfacename-it-implements-is-not-cls-compliant"></a>"\<имя_класса >" не является CLS-совместимым, поскольку интерфейс "\<имя_интерфейса >" он реализует, несовместим с CLS
+# <a name="classname-is-not-cls-compliant-because-the-interface-interfacename-it-implements-is-not-cls-compliant"></a>\<classname> несовместимо с CLS, так как интерфейс \<interfacename>, который он реализует, несовместим с CLS
+
 Класс или интерфейс помечен как `<CLSCompliant(True)>` , если он наследует или реализует тип, помеченный как `<CLSCompliant(False)>` или не помеченный совсем.  
   
- Для класса или интерфейса стандарту [независимость от языка и независимые от языка компоненты](../../../standard/language-independence-and-language-independent-components.md) (CLS), вся его иерархия наследования должна быть совместимой. Это означает, что каждый тип, от которого он наследуется прямо или косвенно, должен быть совместимым. Аналогично, если класс реализует один или несколько интерфейсов, то все они должны быть совместимыми по всей иерархии наследования.  
+ Чтобы класс или интерфейс был совместим с [независимостьм от языка и независимыми от языка компонентами](../../../standard/language-independence-and-language-independent-components.md) (CLS), его полная иерархия наследования должна быть соответствующей. Это означает, что каждый тип, от которого он наследуется прямо или косвенно, должен быть соответствующим. Аналогично, если класс реализует один или несколько интерфейсов, то все они должны быть совместимыми по всей иерархии наследования.  
   
- Когда вы применяете атрибут <xref:System.CLSCompliantAttribute> к программному элементу, вы задаете для параметра `isCompliant` атрибута значение `True` или `False` , чтобы указать на совместимость или несовместимость. Для этого параметра нет значения по умолчанию, и вы должны предоставить значение.  
+ При применении атрибута <xref:System.CLSCompliantAttribute> к программному элементу вы задаете для параметра `isCompliant` атрибута значение `True` или `False` , чтобы указать совместимость или несовместимость. Для этого параметра нет значения по умолчанию, и вы должны предоставить значение.  
   
  Если вы не применяете <xref:System.CLSCompliantAttribute> к элементу, он считается несовместимым.  
   

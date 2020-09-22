@@ -9,14 +9,15 @@ helpviewer_keywords:
 - While statement [Visual Basic]
 - While...End While statements [Visual Basic]
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-ms.openlocfilehash: d9eb8cb95d46e860aa127954d7b44e37991d4a13
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e3ab95f43e101a9ad8abe6fa61b94ae7542e409c
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84391590"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90869480"
 ---
 # <a name="whileend-while-statement-visual-basic"></a>Оператор While... End While (Visual Basic)
+
 Выполняет последовательность операторов, если заданное условие имеет значение `True` .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,10 +40,11 @@ End While
 |`statements`|Необязательный элемент. Один или несколько следующих инструкций `While` , которые выполняются каждый раз, `condition` — `True` .|  
 |`Continue While`|Необязательный элемент. Передает управление следующей итерации `While` блока.|  
 |`Exit While`|Необязательный элемент. Передает управление за пределы `While` блока.|  
-|`End While`|Обязательный. Завершает определение блока `While`.|  
+|`End While`|Обязательный элемент. Завершает определение блока `While`.|  
   
-## <a name="remarks"></a>Комментарии  
- Используйте `While...End While` структуру, если необходимо повторить набор инструкций неопределенное количество раз, если условие остается `True` . Если вы хотите обеспечить большую гибкость при тестировании условия или результата тестирования, вы можете предпочесть оператору [Do... Loop, инструкция](do-loop-statement.md). Если нужно повторить инструкции заданное число раз, то [для... ](for-next-statement.md)Обычно лучше подходит следующий оператор.  
+## <a name="remarks"></a>Remarks  
+
+ Используйте `While...End While` структуру, если необходимо повторить набор инструкций неопределенное количество раз, если условие остается `True` . Если вы хотите обеспечить большую гибкость при тестировании условия или результата тестирования, вы можете предпочесть оператору [Do... Loop, инструкция](do-loop-statement.md). Если нужно повторить инструкции заданное число раз, то [для... ](for-next-statement.md) Обычно лучше подходит следующий оператор.  
   
 > [!NOTE]
 > `While`Ключевое слово также используется в [инструкции Do... Оператор Loop](do-loop-statement.md), [предложение Skip While](../queries/skip-while-clause.md) и [предложение Take While](../queries/take-while-clause.md).  
@@ -56,7 +58,8 @@ End While
  Можно вложить `While` циклы, поместив один цикл в другой. Можно также вкладывать различные виды управляющих структур друг в друга. Дополнительные сведения см. в разделе [вложенные структуры управления](../../programming-guide/language-features/control-flow/nested-control-structures.md).  
   
 ## <a name="exit-while"></a>Выйти, пока  
- Оператор [Exit While](exit-statement.md) может предоставить другой способ выхода из `While` цикла. `Exit While`немедленно передает управление оператору, который следует за `End While` оператором.  
+
+ Оператор [Exit While](exit-statement.md) может предоставить другой способ выхода из `While` цикла. `Exit While` немедленно передает управление оператору, который следует за `End While` оператором.  
   
  Обычно используется `Exit While` после вычисления некоторого условия (например, в `If...Then...Else` структуре). Может потребоваться выйти из цикла, если обнаруживается условие, которое делает ненужным или невозможным продолжение итераций, например ошибочное значение или запрос на завершение. Можно использовать `Exit While` при проверке условия, которое может вызвать *бесконечный цикл*, что является циклом, который может выполнять очень большое или даже бесконечное число раз. Затем можно использовать `Exit While` для экранирования цикла.  
   
@@ -67,21 +70,24 @@ End While
  `Continue While`Оператор немедленно передает управление следующей итерации цикла. Дополнительные сведения см. в разделе [оператор continue](continue-statement.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере операторы в цикле продолжают выполняться до тех пор, пока `index` переменная не будет больше 10.  
   
  [!code-vb[VbVbalrStatements#171](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#171)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано использование `Continue While` `Exit While` операторов и.  
   
  [!code-vb[VbVbalrStatements#172](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#172)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере считываются все строки в текстовом файле. <xref:System.IO.File.OpenText%2A>Метод открывает файл и возвращает объект <xref:System.IO.StreamReader> , считывающий символы. В `While` условии <xref:System.IO.StreamReader.Peek%2A> метод `StreamReader` определяет, содержит ли файл дополнительные символы.  
   
  [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Циклические структуры](../../programming-guide/language-features/control-flow/loop-structures.md)
 - [Оператор Do…Loop](do-loop-statement.md)

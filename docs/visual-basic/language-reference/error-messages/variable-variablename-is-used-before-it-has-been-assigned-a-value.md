@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC42104
 ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
-ms.openlocfilehash: 34718243172d3b1a238a813268e672d62c4eeb6c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a60afe0907e974dfb345d20d18762cb5f84127d9
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406538"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875029"
 ---
 # <a name="variable-variablename-is-used-before-it-has-been-assigned-a-value"></a>Переменная \<variablename> используется до того, как ей присвоено значение
+
 Переменная " \<variablename> " используется до того, как ей было присвоено значение. Во время выполнения может возникнуть исключение "пустая ссылка".  
   
  Приложение имеет по крайней мере один возможный путь в коде, который считывает переменную, прежде чем ей будет присвоено значение.  
@@ -31,7 +32,7 @@ ms.locfileid: "84406538"
   
 - Один из способов гарантировать, что переменная всегда имеет допустимое значение, — инициализировать ее как часть объявления. См. раздел "Инициализация" в [операторе Dim](../statements/dim-statement.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Dim](../statements/dim-statement.md)
 - [Объявление переменной](../../programming-guide/language-features/variables/variable-declaration.md)

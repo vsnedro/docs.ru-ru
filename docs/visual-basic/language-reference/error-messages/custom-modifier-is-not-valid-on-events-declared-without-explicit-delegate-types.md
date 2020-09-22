@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC31122
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
-ms.openlocfilehash: 0c5a4188fedf9685afdd1cde4c1de93a0b43b919
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 88cdeccd7a3411b57a77116bde64d0a2cf8e537d
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409791"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874542"
 ---
 # <a name="custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types"></a>Модификатор Custom недопустим для событий, объявленных без явных делегируемых типов
+
 В отличие от нестандартного события, `Custom Event` объявление требует наличия `As` предложения, следующего за именем события, которое явно указывает тип делегата для события.  
   
  Ненастраиваемые события могут быть определены с помощью предложения, `As` явного типа делегата или списка параметров, непосредственно следующего за именем события.  
@@ -36,11 +37,12 @@ ms.locfileid: "84409791"
      [!code-vb[VbVbalrEventError#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#19)]  
   
 ## <a name="example"></a>Пример  
+
  В этом примере объявляется `Custom Event` и указывается обязательное `As` предложение с типом делегата.  
   
  [!code-vb[VbVbalrEventError#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#2)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Event](../statements/event-statement.md)
 - [Оператор Delegate](../statements/delegate-statement.md)

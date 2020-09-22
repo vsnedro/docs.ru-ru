@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC32008
 ms.assetid: dc6abba0-a9ad-450f-8899-87265bc84abc
-ms.openlocfilehash: 7056bbf2b4de26feba3bfbe0e02b3239311271c9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4cc0a1221dcf65aa2a16fd7d82568c8544f27fdb
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84382176"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875090"
 ---
 # <a name="typename-is-a-delegate-type"></a>\<typename> является типом делегата
+
 " \<typename> " является типом делегата. Конструкция делегата позволяет использовать только одно выражение AddressOf в качестве списка аргументов. Часто выражение AddressOf можно использовать вместо конструкции делегата.  
   
  `New`Предложение, создающее экземпляр класса делегата, предоставляет конструктору делегата недопустимый список аргументов.  
@@ -29,7 +30,7 @@ ms.locfileid: "84382176"
   
 - Используйте одно `AddressOf` выражение в списке аргументов для класса делегата в `New` предложении.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор New](../operators/new-operator.md)
 - [Оператор AddressOf](../operators/addressof-operator.md)

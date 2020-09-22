@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30148
 ms.assetid: 4426e8fc-cb39-4eb8-ba95-503cd32fcc89
-ms.openlocfilehash: 2b9d2568fb64e4af72733ad1f3dee58aaee650e5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e336494ad78e9835f62ad54bb4dbf91a63172a25
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402983"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874102"
 ---
 # <a name="first-statement-of-this-sub-new-must-be-a-call-to-mybasenew-or-myclassnew-no-accessible-constructor-without-parameters"></a>Первый оператор этого Sub New должен быть вызовом MyBase.New или MyClass.New (Нет доступного конструктора без параметров)
+
 Первый оператор в "подnew" должен быть вызовом "MyBase. New" или "MyClass. New", так как базовый класс " \<basename> " из " \<derivedname> " не имеет доступного "подnew", который может быть вызван без аргументов.  
   
  В производном классе каждый конструктор должен вызывать конструктор базового класса ( `MyBase.New` ). Если базовый класс содержит конструктор без параметров, доступный для производных классов, то `MyBase.New` может вызываться автоматически. В противном случае конструктор базового класса должен вызываться с параметрами, и это не может быть сделано автоматически. В этом случае первый оператор каждого конструктора производного класса должен вызвать параметризованный конструктор для базового класса или вызвать другой конструктор в производном классе, который выполняет вызов конструктора базового класса.  
@@ -27,6 +28,6 @@ ms.locfileid: "84402983"
   
      Например, если базовый класс имеет конструктор, объявленный как `Public Sub New(ByVal index as Integer)` , то первым оператором в конструкторе производного класса может быть `MyBase.New(100)` .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основы наследования](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)

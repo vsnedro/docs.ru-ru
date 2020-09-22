@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC32061
 ms.assetid: b17821b7-fa14-4397-a211-6e2a14079f09
-ms.openlocfilehash: e2ba411a5f0db21539a9cf99c7645b8c9309caab
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4f1db6bdbe6f25d0362b55acd95e716fbc2417ed
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409560"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874280"
 ---
 # <a name="expression-cannot-be-used-as-a-type-constraint"></a>\<expression> нельзя использовать в качестве ограничения типа
+
 Список ограничений включает выражение, которое не представляет допустимое ограничение для параметра типа.  
   
  Список ограничений налагает требования на аргумент типа, передаваемый в параметр типа. Вы можете указать приведенные ниже требования в любой комбинации.  
@@ -43,7 +44,7 @@ ms.locfileid: "84409560"
   
 - Если выражение ссылается на интерфейс или класс, убедитесь, что у компилятора есть доступ к этому интерфейсу или классу. Возможно, вам потребуется проверить его имя и добавить ссылку в проект. Дополнительные сведения см. в разделе "ссылки на проекты" статьи [ссылки на объявленные элементы](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [Value Types and Reference Types](../../programming-guide/language-features/data-types/value-types-and-reference-types.md)

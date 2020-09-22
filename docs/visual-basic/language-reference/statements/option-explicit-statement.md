@@ -11,14 +11,15 @@ helpviewer_keywords:
 - explicit variable declaration
 - Option Explicit statement [Visual Basic]
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
-ms.openlocfilehash: a352df0323cfeca1ea0e206ae45c3f85a2cd7da3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 44bf8205ec071710ee3660968ab3c3e9af33f74d
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404373"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874936"
 ---
 # <a name="option-explicit-statement-visual-basic"></a>Оператор Option Explicit (Visual Basic)
+
 Заставляет явно объявлять все переменные в файле или допускает неявные объявления переменных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -28,13 +29,15 @@ Option Explicit { On | Off }
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `On`  
  Необязательный элемент. Включает `Option Explicit` проверку. Если параметр `On` или `Off` не указан, по умолчанию используется значение `On` .  
   
  `Off`  
  Необязательный элемент. Отключает `Option Explicit` проверку.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Если `Option Explicit On` или `Option Explicit` присутствует в файле, необходимо явно объявить все переменные с помощью `Dim` `ReDim` инструкций или. При попытке использовать необъявленное имя переменной во время компиляции возникает ошибка. `Option Explicit Off`Оператор допускает неявное объявление переменных.  
   
  Если используется оператор `Option Explicit`, он должен быть указан в файле до всех прочих операторов.  
@@ -43,6 +46,7 @@ Option Explicit { On | Off }
 > Установка `Option Explicit` в `Off` обычно не является хорошей практикой. Вы можете допустить ошибку при вводе имени переменной в одном или нескольких местах, что приведет к непредвиденным результатам при выполнении программы.  
   
 ## <a name="when-an-option-explicit-statement-is-not-present"></a>Если отсутствует оператор Option Explicit  
+
  Если исходный код не содержит `Option Explicit` инструкцию, то используется **параметр Explicit** на [странице Компиляция, конструктор проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) . Если используется компилятор командной строки, используется параметр компилятора [-оптионексплиЦит](../../reference/command-line-compiler/optionexplicit.md) .  
   
 #### <a name="to-set-option-explicit-in-the-ide"></a>Установка параметра Explicit в интегрированной среде разработки  
@@ -60,13 +64,14 @@ Option Explicit { On | Off }
 - Включите параметр компилятора [-оптионексплиЦит](../../reference/command-line-compiler/optionexplicit.md) в команду **vbc** .  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `Option Explicit` для принудительного явного объявления всех переменных. Попытка использовать необъявленную переменную вызывает ошибку во время компиляции.  
   
  [!code-vb[VbVbalrStatements#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#47)]  
   
  [!code-vb[VbVbalrStatements#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#48)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Dim](dim-statement.md)
 - [Оператор reDim](redim-statement.md)

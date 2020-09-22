@@ -7,17 +7,19 @@ helpviewer_keywords:
 - Private keyword [Visual Basic]
 - Private keyword [Visual Basic], syntax
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
-ms.openlocfilehash: 524f03e77e075bef08a1b41b563985de41baacb6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 59f1c1666ce38923a2861244fb377007cd0fa992
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404814"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874981"
 ---
 # <a name="private-visual-basic"></a>Private (Visual Basic)
+
 Указывает, что один или несколько объявленных программных элементов доступны только в контексте объявления, включая из любых содержащихся в них типов.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Если программный элемент представляет собственные функции или содержит конфиденциальные данные, обычно требуется ограничить доступ к нему как можно более строгим. Максимальное ограничение достигается за счет предоставления только модулю, классу или структуре, определяющей его доступ. Чтобы ограничить доступ к элементу таким образом, его можно объявить с помощью `Private` .  
 
 > [!NOTE]
@@ -59,11 +61,11 @@ ms.locfileid: "84404814"
   
  [Оператор Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Открытый](public.md)
 - [От](protected.md)
-- [Объявление](friend.md)
+- [Friend](friend.md)
 - [Частный защищенный](./private-protected.md)
 - [Protected Friend](./protected-friend.md)
 - [Уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)

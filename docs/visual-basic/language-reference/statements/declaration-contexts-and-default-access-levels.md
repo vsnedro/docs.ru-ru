@@ -9,17 +9,19 @@ helpviewer_keywords:
 - access levels, Visual Basic
 - access levels, default levels
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
-ms.openlocfilehash: b5bb943a062ac648f88645fb6de1acb42213071c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a659481b34b8b44f1f387b464d5d9656ed98ab3f
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404801"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874952"
 ---
 # <a name="declaration-contexts-and-default-access-levels-visual-basic"></a>Контексты объявления и уровни доступа по умолчанию (Visual Basic)
+
 В этом разделе описано, какие типы Visual Basic могут быть объявлены, в которых можно объявлять другие типы, а также уровни доступа по умолчанию, если они не указаны.  
   
 ## <a name="declaration-context-levels"></a>Уровни контекста объявления  
+
  *Контекстом объявления* программного элемента является область кода, в которой он объявлен. Часто это другой программный элемент, который затем называется *содержащим элементом*.  
   
  Ниже приведены уровни для контекстов объявления.  
@@ -34,25 +36,25 @@ ms.locfileid: "84404801"
   
 |Объявленный элемент|Уровень пространства имен|Уровень модуля|Уровень процедуры|  
 |----------------------|---------------------|------------------|---------------------|  
-|Variable ([оператор Dim](dim-statement.md))|Нельзя использовать|`Private`( `Public` в `Structure` , недопустимо в `Interface` )|`Public`|  
-|Constant ([оператор Const](const-statement.md))|Нельзя использовать|`Private`( `Public` в `Structure` , недопустимо в `Interface` )|`Public`|  
-|Enumeration ([оператор Enum](enum-statement.md))|`Friend`|`Public`|Нельзя использовать|  
-|Class ([оператор Class](class-statement.md))|`Friend`|`Public`|Нельзя использовать|  
-|Structure ([оператор Structure](structure-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|Variable ([оператор Dim](dim-statement.md))|Не разрешено|`Private` ( `Public` в `Structure` , недопустимо в `Interface` )|`Public`|  
+|Constant ([оператор Const](const-statement.md))|Не разрешено|`Private` ( `Public` в `Structure` , недопустимо в `Interface` )|`Public`|  
+|Enumeration ([оператор Enum](enum-statement.md))|`Friend`|`Public`|Не разрешено|  
+|Class ([оператор Class](class-statement.md))|`Friend`|`Public`|Не разрешено|  
+|Structure ([оператор Structure](structure-statement.md))|`Friend`|`Public`|Не разрешено|  
 |Module ([оператор Module](module-statement.md))|`Friend`|Нельзя использовать|Нельзя использовать|  
-|Interface ([оператор Interface](interface-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|Interface ([оператор Interface](interface-statement.md))|`Friend`|`Public`|Не разрешено|  
 |PROCEDURE ([оператор Function](function-statement.md), [оператор подвыражения](sub-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
-|Внешняя ссылка ([Инструкция DECLARE](declare-statement.md))|Нельзя использовать|`Public`(не допускается в `Interface` )|Нельзя использовать|  
-|Оператор operator (оператор[operator](operator-statement.md))|Нельзя использовать|`Public`(не допускается в `Interface` или `Module` )|Нельзя использовать|  
+|Внешняя ссылка ([Инструкция DECLARE](declare-statement.md))|Не разрешено|`Public` (не допускается в `Interface` )|Не разрешено|  
+|Оператор operator (оператор[operator](operator-statement.md))|Не разрешено|`Public` (не допускается в `Interface` или `Module` )|Не разрешено|  
 |Property ([Оператор Property](property-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
-|Свойство по умолчанию ([по умолчанию](../modifiers/default.md))|Нельзя использовать|`Public`(не допускается в `Module` )|Нельзя использовать|  
+|Свойство по умолчанию ([по умолчанию](../modifiers/default.md))|Не разрешено|`Public` (не допускается в `Module` )|Не разрешено|  
 |Event ([оператор Event](event-statement.md))|Нельзя использовать|`Public`|Нельзя использовать|  
-|Delegate ([оператор Delegate](delegate-statement.md))|`Friend`|`Public`|Нельзя использовать|  
+|Delegate ([оператор Delegate](delegate-statement.md))|`Friend`|`Public`|Не разрешено|  
   
  Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Объявление](../modifiers/friend.md)
-- [Частное](../modifiers/private.md)
-- [Открытый](../modifiers/public.md)
+- [Friend](../modifiers/friend.md)
+- [Частная](../modifiers/private.md)
+- [Общедоступная](../modifiers/public.md)

@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30560
 ms.assetid: 7f032293-054b-4eae-8d97-3db8e7ddde3b
-ms.openlocfilehash: 0fd07e4b777bdf48fa07eac7ef49dfb92aae522f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: af8bab62f1fe81f0397e5d91cd11e12931b10c36
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397198"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873715"
 ---
 # <a name="name-is-ambiguous-in-the-namespace-namespacename"></a>\<name> является неоднозначным в пространстве имен \<namespacename>
+
 Вы указали неоднозначное имя, которое конфликтует с другим именем. Компилятор Visual Basic не имеет правил разрешения конфликтов; необходимо самостоятельно устранить неоднозначность имен.  
   
  **Идентификатор ошибки:** BC30560  
@@ -23,7 +24,7 @@ ms.locfileid: "84397198"
   
 - Укажите полное имя.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пространства имен в Visual Basic](../../programming-guide/program-structure/namespaces.md)
 - [Оператор Namespace](../statements/namespace-statement.md)

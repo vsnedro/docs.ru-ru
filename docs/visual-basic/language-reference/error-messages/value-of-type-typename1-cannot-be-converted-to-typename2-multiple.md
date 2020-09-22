@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30961
 ms.assetid: 8be5aa0d-d236-4ac3-aa9c-5044f9f6562b
-ms.openlocfilehash: 25008f05979638e050b74fc659fdc0a6d13b3c31
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4b74fdc5584fd296d4bbe36034920d4b467dbb7a
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406590"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875072"
 ---
 # <a name="value-of-type-typename1-cannot-be-converted-to-typename2-multiple-file-references"></a>Значение типа \<typename1> невозможно преобразовать в \<typename2> (Множественные ссылки на файл)
+
 Значение типа " \<typename1> " не может быть преобразовано в " \<typename2> ". Несоответствие типов может быть вызвано смешением ссылки на файл " \<filepath1> " в проекте " \<projectname1> " со ссылкой на файл " \<filepath2> " в проекте " \<projectname2> ". Если обе сборки идентичны, попробуйте заменить эти ссылки так, чтобы они ссылались из одного места.  
   
  В ситуации, когда проект ссылается на сборку из нескольких файлов, компилятор не может гарантировать, что один тип можно преобразовать в другой.  
@@ -31,7 +32,7 @@ ms.locfileid: "84406590"
   
 - Если сборки, на которые имеются ссылки, не имеют одинакового идентификатора сборки, измените код таким образом, чтобы он не пытался преобразовать тип из одного типа в другой.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Преобразование типов в Visual Basic](../../programming-guide/language-features/data-types/type-conversions.md)
 - [Управление ссылками в проекте](/visualstudio/ide/managing-references-in-a-project)

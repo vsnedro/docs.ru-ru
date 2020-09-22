@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC40057
 ms.assetid: 4ae3506e-2ebe-4ff3-995d-14ac60db5e9f
-ms.openlocfilehash: 0ee235252d69e6f77ce53b048f45e73d0969e864
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e0be18509d0d4b1b4f5eadfadce7a0785e9309f0
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409456"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90871505"
 ---
 # <a name="namespace-or-type-specified-in-the-project-level-imports-qualifiedelementname-doesnt-contain-any-public-member-or-cannot-be-found"></a>Пространство имен или тип, указанные в свойстве Imports \<qualifiedelementname> для проекта, не содержит никаких общих членов или не может быть найдено
+
 Пространство имен или тип, указанные в Imports на уровне проекта, \<qualifiedelementname> не содержат открытых членов или не могут быть найдены. Убедитесь, что пространство имен или тип определены и содержат по крайней мере один открытый член. Убедитесь, что имя псевдонима не содержит других псевдонимов.  
   
  Свойство импорта проекта указывает содержащий элемент, который не может быть найден или не определяет какие-либо `Public` элементы.  
@@ -37,7 +38,7 @@ ms.locfileid: "84409456"
   
 3. Убедитесь, что содержащий элемент предоставляет по крайней мере один `Public` элемент.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Страница "Ссылки" в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
 - [Управление свойствами проектов и решений](/visualstudio/ide/managing-project-and-solution-properties)

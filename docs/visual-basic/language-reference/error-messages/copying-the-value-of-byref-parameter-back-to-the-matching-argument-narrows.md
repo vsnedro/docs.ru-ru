@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC32053
 ms.assetid: 281564b7-99f7-451f-b10d-f985e831bb25
-ms.openlocfilehash: bac5f9a88df719bc64a8b0541f65e5912275866e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 971110c505800b0ceba73506f2b2702516a7a23a
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409755"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874547"
 ---
 # <a name="copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument-narrows-from-type-typename1-to-type-typename2"></a>При копировании значения ByRef параметра \<parametername> обратно в соответствующий аргумент тип \<typename1> сужается в тип \<typename2>
+
 Процедура вызывается с аргументом, который расширяется до соответствующего типа параметра, а преобразование из параметра в аргумент является сужением.  
   
  При определении класса или структуры можно определить один или несколько операторов преобразования для преобразования типа класса или структуры в другие типы. Можно также определить операторы обратного преобразования для преобразования других типов обратно в тип класса или структуры. При использовании типа класса или структуры в вызове процедуры Visual Basic могут использовать эти операторы преобразования для преобразования типа аргумента в тип соответствующего параметра.  
@@ -33,7 +34,7 @@ ms.locfileid: "84409755"
   
 - Если необходимо вернуть значение в аргумент вызова, определите оператор обратного преобразования в качестве [расширяющего](../modifiers/widening.md), если это возможно.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры](../../programming-guide/language-features/procedures/index.md)
 - [Параметры и аргументы процедуры](../../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)

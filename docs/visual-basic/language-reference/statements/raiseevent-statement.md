@@ -10,14 +10,15 @@ helpviewer_keywords:
 - RaiseEvent statement [Visual Basic]
 - event handlers, connecting events to
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
-ms.openlocfilehash: 46b93c060a12d82b34dafdf3aa4ea677df6f54cd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 13d86aad8b68391f7effe2f6637adc68d8a3b59a
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404295"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90872013"
 ---
 # <a name="raiseevent-statement"></a>Оператор RaiseEvent
+
 Запускает событие, объявленное на уровне модуля в классе, форме или документе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -27,13 +28,15 @@ RaiseEvent eventname[( argumentlist )]
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `eventname`  
- Обязательный. Имя события для активации.  
+ Обязательный элемент. Имя события для активации.  
   
  `argumentlist`  
  Необязательный элемент. Разделенный запятыми список переменных, массивов или выражений. `argumentlist`Аргумент должен быть заключен в круглые скобки. Если аргументы отсутствуют, скобки должны быть опущены.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Required `eventname` — это имя события, объявленного в модуле. Оно соответствует Visual Basic соглашениям об именовании переменных.  
   
  Если событие не было объявлено в модуле, в котором оно вызывается, возникает ошибка. В следующем фрагменте кода показано объявление события и процедура, в которой возникает событие.  
@@ -51,6 +54,7 @@ RaiseEvent eventname[( argumentlist )]
 > Поведение по умолчанию событий можно изменить, определив пользовательское событие. Для пользовательских событий `RaiseEvent` оператор вызывает `RaiseEvent` метод доступа события. Дополнительные сведения о пользовательских событиях см. в разделе [оператор Event](event-statement.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере события используются для выполнения обратного отсчета от 10 до 0 секунд. Код иллюстрирует несколько методов, свойств и инструкций, связанных с событиями, включая `RaiseEvent` инструкцию.  
   
  Класс, который вызывает событие, является источником события, а методы, обрабатывающие события, — обработчиками событий. Источник события может иметь несколько обработчиков для создаваемых им событий. Когда класс создает событие, это событие создается во всех классах, выбранных для обработки событий данного экземпляра объекта.  
@@ -66,6 +70,7 @@ RaiseEvent eventname[( argumentlist )]
  [!code-vb[VbVbalrEvents#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   
 ## <a name="example"></a>Пример  
+
  Добавьте следующий код в код для `Form1`. Замените все дубликаты процедур, которые могут существовать, например `Form_Load` , или `Button_Click` .  
   
  [!code-vb[VbVbalrEvents#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#15)]  

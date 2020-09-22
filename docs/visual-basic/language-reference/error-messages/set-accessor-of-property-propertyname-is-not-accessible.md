@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC31102
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
-ms.openlocfilehash: 077533a5b1fe241b61ded9516ad8f450d7dbbf5e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a18a851d4db0ab17cd9b8ffaed4317a9fcf5292b
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90870784"
 ---
 # <a name="set-accessor-of-property-propertyname-is-not-accessible"></a>Метод доступа Set свойства \<propertyname> недоступен
+
 Оператор пытается сохранить значение свойства, если оно не имеет доступа к `Set` процедуре свойства.  
   
  Если [инструкция SET](../statements/set-statement.md) помечена более ограниченным уровнем доступа, чем его [Инструкция Property](../statements/property-statement.md), попытка установить значение свойства может завершиться ошибкой в следующих случаях:  
@@ -33,7 +34,7 @@ ms.locfileid: "84400348"
   
 - Если у вас нет контроля над исходным кодом, определяющим свойство, или необходимо ограничить `Set` уровень доступа к процедуре больше, чем само свойство, попробуйте переместить инструкцию, устанавливающую значение свойства, в область кода, имеющую Улучшенный доступ к свойству.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры свойств](../../programming-guide/language-features/procedures/property-procedures.md)
 - [Практическое руководство. Объявление свойства со смешанным уровнем доступа](../../programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)

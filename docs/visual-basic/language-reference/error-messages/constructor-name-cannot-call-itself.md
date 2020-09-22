@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30298
 ms.assetid: 2d77b7f4-0640-4f89-9c65-f101fd2847c0
-ms.openlocfilehash: 6abb6dde624e129b52fefecf8c51e6cde2567ae1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dce98a4deef8fbb0e8bc024244b815e23d51c790
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409807"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874573"
 ---
 # <a name="constructor-name-cannot-call-itself"></a>Конструктор \<name> не может вызывать сам себя
+
 `Sub New`Процедура в классе или структуре вызывает саму себя.  
   
  Назначение конструктора заключается в инициализации экземпляра класса или структуры при первом создании. Класс или структура может иметь несколько конструкторов, при условии, что все они имеют разные списки параметров. Конструктору разрешено вызывать другой конструктор для выполнения его функциональных возможностей в дополнение к собственным. Однако конструктор не имеет смысла вызывать сам себя, и на самом деле это может привести к бесконечной рекурсии, если это разрешено.  
@@ -27,6 +28,6 @@ ms.locfileid: "84409807"
   
 2. Если вы не планируете вызывать другой конструктор, удалите `Sub New` вызов полностью.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Время существования: создание и уничтожение объектов](../../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

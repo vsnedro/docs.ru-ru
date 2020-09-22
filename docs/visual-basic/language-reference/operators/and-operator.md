@@ -13,14 +13,15 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - bitwise comparison [Visual Basic]
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
-ms.openlocfilehash: c2b135d27e14816c011a4f70793543aa835d960a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b4d6d08cca2907befeab2e31c6804b69849c9e38
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84371951"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874865"
 ---
 # <a name="and-operator-visual-basic"></a>Оператор And (Visual Basic)
+
 Выполняет логическое умножение двух `Boolean` выражений или побитовое умножение двух числовых выражений.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -30,6 +31,7 @@ result = expression1 And expression2
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `result`  
  Обязательный. Произвольное выражение типа `Boolean` или числового типа. Для логического сравнения `result` — это логическое умножение двух `Boolean` значений. Для битовых операций `result` — это числовое значение, представляющее побитовое умножение двух числовых битов.  
   
@@ -39,7 +41,8 @@ result = expression1 And expression2
  `expression2`  
  Обязательный. Произвольное выражение типа `Boolean` или числового типа.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Для логического сравнения `result` параметр имеет значение, `True` только если оба значения `expression1` и имеют значение `expression2` `True` . В следующей таблице показано, как `result` определяется.  
   
 |Если `expression1` имеет значение |И `expression2` является|Значение `result` равно|  
@@ -65,6 +68,7 @@ result = expression1 And expression2
 > Так как логические и побитовые операторы имеют более низкий приоритет, чем другие арифметические и реляционные операторы, все битовые операции должны быть заключены в круглые скобки для обеспечения точных результатов.  
   
 ## <a name="data-types"></a>Типы данных  
+
  Если операнды состоят из одного `Boolean` выражения и одного числового выражения, Visual Basic преобразует `Boolean` выражение в числовое значение (– 1 для `True` и 0 для `False` ) и выполняет побитовую операцию.  
   
  Для логического сравнения тип данных результата — `Boolean` . Для побитового сравнения тип данных результата является числовым типом, подходящим для типов данных `expression1` и `expression2` . См. таблицу "реляционные и побитовые сравнения" в разделе [типы данных результатов операторов](data-types-of-operator-results.md).  
@@ -73,6 +77,7 @@ result = expression1 And expression2
 > `And`Оператор можно *перегрузить*, что означает, что класс или структура может переопределить свое поведение, когда операнд имеет тип этого класса или структуры. Если код использует этот оператор для такого класса или структуры, убедитесь, что вы понимаете его переопределенное поведение. Для получения дополнительной информации см. [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `And` для выполнения логического умножения двух выражений. Результатом является `Boolean` значение, которое показывает, равны ли оба выражения `True` .  
   
  [!code-vb[VbVbalrOperators#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#22)]  
@@ -80,13 +85,14 @@ result = expression1 And expression2
  В предыдущем примере создаются результаты `True` и `False` соответственно.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `And` для выполнения логического умножения отдельных битов двух числовых выражений. Бит в результирующем шаблоне задается, если для соответствующих битов в операндах задано значение 1.  
   
  [!code-vb[VbVbalrOperators#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#23)]  
   
  В предыдущем примере выдается результат 8, 2 и 0 соответственно.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Логические (побитовые) операторы (Visual Basic)](logical-bitwise-operators.md)
 - [Порядок применения операторов в Visual Basic](operator-precedence.md)

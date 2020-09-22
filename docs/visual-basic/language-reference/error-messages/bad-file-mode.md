@@ -4,14 +4,15 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID54
 ms.assetid: 74891e96-884b-4c8d-872d-cd11ae272372
-ms.openlocfilehash: 534ea2d8316dc29cace798c5ad9b7697a290026f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 99b84902ddf032f2ecb6e26400e200bea862dfdf
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409873"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875147"
 ---
 # <a name="bad-file-mode"></a>Недопустимый режим файла
+
 Инструкции, используемые для манипулирования содержимым файлов, должны соответствовать режиму, в котором был открыт файл. Возможные причины:  
   
 - `FilePutObject`Оператор или `FileGetObject` указывает последовательный файл.  
@@ -34,7 +35,7 @@ ms.locfileid: "84409873"
   
 - Используйте функциональность объекта `My.Computer.FileSystem` .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.FileSystem>
 - [Устранение неполадок: Чтение из текстовых файлов и запись в такие файлы](../../developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)
