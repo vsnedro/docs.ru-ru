@@ -8,17 +8,19 @@ helpviewer_keywords:
 - ByRef keyword [Visual Basic]
 - ByRef keyword [Visual Basic], contexts
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
-ms.openlocfilehash: 0ad07aa206ec982e3120d5cededbb575a936e777
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e872c675d06290023ac697f1b129604c3c39d42c
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373093"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875505"
 ---
 # <a name="byref-visual-basic"></a>ByRef (Visual Basic)
+
 Указывает, что аргумент передается таким образом, что вызываемая процедура может изменить значение переменной, которая является базовым аргументом в вызывающем коде.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Модификатор `ByRef` можно использовать в следующих контекстах:  
   
  [Declare Statement](../statements/declare-statement.md)  
@@ -27,7 +29,7 @@ ms.locfileid: "84373093"
   
  [Оператор Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ключевые слова](../keywords/index.md)
 - [Передача аргументов по значению и по ссылке](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

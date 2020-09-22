@@ -8,14 +8,15 @@ helpviewer_keywords:
 - Select clause [Visual Basic]
 - queries [Visual Basic], Select
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
-ms.openlocfilehash: a909b1d79b10f82ece03bab788ae889c64b27124
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d96423efbee075a7ad257df72471c71e38e09b63
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359698"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875742"
 ---
 # <a name="select-clause-visual-basic"></a>Предложение Select (Visual Basic)
+
 Определяет результат запроса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,13 +26,15 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `var1`  
  Необязательный элемент. Псевдоним, который может использоваться для ссылки на результаты выражения столбца.  
   
  `fieldName1`  
- Обязательный. Имя поля, возвращаемого в результате запроса.  
+ Обязательный элемент. Имя поля, возвращаемого в результате запроса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Для `Select` определения результатов, возвращаемых из запроса, можно использовать предложение. Это позволяет либо определить члены нового анонимного типа, созданного запросом, либо целевые элементы именованного типа, возвращаемые запросом. `Select`Предложение не является обязательным для запроса. Если `Select` предложение не указано, запрос возвратит тип, основанный на всех членах переменных диапазона, определенных для текущей области. Дополнительные сведения см. в статье [Анонимные типы](../../programming-guide/language-features/objects-and-classes/anonymous-types.md). Когда запрос создает именованный тип, он вернет результат типа, <xref:System.Collections.Generic.IEnumerable%601> где `T` — это созданный тип.  
   
  `Select`Предложение может ссылаться на любые переменные в текущей области. Сюда входят переменные диапазона, определенные в `From` предложении (или `From` предложениях). Он также включает все новые переменные, созданные с помощью псевдонима `Aggregate` `Let` `Group By` предложениями,, или `Group Join` или переменными из предыдущего `Select` предложения в выражении запроса. `Select`Предложение также может включать статические значения. Например, в следующем примере кода показано выражение запроса, в котором `Select` предложение определяет результат запроса как новый анонимный тип с четырьмя элементами: `ProductName` , `Price` , `Discount` и `DiscountedPrice` . `ProductName` `Price` Значения элементов и берутся из переменной диапазона продукта, определенной в `From` предложении. `DiscountedPrice`Значение элемента вычисляется в `Let` предложении. `Discount`Член является статическим значением.  
@@ -47,15 +50,16 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
  [!code-vb[VbSimpleQuerySamples#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#29)]  
   
 ## <a name="example"></a>Пример  
+
  Следующее выражение запроса использует `From` предложение для объявления переменной диапазона `cust` для `customers` коллекции. `Select`Предложение выбирает имя клиента и значение идентификатора и заполняет `CompanyName` `CustomerID` столбцы и новой переменной диапазона. `For Each`Инструкция циклически перебирает каждый возвращаемый объект и отображает `CompanyName` `CustomerID` столбцы и для каждой записи.  
   
  [!code-vb[VbSimpleQuerySamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#30)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
 - [Предложение FROM](from-clause.md)
 - [Предложение WHERE](where-clause.md)
-- [Предложение Order By](order-by-clause.md)
+- [Предложение ORDER BY](order-by-clause.md)
 - [Анонимные типы](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)

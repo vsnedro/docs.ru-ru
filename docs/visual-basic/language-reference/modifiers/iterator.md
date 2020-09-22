@@ -6,17 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - Iterator keyword [Visual Basic]
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
-ms.openlocfilehash: bb19289c69f4c523363e88e91a58f37d232b07df
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0b459a16317b8ba55886e52ecadb227ddf2fee83
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396237"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875434"
 ---
 # <a name="iterator-visual-basic"></a>Итератор (Visual Basic)
+
 Указывает, что функция или `Get` метод доступа являются итератором.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  *Итератор* выполняет настраиваемую итерацию по коллекции. Итератор использует оператор [yield](../statements/yield-statement.md) для возвращения каждого элемента в коллекции по одному за раз. При `Yield` достижении оператора текущее место в коде сохраняется. При следующем вызове функции итератора выполнение возобновляется с этого места.  
   
  Итератор может быть реализован в виде функции или `Get` метода доступа к определению свойства. `Iterator`Модификатор отображается в объявлении функции итератора или `Get` метода доступа.  
@@ -29,9 +31,10 @@ ms.locfileid: "84396237"
   
  Итератор не может использоваться в событии, конструкторе экземпляра, статическом конструкторе или статическом деструкторе.  
   
- Итератор может быть анонимной функцией. Дополнительные сведения см. в разделе [итераторы](../../programming-guide/concepts/iterators.md).  
+ Итератор может быть анонимной функцией. Дополнительные сведения см. в разделе [Итераторы](../../programming-guide/concepts/iterators.md).  
   
 ## <a name="usage"></a>Использование  
+
  Модификатор `Iterator` можно использовать в следующих контекстах:  
   
 - [Оператор Function](../statements/function-statement.md)  
@@ -39,18 +42,20 @@ ms.locfileid: "84396237"
 - [Property Statement](../statements/property-statement.md)  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере демонстрируется функция итератора. Функция итератора содержит `Yield` оператор, который находится внутри блока [for... Следующий](../statements/for-next-statement.md) цикл. Каждая итерация тела оператора [for each](../statements/for-each-next-statement.md) в `Main` создает вызов `Power` функции итератора. При каждом вызове функции итератора происходит переход к следующему выполнению оператора `Yield`, которое осуществляется во время следующей итерации цикла `For…Next`.  
   
  [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере демонстрируется метод доступа `Get`, представляющий собой итератор. `Iterator`Модификатор находится в объявлении свойства.  
   
  [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
  Дополнительные примеры см. в разделе [итераторы](../../programming-guide/concepts/iterators.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>
 - [Итераторы](../../programming-guide/concepts/iterators.md)

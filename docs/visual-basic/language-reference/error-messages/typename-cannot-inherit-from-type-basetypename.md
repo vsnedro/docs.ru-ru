@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30910
 ms.assetid: 68fc05c5-5d55-4742-9a3b-ea04312594f4
-ms.openlocfilehash: aa04c558abbcc4259c2821cdcbdc1669b91ffee0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5adb5a74c220c7b2f95ac7370040a7fa2bd34299
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402776"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90872073"
 ---
 # <a name="typename-cannot-inherit-from-type-basetypename-because-it-expands-the-access-of-the-base-type-outside-the-assembly"></a>\<typename> не может наследоваться от \<type>\<basetypename>, поскольку он расширяет доступ базового типа \<type> за пределы сборки
+
 Класс или интерфейс наследует от базового класса или интерфейса, но имеет менее четкий уровень доступа.  
   
  Например, `Public` интерфейс наследует от `Friend` интерфейса, или `Protected` класс наследует от `Private` класса. Это предоставляет базовый класс или интерфейс для доступа за пределами предполагаемого уровня.  
@@ -29,7 +30,7 @@ ms.locfileid: "84402776"
   
 - Если требуется менее четкий уровень доступа, удалите `Inherits` оператор. Наследование от более ограниченного базового класса или интерфейса невозможно.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Class](../statements/class-statement.md)
 - [Оператор Interface](../statements/interface-statement.md)

@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30002
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
-ms.openlocfilehash: 89e2d1d18b456c96f62d6b9ee1dd8dc9d41bf665
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3c22e6a5199bd52cb9fae66a15a66ac9ce095e81
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84386936"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90872196"
 ---
 # <a name="type-typename-is-not-defined"></a>Тип \<typename> не определен
+
 Оператор выполнил ссылку на тип, который не был определен. Тип можно определить в операторе объявления, например,, `Enum` `Structure` `Class` или `Interface` .  
   
  **Идентификатор ошибки:** BC30002  
@@ -29,9 +30,9 @@ ms.locfileid: "84386936"
   
 - Если тип определен, но библиотека объектов или библиотека типов, в которой он определен, не зарегистрирована в Visual Basic, щелкните **Добавить ссылку** в меню **проект** , а затем выберите соответствующую библиотеку объектов или библиотеку типов.  
   
-- Убедитесь, что тип находится в сборке, которая является частью целевого .NET Framework профиля. Дополнительные сведения см. в разделе [Устранение неполадок .NET Framework нацеливание на ошибки](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
+- Убедитесь, что тип находится в сборке, которая является частью целевого .NET Framework профиля. Дополнительные сведения см. в разделе [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пространства имен в Visual Basic](../../programming-guide/program-structure/namespaces.md)
 - [Оператор Enum](../statements/enum-statement.md)

@@ -1,5 +1,5 @@
 ---
-title: Значение по умолчанию
+title: По умолчанию
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Default
@@ -10,17 +10,19 @@ helpviewer_keywords:
 - Default keyword [Visual Basic]
 - default properties
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
-ms.openlocfilehash: 0c2808795d6fcbad7892369fd7f460ebf0406093
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bc213c3b5564d1833136df8f5b8dab1c6b012296
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84372976"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875488"
 ---
 # <a name="default-visual-basic"></a>Default (Visual Basic)
+
 Определяет свойство как свойство по умолчанию для класса, структуры или интерфейса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Класс, структура или интерфейс могут обозначать не более одного из своих свойств как *свойство по умолчанию*, если это свойство принимает по крайней мере один параметр. Если код создает ссылку на класс или структуру без указания члена, Visual Basic разрешает эту ссылку на свойство по умолчанию.  
   
  Свойства по умолчанию могут привести к небольшому сокращению количества символов в исходном коде, но они могут усложнить чтение кода. Если вызывающий код не знаком с классом или структурой, то при создании ссылки на имя класса или структуры он не может определить, обращается ли эта ссылка к самому классу или структуре, или к свойству по умолчанию. Это может привести к ошибкам компилятора или незначительным логическим ошибкам времени выполнения.  
@@ -35,7 +37,7 @@ ms.locfileid: "84372976"
   
  [Property Statement](../statements/property-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Объявление и вызов свойства по умолчанию в Visual Basic](../../programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)
 - [Ключевые слова](../keywords/index.md)

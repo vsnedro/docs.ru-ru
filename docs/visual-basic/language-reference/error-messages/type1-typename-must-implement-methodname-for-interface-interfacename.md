@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30149
 ms.assetid: 29d1b7f4-dca7-478c-bbe7-c657f342c183
-ms.openlocfilehash: 90d2b6d70390bfb732af4a5868c935de61d18f94
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8bf8872277ec901e066a8b950aaf3e61babfcc48
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408504"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90872103"
 ---
 # <a name="type1typename-must-implement-methodname-for-interface-interfacename"></a>\<type1>Тип \<typename> должен реализовать \<methodname> для интерфейса \<interfacename>
+
 Класс или структура требует реализации интерфейса, но не реализует процедуру, определенную интерфейсом. Каждый член интерфейса должен быть реализован.  
   
  **Идентификатор ошибки:** BC30149  
@@ -29,7 +30,7 @@ ms.locfileid: "84408504"
     Public Sub DoSomething() Implements IBaseInterface.DoSomething  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Implements](../statements/implements-statement.md)
 - [Интерфейсы](../../programming-guide/language-features/interfaces/index.md)

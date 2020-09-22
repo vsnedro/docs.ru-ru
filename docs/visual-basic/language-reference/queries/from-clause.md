@@ -10,14 +10,15 @@ helpviewer_keywords:
 - From clause [Visual Basic]
 - From statement [Visual Basic]
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
-ms.openlocfilehash: 33680f49247b3b2a6082b3a6b27ca64f8401e42d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 120ba6da11bffc3a0e81873d1fd606633724723d
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396185"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875250"
 ---
 # <a name="from-clause-visual-basic"></a>Предложение From (Visual Basic)
+
 Указывает одну или несколько переменных диапазона и коллекцию для запроса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,9 +34,10 @@ From element [ As type ] In collection [ _ ]
 |---|---|  
 |`element`|Обязательный. *Переменная диапазона* , используемая для прохода по элементам коллекции. Переменная диапазона используется для ссылки на каждый элемент в, `collection` когда запрос выполняет итерацию по `collection` . Должен быть перечислимым типом.|  
 |`type`|Необязательный элемент. Тип параметра `element`. Если не `type` указано, тип `element` выводится из `collection` .|  
-|`collection`|Обязательный. Ссылается на коллекцию, к которой выполняется запрос. Должен быть перечислимым типом.|  
+|`collection`|Обязательный элемент. Ссылается на коллекцию, к которой выполняется запрос. Должен быть перечислимым типом.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  `From`Предложение используется для указания исходных данных для запроса и переменных, которые используются для ссылки на элемент из исходной коллекции. Эти переменные называются *переменными диапазона*. `From`Предложение является обязательным для запроса, за исключением случаев, когда `Aggregate` предложение используется для задания запроса, возвращающего только агрегированные результаты. Дополнительные сведения см. в разделе [предложение Aggregate](aggregate-clause.md).  
   
  В запросе можно указать несколько `From` предложений, чтобы определить несколько коллекций для объединения. Если указано несколько коллекций, они проходят по отдельности или объединяются, если они связаны. Коллекции можно объединять неявным образом с помощью `Select` предложения или явно с помощью `Join` предложений или `Group Join` . В качестве альтернативы можно указать несколько переменных диапазона и коллекций в одном `From` предложении, при этом каждая связанная переменная диапазона и коллекция, отделенные друг от друга запятыми. В следующем примере кода показаны оба синтаксических параметра для `From` предложения.  
@@ -65,11 +67,12 @@ From element [ As type ] In collection [ _ ]
 - Выявление частей результата, возвращаемых с помощью `Skip` предложений, `Take` , `Skip While` и `Take While` .  
   
 ## <a name="example"></a>Пример  
+
  Следующее выражение запроса использует `From` предложение для объявления переменной диапазона `cust` для каждого `Customer` объекта в `customers` коллекции. `Where`Предложение использует переменную диапазона для ограничения выходных данных для клиентов из указанной области. `For Each`Цикл отображает название компании для каждого клиента в результатах запроса.  
   
  [!code-vb[VbSimpleQuerySamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#23)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы](index.md)
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
@@ -81,7 +84,7 @@ From element [ As type ] In collection [ _ ]
 - [Предложение Distinct](distinct-clause.md)
 - [Предложение Join](join-clause.md)
 - [Предложение Group Join](group-join-clause.md)
-- [Предложение Order By](order-by-clause.md)
+- [Предложение ORDER BY](order-by-clause.md)
 - [Предложение Let](let-clause.md)
 - [Предложение Skip](skip-clause.md)
 - [Предложение Take](take-clause.md)

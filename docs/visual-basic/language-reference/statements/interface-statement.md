@@ -7,14 +7,15 @@ helpviewer_keywords:
 - interface statement [Visual Basic]
 - interfaces [Visual Basic], interface definition
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-ms.openlocfilehash: 02d258084aaaa53dcc559cfaa0dec27556351037
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3025adfe8c881a08df3b5f03253510c263c624d1
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404490"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873221"
 ---
 # <a name="interface-statement-visual-basic"></a>Оператор Interface (Visual Basic)
+
 Объявляет имя интерфейса и вводит определения членов, содержащихся в интерфейсе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,9 +39,9 @@ End Interface
 |Термин|Определение|  
 |---|---|  
 |`attributelist`|Необязательный элемент. См. [список атрибутов](attribute-list.md).|  
-|`accessmodifier`|Необязательный элемент. Может принимать следующие значения:<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-  [Защищенный дружественный](../modifiers/protected-friend.md)<br/>- [Частный защищенный](../modifiers/private-protected.md)<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Необязательный элемент. Может применяться один из перечисленных ниже типов.<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-  [Защищенный дружественный](../modifiers/protected-friend.md)<br/>- [Частный защищенный](../modifiers/private-protected.md)<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Необязательный элемент. См. раздел [Shadows](../modifiers/shadows.md).|  
-|`name`|Обязательный. Имя этого интерфейса. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
+|`name`|Обязательный элемент. Имя этого интерфейса. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
 |`Of`|Необязательный элемент. Указывает, что это универсальный интерфейс.|  
 |`typelist`|Требуется, если используется ключевое слово [of](of-clause.md) . Список параметров типа для этого интерфейса. При необходимости каждый параметр типа можно объявить как Variant с помощью `In` `Out` модификаторов и. См. [список типов](type-list.md).|  
 |`Inherits`|Необязательный элемент. Указывает, что этот интерфейс наследует атрибуты и члены другого интерфейса или интерфейсов. См. раздел [оператор Inherits](inherits-statement.md).|  
@@ -56,7 +57,8 @@ End Interface
 |`membername`|Требуется для каждого свойства, процедуры, события, интерфейса, класса или структуры, определенной как член интерфейса. Имя элемента.|  
 |`End Interface`|Завершает `Interface` Определение.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  *Интерфейс* определяет набор элементов, таких как свойства и процедуры, которые могут реализовывать классы и структуры. Интерфейс определяет только подписи членов, а не их внутреннюю работу.  
   
  Класс или структура реализует интерфейс путем предоставления кода для каждого члена, определенного интерфейсом. Наконец, когда приложение создает экземпляр из этого класса или структуры, объект существует и выполняется в памяти. Дополнительные сведения см. в разделе [объекты и классы](../../programming-guide/language-features/objects-and-classes/index.md) и [интерфейсы](../../programming-guide/language-features/interfaces/index.md).  
@@ -106,13 +108,14 @@ End Interface
 - **Контролиру.** Интерфейс сам по себе не имеет времени существования и не выполняет его члены. Когда класс реализует интерфейс и объект создается как экземпляр этого класса, объект имеет время существования в приложении, в котором оно выполняется. Дополнительные сведения см. в разделе "время существования" в [операторе Class](class-statement.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `Interface` для определения интерфейса с именем `thisInterface` , который должен быть реализован с помощью `Property` оператора и `Function` оператора.  
   
  [!code-vb[VbVbalrStatements#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#40)]  
   
  Обратите внимание, что `Property` `Function` инструкции и не представляют блоки, `End Property` которые заканчиваются и `End Function` находятся внутри интерфейса. Интерфейс определяет только сигнатуры его членов. Полные `Property` блоки и `Function` появятся в классе, реализующем интерфейс `thisInterface` .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы](../../programming-guide/language-features/interfaces/index.md)
 - [Оператор Class](class-statement.md)
@@ -123,5 +126,5 @@ End Interface
 - [Оператор Sub](sub-statement.md)
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [Вариативность в универсальных интерфейсах](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
-- [В](../modifiers/in-generic-modifier.md)
+- [Где](../modifiers/in-generic-modifier.md)
 - [Заполняет](../modifiers/out-generic-modifier.md)

@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Handles keyword [Visual Basic]
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
-ms.openlocfilehash: df786e4b0f0ab3795592ea57f7af17695b086cfa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 347f521267d4fd954ac359ab25ed5810cfd71d34
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404580"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873253"
 ---
 # <a name="handles-clause-visual-basic"></a>Предложение Handles (Visual Basic)
+
 Заявляет, что процедура обрабатывает указанное событие.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -24,13 +25,15 @@ proceduredeclaration Handles eventlist
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `proceduredeclaration`  
  Объявление процедуры `Sub` для процедуры, которая будет обрабатывать событие.  
   
  `eventlist`  
  Список событий, обрабатываемых `proceduredeclaration`, с разделителями-запятыми. События должны вызываться базовым классом для текущего класса либо объектом, объявленным с помощью ключевого слова `WithEvents`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Используйте ключевое слово `Handles` в конце объявления процедуры, чтобы она обрабатывала события, вызванные переменной объекта, которая объявлена с помощью ключевого слова `WithEvents` . Ключевое слово `Handles` может также использоваться в производном классе для обработки событий из базового класса.  
   
  Как ключевое слово `Handles` так и оператор `AddHandler` позволяют задать обработку определенных событий конкретными процедурами, но между ними существуют различия. Используйте ключевое слово `Handles` при определении процедуры, чтобы указать, что она обрабатывает определенное событие. Оператор `AddHandler` подключает процедуры к событиям во время выполнения. Дополнительные сведения см. в разделе [оператор AddHandler](addhandler-statement.md).  
@@ -38,6 +41,7 @@ proceduredeclaration Handles eventlist
  Для пользовательских событий приложение вызывает метод доступа `AddHandler` события во время добавления процедуры в качестве обработчика событий. Дополнительные сведения о пользовательских событиях см. в разделе [оператор Event](event-statement.md).  
   
 ## <a name="example"></a>Пример  
+
  [!code-vb[VbVbalrEvents#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#2)]  
   
  В следующем примере показано, как производный класс может использовать оператор `Handles` для обработки события из базового класса.  
@@ -45,16 +49,18 @@ proceduredeclaration Handles eventlist
  [!code-vb[VbVbalrEvents#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#3)]  
   
 ## <a name="example"></a>Пример  
+
  Следующий пример содержит два обработчика событий кнопки для проекта **приложения WPF** .  
   
  [!code-vb[VbVbalrEvents#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/class3.vb#41)]  
   
 ## <a name="example"></a>Пример  
+
  Следующий пример эквивалентен предыдущему примеру: `eventlist` в предложении `Handles` содержит события для обеих кнопок.  
   
  [!code-vb[VbVbalrEvents#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/class3.vb#42)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [WithEvents](../modifiers/withevents.md)
 - [Оператор AddHandler](addhandler-statement.md)

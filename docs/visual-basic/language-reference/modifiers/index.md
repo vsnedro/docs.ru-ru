@@ -2,18 +2,20 @@
 title: Модификаторы
 ms.date: 07/20/2015
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
-ms.openlocfilehash: 80adc4521dcb1bb0c65981dae6f842168194eae7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6ee477e8d09ea7c8ea559ff8245784b2d0123141
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84372898"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875454"
 ---
 # <a name="modifiers-visual-basic"></a>Модификаторы (Visual Basic)
+
 В статьях этого раздела описываются модификаторы времени выполнения Visual Basic.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Ansi](ansi.md)  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Набора](ansi.md)  
   
  [Сборка](assembly.md)  
   
@@ -27,15 +29,15 @@ ms.locfileid: "84372898"
   
  [Default](default.md)  
   
- [Объявление](friend.md)  
+ [Friend](friend.md)  
   
- [В](in-generic-modifier.md)  
+ [Где](in-generic-modifier.md)  
   
- [Iterator](iterator.md)  
+ [Итератор](iterator.md)  
   
- [Клавиша](key.md)  
+ [Key](key.md)  
   
- [Модуль\<keyword>](module-keyword.md)  
+ [Модуль \<keyword>](module-keyword.md)  
   
  [MustInherit](mustinherit.md)  
   
@@ -61,7 +63,7 @@ ms.locfileid: "84372898"
   
  [Partial](partial.md)  
   
- [Частное](private.md)  
+ [Частная](private.md)  
   
  [Частный защищенный](private-protected.md)  
   
@@ -71,7 +73,7 @@ ms.locfileid: "84372898"
   
  [Открытый](public.md)  
   
- [Доступно](readonly.md)  
+ [ReadOnly](readonly.md)  
   
  [Shadows](shadows.md)  
   
@@ -88,4 +90,5 @@ ms.locfileid: "84372898"
  [WriteOnly](writeonly.md)  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Справочник по языку Visual Basic](../index.md)  

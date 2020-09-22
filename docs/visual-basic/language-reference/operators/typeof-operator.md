@@ -12,14 +12,15 @@ helpviewer_keywords:
 - TypeOf operator [Visual Basic]
 - compatible data types [Visual Basic]
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
-ms.openlocfilehash: 0cce36073b53442bce63f966f3bd94bd5d70d2a8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0a01b49cf1e0bf9ad7b2ce541cee39cba83025ca
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406331"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875300"
 ---
 # <a name="typeof-operator-visual-basic"></a>Оператор TypeOf (Visual Basic)
+
 Проверяет, совместим ли тип среды выполнения результата выражения с указанным типом.
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,16 +34,18 @@ result = TypeOf objectexpression IsNot typename
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `result`  
  Возвращено. Значение `Boolean`.  
   
  `objectexpression`  
- Обязательный. Любое выражение, результатом которого является тип ссылки.  
+ Обязательный элемент. Любое выражение, результатом которого является тип ссылки.  
   
  `typename`  
- Обязательный. Любое имя типа данных.  
+ Обязательный элемент. Любое имя типа данных.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Оператор `TypeOf` определяет, совместим ли тип времени выполнения `objectexpression` с `typename`. Совместимость зависит от категории типа `typename`. В следующей таблице показано, как определяется совместимость.  
   
 |Категория типа `typename`|Критерий совместимости|  
@@ -56,15 +59,16 @@ result = TypeOf objectexpression IsNot typename
  `TypeOf` всегда используется с ключевым словом `Is` для создания выражения `TypeOf`...`Is` или с ключевым словом `IsNot` для создания выражения `TypeOf`...`IsNot`.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере выражение `TypeOf`...`Is` используется для проверки на совместимость типов двух переменных ссылок на объекты с различными типами данных.  
   
  [!code-vb[VbVbalrOperators#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#39)]  
   
  Переменная `refInteger` имеет тип времени выполнения `Integer`. Она совместима с `Integer`, но не с `Double`. Переменная `refForm` имеет тип времени выполнения <xref:System.Windows.Forms.Form>. Она совместима с <xref:System.Windows.Forms.Form>, так как это ее тип, с <xref:System.Windows.Forms.Control>, так как <xref:System.Windows.Forms.Form> наследует от <xref:System.Windows.Forms.Control>, и с <xref:System.ComponentModel.IComponent>, так как <xref:System.Windows.Forms.Form> наследует от <xref:System.ComponentModel.Component>, который реализует <xref:System.ComponentModel.IComponent>. Однако `refForm` несовместима с <xref:System.Windows.Forms.Label>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Оператор is](is-operator.md)
+- [Оператор Is](is-operator.md)
 - [Оператор IsNot](isnot-operator.md)
 - [Comparison Operators in Visual Basic](../../programming-guide/language-features/operators-and-expressions/comparison-operators.md)
 - [Порядок применения операторов в Visual Basic](operator-precedence.md)

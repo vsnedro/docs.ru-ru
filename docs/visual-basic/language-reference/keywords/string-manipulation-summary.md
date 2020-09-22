@@ -6,14 +6,15 @@ helpviewer_keywords:
 - manipulating strings [Visual Basic]
 - strings [Visual Basic], manipulating
 ms.assetid: 5d3197eb-fe66-417e-9e2a-20450660c9c6
-ms.openlocfilehash: 1006dd889d8cdf51070a67236378dc6223e220b2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f9916fb00b4073e6b0b6ebfc4bb420975b320747
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373217"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90875545"
 ---
 # <a name="string-manipulation-summary-visual-basic"></a>Сводка по работе со строками (Visual Basic)
+
 Ключевые слова языка Visual Basic и элементы библиотеки времени выполнения упорядочены по целям и использованию.  
   
 |Действие|Элемент языка|  
@@ -32,7 +33,7 @@ ms.locfileid: "84373217"
 |Возврат массива строк, основанного на фильтрах.|<xref:Microsoft.VisualBasic.Strings.Filter%2A>|  
 |Возврат указанного числа подстрок.|<xref:Microsoft.VisualBasic.Strings.Split%2A>, <xref:Microsoft.VisualBasic.Strings.Join%2A>|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ключевые слова](index.md)
 - [Члены библиотеки времени выполнения Visual Basic](../runtime-library-members.md)
