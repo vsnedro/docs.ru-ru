@@ -55,8 +55,10 @@ items:
         href: ../standard/components.md
       - name: Библиотеки классов .NET
         href: ../standard/class-libraries.md
-      - name: Обзор .NET Core
+      - name: Введение в .NET Core
         href: ../core/introduction.md
+      - name: Обзор .NET Core
+        href: ../core/about.md
       - name: Обзор .NET Standard
         href: ../standard/net-standard.md
       - name: Глоссарий по .NET
@@ -432,8 +434,12 @@ items:
         href: ../core/deploying/runtime-patch-selection.md
       - name: Развертывание и выполнение в виде отдельного файла
         href: ../core/deploying/single-file.md
-      - name: Обрезка автономных развертываний и исполняемых файлов
-        href: ../core/deploying/trim-self-contained.md
+      - name: Обрезка автономных развертываний
+        items:
+          - name: Общие сведения и инструкции
+            href: ../core/deploying/trim-self-contained.md
+          - name: Параметры
+            href: ../core/deploying/trimming-options.md
       - name: Хранилище пакетов среды выполнения
         href: ../core/deploying/runtime-store.md
       - name: Каталог идентификаторов сред выполнения (RID)
