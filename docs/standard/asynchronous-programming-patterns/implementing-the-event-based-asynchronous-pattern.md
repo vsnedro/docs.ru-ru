@@ -18,12 +18,12 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
-ms.openlocfilehash: e36ae21e1e03c8c5c688b7446f660ab1bb666a94
-ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
+ms.openlocfilehash: 466a0dd8a827cd869894106a0901bdab89601e25
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84904381"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559100"
 ---
 # <a name="implementing-the-event-based-asynchronous-pattern"></a>Реализация асинхронной модели, основанной на событиях
 
@@ -33,7 +33,7 @@ ms.locfileid: "84904381"
 
 Пример, реализующий асинхронную модель на основе событий, см. в разделе [Практическое руководство. Реализация компонента, поддерживающего асинхронную модель на основе событий](component-that-supports-the-event-based-asynchronous-pattern.md).
 
-Для простых асинхронных операций компонент <xref:System.ComponentModel.BackgroundWorker> может оказаться подходящим вариантом. Дополнительные сведения об использовании <xref:System.ComponentModel.BackgroundWorker> см. в разделе [Практическое руководство. Фоновое выполнение операции](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md).
+Для простых асинхронных операций компонент <xref:System.ComponentModel.BackgroundWorker> может оказаться подходящим вариантом. Дополнительные сведения об использовании <xref:System.ComponentModel.BackgroundWorker> см. в разделе [Практическое руководство. Фоновое выполнение операции](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background).
 
 Ниже перечислены функции асинхронной модели на основе событий, описанные в этом разделе.
 
@@ -263,8 +263,8 @@ public class MethodNameCompletedEventArgs : System.ComponentModel.AsyncCompleted
 - <xref:System.ComponentModel.ProgressChangedEventArgs>
 - <xref:System.ComponentModel.AsyncCompletedEventArgs>
 - [Практическое руководство. Реализация компонента, поддерживающего асинхронную модель на основе событий](component-that-supports-the-event-based-asynchronous-pattern.md)
-- [Практическое руководство. Фоновое выполнение операции](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [Практическое руководство. Реализация формы, в которой выполняется фоновая операция](../../framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [Практическое руководство. Фоновое выполнение операции](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
+- [Практическое руководство. Реализация формы, в которой выполняется фоновая операция](/dotnet/desktop/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation)
 - [Определение, когда следует реализовать асинхронную модель, основанную на событиях](deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
 - [Рекомендации по реализации асинхронной модели, основанной на событиях](best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
 - [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md)

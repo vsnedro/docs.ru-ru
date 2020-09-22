@@ -19,12 +19,12 @@ helpviewer_keywords:
 - BypassNGenAttribute
 - System.Runtime.BypassNGenAttribute
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-ms.openlocfilehash: ae86aed773a9a13f102b1ad111cac5a3ee563508
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 12ef6724a76ec59bd412427a0a353565b1be2c8e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517273"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558421"
 ---
 # <a name="ngenexe-native-image-generator"></a>Ngen.exe (генератор образов в машинном коде)
 
@@ -56,7 +56,7 @@ ms.locfileid: "87517273"
 Подробнее об использовании программы Ngen.exe и службы образов в машинном коде см. в разделе [Служба образов в машинном коде](#native-image-service).
 
 > [!NOTE]
-> Синтаксис Ngen.exe для .NET Framework версий 1.0 и 1.1 см. в разделе [Генератор образов в машинном коде (Ngen.exe), традиционный синтаксис](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms165073(v=vs.100)).
+> Синтаксис Ngen.exe для .NET Framework версий 1.0 и 1.1 см. в разделе [Генератор образов в машинном коде (Ngen.exe), традиционный синтаксис](/previous-versions/dotnet/netframework-4.0/ms165073(v=vs.100)).
 
 Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).
 

@@ -10,11 +10,12 @@ helpviewer_keywords:
 - interoperation with unmanaged code, exposing COM components
 - COM interop, exposing COM components
 ms.assetid: 6fcf6588-5e25-41af-b4ae-780974f2c3df
-ms.openlocfilehash: a8dfbeb88d0057eb3c9047b4435f021750ed86d2
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1cf5bdbedd53227e812b0d2ed97778ab34a81444
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620863"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557101"
 ---
 # <a name="compiling-an-interop-project"></a>Компиляция проекта, использующего взаимодействие
 
@@ -26,7 +27,7 @@ ms.locfileid: "85620863"
 
 - Развертывание сборок взаимодействия. Можно создать стандартную ссылку на сборку взаимодействия. В этом случае сборки взаимодействия должны быть развернуты вместе с приложением.
 
- Различия между этими двумя способами более подробно описываются в разделе [Использование COM-типов в управляемом коде](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)).
+ Различия между этими двумя способами более подробно описываются в разделе [Использование COM-типов в управляемом коде](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)).
 
  Внедрение типов взаимодействия в Visual Studio демонстрируется в разделах [Пошаговое руководство. Внедрение типов из управляемых сборок в Visual Studio](../../standard/assembly/embed-types-visual-studio.md).
 
@@ -41,6 +42,6 @@ ms.locfileid: "85620863"
 
 - [Предоставление COM-компонентов платформе .NET Framework](exposing-com-components.md)
 - [Независимость от языка и независимые от языка компоненты](../../standard/language-independence-and-language-independent-components.md)
-- [Using COM Types in Managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)) (Использование COM-типов в управляемом коде)
+- [Using COM Types in Managed Code](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)) (Использование COM-типов в управляемом коде)
 - [Пошаговое руководство: Внедрение типов из управляемых сборок в Visual Studio](../../standard/assembly/embed-types-visual-studio.md)
 - [Импорт библиотеки типов в виде сборки](importing-a-type-library-as-an-assembly.md)

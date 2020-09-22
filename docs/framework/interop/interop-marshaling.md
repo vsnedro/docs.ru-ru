@@ -7,11 +7,12 @@ helpviewer_keywords:
 - interop marshaling
 - interop marshaling, about interop marshaling
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
-ms.openlocfilehash: ca733d59abc4ca3d9d470b054ee9e34b5084ae38
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: bd618714a9bd27bc309b7933b656de6bd139cfe7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618978"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554896"
 ---
 # <a name="interop-marshaling"></a>Маршалинг взаимодействия
 
@@ -78,7 +79,7 @@ ms.locfileid: "85618978"
     > [!NOTE]
     > Как только для потока клиента C# задается однопотоковое подразделение, для вызова COM-компонентов многопотоковых подразделений потребуется маршалинг между подразделениями.
 
-Инструкции по выбору модели подразделения в явном виде см. в разделе [Управляемые и неуправляемые потоки](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).
+Инструкции по выбору модели подразделения в явном виде см. в разделе [Управляемые и неуправляемые потоки](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).
 
 ## <a name="marshaling-remote-calls"></a>Маршалинг удаленных вызовов
 
@@ -124,10 +125,10 @@ ms.locfileid: "85618978"
 |[Маршалинг с помощью COM- взаимодействия](marshaling-data-with-com-interop.md)|Описывается настройка оболочек COM для изменения характеристик маршалинга.|
 |[Практическое руководство. Миграция DCOM с управляемым кодом в WCF](how-to-migrate-managed-code-dcom-to-wcf.md)|Описывается переход с модели DCOM на WCF.|
 |[Практическое руководство. Сопоставление значений HRESULT и исключений](how-to-map-hresults-and-exceptions.md)|Описывается, как сопоставить настраиваемые исключения со значениями HRESULT, и приводится полный перечень сопоставлений значений HRESULT с соответствующими классами исключений платформы .NET Framework.|
-|[Взаимодействие с помощью универсальных типов](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100))|Описываются действия, поддерживаемые при использовании универсальных типов для взаимодействия COM.|
+|[Взаимодействие с помощью универсальных типов](/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100))|Описываются действия, поддерживаемые при использовании универсальных типов для взаимодействия COM.|
 |[Взаимодействие с неуправляемым кодом](index.md)|Описываются службы взаимодействия, предоставляемые средой CLR.|
-|[Расширенное COM-взаимодействие](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Приводятся ссылки на дополнительные сведения о включении COM-компонентов в разрабатываемое приложение .NET Framework.|
-|[Вопросы разработки для взаимодействия](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))|Приводятся советы по написанию кода встроенных COM-компонентов.|
+|[Расширенное COM-взаимодействие](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Приводятся ссылки на дополнительные сведения о включении COM-компонентов в разрабатываемое приложение .NET Framework.|
+|[Вопросы разработки для взаимодействия](/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))|Приводятся советы по написанию кода встроенных COM-компонентов.|
 
 ## <a name="reference"></a>Справочник
 

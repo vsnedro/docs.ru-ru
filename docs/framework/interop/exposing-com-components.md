@@ -7,14 +7,15 @@ helpviewer_keywords:
 - interoperation with unmanaged code, exposing COM components
 - COM interop, exposing COM components
 ms.assetid: e78b14f1-e487-43cd-9c6d-1a07483f1730
-ms.openlocfilehash: 459ba7ffed2e4f6c458f89a63b2baa37180d270d
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 34dda58d9513874169927164706fafdd95e8ed84
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620850"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554186"
 ---
 # <a name="exposing-com-components-to-the-net-framework"></a>Предоставление клиентам .NET Framework доступа к COM-компонентам
-В этом разделе описывается процесс, в рамках которого существующий COM-компонент предоставляется управляемому коду. Сведения о разработке COM-серверов, которые тесно интегрируются с платформой .NET Framework, см. в разделе [Вопросы разработки для взаимодействия](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100)).
+В этом разделе описывается процесс, в рамках которого существующий COM-компонент предоставляется управляемому коду. Сведения о разработке COM-серверов, которые тесно интегрируются с платформой .NET Framework, см. в разделе [Вопросы разработки для взаимодействия](/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100)).
   
  Существующие COM-компоненты являются ценными ресурсами для управляемого кода, выступая в качестве бизнес-приложений среднего уровня или изолированных функций. В идеале компонент содержит основную сборку взаимодействия и строго соответствует стандартам программирования модели COM.  
   
@@ -24,7 +25,7 @@ ms.locfileid: "85620850"
   
      Общеязыковая среда выполнения требует наличия метаданных для всех типов, включая COM-типы. Получить сборку, содержащую импортированные COM-типы, в виде метаданных можно несколькими способами.  
   
-2. [Использование типов COM в управляемом коде](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)).  
+2. [Использование типов COM в управляемом коде](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)).  
   
      Вы можете проверять COM-типы, активировать экземпляры и вызывать методы COM-объекта так же, как и для любого другого управляемого типа.  
   
@@ -39,7 +40,7 @@ ms.locfileid: "85620850"
 ## <a name="see-also"></a>См. также
 
 - [Взаимодействие с неуправляемым кодом](index.md)
-- [Вопросы разработки для взаимодействия](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))
+- [Вопросы разработки для взаимодействия](/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))
 - [Пример COM-взаимодействия. Клиент .NET и COM-сервер](com-interop-sample-net-client-and-com-server.md)
 - [Независимость от языка и независимые от языка компоненты](../../standard/language-independence-and-language-independent-components.md)
 - [Gacutil.exe (программа глобального кэша сборок)](../tools/gacutil-exe-gac-tool.md)

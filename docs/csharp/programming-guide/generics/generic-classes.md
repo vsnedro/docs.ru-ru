@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, generic classes
 - generics [C#], classes
 ms.assetid: 27d6f256-cd61-41e3-bc6e-b990a53b0224
-ms.openlocfilehash: 308f4328540e1001018942738d931be3d8be53ed
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: a885ae042eef939021d3a9b75616505c289bd43c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87301922"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558091"
 ---
 # <a name="generic-classes-c-programming-guide"></a>Универсальные классы (Руководство по программированию на C#)
 Универсальные классы инкапсулируют операции, которые не относятся к конкретному типу данных. Универсальные классы чаще всего используются для работы с коллекциями, такими как связанные списки, хэш-таблицы, стеки, очереди, деревья и т. д. Такие операции, как добавление и удаление элементов коллекции, по существу выполняются одинаково, независимо от типа хранимых данных.  
@@ -71,5 +71,5 @@ ms.locfileid: "87301922"
 - <xref:System.Collections.Generic>
 - [Руководство по программированию на C#](../index.md)
 - [Универсальные шаблоны](./index.md)
-- [Сохранение состояния перечислителей](https://docs.microsoft.com/archive/blogs/wesdyer/saving-the-state-of-enumerators)
-- [Загадка по наследованию, часть 1](https://docs.microsoft.com/archive/blogs/ericlippert/an-inheritance-puzzle-part-one)
+- [Сохранение состояния перечислителей](/archive/blogs/wesdyer/saving-the-state-of-enumerators)
+- [Загадка по наследованию, часть 1](/archive/blogs/ericlippert/an-inheritance-puzzle-part-one)

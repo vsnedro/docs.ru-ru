@@ -7,12 +7,12 @@ helpviewer_keywords:
 - what's obsolete [.NET Framework]
 - deprecated [.NET Framework]
 ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
-ms.openlocfilehash: 188d9184476e58fb679421467cd68e2ea8a8a101
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 93c2015c873b9de7b6c1b94224fa4033863aecfd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558872"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558502"
 ---
 # <a name="whats-obsolete-in-the-net-framework-class-library"></a>Что устарело в библиотеке классов .NET Framework
 
@@ -76,10 +76,10 @@ ms.locfileid: "88558872"
 
 ## <a name="obsolete-apis-for-previous-versions"></a>Списки устаревших API для предыдущих версий
 
-- [Устаревшие типы в платформе .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee461503(v=vs.100))
-- [Устаревшие члены в платформе .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee471421(v=vs.100))
-- [Список устаревших элементов в платформе .NET Framework 3.5](https://docs.microsoft.com/previous-versions/cc835481(v=msdn.10))
-- [Список устаревших элементов в платформе .NET Framework 2.0](https://docs.microsoft.com/previous-versions/aa497286(v=msdn.10))
+- [Устаревшие типы в платформе .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee461503(v=vs.100))
+- [Устаревшие члены в платформе .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee471421(v=vs.100))
+- [Список устаревших элементов в платформе .NET Framework 3.5](/previous-versions/cc835481(v=msdn.10))
+- [Список устаревших элементов в платформе .NET Framework 2.0](/previous-versions/aa497286(v=msdn.10))
 
 ## <a name="see-also"></a>См. также
 

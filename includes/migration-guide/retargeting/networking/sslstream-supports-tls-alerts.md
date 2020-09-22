@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 0024b2a53444319788b8cdd312d537f994070b5e
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 5b566dd89801caff7a253abc2fb62c5fd79591f7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614760"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606535"
 ---
 ### <a name="sslstream-supports-tls-alerts"></a>SslStream поддерживает TLS оповещения
 
 #### <a name="details"></a>Подробнее
 
-После сбоя подтверждения TLS при первой операции ввода-вывода чтения и записи возникнет <xref:System.IO.IOException?displayProperty=fullName> с внутренним исключением <xref:System.ComponentModel.Win32Exception?displayProperty=fullName>. Код <xref:System.ComponentModel.Win32Exception.NativeErrorCode?displayProperty=fullName> для <xref:System.ComponentModel.Win32Exception?displayProperty=fullName> может сопоставляться с оповещением TLS от удаленной стороны с помощью [кодов ошибок Schannel для оповещений TLS и SSL](https://docs.microsoft.com/windows/desktop/SecAuthN/schannel-error-codes-for-tls-and-ssl-alerts). Дополнительные сведения см. в [RFC 2246: Раздел 7.2.2 Предупреждения об ошибках](https://tools.ietf.org/html/rfc2246#section-7.2.2). <br/>Этот режим в .NET Framework 4.6.2 и более ранних версий предполагает, что время ожидания канала транспорта (как правило, TCP-подключения) истечет во время операции записи или чтения, если другой стороне не удалось выполнить подтверждение и она сразу же после этого отклонила подключение.
+После сбоя подтверждения TLS при первой операции ввода-вывода чтения и записи возникнет <xref:System.IO.IOException?displayProperty=fullName> с внутренним исключением <xref:System.ComponentModel.Win32Exception?displayProperty=fullName>. Код <xref:System.ComponentModel.Win32Exception.NativeErrorCode?displayProperty=fullName> для <xref:System.ComponentModel.Win32Exception?displayProperty=fullName> может сопоставляться с оповещением TLS от удаленной стороны с помощью [кодов ошибок Schannel для оповещений TLS и SSL](/windows/desktop/SecAuthN/schannel-error-codes-for-tls-and-ssl-alerts). Дополнительные сведения см. в [RFC 2246: Раздел 7.2.2 Предупреждения об ошибках](https://tools.ietf.org/html/rfc2246#section-7.2.2). <br/>Этот режим в .NET Framework 4.6.2 и более ранних версий предполагает, что время ожидания канала транспорта (как правило, TCP-подключения) истечет во время операции записи или чтения, если другой стороне не удалось выполнить подтверждение и она сразу же после этого отклонила подключение.
 
 #### <a name="suggestion"></a>Предложение
 

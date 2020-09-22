@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04c4fb4c8e9da8c58a5e26f78a7b13aa6a0df4a0
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 7c4b9faf25853c1c7a546f06c329f6f153eef904
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614688"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606652"
 ---
 ### <a name="changes-in-path-normalization"></a>Изменения нормализации путей
 
@@ -17,7 +17,7 @@ ms.locfileid: "85614688"
 - оценку относительного каталога (.) или родительского каталога (..) в пути;
 - обрезку указанных символов.
 Начиная с приложений, предназначенных для .NET Framework 4.6.2, следующие изменения в нормализации пути включены по умолчанию:
-  - Среда выполнения перекладывает нормализацию путей на функцию [GetFullPathName](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamew) операционной системы.
+  - Среда выполнения перекладывает нормализацию путей на функцию [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamew) операционной системы.
 - Нормализация больше не предусматривает обрезки окончания сегментов каталогов (например, пробела в конце имени каталога).
 - Поддержка синтаксиса пути устройства в режиме полного доверия, включая `\\.\` и (для API-интерфейсов файлового ввода-вывода в mscorlib.dll) `\\?\`.
 - Среда выполнения не проверяет пути с синтаксисом устройства.

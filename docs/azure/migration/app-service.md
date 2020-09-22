@@ -3,12 +3,12 @@ title: Перенос веб-приложения или службы .NET в С
 description: Сведения о миграции веб-приложений или служб .NET из локальной среды в Службу приложений Azure.
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: d208865942b49ae2d5437b8f2fcff294933af21b
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: a5e193b2dbaedb86ff0e24bc8b70043896bbeea3
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174313"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539090"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Перенос веб-приложения или службы .NET в Службу приложений Azure
 
@@ -37,9 +37,9 @@ ms.locfileid: "86174313"
 |--|--|
 | `BasicHttp` |  |
 | `WSHttp` |  |
-| `WSDualHttpBinding` | Необходимо включить [поддержку веб-сокетов](https://docs.microsoft.com/azure/app-service/web-sites-configure). | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure). |
-| `NetHttpBinding` | Необходимо включить [поддержку веб-сокетов](https://docs.microsoft.com/azure/app-service/web-sites-configure) для дуплексных контрактов. | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure) для дуплексных контрактов. |
-| `NetHttpsBinding` | Необходимо включить [поддержку веб-сокетов](https://docs.microsoft.com/azure/app-service/web-sites-configure) для дуплексных контрактов. | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure) для дуплексных контрактов. |
+| `WSDualHttpBinding` | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure). | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure). |
+| `NetHttpBinding` | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure) для дуплексных контрактов. | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure) для дуплексных контрактов. |
+| `NetHttpsBinding` | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure) для дуплексных контрактов. | Необходимо включить [поддержку веб-сокетов](/azure/app-service/web-sites-configure) для дуплексных контрактов. |
 | `BasicHttpContextBinding` |  |
 | `WebHttpBinding` |  |
 | `WSHttpContextBinding` |  |
@@ -62,7 +62,7 @@ ms.locfileid: "86174313"
 
 #### <a name="iis7-schema-compliance"></a>Соответствие схеме IIS7+
 
-Некоторые элементы и атрибуты не определены в схеме IIS Службы приложений Azure. При возникновении проблем рекомендуется использовать [преобразования XDT](https://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
+Некоторые элементы и атрибуты не определены в схеме IIS Службы приложений Azure. При возникновении проблем рекомендуется использовать [преобразования XDT](/azure/app-service/configure-common).
 
 #### <a name="single-application-pool-per-site"></a>Один пул приложений на сайт
 

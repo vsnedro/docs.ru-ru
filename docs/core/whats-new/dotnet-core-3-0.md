@@ -6,12 +6,12 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
-ms.openlocfilehash: bf712e88d96a5c2c80c3ff50283d44e9c7717abb
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: ac2b4193849c56002c5bba35932f2882b987a0d6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608219"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537500"
 ---
 # <a name="whats-new-in-net-core-30"></a>Новые возможности .NET Core 3.0
 
@@ -136,7 +136,7 @@ dotnet publish -r <rid> -c Release
 
 В любом случае обязательно протестируйте приложение после обрезки.
 
-Дополнительные сведения о компоновщике IL вы найдете в [этой документации](https://aka.ms/dotnet-illink) или на страницах репозитория [mono/linker]( https://github.com/mono/linker).
+Дополнительные сведения о компоновщике IL вы найдете в [этой документации](../deploying/trim-self-contained.md) или на страницах репозитория [mono/linker]( https://github.com/mono/linker).
 
 ### <a name="tiered-compilation"></a>Многоуровневая компиляция
 
@@ -329,9 +329,9 @@ Windows предоставляет собственный API с широким�
 
 ### <a name="msix-deployment"></a>Развертывание MSIX
 
-[MSIX](https://docs.microsoft.com/windows/msix/) — это новый формат пакета приложения Windows. Его можно использовать для развертывания классических приложений .NET Core 3.0 для Windows 10.
+[MSIX](/windows/msix/) — это новый формат пакета приложения Windows. Его можно использовать для развертывания классических приложений .NET Core 3.0 для Windows 10.
 
-[Проект упаковки приложений Windows](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), доступный в Visual Studio 2019, позволяет создавать пакеты MSIX с [автономными](../deploying/index.md#publish-self-contained) приложениями .NET Core.
+[Проект упаковки приложений Windows](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), доступный в Visual Studio 2019, позволяет создавать пакеты MSIX с [автономными](../deploying/index.md#publish-self-contained) приложениями .NET Core.
 
 Файл проекта .NET Core должен указывать поддерживаемые среды выполнения в свойстве `<RuntimeIdentifiers>`:
 

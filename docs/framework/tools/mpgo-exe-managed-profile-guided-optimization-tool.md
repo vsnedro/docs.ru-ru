@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Ngen.exe
 - Ngen.exe, profilers and native images
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
-ms.openlocfilehash: 18a379447e1d5ba97090eca299c59cc161c7be71
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 714715968388325713a12027fb0ab89415e1d60c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517286"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544288"
 ---
 # <a name="mpgoexe-managed-profile-guided-optimization-tool"></a>Mpgo.exe (управляемое средство профильной оптимизации)
 
@@ -130,4 +130,4 @@ mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyT
 - [Ngen.exe (генератор образов в машинном коде)](ngen-exe-native-image-generator.md)
 - [Командные строки](developer-command-prompt-for-vs.md)
 - [Повышение производительности при запуске классических приложений](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/)
-- [Обзор средств повышения производительности в .NET 4.5](https://docs.microsoft.com/archive/msdn-magazine/2012/april/clr-an-overview-of-performance-improvements-in-net-4-5)
+- [Обзор средств повышения производительности в .NET 4.5](/archive/msdn-magazine/2012/april/clr-an-overview-of-performance-improvements-in-net-4-5)

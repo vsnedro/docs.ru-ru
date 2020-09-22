@@ -10,15 +10,15 @@ helpviewer_keywords:
 - reflection emit, dynamic methods
 - dynamic methods
 ms.assetid: 07d08a99-62c5-4254-bce2-2a75e55a18ab
-ms.openlocfilehash: 7c68be91deb59ea9439e81561f50b7cc40766a45
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: d1ccf3d3ac966e35e1708f0639785a2760eb8287
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865116"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559191"
 ---
 # <a name="how-to-define-and-execute-dynamic-methods"></a>Практическое руководство. Определение и выполнение динамических методов
-В следующих процедурах показаны способы определения и выполнения простого динамического метода и динамического метода, привязанного к экземпляру класса. Дополнительные сведения о динамических методах см. в описании класса <xref:System.Reflection.Emit.DynamicMethod> и в разделе [Сценарии динамических методов порождаемого отражения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100)).  
+В следующих процедурах показаны способы определения и выполнения простого динамического метода и динамического метода, привязанного к экземпляру класса. Дополнительные сведения о динамических методах см. в описании класса <xref:System.Reflection.Emit.DynamicMethod> и в разделе [Сценарии динамических методов порождаемого отражения](/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100)).  
   
 ### <a name="to-define-and-execute-a-dynamic-method"></a>Определение и выполнение динамического метода  
   
@@ -116,5 +116,5 @@ ms.locfileid: "86865116"
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Reflection.Emit.DynamicMethod>
-- [Использование порождаемого отражения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
-- [Сценарии динамических методов порождаемого отражения](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100))
+- [Использование порождаемого отражения](/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
+- [Сценарии динамических методов порождаемого отражения](/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100))

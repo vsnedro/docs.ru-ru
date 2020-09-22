@@ -3,12 +3,12 @@ title: Измерение производительности с помощью
 description: В этом руководстве вы узнаете, как измерять производительность с помощью EventCounters.
 ms.date: 08/07/2020
 ms.topic: tutorial
-ms.openlocfilehash: 7b4940e17d01e7ec5a50d11e3c818ecdec2d48cf
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: db9a0889d46cc4db02baac60cbed6f6e0ba6856b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024974"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538570"
 ---
 # <a name="tutorial-measure-performance-using-eventcounters-in-net-core"></a>Учебник. Измерение производительности с помощью EventCounters в .NET Core
 
@@ -29,11 +29,11 @@ ms.locfileid: "88024974"
 
 - [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии.
 - [dotnet-counters](dotnet-counters.md) для мониторинга счетчиков событий.
-- [Пример целевого приложения отладки](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) для диагностики.
+- [Пример целевого приложения отладки](/samples/dotnet/samples/diagnostic-scenarios) для диагностики.
 
 ## <a name="get-the-source"></a>Получение исходного кода
 
-Пример приложения будет использоваться в качестве основания для мониторинга. [Пример репозитория ASP.NET](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) доступен в обозревателе примеров. Скачайте ZIP-файл, извлеките его содержимое и откройте его в избранной интегрированной среде разработки. Выполните сборку приложения и запустите его, чтобы убедиться, что оно работает правильно, а затем закройте приложение.
+Пример приложения будет использоваться в качестве основания для мониторинга. [Пример репозитория ASP.NET](/samples/dotnet/samples/diagnostic-scenarios) доступен в обозревателе примеров. Скачайте ZIP-файл, извлеките его содержимое и откройте его в избранной интегрированной среде разработки. Выполните сборку приложения и запустите его, чтобы убедиться, что оно работает правильно, а затем закройте приложение.
 
 ## <a name="implement-an-eventsource"></a>Реализация счетчика событий
 

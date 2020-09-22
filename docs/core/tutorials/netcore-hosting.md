@@ -4,12 +4,12 @@ description: Узнайте, как разместить среду выполн
 author: mjrousos
 ms.topic: how-to
 ms.date: 12/21/2018
-ms.openlocfilehash: 3b24ade694e25040d77e411bead3f454e9d5cdef
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 9f45a75d7ec836c14a2285a1707649cc32c2a25c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656180"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537552"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>Написание пользовательского хост-приложения NET Core для управления средой выполнения .NET из машинного кода
 
@@ -144,7 +144,7 @@ public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 
 Кроме того, функция `coreclr_execute_assembly` может использоваться для запуска управляемого исполняемого файла. Этот API принимает путь к сборке и массив аргументов в качестве входных параметров. Он загружает сборку по этому пути и вызывает ее метод main.
 
-```C++
+```c++
 int hr = executeAssembly(
         hostHandle,
         domainId,
@@ -197,7 +197,7 @@ API среды выполнения .NET Core находятся в *CoreCLR.dll
 
 Среда выполнения запускается с помощью вызова функции `Start`.
 
-```C++
+```c++
 hr = runtimeHost->Start();
 ```
 
@@ -234,7 +234,7 @@ hr = runtimeHost->Start();
 
 Если `ExecuteAssembly` не соответствует потребностям вашего основного приложения, можно использовать `CreateDelegate`, чтобы создать указатель функции в статическом управляемом методе. При этом основному приложению нужно знать сигнатуру вызываемого метода (чтобы создать тип указателя функции), но основные приложения способны гибко вызывать код, отличный от точки входа сборки. Имя сборки, указанное во втором параметре, соответствует [полному имени управляемой сборки](../../standard/assembly/names.md) библиотеки для загрузки.
 
-```C++
+```c++
 void *pfnDelegate = NULL;
 hr = runtimeHost->CreateDelegate(
     domainId,

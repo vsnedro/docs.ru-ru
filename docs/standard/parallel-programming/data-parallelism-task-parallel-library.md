@@ -9,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - parallelism, data
 ms.assetid: 3f05f33f-f1da-4b16-81c2-9ceff1bef449
-ms.openlocfilehash: 513c5dde1526a8a21f68171f304b245d0a34f563
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 617757581f6d2491098e1172072bdf0387c6852b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594469"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558918"
 ---
 # <a name="data-parallelism-task-parallel-library"></a>Параллелизм данных (библиотека параллельных задач)
 Понятие *Параллелизм данных* относится к сценариям, в которых одна и та же операция выполняется одновременно (то есть параллельно) для элементов в исходной коллекции или массиве. В параллельных операциях с данными исходная коллекция секционируются таким образом, чтобы несколько потоков могли одновременно работать в разных сегментах.  
@@ -44,7 +44,7 @@ ms.locfileid: "84594469"
 |-----------|-----------------|  
 |[Практическое руководство. Написание простого цикла Parallel.For](how-to-write-a-simple-parallel-for-loop.md)|Описание способа написания цикла <xref:System.Threading.Tasks.Parallel.For%2A> по какому-либо массиву или индексируемой исходной коллекции <xref:System.Collections.Generic.IEnumerable%601>.|  
 |[Практическое руководство. Написание простого цикла Parallel.ForEach](how-to-write-a-simple-parallel-foreach-loop.md)|Описание способа написания цикла <xref:System.Threading.Tasks.Parallel.ForEach%2A> по какой-либо исходной коллекции <xref:System.Collections.Generic.IEnumerable%601>.|  
-|[Практическое руководство. Остановка или прерывание цикла Parallel.For](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd460721(v=vs.100))|В этом руководстве описывается, как остановить или приостановить параллельный цикл, чтобы все потоки были информированы об этом действии.|  
+|[Практическое руководство. Остановка или прерывание цикла Parallel.For](/previous-versions/dotnet/netframework-4.0/dd460721(v=vs.100))|В этом руководстве описывается, как остановить или приостановить параллельный цикл, чтобы все потоки были информированы об этом действии.|  
 |[Практическое руководство. Написание цикла Parallel.For и локальными переменными потока](how-to-write-a-parallel-for-loop-with-thread-local-variables.md)|В этом руководстве рассматривается написание цикла <xref:System.Threading.Tasks.Parallel.For%2A>, в котором каждый поток поддерживает частную переменную, которая не видна другим потокам, и синхронизация результатов из всех потоков после завершения цикла.|  
 |[Практическое руководство. Написание цикла Parallel.ForEach c локальными переменными раздела](how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md)|В этом руководстве рассматривается написание цикла <xref:System.Threading.Tasks.Parallel.ForEach%2A>, в котором каждый поток поддерживает частную переменную, которая не видна другим потокам, и синхронизация результатов из всех потоков после завершения цикла.|  
 |[Практическое руководство. Отмена цикла Parallel.For или Parallel.ForEach](how-to-cancel-a-parallel-for-or-foreach-loop.md)|В этом руководстве описывается, как отменить параллельный цикл с помощью <xref:System.Threading.CancellationToken?displayProperty=nameWithType>|  

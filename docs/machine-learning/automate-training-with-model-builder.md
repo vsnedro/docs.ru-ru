@@ -3,12 +3,12 @@ title: Построитель моделей и принципы его рабо
 description: Сведения об использовании построителя моделей ML.NET для автоматического обучения модели машинного обучения
 ms.date: 06/01/2020
 ms.custom: overview, mlnet-tooling
-ms.openlocfilehash: 2ed4a0c3c94ae9f46bb1cf6ddb1e9774baf82367
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 80f5f5d064c4e0c4097dacc6022d4624c1516ab9
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289503"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679681"
 ---
 # <a name="what-is-model-builder-and-how-does-it-work"></a>Построитель моделей и принципы его работы
 
@@ -111,7 +111,7 @@ ms.locfileid: "84289503"
 |-|-|-|-|-|
 |Классификация|Прогнозирование аномалий продаж|[данные по продажам продуктов](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Продажи продукта|Месяц|
 ||Прогнозирование тональности комментариев веб-сайта|[данные по комментариям на веб-сайте](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Метка (0 — отрицательная тональность, 1 — положительная)|Комментарий, год|
-||Прогнозирование мошеннических операций с кредитной картой|[данные по кредитным картам](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Класс (1 — мошенничество, 0 — нет)|Сумма, V1–V28 (анонимизированные признаки)|
+||Прогнозирование мошеннических операций с кредитной картой|[данные по кредитным картам](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CCFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Класс (1 — мошенничество, 0 — нет)|Сумма, V1–V28 (анонимизированные признаки)|
 ||Прогнозирование типа проблемы в репозитории GitHub|[Данные по проблемам на GitHub](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Область|Название, описание|
 |Прогнозирование значений|Прогнозирование платы за такси|[данные по платам за такси](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Плата|Время поездки, расстояние|
 |Классификация изображений|Прогнозирование категории, к которой относится цветок |[изображения цветов](http://download.tensorflow.org/example_images/flower_photos.tgz)|Вид цветов: маргаритки, одуванчики, розы, подсолнухи, тюльпаны|Данные изображения|

@@ -5,12 +5,12 @@ ms.topic: reference
 ms.date: 06/01/2020
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: 8622b580b7925adfd7895317815021f57960e9ee
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 1321967cacdd373acc19923f992d30c5453ea869
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924582"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556223"
 ---
 # <a name="model-builder-azure-training-resources"></a>Обучающие ресурсы Azure по построителям моделей
 
@@ -48,7 +48,7 @@ ms.locfileid: "86924582"
     | Standard_NC12   | 12 | 112 | 680  | 2 | 24 | 48 | 2 |
     | Standard_NC24   | 24 | 224 | 1440 | 4 | 48 | 64 | 4 |
 
-    Дополнительные сведения о типах вычислений, оптимизированных для GPU, см. в [документации по виртуальным машинам Linux серии NC](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json).
+    Дополнительные сведения о типах вычислений, оптимизированных для GPU, см. в [документации по виртуальным машинам Linux серии NC](/azure/virtual-machines/nc-series?bc=%252fazure%252fvirtual-machines%252flinux%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fvirtual-machines%252flinux%252ftoc.json).
 - Приоритет вычислений
 
   - Вычисления с низким приоритетом: подходят для задач с меньшим временем выполнения. Могут подвергаться воздействию прерываний и недостатка доступности. Обычно обходятся дешевле, так как используют преимущества избыточной емкости в Azure.

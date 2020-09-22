@@ -11,12 +11,12 @@ helpviewer_keywords:
 - data sources [LINQ in C#], data transformations
 - data transformations [LINQ in C#]
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
-ms.openlocfilehash: 6844cf2aa589f7516a9e40bc604c5f907ec6d311
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: af08938b6b8f169ded2180529c2b4aadebefef55
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87104024"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558814"
 ---
 # <a name="data-transformations-with-linq-c"></a>Преобразования данных с помощью LINQ (C#)
 LINQ используется не только для получения данных. Это эффективный инструмент для их преобразования. С помощью запросов LINQ можно использовать исходную последовательность в качестве входных данных и изменять ее разными способами для создания новой выходной последовательности. Можно изменить саму последовательность, не изменяя элементы, с помощью сортировки и группировки. Но самой интересной функцией запросов LINQ можно назвать возможность создания новых типов. Это выполняется в предложении [select](../../../language-reference/keywords/select-clause.md). Например, можно выполнить следующие задачи.  
@@ -88,7 +88,7 @@ LINQ используется не только для получения дан
 </Root>  
 ```  
   
- Дополнительные сведения см. в разделе [Создание деревьев XML C# (LINQ to XML)](./creating-xml-trees-linq-to-xml-2.md).  
+ Дополнительные сведения см. в разделе [Создание деревьев XML C# (LINQ to XML)](../../../../standard/linq/create-xml-trees.md).  
   
 ## <a name="performing-operations-on-source-elements"></a>Выполнение операций с исходными элементами  
  Выходная последовательность не может содержать любые элементы или свойства элементов из исходной последовательности. Результатом может быть последовательность значений, вычисляемых с использованием исходных элементов в качестве входных аргументов.
@@ -107,6 +107,6 @@ LINQ используется не только для получения дан
 - [LINQ (C#)](./index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
-- [LINQ to XML (C#)](./linq-to-xml-overview.md)
+- [LINQ to XML (C#)](../../../../standard/linq/linq-xml-overview.md)
 - [Выражения запросов LINQ](../../../linq/index.md)
 - [предложение select](../../../language-reference/keywords/select-clause.md)

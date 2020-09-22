@@ -4,12 +4,12 @@ description: Узнайте, как отправить задание .NET дл�
 ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 50611b1f62934a446e5b80a8c53698efe23cd1fc
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 560822783b57b2419595cb15efa097591db8d600
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617695"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557168"
 ---
 # <a name="submit-a-net-for-apache-spark-job-to-azure-hdinsight"></a>Отправка задания .NET для Apache Spark в Azure HDInsight
 
@@ -37,7 +37,7 @@ ms.locfileid: "85617695"
 
 ## <a name="deploy-using-apache-livy"></a>Развертывание с помощью Apache Livy
 
-Для отправки заданий .NET для Apache Spark в кластер Azure HDInsight Spark можно использовать [Apache Livy](https://livy.incubator.apache.org/), интерфейс REST API для Apache Spark. Дополнительные сведения см. в статье [Работа с удаленными заданиями с помощью Apache Livy](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-livy-rest-interface).
+Для отправки заданий .NET для Apache Spark в кластер Azure HDInsight Spark можно использовать [Apache Livy](https://livy.incubator.apache.org/), интерфейс REST API для Apache Spark. Дополнительные сведения см. в статье [Работа с удаленными заданиями с помощью Apache Livy](/azure/hdinsight/spark/apache-spark-livy-rest-interface).
 
 В Linux можно выполнить следующую команду с помощью `curl`:
 
@@ -60,4 +60,4 @@ EOF
 
 * [Начало работы с .NET для Apache Spark](../tutorials/get-started.md)
 * [Развертывание приложения .NET для Apache Spark в Azure HDInsight](../tutorials/hdinsight-deployment.md)
-* [Документация по HDInsight](https://docs.microsoft.com/azure/hdinsight/)
+* [Документация по HDInsight](/azure/hdinsight/)

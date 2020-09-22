@@ -5,12 +5,12 @@ ms.date: 11/07/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to, title-hack-0625
-ms.openlocfilehash: 83aaae2d2e75b3076841750bf5d505390a538bc0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: edcb1c4d00a09ba8404b08ddc3ca3447a52a81b6
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74344759"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679590"
 ---
 # <a name="load-data-from-files-and-other-sources"></a>Загрузка данных из файлов и других источников
 
@@ -66,7 +66,7 @@ ML.NET работает с именами столбцов. Если вы хот
 
 ## <a name="load-data-from-a-single-file"></a>Загрузка данных из отдельного файла
 
-Для загрузки данных из файла используйте метод [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile*) с моделью данных для загружаемых данных. Поскольку параметр `separatorChar` по умолчанию разделяется знаками табуляции, измените его, если нужно для файла данных. Если в файле есть заголовок, присвойте параметру `hasHeader` значение `true`, чтобы игнорировать первую строку в файле и начать загрузку данных со второй строки.
+Для загрузки данных из файла используйте метод [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%2A) с моделью данных для загружаемых данных. Поскольку параметр `separatorChar` по умолчанию разделяется знаками табуляции, измените его, если нужно для файла данных. Если в файле есть заголовок, присвойте параметру `hasHeader` значение `true`, чтобы игнорировать первую строку в файле и начать загрузку данных со второй строки.
 
 ```csharp
 //Create MLContext
@@ -82,7 +82,7 @@ IDataView data = mlContext.Data.LoadFromTextFile<HousingData>("my-data-file.csv"
 
 ### <a name="load-from-files-in-a-single-directory"></a>Загрузка данных из файлов в одном каталоге
 
-Если все файлы данных находятся в одном и том же каталоге, используйте в методе [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile*) подстановочные знаки.
+Если все файлы данных находятся в одном и том же каталоге, используйте в методе [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%2A) подстановочные знаки.
 
 ```csharp
 //Create MLContext
@@ -94,7 +94,7 @@ IDataView data = mlContext.Data.LoadFromTextFile<HousingData>("Data/*", separato
 
 ### <a name="load-from-files-in-multiple-directories"></a>Загрузка из файлов в нескольких каталогах
 
-Чтобы загрузить данные из нескольких каталогов, с помощью метода [`CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader*) создайте [`TextLoader`](xref:Microsoft.ML.Data.TextLoader). Затем с помощью метода [`TextLoader.Load`](xref:Microsoft.ML.DataLoaderExtensions.Load*) укажите пути к отдельным файлам (подстановочные знаки использовать нельзя).
+Чтобы загрузить данные из нескольких каталогов, с помощью метода [`CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader%2A) создайте [`TextLoader`](xref:Microsoft.ML.Data.TextLoader). Затем с помощью метода [`TextLoader.Load`](xref:Microsoft.ML.DataLoaderExtensions.Load%2A) укажите пути к отдельным файлам (подстановочные знаки использовать нельзя).
 
 ```csharp
 //Create MLContext
@@ -116,7 +116,7 @@ ML.NET поддерживает загрузку данных из различ�
 
 Имеется база данных с таблицей `House` и следующей схемой:
 
-```SQL
+```sql
 CREATE TABLE [House] (
     [HouseId] INT NOT NULL IDENTITY,
     [Size] INT NOT NULL,
@@ -200,10 +200,10 @@ HousingData[] inMemoryCollection = new HousingData[]
 };
 ```
 
-Загрузите эту коллекцию в памяти в [`IDataView`](xref:Microsoft.ML.IDataView) с помощью метода [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*):
+Загрузите эту коллекцию в памяти в [`IDataView`](xref:Microsoft.ML.IDataView) с помощью метода [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable%2A):
 
 > [!IMPORTANT]
-> [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) предполагает, что [`IEnumerable`](xref:System.Collections.IEnumerable), откуда он загружается, является потокобезопасным.
+> [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable%2A) предполагает, что [`IEnumerable`](xref:System.Collections.IEnumerable), откуда он загружается, является потокобезопасным.
 
 ```csharp
 // Create MLContext

@@ -2,12 +2,12 @@
 title: Команда dotnet nuget update source
 description: Команда dotnet nuget update source обновляет существующий источник в файлах конфигурации NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: 42b1aec95cdd57e53f966400f6692a3d0150c16c
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: a8658c78c095ad4b9272d97200e1d6466cbe658b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463475"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537858"
 ---
 # <a name="dotnet-nuget-update-source"></a>dotnet nuget update source
 
@@ -41,7 +41,7 @@ dotnet nuget update source -h|--help
 
 - **`--configfile <FILE>`**
 
-  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`-p|--password <PASSWORD>`**
 

@@ -3,12 +3,12 @@ title: Модель асинхронного программирования з
 description: Узнайте, когда и как использовать асинхронное программирование на основе задач, которое представляет собой упрощенный подход к асинхронному программированию в C#.
 ms.date: 08/19/2020
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
-ms.openlocfilehash: 5e85b99025b31e205c66468d4bd886701cbaea17
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 1014e38dcb3e2c4f56c8b3f3dade9bdbff3abd27
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812096"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556041"
 ---
 # <a name="task-asynchronous-programming-model"></a>Асинхронная модель программирования
 
@@ -43,7 +43,7 @@ ms.locfileid: "88812096"
 
 Ниже приводится пример асинхронного метода. Почти все элементы кода должны быть вам знакомы.
 
-Полный пример Windows Presentation Foundation (WPF), доступный для загрузки, см. в статье [Асинхронное программирование с использованием ключевых слов async и await в C#](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs).
+Полный пример Windows Presentation Foundation (WPF), доступный для загрузки, см. в статье [Асинхронное программирование с использованием ключевых слов async и await в C#](/samples/dotnet/samples/async-and-await-cs).
 
 :::code language="csharp" source="snippets/access-web/Program.cs" id="ControlFlow":::
 
@@ -121,7 +121,7 @@ string contents = await client.GetStringAsync("https://docs.microsoft.com/dotnet
 
 Где же найти методы для асинхронного программирования (такие как `GetStringAsync`)? Платформа .NET Framework 4.5 и более поздние версии, а также .NET Core содержат большое количество элементов, совместимых с `async` и `await`. Они содержат суффикс Async в имени элемента и возвращают тип <xref:System.Threading.Tasks.Task> или <xref:System.Threading.Tasks.Task%601>. Например, класс `System.IO.Stream` имеет такие методы, как <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A> и <xref:System.IO.Stream.WriteAsync%2A>, наряду с синхронными методами <xref:System.IO.Stream.CopyTo%2A>, <xref:System.IO.Stream.Read%2A> и <xref:System.IO.Stream.Write%2A>.
 
-Среда выполнения Windows также содержит множество методов, которые можно использовать в сочетании с `async` и `await` в приложениях Windows. См. дополнительные сведения о [потоковом и асинхронном программировании](/windows/uwp/threading-async/) для разработки UWP, [асинхронном программировании (приложения Магазина Windows)](https://docs.microsoft.com/previous-versions/windows/apps/hh464924(v=win.10)), а также [вызове асинхронных API в C# или Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh452713(v=win.10)), если вы используете предыдущие версии среды выполнения Windows.
+Среда выполнения Windows также содержит множество методов, которые можно использовать в сочетании с `async` и `await` в приложениях Windows. См. дополнительные сведения о [потоковом и асинхронном программировании](/windows/uwp/threading-async/) для разработки UWP, [асинхронном программировании (приложения Магазина Windows)](/previous-versions/windows/apps/hh464924(v=win.10)), а также [вызове асинхронных API в C# или Visual Basic](/previous-versions/windows/apps/hh452713(v=win.10)), если вы используете предыдущие версии среды выполнения Windows.
 
 ## <a name="threads"></a><a name="BKMK_Threads"></a> Потоки
 
@@ -214,7 +214,7 @@ await GetTaskAsync();
 
 | Заголовок | Описание | Пример |
 |--|--|--|
-| [Практическое руководство. Параллельное выполнение нескольких веб-запросов с использованием Async и Await (C#)](how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) | Иллюстрирует, как запустить несколько задач одновременно. | [Пример использования Async. Параллельное выполнение нескольких веб-запросов](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e) |
+| [Практическое руководство. Параллельное выполнение нескольких веб-запросов с использованием Async и Await (C#)](./index.md) | Иллюстрирует, как запустить несколько задач одновременно. | [Пример использования Async. Параллельное выполнение нескольких веб-запросов](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e) |
 | [Типы возвращаемых значений асинхронных операций (C#)](async-return-types.md) | Иллюстрирует типы, которые могут возвращать асинхронные методы, и поясняет, когда следует использовать каждый из этих типов. |  |
 | Отмените задачи с маркером отмены в качестве механизма сигнализации. | Иллюстрирует добавление следующих функциональных возможностей в асинхронное решение:<br><br> - [Отмена списка задач (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Отмена задач после определенного периода времени (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Обработка асинхронных задач по мере завершения (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |  |
 | [Использование метода async для доступа к файлам (C#)](using-async-for-file-access.md) | Иллюстрирует преимущества использования асинхронности и ожидания для доступа к файлам. |  |

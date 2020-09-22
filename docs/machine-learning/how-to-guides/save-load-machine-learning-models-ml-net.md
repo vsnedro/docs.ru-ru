@@ -5,12 +5,12 @@ ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
-ms.openlocfilehash: e3cebe979b5c279ce8cb90db5510f8758c24c2b4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 681a35956a8959e2f1cbb5a7023e0ef29b67097e
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73976999"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679538"
 ---
 # <a name="save-and-load-trained-models"></a>Сохранение и загрузка обученных моделей
 
@@ -69,7 +69,7 @@ mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 1. [`ITransformer`](xref:Microsoft.ML.ITransformer) модели;
 2. [`DataViewSchema`](xref:Microsoft.ML.DataViewSchema) ожидаемых входных данных [`ITransformer`](xref:Microsoft.ML.ITransformer).
 
-После обучения модели вызовите метод [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save*), чтобы сохранить обученную модель в файл с именем `model.zip`, используя `DataViewSchema` входных данных.
+После обучения модели вызовите метод [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A), чтобы сохранить обученную модель в файл с именем `model.zip`, используя `DataViewSchema` входных данных.
 
 ```csharp
 // Save Trained Model
@@ -80,7 +80,7 @@ mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 
 Модели, сохраненные на локальном компьютере, можно использовать в других процессах или приложениях, таких как `ASP.NET Core` и `Serverless Web Applications`. Дополнительные сведения см. в статьях [Использование ML.NET в веб-API](./serve-model-web-api-ml-net.md) и [Развертывание бессерверного веб-приложения ML.NET](./serve-model-serverless-azure-functions-ml-net.md).
 
-В отдельном приложении или процессе вызовите метод [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load*) с указанием пути к файлу, чтобы загрузить в приложение обученную модель.
+В отдельном приложении или процессе вызовите метод [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load%2A) с указанием пути к файлу, чтобы загрузить в приложение обученную модель.
 
 ```csharp
 //Define DataViewSchema for data preparation pipeline and trained model
@@ -92,7 +92,7 @@ ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
 
 ## <a name="load-a-model-stored-remotely"></a>Загрузка модели, сохраненной на удаленном ресурсе
 
-Чтобы загрузить в приложение конвейеры подготовки данных и модели, сохраненные на удаленном ресурсе, вместо пути к файлу укажите [`Stream`](xref:System.IO.Stream) в методе [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load*).
+Чтобы загрузить в приложение конвейеры подготовки данных и модели, сохраненные на удаленном ресурсе, вместо пути к файлу укажите [`Stream`](xref:System.IO.Stream) в методе [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load%2A).
 
 ```csharp
 // Create MLContext

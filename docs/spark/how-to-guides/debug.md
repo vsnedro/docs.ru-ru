@@ -4,12 +4,12 @@ description: Узнайте, как отлаживать приложения .N
 ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 9209d5bdec6dd85f6d21a502fb07204effef1934
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 249b4bccbf1378d8ef8c824f39151c33fb9f875a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617760"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557155"
 ---
 # <a name="debug-a-net-for-apache-spark-application"></a>Отладка приложения .NET для Apache Spark
 
@@ -61,7 +61,7 @@ if (EnvironmentUtils.GetEnvironmentVariableAsBool("DOTNET_WORKER_DEBUG"))
 }
 ```
 
-Перейдите к файлу *.cs*, который содержит определяемую пользователем функцию, которую вам нужно отладить, и [установите точку останова](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019). От точки останова поступит сообщение `The breakpoint will not currently be hit`, так как рабочая роль еще не загрузила сборку с нужной функцией UDF.
+Перейдите к файлу *.cs*, который содержит определяемую пользователем функцию, которую вам нужно отладить, и [установите точку останова](/visualstudio/debugger/using-breakpoints?view=vs-2019). От точки останова поступит сообщение `The breakpoint will not currently be hit`, так как рабочая роль еще не загрузила сборку с нужной функцией UDF.
 
 Нажмите `F5`, чтобы продолжить работу приложения до момента, когда будет достигнута эта точка останова.
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 74c3d3247912dcd638a9379d54e682967c5e400b
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 18718ebc934e0175c20411055b8c0a90ef6b175f
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302723"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539487"
 ---
 ### <a name="globalization-apis-use-icu-libraries-on-windows"></a>API-интерфейсы глобализации, которые используют библиотеки ICU в Windows
 
@@ -27,7 +27,7 @@ ms.locfileid: "87302723"
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
-От разработчика не требуется никаких действий. Но если вы хотите по-прежнему использовать API-интерфейсы глобализации NLS, настройте [параметр времени выполнения](../../../../docs/core/run-time-config/globalization.md#nls), чтобы вернуться к старому поведению. Дополнительные сведения о доступных параметрах см. в статье [Глобализация .NET и ICU](/dotnet/standard/globalization-localization/globalization-icu).
+От разработчика не требуется никаких действий. Но если вы хотите по-прежнему использовать API-интерфейсы глобализации NLS, настройте [параметр времени выполнения](../../../../docs/core/run-time-config/globalization.md#nls), чтобы вернуться к старому поведению. Дополнительные сведения о доступных параметрах см. в статье [Глобализация .NET и ICU](../../../../docs/standard/globalization-localization/globalization-icu.md).
 
 #### <a name="category"></a>Категория
 

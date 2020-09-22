@@ -2,12 +2,12 @@
 title: Команда dotnet nuget list source
 description: Команда dotnet nuget list source выводит список всех существующих источников в файлах конфигурации NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: 8b14413949bd60ddeed977d19eec9bb99982da70
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 071061e32aa1bf888e197ec6bf97f4e4f6859f0b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463541"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537902"
 ---
 # <a name="dotnet-nuget-list-source"></a>dotnet nuget list source
 
@@ -33,7 +33,7 @@ dotnet nuget list source -h|--help
 
 - **`--configfile <FILE>`**
 
-  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`--format [Detailed|Short]`**
 

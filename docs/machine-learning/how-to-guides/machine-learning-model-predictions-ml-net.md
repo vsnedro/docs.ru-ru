@@ -5,12 +5,12 @@ ms.date: 09/18/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
-ms.openlocfilehash: 182350cc5143155133385c6fd77986b271f6db91
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2e8263db289bed50e7437b695134458b8c07e0e5
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73977047"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679577"
 ---
 # <a name="make-predictions-with-a-trained-model"></a>Прогнозирование с помощью обученной модели
 
@@ -72,7 +72,7 @@ ITransformer predictionPipeline = mlContext.Model.Load("model.zip", out predicti
 PredictionEngine<HousingData, HousingPrediction> predictionEngine = mlContext.Model.CreatePredictionEngine<HousingData, HousingPrediction>(predictionPipeline);
 ```
 
-Затем с помощью метода [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) передайте входные данные как параметр. Обратите внимание, что для использования метода [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) не нужно, чтобы входные данные были [`IDataView`](xref:Microsoft.ML.IDataView). Это обусловлено тем, что он беспрепятственно осуществляет внутреннюю обработку типов входных данных, чтобы вы могли передать объект типа входных данных. Кроме того, так как `CurrentPrice` является целью или меткой, которую вы пытаетесь спрогнозировать с помощью новых данных, предполагается, что на данный момент значения для него нет.
+Затем с помощью метода [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict%2A) передайте входные данные как параметр. Обратите внимание, что для использования метода [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict%2A) не нужно, чтобы входные данные были [`IDataView`](xref:Microsoft.ML.IDataView). Это обусловлено тем, что он беспрепятственно осуществляет внутреннюю обработку типов входных данных, чтобы вы могли передать объект типа входных данных. Кроме того, так как `CurrentPrice` является целью или меткой, которую вы пытаетесь спрогнозировать с помощью новых данных, предполагается, что на данный момент значения для него нет.
 
 ```csharp
 // Input Data
@@ -114,14 +114,14 @@ HousingData[] housingData = new HousingData[]
 };
 ```
 
-Затем воспользуйтесь методом [`Transform`](xref:Microsoft.ML.ITransformer.Transform*), чтобы применить преобразования данных и сформировать прогнозы.
+Затем воспользуйтесь методом [`Transform`](xref:Microsoft.ML.ITransformer.Transform%2A), чтобы применить преобразования данных и сформировать прогнозы.
 
 ```csharp
 // Predicted Data
 IDataView predictions = predictionPipeline.Transform(inputData);
 ```
 
-Проверьте прогнозируемые значения с помощью метода [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn*).
+Проверьте прогнозируемые значения с помощью метода [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn%2A).
 
 ```csharp
 // Get Predictions

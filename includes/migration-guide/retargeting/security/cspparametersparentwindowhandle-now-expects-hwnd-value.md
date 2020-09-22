@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4b5c886ad35afbbf0a68e03b3174ab9ea1f5524f
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 12ba3bd3c9e9e00b88cab0e568a1ce0f4f8bbb05
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614765"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606269"
 ---
 ### <a name="cspparametersparentwindowhandle-now-expects-hwnd-value"></a>CspParameters.ParentWindowHandle теперь ожидает значение HWND
 
@@ -16,7 +16,7 @@ ms.locfileid: "85614765"
 cspParameters.ParentWindowHandle = form.Handle;
 ```
 
-В предыдущих версиях платформы .NET Framework ожидалось значение <xref:System.IntPtr?displayProperty=fullName>, указывающее расположение в памяти, где находится значение [HWND](https://docs.microsoft.com/windows/desktop/WinProg/windows-data-types#HWND). В Windows 7 и более ранних версиях задание свойству значения form.Handle ни на что не влияло, но в Windows 8 и более поздних версиях оно приводит к исключению &quot;<xref:System.Security.Cryptography.CryptographicException?displayProperty=fullName> с сообщением "Неверный параметр".&quot;
+В предыдущих версиях платформы .NET Framework ожидалось значение <xref:System.IntPtr?displayProperty=fullName>, указывающее расположение в памяти, где находится значение [HWND](/windows/desktop/WinProg/windows-data-types#HWND). В Windows 7 и более ранних версиях задание свойству значения form.Handle ни на что не влияло, но в Windows 8 и более поздних версиях оно приводит к исключению &quot;<xref:System.Security.Cryptography.CryptographicException?displayProperty=fullName> с сообщением "Неверный параметр".&quot;
 
 #### <a name="suggestion"></a>Предложение
 

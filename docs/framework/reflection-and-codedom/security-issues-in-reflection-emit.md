@@ -12,12 +12,12 @@ helpviewer_keywords:
 - emitting dynamic assemblies,partial trust scenarios
 - dynamic assemblies, security
 ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
-ms.openlocfilehash: d0ca26a1d0964c935137b0a30a5d7c78f93c597b
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 62bce7435887855f799d320736e6bce8f39e5999
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865246"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558801"
 ---
 # <a name="security-issues-in-reflection-emit"></a>Вопросы безопасности в порождаемом отражении
 Платформа .NET Framework предоставляет три способа создания промежуточного языка Майкрософт (MSIL), каждый из которых имеет собственные вопросы безопасности:  
@@ -35,7 +35,7 @@ ms.locfileid: "86865246"
   
 <a name="Dynamic_Assemblies"></a>
 ## <a name="dynamic-assemblies"></a>Динамические сборки  
- Динамические сборки создаются с помощью перегрузок метода <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType>. Большинство способов перегрузки этого метода не рекомендуется использовать в .NET Framework 4, так как политика безопасности на уровне компьютера больше не используется. (См. раздел [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).) Остальные перегрузки могут выполняться из любого кода независимо от уровня доверия. Эти перегрузки делятся на две группы: те, которые определяют список атрибутов, применяемых к динамической сборке при ее создании, и те, которые этого не делают. Если не указать модель прозрачности для сборки, применив атрибут <xref:System.Security.SecurityRulesAttribute> при ее создании, эта модель наследуется от порождающей сборки.  
+ Динамические сборки создаются с помощью перегрузок метода <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType>. Большинство способов перегрузки этого метода не рекомендуется использовать в .NET Framework 4, так как политика безопасности на уровне компьютера больше не используется. (См. раздел [Изменения системы безопасности](/previous-versions/dotnet/framework/security/security-changes).) Остальные перегрузки могут выполняться из любого кода независимо от уровня доверия. Эти перегрузки делятся на две группы: те, которые определяют список атрибутов, применяемых к динамической сборке при ее создании, и те, которые этого не делают. Если не указать модель прозрачности для сборки, применив атрибут <xref:System.Security.SecurityRulesAttribute> при ее создании, эта модель наследуется от порождающей сборки.  
   
 > [!NOTE]
 > Атрибуты, применяемые к динамической сборке после ее создания с помощью метода <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A>, не действуют, пока сборка не будет сохранена на диск и повторно загружена в память.  
@@ -138,7 +138,7 @@ ms.locfileid: "86865246"
   
 <a name="Version_Information"></a>
 ## <a name="version-information"></a>Сведения о версии  
- Начиная с .NET Framework 4 политика безопасности на уровне компьютера больше не используется, и механизмом обеспечения безопасности по умолчанию становится прозрачность безопасности. См. раздел [Изменения системы безопасности](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).  
+ Начиная с .NET Framework 4 политика безопасности на уровне компьютера больше не используется, и механизмом обеспечения безопасности по умолчанию становится прозрачность безопасности. См. раздел [Изменения системы безопасности](/previous-versions/dotnet/framework/security/security-changes).  
   
  Начиная с .NET Framework 2.0 с пакетом обновления 1 (SP1), разрешение <xref:System.Security.Permissions.ReflectionPermission> с флагом <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> больше не требуется при порождении динамических сборок и динамических методов. Этот флаг необходим во всех более ранних версиях платформы .NET Framework.  
   

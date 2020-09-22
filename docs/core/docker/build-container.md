@@ -4,12 +4,12 @@ description: Из этого руководства вы узнаете, как 
 ms.date: 04/27/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 99bbc67096d98622ca5c0dc83d8b1be44a9995e5
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: b6775c760ef3f5bf1c9519430b038f149c9cf30f
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810551"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538505"
 ---
 # <a name="tutorial-containerize-a-net-core-app"></a>Учебник. Контейнеризация приложения .NET Core
 
@@ -213,13 +213,13 @@ docker-working
 
 В терминале выполните следующую команду:
 
-```Docker
+```console
 docker build -t counter-image -f Dockerfile .
 ```
 
 Docker обработает все строки файла *Dockerfile*. Символ `.` в команде `docker build` используется, чтобы выполнить с помощью Docker поиск файла *Dockerfile* в текущей папке. Эта команда создает образ и локальный репозиторий с именем **counter-image**, который указывает на такой образ. После завершения работы этой команды выполните команду `docker images`, чтобы просмотреть список установленных образов:
 
-```Docker
+```console
 docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 counter-image                           latest              e6780479db63        4 days ago          190MB
@@ -242,7 +242,7 @@ ENTRYPOINT ["dotnet", "NetCore.Docker.dll"]
 
 В окне терминала выполните команду `docker build -t counter-image -f Dockerfile .`, а после ее выполнения — команду `docker images`.
 
-```Docker
+```console
 docker build -t counter-image -f Dockerfile .
 Sending build context to Docker daemon  1.117MB
 Step 1/4 : FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
@@ -272,14 +272,14 @@ mcr.microsoft.com/dotnet/core/aspnet    3.1                 e6780479db63        
 
 Теперь, когда у вас есть образ, содержащий приложение, вы можете создать контейнер. Контейнер можно создать двумя способами. Сначала создайте остановленный контейнер.
 
-```Docker
+```console
 docker create --name core-counter counter-image
 0f281cb3af994fba5d962cc7d482828484ea14ead6bfe386a35e5088c0058851
 ```
 
 Команда `docker create` выше создает контейнер на основе образа **counter-image**. В выходных данных этой команды присутствует **CONTAINER ID** (ваш идентификатор будет отличаться) созданного контейнера. Чтобы просмотреть список *всех* контейнеров, воспользуйтесь командой `docker ps -a`:
 
-```Docker
+```console
 docker ps -a
 CONTAINER ID    IMAGE            COMMAND                   CREATED           STATUS     PORTS    NAMES
 0f281cb3af99    counter-image    "dotnet NetCore.Dock…"    40 seconds ago    Created             core-counter
@@ -289,7 +289,7 @@ CONTAINER ID    IMAGE            COMMAND                   CREATED           STA
 
 Контейнер был создан с определенным именем `core-counter`. Для управления контейнером используется это имя. В следующем примере используется команда `docker start` для запуска контейнера, а затем — команда `docker ps` для отображения только запущенных контейнеров:
 
-```Docker
+```console
 docker start core-counter
 core-counter
 
@@ -300,7 +300,7 @@ CONTAINER ID    IMAGE            COMMAND                   CREATED          STAT
 
 Аналогично, команда `docker stop` останавливает контейнер. В следующем примере используется команда `docker stop` для остановки контейнера, а затем — команда `docker ps` для подтверждения того, что контейнеры не запущены:
 
-```Docker
+```console
 docker stop core-counter
 core-counter
 
@@ -314,7 +314,7 @@ CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 
 После отключения от контейнера снова подключитесь к нему, чтобы убедиться в том, что он продолжает работать и считать числа.
 
-```Docker
+```console
 docker start core-counter
 core-counter
 
@@ -335,13 +335,13 @@ Counter: 19
 
 В рамках этого руководства предполагается, что вам не нужны контейнеры, которые запущены, но не выполняют полезные действия. Удалите созданный ранее контейнер. Если контейнер запущен, остановите его.
 
-```Docker
+```console
 docker stop core-counter
 ```
 
 В примере ниже выводится список всех контейнеров, а затем используется команда `docker rm` для удаления контейнера. После этого выполняется повторная проверка наличия запущенных контейнеров.
 
-```Docker
+```console
 docker ps -a
 CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS                        PORTS    NAMES
 2f6424a7ddce    counter-image    "dotnet NetCore.Dock…"    7 minutes ago    Exited (143) 20 seconds ago            core-counter
@@ -357,7 +357,7 @@ CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 
 Docker предоставляет единую команду `docker run` для создания и запуска контейнера. Она исключает необходимость в поочередном выполнении команд `docker create` и `docker start`. Вы также можете настроить ее для автоматического удаления контейнера при его остановке. Например, команда `docker run -it --rm` выполняет две операции. Сначала она автоматически подключается к контейнеру с помощью текущего терминала, а потом, после завершения работы контейнера, удаляет его:
 
-```Docker
+```console
 docker run -it --rm counter-image
 Counter: 1
 Counter: 2
@@ -369,7 +369,7 @@ Counter: 5
 
 Контейнер также передает параметры в выполнение приложения .NET Core. Чтобы указать приложению .NET Core считать только до 3, передайте 3.
 
-```Docker
+```console
 docker run -it --rm counter-image 3
 Counter: 1
 Counter: 2
@@ -378,7 +378,7 @@ Counter: 3
 
 Во время выполнения `docker run -it` команда, вызываемая нажатием клавиш <kbd>CTRL+C</kbd>, остановит процесс, запущенный в контейнере. А это, в свою очередь, приведет к остановке контейнера. Так как в команде указан параметр `--rm`, контейнер автоматически удалится после остановки процесса. Убедитесь, что он больше не существует:
 
-```Docker
+```console
 docker ps -a
 CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 ```
@@ -391,7 +391,7 @@ CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 
 В этом примере команда `ENTRYPOINT` изменена на `cmd.exe`. Нажав клавиши <kbd>CTRL+C</kbd>, вы можете завершить процесс и остановить контейнер.
 
-```Docker
+```console
 docker run -it --rm --entrypoint "cmd.exe" counter-image
 
 Microsoft Windows [Version 10.0.17763.379]
@@ -450,25 +450,25 @@ exit
 
 01. Вывести список всех контейнеров.
 
-    ```Docker
+    ```console
     docker ps -a
     ```
 
 02. Остановить запущенные контейнеры по имени.
 
-    ```Docker
+    ```console
     docker stop counter-image
     ```
 
 03. Удалить контейнер.
 
-    ```Docker
+    ```console
     docker rm counter-image
     ```
 
 Затем удалите все ненужные образы на компьютере. Удалите образ, созданный с помощью файла *Dockerfile*, а затем удалите образ .NET Core, на основе которого был создан файл *Dockerfile*. Вы можете использовать значение **IMAGE ID** или строку в формате **РЕПОЗИТОРИЙ:МЕТКА**.
 
-```Docker
+```console
 docker rmi counter-image:latest
 docker rmi mcr.microsoft.com/dotnet/core/aspnet:3.1
 ```

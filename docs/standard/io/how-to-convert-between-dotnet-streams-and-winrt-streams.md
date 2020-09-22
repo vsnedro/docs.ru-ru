@@ -6,16 +6,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
-ms.openlocfilehash: 7413c3fae7d7189ec8dca43b0c77f6b56158f416
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 037ae0dff80c96d08d8778146b5683454b1f80b1
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159472"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543690"
 ---
 # <a name="how-to-convert-between-net-framework-and-windows-runtime-streams-windows-only"></a>Практическое руководство. Преобразование между потоками .NET Framework и потоками среды выполнения Windows (только в Windows)
 
-.NET Framework для приложений UWP — это подмножество полной платформы .NET Framework. Из-за требований к безопасности и другим аспектам в приложениях UWP нельзя использовать полный набор API платформы .NET Framework для открытия и чтения файлов. Дополнительные сведения см. в статье [Обзор .NET для приложений UWP](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)). Однако может потребоваться использовать API платформы .NET Framework для других операций обработки потока. Для работы с потоками вы можете выполнить преобразование между типом потока .NET Framework, таким как <xref:System.IO.MemoryStream> или <xref:System.IO.FileStream>, и потоком среды выполнения Windows, таким как <xref:Windows.Storage.Streams.IInputStream>, <xref:Windows.Storage.Streams.IOutputStream> или <xref:Windows.Storage.Streams.IRandomAccessStream>.
+.NET Framework для приложений UWP — это подмножество полной платформы .NET Framework. Из-за требований к безопасности и другим аспектам в приложениях UWP нельзя использовать полный набор API платформы .NET Framework для открытия и чтения файлов. Дополнительные сведения см. в статье [Обзор .NET для приложений UWP](/previous-versions/windows/apps/br230302(v=vs.140)). Однако может потребоваться использовать API платформы .NET Framework для других операций обработки потока. Для работы с потоками вы можете выполнить преобразование между типом потока .NET Framework, таким как <xref:System.IO.MemoryStream> или <xref:System.IO.FileStream>, и потоком среды выполнения Windows, таким как <xref:Windows.Storage.Streams.IInputStream>, <xref:Windows.Storage.Streams.IOutputStream> или <xref:Windows.Storage.Streams.IRandomAccessStream>.
 
 Класс <xref:System.IO.WindowsRuntimeStreamExtensions?displayProperty=nameWithType> содержит методы, которые позволяют легко выполнить эти преобразования. Однако различия между потоками на платформе .NET Framework и в среде выполнения Windows влияют на результаты использования этих методов, как описано в следующих разделах:
 
@@ -69,6 +69,6 @@ ms.locfileid: "78159472"
 
 ## <a name="see-also"></a>См. также
 
-- [Краткое руководство. Чтение и запись файла (Windows)](https://docs.microsoft.com/previous-versions/windows/apps/hh464978(v=win.10))  
-- [Общие сведения о платформе .NET для приложений Магазина Windows](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140))  
-- [API платформы .NET для приложений Microsoft Store](https://docs.microsoft.com/previous-versions/br230232(v=vs.120))  
+- [Краткое руководство. Чтение и запись файла (Windows)](/previous-versions/windows/apps/hh464978(v=win.10))  
+- [Общие сведения о платформе .NET для приложений Магазина Windows](/previous-versions/windows/apps/br230302(v=vs.140))  
+- [API платформы .NET для приложений Microsoft Store](/previous-versions/br230232(v=vs.120))

@@ -5,11 +5,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - .NET Framework, development guide
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
-ms.openlocfilehash: 6e0051e3181e03070436b8d53d30326e8d71d096
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 73b930efa893fd2b481c4c130754154a0d10d5b4
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622579"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547888"
 ---
 # <a name="net-framework-development-guide"></a>Руководство по разработке для .NET Framework
 
@@ -61,7 +62,7 @@ ms.locfileid: "85622579"
  Здесь приводятся сведения о кэшировании, отложенной инициализации, надежности и событиях трассировки событий Windows.  
 
 ## <a name="reference"></a>Справочник  
- [Библиотека классов .NET Framework](/dotnet/api/?view=netframework-4.7)  
+ [Библиотека классов .NET Framework](../../api/index.md?view=netframework-4.7)  
  Предоставляет синтаксис, примеры кода и сведения об использовании для каждого класса, содержащегося в пространствах имен .NET Framework.  
   
 ## <a name="related-sections"></a>Связанные разделы  

@@ -13,11 +13,12 @@ helpviewer_keywords:
 - type libraries
 - COM interop, importing type library
 ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
-ms.openlocfilehash: f8d052c7b9bac9c4bab61ab1950e9e89a7c73912
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: fad0a8163bd3d023911fd8554a77f740ac010ee6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618965"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547249"
 ---
 # <a name="how-to-reference-net-types-from-com"></a>Практическое руководство. Создание ссылки на типы .NET из COM
 С точки зрения кода клиента и сервера различия между COM и .NET Framework практически незаметны. Клиенты Microsoft Visual Basic могут просматривать объект .NET в обозревателе объектов, который позволяет просмотреть методы, синтаксис, свойства и поля объекта точно так же, как если бы это был объект COM.  
@@ -45,5 +46,5 @@ ms.locfileid: "85618965"
 
 - [Предоставление компонентов .NET Framework клиентам COM](exposing-dotnet-components-to-com.md)
 - [Регистрация сборок в COM](registering-assemblies-with-com.md)
-- [Вызов объекта .NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100))
-- [Развертывание приложения для доступа к COM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100))
+- [Вызов объекта .NET](/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100))
+- [Развертывание приложения для доступа к COM](/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100))

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cc3c2c2be179842f87be8892d057a6c4138086cb
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: a21824862d6cad046b5d6186f9d6db9c20438304
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614874"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606745"
 ---
 ### <a name="accessibility-improvements-in-windows-forms-controls-for-net-472"></a>Улучшения специальных возможностей для элементов управления Windows Forms в .NET Framework 4.7.2
 
@@ -21,7 +21,7 @@ ms.locfileid: "85614874"
 **Как принять или отклонить изменения** Чтобы эти изменения можно было использовать в приложении, оно должно быть запущено на платформе .NET Framework 4.7.2 или более поздней версии. В приложении эти изменения можно использовать одним из следующих способов:
 
 - Выполнить повторную компиляцию, чтобы нацелить приложение на .NET Framework 4.7.2. Эти специальные возможности включены по умолчанию для приложений Windows Forms, предназначенных для .NET Framework 4.7.2 или более поздней версии.
-- Оно нацелено на .NET Framework 4.7.1 и более ранние версии платформы и позволяет отказаться от функций специальных возможностей предыдущих версий путем добавления [переключателя AppContext](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) в раздел `<runtime>` файла конфигурации приложения и получения значения `false`, как показано в следующем примере.
+- Оно нацелено на .NET Framework 4.7.1 и более ранние версии платформы и позволяет отказаться от функций специальных возможностей предыдущих версий путем добавления [переключателя AppContext](../../../../docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) в раздел `<runtime>` файла конфигурации приложения и получения значения `false`, как показано в следующем примере.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,7 @@ ms.locfileid: "85614874"
 
 - Дочерние элементы элемента управления <xref:System.Windows.Forms.PropertyGrid> теперь возвращают `true` для <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> свойства только в том случае, если включен элемент PropertyGrid.
 - Дочерние элементы элемента управления <xref:System.Windows.Forms.PropertyGrid> теперь возвращают `false` для <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> свойства только в том случае, если элемент PropertyGrid может быть изменен пользователем.
-Обзор автоматизации пользовательского интерфейса см. в разделе [Общие сведения об автоматизации пользовательского интерфейса](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-overview).</p>**Улучшение навигации с помощью клавиатуры**
+Обзор автоматизации пользовательского интерфейса см. в разделе [Общие сведения об автоматизации пользовательского интерфейса](../../../../docs/framework/ui-automation/ui-automation-overview.md).</p>**Улучшение навигации с помощью клавиатуры**
 
 - <xref:System.Windows.Forms.ToolStripButton> теперь позволяет отображать фокус, если он содержится в <xref:System.Windows.Forms.ToolStripPanel>, для свойства <xref:System.Windows.Forms.ToolStripPanel.TabStop> которого задано значение `true`.
 

@@ -6,12 +6,12 @@ ms.author: luquinta
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 4759a661646b08ea6a93cab030a19af2cfeaca16
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 49817f9ad712e50669bab958296946c06d5c19eb
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803408"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679420"
 ---
 # <a name="tutorial-detect-objects-using-onnx-in-mlnet"></a>Учебник. Обнаружение объектов с помощью ONNX в ML.NET
 
@@ -492,22 +492,22 @@ for (var j = i + 1; j < boxes.Count; j++)
 
     [!code-csharp [LoadModelLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L47-L49)]
 
-    Конвейеры ML.NET обычно должны знать схему данных для работы при вызове метода [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*). В этом случае будет использоваться процесс, аналогичный обучению. Однако, поскольку фактического обучения не происходит, допустимо использовать пустое значение [`IDataView`](xref:Microsoft.ML.IDataView). Создайте новый [`IDataView`](xref:Microsoft.ML.IDataView) для конвейера из пустого списка.
+    Конвейеры ML.NET обычно должны знать схему данных для работы при вызове метода [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit%2A). В этом случае будет использоваться процесс, аналогичный обучению. Однако, поскольку фактического обучения не происходит, допустимо использовать пустое значение [`IDataView`](xref:Microsoft.ML.IDataView). Создайте новый [`IDataView`](xref:Microsoft.ML.IDataView) для конвейера из пустого списка.
 
     [!code-csharp [LoadEmptyIDV](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L52)]
 
     Ниже определите конвейер. Конвейер будет состоять из четырех преобразований.
 
-    - [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*) загружает изображение в виде точечного рисунка.
-    - [`ResizeImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages*) изменяет масштаб изображения до указанного размера (в данном случае `416 x 416`).
-    - [`ExtractPixels`](xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels*) изменяет пиксельное представление изображения с точечного рисунка на числовой вектор.
-    - [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel*) загружает модель ONNX и использует ее для оценки предоставленных данных.
+    - [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages%2A) загружает изображение в виде точечного рисунка.
+    - [`ResizeImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages%2A) изменяет масштаб изображения до указанного размера (в данном случае `416 x 416`).
+    - [`ExtractPixels`](xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels%2A) изменяет пиксельное представление изображения с точечного рисунка на числовой вектор.
+    - [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) загружает модель ONNX и использует ее для оценки предоставленных данных.
 
     Определите конвейер в методе `LoadModel` под переменной `data`.
 
     [!code-csharp [ScoringPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L55-L58)]
 
-    Пришло время создать экземпляр модели для оценки. Вызовите метод [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*) в конвейере и верните его результат для дальнейшей обработки.
+    Пришло время создать экземпляр модели для оценки. Вызовите метод [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit%2A) в конвейере и верните его результат для дальнейшей обработки.
 
     [!code-csharp [FitReturnModel](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L61-L63)]
 
@@ -524,7 +524,7 @@ private IEnumerable<float[]> PredictDataUsingModel(IDataView testData, ITransfor
 
 [!code-csharp [PredictDataLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L68-L71)]
 
-Затем используйте метод [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) для оценки данных.
+Затем используйте метод [`Transform`](xref:Microsoft.ML.ITransformer.Transform%2A) для оценки данных.
 
 [!code-csharp [ScoreImages](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L73)]
 
@@ -626,11 +626,11 @@ using (Graphics thumbnailGraphic = Graphics.FromImage(image))
 
 [!code-csharp [SetColorOptions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L106-L114)]
 
-Создайте и заполните прямоугольник над ограничивающей рамкой, которая будет содержать текст, с помощью метода [`FillRectangle`](xref:System.Drawing.Graphics.FillRectangle*). Это поможет выделить текст и улучшить удобочитаемость.
+Создайте и заполните прямоугольник над ограничивающей рамкой, которая будет содержать текст, с помощью метода [`FillRectangle`](xref:System.Drawing.Graphics.FillRectangle%2A). Это поможет выделить текст и улучшить удобочитаемость.
 
 [!code-csharp [DrawTextBackground](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L117)]
 
-Затем нарисуйте текст и ограничивающий прямоугольник на изображении с помощью методов [`DrawString`](xref:System.Drawing.Graphics.DrawString*) и [`DrawRectangle`](xref:System.Drawing.Graphics.DrawRectangle*).
+Затем нарисуйте текст и ограничивающий прямоугольник на изображении с помощью методов [`DrawString`](xref:System.Drawing.Graphics.DrawString%2A) и [`DrawRectangle`](xref:System.Drawing.Graphics.DrawRectangle%2A).
 
 [!code-csharp [DrawClassAndBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L118-L121)]
 

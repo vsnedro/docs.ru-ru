@@ -7,11 +7,12 @@ helpviewer_keywords:
 - Tlbimp.exe
 - Type Library Importer
 ms.assetid: 5419011c-6e57-40f6-8c65-386db8f7a651
-ms.openlocfilehash: 779b4863b6f1513f3566d4ab31660d88cda1039b
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 56ce10e0b6f9be988a06d44550cd3b9dc2efd188
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619134"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554160"
 ---
 # <a name="how-to-generate-primary-interop-assemblies-using-tlbimpexe"></a>Практическое руководство. Создание основной сборки взаимодействия с помощью программы Tlbimp.exe
 
@@ -45,7 +46,7 @@ ms.locfileid: "85619134"
 
 Зависимую основную сборку взаимодействия с номером версии, отличающимся от номера версии исходной библиотеки типов, невозможно обнаружить при установке в текущий каталог. Необходимо или зарегистрировать зависимую основную сборку взаимодействия в реестре Windows, или воспользоваться параметром **/reference**, чтобы программа Tlbimp.exe обнаружила зависимую библиотеку DLL.
 
-Также можно включить несколько версий библиотеки типов. Инструкции см. в разделе [Практическое руководство. Включение нескольких версий библиотек типов](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/1565h6hc(v=vs.100)).
+Также можно включить несколько версий библиотеки типов. Инструкции см. в разделе [Практическое руководство. Включение нескольких версий библиотек типов](/previous-versions/dotnet/netframework-4.0/1565h6hc(v=vs.100)).
 
 ## <a name="example"></a>Пример
 

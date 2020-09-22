@@ -2,12 +2,12 @@
 title: Асинхронное взаимодействие на основе сообщений
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Асинхронная связь на основе сообщений является основным понятием в архитектуре микрослужб, так как это лучший способ обеспечить независимость микрослужб друг от друга и при этом синхронизировать их.
 ms.date: 09/20/2018
-ms.openlocfilehash: a8af94540a7906c474b9b784c28aa60ebae0a6e3
-ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
+ms.openlocfilehash: 2bd79935cad3d62e488a57da6b40a0c87349960b
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84306972"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679179"
 ---
 # <a name="asynchronous-message-based-communication"></a>Асинхронное взаимодействие на основе сообщений
 
@@ -84,7 +84,7 @@ ms.locfileid: "84306972"
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
 - **Обмен сообщениями на основе событий** \
-  <https://soapatterns.org/design_patterns/event_driven_messaging>
+  <https://patterns.arcitura.com/soa-patterns/design_patterns/event_driven_messaging>
 
 - **Канал публикации или подписки** \
   <https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html>

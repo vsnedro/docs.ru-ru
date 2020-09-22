@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Windows service applications, creating
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
 author: ghogen
-ms.openlocfilehash: 487a974af2280a02b83fe685324c9464df705585
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 04f27729b5713c325a73cbdeb1c6c673fe749c00
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86925635"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90544210"
 ---
 # <a name="tutorial-create-a-windows-service-app"></a>Учебник. Создание приложения службы Windows
 
@@ -471,7 +471,7 @@ ms.locfileid: "86925635"
 
 После создания службы Windows ее можно установить. Чтобы установить службу Windows, необходимо иметь разрешения администратора на том компьютере, где выполняется установка.
 
-1. Откройте [Командную строку разработчика Visual Studio](https://docs.microsoft.com/dotnet/framework/tools/developer-command-prompt-for-vs) с учетными данными администратора. В меню **Пуск** Windows выберите в папке Visual Studio элемент **Командная строка разработчика для VS 2017**, а затем в контекстном меню последовательно выберите **Дополнительно** > **Запуск от имени администратора**.
+1. Откройте [Командную строку разработчика Visual Studio](../tools/developer-command-prompt-for-vs.md) с учетными данными администратора. В меню **Пуск** Windows выберите в папке Visual Studio элемент **Командная строка разработчика для VS 2017**, а затем в контекстном меню последовательно выберите **Дополнительно** > **Запуск от имени администратора**.
 
 2. В окне **Командная строка разработчика для Visual Studio** перейдите к папке, которая содержит выходные данные проекта (по умолчанию это подкаталог *\bin\Debug* проекта).
 

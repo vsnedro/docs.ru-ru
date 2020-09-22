@@ -12,11 +12,12 @@ helpviewer_keywords:
 - marshaling, platform invoke
 - sample applications [.NET Framework], marshaling strings
 ms.assetid: e21b078b-70fb-4905-be26-c097ab2433ff
-ms.openlocfilehash: 0be5a5817bd92c5be6b701200a74650ef9de1955
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 11925e3e126620788bb09e90e4d2528dbaf56581
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621487"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547770"
 ---
 # <a name="marshaling-strings"></a>Маршалинг строк
 При вызове неуправляемого кода копируются строковые аргументы, и при необходимости выполняется преобразование этих аргументов из формата .NET Framework (Юникод) в неуправляемый формат (ANSI). Так как управляемые строки являются неизменяемыми, то при вызове неуправляемого кода они не копируются обратно из неуправляемой памяти в управляемую память при возврате из функции.  
@@ -26,13 +27,13 @@ ms.locfileid: "85621487"
 |Строка|Описание|Пример|  
 |------------|-----------------|------------|  
 |По значению.|Передает строки в качестве параметров In.|[MsgBox](msgbox-sample.md)|  
-|Как результат.|Возвращает строки из неуправляемого кода.|[Строки](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e765dyyy(v=vs.100))|  
-|По ссылке.|Передает строки в качестве параметров In/Out с помощью <xref:System.Text.StringBuilder>.|[Buffers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100))|  
-|В структуре по значению.|Передает строки в структуре, которая является параметром In.|[Структуры](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/eadtsekz(v=vs.100))|  
-|В структуре по ссылке **(char\*)** .|Передает строки в структуре, которая является параметром In/Out. Неуправляемая функция ожидает указатель на символьный буфер, и размер буфера является членом структуры.|[Строки](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e765dyyy(v=vs.100))|  
-|В структуре по ссылке **(char[])** .|Передает строки в структуре, которая является параметром In/Out. Неуправляемая функция ожидает внедренный символьный буфер.|[OSInfo](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|  
-|В классе по значению **(char\*)** .|Передает строки в классе (класс является параметром In/Out). Неуправляемая функция ожидает указатель на символьный буфер.|[OpenFileDlg](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w5tyztk9(v=vs.100))|  
-|В классе по значению **(char[])** .|Передает строки в классе (класс является параметром In/Out). Неуправляемая функция ожидает внедренный символьный буфер.|[OSInfo](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|  
+|Как результат.|Возвращает строки из неуправляемого кода.|[Строки](/previous-versions/dotnet/netframework-4.0/e765dyyy(v=vs.100))|  
+|По ссылке.|Передает строки в качестве параметров In/Out с помощью <xref:System.Text.StringBuilder>.|[Buffers](/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100))|  
+|В структуре по значению.|Передает строки в структуре, которая является параметром In.|[Структуры](/previous-versions/dotnet/netframework-4.0/eadtsekz(v=vs.100))|  
+|В структуре по ссылке **(char\*)** .|Передает строки в структуре, которая является параметром In/Out. Неуправляемая функция ожидает указатель на символьный буфер, и размер буфера является членом структуры.|[Строки](/previous-versions/dotnet/netframework-4.0/e765dyyy(v=vs.100))|  
+|В структуре по ссылке **(char[])** .|Передает строки в структуре, которая является параметром In/Out. Неуправляемая функция ожидает внедренный символьный буфер.|[OSInfo](/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|  
+|В классе по значению **(char\*)** .|Передает строки в классе (класс является параметром In/Out). Неуправляемая функция ожидает указатель на символьный буфер.|[OpenFileDlg](/previous-versions/dotnet/netframework-4.0/w5tyztk9(v=vs.100))|  
+|В классе по значению **(char[])** .|Передает строки в классе (класс является параметром In/Out). Неуправляемая функция ожидает внедренный символьный буфер.|[OSInfo](/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|  
 |Как массив строк по значению.|Создает массив строк, который передается по значению.|[Массивы](marshaling-different-types-of-arrays.md)|  
 |Как массив структур, содержащих строки по значению.|Создает массив структур, содержащих строки. Массив передается по значению.|[Массивы](marshaling-different-types-of-arrays.md)|  
   
@@ -42,4 +43,4 @@ ms.locfileid: "85621487"
 - [Маршалинг данных при вызове неуправляемого кода](marshaling-data-with-platform-invoke.md)
 - [Маршалинг классов, структур и объединений](marshaling-classes-structures-and-unions.md)
 - [Маршалинг различных типов массивов](marshaling-different-types-of-arrays.md)
-- [Различные примеры маршалинга](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ss9sb93t(v=vs.100))
+- [Различные примеры маршалинга](/previous-versions/dotnet/netframework-4.0/ss9sb93t(v=vs.100))

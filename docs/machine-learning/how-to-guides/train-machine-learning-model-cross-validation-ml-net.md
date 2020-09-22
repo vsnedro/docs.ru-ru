@@ -5,12 +5,12 @@ ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to,title-hack-0625
-ms.openlocfilehash: 87eae789478752423f3e682d4db6cead0391aa6e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 02cec3d22588d8f10d36216422bc19faafffe94b
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73976928"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679525"
 ---
 # <a name="train-a-machine-learning-model-using-cross-validation"></a>Обучение модели машинного обучения с помощью перекрестной проверки
 
@@ -50,9 +50,9 @@ public class HousingData
 
 ## <a name="prepare-the-data"></a>Подготовка данных
 
-Следует предварительно обработать данные перед их использованием для создания модели машинного обучения. В этом примере столбцы `Size` и `HistoricalPrices` объединяются в один вектор признака, который выводится в новый столбец с именем `Features` с помощью метода [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*). Кроме получения данных в формате, ожидаемом алгоритмами ML.NET, сцепка столбцов оптимизирует последующие операции в конвейере, применяя операцию один раз для объединенного столбца, а не обрабатывая каждый отдельный столбец.
+Следует предварительно обработать данные перед их использованием для создания модели машинного обучения. В этом примере столбцы `Size` и `HistoricalPrices` объединяются в один вектор признака, который выводится в новый столбец с именем `Features` с помощью метода [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A). Кроме получения данных в формате, ожидаемом алгоритмами ML.NET, сцепка столбцов оптимизирует последующие операции в конвейере, применяя операцию один раз для объединенного столбца, а не обрабатывая каждый отдельный столбец.
 
-Как только столбцы объединяются в один вектор, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) применяется к столбцу `Features`, чтобы получить `Size` и `HistoricalPrices` в одном и том же диапазоне 0–1.
+Как только столбцы объединяются в один вектор, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A) применяется к столбцу `Features`, чтобы получить `Size` и `HistoricalPrices` в одном и том же диапазоне 0–1.
 
 ```csharp
 // Define data prep estimator
@@ -69,7 +69,7 @@ IDataView transformedData = dataPrepTransformer.Transform(data);
 
 ## <a name="train-model-with-cross-validation"></a>Обучение модели с помощью кросс-валидации
 
-Когда данные предварительно обработаны, пришло время для обучения модели. Во-первых, выберите алгоритм, который наиболее точно соответствует задаче машинного обучения. Поскольку прогнозируемое значение является числовым и непрерывным, задача — регрессия. Один из алгоритмов регрессии, реализуемый ML.NET, – алгоритм [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer). Для обучения модели с использованием кросс-валидации используется метод [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*).
+Когда данные предварительно обработаны, пришло время для обучения модели. Во-первых, выберите алгоритм, который наиболее точно соответствует задаче машинного обучения. Поскольку прогнозируемое значение является числовым и непрерывным, задача — регрессия. Один из алгоритмов регрессии, реализуемый ML.NET, – алгоритм [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer). Для обучения модели с использованием кросс-валидации используется метод [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate%2A).
 
 > [!NOTE]
 > Несмотря на то что в этом примере используется модель линейной регрессии, CrossValidate применяется для всех других задач машинного обучения в ML.NET, за исключением обнаружения аномалий.
@@ -82,11 +82,11 @@ IEstimator<ITransformer> sdcaEstimator = mlContext.Regression.Trainers.Sdca();
 var cvResults = mlContext.Regression.CrossValidate(transformedData, sdcaEstimator, numberOfFolds: 5);
 ```
 
-[`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) выполняет следующие действия.
+[`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate%2A) выполняет следующие действия.
 
 1. Разбивает данные на несколько секций по значению, указанному в параметре `numberOfFolds`. В результате каждая секция превратится в объект [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData).
 1. Модель обучается на каждой из секций с помощью указанного алгоритма оценки машинного обучения в наборе данных для обучения.
-1. Эффективность каждой модели оценивается с помощью метода [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate*) на тестовом наборе данных.
+1. Эффективность каждой модели оценивается с помощью метода [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate%2A) на тестовом наборе данных.
 1. Для всех моделей возвращается сама модель, а также ее метрики.
 
 Результат в `cvResults` сохраняется в коллекции объектов [`CrossValidationResult`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601). Этот объект включает обученную модель, а также метрики, доступные через свойства [`Model`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601.Model) и [`Metrics`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601.Metrics) соответственно. В этом примере свойство `Model` имеет тип [`ITransformer`](xref:Microsoft.ML.ITransformer), а свойство `Metrics` имеет тип [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics).

@@ -2,12 +2,12 @@
 title: Команда dotnet pack
 description: Команда dotnet pack создает пакеты NuGet для проекта .NET Core.
 ms.date: 04/28/2020
-ms.openlocfilehash: 00cda2c52a12a7a3aef5f61291120f522536131d
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 409b946d93cf73fec38941740a446c3ee3402490
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442232"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537837"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
@@ -186,6 +186,6 @@ dotnet pack -h|--help
 
   Дополнительные сведения об использовании `NuspecFile`, `NuspecBasePath` и `NuspecProperties` см. в следующих документах:
   
-  - [Упаковка с помощью NUSPEC](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec)
-  - [Улучшенные точки расширения для создания настраиваемого пакета](https://docs.microsoft.com/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
-  - [Глобальные свойства](https://docs.microsoft.com/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)
+  - [Упаковка с помощью NUSPEC](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
+  - [Улучшенные точки расширения для создания настраиваемого пакета](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
+  - [Глобальные свойства](/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)

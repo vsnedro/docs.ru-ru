@@ -18,18 +18,18 @@ helpviewer_keywords:
 - literal XML serialization
 - serialization, attributes
 ms.assetid: a416192f-8102-458e-bc0a-0b8f3f784da9
-ms.openlocfilehash: b03c25f745df9aa4afe44075506983cb14ed3da7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 8464122d4849271ba76edd6b3400ed09d7429821
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84288957"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90542011"
 ---
 # <a name="xml-serialization-with-xml-web-services"></a>Сериализация XML с использованием XML-веб-служб
-Сериализация XML является базовым механизмом передачи, применяемом в архитектуре XML-веб-служб, и выполняется с использованием класса <xref:System.Xml.Serialization.XmlSerializer>. Для управления кодом XML, созданным XML-веб-службой, для классов, возвращаемых значений, параметров и полей файла, используемых для создания XML-веб-службы (файл ASMX), можно применять атрибуты, указанные в разделах [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md) и [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md). Дополнительные сведения о создании XML-веб-службы см. в разделе [XML-веб-службы с использованием ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ba0z6a33(v=vs.100)).  
+Сериализация XML является базовым механизмом передачи, применяемом в архитектуре XML-веб-служб, и выполняется с использованием класса <xref:System.Xml.Serialization.XmlSerializer>. Для управления кодом XML, созданным XML-веб-службой, для классов, возвращаемых значений, параметров и полей файла, используемых для создания XML-веб-службы (файл ASMX), можно применять атрибуты, указанные в разделах [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md) и [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md). Дополнительные сведения о создании XML-веб-службы см. в разделе [XML-веб-службы с использованием ASP.NET](/previous-versions/dotnet/netframework-4.0/ba0z6a33(v=vs.100)).  
   
 ## <a name="literal-and-encoded-styles"></a>Литеральный и кодированный стили  
- Код XML, создаваемый XML-веб-службой, можно отформатировать двумя способами: литерально или кодированно. Дополнительные сведения см. в разделе [Настройка форматирования сообщения SOAP](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)). Поэтому для управления XML-сериализацией предусмотрено два набора атрибутов. Атрибуты, указанные в разделе [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md), предназначены для управления литеральным стилем XML. Атрибуты, указанные в разделе [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md), управляют кодированным стилем. Путем выборочного применения таких атрибутов можно настроить приложение на возврат одного или обоих стилей. Кроме того, эти атрибуты применимы (в соответствующих случаях) к возвращаемым значениям и параметрам.  
+ Код XML, создаваемый XML-веб-службой, можно отформатировать двумя способами: литерально или кодированно. Дополнительные сведения см. в разделе [Настройка форматирования сообщения SOAP](/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)). Поэтому для управления XML-сериализацией предусмотрено два набора атрибутов. Атрибуты, указанные в разделе [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md), предназначены для управления литеральным стилем XML. Атрибуты, указанные в разделе [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md), управляют кодированным стилем. Путем выборочного применения таких атрибутов можно настроить приложение на возврат одного или обоих стилей. Кроме того, эти атрибуты применимы (в соответствующих случаях) к возвращаемым значениям и параметрам.  
   
 ### <a name="example-of-using-both-styles"></a>Пример использования обоих стилей.  
  При создании XML-веб-службы для методов можно использовать оба набора атрибутов. В следующем примере кода класс с именем `MyService` содержит два метода XML-веб-служб: `MyLiteralMethod` и `MyEncodedMethod`. Оба метода выполняют одну и ту же функцию: возвращение экземпляра класса `Order`. В классе `Order` оба атрибута <xref:System.Xml.Serialization.XmlTypeAttribute> и <xref:System.Xml.Serialization.SoapTypeAttribute> применяются к полю `OrderID`, и свойство `ElementName` обоих атрибутов имеет разные значения.  

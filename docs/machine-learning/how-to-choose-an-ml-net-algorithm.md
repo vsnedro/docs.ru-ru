@@ -3,12 +3,12 @@ title: Выбор алгоритма ML.NET
 description: Сведения о выборе алгоритма ML.NET для модели машинного обучения
 ms.topic: overview
 ms.date: 06/05/2019
-ms.openlocfilehash: 0fed33203c02303e37e47f548e08ec131eeb1c77
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8af89800485f8f8ac35ee17df10a5e3c039da42d
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75739997"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679642"
 ---
 # <a name="how-to-choose-an-mlnet-algorithm"></a>Выбор алгоритма ML.NET
 
@@ -34,7 +34,7 @@ ms.locfileid: "75739997"
 
 В общем случае линейные алгоритмы являются масштабируемыми и быстрыми, а также не требуют больших затрат на обучение и прогнозирование. Они масштабируются по количеству признаков и приблизительно по размеру набора данных для обучения.
 
-Линейные алгоритмы делают несколько проходов по данным для обучения. Если набор данных помещается в память, то добавление [контрольной точки кэша](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) в конвейер ML.NET перед добавлением обучающего алгоритма ускорит обучение.
+Линейные алгоритмы делают несколько проходов по данным для обучения. Если набор данных помещается в память, то добавление [контрольной точки кэша](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint%2A) в конвейер ML.NET перед добавлением обучающего алгоритма ускорит обучение.
 
 **Линейные обучающие алгоритмы**
 

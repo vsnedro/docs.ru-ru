@@ -2,12 +2,12 @@
 title: Использование сервера баз данных, работающего в качестве контейнера
 description: Изучите важность использования сервера базы данных, работающего в качестве контейнера, только для разработки. Не для рабочей среды.
 ms.date: 01/30/2020
-ms.openlocfilehash: 0cbc933003aac10970814378c27e88b5cb0ddbe5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 38f77e195b184d57dcad5904674a0025ef6c2bd8
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77628531"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539403"
 ---
 # <a name="use-a-database-server-running-as-a-container"></a>Использование сервера баз данных, работающего в качестве контейнера
 
@@ -101,7 +101,7 @@ public static int Main(string[] args)
 
 При применении миграций и заполнении базы данных во время запуска контейнеров существует важная оговорка. Поскольку сервер базы данных может быть недоступен по каким-либо причинам, вы должны обрабатывать повторные попытки, пока сервер не будет доступен. Эта логика повторных попыток обрабатывается методом расширения `MigrateDbContext()`, как показано в следующем коде:
 
-```cs
+```csharp
 public static IWebHost MigrateDbContext<TContext>(
     this IWebHost host,
     Action<TContext,

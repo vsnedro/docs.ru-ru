@@ -2,12 +2,12 @@
 title: Строки подключения
 ms.date: 12/13/2019
 description: Поддерживаемые ключевые слова и значения строк подключения.
-ms.openlocfilehash: bb54d152bac62a86c2a49192cf678a745159164e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3c50b31689abf6d47aa8f83a6f6f755bcfec0ea3
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79401199"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555397"
 ---
 # <a name="connection-strings"></a>Строки подключения
 
@@ -92,7 +92,7 @@ SQLite обрабатывает относительные пути к теку�
 
 Базовая строка подключения с общим кэшем для оптимизации параллелизма.
 
-```ConnectionString
+```connectionstring
 Data Source=Application.db;Cache=Shared
 ```
 
@@ -100,7 +100,7 @@ Data Source=Application.db;Cache=Shared
 
 Зашифрованная база данных.
 
-```ConnectionString
+```connectionstring
 Data Source=Encrypted.db;Password=MyEncryptionKey
 ```
 
@@ -108,7 +108,7 @@ Data Source=Encrypted.db;Password=MyEncryptionKey
 
 База данных с доступом только на чтение, которую приложение не может изменить.
 
-```ConnectionString
+```connectionstring
 Data Source=Reference.db;Mode=ReadOnly
 ```
 
@@ -116,7 +116,7 @@ Data Source=Reference.db;Mode=ReadOnly
 
 Частная выполняющаяся в памяти база данных.
 
-```ConnectionString
+```connectionstring
 Data Source=:memory:
 ```
 
@@ -124,7 +124,7 @@ Data Source=:memory:
 
 Общая выполняющаяся в памяти база данных, определяемая по имени *Sharable*.
 
-```ConnectionString
+```connectionstring
 Data Source=Sharable;Mode=Memory;Cache=Shared
 ```
 

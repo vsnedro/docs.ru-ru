@@ -9,12 +9,12 @@ helpviewer_keywords:
 - operating systems supported
 - hardware requirements
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
-ms.openlocfilehash: 92cc95f80d18251314db8d953520732841b0274c
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 6c14c94c0a2f88f28ec327a3463a6b525ef80ff6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557338"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557753"
 ---
 # <a name="net-framework-system-requirements"></a>Требования к системе для .NET Framework
 
@@ -99,7 +99,7 @@ ms.locfileid: "88557338"
 
 - Windows Server 2012 включает .NET Framework 4.5, поэтому установка этого компонента не требуется. Аналогично Windows Server 2012 R2 включает .NET Framework 4.5.1.
 
-- Платформа .NET Framework имеет ограниченную поддержку роли Server Core с Windows Server 2008 R2 с пакетом обновления 1 (SP1) или более поздней версии. Список неподдерживаемых API см. в разделе [Функции Server Core в .NET](https://docs.microsoft.com/previous-versions//dd745015(v=vs.85)).
+- Платформа .NET Framework имеет ограниченную поддержку роли Server Core с Windows Server 2008 R2 с пакетом обновления 1 (SP1) или более поздней версии. Список неподдерживаемых API см. в разделе [Функции Server Core в .NET](/previous-versions//dd745015(v=vs.85)).
 
 - Платформа .NET Framework не поддерживается в Windows Server 2008 R2 для систем на платформе Itanium.
 

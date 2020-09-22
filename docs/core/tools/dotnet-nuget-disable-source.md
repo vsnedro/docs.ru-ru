@@ -2,12 +2,12 @@
 title: Команда dotnet nuget disable source
 description: Команда dotnet nuget disable source отключает существующий источник в файлах конфигурации NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: 54acb40b1944eaff347107e8f3439578ec8e0f3c
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: af37a6589cebaf0501ee5647ebadb83125d0f56e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463572"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537955"
 ---
 # <a name="dotnet-nuget-disable-source"></a>dotnet nuget disable source
 
@@ -39,7 +39,7 @@ dotnet nuget disable source -h|--help
 
 - **`--configfile <FILE>`**
 
-  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  Файл конфигурации NuGet. Если этот параметр указан, будут использоваться только параметры из этого файла. Если не указано, будет использоваться иерархия файлов конфигурации из текущего каталога. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 ## <a name="examples"></a>Примеры
 

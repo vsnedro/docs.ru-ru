@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: d67521084330b206afca89baf59228b99ca799a1
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 5ecfa24905537a663cd967142b765c258495fb22
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656759"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537745"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -77,7 +77,7 @@ dotnet test -h|--help
 
 - **`--blame-crash`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
 
-  Выполняет тесты в режиме обвинения и собирает аварийный дамп при непредвиденном завершении процесса хоста для тестов. Эта возможность поддерживается только в Windows. Каталог, содержащий файлы *procdump.exe* и *procdump64.exe*, должен быть включен в переменную среды PATH или PROCDUMP_PATH. [Скачать средства.](https://docs.microsoft.com/sysinternals/downloads/procdump) Подразумевает `--blame`.
+  Выполняет тесты в режиме обвинения и собирает аварийный дамп при непредвиденном завершении процесса хоста для тестов. Эта возможность поддерживается только в Windows. Каталог, содержащий файлы *procdump.exe* и *procdump64.exe*, должен быть включен в переменную среды PATH или PROCDUMP_PATH. [Скачать средства.](/sysinternals/downloads/procdump) Подразумевает `--blame`.
 
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Доступно, начиная с выпуска пакета SDK для NET 5.0 предварительной версии)
 

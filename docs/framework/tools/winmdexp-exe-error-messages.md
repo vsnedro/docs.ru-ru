@@ -158,22 +158,22 @@ helpviewer_keywords:
 - Windows Runtime Metadata Export Tool, error messages
 - error messages, Winmdexp.exe
 ms.assetid: 8271973c-deba-47a6-8e5e-04ce63f146ad
-ms.openlocfilehash: 1b44273bd5a8868ba426d9ac0eabbefcb725e70f
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: 2c0b4a6f1f10f0c575b3f5a1aeb9baffa74dba17
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85325611"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543255"
 ---
 # <a name="winmdexpexe-error-messages"></a>Сообщения об ошибках Winmdexp.exe
 
 Процесс сборки вызывает программу [Winmdexp.exe (средство экспорта метаданных среды выполнения Windows)](winmdexp-exe-windows-runtime-metadata-export-tool.md) при использовании шаблона **компонента среды выполнения Windows** в Visual Studio 2012, поэтому сообщения об ошибках Winmdexp.exe отображаются в **Списке ошибок**. Программа Winmdexp.exe работает в модуле, который компилируется с параметром `/target:winmdobj`. Поскольку в качестве входных данных этой программе требуется скомпилированный модуль, в случае сбоя компиляции сообщения об ошибках Winmdexp.exe не отображаются.  
   
- Сообщения об ошибках предназначены для размещения в них всех сведений, необходимых для диагностики состояний ошибок, о которых они сообщают. Однако для решения некоторых проблем требуется больше информации, чем может содержать сообщение. Дополнительные сведения см. в статье [Диагностика состояний ошибки компонентов среды выполнения Windows](https://docs.microsoft.com/previous-versions/hh977010(v=vs.110)).  
+ Сообщения об ошибках предназначены для размещения в них всех сведений, необходимых для диагностики состояний ошибок, о которых они сообщают. Однако для решения некоторых проблем требуется больше информации, чем может содержать сообщение. Дополнительные сведения см. в статье [Диагностика состояний ошибки компонентов среды выполнения Windows](/previous-versions/hh977010(v=vs.110)).  
   
  Если ваша ошибка в этой статье не рассматривается и вам кажется, что сообщение об ошибке не содержит всей необходимой информации для решения проблемы, сообщите нам об этом, используя приведенную в статье ссылку. Кроме того, вы можете зарегистрировать ошибку на [веб-сайте Сообщества разработчиков](https://developercommunity.visualstudio.com/). Также можно найти дополнительные сведения на [форумах Майкрософт](https://social.msdn.microsoft.com/Forums/).  
   
 ## <a name="see-also"></a>См. также
 
 - [Winmdexp.exe (средство экспорта метаданных среды выполнения Windows)](winmdexp-exe-windows-runtime-metadata-export-tool.md)
-- [Диагностика состояний ошибки компонентов среды выполнения Windows](https://docs.microsoft.com/previous-versions/hh977010(v=vs.110))
+- [Диагностика состояний ошибки компонентов среды выполнения Windows](/previous-versions/hh977010(v=vs.110))

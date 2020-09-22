@@ -2,12 +2,12 @@
 title: Команда dotnet add package
 description: Команду dotnet add package удобно использовать для добавления ссылки на пакет NuGet в проект.
 ms.date: 02/14/2020
-ms.openlocfilehash: bc79fe8adf5f775ddce62f3877a8de945c6a18ab
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 1bdda241c1301b926ba2fd322f969407038b7b62
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83840901"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538072"
 ---
 # <a name="dotnet-add-package"></a>dotnet add package
 
@@ -87,7 +87,7 @@ info : PackageReference for package 'Newtonsoft.Json' version '12.0.1' added to 
 
 - **`--package-directory <PACKAGE_DIRECTORY>`**
 
-  Каталог, в который нужно восстановить пакеты. Расположение по умолчанию для восстановления пакетов — `%userprofile%\.nuget\packages` в Windows и `~/.nuget/packages` в macOS и Linux. Дополнительные сведения см. в статье [Управление папкой установки глобальных пакетов, кэшем и временными папками](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
+  Каталог, в который нужно восстановить пакеты. Расположение по умолчанию для восстановления пакетов — `%userprofile%\.nuget\packages` в Windows и `~/.nuget/packages` в macOS и Linux. Дополнительные сведения см. в статье [Управление папкой установки глобальных пакетов, кэшем и временными папками](/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
 
 - **`-s|--source <SOURCE>`**
 
@@ -95,7 +95,7 @@ info : PackageReference for package 'Newtonsoft.Json' version '12.0.1' added to 
 
 - **`-v|--version <VERSION>`**
 
-  Версия пакета. См. статью [Package versioning](https://docs.microsoft.com/nuget/reference/package-versioning) (Управление версиями пакета).
+  Версия пакета. См. статью [Package versioning](/nuget/reference/package-versioning) (Управление версиями пакета).
 
 ## <a name="examples"></a>Примеры
 
@@ -119,5 +119,5 @@ info : PackageReference for package 'Newtonsoft.Json' version '12.0.1' added to 
 
 ## <a name="see-also"></a>См. также
 
-- [Управление папкой установки глобальных пакетов, кэшем и временными папками](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders)
-- [Управление версиями пакета NuGet](https://docs.microsoft.com/nuget/reference/package-versioning)
+- [Управление папкой установки глобальных пакетов, кэшем и временными папками](/nuget/consume-packages/managing-the-global-packages-and-cache-folders)
+- [Управление версиями пакета NuGet](/nuget/reference/package-versioning)

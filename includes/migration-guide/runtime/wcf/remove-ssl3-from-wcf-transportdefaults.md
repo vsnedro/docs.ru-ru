@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 23987c300ac4fbad401de180b63106cd234f8d27
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: a5f4047d70276a90c9d72918a2559fd795feb26e
+ms.sourcegitcommit: 261e0c98a111357692b3b63c596edf0cacf72991
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89496536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90770895"
 ---
 ### <a name="remove-ssl3-from-the-wcf-transportdefaults"></a>Удаление Ssl3 из WCF TransportDefaults
 
@@ -14,13 +14,18 @@ ms.locfileid: "89496536"
 
 #### <a name="suggestion"></a>Предложение
 
-Если требуется Ssl3, воспользуйтесь одним из указанных ниже механизмов конфигурации и добавьте Ssl3 в список установленных протоколов.<ul><li><xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols></li><li><xref:System.ServiceModel.TcpTransportSecurity.SslProtocols></li><li>[<](~/docs/framework/configure-apps/file-schema/wcf/transport-of-nettcpbinding.md)</li><li>[Раздел &lt;sslStreamSecurity&gt;&lt;customBinding&gt;]~/docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md)</li></ul>
+Если требуется Ssl3, воспользуйтесь одним из указанных ниже механизмов конфигурации и добавьте Ssl3 в список установленных протоколов.
 
-| Имя    | Значение       |
-|:--------|:------------|
-| Область   |Пограничный случай|
-|Version|4.6.2|
-|Type|Среда выполнения|
+- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols>
+- <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols>
+- [\<transport> из \<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-nettcpbinding.md)
+- [\<sslStreamSecurity>](../../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md)
+
+| Имя    | Значение   |
+|:--------|:--------|
+| Область   | Пограничный случай    |
+| Version | 4.6.2   |
+| Type    | Среда выполнения |
 
 #### <a name="affected-apis"></a>Затронутые API
 

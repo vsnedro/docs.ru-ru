@@ -4,11 +4,12 @@ description: Узнайте, как использовать возможнос�
 author: IEvangelist
 ms.author: dapine
 ms.date: 07/01/2020
-ms.openlocfilehash: af64116e86c3f46f37c8d5d079b9c86084095485
-ms.sourcegitcommit: b6a1869f97a37f11a68c90afde1a520a6887dcbc
+ms.openlocfilehash: 4d2c8f3db26eaabcb973378a349ef57912e92bfa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853902"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538151"
 ---
 # <a name="use-code-coverage-for-unit-testing"></a>Использование объема протестированного кода для модульного тестирования
 
@@ -18,7 +19,7 @@ ms.locfileid: "85853902"
 
 Кроме того, в этой статье подробно описано, как использовать сведения об объеме протестированного кода, собранные из тестового запуска Coverlet, для создания отчета. Создание отчетов возможно с помощью другого проекта [с открытым исходным кодом на сайте GitHub — ReportGenerator](https://github.com/danielpalme/ReportGenerator). ReportGenerator преобразует отчеты о покрытии, созданные Cobertura по многим другим, в удобные для чтения отчеты в различных форматах.
 
-В основе этой статьи лежит [образец проекта исходного кода](https://docs.microsoft.com/samples/dotnet/samples/unit-testing-code-coverage-cs), доступный в обозревателе примеров.
+В основе этой статьи лежит [образец проекта исходного кода](/samples/dotnet/samples/unit-testing-code-coverage-cs), доступный в обозревателе примеров.
 
 ## <a name="system-under-test"></a>Тестируемая система
 
@@ -301,7 +302,7 @@ reportgenerator
 - [GitHub — репозиторий ReportGenerator](https://github.com/danielpalme/ReportGenerator)
 - [Сайт проекта ReportGenerator](https://danielpalme.github.io/ReportGenerator)
 - [Команда тестирования .NET Core CLI](../tools/dotnet-test.md)
-- [Исходный код примера](https://docs.microsoft.com/samples/dotnet/samples/unit-testing-code-coverage-cs)
+- [Исходный код примера](/samples/dotnet/samples/unit-testing-code-coverage-cs)
 
 ## <a name="next-steps"></a>Следующие шаги
 

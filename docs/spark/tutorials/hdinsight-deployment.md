@@ -4,12 +4,12 @@ description: Узнайте, как развернуть приложение .N
 ms.date: 06/25/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: e6b2fdd1818250c47ce6cb64439ecab58ae99ad8
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 9a4ca80463de41a50d103c696b2108d0cef023fc
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617643"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90548381"
 ---
 # <a name="tutorial-deploy-a-net-for-apache-spark-application-to-azure-hdinsight"></a>Учебник. Развертывание приложения .NET для Apache Spark в Azure HDInsight
 
@@ -189,4 +189,4 @@ HDInsight сохраняет ваши данные в службе хранил�
 В этом руководстве вы развернули приложение .NET для Apache Spark в Azure HDInsight. Дополнительные сведения об HDInsight см. в документации по Azure HDInsight.
 
 > [!div class="nextstepaction"]
-> [Документация по Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/)
+> [Документация по Azure HDInsight](/azure/hdinsight/)
