@@ -8,17 +8,19 @@ helpviewer_keywords:
 - As keyword [Visual Basic], statement syntax
 - As keyword [Visual Basic]
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
-ms.openlocfilehash: 4afc2800a98ceeda8eeb3a1fada0b82c2e8bcedb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2f0b217fb299a9c7c05f211c17d10efd80168ab5
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408462"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873316"
 ---
 # <a name="as-clause-visual-basic"></a>Предложение As (Visual Basic)
+
 Вводит `As` предложение, которое определяет тип данных в операторе объявления или список ограничений для параметра универсального типа.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Ключевое слово `As` можно использовать в следующих контекстах:  
   
  [Aggregate Clause](../queries/aggregate-clause.md)  
@@ -59,7 +61,7 @@ ms.locfileid: "84408462"
   
  [Попробуйте... Перехватить... Операторы finally](try-catch-finally-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Создание новой переменной](../../programming-guide/language-features/variables/how-to-create-a-new-variable.md)
 - [Типы данных](../../programming-guide/language-features/data-types/index.md)

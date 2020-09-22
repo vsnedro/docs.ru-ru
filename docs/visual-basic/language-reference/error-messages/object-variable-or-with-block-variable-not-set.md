@@ -4,14 +4,15 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID91
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
-ms.openlocfilehash: d1778e2bb58d32e976f10b3fba1637918278d36e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0264a4235a056c93edb703ec2ef70e7124e0df4e
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409287"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873633"
 ---
 # <a name="object-variable-or-with-block-variable-not-set"></a>Не задана переменная объекта или переменная блока With
+
 Указана недопустимая объектная переменная.   Эта ошибка может возникать по нескольким причинам:
 
 - Переменная объявлена без указания типа. Если переменная объявлена без указания типа, по умолчанию используется тип `Object` .
@@ -50,7 +51,7 @@ ms.locfileid: "84409287"
 
 5. Убедитесь, что `With` блок инициализирован путем выполнения `With` точки входа оператора.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объявление объектной переменной](../../programming-guide/language-features/variables/object-variable-declaration.md)
 - [Оператор reDim](../statements/redim-statement.md)

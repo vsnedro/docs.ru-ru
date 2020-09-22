@@ -7,15 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - BC30971
 ms.assetid: 75d2e8b5-2fdc-4623-8b32-cba805dab7db
-ms.openlocfilehash: 263e30f992ef58b0053acb2fd749d0d9186ef6b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cd2c00bda5b63abbd6bf7069ef28d0a812b22044
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397263"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873777"
 ---
 # <a name="message-this-error-could-also-be-due-to-mixing-a-file-reference-with-a-project-reference-to-assembly-assemblyname"></a>\<message> Эта ошибка может также быть вызвана смешением ссылки на файл и ссылки проекта на сборку \<assemblyname>
-\<message>Эта ошибка может также быть вызвана смешением ссылки на файл со ссылкой проекта на сборку \<assemblyname> . В этом случае попробуйте заменить ссылку на файл " \<assemblyfilename> " в проекте " \<projectname1> " ссылкой проекта на " \<projectname2> ".  
+
+\<message> Эта ошибка может также быть вызвана смешением ссылки на файл со ссылкой проекта на сборку \<assemblyname> . В этом случае попробуйте заменить ссылку на файл " \<assemblyfilename> " в проекте " \<projectname1> " ссылкой проекта на " \<projectname2> ".  
   
  Код в проекте обращается к члену другого проекта, но конфигурация решения не позволяет компилятору Visual Basic разрешить ссылку.  
   
@@ -29,7 +30,7 @@ ms.locfileid: "84397263"
   
 2. В свойствах проекта добавьте ссылку на проект, содержащий сборку, определяющую используемый тип.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление ссылками в проекте](/visualstudio/ide/managing-references-in-a-project)
 - [References to Declared Elements](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)

@@ -6,14 +6,15 @@ helpviewer_keywords:
 - functions [Visual Basic], function expressions
 - lambda expressions [Visual Basic], function expression
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
-ms.openlocfilehash: a9b621ff03f833fcf0f07f876fd864ee963bef75
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 719969be23a6d94f22a1d86cb4ad3f37e4c3b254
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84371185"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873423"
 ---
 # <a name="function-expression-visual-basic"></a>Выражение Function (Visual Basic)
+
 Объявляет параметры и код, определяющие лямбда-выражение функции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,13 +32,15 @@ End Function
 |Термин|Определение|  
 |---|---|  
 |`parameterlist`|Необязательный элемент. Список имен локальных переменных, представляющих параметры этой процедуры. Круглые скобки должны присутствовать, даже если список пуст. См. [список параметров](../statements/parameter-list.md).|  
-|`expression`|Обязательный. Одно выражение. Тип выражения является типом возвращаемого значения функции.|  
-|`statements`|Обязательный. Список инструкций, которые возвращают значение с помощью `Return` инструкции. (См. раздел [оператор return](../statements/return-statement.md).) Тип возвращаемого значения — это возвращаемый тип функции.|  
+|`expression`|Обязательный элемент. Одно выражение. Тип выражения является типом возвращаемого значения функции.|  
+|`statements`|Обязательный элемент. Список инструкций, которые возвращают значение с помощью `Return` инструкции. (См. раздел [оператор return](../statements/return-statement.md).) Тип возвращаемого значения — это возвращаемый тип функции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  *Лямбда-выражение* — это функция без имени, которая вычисляет и возвращает значение. Лямбда-выражение можно использовать в любом месте, где можно использовать тип делегата, кроме аргумента `RemoveHandler` . Дополнительные сведения о делегатах и использовании лямбда-выражений с делегатами см. в разделе [оператор Delegate](../statements/delegate-statement.md) и [Преобразование неявного делегата](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
   
 ## <a name="lambda-expression-syntax"></a>Синтаксис лямбда-выражений  
+
  Синтаксис лямбда-выражения напоминает стандартную функцию. Различия заключаются в следующем.  
   
 - Лямбда-выражение не имеет имени.  
@@ -55,6 +58,7 @@ End Function
 - Универсальные параметры не допускаются.  
   
 ## <a name="example"></a>Пример  
+
  В следующих примерах показано два способа создания простых лямбда-выражений. Первый использует `Dim` для предоставления имени функции. Для вызова функции вы отправляете значение для параметра.  
   
  [!code-vb[VbVbalrLambdas#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#1)]  
@@ -62,16 +66,19 @@ End Function
  [!code-vb[VbVbalrLambdas#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#2)]  
   
 ## <a name="example"></a>Пример  
+
  Кроме того, можно одновременно объявить и запустить функцию.  
   
  [!code-vb[VbVbalrLambdas#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#3)]  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен пример лямбда-выражения, которое увеличивает свой аргумент и возвращает значение. В примере показан синтаксис однострочного и многострочного лямбда-выражения для функции. Дополнительные примеры см. в разделе [лямбда-выражения](../../programming-guide/language-features/procedures/lambda-expressions.md).  
   
  [!code-vb[VbVbalrLambdas#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#14)]  
   
 ## <a name="example"></a>Пример  
+
  Лямбда-выражения лежат в основе многих операторов запросов в LINQ и могут использоваться явным образом в запросах, основанных на методах. В следующем примере показан типичный запрос LINQ, а затем перевод запроса в формат метода.  
   
 ```vb  
@@ -87,7 +94,7 @@ Dim londonCusts = db.Customers.
   
  Дополнительные сведения о методах запросов см. в разделе [запросы](../queries/index.md). Дополнительные сведения о стандартных операторах запросов см. в разделе [Общие сведения о стандартных операторах запросов](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Function](../statements/function-statement.md)
 - [Лямбда-выражения](../../programming-guide/language-features/procedures/lambda-expressions.md)

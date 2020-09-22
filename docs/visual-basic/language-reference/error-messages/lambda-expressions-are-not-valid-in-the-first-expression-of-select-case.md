@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC36635
 ms.assetid: 74609979-9c03-4864-bbce-f588aa2e0917
-ms.openlocfilehash: 08f7cd9dd95a10cad0df6539ba43122495347bae
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9f200ea44e7505c407c7df56e596435024394875
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397367"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873869"
 ---
 # <a name="lambda-expressions-are-not-valid-in-the-first-expression-of-a-select-case-statement"></a>Лямбда-выражения недопустимы в первом выражении оператора Select Case
+
 Нельзя использовать лямбда-выражение для тестового выражения в `Select Case` инструкции. Определения лямбда-выражений возвращают функции, а тестовое выражение `Select Case` инструкции должно иметь простейший тип данных.  
   
  Следующий код вызывает эту ошибку:  
@@ -40,7 +41,7 @@ Select Case ((Function(arg? As Integer) arg Is Nothing)(num))
 End Select  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Лямбда-выражения](../../programming-guide/language-features/procedures/lambda-expressions.md)
 - [Оператор If…Then…Else](../statements/if-then-else-statement.md)

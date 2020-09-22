@@ -10,14 +10,15 @@ helpviewer_keywords:
 - write-only properties
 - properties [Visual Basic], write-only
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
-ms.openlocfilehash: 49d4c36805b64d7232a94e818256723a0437b6ef
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b3524769567a56a87184bf916a3e5ccb1fd4fa1c
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404191"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90871757"
 ---
 # <a name="set-statement-visual-basic"></a>Инструкция Set (Visual Basic)
+
 Объявляет `Set` процедуру свойства, используемую для присвоения значения свойству.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,24 +30,25 @@ End Set
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `attributelist`  
  Необязательный элемент. См. [список атрибутов](attribute-list.md).  
   
  `accessmodifier`  
- Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может принимать следующие значения:  
+ Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может применяться один из перечисленных ниже типов.  
   
 - [От](../modifiers/protected.md)  
   
-- [Объявление](../modifiers/friend.md)  
+- [Friend](../modifiers/friend.md)  
   
-- [Частное](../modifiers/private.md)  
+- [Частная](../modifiers/private.md)  
   
 - `Protected Friend`  
   
  См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).  
   
  `value`  
- Обязательный. Параметр, содержащий новое значение свойства.  
+ Обязательный элемент. Параметр, содержащий новое значение свойства.  
   
  `datatype`  
  Обязательный `Option Strict` , если имеет значение `On` . Тип данных `value` параметра. Указанный тип данных должен совпадать с типом данных свойства, в котором `Set` объявлен этот оператор.  
@@ -55,9 +57,10 @@ End Set
  Необязательный элемент. Одна или несколько инструкций, выполняемых при `Set` вызове процедуры свойства.  
   
  `End Set`  
- Обязательный. Завершает определение `Set` процедуры свойства.  
+ Обязательный элемент. Завершает определение `Set` процедуры свойства.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Каждое свойство должно иметь `Set` процедуру свойства, если только свойство не помечено как `ReadOnly` . `Set`Процедура используется для задания значения свойства.  
   
  Visual Basic автоматически вызывает процедуру свойства, `Set` когда оператор присваивания предоставляет значение, которое должно храниться в свойстве.  
@@ -78,16 +81,17 @@ End Set
   
 - **Возврат из процедуры свойства.** Когда `Set` процедура возвращается в вызывающий код, выполнение продолжится после оператора, который предоставил значение для сохранения.  
   
-     `Set`процедуры свойств могут возвращать использование либо [оператора return](return-statement.md) , либо [оператора Exit](exit-statement.md).  
+     `Set` процедуры свойств могут возвращать использование либо [оператора return](return-statement.md) , либо [оператора Exit](exit-statement.md).  
   
      `Exit Property`Операторы и `Return` вызывают немедленный выход из процедуры свойства. Любое количество `Exit Property` инструкций и `Return` может использоваться в любом месте процедуры, и можно смешивать `Exit Property` `Return` операторы и.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере инструкция используется `Set` для задания значения свойства.  
   
  [!code-vb[VbVbalrStatements#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#55)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Get](get-statement.md)
 - [Property Statement](property-statement.md)

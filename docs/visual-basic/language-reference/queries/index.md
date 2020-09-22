@@ -5,17 +5,19 @@ helpviewer_keywords:
 - queries [Visual Basic]
 - LINQ, queries
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
-ms.openlocfilehash: 8fb245309170d4b9adf7458bb3bcfde3e28c0538
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 006a4b67094b258d440c2046fe3ae02274e1c337
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359838"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90869900"
 ---
 # <a name="queries-visual-basic"></a>Запросы (Visual Basic)
+
 Visual Basic позволяет создавать LINQ-выражения в коде.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Aggregate Clause](aggregate-clause.md)  
  Описывает `Aggregate` предложение, которое применяет одну или несколько агрегатных функций к коллекции.  
   
@@ -37,7 +39,7 @@ Visual Basic позволяет создавать LINQ-выражения в к
  [Предложение Let](let-clause.md)  
  Описывает `Let` предложение, которое выполняет вычисление значения и присваивает его новой переменной в запросе.  
   
- [Предложение Order By](order-by-clause.md)  
+ [Предложение ORDER BY](order-by-clause.md)  
  Описывает `Order By` предложение, которое указывает порядок сортировки для столбцов в запросе.  
   
  [Предложение SELECT](select-clause.md)  
@@ -58,7 +60,7 @@ Visual Basic позволяет создавать LINQ-выражения в к
  [Предложение WHERE](where-clause.md)  
  Описывает `Where` предложение, которое задает условие фильтрации для запроса.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ](../../programming-guide/language-features/linq/index.md)
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)

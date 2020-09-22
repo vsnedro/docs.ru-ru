@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC30157
 ms.assetid: 70daaee1-14f9-45b7-9f30-53794310b95e
-ms.openlocfilehash: 149acc2baac0f45fa971a11f254d694526d140d7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c39339a49c4aad4ba643facc2372333e7379ffa7
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397328"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873846"
 ---
 # <a name="leading--or--can-only-appear-inside-a-with-statement"></a>Символ "." или "!", стоящий в начале оператора, может использоваться только внутри оператора "With"
+
 Точка (.) или восклицательный знак (!), не находящиеся внутри `With` блока, происходит без выражения слева. Для доступа к членам ( `.` ) и доступа к членам словаря ( `!` ) требуется выражение, указывающее элемент, содержащий элемент. Он должен располагаться непосредственно слева от метода доступа или являться целевым объектом блока, `With` содержащего доступ к члену.  
   
  **Идентификатор ошибки:** BC30157  
@@ -25,7 +26,7 @@ ms.locfileid: "84397328"
   
 2. Если `With` блок отсутствует, добавьте выражение слева от метода доступа, результатом которого является определенный элемент, содержащий элемент.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Специальные символы в коде](../../programming-guide/program-structure/special-characters-in-code.md)
 - [Оператор With…End With](../statements/with-end-with-statement.md)

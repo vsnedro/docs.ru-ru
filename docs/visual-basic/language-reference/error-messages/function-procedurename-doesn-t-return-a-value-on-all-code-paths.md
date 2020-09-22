@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC42105
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
-ms.openlocfilehash: edb2195f4e83c2315aa929936aff8af88ca8556c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5295775b2541219e611e167e304ca8ef99cf6bd8
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374139"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874138"
 ---
 # <a name="function-procedurename-doesnt-return-a-value-on-all-code-paths"></a>Функция \<procedurename> возвращает значение не для всех путей выполнения
+
 Функция " \<procedurename> " не возвращает значение для всех ветвей кода. У вас отсутствует оператор "return"?  
   
  `Function`Процедура имеет по крайней мере один возможный путь в коде, который не возвращает значение.  
@@ -39,7 +40,7 @@ ms.locfileid: "84374139"
   
      Проще гарантировать, что каждый возврат из процедуры возвращает значение, если всегда используется `Return` оператор. В этом случае последняя инструкция `End Function` должна быть `Return` оператором.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры функций](../../programming-guide/language-features/procedures/function-procedures.md)
 - [Оператор Function](../statements/function-statement.md)

@@ -6,17 +6,18 @@ helpviewer_keywords:
 - directories [Visual Basic], Visual Basic
 - files [Visual Basic], summary
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
-ms.openlocfilehash: c4429d58d2f089b86f5c32c1f3ce8353b02880c4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 84e5ac5276eeddf399003f72ef72e7117feb011b
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373897"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90868930"
 ---
 # <a name="directories-and-files-summary-visual-basic"></a>Сводка по каталогам и файлам (Visual Basic)
+
 Ключевые слова языка Visual Basic и элементы библиотеки времени выполнения упорядочены по целям и использованию.  
   
- Использование этой `My` функции обеспечивает более высокую производительность и производительность операций файлового ввода-вывода, чем использование этих членов. Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
+ Использование этой `My` функции обеспечивает более высокую производительность и производительность операций файлового ввода-вывода, чем использование этих членов. Для получения дополнительной информации см. <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
   
 |**Действие**|**Языковой элемент**|  
 |----------------|--------------------------|  
@@ -33,7 +34,7 @@ ms.locfileid: "84373897"
 |Возврат имени файла или метки тома.|<xref:Microsoft.VisualBasic.FileSystem.Dir%2A>|  
 |Установка сведений об атрибутах для файла.|<xref:Microsoft.VisualBasic.FileSystem.SetAttr%2A>|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ключевые слова](index.md)
 - [Члены библиотеки времени выполнения Visual Basic](../runtime-library-members.md)

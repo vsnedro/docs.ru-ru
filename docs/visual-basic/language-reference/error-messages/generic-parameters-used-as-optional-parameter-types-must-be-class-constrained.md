@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC32124
 ms.assetid: 55aa8b2a-9ce3-4620-a710-2f9b0feb6143
-ms.openlocfilehash: 273ea592e73be5d76a4ffef077e691014a108347
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2e3f50d08fdf78b5ca9bf9e3399b00ed0328320f
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402931"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874027"
 ---
 # <a name="generic-parameters-used-as-optional-parameter-types-must-be-class-constrained"></a>Универсальные параметры, используемые как типы необязательных параметров, должны быть ограничены классом
+
 Процедура объявлена с необязательным параметром, который использует параметр типа, который не ограничивается ссылочным типом.  
   
  Для каждого необязательного параметра всегда необходимо указывать значение по умолчанию. Если параметр имеет ссылочный тип, необязательное значение должно быть `Nothing` допустимым значением для любого ссылочного типа. Однако если параметр имеет тип значения, то этот тип должен быть простейшим типом данных, предопределенным Visual Basic. Это обусловлено тем, что тип составного значения, например определяемая пользователем структура, не имеет допустимого значения по умолчанию.  
@@ -27,7 +28,7 @@ ms.locfileid: "84402931"
   
 - Ограничьте параметр типа, чтобы он принимал только ссылочный тип, или не используйте его для необязательного параметра.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [Type List](../statements/type-list.md)

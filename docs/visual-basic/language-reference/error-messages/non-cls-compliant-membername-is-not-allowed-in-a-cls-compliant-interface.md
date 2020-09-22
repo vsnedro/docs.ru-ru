@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC40033
 ms.assetid: 060c4b08-798e-40f1-94cf-c05c524f1b8a
-ms.openlocfilehash: e572189b958612bf9527c82ce702df3ab929a23f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d8394fb995bb7b009b4ee40dccc41e3435ae7309
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409404"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90873698"
 ---
 # <a name="non-cls-compliant-membername-is-not-allowed-in-a-cls-compliant-interface"></a>CLS-несовместимый \<membername> не допускается в CLS-совместимом интерфейсе
+
 Свойство, процедура или событие в интерфейсе помечается так, как `<CLSCompliant(True)>` если бы сам интерфейс был помечен как `<CLSCompliant(False)>` или, не помечен.  
   
  Чтобы интерфейс был совместим с [независимостьм от языка и зависимыми от языка компонентами](../../../standard/language-independence-and-language-independent-components.md) (CLS), все его члены должны быть соответствующими.  
@@ -35,6 +36,6 @@ ms.locfileid: "84409404"
   
 - Если требуется, чтобы этот член оставался в текущем интерфейсе, удалите <xref:System.CLSCompliantAttribute> из его определения или пометьте его как `<CLSCompliant(False)>` .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Interface](../statements/interface-statement.md)

@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC42026
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
-ms.openlocfilehash: e3a9f4cf2f4105d2c449813bf0c593860df7d1f0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c05a7d9b021192d53a30e49f52abc08d9b153156
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409534"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874255"
 ---
 # <a name="expression-recursively-calls-the-containing-property-propertyname"></a>Выражение рекурсивно вызывает содержащее свойство \<propertyname>
+
 Оператор в `Set` процедуре определения свойства сохраняет значение в имени свойства.  
   
  Рекомендуемый подход к удержанию значения свойства — определить `Private` переменную в контейнере свойства и использовать ее в `Get` `Set` процедурах и. `Set`Процедура должна сохранить входящее значение в этой `Private` переменной.  
@@ -63,7 +64,7 @@ End Class
   
 - Перепишите определение свойства, чтобы использовать рекомендуемый подход, как показано в предыдущем примере.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры свойств](../../programming-guide/language-features/procedures/property-procedures.md)
 - [Property Statement](../statements/property-statement.md)

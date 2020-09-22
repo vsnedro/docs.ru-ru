@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC40032
 ms.assetid: 32bf1949-fd73-456c-a323-bf1ffe1320ed
-ms.openlocfilehash: 79faf0038b2b313bdc21e12c8ae76854bcd6957f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8d27039c28cd3f680e441db9182dd415bd8e91ba
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406577"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90870270"
 ---
 # <a name="underlying-type-typename-of-enum-is-not-cls-compliant"></a>Базовый тип \<typename> перечисления несовместим с CLS
+
 Тип данных, указанный для этого перечисления, не является частью [независимость от языка и независимых от языка компонентов](../../../standard/language-independence-and-language-independent-components.md) (CLS). Это не ошибка в компоненте, так как .NET Framework и Visual Basic поддерживают этот тип данных. Однако другой компонент, написанный в строго CLS-совместимом коде, может не поддерживать этот тип данных. Такой компонент, возможно, не сможет успешно взаимодействовать с компонентом.  
   
  Следующие типы данных Visual Basic несовместимы с CLS:  
@@ -41,7 +42,7 @@ ms.locfileid: "84406577"
   
 - При взаимоработе с автоматизацией или COM-объектами Помните, что некоторые типы имеют разную ширину данных, чем в .NET Framework. Например, данные типа `uint` часто являются 16-битными в других средах. При передаче 16-разрядного аргумента в такой компонент объявите его как `UShort` вместо `UInteger` в управляемом коде Visual Basic.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Reflection (Visual Basic)](../../programming-guide/concepts/reflection.md) (Отражение (Visual Basic))
 - [Отражение](../../../framework/reflection-and-codedom/reflection.md)

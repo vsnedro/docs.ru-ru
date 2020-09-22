@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC32096
 ms.assetid: ed20d09c-913f-482e-89f8-c0a596c3ec24
-ms.openlocfilehash: 153a2640d66f48660f21339aaf0ecc8eaa10f51f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d04a77291ecf09f88ad189667540e9e353246f28
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402970"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874080"
 ---
 # <a name="for-each-on-type-typename-is-ambiguous-because-the-type-implements-multiple-instantiations-of-systemcollectionsgenericienumerableof-t"></a>Оператор For Each для типа \<typename> неоднозначен, поскольку тип реализует несколько экземпляров System.Collections.Generic.IEnumerable (Of T)
+
 `For Each`Оператор указывает переменную-итератор, имеющую более одного <xref:System.Collections.IEnumerable.GetEnumerator%2A> метода.  
   
  Переменная итератора должна иметь тип, реализующий <xref:System.Collections.IEnumerable?displayProperty=nameWithType> <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> интерфейс или в одном из `Collections` пространств имен .NET Framework. Класс может реализовывать несколько сконструированных универсальных интерфейсов, используя разные аргументы типа для каждой конструкции. Если класс, который выполняет это, используется для переменной-итератора, эта переменная имеет более одного <xref:System.Collections.IEnumerable.GetEnumerator%2A> метода. В этом случае Visual Basic не может выбрать метод для вызова.  
@@ -25,7 +26,7 @@ ms.locfileid: "84402970"
   
 - Используйте [Оператор DirectCast](../operators/directcast-operator.md) или [Оператор TryCast](../operators/trycast-operator.md) для приведения типа переменной итератора к интерфейсу, определяющему <xref:System.Collections.IEnumerable.GetEnumerator%2A> метод, который вы хотите использовать.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор For Each…Next](../statements/for-each-next-statement.md)
 - [Интерфейсы](../../programming-guide/language-features/interfaces/index.md)

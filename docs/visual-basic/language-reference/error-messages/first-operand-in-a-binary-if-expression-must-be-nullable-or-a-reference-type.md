@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC33107
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
-ms.openlocfilehash: ca16c6604ee071668a5c65d7e9052b233e2313c7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a93dd0a5422ce2a01a01c6fc77224e3ee946910e
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403022"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874152"
 ---
 # <a name="first-operand-in-a-binary-if-expression-must-be-nullable-or-a-reference-type"></a>Первый операнд в двоичном выражении If должен поддерживать значение NULL или быть ссылочного типа
+
 `If`Выражение может принимать либо два, либо три аргумента. При отправке только двух аргументов первый аргумент должен быть ссылочным типом или типом значения, допускающим значение null. Если первый аргумент принимает значение, отличное от, то `Nothing` возвращается. Если первый аргумент имеет значение `Nothing` , то вычисляется и возвращается второй аргумент.  
   
  Например, следующий код содержит два `If` выражения: один с тремя аргументами и один с двумя аргументами. Выражения вычисляют и возвращают одно и то же значение.  
@@ -53,8 +54,8 @@ Console.WriteLine(If(choice1 < choice2, 1, 2))
 Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор If](../operators/if-operator.md)
 - [Оператор If…Then…Else](../statements/if-then-else-statement.md)
-- [Типы значений, допускающие значение null](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [Типы значений, допускающие значение NULL](../../programming-guide/language-features/data-types/nullable-value-types.md)

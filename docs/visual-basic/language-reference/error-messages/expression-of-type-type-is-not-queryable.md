@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - BC36593
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
-ms.openlocfilehash: e61b4dac109f714b5cf25226d1029237ca77032d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 78b47601bf0a013d079f638f6dac27511e01aec4
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409482"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90874207"
 ---
 # <a name="expression-of-type-type-is-not-queryable"></a>Выражение типа \<type> не доступно для запроса
+
 Выражение типа \<type> не может быть доступно для запросов. Убедитесь, что отсутствует ссылка на сборку и (или) импорт пространства имен для поставщика LINQ.  
   
  Запрашиваемые типы определяются в <xref:System.Linq> <xref:System.Data.Linq> <xref:System.Xml.Linq> пространствах имен, и. Для выполнения запросов LINQ необходимо импортировать одно или несколько из этих пространств имен.  
@@ -33,7 +34,7 @@ ms.locfileid: "84409482"
   
 2. Убедитесь, что тип, определенный в качестве источника запроса, является запрашиваемым типом. То есть тип, реализующий <xref:System.Collections.Generic.IEnumerable%601> или <xref:System.Linq.IQueryable%601> .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
