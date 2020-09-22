@@ -13,14 +13,15 @@ helpviewer_keywords:
 - classes [Visual Basic], data members
 - data members [Visual Basic], of classes
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
-ms.openlocfilehash: bdb73772dfe0e6d49d89a4ef006b1bceac14c8ee
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3b64597fcd7453c20ed295fe263eeaa8783b20ae
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397159"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866040"
 ---
 # <a name="class-statement-visual-basic"></a>Оператор Class (Visual Basic)
+
 Объявляет имя класса и вводит определение переменных, свойств, событий и процедур, содержащихся в классе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,12 +40,12 @@ End Class
 |Термин|Определение|  
 |---|---|  
 |`attributelist`|Необязательный элемент. См. [список атрибутов](attribute-list.md).|  
-|`accessmodifier`|Необязательный элемент. Может принимать следующие значения:<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   [Защищенный дружественный](../modifiers/protected-friend.md)<br />- [Частный защищенный](../modifiers/private-protected.md)<br/><br/> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Необязательный элемент. Может применяться один из перечисленных ниже типов.<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   [Защищенный дружественный](../modifiers/protected-friend.md)<br />- [Частный защищенный](../modifiers/private-protected.md)<br/><br/> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Необязательный элемент. См. раздел [Shadows](../modifiers/shadows.md).|  
 |`MustInherit`|Необязательный элемент. См. раздел [MustInherit](../modifiers/mustinherit.md).|  
 |`NotInheritable`|Необязательный элемент. См. [NotInheritable](../modifiers/notinheritable.md).|  
 |`Partial`|Необязательный элемент. Указывает на частичное определение класса. См. раздел [partial](../modifiers/partial.md).|  
-|`name`|Обязательный. Имя этого класса. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
+|`name`|Обязательный элемент. Имя этого класса. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
 |`Of`|Необязательный элемент. Указывает, что это универсальный класс.|  
 |`typelist`|Требуется, если используется ключевое слово [of](of-clause.md) . Список параметров типа для этого класса. См. [список типов](type-list.md).|  
 |`Inherits`|Необязательный элемент. Указывает, что этот класс наследует члены другого класса. См. раздел [оператор Inherits](inherits-statement.md).|  
@@ -52,9 +53,10 @@ End Class
 |`Implements`|Необязательный элемент. Указывает, что этот класс реализует члены одного или нескольких интерфейсов. См. [инструкцию Implements](implements-statement.md).|  
 |`interfacenames`|Требуется, если используется `Implements` оператор. Имена интерфейсов, реализуемых этим классом.|  
 |`statements`|Необязательный элемент. Инструкции, которые определяют элементы этого класса.|  
-|`End Class`|Обязательный. Завершает `Class` Определение.|  
+|`End Class`|Обязательный элемент. Завершает `Class` Определение.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  `Class`Оператор определяет новый тип данных. *Класс* является фундаментальным стандартным блоком объектно-ориентированного программирования (ООП). Дополнительные сведения см. в разделе [объекты и классы](../../programming-guide/language-features/objects-and-classes/index.md).  
   
  Можно использовать `Class` только на уровне пространства имен или модуля. Это означает, что *контекст объявления* для класса должен быть исходным файлом, пространством имен, классом, структурой, модулем или интерфейсом и не может быть процедурой или блоком. Дополнительные сведения см. в разделе [Контексты объявления и уровни доступа по умолчанию](declaration-contexts-and-default-access-levels.md).  
@@ -94,6 +96,7 @@ End Class
      Если код внутри вложенного класса делает неквалифицированную ссылку на программный элемент, Visual Basic ищет элемент сначала во вложенном классе, затем в его содержащем классе и так далее в самом внешнем содержащем элементе.  
   
 ## <a name="classes-and-modules"></a>Классы и модули  
+
  У этих элементов много сходства, но есть и некоторые важные отличия.  
   
 - **Терминология.** В предыдущих версиях Visual Basic распознаются два типа модулей: *модули классов* (CLS-файлы) и *стандартные модули* (файлы. BAS). Текущая версия вызывает эти *классы* и *модули*соответственно.  
@@ -103,11 +106,12 @@ End Class
 - **Объектная ориентация.** Классы являются объектно-ориентированными, но модули — нет. Можно создать один или несколько экземпляров класса. Дополнительные сведения см. в разделе [объекты и классы](../../programming-guide/language-features/objects-and-classes/index.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `Class` для определения класса и нескольких элементов.  
   
  [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объекты и классы](../../programming-guide/language-features/objects-and-classes/index.md)
 - [Структуры и классы](../../programming-guide/language-features/data-types/structures-and-classes.md)

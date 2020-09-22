@@ -13,14 +13,15 @@ helpviewer_keywords:
 - conditional statements [Visual Basic], GoTo statement
 - GoTo statement [Visual Basic], syntax
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
-ms.openlocfilehash: eb6f48d04b7d14591003e340464451da7df45cd6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 000f6754575bcce6b2d79d85541e755219aca956
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404619"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866616"
 ---
 # <a name="goto-statement"></a>Оператор GoTo
+
 Безусловно подразделяется на указанную строку в процедуре.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,26 +30,29 @@ ms.locfileid: "84404619"
 GoTo line  
 ```  
   
-## <a name="part"></a>Часть  
+## <a name="part"></a>Отделение  
+
  `line`  
- Обязательный. Метка любой линии.  
+ Обязательный элемент. Метка любой линии.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  `GoTo`Оператор может создать ветвь только для строк в процедуре, в которой она отображается. Строка должна иметь метку, которая `GoTo` может ссылаться на. Дополнительные сведения см. [в разделе инструкции. Метки](../../programming-guide/program-structure/how-to-label-statements.md).  
   
 > [!NOTE]
-> `GoTo`инструкции могут усложнить чтение и поддержку кода. Везде, где это возможно, следует использовать структуру элементов управления. Дополнительные сведения см. в разделе [Поток управления](../../programming-guide/language-features/control-flow/index.md).  
+> `GoTo` инструкции могут усложнить чтение и поддержку кода. Везде, где это возможно, следует использовать структуру элементов управления. Дополнительные сведения см. в разделе [Поток управления](../../programming-guide/language-features/control-flow/index.md).  
   
  Нельзя использовать `GoTo` оператор для ветвления извне `For` ... `Next` , `For Each` ... `Next` , `SyncLock` ... `End SyncLock` , `Try` . `Catch` .. ... `Finally` , `With` ... `End With` или `Using` ... `End Using` конструкция к метке внутри.  
   
 ## <a name="branching-and-try-constructions"></a>Ветвление и конструкции try  
+
  В `Try` ... `Catch` ...`Finally` для создания ветвления с помощью оператора применяются следующие правила `GoTo` .  
   
 |Блок или область|Ветвление вне|Ветвление из внутрь|  
 |---------------------|-------------------------------|-------------------------------|  
-|`Try`блок|Только из `Catch` блока одной конструкции <sup>1</sup>|Только за пределами всей конструкции|  
-|`Catch`блок|Никогда не разрешено|Только за пределами всей конструкции или с `Try` блоком той же конструкции <sup>1</sup>|  
-|`Finally`блок|Никогда не разрешено|Никогда не разрешено|  
+|Блок `Try`|Только из `Catch` блока одной конструкции <sup>1</sup>|Только за пределами всей конструкции|  
+|Блок `Catch`|Никогда не разрешено|Только за пределами всей конструкции или с `Try` блоком той же конструкции <sup>1</sup>|  
+|Блок `Finally`|Никогда не разрешено|Никогда не разрешено|  
   
  <sup>1</sup> , если один `Try` ... `Catch` ...`Finally` Конструкция вложена в другую, `Catch` блок может выполнять ветвление в `Try` блок на своем собственном уровне вложенности, но не в другой `Try` блок. Вложенный `Try` ... `Catch` ...`Finally` конструкция должна полностью содержаться в `Try` `Catch` блоке или конструкции, внутри которой она вложена.  
   
@@ -57,11 +61,12 @@ GoTo line
  ![Графическая схема ветвления в конструкциях Try](./media/goto-statement/try-construction-branching.gif)  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `GoTo` для перехода к меткам линии в процедуре.  
   
  [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Do…Loop](do-loop-statement.md)
 - [Оператор For…Next](for-next-statement.md)

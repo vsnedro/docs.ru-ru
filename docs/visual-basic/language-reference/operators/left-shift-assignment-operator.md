@@ -11,14 +11,15 @@ helpviewer_keywords:
 - operator<<=
 - compound assignment statements [Visual Basic]
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
-ms.openlocfilehash: ff7cbb02a9a10dbe11450491e93fd85fd77b44ba
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 72fc842002586a4d5e48bc39b5c785fc6a9e9451
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84370665"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866899"
 ---
 # <a name="-operator-visual-basic"></a>\<\<Оператор = (Visual Basic)
+
 Выполняет арифметическое смещение влево для значения переменной или свойства и присваивает результат переменной или свойству.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -28,13 +29,15 @@ variableorproperty <<= amount
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `variableorproperty`  
- Обязательный. Переменная или свойство целочисленного типа ( `SByte` ,, `Byte` , `Short` , `UShort` `Integer` , `UInteger` , `Long` или `ULong` ).  
+ Обязательный элемент. Переменная или свойство целочисленного типа ( `SByte` ,, `Byte` , `Short` , `UShort` `Integer` , `UInteger` , `Long` или `ULong` ).  
   
  `amount`  
- Обязательный. Числовое выражение типа данных, которое расширяется до `Integer` .  
+ Обязательный элемент. Числовое выражение типа данных, которое расширяется до `Integer` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Элемент в левой части `<<=` оператора может быть простой скалярной переменной, свойством или элементом массива. Переменная или свойство не может быть [ReadOnly](../modifiers/readonly.md).  
   
  `<<=`Оператор сначала выполняет арифметический сдвиг влево для значения переменной или свойства. Затем оператор присваивает результат этой операции с переменной или свойством.  
@@ -42,16 +45,18 @@ variableorproperty <<= amount
  Арифметические сдвиги не являются циклическими, то есть биты, сдвинутые за пределы результата, не переносятся на другой конец. При выполнении арифметического сдвига влево биты, сдвинутые за пределы диапазона результирующего типа данных, отбрасываются, а позиции битов, освобожденные справа, устанавливаются в ноль.  
   
 ## <a name="overloading"></a>Перегрузка  
+
  [Оператор<< ](left-shift-operator.md) может быть *перегружен*, что означает, что класс или структура может переопределить свое поведение, если операнд имеет тип этого класса или структуры. Перегрузка `<<` оператора влияет на поведение `<<=` оператора. Если ваш код использует `<<=` класс или структуру, перегрузки `<<` , убедитесь, что вы понимаете его переопределенное поведение. Для получения дополнительной информации см. [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `<<=` для сдвига битового шаблона `Integer` переменной влево на указанное значение и присваивает результат переменной.  
   
  [!code-vb[VbVbalrOperators#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#13)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Оператор<< ](left-shift-operator.md)
+- [ Оператор<< ](left-shift-operator.md)
 - [Операторы присваивания](assignment-operators.md)
 - [Операторы сдвига битов](bit-shift-operators.md)
 - [Порядок применения операторов в Visual Basic](operator-precedence.md)

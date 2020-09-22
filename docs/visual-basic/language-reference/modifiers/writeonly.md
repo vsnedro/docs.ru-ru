@@ -11,24 +11,27 @@ helpviewer_keywords:
 - properties [Visual Basic], write-only
 - sensitive data
 ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
-ms.openlocfilehash: a9fa0a3a23561215d6ff122bc8e609b68ca6fc30
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 12a1030a423359a3e4122eea98e223a1a02f680c
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84386638"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90867624"
 ---
 # <a name="writeonly-visual-basic"></a>WriteOnly (Visual Basic)
+
 Указывает, что свойство может быть записано, но не прочитано.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="rules"></a>Правила  
+
  **Контекст объявления.** `WriteOnly` можно использовать только на уровне модуля. Это означает, что контекст объявления для `WriteOnly` свойства должен быть классом, структурой или модулем и не может быть исходным файлом, пространством имен или процедурой.  
   
  Можно объявить свойство как `WriteOnly` , но не переменную.  
   
 ## <a name="when-to-use-writeonly"></a>Когда следует использовать WriteOnly  
+
  Иногда требуется, чтобы в коде использовалась возможность задать значение, но не узнать, что это такое. Например, конфиденциальные данные, например номер социальной регистрации или пароль, должны быть защищены от доступа любым компонентом, который не задал его. В таких случаях `WriteOnly` для задания значения можно использовать свойство.  
   
 > [!IMPORTANT]
@@ -48,8 +51,8 @@ ms.locfileid: "84386638"
   
  [Property Statement](../statements/property-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Доступно](readonly.md)
-- [Частное](private.md)
+- [ReadOnly](readonly.md)
+- [Частная](private.md)
 - [Ключевые слова](../keywords/index.md)

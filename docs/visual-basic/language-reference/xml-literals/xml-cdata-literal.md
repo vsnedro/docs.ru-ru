@@ -8,14 +8,15 @@ helpviewer_keywords:
 - XML CDATA literal [Visual Basic]
 - XML literals [Visual Basic], CDATA
 ms.assetid: 9eafb6a4-dd9d-4866-85e8-0654c65abc44
-ms.openlocfilehash: b9cc830d27625f192d8f5e059bd3783d05d8ba3b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4447ad6cf0fb251b0d2d1387c109b06d32f69cb8
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866101"
 ---
 # <a name="xml-cdata-literal-visual-basic"></a>Литеральное представление XML-раздела CDATA (Visual Basic)
+
 Литерал, представляющий <xref:System.Xml.Linq.XCData> объект.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,19 +26,22 @@ ms.locfileid: "84400232"
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
  `<![CDATA[`  
- Обязательный. Обозначает начало раздела XML CDATA.  
+ Обязательный элемент. Обозначает начало раздела XML CDATA.  
   
  `content`  
- Обязательный. Текстовое содержимое, отображаемое в разделе CDATA XML.  
+ Обязательный элемент. Текстовое содержимое, отображаемое в разделе CDATA XML.  
   
  `]]>`  
- Обязательный. Обозначает конец раздела.  
+ Обязательный элемент. Обозначает конец раздела.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Объект <xref:System.Xml.Linq.XCData>.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Разделы XML CDATA содержат необработанный текст, который должен быть добавлен, но не проанализирован, с XML-кодом, содержащим его. Раздел CDATA XML может содержать любой текст. Сюда входят зарезервированные символы XML. Раздел CDATA XML заканчивается последовательностью "]] >". Это подразумевает следующие моменты:  
   
 - Нельзя использовать внедренное выражение в XML-литерале CDATA, так как разделители внедренных выражений являются допустимыми содержимым XML CDATA.  
@@ -52,11 +56,12 @@ ms.locfileid: "84400232"
  Компилятор Visual Basic преобразует литерал CDATA XML в вызов <xref:System.Xml.Linq.XCData.%23ctor%2A> конструктора.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере создается раздел CDATA, содержащий текст "может содержать литеральные \<XML> теги".  
   
  [!code-vb[VbXMLSamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples11.vb#23)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Linq.XCData>
 - [XML-литерал элемента](xml-element-literal.md)

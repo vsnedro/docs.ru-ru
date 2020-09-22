@@ -9,14 +9,15 @@ helpviewer_keywords:
 - XML documents [Visual Basic], creating
 - document literal [Visual Basic]
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
-ms.openlocfilehash: 3a2182d2937827bc8dc45e22307a3668420261a2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bd1b2f43fce563af431d67b3817b05c7c1048314
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400206"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866019"
 ---
 # <a name="xml-document-literal-visual-basic"></a>XML-литерал документа (Visual Basic)
+
 Литерал, представляющий <xref:System.Xml.Linq.XDocument> объект.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,12 +36,14 @@ rootElement
 |`encoding`|Необязательный элемент. Литеральный текст, объявляющий кодировку, используемую в документе.|  
 |`standalone`|Необязательный элемент. Текст литерала. Значение должно быть "Yes" или "No".|  
 |`piCommentList`|Необязательный элемент. Список инструкций по обработке XML и XML-комментариев. Принимает следующий формат:<br /><br /> `piComment [` `piComment` `... ]`<br /><br /> Каждый `piComment` из них может быть одним из следующих:<br /><br /> -   [Литерал инструкции обработки XML](xml-processing-instruction-literal.md).<br />-   [XML-литерал комментария](xml-comment-literal.md).|  
-|`rootElement`|Обязательный. Корневой элемент документа. Формат может быть одним из следующих:<br /><br /> <ul><li>[Литерал XML-элемента](xml-element-literal.md).</li><li>Внедренное выражение формы `<%=` `elementExp` `%>` . Метод `elementExp` возвращает одно из следующих:<br /><br /> <ul><li>Объект <xref:System.Xml.Linq.XElement>.</li><li>Коллекция, содержащая один <xref:System.Xml.Linq.XElement> объект и любое количество <xref:System.Xml.Linq.XProcessingInstruction> <xref:System.Xml.Linq.XComment> объектов и.</li></ul></li></ul><br /> Дополнительные сведения см. [в разделе внедренные выражения в XML](../../programming-guide/language-features/xml/embedded-expressions-in-xml.md).|  
+|`rootElement`|Обязательный элемент. Корневой элемент документа. Формат может быть одним из следующих:<br /><br /> <ul><li>[Литерал XML-элемента](xml-element-literal.md).</li><li>Внедренное выражение формы `<%=` `elementExp` `%>` . Метод `elementExp` возвращает одно из следующих:<br /><br /> <ul><li>Объект <xref:System.Xml.Linq.XElement>.</li><li>Коллекция, содержащая один <xref:System.Xml.Linq.XElement> объект и любое количество <xref:System.Xml.Linq.XProcessingInstruction> <xref:System.Xml.Linq.XComment> объектов и.</li></ul></li></ul><br /> Дополнительные сведения см. [в разделе внедренные выражения в XML](../../programming-guide/language-features/xml/embedded-expressions-in-xml.md).|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Объект <xref:System.Xml.Linq.XDocument>.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Литерал XML-документа определяется XML-объявлением в начале литерала. Хотя каждый литерал XML-документа должен иметь ровно один корневой XML-элемент, он может иметь любое количество инструкций по обработке XML и XML-комментариев.  
   
  Литерал XML-документа не может присутствовать в элементе XML.  
@@ -51,11 +54,12 @@ rootElement
  Компилятор Visual Basic преобразует литерал XML-документа в вызовы <xref:System.Xml.Linq.XDocument.%23ctor%2A> <xref:System.Xml.Linq.XDeclaration.%23ctor%2A> конструкторов и.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере создается XML-документ с XML-объявлением, инструкцией по обработке, комментарием и элементом, содержащим другой элемент.  
   
  [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Linq.XElement>
 - <xref:System.Xml.Linq.XProcessingInstruction>

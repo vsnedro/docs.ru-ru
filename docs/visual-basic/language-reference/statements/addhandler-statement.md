@@ -8,14 +8,15 @@ f1_keywords:
 helpviewer_keywords:
 - AddHandler statement [Visual Basic]
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
-ms.openlocfilehash: de995a13b34678410e2af74b59f2d0c467982b75
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 79dbe174209e91f13f5b43e8cdeb0b42edc4d163
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408488"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866707"
 ---
 # <a name="addhandler-statement"></a>Оператор AddHandler
+
 Связывает событие с обработчиком событий во время выполнения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,13 +26,15 @@ AddHandler event, AddressOf eventhandler
 ```  
   
 ## <a name="parts"></a>Компоненты  
+
 |||
 |---|---|
 |event|Имя обрабатываемого события.|  
 |`eventhandler`|Имя процедуры, которая обрабатывает событие.|
 |||
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  `AddHandler`Инструкции и `RemoveHandler` позволяют запускать и прекращать обработку событий в любое время во время выполнения программы.  
   
  Сигнатура `eventhandler` процедуры должна соответствовать сигнатуре события `event` .  
@@ -42,9 +45,10 @@ AddHandler event, AddressOf eventhandler
 > Для пользовательских событий `AddHandler` оператор вызывает `AddHandler` метод доступа события. Дополнительные сведения о пользовательских событиях см. в разделе [оператор Event](event-statement.md).  
   
 ## <a name="example"></a>Пример  
+
  [!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор RemoveHandler](removehandler-statement.md)
 - [Маркеры](handles-clause.md)

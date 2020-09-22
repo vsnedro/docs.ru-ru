@@ -8,14 +8,15 @@ helpviewer_keywords:
 - iterators [Visual Basic]
 - Yield statement [Visual Basic]
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
-ms.openlocfilehash: cc89e6f9bc2ccb4fff9a9fe12cd190a6b2d212dc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 783785f2a078b6ad8f975846c44ee4e716a12773
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401372"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866500"
 ---
 # <a name="yield-statement-visual-basic"></a>Оператор Yield (Visual Basic)
+
 Отправляет следующий элемент коллекции в `For Each...Next` оператор.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -30,7 +31,8 @@ Yield expression
 |---|---|  
 |`expression`|Обязательный. Выражение, которое неявно преобразуется в тип функции итератора или `Get` метода доступа, содержащего `Yield` инструкцию.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  `Yield`Инструкция возвращает по одному элементу коллекции за раз. `Yield`Инструкция включена в функцию итератора или `Get` метод доступа, который выполняет пользовательские итерации по коллекции.  
   
  Для использования функции итератора используется оператор [For Each... Следующий оператор](for-each-next-statement.md) или запрос LINQ. Каждая итерация `For Each` цикла вызывает функцию итератора. При `Yield` достижении оператора в функции итератора `expression` возвращается, а текущее расположение в коде сохраняется. При следующем вызове функции итератора выполнение возобновляется с этого места.  
@@ -44,6 +46,7 @@ Yield expression
  Дополнительные сведения о функциях и `Get` доступе итераторов см. в разделе [итераторы](../../programming-guide/concepts/iterators.md).  
   
 ## <a name="iterator-functions-and-get-accessors"></a>Функции итераторов и методы доступа Get  
+
  Объявление функции итератора или `Get` метода доступа должно удовлетворять следующим требованиям.  
   
 - Он должен включать модификатор [итератора](../modifiers/iterator.md) .  
@@ -54,9 +57,10 @@ Yield expression
   
  Функция итератора не может присутствовать в событии, конструкторе экземпляра, статическом конструкторе или статическом деструкторе.  
   
- Функция итератора может быть анонимной функцией. Дополнительные сведения см. в разделе [итераторы](../../programming-guide/concepts/iterators.md).  
+ Функция итератора может быть анонимной функцией. Дополнительные сведения см. в разделе [Итераторы](../../programming-guide/concepts/iterators.md).  
   
 ## <a name="exception-handling"></a>Обработка исключений  
+
  `Yield`Оператор может находиться внутри `Try` блока [конструкции try... Перехватить... Оператор finally](try-catch-finally-statement.md). `Try`Блок, содержащий `Yield` оператор, может иметь `Catch` блоки и может иметь `Finally` блок.  
   
  `Yield`Оператор не может находиться внутри `Catch` блока или блока `Finally` .  
@@ -64,6 +68,7 @@ Yield expression
  Если `For Each` тело (за пределами функции итератора) создает исключение, `Catch` блок в функции итератора не выполняется, но `Finally` выполняется блок в функции iterator. `Catch`Блок внутри функции итератора перехватывает только исключения, происходящие внутри функции итератора.  
   
 ## <a name="technical-implementation"></a>Техническая реализация  
+
  Следующий код возвращает `IEnumerable (Of String)` из функции-итератора, а затем выполняет итерацию по элементам объекта `IEnumerable (Of String)` .  
   
 ```vb  
@@ -80,6 +85,7 @@ Next
  В каждой последующей итерации цикла `For Each` выполнение тела итератора продолжается с места остановки и при достижении оператора `Yield` оно снова останавливается. `For Each`Цикл завершается при достижении конца функции итератора или `Return` `Exit Function` оператора или.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере содержится `Yield` оператор, который находится внутри блока [for... Следующий](for-next-statement.md) цикл. Каждая итерация тела оператора [for each](for-each-next-statement.md) в `Main` создает вызов `Power` функции итератора. При каждом вызове функции итератора происходит переход к следующему выполнению оператора `Yield`, которое осуществляется во время следующей итерации цикла `For…Next`.  
   
  Тип возвращаемого значения метода итератора — это <xref:System.Collections.Generic.IEnumerable%601> тип интерфейса итератора. При вызове метода итератора возвращается перечисляемый объект, содержащий степени числа.  
@@ -87,6 +93,7 @@ Next
  [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере демонстрируется метод доступа `Get`, представляющий собой итератор. Объявление свойства содержит `Iterator` модификатор.  
   
  [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  

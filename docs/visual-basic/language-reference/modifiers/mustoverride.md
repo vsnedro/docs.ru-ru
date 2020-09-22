@@ -15,17 +15,19 @@ helpviewer_keywords:
 - MustOverride keyword [Visual Basic]
 - properties [Visual Basic], overriding
 ms.assetid: 6e9d9ad6-bb64-433f-b32b-3ef84293bf96
-ms.openlocfilehash: 1b20108a2d42e82c0af7598fde8d60a08fea28ec
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cf73f07b6e13d524281129e3c5d8dceceb90764c
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396198"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90867944"
 ---
 # <a name="mustoverride-visual-basic"></a>MustOverride (Visual Basic)
+
 Указывает, что свойство или процедура не реализованы в этом классе и должны быть переопределены в производном классе, прежде чем его можно будет использовать.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Можно использовать `MustOverride` только в операторе объявления свойства или процедуры. Свойство или процедура, указывающие, `MustOverride` должен быть членом класса, а класс должен быть помечен как [MustInherit](mustinherit.md).  
   
 ## <a name="rules"></a>Правила  
@@ -46,7 +48,7 @@ ms.locfileid: "84396198"
   
  [Оператор Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [NotOverridable](notoverridable.md)
 - [Overridable](overridable.md)

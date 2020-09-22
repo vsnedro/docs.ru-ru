@@ -8,17 +8,19 @@ helpviewer_keywords:
 - Public keyword [Visual Basic], syntax
 - Public access modifier
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
-ms.openlocfilehash: 35332e50227cdef6386362df17c10b5b2cdaa689
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f2b6a126435b111ef56ee2a9870ea6fbddf87901
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415353"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90867682"
 ---
 # <a name="public-visual-basic"></a>Public (Visual Basic)
+
 Указывает, что один или несколько объявленных программных элементов не имеют ограничений доступа.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  При публикации компонента или набора компонентов, таких как библиотека классов, обычно требуется, чтобы элементы программирования были доступны любому коду, взаимодействующему со сборкой. Чтобы обеспечить такой неограниченный доступ к элементу, его можно объявить с помощью `Public` .  
   
  Открытый доступ является обычным уровнем для программного элемента, если нет необходимости ограничивать доступ к нему. Обратите внимание, что уровень доступа элемента, объявленного в интерфейсе, модуле, классе или структуре, по умолчанию имеет значение `Public` , если вы не объявили его в противном случае.  
@@ -65,11 +67,11 @@ ms.locfileid: "84415353"
   
  [Оператор Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [От](protected.md)
-- [Объявление](friend.md)
-- [Частное](private.md)
+- [Friend](friend.md)
+- [Частная](private.md)
 - [Частный защищенный](private-protected.md)
 - [Protected Friend](protected-friend.md)
 - [Уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)

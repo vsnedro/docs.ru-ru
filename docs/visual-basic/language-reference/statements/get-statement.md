@@ -11,14 +11,15 @@ helpviewer_keywords:
 - Get keyword [Visual Basic]
 - property procedures [Visual Basic], Get statements
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
-ms.openlocfilehash: 31936fb2c8f658203a43702a2b5fa4ee2481beb5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3da6c099b3f43a144484eaddf58605609eb0bbfe
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404606"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866207"
 ---
 # <a name="get-statement"></a>Оператор Get
+
 Объявляет `Get` процедуру свойства, используемую для получения значения свойства.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,11 +35,12 @@ End Get
 |Термин|Определение|  
 |---|---|  
 |`attributelist`|Необязательный элемент. См. [список атрибутов](attribute-list.md).|  
-|`accessmodifier`|Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может принимать следующие значения:<br /><br /> -   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может применяться один из перечисленных ниже типов.<br /><br /> -   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`statements`|Необязательный элемент. Одна или несколько инструкций, выполняемых при `Get` вызове процедуры свойства.|  
-|`End Get`|Обязательный. Завершает определение `Get` процедуры свойства.|  
+|`End Get`|Обязательный элемент. Завершает определение `Get` процедуры свойства.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Каждое свойство должно иметь `Get` процедуру свойства, если только свойство не помечено как `WriteOnly` . `Get`Процедура используется для возврата текущего значения свойства.  
   
  Visual Basic автоматически вызывает процедуру свойства, `Get` когда выражение запрашивает значение свойства.  
@@ -61,7 +63,7 @@ End Get
   
 - **Возврат из процедуры.** Когда `Get` процедура возвращается в вызывающий код, выполнение продолжится в операторе, который запросил значение свойства.  
   
-     `Get`процедуры свойств могут возвращать значение с помощью [оператора return](return-statement.md) или путем назначения возвращаемого значения имени свойства. Дополнительные сведения см. в разделе "возвращаемое значение" в [операторе Function](function-statement.md).  
+     `Get` процедуры свойств могут возвращать значение с помощью [оператора return](return-statement.md) или путем назначения возвращаемого значения имени свойства. Дополнительные сведения см. в разделе "возвращаемое значение" в [операторе Function](function-statement.md).  
   
      `Exit Property`Операторы и `Return` вызывают немедленный выход из процедуры свойства. Любое количество `Exit Property` инструкций и `Return` может использоваться в любом месте процедуры, и можно смешивать `Exit Property` `Return` операторы и.  
   
@@ -78,11 +80,12 @@ End Get
      [!code-vb[VbVbalrStatements#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#29)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере оператор используется `Get` для возврата значения свойства.  
   
  [!code-vb[VbVbalrStatements#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#30)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Инструкция SET](set-statement.md)
 - [Property Statement](property-statement.md)

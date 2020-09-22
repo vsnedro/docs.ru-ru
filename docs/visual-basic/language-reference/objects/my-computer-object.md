@@ -4,27 +4,30 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Computer object
 ms.assetid: cc814d79-6f7f-4e54-8b9d-5ecfdd77a0b8
-ms.openlocfilehash: 25fd9d2fc52b27f34164b7ed95ed1ebce9919a33
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4e9019773c74aa570f52eb573677f687f2600419
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84372665"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90867409"
 ---
 # <a name="mycomputer-object"></a>Объект My.Computer
+
 Включает свойства для управления компонентами компьютера, такими как звук, часы, клавиатура, файловая система и т. д.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Сведения о методах и свойствах объекта `My.Computer` см. в разделе <xref:Microsoft.VisualBasic.Devices.Computer>. Базовый класс <xref:Microsoft.VisualBasic.Devices.ServerComputer> предоставляет элементы, доступные во всех проектах.  
   
 ## <a name="requirements"></a>Требования  
+
  **Пространство имен:** <xref:Microsoft.VisualBasic.Devices>  
   
  **Класс:** <xref:Microsoft.VisualBasic.Devices.Computer> (базовый класс <xref:Microsoft.VisualBasic.Devices.ServerComputer> предоставляет элементы, доступные во всех проектах).  
   
- **Сборка:** Библиотека времени выполнения Visual Basic (в Microsoft. VisualBasic. dll)  
+ **Сборка:** Библиотека времени выполнения Visual Basic (в Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объект My.Computer.Audio](my-computer-audio-object.md)
 - [Объект My.Computer.Clipboard](my-computer-clipboard-object.md)

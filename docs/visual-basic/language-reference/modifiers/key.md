@@ -8,14 +8,15 @@ helpviewer_keywords:
 - Key [Visual Basic]
 - Key keyword [Visual Basic]
 ms.assetid: 7697a928-7d14-4430-a72a-c9e96e8d6c11
-ms.openlocfilehash: 5b060f5fa0042dfb8ffa6876f5e172d3bcda67a3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 582ed5bb67b9c7504e736710aa4649cffb12ef45
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396224"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90868002"
 ---
 # <a name="key-visual-basic"></a>Key (Visual Basic)
+
 `Key`Ключевое слово позволяет задать поведение для свойств анонимных типов. Только свойства, указанные в качестве ключевых свойств, участвуют в тестах равенства между экземплярами анонимного типа или вычислении значений хэш-кода. Значения ключевых свойств нельзя изменить.  
   
  Вы назначаете свойство анонимного типа в качестве ключевого свойства, помещая ключевое слово `Key` перед его объявлением в списке инициализации. В следующем примере `Airline` и `FlightNo` являются ключевыми свойствами, но `Gate` не.  
@@ -25,6 +26,7 @@ ms.locfileid: "84396224"
  При создании нового анонимного типа он наследуется непосредственно от <xref:System.Object> . Компилятор переопределяет три наследуемых члена: <xref:System.Object.Equals%2A> , <xref:System.Object.GetHashCode%2A> и <xref:System.Object.ToString%2A> . Код переопределения, созданный для <xref:System.Object.Equals%2A> и <xref:System.Object.GetHashCode%2A> , основан на ключевых свойствах. Значение, если в типе нет ключевых свойств <xref:System.Object.GetHashCode%2A> и <xref:System.Object.Equals%2A> они не переопределяются.  
   
 ## <a name="equality"></a>Равенство  
+
  Два экземпляра анонимных типов равны, если они являются экземплярами одного типа и если значения их ключевых свойств равны. В следующих примерах `flight2` значение равно `flight1` из предыдущего примера, так как они являются экземплярами одного и того же анонимного типа и имеют совпадающие значения для их ключевых свойств. Однако `flight3` не равно, `flight1` поскольку имеет другое значение для ключевого свойства, `FlightNo` . Тип экземпляра отличается `flight4` от типа, `flight1` так как он определяет различные свойства в качестве ключевых свойств.  
   
  [!code-vb[VbVbalrAnonymousTypes#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#27)]  
@@ -34,6 +36,7 @@ ms.locfileid: "84396224"
  Дополнительные сведения об условиях, при которых два экземпляра анонимных типов являются экземплярами одного и того же анонимного типа, см. в разделе [анонимные типы](../../programming-guide/language-features/objects-and-classes/anonymous-types.md).  
   
 ## <a name="hash-code-calculation"></a>Вычисление хэш-кода  
+
  Например <xref:System.Object.Equals%2A> , хэш-функция, определенная в <xref:System.Object.GetHashCode%2A> для анонимного типа, основана на ключевых свойствах типа. В следующих примерах показано взаимодействие между ключевыми свойствами и значениями хэш-кода.  
   
  Экземпляры анонимного типа, имеющие одинаковые значения для всех ключевых свойств, имеют одинаковое значение хэш-кода, даже если неключевые свойства не имеют совпадающих значений. Следующая инструкция возвращает значение `True`.  
@@ -49,11 +52,12 @@ ms.locfileid: "84396224"
  [!code-vb[VbVbalrAnonymousTypes#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#39)]  
   
 ## <a name="read-only-values"></a>Значения только для чтения  
+
  Значения ключевых свойств нельзя изменить. Например, в `flight1` предыдущих примерах `Airline` `FlightNo` поля и доступны только для чтения, но `Gate` могут быть изменены.  
   
  [!code-vb[VbVbalrAnonymousTypes#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#28)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение анонимного типа](../../programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)
 - [Практическое руководство. Выведение имен свойств и типов в объявлениях анонимных типов](../../programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)

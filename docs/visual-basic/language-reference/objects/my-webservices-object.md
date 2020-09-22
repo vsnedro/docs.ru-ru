@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - My.WebServices object
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
-ms.openlocfilehash: a52f9f5f5b044273a45da5ef9478e2212def57a5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0b63b44c2cd9d55094fb83fed6c04e4de528a25c
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84372366"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90867199"
 ---
 # <a name="mywebservices-object"></a>Объект My.WebServices
+
 Предоставляет свойства для создания и доступа к одному экземпляру каждой веб-службы XML, на которую ссылается текущий проект.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Объект `My.WebServices` предоставляет экземпляр каждой веб-службы, на которую ссылается текущий проект. Каждый экземпляр создается по запросу. Доступ к этим веб-службам можно получить через свойства объекта `My.WebServices`. Имя свойства совпадает с именем веб-службы, к которой обращается свойство. Любой класс, наследуемый от <xref:System.Web.Services.Protocols.SoapHttpClientProtocol>, является веб-службой. Сведения о добавлении веб-служб в проект см. в разделе [доступ к веб-службам приложений](../../developing-apps/programming/accessing-application-web-services.md).  
   
  `My.WebServices`Объект предоставляет только веб-службы, связанные с текущим проектом. Он не предоставляет доступ к веб-службам, объявленным в упоминаемых в них библиотеках DLL. Для доступа к веб-службе, предоставляемой библиотекой DLL, необходимо использовать полное имя веб-службы в формате *dllname*. *WebServiceName*. Дополнительные сведения см. в разделе [доступ к веб-службам приложений](../../developing-apps/programming/accessing-application-web-services.md).  
@@ -25,6 +27,7 @@ ms.locfileid: "84372366"
  Объект и его свойства недоступны для веб-приложений.  
   
 ## <a name="properties"></a>Свойства  
+
  Каждое свойство `My.WebServices` объекта предоставляет доступ к экземпляру веб-службы, на которую ссылается текущий проект. Имя свойства совпадает с именем веб-службы, к которой обращается свойство, а тип свойства совпадает с типом веб-службы.  
   
 > [!NOTE]
@@ -40,6 +43,7 @@ ms.locfileid: "84372366"
 > Как правило, `Is` `IsNot` оператор или должен считывать значение свойства для выполнения сравнения. Однако если текущее свойство хранится `Nothing` , свойство создает новый экземпляр веб-службы, а затем возвращает этот экземпляр. Однако компилятор Visual Basic обрабатывает свойства `My.WebServices` объекта особым образом и позволяет `Is` `IsNot` оператору или проверить состояние свойства без изменения его значения.  
   
 ## <a name="example"></a>Пример  
+
  В этом примере вызывается `FahrenheitToCelsius` метод `TemperatureConverter` веб-службы XML и возвращается результат.  
   
  [!code-vb[VbVbalrMyWebService#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWebService/VB/Form1.vb#1)]  
@@ -59,8 +63,8 @@ ms.locfileid: "84372366"
 |Консольное приложение|**Да**|  
 |Библиотека элементов управления Windows|**Да**|  
 |Библиотека веб-элементов управления|**Да**|  
-|Служба Windows|**Да**|  
-|Веб-сайт|нет|  
+|Службы Windows|**Да**|  
+|Веб-сайт|Нет|  
   
 ## <a name="see-also"></a>См. также раздел
 

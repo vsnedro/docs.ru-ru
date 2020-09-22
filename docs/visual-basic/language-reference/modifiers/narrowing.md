@@ -10,17 +10,19 @@ helpviewer_keywords:
 - Narrowing keyword [Visual Basic]
 - data type conversion [Visual Basic]
 ms.assetid: a207ee91-aca4-4771-b4e2-713f029bf2bb
-ms.openlocfilehash: f7724053e3732c909523e4e2d3b65bb1918c29d3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 77515357ac9dc972992df09c471695aad13985c4
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84362363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90867932"
 ---
 # <a name="narrowing-visual-basic"></a>Narrowing (Visual Basic)
+
 Указывает, что оператор преобразования ( `CType` ) преобразует класс или структуру в тип, который не может содержать некоторые из возможных значений исходного класса или структуры.  
   
 ## <a name="converting-with-the-narrowing-keyword"></a>Преобразование с помощью ключевого слова "Narrow"  
+
  Процедура преобразования должна указываться `Public Shared` в дополнение к `Narrowing` .  
   
  Сужающие преобразования не всегда выполняются успешно во время выполнения и могут привести к сбою или потери данных. Примерами `Long` являются `Integer` , `String` to `Date` и базовый тип для производного типа. Последнее преобразование является сужением, так как базовый тип может не содержать все члены производного типа и поэтому не является экземпляром производного типа.  
@@ -31,7 +33,7 @@ ms.locfileid: "84362363"
   
  [Operator Statement](../statements/operator-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Operator Statement](../statements/operator-statement.md)
 - [Widening](widening.md)

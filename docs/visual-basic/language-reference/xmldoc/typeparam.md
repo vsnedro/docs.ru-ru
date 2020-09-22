@@ -5,14 +5,15 @@ helpviewer_keywords:
 - typeparam XML tag
 - <typeparam> XML tag
 ms.assetid: 1bb5ba78-f060-478c-905c-77a2e43639af
-ms.openlocfilehash: 2ad54845645172acb5b91935f5347a828510e3aa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0a68cf0a495c2809961e8ec99effa459b0647fec
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411490"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90866388"
 ---
 # <a name="typeparam-visual-basic"></a>\<typeparam> (Visual Basic)
+
 Определяет имя и описание параметра типа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -22,6 +23,7 @@ ms.locfileid: "84411490"
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `name`  
  Имя параметра типа. Имя заключается в двойные кавычки (" ").  
   
@@ -29,15 +31,17 @@ ms.locfileid: "84411490"
  Описание параметра типа.  
   
 ## <a name="remarks"></a>Remarks  
+
  Используйте `<typeparam>` тег в комментарии для объявления универсального типа или универсального члена, чтобы описать один из параметров типа.  
   
  Чтобы обработать комментарии документации и сохранить их в файл, выполняйте сборку с параметром [-doc](../../reference/command-line-compiler/doc.md).  
   
 ## <a name="example"></a>Пример  
+
  В этом примере `<typeparam>` для описания параметра используется тег `id` .  
   
  [!code-vb[VbVbcnXmlDocComments#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#8)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [XML-теги для комментариев](index.md)
