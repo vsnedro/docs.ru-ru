@@ -3,12 +3,13 @@ title: Начало работы с хранилищем очередей Azure 
 description: Очереди хранилища обеспечивают надежный асинхронный обмен сообщениями между компонентами приложения. Обмен сообщениями в облаке позволяет масштабировать компоненты приложения независимо друг от друга.
 author: sylvanc
 ms.date: 09/20/2016
-ms.openlocfilehash: 0b360348ce6966ce49a2ac0abd839844bdbe55f2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.custom: devx-track-fsharp
+ms.openlocfilehash: 5d6074751f226f0587c4c73bfa9ff56d9aca2bc1
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548368"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91100091"
 ---
 # <a name="get-started-with-azure-queue-storage-using-f"></a>Приступая к работе с хранилищем очередей Azure с помощью F\#
 
@@ -20,7 +21,7 @@ ms.locfileid: "90548368"
 
 Общие сведения о хранилище очередей см. в разделе ["рекомендации по .NET" для хранилища очередей](/azure/storage/storage-dotnet-how-to-use-queues).
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 Для работы с этим руководством необходимо сначала [создать учетную запись хранения Azure](/azure/storage/storage-create-storage-account).
 Вам также потребуется ключ доступа к хранилищу для этой учетной записи.

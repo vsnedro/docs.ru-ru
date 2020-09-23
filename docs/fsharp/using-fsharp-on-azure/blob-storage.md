@@ -3,12 +3,13 @@ title: Начало работы с хранилищем BLOB-объектов A
 description: Храните неструктурированные данные в облаке с помощью хранилища BLOB-объектов Azure.
 author: sylvanc
 ms.date: 09/20/2016
-ms.openlocfilehash: 0dda2e04f0052823e9ea35051855d677cd19ea92
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.custom: devx-track-fsharp
+ms.openlocfilehash: d9c587cdd21a1b81205d182652b3690b976687c0
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548479"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91100156"
 ---
 # <a name="get-started-with-azure-blob-storage-using-f"></a>Приступая к работе с хранилищем BLOB-объектов Azure с помощью F\#
 
@@ -18,7 +19,7 @@ ms.locfileid: "90548479"
 
 Общие сведения о хранилище BLOB-объектов см. [в этом](/azure/storage/blobs/storage-quickstart-blobs-dotnet)разделе.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 Для работы с этим руководством необходимо сначала [создать учетную запись хранения Azure](/azure/storage/common/storage-account-create). Вам также потребуется ключ доступа к хранилищу для этой учетной записи.
 

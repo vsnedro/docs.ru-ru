@@ -5,14 +5,15 @@ helpviewer_keywords:
 - conditional compilation [Visual Basic], about conditional compilation
 - compilation [Visual Basic], conditional
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
-ms.openlocfilehash: c3eb1eb57b3d76e762ed53edb3b168ad96abec39
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e59296882edc018259816c73b6ae861b3b296783
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403269"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91098973"
 ---
 # <a name="conditional-compilation-in-visual-basic"></a>Условная компиляция в Visual Basic
+
 В *условной компиляции*определенные блоки кода в программе компилируются выборочно, а другие игнорируются.  
   
  Например, может потребоваться написать инструкции отладки, которые сравнивают скорость различных подходов к одной задаче программирования, или вы можете локализовать приложение для нескольких языков. Операторы условной компиляции предназначены для запуска во время компиляции, а не во время выполнения.  
@@ -27,6 +28,7 @@ ms.locfileid: "84403269"
 > Автозаполнение не будет работать при редактировании кода и использовании директив условной компиляции, если код не является частью текущей ветви.  
   
 ## <a name="declaring-conditional-compilation-constants"></a>Объявление констант условной компиляции  
+
  Константы условной компиляции можно задать одним из трех способов:  
   
 - В **конструкторе проектов**  
@@ -41,7 +43,7 @@ ms.locfileid: "84403269"
 |---|---|  
 |**конструктор проектов**|Открыт для всех файлов в проекте|  
 |Командная строка|Открытый для всех файлов, переданных компилятору командной строки|  
-|`#Const`оператор в коде|Закрытый для файла, в котором он объявлен|  
+|`#Const` оператор в коде|Закрытый для файла, в котором он объявлен|  
   
 |Задание констант в конструкторе проектов|  
 |---|  
@@ -62,6 +64,7 @@ ms.locfileid: "84403269"
 |[Соглашения о структуре программы и коде](program-structure-and-code-conventions.md)|Предоставляет рекомендации по упрощению чтения и сопровождения кода.|  
   
 ## <a name="reference"></a>Справочник  
+
  [Директива #Const](../../language-reference/directives/const-directive.md)  
   
  [Директивы #If...Then...#Else](../../language-reference/directives/if-then-else-directives.md)  

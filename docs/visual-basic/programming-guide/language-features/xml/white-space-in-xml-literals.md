@@ -5,17 +5,19 @@ helpviewer_keywords:
 - white space [XML in Visual Basic]
 - XML literals [Visual Basic], white space
 ms.assetid: dfe3a9ff-d69a-418e-a6b5-476f4ed84219
-ms.openlocfilehash: b3caf7ac052f3fed3fe5427da0cc96bbdd955ea6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5db8f92117e77d96eab34f28758546393e2afca0
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360479"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91099103"
 ---
 # <a name="white-space-in-xml-literals-visual-basic"></a>Пробелы в XML-литералах (Visual Basic)
+
 Компилятор Visual Basic включает только значащие символы пробела из XML-литерала при создании [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] объекта. Незначащие символы пробела не включаются.  
   
 ## <a name="significant-and-insignificant-white-space"></a>Значительные и незначащие пробелы  
+
  Символы пробелов в XML-литералах являются значимыми только в трех областях:  
   
 - Если они находятся в значении атрибута.  
@@ -32,6 +34,7 @@ ms.locfileid: "84360479"
 > Если `xml:space` атрибут отображается в литерале XML-элемента, Visual Basic компилятор включает атрибут в <xref:System.Xml.Linq.XElement> объект, но добавление этого атрибута не влияет на то, как компилятор обрабатывает пробелы.  
   
 ## <a name="examples"></a>Примеры  
+
  В следующем примере содержатся два XML-элемента: OUTER и Inner. Оба элемента содержат пробелы в текстовом содержимом. Пробелы во внешнем элементе являются незначащими, так как содержат только пробелы и XML-элементы. Пробел во внутреннем элементе важен, так как он содержит пробелы и текст.  
   
  [!code-vb[VbXMLSamples#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#29)]  
@@ -46,6 +49,6 @@ ms.locfileid: "84360479"
 </outer>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание XML в Visual Basic](creating-xml.md)

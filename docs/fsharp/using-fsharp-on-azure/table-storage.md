@@ -3,12 +3,13 @@ title: Начало работы с хранилищем таблиц Azure с �
 description: Хранение структурированных данных в облаке с помощью хранилища таблиц Azure или Azure Cosmos DB.
 author: sylvanc
 ms.date: 03/26/2018
-ms.openlocfilehash: eb25fda0bb3c658eed2f675d6ba79c689a9080a9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.custom: devx-track-fsharp
+ms.openlocfilehash: f4a22ec14de6c92414fbcf3cca435e2b5c0805f1
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548355"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91100104"
 ---
 # <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-f"></a>Приступая к работе с хранилищем таблиц Azure и Azure Cosmos DB API таблиц с помощью F\#
 
@@ -32,7 +33,7 @@ Azure Cosmos DB предоставляет API таблиц для прилож�
 
 В этом руководстве показано, как написать код F # для выполнения некоторых распространенных задач с помощью хранилища таблиц Azure или Azure Cosmos DB API таблиц, включая создание и удаление таблицы, а также вставку, обновление, удаление и выполнение запросов к данным таблицы.
 
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Обязательные условия
 
 Для работы с этим руководством необходимо сначала [создать учетную запись хранения Azure](/azure/storage/storage-create-storage-account) или [Azure Cosmos DB](https://azure.microsoft.com/try/cosmosdb/).
 

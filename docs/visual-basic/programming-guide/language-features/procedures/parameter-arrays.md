@@ -10,17 +10,19 @@ helpviewer_keywords:
 - procedures [Visual Basic], indefinite number of argument values
 - arrays [Visual Basic], parameter arrays
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
-ms.openlocfilehash: dac0575d73ffd4159e89bff344915a33b9d0e5d3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2c8c60015d834ffa3f8618dd98616350e13f0e5c
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84364283"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91100663"
 ---
 # <a name="parameter-arrays-visual-basic"></a>Массивы параметров (Visual Basic)
+
 Как правило, процедуру нельзя вызывать с дополнительными аргументами, чем указано в объявлении процедуры. Если требуется неопределенное число аргументов, можно объявить *массив параметров*, который позволяет процедуре принимать массив значений для параметра. При определении процедуры вам не нужно было узнать число элементов в массиве параметров. Размер массива определяется отдельно при каждом вызове процедуры.  
   
 ## <a name="declaring-a-paramarray"></a>Объявление ParamArray  
+
  Используйте ключевое слово [ParamArray](../../../language-reference/modifiers/paramarray.md) для обозначения массива параметров в списке параметров. Применяются следующие правила.  
   
 - Процедура может определять только один массив параметров и должен быть последним параметром в определении процедуры.  
@@ -32,6 +34,7 @@ ms.locfileid: "84364283"
 - Должны быть необходимы все параметры, предшествующие массиву параметров. Массив параметров должен быть единственным необязательным параметром.  
   
 ## <a name="calling-a-paramarray"></a>Вызов метода ParamArray  
+
  При вызове процедуры, определяющей массив параметров, можно указать аргумент одним из следующих способов:  
   
 - Нет, то есть можно опустить аргумент [ParamArray](../../../language-reference/modifiers/paramarray.md) . В этом случае в процедуру передается пустой массив. При явном передаче ключевого слова [Nothing](../../../language-reference/nothing.md) в процедуру передается пустой массив, который может привести к NullReferenceException, если вызываемая процедура не проверяет это условие.
@@ -46,6 +49,7 @@ ms.locfileid: "84364283"
 > Всякий раз при работе с массивом, который может быть неограниченным большим, существует риск перегрузки внутренней емкости приложения. Если вы принимаете массив параметров, следует проверить размер массива, которому был передан вызывающий код. Выполните соответствующие действия, если оно слишком велико для вашего приложения. Дополнительные сведения см. в статье [Arrays (C++/CLI and C++/CX)](../arrays/index.md) (Массивы (C++/CLI и C++/CX)).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере определяется и вызывается функция `calcSum` . `ParamArray`Модификатор для параметра `args` позволяет функции принимать переменное число аргументов.  
   
  [!code-vb[VbVbalrStatements#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  
@@ -56,7 +60,7 @@ ms.locfileid: "84364283"
   
  [!code-vb[VbVbcnProcedures#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#49)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Information.UBound%2A>
 - [Процедуры](./index.md)
