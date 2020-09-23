@@ -9,19 +9,21 @@ helpviewer_keywords:
 - constants [Visual Basic], user-defined
 - circular references between constants [Visual Basic]
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
-ms.openlocfilehash: 14f3de39eb8d8e6820e2b40792a8e8e57217e410
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 351bdb6963e278341c13e53ef19aea0876010aa9
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414380"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91095646"
 ---
 # <a name="user-defined-constants-visual-basic"></a>Константы, определенные пользователем (Visual Basic)
+
 Константа — это понятное имя, которое принимает позицию числа или строки, которые не меняются. Как можно понять из их названия, константы хранят значения, которые остаются постоянными в ходе выполнения приложения. Вы можете использовать константы, определенные элементами управления или компонентами, с которыми вы работаете, или создать собственный. Константы, созданные самостоятельно, описаны как *определяемые пользователем*.  
   
  Вы объявляете константу с `Const` инструкцией, используя те же рекомендации, что и при создании имени переменной. Если `Option Strict` имеет значение `On` , необходимо явно объявить константный тип.  
   
 ## <a name="const-statement-usage"></a>Использование инструкции const  
+
  `Const`Оператор может представлять математическое или значение даты и времени:  
   
  [!code-vb[VbEnumsTask#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#10)]  
@@ -35,6 +37,7 @@ ms.locfileid: "84414380"
  [!code-vb[VbEnumsTask#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#15)]  
   
 ## <a name="scope-of-user-defined-constants"></a>Область определяемых пользователем констант  
+
  `Const`Область действия инструкции аналогична области видимости переменной, объявленной в том же расположении. Указать область можно одним из следующих способов.  
   
 - Чтобы создать константу, которая существует только в пределах процедуры, объявите ее внутри этой процедуры.  
@@ -48,6 +51,7 @@ ms.locfileid: "84414380"
  Дополнительные сведения см. [в разделе инструкции. Объявление константы](how-to-declare-a-constant.md).  
   
 ### <a name="avoiding-circular-references"></a>Предотвращение циклических ссылок  
+
  Поскольку константы могут быть определены с точки зрения других констант, можно случайно создать *цикл*или циклическую ссылку между двумя или более константами. Цикл происходит при наличии двух или более открытых констант, каждая из которых определена в терминах другого, как показано в следующем примере:  
   
  [!code-vb[VbEnumsTask#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#16)]  
@@ -55,7 +59,7 @@ ms.locfileid: "84414380"
   
  При возникновении цикла Visual Basic выдает ошибку компилятора.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Const](../../../language-reference/statements/const-statement.md)
 - [Типы данных констант и литералов](constant-and-literal-data-types.md)
