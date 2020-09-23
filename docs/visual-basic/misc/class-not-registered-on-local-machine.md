@@ -4,20 +4,21 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID463
 ms.assetid: 40c4c622-41d8-4005-9303-c30abe0707bb
-ms.openlocfilehash: 03f10541c17bc1de3b2d3a70d43e7c673263adfa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4fc71c5385d64711aa58c18f03b4f0168d6310c1
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84377214"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91060891"
 ---
-# <a name="class-not-registered-on-local-machine"></a><span data-ttu-id="42a78-102">Класс не зарегистрирован на локальном компьютере</span><span class="sxs-lookup"><span data-stu-id="42a78-102">Class not registered on local machine</span></span>
-<span data-ttu-id="42a78-103">Эта ошибка обычно возникает из-за поврежденного файла.</span><span class="sxs-lookup"><span data-stu-id="42a78-103">This error is usually encountered as a result of a corrupted file.</span></span> <span data-ttu-id="42a78-104">Может потребоваться переустановить Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="42a78-104">You may need to reinstall Visual Studio.</span></span>  
-  
-## <a name="to-correct-this-error"></a><span data-ttu-id="42a78-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="42a78-105">To correct this error</span></span>  
-  
-- <span data-ttu-id="42a78-106">Переустановите Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="42a78-106">Reinstall Visual Studio.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="42a78-107">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="42a78-107">See also</span></span>
+# <a name="class-not-registered-on-local-machine"></a><span data-ttu-id="46fcc-102">Класс не зарегистрирован на локальном компьютере</span><span class="sxs-lookup"><span data-stu-id="46fcc-102">Class not registered on local machine</span></span>
 
-- [<span data-ttu-id="42a78-108">Типы ошибок</span><span class="sxs-lookup"><span data-stu-id="42a78-108">Error Types</span></span>](../programming-guide/language-features/error-types.md)
+<span data-ttu-id="46fcc-103">Эта ошибка обычно возникает из-за поврежденного файла.</span><span class="sxs-lookup"><span data-stu-id="46fcc-103">This error is usually encountered as a result of a corrupted file.</span></span> <span data-ttu-id="46fcc-104">Может потребоваться переустановить Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="46fcc-104">You may need to reinstall Visual Studio.</span></span>  
+  
+## <a name="to-correct-this-error"></a><span data-ttu-id="46fcc-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="46fcc-105">To correct this error</span></span>  
+  
+- <span data-ttu-id="46fcc-106">Переустановите Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="46fcc-106">Reinstall Visual Studio.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="46fcc-107">См. также</span><span class="sxs-lookup"><span data-stu-id="46fcc-107">See also</span></span>
+
+- [<span data-ttu-id="46fcc-108">Типы ошибок</span><span class="sxs-lookup"><span data-stu-id="46fcc-108">Error Types</span></span>](../programming-guide/language-features/error-types.md)
