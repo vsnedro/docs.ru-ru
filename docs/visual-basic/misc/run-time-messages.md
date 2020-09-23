@@ -5,17 +5,18 @@ helpviewer_keywords:
 - errors [Visual Basic], run-time
 - run-time errors [Visual Basic], Visual Basic
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
-ms.openlocfilehash: 3b8ca626df76d881e26dae49d48217fa8e81951b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 88c9d341064f5c8d85d4c27b7d9bc79114642610
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357937"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91060708"
 ---
 # <a name="visual-basic-run-time-messages"></a>Сообщения времени выполнения в Visual Basic
+
 В этом разделе содержатся Visual Basic сообщения об ошибках, возникающие во время выполнения.  
   
- [\<address>не является допустимым адресом удаленного файла](address-is-not-a-valid-remote-file-address.md)  
+ [\<address> не является допустимым адресом удаленного файла](address-is-not-a-valid-remote-file-address.md)  
   
  [Разделитель не может принимать значение Nothing или быть пустой строкой](a-delimiter-cannot-be-nothing-or-an-empty-string.md)  
   
@@ -269,7 +270,7 @@ ms.locfileid: "84357937"
   
  [Внутренняя ошибка (Visual Basic)](internal-error.md)  
   
- [Произошла внутренняя ошибка в\<location>](../language-reference/error-messages/internal-error-happened-at-location.md)  
+ [Произошла внутренняя ошибка в \<location>](../language-reference/error-messages/internal-error-happened-at-location.md)  
   
  [Внутренняя ошибка в выполняемом модуле Microsoft Visual Basic.](internal-error-in-the-microsoft-visual-basic-runtime.md)  
   
@@ -553,6 +554,6 @@ ms.locfileid: "84357937"
   
  [Необходимо указать путь, который находится в текущей папке или в одной из ее вложенных папок](you-must-specify-path-that-is-under-the-current-folder-or-one-of-sub-folders.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [сообщения об ошибках](../language-reference/error-messages/index.md)
+- [Сообщения об ошибках](../language-reference/error-messages/index.md)
