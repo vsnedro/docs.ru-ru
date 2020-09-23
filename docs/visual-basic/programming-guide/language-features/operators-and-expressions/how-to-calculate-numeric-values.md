@@ -11,14 +11,15 @@ helpviewer_keywords:
 - Visual Basic code, expressions
 - numeric expressions
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
-ms.openlocfilehash: 94b02693f308dcfcfa6983f2750a26d9d419f7be
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 452a8392b46f0c25b6ad2a8a30c51071f2ae1d93
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403463"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071720"
 ---
 # <a name="how-to-calculate-numeric-values-visual-basic"></a>Практическое руководство. Вычисление числовых значений (Visual Basic)
+
 Числовые значения можно вычислить с помощью числовых выражений. *Числовое выражение* представляет собой выражение, которое содержит литералы, константы и переменные, представляющие числовые значения, и операторы, действующие на эти значения.  
   
 ## <a name="calculating-numeric-values"></a>Вычисление числовых значений  
@@ -50,6 +51,7 @@ ms.locfileid: "84403463"
      Дополнительные сведения см. в разделе [Инструкции](../../../language-reference/statements/index.md).  
   
 ## <a name="multiple-operators"></a>Несколько операторов  
+
  Если числовое выражение содержит более одного оператора, порядок их вычисления определяется правилами приоритета операторов. Чтобы переопределить правила приоритета операторов, заключите выражения в круглые скобки, как в приведенном выше примере. выражения, заключенные в кавычки, оцениваются первыми.  
   
 #### <a name="to-override-normal-operator-precedence"></a>Переопределение приоритета обычного оператора  
@@ -62,7 +64,7 @@ ms.locfileid: "84403463"
   
      Дополнительные сведения см. [в разделе приоритет операторов в Visual Basic](../../../language-reference/operators/operator-precedence.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Операторы и выражения](index.md)
 - [Сравнения значений](value-comparisons.md)

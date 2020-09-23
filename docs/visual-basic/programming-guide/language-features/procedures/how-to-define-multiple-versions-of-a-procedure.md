@@ -8,14 +8,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], multiple versions
 - procedure overloading [Visual Basic], multiple versions
 ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
-ms.openlocfilehash: 870a18dbf3a7e28b7d7b612e853beeec6908cf6f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2661603ba33dd0bc28ac1a192794a4534225b641
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387937"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071642"
 ---
 # <a name="how-to-define-multiple-versions-of-a-procedure-visual-basic"></a>Практическое руководство. Определение различных версий процедуры (Visual Basic)
+
 Вы можете определить процедуру в нескольких версиях, *перегружая* ее, используя одно и то же имя, но различные списки параметров для каждой версии. Целью перегрузки является определение нескольких тесно связанных версий процедуры без необходимости отличать их по имени.  
   
  Дополнительные сведения см. в разделе [Procedure Overloading](./procedure-overloading.md).  
@@ -31,6 +32,7 @@ ms.locfileid: "84387937"
 4. При необходимости Завершите каждую версию процедуры `End Sub` `End Function` оператором или.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере определяется `Sub` процедура для публикации транзакции по балансу клиента. Он использует `Overloads` ключевое слово для определения двух версий процедуры, одна из которых принимает клиента по имени, а другая — по номеру счета.  
   
  [!code-vb[VbVbcnProcedures#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#72)]  
@@ -40,9 +42,10 @@ ms.locfileid: "84387937"
  Сведения о том, как вызывать эти версии `post` процедуры, см. [в разделе как вызвать перегруженную процедуру](./how-to-call-an-overloaded-procedure.md).  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
+
  Убедитесь, что Каждая перегруженная версия имеет одно и то же имя процедуры, но другой список параметров.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры](./index.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
@@ -50,4 +53,4 @@ ms.locfileid: "84387937"
 - [Практическое руководство. Перегрузка процедуры, которая принимает необязательные параметры](./how-to-overload-a-procedure-that-takes-optional-parameters.md)
 - [Практическое руководство. Перегрузка процедуры, принимающей неопределенное число параметров](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
 - [Вопросы, связанные с перегрузкой процедур](./considerations-in-overloading-procedures.md)
-- [Разрешение перегрузки](./overload-resolution.md)
+- [Overload Resolution](./overload-resolution.md)

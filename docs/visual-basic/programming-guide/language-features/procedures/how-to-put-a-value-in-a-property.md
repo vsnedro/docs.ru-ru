@@ -8,14 +8,15 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic], values
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
-ms.openlocfilehash: c0fb3e137010390097a68aea161efcff93839d94
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7d85066d4678ee2a53b8339bee2db20374482579
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414341"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071408"
 ---
 # <a name="how-to-put-a-value-in-a-property-visual-basic"></a>Практическое руководство. Запись значения в свойство (Visual Basic)
+
 Значение в свойстве сохраняется путем размещения имени свойства в левой части оператора присваивания.  
   
  `Set`Процедура свойства сохраняет значение, но явно не вызывает его по имени. Свойство используется так же, как и переменная. Visual Basic выполняет вызовы процедур свойств.  
@@ -34,7 +35,7 @@ ms.locfileid: "84414341"
   
 4. Значение, созданное в правой части оператора присваивания, хранится в свойстве.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>
 - [Процедуры свойств](./property-procedures.md)

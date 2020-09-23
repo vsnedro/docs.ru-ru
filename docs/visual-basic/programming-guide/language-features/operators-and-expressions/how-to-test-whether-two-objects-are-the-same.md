@@ -9,14 +9,15 @@ helpviewer_keywords:
 - objects [Visual Basic], variables referring to same
 - Visual Basic code, operators
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
-ms.openlocfilehash: b215225dbc2d8c0d2bdfe2206e5d4a4f1faa6d0c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d29d1b0026b3f62d47859cd5b4b7a601532e27b8
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403425"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071694"
 ---
 # <a name="how-to-test-whether-two-objects-are-the-same-visual-basic"></a>Практическое руководство. Проверка совпадения двух объектов (Visual Basic)
+
 При наличии двух переменных, ссылающихся на объекты, можно использовать либо `Is` `IsNot` оператор OR, либо и то, и другое, чтобы определить, ссылаются ли они на один и тот же экземпляр.  
   
 ### <a name="to-test-whether-two-objects-are-the-same"></a>Проверка того, совпадают ли два объекта  
@@ -29,6 +30,6 @@ ms.locfileid: "84403425"
   
  Независимо от того, используется ли `Is` `IsNot` для вас персональное удобство. Один из них может быть проще читать, чем другой в данном выражении.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Comparison Operators in Visual Basic](comparison-operators.md)

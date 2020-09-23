@@ -10,14 +10,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], overloading
 - procedures [Visual Basic], multiple versions
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
-ms.openlocfilehash: 9ae6818b1e03ccd00ed554e98690e02ffa45de99
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 78ca6b2b95dfd5a7f208e5251f08dfccc5514946
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387846"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071525"
 ---
 # <a name="how-to-overload-a-procedure-that-takes-optional-parameters-visual-basic"></a>Практическое руководство. Перегрузка процедуры, которая принимает один необязательный параметр (Visual Basic)
+
 Если процедура имеет один или несколько [необязательных](../../../language-reference/modifiers/optional.md) параметров, нельзя определить перегруженную версию, соответствующую любой из ее неявных перегрузок. Дополнительные сведения см. в разделе "Неявные перегрузки для необязательных параметров" раздела [рекомендации по перегрузке процедур](./considerations-in-overloading-procedures.md).  
   
 ## <a name="one-optional-parameter"></a>Один необязательный параметр  
@@ -45,6 +46,7 @@ ms.locfileid: "84387846"
      [!code-vb[VbVbcnProcedures#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#61)]  
   
 ## <a name="multiple-optional-parameters"></a>Несколько необязательных параметров  
+
  Для процедуры с более чем одним необязательным параметром обычно требуется более двух перегруженных версий. Например, если имеется два необязательных параметра, и вызывающий код может указать или опустить каждый из них независимо друг от друга, необходимы четыре перегруженных версии, по одной для каждого возможного сочетания указанных аргументов.  
   
  По мере увеличения числа необязательных параметров увеличивается сложность перегрузки. Если некоторые сочетания передаваемых аргументов неприемлемы, для N необязательных параметров требуется 2 ^ N перегруженных версий. В зависимости от характера процедуры, возможно, вы обнаружите, что четко логика позволяет определить все перегруженные версии.  
@@ -61,7 +63,7 @@ ms.locfileid: "84387846"
   
 5. При необходимости Завершите каждую `End Sub` процедуру `End Function` оператором или.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры](./index.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
@@ -72,4 +74,4 @@ ms.locfileid: "84387846"
 - [Практическое руководство. Определение различных версий процедуры](./how-to-define-multiple-versions-of-a-procedure.md)
 - [Практическое руководство. Вызов перегруженной процедуры](./how-to-call-an-overloaded-procedure.md)
 - [Практическое руководство. Перегрузка процедуры, принимающей неопределенное число параметров](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
-- [Разрешение перегрузки](./overload-resolution.md)
+- [Overload Resolution](./overload-resolution.md)

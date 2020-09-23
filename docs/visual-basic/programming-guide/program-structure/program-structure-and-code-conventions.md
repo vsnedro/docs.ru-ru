@@ -13,14 +13,15 @@ helpviewer_keywords:
 - Visual Basic code
 - programming [Visual Basic], Visual Basic coding conventions
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
-ms.openlocfilehash: c8d851afc33e7e898ab16abc941d8680f74145e3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ee61c676f3ff554267f6659453ec55e45df69aee
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398309"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072123"
 ---
 # <a name="program-structure-and-code-conventions-visual-basic"></a>Соглашения о структуре программы и коде (Visual Basic)
+
 В этом разделе представлен типичная структура программы Visual Basic, предусмотрена простая Visual Basicная программа, "Hello, World" и обсуждаются Visual Basic соглашения о коде. Соглашения о коде — это рекомендации, которые касаются не логики программы, а ее физической структуры и внешнего вида. После этого код упрощает чтение, понимание и обслуживание. Соглашения о коде могут включать, среди прочего:  
   
 - Стандартизированные форматы для добавления меток и комментирования кода.  
@@ -31,7 +32,8 @@ ms.locfileid: "84398309"
   
  В следующих разделах представлен набор руководств по программированию для Visual Basic программ, а также примеры хорошего использования.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Структура программы Visual Basic](structure-of-a-visual-basic-program.md)  
  Содержит общие сведения об элементах, составляющих программу Visual Basic.  
   
@@ -78,6 +80,7 @@ ms.locfileid: "84398309"
  Обсуждается удаление известных ограничений на написание кода в Visual Basic.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Условные обозначения и соглашения о коде](../../language-reference/typographic-and-code-conventions.md)  
  Предоставляет стандартные соглашения о кодировании для Visual Basic.  
   

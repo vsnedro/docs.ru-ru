@@ -10,14 +10,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], overloading
 - procedures [Visual Basic], multiple versions
 ms.assetid: c7042de2-2422-4039-94e8-ac298896af69
-ms.openlocfilehash: ddff8c8cd82593b7d89fb0847e56123c287e364b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 10cd7d11b0efe9fa5eb3ae24269a4cdbe33bc08a
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387885"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071551"
 ---
 # <a name="how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters-visual-basic"></a>Практическое руководство. Перегрузка процедуры, принимающей неопределенное число параметров (Visual Basic)
+
 Если процедура имеет параметр [ParamArray](../../../language-reference/modifiers/paramarray.md) , нельзя определить перегруженную версию, принимающую одномерный массив для массива параметров. Дополнительные сведения см. в разделе "Неявные перегрузки для параметра ParamArray" раздела [рекомендации по перегрузке процедур](./considerations-in-overloading-procedures.md).  
   
 ### <a name="to-overload-a-procedure-that-takes-a-variable-number-of-parameters"></a>Перегрузка процедуры, принимающей переменное число параметров  
@@ -35,6 +36,7 @@ ms.locfileid: "84387885"
 6. При необходимости Завершите каждую `End Sub` процедуру `End Function` оператором или.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показана процедура, определенная с параметром [ParamArray](../../../language-reference/modifiers/paramarray.md) , а затем эквивалентный набор перегруженных процедур.  
   
  [!code-vb[VbVbcnProcedures#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#69)]  
@@ -48,12 +50,14 @@ ms.locfileid: "84387885"
  Код в перегруженных версиях не должен проверять, предоставлен ли вызывающему коду одно или несколько значений для `ParamArray` параметра, или, если да, то сколько. Visual Basic передает управление версии, соответствующей списку аргументов вызова.  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
+
  Так как процедура с `ParamArray` параметром эквивалентна набору перегруженных версий, нельзя перегружать такую процедуру со списком параметров, соответствующим любому из этих неявных перегрузок. Дополнительные сведения см. [в разделе рекомендации по перегрузке процедур](./considerations-in-overloading-procedures.md).  
   
 ## <a name="net-framework-security"></a>Безопасность .NET Framework  
+
  Всякий раз при работе с массивом, который может быть неограниченным большим, существует риск перегрузки внутренней емкости приложения. Если вы принимаете массив параметров, следует проверить длину массива, которому был передан вызывающий код, и предпринять соответствующие шаги, если оно слишком велико для вашего приложения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры](./index.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
@@ -64,4 +68,4 @@ ms.locfileid: "84387885"
 - [Практическое руководство. Определение различных версий процедуры](./how-to-define-multiple-versions-of-a-procedure.md)
 - [Практическое руководство. Вызов перегруженной процедуры](./how-to-call-an-overloaded-procedure.md)
 - [Практическое руководство. Перегрузка процедуры, которая принимает необязательные параметры](./how-to-overload-a-procedure-that-takes-optional-parameters.md)
-- [Разрешение перегрузки](./overload-resolution.md)
+- [Overload Resolution](./overload-resolution.md)

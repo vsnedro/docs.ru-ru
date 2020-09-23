@@ -11,14 +11,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], calling
 - argument passing [Visual Basic], procedures
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
-ms.openlocfilehash: 903e05facccd1f2afdf4bb51b200531feb64aa79
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 816d6388a0dbb7ae346074d258ff651c793c5e0e
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387781"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071512"
 ---
 # <a name="how-to-pass-arguments-to-a-procedure-visual-basic"></a>Практическое руководство. Передача аргументов в процедуру (Visual Basic)
+
 При вызове процедуры необходимо следовать имени процедуры со списком аргументов в круглых скобках. Укажите аргумент, соответствующий каждому обязательному параметру, определяемому процедурой, и при необходимости можно указать аргументы для `Optional` параметров. Если `Optional` в вызове не указан параметр, необходимо включить запятую, чтобы пометить ее место в списке аргументов, если вы предоставляете последующие аргументы.  
   
  Если предполагается передать аргумент типа данных, отличный от того, который имеет соответствующий параметр, например, `Byte` `String` можно установить параметр проверки типов ([оператор Option строго](../../../language-reference/statements/option-strict-statement.md)) в значение `Off` . Если `Option Strict` имеет значение `On` , необходимо использовать расширяющие преобразования или ключевые слова явного преобразования. Дополнительные сведения см. в разделе [расширяющие и сужающие преобразования](../data-types/widening-and-narrowing-conversions.md) и [функции преобразования типов](../../../language-reference/functions/type-conversion-functions.md).  
@@ -45,7 +46,7 @@ ms.locfileid: "84387781"
   
      Вторая запятая в списке аргументов отмечает место пропущенного второго аргумента, а последняя строка передается необязательному третьему параметру `MsgBox` , который является текстом, отображаемым в заголовке окна.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Подпрограммы](./sub-procedures.md)
 - [Процедуры функций](./function-procedures.md)

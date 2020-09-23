@@ -5,14 +5,15 @@ helpviewer_keywords:
 - lambda expressions [Visual Basic]
 - expressions [Visual Basic], lambda
 ms.assetid: 3279bd5c-80f7-410a-a7ba-f7085ed36aa5
-ms.openlocfilehash: 7affc84fa501ba98bdfa93835f0b0e381580b9bd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cc2de38f7375848d104edff6f419656d9caa9cb2
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388391"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071928"
 ---
 # <a name="how-to-create-a-lambda-expression-visual-basic"></a>Практическое руководство. Создание лямбда-выражения (Visual Basic)
+
 *Лямбда-выражение* — это функция или подпрограммы, у которой нет имени. Лямбда-выражение может использоваться везде, где допустим тип делегата.  
   
 ### <a name="to-create-a-single-line-lambda-expression-function"></a>Создание однострочной функции лямбда-выражения  
@@ -96,6 +97,7 @@ ms.locfileid: "84388391"
      [!code-vb[VbVbalrLambdas#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#22)]  
   
 ## <a name="example"></a>Пример  
+
  Обычно лямбда-выражения используются для определения функции, которую можно передать в качестве аргумента для параметра, тип которого имеет значение `Delegate` . В следующем примере <xref:System.Diagnostics.Process.GetProcesses%2A> метод возвращает массив процессов, запущенных на локальном компьютере. Для <xref:System.Linq.Enumerable.Where%2A> метода из <xref:System.Linq.Enumerable> класса требуется делегат в `Boolean` качестве аргумента. Лямбда-выражение в примере используется для этой цели. Он возвращает `True` для каждого процесса, который имеет только один поток, и выбранные в `filteredList` .  
   
  [!code-vb[VbVbalrLambdas#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class4.vb#10)]  
@@ -104,7 +106,7 @@ ms.locfileid: "84388391"
   
  [!code-vb[VbVbalrLambdas#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class5.vb#11)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq.Enumerable>
 - [Лямбда-выражения](./lambda-expressions.md)

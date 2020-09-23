@@ -11,14 +11,15 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], how-to topics
 - query samples [Visual Basic]
 ms.assetid: 07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e
-ms.openlocfilehash: c1bc6ab863f9de118d59e102d3d5d251d326f497
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 94c2907f05aa9b5b2bc8659cef6f523187f1ef6b
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404943"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071798"
 ---
 # <a name="how-to-sort-query-results-by-using-linq-visual-basic"></a>Практическое руководство. Сортировка результатов запроса с помощью LINQ (Visual Basic)
+
 LINQ позволяет легко получить доступ к сведениям о базе данных и выполнить запросы.  
   
  В следующем примере показано, как создать новое приложение, которое выполняет запросы к базе данных SQL Server и сортирует результаты по нескольким полям с помощью `Order By` предложения. Порядок сортировки для каждого поля может быть упорядочен по возрастанию или по убыванию. Дополнительные сведения см. в разделе [предложение ORDER BY](../../../language-reference/queries/order-by-clause.md).  
@@ -37,7 +38,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ### <a name="to-add-a-project-that-contains-a-linq-to-sql-file"></a>Добавление проекта, содержащего файл LINQ to SQL  
   
-1. В Visual Studio в меню **файл** наведите указатель мыши на пункт **создать** и выберите **проект**. Выберите Visual Basic **Windows Forms приложение** в качестве типа проекта.  
+1. В меню **Файл** окна Visual Studio наведите указатель мыши на пункт **Создать** и щелкните **Проект**. Выберите Visual Basic **Windows Forms приложение** в качестве типа проекта.  
   
 2. В меню **Проект** выберите **Добавить новый элемент**. Выберите шаблон элемента **LINQ to SQL классы** .  
   
@@ -73,9 +74,9 @@ LINQ позволяет легко получить доступ к сведен
   
 4. Нажмите клавишу F5, чтобы запустить проект и просмотреть результаты.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ](index.md)
 - [Запросы](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
-- [Методы DataContext (реляционный конструктор R)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Методы DataContext (реляционный конструктор объектов)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

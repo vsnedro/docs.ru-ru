@@ -8,14 +8,15 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic], values
 ms.assetid: 3954423e-6ab7-4a4c-b55c-a8d27be47891
-ms.openlocfilehash: 2c92cd4a869acbb7c8c52fbf4117112967386498
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 983e2fd22badf4296004404d885df0a07ab2dc74
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387898"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071564"
 ---
 # <a name="how-to-get-a-value-from-a-property-visual-basic"></a>Практическое руководство. Получение значения из свойства (Visual Basic)
+
 Значение свойства извлекается путем включения имени свойства в выражение.  
   
  `Get`Процедура свойства получает значение, но не вызывает его явно по имени. Свойство используется так же, как и переменная. Visual Basic выполняет вызовы процедур свойств.  
@@ -38,7 +39,7 @@ ms.locfileid: "84387898"
   
  Значение свойства участвует в выражении точно так же, как переменная или константа, либо хранится в переменной или свойстве в левой части оператора присваивания.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры](./index.md)
 - [Процедуры свойств](./property-procedures.md)
