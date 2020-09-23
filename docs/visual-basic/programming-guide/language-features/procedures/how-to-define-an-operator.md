@@ -13,14 +13,15 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
-ms.openlocfilehash: 49b9c8d1a6db56a56b50c16b4a6bb5b928df6c7d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5acbd0439ddbb956b80d56e23d11cd5e152f37ff
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388041"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91087405"
 ---
 # <a name="how-to-define-an-operator-visual-basic"></a>Практическое руководство. Определение оператора (Visual Basic)
+
 Если вы определили класс или структуру, то можете определить поведение стандартного оператора (такого как `*` , `<>` или `And` ), если один или оба операнда имеют тип класса или структуры.  
   
  Определите стандартный оператор в качестве процедуры оператора внутри класса или структуры. Все процедуры оператора должны иметь `Public` `Shared` .  
@@ -28,6 +29,7 @@ ms.locfileid: "84388041"
  Определение оператора для класса или структуры также называется *перегрузкой* оператора.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере определяется `+` оператор для структуры с именем `height` . Структура использует высоту, измеряемую в футах и дюймах. Один *дюйм* — 2,54 сантиметра, а *одна —* 12 дюймов. Чтобы обеспечить нормализованные значения (дюймы < 12,0), конструктор выполняет арифметический расчет по *модулю* 12. `+`Оператор использует конструктор для создания нормализованных значений.  
   
  [!code-vb[VbVbcnProcedures#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#25)]  
@@ -36,7 +38,7 @@ ms.locfileid: "84388041"
   
  [!code-vb[VbVbcnProcedures#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#26)]  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры операторов](./operator-procedures.md)
 - [Практическое руководство. Определение оператора преобразования](./how-to-define-a-conversion-operator.md)

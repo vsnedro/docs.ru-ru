@@ -10,14 +10,15 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - default properties
 ms.assetid: 68b4026e-09ef-4613-808e-f6287494ff63
-ms.openlocfilehash: 4de5d94a94e764d1fc543ffae41b00a9bb729c94
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 21aa6e6a9bba23d767b9d1fac610eaac3265550d
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388158"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91087457"
 ---
 # <a name="how-to-declare-and-call-a-default-property-in-visual-basic"></a>Практическое руководство. Объявление и вызов свойства по умолчанию в Visual Basic
+
 *Свойство по умолчанию* — это свойство класса или структуры, к которому код может получить доступ без указания этого свойства. Если вызывающий код именует класс или структуру, но не свойство, и контекст разрешает доступ к свойству, Visual Basic разрешает доступ к свойству по умолчанию этого класса или структуры, если он существует.  
   
  Класс или структура может иметь не более одного свойства по умолчанию. Однако можно перегрузить свойство по умолчанию и иметь более одной версии.  
@@ -61,11 +62,13 @@ ms.locfileid: "84388158"
      [!code-vb[VbVbcnProcedures#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#19)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере объявляется свойство по умолчанию для класса.  
   
  [!code-vb[VbVbcnProcedures#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#12)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как вызвать свойство по умолчанию `myProperty` для класса `class1` . Три оператора присваивания хранят значения в `myProperty` , а <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> вызов считывает значения.  
   
  [!code-vb[VbVbcnProcedures#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#13)]  
@@ -73,6 +76,7 @@ ms.locfileid: "84388158"
  Наиболее распространенным применением свойства по умолчанию является <xref:Microsoft.VisualBasic.Collection.Item%2A> свойство в различных классах коллекций.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
+
  Свойства по умолчанию могут привести к небольшому сокращению количества символов в исходном коде, но они могут усложнить чтение кода. Если вызывающий код не знаком с классом или структурой, то при создании ссылки на имя класса или структуры он не может определить, обращается ли эта ссылка к самому классу или структуре, или к свойству по умолчанию. Это может привести к ошибкам компилятора или незначительным логическим ошибкам времени выполнения.  
   
  Можно немного уменьшить вероятность ошибок свойств по умолчанию, всегда используя [оператор Option строго](../../../language-reference/statements/option-strict-statement.md) , чтобы задать для проверки типа компилятора значение `On` .  
@@ -81,7 +85,7 @@ ms.locfileid: "84388158"
   
  Из-за этих недостатков рекомендуется не определять свойства по умолчанию. Для удобочитаемости кода следует также рассмотреть возможность явной ссылки на все свойства, даже свойства по умолчанию.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры свойств](./property-procedures.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)
