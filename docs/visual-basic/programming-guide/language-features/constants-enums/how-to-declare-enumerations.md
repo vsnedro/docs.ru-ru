@@ -6,17 +6,18 @@ helpviewer_keywords:
 - enumerations [Visual Basic], declaring
 - declaring enumerations [Visual Basic]
 ms.assetid: db4ca1c3-f429-4c81-ae81-29e0157b29fd
-ms.openlocfilehash: c8f228c205c93adf7f2f555dc840a7daac61950b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 752b425ba32efe41a1ab1aa75de20039d36f5e50
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414457"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058902"
 ---
 # <a name="how-to-declare-enumerations-visual-basic"></a>Практическое руководство. Объявление перечисления (Visual Basic)
+
 Перечисление создается с помощью `Enum` инструкции в разделе Declarations класса или модуля. Нельзя объявить перечисление в методе. Чтобы указать соответствующий уровень доступа, используйте,, `Private` `Protected` `Friend` или `Public` .  
   
- `Enum`Тип имеет имя, базовый тип и набор полей, каждый из которых представляет константу. Имя должно быть допустимым квалификатором Visual Basic .NET. Базовый тип должен быть одним из целочисленных типов — `Byte` , `Short` `Long` или `Integer` . `Integer` используется по умолчанию. Перечисления всегда являются строго типизированными и не взаимозаменяемы с целочисленными типами чисел.  
+ `Enum`Тип имеет имя, базовый тип и набор полей, каждый из которых представляет константу. Имя должно быть допустимым квалификатором Visual Basic .NET. Базовый тип должен быть одним из целочисленных типов — `Byte` , `Short` `Long` или `Integer` . Значение по умолчанию — `Integer`. Перечисления всегда являются строго типизированными и не взаимозаменяемы с целочисленными типами чисел.  
   
  Перечисления не могут иметь значения с плавающей запятой. Если перечислению присвоено значение с плавающей запятой `Option Strict On` , то это приведет к ошибке компилятора. Если `Option Strict` равно `Off` , значение автоматически преобразуется в `Enum` тип.  
   
@@ -42,7 +43,7 @@ ms.locfileid: "84414457"
   
      [!code-vb[VbEnumsTask#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#6)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления и уточнение имен](enumerations-and-name-qualification.md)
 - [Практическое руководство. Ссылка на элемент перечисления](how-to-refer-to-an-enumeration-member.md)

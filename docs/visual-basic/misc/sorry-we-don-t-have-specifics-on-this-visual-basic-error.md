@@ -3044,14 +3044,15 @@ f1_keywords:
 - bc30233
 - bc30829
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
-ms.openlocfilehash: 12af447d053e84347ddc3a2c1ecad1cde4ff3428
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d96f2512e2fae038853baedfb78fcf2feb84542b
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357808"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91059643"
 ---
 # <a name="sorry-we-dont-have-specifics-on-this-visual-basic-error"></a>Подробные сведения об этой ошибке Visual Basic отсутствуют.
+
 Подробные сведения об этой ошибке отсутствуют. Можно выполнить поиск по номеру ошибки и тексту сообщения об ошибке в Интернете. Также можно обратиться с вопросом к другим разработчикам на следующих форумах:  
   
  [Язык Visual Basic](https://social.msdn.microsoft.com/Forums/home?forum=vblanguage)  
@@ -3070,9 +3071,9 @@ ms.locfileid: "84357808"
  Содержит форум для вопросов и проблем, связанных с Visual Basic.  
   
  См. также:  
- [Дополнительные ресурсы для Visual Basic программистов](../getting-started/additional-resources.md)  
+ [Дополнительные ресурсы для программистов, использующих Visual Basic](../getting-started/additional-resources.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на Visual Basic](../programming-guide/index.md)
 - [Справочник по Visual Basic](../reference/index.md)

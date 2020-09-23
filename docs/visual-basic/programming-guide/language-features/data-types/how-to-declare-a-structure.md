@@ -7,14 +7,15 @@ helpviewer_keywords:
 - statements [Visual Basic], structure
 - structures [Visual Basic], declaring
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.openlocfilehash: a6b70d0973e92db90e35e61b7fed2279c5b0bac3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bffdc5974eff6b71e0abc4780a61aa300769eed6
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393978"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058551"
 ---
 # <a name="how-to-declare-a-structure-visual-basic"></a>Практическое руководство. Объявление структуры (Visual Basic)
+
 Объявление структуры начинается с [оператора Structure](../../../language-reference/statements/structure-statement.md)и заканчивается `End Structure` инструкцией. Между этими двумя операторами необходимо объявить хотя бы один *элемент*. Элементы могут иметь любой тип данных, но хотя бы один из них должен быть либо необщей переменной, либо нестандартным, ненастраиваемым событием.  
   
  Нельзя инициализировать какие либо элементы структуры в объявлении структуры. При объявлении переменной, имеющей тип структуры, необходимо назначить значения элементам, обращаясь к ним через переменную.  
@@ -55,7 +56,7 @@ ms.locfileid: "84393978"
   
      Помимо переменных, процедур и `Sub` событий, в структуре можно также определять константы, `Function` процедуры и свойства. Можно назначить не более одного свойства в качестве *свойства по умолчанию*при условии, что оно принимает по крайней мере один аргумент. Можно выполнить обработку события с помощью [общей](../../../language-reference/modifiers/shared.md) `Sub` процедуры. Дополнительные сведения см. в разделе [инструкции. объявление и вызов свойства по умолчанию в Visual Basic](../procedures/how-to-declare-and-call-a-default-property.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы данных](index.md)
 - [Простые типы данных](elementary-data-types.md)
@@ -66,4 +67,4 @@ ms.locfileid: "84393978"
 - [Переменные структуры](structure-variables.md)
 - [Структуры и другие элементы программирования](structures-and-other-programming-elements.md)
 - [Структуры и классы](structures-and-classes.md)
-- [Определяемый пользователем тип данных](../../../language-reference/data-types/user-defined-data-type.md)
+- [Тип данных, определенный пользователем](../../../language-reference/data-types/user-defined-data-type.md)

@@ -7,14 +7,15 @@ helpviewer_keywords:
 - loop structures [Visual Basic], optimizing performance
 - control flow [Visual Basic]
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
-ms.openlocfilehash: 582957c91eac63cf7f72dd2f6c0cf40e627be686
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f1f0036c38299f2392f8c8705e67b7bb6b7db068
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402035"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058642"
 ---
 # <a name="walkthrough-implementing-ienumerableof-t-in-visual-basic"></a>Пошаговое руководство. Реализация IEnumerable(Of T) в Visual Basic
+
 <xref:System.Collections.Generic.IEnumerable%601>Интерфейс реализуется классами, которые могут возвращать последовательность значений по одному элементу за раз. Преимущество возврата данных по одному элементу за раз заключается в том, что для работы с ним не нужно загружать полный набор данных в память. Для загрузки одного элемента из данных необходимо использовать достаточно памяти. Классы, реализующие `IEnumerable(T)` интерфейс, можно использовать с `For Each` циклами или запросами LINQ.  
   
  Например, рассмотрим приложение, которое должно считывать большой текстовый файл и возвращать каждую строку из файла, удовлетворяющего определенным условиям поиска. Приложение использует запрос LINQ для возврата строк из файла, соответствующих указанным критериям. Чтобы запросить содержимое файла с помощью запроса LINQ, приложение может загрузить содержимое файла в массив или коллекцию. Однако загрузка всего файла в массив или коллекцию занимают гораздо больше памяти, чем требуется. Запрос LINQ может вместо этого запросить содержимое файла с помощью перечислимого класса, возвращая только те значения, которые соответствуют критериям поиска. Запросы, возвращающие только несколько соответствующих значений, занимают гораздо меньше памяти.  
@@ -93,7 +94,7 @@ ms.locfileid: "84402035"
   
  [!code-vb[VbVbalrIteratorWalkthrough#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/Module1.vb#10)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Поток управления](index.md)

@@ -9,17 +9,19 @@ helpviewer_keywords:
 - events [Visual Basic], raising
 - raising events [Visual Basic], walkthroughs
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
-ms.openlocfilehash: 3da60014d7ac95189c5d56c3e339ff1b054a40dc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 07ef611b50cfa13f77fa168d58dd3b43e97eeec6
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405097"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91057992"
 ---
 # <a name="walkthrough-declaring-and-raising-events-visual-basic"></a>Пошаговое руководство. Объявление и создание событий (Visual Basic)
+
 В этом пошаговом руководстве показано, как объявить и вызвать события для класса с именем `Widget` . После выполнения этих действий может потребоваться прочитать сопутствующий раздел [Пошаговое руководство. Обработка событий](walkthrough-handling-events.md), в которой показано, как использовать события из `Widget` объектов для предоставления сведений о состоянии в приложении.  
   
 ## <a name="the-widget-class"></a>Класс Widget  
+
  Предположим, что в момент, когда у вас есть `Widget` класс. В `Widget` классе есть метод, выполнение которого может занять много времени, и вы хотите, чтобы приложение могло поместить какой-либо индикатор завершения.  
   
  Конечно, можно сделать так, чтобы `Widget` объект отображал диалоговое окно «процент завершения», но в каждом проекте, где использовался этот класс, будет задержаться это диалоговое окно `Widget` . Хорошим принципом проектирования объектов является предоставление приложению, использующему объект, обработку пользовательского интерфейса, если только цель объекта не заключается в управлении формой или диалоговым окном.  
@@ -53,7 +55,7 @@ ms.locfileid: "84405097"
 > [!NOTE]
 > Аргументы событий можно объявлять так же, как аргументы процедур, со следующими исключениями: события не могут иметь `Optional` аргументы или `ParamArray` , а события не имеют возвращаемых значений.  
   
- `PercentDone`Событие вызывается `LongTask` методом `Widget` класса. `LongTask`принимает два аргумента: продолжительность времени, в течение которого метод должен выполнять работу, и минимальный интервал времени до `LongTask` приостановки для вызова `PercentDone` события.  
+ `PercentDone`Событие вызывается `LongTask` методом `Widget` класса. `LongTask` принимает два аргумента: продолжительность времени, в течение которого метод должен выполнять работу, и минимальный интервал времени до `LongTask` приостановки для вызова `PercentDone` события.  
   
 #### <a name="to-raise-the-percentdone-event"></a>Вызов события PercentDone  
   
@@ -61,7 +63,7 @@ ms.locfileid: "84405097"
   
      [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Widget.vb#2)]  
   
-2. Добавьте в класс `Widget` приведенный ниже код.  
+2. Добавьте следующий код в класс `Widget` :  
   
      [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Widget.vb#3)]  
   
@@ -73,7 +75,7 @@ ms.locfileid: "84405097"
   
  Теперь, когда `Widget` класс может создавать события, можно перейти к следующему пошаговому руководству. [Пошаговое руководство. Обработка событий](walkthrough-handling-events.md) демонстрирует использование `WithEvents` для связывания обработчика событий с `PercentDone` событием.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
 - <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>

@@ -23,14 +23,15 @@ helpviewer_keywords:
 - module-level constants and variables
 - Object data type [Visual Basic], declaring constants
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
-ms.openlocfilehash: ffaa98f6af3d4b276f5c0b1153841acdea0809d7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 138dd58dac9d1983e35e61f8b98a77810fc6e38b
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414483"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058850"
 ---
 # <a name="how-to-declare-a-constant-visual-basic"></a>Практическое руководство. Объявление константы (Visual Basic)
+
 Используйте оператор, `Const` чтобы объявить константу и задать ее значение. Объявляя константу, можно присвоить значение понятному имени. После объявления константы ее нельзя изменить или присвоить ей новое значение.  
   
  Константа объявляется в процедуре или в разделе объявлений модуля, класса или структуры. Константы уровня класса или структуры `Private` по умолчанию, но также могут быть объявлены как `Public` , `Friend` , `Protected` или `Protected Friend` для соответствующего уровня доступа к коду.  
@@ -65,7 +66,7 @@ ms.locfileid: "84414483"
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Const](../../../language-reference/statements/const-statement.md)
 - [Типы данных констант и литералов](constant-and-literal-data-types.md)

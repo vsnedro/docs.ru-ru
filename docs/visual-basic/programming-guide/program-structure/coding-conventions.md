@@ -6,14 +6,15 @@ helpviewer_keywords:
 - examples [Visual Basic], coding conventions
 - Visual Basic code, conventions
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
-ms.openlocfilehash: b71c1eeaa136d01c701191f1bb145674efccbc56
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: eae283c757ddeb1290c15d82a41c8028a8941e63
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551045"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91059162"
 ---
 # <a name="visual-basic-coding-conventions"></a>Соглашения о написании кода в Visual Basic
+
 Корпорация Майкрософт разрабатывает образцы и документацию, которые соответствуют рекомендациям, приведенным в этом разделе. Если следовать тем же соглашениям о написании кода, вы можете получить следующие преимущества:  
   
 - Ваш код будет иметь единообразный вид, чтобы читатели могли лучше сосредоточиться на содержимом, а не на макете.  
@@ -86,6 +87,7 @@ ms.locfileid: "90551045"
      [!code-vb[VbVbalrGuidelines#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#5)]  
   
 ### <a name="relaxed-delegates-in-event-handlers"></a>Ослабленные делегаты в обработчиках событий  
+
  Не следует явно уточнять аргументы (объект и EventArgs) обработчиками событий. Если вы не используете аргументы события, передаваемые в событие (например, отправитель как объект, e как EventArgs), используйте ослабленные делегаты и оставьте аргументы событий в коде:  
   
  [!code-vb[VbVbalrGuidelines#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#7)]  
@@ -121,14 +123,17 @@ ms.locfileid: "90551045"
      [!code-vb[VbVbalrGuidelines#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#13)]  
   
 ### <a name="use-the-with-keyword"></a>Использование ключевого слова WITH  
+
  При выполнении серии вызовов одного объекта рассмотрите возможность использования `With` ключевого слова:  
   
  [!code-vb[VbVbalrGuidelines#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#15)]  
   
 ### <a name="use-the-trycatch-and-using-statements-when-you-use-exception-handling"></a>Используйте параметр try... Перехватывать и использовать операторы при использовании обработки исключений  
+
  Не используйте `On Error Goto`.  
   
 ### <a name="use-the-isnot-keyword"></a>Использование ключевого слова IsNot  
+
  Используйте `IsNot` ключевое слово вместо `Not...Is Nothing` .  
   
 ### <a name="new-keyword"></a>Создать ключевое слово  
@@ -162,9 +167,11 @@ ms.locfileid: "90551045"
 - Не следует проверять, имеет ли событие `Nothing` значение (null) перед вызовом `RaiseEvent` метода. `RaiseEvent` проверяет `Nothing` перед тем, как он вызывает событие.  
   
 ### <a name="using-shared-members"></a>Использование общих членов  
+
  Вызывайте `Shared` члены с помощью имени класса, а не из переменной экземпляра.  
   
 ### <a name="use-xml-literals"></a>Использовать литералы XML  
+
  XML-литералы упрощают наиболее распространенные задачи, возникающие при работе с XML (например, Загрузка, запрос и преобразование). При разработке с использованием XML-кода следуйте приведенным ниже рекомендациям.  
   
 - Используйте литералы XML для создания XML-документов и фрагментов вместо непосредственного вызова API XML.  

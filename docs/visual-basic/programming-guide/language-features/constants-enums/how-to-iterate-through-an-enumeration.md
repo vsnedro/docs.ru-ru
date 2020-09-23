@@ -6,14 +6,15 @@ helpviewer_keywords:
 - enumerations [Visual Basic], iterating
 - ListBox control [Windows Forms], populating from an enumeration
 ms.assetid: e5aa10eb-cfcd-4a3b-8e76-f06b8f2002be
-ms.openlocfilehash: fb6fbdd45ca0e84ccb9fc55296d78e3867d5fe25
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 21c170d4708b90987a3f1e9c18969b8803fcdbe0
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414431"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058720"
 ---
 # <a name="how-to-iterate-through-an-enumeration-in-visual-basic"></a>Практическое руководство. Перебор элементов перечисления в Visual Basic
+
 Перечисления — это удобный способ работать с наборами связанных констант и связывать постоянные значения с именами. Чтобы выполнить итерацию по перечислению, можно переместить его в массив с помощью <xref:System.Enum.GetValues%2A> метода. Можно также выполнить итерацию перечисления с помощью `For...Each` инструкции, используя <xref:System.Enum.GetNames%2A> <xref:System.Enum.GetValues%2A> метод или для извлечения строкового или числового значения.  
   
 ### <a name="to-iterate-through-an-enumeration"></a>Перебор перечислений  
@@ -22,7 +23,7 @@ ms.locfileid: "84414431"
   
      [!code-vb[VbEnumsTask#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#7)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о перечислениях](enumerations-overview.md)
 - [Практическое руководство. Объявление перечисления](how-to-declare-enumerations.md)

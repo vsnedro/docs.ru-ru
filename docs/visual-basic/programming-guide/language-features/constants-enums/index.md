@@ -11,14 +11,15 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], constants
 - Visual Basic code, improving readability with constants
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
-ms.openlocfilehash: 7d15c46c0f6bb00c23dd98e464f61a5f94b0773a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aad4f8b24a43ecc51c372916b438daee72adc405
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414405"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058694"
 ---
 # <a name="constants-and-enumerations-in-visual-basic"></a>Константы и перечисления в Visual Basic
+
 Константы позволяют использовать наглядные имена вместо неизменяемых значений. Как можно понять из их названия, константы хранят значения, которые остаются постоянными в ходе выполнения приложения. С константами вы можете использовать значимые имена вместо чисел, чтобы сделать свой код более удобочитаемым.  
   
  Перечисления — это удобный способ работать с наборами связанных констант и связывать постоянные значения с именами. Например, вы можете объявить перечисление для набора целочисленных констант, связанных с днями недели, а затем использовать в коде названия дней, а не числа.  

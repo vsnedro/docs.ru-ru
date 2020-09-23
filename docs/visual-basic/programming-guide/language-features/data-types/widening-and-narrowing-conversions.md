@@ -19,14 +19,15 @@ helpviewer_keywords:
 - data type conversion [Visual Basic], exceptions during conversion
 - conversions [Visual Basic], widening
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
-ms.openlocfilehash: 177ff6c6fe15c57563d2f62ed8927f9ee975be48
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c0e10f5593ce5c81002233516444e415571541f3
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393004"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058538"
 ---
 # <a name="widening-and-narrowing-conversions-visual-basic"></a>Расширяющие и сужающие преобразования (Visual Basic)
+
 Важное замечание при преобразовании типов заключается в том, находится ли результат преобразования в диапазоне целевого типа данных.  
   
  *Расширяющее преобразование* изменяет значение на тип данных, который может допускать любое возможное значение исходных данных.  Расширяющие преобразования сохраняют исходное значение, но могут изменять его представление. Это происходит при преобразовании из целочисленного типа в `Decimal` или из `Char` в `String` .  
@@ -34,13 +35,14 @@ ms.locfileid: "84393004"
  *Преобразование сужения* изменяет тип данных значения на тип, который не сможет содержать некоторые возможные значения. Например, дробное значение округляется при преобразовании в целочисленный тип, а числовой тип, преобразуемый в, `Boolean` сокращается до либо `True` `False` .  
   
 ## <a name="widening-conversions"></a>расширяющие преобразования  
+
  В следующей таблице показаны стандартные расширяющие преобразования.  
   
 |Тип данных|Расширяется до типов данных <sup>1</sup>|  
 |---|---|  
 |[SByte](../../../language-reference/data-types/sbyte-data-type.md)|`SByte`, `Short`, `Integer`, `Long`, `Decimal`, `Single`, `Double`|  
 |[Byte](../../../language-reference/data-types/byte-data-type.md)|`Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, `Double`|  
-|[Промежуток](../../../language-reference/data-types/short-data-type.md)|`Short`, `Integer`, `Long`, `Decimal`, `Single`, `Double`|  
+|[Short](../../../language-reference/data-types/short-data-type.md)|`Short`, `Integer`, `Long`, `Decimal`, `Single`, `Double`|  
 |[UShort](../../../language-reference/data-types/ushort-data-type.md)|`UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, `Double`|  
 |[Целое число](../../../language-reference/data-types/integer-data-type.md)|`Integer`,,, `Long` `Decimal` `Single` , `Double` <sup>2</sup>|  
 |[UInteger](../../../language-reference/data-types/uinteger-data-type.md)|`UInteger`, `Long` , `ULong` , `Decimal` , `Single` , `Double` <sup>2</sup>|  
@@ -51,7 +53,7 @@ ms.locfileid: "84393004"
 |[Double](../../../language-reference/data-types/double-data-type.md)|`Double`|  
 |Любой перечислимый тип ([enum](../../../language-reference/statements/enum-statement.md))|Его базовый целочисленный тип и любой тип, к которому расширяется базовый тип.|  
 |[Char](../../../language-reference/data-types/char-data-type.md)|`Char`, `String`|  
-|`Char` массив|`Char`inArray`String`|  
+|Массив `Char`|`Char` inArray `String`|  
 |Любой тип|[Объект](../../../language-reference/data-types/object-data-type.md)|  
 |Любой производный тип|Любой базовый тип, от которого он является производным <sup>3</sup>.|  
 |Любой тип|Любой интерфейс, который он реализует.|  
@@ -66,6 +68,7 @@ ms.locfileid: "84393004"
  Расширяющие преобразования всегда выполняются в период выполнения и никогда не вызывают потери данных. Вы всегда можете выполнять их неявно, независимо от того, устанавливает ли [оператор Option строго](../../../language-reference/statements/option-strict-statement.md) значение переключателя проверки типа в значение `On` или `Off` .  
   
 ## <a name="narrowing-conversions"></a>сужающие преобразования  
+
  К стандартным сужающим преобразованиям относятся следующие:  
   
 - Обратные направления расширяющих преобразований в предыдущей таблице (за исключением того, что каждый тип расширяется до самого себя)  
@@ -84,18 +87,21 @@ ms.locfileid: "84393004"
 > Ошибка сужения преобразования подавляется для преобразований из элементов в `For Each…Next` коллекции в переменную управления циклом. Дополнительные сведения и примеры см. в подразделе «сужающие преобразования» раздела [For Each... Следующий оператор](../../../language-reference/statements/for-each-next-statement.md).  
   
 ### <a name="when-to-use-narrowing-conversions"></a>Когда следует использовать сужающие преобразования  
+
  Если известно, что исходное значение можно преобразовать в целевой тип данных без ошибок или потери данных, используется суженное преобразование. Например, если имеется объект `String` , который содержит значение true или false, можно использовать `CBool` ключевое слово, чтобы преобразовать его в `Boolean` .  
   
 ## <a name="exceptions-during-conversion"></a>Исключения во время преобразования  
+
  Поскольку расширяющие преобразования всегда выполняются, они не создают исключения. Сужающие преобразования, когда они завершаются сбоем, чаще всего вызывают следующие исключения:  
   
-- <xref:System.InvalidCastException>— Если преобразование между двумя типами не определено  
+- <xref:System.InvalidCastException> — Если преобразование между двумя типами не определено  
   
-- <xref:System.OverflowException>— (только целочисленные типы), если преобразованное значение слишком велико для целевого типа  
+- <xref:System.OverflowException> — (только целочисленные типы), если преобразованное значение слишком велико для целевого типа  
   
  Если класс или структура определяет [функцию CType](../../../language-reference/functions/ctype-function.md) , которая будет служить оператором преобразования в этот класс или структуру или из этого класса или структуры, это `CType` может вызвать любое исключение, которое оно считается соответствующим. Кроме того, это `CType` может вызывать функции Visual Basic или методы .NET Framework, которые, в свою очередь, могут вызывать различные исключения.  
   
 ## <a name="changes-during-reference-type-conversions"></a>Изменения во время преобразования ссылочного типа  
+
  При преобразовании из *ссылочного типа* копируется только указатель на значение. Само значение не копируется и не изменяется каким-либо образом. Единственное, что может изменить, — это тип данных переменной, содержащей указатель. В следующем примере тип данных преобразуется из производного класса в его базовый класс, но объект, на который теперь указывают обе переменные, не изменяется.  
   
 ```vb  
@@ -107,7 +113,7 @@ Dim square As cSquare = New cSquare
 shape = square  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы данных](index.md)
 - [Преобразование типов в Visual Basic](type-conversions.md)

@@ -7,14 +7,15 @@ helpviewer_keywords:
 - arrays [Visual Basic], initializing
 - arrays [Visual Basic], declaring
 ms.assetid: aadd7a60-7ca4-4608-b986-091f19e7fc10
-ms.openlocfilehash: 7feaf71fa1c59c24aa751f2b9e28328d47ba357c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1add054a6cb6468f4581f92ca3a258c5b0cdc77d
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413070"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058863"
 ---
 # <a name="how-to-initialize-an-array-variable-in-visual-basic"></a>Практическое руководство. Инициализация переменной массива в Visual Basic
+
 Инициализируйте переменную массива, включив литерал массива в `New` предложение и указав начальные значения массива. Можно либо указать тип, либо разрешить вывод его из значений в литерале массива. Дополнительные сведения о выводимом типе см. в разделе «Заполнение массива начальными значениями» в [массивах](index.md).  
   
 ### <a name="to-initialize-an-array-variable-by-using-an-array-literal"></a>Инициализация переменной массива с помощью литерала массива  
@@ -33,7 +34,7 @@ ms.locfileid: "84413070"
   
      [!code-vb[VbVbalrArrays#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#17)]  
   
-- Можно явно указать границы массива или оставить их, чтобы компилятор мог вычислять границы массива на основе значений в литерале массива. При указании обеих верхних границ и значений необходимо включить значение для каждого элемента из индекса 0 через верхнюю границу в каждом измерении. В следующем примере показано несколько способов объявления, создания и инициализации переменной, содержащей двумерный массив с элементами типа`Short`  
+- Можно явно указать границы массива или оставить их, чтобы компилятор мог вычислять границы массива на основе значений в литерале массива. При указании обеих верхних границ и значений необходимо включить значение для каждого элемента из индекса 0 через верхнюю границу в каждом измерении. В следующем примере показано несколько способов объявления, создания и инициализации переменной, содержащей двумерный массив с элементами типа `Short`  
   
      [!code-vb[VbVbalrArrays#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#18)]  
   
@@ -53,7 +54,7 @@ ms.locfileid: "84413070"
   
      [!code-vb[VbVbalrArrays#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#32)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Массивы](index.md)
 - [Устранение неполадок, связанных с массивами](troubleshooting-arrays.md)

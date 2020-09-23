@@ -15,14 +15,15 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - count operator [LINQ in Visual Basic]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
-ms.openlocfilehash: 8be585c3e11bc3637b2dd1cfaf3437620aa2ba09
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 617c6959e2d3add6d36266b0827ef7281b0c77a9
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405021"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91059253"
 ---
 # <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>Практическое руководство. Выполнение над данными функций Count, Sum и Average с помощью LINQ (Visual Basic)
+
 LINQ позволяет легко получить доступ к сведениям о базе данных и выполнить запросы.  
   
  В следующем примере показано, как создать новое приложение, которое выполняет запросы к базе данных SQL Server. Пример подсчитывает, суммирует и усредняет результаты с помощью `Aggregate` `Group By` предложений и. Дополнительные сведения см. в разделе [предложение Aggregate](../../../language-reference/queries/aggregate-clause.md) и [предложение GROUP BY](../../../language-reference/queries/group-by-clause.md).  
@@ -41,7 +42,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ### <a name="to-add-a-project-that-contains-a-linq-to-sql-file"></a>Добавление проекта, содержащего файл LINQ to SQL  
   
-1. В Visual Studio в меню **файл** наведите указатель мыши на пункт **создать** и выберите **проект**. Выберите Visual Basic **Windows Forms приложение** в качестве типа проекта.  
+1. В меню **Файл** окна Visual Studio наведите указатель мыши на пункт **Создать** и щелкните **Проект**. Выберите Visual Basic **Windows Forms приложение** в качестве типа проекта.  
   
 2. В меню **Проект** выберите **Добавить новый элемент**. Выберите шаблон элемента **LINQ to SQL классы** .  
   
@@ -77,11 +78,11 @@ LINQ позволяет легко получить доступ к сведен
   
 4. Нажмите клавишу F5, чтобы запустить проект и просмотреть результаты.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ](index.md)
 - [Запросы](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
-- [Методы DataContext (реляционный конструктор R)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Методы DataContext (реляционный конструктор объектов)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
 - [Aggregate Clause](../../../language-reference/queries/aggregate-clause.md)
 - [Предложение Group By](../../../language-reference/queries/group-by-clause.md)

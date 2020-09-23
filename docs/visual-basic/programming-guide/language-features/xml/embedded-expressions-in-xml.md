@@ -8,14 +8,15 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], embedded expressions
 - XML literals [Visual Basic], embedded expressions
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
-ms.openlocfilehash: d4ff9442aa82a3eb46d56500159562174646ea58
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 44a6c3408b57fa7f89e2834aa677fe8801ef21f3
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410261"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058317"
 ---
 # <a name="embedded-expressions-in-xml-visual-basic"></a>Встроенные выражения в XML (Visual Basic)
+
 Внедренные выражения позволяют создавать XML-литералы, содержащие выражения, вычисляемые во время выполнения. Синтаксис для внедренного выражения — это `<%=` `expression` `%>` то же, что и синтаксис, используемый в ASP.NET.  
   
  Например, можно создать литерал XML-элемента, объединяющий внедренные выражения с текстовым содержимым.  
@@ -31,16 +32,17 @@ ms.locfileid: "84410261"
 ```  
   
 ## <a name="embedded-expression-location-and-validation"></a>Расположение и проверка внедренных выражений  
+
  Встроенные выражения могут использоваться только в определенных местах в выражениях литералов XML. Расположение выражения определяет, какие типы могут быть возвращены выражением и как `Nothing` обрабатывается. В следующей таблице описаны допустимые расположения и типы внедренных выражений.  
   
-|Расположение в литерале|Тип выражения|Обработка`Nothing`|  
+|Расположение в литерале|Тип выражения|Обработка `Nothing`|  
 |---|---|---|  
 |Имя XML-элемента|<xref:System.Xml.Linq.XName>|Ошибка|  
-|Содержимое XML-элемента|`Object`или массив`Object`|Не учитывается|  
-|Имя атрибута XML-элемента|<xref:System.Xml.Linq.XName>|Ошибка, если значение атрибута также не равно`Nothing`|  
+|Содержимое XML-элемента|`Object` или массив `Object`|Не учитывается|  
+|Имя атрибута XML-элемента|<xref:System.Xml.Linq.XName>|Ошибка, если значение атрибута также не равно `Nothing`|  
 |Значение атрибута XML-элемента|`Object`|Объявление атрибута пропущено|  
-|Атрибут XML-элемента|<xref:System.Xml.Linq.XAttribute>или коллекция<xref:System.Xml.Linq.XAttribute>|Не учитывается|  
-|Корневой элемент XML-документа|<xref:System.Xml.Linq.XElement>или коллекция из одного <xref:System.Xml.Linq.XElement> объекта и произвольное число <xref:System.Xml.Linq.XProcessingInstruction> <xref:System.Xml.Linq.XComment> объектов и|Не учитывается|  
+|Атрибут XML-элемента|<xref:System.Xml.Linq.XAttribute> или коллекция <xref:System.Xml.Linq.XAttribute>|Не учитывается|  
+|Корневой элемент XML-документа|<xref:System.Xml.Linq.XElement> или коллекция из одного <xref:System.Xml.Linq.XElement> объекта и произвольное число <xref:System.Xml.Linq.XProcessingInstruction> <xref:System.Xml.Linq.XComment> объектов и|Не учитывается|  
   
 - Пример внедренного выражения в имени XML-элемента:  
   
@@ -73,6 +75,7 @@ ms.locfileid: "84410261"
  Дополнительные сведения об использовании внедренных выражений в определенном типе литерала см. в разделе [литерал XML-документа](../../../language-reference/xml-literals/xml-document-literal.md), [литерал XML-элемента](../../../language-reference/xml-literals/xml-element-literal.md).  
   
 ## <a name="scoping-rules"></a>Правила области видимости  
+
  Компилятор преобразует каждый XML-литерал в вызов конструктора для соответствующего типа литерала. Литеральное содержимое и внедренные выражения в XML-литерале передаются в качестве аргументов в конструктор. Это означает, что все элементы программирования Visual Basic, доступные для XML-литерала, также доступны для внедренных выражений.  
   
  В XML-литерале можно получить доступ к префиксам пространства имен XML, объявленным с помощью `Imports` инструкции. Можно объявить новый префикс пространства имен XML или затенить существующий префикс пространства имен XML в элементе с помощью `xmlns` атрибута. Новое пространство имен доступно для дочерних узлов этого элемента, но не для XML-литералов во внедренных выражениях.  
@@ -80,7 +83,7 @@ ms.locfileid: "84410261"
 > [!NOTE]
 > При объявлении префикса пространства имен XML с помощью `xmlns` атрибута Namespace значение атрибута должно быть строковой константой. В этом отношении использование `xmlns` атрибута аналогично использованию `Imports` оператора для объявления пространства имен XML. Нельзя использовать внедренное выражение для указания значения пространства имен XML.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание XML в Visual Basic](creating-xml.md)
 - [XML-литерал документа](../../../language-reference/xml-literals/xml-document-literal.md)
