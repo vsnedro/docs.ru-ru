@@ -17,19 +17,21 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], naming conflicts
 - declarations [Visual Basic], namespaces
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
-ms.openlocfilehash: 4b09284b8282c481e406050d37cbdb2f3c8686bc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6e067d72e557b97f8626b148e173e3d1583f92b8
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414509"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91086274"
 ---
 # <a name="enumerations-and-name-qualification-visual-basic"></a>Перечисления и уточнение имен (Visual Basic)
+
 Обычно при ссылке на член перечисления необходимо уточнить имя члена с помощью имени перечисления. Например, для ссылки на `Sunday` член `Days` перечисления используется следующий синтаксис:  
   
  [!code-vb[VbEnumsTask#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#18)]  
   
 ## <a name="using-the-imports-statement"></a>Использование оператора Imports  
+
  Можно избежать использования полных имен, добавив `Imports` инструкцию в раздел кода объявлений пространств имен, как показано в следующем примере:  
   
  [!code-vb[VbEnumsTask#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#22)]  
@@ -48,7 +50,7 @@ ms.locfileid: "84414509"
   
  [!code-vb[VbEnumsTask#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#32)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Константы и перечисления](../../../language-reference/constants-and-enumerations.md)
 - [Практическое руководство. Объявление перечисления](how-to-declare-enumerations.md)

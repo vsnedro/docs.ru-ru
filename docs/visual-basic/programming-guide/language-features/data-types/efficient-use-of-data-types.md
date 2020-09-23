@@ -13,17 +13,19 @@ helpviewer_keywords:
 - data types [Visual Basic], optimizing
 - ChrW function [Visual Basic], preferred to Chr
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
-ms.openlocfilehash: 0de02840cb18fde16134ef43df9d63abb503c979
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7f446b264dcb5c05ed6ddfba34acbbf66be0e447
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84394175"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91084116"
 ---
 # <a name="efficient-use-of-data-types-visual-basic"></a>Эффективное использование типов данных (Visual Basic)
+
 Тип данных назначается необъявленным переменным и переменным, объявленным без типа данных `Object` . Это упрощает написание программ, но может привести к более медленному их выполнению.
 
 ## <a name="strong-typing"></a>Строгая типизация
+
  Указание типов данных для всех переменных называется *строгой типизацией*. Использование строгой типизации имеет несколько преимуществ.
 
 - Он обеспечивает поддержку IntelliSense для переменных. Это позволяет просматривать их свойства и другие члены по мере ввода кода.
@@ -33,11 +35,13 @@ ms.locfileid: "84394175"
 - Это приводит к ускорению выполнения кода.
 
 ## <a name="most-efficient-data-types"></a>Наиболее эффективные типы данных
+
  Для переменных, которые никогда не содержат дробей, целочисленные типы данных более эффективны, чем Нецелочисленные типы. В Visual Basic `Integer` и `UInteger` являются наиболее эффективными числовыми типами.
 
  Для дробных чисел `Double` является наиболее эффективным типом данных, так как процессоры на текущих платформах выполняют операции с плавающей запятой с двойной точностью. Однако операции с `Double` не так быстро, как с целочисленными типами, такими как `Integer` .
 
 ## <a name="specifying-data-type"></a>Указание типа данных
+
  Используйте [оператор Dim](../../../language-reference/statements/dim-statement.md) для объявления переменной определенного типа. Уровень доступа можно указать одновременно с помощью ключевого слова [Public](../../../language-reference/modifiers/public.md), [protected](../../../language-reference/modifiers/protected.md), [Friend](../../../language-reference/modifiers/friend.md)или [Private](../../../language-reference/modifiers/private.md) , как показано в следующем примере.
 
 ```vb
@@ -46,9 +50,10 @@ Protected s As String
 ```
 
 ## <a name="character-conversion"></a>Преобразование символов
+
  `AscW`Функции и `ChrW` работают в Юникоде. Их следует использовать в предпочтениях `Asc` и `Chr` , которые должны преобразовываться в Юникод и из него.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

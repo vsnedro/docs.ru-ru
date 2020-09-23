@@ -13,14 +13,15 @@ helpviewer_keywords:
 - late binding [Visual Basic]
 - late binding [Visual Basic], Visual Basic compiler
 ms.assetid: d6ff7f1e-b94f-4205-ab8d-5cfa91758724
-ms.openlocfilehash: e8d87e095b7c3104e3a2d66525644d1771ae883e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ce74498225fb7947c92f2f4f61ec46e6b2594151
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410635"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91086014"
 ---
 # <a name="early-and-late-binding-visual-basic"></a>Раннее и позднее связывание (Visual Basic)
+
 Компилятор Visual Basic выполняет процесс, вызываемый `binding` при назначении объекта переменной объекта. Объект является объектом *с ранним связыванием*, если он присвоен переменной, объявленной с определенным типом объекта. Объекты с ранним связыванием позволяют компилятору выделять память и выполнять оптимизацию еще до запуска приложения. Например, в следующем фрагменте кода объявляется переменная типа <xref:System.IO.FileStream>:  
   
  [!code-vb[VbVbalrOOP#90](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#90)]  
@@ -32,12 +33,13 @@ ms.locfileid: "84410635"
  [!code-vb[VbVbalrOOP#91](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/LateBinding.vb#91)]  
   
 ## <a name="advantages-of-early-binding"></a>Преимущества раннего связывания  
+
  Раннее связывание объектов следует использовать везде, где это возможно, поскольку оно позволяет компилятору сделать важные оптимизации, повышающие эффективность приложений. Объекты с ранним связыванием работают значительно быстрее, чем объекты с поздним связыванием. Точное указание используемых объектов позволяет упростить чтение и обслуживание кода. Еще одним преимуществом раннего связывания является то, что он включает такие полезные функции, как автоматическое завершение кода и динамическая справка, поскольку интегрированная среда разработки (IDE) Visual Studio может точно определить тип объекта, с которым вы работаете при редактировании кода. Раннее связывание уменьшает количество и серьезность ошибок времени выполнения, так как позволяет компилятору фиксировать многие ошибки еще при компиляции программы.  
   
 > [!NOTE]
 > Позднее связывание применимо только для доступа к членам типа, объявленным как `Public`. Доступ к членам, объявленным как `Friend` или `Protected Friend`, приводит к ошибке времени выполнения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Interaction.CreateObject%2A>
 - [Время существования: создание и уничтожение объектов](../objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

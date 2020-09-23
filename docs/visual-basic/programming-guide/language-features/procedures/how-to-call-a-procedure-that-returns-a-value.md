@@ -7,14 +7,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], calling
 - procedures [Visual Basic], returning a value
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
-ms.openlocfilehash: a110cf9f3b42c7244d8d5bf7b49d5e6dac8c2e21
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 53589f84c6675d1e7ae2a593341e5dac747132a9
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388768"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91083981"
 ---
 # <a name="how-to-call-a-procedure-that-returns-a-value-visual-basic"></a>Практическое руководство. Вызов процедуры, возвращающей значение (Visual Basic)
+
 `Function`Процедура возвращает значение в вызывающий код. Его можно вызвать, указав его имя и аргументы в правой части оператора присваивания или в выражении.  
   
 ### <a name="to-call-a-function-procedure-within-an-expression"></a>Вызов процедуры Function в выражении  
@@ -40,11 +41,12 @@ ms.locfileid: "84388768"
 4. Значение, возвращаемое процедурой, хранится в переменной или свойстве в левой части оператора присваивания.  
   
 ## <a name="example"></a>Пример  
- В следующем примере вызывается Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> для получения значения переменной среды операционной системы. Первая строка вызывает `Environ` в выражении, а вторая строка вызывает его в операторе присваивания. `Environ`принимает имя переменной в качестве единственного аргумента. Он возвращает значение переменной в вызывающий код.  
+
+ В следующем примере вызывается Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> для получения значения переменной среды операционной системы. Первая строка вызывает `Environ` в выражении, а вторая строка вызывает его в операторе присваивания. `Environ` принимает имя переменной в качестве единственного аргумента. Он возвращает значение переменной в вызывающий код.  
   
  [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры функций](./function-procedures.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)

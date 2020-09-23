@@ -6,17 +6,19 @@ helpviewer_keywords:
 - delegates [Visual Basic], relaxed conversion
 - conversions [Visual Basic], relaxed delegate
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
-ms.openlocfilehash: a581ffae77c496908d2e4e38df53491a54ae2ab8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b914d0479f160199744a8f9923c0bebc87321329
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410674"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91086079"
 ---
 # <a name="relaxed-delegate-conversion-visual-basic"></a>Неявное преобразование делегата (Visual Basic)
+
 Неявное преобразование делегатов позволяет назначать процедуры и функции делегатам или обработчикам, даже если их сигнатуры не идентичны. Таким образом, привязка к делегатам будет соответствовать привязке, уже разрешенной для вызовов методов.  
   
 ## <a name="parameters-and-return-type"></a>Параметры и возвращаемый тип  
+
  Вместо точного соответствия сигнатуры для ослабленного преобразования требуется выполнение следующих условий, если параметр `Option Strict` имеет значение `On` .  
   
 - Должно существовать расширяющее преобразование из типа данных каждого параметра делегата в тип данных соответствующего параметра назначенной функции или `Sub` . В следующем примере делегат `Del1` имеет один параметр — `Integer` . Параметр `m` в назначенных лямбда-выражениях должен иметь тип данных, для которого существует расширяющее преобразование `Integer` , например `Long` или `Double` .  
@@ -38,6 +40,7 @@ ms.locfileid: "84410674"
  [!code-vb[VbVbalrRelaxedDelegates#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module2.vb#4)]  
   
 ## <a name="omitting-parameter-specifications"></a>Пропуск спецификаций параметров  
+
  Ослабленные делегаты также позволяют полностью опускать спецификации параметров в назначенном методе:  
   
  [!code-vb[VbVbalrRelaxedDelegates#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#5)]  
@@ -61,6 +64,7 @@ End Sub
 ```  
   
 ## <a name="addressof-examples"></a>Примеры AddressOf  
+
  Лямбда-выражения используются в предыдущих примерах для упрощения просмотра связей типов. Однако для назначений делегатов, которые используют, или, разрешены те же ограничения `AddressOf` `Handles` `AddHandler` .  
   
  В следующем примере функции,, `f1` `f2` `f3` и `f4` могут быть назначены `Del1` .  
@@ -76,13 +80,14 @@ End Sub
  [!code-vb[VbVbalrRelaxedDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module2.vb#14)]  
   
 ## <a name="dropping-function-returns"></a>Удаление возвращаемых функций  
+
  Неявное преобразование делегата позволяет присвоить функцию `Sub` делегату, фактически игнорируя возвращаемое значение функции. Однако нельзя присвоить значение `Sub` делегату функции. В следующем примере адрес функции `doubler` назначается `Sub` делегату `Del3` .  
   
  [!code-vb[VbVbalrRelaxedDelegates#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#10)]  
   
  [!code-vb[VbVbalrRelaxedDelegates#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#11)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Лямбда-выражения](../procedures/lambda-expressions.md)
 - [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md)

@@ -6,17 +6,19 @@ helpviewer_keywords:
 - Visual Basic code, XML
 - XML [Visual Basic], manipulating
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
-ms.openlocfilehash: fca6c05b4baae4689e9d5e5698cee75f0c5470ec
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 52c8822c34a85af81dde505d36e6e159745a0d12
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374750"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91085696"
 ---
 # <a name="manipulating-xml-in-visual-basic"></a>Обработка XML в Visual Basic
+
 *XML-литералы* можно использовать для загрузки XML из внешнего источника, такого как строка, файл или поток. Затем можно использовать [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] для работы с XML и использования LINQ для запроса XML.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Практическое руководство. Загрузка XML-кода из файла, строки или потока](how-to-load-xml-from-a-file-string-or-stream.md)  
  Демонстрирует загрузку XML в <xref:System.Xml.Linq.XDocument> <xref:System.Xml.Linq.XElement> объект или из текстового файла, строки или потока.  
   
@@ -27,6 +29,7 @@ ms.locfileid: "84374750"
  Демонстрирует изменение элементов, атрибутов и значений в XML-литерале.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Свойства оси XML](../../../language-reference/xml-axis/index.md)  
  Содержит ссылки на разделы, описывающие различные свойства доступа к XML.  
   
@@ -42,7 +45,7 @@ ms.locfileid: "84374750"
  [XML](index.md)  
  Содержит ссылки на разделы, в которых описывается использование [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] в Visual Basic.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [XML](index.md)
 - [LINQ](../linq/index.md)

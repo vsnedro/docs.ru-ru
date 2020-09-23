@@ -9,17 +9,19 @@ helpviewer_keywords:
 - TypeName function
 - objects [Visual Basic], type determining
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
-ms.openlocfilehash: 3b1c4ad0ab4fd8d2897aff6ad9097cdc81272455
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ae338bc9bad9646abc045a652d4ef33a8863354b
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410648"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91086066"
 ---
 # <a name="determining-object-type-visual-basic"></a>Определение типа объекта (Visual Basic)
+
 Универсальные объектные переменные (то есть переменные, объявляемые как `Object` ) могут содержать объекты из любого класса. При использовании переменных типа `Object` может потребоваться выполнить различные действия на основе класса объекта. Например, некоторые объекты могут не поддерживать конкретное свойство или метод. Visual Basic предоставляет два способа определения типа объекта, хранящегося в объектной переменной: `TypeName` функции и `TypeOf...Is` оператора.  
   
 ## <a name="typename-and-typeofis"></a>TypeName и TypeOf... Рекомендуется  
+
  `TypeName`Функция возвращает строку и является лучшим выбором, если необходимо сохранить или отобразить имя класса объекта, как показано в следующем фрагменте кода:  
   
  [!code-vb[VbVbalrOOP#92](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#92)]  
@@ -44,7 +46,7 @@ ms.locfileid: "84410648"
   
      [!code-vb[VbVbalrOOP#95](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#95)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Information.TypeName%2A>
 - [Вызов свойства или метода с помощью строкового имени](calling-a-property-or-method-using-a-string-name.md)

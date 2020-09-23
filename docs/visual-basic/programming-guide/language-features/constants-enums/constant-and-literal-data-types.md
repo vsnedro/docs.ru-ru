@@ -9,14 +9,15 @@ helpviewer_keywords:
 - literals [Visual Basic], coercing data type
 - declarations [Visual Basic], data types
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
-ms.openlocfilehash: b94259326b42104db05d9fc5bb09f686075d0759
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 03d693653cd166bbf1096031f1a864b492e2e896
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414535"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91086300"
 ---
 # <a name="constant-and-literal-data-types-visual-basic"></a>Типы данных констант и литералов (Visual Basic)
+
 Литерал — это значение, которое выражено как само по себе, а не как значение переменной или результат выражения, например число 3 или строка "Hello". Константа — это понятное имя, которое принимает место литерала и сохраняется в программе в отличие от переменной, значение которой может измениться.  
   
  Если [параметр Infer](../../../language-reference/statements/option-infer-statement.md) имеет значение `Off` и [параметр Option строго](../../../language-reference/statements/option-strict-statement.md) имеет значение `On` , необходимо явно объявить все константы с типом данных. В следующем примере тип данных `MyByte` явно объявлен как тип данных `Byte` :  
@@ -26,6 +27,7 @@ ms.locfileid: "84414535"
  Если `Option Infer` имеет значение `On` или `Option Strict` является `Off` , можно объявить константу без указания типа данных с `As` предложением. Компилятор определяет тип константы на основе типа выражения. Числовой целочисленный литерал по умолчанию приводится к `Integer` типу данных. Тип данных по умолчанию для чисел с плавающей запятой — `Double` , и ключевые слова `True` и `False` задают `Boolean` константу.  
   
 ## <a name="literals-and-type-coercion"></a>Литералы и приведение типов  
+
  В некоторых случаях может потребоваться принудительно применить литерал к конкретному типу данных. Например, при присваивании особо большого целочисленного значения литерала переменной типа `Decimal` . Следующий пример приводит к ошибке:  
   
 ```vb  
@@ -61,7 +63,7 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
 |`Single`|(нет)|F или!|  
 |`String`|"|(нет)|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Константы, определенные пользователем](user-defined-constants.md)
 - [Практическое руководство. Объявление константы](how-to-declare-a-constant.md)

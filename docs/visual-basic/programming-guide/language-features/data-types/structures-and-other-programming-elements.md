@@ -8,20 +8,22 @@ helpviewer_keywords:
 - arrays [Visual Basic], structure elements
 - nested structures [Visual Basic]
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
-ms.openlocfilehash: dbd24065a954e5611663963371d5a9f4bbbaea68
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 26c98adda7305783b0220141db35b08285b21554
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393498"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91084090"
 ---
 # <a name="structures-and-other-programming-elements-visual-basic"></a>Структуры и другие элементы программирования (Visual Basic)
+
 Структуры можно использовать совместно с массивами, объектами и процедурами, а также друг с другом. При взаимодействии используется тот же синтаксис, что и при использовании этих элементов по отдельности.  
   
 > [!NOTE]
 > Нельзя инициализировать какие либо элементы структуры в объявлении структуры. Значения можно назначать только элементам переменной, объявленным как тип структуры.  
   
 ## <a name="structures-and-arrays"></a>Структуры и массивы  
+
  Структура может содержать массив в качестве одного или нескольких элементов. Это показано в следующем примере.  
   
 ```vb  
@@ -56,6 +58,7 @@ allSystems(5).diskDrives(2) = "100M SCSI"
 ```  
   
 ## <a name="structures-and-objects"></a>Структуры и объекты  
+
  Структура может содержать объект в качестве одного или нескольких его элементов. Это показано в следующем примере.  
   
 ```vb  
@@ -69,6 +72,7 @@ End Structure
  В таком объявлении следует использовать конкретный класс объекта, а не `Object` .  
   
 ## <a name="structures-and-procedures"></a>Структуры и процедуры  
+
  Структуру можно передать в качестве аргумента процедуры. Это показано в следующем примере.  
   
 ```vb  
@@ -97,6 +101,7 @@ End Function
 ```  
   
 ## <a name="structures-within-structures"></a>Структуры внутри структур  
+
  Структуры могут содержать другие структуры. Это показано в следующем примере.  
   
 ```vb  
@@ -122,7 +127,7 @@ allSystems(1).diskDrives(0).type = "Floppy"
   
  Структуры могут содержать другие структуры для произвольной глубины.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы данных](index.md)
 - [Простые типы данных](elementary-data-types.md)
