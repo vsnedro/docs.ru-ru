@@ -5,17 +5,19 @@ helpviewer_keywords:
 - Visual Basic code, COM interop
 - COM interop [Visual Basic], in Visual Basic
 ms.assetid: 3ffd1bdf-1b8d-47f5-87eb-75b659f64294
-ms.openlocfilehash: 2b70a7fa72b09401e0e78f693e4efc9bf0871771
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 66762d4551e458b36b70fb0831bf17ade70aa8cb
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396795"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91083232"
 ---
 # <a name="com-interop-visual-basic"></a>COM-взаимодействие (Visual Basic)
+
 Объектная модель компонентов (модель COM) позволяет объекту предоставлять свою функциональность другим компонентам и ведущим приложениям. COM-объекты входят в состав большей части современного программного обеспечения. Хотя сборки .NET являются наилучшим решением для новых приложений, в некоторых случаях необходимо использование COM-объектов. В этом разделе рассматриваются некоторые проблемы, связанные с созданием и использованием COM-объектов с Visual Basic.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Знакомство с COM-взаимодействием](introduction-to-com-interop.md)  
  Общие сведения о COM-взаимодействии.  
   
@@ -34,7 +36,7 @@ ms.locfileid: "84396795"
  [Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа](how-to-call-a-windows-function-that-takes-unsigned-types.md)  
  Демонстрация вызова функции Windows, которая имеет параметр с типом без знака.  
   
- [Пошаговое руководство. Создание объектов COM с помощью Visual Basic](walkthrough-creating-com-objects.md)  
+ [Пошаговое руководство. Создание объектов COM с помощью Visual Basic](walkthrough-creating-com-objects.md)  
  Пошаговое описание создания COM-объектов с использованием шаблона класса COM и без него.  
   
  [Устранение неполадок взаимодействия](troubleshooting-interoperability.md)  
@@ -47,6 +49,7 @@ ms.locfileid: "84396795"
  Описание использования существующих COM-объектов в качестве основы для новых объектов.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Взаимодействие с неуправляемым кодом](../../../framework/interop/index.md)  
  Описываются службы взаимодействия, предоставляемые средой CLR.  
   
