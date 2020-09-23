@@ -10,17 +10,19 @@ helpviewer_keywords:
 - changing data types [Visual Basic]
 - data type conversion [Visual Basic]
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
-ms.openlocfilehash: be388998da5e88f99c62128e6ad63d5a476153ba
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ee8700ea757cee9c20e2598de029f54ae33a7114
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393056"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91090161"
 ---
 # <a name="type-conversions-in-visual-basic"></a>Преобразование типов в Visual Basic
+
 Процесс изменения значения из одного типа данных на другой тип называется *преобразованием*. Преобразования могут *расширяться* или *уменьшаться*в зависимости от объема данных используемых типов. Они также являются *неявно* или *explicit*явными в зависимости от синтаксиса в исходном коде.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Widening and Narrowing Conversions](widening-and-narrowing-conversions.md)  
  Описывает преобразования, классифицированные, если целевой тип может содержать данные.  
   
@@ -37,6 +39,7 @@ ms.locfileid: "84393056"
  Пошаговый процесс преобразования между массивами различных типов данных.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Типы данных](index.md)  
  Вводит Visual Basic типы данных и описывает, как их использовать.  
   

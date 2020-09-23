@@ -2,14 +2,15 @@
 title: Недопустимая строка шаблона
 ms.date: 07/20/2015
 ms.assetid: ec1aecdb-5339-4a93-be71-eec56b1d7438
-ms.openlocfilehash: aa408f4cecc2a2774cb98cba96cd04a67afcc546
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5ef12ac27e96205f9ef1c964293847f56b11cb78
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402217"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91090694"
 ---
 # <a name="invalid-pattern-string"></a>Недопустимая строка шаблона
+
 Строка шаблона, указанная в операции поиска `Like` , является недопустимой.  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
@@ -22,6 +23,6 @@ ms.locfileid: "84402217"
   
 4. Завершите диапазон шаблона закрывающей скобкой.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Like](../language-reference/operators/like-operator.md)

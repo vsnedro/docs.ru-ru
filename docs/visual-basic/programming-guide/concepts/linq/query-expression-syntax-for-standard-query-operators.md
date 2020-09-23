@@ -2,17 +2,19 @@
 title: Синтаксис выражений запроса для стандартных операторов запроса
 ms.date: 07/20/2015
 ms.assetid: eb978d86-d3b5-497b-95ce-a054bea8f510
-ms.openlocfilehash: 69bb50007c04bf8d1ee1553a37aca542afbffab0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 57a08f6540cbf3e091ee1b2e202e0e181487e3be
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396289"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91090252"
 ---
 # <a name="query-expression-syntax-for-standard-query-operators-visual-basic"></a>Синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)
+
 Некоторые из наиболее часто используемых стандартных операторов запросов имеют выделенный синтаксис ключевого слова Visual Basic языка, который позволяет вызывать их как часть *выражения запроса*. Выражение запроса является более удобочитаемой формой задания запроса, чем его *основанный на методах* эквивалент. Предложения выражений запросов преобразуются в вызовы методов запросов во время компиляции.  
   
 ## <a name="query-expression-syntax-table"></a>Таблица синтаксиса выражений запросов  
+
  В следующей таблице приводится список стандартных операторов запросов, имеющих эквивалентные предложения выражений запросов.  
   
 |Метод|Синтаксис выражения запроса Visual Basic|  
@@ -42,7 +44,7 @@ ms.locfileid: "84396289"
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`Order By …, … Descending`<br /><br /> (Дополнительные сведения см. в разделе [предложение ORDER BY](../../../language-reference/queries/order-by-clause.md).)|  
 |<xref:System.Linq.Enumerable.Where%2A>|`Where`<br /><br /> (Дополнительные сведения см. в разделе [предложение WHERE](../../../language-reference/queries/where-clause.md).)|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>
