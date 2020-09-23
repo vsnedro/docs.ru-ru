@@ -2,17 +2,19 @@
 title: LINQ
 ms.date: 07/20/2015
 ms.assetid: a99371f7-097c-49a0-b62b-0e31c34aad0e
-ms.openlocfilehash: 53c4033c4626fd34c3cd8752e74af3f8e9b481c3
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c34145a0b7ff5cf97f5efd6ff7b49381af80bd93
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90549946"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91098259"
 ---
 # <a name="language-integrated-query-linq-visual-basic"></a>LINQ (Visual Basic)
+
 LINQ — это набор функций, который предлагает мощные возможности создания запросов для синтаксиса языка Visual Basic. LINQ включает стандартные, легко запоминающиеся шаблоны для выполнения запросов и изменения данных. Эта технология потенциально способна обеспечить поддержку любого типа хранилища данных.  Платформа .NET Framework содержит сборки поставщика LINQ, позволяющие использовать LINQ с коллекциями .NET Framework, базами данных SQL Server, наборами данных ADO.NET Dataset и документами в формате XML.  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Знакомство с LINQ (Visual Basic)](introduction-to-linq.md)  
  Общие сведения о доступных для создания приложениях и о проблемах, которые можно решить с помощью запросов LINQ.  
   
