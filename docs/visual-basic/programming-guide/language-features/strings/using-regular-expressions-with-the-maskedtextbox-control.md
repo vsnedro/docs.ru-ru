@@ -5,17 +5,19 @@ helpviewer_keywords:
 - strings [Visual Basic], regular expressions
 - strings [Visual Basic], masked edit
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
-ms.openlocfilehash: 1bb5ac5381dc85f598ef46638fbc8cd1a8643825
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 493da7b8583b5cc73a9832afa81b7b1d84742f2d
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555748"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072435"
 ---
 # <a name="using-regular-expressions-with-the-maskedtextbox-control-in-visual-basic"></a>Использование регулярных выражений в элементе управления MaskedTextBox в Visual Basic
+
 В этом примере показано, как преобразовать простые регулярные выражения для работы с <xref:System.Windows.Forms.MaskedTextBox> элементом управления.  
   
 ## <a name="description-of-the-masking-language"></a>Описание языка маскирования  
+
  Стандартный <xref:System.Windows.Forms.MaskedTextBox> язык маскирования основан на том, который используется `Masked Edit` элементом управления в Visual Basic 6,0, и должен быть знаком пользователям, переносящим эту платформу.  
   
  <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>Свойство <xref:System.Windows.Forms.MaskedTextBox> элемента управления указывает, какую маску ввода использовать. Маска должна быть строкой, состоящей из одного или нескольких элементов маскирования из следующей таблицы.  
@@ -44,6 +46,7 @@ ms.locfileid: "90555748"
  Символы Decimal (.), доли (,), Time (:), Date (/) и Currency ($) по умолчанию отображают эти символы в соответствии с языком и региональными параметрами приложения. Можно принудительно отображать символы для другого языка и региональных параметров с помощью <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> Свойства.  
   
 ## <a name="regular-expressions-and-masks"></a>Регулярные выражения и маски  
+
  Хотя для проверки вводимых пользователем данных можно использовать регулярные выражения и маски, они не полностью эквивалентны. Регулярные выражения могут выражать более сложные закономерности, чем маски, но маски могут выражать одни и те же сведения более кратко и в формате, соответствующем культуре.  
   
  В следующей таблице сравниваются четыре регулярных выражения и эквивалентная маска для каждого из них.  

@@ -10,14 +10,15 @@ helpviewer_keywords:
 - properties [Visual Basic], access levels
 - Property statement [Visual Basic], declaring mixed access levels
 ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
-ms.openlocfilehash: f0f7aba25888544dfcc093906850ae7ada621182
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 78363f7b2fb5b251f7409e53b2802baf83b05810
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388249"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072708"
 ---
 # <a name="how-to-declare-a-property-with-mixed-access-levels-visual-basic"></a>Практическое руководство. Объявление свойства со смешанным уровнем доступа (Visual Basic)
+
 Если требуется `Get` `Set` , чтобы процедуры и для свойства имели разные уровни доступа, можно использовать более строгий уровень в `Property` инструкции и более строгий уровень в `Get` `Set` операторе или. Смешанные уровни доступа для свойства используются, если требуется, чтобы определенные части кода могли получить значение свойства, а некоторые другие части кода могут изменить значение.  
   
  Дополнительные сведения об уровнях доступа см. [в разделе уровни доступа в Visual Basic](../declared-elements/access-levels.md).  
@@ -34,7 +35,7 @@ ms.locfileid: "84388249"
   
      В предыдущем примере `Get` процедура имеет тот же `Protected` доступ, что и само свойство, а `Set` процедура имеет `Private` доступ. Класс, производный от `employee` , может считывать `salary` значение, но только `employee` класс может его задать.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры](./index.md)
 - [Процедуры свойств](./property-procedures.md)

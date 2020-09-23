@@ -6,17 +6,19 @@ helpviewer_keywords:
 - strings [Visual Basic], Visual Basic
 - strings [Visual Basic], regular expressions
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
-ms.openlocfilehash: 935926b8b83afa47c20ea68aecd6bc8c40bd0234
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 44736f4db9977d9f69a0571cc80fa327dcf96581
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363701"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072513"
 ---
 # <a name="string-basics-in-visual-basic"></a>Основы работы со строками в Visual Basic
+
 Тип данных `String` представляет последовательность символов (каждый из которых, в свою очередь, представляет экземпляр типа данных `Char`). В этом разделе рассматриваются основные понятия строк в Visual Basic.  
   
 ## <a name="string-variables"></a>Строковые переменные  
+
  Экземпляру строки можно назначить литеральное значение, которое представляет ряд символов. Пример:  
   
  [!code-vb[VbVbalrStrings#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#63)]  
@@ -50,6 +52,7 @@ World]]></xml>.Value
 ```  
   
 ## <a name="characters-in-strings"></a>Символы в строках  
+
  Строку можно представить как последовательность значений `Char`. При этом тип `String` имеет встроенные функции, которые позволяют работать со строками, как с массивами. Как и в .NET Framework, это массивы, начинающиеся с нуля. К определенному символу в строке можно обратиться с помощью свойства `Chars`, которое предоставляет механизм доступа к символу по позиции, в которой он отображается в строке. Пример:  
   
  [!code-vb[VbVbalrStrings#67](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#67)]  
@@ -61,6 +64,7 @@ World]]></xml>.Value
  Переменная `myArray` теперь содержит массив значений `Char`, каждое из которых представляет символ из `myString`.  
   
 ## <a name="the-immutability-of-strings"></a>Неизменность строк  
+
  Строка является *неизменяемой*. Это означает, что ее значение нельзя изменить после ее создания. Однако это не мешает назначить строковой переменной более одного значения. Рассмотрим следующий пример.  
   
  [!code-vb[VbVbalrStrings#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#69)]  
@@ -71,9 +75,9 @@ World]]></xml>.Value
   
  В отличие от других встроенных типов данных `String` — это ссылочный тип. Если переменная ссылочного типа передается в качестве аргумента функции или подпрограмме, вместо фактического значения строки передается ссылка на адрес в памяти, где хранятся данные. Поэтому в предыдущем примере имя переменной остается таким же, но оно указывает на другой экземпляр класса `String`, который содержит новое значение.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Знакомство со строками в Visual Basic](introduction-to-strings.md)
 - [Тип данных String](../../../language-reference/data-types/string-data-type.md)
 - [Тип данных Char](../../../language-reference/data-types/char-data-type.md)
-- [Базовые операции со строками](../../../../standard/base-types/basic-string-operations.md)
+- [Базовые операции со строками в .NET Framework](../../../../standard/base-types/basic-string-operations.md)

@@ -7,14 +7,15 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic]
 ms.assetid: 4d229712-6be8-4c5c-bac5-06995ce9185a
-ms.openlocfilehash: fa220998d12206e620c242b9b39df3dc1b639d29
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bd138177d5f4b7ee1eb63833360d227baa54f66d
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388262"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072747"
 ---
 # <a name="how-to-create-a-property-visual-basic"></a>Практическое руководство. Создание свойства (Visual Basic)
+
 Определение свойства заключается между `Property` оператором и `End Property` оператором. В этом определении определяется `Get` процедура, `Set` процедура или и то, и другое. Весь код свойства находится в пределах этих процедур.  
   
  `Get`Процедура получает значение свойства, а `Set` процедура сохраняет значение. Если требуется, чтобы свойство имело доступ на чтение и запись, необходимо определить обе процедуры. Для свойства, доступного только для чтения, вы определяете только `Get` свойство, а для свойства только для записи вы определяете только `Set` .  
@@ -52,6 +53,7 @@ ms.locfileid: "84388262"
  Необходимо написать `Set` процедуру для свойства для чтения и записи и для свойства, доступного только для записи. Не следует определять `Set` процедуру для свойства, доступного только для чтения.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере создается свойство для чтения и записи, которое хранит полное имя как два составных имени, имя и фамилию. При чтении вызывающего кода `fullName` `Get` процедура объединяет два составных имени и возвращает полное имя. Когда вызывающий код присваивает новое полное имя, `Set` процедура попытается разбить ее на два составных имени. Если не удается найти пробел, он сохраняется как первое имя.  
   
  [!code-vb[VbVbcnProcedures#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#8)]  
@@ -60,7 +62,7 @@ ms.locfileid: "84388262"
   
  [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры](./index.md)
 - [Процедуры свойств](./property-procedures.md)

@@ -4,14 +4,15 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - String data type [Visual Basic], validation
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
-ms.openlocfilehash: 8cb04286e98cf78f0fb66dde92002ee09e2ea0f5
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9597d7a9d6b68b8c91f32d97da3532f181585cf6
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556249"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072357"
 ---
 # <a name="walkthrough-validating-that-passwords-are-complex-visual-basic"></a>Пошаговое руководство. Проверка паролей на сложность (Visual Basic)
+
 Этот метод проверяет некоторые характеристики строгого пароля и обновляет строковый параметр, используя сведения о том, какие проверки пароля завершился ошибкой.  
   
  Пароли можно использовать в защищенной системе для авторизации пользователя. Тем не менее пароли должны быть сложными для взлома неавторизованными пользователями. Злоумышленники могут использовать *словарную* программу для атаки, которая перебирает все слова в словаре (или несколько словарей на разных языках) и проверяет, работает ли какое-либо из слов в качестве пароля пользователя. Ненадежные пароли, например "Янкиз" или "Мустанг", можно быстро угадать. Более надежные пароли, например "? Вы " L1N3vaFiNdMeyeP@sSWerd !", вероятно, догадаться гораздо меньше. Система, защищенная паролем, должна гарантировать, что пользователи будут выбирать надежные пароли.  
@@ -21,9 +22,11 @@ ms.locfileid: "90556249"
 ## <a name="example"></a>Пример  
   
 ### <a name="code"></a>Код  
+
  [!code-vb[VbVbcnRegEx#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnRegEx/VB/Class1.vb#1)]  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
+
  Вызовите этот метод, передав строку, содержащую этот пароль.  
   
  Для этого примера требуются:  
@@ -31,6 +34,7 @@ ms.locfileid: "90556249"
 - Доступ к членам пространства имен <xref:System.Text.RegularExpressions>. Добавьте оператор `Imports`, если в коде не используются полные имена членов. Дополнительные сведения см. в статье [Оператор Imports (пространство имен .NET и тип)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## <a name="security"></a>Безопасность  
+
  При перемещении пароля по сети необходимо использовать безопасный метод передачи данных. Дополнительные сведения см. в разделе [ASP.NET Web Application Security](/previous-versions/aspnet/330a99hc(v=vs.100)).
   
  Точность функции можно улучшить `ValidatePassword` , добавив дополнительные проверки сложности:  
