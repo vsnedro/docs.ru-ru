@@ -10,23 +10,24 @@ helpviewer_keywords:
 - Using statement [Visual Basic], Using...End Using
 - Using block
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
-ms.openlocfilehash: dd15c6746628f45b072d46eea40051ed9afb7921
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c430bc7744f5aefaa65f2a86f3e5e22743ffed57
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403502"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077206"
 ---
-# <a name="how-to-dispose-of-a-system-resource-visual-basic"></a><span data-ttu-id="34ffd-102">Практическое руководство. Удаление системного ресурса (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="34ffd-102">How to: Dispose of a System Resource (Visual Basic)</span></span>
-<span data-ttu-id="34ffd-103">Вы можете использовать `Using` блок, чтобы гарантировать, что система уничтожает ресурс, когда код выходит из блока.</span><span class="sxs-lookup"><span data-stu-id="34ffd-103">You can use a `Using` block to guarantee that the system disposes of a resource when your code exits the block.</span></span> <span data-ttu-id="34ffd-104">Это полезно, если вы используете системный ресурс, который потребляет большой объем памяти или что другие компоненты также хотят использовать.</span><span class="sxs-lookup"><span data-stu-id="34ffd-104">This is useful if you are using a system resource that consumes a large amount of memory, or that other components also want to use.</span></span>  
+# <a name="how-to-dispose-of-a-system-resource-visual-basic"></a><span data-ttu-id="0c708-102">Практическое руководство. Удаление системного ресурса (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="0c708-102">How to: Dispose of a System Resource (Visual Basic)</span></span>
+
+<span data-ttu-id="0c708-103">Вы можете использовать `Using` блок, чтобы гарантировать, что система уничтожает ресурс, когда код выходит из блока.</span><span class="sxs-lookup"><span data-stu-id="0c708-103">You can use a `Using` block to guarantee that the system disposes of a resource when your code exits the block.</span></span> <span data-ttu-id="0c708-104">Это полезно, если вы используете системный ресурс, который потребляет большой объем памяти или что другие компоненты также хотят использовать.</span><span class="sxs-lookup"><span data-stu-id="0c708-104">This is useful if you are using a system resource that consumes a large amount of memory, or that other components also want to use.</span></span>  
   
-### <a name="to-dispose-of-a-database-connection-when-your-code-is-finished-with-it"></a><span data-ttu-id="34ffd-105">Удаление подключения к базе данных после завершения работы с ним кода</span><span class="sxs-lookup"><span data-stu-id="34ffd-105">To dispose of a database connection when your code is finished with it</span></span>  
+### <a name="to-dispose-of-a-database-connection-when-your-code-is-finished-with-it"></a><span data-ttu-id="0c708-105">Удаление подключения к базе данных после завершения работы с ним кода</span><span class="sxs-lookup"><span data-stu-id="0c708-105">To dispose of a database connection when your code is finished with it</span></span>  
   
-1. <span data-ttu-id="34ffd-106">Убедитесь, что вы включили соответствующий [оператор Imports (пространство имен .NET и тип)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) для подключения к базе данных в начале исходного файла (в данном случае <xref:System.Data.SqlClient> ).</span><span class="sxs-lookup"><span data-stu-id="34ffd-106">Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).</span></span>  
+1. <span data-ttu-id="0c708-106">Убедитесь, что вы включили соответствующий [оператор Imports (пространство имен .NET и тип)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) для подключения к базе данных в начале исходного файла (в данном случае <xref:System.Data.SqlClient> ).</span><span class="sxs-lookup"><span data-stu-id="0c708-106">Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).</span></span>  
   
-2. <span data-ttu-id="34ffd-107">Создайте `Using` блок с `Using` `End Using` инструкциями и.</span><span class="sxs-lookup"><span data-stu-id="34ffd-107">Create a `Using` block with the `Using` and `End Using` statements.</span></span> <span data-ttu-id="34ffd-108">Внутри блока разместите код, который работает с подключением к базе данных.</span><span class="sxs-lookup"><span data-stu-id="34ffd-108">Inside the block, put the code that deals with the database connection.</span></span>  
+2. <span data-ttu-id="0c708-107">Создайте `Using` блок с `Using` `End Using` инструкциями и.</span><span class="sxs-lookup"><span data-stu-id="0c708-107">Create a `Using` block with the `Using` and `End Using` statements.</span></span> <span data-ttu-id="0c708-108">Внутри блока разместите код, который работает с подключением к базе данных.</span><span class="sxs-lookup"><span data-stu-id="0c708-108">Inside the block, put the code that deals with the database connection.</span></span>  
   
-3. <span data-ttu-id="34ffd-109">Объявите соединение и создайте его экземпляр в составе `Using` инструкции.</span><span class="sxs-lookup"><span data-stu-id="34ffd-109">Declare the connection and create an instance of it as part of the `Using` statement.</span></span>  
+3. <span data-ttu-id="0c708-109">Объявите соединение и создайте его экземпляр в составе `Using` инструкции.</span><span class="sxs-lookup"><span data-stu-id="0c708-109">Declare the connection and create an instance of it as part of the `Using` statement.</span></span>  
   
     ```vb  
     ' Insert the following line at the beginning of your source file.  
@@ -38,18 +39,18 @@ ms.locfileid: "84403502"
     End Sub  
     ```  
   
-     <span data-ttu-id="34ffd-110">Система уничтожает ресурс независимо от того, как вы выйдете из блока, включая случай необработанного исключения.</span><span class="sxs-lookup"><span data-stu-id="34ffd-110">The system disposes of the resource no matter how you exit the block, including the case of an unhandled exception.</span></span>  
+     <span data-ttu-id="0c708-110">Система уничтожает ресурс независимо от того, как вы выйдете из блока, включая случай необработанного исключения.</span><span class="sxs-lookup"><span data-stu-id="0c708-110">The system disposes of the resource no matter how you exit the block, including the case of an unhandled exception.</span></span>  
   
-     <span data-ttu-id="34ffd-111">Обратите внимание, что доступ извне блока невозможен `sqc` `Using` , так как его область ограничена блоком.</span><span class="sxs-lookup"><span data-stu-id="34ffd-111">Note that you cannot access `sqc` from outside the `Using` block, because its scope is limited to the block.</span></span>  
+     <span data-ttu-id="0c708-111">Обратите внимание, что доступ извне блока невозможен `sqc` `Using` , так как его область ограничена блоком.</span><span class="sxs-lookup"><span data-stu-id="0c708-111">Note that you cannot access `sqc` from outside the `Using` block, because its scope is limited to the block.</span></span>  
   
-     <span data-ttu-id="34ffd-112">Эту же методику можно использовать для системных ресурсов, таких как файловый обработчик или оболочка COM.</span><span class="sxs-lookup"><span data-stu-id="34ffd-112">You can use this same technique on a system resource such as a file handle or a COM wrapper.</span></span> <span data-ttu-id="34ffd-113">`Using`Если вы хотите оставить ресурс доступным для других компонентов после выхода из блока, используйте блок `Using` .</span><span class="sxs-lookup"><span data-stu-id="34ffd-113">You use a `Using` block when you want to be sure to leave the resource available for other components after you have exited the `Using` block.</span></span>  
+     <span data-ttu-id="0c708-112">Эту же методику можно использовать для системных ресурсов, таких как файловый обработчик или оболочка COM.</span><span class="sxs-lookup"><span data-stu-id="0c708-112">You can use this same technique on a system resource such as a file handle or a COM wrapper.</span></span> <span data-ttu-id="0c708-113">`Using`Если вы хотите оставить ресурс доступным для других компонентов после выхода из блока, используйте блок `Using` .</span><span class="sxs-lookup"><span data-stu-id="0c708-113">You use a `Using` block when you want to be sure to leave the resource available for other components after you have exited the `Using` block.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="34ffd-114">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="34ffd-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0c708-114">См. также</span><span class="sxs-lookup"><span data-stu-id="0c708-114">See also</span></span>
 
 - <xref:System.Data.SqlClient.SqlConnection>
-- [<span data-ttu-id="34ffd-115">Поток управления</span><span class="sxs-lookup"><span data-stu-id="34ffd-115">Control Flow</span></span>](index.md)
-- [<span data-ttu-id="34ffd-116">Структуры решений</span><span class="sxs-lookup"><span data-stu-id="34ffd-116">Decision Structures</span></span>](decision-structures.md)
-- [<span data-ttu-id="34ffd-117">Циклические структуры</span><span class="sxs-lookup"><span data-stu-id="34ffd-117">Loop Structures</span></span>](loop-structures.md)
-- [<span data-ttu-id="34ffd-118">Другие структуры управления</span><span class="sxs-lookup"><span data-stu-id="34ffd-118">Other Control Structures</span></span>](other-control-structures.md)
-- [<span data-ttu-id="34ffd-119">Вложенные структуры управления</span><span class="sxs-lookup"><span data-stu-id="34ffd-119">Nested Control Structures</span></span>](nested-control-structures.md)
-- [<span data-ttu-id="34ffd-120">Оператор using</span><span class="sxs-lookup"><span data-stu-id="34ffd-120">Using Statement</span></span>](../../../language-reference/statements/using-statement.md)
+- [<span data-ttu-id="0c708-115">Поток управления</span><span class="sxs-lookup"><span data-stu-id="0c708-115">Control Flow</span></span>](index.md)
+- [<span data-ttu-id="0c708-116">Структуры решений</span><span class="sxs-lookup"><span data-stu-id="0c708-116">Decision Structures</span></span>](decision-structures.md)
+- [<span data-ttu-id="0c708-117">Циклические структуры</span><span class="sxs-lookup"><span data-stu-id="0c708-117">Loop Structures</span></span>](loop-structures.md)
+- [<span data-ttu-id="0c708-118">Другие структуры управления</span><span class="sxs-lookup"><span data-stu-id="0c708-118">Other Control Structures</span></span>](other-control-structures.md)
+- [<span data-ttu-id="0c708-119">Вложенные структуры управления</span><span class="sxs-lookup"><span data-stu-id="0c708-119">Nested Control Structures</span></span>](nested-control-structures.md)
+- [<span data-ttu-id="0c708-120">Оператор using</span><span class="sxs-lookup"><span data-stu-id="0c708-120">Using Statement</span></span>](../../../language-reference/statements/using-statement.md)

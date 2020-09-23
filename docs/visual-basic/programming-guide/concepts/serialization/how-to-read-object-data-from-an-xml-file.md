@@ -2,17 +2,18 @@
 title: Практическое руководство. Чтение данных объекта из XML-файла
 ms.date: 07/20/2015
 ms.assetid: 1e1423bf-74a4-4dde-a3bb-ae1bfc0a68ed
-ms.openlocfilehash: 7097ec146987aea7855da40dd30f9cd3c17d8ce4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7677b32f76bee3fe579f96715b6c748c08c83a82
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413171"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077245"
 ---
-# <a name="how-to-read-object-data-from-an-xml-file-visual-basic"></a><span data-ttu-id="93056-102">How to: Read Object Data from an XML File (Visual Basic) (Практическое руководство. Чтение данных объекта из XML-файла (Visual Basic))</span><span class="sxs-lookup"><span data-stu-id="93056-102">How to: Read Object Data from an XML File (Visual Basic)</span></span>
-<span data-ttu-id="93056-103">В этом примере демонстрируется считывание данных объекта, которые ранее были записаны в XML-файл с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.</span><span class="sxs-lookup"><span data-stu-id="93056-103">This example reads object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.</span></span>  
+# <a name="how-to-read-object-data-from-an-xml-file-visual-basic"></a><span data-ttu-id="a6b30-102">How to: Read Object Data from an XML File (Visual Basic) (Практическое руководство. Чтение данных объекта из XML-файла (Visual Basic))</span><span class="sxs-lookup"><span data-stu-id="a6b30-102">How to: Read Object Data from an XML File (Visual Basic)</span></span>
+
+<span data-ttu-id="a6b30-103">В этом примере демонстрируется считывание данных объекта, которые ранее были записаны в XML-файл с помощью класса <xref:System.Xml.Serialization.XmlSerializer>.</span><span class="sxs-lookup"><span data-stu-id="a6b30-103">This example reads object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="93056-104">Пример</span><span class="sxs-lookup"><span data-stu-id="93056-104">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="a6b30-104">Пример</span><span class="sxs-lookup"><span data-stu-id="a6b30-104">Example</span></span>  
   
 ```vb  
 Public Class Book  
@@ -29,28 +30,31 @@ Public Sub ReadXML()
 End Sub  
 ```  
   
-## <a name="compile-the-code"></a><span data-ttu-id="93056-105">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="93056-105">Compile the code</span></span>  
- <span data-ttu-id="93056-106">Замените имя файла "c:\temp\SerializationOverview.xml" на имя файла, в котором содержатся сериализованные данные.</span><span class="sxs-lookup"><span data-stu-id="93056-106">Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data.</span></span> <span data-ttu-id="93056-107">Дополнительные сведения о сериализации данных см. [в разделе инструкции. запись данных объекта в XML-файл (Visual Basic)](how-to-write-object-data-to-an-xml-file.md).</span><span class="sxs-lookup"><span data-stu-id="93056-107">For more information about serializing data, see [How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md).</span></span>  
+## <a name="compile-the-code"></a><span data-ttu-id="a6b30-105">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="a6b30-105">Compile the code</span></span>  
+
+ <span data-ttu-id="a6b30-106">Замените имя файла "c:\temp\SerializationOverview.xml" на имя файла, в котором содержатся сериализованные данные.</span><span class="sxs-lookup"><span data-stu-id="a6b30-106">Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data.</span></span> <span data-ttu-id="a6b30-107">Дополнительные сведения о сериализации данных см. [в разделе инструкции. запись данных объекта в XML-файл (Visual Basic)](how-to-write-object-data-to-an-xml-file.md).</span><span class="sxs-lookup"><span data-stu-id="a6b30-107">For more information about serializing data, see [How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md).</span></span>  
   
- <span data-ttu-id="93056-108">У класса должен быть открытый конструктор без параметров.</span><span class="sxs-lookup"><span data-stu-id="93056-108">The class must have a public constructor without parameters.</span></span>  
+ <span data-ttu-id="a6b30-108">У класса должен быть открытый конструктор без параметров.</span><span class="sxs-lookup"><span data-stu-id="a6b30-108">The class must have a public constructor without parameters.</span></span>  
   
- <span data-ttu-id="93056-109">Десериализуются только открытые свойства и поля.</span><span class="sxs-lookup"><span data-stu-id="93056-109">Only public properties and fields are deserialized.</span></span>  
+ <span data-ttu-id="a6b30-109">Десериализуются только открытые свойства и поля.</span><span class="sxs-lookup"><span data-stu-id="a6b30-109">Only public properties and fields are deserialized.</span></span>  
   
-## <a name="robust-programming"></a><span data-ttu-id="93056-110">Отказоустойчивость</span><span class="sxs-lookup"><span data-stu-id="93056-110">Robust Programming</span></span>  
- <span data-ttu-id="93056-111">При следующих условиях возможно возникновение исключения:</span><span class="sxs-lookup"><span data-stu-id="93056-111">The following conditions may cause an exception:</span></span>  
+## <a name="robust-programming"></a><span data-ttu-id="a6b30-110">Отказоустойчивость</span><span class="sxs-lookup"><span data-stu-id="a6b30-110">Robust Programming</span></span>  
+
+ <span data-ttu-id="a6b30-111">При следующих условиях возможно возникновение исключения:</span><span class="sxs-lookup"><span data-stu-id="a6b30-111">The following conditions may cause an exception:</span></span>  
   
-- <span data-ttu-id="93056-112">В сериализуемом классе нет открытого конструктора без параметров.</span><span class="sxs-lookup"><span data-stu-id="93056-112">The class being serialized does not have a public, parameterless constructor.</span></span>  
+- <span data-ttu-id="a6b30-112">В сериализуемом классе нет открытого конструктора без параметров.</span><span class="sxs-lookup"><span data-stu-id="a6b30-112">The class being serialized does not have a public, parameterless constructor.</span></span>  
   
-- <span data-ttu-id="93056-113">Данные в файле не являются данными из класса, который десериализуется.</span><span class="sxs-lookup"><span data-stu-id="93056-113">The data in the file does not represent data from the class to be deserialized.</span></span>  
+- <span data-ttu-id="a6b30-113">Данные в файле не являются данными из класса, который десериализуется.</span><span class="sxs-lookup"><span data-stu-id="a6b30-113">The data in the file does not represent data from the class to be deserialized.</span></span>  
   
-- <span data-ttu-id="93056-114">Файл не существует (<xref:System.IO.IOException>).</span><span class="sxs-lookup"><span data-stu-id="93056-114">The file does not exist (<xref:System.IO.IOException>).</span></span>  
+- <span data-ttu-id="a6b30-114">Файл не существует (<xref:System.IO.IOException>).</span><span class="sxs-lookup"><span data-stu-id="a6b30-114">The file does not exist (<xref:System.IO.IOException>).</span></span>  
   
-## <a name="net-framework-security"></a><span data-ttu-id="93056-115">Безопасность .NET Framework</span><span class="sxs-lookup"><span data-stu-id="93056-115">.NET Framework Security</span></span>  
- <span data-ttu-id="93056-116">Всегда проверяйте входные данные и никогда не десериализуйте данные из непроверенных источников.</span><span class="sxs-lookup"><span data-stu-id="93056-116">Always verify inputs, and never deserialize data from an untrusted source.</span></span> <span data-ttu-id="93056-117">Созданный заново объект выполняется на локальном компьютере с разрешениями кода, который его десериализовал.</span><span class="sxs-lookup"><span data-stu-id="93056-117">The re-created object runs on a local computer with the permissions of the code that deserialized it.</span></span> <span data-ttu-id="93056-118">Следует проверять все входные данные перед использованием их в приложении.</span><span class="sxs-lookup"><span data-stu-id="93056-118">Verify all inputs before using the data in your application.</span></span>  
+## <a name="net-framework-security"></a><span data-ttu-id="a6b30-115">Безопасность .NET Framework</span><span class="sxs-lookup"><span data-stu-id="a6b30-115">.NET Framework Security</span></span>  
+
+ <span data-ttu-id="a6b30-116">Всегда проверяйте входные данные и никогда не десериализуйте данные из непроверенных источников.</span><span class="sxs-lookup"><span data-stu-id="a6b30-116">Always verify inputs, and never deserialize data from an untrusted source.</span></span> <span data-ttu-id="a6b30-117">Созданный заново объект выполняется на локальном компьютере с разрешениями кода, который его десериализовал.</span><span class="sxs-lookup"><span data-stu-id="a6b30-117">The re-created object runs on a local computer with the permissions of the code that deserialized it.</span></span> <span data-ttu-id="a6b30-118">Следует проверять все входные данные перед использованием их в приложении.</span><span class="sxs-lookup"><span data-stu-id="a6b30-118">Verify all inputs before using the data in your application.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="93056-119">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="93056-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a6b30-119">См. также</span><span class="sxs-lookup"><span data-stu-id="a6b30-119">See also</span></span>
 
 - <xref:System.IO.StreamWriter>
-- <span data-ttu-id="93056-120">[How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md) (Практическое руководство. Запись данных объекта в XML-файл (Visual Basic))</span><span class="sxs-lookup"><span data-stu-id="93056-120">[How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md)</span></span>
-- [<span data-ttu-id="93056-121">Сериализация (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="93056-121">Serialization (Visual Basic)</span></span>](index.md)
-- [<span data-ttu-id="93056-122">Руководство по программированию на Visual Basic</span><span class="sxs-lookup"><span data-stu-id="93056-122">Visual Basic Programming Guide</span></span>](../../index.md)
+- <span data-ttu-id="a6b30-120">[How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md) (Практическое руководство. Запись данных объекта в XML-файл (Visual Basic))</span><span class="sxs-lookup"><span data-stu-id="a6b30-120">[How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md)</span></span>
+- [<span data-ttu-id="a6b30-121">Сериализация (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="a6b30-121">Serialization (Visual Basic)</span></span>](index.md)
+- [<span data-ttu-id="a6b30-122">Руководство по программированию на Visual Basic</span><span class="sxs-lookup"><span data-stu-id="a6b30-122">Visual Basic Programming Guide</span></span>](../../index.md)
