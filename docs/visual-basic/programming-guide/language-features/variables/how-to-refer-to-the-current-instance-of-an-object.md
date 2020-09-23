@@ -8,14 +8,15 @@ helpviewer_keywords:
 - current instance
 - object variables [Visual Basic]
 ms.assetid: 7f9b2c77-03cd-428f-adc2-b18070226e7c
-ms.openlocfilehash: 43bfd54592fb1d26cbf7f268b7e098e01e3745d8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 64d21fe4aaf6fd34bf880373a7ab3067fb67820e
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410429"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077063"
 ---
 # <a name="how-to-refer-to-the-current-instance-of-an-object-visual-basic"></a>Практическое руководство. Ссылка на текущий экземпляр объекта (Visual Basic)
+
 *Текущим экземпляром* объекта является экземпляр, в котором в данный момент выполняется код.  
   
  Используйте `Me` ключевое слово для ссылки на текущий экземпляр.  
@@ -29,9 +30,9 @@ ms.locfileid: "84410429"
     Me.Close()  
     ```  
   
-     Несмотря `Me` на то, что ведет себя как объектная переменная, вы не можете объявить ее или присвоить ей что-либо. `Me`всегда ссылается на текущий экземпляр.  
+     Несмотря `Me` на то, что ведет себя как объектная переменная, вы не можете объявить ее или присвоить ей что-либо. `Me` всегда ссылается на текущий экземпляр.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объектные переменные](object-variables.md)
 - [Присваивание объектных переменных](object-variable-assignment.md)

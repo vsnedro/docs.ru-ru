@@ -8,19 +8,21 @@ helpviewer_keywords:
 - Char data type [Visual Basic], character data types
 - data types [Visual Basic], choosing
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
-ms.openlocfilehash: 33dd4c62776ae8c5ec0ce0a6d0858a7ed0d047fb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5fde5eff40d83bdd7d90cd611bd6749106db6e16
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401996"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077180"
 ---
 # <a name="character-data-types-visual-basic"></a>Символьные типы данных (Visual Basic)
+
 Visual Basic предоставляет *символьные типы данных* для работы с печатными и отображаемыми символами. Несмотря на то, что они работают с символами Юникода, `Char` содержит один символ, тогда как `String` содержит неопределенное число символов.  
   
  Для таблицы, отображающей параллельное сравнение типов данных Visual Basic, см. в разделе [типы данных](../../../language-reference/data-types/index.md).  
   
 ## <a name="char-type"></a>Тип char  
+
  `Char`Тип данных — это один двухбайтовый (16-разрядный) символ Юникода. Если переменная всегда хранит ровно один символ, объявите ее как `Char` . Пример:  
   
  [!code-vb[VbVbalrCharTypes#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrchartypes/vb/module1.vb#1)]
@@ -33,13 +35,14 @@ Visual Basic предоставляет *символьные типы данн�
  Дополнительные сведения см. в разделе [тип данных char](../../../language-reference/data-types/char-data-type.md).  
   
 ## <a name="string-type"></a>Тип строки  
+
  `String`Тип данных — это последовательность из нуля или более двухбайтовых (16-разрядных) символов Юникода. Если переменная может содержать неопределенное число символов, объявите ее как `String` . Пример:  
   
  [!code-vb[VbVbalrCharTypes#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrchartypes/vb/module1.vb#2)]
   
  Дополнительные сведения см. в разделе [тип данных String](../../../language-reference/data-types/string-data-type.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Простые типы данных](elementary-data-types.md)
 - [Составные типы данных](composite-data-types.md)

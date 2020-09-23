@@ -2,14 +2,15 @@
 title: Секционирование данных
 ms.date: 07/20/2015
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
-ms.openlocfilehash: 34749f9d7b137bade66b6103650871246c3cc532
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 07e33c4ce0d062a0f083d8970c0ad01f98923a52
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406850"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075321"
 ---
 # <a name="partitioning-data-visual-basic"></a>Секционирование данных (Visual Basic)
+
 Секционированием в LINQ называют операцию разделения входной последовательности на два раздела без изменения порядка элементов, а затем возвращения одного из разделов.  
   
  На следующем рисунке показаны результаты трех различных операций секционирования в последовательности символов. Первая операция возвращает первые три элемента в последовательности. Вторая операция пропускает первые три элемента и возвращает остальные элементы. Третья операция пропускает первые два элемента в последовательности и возвращает три следующих элемента.  
@@ -20,7 +21,7 @@ ms.locfileid: "84406850"
   
 ## <a name="operators"></a>Операторы  
   
-|Имя оператора|Описание:|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|  
+|Имя оператора|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|  
 |-------------------|-----------------|------------------------------------------|----------------------|  
 |Skip|Пропускает элементы до указанной позиции в последовательности.|`Skip`|<xref:System.Linq.Enumerable.Skip%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Skip%2A?displayProperty=nameWithType>|  
 |SkipWhile|Пропускает элементы, пока элемент не удовлетворит условию функции предиката.|`Skip While`|<xref:System.Linq.Enumerable.SkipWhile%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SkipWhile%2A?displayProperty=nameWithType>|  
@@ -30,26 +31,30 @@ ms.locfileid: "84406850"
 ## <a name="query-expression-syntax-examples"></a>Примеры синтаксиса выражений запросов  
   
 ### <a name="skip"></a>Пропустить  
+
  В следующем примере кода используется `Skip` предложение в Visual Basic для пропуска первых четырех строк в массиве строк перед возвратом оставшихся строк в массиве.  
   
  [!code-vb[CsLINQPartitioning#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#1)]  
   
 ### <a name="skipwhile"></a>SkipWhile  
+
  В следующем примере кода используется `Skip While` предложение в Visual Basic для пропуска строк в массиве, в то время как первая буква строки — "a". Остальные строки в массиве возвращаются.  
   
  [!code-vb[CsLINQPartitioning#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#2)]  
   
 ### <a name="take"></a>Take  
+
  В следующем примере кода используется `Take` предложение в Visual Basic для возврата первых двух строк в массиве строк.  
   
  [!code-vb[CsLINQPartitioning#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#3)]  
   
 ### <a name="takewhile"></a>TakeWhile  
+
  В следующем примере кода используется `Take While` предложение в Visual Basic для возврата строк из массива, в то время как длина строки не должна превышать 5.  
   
  [!code-vb[CsLINQPartitioning#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#4)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)

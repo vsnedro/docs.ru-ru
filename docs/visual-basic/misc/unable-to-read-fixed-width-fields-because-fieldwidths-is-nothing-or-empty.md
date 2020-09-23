@@ -4,21 +4,22 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_FieldWidthsNothing
 ms.assetid: 623e0825-5640-4e47-8341-7eeec80fc145
-ms.openlocfilehash: 855d4c254b0ddac27dc5ee5e21ca5aa3b99b3ea0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d5c02e8f81353e3e797190b5d72d10b72168afb0
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398491"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075659"
 ---
 # <a name="unable-to-read-fixed-width-fields-because-fieldwidths-is-nothing-or-empty"></a>Чтение полей фиксированной ширины невозможно: параметр FieldWidths имеет значение Nothing или не определен.
+
 `TextFieldParser` не удалось прочесть поля фиксированной ширины, поскольку свойство `FieldWidths` имеет значение `Nothing` или оно пустое.  
   
 ## <a name="to-correct-this-error"></a>Исправление ошибки  
   
 - Установите для `FieldWidths` допустимое значение.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод TextFieldParser.SetFieldWidths](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A)
 - [Свойство TextFieldParser.FieldWidths](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths%2A)

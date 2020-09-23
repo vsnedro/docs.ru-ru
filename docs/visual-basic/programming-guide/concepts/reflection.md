@@ -2,14 +2,15 @@
 title: Отражение
 ms.date: 07/20/2015
 ms.assetid: d991bc0f-d16a-4ac5-9351-70e5c5b9891b
-ms.openlocfilehash: 43c05a0b3bbfc3dfc304b1aed3f689625a40229a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 79603e0951732c7d0d0031d4fc44ddd7dbd392c9
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413184"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077258"
 ---
 # <a name="reflection-visual-basic"></a>Reflection (Visual Basic) (Отражение (Visual Basic))
+
 Механизм отражения позволяет получать объекты (типа <xref:System.Type>), которые описывают сборки, модули и типы. Отражение можно использовать для динамического создания экземпляра типа, привязки типа к существующему объекту, а также получения типа из существующего объекта и вызова его методов или доступа к его полям и свойствам. Если в коде используются атрибуты, отражение обеспечивает доступ к ним. Дополнительные сведения см. в разделе [Атрибуты](../../../standard/attributes/index.md).  
   
  Вот простой пример отражения, в котором для получения типа переменной используется статический метод `GetType`, наследуемый всеми типами от базового класса `Object`.  
@@ -21,7 +22,7 @@ Dim type As System.Type = i.GetType()
 System.Console.WriteLine(type)  
 ```  
   
- Результаты:  
+ Результат выглядит так:  
   
  `System.Int32`  
   
@@ -33,11 +34,12 @@ Dim info As System.Reflection.Assembly = GetType(System.Int32).Assembly
 System.Console.WriteLine(info)  
 ```  
   
- Результаты:  
+ Результат выглядит так:  
   
  `mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 ## <a name="reflection-overview"></a>Общие сведения об отражении  
+
  Отражение удобно использовать в следующих ситуациях:  
   
 - При необходимости доступа к атрибутам в метаданных программы. Дополнительные сведения см. в разделе [Извлечение информации, сохраненной в атрибуте](../../../standard/attributes/retrieving-information-stored-in-attributes.md).  
@@ -49,7 +51,8 @@ System.Console.WriteLine(info)
 - Для выполнения позднего связывания, которое обеспечивает доступ к методам в типах, созданных во время выполнения. См. раздел [Динамическая загрузка и использование типов](../../../framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
   
 ## <a name="related-sections"></a>Связанные разделы  
- Дополнительные сведения  
+
+ Дополнительные сведения:  
   
 - [Отражение](../../../framework/reflection-and-codedom/reflection.md)  
   
@@ -61,7 +64,7 @@ System.Console.WriteLine(info)
   
 - [Извлечение информации, сохраненной в атрибуте](../../../standard/attributes/retrieving-information-stored-in-attributes.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию на Visual Basic](../index.md)
 - [Сборки в .NET](../../../standard/assembly/index.md)

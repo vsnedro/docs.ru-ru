@@ -2,14 +2,15 @@
 title: Практическое руководство. Запрос к метаданным сборки при помощи отражения (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 53caa336-ab83-4181-b0f6-5c87c5f9e4ee
-ms.openlocfilehash: a4f73bd2c8c01cbf92fac67991f01a1cb3dee932
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fda27f41d31bf8aa3931bf5923ff4011628107fe
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396458"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075334"
 ---
 # <a name="how-to-query-an-assemblys-metadata-with-reflection-linq-visual-basic"></a>Как запрашивать метаданные сборки с помощью отражения (LINQ) (Visual Basic)
+
 В следующем примере показано использование LINQ с отражением для извлечения определенных метаданных о методах, соответствующих условиям поиска. В этом примере запрос будет искать имена всех методов в сборке, которые возвращают перечислимые типы, такие как массивы.  
   
 ## <a name="example"></a>Пример  
@@ -47,6 +48,6 @@ End Module
   
 В примере используется метод <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> для возвращения массива типов в указанной сборке. Фильтр [предложения WHERE](../../../language-reference/queries/where-clause.md) применяется таким образом, чтобы возвращались только открытые типы. Для каждого открытого типа создается вложенный запрос с использованием массива <xref:System.Reflection.MethodInfo>, который возвращается из вызова <xref:System.Type.GetMethods%2A?displayProperty=nameWithType>. Эти результаты фильтруются для возвращения только тех методов, возвращаемый тип которых является массивом или типом, который реализует <xref:System.Collections.Generic.IEnumerable%601>. Наконец, эти результаты группируются с помощью имени типа в качестве ключа.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to Objects (Visual Basic)](linq-to-objects.md)

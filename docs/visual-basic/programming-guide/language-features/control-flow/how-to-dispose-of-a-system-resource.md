@@ -10,14 +10,15 @@ helpviewer_keywords:
 - Using statement [Visual Basic], Using...End Using
 - Using block
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
-ms.openlocfilehash: dd15c6746628f45b072d46eea40051ed9afb7921
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c430bc7744f5aefaa65f2a86f3e5e22743ffed57
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403502"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077206"
 ---
 # <a name="how-to-dispose-of-a-system-resource-visual-basic"></a>Практическое руководство. Удаление системного ресурса (Visual Basic)
+
 Вы можете использовать `Using` блок, чтобы гарантировать, что система уничтожает ресурс, когда код выходит из блока. Это полезно, если вы используете системный ресурс, который потребляет большой объем памяти или что другие компоненты также хотят использовать.  
   
 ### <a name="to-dispose-of-a-database-connection-when-your-code-is-finished-with-it"></a>Удаление подключения к базе данных после завершения работы с ним кода  
@@ -44,7 +45,7 @@ ms.locfileid: "84403502"
   
      Эту же методику можно использовать для системных ресурсов, таких как файловый обработчик или оболочка COM. `Using`Если вы хотите оставить ресурс доступным для других компонентов после выхода из блока, используйте блок `Using` .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.SqlClient.SqlConnection>
 - [Поток управления](index.md)

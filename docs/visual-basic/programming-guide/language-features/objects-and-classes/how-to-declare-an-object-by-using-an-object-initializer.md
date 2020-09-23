@@ -7,14 +7,15 @@ helpviewer_keywords:
 - initializers [Visual Basic]
 - Video How tos, Visual Basic
 ms.assetid: 0f53a553-efd6-466d-80bf-6b679e5cd174
-ms.openlocfilehash: cf4954059a4b0bf015bed82a74357ecfd5f5987e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 61f520a528c3d40b9d34807d517a9bf27ad40da8
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404879"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075230"
 ---
 # <a name="how-to-declare-an-object-by-using-an-object-initializer-visual-basic"></a>Практическое руководство. Объявление объекта с помощью инициализатора объектов (Visual Basic)
+
 Инициализаторы объектов позволяют объявлять и создавать экземпляры класса в одной инструкции. Кроме того, можно одновременно инициализировать один или несколько членов экземпляра без вызова параметризованного конструктора.  
   
  При использовании инициализатора объекта для создания экземпляра именованного типа вызывается конструктор без параметров для класса, за которым следует инициализация назначенных членов в указанном порядке.  
@@ -59,7 +60,7 @@ ms.locfileid: "84404879"
   
      Дополнительные сведения см. в разделе [определение локального типа](../variables/local-type-inference.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Вывод локального типа](../variables/local-type-inference.md)
 - [Практическое руководство. Создание списка элементов](../../concepts/linq/how-to-create-a-list-of-items.md)

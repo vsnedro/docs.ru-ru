@@ -16,26 +16,31 @@ helpviewer_keywords:
 - interoperability, sharing components
 - shared components, using with assemblies
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
-ms.openlocfilehash: 0890bac80396feaf37d4ba917c1e3fafb8579981
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 135b121638b92adc5a3b0920aa29d10fd1d62d14
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396770"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075997"
 ---
 # <a name="troubleshooting-interoperability-visual-basic"></a>Устранение неполадок взаимодействия (Visual Basic)
+
 При взаимодействии между COM и управляемым кодом .NET Framework может возникнуть одна или несколько из следующих распространенных проблем.  
   
-## <a name="interop-marshaling"></a><a name="vbconinteroperabilitymarshalinganchor1"></a>Маршалинг взаимодействия  
+## <a name="interop-marshaling"></a><a name="vbconinteroperabilitymarshalinganchor1"></a> Маршалинг взаимодействия  
+
  Иногда может потребоваться использовать типы данных, которые не являются частью .NET Framework. Сборки взаимодействия обрабатывают большую часть работы для COM-объектов, но может потребоваться управлять типами данных, которые используются, когда управляемые объекты доступны для COM. Например, структуры в библиотеках классов должны указывать `BStr` неуправляемый тип в строках, отправляемых в COM-объекты, созданные с помощью Visual Basic 6,0 и более ранних версий. В таких случаях можно использовать <xref:System.Runtime.InteropServices.MarshalAsAttribute> атрибут, чтобы сделать управляемые типы доступными как неуправляемые типы.  
   
-## <a name="exporting-fixed-length-strings-to-unmanaged-code"></a><a name="vbconinteroperabilitymarshalinganchor2"></a>Экспорт строк фиксированной длины в неуправляемый код  
+## <a name="exporting-fixed-length-strings-to-unmanaged-code"></a><a name="vbconinteroperabilitymarshalinganchor2"></a> Экспорт строк фиксированной длины в неуправляемый код  
+
  В Visual Basic 6,0 и более ранних версиях строки экспортируются в COM-объекты в виде последовательности байтов без завершающего символа null. Для совместимости с другими языками Visual Basic .NET содержит символ завершения при экспорте строк. Лучшим способом устранения этой несовместимости является экспорт строк, в которых отсутствует завершающий символ, в виде массивов `Byte` или `Char` .  
   
-## <a name="exporting-inheritance-hierarchies"></a><a name="vbconinteroperabilitymarshalinganchor3"></a>Экспорт иерархий наследования  
+## <a name="exporting-inheritance-hierarchies"></a><a name="vbconinteroperabilitymarshalinganchor3"></a> Экспорт иерархий наследования  
+
  Иерархии управляемых классов выравниваются при предоставлении в виде COM-объектов. Например, если определить базовый класс с элементом, а затем наследовать базовый класс в производном классе, предоставляемом в виде COM-объекта, клиенты, использующие производный класс в COM-объекте, не смогут использовать наследуемые члены. Доступ к членам базового класса возможен из COM-объектов только в качестве экземпляров базового класса, а затем только в том случае, если базовый класс также создается как COM-объект.  
   
 ## <a name="overloaded-methods"></a>Перегруженные методы  
+
  Хотя можно создавать перегруженные методы с Visual Basic, они не поддерживаются COM. Если класс, содержащий перегруженные методы, предоставляется в виде COM-объекта, для перегруженных методов создаются новые имена методов.  
   
  Например, рассмотрим класс с двумя перегрузками `Synch` метода. Если класс представлен в виде COM-объекта, новые имена создаваемых методов могут быть `Synch` и `Synch_2` .  
@@ -48,13 +53,16 @@ ms.locfileid: "84396770"
   
  Чтобы решить обе проблемы, присвойте каждому методу уникальное имя, а не использование перегрузки при разработке объектов, которые будут предоставлены в виде COM-объектов.  
   
-## <a name="use-of-com-objects-through-interop-assemblies"></a><a name="vbconinteroperabilitymarshalinganchor4"></a>Использование COM-объектов с помощью сборок взаимодействия  
+## <a name="use-of-com-objects-through-interop-assemblies"></a><a name="vbconinteroperabilitymarshalinganchor4"></a> Использование COM-объектов с помощью сборок взаимодействия  
+
  Сборки взаимодействия используются почти так же, как если бы они находились под управляемым кодом для объектов COM, которые они представляют. Однако поскольку они являются оболочками и не являются реальными COM-объектами, между использованием сборок взаимодействия и стандартных сборок существуют некоторые различия. Эти области различий включают раскрытие классов и типы данных для параметров и возвращаемых значений.  
   
-## <a name="classes-exposed-as-both-interfaces-and-classes"></a><a name="vbconinteroperabilitymarshalinganchor5"></a>Классы, предоставляемые как интерфейсы и классы  
+## <a name="classes-exposed-as-both-interfaces-and-classes"></a><a name="vbconinteroperabilitymarshalinganchor5"></a> Классы, предоставляемые как интерфейсы и классы  
+
  В отличие от классов в стандартных сборках, классы COM доступны в сборках взаимодействия как интерфейс и класс, представляющий COM-класс. Имя интерфейса идентично имени класса COM. Имя класса взаимодействия совпадает с именем исходного класса COM, но с добавленным словом «class». Например, предположим, что имеется проект со ссылкой на сборку взаимодействия для COM-объекта. Если класс COM называется `MyComClass` , IntelliSense и обозреватель объектов отображают интерфейс с именем `MyComClass` и класс с именем `MyComClassClass` .  
   
-## <a name="creating-instances-of-a-net-framework-class"></a><a name="vbconinteroperabilitymarshalinganchor6"></a>Создание экземпляров класса .NET Framework  
+## <a name="creating-instances-of-a-net-framework-class"></a><a name="vbconinteroperabilitymarshalinganchor6"></a> Создание экземпляров класса .NET Framework  
+
  Как правило, экземпляр класса .NET Framework создается с помощью `New` инструкции с именем класса. Наличие класса COM, представленного сборкой взаимодействия, — это один из вариантов, в котором можно использовать `New` инструкцию с интерфейсом. Если класс COM не используется с `Inherits` оператором, интерфейс можно использовать так же, как и класс. В следующем коде показано, как создать `Command` объект в проекте, который содержит ссылку на COM-объект библиотеки Microsoft объекты данных ActiveX 2,8:  
   
  [!code-vb[VbVbalrInterop#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#20)]  
@@ -66,10 +74,12 @@ ms.locfileid: "84396770"
 > [!NOTE]
 > Сборки взаимодействия неявно реализуют интерфейсы, представляющие COM-классы. Не пытайтесь использовать `Implements` оператор для реализации этих интерфейсов, иначе возникнет ошибка.  
   
-## <a name="data-types-for-parameters-and-return-values"></a><a name="vbconinteroperabilitymarshalinganchor7"></a>Типы данных для параметров и возвращаемых значений  
+## <a name="data-types-for-parameters-and-return-values"></a><a name="vbconinteroperabilitymarshalinganchor7"></a> Типы данных для параметров и возвращаемых значений  
+
  В отличие от членов стандартных сборок, члены сборки взаимодействия могут иметь типы данных, отличные от тех, которые используются в объявлении исходного объекта. Несмотря на то, что сборки взаимодействия неявно преобразуют типы COM в совместимые типы среды CLR, следует обратить внимание на типы данных, используемые обеими сторонами для предотвращения ошибок во время выполнения. Например, в COM-объектах, созданных в Visual Basic 6,0 и более ранних версиях, значения типа `Integer` предполагают .NET Framework эквивалентный тип, `Short` . Рекомендуется использовать обозреватель объектов для проверки характеристик импортированных элементов перед их использованием.  
   
-## <a name="module-level-com-methods"></a><a name="vbconinteroperabilitymarshalinganchor8"></a>Методы COM уровня модуля  
+## <a name="module-level-com-methods"></a><a name="vbconinteroperabilitymarshalinganchor8"></a> Методы COM уровня модуля  
+
  Большинство COM-объектов используются путем создания экземпляра класса COM с помощью `New` ключевого слова и вызова методов объекта. Единственным исключением из этого правила являются COM-объекты, которые содержат `AppObj` `GlobalMultiUse` классы или COM. Такие классы похожи на методы уровня модуля в Visual Basic классов .NET. Visual Basic 6,0 и более ранних версий неявно создают экземпляры таких объектов при первом вызове одного из их методов. Например, в Visual Basic 6,0 можно добавить ссылку на библиотеку объектов Microsoft DAO 3,6 и вызвать `DBEngine` метод без предварительного создания экземпляра:  
   
 ```vb  
@@ -83,7 +93,8 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  [!code-vb[VbVbalrInterop#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#23)]  
   
-## <a name="unhandled-errors-in-event-handlers"></a><a name="vbconinteroperabilitymarshalinganchor9"></a>Необработанные ошибки в обработчиках событий  
+## <a name="unhandled-errors-in-event-handlers"></a><a name="vbconinteroperabilitymarshalinganchor9"></a> Необработанные ошибки в обработчиках событий  
+
  Одна из распространенных проблем взаимодействия включает в себя ошибки обработчиков событий, которые обрабатывали события, вызванные COM-объектами. Такие ошибки игнорируются, если только вы не проверите ошибки с помощью `On Error` `Try...Catch...Finally` инструкций или. Например, следующий пример относится к Visual Basic проекту .NET, имеющему ссылку на COM-объект библиотеки Microsoft объекты данных ActiveX 2,8.  
   
  [!code-vb[VbVbalrInterop#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#24)]  
@@ -91,13 +102,15 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
  В этом примере возникает ошибка, как ожидалось. Однако при попытке выполнить тот же пример без `Try...Catch...Finally` блока ошибка игнорируется, как если бы использовалась `OnError Resume Next` инструкция. Без обработки ошибок деление на ноль автоматически завершается сбоем. Так как такие ошибки никогда не вызывают ошибки необработанных исключений, важно использовать некоторую форму обработки исключений в обработчиках событий, обрабатывающих события из COM-объектов.  
   
 ### <a name="understanding-com-interop-errors"></a>Общие сведения об ошибках COM-взаимодействия  
+
  Без обработки ошибок вызовы взаимодействия часто создают ошибки, которые предоставляют небольшую информацию. По возможности используйте структурированную обработку ошибок, чтобы предоставить дополнительные сведения о проблемах, возникающих при их возникновении. Это может быть особенно полезно при отладке приложений. Пример:  
   
  [!code-vb[VbVbalrInterop#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#25)]  
   
  Вы можете найти такие сведения, как описание ошибки, HRESULT и источник ошибок COM, изучив содержимое объекта исключения.  
   
-## <a name="activex-control-issues"></a><a name="vbconinteroperabilitymarshalinganchor10"></a>Проблемы с элементом управления ActiveX  
+## <a name="activex-control-issues"></a><a name="vbconinteroperabilitymarshalinganchor10"></a> Проблемы с элементом управления ActiveX  
+
  Большинство элементов управления ActiveX, работающих с Visual Basic 6,0, работают с Visual Basic .NET без проблем. Основные исключения — это контейнерные элементы управления или элементы управления, которые визуально содержат другие элементы управления. Ниже приведены некоторые примеры старых элементов управления, которые неправильно работают с Visual Studio.  
   
 - Элемент управления Frame в Microsoft Forms 2,0  
@@ -108,7 +121,8 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  Существует несколько обходных путей для неподдерживаемых проблем с элементом управления ActiveX. Вы можете перенести существующие элементы управления в Visual Studio, если вы владеете исходным исходным кодом. В противном случае можно проверить наличие обновленных поставщиков программного обеспечения. NET-совместимые версии элементов управления для замены неподдерживаемых элементов управления ActiveX.  
   
-## <a name="passing-readonly-properties-of-controls-byref"></a><a name="vbconinteroperabilitymarshalinganchor11"></a>Передача свойств элементов управления только для чтения по ссылке ByRef  
+## <a name="passing-readonly-properties-of-controls-byref"></a><a name="vbconinteroperabilitymarshalinganchor11"></a> Передача свойств элементов управления только для чтения по ссылке ByRef  
+
  Visual Basic .NET иногда вызывает ошибки COM, такие как "Error 0x800A017F CTL_E_SETNOTSUPPORTED", при передаче `ReadOnly` свойств некоторых старых элементов управления ActiveX в качестве `ByRef` параметров в другие процедуры. Аналогичные вызовы процедур из Visual Basic 6,0 не вызывают ошибку, и параметры обрабатываются так, как если бы они были переданы по значению. Сообщение об ошибке Visual Basic .NET указывает, что вы пытаетесь изменить свойство, не имеющее `Set` процедуры свойства.  
   
  Если у вас есть доступ к вызываемой процедуре, можно предотвратить эту ошибку с помощью `ByVal` ключевого слова, чтобы объявить параметры, принимающие `ReadOnly` Свойства. Пример:  
@@ -119,14 +133,15 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  [!code-vb[VbVbalrInterop#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#27)]  
   
-## <a name="deploying-assemblies-that-expose-interop"></a><a name="vbconinteroperabilitymarshalinganchor12"></a>Развертывание сборок, предоставляющих взаимодействие  
+## <a name="deploying-assemblies-that-expose-interop"></a><a name="vbconinteroperabilitymarshalinganchor12"></a> Развертывание сборок, предоставляющих взаимодействие  
+
  Развертывание сборок, предоставляющих интерфейсы COM, представляет некоторые уникальные проблемы. Например, потенциальная проблема возникает, когда отдельные приложения ссылаются на одну и ту же сборку COM. Такая ситуация часто возникает при установке новой версии сборки, если другое приложение по-прежнему использует старую версию сборки. При удалении сборки, использующей общую библиотеку DLL, можно непреднамеренно сделать ее недоступной для других сборок.  
   
  Чтобы избежать этой проблемы, следует установить общие сборки в глобальный кэш сборок (GAC) и использовать установочного модуля для компонента. Если вы не можете установить приложение в глобальном кэше сборок, его следует установить на Коммонфилесфолдер в подкаталоге, относящемся к конкретной версии.  
   
  Сборки, которые не являются общими, должны располагаться рядом в каталоге с вызывающим приложением.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [COM-взаимодействие](index.md)

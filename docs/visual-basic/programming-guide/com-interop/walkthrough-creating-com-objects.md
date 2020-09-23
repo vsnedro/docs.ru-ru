@@ -8,13 +8,15 @@ helpviewer_keywords:
 - object creation [Visual Basic], COM objects
 - COM objects, walkthroughs
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
-ms.openlocfilehash: 6ff23f73af384a1440bcebd4b6bac21714e01756
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 90a21b70b45902a9f4fd559a97e777f26043fffb
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051484"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075620"
 ---
 # <a name="walkthrough-creating-com-objects-with-visual-basic"></a>Пошаговое руководство. Создание объектов COM с помощью Visual Basic
+
 При создании новых приложений или компонентов лучше создавать сборки .NET Framework. Однако Visual Basic также упрощает предоставление .NET Framework компонента COM. Это позволяет предоставлять новые компоненты для более ранних версий приложений, требующих COM-компонентов. В этом пошаговом руководстве показано, как использовать Visual Basic для предоставления объектов .NET Framework в виде COM-объектов как с шаблоном COM-класса, так и без него.  
   
  Самый простой способ предоставить COM-объекты — использовать шаблон COM-класса. Этот шаблон создает новый класс, затем настраивает проект для создания класса с уровнем взаимодействия в качестве COM-объекта и зарегистрируйте его в операционной системе.  
@@ -39,6 +41,7 @@ ms.locfileid: "86051484"
 6. Выберите **Сборка ClassLibrary1** в меню **Сборка** . Visual Basic создает сборку и регистрирует COM-объект в операционной системе.  
   
 ## <a name="creating-com-objects-without-the-com-class-template"></a>Создание COM-объектов без шаблона класса COM  
+
  Можно также создать COM-класс вручную вместо использования шаблона COM-класса. Эта процедура полезна при работе из командной строки или в том случае, если требуется больший контроль над определением объектов COM.  
   
 #### <a name="to-set-up-your-project-to-generate-a-com-object"></a>Настройка проекта для создания COM-объекта  

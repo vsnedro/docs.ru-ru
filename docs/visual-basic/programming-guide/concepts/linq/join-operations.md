@@ -2,14 +2,15 @@
 title: Операции соединения
 ms.date: 07/20/2015
 ms.assetid: 39ab4854-ac84-4738-9d0b-3cb79be84db4
-ms.openlocfilehash: 2e299b407712148db92c1c19a32fa318737ccf76
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e69e060447c0103c3c47be0fb34cad90e88c4516
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397549"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077323"
 ---
 # <a name="join-operations-visual-basic"></a>Операции JOIN (Visual Basic)
+
 *Соединение* двух источников данных — это связь объектов в одном источнике данных с объектами, которые имеют общий атрибут в другом источнике данных.  
   
  Соединение является важной операцией в запросах, направленных на источники данных, отношения которых друг к другу нельзя отследить напрямую. В объектно-ориентированном программировании оно может означать корреляцию между немоделируемыми объектами, например такими, как обратное направление одностороннего отношения. Примером одностороннего отношения является класс Customer, имеющий свойство типа City (город), в то время как класс City не имеет свойства, которое является коллекцией объектов Customer (клиент). В случае наличия списка объектов City для поиска всех клиентов в каждом городе можно использовать операцию соединения.  
@@ -32,7 +33,7 @@ ms.locfileid: "84397549"
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
 - [Анонимные типы](../../language-features/objects-and-classes/anonymous-types.md)
-- [Формулировка запросов-объединений и запросов векторного произведения](../../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
+- [Практическое руководство. Формулировка запросов-объединений и запросов векторного произведения](../../../../framework/data/adonet/sql/linq/formulate-joins-and-cross-product-queries.md)
 - [Предложение Join](../../../language-reference/queries/join-clause.md)
 - [Как присоединиться к содержимому из разнородных файлов (LINQ) (Visual Basic)](how-to-join-content-from-dissimilar-files-linq.md)
 - [Как заполнить коллекции объектов из нескольких источников (LINQ) (Visual Basic)](how-to-populate-object-collections-from-multiple-sources-linq.md)

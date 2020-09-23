@@ -11,14 +11,15 @@ helpviewer_keywords:
 - overloaded operators [Visual Basic], calling
 - operator overloading
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
-ms.openlocfilehash: fa2bc5417b8b917ff48502a5bd0a4daa21fab67e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0e88ff7b36535a709671a1f9b838f2b4488d1d37
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388573"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075191"
 ---
 # <a name="how-to-call-an-operator-procedure-visual-basic"></a>Практическое руководство. Вызов процедуры оператора (Visual Basic)
+
 Для вызова процедуры оператора используется символ оператора в выражении. В случае оператора преобразования вызывается [Функция CType](../../../language-reference/functions/ctype-function.md) для преобразования значения из одного типа данных в другой.  
   
  Процедуры оператора не вызываются явным образом. Вы просто используете оператор или `CType` функцию в операторе присваивания или выражении так же, как обычно используется оператор. Visual Basic выполняет вызов процедуры оператора.  
@@ -39,9 +40,10 @@ ms.locfileid: "84388573"
   
 2. Убедитесь, что типы данных операндов подходят для преобразования, и в правильном порядке.  
   
-3. `CType`вызывает процедуру оператора преобразования и возвращает преобразованное значение.  
+3. `CType` вызывает процедуру оператора преобразования и возвращает преобразованное значение.  
   
 ## <a name="example"></a>Пример  
+
  Следующий пример создает две <xref:System.TimeSpan> структуры, добавляет их вместе и сохраняет результат в третьей <xref:System.TimeSpan> структуре. <xref:System.TimeSpan>Структура определяет процедуры операторов для перегрузки нескольких стандартных операторов.  
   
  [!code-vb[VbVbcnProcedures#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#29)]  
@@ -51,9 +53,10 @@ ms.locfileid: "84388573"
  Пример вызова процедуры оператора диалога см. [в разделе как использовать класс, определяющий операторы](./how-to-use-a-class-that-defines-operators.md).  
   
 ## <a name="compile-the-code"></a>Компиляция кода  
+
  Убедитесь, что используемый класс или структура определяет оператор, который вы хотите использовать.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Процедуры операторов](./operator-procedures.md)
 - [Практическое руководство. Определение оператора](./how-to-define-an-operator.md)

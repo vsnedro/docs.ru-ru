@@ -2,14 +2,15 @@
 title: Объявленные элементы
 ms.date: 07/20/2015
 ms.assetid: 0d1d1bb5-ac0b-485f-8922-cdcec5574c79
-ms.openlocfilehash: f7fedc58ec061ddb133eb94ee3b3b7a7b49083cd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9359c8df60d7fdc06e7c8dfa1df82f1b277d7339
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357248"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075165"
 ---
 # <a name="declared-elements-in-visual-basic"></a>Объявленные элементы в Visual Basic
+
 *Объявленный элемент* — это элемент в программировании, который задается в операторе объявления. Объявленные элементы включают переменные, константы, перечисления, классы, структуры, модули, интерфейсы, процедуры, параметры процедур, возвращаемые значения функций, ссылки на внешние процедуры, операторы, свойства, события и делегаты.  
   
  К операторам объявления принадлежат:  
@@ -42,7 +43,8 @@ ms.locfileid: "84357248"
   
 - [Оператор Delegate](../../../language-reference/statements/delegate-statement.md)  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Declared Element Names](declared-element-names.md)  
  Именование элементов и использование строчных и прописных букв.  
   
@@ -53,6 +55,7 @@ ms.locfileid: "84357248"
  Сопоставление компилятором ссылок и объявлений; уточнение имен.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Соглашения о структуре программы и коде](../../program-structure/program-structure-and-code-conventions.md)  
  Рекомендации, как сделать код более читаемым, понятным и простым в поддержке.  
   
