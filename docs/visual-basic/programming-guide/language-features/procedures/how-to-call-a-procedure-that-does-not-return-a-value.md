@@ -6,14 +6,15 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - procedures [Visual Basic], calling
 ms.assetid: 259b49a3-a3c1-4254-ba8c-73cdc4127703
-ms.openlocfilehash: 514d6e576b9b782387840ae04dcefa00de876aa9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2686a4d9dc10cde209f558771feeb5ba4f4ccb21
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388742"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075009"
 ---
 # <a name="how-to-call-a-procedure-that-does-not-return-a-value-visual-basic"></a>Практическое руководство. Вызов процедуры, которая не возвращает значение (Visual Basic)
+
 `Sub`Процедура не возвращает значение в вызывающий код. Он вызывается явным образом с помощью изолированного вызывающего оператора. Его нельзя вызвать, просто используя его имя в выражении.  
   
 ### <a name="to-call-a-sub-procedure"></a>Вызов процедуры подпрограммы  
@@ -24,11 +25,11 @@ ms.locfileid: "84388742"
   
 3. Поместите аргументы в список аргументов в круглых скобках, разделяя их запятыми. Убедитесь, что аргументы указываются в том же порядке, в котором `Sub` процедура определяет соответствующие параметры.  
   
-     В следующем примере вызывается <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> функция Visual Basic для активации окна приложения. <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A>принимает заголовок окна в качестве единственного аргумента. Он не возвращает значение в вызывающий код. Если процесс «Блокнот» не выполняется, в примере создается исключение <xref:System.ArgumentException> . `Shell`Процедура предполагает, что приложения находятся в указанных путях.  
+     В следующем примере вызывается <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> функция Visual Basic для активации окна приложения. <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> принимает заголовок окна в качестве единственного аргумента. Он не возвращает значение в вызывающий код. Если процесс «Блокнот» не выполняется, в примере создается исключение <xref:System.ArgumentException> . `Shell`Процедура предполагает, что приложения находятся в указанных путях.  
   
      [!code-vb[VbVbalrCatRef#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#11)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Interaction.Shell%2A>
 - <xref:System.ArgumentException>

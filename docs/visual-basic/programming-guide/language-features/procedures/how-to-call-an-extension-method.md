@@ -5,12 +5,12 @@ helpviewer_keywords:
 - calling extension methods [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: df07750f-40f4-4c07-a79e-1113a27cfbea
-ms.openlocfilehash: 54419c99ae08c9ca2e3cfa86993dc99bc02bbb64
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 38d6e8534283f475be2409f4b7c74ef48f1f248b
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388664"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91074996"
 ---
 # <a name="how-to-call-an-extension-method-visual-basic"></a>Практическое руководство. Вызов метода расширения (Visual Basic)
 
@@ -64,6 +64,7 @@ End Module
      Результат в этом случае: `or not!!!` .
 
 ## <a name="example"></a>Пример
+
  Следующий код является полным примером создания и использования простого метода расширения.
 
 ```vb
@@ -95,7 +96,7 @@ End Module
 ' Goodbye?
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Написание метода расширения](./how-to-write-an-extension-method.md)
 - [Методы расширения](./extension-methods.md)
