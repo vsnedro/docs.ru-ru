@@ -7,17 +7,19 @@ helpviewer_keywords:
 - data types [Visual Basic], object variable
 - variables [Visual Basic], object
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
-ms.openlocfilehash: 1dd3e8cd68086fe116daf0678a1a19881f1ae9c3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 800b9754ce27cc6a494dd781d06f4bdca8a10e87
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410352"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91080235"
 ---
 # <a name="object-variable-values-visual-basic"></a>Значения объектных переменных (Visual Basic)
+
 Переменная [типа данных Object](../../../language-reference/data-types/object-data-type.md) может ссылаться на данные любого типа. Значение, сохраняемое в `Object` переменной, хранится в других местах памяти, а сама переменная содержит указатель на данные.  
   
 ## <a name="object-classifier-functions"></a>Функции-классификаторы объектов  
+
  Visual Basic предоставляет функции, возвращающие сведения о том `Object` , на что ссылается переменная, как показано в следующей таблице.  
   
 |Функция|Возвращает значение true, если объектная переменная ссылается на|  
@@ -25,7 +27,7 @@ ms.locfileid: "84410352"
 |<xref:Microsoft.VisualBasic.Information.IsArray%2A>|Массив значений, а не одно значение|  
 |<xref:Microsoft.VisualBasic.Information.IsDate%2A>|Значение [типа данных Date](../../../language-reference/data-types/date-data-type.md) или строка, которая может быть интерпретирована как значение даты и времени|  
 |<xref:Microsoft.VisualBasic.Information.IsDBNull%2A>|Объект типа <xref:System.DBNull> , представляющий отсутствующие или несуществующие данные|  
-|<xref:Microsoft.VisualBasic.Information.IsError%2A>|Объект исключения, производный от<xref:System.Exception>|  
+|<xref:Microsoft.VisualBasic.Information.IsError%2A>|Объект исключения, производный от <xref:System.Exception>|  
 |<xref:Microsoft.VisualBasic.Information.IsNothing%2A>|[Ничего](../../../language-reference/nothing.md), т. е. в данный момент ни один объект не назначен переменной|  
 |<xref:Microsoft.VisualBasic.Information.IsNumeric%2A>|Число или строка, которую можно интерпретировать как число|  
 |<xref:Microsoft.VisualBasic.Information.IsReference%2A>|Ссылочный тип (например, строка, массив, делегат или тип класса);|  
@@ -33,6 +35,7 @@ ms.locfileid: "84410352"
  Эти функции можно использовать, чтобы избежать отправки недопустимого значения в операцию или процедуру.  
   
 ## <a name="typeof-operator"></a>Оператор TypeOf  
+
  [Оператор typeof](../../../language-reference/operators/typeof-operator.md) также можно использовать для определения того, относится ли переменная объекта к конкретному типу данных. `TypeOf`Выражение... `Is` принимает значение, `True` Если тип операнда во время выполнения является производным от или реализует указанный тип.  
   
  В следующем примере используется `TypeOf` для объектных переменных, ссылающихся на значения и ссылочные типы.  
@@ -64,9 +67,10 @@ If TypeOf frm Is Object Then Debug.WriteLine("frm is Object")
  Объектная переменная `num` ссылается на данные типа `Integer` и `frm` ссылается на объект класса <xref:System.Windows.Forms.Form> .  
   
 ## <a name="object-arrays"></a>Массивы объектов  
+
  Можно объявить и использовать массив `Object` переменных. Это полезно, когда необходимо управлять множеством типов данных и классов объектов. Все элементы в массиве должны иметь один и тот же объявленный тип данных. Объявление этого типа данных как `Object` позволяет хранить объекты и экземпляры классов вместе с другими типами данных в массиве.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объектные переменные](object-variables.md)
 - [Объявление объектной переменной](object-variable-declaration.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 - grouping data [LINQ in Visual Basic]
 - Select clause [LINQ in Visual Basic]
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
-ms.openlocfilehash: 92ac5beb70526795eb140bd794e47981cebfea93
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6f4c58b15c33d8d2007069df88b2984e692df0a8
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410920"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91078376"
 ---
 # <a name="basic-query-operations-visual-basic"></a>Основные операции запроса (Visual Basic)
+
 В этом разделе приведены краткие сведения о выражениях LINQ в Visual Basic и некоторых типичных операциях, выполняемых в запросе. Дополнительные сведения см. в следующих разделах:  
   
  [Introduction to LINQ in Visual Basic](../../language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)  
@@ -32,6 +33,7 @@ ms.locfileid: "84410920"
  [Пошаговое руководство. Написание запросов в Visual Basic](walkthrough-writing-queries.md)  
   
 ## <a name="specifying-the-data-source-from"></a>Указание источника данных (из)  
+
  В запросе LINQ первым шагом является указание источника данных, к которому необходимо выполнить запрос. Таким образом, `From` предложение в запросе всегда происходит первым. Операторы запросов выбирают и формируют результат на основе типа источника.  
   
  [!code-vb[VbLINQBasicOps#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#1)]  
@@ -41,6 +43,7 @@ ms.locfileid: "84410920"
  Дополнительные сведения об использовании `From` предложения в Visual Basic см. в разделе [предложение from](../../../language-reference/queries/from-clause.md).  
   
 ## <a name="filtering-data-where"></a>Фильтрация данных (где)  
+
  Возможно, наиболее распространенной операцией запроса является применение фильтра в виде логического выражения. Затем запрос возвращает только те элементы, для которых выражение имеет значение true. `Where`Для выполнения фильтрации используется предложение. Фильтр указывает, какие элементы в источнике данных включить в результирующую последовательность. В следующем примере включаются только клиенты, имеющие адрес в Лондоне.  
   
  [!code-vb[VbLINQBasicOps#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#2)]  
@@ -60,6 +63,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  Дополнительные сведения об использовании `Where` предложения в Visual Basic см. в разделе [предложение WHERE](../../../language-reference/queries/where-clause.md).  
   
 ## <a name="ordering-data-order-by"></a>Упорядочение данных (ORDER BY)  
+
  Часто бывает удобно сортировать возвращаемые данные в определенном порядке. `Order By`Предложение приведет к сортировке элементов в возвращаемой последовательности по указанному полю или полям. Например, следующий запрос сортирует результаты на основе `Name` Свойства. Поскольку `Name` является строкой, возвращаемые данные будут отсортированы в алфавитном порядке от а до я.  
   
  [!code-vb[VbLINQBasicOps#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#3)]  
@@ -69,6 +73,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  Дополнительные сведения об использовании `Order By` предложения в Visual Basic см. в разделе [ORDER BY](../../../language-reference/queries/order-by-clause.md).  
   
 ## <a name="selecting-data-select"></a>Выбор данных (выбор)  
+
  `Select`Предложение задает форму и содержимое возвращаемых элементов. Например, можно указать, будут ли результаты состоять из полных `Customer` объектов, всего одного `Customer` свойства, подмножества свойств, сочетания свойств из различных источников данных или какого-либо нового типа результата на основе вычислений. Когда предложение `Select` создает что-либо отличное от копии исходного элемента, операция называется *проекцией*.  
   
  Чтобы получить коллекцию, состоящую из полных `Customer` объектов, выберите саму переменную диапазона:  
@@ -98,6 +103,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  Дополнительные сведения об использовании `Select` предложения в Visual Basic см. в разделе [предложение SELECT](../../../language-reference/queries/select-clause.md).  
   
 ## <a name="joining-data-join-and-group-join"></a>Соединение данных (присоединение и объединение групп)  
+
  В предложении можно объединить более одного источника данных `From` несколькими способами. Например, следующий код использует два источника данных и неявно объединяет свойства обоих из них в результате. Запрос выбирает учащихся, чьи фамилии начинаются с гласной.  
   
  [!code-vb[VbLINQBasicOps#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#9)]  
@@ -109,9 +115,10 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  [!code-vb[VbLINQBasicOps#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#10)]  
   
- `Group Join`объединяет коллекции в одну иерархическую коллекцию, как `LEFT JOIN` в SQL. Дополнительные сведения см. в разделе [предложение Join](../../../language-reference/queries/join-clause.md) и [предложение Group Join](../../../language-reference/queries/group-join-clause.md).  
+ `Group Join` объединяет коллекции в одну иерархическую коллекцию, как `LEFT JOIN` в SQL. Дополнительные сведения см. в разделе [предложение Join](../../../language-reference/queries/join-clause.md) и [предложение Group Join](../../../language-reference/queries/group-join-clause.md).  
   
 ## <a name="grouping-data-group-by"></a>Группирование данных (Group By)  
+
  Можно добавить `Group By` предложение для группирования элементов в результатах запроса в соответствии с одним или несколькими полями элементов. Например, следующий код группирует учащихся по классу year.  
   
  [!code-vb[VbLINQBasicOps#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#11)]  
@@ -152,7 +159,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  Дополнительные сведения о см `Group By` . в разделе [предложение GROUP BY](../../../language-reference/queries/group-by-clause.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [Приступая к работе с LINQ в Visual Basic](getting-started-with-linq.md)

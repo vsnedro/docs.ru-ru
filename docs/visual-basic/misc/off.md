@@ -1,5 +1,5 @@
 ---
-title: Выключено
+title: Выкл.
 ms.date: 07/20/2015
 f1_keywords:
 - Off
@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Off keyword [Visual Basic]
 ms.assetid: e0b5aa68-bde1-4cdd-b9e4-152798ae1b8b
-ms.openlocfilehash: 51a8b6ae4f7b9c99094636f7aa79d74f14336fe6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 85cae6d54b7a78dc94819816726affed5b6d5dbf
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84376099"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91078779"
 ---
 # <a name="off-visual-basic"></a>Off (Visual Basic)
+
 Отключает параметр компилятора.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Ключевое слово `Off` можно использовать в следующих контекстах:  
   
  [Оператор Option Explicit](../language-reference/statements/option-explicit-statement.md)  
@@ -26,6 +28,6 @@ ms.locfileid: "84376099"
   
  [Оператор Option Infer](../language-reference/statements/option-infer-statement.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ключевые слова](../language-reference/keywords/index.md)

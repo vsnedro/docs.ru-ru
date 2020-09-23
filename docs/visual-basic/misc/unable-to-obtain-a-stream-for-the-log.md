@@ -4,17 +4,18 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrApplicationLog_ExhaustedPossibleStreamNames
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
-ms.openlocfilehash: 540ff3fbba72d33b2efaa58ad7a8019628f5e83f
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 887356fac3abe5c9d28751f7c4d3b1908ed35acb
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61922542"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91078389"
 ---
 # <a name="unable-to-obtain-a-stream-for-the-log"></a>Невозможно получить поток для журнала
-Невозможно получить поток для журнала. Потенциальные имена файлов, на основе \<имя > уже используются.  
+
+Невозможно получить поток для журнала. Потенциальные имена файлов, основанные на \<name> , уже используются.  
   
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> Класс не удалось создать новый файл журнала, так как все возможные имена файлов журнала на основе \<имя > уже используются.  
+ <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>Классу не удалось создать новый файл журнала, так как все возможные имена файлов журналов на основе \<name> уже используются.  
   
  Наличие слишком большого количества файлов журнала может быть признаком проблем с архитектурой приложения. Дополнительные сведения содержатся в документации по классу <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> .  
   
@@ -28,5 +29,5 @@ ms.locfileid: "61922542"
 
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A>
-- [My.Application.Log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)
-- [My.Application.Info.DirectoryPath](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)
+- [My. Application. log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)
+- [My. Application. info. DirectoryPath](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)

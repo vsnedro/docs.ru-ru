@@ -5,22 +5,25 @@ helpviewer_keywords:
 - variables [Visual Basic]
 - values [Visual Basic], storing
 ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
-ms.openlocfilehash: ff617774d7e93ab4238ebc06617cc03fb6bc675a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bd6417033a6c2626d17ad003de6c637dd1e8adaa
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410390"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91080222"
 ---
 # <a name="variables-in-visual-basic"></a>Переменные в Visual Basic
+
 При выполнении вычислений с Visual Basic часто приходится сохранять значения. Например, может потребоваться вычислить несколько значений, сравнить их и (в зависимости от результата сравнения) выполнить с ними различные операции. Чтобы сравнить значения, их необходимо сохранить.  
   
 ## <a name="usage"></a>Использование  
+
  Visual Basic, как и большинство языков программирования, использует переменные для хранения значений. *Переменная* имеет имя (слово, которое используется для ссылки на содержащееся в переменной значение). Переменная также имеет тип данных (который определяет, какие данные можно хранить в переменной). Переменная может представлять массив, если она должна хранить индексированный набор близко связанных элементов данных.  
   
  Вывод локального типа позволяет объявлять переменные без явного указания типа данных. Вместо этого компилятор выводит тип переменной из типа инициализирующего выражения. Дополнительные сведения см. в разделах [Вывод локального типа](local-type-inference.md) и [Оператор Option Infer](../../../language-reference/statements/option-infer-statement.md).  
   
 ## <a name="assigning-values"></a>Назначение значений  
+
  Для выполнения вычислений и присвоения результата переменной используются операторы присваивания, как показано в следующем примере.  
   
  [!code-vb[VbVbalrVariables#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrVariables/VB/Class1.vb#1)]  
@@ -31,9 +34,10 @@ ms.locfileid: "84410390"
  Подробнее см. в разделе [Практическое руководство. Запись данных в переменную и их извлечение из переменной](how-to-move-data-into-and-out-of-a-variable.md).  
   
 ## <a name="variables-and-properties"></a>Переменные и свойства  
+
  Как и переменная, *свойство* соответствует значению, к которому можно получить доступ. Но оно является более сложным, чем переменная. Свойство использует блоки кода, определяющие способ задания и получения его значения. Подробнее см. в разделе [Различия между свойствами и переменными в Visual Basic](../procedures/differences-between-properties-and-variables.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объявление переменной](variable-declaration.md)
 - [Объектные переменные](object-variables.md)
