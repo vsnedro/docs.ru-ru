@@ -5,19 +5,20 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2ea85959-e763-4669-8bd9-46a9dab894bd
-ms.openlocfilehash: 159b23eb4ef5ca38ebce6e488080d315ec3be081
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 94b033d58061e3d2e48a352d782eec7c4202fa43
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151186"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91166837"
 ---
 # <a name="defining-primary-keys"></a>Определение первичных ключей
+
 База данных обычно содержит столбец или группу столбцов, уникально определяющих каждую строку в таблице. Такие столбцы или группы столбцов называются первичными ключами.  
   
- При определении <xref:System.Data.DataColumn> сингла <xref:System.Data.DataTable.PrimaryKey%2A> как <xref:System.Data.DataTable>для, таблица <xref:System.Data.DataColumn.AllowDBNull%2A> автоматически устанавливает свойство <xref:System.Data.DataColumn.Unique%2A> столбца к **ложному** и свойство к **истине.** Для основных ключей с несколькими столбцовами только свойство **AllowDBNull** автоматически устанавливается на **ложное.**  
+ При определении одного объекта в <xref:System.Data.DataColumn> качестве <xref:System.Data.DataTable.PrimaryKey%2A> для <xref:System.Data.DataTable> таблицы автоматически присваивает <xref:System.Data.DataColumn.AllowDBNull%2A> свойству столбца **значение false** , а <xref:System.Data.DataColumn.Unique%2A> свойству — **значение true**. Для первичных ключей с несколькими столбцами автоматически присваивается **значение false**только для свойства **AllowDbNull** .  
   
- Свойство **PrimaryKey** <xref:System.Data.DataTable> получает в качестве своей ценности массив одного или нескольких объектов **DataColumn,** как показано в следующих примерах. В первом примере в качестве первичного ключа определяется один столбец.  
+ Свойство **PrimaryKey** <xref:System.Data.DataTable> принимает в качестве значения массив из одного или нескольких объектов **DataColumn** , как показано в следующих примерах. В первом примере в качестве первичного ключа определяется один столбец.  
   
 ```vb  
 workTable.PrimaryKey = New DataColumn() {workTable.Columns("CustID")}  

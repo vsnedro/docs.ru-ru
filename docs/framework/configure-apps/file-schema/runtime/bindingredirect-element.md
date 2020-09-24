@@ -9,14 +9,15 @@ helpviewer_keywords:
 - container tags, <bindingRedirect> element
 - bindingRedirect element
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
-ms.openlocfilehash: d96585b397f75dcb9fac7e7fce93799cc95e7c6c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7667f78d2c341990585526fd153c0b230658a2ee
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154300"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91167253"
 ---
 # <a name="bindingredirect-element"></a>Элемент \<bindingRedirect>
+
 Перенаправляет одну версию сборки на другую.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,6 +35,7 @@ newVersion="new assembly version"/>
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -47,7 +49,7 @@ newVersion="new assembly version"/>
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|None||  
+|Отсутствуют||  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -58,7 +60,8 @@ newVersion="new assembly version"/>
 |`dependentAssembly`|Инкапсулирует политику привязки и расположение каждой сборки. Для каждой сборки используется только один элемент dependentAssembly.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  При сборке приложения .NET Framework с использованием сборки со строгим именем приложение во время выполнения по умолчанию будет использовать эту версию сборки, даже если доступна новая версия. Однако приложение можно настроить для выполнения с новой версией сборки. Дополнительные сведения о том, как среда выполнения использует эти файлы для определения используемой версии сборки, см. в разделе [как среда выполнения находит сборки](../../../deployment/how-the-runtime-locates-assemblies.md).  
   
  Перенаправление нескольких версий сборок можно выполнить, включив в элемент `bindingRedirect` несколько элементов `dependentAssembly`. Можно также выполнить перенаправление с более новой версии на более раннюю версию сборки.  
@@ -66,6 +69,7 @@ newVersion="new assembly version"/>
  Для явного перенаправления привязки сборки в файле конфигурации приложения необходимо разрешение безопасности. Это относится к перенаправлению как сборок платформы .NET Framework, так и сторонних сборок. Разрешение предоставляется путем установки <xref:System.Security.Permissions.SecurityPermissionFlag> флага для <xref:System.Security.Permissions.SecurityPermission> . Дополнительные сведения см. в статье [разрешение безопасности перенаправления привязки сборок](../../assembly-binding-redirection-security-permission.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показан способ перенаправления одной версии сборки на другую.  
   
 ```xml  
@@ -84,7 +88,7 @@ newVersion="new assembly version"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 49c083b7-a5ed-41cf-aabc-5aaba96f00e6
-ms.openlocfilehash: 77715913c24423c1dc95478977f4e3821e4c247b
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0920acac2c82677cfce37703b7027dedce91a535
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545315"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91166811"
 ---
 # <a name="loading-a-dataset-from-xml"></a>Загрузка набора данных из XML
+
 Содержимое объекта <xref:System.Data.DataSet> технологии ADO.NET может быть создано на основе XML-потока или XML-документа. Кроме того, использование .NET Framework обеспечивает большую гибкость при выборе сведений, загружаемых из XML, а также способа создания схемы или реляционной структуры <xref:System.Data.DataSet>.  
   
  Для заполнения <xref:System.Data.DataSet> данными из XML используйте метод **ReadXml** <xref:System.Data.DataSet> объекта. Метод **ReadXml** считывает данные из файла, потока или **XmlReader**и принимает в качестве аргументов источник XML и необязательный аргумент **XmlReadMode** . Дополнительные сведения о **XmlReader**см. в разделе [чтение XML-данных с помощью XmlTextReader](/previous-versions/dotnet/netframework-4.0/tfz3cz6w(v=vs.100)). Метод **ReadXml** считывает содержимое XML-потока или документа и загружает <xref:System.Data.DataSet> с данными. Также будет создана реляционная схема в <xref:System.Data.DataSet> зависимости от указанного параметра **XmlReadMode** и наличия уже существующей реляционной схемы.  
@@ -33,6 +34,7 @@ ms.locfileid: "90545315"
 > Если вы передали **XmlReader** в метод **ReadXml** , который располагает частью пути в XML-документ, то метод **ReadXml** прочитает его в следующий узел Element и будет считать его корневым элементом, считывая его только до конца узла Element. Это не применяется при указании **XmlReadMode. Fragment**.  
   
 ## <a name="dtd-entities"></a>Сущности DTD  
+
  Если XML содержит сущности, определенные в схеме определения типа документа (DTD), при попытке загрузить объект <xref:System.Data.DataSet> путем передачи имени файла, потока или непроверяющего **XmlReader** в метод **ReadXml**будет создано исключение. Вместо этого необходимо создать **XmlValidatingReader**, указав для **EntityHandling** значение **EntityHandling. ExpandEntities**и передав **XmlValidatingReader** в **ReadXml**. **XmlValidatingReader** развернет сущности перед считыванием <xref:System.Data.DataSet> .  
   
  В следующих примерах кода показаны способы загрузки набора данных <xref:System.Data.DataSet> из XML-потока. В первом примере показано имя файла, передаваемое методу **ReadXml** . Во втором примере показана загрузка строки, содержащей XML-код, с помощью объекта <xref:System.IO.StringReader>.  
@@ -114,6 +116,7 @@ foreach (DataTable dataTable in dataSet.Tables)
 ```  
   
 ## <a name="merging-data-from-xml"></a>Слияние данных из XML  
+
  Если набор данных <xref:System.Data.DataSet> уже содержит данные, новые данные из XML-кода добавляются к данным, находящимся в наборе данных <xref:System.Data.DataSet>. **ReadXml** не выполняет слияние из XML-кода с <xref:System.Data.DataSet> любыми строками с совпадающими первичными ключами. Чтобы перезаписать существующие сведения о строке новыми данными из XML, используйте **ReadXml** , чтобы создать новый объект <xref:System.Data.DataSet> , а затем <xref:System.Data.DataSet.Merge%2A> новый <xref:System.Data.DataSet> в существующем <xref:System.Data.DataSet> . Обратите внимание, что при загрузке DiffGram с помощью метода **ReadXml** с параметром **XmlReadMode** для **DiffGram** будут объединены строки с одинаковым уникальным идентификатором.  
   
 ## <a name="see-also"></a>См. также

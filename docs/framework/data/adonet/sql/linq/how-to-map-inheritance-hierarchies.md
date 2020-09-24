@@ -1,18 +1,19 @@
 ---
-title: Практическое руководство. Сопоставление иерархий наследования
+title: Практическое руководство. Как сопоставить иерархии наследования
 ms.date: 03/30/2017
 ms.assetid: b27c779b-9355-4dc7-b95f-7dfd504b6e48
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 737cb8743d8fd9c93cd46ebf50fba3fe554a35f2
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: c0709fde96a5d2f39f04a08ccd24ddf90c782f30
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75634668"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91166421"
 ---
-# <a name="how-to-map-inheritance-hierarchies"></a>Практическое руководство. Сопоставление иерархий наследования
+# <a name="how-to-map-inheritance-hierarchies"></a>Практическое руководство. Как сопоставить иерархии наследования
+
 Чтобы реализовать сопоставление наследования в LINQ, необходимо указать атрибуты и свойства атрибутов в корневом классе иерархии наследования, как описано в следующих шагах. Разработчики, использующие Visual Studio, могут использовать реляционный конструктор объектов для отображения иерархий наследования. См. раздел [как настроить наследование с помощью реляционного конструктора O/R](/visualstudio/data-tools/how-to-configure-inheritance-by-using-the-o-r-designer).  
   
 > [!NOTE]
@@ -34,7 +35,7 @@ ms.locfileid: "75634668"
   
 5. Добавьте свойство <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> только к одному атрибуту <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A>.  
   
-     Это свойство служит для обозначения *резервного* сопоставления, если значение дискриминатора из таблицы базы данных не соответствует какому-либо значению <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code%2A> в сопоставлениях наследования.  
+     Это свойство служит для обозначения *резервного* сопоставления, если значение дискриминатора из таблицы базы данных не соответствует какому-либо <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code%2A> значению в сопоставлениях наследования.  
   
 6. Добавьте свойство <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator%2A> к атрибуту <xref:System.Data.Linq.Mapping.ColumnAttribute>.  
   
@@ -50,7 +51,7 @@ ms.locfileid: "75634668"
  [!code-csharp[DLinqCustomize#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#4)]
  [!code-vb[DLinqCustomize#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#4)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Поддержка наследования](inheritance-support.md)
-- [Практическое руководство. Настройка классов сущностей с использованием редактора кода](how-to-customize-entity-classes-by-using-the-code-editor.md)
+- [Практическое руководство. Как настроить классы сущностей с помощью редактора кода](how-to-customize-entity-classes-by-using-the-code-editor.md)

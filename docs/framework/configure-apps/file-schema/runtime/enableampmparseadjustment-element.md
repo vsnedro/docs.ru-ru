@@ -2,14 +2,15 @@
 title: Элемент <EnableAmPmParseAdjustment>
 ms.date: 03/30/2017
 ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938
-ms.openlocfilehash: 8920e51fcaaca5cb78b80a99ea321163c9b5240f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f935f213e1bca8dac7a5401970bc6183575e2301
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73117373"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91167233"
 ---
 # <a name="enableampmparseadjustment-element"></a>Элемент \<EnableAmPmParseAdjustment>
+
 Определяет, используют ли методы синтаксического анализа даты и времени настроенный набор правил для синтаксического анализа строк даты, содержащих день, месяц, час и обозначение AM/PM.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,11 +24,12 @@ ms.locfileid: "73117373"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`enabled`|Обязательный атрибут.<br /><br /> Указывает, используют ли методы синтаксического анализа даты и времени настроенный набор правил для анализа строк даты, содержащих только день, месяц, час и обозначение AM/PM.|  
   
@@ -39,6 +41,7 @@ ms.locfileid: "73117373"
 |1|Методы синтаксического анализа даты и времени используют скорректированные правила для анализа строк даты, содержащих только день, месяц, час и обозначение AM/PM.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -48,7 +51,8 @@ ms.locfileid: "73117373"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `<EnableAmPmParseAdjustment>`Элемент определяет, как следующие методы анализируют строку даты, которая содержит числовой день и месяц, за которыми следует час и обозначение AM/PM (например, "4/10 6 AM"):  
   
 - <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>  
@@ -76,10 +80,10 @@ ms.locfileid: "73117373"
   
 |Название языка и региональных параметров|Enabled = "0"|Enabled = "1"|  
 |------------------|------------------|------------------|  
-|ru-RU|1/5/2017 4:00:00 AM|4/10/2017 6:00:00 AM|  
+|en-US|1/5/2017 4:00:00 AM|4/10/2017 6:00:00 AM|  
 |en-GB|5/1/2017 6:00:00|10/4/2017 6:00:00|  
   
 ## <a name="see-also"></a>См. также
 
-- [\<runtime>Дерев](runtime-element.md)
-- [\<configuration>Дерев](../configuration-element.md)
+- [\<runtime> Элемент](runtime-element.md)
+- [\<configuration> Элемент](../configuration-element.md)

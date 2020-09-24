@@ -7,14 +7,15 @@ helpviewer_keywords:
 - application configuration [.NET Framework]
 - assemblies [.NET Framework], specifying location
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
-ms.openlocfilehash: 3b24ff99eee9027d507ef89ca855162f221f826a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6f9e41584ca36fcead06b73a485cb879c45705fa
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555124"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91166889"
 ---
 # <a name="specifying-an-assemblys-location"></a>Указание расположения сборки
+
 Существует два способа указания расположения сборки:  
   
 - С помощью [\<codeBase>](./file-schema/runtime/codebase-element.md) элемента.  
@@ -24,6 +25,7 @@ ms.locfileid: "90555124"
  Можно также использовать [средство настройки .NET Framework (Mscorcfg. msc)](/previous-versions/dotnet/netframework-4.0/2bc0cxhc(v=vs.100)) , чтобы указать расположения сборок или указать расположения среды CLR для проверки сборок.  
   
 ## <a name="using-the-codebase-element"></a>Использование \<codeBase> элемента  
+
  Элемент можно использовать **\<codeBase>** только в конфигурации компьютера или в файлах политики издателя, которые также перенаправляют версию сборки. Когда среда выполнения определяет используемую версию сборки, она применяет параметр базы кода из файла, который определяет версию. Если не указано ни одной базы кода, среда выполнения проверяет наличие сборки обычным способом. Дополнительные сведения см. [в разделе Обнаружение сборок в среде выполнения](../deployment/how-the-runtime-locates-assemblies.md).  
   
  В следующем примере показано, как указать расположение сборки.  
@@ -50,6 +52,7 @@ ms.locfileid: "90555124"
 > Если вы предоставляете указание базы кода для сборки, не имеющей строгого имени, подсказка должна указывать на базу приложения или подкаталог базового каталога приложения.  
   
 ## <a name="using-the-probing-element"></a>Использование \<probing> элемента  
+
  Среда выполнения находит сборки, не имеющие базы кода, путем проверки. Дополнительные сведения о проверке см. в разделе [как среда выполнения находит сборки](../deployment/how-the-runtime-locates-assemblies.md).  
   
  [\<probing>](./file-schema/runtime/probing-element.md)Элемент в файле конфигурации приложения можно использовать для указания подкаталогов, которые среда выполнения должна искать при поиске сборки. В следующем примере показано, как указать каталоги, которые должна искать среда выполнения.  

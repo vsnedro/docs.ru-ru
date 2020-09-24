@@ -7,14 +7,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
-ms.openlocfilehash: 8757352a7444fad802ea88ba58e0fe643c86cbb8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 736b8dc5179a15ec219c1dae06b9ee6b5d6c3ef3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286693"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91166629"
 ---
 # <a name="oracle-and-adonet"></a>Oracle и ADO.NET
+
 > [!NOTE]
 > Типы в пространстве имен <xref:System.Data.OracleClient> считаются устаревшими. Эти типы по-прежнему поддерживаются в платформе .NET Framework текущей версии, однако будут удалены в следующем выпуске. Корпорация Майкрософт рекомендует использовать поставщик Oracle, предоставляемый сторонними разработчиками.  
   
@@ -38,7 +39,8 @@ using System.Data.OracleClient;
 csc /r:System.Data.OracleClient.dll  
 ```  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Требования к системе](system-requirements-for-the-dotnet-data-provider-for-oracle.md)  
  Описывает требования к использованию поставщика данных .NET Framework для Oracle и описывает ряд проблем, которые необходимо учитывать при их использовании.  
   
@@ -63,7 +65,8 @@ csc /r:System.Data.OracleClient.dll
  [Распределенные транзакции Oracle](oracle-distributed-transactions.md)  
  Описывает автоматическое прикрепление объекта <xref:System.Data.OracleClient.OracleConnection> к существующей распределенной транзакции, если эта транзакция активна.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Защита приложений ADO.NET](securing-ado-net-applications.md)  
  Описывает приемы безопасного программирования при использовании ADO.NET.  
   
@@ -79,7 +82,7 @@ csc /r:System.Data.OracleClient.dll
  [DbProviderFactories](dbproviderfactories.md)  
  Описывает универсальные классы, позволяющие писать независимый от поставщика код в ADO.NET.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [ADO.NET](index.md)
 - [Общие сведения об ADO.NET](ado-net-overview.md)
