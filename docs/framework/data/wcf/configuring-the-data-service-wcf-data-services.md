@@ -7,14 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, configuring
 ms.assetid: 59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c
-ms.openlocfilehash: 57830421eee3c94f9785a2c603eb31b96f99f4d5
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a30a8c2c731e8c5cb2b22c8d7f34ec32d149803c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90552847"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91152797"
 ---
 # <a name="configuring-the-data-service-wcf-data-services"></a>Настройка службы данных (службы данных WCF)
+
 С помощью WCF Data Services можно создавать службы данных, предоставляющие доступ к каналам Open Data Protocol (OData). В этих каналах могут находиться данные из различных источников данных. WCF Data Services использует поставщики данных для предоставления этих данных в качестве веб-канала OData. В число таких поставщиков входят поставщик Entity Framework, поставщик отражения, а также набор пользовательских интерфейсов поставщиков служб данных. Реализация поставщика определяет модель данных для службы. Дополнительные сведения см. в разделе [поставщики служб данных](data-services-providers-wcf-data-services.md).  
   
  В WCF Data Services служба данных — это класс, который наследует от <xref:System.Data.Services.DataService%601> класса, где тип службы данных является контейнером сущностей модели данных. Этот контейнер сущностей имеет одно или несколько свойств, возвращающих интерфейс <xref:System.Linq.IQueryable%601>, которые используются для доступа к наборам сущностей модели данных.  
@@ -25,6 +26,7 @@ ms.locfileid: "90552847"
 [!code-vb[Astoria Northwind Service#DataServiceConfigComplete](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind.svc.vb#dataserviceconfigcomplete)]  
   
 ## <a name="data-service-configuration-settings"></a>Параметры конфигурации службы данных  
+
  Класс <xref:System.Data.Services.DataServiceConfiguration> позволяет задать следующее поведение службы данных.  
   
 |Участник|Поведение|  
@@ -48,14 +50,16 @@ ms.locfileid: "90552847"
 |<xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A>|Этот параметр настройки упрощает процесс устранения неполадок службы данных, возвращая дополнительные сведения в ответном сообщении об ошибке. Параметр не предназначен для использования в рабочей среде. Дополнительные сведения см. в разделе [Разработка и развертывание WCF Data Services](developing-and-deploying-wcf-data-services.md).|  
   
 <a name="accessRequirements"></a>
+
 ## <a name="minimum-resource-access-requirements"></a>Минимальные требования для доступа к ресурсам  
+
  В следующих сведениях о таблице указаны минимальные права набора сущностей, которые необходимо предоставить для выполнения определенной операции. Примеры путей основаны на службе данных Northwind, которая создается при завершении [краткого руководства](quickstart-wcf-data-services.md). Поскольку перечисления <xref:System.Data.Services.EntitySetRights> и <xref:System.Data.Services.ServiceOperationRights> определяются с помощью <xref:System.FlagsAttribute>, для указания нескольких разрешений для одного набора сущностей или операции можно использовать логический оператор OR. Дополнительные сведения см. [в разделе инструкции. Включение доступа к службе данных](how-to-enable-access-to-the-data-service-wcf-data-services.md).  
   
 |Путь/действие|`GET`|`DELETE`|`MERGE`|`POST`|`PUT`|  
 |------------------|-----------|--------------|-------------|------------|-----------|  
 |`/Customers`|<xref:System.Data.Services.EntitySetRights.ReadMultiple>|Не поддерживается|Не поддерживается|<xref:System.Data.Services.EntitySetRights.WriteAppend>|Не поддерживается|  
 |`/Customers('ALFKI')`|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteDelete>|<xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge>|Н/Д|<xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteReplace>|  
-|`/Customers('ALFKI')/Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Не поддерживается|Не поддерживается|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge> или <xref:System.Data.Services.EntitySetRights.WriteReplace><br /><br /> - и -<br /><br /> `Orders``:`и<xref:System.Data.Services.EntitySetRights.WriteAppend>|Не поддерживается|  
+|`/Customers('ALFKI')/Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Не поддерживается|Не поддерживается|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge> или <xref:System.Data.Services.EntitySetRights.WriteReplace><br /><br /> - и -<br /><br /> `Orders` `:` и <xref:System.Data.Services.EntitySetRights.WriteAppend>|Не поддерживается|  
 |`/Customers('ALFKI')/Orders(10643)`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteDelete>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge>|Не поддерживается|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteReplace>|  
 |`/Orders(10643)/Customer`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteDelete><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge>;<br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.WriteAppend><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.WriteAppend> и <xref:System.Data.Services.EntitySetRights.ReadSingle>|Не поддерживается|  
 |`/Customers('ALFKI')/$links/Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Не поддерживается|Не поддерживается|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge> или <xref:System.Data.Services.EntitySetRights.WriteReplace><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|Не поддерживается|  
@@ -63,9 +67,9 @@ ms.locfileid: "90552847"
 |`/Orders(10643)/$links/Customer`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge> или <xref:System.Data.Services.EntitySetRights.WriteReplace>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteMerge>|Не поддерживается|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle>;<br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteReplace>|  
 |`/Customers/$count`|<xref:System.Data.Services.EntitySetRights.ReadMultiple>|Не поддерживается|Не поддерживается|Не поддерживается|Не поддерживается|  
 |`/Customers('ALFKI')/ContactName`|<xref:System.Data.Services.EntitySetRights.ReadSingle>|Не поддерживается|<xref:System.Data.Services.EntitySetRights.WriteMerge>|Не поддерживается|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
-|`/Customers('ALFKI')/Address/StreetAddress/$value` <sup>1</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.WriteDelete>|Не поддерживается|Не поддерживается|Не поддерживается|  
+|`/Customers('ALFKI')/Address/StreetAddress/$value`<sup>1</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.WriteDelete>|Не поддерживается|Не поддерживается|Не поддерживается|  
 |`/Customers('ALFKI')/ContactName/$value`|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.ReadSingle> и <xref:System.Data.Services.EntitySetRights.WriteDelete>|<xref:System.Data.Services.EntitySetRights.WriteMerge>|Не поддерживается|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
-|`/Customers('ALFKI')/$value` <sup>2</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|Не поддерживается|Не поддерживается|Не поддерживается|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
+|`/Customers('ALFKI')/$value`<sup>2</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|Не поддерживается|Не поддерживается|Не поддерживается|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
 |`/Customers?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Не поддерживается|Не поддерживается|`Customers`: <xref:System.Data.Services.EntitySetRights.WriteAppend>|Не поддерживается|  
 |`/Customers('ALFKI')?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> - и -<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Не поддерживается|Не поддерживается|Не поддерживается|Не поддерживается|  
   
@@ -74,7 +78,9 @@ ms.locfileid: "90552847"
  <sup>2</sup> этот URI поддерживается, если свойство, возвращающее большой двоичный объект (BLOB), определено как ресурс мультимедиа, принадлежащий сущности, которая является записью ссылки на носитель, в данном случае — `Customers` . Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md).  
   
 <a name="versioning"></a>
+
 ## <a name="versioning-requirements"></a>Требования к управлению версиями  
+
  Для следующих поведений конфигурации службы данных требуется версия 2 протокола OData или более поздние версии:  
   
 - Поддержка числа запросов.  
@@ -83,7 +89,7 @@ ms.locfileid: "90552847"
   
  Дополнительные сведения см. в разделе [Управление версиями службы данных](data-service-versioning-wcf-data-services.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Определение служб данных WCF](defining-wcf-data-services.md)
 - [Размещение службы данных](hosting-the-data-service-wcf-data-services.md)

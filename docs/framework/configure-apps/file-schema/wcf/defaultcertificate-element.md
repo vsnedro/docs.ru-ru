@@ -2,14 +2,15 @@
 title: Элемент <defaultCertificate>
 ms.date: 03/30/2017
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
-ms.openlocfilehash: cce236bf80fa00f01a3b5f4680d975f83fde0c16
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2eaec4f4296f90579ca32d817f0a20da4ccc9a37
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400419"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91153902"
 ---
 # <a name="defaultcertificate-element"></a>Элемент \<defaultCertificate>
+
 Задает сертификат X.509 для использования, когда служба или служба маркеров безопасности не предоставляет сертификат посредством протокола согласования.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,11 +32,12 @@ ms.locfileid: "70400419"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |findValue|Строка. Значение, которое нужно найти.|  
 |x509FindType|Перечисление. Одно из полей сертификата, где следует проводить поиск.|  
@@ -67,6 +69,7 @@ ms.locfileid: "70400419"
 |Перечисление|К числу значений относятся следующие: AddressBook, AuthRoot, CertificateAuthority, Disallowed, My, Root, TrustedPeople и TrustedPublisher.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -75,10 +78,12 @@ ms.locfileid: "70400419"
 |-------------|-----------------|  
 |[\<serviceCertificate>](servicecertificate-of-clientcredentials-element.md)|Задает сертификат для использования при проверке подлинности службы для клиента.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Для привязок, использующих безопасность сообщений на основе сертификатов, сертификат, заданный этим элементом конфигурации, используется для шифрования сообщений службе; предполагается также, что он будет использоваться службой для подписи ответов клиенту. Он сохраняет один сертификат для использования при отсутствии сертификата, заданного службой сертификата.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере указывается сертификат, который будет использоваться для конечных точек, URI которых начинается с `http://www.contoso.com` , и сертификат, который будет использоваться для всех остальных конечных точек, не выполняющих согласование сертификатов.  
   
 ```xml  
@@ -99,7 +104,7 @@ ms.locfileid: "70400419"
 </serviceCertificate>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>

@@ -2,14 +2,15 @@
 title: <sslStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
-ms.openlocfilehash: c5c7ec2b18143ff4d71540a60e24b8225ca4db16
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: aa6bc7f5a94afc8a190d3d9d2d71ea8b38d8c25b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738595"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91153577"
 ---
 # \<sslStreamSecurity>
+
 Представляет пользовательский элемент привязки, который поддерживает безопасность канала с помощью потока SSL.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,16 +28,18 @@ ms.locfileid: "73738595"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|requireClientCertificate|Логическое значение, указывающее, требуется ли для этой привязки сертификат клиента. Значение по умолчанию — `false`.|  
+|requireClientCertificate|Логическое значение, указывающее, требуется ли для этой привязки сертификат клиента. Значение по умолчанию — `false`.|  
 |sslProtocols|Значение флага перечисления SslProtocols, указывающее, какие протоколы SslProtocols поддерживаются. Значение по умолчанию — Ssl3&#124;TLS&#124;Tls11&#124;Tls12.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -45,7 +48,7 @@ ms.locfileid: "73738595"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

@@ -11,14 +11,15 @@ helpviewer_keywords:
 - language providers, settings schema
 - compiler configuration settings
 ms.assetid: c020b139-8699-4f0d-9ac9-70d0c5b2a8c8
-ms.openlocfilehash: 5b1f9684ad26d4a03769af287fc8b0c0c7c4cc1a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 457e90c92530e04070575e42e3fc282ce45b3d03
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088685"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91153954"
 ---
 # <a name="compiler-and-language-provider-settings-schema"></a>Схема параметров поставщиков языков и компиляторов
+
 Параметры поставщиков языков и компиляторов определяют элементы конфигурации компиляторов для доступных поставщиков языков. Каждый элемент конфигурации компилятора определяет имя типа поставщика кода, параметры компилятора, названия поддерживаемых языков и поддерживаемые расширения имен файлов.  
   
 В .NET Framework начальные параметры компилятора определены файле конфигурации компьютера (Machine.config). Разработчики и поставщики компиляторов могут добавлять параметры конфигурации для новой реализации <xref:System.CodeDom.Compiler.CodeDomProvider>. С помощью метода <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> можно осуществлять программное перечисление параметров конфигурации для поставщиков языков и компиляторов на компьютере.  
@@ -35,6 +36,7 @@ ms.locfileid: "74088685"
 |[\<compiler>](compiler-element.md)|Задает атрибуты конфигурации компилятора для поставщика языка.|  
   
 ## <a name="example"></a>Пример  
+
  В приведенном ниже примере показан типичный элемент конфигурации компилятора.  
   
 ```xml  
@@ -58,4 +60,4 @@ ms.locfileid: "74088685"
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Схема файла конфигурации](../index.md)
-- [\<compiler>Дерев](compiler-element.md)
+- [\<compiler> Элемент](compiler-element.md)

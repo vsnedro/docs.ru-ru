@@ -2,14 +2,15 @@
 title: <services>
 ms.date: 03/30/2017
 ms.assetid: 80d76ba9-2058-48ad-9b91-5e4be7e5c113
-ms.openlocfilehash: 02d1d530f37f5082153c9aa6b9993fc4009917f5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b8cb5075ba41bed5a22b152a231c7213b326a62f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854976"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91153720"
 ---
 # \<services>
+
 Службы задаются в разделе `services` файла конфигурации. Для каждой службы используется собственный раздел конфигурации `service`.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,9 +29,11 @@ ms.locfileid: "70854976"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Нет  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -45,6 +48,6 @@ ms.locfileid: "70854976"
 |-------------|-----------------|  
 |[\<system.serviceModel>](system-servicemodel.md)|Корневой элемент всех элементов конфигурации Windows Communication Foundation (WCF).|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ServicesSection>

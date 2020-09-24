@@ -5,17 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8f5eec26-b809-4aca-8778-7e202356d856
-ms.openlocfilehash: 14e7e1ccb051410c351e49afee9f2d6809264833
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bce90c1d310178e66da7c758c6df2cd357199c8b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151303"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91153291"
 ---
 # <a name="datarows-and-datarowviews"></a>Объекты DataRow и DataRowView
-Представление <xref:System.Data.DataView> предоставляет перечисляемую коллекцию объектов <xref:System.Data.DataRowView>. Объекты **DataRowView** разоблачают значения как объектные массивы, которые индексируются либо именем, либо обычной ссылкой столбца в основной таблице. Вы можете <xref:System.Data.DataRow> получить доступ к тому, что <xref:System.Data.DataRowView.Row%2A> подвергается **DataRowView** с помощью свойства **DataRowView**.  
+
+Представление <xref:System.Data.DataView> предоставляет перечисляемую коллекцию объектов <xref:System.Data.DataRowView>. Объекты **DataRowView** предоставляют значения в виде массивов объектов, индексируемых либо по имени, либо по порядковому номеру столбца в базовой таблице. Доступ к представлению <xref:System.Data.DataRow> , предоставляемому **DataRowView** , можно получить с помощью <xref:System.Data.DataRowView.Row%2A> свойства **DataRowView**.  
   
- При просмотре значений с помощью <xref:System.Data.DataView.RowStateFilter%2A> **DataRowView**свойство **DataView** определяет, какая строка версии базового **DataRow** подвергается воздействию. Для получения информации о доступе к различным версиям строкс с помощью **DataRow** [см.](row-states-and-row-versions.md)  
+ При просмотре значений с помощью **DataRowView** <xref:System.Data.DataView.RowStateFilter%2A> свойство **DataView** определяет, какая версия строки базового объекта **DataRow** предоставляется. Сведения о доступе к разным версиям строк с помощью **DataRow**см. в разделе [состояния строк и версии строк](row-states-and-row-versions.md).  
   
  В следующем примере кода показаны все текущие и исходные значения в таблице.  
   
