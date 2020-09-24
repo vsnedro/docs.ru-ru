@@ -5,17 +5,19 @@ helpviewer_keywords:
 - language reference
 - Visual Basic code, language reference
 ms.assetid: df6e7c50-5f3e-4381-98ed-ba5c3e9fe228
-ms.openlocfilehash: 7209b6856eb7302dfa2e5e8938509d9238ceff4d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7f4b375c350dca58aa1002402806113ec0f91b55
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "85840358"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91098765"
 ---
 # <a name="reference-visual-basic"></a>Справочник по Visual Basic
+
 В этом разделе приведены ссылки на сведения о различных аспектах программирования в Visual Basic.  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
  [Справочник по языку Visual Basic](../language-reference/index.md)  
  Справочная информация о различных аспектах языка Visual Basic.  
   
@@ -29,6 +31,7 @@ ms.locfileid: "85840358"
  Ссылки на полную спецификацию Visual Basic с подробной информацией обо всех аспектах этого языка.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Общие элементы пользовательского интерфейса (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
  Содержит разделы, посвященные диалоговым окнам в Visual Studio.  
   
