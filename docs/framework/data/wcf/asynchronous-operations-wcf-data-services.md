@@ -6,14 +6,15 @@ helpviewer_keywords:
 - asynchronous operations [WCF Data Services]
 - WCF Data Services, client library
 ms.assetid: 679644c7-e3fc-422c-b14a-b44b683900d0
-ms.openlocfilehash: d1f45979dba5c3ab0dccc8d0a61a7abaa9913e11
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: cf3a81914d78e8f08c06602600ce5dcef4f4d35b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556867"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91191649"
 ---
 # <a name="asynchronous-operations-wcf-data-services"></a>Асинхронные операции (службы данных WCF)
+
 При разработке веб-приложений необходимо учитывать наличие большего времени задержки между клиентом и сервером по сравнению с приложениями, выполняющимися во внутренних сетях. Чтобы оптимизировать производительность и взаимодействие с пользователем приложения, мы рекомендуем использовать асинхронные методы <xref:System.Data.Services.Client.DataServiceContext> <xref:System.Data.Services.Client.DataServiceQuery%601> классов и при доступе к WCF Data Servicesным серверам через Интернет.  
   
  Несмотря на то, что WCF Data Services серверы обрабатывают HTTP-запросы асинхронно, некоторые методы WCF Data Services клиентских библиотек являются синхронными и ожидают завершения всего обмена запроса-ответа до продолжения выполнения. Асинхронные методы клиентских библиотек WCF Data Services не ожидают завершения этого обмена и могут позволить приложению поддерживать реагирующий пользовательский интерфейс.  
@@ -34,8 +35,9 @@ ms.locfileid: "90556867"
 |Сохранение изменений в объектах контекста <xref:System.Data.Services.Client.DataServiceContext>|-   <xref:System.Data.Services.Client.DataServiceContext.BeginSaveChanges%2A><br />-   <xref:System.Data.Services.Client.DataServiceContext.EndSaveChanges%2A>|  
   
 ## <a name="threading-considerations-for-asynchronous-operations"></a>Вопросы использования потоков в асинхронных операциях  
+
  В многопоточном приложении делегат, зарегистрированный в качестве обратного вызова для асинхронной операции, не обязательно вызывается в том же потоке, который использовался для вызова метода *Begin* , который создает первоначальный запрос. В приложении, где обратный вызов должен быть вызван в определенном потоке, необходимо явным образом маршалировать выполнение метода *End* , который обрабатывает ответ, в нужный поток. Например, в приложениях на основе Windows Presentation Foundation (WPF) и на основе Silverlight необходимо выполнить маршалинг ответа обратно в поток пользовательского интерфейса с помощью метода <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> объекта <xref:System.Windows.Threading.Dispatcher>. Дополнительные сведения см. [в разделе запросы к службе данных (WCF Data Services/Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc903932(v=vs.95)).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)

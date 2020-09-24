@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2314f2a2-b1c3-40c4-95bb-cdf9b21a7b53
-ms.openlocfilehash: e9b9c806dd77ea90399aaefdaa751cbd0ab938e9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4b3a63cb23851c6545f330ebd2371e1a34ff13e8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546748"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198318"
 ---
 # <a name="how-to-execute-a-query-that-returns-structuraltype-results"></a>Практическое руководство. Выполнение запроса, возвращающего результаты типа StructuralType
+
 В этом подразделе показано выполнение команды для концептуальной модели с помощью объекта <xref:System.Data.EntityClient.EntityCommand>, а также получение результатов <xref:System.Data.Metadata.Edm.StructuralType> с помощью <xref:System.Data.EntityClient.EntityDataReader>. Классы <xref:System.Data.Metadata.Edm.EntityType>, <xref:System.Data.Metadata.Edm.RowType> и <xref:System.Data.Metadata.Edm.ComplexType> являются производными класса <xref:System.Data.Metadata.Edm.StructuralType>.  
   
 ### <a name="to-run-the-code-in-this-example"></a>Выполнение кода в этом примере  
@@ -25,6 +26,7 @@ ms.locfileid: "90546748"
      [!code-vb[DP EntityServices Concepts#Namespaces](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#namespaces)]  
   
 ## <a name="example"></a>Пример  
+
  В этом примере выполняется запрос, который возвращает результаты <xref:System.Data.Metadata.Edm.EntityType>. При передаче следующего запроса в качестве аргумента функции `ExecuteStructuralTypeQuery` функция отобразит подробные сведения о `Products`:  
   
  [!code-csharp[DP EntityServices Concepts 2#SelectProduct](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#selectproduct)]  
@@ -36,7 +38,7 @@ ms.locfileid: "90546748"
  [!code-csharp[DP EntityServices Concepts#eSQLStructuralTypes](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#esqlstructuraltypes)]
  [!code-vb[DP EntityServices Concepts#eSQLStructuralTypes](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#esqlstructuraltypes)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по Entity SQL](./language-reference/entity-sql-reference.md)
 - [Поставщик EntityClient для Entity Framework](entityclient-provider-for-the-entity-framework.md)

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - container tags, <assemblyIdentity> element
 - assemblyIdentity element
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-ms.openlocfilehash: b026dafbde796bbd8726de56b532ed6710ba2290
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f3e74b05ac0fd7c57963f2aad047ba3f2d63a10a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154313"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170185"
 ---
 # <a name="assemblyidentity-element-for-runtime"></a>Элемент \<assemblyIdentity> для \<runtime>
+
 Содержит идентифицирующие сведения о сборке.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ culture="assembly culture"/>
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -56,6 +58,7 @@ culture="assembly culture"/>
 |`x86`|32-разрядный процессор x86, либо собственный, либо в среде Windows on Windows (WOW) на 64-разрядной платформе.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -67,7 +70,8 @@ culture="assembly culture"/>
 |`dependentAssembly`|Инкапсулирует политику привязки и расположение каждой сборки. `<dependentAssembly>`Для каждой сборки используется один элемент.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Каждый **\<dependentAssembly>** элемент должен иметь один **\<assemblyIdentity>** дочерний элемент.  
   
  Если `processorArchitecture` атрибут имеется, `<assemblyIdentity>` элемент применяется только к сборке с соответствующей архитектурой процессора. Если `processorArchitecture` атрибут отсутствует, `<assemblyIdentity>` элемент может применяться к сборке с любой архитектурой процессора.  
@@ -102,6 +106,7 @@ culture="assembly culture"/>
  Если файл конфигурации содержит элемент без `<assemblyIdentity>` `processorArchitecture` атрибута и не содержит элемент, соответствующий платформе, то используется элемент без `processorArchitecture` атрибута.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как предоставить сведения о сборке.  
   
 ```xml  
@@ -119,7 +124,7 @@ culture="assembly culture"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

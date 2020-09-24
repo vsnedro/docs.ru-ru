@@ -2,12 +2,12 @@
 title: IdentityServer для облачных приложений в машинном код
 description: Создание архитектуры облачных приложений .NET для Azure | IdentityServer
 ms.date: 05/13/2020
-ms.openlocfilehash: 2128001f0d25b1edd795dd9676e0d76018c1fa3a
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: bdf193aac348b54f2ebf5b537beef5d61a1d5a1e
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144374"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91163834"
 ---
 # <a name="identityserver-for-cloud-native-applications"></a>IdentityServer для собственных приложений в облаке
 
@@ -44,7 +44,7 @@ IdentityServer предоставляет по промежуточного сл
 
 IdentityServer4 является открытым исходным кодом и может использоваться бесплатно. Его можно добавить в приложения с помощью пакетов NuGet. Основной пакет — [IdentityServer4](https://www.nuget.org/packages/IdentityServer4/) , который был загружен более 4 000 000 раз. Базовый пакет не включает код пользовательского интерфейса и поддерживает только в конфигурации памяти. Чтобы использовать ее с базой данных, вам также понадобится поставщик данных, такой как [IdentityServer4. EntityFramework](https://www.nuget.org/packages/IdentityServer4.EntityFramework) , который использует Entity Framework Core для хранения конфигурации и рабочих данных для IdentityServer. Для пользовательского интерфейса можно скопировать файлы из [репозитория пользовательского интерфейса](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) быстрого запуска в приложение ASP.NET Core MVC, чтобы добавить поддержку входа и выхода с помощью по промежуточного слоя IdentityServer.
 
-## <a name="configuration"></a>Конфигурация
+## <a name="configuration"></a>Параметр Configuration
 
 IdentityServer поддерживает различные типы протоколов и поставщиков проверки подлинности, которые можно настроить в рамках каждой выборочной установки. Обычно это делается в классе ASP.NET Core приложения `Startup` в `ConfigureServices` методе. Конфигурация включает в себя указание поддерживаемых протоколов и пути к серверам и конечным точкам, которые будут использоваться. На рис. 8-2 показан пример конфигурации, взятой из проекта пользовательского интерфейса быстрого запуска IdentityServer4:
 
@@ -100,7 +100,7 @@ IdentityServer также содержит общедоступный демон
 ## <a name="references"></a>Ссылки
 
 - [Документация по IdentityServer](https://docs.identityserver.io/en/latest/)
-- [Типы приложений](https://docs.microsoft.com/azure/active-directory/develop/app-types)
+- [Типы приложений](/azure/active-directory/develop/app-types)
 - [Клиент OIDC JavaScript](https://docs.identityserver.io/en/latest/quickstarts/4_javascript_client.html)
 
 >[!div class="step-by-step"]

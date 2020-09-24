@@ -3,14 +3,15 @@ title: Вызов функций в запросах LINQ to Entities
 description: Используйте эти статьи, чтобы увидеть, как классы Ентитифунктионс и Склфунктионс предоставляют доступ к каноническим и функциям базы данных в составе Entity Framework.
 ms.date: 03/30/2017
 ms.assetid: 12a525a9-727c-4464-a0c7-71a0ef541792
-ms.openlocfilehash: eb206e9b331da1ae442c1f310e78fec5c6b57e82
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8c771c93e0c3ed82f3ad550613dd855fd06b6f48
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546052"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177492"
 ---
 # <a name="calling-functions-in-linq-to-entities-queries"></a>Вызов функций в запросах LINQ to Entities
+
 В подразделах этого раздела описывается вызов функций в запросах LINQ to Entities.  
   
  Классы <xref:System.Data.Objects.EntityFunctions> и <xref:System.Data.Objects.SqlClient.SqlFunctions> обеспечивают доступ к каноническим функциям и функциям базы данных посредством платформы Entity Framework. Дополнительные сведения см. в статьях [как вызывать канонические функции](how-to-call-canonical-functions.md) и [как вызывать функции базы данных](how-to-call-database-functions.md).  
@@ -26,6 +27,7 @@ ms.locfileid: "90546052"
  Дополнительные сведения см. в подразделах этого раздела.  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Практическое руководство. Вызов канонических функций](how-to-call-canonical-functions.md)  
   
  [Практическое руководство. Вызов функций базы данных](how-to-call-database-functions.md)  
@@ -36,7 +38,7 @@ ms.locfileid: "90546052"
   
  [Практическое руководство. Вызов определенных моделью функций как методов объектов](how-to-call-model-defined-functions-as-object-methods.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)
 - [Канонические функции](canonical-functions.md)

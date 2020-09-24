@@ -8,14 +8,15 @@ helpviewer_keywords:
 - ThrowUnobservedTaskExceptions element
 - <ThrowUnobservedTaskExceptions> element
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
-ms.openlocfilehash: de5a686bcbd88fc52173b488103f033575623d62
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 012c2e70e66015bc317606a7eea07812b5df26e7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153819"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183927"
 ---
 # <a name="throwunobservedtaskexceptions-element"></a>Элемент \<ThrowUnobservedTaskExceptions>
+
 Определяет, будут ли необработанные исключения задачи завершать выполняющийся процесс.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ ms.locfileid: "79153819"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -46,6 +48,7 @@ ms.locfileid: "79153819"
 |`true`|Завершает выполняющийся процесс для исключения необработанной задачи.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -56,7 +59,8 @@ ms.locfileid: "79153819"
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|  
 |||  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Если исключение, связанное с объектом <xref:System.Threading.Tasks.Task> , не было замечено, то операция отсутствует <xref:System.Threading.Tasks.Task.Wait%2A> , родительский элемент не присоединяется, а <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> свойство не было прочитано, поэтому исключение задачи считается незамеченным.  
   
  В .NET Framework 4, по умолчанию, если <xref:System.Threading.Tasks.Task> исключение, для которого имеется незамеченная исключительная ошибка, уничтожается сборщиком мусора, метод завершения создает исключение и завершает процесс. Завершение процесса определяется временем сбора мусора и финализации.  
@@ -72,6 +76,7 @@ ms.locfileid: "79153819"
 - Задав в реестре значение DWORD Сровунобсерведтаскексцептионс = 1 в HKEY_LOCAL_MACHINE \Софтваре\микрософт \\ . Ключ NETFramework.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как включить создание исключений в задачах с помощью файла конфигурации приложения.  
   
 ```xml  
@@ -83,12 +88,13 @@ ms.locfileid: "79153819"
 ```  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как выдается незамеченное исключение из задачи. Чтобы правильно работать, код должен быть запущен в качестве выпущенной программы.  
   
  [!code-csharp[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/throwunobservedtaskexceptions/cs/program.cs#1)]
  [!code-vb[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/throwunobservedtaskexceptions/vb/program.vb#1)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

@@ -5,14 +5,15 @@ helpviewer_keywords:
 - appDomainManagerType element
 - <appDomainManagerType> element
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
-ms.openlocfilehash: 8eb6129b3fafaeb81a94d5a4078e41a16583a226
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e21384de6ca07c637a79ee54207d1e3ddfbf20e6
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154434"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170315"
 ---
 # <a name="appdomainmanagertype-element"></a>Элемент \<appDomainManagerType>
+
 Указывает тип, который служит диспетчером домена приложения для домена приложения, используемого по умолчанию.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ ms.locfileid: "79154434"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -36,6 +38,7 @@ ms.locfileid: "79154434"
 |`value`|Обязательный атрибут. Указывает имя типа, включая пространство имен, которое служит диспетчером доменов приложений для домена приложения по умолчанию в процессе.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -45,7 +48,8 @@ ms.locfileid: "79154434"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Чтобы указать тип диспетчера домена приложения, необходимо указать и этот элемент, и [\<appDomainManagerAssembly>](appdomainmanagerassembly-element.md) элемент. Если один из этих элементов не указан, другой игнорируется.  
   
  При загрузке домена приложения по умолчанию создается <xref:System.TypeLoadException> исключение, если указанный тип не существует в сборке, заданной [\<appDomainManagerAssembly>](appdomainmanagerassembly-element.md) элементом, и процесс не запускается.  
@@ -59,6 +63,7 @@ ms.locfileid: "79154434"
  Этот элемент конфигурации доступен только в .NET Framework 4 и более поздних версиях.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как указать, что диспетчер домена приложения для домена приложения по умолчанию процесса — это `MyMgr` тип в `AdMgrExample` сборке.  
   
 ```xml  
@@ -75,7 +80,7 @@ ms.locfileid: "79154434"
 
 - <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>
-- [\<appDomainManagerAssembly>Дерев](appdomainmanagerassembly-element.md)
+- [\<appDomainManagerAssembly> Элемент](appdomainmanagerassembly-element.md)
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)
 - [Метод SetAppDomainManagerType](../../../unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)
