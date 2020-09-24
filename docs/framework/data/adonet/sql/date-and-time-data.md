@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6f5ff56a-a57e-49d7-8ae9-bbed697e42e3
-ms.openlocfilehash: 43b3349b2a35385dcc49d0866e0695b08eac2d2e
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6fe047fc672a2b42f886e81dcace91042a552932
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551495"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91156320"
 ---
 # <a name="date-and-time-data"></a>Данные даты и времени
+
 В SQL Server 2008 появились новые типы данных для обработки сведений о дате и времени. Новые типы данных включают в себя отдельные типы для даты и времени, а также расширенные типы данных с более высоким диапазоном, точностью и поддержкой часовых поясов. Начиная с .NET Framework 3.5 с пакетом обновления 1 (SP1), поставщик данных .NET Framework для SQL Server (<xref:System.Data.SqlClient>) полностью поддерживает все новые возможности ядра СУБД SQL Server 2008. Для использования новых возможностей с SqlClient необходимо установить .NET Framework 3.5 с пакетом обновления 1 (SP1) или более поздней версии.  
   
  В версиях SQL Server, выпущенных до SQL Server 2008, было только два типа данных для работы с датами и временем: `datetime` и `smalldatetime`. Оба типа данных содержат как значение даты, так и значение времени, затрудняя работу только со значениями даты или времени. Кроме того, эти типы данных поддерживают только даты, наступившие после представления григорианского календаря в Англии в 1753 году. Другое ограничение заключается в том, что эти устаревшие типы данных не учитывают часовой пояс. Это затрудняет работу с данными, которые берутся из разных часовых поясов.  
@@ -25,6 +26,7 @@ ms.locfileid: "90551495"
 1. [Использование данных даты и времени](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
   
 ## <a name="datetime-data-types-introduced-in-sql-server-2008"></a>Типы данных даты и времени и только даты, появившиеся в SQL Server 2008  
+
  В приведенной ниже таблице описаны новые типы данных даты и времени.  
   
 |Тип данных SQL Server|Описание|  
@@ -38,6 +40,7 @@ ms.locfileid: "90551495"
 > Дополнительные сведения об использовании `Type System Version` см. в разделе <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
   
 ## <a name="date-format-and-date-order"></a>Формат даты и порядок даты  
+
  То, как SQL Server анализирует значения даты и времени, зависит не только от версии системы типов и версии сервера, но также от параметров языка и формата по умолчанию для сервера. Строка даты, которая подходит для форматов даты одного языка, может быть нераспознаваемой, если запрос выполняется подключением, в котором используются другие язык и формат даты.  
   
  Инструкция Transact-SQL SET LANGUAGE неявно устанавливает DATEFORMAT, который определяет порядок частей даты. Вы можете использовать инструкцию SET DATEFORMAT Transact-SQL в подключении для устранения неоднозначности значений даты путем упорядочения частей даты в порядке МДГ, ДМГ, ГМД, ГДМ, МГД или ДГМ.  
@@ -50,6 +53,7 @@ ms.locfileid: "90551495"
  Дополнительные сведения о том, как SQL Server интерпретирует данные даты и времени, см. [в разделе Использование данных даты и времени](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
   
 ## <a name="datetime-data-types-and-parameters"></a>Параметры и типы данных даты-времени  
+
  Для поддержки новых типов данных даты и времени к свойству <xref:System.Data.SqlDbType> были добавлены следующие значения перечисления.  
   
 - `SqlDbType.Date`  
@@ -78,13 +82,14 @@ ms.locfileid: "90551495"
 |Тип данных SQL Server|Тип платформы .NET Framework|System.Data.SqlDbType|System.Data.DbType|  
 |--------------------------|-------------------------|---------------------------|------------------------|  
 |Дата|System.DateTime|Дата|Дата|  
-|time|System.TimeSpan|время;|время;|  
+|time|System.TimeSpan|Time|Time|  
 |datetime2|System.DateTime|datetime2|datetime2|  
 |datetimeoffset|System.DateTimeOffset|DateTimeOffset|DateTimeOffset|  
 |DATETIME|System.DateTime|Дата и время|Дата и время|  
 |smalldatetime|System.DateTime|Дата и время|Дата и время|  
   
 ### <a name="sqlparameter-properties"></a>Свойства SqlParameter  
+
  В приведенной ниже таблице описаны свойства `SqlParameter`, которые относятся к типам данных даты и времени.  
   
 |Свойство|Описание|  
@@ -100,11 +105,13 @@ ms.locfileid: "90551495"
 > Значения времени, которые меньше нуля, больше или равны 24 часам, вызовут исключение <xref:System.ArgumentException>.  
   
 ### <a name="creating-parameters"></a>Создание параметров  
+
  Объект <xref:System.Data.SqlClient.SqlParameter> можно создать с помощью конструктора либо путем добавления этого объекта в коллекцию <xref:System.Data.SqlClient.SqlCommand><xref:System.Data.SqlClient.SqlCommand.Parameters%2A> путем вызова метода `Add` класса <xref:System.Data.SqlClient.SqlParameterCollection>. Метод `Add` будет принимать в качестве входных данных аргументы конструктора либо имеющийся объект параметра.  
   
  В следующих разделах этой статьи приведены примеры того, как указать параметры даты и времени. Дополнительные примеры работы с параметрами см. в разделе [Настройка параметров и типов данных](../configuring-parameters-and-parameter-data-types.md) параметров и [параметров DataAdapter](../dataadapter-parameters.md).  
   
 ### <a name="date-example"></a>Пример работы с типом date  
+
  В приведенном ниже фрагменте кода демонстрируется, как указать параметр `date`.  
   
 ```csharp  
@@ -122,6 +129,7 @@ parameter.Value = "2007/12/1"
 ```  
   
 ### <a name="time-example"></a>Пример работы с типом time  
+
  В приведенном ниже фрагменте кода демонстрируется, как указать параметр `time`.  
   
 ```csharp  
@@ -139,6 +147,7 @@ parameter.Value = DateTime.Parse("23:59:59").TimeOfDay;
 ```  
   
 ### <a name="datetime2-example"></a>Пример работы с типом Datetime2  
+
  В приведенном ниже фрагменте кода показано, как указать параметр `datetime2` с частями даты и времени.  
   
 ```csharp  
@@ -156,6 +165,7 @@ parameter.Value = DateTime.Parse("1666-09-02 1:00:00");
 ```  
   
 ### <a name="datetimeoffset-example"></a>Пример работы с типом DateTimeOffSet  
+
  В приведенном ниже фрагменте кода показано, как указать параметр `DateTimeOffSet` с датой, временем и смещением часового пояса равным нулю.  
   
 ```csharp  
@@ -173,6 +183,7 @@ parameter.Value = DateTimeOffset.Parse("1666-09-02 1:00:00+0");
 ```  
   
 ### <a name="addwithvalue"></a>AddWithValue  
+
  Вы также можете указать параметры, используя метод `AddWithValue` элемента <xref:System.Data.SqlClient.SqlCommand>, как показано в приведенном ниже фрагменте кода. Однако метод `AddWithValue` не позволяет указывать свойство <xref:System.Data.SqlClient.SqlParameter.DbType%2A> или <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> для параметра.  
   
 ```csharp  
@@ -189,13 +200,14 @@ command.Parameters.AddWithValue( _
   
  В приведенной ниже таблице показано, какие типы `SqlDbTypes` выводятся из типов CLR.  
   
-|Тип среды CLR|Выводимый тип SqlDbType|  
+|Тип CLR|Выводимый тип SqlDbType|  
 |--------------|------------------------|  
 |Дата и время|SqlDbType.DateTime|  
 |TimeSpan|SqlDbType.Time|  
 |DateTimeOffset|SqlDbType.DateTimeOffset|  
   
 ## <a name="retrieving-date-and-time-data"></a>Извлечение данных даты и времени  
+
  В следующей таблице описаны методы, используемые для получения значений даты и времени SQL Server 2008.  
   
 |Метод SqlClient|Описание|  
@@ -218,6 +230,7 @@ command.Parameters.AddWithValue( _
 > Новые дата и время `SqlDbTypes` не поддерживаются для кода, выполняющегося в процессе на SQL Server. Если один из этих типов будет передан на сервер, возникнет исключение.  
   
 ## <a name="specifying-date-and-time-values-as-literals"></a>Указание значений даты и времени в виде литералов  
+
  Вы можете указать типы данных даты и времени, используя множество различных форматов строк литералов, которые SQL Server затем оценивает во время выполнения, преобразовывая их во внутренние структуры даты и времени. SQL Server распознает данные даты и времени, заключенные в одинарные кавычки ('). Некоторые форматы продемонстрированы в следующих примерах.  
   
 - Буквенные форматы даты, такие как `'October 15, 2006'`.  
@@ -232,6 +245,7 @@ command.Parameters.AddWithValue( _
  Значения времени, которые меньше нуля, больше или равны 24 часам, вызовут исключение <xref:System.ArgumentException>.  
   
 ## <a name="resources-in-sql-server-books-online"></a>Ресурсы в электронной документации по SQL Server  
+
  Дополнительные сведения о работе со значениями даты и времени в SQL Server см. в следующих ресурсах в электронная документация на SQL Server.  
   
 |Раздел|Описание|  
@@ -240,7 +254,7 @@ command.Parameters.AddWithValue( _
 |[Использование данных даты и времени](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Приводятся сведения и даются примеры использования функций и типов данных даты и времени.|  
 |[Типы данных (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)|Описывает системные типы данных в SQL Server.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сопоставления типов данных SQL Server](../sql-server-data-type-mappings.md)
 - [Настройка параметров и типы данных параметров](../configuring-parameters-and-parameter-data-types.md)

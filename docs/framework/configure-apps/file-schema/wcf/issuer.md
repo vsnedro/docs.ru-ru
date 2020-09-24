@@ -2,14 +2,15 @@
 title: <issuer>
 ms.date: 03/30/2017
 ms.assetid: 8c49c6ae-fa1a-4179-a84b-613c3216dcde
-ms.openlocfilehash: 74f5f2fc1a0fa1ffbbb510e4e700c33a13d02ab3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9e92bbcacf529a97e1ae936e93e38c98eab19cab
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397915"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91157269"
 ---
 # \<issuer>
+
 Задает службу маркеров безопасности, выдающую маркеры безопасности.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -45,11 +46,12 @@ ms.locfileid: "70397915"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |address|Обязательная строка. URL-адрес для службы маркеров безопасности.|  
   
@@ -66,7 +68,7 @@ ms.locfileid: "70397915"
 |-------------|-----------------|  
 |[\<message>](message-element-of-wsfederationhttpbinding.md)|Определяет параметры безопасности на уровне сообщений для [\<wsFederationHttpBinding>](wsfederationhttpbinding.md) элемента.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.Issuer%2A>

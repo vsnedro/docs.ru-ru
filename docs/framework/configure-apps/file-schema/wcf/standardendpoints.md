@@ -2,14 +2,15 @@
 title: <standardEndpoints>
 ms.date: 03/30/2017
 ms.assetid: d62153d7-a6e6-462a-a784-cca61e9c2ba1
-ms.openlocfilehash: 76a5303650c4e2b2887d29f511d3088c78b58fe2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5d0607b5c541fc5ae402a50a0f8c464355b6b246
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399513"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91157204"
 ---
 # \<standardEndpoints>
+
 Этот раздел конфигурации позволяет задать коллекцию стандартных конечных точек (многократно используемых, заранее настроенных конечных точек). Значение одного или нескольких атрибутов стандартной конечной точки, обозначающих адрес, привязку или контракт, является фиксированным. Например, в конечной точке обнаружения фиксированным является контракт. По аналогии с определением пользовательских привязок можно также использовать стандартные конечные точки для расширения конечной точки службы за счет новых свойств.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,9 +27,11 @@ ms.locfileid: "70399513"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -51,6 +54,6 @@ ms.locfileid: "70399513"
 |-------------|-----------------|  
 |\<system.ServiceModel>|Корневой элемент всех элементов конфигурации WCF.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Стандартные конечные точки](../../../wcf/feature-details/standard-endpoints.md)

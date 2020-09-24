@@ -2,12 +2,12 @@
 title: Использование контейнеров и оркестраторов
 description: Использование контейнеров DOCKER и orchestration Kubernetes в Azure
 ms.date: 05/31/2020
-ms.openlocfilehash: f9e8672b742217388bd719262ffdfee63618fd14
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4d1dfa17fe9b4a683ab71ef2c9f97373579197af
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90540547"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91155553"
 ---
 # <a name="leveraging-containers-and-orchestrators"></a>Использование контейнеров и оркестраторов
 
@@ -214,7 +214,7 @@ ENTRYPOINT ["dotnet", "eShopWeb.dll"]
 
 **Рис. 3-7**. Параметры запуска для Visual Studio DOCKER
 
-Помимо локальной разработки [Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) предоставляет несколько разработчикам удобный способ работы с собственными конфигурациями Kubernetes в Azure. Как видно на рисунке 3-7, приложение можно также запустить в Azure Dev Spaces.
+Помимо локальной разработки [Azure dev Spaces](/azure/dev-spaces/) предоставляет несколько разработчикам удобный способ работы с собственными конфигурациями Kubernetes в Azure. Как видно на рисунке 3-7, приложение можно также запустить в Azure Dev Spaces.
 
 Кроме того, в любое время можно добавить поддержку DOCKER в существующее приложение ASP.NET Core. В Обозреватель решений Visual Studio щелкните правой кнопкой мыши проект и **добавьте**  >  **поддержку DOCKER**, как показано на рис. 3-8.
 

@@ -3,14 +3,15 @@ title: <sessionSecurityTokenCache>
 ms.date: 03/30/2017
 ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507
 author: BrucePerlerMS
-ms.openlocfilehash: 4169fe307e9ef7c391500a2292fcc247f435caa9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 347d1a1cba95bbd4992de95d6617e8828f4fc374
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555891"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91156905"
 ---
 # \<sessionSecurityTokenCache>
+
 Регистрирует кэш для токенов сеанса с помощью службы или коллекции обработчиков маркеров безопасности.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,6 +34,7 @@ ms.locfileid: "90555891"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -42,7 +44,8 @@ ms.locfileid: "90555891"
 |type|Тип, производный от <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> класса.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- None  
+
+ Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -51,6 +54,7 @@ ms.locfileid: "90555891"
 |[\<caches>](caches.md)|Регистрирует кэши, используемые службой или коллекцией обработчиков маркеров безопасности.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде XML показана конфигурация пользовательского кэша для хранения маркеров безопасности сеанса ( <xref:System.IdentityModel.Tokens.SessionSecurityToken> ). Конфигурация берется из `ClaimsAwareWebFarm` примера. Дополнительные сведения об этом образце см. в разделе [Индекс образца кода WIF](/previous-versions/dotnet/framework/security/wif-code-sample-index).  
   
 ```xml  
@@ -62,6 +66,6 @@ ms.locfileid: "90555891"
 </caches>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>

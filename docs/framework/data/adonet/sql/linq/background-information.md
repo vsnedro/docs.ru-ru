@@ -2,14 +2,15 @@
 title: Основные сведения
 ms.date: 03/30/2017
 ms.assetid: 724888f2-d3f1-4bea-b9a1-a0adb8a00f3b
-ms.openlocfilehash: fc7c68fe2dba266e056feb459038a060a055e175
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 56ba323aee3b559fbb8afd506be4c23595df6d2d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542115"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91156099"
 ---
 # <a name="background-information"></a>Основные сведения
+
 Темы данного раздела содержат описания принципов и процедур, расширяющих базовую функциональность [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  Для поиска дополнительных примеров кода и приложений [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] выполните следующие действия.  
@@ -21,6 +22,7 @@ ms.locfileid: "90542115"
 - Изучите технический документ с описанием [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] технологий, а также примеры кода для Visual Basic и C#. Дополнительные сведения см. в разделе [LINQ to SQL: интегрированный в язык .NET запрос для реляционных данных](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [ADO.NET и LINQ to SQL](ado-net-and-linq-to-sql.md)  
  Описывает связь ADO.NET и [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] .  
   
@@ -81,6 +83,7 @@ ms.locfileid: "90542115"
  [Определяемые пользователем функции](user-defined-functions.md)  
  Содержит сведения о сопоставлении пользовательских функций в режиме разработки и способах их вызова из приложения.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Руководство по программированию](programming-guide.md)  
  Содержит ссылки на разделы с описанием различных аспектов работы с [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].

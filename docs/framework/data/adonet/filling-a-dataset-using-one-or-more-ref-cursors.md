@@ -4,14 +4,15 @@ ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: 99863e79-5b00-467e-a105-4ffa42de3ff7
-ms.openlocfilehash: b80edb522d26896d33cacff757390e5a7bf757e6
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 744adb87bfc0919e861821c423a8e6a43ba7ed38
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70783864"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91156372"
 ---
 # <a name="filling-a-dataset-using-one-or-more-ref-cursors"></a>Заполнение набора данных с помощью одного или нескольких параметров REF CURSOR
+
 В этом примере Microsoft Visual Basic выполняется хранимая процедура PL/SQL, которая возвращает два параметра REF CURSOR и заполняет объект <xref:System.Data.DataSet> возвращенными строками.  
   
 ```vb  
@@ -46,7 +47,7 @@ Private Sub Button1_Click(ByVal sender As Object, _
   End Using  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [REF CURSOR в Oracle](oracle-ref-cursors.md)
 - [Общие сведения об ADO.NET](ado-net-overview.md)

@@ -1,69 +1,70 @@
 ---
-title: Получите образцы баз данных S'L Server для ADO.NET образцов кода
-description: Загрузите образцы баз данных S'L Server, используемые в образцах кода в документации ADO.NET, а также инструменты s'L Server и управления
+title: Получение образца SQL Server баз данных для примеров кода ADO.NET
+description: Скачайте пример SQL Server баз данных, используемых в примерах кода в документации по ADO.NET, а также SQL Server и средств управления.
 ms.date: 01/11/2019
 ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
-ms.openlocfilehash: 3449f502834f449f5023bd52457d45ffaf9b0fa1
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: f7c0d1eb0089a6bfabc92e1deecf563c3e59cc6a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81607988"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91156060"
 ---
-# <a name="get-the-sample-databases-for-adonet-code-samples"></a>Получить образцы баз данных для образцов кода ADO.NET
+# <a name="get-the-sample-databases-for-adonet-code-samples"></a>Получение образцов баз данных для примеров кода ADO.NET
 
-В ряде примеров и пошагов в документации [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] используются образцы баз данных сервера S'L ИС ИСИ И. Вы можете скачать эти продукты бесплатно от Microsoft.
+Некоторые примеры и пошаговые руководства в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] документации используют пример SQL Server баз данных и SQL Server Express. Эти продукты можно бесплатно загрузить с веб – Майкрософт.
 
-## <a name="get-the-northwind-sample-database-for-sql-server"></a>Получение выборочной базы данных Northwind для сервера S'L
+## <a name="get-the-northwind-sample-database-for-sql-server"></a>Получение образца базы данных Northwind для SQL Server
 
-Загрузите `instnwnd.sql` скрипт из следующего репозитория GitHub для создания и загрузки выборочной базы данных Northwind для сервера S'L:
+Скачайте скрипт `instnwnd.sql` из следующего репозитория GitHub, чтобы создать и загрузить образец базы данных Northwind для SQL Server:
 
-[Нортвинд и пабы образцы баз данных для Microsoft S'L Server](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs)
+[Учебные базы данных Northwind и Pubs для Microsoft SQL Server](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs)
 
-Прежде чем использовать базу данных Northwind, необходимо `instnwnd.sql` запустить загруженный файл скрипта, чтобы воссоздать базу данных на экземпляре сервера S'L, используя [студию управления серверами S'L](#get_ssms) или аналогичный инструмент. Следуйте инструкциям в файле Readme в репозитории.
+Прежде чем можно будет использовать базу данных Northwind, необходимо запустить скачанный `instnwnd.sql` файл скрипта, чтобы повторно создать базу данных на экземпляре SQL Server с помощью [SQL Server Management Studio](#get_ssms) или аналогичного средства. Следуйте инструкциям в файле сведений в репозитории.
 
 > [!TIP]
-> Если вы ищете базу данных Northwind для Microsoft Access, [см.](#northwind_access)
+> Если вы ищете базу данных Northwind для Microsoft Access, см. статью [Установка образца базы данных Northwind для Microsoft Access](#northwind_access).
 
-## <a name="get-the-northwind-sample-database-for-microsoft-access"></a><a name="northwind_access"></a>Получить образец базы данных Northwind для Microsoft Access
+## <a name="get-the-northwind-sample-database-for-microsoft-access"></a><a name="northwind_access"></a> Получение образца базы данных Northwind для Microsoft Access
 
-Образная база данных Northwind для Microsoft Access недоступна в Центре загрузки Майкрософт. Чтобы установить Northwind непосредственно из Access, сделайте следующие вещи:
+Образец базы данных Northwind для Microsoft Access недоступен в центре загрузки Майкрософт. Чтобы установить Northwind непосредственно из Access, выполните следующие действия.
 
-1. Открытый доступ.
+1. Откройте Access.
 
-1. Введите **Northwind** в поле **поиска онлайн шаблонов,** а затем выберите **Enter.**
+1. В поле **Поиск шаблонов в Интернете** введите **Northwind** , а затем нажмите клавишу **Ввод**.
 
-1. На экране результатов выберите **Northwind**. Новое окно открывается с описанием базы данных Northwind.
+1. На экране результатов выберите **Northwind**. Откроется новое окно с описанием базы данных Northwind.
 
-1. В новом окне, в текстовом окне **имя файла,** укажите имя файла для вашей копии базы данных Northwind.
+1. В новом окне в текстовом поле **имя файла** укажите имя файла для копии базы данных Northwind.
 
-1. Нажмите кнопку **создания**. Access загружает базу данных Northwind и готовит файл.
+1. Выберите **Создать**. Access загружает базу данных Northwind и готовит файл.
 
-1. Когда этот процесс завершен, база данных открывается с экрана Welcome.
+1. После завершения этого процесса база данных откроется с экраном приветствия.
 
-## <a name="get-the-adventureworks-sample-database-for-sql-server"></a>Получить образец базы данных AdventureWorks для сервера S'L
+## <a name="get-the-adventureworks-sample-database-for-sql-server"></a>Получение образца базы данных AdventureWorks для SQL Server
 
-Загрузите образец базы данных AdventureWorks для сервера S'L из следующего репозитория GitHub:
+Скачайте образец базы данных AdventureWorks для SQL Server из следующего репозитория GitHub:
 
 [Образцы баз данных AdventureWorks](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 
-После загрузки одного из файлов\*резервного копирования базы данных (.bak) восстановите резервную часть в экземпляре сервера S'L, используя s'L Server Management Studio (SSMS). Подробнее о [том, как получить студию управления серверами S'L](#get_ssms).
+После загрузки одного из файлов резервной копии базы данных ( \* bak) восстановите резервную копию на экземпляре SQL Server с помощью SQL Server Management Studio (SSMS). См. раздел [Get SQL Server Management Studio](#get_ssms).
 
-## <a name="get-sql-server-management-studio"></a><a name="get_ssms"></a>Получите студию управления серверами S'L
-Если вы хотите просмотреть или изменить загруженную базу данных, вы можете использовать студию управления серверами S'L (SSMS). Скачать SSMS со следующей страницы:
+## <a name="get-sql-server-management-studio"></a><a name="get_ssms"></a> Получить SQL Server Management Studio
+
+Если вы хотите просмотреть или изменить загруженную базу данных, можно использовать SQL Server Management Studio (SSMS). Скачайте среду SSMS со следующей страницы:
 
 [Скачивание SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 
-Вы также можете просматривать и управлять базами данных в интегрированной среде разработки Visual Studio (IDE). В [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)подключитесь к базе данных из **S'L Server Object Explorer**или создайте подключение к базе данных в Server **Explorer.** Откройте эти панели исследователей из меню **View.**
+Вы также можете просматривать базы данных и управлять ими в интегрированной среде разработки Visual Studio (IDE). В [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)подключитесь к базе данных из **Обозреватель объектов SQL Server**или создайте подключение к базе данных в **Обозреватель сервера**. Откройте эти панели обозревателя в меню **вид** .
 
-## <a name="get-sql-server-express"></a><a name="get_sql"></a>Получить сервер экспресс S'L
+## <a name="get-sql-server-express"></a><a name="get_sql"></a> Получить SQL Server Express
 
-S'L Server Express — это бесплатное издание сервера начального уровня, которое можно перераспределить с помощью приложений. Скачать серверный экспресс s'L со следующей страницы:
+SQL Server Express — это бесплатный выпуск SQL Server, который можно распространять вместе с приложениями. Скачайте SQL Server Express со следующей страницы:
   
 [SQL Server Express Edition](https://www.microsoft.com/sql-server/sql-server-editions-express)
 
-Если вы используете [Visual Studio,](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)S'L Server Express LocalDB включен в бесплатное издание Сообщества Visual Studio, а также профессиональные и более высокие издания.  
+Если вы используете [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019), SQL Server Express LocalDB входит в бесплатный выпуск сообщества Visual Studio, а также в профессиональный и более поздние версии.  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Начало работы](getting-started.md)

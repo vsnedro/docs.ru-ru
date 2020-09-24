@@ -2,19 +2,21 @@
 title: Методы System.TimeSpan
 ms.date: 03/30/2017
 ms.assetid: 9333fee8-1454-4374-855b-8c14c002f48f
-ms.openlocfilehash: 9a7eb3c979219003d497ec752b36ec54ef081b43
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 15b6c8bd5c9cce8e6d1bac030c6b7f6b40df6cd4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781039"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91155592"
 ---
 # <a name="systemtimespan-methods"></a>Методы System.TimeSpan
+
 Поддержка элементов типа <xref:System.TimeSpan?displayProperty=nameWithType> в значительной степени зависит от используемых версий платформы .NET Framework и сервера Microsoft SQL Server.  
   
  Если метод, оператор или свойство не поддерживаются, это означает, что LINQ to SQL не может перевести элемент для выполнения на SQL Server. Но эти элементы, тем не менее, можно использовать в коде. Однако их следует вычислять до преобразования запроса в Transact-SQL или после получения результатов из базы данных.  
   
 ## <a name="previous-limitations"></a>Предыдущие ограничения  
+
  При использовании LINQ to SQL с версиями платформы .NET Framework, выпущенными до .NET Framework 3.5 с пакетом обновления 1 (SP1), невозможно сопоставлять поля баз данных SQL Server типу <xref:System.TimeSpan?displayProperty=nameWithType>. При этом операции с типом <xref:System.TimeSpan> поддерживаются, поскольку значения <xref:System.TimeSpan> могут возвращаться операцией вычитания <xref:System.DateTime> или входить в выражение в виде литерала или привязанной переменной.  
   
 ## <a name="supported-systemtimespan-member-support"></a>Поддерживаемая поддержка членов System. TimeSpan
@@ -34,9 +36,10 @@ ms.locfileid: "70781039"
 > Чтобы сопоставлять тип <xref:System.TimeSpan?displayProperty=nameWithType> со столбцами SQL типа `TIME` с помощью LINQ to SQL, необходима платформа .NET Framework 3.5 с пакетом обновления 1 (SP1) и более поздней версии. Тип данных SQL `TIME` доступен только в версиях Microsoft SQL Server 2008 и выше.  
   
 ### <a name="addition-and-subtraction"></a>Сложение и вычитание  
+
  Хотя тип CLR <xref:System.TimeSpan?displayProperty=nameWithType> поддерживает сложение и вычитание, тип SQL `TIME` их не поддерживает. Поэтому запросы LINQ to SQL будут вызывать ошибки при попытке выполнить сложение или вычитание, когда они сопоставлены с типом SQL `TIME`. Другие рекомендации по работе с типами даты и времени SQL можно найти в [сопоставлении типов SQL-CLR](sql-clr-type-mapping.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные принципы запросов](query-concepts.md)
 - [Создание модели объектов](creating-the-object-model.md)

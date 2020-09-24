@@ -2,14 +2,15 @@
 title: <identity>
 ms.date: 03/30/2017
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-ms.openlocfilehash: 15c9e38a141fc294c47863b1a932711444ac079a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bb9468b6005361a2a480f7c0ebfb2cbb9e9199c2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855149"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91157386"
 ---
 # \<identity>
+
 Элемент identity позволяет разработчику клиента указать во время разработки ожидаемое удостоверение службы. В процессе подтверждения между клиентом и службой инфраструктура Windows Communication Foundation (WCF) обеспечит соответствие идентификатора ожидаемой службы значениям этого элемента и, таким образом, может пройти проверку подлинности. Дополнительные сведения см. в статье [удостоверение службы и проверка подлинности](../../../wcf/feature-details/service-identity-and-authentication.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -36,9 +37,11 @@ ms.locfileid: "70855149"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -58,13 +61,13 @@ ms.locfileid: "70855149"
 |-------------|-----------------|  
 |[\<custom>](custom.md)|Задает настраиваемый одноранговый распознаватель для netPeerTcpBinding.|  
 |[\<endpoint>](endpoint-element.md)|Настраивает конечные точки службы.|  
-|[\<endpoint>окна\<client>](endpoint-of-client.md)|Настраивает конечные точки канала.|  
+|[\<endpoint> из \<client>](endpoint-of-client.md)|Настраивает конечные точки канала.|  
 |[\<issuer>](issuer.md)|Задает службу маркеров безопасности для федеративной службы.|  
 |[\<issuerMetadata>](issuermetadata.md)|Задает конечную точку метаданных для службы маркеров безопасности федеративной службы.|  
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|Задает параметры для выданного маркера в настраиваемой привязке.|  
 |[\<localIssuer>](localissuer.md)|Задает локальную службу маркеров безопасности.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>

@@ -2,14 +2,15 @@
 title: <transport> из <peerTransport>
 ms.date: 03/30/2017
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
-ms.openlocfilehash: 3b2c7716727f58abb81bf4d58b13189ac170cf7c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7328d67c4649010dce3e1c866238d1e0067e4990
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399292"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91157074"
 ---
 # <a name="transport-of-peertransport"></a>\<transport> из \<peerTransport>
+
 Задает тип транспорта для безопасных сообщений, отправленных одноранговыми узлами, настроенными с помощью этой привязки.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,13 +31,14 @@ ms.locfileid: "70399292"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|credentialType|Необязательный параметр. Задает тип учетных данных, используемых для проверки сообщений, отправляемых с помощью однорангового транспорта. Это атрибут типа <xref:System.ServiceModel.PeerTransportCredentialType>.|  
+|credentialType|Необязательный элемент. Задает тип учетных данных, используемых для проверки сообщений, отправляемых с помощью однорангового транспорта. Это атрибут типа <xref:System.ServiceModel.PeerTransportCredentialType>.|  
   
 ## <a name="credentialtype-attribute"></a>Атрибут credentialType  
   
@@ -46,6 +48,7 @@ ms.locfileid: "70399292"
 |Пароль|Для проверки подлинности однорангового транспорта канала необходим правильный пароль.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -54,10 +57,11 @@ ms.locfileid: "70399292"
 |-------------|-----------------|  
 |[\<security>](security-of-peertransport.md)|Определяет параметры безопасности для однорангового транспорта.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Этот элемент задается только в том случае, если атрибут mode [\<security>](security-of-peertransport.md) имеет значение `Transport` или `TransportWithMessageCredential` .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
 - <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>

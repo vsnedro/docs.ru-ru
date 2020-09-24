@@ -2,14 +2,15 @@
 title: <issuer> из <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90
-ms.openlocfilehash: bdd5ad45984fae7b39defe82c4af75845dfda1b6
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bfe8163d2d6baba1d6e8053f7f6579673d8b4b21
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397945"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91157282"
 ---
 # <a name="issuer-of-issuedtokenparameters"></a>\<issuer> из \<issuedTokenParameters>
+
 Задает службу маркеров безопасности, выдающую маркеры безопасности.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,11 +29,12 @@ ms.locfileid: "70397945"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |address|Обязательная строка. URL-адрес для службы маркеров безопасности.|  
   
@@ -49,7 +51,7 @@ ms.locfileid: "70397945"
 |-------------|-----------------|  
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|Определяет текущий выданный маркер.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.AdditionalRequestParameters%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.AdditionalRequestParameters%2A>
