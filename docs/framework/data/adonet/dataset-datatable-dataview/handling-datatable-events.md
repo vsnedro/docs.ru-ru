@@ -5,17 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 62f404a5-13ea-4b93-a29f-55b74a16c9d3
-ms.openlocfilehash: 3edafa6c6a1bc3da2abc0598f329caf0e2f21e8b
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: c00e5e42508160a210d16f058c46afbf62ae0ee0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70786262"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91164731"
 ---
 # <a name="handling-datatable-events"></a>Обработка событий таблиц данных
+
 Объект <xref:System.Data.DataTable> предоставляет ряд событий, которые может обрабатывать приложение. В следующей таблице приводится описание событий `DataTable`.  
   
-|событие|Описание|  
+|Событие|Описание|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.Initialized>|Происходит после вызова метода <xref:System.Data.DataTable.EndInit%2A> объекта `DataTable`. Главным образом это событие предназначено для поддержки сценариев во время разработки.|  
 |<xref:System.Data.DataTable.ColumnChanged>|Происходит после успешного изменения значения в объекте <xref:System.Data.DataColumn>.|  
@@ -36,6 +37,7 @@ ms.locfileid: "70786262"
 > Изменение данных в объекте `DataSet`, из которого было вызвано событие `RowChanged`, может привести к повреждению данных. При подобном повреждении данных исключение вызвано не будет.  
   
 ## <a name="additional-related-events"></a>Дополнительные связанные события  
+
  Свойство <xref:System.Data.DataTable.Constraints%2A> содержит экземпляр <xref:System.Data.ConstraintCollection>. Класс <xref:System.Data.ConstraintCollection> представляет событие <xref:System.Data.ConstraintCollection.CollectionChanged>. Это событие возникает при добавлении, изменении или удалении ограничения из коллекции `ConstraintCollection`.  
   
  Свойство <xref:System.Data.DataTable.Columns%2A> содержит экземпляр <xref:System.Data.DataColumnCollection>. Класс `DataColumnCollection` представляет событие <xref:System.Data.DataColumnCollection.CollectionChanged>. Это событие возникает при добавлении, изменении или удалении из коллекции `DataColumn` объекта `DataColumnCollection`. Среди изменений, которые могут вызвать возникновение этого события, - изменения имени, типа, выражения или порядкового номера столбца.  
@@ -45,6 +47,7 @@ ms.locfileid: "70786262"
  Внесение изменений в объекты `DataRows` также могут вызвать события для ассоциированного объекта <xref:System.Data.DataView>. Класс `DataView` вызывает событие <xref:System.Data.DataView.ListChanged>, которое возникает при изменении значения `DataColumn` или при изменении композиции или порядка сортировки представления. Класс <xref:System.Data.DataRowView> вызывает событие <xref:System.Data.DataRowView.PropertyChanged>, которое возникает при изменении значения ассоциированного объекта `DataColumn`.  
   
 ## <a name="sequence-of-operations"></a>Последовательность операций  
+
  При добавлении, изменении или удалении объекта `DataRow` надо выполнить следующую последовательность операций.  
   
 1. Создайте предложенную запись и внесите любые изменения.  
@@ -74,14 +77,15 @@ ms.locfileid: "70786262"
 > Не вызывайте исключение <xref:System.NullReferenceException> в обработчике события `RowChanged`. Если исключение <xref:System.NullReferenceException> вызывается в пределах события `RowChanged` объекта `DataTable`, объект `DataTable` будет поврежден.  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере демонстрируется, как создавать обработчики событий для событий `RowChanged`, `RowChanging`, `RowDeleted`, `RowDeleting`, `ColumnChanged`, `ColumnChanging`, `TableNewRow`, `TableCleared` и `TableClearing`. Каждый обработчик события при возникновении события отображает выводимые данные в консольном окне.  
   
  [!code-csharp[DataWorks DataTable.Events#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.Events/CS/source.cs#1)]
  [!code-vb[DataWorks DataTable.Events#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.Events/VB/source.vb#1)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Управление данными в DataTable](manipulating-data-in-a-datatable.md)
+- [Управление данными в таблице данных](manipulating-data-in-a-datatable.md)
 - [Обработка событий DataAdapter](../handling-dataadapter-events.md)
 - [Обработка событий наборов данных](handling-dataset-events.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

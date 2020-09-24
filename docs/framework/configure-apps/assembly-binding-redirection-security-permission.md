@@ -6,14 +6,15 @@ helpviewer_keywords:
 - side-by-side execution, assembly binding redirection
 - assemblies [.NET Framework], binding redirection
 ms.assetid: 24a5cdff-7ed9-4195-93f3-edf6899019fc
-ms.openlocfilehash: ea2b735b2c98b588903c4393f21c6b743910854a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2de2c50f5adb9e9fa36ea015ef498e9953c83005
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90552379"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91165225"
 ---
 # <a name="assembly-binding-redirection-security-permission"></a>Разрешение безопасности перенаправления привязки сборок
+
 Для явного перенаправления привязки сборки в файле конфигурации приложения необходимо разрешение безопасности. Это относится к перенаправлению как сборок платформы .NET Framework, так и сторонних сборок. Разрешение предоставляется путем установки <xref:System.Security.Permissions.SecurityPermissionFlag> флага для <xref:System.Security.Permissions.SecurityPermission> . По умолчанию управляемые сборки не имеют разрешений.  
   
  Разрешение безопасности предоставляется приложениям, выполняемым в зоне доверенной зоны (локального компьютера) и зоны интрасети. Приложениям, выполняемым в зоне Интернета, строго запрещено выполнять перенаправление привязки сборок.  
@@ -31,7 +32,7 @@ ms.locfileid: "90552379"
   
  Администратор может изменить эти параметры безопасности для поддержки или ограничения конкретных сценариев на определенном компьютере. Нет средств для изменения значения флага **BindingRedirects** по умолчанию; Администратор должен вручную изменить файл Security.config на компьютере пользователя.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Файлы политики издателя и параллельное выполнение](/previous-versions/dotnet/netframework-4.0/06d2bae3(v=vs.100))
 - [Практическое руководство. Включение и отключение автоматического перенаправления привязки](how-to-enable-and-disable-automatic-binding-redirection.md)

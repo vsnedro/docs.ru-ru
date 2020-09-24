@@ -3,12 +3,12 @@ title: Устойчивое взаимодействие
 description: Создание архитектуры облачных приложений .NET для Azure | Устойчивое взаимодействие
 author: robvet
 ms.date: 05/13/2020
-ms.openlocfilehash: 33e4c03c1f3d8c01f72c588326fbb0bdfa512cdd
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 18b26223634efc5c05f680d0cbb7c8cbc2490a59
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613750"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91166044"
 ---
 # <a name="resilient-communications"></a>Устойчивое взаимодействие
 
@@ -30,7 +30,7 @@ ms.locfileid: "83613750"
 
 ## <a name="service-mesh"></a>Сеть службы
 
-Лучший подход — это развивающаяся технология, предназначенная для работы с сетями *служб*. [Сетка служб](https://www.nginx.com/blog/what-is-a-service-mesh/) — это настраиваемый уровень инфраструктуры со встроенными возможностями для управления взаимодействием служб и другими упомянутыми выше проблемами. Она разделяет эти проблемы, перемещая их в прокси-сервер службы. Прокси-сервер развертывается в отдельный процесс (называемый [расширения](https://docs.microsoft.com/azure/architecture/patterns/sidecar)) для обеспечения изоляции от бизнес-кода. Однако расширения связывается с этой службой. она создается с ней и разделяет жизненный цикл. Этот сценарий показан на рис. 6-7.
+Лучший подход — это развивающаяся технология, предназначенная для работы с сетями *служб*. [Сетка служб](https://www.nginx.com/blog/what-is-a-service-mesh/) — это настраиваемый уровень инфраструктуры со встроенными возможностями для управления взаимодействием служб и другими упомянутыми выше проблемами. Она разделяет эти проблемы, перемещая их в прокси-сервер службы. Прокси-сервер развертывается в отдельный процесс (называемый [расширения](/azure/architecture/patterns/sidecar)) для обеспечения изоляции от бизнес-кода. Однако расширения связывается с этой службой. она создается с ней и разделяет жизненный цикл. Этот сценарий показан на рис. 6-7.
 
 ![Сеть службы с побочным автомобилем](./media/service-mesh-with-side-car.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "83613750"
 
 ## <a name="istio-and-envoy"></a>Istio и делегат
 
-Хотя в настоящее время существует несколько вариантов сетки служб, [Istio](https://istio.io/docs/concepts/what-is-istio/) является самым популярным в момент написания этой статьи. Istio — это совместное предприятие от IBM, Google и Лифт. Это предложение с открытым кодом, которое можно интегрировать в новое или существующее распределенное приложение. Эта технология обеспечивает единообразное и полное решение для защиты и подключения микрослужб, а также для их мониторинга. Его функции включают:
+Хотя в настоящее время существует несколько вариантов сетки служб, [Istio](https://istio.io/docs/concepts/what-is-istio/) является самым популярным в момент написания этой статьи. Istio — это совместное предприятие от IBM, Google и Лифт. Это предложение с открытым кодом, которое можно интегрировать в новое или существующее распределенное приложение. Эта технология обеспечивает единообразное и полное решение для защиты и подключения микрослужб, а также для их мониторинга. Она обладает следующими возможностями:
 
 - Защита обмена данными между службами в кластере с помощью надежной проверки подлинности и авторизации на основе удостоверений.
 - Автоматическая балансировка нагрузки для трафика HTTP, [gRPC](https://grpc.io/), WEBSOCKET и TCP.
@@ -74,28 +74,28 @@ ms.locfileid: "83613750"
 
 Облако Azure использует Istio и обеспечивает прямую поддержку в Azure Kubernetes Services. Следующие ссылки помогут вам приступить к работе:
 
-- [Установка Istio в AKS](https://docs.microsoft.com/azure/aks/istio-install)
-- [Использование AKS и Istio](https://docs.microsoft.com/azure/aks/istio-scenario-routing)
+- [Установка Istio в AKS](/azure/aks/istio-install)
+- [Использование AKS и Istio](/azure/aks/istio-scenario-routing)
 
 ### <a name="references"></a>Ссылки
 
 - [Polly](http://www.thepollyproject.org/)
 
-- [Шаблон повторов](https://docs.microsoft.com/azure/architecture/patterns/retry)
+- [Шаблон повторов](/azure/architecture/patterns/retry)
 
-- [Шаблон размыкателя цепи](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
+- [Шаблон автоматического выключения](/azure/architecture/patterns/circuit-breaker)
 
 - [Обеспечение устойчивости в техническом документе Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/resilience-in-azure-whitepaper/Resilience%20in%20Azure.pdf)
 
 - [задержка в сети](https://www.techopedia.com/definition/8553/network-latency)
 
-- [Избыточность](https://docs.microsoft.com/azure/architecture/guide/design-principles/redundancy)
+- [Избыточность](/azure/architecture/guide/design-principles/redundancy)
 
-- [Георепликация](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication)
+- [Георепликация](/azure/sql-database/sql-database-active-geo-replication)
 
-- [Диспетчер трафика Azure](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
+- [Диспетчер трафика Azure](/azure/traffic-manager/traffic-manager-overview)
 
-- [Руководство по автоматическому масштабированию](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling)
+- [Руководство по автоматическому масштабированию](/azure/architecture/best-practices/auto-scaling)
 
 - [Istio](https://istio.io/docs/concepts/what-is-istio/)
 

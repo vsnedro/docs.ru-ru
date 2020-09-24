@@ -6,17 +6,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 0b121b71-78f8-4ae2-9aa1-0b2e15778e57
-ms.openlocfilehash: 4c1da6041b2343565bdaeb53e586c893bd85c922
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4f645a51996078f8dd80b6c455c420633db36155
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557909"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91164605"
 ---
 # <a name="performance-counters-in-adonet"></a>Счетчики производительности в ADO.NET
+
 В ADO.NET 2.0 появилась расширенная поддержка счетчиков производительности, включая поддержку как <xref:System.Data.SqlClient>, так и <xref:System.Data.OracleClient>. Счетчики производительности <xref:System.Data.SqlClient> предыдущих версий ADO.NET устарели и заменены новыми счетчиками производительности, которые рассматриваются в этом разделе. Счетчики производительности ADO.NET можно использовать для контроля состояния приложения и используемых им ресурсов соединения. Показания счетчиков производительности можно отслеживать с помощью системного монитора Windows или получить к ним доступ программным путем с помощью класса <xref:System.Diagnostics.PerformanceCounter> в пространстве имен <xref:System.Diagnostics>.  
   
 ## <a name="available-performance-counters"></a>Доступные счетчики производительности  
+
  В настоящее время имеется 14 разных счетчиков производительности, доступных для <xref:System.Data.SqlClient> и <xref:System.Data.OracleClient>, как показано в следующей таблице. Обратите внимание, что имена отдельных счетчиков производительности не локализованы в региональных версиях платформы Microsoft .NET Framework.  
   
 |Счетчик производительности|Описание|  
@@ -37,10 +39,13 @@ ms.locfileid: "90557909"
 |`SoftDisconnectsPerSecond`|Количество активных соединений, возвращаемых в пул соединений. **Примечание.**  Этот счетчик производительности не включен по умолчанию. Сведения о включении этого счетчика производительности см. в разделе [Активация счетчиков по умолчанию](#ActivatingOffByDefault).|  
   
 ### <a name="connection-pool-groups-and-connection-pools"></a>Группы пула соединений и пулы соединений  
+
  При использовании проверки подлинности Windows (встроенная безопасность) необходимо следить за счетчиками `NumberOfActiveConnectionPoolGroups` и `NumberOfActiveConnectionPools`. Причина в том, что группы пулов соединений сопоставлены с уникальными строками соединений. Если используется встроенная безопасность, то пулы соединений сопоставляются со строками соединений и дополнительно создают специальные пулы для отдельных идентификаторов Windows. Например, если Кирилл и Мария, находящиеся в одном домене приложений, используют строку соединения `"Data Source=MySqlServer;Integrated Security=true"`, создается группа пула соединений для этой строки соединения и два дополнительных пула - один для Кирилла, другой для Марии. Если Джон и марта используют строку подключения с идентичным именем входа SQL Server, `"Data Source=MySqlServer;User Id=lowPrivUser;Password=Strong?Password"` то для удостоверения **ловпривусер** создается только один пул.  
   
 <a name="ActivatingOffByDefault"></a>
+
 ### <a name="activating-off-by-default-counters"></a>Активация счетчиков, отключенных по умолчанию  
+
  Счетчики производительности `NumberOfFreeConnections`, `NumberOfActiveConnections`, `SoftDisconnectsPerSecond` и `SoftConnectsPerSecond` отключены по умолчанию. Чтобы включить их, добавьте в файл конфигурации приложения следующие данные:  
   
 ```xml  
@@ -53,6 +58,7 @@ ms.locfileid: "90557909"
 ```  
   
 ## <a name="retrieving-performance-counter-values"></a>Получение значений счетчиков производительности  
+
  В следующем приложении командной строки показан способ получения значений счетчиков производительности. Чтобы возвратить данные для всех счетчиков производительности ADO.NET, соединения должны быть открыты и активны.  
   
 > [!NOTE]
@@ -395,7 +401,7 @@ class Program
 }  
 ```  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Подключение к источнику данных](connecting-to-a-data-source.md)
 - [OLE DB, ODBC и объединение подключений в пул в Oracle](ole-db-odbc-and-oracle-connection-pooling.md)
