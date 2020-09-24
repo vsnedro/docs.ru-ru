@@ -2,14 +2,15 @@
 title: <security> из <wsDualHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
-ms.openlocfilehash: 4969c041678bbf3490975bc0ec53507b6cf762bb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7398cd538bb240e78413575f7c28abe7f797d05c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738607"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91162209"
 ---
 # <a name="security-of-wsdualhttpbinding"></a>\<security> из \<wsDualHttpBinding>
+
 Определяет возможности безопасности для [\<wsDualHttpBinding>](wsdualhttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,19 +31,20 @@ ms.locfileid: "73738607"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|mode|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.WSDualHttpSecurityMode>.|  
+|mode|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.WSDualHttpSecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут Mode  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|None|Режим безопасности отключен.|  
+|Отсутствуют|Режим безопасности отключен.|  
 |Сообщение|Безопасность обеспечивается с помощью средств безопасности сообщений SOAP.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -57,10 +59,11 @@ ms.locfileid: "73738607"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности привязки [\<wsDualHttpBinding>](wsdualhttpbinding.md) .|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Двойная привязка предоставляет службе IP-адрес клиента. Клиенту следует использовать механизм безопасности, чтобы гарантировать, что подключение выполняется только к доверенным службам.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.WSDualHttpSecurity>
 - <xref:System.ServiceModel.BasicHttpSecurity>

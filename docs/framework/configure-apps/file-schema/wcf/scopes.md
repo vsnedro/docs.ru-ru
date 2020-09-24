@@ -2,14 +2,15 @@
 title: <scopes>
 ms.date: 03/30/2017
 ms.assetid: 9a0dd3ce-e383-4ac3-b7be-7d604388304a
-ms.openlocfilehash: 57e9e19025db5e1fa588f073fdf30de09837a25d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 63f46753da13469147b378f373de9888a007bf52
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399939"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91162222"
 ---
 # \<scopes>
+
 Содержит коллекцию элементов конфигурации, указывающие идентификаторы URI пользовательских областей, которые можно использовать для фильтрации конечных точек службы во время выполнения запроса.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -37,14 +38,16 @@ ms.locfileid: "70399939"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Атрибут|Описание:|  
+|attribute|Описание|  
 |---------------|-----------------|  
 |[\<add>](add-of-scopes.md)|Добавляет данные об области для конечной точки, которая может использоваться в критериях соответствия при поиске служб.|  
   
@@ -54,6 +57,6 @@ ms.locfileid: "70399939"
 |-------------|-----------------|  
 |[\<endpointDiscovery>](endpointdiscovery.md)|Указывает различные параметры обнаружения для конечной точки, такие как возможность обнаружения, области и любые пользовательские модули для ее метаданных.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
