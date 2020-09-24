@@ -3,14 +3,15 @@ title: LINQ to SQL
 description: LINQ to SQL является компонентом .NET Framework, который предоставляет инфраструктуру времени выполнения для управления реляционными данными как объектами.
 ms.date: 03/30/2017
 ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
-ms.openlocfilehash: d6fadecf17cae21527cec2180b6d6c5b5e85d0cc
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 961e0713de714d0e75417f93e84e0ab748fd9a42
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551318"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158322"
 ---
 # <a name="linq-to-sql"></a>LINQ to SQL
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] является компонентом .NET Framework версии 3,5, предоставляющей инфраструктуру времени выполнения для управления реляционными данными как объектами.  
   
 > [!NOTE]
@@ -23,6 +24,7 @@ ms.locfileid: "90551318"
  Документация, включенная в эту версию [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], описывает основные строительные блоки, процессы и методики, необходимые для построения приложений [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Можно также выполнить поиск по Документация Майкрософт для конкретных проблем, и вы можете принять участие в [форуме LINQ](https://social.msdn.microsoft.com/forums/home?forum=linqtosql), где вы сможете обсуждать более сложные темы подробно с экспертами. Наконец, [LINQ to SQL: запрос на языке .NET для реляционных данных](/previous-versions/dotnet/articles/bb425822(v=msdn.10)) , содержащий технические сведения о [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] технологии, завершен с помощью Visual Basic и примеров кода C#.  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Начало работы](getting-started.md)  
  Содержит краткие общие сведения о [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], а также сведения о начале работы с [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
@@ -35,7 +37,8 @@ ms.locfileid: "90551318"
  [Примеры](samples.md)  
  Содержит ссылки на примеры Visual Basic и C#.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Интегрированный в язык запрос (LINQ) — C #](../../../../../csharp/programming-guide/concepts/linq/index.md)\
  Предоставляет обзоры технологий LINQ в C#.
 

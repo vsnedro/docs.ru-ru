@@ -4,12 +4,12 @@ description: Узнайте, как определить логику запус
 author: csharpfritz
 ms.author: jefritz
 ms.date: 02/25/2020
-ms.openlocfilehash: ea2ea458011d8351a834aa12db02e5d2bac2dc65
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: 883f9a3fbe2d52cb7d0fbc5dfc94ce829a5d2bf3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267702"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158192"
 ---
 # <a name="app-startup"></a>Запуск приложений
 
@@ -79,7 +79,7 @@ public class Startup
 
 Как и в остальных ASP.NET Core, класс Startup создается с принципами внедрения зависимостей.  Объект `IConfiguration` предоставляется конструктору и скрыт в открытом свойстве для последующего доступа во время настройки.
 
-`ConfigureServices`Метод, представленный в ASP.NET Core, позволяет настроить различные службы ASP.NET Core Framework для встроенного контейнера внедрения зависимостей платформы.  Различные `services.Add*` методы добавляют службы, которые включают такие функции, как проверка подлинности, Razor Pages, маршрутизация контроллера MVC, SignalR и взаимодействие с сервером блазор, между многими другими.  Этот метод не требовался в веб-формах, так как анализ и обработка файлов ASPX, ASCX, ASHX и ASMX была определена ссылкой на ASP.NET в файле конфигурации web.config.  Дополнительные сведения о внедрении зависимостей в ASP.NET Core доступны в [интерактивной документации](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection).
+`ConfigureServices`Метод, представленный в ASP.NET Core, позволяет настроить различные службы ASP.NET Core Framework для встроенного контейнера внедрения зависимостей платформы.  Различные `services.Add*` методы добавляют службы, которые включают такие функции, как проверка подлинности, Razor Pages, маршрутизация контроллера MVC, SignalR и взаимодействие с сервером блазор, между многими другими.  Этот метод не требовался в веб-формах, так как анализ и обработка файлов ASPX, ASCX, ASHX и ASMX была определена ссылкой на ASP.NET в файле конфигурации web.config.  Дополнительные сведения о внедрении зависимостей в ASP.NET Core доступны в [интерактивной документации](/aspnet/core/fundamentals/dependency-injection).
 
 `Configure`Метод вводит концепцию конвейера HTTP для ASP.NET Core.  В этом методе мы объявляем сверху вниз по [промежуточного слоя](middleware.md) , который будет выполнять все запросы, отправленные в наше приложение. Большинство этих функций в конфигурации по умолчанию были разбиты по файлам конфигурации веб-форм и теперь находятся в одном месте для простоты ссылок.
 
@@ -103,7 +103,7 @@ public class Startup
 </Target>
 ```
 
-Дополнительные сведения о обеих стратегиях управления файлами CSS и JavaScript можно найти в ASP.NET Core документации по [статическим ресурсам в пакете и уменьшение](https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification) .
+Дополнительные сведения о обеих стратегиях управления файлами CSS и JavaScript можно найти в ASP.NET Core документации по [статическим ресурсам в пакете и уменьшение](/aspnet/core/client-side/bundling-and-minification) .
 
 >[!div class="step-by-step"]
 >[Назад](project-structure.md)

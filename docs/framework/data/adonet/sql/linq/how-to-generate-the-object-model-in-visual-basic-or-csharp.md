@@ -2,14 +2,15 @@
 title: Практическое руководство. Как создать модель объектов на языке Visual Basic или C#
 ms.date: 03/30/2017
 ms.assetid: a0c73b33-5650-420c-b9dc-f49310c201ee
-ms.openlocfilehash: e2491cf18be556cb26f084a178b7bf09448c6904
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 03525b6f39dcccfb9c68da6bab8b524efa3613ef
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546618"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158413"
 ---
 # <a name="how-to-generate-the-object-model-in-visual-basic-or-c"></a>Как создать объектную модель в Visual Basic или C\#
+
 В [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] объектная модель используемого языка программирования сопоставляется с реляционной базой данных. Доступны два средства для автоматического создания Visual Basic или модели C# на основе метаданных существующей базы данных.  
   
 - При использовании Visual Studio можно использовать реляционный конструктор объектов для создания объектной модели. Реляционный конструктор объектов (R) предоставляет богатый пользовательский интерфейс, помогающий в создании [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] объектной модели. Дополнительные сведения см. [в разделе средства LINQ to SQL в Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).
@@ -22,6 +23,7 @@ ms.locfileid: "90546618"
  Документация для реляционного конструктора объектов (R) содержит примеры создания объектной модели Visual Basic или C# с помощью конструктора O/R. Ниже приведены примеры использования программы командной строки SQLMetal. Дополнительные сведения см. в разделе [SQLMetal.exe (средство создания кода)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## <a name="example"></a>Пример  
+
  Командная строка SQLMetal, показанная в следующем примере, создает Visual Basic код в качестве объектной модели на основе атрибутов образца базы данных Northwind. Также отображаются хранимые процедуры и функции.  
   
 ```console  
@@ -29,13 +31,14 @@ sqlmetal /code:northwind.vb /language:vb "c:\northwnd.mdf" /sprocs /functions
 ```  
   
 ## <a name="example"></a>Пример  
+
  С помощью команды программы SQLMetal, представленной в следующем примере, создается код C# для основанной на атрибутах объектной модели базы данных "Northwind". Также отображаются хранимые процедуры и функции и имена таблиц автоматически преобразуются в имена во множественном числе.  
   
 ```console  
 sqlmetal /code:northwind.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство по программированию](programming-guide.md)
 - [Модель объектов LINQ to SQL](the-linq-to-sql-object-model.md)

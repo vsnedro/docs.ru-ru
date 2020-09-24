@@ -9,14 +9,15 @@ helpviewer_keywords:
 - mailSettings element
 - <mailSettings> element
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
-ms.openlocfilehash: ce7b8564e4ee5ea73d42259612c077420d36645b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a146874acc21f52507b37b1751c648792e23c8bb
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504567"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158855"
 ---
 # <a name="mailsettings-element-network-settings"></a>Элемент \<mailSettings> (параметры сети)
+
 Настраивает параметры отправки почты.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -32,24 +33,27 @@ ms.locfileid: "84504567"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Атрибут|Описание|  
+|attribute|Описание|  
 |---------------|-----------------|  
-|[\<smtp>Элемент (параметры сети)](smtp-element-network-settings.md)|Настраивает параметры протокола простого почтового транспорта.|  
+|[Элемент \<smtp> (параметры сети)](smtp-element-network-settings.md)|Настраивает параметры протокола простого почтового транспорта.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[\<system.Net>Элемент (параметры сети)](system-net-element-network-settings.md)|Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.|  
+|[Элемент \<system.Net> (параметры сети)](system-net-element-network-settings.md)|Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере задаются соответствующие параметры SMTP для отправки электронной почты с использованием сетевых учетных данных по умолчанию.  
   
 ```xml  
@@ -68,7 +72,7 @@ ms.locfileid: "84504567"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.Mail.SmtpClient>
 - [Схема параметров сети](index.md)

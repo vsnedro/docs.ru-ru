@@ -9,14 +9,15 @@ helpviewer_keywords:
 - <system.serviceModel> element
 - system.serviceModel element
 ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
-ms.openlocfilehash: 567cbd2cc07ee82e795daa067b9034b2b8dc1974
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 44966ed9ee3abb3d1babdf09dd44f087376ada55
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85243962"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158686"
 ---
 # \<system.serviceModel>
+
 Этот раздел конфигурации содержит все элементы конфигурации Windows Communication Foundation (WCF) ServiceModel.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -56,10 +57,12 @@ ms.locfileid: "85243962"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
- Отсутствуют  
+
+ Нет  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -85,7 +88,8 @@ ms.locfileid: "85243962"
 |-------------|-----------------|  
 |\<configuration>|Корневой элемент для всех элементов конфигурации в файле конфигурации .NET.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  WCF не добавляет элементы в разделы конфигурации других продуктов.  
   
  Службы WCF определяются в `services` разделе файла конфигурации. Сборка может содержать любое число служб. Для каждой службы используется собственный раздел конфигурации `service`. Этот раздел и его содержимое определяют контракт, поведение и конечные точки конкретной службы.  
@@ -99,6 +103,7 @@ ms.locfileid: "85243962"
  Привязки связаны с конечными точками через сочетание атрибутов `name` и `bindingConfiguration`. Атрибут `binding` указывает, в каком разделе определяется привязка. Атрибут `bindingConfiguration` указывает, какая из настроенных привязок используется в разделе привязки. В разделе привязки может определяться несколько настроенных привязок.  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен пример файла конфигурации WCF.  
   
 ```xml  
@@ -131,6 +136,6 @@ ms.locfileid: "85243962"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ServiceModelSectionGroup>

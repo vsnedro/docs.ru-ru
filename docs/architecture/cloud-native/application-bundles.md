@@ -2,12 +2,12 @@
 title: Пакеты приложений, ориентированных на облако
 description: Создание архитектуры облачных приложений .NET для Azure | Пакеты облачных приложений машинного кода
 ms.date: 05/13/2020
-ms.openlocfilehash: fc6ee96078650dccd2ebeb3e65a0a00c4e05ecdb
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 7f1fcd448f3299a31043bf269717f7b777329c62
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614348"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158127"
 ---
 # <a name="cloud-native-application-bundles"></a>Пакеты приложений, ориентированных на облако
 
@@ -81,9 +81,9 @@ ms.locfileid: "83614348"
 ## <a name="references"></a>Ссылки
 
 - [Azure DevOps](https://azure.microsoft.com/services/devops/)
-- [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/)
+- [Azure Resource Manager](/azure/azure-resource-manager/management/overview)
 - [Terraform](https://www.terraform.io/)
-- [Azure CLI](https://docs.microsoft.com/cli/azure/)
+- [Azure CLI](/cli/azure/)
 
 >[!div class="step-by-step"]
 >[Назад](infrastructure-as-code.md)
