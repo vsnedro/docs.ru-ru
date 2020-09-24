@@ -715,7 +715,7 @@ items:
       - name: Внедрение зависимостей
         href: /aspnet/core/fundamentals/dependency-injection
       - name: Универсальный узел
-        href: /aspnet/core/fundamentals/host/generic-host
+        href: ../core/extensions/generic-host.md
       - name: Ведение журнала
         href: /aspnet/core/fundamentals/logging
       - name: Шаблон параметров

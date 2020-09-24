@@ -31,6 +31,8 @@
       href: how-to-guides/udf-guide.md
     - name: Отладка приложения
       href: how-to-guides/debug.md
+    - name: Отправка заданий в Azure Synapse Analytics
+      href: 'https://docs.microsoft.com/azure/synapse-analytics/spark/spark-dotnet'
     - name: Отправка заданий в HDInsight
       href: how-to-guides/hdinsight-deploy-methods.md
     - name: Отправка заданий в Databricks
