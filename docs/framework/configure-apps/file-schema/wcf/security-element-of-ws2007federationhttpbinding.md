@@ -2,14 +2,15 @@
 title: Элемент <security> для <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
-ms.openlocfilehash: b85c54c6507313522286e0c66504cfd0c8afb2b0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 943ccc241aef15b58661699408b085d98cf86c3b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738722"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183706"
 ---
 # <a name="security-element-of-ws2007federationhttpbinding"></a>Элемент \<security> для \<ws2007FederationHttpBinding>
+
 Определяет параметры безопасности [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) элемента.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -37,19 +38,20 @@ ms.locfileid: "73738722"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`mode`|Необязательный элемент. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.WSFederationHttpSecurityMode>.|  
+|`mode`|Необязательный элемент. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.WSFederationHttpSecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут mode  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|None|Во время передачи сообщение SOAP не защищено.|  
+|Отсутствуют|Во время передачи сообщение SOAP не защищено.|  
 |Сообщение|Целостность, конфиденциальность, проверка подлинности сервера и проверка подлинности клиента обеспечиваются с помощью средств безопасности сообщений SOAP. По умолчанию текст сообщений шифруется и подписывается. Служба должна быть настроена с использованием сертификата. Проверка подлинности клиента основана на маркере, выданного клиенту службой маркеров безопасности.|  
 |TransportWithMessageCredential|Целостность, конфиденциальность и проверка подлинности сервера обеспечиваются с помощью HTTPS. Служба должна быть настроена с использованием сертификата. Проверка подлинности клиента выполняется с помощью средств безопасности сообщений SOAP и основана на маркере, выданном клиенту службой маркеров безопасности.|  
   
@@ -65,7 +67,7 @@ ms.locfileid: "73738722"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности привязки [\<wsDualHttpBinding>](wsdualhttpbinding.md) .|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.WSFederationHttpSecurity>
 - <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>

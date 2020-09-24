@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1b97afeb-03f8-41e2-8eb3-58aff65f7d18
-ms.openlocfilehash: 0a7c8f005b90484ef2f9c7e48218bda40533696a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 064688f173e375481373e9a33d66c64666e1583f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287016"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148365"
 ---
 # <a name="creating-a-datatable-from-a-query-linq-to-dataset"></a>Создание таблицы данных из запроса (LINQ to DataSet)
+
 Объект <xref:System.Data.DataTable> часто используется для привязки данных. Метод <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> принимает результаты запроса и копирует данные в <xref:System.Data.DataTable>, которую в дальнейшем можно использовать для привязки данных. После выполнения операций с данными происходит слияние нового объекта <xref:System.Data.DataTable> с исходным объектом <xref:System.Data.DataTable>.  
   
  Метод <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> использует для создания объекта <xref:System.Data.DataTable> на основе запроса следующий процесс.  
@@ -38,6 +39,7 @@ ms.locfileid: "84287016"
  [!code-vb[DP LINQ to DataSet Examples#CopyToDataTable1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#copytodatatable1)]  
   
 ## <a name="creating-a-custom-copytodatatablet-method"></a>Создание пользовательского метода CopyToDataTable \<T>  
+
  Существующие методы <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> работают только с источником <xref:System.Collections.Generic.IEnumerable%601>, где общий параметр `T` принадлежит к типу <xref:System.Data.DataRow>. Хотя это и полезно, это не позволяет создавать таблицы из последовательности скалярных типов, из запросов, возвращающих анонимные типы, или из запросов, выполняющих соединение таблиц. Пример реализации двух пользовательских `CopyToDataTable` методов, которые загружают таблицу из последовательности скалярных или анонимных типов, см. [в разделе как реализовать CopyToDataTable, \<T> где универсальный тип T не является DataRow](implement-copytodatatable-where-type-not-a-datarow.md)s.  
   
  В примерах, приведенных в этом разделе, используются следующие пользовательские типы:  
@@ -46,36 +48,41 @@ ms.locfileid: "84287016"
  [!code-vb[DP Custom CopyToDataTable Examples#ItemClass](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#itemclass)]  
   
 ### <a name="example"></a>Пример  
+
  В этом примере выполняется соединение в таблицах `SalesOrderHeader` и `SalesOrderDetail` для получения совершенных через Интернет заказов начиная с августа и на основе этого запроса создается таблица.  
   
  [!code-csharp[DP Custom CopyToDataTable Examples#Join](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#join)]
  [!code-vb[DP Custom CopyToDataTable Examples#Join](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#join)]  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере выполняется запрос к коллекции для получения элементов, цена которых составляет больше 9,99 доллара США, и на основе результатов этого запроса создается таблица.  
   
  [!code-csharp[DP Custom CopyToDataTable Examples#LoadItemsIntoTable](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#loaditemsintotable)]
  [!code-vb[DP Custom CopyToDataTable Examples#LoadItemsIntoTable](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#loaditemsintotable)]  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере выполняется запрос к коллекции для получения элементов, цена которых составляет больше 9,99, и результаты запроса проецируются. Возвращаемая последовательность анонимных типов загружается в существующую таблицу.  
   
  [!code-csharp[DP Custom CopyToDataTable Examples#LoadItemsIntoExistingTable](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#loaditemsintoexistingtable)]
  [!code-vb[DP Custom CopyToDataTable Examples#LoadItemsIntoExistingTable](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#loaditemsintoexistingtable)]  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере выполняется запрос к коллекции для получения элементов, цена которых составляет больше 9,99 доллара США, и результаты запроса проецируются. Возвращаемая последовательность анонимных типов загружается в существующую таблицу. Схема таблицы автоматически расширяется, так как типы `Book` и `Movies` являются производными от типа `Item`.  
   
  [!code-csharp[DP Custom CopyToDataTable Examples#LoadItemsExpandSchema](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#loaditemsexpandschema)]
  [!code-vb[DP Custom CopyToDataTable Examples#LoadItemsExpandSchema](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#loaditemsexpandschema)]  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере выполняется запрос к коллекции для получения элементов, цена которых составляет больше 9,99 доллара США, и возвращаемая последовательность значений типа <xref:System.Double> загружается в новую таблицу.  
   
  [!code-csharp[DP Custom CopyToDataTable Examples#LoadScalarSequence](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#loadscalarsequence)]
  [!code-vb[DP Custom CopyToDataTable Examples#LoadScalarSequence](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#loadscalarsequence)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство по программированию](programming-guide-linq-to-dataset.md)
 - [Универсальные методы Field и SetField](generic-field-and-setfield-methods-linq-to-dataset.md)

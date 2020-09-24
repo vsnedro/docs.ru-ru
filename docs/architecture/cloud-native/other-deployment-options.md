@@ -2,12 +2,12 @@
 title: Другие параметры развертывания контейнера
 description: Другие варианты развертывания контейнеров с помощью Azure
 ms.date: 05/13/2020
-ms.openlocfilehash: acb022e3d4fd4862c592fa571894e1b8ce17f465
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 2eac822b74af636e0ab0ed24b58eb7139526f4a2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613763"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91163626"
 ---
 # <a name="other-container-deployment-options"></a>Другие параметры развертывания контейнера
 
@@ -27,13 +27,13 @@ ms.locfileid: "83613763"
 
 ## <a name="how-to-deploy-an-app-to-azure-container-instances"></a>Развертывание приложения в службе "экземпляры контейнеров Azure"
 
-Для развертывания в [службе "экземпляры контейнеров Azure" (ACI)](https://docs.microsoft.com/azure/container-instances/)вам потребуется реестр контейнеров Azure (запись контроля доступа) и учетные данные для обращения к ней. После отправки образа контейнера в репозиторий он доступен для ACI. Вы можете работать с ACI, используя портал Azure или интерфейс командной строки. Запись контроля доступа обеспечивает тесную интеграцию с ACI. На рис. 3-14 показано, как отправить индивидуальный образ контейнера в запись контроля доступа.
+Для развертывания в [службе "экземпляры контейнеров Azure" (ACI)](/azure/container-instances/)вам потребуется реестр контейнеров Azure (запись контроля доступа) и учетные данные для обращения к ней. После отправки образа контейнера в репозиторий он доступен для ACI. Вы можете работать с ACI, используя портал Azure или интерфейс командной строки. Запись контроля доступа обеспечивает тесную интеграцию с ACI. На рис. 3-14 показано, как отправить индивидуальный образ контейнера в запись контроля доступа.
 
 ![Экземпляр запуска реестра контейнеров Azure](./media/acr-runinstance-contextmenu.png)
 
 **Рис. 3-14**. Экземпляр запуска реестра контейнеров Azure
 
-Создание экземпляра в ACI может быть выполнено быстро. Укажите реестр образа, сведения о группе ресурсов Azure, объем выделяемой памяти и порт для прослушивания. В этом [кратком руководстве показано, как развернуть экземпляр контейнера в ACI с помощью портал Azure](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
+Создание экземпляра в ACI может быть выполнено быстро. Укажите реестр образа, сведения о группе ресурсов Azure, объем выделяемой памяти и порт для прослушивания. В этом [кратком руководстве показано, как развернуть экземпляр контейнера в ACI с помощью портал Azure](/azure/container-instances/container-instances-quickstart-portal).
 
 После завершения развертывания найдите только что развернутый IP-адрес контейнера и взаимодействует с ним через указанный порт.
 
@@ -44,22 +44,22 @@ ms.locfileid: "83613763"
 - [Что такое Kubernetes?](https://blog.newrelic.com/engineering/what-is-kubernetes/)
 - [Установка Kubernetes с помощью Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
 - [MiniKube VS DOCKER Desktop](https://medium.com/containers-101/local-kubernetes-for-windows-minikube-vs-docker-desktop-25a1c6d3b766)
-- [Инструменты Visual Studio для Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
+- [Инструменты Visual Studio для Docker](/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
 - [Общие сведения о бессерверном холодном запуске](https://azure.microsoft.com/blog/understanding-serverless-cold-start/)
-- [Предварительно подготовленные экземпляры функций Azure](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
-- [Создание функции в Linux из пользовательского образа](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Предварительно подготовленные экземпляры функций Azure](/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
+- [Создание функции в Linux из пользовательского образа](/azure/azure-functions/functions-create-function-linux-custom-image)
 - [Запуск функций Azure в контейнере DOCKER](https://markheath.net/post/azure-functions-docker)
-- [Создание функции в Linux из пользовательского образа](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
-- [Функции Azure с автомасштабированием, управляемым событиями Kubernetes](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda)
+- [Создание функции в Linux из пользовательского образа](/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Функции Azure с автомасштабированием, управляемым событиями Kubernetes](/azure/azure-functions/functions-kubernetes-keda)
 - [Выпуск ранний](https://martinfowler.com/bliki/CanaryRelease.html)
-- [Azure Dev Spaces с VS Code](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore)
-- [Azure Dev Spaces с помощью Visual Studio](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio)
-- [AKS нескольких пулов узлов](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
-- [Автомасштабирование кластера AKS](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
-- [Руководство. масштабирование приложений в AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
-- [Масштабирование и размещение Функций Azure](https://docs.microsoft.com/azure/azure-functions/functions-scale)
-- [Документация по службе "экземпляры контейнеров Azure"](https://docs.microsoft.com/azure/container-instances/)
-- [Развертывание экземпляра контейнера из записи контроля доступа](https://docs.microsoft.com/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)
+- [Azure Dev Spaces с VS Code](/azure/dev-spaces/quickstart-netcore)
+- [Azure Dev Spaces с помощью Visual Studio](/azure/dev-spaces/quickstart-netcore-visualstudio)
+- [AKS нескольких пулов узлов](/azure/aks/use-multiple-node-pools)
+- [Автомасштабирование кластера AKS](/azure/aks/cluster-autoscaler)
+- [Руководство. масштабирование приложений в AKS](/azure/aks/tutorial-kubernetes-scale)
+- [Масштабирование и размещение Функций Azure](/azure/azure-functions/functions-scale)
+- [Документация по службе "экземпляры контейнеров Azure"](/azure/container-instances/)
+- [Развертывание экземпляра контейнера из записи контроля доступа](/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)
 
 >[!div class="step-by-step"]
 >[Назад](scale-containers-serverless.md)
