@@ -2,12 +2,12 @@
 title: Azure Active Directory
 description: Создание архитектуры облачных приложений .NET для Azure | Azure Active Directory
 ms.date: 06/30/2019
-ms.openlocfilehash: 03f5ea8e84bc3c4a2a88a63d4b109aabf0c64f36
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 55787f3565fc15bb25cf1a101aa5c1e3ddefe5e7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614283"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91161117"
 ---
 # <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -19,7 +19,7 @@ Azure AD поддерживает экраны входа с фирменной 
 
 ## <a name="references"></a>Ссылки
 
-- [Платформа удостоверений Майкрософт](https://docs.microsoft.com/azure/active-directory/develop/)
+- [Платформа удостоверений Майкрософт](/azure/active-directory/develop/)
 
 >[!div class="step-by-step"]
 >[Назад](authentication-authorization.md)

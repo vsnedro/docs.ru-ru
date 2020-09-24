@@ -10,14 +10,15 @@ helpviewer_keywords:
 - locating assemblies
 - assemblies [.NET Framework], location
 ms.assetid: 44d2eadf-7eec-443c-a2ac-d601fd919e17
-ms.openlocfilehash: 50b61eedddabd660b1834565a61738f460ae9ff9
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: 8ae807e46b11d2adb06d6af0c86e1c7297caa0c0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85105374"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91161988"
 ---
 # <a name="how-to-locate-assemblies-by-using-devpath"></a>Практическое руководство. Поиск сборок с помощью DEVPATH
+
 Разработчикам может потребоваться убедиться, что создаваемая ими общая сборка работает правильно с несколькими приложениями. Вместо постоянного размещения сборки в глобальном кэше сборок во время цикла разработки разработчик может создать переменную среды DEVPATH, которая указывает на выходной каталог сборки для сборки.  
   
  Например, предположим, что создается общая сборка с именем Мишаредассембли, а выходной каталог — К:\мишаредассембли\дебуг. К:\мишаредассембли\дебуг можно разместить в переменной DEVPATH. Затем необходимо указать [\<developmentMode>](./file-schema/runtime/developmentmode-element.md) элемент в файле конфигурации компьютера. Этот элемент указывает среде CLR использовать DEVPATH для нахождение сборок.  

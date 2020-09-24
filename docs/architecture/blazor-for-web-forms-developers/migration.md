@@ -7,12 +7,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 09/19/2019
-ms.openlocfilehash: ba6dbfdf9a4fa9973dfe84cf5d58f1300f5d0cb4
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 853358fbf534ee7501412259c61efe054b4757a7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557546"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91161208"
 ---
 # <a name="migrate-from-aspnet-web-forms-to-no-locblazor"></a>Переход с веб-форм ASP.NET на Blazor
 
@@ -636,7 +636,7 @@ public class Startup
 - CAS (Code Access Security — безопасность доступа кода)
 - Прозрачность безопасности
 
-Дополнительные сведения о методах, позволяющих определить необходимые изменения для поддержки в .NET Core, см. в разделе [Перенос кода из .NET Framework в .NET Core](/dotnet/core/porting).
+Дополнительные сведения о методах, позволяющих определить необходимые изменения для поддержки в .NET Core, см. в разделе [Перенос кода из .NET Framework в .NET Core](../../core/porting/index.md).
 
 ASP.NET Core является пересмотренной версией ASP.NET и содержит некоторые изменения, которые изначально не кажутся очевидными. Основные изменения:
 

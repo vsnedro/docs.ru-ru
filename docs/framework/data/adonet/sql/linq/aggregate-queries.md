@@ -2,14 +2,15 @@
 title: Статистические запросы
 ms.date: 03/30/2017
 ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
-ms.openlocfilehash: 2085808d631d1d9f97573c557e9e66e07113df52
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8dfe24a84c707b6d21afb7ccfc57ac7b0423942f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554225"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91161546"
 ---
 # <a name="aggregate-queries"></a>Статистические запросы
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] поддерживает агрегатные операторы `Average`, `Count`, `Max`, `Min` и `Sum`. Обратите внимание на следующие характеристики агрегатных операторов в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
 - Агрегатные запросы выполняются немедленно.  
@@ -25,6 +26,7 @@ ms.locfileid: "90554225"
  В следующих разделах используются примеры из учебной базы данных Northwind. Дополнительные сведения см. в статье [Загрузка образцов баз данных](downloading-sample-databases.md).  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Возврат среднего значения из числовой последовательности](return-the-average-value-from-a-numeric-sequence.md)  
  Демонстрируется использование оператора <xref:System.Linq.Enumerable.Average%2A>.  
   
@@ -40,7 +42,8 @@ ms.locfileid: "90554225"
  [Вычисление суммы значений в числовой последовательности](compute-the-sum-of-values-in-a-numeric-sequence.md)  
  Демонстрируется использование оператора <xref:System.Linq.Enumerable.Sum%2A>.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Примеры запросов](query-examples.md)  
  Содержит ссылки на запросы [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] в Visual Basic и C#.  
   

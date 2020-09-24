@@ -2,12 +2,12 @@
 title: Развертывание контейнеров в Azure
 description: Развертывание контейнеров в Azure с помощью реестра контейнеров Azure, службы Kubernetes Azure и Azure Dev Spaces.
 ms.date: 04/13/2020
-ms.openlocfilehash: ba2854323ee0f1394a3cff0dd3756cb3c7c32d5b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d848a146a2bdb5d8d02543f57f19d6a39c9699e6
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614153"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160779"
 ---
 # <a name="deploying-containers-in-azure"></a>Развертывание контейнеров в Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "83614153"
 
 После создания образы контейнеров хранятся в реестрах контейнеров. Они позволяют создавать и хранить образы контейнеров, а также управлять ими. Существует множество доступных реестров, как открытых, так и закрытых. Реестр контейнеров Azure (запись контроля доступа) — это полностью управляемая служба реестра контейнеров в облаке Azure. Он сохраняет образы в сети Azure, уменьшая время на их развертывание на узлах контейнеров Azure. Их также можно защитить с помощью тех же процедур безопасности и идентификации, которые используются для других ресурсов Azure.
 
-Реестр контейнеров Azure создается с помощью средств [портал Azure](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal), [Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli)или [PowerShell](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Создание реестра в Azure выполняется просто. Для этого требуется подписка Azure, Группа ресурсов и уникальное имя. На рис. 3-11 показаны основные параметры для создания реестра, который будет размещаться в `registryname.azurecr.io` .
+Реестр контейнеров Azure создается с помощью средств [портал Azure](/azure/container-registry/container-registry-get-started-portal), [Azure CLI](/azure/container-registry/container-registry-get-started-azure-cli)или [PowerShell](/azure/container-registry/container-registry-get-started-powershell). Создание реестра в Azure выполняется просто. Для этого требуется подписка Azure, Группа ресурсов и уникальное имя. На рис. 3-11 показаны основные параметры для создания реестра, который будет размещаться в `registryname.azurecr.io` .
 
 ![Создание реестра контейнеров](./media/create-container-registry.png)
 
@@ -57,7 +57,7 @@ docker rmi myregistry.azurecr.io/mycontainer:v1
 
 ## <a name="acr-tasks"></a>Задачи ACR
 
-[Задачи записи контроля](https://docs.microsoft.com/azure/container-registry/container-registry-tasks-overview) доступа — это набор функций, доступных в реестре контейнеров Azure. Он расширяет [цикл разработки внутреннего цикла](https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow) , создавая образы контейнеров и управляя ими в облаке Azure. Вместо того `docker build` , чтобы вызывать и `docker push` локально на компьютере разработки, они автоматически обрабатываются ЗАДАЧами контроля доступа в облаке.
+[Задачи записи контроля](/azure/container-registry/container-registry-tasks-overview) доступа — это набор функций, доступных в реестре контейнеров Azure. Он расширяет [цикл разработки внутреннего цикла](../containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow.md) , создавая образы контейнеров и управляя ими в облаке Azure. Вместо того `docker build` , чтобы вызывать и `docker push` локально на компьютере разработки, они автоматически обрабатываются ЗАДАЧами контроля доступа в облаке.
 
 Следующая команда AZ CLI строит образ контейнера и отправляет его в запись контроля доступа:
 
@@ -75,11 +75,11 @@ az acr build --image sample/hello-world:v1  --registry myContainerRegistry008 --
 
 В этой главе мы обсуждали службу Azure Kubernetes Service (AKS). Мы видели, что это де-факто контейнер Orchestrator, управляющий контейнерными приложениями в машинном облаке.
 
-После развертывания образа в реестре, например записи контроля доступа, можно настроить AKS для автоматического извлечения и развертывания. С помощью конвейера CI/CD вы можете настроить стратегию [выпуска ранний](https://martinfowler.com/bliki/CanaryRelease.html) , чтобы снизить риск, связанный с быстро развертываемыми обновлениями. Новая версия приложения изначально настраивается в рабочей среде без маршрутизации трафика. Затем система будет направлять небольшой процент пользователей на только что развернутую версию. По мере того, как группа получает уверенность в новой версии, она может развернуть больше экземпляров и прекратить старую версию. AKS легко поддерживает этот стиль развертывания.
+После развертывания образа в реестре, например записи контроля доступа, можно настроить AKS для автоматического извлечения и развертывания. С помощью конвейера CI/CD вы можете настроить стратегию  [выпуска ранний](https://martinfowler.com/bliki/CanaryRelease.html) , чтобы снизить риск, связанный с быстро развертываемыми обновлениями. Новая версия приложения изначально настраивается в рабочей среде без маршрутизации трафика. Затем система будет направлять небольшой процент пользователей на только что развернутую версию. По мере того, как группа получает уверенность в новой версии, она может развернуть больше экземпляров и прекратить старую версию. AKS легко поддерживает этот стиль развертывания.
 
 Как и в случае с большинством ресурсов в Azure, вы можете создать кластер службы Kubernetes Azure с помощью портала, командной строки или средств автоматизации, таких как Helm или terraform. Чтобы начать работу с новым кластером, необходимо предоставить следующие сведения:
 
-- Подписка Azure
+- Подписка Azure.
 - Группа ресурсов
 - Имя кластера Kubernetes
 - Регион
@@ -96,7 +96,7 @@ az acr build --image sample/hello-world:v1  --registry myContainerRegistry008 --
 - Наблюдение
 - Теги
 
-Это [Краткое руководство содержит инструкции по развертыванию кластера AKS с помощью портал Azure](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
+Это [Краткое руководство содержит инструкции по развертыванию кластера AKS с помощью портал Azure](/azure/aks/kubernetes-walkthrough-portal).
 
 ## <a name="azure-dev-spaces"></a>Azure Dev Spaces
 
@@ -116,7 +116,7 @@ az acr build --image sample/hello-world:v1  --registry myContainerRegistry008 --
 3. Настройка дочернего пространства разработки (для собственной версии системы).
 4. Подключитесь к пространству разработки.
 
-Все эти действия можно выполнить с помощью Azure CLI и новых `azds` средств командной строки. Например, чтобы создать новое пространство разработки Azure для данного кластера Kubernetes, используйте следующую команду:
+Все эти действия можно выполнить с помощью Azure CLI и новых  `azds` средств командной строки. Например, чтобы создать новое пространство разработки Azure для данного кластера Kubernetes, используйте следующую команду:
 
 ```azurecli
 az aks use-dev-spaces -g my-aks-resource-group -n MyAKSCluster

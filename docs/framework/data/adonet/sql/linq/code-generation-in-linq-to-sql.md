@@ -2,14 +2,15 @@
 title: Создание кода в LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
-ms.openlocfilehash: 551322637e6e04b9be7d558c51e063fead7f84f4
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: f58448e0fc0c22795005b55a737b42374a750ec3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70247959"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91161533"
 ---
 # <a name="code-generation-in-linq-to-sql"></a>Создание кода в LINQ to SQL
+
 Можно создать код для представления базы данных с помощью реляционный конструктор объектов или средства командной строки SQLMetal. В любом случае полный процесс создания кода включает три этапа.  
   
 1. Средство *извлечения DBML* извлекает данные схемы из базы данных и повторно собирает их в XML-файл DBML.  
@@ -21,18 +22,21 @@ ms.locfileid: "70247959"
  Дополнительные сведения см. в разделе [SQLMetal.exe (средство создания кода)](../../../../tools/sqlmetal-exe-code-generation-tool.md). Разработчики, использующие Visual Studio, также могут использовать реляционный конструктор объектов для создания кода. См. раздел [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
 ## <a name="dbml-extractor"></a>Средство извлечения DBML  
- Средство извлечения DBML — [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] это компонент, который принимает метаданные базы данных как входные данные и создает DBML-файл в качестве выходных данных.  
+
+ Средство извлечения DBML — это [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] компонент, который принимает метаданные базы данных как входные данные и создает DBML-файл в качестве выходных данных.  
   
 ## <a name="code-generator"></a>Генератор кода  
- Генератор кода — [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] это компонент, преобразующий DBML-файлы в Visual Basic C#, или файлы сопоставления XML.  
+
+ Генератор кода — это [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] компонент, который ПРЕОБРАЗУЕТ DBML-файлы в файлы сопоставления Visual Basic, C# или XML.  
   
 ## <a name="xml-schema-definition-file"></a>Файл определения схемы XML  
+
  Файл DBML должен быть проверен на соответствие следующему XSD-файлу определению схемы.  
   
  Следует отличать этот файл определения схемы от файла определения схемы, который используется для проверки файла внешних сопоставлений. Дополнительные сведения см. в разделе [внешнее сопоставление](external-mapping.md).  
   
 > [!NOTE]
-> Пользователи Visual Studio также будут искать этот XSD-файл в диалоговом окне схемы XML в формате "Дбмлсчема. xsd". Чтобы правильно использовать XSD-файл для проверки файла DBML, см. [раздел как Проверьте DBML и внешние файлы](how-to-validate-dbml-and-external-mapping-files.md)сопоставления.  
+> Пользователи Visual Studio также будут искать этот XSD-файл в диалоговом окне схемы XML в формате "Дбмлсчема. xsd". Чтобы правильно использовать XSD-файл для проверки файла DBML, см. раздел [как проверить DBML и внешние файлы сопоставления](how-to-validate-dbml-and-external-mapping-files.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -243,6 +247,7 @@ elementFormDefault="qualified" >
 ```  
   
 ## <a name="sample-dbml-file"></a>Образец DBML-файла  
+
  Следующий код является фрагментом DBML-файла, созданного из образца базы данных Northwind. Вы можете создать файл целиком с помощью SQLMetal с параметром **/XML** . Дополнительные сведения см. в разделе [SQLMetal.exe (средство создания кода)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ```xml  
@@ -269,10 +274,10 @@ elementFormDefault="qualified" >
 </Database>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные сведения](background-information.md)
 - [Внешнее сопоставление](external-mapping.md)
-- [Практическое руководство. Создать объектную модель как внешний файл](how-to-generate-the-object-model-as-an-external-file.md)
+- [Практическое руководство. Как создать модель объектов в виде внешнего файла](how-to-generate-the-object-model-as-an-external-file.md)
 - [Загрузка примеров баз данных](downloading-sample-databases.md)
 - [Ссылки](reference.md)

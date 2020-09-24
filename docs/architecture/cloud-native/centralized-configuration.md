@@ -2,12 +2,12 @@
 title: Централизованная конфигурация
 description: Централизация конфигураций для облачных приложений с помощью конфигурации приложений Azure и хранилища Азурекэй.
 ms.date: 05/13/2020
-ms.openlocfilehash: d389d29dcdb1db5162d95370d181ab5a85d72dc8
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 0d40c5b2d70f30beb17489dfd55900f7c5fc1a75
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614231"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160883"
 ---
 # <a name="centralized-configuration"></a>Централизованная конфигурация
 
@@ -19,7 +19,7 @@ ms.locfileid: "83614231"
 
 ## <a name="azure-app-configuration"></a>Конфигурация приложений Azure
 
-[Настройка приложений Azure](https://docs.microsoft.com/azure/azure-app-configuration/overview) — это полностью управляемая служба Azure, которая хранит несекретные параметры конфигурации в безопасном централизованном расположении. Сохраненные значения могут совместно использоваться несколькими службами и приложениями.
+[Настройка приложений Azure](/azure/azure-app-configuration/overview) — это полностью управляемая служба Azure, которая хранит несекретные параметры конфигурации в безопасном централизованном расположении. Сохраненные значения могут совместно использоваться несколькими службами и приложениями.
 
 Служба проста в использовании и предоставляет несколько преимуществ.
 
@@ -39,7 +39,7 @@ ms.locfileid: "83614231"
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 
-Key Vault — это управляемая служба для безопасного хранения секретов и доступа к ним. Секрет — это то, к чему необходимо строго контролировать доступ, например ключи API, пароли или сертификаты. Хранилище — это логическая группа секретов.
+Key Vault — это управляемая служба для безопасного хранения секретов и доступа к ним. Секрет — это то, к чему необходимо строго контролировать доступ, например ключи API, пароли или сертификаты. Хранилище — это логическая группа секретов.
 
 Key Vault значительно снижает вероятность случайной утечки секретов. При использовании Key Vault разработчикам приложений больше не требуется хранить информацию о безопасности своих приложений. Это избавляет от необходимости хранить эти сведения внутри кода. Например, приложению может потребоваться подключиться к базе данных. Вместо хранения строки подключения в коде приложений она безопасно хранится в Key Vault.
 
@@ -54,16 +54,16 @@ Key Vault значительно снижает вероятность случ�
 ## <a name="references"></a>Ссылки
 
 - [Архитектура eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Architecture)
-- [Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности](https://docs.microsoft.com/dotnet/architecture/microservices/architect-microservice-container-applications/scalable-available-multi-container-microservice-applications)
-- [Управление API Azure](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)
-- [Обзор базы данных SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)
+- [Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности](../microservices/architect-microservice-container-applications/scalable-available-multi-container-microservice-applications.md)
+- [Управление API Azure](/azure/api-management/api-management-key-concepts)
+- [Обзор базы данных SQL Azure](/azure/sql-database/sql-database-technical-overview)
 - [Кэш Azure для Redis](https://azure.microsoft.com/services/cache/)
-- [API Azure Cosmos DB для MongoDB](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)
-- [служебной шине Azure](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
-- [Общие сведения о службе Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)
+- [API Azure Cosmos DB для MongoDB](/azure/cosmos-db/mongodb-introduction)
+- [служебной шине Azure](/azure/service-bus-messaging/service-bus-messaging-overview)
+- [Общие сведения о службе Azure Monitor](/azure/azure-monitor/overview)
 - [eShopOnContainers: Создание кластера Kubernetes в AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#create-kubernetes-cluster-in-aks)
 - [eShopOnContainers: Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces)
-- [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/about)
+- [Azure Dev Spaces](/azure/dev-spaces/about)
 
 >[!div class="step-by-step"]
 >[Назад](deploy-eshoponcontainers-azure.md)

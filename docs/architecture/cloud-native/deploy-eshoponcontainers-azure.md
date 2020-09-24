@@ -2,12 +2,12 @@
 title: Развертывание eShopOnContainers в Azure
 description: Развертывание приложения eShopOnContainers с помощью службы Kubernetes Azure, Helm и Девспацес.
 ms.date: 05/13/2020
-ms.openlocfilehash: 93a2848f095d7593e1e169f4a6c6c1818a76217d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: b3871dae2b414709bfe24b6f7bdbf06de1689d12
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614101"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160727"
 ---
 # <a name="deploying-eshoponcontainers-to-azure"></a>Развертывание eShopOnContainers в Azure
 
@@ -78,7 +78,7 @@ spec:
 ![Архитектура eShopOnContainers ](./media/azure-devspaces-two.png)
  **рис. 2-8**. Разработчик Джон развертывает собственную версию микрослужбы резервирования и тестирует ее без конфликтов с другими разработчиками.
 
-С помощью Azure Dev Spaces команды могут работать непосредственно с AKS, одновременно изменяя, развертывая и тестируя свои изменения. Такой подход сокращает потребность в отдельных выделенных средах размещения, так как каждый разработчик эффективно имеет собственную среду AKS. Разработчики могут работать с Azure Dev Spaces с помощью интерфейса командной строки или запускать свое приложение для Azure Dev Spaces непосредственно из Visual Studio. [Узнайте больше о том, как Azure Dev Spaces работает и настроена.](https://docs.microsoft.com/azure/dev-spaces/how-dev-spaces-works)
+С помощью Azure Dev Spaces команды могут работать непосредственно с AKS, одновременно изменяя, развертывая и тестируя свои изменения. Такой подход сокращает потребность в отдельных выделенных средах размещения, так как каждый разработчик эффективно имеет собственную среду AKS. Разработчики могут работать с Azure Dev Spaces с помощью интерфейса командной строки или запускать свое приложение для Azure Dev Spaces непосредственно из Visual Studio. [Узнайте больше о том, как Azure Dev Spaces работает и настроена.](/azure/dev-spaces/how-dev-spaces-works)
 
 ## <a name="azure-functions-and-logic-apps-serverless"></a>Функции и Logic Apps Azure (бессерверные)
 

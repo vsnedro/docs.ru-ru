@@ -3,17 +3,19 @@ title: Поддерживаемые и неподдерживаемые мето
 description: В этой статье перечислены стандартные операторы запросов, которые поддерживаются и не поддерживаются в запросах LINQ to Entities.
 ms.date: 03/30/2017
 ms.assetid: 7f3ffa5f-f819-4730-bcdb-09b23de3b6d0
-ms.openlocfilehash: 0d01cc6ccecef0f10aed48fa7475ad1a16ad4ea1
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7d8b4e733ab0a996dea9fab60432f5fe0fece8e3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286783"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91161715"
 ---
 # <a name="supported-and-unsupported-linq-methods-linq-to-entities"></a>Поддерживаемые и неподдерживаемые методы LINQ (LINQ to Entities)
+
 В этом разделе содержатся сведения о стандартных операторах запросов LINQ, которые поддерживаются или не поддерживаются в запросах LINQ to Entities. У многих стандартных операторов запросов LINQ существуют перегруженные версии, принимающие целочисленный аргумент. Целочисленный аргумент соответствует индексу, начинающему с нуля, в последовательности, в которой выполняется операция, <xref:System.Collections.Generic.IEqualityComparer%601> или <xref:System.Collections.Generic.IComparer%601> . Если не указано обратное, эти перегруженные версии стандартных операторов LINQ не поддерживаются и при попытке их использования будет вызвано исключение.  
   
 ## <a name="projection-and-restriction-methods"></a>Методы проекций и ограничений  
+
  Большинство проекций LINQ и методов ограничения поддерживаются в LINQ to Entitiesных запросах, за исключением тех, которые принимают аргумент с заданным положением. Дополнительные сведения см. [в разделе стандартные операторы запросов в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md). В следующей таблице приведены поддерживаемые и неподдерживаемые методы проекций и ограничений.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -28,6 +30,7 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.Where%2A>|Не поддерживается|`Function Where(Of TSource) ( _ source As IQueryable(Of TSource), _ predicate As Expression(Of Func(Of TSource, Integer, Boolean)) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> Where<TSource>( this IQueryable<TSource> source, Expression<Func\<TSource, int, bool>> predicate )`|  
   
 ## <a name="join-methods"></a>Методы соединения  
+
  Методы Join LINQ поддерживаются в LINQ to Entities, за исключением тех, которые принимают значение, `IEqualityComparer` так как средство сравнения не может быть преобразовано в источник данных. Дополнительные сведения см. [в разделе стандартные операторы запросов в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md). В следующей таблице перечислены поддерживаемые и неподдерживаемые методы соединения.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -38,6 +41,7 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.Join%2A>|Не поддерживается|`Function Join(Of TOuter, TInner, TKey, TResult) ( _ outer As IQueryable(Of TOuter), _ inner As IEnumerable(Of TInner), _ outerKeySelector As Expression(Of Func(Of TOuter, TKey)), _ innerKeySelector As Expression(Of Func(Of TInner, TKey)), _ resultSelector As Expression(Of Func(Of TOuter, TInner, TResult)), _ comparer As IEqualityComparer(Of TKey) _ ) As IQueryable(Of TResult)`|`IQueryable<TResult> Join\<TOuter, TInner, TKey, TResult>( this IQueryable<TOuter> outer, IEnumerable<TInner> inner, Expression<Func\<TOuter, TKey>> outerKeySelector, Expression<Func\<TInner, TKey>> innerKeySelector, Expression<Func\<TOuter, TInner, TResult>> resultSelector, IEqualityComparer<TKey> comparer )`|  
   
 ## <a name="set-methods"></a>Задать методы  
+
  Большинство методов Set LINQ поддерживаются в запросах LINQ to Entities, за исключением тех, которые используют <xref:System.Collections.Generic.EqualityComparer%601> . Дополнительные сведения см. [в разделе стандартные операторы запросов в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md). В следующей таблице перечисляются поддерживаемые и неподдерживаемые методы работы с наборами.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -60,6 +64,7 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.Union%2A>|Не поддерживается|`Function Union(Of TSource) ( _ source1 As IQueryable(Of TSource), _ source2 As IEnumerable(Of TSource), _ comparer As IEqualityComparer(Of TSource) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> Union<TSource>( this IQueryable<TSource> source1, IEnumerable<TSource> source2, IEqualityComparer<TSource> comparer )`|  
   
 ## <a name="ordering-methods"></a>Методы упорядочивания  
+
  Большинство методов упорядочения LINQ поддерживаются в LINQ to Entities, за исключением тех, которые принимают <xref:System.Collections.Generic.IComparer%601> , поскольку средство сравнения не может быть преобразовано в источник данных. Дополнительные сведения см. [в разделе стандартные операторы запросов в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md). В следующей таблице перечислены поддерживаемые и неподдерживаемые методы упорядочения.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -75,6 +80,7 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.Reverse%2A>|Не поддерживается|`Function Reverse(Of TSource) ( _ source As IQueryable(Of TSource) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> Reverse<TSource>( this IQueryable<TSource> source )`|  
   
 ## <a name="grouping-methods"></a>Методы группирования  
+
  Большинство методов группирования LINQ поддерживаются в LINQ to Entities, за исключением тех, которые принимают <xref:System.Collections.Generic.IEqualityComparer%601> , поскольку средство сравнения не может быть преобразовано в источник данных. Дополнительные сведения см. [в разделе стандартные операторы запросов в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md). В следующей таблице перечислены поддерживаемые и неподдерживаемые методы группирования.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -89,6 +95,7 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.GroupBy%2A>|Не поддерживается|`Function GroupBy(Of TSource, TKey, TElement, TResult) ( _ source As IQueryable(Of TSource), _ keySelector As Expression(Of Func(Of TSource, TKey)), _ elementSelector As Expression(Of Func(Of TSource, TElement)), _ resultSelector As Expression(Of Func(Of TKey, IEnumerable(Of TElement), TResult)), _ comparer As IEqualityComparer(Of TKey) _ ) As IQueryable(Of TResult)`|`IQueryable<TResult> GroupBy<TSource, TKey, TElement, TResult>( this IQueryable<TSource> source, Expression<Func<TSource, TKey>> keySelector, Expression<Func<TSource, TElement>> elementSelector, Expression<Func<TKey, IEnumerable<TElement>, TResult>> resultSelector, IEqualityComparer<TKey> comparer )`|  
   
 ## <a name="aggregate-methods"></a>Методы статистической обработки  
+
  Большинство агрегатных методов, которые принимают примитивные типы данных, поддерживаются в LINQ to Entities. Дополнительные сведения см. [в разделе стандартные операторы запросов в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md). В следующей таблице перечислены поддерживаемые и неподдерживаемые статистические методы.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -146,6 +153,7 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.Sum%2A>|Не поддерживается|`Function Sum(Of TSource) ( _ source As IQueryable(Of TSource), _ selector As Expression(Of Func(Of TSource, Nullable(Of Decimal))) _ ) As Nullable(Of Decimal)`|`Nullable<decimal> Sum<TSource>( this IQueryable<TSource> source, Expression<Func<TSource, Nullable<decimal>>> selector )`|  
   
 ## <a name="type-methods"></a>Методы типов  
+
  В Entity Framework поддерживаются стандартные операторы запросов LINQ, которые работают с преобразованием типов CLR и тестированием. В языке LINQ to Entities поддерживаются только те типы CLR, которые сопоставляются с типами концептуальной модели. Список типов концептуальной модели см. в разделе [типы концептуальной модели (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl). В следующей таблице перечислены поддерживаемые и неподдерживаемые методы типа.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -154,6 +162,7 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.OfType%2A>|Поддерживается для объекта <xref:System.Data.Metadata.Edm.EntityType>|`Function OfType(Of TResult) ( _ source As IQueryable _ ) As IQueryable(Of TResult)`|`IQueryable<TResult> OfType<TResult>( this IQueryable source )`|  
   
 ## <a name="paging-methods"></a>Методы постраничного просмотра  
+
  Некоторые методы подкачки LINQ не поддерживаются в запросах LINQ to Entities. Дополнительные сведения см. [в разделе стандартные операторы запросов в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md). В следующей таблице перечисляются поддерживаемые и неподдерживаемые методы постраничного просмотра.  
   
 |Метод|Поддержка|Сигнатура функции Visual Basic|Сигнатура метода C#|  
@@ -179,6 +188,6 @@ ms.locfileid: "84286783"
 |<xref:System.Linq.Queryable.TakeWhile%2A>|Не поддерживается|`Function TakeWhile(Of TSource) ( _ source As IQueryable(Of TSource), _ predicate As Expression(Of Func(Of TSource, Boolean)) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> TakeWhile<TSource>( this IQueryable<TSource> source, Expression<Func\<TSource, bool>> predicate )`|  
 |<xref:System.Linq.Queryable.TakeWhile%2A>|Не поддерживается|`Function TakeWhile(Of TSource) ( _ source As IQueryable(Of TSource), _ predicate As Expression(Of Func(Of TSource, Integer, Boolean)) _ ) As IQueryable(Of TSource)`|`IQueryable<TSource> TakeWhile<TSource>( this IQueryable<TSource> source, Expression<Func\<TSource, int, bool>> predicate )`|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Стандартные операторы в запросах LINQ to Entities](standard-query-operators-in-linq-to-entities-queries.md)
