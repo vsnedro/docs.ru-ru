@@ -5,12 +5,12 @@ f1_keywords:
 - Crst_DisableSpinWait
 helpviewer_keywords:
 - Crst_DisableSpinWait element
-ms.openlocfilehash: 0683081183081e249b2a9c89e1a6a15f638fb339
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 45052d99bb297ac39d058fa405fe57a7c991f738
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73117642"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91151354"
 ---
 # <a name="crst_disablespinwait-element"></a>\<Crst_DisableSpinWait> - элемент
 
@@ -32,7 +32,7 @@ ms.locfileid: "73117642"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |**доступной**|Указывает, отключен ли режим ожидания для критических разделов, если они не включены.|  
   
@@ -44,6 +44,7 @@ ms.locfileid: "73117642"
 |0|Не отключайте режим ожидания, если критическая секция не может быть получена. Это значение по умолчанию.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -65,7 +66,7 @@ ms.locfileid: "73117642"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

@@ -1,15 +1,16 @@
 ---
-title: <activityScheduledQueries>WCF
+title: <activityScheduledQueries> WCF
 ms.date: 03/30/2017
 ms.assetid: e351329f-9676-4f11-9b19-f4bac82f36fc
-ms.openlocfilehash: c2281a9027aabfc5255ef7b09176f60d1725b522
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 86f196437b2230d6541570aa8994d99e7b340f66
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850492"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91151198"
 ---
-# <a name="activityscheduledqueries-of-wcf"></a>\<activityScheduledQueries>WCF
+# <a name="activityscheduledqueries-of-wcf"></a>\<activityScheduledQueries> WCF
+
 Представляет коллекцию запросов, которые используются для отслеживания действия, выполнение которого запланировано родительским действием. Этот запрос необходим, чтобы участник отслеживания подписался на записи запланированных действий.  
   
 Дополнительные сведения о запросах профиля отслеживания см. в разделе [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md) .  
@@ -59,7 +60,7 @@ ms.locfileid: "70850492"
 |-------------|-----------------|  
 |[\<workflow>](../windows-workflow-foundation/workflow.md)|Элемент конфигурации, содержащий все запросы для определенного рабочего процесса, обозначенного свойством `activityDefinitionId`.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection>
 - <xref:System.Activities.Tracking.ActivityScheduledQuery>

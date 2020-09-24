@@ -2,14 +2,15 @@
 title: <add> из <transportConfigurationType>
 ms.date: 03/30/2017
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
-ms.openlocfilehash: adf4cd7f02db6535c5950443d09476a9a5ff63fb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9bef44ed39ee892080342058206f779b38fb460d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850316"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91151159"
 ---
 # <a name="add-of-transportconfigurationtype"></a>\<add> из \<transportConfigurationType>
+
 Данный элемент представляет собой пару ключ/значение, которая идентифицирует тип конкретного транспорта.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ ms.locfileid: "70850316"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -40,6 +42,7 @@ ms.locfileid: "70850316"
 |transportConfigurationType|Строка, содержащая тип, реализующий конкретный транспорт.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -59,7 +62,7 @@ ms.locfileid: "70850316"
 </serviceHostingEnvironment>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>

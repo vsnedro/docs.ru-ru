@@ -3,17 +3,19 @@ title: Извлечение и изменение данных
 description: В .NET Framework поставщики данных в ADO.NET служат в качестве моста между приложением и источником данных для чтения и обновления данных.
 ms.date: 03/30/2017
 ms.assetid: 722e7f87-3691-46c6-87e8-7d159722d675
-ms.openlocfilehash: f916324dc829526a5e6b0078021b09786755f666
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7620843e77b25606b2dec2bf6eae3a4f40d1b9fb
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286615"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91150678"
 ---
 # <a name="retrieving-and-modifying-data-in-adonet"></a>Извлечение и изменение данных в ADO.NET
+
 Основной функцией любого приложения базы данных является соединение с источником данных и извлечение данных, которые он содержит. .NET Framework поставщики данных ADO.NET служат мостом между приложением и источником данных, что позволяет выполнять команды, а также получать данные с помощью объекта **DataReader** или **DataAdapter**. Ключевой функцией любого приложения базы данных является возможность обновления данных, хранимых в базе данных. В ADO.NET обновление данных включает использование объектов **DataAdapter** и <xref:System.Data.DataSet> и, и **Command** , Кроме того, может содержать использование транзакций.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Подключение к источнику данных](connecting-to-a-data-source.md)  
  Описывается установка подключения к источнику данных и работа с событиями подключения.  
   
@@ -59,7 +61,7 @@ ms.locfileid: "84286615"
  [Поддержка потоковой передачи SqlClient](sqlclient-streaming-support.md)  
  Описывает написание приложений, которые проводят потоковую передачу данных из SQL Server без полной загрузки в память.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сопоставления типов данных в ADO.NET](data-type-mappings-in-ado-net.md)
 - [Наборы данных, таблицы данных и объекты DataView](./dataset-datatable-dataview/index.md)

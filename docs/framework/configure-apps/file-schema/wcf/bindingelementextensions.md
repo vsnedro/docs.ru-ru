@@ -2,14 +2,15 @@
 title: <bindingElementExtensions>
 ms.date: 03/30/2017
 ms.assetid: bb597fc0-c947-451c-afda-bf23d42f4f4d
-ms.openlocfilehash: c323a65ace332d2ecd1e03330dddbe7ca17ff5bd
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6ba97adfa696e00b4d6b75faf104c31436e25447
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "69926371"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91151134"
 ---
 # \<bindingElementExtensions>
+
 В этом разделе описывается, как обеспечивается использование пользовательского элемента привязки в файле конфигурации компьютера или приложения. Элемент пользовательской привязки можно добавить в эту коллекцию, используя ключевое слово `add`, присвоив атрибуту `type` элемента значение, соответствующее расширению элемента привязки, и указав в атрибуте `name` пользовательский элемент привязки.  
   
  Расширения привязки позволяют пользователю создавать свои собственные элементы привязки и задействовать их как часть пользовательских привязок. Ну уровне программирования расширение привязки представляет собой тип, реализующий абстрактный класс <xref:System.ServiceModel.Channels.BindingElement>. В файле конфигурации раздел `bindingElementExtensions` используется для определения элемента расширения.  
@@ -43,7 +44,7 @@ ms.locfileid: "69926371"
 </customBinding>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>
 - [Расширение привязок](../../../wcf/extending/extending-bindings.md)

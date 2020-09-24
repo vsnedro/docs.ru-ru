@@ -1,15 +1,16 @@
 ---
-title: <cancelRequestedQueries>WCF
+title: <cancelRequestedQueries> WCF
 ms.date: 03/30/2017
 ms.assetid: a7cc7125-9ea3-4d3f-99c0-878cdeb1258a
-ms.openlocfilehash: 63cfc835ac7ce88bde56fd9243a2cf6652cbce6e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 205399330c1aa69b332c2149ee32d9b6098ccdbe
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850092"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91151172"
 ---
-# <a name="cancelrequestedqueries-of-wcf"></a>\<cancelRequestedQueries>WCF
+# <a name="cancelrequestedqueries-of-wcf"></a>\<cancelRequestedQueries> WCF
+
 Представляет коллекцию запросов, используемых для отслеживания запросов по отмене дочернего действия родительским действием. Этот запрос необходим, чтобы участник отслеживания подписался на объекты записей запросов на отмену.  
   
 Дополнительные сведения о запросах профиля отслеживания см. в разделе [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md) .  
@@ -59,7 +60,7 @@ ms.locfileid: "70850092"
 |-------------|-----------------|  
 |[\<workflow>](../windows-workflow-foundation/workflow.md)|Элемент конфигурации, содержащий все запросы для определенного рабочего процесса, обозначенного свойством <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId>.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Activities.Tracking.CancelRequestedQuery>
 - [Отслеживание и трассировка рабочих процессов](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
