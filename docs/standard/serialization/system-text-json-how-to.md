@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 7ad2721f12c5d14b61b35ecf7696ff0d6a6f27da
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 72ba79784d3eb1beb43eab8db0a448a7e3b18eb6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84289516"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557844"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET
 
@@ -118,7 +118,7 @@ using System.Text.Json.Serialization;
 * По умолчанию JSON сокращается. Вы можете [структурировать JSON](#serialize-to-formatted-json).
 * По умолчанию регистр имен JSON соответствует именам в .NET. Вы можете [настроить регистр имен JSON](#customize-json-names-and-values).
 * Обнаруживаются циклические ссылки и создаются исключения.
-* В настоящее время поля исключаются.
+* В настоящее время [поля](../../csharp/programming-guide/classes-and-structs/fields.md) исключаются.
 
 К поддерживаемым типам относятся:
 

@@ -3,19 +3,19 @@ title: Реализация метода DisposeAsync
 description: Узнайте, как реализовать методы DisposeAsync и DisposeAsyncCore для выполнения асинхронной очистки ресурсов.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/10/2020
+ms.date: 09/16/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 helpviewer_keywords:
 - DisposeAsync method
 - garbage collection, DisposeAsync method
-ms.openlocfilehash: 88adf9e484baa0e65e2ff093b4649cf35b8c86dc
-ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
+ms.openlocfilehash: 6ddfd860571d883e20fdb18985fe2bc2d9477dec
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90022913"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720287"
 ---
 # <a name="implement-a-disposeasync-method"></a>Реализация метода DisposeAsync
 
@@ -54,7 +54,7 @@ public async ValueTask DisposeAsync()
 ```
 
 > [!NOTE]
-> Основным отличием шаблона асинхронного освобождения от шаблона освобождения является то, что когда из метода <xref:System.IAsyncDisposable.DisposeAsync> выполняется вызов метода перегрузки `Dispose(bool)`, в качестве аргумента передается значение `false`. В то же время при реализации метода <xref:System.IDisposable.Dispose?displayProperty=nameWithType> вместо этого передается значение `true`. Это помогает обеспечить функциональную эквивалентность с шаблоном синхронного освобождения, а также гарантирует, что пути кода метода завершения по-прежнему вызываются. Другими словами, метод `DisposeAsyncCore()` будет освобождать управляемые ресурсы асинхронно, поэтому вы не захотите, чтобы они также освобождались и синхронно. Следовательно, вызывайте `Dispose(false)` вместо `Dispose(true)`.
+> Основным отличием шаблона асинхронного освобождения от шаблона освобождения является то, что когда из метода <xref:System.IAsyncDisposable.DisposeAsync> выполняется вызов метода перегрузки `Dispose(bool)`, в качестве аргумента передается значение `false`. В то же время при реализации метода <xref:System.IDisposable.Dispose?displayProperty=nameWithType> вместо него передается значение `true`. Это помогает обеспечить функциональную эквивалентность с шаблоном синхронного освобождения, а также гарантирует, что пути кода метода завершения по-прежнему вызываются. Другими словами, метод `DisposeAsyncCore()` будет освобождать управляемые ресурсы асинхронно, поэтому вы не захотите, чтобы они также освобождались и синхронно. Следовательно, вызывайте `Dispose(false)` вместо `Dispose(true)`.
 
 ### <a name="the-disposeasynccore-method"></a>Метод DisposeAsyncCore()
 
@@ -77,9 +77,9 @@ public async ValueTask DisposeAsync()
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/dispose-and-disposeasync.cs":::
 
-Реализации <xref:System.IDisposable.Dispose?displayProperty=nameWithType> и <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> являются простым шаблонным кодом. Методы `Dispose(bool)` и `DisposeAsyncCore()` начинаются с проверки того, что `_disposed` является `true`, и они будут выполняться только при `false`.
+Реализации <xref:System.IDisposable.Dispose?displayProperty=nameWithType> и <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> являются простым шаблонным кодом.
 
-В методе перегрузки `Dispose(bool)` экземпляр <xref:System.IDisposable> условно удаляется, если он не `null`. Экземпляр <xref:System.IAsyncDisposable> приводится к типу <xref:System.IDisposable> и, если он не `null`, также удаляется. Затем оба экземпляра назначаются `null`.
+В методе перегрузки `Dispose(bool)` экземпляр <xref:System.IDisposable> условно удаляется, если он не `null`. Экземпляр <xref:System.IAsyncDisposable> приводится к типу <xref:System.IDisposable> и, если он не имеет значения `null`, он также удаляется. Затем оба экземпляра назначаются `null`.
 
 В методе `DisposeAsyncCore()` используется один и тот же логический подход. Если экземпляр <xref:System.IAsyncDisposable> не является `null`, то будет ожидаться его вызов `DisposeAsync().ConfigureAwait(false)`. Если экземпляр <xref:System.IDisposable> также является реализацией <xref:System.IAsyncDisposable>, он также освобождается асинхронно. Затем оба экземпляра назначаются `null`.
 

@@ -3,12 +3,12 @@ title: Использование Azure Key Vault для защиты секр�
 description: Безопасность в микрослужбах и веб-приложениях .NET. Azure Key Vault предоставляет отличный способ работы с секретами приложений, которыми полностью управляют администраторы. Администраторы даже могут назначать и отзывать значения разработки без необходимости привлекать к этому разработчиков.
 author: mjrousos
 ms.date: 01/30/2020
-ms.openlocfilehash: cc95d491136c945255408cec2bd49d4d6579e29a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d2683b215633df719dc1ecf4d1710665865c9df2
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77501752"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679114"
 ---
 # <a name="use-azure-key-vault-to-protect-secrets-at-production-time"></a>Защиты секретов в рабочей среде с помощью Azure Key Vault
 
@@ -48,8 +48,8 @@ ms.locfileid: "77501752"
 - **Управление ключами для защиты данных и время существования в ASP.NET Core** \
   [https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings](/aspnet/core/security/data-protection/configuration/default-settings)
 
-- Репозиторий GitHub **Microsoft.Extensions.Configuration.KeyPerFile**. \
-  <https://github.com/dotnet/extensions/tree/master/src/Configuration/Config.KeyPerFile>
+- Репозиторий GitHub **Microsoft.Extensions.Configuration**. \
+  <https://github.com/dotnet/extensions/tree/master/src/Configuration>
 
 >[!div class="step-by-step"]
 >[Назад](developer-app-secrets-storage.md)

@@ -2,15 +2,15 @@
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
 description: В этой статье приведен список критических изменений в ASP.NET Core.
-ms.date: 09/09/2020
+ms.date: 09/11/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 2af0cc6721b66b1d07b196e4ba330f8425c14752
-ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
+ms.openlocfilehash: 4c3167e9cad193b6a5a11be399e8be529df3be55
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90022991"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90539608"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
@@ -25,6 +25,7 @@ ASP.NET Core предоставляет функции разработки ве
 На этой странице описаны следующие критические изменения в ASP.NET Core версий 3.0, 3.1 и 5.0.
 
 - [Удалены устаревшие API в областях борьбы с фальсификацией, CORS, диагностики, MVC и маршрутизации](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
+- [Проверка подлинности. API-интерфейсы и пакеты AzureAD.UI и AzureADB2C.UI помечены как устаревшие](#authentication-azureadui-and-azureadb2cui-apis-and-packages-marked-obsolete)
 - [Проверка подлинности. Использование Google + прекращено](#authentication-google-deprecated-and-replaced)
 - [Проверка подлинности. Удалено свойство HttpContext.Authentication](#authentication-httpcontextauthentication-property-removed)
 - [Проверка подлинности. Заменены типы Newtonsoft.Json](#authentication-newtonsoftjson-types-replaced)
@@ -36,6 +37,7 @@ ASP.NET Core предоставляет функции разработки ве
 - [Общие сведения Пакеты интеграции Azure с префиксом Майкрософт удалены](#azure-microsoft-prefixed-azure-integration-packages-removed)
 - [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
 - [Blazor. Незначащие пробелы удалены из компонентов во время компиляции](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
+- [Blazor. Открытые поля только для чтения RenderTreeFrame стали свойствами](#blazor-rendertreeframe-readonly-public-fields-have-become-properties)
 - [Blazor. Изменена целевая платформа для пакетов NuGet](#blazor-target-framework-of-nuget-packages-changed)
 - [Кэширование. Удалено свойство CompactOnMemoryPressure](#caching-compactonmemorypressure-property-removed)
 - [Кэширование. Microsoft.Extensions.Caching.SqlServer использует новый пакет SqlClient](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
@@ -104,6 +106,10 @@ ASP.NET Core предоставляет функции разработки ве
 
 ## <a name="aspnet-core-50"></a>ASP.NET Core 5.0
 
+[!INCLUDE[Authentication: AzureAD.UI and AzureADB2C.UI APIs and packages marked obsolete](~/includes/core-changes/aspnetcore/5.0/authentication-aad-packages-obsolete.md)]
+
+***
+
 [!INCLUDE[Authorization: Resource in endpoint routing is HttpContext](~/includes/core-changes/aspnetcore/5.0/authorization-resource-in-endpoint-routing.md)]
 
 ***
@@ -117,6 +123,10 @@ ASP.NET Core предоставляет функции разработки ве
 ***
 
 [!INCLUDE[Blazor: Insignificant whitespace trimmed from components at compile time](~/includes/core-changes/aspnetcore/5.0/blazor-components-trim-insignificant-whitespace.md)]
+
+***
+
+[!INCLUDE[Blazor: RenderTreeFrame readonly public fields have become properties](~/includes/core-changes/aspnetcore/5.0/blazor-rendertreeframe-fields-become-properties.md)]
 
 ***
 

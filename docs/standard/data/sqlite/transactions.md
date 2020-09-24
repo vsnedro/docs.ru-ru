@@ -1,13 +1,13 @@
 ---
 title: Транзакции
-ms.date: 12/13/2019
+ms.date: 09/08/2020
 description: Узнайте, как использовать транзакции.
-ms.openlocfilehash: 4b72a1573a560ffd1bfd0f54d46ab3b135280976
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 50c4cd1023eac892cafc3ae4395e9168bd8e9f36
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75450384"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90678866"
 ---
 # <a name="transactions"></a>Транзакции
 
@@ -36,3 +36,12 @@ Microsoft.Data.Sqlit рассматривает IsolationLevel, переданн
 Следующий код имитирует "грязное" чтение. Обратите внимание, что строка подключения должна включать `Cache=Shared`.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/DirtyReadSample/Program.cs?name=snippet_DirtyRead)]
+
+## <a name="deferred-transactions"></a>Отложенные транзакции
+
+Начиная с Microsoft.Data.Sqlite версии 5.0 транзакции можно откладывать. В этом случае создание фактической транзакции в базе данных откладывается до выполнения первой команды. Кроме того, транзакция постепенно обновляется с транзакции чтения на транзакцию записи, как это требуется командам. Это может быть полезно для включения одновременного доступа к базе данных во время транзакции.
+
+[!code-csharp[](../../../../samples/snippets/standard/data/sqlite/DeferredTransactionSample/Program.cs?name=snippet_DeferredTransaction)]
+
+> [!WARNING]
+> Выполнение команд в отложенной транзакции может завершиться ошибкой, если они приводят к обновлению транзакции с транзакции чтения на транзакцию записи во время блокировки базы данных. В этом случае приложению потребуется повторить всю транзакцию.

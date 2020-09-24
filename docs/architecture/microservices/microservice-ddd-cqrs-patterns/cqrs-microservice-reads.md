@@ -2,12 +2,12 @@
 title: Реализация операций чтения и запросов в микрослужбе CQRS
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Реализация стороны запросов CQRS в микрослужбе заказов в eShopOnContainers с помощью Dapper.
 ms.date: 10/08/2018
-ms.openlocfilehash: 41932122326cf4c49b9c9e2c344d2ac17da7466b
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: e6ea7b4b7b37df9ee972319f597ab045bf3bd215
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89358899"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90678807"
 ---
 # <a name="implement-readsqueries-in-a-cqrs-microservice"></a>Реализация операций чтения и запросов в микрослужбе CQRS
 
