@@ -2,14 +2,15 @@
 title: <certificateReference> для <identity>;
 ms.date: 03/30/2017
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
-ms.openlocfilehash: 93a6290d780ff61756f7315cd0c32f0e199ca00f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f3daa2dcdf9b464b51cfb9c883cbb828bccb42df
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70849994"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91149001"
 ---
 # <a name="certificatereference-for-identity"></a>\<certificateReference> для \<identity>;
+
 Задает параметры для проверки сертификата X.509. Клиент Secure Windows Communication Foundation (WCF), который подключается к конечной точке с этим удостоверением, проверяет, что утверждения, представленные сервером, содержат утверждение удостоверения, используемое для создания этого удостоверения.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,11 +32,12 @@ ms.locfileid: "70849994"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |findValue|Задает значение для поиска в хранилище сертификатов X.509. Тип, указанный в этом атрибуте, должен отвечать требованиям заданного значения `X509FindType`. Значением по умолчанию является пустая строка.|  
 |isChainIncluded|Логическое значение, определяющее, выполнена ли проверка с использованием цепочки сертификатов.|  
@@ -44,6 +46,7 @@ ms.locfileid: "70849994"
 |X509FindType|Определяет тип выполняемого поиска X.509. Тип, указанный в атрибуте `findValue`, должен отвечать требованиям заданного значения X509FindType.<br /><br /> Допустимые значения.<br /><br /> -(FindByThumbprint<br />-FindBySubjectName<br />-Финдбисубжектдистингуишеднаме<br />-Финдбиссуернаме<br />-Финдбиссуердистингуишеднаме<br />-Финдбисериалнумбер<br />-Финдбитимевалид<br />-Финдбитименотетвалид<br />-Финдбитемплатенаме<br />-Финдбяппликатионполици<br />-Финдбицертификатеполици<br />-Финдбекстенсион<br />-Финдбикэйусаже<br />-Финдбисубжекткэйидентифиер<br /><br /> Значение по умолчанию - FindBySubjectDistinguishedName.<br /><br /> Это атрибут типа <xref:System.Security.Cryptography.X509Certificates.X509FindType>.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -52,7 +55,7 @@ ms.locfileid: "70849994"
 |-------------|-----------------|  
 |[\<identity>](identity.md)|Задает параметры, которые обеспечивают проверку подлинности конечной точки другими конечными точками, с которыми происходит обмен сообщениями.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.CertificateReferenceElement>
 - <xref:System.ServiceModel.Configuration.IdentityElement>

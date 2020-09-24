@@ -2,14 +2,15 @@
 title: <clientCertificate> из <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
-ms.openlocfilehash: a8a78bbfcd9dfbf6975503a845d5bb4e2d24b13d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9df49777efc80f425cad3b353f95db523a027214
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398140"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148921"
 ---
 # <a name="clientcertificate-of-servicecredentials"></a>\<clientCertificate> из \<serviceCredentials>
+
 Задает файл сертификата X.509, используемый для подписания и шифрования сообщений к клиенту от службы при дуплексном обмене данными.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,9 +31,11 @@ ms.locfileid: "70398140"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -48,12 +51,13 @@ ms.locfileid: "70398140"
 |-------------|-----------------|  
 |[\<serviceCredentials>](servicecredentials.md)|Задает учетные данные, используемые при проверке подлинности службы, а также параметры, относящиеся к проверке учетных данных клиента.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Этот элемент используется в случаях, когда служба должна получить клиентский сертификат заранее для безопасного обмена данными с клиентом. Это характерно для дуплексного обмена данными. В более распространенном варианте «запрос/отклик» клиент включает сертификат в запрос, который используется службой для шифрования и подписания отклика. Тем не менее при дуплексном обмене данными служба не получает запроса от клиента, и ей, таким образом, необходим сертификат клиента заранее, чтобы обеспечить защиту сообщения, отправляемого клиенту. Следовательно, необходимо получить сертификат клиента при согласовании вне диапазона и указать сертификат с помощью этого элемента. Дополнительные сведения о дуплексных службах см. [в разделе инструкции. Создание дуплексного контракта](../../../wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
  Заданный в этом элементе сертификат используется для шифрования сообщений к клиенту только для привязок, которые настроены с использованием режима проверки подлинности `MutualCertificateDuplex`.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ClientCertificate%2A>

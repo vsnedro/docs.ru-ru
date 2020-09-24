@@ -3,14 +3,15 @@ title: <workflow>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 560aa9b6-9cf3-460e-b798-f87d14b1d2de
-ms.openlocfilehash: e2df5d83375b2daa2e39ba1ee990c47a6a04f6fb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: fdfaf234b5dda5703da7fc1ca1fe4554d57405f5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79151862"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148689"
 ---
 # \<workflow>
+
 Элемент конфигурации, содержащий все запросы для определенного рабочего процесса, обозначенного свойством <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId?displayProperty=nameWithType>.  
   
  Дополнительные сведения об отслеживании рабочих процессов и его конфигурации см. в разделе [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Track Profiles](../../../windows-workflow-foundation/tracking-profiles.md).  
@@ -80,11 +81,12 @@ ms.locfileid: "79151862"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |activityDefinitionId|Строка, указывающая идентификатор определения действия отслеживаемого рабочего процесса.|  
   
@@ -106,7 +108,8 @@ ms.locfileid: "79151862"
 |-------------|-----------------|  
 |[\<trackingProfile>](trackingprofile.md)|Представляет раздел конфигурации для создания подписки на записи отслеживания рабочего процесса в участнике отслеживания. Профиль отслеживания содержит запросы отслеживания, позволяющие участнику отслеживания подписываться на события рабочего процесса, формируемые во время выполнения при изменении состояния экземпляра рабочего процесса. Запросы, заданные в разделе профиля отслеживания, определяют виды событий, возвращаемых подпиской.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Профили отслеживания содержат запросы отслеживания, позволяющие участнику отслеживания подписываться на события рабочего процесса, создаваемые в результате изменения состояния экземпляра рабочего процесса в ходе выполнения. Этот элемент конфигурации определяет отслеживаемый экземпляр рабочего процесса.  
   
  Исходя из потребностей, можно написать профиль с низкой детализацией, который будет подписан на небольшой набор изменений состояния высокого уровня в рабочем процессе. И наоборот, можно создать очень детальный профиль, результирующие события которого будут достаточно подробными для последующего воспроизведения всего потока выполнения.  
@@ -135,7 +138,7 @@ ms.locfileid: "79151862"
 </system.serviceModel>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement>
 - <xref:System.Activities.Tracking.TrackingProfile>

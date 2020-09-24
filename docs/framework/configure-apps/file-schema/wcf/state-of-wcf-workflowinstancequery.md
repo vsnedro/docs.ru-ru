@@ -1,15 +1,16 @@
 ---
-title: <state>WCF,<workflowInstanceQuery>
+title: <state> WCF, <workflowInstanceQuery>
 ms.date: 03/30/2017
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
-ms.openlocfilehash: 80f7532f3c51680a2e34713b526dc43822db61b9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c323f7dba265e7fbcb09482115694088e761af0e
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854950"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148897"
 ---
-# <a name="state-of-wcf-workflowinstancequery"></a>\<state>WCF,\<workflowInstanceQuery>
+# <a name="state-of-wcf-workflowinstancequery"></a>\<state> WCF, \<workflowInstanceQuery>
+
 Представляет коллекцию состояний, на которые установлена подписка, из отслеживаемого экземпляра рабочего процесса в момент создания записей отслеживания.  
   
  Дополнительные сведения о запросах профиля отслеживания см. в разделе [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md) .  
@@ -51,7 +52,7 @@ ms.locfileid: "70854950"
   
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`name`|Строка, указывающая состояние подписки отслеживаемого экземпляра рабочего потока в момент создания записи отслеживания.|  
   
@@ -65,7 +66,7 @@ ms.locfileid: "70854950"
 |-------------|-----------------|  
 |[\<states>](states-of-wcf-workflowinstancequery.md)|Коллекция состояний, на которые установлена подписка, из отслеживаемого экземпляра рабочего процесса в момент создания записей отслеживания.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
 Возвращаемые записи фильтруются по состояниям в этой коллекции.  
   
@@ -77,14 +78,14 @@ ms.locfileid: "70854950"
 |Завершено|Выполнение экземпляра рабочего процесса завершено.|  
 |Удаленная|Экземпляр рабочего процесса удален.|  
 |Бездействие|Экземпляр рабочего процесса простаивает.|  
-|Сохранение|Экземпляр рабочего процесса сохранен.|  
+|Persisted|Экземпляр рабочего процесса сохранен.|  
 |Возобновление|Экземпляр рабочего процесса возобновлен.|  
 |Запуск|Экземпляр рабочего процесса запущен.|  
 |UnhandledException|Экземпляр рабочего процесса встретил необработанное исключение.|  
 |Выгружен|Экземпляр рабочего процесса выгружен.|  
 |Отменено|Выполнение экземпляра рабочего процесса отменено.|  
 |Приостановлена|Выполнение экземпляра рабочего процесса приостановлено.|  
-|Завершение|Выполнение экземпляра рабочего процесса завершено.|  
+|Завершен|Выполнение экземпляра рабочего процесса завершено.|  
 |Возобновлено|Выполнение экземпляра рабочего процесса возобновлено.|  
   
 ## <a name="example"></a>Пример
@@ -101,7 +102,7 @@ ms.locfileid: "70854950"
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>

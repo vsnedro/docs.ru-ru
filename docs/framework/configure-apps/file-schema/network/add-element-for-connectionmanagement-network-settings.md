@@ -10,14 +10,15 @@ helpviewer_keywords:
 - add element, connectionManagement
 - connectionManagement, add element
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
-ms.openlocfilehash: 093b68d31e03094bedefa96a2f2d53eb3d84edf0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 05e4a1bc42dc39c7d2b56e30c98bdeefd31e4416
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155015"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91149482"
 ---
 # <a name="add-element-for-connectionmanagement-network-settings"></a>Элемент \<add> для connectionManagement (параметры сети)
+
 Добавляет IP-адрес или DNS-имя в список управления подключениями.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -35,16 +36,18 @@ ms.locfileid: "79155015"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Описание**|  
+|**Attribute**|**Описание**|  
 |-------------------|---------------------|  
 |`address`|Строка, описывающая IP-адрес или DNS-имя.|  
 |`maxconnection`|Максимальное число разрешенных подключений к серверу. Если значение не предоставлено, используется значение по умолчанию 2.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -53,15 +56,18 @@ ms.locfileid: "79155015"
 |-----------------|---------------------|  
 |[connectionManagement](connectionmanagement-element-network-settings.md)|Задает максимальное число подключений к сетевому узлу.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  В качестве значения атрибута `address` должна быть задана либо звездочка, указывающая все подключения, либо строка в форме `<schema>://<idn_hostname>[:<port>]`.  
   
  Если URI, переданный в какие-либо API HTTP, содержит символы Юникода, то имя будет преобразовано внутренним образом с помощью свойства <xref:System.Uri.DnsSafeHost%2A>, которое может возвращать строку Punycode (поведение, зависящее от текущей конфигурации IDN).  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
+
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере приложение настраивается для использования четырех подключений к серверу `www.contoso.com` и двух подключений ко всем остальным серверам.  
   
 ```xml  
@@ -75,7 +81,7 @@ ms.locfileid: "79155015"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.ServicePoint>
 - <xref:System.Net.ServicePointManager>

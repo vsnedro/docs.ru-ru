@@ -10,14 +10,15 @@ helpviewer_keywords:
 - <add> element, bypasslist
 - add element, bypasslist
 ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
-ms.openlocfilehash: 652b8738a201aaa98fa2c5c435fee1a6da91673b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 927a43f352fd776d9e6ba52ebea6ba2a1ccd4d48
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155081"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91149495"
 ---
 # <a name="add-element-for-bypasslist-network-settings"></a>Элемент \<add> для bypasslist (параметры сети)
+
 Добавление в список обхода прокси IP-адреса или DNS-имени.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -35,15 +36,17 @@ ms.locfileid: "79155081"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Описание**|  
+|**Attribute**|**Описание**|  
 |-------------------|---------------------|  
 |**address**|Регулярное выражение, описывающее IP-адрес или DNS-имя.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -52,7 +55,8 @@ ms.locfileid: "79155081"
 |-----------------|---------------------|  
 |[bypasslist](bypasslist-element-network-settings.md)|Предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `add`Элемент вставляет регулярные выражения, описывающие IP-адреса или имена DNS-серверов, в список адресов, которые обходят прокси-сервер.  
   
  Значение `address` атрибута должно быть регулярным выражением, описывающим набор IP-адресов или имен узлов.  
@@ -62,9 +66,11 @@ ms.locfileid: "79155081"
  Дополнительные сведения о регулярных выражениях см. в разделе. [.NET Framework регулярных выражений](../../../../standard/base-types/regular-expressions.md).  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
+
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере в список обхода добавляется два адреса. Первый обход прокси-сервера для всех серверов в домене contoso.com; во втором пропускается прокси-сервер для всех серверов, IP-адрес которых начинается с 192,168.  
   
 ```xml  
@@ -80,7 +86,7 @@ ms.locfileid: "79155081"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [Схема параметров сети](index.md)

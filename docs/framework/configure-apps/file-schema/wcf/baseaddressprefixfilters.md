@@ -2,14 +2,15 @@
 title: <baseAddressPrefixFilters>
 ms.date: 03/30/2017
 ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
-ms.openlocfilehash: 635e4f02f4d286b63c4f4845563ba1953d23592a
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: ce224a2a1d6d96f2bc72e9291e7256d264d86d50
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811903"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91149031"
 ---
 # \<baseAddressPrefixFilters>
+
 Представляет коллекцию элементов конфигурации, задающих сквозные фильтры, которые предоставляют механизм для выбора соответствующих привязок службы IIS (IIS) при размещении приложения Windows Communication Foundation (WCF) в службах IIS.  
   
 > [!WARNING]
@@ -31,9 +32,11 @@ ms.locfileid: "88811903"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -48,7 +51,8 @@ ms.locfileid: "88811903"
 |-------------|-----------------|  
 |[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Определяет, какой тип среда размещения служб создает для конкретного транспорта.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
+
  Префиксный фильтр предоставляет способ для общих поставщиков услуг размещения задать, какие URI должны использоваться службой. Это дает возможность общим узлам размещать несколько приложений с разными базовыми адресами для одной схемы на одном узле.  
   
  Веб-узлы IIS являются контейнерами виртуальных приложений, содержащими виртуальные каталоги. Доступ к приложению на узле можно осуществлять через одну или несколько привязок службы IIS. Привязки IIS предоставляют два блока данных: протокол привязки и данные привязки. Протокол привязки (например, HTTP) определяет схему, посредством которой осуществляется связь, а данные привязки (например, IP-адрес, порт, заголовок узла) содержат сведения, используемые для доступа к узлу.  
@@ -82,7 +86,7 @@ http://test2.fabrikam.com/Service.svc
 > [!NOTE]
 > Фильтр не поддерживает какие-либо подстановочные знаки. Кроме того, среди базовых адресов, предоставляемых IIS, могут присутствовать адреса, привязанные к другим схемам, не представленным в списке `baseAddressPrefixFilters`. Эти адреса не фильтруются.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>

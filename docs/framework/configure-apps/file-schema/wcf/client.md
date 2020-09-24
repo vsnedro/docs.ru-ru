@@ -5,14 +5,15 @@ f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.ServiceModel/client
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#client
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
-ms.openlocfilehash: 7aa3755be97a839cb576d53852b75cfe50e39276
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b3234bfa60cd1e3c88778951fc27301c615c84ba
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "72773947"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148962"
 ---
 # \<client>
+
 Элемент `client` определяет список конечных точек, к которым может подключаться клиент.
 
 [**\<configuration>**](../configuration-element.md)\
@@ -33,9 +34,11 @@ ms.locfileid: "72773947"
 ```
 
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
 ### <a name="attributes"></a>Атрибуты
+
  Нет
 
 ### <a name="child-elements"></a>Дочерние элементы
@@ -51,7 +54,8 @@ ms.locfileid: "72773947"
 |-------------|-----------------|
 |[\<system.serviceModel>](system-servicemodel.md)|Корневой элемент всех элементов конфигурации Windows Communication Foundation (WCF).|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
+
  В разделе `client` определяется список конечных точек, к которым может подключаться клиент. Каждая конечная точка, указанная в разделе клиента, определяет свои собственные привязку, поведение и контракт. Она однозначно определяется сочетанием атрибутов `name` и `contract`. В коде клиента указывается атрибут `name` для подключения к конечной точке службы, выполняемой клиентом. Если атрибут `name` отсутствует, конечная точка действует как конечная точка по умолчанию для контракта, который она реализует.
 
  Кроме того, в данном разделе также задаются параметры обработки метаданных.
@@ -73,7 +77,7 @@ ms.locfileid: "72773947"
 </client>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ClientSection>
 - <xref:System.ServiceModel.Configuration.MetadataElement>

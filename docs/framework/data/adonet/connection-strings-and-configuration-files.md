@@ -6,21 +6,23 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 37df2641-661e-407a-a3fb-7bf9540f01e8
-ms.openlocfilehash: 2148aa984f8289b82b8efcee2404f08cab25c797
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e2bea3d962998b2778d22e232e7f7062cfda3143
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556555"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148414"
 ---
 # <a name="connection-strings-and-configuration-files"></a>Строки подключения и файлы конфигурации
 
 Внедрение строк соединения в код приложения может привести к появлению уязвимых мест в системе безопасности и проблем с обслуживанием. Незашифрованные строки подключения, скомпилированные в исходный код приложения, можно просматривать с помощью средства [Ildasm.exe (IL Disassembler)](../../tools/ildasm-exe-il-disassembler.md). Кроме того, после изменения строки соединения необходимо перекомпилировать приложение. По этим причинам рекомендуется хранить строки соединения в файле конфигурации приложения.  
   
 ## <a name="working-with-application-configuration-files"></a>Работа с файлами конфигурации приложения  
+
  Файлы конфигурации приложения содержат настройки, относящиеся к отдельному приложению. Например, приложение ASP.NET может иметь один или несколько файлов **web.config**, а приложение Windows — дополнительный файл **app.config**. В файлах конфигурации присутствуют общие элементы, хотя имя и расположение любого файла конфигурации в значительной степени зависят от того, где размещается приложение.  
   
 ### <a name="the-connectionstrings-section"></a>Раздел connectionStrings  
+
  Строки подключения могут храниться в виде пар "ключ/значение" в разделе **connectionStrings** элемента **configuration** файла конфигурации приложения. Дочерние элементы включают **add**, **clear** и **remove**.  
   
  Следующий фрагмент файла конфигурации демонстрирует схему и синтаксис хранения строки соединения. Атрибут **name** является именем, которое задано для уникальной идентификации строки подключения, чтобы ее можно было получить во время выполнения. Атрибут **providerName** является неизменяемым именем поставщика данных .NET Framework, которое регистрируется в файле machine.config.  
@@ -41,6 +43,7 @@ ms.locfileid: "90556555"
 > Можно сохранить часть строки соединения в файле конфигурации и для ее дополнения во время выполнения использовать класс <xref:System.Data.Common.DbConnectionStringBuilder>. Это удобно в сценариях, в которых заранее неизвестны элементы строки соединения или желательно не сохранять конфиденциальные данные в файле конфигурации. Дополнительные сведения см. в статье [Connection String Builders](connection-string-builders.md) (Построители строк подключения).  
   
 ### <a name="using-external-configuration-files"></a>Использование внешних файлов конфигурации  
+
  Внешние файлы конфигурации представляют собой отдельные файлы, каждый из которых содержит фрагмент файла конфигурации, состоящий из одного раздела. В таком случае основной файл конфигурации ссылается на внешний файл конфигурации. Хранение раздела **connectionStrings** в физически отдельном файле становится удобным в ситуациях, когда может потребоваться внесение изменений в строки подключения после развертывания приложения. Например, в ASP.NET по умолчанию после изменения файлов конфигурации осуществляется перезапуск домена приложения, что приводит к потере сведений о состоянии. Но изменение внешнего файла конфигурации не вызывает перезапуск приложения. Возможность применения внешних файлов конфигурации не ограничивается ASP.NET; их можно также использовать в приложениях Windows. Кроме того, для ограничения доступа к внешним файлам конфигурации могут использоваться средства обеспечения безопасности доступа к файлам и разрешения. Работа с внешними файлами конфигурации во время выполнения осуществляется в прозрачном режиме и не требует разработки специального кода.  
   
  Для хранения строк подключения во внешнем файле конфигурации создайте отдельный файл, содержащий единственный раздел **connectionStrings**. Не следует включать какие-либо дополнительные элементы, разделы или атрибуты. В данном примере показан синтаксис внешнего файла конфигурации.  
@@ -63,12 +66,14 @@ ms.locfileid: "90556555"
 ```  
   
 ## <a name="retrieving-connection-strings-at-run-time"></a>Получение строк соединения во время выполнения  
+
  В .NET Framework 2.0 в пространстве имен <xref:System.Configuration> появились новые классы, упрощающие извлечение строк подключения из файлов конфигурации во время выполнения. Предусмотрена возможность получить строку соединения программным путем по ее имени или по имени поставщика.  
   
 > [!NOTE]
 > Файл **machine.config** также содержит раздел **connectionStrings**, включающий строку подключения, используемую Visual Studio. При извлечении строк подключения по имени поставщика из файла **app.config** в приложении Windows сначала загружаются строки подключения в **machine.config** , а затем записи из **app.config**. Добавление **clear** сразу после элемента **ConnectionString** удаляет все унаследованные ссылки из структуры данных в памяти, поэтому учитываются только строки подключения, определенные в локальном файле **app.config** .  
   
 ### <a name="working-with-the-configuration-classes"></a>Работа с классами конфигурации  
+
  Начиная с версии .NET Framework 2.0, для работы с файлами конфигурации на локальном компьютере используется класс <xref:System.Configuration.ConfigurationManager>, который заменил устаревший класс <xref:System.Configuration.ConfigurationSettings>. <xref:System.Web.Configuration.WebConfigurationManager> служит для работы с файлами конфигурации ASP.NET. Он создан для работы с файлами конфигурации веб-сервера и предоставляет программный доступ к разделам файла конфигураций, например **system.web**.  
   
 > [!NOTE]
@@ -83,6 +88,7 @@ ms.locfileid: "90556555"
 |<xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A>|Строка подключения. Сопоставляется с атрибутом **connectionString**.|  
   
 ### <a name="example-listing-all-connection-strings"></a>Пример. Список всех строк соединения  
+
  В этом примере выполняется итерация по <xref:System.Configuration.ConnectionStringSettingsCollection> и отображаются <xref:System.Configuration.ConnectionStringSettings.Name%2A?displayProperty=nameWithType> свойства, <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A?displayProperty=nameWithType> и <xref:System.Configuration.ConnectionStringSettings.ConnectionString%2A?displayProperty=nameWithType> в окне консоли.  
   
 > [!NOTE]
@@ -92,18 +98,21 @@ ms.locfileid: "90556555"
  [!code-vb[DataWorks ConnectionStringSettings.RetrieveFromConfig#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfig/VB/source.vb#1)]  
   
 ### <a name="example-retrieving-a-connection-string-by-name"></a>Пример. Извлечение строки соединения по имени  
+
  Данный пример демонстрирует способ получения строки соединения из файла конфигурации путем указания ее имени. Код создает объект <xref:System.Configuration.ConnectionStringSettings>, сопоставляя указанный входной параметр с именем <xref:System.Configuration.ConfigurationManager.ConnectionStrings%2A>. Если совпадающее имя не найдено, функция возвращает значение `null` (`Nothing` в Visual Basic).  
   
  [!code-csharp[DataWorks ConnectionStringSettings.RetrieveFromConfigByName#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByName/CS/source.cs#1)]
  [!code-vb[DataWorks ConnectionStringSettings.RetrieveFromConfigByName#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByName/VB/source.vb#1)]  
   
 ### <a name="example-retrieving-a-connection-string-by-provider-name"></a>Пример. Извлечение строки соединения по имени поставщика  
+
  В этом примере демонстрируется способ получения строки подключения путем указания неизменяемого имени поставщика в формате *System.Data.ProviderName*. В коде выполняется итерация по <xref:System.Configuration.ConnectionStringSettingsCollection> и происходит возврат строки соединения для первого найденного <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A>. Если имя поставщика не найдено, функция возвращает значение `null` (`Nothing` в Visual Basic).  
   
  [!code-csharp[DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider/CS/source.cs#1)]
  [!code-vb[DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringSettings.RetrieveFromConfigByProvider/VB/source.vb#1)]  
   
 ## <a name="encrypting-configuration-file-sections-using-protected-configuration"></a>Шифрование разделов файлов конфигурации с использованием защищенной конфигурации  
+
  В ASP.NET 2.0 появилась новая возможность, *защищенная конфигурация*, с помощью которой можно шифровать в файле конфигурации конфиденциальную информацию. Защищенная конфигурация разрабатывалась в первую очередь для ASP.NET, но ее можно также использовать для шифрования разделов файлов конфигурации в приложениях Windows. Подробное описание возможностей защищенной конфигурации см. в разделе [Шифрование сведений о конфигурации с помощью функции защищенной конфигурации](/previous-versions/aspnet/53tyfkaw(v=vs.100)).  
   
  В приведенном ниже фрагменте файла конфигурации показан раздел **connectionStrings** после шифрования. В разделе **configProtectionProvider** задается поставщик защищенной конфигурации, который используется для шифрования и дешифрования строк подключения. Раздел **EncryptedData** содержит зашифрованный текст.  
@@ -121,6 +130,7 @@ ms.locfileid: "90556555"
  Когда зашифрованная строка подключения извлекается во время выполнения, платформа .NET Framework с помощью указанного поставщика дешифрует значение **CipherValue** и передает его приложению. Нет необходимости создавать дополнительный код для управления процессом дешифрования.  
   
 ### <a name="protected-configuration-providers"></a>Поставщики защищенной конфигурации  
+
  Поставщики защищенной конфигурации регистрируются в разделе **configProtectedData** файла **machine.config** на локальном компьютере, как показано в приведенном ниже фрагменте, в котором демонстрируются два поставщика защищенной конфигурации, поставляемые с платформой .NET Framework. Показанные значения были усечены для удобства чтения.  
   
 ```xml  
@@ -144,12 +154,14 @@ ms.locfileid: "90556555"
  Оба поставщика обеспечивают надежное шифрование данных. Однако, если планируется использовать один файл конфигурации на нескольких серверах, как в веб-ферме, то только <xref:System.Configuration.RsaProtectedConfigurationProvider> позволяет экспортировать ключи шифрования, применяемые для шифрования данных, и импортировать их в другой сервер. Дополнительные сведения см. в разделе [Импорт и экспорт защищенных контейнеров ключей RSA для конфигурации](/previous-versions/aspnet/yxw286t2(v=vs.100)).  
   
 ### <a name="using-the-configuration-classes"></a>Использование классов конфигурации  
+
  Пространство имен <xref:System.Configuration> предоставляет классы для программной обработки параметров конфигурации. Класс <xref:System.Configuration.ConfigurationManager> обеспечивает доступ к компьютеру, приложению и пользовательским файлам конфигурации. При создании приложения ASP.NET можно использовать <xref:System.Web.Configuration.WebConfigurationManager> класс, который предоставляет те же функциональные возможности, а также обеспечивает доступ к параметрам, уникальным для приложений ASP.NET, например, которые находятся в **\<system.web>** .  
   
 > [!NOTE]
 > Пространство имен <xref:System.Security.Cryptography> содержит классы, которые предоставляют дополнительные возможности шифрования и расшифровки данных. Эти классы можно использовать в том случае, если требуются криптографические службы, недоступные с использованием защищенной конфигурации. Некоторые из этих классов являются оболочками для Microsoft CryptoAPI, а другие представляют собой реализации полностью на управляемом коде. Дополнительные сведения см. в разделе [Службы криптографии](/previous-versions/visualstudio/visual-studio-2008/93bskf9z(v=vs.90)).  
   
 ### <a name="appconfig-example"></a>Пример App.config  
+
  Этот пример демонстрирует переключение шифрования раздела **connectionStrings** в файле **app.config** для приложения Windows. В этом примере процедура принимает имя приложения в качестве аргумента, например, «MyApplication.exe». Затем файл **app.config** зашифровывается и копируется в папку, которая содержит исполняемый файл с именем MyApplication.exe.config.  
   
 > [!NOTE]
@@ -164,6 +176,7 @@ ms.locfileid: "90556555"
  [!code-vb[DataWorks ConnectionStrings.Encrypt#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStrings.Encrypt/VB/source.vb#1)]  
   
 ### <a name="webconfig-example"></a>Пример Web.config  
+
  В этом примере используется метод <xref:System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration%2A> класса `WebConfigurationManager`. Обратите внимание, что в этом случае можно задать относительный путь к файлу **Web.config** с использованием символа "тильда". В коде должна быть ссылка на класс `System.Web.Configuration`.  
   
  [!code-csharp[DataWorks ConnectionStringsWeb.Encrypt#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringsWeb.Encrypt/CS/source.cs#1)]
@@ -171,7 +184,7 @@ ms.locfileid: "90556555"
   
  Дополнительные сведения о защите приложений ASP.NET см. в статье [Защита веб-сайтов ASP.NET](/previous-versions/aspnet/91f66yxt(v=vs.100)).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Построители строк подключения](connection-string-builders.md)
 - [Защита сведений о подключении](protecting-connection-information.md)

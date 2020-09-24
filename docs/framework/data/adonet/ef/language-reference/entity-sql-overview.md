@@ -2,15 +2,16 @@
 title: Общие сведения об Entity SQL
 ms.date: 03/30/2017
 ms.assetid: f0bb8120-e709-40a3-ac1e-5520dc47477d
-ms.openlocfilehash: b4fe852847d8b1b4bc0b80e3ba8e1f5b4aae9ff7
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: e9a5117984380938e48e0cd1113107c74389480f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202253"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148131"
 ---
 # <a name="entity-sql-overview"></a>Общие сведения об Entity SQL
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)]— Это язык, подобный SQL, который позволяет запрашивать концептуальные модели в Entity Framework. Концептуальные модели представляют данные как сущности и связи, а также [!INCLUDE[esql](../../../../../../includes/esql-md.md)] позволяют запрашивать эти сущности и связи в формате, привычном для тех, кто использовал SQL.  
+
+[!INCLUDE[esql](../../../../../../includes/esql-md.md)] — Это язык, подобный SQL, который позволяет запрашивать концептуальные модели в Entity Framework. Концептуальные модели представляют данные как сущности и связи, а также [!INCLUDE[esql](../../../../../../includes/esql-md.md)] позволяют запрашивать эти сущности и связи в формате, привычном для тех, кто использовал SQL.  
 
  Entity Framework работает с поставщиками данных, специфичными для хранилища, для преобразования универсальных типов [!INCLUDE[esql](../../../../../../includes/esql-md.md)] в запросы, зависящие от хранилища. Поставщик EntityClient предоставляет способ выполнения команды языка [!INCLUDE[esql](../../../../../../includes/esql-md.md)] на модели сущностей и получения разнообразных типов данных, в том числе скалярных результатов, результирующих наборов и графов объектов. При создании объекта <xref:System.Data.EntityClient.EntityCommand> можно указать имя хранимой процедуры или текст запроса, присвоив строку запроса на языке [!INCLUDE[esql](../../../../../../includes/esql-md.md)] его свойству <xref:System.Data.EntityClient.EntityCommand.CommandText%2A?displayProperty=nameWithType>. <xref:System.Data.EntityClient.EntityDataReader> предоставляет доступ к результатам выполнения <xref:System.Data.EntityClient.EntityCommand> к модели EDM. Для выполнения команды, возвращающей значение <xref:System.Data.EntityClient.EntityDataReader>, нужно вызвать метод <xref:System.Data.EntityClient.EntityCommand.ExecuteReader%2A>.  
   
@@ -18,7 +19,8 @@ ms.locfileid: "84202253"
   
  В этом разделе приведены основные сведения о языке [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Отличия Entity SQL от Transact-SQL](how-entity-sql-differs-from-transact-sql.md)  
   
  [Краткий справочник по Entity SQL](entity-sql-quick-reference.md)  
@@ -61,7 +63,7 @@ ms.locfileid: "84202253"
   
  [Допускающие значения NULL структурированные типы](nullable-structured-types-entity-sql.md)  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Язык Entity SQL](entity-sql-language.md)

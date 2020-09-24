@@ -3,14 +3,15 @@ title: <sqlWorkflowInstanceStore>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 8a4e4214-fc51-4f4d-b968-0427c37a9520
-ms.openlocfilehash: 56a44fdb62062903ca3ad00f8105a66ccab02cca
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d6c86d02e14a38c2a35ba4858c4abfea73268fd8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79151966"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91148715"
 ---
 # \<sqlWorkflowInstanceStore>
+
 Поведение службы, позволяющее настроить функцию <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, поддерживающую сохранение сведений о состоянии для экземпляров службы рабочего процесса в базу данных SQL Server 2005 или SQL Server 2008. Дополнительные сведения об этой функции см. в разделе [хранилище экземпляров рабочих процессов SQL](../../../windows-workflow-foundation/sql-workflow-instance-store.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -38,11 +39,12 @@ ms.locfileid: "79151966"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |connectionString|Строка, содержащая строку подключения, используемую для соединения с основной базой данной сохраняемости.|  
 |connectionStringName|Строка, содержащая именованную строку соединения с сервером базы данных. Примером именованной строки подключения является "DefaultConnectionString".|  
@@ -53,15 +55,16 @@ ms.locfileid: "79151966"
 |runnableInstancesDetectionPeriod||  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<behavior>окна\<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Указывает элемент поведения.|  
+|[\<behavior> из \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Указывает элемент поведения.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>
 - <xref:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement>

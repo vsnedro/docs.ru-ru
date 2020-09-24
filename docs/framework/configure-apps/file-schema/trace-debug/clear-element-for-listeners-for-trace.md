@@ -1,5 +1,5 @@
 ---
-title: <clear>Элемент для <listeners> для<trace>
+title: <clear> Элемент для <listeners> для <trace>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/clear
@@ -7,14 +7,15 @@ helpviewer_keywords:
 - clear element for <listeners> for <trace>
 - <clear> element for <listeners> for <trace>
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
-ms.openlocfilehash: 905dad8274fede80f4809ff3c7a014049f9df450
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2d301d588e33b0eea4164a6bf62dedd7b0c450ec
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153546"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91149274"
 ---
-# <a name="clear-element-for-listeners-for-trace"></a>\<clear>Элемент для \<listeners> для\<trace>
+# <a name="clear-element-for-listeners-for-trace"></a>\<clear> Элемент для \<listeners> для \<trace>
+
 Очищает коллекцию `Listeners` для трассировки.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -30,13 +31,16 @@ ms.locfileid: "79153546"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -47,17 +51,19 @@ ms.locfileid: "79153546"
 |`trace`|Содержит прослушиватели, которые собирают, хранят и маршрутизируют сообщения трассировки.|  
 |`listeners`|Содержит прослушиватели, собирающие, сохраняющие и направляющие сообщения. Прослушиватели направляют выходные данные трассировки в соответствующий целевой объект.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `<clear>`Элемент удаляет все прослушиватели из `Listeners` коллекции для трассировки. Элемент можно использовать `<clear>` перед использованием `<add>` элемента, чтобы убедиться в отсутствии других активных прослушивателей в коллекции.  
   
  Можно очистить `Listeners` коллекцию программным путем, вызвав <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> метод для <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> Свойства ( `System.Diagnostics.Trace.Listeners.Clear()` ).  
   
- Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine.config) и файле конфигурации приложения.  
   
 > [!NOTE]
 > `<clear>`Элемент удаляет <xref:System.Diagnostics.DefaultTraceListener> из `Listeners` коллекции, изменяя поведение <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> методов,, <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=nameWithType> и <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=nameWithType> . Вызов `Assert` метода или `Fail` обычно приводит к отображению окна сообщения. Однако окно сообщения не отображается, если объект <xref:System.Diagnostics.DefaultTraceListener> отсутствует в `Listeners` коллекции.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать `<clear>` элемент перед использованием `<add>` элемента для добавления прослушивателя `console` в `Listeners` коллекцию для трассировки.  
   
 ```xml  
@@ -77,7 +83,7 @@ ms.locfileid: "79153546"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.Trace.Listeners%2A>
 - <xref:System.Diagnostics.Trace>

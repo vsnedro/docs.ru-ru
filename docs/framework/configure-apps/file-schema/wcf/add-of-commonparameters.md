@@ -2,14 +2,15 @@
 title: <add> из <commonParameters>
 ms.date: 03/30/2017
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
-ms.openlocfilehash: 8328b6d08c1b57ad7a899c8cb489e07037e5af09
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 11be233d846f9025f041a26174e5b3bd2abdab55
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558165"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91149196"
 ---
 # <a name="add-of-commonparameters"></a>\<add> из \<commonParameters>
+
 Определяет пару параметров «имя-значение», которые используются глобально в нескольких службах. Как правило, этот параметр включает строку подключения базы данных, которая может совместно использоваться долговременными службами.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ ms.locfileid: "90558165"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -42,6 +44,7 @@ ms.locfileid: "90558165"
 |Значение|Значение параметра, заданного для службы.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -50,7 +53,8 @@ ms.locfileid: "90558165"
 |-------------|-----------------|  
 |[\<commonParameters>](commonparameters.md)|Коллекция общих параметров, используемых службой. Эта коллекция, как правило, включает строку подключения базы данных, которая может совместно использоваться постоянными службами.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Элемент `<commonParameters>` определяет любые параметры, которые используются глобально несколькими службами, например `ConnectionString` при использовании <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.  
   
  Для служб, фиксирующих рабочие пакеты в постоянных хранилищах, таких как <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> и <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, можно включить режим повторения попытки транзакции, используя параметр `EnableRetries`, как показано в следующем примере.  
@@ -86,7 +90,7 @@ ms.locfileid: "90558165"
 </commonParameters>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
 - <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>

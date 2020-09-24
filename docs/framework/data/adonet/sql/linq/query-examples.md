@@ -2,20 +2,22 @@
 title: Примеры запросов
 ms.date: 03/30/2017
 ms.assetid: 137f8677-494c-4d49-95ce-c17742f2d01f
-ms.openlocfilehash: 8f86c4aa94dcc70ce79526b0f4a3685cfef3f389
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: f3f135850fb5f40b3b8882f72f5cc24512f21084
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781134"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147558"
 ---
 # <a name="query-examples"></a>Примеры запросов
-В этом разделе приводятся Visual Basic C# и [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] примеры типичных запросов. Разработчики, использующие Visual Studio, могут найти множество других примеров в образце решения, доступном в разделе примеров. Дополнительные сведения см. в разделе [Samples](samples.md).  
+
+В этом разделе приведены примеры типовых запросов Visual Basic и C# [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] . Разработчики, использующие Visual Studio, могут найти множество других примеров в образце решения, доступном в разделе примеров. Дополнительные сведения см. в разделе [Samples](samples.md).  
   
 > [!IMPORTANT]
-> *база данных* часто используется в примерах кода [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] в документации. Предполагается, что *база данных* является экземпляром класса *Northwind* , который наследует от <xref:System.Data.Linq.DataContext>.  
+> *база данных* часто используется в примерах кода в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] документации. Предполагается, что *база данных* является экземпляром класса *Northwind* , который наследует от <xref:System.Data.Linq.DataContext> .  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Статистические запросы](aggregate-queries.md)  
  Содержит описание использования <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Count%2A> и т. д.  
   
@@ -43,10 +45,10 @@ ms.locfileid: "70781134"
  [Возврат разности наборов между двумя последовательностями](return-the-set-difference-between-two-sequences.md)  
  Содержит примеры использования <xref:System.Linq.Enumerable.Except%2A>.  
   
- [Возврат пересечения наборов двух последовательностей](return-the-set-intersection-of-two-sequences.md)  
+ [Возврат пересечения наборов двух последовательностей.](return-the-set-intersection-of-two-sequences.md)  
  Содержит примеры использования <xref:System.Linq.Enumerable.Intersect%2A>.  
   
- [Возврат объединения наборов двух последовательностей](return-the-set-union-of-two-sequences.md)  
+ [Возврат объединения наборов двух последовательностей.](return-the-set-union-of-two-sequences.md)  
  Содержит примеры использования <xref:System.Linq.Enumerable.Union%2A>.  
   
  [Преобразование последовательности в массив](convert-a-sequence-to-an-array.md)  
@@ -55,18 +57,19 @@ ms.locfileid: "70781134"
  [Преобразование последовательности в универсальный список](convert-a-sequence-to-a-generic-list.md)  
  Содержит примеры использования <xref:System.Linq.Enumerable.ToList%2A>.  
   
- [Преобразование типа в универсальный интерфейс IEnumerable](convert-a-type-to-a-generic-ienumerable.md)  
+ [Практическое руководство. Преобразование типа в универсальный интерфейс IEnumerable](convert-a-type-to-a-generic-ienumerable.md)  
  Содержит примеры использования <xref:System.Linq.Enumerable.AsEnumerable%2A>.  
   
- [Формулировка запросов-объединений и запросов векторного произведения](formulate-joins-and-cross-product-queries.md)  
+ [Практическое руководство. Формулировка запросов-объединений и запросов векторного произведения](formulate-joins-and-cross-product-queries.md)  
  Содержит примеры использования переходов внешнего ключа в предложениях `from`, `where` и `select`.  
   
  [Формулировка проекций](formulate-projections.md)  
  Содержит примеры сочетания `select` с другими функциями (например, *анонимные типы*) для формирования проекций запросов.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Общие сведения о стандартных операторах запроса (C#)](../../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- Описывает концепцию стандартных операторов запросов с помощью C#.  
+ Объясняет концепцию стандартных операторов запросов, использующих C#.  
   
  [Общие сведения о стандартных операторах запроса (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  Описывает концепцию стандартных операторов запросов с помощью Visual Basic.  
